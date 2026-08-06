@@ -1,0 +1,20 @@
+# 本地记忆与个人信息（绝不发布）
+.workbuddy/
+.codebuddy/
+.tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+tools/__pycache__/
+
+# 开发期截图（非必要产物，体积大）
+demo/screenshots/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 编辑器
+*.swp
+*~

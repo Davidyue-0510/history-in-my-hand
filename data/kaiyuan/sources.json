@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "id": "kaiyuan_tushuo",
+      "title": "开原图说",
+      "party": "明·开原兵备道",
+      "distance_label": "亲历·实地调查",
+      "stance_label": "明方边臣",
+      "compiler": "冯瑗（1572–1627）辑，万历末年成书",
+      "color": "#7A5C2E",
+      "period": "明万历"
+    },
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "party": "清修·明臣",
+      "distance_label": "后世编纂",
+      "stance_label": "清修官史",
+      "compiler": "张廷玉等，《明史·地理志/列传》",
+      "color": "#8C6239",
+      "period": "清乾隆"
+    },
+    {
+      "id": "ming_shilu",
+      "title": "明神宗实录",
+      "party": "明",
+      "distance_label": "当时起居注",
+      "stance_label": "明廷官方",
+      "compiler": "明代历朝实录馆",
+      "color": "#9C7A45",
+      "period": "明"
+    },
+    {
+      "id": "taizu_shilu",
+      "title": "清太祖实录",
+      "party": "清",
+      "distance_label": "后世编纂",
+      "stance_label": "清方官史",
+      "compiler": "清代国史馆",
+      "color": "#3D6B4F",
+      "period": "清"
+    },
+    {
+      "id": "chaoxian_shilu",
+      "title": "朝鲜李朝实录",
+      "party": "朝鲜",
+      "distance_label": "盟国旁观",
+      "stance_label": "朝鲜官方",
+      "compiler": "朝鲜春秋馆",
+      "color": "#2E7D8F",
+      "period": "朝鲜"
+    },
+    {
+      "id": "xuantong_kao",
+      "title": "开原县志·万历四十六年东夷入犯",
+      "party": "清·地方志",
+      "distance_label": "后世地方追记",
+      "stance_label": "地方志",
+      "compiler": "《开原县志》（据《开原图说》转引）",
+      "color": "#6E6A5E",
+      "period": "清"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "综合研究",
+      "stance_label": "中性考订",
+      "compiler": "辽东镇长城与明清东北史综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    },
+    {
+      "id": "wiki",
+      "title": "地方综述·维基/民族报",
+      "party": "综述",
+      "distance_label": "二手综述",
+      "stance_label": "综述",
+      "compiler": "维基百科、中国民族报等公开综述",
+      "color": "#8A8275",
+      "period": "今"
+    }
+  ]
+}

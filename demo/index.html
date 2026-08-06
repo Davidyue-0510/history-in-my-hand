@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小菜狗的文明图景 · 辽东走廊时空沙盘</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── hub 专用样式（其余继承 style.css）── */
+    body{ background: var(--paper, #F6F3EA); }
+    .hub-main{
+      max-width: 1180px; margin: 0 auto;
+      padding: 28px 36px 60px;
+      display: grid; gap: 26px;
+    }
+    .hub-hero{
+      display: grid; grid-template-columns: 1fr 320px;
+      gap: 32px; align-items: end;
+      border-bottom: 1px solid #D8D2C2; padding-bottom: 18px;
+    }
+    .hub-title{ font-family: var(--serif); font-size: 38px; line-height: 1.1;
+      margin: 0 0 4px; color: var(--ink, #2A2521); font-weight: 600; }
+    .hub-title em{ font-style: normal; color: #8C6239; }
+    .hub-sub{ font-family: var(--mono); font-size: 12px; color: #7A6E5C;
+      margin: 0 0 8px; letter-spacing: 0.05em; }
+    .hub-lead{ font-family: var(--serif); font-size: 16px; line-height: 1.7;
+      color: var(--ink-2, #5C544A); max-width: 640px; margin: 10px 0 0; }
+    .hub-version{ font-family: var(--mono); font-size: 11px; color: #8C6239;
+      border: 1px solid #C9BFA5; border-radius: 3px; padding: 3px 8px;
+      display: inline-block; }
+    .hub-terrain-wrap{
+      border: 1px solid #D8D2C2; border-radius: 4px; overflow: hidden;
+      background: #EFECE2; box-shadow: 0 1px 0 rgba(0,0,0,.04);
+    }
+    #hubTerrain{ display: block; width: 100%; height: 220px; }
+    .hub-terrain-cap{
+      font-family: var(--mono); font-size: 10.5px; color: #7A6E5C;
+      padding: 6px 10px; border-top: 1px solid #E3DCC8; background: #FBF8EE;
+      display: flex; justify-content: space-between;
+    }
+    .hub-grid{
+      display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+    }
+    @media (max-width: 880px){
+      .hub-hero{ grid-template-columns: 1fr; }
+      .hub-grid{ grid-template-columns: 1fr; }
+    }
+    .card{
+      display: block; text-decoration: none; color: inherit;
+      border: 1px solid #D8D2C2; border-radius: 5px; padding: 18px 20px 16px;
+      background: #FBF9F3; position: relative;
+      transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+    .card:hover{ transform: translateY(-1px); box-shadow: 0 4px 14px rgba(42,37,33,.08);
+      border-color: #B89C70; }
+    .card-kind{
+      font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em;
+      color: #8C6239; text-transform: uppercase;
+    }
+    .card-title{
+      font-family: var(--serif); font-size: 26px; margin: 4px 0 2px;
+      color: var(--ink, #2A2521); font-weight: 600;
+    }
+    .card-sub{ font-family: var(--serif); font-size: 13px; color: #7A6E5C; margin: 0 0 12px; }
+    .card-stats{
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
+      font-family: var(--mono); font-size: 11px; color: #5C544A;
+    }
+    .card-stat{ background: #F4F0E4; border-radius: 3px; padding: 6px 8px; }
+    .card-stat b{ display: block; font-size: 17px; color: var(--ink); font-weight: 600;
+      font-family: var(--serif); }
+    .card-extras{
+      margin-top: 12px; padding-top: 10px; border-top: 1px dashed #D8D2C2;
+      font-family: var(--serif); font-size: 12.5px; color: #5C544A; line-height: 1.5;
+    }
+    .resonance-pill{
+      display: inline-block; padding: 2px 8px; border-radius: 10px;
+      font-family: var(--mono); font-size: 11px;
+    }
+    .resonance-pill.high{ background: #DCE8DF; color: #2E5C45; }
+    .resonance-pill.mid{  background: #F2E5C7; color: #7C5A20; }
+    .resonance-pill.low{  background: #EAD9D5; color: #8A3A30; }
+    .hub-foot{
+      font-family: var(--mono); font-size: 11px; color: #7A6E5C;
+      padding-top: 12px; border-top: 1px solid #D8D2C2;
+      display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+    }
+    .hub-foot a{ color: #8C6239; text-decoration: none; border-bottom: 1px dotted #C9BFA5; }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-cn">小菜狗的文明图景</span>
+    <span class="brand-en">Vege-civilization</span>
+  </div>
+  <div class="warn-badge" title="本切片为架构演示，引文未经点校本逐字核对">演示数据 · 引文待校</div>
+</header>
+
+<main class="hub-main">
+
+  <section class="hub-hero">
+    <div>
+      <div class="hub-sub">VEGE-CIVILIZATION · v0.3 · 辽东走廊时空沙盘</div>
+      <h1 class="hub-title">同一块<em>真实地形</em>，<br>两种<em>史观切片</em>。</h1>
+      <p class="hub-lead">
+        萨尔浒之战（1619）的事件切片把「明军分四路、后金凭你几路来我只一路去」摆在地图上；
+        开原（县级 LOD 切片）则把同一片辽东山脉、江河、边墙切成 23 城堡 + 互市 + 三方史料。
+        两片共用一份真实 ASTER 高程、四层证据物理隔离、断言内核自动发现冲突——
+        立场不靠手贴标签，靠来源派生。
+      </p>
+      <div style="margin-top:14px"><span class="hub-version">v0.3 · 多切片联动</span></div>
+    </div>
+    <div>
+      <div class="hub-terrain-wrap">
+        <canvas id="hubTerrain"></canvas>
+        <div class="hub-terrain-cap">
+          <span>ASTER GDEM v3 · 97×67 网格</span>
+          <span id="hubTerrainRange">— m</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hub-grid">
+    <a class="card" href="sarhu.html">
+      <div class="card-kind">事件切片 · battle slice</div>
+      <div class="card-title">萨尔浒之战</div>
+      <div class="card-sub">万历四十七年二月—三月 · 天命四年 · 1619</div>
+      <div class="card-stats">
+        <div class="card-stat"><span>史料</span><b>6</b></div>
+        <div class="card-stat"><span>地名 / 人物</span><b>21 / 17</b></div>
+        <div class="card-stat"><span>断言</span><b>38</b></div>
+        <div class="card-stat"><span>冲突</span><b>3</b></div>
+        <div class="card-stat"><span>缺口</span><b>1</b></div>
+        <div class="card-stat"><span>路线紧张度（route_jin）</span><b>2.64</b></div>
+      </div>
+      <div class="card-extras">
+        <span class="resonance-pill mid">萨尔浒（广义）共振 0.333</span>
+        &nbsp;后金把「速度」当核心战术杠杆——route_jin 模型 10.6 日 vs 史料 4 日。
+        <br><small style="color:#918777">点击进入 → 兵力天平、局部优势、史料冲突、五路进军</small>
+      </div>
+    </a>
+
+    <a class="card" href="kaiyuan.html">
+      <div class="card-kind">县级 LOD 切片 · county slice</div>
+      <div class="card-title">开原</div>
+      <div class="card-sub">辽北第一重镇 · 明卫所—清州县 · 万历末陷落</div>
+      <div class="card-stats">
+        <div class="card-stat"><span>史料</span><b>8</b></div>
+        <div class="card-stat"><span>地名 / 人物</span><b>16 / 9</b></div>
+        <div class="card-stat"><span>断言</span><b>43</b></div>
+        <div class="card-stat"><span>冲突</span><b>1</b></div>
+        <div class="card-stat"><span>缺口</span><b>1</b></div>
+        <div class="card-stat"><span>路线紧张度（route_kaiyuan）</span><b>1.22</b></div>
+      </div>
+      <div class="card-extras">
+        <span class="resonance-pill high">开铁之战 共振 0.600（全场最高）</span>
+        &nbsp;朝鲜实录（K026/K026a–d）补完后，三方史料在开原陷落上首次完整闭合。
+        <br><small style="color:#918777">点击进入 → 建置沿革、三方史料、互市—军事关系、赫图阿拉进军紧张度</small>
+      </div>
+    </a>
+  </section>
+
+  <footer class="hub-foot">
+    <span>状态：v0.3 · 零额外权限（仅本地 + 联网检索 + 隔离 venv）</span>
+    <span>路线图：<a href="../docs/02-12h路线图-v0.3.md">docs/02-12h路线图-v0.3.md</a> · 共振报告：<a href="../data/resonance_report.md">data/resonance_report.md</a></span>
+  </footer>
+
+</main>
+
+<script src="data.js"></script>
+<script src="hub.js"></script>
+</body>
+</html>

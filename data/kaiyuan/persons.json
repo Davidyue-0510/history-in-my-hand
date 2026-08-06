@@ -1,0 +1,22 @@
+{
+  "persons": [
+    { "id": "fengyuan", "name": "冯瑗", "role": "开原兵备道右参政", "side": "ming",
+      "note": "（1572–1627）纂《开原图说》，实地调查辽北23城与女真分布，明人记当地事" },
+    { "id": "malin", "name": "马林", "role": "援辽总兵", "side": "ming",
+      "note": "开铁之战中死守开原，城破殉国" },
+    { "id": "zhengzhifan", "name": "郑之范", "role": "开原兵备道（推官代守）", "side": "ming",
+      "note": "以推官（掌刑狱）身份代守开原，明方记载称其贪懦弃城而逃、丢失官印" },
+    { "id": "nurhaci", "name": "努尔哈赤", "role": "后金大汗", "side": "jin",
+      "note": "万历四十七年率军克开原、铁岭，时年六十一" },
+    { "id": "xiongtinbi", "name": "熊廷弼", "role": "辽东经略", "side": "ming",
+      "note": "开原陷后受命经略辽东，奏称『开原，河东根柢也』" },
+    { "id": "gaozhen", "name": "高贞", "role": "参将", "side": "ming",
+      "note": "开原城破时殉国" },
+    { "id": "yuhualong", "name": "于化龙", "role": "副将", "side": "ming",
+      "note": "开原城破时殉国" },
+    { "id": "liangong", "name": "何懋官", "role": "守备", "side": "ming",
+      "note": "开原城破时殉国" },
+    { "id": "jianghongli", "name": "姜弘立", "role": "朝鲜五道都元帅", "side": "chaoxian",
+      "note": "（1560–1627）萨尔浒之战率约1.3万朝鲜兵隶东路刘綎助明；阿布达里岗后通款后金而降，明神宗未责反赐敕" }
+  ]
+}

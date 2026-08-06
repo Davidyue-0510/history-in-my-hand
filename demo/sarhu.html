@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小菜狗的文明图景 · 萨尔浒 1619</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="drawer-btn" id="btnLeft" title="史料与图层">☰</button>
+  <div class="brand">
+    <span class="brand-cn">小菜狗的文明图景</span>
+    <span class="brand-en">Vege-civilization</span>
+  </div>
+  <div class="slice-title">
+    <span class="slice-name">萨尔浒之战</span>
+    <span class="slice-sub">万历四十七年二月—三月 · 天命四年 · 1619</span>
+  </div>
+  <div class="warn-badge" title="本切片为架构演示，引文未经点校本逐字核对">演示数据 · 引文待校</div>
+  <button class="drawer-btn" id="btnRight" title="分析面板">◫</button>
+</header>
+
+<main class="layout" id="layout">
+
+  <!-- ══════════ 左：采信控制 ══════════ -->
+  <aside class="panel panel-left" id="panelLeft">
+
+    <section class="block" data-fold="open">
+      <h2 class="block-title foldable">你采信哪些史料<i class="fold-i"></i></h2>
+      <div class="fold-body">
+        <p class="block-hint">这是本系统唯一的"真相开关"。改变它，地图与所有数字当场改变。</p>
+        <div id="sourceList" class="source-list"></div>
+        <div class="preset-list" id="presetList"></div>
+        <div id="presetNote" class="preset-note"></div>
+      </div>
+    </section>
+
+    <section class="block" data-fold="open">
+      <h2 class="block-title foldable">显示哪几路<i class="fold-i"></i></h2>
+      <div class="fold-body">
+        <p class="block-hint">与史料采信解耦。想单看一路，就只勾一路。判断先放一放，先把每条线各自看清楚。</p>
+        <div id="routeList" class="route-list"></div>
+      </div>
+    </section>
+
+    <section class="block" data-fold="open">
+      <h2 class="block-title foldable">地形<i class="fold-i"></i></h2>
+      <div class="fold-body">
+        <div id="terrainCtl" class="terrain-ctl"></div>
+        <div class="terrain-src" id="terrainSrc"></div>
+      </div>
+    </section>
+
+    <section class="block" data-fold="closed">
+      <h2 class="block-title foldable">证据层<i class="fold-i"></i></h2>
+      <div class="fold-body">
+        <p class="block-hint">原文与推演物理隔离。推演层默认可一键关闭。</p>
+        <div id="layerList" class="layer-list"></div>
+      </div>
+    </section>
+
+    <section class="block block-foot">
+      <div class="stat-row"><span>当前可见断言</span><b id="statVisible">—</b></div>
+      <div class="stat-row"><span>被过滤掉</span><b id="statHidden">—</b></div>
+      <div class="stat-row"><span>冲突组</span><b id="statConflict">—</b></div>
+    </section>
+
+  </aside>
+
+  <!-- ══════════ 中：地图 ══════════ -->
+  <section class="stage">
+
+    <div class="stage-head">
+      <div class="date-block">
+        <div class="date-era" id="dateEra">万历四十七年二月廿七</div>
+        <div class="date-greg" id="dateGreg">1619-04-11</div>
+      </div>
+      <div class="date-label" id="dateLabel">四路陆续出发</div>
+    </div>
+
+    <div class="map-wrap" id="mapWrap">
+      <canvas id="terrainCv"></canvas>
+      <svg id="map" preserveAspectRatio="none"></svg>
+
+      <div class="map-tools">
+        <button data-zoom="in"  title="放大 (+)">＋</button>
+        <button data-zoom="out" title="缩小 (−)">−</button>
+        <button data-zoom="fit" title="复位 (0 / 双击)">⤢</button>
+      </div>
+      <div class="zoom-badge" id="zoomBadge">1.0×</div>
+
+      <div class="map-legend" id="mapLegend"></div>
+      <div class="elev-legend" id="elevLegend"></div>
+      <div class="map-hint">滚轮缩放 · 拖拽平移 · 双击复位</div>
+    </div>
+
+    <div class="timeline">
+      <button id="playBtn" class="play-btn" title="推演">▶</button>
+      <div class="tl-track" id="tlTrack"></div>
+    </div>
+
+  </section>
+
+  <!-- ══════════ 右：分析 ══════════ -->
+  <aside class="panel panel-right" id="panelRight">
+
+    <div class="tabs" id="tabs">
+      <button data-tab="local"    class="tab active">局部优势</button>
+      <button data-tab="balance"  class="tab">兵力总量</button>
+      <button data-tab="conflict" class="tab">史料冲突<span class="tab-dot" id="tabDot"></span></button>
+      <button data-tab="inspect"  class="tab">检视</button>
+    </div>
+
+    <!-- 局部优势：把「以少胜多多半是局部优势累积」变成可计算的东西 -->
+    <div class="tabpane active" data-pane="local">
+      <section class="block">
+        <h2 class="block-title">总量说的话</h2>
+        <div id="localTotal" class="lf-total"></div>
+      </section>
+      <section class="block">
+        <h2 class="block-title">每一场接战说的话</h2>
+        <p class="block-hint">接战 ≠ 战役。接战是兵力真正相遇的那个时空点。
+          兵力 = 该部总数 × 投入比例，所以换一套史料，这些条也会变。</p>
+        <div id="localBars" class="lf-bars"></div>
+      </section>
+      <section class="block">
+        <h2 class="block-title">逐次消耗</h2>
+        <p class="block-hint">「优势逐渐累积」这句话若成立，就该能看到一个交叉点。</p>
+        <div id="localAttr" class="lf-attr"></div>
+      </section>
+      <section class="block">
+        <h2 class="block-title">检验结论</h2>
+        <div id="localVerdict" class="lf-verdict"></div>
+      </section>
+      <section class="block">
+        <h2 class="block-title">行军地形代价</h2>
+        <p class="block-hint">模型日数据真实高程算出，与史料所记日数相比。
+          差得远的地方，不代表史料错了——代表这里有事没说清。</p>
+        <div id="localTerrain" class="lf-terrain"></div>
+      </section>
+    </div>
+
+    <div class="tabpane" data-pane="balance">
+      <section class="block">
+        <h2 class="block-title">兵力天平</h2>
+        <p class="block-hint">同一场战争，采信不同史料，双方实力对比可以完全颠倒。</p>
+        <div id="balance" class="balance"></div>
+      </section>
+    </div>
+
+    <div class="tabpane" data-pane="conflict">
+      <section class="block">
+        <h2 class="block-title">史料在这里打架 <span class="title-tag" id="conflictCount"></span></h2>
+        <p class="block-hint">冲突不是录入错误，是系统自动发现的。它不被消除，只被陈列。</p>
+        <div id="conflictList" class="conflict-list"></div>
+      </section>
+    </div>
+
+    <div class="tabpane" data-pane="inspect">
+      <section class="block">
+        <h2 class="block-title" id="inspectTitle">检视</h2>
+        <div id="inspect" class="inspect">
+          <div class="empty-hint">点击地图上的地名、行军线，或任意冲突项。</div>
+        </div>
+      </section>
+    </div>
+
+  </aside>
+
+</main>
+
+<div class="scrim" id="scrim"></div>
+
+<!-- 冲突对比浮层 -->
+<div id="modal" class="modal" style="display:none">
+  <div class="modal-card">
+    <button class="modal-close" id="modalClose">×</button>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

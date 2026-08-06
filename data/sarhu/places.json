@@ -1,0 +1,42 @@
+{
+  "_comment": "地名与时空基准。precision 字段必须诚实标注——古代地名的现代定位大多是近似的，假装精确是这类项目最常见的失信来源。",
+  "_schema_version": "0.1",
+  "_crs": "EPSG:4326",
+  "places": [
+    { "id": "shenyang",   "name": "沈阳（沈阳中卫）", "modern": "辽宁省沈阳市",            "lon": 123.43, "lat": 41.80, "precision": "city",     "type": "city",       "note": "经略杨镐驻节地，四路军总调度中心" },
+    { "id": "fushun",     "name": "抚顺（抚顺所）",   "modern": "辽宁省抚顺市",            "lon": 123.96, "lat": 41.88, "precision": "city",     "type": "fort",       "note": "1618 年已为后金攻破" },
+    { "id": "fushunguan", "name": "抚顺关",           "modern": "抚顺市东，浑河北岸",       "lon": 124.28, "lat": 41.92, "precision": "approx_10km", "type": "pass",    "note": "辽东边墙关口，杜松西路出塞处" },
+    { "id": "sarhu",      "name": "萨尔浒",           "modern": "抚顺市大伙房水库淹没区一带", "lon": 124.10, "lat": 41.90, "precision": "approx_10km", "type": "battlefield", "note": "原址已沉入大伙房水库，现代定位存在争议" },
+    { "id": "jilinya",    "name": "吉林崖",           "modern": "抚顺市东，铁背山西南",     "lon": 124.18, "lat": 41.93, "precision": "approx_10km", "type": "battlefield", "note": "界凡筑城工地所在，杜松分兵攻此" },
+    { "id": "jiefan",     "name": "界凡（界藩城）",   "modern": "抚顺县铁背山",            "lon": 124.22, "lat": 41.94, "precision": "approx_5km",  "type": "fort",   "note": "后金新筑城，战时有筑城夫役一万五千人" },
+    { "id": "hetuala",    "name": "赫图阿拉",         "modern": "抚顺市新宾满族自治县永陵镇老城", "lon": 125.03, "lat": 41.78, "precision": "site",  "type": "capital",   "note": "后金都城，明军四路合击的目标" },
+    { "id": "kaiyuan",    "name": "开原",             "modern": "辽宁省开原市",            "lon": 124.03, "lat": 42.55, "precision": "city",     "type": "city",       "note": "马林北路出发地" },
+    { "id": "sanchaer",   "name": "三岔儿堡",         "modern": "开原东南、铁岭东",         "lon": 124.20, "lat": 42.20, "precision": "approx_20km", "type": "fort",   "note": "北路军入塞路径，具体位置有异说" },
+    { "id": "shangjianya","name": "尚间崖",           "modern": "抚顺市东北、浑河北",       "lon": 124.30, "lat": 42.05, "precision": "approx_20km", "type": "battlefield", "note": "马林本部扎营处" },
+    { "id": "feifenshan", "name": "斐芬山",           "modern": "尚间崖东南",              "lon": 124.38, "lat": 42.00, "precision": "approx_20km", "type": "battlefield", "note": "潘宗颜部扎营处，力战死" },
+    { "id": "qinghe",     "name": "清河（清河堡）",   "modern": "辽宁省本溪市清河城镇",     "lon": 124.20, "lat": 41.35, "precision": "town",     "type": "fort",       "note": "李如柏南路出发地，1618 年曾被后金攻破" },
+    { "id": "yahuguan",   "name": "鸦鹘关",           "modern": "本溪市与新宾县交界",       "lon": 124.60, "lat": 41.45, "precision": "approx_10km", "type": "pass",   "note": "南路军出塞关口" },
+    { "id": "hulan",      "name": "虎拦路（虎栏岗）", "modern": "新宾县西南",              "lon": 124.78, "lat": 41.55, "precision": "approx_20km", "type": "waypoint", "note": "李如柏部最远抵达处，随即奉命撤退" },
+    { "id": "kuandian",   "name": "宽甸（宽奠堡）",   "modern": "辽宁省丹东市宽甸满族自治县", "lon": 124.78, "lat": 40.73, "precision": "town",   "type": "fort",       "note": "刘綎东路出发地" },
+    { "id": "liangmadian","name": "亮马佃",           "modern": "宽甸北",                  "lon": 124.85, "lat": 41.00, "precision": "approx_20km", "type": "waypoint", "note": "东路行军途经" },
+    { "id": "shenhe",     "name": "深河",             "modern": "桓仁—新宾之间，浑江支流",  "lon": 125.05, "lat": 41.25, "precision": "approx_20km", "type": "waypoint", "note": "朝鲜军营地，《栅中日录》记载详细" },
+    { "id": "niumaozhai", "name": "牛毛寨",           "modern": "桓仁满族自治县境",        "lon": 125.15, "lat": 41.35, "precision": "approx_20km", "type": "battlefield", "note": "刘綎部前锋破后金小股守军处" },
+    { "id": "abudaligang","name": "阿布达里岗",       "modern": "新宾县东南，赫图阿拉南",   "lon": 125.00, "lat": 41.55, "precision": "approx_20km", "type": "battlefield", "note": "刘綎中伏战死处" },
+    { "id": "fucha",      "name": "富察之野",         "modern": "阿布达里岗西南",          "lon": 124.92, "lat": 41.50, "precision": "approx_20km", "type": "battlefield", "note": "朝鲜军被围投降处" },
+    { "id": "yehe",       "name": "叶赫",             "modern": "吉林省四平市叶赫满族镇",   "lon": 124.60, "lat": 43.05, "precision": "town",     "type": "city",       "note": "叶赫部，明之盟军，出兵一部随北路军" }
+  ],
+  "rivers": [
+    { "id": "liaohe",   "name": "辽河",   "path": [[122.6,43.0],[122.9,42.4],[122.8,41.9],[122.6,41.4],[122.2,40.9],[121.9,40.6]] },
+    { "id": "hunhe",    "name": "浑河",   "path": [[124.9,41.95],[124.5,41.90],[124.15,41.88],[123.9,41.86],[123.4,41.75],[122.9,41.35],[122.6,41.05]] },
+    { "id": "taizihe",  "name": "太子河", "path": [[124.9,41.30],[124.4,41.25],[123.9,41.20],[123.4,41.15],[123.0,41.10],[122.7,41.05]] },
+    { "id": "suzihe",   "name": "苏子河", "path": [[125.25,41.72],[125.03,41.78],[124.72,41.88],[124.45,41.92],[124.22,41.94]] },
+    { "id": "yalu",     "name": "鸭绿江", "path": [[126.5,41.7],[126.1,41.35],[125.6,41.05],[125.0,40.65],[124.5,40.30],[124.3,40.05]] },
+    { "id": "hunjiang", "name": "浑江",   "path": [[126.2,42.0],[125.8,41.7],[125.4,41.45],[125.1,41.15],[124.9,40.85],[124.9,40.55]] }
+  ],
+  "wall": {
+    "id": "liaodong_bianqiang",
+    "name": "辽东边墙",
+    "note": "明代辽东镇边墙走向示意，非精确测绘",
+    "path": [[124.60,43.05],[124.35,42.70],[124.15,42.45],[124.05,42.20],[124.20,41.98],[124.30,41.92],[124.15,41.75],[124.30,41.55],[124.45,41.42],[124.55,41.20],[124.75,40.95],[124.85,40.70],[124.45,40.30]]
+  }
+}

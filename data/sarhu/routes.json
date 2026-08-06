@@ -1,0 +1,95 @@
+{
+  "_comment": "行军轨迹。每个节点带到达时刻，地图按时间参数化生长。后金一路的往返轨迹是本役最有说服力的可视化——同一支部队五日内在三处战场之间机动，逐个吃掉四路明军。",
+  "_schema_version": "0.1",
+  "routes": [
+    {
+      "id": "route_west",
+      "column": "west",
+      "name": "西路 · 杜松",
+      "side": "ming",
+      "source_support": ["shenzong_shilu", "mingshi"],
+      "confidence": 0.7,
+      "nodes": [
+        { "place": "shenyang",   "at": "1619-04-11", "label": "出沈阳" },
+        { "place": "fushun",     "at": "1619-04-12", "label": "抵抚顺" },
+        { "place": "fushunguan", "at": "1619-04-13", "label": "出抚顺关，逾五岭" },
+        { "place": "sarhu",      "at": "1619-04-14", "label": "渡浑河，主力驻萨尔浒" },
+        { "place": "jilinya",    "at": "1619-04-14", "label": "分兵攻吉林崖" }
+      ],
+      "outcome": { "at": "1619-04-14", "type": "annihilated", "text": "萨尔浒大营与吉林崖分兵先后被破，杜松、王宣、赵梦麟阵亡" }
+    },
+    {
+      "id": "route_north",
+      "column": "north",
+      "name": "北路 · 马林",
+      "side": "ming",
+      "source_support": ["shenzong_shilu", "mingshi"],
+      "confidence": 0.6,
+      "nodes": [
+        { "place": "kaiyuan",     "at": "1619-04-12", "label": "出开原" },
+        { "place": "sanchaer",    "at": "1619-04-13", "label": "经三岔儿堡入塞" },
+        { "place": "shangjianya", "at": "1619-04-15", "label": "闻杜松败，就地结营三处" },
+        { "place": "feifenshan",  "at": "1619-04-15", "label": "潘宗颜别营斐芬山" }
+      ],
+      "outcome": { "at": "1619-04-15", "type": "routed", "text": "三营被逐个击破，潘宗颜、龚念遂战死，马林单骑走开原" }
+    },
+    {
+      "id": "route_east",
+      "column": "east",
+      "name": "东路 · 刘綎（含朝鲜军）",
+      "side": "ming",
+      "source_support": ["zhazhong_rilu", "mingshi", "taizu_shilu"],
+      "confidence": 0.75,
+      "nodes": [
+        { "place": "kuandian",     "at": "1619-04-11", "label": "出宽甸" },
+        { "place": "liangmadian",  "at": "1619-04-13", "label": "亮马佃" },
+        { "place": "shenhe",       "at": "1619-04-14", "label": "深河，朝鲜军扎营" },
+        { "place": "niumaozhai",   "at": "1619-04-15", "label": "破牛毛寨守军" },
+        { "place": "abudaligang",  "at": "1619-04-17", "label": "中伏于阿布达里岗" },
+        { "place": "fucha",        "at": "1619-04-17", "label": "朝鲜军被围于富察之野" }
+      ],
+      "outcome": { "at": "1619-04-17", "type": "annihilated", "text": "刘綎战死，乔一琦自尽；朝鲜都元帅姜弘立率余部降" }
+    },
+    {
+      "id": "route_south",
+      "column": "south",
+      "name": "南路 · 李如柏",
+      "side": "ming",
+      "source_support": ["shenzong_shilu", "mingshi"],
+      "confidence": 0.5,
+      "nodes": [
+        { "place": "qinghe",   "at": "1619-04-13", "label": "出清河" },
+        { "place": "yahuguan", "at": "1619-04-15", "label": "出鸦鹘关，行动迟缓" },
+        { "place": "hulan",    "at": "1619-04-17", "label": "抵虎拦路，未接战" },
+        { "place": "qinghe",   "at": "1619-04-18", "label": "奉檄撤回" }
+      ],
+      "outcome": { "at": "1619-04-18", "type": "withdrawn", "text": "全师而还，撤退中因敌哨骑鸣螺自相蹂践，死千余人" }
+    },
+    {
+      "id": "route_jin",
+      "column": "jin",
+      "name": "后金 · 努尔哈赤主力",
+      "side": "jin",
+      "source_support": ["taizu_shilu"],
+      "confidence": 0.65,
+      "nodes": [
+        { "place": "hetuala",      "at": "1619-04-13", "label": "赫图阿拉集结，定策先击西路" },
+        { "place": "jiefan",       "at": "1619-04-14", "label": "驰援界凡，破杜松" },
+        { "place": "shangjianya",  "at": "1619-04-15", "label": "北上破马林" },
+        { "place": "hetuala",      "at": "1619-04-16", "label": "回师休整一日" },
+        { "place": "abudaligang",  "at": "1619-04-17", "label": "南下设伏，破刘綎" }
+      ],
+      "outcome": { "at": "1619-04-18", "type": "victory", "text": "五日之内往返机动约五百里，以六万之众逐次歼灭三路明军" }
+    }
+  ],
+  "timeline": [
+    { "at": "1619-04-11", "era": "万历四十七年二月廿七", "label": "四路陆续出发", "key": false },
+    { "at": "1619-04-12", "era": "万历四十七年二月廿八", "label": "杜松抵抚顺", "key": false },
+    { "at": "1619-04-13", "era": "万历四十七年二月廿九", "label": "杜松出关抢进，四路失去协同", "key": true },
+    { "at": "1619-04-14", "era": "万历四十七年三月初一", "label": "萨尔浒 · 吉林崖 — 西路覆没", "key": true },
+    { "at": "1619-04-15", "era": "万历四十七年三月初二", "label": "尚间崖 · 斐芬山 — 北路溃散", "key": true },
+    { "at": "1619-04-16", "era": "万历四十七年三月初三", "label": "后金回师休整，东路仍在深入", "key": false },
+    { "at": "1619-04-17", "era": "万历四十七年三月初四", "label": "阿布达里岗 · 富察 — 东路覆没，朝鲜军降", "key": true },
+    { "at": "1619-04-18", "era": "万历四十七年三月初五", "label": "南路奉檄撤退，战事终结", "key": true }
+  ]
+}

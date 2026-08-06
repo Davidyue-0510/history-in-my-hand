@@ -1,0 +1,80 @@
+/* 开原县级 LOD 切片 —— 在 style.css 通用类之上补充场景专用样式 */
+
+#app { grid-template-columns: var(--lw) 1fr var(--rw); }
+@media (max-width: 1280px) { #app { --lw: 256px; --rw: 312px; } }
+@media (max-width: 1080px) {
+  #app { grid-template-columns: 1fr; }
+  #panelLeft, #panelRight {
+    position: absolute; top: 0; bottom: 0; width: min(86vw, 360px); z-index: 40;
+    transform: translateX(-104%); transition: transform .26s ease; box-shadow: 4px 0 24px rgba(0,0,0,.18);
+  }
+  #panelRight { left: auto; right: 0; transform: translateX(104%); box-shadow: -4px 0 24px rgba(0,0,0,.18); }
+  #panelLeft.open, #panelRight.open { transform: translateX(0); }
+}
+
+#topbar { display: flex; align-items: center; gap: 10px; padding: 8px 12px;
+  border-bottom: 1px solid var(--line); background: var(--paper-2); }
+#topbar .title { display: flex; align-items: baseline; gap: 8px; flex: 1; min-width: 0; }
+#topbar .title b { font-size: 17px; color: var(--ink); letter-spacing: .04em; }
+#topbar .title .sub { font-size: 11px; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.back-link { font-size: 12px; color: var(--jin); text-decoration: none; padding: 2px 8px;
+  border: 1px solid var(--jin); border-radius: 20px; }
+.back-link:hover { background: var(--jin); color: #fff; }
+
+/* 沿革时间轴 */
+#timelineBar { display: flex; align-items: center; gap: 12px; padding: 6px 14px;
+  border-top: 1px solid var(--line); background: var(--paper-2); }
+.tl-cap-l { font-size: 11px; color: var(--ink-3); white-space: nowrap; }
+.tl-track { position: relative; flex: 1; height: 34px; }
+.tl-node { position: absolute; top: 9px; transform: translateX(-50%); cursor: pointer; text-align: center; }
+.tl-node .tl-dot { width: 11px; height: 11px; border-radius: 50%; margin: 0 auto;
+  background: #fff; border: 2px solid var(--ink-3); transition: .15s; }
+.tl-node.key .tl-dot { background: var(--accent); border-color: var(--accent); }
+.tl-node.now .tl-dot { box-shadow: 0 0 0 4px rgba(199,123,48,.25); }
+.tl-node .tl-cap { font-size: 9px; color: var(--ink-3); margin-top: 2px; white-space: nowrap; }
+.tl-node:hover .tl-dot { transform: scale(1.25); }
+.tl-readout { font-size: 11px; color: var(--ink-2); white-space: nowrap; min-width: 132px; text-align: right; }
+.tl-readout #dateEra { color: var(--ink); font-weight: 600; }
+
+/* 沿革列表 */
+.ev-lead { font-size: 12px; color: var(--ink-2); line-height: 1.6; padding: 12px 14px 4px; }
+.ev-list { padding: 4px 12px 16px; }
+.ev { display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 10px 0;
+  border-bottom: 1px dashed var(--line); cursor: pointer; }
+.ev:hover { background: var(--paper-2); }
+.ev-when { text-align: right; }
+.ev-when .era { font-size: 11px; color: var(--accent); font-weight: 600; }
+.ev-when .yr { font-size: 10px; color: var(--ink-3); font-family: monospace; }
+.ev-body { min-width: 0; }
+.ev-title { font-size: 13px; color: var(--ink); font-weight: 600; }
+.ev-kind { display: inline-block; font-size: 9.5px; color: var(--ink-3);
+  border: 1px solid var(--line); border-radius: 10px; padding: 0 7px; margin-left: 6px; vertical-align: middle; }
+.ev-text { font-size: 11.5px; color: var(--ink-2); line-height: 1.6; margin-top: 3px; }
+.ev.sel { background: rgba(199,123,48,.08); border-radius: 6px; }
+
+/* 三方史料 */
+.parties-note { font-size: 11.5px; color: var(--ink-2); line-height: 1.6; padding: 12px 14px;
+  background: var(--paper-2); border-bottom: 1px solid var(--line); }
+.parties-list { padding: 8px 12px 16px; }
+.pty { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+.pty-head { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--paper-2); }
+.pty-name { font-size: 12.5px; font-weight: 600; color: var(--ink); }
+.pty-n { font-size: 10px; color: #fff; border-radius: 10px; padding: 1px 8px; }
+.pty-body { padding: 8px 10px; }
+.pty-row { display: flex; gap: 8px; padding: 5px 0; border-bottom: 1px dashed var(--line); }
+.pty-row:last-child { border-bottom: none; }
+.pty-k { font-size: 10.5px; color: var(--ink-3); width: 52px; flex-shrink: 0; }
+.pty-v { font-size: 11.5px; color: var(--ink-2); line-height: 1.55; }
+
+/* 冲突头 */
+.cf-head { font-size: 12px; color: var(--ink); font-weight: 600; padding: 12px 14px 4px; }
+.cf-count { font-size: 10.5px; color: var(--ink-3); font-weight: 400; margin-left: 6px; }
+.cf-list { padding: 4px 12px 16px; }
+
+/* 检视 */
+.insp-title { font-size: 13px; color: var(--ink); font-weight: 600; padding: 12px 14px 4px; }
+.insp-list { padding: 4px 12px 16px; }
+
+.dot { display: none; width: 7px; height: 7px; border-radius: 50%; background: #C0392B;
+  margin-left: 5px; vertical-align: middle; }
+.empty-hint { font-size: 11.5px; color: var(--ink-3); line-height: 1.7; padding: 14px; }

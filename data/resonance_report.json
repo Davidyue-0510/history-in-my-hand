@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "definition": "resonance = (coverage/3) * (1 - divergence) * (1 - gap_rate)",
+    "parties": [
+      "明方",
+      "清方",
+      "朝鲜",
+      "综述考订"
+    ]
+  },
+  "events": [
+    {
+      "subject": "event:abudaligang",
+      "name": "阿布达里岗（东路·刘綎）",
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dusong_cross",
+      "name": "杜松渡浑河（西路）",
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.5,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:sarhu_battle",
+      "name": "萨尔浒主战场",
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:shangjianya",
+      "name": "尚间崖（北路·马林）",
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:south_retreat",
+      "name": "南路溃逃（李如柏）",
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yehe",
+      "name": "叶赫灭亡",
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:sarhu",
+      "name": "萨尔浒之战（广义）",
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 1,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [
+          {
+            "id": "K026",
+            "predicate": "朝鲜参战",
+            "value_text": "朝鲜应明征出兵：以姜弘立为五道都元帅、金景瑞副，率约1.3万兵编入东路刘綎军，萨尔浒非明单方之战",
+            "source": "chaoxian_shilu",
+            "layer": "record"
+          }
+        ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:kaifa",
+      "name": "开铁之战（开原陷落）",
+      "total": 10,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.1,
+      "resonance": 0.6,
+      "party_counts": {
+        "明方": 4,
+        "清方": 0,
+        "朝鲜": 1,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "K008",
+            "predicate": "出兵日",
+            "value_text": "万历四十七年六月初十（公历 1619-07-20，锚点见 K024）努尔哈赤率军出静安堡",
+            "source": "ming_shilu",
+            "layer": "record"
+          },
+          {
+            "id": "K009",
+            "predicate": "陷落日",
+            "value_text": "万历四十七年六月十六（1619-07-26）克开原",
+            "source": "ming_shilu",
+            "layer": "record"
+          },
+          {
+            "id": "K026c",
+            "predicate": "朝鲜处境",
+            "value_text": "熊廷弼奏：开原未破时『朝鲜未败，犹有左腋之患』；开原破则朝鲜失牵制后金之凭，『不敢不从』后金",
+            "source": "ming_shilu",
+            "layer": "record"
+          },
+          {
+            "id": "K027d",
+            "predicate": "海西—开原屏障",
+            "value_text": "开原未陷时海西叶赫为开原北屏(熊廷弼『北关相倚，犹有后背之忧』)；后金先服叶赫再破开原，抽掉明辽东北面屏障",
+            "source": "ming_shilu",
+            "layer": "record"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [
+          {
+            "id": "K026d",
+            "predicate": "朝鲜记载",
+            "value_text": "朝鲜实录记开原、铁岭连陷，努尔哈赤威迫日甚；光海君处两难，终与后金往来(即明方所谓『不敢不从』)",
+            "source": "chaoxian_shilu",
+            "layer": "record"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "K015",
+            "predicate": "屠城",
+            "value_text": "明方/综述载开原被屠『十余万，仅余千余』",
+            "source": "wiki",
+            "layer": "record"
+          },
+          {
+            "id": "K024",
+            "predicate": "公历锚点",
+            "value_text": "出兵 1619-07-20；陷落 1619-07-26（区间 6 天，农历六月初十/十六换算）",
+            "source": "wiki",
+            "layer": "record"
+          }
+        ]
+      }
+    }
+  ]
+}

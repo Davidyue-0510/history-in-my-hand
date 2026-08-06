@@ -1,0 +1,284 @@
+{
+  "_comment": "接战（engagement）——本项目最重要的派生实体。\n\n战役是叙事单位，接战是兵力实际相遇的时空点。二者的区别决定了一个判断：\n『萨尔浒之战明军八万八千对后金六万，明军以多败少』这句话是错的，\n因为『明军八万八千』从未在任何一个时空点同时存在于战场上。\n\n注意 committed_ratio 不是硬编码的兵力数字，而是投入比例。\n实际兵力 = 该部总兵力断言的值 × 投入比例。\n这意味着：切换采信的史料，局部兵力比曲线会随之改变。\n无论切换成哪一套，后金在每一场接战中都占优——\n这种在不同史料下的稳健性，比任何单一数字都更有说服力。",
+  "_schema_version": "0.1",
+  "_model_note": "committed_ratio 与 fatigue 属于『学界考证』层，不是史料原文。史料只说『命六旗攻大营，二旗助界凡』，把它折算成 0.75 是我们做的推算，必须可被质疑、可被替换。",
+
+  "engagements": [
+    {
+      "id": "eng_sarhu_camp",
+      "name": "萨尔浒大营",
+      "at": "1619-04-14",
+      "era": "三月初一 · 午后",
+      "place": "sarhu",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_west",
+          "commander": "dusong",
+          "committed_ratio": 0.66,
+          "commit_basis": "杜松分兵：主力留萨尔浒立营，自率一部渡河攻吉林崖。分兵比例史无明文，此处按二比一推算。",
+          "commit_confidence": 0.45,
+          "fatigue": "exhausted",
+          "fatigue_basis": "当日两渡浑河，时三月辽东未解冻，士卒衣甲尽湿；立营未固即遇攻。",
+          "march_72h_li": 200,
+          "posture": "立营未固"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "nurhaci",
+          "committed_ratio": 0.75,
+          "commit_basis": "《太祖实录》：命二旗助界凡，自将六旗攻萨尔浒大营。六旗即八分之六。",
+          "commit_confidence": 0.72,
+          "fatigue": "fresh",
+          "fatigue_basis": "自赫图阿拉短距机动百里内，未经苦战。",
+          "march_72h_li": 100,
+          "posture": "自高处下击"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "明军大营被冲破，溃卒渡河多溺死"
+    },
+    {
+      "id": "eng_jilinya",
+      "name": "吉林崖",
+      "at": "1619-04-14",
+      "era": "三月初一 · 日暮",
+      "place": "jilinya",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_west",
+          "commander": "dusong",
+          "committed_ratio": 0.34,
+          "commit_basis": "杜松亲率之攻城部队，即分兵之另一部。",
+          "commit_confidence": 0.45,
+          "fatigue": "exhausted",
+          "fatigue_basis": "涉水后仰攻山崖，且大营已破、退路断绝。",
+          "march_72h_li": 200,
+          "posture": "仰攻，背水"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "nurhaci",
+          "committed_ratio": 1.0,
+          "commit_basis": "先以二旗助守，破大营后六旗回身合击，实为全军。此处最能体现内线机动之利：同一支部队在半日内打了两场，每一场都是多打少。",
+          "commit_confidence": 0.6,
+          "fatigue": "fresh",
+          "fatigue_basis": "居高守险，且有界凡筑城夫役万五千人可为声势。",
+          "march_72h_li": 100,
+          "posture": "据险，且有援"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "杜松、王宣、赵梦麟阵亡，西路全军覆没"
+    },
+    {
+      "id": "eng_shangjianya",
+      "name": "尚间崖",
+      "at": "1619-04-15",
+      "era": "三月初二",
+      "place": "shangjianya",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_north",
+          "commander": "malin",
+          "committed_ratio": 0.5,
+          "commit_basis": "马林闻杜松败，就地结营三处：本部尚间崖、潘宗颜斐芬山、龚念遂后方辎重营。三营互不相救，本部约当全军之半。",
+          "commit_confidence": 0.5,
+          "fatigue": "marching",
+          "fatigue_basis": "闻败仓促结营，掘壕列车营未成。",
+          "march_72h_li": 250,
+          "posture": "仓促结营，三分兵力"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "nurhaci",
+          "committed_ratio": 0.9,
+          "commit_basis": "破西路次日即北上，几以全军扑之。留少数看守界凡。",
+          "commit_confidence": 0.55,
+          "fatigue": "marching",
+          "fatigue_basis": "昨日苦战，今日又行；但为胜兵，士气正锐。",
+          "march_72h_li": 150,
+          "posture": "乘胜，先夺山巅"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "马林本部溃，马林单骑走开原"
+    },
+    {
+      "id": "eng_feifenshan",
+      "name": "斐芬山",
+      "at": "1619-04-15",
+      "era": "三月初二 · 稍后",
+      "place": "feifenshan",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_north",
+          "commander": "panzongyan",
+          "committed_ratio": 0.33,
+          "commit_basis": "潘宗颜别营，三营之一。",
+          "commit_confidence": 0.45,
+          "fatigue": "marching",
+          "fatigue_basis": "孤军，主将已溃，无援。",
+          "march_72h_li": 250,
+          "posture": "孤营据山，火器犹存"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "nurhaci",
+          "committed_ratio": 0.9,
+          "commit_basis": "破马林本部后即移兵攻斐芬山，仍为全军。",
+          "commit_confidence": 0.5,
+          "fatigue": "marching",
+          "fatigue_basis": "连战二场。",
+          "march_72h_li": 160,
+          "posture": "四面合围"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "潘宗颜力战死，北路尽没"
+    },
+    {
+      "id": "eng_abudaligang",
+      "name": "阿布达里岗",
+      "at": "1619-04-17",
+      "era": "三月初四",
+      "place": "abudaligang",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_east",
+          "commander": "liuting",
+          "committed_ratio": 0.4,
+          "commit_basis": "山道行军，队伍前后拉长数十里。中伏时能接战者仅前锋一部。这是地形直接压低『有效投入兵力』的典型：名义一万，实际能同时挥刀的不足半数。",
+          "commit_confidence": 0.35,
+          "fatigue": "exhausted",
+          "fatigue_basis": "自宽甸山道行军六日约三百五十里，且粮运不继。",
+          "march_72h_li": 180,
+          "posture": "行军纵队，遭伏"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "daishan",
+          "committed_ratio": 0.55,
+          "commit_basis": "代善、皇太极率部南下设伏，留一部备南路李如柏。",
+          "commit_confidence": 0.45,
+          "fatigue": "fresh",
+          "fatigue_basis": "三月初三回赫图阿拉休整一日，以逸待劳。",
+          "march_72h_li": 120,
+          "posture": "设伏，且诈用明军令旗诱其轻进"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "刘綎战死，东路溃"
+    },
+    {
+      "id": "eng_fucha",
+      "name": "富察之野",
+      "at": "1619-04-17",
+      "era": "三月初四 · 次日",
+      "place": "fucha",
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:joseon",
+          "commander": "kanghongli",
+          "committed_ratio": 0.7,
+          "commit_basis": "朝鲜三营，金应河左营先溃，姜弘立中营与右营被围。",
+          "commit_confidence": 0.5,
+          "fatigue": "exhausted",
+          "fatigue_basis": "《栅中日录》记朝鲜军粮尽数日，士卒采松皮为食。",
+          "march_72h_li": 150,
+          "posture": "粮尽，孤立无援"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "daishan",
+          "committed_ratio": 0.55,
+          "commit_basis": "破刘綎之同一部队，转攻朝鲜军。",
+          "commit_confidence": 0.4,
+          "fatigue": "marching",
+          "fatigue_basis": "连战。",
+          "march_72h_li": 130,
+          "posture": "围而招降"
+        }
+      ],
+      "winner": "jin",
+      "outcome": "姜弘立率余部降"
+    },
+    {
+      "id": "eng_south_none",
+      "name": "南路 · 未接战",
+      "at": "1619-04-18",
+      "era": "三月初五",
+      "place": "hulan",
+      "no_contact": true,
+      "sides": [
+        {
+          "side": "ming",
+          "force": "army:ming_south",
+          "commander": "liruibai",
+          "committed_ratio": 0.0,
+          "commit_basis": "全程未与后金主力接战，奉檄撤回。",
+          "commit_confidence": 0.8,
+          "fatigue": "fresh",
+          "fatigue_basis": "行动迟缓，未经战。",
+          "march_72h_li": 90,
+          "posture": "观望后撤"
+        },
+        {
+          "side": "jin",
+          "force": "army:jin_total",
+          "commander": "-",
+          "committed_ratio": 0.0,
+          "commit_basis": "仅以哨骑袭扰。",
+          "commit_confidence": 0.7,
+          "fatigue": "fresh",
+          "fatigue_basis": "-",
+          "march_72h_li": 0,
+          "posture": "哨骑鸣螺"
+        }
+      ],
+      "winner": null,
+      "outcome": "全师而还，但撤退中自相蹂践死千余人。这一路的两万五千人，是明军总兵力里从未上过秤的一块。"
+    }
+  ],
+
+  "attrition": {
+    "_comment": "逐次损耗。『优势逐渐累积』这句话要成立，必须能画出双方可用兵力随时间的交叉点。",
+    "ming": [
+      { "after": "1619-04-13", "lost": 0,     "basis": "尚未接战" },
+      { "after": "1619-04-14", "lost": 30000, "basis": "西路全军覆没（按现代考订西路三万计）" },
+      { "after": "1619-04-15", "lost": 47000, "basis": "累计：西路 3 万 + 北路 1.5 万 + 叶赫兵一部" },
+      { "after": "1619-04-17", "lost": 70000, "basis": "累计：再加东路刘綎万余与朝鲜军一万三千（多为被俘）" },
+      { "after": "1619-04-18", "lost": 71000, "basis": "南路撤退自相蹂践千余人" }
+    ],
+    "jin": [
+      { "after": "1619-04-13", "lost": 0,    "basis": "-" },
+      { "after": "1619-04-14", "lost": 1500, "basis": "现代考订推算。《太祖实录》几乎不记己方损失——这是史料立场的直接体现，胜方的记录里没有伤亡。" },
+      { "after": "1619-04-15", "lost": 2500, "basis": "同上，推算" },
+      { "after": "1619-04-17", "lost": 4000, "basis": "同上，推算" },
+      { "after": "1619-04-18", "lost": 4000, "basis": "同上，推算" }
+    ],
+    "confidence": {
+      "ming": 0.55,
+      "jin": 0.2
+    },
+    "gap_note": "后金损失数字置信度仅 0.2。所有胜方史料都倾向于不记录己方伤亡，这不是疏漏，是体例。这条曲线的金方一侧，本质上是一条猜出来的线，界面必须让它看起来就是猜的。"
+  },
+
+  "fatigue_weight": {
+    "_comment": "『以逸待劳』的量化尝试。这是一个模型参数，不是史实，可被替换。默认权重刻意保守：疲劳最多让有效兵力打七折，不允许它大到能单独解释胜负。",
+    "fresh": 1.0,
+    "marching": 0.85,
+    "exhausted": 0.7
+  }
+}

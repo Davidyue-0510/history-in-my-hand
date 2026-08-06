@@ -1,0 +1,20 @@
+{
+  "edges": [
+    { "from": "kaiyuan_mashi", "to": "guangshun", "type": "mashi", "label": "广顺关·南关市（哈达/建州）" },
+    { "from": "kaiyuan_mashi", "to": "zhenbei", "type": "mashi", "label": "镇北关·北关市（叶赫/海西）" },
+    { "from": "kaiyuan_mashi", "to": "xinan", "type": "mashi", "label": "新安关·鞑靼马市（蒙古）" },
+    { "from": "kaiyuan_cheng", "to": "sanwan_wei", "type": "admin", "label": "三万卫治" },
+    { "from": "kaiyuan_cheng", "to": "liaohai_wei", "type": "admin", "label": "辽海卫治" },
+    { "from": "kaiyuan_cheng", "to": "anle_zhou", "type": "admin", "label": "安乐州治" },
+    { "from": "kaiyuan_cheng", "to": "fushun", "type": "mil", "label": "萨尔浒前奏：抚顺先陷（1618）" },
+    { "from": "kaiyuan_cheng", "to": "sarhu", "type": "mil", "label": "萨尔浒后明军退守开原" },
+    { "from": "kaiyuan_cheng", "to": "yehe", "type": "mil", "label": "北屏叶赫（开原陷则叶赫孤）" },
+    { "from": "kaiyuan_cheng", "to": "tieling", "type": "mil", "label": "西路援铁岭" },
+    { "from": "kaiyuan_cheng", "to": "liaoyang", "type": "mil", "label": "南屏辽阳" },
+    { "from": "kaiyuan_cheng", "to": "shenyang", "type": "mil", "label": "进取辽沈之跳板" },
+    { "from": "guangshun", "to": "hada", "type": "mashi", "label": "广顺关·南关市·通海西哈达部" },
+    { "from": "zhenbei", "to": "yehe", "type": "mashi", "label": "镇北关·北关市·通海西叶赫部" },
+    { "from": "yehe", "to": "hada", "type": "tribe", "label": "海西(扈伦)四部·叶赫—哈达同盟" },
+    { "from": "hetu_ala", "to": "kaiyuan_cheng", "type": "mil", "label": "后金自赫图阿拉北攻开原" }
+  ]
+}
