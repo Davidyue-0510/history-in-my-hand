@@ -106,6 +106,30 @@
   footer{padding:34px 0 60px;color:var(--ink2);font-size:13px;text-align:center}
   footer b{color:var(--ink)}
 
+  /* data model flow */
+  .flow{display:flex;align-items:stretch;gap:0;margin:6px 0 22px;flex-wrap:wrap}
+  .flow .node{flex:1 1 150px;min-width:140px;background:var(--paper2);border:1px solid var(--line);
+    border-radius:12px;padding:15px 15px}
+  .flow .node .k{font-size:11px;letter-spacing:.1em;color:var(--earth);font-weight:800;text-transform:uppercase}
+  .flow .node h4{margin:5px 0 6px;font-size:15px}
+  .flow .node p{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.55}
+  .flow .arr{display:flex;align-items:center;justify-content:center;color:var(--line);
+    font-size:22px;font-weight:700;padding:0 2px;flex:0 0 22px}
+  .model-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .model-grid .item{background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .model-grid .item h4{margin:0 0 6px;font-size:15px;display:flex;align-items:center;gap:8px}
+  .model-grid .item h4 .tag{font-size:11px;font-weight:700;color:#FBF6EA;background:var(--earth);
+    padding:1px 8px;border-radius:99px}
+  .model-grid .item p{margin:0;font-size:13.5px;color:var(--ink2)}
+  .health{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .health .pill{font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:99px;background:#E7EED5;color:#4f5d22}
+  .health .muted{font-size:13px;color:var(--ink2)}
+
+  @media (max-width:880px){
+    .flow .arr{transform:rotate(90deg);flex-basis:100%;padding:2px 0}
+    .model-grid{grid-template-columns:1fr}
+  }
+
   @media (max-width:880px){
     .stats{grid-template-columns:repeat(3,1fr)}
     .stat:nth-child(3n){border-right:0}
@@ -152,7 +176,7 @@
   <div class="stats">
     <div class="stat"><div class="n">9</div><div class="l">历史切片</div></div>
     <div class="stat"><div class="n">5</div><div class="l">地理分区</div></div>
-    <div class="stat"><div class="n">17</div><div class="l">一手/二手史料</div></div>
+    <div class="stat"><div class="n">15</div><div class="l">一手/二手史料</div></div>
     <div class="stat"><div class="n">175</div><div class="l">已录入断言</div></div>
     <div class="stat"><div class="n">19</div><div class="l">可认领研究线索</div></div>
     <div class="stat"><div class="n">19</div><div class="l">已标史料缺口</div></div>
@@ -180,6 +204,36 @@
         <h3><span class="dot" style="background:#3F6B8A"></span>叠在真实地形上</h3>
         <p>所有地点投影到 ASTER 真实高程网格（辽东 122–126.8°E，40–43.3°N）。城、关、河、边墙都在你能查到的坐标上，不是示意图。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>它到底怎么算出来的</h2>
+    <p class="sec-sub">对新人（尤其数字人文与美工）最关键的一节：内核不裁判，只把下面这条流水线投影到真实地形上。看懂它，你就知道自己的活会落在哪一环。</p>
+    <div class="flow">
+      <div class="node"><div class="k">SOURCE</div><h4>史料</h4><p>每切片一份 sources.json，标 party 与立场。</p></div>
+      <div class="arr">→</div>
+      <div class="node"><div class="k">ASSERTION</div><h4>断言</h4><p>原子单位：subject·predicate·value·source·layer。</p></div>
+      <div class="arr">→</div>
+      <div class="node"><div class="k">DERIVE</div><h4>派生立场</h4><p>source.party 经 vocab 词表映射为 明/清/朝鲜/综述。</p></div>
+      <div class="arr">→</div>
+      <div class="node"><div class="k">RESONANCE</div><h4>共振 / 冲突</h4><p>多方共识算共振度；同题异值自动聚成冲突。</p></div>
+      <div class="arr">→</div>
+      <div class="node"><div class="k">GAP→LEAD</div><h4>缺口→线索</h4><p>layer=gap 带 lead 块，自动收进研究线索。</p></div>
+    </div>
+    <div class="model-grid">
+      <div class="item"><h4>断言是原子单位 <span class="tag">数据</span></h4><p>每条断言 = 主语 + 谓词 + 取值 + 来源 + 层级。空引文、空值会被 lint 当 bug 抓出（E07/E10），因为下游共振度会据此算错。</p></div>
+      <div class="item"><h4>立场靠来源派生 <span class="tag">派生</span></h4><p><code>source.party</code> 经 <code>data/vocab.json</code> 受控词表映射成 明方 / 清方 / 朝鲜 / 综述考订。改一处词表，全站共振度自动重算——不手动贴标签。</p></div>
+      <div class="item"><h4>共振度 = 多方共识 <span class="tag">算法</span></h4><p>同一结论被越多不同立场的史料支持，共振度越高。这正是「历史由多种因素导致」的可视化：高共振 = 多派都这么说。</p></div>
+      <div class="item"><h4>冲突自动成组 <span class="tag">算法</span></h4><p>同一 (主语, 谓词) 出现不同取值，内核自动聚成冲突组，不依赖人手标注。关掉某方来源，看哪些结论会塌。</p></div>
+    </div>
+    <div class="health">
+      <span class="pill">lint 0 error / 0 warning</span>
+      <span class="pill">不变量测试全绿</span>
+      <span class="pill">9 切片可构建</span>
+      <span class="muted">守门三道闸门全在 <code>tools/gates.py</code> 一键跑。</span>
     </div>
   </div>
 </section>
@@ -265,9 +319,12 @@ cd history-in-my-hand
 python -m http.server 8787
 <span class="c"># 打开 http://localhost:8787/demo/portal.html</span>
 
-<span class="c"># 3. 改了数据后，过三道闸门</span>
+<span class="c"># 3. 改了数据后，过四道闸门（或一条命令全跑）</span>
+python tools/gates.py        <span class="c"># lint + test + leads + build 一气呵成</span>
+<span class="c"># 拆开看：</span>
 python tools/lint.py         <span class="c"># 守门员：数据完整性</span>
 python tools/test_assertions.py  <span class="c"># 不变量回归</span>
+python tools/leads.py        <span class="c"># 重算研究线索</span>
 python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pre>
       </div>
       <div>
@@ -287,7 +344,7 @@ python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pr
 
 <footer>
   <div class="wrap">
-    <p><b>小菜狗的文明图景</b> · 断言驱动的明清之际东北历史沙盒 · v0.5</p>
+    <p><b>小菜狗的文明图景</b> · 断言驱动的明清之际东北历史沙盒 · v0.5.1</p>
     <p>历史由多种因素导致，某种意义上其实是必然——本项目的全部意义，是让「多种因素」可以被一条条看见、被一条条质疑。</p>
     <p>许可与署名见仓库 README。欢迎拉你的朋友入局。</p>
   </div>

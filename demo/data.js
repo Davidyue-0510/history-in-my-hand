@@ -6890,11 +6890,11 @@ window.SANDBOX_DATA = {
      "compiler": "李民寏（朝鲜从事官）",
      "compiled_year": 1620,
      "stance": "third_party_participant",
-     "stance_label": "第三方·亲历",
-     "distance_label": "1620 年成书，亲历者被俘后追记",
+     "stance_label": "第三方·亲历（被俘逃回）",
+     "distance_label": "1620 年成书，作者随刘綎军被俘逃回后追记",
      "party": "朝鲜·亲历",
      "color": "#4A6FA5",
-     "note": "随东路刘綎军的朝鲜官员李民寏所记，被俘后写成。价值不在于更准确，而在于它是唯一的第三方亲历视角，且不受明清双方政治叙事约束。"
+     "note": "随东路刘綎军的朝鲜官员李民寏所记，被俘逃回朝鲜后写成。价值在于它是唯一第三方亲历视角，不受明清双方政治叙事约束。"
     },
     {
      "id": "guoque",
@@ -11890,39 +11890,6 @@ window.SANDBOX_DATA = {
      "stance": "official_later_dynasty"
     },
     {
-     "id": "ming_taizu_shilu",
-     "title": "明太祖实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "三修至 1418，距洪武建置约 30 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "洪武朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_shenzong_shilu",
-     "title": "明神宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距万历末事约 10 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "万历朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_xizong_shilu",
-     "title": "明熹宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距天启事约数年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "天启朝",
-     "stance": "official_contemporary"
-    },
-    {
      "id": "qing_taizu_shilu",
      "title": "清太祖实录",
      "party": "清修官史",
@@ -11931,17 +11898,6 @@ window.SANDBOX_DATA = {
      "color": "#7B5C3E",
      "compiler": "清实录馆",
      "period": "天命",
-     "stance": "official_enemy"
-    },
-    {
-     "id": "manzhou_shilu",
-     "title": "满洲实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修·图绘本",
-     "distance_label": "原档 1781 绘写，距事件约 170 年",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "清初",
      "stance": "official_enemy"
     },
     {
@@ -11954,28 +11910,6 @@ window.SANDBOX_DATA = {
      "compiler": "赵尔巽等",
      "period": "清末/民国",
      "stance": "official_later_dynasty"
-    },
-    {
-     "id": "chao_xiandai",
-     "title": "李朝实录·宣祖/光海日记",
-     "party": "朝鲜官方",
-     "stance_label": "第三国当代官修",
-     "distance_label": "成书当代至 100 年内，与明清并行",
-     "color": "#2E5C8F",
-     "compiler": "李朝史官",
-     "period": "万历",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "rimsangrok",
-     "title": "栅中日录",
-     "party": "朝鲜·亲历",
-     "stance_label": "被俘逃回·亲历",
-     "distance_label": "1621 写成，距沈阳陷落当年",
-     "color": "#3F6F95",
-     "compiler": "李民寏",
-     "period": "天启元年",
-     "stance": "witness_exile"
     },
     {
      "id": "modern",
@@ -13132,17 +13066,6 @@ window.SANDBOX_DATA = {
      "stance": "official_contemporary"
     },
     {
-     "id": "ming_shenzong_shilu",
-     "title": "明神宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距万历末事约 10 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "万历朝",
-     "stance": "official_contemporary"
-    },
-    {
      "id": "ming_xizong_shilu",
      "title": "明熹宗实录",
      "party": "明廷官方",
@@ -13162,17 +13085,6 @@ window.SANDBOX_DATA = {
      "color": "#7B5C3E",
      "compiler": "清实录馆",
      "period": "天命",
-     "stance": "official_enemy"
-    },
-    {
-     "id": "manzhou_shilu",
-     "title": "满洲实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修·图绘本",
-     "distance_label": "原档 1781 绘写，距事件约 170 年",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "清初",
      "stance": "official_enemy"
     },
     {
@@ -13198,15 +13110,17 @@ window.SANDBOX_DATA = {
      "stance": "official_contemporary"
     },
     {
-     "id": "rimsangrok",
+     "id": "zhazhong_rilu",
      "title": "栅中日录",
+     "juan": "全一卷",
+     "compiler": "李民寏（朝鲜从事官）",
+     "compiled_year": 1620,
+     "stance": "third_party_participant",
+     "stance_label": "第三方·亲历（被俘逃回）",
+     "distance_label": "1620 年成书，作者随刘綎军被俘逃回后追记",
      "party": "朝鲜·亲历",
-     "stance_label": "被俘逃回·亲历",
-     "distance_label": "1621 写成，距沈阳陷落当年",
-     "color": "#3F6F95",
-     "compiler": "李民寏",
-     "period": "天启元年",
-     "stance": "witness_exile"
+     "color": "#4A6FA5",
+     "note": "随东路刘綎军的朝鲜官员李民寏所记，被俘逃回朝鲜后写成。价值在于它是唯一第三方亲历视角，不受明清双方政治叙事约束。"
     },
     {
      "id": "modern",
@@ -13542,7 +13456,7 @@ window.SANDBOX_DATA = {
      "subject": "event:shenyang_relief",
      "predicate": "朝鲜援军",
      "value_text": "朝鲜元帅姜弘立率 1.3 万人赴援, 浑河之战被俘",
-     "source": "rimsangrok",
+     "source": "zhazhong_rilu",
      "layer": "record",
      "era": "天启元年三月",
      "place": "shenyang_cheng",
@@ -13956,39 +13870,6 @@ window.SANDBOX_DATA = {
      "stance": "official_later_dynasty"
     },
     {
-     "id": "ming_taizu_shilu",
-     "title": "明太祖实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "三修至 1418，距洪武建置约 30 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "洪武朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_shenzong_shilu",
-     "title": "明神宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距万历末事约 10 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "万历朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_xizong_shilu",
-     "title": "明熹宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距天启事约数年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "天启朝",
-     "stance": "official_contemporary"
-    },
-    {
      "id": "qing_taizu_shilu",
      "title": "清太祖实录",
      "party": "清修官史",
@@ -14000,28 +13881,6 @@ window.SANDBOX_DATA = {
      "stance": "official_enemy"
     },
     {
-     "id": "manzhou_shilu",
-     "title": "满洲实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修·图绘本",
-     "distance_label": "原档 1781 绘写，距事件约 170 年",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "清初",
-     "stance": "official_enemy"
-    },
-    {
-     "id": "qingshigao",
-     "title": "清史稿",
-     "party": "清修官史",
-     "stance_label": "民国未定稿·清方立场",
-     "distance_label": "成书 1928，距事件约 300 年",
-     "color": "#7B5C3E",
-     "compiler": "赵尔巽等",
-     "period": "清末/民国",
-     "stance": "official_later_dynasty"
-    },
-    {
      "id": "chao_xiandai",
      "title": "李朝实录·宣祖/光海日记",
      "party": "朝鲜官方",
@@ -14031,17 +13890,6 @@ window.SANDBOX_DATA = {
      "compiler": "李朝史官",
      "period": "万历",
      "stance": "official_contemporary"
-    },
-    {
-     "id": "rimsangrok",
-     "title": "栅中日录",
-     "party": "朝鲜·亲历",
-     "stance_label": "被俘逃回·亲历",
-     "distance_label": "1621 写成，距沈阳陷落当年",
-     "color": "#3F6F95",
-     "compiler": "李民寏",
-     "period": "天启元年",
-     "stance": "witness_exile"
     },
     {
      "id": "modern",
@@ -14389,28 +14237,6 @@ window.SANDBOX_DATA = {
      "stance": "official_later_dynasty"
     },
     {
-     "id": "ming_taizu_shilu",
-     "title": "明太祖实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "三修至 1418，距洪武建置约 30 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "洪武朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_shenzong_shilu",
-     "title": "明神宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距万历末事约 10 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "万历朝",
-     "stance": "official_contemporary"
-    },
-    {
      "id": "ming_xizong_shilu",
      "title": "明熹宗实录",
      "party": "明廷官方",
@@ -14420,28 +14246,6 @@ window.SANDBOX_DATA = {
      "compiler": "明史馆",
      "period": "天启朝",
      "stance": "official_contemporary"
-    },
-    {
-     "id": "qing_taizu_shilu",
-     "title": "清太祖实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修",
-     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "天命",
-     "stance": "official_enemy"
-    },
-    {
-     "id": "manzhou_shilu",
-     "title": "满洲实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修·图绘本",
-     "distance_label": "原档 1781 绘写，距事件约 170 年",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "清初",
-     "stance": "official_enemy"
     },
     {
      "id": "qingshigao",
@@ -14464,28 +14268,6 @@ window.SANDBOX_DATA = {
      "compiler": "李朝史官",
      "period": "万历",
      "stance": "official_contemporary"
-    },
-    {
-     "id": "rimsangrok",
-     "title": "栅中日录",
-     "party": "朝鲜·亲历",
-     "stance_label": "被俘逃回·亲历",
-     "distance_label": "1621 写成，距沈阳陷落当年",
-     "color": "#3F6F95",
-     "compiler": "李民寏",
-     "period": "天启元年",
-     "stance": "witness_exile"
-    },
-    {
-     "id": "modern",
-     "title": "现代史学综述",
-     "party": "学界",
-     "stance_label": "学界考证",
-     "distance_label": "距事件 300 年以上，综合诸家",
-     "color": "#2E7D8F",
-     "compiler": "多家学术著作",
-     "period": "现代",
-     "stance": "scholarship"
     }
    ],
    "places": [
@@ -14817,28 +14599,6 @@ window.SANDBOX_DATA = {
      "stance": "official_later_dynasty"
     },
     {
-     "id": "ming_taizu_shilu",
-     "title": "明太祖实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "三修至 1418，距洪武建置约 30 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "洪武朝",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "ming_shenzong_shilu",
-     "title": "明神宗实录",
-     "party": "明廷官方",
-     "stance_label": "本朝官修·当代",
-     "distance_label": "成书约 1630，距万历末事约 10 年",
-     "color": "#A0473A",
-     "compiler": "明史馆",
-     "period": "万历朝",
-     "stance": "official_contemporary"
-    },
-    {
      "id": "ming_xizong_shilu",
      "title": "明熹宗实录",
      "party": "明廷官方",
@@ -14859,50 +14619,6 @@ window.SANDBOX_DATA = {
      "compiler": "清实录馆",
      "period": "天命",
      "stance": "official_enemy"
-    },
-    {
-     "id": "manzhou_shilu",
-     "title": "满洲实录",
-     "party": "清修官史",
-     "stance_label": "敌方官修·图绘本",
-     "distance_label": "原档 1781 绘写，距事件约 170 年",
-     "color": "#7B5C3E",
-     "compiler": "清实录馆",
-     "period": "清初",
-     "stance": "official_enemy"
-    },
-    {
-     "id": "qingshigao",
-     "title": "清史稿",
-     "party": "清修官史",
-     "stance_label": "民国未定稿·清方立场",
-     "distance_label": "成书 1928，距事件约 300 年",
-     "color": "#7B5C3E",
-     "compiler": "赵尔巽等",
-     "period": "清末/民国",
-     "stance": "official_later_dynasty"
-    },
-    {
-     "id": "chao_xiandai",
-     "title": "李朝实录·宣祖/光海日记",
-     "party": "朝鲜官方",
-     "stance_label": "第三国当代官修",
-     "distance_label": "成书当代至 100 年内，与明清并行",
-     "color": "#2E5C8F",
-     "compiler": "李朝史官",
-     "period": "万历",
-     "stance": "official_contemporary"
-    },
-    {
-     "id": "rimsangrok",
-     "title": "栅中日录",
-     "party": "朝鲜·亲历",
-     "stance_label": "被俘逃回·亲历",
-     "distance_label": "1621 写成，距沈阳陷落当年",
-     "color": "#3F6F95",
-     "compiler": "李民寏",
-     "period": "天启元年",
-     "stance": "witness_exile"
     },
     {
      "id": "modern",
@@ -17232,7 +16948,7 @@ window.SANDBOX_DATA = {
        "id": "S009",
        "predicate": "朝鲜援军",
        "value_text": "朝鲜元帅姜弘立率 1.3 万人赴援, 浑河之战被俘",
-       "source": "rimsangrok",
+       "source": "zhazhong_rilu",
        "layer": "record",
        "scene": "shenyang"
       },

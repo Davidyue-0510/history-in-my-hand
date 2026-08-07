@@ -15,13 +15,22 @@ python -m http.server 8787
 # 打开 http://localhost:8787/demo/portal.html
 ```
 
-改了数据后，过三道闸门再提交：
+改了数据后，过四道闸门再提交（**一条命令全跑**）：
+
+```bash
+python tools/gates.py             # lint + test + leads + build 一气呵成
+```
+
+拆开看：
 
 ```bash
 python tools/lint.py              # 守门员：数据完整性（空引文/分类散落/时间轴脱钩）
 python tools/test_assertions.py   # 不变量回归（30+ 条硬性约束）
+python tools/leads.py             # 重算研究线索（data/leads.json）
 python tools/build.py             # 重编译 demo/data.js
 ```
+
+> CI / 严格模式：`python tools/gates.py --strict`（任何 warning 也视为失败）。
 
 > Windows 上若 `python` 指向系统版本，请用仓库指定的托管 Python；路径见 `demo/` 与 `tools/` 顶部注释。
 
