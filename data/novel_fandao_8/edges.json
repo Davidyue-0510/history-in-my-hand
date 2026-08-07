@@ -1,0 +1,32 @@
+{
+  "edges": [
+    {
+      "from": "hu_ban",
+      "to": "bao_bao",
+      "relation": "父子（猫）",
+      "type": "parent_child",
+      "label": "父子（猫）"
+    },
+    {
+      "from": "bao_bao",
+      "to": "other_cat",
+      "relation": "争宠打架",
+      "type": "enemy",
+      "label": "争宠打架"
+    },
+    {
+      "from": "hu_ban",
+      "to": "lu_dewei",
+      "relation": "盟友",
+      "type": "family",
+      "label": "盟友（狗）"
+    },
+    {
+      "from": "yeweian",
+      "to": "hu_ban",
+      "relation": "受托教猫",
+      "type": "mentor",
+      "label": "受托教猫"
+    }
+  ]
+}

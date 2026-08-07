@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": 0,
+      "subject": "event:hx_enter",
+      "label": "叶为安介入"
+    },
+    {
+      "id": "t2",
+      "t": 1,
+      "subject": "event:hx_key",
+      "label": "托女追梦"
+    },
+    {
+      "id": "t3",
+      "t": 2,
+      "subject": "event:hx_outcome",
+      "label": "巧妹健康成长"
+    },
+    {
+      "id": "t4",
+      "t": 3,
+      "subject": "event:hx_branch",
+      "label": "反事实·未介入",
+      "branch": true
+    }
+  ]
+}

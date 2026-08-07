@@ -1,0 +1,14 @@
+{
+  "places": [
+    {
+      "id": "tu_jia",
+      "name": "徒家",
+      "fictional": true
+    },
+    {
+      "id": "gongsi",
+      "name": "徒应琉公司",
+      "fictional": true
+    }
+  ]
+}

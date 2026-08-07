@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "novel_text",
+      "title": "反派他爸教做人·不听话的喵儿子",
+      "party": "作者叙述"
+    },
+    {
+      "id": "system_setting",
+      "title": "快穿系统设定",
+      "party": "系统任务"
+    },
+    {
+      "id": "hu_ban_view",
+      "title": "虎斑猫自述",
+      "party": "猫父自述"
+    },
+    {
+      "id": "yeweian_view",
+      "title": "叶为安视角",
+      "party": "叶为安视角"
+    }
+  ]
+}

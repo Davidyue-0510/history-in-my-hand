@@ -1,0 +1,12 @@
+{
+  "_comment": "M6 占位：演化引擎未建。引擎接口见 docs/03 §6。",
+  "engine": "llm-step",
+  "mode": "counterfactual",
+  "rules": [
+    "branch_on_assertion_conflict",
+    "propagate_family_relations"
+  ],
+  "entry_event": null,
+  "horizon_steps": 20,
+  "status": "spec-only"
+}

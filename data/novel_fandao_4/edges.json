@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "from": "ai_ruian",
+      "to": "ai_zhe",
+      "relation": "父子",
+      "type": "parent_child",
+      "label": "父子"
+    },
+    {
+      "from": "tang_wanning",
+      "to": "tang_xin",
+      "relation": "母女",
+      "type": "family",
+      "label": "母女"
+    },
+    {
+      "from": "ai_zhe",
+      "to": "tang_xin",
+      "relation": "兄妹（后囚禁）",
+      "type": "enemy",
+      "label": "兄妹（后囚禁）"
+    },
+    {
+      "from": "tang_xin",
+      "to": "nanyou",
+      "relation": "相爱",
+      "type": "romance",
+      "label": "相爱（被阻挠）"
+    },
+    {
+      "from": "yeweian",
+      "to": "ai_ruian",
+      "relation": "附身矫正",
+      "type": "mentor",
+      "label": "附身矫正"
+    }
+  ]
+}

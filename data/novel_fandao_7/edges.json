@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "from": "mu_fu",
+      "to": "mu_qing",
+      "relation": "父女",
+      "type": "parent_child",
+      "label": "父女"
+    },
+    {
+      "from": "mu_fu",
+      "to": "mu_mu",
+      "relation": "夫妻",
+      "type": "spouse",
+      "label": "夫妻"
+    },
+    {
+      "from": "mu_qing",
+      "to": "zha_nan",
+      "relation": "迷恋（被骗）",
+      "type": "romance",
+      "label": "迷恋（被骗）"
+    },
+    {
+      "from": "mu_qing",
+      "to": "zha_nan",
+      "relation": "被毁",
+      "type": "enemy",
+      "label": "被渣男毁"
+    },
+    {
+      "from": "yeweian",
+      "to": "mu_fu",
+      "relation": "附身矫正",
+      "type": "mentor",
+      "label": "附身矫正"
+    }
+  ]
+}

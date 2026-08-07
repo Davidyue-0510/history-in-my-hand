@@ -64,7 +64,14 @@
     "jinzhou",
     "ningyuan",
     "novel_fandao",
-    "novel_fandao_2"
+    "novel_fandao_2",
+    "novel_fandao_3",
+    "novel_fandao_4",
+    "novel_fandao_5",
+    "novel_fandao_6",
+    "novel_fandao_7",
+    "novel_fandao_8",
+    "novel_fandao_9"
   ],
   "scenes": {
     "sarhu": {
@@ -500,6 +507,125 @@
         "person:he_lingchen": "贺凌宸",
         "person:shen_lan": "沈岚"
       }
+    },
+    "novel_fandao_3": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·拜金绝色女儿",
+      "dossier_label": "反派他爸教做人·拜金绝色女儿",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "xiaocheng",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。"
+    },
+    "novel_fandao_4": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·我的儿子是怪物",
+      "dossier_label": "反派他爸教做人·我的儿子是怪物",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "mojie",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。"
+    },
+    "novel_fandao_5": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·不负责的穿书女",
+      "dossier_label": "反派他爸教做人·不负责的穿书女",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "hejiacun",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。"
+    },
+    "novel_fandao_6": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·同性恋骗婚儿子",
+      "dossier_label": "反派他爸教做人·同性恋骗婚儿子",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "tu_jia",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。"
+    },
+    "novel_fandao_7": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·爱情至上的女儿",
+      "dossier_label": "反派他爸教做人·爱情至上的女儿",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "mu_jia",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。"
+    },
+    "novel_fandao_8": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·不听话的喵儿子",
+      "dossier_label": "反派他爸教做人·不听话的喵儿子",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "mao_guo",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。"
+    },
+    "novel_fandao_9": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·胎穿女和魂穿女",
+      "dossier_label": "反派他爸教做人·胎穿女和魂穿女",
+      "subtitle": "小说导入的虚构世界（kind:fiction）",
+      "primary_place": "jiang_jiacun",
+      "dossier_event": null,
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。"
     }
   }
 }

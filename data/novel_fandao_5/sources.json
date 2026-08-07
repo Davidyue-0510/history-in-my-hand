@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "novel_text",
+      "title": "反派他爸教做人·不负责的穿书女",
+      "party": "作者叙述"
+    },
+    {
+      "id": "system_setting",
+      "title": "快穿系统设定",
+      "party": "系统任务"
+    },
+    {
+      "id": "he_yongan_view",
+      "title": "何永安自述",
+      "party": "何父自述"
+    },
+    {
+      "id": "yeweian_view",
+      "title": "叶为安视角",
+      "party": "叶为安视角"
+    }
+  ]
+}

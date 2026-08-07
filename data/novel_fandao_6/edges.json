@@ -1,0 +1,32 @@
+{
+  "edges": [
+    {
+      "from": "tu_shiqing",
+      "to": "situ_rui",
+      "relation": "父子",
+      "type": "parent_child",
+      "label": "父子"
+    },
+    {
+      "from": "tu_shiqing",
+      "to": "tu_yingliu",
+      "relation": "上辈子父子",
+      "type": "parent_child",
+      "label": "上辈子父子"
+    },
+    {
+      "from": "tu_yingliu",
+      "to": "chu_xiuxiu",
+      "relation": "骗婚（误会）",
+      "type": "spouse",
+      "label": "骗婚（误会）"
+    },
+    {
+      "from": "yeweian",
+      "to": "tu_shiqing",
+      "relation": "附身理解",
+      "type": "mentor",
+      "label": "附身理解"
+    }
+  ]
+}

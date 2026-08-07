@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": 0,
+      "subject": "event:bb_enter",
+      "label": "叶为安介入"
+    },
+    {
+      "id": "t2",
+      "t": 1,
+      "subject": "event:bb_key",
+      "label": "小家子气"
+    },
+    {
+      "id": "t3",
+      "t": 2,
+      "subject": "event:bb_outcome",
+      "label": "大气"
+    },
+    {
+      "id": "t4",
+      "t": 3,
+      "subject": "event:bb_branch",
+      "label": "反事实·未介入",
+      "branch": true
+    }
+  ]
+}

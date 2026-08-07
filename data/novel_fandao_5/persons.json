@@ -1,0 +1,33 @@
+{
+  "persons": [
+    {
+      "id": "he_xinran",
+      "name": "何欣然",
+      "desc": "穿书女/明星，将女儿巧妹托付父母后追梦。",
+      "party": "何母自述",
+      "bucket": "何母自述",
+      "src": "he_xinran_view",
+      "src_title": "何欣然视角"
+    },
+    {
+      "id": "he_yongan",
+      "name": "何永安",
+      "desc": "巧妹姥爷，委托叶为安护孙女。"
+    },
+    {
+      "id": "qiao_mei",
+      "name": "巧妹",
+      "desc": "何欣然之女，由姥爷姥姥带大。"
+    },
+    {
+      "id": "lin_wenqi",
+      "name": "林文启",
+      "desc": "何欣然再婚对象（首富）。"
+    },
+    {
+      "id": "xue_yiliang",
+      "name": "薛宜良",
+      "desc": "巧妹生父。"
+    }
+  ]
+}

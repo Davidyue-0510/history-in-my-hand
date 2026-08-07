@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": "e_enter",
+      "subject": "event:hx_enter",
+      "era": "副本开端",
+      "year": "",
+      "kind": "转折",
+      "title": "叶为安附身何永安",
+      "summary": "何永安委托叶为安护巧妹免于风言风语。"
+    },
+    {
+      "id": "e_key",
+      "subject": "event:hx_key",
+      "era": "情节",
+      "year": "",
+      "kind": "矫正",
+      "title": "何欣然追梦托女",
+      "summary": "何欣然穿书女身份、将巧妹托父母后追星途。"
+    },
+    {
+      "id": "e_outcome",
+      "subject": "event:hx_outcome",
+      "era": "结局",
+      "year": "",
+      "kind": "结局",
+      "title": "巧妹健康成长",
+      "summary": "叶为安护巧妹在善意中长大。"
+    },
+    {
+      "id": "e_branch",
+      "subject": "event:hx_branch",
+      "era": "反事实",
+      "year": "",
+      "kind": "反事实",
+      "title": "若叶为安未介入",
+      "summary": "巧妹在风言风语与流言中毁掉童年。"
+    }
+  ]
+}

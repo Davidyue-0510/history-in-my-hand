@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": "e_enter",
+      "subject": "event:sr_enter",
+      "era": "副本开端",
+      "year": "",
+      "kind": "转折",
+      "title": "叶为安附身徒时卿",
+      "summary": "徒时卿因上辈子骗婚误解委托叶为安理解儿子。"
+    },
+    {
+      "id": "e_key",
+      "subject": "event:sr_key",
+      "era": "情节",
+      "year": "",
+      "kind": "反事实",
+      "title": "上辈子骗婚真相",
+      "summary": "褚秀秀日记揭徒应琉非骗婚，是旁观同性恋的误会。"
+    },
+    {
+      "id": "e_outcome",
+      "subject": "event:sr_outcome",
+      "era": "结局",
+      "year": "",
+      "kind": "结局",
+      "title": "今世被接纳",
+      "summary": "司徒锐与徒应琉被家庭接纳。"
+    },
+    {
+      "id": "e_branch",
+      "subject": "event:sr_branch",
+      "era": "反事实",
+      "year": "",
+      "kind": "反事实",
+      "title": "若叶为安未介入",
+      "summary": "上辈子徒应琉黑化骗婚毁褚秀秀一生。"
+    }
+  ]
+}

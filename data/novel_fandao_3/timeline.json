@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": 0,
+      "subject": "event:xf_enter",
+      "label": "叶为安介入"
+    },
+    {
+      "id": "t2",
+      "t": 1,
+      "subject": "event:xf_key",
+      "label": "傍金主坑真爱"
+    },
+    {
+      "id": "t3",
+      "t": 2,
+      "subject": "event:xf_outcome",
+      "label": "矫正清醒"
+    },
+    {
+      "id": "t4",
+      "t": 3,
+      "subject": "event:xf_branch",
+      "label": "反事实·未介入",
+      "branch": true
+    }
+  ]
+}

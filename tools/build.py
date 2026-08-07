@@ -185,11 +185,22 @@ def build_scene(sc):
     bundle.setdefault("events", [])
     bundle.setdefault("edges", [])
 
+    # 边归一化：地理切片用 type+label；小说等 world 可能只给 relation/rel 自由文本。
+    # 这里保证每条边都有 label（否则 drawDynamic 会把 undefined 画上地图）与 type 兜底。
+    for e in bundle["edges"]:
+        e.setdefault("label", e.get("relation") or e.get("rel") or "")
+        e.setdefault("type", "misc")
+
     # 每 world 自带 vocab（docs/03）：有则覆盖全局，立场分桶单一真值降到 world 级。
+    # 同时把本 world 的边类型表 edge_types 摊平进 bundle——图例/配色据此数据驱动，
+    # 不再写死「互市/部族同盟」等辽东专属栏目（见 demo/county.js）。
     svocab_path = os.path.join(dirpath, "vocab.json")
     if os.path.exists(svocab_path):
         with open(svocab_path, encoding="utf-8") as f:
-            bundle["vocab"] = {k: v for k, v in json.load(f).items() if not k.startswith("_")}
+            sv = json.load(f)
+        bundle["vocab"] = {k: v for k, v in sv.items() if not k.startswith("_")}
+        if sv.get("edge_types"):
+            bundle["edge_types"] = sv["edge_types"]
     return bundle
 
 

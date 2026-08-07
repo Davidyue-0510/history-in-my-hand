@@ -1,0 +1,14 @@
+{
+  "places": [
+    {
+      "id": "mojie",
+      "name": "末世·艾家别墅",
+      "fictional": true
+    },
+    {
+      "id": "yanshi",
+      "name": "研究所",
+      "fictional": true
+    }
+  ]
+}

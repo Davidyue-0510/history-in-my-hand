@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": "e_enter",
+      "subject": "event:az_enter",
+      "era": "副本开端",
+      "year": "",
+      "kind": "转折",
+      "title": "叶为安附身艾瑞安",
+      "summary": "艾瑞安死前委托叶为安让兽化儿子保持理智。"
+    },
+    {
+      "id": "e_key",
+      "subject": "event:az_key",
+      "era": "情节",
+      "year": "",
+      "kind": "反事实",
+      "title": "艾哲记忆被篡改",
+      "summary": "艾哲改众人对他的记忆，唐心知真相却不敢言。"
+    },
+    {
+      "id": "e_outcome",
+      "subject": "event:az_outcome",
+      "era": "结局",
+      "year": "",
+      "kind": "结局",
+      "title": "矫正后艾哲守住理智",
+      "summary": "叶为安揭穿篡改，艾哲未疯狂、唐心得救。"
+    },
+    {
+      "id": "e_branch",
+      "subject": "event:az_branch",
+      "era": "反事实",
+      "year": "",
+      "kind": "反事实",
+      "title": "若叶为安未介入",
+      "summary": "艾哲疯狂囚禁唐心，二人同归于尽，末世辐射真相湮灭。"
+    }
+  ]
+}

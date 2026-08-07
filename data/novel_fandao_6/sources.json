@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "novel_text",
+      "title": "反派他爸教做人·同性恋骗婚儿子",
+      "party": "作者叙述"
+    },
+    {
+      "id": "system_setting",
+      "title": "快穿系统设定",
+      "party": "系统任务"
+    },
+    {
+      "id": "tu_shiqing_view",
+      "title": "徒时卿自述",
+      "party": "司徒父自述"
+    },
+    {
+      "id": "yeweian_view",
+      "title": "叶为安视角",
+      "party": "叶为安视角"
+    }
+  ]
+}

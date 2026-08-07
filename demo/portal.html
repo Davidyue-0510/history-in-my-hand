@@ -160,10 +160,10 @@
   <div class="wrap hero-inner">
     <p class="kicker">Assertion-Driven History · 共享真实地形</p>
     <h1>小菜狗的文明图景
-      <span class="sub">立场靠来源派生 —— 断言驱动的明清之际东北历史沙盒</span>
+      <span class="sub">立场靠来源派生 —— 断言驱动的文明沙盒（真实历史 + 虚构世界）</span>
     </h1>
-    <p class="lede">同一片辽东山地，明方、清方、朝鲜三方史料各说各话。我们不替你下结论，
-      只把每条说法拆成可核验的「断言」，标出来源与偏向，让你在真实地形上自己看冲突在哪里、缺口在哪里。</p>
+    <p class="lede">同一片辽东山地，明方、清方、朝鲜三方史料各说各话；同一部小说，叙述者、角色、系统视角也各执一词。我们不替你下结论，
+      只把每条说法拆成可核验的「断言」，标出来源与偏向——历史叠在真实地形上，虚构世界呈现为关系图，让你自己看冲突在哪里、缺口在哪里。</p>
     <div class="hero-cta">
       <a class="btn primary" href="index.html">进入枢纽 →</a>
       <a class="btn ghost" href="county.html?scene=shenyang">看一个切片</a>
@@ -174,12 +174,12 @@
 
 <div class="wrap">
   <div class="stats">
-    <div class="stat"><div class="n">14</div><div class="l">历史切片</div></div>
-    <div class="stat"><div class="n">5</div><div class="l">地理分区</div></div>
-    <div class="stat"><div class="n">17</div><div class="l">一手/二手史料</div></div>
-    <div class="stat"><div class="n">233</div><div class="l">已录入断言</div></div>
-    <div class="stat"><div class="n">33</div><div class="l">可认领研究线索</div></div>
-    <div class="stat"><div class="n">33</div><div class="l">已标史料缺口</div></div>
+    <div class="stat"><div class="n">23</div><div class="l">世界总数（切片）</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">虚构世界</div></div>
+    <div class="stat"><div class="n">31</div><div class="l">史料 / 来源</div></div>
+    <div class="stat"><div class="n">290</div><div class="l">已录入断言</div></div>
+    <div class="stat"><div class="n">40</div><div class="l">可认领研究线索</div></div>
+    <div class="stat"><div class="n">40</div><div class="l">已标史料缺口</div></div>
   </div>
 </div>
 
@@ -194,7 +194,7 @@
       </div>
       <div class="card">
         <h3><span class="dot" style="background:var(--rust)"></span>缺口是一等公民</h3>
-        <p>「我们不知道」和「我们知道」同等重要。每条史料缺口都写成可认领的「研究线索」，挂给合作者去补——这正是本页下方 33 条线索的来历。</p>
+        <p>「我们不知道」和「我们知道」同等重要。每条史料缺口都写成可认领的「研究线索」，挂给合作者去补——这正是本页下方 40 条线索的来历（历史切片与虚构世界一视同仁）。</p>
       </div>
       <div class="card">
         <h3><span class="dot" style="background:var(--moss)"></span>断言驱动，不裁判</h3>
@@ -232,7 +232,7 @@
     <div class="health">
       <span class="pill">lint 0 error / 0 warning</span>
       <span class="pill">不变量测试全绿</span>
-      <span class="pill">16 切片可构建</span>
+      <span class="pill">23 切片可构建</span>
       <span class="muted">守门三道闸门全在 <code>tools/gates.py</code> 一键跑。</span>
     </div>
   </div>
@@ -243,7 +243,7 @@
     <div class="leads-note">
       <div>
         <h2>当前可认领的研究线索</h2>
-        <p class="sec-sub">从各切片的「史料缺口」自动汇总。认领一条，补上史料与算法，它就从「缺口」变成「断言」。下列数据实时读取 <code>data/leads.json</code>。本轮新增辽西（广宁·锦州·宁远）与辽南（复州·金州）5 个切片，把走廊从辽东核心区一路延伸到山海关——这 5 县位于共享地形网格之外，县页与枢纽地图会显式标注「地形网格外」，绝不伪造高程。<b>此外，本版本首次把一部快穿小说《反派他爸教做人[快穿]》的第一副本直接抽取为结构化 world（虚构世界·无真实地形），验证「任意文字→一个世界」的北极星方向</b>——它和辽东切片共用同一套断言模型与四闸门，立场派生于来源，时间轴带一条反事实分支（若无叶为安介入会怎样）。本版进一步用 <code>tools/ingest.py</code> 把第二副本《深情渣帝王儿子》自动装配为第二个虚构 world（共 16 个切片），证明「任意文字→一个世界」已从手工验证走向<b>可复用管线</b>。</p>
+        <p class="sec-sub">从各切片的「史料缺口」自动汇总。认领一条，补上史料与算法，它就从「缺口」变成「断言」。下列数据实时读取 <code>data/leads.json</code>。辽西（广宁·锦州·宁远）与辽南（复州·金州）5 个切片，把走廊从辽东核心区一路延伸到山海关——这 5 县位于共享地形网格之外，县页与枢纽地图会显式标注「地形网格外」，绝不伪造高程。<b>当前《反派他爸教做人[快穿]》全书 9 个副本已全部抽取为 9 个虚构 world（共 23 个切片）</b>，与辽东切片共用同一套断言模型与四闸门：虚构世界没有真实坐标，自动以<b>关系图</b>呈现（不强行套用互市 / 部族同盟等辽东栏目），立场仍派生于来源、时间轴带反事实分支——证明「任意文字→一个世界」已从手工验证走向<b>可复用管线</b>（<code>tools/ingest.py</code>：一份 spec → 八件套 world → 自动注册 → 跑通四闸门）。</p>
       </div>
     </div>
     <div id="leads" class="leads-grid"><div class="leads-err">正在加载线索…</div></div>
@@ -279,7 +279,7 @@
         </div>
         <div class="body">
           <div class="blk"><div class="h">你能贡献什么</div><div class="c">把"文本 → 结构化世界模型"做出来（ingestion 抽取层），让导入史料 / 小说即自动呈现。这是通用系统的关键工程。</div></div>
-          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/ingest.py</code>（待建） · <code>tools/ingest_prompt.md</code> · <code>docs/03-通用世界模型-schema.md</code></div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/ingest.py</code>（已落地：文本 → 八件套 world 装配） · <code>docs/03-通用世界模型-schema.md</code></div></div>
           <div class="blk"><div class="h">第一个上手任务</div><div class="c">拿一段现成文本，做出最小抽取原型，产物能直接过 <code>gates.py --strict</code>。</div></div>
           <span class="diff mid">难度 ★★★</span>
           <a class="more" href="../COLLABORATE.md#c">详细指引 →</a>
@@ -359,7 +359,7 @@ python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pr
 
 <footer>
   <div class="wrap">
-    <p><b>小菜狗的文明图景</b> · 断言驱动的文明沙盒（明清辽东 + 虚构世界） · v0.8</p>
+    <p><b>小菜狗的文明图景</b> · 断言驱动的文明沙盒（真实历史 + 虚构世界） · v0.9</p>
     <p>历史由多种因素导致，某种意义上其实是必然——本项目的全部意义，是让「多种因素」可以被一条条看见、被一条条质疑。</p>
     <p>许可与署名见仓库 README。欢迎拉你的朋友入局。</p>
   </div>

@@ -1,0 +1,14 @@
+{
+  "places": [
+    {
+      "id": "jiang_jiacun",
+      "name": "江家村",
+      "fictional": true
+    },
+    {
+      "id": "daxue",
+      "name": "大学",
+      "fictional": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": 0,
+      "subject": "event:sr_enter",
+      "label": "叶为安介入"
+    },
+    {
+      "id": "t2",
+      "t": 1,
+      "subject": "event:sr_key",
+      "label": "骗婚真相"
+    },
+    {
+      "id": "t3",
+      "t": 2,
+      "subject": "event:sr_outcome",
+      "label": "被接纳"
+    },
+    {
+      "id": "t4",
+      "t": 3,
+      "subject": "event:sr_branch",
+      "label": "反事实·未介入",
+      "branch": true
+    }
+  ]
+}

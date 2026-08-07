@@ -612,6 +612,7 @@ body{
   stroke-linejoin:round; pointer-events:none; user-select:none;
 }
 .place-label.minor{ font-size:calc(var(--u) * 9.5px); fill:var(--ink-2); }
+.place-label.person{ fill:#5A3A6E; font-weight:600; }
 .place-elev{
   font-family:var(--mono); font-size:calc(var(--u) * 7.6px); fill:#7A6E5C;
   paint-order:stroke; stroke:#F6F3EA; stroke-width:calc(var(--u) * 2.6px);

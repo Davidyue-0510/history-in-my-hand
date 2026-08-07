@@ -29,12 +29,15 @@ spec.json 结构（顶层字段）
 -------------------------
   world_id, title, subtitle, kind(默认 fiction), region(默认 fiction),
   primary_place, fictional(默认 true), lead, parties_note?, subject_names?,
-  vocab {parties:[...], party_bucket:{party:bucket}},
+  vocab {parties:[...], party_bucket:{party:bucket}, edge_types?:[{k,name,color,dash}]},
   sources:[{id,title,party}],
   places:[{id,name,fictional:true}],
   persons:[{id,name,desc?}],
   events:[{id,subject,title,year?,summary?}],
-  edges:[{from,to,relation,note?}],
+  edges:[{from,to,relation?,type?,label?,note?}],
+    # 边类型 per-world（docs/03 §3）：辽东用 mashi/tribe/mil/admin；
+    # 小说等 world 用自己的（亲子/夫妻/情感/敌对/委托…）。也可在顶层写 edge_types 自动并入 vocab。
+    # 每条边可带 type+label；缺省由 relation/rel 推 label、type 回退 'misc'。
   timeline:[{id,t,subject,label,branch?:false,note?}],
   assertions:[ <断言记录，逐行等价 assertions.jsonl> ],
   sim_config? (缺省用 M6 占位)
@@ -213,13 +216,25 @@ def cmd_assemble(args):
     os.makedirs(d, exist_ok=True)
 
     # vocab —— per-world 受控词表（docs/03 §3）。party_bucket 须覆盖 sources 用到的 party。
+    # edge_types 支持顶层声明或写进 vocab，二者都会被写入 per-world vocab.json，
+    # 供 demo/county.js 的图例/配色按本 world 实际关系类型数据驱动。
     vocab = spec.get("vocab", {"parties": [], "party_bucket": {}})
+    if "edge_types" in spec:
+        vocab["edge_types"] = spec["edge_types"]
     _write_json(os.path.join(d, "vocab.json"), vocab)
     _write_json(os.path.join(d, "sources.json"), {"sources": spec.get("sources", [])})
     _write_json(os.path.join(d, "places.json"), {"places": spec.get("places", [])})
     _write_json(os.path.join(d, "persons.json"), {"persons": spec.get("persons", [])})
     _write_json(os.path.join(d, "events.json"), {"events": spec.get("events", [])})
-    _write_json(os.path.join(d, "edges.json"), {"edges": spec.get("edges", [])})
+    # 边归一化：保证每条边有 label（回退 relation/rel）与 type（回退 'misc'），
+    # 与 tools/build.py 的口径一致，demo 不再把 undefined 画上地图。
+    edges = []
+    for e in spec.get("edges", []):
+        e2 = dict(e)
+        e2.setdefault("label", e.get("relation") or e.get("rel") or "")
+        e2.setdefault("type", "misc")
+        edges.append(e2)
+    _write_json(os.path.join(d, "edges.json"), {"edges": edges})
     _write_json(os.path.join(d, "timeline.json"), {"timeline": spec.get("timeline", [])})
     _write_json(os.path.join(d, "sim_config.json"), spec.get("sim_config", DEFAULT_SIM))
     _assertions_to_jsonl(spec.get("assertions", []), os.path.join(d, "assertions.jsonl"))

@@ -1,0 +1,14 @@
+{
+  "places": [
+    {
+      "id": "mu_jia",
+      "name": "慕家",
+      "fictional": true
+    },
+    {
+      "id": "xuexiao",
+      "name": "学校",
+      "fictional": true
+    }
+  ]
+}

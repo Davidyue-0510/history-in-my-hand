@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "from": "xie_zefei",
+      "to": "xie_xilan",
+      "relation": "父女",
+      "type": "parent_child",
+      "label": "父女"
+    },
+    {
+      "from": "xie_zefei",
+      "to": "xu_wen",
+      "relation": "夫妻（许雯离家）",
+      "type": "spouse",
+      "label": "夫妻（许雯离家）"
+    },
+    {
+      "from": "xie_xilan",
+      "to": "hua_tiancheng",
+      "relation": "傍金主",
+      "type": "romance",
+      "label": "傍金主"
+    },
+    {
+      "from": "xie_xilan",
+      "to": "zhenai",
+      "relation": "坑害真爱女友",
+      "type": "enemy",
+      "label": "坑害真爱女友"
+    },
+    {
+      "from": "yeweian",
+      "to": "xie_zefei",
+      "relation": "附身矫正",
+      "type": "mentor",
+      "label": "附身矫正"
+    }
+  ]
+}

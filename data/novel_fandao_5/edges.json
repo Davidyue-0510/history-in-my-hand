@@ -1,0 +1,39 @@
+{
+  "edges": [
+    {
+      "from": "he_yongan",
+      "to": "qiao_mei",
+      "relation": "姥爷-外孙女",
+      "type": "parent_child",
+      "label": "姥爷-外孙女"
+    },
+    {
+      "from": "he_xinran",
+      "to": "qiao_mei",
+      "relation": "母女",
+      "type": "parent_child",
+      "label": "母女"
+    },
+    {
+      "from": "he_xinran",
+      "to": "lin_wenqi",
+      "relation": "再婚",
+      "type": "spouse",
+      "label": "再婚（林文启）"
+    },
+    {
+      "from": "he_xinran",
+      "to": "xue_yiliang",
+      "relation": "生父",
+      "type": "spouse",
+      "label": "生父（薛宜良）"
+    },
+    {
+      "from": "yeweian",
+      "to": "he_yongan",
+      "relation": "附身护孙",
+      "type": "mentor",
+      "label": "附身护孙"
+    }
+  ]
+}

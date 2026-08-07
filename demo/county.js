@@ -77,6 +77,37 @@
   var SRC = {};
   D.sources.forEach(function (s) { SRC[s.id] = s; });
 
+  // 抽象关系图模式：虚构 / 无坐标 world 没有地理投影，改用节点-连线布局（人物 + 地点）。
+  // 辽东等地理 world 完全走 px/py 投影路径，不受影响。
+  var IS_ABSTRACT = !!META.fictional || !D.places.some(function (p) {
+    return typeof p.lon === 'number' && typeof p.lat === 'number';
+  });
+  var NODE = {};
+  D.places.forEach(function (p) { NODE[p.id] = { id: p.id, kind: 'place', name: p.name, ref: p }; });
+  (D.persons || []).forEach(function (p) { if (!NODE[p.id]) NODE[p.id] = { id: p.id, kind: 'person', name: p.name, ref: p }; });
+  // 径向布局：最高度节点居中，其余均匀分布于环上（小图足够清晰）。
+  var APOS = (function () {
+    var ids = Object.keys(NODE), deg = {};
+    ids.forEach(function (i) { deg[i] = 0; });
+    D.edges.forEach(function (e) {
+      if (NODE[e.from]) deg[e.from] = (deg[e.from] || 0) + 1;
+      if (NODE[e.to]) deg[e.to] = (deg[e.to] || 0) + 1;
+    });
+    var hub = ids.slice().sort(function (a, b) { return deg[b] - deg[a]; })[0] || ids[0];
+    var ring = ids.filter(function (i) { return i !== hub; });
+    var cx = W / 2, cy = H / 2, R = Math.min(W, H) * 0.40;
+    var pos = {}; pos[hub] = { x: cx, y: cy };
+    ring.forEach(function (i, k) {
+      var ang = (k / ring.length) * Math.PI * 2 - Math.PI / 2;
+      pos[i] = { x: cx + R * Math.cos(ang), y: cy + R * Math.sin(ang) };
+    });
+    return pos;
+  })();
+  function nodeXY(id) {
+    if (IS_ABSTRACT) { var a = APOS[id]; return a ? { x: a.x, y: a.y } : { x: W / 2, y: H / 2 }; }
+    var p = PLACE[id]; return { x: px(p.lon), y: py(p.lat) };
+  }
+
   /* ═══════════ 地形网格外横幅 ═══════════
    * 主地点在共享地形网格之外时，显式告知用户：此处不伪造高程，
    * 其余史料 / 断言 / 线索功能不受影响。诚实边界。 */
@@ -135,6 +166,7 @@
   var MIN_W = 26;
 
   function dataBounds() {
+    if (IS_ABSTRACT) return { x0: 0, y0: 0, x1: W, y1: H };
     var xs = [], ys = [];
     D.places.forEach(function (p) { xs.push(px(p.lon)); ys.push(py(p.lat)); });
     RIVERS.forEach(function (r) {
@@ -281,6 +313,7 @@
     return c;
   }
   function drawTerrain() {
+    if (IS_ABSTRACT) { var c = cv.getContext('2d'); c.clearRect(0, 0, cv.width, cv.height); return; }
     var ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.fillStyle = '#EFECE2'; ctx.fillRect(0, 0, cv.width, cv.height);
@@ -316,6 +349,7 @@
   }
   function drawBase() {
     gBase.innerHTML = '';
+    if (IS_ABSTRACT) return;   // 抽象关系图模式无江河 / 边墙
     var gRiv = el('g', { fill: 'none', stroke: '#8FAEC2', 'stroke-linecap': 'round',
       'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
     RIVERS.forEach(function (r) {
@@ -345,9 +379,15 @@
     if (!gEdges) return;
     gEdges.innerHTML = ''; gNodes.innerHTML = ''; gMarks.innerHTML = ''; gLabels.innerHTML = '';
 
+    // 边类型表：优先本 world 自带 edge_types（per-world，docs/03 §3），否则回退辽东全局四型。
+    var LEGEND = (D.edge_types && D.edge_types.length) ? D.edge_types : EDGE_LEGEND;
+    var STYLE = {}; LEGEND.forEach(function (t) { STYLE[t.k] = { color: t.color, dash: t.dash || null }; });
+
+    if (IS_ABSTRACT) { drawAbstractGraph(STYLE); return; }
+
     D.edges.forEach(function (ed) {
       var a = PLACE[ed.from], b = PLACE[ed.to]; if (!a || !b) return;
-      var st = EDGE_STYLE[ed.type] || EDGE_STYLE.admin;
+      var st = STYLE[ed.type] || { color: '#9A9384', dash: null };
       var ax = px(a.lon), ay = py(a.lat), bx = px(b.lon), by = py(b.lat);
       var path = el('path', {
         d: 'M' + ax.toFixed(1) + ' ' + ay.toFixed(1) + ' L' + bx.toFixed(1) + ' ' + by.toFixed(1),
@@ -423,6 +463,48 @@
     }
   }
 
+  /* 抽象关系图：节点 = 人物 + 地点，边按 per-world edge_types 上色；无地理坐标。 */
+  function drawAbstractGraph(STYLE) {
+    D.edges.forEach(function (ed) {
+      var a = NODE[ed.from], b = NODE[ed.to]; if (!a || !b) return;
+      var st = STYLE[ed.type] || { color: '#9A9384', dash: null };
+      var pa = nodeXY(ed.from), pb = nodeXY(ed.to);
+      var path = el('path', {
+        d: 'M' + pa.x.toFixed(1) + ' ' + pa.y.toFixed(1) + ' L' + pb.x.toFixed(1) + ' ' + pb.y.toFixed(1),
+        fill: 'none', stroke: st.color, 'stroke-width': 1.8, 'stroke-linecap': 'round',
+        'stroke-dasharray': st.dash, opacity: .82, 'vector-effect': 'non-scaling-stroke',
+        class: 'node-hit'
+      }, gEdges);
+      path.addEventListener('click', function () { selectEdge(ed); });
+      var mx = (pa.x + pb.x) / 2, my = (pa.y + pb.y) / 2;
+      var lab = el('text', { x: mx + 4, y: my - 3, class: 'route-label', fill: st.color, opacity: .9 }, gLabels);
+      lab.textContent = ed.label;
+    });
+    Object.keys(NODE).forEach(function (id) {
+      var n = NODE[id], pos = nodeXY(id), isPerson = n.kind === 'person';
+      el('circle', { cx: pos.x, cy: pos.y, r: isPerson ? 5.5 : 7,
+        class: 'pnode' + (isPerson ? ' person' : ''), fill: isPerson ? '#5A3A6E' : '#FBF9F3',
+        stroke: '#2A2521', 'stroke-width': 1.4, 'vector-effect': 'non-scaling-stroke' }, gNodes);
+      var lb = el('text', { x: pos.x + (isPerson ? 8 : 9), y: pos.y + 4,
+        class: 'place-label' + (isPerson ? ' person' : '') }, gNodes);
+      lb.textContent = n.name;
+      var hit = el('circle', { cx: pos.x, cy: pos.y, r: 14, fill: 'transparent', class: 'node-hit' }, gNodes);
+      hit.addEventListener('click', function () { selectNode(id); });
+    });
+    if (state.layers.has('gap')) {
+      visibleAssertions().filter(function (a) { return a.layer === 'gap'; }).forEach(function (a) {
+        var n = NODE[a.place]; if (!n) return;
+        var pos = nodeXY(a.place);
+        var g = el('g', { class: 'node-hit' }, gLabels);
+        el('circle', { cx: pos.x - 12, cy: pos.y - 12, r: 8.5, fill: '#FBF9F3', stroke: '#B0A99C',
+          'stroke-width': 1.4, 'stroke-dasharray': '3 2', 'vector-effect': 'non-scaling-stroke' }, g);
+        el('text', { x: pos.x - 12, y: pos.y - 7.8, 'text-anchor': 'middle', class: 'place-label minor' }, g)
+          .textContent = '?';
+        g.addEventListener('click', function () { selectAssertions('缺口 · ' + n.name, [a]); goTab('inspect'); });
+      });
+    }
+  }
+
   /* ═══════════ 左栏 ═══════════ */
   function renderSources() {
     var box = document.getElementById('sourceList'); box.innerHTML = '';
@@ -460,6 +542,11 @@
   }
   function renderTerrainCtl() {
     var box = document.getElementById('terrainCtl'); box.innerHTML = '';
+    if (IS_ABSTRACT) {
+      document.getElementById('terrainSrc').innerHTML =
+        '本 world 为虚构设定，<b>无真实地形参照</b>——以关系图呈现人物与事件脉络。';
+      return;
+    }
     [{ k: 'shade', name: '山影晕渲', c: '#8C7B5E' },
      { k: 'tint', name: '高程配色', c: '#A88C5A' },
      { k: 'elev', name: '标注海拔', c: '#7A6E5C' }].forEach(function (it) {
@@ -733,10 +820,21 @@
     state.selection = { type: 'place', title: p.name, sub: sub, list: list };
     goTab('inspect'); renderInspect();
   }
+  function selectNode(id) {
+    var n = NODE[id]; if (!n) return;
+    if (n.kind === 'place') { selectPlace(id); return; }
+    // 虚构人物：展示以其为主体的结构化断言（subject = person:<id>）
+    var list = visibleAssertions().filter(function (a) { return a.subject === 'person:' + id; });
+    state.selection = { type: 'person', title: n.name,
+      sub: '（虚构人物 · 结构化断言 ' + list.length + ' 条）', list: list };
+    goTab('inspect'); renderInspect();
+  }
   function selectEdge(ed) {
-    var a = PLACE[ed.from], b = PLACE[ed.to];
+    var a = IS_ABSTRACT ? NODE[ed.from] : PLACE[ed.from];
+    var b = IS_ABSTRACT ? NODE[ed.to] : PLACE[ed.to];
     var list = visibleAssertions().filter(function (x) {
-      return x.place === ed.from || x.place === ed.to;
+      return x.place === ed.from || x.place === ed.to ||
+        x.subject === 'person:' + ed.from || x.subject === 'person:' + ed.to;
     });
     state.selection = { type: 'edge', title: ed.label,
       sub: a.name + ' — ' + b.name, list: list };
@@ -884,13 +982,27 @@
   function renderEdgeLegend() {
     var box = document.getElementById('mapLegend'); if (!box) return;
     box.innerHTML = '';
-    EDGE_LEGEND.forEach(function (it) {
-      var st = EDGE_STYLE[it.k]; if (!st) return;
+    // 图例数据驱动：只画本 world 实际存在的边类型——没有互市/部族同盟的 world 自然不显示这两栏。
+    var LEGEND = (D.edge_types && D.edge_types.length) ? D.edge_types : EDGE_LEGEND;
+    var present = {};
+    D.edges.forEach(function (e) { if (e.type) present[e.type] = 1; });
+    LEGEND.forEach(function (it) {
+      if (!present[it.k]) return;
+      var dash = it.dash || null;
       var n = document.createElement('div'); n.className = 'lg-item';
-      n.innerHTML = '<i class="lg-line' + (st.dash ? ' lg-dash' : '') +
-        '" style="--c:' + st.color + '"></i>' + it.name;
+      n.innerHTML = '<i class="lg-line' + (dash ? ' lg-dash' : '') +
+        '" style="--c:' + it.color + '"></i>' + it.name;
       box.appendChild(n);
     });
+    // 兜底：存在 edge_types 未声明的 type 时，补一个「未分类」栏，避免静默丢信息。
+    var hasUnknown = Object.keys(present).some(function (k) {
+      return !LEGEND.some(function (t) { return t.k === k; });
+    });
+    if (hasUnknown) {
+      var n = document.createElement('div'); n.className = 'lg-item';
+      n.innerHTML = '<i class="lg-line" style="--c:#9A9384"></i>未分类';
+      box.appendChild(n);
+    }
   }
 
   /* ═══════════ 动态顶栏 / 面板标题 ═══════════ */

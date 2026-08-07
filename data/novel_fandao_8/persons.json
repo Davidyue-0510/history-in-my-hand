@@ -1,0 +1,23 @@
+{
+  "persons": [
+    {
+      "id": "bao_bao",
+      "name": "珠宝",
+      "desc": "小猫儿子，小家子气、争风吃醋。",
+      "party": "猫父自述",
+      "bucket": "猫父自述",
+      "src": "hu_ban_view",
+      "src_title": "虎斑猫自述"
+    },
+    {
+      "id": "hu_ban",
+      "name": "虎斑猫",
+      "desc": "猫妖/自称朕，委托叶为安教儿子做猫。"
+    },
+    {
+      "id": "lu_dewei",
+      "name": "路德维希",
+      "desc": "狗，虎斑猫盟友。"
+    }
+  ]
+}

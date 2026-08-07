@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": 0,
+      "subject": "event:mq_enter",
+      "label": "叶为安介入"
+    },
+    {
+      "id": "t2",
+      "t": 1,
+      "subject": "event:mq_key",
+      "label": "为爱弃学业"
+    },
+    {
+      "id": "t3",
+      "t": 2,
+      "subject": "event:mq_outcome",
+      "label": "清醒"
+    },
+    {
+      "id": "t4",
+      "t": 3,
+      "subject": "event:mq_branch",
+      "label": "反事实·未介入",
+      "branch": true
+    }
+  ]
+}

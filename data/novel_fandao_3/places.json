@@ -1,0 +1,19 @@
+{
+  "places": [
+    {
+      "id": "xiaocheng",
+      "name": "偏远小县城",
+      "fictional": true
+    },
+    {
+      "id": "yulequan",
+      "name": "娱乐圈",
+      "fictional": true
+    },
+    {
+      "id": "linju",
+      "name": "邻居家",
+      "fictional": true
+    }
+  ]
+}

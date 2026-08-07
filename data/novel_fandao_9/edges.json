@@ -1,0 +1,32 @@
+{
+  "edges": [
+    {
+      "from": "jiang_dazhuang",
+      "to": "jiang_ronghua",
+      "relation": "父子",
+      "type": "parent_child",
+      "label": "父子"
+    },
+    {
+      "from": "jiang_ronghua",
+      "to": "jiang_nvyou",
+      "relation": "恋爱",
+      "type": "romance",
+      "label": "恋爱"
+    },
+    {
+      "from": "jiang_ronghua",
+      "to": "jiang_nvyou",
+      "relation": "负心",
+      "type": "enemy",
+      "label": "负心（衣冠禽兽）"
+    },
+    {
+      "from": "yeweian",
+      "to": "jiang_dazhuang",
+      "relation": "附身教子",
+      "type": "mentor",
+      "label": "附身教子"
+    }
+  ]
+}

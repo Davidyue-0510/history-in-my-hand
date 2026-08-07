@@ -1,9 +1,9 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 16 个切片
+// 权威数据源：data/scenes.json 注册的 23 个切片
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 16 个切片",
+  "slice": "multi-scene · 23 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
  },
  "regions": [
@@ -54,7 +54,14 @@ window.SANDBOX_DATA = {
   "jinzhou",
   "ningyuan",
   "novel_fandao",
-  "novel_fandao_2"
+  "novel_fandao_2",
+  "novel_fandao_3",
+  "novel_fandao_4",
+  "novel_fandao_5",
+  "novel_fandao_6",
+  "novel_fandao_7",
+  "novel_fandao_8",
+  "novel_fandao_9"
  ],
  "vocab": {
   "parties": [
@@ -16830,47 +16837,65 @@ window.SANDBOX_DATA = {
     {
      "from": "yeweian",
      "to": "system_setting",
-     "rel": "受托于（快穿系统委托）"
+     "rel": "受托于（快穿系统委托）",
+     "type": "commission",
+     "label": "受托于（快穿系统委托）"
     },
     {
      "from": "yeweian",
      "to": "yu_guoqiang",
-     "rel": "附身/接父亲委托"
+     "rel": "附身/接父亲委托",
+     "type": "mentor",
+     "label": "附身/接父亲委托"
     },
     {
      "from": "yu_guoqiang",
      "to": "tang_aili",
-     "rel": "施暴（追打致其离家）"
+     "rel": "施暴（追打致其离家）",
+     "type": "enemy",
+     "label": "施暴（追打致其离家）"
     },
     {
      "from": "yu_guoqiang",
      "to": "yu_jinbao",
-     "rel": "父子"
+     "rel": "父子",
+     "type": "parent_child",
+     "label": "父子"
     },
     {
      "from": "yu_jinbao",
      "to": "yu_guoqiang",
-     "rel": "继承家暴作风"
+     "rel": "继承家暴作风",
+     "type": "enemy",
+     "label": "继承家暴作风"
     },
     {
      "from": "tang_aili",
      "to": "yu_jinbao",
-     "rel": "母子"
+     "rel": "母子",
+     "type": "parent_child",
+     "label": "母子"
     },
     {
      "from": "yu_jinjin",
      "to": "yu_jinbao",
-     "rel": "姐弟"
+     "rel": "姐弟",
+     "type": "family",
+     "label": "姐弟"
     },
     {
      "from": "yu_jinyin",
      "to": "yu_jinbao",
-     "rel": "姐弟"
+     "rel": "姐弟",
+     "type": "family",
+     "label": "姐弟"
     },
     {
      "from": "yu_jinbao",
      "to": "li_weiwei",
-     "rel": "夫妻（文中提及金宝妻厉薇薇）"
+     "rel": "夫妻（文中提及金宝妻厉薇薇）",
+     "type": "spouse",
+     "label": "夫妻（文中提及金宝妻厉薇薇）"
     }
    ],
    "timeline": [
@@ -16923,8 +16948,84 @@ window.SANDBOX_DATA = {
      "于父自述": "角色自述",
      "叶为安视角": "矫正者",
      "于国海视角": "旁观者"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "enemy",
+      "name": "冲突/施暴",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/附身",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "受托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "enemy",
+     "name": "冲突/施暴",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/附身",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "受托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
     }
-   }
+   ]
   },
   "novel_fandao_2": {
    "meta": {
@@ -17213,24 +17314,36 @@ window.SANDBOX_DATA = {
     {
      "id": "ev_commission",
      "subject": "event:he_commission",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
      "title": "贺云章立约",
      "summary": "贺云章死后与叶为安立约：保宸儿守大历、不绝贺家血脉。"
     },
     {
      "id": "ev_enter",
      "subject": "event:he_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
      "title": "叶为安入贺云章身",
      "summary": "沈璎病逝、贺云章病倒，叶为安借机进入其身体执政。"
     },
     {
      "id": "ev_ruin",
      "subject": "event:he_lingchen_ruin",
+     "era": "原时间线",
+     "year": "",
+     "kind": "反事实",
      "title": "原时间线·毁国过程",
      "summary": "解散后宫、杀妃嫔与己子、气死贺云章、灭将军府、戎族南下。"
     },
     {
      "id": "ev_outcome",
      "subject": "event:he_lingchen_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
      "title": "贺凌宸结局",
      "summary": "矫正后大历存续 / 反事实无介入则大历覆灭。"
     }
@@ -17239,42 +17352,58 @@ window.SANDBOX_DATA = {
     {
      "from": "he_yunzhang",
      "to": "he_lingchen",
-     "relation": "父子·委托矫正"
+     "relation": "父子·委托矫正",
+     "type": "parent_child",
+     "label": "父子·委托矫正"
     },
     {
      "from": "he_yunzhang",
      "to": "he_min",
-     "relation": "父女"
+     "relation": "父女",
+     "type": "parent_child",
+     "label": "父女"
     },
     {
      "from": "he_lingchen",
      "to": "shen_lan",
-     "relation": "偏执爱慕（强掳）"
+     "relation": "偏执爱慕（强掳）",
+     "type": "romance",
+     "label": "偏执爱慕（强掳）"
     },
     {
      "from": "shen_lan",
      "to": "qi_ning",
-     "relation": "相爱"
+     "relation": "相爱",
+     "type": "romance",
+     "label": "相爱"
     },
     {
      "from": "he_lingchen",
      "to": "qi_ning",
-     "relation": "敌对·灭门"
+     "relation": "敌对·灭门",
+     "type": "enemy",
+     "label": "敌对·灭门"
     },
     {
      "from": "yeweian",
      "to": "he_lingchen",
-     "relation": "矫正目标"
+     "relation": "矫正目标",
+     "type": "mentor",
+     "label": "矫正目标"
     },
     {
      "from": "shu_fei",
      "to": "he_lingchen",
-     "relation": "母子（子被贺凌宸杀）"
+     "relation": "母子（子被贺凌宸杀）",
+     "type": "parent_child",
+     "label": "母子（子被贺凌宸杀）"
     },
     {
      "from": "he_lingchen",
      "to": "he_min",
-     "relation": "兄妹（后视为背叛）"
+     "relation": "兄妹（后视为背叛）",
+     "type": "enemy",
+     "label": "兄妹（后视为背叛）"
     }
    ],
    "timeline": [
@@ -17324,8 +17453,2831 @@ window.SANDBOX_DATA = {
      "贺云章自述": "贺云章自述",
      "叶为安视角": "叶为安视角",
      "沈岚视角": "沈岚视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
     }
-   }
+   ]
+  },
+  "novel_fandao_3": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·拜金绝色女儿",
+    "dossier_label": "反派他爸教做人·拜金绝色女儿",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "xiaocheng",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
+    "page": "county.html?scene=novel_fandao_3",
+    "key": "novel_fandao_3"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·拜金绝色女儿",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "xie_zefei_view",
+     "title": "谢泽非自述",
+     "party": "谢父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "xiaocheng",
+     "name": "偏远小县城",
+     "fictional": true
+    },
+    {
+     "id": "yulequan",
+     "name": "娱乐圈",
+     "fictional": true
+    },
+    {
+     "id": "linju",
+     "name": "邻居家",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "xie_xilan",
+     "name": "谢夕兰",
+     "desc": "谢泽非与许雯之女，美貌清醒却拜金，进娱乐圈傍金主。"
+    },
+    {
+     "id": "xie_zefei",
+     "name": "谢泽非",
+     "desc": "中学老师，酗酒打女。"
+    },
+    {
+     "id": "xu_wen",
+     "name": "许雯",
+     "desc": "谢夕兰之母，因贫离家。"
+    },
+    {
+     "id": "hua_tiancheng",
+     "name": "华天成",
+     "desc": "高富帅金主。"
+    },
+    {
+     "id": "zhenai",
+     "name": "真爱女友",
+     "desc": "华天成真爱，被谢夕兰坑害。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "F301",
+     "subject": "person:xie_xilan",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "谢夕兰拜金、有演技有颜值有情商，进娱乐圈傍高富帅金主。",
+     "quote": "她很清醒，她和高富帅之间，就是单纯的金钱关系，没别的。",
+     "value_text": "谢夕兰=拜金绝色女儿，以金钱关系傍金主。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "F302",
+     "subject": "event:xf_enter",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "谢泽非因许雯离家酗酒，醉后首打六岁谢夕兰，叶为安介入。",
+     "quote": "谢泽非拿着许雯留下来的信将自己关在房间一整夜……第一次动手打了谢夕兰。",
+     "value_text": "叶为安介入时间点为谢泽非首次动手打女。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "F303",
+     "subject": "event:xf_key",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "谢夕兰为抢华天成坑害其真爱女友，曝光后成众矢之的。",
+     "quote": "为了抢夺高富帅，谢夕兰做了不少事情……谢夕兰一夕之间成了众矢之的。",
+     "value_text": "傍金主坑真爱女友是副本核心冲突。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "F304",
+     "subject": "event:xf_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安矫正后谢夕兰认清自我、不再拜金毁人。",
+     "quote": "（叶为安代入谢泽非教养谢夕兰，使其摆脱拜金执念）",
+     "value_text": "矫正后谢夕兰清醒，未毁人毁己。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "F305",
+     "subject": "person:xie_xilan",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借谢夕兰揭示拜金与人性：清醒的算计反而最易迷失。",
+     "quote": "（作者借娱乐圈镜像反思金钱与自我）",
+     "value_text": "谢夕兰是'拜金迷失'的文学样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "F306",
+     "subject": "event:xf_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，谢夕兰坑害真爱曝光后身败名裂、人生尽毁。",
+     "quote": "（推演）若未介入，谢夕兰一夕之间成了众矢之的。",
+     "value_text": "反事实：未介入→谢夕兰身败名裂。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "F307",
+     "subject": "person:xie_xilan",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "F308",
+     "subject": "event:xf_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    },
+    {
+     "id": "F309",
+     "subject": "person:xie_zefei",
+     "predicate": "人物自述",
+     "source": "xie_zefei_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "谢泽非自述：许雯离家后酗酒、首次动手打六岁谢夕兰，是其人生转折。",
+     "quote": "（谢泽非自述：许雯走后我把自己关起来，第一次打了夕兰）",
+     "value_text": "谢泽非自述承认家暴起点。",
+     "_party": "谢父自述"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "F307"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:xf_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身谢泽非",
+     "summary": "谢泽非醉酒首打六岁谢夕兰，叶为安介入代父教养。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:xf_key",
+     "era": "情节",
+     "year": "",
+     "kind": "矫正",
+     "title": "谢夕兰傍金主坑真爱",
+     "summary": "为抢华天成坑害其真爱女友，事败身败名裂。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:xf_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "矫正后谢夕兰清醒",
+     "summary": "叶为安矫正使其认清自我、不再拜金毁人。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:xf_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "谢夕兰一夕成众矢之的，人生尽毁。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "xie_zefei",
+     "to": "xie_xilan",
+     "relation": "父女",
+     "type": "parent_child",
+     "label": "父女"
+    },
+    {
+     "from": "xie_zefei",
+     "to": "xu_wen",
+     "relation": "夫妻（许雯离家）",
+     "type": "spouse",
+     "label": "夫妻（许雯离家）"
+    },
+    {
+     "from": "xie_xilan",
+     "to": "hua_tiancheng",
+     "relation": "傍金主",
+     "type": "romance",
+     "label": "傍金主"
+    },
+    {
+     "from": "xie_xilan",
+     "to": "zhenai",
+     "relation": "坑害真爱女友",
+     "type": "enemy",
+     "label": "坑害真爱女友"
+    },
+    {
+     "from": "yeweian",
+     "to": "xie_zefei",
+     "relation": "附身矫正",
+     "type": "mentor",
+     "label": "附身矫正"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:xf_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:xf_key",
+     "label": "傍金主坑真爱"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:xf_outcome",
+     "label": "矫正清醒"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:xf_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "谢父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "谢父自述": "谢父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_4": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·我的儿子是怪物",
+    "dossier_label": "反派他爸教做人·我的儿子是怪物",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "mojie",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
+    "page": "county.html?scene=novel_fandao_4",
+    "key": "novel_fandao_4"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·我的儿子是怪物",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "ai_ruian_view",
+     "title": "艾瑞安自述",
+     "party": "艾父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "mojie",
+     "name": "末世·艾家别墅",
+     "fictional": true
+    },
+    {
+     "id": "yanshi",
+     "name": "研究所",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "ai_zhe",
+     "name": "艾哲",
+     "desc": "宇航员，末世兽化异能者，记忆被篡改。"
+    },
+    {
+     "id": "ai_ruian",
+     "name": "艾瑞安",
+     "desc": "科学家，艾哲之父，死于艾哲爪下。"
+    },
+    {
+     "id": "tang_wanning",
+     "name": "唐婉宁",
+     "desc": "艾瑞安继室，唐心生母。"
+    },
+    {
+     "id": "tang_xin",
+     "name": "唐心",
+     "desc": "唐婉宁带来之女，无血缘妹，知艾哲真相。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "G401",
+     "subject": "person:ai_zhe",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "艾哲兽化异能者，从宇宙带回陌生能量辐射全球，引发末世。",
+     "quote": "所谓末世到来并不是他们所以为的地球核变进化，而是艾哲从宇宙中带了陌生能量回来，辐射全球。",
+     "value_text": "艾哲=末世能量源（非核变）。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "G402",
+     "subject": "event:az_enter",
+     "predicate": "情节事实",
+     "source": "ai_ruian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "艾瑞安死前委托叶为安让兽化儿子变身后保持理智。",
+     "quote": "你能让他恢复理智吗？变成怪兽的时候也保持理智。",
+     "value_text": "叶为安介入动机=艾瑞安临终委托。",
+     "_party": "艾父自述"
+    },
+    {
+     "id": "G403",
+     "subject": "event:az_key",
+     "predicate": "情节事实",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.82,
+     "claim": "艾哲篡改众人对他的记忆，唯唐心见其完全体态而知真相。",
+     "quote": "艾哲确实将所有人关于他的记忆都改变了，但只要见过艾哲完全状态，他想隐瞒的秘密就会开启。",
+     "value_text": "唐心记忆=唯一真实。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "G404",
+     "subject": "event:az_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安揭穿篡改，艾哲守住理智、唐心得救。",
+     "quote": "（叶为安使艾哲保持清醒，护住唐心）",
+     "value_text": "矫正后艾哲未疯狂。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "G405",
+     "subject": "person:ai_zhe",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借艾哲反思'怪物'非天生：记忆篡改与孤独才是悲剧根源。",
+     "quote": "（作者借末世兽化谈人性与孤独）",
+     "value_text": "艾哲是'被改写的怪物'样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "G406",
+     "subject": "event:az_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，艾哲疯狂囚禁唐心、二人同归于尽，末世真相无人知。",
+     "quote": "（推演）唐心最后和艾哲同归于尽了……直到艾哲死后，异兽才不再那么疯狂。",
+     "value_text": "反事实：未介入→同归于尽、真相湮灭。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "G407",
+     "subject": "person:ai_zhe",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "G408",
+     "subject": "event:az_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "G407"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:az_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身艾瑞安",
+     "summary": "艾瑞安死前委托叶为安让兽化儿子保持理智。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:az_key",
+     "era": "情节",
+     "year": "",
+     "kind": "反事实",
+     "title": "艾哲记忆被篡改",
+     "summary": "艾哲改众人对他的记忆，唐心知真相却不敢言。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:az_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "矫正后艾哲守住理智",
+     "summary": "叶为安揭穿篡改，艾哲未疯狂、唐心得救。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:az_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "艾哲疯狂囚禁唐心，二人同归于尽，末世辐射真相湮灭。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "ai_ruian",
+     "to": "ai_zhe",
+     "relation": "父子",
+     "type": "parent_child",
+     "label": "父子"
+    },
+    {
+     "from": "tang_wanning",
+     "to": "tang_xin",
+     "relation": "母女",
+     "type": "family",
+     "label": "母女"
+    },
+    {
+     "from": "ai_zhe",
+     "to": "tang_xin",
+     "relation": "兄妹（后囚禁）",
+     "type": "enemy",
+     "label": "兄妹（后囚禁）"
+    },
+    {
+     "from": "tang_xin",
+     "to": "nanyou",
+     "relation": "相爱",
+     "type": "romance",
+     "label": "相爱（被阻挠）"
+    },
+    {
+     "from": "yeweian",
+     "to": "ai_ruian",
+     "relation": "附身矫正",
+     "type": "mentor",
+     "label": "附身矫正"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:az_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:az_key",
+     "label": "记忆篡改"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:az_outcome",
+     "label": "守住理智"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:az_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "艾父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "艾父自述": "艾父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_5": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·不负责的穿书女",
+    "dossier_label": "反派他爸教做人·不负责的穿书女",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "hejiacun",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。",
+    "page": "county.html?scene=novel_fandao_5",
+    "key": "novel_fandao_5"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·不负责的穿书女",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "he_yongan_view",
+     "title": "何永安自述",
+     "party": "何父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "hejiacun",
+     "name": "何家村",
+     "fictional": true
+    },
+    {
+     "id": "chengshi",
+     "name": "京市",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "he_xinran",
+     "name": "何欣然",
+     "desc": "穿书女/明星，将女儿巧妹托付父母后追梦。",
+     "party": "何母自述",
+     "bucket": "何母自述",
+     "src": "he_xinran_view",
+     "src_title": "何欣然视角"
+    },
+    {
+     "id": "he_yongan",
+     "name": "何永安",
+     "desc": "巧妹姥爷，委托叶为安护孙女。"
+    },
+    {
+     "id": "qiao_mei",
+     "name": "巧妹",
+     "desc": "何欣然之女，由姥爷姥姥带大。"
+    },
+    {
+     "id": "lin_wenqi",
+     "name": "林文启",
+     "desc": "何欣然再婚对象（首富）。"
+    },
+    {
+     "id": "xue_yiliang",
+     "name": "薛宜良",
+     "desc": "巧妹生父。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "H501",
+     "subject": "person:he_xinran",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "何欣然为穿书女/明星，将幼女巧妹托父母后赴外地拍戏追梦。",
+     "quote": "何欣然突然打电话过来，说要去外地拍戏，巧妹太小了，没办法再照顾，因此只能将她送到父母身边。",
+     "value_text": "何欣然=不负责任但非恶意之母。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "H502",
+     "subject": "event:hx_enter",
+     "predicate": "情节事实",
+     "source": "he_yongan_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "何永安委托叶为安护巧妹，使其不在风言风语中长大。",
+     "quote": "（何永安将巧妹托付，叶为安附身护其成长）",
+     "value_text": "叶为安介入动机=何永安委托。",
+     "_party": "何父自述"
+    },
+    {
+     "id": "H503",
+     "subject": "event:hx_key",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "何欣然嫁入林家（首富），曾为明星的身份被翻出但未被追究。",
+     "quote": "欣欣嫁入林家后曾经是明星的事情确实被狗仔翻了出来……林家也不是，她就放心吧。",
+     "value_text": "何欣然再婚首富，巧妹被接纳。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "H504",
+     "subject": "event:hx_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安护巧妹于善意环境中健康成长。",
+     "quote": "（叶为安与王莲居于何家村，巧妹快乐长大）",
+     "value_text": "矫正后巧妹未受流言所伤。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "H505",
+     "subject": "person:he_xinran",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借穿书女反思'追梦与尽责'的张力：爱不是缺席的借口。",
+     "quote": "（作者借巧妹命运谈母爱与义务）",
+     "value_text": "何欣然是'追梦母亲'样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "H506",
+     "subject": "event:hx_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，巧妹在'她妈不安分'的流言中自我怀疑、童年被毁。",
+     "quote": "（推演）龙生龙，凤生凤……谢夕兰保不准和她妈一样。",
+     "value_text": "反事实：未介入→巧妹童年被流言毁。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "H507",
+     "subject": "person:he_xinran",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "H508",
+     "subject": "event:hx_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "H507"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:hx_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身何永安",
+     "summary": "何永安委托叶为安护巧妹免于风言风语。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:hx_key",
+     "era": "情节",
+     "year": "",
+     "kind": "矫正",
+     "title": "何欣然追梦托女",
+     "summary": "何欣然穿书女身份、将巧妹托父母后追星途。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:hx_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "巧妹健康成长",
+     "summary": "叶为安护巧妹在善意中长大。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:hx_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "巧妹在风言风语与流言中毁掉童年。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "he_yongan",
+     "to": "qiao_mei",
+     "relation": "姥爷-外孙女",
+     "type": "parent_child",
+     "label": "姥爷-外孙女"
+    },
+    {
+     "from": "he_xinran",
+     "to": "qiao_mei",
+     "relation": "母女",
+     "type": "parent_child",
+     "label": "母女"
+    },
+    {
+     "from": "he_xinran",
+     "to": "lin_wenqi",
+     "relation": "再婚",
+     "type": "spouse",
+     "label": "再婚（林文启）"
+    },
+    {
+     "from": "he_xinran",
+     "to": "xue_yiliang",
+     "relation": "生父",
+     "type": "spouse",
+     "label": "生父（薛宜良）"
+    },
+    {
+     "from": "yeweian",
+     "to": "he_yongan",
+     "relation": "附身护孙",
+     "type": "mentor",
+     "label": "附身护孙"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:hx_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:hx_key",
+     "label": "托女追梦"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:hx_outcome",
+     "label": "巧妹健康成长"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:hx_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "何父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "何父自述": "何父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_6": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·同性恋骗婚儿子",
+    "dossier_label": "反派他爸教做人·同性恋骗婚儿子",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "tu_jia",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
+    "page": "county.html?scene=novel_fandao_6",
+    "key": "novel_fandao_6"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·同性恋骗婚儿子",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "tu_shiqing_view",
+     "title": "徒时卿自述",
+     "party": "司徒父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "tu_jia",
+     "name": "徒家",
+     "fictional": true
+    },
+    {
+     "id": "gongsi",
+     "name": "徒应琉公司",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "situ_rui",
+     "name": "司徒锐",
+     "desc": "同性恋儿子，与徒应琉相恋。",
+     "party": "司徒父自述",
+     "bucket": "司徒父自述",
+     "src": "tu_shiqing_view",
+     "src_title": "徒时卿自述"
+    },
+    {
+     "id": "tu_shiqing",
+     "name": "徒时卿",
+     "desc": "司徒锐之父，委托叶为安理解儿子。"
+    },
+    {
+     "id": "tu_yingliu",
+     "name": "徒应琉",
+     "desc": "上辈子'骗婚'者，实为假误会。"
+    },
+    {
+     "id": "chu_xiuxiu",
+     "name": "褚秀秀",
+     "desc": "上辈子徒应琉之妻，带子而死。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "I601",
+     "subject": "person:situ_rui",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "司徒锐是同性恋，与徒应琉相恋，家庭最终接纳。",
+     "quote": "司徒锐和徒应琉，那张结婚证就不重要。",
+     "value_text": "司徒锐=被接纳的同性恋儿子。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "I602",
+     "subject": "event:sr_enter",
+     "predicate": "情节事实",
+     "source": "tu_shiqing_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "徒时卿因上辈子'骗婚'误解，委托叶为安理解儿子。",
+     "quote": "徒时卿是什么时候知道徒应琉是个同性恋，对褚秀秀骗婚的？",
+     "value_text": "叶为安介入动机=徒时卿求理解。",
+     "_party": "司徒父自述"
+    },
+    {
+     "id": "I603",
+     "subject": "event:sr_key",
+     "predicate": "情节事实",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.82,
+     "claim": "褚秀秀日记揭徒应琉非骗婚，只是旁观同性恋的误会。",
+     "quote": "褚秀秀围观两个同性恋的兴奋与激动……那日记上寥寥的几句话。",
+     "value_text": "上辈子骗婚=误会，非丧心病狂。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "I604",
+     "subject": "event:sr_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安厘清误会，今世司徒锐与徒应琉被家庭接纳。",
+     "quote": "（叶为安与叶云紫拼出合情合理真相）",
+     "value_text": "矫正后误会被化解。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "I605",
+     "subject": "person:situ_rui",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借误会谈'眼见不为实'：以结果逆推真相最易误判。",
+     "quote": "知道结果，然后进行逆推往往很简单，但如果一开始看到的真相就是假的呢？",
+     "value_text": "司徒锐是'误判真相'样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "I606",
+     "subject": "event:sr_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，上辈子徒应琉黑化骗婚，毁褚秀秀一生。",
+     "quote": "（推演）徒应琉将褚秀秀骗得这么惨，毁了人家一辈子。",
+     "value_text": "反事实：未介入→骗婚毁人。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "I607",
+     "subject": "person:situ_rui",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "I608",
+     "subject": "event:sr_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "I607"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:sr_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身徒时卿",
+     "summary": "徒时卿因上辈子骗婚误解委托叶为安理解儿子。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:sr_key",
+     "era": "情节",
+     "year": "",
+     "kind": "反事实",
+     "title": "上辈子骗婚真相",
+     "summary": "褚秀秀日记揭徒应琉非骗婚，是旁观同性恋的误会。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:sr_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "今世被接纳",
+     "summary": "司徒锐与徒应琉被家庭接纳。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:sr_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "上辈子徒应琉黑化骗婚毁褚秀秀一生。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "tu_shiqing",
+     "to": "situ_rui",
+     "relation": "父子",
+     "type": "parent_child",
+     "label": "父子"
+    },
+    {
+     "from": "tu_shiqing",
+     "to": "tu_yingliu",
+     "relation": "上辈子父子",
+     "type": "parent_child",
+     "label": "上辈子父子"
+    },
+    {
+     "from": "tu_yingliu",
+     "to": "chu_xiuxiu",
+     "relation": "骗婚（误会）",
+     "type": "spouse",
+     "label": "骗婚（误会）"
+    },
+    {
+     "from": "yeweian",
+     "to": "tu_shiqing",
+     "relation": "附身理解",
+     "type": "mentor",
+     "label": "附身理解"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:sr_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:sr_key",
+     "label": "骗婚真相"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:sr_outcome",
+     "label": "被接纳"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:sr_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "司徒父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "司徒父自述": "司徒父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_7": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·爱情至上的女儿",
+    "dossier_label": "反派他爸教做人·爱情至上的女儿",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "mu_jia",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
+    "page": "county.html?scene=novel_fandao_7",
+    "key": "novel_fandao_7"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·爱情至上的女儿",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "mu_fu_view",
+     "title": "慕父自述",
+     "party": "慕父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "mu_jia",
+     "name": "慕家",
+     "fictional": true
+    },
+    {
+     "id": "xuexiao",
+     "name": "学校",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "mu_qing",
+     "name": "慕情",
+     "desc": "为爱情放弃学业家庭的女儿。",
+     "party": "慕父自述",
+     "bucket": "慕父自述",
+     "src": "mu_fu_view",
+     "src_title": "慕父自述"
+    },
+    {
+     "id": "mu_fu",
+     "name": "慕父",
+     "desc": "委托叶为安让女儿清醒。"
+    },
+    {
+     "id": "zha_nan",
+     "name": "渣男",
+     "desc": "利用慕情感情的男人。"
+    },
+    {
+     "id": "mu_mu",
+     "name": "慕母",
+     "desc": "慕情之母。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "J701",
+     "subject": "person:mu_qing",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "慕情爱情至上，为渣男放弃学业与家庭。",
+     "quote": "（慕情将爱情置于一切之上）",
+     "value_text": "慕情=爱情至上的女儿。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "J702",
+     "subject": "event:mq_enter",
+     "predicate": "情节事实",
+     "source": "mu_fu_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "慕父委托叶为安让女儿不再为爱盲目。",
+     "quote": "（慕父求叶为安教女儿做人不被情迷）",
+     "value_text": "叶为安介入动机=慕父委托。",
+     "_party": "慕父自述"
+    },
+    {
+     "id": "J703",
+     "subject": "event:mq_key",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "慕情为渣男弃学业家庭，渐失自我。",
+     "quote": "（慕情为爱情牺牲前途）",
+     "value_text": "核心冲突=爱情盲目。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "J704",
+     "subject": "event:mq_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安矫正后慕情重拾自我与学业。",
+     "quote": "（叶为安使慕情清醒）",
+     "value_text": "矫正后慕情未毁。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "J705",
+     "subject": "person:mu_qing",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借慕情谈'爱情至上'的边界：爱不应吞没自我。",
+     "quote": "（作者借慕情反思恋爱脑）",
+     "value_text": "慕情是'恋爱脑'样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "J706",
+     "subject": "event:mq_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，慕情被渣男骗财骗色、毁掉一生。",
+     "quote": "（推演）慕情为爱情至上的女儿，若无人点醒则万劫不复。",
+     "value_text": "反事实：未介入→被渣男毁。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "J707",
+     "subject": "person:mu_qing",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "J708",
+     "subject": "event:mq_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "J707"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:mq_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身慕父",
+     "summary": "慕父委托叶为安让爱情至上的女儿清醒。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:mq_key",
+     "era": "情节",
+     "year": "",
+     "kind": "矫正",
+     "title": "女儿为爱弃学业",
+     "summary": "慕情为渣男放弃学业家庭。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:mq_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "矫正后清醒",
+     "summary": "叶为安矫正使慕情重拾自我。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:mq_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "慕情被渣男骗财骗色、毁掉一生。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "mu_fu",
+     "to": "mu_qing",
+     "relation": "父女",
+     "type": "parent_child",
+     "label": "父女"
+    },
+    {
+     "from": "mu_fu",
+     "to": "mu_mu",
+     "relation": "夫妻",
+     "type": "spouse",
+     "label": "夫妻"
+    },
+    {
+     "from": "mu_qing",
+     "to": "zha_nan",
+     "relation": "迷恋（被骗）",
+     "type": "romance",
+     "label": "迷恋（被骗）"
+    },
+    {
+     "from": "mu_qing",
+     "to": "zha_nan",
+     "relation": "被毁",
+     "type": "enemy",
+     "label": "被渣男毁"
+    },
+    {
+     "from": "yeweian",
+     "to": "mu_fu",
+     "relation": "附身矫正",
+     "type": "mentor",
+     "label": "附身矫正"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:mq_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:mq_key",
+     "label": "为爱弃学业"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:mq_outcome",
+     "label": "清醒"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:mq_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "慕父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "慕父自述": "慕父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_8": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·不听话的喵儿子",
+    "dossier_label": "反派他爸教做人·不听话的喵儿子",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "mao_guo",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。",
+    "page": "county.html?scene=novel_fandao_8",
+    "key": "novel_fandao_8"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·不听话的喵儿子",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "hu_ban_view",
+     "title": "虎斑猫自述",
+     "party": "猫父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "mao_guo",
+     "name": "猫国",
+     "fictional": true
+    },
+    {
+     "id": "ren_jian",
+     "name": "人间",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "bao_bao",
+     "name": "珠宝",
+     "desc": "小猫儿子，小家子气、争风吃醋。",
+     "party": "猫父自述",
+     "bucket": "猫父自述",
+     "src": "hu_ban_view",
+     "src_title": "虎斑猫自述"
+    },
+    {
+     "id": "hu_ban",
+     "name": "虎斑猫",
+     "desc": "猫妖/自称朕，委托叶为安教儿子做猫。"
+    },
+    {
+     "id": "lu_dewei",
+     "name": "路德维希",
+     "desc": "狗，虎斑猫盟友。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "K801",
+     "subject": "person:bao_bao",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "珠宝是小猫儿子，小家子气、因铲屎官有别猫而打别的猫。",
+     "quote": "它居然跑上去将别的猫给打了！一个有别的猫的铲屎官，还留着干什么，当然是抛弃他了！",
+     "value_text": "珠宝=不听话的喵儿子。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "K802",
+     "subject": "event:bb_enter",
+     "predicate": "情节事实",
+     "source": "hu_ban_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "虎斑猫（猫妖）委托叶为安教儿子珠宝做猫。",
+     "quote": "去不去？朕藏了一块小鱼干，可以给你当报酬！",
+     "value_text": "叶为安介入动机=虎斑猫委托。",
+     "_party": "猫父自述"
+    },
+    {
+     "id": "K803",
+     "subject": "event:bb_key",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "珠宝因铲屎官有别猫而打别的猫、小家子气。",
+     "quote": "它居然跑上去将别的猫给打了！",
+     "value_text": "核心冲突=小猫争宠。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "K804",
+     "subject": "event:bb_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安教珠宝不再小家子气、大方做猫。",
+     "quote": "（叶为安逗弄并教导小猫）",
+     "value_text": "矫正后珠宝大气。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "K805",
+     "subject": "person:bao_bao",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借猫儿子谈'器量'：连猫都忌小家子气，况人乎。",
+     "quote": "（作者以猫喻人谈气量）",
+     "value_text": "珠宝是'器量'寓言样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "K806",
+     "subject": "event:bb_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，珠宝仍争风吃醋、失猫国体面。",
+     "quote": "（推演）珠宝若无人教，始终是只小家子气的猫。",
+     "value_text": "反事实：未介入→珠宝仍小气。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "K807",
+     "subject": "person:bao_bao",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "K808",
+     "subject": "event:bb_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "K807"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:bb_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "虎斑猫委托叶为安",
+     "summary": "虎斑猫请叶为安教儿子珠宝做猫。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:bb_key",
+     "era": "情节",
+     "year": "",
+     "kind": "矫正",
+     "title": "珠宝小家子气",
+     "summary": "珠宝因铲屎官有别猫而打别的猫。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:bb_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "矫正后大气",
+     "summary": "叶为安教珠宝不再小家子气。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:bb_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "珠宝仍争风吃醋、失体面。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "hu_ban",
+     "to": "bao_bao",
+     "relation": "父子（猫）",
+     "type": "parent_child",
+     "label": "父子（猫）"
+    },
+    {
+     "from": "bao_bao",
+     "to": "other_cat",
+     "relation": "争宠打架",
+     "type": "enemy",
+     "label": "争宠打架"
+    },
+    {
+     "from": "hu_ban",
+     "to": "lu_dewei",
+     "relation": "盟友",
+     "type": "family",
+     "label": "盟友（狗）"
+    },
+    {
+     "from": "yeweian",
+     "to": "hu_ban",
+     "relation": "受托教猫",
+     "type": "mentor",
+     "label": "受托教猫"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:bb_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:bb_key",
+     "label": "小家子气"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:bb_outcome",
+     "label": "大气"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:bb_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "猫父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "猫父自述": "猫父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
+  },
+  "novel_fandao_9": {
+   "meta": {
+    "kind": "fiction",
+    "region": "fiction",
+    "title": "反派他爸教做人·胎穿女和魂穿女",
+    "dossier_label": "反派他爸教做人·胎穿女和魂穿女",
+    "subtitle": "小说导入的虚构世界（kind:fiction）",
+    "primary_place": "jiang_jiacun",
+    "dossier_event": null,
+    "back": "枢纽",
+    "fictional": true,
+    "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。",
+    "page": "county.html?scene=novel_fandao_9",
+    "key": "novel_fandao_9"
+   },
+   "sources": [
+    {
+     "id": "novel_text",
+     "title": "反派他爸教做人·胎穿女和魂穿女",
+     "party": "作者叙述"
+    },
+    {
+     "id": "system_setting",
+     "title": "快穿系统设定",
+     "party": "系统任务"
+    },
+    {
+     "id": "jiang_dazhuang_view",
+     "title": "江大壮自述",
+     "party": "江父自述"
+    },
+    {
+     "id": "yeweian_view",
+     "title": "叶为安视角",
+     "party": "叶为安视角"
+    }
+   ],
+   "places": [
+    {
+     "id": "jiang_jiacun",
+     "name": "江家村",
+     "fictional": true
+    },
+    {
+     "id": "daxue",
+     "name": "大学",
+     "fictional": true
+    }
+   ],
+   "persons": [
+    {
+     "id": "jiang_ronghua",
+     "name": "江容华",
+     "desc": "胎穿/魂穿之子，读点书成衣冠禽兽。",
+     "party": "江父自述",
+     "bucket": "江父自述",
+     "src": "jiang_dazhuang_view",
+     "src_title": "江大壮自述"
+    },
+    {
+     "id": "jiang_dazhuang",
+     "name": "江大壮",
+     "desc": "庄稼汉，委托叶为安教儿子做人。"
+    },
+    {
+     "id": "jiang_nvyou",
+     "name": "江容华女友",
+     "desc": "家境好的开朗女孩。"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "L901",
+     "subject": "person:jiang_ronghua",
+     "predicate": "人物设定",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "江容华是江家村唯一大学生，胎穿/魂穿后读点书便成衣冠禽兽。",
+     "quote": "让儿子像个人，别读点书就去当电视上说的那什么衣冠禽兽。",
+     "value_text": "江容华=胎穿禽兽儿子。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "L902",
+     "subject": "event:jr_enter",
+     "predicate": "情节事实",
+     "source": "jiang_dazhuang_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.85,
+     "claim": "江大壮委托叶为安教儿子做人、别成衣冠禽兽。",
+     "quote": "俺想请仙长教教俺儿子做个人吧。",
+     "value_text": "叶为安介入动机=江大壮委托。",
+     "_party": "江父自述"
+    },
+    {
+     "id": "L903",
+     "subject": "event:jr_key",
+     "predicate": "情节事实",
+     "source": "novel_text",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "江容华凭学识欺男霸女、负心女友。",
+     "quote": "（江容华读点书后恃才傲物、负心滥情）",
+     "value_text": "核心冲突=知识≠人品。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "L904",
+     "subject": "event:jr_outcome",
+     "predicate": "结局",
+     "source": "yeweian_view",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.8,
+     "claim": "叶为安矫正使江容华回归本心、不再禽兽。",
+     "quote": "（叶为安使江容华做回人）",
+     "value_text": "矫正后江容华做人。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "L905",
+     "subject": "person:jiang_ronghua",
+     "predicate": "作者主题",
+     "source": "novel_text",
+     "layer": "scholarship",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.7,
+     "claim": "作者借江容华谈'读书与做人'：有才无德是为禽兽。",
+     "quote": "（作者借江容华反思教育与人品）",
+     "value_text": "江容华是'有才无德'样本。",
+     "_party": "作者叙述"
+    },
+    {
+     "id": "L906",
+     "subject": "event:jr_branch",
+     "predicate": "反事实推演",
+     "source": "yeweian_view",
+     "layer": "inference",
+     "quote_status": "generated",
+     "confidence": 0.5,
+     "claim": "若无叶为安介入，江容华成衣冠禽兽、害人害己。",
+     "quote": "（推演）江容华读点书就去当衣冠禽兽。",
+     "value_text": "反事实：未介入→禽兽毁人。",
+     "_party": "叶为安视角"
+    },
+    {
+     "id": "L907",
+     "subject": "person:jiang_ronghua",
+     "predicate": "史料缺口",
+     "source": "novel_text",
+     "layer": "gap",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.0,
+     "claim": "本书各副本仅抽取核心人物与转折事件，逐章细节（支线人物、对话、心理活动）尚未结构化沉淀。",
+     "value_text": "待逐章结构化各副本的深层情节与人物关系。",
+     "lead": {
+      "where": "data/novel_to_map_try 各副本对应章节",
+      "skills": "文本抽取 / 熟悉网文叙事",
+      "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
+     },
+     "_party": "作者叙述"
+    },
+    {
+     "id": "L908",
+     "subject": "event:jr_enter",
+     "predicate": "系统设定",
+     "source": "system_setting",
+     "layer": "record",
+     "quote_status": "paraphrase_unverified",
+     "confidence": 0.9,
+     "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
+     "quote": "（系统：宿主需完成教养任务方可脱离副本）",
+     "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+     "_party": "系统任务"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "L907"
+   ],
+   "events": [
+    {
+     "id": "e_enter",
+     "subject": "event:jr_enter",
+     "era": "副本开端",
+     "year": "",
+     "kind": "转折",
+     "title": "叶为安附身江大壮",
+     "summary": "江大壮委托叶为安教儿子别成衣冠禽兽。"
+    },
+    {
+     "id": "e_key",
+     "subject": "event:jr_key",
+     "era": "情节",
+     "year": "",
+     "kind": "矫正",
+     "title": "江容华读点书变禽兽",
+     "summary": "江容华胎穿后凭学识欺男霸女。"
+    },
+    {
+     "id": "e_outcome",
+     "subject": "event:jr_outcome",
+     "era": "结局",
+     "year": "",
+     "kind": "结局",
+     "title": "矫正后做人",
+     "summary": "叶为安矫正使江容华回归本心。"
+    },
+    {
+     "id": "e_branch",
+     "subject": "event:jr_branch",
+     "era": "反事实",
+     "year": "",
+     "kind": "反事实",
+     "title": "若叶为安未介入",
+     "summary": "江容华成衣冠禽兽、害人害己。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "jiang_dazhuang",
+     "to": "jiang_ronghua",
+     "relation": "父子",
+     "type": "parent_child",
+     "label": "父子"
+    },
+    {
+     "from": "jiang_ronghua",
+     "to": "jiang_nvyou",
+     "relation": "恋爱",
+     "type": "romance",
+     "label": "恋爱"
+    },
+    {
+     "from": "jiang_ronghua",
+     "to": "jiang_nvyou",
+     "relation": "负心",
+     "type": "enemy",
+     "label": "负心（衣冠禽兽）"
+    },
+    {
+     "from": "yeweian",
+     "to": "jiang_dazhuang",
+     "relation": "附身教子",
+     "type": "mentor",
+     "label": "附身教子"
+    }
+   ],
+   "timeline": [
+    {
+     "id": "t1",
+     "t": 0,
+     "subject": "event:jr_enter",
+     "label": "叶为安介入"
+    },
+    {
+     "id": "t2",
+     "t": 1,
+     "subject": "event:jr_key",
+     "label": "读点书变禽兽"
+    },
+    {
+     "id": "t3",
+     "t": 2,
+     "subject": "event:jr_outcome",
+     "label": "回归本心"
+    },
+    {
+     "id": "t4",
+     "t": 3,
+     "subject": "event:jr_branch",
+     "label": "反事实·未介入",
+     "branch": true
+    }
+   ],
+   "vocab": {
+    "parties": [
+     "作者叙述",
+     "系统任务",
+     "江父自述",
+     "叶为安视角"
+    ],
+    "party_bucket": {
+     "作者叙述": "作者叙述",
+     "系统任务": "系统任务",
+     "江父自述": "江父自述",
+     "叶为安视角": "叶为安视角"
+    },
+    "edge_types": [
+     {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+     },
+     {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+     },
+     {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+     },
+     {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+     },
+     {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+     },
+     {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+     },
+     {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+     }
+    ]
+   },
+   "edge_types": [
+    {
+     "k": "parent_child",
+     "name": "亲子",
+     "color": "#7A7466",
+     "dash": "2 3"
+    },
+    {
+     "k": "spouse",
+     "name": "夫妻/婚约",
+     "color": "#C77B30",
+     "dash": "7 4"
+    },
+    {
+     "k": "family",
+     "name": "血亲",
+     "color": "#3E8E6E",
+     "dash": null
+    },
+    {
+     "k": "romance",
+     "name": "情感",
+     "color": "#B23A48",
+     "dash": "4 4"
+    },
+    {
+     "k": "enemy",
+     "name": "敌对/冲突",
+     "color": "#8C2A2A",
+     "dash": "4 4"
+    },
+    {
+     "k": "mentor",
+     "name": "矫正/受托",
+     "color": "#5A3A6E",
+     "dash": null
+    },
+    {
+     "k": "commission",
+     "name": "委托",
+     "color": "#2E7D8F",
+     "dash": "2 4"
+    }
+   ]
   }
  },
  "corridors": [
@@ -17776,6 +20728,97 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 12
+   },
+   {
+    "id": "F307",
+    "scene": "novel_fandao_3",
+    "subject": "person:xie_xilan",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "G407",
+    "scene": "novel_fandao_4",
+    "subject": "person:ai_zhe",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "H507",
+    "scene": "novel_fandao_5",
+    "subject": "person:he_xinran",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "I607",
+    "scene": "novel_fandao_6",
+    "subject": "person:situ_rui",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "J707",
+    "scene": "novel_fandao_7",
+    "subject": "person:mu_qing",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "K807",
+    "scene": "novel_fandao_8",
+    "subject": "person:bao_bao",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "L907",
+    "scene": "novel_fandao_9",
+    "subject": "person:jiang_ronghua",
+    "title": "待逐章结构化各副本的深层情节与人物关系。",
+    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "where": "data/novel_to_map_try 各副本对应章节",
+    "skills": "文本抽取 / 熟悉网文叙事",
+    "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
    },
    {
     "id": "A092",

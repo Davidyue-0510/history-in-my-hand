@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "id": "novel_text",
+      "title": "反派他爸教做人·爱情至上的女儿",
+      "party": "作者叙述"
+    },
+    {
+      "id": "system_setting",
+      "title": "快穿系统设定",
+      "party": "系统任务"
+    },
+    {
+      "id": "mu_fu_view",
+      "title": "慕父自述",
+      "party": "慕父自述"
+    },
+    {
+      "id": "yeweian_view",
+      "title": "叶为安视角",
+      "party": "叶为安视角"
+    }
+  ]
+}

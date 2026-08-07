@@ -1,0 +1,14 @@
+{
+  "places": [
+    {
+      "id": "hejiacun",
+      "name": "何家村",
+      "fictional": true
+    },
+    {
+      "id": "chengshi",
+      "name": "京市",
+      "fictional": true
+    }
+  ]
+}

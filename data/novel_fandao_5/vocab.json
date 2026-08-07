@@ -1,0 +1,58 @@
+{
+  "parties": [
+    "作者叙述",
+    "系统任务",
+    "何父自述",
+    "叶为安视角"
+  ],
+  "party_bucket": {
+    "作者叙述": "作者叙述",
+    "系统任务": "系统任务",
+    "何父自述": "何父自述",
+    "叶为安视角": "叶为安视角"
+  },
+  "edge_types": [
+    {
+      "k": "parent_child",
+      "name": "亲子",
+      "color": "#7A7466",
+      "dash": "2 3"
+    },
+    {
+      "k": "spouse",
+      "name": "夫妻/婚约",
+      "color": "#C77B30",
+      "dash": "7 4"
+    },
+    {
+      "k": "family",
+      "name": "血亲",
+      "color": "#3E8E6E",
+      "dash": null
+    },
+    {
+      "k": "romance",
+      "name": "情感",
+      "color": "#B23A48",
+      "dash": "4 4"
+    },
+    {
+      "k": "enemy",
+      "name": "敌对/冲突",
+      "color": "#8C2A2A",
+      "dash": "4 4"
+    },
+    {
+      "k": "mentor",
+      "name": "矫正/受托",
+      "color": "#5A3A6E",
+      "dash": null
+    },
+    {
+      "k": "commission",
+      "name": "委托",
+      "color": "#2E7D8F",
+      "dash": "2 4"
+    }
+  ]
+}

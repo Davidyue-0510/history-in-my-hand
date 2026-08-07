@@ -1,13 +1,13 @@
 {
   "edges": [
-    {"from": "yeweian", "to": "system_setting", "rel": "受托于（快穿系统委托）"},
-    {"from": "yeweian", "to": "yu_guoqiang", "rel": "附身/接父亲委托"},
-    {"from": "yu_guoqiang", "to": "tang_aili", "rel": "施暴（追打致其离家）"},
-    {"from": "yu_guoqiang", "to": "yu_jinbao", "rel": "父子"},
-    {"from": "yu_jinbao", "to": "yu_guoqiang", "rel": "继承家暴作风"},
-    {"from": "tang_aili", "to": "yu_jinbao", "rel": "母子"},
-    {"from": "yu_jinjin", "to": "yu_jinbao", "rel": "姐弟"},
-    {"from": "yu_jinyin", "to": "yu_jinbao", "rel": "姐弟"},
-    {"from": "yu_jinbao", "to": "li_weiwei", "rel": "夫妻（文中提及金宝妻厉薇薇）"}
+    {"from": "yeweian", "to": "system_setting", "rel": "受托于（快穿系统委托）", "type": "commission"},
+    {"from": "yeweian", "to": "yu_guoqiang", "rel": "附身/接父亲委托", "type": "mentor"},
+    {"from": "yu_guoqiang", "to": "tang_aili", "rel": "施暴（追打致其离家）", "type": "enemy"},
+    {"from": "yu_guoqiang", "to": "yu_jinbao", "rel": "父子", "type": "parent_child"},
+    {"from": "yu_jinbao", "to": "yu_guoqiang", "rel": "继承家暴作风", "type": "enemy"},
+    {"from": "tang_aili", "to": "yu_jinbao", "rel": "母子", "type": "parent_child"},
+    {"from": "yu_jinjin", "to": "yu_jinbao", "rel": "姐弟", "type": "family"},
+    {"from": "yu_jinyin", "to": "yu_jinbao", "rel": "姐弟", "type": "family"},
+    {"from": "yu_jinbao", "to": "li_weiwei", "rel": "夫妻（文中提及金宝妻厉薇薇）", "type": "spouse"}
   ]
 }
