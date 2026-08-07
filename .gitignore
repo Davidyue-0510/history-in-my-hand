@@ -11,6 +11,9 @@ tools/__pycache__/
 # 开发期截图（非必要产物，体积大）
 demo/screenshots/
 
+# 发圈/分享用概念图（本地素材，二进制不入库）
+share-images/
+
 # OS
 .DS_Store
 Thumbs.db
