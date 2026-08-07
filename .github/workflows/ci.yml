@@ -1,0 +1,19 @@
+name: Gates
+# 四道闸门（lint + 不变量 test + 重算 leads + 重编译 data.js）在每次 push / PR 自动跑。
+# 非技术贡献者（数字人文 / 美工）不需要本地装 Python——开 PR 后这里会给出红/绿，
+# 相当于把维护者从「人工守门员」里解放出来。
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run gates (lint + test + leads + build)
+        run: python tools/gates.py --strict
