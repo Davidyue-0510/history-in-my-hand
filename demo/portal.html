@@ -59,7 +59,7 @@
   .prin .card p{margin:0;color:var(--ink2);font-size:15px}
 
   /* roles */
-  .roles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .roles{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
   .role{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:0;overflow:hidden;
     display:flex;flex-direction:column;transition:.15s}
   .role:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
@@ -252,8 +252,8 @@
 
 <section>
   <div class="wrap">
-    <h2>三种合作者，三种入口</h2>
-    <p class="sec-sub">这个版本就是为你拉人入局准备的。下面三类人各有一张上手地图——该碰哪些文件、第一个能交的活是什么、难度几颗星。完整指引见 <a href="../CONTRIBUTORS.md">CONTRIBUTORS.md</a>。</p>
+    <h2>四类合作者，四种入口</h2>
+    <p class="sec-sub">辽东明清只是第一个参考实现——项目真正要做的是「全时段全地域 + 任意文字生成一个世界 + 世界自由演化」。下面四类人各有一张上手地图。完整招募手册见 <a href="../COLLABORATE.md">COLLABORATE.md</a>，技术蓝图见 <a href="../docs/02-北极星与架构演进.md">北极星与架构演进</a>。</p>
     <div class="roles">
 
       <div class="role">
@@ -273,16 +273,16 @@
 
       <div class="role">
         <div class="top">
-          <div class="emoji">⚙️</div>
-          <h3>程序优化评估</h3>
-          <span class="tag">架构 · 性能</span>
+          <div class="emoji">🧠</div>
+          <h3>程序 / NLP · 抽取管线</h3>
+          <span class="tag">关键 · 工程</span>
         </div>
         <div class="body">
-          <div class="blk"><div class="h">你能贡献什么</div><div class="c">审视 <code>tools/*.py</code> 编译链与 <code>county.js</code> 前端引擎，给出重构/性能/可维护性评估，不必亲自写。</div></div>
-          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/build.py</code> · <code>tools/lint.py</code> · <code>tools/resonance.py</code> · <code>demo/county.js</code></div></div>
-          <div class="blk"><div class="h">第一个上手任务</div><div class="c">写一份「十四切片加载时长 & 单文件体积」基准报告，指出最该先优化的 1–2 处。</div></div>
-          <span class="diff mid">难度 ★★☆</span>
-          <a class="more" href="../CONTRIBUTORS.md#eng">详细指引 →</a>
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">把"文本 → 结构化世界模型"做出来（ingestion 抽取层），让导入史料 / 小说即自动呈现。这是通用系统的关键工程。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/ingest.py</code>（待建） · <code>tools/ingest_prompt.md</code> · <code>docs/03-通用世界模型-schema.md</code></div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">拿一段现成文本，做出最小抽取原型，产物能直接过 <code>gates.py --strict</code>。</div></div>
+          <span class="diff mid">难度 ★★★</span>
+          <a class="more" href="../COLLABORATE.md#c">详细指引 →</a>
         </div>
       </div>
 
@@ -298,6 +298,21 @@
           <div class="blk"><div class="h">第一个上手任务</div><div class="c">认领下方任一条线索（如「铁岭陷落兵数详考」），补 1–3 条带出处的断言，跑通工具链。</div></div>
           <span class="diff mid">难度 ★★☆</span>
           <a class="more" href="../CONTRIBUTORS.md#dh">详细指引 →</a>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="top">
+          <div class="emoji">🌐</div>
+          <h3>模拟引擎方向</h3>
+          <span class="tag">未来 · 物色中</span>
+        </div>
+        <div class="body">
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">轻量规则 + LLM 推演的"世界演化 / 反事实分叉"最小可用原型。历史假设（某节点另选则走向如何）也靠它。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>docs/03-通用世界模型-schema.md</code> §6 <code>sim_config.json</code></div></div>
+          <div class="blk"><div class="h">现在的状态</div><div class="c">先建立联系、保持关注；等时间线分支模型（M5）就绪再正式拉。</div></div>
+          <span class="diff easy">难度 待定</span>
+          <a class="more" href="../COLLABORATE.md#d">详细指引 →</a>
         </div>
       </div>
 
