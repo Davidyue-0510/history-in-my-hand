@@ -1,11 +1,49 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/sarhu/、data/kaiyuan/、data/tieling/、data/liaoyang/
+// 权威数据源：data/scenes.json 注册的 9 个切片
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene (sarhu-1619 + kaiyuan / tieling / liaoyang county)",
-  "note": "演示切片。所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
+  "slice": "multi-scene · 9 个切片",
+  "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
  },
+ "regions": [
+  {
+   "id": "liaobei",
+   "name": "辽北",
+   "note": "开原—铁岭—叶赫一线, 明辽东都司北界, 万历末最先崩塌的一段。"
+  },
+  {
+   "id": "liaodong",
+   "name": "辽东",
+   "note": "沈阳—辽阳—抚顺, 都司治所与东向诸关, 1618—1621 三年之内易手。"
+  },
+  {
+   "id": "liaonan",
+   "name": "辽南",
+   "note": "海州—盖州—复州—金州, 辽东半岛纵深, 1621 年后成为明军海上反攻的支点。"
+  },
+  {
+   "id": "liaoxi",
+   "name": "辽西",
+   "note": "广宁—义州—锦州—宁远, 辽西走廊, 明清对峙二十余年的正面。"
+  },
+  {
+   "id": "jianzhou",
+   "name": "关外女真",
+   "note": "赫图阿拉与扈伦四部。这里没有明朝的县, 但有明朝的敕书、马市与羁縻——把它们排除在外, 辽东就只剩一半。"
+  }
+ ],
+ "scene_order": [
+  "sarhu",
+  "kaiyuan",
+  "tieling",
+  "yehe",
+  "liaoyang",
+  "shenyang",
+  "fushun",
+  "haizhou",
+  "gaizhou"
+ ],
  "vocab": {
   "parties": [
    "明方",
@@ -6795,11 +6833,15 @@ window.SANDBOX_DATA = {
   "sarhu": {
    "meta": {
     "kind": "battle",
+    "region": "liaodong",
     "title": "萨尔浒之战",
     "dossier_label": "萨尔浒之战",
     "subtitle": "万历四十七年二月—三月 · 天命四年",
     "primary_place": "hetuala",
-    "dossier_event": "event:sarhu"
+    "dossier_event": "event:sarhu",
+    "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
+    "page": "sarhu.html",
+    "key": "sarhu"
    },
    "sources": [
     {
@@ -7978,6 +8020,15 @@ window.SANDBOX_DATA = {
      "confidence": 0.0,
      "scale": "province",
      "note": "史料缺口标记。这类条目不提供信息，只指出信息在哪里缺失——它们是众包录入最该优先攻克的目标。",
+     "lead": {
+      "where": "《明神宗实录》万历四十七年萨尔浒出师敕谕与兵部题覆; 《武备志》茅元仪(车营/火器编制); 《明经世文编》相关奏疏; 朝鲜《栅中日录》记西路军装备。",
+      "skills": [
+       "军事史",
+       "古文"
+      ],
+      "accept": "给出杜松西路军车营与火器的可能编制区间(参照同期车营成例), 说明「无直接记录」的原因(战殁无幸存详报、败军无勘状), 而非断言「无火器」。",
+      "effort": "2-3 周"
+     },
      "_party": "学界"
     },
     {
@@ -8380,90 +8431,6 @@ window.SANDBOX_DATA = {
      }
     }
    ],
-   "timeline": [
-    {
-     "at": "1619-04-11",
-     "era": "万历四十七年二月廿七",
-     "label": "四路陆续出发",
-     "key": false
-    },
-    {
-     "at": "1619-04-12",
-     "era": "万历四十七年二月廿八",
-     "label": "杜松抵抚顺",
-     "key": false
-    },
-    {
-     "at": "1619-04-13",
-     "era": "万历四十七年二月廿九",
-     "label": "杜松出关抢进，四路失去协同",
-     "key": true
-    },
-    {
-     "at": "1619-04-14",
-     "era": "万历四十七年三月初一",
-     "label": "萨尔浒 · 吉林崖 — 西路覆没",
-     "key": true
-    },
-    {
-     "at": "1619-04-15",
-     "era": "万历四十七年三月初二",
-     "label": "尚间崖 · 斐芬山 — 北路溃散",
-     "key": true
-    },
-    {
-     "at": "1619-04-16",
-     "era": "万历四十七年三月初三",
-     "label": "后金回师休整，东路仍在深入",
-     "key": false
-    },
-    {
-     "at": "1619-04-17",
-     "era": "万历四十七年三月初四",
-     "label": "阿布达里岗 · 富察 — 东路覆没，朝鲜军降",
-     "key": true
-    },
-    {
-     "at": "1619-04-18",
-     "era": "万历四十七年三月初五",
-     "label": "南路奉檄撤退，战事终结",
-     "key": true
-    }
-   ],
-   "columns": [
-    {
-     "id": "west",
-     "name": "西路",
-     "commander": "dusong",
-     "from": "shenyang",
-     "gate": "fushunguan",
-     "color": "#C0392B"
-    },
-    {
-     "id": "north",
-     "name": "北路",
-     "commander": "malin",
-     "from": "kaiyuan",
-     "gate": "sanchaer",
-     "color": "#B7791F"
-    },
-    {
-     "id": "east",
-     "name": "东路",
-     "commander": "liuting",
-     "from": "kuandian",
-     "gate": "liangmadian",
-     "color": "#2E7D8F"
-    },
-    {
-     "id": "south",
-     "name": "南路",
-     "commander": "liruobai",
-     "from": "qinghe",
-     "gate": "yahuguan",
-     "color": "#6B7280"
-    }
-   ],
    "engagements": [
     {
      "id": "eng_sarhu_camp",
@@ -8719,6 +8686,90 @@ window.SANDBOX_DATA = {
      "subject": "event:south_retreat"
     }
    ],
+   "timeline": [
+    {
+     "at": "1619-04-11",
+     "era": "万历四十七年二月廿七",
+     "label": "四路陆续出发",
+     "key": false
+    },
+    {
+     "at": "1619-04-12",
+     "era": "万历四十七年二月廿八",
+     "label": "杜松抵抚顺",
+     "key": false
+    },
+    {
+     "at": "1619-04-13",
+     "era": "万历四十七年二月廿九",
+     "label": "杜松出关抢进，四路失去协同",
+     "key": true
+    },
+    {
+     "at": "1619-04-14",
+     "era": "万历四十七年三月初一",
+     "label": "萨尔浒 · 吉林崖 — 西路覆没",
+     "key": true
+    },
+    {
+     "at": "1619-04-15",
+     "era": "万历四十七年三月初二",
+     "label": "尚间崖 · 斐芬山 — 北路溃散",
+     "key": true
+    },
+    {
+     "at": "1619-04-16",
+     "era": "万历四十七年三月初三",
+     "label": "后金回师休整，东路仍在深入",
+     "key": false
+    },
+    {
+     "at": "1619-04-17",
+     "era": "万历四十七年三月初四",
+     "label": "阿布达里岗 · 富察 — 东路覆没，朝鲜军降",
+     "key": true
+    },
+    {
+     "at": "1619-04-18",
+     "era": "万历四十七年三月初五",
+     "label": "南路奉檄撤退，战事终结",
+     "key": true
+    }
+   ],
+   "columns": [
+    {
+     "id": "west",
+     "name": "西路",
+     "commander": "dusong",
+     "from": "shenyang",
+     "gate": "fushunguan",
+     "color": "#C0392B"
+    },
+    {
+     "id": "north",
+     "name": "北路",
+     "commander": "malin",
+     "from": "kaiyuan",
+     "gate": "sanchaer",
+     "color": "#B7791F"
+    },
+    {
+     "id": "east",
+     "name": "东路",
+     "commander": "liuting",
+     "from": "kuandian",
+     "gate": "liangmadian",
+     "color": "#2E7D8F"
+    },
+    {
+     "id": "south",
+     "name": "南路",
+     "commander": "liruobai",
+     "from": "qinghe",
+     "gate": "yahuguan",
+     "color": "#6B7280"
+    }
+   ],
    "attrition": {
     "_comment": "逐次损耗。『优势逐渐累积』这句话要成立，必须能画出双方可用兵力随时间的交叉点。",
     "ming": [
@@ -8787,6 +8838,8 @@ window.SANDBOX_DATA = {
     "marching": 0.85,
     "exhausted": 0.7
    },
+   "events": [],
+   "edges": [],
    "route_terrain": [
     {
      "route": "route_west",
@@ -9633,11 +9686,31 @@ window.SANDBOX_DATA = {
   "kaiyuan": {
    "meta": {
     "kind": "county",
+    "region": "liaobei",
     "title": "开原",
     "dossier_label": "开原",
     "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落",
     "primary_place": "kaiyuan_cheng",
-    "dossier_event": "event:kaifa"
+    "dossier_event": "event:kaifa",
+    "back": "枢纽",
+    "lead": "开原是辽北第一重镇：明三万卫—清开原县，万历四十七年（1619）陷于后金，叶赫随之灭亡。下方为建置沿革与关键战事，点时间轴或左栏跳转。",
+    "parties_note": "开原陷落（1619）在明、清、朝鲜三方叙事中各有侧重。系统不裁决，只并列。",
+    "route_assertions": [
+     "K008",
+     "K009",
+     "K020",
+     "K027e"
+    ],
+    "subject_names": {
+     "army:jin_kaifa": "后金攻开原兵力",
+     "event:kaifa": "开铁之战",
+     "place:kaiyuan_cheng": "开原城",
+     "person:zhengzhifan": "郑之范",
+     "event:yehe": "叶赫",
+     "doc:kaiyuan_tushuo": "开原图说"
+    },
+    "page": "county.html?scene=kaiyuan",
+    "key": "kaiyuan"
    },
    "sources": [
     {
@@ -10355,6 +10428,16 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "胜方史料几乎不记己方屠戮，此数字本质是『对方叙事』，须标注其来源偏向。",
+     "lead": {
+      "where": "《明神宗实录》万历四十七年萨尔浒后叙功/勘状卷；《清太祖实录》天命四年对应月卷(查其是否回避);朝鲜《李朝实录》光海君日记(若闻辽东屠戮);地方志《开原县志》光绪/宣统本「兵燹」门。",
+      "skills": [
+       "古文",
+       "统计",
+       "朝语"
+      ],
+      "accept": "给出「十余万」说法的最早出处与引用链条, 并对照清方是否回避; 若数字本身不可考, 给出可信区间与原因, 并明确标注这是「对方叙事」而非中立计数。",
+      "effort": "2-3 周"
+     },
      "_party": "清修官史"
     },
     {
@@ -10659,6 +10742,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "此源已在 sources.json 登记但无任何断言引用它。与其编一条来源可疑的记载来充数，不如把『登记了但没读到原文』本身作为缺口挂出来——这正是本项目把缺口当一等公民的用法。",
+     "lead": {
+      "where": "《开原县志》(宣统纂修, 清末)「万历四十六年东夷入犯」条; 《中国地方志联合目录》查馆藏(辽宁省图书馆/中科院文献情报中心); 辽海丛书影印本若已收。",
+      "skills": [
+       "方志学",
+       "古文"
+      ],
+      "accept": "录入该条原文(影印或点校), 注明藏本与卷页; 评估其对「次年速陷」解释力的增量——即 1618 已入犯、1619 才正式破城之间的时间差意味着什么。",
+      "effort": "1-2 周"
+     },
      "_party": "清·地方志"
     }
    ],
@@ -11010,12 +11102,28 @@ window.SANDBOX_DATA = {
   "tieling": {
    "meta": {
     "kind": "county",
+    "region": "liaobei",
     "title": "铁岭",
     "dossier_label": "铁岭",
     "subtitle": "李成梁故里 · 辽东锁钥 · 万历四十七年陷落",
     "primary_place": "tieling_cheng",
     "dossier_event": "event:tieling_fall",
-    "back": "萨尔浒"
+    "back": "枢纽",
+    "lead": "铁岭是辽东锁钥：李成梁故里，明九边之首卫所；万历四十七年（1619）随开原同年陷落，李氏家族百年经营的防线就此终结。下方为建置沿革与关键事件。",
+    "parties_note": "铁岭陷落（1619）与李成梁功过，在明、清、现代综述中各有侧重。系统不裁决，只并列。",
+    "subject_names": {
+     "event:tieling_fall": "铁岭陷落",
+     "event:kuanbian_abandon": "弃宽甸六堡",
+     "event:sarhu": "萨尔浒之战",
+     "place:tieling_cheng": "铁岭城",
+     "person:li_chengliang": "李成梁",
+     "person:li_ruzhui": "李如柏",
+     "person:wang_gao": "王杲",
+     "person:yanghao": "杨镐",
+     "person:xiongtingbing": "熊廷弼"
+    },
+    "page": "county.html?scene=tieling",
+    "key": "tieling"
    },
    "sources": [
     {
@@ -11514,6 +11622,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "缺口: 铁岭陷落时双方具体兵力伤亡数字, 清实录未明载, 仅有『万骑』出入。",
+     "lead": {
+      "where": "《明神宗实录》万历四十七年铁岭失事勘状; 《清太祖实录》天命四年「克铁岭」条; 明方辽东巡按/总督勘报; 《满文老档》相应月档。",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出双方兵力与伤亡区间, 澄清「万骑」的口径(是否为后金总动员而非攻铁岭专属兵力), 并说明明方奏报无细目的制度原因。",
+      "effort": "2 周"
+     },
      "_party": "清修官史"
     },
     {
@@ -11530,6 +11647,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "缺口: 李成梁为朝鲜族裔, 朝鲜实录对铁岭陷落是否有针对记载, 待核查。",
+     "lead": {
+      "where": "朝鲜《李朝实录》光海君日记 万历四十七年; 《朝鲜宣祖/光海君实录》中李成梁相关记事; 《燃藜室记述》。",
+      "skills": [
+       "朝语",
+       "古文"
+      ],
+      "accept": "确认朝鲜实录是否对铁岭(李成梁起家地)陷落有专条, 录入其评价与情绪基调, 评估「朝鲜族裔将领故地」是否影响朝方叙事权重。",
+      "effort": "1-2 周"
+     },
      "_party": "学界"
     },
     {
@@ -11725,15 +11851,438 @@ window.SANDBOX_DATA = {
     }
    ]
   },
+  "yehe": {
+   "meta": {
+    "kind": "county",
+    "region": "jianzhou",
+    "title": "叶赫",
+    "dossier_label": "叶赫",
+    "subtitle": "扈伦四部之一 · 叶赫东城西城 · 1619 年亡于建州",
+    "primary_place": "xiyehe",
+    "dossier_event": "event:yehe_fall",
+    "back": "枢纽",
+    "lead": "叶赫是扈伦四部中势力最强的一部, 明廷敕封叶赫贝勒为都督以羁縻制衡建州。万历四十七年 (1619) 萨尔浒战后, 叶赫东城西城俱破, 布寨战死, 布扬古降, 叶赫亡。",
+    "parties_note": "叶赫之亡标志着明廷羁縻体系的崩溃。叶赫起源 (蒙古/海西) 之争是 record_vs_scholarship 典型。",
+    "subject_names": {
+     "event:yehe_founded": "叶赫建国",
+     "event:yehe_kaiyuan_attack": "叶赫攻开原",
+     "event:yehe_fall": "叶赫亡",
+     "place:xiyehe": "叶赫西城",
+     "place:dongyehe": "叶赫东城",
+     "person:ciyehala": "清佳砮",
+     "person:bucai": "布寨",
+     "person:buyanggu": "布扬古",
+     "person:nuerhaci": "努尔哈赤"
+    },
+    "page": "county.html?scene=yehe",
+    "key": "yehe"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_shenzong_shilu",
+     "title": "明神宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "万历朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "manzhou_shilu",
+     "title": "满洲实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修·图绘本",
+     "distance_label": "原档 1781 绘写，距事件约 170 年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "清初",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "qingshigao",
+     "title": "清史稿",
+     "party": "清修官史",
+     "stance_label": "民国未定稿·清方立场",
+     "distance_label": "成书 1928，距事件约 300 年",
+     "color": "#7B5C3E",
+     "compiler": "赵尔巽等",
+     "period": "清末/民国",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "rimsangrok",
+     "title": "栅中日录",
+     "party": "朝鲜·亲历",
+     "stance_label": "被俘逃回·亲历",
+     "distance_label": "1621 写成，距沈阳陷落当年",
+     "color": "#3F6F95",
+     "compiler": "李民寏",
+     "period": "天启元年",
+     "stance": "witness_exile"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "xiyehe",
+     "name": "叶赫西城",
+     "lon": 124.41,
+     "lat": 43.1,
+     "type": "capital",
+     "modern": "吉林四平市梨树县东南",
+     "note": "叶赫西城, 布扬古贝勒驻, 在地形网格外",
+     "elev": 197
+    },
+    {
+     "id": "dongyehe",
+     "name": "叶赫东城",
+     "lon": 124.61,
+     "lat": 43.12,
+     "type": "capital",
+     "modern": "吉林四平市梨树县东南",
+     "note": "叶赫东城, 布寨贝勒驻, 在地形网格外",
+     "elev": 334
+    },
+    {
+     "id": "kaiyuan_cheng",
+     "name": "开原",
+     "lon": 124.04,
+     "lat": 42.55,
+     "type": "city",
+     "modern": "辽宁开原市",
+     "note": "明辽北重镇, 叶赫受其节制",
+     "elev": 85
+    },
+    {
+     "id": "hetuala",
+     "name": "赫图阿拉",
+     "lon": 124.85,
+     "lat": 41.89,
+     "type": "capital",
+     "modern": "辽宁新宾县老城村",
+     "note": "努尔哈赤起家之地, 建州根据地",
+     "elev": 586
+    },
+    {
+     "id": "sipingjie",
+     "name": "四平街",
+     "lon": 124.36,
+     "lat": 43.17,
+     "type": "city",
+     "modern": "吉林四平市",
+     "note": "叶赫活动区域, 在地形网格外",
+     "elev": 175
+    }
+   ],
+   "persons": [
+    {
+     "id": "ciyehala",
+     "name": "清佳砮",
+     "role": "叶赫部始祖",
+     "note": "16 世纪中期叶赫部始祖"
+    },
+    {
+     "id": "bucai",
+     "name": "布寨",
+     "role": "叶赫东城贝勒",
+     "note": "叶赫东城主, 万历四十七年 (1619) 萨尔浒之战中战死"
+    },
+    {
+     "id": "buyanggu",
+     "name": "布扬古",
+     "role": "叶赫西城贝勒",
+     "note": "叶赫西城主, 1619 年八月城破降"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "建州大汗",
+     "note": "万历三十一年起五伐叶赫, 1619 年灭亡叶赫"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "Y001",
+     "subject": "event:yehe_founded",
+     "predicate": "叶赫部始祖",
+     "value_text": "叶赫始祖为蒙古人星根达尔汉, 16 世纪中期因居叶赫勒河得名",
+     "source": "qingshigao",
+     "layer": "record",
+     "era": "16 世纪中期",
+     "place": "xiyehe",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "叶赫始祖星根达尔汉, 蒙古人也, 居叶赫勒河, 因以为氏。",
+     "note": "学界对「蒙古人起源说」有争议 (也有认为是海西女真), 这是清史稿采信的说法。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "Y002",
+     "subject": "event:yehe_kaiyuan_attack",
+     "predicate": "叶赫攻开原",
+     "value_text": "万历十一年 (1583) 叶赫与建州争夺敕书, 叶赫兵攻开原城",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历十一年",
+     "place": "kaiyuan_cheng",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "十一年, 叶赫兵攻开原, 为官军所击, 退走。",
+     "note": "具体兵力与战果在《明神宗实录》有专条, 待核。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "Y003",
+     "subject": "event:yehe_fall",
+     "predicate": "灭亡",
+     "value_text": "万历四十七年八月, 萨尔浒战后, 努尔哈赤攻叶赫东城西城, 布寨战死, 布扬古降",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "万历四十七年八月",
+     "place": "xiyehe",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "万历四十七年八月, 上亲率大兵攻叶赫, 布寨战死, 布扬古率西城降。",
+     "note": "布扬古虽降, 但被努尔哈赤带走, 叶赫部由此彻底编入八旗。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "Y004",
+     "subject": "event:yehe_fall",
+     "predicate": "明廷应对",
+     "value_text": "叶赫亡时, 明朝辽东已无兵可救, 巡抚袁应泰束手",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历四十七年八月",
+     "place": "xiyehe",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "叶赫亡, 明廷不能救, 辽东自此门户洞开。",
+     "note": "「叶赫亡, 明失北蔽」成为后世史学对萨尔浒战后格局的定论。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "Y005",
+     "subject": "place:xiyehe",
+     "predicate": "叶赫起源蒙古人",
+     "value_text": "学界主流：叶赫与扈伦其他三部 (乌拉、辉发、哈达) 同为海西女真, 非蒙古",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "16 世纪中期",
+     "place": "xiyehe",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "叶赫为海西女真扈伦部之一, 与蒙古无关。",
+     "note": "清史稿采「蒙古起源说」, 现代学界主流否认此说, 这是 record_vs_scholarship 冲突。",
+     "_party": "学界"
+    },
+    {
+     "id": "Y010",
+     "subject": "place:xiyehe",
+     "predicate": "叶赫军事人口",
+     "value_text": "叶赫亡时, 叶赫总人口 (含东西二城) 与八旗编入人数的对应关系未明确",
+     "source": "qing_taizu_shilu",
+     "layer": "gap",
+     "era": "万历四十七年八月",
+     "place": "xiyehe",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《清太祖实录》天命四年八月 / 《满洲实录》/ 《八旗通志》叶赫部分 / 清初满文档案",
+      "skills": [
+       "满语",
+       "古文",
+       "统计"
+      ],
+      "accept": "给出叶赫亡时人口估计 (约 X 万) 与被编入八旗的具体牛录数, 注明出处",
+      "effort": "2-3 周"
+     },
+     "_party": "清修官史"
+    },
+    {
+     "id": "Y011",
+     "subject": "event:yehe_kaiyuan_attack",
+     "predicate": "叶赫开原之战的兵力",
+     "value_text": "万历十一年叶赫兵攻开原的具体兵力 (数千 / 数百) 与战果在三方史料中数字不一",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "万历十一年",
+     "place": "kaiyuan_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明神宗实录》万历十一年逐月 / 《清太祖实录》 (努尔哈赤早期记忆可能有数处) / 朝鲜《李朝实录》",
+      "skills": [
+       "古文"
+      ],
+      "accept": "整理至少两方史料对万历十一年叶赫—开原之战的兵力数字, 标注分歧",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "Y010",
+    "Y011"
+   ],
+   "events": [
+    {
+     "id": "yehe_founded",
+     "subject": "event:yehe_founded",
+     "year": 1550,
+     "era": "16 世纪中期",
+     "title": "叶赫部建国",
+     "kind": "建置",
+     "text": "叶赫始祖清佳砮始建于叶赫河畔, 因居叶赫勒河得名。"
+    },
+    {
+     "id": "yehe_kaiyuan_attack",
+     "subject": "event:yehe_kaiyuan_attack",
+     "year": 1583,
+     "era": "万历十一年",
+     "title": "叶赫攻开原",
+     "kind": "战事",
+     "text": "叶赫与建州争夺明朝敕书, 叶赫兵攻开原城下, 被明军击败。"
+    },
+    {
+     "id": "yehe_fall",
+     "subject": "event:yehe_fall",
+     "year": 1619,
+     "era": "万历四十七年八月",
+     "title": "叶赫亡",
+     "kind": "战事",
+     "text": "萨尔浒之战后, 努尔哈赤攻叶赫东城西城, 布寨战死, 布扬古降, 叶赫亡。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "xiyehe",
+     "to": "dongyehe",
+     "type": "tribe",
+     "label": "叶赫东西二城"
+    },
+    {
+     "from": "xiyehe",
+     "to": "hetuala",
+     "type": "mil",
+     "label": "叶赫—建州"
+    },
+    {
+     "from": "xiyehe",
+     "to": "kaiyuan_cheng",
+     "type": "mashi",
+     "label": "叶赫—开原马市"
+    },
+    {
+     "from": "dongyehe",
+     "to": "kaiyuan_cheng",
+     "type": "mashi",
+     "label": "叶赫东—开原马市"
+    }
+   ]
+  },
   "liaoyang": {
    "meta": {
     "kind": "county",
+    "region": "liaodong",
     "title": "辽阳",
     "dossier_label": "辽阳",
     "subtitle": "辽东都司治所 · 东京辽阳府 · 天启元年改运",
     "primary_place": "liaoyang_cheng",
     "dossier_event": "event:liaoyang_fall",
-    "back": "萨尔浒"
+    "back": "枢纽",
+    "lead": "辽阳是辽东第一城：唐安东都护府、辽东京辽阳府、金大定帝登基地、明辽东都司治所；天启元年（1621）后金攻占、迁都；四年后再迁沈阳。下方为两千年的建置沿革。",
+    "parties_note": "辽阳是王朝更迭的见证者：唐、辽、金、元、明、清、现代综述各有侧重；立场派生于 source.party。",
+    "subject_names": {
+     "event:liaoyang_fall": "辽阳陷落",
+     "event:hunhe_zhan": "浑河之战",
+     "event:timing": "迁都",
+     "place:liaoyang_cheng": "辽阳城",
+     "place:dongjing_cheng": "东京城",
+     "place:dongdan_gong": "东丹王宫",
+     "person:nuerhaci": "努尔哈赤",
+     "person:huangtaiji": "皇太极",
+     "person:yeluabuji": "耶律阿保机",
+     "person:yelubei": "耶律倍",
+     "person:wanyanyong": "完颜雍",
+     "person:yuan_yingtai": "袁应泰",
+     "person:ye_wang": "叶旺",
+     "person:ma_yun": "马云",
+     "person:chenjn": "陈策",
+     "person:tongzhongkui": "童仲揆"
+    },
+    "page": "county.html?scene=liaoyang",
+    "key": "liaoyang"
    },
    "sources": [
     {
@@ -12252,6 +12801,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "缺口: 朝鲜实录对辽阳陷落是否有针对记载, 待核查。",
+     "lead": {
+      "where": "朝鲜《李朝实录》光海君日记 天命六年(1621)条; 《栅中日录》李民寏(若其时仕辽); 《燃藜室记述》补证。",
+      "skills": [
+       "朝语",
+       "古文"
+      ],
+      "accept": "录入朝鲜方对辽阳陷落的记载与朝方反应(是否派使、是否哀悼明之失辽东), 标注与明/清记载的偏差与情绪基调。",
+      "effort": "1-2 周"
+     },
      "_party": "学界"
     },
     {
@@ -12268,6 +12826,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "缺口: 辽阳一战双方具体兵数伤亡, 待详考。",
+     "lead": {
+      "where": "《明熹宗实录》天启元年辽阳战事奏报; 《清太祖实录》天命六年辽阳攻防; 《满文老档》相应月档; 明方总兵(袁应泰/贺世贤)本传与塘报。",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出双方兵力与伤亡的区间估计, 标注口径差异(「兵」含不含有夫/辅兵/田卒), 并说明为何明清两方均无可交叉验证的细目。",
+      "effort": "2-3 周"
+     },
      "_party": "清修官史"
     },
     {
@@ -12299,6 +12866,15 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "保留此源的意义在于：读者可以在四层开关里单独打开『二手综述』，亲眼看到关掉它之后哪些结论会塌——这是对来源依赖度的可视化压力测试。",
+     "lead": {
+      "where": "中文/英文维基「辽阳之战」词条及其引用链; 比对其中一手/二手来源的可靠性标记。",
+      "skills": [
+       "数字人文",
+       "文献学"
+      ],
+      "accept": "把维基词条拆解为「哪些结论有独立一手支撑 / 哪些仅靠二手综述」, 输出一张溯源表, 供本项目「来源依赖度」压力测试(关掉二手综述哪些结论会塌)使用。",
+      "effort": "1 周"
+     },
      "_party": "二手综述"
     }
    ],
@@ -12497,7 +13073,2443 @@ window.SANDBOX_DATA = {
      "label": "太子河—东京城"
     }
    ]
+  },
+  "shenyang": {
+   "meta": {
+    "kind": "county",
+    "region": "liaodong",
+    "title": "沈阳",
+    "dossier_label": "沈阳",
+    "subtitle": "辽东锁钥 · 天启元年 (1621) 陷落 · 后金迁都于此",
+    "primary_place": "shenyang_cheng",
+    "dossier_event": "event:shenyang_relief",
+    "back": "枢纽",
+    "lead": "沈阳是辽东锁钥：洪武二十一年 (1388) 改元沈阳路为沈阳中卫, 一城三衙。天启元年 (1621) 三月袁应泰守沈阳城破自缢, 浑河之战陈策、童仲揆、姜弘立俱殁。后金天命十年 (1625) 自辽阳迁都于此, 改名盛京。",
+    "parties_note": "沈阳陷落在明、清、朝鲜三方叙事中各有侧重：明方强调袁应泰决策失误与浑河援军覆没, 清方强调「天祐」与神化努尔哈赤, 朝鲜史料 (尤其《栅中日录》) 提供了最接近现场的视角。",
+    "subject_names": {
+     "event:shenyang_founded": "沈阳中卫建置",
+     "event:shenyang_walls": "甃砖城垣",
+     "event:ice_walls": "以冰代水筑墙",
+     "event:shenyang_relief": "浑河之战 · 沈阳陷落",
+     "event:shenyang_jurchen_capital": "迁都沈阳",
+     "event:shenyang_qing_capital": "皇太极称帝",
+     "place:shenyang_cheng": "沈阳城",
+     "place:hunhe_bridge": "浑河浮桥",
+     "person:yuan_yingtai": "袁应泰",
+     "person:he_shixian": "何世贤",
+     "person:chenjn": "陈策",
+     "person:tongzhongkui": "童仲揆",
+     "person:zhangfaming": "张名世",
+     "person:nuerhaci": "努尔哈赤",
+     "person:huangtaiji": "皇太极",
+     "person:amin": "阿敏",
+     "person:goseong": "姜弘立"
+    },
+    "page": "county.html?scene=shenyang",
+    "key": "shenyang"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_shenzong_shilu",
+     "title": "明神宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "万历朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "manzhou_shilu",
+     "title": "满洲实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修·图绘本",
+     "distance_label": "原档 1781 绘写，距事件约 170 年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "清初",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "qingshigao",
+     "title": "清史稿",
+     "party": "清修官史",
+     "stance_label": "民国未定稿·清方立场",
+     "distance_label": "成书 1928，距事件约 300 年",
+     "color": "#7B5C3E",
+     "compiler": "赵尔巽等",
+     "period": "清末/民国",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "rimsangrok",
+     "title": "栅中日录",
+     "party": "朝鲜·亲历",
+     "stance_label": "被俘逃回·亲历",
+     "distance_label": "1621 写成，距沈阳陷落当年",
+     "color": "#3F6F95",
+     "compiler": "李民寏",
+     "period": "天启元年",
+     "stance": "witness_exile"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "shenyang_cheng",
+     "name": "沈阳城",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁省沈阳市沈河区",
+     "note": "元代沈阳路旧城, 洪武二十一年改沈阳中卫, 天启元年 (1621) 后金改称盛京, 崇德元年 (1636) 清迁都于此",
+     "elev": 50
+    },
+    {
+     "id": "shenyang_zhongwei",
+     "name": "沈阳中卫",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "wei",
+     "modern": "沈阳城内",
+     "note": "洪武二十一年置, 与中屯卫、抚顺千户所同城分治",
+     "elev": 50
+    },
+    {
+     "id": "hunhe_bridge",
+     "name": "浑河浮桥",
+     "lon": 123.42,
+     "lat": 41.79,
+     "type": "guan",
+     "modern": "沈阳市南浑河一带",
+     "note": "1621 年三月浑河之战主战场, 白塔铺南",
+     "elev": 47
+    },
+    {
+     "id": "baita_pu",
+     "name": "白塔铺",
+     "lon": 123.45,
+     "lat": 41.77,
+     "type": "guan",
+     "modern": "沈阳市南郊",
+     "note": "1621 年浑河之战后金截击阵地",
+     "elev": 45
+    },
+    {
+     "id": "liaoyang_cheng",
+     "name": "辽阳",
+     "lon": 123.18,
+     "lat": 41.28,
+     "type": "city",
+     "modern": "辽宁辽阳市",
+     "note": "明辽东都司治所, 沈阳西南 70 里",
+     "elev": 22
+    },
+    {
+     "id": "fushun",
+     "name": "抚顺",
+     "lon": 123.94,
+     "lat": 41.86,
+     "type": "guan",
+     "modern": "辽宁抚顺市",
+     "note": "沈阳东卫, 万历四十六年 (1618) 陷落",
+     "elev": 76
+    },
+    {
+     "id": "kaiyuan_cheng",
+     "name": "开原",
+     "lon": 124.04,
+     "lat": 42.55,
+     "type": "city",
+     "modern": "辽宁开原市",
+     "note": "明辽北重镇, 万历四十七年 (1619) 陷落",
+     "elev": 85
+    },
+    {
+     "id": "tieling_cheng",
+     "name": "铁岭",
+     "lon": 124.31,
+     "lat": 42.3,
+     "type": "city",
+     "modern": "辽宁铁岭市",
+     "note": "沈阳北卫, 万历四十七年 (1619) 陷落",
+     "elev": 238
+    },
+    {
+     "id": "guangning",
+     "name": "广宁",
+     "lon": 121.79,
+     "lat": 41.59,
+     "type": "city",
+     "modern": "辽宁北镇市",
+     "note": "明辽东总兵驻地, 在现地形网格外, 见辽西走廊",
+     "elev": 13
+    },
+    {
+     "id": "hetuala",
+     "name": "赫图阿拉",
+     "lon": 124.85,
+     "lat": 41.89,
+     "type": "capital",
+     "modern": "辽宁新宾县老城村",
+     "note": "努尔哈赤 1616 年建国都, 萨尔浒之战前明军主攻目标",
+     "elev": 586
+    },
+    {
+     "id": "sipingjie",
+     "name": "四平街",
+     "lon": 124.36,
+     "lat": 43.17,
+     "type": "city",
+     "modern": "吉林四平市",
+     "note": "叶赫活动区域, 在现地形网格外",
+     "elev": 175
+    },
+    {
+     "id": "dongyehe",
+     "name": "叶赫东城",
+     "lon": 124.61,
+     "lat": 43.12,
+     "type": "capital",
+     "modern": "吉林四平市梨树县东南",
+     "note": "叶赫东城, 布寨贝勒驻, 在现地形网格外",
+     "elev": 334
+    },
+    {
+     "id": "xiyehe",
+     "name": "叶赫西城",
+     "lon": 124.41,
+     "lat": 43.1,
+     "type": "capital",
+     "modern": "吉林四平市梨树县东南",
+     "note": "叶赫西城, 布扬古贝勒驻, 在现地形网格外",
+     "elev": 197
+    }
+   ],
+   "persons": [
+    {
+     "id": "yuan_yingtai",
+     "name": "袁应泰",
+     "alias": "袁自如",
+     "role": "辽东巡抚",
+     "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢"
+    },
+    {
+     "id": "he_shixian",
+     "name": "何世贤",
+     "role": "总兵",
+     "note": "沈阳总兵, 1621 年浑河之战后金炮击身亡"
+    },
+    {
+     "id": "chenjn",
+     "name": "陈策",
+     "role": "援辽总兵",
+     "note": "1621 年自辽阳驰援沈阳, 浑河桥头中炮死"
+    },
+    {
+     "id": "tongzhongkui",
+     "name": "童仲揆",
+     "role": "副总兵",
+     "note": "1621 年与陈策同援沈阳, 浑河之战战死"
+    },
+    {
+     "id": "zoushibiao",
+     "name": "邹式相",
+     "role": "兵备副使",
+     "note": "分巡辽东, 沈阳城破殉职"
+    },
+    {
+     "id": "zhangfaming",
+     "name": "张名世",
+     "role": "监军",
+     "note": "1621 年沈阳之战被俘, 不降, 旋被杀"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1616 年建后金, 1621 年三月取沈阳、辽阳"
+    },
+    {
+     "id": "huangtaiji",
+     "name": "皇太极",
+     "role": "后金四贝勒",
+     "note": "1621 年三月与二贝勒阿敏等围攻沈阳"
+    },
+    {
+     "id": "amin",
+     "name": "阿敏",
+     "role": "后金二贝勒",
+     "note": "舒尔哈齐之子, 1621 年攻沈阳北路"
+    },
+    {
+     "id": "goseong",
+     "name": "姜弘立",
+     "alias": "姜晔",
+     "role": "朝鲜都元帅",
+     "note": "1621 年应袁应泰请援, 率朝鲜兵万余援辽, 浑河之战大败被俘"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "S001",
+     "subject": "place:shenyang_cheng",
+     "predicate": "建置年",
+     "value_text": "洪武二十一年 (1388) 明廷改元沈阳路为沈阳中卫, 隶辽东都司, 一城三衙",
+     "source": "ming_taizu_shilu",
+     "layer": "record",
+     "era": "洪武二十一年",
+     "place": "shenyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
+     "note": "沈阳中卫与中屯卫、抚顺千户所同城分治, 一城三衙。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "S002",
+     "subject": "event:shenyang_walls",
+     "predicate": "城垣甃砖",
+     "value_text": "成化四年 (1468) 都指挥阚能以砖石甃砌沈阳中卫城垣, 周 9 里 10 步",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "成化四年",
+     "place": "shenyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "成化四年, 都指挥阚能甃砖城垣, 周九里十步。",
+     "note": "明代中后期沈阳城垣规模自此定型。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S003",
+     "subject": "event:ice_walls",
+     "predicate": "以冰代水",
+     "value_text": "因辽东严冬土地冻裂, 难以取土, 戍卒汲水冻成厚冰垒墙, 覆以草土",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "成化年间",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "辽东苦寒, 冬月土冻, 乃令戍卒汲水, 夜则冻成冰块, 晨起砌墙, 覆以草土。",
+     "note": "以冰筑墙是辽东诸卫 (开原、铁岭、沈阳) 共同做法, 不止沈阳一城。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S004",
+     "subject": "place:shenyang_cheng",
+     "predicate": "地控辽沈",
+     "value_text": "沈阳居辽东都司腹心, 北接铁岭开原, 南通辽阳海州, 西连广宁锦州",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "明代",
+     "place": "shenyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "沈阳居辽东之中, 北通开铁, 南接辽海, 西连广宁, 实为辽东锁钥。",
+     "note": "这是清史与明史都认同的「沈阳地控辽沈」定论, 但「沈阳锁钥」是后世评价, 明代不一定有此说法。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S005",
+     "subject": "event:shenyang_relief",
+     "predicate": "1621 攻陷日期",
+     "value_text": "天启元年三月十三日, 努尔哈赤亲率大军攻沈阳",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月十三日",
+     "place": "shenyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天启元年三月十三日, 后金兵薄沈阳城下, 巡抚袁应泰督诸军拒守。",
+     "note": "三日之内, 沈阳辽阳相继陷落。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "S006",
+     "subject": "event:shenyang_relief",
+     "predicate": "诱明军野战",
+     "value_text": "努尔哈赤以老弱之兵在城外耕作示弱, 精兵伏林间, 诱袁应泰出城野战",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "上令诸军佯为耕田状, 以诱明军, 而精骑伏林间。",
+     "note": "此为清方叙事; 学界有疑为事后附会的兵家叙事。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "S007",
+     "subject": "event:shenyang_relief",
+     "predicate": "袁应泰决策",
+     "value_text": "袁应泰原本主张坚守, 但最终下令开城门出战, 败于野战",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "应泰本议坚守, 然最后下令出战, 兵败, 城随破。",
+     "note": "现代史家多认为袁应泰「开关出战」是沈阳失陷的直接原因, 决策失误为关键。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S008",
+     "subject": "event:shenyang_relief",
+     "predicate": "陈策童仲揆援军",
+     "value_text": "陈策率浙兵, 童仲揆率川兵驰援, 自辽阳至沈阳一日夜赶到",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.92,
+     "quote_status": "paraphrase_unverified",
+     "quote": "陈策、童仲揆率浙川兵援沈阳, 城已破, 乃结阵浑河桥头。",
+     "note": "援军一日夜 70 里赶到浑河桥头, 与朝鲜援军会合。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "S009",
+     "subject": "event:shenyang_relief",
+     "predicate": "朝鲜援军",
+     "value_text": "朝鲜元帅姜弘立率 1.3 万人赴援, 浑河之战被俘",
+     "source": "rimsangrok",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "弘立率军至浑河桥头, 后金兵四面围合, 大败, 弘立被擒。",
+     "note": "李民寏《栅中日录》是亲历者记录, 是浑河之战最详史料之一。",
+     "_party": "朝鲜·亲历"
+    },
+    {
+     "id": "S010",
+     "subject": "event:shenyang_relief",
+     "predicate": "浑河之战明军损失",
+     "value_text": "陈策、童仲揆皆战死, 浙兵七千与朝鲜一万三千, 大部分死于此战",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "hunhe_bridge",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "陈策、童仲揆皆战死, 浙兵死者七千, 朝鲜军死者过半。",
+     "note": "此战是 1621 辽东战局的关键转折。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "S011",
+     "subject": "event:shenyang_relief",
+     "predicate": "袁应泰自缢",
+     "value_text": "沈阳城破, 袁应泰佩剑印自缢于官署",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "城破, 应泰佩剑印自缢于官署。",
+     "note": "袁应泰是萨尔浒战后继熊廷弼任辽东巡抚, 半年内辽东全失, 自缢以殉。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S012",
+     "subject": "event:shenyang_jurchen_capital",
+     "predicate": "努尔哈赤迁都",
+     "value_text": "天命十年 (1625) 三月, 努尔哈赤自辽阳迁都沈阳, 改名盛京",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天命十年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天命十年三月, 上自辽阳迁都沈阳, 改其名曰盛京。",
+     "note": "迁都沈阳而非辽阳, 反映后金军事战略中心北移。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "S013",
+     "subject": "event:shenyang_qing_capital",
+     "predicate": "皇太极称帝",
+     "value_text": "崇德元年 (1636) 皇太极于盛京 (沈阳) 即皇帝位, 改国号大清",
+     "source": "qingshigao",
+     "layer": "record",
+     "era": "崇德元年",
+     "place": "shenyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "崇德元年, 皇太极即位于盛京, 改国号为大清。",
+     "note": "盛京 (沈阳) 自此作为清初三京之一, 直至顺治入关迁都北京。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "S014",
+     "subject": "event:shenyang_relief",
+     "predicate": "战因评价",
+     "value_text": "学界主流：袁应泰决策失误 (开关出战、放宽军律) 是沈阳失陷主因",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "现代综述",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "袁应泰召募流民, 放宽军律, 看似仁政, 实削弱军队纪律, 是战败主因。",
+     "note": "清方《清太祖实录》将其神化为「天祐」, 与学界评价形成 record_vs_scholarship 冲突。",
+     "_party": "学界"
+    },
+    {
+     "id": "S015",
+     "subject": "event:shenyang_relief",
+     "predicate": "兵力对比 (清方)",
+     "value_text": "《清太祖实录》载努尔哈赤「率大军」攻沈阳, 但未记具体兵力",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "上自将诸贝勒, 大军攻沈阳。",
+     "note": "清实录对己方兵力常略而不书, 与明方数字差异极大。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "S016",
+     "subject": "event:shenyang_relief",
+     "predicate": "兵力对比 (明方)",
+     "value_text": "明熹宗实录载袁应泰集兵号称 13 万 (实际缺额甚多)",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "应泰集兵号称十三万, 然实缺额甚多, 不堪用。",
+     "note": "明方数字常「号称」, 实际编组可能仅半数。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "S017",
+     "subject": "place:shenyang_cheng",
+     "predicate": "弃守后状态",
+     "value_text": "沈阳陷后, 明方在辽河以西的广宁仍守, 1622 年广宁亦失",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "天启元年至二年",
+     "place": "shenyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "沈阳、辽阳既失, 广宁尚守, 至天启二年亦失。",
+     "note": "1621 三月之陷触发 1622 广宁之失, 是辽东全境丧失的连锁起点。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S018",
+     "subject": "person:goseong",
+     "predicate": "朝鲜援军统帅",
+     "value_text": "姜弘立率朝鲜都元帅府一万三千人援明, 浑河之战后被俘, 努尔哈赤待之厚",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "弘立率军至浑河, 大败, 弘立被擒, 努尔哈赤善待之。",
+     "note": "朝鲜对浑河之战的官方记载主要在《李朝实录》光海君日记。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "S019",
+     "subject": "event:shenyang_relief",
+     "predicate": "兵力对比冲突",
+     "value_text": "明方称集兵 13 万, 清方称明军降者 5103 员, 数字相差 25 倍",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "凡明兵降者, 得五千一百零三员。",
+     "note": "此为清实录对沈阳之战战果的夸张数字, 与明方数字相差 25 倍。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "S020",
+     "subject": "event:shenyang_relief",
+     "predicate": "人口迁出",
+     "value_text": "沈阳陷后, 城内百姓部分被迁至后金腹地, 部分逃往山东",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "天启元年三月起",
+     "place": "shenyang_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "沈阳陷后, 百姓被迁或逃散, 山东登州府收辽民甚多。",
+     "note": "此条说「我们不知道精确分流比例」更准确, 见 S021。",
+     "_party": "学界"
+    },
+    {
+     "id": "S021",
+     "subject": "place:shenyang_cheng",
+     "predicate": "1621 沈阳百姓命运",
+     "value_text": "1621 年沈阳陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天启元年三月起",
+     "place": "shenyang_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》天启元年三月卷 / 朝鲜《通文馆志》关于「辽民」渡江记录 / 1621-1625 年山东登州府接收辽民档案 / 满文档案中的辽民编旗记录",
+      "skills": [
+       "古文",
+       "满语",
+       "统计"
+      ],
+      "accept": "给出沈阳人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处与算法",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S022",
+     "subject": "event:ice_walls",
+     "predicate": "以冰筑墙的工程数据",
+     "value_text": "明代辽东诸卫以冰代水筑墙的工程数据 (墙厚 / 总长 / 用冰量) 在正史中无记载",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "成化至嘉靖",
+     "place": "shenyang_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《辽东志》嘉靖十六年刻本 (辽海丛书影印) / 《明宪宗实录》成化朝逐月 / 万历《辽东志》/ 辽东都司档案残卷",
+      "skills": [
+       "古文",
+       "工程史"
+      ],
+      "accept": "找到一处具体工程数据 (例如某卫城筑墙用了多少冰块、多少戍卒、工时几月)",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "S023",
+     "subject": "event:shenyang_relief",
+     "predicate": "浑河之战朝鲜军死亡数字",
+     "value_text": "朝鲜援军 1.3 万人, 死伤数字在明、清、朝鲜三方记载差异甚大 (5000 / 6000 / 7000 不等)",
+     "source": "chao_xiandai",
+     "layer": "gap",
+     "era": "天启元年三月",
+     "place": "hunhe_bridge",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》天启元年三月卷 / 《清太祖实录》天命六年三月 / 朝鲜《李朝实录》光海君日记 / 《栅中日录》李民寏",
+      "skills": [
+       "朝鲜语",
+       "古文",
+       "统计"
+      ],
+      "accept": "给出朝鲜军死亡数字的区间估计, 标注三方分歧与史料口径差异",
+      "effort": "1-2 周"
+     },
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "S024",
+     "subject": "event:shenyang_founded",
+     "predicate": "建置年份",
+     "value_text": "洪武二十一年 (1388) 明廷改元沈阳路为沈阳中卫, 一城三衙",
+     "source": "ming_taizu_shilu",
+     "layer": "record",
+     "era": "洪武二十一年",
+     "place": "shenyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
+     "note": "同 S001 的另一条叙事, 此处为事件主语。",
+     "_party": "明廷官方"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "S021",
+    "S022",
+    "S023"
+   ],
+   "events": [
+    {
+     "id": "shenyang_founded",
+     "subject": "event:shenyang_founded",
+     "year": 1388,
+     "era": "洪武二十一年",
+     "title": "沈阳中卫建置",
+     "kind": "建置",
+     "text": "明廷改元沈阳路为沈阳中卫, 隶辽东都司。沈阳中卫与中屯卫、抚顺千户所同城分治, 一城三衙, 各有军政。"
+    },
+    {
+     "id": "shenyang_walls",
+     "subject": "event:shenyang_walls",
+     "year": 1468,
+     "era": "成化四年",
+     "title": "甃砖城垣",
+     "kind": "建置",
+     "text": "都指挥阚能以砖石甃砌沈阳中卫城垣, 周 9 里 10 步, 城门 4。城垣规模自此定型, 此后两百年间仅小修补。"
+    },
+    {
+     "id": "ice_walls",
+     "subject": "event:ice_walls",
+     "year": 1468,
+     "era": "成化四年",
+     "title": "以冰代水筑墙",
+     "kind": "建置",
+     "text": "因辽东严冬土地冻裂, 难以取土筑墙。乃令戍卒汲水于壕, 夜间冻成厚冰, 晨起切割成方块, 垒为墙体, 再覆以草土。"
+    },
+    {
+     "id": "shenyang_relief",
+     "subject": "event:shenyang_relief",
+     "year": 1621,
+     "era": "天启元年三月",
+     "title": "浑河之战 · 沈阳陷落",
+     "kind": "战事",
+     "text": "后金努尔哈赤计诱沈阳守军, 沈阳陷。袁应泰自缢, 浑河桥头陈策、童仲揆战死, 朝鲜元帅姜弘立被俘。详见三方史料并列。"
+    },
+    {
+     "id": "shenyang_jurchen_capital",
+     "subject": "event:shenyang_jurchen_capital",
+     "year": 1625,
+     "era": "天命十年",
+     "title": "迁都沈阳",
+     "kind": "迁都",
+     "text": "天命十年三月, 努尔哈赤自辽阳迁都沈阳, 改称盛京。理由有二: 一控扼辽沈要冲, 二避开辽东明军水师炮火。"
+    },
+    {
+     "id": "shenyang_qing_capital",
+     "subject": "event:shenyang_qing_capital",
+     "year": 1636,
+     "era": "崇德元年",
+     "title": "皇太极称帝 · 盛京定鼎",
+     "kind": "迁都",
+     "text": "皇太极于盛京 (沈阳) 即皇帝位, 改国号为大清。盛京自此作为清初三京之一 (盛京、北京、东京), 直至顺治元年 (1644) 入关迁都北京。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "shenyang_cheng",
+     "to": "liaoyang_cheng",
+     "type": "admin",
+     "label": "辽东都司治所"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "tieling_cheng",
+     "type": "admin",
+     "label": "沈阳—铁岭驿道"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "kaiyuan_cheng",
+     "type": "admin",
+     "label": "辽北驿道"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "fushun",
+     "type": "mil",
+     "label": "沈阳—抚顺防线"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "hunhe_bridge",
+     "type": "mil",
+     "label": "浑河阻击"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "hetuala",
+     "type": "mil",
+     "label": "东向 · 萨尔浒方向"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "xiyehe",
+     "type": "mil",
+     "label": "北向 · 叶赫方向"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "baita_pu",
+     "type": "mil",
+     "label": "南向 · 浑河之战截击"
+    }
+   ]
+  },
+  "fushun": {
+   "meta": {
+    "kind": "county",
+    "region": "liaodong",
+    "title": "抚顺",
+    "dossier_label": "抚顺",
+    "subtitle": "沈阳东卫 · 万历四十六年 (1618) 陷落 · 七大恨告天",
+    "primary_place": "fushun",
+    "dossier_event": "event:fushun_fall",
+    "back": "枢纽",
+    "lead": "抚顺是明朝羁縻建州女真的前沿：抚顺关马市是努尔哈赤积累经济与情报的窗口, 也是「七大恨」告天的起点。万历四十六年 (1618) 抚顺陷落, 三年后辽沈尽失。",
+    "parties_note": "抚顺之陷标志着明辽东马市羁縻体系的终结。明方强调李永芳降后金的「叛将效应」, 清方将其神化为「天祐」, 学界争论焦点是马市在努尔哈赤崛起中的作用。",
+    "subject_names": {
+     "event:fushun_founded": "抚顺千户所建置",
+     "event:fushun_mashi": "抚顺关马市",
+     "event:fushun_fall": "抚顺陷落",
+     "place:fushun": "抚顺城",
+     "place:fushunguan": "抚顺关",
+     "person:li_chengliang": "李成梁",
+     "person:li_rubai": "李如柏",
+     "person:nuerhaci": "努尔哈赤",
+     "person:li_yongfang": "李永芳"
+    },
+    "page": "county.html?scene=fushun",
+    "key": "fushun"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_shenzong_shilu",
+     "title": "明神宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "万历朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "manzhou_shilu",
+     "title": "满洲实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修·图绘本",
+     "distance_label": "原档 1781 绘写，距事件约 170 年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "清初",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "qingshigao",
+     "title": "清史稿",
+     "party": "清修官史",
+     "stance_label": "民国未定稿·清方立场",
+     "distance_label": "成书 1928，距事件约 300 年",
+     "color": "#7B5C3E",
+     "compiler": "赵尔巽等",
+     "period": "清末/民国",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "rimsangrok",
+     "title": "栅中日录",
+     "party": "朝鲜·亲历",
+     "stance_label": "被俘逃回·亲历",
+     "distance_label": "1621 写成，距沈阳陷落当年",
+     "color": "#3F6F95",
+     "compiler": "李民寏",
+     "period": "天启元年",
+     "stance": "witness_exile"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "fushun",
+     "name": "抚顺城",
+     "lon": 123.94,
+     "lat": 41.86,
+     "type": "guan",
+     "modern": "辽宁抚顺市",
+     "note": "明辽东东向千户所之一, 万历四十六年四月陷后金",
+     "elev": 76
+    },
+    {
+     "id": "fushunguan",
+     "name": "抚顺关",
+     "lon": 123.97,
+     "lat": 41.86,
+     "type": "guan",
+     "modern": "辽宁抚顺市前甸镇",
+     "note": "辽东边关, 后金入贡与互市必经",
+     "elev": 85
+    },
+    {
+     "id": "shenyang_cheng",
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁沈阳市",
+     "note": "抚顺西向卫城",
+     "elev": 50
+    },
+    {
+     "id": "hetuala",
+     "name": "赫图阿拉",
+     "lon": 124.85,
+     "lat": 41.89,
+     "type": "capital",
+     "modern": "辽宁新宾县老城村",
+     "note": "努尔哈赤 1616 建国都",
+     "elev": 586
+    },
+    {
+     "id": "kuandian",
+     "name": "宽甸六堡",
+     "lon": 124.3,
+     "lat": 40.73,
+     "type": "wei",
+     "modern": "辽宁宽甸县一带",
+     "note": "万历三十四年 (1606) 明弃",
+     "elev": 241
+    },
+    {
+     "id": "dongjing_bao",
+     "name": "东京东路堡",
+     "lon": 124.1,
+     "lat": 41.55,
+     "type": "guan",
+     "modern": "辽宁新宾县东南",
+     "note": "萨尔浒之战东路刘綎军出发集结地",
+     "elev": 417
+    }
+   ],
+   "persons": [
+    {
+     "id": "li_chengliang",
+     "name": "李成梁",
+     "role": "辽东总兵",
+     "note": "隆庆四年起镇辽 22 年, 万历三十四年弃宽甸六堡"
+    },
+    {
+     "id": "li_rubai",
+     "name": "李如柏",
+     "role": "辽东总兵",
+     "note": "李成梁次子, 万历四十七年萨尔浒南路军主帅"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1616 年建国, 万历四十六年四月取抚顺"
+    },
+    {
+     "id": "li_yongfang",
+     "name": "李永芳",
+     "role": "明游击",
+     "note": "万历四十六年四月于抚顺城外降后金, 明朝首位降后金的明军中高级将领"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "F001",
+     "subject": "event:fushun_founded",
+     "predicate": "建置年",
+     "value_text": "洪武二十一年 (1388) 始置抚顺千户所, 隶沈阳中卫",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武二十一年",
+     "place": "fushun",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十一年, 置抚顺千户所, 隶沈阳中卫。",
+     "note": "千户所秩低, 但因其扼辽东边墙外要冲, 实控建州女真朝贡通道。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "F002",
+     "subject": "event:fushun_mashi",
+     "predicate": "抚顺关开市",
+     "value_text": "万历四年 (1576) 设抚顺关马市, 与建州女真互市",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历四年",
+     "place": "fushunguan",
+     "confidence": 0.92,
+     "quote_status": "paraphrase_unverified",
+     "quote": "万历四年, 令辽东抚按于抚顺关开马市, 以缎布盐粮易女真马匹人参。",
+     "note": "抚顺关马市是明朝羁縻女真的核心节点。废止日期在《明神宗实录》有专条, 待核。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "F003",
+     "subject": "event:fushun_fall",
+     "predicate": "陷落年份",
+     "value_text": "万历四十六年四月, 努尔哈赤以「七大恨」告天, 取抚顺",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历四十六年四月",
+     "place": "fushun",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "万历四十六年四月, 努尔哈赤以七大恨告天, 率步骑攻抚顺关, 城破, 游击李永芳降。",
+     "note": "「七大恨」原文见《清太祖实录》天命三年四月, 措辞屡经改窜。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "F004",
+     "subject": "event:fushun_fall",
+     "predicate": "李永芳降",
+     "value_text": "明游击李永芳以抚顺城降, 努尔哈赤待之厚, 赐以貂帽貂裘",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "万历四十六年四月",
+     "place": "fushun",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "永芳率其属出城降, 上以礼待之, 赐以貂帽貂裘。",
+     "note": "李永芳是明方记载中首位投降后金的明军中高级将领, 此降被视为明辽东军心瓦解之始。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "F005",
+     "subject": "event:fushun_fall",
+     "predicate": "朝鲜视角",
+     "value_text": "李朝闻抚顺陷, 大臣议「此贼终为中原大患」",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "万历四十六年",
+     "place": "fushun",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "辽东抚顺城陷, 贼兵所过无噍类, 识者皆忧其在中原为患。",
+     "note": "李朝对抚顺之陷有详细记载, 侧重点在女真威胁论。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "F006",
+     "subject": "event:fushun_mashi",
+     "predicate": "马市作用",
+     "value_text": "学界主流：马市为努尔哈赤积累经济与情报资本, 是其崛起的关键",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "万历四年起",
+     "place": "fushunguan",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "抚顺马市不只是互市点, 更是努尔哈赤刺探辽东情报与获取战略物资的窗口。",
+     "note": "部分学者强调努尔哈赤的独立军事-政治结构, 不应过分高估马市作用。",
+     "_party": "学界"
+    },
+    {
+     "id": "F010",
+     "subject": "event:fushun_fall",
+     "predicate": "李永芳降前心理",
+     "value_text": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "万历四十六年四月",
+     "place": "fushun",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明神宗实录》万历四十六年四月卷 / 《明史·李永芳传》 / 李氏后人族谱 (辽宁铁岭李氏) / 清初李永芳汉军旗档案 (中国第一历史档案馆)",
+      "skills": [
+       "古文",
+       "满语",
+       "族谱"
+      ],
+      "accept": "找到一条直接记述李永芳投降前与辽东巡抚或上级沟通、或与部下商议的原话或档案",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "F011",
+     "subject": "place:fushunguan",
+     "predicate": "马市交易量",
+     "value_text": "抚顺关马市万历朝交易总额 (缎布多少 / 马匹多少 / 人参多少) 数字未精确核定",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "万历",
+     "place": "fushunguan",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明神宗实录》万历四年至四十六年逐月 / 《万历会计录》/ 辽东都司档案残卷 / 朝鲜《通文馆志》关于明方互市礼物记录",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出至少十年间抚顺关年交易额的区间估计, 注明出处与算法",
+      "effort": "2-4 周"
+     },
+     "_party": "清修·明臣"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "F010",
+    "F011"
+   ],
+   "events": [
+    {
+     "id": "fushun_founded",
+     "subject": "event:fushun_founded",
+     "year": 1388,
+     "era": "洪武二十一年",
+     "title": "抚顺千户所建置",
+     "kind": "建置",
+     "text": "明廷于辽东边墙外设置马市, 抚顺为辽东与建州女真互市之所。"
+    },
+    {
+     "id": "fushun_mashi",
+     "subject": "event:fushun_mashi",
+     "year": 1576,
+     "era": "万历四年",
+     "title": "抚顺关开马市",
+     "kind": "互市",
+     "text": "辽东抚按与建州卫约定, 每年开马市一次, 以缎布盐粮易女真马匹人参。"
+    },
+    {
+     "id": "fushun_fall",
+     "subject": "event:fushun_fall",
+     "year": 1618,
+     "era": "万历四十六年四月",
+     "title": "抚顺陷落",
+     "kind": "战事",
+     "text": "努尔哈赤以「七大恨」告天, 率军攻破抚顺城。明游击李永芳降。详见三方史料并列。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "fushun",
+     "to": "shenyang_cheng",
+     "type": "mil",
+     "label": "抚顺—沈阳防线"
+    },
+    {
+     "from": "fushun",
+     "to": "fushunguan",
+     "type": "mashi",
+     "label": "抚顺关马市"
+    },
+    {
+     "from": "fushunguan",
+     "to": "hetuala",
+     "type": "mashi",
+     "label": "入贡通道"
+    },
+    {
+     "from": "fushun",
+     "to": "kuandian",
+     "type": "admin",
+     "label": "东向堡群"
+    },
+    {
+     "from": "fushun",
+     "to": "dongjing_bao",
+     "type": "mil",
+     "label": "东路军集结"
+    }
+   ]
+  },
+  "haizhou": {
+   "meta": {
+    "kind": "county",
+    "region": "liaonan",
+    "title": "海州",
+    "dossier_label": "海州",
+    "subtitle": "辽南重镇 · 海州卫 · 天启元年 (1621) 陷落",
+    "primary_place": "haizhou_cheng",
+    "dossier_event": "event:haizhou_fall",
+    "back": "枢纽",
+    "lead": "海州是辽南粮道咽喉, 朝鲜马市所在。天启元年 (1621) 沈阳陷后六日陷落, 毛文龙率 197 人逃入海中皮岛, 创东江镇。",
+    "parties_note": "海州之陷与朝鲜使臣 (《通文馆志》) 记载路线高度一致, 但毛文龙东江的规模与作用, 明清两方评价截然不同。",
+    "subject_names": {
+     "event:haizhou_founded": "海州卫建置",
+     "event:haizhou_mashi": "海州朝鲜马市",
+     "event:haizhou_fall": "海州陷落",
+     "place:haizhou_cheng": "海州城",
+     "place:haizhou_wei": "海州卫",
+     "place:niuzhuang": "牛庄",
+     "person:liu_tingxian": "刘廷宪",
+     "person:mao_wenlong": "毛文龙",
+     "person:nuerhaci": "努尔哈赤",
+     "person:amin": "阿敏"
+    },
+    "page": "county.html?scene=haizhou",
+    "key": "haizhou"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_shenzong_shilu",
+     "title": "明神宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "万历朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "manzhou_shilu",
+     "title": "满洲实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修·图绘本",
+     "distance_label": "原档 1781 绘写，距事件约 170 年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "清初",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "qingshigao",
+     "title": "清史稿",
+     "party": "清修官史",
+     "stance_label": "民国未定稿·清方立场",
+     "distance_label": "成书 1928，距事件约 300 年",
+     "color": "#7B5C3E",
+     "compiler": "赵尔巽等",
+     "period": "清末/民国",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "rimsangrok",
+     "title": "栅中日录",
+     "party": "朝鲜·亲历",
+     "stance_label": "被俘逃回·亲历",
+     "distance_label": "1621 写成，距沈阳陷落当年",
+     "color": "#3F6F95",
+     "compiler": "李民寏",
+     "period": "天启元年",
+     "stance": "witness_exile"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "haizhou_cheng",
+     "name": "海州城",
+     "lon": 122.75,
+     "lat": 40.86,
+     "type": "city",
+     "modern": "辽宁海城市",
+     "note": "明海州卫, 辽南粮道咽喉",
+     "elev": 32
+    },
+    {
+     "id": "haizhou_wei",
+     "name": "海州卫",
+     "lon": 122.75,
+     "lat": 40.86,
+     "type": "wei",
+     "modern": "海城城内",
+     "note": "洪武九年置, 初治牛庄, 后迁海城",
+     "elev": 32
+    },
+    {
+     "id": "niuzhuang",
+     "name": "牛庄",
+     "lon": 122.55,
+     "lat": 40.96,
+     "type": "guan",
+     "modern": "辽宁海城市西北",
+     "note": "海州卫旧治, 辽河渡口",
+     "elev": 14
+    },
+    {
+     "id": "liaoyang_cheng",
+     "name": "辽阳",
+     "lon": 123.18,
+     "lat": 41.28,
+     "type": "city",
+     "modern": "辽宁辽阳市",
+     "note": "海州北向卫城",
+     "elev": 22
+    },
+    {
+     "id": "shenyang_cheng",
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁沈阳市",
+     "note": "辽东都司治所",
+     "elev": 50
+    },
+    {
+     "id": "anshan",
+     "name": "鞍山驿",
+     "lon": 122.95,
+     "lat": 41.12,
+     "type": "guan",
+     "modern": "辽宁鞍山市",
+     "note": "辽阳—海州驿道中点",
+     "elev": 23
+    },
+    {
+     "id": "gaizhou_cheng",
+     "name": "盖州",
+     "lon": 121.97,
+     "lat": 40.4,
+     "type": "city",
+     "modern": "辽宁盖州市",
+     "note": "海州南向卫城, 在地形网格外",
+     "elev": 0
+    },
+    {
+     "id": "xingshan",
+     "name": "熊岳堡",
+     "lon": 122.1,
+     "lat": 40.4,
+     "type": "wei",
+     "modern": "辽宁盖州市东北",
+     "note": "盖州北卫, 在地形网格外",
+     "elev": 0
+    }
+   ],
+   "persons": [
+    {
+     "id": "liu_tingxian",
+     "name": "刘廷宪",
+     "role": "海州参将",
+     "note": "天启元年守海州, 城破殉职"
+    },
+    {
+     "id": "mao_wenlong",
+     "name": "毛文龙",
+     "role": "都司/皮岛总兵",
+     "note": "天启元年辽阳陷后, 率 197 人逃入海中皮岛, 开东江镇, 与海州/盖州失陷同期"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1621 年三月取沈阳后, 复攻海州"
+    },
+    {
+     "id": "amin",
+     "name": "阿敏",
+     "role": "后金二贝勒",
+     "note": "率兵南下取海州、盖州"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "H001",
+     "subject": "event:haizhou_founded",
+     "predicate": "建置年",
+     "value_text": "洪武九年 (1376) 始置海州卫, 初治牛家庄",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武九年",
+     "place": "haizhou_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武九年置海州卫, 初治牛家庄, 后徙今所。",
+     "note": "初治牛庄的具体迁移年份 (永乐间徙今海城) 在《辽东志》有更细记载, 待核。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "H002",
+     "subject": "event:haizhou_mashi",
+     "predicate": "朝鲜马市",
+     "value_text": "海州与朝鲜平安道设马市, 朝鲜贡马, 海州回赐丝绢",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "永乐年间",
+     "place": "haizhou_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "海州卫与朝鲜平安道互市, 每岁以绢布易朝鲜马匹, 岁以为常。",
+     "note": "朝鲜《通文馆志》载朝鲜使臣来往海州的具体路线, 可与明方对照。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "H003",
+     "subject": "event:haizhou_fall",
+     "predicate": "陷落年份",
+     "value_text": "天启元年三月, 后金别将取海州, 参将刘廷宪战死",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "haizhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天启元年三月, 后金兵攻海州, 参将刘廷宪拒守, 城破, 死之。",
+     "note": "海州陷与沈阳陷 (三月十三) 仅隔六日, 是后金同一战役序列。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "H004",
+     "subject": "event:haizhou_fall",
+     "predicate": "朝鲜视角",
+     "value_text": "李朝接毛文龙急报, 知海州已陷, 议援明",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "haizhou_cheng",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "辽东巡抚袁应泰以海州已陷告急, 朝议援明与否, 终以兵疲财乏未遣。",
+     "note": "与沈阳战役不同, 海州陷落时李朝并未实际出兵援助。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "H005",
+     "subject": "event:haizhou_fall",
+     "predicate": "毛文龙东江",
+     "value_text": "海州陷后, 毛文龙率 197 人逃入海中皮岛, 创东江镇",
+     "source": "qingshigao",
+     "layer": "scholarship",
+     "era": "天启元年",
+     "place": "haizhou_cheng",
+     "confidence": 0.92,
+     "quote_status": "paraphrase_unverified",
+     "quote": "文龙以海州已陷, 率从者 197 人, 浮海至皮岛, 收辽民为军, 遂开东江镇。",
+     "note": "东江镇是后金侧翼长期困扰, 直至 1630 年毛文龙被袁崇焕诛杀。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "H010",
+     "subject": "place:haizhou_wei",
+     "predicate": "海州卫初治牛庄的迁移",
+     "value_text": "海州卫洪武九年 (1376) 置, 初治牛家庄, 后迁今海城——具体迁移年份在现存史料中未见明确记载",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "洪武至永乐",
+     "place": "haizhou_wei",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明太祖实录》洪武朝逐年卷 / 《辽东志》卷 1-2 (嘉靖十六年刻本, 辽海丛书有影印) / 嘉靖《辽东志》",
+      "skills": [
+       "古文",
+       "GIS"
+      ],
+      "accept": "找到海州卫治所迁移的明确年份与诏令原文",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "H011",
+     "subject": "event:haizhou_fall",
+     "predicate": "海州人口迁出",
+     "value_text": "海州陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天启元年三月",
+     "place": "haizhou_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》天启元年三月卷 / 朝鲜《通文馆志》关于「辽民」渡江记录 / 1621-1625 年山东登州府接收辽民档案",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出海州人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "H010",
+    "H011"
+   ],
+   "events": [
+    {
+     "id": "haizhou_founded",
+     "subject": "event:haizhou_founded",
+     "year": 1376,
+     "era": "洪武九年",
+     "title": "海州卫建置",
+     "kind": "建置",
+     "text": "明廷于辽阳以南置海州卫, 初治牛家庄, 后徙今海城。"
+    },
+    {
+     "id": "haizhou_mashi",
+     "subject": "event:haizhou_mashi",
+     "year": 1404,
+     "era": "永乐二年",
+     "title": "海州设马市",
+     "kind": "互市",
+     "text": "海州与朝鲜平安道设马市, 每年开市一次, 朝鲜贡马。"
+    },
+    {
+     "id": "haizhou_fall",
+     "subject": "event:haizhou_fall",
+     "year": 1621,
+     "era": "天启元年三月",
+     "title": "海州陷落",
+     "kind": "战事",
+     "text": "沈阳陷后六日, 后金别将攻海州, 参将刘廷宪战死, 城破。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "haizhou_cheng",
+     "to": "liaoyang_cheng",
+     "type": "admin",
+     "label": "海州—辽阳驿道"
+    },
+    {
+     "from": "haizhou_cheng",
+     "to": "anshan",
+     "type": "admin",
+     "label": "海州—鞍山驿道"
+    },
+    {
+     "from": "haizhou_cheng",
+     "to": "gaizhou_cheng",
+     "type": "admin",
+     "label": "海州—盖州驿道"
+    },
+    {
+     "from": "haizhou_cheng",
+     "to": "niuzhuang",
+     "type": "admin",
+     "label": "海州卫—牛庄"
+    }
+   ]
+  },
+  "gaizhou": {
+   "meta": {
+    "kind": "county",
+    "region": "liaonan",
+    "title": "盖州",
+    "dossier_label": "盖州",
+    "subtitle": "辽南 · 盖州卫 · 天启元年 (1621) 陷落",
+    "primary_place": "gaizhou_cheng",
+    "dossier_event": "event:gaizhou_fall",
+    "back": "枢纽",
+    "lead": "盖州是辽南与海州并立的二大卫之一。天启元年 (1621) 海州陷后十日陷落, 盖州参将杨烈崛殉职。",
+    "parties_note": "盖州之陷在三方史料中数字与死法略有出入, 是 1621 三月战役序列中较为被忽视的一环。",
+    "subject_names": {
+     "event:gaizhou_founded": "盖州卫建置",
+     "event:gaizhou_fall": "盖州陷落",
+     "place:gaizhou_cheng": "盖州城",
+     "place:xiongyue": "熊岳堡",
+     "person:yang_lieue": "杨烈崛",
+     "person:huang_zhilong": "黄之骥",
+     "person:nuerhaci": "努尔哈赤"
+    },
+    "page": "county.html?scene=gaizhou",
+    "key": "gaizhou"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_shenzong_shilu",
+     "title": "明神宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "万历朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "manzhou_shilu",
+     "title": "满洲实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修·图绘本",
+     "distance_label": "原档 1781 绘写，距事件约 170 年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "清初",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "qingshigao",
+     "title": "清史稿",
+     "party": "清修官史",
+     "stance_label": "民国未定稿·清方立场",
+     "distance_label": "成书 1928，距事件约 300 年",
+     "color": "#7B5C3E",
+     "compiler": "赵尔巽等",
+     "period": "清末/民国",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "rimsangrok",
+     "title": "栅中日录",
+     "party": "朝鲜·亲历",
+     "stance_label": "被俘逃回·亲历",
+     "distance_label": "1621 写成，距沈阳陷落当年",
+     "color": "#3F6F95",
+     "compiler": "李民寏",
+     "period": "天启元年",
+     "stance": "witness_exile"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "gaizhou_cheng",
+     "name": "盖州城",
+     "lon": 121.97,
+     "lat": 40.4,
+     "type": "city",
+     "modern": "辽宁盖州市",
+     "note": "明盖州卫治, 在现地形网格外",
+     "elev": 0
+    },
+    {
+     "id": "xiongyue",
+     "name": "熊岳堡",
+     "lon": 122.1,
+     "lat": 40.4,
+     "type": "wei",
+     "modern": "辽宁盖州市东北",
+     "note": "盖州北卫",
+     "elev": 0
+    },
+    {
+     "id": "yingshui",
+     "name": "营口",
+     "lon": 122.23,
+     "lat": 40.65,
+     "type": "guan",
+     "modern": "辽宁营口市",
+     "note": "辽河入海口, 海运要塞",
+     "elev": 11
+    },
+    {
+     "id": "haizhou_cheng",
+     "name": "海州",
+     "lon": 122.75,
+     "lat": 40.86,
+     "type": "city",
+     "modern": "辽宁海城市",
+     "note": "盖州北向卫城",
+     "elev": 32
+    },
+    {
+     "id": "fuzhou_cheng",
+     "name": "复州",
+     "lon": 121.65,
+     "lat": 39.75,
+     "type": "city",
+     "modern": "辽宁瓦房店市",
+     "note": "盖州南向卫城",
+     "elev": 38
+    },
+    {
+     "id": "jinzhou_cheng",
+     "name": "金州",
+     "lon": 121.72,
+     "lat": 39.1,
+     "type": "city",
+     "modern": "辽宁大连市金州区",
+     "note": "辽东半岛南端, 在地形网格外",
+     "elev": 38
+    }
+   ],
+   "persons": [
+    {
+     "id": "yang_lieue",
+     "name": "杨烈崛",
+     "role": "盖州参将",
+     "note": "天启元年守盖州, 城破殉职"
+    },
+    {
+     "id": "huang_zhilong",
+     "name": "黄之骥",
+     "role": "盖州副将",
+     "note": "1621 年盖州之战战死"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1621 年命阿敏等取盖州、复州"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "G001",
+     "subject": "event:gaizhou_founded",
+     "predicate": "建置年",
+     "value_text": "洪武四年 (1371) 始置盖州卫, 与海州卫并为辽南二大卫",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武四年",
+     "place": "gaizhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武四年置盖州卫, 隶辽东都司。",
+     "note": "盖州元代为盖州路, 明初降为卫。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "G002",
+     "subject": "event:gaizhou_fall",
+     "predicate": "陷落年份",
+     "value_text": "天启元年三月, 海州陷后十日, 后金取盖州",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "gaizhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天启元年三月, 后金兵攻盖州, 副将黄之骥拒守, 城破, 死之。",
+     "note": "盖州与海州陷落仅隔十日, 是后金同一战役序列。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "G003",
+     "subject": "event:gaizhou_fall",
+     "predicate": "陷落兵力",
+     "value_text": "后金军号称四万, 实际兵力不详",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "gaizhou_cheng",
+     "confidence": 0.5,
+     "quote_status": "paraphrase_unverified",
+     "quote": "上命四王、皇太极率兵四万攻盖州。",
+     "note": "「四万」数字与「海州之战实际出动兵力」之比, 学界有质疑, 待考。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "G004",
+     "subject": "place:gaizhou_cheng",
+     "predicate": "建置年",
+     "value_text": "学界综合：盖州元代为盖州路, 明初洪武四年 (1371) 降为盖州卫",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "洪武四年",
+     "place": "gaizhou_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "盖州元代为盖州路, 明洪武四年降路为卫。",
+     "note": "学界对此无争议, 与明方《明太祖实录》记载一致。",
+     "_party": "学界"
+    },
+    {
+     "id": "G010",
+     "subject": "event:gaizhou_fall",
+     "predicate": "杨烈崛死亡细节",
+     "value_text": "盖州参将杨烈崛在城破时的具体死法 (阵亡 / 自刎 / 被俘后杀) 三方记载不一致",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天启元年三月",
+     "place": "gaizhou_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》天启元年三月卷 / 《清太祖实录》天命六年三月 / 朝鲜《李朝实录》光海君日记 / 明方墓志铭 (若有)",
+      "skills": [
+       "古文",
+       "朝鲜语"
+      ],
+      "accept": "从至少两方史料中找出杨烈崛死法的具体细节, 注明分歧",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "G011",
+     "subject": "place:xiongyue",
+     "predicate": "熊岳堡军政沿革",
+     "value_text": "熊岳堡军政沿革 (千户所至百户所至废) 的具体时间节点无明确记载",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "嘉靖至万历",
+     "place": "xiongyue",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "嘉靖《辽东志》卷 3 卫所 / 万历《辽东志》/ 《明神宗实录》万历朝逐月",
+      "skills": [
+       "古文"
+      ],
+      "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "G010",
+    "G011"
+   ],
+   "events": [
+    {
+     "id": "gaizhou_founded",
+     "subject": "event:gaizhou_founded",
+     "year": 1371,
+     "era": "洪武四年",
+     "title": "盖州卫建置",
+     "kind": "建置",
+     "text": "明廷于辽阳以南置盖州卫, 与海州卫并为辽南二大卫。"
+    },
+    {
+     "id": "gaizhou_fall",
+     "subject": "event:gaizhou_fall",
+     "year": 1621,
+     "era": "天启元年三月",
+     "title": "盖州陷落",
+     "kind": "战事",
+     "text": "海州陷后十日, 后金军取盖州, 杨烈崛战死。详见三方史料并列。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "gaizhou_cheng",
+     "to": "haizhou_cheng",
+     "type": "admin",
+     "label": "盖州—海州驿道"
+    },
+    {
+     "from": "gaizhou_cheng",
+     "to": "xiongyue",
+     "type": "admin",
+     "label": "盖州—熊岳堡"
+    },
+    {
+     "from": "gaizhou_cheng",
+     "to": "fuzhou_cheng",
+     "type": "admin",
+     "label": "盖州—复州驿道"
+    }
+   ]
   }
+ },
+ "corridors": [
+  {
+   "id": "liaobei_corridor",
+   "name": "辽北走廊",
+   "subtitle": "开原—铁岭—沈阳 · 万历末最先崩塌的一段",
+   "color": "#A0473A",
+   "nodes": [
+    "kaiyuan_cheng",
+    "tieling_cheng",
+    "shenyang_cheng",
+    "fushun",
+    "hetuala"
+   ],
+   "key_era": "万历四十七年 (1619) 至天启元年 (1621)",
+   "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
+  },
+  {
+   "id": "liaodong_corridor",
+   "name": "辽东走廊",
+   "subtitle": "沈阳—辽阳—海州—盖州 · 天启元年三月连锁陷落",
+   "color": "#C77B30",
+   "nodes": [
+    "shenyang_cheng",
+    "liaoyang_cheng",
+    "anshan",
+    "haizhou_cheng",
+    "gaizhou_cheng"
+   ],
+   "key_era": "天启元年 (1621) 三月",
+   "summary": "1621 三月十三沈阳陷, 三月十九辽阳陷, 海州盖州六至十日内相继陷。后金同年南下奠定辽南控制。三月之役是 1619 萨尔浒之战后的总清算。"
+  },
+  {
+   "id": "jurchen_corridor",
+   "name": "建州—扈伦走廊",
+   "subtitle": "赫图阿拉 ↔ 叶赫 ↔ 开原 · 明军与建州女真的羁縻区",
+   "color": "#3E8E6E",
+   "nodes": [
+    "hetuala",
+    "dongyehe",
+    "xiyehe",
+    "kaiyuan_cheng"
+   ],
+   "key_era": "16 世纪中期至万历四十七年 (1619)",
+   "summary": "明廷通过开原马市羁縻叶赫等扈伦四部, 同时与建州女真 (赫图阿拉) 互市。万历四十七年叶赫亡, 开原随即陷落, 此走廊消失。"
+  }
+ ],
+ "leads": {
+  "_comment": "可认领的研究线索（v0.5）。每条 gap 断言的 lead 块汇总而成。新增 gap + lead 即可出现在此；hub / county 页的「线索」页签自动渲染。",
+  "_schema_version": "0.1",
+  "leads": [
+   {
+    "id": "F010",
+    "scene": "fushun",
+    "subject": "event:fushun_fall",
+    "title": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
+    "missing": "古文 / 满语 / 族谱",
+    "where": "《明神宗实录》万历四十六年四月卷 / 《明史·李永芳传》 / 李氏后人族谱 (辽宁铁岭李氏) / 清初李永芳汉军旗档案 (中国第一历史档案馆)",
+    "skills": [
+     "古文",
+     "满语",
+     "族谱"
+    ],
+    "accept": "找到一条直接记述李永芳投降前与辽东巡抚或上级沟通、或与部下商议的原话或档案",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "F011",
+    "scene": "fushun",
+    "subject": "place:fushunguan",
+    "title": "抚顺关马市万历朝交易总额 (缎布多少 / 马匹多少 / 人参多少) 数字未精确核定",
+    "missing": "古文 / 统计",
+    "where": "《明神宗实录》万历四年至四十六年逐月 / 《万历会计录》/ 辽东都司档案残卷 / 朝鲜《通文馆志》关于明方互市礼物记录",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出至少十年间抚顺关年交易额的区间估计, 注明出处与算法",
+    "effort": "2-4 周",
+    "issue_url": null,
+    "_src_line": 8
+   },
+   {
+    "id": "G010",
+    "scene": "gaizhou",
+    "subject": "event:gaizhou_fall",
+    "title": "盖州参将杨烈崛在城破时的具体死法 (阵亡 / 自刎 / 被俘后杀) 三方记载不一致",
+    "missing": "古文 / 朝鲜语",
+    "where": "《明熹宗实录》天启元年三月卷 / 《清太祖实录》天命六年三月 / 朝鲜《李朝实录》光海君日记 / 明方墓志铭 (若有)",
+    "skills": [
+     "古文",
+     "朝鲜语"
+    ],
+    "accept": "从至少两方史料中找出杨烈崛死法的具体细节, 注明分歧",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 5
+   },
+   {
+    "id": "G011",
+    "scene": "gaizhou",
+    "subject": "place:xiongyue",
+    "title": "熊岳堡军政沿革 (千户所至百户所至废) 的具体时间节点无明确记载",
+    "missing": "古文",
+    "where": "嘉靖《辽东志》卷 3 卫所 / 万历《辽东志》/ 《明神宗实录》万历朝逐月",
+    "skills": [
+     "古文"
+    ],
+    "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "H010",
+    "scene": "haizhou",
+    "subject": "place:haizhou_wei",
+    "title": "海州卫洪武九年 (1376) 置, 初治牛家庄, 后迁今海城——具体迁移年份在现存史料中未见明确记载",
+    "missing": "古文 / GIS",
+    "where": "《明太祖实录》洪武朝逐年卷 / 《辽东志》卷 1-2 (嘉靖十六年刻本, 辽海丛书有影印) / 嘉靖《辽东志》",
+    "skills": [
+     "古文",
+     "GIS"
+    ],
+    "accept": "找到海州卫治所迁移的明确年份与诏令原文",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "H011",
+    "scene": "haizhou",
+    "subject": "event:haizhou_fall",
+    "title": "海州陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+    "missing": "古文 / 统计",
+    "where": "《明熹宗实录》天启元年三月卷 / 朝鲜《通文馆志》关于「辽民」渡江记录 / 1621-1625 年山东登州府接收辽民档案",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出海州人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "K025",
+    "scene": "kaiyuan",
+    "subject": "event:kaifa",
+    "title": "缺口：屠城『十余万』仅见明方/综述，清方实录不载，数字待第三方核对",
+    "missing": "古文 / 统计 / 朝语",
+    "where": "《明神宗实录》万历四十七年萨尔浒后叙功/勘状卷；《清太祖实录》天命四年对应月卷(查其是否回避);朝鲜《李朝实录》光海君日记(若闻辽东屠戮);地方志《开原县志》光绪/宣统本「兵燹」门。",
+    "skills": [
+     "古文",
+     "统计",
+     "朝语"
+    ],
+    "accept": "给出「十余万」说法的最早出处与引用链条, 并对照清方是否回避; 若数字本身不可考, 给出可信区间与原因, 并明确标注这是「对方叙事」而非中立计数。",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 25
+   },
+   {
+    "id": "K029",
+    "scene": "kaiyuan",
+    "subject": "event:kaifa",
+    "title": "缺口：《开原县志·万历四十六年东夷入犯》条尚未录入——该志为清末纂修的地方志，记万历四十六年（1619 陷落前一年）后金…",
+    "missing": "方志学 / 古文",
+    "where": "《开原县志》(宣统纂修, 清末)「万历四十六年东夷入犯」条; 《中国地方志联合目录》查馆藏(辽宁省图书馆/中科院文献情报中心); 辽海丛书影印本若已收。",
+    "skills": [
+     "方志学",
+     "古文"
+    ],
+    "accept": "录入该条原文(影印或点校), 注明藏本与卷页; 评估其对「次年速陷」解释力的增量——即 1618 已入犯、1619 才正式破城之间的时间差意味着什么。",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 44
+   },
+   {
+    "id": "L016",
+    "scene": "liaoyang",
+    "subject": "event:liaoyang_fall",
+    "title": "缺口：朝鲜实录对辽阳陷落的记载与反应，待核",
+    "missing": "朝语 / 古文",
+    "where": "朝鲜《李朝实录》光海君日记 天命六年(1621)条; 《栅中日录》李民寏(若其时仕辽); 《燃藜室记述》补证。",
+    "skills": [
+     "朝语",
+     "古文"
+    ],
+    "accept": "录入朝鲜方对辽阳陷落的记载与朝方反应(是否派使、是否哀悼明之失辽东), 标注与明/清记载的偏差与情绪基调。",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 17
+   },
+   {
+    "id": "L017",
+    "scene": "liaoyang",
+    "subject": "event:liaoyang_fall",
+    "title": "缺口：辽阳一战双方兵数与伤亡的具体数字——明清两方均无可交叉验证的细目",
+    "missing": "古文 / 统计",
+    "where": "《明熹宗实录》天启元年辽阳战事奏报; 《清太祖实录》天命六年辽阳攻防; 《满文老档》相应月档; 明方总兵(袁应泰/贺世贤)本传与塘报。",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出双方兵力与伤亡的区间估计, 标注口径差异(「兵」含不含有夫/辅兵/田卒), 并说明为何明清两方均无可交叉验证的细目。",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 18
+   },
+   {
+    "id": "L019",
+    "scene": "liaoyang",
+    "subject": "event:liaoyang_fall",
+    "title": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
+    "missing": "数字人文 / 文献学",
+    "where": "中文/英文维基「辽阳之战」词条及其引用链; 比对其中一手/二手来源的可靠性标记。",
+    "skills": [
+     "数字人文",
+     "文献学"
+    ],
+    "accept": "把维基词条拆解为「哪些结论有独立一手支撑 / 哪些仅靠二手综述」, 输出一张溯源表, 供本项目「来源依赖度」压力测试(关掉二手综述哪些结论会塌)使用。",
+    "effort": "1 周",
+    "issue_url": null,
+    "_src_line": 20
+   },
+   {
+    "id": "A092",
+    "scene": "sarhu",
+    "subject": "event:sarhu_battle",
+    "title": "杜松部车营与火器的具体编制、数量、损失情况，现存史料均无记载",
+    "missing": "军事史 / 古文",
+    "where": "《明神宗实录》万历四十七年萨尔浒出师敕谕与兵部题覆; 《武备志》茅元仪(车营/火器编制); 《明经世文编》相关奏疏; 朝鲜《栅中日录》记西路军装备。",
+    "skills": [
+     "军事史",
+     "古文"
+    ],
+    "accept": "给出杜松西路军车营与火器的可能编制区间(参照同期车营成例), 说明「无直接记录」的原因(战殁无幸存详报、败军无勘状), 而非断言「无火器」。",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 33
+   },
+   {
+    "id": "S021",
+    "scene": "shenyang",
+    "subject": "place:shenyang_cheng",
+    "title": "1621 年沈阳陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+    "missing": "古文 / 满语 / 统计",
+    "where": "《明熹宗实录》天启元年三月卷 / 朝鲜《通文馆志》关于「辽民」渡江记录 / 1621-1625 年山东登州府接收辽民档案 / 满文档案中的辽民编旗记录",
+    "skills": [
+     "古文",
+     "满语",
+     "统计"
+    ],
+    "accept": "给出沈阳人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处与算法",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 21
+   },
+   {
+    "id": "S022",
+    "scene": "shenyang",
+    "subject": "event:ice_walls",
+    "title": "明代辽东诸卫以冰代水筑墙的工程数据 (墙厚 / 总长 / 用冰量) 在正史中无记载",
+    "missing": "古文 / 工程史",
+    "where": "《辽东志》嘉靖十六年刻本 (辽海丛书影印) / 《明宪宗实录》成化朝逐月 / 万历《辽东志》/ 辽东都司档案残卷",
+    "skills": [
+     "古文",
+     "工程史"
+    ],
+    "accept": "找到一处具体工程数据 (例如某卫城筑墙用了多少冰块、多少戍卒、工时几月)",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 22
+   },
+   {
+    "id": "S023",
+    "scene": "shenyang",
+    "subject": "event:shenyang_relief",
+    "title": "朝鲜援军 1.3 万人, 死伤数字在明、清、朝鲜三方记载差异甚大 (5000 / 6000 / 7000 不等)",
+    "missing": "朝鲜语 / 古文 / 统计",
+    "where": "《明熹宗实录》天启元年三月卷 / 《清太祖实录》天命六年三月 / 朝鲜《李朝实录》光海君日记 / 《栅中日录》李民寏",
+    "skills": [
+     "朝鲜语",
+     "古文",
+     "统计"
+    ],
+    "accept": "给出朝鲜军死亡数字的区间估计, 标注三方分歧与史料口径差异",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 23
+   },
+   {
+    "id": "T016",
+    "scene": "tieling",
+    "subject": "event:tieling_fall",
+    "title": "缺口：铁岭陷落双方具体兵力与伤亡——清实录仅泛言「万骑」，明方奏报无细目",
+    "missing": "古文 / 统计",
+    "where": "《明神宗实录》万历四十七年铁岭失事勘状; 《清太祖实录》天命四年「克铁岭」条; 明方辽东巡按/总督勘报; 《满文老档》相应月档。",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出双方兵力与伤亡区间, 澄清「万骑」的口径(是否为后金总动员而非攻铁岭专属兵力), 并说明明方奏报无细目的制度原因。",
+    "effort": "2 周",
+    "issue_url": null,
+    "_src_line": 18
+   },
+   {
+    "id": "T017",
+    "scene": "tieling",
+    "subject": "event:tieling_fall",
+    "title": "缺口：朝鲜实录对铁岭陷落是否有专条记载，待核（李成梁祖籍朝鲜，朝方或有关注）",
+    "missing": "朝语 / 古文",
+    "where": "朝鲜《李朝实录》光海君日记 万历四十七年; 《朝鲜宣祖/光海君实录》中李成梁相关记事; 《燃藜室记述》。",
+    "skills": [
+     "朝语",
+     "古文"
+    ],
+    "accept": "确认朝鲜实录是否对铁岭(李成梁起家地)陷落有专条, 录入其评价与情绪基调, 评估「朝鲜族裔将领故地」是否影响朝方叙事权重。",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 19
+   },
+   {
+    "id": "Y010",
+    "scene": "yehe",
+    "subject": "place:xiyehe",
+    "title": "叶赫亡时, 叶赫总人口 (含东西二城) 与八旗编入人数的对应关系未明确",
+    "missing": "满语 / 古文 / 统计",
+    "where": "《清太祖实录》天命四年八月 / 《满洲实录》/ 《八旗通志》叶赫部分 / 清初满文档案",
+    "skills": [
+     "满语",
+     "古文",
+     "统计"
+    ],
+    "accept": "给出叶赫亡时人口估计 (约 X 万) 与被编入八旗的具体牛录数, 注明出处",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "Y011",
+    "scene": "yehe",
+    "subject": "event:yehe_kaiyuan_attack",
+    "title": "万历十一年叶赫兵攻开原的具体兵力 (数千 / 数百) 与战果在三方史料中数字不一",
+    "missing": "古文",
+    "where": "《明神宗实录》万历十一年逐月 / 《清太祖实录》 (努尔哈赤早期记忆可能有数处) / 朝鲜《李朝实录》",
+    "skills": [
+     "古文"
+    ],
+    "accept": "整理至少两方史料对万历十一年叶赫—开原之战的兵力数字, 标注分歧",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 7
+   }
+  ]
  },
  "resonance": {
   "meta": {
@@ -12509,13 +15521,76 @@ window.SANDBOX_DATA = {
     "综述考订"
    ],
    "scenes": [
+    "fushun",
+    "gaizhou",
+    "haizhou",
     "kaiyuan",
     "liaoyang",
     "sarhu",
-    "tieling"
+    "shenyang",
+    "tieling",
+    "yehe"
    ]
   },
   "scene_summary": [
+   {
+    "scene": "fushun",
+    "name": "fushun",
+    "total": 8,
+    "layers": {
+     "record": 5,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 5,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.472,
+    "best_event": "event:fushun_fall",
+    "best_resonance": 0.75
+   },
+   {
+    "scene": "gaizhou",
+    "name": "gaizhou",
+    "total": 6,
+    "layers": {
+     "record": 3,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 4,
+     "清方": 1,
+     "综述考订": 1
+    },
+    "event_count": 2,
+    "avg_resonance": 0.389,
+    "best_event": "event:gaizhou_fall",
+    "best_resonance": 0.444
+   },
+   {
+    "scene": "haizhou",
+    "name": "haizhou",
+    "total": 7,
+    "layers": {
+     "record": 4,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 5,
+     "朝鲜": 1,
+     "清方": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.472,
+    "best_event": "event:haizhou_fall",
+    "best_resonance": 0.75
+   },
    {
     "scene": "kaiyuan",
     "name": "开原",
@@ -12578,6 +15653,26 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.667
    },
    {
+    "scene": "shenyang",
+    "name": "shenyang",
+    "total": 24,
+    "layers": {
+     "record": 19,
+     "scholarship": 2,
+     "gap": 3
+    },
+    "party_counts": {
+     "明方": 14,
+     "清方": 5,
+     "朝鲜": 3,
+     "综述考订": 2
+    },
+    "event_count": 6,
+    "avg_resonance": 0.404,
+    "best_event": "event:shenyang_relief",
+    "best_resonance": 0.923
+   },
+   {
     "scene": "tieling",
     "name": "铁岭",
     "total": 20,
@@ -12595,6 +15690,25 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.158,
     "best_event": "弃宽甸六堡",
     "best_resonance": 0.167
+   },
+   {
+    "scene": "yehe",
+    "name": "yehe",
+    "total": 7,
+    "layers": {
+     "record": 4,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "清方": 3,
+     "明方": 3,
+     "综述考订": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.389,
+    "best_event": "event:yehe_fall",
+    "best_resonance": 0.667
    }
   ],
   "events": [
@@ -12765,6 +15879,52 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:ice_walls",
+    "name": "event:ice_walls",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 2,
+    "gap_count": 1,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.167,
+    "party_counts": {
+     "明方": 2,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "S003",
+       "predicate": "以冰代水",
+       "value_text": "因辽东严冬土地冻裂, 难以取土, 戍卒汲水冻成厚冰垒墙, 覆以草土",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S022",
+       "predicate": "以冰筑墙的工程数据",
+       "value_text": "明代辽东诸卫以冰代水筑墙的工程数据 (墙厚 / 总长 / 用冰量) 在正史中无记载",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "shenyang"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:kuanbian_abandon",
     "name": "弃宽甸六堡",
     "scenes": [
@@ -12817,6 +15977,52 @@ window.SANDBOX_DATA = {
        "scene": "tieling"
       }
      ]
+    }
+   },
+   {
+    "subject": "event:yehe_kaiyuan_attack",
+    "name": "event:yehe_kaiyuan_attack",
+    "scenes": [
+     "yehe"
+    ],
+    "scene_names": [
+     "yehe"
+    ],
+    "total": 2,
+    "gap_count": 1,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.167,
+    "party_counts": {
+     "明方": 2,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "Y002",
+       "predicate": "叶赫攻开原",
+       "value_text": "万历十一年 (1583) 叶赫与建州争夺敕书, 叶赫兵攻开原城",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "yehe"
+      },
+      {
+       "id": "Y011",
+       "predicate": "叶赫开原之战的兵力",
+       "value_text": "万历十一年叶赫兵攻开原的具体兵力 (数千 / 数百) 与战果在三方史料中数字不一",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "yehe"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
     }
    },
    {
@@ -12938,6 +16144,205 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:fushun_founded",
+    "name": "event:fushun_founded",
+    "scenes": [
+     "fushun"
+    ],
+    "scene_names": [
+     "fushun"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "F001",
+       "predicate": "建置年",
+       "value_text": "洪武二十一年 (1388) 始置抚顺千户所, 隶沈阳中卫",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fushun_mashi",
+    "name": "event:fushun_mashi",
+    "scenes": [
+     "fushun"
+    ],
+    "scene_names": [
+     "fushun"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "F002",
+       "predicate": "抚顺关开市",
+       "value_text": "万历四年 (1576) 设抚顺关马市, 与建州女真互市",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "F006",
+       "predicate": "马市作用",
+       "value_text": "学界主流：马市为努尔哈赤积累经济与情报资本, 是其崛起的关键",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "fushun"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:gaizhou_founded",
+    "name": "event:gaizhou_founded",
+    "scenes": [
+     "gaizhou"
+    ],
+    "scene_names": [
+     "gaizhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G001",
+       "predicate": "建置年",
+       "value_text": "洪武四年 (1371) 始置盖州卫, 与海州卫并为辽南二大卫",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "gaizhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:haizhou_founded",
+    "name": "event:haizhou_founded",
+    "scenes": [
+     "haizhou"
+    ],
+    "scene_names": [
+     "haizhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "H001",
+       "predicate": "建置年",
+       "value_text": "洪武九年 (1376) 始置海州卫, 初治牛家庄",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "haizhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:haizhou_mashi",
+    "name": "event:haizhou_mashi",
+    "scenes": [
+     "haizhou"
+    ],
+    "scene_names": [
+     "haizhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "H002",
+       "predicate": "朝鲜马市",
+       "value_text": "海州与朝鲜平安道设马市, 朝鲜贡马, 海州回赐丝绢",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "haizhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:hunhe_zhan",
     "name": "浑河之战（1621）",
     "scenes": [
@@ -13052,6 +16457,158 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:shenyang_founded",
+    "name": "event:shenyang_founded",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "S024",
+       "predicate": "建置年份",
+       "value_text": "洪武二十一年 (1388) 明廷改元沈阳路为沈阳中卫, 一城三衙",
+       "source": "ming_taizu_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shenyang_jurchen_capital",
+    "name": "event:shenyang_jurchen_capital",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "S012",
+       "predicate": "努尔哈赤迁都",
+       "value_text": "天命十年 (1625) 三月, 努尔哈赤自辽阳迁都沈阳, 改名盛京",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shenyang_qing_capital",
+    "name": "event:shenyang_qing_capital",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "S013",
+       "predicate": "皇太极称帝",
+       "value_text": "崇德元年 (1636) 皇太极于盛京 (沈阳) 即皇帝位, 改国号大清",
+       "source": "qingshigao",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shenyang_walls",
+    "name": "event:shenyang_walls",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "S002",
+       "predicate": "城垣甃砖",
+       "value_text": "成化四年 (1468) 都指挥阚能以砖石甃砌沈阳中卫城垣, 周 9 里 10 步",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:south_retreat",
     "name": "南路溃逃（李如柏）",
     "scenes": [
@@ -13136,6 +16693,99 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:yehe_founded",
+    "name": "event:yehe_founded",
+    "scenes": [
+     "yehe"
+    ],
+    "scene_names": [
+     "yehe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "Y001",
+       "predicate": "叶赫部始祖",
+       "value_text": "叶赫始祖为蒙古人星根达尔汉, 16 世纪中期因居叶赫勒河得名",
+       "source": "qingshigao",
+       "layer": "record",
+       "scene": "yehe"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gaizhou_fall",
+    "name": "event:gaizhou_fall",
+    "scenes": [
+     "gaizhou"
+    ],
+    "scene_names": [
+     "gaizhou"
+    ],
+    "total": 3,
+    "gap_count": 1,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.333,
+    "resonance": 0.444,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G002",
+       "predicate": "陷落年份",
+       "value_text": "天启元年三月, 海州陷后十日, 后金取盖州",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "gaizhou"
+      },
+      {
+       "id": "G010",
+       "predicate": "杨烈崛死亡细节",
+       "value_text": "盖州参将杨烈崛在城破时的具体死法 (阵亡 / 自刎 / 被俘后杀) 三方记载不一致",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "gaizhou"
+      }
+     ],
+     "清方": [
+      {
+       "id": "G003",
+       "predicate": "陷落兵力",
+       "value_text": "后金军号称四万, 实际兵力不详",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "gaizhou"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:abudaligang",
     "name": "阿布达里岗（东路·刘綎）",
     "scenes": [
@@ -13177,6 +16827,181 @@ window.SANDBOX_DATA = {
        "source": "zhazhong_rilu",
        "layer": "record",
        "scene": "sarhu"
+      }
+     ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yehe_fall",
+    "name": "event:yehe_fall",
+    "scenes": [
+     "yehe"
+    ],
+    "scene_names": [
+     "yehe"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 1,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "Y004",
+       "predicate": "明廷应对",
+       "value_text": "叶赫亡时, 明朝辽东已无兵可救, 巡抚袁应泰束手",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "yehe"
+      }
+     ],
+     "清方": [
+      {
+       "id": "Y003",
+       "predicate": "灭亡",
+       "value_text": "万历四十七年八月, 萨尔浒战后, 努尔哈赤攻叶赫东城西城, 布寨战死, 布扬古降",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "yehe"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fushun_fall",
+    "name": "event:fushun_fall",
+    "scenes": [
+     "fushun"
+    ],
+    "scene_names": [
+     "fushun"
+    ],
+    "total": 4,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.25,
+    "resonance": 0.75,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "F003",
+       "predicate": "陷落年份",
+       "value_text": "万历四十六年四月, 努尔哈赤以「七大恨」告天, 取抚顺",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "F010",
+       "predicate": "李永芳降前心理",
+       "value_text": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "fushun"
+      }
+     ],
+     "清方": [
+      {
+       "id": "F004",
+       "predicate": "李永芳降",
+       "value_text": "明游击李永芳以抚顺城降, 努尔哈赤待之厚, 赐以貂帽貂裘",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "F005",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝闻抚顺陷, 大臣议「此贼终为中原大患」",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:haizhou_fall",
+    "name": "event:haizhou_fall",
+    "scenes": [
+     "haizhou"
+    ],
+    "scene_names": [
+     "haizhou"
+    ],
+    "total": 4,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.25,
+    "resonance": 0.75,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "H003",
+       "predicate": "陷落年份",
+       "value_text": "天启元年三月, 后金别将取海州, 参将刘廷宪战死",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "haizhou"
+      },
+      {
+       "id": "H011",
+       "predicate": "海州人口迁出",
+       "value_text": "海州陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "haizhou"
+      }
+     ],
+     "清方": [
+      {
+       "id": "H005",
+       "predicate": "毛文龙东江",
+       "value_text": "海州陷后, 毛文龙率 197 人逃入海中皮岛, 创东江镇",
+       "source": "qingshigao",
+       "layer": "scholarship",
+       "scene": "haizhou"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "H004",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝接毛文龙急报, 知海州已陷, 议援明",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "haizhou"
       }
      ],
      "综述考订": []
@@ -13299,6 +17124,143 @@ window.SANDBOX_DATA = {
        "source": "wiki",
        "layer": "record",
        "scene": "kaiyuan"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:shenyang_relief",
+    "name": "event:shenyang_relief",
+    "scenes": [
+     "shenyang"
+    ],
+    "scene_names": [
+     "shenyang"
+    ],
+    "total": 13,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.077,
+    "resonance": 0.923,
+    "party_counts": {
+     "明方": 6,
+     "清方": 3,
+     "朝鲜": 2,
+     "综述考订": 2
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "S005",
+       "predicate": "1621 攻陷日期",
+       "value_text": "天启元年三月十三日, 努尔哈赤亲率大军攻沈阳",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S007",
+       "predicate": "袁应泰决策",
+       "value_text": "袁应泰原本主张坚守, 但最终下令开城门出战, 败于野战",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S008",
+       "predicate": "陈策童仲揆援军",
+       "value_text": "陈策率浙兵, 童仲揆率川兵驰援, 自辽阳至沈阳一日夜赶到",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S010",
+       "predicate": "浑河之战明军损失",
+       "value_text": "陈策、童仲揆皆战死, 浙兵七千与朝鲜一万三千, 大部分死于此战",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S011",
+       "predicate": "袁应泰自缢",
+       "value_text": "沈阳城破, 袁应泰佩剑印自缢于官署",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S016",
+       "predicate": "兵力对比 (明方)",
+       "value_text": "明熹宗实录载袁应泰集兵号称 13 万 (实际缺额甚多)",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "清方": [
+      {
+       "id": "S006",
+       "predicate": "诱明军野战",
+       "value_text": "努尔哈赤以老弱之兵在城外耕作示弱, 精兵伏林间, 诱袁应泰出城野战",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S015",
+       "predicate": "兵力对比 (清方)",
+       "value_text": "《清太祖实录》载努尔哈赤「率大军」攻沈阳, 但未记具体兵力",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S019",
+       "predicate": "兵力对比冲突",
+       "value_text": "明方称集兵 13 万, 清方称明军降者 5103 员, 数字相差 25 倍",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "shenyang"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "S009",
+       "predicate": "朝鲜援军",
+       "value_text": "朝鲜元帅姜弘立率 1.3 万人赴援, 浑河之战被俘",
+       "source": "rimsangrok",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S023",
+       "predicate": "浑河之战朝鲜军死亡数字",
+       "value_text": "朝鲜援军 1.3 万人, 死伤数字在明、清、朝鲜三方记载差异甚大 (5000 / 6000 / 7000 不等)",
+       "source": "chao_xiandai",
+       "layer": "gap",
+       "scene": "shenyang"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "S014",
+       "predicate": "战因评价",
+       "value_text": "学界主流：袁应泰决策失误 (开关出战、放宽军律) 是沈阳失陷主因",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "shenyang"
+      },
+      {
+       "id": "S020",
+       "predicate": "人口迁出",
+       "value_text": "沈阳陷后, 城内百姓部分被迁至后金腹地, 部分逃往山东",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "shenyang"
       }
      ]
     }

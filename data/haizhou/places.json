@@ -1,0 +1,78 @@
+{
+ "places": [
+  {
+   "id": "haizhou_cheng",
+   "name": "海州城",
+   "lon": 122.75,
+   "lat": 40.86,
+   "type": "city",
+   "modern": "辽宁海城市",
+   "note": "明海州卫, 辽南粮道咽喉"
+  },
+  {
+   "id": "haizhou_wei",
+   "name": "海州卫",
+   "lon": 122.75,
+   "lat": 40.86,
+   "type": "wei",
+   "modern": "海城城内",
+   "note": "洪武九年置, 初治牛庄, 后迁海城"
+  },
+  {
+   "id": "niuzhuang",
+   "name": "牛庄",
+   "lon": 122.55,
+   "lat": 40.96,
+   "type": "guan",
+   "modern": "辽宁海城市西北",
+   "note": "海州卫旧治, 辽河渡口"
+  },
+  {
+   "id": "liaoyang_cheng",
+   "name": "辽阳",
+   "lon": 123.18,
+   "lat": 41.28,
+   "type": "city",
+   "modern": "辽宁辽阳市",
+   "note": "海州北向卫城"
+  },
+  {
+   "id": "shenyang_cheng",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.81,
+   "type": "city",
+   "modern": "辽宁沈阳市",
+   "note": "辽东都司治所"
+  },
+  {
+   "id": "anshan",
+   "name": "鞍山驿",
+   "lon": 122.95,
+   "lat": 41.12,
+   "type": "guan",
+   "modern": "辽宁鞍山市",
+   "note": "辽阳—海州驿道中点"
+  },
+  {
+   "id": "gaizhou_cheng",
+   "name": "盖州",
+   "lon": 121.97,
+   "lat": 40.4,
+   "type": "city",
+   "modern": "辽宁盖州市",
+   "note": "海州南向卫城, 在地形网格外"
+  },
+  {
+   "id": "xingshan",
+   "name": "熊岳堡",
+   "lon": 122.1,
+   "lat": 40.4,
+   "type": "wei",
+   "modern": "辽宁盖州市东北",
+   "note": "盖州北卫, 在地形网格外"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,22 @@
+{
+ "edges": [
+  {
+   "from": "gaizhou_cheng",
+   "to": "haizhou_cheng",
+   "type": "admin",
+   "label": "盖州—海州驿道"
+  },
+  {
+   "from": "gaizhou_cheng",
+   "to": "xiongyue",
+   "type": "admin",
+   "label": "盖州—熊岳堡"
+  },
+  {
+   "from": "gaizhou_cheng",
+   "to": "fuzhou_cheng",
+   "type": "admin",
+   "label": "盖州—复州驿道"
+  }
+ ]
+}

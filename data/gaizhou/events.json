@@ -1,0 +1,22 @@
+{
+ "events": [
+  {
+   "id": "gaizhou_founded",
+   "subject": "event:gaizhou_founded",
+   "year": 1371,
+   "era": "洪武四年",
+   "title": "盖州卫建置",
+   "kind": "建置",
+   "text": "明廷于辽阳以南置盖州卫, 与海州卫并为辽南二大卫。"
+  },
+  {
+   "id": "gaizhou_fall",
+   "subject": "event:gaizhou_fall",
+   "year": 1621,
+   "era": "天启元年三月",
+   "title": "盖州陷落",
+   "kind": "战事",
+   "text": "海州陷后十日, 后金军取盖州, 杨烈崛战死。详见三方史料并列。"
+  }
+ ]
+}

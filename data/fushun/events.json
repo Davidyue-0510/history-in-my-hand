@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "fushun_founded",
+   "subject": "event:fushun_founded",
+   "year": 1388,
+   "era": "洪武二十一年",
+   "title": "抚顺千户所建置",
+   "kind": "建置",
+   "text": "明廷于辽东边墙外设置马市, 抚顺为辽东与建州女真互市之所。"
+  },
+  {
+   "id": "fushun_mashi",
+   "subject": "event:fushun_mashi",
+   "year": 1576,
+   "era": "万历四年",
+   "title": "抚顺关开马市",
+   "kind": "互市",
+   "text": "辽东抚按与建州卫约定, 每年开马市一次, 以缎布盐粮易女真马匹人参。"
+  },
+  {
+   "id": "fushun_fall",
+   "subject": "event:fushun_fall",
+   "year": 1618,
+   "era": "万历四十六年四月",
+   "title": "抚顺陷落",
+   "kind": "战事",
+   "text": "努尔哈赤以「七大恨」告天, 率军攻破抚顺城。明游击李永芳降。详见三方史料并列。"
+  }
+ ]
+}

@@ -57,7 +57,8 @@ def load_scene(name):
 
 
 def main():
-    scenes = {n: load_scene(n) for n in ('sarhu', 'kaiyuan', 'tieling', 'liaoyang')}
+    scenes = {n: load_scene(n) for n in (
+        json.load(open(os.path.join(ROOT, 'data', 'scenes.json'), encoding='utf-8'))['scenes'].keys())}
 
     # I1
     print('\nI1: 三层证据共存')
@@ -114,11 +115,16 @@ def main():
           'exit=%d, tail=%s' % (r.returncode, out[-200:]))
 
     # I5：共振报告含全部切片
+    # v0.5 起切片来自 data/scenes.json，不在这里硬编码。共振报告必须覆盖所有
+    # 已注册的 county / battle scene。
     rr = json.load(open(os.path.join(ROOT, 'data', 'resonance_report.json'), encoding='utf-8'))
     ss = {x['scene'] for x in rr.get('scene_summary', [])}
-    check('共振报告 scene_summary 含 4 切片',
-          ss == {'sarhu', 'kaiyuan', 'tieling', 'liaoyang'},
-          '实际：%s' % ss)
+    reg = json.load(open(os.path.join(ROOT, 'data', 'scenes.json'), encoding='utf-8'))
+    expected = set(reg['scenes'].keys())
+    missing = expected - ss
+    check('共振报告 scene_summary 覆盖全部 %d 个注册切片' % len(expected),
+          not missing,
+          '缺失：%s' % missing)
 
     # I7
     print('\nI7: vocabulary 自身合法')

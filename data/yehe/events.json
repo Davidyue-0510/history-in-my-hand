@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "yehe_founded",
+   "subject": "event:yehe_founded",
+   "year": 1550,
+   "era": "16 世纪中期",
+   "title": "叶赫部建国",
+   "kind": "建置",
+   "text": "叶赫始祖清佳砮始建于叶赫河畔, 因居叶赫勒河得名。"
+  },
+  {
+   "id": "yehe_kaiyuan_attack",
+   "subject": "event:yehe_kaiyuan_attack",
+   "year": 1583,
+   "era": "万历十一年",
+   "title": "叶赫攻开原",
+   "kind": "战事",
+   "text": "叶赫与建州争夺明朝敕书, 叶赫兵攻开原城下, 被明军击败。"
+  },
+  {
+   "id": "yehe_fall",
+   "subject": "event:yehe_fall",
+   "year": 1619,
+   "era": "万历四十七年八月",
+   "title": "叶赫亡",
+   "kind": "战事",
+   "text": "萨尔浒之战后, 努尔哈赤攻叶赫东城西城, 布寨战死, 布扬古降, 叶赫亡。"
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 项目门户 / 合作者招募
+    url: https://github.com/davidyue-0510/history-in-my-hand/blob/main/demo/portal.html
+    about: 先看这个总览，再决定认领哪类任务
+  - name: CONTRIBUTORS.md（三种角色上手地图）
+    url: https://github.com/davidyue-0510/history-in-my-hand/blob/main/CONTRIBUTORS.md
+    about: 美工 / 程序优化 / 数字人文 各自的文件清单与第一个上手任务

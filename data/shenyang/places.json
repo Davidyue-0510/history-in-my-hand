@@ -1,0 +1,18 @@
+{
+  "places": [
+    { "id": "shenyang_cheng", "name": "沈阳城", "lon": 123.43, "lat": 41.81, "type": "city", "modern": "辽宁省沈阳市沈河区", "note": "元代沈阳路旧城, 洪武二十一年改沈阳中卫, 天启元年 (1621) 后金改称盛京, 崇德元年 (1636) 清迁都于此" },
+    { "id": "shenyang_zhongwei", "name": "沈阳中卫", "lon": 123.43, "lat": 41.81, "type": "wei", "modern": "沈阳城内", "note": "洪武二十一年置, 与中屯卫、抚顺千户所同城分治" },
+    { "id": "hunhe_bridge", "name": "浑河浮桥", "lon": 123.42, "lat": 41.79, "type": "guan", "modern": "沈阳市南浑河一带", "note": "1621 年三月浑河之战主战场, 白塔铺南" },
+    { "id": "baita_pu", "name": "白塔铺", "lon": 123.45, "lat": 41.77, "type": "guan", "modern": "沈阳市南郊", "note": "1621 年浑河之战后金截击阵地" },
+    { "id": "liaoyang_cheng", "name": "辽阳", "lon": 123.18, "lat": 41.28, "type": "city", "modern": "辽宁辽阳市", "note": "明辽东都司治所, 沈阳西南 70 里" },
+    { "id": "fushun", "name": "抚顺", "lon": 123.94, "lat": 41.86, "type": "guan", "modern": "辽宁抚顺市", "note": "沈阳东卫, 万历四十六年 (1618) 陷落" },
+    { "id": "kaiyuan_cheng", "name": "开原", "lon": 124.04, "lat": 42.55, "type": "city", "modern": "辽宁开原市", "note": "明辽北重镇, 万历四十七年 (1619) 陷落" },
+    { "id": "tieling_cheng", "name": "铁岭", "lon": 124.31, "lat": 42.30, "type": "city", "modern": "辽宁铁岭市", "note": "沈阳北卫, 万历四十七年 (1619) 陷落" },
+    { "id": "guangning", "name": "广宁", "lon": 121.79, "lat": 41.59, "type": "city", "modern": "辽宁北镇市", "note": "明辽东总兵驻地, 在现地形网格外, 见辽西走廊" },
+    { "id": "hetuala", "name": "赫图阿拉", "lon": 124.85, "lat": 41.89, "type": "capital", "modern": "辽宁新宾县老城村", "note": "努尔哈赤 1616 年建国都, 萨尔浒之战前明军主攻目标" },
+    { "id": "sipingjie", "name": "四平街", "lon": 124.36, "lat": 43.17, "type": "city", "modern": "吉林四平市", "note": "叶赫活动区域, 在现地形网格外" },
+    { "id": "dongyehe", "name": "叶赫东城", "lon": 124.61, "lat": 43.12, "type": "capital", "modern": "吉林四平市梨树县东南", "note": "叶赫东城, 布寨贝勒驻, 在现地形网格外" },
+    { "id": "xiyehe", "name": "叶赫西城", "lon": 124.41, "lat": 43.10, "type": "capital", "modern": "吉林四平市梨树县东南", "note": "叶赫西城, 布扬古贝勒驻, 在现地形网格外" }
+  ],
+  "rivers": [], "wall": []
+}

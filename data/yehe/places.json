@@ -1,0 +1,51 @@
+{
+ "places": [
+  {
+   "id": "xiyehe",
+   "name": "叶赫西城",
+   "lon": 124.41,
+   "lat": 43.1,
+   "type": "capital",
+   "modern": "吉林四平市梨树县东南",
+   "note": "叶赫西城, 布扬古贝勒驻, 在地形网格外"
+  },
+  {
+   "id": "dongyehe",
+   "name": "叶赫东城",
+   "lon": 124.61,
+   "lat": 43.12,
+   "type": "capital",
+   "modern": "吉林四平市梨树县东南",
+   "note": "叶赫东城, 布寨贝勒驻, 在地形网格外"
+  },
+  {
+   "id": "kaiyuan_cheng",
+   "name": "开原",
+   "lon": 124.04,
+   "lat": 42.55,
+   "type": "city",
+   "modern": "辽宁开原市",
+   "note": "明辽北重镇, 叶赫受其节制"
+  },
+  {
+   "id": "hetuala",
+   "name": "赫图阿拉",
+   "lon": 124.85,
+   "lat": 41.89,
+   "type": "capital",
+   "modern": "辽宁新宾县老城村",
+   "note": "努尔哈赤起家之地, 建州根据地"
+  },
+  {
+   "id": "sipingjie",
+   "name": "四平街",
+   "lon": 124.36,
+   "lat": 43.17,
+   "type": "city",
+   "modern": "吉林四平市",
+   "note": "叶赫活动区域, 在地形网格外"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

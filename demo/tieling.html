@@ -1,124 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>铁岭 · 小菜狗的文明图景</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="kaiyuan.css">
-</head>
-<body>
-<div id="app" class="layout">
-
-  <aside id="panelLeft" class="panel">
-    <div class="panel-head"><span>铁岭 · 数据层</span></div>
-
-    <div class="block" data-fold="open">
-      <div class="block-title foldable">史料采信 <span class="blk-n" id="statVisible">0</span></div>
-      <div class="block-body">
-        <div id="sourceList" class="src-list"></div>
-        <div class="hint">取消勾选即隐藏该史料所言。地图与数字随之改变。</div>
-      </div>
-    </div>
-
-    <div class="block" data-fold="open">
-      <div class="block-title foldable">图层隔离</div>
-      <div class="block-body">
-        <div id="layerList" class="lay-list"></div>
-        <div class="hint">史料原文 / 学界考证 / 推演 / 缺口 —— 四层物理隔离。</div>
-      </div>
-    </div>
-
-    <div class="block" data-fold="open">
-      <div class="block-title foldable">真实地形</div>
-      <div class="block-body">
-        <div id="terrainCtl" class="lay-list"></div>
-        <div id="terrainSrc" class="src-meta" style="margin-top:6px"></div>
-      </div>
-    </div>
-
-    <div class="block" data-fold="open">
-      <div class="block-title foldable">建置沿革（点选跳至右栏）</div>
-      <div class="block-body">
-        <div id="eventList" class="rt-list"></div>
-      </div>
-    </div>
-  </aside>
-
-  <main id="stage" class="stage">
-    <div id="topbar">
-      <button id="btnLeft" class="drawer-btn" title="数据层">≡</button>
-      <div class="title">
-        <b>铁岭</b>
-        <span class="sub">李成梁故里 · 辽东锁钥 · 万历四十七年陷落</span>
-      </div>
-      <a id="backLink" href="sarhu.html" class="back-link">← 萨尔浒</a>
-      <button id="btnRight" class="drawer-btn" title="分析">⫶</button>
-    </div>
-
-    <div id="mapWrap" class="map-wrap">
-      <canvas id="terrainCv"></canvas>
-      <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
-      <div class="map-tools">
-        <button data-zoom="in">＋</button>
-        <button data-zoom="out">－</button>
-        <button data-zoom="fit">⤢</button>
-      </div>
-      <div id="zoomBadge">1.0×</div>
-      <div id="elevLegend" class="elev-legend"></div>
-      <div id="mapLegend" class="map-legend"></div>
-    </div>
-
-    <div id="timelineBar" class="timeline">
-      <div class="tl-cap-l">建置沿革</div>
-      <div id="tlTrack" class="tl-track"></div>
-      <div class="tl-readout"><span id="dateEra"></span> · <span id="dateLabel"></span></div>
-    </div>
-  </main>
-
-  <aside id="panelRight" class="panel">
-    <div class="panel-head"><span>铁岭 · 分析</span></div>
-
-    <div class="tabs">
-      <button class="tab active" data-tab="yan">沿革</button>
-      <button class="tab" data-tab="parties">三方史料</button>
-      <button class="tab" data-tab="conflict">史料冲突<span id="tabDot" class="dot"></span></button>
-      <button class="tab" data-tab="inspect">检视</button>
-    </div>
-
-    <div class="tabpane active" data-pane="yan">
-      <div id="evLead" class="ev-lead"></div>
-      <div id="eventsPane" class="ev-list"></div>
-    </div>
-
-    <div class="tabpane" data-pane="parties">
-      <div class="parties-note">铁岭陷落（1619）及李成梁评价，在明、清、现代综述中各有侧重。系统不裁决，只并列。</div>
-      <div id="partiesPane" class="parties-list"></div>
-    </div>
-
-    <div class="tabpane" data-pane="conflict">
-      <div class="cf-head">自动发现冲突 <span id="conflictCount" class="cf-count">0 / 0</span></div>
-      <div id="conflictList" class="cf-list"></div>
-    </div>
-
-    <div class="tabpane" data-pane="inspect">
-      <div id="inspectTitle" class="insp-title">检视</div>
-      <div id="inspect" class="insp-list"></div>
-    </div>
-  </aside>
-
-  <div id="scrim"></div>
-</div>
-
-<div id="modal">
-  <div id="modalCard">
-    <div id="modalHead"><span id="modalTitle"></span><button id="modalClose">×</button></div>
-    <div id="modalBody"></div>
-  </div>
-</div>
-
-<script src="data.js"></script>
-<script src="tieling.js"></script>
-<script src="county.js"></script>
-</body>
-</html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>tieling · 小菜狗的文明图景</title>
+<meta http-equiv="refresh" content="0; url=county.html?scene=tieling">
+<link rel="canonical" href="county.html?scene=tieling">
+<!-- v0.5 起县级切片统一走 county.html?scene=<key>。
+     本文件只为保持旧链接不死；不要在这里加内容。 -->
+</head><body>
+<p style="font:14px/1.8 system-ui;padding:40px">
+本页已并入通用切片页。若未自动跳转，请点 <a href="county.html?scene=tieling">county.html?scene=tieling</a>。
+</p>
+<script>location.replace('county.html?scene=tieling' + location.hash);</script>
+</body></html>

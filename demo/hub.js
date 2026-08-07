@@ -61,10 +61,15 @@
 
   // 切片中心点 pin 用到的数据（draw 内外都要引用）
   var scenes = SD.scenes || {};
-  var SCENE_KIND = { sarhu: '事件切片 · battle slice',
-                     kaiyuan: '县级 LOD · county slice',
-                     tieling: '县级 LOD · county slice',
-                     liaoyang: '县级 LOD · county slice' };
+  var order = SD.scene_order || Object.keys(scenes);
+  var REGION_NAME = {};
+  (SD.regions || []).forEach(function (r) { REGION_NAME[r.id] = r.name; });
+  var REGION_NOTE = {};
+  (SD.regions || []).forEach(function (r) { REGION_NOTE[r.id] = r.note; });
+  // 切片类型不再按 key 硬编码——meta.kind 来自 data/scenes.json
+  function kindLabel(m) {
+    return m.kind === 'battle' ? '事件切片 · battle slice' : '县级 LOD · county slice';
+  }
 
   // 按当前容器尺寸重绘；窗口缩放时由 resize 监听节流触发
   function draw() {
@@ -104,20 +109,42 @@
       }
     }
 
-    // 自动 pin 所有切片中心点
-    Object.keys(scenes).forEach(function (sk) {
-      var sc = scenes[sk];
+    // 自动 pin 所有切片中心点。标签会互相压——按已放置矩形做一次简单避让，
+    // 切片多起来之后这是必需的（14 个 pin 挤在辽东走廊上）。
+    var placed = [];
+    function collides(x, y, w, h) {
+      for (var i = 0; i < placed.length; i++) {
+        var r = placed[i];
+        if (x < r.x + r.w && x + w > r.x && y < r.y + r.h && y + h > r.y) return true;
+      }
+      return false;
+    }
+    ctx.font = '10.5px monospace';
+    order.forEach(function (sk) {
+      var sc = scenes[sk]; if (!sc) return;
       var m = (sc.meta || {});
-      var pp = m.primary_place;
-      var place = (sc.places || []).filter(function (x) { return x.id === pp; })[0];
+      var place = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
       if (!place) return;
-      var px = gx(place.lon), py = gy(place.lat);
-      ctx.beginPath(); ctx.arc(px, py, 4.5, 0, Math.PI * 2);
-      ctx.fillStyle = '#FBF9F3'; ctx.fill();
+      var cx = gx(place.lon), cy = gy(place.lat);
+      var label = m.dossier_label || m.title || sk;
+      var tw = ctx.measureText(label).width, th = 11;
+      // 候选位：右、左、上、下
+      var cands = [[cx + 8, cy + 4], [cx - 8 - tw, cy + 4],
+                   [cx - tw / 2, cy - 8], [cx - tw / 2, cy + 15]];
+      var pos = cands[0];
+      for (var i = 0; i < cands.length; i++) {
+        if (!collides(cands[i][0], cands[i][1] - th, tw, th)) { pos = cands[i]; break; }
+      }
+      placed.push({ x: pos[0], y: pos[1] - th, w: tw, h: th });
+
+      ctx.beginPath(); ctx.arc(cx, cy, m.kind === 'battle' ? 5 : 4, 0, Math.PI * 2);
+      ctx.fillStyle = m.kind === 'battle' ? '#B23A48' : '#FBF9F3'; ctx.fill();
       ctx.lineWidth = 1.4; ctx.strokeStyle = '#2A2521'; ctx.stroke();
-      ctx.font = '11px monospace';
+      // 标签描白边，压在山影上也读得出来
+      ctx.lineWidth = 2.6; ctx.strokeStyle = 'rgba(251,249,243,.85)';
+      ctx.strokeText(label, pos[0], pos[1]);
       ctx.fillStyle = '#2A2521';
-      ctx.fillText(m.dossier_label || sk, px + 8, py + 4);
+      ctx.fillText(label, pos[0], pos[1]);
     });
 
     if (rangeEl) rangeEl.textContent = (TG.min == null ? '—' : TG.min) + '–' +
@@ -159,9 +186,17 @@
   }
 
   var html = '';
-  Object.keys(scenes).forEach(function (sk) {
+  var lastRegion = null;
+  order.forEach(function (sk) {
     var sc = scenes[sk];
+    if (!sc) return;
     var m = sc.meta || {};
+    // 分区小标题：注册表里 region 一变，这里自动分组
+    if (m.region && m.region !== lastRegion) {
+      lastRegion = m.region;
+      html += '<div class="region-head"><b>' + (REGION_NAME[m.region] || m.region) + '</b>'
+        + '<span>' + (REGION_NOTE[m.region] || '') + '</span></div>';
+    }
     var srcN = (sc['sources'] || []).length;
     var placesN = (sc.places || []).length;
     var personsN = (sc.persons || []).length;
@@ -178,8 +213,8 @@
     var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
     var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
 
-    html += '<a class="card" href="' + sk + '.html">'
-      + '<div class="card-kind">' + (SCENE_KIND[sk] || '切片 · slice') + '</div>'
+    html += '<a class="card" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
+      + '<div class="card-kind">' + kindLabel(m) + '</div>'
       + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
       + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
       + '<div class="card-stats">'

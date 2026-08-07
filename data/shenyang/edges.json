@@ -1,0 +1,12 @@
+{
+  "edges": [
+    { "from": "shenyang_cheng", "to": "liaoyang_cheng", "type": "admin", "label": "辽东都司治所" },
+    { "from": "shenyang_cheng", "to": "tieling_cheng", "type": "admin", "label": "沈阳—铁岭驿道" },
+    { "from": "shenyang_cheng", "to": "kaiyuan_cheng", "type": "admin", "label": "辽北驿道" },
+    { "from": "shenyang_cheng", "to": "fushun", "type": "mil", "label": "沈阳—抚顺防线" },
+    { "from": "shenyang_cheng", "to": "hunhe_bridge", "type": "mil", "label": "浑河阻击" },
+    { "from": "shenyang_cheng", "to": "hetuala", "type": "mil", "label": "东向 · 萨尔浒方向" },
+    { "from": "shenyang_cheng", "to": "xiyehe", "type": "mil", "label": "北向 · 叶赫方向" },
+    { "from": "shenyang_cheng", "to": "baita_pu", "type": "mil", "label": "南向 · 浑河之战截击" }
+  ]
+}

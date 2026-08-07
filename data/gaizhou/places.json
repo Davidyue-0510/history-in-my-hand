@@ -1,0 +1,60 @@
+{
+ "places": [
+  {
+   "id": "gaizhou_cheng",
+   "name": "盖州城",
+   "lon": 121.97,
+   "lat": 40.4,
+   "type": "city",
+   "modern": "辽宁盖州市",
+   "note": "明盖州卫治, 在现地形网格外"
+  },
+  {
+   "id": "xiongyue",
+   "name": "熊岳堡",
+   "lon": 122.1,
+   "lat": 40.4,
+   "type": "wei",
+   "modern": "辽宁盖州市东北",
+   "note": "盖州北卫"
+  },
+  {
+   "id": "yingshui",
+   "name": "营口",
+   "lon": 122.23,
+   "lat": 40.65,
+   "type": "guan",
+   "modern": "辽宁营口市",
+   "note": "辽河入海口, 海运要塞"
+  },
+  {
+   "id": "haizhou_cheng",
+   "name": "海州",
+   "lon": 122.75,
+   "lat": 40.86,
+   "type": "city",
+   "modern": "辽宁海城市",
+   "note": "盖州北向卫城"
+  },
+  {
+   "id": "fuzhou_cheng",
+   "name": "复州",
+   "lon": 121.65,
+   "lat": 39.75,
+   "type": "city",
+   "modern": "辽宁瓦房店市",
+   "note": "盖州南向卫城"
+  },
+  {
+   "id": "jinzhou_cheng",
+   "name": "金州",
+   "lon": 121.72,
+   "lat": 39.1,
+   "type": "city",
+   "modern": "辽宁大连市金州区",
+   "note": "辽东半岛南端, 在地形网格外"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

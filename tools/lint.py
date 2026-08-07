@@ -62,8 +62,15 @@ PARTIES3 = [p for p in VOCAB['parties'] if p != '综述考订']
 
 REQUIRED = ['id', 'subject', 'predicate', 'source', 'layer']
 
-SCENE_NAMES = {'sarhu': '萨尔浒', 'kaiyuan': '开原',
-               'tieling': '铁岭', 'liaoyang': '辽阳'}
+# 切片中文名不再硬编码在这里——它来自切片注册表 data/scenes.json。
+# 「有哪些切片、各叫什么」这个问题在全项目必须只有一个答案。
+with open(os.path.join(DATA, 'scenes.json'), encoding='utf-8') as f:
+    REGISTRY = json.load(f)
+REG_SCENES = REGISTRY['scenes']
+SCENE_NAMES = {v.get('dir', k): v.get('title', k) for k, v in REG_SCENES.items()}
+REG_DIRS = {v.get('dir', k): k for k, v in REG_SCENES.items()}
+REG_ORDER = REGISTRY.get('order', [])
+REGION_IDS = {r['id'] for r in REGISTRY.get('regions', [])}
 
 
 class Report:
@@ -199,6 +206,16 @@ def check_scene(sc, rep):
             rep.warn('W07', scene, '%s %s 是 gap 层但 value_text 为空——缺口必须说清缺什么'
                      % (loc, aid))
 
+        # W09：缺口没有配 lead 块，就只是界面上一个灰点，谁也接不了手。
+        # 「缺口是一等公民」这句话要成立，缺口就得能被认领。
+        if a.get('layer') == 'gap':
+            lead = a.get('lead') or {}
+            miss = [k for k in ('where', 'skills', 'accept') if not lead.get(k)]
+            if miss:
+                rep.warn('W09', scene,
+                         '%s %s 是 gap 层但 lead 块缺 %s——缺口没写成可认领的线索，'
+                         '在「线索」页签里就是一条空壳' % (loc, aid, '/'.join(miss)))
+
         if qs == 'verbatim':
             rep.warn('W01', scene, '%s %s 标为 verbatim；本项目尚未完成点校本逐字核对，'
                      '请确认已核对，否则应降级为 paraphrase_unverified' % (loc, aid))
@@ -272,12 +289,40 @@ def check_coverage(scenes, rep):
                          '检查 source.party 是否配错' % (ev, ps or '{}'))
 
 
+def check_registry(names, rep):
+    """注册表与磁盘目录必须一一对应。
+
+    E13：磁盘上有数据目录但注册表没登记 —— 这批数据编译不进 data.js，
+         录了等于没录，而且不会有任何报错。这是最阴的一种「静默丢失」。
+    E14：注册表登记了但磁盘上没有 assertions.jsonl —— 前端会渲染出空切片。
+    E15：region 不在 regions 列表里 —— hub 会分出一个无名分组。
+    """
+    on_disk = set(names)
+    registered = set(REG_DIRS.keys())
+
+    for d in sorted(on_disk - registered):
+        rep.err('E13', d, '数据目录 data/%s/ 存在但未在 data/scenes.json 注册——'
+                          '这批数据不会被编译进 data.js，界面上完全看不到' % d)
+    for d in sorted(registered - on_disk):
+        rep.err('E14', REG_DIRS[d], '注册表登记了切片「%s」但 data/%s/assertions.jsonl 不存在'
+                % (REG_DIRS[d], d))
+
+    for key, sc in sorted(REG_SCENES.items()):
+        region = sc.get('region')
+        if region and region not in REGION_IDS:
+            rep.err('E15', key, 'region =「%s」不在 data/scenes.json 的 regions 列表内' % region)
+        if key not in REG_ORDER:
+            rep.warn('W10', key, '切片未列入 order，将被追加到末尾——'
+                                 '显式排序才能保证 hub 上的地理顺序')
+
+
 def main():
     strict = '--strict' in sys.argv
     names = scene_dirs()
     scenes = [load_scene(n) for n in names]
 
     rep = Report()
+    check_registry(names, rep)
     for sc in scenes:
         check_scene(sc, rep)
     check_cross_scene(scenes, rep)

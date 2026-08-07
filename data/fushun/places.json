@@ -1,0 +1,60 @@
+{
+ "places": [
+  {
+   "id": "fushun",
+   "name": "抚顺城",
+   "lon": 123.94,
+   "lat": 41.86,
+   "type": "guan",
+   "modern": "辽宁抚顺市",
+   "note": "明辽东东向千户所之一, 万历四十六年四月陷后金"
+  },
+  {
+   "id": "fushunguan",
+   "name": "抚顺关",
+   "lon": 123.97,
+   "lat": 41.86,
+   "type": "guan",
+   "modern": "辽宁抚顺市前甸镇",
+   "note": "辽东边关, 后金入贡与互市必经"
+  },
+  {
+   "id": "shenyang_cheng",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.81,
+   "type": "city",
+   "modern": "辽宁沈阳市",
+   "note": "抚顺西向卫城"
+  },
+  {
+   "id": "hetuala",
+   "name": "赫图阿拉",
+   "lon": 124.85,
+   "lat": 41.89,
+   "type": "capital",
+   "modern": "辽宁新宾县老城村",
+   "note": "努尔哈赤 1616 建国都"
+  },
+  {
+   "id": "kuandian",
+   "name": "宽甸六堡",
+   "lon": 124.3,
+   "lat": 40.73,
+   "type": "wei",
+   "modern": "辽宁宽甸县一带",
+   "note": "万历三十四年 (1606) 明弃"
+  },
+  {
+   "id": "dongjing_bao",
+   "name": "东京东路堡",
+   "lon": 124.1,
+   "lat": 41.55,
+   "type": "guan",
+   "modern": "辽宁新宾县东南",
+   "note": "萨尔浒之战东路刘綎军出发集结地"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

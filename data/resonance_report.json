@@ -8,13 +8,76 @@
       "综述考订"
     ],
     "scenes": [
+      "fushun",
+      "gaizhou",
+      "haizhou",
       "kaiyuan",
       "liaoyang",
       "sarhu",
-      "tieling"
+      "shenyang",
+      "tieling",
+      "yehe"
     ]
   },
   "scene_summary": [
+    {
+      "scene": "fushun",
+      "name": "fushun",
+      "total": 8,
+      "layers": {
+        "record": 5,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 5,
+        "清方": 1,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "event_count": 3,
+      "avg_resonance": 0.472,
+      "best_event": "event:fushun_fall",
+      "best_resonance": 0.75
+    },
+    {
+      "scene": "gaizhou",
+      "name": "gaizhou",
+      "total": 6,
+      "layers": {
+        "record": 3,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 4,
+        "清方": 1,
+        "综述考订": 1
+      },
+      "event_count": 2,
+      "avg_resonance": 0.389,
+      "best_event": "event:gaizhou_fall",
+      "best_resonance": 0.444
+    },
+    {
+      "scene": "haizhou",
+      "name": "haizhou",
+      "total": 7,
+      "layers": {
+        "record": 4,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 5,
+        "朝鲜": 1,
+        "清方": 1
+      },
+      "event_count": 3,
+      "avg_resonance": 0.472,
+      "best_event": "event:haizhou_fall",
+      "best_resonance": 0.75
+    },
     {
       "scene": "kaiyuan",
       "name": "开原",
@@ -77,6 +140,26 @@
       "best_resonance": 0.667
     },
     {
+      "scene": "shenyang",
+      "name": "shenyang",
+      "total": 24,
+      "layers": {
+        "record": 19,
+        "scholarship": 2,
+        "gap": 3
+      },
+      "party_counts": {
+        "明方": 14,
+        "清方": 5,
+        "朝鲜": 3,
+        "综述考订": 2
+      },
+      "event_count": 6,
+      "avg_resonance": 0.404,
+      "best_event": "event:shenyang_relief",
+      "best_resonance": 0.923
+    },
+    {
       "scene": "tieling",
       "name": "铁岭",
       "total": 20,
@@ -94,6 +177,25 @@
       "avg_resonance": 0.158,
       "best_event": "弃宽甸六堡",
       "best_resonance": 0.167
+    },
+    {
+      "scene": "yehe",
+      "name": "yehe",
+      "total": 7,
+      "layers": {
+        "record": 4,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "清方": 3,
+        "明方": 3,
+        "综述考订": 1
+      },
+      "event_count": 3,
+      "avg_resonance": 0.389,
+      "best_event": "event:yehe_fall",
+      "best_resonance": 0.667
     }
   ],
   "events": [
@@ -264,6 +366,52 @@
       }
     },
     {
+      "subject": "event:ice_walls",
+      "name": "event:ice_walls",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.167,
+      "party_counts": {
+        "明方": 2,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "S003",
+            "predicate": "以冰代水",
+            "value_text": "因辽东严冬土地冻裂, 难以取土, 戍卒汲水冻成厚冰垒墙, 覆以草土",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S022",
+            "predicate": "以冰筑墙的工程数据",
+            "value_text": "明代辽东诸卫以冰代水筑墙的工程数据 (墙厚 / 总长 / 用冰量) 在正史中无记载",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "shenyang"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:kuanbian_abandon",
       "name": "弃宽甸六堡",
       "scenes": [
@@ -316,6 +464,52 @@
             "scene": "tieling"
           }
         ]
+      }
+    },
+    {
+      "subject": "event:yehe_kaiyuan_attack",
+      "name": "event:yehe_kaiyuan_attack",
+      "scenes": [
+        "yehe"
+      ],
+      "scene_names": [
+        "yehe"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.167,
+      "party_counts": {
+        "明方": 2,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "Y002",
+            "predicate": "叶赫攻开原",
+            "value_text": "万历十一年 (1583) 叶赫与建州争夺敕书, 叶赫兵攻开原城",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "yehe"
+          },
+          {
+            "id": "Y011",
+            "predicate": "叶赫开原之战的兵力",
+            "value_text": "万历十一年叶赫兵攻开原的具体兵力 (数千 / 数百) 与战果在三方史料中数字不一",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "yehe"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
       }
     },
     {
@@ -437,6 +631,205 @@
       }
     },
     {
+      "subject": "event:fushun_founded",
+      "name": "event:fushun_founded",
+      "scenes": [
+        "fushun"
+      ],
+      "scene_names": [
+        "fushun"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "F001",
+            "predicate": "建置年",
+            "value_text": "洪武二十一年 (1388) 始置抚顺千户所, 隶沈阳中卫",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "fushun"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:fushun_mashi",
+      "name": "event:fushun_mashi",
+      "scenes": [
+        "fushun"
+      ],
+      "scene_names": [
+        "fushun"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "F002",
+            "predicate": "抚顺关开市",
+            "value_text": "万历四年 (1576) 设抚顺关马市, 与建州女真互市",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "fushun"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": [
+          {
+            "id": "F006",
+            "predicate": "马市作用",
+            "value_text": "学界主流：马市为努尔哈赤积累经济与情报资本, 是其崛起的关键",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "fushun"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:gaizhou_founded",
+      "name": "event:gaizhou_founded",
+      "scenes": [
+        "gaizhou"
+      ],
+      "scene_names": [
+        "gaizhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G001",
+            "predicate": "建置年",
+            "value_text": "洪武四年 (1371) 始置盖州卫, 与海州卫并为辽南二大卫",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "gaizhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:haizhou_founded",
+      "name": "event:haizhou_founded",
+      "scenes": [
+        "haizhou"
+      ],
+      "scene_names": [
+        "haizhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "H001",
+            "predicate": "建置年",
+            "value_text": "洪武九年 (1376) 始置海州卫, 初治牛家庄",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "haizhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:haizhou_mashi",
+      "name": "event:haizhou_mashi",
+      "scenes": [
+        "haizhou"
+      ],
+      "scene_names": [
+        "haizhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "H002",
+            "predicate": "朝鲜马市",
+            "value_text": "海州与朝鲜平安道设马市, 朝鲜贡马, 海州回赐丝绢",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "haizhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:hunhe_zhan",
       "name": "浑河之战（1621）",
       "scenes": [
@@ -551,6 +944,158 @@
       }
     },
     {
+      "subject": "event:shenyang_founded",
+      "name": "event:shenyang_founded",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "S024",
+            "predicate": "建置年份",
+            "value_text": "洪武二十一年 (1388) 明廷改元沈阳路为沈阳中卫, 一城三衙",
+            "source": "ming_taizu_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:shenyang_jurchen_capital",
+      "name": "event:shenyang_jurchen_capital",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "S012",
+            "predicate": "努尔哈赤迁都",
+            "value_text": "天命十年 (1625) 三月, 努尔哈赤自辽阳迁都沈阳, 改名盛京",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:shenyang_qing_capital",
+      "name": "event:shenyang_qing_capital",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "S013",
+            "predicate": "皇太极称帝",
+            "value_text": "崇德元年 (1636) 皇太极于盛京 (沈阳) 即皇帝位, 改国号大清",
+            "source": "qingshigao",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:shenyang_walls",
+      "name": "event:shenyang_walls",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "S002",
+            "predicate": "城垣甃砖",
+            "value_text": "成化四年 (1468) 都指挥阚能以砖石甃砌沈阳中卫城垣, 周 9 里 10 步",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:south_retreat",
       "name": "南路溃逃（李如柏）",
       "scenes": [
@@ -635,6 +1180,99 @@
       }
     },
     {
+      "subject": "event:yehe_founded",
+      "name": "event:yehe_founded",
+      "scenes": [
+        "yehe"
+      ],
+      "scene_names": [
+        "yehe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "Y001",
+            "predicate": "叶赫部始祖",
+            "value_text": "叶赫始祖为蒙古人星根达尔汉, 16 世纪中期因居叶赫勒河得名",
+            "source": "qingshigao",
+            "layer": "record",
+            "scene": "yehe"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:gaizhou_fall",
+      "name": "event:gaizhou_fall",
+      "scenes": [
+        "gaizhou"
+      ],
+      "scene_names": [
+        "gaizhou"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.444,
+      "party_counts": {
+        "明方": 2,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G002",
+            "predicate": "陷落年份",
+            "value_text": "天启元年三月, 海州陷后十日, 后金取盖州",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "gaizhou"
+          },
+          {
+            "id": "G010",
+            "predicate": "杨烈崛死亡细节",
+            "value_text": "盖州参将杨烈崛在城破时的具体死法 (阵亡 / 自刎 / 被俘后杀) 三方记载不一致",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "gaizhou"
+          }
+        ],
+        "清方": [
+          {
+            "id": "G003",
+            "predicate": "陷落兵力",
+            "value_text": "后金军号称四万, 实际兵力不详",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "gaizhou"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:abudaligang",
       "name": "阿布达里岗（东路·刘綎）",
       "scenes": [
@@ -676,6 +1314,181 @@
             "source": "zhazhong_rilu",
             "layer": "record",
             "scene": "sarhu"
+          }
+        ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yehe_fall",
+      "name": "event:yehe_fall",
+      "scenes": [
+        "yehe"
+      ],
+      "scene_names": [
+        "yehe"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.667,
+      "party_counts": {
+        "明方": 1,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "Y004",
+            "predicate": "明廷应对",
+            "value_text": "叶赫亡时, 明朝辽东已无兵可救, 巡抚袁应泰束手",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "yehe"
+          }
+        ],
+        "清方": [
+          {
+            "id": "Y003",
+            "predicate": "灭亡",
+            "value_text": "万历四十七年八月, 萨尔浒战后, 努尔哈赤攻叶赫东城西城, 布寨战死, 布扬古降",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "yehe"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:fushun_fall",
+      "name": "event:fushun_fall",
+      "scenes": [
+        "fushun"
+      ],
+      "scene_names": [
+        "fushun"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.75,
+      "party_counts": {
+        "明方": 2,
+        "清方": 1,
+        "朝鲜": 1,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "F003",
+            "predicate": "陷落年份",
+            "value_text": "万历四十六年四月, 努尔哈赤以「七大恨」告天, 取抚顺",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "fushun"
+          },
+          {
+            "id": "F010",
+            "predicate": "李永芳降前心理",
+            "value_text": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "fushun"
+          }
+        ],
+        "清方": [
+          {
+            "id": "F004",
+            "predicate": "李永芳降",
+            "value_text": "明游击李永芳以抚顺城降, 努尔哈赤待之厚, 赐以貂帽貂裘",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "fushun"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "F005",
+            "predicate": "朝鲜视角",
+            "value_text": "李朝闻抚顺陷, 大臣议「此贼终为中原大患」",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "fushun"
+          }
+        ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:haizhou_fall",
+      "name": "event:haizhou_fall",
+      "scenes": [
+        "haizhou"
+      ],
+      "scene_names": [
+        "haizhou"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.75,
+      "party_counts": {
+        "明方": 2,
+        "清方": 1,
+        "朝鲜": 1,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "H003",
+            "predicate": "陷落年份",
+            "value_text": "天启元年三月, 后金别将取海州, 参将刘廷宪战死",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "haizhou"
+          },
+          {
+            "id": "H011",
+            "predicate": "海州人口迁出",
+            "value_text": "海州陷后, 当地百姓命运 (被杀 / 被俘 / 逃往山东 / 逃往朝鲜) 的分流比例无精确数字",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "haizhou"
+          }
+        ],
+        "清方": [
+          {
+            "id": "H005",
+            "predicate": "毛文龙东江",
+            "value_text": "海州陷后, 毛文龙率 197 人逃入海中皮岛, 创东江镇",
+            "source": "qingshigao",
+            "layer": "scholarship",
+            "scene": "haizhou"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "H004",
+            "predicate": "朝鲜视角",
+            "value_text": "李朝接毛文龙急报, 知海州已陷, 议援明",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "haizhou"
           }
         ],
         "综述考订": []
@@ -798,6 +1611,143 @@
             "source": "wiki",
             "layer": "record",
             "scene": "kaiyuan"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:shenyang_relief",
+      "name": "event:shenyang_relief",
+      "scenes": [
+        "shenyang"
+      ],
+      "scene_names": [
+        "shenyang"
+      ],
+      "total": 13,
+      "gap_count": 1,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.0,
+      "gap_rate": 0.077,
+      "resonance": 0.923,
+      "party_counts": {
+        "明方": 6,
+        "清方": 3,
+        "朝鲜": 2,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "S005",
+            "predicate": "1621 攻陷日期",
+            "value_text": "天启元年三月十三日, 努尔哈赤亲率大军攻沈阳",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S007",
+            "predicate": "袁应泰决策",
+            "value_text": "袁应泰原本主张坚守, 但最终下令开城门出战, 败于野战",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S008",
+            "predicate": "陈策童仲揆援军",
+            "value_text": "陈策率浙兵, 童仲揆率川兵驰援, 自辽阳至沈阳一日夜赶到",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S010",
+            "predicate": "浑河之战明军损失",
+            "value_text": "陈策、童仲揆皆战死, 浙兵七千与朝鲜一万三千, 大部分死于此战",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S011",
+            "predicate": "袁应泰自缢",
+            "value_text": "沈阳城破, 袁应泰佩剑印自缢于官署",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S016",
+            "predicate": "兵力对比 (明方)",
+            "value_text": "明熹宗实录载袁应泰集兵号称 13 万 (实际缺额甚多)",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "清方": [
+          {
+            "id": "S006",
+            "predicate": "诱明军野战",
+            "value_text": "努尔哈赤以老弱之兵在城外耕作示弱, 精兵伏林间, 诱袁应泰出城野战",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S015",
+            "predicate": "兵力对比 (清方)",
+            "value_text": "《清太祖实录》载努尔哈赤「率大军」攻沈阳, 但未记具体兵力",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S019",
+            "predicate": "兵力对比冲突",
+            "value_text": "明方称集兵 13 万, 清方称明军降者 5103 员, 数字相差 25 倍",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "shenyang"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "S009",
+            "predicate": "朝鲜援军",
+            "value_text": "朝鲜元帅姜弘立率 1.3 万人赴援, 浑河之战被俘",
+            "source": "rimsangrok",
+            "layer": "record",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S023",
+            "predicate": "浑河之战朝鲜军死亡数字",
+            "value_text": "朝鲜援军 1.3 万人, 死伤数字在明、清、朝鲜三方记载差异甚大 (5000 / 6000 / 7000 不等)",
+            "source": "chao_xiandai",
+            "layer": "gap",
+            "scene": "shenyang"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "S014",
+            "predicate": "战因评价",
+            "value_text": "学界主流：袁应泰决策失误 (开关出战、放宽军律) 是沈阳失陷主因",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "shenyang"
+          },
+          {
+            "id": "S020",
+            "predicate": "人口迁出",
+            "value_text": "沈阳陷后, 城内百姓部分被迁至后金腹地, 部分逃往山东",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "shenyang"
           }
         ]
       }

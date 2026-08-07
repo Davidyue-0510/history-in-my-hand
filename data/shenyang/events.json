@@ -1,0 +1,10 @@
+{
+  "events": [
+    { "id": "shenyang_founded", "subject": "event:shenyang_founded", "year": 1388, "era": "洪武二十一年", "title": "沈阳中卫建置", "kind": "建置", "text": "明廷改元沈阳路为沈阳中卫, 隶辽东都司。沈阳中卫与中屯卫、抚顺千户所同城分治, 一城三衙, 各有军政。" },
+    { "id": "shenyang_walls", "subject": "event:shenyang_walls", "year": 1468, "era": "成化四年", "title": "甃砖城垣", "kind": "建置", "text": "都指挥阚能以砖石甃砌沈阳中卫城垣, 周 9 里 10 步, 城门 4。城垣规模自此定型, 此后两百年间仅小修补。" },
+    { "id": "ice_walls", "subject": "event:ice_walls", "year": 1468, "era": "成化四年", "title": "以冰代水筑墙", "kind": "建置", "text": "因辽东严冬土地冻裂, 难以取土筑墙。乃令戍卒汲水于壕, 夜间冻成厚冰, 晨起切割成方块, 垒为墙体, 再覆以草土。" },
+    { "id": "shenyang_relief", "subject": "event:shenyang_relief", "year": 1621, "era": "天启元年三月", "title": "浑河之战 · 沈阳陷落", "kind": "战事", "text": "后金努尔哈赤计诱沈阳守军, 沈阳陷。袁应泰自缢, 浑河桥头陈策、童仲揆战死, 朝鲜元帅姜弘立被俘。详见三方史料并列。" },
+    { "id": "shenyang_jurchen_capital", "subject": "event:shenyang_jurchen_capital", "year": 1625, "era": "天命十年", "title": "迁都沈阳", "kind": "迁都", "text": "天命十年三月, 努尔哈赤自辽阳迁都沈阳, 改称盛京。理由有二: 一控扼辽沈要冲, 二避开辽东明军水师炮火。" },
+    { "id": "shenyang_qing_capital", "subject": "event:shenyang_qing_capital", "year": 1636, "era": "崇德元年", "title": "皇太极称帝 · 盛京定鼎", "kind": "迁都", "text": "皇太极于盛京 (沈阳) 即皇帝位, 改国号为大清。盛京自此作为清初三京之一 (盛京、北京、东京), 直至顺治元年 (1644) 入关迁都北京。" }
+  ]
+}

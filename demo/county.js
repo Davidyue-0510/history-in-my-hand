@@ -4,22 +4,40 @@
  * 县 LOD 特有：建置沿革时间轴、三方史料并列、互市—军事关系图。
  * 本文件只投影，不裁判；真伪由用户的采信选择决定。
  *
- * 用法（每个切片一个薄封装 .js）：
- *   window.COUNTY_SCENE = 'kaiyuan';
- *   window.COUNTY_CONF  = { primary_place, dossier_event, lead, subject_names, route_assertions };
- * 然后本文件自启动。
+ * 用法（v0.5 起只有一个页面）：
+ *   county.html?scene=<key>          ← key 来自 data/scenes.json
+ * 标题 / 导语 / 三方说明 / subject 命名全部从 SANDBOX_DATA.scenes[key].meta 取，
+ * 而 meta 由 build.py 从注册表原样注入。所以「新增一个县」不碰任何前端文件。
+ *
+ * 旧的 window.COUNTY_SCENE / COUNTY_CONF 仍然兼容（kaiyuan.html 等老链接）。
  */
 (function () {
   'use strict';
 
   var SD = window.SANDBOX_DATA;
-  var sceneKey = window.COUNTY_SCENE || 'kaiyuan';
-  var CFG = window.COUNTY_CONF || {};
+
+  function qs(name) {
+    var m = new RegExp('[?&]' + name + '=([^&#]*)').exec(window.location.search);
+    return m ? decodeURIComponent(m[1].replace(/\+/g, ' ')) : null;
+  }
+  var sceneKey = qs('scene') || window.COUNTY_SCENE ||
+                 (SD.scene_order || []).filter(function (k) {
+                   return (SD.scenes[k].meta || {}).kind === 'county';
+                 })[0] || 'kaiyuan';
+
   var D = SD.scenes[sceneKey];
-  if (!D) { console.error('[county] 找不到场景', sceneKey); return; }
+  if (!D) {
+    document.body.innerHTML = '<div style="padding:48px;font:15px/1.8 system-ui;color:#2A2521">'
+      + '<h1 style="font-size:22px">找不到切片「' + String(sceneKey).replace(/</g, '&lt;') + '」</h1>'
+      + '<p>已注册的切片：' + (SD.scene_order || []).join('、') + '</p>'
+      + '<p><a href="index.html">← 回枢纽</a></p></div>';
+    return;
+  }
   var META = D.meta || {};
-  var PRIMARY = CFG.primary_place || META.primary_place || 'kaiyuan_cheng';
-  var DOSSIER = CFG.dossier_event || META.dossier_event || 'event:kaifa';
+  // 老页面的 COUNTY_CONF 优先级最高（向后兼容），其次是注册表 meta
+  var CFG = window.COUNTY_CONF || {};
+  var PRIMARY = CFG.primary_place || META.primary_place;
+  var DOSSIER = CFG.dossier_event || META.dossier_event;
 
   var TG = SD.terrain;                // 共享高程网格
   var RIVERS = SD.rivers;             // 共享江河
@@ -433,6 +451,33 @@
       TG.nx + '×' + TG.ny + '，' + TG.min + '–' + TG.max + ' m。') :
       '未载入高程网格。运行 tools/fetch_terrain.py 后重新编译。';
   }
+  /* 邻接切片：直接扫注册表顺序，新增县自动出现在这里 */
+  function renderSiblings() {
+    var box = document.getElementById('siblingList'); if (!box) return;
+    box.innerHTML = '';
+    var regions = {};
+    (SD.regions || []).forEach(function (r) { regions[r.id] = r.name; });
+    var lastRegion = null;
+    (SD.scene_order || Object.keys(SD.scenes)).forEach(function (k) {
+      var sc = SD.scenes[k]; if (!sc) return;
+      var m = sc.meta || {};
+      if (m.region && m.region !== lastRegion) {
+        lastRegion = m.region;
+        var h = document.createElement('div');
+        h.className = 'sib-region';
+        h.textContent = regions[m.region] || m.region;
+        box.appendChild(h);
+      }
+      var a = document.createElement('a');
+      a.className = 'rt sib' + (k === sceneKey ? ' on' : ' off');
+      a.href = m.page || ('county.html?scene=' + k);
+      a.innerHTML = '<div class="rt-box">' + (k === sceneKey ? '●' : '') + '</div>' +
+        '<span class="rt-name">' + (m.dossier_label || m.title || k) + '</span>' +
+        '<span class="sib-n">' + (sc.assertions || []).length + '</span>';
+      box.appendChild(a);
+    });
+  }
+
   function renderEventList() {
     var box = document.getElementById('eventList'); box.innerHTML = '';
     D.events.forEach(function (ev, i) {
@@ -449,11 +494,17 @@
   function renderTimeline() {
     var track = document.getElementById('tlTrack'); track.innerHTML = '';
     var n = D.events.length;
+    if (!n) {
+      document.getElementById('dateEra').textContent = '—';
+      document.getElementById('dateLabel').textContent = '本切片尚未录入建置沿革';
+      return;
+    }
     D.events.forEach(function (ev, i) {
       var node = document.createElement('div');
       var cls = 'tl-node'; if (ev.kind === '战事') cls += ' key';
       if (i === state.t) cls += ' now';
-      node.className = cls; node.style.left = (i / (n - 1) * 100) + '%';
+      // n === 1 时 (n-1) 为 0，除法得 NaN——单事件切片会整条时间轴消失
+      node.className = cls; node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
       if (i === 0) node.style.transform = 'translateX(-14px)';
       if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
       node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + ev.era + '</div>';
@@ -461,7 +512,7 @@
       node.addEventListener('click', function () { state.t = i; refresh(); goTab('yan'); });
       track.appendChild(node);
     });
-    var cur = D.events[state.t];
+    var cur = D.events[Math.min(state.t, n - 1)];
     document.getElementById('dateEra').textContent = cur.era;
     document.getElementById('dateLabel').textContent = cur.title;
   }
@@ -584,6 +635,46 @@
     document.getElementById('conflictCount').textContent = live + ' / ' + D.conflicts.length;
     document.getElementById('tabDot').style.display = live ? '' : 'none';
   }
+  /* ═══════════ 研究线索（gap 的闭环）═══════════ */
+  /* 缺口不该只是界面上一个灰点。每条 gap 断言携带 lead 块（缺什么 / 去哪找 /
+     需要什么技能 / 验收标准），tools/leads.py 汇总成 data/leads.json，
+     这里按当前切片过滤呈现——这是把「我们不知道什么」变成「谁可以来做」。 */
+  var SKILL_COLOR = {
+    '史料': '#8C6239', '古文': '#8C6239', '朝鲜语': '#2E7D8F', '满语': '#7B5C3E',
+    'GIS': '#3E8E6E', '编程': '#5A3A6E', '设计': '#C77B30', '统计': '#2E7D8F'
+  };
+  function renderLeads() {
+    var box = document.getElementById('leadList'); if (!box) return;
+    var all = ((SD.leads || {}).leads) || [];
+    var mine = all.filter(function (l) { return l.scene === sceneKey; });
+    box.innerHTML = '';
+    document.getElementById('leadCount').textContent = mine.length;
+    var dot = document.getElementById('leadDot');
+    if (dot) dot.style.display = mine.length ? '' : 'none';
+    if (!mine.length) {
+      box.innerHTML = '<div class="empty-hint">本切片暂无登记的研究线索。<br><br>' +
+        '这多半不是因为没有缺口，而是因为缺口还没被写成 gap 断言。</div>';
+      return;
+    }
+    mine.forEach(function (l) {
+      var n = document.createElement('div');
+      n.className = 'cf lead';
+      var chips = (l.skills || []).map(function (s) {
+        return '<span class="cf-chip" style="--cc:' + (SKILL_COLOR[s] || '#7A7466') + '">' + s + '</span>';
+      }).join('');
+      n.innerHTML = '<div class="cf-top"><span class="cf-sub">' + l.title + '</span>' +
+        '<span class="cf-spread">' + (l.effort || '—') + '</span></div>' +
+        '<div class="cf-kind">' + (l.missing || '') + '</div>' +
+        (l.where ? '<div class="lead-where"><b>去哪找</b>' + l.where + '</div>' : '') +
+        (l.accept ? '<div class="lead-where"><b>怎么算做完</b>' + l.accept + '</div>' : '') +
+        '<div class="cf-vals">' + chips + '</div>' +
+        '<div class="lead-foot">' + l.id +
+        (l.issue_url ? ' · <a href="' + l.issue_url + '" target="_blank" rel="noopener">认领 →</a>' : '') +
+        '</div>';
+      box.appendChild(n);
+    });
+  }
+
   function subjectName(s) {
     var map = CFG.subject_names || META.subject_names || {};
     if (map[s]) return map[s];
@@ -765,19 +856,26 @@
 
   /* ═══════════ 动态顶栏 / 面板标题 ═══════════ */
   (function fillTitles() {
-    var tb = document.querySelector('#topbar .title b'); if (tb) tb.textContent = META.title || sceneKey;
+    var name = META.title || sceneKey;
+    var tb = document.querySelector('#topbar .title b'); if (tb) tb.textContent = name;
     var ts = document.querySelector('#topbar .title .sub'); if (ts) ts.textContent = META.subtitle || '';
-    var phL = document.querySelector('#panelLeft .panel-head span'); if (phL) phL.textContent = (META.title || sceneKey) + ' · 数据层';
-    var phR = document.querySelector('#panelRight .panel-head span'); if (phR) phR.textContent = (META.title || sceneKey) + ' · 分析';
-    var back = document.getElementById('backLink'); if (back) back.textContent = '← ' + (META.back || '萨尔浒');
-    var pn = document.querySelector('.parties-note'); if (pn && CFG.parties_note) pn.textContent = CFG.parties_note;
+    var phL = document.querySelector('#panelLeft .panel-head span'); if (phL) phL.textContent = name + ' · 数据层';
+    var phR = document.querySelector('#panelRight .panel-head span'); if (phR) phR.textContent = name + ' · 分析';
+    var back = document.getElementById('backLink');
+    if (back) {
+      back.textContent = '← ' + (META.back || '枢纽');
+      if (!META.back || META.back === '枢纽') back.href = 'index.html';
+    }
+    var pn = document.querySelector('.parties-note');
+    var note = CFG.parties_note || META.parties_note;
+    if (pn && note) pn.textContent = note;
   })();
 
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
-    renderTimeline(); drawDynamic(); drawTerrain();
-    renderEvents(); renderParties(); renderConflicts(); renderInspect();
+    renderSiblings(); renderTimeline(); drawDynamic(); drawTerrain();
+    renderEvents(); renderParties(); renderConflicts(); renderLeads(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
   }

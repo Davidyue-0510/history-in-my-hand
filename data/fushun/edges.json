@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "fushun",
+   "to": "shenyang_cheng",
+   "type": "mil",
+   "label": "抚顺—沈阳防线"
+  },
+  {
+   "from": "fushun",
+   "to": "fushunguan",
+   "type": "mashi",
+   "label": "抚顺关马市"
+  },
+  {
+   "from": "fushunguan",
+   "to": "hetuala",
+   "type": "mashi",
+   "label": "入贡通道"
+  },
+  {
+   "from": "fushun",
+   "to": "kuandian",
+   "type": "admin",
+   "label": "东向堡群"
+  },
+  {
+   "from": "fushun",
+   "to": "dongjing_bao",
+   "type": "mil",
+   "label": "东路军集结"
+  }
+ ]
+}

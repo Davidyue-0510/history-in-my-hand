@@ -1,0 +1,34 @@
+{
+  "_comment": "辽东走廊跨切片行军路线（v0.5）。本表把若干县级切片串成可视化的走廊：每条走廊由若干 place_id (跨切片公共 id) 组成，便于在 hub 上叠加显示。本字段下版本不再硬编码——build.py 会自动从 registered slice 的 places 校验每个节点是否存在。",
+  "_schema_version": "0.1",
+  "_consumers": ["demo/county.js", "demo/hub.js"],
+  "corridors": [
+    {
+      "id": "liaobei_corridor",
+      "name": "辽北走廊",
+      "subtitle": "开原—铁岭—沈阳 · 万历末最先崩塌的一段",
+      "color": "#A0473A",
+      "nodes": ["kaiyuan_cheng", "tieling_cheng", "shenyang_cheng", "fushun", "hetuala"],
+      "key_era": "万历四十七年 (1619) 至天启元年 (1621)",
+      "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
+    },
+    {
+      "id": "liaodong_corridor",
+      "name": "辽东走廊",
+      "subtitle": "沈阳—辽阳—海州—盖州 · 天启元年三月连锁陷落",
+      "color": "#C77B30",
+      "nodes": ["shenyang_cheng", "liaoyang_cheng", "anshan", "haizhou_cheng", "gaizhou_cheng"],
+      "key_era": "天启元年 (1621) 三月",
+      "summary": "1621 三月十三沈阳陷, 三月十九辽阳陷, 海州盖州六至十日内相继陷。后金同年南下奠定辽南控制。三月之役是 1619 萨尔浒之战后的总清算。"
+    },
+    {
+      "id": "jurchen_corridor",
+      "name": "建州—扈伦走廊",
+      "subtitle": "赫图阿拉 ↔ 叶赫 ↔ 开原 · 明军与建州女真的羁縻区",
+      "color": "#3E8E6E",
+      "nodes": ["hetuala", "dongyehe", "xiyehe", "kaiyuan_cheng"],
+      "key_era": "16 世纪中期至万历四十七年 (1619)",
+      "summary": "明廷通过开原马市羁縻叶赫等扈伦四部, 同时与建州女真 (赫图阿拉) 互市。万历四十七年叶赫亡, 开原随即陷落, 此走廊消失。"
+    }
+  ]
+}

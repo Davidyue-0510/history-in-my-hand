@@ -1,0 +1,28 @@
+{
+ "edges": [
+  {
+   "from": "haizhou_cheng",
+   "to": "liaoyang_cheng",
+   "type": "admin",
+   "label": "海州—辽阳驿道"
+  },
+  {
+   "from": "haizhou_cheng",
+   "to": "anshan",
+   "type": "admin",
+   "label": "海州—鞍山驿道"
+  },
+  {
+   "from": "haizhou_cheng",
+   "to": "gaizhou_cheng",
+   "type": "admin",
+   "label": "海州—盖州驿道"
+  },
+  {
+   "from": "haizhou_cheng",
+   "to": "niuzhuang",
+   "type": "admin",
+   "label": "海州卫—牛庄"
+  }
+ ]
+}

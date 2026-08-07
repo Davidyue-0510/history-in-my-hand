@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "haizhou_founded",
+   "subject": "event:haizhou_founded",
+   "year": 1376,
+   "era": "洪武九年",
+   "title": "海州卫建置",
+   "kind": "建置",
+   "text": "明廷于辽阳以南置海州卫, 初治牛家庄, 后徙今海城。"
+  },
+  {
+   "id": "haizhou_mashi",
+   "subject": "event:haizhou_mashi",
+   "year": 1404,
+   "era": "永乐二年",
+   "title": "海州设马市",
+   "kind": "互市",
+   "text": "海州与朝鲜平安道设马市, 每年开市一次, 朝鲜贡马。"
+  },
+  {
+   "id": "haizhou_fall",
+   "subject": "event:haizhou_fall",
+   "year": 1621,
+   "era": "天启元年三月",
+   "title": "海州陷落",
+   "kind": "战事",
+   "text": "沈阳陷后六日, 后金别将攻海州, 参将刘廷宪战死, 城破。"
+  }
+ ]
+}

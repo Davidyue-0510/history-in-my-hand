@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>小菜狗的文明图景 · 合作者门户</title>
+<style>
+  :root{
+    --paper:#F3EBD9; --paper2:#FBF6EA; --ink:#2A2521; --ink2:#5B5249;
+    --earth:#8C6239; --moss:#6B7A3A; --rust:#A8421C; --line:#D8CBB0;
+    --shadow:0 1px 0 #fff inset,0 8px 24px rgba(42,37,33,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    color:var(--ink); background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--earth);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}
+
+  /* hero */
+  header.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#F7F1E2,#EFE6CF)}
+  header.hero svg{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+  .hero-inner{position:relative;padding:72px 0 56px}
+  .kicker{letter-spacing:.32em;font-size:12px;color:var(--earth);text-transform:uppercase;margin:0 0 14px}
+  h1{font-size:42px;line-height:1.15;margin:0 0 18px;font-weight:800;letter-spacing:.5px}
+  h1 .sub{display:block;font-size:18px;font-weight:500;color:var(--ink2);margin-top:10px;letter-spacing:0}
+  .lede{font-size:18px;color:var(--ink2);max-width:680px;margin:0 0 26px}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;
+    border:1px solid var(--earth);transition:.15s}
+  .btn.primary{background:var(--earth);color:#FBF6EA}
+  .btn.primary:hover{background:#744f2d;text-decoration:none}
+  .btn.ghost{background:transparent;color:var(--earth)}
+  .btn.ghost:hover{background:rgba(140,98,57,.08);text-decoration:none}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border:1px solid var(--line);
+    border-radius:14px;overflow:hidden;background:var(--paper2);margin:-32px 0 0;position:relative;box-shadow:var(--shadow)}
+  .stat{padding:20px 14px;text-align:center;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0}
+  .stat .n{font-size:30px;font-weight:800;color:var(--ink);line-height:1}
+  .stat .l{font-size:13px;color:var(--ink2);margin-top:8px}
+
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:26px;margin:0 0 8px;letter-spacing:.5px}
+  .sec-sub{color:var(--ink2);margin:0 0 28px;max-width:720px}
+
+  /* principles */
+  .prin{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .prin .card{background:var(--paper2);border:1px solid var(--line);border-radius:14px;padding:22px 22px}
+  .prin .card h3{margin:0 0 8px;font-size:18px;display:flex;align-items:center;gap:10px}
+  .prin .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+  .prin .card p{margin:0;color:var(--ink2);font-size:15px}
+
+  /* roles */
+  .roles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .role{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:0;overflow:hidden;
+    display:flex;flex-direction:column;transition:.15s}
+  .role:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .role .top{padding:22px 22px 16px;border-bottom:1px solid var(--line)}
+  .role .emoji{font-size:30px;line-height:1}
+  .role h3{margin:12px 0 4px;font-size:20px}
+  .role .tag{display:inline-block;font-size:12px;color:#FBF6EA;background:var(--earth);
+    padding:2px 10px;border-radius:99px;letter-spacing:.05em}
+  .role .body{padding:18px 22px 22px;flex:1;display:flex;flex-direction:column;gap:14px}
+  .role .blk{font-size:14px}
+  .role .blk .h{font-weight:700;color:var(--ink);margin-bottom:4px;font-size:13px;letter-spacing:.04em}
+  .role .blk .c{color:var(--ink2)}
+  .role code{font-family:"SFMono-Regular",Consolas,monospace;font-size:12.5px;background:#EFE6CF;
+    padding:2px 6px;border-radius:5px;color:var(--ink)}
+  .role .diff{font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;align-self:flex-start}
+  .diff.easy{background:#E7EED5;color:#4f5d22}
+  .diff.mid{background:#F6E7CF;color:#8a5a1e}
+  .role .more{margin-top:auto;font-weight:600;color:var(--earth)}
+
+  /* leads */
+  .leads-note{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+  .leads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
+  .lead{background:var(--paper2);border:1px solid var(--line);border-left:4px solid var(--moss);
+    border-radius:10px;padding:14px 16px}
+  .lead .meta{font-size:12px;color:var(--ink2);margin-bottom:6px}
+  .lead .meta b{color:var(--ink)}
+  .lead .t{font-size:14px;color:var(--ink);margin:0 0 8px}
+  .lead .skills{display:flex;gap:6px;flex-wrap:wrap}
+  .lead .sk{font-size:11px;background:#EEF1E2;color:#566327;padding:1px 8px;border-radius:99px}
+  .lead .ef{font-size:11px;color:var(--ink2);margin-top:8px}
+  .leads-err{color:var(--rust);font-size:14px}
+
+  /* quickstart */
+  pre.code{background:#2A2521;color:#F3EBD9;border-radius:12px;padding:20px 22px;overflow:auto;
+    font:13.5px/1.7 "SFMono-Regular",Consolas,monospace;margin:0}
+  pre.code .c{color:#9a8f7a}
+  .qs-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+
+  .links{display:flex;gap:14px;flex-wrap:wrap}
+  .links a{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:10px;
+    background:var(--paper2);font-weight:600}
+  .links a:hover{background:#fff;text-decoration:none}
+
+  footer{padding:34px 0 60px;color:var(--ink2);font-size:13px;text-align:center}
+  footer b{color:var(--ink)}
+
+  @media (max-width:880px){
+    .stats{grid-template-columns:repeat(3,1fr)}
+    .stat:nth-child(3n){border-right:0}
+    .prin,.roles,.leads-grid,.qs-grid{grid-template-columns:1fr}
+    h1{font-size:32px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <svg viewBox="0 0 1080 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#C9B98F" stroke-width="1.1">
+      <path d="M-20 320 C 200 270, 360 350, 560 300 S 900 250, 1120 300"/>
+      <path d="M-20 280 C 200 230, 360 310, 560 260 S 900 210, 1120 260"/>
+      <path d="M-20 240 C 200 190, 360 270, 560 220 S 900 170, 1120 220"/>
+      <path d="M-20 200 C 200 150, 360 230, 560 180 S 900 130, 1120 180"/>
+      <path d="M-20 160 C 200 110, 360 190, 560 140 S 900 90, 1120 140"/>
+      <path d="M-20 120 C 200 70, 360 150, 560 100 S 900 50, 1120 100"/>
+      <path d="M-20 80 C 200 30, 360 110, 560 60 S 900 10, 1120 60"/>
+    </g>
+    <g fill="#8C6239" opacity=".55">
+      <circle cx="250" cy="250" r="3"/><circle cx="540" cy="210" r="3"/>
+      <circle cx="820" cy="170" r="3"/><circle cx="390" cy="300" r="2.5"/>
+      <circle cx="700" cy="280" r="2.5"/>
+    </g>
+  </svg>
+  <div class="wrap hero-inner">
+    <p class="kicker">Assertion-Driven History · 共享真实地形</p>
+    <h1>小菜狗的文明图景
+      <span class="sub">立场靠来源派生 —— 断言驱动的明清之际东北历史沙盒</span>
+    </h1>
+    <p class="lede">同一片辽东山地，明方、清方、朝鲜三方史料各说各话。我们不替你下结论，
+      只把每条说法拆成可核验的「断言」，标出来源与偏向，让你在真实地形上自己看冲突在哪里、缺口在哪里。</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="index.html">进入枢纽 →</a>
+      <a class="btn ghost" href="county.html?scene=shenyang">看一个切片</a>
+      <a class="btn ghost" href="../CONTRIBUTORS.md">成为合作者</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><div class="n">9</div><div class="l">历史切片</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">地理分区</div></div>
+    <div class="stat"><div class="n">17</div><div class="l">一手/二手史料</div></div>
+    <div class="stat"><div class="n">175</div><div class="l">已录入断言</div></div>
+    <div class="stat"><div class="n">19</div><div class="l">可认领研究线索</div></div>
+    <div class="stat"><div class="n">19</div><div class="l">已标史料缺口</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>这个项目在坚持什么</h2>
+    <p class="sec-sub">不是又一份「标准叙事」。四条工程主张决定了它和所有历史可视化产品的分界线——也决定了合作者能往哪里使劲。</p>
+    <div class="prin">
+      <div class="card">
+        <h3><span class="dot" style="background:var(--earth)"></span>立场靠来源派生</h3>
+        <p>每条断言的「明方 / 清方 / 朝鲜 / 综述考订」立场，不是人手贴标签，而是由 <code>source.party</code> 经受控词表自动派生。改一处词表，全站共振度自动重算。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--rust)"></span>缺口是一等公民</h3>
+        <p>「我们不知道」和「我们知道」同等重要。每条史料缺口都写成可认领的「研究线索」，挂给合作者去补——这正是本页下方 19 条线索的来历。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:var(--moss)"></span>断言驱动，不裁判</h3>
+        <p>内核只投影、不裁判。真伪由读者的「来源采信开关」决定。关掉二手综述，看哪些结论会塌——这是对来源依赖度的可视化压力测试。</p>
+      </div>
+      <div class="card">
+        <h3><span class="dot" style="background:#3F6B8A"></span>叠在真实地形上</h3>
+        <p>所有地点投影到 ASTER 真实高程网格（辽东 122–126.8°E，40–43.3°N）。城、关、河、边墙都在你能查到的坐标上，不是示意图。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="leads-note">
+      <div>
+        <h2>当前可认领的研究线索</h2>
+        <p class="sec-sub">从各切片的「史料缺口」自动汇总。认领一条，补上史料与算法，它就从「缺口」变成「断言」。下列数据实时读取 <code>data/leads.json</code>。</p>
+      </div>
+    </div>
+    <div id="leads" class="leads-grid"><div class="leads-err">正在加载线索…</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>三种合作者，三种入口</h2>
+    <p class="sec-sub">这个版本就是为你拉人入局准备的。下面三类人各有一张上手地图——该碰哪些文件、第一个能交的活是什么、难度几颗星。完整指引见 <a href="../CONTRIBUTORS.md">CONTRIBUTORS.md</a>。</p>
+    <div class="roles">
+
+      <div class="role">
+        <div class="top">
+          <div class="emoji">🎨</div>
+          <h3>美工 / 界面设计</h3>
+          <span class="tag">视觉 · 交互</span>
+        </div>
+        <div class="body">
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">地图配色、图层可读性、移动端排版、缺口/冲突的视觉语言。当前是工程师审美，需要专业眼睛。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>demo/kaiyuan.css</code> · <code>demo/county.html</code> 内联样式 · 各页 SVG 投影</div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">给「缺口=虚线 / 冲突=双色描边 / 共振度=色温」定一套图例，替换现在散落的文字说明。</div></div>
+          <span class="diff easy">难度 ★☆☆</span>
+          <a class="more" href="../CONTRIBUTORS.md#art">详细指引 →</a>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="top">
+          <div class="emoji">⚙️</div>
+          <h3>程序优化评估</h3>
+          <span class="tag">架构 · 性能</span>
+        </div>
+        <div class="body">
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">审视 <code>tools/*.py</code> 编译链与 <code>county.js</code> 前端引擎，给出重构/性能/可维护性评估，不必亲自写。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/build.py</code> · <code>tools/lint.py</code> · <code>tools/resonance.py</code> · <code>demo/county.js</code></div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">写一份「九切片加载时长 & 单文件体积」基准报告，指出最该先优化的 1–2 处。</div></div>
+          <span class="diff mid">难度 ★★☆</span>
+          <a class="more" href="../CONTRIBUTORS.md#eng">详细指引 →</a>
+        </div>
+      </div>
+
+      <div class="role">
+        <div class="top">
+          <div class="emoji">📜</div>
+          <h3>数字人文从业人</h3>
+          <span class="tag">史料 · 方法</span>
+        </div>
+        <div class="body">
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">核实史料、补录断言、把「缺口」认领成「线索」。这是项目的内容心脏，最直接决定质量。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>data/&lt;切片&gt;/assertions.jsonl</code> · <code>data/leads.json</code> · <code>data/vocab.json</code></div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">认领下方任一条线索（如「铁岭陷落兵数详考」），补 1–3 条带出处的断言，跑通工具链。</div></div>
+          <span class="diff mid">难度 ★★☆</span>
+          <a class="more" href="../CONTRIBUTORS.md#dh">详细指引 →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>怎么跑起来</h2>
+    <p class="sec-sub">纯静态 + Python 守门工具链，无前端框架、无数据库。本地看成品只需一个静态服务器。</p>
+    <div class="qs-grid">
+      <div>
+        <pre class="code"><span class="c"># 1. 克隆</span>
+git clone https://github.com/davidyue-0510/history-in-my-hand.git
+cd history-in-my-hand
+
+<span class="c"># 2. 看成品（任意静态服务器）</span>
+python -m http.server 8787
+<span class="c"># 打开 http://localhost:8787/demo/portal.html</span>
+
+<span class="c"># 3. 改了数据后，过三道闸门</span>
+python tools/lint.py         <span class="c"># 守门员：数据完整性</span>
+python tools/test_assertions.py  <span class="c"># 不变量回归</span>
+python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pre>
+      </div>
+      <div>
+        <h3 style="margin-top:0">三个角色的第一条命令都一样</h3>
+        <p class="sec-sub">区别只在改完之后碰哪类文件。守门工具链会拦住「空引文」「分类散落」「时间轴脱钩」这类会静默污染下游计算的错误——所以任何提交都先过 lint。</p>
+        <p class="sec-sub">想认领研究线索？直接去 <code>data/&lt;切片&gt;/assertions.jsonl</code> 加一条 <code>layer:"gap"</code> 带 <code>lead</code> 块的断言，<code>tools/leads.py</code> 会自动把它收进总览。</p>
+        <div class="links" style="margin-top:18px">
+          <a href="index.html">枢纽</a>
+          <a href="county.html?scene=shenyang">沈阳切片</a>
+          <a href="../CONTRIBUTORS.md">贡献者指南</a>
+          <a href="https://github.com/davidyue-0510/history-in-my-hand">GitHub 仓库</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>小菜狗的文明图景</b> · 断言驱动的明清之际东北历史沙盒 · v0.5</p>
+    <p>历史由多种因素导致，某种意义上其实是必然——本项目的全部意义，是让「多种因素」可以被一条条看见、被一条条质疑。</p>
+    <p>许可与署名见仓库 README。欢迎拉你的朋友入局。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var SCENE_TITLE = {
+    sarhu:"萨尔浒之战", kaiyuan:"开原", tieling:"铁岭", yehe:"叶赫",
+    liaoyang:"辽阳", shenyang:"沈阳", fushun:"抚顺", haizhou:"海州", gaizhou:"盖州"
+  };
+  function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
+  fetch('../data/leads.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+    var box=document.getElementById('leads');
+    box.innerHTML='';
+    var leads=(j&&j.leads)||[];
+    if(!leads.length){box.appendChild(el('div','leads-err','暂无线索。'));return;}
+    leads.forEach(function(l){
+      var card=el('div','lead');
+      var meta=el('div','meta');
+      meta.innerHTML='<b>'+(SCENE_TITLE[l.scene]||l.scene)+'</b> · '+String(l.id)+
+        (l.effort&&l.effort!=='—'?' · 预估 '+l.effort:'');
+      var t=el('p','t', l.title||l.subject||'');
+      var sk=el('div','skills');
+      (l.skills||[]).forEach(function(s){sk.appendChild(el('span','sk',s));});
+      var ef=el('div','ef','验收：'+(l.accept||'—'));
+      card.appendChild(meta);card.appendChild(t);card.appendChild(sk);card.appendChild(ef);
+      box.appendChild(card);
+    });
+  }).catch(function(e){
+    var box=document.getElementById('leads');
+    box.innerHTML='';
+    box.appendChild(el('div','leads-err',
+      '无法实时读取 data/leads.json（可能是本地 file:// 打开）。请通过静态服务器访问，或见各切片「线索」页签。'));
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+ "edges": [
+  {
+   "from": "xiyehe",
+   "to": "dongyehe",
+   "type": "tribe",
+   "label": "叶赫东西二城"
+  },
+  {
+   "from": "xiyehe",
+   "to": "hetuala",
+   "type": "mil",
+   "label": "叶赫—建州"
+  },
+  {
+   "from": "xiyehe",
+   "to": "kaiyuan_cheng",
+   "type": "mashi",
+   "label": "叶赫—开原马市"
+  },
+  {
+   "from": "dongyehe",
+   "to": "kaiyuan_cheng",
+   "type": "mashi",
+   "label": "叶赫东—开原马市"
+  }
+ ]
+}

@@ -7,7 +7,10 @@
     自动聚合成一个「冲突组」。录入者只需忠实记录各版本说了什么，
     矛盾会自己浮现 —— 这是本项目与所有历史可视化产品的分界线。
 
-    多场景：萨尔浒（战役切片）+ 开原（县级 LOD 切片）共用一套地形与江河边墙。
+    v0.5 起，场景不再硬编码在本文件里。切片注册表是 data/scenes.json，
+    本文件只负责遍历它。新增一个县 = 建 data/<dir>/ 六件套 + 注册表加一条，
+    build.py / lint.py / resonance.py / hub.js 全部零改动。
+
     地形网格与江河边墙是「单一真相」，不随场景复制。
 
 用法：
@@ -19,15 +22,50 @@ import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SARHU = os.path.join(ROOT, "data", "sarhu")
-KAIYUAN = os.path.join(ROOT, "data", "kaiyuan")
-TIELING = os.path.join(ROOT, "data", "tieling")
-LIAOYANG = os.path.join(ROOT, "data", "liaoyang")
+DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "demo", "data.js")
-TERRAIN = os.path.join(ROOT, "data", "terrain", "liaodong_grid.json")
-VOCAB = os.path.join(ROOT, "data", "vocab.json")
+TERRAIN = os.path.join(DATA, "terrain", "liaodong_grid.json")
+VOCAB = os.path.join(DATA, "vocab.json")
+REGISTRY = os.path.join(DATA, "scenes.json")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+# meta 里属于「配置」而非「内容」的键，不需要原样带进 bundle.meta 的字段
+_REGISTRY_ONLY = {"dir", "extra_files"}
+
+
+def load_registry():
+    """读取切片注册表，补全缺省字段。其他工具（lint / resonance）也调用本函数，
+    以保证「有哪些切片」这个问题在全项目只有一个答案。"""
+    with open(REGISTRY, "r", encoding="utf-8") as f:
+        reg = json.load(f)
+    scenes = reg["scenes"]
+    order = reg.get("order") or list(scenes.keys())
+    # 注册表里写了但 order 漏掉的，追加在末尾——不静默丢弃
+    for k in scenes:
+        if k not in order:
+            order.append(k)
+    resolved = []
+    for key in order:
+        sc = scenes.get(key)
+        if sc is None:
+            print("  ! 注册表 order 中的 '%s' 没有对应的 scenes 条目，跳过" % key)
+            continue
+        sc = dict(sc)
+        sc.setdefault("dir", key)
+        sc.setdefault("kind", "county")
+        sc.setdefault("extra_files", ["events", "edges"])
+        if "page" not in sc:
+            sc["page"] = ("%s.html" % key) if sc["kind"] == "battle" \
+                else ("county.html?scene=%s" % key)
+        sc["_key"] = key
+        resolved.append(sc)
+    reg["_resolved"] = resolved
+    return reg
+
+
+def scene_dir(sc):
+    return os.path.join(DATA, sc["dir"])
 
 
 def load_json(dirpath, name):
@@ -45,7 +83,7 @@ def load_jsonl(dirpath, name):
             try:
                 rows.append(json.loads(line))
             except json.JSONDecodeError as e:
-                sys.exit("assertions.jsonl 第 %d 行解析失败: %s" % (lineno, e))
+                sys.exit("%s/assertions.jsonl 第 %d 行解析失败: %s" % (dirpath, lineno, e))
     return rows
 
 
@@ -94,8 +132,9 @@ def build_conflicts(assertions):
     return conflicts
 
 
-def build_scene(dirpath, meta, extra_files):
+def build_scene(sc):
     """构建单个场景包（不含地形——地形在所有场景间共享）。"""
+    dirpath = scene_dir(sc)
     sources = load_json(dirpath, "sources.json")
     places = load_json(dirpath, "places.json")
     persons = load_json(dirpath, "persons.json")
@@ -106,8 +145,9 @@ def build_scene(dirpath, meta, extra_files):
         s = src_by_id.get(a["source"])
         a["_party"] = s["party"] if s else "unknown"
 
-    conflicts = build_conflicts(assertions)
-    gaps = [a["id"] for a in assertions if a.get("layer") == "gap"]
+    meta = {k: v for k, v in sc.items()
+            if k not in _REGISTRY_ONLY and not k.startswith("_")}
+    meta["key"] = sc["_key"]
 
     bundle = {
         "meta": meta,
@@ -115,12 +155,35 @@ def build_scene(dirpath, meta, extra_files):
         "places": places["places"],
         "persons": persons["persons"],
         "assertions": assertions,
-        "conflicts": conflicts,
-        "gaps": gaps,
+        "conflicts": build_conflicts(assertions),
+        "gaps": [a["id"] for a in assertions if a.get("layer") == "gap"],
     }
-    bundle["_raw"] = {}
-    for f in extra_files:
-        bundle["_raw"][f] = load_json(dirpath, f + ".json")
+
+    # 额外文件：约定 <name>.json 的顶层键就叫 <name>，直接摊平到 bundle。
+    # 顶层键不同名的（routes 里还带 timeline、route_kaiyuan 里带 report/verdict）
+    # 在下面的 hook 里处理——这些是切片的特有结构，不是通例。
+    raw = {}
+    for f in sc["extra_files"]:
+        raw[f] = load_json(dirpath, f + ".json")
+        if f in raw[f]:
+            bundle[f] = raw[f][f]
+
+    # 战役切片的行军路线
+    if "routes" in raw:
+        bundle["timeline"] = raw["routes"].get("timeline", [])
+        bundle["columns"] = persons.get("columns", [])
+    if "engagements" in raw:
+        bundle["attrition"] = raw["engagements"].get("attrition")
+        bundle["fatigue_weight"] = raw["engagements"].get("fatigue_weight")
+    # 县级切片的单条进军路线（文件名 route_<key>.json）
+    for f in sc["extra_files"]:
+        if f.startswith("route_"):
+            bundle["route"] = raw[f].get("route")
+            bundle["route_report"] = raw[f].get("report")
+            bundle["route_verdict"] = raw[f].get("verdict")
+
+    bundle.setdefault("events", [])
+    bundle.setdefault("edges", [])
     return bundle
 
 
@@ -142,12 +205,17 @@ def load_terrain_grid():
 
 
 def main():
+    reg = load_registry()
+    resolved = reg["_resolved"]
+
     sd = {
         "meta": {
             "project": "小菜狗的文明图景 / Vege-civilization",
-            "slice": "multi-scene (sarhu-1619 + kaiyuan / tieling / liaoyang county)",
-            "note": "演示切片。所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
-        }
+            "slice": "multi-scene · %d 个切片" % len(resolved),
+            "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
+        },
+        "regions": reg.get("regions", []),
+        "scene_order": [sc["_key"] for sc in resolved],
     }
 
     # 共享受控词表（立场派生规则的单一真值，见 data/vocab.json）
@@ -159,93 +227,50 @@ def main():
     terr, grid = load_terrain_grid()
     sd["terrain"] = grid
 
-    # 共享江河 / 边墙（取自萨尔浒片层的辽东风土，投影范围一致，开原在其内）
-    sarhu_places = load_json(SARHU, "places.json")
+    # 共享江河 / 边墙（取自萨尔浒片层的辽东风土，投影范围一致，各县在其内）
+    sarhu_places = load_json(os.path.join(DATA, "sarhu"), "places.json")
     sd["rivers"] = sarhu_places["rivers"]
     sd["wall"] = sarhu_places["wall"]
 
-    # ── 场景一：萨尔浒（战役切片）──
-    sarhu = build_scene(SARHU, {
-        "kind": "battle",
-        "title": "萨尔浒之战",
-        "dossier_label": "萨尔浒之战",
-        "subtitle": "万历四十七年二月—三月 · 天命四年",
-        "primary_place": "hetuala",
-        "dossier_event": "event:sarhu",
-    }, extra_files=["routes", "engagements"])
-    # 从 _raw 中提取萨尔浒特有的包装字段
-    sarhu["routes"] = sarhu["_raw"]["routes"]["routes"]
-    sarhu["timeline"] = sarhu["_raw"]["routes"]["timeline"]
-    sarhu["columns"] = load_json(SARHU, "persons.json")["columns"]
-    sarhu["engagements"] = sarhu["_raw"]["engagements"]["engagements"]
-    sarhu["attrition"] = sarhu["_raw"]["engagements"]["attrition"]
-    sarhu["fatigue_weight"] = sarhu["_raw"]["engagements"]["fatigue_weight"]
-    del sarhu["_raw"]
-
-    # ── 场景二：开原（县级 LOD 切片）──
-    kaiyuan = build_scene(KAIYUAN, {
-        "kind": "county",
-        "title": "开原",
-        "dossier_label": "开原",
-        "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落",
-        "primary_place": "kaiyuan_cheng",
-        "dossier_event": "event:kaifa",
-    }, extra_files=["events", "edges", "route_kaiyuan"])
-    kaiyuan["events"] = kaiyuan["_raw"]["events"]["events"]
-    kaiyuan["edges"] = kaiyuan["_raw"]["edges"]["edges"]
-    kaiyuan["route"] = kaiyuan["_raw"]["route_kaiyuan"]["route"]
-    kaiyuan["route_report"] = kaiyuan["_raw"]["route_kaiyuan"]["report"]
-    kaiyuan["route_verdict"] = kaiyuan["_raw"]["route_kaiyuan"].get("verdict")
-    del kaiyuan["_raw"]
-
-    # ── 场景三：铁岭（县级 LOD 切片）──
-    tieling = build_scene(TIELING, {
-        "kind": "county",
-        "title": "铁岭",
-        "dossier_label": "铁岭",
-        "subtitle": "李成梁故里 · 辽东锁钥 · 万历四十七年陷落",
-        "primary_place": "tieling_cheng",
-        "dossier_event": "event:tieling_fall",
-        "back": "萨尔浒",
-    }, extra_files=["events", "edges"])
-    tieling["events"] = tieling["_raw"]["events"]["events"]
-    tieling["edges"] = tieling["_raw"]["edges"]["edges"]
-    del tieling["_raw"]
-
-    # ── 场景四：辽阳（县级 LOD 切片）──
-    liaoyang = build_scene(LIAOYANG, {
-        "kind": "county",
-        "title": "辽阳",
-        "dossier_label": "辽阳",
-        "subtitle": "辽东都司治所 · 东京辽阳府 · 天启元年改运",
-        "primary_place": "liaoyang_cheng",
-        "dossier_event": "event:liaoyang_fall",
-        "back": "萨尔浒",
-    }, extra_files=["events", "edges"])
-    liaoyang["events"] = liaoyang["_raw"]["events"]["events"]
-    liaoyang["edges"] = liaoyang["_raw"]["edges"]["edges"]
-    del liaoyang["_raw"]
-
-    # 给每个场景的地名补真实海拔（共享网格）
-    if terr:
-        for sc in (sarhu, kaiyuan, tieling, liaoyang):
-            for p in sc["places"]:
+    scenes = {}
+    for sc in resolved:
+        bundle = build_scene(sc)
+        if terr:
+            for p in bundle["places"]:
                 p["elev"] = round(terr.at(p["lon"], p["lat"]))
+        scenes[sc["_key"]] = bundle
 
-    # 萨尔浒行军地形代价（仅该场景有 routes）
+    # 萨尔浒行军地形代价（只有带 routes 的切片才有）
     if terr:
         import terrain_model
-        sarhu["route_terrain"] = [
-            terrain_model.analyze_route(terr, r, {p["id"]: p for p in sarhu["places"]})
-            for r in sarhu["routes"]
-        ]
-    else:
-        sarhu["route_terrain"] = []
+        for key, bundle in scenes.items():
+            if not bundle.get("routes"):
+                continue
+            pmap = {p["id"]: p for p in bundle["places"]}
+            bundle["route_terrain"] = [
+                terrain_model.analyze_route(terr, r, pmap) for r in bundle["routes"]
+            ]
 
-    sd["scenes"] = {"sarhu": sarhu, "kaiyuan": kaiyuan, "tieling": tieling, "liaoyang": liaoyang}
+    sd["scenes"] = scenes
+
+    # 走廊路线（跨切片，读 data/corridors.json）
+    corr_path = os.path.join(DATA, "corridors.json")
+    if os.path.exists(corr_path):
+        with open(corr_path, encoding="utf-8") as f:
+            sd["corridors"] = json.load(f).get("corridors", [])
+    else:
+        sd["corridors"] = []
+
+    # 研究线索（由 tools/leads.py 从 gap 断言生成）
+    leads_path = os.path.join(DATA, "leads.json")
+    if os.path.exists(leads_path):
+        with open(leads_path, encoding="utf-8") as f:
+            sd["leads"] = json.load(f)
+    else:
+        sd["leads"] = {"leads": []}
 
     # 共振报告（hub 页面用）—— 与 tools/resonance.py 的输出同步
-    rp = os.path.join(ROOT, "data", "resonance_report.json")
+    rp = os.path.join(DATA, "resonance_report.json")
     if os.path.exists(rp):
         with open(rp, encoding="utf-8") as f:
             sd["resonance"] = json.load(f)
@@ -255,22 +280,32 @@ def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
-        f.write("// 权威数据源：data/sarhu/、data/kaiyuan/、data/tieling/、data/liaoyang/\n")
+        f.write("// 权威数据源：data/scenes.json 注册的 %d 个切片\n" % len(resolved))
         f.write("window.SANDBOX_DATA = ")
         json.dump(sd, f, ensure_ascii=False, indent=1)
         f.write(";\n")
 
     size_kb = os.path.getsize(OUT) / 1024.0
     print("已生成 %s  (%.0f KB)" % (OUT, size_kb))
-    for key, sc in (("萨尔浒", sarhu), ("开原", kaiyuan), ("铁岭", tieling), ("辽阳", liaoyang)):
-        print("  · %s：史料 %d / 地名 %d / 人物 %d / 断言 %d / 冲突 %d / 缺口 %d"
-              % (key, len(sc["sources"]), len(sc["places"]), len(sc["persons"]),
-                 len(sc["assertions"]), len(sc["conflicts"]), len(sc["gaps"])))
+    tot = defaultdict(int)
+    for sc in resolved:
+        b = scenes[sc["_key"]]
+        n = (len(b["sources"]), len(b["places"]), len(b["persons"]),
+             len(b["assertions"]), len(b["conflicts"]), len(b["gaps"]))
+        for i, k in enumerate(("src", "place", "person", "assert", "conflict", "gap")):
+            tot[k] += n[i]
+        print("  · %-10s 史料 %2d / 地名 %2d / 人物 %2d / 断言 %3d / 冲突 %2d / 缺口 %2d"
+              % ((sc.get("title", sc["_key"]),) + n))
+    print("  ── 合计：史料 %d / 地名 %d / 人物 %d / 断言 %d / 冲突 %d / 缺口 %d"
+          % (tot["src"], tot["place"], tot["person"],
+             tot["assert"], tot["conflict"], tot["gap"]))
 
     # 地形代价报告
-    if sarhu["route_terrain"]:
-        print("\n  行军地形代价（模型日数 / 史料日数 = 紧张度）：")
-        for t in sarhu["route_terrain"]:
+    for key, b in scenes.items():
+        if not b.get("route_terrain"):
+            continue
+        print("\n  %s · 行军地形代价（模型日数 / 史料日数 = 紧张度）：" % key)
+        for t in b["route_terrain"]:
             strain = t["strain"]
             flag = ""
             if strain is not None:
@@ -278,7 +313,7 @@ def main():
                     flag = "  ← 史料所记速度快于模型，值得复查"
                 elif strain < 0.5:
                     flag = "  ← 远慢于地形所允许"
-            print("    %-12s %5.0f 里  爬升 %5d m  模型 %4.1f 日 / 史料 %d 日  紧张度 %s%s"
+            print("    %-12s %5.0f 里  爬升 %5d m  模型 %4.1f 日 / 史料 %s 日  紧张度 %s%s"
                   % (t["route"], t["total_li"], t["total_ascent_m"],
                      t["model_days"], t["reported_days"],
                      ("%.2f" % strain) if strain else "-", flag))

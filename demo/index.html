@@ -41,6 +41,20 @@
     .hub-grid{
       display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
     }
+    /* 分区小标题：横跨整行。分区来自 data/scenes.json 的 regions，hub.js 自动分组 */
+    .region-head{
+      grid-column: 1 / -1; display: flex; align-items: baseline; gap: 12px;
+      flex-wrap: wrap; padding: 10px 0 0; border-top: 1px solid #E3DCC8;
+    }
+    .hub-grid > .region-head:first-child{ border-top: none; padding-top: 0; }
+    .region-head b{
+      font-family: var(--serif); font-size: 19px; color: var(--ink, #2A2521);
+      font-weight: 600; letter-spacing: .04em;
+    }
+    .region-head span{
+      font-family: var(--serif); font-size: 12px; color: #7A6E5C;
+      line-height: 1.55; flex: 1 1 260px; min-width: 0;
+    }
     /* 注意：.card-stats 的 base 规则必须写在媒体查询之前，否则后出现的无条件规则会覆盖窄屏覆盖 */
     .card-stats{
       display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 8px;
