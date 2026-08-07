@@ -34,6 +34,7 @@
     W08 同一 source id 在不同切片的 stance / distance_label 不一致
         （同一本书不可能在开原是当代记录、在铁岭是后朝追述）
     W07 gap 层断言的 value_text 为空（缺口必须说清缺什么）
+    W11 直引 quotes 数组条目 text 为空或 source_id 不存在（可选增强字段）
 
 用法：
     python tools/lint.py            # 全量检查
@@ -219,6 +220,27 @@ def check_scene(sc, rep):
         if qs == 'verbatim':
             rep.warn('W01', scene, '%s %s 标为 verbatim；本项目尚未完成点校本逐字核对，'
                      '请确认已核对，否则应降级为 paraphrase_unverified' % (loc, aid))
+
+        # W11：直引 quotes 数组（可选增强）——每个条目应是「可核验的原文摘录」，
+        # 不能空 text，source_id 必须指向本切片已登记的 source（或就是本断言的 source）。
+        quotes = a.get('quotes')
+        if quotes:
+            if not isinstance(quotes, list):
+                rep.warn('W11', scene, '%s %s 的 quotes 不是数组' % (loc, aid))
+            else:
+                for i, q in enumerate(quotes):
+                    if not isinstance(q, dict):
+                        rep.warn('W11', scene, '%s %s 的 quotes[%d] 不是对象' % (loc, aid, i))
+                        continue
+                    if not (q.get('text') or '').strip():
+                        rep.warn('W11', scene,
+                                 '%s %s 的 quotes[%d] 的 text 为空——直引摘录不能空白'
+                                 % (loc, aid, i))
+                    qsrc = q.get('source_id') or a.get('source')
+                    if qsrc and qsrc not in src_ids:
+                        rep.warn('W11', scene,
+                                 '%s %s 的 quotes[%d] 的 source_id「%s」不在本切片 sources.json'
+                                 % (loc, aid, i, qsrc))
 
     for sid in sorted(src_ids - used_sources):
         rep.warn('W03', scene, 'source「%s」(%s) 登记了但没有任何断言引用它'

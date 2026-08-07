@@ -54,7 +54,15 @@ python -m http.server 8787
 
 ## 许可与署名
 
-（待补：具体许可协议与署名方式，由仓库主确定后填入。）
+- **代码** 以 GNU Affero General Public License v3（AGPL-3.0）发布，全文见 **[LICENSE](LICENSE)**。
+- **数据** 以 Creative Commons 署名 4.0 国际（CC BY 4.0）发布，全文见 **[LICENSE-data](LICENSE-data)**。
+- 贡献即视为以上述许可授权（DCO，详见 **[CONTRIBUTING.md](CONTRIBUTING.md)**）；
+  古籍原文可自由录入，点校本 / 今人译注本请先核实著作权。
+- 第三方数据集（CHGIS / CBDB 等）受「非商用 / 不可再分发」约束，**不打包入仓库**，
+  通过「适配器 + 运行时下载」接入。
+
+每次提交都会由 **GitHub Actions** 自动跑 `tools/gates.py --strict`（lint + 不变量 + leads + build），
+非技术贡献者开 PR 即可看到红 / 绿，无需本地装 Python。
 
 ---
 

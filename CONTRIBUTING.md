@@ -32,34 +32,29 @@
 
 ## 工作流
 
-1. 在 `资料清单.md` 找标注为 `gap` 的缺口断言，或自行发现可补的史料。
+1. 在门户 `demo/portal.html` 的「当前可认领的研究线索」里挑一条 `gap`，或自行发现可补的史料
+   （线索数据实时来自 `data/leads.json`）。
 2. 查史料，补一条断言；若来源不在 `sources.json`，**先加来源**再引用。
-3. **先跑 `python tools/lint.py`**（推荐 `--strict`）—— 这一步会抓重复 id / 未登记词表 / record 层缺 quote / 缺 value_text 等十几类常见错误，**比 build 早一步**。
-4. 再跑 `python tools/build.py` 确认能编译、冲突 / 缺口计数正确。
-5. 跑 `python tools/resonance.py` 看事件共振度有没有上升。
-6. 提交 PR，commit 加 `Signed-off-by`（DCO）。
+3. **跑 `python tools/gates.py --strict`** —— 一条命令跑完四道闸门
+   （lint 守门 → 不变量 test → 重算 leads → 重编译 data.js），比分开跑更省事。
+4. 提交 PR，commit 加 `Signed-off-by`（DCO，见下「贡献许可」）。
+5. **不用本地跑也行**：开 PR 后 GitHub Actions 会自动跑同一套 gates 并给出红/绿，
+   非技术贡献者（数字人文 / 美工）靠这个反馈即可，不必装 Python。
 
 ## 新增切片
 
-1. 在 `data/<新切片>/` 建以下文件：
-   - `sources.json`：列出本切片用到的所有史料
-   - `places.json`：本切片涉及的所有地点（需带 `lon` / `lat`）
-   - `persons.json`：人物
-   - `events.json`：**必须**给承载断言的事件填 `subject` 字段（指向 `event:xxx`）
-   - `edges.json`（可选）：关系边
-   - `assertions.jsonl`：本切片的断言
-2. 在 `tools/build.py` 里注册：
-   - 加 `XXX = os.path.join(ROOT, "data", "xxx")`
-   - 加 `build_scene(XXX, {...}, extra_files=["events", "edges"])`
-   - 把新切片加入 `sd["scenes"]` 字典
-   - 在地形海拔注入循环 `for sc in (sarhu, kaiyuan, tieling, liaoyang, xxx)` 里加入
-3. 在 `demo/` 加：
-   - `<切片>.html`（参考 `kaiyuan.html`）
-   - `<切片>.js`（参考 `kaiyuan.js` 的 5 行模板）
-4. 在 `data/vocab.json` 不需要改——词表是共享的。
-5. 跑 `python tools/lint.py && python tools/resonance.py && python tools/build.py`。
+本项目是**声明式**的：一个新切片 = 一份六件套数据 + 注册表里一条记录，**前端零改动**。
 
-> Hub 页面（`demo/hub.js`）会自动从 `SD.scenes` 渲染新切片，**无需改 hub 代码**。
+1. 在 `data/<新切片>/` 建六件套：
+   - `sources.json` / `places.json` / `persons.json` / `events.json` / `edges.json`（可选）/ `assertions.jsonl`
+   - 各文件字段约束见上。events.json **必须**给承载断言的事件填 `subject`（指向 `event:xxx`），否则时间轴点不到史料。
+2. 在 `data/scenes.json` 的 `scenes` 里加一条注册（kind / region / title / primary_place / dossier_event / lead / …），
+   并把 key 加进 `order` 数组。
+   - Hub 地图（`demo/hub.js`）与门户会自动从注册表渲染新切片，**无需改任何前端代码**。
+3. 若来源不在 `sources.json`，**先加来源**再引用（source id 跨切片必须唯一一致）。
+4. 跑 `python tools/gates.py --strict` 确认能编译、冲突 / 缺口计数正确、不变量通过。
+
+> 批量骨架可用生成器 `tools/seed_liaoxi.py`（辽西 / 辽南五县即由此生成）。改 `SKELETONS` 字典即可复用。
 
 ## 来源（sources.json）的字段约束
 
@@ -93,3 +88,65 @@
 - 数据接入鼓励「适配器 + 运行时下载」模式，而非把受版权数据塞进 git。
 
 详见 `docs/01-开放策略与数据授权.md`。
+
+---
+
+## 贡献许可（DCO 与授权）
+
+- 提交 PR 时请加 `Signed-off-by`（DCO）：`git commit -s`。这一行即表示你确认有权贡献，
+  **并同意以项目许可授权你的贡献**——代码以 AGPL-3.0（见根目录 `LICENSE`）、数据以 CC BY 4.0（见 `LICENSE-data`）。
+- 你保留对自己贡献的署名权；项目（与任何衍生服务）可在遵守上述许可的前提下使用。
+- 古籍原文（公有领域）可自由录入；点校本 / 今人译注本请先核实著作权（见下「授权提醒」）。
+
+## 设计契约（不可破的几条）
+
+这些是「立场靠来源派生」「缺口是一等公民」能成立的前提。改之前先想清楚后果：
+
+1. **分类 / 立场只有单一真值**：`data/vocab.json` 的 `party_bucket` 是立场分桶的唯一来源。
+   绝不在 `county.js` / `resonance.py` / `lint.py` 里硬编码立场映射——三处写歪就会静默串味
+   （v0.3 萨尔浒共振度曾被此坑到 0.2，归一到 vocab.json 后才跳回 0.383）。
+2. **网格外县不许伪造高程**：地形只覆盖 122–126.8°E / 40–43.3°N。`county.js` 对网格外县会标
+   「地形网格外」横幅并跳过高程绘制。不要为了"好看"给网格外县填假海拔——诚实边界优先于视觉完整。
+3. **缺口是一等公民**：`layer: gap` 的断言必须带 `lead` 块（where / skills / accept），否则在「线索」页签里是空壳
+   （W09 会抓）。别把缺口偷偷改成断言而不补来源；别删 lead 块。
+4. **空字段就是 bug**：`record` 层缺 `quote`（E10）、`gap` 层 `value_text` 为空（W07）在界面上渲染为空白，
+   但下游共振度 / 冲突会据此算错。任何提交必须过 `tools/gates.py`。
+5. **断言命名空间挂钩**：断言 `subject: event:xxx` 必须有对应 `events.json` 的 `subject`，反之亦然（W05），
+   否则时间轴切不到史料面板。
+
+## 治理与冲突
+
+- **维护者（仓库主）拥有最终合并权**，目前为 BDFL 模式：PR 由维护者审阅并合并。
+- **数据端冲突靠"谁有原始出处谁赢"**：两位贡献者对同一事实给出不同 mapping 或结论时，
+  甩出原始出处（最好一手史料）的一方优先；双方都有出处则**并存为冲突组**——这是项目特性，不是 bug。
+- 读者端冲突由内核"只投影、不裁判"处理：用户用来源开关自决采信，不在此限。
+- 对来源归属有疑问，**改 `data/vocab.json` 并写明 `_party_notes`**，全站共振度会自动重算。
+
+## 署名
+
+数据以 CC BY 4.0 发布，**必须保留贡献者署名**。两种方式二选一或并存：
+
+- 断言加 `contributor` 字段（谁录入的这条）；
+- 在 `CONTRIBUTORS.md` 的荣誉榜登记（门户「合作者」入口会引用它）。
+
+维护者会在版本说明中致谢所有贡献者。
+
+## 直引（verbatim）约定
+
+项目的核心产品是**断言层**，不是数字校勘全集。我们不强求全文录入，但鼓励给重要断言附上
+**可核验的原文摘录**——这同时强化「来源依赖度压力测试」（关掉二手综述，看哪些结论会塌）。
+
+- 每条断言已有的 `quote`（单句代表引文）+ `quote_status`（`verbatim` / `paraphrase_unverified` / `generated`）保持不变。
+- **新增可选字段 `quotes`**：数组，每条目是一段直引摘录，结构示例：
+
+  ```json
+  "quotes": [
+    {"text": "原文逐字摘录", "source_id": "ming_shenzong_shilu", "ref": "卷三五九·万历二十九年五月庚子"}
+  ]
+  ```
+
+  - `text`：必填，非空，且应为逐字（与 `quote_status: verbatim` 配合）。
+  - `source_id`：指向本切片 `sources.json` 里的来源；省略时默认取本断言的 `source`。
+  - `ref`：卷页 / 出处定位，方便他人核对。
+- `lint.py` 的 **W11** 会检查：`quotes` 条目 `text` 不能空、`source_id` 必须存在；违反只是 warning，不阻断。
+- 点校本、今人译注本可能享有著作权，录入前请核实（见「授权提醒」）。
