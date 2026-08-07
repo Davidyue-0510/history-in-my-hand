@@ -50,7 +50,8 @@ python -m http.server 8787
 - ⚙️ **程序优化评估** —— 审视 `tools/*.py` 与 `county.js`，给架构/性能审计报告
 - 📜 **数字人文从业人** —— 核实史料、补录断言、认领研究线索
 
-详见 **[CONTRIBUTORS.md](CONTRIBUTORS.md)**。
+- 完整路线图、三类角色的工作说明书、协作红线与文件导航，见 **[协作与招募手册 COLLABORATE.md](COLLABORATE.md)**。
+- 贡献流程与许可细则，见 **[CONTRIBUTING.md](CONTRIBUTING.md)** 与 **[CONTRIBUTORS.md](CONTRIBUTORS.md)**。
 
 ## 许可与署名
 
