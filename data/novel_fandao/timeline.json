@@ -1,0 +1,9 @@
+{
+  "timeline": [
+    {"id": "t1", "label": "唐爱丽离家", "era": "九零年代", "parent": null},
+    {"id": "t2", "label": "叶为安接委托切入", "era": "同年", "parent": "t1"},
+    {"id": "t3", "label": "分蛋·矫正起点", "era": "寒假", "parent": "t2"},
+    {"id": "t4", "label": "于国强向子女认错", "era": "小年前", "parent": "t3"},
+    {"id": "t4_alt", "label": "反事实A：若无介入，金宝延续家暴至入狱", "era": "原时间线", "parent": "t2", "branch": {"alternative_choice": "叶为安未介入", "label": "反事实A"}}
+  ]
+}

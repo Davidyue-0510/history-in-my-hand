@@ -60,8 +60,10 @@
   if (OFF_GRID) {
     var mnLon = GRID_LON0, mxLon = GRID_LON1, mnLat = GRID_LAT0, mxLat = GRID_LAT1;
     D.places.forEach(function (p) {
-      if (p.lon < mnLon) mnLon = p.lon; if (p.lon > mxLon) mxLon = p.lon;
-      if (p.lat < mnLat) mnLat = p.lat; if (p.lat > mxLat) mxLat = p.lat;
+      if (typeof p.lon === 'number' && typeof p.lat === 'number') {
+        if (p.lon < mnLon) mnLon = p.lon; if (p.lon > mxLon) mxLon = p.lon;
+        if (p.lat < mnLat) mnLat = p.lat; if (p.lat > mxLat) mxLat = p.lat;
+      }
     });
     var padLon = (mxLon - mnLon) * 0.10 + 0.3, padLat = (mxLat - mnLat) * 0.10 + 0.3;
     LON0 = mnLon - padLon; LON1 = mxLon + padLon; LAT0 = mnLat - padLat; LAT1 = mxLat + padLat;
@@ -81,8 +83,14 @@
   if (OFF_GRID) {
     var banner = document.createElement('div');
     banner.className = 'offgrid-banner';
-    banner.innerHTML = '⚠ 本切片主地点位于共享地形网格之外（网格覆盖 122–126.8°E / 40–43.3°N）。'
-      + '此处不渲染高程阴影——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
+    if (META.fictional) {
+      banner.innerHTML = '📖 本 world 由文字资料生成（小说《反派他爸教做人[快穿]》第一副本），'
+        + '为虚构设定，<b>无真实地形参照</b>——此处不渲染高程阴影，这是「共享真实地形」主张的诚实边界。'
+        + '史料 / 断言 / 时间轴（含反事实分支）/ 线索功能均正常。';
+    } else {
+      banner.innerHTML = '⚠ 本切片主地点位于共享地形网格之外（网格覆盖 122–126.8°E / 40–43.3°N）。'
+        + '此处不渲染高程阴影——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
+    }
     var _mw = document.getElementById('mapWrap');
     if (_mw && _mw.parentNode) _mw.parentNode.insertBefore(banner, _mw);
   }
@@ -569,7 +577,7 @@
   /* 立场分桶不在这里硬编码——它来自 data/vocab.json，经 build.py 注入。
      改一行词表，全站（界面 + 共振度 + lint）同步改变，这是"立场靠来源派生"
      这句话能被审计的前提。 */
-  var VOCAB = (SD && SD.vocab) || {};
+  var VOCAB = (D && D.vocab) || (SD && SD.vocab) || {};
   var PARTY_BUCKET = VOCAB.party_bucket || {};
   var PARTY_ORDER = VOCAB.parties || ['明方', '清方', '朝鲜', '综述考订'];
   function renderParties() {

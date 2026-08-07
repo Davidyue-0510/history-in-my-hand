@@ -184,6 +184,12 @@ def build_scene(sc):
 
     bundle.setdefault("events", [])
     bundle.setdefault("edges", [])
+
+    # 每 world 自带 vocab（docs/03）：有则覆盖全局，立场分桶单一真值降到 world 级。
+    svocab_path = os.path.join(dirpath, "vocab.json")
+    if os.path.exists(svocab_path):
+        with open(svocab_path, encoding="utf-8") as f:
+            bundle["vocab"] = {k: v for k, v in json.load(f).items() if not k.startswith("_")}
     return bundle
 
 
@@ -237,7 +243,8 @@ def main():
         bundle = build_scene(sc)
         if terr:
             for p in bundle["places"]:
-                p["elev"] = round(terr.at(p["lon"], p["lat"]))
+                if "lon" in p and "lat" in p:
+                    p["elev"] = round(terr.at(p["lon"], p["lat"]))
         scenes[sc["_key"]] = bundle
 
     # 萨尔浒行军地形代价（只有带 routes 的切片才有）

@@ -76,7 +76,7 @@
       var sc = scenes[sk]; if (!sc) return;
       var m = sc.meta || {};
       var p = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
-      if (p) { lons.push(p.lon); lats.push(p.lat); }
+      if (p && typeof p.lon === 'number' && typeof p.lat === 'number') { lons.push(p.lon); lats.push(p.lat); }
     });
     lonMin = Math.min.apply(null, lons); lonMax = Math.max.apply(null, lons);
     latMin = Math.min.apply(null, lats); latMax = Math.max.apply(null, lats);
@@ -143,7 +143,7 @@
       var sc = scenes[sk]; if (!sc) return;
       var m = (sc.meta || {});
       var place = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
-      if (!place) return;
+      if (!place || typeof place.lon !== 'number') return;
       var cx = gx(place.lon), cy = gy(place.lat);
       var label = m.dossier_label || m.title || sk;
       var tw = ctx.measureText(label).width, th = 11;

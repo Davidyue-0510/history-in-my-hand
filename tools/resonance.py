@@ -33,6 +33,14 @@ with open(os.path.join(ROOT, 'data', 'vocab.json'), encoding='utf-8') as _f:
 PARTY_BUCKET = VOCAB['party_bucket']
 PARTIES = [p for p in VOCAB['parties'] if p != '综述考订']
 
+# 虚构 world（kind: fiction）无真实史料对立面，共振度对其无意义，跳过以免污染报告。
+try:
+    _REG = json.load(open(os.path.join(ROOT, 'data', 'scenes.json'), encoding='utf-8'))
+    _FICTION_DIRS = {v.get('dir', k) for k, v in _REG.get('scenes', {}).items()
+                     if v.get('kind') == 'fiction'}
+except Exception:
+    _FICTION_DIRS = set()
+
 SCENE_NAMES = {
     'sarhu': '萨尔浒',
     'kaiyuan': '开原',
@@ -137,6 +145,8 @@ def load_all_scenes():
     scenes = []
     for path in sorted(glob.glob(os.path.join(ROOT, 'data', '*', 'assertions.jsonl'))):
         scene = os.path.basename(os.path.dirname(path))
+        if scene in _FICTION_DIRS:
+            continue
         scenes.append(scene)
         with open(path, 'r', encoding='utf-8') as f:
             for line in f:

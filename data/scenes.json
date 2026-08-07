@@ -22,7 +22,8 @@
     { "id": "liaodong",  "name": "辽东",       "note": "沈阳—辽阳—抚顺, 都司治所与东向诸关, 1618—1621 三年之内易手。" },
     { "id": "liaonan",   "name": "辽南",       "note": "海州—盖州—复州—金州, 辽东半岛纵深, 1621 年后成为明军海上反攻的支点。" },
     { "id": "liaoxi",    "name": "辽西",       "note": "广宁—义州—锦州—宁远, 辽西走廊, 明清对峙二十余年的正面。" },
-    { "id": "jianzhou",  "name": "关外女真",   "note": "赫图阿拉与扈伦四部。这里没有明朝的县, 但有明朝的敕书、马市与羁縻——把它们排除在外, 辽东就只剩一半。" }
+    { "id": "jianzhou",  "name": "关外女真",   "note": "赫图阿拉与扈伦四部。这里没有明朝的县, 但有明朝的敕书、马市与羁縻——把它们排除在外, 辽东就只剩一半。" },
+    { "id": "fiction",   "name": "虚构世界",   "note": "由文字资料（小说/设定集）生成的虚构 world，无真实地形参照；立场派生于来源，不伪造几何。" }
   ],
 
   "order": [
@@ -30,7 +31,8 @@
     "kaiyuan", "tieling", "yehe",
     "liaoyang", "shenyang", "fushun",
     "haizhou", "gaizhou", "fuzhou", "jinzhouwei",
-    "guangning", "jinzhou", "ningyuan"
+    "guangning", "jinzhou", "ningyuan",
+    "novel_fandao"
   ],
 
   "scenes": {
@@ -374,6 +376,32 @@
         "person:nuerhaci": "努尔哈赤",
         "person:wu_sangui": "吴三桂",
         "person:zhao_shuaijiao": "赵率教"
+      }
+    },
+
+    "novel_fandao": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·九零家暴男儿子",
+      "dossier_label": "小说副本·九零家暴男儿子",
+      "subtitle": "快穿文《反派他爸教做人[快穿]》第一副本 · 由文本导入生成",
+      "primary_place": "anshan_village",
+      "dossier_event": "event:yu_jinbao_corrected",
+      "back": "枢纽",
+      "extra_files": ["events", "edges", "timeline"],
+      "fictional": true,
+      "lead": "这是「任意文字→一个世界」的第一个原型：把一部快穿小说的第一副本（九零家暴男儿子）直接抽取为结构化 world。它和辽东切片共用同一套断言模型与四闸门——差异只在立场语义（叙述者/角色自述/系统/矫正者）且无真实地形。时间轴带一条反事实分支（若无叶为安介入会怎样）。",
+      "parties_note": "虚构世界的立场派生于来源：作者叙述 / 系统任务 / 于父自述 / 叶为安视角 / 于国海视角，全部定义在本 world 自己的 vocab.json，不污染全局词表。",
+      "subject_names": {
+        "event:yu_mother_left": "唐爱丽离家",
+        "event:yu_father_commission": "叶为安接委托",
+        "event:yu_jinbao_eggs": "分蛋·矫正起点",
+        "event:yu_father_confess": "于国强认错",
+        "event:yu_jinbao_corrected": "金宝被矫正（含反事实分支）",
+        "person:yeweian": "叶为安",
+        "person:yu_guoqiang": "于国强",
+        "person:yu_jinbao": "于金宝",
+        "person:tang_aili": "唐爱丽"
       }
     }
   }

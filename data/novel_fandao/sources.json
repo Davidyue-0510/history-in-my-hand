@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"id": "novel_text", "title": "《反派他爸教做人[快穿]》正文（席亭）", "party": "作者叙述", "stance_label": "原文叙述", "distance_label": "原文", "color": "#6A5ACD"},
+    {"id": "system_setting", "title": "快穿系统设定（任务框架）", "party": "系统任务", "stance_label": "系统/设定", "distance_label": "设定", "color": "#2E8B57"},
+    {"id": "yu_father", "title": "于国强临终忏悔自述", "party": "于父自述", "stance_label": "当事人自述", "distance_label": "文中回忆", "color": "#B5651D"},
+    {"id": "yeweian_view", "title": "叶为安（代入父亲）视角", "party": "叶为安视角", "stance_label": "矫正者视角", "distance_label": "文中行为", "color": "#C0392B"},
+    {"id": "yu_guohai", "title": "邻居于国海视角", "party": "于国海视角", "stance_label": "旁观者", "distance_label": "文中对话", "color": "#7F8C8D"}
+  ]
+}

@@ -120,7 +120,8 @@ def main():
     rr = json.load(open(os.path.join(ROOT, 'data', 'resonance_report.json'), encoding='utf-8'))
     ss = {x['scene'] for x in rr.get('scene_summary', [])}
     reg = json.load(open(os.path.join(ROOT, 'data', 'scenes.json'), encoding='utf-8'))
-    expected = set(reg['scenes'].keys())
+    # 虚构 world（kind: fiction）无真实史料对立面，共振报告按设计跳过，不纳入覆盖要求。
+    expected = {k for k, v in reg['scenes'].items() if v.get('kind') != 'fiction'}
     missing = expected - ss
     check('共振报告 scene_summary 覆盖全部 %d 个注册切片' % len(expected),
           not missing,

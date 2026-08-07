@@ -335,6 +335,32 @@
    "_src_line": 7
   },
   {
+   "id": "N11",
+   "scene": "novel_fandao",
+   "subject": "event:yu_mother_left",
+   "title": "待抽取：深情渣帝王儿子 / 拜金绝色女儿 / 我的儿子是怪物 / 不负责的穿书女 / 同性恋骗婚儿子 / 爱情至上的女儿…",
+   "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+   "where": "data/novel_to_map_try 全文",
+   "skills": "文本抽取 / 熟悉网文叙事",
+   "accept": "逐副本建 world，或并入本 world 的 events/assertions",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "N12",
+   "scene": "novel_fandao",
+   "subject": "person:yu_sunzi",
+   "title": "缺：金宝之子后续人生轨迹的细节与因果",
+   "missing": "文 / 本 / 回 / 查",
+   "where": "第一章末尾一处旁白",
+   "skills": "文本回查",
+   "accept": "补全该人物支线，或标记为作者留白",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "A092",
    "scene": "sarhu",
    "subject": "event:sarhu_battle",

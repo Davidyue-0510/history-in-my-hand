@@ -139,10 +139,21 @@ def check_scene(sc, rep):
     event_subjects = ({e['subject'] for e in events if e.get('subject')} |
                       {e['subject'] for e in engagements if e.get('subject')})
 
+    # 每 world 自带 vocab（docs/03）：优先用本 world 的 party_bucket，缺省回退全局。
+    svocab_path = os.path.join(DATA, scene, 'vocab.json')
+    scene_bucket = {}
+    if os.path.exists(svocab_path):
+        try:
+            scene_bucket = json.load(open(svocab_path, encoding='utf-8')).get('party_bucket', {})
+        except Exception:
+            scene_bucket = {}
+    eff_bucket = dict(PARTY_BUCKET)
+    eff_bucket.update(scene_bucket)
+
     # ── sources ──
     for s in srcs:
         party = s.get('party')
-        if party not in PARTY_BUCKET:
+        if party not in eff_bucket:
             rep.err('E05', scene,
                     'source「%s」(%s) 的 party =「%s」不在 data/vocab.json 受控词表内，'
                     '该来源将被共振统计静默丢弃' % (s['id'], s.get('title', ''), party))
@@ -265,6 +276,8 @@ def check_cross_scene(scenes, rep):
     has_stance = {}
 
     for sc in scenes:
+        if REG_SCENES.get(sc['scene'], {}).get('kind') == 'fiction':
+            continue
         srcs = (sc['sources'] or {}).get('sources', [])
         has_stance[sc['scene']] = any('stance' in s for s in srcs)
         for s in srcs:
@@ -298,6 +311,8 @@ def check_cross_scene(scenes, rep):
 def check_coverage(scenes, rep):
     """事件三方覆盖为 0 —— 多半是 party 配错，而不是真的三方都没记。"""
     for sc in scenes:
+        if REG_SCENES.get(sc['scene'], {}).get('kind') == 'fiction':
+            continue
         srcs = (sc['sources'] or {}).get('sources', [])
         pmap = {s['id']: PARTY_BUCKET.get(s.get('party')) for s in srcs}
         by_event = defaultdict(set)

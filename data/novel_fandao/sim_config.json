@@ -1,0 +1,11 @@
+{
+  "engine": "llm-step",
+  "initial_state_ref": "timeline.json#t2",
+  "rules": [],
+  "steps": 6,
+  "branches": [
+    {"at_event": "t2", "alternative_choice": "叶为安未介入", "label": "反事实A"}
+  ],
+  "output": "worlds/novel_fandao/sim_runs/run_001.json",
+  "note": "M6 占位：本原型尚未实现演化引擎，此处仅为 docs/03 §6 的 schema 示范。"
+}
