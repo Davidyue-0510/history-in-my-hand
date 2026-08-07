@@ -16,25 +16,56 @@
     "region": "地理分区，用于 hub 分组。辽北 / 辽东 / 辽南 / 辽西 / 关外女真。",
     "lead / parties_note / subject_names": "过去写在 demo/<key>.js 里，现已归拢到此处，随 meta 注入前端。"
   },
-
   "regions": [
-    { "id": "liaobei",   "name": "辽北",       "note": "开原—铁岭—叶赫一线, 明辽东都司北界, 万历末最先崩塌的一段。" },
-    { "id": "liaodong",  "name": "辽东",       "note": "沈阳—辽阳—抚顺, 都司治所与东向诸关, 1618—1621 三年之内易手。" },
-    { "id": "liaonan",   "name": "辽南",       "note": "海州—盖州—复州—金州, 辽东半岛纵深, 1621 年后成为明军海上反攻的支点。" },
-    { "id": "liaoxi",    "name": "辽西",       "note": "广宁—义州—锦州—宁远, 辽西走廊, 明清对峙二十余年的正面。" },
-    { "id": "jianzhou",  "name": "关外女真",   "note": "赫图阿拉与扈伦四部。这里没有明朝的县, 但有明朝的敕书、马市与羁縻——把它们排除在外, 辽东就只剩一半。" },
-    { "id": "fiction",   "name": "虚构世界",   "note": "由文字资料（小说/设定集）生成的虚构 world，无真实地形参照；立场派生于来源，不伪造几何。" }
+    {
+      "id": "liaobei",
+      "name": "辽北",
+      "note": "开原—铁岭—叶赫一线, 明辽东都司北界, 万历末最先崩塌的一段。"
+    },
+    {
+      "id": "liaodong",
+      "name": "辽东",
+      "note": "沈阳—辽阳—抚顺, 都司治所与东向诸关, 1618—1621 三年之内易手。"
+    },
+    {
+      "id": "liaonan",
+      "name": "辽南",
+      "note": "海州—盖州—复州—金州, 辽东半岛纵深, 1621 年后成为明军海上反攻的支点。"
+    },
+    {
+      "id": "liaoxi",
+      "name": "辽西",
+      "note": "广宁—义州—锦州—宁远, 辽西走廊, 明清对峙二十余年的正面。"
+    },
+    {
+      "id": "jianzhou",
+      "name": "关外女真",
+      "note": "赫图阿拉与扈伦四部。这里没有明朝的县, 但有明朝的敕书、马市与羁縻——把它们排除在外, 辽东就只剩一半。"
+    },
+    {
+      "id": "fiction",
+      "name": "虚构世界",
+      "note": "由文字资料（小说/设定集）生成的虚构 world，无真实地形参照；立场派生于来源，不伪造几何。"
+    }
   ],
-
   "order": [
     "sarhu",
-    "kaiyuan", "tieling", "yehe",
-    "liaoyang", "shenyang", "fushun",
-    "haizhou", "gaizhou", "fuzhou", "jinzhouwei",
-    "guangning", "jinzhou", "ningyuan",
-    "novel_fandao"
+    "kaiyuan",
+    "tieling",
+    "yehe",
+    "liaoyang",
+    "shenyang",
+    "fushun",
+    "haizhou",
+    "gaizhou",
+    "fuzhou",
+    "jinzhouwei",
+    "guangning",
+    "jinzhou",
+    "ningyuan",
+    "novel_fandao",
+    "novel_fandao_2"
   ],
-
   "scenes": {
     "sarhu": {
       "kind": "battle",
@@ -44,10 +75,12 @@
       "subtitle": "万历四十七年二月—三月 · 天命四年",
       "primary_place": "hetuala",
       "dossier_event": "event:sarhu",
-      "extra_files": ["routes", "engagements"],
+      "extra_files": [
+        "routes",
+        "engagements"
+      ],
       "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。"
     },
-
     "kaiyuan": {
       "kind": "county",
       "region": "liaobei",
@@ -57,10 +90,19 @@
       "primary_place": "kaiyuan_cheng",
       "dossier_event": "event:kaifa",
       "back": "枢纽",
-      "extra_files": ["events", "edges", "route_kaiyuan"],
+      "extra_files": [
+        "events",
+        "edges",
+        "route_kaiyuan"
+      ],
       "lead": "开原是辽北第一重镇：明三万卫—清开原县，万历四十七年（1619）陷于后金，叶赫随之灭亡。下方为建置沿革与关键战事，点时间轴或左栏跳转。",
       "parties_note": "开原陷落（1619）在明、清、朝鲜三方叙事中各有侧重。系统不裁决，只并列。",
-      "route_assertions": ["K008", "K009", "K020", "K027e"],
+      "route_assertions": [
+        "K008",
+        "K009",
+        "K020",
+        "K027e"
+      ],
       "subject_names": {
         "army:jin_kaifa": "后金攻开原兵力",
         "event:kaifa": "开铁之战",
@@ -70,7 +112,6 @@
         "doc:kaiyuan_tushuo": "开原图说"
       }
     },
-
     "tieling": {
       "kind": "county",
       "region": "liaobei",
@@ -80,7 +121,10 @@
       "primary_place": "tieling_cheng",
       "dossier_event": "event:tieling_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "铁岭是辽东锁钥：李成梁故里，明九边之首卫所；万历四十七年（1619）随开原同年陷落，李氏家族百年经营的防线就此终结。下方为建置沿革与关键事件。",
       "parties_note": "铁岭陷落（1619）与李成梁功过，在明、清、现代综述中各有侧重。系统不裁决，只并列。",
       "subject_names": {
@@ -95,7 +139,6 @@
         "person:xiongtingbing": "熊廷弼"
       }
     },
-
     "yehe": {
       "kind": "county",
       "region": "jianzhou",
@@ -105,7 +148,10 @@
       "primary_place": "xiyehe",
       "dossier_event": "event:yehe_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "叶赫是扈伦四部中势力最强的一部, 明廷敕封叶赫贝勒为都督以羁縻制衡建州。万历四十七年 (1619) 萨尔浒战后, 叶赫东城西城俱破, 布寨战死, 布扬古降, 叶赫亡。",
       "parties_note": "叶赫之亡标志着明廷羁縻体系的崩溃。叶赫起源 (蒙古/海西) 之争是 record_vs_scholarship 典型。",
       "subject_names": {
@@ -120,7 +166,6 @@
         "person:nuerhaci": "努尔哈赤"
       }
     },
-
     "liaoyang": {
       "kind": "county",
       "region": "liaodong",
@@ -130,7 +175,10 @@
       "primary_place": "liaoyang_cheng",
       "dossier_event": "event:liaoyang_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "辽阳是辽东第一城：唐安东都护府、辽东京辽阳府、金大定帝登基地、明辽东都司治所；天启元年（1621）后金攻占、迁都；四年后再迁沈阳。下方为两千年的建置沿革。",
       "parties_note": "辽阳是王朝更迭的见证者：唐、辽、金、元、明、清、现代综述各有侧重；立场派生于 source.party。",
       "subject_names": {
@@ -152,7 +200,6 @@
         "person:tongzhongkui": "童仲揆"
       }
     },
-
     "shenyang": {
       "kind": "county",
       "region": "liaodong",
@@ -162,7 +209,10 @@
       "primary_place": "shenyang_cheng",
       "dossier_event": "event:shenyang_relief",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "沈阳是辽东锁钥：洪武二十一年 (1388) 改元沈阳路为沈阳中卫, 一城三衙。天启元年 (1621) 三月袁应泰守沈阳城破自缢, 浑河之战陈策、童仲揆、姜弘立俱殁。后金天命十年 (1625) 自辽阳迁都于此, 改名盛京。",
       "parties_note": "沈阳陷落在明、清、朝鲜三方叙事中各有侧重：明方强调袁应泰决策失误与浑河援军覆没, 清方强调「天祐」与神化努尔哈赤, 朝鲜史料 (尤其《栅中日录》) 提供了最接近现场的视角。",
       "subject_names": {
@@ -185,7 +235,6 @@
         "person:goseong": "姜弘立"
       }
     },
-
     "fushun": {
       "kind": "county",
       "region": "liaodong",
@@ -195,7 +244,10 @@
       "primary_place": "fushun",
       "dossier_event": "event:fushun_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "抚顺是明朝羁縻建州女真的前沿：抚顺关马市是努尔哈赤积累经济与情报的窗口, 也是「七大恨」告天的起点。万历四十六年 (1618) 抚顺陷落, 三年后辽沈尽失。",
       "parties_note": "抚顺之陷标志着明辽东马市羁縻体系的终结。明方强调李永芳降后金的「叛将效应」, 清方将其神化为「天祐」, 学界争论焦点是马市在努尔哈赤崛起中的作用。",
       "subject_names": {
@@ -210,7 +262,6 @@
         "person:li_yongfang": "李永芳"
       }
     },
-
     "haizhou": {
       "kind": "county",
       "region": "liaonan",
@@ -220,7 +271,10 @@
       "primary_place": "haizhou_cheng",
       "dossier_event": "event:haizhou_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "海州是辽南粮道咽喉, 朝鲜马市所在。天启元年 (1621) 沈阳陷后六日陷落, 毛文龙率 197 人逃入海中皮岛, 创东江镇。",
       "parties_note": "海州之陷与朝鲜使臣 (《通文馆志》) 记载路线高度一致, 但毛文龙东江的规模与作用, 明清两方评价截然不同。",
       "subject_names": {
@@ -236,7 +290,6 @@
         "person:amin": "阿敏"
       }
     },
-
     "gaizhou": {
       "kind": "county",
       "region": "liaonan",
@@ -246,7 +299,10 @@
       "primary_place": "gaizhou_cheng",
       "dossier_event": "event:gaizhou_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "盖州是辽南与海州并立的二大卫之一。天启元年 (1621) 海州陷后十日陷落, 盖州参将杨烈崛殉职。",
       "parties_note": "盖州之陷在三方史料中数字与死法略有出入, 是 1621 三月战役序列中较为被忽视的一环。",
       "subject_names": {
@@ -259,7 +315,6 @@
         "person:nuerhaci": "努尔哈赤"
       }
     },
-
     "fuzhou": {
       "kind": "county",
       "region": "liaonan",
@@ -269,7 +324,10 @@
       "primary_place": "fuzhou_cheng",
       "dossier_event": "event:fuzhou_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "复州扼辽南陆桥：洪武十四年 (1381) 置复州卫，南通金州、北连盖州。天启元年 (1621) 后金取之，与海州、盖州同月陷。毛文龙东江镇据皮岛，浮海袭扰复州/金州沿海，成为明军海上反攻的跳板。",
       "parties_note": "复州之陷与东江镇袭扰，明清两方评价悬殊：明方夸大东江战果，清方淡化。系统不裁决，只并列。",
       "subject_names": {
@@ -281,7 +339,6 @@
         "person:nuerhaci": "努尔哈赤"
       }
     },
-
     "jinzhouwei": {
       "kind": "county",
       "region": "liaonan",
@@ -291,7 +348,10 @@
       "primary_place": "jinzhouwei_cheng",
       "dossier_event": "event:jinzhouwei_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "金州卫扼辽东半岛南端：洪武十年 (1377) 置，辖旅顺口，海运通登莱、朝鲜。天启元年 (1621) 后金取之，旋为毛文龙东江镇一度收复。辽南门户由此易手。",
       "parties_note": "金州海运通道与东江镇收复的次数，明清两方记载悬殊。系统不裁决，只并列。",
       "subject_names": {
@@ -304,7 +364,6 @@
         "person:nuerhaci": "努尔哈赤"
       }
     },
-
     "guangning": {
       "kind": "county",
       "region": "liaoxi",
@@ -314,7 +373,10 @@
       "primary_place": "guangning",
       "dossier_event": "event:guangning_fall",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "广宁是辽西军政中心：洪武二十五年 (1392) 置广宁卫，正统后辽东镇移驻。天启二年 (1622) 努尔哈赤取广宁，王化贞弃城、孙得功降、熊廷弼护辽西百万难民入山海关。明尽失辽西。经抚不和是直接原因。",
       "parties_note": "广宁之失主因经略熊廷弼（主守）与巡抚王化贞（主战）经抚不和，明、清、现代三方对责任归属侧重不同。系统不裁决，只并列。",
       "subject_names": {
@@ -328,7 +390,6 @@
         "person:nuerhaci": "努尔哈赤"
       }
     },
-
     "jinzhou": {
       "kind": "county",
       "region": "liaoxi",
@@ -338,7 +399,10 @@
       "primary_place": "jinzhou_cheng",
       "dossier_event": "event:jinzhou_songjin",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "锦州是辽西锁钥：洪武二十四年 (1391) 置锦州卫。崇祯十四至十五年 (1641–1642) 松锦之战，洪承畴兵败被俘、祖大寿以锦州降，明辽西机动兵力丧尽，清兵直叩山海关。此役与萨尔浒、辽沈之陷并列为明亡三大节点。",
       "parties_note": "松锦之战明军总兵力与祖大寿两度降清，明、清、现代三方叙事侧重不同（明方记洪承畴「殉难」，清方记其被擒后降）。系统不裁决，只并列。",
       "subject_names": {
@@ -351,7 +415,6 @@
         "person:duoergun": "多尔衮"
       }
     },
-
     "ningyuan": {
       "kind": "county",
       "region": "liaoxi",
@@ -361,7 +424,10 @@
       "primary_place": "ningyuan",
       "dossier_event": "event:ningyuan_battle",
       "back": "枢纽",
-      "extra_files": ["events", "edges"],
+      "extra_files": [
+        "events",
+        "edges"
+      ],
       "lead": "宁远是关宁锦防线核心：宣德三年 (1428) 置宁远卫。1626 宁远之战努尔哈赤受创而死，1627 宁锦大捷，1644 吴三桂弃宁远引清入关。明清对峙二十年的枢纽在此。",
       "parties_note": "宁远之战努尔哈赤死因、袁崇焕「五年平辽」部署，明、清、现代三方侧重不同（明方记「炮毙虏首」，清方讳言死因）。系统不裁决，只并列。",
       "subject_names": {
@@ -378,7 +444,6 @@
         "person:zhao_shuaijiao": "赵率教"
       }
     },
-
     "novel_fandao": {
       "kind": "fiction",
       "region": "fiction",
@@ -388,7 +453,11 @@
       "primary_place": "anshan_village",
       "dossier_event": "event:yu_jinbao_corrected",
       "back": "枢纽",
-      "extra_files": ["events", "edges", "timeline"],
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
       "fictional": true,
       "lead": "这是「任意文字→一个世界」的第一个原型：把一部快穿小说的第一副本（九零家暴男儿子）直接抽取为结构化 world。它和辽东切片共用同一套断言模型与四闸门——差异只在立场语义（叙述者/角色自述/系统/矫正者）且无真实地形。时间轴带一条反事实分支（若无叶为安介入会怎样）。",
       "parties_note": "虚构世界的立场派生于来源：作者叙述 / 系统任务 / 于父自述 / 叶为安视角 / 于国海视角，全部定义在本 world 自己的 vocab.json，不污染全局词表。",
@@ -402,6 +471,34 @@
         "person:yu_guoqiang": "于国强",
         "person:yu_jinbao": "于金宝",
         "person:tang_aili": "唐爱丽"
+      }
+    },
+    "novel_fandao_2": {
+      "kind": "fiction",
+      "region": "fiction",
+      "title": "反派他爸教做人·深情渣帝王儿子",
+      "dossier_label": "反派他爸教做人·深情渣帝王儿子",
+      "subtitle": "快穿文《反派他爸教做人[快穿]》第二副本 · 由文本导入生成",
+      "primary_place": "daye_palace",
+      "dossier_event": "event:he_lingchen_outcome",
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges",
+        "timeline"
+      ],
+      "fictional": true,
+      "lead": "「任意文字→一个世界」管线的第二个端到端验证：用 tools/ingest.py 把小说第二副本（深情渣帝王儿子）抽取为结构化 world。与前一副本共用断言内核——差异只在立场语义（作者叙述/系统任务/贺云章自述/叶为安视角/沈岚视角）且无真实地形。原时间线贺凌宸毁国、叶为安介入后大历存续，构成一条反事实分支。",
+      "parties_note": "虚构世界立场派生于来源：作者叙述 / 系统任务 / 贺云章自述 / 叶为安视角 / 沈岚视角，全部定义在本 world 自己的 vocab.json，不污染全局词表。",
+      "subject_names": {
+        "event:he_commission": "贺云章立约",
+        "event:he_enter": "叶为安入贺云章身",
+        "event:he_lingchen_ruin": "原时间线·毁国过程",
+        "event:he_lingchen_outcome": "贺凌宸结局（含反事实分支）",
+        "person:yeweian": "叶为安",
+        "person:he_yunzhang": "贺云章",
+        "person:he_lingchen": "贺凌宸",
+        "person:shen_lan": "沈岚"
       }
     }
   }

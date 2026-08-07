@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "id": "ev_commission",
+      "subject": "event:he_commission",
+      "title": "贺云章立约",
+      "summary": "贺云章死后与叶为安立约：保宸儿守大历、不绝贺家血脉。"
+    },
+    {
+      "id": "ev_enter",
+      "subject": "event:he_enter",
+      "title": "叶为安入贺云章身",
+      "summary": "沈璎病逝、贺云章病倒，叶为安借机进入其身体执政。"
+    },
+    {
+      "id": "ev_ruin",
+      "subject": "event:he_lingchen_ruin",
+      "title": "原时间线·毁国过程",
+      "summary": "解散后宫、杀妃嫔与己子、气死贺云章、灭将军府、戎族南下。"
+    },
+    {
+      "id": "ev_outcome",
+      "subject": "event:he_lingchen_outcome",
+      "title": "贺凌宸结局",
+      "summary": "矫正后大历存续 / 反事实无介入则大历覆灭。"
+    }
+  ]
+}

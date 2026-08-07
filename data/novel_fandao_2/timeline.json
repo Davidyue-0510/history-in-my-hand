@@ -1,0 +1,35 @@
+{
+  "timeline": [
+    {
+      "id": "t1",
+      "t": "立约",
+      "subject": "event:he_commission",
+      "label": "贺云章与叶为安立约"
+    },
+    {
+      "id": "t2",
+      "t": "沈璎病逝后",
+      "subject": "event:he_enter",
+      "label": "叶为安入贺云章身执政"
+    },
+    {
+      "id": "t3",
+      "t": "原时间线",
+      "subject": "event:he_lingchen_ruin",
+      "label": "毁国过程（解散后宫→灭将军府→戎族南下）"
+    },
+    {
+      "id": "t4",
+      "t": "结局",
+      "subject": "event:he_lingchen_outcome",
+      "label": "叶为安介入后：大历存续"
+    },
+    {
+      "id": "t4_alt",
+      "t": "结局(反事实)",
+      "subject": "event:he_lingchen_outcome",
+      "label": "无叶为安介入：大历覆灭、贺家绝嗣",
+      "branch": true
+    }
+  ]
+}

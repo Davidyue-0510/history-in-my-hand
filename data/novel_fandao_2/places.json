@@ -1,0 +1,24 @@
+{
+  "places": [
+    {
+      "id": "daye_palace",
+      "name": "大历皇宫",
+      "fictional": true
+    },
+    {
+      "id": "jiangjun_fu",
+      "name": "将军府",
+      "fictional": true
+    },
+    {
+      "id": "bianjiang",
+      "name": "边疆",
+      "fictional": true
+    },
+    {
+      "id": "shen_home",
+      "name": "沈家（德宜圣皇后母族）",
+      "fictional": true
+    }
+  ]
+}

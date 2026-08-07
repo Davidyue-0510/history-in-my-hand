@@ -1,0 +1,44 @@
+{
+  "edges": [
+    {
+      "from": "he_yunzhang",
+      "to": "he_lingchen",
+      "relation": "父子·委托矫正"
+    },
+    {
+      "from": "he_yunzhang",
+      "to": "he_min",
+      "relation": "父女"
+    },
+    {
+      "from": "he_lingchen",
+      "to": "shen_lan",
+      "relation": "偏执爱慕（强掳）"
+    },
+    {
+      "from": "shen_lan",
+      "to": "qi_ning",
+      "relation": "相爱"
+    },
+    {
+      "from": "he_lingchen",
+      "to": "qi_ning",
+      "relation": "敌对·灭门"
+    },
+    {
+      "from": "yeweian",
+      "to": "he_lingchen",
+      "relation": "矫正目标"
+    },
+    {
+      "from": "shu_fei",
+      "to": "he_lingchen",
+      "relation": "母子（子被贺凌宸杀）"
+    },
+    {
+      "from": "he_lingchen",
+      "to": "he_min",
+      "relation": "兄妹（后视为背叛）"
+    }
+  ]
+}

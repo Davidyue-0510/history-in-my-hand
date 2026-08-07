@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "novel_text",
+      "title": "小说正文《反派他爸教做人[快穿]》第二副本",
+      "party": "作者叙述"
+    },
+    {
+      "id": "system_setting",
+      "title": "快穿系统任务设定（反事实对照）",
+      "party": "系统任务"
+    },
+    {
+      "id": "he_yunzhang_view",
+      "title": "贺云章临终自述与立约",
+      "party": "贺云章自述"
+    },
+    {
+      "id": "yeweian_view",
+      "title": "叶为安视角（矫正者）",
+      "party": "叶为安视角"
+    },
+    {
+      "id": "shen_lan_view",
+      "title": "沈岚视角（被掳的穿越者）",
+      "party": "沈岚视角"
+    }
+  ]
+}
