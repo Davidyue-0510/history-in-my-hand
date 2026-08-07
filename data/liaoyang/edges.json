@@ -1,0 +1,70 @@
+{
+  "edges": [
+    {
+      "from": "liaoyang_cheng",
+      "to": "dongdan_gong",
+      "type": "admin",
+      "label": "辽阳—东丹王宫 (辽)"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "dongjing_cheng",
+      "type": "admin",
+      "label": "辽阳—东京城 (后金)"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "shenyang",
+      "type": "admin",
+      "label": "辽阳—沈阳 (辽东都司)"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "tieling_cheng",
+      "type": "admin",
+      "label": "辽阳—铁岭卫"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "kaiyuan_cheng",
+      "type": "admin",
+      "label": "辽阳—三万卫"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "tieling_cheng",
+      "type": "mashi",
+      "label": "辽东马市驿道"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "fushun",
+      "type": "mil",
+      "label": "萨尔浒之战: 辽阳经抚顺"
+    },
+    {
+      "from": "shenyang",
+      "to": "hetu_ala",
+      "type": "mil",
+      "label": "中路杜松军出沈阳"
+    },
+    {
+      "from": "shenyang_cheng",
+      "to": "liaoyang_cheng",
+      "type": "mil",
+      "label": "1621 浑河之战主战场"
+    },
+    {
+      "from": "liaoyang_cheng",
+      "to": "guangning",
+      "type": "admin",
+      "label": "辽东都司治—辽东总兵"
+    },
+    {
+      "from": "taizi_he",
+      "to": "dongjing_cheng",
+      "type": "admin",
+      "label": "太子河—东京城"
+    }
+  ]
+}

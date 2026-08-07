@@ -1,10 +1,42 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/sarhu/ 与 data/kaiyuan/
+// 权威数据源：data/sarhu/、data/kaiyuan/、data/tieling/、data/liaoyang/
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene (sarhu-1619 + kaiyuan-county)",
+  "slice": "multi-scene (sarhu-1619 + kaiyuan / tieling / liaoyang county)",
   "note": "演示切片。所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
+ },
+ "vocab": {
+  "parties": [
+   "明方",
+   "清方",
+   "朝鲜",
+   "综述考订"
+  ],
+  "party_bucket": {
+   "明廷官方": "明方",
+   "明·开原兵备道": "明方",
+   "明·私修": "明方",
+   "明修官史": "明方",
+   "清修·明臣": "明方",
+   "清修官史": "清方",
+   "清·地方志": "清方",
+   "朝鲜官方": "朝鲜",
+   "朝鲜·亲历": "朝鲜",
+   "学界": "综述考订",
+   "二手综述": "综述考订"
+  },
+  "layers": [
+   "record",
+   "scholarship",
+   "inference",
+   "gap"
+  ],
+  "quote_status": [
+   "verbatim",
+   "paraphrase_unverified",
+   "generated"
+  ]
  },
  "terrain": {
   "lon0": 122.0,
@@ -6764,7 +6796,10 @@ window.SANDBOX_DATA = {
    "meta": {
     "kind": "battle",
     "title": "萨尔浒之战",
-    "subtitle": "万历四十七年二月—三月 · 天命四年"
+    "dossier_label": "萨尔浒之战",
+    "subtitle": "万历四十七年二月—三月 · 天命四年",
+    "primary_place": "hetuala",
+    "dossier_event": "event:sarhu"
    },
    "sources": [
     {
@@ -6775,34 +6810,34 @@ window.SANDBOX_DATA = {
      "compiled_year": 1739,
      "stance": "official_later_dynasty",
      "stance_label": "后朝官修",
-     "distance_label": "战后 120 年追述",
-     "party": "ming",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "party": "清修·明臣",
      "color": "#B23A48",
      "note": "清修明史，成书距事件 120 年。对明军败因的叙述受清初政治语境影响，兵力数字多沿袭明廷奏报。"
     },
     {
-     "id": "shenzong_shilu",
+     "id": "ming_shenzong_shilu",
      "title": "明神宗实录",
      "juan": "卷五七九—五八一（万历四十七年二月—三月）",
      "compiler": "明官修",
      "compiled_year": 1630,
      "stance": "official_contemporary",
      "stance_label": "本朝官修·当代",
-     "distance_label": "战后约 10 年",
-     "party": "ming",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "party": "明廷官方",
      "color": "#C77B30",
      "note": "距事件最近的明方官方记录，但实录本身是奏报的汇编，兵力与死伤数字带有官僚系统的自我修饰。"
     },
     {
-     "id": "taizu_shilu",
+     "id": "qing_taizu_shilu",
      "title": "清太祖武皇帝实录",
      "juan": "卷三",
      "compiler": "后金／清官修",
      "compiled_year": 1636,
      "stance": "official_enemy",
      "stance_label": "敌方官修",
-     "distance_label": "战后约 17 年",
-     "party": "jin",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "party": "清修官史",
      "color": "#3D6B4F",
      "note": "胜方叙述。系统性夸大明军规模以彰显战功，但对后金一方的行军序列与日程记载最为细致。"
     },
@@ -6814,8 +6849,8 @@ window.SANDBOX_DATA = {
      "compiled_year": 1620,
      "stance": "third_party_participant",
      "stance_label": "第三方·亲历",
-     "distance_label": "事发当年，亲历者日记",
-     "party": "joseon",
+     "distance_label": "1620 年成书，亲历者被俘后追记",
+     "party": "朝鲜·亲历",
      "color": "#4A6FA5",
      "note": "随东路刘綎军的朝鲜官员李民寏所记，被俘后写成。价值不在于更准确，而在于它是唯一的第三方亲历视角，且不受明清双方政治叙事约束。"
     },
@@ -6827,8 +6862,8 @@ window.SANDBOX_DATA = {
      "compiled_year": 1653,
      "stance": "private",
      "stance_label": "私修编年",
-     "distance_label": "战后约 34 年",
-     "party": "ming",
+     "distance_label": "成书约 1653，距事件约 34 年",
+     "party": "明·私修",
      "color": "#8B6BA8",
      "note": "私家编年史，谈迁对官方数字多有校订，常保留实录不载的异说。"
     },
@@ -6840,8 +6875,8 @@ window.SANDBOX_DATA = {
      "compiled_year": 2000,
      "stance": "scholarship",
      "stance_label": "学界考证",
-     "distance_label": "距事件 300 年以上",
-     "party": "neutral",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "party": "学界",
      "color": "#2E7D8F",
      "note": "综合明清双方档案、朝鲜史料与卫所兵额推算得出。占位条目，正式版需逐条落实到具体论著与页码。"
     }
@@ -7238,7 +7273,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.15,
      "scale": "empire",
      "note": "对外宣称的虚数，用以震慑后金与安抚朝议。几乎所有研究者都不采信此数。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A002",
@@ -7253,14 +7288,14 @@ window.SANDBOX_DATA = {
       "era_text": "天命四年三月"
      },
      "place": "hetuala",
-     "source": "taizu_shilu",
+     "source": "qing_taizu_shilu",
      "quote": "明发兵二十万，分四路来侵",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.25,
      "scale": "empire",
      "note": "胜方记述。夸大敌军规模以彰显战功，是所有军事史料的通病，与立场直接相关。",
-     "_party": "jin"
+     "_party": "清修官史"
     },
     {
      "id": "A003",
@@ -7277,12 +7312,12 @@ window.SANDBOX_DATA = {
      "place": "shenyang",
      "source": "modern",
      "quote": "据卫所兵额、饷银发放与各路分兵数逆推",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.7,
      "scale": "empire",
      "note": "不含叶赫与朝鲜援军。占位数据，正式版需落实到具体论著与页码。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A004",
@@ -7299,12 +7334,12 @@ window.SANDBOX_DATA = {
      "place": "shenyang",
      "source": "modern",
      "quote": "明军八万八千 + 叶赫约一万 + 朝鲜一万三千",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.65,
      "scale": "empire",
      "note": "合计口径。与 A003 不冲突，是不同的统计边界——这类分歧最容易被误读为矛盾。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A010",
@@ -7321,12 +7356,12 @@ window.SANDBOX_DATA = {
      "place": "hetuala",
      "source": "modern",
      "quote": "八旗每旗约七千五百人，共六万上下",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.7,
      "scale": "empire",
      "note": "后金以此兵力实现局部数倍于明军的兵力优势，是本役的战术核心。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A011",
@@ -7348,7 +7383,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.2,
      "scale": "empire",
      "note": "败方对敌军规模的估计，同样存在夸大倾向——败得越惨，敌人越多。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A020",
@@ -7365,12 +7400,12 @@ window.SANDBOX_DATA = {
      "place": "fushunguan",
      "source": "modern",
      "quote": "西路为四路主力",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.6,
      "scale": "province",
      "note": "通行说法。杜松部为明军精锐，配属车营与火器。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A021",
@@ -7387,12 +7422,12 @@ window.SANDBOX_DATA = {
      "place": "kaiyuan",
      "source": "modern",
      "quote": "北路马林部本部兵额",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.55,
      "scale": "province",
      "note": "不含叶赫援兵。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A022",
@@ -7409,12 +7444,12 @@ window.SANDBOX_DATA = {
      "place": "yehe",
      "source": "modern",
      "quote": "叶赫贝勒率部随北路军出",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.45,
      "scale": "province",
      "note": "叶赫兵闻杜松败即退回，实际未与后金交战。是否真到达战场，史料记载含糊。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A023",
@@ -7431,12 +7466,12 @@ window.SANDBOX_DATA = {
      "place": "qinghe",
      "source": "modern",
      "quote": "南路李如柏部",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.5,
      "scale": "province",
      "note": "几乎完整撤回，是四路中唯一保全建制者。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A024",
@@ -7453,12 +7488,12 @@ window.SANDBOX_DATA = {
      "place": "kuandian",
      "source": "modern",
      "quote": "东路刘綎部明军本部",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.55,
      "scale": "province",
      "note": "刘綎所部多为南兵与川兵，与辽东本地军序列不同。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A025",
@@ -7481,7 +7516,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "亲历者所记本方兵力，在所有兵力数据中可信度最高——记录者没有夸大或缩小的动机。",
-     "_party": "joseon"
+     "_party": "朝鲜·亲历"
     },
     {
      "id": "A030",
@@ -7503,7 +7538,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "province",
      "note": "精确到个位的数字反而值得警惕——它来自战后清点缺额的奏报，而非战场统计。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A031",
@@ -7525,7 +7560,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.45,
      "scale": "province",
      "note": "军官损失比例极高，反映的是建制被整体歼灭而非溃散。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A032",
@@ -7547,7 +7582,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "province",
      "note": "马骡损失数可与兵力数互校：若明军仅八万余，则骑兵与辎重损失近乎全灭。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A033",
@@ -7569,7 +7604,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "county",
      "note": "《栅中日录》多用概数而非确数，这本身是亲历记录的特征——身处其中的人反而数不清。",
-     "_party": "joseon"
+     "_party": "朝鲜·亲历"
     },
     {
      "id": "A040",
@@ -7584,14 +7619,14 @@ window.SANDBOX_DATA = {
       "era_text": "万历四十七年三月初一"
      },
      "place": "sarhu",
-     "source": "shenzong_shilu",
+     "source": "ming_shenzong_shilu",
      "quote": "三月朔，杜松军覆于萨尔浒",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.85,
      "scale": "province",
      "note": "四路中主力最先被歼，此后战局已定。",
-     "_party": "ming"
+     "_party": "明廷官方"
     },
     {
      "id": "A041",
@@ -7606,14 +7641,14 @@ window.SANDBOX_DATA = {
       "era_text": "万历四十七年二月廿九"
      },
      "place": "fushunguan",
-     "source": "shenzong_shilu",
+     "source": "ming_shenzong_shilu",
      "quote": "松出抚顺关，逾五岭",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.75,
      "scale": "province",
      "note": "比杨镐原定的三月初二会师期提前，是四路失去协同的起点。",
-     "_party": "ming"
+     "_party": "明廷官方"
     },
     {
      "id": "A042",
@@ -7635,7 +7670,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "province",
      "note": "明方叙事将败因归于主将个人性格，这是官修史书处理败绩的典型手法——归咎于人，则制度无过。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A043",
@@ -7650,14 +7685,14 @@ window.SANDBOX_DATA = {
       "era_text": "天命四年二月末"
      },
      "place": "sarhu",
-     "source": "taizu_shilu",
+     "source": "qing_taizu_shilu",
      "quote": "预于上流筑坝，俟明兵半渡决之",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.35,
      "scale": "province",
      "note": "与 A042 直接冲突。同一件事，明方记为主将莽撞，金方记为己方谋略——冲突本身比任何一方的说法都更有信息量。",
-     "_party": "jin"
+     "_party": "清修官史"
     },
     {
      "id": "A050",
@@ -7672,14 +7707,14 @@ window.SANDBOX_DATA = {
       "era_text": "万历四十七年三月初二"
      },
      "place": "shangjianya",
-     "source": "shenzong_shilu",
+     "source": "ming_shenzong_shilu",
      "quote": "越日，马林军溃于尚间崖",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.8,
      "scale": "province",
      "note": "马林部得知杜松败讯后就地结营三处，被逐个击破。",
-     "_party": "ming"
+     "_party": "明廷官方"
     },
     {
      "id": "A051",
@@ -7701,7 +7736,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.75,
      "scale": "county",
      "note": "文官统兵而死战，与主将马林单骑遁走形成对照，是明代史料中反复被强调的道德叙事。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A052",
@@ -7723,7 +7758,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "同年六月开原陷落，马林战死于开原。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A060",
@@ -7745,7 +7780,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "东路军距赫图阿拉最近，也最后被歼。",
-     "_party": "joseon"
+     "_party": "朝鲜·亲历"
     },
     {
      "id": "A061",
@@ -7760,14 +7795,14 @@ window.SANDBOX_DATA = {
       "era_text": "万历四十七年三月初三—初四"
      },
      "place": "abudaligang",
-     "source": "taizu_shilu",
+     "source": "qing_taizu_shilu",
      "quote": "以所获松令箭，遣人诈为松使，趣綎兵前进",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.6,
      "scale": "province",
      "note": "罕见地为明金双方史料共同记载，可信度因此提高——立场相反的史料若说法一致，通常意味着事实本身较为坚实。",
-     "_party": "jin"
+     "_party": "清修官史"
     },
     {
      "id": "A062",
@@ -7789,7 +7824,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "刘綎时年六十余，为明末宿将中战功最著者之一。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A063",
@@ -7811,7 +7846,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.85,
      "scale": "county",
      "note": "朝鲜内部对姜弘立评价两极。光海君密令观望之说，是朝鲜史学界长期争论的问题。",
-     "_party": "joseon"
+     "_party": "朝鲜·亲历"
     },
     {
      "id": "A070",
@@ -7826,14 +7861,14 @@ window.SANDBOX_DATA = {
       "era_text": "万历四十七年三月初五"
      },
      "place": "hulan",
-     "source": "shenzong_shilu",
+     "source": "ming_shenzong_shilu",
      "quote": "镐檄如柏还师",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.7,
      "scale": "province",
      "note": "杨镐得三路败讯后急檄南路撤兵。",
-     "_party": "ming"
+     "_party": "明廷官方"
     },
     {
      "id": "A071",
@@ -7855,7 +7890,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.45,
      "scale": "county",
      "note": "二十名哨骑吓垮一路大军。此条若属实，说明的不是兵力问题而是士气问题。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A080",
@@ -7870,14 +7905,14 @@ window.SANDBOX_DATA = {
       "era_text": "天命四年三月"
      },
      "place": "hetuala",
-     "source": "taizu_shilu",
+     "source": "qing_taizu_shilu",
      "quote": "任尔几路来，我只一路去",
      "quote_status": "paraphrase_unverified",
      "layer": "record",
      "confidence": 0.65,
      "scale": "empire",
      "note": "这句话是否为努尔哈赤原话难以确证，但后金的实际行动完全符合此方针。",
-     "_party": "jin"
+     "_party": "清修官史"
     },
     {
      "id": "A090",
@@ -7899,7 +7934,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.35,
      "scale": "province",
      "note": "AI 推演：由起讫地点与日期反推。未见任何史料直接记载行军速度，此值仅供想象战场节奏之用，不可引用。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A091",
@@ -7921,7 +7956,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.25,
      "scale": "county",
      "note": "AI 推演：纯属环境重建，无史料依据。此类断言的唯一价值是让场景可被想象，绝不可作为论据。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
      "id": "A092",
@@ -7943,10 +7978,10 @@ window.SANDBOX_DATA = {
      "confidence": 0.0,
      "scale": "province",
      "note": "史料缺口标记。这类条目不提供信息，只指出信息在哪里缺失——它们是众包录入最该优先攻克的目标。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
-     "id": "A040",
+     "id": "A045",
      "subject": "terrain:liaodong_east",
      "predicate": "植被",
      "value": "林木茂密",
@@ -7965,10 +8000,10 @@ window.SANDBOX_DATA = {
      "confidence": 0.55,
      "scale": "province",
      "note": "这条断言解释了为什么东路刘綎走得最慢，也解释了为什么阿布达里岗设伏能成功。植被在本项目中不做栅格图层——历史植被没有可信的空间数据源，现代林地数据反映的是当代。它只能以文献断言的形式存在。",
-     "_party": "joseon"
+     "_party": "朝鲜·亲历"
     },
     {
-     "id": "A041",
+     "id": "A046",
      "subject": "terrain:hunhe_crossing",
      "predicate": "渡河条件",
      "value": "水深及肩",
@@ -7987,10 +8022,10 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "county",
      "note": "这是『疲劳』这个抽象参数在史料中的实际形态。杜松部当日两渡浑河，接战时是湿透且受冻的状态。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
-     "id": "A042",
+     "id": "A047",
      "subject": "terrain:route_jin",
      "predicate": "机动方式",
      "value": "骑兵",
@@ -8004,16 +8039,16 @@ window.SANDBOX_DATA = {
      "place": "hetuala",
      "source": "modern",
      "quote": "八旗兵制以骑兵为主体，机动力远高于明军步骑混编",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.75,
      "scale": "empire",
      "note": "本项目的地形行军模型以步兵速度为基准，因此算出后金机动『紧张度 2.64』。这个偏差不是史料造假，是模型缺了兵种维度——系统自动生成的问题，由这条断言回答。",
-     "_party": "neutral"
+     "_party": "学界"
     },
     {
-     "id": "A043",
-     "subject": "person:liruibai",
+     "id": "A048",
+     "subject": "person:liruobai",
      "predicate": "评价",
      "value": "逗留不进",
      "value_text": "素怯，逗留不进，全师而还",
@@ -8031,7 +8066,7 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "empire",
      "note": "李成梁之子，战后遭弹劾，天启元年自杀。地形模型显示南路五日走完模型需 6.4 日的路，紧张度 1.28——按地形算他并不算慢。『逗留』这个评价可能带有战后追责的政治色彩。这是系统自动对一个流传四百年的定论提出的质疑。",
-     "_party": "ming"
+     "_party": "清修·明臣"
     },
     {
      "id": "A044",
@@ -8048,16 +8083,39 @@ window.SANDBOX_DATA = {
      "place": "sarhu",
      "source": "modern",
      "quote": "后金总兵力少于明军，然每一场接战均以数倍兵力击其一部",
-     "quote_status": "paraphrase",
+     "quote_status": "paraphrase_unverified",
      "layer": "scholarship",
      "confidence": 0.8,
      "scale": "empire",
      "note": "这条断言可由本系统的接战数据自动检验，不需要人为宣称——见『局部优势』面板。",
-     "_party": "neutral"
+     "_party": "学界"
+    },
+    {
+     "id": "A049",
+     "subject": "casualty:ming",
+     "predicate": "阵亡人数",
+     "value": 90000,
+     "value_text": "丧师九万",
+     "unit": "人",
+     "time": {
+      "start": "1619-04-14",
+      "end": "1619-04-18",
+      "era_text": "万历四十七年三月"
+     },
+     "place": "sarhu",
+     "source": "guoque",
+     "quote": "四路丧师九万",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.35,
+     "scale": "province",
+     "note": "谈迁只记损失总数而不记出征人数，与《明史》『四万五千八百七十余』整整差一倍。两个数字未必矛盾——《明史》数的是『阵亡军丁』，谈迁的『丧师』可能含溃散失踪与朝鲜、叶赫附从之众。本系统不裁决，只把两条并列并标出这一解释路径。",
+     "_party": "明·私修"
     }
    ],
    "conflicts": [
     {
+     "id": "cf:army:ming_total|兵力",
      "subject": "army:ming_total",
      "predicate": "兵力",
      "kind": "record_vs_scholarship",
@@ -8071,6 +8129,19 @@ window.SANDBOX_DATA = {
      ]
     },
     {
+     "id": "cf:casualty:ming|阵亡人数",
+     "subject": "casualty:ming",
+     "predicate": "阵亡人数",
+     "kind": "record_vs_record",
+     "count": 2,
+     "spread": 1.96,
+     "assertion_ids": [
+      "A030",
+      "A049"
+     ]
+    },
+    {
+     "id": "cf:army:jin_total|兵力",
      "subject": "army:jin_total",
      "predicate": "兵力",
      "kind": "record_vs_scholarship",
@@ -8082,6 +8153,7 @@ window.SANDBOX_DATA = {
      ]
     },
     {
+     "id": "cf:event:dusong_cross|渡河损失原因",
      "subject": "event:dusong_cross",
      "predicate": "渡河损失原因",
      "kind": "record_vs_record",
@@ -8426,7 +8498,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "明军大营被冲破，溃卒渡河多溺死"
+     "outcome": "明军大营被冲破，溃卒渡河多溺死",
+     "subject": "event:sarhu_battle"
     },
     {
      "id": "eng_jilinya",
@@ -8461,7 +8534,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "杜松、王宣、赵梦麟阵亡，西路全军覆没"
+     "outcome": "杜松、王宣、赵梦麟阵亡，西路全军覆没",
+     "subject": "event:dusong_cross"
     },
     {
      "id": "eng_shangjianya",
@@ -8496,7 +8570,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "马林本部溃，马林单骑走开原"
+     "outcome": "马林本部溃，马林单骑走开原",
+     "subject": "event:shangjianya"
     },
     {
      "id": "eng_feifenshan",
@@ -8531,7 +8606,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "潘宗颜力战死，北路尽没"
+     "outcome": "潘宗颜力战死，北路尽没",
+     "subject": "event:shangjianya"
     },
     {
      "id": "eng_abudaligang",
@@ -8566,7 +8642,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "刘綎战死，东路溃"
+     "outcome": "刘綎战死，东路溃",
+     "subject": "event:abudaligang"
     },
     {
      "id": "eng_fucha",
@@ -8601,7 +8678,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": "jin",
-     "outcome": "姜弘立率余部降"
+     "outcome": "姜弘立率余部降",
+     "subject": "event:abudaligang"
     },
     {
      "id": "eng_south_none",
@@ -8637,7 +8715,8 @@ window.SANDBOX_DATA = {
       }
      ],
      "winner": null,
-     "outcome": "全师而还，但撤退中自相蹂践死千余人。这一路的两万五千人，是明军总兵力里从未上过秤的一块。"
+     "outcome": "全师而还，但撤退中自相蹂践死千余人。这一路的两万五千人，是明军总兵力里从未上过秤的一块。",
+     "subject": "event:south_retreat"
     }
    ],
    "attrition": {
@@ -9555,88 +9634,99 @@ window.SANDBOX_DATA = {
    "meta": {
     "kind": "county",
     "title": "开原",
-    "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落"
+    "dossier_label": "开原",
+    "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落",
+    "primary_place": "kaiyuan_cheng",
+    "dossier_event": "event:kaifa"
    },
    "sources": [
     {
      "id": "kaiyuan_tushuo",
      "title": "开原图说",
      "party": "明·开原兵备道",
-     "distance_label": "亲历·实地调查",
-     "stance_label": "明方边臣",
+     "distance_label": "成书 1603，距开原陷落 16 年的实地踏勘",
+     "stance_label": "本朝地方官修·当代",
      "compiler": "冯瑗（1572–1627）辑，万历末年成书",
      "color": "#7A5C2E",
-     "period": "明万历"
+     "period": "明万历",
+     "stance": "official_local_contemporary"
     },
     {
      "id": "mingshi",
      "title": "明史",
      "party": "清修·明臣",
-     "distance_label": "后世编纂",
-     "stance_label": "清修官史",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "stance_label": "后朝官修",
      "compiler": "张廷玉等，《明史·地理志/列传》",
      "color": "#8C6239",
-     "period": "清乾隆"
+     "period": "清乾隆",
+     "stance": "official_later_dynasty"
     },
     {
-     "id": "ming_shilu",
+     "id": "ming_shenzong_shilu",
      "title": "明神宗实录",
-     "party": "明",
-     "distance_label": "当时起居注",
-     "stance_label": "明廷官方",
+     "party": "明廷官方",
+     "distance_label": "成书约 1630，距万历末事约 10 年",
+     "stance_label": "本朝官修·当代",
      "compiler": "明代历朝实录馆",
      "color": "#9C7A45",
-     "period": "明"
+     "period": "明",
+     "stance": "official_contemporary"
     },
     {
-     "id": "taizu_shilu",
+     "id": "qing_taizu_shilu",
      "title": "清太祖实录",
-     "party": "清",
-     "distance_label": "后世编纂",
-     "stance_label": "清方官史",
+     "party": "清修官史",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "stance_label": "敌方官修",
      "compiler": "清代国史馆",
      "color": "#3D6B4F",
-     "period": "清"
+     "period": "清",
+     "stance": "official_enemy"
     },
     {
      "id": "chaoxian_shilu",
      "title": "朝鲜李朝实录",
-     "party": "朝鲜",
-     "distance_label": "盟国旁观",
-     "stance_label": "朝鲜官方",
+     "party": "朝鲜官方",
+     "distance_label": "当代记注，事发当年即录",
+     "stance_label": "第三方官修·逐日记注",
      "compiler": "朝鲜春秋馆",
      "color": "#2E7D8F",
-     "period": "朝鲜"
+     "period": "朝鲜",
+     "stance": "third_party_official"
     },
     {
      "id": "xuantong_kao",
      "title": "开原县志·万历四十六年东夷入犯",
      "party": "清·地方志",
-     "distance_label": "后世地方追记",
+     "distance_label": "清末纂修，距明末事约 290 年",
      "stance_label": "地方志",
      "compiler": "《开原县志》（据《开原图说》转引）",
      "color": "#6E6A5E",
-     "period": "清"
+     "period": "清",
+     "stance": "local_gazetteer"
     },
     {
      "id": "modern",
      "title": "现代考订",
      "party": "学界",
-     "distance_label": "综合研究",
-     "stance_label": "中性考订",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "stance_label": "学界考证",
      "compiler": "辽东镇长城与明清东北史综合研究",
      "color": "#2E7D8F",
-     "period": "今"
+     "period": "今",
+     "stance": "scholarship"
     },
     {
      "id": "wiki",
      "title": "地方综述·维基/民族报",
-     "party": "综述",
-     "distance_label": "二手综述",
-     "stance_label": "综述",
+     "party": "二手综述",
+     "distance_label": "当代，未经同行评议；任何依赖它的断言都是待升级项",
+     "stance_label": "三手综述",
      "compiler": "维基百科、中国民族报等公开综述",
      "color": "#8A8275",
-     "period": "今"
+     "period": "今",
+     "stance": "tertiary"
     }
    ],
    "places": [
@@ -9913,7 +10003,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原设三关三市，提督马市公署设在开原城，为辽东贸易中心。",
      "note": "互市是开原作为『东北亚丝绸之路丝关』的核心职能。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K004",
@@ -9929,7 +10019,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "兴旺的马市贸易，使得开原三万卫成了全国三大冶铁中心之一。",
      "note": "冶铁能力支撑了边堡兵器与农具自给，是开原军镇的经济底座。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K005",
@@ -9945,7 +10035,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原，控临绝徼，翼带镇城，居全辽之上游，为东陲之险塞，九边危地此其最乎。",
      "note": "开原位于明辽东防御体系最北端，是明联络女真、蒙古的枢纽。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K006",
@@ -9985,7 +10075,7 @@ window.SANDBOX_DATA = {
      "predicate": "出兵日",
      "value_text": "万历四十七年六月初十（公历 1619-07-20，锚点见 K024）努尔哈赤率军出静安堡",
      "value": 16190720,
-     "source": "ming_shilu",
+     "source": "ming_shenzong_shilu",
      "layer": "record",
      "era": "万历四十七年六月",
      "place": "kaiyuan_cheng",
@@ -9993,7 +10083,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月初十，努尔哈赤率四万大军往攻开原，走三日后因雨驻扎。",
      "note": "公历锚点已由 K024 闭环（维基『开铁之战』条目：1619-07-20 / 07-26；区间 6 天与农历吻合）。",
-     "_party": "明"
+     "_party": "明廷官方"
     },
     {
      "id": "K009",
@@ -10001,7 +10091,7 @@ window.SANDBOX_DATA = {
      "predicate": "陷落日",
      "value_text": "万历四十七年六月十六（1619-07-26）克开原",
      "value": 16190726,
-     "source": "ming_shilu",
+     "source": "ming_shenzong_shilu",
      "layer": "record",
      "era": "万历四十七年六月",
      "place": "kaiyuan_cheng",
@@ -10009,7 +10099,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "六月十六日直抵开原城下；叶赫报信，郑之范不信反鞭来使；后金分兵架梯，东南门失守。",
      "note": "出兵日与陷落日须区分：『六月初十』是出兵，『六月十六』是陷落。",
-     "_party": "明"
+     "_party": "明廷官方"
     },
     {
      "id": "K010",
@@ -10041,7 +10131,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月，后金兵万骑从静安堡入，乘开原疏于防守之机一举而下。",
      "note": "与『四万』说相差四倍，属典型兵力记载分歧；需更多原始记载定夺。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K012",
@@ -10105,7 +10195,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原本有十几万人居住，经后金血洗竟只剩一千多人。",
      "note": "屠城数字出自后世综述，清方实录不载己方屠戮，数字待核（见 K025）。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K016",
@@ -10113,7 +10203,7 @@ window.SANDBOX_DATA = {
      "predicate": "论断",
      "value_text": "熊廷弼：『开原，河东根柢也』，视开原—辽沈—京师为连锁防线",
      "value": null,
-     "source": "ming_shilu",
+     "source": "ming_shenzong_shilu",
      "layer": "record",
      "era": "万历四十七年",
      "place": "kaiyuan_cheng",
@@ -10121,7 +10211,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原为河东根底，欲保河东而开原必不可弃。今开原破矣，清阳弃矣，庆云抢矣……",
      "note": "此奏揭示开原陷落的战略连锁效应，是判断战役意义的权威一手材料。",
-     "_party": "明"
+     "_party": "明廷官方"
     },
     {
      "id": "K017",
@@ -10201,7 +10291,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "马市方便了各民族之间的物资贸易，推动了经济发展与交融。",
      "note": "开原马市是明代边疆『互市—羁縻—制衡』政策的实物样本。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K022",
@@ -10233,7 +10323,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原境内有河流166条，主要河流有辽河、清河、寇河、柴河等。",
      "note": "水网是开原军镇补给与防御的命脉，也是后金雨季行军的天候变量。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K024",
@@ -10249,7 +10339,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月初十（1619年7月20日）努尔哈赤亲起四万大军往攻开原；六月十六（7月26日）直抵开原城下。",
      "note": "农历→公历换算依维基『开铁之战』条目（wbjc.net / profilpelajar.com 等转载）；lunardate / borax 库均只覆盖 1900–2100，本地不可独立核验，故升为 record 但仍标 paraphrase_unverified。区间 6 天与史料六月初十→十六自洽。",
-     "_party": "综述"
+     "_party": "二手综述"
     },
     {
      "id": "K025",
@@ -10257,7 +10347,7 @@ window.SANDBOX_DATA = {
      "predicate": "屠城数字",
      "value_text": "缺口：屠城『十余万』仅见明方/综述，清方实录不载，数字待第三方核对",
      "value": null,
-     "source": "taizu_shilu",
+     "source": "qing_taizu_shilu",
      "layer": "gap",
      "era": "万历四十七年",
      "place": "kaiyuan_cheng",
@@ -10265,7 +10355,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "胜方史料几乎不记己方屠戮，此数字本质是『对方叙事』，须标注其来源偏向。",
-     "_party": "清"
+     "_party": "清修官史"
     },
     {
      "id": "K026",
@@ -10281,7 +10371,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "光海君以姜弘立为五道都元帅，金景瑞副之，率兵一万三千助明，隶刘綎东路。",
      "note": "朝鲜为明盟国，萨尔浒东路实含朝鲜军，故三方史料中朝鲜非旁观；原始见《光海君日记》(朝鲜实录)。",
-     "_party": "朝鲜"
+     "_party": "朝鲜官方"
     },
     {
      "id": "K026a",
@@ -10297,7 +10387,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "姜弘立遣通事黄连海诣后金，言朝鲜出兵迫于明命非其本意；副帅金景瑞单骑见代善，约『两国无怨，各解兵』。",
      "note": "朝鲜军降后金，明监军乔一琦坠崖死；此为朝鲜实录详载，是三方叙事中朝鲜立场核心。",
-     "_party": "朝鲜"
+     "_party": "朝鲜官方"
     },
     {
      "id": "K026b",
@@ -10313,7 +10403,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历帝赐敕：『朕抚有万邦，绥玆属国，既安危之相倚……勉图后效，毋弃前功，雪耻除凶，务期殄灭。』",
      "note": "明对萨尔浒之降极度宽容，因战略仍需朝鲜为左腋之患牵制后金。",
-     "_party": "朝鲜"
+     "_party": "朝鲜官方"
     },
     {
      "id": "K026c",
@@ -10321,7 +10411,7 @@ window.SANDBOX_DATA = {
      "predicate": "朝鲜处境",
      "value_text": "熊廷弼奏：开原未破时『朝鲜未败，犹有左腋之患』；开原破则朝鲜失牵制后金之凭，『不敢不从』后金",
      "value": null,
-     "source": "ming_shilu",
+     "source": "ming_shenzong_shilu",
      "layer": "record",
      "era": "万历四十七年",
      "place": "kaiyuan_cheng",
@@ -10329,7 +10419,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "贼未破开原时……朝鲜未败，犹有左腋之患。今开原破而北关不敢不顺，使币往来，而朝鲜不敢不从。",
      "note": "此奏载明实录，将开原陷落与朝鲜战略处境直接锁合，是三方共振关键环节；朝鲜侧见 K026a/b。",
-     "_party": "明"
+     "_party": "明廷官方"
     },
     {
      "id": "K026d",
@@ -10343,9 +10433,9 @@ window.SANDBOX_DATA = {
      "place": "kaiyuan_cheng",
      "confidence": 0.6,
      "quote_status": "paraphrase_unverified",
-     "quote": "",
+     "quote": "开原、铁岭相继陷没，虏势益张，我国介于其间，进退维谷。",
      "note": "朝鲜实录原文待核，此条据《光海君日记》转引综述；三方史料(明/清/朝鲜)至此均对开原陷落有记载，原 K026 缺口收窄。",
-     "_party": "朝鲜"
+     "_party": "朝鲜官方"
     },
     {
      "id": "K027a",
@@ -10401,7 +10491,7 @@ window.SANDBOX_DATA = {
      "predicate": "海西—开原屏障",
      "value_text": "开原未陷时海西叶赫为开原北屏(熊廷弼『北关相倚，犹有后背之忧』)；后金先服叶赫再破开原，抽掉明辽东北面屏障",
      "value": null,
-     "source": "ming_shilu",
+     "source": "ming_shenzong_shilu",
      "layer": "record",
      "era": "万历四十七年",
      "place": "kaiyuan_cheng",
@@ -10409,7 +10499,7 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "北关(叶赫)相倚，犹有后背之忧；开原破而北关不敢不顺。",
      "note": "与 K017『开原陷后叶赫灭』呼应，海西屏障的抽离是开原失守的结构性前提。",
-     "_party": "明"
+     "_party": "明廷官方"
     },
     {
      "id": "K027e",
@@ -10554,10 +10644,27 @@ window.SANDBOX_DATA = {
      "quote": "",
      "note": "haversine 几何；马市紧邻开原城外，与『在城北门外』史载一致。",
      "_party": "学界"
+    },
+    {
+     "id": "K029",
+     "subject": "event:kaifa",
+     "predicate": "地方志记载",
+     "value_text": "缺口：《开原县志·万历四十六年东夷入犯》条尚未录入——该志为清末纂修的地方志，记万历四十六年（1619 陷落前一年）后金已入犯开原境，是理解次年速陷的关键前史",
+     "value": null,
+     "source": "xuantong_kao",
+     "layer": "gap",
+     "era": "万历四十六年",
+     "place": "kaiyuan_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "此源已在 sources.json 登记但无任何断言引用它。与其编一条来源可疑的记载来充数，不如把『登记了但没读到原文』本身作为缺口挂出来——这正是本项目把缺口当一等公民的用法。",
+     "_party": "清·地方志"
     }
    ],
    "conflicts": [
     {
+     "id": "cf:army:jin_kaifa|兵力",
      "subject": "army:jin_kaifa",
      "predicate": "兵力",
      "kind": "record_vs_record",
@@ -10570,7 +10677,8 @@ window.SANDBOX_DATA = {
     }
    ],
    "gaps": [
-    "K025"
+    "K025",
+    "K029"
    ],
    "events": [
     {
@@ -10625,7 +10733,8 @@ window.SANDBOX_DATA = {
      "kind": "战事",
      "title": "萨尔浒之战",
      "place": "sarhu",
-     "text": "后金大破明四路大军。开原明军退守，为开铁之战的直接前因。"
+     "text": "后金大破明四路大军。开原明军退守，为开铁之战的直接前因。",
+     "subject": "event:sarhu"
     },
     {
      "id": "ev_kaifa",
@@ -10634,7 +10743,8 @@ window.SANDBOX_DATA = {
      "kind": "战事",
      "title": "开铁之战",
      "place": "kaiyuan_cheng",
-     "text": "六月初十努尔哈赤率军出静安堡，六月十六（7月26日）克开原；七月克铁岭。明总兵马林等殉国，郑之范弃城。"
+     "text": "六月初十努尔哈赤率军出静安堡，六月十六（7月26日）克开原；七月克铁岭。明总兵马林等殉国，郑之范弃城。",
+     "subject": "event:kaifa"
     },
     {
      "id": "ev_yehe",
@@ -10643,7 +10753,8 @@ window.SANDBOX_DATA = {
      "kind": "战事",
      "title": "叶赫灭亡",
      "place": "yehe",
-     "text": "开原既陷，叶赫失去明方倚仗，孤立无援，一个月后被后金攻灭收编，女真诸部基本统一。"
+     "text": "开原既陷，叶赫失去明方倚仗，孤立无援，一个月后被后金攻灭收编，女真诸部基本统一。",
+     "subject": "event:yehe"
     },
     {
      "id": "ev_xianzhi",
@@ -10895,6 +11006,2303 @@ window.SANDBOX_DATA = {
     "strain_label": "基本吻合"
    },
    "route_verdict": "开原路地形紧张度 1.22（基本吻合），明显低于萨尔浒后金主力路 2.64（明显紧张，强烈建议复查（路线/分批/夜行？））。说明努尔哈赤攻开原为一次相对常规的强行军，萨尔浒才是超常速闪击——与\"局部优势 = 速度 × 距离累积\"的判断一致。"
+  },
+  "tieling": {
+   "meta": {
+    "kind": "county",
+    "title": "铁岭",
+    "dossier_label": "铁岭",
+    "subtitle": "李成梁故里 · 辽东锁钥 · 万历四十七年陷落",
+    "primary_place": "tieling_cheng",
+    "dossier_event": "event:tieling_fall",
+    "back": "萨尔浒"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    },
+    {
+     "id": "wiki",
+     "title": "维基百科",
+     "party": "二手综述",
+     "stance_label": "三手综述",
+     "distance_label": "当代，未经同行评议；任何依赖它的断言都是待升级项",
+     "color": "#9B7B5A",
+     "compiler": "公众编辑",
+     "period": "现代",
+     "stance": "tertiary"
+    }
+   ],
+   "places": [
+    {
+     "id": "tieling_cheng",
+     "name": "铁岭城",
+     "lon": 124.31,
+     "lat": 42.3,
+     "type": "city",
+     "modern": "辽宁省铁岭市银州区",
+     "note": "明洪武二十六年(1393)徙铁岭卫治于此, 以辽代银州古城为依托",
+     "elev": 238
+    },
+    {
+     "id": "fengjibao",
+     "name": "奉集堡",
+     "lon": 123.51,
+     "lat": 41.69,
+     "type": "wei",
+     "modern": "沈阳市苏家屯区塔山一带",
+     "note": "洪武二十一年(1388)铁岭卫最初设置地, 后徒至银州",
+     "elev": 51
+    },
+    {
+     "id": "kaiyuan_cheng",
+     "name": "开原城",
+     "lon": 124.04,
+     "lat": 42.55,
+     "type": "city",
+     "modern": "辽宁省开原市",
+     "note": "铁岭南向最近卫城, 萨尔浒之战马林北路军征调来自开原",
+     "elev": 85
+    },
+    {
+     "id": "shenyang",
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁省沈阳市",
+     "note": "辽东重镇, 奉集堡在其东南, 萨尔浒之战西路杜松军从沈阳出",
+     "elev": 50
+    },
+    {
+     "id": "fushun",
+     "name": "抚顺",
+     "lon": 123.94,
+     "lat": 41.86,
+     "type": "guan",
+     "modern": "辽宁抚顺市",
+     "note": "萨尔浒之战西路主攻出发地, 万历四十六年(1618)先陷",
+     "elev": 76
+    },
+    {
+     "id": "yageguan",
+     "name": "鸦鹘关",
+     "lon": 124.3,
+     "lat": 41.66,
+     "type": "guan",
+     "modern": "辽宁新宾满族自治县西南",
+     "note": "萨尔浒之战南路李如柏军出鸦鹘关",
+     "elev": 531
+    },
+    {
+     "id": "hetu_ala",
+     "name": "赫图阿拉",
+     "lon": 124.85,
+     "lat": 41.89,
+     "type": "capital",
+     "modern": "辽宁新宾满族自治县老城村",
+     "note": "努尔哈赤起家之地, 萨尔浒之战明军四路围的目标",
+     "elev": 586
+    },
+    {
+     "id": "kuanbian",
+     "name": "宽甸六堡",
+     "lon": 124.3,
+     "lat": 40.73,
+     "type": "wei",
+     "modern": "辽宁宽甸满族自治县一带",
+     "note": "万历初李成梁献议兴建, 万历三十四年(1606)放弃, 迁民6万余户",
+     "elev": 241
+    },
+    {
+     "id": "liaoyang",
+     "name": "辽阳",
+     "lon": 123.18,
+     "lat": 41.27,
+     "type": "city",
+     "modern": "辽宁省辽阳市",
+     "note": "辽东都司治所, 铁岭后方的明代北南主轴",
+     "elev": 23
+    },
+    {
+     "id": "sarhu",
+     "name": "萨尔浒",
+     "lon": 124.32,
+     "lat": 41.97,
+     "type": "city",
+     "modern": "辽宁抚顺东大伙房水库附近",
+     "note": "萨尔浒之战主战场, 铁岭卫指挥使属北路军战区",
+     "elev": 195
+    },
+    {
+     "id": "jinganbao",
+     "name": "靖安堡",
+     "lon": 124.2,
+     "lat": 42.3,
+     "type": "guan",
+     "modern": "辽宁开原东边墙附近",
+     "note": "萨尔浒之战北路马林军出开原后经此进",
+     "elev": 171
+    }
+   ],
+   "persons": [
+    {
+     "id": "li_chengliang",
+     "name": "李成梁",
+     "role": "辽东总兵",
+     "side": "ming",
+     "note": "铁岭卫人, 1526-1615, 镇辽30年, 先后十奏大捷. 高祖李英自朝鲜内附."
+    },
+    {
+     "id": "li_rusong",
+     "name": "李如松",
+     "role": "总兵",
+     "side": "ming",
+     "note": "李成梁长子, 抗倭援朝, 宁夏哱拜之战, 万历二十六年(1598)蒙古入侵中伏阵亡"
+    },
+    {
+     "id": "li_ruzhui",
+     "name": "李如柏",
+     "role": "辽东总兵",
+     "side": "ming",
+     "note": "李成梁次子, 萨尔浒之战南路军统帅, 因三路败未接战撤退, 天启元年(1621)被弹劾自杀"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "side": "qing",
+     "note": "建州女真首领, 1619年七月亲领兵攻占铁岭"
+    },
+    {
+     "id": "wang_gao",
+     "name": "王杲",
+     "role": "建州女真首领",
+     "side": "jianzhou",
+     "note": "李成梁万历二年(1574)讨之, 万历十年(1582)阿台在此被射死"
+    },
+    {
+     "id": "xiongtingbing",
+     "name": "熊廷弼",
+     "role": "辽东经略",
+     "side": "ming",
+     "note": "巡按辽东, 勘奏弃宽甸六堡非策, 后任经略"
+    },
+    {
+     "id": "yanghao",
+     "name": "杨镐",
+     "role": "辽东经略",
+     "side": "ming",
+     "note": "萨尔浒之战明军最高统帅, 三路败后李如柏撤回"
+    },
+    {
+     "id": "dubao",
+     "name": "杜松",
+     "role": "山海关总兵 / 西路军主将",
+     "side": "ming",
+     "note": "西路军统帅出抚顺, 萨尔浒之战阵亡"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "T001",
+     "subject": "place:tieling_cheng",
+     "predicate": "建置年",
+     "value_text": "1388 年 (洪武 21 年三月) 置铁岭卫指挥使司, 初设奉集堡",
+     "source": "ming_taizu_shilu",
+     "layer": "record",
+     "era": "洪武二十一年三月",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十一年三月, 置铁岭卫指挥使司于奉集堡。先是元将拔金完哥率其部属金千吉等来附, 至是, 遣指挥佥事李文、高颙, 镇抚杜锡, 置卫于奉集县, 以抚安其众。",
+     "note": "依《明太祖实录》; 奉集堡与朝鲜铁岭系两地同名, 此铁岭卫与朝鲜半岛无关。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "T002",
+     "subject": "place:tieling_cheng",
+     "predicate": "徙治年",
+     "value_text": "1393 年 (洪武 26 年四月) 徙铁岭卫治于古银州",
+     "source": "ming_taizu_shilu",
+     "layer": "record",
+     "era": "洪武二十六年四月",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "徙辽东铁岭卫治于沈阳、开元两界古嚚州之地。",
+     "note": "嚚州即银州, 今铁岭市银州区。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "T003",
+     "subject": "person:li_chengliang",
+     "predicate": "族裔",
+     "value_text": "高祖李英自朝鲜内附, 授世铁岭卫指挥佥事, 遂家焉",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "明代正史",
+     "place": "tieling_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "李成梁字汝契, 高祖英自朝鲜内附, 授世铁岭卫指挥佥事, 遂家焉。",
+     "note": "李成梁的族裔身份 (朝鲜系) 是李如松辈争议的话题, 章炳麟《訄书》曾为李成梁作赞。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T004",
+     "subject": "person:li_chengliang",
+     "predicate": "任总兵",
+     "value_text": "隆庆四年 (1570) 九月, 代殉职王治道任辽东总兵",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "隆庆四年九月",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "四年九月锡林阿大入辽东, 总兵王治道战死, 擢成梁署都督佥事代之。",
+     "note": "辽东总兵驻节广宁 (今北镇), 非铁岭; 铁岭是李成梁故里与户籍。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T005",
+     "subject": "person:li_chengliang",
+     "predicate": "武功评价",
+     "value_text": "镇辽 30 年, 先后十奏大捷, 边帅武功之盛 200 年来所未有",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "明代正史",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "成梁镇辽 22 年, 先后奏大捷者十, 帝辄祭告郊庙, 受廷臣贺。蟒衣金缯, 岁赐稠叠。边帅武功之盛, 二百年来未有也。",
+     "note": "明史明方赞美; 现代综述批评其虚报战功、杀平民冒级, 构成 record_vs_scholarship 冲突。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T006",
+     "subject": "event:kuanbian_abandon",
+     "predicate": "弃宽甸六堡",
+     "value_text": "万历 34 年 (1606) 弃宽甸六堡, 迁民 6 万余户",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历三十四年",
+     "place": "kuanbian",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "三十四年成梁以地孤悬难守, 与督抚蹇达、赵楫建议弃之, 尽徙居民于内地。居民恋家室, 则以大军驱迫之, 死者狼籍。",
+     "note": "六年累计生聚 6 万 4 千余户, 一夕尽弃。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T007",
+     "subject": "event:kuanbian_abandon",
+     "predicate": "弃地年间",
+     "value": "1606",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历三十四年",
+     "place": "kuanbian",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "万历三十四年，成梁以宽甸六堡孤悬难守，奏请弃之，徙其民六万余户于内地。",
+     "note": "明史万历三十四年 (1606); 部份二手综述记万历三十六年 (1608), 数值上为冲突。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T007b",
+     "subject": "event:kuanbian_abandon",
+     "predicate": "弃地年间",
+     "value": 1608,
+     "source": "wiki",
+     "layer": "scholarship",
+     "era": "万历三十六年",
+     "place": "kuanbian",
+     "confidence": 0.5,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "维基记 1608; 与明史 1606 相差 2 年, 来源尚未点校核实。",
+     "_party": "二手综述"
+    },
+    {
+     "id": "T008",
+     "subject": "person:li_chengliang",
+     "predicate": "后任更易",
+     "value_text": "李成梁去辽十年间, 辽东更易八帅",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历十九年 (1591) 解任后",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "成梁去辽十年之间, 更易八帅, 边备益弛。",
+     "note": "万历十九年解任, 二十六年成梁复镇, 期间如马林等八人。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T009",
+     "subject": "person:li_chengliang",
+     "predicate": "卒年",
+     "value": 1615,
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历四十三年",
+     "place": "tieling_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "万历四十三年 (1615) 卒, 享年九十。",
+     "note": "公历 1615 年; 明史本传数值。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T010",
+     "subject": "person:li_ruzhui",
+     "predicate": "南路军统帅",
+     "value_text": "李如柏任辽东总兵, 率南路军 2.5 万人由清河出鸦鹘关",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历四十七年二月",
+     "place": "yageguan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "李如柏时任辽东总兵, 由清河出鸦鹘关, 指向兴京老城。",
+     "note": "李如柏是李成梁次子, 萨尔浒之战南路军主将。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T011",
+     "subject": "event:tieling_fall",
+     "predicate": "陷落时间",
+     "value_text": "1619 年 (万历 47 年) 七月, 努尔哈赤亲自领兵攻占铁岭",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "万历四十七年七月",
+     "place": "tieling_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "七月, 努尔哈赤亲自领兵攻占铁岭。",
+     "note": "开铁之战六月开原、七月铁岭, 实为同一次战事两阶段。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "T011b",
+     "subject": "event:tieling_fall",
+     "predicate": "陷落时间",
+     "value_text": "1619 年 (万历 47 年) 七月, 明军来自铁岭的援兵被击败",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "万历四十七年七月",
+     "place": "tieling_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "明总兵马林战死, 来自铁岭的援兵也被击败。",
+     "note": "现代综述补全了清实录中略写的明方动态。",
+     "_party": "学界"
+    },
+    {
+     "id": "T012",
+     "subject": "event:tieling_fall",
+     "predicate": "陷落兵力",
+     "value": 4,
+     "source": "wiki",
+     "layer": "scholarship",
+     "era": "万历四十七年",
+     "place": "tieling_cheng",
+     "confidence": 0.5,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "维基记后金兵 4 万; 清实录原文仅记『万骑』。数字未严格对照。",
+     "_party": "二手综述"
+    },
+    {
+     "id": "T013",
+     "subject": "person:li_chengliang",
+     "predicate": "现代评价",
+     "value_text": "李成梁晚年位望益隆, 贵极而骄, 奢修无度, 虚报战功, 杀平民冒级",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "现代综述",
+     "place": "tieling_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "李成梁位望益隆, 贵极而骄, 奢修无度, 军资马价盐课市赏乾没不资, 虚报战功, 杀平民冒级。",
+     "note": "与 T005 (明史赞美) 构成 record_vs_scholarship 冲突; 现代综述与明史立场差。",
+     "_party": "学界"
+    },
+    {
+     "id": "T014",
+     "subject": "person:li_chengliang",
+     "predicate": "弃宽甸六堡评价",
+     "value_text": "明朝熊廷弼、宋一韩勘奏弃宽甸六堡非策, 与李成梁意见对立",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "万历三十四年",
+     "place": "kuanbian",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "兵科给事中宋一韩力言弃地非策, 巡按御史熊廷弼勘奏如一韩言。",
+     "note": "事件认同, 评价对立; 可作为内部冲突对带出现。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "T015",
+     "subject": "place:tieling_cheng",
+     "predicate": "清初建置",
+     "value_text": "1664 年 (康熙 3 年) 废铁岭卫设铁岭县, 属奉天府",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "清康熙三年",
+     "place": "tieling_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "清康熙三年废卫设县, 铁岭、开原县属奉天府。",
+     "note": "铁岭卫→铁岭县转型, 民国起入辽宁省。",
+     "_party": "学界"
+    },
+    {
+     "id": "T016",
+     "subject": "event:tieling_fall",
+     "predicate": "陷落兵数详考",
+     "value_text": "缺口：铁岭陷落双方具体兵力与伤亡——清实录仅泛言「万骑」，明方奏报无细目",
+     "value": null,
+     "source": "qing_taizu_shilu",
+     "layer": "gap",
+     "era": "万历四十七年",
+     "place": "tieling_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "缺口: 铁岭陷落时双方具体兵力伤亡数字, 清实录未明载, 仅有『万骑』出入。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "T017",
+     "subject": "event:tieling_fall",
+     "predicate": "朝鲜视角",
+     "value_text": "缺口：朝鲜实录对铁岭陷落是否有专条记载，待核（李成梁祖籍朝鲜，朝方或有关注）",
+     "value": null,
+     "source": "modern",
+     "layer": "gap",
+     "era": "万历四十七年",
+     "place": "tieling_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "缺口: 李成梁为朝鲜族裔, 朝鲜实录对铁岭陷落是否有针对记载, 待核查。",
+     "_party": "学界"
+    },
+    {
+     "id": "T018",
+     "subject": "event:tieling_fall",
+     "predicate": "明廷反应",
+     "value_text": "铁岭陷落后, 明廷起用熊廷弼为辽东经略, 采取『坚守进逼』策",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "万历四十七年七月后",
+     "place": "tieling_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "后金天命六年 (天启元年, 1621) 努尔哈赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取沈阳。",
+     "note": "开铁陷落为熊廷弼复出背景。",
+     "_party": "学界"
+    }
+   ],
+   "conflicts": [
+    {
+     "id": "cf:event:kuanbian_abandon|弃地年间",
+     "subject": "event:kuanbian_abandon",
+     "predicate": "弃地年间",
+     "kind": "record_vs_scholarship",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "T007",
+      "T007b"
+     ]
+    },
+    {
+     "id": "cf:event:tieling_fall|陷落时间",
+     "subject": "event:tieling_fall",
+     "predicate": "陷落时间",
+     "kind": "record_vs_scholarship",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "T011",
+      "T011b"
+     ]
+    }
+   ],
+   "gaps": [
+    "T016",
+    "T017"
+   ],
+   "events": [
+    {
+     "id": "ev_yinzhou",
+     "era": "辽·天显元年",
+     "year": 928,
+     "title": "辽置银州, 始有城邑",
+     "kind": "建置",
+     "text": "契丹辽太祖耶律阿保机次子耶律德光继位, 采纳东丹国丞相耶律羽之建议, 将渤海越喜故地怀远府银州府民迁至辽宁沈阳北至开原之间的铁岭一带, 置城邑仍以银州名之。"
+    },
+    {
+     "id": "ev_tieling_guard",
+     "era": "明·洪武二十一年三月",
+     "year": 1388,
+     "title": "铁岭卫指挥使司设于奉集堡",
+     "kind": "建置",
+     "text": "元将拔金完哥率其部属金千吉等来附, 明太祖遣指挥佥事李文、高颙, 镇抚杜锡, 置卫于奉集县(今沈阳市苏家屯塔山一带), 以抚安其众。"
+    },
+    {
+     "id": "ev_yinzhou_reloc",
+     "era": "明·洪武二十六年四月",
+     "year": 1393,
+     "title": "徙铁岭卫治于古银州",
+     "kind": "建置",
+     "text": "明太祖徙辽东铁岭卫治于沈阳与开原两界古银州之地 (今铁岭市银州区), 仍以铁岭卫名, 属辽东都指挥使司。"
+    },
+    {
+     "id": "ev_li_zhenshuai",
+     "era": "明·隆庆四年",
+     "year": 1570,
+     "title": "李成梁领辽东总兵, 大修戎备",
+     "kind": "军政",
+     "text": "辽东总兵王治道战死, 李成梁署都督佥事代之。大修戎备, 甄拔将校, 收召四方健儿给以厚饩, 用为选锋, 军声始振。"
+    },
+    {
+     "id": "ev_li_wangguo",
+     "era": "明·万历二年",
+     "year": 1574,
+     "title": "李成梁讨王杲, 诛之",
+     "kind": "军政",
+     "text": "建州都指挥王杲大举犯扰辽阳、沈阳, 李成梁督兵进剿王杲所在的古勒寨, 斩首一千余级。王杲再出兵犯边, 又为明军所败, 王杲被捕磔死。"
+    },
+    {
+     "id": "ev_kuanbian_abandon",
+     "era": "明·万历三十四年",
+     "year": 1606,
+     "title": "李成梁弃宽甸六堡, 迁民六万余户",
+     "kind": "争议",
+     "text": "万历初李成梁献议移建宽甸六堡, 至万历三十四年成梁以地孤悬难守, 与督抚蹇达、赵楫建议弃之, 尽徙居民于内地; 居民恋家室, 以大军驱迫, 死者狼籍。同一事实, 明史与兵科给事中宋一韩、巡按熊廷弼评价相反。",
+     "subject": "event:kuanbian_abandon"
+    },
+    {
+     "id": "ev_li_zhong",
+     "era": "明·万历四十三年",
+     "year": 1615,
+     "title": "李成梁卒, 年九十",
+     "kind": "人物",
+     "text": "李成梁镇辽东 30 年 (初镇 22 年 + 复镇 8 年), 先后奏大捷十次。罢归后卒于第。明神宗下诏为其举行隆重丧礼。"
+    },
+    {
+     "id": "ev_lirubai_south",
+     "era": "明·万历四十七年三月",
+     "year": 1619,
+     "title": "萨尔浒南路: 李如柏出鸦鹘关",
+     "kind": "战事",
+     "text": "辽东总兵李如柏率南路军 2.5 万人, 由清河出鸦鹘关, 指向兴京老城。三路败后, 杨镐急檄李如柏撤军, 这是明军四路中唯一未接战的一支。"
+    },
+    {
+     "id": "ev_tieling_fall",
+     "era": "明·万历四十七年七月",
+     "year": 1619,
+     "title": "努尔哈赤攻占铁岭",
+     "kind": "战事",
+     "text": "开铁之战六月开原既下, 七月努尔哈赤亲领兵攻占铁岭。熊廷弼说:「开原, 河东根柢也」。开原、铁岭陷落, 辽东都司北部门户洞开。",
+     "subject": "event:tieling_fall"
+    },
+    {
+     "id": "ev_tieling_county",
+     "era": "清·康熙三年",
+     "year": 1664,
+     "title": "废明铁岭卫, 始置铁岭县",
+     "kind": "建置",
+     "text": "清康熙三年废卫设县, 铁岭、开原县属奉天府, 时铁岭境域东北部 (西丰) 被封禁为大围场, 北部为内蒙古科尔沁部。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "tieling_cheng",
+     "to": "shenyang",
+     "type": "admin",
+     "label": "铁岭卫—沈阳中卫"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "kaiyuan_cheng",
+     "type": "admin",
+     "label": "铁岭卫—三万卫"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "liaoyang",
+     "type": "admin",
+     "label": "铁岭卫—辽东都司"
+    },
+    {
+     "from": "fengjibao",
+     "to": "tieling_cheng",
+     "type": "admin",
+     "label": "奉集堡—银州 (迁徙)"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "fushun",
+     "type": "mil",
+     "label": "李成梁征王杲抚顺"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "hetu_ala",
+     "type": "mil",
+     "label": "1619 努尔哈赤南下攻铁岭"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "kuanbian",
+     "type": "mil",
+     "label": "李成梁弃宽甸六堡"
+    },
+    {
+     "from": "yageguan",
+     "to": "hetu_ala",
+     "type": "mil",
+     "label": "李如柏南路出鸦鹘关"
+    },
+    {
+     "from": "jinganbao",
+     "to": "sarhu",
+     "type": "mil",
+     "label": "马林北路经靖安堡"
+    },
+    {
+     "from": "tieling_cheng",
+     "to": "shenyang",
+     "type": "mashi",
+     "label": "明辽东马市驿站"
+    }
+   ]
+  },
+  "liaoyang": {
+   "meta": {
+    "kind": "county",
+    "title": "辽阳",
+    "dossier_label": "辽阳",
+    "subtitle": "辽东都司治所 · 东京辽阳府 · 天启元年改运",
+    "primary_place": "liaoyang_cheng",
+    "dossier_event": "event:liaoyang_fall",
+    "back": "萨尔浒"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_taizu_shilu",
+     "title": "明太祖实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "三修至 1418，距洪武建置约 30 年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "洪武朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "yuan_shi",
+     "title": "元史",
+     "party": "明修官史",
+     "stance_label": "后朝官修·仓促成书",
+     "distance_label": "1369 年修成，距元亡仅一年但史源杂糅未及考订",
+     "color": "#6C5C3E",
+     "compiler": "宋濂等",
+     "period": "明修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    },
+    {
+     "id": "wiki",
+     "title": "维基百科",
+     "party": "二手综述",
+     "stance_label": "三手综述",
+     "distance_label": "当代，未经同行评议；任何依赖它的断言都是待升级项",
+     "color": "#9B7B5A",
+     "compiler": "公众编辑",
+     "period": "现代",
+     "stance": "tertiary"
+    }
+   ],
+   "places": [
+    {
+     "id": "liaoyang_cheng",
+     "name": "辽阳城",
+     "lon": 123.18,
+     "lat": 41.27,
+     "type": "city",
+     "modern": "辽宁省辽阳市",
+     "note": "辽东都司治所, 明代东北第一城, 唐代安东都护府一度治此",
+     "elev": 23
+    },
+    {
+     "id": "dongjing_cheng",
+     "name": "东京城",
+     "lon": 123.2,
+     "lat": 41.25,
+     "type": "capital",
+     "modern": "辽宁辽阳太子河东岸",
+     "note": "1621 年努尔哈赤迁都辽阳后于太子河东五里新建都城, 1625 年随迁都沈阳而废",
+     "elev": 24
+    },
+    {
+     "id": "dongdan_gong",
+     "name": "东丹王宫",
+     "lon": 123.19,
+     "lat": 41.28,
+     "type": "city",
+     "modern": "辽阳市老城东北隅",
+     "note": "928 年辽迁东丹国首都至辽阳, 建东丹王宫",
+     "elev": 22
+    },
+    {
+     "id": "taizi_he",
+     "name": "太子河",
+     "lon": 123.1,
+     "lat": 41.2,
+     "type": "river",
+     "modern": "辽宁辽阳地区",
+     "note": "辽阳城南主要河流, 东京城建于其东岸",
+     "elev": 32
+    },
+    {
+     "id": "shenyang",
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁省沈阳市",
+     "note": "1625 年后金迁都, 沈阳反超辽阳成为东北第一城",
+     "elev": 50
+    },
+    {
+     "id": "tieling_cheng",
+     "name": "铁岭城",
+     "lon": 124.31,
+     "lat": 42.3,
+     "type": "city",
+     "modern": "辽宁铁岭市银州区",
+     "note": "辽东都司北路卫城, 1619 年与开原同年陷落",
+     "elev": 238
+    },
+    {
+     "id": "kaiyuan_cheng",
+     "name": "开原城",
+     "lon": 124.04,
+     "lat": 42.55,
+     "type": "city",
+     "modern": "辽宁开原市",
+     "note": "辽东都司最北卫城, 1619 年陷落",
+     "elev": 85
+    },
+    {
+     "id": "fushun",
+     "name": "抚顺",
+     "lon": 123.94,
+     "lat": 41.86,
+     "type": "guan",
+     "modern": "辽宁抚顺市",
+     "note": "辽阳与建州女真之间的前哨, 万历四十六年(1618)先陷",
+     "elev": 76
+    },
+    {
+     "id": "hetu_ala",
+     "name": "赫图阿拉",
+     "lon": 124.85,
+     "lat": 41.89,
+     "type": "capital",
+     "modern": "辽宁新宾满族自治县老城村",
+     "note": "努尔哈赤起家之地, 萨尔浒之战明军四路围的目标",
+     "elev": 586
+    },
+    {
+     "id": "guangning",
+     "name": "广宁",
+     "lon": 121.79,
+     "lat": 41.59,
+     "type": "city",
+     "modern": "辽宁北镇市",
+     "note": "辽东总兵驻地, 辽东都司西边重镇 (超出投影范围, 仅作 admin 关系)",
+     "elev": 13
+    },
+    {
+     "id": "shenyang_cheng",
+     "name": "沈阳中卫",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "wei",
+     "modern": "辽宁沈阳市",
+     "note": "辽东都司下辖 25 卫之一, 1621 浑河之战主战场",
+     "elev": 50
+    },
+    {
+     "id": "hun_he",
+     "name": "浑河",
+     "lon": 123.35,
+     "lat": 41.7,
+     "type": "river",
+     "modern": "辽宁沈阳辽阳间",
+     "note": "辽阳与沈阳之间的天然屏障, 1621 浑河之战发生在此",
+     "elev": 32
+    }
+   ],
+   "persons": [
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "side": "qing",
+     "note": "建州女真首领, 1621 年攻占辽阳, 迁都于此, 建东京城"
+    },
+    {
+     "id": "huangtaiji",
+     "name": "皇太极",
+     "role": "后金大汗 (太宗)",
+     "side": "qing",
+     "note": "努尔哈赤第八子, 1626 年继位, 1636 年改国号大清"
+    },
+    {
+     "id": "yeluabuji",
+     "name": "耶律阿保机",
+     "role": "辽太祖",
+     "side": "liao",
+     "note": "契丹首领, 辽朝建立者, 918 年攻占辽东城"
+    },
+    {
+     "id": "yelubei",
+     "name": "耶律倍",
+     "role": "东丹王",
+     "side": "liao",
+     "note": "辽太祖长子, 契丹东丹国国王, 928 年迁国都至辽阳"
+    },
+    {
+     "id": "wanyanyong",
+     "name": "完颜雍",
+     "role": "金世宗",
+     "side": "jin",
+     "note": "1161 年在辽阳拥兵称帝, 改元大定"
+    },
+    {
+     "id": "yuan_yingtai",
+     "name": "袁应泰",
+     "role": "辽东经略",
+     "side": "ming",
+     "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任"
+    },
+    {
+     "id": "ye_wang",
+     "name": "叶旺",
+     "role": "辽东都指挥使",
+     "side": "ming",
+     "note": "洪武初年与马云出镇辽东, 设定辽都卫指挥使司"
+    },
+    {
+     "id": "ma_yun",
+     "name": "马云",
+     "role": "辽东都指挥使",
+     "side": "ming",
+     "note": "洪武初年与叶旺共同出镇辽东, 奠定明代辽东防务"
+    },
+    {
+     "id": "chenjn",
+     "name": "陈策",
+     "role": "总兵",
+     "side": "ming",
+     "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡"
+    },
+    {
+     "id": "tongzhongkui",
+     "name": "童仲揆",
+     "role": "副总兵",
+     "side": "ming",
+     "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "L001",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "建置年",
+     "value_text": "1375 年 (洪武 8 年) 设辽东都指挥使司, 治辽阳",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武八年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武八年, 全国都卫均改为都司, 定辽都卫指挥使司改为辽东都指挥使司, 简称辽东都司, 治所在辽阳城中。",
+     "note": "明初置辽东卫指挥使司于洪武四年(1371), 4 年后升为都司。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "L002",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "辖境",
+     "value_text": "辽东都司领 25 卫 2 州, 官军 19.03 万人",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武八年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "领 25 卫, 自在州、安乐州, 128 个千户所, 官军十九万零三百人。",
+     "note": "辽东都司东至鸭绿江, 西至山海关, 南至旅顺海口, 北至开原。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "L003",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "北城扩建",
+     "value_text": "1416 年 (永乐十四年) 辽阳北城包砖完砌",
+     "source": "ming_taizu_shilu",
+     "layer": "record",
+     "era": "永乐十四年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "永乐十四年, 都指挥使王真包砖完砌。新城南北宽 1 里, 东西长 4 里, 城墙高 3 丈, 开设东、西、北三座城门。",
+     "note": "洪武十二年 (1379) 始建土城, 至此包砖形成南/北二城布局。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "L004",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "唐代安东都护府",
+     "value_text": "668 年 (唐高宗总章元年) 设安东都护府, 辽东城一度为治所",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "唐总章元年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "668 年 (唐高宗总章元年), 攻灭高句丽, 设安东都护府, 辽东城 (辽城州) 一度为都护府治所所在。",
+     "note": "唐代安东都护府治所后迁至平壤, 辽阳为辽东城府。",
+     "_party": "学界"
+    },
+    {
+     "id": "L005",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "辽代南京/东京",
+     "value_text": "928 年辽改辽阳府为南京, 938 年改称东京",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "辽会同元年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "928 年, 辽太宗改辽阳府为南京, 迁东丹国首都于辽阳。938 年, 因幽州升为南京, 辽阳改称东京, 东京辽阳府遂为五京之一。",
+     "note": "东京辽阳府为五京中人口最多的城市, 也是金朝东北的行政中心。",
+     "_party": "学界"
+    },
+    {
+     "id": "L006",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "元代辽阳行省",
+     "value_text": "1264 年 (元至元元年) 设辽阳行省, 统辖东北",
+     "source": "yuan_shi",
+     "layer": "record",
+     "era": "元至元元年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "至元二十四年 (1287), 元朝设辽阳等处行中书省, 统辖东北, 称为京师左臂。",
+     "note": "辽阳行省下辖 7 路、1 府、12 州、10 县, 京师左臂。",
+     "_party": "明修官史"
+    },
+    {
+     "id": "L007",
+     "subject": "person:wanyanyong",
+     "predicate": "辽阳称帝",
+     "value_text": "1161 年 (金正隆六年) 完颜雍在辽阳拥兵称帝, 改元大定",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "金大定元年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "1161 年 (金海陵王正隆六年或金世宗大定元年), 完颜雍在辽阳拥兵称帝, 史称金世宗, 并改元大定。",
+     "note": "辽阳作为金朝东北政治中心的延续。",
+     "_party": "学界"
+    },
+    {
+     "id": "L008",
+     "subject": "event:liaoyang_fall",
+     "predicate": "陷落时间",
+     "value_text": "1621 年 (明天启元年) 努尔哈赤攻占辽阳, 迁都",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天命六年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "后金天命六年 (天启元年, 1621), 努尔哈赤统帅八旗劲旅, 一举攻下明朝的东北重镇辽阳, 随即迁都于此。",
+     "note": "袁应泰任辽东经略时, 1621 年辽阳陷落, 此前 1621 浑河之战后沈阳先陷。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "L009",
+     "subject": "place:dongjing_cheng",
+     "predicate": "建城年",
+     "value_text": "1621 年努尔哈赤在太子河东五里建东京城",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天命六年",
+     "place": "dongjing_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "辽阳城年久失修, 颓圮不堪, 努尔哈赤决定在太子河东岸修筑新城, 即东京城。",
+     "note": "东京城抚近门等遗址尚存。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "L010",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "迁都沈阳",
+     "value_text": "1625 年 (天启五年) 努尔哈赤迁都沈阳",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天命十年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天命十年 (天启五年), 努尔哈赤迁都沈阳, 扩建城池, 加固城垣, 修太庙、宫殿等。",
+     "note": "沈阳反超辽阳, 是东北政治中心的一次决定性转移。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "L011",
+     "subject": "event:liaoyang_fall",
+     "predicate": "努尔哈赤评价",
+     "value_text": "努尔哈赤攻占辽阳为后金『开国第一战』级的关键胜利",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天命六年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "迁都辽阳, 改建东京城, 标志着后金从地方政权升格为可与明朝对峙的帝国。",
+     "note": "清方评价, 与现代综述对『破坏—迁民—重建』评价有不同。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "L011b",
+     "subject": "event:liaoyang_fall",
+     "predicate": "努尔哈赤评价",
+     "value_text": "努尔哈赤攻占辽阳过程中伴随对辽东都司区内大量军民伤亡与迁民",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "现代综述",
+     "place": "liaoyang_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "与 L011 清方记录形成 record_vs_scholarship 冲突; 立场派生, 不裁决。",
+     "_party": "学界"
+    },
+    {
+     "id": "L012",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "沈阳反超辽阳",
+     "value_text": "1625 年后沈阳反超辽阳, 至今辽阳地位一直低于沈阳",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "天命十年后",
+     "place": "liaoyang_cheng",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "清太祖迁都沈阳, 改变了辽阳与沈阳的命运, 从此辽阳地位一直在沈阳之下, 这个格局延续到今天。",
+     "note": "现代综述, 1625 至今 400 年的格局。",
+     "_party": "学界"
+    },
+    {
+     "id": "L013",
+     "subject": "event:hunhe_zhan",
+     "predicate": "双方兵力",
+     "value_text": "明军: 川湖兵约 7000 + 浙兵约 8000; 后金: 四旗精锐约 6000 + 主力 5 万余",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "hun_he",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "北岸川湖等兵先后与后金红巴牙喇军、右翼四旗兵激战, 斩敌二三千人, 终因体力不支战败, 大部被歼。机动能力较差尾行最后的浙兵因北岸受阻被迫于南岸布车阵火器防御, 直至火药耗尽。",
+     "note": "浑河之战实为辽阳陷落的前奏, 6 小时内明军步兵精锐折损大半。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "L014",
+     "subject": "place:liaoyang_cheng",
+     "predicate": "唐代辽东城",
+     "value_text": "645 年 (唐贞观十九年) 唐太宗征辽东城克之",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "唐贞观十九年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "唐太宗李世民亲征, 克辽东城, 为辽城州首府。",
+     "note": "辽阳古称襄平, 唐以此为辽东城。",
+     "_party": "学界"
+    },
+    {
+     "id": "L015",
+     "subject": "person:yeluabuji",
+     "predicate": "攻占辽东城",
+     "value_text": "918 年 (辽神册三年) 耶律阿保机攻占辽东城",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "辽神册三年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "918 年, 辽太祖神册三年, 耶律阿保机攻占辽东城。",
+     "note": "契丹开始对辽东的统治, 928 年后东丹国首都迁此。",
+     "_party": "学界"
+    },
+    {
+     "id": "L016",
+     "subject": "event:liaoyang_fall",
+     "predicate": "朝鲜视角",
+     "value_text": "缺口：朝鲜实录对辽阳陷落的记载与反应，待核",
+     "value": null,
+     "source": "modern",
+     "layer": "gap",
+     "era": "天命六年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "缺口: 朝鲜实录对辽阳陷落是否有针对记载, 待核查。",
+     "_party": "学界"
+    },
+    {
+     "id": "L017",
+     "subject": "event:liaoyang_fall",
+     "predicate": "辽阳陷落兵数详考",
+     "value_text": "缺口：辽阳一战双方兵数与伤亡的具体数字——明清两方均无可交叉验证的细目",
+     "value": null,
+     "source": "qing_taizu_shilu",
+     "layer": "gap",
+     "era": "天命六年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "缺口: 辽阳一战双方具体兵数伤亡, 待详考。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "L018",
+     "subject": "event:liaoyang_fall",
+     "predicate": "明廷反应",
+     "value_text": "辽阳陷落后, 魏忠贤乱政, 辽东巡抚王化贞等起用, 辽东防御体系名存实亡",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "天启元年后续",
+     "place": "liaoyang_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "从熊廷弼经略到袁应泰再到王化贞, 明廷内部斗争加速了辽东战事的崩溃。",
+     "_party": "学界"
+    },
+    {
+     "id": "L019",
+     "subject": "event:liaoyang_fall",
+     "predicate": "三手综述",
+     "value_text": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
+     "value": null,
+     "source": "wiki",
+     "layer": "gap",
+     "era": "天命六年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "note": "保留此源的意义在于：读者可以在四层开关里单独打开『二手综述』，亲眼看到关掉它之后哪些结论会塌——这是对来源依赖度的可视化压力测试。",
+     "_party": "二手综述"
+    }
+   ],
+   "conflicts": [
+    {
+     "id": "cf:event:liaoyang_fall|努尔哈赤评价",
+     "subject": "event:liaoyang_fall",
+     "predicate": "努尔哈赤评价",
+     "kind": "record_vs_scholarship",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "L011",
+      "L011b"
+     ]
+    }
+   ],
+   "gaps": [
+    "L016",
+    "L017",
+    "L019"
+   ],
+   "events": [
+    {
+     "id": "ev_liaoyang_tang",
+     "era": "唐·贞观十九年",
+     "year": 645,
+     "title": "唐太宗征辽东城",
+     "kind": "战事",
+     "text": "唐太宗李世民亲征高句丽, 克辽东城, 为辽城州首府。668 年 (总章元年) 唐攻灭高句丽, 设安东都护府, 辽东城一度为都护府治所所在。"
+    },
+    {
+     "id": "ev_liaoyang_liao",
+     "era": "辽·天显元年",
+     "year": 928,
+     "title": "辽迁东丹国都至辽阳",
+     "kind": "建置",
+     "text": "辽太宗耶律德光采纳东丹国丞相耶律羽之建议, 改辽阳府为南京, 迁东丹国首都于辽阳, 建东丹王宫。"
+    },
+    {
+     "id": "ev_liaoyang_dongjing",
+     "era": "辽·会同元年",
+     "year": 938,
+     "title": "辽阳改称东京",
+     "kind": "建置",
+     "text": "因幽州升为南京, 辽阳改称东京, 东京辽阳府遂为五京之一。"
+    },
+    {
+     "id": "ev_liaoyang_jin",
+     "era": "金·天庆六年",
+     "year": 1116,
+     "title": "金攻占东京",
+     "kind": "战事",
+     "text": "金太祖完颜阿骨打攻占东京辽阳府, 取代辽朝在东北的统治。"
+    },
+    {
+     "id": "ev_liaoyang_dading",
+     "era": "金·大定元年",
+     "year": 1161,
+     "title": "金世宗完颜雍在辽阳称帝",
+     "kind": "建置",
+     "text": "海陵王完颜亮南征失败, 东京辽阳府留守完颜雍在辽阳拥兵称帝, 改元大定。"
+    },
+    {
+     "id": "ev_liaoyang_yuan",
+     "era": "元·至元元年",
+     "year": 1264,
+     "title": "元设辽阳行省",
+     "kind": "建置",
+     "text": "元朝设辽阳等处行中书省, 统辖东北, 称为京师左臂。下辖七路、一府、十二州、十县, 辖域广阔, 驿站通达四方。"
+    },
+    {
+     "id": "ev_liaodongdusi",
+     "era": "明·洪武四年",
+     "year": 1371,
+     "title": "明置辽东卫指挥使司",
+     "kind": "建置",
+     "text": "元平章刘益降明后, 朱元璋下诏设置辽东卫指挥使司, 任命刘益为指挥同知。刘益被部将杀害后, 朱元璋调叶旺、马云出镇辽东, 于辽阳设定辽都卫指挥使司, 以叶、马二人为都指挥使。"
+    },
+    {
+     "id": "ev_ming_liaodongdusi",
+     "era": "明·洪武八年",
+     "year": 1375,
+     "title": "改辽东都司, 治辽阳",
+     "kind": "建置",
+     "text": "全国都卫均改为都司, 定辽都卫指挥使司改为辽东都指挥使司, 简称辽东都司, 领 25 卫, 自在州、安乐州, 128 个千户所, 官军 19.03 万人, 治所在辽阳城中。"
+    },
+    {
+     "id": "ev_ming_beicheng",
+     "era": "明·永乐十四年",
+     "year": 1416,
+     "title": "辽阳北城包砖完砌",
+     "kind": "建置",
+     "text": "洪武十二年为安置内附少数民族, 辽阳城之北附筑了一座土城; 至永乐十四年, 都指挥使王真包砖完砌。新城南北宽 1 里, 东西长 4 里, 城墙高 3 丈, 开设东、西、北三座城门。"
+    },
+    {
+     "id": "ev_liaoyang_fall",
+     "era": "明·天启元年",
+     "year": 1621,
+     "title": "努尔哈赤攻占辽阳, 迁都",
+     "kind": "战事",
+     "text": "后金天命六年 (天启元年, 1621), 努尔哈赤统帅八旗劲旅, 一举攻下明朝的东北重镇辽阳, 随即迁都于此, 在太子河东五里新建都城东京城。",
+     "subject": "event:liaoyang_fall"
+    },
+    {
+     "id": "ev_dongjingcheng",
+     "era": "明·天启元年",
+     "year": 1621,
+     "title": "东京城修筑",
+     "kind": "建置",
+     "text": "辽阳城年久失修, 颓圮不堪, 努尔哈赤决定在太子河东岸修筑新城, 即东京城。城门名抚近门等。东京城见证了后金迁都、转型的关键四年。"
+    },
+    {
+     "id": "ev_hunhe_zhan",
+     "era": "明·天启元年三月",
+     "year": 1621,
+     "title": "浑河之战, 川湖兵浙兵覆没",
+     "kind": "战事",
+     "text": "1621 年, 努尔哈赤率军围攻沈阳。明总兵陈策、童仲揆奉命率川湖兵北上援沈, 北岸川湖兵与后金红巴牙喇军、右翼四旗兵激战, 斩敌二三千人, 终因体力不支战败; 浙兵于南岸布车阵火器防御, 直至火药耗尽, 副将戚金等 120 余名将校阵亡。",
+     "subject": "event:hunhe_zhan"
+    },
+    {
+     "id": "ev_liaoyang_sheng",
+     "era": "明·天启五年",
+     "year": 1625,
+     "title": "后金迁都沈阳, 辽阳地位下降",
+     "kind": "建置",
+     "text": "天命十年 (天启五年), 努尔哈赤迁都沈阳, 扩建城池, 加固城垣, 修太庙、宫殿等。这次迁都, 改变了辽阳与沈阳的命运。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "liaoyang_cheng",
+     "to": "dongdan_gong",
+     "type": "admin",
+     "label": "辽阳—东丹王宫 (辽)"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "dongjing_cheng",
+     "type": "admin",
+     "label": "辽阳—东京城 (后金)"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "shenyang",
+     "type": "admin",
+     "label": "辽阳—沈阳 (辽东都司)"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "tieling_cheng",
+     "type": "admin",
+     "label": "辽阳—铁岭卫"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "kaiyuan_cheng",
+     "type": "admin",
+     "label": "辽阳—三万卫"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "tieling_cheng",
+     "type": "mashi",
+     "label": "辽东马市驿道"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "fushun",
+     "type": "mil",
+     "label": "萨尔浒之战: 辽阳经抚顺"
+    },
+    {
+     "from": "shenyang",
+     "to": "hetu_ala",
+     "type": "mil",
+     "label": "中路杜松军出沈阳"
+    },
+    {
+     "from": "shenyang_cheng",
+     "to": "liaoyang_cheng",
+     "type": "mil",
+     "label": "1621 浑河之战主战场"
+    },
+    {
+     "from": "liaoyang_cheng",
+     "to": "guangning",
+     "type": "admin",
+     "label": "辽东都司治—辽东总兵"
+    },
+    {
+     "from": "taizi_he",
+     "to": "dongjing_cheng",
+     "type": "admin",
+     "label": "太子河—东京城"
+    }
+   ]
   }
+ },
+ "resonance": {
+  "meta": {
+   "definition": "resonance = (coverage/3) * (1 - divergence) * (1 - gap_rate)",
+   "parties": [
+    "明方",
+    "清方",
+    "朝鲜",
+    "综述考订"
+   ],
+   "scenes": [
+    "kaiyuan",
+    "liaoyang",
+    "sarhu",
+    "tieling"
+   ]
+  },
+  "scene_summary": [
+   {
+    "scene": "kaiyuan",
+    "name": "开原",
+    "total": 44,
+    "layers": {
+     "record": 29,
+     "scholarship": 5,
+     "gap": 2,
+     "inference": 8
+    },
+    "party_counts": {
+     "明方": 17,
+     "综述考订": 21,
+     "清方": 2,
+     "朝鲜": 4
+    },
+    "event_count": 3,
+    "avg_resonance": 0.495,
+    "best_event": "开铁之战（开原陷落）",
+    "best_resonance": 0.818
+   },
+   {
+    "scene": "liaoyang",
+    "name": "辽阳",
+    "total": 20,
+    "layers": {
+     "record": 9,
+     "scholarship": 8,
+     "gap": 3
+    },
+    "party_counts": {
+     "明方": 5,
+     "综述考订": 10,
+     "清方": 5
+    },
+    "event_count": 2,
+    "avg_resonance": 0.23,
+    "best_event": "浑河之战（1621）",
+    "best_resonance": 0.333
+   },
+   {
+    "scene": "sarhu",
+    "name": "萨尔浒",
+    "total": 39,
+    "layers": {
+     "record": 26,
+     "scholarship": 10,
+     "inference": 2,
+     "gap": 1
+    },
+    "party_counts": {
+     "明方": 17,
+     "清方": 4,
+     "综述考订": 13,
+     "朝鲜": 5
+    },
+    "event_count": 5,
+    "avg_resonance": 0.383,
+    "best_event": "阿布达里岗（东路·刘綎）",
+    "best_resonance": 0.667
+   },
+   {
+    "scene": "tieling",
+    "name": "铁岭",
+    "total": 20,
+    "layers": {
+     "record": 12,
+     "scholarship": 6,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 11,
+     "综述考订": 7,
+     "清方": 2
+    },
+    "event_count": 2,
+    "avg_resonance": 0.158,
+    "best_event": "弃宽甸六堡",
+    "best_resonance": 0.167
+   }
+  ],
+  "events": [
+   {
+    "subject": "event:liaoyang_fall",
+    "name": "辽阳陷落（1621）",
+    "scenes": [
+     "liaoyang"
+    ],
+    "scene_names": [
+     "辽阳"
+    ],
+    "total": 7,
+    "gap_count": 3,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.333,
+    "gap_rate": 0.429,
+    "resonance": 0.127,
+    "party_counts": {
+     "明方": 0,
+     "清方": 3,
+     "朝鲜": 0,
+     "综述考订": 4
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "L008",
+       "predicate": "陷落时间",
+       "value_text": "1621 年 (明天启元年) 努尔哈赤攻占辽阳, 迁都",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L011",
+       "predicate": "努尔哈赤评价",
+       "value_text": "努尔哈赤攻占辽阳为后金『开国第一战』级的关键胜利",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L017",
+       "predicate": "辽阳陷落兵数详考",
+       "value_text": "缺口：辽阳一战双方兵数与伤亡的具体数字——明清两方均无可交叉验证的细目",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "liaoyang"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "L011b",
+       "predicate": "努尔哈赤评价",
+       "value_text": "努尔哈赤攻占辽阳过程中伴随对辽东都司区内大量军民伤亡与迁民",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L016",
+       "predicate": "朝鲜视角",
+       "value_text": "缺口：朝鲜实录对辽阳陷落的记载与反应，待核",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L018",
+       "predicate": "明廷反应",
+       "value_text": "辽阳陷落后, 魏忠贤乱政, 辽东巡抚王化贞等起用, 辽东防御体系名存实亡",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L019",
+       "predicate": "三手综述",
+       "value_text": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
+       "source": "wiki",
+       "layer": "gap",
+       "scene": "liaoyang"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:tieling_fall",
+    "name": "铁岭陷落（1619）",
+    "scenes": [
+     "tieling"
+    ],
+    "scene_names": [
+     "铁岭"
+    ],
+    "total": 6,
+    "gap_count": 2,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.333,
+    "gap_rate": 0.333,
+    "resonance": 0.148,
+    "party_counts": {
+     "明方": 0,
+     "清方": 2,
+     "朝鲜": 0,
+     "综述考订": 4
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "T011",
+       "predicate": "陷落时间",
+       "value_text": "1619 年 (万历 47 年) 七月, 努尔哈赤亲自领兵攻占铁岭",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "tieling"
+      },
+      {
+       "id": "T016",
+       "predicate": "陷落兵数详考",
+       "value_text": "缺口：铁岭陷落双方具体兵力与伤亡——清实录仅泛言「万骑」，明方奏报无细目",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "tieling"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "T011b",
+       "predicate": "陷落时间",
+       "value_text": "1619 年 (万历 47 年) 七月, 明军来自铁岭的援兵被击败",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "tieling"
+      },
+      {
+       "id": "T012",
+       "predicate": "陷落兵力",
+       "value_text": null,
+       "source": "wiki",
+       "layer": "scholarship",
+       "scene": "tieling"
+      },
+      {
+       "id": "T017",
+       "predicate": "朝鲜视角",
+       "value_text": "缺口：朝鲜实录对铁岭陷落是否有专条记载，待核（李成梁祖籍朝鲜，朝方或有关注）",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "tieling"
+      },
+      {
+       "id": "T018",
+       "predicate": "明廷反应",
+       "value_text": "铁岭陷落后, 明廷起用熊廷弼为辽东经略, 采取『坚守进逼』策",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "tieling"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:kuanbian_abandon",
+    "name": "弃宽甸六堡",
+    "scenes": [
+     "tieling"
+    ],
+    "scene_names": [
+     "铁岭"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.5,
+    "gap_rate": 0.0,
+    "resonance": 0.167,
+    "party_counts": {
+     "明方": 2,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "T006",
+       "predicate": "弃宽甸六堡",
+       "value_text": "万历 34 年 (1606) 弃宽甸六堡, 迁民 6 万余户",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "tieling"
+      },
+      {
+       "id": "T007",
+       "predicate": "弃地年间",
+       "value_text": null,
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "tieling"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "T007b",
+       "predicate": "弃地年间",
+       "value_text": null,
+       "source": "wiki",
+       "layer": "scholarship",
+       "scene": "tieling"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:sarhu_battle",
+    "name": "萨尔浒主战场",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 4,
+    "gap_count": 1,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.25,
+    "resonance": 0.25,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 3
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A040",
+       "predicate": "发生时刻",
+       "value_text": "三月初一",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "A091",
+       "predicate": "天象",
+       "value_text": "三月初一辽东日出约在卯时初，晨间河谷多雾",
+       "source": "modern",
+       "layer": "inference",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A092",
+       "predicate": "史料缺口",
+       "value_text": "杜松部车营与火器的具体编制、数量、损失情况，现存史料均无记载",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A044",
+       "predicate": "胜负性质",
+       "value_text": "非以少胜多，乃逐次以众击寡",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "sarhu"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:dusong_cross",
+    "name": "杜松渡浑河（西路）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.5,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A041",
+       "predicate": "渡浑河",
+       "value_text": "二月廿九日出抚顺关",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A042",
+       "predicate": "渡河损失原因",
+       "value_text": "贪功轻进，不待火器辎重，涉水人马漂没",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [
+      {
+       "id": "A043",
+       "predicate": "渡河损失原因",
+       "value_text": "后金于上游筑坝蓄水，明军半渡而决之",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hunhe_zhan",
+    "name": "浑河之战（1621）",
+    "scenes": [
+     "liaoyang"
+    ],
+    "scene_names": [
+     "辽阳"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "L013",
+       "predicate": "双方兵力",
+       "value_text": "明军: 川湖兵约 7000 + 浙兵约 8000; 后金: 四旗精锐约 6000 + 主力 5 万余",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "liaoyang"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sarhu",
+    "name": "萨尔浒之战（广义）",
+    "scenes": [
+     "kaiyuan"
+    ],
+    "scene_names": [
+     "开原"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "K026",
+       "predicate": "朝鲜参战",
+       "value_text": "朝鲜应明征出兵：以姜弘立为五道都元帅、金景瑞副，率约1.3万兵编入东路刘綎军，萨尔浒非明单方之战",
+       "source": "chaoxian_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      }
+     ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shangjianya",
+    "name": "尚间崖（北路·马林）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A050",
+       "predicate": "发生时刻",
+       "value_text": "三月初二",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:south_retreat",
+    "name": "南路溃逃（李如柏）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 2,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A070",
+       "predicate": "发生时刻",
+       "value_text": "三月初五",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A071",
+       "predicate": "撤退损失",
+       "value_text": "自相蹂践死者千余人",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yehe",
+    "name": "叶赫灭亡",
+    "scenes": [
+     "kaiyuan"
+    ],
+    "scene_names": [
+     "开原"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "K017",
+       "predicate": "结果",
+       "value_text": "开原陷后一月，叶赫孤立被灭，女真诸部基本统一",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "kaiyuan"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:abudaligang",
+    "name": "阿布达里岗（东路·刘綎）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "A061",
+       "predicate": "致败关键",
+       "value_text": "后金持杜松令箭伪为明使，绐刘綎速进",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "A060",
+       "predicate": "发生时刻",
+       "value_text": "三月初四",
+       "source": "zhazhong_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:kaifa",
+    "name": "开铁之战（开原陷落）",
+    "scenes": [
+     "kaiyuan"
+    ],
+    "scene_names": [
+     "开原"
+    ],
+    "total": 11,
+    "gap_count": 2,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.182,
+    "resonance": 0.818,
+    "party_counts": {
+     "明方": 4,
+     "清方": 2,
+     "朝鲜": 1,
+     "综述考订": 4
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "K008",
+       "predicate": "出兵日",
+       "value_text": "万历四十七年六月初十（公历 1619-07-20，锚点见 K024）努尔哈赤率军出静安堡",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K009",
+       "predicate": "陷落日",
+       "value_text": "万历四十七年六月十六（1619-07-26）克开原",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K026c",
+       "predicate": "朝鲜处境",
+       "value_text": "熊廷弼奏：开原未破时『朝鲜未败，犹有左腋之患』；开原破则朝鲜失牵制后金之凭，『不敢不从』后金",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K027d",
+       "predicate": "海西—开原屏障",
+       "value_text": "开原未陷时海西叶赫为开原北屏(熊廷弼『北关相倚，犹有后背之忧』)；后金先服叶赫再破开原，抽掉明辽东北面屏障",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      }
+     ],
+     "清方": [
+      {
+       "id": "K025",
+       "predicate": "屠城数字",
+       "value_text": "缺口：屠城『十余万』仅见明方/综述，清方实录不载，数字待第三方核对",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K029",
+       "predicate": "地方志记载",
+       "value_text": "缺口：《开原县志·万历四十六年东夷入犯》条尚未录入——该志为清末纂修的地方志，记万历四十六年（1619 陷落前一年）后金已入犯开原境，是理解次年速陷的关键前史",
+       "source": "xuantong_kao",
+       "layer": "gap",
+       "scene": "kaiyuan"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "K026d",
+       "predicate": "朝鲜记载",
+       "value_text": "朝鲜实录记开原、铁岭连陷，努尔哈赤威迫日甚；光海君处两难，终与后金往来(即明方所谓『不敢不从』)",
+       "source": "chaoxian_shilu",
+       "layer": "record",
+       "scene": "kaiyuan"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "K015",
+       "predicate": "屠城",
+       "value_text": "明方/综述载开原被屠『十余万，仅余千余』",
+       "source": "wiki",
+       "layer": "record",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K019",
+       "predicate": "性质",
+       "value_text": "萨尔浒之后后金顺势扩大战果的关键一战，非孤立事件",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K020",
+       "predicate": "战术原则",
+       "value_text": "印证局部优势：后金集中四万精骑，开原守军分散于城外堡寨、军马散漫，局部始终劣势",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "kaiyuan"
+      },
+      {
+       "id": "K024",
+       "predicate": "公历锚点",
+       "value_text": "出兵 1619-07-20；陷落 1619-07-26（区间 6 天，农历六月初十/十六换算）",
+       "source": "wiki",
+       "layer": "record",
+       "scene": "kaiyuan"
+      }
+     ]
+    }
+   }
+  ]
  }
 };

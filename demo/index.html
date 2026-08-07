@@ -18,7 +18,7 @@
       gap: 32px; align-items: end;
       border-bottom: 1px solid #D8D2C2; padding-bottom: 18px;
     }
-    .hub-title{ font-family: var(--serif); font-size: 38px; line-height: 1.1;
+    .hub-title{ font-family: var(--serif); font-size: clamp(26px, 5.2vw, 38px); line-height: 1.12;
       margin: 0 0 4px; color: var(--ink, #2A2521); font-weight: 600; }
     .hub-title em{ font-style: normal; color: #8C6239; }
     .hub-sub{ font-family: var(--mono); font-size: 12px; color: #7A6E5C;
@@ -32,7 +32,7 @@
       border: 1px solid #D8D2C2; border-radius: 4px; overflow: hidden;
       background: #EFECE2; box-shadow: 0 1px 0 rgba(0,0,0,.04);
     }
-    #hubTerrain{ display: block; width: 100%; height: 220px; }
+    #hubTerrain{ display: block; width: 100%; height: clamp(170px, 20vw, 220px); }
     .hub-terrain-cap{
       font-family: var(--mono); font-size: 10.5px; color: #7A6E5C;
       padding: 6px 10px; border-top: 1px solid #E3DCC8; background: #FBF8EE;
@@ -41,9 +41,26 @@
     .hub-grid{
       display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
     }
+    /* 注意：.card-stats 的 base 规则必须写在媒体查询之前，否则后出现的无条件规则会覆盖窄屏覆盖 */
+    .card-stats{
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 8px;
+      font-family: var(--mono); font-size: 11px; color: #5C544A;
+    }
     @media (max-width: 880px){
       .hub-hero{ grid-template-columns: 1fr; }
       .hub-grid{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px){
+      .hub-main{ padding: 18px 15px 44px; gap: 20px; }
+      .hub-hero{ gap: 18px; }
+      .hub-lead{ font-size: 15px; }
+      .hub-terrain-cap{ font-size: 9.5px; }
+      .card{ padding: 15px 15px 13px; }
+      .card-title{ font-size: 23px; }
+      /* 6 项统计 + 长标签「record / scholar / infer」会被 auto-fit 撑溢出，窄屏锁定 2 列 */
+      .card-stats{ grid-template-columns: repeat(2, 1fr); }
+      /* 标签在 2 列里仍可能太宽，缩字号并允许任意换行 */
+      .card-stat{ font-size: 10px; }
     }
     .card{
       display: block; text-decoration: none; color: inherit;
@@ -62,11 +79,8 @@
       color: var(--ink, #2A2521); font-weight: 600;
     }
     .card-sub{ font-family: var(--serif); font-size: 13px; color: #7A6E5C; margin: 0 0 12px; }
-    .card-stats{
-      display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;
-      font-family: var(--mono); font-size: 11px; color: #5C544A;
-    }
-    .card-stat{ background: #F4F0E4; border-radius: 3px; padding: 6px 8px; }
+    .card-stat{ background: #F4F0E4; border-radius: 3px; padding: 6px 8px;
+      min-width: 0; overflow-wrap: anywhere; }
     .card-stat b{ display: block; font-size: 17px; color: var(--ink); font-weight: 600;
       font-family: var(--serif); }
     .card-extras{
@@ -102,15 +116,16 @@
 
   <section class="hub-hero">
     <div>
-      <div class="hub-sub">VEGE-CIVILIZATION · v0.3 · 辽东走廊时空沙盘</div>
-      <h1 class="hub-title">同一块<em>真实地形</em>，<br>两种<em>史观切片</em>。</h1>
+      <div class="hub-sub">VEGE-CIVILIZATION · v0.4 · 辽东走廊时空沙盘</div>
+      <h1 class="hub-title">同一块<em>真实地形</em>，<br><em>四种</em>史观切片。</h1>
       <p class="hub-lead">
-        萨尔浒之战（1619）的事件切片把「明军分四路、后金凭你几路来我只一路去」摆在地图上；
-        开原（县级 LOD 切片）则把同一片辽东山脉、江河、边墙切成 23 城堡 + 互市 + 三方史料。
-        两片共用一份真实 ASTER 高程、四层证据物理隔离、断言内核自动发现冲突——
+        萨尔浒之战（1619）把「明军分四路、后金凭你几路来我只一路去」摊在地图上；
+        开原 / 铁岭 / 辽阳三个县级 LOD 切片则把同一片辽东山脉、江河、边墙
+        切成不同尺度的城堡、互市、军事驻地与三方史料。
+        四片共用一份真实 ASTER 高程、四层证据物理隔离、断言内核自动发现冲突——
         立场不靠手贴标签，靠来源派生。
       </p>
-      <div style="margin-top:14px"><span class="hub-version">v0.3 · 多切片联动</span></div>
+      <div style="margin-top:14px"><span class="hub-version">v0.4 · 通用切片引擎 + 受控词表 + lint 守门</span></div>
     </div>
     <div>
       <div class="hub-terrain-wrap">
@@ -123,54 +138,19 @@
     </div>
   </section>
 
-  <section class="hub-grid">
-    <a class="card" href="sarhu.html">
-      <div class="card-kind">事件切片 · battle slice</div>
-      <div class="card-title">萨尔浒之战</div>
-      <div class="card-sub">万历四十七年二月—三月 · 天命四年 · 1619</div>
-      <div class="card-stats">
-        <div class="card-stat"><span>史料</span><b>6</b></div>
-        <div class="card-stat"><span>地名 / 人物</span><b>21 / 17</b></div>
-        <div class="card-stat"><span>断言</span><b>38</b></div>
-        <div class="card-stat"><span>冲突</span><b>3</b></div>
-        <div class="card-stat"><span>缺口</span><b>1</b></div>
-        <div class="card-stat"><span>路线紧张度（route_jin）</span><b>2.64</b></div>
-      </div>
-      <div class="card-extras">
-        <span class="resonance-pill mid">萨尔浒（广义）共振 0.333</span>
-        &nbsp;后金把「速度」当核心战术杠杆——route_jin 模型 10.6 日 vs 史料 4 日。
-        <br><small style="color:#918777">点击进入 → 兵力天平、局部优势、史料冲突、五路进军</small>
-      </div>
-    </a>
-
-    <a class="card" href="kaiyuan.html">
-      <div class="card-kind">县级 LOD 切片 · county slice</div>
-      <div class="card-title">开原</div>
-      <div class="card-sub">辽北第一重镇 · 明卫所—清州县 · 万历末陷落</div>
-      <div class="card-stats">
-        <div class="card-stat"><span>史料</span><b>8</b></div>
-        <div class="card-stat"><span>地名 / 人物</span><b>16 / 9</b></div>
-        <div class="card-stat"><span>断言</span><b>43</b></div>
-        <div class="card-stat"><span>冲突</span><b>1</b></div>
-        <div class="card-stat"><span>缺口</span><b>1</b></div>
-        <div class="card-stat"><span>路线紧张度（route_kaiyuan）</span><b>1.22</b></div>
-      </div>
-      <div class="card-extras">
-        <span class="resonance-pill high">开铁之战 共振 0.600（全场最高）</span>
-        &nbsp;朝鲜实录（K026/K026a–d）补完后，三方史料在开原陷落上首次完整闭合。
-        <br><small style="color:#918777">点击进入 → 建置沿革、三方史料、互市—军事关系、赫图阿拉进军紧张度</small>
-      </div>
-    </a>
+  <section class="hub-grid" id="hubGrid">
+    <!-- 由 demo/hub.js 自动按 SD.scenes 渲染：增删切片无需改 HTML -->
   </section>
 
   <footer class="hub-foot">
-    <span>状态：v0.3 · 零额外权限（仅本地 + 联网检索 + 隔离 venv）</span>
-    <span>路线图：<a href="../docs/02-12h路线图-v0.3.md">docs/02-12h路线图-v0.3.md</a> · 共振报告：<a href="../data/resonance_report.md">data/resonance_report.md</a></span>
+    <span>状态：v0.4 · 零额外权限（仅本地 + 联网检索 + 隔离 venv）</span>
+    <span>路线图：<a href="../docs/02-12h路线图-v0.3.md">docs/02-12h路线图-v0.3.md</a> · 共振报告：<a href="../data/resonance_report.md">data/resonance_report.md</a> · lint：<code>python tools/lint.py</code></span>
   </footer>
 
 </main>
 
 <script src="data.js"></script>
+<script>window.HUB_RESONANCE = window.SANDBOX_DATA.resonance || {};</script>
 <script src="hub.js"></script>
 </body>
 </html>

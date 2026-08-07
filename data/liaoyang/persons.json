@@ -1,0 +1,74 @@
+{
+  "persons": [
+    {
+      "id": "nuerhaci",
+      "name": "努尔哈赤",
+      "role": "后金大汗",
+      "side": "qing",
+      "note": "建州女真首领, 1621 年攻占辽阳, 迁都于此, 建东京城"
+    },
+    {
+      "id": "huangtaiji",
+      "name": "皇太极",
+      "role": "后金大汗 (太宗)",
+      "side": "qing",
+      "note": "努尔哈赤第八子, 1626 年继位, 1636 年改国号大清"
+    },
+    {
+      "id": "yeluabuji",
+      "name": "耶律阿保机",
+      "role": "辽太祖",
+      "side": "liao",
+      "note": "契丹首领, 辽朝建立者, 918 年攻占辽东城"
+    },
+    {
+      "id": "yelubei",
+      "name": "耶律倍",
+      "role": "东丹王",
+      "side": "liao",
+      "note": "辽太祖长子, 契丹东丹国国王, 928 年迁国都至辽阳"
+    },
+    {
+      "id": "wanyanyong",
+      "name": "完颜雍",
+      "role": "金世宗",
+      "side": "jin",
+      "note": "1161 年在辽阳拥兵称帝, 改元大定"
+    },
+    {
+      "id": "yuan_yingtai",
+      "name": "袁应泰",
+      "role": "辽东经略",
+      "side": "ming",
+      "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任"
+    },
+    {
+      "id": "ye_wang",
+      "name": "叶旺",
+      "role": "辽东都指挥使",
+      "side": "ming",
+      "note": "洪武初年与马云出镇辽东, 设定辽都卫指挥使司"
+    },
+    {
+      "id": "ma_yun",
+      "name": "马云",
+      "role": "辽东都指挥使",
+      "side": "ming",
+      "note": "洪武初年与叶旺共同出镇辽东, 奠定明代辽东防务"
+    },
+    {
+      "id": "chenjn",
+      "name": "陈策",
+      "role": "总兵",
+      "side": "ming",
+      "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡"
+    },
+    {
+      "id": "tongzhongkui",
+      "name": "童仲揆",
+      "role": "副总兵",
+      "side": "ming",
+      "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡"
+    }
+  ]
+}

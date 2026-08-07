@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-三方史料共振引擎（Phase 2）。
+三方史料共振引擎（Phase 2 → v0.4 泛化版）。
 
 为每个事件（subject 以 "event:" 开头）聚合 明方 / 清方 / 朝鲜 / 综述 阵营，
 计算三个维度：
@@ -11,25 +11,34 @@
 共振度（可量化"立场靠来源派生"）
   resonance = (coverage / 3) * (1 - divergence) * (1 - gap_rate)
 
+v0.4 改动：不再硬编码 kaiyuan/sarhu 两个切片，改为自动扫描
+`data/*/assertions.jsonl`，任何新切片落盘后无需改代码即可进入共振表。
+同一事件被多个切片同时记载时（如 event:sarhu 出现在萨尔浒与开原），
+断言会合并统计，并在报告里标出它跨了哪几个切片。
+
 输出：
   - 控制台报告
   - data/resonance_report.json（结构化）
   - data/resonance_report.md（人读）
 """
+import glob
 import json
 import os
-import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-PARTY_BUCKET = {
-    '明·开原兵备道': '明方', '清修·明臣': '明方', '明': '明方', '明廷官方': '明方',
-    '清': '清方', '清修官史': '清方', '清·地方志': '清方',
-    '朝鲜': '朝鲜', '朝鲜官方': '朝鲜', '盟国旁观': '朝鲜',
-    '学界': '综述考订', '中性考订': '综述考订', '综述': '综述考订', '二手综述': '综述考订',
+with open(os.path.join(ROOT, 'data', 'vocab.json'), encoding='utf-8') as _f:
+    VOCAB = json.load(_f)
+PARTY_BUCKET = VOCAB['party_bucket']
+PARTIES = [p for p in VOCAB['parties'] if p != '综述考订']
+
+SCENE_NAMES = {
+    'sarhu': '萨尔浒',
+    'kaiyuan': '开原',
+    'tieling': '铁岭',
+    'liaoyang': '辽阳',
 }
-PARTIES = ['明方', '清方', '朝鲜']
 
 EVENT_NAMES = {
     'event:sarhu': '萨尔浒之战（广义）',
@@ -42,11 +51,20 @@ EVENT_NAMES = {
     'event:yehe': '叶赫灭亡',
     'event:tuoshan': '抚顺之战',
     'event:fushun': '抚顺之战',
+    'event:tieling_fall': '铁岭陷落（1619）',
+    'event:kuanbian_abandon': '弃宽甸六堡',
+    'event:liaoyang_fall': '辽阳陷落（1621）',
+    'event:hunhe_zhan': '浑河之战（1621）',
 }
 
 
 def bucket(party):
     return PARTY_BUCKET.get(party, party or '其他')
+
+
+def party_of(src_party, a):
+    """source id 是切片内作用域的——查表必须带切片，否则同名 id 会跨片串味。"""
+    return src_party.get((a.get('_scene'), a.get('source')))
 
 
 def resonance_for_subject(assertions, src_party, subject):
@@ -56,7 +74,7 @@ def resonance_for_subject(assertions, src_party, subject):
 
     by_party = defaultdict(list)
     for a in rel:
-        p = bucket(src_party.get(a['source']))
+        p = bucket(party_of(src_party, a))
         by_party[p].append(a)
 
     coverage = sum(1 for p in PARTIES if by_party.get(p))
@@ -65,7 +83,8 @@ def resonance_for_subject(assertions, src_party, subject):
     for a in rel:
         if a.get('layer') == 'gap':
             continue
-        pred_values[a['predicate']].add(str(a.get('value')))
+        v = a.get('value', a.get('value_text'))
+        pred_values[a['predicate']].add(str(v))
     n_pred = len(pred_values)
     n_div = sum(1 for v in pred_values.values() if len(v) > 1)
     divergence = (n_div / n_pred) if n_pred else 0.0
@@ -76,6 +95,8 @@ def resonance_for_subject(assertions, src_party, subject):
 
     resonance = (coverage / 3.0) * (1.0 - divergence) * (1.0 - gap_rate)
 
+    scenes = sorted({a.get('_scene') for a in rel if a.get('_scene')})
+
     def _party_list(name):
         items = by_party.get(name, [])
         return [{
@@ -84,11 +105,14 @@ def resonance_for_subject(assertions, src_party, subject):
             'value_text': a.get('value_text'),
             'source': a['source'],
             'layer': a['layer'],
+            'scene': a.get('_scene'),
         } for a in items]
 
     return {
         'subject': subject,
         'name': EVENT_NAMES.get(subject, subject),
+        'scenes': scenes,
+        'scene_names': [SCENE_NAMES.get(s, s) for s in scenes],
         'total': total,
         'gap_count': gap_n,
         'coverage': '%d/3' % coverage,
@@ -103,40 +127,68 @@ def resonance_for_subject(assertions, src_party, subject):
     }
 
 
-def load_kaiyuan_assertions():
+def load_all_scenes():
+    """自动扫描 data/<scene>/assertions.jsonl，返回 (断言列表, source→party)。
+
+    每条断言注入 `_scene` 字段，便于报告标注跨切片事件。
+    """
     rows = []
-    with open(os.path.join(ROOT, 'data', 'kaiyuan', 'assertions.jsonl'),
-              'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('//'):
-                rows.append(json.loads(line))
-    sources = json.load(open(os.path.join(ROOT, 'data', 'kaiyuan', 'sources.json'),
-                              encoding='utf-8'))['sources']
-    src_party = {s['id']: s.get('party', '其他') for s in sources}
-    return rows, src_party
+    src_party = {}
+    scenes = []
+    for path in sorted(glob.glob(os.path.join(ROOT, 'data', '*', 'assertions.jsonl'))):
+        scene = os.path.basename(os.path.dirname(path))
+        scenes.append(scene)
+        with open(path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('//'):
+                    r = json.loads(line)
+                    r['_scene'] = scene
+                    rows.append(r)
+        sp = os.path.join(ROOT, 'data', scene, 'sources.json')
+        if os.path.exists(sp):
+            with open(sp, encoding='utf-8') as f:
+                for s in json.load(f)['sources']:
+                    src_party[(scene, s['id'])] = s.get('party', '其他')
+    return rows, src_party, scenes
 
 
-def load_sarhu_assertions():
-    rows = []
-    with open(os.path.join(ROOT, 'data', 'sarhu', 'assertions.jsonl'),
-              'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('//'):
-                rows.append(json.loads(line))
-    sources = json.load(open(os.path.join(ROOT, 'data', 'sarhu', 'sources.json'),
-                              encoding='utf-8'))['sources']
-    src_party = {s['id']: s.get('party', '其他') for s in sources}
-    return rows, src_party
+def scene_summary(assertions, src_party, scene):
+    """单切片层面的汇总：断言数、四层分布、三方覆盖、平均共振。"""
+    rel = [a for a in assertions if a.get('_scene') == scene]
+    if not rel:
+        return None
+    layers = defaultdict(int)
+    for a in rel:
+        layers[a.get('layer', '?')] += 1
+    parties = defaultdict(int)
+    for a in rel:
+        parties[bucket(party_of(src_party, a))] += 1
+    subs = sorted({a['subject'] for a in rel if a.get('subject', '').startswith('event:')})
+    rs = [resonance_for_subject(rel, src_party, s) for s in subs]
+    rs = [r for r in rs if r]
+    avg = round(sum(r['resonance'] for r in rs) / len(rs), 3) if rs else 0.0
+    best = max(rs, key=lambda r: r['resonance']) if rs else None
+    return {
+        'scene': scene,
+        'name': SCENE_NAMES.get(scene, scene),
+        'total': len(rel),
+        'layers': dict(layers),
+        'party_counts': dict(parties),
+        'event_count': len(rs),
+        'avg_resonance': avg,
+        'best_event': best['name'] if best else None,
+        'best_resonance': best['resonance'] if best else None,
+    }
 
 
 def fmt_report(rs):
     lines = []
-    lines.append('  %-32s 共振 %.3f  覆盖 %s  分歧 %.2f  缺口 %.2f  (%d 条)'
+    tag = ('/'.join(rs['scene_names'])) if rs['scene_names'] else '—'
+    lines.append('  %-32s 共振 %.3f  覆盖 %s  分歧 %.2f  缺口 %.2f  (%d 条 · %s)'
                  % (rs['name'] + ' [' + rs['subject'] + ']',
                     rs['resonance'], rs['coverage'],
-                    rs['divergence'], rs['gap_rate'], rs['total']))
+                    rs['divergence'], rs['gap_rate'], rs['total'], tag))
     for p in PARTIES + ['综述考订']:
         n = rs['party_counts'].get(p, 0)
         if n:
@@ -145,19 +197,16 @@ def fmt_report(rs):
 
 
 def main():
-    kaiyuan_a, kaiyuan_sp = load_kaiyuan_assertions()
-    sarhu_a, sarhu_sp = load_sarhu_assertions()
-
-    all_assertions = kaiyuan_a + sarhu_a
-    all_party = {**kaiyuan_sp, **sarhu_sp}
+    all_assertions, all_party, scene_list = load_all_scenes()
 
     subjects = sorted({a['subject'] for a in all_assertions
                        if a.get('subject', '').startswith('event:')})
 
     results = []
-    print('=' * 64)
-    print('三方史料共振报告（Phase 2）')
-    print('=' * 64)
+    print('=' * 68)
+    print('三方史料共振报告（v0.4 · 全切片自动扫描）')
+    print('切片：%s' % '、'.join(SCENE_NAMES.get(s, s) for s in scene_list))
+    print('=' * 68)
     for s in subjects:
         rs = resonance_for_subject(all_assertions, all_party, s)
         if rs is None:
@@ -166,6 +215,16 @@ def main():
         print(fmt_report(rs))
         print()
 
+    scenes = [scene_summary(all_assertions, all_party, s) for s in scene_list]
+    scenes = [s for s in scenes if s]
+    print('-' * 68)
+    print('切片汇总')
+    for s in scenes:
+        print('  %-6s 断言 %-4d 事件 %-3d 平均共振 %.3f  最高：%s (%.3f)'
+              % (s['name'], s['total'], s['event_count'], s['avg_resonance'],
+                 s['best_event'] or '—', s['best_resonance'] or 0.0))
+    print()
+
     # 按共振度升序（最不共振的最值得补）
     results_sorted = sorted(results, key=lambda r: r['resonance'])
 
@@ -173,7 +232,9 @@ def main():
         'meta': {
             'definition': 'resonance = (coverage/3) * (1 - divergence) * (1 - gap_rate)',
             'parties': PARTIES + ['综述考订'],
+            'scenes': scene_list,
         },
+        'scene_summary': scenes,
         'events': results_sorted,
     }
     json_path = os.path.join(ROOT, 'data', 'resonance_report.json')
@@ -183,24 +244,37 @@ def main():
 
     md_path = os.path.join(ROOT, 'data', 'resonance_report.md')
     lines = ['# 三方史料共振报告', '',
-             '> 生成：tools/resonance.py · 公式 '
+             '> 生成：`tools/resonance.py` · 公式 '
              '`resonance = (coverage/3) × (1−divergence) × (1−gap_rate)`',
              '> 立场（明方 / 清方 / 朝鲜 / 综述考订）按来源 `source.party` 派生，',
-             '> 不手动贴标签——这是本项目与所有历史可视化产品的分界线。', '',
-             '## 事件共振表（按共振度升序：最不共振的最值得补）', '',
-             '| 事件 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |',
-             '|---|---|---|---|---|---|---|']
+             '> 不手动贴标签——这是本项目与所有历史可视化产品的分界线。',
+             '',
+             '> v0.4 起本报告自动扫描 `data/*/assertions.jsonl`，新切片落盘即入表。',
+             '', '## 切片汇总', '',
+             '| 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |',
+             '|---|---|---|---|---|---|']
+    for s in scenes:
+        lay = ' / '.join('%s %d' % (k, v) for k, v in sorted(s['layers'].items()))
+        lines.append('| %s | %d | %d | **%.3f** | %s（%.3f） | %s |'
+                     % (s['name'], s['total'], s['event_count'], s['avg_resonance'],
+                        s['best_event'] or '—', s['best_resonance'] or 0.0, lay))
+    lines += ['', '## 事件共振表（按共振度升序：最不共振的最值得补）', '',
+              '| 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |',
+              '|---|---|---|---|---|---|---|---|']
     for rs in results_sorted:
         pc = rs['party_counts']
-        lines.append('| %s | **%.3f** | %s | %.2f | %.2f | %d | %d / %d / %d / %d |'
-                     % (rs['name'], rs['resonance'], rs['coverage'],
+        lines.append('| %s | %s | **%.3f** | %s | %.2f | %.2f | %d | %d / %d / %d / %d |'
+                     % (rs['name'], '/'.join(rs['scene_names']) or '—',
+                        rs['resonance'], rs['coverage'],
                         rs['divergence'], rs['gap_rate'], rs['total'],
                         pc.get('明方', 0), pc.get('清方', 0),
                         pc.get('朝鲜', 0), pc.get('综述考订', 0)))
     lines += ['', '## 解读', '',
               '- **高共振**（≈1.0）：三方都覆盖、无分歧、无缺口 → 这件事史料共识强。',
               '- **低共振**（≈0.0）：覆盖不足、分歧剧烈、或充满缺口 → 这就是"补这条史料能撬动多大"的最直白答案。',
-              '- 萨尔浒 `event:sarhu` 与开铁 `event:kaifa` 已在上一轮通过 K026 / K026a–d 完成三方闭合。',
+              '- 萨尔浒 `event:sarhu` 与开铁 `event:kaifa` 已通过 K026 / K026a–d 完成三方闭合。',
+              '- 新入表的铁岭 / 辽阳切片当前共振偏低，**这不是 bug，是待补清单**：'
+              '缺的主要是朝鲜方视角与清方细节，见各切片 `layer: gap` 断言。',
               '']
     with open(md_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))

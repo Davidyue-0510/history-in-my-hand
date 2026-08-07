@@ -1,34 +1,98 @@
 {
   "events": [
-    { "id": "ev_sanwan", "year": 1388, "era": "洪武二十一年", "kind": "建置",
-      "title": "设三万卫", "place": "kaiyuan_cheng",
-      "text": "平定北元太尉纳哈出后，于开元城设三万卫；『开元』避太祖讳改『开原』。" },
-    { "id": "ev_kaiyuanwei", "year": 1392, "era": "洪武二十五年", "kind": "建置",
-      "title": "置开原卫", "place": "sanwan_wei",
-      "text": "设开原卫（开元中护卫），开元城正式改称开原城。" },
-    { "id": "ev_anle", "year": 1409, "era": "永乐七年", "kind": "建置",
-      "title": "置安乐州、自在州", "place": "anle_zhou",
-      "text": "于开原城置安乐州、自在州，安置内附女真等族；此为明代辽东仅有的两个州。" },
-    { "id": "ev_mashi", "year": 1430, "era": "宣德正统间", "kind": "互市",
-      "title": "开原马市成规模", "place": "kaiyuan_mashi",
-      "text": "开原设三关三市（广顺关南关市、镇北关北关市、新安关鞑靼马市），提督马市公署驻此，辽东贸易中心。" },
-    { "id": "ev_tushuo", "year": 1618, "era": "万历四十六年", "kind": "著述",
-      "title": "《开原图说》成书", "place": "kaiyuan_cheng",
-      "text": "开原兵备道冯瑗实地调查后纂成军事地理专著，详记辽北23城与女真四国枝派；书中已录『万历四十六年东夷入犯尅去』。" },
-    { "id": "ev_sarhu", "year": 1619, "era": "万历四十七年二月", "kind": "战事",
-      "title": "萨尔浒之战", "place": "sarhu",
-      "text": "后金大破明四路大军。开原明军退守，为开铁之战的直接前因。" },
-    { "id": "ev_kaifa", "year": 1619, "era": "万历四十七年六月", "kind": "战事",
-      "title": "开铁之战", "place": "kaiyuan_cheng",
-      "text": "六月初十努尔哈赤率军出静安堡，六月十六（7月26日）克开原；七月克铁岭。明总兵马林等殉国，郑之范弃城。" },
-    { "id": "ev_yehe", "year": 1619, "era": "万历四十七年七月", "kind": "战事",
-      "title": "叶赫灭亡", "place": "yehe",
-      "text": "开原既陷，叶赫失去明方倚仗，孤立无援，一个月后被后金攻灭收编，女真诸部基本统一。" },
-    { "id": "ev_xianzhi", "year": 1664, "era": "清康熙三年", "kind": "建置",
-      "title": "设开原县", "place": "kaiyuan_cheng",
-      "text": "清初设开原县，为奉天府首批所建四县之一；柳条边盛京边墙自开原北经过。" },
-    { "id": "ev_shi", "year": 1989, "era": "1989", "kind": "建置",
-      "title": "撤县设市", "place": "kaiyuan_cheng",
-      "text": "开原撤县设县级市，由铁岭市代管。" }
-  ]
+    {
+      "id": "ev_sanwan",
+      "year": 1388,
+      "era": "洪武二十一年",
+      "kind": "建置",
+      "title": "设三万卫",
+      "place": "kaiyuan_cheng",
+      "text": "平定北元太尉纳哈出后，于开元城设三万卫；『开元』避太祖讳改『开原』。"
+    },
+    {
+      "id": "ev_kaiyuanwei",
+      "year": 1392,
+      "era": "洪武二十五年",
+      "kind": "建置",
+      "title": "置开原卫",
+      "place": "sanwan_wei",
+      "text": "设开原卫（开元中护卫），开元城正式改称开原城。"
+    },
+    {
+      "id": "ev_anle",
+      "year": 1409,
+      "era": "永乐七年",
+      "kind": "建置",
+      "title": "置安乐州、自在州",
+      "place": "anle_zhou",
+      "text": "于开原城置安乐州、自在州，安置内附女真等族；此为明代辽东仅有的两个州。"
+    },
+    {
+      "id": "ev_mashi",
+      "year": 1430,
+      "era": "宣德正统间",
+      "kind": "互市",
+      "title": "开原马市成规模",
+      "place": "kaiyuan_mashi",
+      "text": "开原设三关三市（广顺关南关市、镇北关北关市、新安关鞑靼马市），提督马市公署驻此，辽东贸易中心。"
+    },
+    {
+      "id": "ev_tushuo",
+      "year": 1618,
+      "era": "万历四十六年",
+      "kind": "著述",
+      "title": "《开原图说》成书",
+      "place": "kaiyuan_cheng",
+      "text": "开原兵备道冯瑗实地调查后纂成军事地理专著，详记辽北23城与女真四国枝派；书中已录『万历四十六年东夷入犯尅去』。"
+    },
+    {
+      "id": "ev_sarhu",
+      "year": 1619,
+      "era": "万历四十七年二月",
+      "kind": "战事",
+      "title": "萨尔浒之战",
+      "place": "sarhu",
+      "text": "后金大破明四路大军。开原明军退守，为开铁之战的直接前因。",
+      "subject": "event:sarhu"
+    },
+    {
+      "id": "ev_kaifa",
+      "year": 1619,
+      "era": "万历四十七年六月",
+      "kind": "战事",
+      "title": "开铁之战",
+      "place": "kaiyuan_cheng",
+      "text": "六月初十努尔哈赤率军出静安堡，六月十六（7月26日）克开原；七月克铁岭。明总兵马林等殉国，郑之范弃城。",
+      "subject": "event:kaifa"
+    },
+    {
+      "id": "ev_yehe",
+      "year": 1619,
+      "era": "万历四十七年七月",
+      "kind": "战事",
+      "title": "叶赫灭亡",
+      "place": "yehe",
+      "text": "开原既陷，叶赫失去明方倚仗，孤立无援，一个月后被后金攻灭收编，女真诸部基本统一。",
+      "subject": "event:yehe"
+    },
+    {
+      "id": "ev_xianzhi",
+      "year": 1664,
+      "era": "清康熙三年",
+      "kind": "建置",
+      "title": "设开原县",
+      "place": "kaiyuan_cheng",
+      "text": "清初设开原县，为奉天府首批所建四县之一；柳条边盛京边墙自开原北经过。"
+    },
+    {
+      "id": "ev_shi",
+      "year": 1989,
+      "era": "1989",
+      "kind": "建置",
+      "title": "撤县设市",
+      "place": "kaiyuan_cheng",
+      "text": "开原撤县设县级市，由铁岭市代管。"
+    }
+  ],
+  "_comment_subject": "subject 字段把时间轴事件与断言的 subject 命名空间接上：点时间轴上带 subject 的事件，右侧三方史料面板即切到该事件。没有 subject 的事件是纯沿革标记，不承载断言。"
 }

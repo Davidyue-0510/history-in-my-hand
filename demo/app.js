@@ -57,9 +57,9 @@
   var PRESETS = [
     { id: 'all',    name: '全部并陈', srcs: null,
       note: '所有版本同时在场。数字互相打架，这才是史料的原貌。' },
-    { id: 'ming',   name: '只信明方', srcs: ['mingshi', 'shenzong_shilu', 'guoque'],
+    { id: 'ming',   name: '只信明方', srcs: ['mingshi', 'ming_shenzong_shilu', 'guoque'],
       note: '明方视角：败因归于主将莽撞，敌军规模被放大。注意《明史》成书于清，它对明军败绩的解释并非中立。' },
-    { id: 'jin',    name: '只信金方', srcs: ['taizu_shilu'],
+    { id: 'jin',    name: '只信金方', srcs: ['qing_taizu_shilu'],
       note: '胜方视角：明军二十万，己方筑坝决水。四路明军的行军细节大量缺失 —— 后金记录的是自己怎么赢，不是敌人怎么走。' },
     { id: 'joseon', name: '只信亲历', srcs: ['zhazhong_rilu'],
       note: '朝鲜从事官李民寏的亲历日记。地图上只剩东路一条线 —— 他确实只看见了这一路。每一份史料都只是一个人站的位置。' },
@@ -1085,7 +1085,11 @@
       var vis = items.filter(function (a) {
         return state.sources.has(a.source) && state.layers.has(a.layer);
       });
-      var distinct = new Set(vis.map(function (a) { return String(a.value); })).size;
+      // 纯文本断言的 value 为 null——只看 value 会让文字类冲突永远被判成"已消解"。
+      // 与 tools/build.py 的 build_conflicts 保持同一套取值口径。
+      var distinct = new Set(vis.map(function (a) {
+        return a.value == null ? String(a.value_text) : String(a.value);
+      })).size;
       var alive = distinct > 1;
       if (alive) live++;
 

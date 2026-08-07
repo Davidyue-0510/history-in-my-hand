@@ -1,0 +1,64 @@
+{
+  "edges": [
+    {
+      "from": "tieling_cheng",
+      "to": "shenyang",
+      "type": "admin",
+      "label": "铁岭卫—沈阳中卫"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "kaiyuan_cheng",
+      "type": "admin",
+      "label": "铁岭卫—三万卫"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "liaoyang",
+      "type": "admin",
+      "label": "铁岭卫—辽东都司"
+    },
+    {
+      "from": "fengjibao",
+      "to": "tieling_cheng",
+      "type": "admin",
+      "label": "奉集堡—银州 (迁徙)"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "fushun",
+      "type": "mil",
+      "label": "李成梁征王杲抚顺"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "hetu_ala",
+      "type": "mil",
+      "label": "1619 努尔哈赤南下攻铁岭"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "kuanbian",
+      "type": "mil",
+      "label": "李成梁弃宽甸六堡"
+    },
+    {
+      "from": "yageguan",
+      "to": "hetu_ala",
+      "type": "mil",
+      "label": "李如柏南路出鸦鹘关"
+    },
+    {
+      "from": "jinganbao",
+      "to": "sarhu",
+      "type": "mil",
+      "label": "马林北路经靖安堡"
+    },
+    {
+      "from": "tieling_cheng",
+      "to": "shenyang",
+      "type": "mashi",
+      "label": "明辽东马市驿站"
+    }
+  ]
+}
