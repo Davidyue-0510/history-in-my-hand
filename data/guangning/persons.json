@@ -1,0 +1,28 @@
+{
+ "persons": [
+  {
+   "id": "xiongtingbing",
+   "name": "熊廷弼",
+   "role": "辽东经略",
+   "note": "主守，与王化贞经抚不和，广宁陷后受诛"
+  },
+  {
+   "id": "wang_huazhen",
+   "name": "王化贞",
+   "role": "辽东巡抚",
+   "note": "主战，广宁之战弃城逃"
+  },
+  {
+   "id": "sun_degong",
+   "name": "孙得功",
+   "role": "广宁将",
+   "note": "广宁陷前通敌，开门迎后金"
+  },
+  {
+   "id": "nuerhaci",
+   "name": "努尔哈赤",
+   "role": "后金大汗",
+   "note": "1622 年正月取广宁"
+  }
+ ]
+}

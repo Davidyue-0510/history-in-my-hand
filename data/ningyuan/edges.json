@@ -1,0 +1,16 @@
+{
+ "edges": [
+  {
+   "from": "ningyuan",
+   "to": "jinzhou_cheng",
+   "type": "admin",
+   "label": "宁远—锦州"
+  },
+  {
+   "from": "ningyuan",
+   "to": "shanhaiguan",
+   "type": "admin",
+   "label": "宁远—山海关"
+  }
+ ]
+}

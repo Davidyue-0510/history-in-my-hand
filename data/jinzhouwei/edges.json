@@ -1,0 +1,22 @@
+{
+ "edges": [
+  {
+   "from": "jinzhouwei_cheng",
+   "to": "fuzhou_cheng",
+   "type": "admin",
+   "label": "金州—复州"
+  },
+  {
+   "from": "jinzhouwei_cheng",
+   "to": "pidao",
+   "type": "mashi",
+   "label": "金州—皮岛（东江）"
+  },
+  {
+   "from": "jinzhouwei_cheng",
+   "to": "denglai",
+   "type": "mashi",
+   "label": "金州—登莱（海运）"
+  }
+ ]
+}

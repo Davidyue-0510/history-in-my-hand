@@ -1,0 +1,51 @@
+{
+ "places": [
+  {
+   "id": "jinzhouwei_cheng",
+   "name": "金州城",
+   "lon": 121.7,
+   "lat": 39.09,
+   "type": "city",
+   "modern": "辽宁大连金州区",
+   "note": "明金州卫，辖旅顺口，半岛南端"
+  },
+  {
+   "id": "lvshun",
+   "name": "旅顺口",
+   "lon": 121.25,
+   "lat": 38.8,
+   "type": "guan",
+   "modern": "辽宁大连旅顺口",
+   "note": "金州卫辖，海运要塞"
+  },
+  {
+   "id": "fuzhou_cheng",
+   "name": "复州",
+   "lon": 121.97,
+   "lat": 39.63,
+   "type": "city",
+   "modern": "辽宁瓦房店市",
+   "note": "金州北向卫城"
+  },
+  {
+   "id": "pidao",
+   "name": "皮岛",
+   "lon": 124.5,
+   "lat": 39.95,
+   "type": "island",
+   "modern": "朝鲜椴岛",
+   "note": "毛文龙东江镇，一度收复金州/旅顺"
+  },
+  {
+   "id": "denglai",
+   "name": "登莱",
+   "lon": 120.5,
+   "lat": 37.5,
+   "type": "city",
+   "modern": "山东蓬莱",
+   "note": "金州海运对岸，明援辽通道"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

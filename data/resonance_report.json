@@ -9,10 +9,15 @@
     ],
     "scenes": [
       "fushun",
+      "fuzhou",
       "gaizhou",
+      "guangning",
       "haizhou",
+      "jinzhou",
+      "jinzhouwei",
       "kaiyuan",
       "liaoyang",
+      "ningyuan",
       "sarhu",
       "shenyang",
       "tieling",
@@ -41,6 +46,26 @@
       "best_resonance": 0.75
     },
     {
+      "scene": "fuzhou",
+      "name": "fuzhou",
+      "total": 6,
+      "layers": {
+        "record": 3,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 1,
+        "清方": 2,
+        "朝鲜": 2,
+        "综述考订": 1
+      },
+      "event_count": 2,
+      "avg_resonance": 0.333,
+      "best_event": "event:fuzhou_fall",
+      "best_resonance": 0.333
+    },
+    {
       "scene": "gaizhou",
       "name": "gaizhou",
       "total": 6,
@@ -60,6 +85,25 @@
       "best_resonance": 0.444
     },
     {
+      "scene": "guangning",
+      "name": "guangning",
+      "total": 7,
+      "layers": {
+        "record": 4,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 5,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "event_count": 3,
+      "avg_resonance": 0.355,
+      "best_event": "event:guangning_fall",
+      "best_resonance": 0.4
+    },
+    {
       "scene": "haizhou",
       "name": "haizhou",
       "total": 7,
@@ -77,6 +121,46 @@
       "avg_resonance": 0.472,
       "best_event": "event:haizhou_fall",
       "best_resonance": 0.75
+    },
+    {
+      "scene": "jinzhou",
+      "name": "jinzhou",
+      "total": 7,
+      "layers": {
+        "record": 4,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 3,
+        "清方": 2,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "event_count": 2,
+      "avg_resonance": 0.567,
+      "best_event": "event:jinzhou_songjin",
+      "best_resonance": 0.8
+    },
+    {
+      "scene": "jinzhouwei",
+      "name": "jinzhouwei",
+      "total": 6,
+      "layers": {
+        "record": 3,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 2,
+        "清方": 1,
+        "朝鲜": 2,
+        "综述考订": 1
+      },
+      "event_count": 3,
+      "avg_resonance": 0.278,
+      "best_event": "event:jinzhouwei_fall",
+      "best_resonance": 0.333
     },
     {
       "scene": "kaiyuan",
@@ -116,6 +200,25 @@
       "event_count": 2,
       "avg_resonance": 0.23,
       "best_event": "浑河之战（1621）",
+      "best_resonance": 0.333
+    },
+    {
+      "scene": "ningyuan",
+      "name": "ningyuan",
+      "total": 7,
+      "layers": {
+        "record": 4,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "明方": 5,
+        "清方": 1,
+        "综述考订": 1
+      },
+      "event_count": 4,
+      "avg_resonance": 0.333,
+      "best_event": "event:ningjin_dajie",
       "best_resonance": 0.333
     },
     {
@@ -408,6 +511,52 @@
         ],
         "清方": [],
         "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jinzhouwei_mao",
+      "name": "event:jinzhouwei_mao",
+      "scenes": [
+        "jinzhouwei"
+      ],
+      "scene_names": [
+        "jinzhouwei"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.167,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 2,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [
+          {
+            "id": "JN003",
+            "predicate": "东江收复",
+            "value_text": "毛文龙据皮岛/铁山, 1621–1622 一度收复金州、旅顺, 牵制后金南翼",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "jinzhouwei"
+          },
+          {
+            "id": "JN011",
+            "predicate": "东江复金次数",
+            "value_text": "毛文龙收复金州/旅顺的次数与持续时间, 明清两方记载悬殊",
+            "source": "chao_xiandai",
+            "layer": "gap",
+            "scene": "jinzhouwei"
+          }
+        ],
         "综述考订": []
       }
     },
@@ -716,6 +865,107 @@
       }
     },
     {
+      "subject": "event:fuzhou_fall",
+      "name": "event:fuzhou_fall",
+      "scenes": [
+        "fuzhou"
+      ],
+      "scene_names": [
+        "fuzhou"
+      ],
+      "total": 4,
+      "gap_count": 2,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 2,
+        "朝鲜": 2,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "FZ002",
+            "predicate": "陷落年份",
+            "value_text": "天启元年 (1621), 后金别将阿敏南下取复州, 与盖州、海州同月陷",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "fuzhou"
+          },
+          {
+            "id": "FZ010",
+            "predicate": "陷落具体月日",
+            "value_text": "复州陷落的具体月日与明军反应, 三方记载略有出入, 未见精确到日",
+            "source": "qing_taizu_shilu",
+            "layer": "gap",
+            "scene": "fuzhou"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "FZ003",
+            "predicate": "东江袭扰",
+            "value_text": "毛文龙据皮岛创东江镇, 浮海袭扰复州、金州沿海, 牵制后金南翼",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "fuzhou"
+          },
+          {
+            "id": "FZ011",
+            "predicate": "东江活动频率",
+            "value_text": "东江镇在复州/金州一带的实际活动频率与战果, 明清两方评价悬殊（明方夸大、清方淡化）",
+            "source": "chao_xiandai",
+            "layer": "gap",
+            "scene": "fuzhou"
+          }
+        ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:fuzhou_founded",
+      "name": "event:fuzhou_founded",
+      "scenes": [
+        "fuzhou"
+      ],
+      "scene_names": [
+        "fuzhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "FZ001",
+            "predicate": "建置年",
+            "value_text": "洪武十四年 (1381) 始置复州卫, 隶辽东都司",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "fuzhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:gaizhou_founded",
       "name": "event:gaizhou_founded",
       "scenes": [
@@ -746,6 +996,82 @@
             "source": "mingshi",
             "layer": "record",
             "scene": "gaizhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:guangning_founded",
+      "name": "event:guangning_founded",
+      "scenes": [
+        "guangning"
+      ],
+      "scene_names": [
+        "guangning"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G001",
+            "predicate": "建置年",
+            "value_text": "洪武二十五年 (1392) 始置广宁卫, 隶辽东都司",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "guangning"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:guangning_zhen",
+      "name": "event:guangning_zhen",
+      "scenes": [
+        "guangning"
+      ],
+      "scene_names": [
+        "guangning"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G002",
+            "predicate": "军政地位",
+            "value_text": "正统十四年 (1449) 土木之变后, 辽东镇总兵移驻广宁, 成为辽西军政中心",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "guangning"
           }
         ],
         "清方": [],
@@ -860,6 +1186,281 @@
             "source": "mingshi",
             "layer": "record",
             "scene": "liaoyang"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jinzhou_founded",
+      "name": "event:jinzhou_founded",
+      "scenes": [
+        "jinzhou"
+      ],
+      "scene_names": [
+        "jinzhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "J001",
+            "predicate": "建置年",
+            "value_text": "洪武二十四年 (1391) 始置广宁中屯卫于锦州, 后定名锦州卫",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "jinzhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jinzhouwei_fall",
+      "name": "event:jinzhouwei_fall",
+      "scenes": [
+        "jinzhouwei"
+      ],
+      "scene_names": [
+        "jinzhouwei"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "JN002",
+            "predicate": "陷落年份",
+            "value_text": "天启元年 (1621), 后金取辽南, 金州卫陷",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "jinzhouwei"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jinzhouwei_founded",
+      "name": "event:jinzhouwei_founded",
+      "scenes": [
+        "jinzhouwei"
+      ],
+      "scene_names": [
+        "jinzhouwei"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "JN001",
+            "predicate": "建置年",
+            "value_text": "洪武十年 (1377) 始置金州卫, 辖旅顺口, 扼辽东半岛南端海运",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "jinzhouwei"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningjin_dajie",
+      "name": "event:ningjin_dajie",
+      "scenes": [
+        "ningyuan"
+      ],
+      "scene_names": [
+        "ningyuan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "N003",
+            "predicate": "宁锦大捷",
+            "value_text": "天启七年 (1627), 皇太极攻宁远、锦州不利, 明军凭城固守获胜, 清退",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "ningyuan"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningyuan_battle",
+      "name": "event:ningyuan_battle",
+      "scenes": [
+        "ningyuan"
+      ],
+      "scene_names": [
+        "ningyuan"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 1,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "N010",
+            "predicate": "努尔哈赤死因",
+            "value_text": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "ningyuan"
+          }
+        ],
+        "清方": [
+          {
+            "id": "N002",
+            "predicate": "宁远之战结果",
+            "value_text": "天命十一年 (1626), 努尔哈赤攻宁远, 袁崇焕凭坚城与红夷大炮拒守, 努尔哈赤受创, 七月死",
+            "source": "qing_taizong_shilu",
+            "layer": "record",
+            "scene": "ningyuan"
+          }
+        ],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningyuan_founded",
+      "name": "event:ningyuan_founded",
+      "scenes": [
+        "ningyuan"
+      ],
+      "scene_names": [
+        "ningyuan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "N001",
+            "predicate": "建置年",
+            "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "ningyuan"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningyuan_wusangui",
+      "name": "event:ningyuan_wusangui",
+      "scenes": [
+        "ningyuan"
+      ],
+      "scene_names": [
+        "ningyuan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "N004",
+            "predicate": "吴三桂引清入关",
+            "value_text": "崇祯十七年 (1644), 李自成破北京, 吴三桂弃宁远入关, 引清兵入关击李自成",
+            "source": "chongzhen_shilu",
+            "layer": "record",
+            "scene": "ningyuan"
           }
         ],
         "清方": [],
@@ -1218,6 +1819,78 @@
       }
     },
     {
+      "subject": "event:guangning_fall",
+      "name": "event:guangning_fall",
+      "scenes": [
+        "guangning"
+      ],
+      "scene_names": [
+        "guangning"
+      ],
+      "total": 5,
+      "gap_count": 2,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.4,
+      "resonance": 0.4,
+      "party_counts": {
+        "明方": 3,
+        "清方": 0,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G003",
+            "predicate": "陷落年份",
+            "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "guangning"
+          },
+          {
+            "id": "G010",
+            "predicate": "明军兵力部署",
+            "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "guangning"
+          },
+          {
+            "id": "G011",
+            "predicate": "经抚责任归属",
+            "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "guangning"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [
+          {
+            "id": "G004",
+            "predicate": "朝鲜视角",
+            "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "guangning"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "G005",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "guangning"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:gaizhou_fall",
       "name": "event:gaizhou_fall",
       "scenes": [
@@ -1492,6 +2165,79 @@
           }
         ],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jinzhou_songjin",
+      "name": "event:jinzhou_songjin",
+      "scenes": [
+        "jinzhou"
+      ],
+      "scene_names": [
+        "jinzhou"
+      ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.8,
+      "party_counts": {
+        "明方": 2,
+        "清方": 1,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "J002",
+            "predicate": "清围锦州",
+            "value_text": "崇祯十四年 (1641), 清军围锦州, 祖大寿被围于城",
+            "source": "chongzhen_shilu",
+            "layer": "record",
+            "scene": "jinzhou"
+          },
+          {
+            "id": "J010",
+            "predicate": "明军总兵力",
+            "value_text": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+            "source": "chongzhen_shilu",
+            "layer": "gap",
+            "scene": "jinzhou"
+          }
+        ],
+        "清方": [
+          {
+            "id": "J003",
+            "predicate": "松锦决战结果",
+            "value_text": "崇祯十五年 (1642) 松山决战, 洪承畴兵败被俘, 祖大寿以锦州降, 明辽西机动兵力丧尽",
+            "source": "qing_taizong_shilu",
+            "layer": "record",
+            "scene": "jinzhou"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "J004",
+            "predicate": "朝鲜视角",
+            "value_text": "朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "jinzhou"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "J005",
+            "predicate": "战略后果",
+            "value_text": "学界主流：松锦之败使明丧失辽西全部机动兵力, 清军自此直叩山海关, 入关只是时间问题",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "jinzhou"
+          }
+        ]
       }
     },
     {

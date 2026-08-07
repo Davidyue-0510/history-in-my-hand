@@ -1,0 +1,51 @@
+{
+ "places": [
+  {
+   "id": "guangning",
+   "name": "广宁城",
+   "lon": 121.78,
+   "lat": 41.62,
+   "type": "city",
+   "modern": "辽宁北镇市",
+   "note": "明广宁卫/辽东镇驻地，辽西最后重心"
+  },
+  {
+   "id": "guangning_wei",
+   "name": "广宁卫",
+   "lon": 121.78,
+   "lat": 41.62,
+   "type": "wei",
+   "modern": "辽宁北镇市",
+   "note": "洪武二十五年置，隶辽东都司"
+  },
+  {
+   "id": "shanhaiguan",
+   "name": "山海关",
+   "lon": 119.75,
+   "lat": 40.0,
+   "type": "guan",
+   "modern": "河北秦皇岛",
+   "note": "辽西走廊终端，明蓟镇门户"
+  },
+  {
+   "id": "shenyang_cheng",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.81,
+   "type": "city",
+   "modern": "辽宁沈阳市",
+   "note": "1621 陷后辽东重心西迁广宁"
+  },
+  {
+   "id": "yanshan",
+   "name": "燕山",
+   "lon": 119.5,
+   "lat": 40.4,
+   "type": "mountain",
+   "modern": "冀辽交界",
+   "note": "辽西走廊北缘"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

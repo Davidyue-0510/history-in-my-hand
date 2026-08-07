@@ -174,12 +174,12 @@
 
 <div class="wrap">
   <div class="stats">
-    <div class="stat"><div class="n">9</div><div class="l">历史切片</div></div>
+    <div class="stat"><div class="n">14</div><div class="l">历史切片</div></div>
     <div class="stat"><div class="n">5</div><div class="l">地理分区</div></div>
-    <div class="stat"><div class="n">15</div><div class="l">一手/二手史料</div></div>
-    <div class="stat"><div class="n">175</div><div class="l">已录入断言</div></div>
-    <div class="stat"><div class="n">19</div><div class="l">可认领研究线索</div></div>
-    <div class="stat"><div class="n">19</div><div class="l">已标史料缺口</div></div>
+    <div class="stat"><div class="n">17</div><div class="l">一手/二手史料</div></div>
+    <div class="stat"><div class="n">208</div><div class="l">已录入断言</div></div>
+    <div class="stat"><div class="n">29</div><div class="l">可认领研究线索</div></div>
+    <div class="stat"><div class="n">29</div><div class="l">已标史料缺口</div></div>
   </div>
 </div>
 
@@ -194,7 +194,7 @@
       </div>
       <div class="card">
         <h3><span class="dot" style="background:var(--rust)"></span>缺口是一等公民</h3>
-        <p>「我们不知道」和「我们知道」同等重要。每条史料缺口都写成可认领的「研究线索」，挂给合作者去补——这正是本页下方 19 条线索的来历。</p>
+        <p>「我们不知道」和「我们知道」同等重要。每条史料缺口都写成可认领的「研究线索」，挂给合作者去补——这正是本页下方 29 条线索的来历。</p>
       </div>
       <div class="card">
         <h3><span class="dot" style="background:var(--moss)"></span>断言驱动，不裁判</h3>
@@ -232,7 +232,7 @@
     <div class="health">
       <span class="pill">lint 0 error / 0 warning</span>
       <span class="pill">不变量测试全绿</span>
-      <span class="pill">9 切片可构建</span>
+      <span class="pill">14 切片可构建</span>
       <span class="muted">守门三道闸门全在 <code>tools/gates.py</code> 一键跑。</span>
     </div>
   </div>
@@ -243,7 +243,7 @@
     <div class="leads-note">
       <div>
         <h2>当前可认领的研究线索</h2>
-        <p class="sec-sub">从各切片的「史料缺口」自动汇总。认领一条，补上史料与算法，它就从「缺口」变成「断言」。下列数据实时读取 <code>data/leads.json</code>。</p>
+        <p class="sec-sub">从各切片的「史料缺口」自动汇总。认领一条，补上史料与算法，它就从「缺口」变成「断言」。下列数据实时读取 <code>data/leads.json</code>。本轮新增辽西（广宁·锦州·宁远）与辽南（复州·金州）5 个切片，把走廊从辽东核心区一路延伸到山海关——这 5 县位于共享地形网格之外，县页与枢纽地图会显式标注「地形网格外」，绝不伪造高程。</p>
       </div>
     </div>
     <div id="leads" class="leads-grid"><div class="leads-err">正在加载线索…</div></div>
@@ -280,7 +280,7 @@
         <div class="body">
           <div class="blk"><div class="h">你能贡献什么</div><div class="c">审视 <code>tools/*.py</code> 编译链与 <code>county.js</code> 前端引擎，给出重构/性能/可维护性评估，不必亲自写。</div></div>
           <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/build.py</code> · <code>tools/lint.py</code> · <code>tools/resonance.py</code> · <code>demo/county.js</code></div></div>
-          <div class="blk"><div class="h">第一个上手任务</div><div class="c">写一份「九切片加载时长 & 单文件体积」基准报告，指出最该先优化的 1–2 处。</div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">写一份「十四切片加载时长 & 单文件体积」基准报告，指出最该先优化的 1–2 处。</div></div>
           <span class="diff mid">难度 ★★☆</span>
           <a class="more" href="../CONTRIBUTORS.md#eng">详细指引 →</a>
         </div>
@@ -344,7 +344,7 @@ python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pr
 
 <footer>
   <div class="wrap">
-    <p><b>小菜狗的文明图景</b> · 断言驱动的明清之际东北历史沙盒 · v0.5.1</p>
+    <p><b>小菜狗的文明图景</b> · 断言驱动的明清之际东北历史沙盒 · v0.6</p>
     <p>历史由多种因素导致，某种意义上其实是必然——本项目的全部意义，是让「多种因素」可以被一条条看见、被一条条质疑。</p>
     <p>许可与署名见仓库 README。欢迎拉你的朋友入局。</p>
   </div>

@@ -1,0 +1,40 @@
+{
+ "events": [
+  {
+   "id": "ningyuan_founded",
+   "subject": "event:ningyuan_founded",
+   "year": 1428,
+   "era": "宣德三年",
+   "title": "宁远卫建置",
+   "kind": "建置",
+   "text": "明置宁远卫，隶辽东都司，为辽西最南大城。"
+  },
+  {
+   "id": "ningyuan_battle",
+   "subject": "event:ningyuan_battle",
+   "year": 1626,
+   "era": "天命十一年",
+   "title": "宁远之战",
+   "kind": "战事",
+   "text": "努尔哈赤率军攻宁远，袁崇焕凭坚城与红夷大炮拒守，努尔哈赤受创，七月死。明清对峙转折点。"
+  },
+  {
+   "id": "ningjin_dajie",
+   "subject": "event:ningjin_dajie",
+   "year": 1627,
+   "era": "天启七年",
+   "title": "宁锦大捷",
+   "kind": "战事",
+   "text": "皇太极攻宁远、锦州不利，明军凭城固守获胜，清退。"
+  },
+  {
+   "id": "ningyuan_wusangui",
+   "subject": "event:ningyuan_wusangui",
+   "year": 1644,
+   "era": "崇祯十七年",
+   "title": "吴三桂引清入关",
+   "kind": "战事",
+   "text": "李自成破北京，吴三桂弃宁远入关，引清兵入关击李自成。关宁锦防线终结。"
+  }
+ ]
+}

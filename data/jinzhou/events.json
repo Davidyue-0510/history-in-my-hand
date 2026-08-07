@@ -1,0 +1,22 @@
+{
+ "events": [
+  {
+   "id": "jinzhou_founded",
+   "subject": "event:jinzhou_founded",
+   "year": 1391,
+   "era": "洪武二十四年",
+   "title": "锦州卫建置",
+   "kind": "建置",
+   "text": "明置广宁中屯卫于锦州，后定名锦州卫，隶辽东都司。"
+  },
+  {
+   "id": "jinzhou_songjin",
+   "subject": "event:jinzhou_songjin",
+   "year": 1642,
+   "era": "崇祯十四至十五年",
+   "title": "松锦之战",
+   "kind": "战事",
+   "text": "崇祯十四年清围锦州，十五年松山决战，洪承畴兵败被俘，祖大寿以锦州降。明辽西机动兵力丧尽，清兵直叩山海关。"
+  }
+ ]
+}

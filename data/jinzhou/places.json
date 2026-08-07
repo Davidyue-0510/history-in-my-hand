@@ -1,0 +1,51 @@
+{
+ "places": [
+  {
+   "id": "jinzhou_cheng",
+   "name": "锦州城",
+   "lon": 121.13,
+   "lat": 41.1,
+   "type": "city",
+   "modern": "辽宁锦州市",
+   "note": "明锦州卫，辽西走廊咽喉"
+  },
+  {
+   "id": "songshan",
+   "name": "松山",
+   "lon": 121.18,
+   "lat": 41.05,
+   "type": "battle",
+   "modern": "辽宁锦州市南",
+   "note": "松锦决战主战场，洪承畴兵败处"
+  },
+  {
+   "id": "ningyuan",
+   "name": "宁远",
+   "lon": 120.7,
+   "lat": 40.62,
+   "type": "city",
+   "modern": "辽宁兴城市",
+   "note": "锦州南向卫城，关宁锦防线"
+  },
+  {
+   "id": "guangning",
+   "name": "广宁",
+   "lon": 121.78,
+   "lat": 41.62,
+   "type": "city",
+   "modern": "辽宁北镇市",
+   "note": "锦州北向卫城"
+  },
+  {
+   "id": "shanhaiguan",
+   "name": "山海关",
+   "lon": 119.75,
+   "lat": 40.0,
+   "type": "guan",
+   "modern": "河北秦皇岛",
+   "note": "辽西走廊终端"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,40 @@
+{
+ "persons": [
+  {
+   "id": "yuan_chonghuan",
+   "name": "袁崇焕",
+   "role": "蓟辽督师",
+   "note": "宁远/宁锦拒清，后冤死；「五年平辽」"
+  },
+  {
+   "id": "zu_dashou",
+   "name": "祖大寿",
+   "role": "宁远副总兵",
+   "note": "袁崇焕部下，后两度降清"
+  },
+  {
+   "id": "huangtaiji",
+   "name": "皇太极",
+   "role": "清太宗",
+   "note": "1627 宁锦、1629 己巳入塞"
+  },
+  {
+   "id": "nuerhaci",
+   "name": "努尔哈赤",
+   "role": "后金大汗",
+   "note": "1626 攻宁远受伤，七月死"
+  },
+  {
+   "id": "wu_sangui",
+   "name": "吴三桂",
+   "role": "宁远总兵",
+   "note": "崇祯末镇宁远，1644 引清兵入关"
+  },
+  {
+   "id": "zhao_shuaijiao",
+   "name": "赵率教",
+   "role": "明总兵",
+   "note": "宁锦之战守锦州，战死"
+  }
+ ]
+}

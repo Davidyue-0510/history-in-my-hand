@@ -1,9 +1,9 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 9 个切片
+// 权威数据源：data/scenes.json 注册的 14 个切片
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 9 个切片",
+  "slice": "multi-scene · 14 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
  },
  "regions": [
@@ -42,7 +42,12 @@ window.SANDBOX_DATA = {
   "shenyang",
   "fushun",
   "haizhou",
-  "gaizhou"
+  "gaizhou",
+  "fuzhou",
+  "jinzhouwei",
+  "guangning",
+  "jinzhou",
+  "ningyuan"
  ],
  "vocab": {
   "parties": [
@@ -14866,23 +14871,1614 @@ window.SANDBOX_DATA = {
      "label": "盖州—复州驿道"
     }
    ]
+  },
+  "fuzhou": {
+   "meta": {
+    "kind": "county",
+    "region": "liaonan",
+    "title": "复州",
+    "dossier_label": "复州",
+    "subtitle": "辽南陆桥 · 复州卫 · 天启元年 (1621) 陷落",
+    "primary_place": "fuzhou_cheng",
+    "dossier_event": "event:fuzhou_fall",
+    "back": "枢纽",
+    "lead": "复州扼辽南陆桥：洪武十四年 (1381) 置复州卫，南通金州、北连盖州。天启元年 (1621) 后金取之，与海州、盖州同月陷。毛文龙东江镇据皮岛，浮海袭扰复州/金州沿海，成为明军海上反攻的跳板。",
+    "parties_note": "复州之陷与东江镇袭扰，明清两方评价悬殊：明方夸大东江战果，清方淡化。系统不裁决，只并列。",
+    "subject_names": {
+     "event:fuzhou_founded": "复州卫建置",
+     "event:fuzhou_fall": "复州陷落",
+     "place:fuzhou_cheng": "复州城",
+     "person:mao_wenlong": "毛文龙",
+     "person:amin": "阿敏",
+     "person:nuerhaci": "努尔哈赤"
+    },
+    "page": "county.html?scene=fuzhou",
+    "key": "fuzhou"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "fuzhou_cheng",
+     "name": "复州城",
+     "lon": 121.97,
+     "lat": 39.63,
+     "type": "city",
+     "modern": "辽宁瓦房店市",
+     "note": "明复州卫，辽南陆桥",
+     "elev": 38
+    },
+    {
+     "id": "wau_fangdian",
+     "name": "瓦房店",
+     "lon": 121.97,
+     "lat": 39.63,
+     "type": "city",
+     "modern": "辽宁瓦房店市",
+     "note": "今复州所在",
+     "elev": 38
+    },
+    {
+     "id": "gaizhou_cheng",
+     "name": "盖州",
+     "lon": 121.97,
+     "lat": 40.4,
+     "type": "city",
+     "modern": "辽宁盖州市",
+     "note": "复州北向卫城",
+     "elev": 0
+    },
+    {
+     "id": "jinzhouwei_cheng",
+     "name": "金州",
+     "lon": 121.7,
+     "lat": 39.09,
+     "type": "city",
+     "modern": "辽宁大连金州区",
+     "note": "复州南向，半岛南端",
+     "elev": 38
+    },
+    {
+     "id": "pidao",
+     "name": "皮岛",
+     "lon": 124.5,
+     "lat": 39.95,
+     "type": "island",
+     "modern": "朝鲜椴岛/皮岛",
+     "note": "毛文龙东江镇基地，袭扰辽南",
+     "elev": 25
+    }
+   ],
+   "persons": [
+    {
+     "id": "mao_wenlong",
+     "name": "毛文龙",
+     "role": "东江总兵",
+     "note": "据皮岛创东江镇，袭扰复州/金州沿海"
+    },
+    {
+     "id": "amin",
+     "name": "阿敏",
+     "role": "后金二贝勒",
+     "note": "1621 南下取复州/盖州"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1621 取辽南"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "FZ001",
+     "subject": "event:fuzhou_founded",
+     "predicate": "建置年",
+     "value_text": "洪武十四年 (1381) 始置复州卫, 隶辽东都司",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武十四年",
+     "place": "fuzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武十四年, 置复州卫。",
+     "note": "复州扼辽南陆桥, 南通金州、北连盖州。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "FZ002",
+     "subject": "event:fuzhou_fall",
+     "predicate": "陷落年份",
+     "value_text": "天启元年 (1621), 后金别将阿敏南下取复州, 与盖州、海州同月陷",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年",
+     "place": "fuzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天命六年, 取复州、盖州。",
+     "note": "复州陷与辽沈之陷同属 1621 三月战役序列。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "FZ003",
+     "subject": "event:fuzhou_fall",
+     "predicate": "东江袭扰",
+     "value_text": "毛文龙据皮岛创东江镇, 浮海袭扰复州、金州沿海, 牵制后金南翼",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "天启元年起",
+     "place": "pidao",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "毛文龙据皮岛, 时出兵袭复州、金州沿海。",
+     "note": "东江镇活动使后金南向海运与朝鲜通道长期受扰。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "FZ004",
+     "subject": "place:fuzhou_cheng",
+     "predicate": "战略地位",
+     "value_text": "学界综合：复州是辽南与辽西的陆桥, 1621 后成为明军海上反攻的跳板",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "1621 后",
+     "place": "fuzhou_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "复州居辽南陆桥, 为东江镇袭辽之跳板。",
+     "note": "与金州同为辽南门户, 海陆皆要。",
+     "_party": "学界"
+    },
+    {
+     "id": "FZ010",
+     "subject": "event:fuzhou_fall",
+     "predicate": "陷落具体月日",
+     "value_text": "复州陷落的具体月日与明军反应, 三方记载略有出入, 未见精确到日",
+     "source": "qing_taizu_shilu",
+     "layer": "gap",
+     "era": "天启元年",
+     "place": "fuzhou_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《清太祖实录》天命六年 / 《明熹宗实录》天启元年 / 朝鲜《李朝实录》",
+      "skills": [
+       "古文"
+      ],
+      "accept": "核定复州陷落的具体月日与明方弃守过程",
+      "effort": "1-2 周"
+     },
+     "_party": "清修官史"
+    },
+    {
+     "id": "FZ011",
+     "subject": "event:fuzhou_fall",
+     "predicate": "东江活动频率",
+     "value_text": "东江镇在复州/金州一带的实际活动频率与战果, 明清两方评价悬殊（明方夸大、清方淡化）",
+     "source": "chao_xiandai",
+     "layer": "gap",
+     "era": "1621–1629",
+     "place": "pidao",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》毛文龙屡疏 / 《清太祖实录》/ 朝鲜《李朝实录》皮岛往来",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "量化东江镇对复州/金州袭击的次数与成果, 对比双方叙事",
+      "effort": "2-3 周"
+     },
+     "_party": "朝鲜官方"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "FZ010",
+    "FZ011"
+   ],
+   "events": [
+    {
+     "id": "fuzhou_founded",
+     "subject": "event:fuzhou_founded",
+     "year": 1381,
+     "era": "洪武十四年",
+     "title": "复州卫建置",
+     "kind": "建置",
+     "text": "明置复州卫，隶辽东都司，扼辽南陆桥。"
+    },
+    {
+     "id": "fuzhou_fall",
+     "subject": "event:fuzhou_fall",
+     "year": 1621,
+     "era": "天启元年",
+     "title": "复州陷落",
+     "kind": "战事",
+     "text": "沈阳辽阳既陷，后金别将阿敏南下取复州，与盖州、海州同月陷。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "fuzhou_cheng",
+     "to": "gaizhou_cheng",
+     "type": "admin",
+     "label": "复州—盖州"
+    },
+    {
+     "from": "fuzhou_cheng",
+     "to": "jinzhouwei_cheng",
+     "type": "admin",
+     "label": "复州—金州"
+    },
+    {
+     "from": "fuzhou_cheng",
+     "to": "pidao",
+     "type": "mashi",
+     "label": "复州—皮岛（东江袭扰）"
+    }
+   ]
+  },
+  "jinzhouwei": {
+   "meta": {
+    "kind": "county",
+    "region": "liaonan",
+    "title": "金州",
+    "dossier_label": "金州",
+    "subtitle": "辽东半岛南端 · 金州卫 · 天启元年 (1621) 陷落",
+    "primary_place": "jinzhouwei_cheng",
+    "dossier_event": "event:jinzhouwei_fall",
+    "back": "枢纽",
+    "lead": "金州卫扼辽东半岛南端：洪武十年 (1377) 置，辖旅顺口，海运通登莱、朝鲜。天启元年 (1621) 后金取之，旋为毛文龙东江镇一度收复。辽南门户由此易手。",
+    "parties_note": "金州海运通道与东江镇收复的次数，明清两方记载悬殊。系统不裁决，只并列。",
+    "subject_names": {
+     "event:jinzhouwei_founded": "金州卫建置",
+     "event:jinzhouwei_fall": "金州陷落",
+     "event:jinzhouwei_mao": "东江收复金州",
+     "place:jinzhouwei_cheng": "金州城",
+     "person:mao_wenlong": "毛文龙",
+     "person:amin": "阿敏",
+     "person:nuerhaci": "努尔哈赤"
+    },
+    "page": "county.html?scene=jinzhouwei",
+    "key": "jinzhouwei"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "qing_taizu_shilu",
+     "title": "清太祖实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天命",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "jinzhouwei_cheng",
+     "name": "金州城",
+     "lon": 121.7,
+     "lat": 39.09,
+     "type": "city",
+     "modern": "辽宁大连金州区",
+     "note": "明金州卫，辖旅顺口，半岛南端",
+     "elev": 38
+    },
+    {
+     "id": "lvshun",
+     "name": "旅顺口",
+     "lon": 121.25,
+     "lat": 38.8,
+     "type": "guan",
+     "modern": "辽宁大连旅顺口",
+     "note": "金州卫辖，海运要塞",
+     "elev": 38
+    },
+    {
+     "id": "fuzhou_cheng",
+     "name": "复州",
+     "lon": 121.97,
+     "lat": 39.63,
+     "type": "city",
+     "modern": "辽宁瓦房店市",
+     "note": "金州北向卫城",
+     "elev": 38
+    },
+    {
+     "id": "pidao",
+     "name": "皮岛",
+     "lon": 124.5,
+     "lat": 39.95,
+     "type": "island",
+     "modern": "朝鲜椴岛",
+     "note": "毛文龙东江镇，一度收复金州/旅顺",
+     "elev": 25
+    },
+    {
+     "id": "denglai",
+     "name": "登莱",
+     "lon": 120.5,
+     "lat": 37.5,
+     "type": "city",
+     "modern": "山东蓬莱",
+     "note": "金州海运对岸，明援辽通道",
+     "elev": 38
+    }
+   ],
+   "persons": [
+    {
+     "id": "mao_wenlong",
+     "name": "毛文龙",
+     "role": "东江总兵",
+     "note": "据皮岛，1621–1622 一度收复金州、旅顺"
+    },
+    {
+     "id": "amin",
+     "name": "阿敏",
+     "role": "后金二贝勒",
+     "note": "1621 取金州"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1621 取辽南"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "JN001",
+     "subject": "event:jinzhouwei_founded",
+     "predicate": "建置年",
+     "value_text": "洪武十年 (1377) 始置金州卫, 辖旅顺口, 扼辽东半岛南端海运",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武十年",
+     "place": "jinzhouwei_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武十年, 置金州卫, 辖旅顺口。",
+     "note": "金州卫为辽东最南卫所, 海运通登莱、朝鲜。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "JN002",
+     "subject": "event:jinzhouwei_fall",
+     "predicate": "陷落年份",
+     "value_text": "天启元年 (1621), 后金取辽南, 金州卫陷",
+     "source": "qing_taizu_shilu",
+     "layer": "record",
+     "era": "天启元年",
+     "place": "jinzhouwei_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天命六年, 取金州。",
+     "note": "金州陷后, 辽东半岛南端尽入后金, 唯沿海为东江镇所扰。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "JN003",
+     "subject": "event:jinzhouwei_mao",
+     "predicate": "东江收复",
+     "value_text": "毛文龙据皮岛/铁山, 1621–1622 一度收复金州、旅顺, 牵制后金南翼",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "天启元年至二年",
+     "place": "pidao",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "毛文龙渡海, 复金州、旅顺, 旋复为后金所夺。",
+     "note": "东江镇收复多为袭取, 未能久守, 但其牵制作用明方与清方评价悬殊。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "JN004",
+     "subject": "place:jinzhouwei_cheng",
+     "predicate": "战略地位",
+     "value_text": "学界综合：金州卫扼辽东半岛南端, 海运通登莱、朝鲜, 是辽南门户与明援辽通道",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "明",
+     "place": "jinzhouwei_cheng",
+     "confidence": 0.88,
+     "quote_status": "paraphrase_unverified",
+     "quote": "金州卫控半岛南端, 海运通登莱, 援辽之喉。",
+     "note": "海运通道使金州在 1621 后仍具战略价值。",
+     "_party": "学界"
+    },
+    {
+     "id": "JN010",
+     "subject": "place:jinzhouwei_cheng",
+     "predicate": "海运通道",
+     "value_text": "金州卫经登莱至朝鲜的海运与互市具体路线、频次, 三方记载不详",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "明",
+     "place": "denglai",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明实录》海运逐条 / 《登州府志》/ 朝鲜《通文馆志》辽东往来",
+      "skills": [
+       "古文",
+       "GIS"
+      ],
+      "accept": "复原金州—登莱—朝鲜海运路线与年频次, 标注史料缺口",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "JN011",
+     "subject": "event:jinzhouwei_mao",
+     "predicate": "东江复金次数",
+     "value_text": "毛文龙收复金州/旅顺的次数与持续时间, 明清两方记载悬殊",
+     "source": "chao_xiandai",
+     "layer": "gap",
+     "era": "1621–1622",
+     "place": "jinzhouwei_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》毛文龙疏 / 《清太祖实录》/ 朝鲜使臣皮岛见闻",
+      "skills": [
+       "古文"
+      ],
+      "accept": "核定东江镇收复金州/旅顺的次数与每次持续时间",
+      "effort": "1-2 周"
+     },
+     "_party": "朝鲜官方"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "JN010",
+    "JN011"
+   ],
+   "events": [
+    {
+     "id": "jinzhouwei_founded",
+     "subject": "event:jinzhouwei_founded",
+     "year": 1377,
+     "era": "洪武十年",
+     "title": "金州卫建置",
+     "kind": "建置",
+     "text": "明置金州卫，辖旅顺口，扼辽东半岛南端海运。"
+    },
+    {
+     "id": "jinzhouwei_fall",
+     "subject": "event:jinzhouwei_fall",
+     "year": 1621,
+     "era": "天启元年",
+     "title": "金州陷落",
+     "kind": "战事",
+     "text": "后金取辽南，金州卫陷；旋为毛文龙东江镇一度收复。"
+    },
+    {
+     "id": "jinzhouwei_mao",
+     "subject": "event:jinzhouwei_mao",
+     "year": 1621,
+     "era": "天启元年至二年",
+     "title": "东江收复金州",
+     "kind": "战事",
+     "text": "毛文龙据皮岛/铁山，渡海袭扰，一度收复金州、旅顺，牵制后金南翼。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "jinzhouwei_cheng",
+     "to": "fuzhou_cheng",
+     "type": "admin",
+     "label": "金州—复州"
+    },
+    {
+     "from": "jinzhouwei_cheng",
+     "to": "pidao",
+     "type": "mashi",
+     "label": "金州—皮岛（东江）"
+    },
+    {
+     "from": "jinzhouwei_cheng",
+     "to": "denglai",
+     "type": "mashi",
+     "label": "金州—登莱（海运）"
+    }
+   ]
+  },
+  "guangning": {
+   "meta": {
+    "kind": "county",
+    "region": "liaoxi",
+    "title": "广宁",
+    "dossier_label": "广宁",
+    "subtitle": "辽西军政中心 · 广宁卫 · 天启二年 (1622) 陷落",
+    "primary_place": "guangning",
+    "dossier_event": "event:guangning_fall",
+    "back": "枢纽",
+    "lead": "广宁是辽西军政中心：洪武二十五年 (1392) 置广宁卫，正统后辽东镇移驻。天启二年 (1622) 努尔哈赤取广宁，王化贞弃城、孙得功降、熊廷弼护辽西百万难民入山海关。明尽失辽西。经抚不和是直接原因。",
+    "parties_note": "广宁之失主因经略熊廷弼（主守）与巡抚王化贞（主战）经抚不和，明、清、现代三方对责任归属侧重不同。系统不裁决，只并列。",
+    "subject_names": {
+     "event:guangning_founded": "广宁卫建置",
+     "event:guangning_zhen": "辽东镇移驻广宁",
+     "event:guangning_fall": "广宁陷落",
+     "place:guangning": "广宁城",
+     "person:xiongtingbing": "熊廷弼",
+     "person:wang_huazhen": "王化贞",
+     "person:sun_degong": "孙得功",
+     "person:nuerhaci": "努尔哈赤"
+    },
+    "page": "county.html?scene=guangning",
+    "key": "guangning"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    }
+   ],
+   "places": [
+    {
+     "id": "guangning",
+     "name": "广宁城",
+     "lon": 121.78,
+     "lat": 41.62,
+     "type": "city",
+     "modern": "辽宁北镇市",
+     "note": "明广宁卫/辽东镇驻地，辽西最后重心",
+     "elev": 14
+    },
+    {
+     "id": "guangning_wei",
+     "name": "广宁卫",
+     "lon": 121.78,
+     "lat": 41.62,
+     "type": "wei",
+     "modern": "辽宁北镇市",
+     "note": "洪武二十五年置，隶辽东都司",
+     "elev": 14
+    },
+    {
+     "id": "shanhaiguan",
+     "name": "山海关",
+     "lon": 119.75,
+     "lat": 40.0,
+     "type": "guan",
+     "modern": "河北秦皇岛",
+     "note": "辽西走廊终端，明蓟镇门户",
+     "elev": 38
+    },
+    {
+     "id": "shenyang_cheng",
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.81,
+     "type": "city",
+     "modern": "辽宁沈阳市",
+     "note": "1621 陷后辽东重心西迁广宁",
+     "elev": 50
+    },
+    {
+     "id": "yanshan",
+     "name": "燕山",
+     "lon": 119.5,
+     "lat": 40.4,
+     "type": "mountain",
+     "modern": "冀辽交界",
+     "note": "辽西走廊北缘",
+     "elev": 0
+    }
+   ],
+   "persons": [
+    {
+     "id": "xiongtingbing",
+     "name": "熊廷弼",
+     "role": "辽东经略",
+     "note": "主守，与王化贞经抚不和，广宁陷后受诛"
+    },
+    {
+     "id": "wang_huazhen",
+     "name": "王化贞",
+     "role": "辽东巡抚",
+     "note": "主战，广宁之战弃城逃"
+    },
+    {
+     "id": "sun_degong",
+     "name": "孙得功",
+     "role": "广宁将",
+     "note": "广宁陷前通敌，开门迎后金"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1622 年正月取广宁"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "G001",
+     "subject": "event:guangning_founded",
+     "predicate": "建置年",
+     "value_text": "洪武二十五年 (1392) 始置广宁卫, 隶辽东都司",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武二十五年",
+     "place": "guangning",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十五年, 置广宁卫, 隶辽东都司。",
+     "note": "广宁在辽代即为显州, 明初降为卫, 正统后辽东镇移驻。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "G002",
+     "subject": "event:guangning_zhen",
+     "predicate": "军政地位",
+     "value_text": "正统十四年 (1449) 土木之变后, 辽东镇总兵移驻广宁, 成为辽西军政中心",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "正统十四年",
+     "place": "guangning",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "土木之变, 辽东镇总兵移驻广宁, 节制辽西诸卫。",
+     "note": "广宁由此成为明在辽西的最高军事支点。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "G003",
+     "subject": "event:guangning_fall",
+     "predicate": "陷落年份",
+     "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启二年正月",
+     "place": "guangning",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天启二年正月, 后金取广宁, 王化贞弃城走, 孙得功降, 熊廷弼以辽西民众入关。",
+     "note": "经略熊廷弼主守、巡抚王化贞主战, 经抚不和是广宁速陷的直接原因。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "G004",
+     "subject": "event:guangning_fall",
+     "predicate": "朝鲜视角",
+     "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "天启二年",
+     "place": "guangning",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "广宁已陷, 辽西尽失, 朝议沿江增戍, 以防清兵渡。",
+     "note": "朝鲜对广宁之陷的反应, 与明方记载相互印证明已无辽西屏障。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "G005",
+     "subject": "event:guangning_fall",
+     "predicate": "败因主流说",
+     "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "天启二年",
+     "place": "guangning",
+     "confidence": 0.88,
+     "quote_status": "paraphrase_unverified",
+     "quote": "广宁之败, 经抚异议, 事权不一, 非战之罪也。",
+     "note": "亦有学者强调明辽东总体战略空虚, 广宁孤城难守, 不应全归咎于人争。",
+     "_party": "学界"
+    },
+    {
+     "id": "G010",
+     "subject": "event:guangning_fall",
+     "predicate": "明军兵力部署",
+     "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天启二年正月",
+     "place": "guangning",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》天启二年正月至二月逐卷 / 《明史·熊廷弼王化贞传》/ 清初《满文老档》天命七年",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出广宁陷落时明军在辽西的估计兵力区间与主要部署, 注明分歧来源",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "G011",
+     "subject": "event:guangning_fall",
+     "predicate": "经抚责任归属",
+     "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天启二年",
+     "place": "guangning",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明史·熊廷弼传》《明史·王化贞传》/ 《明熹宗实录》/ 现代研究 (如 李光涛 相关考)",
+      "skills": [
+       "古文"
+      ],
+      "accept": "整理至少两方史料对经抚责任的不同表述, 标出史料政治立场的影响",
+      "effort": "1-2 周"
+     },
+     "_party": "清修·明臣"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "G010",
+    "G011"
+   ],
+   "events": [
+    {
+     "id": "guangning_founded",
+     "subject": "event:guangning_founded",
+     "year": 1392,
+     "era": "洪武二十五年",
+     "title": "广宁卫建置",
+     "kind": "建置",
+     "text": "明置广宁卫，隶辽东都司，为辽西重镇。"
+    },
+    {
+     "id": "guangning_zhen",
+     "subject": "event:guangning_zhen",
+     "year": 1449,
+     "era": "正统十四年",
+     "title": "辽东镇移驻广宁",
+     "kind": "行政",
+     "text": "土木之变后辽东镇总兵移驻广宁，成为辽西军政中心。"
+    },
+    {
+     "id": "guangning_fall",
+     "subject": "event:guangning_fall",
+     "year": 1622,
+     "era": "天启二年正月",
+     "title": "广宁陷落",
+     "kind": "战事",
+     "text": "沈阳辽阳既陷，明经略熊廷弼、巡抚王化贞经抚不和；努尔哈赤取广宁，王化贞弃城，孙得功降，熊廷弼护辽西百万难民入山海关。明尽失辽西。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "guangning",
+     "to": "shenyang_cheng",
+     "type": "admin",
+     "label": "广宁—沈阳（辽西—辽东）"
+    },
+    {
+     "from": "guangning",
+     "to": "shanhaiguan",
+     "type": "admin",
+     "label": "广宁—山海关（辽西走廊）"
+    }
+   ]
+  },
+  "jinzhou": {
+   "meta": {
+    "kind": "county",
+    "region": "liaoxi",
+    "title": "锦州",
+    "dossier_label": "锦州",
+    "subtitle": "辽西锁钥 · 松锦之战 (1641–1642) · 祖大寿降",
+    "primary_place": "jinzhou_cheng",
+    "dossier_event": "event:jinzhou_songjin",
+    "back": "枢纽",
+    "lead": "锦州是辽西锁钥：洪武二十四年 (1391) 置锦州卫。崇祯十四至十五年 (1641–1642) 松锦之战，洪承畴兵败被俘、祖大寿以锦州降，明辽西机动兵力丧尽，清兵直叩山海关。此役与萨尔浒、辽沈之陷并列为明亡三大节点。",
+    "parties_note": "松锦之战明军总兵力与祖大寿两度降清，明、清、现代三方叙事侧重不同（明方记洪承畴「殉难」，清方记其被擒后降）。系统不裁决，只并列。",
+    "subject_names": {
+     "event:jinzhou_founded": "锦州卫建置",
+     "event:jinzhou_songjin": "松锦之战",
+     "place:jinzhou_cheng": "锦州城",
+     "person:zu_dashou": "祖大寿",
+     "person:hong_chengchou": "洪承畴",
+     "person:huangtaiji": "皇太极",
+     "person:duoergun": "多尔衮"
+    },
+    "page": "county.html?scene=jinzhou",
+    "key": "jinzhou"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "chao_xiandai",
+     "title": "李朝实录·宣祖/光海日记",
+     "party": "朝鲜官方",
+     "stance_label": "第三国当代官修",
+     "distance_label": "成书当代至 100 年内，与明清并行",
+     "color": "#2E5C8F",
+     "compiler": "李朝史官",
+     "period": "万历",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    },
+    {
+     "id": "chongzhen_shilu",
+     "title": "明崇祯实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1645，距崇祯事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "崇祯朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "qing_taizong_shilu",
+     "title": "清太宗实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1644 后屡经改窜，距皇太极事数年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天聪/崇德",
+     "stance": "official_enemy"
+    }
+   ],
+   "places": [
+    {
+     "id": "jinzhou_cheng",
+     "name": "锦州城",
+     "lon": 121.13,
+     "lat": 41.1,
+     "type": "city",
+     "modern": "辽宁锦州市",
+     "note": "明锦州卫，辽西走廊咽喉",
+     "elev": 15
+    },
+    {
+     "id": "songshan",
+     "name": "松山",
+     "lon": 121.18,
+     "lat": 41.05,
+     "type": "battle",
+     "modern": "辽宁锦州市南",
+     "note": "松锦决战主战场，洪承畴兵败处",
+     "elev": 10
+    },
+    {
+     "id": "ningyuan",
+     "name": "宁远",
+     "lon": 120.7,
+     "lat": 40.62,
+     "type": "city",
+     "modern": "辽宁兴城市",
+     "note": "锦州南向卫城，关宁锦防线",
+     "elev": 0
+    },
+    {
+     "id": "guangning",
+     "name": "广宁",
+     "lon": 121.78,
+     "lat": 41.62,
+     "type": "city",
+     "modern": "辽宁北镇市",
+     "note": "锦州北向卫城",
+     "elev": 14
+    },
+    {
+     "id": "shanhaiguan",
+     "name": "山海关",
+     "lon": 119.75,
+     "lat": 40.0,
+     "type": "guan",
+     "modern": "河北秦皇岛",
+     "note": "辽西走廊终端",
+     "elev": 38
+    }
+   ],
+   "persons": [
+    {
+     "id": "zu_dashou",
+     "name": "祖大寿",
+     "role": "明总兵",
+     "note": "两度被围降清（大凌河/锦州），吴三桂舅父"
+    },
+    {
+     "id": "hong_chengchou",
+     "name": "洪承畴",
+     "role": "蓟辽总督",
+     "note": "松锦之战明军主帅，兵败被俘，后降清"
+    },
+    {
+     "id": "huangtaiji",
+     "name": "皇太极",
+     "role": "清太宗",
+     "note": "1641–1642 围锦州、松山，灭明辽西机动兵力"
+    },
+    {
+     "id": "duoergun",
+     "name": "多尔衮",
+     "role": "清睿亲王",
+     "note": "松锦之战前线统帅"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "J001",
+     "subject": "event:jinzhou_founded",
+     "predicate": "建置年",
+     "value_text": "洪武二十四年 (1391) 始置广宁中屯卫于锦州, 后定名锦州卫",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "洪武二十四年",
+     "place": "jinzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "洪武二十四年, 置广宁中屯卫于锦州。",
+     "note": "锦州为辽西走廊咽喉, 北卫广宁、南卫宁远。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "J002",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "清围锦州",
+     "value_text": "崇祯十四年 (1641), 清军围锦州, 祖大寿被围于城",
+     "source": "chongzhen_shilu",
+     "layer": "record",
+     "era": "崇祯十四年",
+     "place": "jinzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "崇祯十四年, 大清兵围锦州, 祖大寿御于城。",
+     "note": "松锦之战序幕, 明调洪承畴总督蓟辽援锦。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "J003",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "松锦决战结果",
+     "value_text": "崇祯十五年 (1642) 松山决战, 洪承畴兵败被俘, 祖大寿以锦州降, 明辽西机动兵力丧尽",
+     "source": "qing_taizong_shilu",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "十五年, 松山破, 洪承畴被擒, 祖大寿以锦州降。",
+     "note": "明方《崇祯实录》记洪承畴「殉难」, 清方记其被擒后降, 立场派生明显分歧。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "J004",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "朝鲜视角",
+     "value_text": "朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西",
+     "source": "chao_xiandai",
+     "layer": "record",
+     "era": "崇祯十五年至十六年",
+     "place": "jinzhou_cheng",
+     "confidence": 0.7,
+     "quote_status": "paraphrase_unverified",
+     "quote": "清兵围锦州, 明援大溃, 辽西旦夕且不保。",
+     "note": "朝鲜作为第三方, 对清军战力增长的观察较客观。",
+     "_party": "朝鲜官方"
+    },
+    {
+     "id": "J005",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "战略后果",
+     "value_text": "学界主流：松锦之败使明丧失辽西全部机动兵力, 清军自此直叩山海关, 入关只是时间问题",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "1642",
+     "place": "jinzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "松锦既败, 蓟辽无可用之兵, 关门单弱。",
+     "note": "此役与 1619 萨尔浒、1621 辽沈之陷并列为明亡三大节点。",
+     "_party": "学界"
+    },
+    {
+     "id": "J010",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "明军总兵力",
+     "value_text": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+     "source": "chongzhen_shilu",
+     "layer": "gap",
+     "era": "崇祯十四年至十五年",
+     "place": "songshan",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明崇祯实录》崇祯十四年/十五年逐月 / 《清太宗实录》崇德六年至七年 / 《明史·洪承畴传》",
+      "skills": [
+       "古文",
+       "统计"
+      ],
+      "accept": "给出松锦之战明军总兵力的估计区间, 列明各说的出处与采信理由",
+      "effort": "2-3 周"
+     },
+     "_party": "明廷官方"
+    },
+    {
+     "id": "J011",
+     "subject": "person:zu_dashou",
+     "predicate": "两度降清",
+     "value_text": "祖大寿两度被围降清（大凌河 1631、锦州 1642）, 其心理与处境三方记载侧重不同",
+     "source": "qing_taizong_shilu",
+     "layer": "gap",
+     "era": "1631 / 1642",
+     "place": "jinzhou_cheng",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《清太宗实录》天聪五年、崇德七年 / 《明史·祖大寿传》/ 朝鲜使臣见闻录",
+      "skills": [
+       "古文"
+      ],
+      "accept": "对比祖大寿两次降清的史料记述, 分析其作为明将降清的特殊处境",
+      "effort": "2-3 周"
+     },
+     "_party": "清修官史"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "J010",
+    "J011"
+   ],
+   "events": [
+    {
+     "id": "jinzhou_founded",
+     "subject": "event:jinzhou_founded",
+     "year": 1391,
+     "era": "洪武二十四年",
+     "title": "锦州卫建置",
+     "kind": "建置",
+     "text": "明置广宁中屯卫于锦州，后定名锦州卫，隶辽东都司。"
+    },
+    {
+     "id": "jinzhou_songjin",
+     "subject": "event:jinzhou_songjin",
+     "year": 1642,
+     "era": "崇祯十四至十五年",
+     "title": "松锦之战",
+     "kind": "战事",
+     "text": "崇祯十四年清围锦州，十五年松山决战，洪承畴兵败被俘，祖大寿以锦州降。明辽西机动兵力丧尽，清兵直叩山海关。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "jinzhou_cheng",
+     "to": "ningyuan",
+     "type": "admin",
+     "label": "锦州—宁远（关宁锦防线）"
+    },
+    {
+     "from": "jinzhou_cheng",
+     "to": "guangning",
+     "type": "admin",
+     "label": "锦州—广宁"
+    },
+    {
+     "from": "jinzhou_cheng",
+     "to": "shanhaiguan",
+     "type": "admin",
+     "label": "锦州—山海关"
+    }
+   ]
+  },
+  "ningyuan": {
+   "meta": {
+    "kind": "county",
+    "region": "liaoxi",
+    "title": "宁远",
+    "dossier_label": "宁远",
+    "subtitle": "关宁锦防线核心 · 宁远之战 (1626) · 袁崇焕",
+    "primary_place": "ningyuan",
+    "dossier_event": "event:ningyuan_battle",
+    "back": "枢纽",
+    "lead": "宁远是关宁锦防线核心：宣德三年 (1428) 置宁远卫。1626 宁远之战努尔哈赤受创而死，1627 宁锦大捷，1644 吴三桂弃宁远引清入关。明清对峙二十年的枢纽在此。",
+    "parties_note": "宁远之战努尔哈赤死因、袁崇焕「五年平辽」部署，明、清、现代三方侧重不同（明方记「炮毙虏首」，清方讳言死因）。系统不裁决，只并列。",
+    "subject_names": {
+     "event:ningyuan_founded": "宁远卫建置",
+     "event:ningyuan_battle": "宁远之战",
+     "event:ningjin_dajie": "宁锦大捷",
+     "event:ningyuan_wusangui": "吴三桂引清入关",
+     "place:ningyuan": "宁远城",
+     "person:yuan_chonghuan": "袁崇焕",
+     "person:zu_dashou": "祖大寿",
+     "person:huangtaiji": "皇太极",
+     "person:nuerhaci": "努尔哈赤",
+     "person:wu_sangui": "吴三桂",
+     "person:zhao_shuaijiao": "赵率教"
+    },
+    "page": "county.html?scene=ningyuan",
+    "key": "ningyuan"
+   },
+   "sources": [
+    {
+     "id": "mingshi",
+     "title": "明史",
+     "party": "清修·明臣",
+     "stance_label": "后朝官修",
+     "distance_label": "成书 1739，距事件约 120 年",
+     "color": "#8C6239",
+     "compiler": "张廷玉等",
+     "period": "清修",
+     "stance": "official_later_dynasty"
+    },
+    {
+     "id": "ming_xizong_shilu",
+     "title": "明熹宗实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1630，距天启事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "天启朝",
+     "stance": "official_contemporary"
+    },
+    {
+     "id": "modern",
+     "title": "现代史学综述",
+     "party": "学界",
+     "stance_label": "学界考证",
+     "distance_label": "距事件 300 年以上，综合诸家",
+     "color": "#2E7D8F",
+     "compiler": "多家学术著作",
+     "period": "现代",
+     "stance": "scholarship"
+    },
+    {
+     "id": "qing_taizong_shilu",
+     "title": "清太宗实录",
+     "party": "清修官史",
+     "stance_label": "敌方官修",
+     "distance_label": "初纂 1644 后屡经改窜，距皇太极事数年",
+     "color": "#7B5C3E",
+     "compiler": "清实录馆",
+     "period": "天聪/崇德",
+     "stance": "official_enemy"
+    },
+    {
+     "id": "chongzhen_shilu",
+     "title": "明崇祯实录",
+     "party": "明廷官方",
+     "stance_label": "本朝官修·当代",
+     "distance_label": "成书约 1645，距崇祯事约数年",
+     "color": "#A0473A",
+     "compiler": "明史馆",
+     "period": "崇祯朝",
+     "stance": "official_contemporary"
+    }
+   ],
+   "places": [
+    {
+     "id": "ningyuan",
+     "name": "宁远城",
+     "lon": 120.7,
+     "lat": 40.62,
+     "type": "city",
+     "modern": "辽宁兴城市",
+     "note": "明宁远卫，关宁锦防线核心",
+     "elev": 0
+    },
+    {
+     "id": "juehua",
+     "name": "觉华岛",
+     "lon": 120.55,
+     "lat": 40.48,
+     "type": "island",
+     "modern": "辽宁兴城菊花岛",
+     "note": "明辽东囤粮岛，宁远之战被焚",
+     "elev": 0
+    },
+    {
+     "id": "jinzhou_cheng",
+     "name": "锦州",
+     "lon": 121.13,
+     "lat": 41.1,
+     "type": "city",
+     "modern": "辽宁锦州市",
+     "note": "宁远北向卫城",
+     "elev": 15
+    },
+    {
+     "id": "shanhaiguan",
+     "name": "山海关",
+     "lon": 119.75,
+     "lat": 40.0,
+     "type": "guan",
+     "modern": "河北秦皇岛",
+     "note": "宁远南向，走廊终端",
+     "elev": 38
+    }
+   ],
+   "persons": [
+    {
+     "id": "yuan_chonghuan",
+     "name": "袁崇焕",
+     "role": "蓟辽督师",
+     "note": "宁远/宁锦拒清，后冤死；「五年平辽」"
+    },
+    {
+     "id": "zu_dashou",
+     "name": "祖大寿",
+     "role": "宁远副总兵",
+     "note": "袁崇焕部下，后两度降清"
+    },
+    {
+     "id": "huangtaiji",
+     "name": "皇太极",
+     "role": "清太宗",
+     "note": "1627 宁锦、1629 己巳入塞"
+    },
+    {
+     "id": "nuerhaci",
+     "name": "努尔哈赤",
+     "role": "后金大汗",
+     "note": "1626 攻宁远受伤，七月死"
+    },
+    {
+     "id": "wu_sangui",
+     "name": "吴三桂",
+     "role": "宁远总兵",
+     "note": "崇祯末镇宁远，1644 引清兵入关"
+    },
+    {
+     "id": "zhao_shuaijiao",
+     "name": "赵率教",
+     "role": "明总兵",
+     "note": "宁锦之战守锦州，战死"
+    }
+   ],
+   "assertions": [
+    {
+     "id": "N001",
+     "subject": "event:ningyuan_founded",
+     "predicate": "建置年",
+     "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
+     "source": "mingshi",
+     "layer": "record",
+     "era": "宣德三年",
+     "place": "ningyuan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "宣德三年, 置宁远卫。",
+     "note": "宁远为辽西最南大城, 关宁锦防线核心。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "N002",
+     "subject": "event:ningyuan_battle",
+     "predicate": "宁远之战结果",
+     "value_text": "天命十一年 (1626), 努尔哈赤攻宁远, 袁崇焕凭坚城与红夷大炮拒守, 努尔哈赤受创, 七月死",
+     "source": "qing_taizong_shilu",
+     "layer": "record",
+     "era": "天命十一年",
+     "place": "ningyuan",
+     "confidence": 0.95,
+     "quote_status": "paraphrase_unverified",
+     "quote": "上攻宁远, 袁崇焕凭城固守, 炮伤甚, 七月崩。",
+     "note": "明方记「炮毙虏首」, 清方讳言死因, 立场派生分歧明显。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "N003",
+     "subject": "event:ningjin_dajie",
+     "predicate": "宁锦大捷",
+     "value_text": "天启七年 (1627), 皇太极攻宁远、锦州不利, 明军凭城固守获胜, 清退",
+     "source": "ming_xizong_shilu",
+     "layer": "record",
+     "era": "天启七年",
+     "place": "ningyuan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "天启七年, 清攻宁远、锦州, 袁崇焕御之, 清兵退。",
+     "note": "宁锦之捷是袁崇焕督师期间对清的第二次大胜。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "N004",
+     "subject": "event:ningyuan_wusangui",
+     "predicate": "吴三桂引清入关",
+     "value_text": "崇祯十七年 (1644), 李自成破北京, 吴三桂弃宁远入关, 引清兵入关击李自成",
+     "source": "chongzhen_shilu",
+     "layer": "record",
+     "era": "崇祯十七年",
+     "place": "ningyuan",
+     "confidence": 0.92,
+     "quote_status": "paraphrase_unverified",
+     "quote": "崇祯十七年, 李自成陷北京, 吴三桂弃宁远, 引清兵入关。",
+     "note": "关宁锦防线至此终结, 清兵由此入主中原。",
+     "_party": "明廷官方"
+    },
+    {
+     "id": "N005",
+     "subject": "place:ningyuan",
+     "predicate": "战略地位",
+     "value_text": "学界主流：宁远是明清对峙二十年的枢纽, 关宁锦防线核心, 袁崇焕据此牵制后金南下",
+     "source": "modern",
+     "layer": "scholarship",
+     "era": "1626–1644",
+     "place": "ningyuan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "宁远一城, 牵制后金者二十年。",
+     "note": "亦有观点认为明长期被动据城, 丧失野战主动权, 防线本质是消耗。",
+     "_party": "学界"
+    },
+    {
+     "id": "N010",
+     "subject": "event:ningyuan_battle",
+     "predicate": "努尔哈赤死因",
+     "value_text": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+     "source": "mingshi",
+     "layer": "gap",
+     "era": "天命十一年",
+     "place": "ningyuan",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明史·太祖本纪》/ 《清太祖实录》天命十一年 / 朝鲜《李朝实录》/ 现代医学史考证",
+      "skills": [
+       "古文",
+       "医学史"
+      ],
+      "accept": "梳理努尔哈赤死因的各家说法与史料依据, 给出最可能结论及存疑点",
+      "effort": "2-3 周"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "N011",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "五年平辽部署",
+     "value_text": "袁崇焕「五年平辽」的实际军事部署与朝中掣肘, 三方史料侧重不同",
+     "source": "ming_xizong_shilu",
+     "layer": "gap",
+     "era": "天启至崇祯",
+     "place": "ningyuan",
+     "confidence": 0,
+     "quote_status": "paraphrase_unverified",
+     "quote": "",
+     "lead": {
+      "where": "《明熹宗实录》《崇祯长编》/ 《明史·袁崇焕传》/ 朝鲜使臣报告",
+      "skills": [
+       "古文"
+      ],
+      "accept": "整理袁崇焕经略辽西的具体措施与所受制约, 分析其成败",
+      "effort": "2-4 周"
+     },
+     "_party": "明廷官方"
+    }
+   ],
+   "conflicts": [],
+   "gaps": [
+    "N010",
+    "N011"
+   ],
+   "events": [
+    {
+     "id": "ningyuan_founded",
+     "subject": "event:ningyuan_founded",
+     "year": 1428,
+     "era": "宣德三年",
+     "title": "宁远卫建置",
+     "kind": "建置",
+     "text": "明置宁远卫，隶辽东都司，为辽西最南大城。"
+    },
+    {
+     "id": "ningyuan_battle",
+     "subject": "event:ningyuan_battle",
+     "year": 1626,
+     "era": "天命十一年",
+     "title": "宁远之战",
+     "kind": "战事",
+     "text": "努尔哈赤率军攻宁远，袁崇焕凭坚城与红夷大炮拒守，努尔哈赤受创，七月死。明清对峙转折点。"
+    },
+    {
+     "id": "ningjin_dajie",
+     "subject": "event:ningjin_dajie",
+     "year": 1627,
+     "era": "天启七年",
+     "title": "宁锦大捷",
+     "kind": "战事",
+     "text": "皇太极攻宁远、锦州不利，明军凭城固守获胜，清退。"
+    },
+    {
+     "id": "ningyuan_wusangui",
+     "subject": "event:ningyuan_wusangui",
+     "year": 1644,
+     "era": "崇祯十七年",
+     "title": "吴三桂引清入关",
+     "kind": "战事",
+     "text": "李自成破北京，吴三桂弃宁远入关，引清兵入关击李自成。关宁锦防线终结。"
+    }
+   ],
+   "edges": [
+    {
+     "from": "ningyuan",
+     "to": "jinzhou_cheng",
+     "type": "admin",
+     "label": "宁远—锦州"
+    },
+    {
+     "from": "ningyuan",
+     "to": "shanhaiguan",
+     "type": "admin",
+     "label": "宁远—山海关"
+    }
+   ]
   }
  },
  "corridors": [
   {
    "id": "liaobei_corridor",
    "name": "辽北走廊",
-   "subtitle": "开原—铁岭—沈阳 · 万历末最先崩塌的一段",
+   "subtitle": "开原—铁岭—沈阳—广宁 · 万历末最先崩塌的一段",
    "color": "#A0473A",
    "nodes": [
     "kaiyuan_cheng",
     "tieling_cheng",
     "shenyang_cheng",
+    "guangning",
     "fushun",
     "hetuala"
    ],
-   "key_era": "万历四十七年 (1619) 至天启元年 (1621)",
-   "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
+   "key_era": "万历四十七年 (1619) 至天启二年 (1622)",
+   "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。广宁 1622 年亦陷, 明尽失辽西。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
   },
   {
    "id": "liaodong_corridor",
@@ -14912,6 +16508,20 @@ window.SANDBOX_DATA = {
    ],
    "key_era": "16 世纪中期至万历四十七年 (1619)",
    "summary": "明廷通过开原马市羁縻叶赫等扈伦四部, 同时与建州女真 (赫图阿拉) 互市。万历四十七年叶赫亡, 开原随即陷落, 此走廊消失。"
+  },
+  {
+   "id": "liaoxi_corridor",
+   "name": "辽西走廊",
+   "subtitle": "广宁—锦州—宁远—山海关 · 明清对峙二十余年的正面",
+   "color": "#5A7DA8",
+   "nodes": [
+    "guangning",
+    "jinzhou_cheng",
+    "ningyuan",
+    "shanhaiguan"
+   ],
+   "key_era": "天启二年 (1622) 至崇祯十七年 (1644)",
+   "summary": "广宁 1622 陷后明尽失辽西, 仅余关宁锦防线 (宁远—锦州—山海关) 与清对峙二十年。1626 宁远之战、1627 宁锦大捷、1641 松锦之战祖大寿降, 1644 吴三桂弃宁远引清入关。此走廊是明清易代的最终舞台。"
   }
  ],
  "leads": {
@@ -14952,6 +16562,37 @@ window.SANDBOX_DATA = {
     "_src_line": 8
    },
    {
+    "id": "FZ010",
+    "scene": "fuzhou",
+    "subject": "event:fuzhou_fall",
+    "title": "复州陷落的具体月日与明军反应, 三方记载略有出入, 未见精确到日",
+    "missing": "古文",
+    "where": "《清太祖实录》天命六年 / 《明熹宗实录》天启元年 / 朝鲜《李朝实录》",
+    "skills": [
+     "古文"
+    ],
+    "accept": "核定复州陷落的具体月日与明方弃守过程",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 5
+   },
+   {
+    "id": "FZ011",
+    "scene": "fuzhou",
+    "subject": "event:fuzhou_fall",
+    "title": "东江镇在复州/金州一带的实际活动频率与战果, 明清两方评价悬殊（明方夸大、清方淡化）",
+    "missing": "古文 / 统计",
+    "where": "《明熹宗实录》毛文龙屡疏 / 《清太祖实录》/ 朝鲜《李朝实录》皮岛往来",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "量化东江镇对复州/金州袭击的次数与成果, 对比双方叙事",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
     "id": "G010",
     "scene": "gaizhou",
     "subject": "event:gaizhou_fall",
@@ -14981,6 +16622,37 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 6
+   },
+   {
+    "id": "G010",
+    "scene": "guangning",
+    "subject": "event:guangning_fall",
+    "title": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+    "missing": "古文 / 统计",
+    "where": "《明熹宗实录》天启二年正月至二月逐卷 / 《明史·熊廷弼王化贞传》/ 清初《满文老档》天命七年",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出广宁陷落时明军在辽西的估计兵力区间与主要部署, 注明分歧来源",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "G011",
+    "scene": "guangning",
+    "subject": "event:guangning_fall",
+    "title": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+    "missing": "古文",
+    "where": "《明史·熊廷弼传》《明史·王化贞传》/ 《明熹宗实录》/ 现代研究 (如 李光涛 相关考)",
+    "skills": [
+     "古文"
+    ],
+    "accept": "整理至少两方史料对经抚责任的不同表述, 标出史料政治立场的影响",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 7
    },
    {
     "id": "H010",
@@ -15013,6 +16685,68 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 7
+   },
+   {
+    "id": "J010",
+    "scene": "jinzhou",
+    "subject": "event:jinzhou_songjin",
+    "title": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+    "missing": "古文 / 统计",
+    "where": "《明崇祯实录》崇祯十四年/十五年逐月 / 《清太宗实录》崇德六年至七年 / 《明史·洪承畴传》",
+    "skills": [
+     "古文",
+     "统计"
+    ],
+    "accept": "给出松锦之战明军总兵力的估计区间, 列明各说的出处与采信理由",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "J011",
+    "scene": "jinzhou",
+    "subject": "person:zu_dashou",
+    "title": "祖大寿两度被围降清（大凌河 1631、锦州 1642）, 其心理与处境三方记载侧重不同",
+    "missing": "古文",
+    "where": "《清太宗实录》天聪五年、崇德七年 / 《明史·祖大寿传》/ 朝鲜使臣见闻录",
+    "skills": [
+     "古文"
+    ],
+    "accept": "对比祖大寿两次降清的史料记述, 分析其作为明将降清的特殊处境",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
+    "id": "JN010",
+    "scene": "jinzhouwei",
+    "subject": "place:jinzhouwei_cheng",
+    "title": "金州卫经登莱至朝鲜的海运与互市具体路线、频次, 三方记载不详",
+    "missing": "古文 / GIS",
+    "where": "《明实录》海运逐条 / 《登州府志》/ 朝鲜《通文馆志》辽东往来",
+    "skills": [
+     "古文",
+     "GIS"
+    ],
+    "accept": "复原金州—登莱—朝鲜海运路线与年频次, 标注史料缺口",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 5
+   },
+   {
+    "id": "JN011",
+    "scene": "jinzhouwei",
+    "subject": "event:jinzhouwei_mao",
+    "title": "毛文龙收复金州/旅顺的次数与持续时间, 明清两方记载悬殊",
+    "missing": "古文",
+    "where": "《明熹宗实录》毛文龙疏 / 《清太祖实录》/ 朝鲜使臣皮岛见闻",
+    "skills": [
+     "古文"
+    ],
+    "accept": "核定东江镇收复金州/旅顺的次数与每次持续时间",
+    "effort": "1-2 周",
+    "issue_url": null,
+    "_src_line": 6
    },
    {
     "id": "K025",
@@ -15094,6 +16828,37 @@ window.SANDBOX_DATA = {
     "effort": "1 周",
     "issue_url": null,
     "_src_line": 20
+   },
+   {
+    "id": "N010",
+    "scene": "ningyuan",
+    "subject": "event:ningyuan_battle",
+    "title": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+    "missing": "古文 / 医学史",
+    "where": "《明史·太祖本纪》/ 《清太祖实录》天命十一年 / 朝鲜《李朝实录》/ 现代医学史考证",
+    "skills": [
+     "古文",
+     "医学史"
+    ],
+    "accept": "梳理努尔哈赤死因的各家说法与史料依据, 给出最可能结论及存疑点",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "N011",
+    "scene": "ningyuan",
+    "subject": "person:yuan_chonghuan",
+    "title": "袁崇焕「五年平辽」的实际军事部署与朝中掣肘, 三方史料侧重不同",
+    "missing": "古文",
+    "where": "《明熹宗实录》《崇祯长编》/ 《明史·袁崇焕传》/ 朝鲜使臣报告",
+    "skills": [
+     "古文"
+    ],
+    "accept": "整理袁崇焕经略辽西的具体措施与所受制约, 分析其成败",
+    "effort": "2-4 周",
+    "issue_url": null,
+    "_src_line": 7
    },
    {
     "id": "A092",
@@ -15238,10 +17003,15 @@ window.SANDBOX_DATA = {
    ],
    "scenes": [
     "fushun",
+    "fuzhou",
     "gaizhou",
+    "guangning",
     "haizhou",
+    "jinzhou",
+    "jinzhouwei",
     "kaiyuan",
     "liaoyang",
+    "ningyuan",
     "sarhu",
     "shenyang",
     "tieling",
@@ -15270,6 +17040,26 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.75
    },
    {
+    "scene": "fuzhou",
+    "name": "fuzhou",
+    "total": 6,
+    "layers": {
+     "record": 3,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 1,
+     "清方": 2,
+     "朝鲜": 2,
+     "综述考订": 1
+    },
+    "event_count": 2,
+    "avg_resonance": 0.333,
+    "best_event": "event:fuzhou_fall",
+    "best_resonance": 0.333
+   },
+   {
     "scene": "gaizhou",
     "name": "gaizhou",
     "total": 6,
@@ -15289,6 +17079,25 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.444
    },
    {
+    "scene": "guangning",
+    "name": "guangning",
+    "total": 7,
+    "layers": {
+     "record": 4,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 5,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.355,
+    "best_event": "event:guangning_fall",
+    "best_resonance": 0.4
+   },
+   {
     "scene": "haizhou",
     "name": "haizhou",
     "total": 7,
@@ -15306,6 +17115,46 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.472,
     "best_event": "event:haizhou_fall",
     "best_resonance": 0.75
+   },
+   {
+    "scene": "jinzhou",
+    "name": "jinzhou",
+    "total": 7,
+    "layers": {
+     "record": 4,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 3,
+     "清方": 2,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "event_count": 2,
+    "avg_resonance": 0.567,
+    "best_event": "event:jinzhou_songjin",
+    "best_resonance": 0.8
+   },
+   {
+    "scene": "jinzhouwei",
+    "name": "jinzhouwei",
+    "total": 6,
+    "layers": {
+     "record": 3,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 2,
+     "综述考订": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.278,
+    "best_event": "event:jinzhouwei_fall",
+    "best_resonance": 0.333
    },
    {
     "scene": "kaiyuan",
@@ -15345,6 +17194,25 @@ window.SANDBOX_DATA = {
     "event_count": 2,
     "avg_resonance": 0.23,
     "best_event": "浑河之战（1621）",
+    "best_resonance": 0.333
+   },
+   {
+    "scene": "ningyuan",
+    "name": "ningyuan",
+    "total": 7,
+    "layers": {
+     "record": 4,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "明方": 5,
+     "清方": 1,
+     "综述考订": 1
+    },
+    "event_count": 4,
+    "avg_resonance": 0.333,
+    "best_event": "event:ningjin_dajie",
     "best_resonance": 0.333
    },
    {
@@ -15637,6 +17505,52 @@ window.SANDBOX_DATA = {
      ],
      "清方": [],
      "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jinzhouwei_mao",
+    "name": "event:jinzhouwei_mao",
+    "scenes": [
+     "jinzhouwei"
+    ],
+    "scene_names": [
+     "jinzhouwei"
+    ],
+    "total": 2,
+    "gap_count": 1,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.167,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 2,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "JN003",
+       "predicate": "东江收复",
+       "value_text": "毛文龙据皮岛/铁山, 1621–1622 一度收复金州、旅顺, 牵制后金南翼",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "jinzhouwei"
+      },
+      {
+       "id": "JN011",
+       "predicate": "东江复金次数",
+       "value_text": "毛文龙收复金州/旅顺的次数与持续时间, 明清两方记载悬殊",
+       "source": "chao_xiandai",
+       "layer": "gap",
+       "scene": "jinzhouwei"
+      }
+     ],
      "综述考订": []
     }
    },
@@ -15945,6 +17859,107 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:fuzhou_fall",
+    "name": "event:fuzhou_fall",
+    "scenes": [
+     "fuzhou"
+    ],
+    "scene_names": [
+     "fuzhou"
+    ],
+    "total": 4,
+    "gap_count": 2,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 2,
+     "朝鲜": 2,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "FZ002",
+       "predicate": "陷落年份",
+       "value_text": "天启元年 (1621), 后金别将阿敏南下取复州, 与盖州、海州同月陷",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "fuzhou"
+      },
+      {
+       "id": "FZ010",
+       "predicate": "陷落具体月日",
+       "value_text": "复州陷落的具体月日与明军反应, 三方记载略有出入, 未见精确到日",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "fuzhou"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "FZ003",
+       "predicate": "东江袭扰",
+       "value_text": "毛文龙据皮岛创东江镇, 浮海袭扰复州、金州沿海, 牵制后金南翼",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "fuzhou"
+      },
+      {
+       "id": "FZ011",
+       "predicate": "东江活动频率",
+       "value_text": "东江镇在复州/金州一带的实际活动频率与战果, 明清两方评价悬殊（明方夸大、清方淡化）",
+       "source": "chao_xiandai",
+       "layer": "gap",
+       "scene": "fuzhou"
+      }
+     ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fuzhou_founded",
+    "name": "event:fuzhou_founded",
+    "scenes": [
+     "fuzhou"
+    ],
+    "scene_names": [
+     "fuzhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "FZ001",
+       "predicate": "建置年",
+       "value_text": "洪武十四年 (1381) 始置复州卫, 隶辽东都司",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fuzhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:gaizhou_founded",
     "name": "event:gaizhou_founded",
     "scenes": [
@@ -15975,6 +17990,82 @@ window.SANDBOX_DATA = {
        "source": "mingshi",
        "layer": "record",
        "scene": "gaizhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:guangning_founded",
+    "name": "event:guangning_founded",
+    "scenes": [
+     "guangning"
+    ],
+    "scene_names": [
+     "guangning"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G001",
+       "predicate": "建置年",
+       "value_text": "洪武二十五年 (1392) 始置广宁卫, 隶辽东都司",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:guangning_zhen",
+    "name": "event:guangning_zhen",
+    "scenes": [
+     "guangning"
+    ],
+    "scene_names": [
+     "guangning"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G002",
+       "predicate": "军政地位",
+       "value_text": "正统十四年 (1449) 土木之变后, 辽东镇总兵移驻广宁, 成为辽西军政中心",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "guangning"
       }
      ],
      "清方": [],
@@ -16089,6 +18180,281 @@ window.SANDBOX_DATA = {
        "source": "mingshi",
        "layer": "record",
        "scene": "liaoyang"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jinzhou_founded",
+    "name": "event:jinzhou_founded",
+    "scenes": [
+     "jinzhou"
+    ],
+    "scene_names": [
+     "jinzhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "J001",
+       "predicate": "建置年",
+       "value_text": "洪武二十四年 (1391) 始置广宁中屯卫于锦州, 后定名锦州卫",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "jinzhou"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jinzhouwei_fall",
+    "name": "event:jinzhouwei_fall",
+    "scenes": [
+     "jinzhouwei"
+    ],
+    "scene_names": [
+     "jinzhouwei"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "JN002",
+       "predicate": "陷落年份",
+       "value_text": "天启元年 (1621), 后金取辽南, 金州卫陷",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "jinzhouwei"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jinzhouwei_founded",
+    "name": "event:jinzhouwei_founded",
+    "scenes": [
+     "jinzhouwei"
+    ],
+    "scene_names": [
+     "jinzhouwei"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "JN001",
+       "predicate": "建置年",
+       "value_text": "洪武十年 (1377) 始置金州卫, 辖旅顺口, 扼辽东半岛南端海运",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "jinzhouwei"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ningjin_dajie",
+    "name": "event:ningjin_dajie",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N003",
+       "predicate": "宁锦大捷",
+       "value_text": "天启七年 (1627), 皇太极攻宁远、锦州不利, 明军凭城固守获胜, 清退",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ningyuan_battle",
+    "name": "event:ningyuan_battle",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 2,
+    "gap_count": 1,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N010",
+       "predicate": "努尔哈赤死因",
+       "value_text": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "ningyuan"
+      }
+     ],
+     "清方": [
+      {
+       "id": "N002",
+       "predicate": "宁远之战结果",
+       "value_text": "天命十一年 (1626), 努尔哈赤攻宁远, 袁崇焕凭坚城与红夷大炮拒守, 努尔哈赤受创, 七月死",
+       "source": "qing_taizong_shilu",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ningyuan_founded",
+    "name": "event:ningyuan_founded",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N001",
+       "predicate": "建置年",
+       "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ningyuan_wusangui",
+    "name": "event:ningyuan_wusangui",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N004",
+       "predicate": "吴三桂引清入关",
+       "value_text": "崇祯十七年 (1644), 李自成破北京, 吴三桂弃宁远入关, 引清兵入关击李自成",
+       "source": "chongzhen_shilu",
+       "layer": "record",
+       "scene": "ningyuan"
       }
      ],
      "清方": [],
@@ -16447,6 +18813,78 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:guangning_fall",
+    "name": "event:guangning_fall",
+    "scenes": [
+     "guangning"
+    ],
+    "scene_names": [
+     "guangning"
+    ],
+    "total": 5,
+    "gap_count": 2,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.4,
+    "resonance": 0.4,
+    "party_counts": {
+     "明方": 3,
+     "清方": 0,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G003",
+       "predicate": "陷落年份",
+       "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "G010",
+       "predicate": "明军兵力部署",
+       "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      },
+      {
+       "id": "G011",
+       "predicate": "经抚责任归属",
+       "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "G004",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "G005",
+       "predicate": "败因主流说",
+       "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "guangning"
+      }
+     ]
+    }
+   },
+   {
     "subject": "event:gaizhou_fall",
     "name": "event:gaizhou_fall",
     "scenes": [
@@ -16721,6 +19159,79 @@ window.SANDBOX_DATA = {
       }
      ],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jinzhou_songjin",
+    "name": "event:jinzhou_songjin",
+    "scenes": [
+     "jinzhou"
+    ],
+    "scene_names": [
+     "jinzhou"
+    ],
+    "total": 5,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.2,
+    "resonance": 0.8,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "J002",
+       "predicate": "清围锦州",
+       "value_text": "崇祯十四年 (1641), 清军围锦州, 祖大寿被围于城",
+       "source": "chongzhen_shilu",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "J010",
+       "predicate": "明军总兵力",
+       "value_text": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+       "source": "chongzhen_shilu",
+       "layer": "gap",
+       "scene": "jinzhou"
+      }
+     ],
+     "清方": [
+      {
+       "id": "J003",
+       "predicate": "松锦决战结果",
+       "value_text": "崇祯十五年 (1642) 松山决战, 洪承畴兵败被俘, 祖大寿以锦州降, 明辽西机动兵力丧尽",
+       "source": "qing_taizong_shilu",
+       "layer": "record",
+       "scene": "jinzhou"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "J004",
+       "predicate": "朝鲜视角",
+       "value_text": "朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "jinzhou"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "J005",
+       "predicate": "战略后果",
+       "value_text": "学界主流：松锦之败使明丧失辽西全部机动兵力, 清军自此直叩山海关, 入关只是时间问题",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "jinzhou"
+      }
+     ]
     }
    },
    {

@@ -12,6 +12,14 @@ import subprocess
 import sys
 import os
 
+# Windows 控制台默认 GBK，非 ASCII 符号（✓/✗/✅）会抛 UnicodeEncodeError。
+# 统一用 ASCII，且尽量强制 stdout 为 UTF-8，避免协作者在本机跑时崩溃。
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STEPS = [
@@ -33,12 +41,12 @@ def main():
         rc = subprocess.run(cmd, cwd=ROOT).returncode
         if rc != 0:
             ok = False
-            print("✗ %s 失败 (exit=%d)" % (name, rc))
+            print("[FAIL] %s (exit=%d)" % (name, rc))
             break
-        print("✓ %s 通过" % name)
+        print("[PASS] %s" % name)
 
-    print("\n" + ("全部闸门通过 ✅ 可以提交。" if ok
-                  else "有闸门未通过 ❌ 先修再提交。"))
+    print("\n" + ("全部闸门通过，可以提交。" if ok
+                  else "有闸门未通过，先修再提交。"))
     return 0 if ok else 1
 
 

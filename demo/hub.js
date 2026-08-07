@@ -54,10 +54,8 @@
     var v = E[iy * nx + ix];
     return v == null ? 0 : v;
   }
-  var lonMax = TG.lon0 + (nx - 1) * TG.step;
-  var latMax = TG.lat0 + (ny - 1) * TG.step;
-  function gx(lo) { return (lo - TG.lon0) / (lonMax - TG.lon0) * W; }
-  function gy(la) { return (latMax - la) / (latMax - TG.lat0) * H; }
+  // 动态边界的变量（在 scenes/order 就绪后于下方计算）
+  var lonMin, lonMax, latMin, latMax;
 
   // 切片中心点 pin 用到的数据（draw 内外都要引用）
   var scenes = SD.scenes || {};
@@ -66,6 +64,27 @@
   (SD.regions || []).forEach(function (r) { REGION_NAME[r.id] = r.name; });
   var REGION_NOTE = {};
   (SD.regions || []).forEach(function (r) { REGION_NOTE[r.id] = r.note; });
+
+  /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════
+   * 默认（v0.5）gx/gy 死绑地形网格，导致辽西/辽南（网格外）切片的
+   * pin 被裁出画布。现改为按「地形网格 ∪ 每切片主地点」算范围，
+   * 地形只在覆盖区绘制，网格外切片照常显示 pin —— 绝不伪造高程。 */
+  (function computeBounds() {
+    var lons = [TG.lon0, TG.lon0 + (nx - 1) * TG.step];
+    var lats = [TG.lat0, TG.lat0 + (ny - 1) * TG.step];
+    order.forEach(function (sk) {
+      var sc = scenes[sk]; if (!sc) return;
+      var m = sc.meta || {};
+      var p = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
+      if (p) { lons.push(p.lon); lats.push(p.lat); }
+    });
+    lonMin = Math.min.apply(null, lons); lonMax = Math.max.apply(null, lons);
+    latMin = Math.min.apply(null, lats); latMax = Math.max.apply(null, lats);
+    var padLon = (lonMax - lonMin) * 0.05 + 0.1, padLat = (latMax - latMin) * 0.05 + 0.1;
+    lonMin -= padLon; lonMax += padLon; latMin -= padLat; latMax += padLat;
+  })();
+  function gx(lo) { return (lo - lonMin) / (lonMax - lonMin) * W; }
+  function gy(la) { return (latMax - la) / (latMax - latMin) * H; }
   // 切片类型不再按 key 硬编码——meta.kind 来自 data/scenes.json
   function kindLabel(m) {
     return m.kind === 'battle' ? '事件切片 · battle slice' : '县级 LOD · county slice';
@@ -100,8 +119,8 @@
         var lo = TG.lon0 + ix * TG.step;
         var la = TG.lat0 + iy * TG.step;
         var px = gx(lo), py = gy(la);
-        var pw = (TG.step / (lonMax - TG.lon0)) * W * (stepX + 1);
-        var ph = (TG.step / (latMax - TG.lat0)) * H * (stepY + 1);
+        var pw = (TG.step / (lonMax - lonMin)) * W * (stepX + 1);
+        var ph = (TG.step / (latMax - latMin)) * H * (stepY + 1);
         ctx.fillStyle = 'rgb(' + Math.round(col[0] * f) + ',' +
                                 Math.round(col[1] * f) + ',' +
                                 Math.round(col[2] * f) + ')';

@@ -46,8 +46,26 @@
 
   document.title = (META.title || sceneKey) + ' · 小菜狗的文明图景';
 
-  /* ═══════════ 投影（与萨尔浒同框，开原在网格内）══════════ */
-  var LON0 = 122.0, LON1 = 126.8, LAT0 = 40.0, LAT1 = 43.3;
+  /* ═══════════ 投影 ═══════════
+   * 默认框 = 共享地形网格 (122–126.8°E / 40–43.3°N)，网格内县与萨尔浒同框。
+   * 若本切片主地点在网格外（辽西/辽南），投影扩展为「网格框 ∪ 本切片地点」，
+   * 使地点可见；地形层在离线时跳过绘制（见 drawTerrain / state.terrainOffGrid）。 */
+  var GRID_LON0 = 122.0, GRID_LON1 = 126.8, GRID_LAT0 = 40.0, GRID_LAT1 = 43.3;
+  var TG_BOX = TG ? { lon0: TG.lon0, lon1: TG.lon0 + (TG.nx - 1) * TG.step,
+                      lat0: TG.lat0, lat1: TG.lat0 + (TG.ny - 1) * TG.step } : null;
+  var PRIM = (D.places.filter(function (p) { return p.id === META.primary_place; })[0]) || D.places[0];
+  var OFF_GRID = !TG_BOX || !(PRIM.lon >= TG_BOX.lon0 && PRIM.lon <= TG_BOX.lon1 &&
+                              PRIM.lat >= TG_BOX.lat0 && PRIM.lat <= TG_BOX.lat1);
+  var LON0 = GRID_LON0, LON1 = GRID_LON1, LAT0 = GRID_LAT0, LAT1 = GRID_LAT1;
+  if (OFF_GRID) {
+    var mnLon = GRID_LON0, mxLon = GRID_LON1, mnLat = GRID_LAT0, mxLat = GRID_LAT1;
+    D.places.forEach(function (p) {
+      if (p.lon < mnLon) mnLon = p.lon; if (p.lon > mxLon) mxLon = p.lon;
+      if (p.lat < mnLat) mnLat = p.lat; if (p.lat > mxLat) mxLat = p.lat;
+    });
+    var padLon = (mxLon - mnLon) * 0.10 + 0.3, padLat = (mxLat - mnLat) * 0.10 + 0.3;
+    LON0 = mnLon - padLon; LON1 = mxLon + padLon; LAT0 = mnLat - padLat; LAT1 = mxLat + padLat;
+  }
   var W = 1000, H = 918;
   function px(lon) { return (lon - LON0) / (LON1 - LON0) * W; }
   function py(lat) { return (LAT1 - lat) / (LAT1 - LAT0) * H; }
@@ -56,6 +74,18 @@
   D.places.forEach(function (p) { PLACE[p.id] = p; });
   var SRC = {};
   D.sources.forEach(function (s) { SRC[s.id] = s; });
+
+  /* ═══════════ 地形网格外横幅 ═══════════
+   * 主地点在共享地形网格之外时，显式告知用户：此处不伪造高程，
+   * 其余史料 / 断言 / 线索功能不受影响。诚实边界。 */
+  if (OFF_GRID) {
+    var banner = document.createElement('div');
+    banner.className = 'offgrid-banner';
+    banner.innerHTML = '⚠ 本切片主地点位于共享地形网格之外（网格覆盖 122–126.8°E / 40–43.3°N）。'
+      + '此处不渲染高程阴影——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
+    var _mw = document.getElementById('mapWrap');
+    if (_mw && _mw.parentNode) _mw.parentNode.insertBefore(banner, _mw);
+  }
 
   var LAYER_META = {
     record:      { name: '史料原文',  color: '#8C6239', hint: '出自史料的直接记载' },
@@ -69,6 +99,7 @@
     sources: new Set(D.sources.map(function (s) { return s.id; })),
     layers:  new Set(['record', 'scholarship', 'gap']),
     terrain: { shade: true, tint: true, elev: false },
+    terrainOffGrid: OFF_GRID,
     route:   true,
     t: 0,
     tab: 'yan',
@@ -245,7 +276,7 @@
     var ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.fillStyle = '#EFECE2'; ctx.fillRect(0, 0, cv.width, cv.height);
-    if (!TG || !tImg || (!state.terrain.shade && !state.terrain.tint)) return;
+    if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) return;
     var lonMax = TG.lon0 + (TG.nx - 1) * TG.step, latMax = TG.lat0 + (TG.ny - 1) * TG.step;
     var gx = px(TG.lon0), gw = px(lonMax) - px(TG.lon0);
     var gy = py(latMax), gh = py(TG.lat0) - py(latMax);

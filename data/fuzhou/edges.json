@@ -1,0 +1,22 @@
+{
+ "edges": [
+  {
+   "from": "fuzhou_cheng",
+   "to": "gaizhou_cheng",
+   "type": "admin",
+   "label": "复州—盖州"
+  },
+  {
+   "from": "fuzhou_cheng",
+   "to": "jinzhouwei_cheng",
+   "type": "admin",
+   "label": "复州—金州"
+  },
+  {
+   "from": "fuzhou_cheng",
+   "to": "pidao",
+   "type": "mashi",
+   "label": "复州—皮岛（东江袭扰）"
+  }
+ ]
+}

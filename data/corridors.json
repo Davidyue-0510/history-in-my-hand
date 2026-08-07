@@ -6,11 +6,11 @@
     {
       "id": "liaobei_corridor",
       "name": "辽北走廊",
-      "subtitle": "开原—铁岭—沈阳 · 万历末最先崩塌的一段",
+      "subtitle": "开原—铁岭—沈阳—广宁 · 万历末最先崩塌的一段",
       "color": "#A0473A",
-      "nodes": ["kaiyuan_cheng", "tieling_cheng", "shenyang_cheng", "fushun", "hetuala"],
-      "key_era": "万历四十七年 (1619) 至天启元年 (1621)",
-      "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
+      "nodes": ["kaiyuan_cheng", "tieling_cheng", "shenyang_cheng", "guangning", "fushun", "hetuala"],
+      "key_era": "万历四十七年 (1619) 至天启二年 (1622)",
+      "summary": "辽北三卫 (开原、铁岭、沈阳) 1618-1621 三年内陷落, 沈阳陷后辽东都司治所西迁广宁。广宁 1622 年亦陷, 明尽失辽西。沿途各卫城都有史料记录的建置与陷落, 是 1619 萨尔浒之战后明军溃退的退路。"
     },
     {
       "id": "liaodong_corridor",
@@ -29,6 +29,15 @@
       "nodes": ["hetuala", "dongyehe", "xiyehe", "kaiyuan_cheng"],
       "key_era": "16 世纪中期至万历四十七年 (1619)",
       "summary": "明廷通过开原马市羁縻叶赫等扈伦四部, 同时与建州女真 (赫图阿拉) 互市。万历四十七年叶赫亡, 开原随即陷落, 此走廊消失。"
+    },
+    {
+      "id": "liaoxi_corridor",
+      "name": "辽西走廊",
+      "subtitle": "广宁—锦州—宁远—山海关 · 明清对峙二十余年的正面",
+      "color": "#5A7DA8",
+      "nodes": ["guangning", "jinzhou_cheng", "ningyuan", "shanhaiguan"],
+      "key_era": "天启二年 (1622) 至崇祯十七年 (1644)",
+      "summary": "广宁 1622 陷后明尽失辽西, 仅余关宁锦防线 (宁远—锦州—山海关) 与清对峙二十年。1626 宁远之战、1627 宁锦大捷、1641 松锦之战祖大寿降, 1644 吴三桂弃宁远引清入关。此走廊是明清易代的最终舞台。"
     }
   ]
 }

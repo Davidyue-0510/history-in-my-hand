@@ -1,0 +1,42 @@
+{
+ "places": [
+  {
+   "id": "ningyuan",
+   "name": "宁远城",
+   "lon": 120.7,
+   "lat": 40.62,
+   "type": "city",
+   "modern": "辽宁兴城市",
+   "note": "明宁远卫，关宁锦防线核心"
+  },
+  {
+   "id": "juehua",
+   "name": "觉华岛",
+   "lon": 120.55,
+   "lat": 40.48,
+   "type": "island",
+   "modern": "辽宁兴城菊花岛",
+   "note": "明辽东囤粮岛，宁远之战被焚"
+  },
+  {
+   "id": "jinzhou_cheng",
+   "name": "锦州",
+   "lon": 121.13,
+   "lat": 41.1,
+   "type": "city",
+   "modern": "辽宁锦州市",
+   "note": "宁远北向卫城"
+  },
+  {
+   "id": "shanhaiguan",
+   "name": "山海关",
+   "lon": 119.75,
+   "lat": 40.0,
+   "type": "guan",
+   "modern": "河北秦皇岛",
+   "note": "宁远南向，走廊终端"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

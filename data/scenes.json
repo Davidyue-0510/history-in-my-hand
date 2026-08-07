@@ -29,7 +29,8 @@
     "sarhu",
     "kaiyuan", "tieling", "yehe",
     "liaoyang", "shenyang", "fushun",
-    "haizhou", "gaizhou"
+    "haizhou", "gaizhou", "fuzhou", "jinzhouwei",
+    "guangning", "jinzhou", "ningyuan"
   ],
 
   "scenes": {
@@ -254,6 +255,125 @@
         "person:yang_lieue": "杨烈崛",
         "person:huang_zhilong": "黄之骥",
         "person:nuerhaci": "努尔哈赤"
+      }
+    },
+
+    "fuzhou": {
+      "kind": "county",
+      "region": "liaonan",
+      "title": "复州",
+      "dossier_label": "复州",
+      "subtitle": "辽南陆桥 · 复州卫 · 天启元年 (1621) 陷落",
+      "primary_place": "fuzhou_cheng",
+      "dossier_event": "event:fuzhou_fall",
+      "back": "枢纽",
+      "extra_files": ["events", "edges"],
+      "lead": "复州扼辽南陆桥：洪武十四年 (1381) 置复州卫，南通金州、北连盖州。天启元年 (1621) 后金取之，与海州、盖州同月陷。毛文龙东江镇据皮岛，浮海袭扰复州/金州沿海，成为明军海上反攻的跳板。",
+      "parties_note": "复州之陷与东江镇袭扰，明清两方评价悬殊：明方夸大东江战果，清方淡化。系统不裁决，只并列。",
+      "subject_names": {
+        "event:fuzhou_founded": "复州卫建置",
+        "event:fuzhou_fall": "复州陷落",
+        "place:fuzhou_cheng": "复州城",
+        "person:mao_wenlong": "毛文龙",
+        "person:amin": "阿敏",
+        "person:nuerhaci": "努尔哈赤"
+      }
+    },
+
+    "jinzhouwei": {
+      "kind": "county",
+      "region": "liaonan",
+      "title": "金州",
+      "dossier_label": "金州",
+      "subtitle": "辽东半岛南端 · 金州卫 · 天启元年 (1621) 陷落",
+      "primary_place": "jinzhouwei_cheng",
+      "dossier_event": "event:jinzhouwei_fall",
+      "back": "枢纽",
+      "extra_files": ["events", "edges"],
+      "lead": "金州卫扼辽东半岛南端：洪武十年 (1377) 置，辖旅顺口，海运通登莱、朝鲜。天启元年 (1621) 后金取之，旋为毛文龙东江镇一度收复。辽南门户由此易手。",
+      "parties_note": "金州海运通道与东江镇收复的次数，明清两方记载悬殊。系统不裁决，只并列。",
+      "subject_names": {
+        "event:jinzhouwei_founded": "金州卫建置",
+        "event:jinzhouwei_fall": "金州陷落",
+        "event:jinzhouwei_mao": "东江收复金州",
+        "place:jinzhouwei_cheng": "金州城",
+        "person:mao_wenlong": "毛文龙",
+        "person:amin": "阿敏",
+        "person:nuerhaci": "努尔哈赤"
+      }
+    },
+
+    "guangning": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "广宁",
+      "dossier_label": "广宁",
+      "subtitle": "辽西军政中心 · 广宁卫 · 天启二年 (1622) 陷落",
+      "primary_place": "guangning",
+      "dossier_event": "event:guangning_fall",
+      "back": "枢纽",
+      "extra_files": ["events", "edges"],
+      "lead": "广宁是辽西军政中心：洪武二十五年 (1392) 置广宁卫，正统后辽东镇移驻。天启二年 (1622) 努尔哈赤取广宁，王化贞弃城、孙得功降、熊廷弼护辽西百万难民入山海关。明尽失辽西。经抚不和是直接原因。",
+      "parties_note": "广宁之失主因经略熊廷弼（主守）与巡抚王化贞（主战）经抚不和，明、清、现代三方对责任归属侧重不同。系统不裁决，只并列。",
+      "subject_names": {
+        "event:guangning_founded": "广宁卫建置",
+        "event:guangning_zhen": "辽东镇移驻广宁",
+        "event:guangning_fall": "广宁陷落",
+        "place:guangning": "广宁城",
+        "person:xiongtingbing": "熊廷弼",
+        "person:wang_huazhen": "王化贞",
+        "person:sun_degong": "孙得功",
+        "person:nuerhaci": "努尔哈赤"
+      }
+    },
+
+    "jinzhou": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "锦州",
+      "dossier_label": "锦州",
+      "subtitle": "辽西锁钥 · 松锦之战 (1641–1642) · 祖大寿降",
+      "primary_place": "jinzhou_cheng",
+      "dossier_event": "event:jinzhou_songjin",
+      "back": "枢纽",
+      "extra_files": ["events", "edges"],
+      "lead": "锦州是辽西锁钥：洪武二十四年 (1391) 置锦州卫。崇祯十四至十五年 (1641–1642) 松锦之战，洪承畴兵败被俘、祖大寿以锦州降，明辽西机动兵力丧尽，清兵直叩山海关。此役与萨尔浒、辽沈之陷并列为明亡三大节点。",
+      "parties_note": "松锦之战明军总兵力与祖大寿两度降清，明、清、现代三方叙事侧重不同（明方记洪承畴「殉难」，清方记其被擒后降）。系统不裁决，只并列。",
+      "subject_names": {
+        "event:jinzhou_founded": "锦州卫建置",
+        "event:jinzhou_songjin": "松锦之战",
+        "place:jinzhou_cheng": "锦州城",
+        "person:zu_dashou": "祖大寿",
+        "person:hong_chengchou": "洪承畴",
+        "person:huangtaiji": "皇太极",
+        "person:duoergun": "多尔衮"
+      }
+    },
+
+    "ningyuan": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "宁远",
+      "dossier_label": "宁远",
+      "subtitle": "关宁锦防线核心 · 宁远之战 (1626) · 袁崇焕",
+      "primary_place": "ningyuan",
+      "dossier_event": "event:ningyuan_battle",
+      "back": "枢纽",
+      "extra_files": ["events", "edges"],
+      "lead": "宁远是关宁锦防线核心：宣德三年 (1428) 置宁远卫。1626 宁远之战努尔哈赤受创而死，1627 宁锦大捷，1644 吴三桂弃宁远引清入关。明清对峙二十年的枢纽在此。",
+      "parties_note": "宁远之战努尔哈赤死因、袁崇焕「五年平辽」部署，明、清、现代三方侧重不同（明方记「炮毙虏首」，清方讳言死因）。系统不裁决，只并列。",
+      "subject_names": {
+        "event:ningyuan_founded": "宁远卫建置",
+        "event:ningyuan_battle": "宁远之战",
+        "event:ningjin_dajie": "宁锦大捷",
+        "event:ningyuan_wusangui": "吴三桂引清入关",
+        "place:ningyuan": "宁远城",
+        "person:yuan_chonghuan": "袁崇焕",
+        "person:zu_dashou": "祖大寿",
+        "person:huangtaiji": "皇太极",
+        "person:nuerhaci": "努尔哈赤",
+        "person:wu_sangui": "吴三桂",
+        "person:zhao_shuaijiao": "赵率教"
       }
     }
   }

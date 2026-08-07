@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "jinzhouwei_founded",
+   "subject": "event:jinzhouwei_founded",
+   "year": 1377,
+   "era": "洪武十年",
+   "title": "金州卫建置",
+   "kind": "建置",
+   "text": "明置金州卫，辖旅顺口，扼辽东半岛南端海运。"
+  },
+  {
+   "id": "jinzhouwei_fall",
+   "subject": "event:jinzhouwei_fall",
+   "year": 1621,
+   "era": "天启元年",
+   "title": "金州陷落",
+   "kind": "战事",
+   "text": "后金取辽南，金州卫陷；旋为毛文龙东江镇一度收复。"
+  },
+  {
+   "id": "jinzhouwei_mao",
+   "subject": "event:jinzhouwei_mao",
+   "year": 1621,
+   "era": "天启元年至二年",
+   "title": "东江收复金州",
+   "kind": "战事",
+   "text": "毛文龙据皮岛/铁山，渡海袭扰，一度收复金州、旅顺，牵制后金南翼。"
+  }
+ ]
+}

@@ -99,3 +99,20 @@ a.rt.sib.on .rt-name { font-weight: 600; color: var(--accent); }
   font-weight: 600; margin-right: 6px; letter-spacing: .04em; }
 .lead-foot { font-family: var(--mono); font-size: 9px; color: var(--ink-3); margin-top: 7px; }
 .lead-foot a { color: var(--accent); }
+
+/* ════ 地形网格外横幅（v0.6 辽西/辽南扩展）════ */
+.offgrid-banner {
+  margin: 10px 12px 0;
+  padding: 9px 13px;
+  background: #FBF3E2;
+  border: 1px solid #E2C991;
+  border-left: 4px solid #C9962F;
+  border-radius: 7px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #6B5320;
+  box-shadow: 0 1px 4px rgba(120,90,20,.10);
+}
+.offgrid-banner::before { content: "地形网格外"; display: inline-block;
+  font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: .06em;
+  color: #fff; background: #C9962F; border-radius: 4px; padding: 1px 6px; margin-right: 8px; }

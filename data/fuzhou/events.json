@@ -1,0 +1,22 @@
+{
+ "events": [
+  {
+   "id": "fuzhou_founded",
+   "subject": "event:fuzhou_founded",
+   "year": 1381,
+   "era": "洪武十四年",
+   "title": "复州卫建置",
+   "kind": "建置",
+   "text": "明置复州卫，隶辽东都司，扼辽南陆桥。"
+  },
+  {
+   "id": "fuzhou_fall",
+   "subject": "event:fuzhou_fall",
+   "year": 1621,
+   "era": "天启元年",
+   "title": "复州陷落",
+   "kind": "战事",
+   "text": "沈阳辽阳既陷，后金别将阿敏南下取复州，与盖州、海州同月陷。"
+  }
+ ]
+}

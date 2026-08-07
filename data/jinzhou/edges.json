@@ -1,0 +1,22 @@
+{
+ "edges": [
+  {
+   "from": "jinzhou_cheng",
+   "to": "ningyuan",
+   "type": "admin",
+   "label": "锦州—宁远（关宁锦防线）"
+  },
+  {
+   "from": "jinzhou_cheng",
+   "to": "guangning",
+   "type": "admin",
+   "label": "锦州—广宁"
+  },
+  {
+   "from": "jinzhou_cheng",
+   "to": "shanhaiguan",
+   "type": "admin",
+   "label": "锦州—山海关"
+  }
+ ]
+}

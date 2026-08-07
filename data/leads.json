@@ -36,6 +36,37 @@
    "_src_line": 8
   },
   {
+   "id": "FZ010",
+   "scene": "fuzhou",
+   "subject": "event:fuzhou_fall",
+   "title": "复州陷落的具体月日与明军反应, 三方记载略有出入, 未见精确到日",
+   "missing": "古文",
+   "where": "《清太祖实录》天命六年 / 《明熹宗实录》天启元年 / 朝鲜《李朝实录》",
+   "skills": [
+    "古文"
+   ],
+   "accept": "核定复州陷落的具体月日与明方弃守过程",
+   "effort": "1-2 周",
+   "issue_url": null,
+   "_src_line": 5
+  },
+  {
+   "id": "FZ011",
+   "scene": "fuzhou",
+   "subject": "event:fuzhou_fall",
+   "title": "东江镇在复州/金州一带的实际活动频率与战果, 明清两方评价悬殊（明方夸大、清方淡化）",
+   "missing": "古文 / 统计",
+   "where": "《明熹宗实录》毛文龙屡疏 / 《清太祖实录》/ 朝鲜《李朝实录》皮岛往来",
+   "skills": [
+    "古文",
+    "统计"
+   ],
+   "accept": "量化东江镇对复州/金州袭击的次数与成果, 对比双方叙事",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
    "id": "G010",
    "scene": "gaizhou",
    "subject": "event:gaizhou_fall",
@@ -65,6 +96,37 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 6
+  },
+  {
+   "id": "G010",
+   "scene": "guangning",
+   "subject": "event:guangning_fall",
+   "title": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+   "missing": "古文 / 统计",
+   "where": "《明熹宗实录》天启二年正月至二月逐卷 / 《明史·熊廷弼王化贞传》/ 清初《满文老档》天命七年",
+   "skills": [
+    "古文",
+    "统计"
+   ],
+   "accept": "给出广宁陷落时明军在辽西的估计兵力区间与主要部署, 注明分歧来源",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "G011",
+   "scene": "guangning",
+   "subject": "event:guangning_fall",
+   "title": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+   "missing": "古文",
+   "where": "《明史·熊廷弼传》《明史·王化贞传》/ 《明熹宗实录》/ 现代研究 (如 李光涛 相关考)",
+   "skills": [
+    "古文"
+   ],
+   "accept": "整理至少两方史料对经抚责任的不同表述, 标出史料政治立场的影响",
+   "effort": "1-2 周",
+   "issue_url": null,
+   "_src_line": 7
   },
   {
    "id": "H010",
@@ -97,6 +159,68 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 7
+  },
+  {
+   "id": "J010",
+   "scene": "jinzhou",
+   "subject": "event:jinzhou_songjin",
+   "title": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+   "missing": "古文 / 统计",
+   "where": "《明崇祯实录》崇祯十四年/十五年逐月 / 《清太宗实录》崇德六年至七年 / 《明史·洪承畴传》",
+   "skills": [
+    "古文",
+    "统计"
+   ],
+   "accept": "给出松锦之战明军总兵力的估计区间, 列明各说的出处与采信理由",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "J011",
+   "scene": "jinzhou",
+   "subject": "person:zu_dashou",
+   "title": "祖大寿两度被围降清（大凌河 1631、锦州 1642）, 其心理与处境三方记载侧重不同",
+   "missing": "古文",
+   "where": "《清太宗实录》天聪五年、崇德七年 / 《明史·祖大寿传》/ 朝鲜使臣见闻录",
+   "skills": [
+    "古文"
+   ],
+   "accept": "对比祖大寿两次降清的史料记述, 分析其作为明将降清的特殊处境",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "JN010",
+   "scene": "jinzhouwei",
+   "subject": "place:jinzhouwei_cheng",
+   "title": "金州卫经登莱至朝鲜的海运与互市具体路线、频次, 三方记载不详",
+   "missing": "古文 / GIS",
+   "where": "《明实录》海运逐条 / 《登州府志》/ 朝鲜《通文馆志》辽东往来",
+   "skills": [
+    "古文",
+    "GIS"
+   ],
+   "accept": "复原金州—登莱—朝鲜海运路线与年频次, 标注史料缺口",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 5
+  },
+  {
+   "id": "JN011",
+   "scene": "jinzhouwei",
+   "subject": "event:jinzhouwei_mao",
+   "title": "毛文龙收复金州/旅顺的次数与持续时间, 明清两方记载悬殊",
+   "missing": "古文",
+   "where": "《明熹宗实录》毛文龙疏 / 《清太祖实录》/ 朝鲜使臣皮岛见闻",
+   "skills": [
+    "古文"
+   ],
+   "accept": "核定东江镇收复金州/旅顺的次数与每次持续时间",
+   "effort": "1-2 周",
+   "issue_url": null,
+   "_src_line": 6
   },
   {
    "id": "K025",
@@ -178,6 +302,37 @@
    "effort": "1 周",
    "issue_url": null,
    "_src_line": 20
+  },
+  {
+   "id": "N010",
+   "scene": "ningyuan",
+   "subject": "event:ningyuan_battle",
+   "title": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+   "missing": "古文 / 医学史",
+   "where": "《明史·太祖本纪》/ 《清太祖实录》天命十一年 / 朝鲜《李朝实录》/ 现代医学史考证",
+   "skills": [
+    "古文",
+    "医学史"
+   ],
+   "accept": "梳理努尔哈赤死因的各家说法与史料依据, 给出最可能结论及存疑点",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "N011",
+   "scene": "ningyuan",
+   "subject": "person:yuan_chonghuan",
+   "title": "袁崇焕「五年平辽」的实际军事部署与朝中掣肘, 三方史料侧重不同",
+   "missing": "古文",
+   "where": "《明熹宗实录》《崇祯长编》/ 《明史·袁崇焕传》/ 朝鲜使臣报告",
+   "skills": [
+    "古文"
+   ],
+   "accept": "整理袁崇焕经略辽西的具体措施与所受制约, 分析其成败",
+   "effort": "2-4 周",
+   "issue_url": null,
+   "_src_line": 7
   },
   {
    "id": "A092",

@@ -1,0 +1,51 @@
+{
+ "places": [
+  {
+   "id": "fuzhou_cheng",
+   "name": "复州城",
+   "lon": 121.97,
+   "lat": 39.63,
+   "type": "city",
+   "modern": "辽宁瓦房店市",
+   "note": "明复州卫，辽南陆桥"
+  },
+  {
+   "id": "wau_fangdian",
+   "name": "瓦房店",
+   "lon": 121.97,
+   "lat": 39.63,
+   "type": "city",
+   "modern": "辽宁瓦房店市",
+   "note": "今复州所在"
+  },
+  {
+   "id": "gaizhou_cheng",
+   "name": "盖州",
+   "lon": 121.97,
+   "lat": 40.4,
+   "type": "city",
+   "modern": "辽宁盖州市",
+   "note": "复州北向卫城"
+  },
+  {
+   "id": "jinzhouwei_cheng",
+   "name": "金州",
+   "lon": 121.7,
+   "lat": 39.09,
+   "type": "city",
+   "modern": "辽宁大连金州区",
+   "note": "复州南向，半岛南端"
+  },
+  {
+   "id": "pidao",
+   "name": "皮岛",
+   "lon": 124.5,
+   "lat": 39.95,
+   "type": "island",
+   "modern": "朝鲜椴岛/皮岛",
+   "note": "毛文龙东江镇基地，袭扰辽南"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

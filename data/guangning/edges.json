@@ -1,0 +1,16 @@
+{
+ "edges": [
+  {
+   "from": "guangning",
+   "to": "shenyang_cheng",
+   "type": "admin",
+   "label": "广宁—沈阳（辽西—辽东）"
+  },
+  {
+   "from": "guangning",
+   "to": "shanhaiguan",
+   "type": "admin",
+   "label": "广宁—山海关（辽西走廊）"
+  }
+ ]
+}

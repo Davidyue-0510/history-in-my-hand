@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "guangning_founded",
+   "subject": "event:guangning_founded",
+   "year": 1392,
+   "era": "洪武二十五年",
+   "title": "广宁卫建置",
+   "kind": "建置",
+   "text": "明置广宁卫，隶辽东都司，为辽西重镇。"
+  },
+  {
+   "id": "guangning_zhen",
+   "subject": "event:guangning_zhen",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "辽东镇移驻广宁",
+   "kind": "行政",
+   "text": "土木之变后辽东镇总兵移驻广宁，成为辽西军政中心。"
+  },
+  {
+   "id": "guangning_fall",
+   "subject": "event:guangning_fall",
+   "year": 1622,
+   "era": "天启二年正月",
+   "title": "广宁陷落",
+   "kind": "战事",
+   "text": "沈阳辽阳既陷，明经略熊廷弼、巡抚王化贞经抚不和；努尔哈赤取广宁，王化贞弃城，孙得功降，熊廷弼护辽西百万难民入山海关。明尽失辽西。"
+  }
+ ]
+}
