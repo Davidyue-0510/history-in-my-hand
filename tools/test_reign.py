@@ -66,5 +66,19 @@ check_raises("R12a 万历四十九年越界", lambda: R.to_gregorian("万历", 4
 check_raises("R12b 未知年号", lambda: R.to_gregorian("不存在", 1))
 check_raises("R12c 非法年份字符", lambda: R.to_gregorian("万历", "甲"))
 
+# —— 全国尺度时序主干：新扩朝代年号 + dynasty_at ——
+check("R13 贞观元年=627(唐)", R.normalize_year("贞观元年"), 627)
+check("R14 开元元年=713(唐)", R.normalize_year("开元元年"), 713)
+check("R15 宣和七年=1125(北宋末)", R.normalize_year("宣和七年"), 1125)
+check("R16 靖康元年=1126(北宋亡)", R.normalize_year("靖康元年"), 1126)
+check("R17 至正十一年=1351(元末)", R.normalize_year("至正十一年"), 1351)
+check("R18 康熙二十三年=1684(清)", R.normalize_year("康熙二十三年"), 1684)
+check("R19 乾隆五十八年=1793(清)", R.normalize_year("乾隆五十八年"), 1793)
+check("R20 大业元年=605(隋)", R.normalize_year("大业元年"), 605)
+check("R21 dynasty_at(1644) 含 明/清（后金 1636 已改清）", set(R.dynasty_at(1644)), {"明", "清"})
+check("R22 dynasty_at(755) 含 唐", "唐" in R.dynasty_at(755), True)
+check("R23 dynasty_at(1271) 含 元", "元" in R.dynasty_at(1271), True)
+check("R24 dynasty_at(1000) 含 北宋", "北宋" in R.dynasty_at(1000), True)
+
 print("\nreign_era: %d ok, %d fail" % (OK, FAIL))
 sys.exit(1 if FAIL else 0)

@@ -17,6 +17,8 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | 立场靠来源派生 | 明/清/朝鲜三方 + 小说作者/系统/角色视角，自动分桶、算共振度 | 县页「立场」面板 + `resonance.py` |
 | 断言四层 + 缺口→线索 | record/scholarship/inference/gap；portal 汇总 40 条可认领线索 | `demo/portal.html` |
 | 实际控制辖区图层 | 时间滑块看县/国家控制权易手（明方红→清方绿），治所最近邻 Voronoi 示意辖区 | 战役图/县页右侧「控制权」面板 |
+| 一键史料 ingestion 管线 | 文本→断言四层→年号归一化→校验→可选跑 gates，实现「导入即呈现」最小闭环（heuristic/llm/fixture 三后端） | `tools/ingest.py` |
+| 全国尺度时序主干 | 年号↔公元覆盖唐/宋/元/辽/金/隋/明/清（含「元/正」年号名），`dynasty_at()` 反查公元年属哪些朝代 | `tools/reign_era.py` |
 | 反事实分支（数据层） | 时间轴带 `branch` 节点，N06/N07 自动聚成冲突组 | world 的 `timeline.json` |
 | 声明式扩展 | 新增一个 world = 往 `data/scenes.json` 加一条，hub/portal 自动扫描 | `data/scenes.json` |
 | 五闸门 CI | lint → test → leads → build → interaction，fail-fast | `python tools/gates.py --strict` |
@@ -105,6 +107,29 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 - **守门**：`lint.py` 新增 `check_control`（E17/W12）校验 place_id 是已登记地点、party 在词表、
   start/end 整数且 end≥start、同地点时段不重叠、每个县治所有记录；`probe_interaction.js` 新增 6 项
   真实点击断言（含「#controlCv 非透明像素」「年份驱动明方→清方」）。
+
+### 3.2 ingestion 管线 + 全国尺度时序主干（v0.11，北极星「导入即呈现」的最小闭环）
+
+这是把「数据库 + LLM」两块缺口从 0 推到可用的最小实物——**不需要先搭重数据库或历史 GIS**。
+
+**`tools/ingest.py`（ingestion 管线）**
+- 输入史料文本（`--source` 文件或 `--text`），输出与 demo `assertions.jsonl` **完全兼容**的 JSONL。
+- 三后端可换：`heuristic`（无 key 冒烟测试，用 `reign_era` 找年号提及，证明机械链路通顺）、
+  `llm`（openai 兼容 Chat API，需 `LLM_API_KEY`/`LLM_BASE_URL`/`LLM_MODEL`，生产级抽取）、
+  `fixture`（直接载入一份已抽 JSON，验证「LLM 产出的结构能接住」）。
+- 抽取契约复用 `tools/spikes/extraction_demo/prompt.md`（断言四层 + 年份一律留年号 + 反幻觉约束）。
+- 归一化：`reign_era.normalize_year(era_text)` 把「万历四十七年三月」变公元 1619，写回 `time.start`——
+  **所有史料共用一把公元尺**，且年号换算错误能被单测+闸门抓住（不会像手工填 lon/lat 那样静默留白）。
+- 守门：校验断言四层 schema + 年份可归一化；`--run-gates` 写完直接跑全闸门，脏数据进提交前拦住。
+- `--scene <id>` 把归一化断言追加进已注册场景的 `assertions.jsonl`，即「导入即呈现」。
+
+**`tools/reign_era.py`（时间本体接缝，确定性代码而非 AI）**
+- 年号纪年是「封闭集合的查表 + 算术」，用数据表 + 纯函数比让 AI 现猜更准、可审计、零幻觉。
+- `ERAS` 内置唐/宋/元/辽/金/隋/明/清常用年号（seed，可被单测钉死）；`DYNASTIES` 朝代跨度表，
+  `dynasty_at(year)` 反查某公元年属哪些朝代（1644 同时属明/清，供控制层「国家范围」朝代归属）。
+- 生产级「全朝代逐帝年号」应另存 `data/eras.json`，由 `load_eras()` 载入（单一真值、DH 校对后一处更新全站重算）
+  ——这把「数据/代码」分离，避免长表硬编码进源码。
+- 月日农历转换（`lunar_to_solar`）留 TODO 桩：历史朔闰与今历有系统差，需接历史朔闰表后再补并补单测。
 
 ## 4. 工具链（五闸门 + 辅助）
 

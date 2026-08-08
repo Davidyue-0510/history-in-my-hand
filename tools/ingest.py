@@ -1,289 +1,299 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-tools/ingest.py —— 文字资料 → 结构化「世界」的导入管线（北极星(2) 工程骨架）
+"""一键史料 ingestion 管线：source 文本 -> 断言四层 -> 年号归一化 -> 校验 -> 可选 gates。
 
-设计原则
---------
-- **抽取智能 与 装配 解耦**。本脚本只负责确定性、可复用的部分：
-  切分、装配八件套、per-world vocab 注入、scenes.json 注册、四闸门校验。
-  它不替你做文学理解。「抽取智能」以 *spec* 为中间格式，可由
-  人工 / LLM-API / 本脚本的 `parse` 启发式预抽取提供。
-- **虚构 world 走 kind:"fiction"**：无真实坐标、立场派生于来源、豁免 W04/W06 与共振。
-- 所有产物过 `gates.py --strict`，保证不破坏既有数据（fail-fast）。
+这是北极星目标里「导入即呈现」的最小闭环实现。它把原先手工 + LLM 临时抽的
+extraction_demo spike 固化成一个**可复用、可进闸门、可换后端**的命令行工具。
 
-子命令
-------
-  parse     <txt>  [--id ID] [--out DIR]
-            启发式预抽取（章节切分 / 候选人名 / 引文样本）→ <DIR>/_extract.json
-            产物是「脚手架」，请人工或 LLM 据此补全 spec。
+三大职责（对应项目主张）
+----------------------
+1. 抽取（ingestion）：把原始史料变成项目消费的 `assertions` 结构。
+   - provider=llm    : 调 openai 兼容 Chat API（需 LLM_API_KEY），生产级抽取。
+   - provider=heuristic : 无 key 时的**冒烟测试**，用 reign_era 找年号提及，
+                          证明管线机械通顺；不是生产抽取，输出标 auto_heuristic。
+   - provider=fixture  : 直接载入一份已抽好的 JSON（如 spike 的 extracted.json），
+                          用来验证「LLM 产出的 JSON 能接住」。
+2. 归一化（时间本体接缝）：每条断言的 time.era_text（如「万历四十七年三月」）
+   经 reign_era.normalize_year 变公元年，写回 time.start。所有史料共用一把公元尺。
+3. 守门：校验断言四层 schema + 年份可归一化；可选 --run-gates 跑全闸门，
+   把脏数据/漏归一化在进提交前拦住（呼应「缺口是一等公民」「脏数据静默留白」）。
 
-  assemble  <spec.json> [--no-gates]
-            spec → data/<id>/ 八件套 + scenes.json 注册 + 跑闸门校验。
-            这是本脚本的主入口：把一份结构化抽取变成可上线、过闸门的 world。
+输出
+----
+默认写 JSONL（每行一个断言对象），字段与 demo 的 assertions.jsonl 完全兼容，
+可直接喂 build.py。传 --scene <id> 则追加进该场景的 data/<dir>/assertions.jsonl。
 
-  validate  <world_id>
-            仅对已有 world 重跑 lint + build（不重新生成文件）。
+用法
+----
+  # 冒烟测试（无需 key）：用 reign_era 找年号，验证管线通顺
+  python tools/ingest.py --source tools/spikes/extraction_demo/source.txt \
+                         --provider heuristic --out /tmp/out.heuristic.jsonl
 
-spec.json 结构（顶层字段）
--------------------------
-  world_id, title, subtitle, kind(默认 fiction), region(默认 fiction),
-  primary_place, fictional(默认 true), lead, parties_note?, subject_names?,
-  vocab {parties:[...], party_bucket:{party:bucket}, edge_types?:[{k,name,color,dash}]},
-  sources:[{id,title,party}],
-  places:[{id,name,fictional:true}],
-  persons:[{id,name,desc?}],
-  events:[{id,subject,title,year?,summary?}],
-  edges:[{from,to,relation?,type?,label?,note?}],
-    # 边类型 per-world（docs/03 §3）：辽东用 mashi/tribe/mil/admin；
-    # 小说等 world 用自己的（亲子/夫妻/情感/敌对/委托…）。也可在顶层写 edge_types 自动并入 vocab。
-    # 每条边可带 type+label；缺省由 relation/rel 推 label、type 回退 'misc'。
-  timeline:[{id,t,subject,label,branch?:false,note?}],
-  assertions:[ <断言记录，逐行等价 assertions.jsonl> ],
-  sim_config? (缺省用 M6 占位)
+  # 验证 LLM 形状的 JSON 能接住（用已有 spike 产物）
+  python tools/ingest.py --provider fixture \
+                         --fixture tools/spikes/extraction_demo/extracted.json \
+                         --out /tmp/out.fixture.jsonl
+
+  # 生产：真调 LLM（设 LLM_API_KEY / 可选 LLM_BASE_URL / LLM_MODEL）
+  python tools/ingest.py --source 某史料.txt --provider llm --scene sarhu --run-gates
+
+退出码非零 = 有断言无法归一化或校验失败（ingestion 缺口），应阻断后续。
 """
 import argparse
 import json
 import os
 import re
-import subprocess
 import sys
+import subprocess
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
-DATA = os.path.join(ROOT, "data")
-SCENES = os.path.join(DATA, "scenes.json")
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "tools"))
+import reign_era as R
 
-try:
-    sys.stdout.reconfigure(encoding="utf-8")
-except Exception:
-    pass
+REQUIRED = ["id", "subject", "predicate", "layer", "time", "source", "confidence"]
+LAYERS = {"record", "scholarship", "inference", "gap"}
+PROMPT_TMPL = os.path.join(ROOT, "tools", "spikes", "extraction_demo", "prompt.md")
+
+# 断言四层 JSON 兼容 demo 的全字段；heuristic / llm 都应产出这些
+_DEF_FIELDS = ["id", "subject", "predicate", "value_text", "time", "place",
+               "source", "quote", "quote_status", "layer", "confidence",
+               "scale", "note"]
 
 
-def _log(msg):
-    print(msg)
-
-
-def _load_json(path):
+def _read_source(path):
     with open(path, encoding="utf-8") as f:
-        return json.load(f)
+        return f.read()
 
 
-def _write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+def _build_prompt(text):
+    """复用 prompt.md 的契约，把史料塞进去，要求返回断言四层 JSON 数组。"""
+    contract = ""
+    try:
+        with open(PROMPT_TMPL, encoding="utf-8") as f:
+            contract = f.read()
+    except Exception:
+        contract = "(prompt.md 未找到)"
+    return (
+        "你是历史史料结构化抽取器。严格按下面的「输出契约」与「四层抽取规则」\n"
+        "把史料变成断言四层 JSON 数组（只返回 JSON，不要解释）。\n\n"
+        "【契约与规则】\n" + contract + "\n\n"
+        "【原始史料】\n" + text + "\n\n"
+        "【输出】只输出 JSON 数组，例如：\n"
+        '[{"id":"SX001","subject":"event:sarhu","predicate":"爆发","value_text":"...",'
+        '"time":{"era_text":"万历四十七年三月"},"place":"sarhu","source":"src001",'
+        '"quote":"...","quote_status":"primary_extract","layer":"record",'
+        '"confidence":0.9,"scale":"empire","note":""}]\n'
+        "再次强调：time 只给 era_text（年号），不要自己换算公元年。"
+    )
 
 
-# ───────────────────────── parse（启发式预抽取） ─────────────────────────
-SPEECH_VERBS = "说说道问道骂喊叫想着看叹嘆念称呼喝吼"
-QUOTE_PAIRS = [("“", "”"), ("「", "」"), ("『", "』"), ("‘", "’")]
-CN_NUM = "零一二三四五六七八九十百千"
-STOP_NAME = set("他她们你我自各其这那什么怎么为何如何此彼谁哪")
+def _call_llm(prompt):
+    """openai 兼容 Chat Completions。无 key 时返回 None（调用方兜底报错）。"""
+    import urllib.request
+    key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not key:
+        return None
+    base = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+    model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
+    body = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        base + "/chat/completions", data=body,
+        headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        data = json.load(r)
+    return data["choices"][0]["message"]["content"]
 
 
-def _read_text(path):
-    raw = open(path, "rb").read()
-    for enc in ("utf-8", "gb18030", "gbk"):
-        try:
-            return raw.decode(enc)
-        except Exception:
-            continue
-    return raw.decode("utf-8", errors="replace")
+def _extract_json_array(text):
+    """从 LLM 文本里抠出第一个 JSON 数组。"""
+    s = text.find("[")
+    e = text.rfind("]")
+    if s == -1 or e == -1 or e < s:
+        raise ValueError("LLM 返回中找不到 JSON 数组")
+    return json.loads(text[s:e + 1])
 
 
-def _chapters(text):
-    ms = list(re.finditer(r"第[" + CN_NUM + r"0-9]+章", text))
+def extract_llm(text):
+    prompt = _build_prompt(text)
+    raw = _call_llm(prompt)
+    if raw is None:
+        raise RuntimeError(
+            "未检测到 LLM_API_KEY / OPENAI_API_KEY 环境变量，无法走 llm provider。"
+            "请设置后重试，或先用 --provider heuristic / fixture 验证管线。")
+    return _extract_json_array(raw)
+
+
+def extract_heuristic(text):
+    """冒烟测试抽取：用 reign_era 在原文里找年号提及，逐句产出 record 断言。
+    不做什么：人名/地名 NER、关系抽取——那是 LLM 的活。这只是证明
+    「读 source -> 找年号 -> 归一化 -> 结构化 -> 校验」这条机械链路是通的。"""
+    # 年号按长度降序，避免「大」先匹配到「大业」之类（虽然后面有 \d/中文数约束）
+    era_names = sorted(R.ERAS.keys(), key=len, reverse=True)
+    era_alt = "|".join(re.escape(e) for e in era_names)
+    # 年号后跟：元/正/一..十/十一..十九/二十.. / 廿 / 卅
+    pat = re.compile(r"(%s)\s*([一二三四五六七八九十廿卅零元正]+\s*(?:年)?)" % era_alt)
+    sentences = re.split(r"[。！？\n]+", text)
     out = []
-    for i, m in enumerate(ms):
-        start = m.start()
-        end = ms[i + 1].start() if i + 1 < len(ms) else len(text)
-        title = text[m.start():m.start() + 40].split("\n")[0].strip()
-        out.append({"index": i + 1, "pos": start, "title": title, "len": end - start})
+    idx = 0
+    for sent in sentences:
+        sent = sent.strip()
+        if not sent:
+            continue
+        m = pat.search(sent)
+        if not m:
+            continue
+        era_text = (m.group(1) + m.group(2)).replace(" ", "")
+        g = R.normalize_year(era_text)
+        if g is None:
+            continue
+        idx += 1
+        out.append({
+            "id": "HZ%03d" % idx,
+            "subject": "event:auto_extract",
+            "predicate": "纪年提及",
+            "value_text": sent[:60],
+            "time": {"era_text": era_text},
+            "place": "",
+            "source": "heuristic_source",
+            "quote": sent,
+            "quote_status": "auto_heuristic",
+            "layer": "record",
+            "confidence": 0.3,
+            "scale": "county",
+            "note": "heuristic 自动抽取（仅年号提及），非生产抽取，待 LLM/人工核验",
+        })
+        if len(out) >= 50:  # 冒烟测试上限，避免噪声爆炸
+            break
     return out
 
 
-def _quoted(text, limit=200):
-    out = []
-    for o, c in QUOTE_PAIRS:
-        for m in re.finditer(re.escape(o) + r"(.+?)" + re.escape(c), text, re.S):
-            s = m.group(1).strip().replace("\n", " ")
-            if 4 <= len(s) <= 80:
-                out.append(s)
-            if len(out) >= limit:
-                return out
-    return out[:limit]
+def normalize_and_validate(assertions):
+    """原地归一化 time.start，并校验。返回 (ok, fail, by_layer)。"""
+    OK, FAIL = 0, 0
+    by_layer = {}
+    for a in assertions:
+        aid = a.get("id", "?")
+        for fld in REQUIRED:
+            if fld not in a:
+                FAIL += 1
+                print("  [XX] %-6s 缺字段 %s" % (aid, fld))
+                continue
+        lv = a.get("layer")
+        if lv not in LAYERS:
+            FAIL += 1
+            print("  [XX] %-6s layer 非法 %r" % (aid, lv))
+        else:
+            by_layer[lv] = by_layer.get(lv, 0) + 1
+        era = (a.get("time") or {}).get("era_text")
+        g = R.normalize_year(era) if era else None
+        if g is None:
+            FAIL += 1
+            print("  [XX] %-6s 年号无法归一化 %r" % (aid, era))
+        else:
+            OK += 1
+            a.setdefault("time", {})["start"] = "%d" % g
+            print("       %-6s %s -> 公元 %d" % (aid, era, g))
+    return OK, FAIL, by_layer
 
 
-def _candidate_persons(text, top=40):
-    pat = re.compile(r"([\u4e00-\u9fa5]{1,3})(?:[" + SPEECH_VERBS + r"])")
-    cnt = {}
-    for m in pat.finditer(text):
-        name = m.group(1)
-        if len(name) < 2:
-            continue
-        if any(ch in STOP_NAME for ch in name):
-            continue
-        if name in ("自己", "各自", "他人", "别人"):
-            continue
-        cnt[name] = cnt.get(name, 0) + 1
-    return [n for n, _ in sorted(cnt.items(), key=lambda x: -x[1])[:top]]
-
-
-def cmd_parse(args):
-    text = _read_text(args.txt)
-    chs = _chapters(text)
-    extract = {
-        "_comment": "ingest.py parse 启发式预抽取骨架；请人工/LLM 据此补全 spec 后跑 assemble。",
-        "source_file": os.path.basename(args.txt),
-        "chars": len(text),
-        "chapters": chs,
-        "candidate_persons": _candidate_persons(text),
-        "quoted_samples": _quoted(text),
-    }
-    out_dir = args.out or os.path.join(DATA, args.id or "novel_unknown")
-    os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(out_dir, "_extract.json")
-    _write_json(path, extract)
-    _log("[PARSE] wrote %s  (%d chapters, %d candidate persons)"
-         % (path, len(chs), len(extract["candidate_persons"])))
-    return 0
-
-
-# ───────────────────────── assemble（spec → world） ─────────────────────────
-DEFAULT_SIM = {
-    "_comment": "M6 占位：演化引擎未建。引擎接口见 docs/03 §6。",
-    "engine": "llm-step",
-    "mode": "counterfactual",
-    "rules": ["branch_on_assertion_conflict", "propagate_family_relations"],
-    "entry_event": None,
-    "horizon_steps": 20,
-    "status": "spec-only",
-}
-
-
-def _assertions_to_jsonl(assertions, path):
-    with open(path, "w", encoding="utf-8") as f:
+def write_jsonl(assertions, out_path):
+    d = os.path.dirname(out_path)
+    if d and not os.path.isdir(d):
+        os.makedirs(d, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
         for a in assertions:
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
 
 
-def _register_scene(spec):
-    sc = _load_json(SCENES)
-    wid = spec["world_id"]
-    region_id = spec.get("region", "fiction")
-
-    regions = sc.setdefault("regions", [])
-    if not any(r["id"] == region_id for r in regions):
-        regions.append({
-            "id": region_id,
-            "name": spec.get("region_name", region_id),
-            "note": spec.get("region_note", ""),
-        })
-
-    order = sc.setdefault("order", [])
-    if wid not in order:
-        order.append(wid)
-
-    scenes = sc.setdefault("scenes", {})
-    if wid not in scenes:
-        entry = {
-            "kind": spec.get("kind", "fiction"),
-            "region": region_id,
-            "title": spec.get("title", wid),
-            "dossier_label": spec.get("dossier_label", spec.get("title", wid)),
-            "subtitle": spec.get("subtitle", ""),
-            "primary_place": spec.get("primary_place"),
-            "dossier_event": spec.get("dossier_event"),
-            "back": "枢纽",
-            "extra_files": spec.get("extra_files", ["events", "edges", "timeline"]),
-            "fictional": spec.get("fictional", True),
-            "lead": spec.get("lead", ""),
-        }
-        if spec.get("parties_note"):
-            entry["parties_note"] = spec["parties_note"]
-        if spec.get("subject_names"):
-            entry["subject_names"] = spec["subject_names"]
-        scenes[wid] = entry
-
-    _write_json(SCENES, sc)
-
-
-def cmd_assemble(args):
-    spec = _load_json(args.spec)
-    wid = spec["world_id"]
-    d = os.path.join(DATA, wid)
-    os.makedirs(d, exist_ok=True)
-
-    # vocab —— per-world 受控词表（docs/03 §3）。party_bucket 须覆盖 sources 用到的 party。
-    # edge_types 支持顶层声明或写进 vocab，二者都会被写入 per-world vocab.json，
-    # 供 demo/county.js 的图例/配色按本 world 实际关系类型数据驱动。
-    vocab = spec.get("vocab", {"parties": [], "party_bucket": {}})
-    if "edge_types" in spec:
-        vocab["edge_types"] = spec["edge_types"]
-    _write_json(os.path.join(d, "vocab.json"), vocab)
-    _write_json(os.path.join(d, "sources.json"), {"sources": spec.get("sources", [])})
-    _write_json(os.path.join(d, "places.json"), {"places": spec.get("places", [])})
-    _write_json(os.path.join(d, "persons.json"), {"persons": spec.get("persons", [])})
-    _write_json(os.path.join(d, "events.json"), {"events": spec.get("events", [])})
-    # 边归一化：保证每条边有 label（回退 relation/rel）与 type（回退 'misc'），
-    # 与 tools/build.py 的口径一致，demo 不再把 undefined 画上地图。
-    edges = []
-    for e in spec.get("edges", []):
-        e2 = dict(e)
-        e2.setdefault("label", e.get("relation") or e.get("rel") or "")
-        e2.setdefault("type", "misc")
-        edges.append(e2)
-    _write_json(os.path.join(d, "edges.json"), {"edges": edges})
-    _write_json(os.path.join(d, "timeline.json"), {"timeline": spec.get("timeline", [])})
-    _write_json(os.path.join(d, "sim_config.json"), spec.get("sim_config", DEFAULT_SIM))
-    _assertions_to_jsonl(spec.get("assertions", []), os.path.join(d, "assertions.jsonl"))
-
-    _register_scene(spec)
-    _log("[ASSEMBLE] wrote 8 files to %s" % d)
-
-    if args.no_gates:
-        _log("[ASSEMBLE] skipped gates (--no-gates). Remember to run: python tools/gates.py --strict")
-        return 0
-
-    r = subprocess.run([sys.executable, os.path.join(HERE, "gates.py"), "--strict"], cwd=ROOT)
-    return r.returncode
-
-
-def cmd_validate(args):
-    wid = args.world_id
-    d = os.path.join(DATA, wid)
-    if not os.path.isdir(d):
-        _log("[VALIDATE] no such world dir: %s" % d)
-        return 1
-    # 仅重跑 lint + build，不重新生成文件
-    r1 = subprocess.run([sys.executable, os.path.join(HERE, "lint.py")], cwd=ROOT)
-    r2 = subprocess.run([sys.executable, os.path.join(HERE, "build.py")], cwd=ROOT)
-    return 1 if (r1.returncode or r2.returncode) else 0
+def append_to_scene(assertions, scene_id):
+    """把断言追加进某已注册场景的 assertions.jsonl（--scene 时）。"""
+    reg = json.load(open(os.path.join(ROOT, "data", "scenes.json"), encoding="utf-8"))
+    sc = reg.get("scenes", {}).get(scene_id)
+    if not sc:
+        raise RuntimeError("scenes.json 中找不到场景 %r，无法 --scene 注册" % scene_id)
+    target = os.path.join(ROOT, "data", sc["dir"], "assertions.jsonl")
+    if not os.path.exists(target):
+        raise RuntimeError("目标断言文件不存在: %s" % target)
+    with open(target, "a", encoding="utf-8") as f:
+        for a in assertions:
+            f.write(json.dumps(a, ensure_ascii=False) + "\n")
+    return target
 
 
 def main():
-    ap = argparse.ArgumentParser(description="文字资料 → 结构化世界 的导入管线")
-    sub = ap.add_subparsers(dest="cmd", required=True)
-
-    p = sub.add_parser("parse", help="启发式预抽取脚手架")
-    p.add_argument("txt", help="小说/文本 txt 路径")
-    p.add_argument("--id", help="world_id（决定输出目录名）")
-    p.add_argument("--out", help="输出目录（默认 data/<id>）")
-    p.set_defaults(func=cmd_parse)
-
-    a = sub.add_parser("assemble", help="spec → 八件套 + 注册 + 闸门")
-    a.add_argument("spec", help="spec.json 路径")
-    a.add_argument("--no-gates", action="store_true", help="跳过 gates 校验")
-    a.set_defaults(func=cmd_assemble)
-
-    v = sub.add_parser("validate", help="对已有 world 重跑 lint+build")
-    v.add_argument("world_id")
-    v.set_defaults(func=cmd_validate)
-
+    ap = argparse.ArgumentParser(description="史料 ingestion 管线（断言四层 + 年号归一化）")
+    ap.add_argument("--source", help="原始史料文本路径")
+    ap.add_argument("--text", help="直接传史料文本（与 --source 二选一）")
+    ap.add_argument("--provider", choices=["heuristic", "llm", "fixture"],
+                    default="heuristic", help="抽取后端（默认 heuristic 冒烟测试）")
+    ap.add_argument("--fixture", help="provider=fixture 时的已抽 JSON 路径")
+    ap.add_argument("--out", help="输出 JSONL 路径（默认打印到 stdout 不写文件）")
+    ap.add_argument("--scene", help="把归一化断言追加进该场景的 assertions.jsonl")
+    ap.add_argument("--run-gates", action="store_true", help="写完后跑 tools/gates.py --no-interaction")
     args = ap.parse_args()
-    sys.exit(args.func(args))
+
+    # 1) 取 source 文本
+    if args.provider == "fixture":
+        if not args.fixture:
+            print("[FAIL] provider=fixture 需要 --fixture"); return 2
+        with open(args.fixture, encoding="utf-8") as f:
+            assertions = json.load(f)
+        print("[ingest] fixture 载入 %d 条" % len(assertions))
+    else:
+        if args.source:
+            text = _read_source(args.source)
+        elif args.text:
+            text = args.text
+        else:
+            print("[FAIL] 需 --source 或 --text（fixture 模式需 --fixture）"); return 2
+        if args.provider == "heuristic":
+            assertions = extract_heuristic(text)
+            print("[ingest] heuristic 抽取 %d 条年号提及" % len(assertions))
+        else:  # llm
+            print("[ingest] 调用 LLM 抽取 ...")
+            assertions = extract_llm(text)
+            print("[ingest] LLM 抽取 %d 条" % len(assertions))
+
+    if not isinstance(assertions, list) or not assertions:
+        print("[FAIL] 未抽到任何断言"); return 2
+
+    # 2) 归一化 + 校验
+    print("\n=== 年号归一化 + schema 校验 ===")
+    ok, fail, by_layer = normalize_and_validate(assertions)
+    print("\n各 layer 条数:", by_layer)
+    print("ingest 校验: %d ok, %d fail" % (ok, fail))
+    if fail:
+        print("[FAIL] 有断言未通过校验，阻断。"); return 1
+
+    # 3) 写出
+    if args.out:
+        write_jsonl(assertions, args.out)
+        print("[ok] 写入 %s (%d 条)" % (args.out, len(assertions)))
+    else:
+        print("\n--- 归一化后的断言（前 3 条预览）---")
+        for a in assertions[:3]:
+            print(json.dumps(a, ensure_ascii=False))
+
+    # 4) 可选注册进场景
+    if args.scene:
+        tgt = append_to_scene(assertions, args.scene)
+        print("[ok] 已追加进场景 %s -> %s" % (args.scene, tgt))
+
+    # 5) 可选跑 gates
+    if args.run_gates:
+        print("\n=== 跑 gates --no-interaction ===")
+        rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "gates.py"),
+                             "--no-interaction"], cwd=ROOT).returncode
+        if rc != 0:
+            print("[FAIL] gates 未通过 (exit=%d)" % rc); return rc
+
+    print("\n[ingest] 完成：%d 条断言全部通过年号归一化与 schema 校验。" % len(assertions))
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

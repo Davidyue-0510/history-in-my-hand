@@ -141,12 +141,24 @@ worlds/
 
 ## 7. ingestion 接口约定（文本 → 世界模型）
 
-输入：`tools/ingest.py --world <id> --text <file.txt> [--map <image>]`
-输出：在 `worlds/<id>/` 下生成 sources/places/persons/events/edges/assertions + 初版 vocab + timeline。
+历史史料抽取是「导入即呈现」的真正瓶颈（不是 UI、也不是数据库）。已落地的管线：
 
-抽取规范（`tools/ingest_prompt.md`）要求模型严格产出上述 schema 的 JSON，
-且**每条断言必须带 `source_id` 与 `claim`，缺口显式标 `layer:gap`**——
-这样 ingestion 的产物能直接过现有四闸门（lint/test/leads/build）。
+- **工具**：`tools/ingest.py`
+  - `python tools/ingest.py --source 某史料.txt --provider llm --scene <id> --run-gates`
+  - `python tools/ingest.py --provider fixture --fixture extracted.json`（验证 LLM 形状的 JSON 能接住）
+  - `python tools/ingest.py --source 某史料.txt --provider heuristic`（无 key 冒烟测试）
+- **三后端**：`heuristic`（无 key，用 `reign_era` 找年号提及，证明机械链路通顺，非生产抽取） /
+  `llm`（openai 兼容 Chat API，需 `LLM_API_KEY`/`LLM_BASE_URL`/`LLM_MODEL`，生产级） /
+  `fixture`（直接载入已抽 JSON）。
+- **抽取规范**：复用 `tools/spikes/extraction_demo/prompt.md`——断言四层 + 年份一律留 `era_text` 年号
+  （换算交给 `reign_era`）+ 反幻觉约束（只抽原文/学界公认，gap 不强行合并）。
+- **时间本体接缝**：每条 `time.era_text`（如「万历四十七年三月」）经 `tools/reign_era.py`
+  `normalize_year()` 归一化为公元年写回 `time.start`，**所有史料共用一把公元尺**。
+- **输出兼容**：产物是 JSONL，字段与 demo `assertions.jsonl` 完全一致，可直接喂 `build.py`；
+  `--scene <id>` 追加进已注册场景即「导入即呈现」。
+- **守门**：ingestion 产物必须过现有闸门（lint/test/leads/build）；年号换算单测
+  （`tools/test_reign.py`，已进 `gates.py`）钉死 `ERAS` 数据，脏年号会被拦在提交前。
+
 人工校验环节（DH）只补 `quote` / 修正 `party`，不重写结构。
 
 ## 8. 辽东 demo → 通用 world 迁移对照
