@@ -53,6 +53,29 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import reign_era as R
 
+
+def _load_dotenv():
+    """读取项目根目录 .env（gitignored）注入环境变量，便于长期持久化 key。
+
+    仅 setdefault，不覆盖已存在的环境变量（shell 里手动设的优先）。
+    """
+    p = os.path.join(ROOT, ".env")
+    if not os.path.exists(p):
+        return
+    with open(p, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if line.startswith("export "):
+                line = line[len("export "):]
+            if "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            k, v = k.strip(), v.strip().strip('"').strip("'")
+            os.environ.setdefault(k, v)
+    print("[env] 已从 .env 载入本地密钥配置（gitignored，不入提交）")
+
 REQUIRED = ["id", "subject", "predicate", "layer", "time", "source", "confidence"]
 LAYERS = {"record", "scholarship", "inference", "gap"}
 PROMPT_TMPL = os.path.join(ROOT, "tools", "spikes", "extraction_demo", "prompt.md")
@@ -68,27 +91,45 @@ def _read_source(path):
         return f.read()
 
 
-def _build_prompt(text):
-    """复用 prompt.md 的契约，把史料塞进去，要求返回断言四层 JSON 数组。"""
+def _build_prompt(text, id_space=None):
+    """复用 prompt.md 的契约，把史料塞进去，要求返回断言四层 JSON 数组。
+
+    id_space: 可选 {persons:[...], places:[...], sources:[...]}，即目标场景已登记实体
+    白名单；传入后追加到合规约束，要求 LLM 只使用这些 id（避免编造 id 触发 lint E08，
+    正是 v0.14 踩过的「person id 拼写错→静默断链」坑）。"""
     contract = ""
     try:
         with open(PROMPT_TMPL, encoding="utf-8") as f:
             contract = f.read()
     except Exception:
         contract = "(prompt.md 未找到)"
+    ex_src = (id_space or {}).get("sources", ["huangqing_kaiguo_fanglue"])[0]
     compliance = (
         "【本项目 vocab 单一真值合规约束（违反会被 lint 闸门拦截，必须严格遵守）】\n"
         "- quote_status 只能取 verbatim / paraphrase_unverified / generated 之一；"
         "从史料抽取且尚未经 DH 核验者一律用 paraphrase_unverified，不要用 primary_extract。\n"
-        "- subject 不要用 event: 前缀（本场景无 events.json，会触发 lint W05）；"
-        "改用 war: / army: / person: / place: 等既有前缀。\n"
-        "- source 必须用已登记 id；本史料登记为 huangqing_kaiguo_fanglue。\n"
+        "- subject 可用 event: 前缀表示本切片已登记的核心战役/事件（见白名单 events）。"
+        "凡**直接描述某场战役/事件本身**的断言（谁攻谁、城破、将领死战、战役结果等），"
+        "subject 必须用 event:<事件id>，不要用 person:/place: 笼统带过——"
+        "否则该断言不会计入该事件的「三方史料共振」，变成孤儿数据。\n"
+        "- 生物/地理/军政实体（某人生平、某城建置沿革、某军建制等）仍用 person:/place:/war:/army: 前缀，正常。\n"
+        "- source 只能用白名单列出的已登记 id（见下）。\n"
         "- layer=gap 的断言必须含 lead 对象：{\"where\":\"...\",\"skills\":[...],\"accept\":\"...\"}。\n"
         "- record 层必须有非空 quote（直接引文）。\n"
-        "- place 用已登记地点 id（如 shenyang / fushunguan / sarhu / hetuala），"
-        "不确定的留空并在 note 说明。\n"
+        "- place 用白名单里的已登记地点 id；不在白名单的地点不要新建，改在 note 里说明。\n"
+        "- value_text 与 quote 都控制在 30 字以内的精炼陈述/引文，不要展开叙述。\n"
+        "- 每个史料只抽 8–12 条最有信息量的断言，宁缺毋滥，不要凑数。\n"
         "- 只返回 JSON 数组，不要 markdown 代码块、不要任何解释文字。\n\n"
     )
+    if id_space:
+        compliance += (
+            "【本场景已登记实体白名单——subject 的 person:/place:/event: 以及 source 只能用它列出的 id，"
+            "未列出的实体不要新建，改在 note 里注明】\n"
+            "person: " + "、".join(id_space.get("persons", [])) + "\n"
+            "place:  " + "、".join(id_space.get("places", [])) + "\n"
+            "event:  " + "、".join(id_space.get("events", [])) + "\n"
+            "source: " + "、".join(id_space.get("sources", [])) + "\n\n"
+        )
     return (
         "你是历史史料结构化抽取器。严格按下面的「输出契约」与「四层抽取规则」\n"
         "把史料变成断言四层 JSON 数组（只返回 JSON，不要解释）。\n\n"
@@ -98,11 +139,11 @@ def _build_prompt(text):
         "【输出】只输出 JSON 数组，例如：\n"
         '[{"id":"SX001","subject":"war:sarhu","predicate":"爆发","value_text":"...",'
         '"time":{"era_text":"万历四十七年三月"},"place":"sarhu",'
-        '"source":"huangqing_kaiguo_fanglue",'
+        '"source":"__EX_SRC__",'
         '"quote":"...","quote_status":"paraphrase_unverified","layer":"record",'
         '"confidence":0.9,"scale":"empire","note":""}]\n'
         "再次强调：time 只给 era_text（年号），不要自己换算公元年。"
-    )
+    ).replace("__EX_SRC__", ex_src)
 
 
 def _call_llm(prompt):
@@ -118,6 +159,7 @@ def _call_llm(prompt):
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0,
+        "max_tokens": 16000,
         "stream": False,
     }).encode("utf-8")
     req = urllib.request.Request(
@@ -141,16 +183,30 @@ def _report_usage(model, usage):
 
 
 def _extract_json_array(text):
-    """从 LLM 文本里抠出第一个 JSON 数组。"""
+    """从 LLM 文本里抠出第一个 JSON 数组；若被 token 上限截断，尝试自愈。"""
     s = text.find("[")
     e = text.rfind("]")
-    if s == -1 or e == -1 or e < s:
+    if s == -1 or e <= s:
         raise ValueError("LLM 返回中找不到 JSON 数组")
-    return json.loads(text[s:e + 1])
+    try:
+        return json.loads(text[s:e + 1])
+    except json.JSONDecodeError:
+        pass
+    # 截断自愈：从 [ 起到末尾，裁掉最后一个不完整对象后补 ]。
+    # 例：[ {...}, {...},  -> 取到最后一个 } -> [{...},{...}]
+    frag = text[s:]
+    last = frag.rfind("}")
+    if last == -1:
+        raise ValueError("LLM 返回的 JSON 数组被截断且无法修复")
+    candidate = frag[:last + 1] + "]"
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError as ex:
+        raise ValueError("LLM 返回的 JSON 数组被截断且无法修复: %s" % ex)
 
 
-def extract_llm(text):
-    prompt = _build_prompt(text)
+def extract_llm(text, id_space=None):
+    prompt = _build_prompt(text, id_space)
     raw, usage = _call_llm(prompt)
     if raw is None:
         raise RuntimeError(
@@ -249,6 +305,34 @@ def write_jsonl(assertions, out_path):
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
 
 
+def scene_id_space(scene_id):
+    """读目标场景已登记的 person/place/source/event id，作为 LLM 抽取白名单，
+    从源头杜绝编造 id（避免 lint E08 / 静默断链）。
+
+    event 取 events.json 里的 ``subject`` 字段（如 event:liaoyang_fall），因为断言的
+    subject 命名空间用的是 subject，而不是 events.json 的条目 id（ev_liaoyang_fall）。
+    这正好解决了 v0.14/前几波抽取「明方断言全写成 person:/place: 导致事件共振表缺明方」
+    的孤儿问题——白名单里列出 event:<id>，prompt 再强制核心战役断言用 event:<id> 即可挂钩。"""
+    d = os.path.join(ROOT, "data", scene_id)
+    space = {"persons": [], "places": [], "sources": [], "events": []}
+    spec = (("persons", "persons", None), ("places", "places", None),
+            ("sources", "sources", None), ("events", "events", "subject"))
+    for name, key, sub in spec:
+        p = os.path.join(d, name + ".json")
+        if not os.path.exists(p):
+            continue
+        try:
+            obj = json.load(open(p, encoding="utf-8"))
+        except Exception:
+            continue
+        items = obj.get(key, [])
+        if sub:
+            space[key] = [x.get(sub) for x in items if x.get(sub)]
+        else:
+            space[key] = [x.get("id") for x in items if x.get("id")]
+    return space
+
+
 def append_to_scene(assertions, scene_id):
     """把断言追加进某已注册场景的 assertions.jsonl（--scene 时）。
 
@@ -268,6 +352,7 @@ def append_to_scene(assertions, scene_id):
 
 
 def main():
+    _load_dotenv()  # 载入 .env（gitignored 本地密钥），再读命令行参数
     ap = argparse.ArgumentParser(description="史料 ingestion 管线（断言四层 + 年号归一化）")
     ap.add_argument("--source", help="原始史料文本路径")
     ap.add_argument("--text", help="直接传史料文本（与 --source 二选一）")
@@ -276,7 +361,11 @@ def main():
     ap.add_argument("--fixture", help="provider=fixture 时的已抽 JSON 路径")
     ap.add_argument("--out", help="输出 JSONL 路径（默认打印到 stdout 不写文件）")
     ap.add_argument("--scene", help="把归一化断言追加进该场景的 assertions.jsonl")
+    ap.add_argument("--context", help="仅加载该场景的实体白名单进 prompt（用于约束 LLM id），"
+                                        "但不自动追加；配合 --out 产出待合规化文件")
     ap.add_argument("--run-gates", action="store_true", help="写完后跑 tools/gates.py --no-interaction")
+    ap.add_argument("--lenient", action="store_true",
+                    help="丢弃无法归一化年份/缺必填/层非法的断言后继续（不伪造年份），其余照常落库")
     args = ap.parse_args()
 
     # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
@@ -303,8 +392,17 @@ def main():
             assertions = extract_heuristic(text)
             print("[ingest] heuristic 抽取 %d 条年号提及" % len(assertions))
         else:  # llm
+            id_space = (scene_id_space(args.context) if args.context
+                        else scene_id_space(args.scene) if args.scene else None)
+            if id_space and id_space["sources"]:
+                print("[ingest] 已加载场景 %s 实体白名单（person %d / place %d / source %d），"
+                      "将约束 LLM 只使用已登记 id"
+                      % (args.scene, len(id_space["persons"]),
+                         len(id_space["places"]), len(id_space["sources"])))
+            else:
+                print("[ingest] 未指定 --scene 或场景无实体，LLM 不限白名单（产出需人工校正 id）")
             print("[ingest] 调用 LLM 抽取 ...")
-            assertions = extract_llm(text)
+            assertions = extract_llm(text, id_space)
             print("[ingest] LLM 抽取 %d 条" % len(assertions))
 
     if not isinstance(assertions, list) or not assertions:
@@ -315,7 +413,22 @@ def main():
     ok, fail, by_layer = normalize_and_validate(assertions)
     print("\n各 layer 条数:", by_layer)
     print("ingest 校验: %d ok, %d fail" % (ok, fail))
-    if fail:
+    if args.lenient:
+        def _ok(a):
+            if a.get("layer") not in LAYERS:
+                return False
+            if not (a.get("time") or {}).get("gregorian_year"):
+                return False
+            for f in REQUIRED:
+                if not a.get(f):
+                    return False
+            return True
+        dropped = [a for a in assertions if not _ok(a)]
+        if dropped:
+            print("[lenient] 丢弃 %d 条不合规断言（不伪造年份）：%s"
+                  % (len(dropped), ", ".join(str(a.get("id")) for a in dropped)))
+            assertions = [a for a in assertions if _ok(a)]
+    if fail and not args.lenient:
         print("[FAIL] 有断言未通过校验，阻断。"); return 1
 
     # 3) 写出

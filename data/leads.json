@@ -540,6 +540,70 @@
    "_src_line": 46
   },
   {
+   "id": "SX015",
+   "scene": "sarhu",
+   "subject": "war:sarhu",
+   "title": "號大兵四十七萬",
+   "missing": "历史考证 / 文献比对",
+   "where": "mingshi",
+   "skills": [
+    "历史考证",
+    "文献比对"
+   ],
+   "accept": "核实萨尔浒之战明军实际兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 75
+  },
+  {
+   "id": "SX022_M1",
+   "scene": "sarhu",
+   "subject": "person:yanggao",
+   "title": "鎬大懼，狼狽先奔",
+   "missing": "历史考证 / 人物评价",
+   "where": "mingshi",
+   "skills": [
+    "历史考证",
+    "人物评价"
+   ],
+   "accept": "评估杨镐在蔚山之战中的具体责任",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 82
+  },
+  {
+   "id": "SX023_M1",
+   "scene": "sarhu",
+   "subject": "person:yanggao",
+   "title": "鎬以如梅未至，不欲寅功出其上，遽鳴金收軍",
+   "missing": "历史考证 / 人物评价",
+   "where": "mingshi",
+   "skills": [
+    "历史考证",
+    "人物评价"
+   ],
+   "accept": "评估杨镐在蔚山之战中的具体责任",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 83
+  },
+  {
+   "id": "SX024",
+   "scene": "sarhu",
+   "subject": "person:yanggao",
+   "title": "鎬大怒，屏不奏，止稱百餘人",
+   "missing": "历史考证 / 人物评价",
+   "where": "mingshi",
+   "skills": [
+    "历史考证",
+    "人物评价"
+   ],
+   "accept": "评估杨镐在蔚山之战中的具体责任",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 84
+  },
+  {
    "id": "S021",
    "scene": "shenyang",
    "subject": "place:shenyang_cheng",

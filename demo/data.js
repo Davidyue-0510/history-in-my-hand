@@ -7196,7 +7196,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽东经略",
      "column": null,
      "note": "四路总调度，战后下狱，崇祯二年伏诛",
-     "influence": 1
+     "influence": 8
     },
     {
      "id": "dusong",
@@ -7205,7 +7205,7 @@ window.SANDBOX_DATA = {
      "role_hint": "山海关总兵",
      "column": "west",
      "note": "西路主将，绰号杜疯子，以勇著称",
-     "influence": 1
+     "influence": 3
     },
     {
      "id": "wangxuan",
@@ -7232,7 +7232,7 @@ window.SANDBOX_DATA = {
      "role_hint": "开原总兵",
      "column": "north",
      "note": "北路主将，名将马芳之子，文士气重",
-     "influence": 2
+     "influence": 4
     },
     {
      "id": "panzongyan",
@@ -7259,7 +7259,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽东总兵",
      "column": "south",
      "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
-     "influence": 2
+     "influence": 3
     },
     {
      "id": "liuting",
@@ -7268,7 +7268,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽阳总兵",
      "column": "east",
      "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
-     "influence": 2
+     "influence": 4
     },
     {
      "id": "qiaoyilang",
@@ -8660,6 +8660,542 @@ window.SANDBOX_DATA = {
      "scale": "county",
      "note": "",
      "_party": "清修官史"
+    },
+    {
+     "id": "SX001",
+     "subject": "person:yanggao",
+     "predicate": "任命",
+     "value_text": "起兵部右侍郎往經略",
+     "time": {
+      "era_text": "万历四十六年",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "廷議鎬熟諳遼事，起兵部右侍郎往經略。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "杨镐被任命为经略。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "person:yanggao",
+     "predicate": "集兵",
+     "value_text": "征四方兵，圖大舉",
+     "time": {
+      "era_text": "万历四十六年",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "既至，申明紀律，征四方兵，圖大舉。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "war:sarhu",
+     "predicate": "爆发",
+     "value_text": "兵分四道",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "mingshi",
+     "quote": "明年正月，鎬乃會總督汪可受、巡撫周永春、巡按陳王庭等定議，以二月十有一日誓師，二十一日出塞。兵分四道：總兵官馬林出開原攻北，杜松出撫順攻西，李如柏從鴉鶻關出趨清河攻南，東南則以劉綎出寬奠，由涼馬佃搗後，而以朝鮮兵助之。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "萨尔浒之战爆发，明军分四路进攻。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "army:ming_total",
+     "predicate": "兵力",
+     "value_text": "號大兵四十七萬",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "號大兵四十七萬，期三月二日會二道關並進。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.8,
+     "scale": "empire",
+     "note": "此为号称兵力，实际兵力可能少于该数。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005_M1",
+     "subject": "person:dusong",
+     "predicate": "出击路线",
+     "value_text": "出撫順攻西",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "杜松出撫順攻西",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006_M1",
+     "subject": "person:malin",
+     "predicate": "出击路线",
+     "value_text": "出開原攻北",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "kaiyuan",
+     "source": "mingshi",
+     "quote": "總兵官馬林出開原攻北",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007_M1",
+     "subject": "person:liruobai",
+     "predicate": "出击路线",
+     "value_text": "從鴉鶻關出趨清河攻南",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "yahuguan",
+     "source": "mingshi",
+     "quote": "李如柏從鴉鶻關出趨清河攻南",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "person:liuting",
+     "predicate": "出击路线",
+     "value_text": "出寬奠，由涼馬佃搗後",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "kuandian",
+     "source": "mingshi",
+     "quote": "東南則以劉綎出寬奠，由涼馬佃搗後",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "person:dusong",
+     "predicate": "阵亡",
+     "value_text": "軍盡覆",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "mingshi",
+     "quote": "松欲立首功，先期渡渾河，進至二道關，伏發，軍盡覆。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "杜松军覆没。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010_M1",
+     "subject": "person:malin",
+     "predicate": "战败",
+     "value_text": "林不支，遂大敗，遁去",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sanchaer",
+     "source": "mingshi",
+     "quote": "林統開原兵從三岔口出，聞松敗，結營自固。大清兵乘高奮擊，林不支，遂大敗，遁去。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "person:liuting",
+     "predicate": "阵亡",
+     "value_text": "綎力戰死",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenhe",
+     "source": "mingshi",
+     "quote": "綎已深入三百里，至深河，大清兵擊之而不動。已，乃張松旗幟，被其衣甲，紿綎。既入營，營中大亂，綎力戰死。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "刘綎战死。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012_M1",
+     "subject": "war:sarhu",
+     "predicate": "伤亡",
+     "value_text": "文武將吏前後死者三百一十餘人，軍士四萬五千八百餘人",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "mingshi",
+     "quote": "文武將吏前後死者三百一十餘人，軍士四萬五千八百餘人，亡失馬駝甲仗無算。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "明军总伤亡数字。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX013_M1",
+     "subject": "person:yanggao",
+     "predicate": "下狱",
+     "value_text": "逮下詔獄，論死",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "言官交章劾鎬，逮下詔獄，論死。伏法。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "杨镐因战败被下狱处死。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX014_M1",
+     "subject": "person:yanggao",
+     "predicate": "战前准备",
+     "value_text": "申明紀律，征四方兵",
+     "time": {
+      "era_text": "万历四十六年",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "既至，申明紀律，征四方兵，圖大舉。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX015",
+     "subject": "war:sarhu",
+     "predicate": "兵力对比",
+     "value_text": "號大兵四十七萬",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "號大兵四十七萬",
+     "quote_status": "paraphrase_unverified",
+     "layer": "gap",
+     "confidence": 0,
+     "scale": "empire",
+     "note": "明史记载号称四十七万，但实际兵力可能远少于此，需进一步考证。",
+     "lead": {
+      "where": "mingshi",
+      "skills": [
+       "历史考证",
+       "文献比对"
+      ],
+      "accept": "核实萨尔浒之战明军实际兵力"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX016",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大懼，狼狽先奔",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "鎬大懼，狼狽先奔，諸軍繼之。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "杨镐在蔚山之战中先逃。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX017_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬以如梅未至，不欲寅功出其上，遽鳴金收軍",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "及是，遊擊陳寅連破賊二柵，第三柵垂拔矣，鎬以如梅未至，不欲寅功出其上，遽鳴金收軍。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX018_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大怒，屏不奏，止稱百餘人",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "諸營上軍籍，士卒死亡殆二萬，鎬大怒，屏不奏，止稱百餘人。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "杨镐隐瞒伤亡数字。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX019_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大懼，狼狽先奔",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "鎬大懼，狼狽先奔，諸軍繼之。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "inference",
+     "confidence": 0.7,
+     "scale": "empire",
+     "note": "杨镐在蔚山之战中先逃，导致明军溃败。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX020_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬以如梅未至，不欲寅功出其上，遽鳴金收軍",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "及是，遊擊陳寅連破賊二柵，第三柵垂拔矣，鎬以如梅未至，不欲寅功出其上，遽鳴金收軍。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "inference",
+     "confidence": 0.7,
+     "scale": "empire",
+     "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX021_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大怒，屏不奏，止稱百餘人",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "諸營上軍籍，士卒死亡殆二萬，鎬大怒，屏不奏，止稱百餘人。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "inference",
+     "confidence": 0.7,
+     "scale": "empire",
+     "note": "杨镐隐瞒伤亡数字，导致朝廷无法了解真实情况。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX022_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大懼，狼狽先奔",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "鎬大懼，狼狽先奔，諸軍繼之。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "gap",
+     "confidence": 0,
+     "scale": "empire",
+     "note": "杨镐在蔚山之战中先逃，但具体责任划分需进一步考证。",
+     "lead": {
+      "where": "mingshi",
+      "skills": [
+       "历史考证",
+       "人物评价"
+      ],
+      "accept": "评估杨镐在蔚山之战中的具体责任"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX023_M1",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬以如梅未至，不欲寅功出其上，遽鳴金收軍",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "及是，遊擊陳寅連破賊二柵，第三柵垂拔矣，鎬以如梅未至，不欲寅功出其上，遽鳴金收軍。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "gap",
+     "confidence": 0,
+     "scale": "empire",
+     "note": "杨镐因嫉妒而鸣金收兵，但具体动机需进一步考证。",
+     "lead": {
+      "where": "mingshi",
+      "skills": [
+       "历史考证",
+       "人物评价"
+      ],
+      "accept": "评估杨镐在蔚山之战中的具体责任"
+     },
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX024",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "value_text": "鎬大怒，屏不奏，止稱百餘人",
+     "time": {
+      "era_text": "万历二十六年",
+      "start": "1598-01-01",
+      "end": "1598-12-31",
+      "gregorian_year": 1598
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "諸營上軍籍，士卒死亡殆二萬，鎬大怒，屏不奏，止稱百餘人。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "gap",
+     "confidence": 0,
+     "scale": "empire",
+     "note": "杨镐隐瞒伤亡数字，但具体原因需进一步考证。",
+     "lead": {
+      "where": "mingshi",
+      "skills": [
+       "历史考证",
+       "人物评价"
+      ],
+      "accept": "评估杨镐在蔚山之战中的具体责任"
+     },
+     "_party": "清修·明臣"
     }
    ],
    "conflicts": [
@@ -8668,7 +9204,7 @@ window.SANDBOX_DATA = {
      "subject": "army:ming_total",
      "predicate": "兵力",
      "kind": "record_vs_scholarship",
-     "count": 7,
+     "count": 8,
      "spread": 5.34,
      "assertion_ids": [
       "A001",
@@ -8677,7 +9213,8 @@ window.SANDBOX_DATA = {
       "A004",
       "SX005",
       "SX006",
-      "SX007"
+      "SX007",
+      "SX004"
      ]
     },
     {
@@ -8715,11 +9252,55 @@ window.SANDBOX_DATA = {
       "A042",
       "A043"
      ]
+    },
+    {
+     "id": "cf:person:dusong|阵亡",
+     "subject": "person:dusong",
+     "predicate": "阵亡",
+     "kind": "record_vs_record",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "IN004",
+      "SX009"
+     ]
+    },
+    {
+     "id": "cf:person:liuting|阵亡",
+     "subject": "person:liuting",
+     "predicate": "阵亡",
+     "kind": "record_vs_record",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "SX014",
+      "SX011"
+     ]
+    },
+    {
+     "id": "cf:person:yanggao|战败责任",
+     "subject": "person:yanggao",
+     "predicate": "战败责任",
+     "kind": "record_vs_record",
+     "count": 6,
+     "spread": null,
+     "assertion_ids": [
+      "SX016",
+      "SX017_M1",
+      "SX018_M1",
+      "SX019_M1",
+      "SX020_M1",
+      "SX021_M1"
+     ]
     }
    ],
    "gaps": [
     "A092",
-    "IN007"
+    "IN007",
+    "SX015",
+    "SX022_M1",
+    "SX023_M1",
+    "SX024"
    ],
    "routes": [
     {
@@ -11852,7 +12433,7 @@ window.SANDBOX_DATA = {
      "role": "辽东经略",
      "side": "ming",
      "note": "巡按辽东, 勘奏弃宽甸六堡非策, 后任经略",
-     "influence": 0
+     "influence": 10
     },
     {
      "id": "yanghao",
@@ -12191,6 +12772,237 @@ window.SANDBOX_DATA = {
      "quote": "后金天命六年 (天启元年, 1621) 努尔哈赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取沈阳。",
      "note": "开铁陷落为熊廷弼复出背景。",
      "_party": "学界"
+    },
+    {
+     "id": "TX002",
+     "subject": "person:xiongtingbing",
+     "predicate": "经略辽东",
+     "value_text": "代杨镐经略辽东",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "代鎬經略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX003",
+     "subject": "event:tieling_fall",
+     "predicate": "失陷",
+     "value_text": "铁岭复失，沈阳及诸城堡军民尽窜",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "tieling_cheng",
+     "source": "mingshi",
+     "quote": "甫出关，铁岭复失，沈阳及诸城堡军民一时尽窜",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "明史记熊廷弼出关时铁岭复失",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX004",
+     "subject": "person:xiongtingbing",
+     "predicate": "上言",
+     "value_text": "开原为河东根本，不可弃",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "kaiyuan_cheng",
+     "source": "mingshi",
+     "quote": "欲保遼東則開原必不可棄",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX005",
+     "subject": "person:xiongtingbing",
+     "predicate": "集兵",
+     "value_text": "请集兵十八万",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "請集兵十八萬",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "兵力部署计划",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX006",
+     "subject": "person:xiongtingbing",
+     "predicate": "巡历",
+     "value_text": "自虎皮驿抵沈阳，乘雪夜赴抚顺",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "mingshi",
+     "quote": "自虎皮驛抵瀋陽，復乘雪夜赴撫順",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX007",
+     "subject": "person:xiongtingbing",
+     "predicate": "斩逃将",
+     "value_text": "斩逃将刘遇节等",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "斬逃將劉遇節、王捷、王文鼎",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX008",
+     "subject": "person:xiongtingbing",
+     "predicate": "守备",
+     "value_text": "数月守备大固",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "令嚴法行，數月守備大固",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX009",
+     "subject": "person:xiongtingbing",
+     "predicate": "被劾",
+     "value_text": "被姚宗文等弹劾",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "給事中姚宗文騰謗於朝",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "时间推断为泰昌元年",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX010",
+     "subject": "person:xiongtingbing",
+     "predicate": "乞罢",
+     "value_text": "缴还尚方剑，力求罢斥",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "遂繳還尚方劍，力求罷斥",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX011",
+     "subject": "person:xiongtingbing",
+     "predicate": "功过",
+     "value_text": "功在存辽，罪在负君",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang",
+     "source": "mingshi",
+     "quote": "廷弼功在存遼，微勞雖有可紀；罪在負君，大義實無所逃",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "朱童蒙评语",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "TX012",
+     "subject": "person:xiongtingbing",
+     "predicate": "性格",
+     "value_text": "性刚负气，好谩骂",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "然性剛負氣，好謾駡，不為人下",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
     }
    ],
    "conflicts": [
@@ -12978,7 +13790,7 @@ window.SANDBOX_DATA = {
      "role": "辽东经略",
      "side": "ming",
      "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任",
-     "influence": 0
+     "influence": 13
     },
     {
      "id": "ye_wang",
@@ -13343,6 +14155,405 @@ window.SANDBOX_DATA = {
       "effort": "1 周"
      },
      "_party": "二手综述"
+    },
+    {
+     "id": "SX001",
+     "subject": "person:yuan_yingtai",
+     "predicate": "官职任命",
+     "value_text": "代廷弼为经略",
+     "time": {
+      "era_text": "泰昌元年九月",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "代廷弼為經略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "原文未明确纪年，据上下文推断为泰昌元年九月。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "person:yuan_yingtai",
+     "predicate": "战略规划",
+     "value_text": "议用兵十八万，大将十人",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "議用兵十八萬，大將十人",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "person:yuan_yingtai",
+     "predicate": "招降政策",
+     "value_text": "下令招降蒙古诸部",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "乃下令招降",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "降人处之辽、沈二城。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "person:yuan_yingtai",
+     "predicate": "政策后果",
+     "value_text": "降人潜行淫掠，居民苦之",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "潛行淫掠，居民苦之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.8,
+     "scale": "province",
+     "note": "议者言收降过多，或为敌用。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005",
+     "subject": "war:liaoshen",
+     "predicate": "爆发",
+     "value_text": "大清兵来攻沈阳",
+     "time": {
+      "era_text": "天启元年三月十二日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "我大清兵來攻瀋陽",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006",
+     "subject": "war:liaoshen",
+     "predicate": "城破",
+     "value_text": "降人内应，沈阳城破",
+     "time": {
+      "era_text": "天启元年三月十三日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "降人果內應，城遂破",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "贺世贤、尤世功战死。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007",
+     "subject": "person:yuan_yingtai",
+     "predicate": "防御部署",
+     "value_text": "撤奉集、威宁诸军，并力守辽阳",
+     "time": {
+      "era_text": "天启元年三月",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "撤奉集、威甯諸軍，並力守遼陽",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "war:liaoshen",
+     "predicate": "决战",
+     "value_text": "大清兵临城，明军迎战败绩",
+     "time": {
+      "era_text": "天启元年三月十九日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "十有九日，大清兵臨城",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁应泰督诸将出城五里迎战，军败多死。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "person:yuan_yingtai",
+     "predicate": "阵亡",
+     "value_text": "城破自缢死",
+     "time": {
+      "era_text": "天启元年三月廿一日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "遂佩劍印自縊死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "大清兵从小西门入，城中大乱。",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "person:yuan_yingtai",
+     "predicate": "招降动机",
+     "value_text": "不急救则彼必归敌，是益之兵也",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "我不急救，則彼必歸敵，是益之兵也",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012",
+     "subject": "person:yuan_yingtai",
+     "predicate": "誓师",
+     "value_text": "刑白马祀神，誓以身委辽",
+     "time": {
+      "era_text": "泰昌元年九月",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "刑白馬祀神，誓以身委遼",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX001_M1",
+     "subject": "person:yuan_yingtai",
+     "predicate": "官职",
+     "value_text": "代廷弼为经略",
+     "time": {
+      "era_text": "泰昌元年九月",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "代廷弼為經略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁应泰接替熊廷弼任辽东经略",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006_M1",
+     "subject": "person:yuan_yingtai",
+     "predicate": "战略",
+     "value_text": "议用兵十八万，大将十人",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "議用兵十八萬，大將十人，上奏陳方略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁应泰谋进取抚顺的方略",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007_M1",
+     "subject": "person:yuan_yingtai",
+     "predicate": "招降",
+     "value_text": "下令招降蒙古诸部",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "乃下令招降。於是歸者日眾，處之遼、瀋二城",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁应泰招降蒙古饥民，安置于辽阳、沈阳",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008_M1",
+     "subject": "event:liaoyang_fall",
+     "predicate": "城破",
+     "value_text": "大清兵从小西门入，城破",
+     "time": {
+      "era_text": "天启元年三月十九日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "薄暮，譙樓火，大清兵從小西門入，城中大亂",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "辽阳城破，袁应泰自缢死",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009_M1",
+     "subject": "event:liaoyang_fall",
+     "predicate": "将领阵亡",
+     "value_text": "贺世贤、尤世功战死",
+     "time": {
+      "era_text": "天启元年三月十二日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "總兵官賀世賢、尤世功出城力戰，敗還。明日，降人果內應，城遂破，二將戰死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "沈阳城破，贺世贤、尤世功战死",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010",
+     "subject": "event:liaoyang_fall",
+     "predicate": "将领阵亡",
+     "value_text": "陈策、童仲揆赴援战死",
+     "time": {
+      "era_text": "天启元年三月十三日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "hun_he",
+     "source": "mingshi",
+     "quote": "總兵官陳策、童仲揆等赴援，亦戰死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "陈策、童仲揆援辽阳途中战死",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011_M1",
+     "subject": "person:yuan_yingtai",
+     "predicate": "死亡",
+     "value_text": "佩剑印自缢死",
+     "time": {
+      "era_text": "天启元年三月二十一日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "遂佩劍印自縊死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁应泰在辽阳城破后自缢",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012_M1",
+     "subject": "person:yuan_yingtai",
+     "predicate": "评价",
+     "value_text": "用兵非所长，规画颇疏",
+     "time": {
+      "era_text": "天启元年",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "應泰曆官精敏強毅，用兵非所長，規畫頗疏",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "《明史》对袁应泰的军事能力评价",
+     "_party": "清修·明臣"
     }
    ],
    "conflicts": [
@@ -13356,6 +14567,18 @@ window.SANDBOX_DATA = {
      "assertion_ids": [
       "L011",
       "L011b"
+     ]
+    },
+    {
+     "id": "cf:event:liaoyang_fall|将领阵亡",
+     "subject": "event:liaoyang_fall",
+     "predicate": "将领阵亡",
+     "kind": "record_vs_record",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "SX009_M1",
+      "SX010"
      ]
     }
    ],
@@ -13806,7 +15029,7 @@ window.SANDBOX_DATA = {
      "alias": "袁自如",
      "role": "辽东巡抚",
      "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢",
-     "influence": 0
+     "influence": 9
     },
     {
      "id": "he_shixian",
@@ -14259,6 +15482,258 @@ window.SANDBOX_DATA = {
      "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
      "note": "同 S001 的另一条叙事, 此处为事件主语。",
      "_party": "明廷官方"
+    },
+    {
+     "id": "SX001",
+     "subject": "person:yuan_yingtai",
+     "predicate": "官职任命",
+     "value_text": "代廷弼为经略",
+     "time": {
+      "era_text": "泰昌元年九月",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "擢兵部右侍郎兼前职，代廷弼为经略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "原文未明确纪年，据上下文推断为泰昌元年九月",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "person:yuan_yingtai",
+     "predicate": "战略规划",
+     "value_text": "议用兵十八万，大将十人",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "议用兵十八万，大将十人，上奏陈方略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "person:yuan_yingtai",
+     "predicate": "招降政策",
+     "value_text": "下令招降蒙古诸部",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "乃下令招降。于是归者日众，处之辽、沈二城",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "person:yuan_yingtai",
+     "predicate": "政策争议",
+     "value_text": "收降过多，或为敌用",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "议者言收降过多，或阴为敌用，或敌杂间谍其中为内应",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005",
+     "subject": "war:shenyang_fall",
+     "predicate": "城破",
+     "value_text": "沈阳城破，降人内应",
+     "time": {
+      "era_text": "天启元年三月十三日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "明日，降人果内应，城遂破，二将战死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "原文未明确纪日，据上下文推断",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006",
+     "subject": "person:yuan_yingtai",
+     "predicate": "防御部署",
+     "value_text": "撤奉集、威宁诸军，并力守辽阳",
+     "time": {
+      "era_text": "天启元年三月",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "应泰乃撤奉集、威宁诸军，并力守辽阳",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007",
+     "subject": "war:liaoyang_fall",
+     "predicate": "城破",
+     "value_text": "辽阳城破，大清兵从小西门入",
+     "time": {
+      "era_text": "天启元年三月二十一日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "薄暮，谯楼火，大清兵从小西门入，城中大乱",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "原文未明确纪日，据上下文推断",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "person:yuan_yingtai",
+     "predicate": "阵亡",
+     "value_text": "自缢死",
+     "time": {
+      "era_text": "天启元年三月二十一日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "遂佩剑印自缢死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "person:yuan_yingtai",
+     "predicate": "性格评价",
+     "value_text": "用兵非所长，规画颇疏",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "应泰历官精敏强毅，用兵非所长，规画颇疏",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010",
+     "subject": "person:yuan_yingtai",
+     "predicate": "政策对比",
+     "value_text": "以宽矫廷弼之严",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "廷弼在边，持法严，部伍整肃，应泰以宽矫之，多所更易",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "person:yuan_yingtai",
+     "predicate": "战略失误",
+     "value_text": "招降蒙古致内应之祸",
+     "time": {
+      "era_text": "天启元年三月",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "降人果内应，城遂破",
+     "quote_status": "paraphrase_unverified",
+     "layer": "inference",
+     "confidence": 0.7,
+     "scale": "county",
+     "note": "原文未明说，但据前后文可推出",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012",
+     "subject": "person:yuan_yingtai",
+     "predicate": "死亡原因",
+     "value_text": "城破自缢，非战死",
+     "time": {
+      "era_text": "天启元年三月二十一日",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "liaoyang_cheng",
+     "source": "mingshi",
+     "quote": "遂佩剑印自缢死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修·明臣"
     }
    ],
    "conflicts": [],
@@ -14675,9 +16150,274 @@ window.SANDBOX_DATA = {
       "effort": "2-4 周"
      },
      "_party": "清修·明臣"
+    },
+    {
+     "id": "SX001",
+     "subject": "event:fushun_fall",
+     "predicate": "城破",
+     "value_text": "大清兵破抚顺，守将王命印死之",
+     "time": {
+      "era_text": "万历四十六年四月",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "四十六年四月，我大清兵起，破撫順，守將王命印死之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "明史视角，称'我大清兵'",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "event:fushun_fall",
+     "predicate": "明军援救",
+     "value_text": "张承允、颇廷相等俱战殁",
+     "time": {
+      "era_text": "万历四十六年四月",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "遼東巡撫李維翰趣總兵官張承允往援，與副總兵頗廷相等俱戰歿",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "event:fushun_fall",
+     "predicate": "后续影响",
+     "value_text": "远近大震，杨镐被起用",
+     "time": {
+      "era_text": "万历四十六年四月",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "遠近大震。廷議鎬熟諳遼事，起兵部右侍郎往經略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "event:fushun_fall",
+     "predicate": "后续战事",
+     "value_text": "大清兵克清河，邹储贤战死",
+     "time": {
+      "era_text": "万历四十六年七月",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "至七月，大清兵由鴉鶻關克清河，副將鄒儲賢戰死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "清河非白名单地点，未映射",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005",
+     "subject": "event:fushun_fall",
+     "predicate": "集兵",
+     "value_text": "四方援兵大集，议进师",
+     "time": {
+      "era_text": "万历四十六年冬",
+      "start": "1618-01-01",
+      "end": "1618-12-31",
+      "gregorian_year": 1618
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "其冬，四方援兵大集，遂議進師",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "地点为推断，原文未明言",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006",
+     "subject": "event:fushun_fall",
+     "predicate": "出师决议",
+     "value_text": "定议二月十一誓师，二十一日出塞",
+     "time": {
+      "era_text": "万历四十七年正月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "以二月十有一日誓師，二十一日出塞",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007",
+     "subject": "event:fushun_fall",
+     "predicate": "兵力",
+     "value_text": "号大兵四十七万",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "號大兵四十七萬",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.8,
+     "scale": "empire",
+     "note": "此为号称，非实数",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "event:fushun_fall",
+     "predicate": "出击路线",
+     "value_text": "分四道：马林出开原，杜松出抚顺，李如柏出鸦鹘关，刘綎出宽奠",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "兵分四道：總兵官馬林出開原攻北，杜松出撫順攻西，李如柏從鴉鶻關出趨清河攻南，東南則以劉綎出寬奠",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "宽奠、开原非白名单地点",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "event:fushun_fall",
+     "predicate": "战败",
+     "value_text": "杜松先期渡浑河，军尽覆",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "松欲立首功，先期渡渾河，進至二道關，伏發，軍盡覆",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010",
+     "subject": "event:fushun_fall",
+     "predicate": "战败",
+     "value_text": "马林败遁，刘綎力战死",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "林不支，遂大敗，遁去...綎力戰死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "event:fushun_fall",
+     "predicate": "伤亡",
+     "value_text": "文武将吏死者三百一十余人，军士四万五千八百余人",
+     "time": {
+      "era_text": "万历四十七年二月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushun",
+     "source": "mingshi",
+     "quote": "文武將吏前後死者三百一十餘人，軍士四萬五千八百餘人",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012",
+     "subject": "event:fushun_fall",
+     "predicate": "后续处置",
+     "value_text": "杨镐下狱论死",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang_cheng",
+     "source": "mingshi",
+     "quote": "言官交章劾鎬，逮下詔獄，論死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修·明臣"
     }
    ],
-   "conflicts": [],
+   "conflicts": [
+    {
+     "id": "cf:event:fushun_fall|战败",
+     "subject": "event:fushun_fall",
+     "predicate": "战败",
+     "kind": "record_vs_record",
+     "count": 2,
+     "spread": null,
+     "assertion_ids": [
+      "SX009",
+      "SX010"
+     ]
+    }
+   ],
    "gaps": [
     "F010",
     "F011"
@@ -16154,7 +17894,7 @@ window.SANDBOX_DATA = {
      "name": "熊廷弼",
      "role": "辽东经略",
      "note": "主守，与王化贞经抚不和，广宁陷后受诛",
-     "influence": 0
+     "influence": 11
     },
     {
      "id": "wang_huazhen",
@@ -16298,9 +18038,254 @@ window.SANDBOX_DATA = {
       "effort": "1-2 周"
      },
      "_party": "清修·明臣"
+    },
+    {
+     "id": "SX001",
+     "subject": "person:xiongtingbing",
+     "predicate": "巡按辽东",
+     "value_text": "巡按辽东",
+     "time": {
+      "era_text": "万历三十六年",
+      "start": "1608-01-01",
+      "end": "1608-12-31",
+      "gregorian_year": 1608
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "三十六年，巡按遼東。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "person:xiongtingbing",
+     "predicate": "上言",
+     "value_text": "请集兵十八万",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "乃上方略，請集兵十八萬",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "person:xiongtingbing",
+     "predicate": "主张",
+     "value_text": "防边以守为上",
+     "time": {
+      "era_text": "万历三十六年",
+      "start": "1608-01-01",
+      "end": "1608-12-31",
+      "gregorian_year": 1608
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "廷弼言防邊以守為上",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "person:xiongtingbing",
+     "predicate": "经略辽东",
+     "value_text": "代镐经略",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "代鎬經略",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005",
+     "subject": "person:xiongtingbing",
+     "predicate": "主张",
+     "value_text": "守御为主",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "至是主守禦益堅",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006",
+     "subject": "person:xiongtingbing",
+     "predicate": "被劾",
+     "value_text": "无谋者八、欺君者三",
+     "time": {
+      "era_text": "泰昌元年",
+      "start": "1620-01-01",
+      "end": "1620-12-31",
+      "gregorian_year": 1620
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "御史馮三元劾廷弼無謀者八、欺君者三",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "time 为推断，原文未明确纪年",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007",
+     "subject": "person:xiongtingbing",
+     "predicate": "建策",
+     "value_text": "三方布置策",
+     "time": {
+      "era_text": "天启元年六月",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "乃建三方佈置策",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "person:xiongtingbing",
+     "predicate": "主张",
+     "value_text": "不宜分兵防河",
+     "time": {
+      "era_text": "天启元年",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "斷不宜分兵防河，先為自弱之計也",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "person:xiongtingbing",
+     "predicate": "被论死",
+     "value_text": "廷弼、化贞并论死",
+     "time": {
+      "era_text": "天启二年四月",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "廷弼、化貞並論死",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010",
+     "subject": "person:xiongtingbing",
+     "predicate": "被弃市",
+     "value_text": "弃市，传首九边",
+     "time": {
+      "era_text": "天启五年八月",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "遂以五年八月棄市，傳首九邊",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "place 未在白名单，待消歧",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "person:xiongtingbing",
+     "predicate": "被昭雪",
+     "value_text": "诏许其子持首归葬",
+     "time": {
+      "era_text": "崇祯元年",
+      "start": "1628-01-01",
+      "end": "1628-12-31",
+      "gregorian_year": 1628
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "詔許其子持首歸葬",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "time 为推断，原文未明确纪年",
+     "_party": "清修·明臣"
     }
    ],
-   "conflicts": [],
+   "conflicts": [
+    {
+     "id": "cf:person:xiongtingbing|主张",
+     "subject": "person:xiongtingbing",
+     "predicate": "主张",
+     "kind": "record_vs_record",
+     "count": 3,
+     "spread": null,
+     "assertion_ids": [
+      "SX003",
+      "SX005",
+      "SX008"
+     ]
+    }
+   ],
    "gaps": [
     "G010",
     "G011"
@@ -16813,7 +18798,7 @@ window.SANDBOX_DATA = {
      "name": "袁崇焕",
      "role": "蓟辽督师",
      "note": "宁远/宁锦拒清，后冤死；「五年平辽」",
-     "influence": 0
+     "influence": 15
     },
     {
      "id": "zu_dashou",
@@ -16971,9 +18956,543 @@ window.SANDBOX_DATA = {
       "effort": "2-4 周"
      },
      "_party": "明廷官方"
+    },
+    {
+     "id": "SX001",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "官职",
+     "value_text": "兵部职方主事",
+     "time": {
+      "era_text": "天启二年正月",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "御史侯恂請破格用之，遂擢兵部職方主事",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "侯恂推荐，破格提拔",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "予我軍馬錢穀，我一人足守此",
+     "time": {
+      "era_text": "天启二年",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "shanhaiguan",
+     "source": "mingshi",
+     "quote": "予我軍馬錢穀，我一人足守此",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "袁崇焕巡视关内外后，向朝廷表态",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "守宁远",
+     "time": {
+      "era_text": "天启二年",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "崇煥主寧遠",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "在孙承宗召集的军事会议上，袁崇焕主张守宁远",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004",
+     "subject": "place:ningyuan",
+     "predicate": "修筑",
+     "value_text": "高三丈二尺，雉高六尺，址廣三丈，上二丈四尺",
+     "time": {
+      "era_text": "天启三年九月",
+      "start": "1623-01-01",
+      "end": "1623-12-31",
+      "gregorian_year": 1623
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "崇煥乃定規制：高三丈二尺，雉高六尺，址廣三丈，上二丈四尺",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "袁崇焕制定宁远城修筑规格",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "兵力",
+     "value_text": "万二千",
+     "time": {
+      "era_text": "天启四年九月",
+      "start": "1624-01-01",
+      "end": "1624-12-31",
+      "gregorian_year": 1624
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "率水陸馬步軍萬二千，東巡廣寧",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕东巡广宁所率兵力",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "守锦州、右屯等城",
+     "time": {
+      "era_text": "天启五年夏",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "jinzhou_cheng",
+     "source": "mingshi",
+     "quote": "遣將分據錦州、松山、杏山、右屯及大、小淩河，繕城郭居之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕与孙承宗商议，派兵占据并修缮锦州等城",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "反对撤锦州、右屯等城",
+     "time": {
+      "era_text": "天启五年十月",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "jinzhou_cheng",
+     "source": "mingshi",
+     "quote": "兵法有進無退。三城已復，安可輕撤？",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕反对高第撤退锦州、右屯等城的命令",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "官职",
+     "value_text": "宁前道",
+     "time": {
+      "era_text": "天启五年十月",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "我寧前道也，官此當死此，我必不去",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕拒绝撤离宁远、前屯",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009",
+     "subject": "war:ningyuan",
+     "predicate": "爆发",
+     "value_text": "清军进攻宁远",
+     "time": {
+      "era_text": "天启六年正月二十三日",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "六年正月舉大軍西渡遼河，二十三日抵寧遠",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "后金军进攻宁远",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010",
+     "subject": "war:ningyuan",
+     "predicate": "结果",
+     "value_text": "明军获胜，清军解围",
+     "time": {
+      "era_text": "天启六年正月",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "明日，再攻，復被卻，圍遂解",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "宁远之战，明军击退后金军",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "官职",
+     "value_text": "右佥都御史",
+     "time": {
+      "era_text": "天启六年",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "立擢崇煥右僉都御史，璽書獎勵",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "宁远大捷后，袁崇焕升任右佥都御史",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "凭坚城、用大炮",
+     "time": {
+      "era_text": "天启六年冬",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "兵不利野戰，只有憑堅城、用大砲一策",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕提出凭坚城用大炮的战略",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX001_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "擢升",
+     "value_text": "擢兵部职方主事",
+     "time": {
+      "era_text": "天启二年正月",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "御史侯恂请破格用之，遂擢兵部职方主事",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "袁崇焕因侯恂推荐破格提拔",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX002_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "单骑出阅",
+     "value_text": "单骑出阅关内外",
+     "time": {
+      "era_text": "天启二年",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "shanhaiguan",
+     "source": "mingshi",
+     "quote": "崇煥即單騎出閱關內外",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "广宁师溃后，袁崇焕独自考察关内外形势",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX003_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "value_text": "予我军马钱谷，我一人足守此",
+     "time": {
+      "era_text": "天启二年",
+      "start": "1622-01-01",
+      "end": "1622-12-31",
+      "gregorian_year": 1622
+     },
+     "place": "shanhaiguan",
+     "source": "mingshi",
+     "quote": "予我軍馬錢穀，我一人足守此",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕自请守关",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX004_M1",
+     "subject": "event:ningyuan_founded",
+     "predicate": "筑城",
+     "value_text": "高三丈二尺，雉高六尺，址广三丈，上二丈四尺",
+     "time": {
+      "era_text": "天启三年九月",
+      "start": "1623-01-01",
+      "end": "1623-12-31",
+      "gregorian_year": 1623
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "崇煥乃定規制：高三丈二尺，雉高六尺，址廣三丈，上二丈四尺",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "袁崇焕制定宁远城规制，祖大寿原筑仅十一且疏薄",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX005_M1",
+     "subject": "event:ningyuan_founded",
+     "predicate": "竣工",
+     "value_text": "明年迄工，遂为关外重镇",
+     "time": {
+      "era_text": "天启四年",
+      "start": "1624-01-01",
+      "end": "1624-12-31",
+      "gregorian_year": 1624
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "明年迄工，遂為關外重鎮",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "宁远城建成后成为关外重镇",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX006_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "东巡",
+     "value_text": "率水陆马步军万二千，东巡广宁",
+     "time": {
+      "era_text": "天启四年九月",
+      "start": "1624-01-01",
+      "end": "1624-12-31",
+      "gregorian_year": 1624
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "偕大將馬世龍、王世欽率水陸馬步軍萬二千，東巡廣寧",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "袁崇焕率军东巡广宁，历十三山，抵右屯",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX007_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "反对撤军",
+     "value_text": "兵法有进无退，三城已复，安可轻撤",
+     "time": {
+      "era_text": "天启五年十月",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "兵法有進無退。三城已復，安可輕撤？",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "高第令撤锦州、右屯等城，袁崇焕力爭不可",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX008_M1",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "誓守",
+     "value_text": "我宁前道也，官此当死此，我必不去",
+     "time": {
+      "era_text": "天启五年十月",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "我寧前道也，官此當死此，我必不去",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "高第欲并撤宁、前二城，袁崇焕拒绝",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX009_M1",
+     "subject": "event:ningyuan_battle",
+     "predicate": "爆发",
+     "value_text": "大军西渡辽河，抵宁远",
+     "time": {
+      "era_text": "天启六年正月二十三日",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "六年正月舉大軍西渡遼河，二十三日抵寧遠",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "后金军进攻宁远",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX010_M1",
+     "subject": "event:ningyuan_battle",
+     "predicate": "守城",
+     "value_text": "集将士誓死守，刺血为书",
+     "time": {
+      "era_text": "天启六年正月",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "崇煥聞，即偕大將桂，副將左輔、硃梅，參將大壽，守備何可剛等集將士誓死守",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "袁崇焕与满桂、祖大寿等誓死守城",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX011_M1",
+     "subject": "event:ningyuan_battle",
+     "predicate": "获胜",
+     "value_text": "发西洋巨炮，伤城外军，围遂解",
+     "time": {
+      "era_text": "天启六年正月",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "ningyuan",
+     "source": "mingshi",
+     "quote": "崇煥令閩卒羅立，發西洋巨砲，傷城外軍。明日，再攻，復被卻，圍遂解",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "宁远之战明军获胜，后金军解围",
+     "_party": "清修·明臣"
+    },
+    {
+     "id": "SX012_M1",
+     "subject": "event:ningyuan_battle",
+     "predicate": "擢升",
+     "value_text": "擢崇焕右佥都御史，玺书奖励",
+     "time": {
+      "era_text": "天启六年",
+      "start": "1626-01-01",
+      "end": "1626-12-31",
+      "gregorian_year": 1626
+     },
+     "place": "",
+     "source": "mingshi",
+     "quote": "舉朝大喜，立擢崇煥右僉都御史，璽書獎勵",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "宁远大捷后袁崇焕升任右佥都御史",
+     "_party": "清修·明臣"
     }
    ],
-   "conflicts": [],
+   "conflicts": [
+    {
+     "id": "cf:person:yuan_chonghuan|官职",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "官职",
+     "kind": "record_vs_record",
+     "count": 3,
+     "spread": null,
+     "assertion_ids": [
+      "SX001",
+      "SX008",
+      "SX011"
+     ]
+    },
+    {
+     "id": "cf:person:yuan_chonghuan|主张",
+     "subject": "person:yuan_chonghuan",
+     "predicate": "主张",
+     "kind": "record_vs_record",
+     "count": 6,
+     "spread": null,
+     "assertion_ids": [
+      "SX002",
+      "SX003",
+      "SX006",
+      "SX007",
+      "SX012",
+      "SX003_M1"
+     ]
+    }
+   ],
    "gaps": [
     "N010",
     "N011"
@@ -21786,6 +24305,70 @@ window.SANDBOX_DATA = {
     "_src_line": 46
    },
    {
+    "id": "SX015",
+    "scene": "sarhu",
+    "subject": "war:sarhu",
+    "title": "號大兵四十七萬",
+    "missing": "历史考证 / 文献比对",
+    "where": "mingshi",
+    "skills": [
+     "历史考证",
+     "文献比对"
+    ],
+    "accept": "核实萨尔浒之战明军实际兵力",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 75
+   },
+   {
+    "id": "SX022_M1",
+    "scene": "sarhu",
+    "subject": "person:yanggao",
+    "title": "鎬大懼，狼狽先奔",
+    "missing": "历史考证 / 人物评价",
+    "where": "mingshi",
+    "skills": [
+     "历史考证",
+     "人物评价"
+    ],
+    "accept": "评估杨镐在蔚山之战中的具体责任",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 82
+   },
+   {
+    "id": "SX023_M1",
+    "scene": "sarhu",
+    "subject": "person:yanggao",
+    "title": "鎬以如梅未至，不欲寅功出其上，遽鳴金收軍",
+    "missing": "历史考证 / 人物评价",
+    "where": "mingshi",
+    "skills": [
+     "历史考证",
+     "人物评价"
+    ],
+    "accept": "评估杨镐在蔚山之战中的具体责任",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 83
+   },
+   {
+    "id": "SX024",
+    "scene": "sarhu",
+    "subject": "person:yanggao",
+    "title": "鎬大怒，屏不奏，止稱百餘人",
+    "missing": "历史考证 / 人物评价",
+    "where": "mingshi",
+    "skills": [
+     "历史考证",
+     "人物评价"
+    ],
+    "accept": "评估杨镐在蔚山之战中的具体责任",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 84
+   },
+   {
     "id": "S021",
     "scene": "shenyang",
     "subject": "place:shenyang_cheng",
@@ -21931,22 +24514,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "fushun",
     "name": "fushun",
-    "total": 8,
+    "total": 20,
     "layers": {
-     "record": 5,
+     "record": 17,
      "scholarship": 1,
      "gap": 2
     },
     "party_counts": {
-     "明方": 5,
+     "明方": 17,
      "清方": 1,
      "朝鲜": 1,
      "综述考订": 1
     },
     "event_count": 3,
-    "avg_resonance": 0.472,
+    "avg_resonance": 0.512,
     "best_event": "event:fushun_fall",
-    "best_resonance": 0.75
+    "best_resonance": 0.871
    },
    {
     "scene": "fuzhou",
@@ -21990,14 +24573,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "guangning",
     "name": "guangning",
-    "total": 7,
+    "total": 18,
     "layers": {
-     "record": 4,
+     "record": 15,
      "scholarship": 1,
      "gap": 2
     },
     "party_counts": {
-     "明方": 5,
+     "明方": 16,
      "朝鲜": 1,
      "综述考订": 1
     },
@@ -22089,53 +24672,53 @@ window.SANDBOX_DATA = {
    {
     "scene": "liaoyang",
     "name": "辽阳",
-    "total": 20,
+    "total": 39,
     "layers": {
-     "record": 9,
+     "record": 28,
      "scholarship": 8,
      "gap": 3
     },
     "party_counts": {
-     "明方": 5,
+     "明方": 24,
      "综述考订": 10,
      "清方": 5
     },
     "event_count": 2,
-    "avg_resonance": 0.23,
+    "avg_resonance": 0.306,
     "best_event": "浑河之战（1621）",
     "best_resonance": 0.333
    },
    {
     "scene": "ningyuan",
     "name": "ningyuan",
-    "total": 7,
+    "total": 31,
     "layers": {
-     "record": 4,
+     "record": 28,
      "scholarship": 1,
      "gap": 2
     },
     "party_counts": {
-     "明方": 5,
+     "明方": 29,
      "清方": 1,
      "综述考订": 1
     },
     "event_count": 4,
-    "avg_resonance": 0.333,
-    "best_event": "event:ningjin_dajie",
-    "best_resonance": 0.333
+    "avg_resonance": 0.389,
+    "best_event": "event:ningyuan_battle",
+    "best_resonance": 0.556
    },
    {
     "scene": "sarhu",
     "name": "萨尔浒",
-    "total": 60,
+    "total": 84,
     "layers": {
-     "record": 45,
+     "record": 62,
      "scholarship": 10,
-     "inference": 3,
-     "gap": 2
+     "inference": 6,
+     "gap": 6
     },
     "party_counts": {
-     "明方": 17,
+     "明方": 41,
      "清方": 24,
      "综述考订": 14,
      "朝鲜": 5
@@ -22148,14 +24731,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "shenyang",
     "name": "shenyang",
-    "total": 24,
+    "total": 36,
     "layers": {
-     "record": 19,
+     "record": 30,
      "scholarship": 2,
-     "gap": 3
+     "gap": 3,
+     "inference": 1
     },
     "party_counts": {
-     "明方": 14,
+     "明方": 26,
      "清方": 5,
      "朝鲜": 3,
      "综述考订": 2
@@ -22168,21 +24752,21 @@ window.SANDBOX_DATA = {
    {
     "scene": "tieling",
     "name": "铁岭",
-    "total": 20,
+    "total": 31,
     "layers": {
-     "record": 12,
+     "record": 23,
      "scholarship": 6,
      "gap": 2
     },
     "party_counts": {
-     "明方": 11,
+     "明方": 22,
      "综述考订": 7,
      "清方": 2
     },
     "event_count": 2,
-    "avg_resonance": 0.158,
-    "best_event": "弃宽甸六堡",
-    "best_resonance": 0.167
+    "avg_resonance": 0.262,
+    "best_event": "铁岭陷落（1619）",
+    "best_resonance": 0.357
    },
    {
     "scene": "yehe",
@@ -22205,172 +24789,6 @@ window.SANDBOX_DATA = {
    }
   ],
   "events": [
-   {
-    "subject": "event:liaoyang_fall",
-    "name": "辽阳陷落（1621）",
-    "scenes": [
-     "liaoyang"
-    ],
-    "scene_names": [
-     "辽阳"
-    ],
-    "total": 7,
-    "gap_count": 3,
-    "coverage": "1/3",
-    "coverage_frac": 0.333,
-    "divergence": 0.333,
-    "gap_rate": 0.429,
-    "resonance": 0.127,
-    "party_counts": {
-     "明方": 0,
-     "清方": 3,
-     "朝鲜": 0,
-     "综述考订": 4
-    },
-    "parties": {
-     "明方": [],
-     "清方": [
-      {
-       "id": "L008",
-       "predicate": "陷落时间",
-       "value_text": "1621 年 (明天启元年) 努尔哈赤攻占辽阳, 迁都",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "liaoyang"
-      },
-      {
-       "id": "L011",
-       "predicate": "努尔哈赤评价",
-       "value_text": "努尔哈赤攻占辽阳为后金『开国第一战』级的关键胜利",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "liaoyang"
-      },
-      {
-       "id": "L017",
-       "predicate": "辽阳陷落兵数详考",
-       "value_text": "缺口：辽阳一战双方兵数与伤亡的具体数字——明清两方均无可交叉验证的细目",
-       "source": "qing_taizu_shilu",
-       "layer": "gap",
-       "scene": "liaoyang"
-      }
-     ],
-     "朝鲜": [],
-     "综述考订": [
-      {
-       "id": "L011b",
-       "predicate": "努尔哈赤评价",
-       "value_text": "努尔哈赤攻占辽阳过程中伴随对辽东都司区内大量军民伤亡与迁民",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "liaoyang"
-      },
-      {
-       "id": "L016",
-       "predicate": "朝鲜视角",
-       "value_text": "缺口：朝鲜实录对辽阳陷落的记载与反应，待核",
-       "source": "modern",
-       "layer": "gap",
-       "scene": "liaoyang"
-      },
-      {
-       "id": "L018",
-       "predicate": "明廷反应",
-       "value_text": "辽阳陷落后, 魏忠贤乱政, 辽东巡抚王化贞等起用, 辽东防御体系名存实亡",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "liaoyang"
-      },
-      {
-       "id": "L019",
-       "predicate": "三手综述",
-       "value_text": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
-       "source": "wiki",
-       "layer": "gap",
-       "scene": "liaoyang"
-      }
-     ]
-    }
-   },
-   {
-    "subject": "event:tieling_fall",
-    "name": "铁岭陷落（1619）",
-    "scenes": [
-     "tieling"
-    ],
-    "scene_names": [
-     "铁岭"
-    ],
-    "total": 6,
-    "gap_count": 2,
-    "coverage": "1/3",
-    "coverage_frac": 0.333,
-    "divergence": 0.333,
-    "gap_rate": 0.333,
-    "resonance": 0.148,
-    "party_counts": {
-     "明方": 0,
-     "清方": 2,
-     "朝鲜": 0,
-     "综述考订": 4
-    },
-    "parties": {
-     "明方": [],
-     "清方": [
-      {
-       "id": "T011",
-       "predicate": "陷落时间",
-       "value_text": "1619 年 (万历 47 年) 七月, 努尔哈赤亲自领兵攻占铁岭",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "tieling"
-      },
-      {
-       "id": "T016",
-       "predicate": "陷落兵数详考",
-       "value_text": "缺口：铁岭陷落双方具体兵力与伤亡——清实录仅泛言「万骑」，明方奏报无细目",
-       "source": "qing_taizu_shilu",
-       "layer": "gap",
-       "scene": "tieling"
-      }
-     ],
-     "朝鲜": [],
-     "综述考订": [
-      {
-       "id": "T011b",
-       "predicate": "陷落时间",
-       "value_text": "1619 年 (万历 47 年) 七月, 明军来自铁岭的援兵被击败",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "tieling"
-      },
-      {
-       "id": "T012",
-       "predicate": "陷落兵力",
-       "value_text": null,
-       "source": "wiki",
-       "layer": "scholarship",
-       "scene": "tieling"
-      },
-      {
-       "id": "T017",
-       "predicate": "朝鲜视角",
-       "value_text": "缺口：朝鲜实录对铁岭陷落是否有专条记载，待核（李成梁祖籍朝鲜，朝方或有关注）",
-       "source": "modern",
-       "layer": "gap",
-       "scene": "tieling"
-      },
-      {
-       "id": "T018",
-       "predicate": "明廷反应",
-       "value_text": "铁岭陷落后, 明廷起用熊廷弼为辽东经略, 采取『坚守进逼』策",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "tieling"
-      }
-     ]
-    }
-   },
    {
     "subject": "event:ice_walls",
     "name": "event:ice_walls",
@@ -22623,6 +25041,118 @@ window.SANDBOX_DATA = {
        "source": "modern",
        "layer": "scholarship",
        "scene": "sarhu"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:liaoyang_fall",
+    "name": "辽阳陷落（1621）",
+    "scenes": [
+     "liaoyang"
+    ],
+    "scene_names": [
+     "辽阳"
+    ],
+    "total": 10,
+    "gap_count": 3,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.4,
+    "gap_rate": 0.3,
+    "resonance": 0.28,
+    "party_counts": {
+     "明方": 3,
+     "清方": 3,
+     "朝鲜": 0,
+     "综述考订": 4
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "SX008_M1",
+       "predicate": "城破",
+       "value_text": "大清兵从小西门入，城破",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "SX009_M1",
+       "predicate": "将领阵亡",
+       "value_text": "贺世贤、尤世功战死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "SX010",
+       "predicate": "将领阵亡",
+       "value_text": "陈策、童仲揆赴援战死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "liaoyang"
+      }
+     ],
+     "清方": [
+      {
+       "id": "L008",
+       "predicate": "陷落时间",
+       "value_text": "1621 年 (明天启元年) 努尔哈赤攻占辽阳, 迁都",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L011",
+       "predicate": "努尔哈赤评价",
+       "value_text": "努尔哈赤攻占辽阳为后金『开国第一战』级的关键胜利",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L017",
+       "predicate": "辽阳陷落兵数详考",
+       "value_text": "缺口：辽阳一战双方兵数与伤亡的具体数字——明清两方均无可交叉验证的细目",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "liaoyang"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "L011b",
+       "predicate": "努尔哈赤评价",
+       "value_text": "努尔哈赤攻占辽阳过程中伴随对辽东都司区内大量军民伤亡与迁民",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L016",
+       "predicate": "朝鲜视角",
+       "value_text": "缺口：朝鲜实录对辽阳陷落的记载与反应，待核",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L018",
+       "predicate": "明廷反应",
+       "value_text": "辽阳陷落后, 魏忠贤乱政, 辽东巡抚王化贞等起用, 辽东防御体系名存实亡",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "L019",
+       "predicate": "三手综述",
+       "value_text": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
+       "source": "wiki",
+       "layer": "gap",
+       "scene": "liaoyang"
       }
      ]
     }
@@ -23249,53 +25779,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:ningyuan_battle",
-    "name": "event:ningyuan_battle",
-    "scenes": [
-     "ningyuan"
-    ],
-    "scene_names": [
-     "ningyuan"
-    ],
-    "total": 2,
-    "gap_count": 1,
-    "coverage": "2/3",
-    "coverage_frac": 0.667,
-    "divergence": 0.0,
-    "gap_rate": 0.5,
-    "resonance": 0.333,
-    "party_counts": {
-     "明方": 1,
-     "清方": 1,
-     "朝鲜": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "N010",
-       "predicate": "努尔哈赤死因",
-       "value_text": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "ningyuan"
-      }
-     ],
-     "清方": [
-      {
-       "id": "N002",
-       "predicate": "宁远之战结果",
-       "value_text": "天命十一年 (1626), 努尔哈赤攻宁远, 袁崇焕凭坚城与红夷大炮拒守, 努尔哈赤受创, 七月死",
-       "source": "qing_taizong_shilu",
-       "layer": "record",
-       "scene": "ningyuan"
-      }
-     ],
-     "朝鲜": [],
-     "综述考订": []
-    }
-   },
-   {
     "subject": "event:ningyuan_founded",
     "name": "event:ningyuan_founded",
     "scenes": [
@@ -23304,7 +25787,7 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "ningyuan"
     ],
-    "total": 1,
+    "total": 3,
     "gap_count": 0,
     "coverage": "1/3",
     "coverage_frac": 0.333,
@@ -23312,7 +25795,7 @@ window.SANDBOX_DATA = {
     "gap_rate": 0.0,
     "resonance": 0.333,
     "party_counts": {
-     "明方": 1,
+     "明方": 3,
      "清方": 0,
      "朝鲜": 0,
      "综述考订": 0
@@ -23323,6 +25806,22 @@ window.SANDBOX_DATA = {
        "id": "N001",
        "predicate": "建置年",
        "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX004_M1",
+       "predicate": "筑城",
+       "value_text": "高三丈二尺，雉高六尺，址广三丈，上二丈四尺",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX005_M1",
+       "predicate": "竣工",
+       "value_text": "明年迄工，遂为关外重镇",
        "source": "mingshi",
        "layer": "record",
        "scene": "ningyuan"
@@ -23722,6 +26221,94 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:tieling_fall",
+    "name": "铁岭陷落（1619）",
+    "scenes": [
+     "tieling"
+    ],
+    "scene_names": [
+     "铁岭"
+    ],
+    "total": 7,
+    "gap_count": 2,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.25,
+    "gap_rate": 0.286,
+    "resonance": 0.357,
+    "party_counts": {
+     "明方": 1,
+     "清方": 2,
+     "朝鲜": 0,
+     "综述考订": 4
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "TX003",
+       "predicate": "失陷",
+       "value_text": "铁岭复失，沈阳及诸城堡军民尽窜",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "tieling"
+      }
+     ],
+     "清方": [
+      {
+       "id": "T011",
+       "predicate": "陷落时间",
+       "value_text": "1619 年 (万历 47 年) 七月, 努尔哈赤亲自领兵攻占铁岭",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "tieling"
+      },
+      {
+       "id": "T016",
+       "predicate": "陷落兵数详考",
+       "value_text": "缺口：铁岭陷落双方具体兵力与伤亡——清实录仅泛言「万骑」，明方奏报无细目",
+       "source": "qing_taizu_shilu",
+       "layer": "gap",
+       "scene": "tieling"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": [
+      {
+       "id": "T011b",
+       "predicate": "陷落时间",
+       "value_text": "1619 年 (万历 47 年) 七月, 明军来自铁岭的援兵被击败",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "tieling"
+      },
+      {
+       "id": "T012",
+       "predicate": "陷落兵力",
+       "value_text": null,
+       "source": "wiki",
+       "layer": "scholarship",
+       "scene": "tieling"
+      },
+      {
+       "id": "T017",
+       "predicate": "朝鲜视角",
+       "value_text": "缺口：朝鲜实录对铁岭陷落是否有专条记载，待核（李成梁祖籍朝鲜，朝方或有关注）",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "tieling"
+      },
+      {
+       "id": "T018",
+       "predicate": "明廷反应",
+       "value_text": "铁岭陷落后, 明廷起用熊廷弼为辽东经略, 采取『坚守进逼』策",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "tieling"
+      }
+     ]
+    }
+   },
+   {
     "subject": "event:guangning_fall",
     "name": "event:guangning_fall",
     "scenes": [
@@ -23849,6 +26436,85 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:ningyuan_battle",
+    "name": "event:ningyuan_battle",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 6,
+    "gap_count": 1,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.167,
+    "resonance": 0.556,
+    "party_counts": {
+     "明方": 5,
+     "清方": 1,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N010",
+       "predicate": "努尔哈赤死因",
+       "value_text": "努尔哈赤是否确因宁远之伤致死, 医学与史料记载有分歧（有说疮发 / 有说背疽 / 有说忧愤）",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX009_M1",
+       "predicate": "爆发",
+       "value_text": "大军西渡辽河，抵宁远",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX010_M1",
+       "predicate": "守城",
+       "value_text": "集将士誓死守，刺血为书",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX011_M1",
+       "predicate": "获胜",
+       "value_text": "发西洋巨炮，伤城外军，围遂解",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX012_M1",
+       "predicate": "擢升",
+       "value_text": "擢崇焕右佥都御史，玺书奖励",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "清方": [
+      {
+       "id": "N002",
+       "predicate": "宁远之战结果",
+       "value_text": "天命十一年 (1626), 努尔哈赤攻宁远, 袁崇焕凭坚城与红夷大炮拒守, 努尔哈赤受创, 七月死",
+       "source": "qing_taizong_shilu",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:abudaligang",
     "name": "阿布达里岗（东路·刘綎）",
     "scenes": [
@@ -23939,70 +26605,6 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:fushun_fall",
-    "name": "event:fushun_fall",
-    "scenes": [
-     "fushun"
-    ],
-    "scene_names": [
-     "fushun"
-    ],
-    "total": 4,
-    "gap_count": 1,
-    "coverage": "3/3",
-    "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.25,
-    "resonance": 0.75,
-    "party_counts": {
-     "明方": 2,
-     "清方": 1,
-     "朝鲜": 1,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "F003",
-       "predicate": "陷落年份",
-       "value_text": "万历四十六年四月, 努尔哈赤以「七大恨」告天, 取抚顺",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "fushun"
-      },
-      {
-       "id": "F010",
-       "predicate": "李永芳降前心理",
-       "value_text": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "fushun"
-      }
-     ],
-     "清方": [
-      {
-       "id": "F004",
-       "predicate": "李永芳降",
-       "value_text": "明游击李永芳以抚顺城降, 努尔哈赤待之厚, 赐以貂帽貂裘",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "fushun"
-      }
-     ],
-     "朝鲜": [
-      {
-       "id": "F005",
-       "predicate": "朝鲜视角",
-       "value_text": "李朝闻抚顺陷, 大臣议「此贼终为中原大患」",
-       "source": "chao_xiandai",
-       "layer": "record",
-       "scene": "fushun"
-      }
-     ],
      "综述考订": []
     }
    },
@@ -24262,6 +26864,166 @@ window.SANDBOX_DATA = {
        "scene": "kaiyuan"
       }
      ]
+    }
+   },
+   {
+    "subject": "event:fushun_fall",
+    "name": "event:fushun_fall",
+    "scenes": [
+     "fushun"
+    ],
+    "scene_names": [
+     "fushun"
+    ],
+    "total": 16,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.071,
+    "gap_rate": 0.062,
+    "resonance": 0.871,
+    "party_counts": {
+     "明方": 14,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "F003",
+       "predicate": "陷落年份",
+       "value_text": "万历四十六年四月, 努尔哈赤以「七大恨」告天, 取抚顺",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "F010",
+       "predicate": "李永芳降前心理",
+       "value_text": "李永芳 (明游击) 为何在被努尔哈赤大军压境时选择投降而非殉职——这在明方史料中几乎无直接记述",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX001",
+       "predicate": "城破",
+       "value_text": "大清兵破抚顺，守将王命印死之",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX002",
+       "predicate": "明军援救",
+       "value_text": "张承允、颇廷相等俱战殁",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX003",
+       "predicate": "后续影响",
+       "value_text": "远近大震，杨镐被起用",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX004",
+       "predicate": "后续战事",
+       "value_text": "大清兵克清河，邹储贤战死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX005",
+       "predicate": "集兵",
+       "value_text": "四方援兵大集，议进师",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX006",
+       "predicate": "出师决议",
+       "value_text": "定议二月十一誓师，二十一日出塞",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX007",
+       "predicate": "兵力",
+       "value_text": "号大兵四十七万",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX008",
+       "predicate": "出击路线",
+       "value_text": "分四道：马林出开原，杜松出抚顺，李如柏出鸦鹘关，刘綎出宽奠",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX009",
+       "predicate": "战败",
+       "value_text": "杜松先期渡浑河，军尽覆",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX010",
+       "predicate": "战败",
+       "value_text": "马林败遁，刘綎力战死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX011",
+       "predicate": "伤亡",
+       "value_text": "文武将吏死者三百一十余人，军士四万五千八百余人",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      },
+      {
+       "id": "SX012",
+       "predicate": "后续处置",
+       "value_text": "杨镐下狱论死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "清方": [
+      {
+       "id": "F004",
+       "predicate": "李永芳降",
+       "value_text": "明游击李永芳以抚顺城降, 努尔哈赤待之厚, 赐以貂帽貂裘",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "F005",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝闻抚顺陷, 大臣议「此贼终为中原大患」",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "fushun"
+      }
+     ],
+     "综述考订": []
     }
    },
    {
