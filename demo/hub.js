@@ -87,7 +87,9 @@
   function gy(la) { return (latMax - la) / (latMax - latMin) * H; }
   // 切片类型不再按 key 硬编码——meta.kind 来自 data/scenes.json
   function kindLabel(m) {
-    return m.kind === 'battle' ? '事件切片 · battle slice' : '县级 LOD · county slice';
+    if (m.kind === 'battle') return '事件切片 · battle slice';
+    if (m.kind === 'fiction') return '虚构世界 · fiction world';
+    return '县级 LOD · county slice';
   }
 
   // 按当前容器尺寸重绘；窗口缩放时由 resize 监听节流触发
@@ -231,9 +233,17 @@
 
     var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
     var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
+    // 虚构 world 无真实地形、也无共振度数据——用「虚构 · 文字生成」标代替「共振 —」，
+    // 并改提示为「关系图」，避免把关系图 world 误导向「地形」。
+    var isFic = m.kind === 'fiction';
+    var ficPill = '<span class="resonance-pill fiction">虚构 · 文字生成</span>';
+    var pill = isFic ? ficPill : badge(bR);
+    var hint = isFic
+      ? '点击进入 → 关系图 · 史料 · 冲突 · 缺口'
+      : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
 
-    html += '<a class="card" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
-      + '<div class="card-kind">' + kindLabel(m) + '</div>'
+    html += '<a class="card' + (isFic ? ' fic' : '') + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
+      + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
       + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
       + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
       + '<div class="card-stats">'
@@ -246,10 +256,10 @@
             + recN + ' / ' + schN + ' / ' + infN + '</b></div>'
       + '</div>'
       + '<div class="card-extras">'
-      +   badge(bR) + ' &nbsp;'
+      +   pill + ' &nbsp;'
       +   bestLine
       +   avgLine
-      +   '<small style="color:#918777">点击进入 → 史料 · 冲突 · 缺口 · 地形</small>'
+      +   '<small style="color:#918777">' + hint + '</small>'
       + '</div></a>';
   });
   grid.innerHTML = html;
