@@ -32,9 +32,12 @@ r2 = W.query(year=1619)
 ids2 = {a["id"] for a in r2}
 check("Q2 --year 1619 与 --era 万历四十七年 结果一致", ids1 == ids2)
 
-# Q3 按 source 过滤
+# Q3 按 source 过滤（数据集会随 ingestion 增长，故用 ≥ + 钉住已知条目，而非写死总数）
 r3 = W.query(source="huangqing_kaiguo_fanglue")
-check("Q3 按 source=皇清开国方略 命中 6 条 record", len(r3) == 6)
+ids3 = {a["id"] for a in r3}
+check("Q3 按 source=皇清开国方略 命中 ≥6 条", len(r3) >= 6)
+check("Q3 含原始 IN001-IN006", {"IN001", "IN002", "IN003", "IN004", "IN005", "IN006"}.issubset(ids3))
+check("Q3 含 DeepSeek 新增 SX005..SX023", {"SX005", "SX010", "SX023"}.issubset(ids3))
 check("Q3 全部来自我方 ingest", all(a["source"] == "huangqing_kaiguo_fanglue" for a in r3))
 
 # Q4 按 place 过滤

@@ -36,6 +36,9 @@ extraction_demo spike 固化成一个**可复用、可进闸门、可换后端**
   # 生产：真调 LLM（设 LLM_API_KEY / 可选 LLM_BASE_URL / LLM_MODEL）
   python tools/ingest.py --source 某史料.txt --provider llm --scene sarhu --run-gates
 
+  # 直连 DeepSeek（OpenAI 兼容；设 LLM_API_KEY 即可，base/model 有默认值）
+  LLM_API_KEY=sk-xxx python tools/ingest.py --source 某史料.txt --provider deepseek --scene sarhu --run-gates
+
 退出码非零 = 有断言无法归一化或校验失败（ingestion 缺口），应阻断后续。
 """
 import argparse
@@ -73,39 +76,68 @@ def _build_prompt(text):
             contract = f.read()
     except Exception:
         contract = "(prompt.md 未找到)"
+    compliance = (
+        "【本项目 vocab 单一真值合规约束（违反会被 lint 闸门拦截，必须严格遵守）】\n"
+        "- quote_status 只能取 verbatim / paraphrase_unverified / generated 之一；"
+        "从史料抽取且尚未经 DH 核验者一律用 paraphrase_unverified，不要用 primary_extract。\n"
+        "- subject 不要用 event: 前缀（本场景无 events.json，会触发 lint W05）；"
+        "改用 war: / army: / person: / place: 等既有前缀。\n"
+        "- source 必须用已登记 id；本史料登记为 huangqing_kaiguo_fanglue。\n"
+        "- layer=gap 的断言必须含 lead 对象：{\"where\":\"...\",\"skills\":[...],\"accept\":\"...\"}。\n"
+        "- record 层必须有非空 quote（直接引文）。\n"
+        "- place 用已登记地点 id（如 shenyang / fushunguan / sarhu / hetuala），"
+        "不确定的留空并在 note 说明。\n"
+        "- 只返回 JSON 数组，不要 markdown 代码块、不要任何解释文字。\n\n"
+    )
     return (
         "你是历史史料结构化抽取器。严格按下面的「输出契约」与「四层抽取规则」\n"
         "把史料变成断言四层 JSON 数组（只返回 JSON，不要解释）。\n\n"
         "【契约与规则】\n" + contract + "\n\n"
+        + compliance +
         "【原始史料】\n" + text + "\n\n"
         "【输出】只输出 JSON 数组，例如：\n"
-        '[{"id":"SX001","subject":"event:sarhu","predicate":"爆发","value_text":"...",'
-        '"time":{"era_text":"万历四十七年三月"},"place":"sarhu","source":"src001",'
-        '"quote":"...","quote_status":"primary_extract","layer":"record",'
+        '[{"id":"SX001","subject":"war:sarhu","predicate":"爆发","value_text":"...",'
+        '"time":{"era_text":"万历四十七年三月"},"place":"sarhu",'
+        '"source":"huangqing_kaiguo_fanglue",'
+        '"quote":"...","quote_status":"paraphrase_unverified","layer":"record",'
         '"confidence":0.9,"scale":"empire","note":""}]\n'
         "再次强调：time 只给 era_text（年号），不要自己换算公元年。"
     )
 
 
 def _call_llm(prompt):
-    """openai 兼容 Chat Completions。无 key 时返回 None（调用方兜底报错）。"""
+    """openai 兼容 Chat Completions。无 key 时返回 (None, None)（调用方兜底报错）。
+    返回 (content, usage)：usage 是 API 的 token 统计，用于「省着点用」报告。"""
     import urllib.request
     key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY")
     if not key:
-        return None
+        return None, None
     base = os.environ.get("LLM_BASE_URL", "https://api.openai.com/v1").rstrip("/")
     model = os.environ.get("LLM_MODEL", "gpt-4o-mini")
     body = json.dumps({
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0,
+        "stream": False,
     }).encode("utf-8")
     req = urllib.request.Request(
         base + "/chat/completions", data=body,
         headers={"Authorization": "Bearer " + key, "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=120) as r:
         data = json.load(r)
-    return data["choices"][0]["message"]["content"]
+    content = data["choices"][0]["message"]["content"]
+    usage = data.get("usage") or {}
+    _report_usage(model, usage)
+    return content, usage
+
+
+def _report_usage(model, usage):
+    if not usage:
+        return
+    pt = usage.get("prompt_tokens", "?")
+    ct = usage.get("completion_tokens", "?")
+    tt = usage.get("total_tokens", "?")
+    print("[token] 模型 %s | 输入 %s + 输出 %s = 共 %s token" % (model, pt, ct, tt))
 
 
 def _extract_json_array(text):
@@ -119,10 +151,10 @@ def _extract_json_array(text):
 
 def extract_llm(text):
     prompt = _build_prompt(text)
-    raw = _call_llm(prompt)
+    raw, usage = _call_llm(prompt)
     if raw is None:
         raise RuntimeError(
-            "未检测到 LLM_API_KEY / OPENAI_API_KEY 环境变量，无法走 llm provider。"
+            "未检测到 LLM_API_KEY / OPENAI_API_KEY 环境变量，无法走 llm/deepseek provider。"
             "请设置后重试，或先用 --provider heuristic / fixture 验证管线。")
     return _extract_json_array(raw)
 
@@ -239,13 +271,19 @@ def main():
     ap = argparse.ArgumentParser(description="史料 ingestion 管线（断言四层 + 年号归一化）")
     ap.add_argument("--source", help="原始史料文本路径")
     ap.add_argument("--text", help="直接传史料文本（与 --source 二选一）")
-    ap.add_argument("--provider", choices=["heuristic", "llm", "fixture"],
-                    default="heuristic", help="抽取后端（默认 heuristic 冒烟测试）")
+    ap.add_argument("--provider", choices=["heuristic", "llm", "fixture", "deepseek"],
+                    default="heuristic", help="抽取后端（默认 heuristic 冒烟测试；deepseek=OpenAI 兼容直连）")
     ap.add_argument("--fixture", help="provider=fixture 时的已抽 JSON 路径")
     ap.add_argument("--out", help="输出 JSONL 路径（默认打印到 stdout 不写文件）")
     ap.add_argument("--scene", help="把归一化断言追加进该场景的 assertions.jsonl")
     ap.add_argument("--run-gates", action="store_true", help="写完后跑 tools/gates.py --no-interaction")
     args = ap.parse_args()
+
+    # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
+    if args.provider == "deepseek":
+        os.environ.setdefault("LLM_BASE_URL", "https://api.deepseek.com/v1")
+        os.environ.setdefault("LLM_MODEL", "deepseek-chat")
+        args.provider = "llm"
 
     # 1) 取 source 文本
     if args.provider == "fixture":

@@ -7196,7 +7196,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽东经略",
      "column": null,
      "note": "四路总调度，战后下狱，崇祯二年伏诛",
-     "influence": 0
+     "influence": 1
     },
     {
      "id": "dusong",
@@ -7214,7 +7214,7 @@ window.SANDBOX_DATA = {
      "role_hint": "保定总兵",
      "column": "west",
      "note": "西路副将",
-     "influence": 0
+     "influence": 1
     },
     {
      "id": "zhaomenglin",
@@ -7223,7 +7223,7 @@ window.SANDBOX_DATA = {
      "role_hint": "原任总兵",
      "column": "west",
      "note": "西路副将",
-     "influence": 0
+     "influence": 1
     },
     {
      "id": "malin",
@@ -7232,7 +7232,7 @@ window.SANDBOX_DATA = {
      "role_hint": "开原总兵",
      "column": "north",
      "note": "北路主将，名将马芳之子，文士气重",
-     "influence": 1
+     "influence": 2
     },
     {
      "id": "panzongyan",
@@ -7259,7 +7259,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽东总兵",
      "column": "south",
      "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
-     "influence": 1
+     "influence": 2
     },
     {
      "id": "liuting",
@@ -7268,7 +7268,7 @@ window.SANDBOX_DATA = {
      "role_hint": "辽阳总兵",
      "column": "east",
      "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
-     "influence": 1
+     "influence": 2
     },
     {
      "id": "qiaoyilang",
@@ -8366,6 +8366,300 @@ window.SANDBOX_DATA = {
       "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明"
      },
      "_party": "学界"
+    },
+    {
+     "id": "SX005",
+     "subject": "army:ming_total",
+     "predicate": "兵力",
+     "value_text": "兵六万（李如柏部）",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "右翼中路，以李如柏、贺世贤、阎鸣泰督兵六万，由清河出鸦鹘关",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX006",
+     "subject": "army:ming_total",
+     "predicate": "兵力",
+     "value_text": "兵四万（马林部）",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "左翼北路，以马林、麻岩、潘宗颜督兵四万，由开原合叶赫兵出三岔口",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX007",
+     "subject": "army:ming_total",
+     "predicate": "兵力",
+     "value_text": "兵四万（刘綎部）",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "右翼南路，以刘綎、康应干督兵四万合朝鲜兵，出宽甸口",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX010",
+     "subject": "person:yanggao",
+     "predicate": "指挥",
+     "value_text": "辽东经略杨镐",
+     "time": {
+      "era_text": "万历四十七年",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "令辽东经略杨镐集兵沈阳",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX012",
+     "subject": "person:wangxuan",
+     "predicate": "阵亡",
+     "value_text": "没于阵",
+     "time": {
+      "era_text": "天命四年三月甲申朔",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "明总兵杜松、王宣、赵梦麟等皆没于阵",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX013",
+     "subject": "person:zhaomenglin",
+     "predicate": "阵亡",
+     "value_text": "没于阵",
+     "time": {
+      "era_text": "天命四年三月甲申朔",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "明总兵杜松、王宣、赵梦麟等皆没于阵",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX014",
+     "subject": "person:liuting",
+     "predicate": "阵亡",
+     "value_text": "战死",
+     "time": {
+      "era_text": "天命四年三月丁亥",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "丁亥，大破明兵于栋鄂路（刘綎部，战死）",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX017",
+     "subject": "person:dusong",
+     "predicate": "轻敌冒进",
+     "value_text": "乘夜列炬出抚顺关",
+     "time": {
+      "era_text": "天命四年二月二十九日",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushunguan",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "二十九日杜松等所率兵六万已乘夜列炬出抚顺关",
+     "quote_status": "paraphrase_unverified",
+     "layer": "inference",
+     "confidence": 0.7,
+     "scale": "county",
+     "note": "原文未明说轻敌，但乘夜列炬暴露行踪可推",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX018",
+     "subject": "army:houjin_defense",
+     "predicate": "兵力",
+     "value_text": "四百人（防卫筑城夫役）",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "我兵之防卫筑城夫役者仅四百人",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX019",
+     "subject": "army:houjin_total",
+     "predicate": "集兵",
+     "value_text": "过扎喀关，与大臣扈尔汉等集兵以待",
+     "time": {
+      "era_text": "天命四年三月甲申朔",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushunguan",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "过扎喀关，与大臣扈尔汉等集兵以待",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX020",
+     "subject": "war:sarhu",
+     "predicate": "结果",
+     "value_text": "后金获全胜",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "今我不逾时破之，遂获全胜",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX021",
+     "subject": "person:liruobai",
+     "predicate": "撤退",
+     "value_text": "自呼兰路遁归",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "如柏等自呼兰路遁归",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX022",
+     "subject": "person:malin",
+     "predicate": "助叶赫",
+     "value_text": "率兵助叶赫",
+     "time": {
+      "era_text": "天命四年春正月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "马林率兵助叶赫，合兵出叶赫城四十里",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "province",
+     "note": "",
+     "_party": "清修官史"
+    },
+    {
+     "id": "SX023",
+     "subject": "place:jiefan",
+     "predicate": "筑城",
+     "value_text": "令夫役万五千人赴界藩运石兴筑",
+     "time": {
+      "era_text": "天命四年二月己巳",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "jiefan",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "令夫役万五千人赴界藩运石兴筑，以骑兵四百卫之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "county",
+     "note": "",
+     "_party": "清修官史"
     }
    ],
    "conflicts": [
@@ -8374,13 +8668,16 @@ window.SANDBOX_DATA = {
      "subject": "army:ming_total",
      "predicate": "兵力",
      "kind": "record_vs_scholarship",
-     "count": 4,
+     "count": 7,
      "spread": 5.34,
      "assertion_ids": [
       "A001",
       "A002",
       "A003",
-      "A004"
+      "A004",
+      "SX005",
+      "SX006",
+      "SX007"
      ]
     },
     {
@@ -21830,16 +22127,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "sarhu",
     "name": "萨尔浒",
-    "total": 46,
+    "total": 60,
     "layers": {
-     "record": 32,
+     "record": 45,
      "scholarship": 10,
-     "inference": 2,
+     "inference": 3,
      "gap": 2
     },
     "party_counts": {
      "明方": 17,
-     "清方": 10,
+     "清方": 24,
      "综述考订": 14,
      "朝鲜": 5
     },
