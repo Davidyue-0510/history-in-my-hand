@@ -18,7 +18,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | 断言四层 + 缺口→线索 | record/scholarship/inference/gap；portal 汇总 40 条可认领线索 | `demo/portal.html` |
 | 反事实分支（数据层） | 时间轴带 `branch` 节点，N06/N07 自动聚成冲突组 | world 的 `timeline.json` |
 | 声明式扩展 | 新增一个 world = 往 `data/scenes.json` 加一条，hub/portal 自动扫描 | `data/scenes.json` |
-| 四闸门 CI | lint → test → leads → build，fail-fast | `python tools/gates.py --strict` |
+| 五闸门 CI | lint → test → leads → build → interaction，fail-fast | `python tools/gates.py --strict` |
 | 无 PAT 推送 | GitHub App 安装令牌，私钥本地不入库 | `node tools/push_app.js` |
 
 ## 2. 逻辑架构（分层 + 数据流）
@@ -36,7 +36,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
                                          ↑ 由
             ┌───────────────────────────┴─────────────────────────────┐
             │ ③ 守门工具链 tools/gates.py --strict（fail-fast）          │
-            │    lint → test_assertions → leads → build                │
+            │    lint → test_assertions → leads → build → interaction  │
             │    + ingest.py(装配) · resonance/route_strain(历史专用)    │
             └───────────────────────────┬─────────────────────────────┘
                                          ↑ 读
@@ -81,7 +81,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 **立场靠来源派生（不手贴标签）：** `source.party → vocab.party_bucket → 分桶`；
 改一处词表，全站共振度自动重算。这是「可审计」的前提。
 
-## 4. 工具链（四闸门 + 辅助）
+## 4. 工具链（五闸门 + 辅助）
 
 | 工具 | 职责 |
 |---|---|
@@ -89,7 +89,8 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | `test_assertions.py` | 不变量测试：断言命名空间/引用闭合，重写保险 |
 | `leads.py` | 扫所有 world 的 gap 层 → 聚合 `data/leads.json`（可认领线索） |
 | `build.py` | 编译：读各 world 文件 → 归一化 edges → 注入 edge_types → 写 `demo/data.js` |
-| `gates.py` | 编排上述四步，`--strict` 下 warning 也算失败，CI 用 |
+| `gates.py` | 编排上述五步，`--strict` 下 warning 也算失败，CI 用；`--no-interaction` 可跳过浏览器闸门 |
+| `probe_interaction.js` | **交互闸门**：零依赖静态服务 + 无头浏览器，用 CDP 发**真实鼠标事件**断言「点得动」。抓的是前四道抓不到的一类缺陷——数据全对、编译全对、截图正常，但浏览器里所有 click 监听器都是死的 |
 | `ingest.py` | `parse` 启发式预抽取 + `assemble` 把 spec 装配成 world 并注册（确定性，不含文学理解） |
 | `resonance.py` / `route_strain.py` | 辽东专用：三方共振度、路线 strain（历史 world 用） |
 | `push_app.js` | GitHub App 安装令牌推送，替代 PAT |
@@ -119,6 +120,7 @@ IS_ABSTRACT = META.fictional || !places.some(p => 数值 lon/lat)
 2. **空字段是 bug** → 空引文/空断言在 UI 渲染为空白，但会污染下游计算；`lint.py` 守门，build 前必跑。
 3. **声明式 > 硬编码** → hub/portal 扫描 `scenes.json` 自动渲染，新增 world 零前端改动。
 4. **回归测试是重写保险** → 大改前先有不变量测试 + 视觉对照 + lint 三道闸门。
+5. **「渲染正确」不等于「点得动」** → `setPointerCapture` 在 pointerdown 阶段夺取捕获会让 Chromium 把 click 重定向到捕获元素，地图内所有监听器静默失效；数据闸门与截图都看不出来。必须有真实输入事件的交互闸门。
 5. **诚实边界** → 地形网格外的县显式标「地形网格外」绝不伪造高程；虚构 world 不硬套地理栏目。
 6. **推送去 PAT** → GitHub App 安装令牌，私钥 gitignore、一次性 URL、输出打码。
 
@@ -127,7 +129,7 @@ IS_ABSTRACT = META.fictional || !places.some(p => 数值 lon/lat)
 - 世界：**23**（14 历史：1 battle 萨尔浒 + 13 county；9 虚构：小说 9 副本）
 - 断言：**290**（record 182 / scholarship 49 / inference 19 / gap 40）
 - 可认领线索：**40** · 来源：**31（跨 world 去重）**
-- 四闸门：`tools/gates.py --strict` 全绿（EXIT=0）
+- 五闸门：`tools/gates.py --strict` 全绿（EXIT=0），含 12 项真实点击断言
 - 提交：`bd46fef`(v0.9) → `3ced0a4`(App 推送) → `2d1d3d8`(封装) 均已上 GitHub main
 
 ## 9. 接下去可做的（按北极星优先级）

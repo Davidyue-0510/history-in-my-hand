@@ -644,6 +644,8 @@ body{
   pointer-events:auto; cursor:pointer; fill:#2E5C8A;
   text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px;
 }
+/* 县名的扩大命中区（透明矩形，叠在文字之上） */
+.label-hit{ pointer-events:auto; cursor:pointer; }
 .drill-btn{
   display:inline-block; margin:0 0 12px; padding:7px 13px;
   font-family:var(--serif); font-size:13px; color:#fff; background:#2E5C8A;

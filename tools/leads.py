@@ -45,14 +45,24 @@ def main():
             if not all(k in lead and lead[k] for k in ('where', 'skills', 'accept')):
                 # lead 块缺字段，跳过——让 lint W09 单独报
                 continue
+            # skills 必须是数组：写成字符串时 ' / '.join 会把整串打散成单字
+            # （"文本回查" → "文 / 本 / 回 / 查"）。lint E13 会硬报错拦住源数据，
+            # 这里再兜一层，保证即使有人跳过 lint 也不会产出被污染的 leads.json。
+            skills = lead.get('skills', [])
+            if isinstance(skills, str):
+                skills = [s.strip() for s in skills.split('/') if s.strip()]
+            elif not isinstance(skills, list):
+                skills = [str(skills)]
+            skills = [str(s).strip() for s in skills if str(s).strip()]
+
             leads.append({
                 "id": a['id'],
                 "scene": d,
                 "subject": a.get('subject', ''),
                 "title": a.get('value_text', '')[:60] + ('…' if len(a.get('value_text', '')) > 60 else ''),
-                "missing": ' / '.join(lead.get('skills', [])) or '未填',
+                "missing": ' / '.join(skills) or '未填',
                 "where": lead.get('where', ''),
-                "skills": lead.get('skills', []),
+                "skills": skills,
                 "accept": lead.get('accept', ''),
                 "effort": lead.get('effort', '—'),
                 # issue_url 由合作者认领时再加——本脚本不臆造

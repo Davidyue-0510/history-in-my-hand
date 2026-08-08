@@ -227,24 +227,35 @@
     view.x = a.x - (a.x - view.x) * k; view.y = a.y - (a.y - view.y) * k;
     applyView();
   }, { passive: false });
+  /* 与 app.js 同：指针捕获推迟到真正拖动之后，否则 Chromium 会把 click 重定向到 wrap，
+     令地图内所有点击（地点介绍、人物多 Tab、边、缺口标记、缩放按钮）全部失效。 */
+  var DRAG_TH = 4;
+  var UI_SEL = '.map-tools, .map-legend, .elev-legend, .zoom-badge, .map-hint, .offgrid-banner';
   var drag = null;
   wrap.addEventListener('pointerdown', function (e) {
     if (e.button !== 0) return;
-    drag = { sx: e.clientX, sy: e.clientY, vx: view.x, vy: view.y, moved: 0 };
-    wrap.setPointerCapture(e.pointerId); wrap.classList.add('grabbing');
+    if (e.target && e.target.closest && e.target.closest(UI_SEL)) return;
+    drag = { sx: e.clientX, sy: e.clientY, vx: view.x, vy: view.y, moved: 0, pid: e.pointerId, cap: false };
   });
   wrap.addEventListener('pointermove', function (e) {
     if (!drag) return;
     var dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
     drag.moved = Math.max(drag.moved, Math.abs(dx) + Math.abs(dy));
+    if (!drag.cap) {
+      if (drag.moved <= DRAG_TH) return;
+      try { wrap.setPointerCapture(drag.pid); } catch (x) {}
+      drag.cap = true; wrap.classList.add('grabbing');
+    }
     view.x = drag.vx - dx / cw * view.w; view.y = drag.vy - dy / ch * view.h;
     applyView(false);
   });
   function endDrag(e) {
-    if (!drag) return; var moved = drag.moved; drag = null;
+    if (!drag) return;
+    var moved = drag.moved, cap = drag.cap, pid = drag.pid;
+    drag = null;
     wrap.classList.remove('grabbing');
-    if (e && e.pointerId != null) { try { wrap.releasePointerCapture(e.pointerId); } catch (x) {} }
-    if (moved > 4) drawDynamic();
+    if (cap) { try { wrap.releasePointerCapture(pid); } catch (x) {} }
+    if (moved > DRAG_TH) drawDynamic();
   }
   wrap.addEventListener('pointerup', endDrag);
   wrap.addEventListener('pointercancel', endDrag);
@@ -802,7 +813,11 @@
     mine.forEach(function (l) {
       var n = document.createElement('div');
       n.className = 'cf lead';
-      var chips = (l.skills || []).map(function (s) {
+      // skills 理论上是数组（lint E13 守门），但前端不该因一条脏数据整页崩掉
+      var sk = Array.isArray(l.skills) ? l.skills
+             : (typeof l.skills === 'string' ? l.skills.split('/') : []);
+      var chips = sk.map(function (s) {
+        s = String(s).trim(); if (!s) return '';
         return '<span class="cf-chip" style="--cc:' + (SKILL_COLOR[s] || '#7A7466') + '">' + s + '</span>';
       }).join('');
       n.innerHTML = '<div class="cf-top"><span class="cf-sub">' + l.title + '</span>' +

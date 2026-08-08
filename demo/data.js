@@ -16845,7 +16845,10 @@ window.SANDBOX_DATA = {
      "value_text": "待抽取：拜金绝色女儿 / 我的儿子是怪物 / 不负责的穿书女 / 同性恋骗婚儿子 / 爱情至上的女儿 / 不听话的喵儿子 / 胎穿女和魂穿女（共 7 个副本）",
      "lead": {
       "where": "data/novel_to_map_try 全文",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐副本建 world，或并入本 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -16860,7 +16863,9 @@ window.SANDBOX_DATA = {
      "value_text": "缺：金宝之子后续人生轨迹的细节与因果",
      "lead": {
       "where": "第一章末尾一处旁白",
-      "skills": "文本回查",
+      "skills": [
+       "文本回查"
+      ],
       "accept": "补全该人物支线，或标记为作者留白"
      },
      "_party": "作者叙述"
@@ -17462,7 +17467,9 @@ window.SANDBOX_DATA = {
      "value_text": "缺：贺凌宸矫正后人生终局细节",
      "lead": {
       "where": "第二副本后续章节",
-      "skills": "文本回查",
+      "skills": [
+       "文本回查"
+      ],
       "accept": "补全矫正后时间线，或标记为作者留白"
      },
      "_party": "作者叙述"
@@ -17477,7 +17484,9 @@ window.SANDBOX_DATA = {
      "value_text": "缺：贺敏/沈岚后续支线",
      "lead": {
       "where": "第二副本后续章节",
-      "skills": "文本回查",
+      "skills": [
+       "文本回查"
+      ],
       "accept": "补全支线，或并入本 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -17935,7 +17944,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -18370,7 +18382,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -18803,7 +18818,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -19229,7 +19247,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -19636,7 +19657,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -20043,7 +20067,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -20449,7 +20476,10 @@ window.SANDBOX_DATA = {
      "value_text": "待逐章结构化各副本的深层情节与人物关系。",
      "lead": {
       "where": "data/novel_to_map_try 各副本对应章节",
-      "skills": "文本抽取 / 熟悉网文叙事",
+      "skills": [
+       "文本抽取",
+       "熟悉网文叙事"
+      ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
      "_party": "作者叙述"
@@ -21089,9 +21119,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao",
     "subject": "event:yu_mother_left",
     "title": "待抽取：拜金绝色女儿 / 我的儿子是怪物 / 不负责的穿书女 / 同性恋骗婚儿子 / 爱情至上的女儿 / 不听话的喵儿子…",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 全文",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐副本建 world，或并入本 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21102,9 +21135,11 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao",
     "subject": "person:yu_sunzi",
     "title": "缺：金宝之子后续人生轨迹的细节与因果",
-    "missing": "文 / 本 / 回 / 查",
+    "missing": "文本回查",
     "where": "第一章末尾一处旁白",
-    "skills": "文本回查",
+    "skills": [
+     "文本回查"
+    ],
     "accept": "补全该人物支线，或标记为作者留白",
     "effort": "—",
     "issue_url": null,
@@ -21115,9 +21150,11 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_2",
     "subject": "person:he_lingchen",
     "title": "缺：贺凌宸矫正后人生终局细节",
-    "missing": "文 / 本 / 回 / 查",
+    "missing": "文本回查",
     "where": "第二副本后续章节",
-    "skills": "文本回查",
+    "skills": [
+     "文本回查"
+    ],
     "accept": "补全矫正后时间线，或标记为作者留白",
     "effort": "—",
     "issue_url": null,
@@ -21128,9 +21165,11 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_2",
     "subject": "person:he_min",
     "title": "缺：贺敏/沈岚后续支线",
-    "missing": "文 / 本 / 回 / 查",
+    "missing": "文本回查",
     "where": "第二副本后续章节",
-    "skills": "文本回查",
+    "skills": [
+     "文本回查"
+    ],
     "accept": "补全支线，或并入本 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21141,9 +21180,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_3",
     "subject": "person:xie_xilan",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21154,9 +21196,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_4",
     "subject": "person:ai_zhe",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21167,9 +21212,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_5",
     "subject": "person:he_xinran",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21180,9 +21228,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_6",
     "subject": "person:situ_rui",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21193,9 +21244,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_7",
     "subject": "person:mu_qing",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21206,9 +21260,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_8",
     "subject": "person:bao_bao",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,
@@ -21219,9 +21276,12 @@ window.SANDBOX_DATA = {
     "scene": "novel_fandao_9",
     "subject": "person:jiang_ronghua",
     "title": "待逐章结构化各副本的深层情节与人物关系。",
-    "missing": "文 / 本 / 抽 / 取 /   / / /   / 熟 / 悉 / 网 / 文 / 叙 / 事",
+    "missing": "文本抽取 / 熟悉网文叙事",
     "where": "data/novel_to_map_try 各副本对应章节",
-    "skills": "文本抽取 / 熟悉网文叙事",
+    "skills": [
+     "文本抽取",
+     "熟悉网文叙事"
+    ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions",
     "effort": "—",
     "issue_url": null,

@@ -176,28 +176,38 @@
     applyView();
   }, { passive: false });
 
+  /* 平移：指针捕获必须「推迟到真正拖动之后」才夺取。
+     若在 pointerdown 就 setPointerCapture，Chromium 会把随后的 click 重定向到捕获元素（wrap），
+     导致地图内所有 click 监听器（地名、圆点、路线、缩放按钮）全部失效——这是长期潜伏的交互死区。 */
+  var DRAG_TH = 4;              // px：超过此位移才判定为平移而非点击
+  var UI_SEL = '.map-tools, .map-legend, .elev-legend, .zoom-badge, .map-hint';
   var drag = null;
   wrap.addEventListener('pointerdown', function (e) {
     if (e.button !== 0) return;
-    drag = { sx: e.clientX, sy: e.clientY, vx: view.x, vy: view.y, moved: 0 };
-    wrap.setPointerCapture(e.pointerId);
-    wrap.classList.add('grabbing');
+    if (e.target && e.target.closest && e.target.closest(UI_SEL)) return; // 悬浮控件不参与平移
+    drag = { sx: e.clientX, sy: e.clientY, vx: view.x, vy: view.y, moved: 0, pid: e.pointerId, cap: false };
   });
   wrap.addEventListener('pointermove', function (e) {
     if (!drag) return;
     var dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
     drag.moved = Math.max(drag.moved, Math.abs(dx) + Math.abs(dy));
+    if (!drag.cap) {
+      if (drag.moved <= DRAG_TH) return;      // 阈值内视作点击，不平移、不捕获
+      try { wrap.setPointerCapture(drag.pid); } catch (x) {}
+      drag.cap = true;
+      wrap.classList.add('grabbing');
+    }
     view.x = drag.vx - dx / cw * view.w;
     view.y = drag.vy - dy / ch * view.h;
     applyView(false);
   });
   function endDrag(e) {
     if (!drag) return;
-    var moved = drag.moved;
+    var moved = drag.moved, cap = drag.cap, pid = drag.pid;
     drag = null;
     wrap.classList.remove('grabbing');
-    if (e && e.pointerId != null) { try { wrap.releasePointerCapture(e.pointerId); } catch (x) {} }
-    if (moved > 4) drawDynamic();
+    if (cap) { try { wrap.releasePointerCapture(pid); } catch (x) {} }
+    if (moved > DRAG_TH) drawDynamic();
   }
   wrap.addEventListener('pointerup', endDrag);
   wrap.addEventListener('pointercancel', endDrag);
@@ -408,9 +418,24 @@
       }, gNodes);
       lb.textContent = p.name.replace(/（.*?）/, '');
       if (cs) {
+        var go = function () { location.href = 'county.html?scene=' + cs; };
         lb.style.cursor = 'pointer';
-        lb.setAttribute('title', '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片');
-        lb.addEventListener('click', function () { location.href = 'county.html?scene=' + cs; });
+        // SVG 里 title 属性不弹提示，必须用 <title> 子元素
+        el('title', {}, lb).textContent = '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片';
+        lb.addEventListener('click', go);
+        // 文字本体只有 ~22×16px，太难点：叠一层带内边距的透明命中矩形（画在文字之上）
+        try {
+          var bb = lb.getBBox();
+          var u = parseFloat(svg.style.getPropertyValue('--u')) || 1;
+          var pad = 4 * u;
+          var lh = el('rect', {
+            x: bb.x - pad, y: bb.y - pad,
+            width: bb.width + pad * 2, height: bb.height + pad * 2,
+            fill: 'transparent', class: 'label-hit'
+          }, gNodes);
+          el('title', {}, lh).textContent = '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片';
+          lh.addEventListener('click', go);
+        } catch (x) { /* getBBox 在未渲染时可能抛错，忽略即可，文字本体仍可点 */ }
       }
       if (state.terrain.elev && p.elev != null) {
         var ev = el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, gNodes);
