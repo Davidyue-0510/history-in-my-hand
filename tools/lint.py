@@ -22,7 +22,10 @@
     E10 record 层断言没有 quote
     E11 record 层却标 quote_status=generated（史料层不能是推演出来的）
     E12 gap 层 confidence 不为 0（缺口没有置信度可言）
-    E13 gap 层 lead.skills 不是「非空字符串数组」（写成字符串会被打散成单字并让前端崩溃）
+    E13 数据目录存在但未在 scenes.json 注册（静默丢失，界面看不到）——见 check_registry
+    E14 注册表登记了切片但 data/<dir>/assertions.jsonl 不存在（前端渲染空切片）——见 check_registry
+    E15 切片 region 不在 regions 列表（hub 分出无名分组）——见 check_registry
+    E16 gap 层 lead.skills 不是「非空字符串数组」（写成字符串会被打散成单字并让前端崩溃）
 
   W 级（warning，该修）
     W01 引文标 verbatim 但项目整体尚未完成点校本核对
@@ -229,13 +232,14 @@ def check_scene(sc, rep):
                          '%s %s 是 gap 层但 lead 块缺 %s——缺口没写成可认领的线索，'
                          '在「线索」页签里就是一条空壳' % (loc, aid, '/'.join(miss)))
 
-            # E13：lead.skills 必须是数组。写成字符串会让 leads.py 的
+            # E16：lead.skills 必须是数组。写成字符串会让 leads.py 的
             # ' / '.join(skills) 把整串打散成单字（"文本回查" → "文 / 本 / 回 / 查"），
             # 并让前端 (l.skills||[]).map 直接抛 TypeError，整个「线索」页签崩掉。
             # 这类「类型错」肉眼看数据看不出来，必须由闸门守。
+            # 注意：E13/E14/E15 已被 check_registry 占用，本检查用 E16，勿抢占。
             sk = lead.get('skills')
             if sk is not None and not isinstance(sk, list):
-                rep.err('E13', scene,
+                rep.err('E16', scene,
                         '%s %s 的 lead.skills 是 %s 而非数组（值：%r）——'
                         '会导致 missing 字段被打散成单字、前端「线索」页签抛异常。'
                         '请写成 ["技能A", "技能B"]'
@@ -243,7 +247,7 @@ def check_scene(sc, rep):
             elif isinstance(sk, list):
                 for i, one in enumerate(sk):
                     if not isinstance(one, str) or not one.strip():
-                        rep.err('E13', scene,
+                        rep.err('E16', scene,
                                 '%s %s 的 lead.skills[%d] 不是非空字符串（值：%r）'
                                 % (loc, aid, i, one))
 
