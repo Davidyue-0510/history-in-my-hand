@@ -200,3 +200,28 @@ worlds/
 ### 11.4 人物视图（county.js）
 点选人物展开多标签：断言（默认）/ 轨迹（events.actors 排序，可按 year 时间窗过滤）/ 关联人物（edges+influence，点大小=史料记载量，点密集=影响力集中；点击跳转）/ 事件影响 / 立场剖面（按 source.party 统计）/ 史料缺口 / 比较·反事实（占位，待 M6 演化引擎）。抽象图模式下选中人物会高亮其关系网（ego network）。
 
+## 12. 空间控制权数据（control_liaodong.json）
+
+断言模型描述「谁说了什么」，空间控制权数据描述「谁在何时按住哪块地」——是 assertion-driven 在**空间维度**的平行扩展，二者共用 `vocab.json` 的 `parties` 词表与同一套诚实边界。
+
+```json
+{
+  "_comment": "辽东实际控制态势（v0.10）。几何不入库，由 build.py 按各县 primary_place 推 control_seats，前端 Voronoi 近似。",
+  "control": [
+    {"place_id":"fushun","party":"明方","start":1368,"end":1617,"basis":"明抚顺千户所","note":""},
+    {"place_id":"fushun","party":"清方","start":1618,"end":null,"basis":"抚顺陷落 1618","note":"李永芳降"},
+    {"place_id":"shenyang_cheng","party":"明方","start":1368,"end":1620,"basis":"明沈阳中卫","note":""},
+    {"place_id":"shenyang_cheng","party":"清方","start":1621,"end":null,"basis":"沈阳陷落 1621","note":"后金迁都盛京"}
+  ]
+}
+```
+
+**字段约束（由 `lint.py` 的 `check_control`（E17/W12）守门）：**
+- `place_id` 必须是某**县切片** `places.json` 已登记的地点（即 build 推 `control_seats` 所用的 `primary_place`）。短时窗内 Voronoi 网格按这些治所 lon/lat 生成；若 id 无主，该城在图上静默留白。
+- `party` 必须在 `vocab.json` 的 `parties` 受控词表内。
+- `start` / `end` 为整数年；`end:null` 表示「延续至今（本切片时间窗之后）」。`end >= start`。
+- 同一 `place_id` 的时间段**不可重叠**（重叠年控制权会被静默取第一条）。
+- 每个县治所**至少应有 1 条** segment（W12；否则图层该城留白，疑似漏写）。
+
+**编译期注入（build.py）：** `control`、`control_seats`（各 county `primary_place` 的 lon/lat/name/region）、`control_years`（由 segments 起止年夹到 `[1616,1644]`）一并写进 `demo/data.js`。前端 `control_layer.js` 据此：年份/范围变才 `rebuild` 离屏 ImageData，纯视图变只 `repaint`；县范围画 13 个治所拼图，国家范围只画跨党派外缘、把同党县合并成板块并 `tally(year)` 出全国县数。虚构 world（`IS_ABSTRACT`）不 `setup` 此层。
+

@@ -204,6 +204,40 @@ async function main() {
     ok((await ev(`document.getElementById('zoomBadge').textContent`)) !== z0, '地图缩放按钮可点');
   } else ok(false, '未找到缩放按钮');
 
+  /* ═════════ 实际控制层（县 / 国家辖区） ═════════ */
+  console.log('\n-- 实际控制层 control_layer（sarhu.html） --');
+  await nav(BASE + '/sarhu.html');
+  const ctrlReady = await ev(`window.ControlLayer && ControlLayer.isReady()`);
+  ok(ctrlReady === true, 'ControlLayer 已就位（control_seats 注入 + Voronoi 网格生成）');
+  const enabled = await ev(`(()=>{const b=document.getElementById('ctrlOn');
+    if(!b) return 'no-checkbox';
+    b.checked=true; b.dispatchEvent(new Event('change'));
+    const y=document.getElementById('ctrlYear'); if(y){ y.value=1625; y.dispatchEvent(new Event('input')); }
+    return 'ok';})()`);
+  ok(enabled === 'ok', '勾选控制权开关 + 拖到 1625 年未报错');
+  await sleep(500);
+  const filled = await ev(`(()=>{const c=document.getElementById('controlCv'); if(!c) return -1;
+    const ctx=c.getContext('2d'); const w=c.width,h=c.height; if(!w||!h) return -2;
+    const d=ctx.getImageData(0,0,w,h).data; let n=0;
+    for(let i=3;i<d.length;i+=4*37){ if(d[i]>10) n++; } return n;})()`);
+  ok(filled > 0, '#controlCv 实际绘出辖区色块（非透明采样点 ' + filled + ' 个）');
+  const legendOk = await ev(`(()=>{const lg=document.getElementById('ctrlLegend');
+    return lg ? lg.querySelectorAll('i').length >= 2 : false;})()`);
+  ok(legendOk, '图例渲染出明 / 清双色块');
+  // 切到「国家」范围 → 图例应出现各县控制数（合并成板块）
+  const nationOk = await ev(`(()=>{const b=document.querySelector('.cp-scope[data-scope="nation"]');
+    if(!b) return false; b.click();
+    const t=document.getElementById('ctrlLegend').textContent||''; return /县/.test(t);})()`);
+  ok(nationOk, '切到「国家」范围 → 图例显示各县控制数（板块合并生效）');
+  // 回到县范围，确认年份变化驱动辖区重算（1625 沈阳已属清方）
+  const yearShift = await ev(`(()=>{const y=document.getElementById('ctrlYear');
+    document.querySelector('.cp-scope[data-scope="county"]').click();
+    y.value=1617; y.dispatchEvent(new Event('input'));
+    const shenYang=ControlLayer.controllerAt('shenyang_cheng',1617);
+    const after=ControlLayer.controllerAt('shenyang_cheng',1625);
+    return shenYang+'|'+after;})()`);
+  ok(yearShift === '明方|清方', '同一城 1617→1625 控制权由 明方 变 清方（年份驱动重算）');
+
   /* ═════════ 县级切片（真实地理） ═════════ */
   console.log('\n-- 县级切片 county.html?scene=shenyang --');
   await nav(BASE + '/county.html?scene=shenyang');

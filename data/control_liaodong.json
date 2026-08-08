@@ -1,0 +1,42 @@
+{
+  "_comment": "辽东实际控制态势（v0.10 新增）。本文件描述『谁在什么时候控制哪座城/县』——是 assertion-driven 模型在「空间控制权」维度上的扩展。每个 segment 表示某 place_id 在 [start, end] 年间由某 party 实际控制；end=null 表示持续至今（本切片时间窗 1644 之后）。party 取自 data/vocab.json 的 parties（明方/清方），立场语义与三方史料面板一致。控制权事实据明末清初辽东史实编写（见 basis）；存在反攻/拉锯处（辽南沿海）记于 note，属已知缺口，不冒充精确边界。几何由 tools/build.py 按治所最近邻推算（见 control_seats），本文件只存『控制权』不存『边界』。",
+  "control": [
+    {"place_id":"fushun","party":"明方","start":1368,"end":1617,"basis":"明抚顺千户所，洪武间置，羁縻建州女真前沿","note":""},
+    {"place_id":"fushun","party":"清方","start":1618,"end":null,"basis":"抚顺陷落 1618（万历四十六年/天命三年），七大恨告天起点","note":"李永芳降，明辽东马市羁縻体系终结"},
+
+    {"place_id":"kaiyuan_cheng","party":"明方","start":1368,"end":1618,"basis":"明开原三万卫，辽北第一重镇","note":""},
+    {"place_id":"kaiyuan_cheng","party":"清方","start":1619,"end":null,"basis":"开原陷落 1619（万历四十七年/天命四年）","note":"叶赫随之灭亡"},
+
+    {"place_id":"tieling_cheng","party":"明方","start":1368,"end":1618,"basis":"明铁岭卫，李成梁故里、辽东锁钥","note":""},
+    {"place_id":"tieling_cheng","party":"清方","start":1619,"end":null,"basis":"铁岭陷落 1619，与开原同年","note":""},
+
+    {"place_id":"xiyehe","party":"明方","start":1368,"end":1618,"basis":"叶赫部，明廷敕封都督羁縻制衡建州","note":"海西女真，非明卫所但受明羁縻"},
+    {"place_id":"xiyehe","party":"清方","start":1619,"end":null,"basis":"叶赫亡 1619（萨尔浒战后东城西城俱破）","note":""},
+
+    {"place_id":"shenyang_cheng","party":"明方","start":1368,"end":1620,"basis":"明沈阳中卫，辽东锁钥","note":""},
+    {"place_id":"shenyang_cheng","party":"清方","start":1621,"end":null,"basis":"沈阳陷落 1621（天启元年/天命六年），袁应泰自缢","note":"后金天命十年(1625)迁都于此，改名盛京"},
+
+    {"place_id":"liaoyang_cheng","party":"明方","start":1368,"end":1620,"basis":"明辽东都司治所","note":""},
+    {"place_id":"liaoyang_cheng","party":"清方","start":1621,"end":null,"basis":"辽阳陷落 1621，后金先迁都辽阳（东京）","note":""},
+
+    {"place_id":"haizhou_cheng","party":"明方","start":1368,"end":1620,"basis":"明海州卫，辽南粮道咽喉、朝鲜马市所在","note":""},
+    {"place_id":"haizhou_cheng","party":"清方","start":1621,"end":null,"basis":"海州陷落 1621，沈阳陷后六日","note":"毛文龙率 197 人走皮岛，创东江镇"},
+
+    {"place_id":"gaizhou_cheng","party":"明方","start":1368,"end":1620,"basis":"明盖州卫，辽南二大卫之一","note":""},
+    {"place_id":"gaizhou_cheng","party":"清方","start":1621,"end":null,"basis":"盖州陷落 1621，海州陷后十日","note":""},
+
+    {"place_id":"fuzhou_cheng","party":"明方","start":1368,"end":1620,"basis":"明复州卫，扼辽南陆桥","note":""},
+    {"place_id":"fuzhou_cheng","party":"清方","start":1621,"end":null,"basis":"复州陷落 1621，与海州盖州同月","note":"东江镇浮海袭扰复州/金州沿海，控制线反复"},
+
+    {"place_id":"jinzhouwei_cheng","party":"明方","start":1368,"end":1620,"basis":"明金州卫，扼辽东半岛南端、辖旅顺口","note":""},
+    {"place_id":"jinzhouwei_cheng","party":"清方","start":1621,"end":null,"basis":"金州陷落 1621，旋为毛文龙东江镇一度收复","note":"辽南沿海明方反攻猛烈，此处记主体归属，反复细节属缺口"},
+
+    {"place_id":"guangning","party":"明方","start":1368,"end":1621,"basis":"明广宁卫，辽西军政中心、辽东镇移驻","note":""},
+    {"place_id":"guangning","party":"清方","start":1622,"end":null,"basis":"广宁陷落 1622（天启二年/天命七年），王化贞弃城","note":"明尽失辽西，经抚不和是直接原因"},
+
+    {"place_id":"jinzhou_cheng","party":"明方","start":1368,"end":1641,"basis":"明锦州卫，辽西锁钥，关宁锦防线","note":""},
+    {"place_id":"jinzhou_cheng","party":"清方","start":1642,"end":null,"basis":"松锦之战 1642（崇祯十四五年），祖大寿以锦州降","note":"明辽西机动兵力丧尽"},
+
+    {"place_id":"ningyuan","party":"明方","start":1368,"end":null,"basis":"明宁远卫，关宁锦防线核心，袁崇焕守","note":"宁远始终为明守：1626 宁远之战努尔哈赤受创、1644 吴三桂弃城引清入关前未失"}
+  ]
+}

@@ -143,6 +143,7 @@
     t: 0,
     tab: 'yan',
     selection: null,
+    control: { on: false, year: 1621, scope: 'county', playing: false },
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
     personYear: { from: null, to: null }  // 人物轨迹时间窗
@@ -164,6 +165,7 @@
   var wrap = document.getElementById('mapWrap');
   var svg  = document.getElementById('map');
   var cv   = document.getElementById('terrainCv');
+  var controlCv = document.getElementById('controlCv');
   var view = { x: 0, y: 0, w: W, h: H };
   var fitW = W, cw = 1, ch = 1;
   var MIN_W = 26;
@@ -191,6 +193,7 @@
     cw = Math.max(1, r.width); ch = Math.max(1, r.height);
     var dpr = window.devicePixelRatio || 1;
     cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
+    controlCv.width = Math.round(cw * dpr); controlCv.height = Math.round(ch * dpr);
   }
   function clampView() {
     view.w = Math.min(fitW * 1.6, Math.max(MIN_W, view.w));
@@ -207,6 +210,7 @@
     svg.style.setProperty('--u', (view.w / cw).toFixed(5));
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     drawTerrain();
+    if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
     if (redrawSvg !== false && !rafPending) {
       rafPending = true;
       requestAnimationFrame(function () { rafPending = false; drawDynamic(); });
@@ -230,7 +234,7 @@
   /* 与 app.js 同：指针捕获推迟到真正拖动之后，否则 Chromium 会把 click 重定向到 wrap，
      令地图内所有点击（地点介绍、人物多 Tab、边、缺口标记、缩放按钮）全部失效。 */
   var DRAG_TH = 4;
-  var UI_SEL = '.map-tools, .map-legend, .elev-legend, .zoom-badge, .map-hint, .offgrid-banner';
+  var UI_SEL = '.map-tools, .map-legend, .elev-legend, .zoom-badge, .map-hint, .offgrid-banner, .control-panel';
   var drag = null;
   wrap.addEventListener('pointerdown', function (e) {
     if (e.button !== 0) return;
@@ -1218,6 +1222,95 @@
     if (pn && note) pn.textContent = note;
   })();
 
+  /* ═══════════ 实际控制层（v0.10） ═══════════ */
+  function drawControl() {
+    if (!window.ControlLayer) return;
+    if (!IS_ABSTRACT && state.control.on && ControlLayer.isReady()) {
+      ControlLayer.draw(state.control.year, state.control.scope);
+      renderControlLegend();
+    } else {
+      ControlLayer.clear();
+      var lg = document.getElementById('ctrlLegend');
+      if (lg) lg.innerHTML = '';
+    }
+  }
+  function renderControlLegend() {
+    var lg = document.getElementById('ctrlLegend');
+    if (!lg) return;
+    var parts = [{ p: '明方', t: '明方' }, { p: '清方', t: '后金 / 清' }, { p: '朝鲜', t: '朝鲜' }];
+    var nation = state.control.scope === 'nation';
+    var tallyMap = nation ? ControlLayer.tally(state.control.year) : null;
+    var total = 0;
+    if (tallyMap) Object.keys(tallyMap).forEach(function (k) { total += tallyMap[k]; });
+    lg.innerHTML = parts.map(function (x) {
+      var c = ControlLayer.partyColor(x.p) || [120, 120, 120];
+      var label = x.t;
+      if (nation && tallyMap) {
+        var n = tallyMap[x.p] || 0;
+        if (total) label += ' ' + n + ' 县';
+      }
+      return '<i style="background:rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')"></i>' + label;
+    }).join('');
+    if (nation) {
+      lg.innerHTML += '<span class="cp-tally">共 ' + total + ' 县见于此图层</span>';
+    }
+  }
+  function wireControl() {
+    var panel = document.getElementById('controlPanel');
+    if (!panel || IS_ABSTRACT || !window.ControlLayer || !ControlLayer.isReady()) {
+      if (panel) panel.style.display = 'none';
+      return;
+    }
+    panel.style.display = '';
+    var onBox = document.getElementById('ctrlOn');
+    var yr = document.getElementById('ctrlYear');
+    var yrLbl = document.getElementById('ctrlYearLabel');
+    var playBtn = document.getElementById('ctrlPlay');
+    var cy = ControlLayer.years();
+    yr.min = cy[0]; yr.max = cy[1];
+    yr.value = state.control.year;
+    yrLbl.textContent = state.control.year;
+
+    onBox.addEventListener('change', function () {
+      state.control.on = onBox.checked;
+      panel.classList.toggle('on', state.control.on);
+      drawControl();
+    });
+    yr.addEventListener('input', function () {
+      state.control.year = parseInt(yr.value, 10);
+      yrLbl.textContent = state.control.year;
+      drawControl();
+    });
+    document.querySelectorAll('.cp-scope').forEach(function (b) {
+      b.addEventListener('click', function () {
+        state.control.scope = b.getAttribute('data-scope');
+        document.querySelectorAll('.cp-scope').forEach(function (x) { x.classList.remove('on'); });
+        b.classList.add('on');
+        drawControl();
+      });
+    });
+    if (playBtn) playBtn.addEventListener('click', function () {
+      if (state.control.playing) { stopControl(); return; }
+      if (!state.control.on) { onBox.checked = true; state.control.on = true; panel.classList.add('on'); }
+      state.control.playing = true;
+      playBtn.textContent = '❚❚';
+      var lo = cy[0], hi = cy[1];
+      if (state.control.year >= hi) state.control.year = lo;
+      playBtn._t = setInterval(function () {
+        if (state.control.year >= hi) { stopControl(); return; }
+        state.control.year++;
+        yr.value = state.control.year; yrLbl.textContent = state.control.year;
+        drawControl();
+      }, 900);
+    });
+  }
+  function stopControl() {
+    state.control.playing = false;
+    var pb = document.getElementById('ctrlPlay');
+    if (pb) pb.textContent = '▶';
+    if (pb && pb._t) { clearInterval(pb._t); pb._t = null; }
+  }
+
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
@@ -1228,5 +1321,14 @@
   }
 
   /* ═══════════ 启动 ═══════════ */
-  measure(); fitView(); tImg = buildTerrainImage(); initMap(); applyView(false); refresh();
+  measure(); fitView(); tImg = buildTerrainImage(); initMap();
+  if (!IS_ABSTRACT && window.ControlLayer) {
+    ControlLayer.setup({
+      cv: controlCv, px: px, py: py,
+      getView: function () { return view; },
+      getCw: function () { return cw; },
+      getDpr: function () { return window.devicePixelRatio || 1; }
+    });
+  }
+  applyView(false); wireControl(); refresh();
 })();

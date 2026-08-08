@@ -26,6 +26,8 @@
     E14 注册表登记了切片但 data/<dir>/assertions.jsonl 不存在（前端渲染空切片）——见 check_registry
     E15 切片 region 不在 regions 列表（hub 分出无名分组）——见 check_registry
     E16 gap 层 lead.skills 不是「非空字符串数组」（写成字符串会被打散成单字并让前端崩溃）
+    E17 实际控制数据 data/control_liaodong.json 不规整（place_id 无主 / party 不在词表 /
+        start·end 非整数 / end<start / 同地点时间段重叠）——图层会据此算出错的辖区
 
   W 级（warning，该修）
     W01 引文标 verbatim 但项目整体尚未完成点校本核对
@@ -39,6 +41,7 @@
         （同一本书不可能在开原是当代记录、在铁岭是后朝追述）
     W07 gap 层断言的 value_text 为空（缺口必须说清缺什么）
     W11 直引 quotes 数组条目 text 为空或 source_id 不存在（可选增强字段）
+    W12 县治所在 control_liaodong.json 中无任何控制权记录——图层上该城留白（疑似漏写）
 
 用法：
     python tools/lint.py            # 全量检查
@@ -349,6 +352,98 @@ def check_coverage(scenes, rep):
                          '检查 source.party 是否配错' % (ev, ps or '{}'))
 
 
+def check_control(rep):
+    """实际控制数据（v0.10）——图层据此把「谁何时控哪城」投成辖区色块。
+
+    校验：place_id 必须是某县切片已登记的地点（否则 Voronoi 网格上无对应治所）；
+    party 必须在 vocab.json 受控词表；start/end 为整数年（end 可 null 表示延续至今）；
+    end >= start；同一 place_id 的时间段不可重叠；每个县治所至少有 1 条记录。
+    """
+    ctrl_path = os.path.join(DATA, 'control_liaodong.json')
+    if not os.path.exists(ctrl_path):
+        return
+    try:
+        ctrl = json.load(open(ctrl_path, encoding='utf-8'))
+    except Exception as e:
+        rep.err('E17', 'control_liaodong', 'control_liaodong.json 解析失败：%s' % e)
+        return
+    segs = ctrl.get('control', []) or []
+    if not isinstance(segs, list):
+        rep.err('E17', 'control_liaodong', 'control 字段必须是数组')
+        return
+
+    # 收集所有县切片的地点 id（作为 place_id 的合集）+ 各治所中文名
+    valid_place_ids = set()
+    seat_names = {}
+    for key, sc in REG_SCENES.items():
+        if sc.get('kind') != 'county':
+            continue
+        d = os.path.join(DATA, sc.get('dir', key))
+        ppath = os.path.join(d, 'places.json')
+        if not os.path.exists(ppath):
+            continue
+        try:
+            pls = json.load(open(ppath, encoding='utf-8')).get('places', [])
+        except Exception:
+            continue
+        for p in pls:
+            valid_place_ids.add(p['id'])
+            if p['id'] == sc.get('primary_place'):
+                seat_names[p['id']] = p.get('name', p['id'])
+
+    parties = set(VOCAB['parties'])
+    by_place = defaultdict(list)
+    for i, s in enumerate(segs):
+        tag = 'control[%d]' % i
+        pid = s.get('place_id')
+        if not pid:
+            rep.err('E17', 'control_liaodong', '%s 缺 place_id' % tag)
+            continue
+        if pid not in valid_place_ids:
+            rep.err('E17', 'control_liaodong',
+                    '%s 的 place_id「%s」不是任何县切片已登记的地点（Voronoi 网格上无对应治所）'
+                    % (tag, pid))
+        party = s.get('party')
+        if party not in parties:
+            rep.err('E17', 'control_liaodong',
+                    '%s 的 party「%s」不在 data/vocab.json 受控词表（parties）内' % (tag, party))
+        st = s.get('start')
+        en = s.get('end')
+        if not isinstance(st, int):
+            rep.err('E17', 'control_liaodong',
+                    '%s 的 start 必须是整数年，现=%r' % (tag, st))
+        if en is not None and not isinstance(en, int):
+            rep.err('E17', 'control_liaodong',
+                    '%s 的 end 必须是整数或 null（表示延续至今），现=%r' % (tag, en))
+        if isinstance(st, int) and isinstance(en, int) and en < st:
+            rep.err('E17', 'control_liaodong', '%s 的 end(%d) < start(%d)' % (tag, en, st))
+        by_place[pid].append((st, en, i))
+
+    # 同地点时间段重叠 → 图层在重叠年不知道该填谁
+    for pid, lst in by_place.items():
+        norm = []
+        for st, en, i in lst:
+            s0 = st if isinstance(st, int) else -10 ** 9
+            e0 = en if isinstance(en, int) else 10 ** 9
+            norm.append((s0, e0, i))
+        for a in range(len(norm)):
+            for b in range(a + 1, len(norm)):
+                s1, e1, i1 = norm[a]
+                s2, e2, i2 = norm[b]
+                if s1 <= e2 and s2 <= e1:
+                    rep.err('E17', 'control_liaodong',
+                            'place_id「%s」的 control[%d] 与 control[%d] 时间段重叠'
+                            '（%d~%d 与 %d~%d），重叠年份控制权将被静默取第一条'
+                            % (pid, i1, i2, s1, e1, s2, e2))
+
+    # 治所覆盖：每个县治所至少 1 条记录，否则图层该城留白
+    for pid, name in seat_names.items():
+        if pid not in by_place:
+            rep.warn('W12', 'control_liaodong',
+                     '县治所「%s」(%s) 在 control_liaodong.json 中无任何控制权记录'
+                     '——图层上该城将留白（疑似漏写）' % (pid, name))
+
+
 def check_registry(names, rep):
     """注册表与磁盘目录必须一一对应。
 
@@ -387,6 +482,7 @@ def main():
         check_scene(sc, rep)
     check_cross_scene(scenes, rep)
     check_coverage(scenes, rep)
+    check_control(rep)
 
     print('=' * 70)
     print('断言内核校验（tools/lint.py）')

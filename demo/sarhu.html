@@ -82,6 +82,7 @@
 
     <div class="map-wrap" id="mapWrap">
       <canvas id="terrainCv"></canvas>
+      <canvas id="controlCv"></canvas>
       <svg id="map" preserveAspectRatio="none"></svg>
 
       <div class="map-tools">
@@ -94,6 +95,21 @@
       <div class="map-legend" id="mapLegend"></div>
       <div class="elev-legend" id="elevLegend"></div>
       <div class="map-hint">滚轮缩放 · 拖拽平移 · 双击复位</div>
+
+      <div class="control-panel" id="controlPanel" style="display:none">
+        <div class="cp-head">
+          <label class="cp-toggle"><input type="checkbox" id="ctrlOn"> 实际控制层</label>
+          <span class="cp-year" id="ctrlYearLabel">1621</span>
+        </div>
+        <input type="range" id="ctrlYear" class="cp-slider" min="1616" max="1644" value="1621" step="1">
+        <div class="cp-row">
+          <button data-scope="county" class="cp-scope on">县</button>
+          <button data-scope="nation" class="cp-scope">国家</button>
+          <button id="ctrlPlay" class="cp-play" title="播放年份">▶</button>
+        </div>
+        <div class="cp-legend" id="ctrlLegend"></div>
+        <div class="cp-note">示意辖区（按治所最近邻）· 控制权据明末清初辽东史实</div>
+      </div>
     </div>
 
     <div class="timeline">
@@ -183,6 +199,7 @@
 </div>
 
 <script src="data.js"></script>
+<script src="control_layer.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

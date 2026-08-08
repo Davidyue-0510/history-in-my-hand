@@ -307,6 +307,51 @@ def main():
     else:
         sd["resonance"] = {"scene_summary": [], "events": []}
 
+    # ── 实际控制态势（v0.10）──────────────────────────────────────────────
+    # 控制权是「空间控制权」维度的断言扩展：谁在 [start,end] 年间控制哪座城。
+    # 几何（辖区）不在此存——由前端按治所最近邻推算（见 demo/control_layer.js），
+    # 这样本文件只管「事实」，边界可随时换成 CHGIS 等外部数据源而不动前端。
+    ctrl_path = os.path.join(DATA, "control_liaodong.json")
+    if os.path.exists(ctrl_path):
+        with open(ctrl_path, encoding="utf-8") as f:
+            ctrl = json.load(f)
+        sd["control"] = ctrl.get("control", [])
+    else:
+        sd["control"] = []
+
+    # 治所几何：遍历 county 切片，取 primary_place 的 lon/lat/name（去重）。
+    # 这些点就是前端推算「示意辖区」的种子；fiction 切片不参与（无真实地理）。
+    seats = {}
+    for sc in resolved:
+        if sc.get("kind") != "county":
+            continue
+        pp = sc.get("primary_place")
+        if not pp or pp in seats:
+            continue
+        try:
+            pl = load_json(scene_dir(sc), "places.json")["places"]
+        except Exception:
+            continue
+        pm = {p["id"]: p for p in pl}
+        p = pm.get(pp)
+        if not p or "lon" not in p or "lat" not in p:
+            continue
+        seats[pp] = {
+            "place_id": pp,
+            "name": p.get("name", pp),
+            "lon": p["lon"], "lat": p["lat"],
+            "region": sc.get("region"),
+        }
+    sd["control_seats"] = list(seats.values())
+
+    # 年份滑块范围：取控制权时间线的最小 start / 最大 end，但夹到动态期窗口
+    # （1616–1644）。pre-1616 全为明方、1644 之后格局已定，滑出去无意义。
+    yrs = [c["start"] for c in sd["control"] if isinstance(c.get("start"), int)]
+    ends = [c["end"] for c in sd["control"] if isinstance(c.get("end"), int)]
+    cy0 = max(1616, min(yrs)) if yrs else 1616
+    cy1 = max(1644, max(ends)) if ends else 1644
+    sd["control_years"] = [cy0, cy1]
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")

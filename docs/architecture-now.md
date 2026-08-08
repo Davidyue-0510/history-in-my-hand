@@ -16,6 +16,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | 虚构 world 浏览（9 个） | 无坐标，自动以**关系图**呈现（人=紫点/地=白点/按 edge_types 上色） | `demo/county.html?scene=novel_fandao_3` |
 | 立场靠来源派生 | 明/清/朝鲜三方 + 小说作者/系统/角色视角，自动分桶、算共振度 | 县页「立场」面板 + `resonance.py` |
 | 断言四层 + 缺口→线索 | record/scholarship/inference/gap；portal 汇总 40 条可认领线索 | `demo/portal.html` |
+| 实际控制辖区图层 | 时间滑块看县/国家控制权易手（明方红→清方绿），治所最近邻 Voronoi 示意辖区 | 战役图/县页右侧「控制权」面板 |
 | 反事实分支（数据层） | 时间轴带 `branch` 节点，N06/N07 自动聚成冲突组 | world 的 `timeline.json` |
 | 声明式扩展 | 新增一个 world = 往 `data/scenes.json` 加一条，hub/portal 自动扫描 | `data/scenes.json` |
 | 五闸门 CI | lint → test → leads → build → interaction，fail-fast | `python tools/gates.py --strict` |
@@ -80,6 +81,30 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 
 **立场靠来源派生（不手贴标签）：** `source.party → vocab.party_bucket → 分桶`；
 改一处词表，全站共振度自动重算。这是「可审计」的前提。
+
+### 3.1 实际控制层（空间控制权维度，v0.10）
+
+断言模型负责「谁说了什么」，实际控制层负责「谁在什么时候按住哪块地」——
+是 assertion-driven 在**空间维度**上的平行扩展，二者共用同一套 parties 词表与诚实边界。
+
+- **事实只存控制权，不存边界**：`data/control_liaodong.json` 每条 segment = `{place_id, party, start, end, basis, note}`，
+  `end:null` 表示延续至今（本切片时间窗 1644 之后）。几何**不入库**——由 `build.py` 按各县
+  `primary_place` 的 lon/lat 推 `control_seats`，前端 `control_layer.js` 在合成网格上做
+  **治所最近邻（Voronoi 近似）** 现算辖区。日后换 CHGIS 真实边界，只需改 build 注入，前端不动。
+- **年份驱动重算**：`rebuild()` 只在 year/scope 变化时才重算离屏 ImageData；纯视图变化只 `repaint()`，
+  保证拖拽缩放流畅。某城 1617 属明方、1625 属清方，就是同一个 `controllerAt(seat,year)` 按年查表得来。
+- **县 / 国家两级范围**：
+  - 县范围：13 个治所各画边界，呈现「县与县的拼图」；
+  - 国家范围：只画**跨党派外缘边界**、省略同党派内部县界，视觉上把同党县**合并成国家板块**，
+    图例同步显示「明方 N 县 / 清方 M 县」的全国统计（`ControlLayer.tally(year)`）。
+- **诚实边界落到几何**：面板注「示意辖区（按治所最近邻）· 控制权据明末清初辽东史实」；
+  辽南沿海明方反攻（东江镇）等拉锯处记在 segment `note` 里，属已知缺口，不冒充精确边界。
+- **虚构 world 跳过**：`IS_ABSTRACT` 为真时 `county.js` 不 `setup` 控制层，面板隐藏——无真实地理不该硬套辖区。
+- **零交互死区**：控制层 `<canvas>` 置于地形层之上、SVG 之下，`pointer-events:none` + 不进 `UI_SEL`，
+  绝不重新制造此前修过的「点击全死」问题。
+- **守门**：`lint.py` 新增 `check_control`（E17/W12）校验 place_id 是已登记地点、party 在词表、
+  start/end 整数且 end≥start、同地点时段不重叠、每个县治所有记录；`probe_interaction.js` 新增 6 项
+  真实点击断言（含「#controlCv 非透明像素」「年份驱动明方→清方」）。
 
 ## 4. 工具链（五闸门 + 辅助）
 

@@ -269,6 +269,7 @@ body{
 }
 .map-wrap.grabbing{ cursor:grabbing; }
 #terrainCv{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+#controlCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; }
 #map{ position:absolute; inset:0; width:100%; height:100%; display:block; }
 
 .map-tools{
@@ -302,6 +303,30 @@ body{
   font-family:var(--serif); cursor:pointer; }
 .lg-item.off{ opacity:.35; }
 .lg-line{ width:18px; height:0; border-top:2.5px solid var(--c); flex:none; }
+
+/* 实际控制层面板（v0.10） */
+.control-panel{
+  position:absolute; left:14px; top:14px; z-index:6;
+  width:210px; background:rgba(251,249,243,.96);
+  border:1px solid var(--rule-2); border-radius:6px; padding:9px 10px 10px;
+  box-shadow:0 2px 12px rgba(40,30,20,.14); backdrop-filter:blur(3px);
+  font-family:var(--serif); color:var(--ink); font-size:11px;
+}
+.control-panel .cp-head{ display:flex; align-items:center; justify-content:space-between; }
+.cp-toggle{ display:flex; align-items:center; gap:5px; font-weight:600; cursor:pointer; }
+.cp-year{ font-family:var(--mono); font-size:14px; font-weight:700; color:var(--ink); }
+.cp-slider{ width:100%; margin:9px 0 6px; accent-color:#3D6B4F; cursor:pointer; }
+.cp-row{ display:flex; gap:5px; align-items:center; }
+.cp-scope{ flex:1; border:1px solid var(--rule); background:transparent; border-radius:3px;
+  padding:3px 0; font-size:11px; cursor:pointer; color:var(--ink-2); font-family:var(--serif); }
+.cp-scope.on{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+.cp-play{ width:28px; border:1px solid var(--rule); background:transparent; border-radius:3px;
+  font-size:11px; cursor:pointer; color:var(--ink-2); }
+.cp-play:hover{ background:var(--ink); color:var(--paper); }
+.cp-legend{ display:flex; flex-wrap:wrap; gap:12px; margin-top:9px; font-size:10px; color:var(--ink-2); }
+.cp-legend i{ display:inline-block; width:11px; height:11px; border-radius:2px; margin-right:3px; vertical-align:-1px; }
+.cp-tally{ flex-basis:100%; margin-top:2px; font-size:9.5px; color:var(--ink-3); }
+.cp-note{ margin-top:8px; font-size:9.5px; color:var(--ink-3); line-height:1.45; }
 .lg-line.lg-dash{ border-top-style:dashed; }
 
 .elev-legend{
