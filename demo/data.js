@@ -6940,6 +6940,19 @@ window.SANDBOX_DATA = {
      "party": "学界",
      "color": "#2E7D8F",
      "note": "综合明清双方档案、朝鲜史料与卫所兵额推算得出。占位条目，正式版需逐条落实到具体论著与页码。"
+    },
+    {
+     "id": "huangqing_kaiguo_fanglue",
+     "title": "皇清开国方略",
+     "juan": "卷六（天命四年萨尔浒之战）",
+     "compiler": "清官修",
+     "compiled_year": 1784,
+     "stance": "official_enemy",
+     "stance_label": "敌方官修",
+     "distance_label": "成书 1784，距事件约 165 年，屡经改窜",
+     "party": "清修官史",
+     "color": "#3D6B4F",
+     "note": "清官修开国史，萨尔浒叙述以天命纪年。与《清太祖实录》同源但成书更晚，对后金行军序列记载详尽，兵力数字系统性夸大明军以彰显战功。ingest.py fixture 模式抽出的 7 条断言（IN001–IN007）即源自此卷。"
     }
    ],
    "places": [
@@ -7192,7 +7205,7 @@ window.SANDBOX_DATA = {
      "role_hint": "山海关总兵",
      "column": "west",
      "note": "西路主将，绰号杜疯子，以勇著称",
-     "influence": 0
+     "influence": 1
     },
     {
      "id": "wangxuan",
@@ -8198,6 +8211,161 @@ window.SANDBOX_DATA = {
      "scale": "province",
      "note": "谈迁只记损失总数而不记出征人数，与《明史》『四万五千八百七十余』整整差一倍。两个数字未必矛盾——《明史》数的是『阵亡军丁』，谈迁的『丧师』可能含溃散失踪与朝鲜、叶赫附从之众。本系统不裁决，只把两条并列并标出这一解释路径。",
      "_party": "明·私修"
+    },
+    {
+     "id": "IN001",
+     "subject": "war:sarhu",
+     "predicate": "明军集兵分四路来攻",
+     "value_text": "辽东经略杨镐集兵沈阳，分四路来攻",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "明帝欲逞志于我（时万历四十七年），令辽东经略杨镐集兵沈阳，分四路来攻",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.85,
+     "scale": "empire",
+     "note": "明方纪年「万历四十七年」与后金纪年「天命四年」指同一年（1619）。由 LLM 从《皇清开国方略》卷六抽出，经 ingest.py + reign_era 归一化。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN002",
+     "subject": "army:ming_west",
+     "predicate": "兵力与出击路线",
+     "value_text": "杜松等率兵六万，由浑河出抚顺关",
+     "time": {
+      "era_text": "天命四年二月廿九",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "fushunguan",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "二十九日杜松等所率兵六万已乘夜列炬出抚顺关",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.8,
+     "scale": "province",
+     "note": "西路为四路主力；年号换算取「天命四年」对应公元 1619，月日（二月廿九）原样保留待农历模块。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN003",
+     "subject": "war:sarhu",
+     "predicate": "大破明兵于萨尔浒山",
+     "value_text": "三月甲申朔，大破明兵于萨尔浒山",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "三月甲申朔，大破明兵于萨尔浒山",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "empire",
+     "note": "主战场节点；与 IN001 为同一事件的不同纪年表述。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN004",
+     "subject": "person:dusong",
+     "predicate": "阵亡",
+     "value_text": "明总兵杜松、王宣、赵梦麟等皆没于阵",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "sarhu",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "明总兵杜松、王宣、赵梦麟等皆没于阵，横尸亘山野，血流成渠",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.85,
+     "scale": "empire",
+     "note": "西路主将杜松战死，是萨尔浒西路崩溃的标志。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN005",
+     "subject": "army:ming_total",
+     "predicate": "宣称兵力",
+     "value_text": "号称兵四十七万",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "杨镐……号称兵四十七万",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.3,
+     "scale": "empire",
+     "note": "明方对外宣称的虚数（震慑 + 安抚朝议），研究者普遍不采信；与 IN006 后金记述的「二十万」同为夸大，立场相关。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN006",
+     "subject": "army:jin_total",
+     "predicate": "实录所载明军规模",
+     "value_text": "明以二十万众，号四十七万",
+     "time": {
+      "era_text": "天命四年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "hetuala",
+     "source": "huangqing_kaiguo_fanglue",
+     "quote": "明以二十万众，号四十七万，分四路并力来战，今我不逾时破之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.4,
+     "scale": "empire",
+     "note": "胜方（后金）记述，夸大敌军以彰显战功；与 IN005 不冲突，是不同立场的同一虚数的两面。",
+     "_party": "清修官史"
+    },
+    {
+     "id": "IN007",
+     "subject": "army:ming_total",
+     "predicate": "实际兵力缺口",
+     "value_text": "明军实数史料记载不一：号称四十七万 / 实录二十万 / 学界逆推约八万八千",
+     "time": {
+      "era_text": "万历四十七年三月",
+      "start": "1619-01-01",
+      "end": "1619-12-31",
+      "gregorian_year": 1619
+     },
+     "place": "shenyang",
+     "source": "modern",
+     "quote": "",
+     "quote_status": "paraphrase_unverified",
+     "layer": "gap",
+     "confidence": 0.0,
+     "scale": "empire",
+     "note": "三类数字口径不同（宣称/胜方记述/学界逆推），不能强行合并；应作为缺口汇入 leads，待 DH 落实具体论著与页码后定稿。",
+     "lead": {
+      "where": "明军萨尔浒实际兵力需落实到具体论著与页码",
+      "skills": [
+       "明清军事史",
+       "卫所兵额与饷银考证"
+      ],
+      "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明"
+     },
+     "_party": "学界"
     }
    ],
    "conflicts": [
@@ -8253,7 +8421,8 @@ window.SANDBOX_DATA = {
     }
    ],
    "gaps": [
-    "A092"
+    "A092",
+    "IN007"
    ],
    "routes": [
     {
@@ -21304,6 +21473,22 @@ window.SANDBOX_DATA = {
     "_src_line": 33
    },
    {
+    "id": "IN007",
+    "scene": "sarhu",
+    "subject": "army:ming_total",
+    "title": "明军实数史料记载不一：号称四十七万 / 实录二十万 / 学界逆推约八万八千",
+    "missing": "明清军事史 / 卫所兵额与饷银考证",
+    "where": "明军萨尔浒实际兵力需落实到具体论著与页码",
+    "skills": [
+     "明清军事史",
+     "卫所兵额与饷银考证"
+    ],
+    "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 46
+   },
+   {
     "id": "S021",
     "scene": "shenyang",
     "subject": "place:shenyang_cheng",
@@ -21645,17 +21830,17 @@ window.SANDBOX_DATA = {
    {
     "scene": "sarhu",
     "name": "萨尔浒",
-    "total": 39,
+    "total": 46,
     "layers": {
-     "record": 26,
+     "record": 32,
      "scholarship": 10,
      "inference": 2,
-     "gap": 1
+     "gap": 2
     },
     "party_counts": {
      "明方": 17,
-     "清方": 4,
-     "综述考订": 13,
+     "清方": 10,
+     "综述考订": 14,
      "朝鲜": 5
     },
     "event_count": 5,

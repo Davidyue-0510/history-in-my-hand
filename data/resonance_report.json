@@ -224,17 +224,17 @@
     {
       "scene": "sarhu",
       "name": "萨尔浒",
-      "total": 39,
+      "total": 46,
       "layers": {
-        "record": 26,
+        "record": 32,
         "scholarship": 10,
         "inference": 2,
-        "gap": 1
+        "gap": 2
       },
       "party_counts": {
         "明方": 17,
-        "清方": 4,
-        "综述考订": 13,
+        "清方": 10,
+        "综述考订": 14,
         "朝鲜": 5
       },
       "event_count": 5,

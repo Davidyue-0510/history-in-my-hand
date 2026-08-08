@@ -79,6 +79,19 @@
       "party": "学界",
       "color": "#2E7D8F",
       "note": "综合明清双方档案、朝鲜史料与卫所兵额推算得出。占位条目，正式版需逐条落实到具体论著与页码。"
+    },
+    {
+      "id": "huangqing_kaiguo_fanglue",
+      "title": "皇清开国方略",
+      "juan": "卷六（天命四年萨尔浒之战）",
+      "compiler": "清官修",
+      "compiled_year": 1784,
+      "stance": "official_enemy",
+      "stance_label": "敌方官修",
+      "distance_label": "成书 1784，距事件约 165 年，屡经改窜",
+      "party": "清修官史",
+      "color": "#3D6B4F",
+      "note": "清官修开国史，萨尔浒叙述以天命纪年。与《清太祖实录》同源但成书更晚，对后金行军序列记载详尽，兵力数字系统性夸大明军以彰显战功。ingest.py fixture 模式抽出的 7 条断言（IN001–IN007）即源自此卷。"
     }
   ]
 }

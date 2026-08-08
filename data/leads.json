@@ -524,6 +524,22 @@
    "_src_line": 33
   },
   {
+   "id": "IN007",
+   "scene": "sarhu",
+   "subject": "army:ming_total",
+   "title": "明军实数史料记载不一：号称四十七万 / 实录二十万 / 学界逆推约八万八千",
+   "missing": "明清军事史 / 卫所兵额与饷银考证",
+   "where": "明军萨尔浒实际兵力需落实到具体论著与页码",
+   "skills": [
+    "明清军事史",
+    "卫所兵额与饷银考证"
+   ],
+   "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 46
+  },
+  {
    "id": "S021",
    "scene": "shenyang",
    "subject": "place:shenyang_cheng",

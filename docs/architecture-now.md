@@ -19,6 +19,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | 实际控制辖区图层 | 时间滑块看县/国家控制权易手（明方红→清方绿），治所最近邻 Voronoi 示意辖区 | 战役图/县页右侧「控制权」面板 |
 | 一键史料 ingestion 管线 | 文本→断言四层→年号归一化→校验→可选跑 gates，实现「导入即呈现」最小闭环（heuristic/llm/fixture 三后端） | `tools/ingest.py` |
 | 全国尺度时序主干 | 年号↔公元覆盖唐/宋/元/辽/金/隋/明/清（含「元/正」年号名），`dynasty_at()` 反查公元年属哪些朝代 | `tools/reign_era.py` |
+| 跨场景世界模型查询 | 「导入即可查」——按公元年/年号/地点/来源/层级跨全部场景检索断言，是北极星「可查询数据库」角色在 demo 量级的落地（无需先上 Postgres） | `tools/world_query.py` |
 | 反事实分支（数据层） | 时间轴带 `branch` 节点，N06/N07 自动聚成冲突组 | world 的 `timeline.json` |
 | 声明式扩展 | 新增一个 world = 往 `data/scenes.json` 加一条，hub/portal 自动扫描 | `data/scenes.json` |
 | 五闸门 CI | lint → test → leads → build → interaction，fail-fast | `python tools/gates.py --strict` |
@@ -131,6 +132,30 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
   ——这把「数据/代码」分离，避免长表硬编码进源码。
 - 月日农历转换（`lunar_to_solar`）留 TODO 桩：历史朔闰与今历有系统差，需接历史朔闰表后再补并补单测。
 
+### 3.3 闭环实证：LLM 抽取 → 真实场景 → 全闸门（v0.13）
+
+「导入即呈现」**已不只是最小闭环，而是跑通了真实数据路径**：
+
+- 联网抓《皇清开国方略》卷六萨尔浒原文（`tools/spikes/extraction_demo/source.txt`）；
+  由 LLM 角色按断言四层抽出 7 条（`extracted.json`，年份故意留年号）→
+  映射成符合 demo 严格 schema 的 `extracted.conformed.json`（修 `primary_extract`→合法 `quote_status`、
+  去 `event:` 前缀避免 W05、gap 补 `lead` 块、源登记进 `sources.json`）；
+- `tools/ingest.py --provider fixture --fixture extracted.conformed.json --scene sarhu --run-gates`
+  **一口气**把 7 条断言追加进真实 `data/sarhu/assertions.jsonl` 并跑通全闸门；
+- 验证：编译后的 `demo/data.js` 确实含 `IN001`…`IN007`（及「大破明兵于萨尔浒山」「由 LLM 从」等原文），
+  即 LLM 抽的史料在真实 demo 里**可见**——不是另起一个 demo，而是进同一条数据流水线。
+- 这同时验证了早先的担忧：年号换算若静默失败（如含「元/正」年号名），会被 `test_reign` + `lint` 抓住，
+  不会像手工填 lon/lat 那样「整片留白还无报错」。
+
+**`tools/world_query.py`（「数据库」角色的 demo 量级落地）**
+
+- 证明「导入即呈现」之上还能「导入即可查」：跨全部场景扫描 `assertions.jsonl` 建内存索引，
+  支持 `--year / --era / --place / --source / --scene / --layer` 组合查询。
+- 例：`--era "万历四十七年"` 经 `reign_era` 归一化 1619，返回萨尔浒全部该年断言（含本次 ingest 的 IN00x）；
+  `--source huangqing_kaiguo_fanglue` 命中 6 条 record。
+- 当要覆盖全中国、多 world、随时问「1644 年所有战役」时，把本工具的查询函数换成图库/空间库实现即可，CLI 不变——
+  现在就用「一次扫描 + 内存索引」满足全部查询，不依赖任何重量级存储（**数据库是 P2，非阻塞**）。
+
 ## 4. 工具链（五闸门 + 辅助）
 
 | 工具 | 职责 |
@@ -141,7 +166,7 @@ v0.9 已把**断言模型、双模渲染、四闸门、9 个小说 world、GitHu
 | `build.py` | 编译：读各 world 文件 → 归一化 edges → 注入 edge_types → 写 `demo/data.js` |
 | `gates.py` | 编排上述五步，`--strict` 下 warning 也算失败，CI 用；`--no-interaction` 可跳过浏览器闸门 |
 | `probe_interaction.js` | **交互闸门**：零依赖静态服务 + 无头浏览器，用 CDP 发**真实鼠标事件**断言「点得动」。抓的是前四道抓不到的一类缺陷——数据全对、编译全对、截图正常，但浏览器里所有 click 监听器都是死的 |
-| `ingest.py` | `parse` 启发式预抽取 + `assemble` 把 spec 装配成 world 并注册（确定性，不含文学理解） |
+| `ingest.py` | 史料 ingestion 管线：source→抽取(heuristic/llm/fixture)→断言四层→`reign_era` 年号归一化→schema 校验→写 JSONL→可选 `--scene` 注册 / `--run-gates` |
 | `resonance.py` / `route_strain.py` | 辽东专用：三方共振度、路线 strain（历史 world 用） |
 | `push_app.js` | GitHub App 安装令牌推送，替代 PAT |
 
@@ -160,7 +185,7 @@ IS_ABSTRACT = META.fictional || !places.some(p => 数值 lon/lat)
 | 北极星目标 | 现状 | 缺什么 |
 |---|---|---|
 | 全时段全地域：导入「文字+地图」即呈现 | 断言模型 + 双模渲染通用；但地图导入写死辽东 ASTER 网格 | 地图导入泛化（用户图/GeoTIFF/坐标 + 动态投影） |
-| 任意文字→一个世界 | ingest.py 做确定性装配；9 小说副本已验证 | LLM 抽取「文学理解」层（把原文→spec） |
+| 任意文字→一个世界 | ingest.py 把原文→断言四层并归一化；**已闭环实证** LLM 抽《皇清开国方略》7 条进真实 sarhu 场景过全闸门；9 小说副本已验证通用内核 | LLM 抽取接真实 API（设 `LLM_API_KEY` 即生产级，无需改管线） |
 | 世界自由演化 / 反事实 | 时间轴 branch + sim_config 数据层已建 | 演化引擎（agent/规则驱动世界前进、产生分叉）未实现 |
 | 立场语义/缺口语义统一 | 真实史料=来源视角/证据不足；虚构=叙述者视角/作者未写 | 同一内核已验证可服务两者 |
 

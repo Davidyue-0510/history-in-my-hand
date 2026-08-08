@@ -195,7 +195,15 @@ def normalize_and_validate(assertions):
             print("  [XX] %-6s 年号无法归一化 %r" % (aid, era))
         else:
             OK += 1
-            a.setdefault("time", {})["start"] = "%d" % g
+            # 年份级归一化：仅确知公元年 -> 补成全年 ISO 区间（诚实：
+            # 月日需 lunar_to_solar，reign_era 暂只到年）。已给出更精确
+            # start（YYYY-MM-DD）则保留，不覆盖。
+            t = a.setdefault("time", {})
+            cur = t.get("start")
+            if not (isinstance(cur, str) and re.match(r"\d{4}-\d{2}-\d{2}", cur)):
+                t["start"] = "%d-01-01" % g
+                t["end"] = "%d-12-31" % g
+            t["gregorian_year"] = g
             print("       %-6s %s -> 公元 %d" % (aid, era, g))
     return OK, FAIL, by_layer
 
@@ -210,12 +218,15 @@ def write_jsonl(assertions, out_path):
 
 
 def append_to_scene(assertions, scene_id):
-    """把断言追加进某已注册场景的 assertions.jsonl（--scene 时）。"""
+    """把断言追加进某已注册场景的 assertions.jsonl（--scene 时）。
+
+    场景目录 = data/<scene_id>/（build.py 在 resolve 时把 dir 默认成 key）。
+    """
     reg = json.load(open(os.path.join(ROOT, "data", "scenes.json"), encoding="utf-8"))
     sc = reg.get("scenes", {}).get(scene_id)
     if not sc:
         raise RuntimeError("scenes.json 中找不到场景 %r，无法 --scene 注册" % scene_id)
-    target = os.path.join(ROOT, "data", sc["dir"], "assertions.jsonl")
+    target = os.path.join(ROOT, "data", scene_id, "assertions.jsonl")
     if not os.path.exists(target):
         raise RuntimeError("目标断言文件不存在: %s" % target)
     with open(target, "a", encoding="utf-8") as f:

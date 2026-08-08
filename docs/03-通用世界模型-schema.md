@@ -237,3 +237,18 @@ worlds/
 
 **编译期注入（build.py）：** `control`、`control_seats`（各 county `primary_place` 的 lon/lat/name/region）、`control_years`（由 segments 起止年夹到 `[1616,1644]`）一并写进 `demo/data.js`。前端 `control_layer.js` 据此：年份/范围变才 `rebuild` 离屏 ImageData，纯视图变只 `repaint`；县范围画 13 个治所拼图，国家范围只画跨党派外缘、把同党县合并成板块并 `tally(year)` 出全国县数。虚构 world（`IS_ABSTRACT`）不 `setup` 此层。
 
+## 13. 可查询世界模型（world_query，demo 量级的「数据库」角色）
+
+北极星的「可查询、跨场景、带溯源的世界模型」不必等重数据库。当前每场景一个 `assertions.jsonl`，
+`tools/world_query.py` 用「一次扫描 + 内存索引」即可满足全部查询，是数据库角色的**最小实物**：
+
+- 查询维度：`--year YYYY` / `--era 年号`（经 `reign_era` 归一化）/ `--place id` / `--source id` /
+  `--scene id` / `--layer record|scholarship|inference|gap`，可组合。
+- 时间过滤用 `time.start/end` 区间重叠（年号归一化后的 `gregorian_year` 兜底），所以「1644 年所有战役」
+  这类问题在覆盖全中国后只需换查询后端（图库/空间库），CLI 不变。
+- 闭环实证：`--era "万历四十七年"` 命中萨尔浒 1619 全部断言（含 `ingest.py` 从《皇清开国方略》抽入的 `IN001`…`IN007`），
+  证明「导入即呈现」之上已「导入即可查」。
+
+**何时才需要真数据库：** 跨 world 联合检索、按地理空间范围（"某矩形内 1644 年的所有控制权变更"）、
+亿级断言下的亚秒响应——届时把 `world_query.query()` 的实现换成图库/空间库，外部契约不变。
+

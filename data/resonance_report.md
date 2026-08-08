@@ -20,7 +20,7 @@
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | 辽阳 | 20 | 2 | **0.230** | 浑河之战（1621）（0.333） | gap 3 / record 9 / scholarship 8 |
 | ningyuan | 7 | 4 | **0.333** | event:ningjin_dajie（0.333） | gap 2 / record 4 / scholarship 1 |
-| 萨尔浒 | 39 | 5 | **0.383** | 阿布达里岗（东路·刘綎）（0.667） | gap 1 / inference 2 / record 26 / scholarship 10 |
+| 萨尔浒 | 46 | 5 | **0.383** | 阿布达里岗（东路·刘綎）（0.667） | gap 2 / inference 2 / record 32 / scholarship 10 |
 | shenyang | 24 | 6 | **0.404** | event:shenyang_relief（0.923） | gap 3 / record 19 / scholarship 2 |
 | 铁岭 | 20 | 2 | **0.158** | 弃宽甸六堡（0.167） | gap 2 / record 12 / scholarship 6 |
 | yehe | 7 | 3 | **0.389** | event:yehe_fall（0.667） | gap 2 / record 4 / scholarship 1 |
