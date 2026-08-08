@@ -142,7 +142,10 @@
     route:   true,
     t: 0,
     tab: 'yan',
-    selection: null
+    selection: null,
+    ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
+    personTab: 'assert',       // 人物视图子页签
+    personYear: { from: null, to: null }  // 人物轨迹时间窗
   };
 
   function visibleAssertions() {
@@ -465,28 +468,42 @@
 
   /* 抽象关系图：节点 = 人物 + 地点，边按 per-world edge_types 上色；无地理坐标。 */
   function drawAbstractGraph(STYLE) {
+    // 选中人物时，只高亮其关系网（ego network），其余淡出——对应"关联人物影响力"视图。
+    var ego = state.ego, egoSet = null;
+    if (ego) {
+      egoSet = {}; egoSet[ego] = 1;
+      D.edges.forEach(function (ed) {
+        if (ed.from === ego) egoSet[ed.to] = 1;
+        if (ed.to === ego) egoSet[ed.from] = 1;
+      });
+    }
     D.edges.forEach(function (ed) {
       var a = NODE[ed.from], b = NODE[ed.to]; if (!a || !b) return;
       var st = STYLE[ed.type] || { color: '#9A9384', dash: null };
       var pa = nodeXY(ed.from), pb = nodeXY(ed.to);
+      var dim = egoSet && !(egoSet[ed.from] && egoSet[ed.to]);
       var path = el('path', {
         d: 'M' + pa.x.toFixed(1) + ' ' + pa.y.toFixed(1) + ' L' + pb.x.toFixed(1) + ' ' + pb.y.toFixed(1),
         fill: 'none', stroke: st.color, 'stroke-width': 1.8, 'stroke-linecap': 'round',
-        'stroke-dasharray': st.dash, opacity: .82, 'vector-effect': 'non-scaling-stroke',
+        'stroke-dasharray': st.dash, opacity: dim ? 0.12 : 0.82, 'vector-effect': 'non-scaling-stroke',
         class: 'node-hit'
       }, gEdges);
       path.addEventListener('click', function () { selectEdge(ed); });
       var mx = (pa.x + pb.x) / 2, my = (pa.y + pb.y) / 2;
-      var lab = el('text', { x: mx + 4, y: my - 3, class: 'route-label', fill: st.color, opacity: .9 }, gLabels);
+      var lab = el('text', { x: mx + 4, y: my - 3, class: 'route-label', fill: st.color, opacity: dim ? 0.15 : 0.9 }, gLabels);
       lab.textContent = ed.label;
     });
     Object.keys(NODE).forEach(function (id) {
       var n = NODE[id], pos = nodeXY(id), isPerson = n.kind === 'person';
-      el('circle', { cx: pos.x, cy: pos.y, r: isPerson ? 5.5 : 7,
-        class: 'pnode' + (isPerson ? ' person' : ''), fill: isPerson ? '#5A3A6E' : '#FBF9F3',
-        stroke: '#2A2521', 'stroke-width': 1.4, 'vector-effect': 'non-scaling-stroke' }, gNodes);
+      var dim = egoSet && !egoSet[id];
+      var isEgo = id === ego;
+      el('circle', { cx: pos.x, cy: pos.y, r: isPerson ? (isEgo ? 7.5 : 5.5) : 7,
+        class: 'pnode' + (isPerson ? ' person' : ''),
+        fill: isPerson ? (isEgo ? '#C77B30' : '#5A3A6E') : '#FBF9F3',
+        stroke: isEgo ? '#C77B30' : '#2A2521', 'stroke-width': isEgo ? 2.4 : 1.4,
+        opacity: dim ? 0.22 : 1, 'vector-effect': 'non-scaling-stroke' }, gNodes);
       var lb = el('text', { x: pos.x + (isPerson ? 8 : 9), y: pos.y + 4,
-        class: 'place-label' + (isPerson ? ' person' : '') }, gNodes);
+        class: 'place-label' + (isPerson ? ' person' : ''), opacity: dim ? 0.22 : 1 }, gNodes);
       lb.textContent = n.name;
       var hit = el('circle', { cx: pos.x, cy: pos.y, r: 14, fill: 'transparent', class: 'node-hit' }, gNodes);
       hit.addEventListener('click', function () { selectNode(id); });
@@ -814,19 +831,48 @@
   /* ═══════════ 检视 ═══════════ */
   function selectPlace(pid) {
     var p = PLACE[pid];
+    state.ego = null;
     var list = visibleAssertions().filter(function (a) { return a.place === pid; });
-    var sub = p.modern + (p.elev != null ? ' · 海拔 ' + p.elev + ' m' : '') +
-      (p.note ? '<br>' + p.note : '');
-    state.selection = { type: 'place', title: p.name, sub: sub, list: list };
+    var sub = p.modern + (p.elev != null ? ' · 海拔 ' + p.elev + ' m' : '');
+    state.selection = {
+      type: 'place', title: p.name, sub: sub,
+      intro: p.intro || null, aliases: p.aliases || null,
+      significance: p.significance || null, note: p.note || null, list: list
+    };
     goTab('inspect'); renderInspect();
   }
   function selectNode(id) {
     var n = NODE[id]; if (!n) return;
     if (n.kind === 'place') { selectPlace(id); return; }
-    // 虚构人物：展示以其为主体的结构化断言（subject = person:<id>）
+    state.ego = id;
+    state.personYear = { from: null, to: null };
+    // 虚构/历史人物：以其为主体的结构化断言（subject = person:<id>）
     var list = visibleAssertions().filter(function (a) { return a.subject === 'person:' + id; });
-    state.selection = { type: 'person', title: n.name,
-      sub: '（虚构人物 · 结构化断言 ' + list.length + ' 条）', list: list };
+    var actors = (D.events || []).filter(function (e) {
+      return (e.actors || []).some(function (x) { return x.person === id; });
+    });
+    var net = (D.edges || []).filter(function (e) { return e.from === id || e.to === id; })
+      .map(function (e) {
+        var oid = e.from === id ? e.to : e.from;
+        var o = NODE[oid];
+        return { id: oid, name: o ? o.name : oid, rel: e.label, type: e.type,
+          influence: (o && o.ref && o.ref.influence != null) ? o.ref.influence : 0 };
+      });
+    var gaps = list.filter(function (a) { return a.layer === 'gap'; });
+    var stance = {};
+    list.forEach(function (a) {
+      var s = SRC[a.source];
+      var party = (s && s.party) ? s.party : 'unknown';
+      stance[party] = (stance[party] || 0) + 1;
+    });
+    var inf = (n.ref && n.ref.influence != null) ? n.ref.influence : 0;
+    state.selection = {
+      type: 'person', pid: id, name: n.name, intro: (n.ref && n.ref.intro) || null,
+      influence: inf,
+      sub: '（结构化断言 ' + list.length + ' 条 · 影响力 ' + inf + '）',
+      list: list, actors: actors, net: net, stance: stance, gaps: gaps
+    };
+    state.personTab = 'assert';
     goTab('inspect'); renderInspect();
   }
   function selectEdge(ed) {
@@ -882,14 +928,133 @@
     var sel = state.selection;
     if (!sel) { t.textContent = '检视';
       box.innerHTML = '<div class="empty-hint">点击地图上的地名或关系线，或任意冲突项。</div>'; return; }
-    var live = sel.list.filter(function (a) { return state.sources.has(a.source) && state.layers.has(a.layer); });
+    var lead = '';
+    if (sel.type === 'place') {
+      if (sel.intro) lead += '<div class="ent-intro">' + sel.intro + '</div>';
+      else if (sel.note) lead += '<div class="ent-intro">' + sel.note + '</div>';
+      if (sel.aliases) lead += '<div class="ent-meta">别名：' + sel.aliases + '</div>';
+      if (sel.significance) lead += '<div class="ent-meta">意义：' + sel.significance + '</div>';
+    }
+    if (sel.type === 'person') {
+      lead += personTabsHtml(sel);
+      if (state.personTab && state.personTab !== 'assert') {
+        t.innerHTML = sel.name + ' <span style="font-weight:400;font-size:10px;color:var(--ink-3)">' +
+          sel.sub + '</span>';
+        box.innerHTML = lead + personPaneHtml(sel, state.personTab);
+        return;
+      }
+    }
     t.innerHTML = sel.title + (sel.sub ? ' <span style="font-weight:400;font-size:10px;color:var(--ink-3)">' +
       sel.sub + '</span>' : '');
+    var live = sel.list.filter(function (a) { return state.sources.has(a.source) && state.layers.has(a.layer); });
     if (!live.length) {
-      box.innerHTML = '<div class="empty-hint">在当前采信范围内，此处没有任何断言。<br><br>' +
+      box.innerHTML = lead + '<div class="empty-hint">在当前采信范围内，此处没有任何断言。<br><br>' +
         '这不代表这里什么都没发生 —— 只代表你选的史料没有记它。</div>'; return;
     }
-    box.innerHTML = live.map(assertionCard).join('');
+    box.innerHTML = lead + live.map(assertionCard).join('');
+  }
+
+  /* ── 人物视图：子页签 + 各页内容 ── */
+  function personTabsHtml(sel) {
+    var tabs = [
+      ['assert', '断言', sel.list.length],
+      ['traj', '轨迹', sel.actors.length],
+      ['net', '关联人物', sel.net.length],
+      ['impact', '事件影响', sel.actors.length],
+      ['stance', '立场剖面', Object.keys(sel.stance).length],
+      ['gap', '史料缺口', sel.gaps.length],
+      ['cmp', '比较·反事实', 0]
+    ];
+    return '<div class="ptabbar">' + tabs.map(function (x) {
+      return '<button class="ptab' + (state.personTab === x[0] ? ' on' : '') +
+        '" data-ptab="' + x[0] + '">' + x[1] + (x[2] ? ' <i>' + x[2] + '</i>' : '') + '</button>';
+    }).join('') + '</div>';
+  }
+  function personPaneHtml(sel, tab) {
+    if (tab === 'traj') return personTrajHtml(sel);
+    if (tab === 'net') return personNetHtml(sel);
+    if (tab === 'impact') return personImpactHtml(sel);
+    if (tab === 'stance') return personStanceHtml(sel);
+    if (tab === 'gap') return personGapHtml(sel);
+    if (tab === 'cmp') return personCmpHtml(sel);
+    return '';
+  }
+  function personTrajHtml(sel) {
+    var acts = sel.actors;
+    if (!acts.length) return '<div class="empty-hint">该 world 未标注此人的事件参与者（actors），暂无轨迹。</div>';
+    var hasYears = acts.some(function (e) { return typeof e.year === 'number'; });
+    var f = state.personYear.from, t = state.personYear.to;
+    var rows = acts.slice();
+    if (hasYears && (f != null || t != null)) {
+      rows = rows.filter(function (e) {
+        var y = e.year; if (typeof y !== 'number') return true;
+        if (f != null && y < f) return false;
+        if (t != null && y > t) return false;
+        return true;
+      });
+    }
+    var filterHtml = hasYears
+      ? '<div class="ent-filter">时间窗：<input id="pyrFrom" type="number" placeholder="起" value="' + (f != null ? f : '') +
+        '"> – <input id="pyrTo" type="number" placeholder="止" value="' + (t != null ? t : '') +
+        '"> <button class="ptab" data-pyr>应用</button> <button class="ptab" data-pyr-clr>清空</button></div>'
+      : '<div class="ent-meta">该 world 未标注年份，时间窗未启用（可看全部事件序列）。</div>';
+    var listHtml = rows.length
+      ? rows.map(function (e) {
+          var pl = e.place ? (PLACE[e.place] ? PLACE[e.place].name : e.place) : '';
+          return '<div class="ent-row"><div class="ent-row-h">' + (e.era || '') + ' · ' + e.title +
+            (pl ? ' <span class="ent-rel">@' + pl + '</span>' : '') + '</div>' +
+            '<div class="ent-row-t">' + (e.text || '') + '</div></div>';
+        }).join('')
+      : '<div class="empty-hint">当前时间窗内无事件。</div>';
+    return filterHtml + listHtml;
+  }
+  function personNetHtml(sel) {
+    if (!sel.net.length) return '<div class="empty-hint">暂无关联人物（该 world 未建人物关系边）。</div>';
+    // 点大小 = 史料记载量（influence）；点越密越大，往往说明该角色在相关区域影响力集中。
+    var maxInf = Math.max.apply(null, sel.net.map(function (n) { return n.influence || 0; }).concat([1]));
+    return sel.net.map(function (n) {
+      var r = 7 + (n.influence / maxInf) * 20;
+      return '<div class="ent-row ent-net" data-jump="' + n.id + '">' +
+        '<span class="ent-dot" style="width:' + r.toFixed(0) + 'px;height:' + r.toFixed(0) + 'px"></span>' +
+        '<div><div class="ent-row-h">' + n.name + ' <span class="ent-rel">' + (n.rel || '') + '</span></div>' +
+        '<div class="ent-row-t">影响力（史料记载量）：' + (n.influence || 0) + '</div></div></div>';
+    }).join('');
+  }
+  function personImpactHtml(sel) {
+    if (!sel.actors.length) return '<div class="empty-hint">无事件关联，无法评估事件影响。</div>';
+    return sel.actors.map(function (e) {
+      var ev = (D.events || []).filter(function (x) { return x.id === e.id; })[0];
+      var subj = ev ? ev.subject : null;
+      var as = subj ? D.assertions.filter(function (a) {
+        return a.subject === subj && state.sources.has(a.source) && state.layers.has(a.layer);
+      }) : [];
+      return '<div class="ent-row"><div class="ent-row-h">' + (e.era || '') + ' · ' + e.title + '</div>' +
+        (as.length ? as.map(assertionCard).join('') : '<div class="ent-row-t">（无直接断言）</div>') + '</div>';
+    }).join('');
+  }
+  function personStanceHtml(sel) {
+    var keys = Object.keys(sel.stance);
+    if (!keys.length) return '<div class="empty-hint">无立场数据。</div>';
+    return keys.map(function (party) {
+      return '<div class="ent-row"><div class="ent-row-h">' + party + '</div>' +
+        '<div class="ent-row-t">涉及断言 ' + sel.stance[party] + ' 条（立场靠来源派生）</div></div>';
+    }).join('');
+  }
+  function personGapHtml(sel) {
+    if (!sel.gaps.length) return '<div class="empty-hint">关于此人暂无标定的史料缺口。</div>';
+    return sel.gaps.map(assertionCard).join('');
+  }
+  function personCmpHtml(sel) {
+    var br = (D.timeline || []).filter(function (x) { return x.kind === 'branch' || x.branch; });
+    var tip = br.length ? ' 本 world 已含 ' + br.length + ' 条反事实分支，可在时间轴查看。' : '';
+    return '<div class="empty-hint">比较模式与反事实推演为规划中功能（M6 演化引擎）。' + tip + '</div>';
+  }
+  function findAttr(el, attr) {
+    while (el && el !== document) {
+      if (el.getAttribute && el.getAttribute(attr)) return el;
+      el = el.parentNode;
+    }
+    return null;
   }
 
   /* ═══════════ 冲突弹层 ═══════════ */
@@ -939,6 +1104,22 @@
   }
   document.querySelectorAll('.tab').forEach(function (b) {
     b.addEventListener('click', function () { goTab(b.getAttribute('data-tab')); });
+  });
+  // 人物视图子页签 / 关联人物跳转 / 时间窗
+  document.getElementById('inspect').addEventListener('click', function (e) {
+    var pt = findAttr(e.target, 'data-ptab');
+    if (pt) { state.personTab = pt.getAttribute('data-ptab'); renderInspect(); return; }
+    var jp = findAttr(e.target, 'data-jump');
+    if (jp) { selectNode(jp.getAttribute('data-jump')); return; }
+    var pyr = findAttr(e.target, 'data-pyr');
+    if (pyr) {
+      var fEl = document.getElementById('pyrFrom'), tEl = document.getElementById('pyrTo');
+      var fv = fEl && fEl.value !== '' ? parseInt(fEl.value, 10) : null;
+      var tv = tEl && tEl.value !== '' ? parseInt(tEl.value, 10) : null;
+      state.personYear = { from: isNaN(fv) ? null : fv, to: isNaN(tv) ? null : tv };
+      renderInspect(); return;
+    }
+    if (findAttr(e.target, 'data-pyr-clr')) { state.personYear = { from: null, to: null }; renderInspect(); }
   });
   var scrim = document.getElementById('scrim');
   function openDrawer(which) {

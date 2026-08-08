@@ -1,8 +1,32 @@
 {
-  "places": [
-    {"id": "anshan_village", "name": "安山村", "fictional": true, "note": "文中的村子，多姓于，无真实坐标"},
-    {"id": "yu_house", "name": "于家", "fictional": true, "note": "于国强家，无真实坐标"},
-    {"id": "great_world", "name": "大世界", "fictional": true, "note": "叶为安本体所在的世界，已崩溃"},
-    {"id": "small_world", "name": "小世界", "fictional": true, "note": "叶为安受托进入的诸副本世界"}
-  ]
+ "places": [
+  {
+   "id": "anshan_village",
+   "name": "安山村",
+   "fictional": true,
+   "note": "文中的村子，多姓于，无真实坐标",
+   "intro": "文中的村子，多姓于，无真实坐标"
+  },
+  {
+   "id": "yu_house",
+   "name": "于家",
+   "fictional": true,
+   "note": "于国强家，无真实坐标",
+   "intro": "于国强家，无真实坐标"
+  },
+  {
+   "id": "great_world",
+   "name": "大世界",
+   "fictional": true,
+   "note": "叶为安本体所在的世界，已崩溃",
+   "intro": "叶为安本体所在的世界，已崩溃"
+  },
+  {
+   "id": "small_world",
+   "name": "小世界",
+   "fictional": true,
+   "note": "叶为安受托进入的诸副本世界",
+   "intro": "叶为安受托进入的诸副本世界"
+  }
+ ]
 }

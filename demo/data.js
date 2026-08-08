@@ -7182,7 +7182,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "辽东经略",
      "column": null,
-     "note": "四路总调度，战后下狱，崇祯二年伏诛"
+     "note": "四路总调度，战后下狱，崇祯二年伏诛",
+     "influence": 0
     },
     {
      "id": "dusong",
@@ -7190,7 +7191,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "山海关总兵",
      "column": "west",
-     "note": "西路主将，绰号杜疯子，以勇著称"
+     "note": "西路主将，绰号杜疯子，以勇著称",
+     "influence": 0
     },
     {
      "id": "wangxuan",
@@ -7198,7 +7200,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "保定总兵",
      "column": "west",
-     "note": "西路副将"
+     "note": "西路副将",
+     "influence": 0
     },
     {
      "id": "zhaomenglin",
@@ -7206,7 +7209,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "原任总兵",
      "column": "west",
-     "note": "西路副将"
+     "note": "西路副将",
+     "influence": 0
     },
     {
      "id": "malin",
@@ -7214,7 +7218,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "开原总兵",
      "column": "north",
-     "note": "北路主将，名将马芳之子，文士气重"
+     "note": "北路主将，名将马芳之子，文士气重",
+     "influence": 1
     },
     {
      "id": "panzongyan",
@@ -7222,7 +7227,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "开原道佥事",
      "column": "north",
-     "note": "北路，斐芬山力战死"
+     "note": "北路，斐芬山力战死",
+     "influence": 1
     },
     {
      "id": "gongnian",
@@ -7230,7 +7236,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "游击",
      "column": "north",
-     "note": "北路，掌辎重车营"
+     "note": "北路，掌辎重车营",
+     "influence": 0
     },
     {
      "id": "liruobai",
@@ -7238,7 +7245,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "辽东总兵",
      "column": "south",
-     "note": "李成梁之子，南路主将，行动迟缓，战后自尽"
+     "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
+     "influence": 1
     },
     {
      "id": "liuting",
@@ -7246,7 +7254,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "辽阳总兵",
      "column": "east",
-     "note": "东路主将，号刘大刀，宿将，阿布达里岗战死"
+     "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
+     "influence": 1
     },
     {
      "id": "qiaoyilang",
@@ -7254,7 +7263,8 @@ window.SANDBOX_DATA = {
      "side": "ming",
      "role_hint": "监军道",
      "column": "east",
-     "note": "东路，联络朝鲜军，兵败自尽"
+     "note": "东路，联络朝鲜军，兵败自尽",
+     "influence": 0
     },
     {
      "id": "kanghonglip",
@@ -7262,7 +7272,8 @@ window.SANDBOX_DATA = {
      "side": "joseon",
      "role_hint": "朝鲜五道都元帅",
      "column": "east",
-     "note": "朝鲜援军统帅，富察之野降后金"
+     "note": "朝鲜援军统帅，富察之野降后金",
+     "influence": 1
     },
     {
      "id": "kimkyungsuh",
@@ -7270,7 +7281,8 @@ window.SANDBOX_DATA = {
      "side": "joseon",
      "role_hint": "平安兵使",
      "column": "east",
-     "note": "朝鲜副元帅"
+     "note": "朝鲜副元帅",
+     "influence": 0
     },
     {
      "id": "liminhwan",
@@ -7278,7 +7290,8 @@ window.SANDBOX_DATA = {
      "side": "joseon",
      "role_hint": "从事官",
      "column": "east",
-     "note": "《栅中日录》作者，被俘后记其所历"
+     "note": "《栅中日录》作者，被俘后记其所历",
+     "influence": 0
     },
     {
      "id": "nurhaci",
@@ -7286,7 +7299,8 @@ window.SANDBOX_DATA = {
      "side": "jin",
      "role_hint": "后金大汗",
      "column": null,
-     "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针"
+     "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针",
+     "influence": 0
     },
     {
      "id": "daishan",
@@ -7294,7 +7308,8 @@ window.SANDBOX_DATA = {
      "side": "jin",
      "role_hint": "大贝勒",
      "column": null,
-     "note": "参与吉林崖、尚间崖、阿布达里岗诸战"
+     "note": "参与吉林崖、尚间崖、阿布达里岗诸战",
+     "influence": 0
     },
     {
      "id": "huangtaiji",
@@ -7302,7 +7317,8 @@ window.SANDBOX_DATA = {
      "side": "jin",
      "role_hint": "四贝勒",
      "column": null,
-     "note": "参与诸战"
+     "note": "参与诸战",
+     "influence": 0
     },
     {
      "id": "eyidu",
@@ -7310,7 +7326,8 @@ window.SANDBOX_DATA = {
      "side": "jin",
      "role_hint": "五大臣",
      "column": null,
-     "note": "后金重臣"
+     "note": "后金重臣",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -9989,63 +10006,72 @@ window.SANDBOX_DATA = {
      "name": "冯瑗",
      "role": "开原兵备道右参政",
      "side": "ming",
-     "note": "（1572–1627）纂《开原图说》，实地调查辽北23城与女真分布，明人记当地事"
+     "note": "（1572–1627）纂《开原图说》，实地调查辽北23城与女真分布，明人记当地事",
+     "influence": 0
     },
     {
      "id": "malin",
      "name": "马林",
      "role": "援辽总兵",
      "side": "ming",
-     "note": "开铁之战中死守开原，城破殉国"
+     "note": "开铁之战中死守开原，城破殉国",
+     "influence": 1
     },
     {
      "id": "zhengzhifan",
      "name": "郑之范",
      "role": "开原兵备道（推官代守）",
      "side": "ming",
-     "note": "以推官（掌刑狱）身份代守开原，明方记载称其贪懦弃城而逃、丢失官印"
+     "note": "以推官（掌刑狱）身份代守开原，明方记载称其贪懦弃城而逃、丢失官印",
+     "influence": 2
     },
     {
      "id": "nurhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
      "side": "jin",
-     "note": "万历四十七年率军克开原、铁岭，时年六十一"
+     "note": "万历四十七年率军克开原、铁岭，时年六十一",
+     "influence": 0
     },
     {
      "id": "xiongtinbi",
      "name": "熊廷弼",
      "role": "辽东经略",
      "side": "ming",
-     "note": "开原陷后受命经略辽东，奏称『开原，河东根柢也』"
+     "note": "开原陷后受命经略辽东，奏称『开原，河东根柢也』",
+     "influence": 1
     },
     {
      "id": "gaozhen",
      "name": "高贞",
      "role": "参将",
      "side": "ming",
-     "note": "开原城破时殉国"
+     "note": "开原城破时殉国",
+     "influence": 0
     },
     {
      "id": "yuhualong",
      "name": "于化龙",
      "role": "副将",
      "side": "ming",
-     "note": "开原城破时殉国"
+     "note": "开原城破时殉国",
+     "influence": 0
     },
     {
      "id": "liangong",
      "name": "何懋官",
      "role": "守备",
      "side": "ming",
-     "note": "开原城破时殉国"
+     "note": "开原城破时殉国",
+     "influence": 0
     },
     {
      "id": "jianghongli",
      "name": "姜弘立",
      "role": "朝鲜五道都元帅",
      "side": "chaoxian",
-     "note": "（1560–1627）萨尔浒之战率约1.3万朝鲜兵隶东路刘綎助明；阿布达里岗后通款后金而降，明神宗未责反赐敕"
+     "note": "（1560–1627）萨尔浒之战率约1.3万朝鲜兵隶东路刘綎助明；阿布达里岗后通款后金而降，明神宗未责反赐敕",
+     "influence": 2
     }
    ],
    "assertions": [
@@ -11319,56 +11345,64 @@ window.SANDBOX_DATA = {
      "name": "李成梁",
      "role": "辽东总兵",
      "side": "ming",
-     "note": "铁岭卫人, 1526-1615, 镇辽30年, 先后十奏大捷. 高祖李英自朝鲜内附."
+     "note": "铁岭卫人, 1526-1615, 镇辽30年, 先后十奏大捷. 高祖李英自朝鲜内附.",
+     "influence": 7
     },
     {
      "id": "li_rusong",
      "name": "李如松",
      "role": "总兵",
      "side": "ming",
-     "note": "李成梁长子, 抗倭援朝, 宁夏哱拜之战, 万历二十六年(1598)蒙古入侵中伏阵亡"
+     "note": "李成梁长子, 抗倭援朝, 宁夏哱拜之战, 万历二十六年(1598)蒙古入侵中伏阵亡",
+     "influence": 0
     },
     {
      "id": "li_ruzhui",
      "name": "李如柏",
      "role": "辽东总兵",
      "side": "ming",
-     "note": "李成梁次子, 萨尔浒之战南路军统帅, 因三路败未接战撤退, 天启元年(1621)被弹劾自杀"
+     "note": "李成梁次子, 萨尔浒之战南路军统帅, 因三路败未接战撤退, 天启元年(1621)被弹劾自杀",
+     "influence": 1
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
      "side": "qing",
-     "note": "建州女真首领, 1619年七月亲领兵攻占铁岭"
+     "note": "建州女真首领, 1619年七月亲领兵攻占铁岭",
+     "influence": 0
     },
     {
      "id": "wang_gao",
      "name": "王杲",
      "role": "建州女真首领",
      "side": "jianzhou",
-     "note": "李成梁万历二年(1574)讨之, 万历十年(1582)阿台在此被射死"
+     "note": "李成梁万历二年(1574)讨之, 万历十年(1582)阿台在此被射死",
+     "influence": 0
     },
     {
      "id": "xiongtingbing",
      "name": "熊廷弼",
      "role": "辽东经略",
      "side": "ming",
-     "note": "巡按辽东, 勘奏弃宽甸六堡非策, 后任经略"
+     "note": "巡按辽东, 勘奏弃宽甸六堡非策, 后任经略",
+     "influence": 0
     },
     {
      "id": "yanghao",
      "name": "杨镐",
      "role": "辽东经略",
      "side": "ming",
-     "note": "萨尔浒之战明军最高统帅, 三路败后李如柏撤回"
+     "note": "萨尔浒之战明军最高统帅, 三路败后李如柏撤回",
+     "influence": 0
     },
     {
      "id": "dubao",
      "name": "杜松",
      "role": "山海关总兵 / 西路军主将",
      "side": "ming",
-     "note": "西路军统帅出抚顺, 萨尔浒之战阵亡"
+     "note": "西路军统帅出抚顺, 萨尔浒之战阵亡",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -11999,25 +12033,29 @@ window.SANDBOX_DATA = {
      "id": "ciyehala",
      "name": "清佳砮",
      "role": "叶赫部始祖",
-     "note": "16 世纪中期叶赫部始祖"
+     "note": "16 世纪中期叶赫部始祖",
+     "influence": 0
     },
     {
      "id": "bucai",
      "name": "布寨",
      "role": "叶赫东城贝勒",
-     "note": "叶赫东城主, 万历四十七年 (1619) 萨尔浒之战中战死"
+     "note": "叶赫东城主, 万历四十七年 (1619) 萨尔浒之战中战死",
+     "influence": 0
     },
     {
      "id": "buyanggu",
      "name": "布扬古",
      "role": "叶赫西城贝勒",
-     "note": "叶赫西城主, 1619 年八月城破降"
+     "note": "叶赫西城主, 1619 年八月城破降",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "建州大汗",
-     "note": "万历三十一年起五伐叶赫, 1619 年灭亡叶赫"
+     "note": "万历三十一年起五伐叶赫, 1619 年灭亡叶赫",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -12433,70 +12471,80 @@ window.SANDBOX_DATA = {
      "name": "努尔哈赤",
      "role": "后金大汗",
      "side": "qing",
-     "note": "建州女真首领, 1621 年攻占辽阳, 迁都于此, 建东京城"
+     "note": "建州女真首领, 1621 年攻占辽阳, 迁都于此, 建东京城",
+     "influence": 0
     },
     {
      "id": "huangtaiji",
      "name": "皇太极",
      "role": "后金大汗 (太宗)",
      "side": "qing",
-     "note": "努尔哈赤第八子, 1626 年继位, 1636 年改国号大清"
+     "note": "努尔哈赤第八子, 1626 年继位, 1636 年改国号大清",
+     "influence": 0
     },
     {
      "id": "yeluabuji",
      "name": "耶律阿保机",
      "role": "辽太祖",
      "side": "liao",
-     "note": "契丹首领, 辽朝建立者, 918 年攻占辽东城"
+     "note": "契丹首领, 辽朝建立者, 918 年攻占辽东城",
+     "influence": 1
     },
     {
      "id": "yelubei",
      "name": "耶律倍",
      "role": "东丹王",
      "side": "liao",
-     "note": "辽太祖长子, 契丹东丹国国王, 928 年迁国都至辽阳"
+     "note": "辽太祖长子, 契丹东丹国国王, 928 年迁国都至辽阳",
+     "influence": 0
     },
     {
      "id": "wanyanyong",
      "name": "完颜雍",
      "role": "金世宗",
      "side": "jin",
-     "note": "1161 年在辽阳拥兵称帝, 改元大定"
+     "note": "1161 年在辽阳拥兵称帝, 改元大定",
+     "influence": 1
     },
     {
      "id": "yuan_yingtai",
      "name": "袁应泰",
      "role": "辽东经略",
      "side": "ming",
-     "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任"
+     "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任",
+     "influence": 0
     },
     {
      "id": "ye_wang",
      "name": "叶旺",
      "role": "辽东都指挥使",
      "side": "ming",
-     "note": "洪武初年与马云出镇辽东, 设定辽都卫指挥使司"
+     "note": "洪武初年与马云出镇辽东, 设定辽都卫指挥使司",
+     "influence": 0
     },
     {
      "id": "ma_yun",
      "name": "马云",
      "role": "辽东都指挥使",
      "side": "ming",
-     "note": "洪武初年与叶旺共同出镇辽东, 奠定明代辽东防务"
+     "note": "洪武初年与叶旺共同出镇辽东, 奠定明代辽东防务",
+     "influence": 0
     },
     {
      "id": "chenjn",
      "name": "陈策",
      "role": "总兵",
      "side": "ming",
-     "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡"
+     "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡",
+     "influence": 0
     },
     {
      "id": "tongzhongkui",
      "name": "童仲揆",
      "role": "副总兵",
      "side": "ming",
-     "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡"
+     "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -13291,62 +13339,72 @@ window.SANDBOX_DATA = {
      "name": "袁应泰",
      "alias": "袁自如",
      "role": "辽东巡抚",
-     "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢"
+     "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢",
+     "influence": 0
     },
     {
      "id": "he_shixian",
      "name": "何世贤",
      "role": "总兵",
-     "note": "沈阳总兵, 1621 年浑河之战后金炮击身亡"
+     "note": "沈阳总兵, 1621 年浑河之战后金炮击身亡",
+     "influence": 0
     },
     {
      "id": "chenjn",
      "name": "陈策",
      "role": "援辽总兵",
-     "note": "1621 年自辽阳驰援沈阳, 浑河桥头中炮死"
+     "note": "1621 年自辽阳驰援沈阳, 浑河桥头中炮死",
+     "influence": 0
     },
     {
      "id": "tongzhongkui",
      "name": "童仲揆",
      "role": "副总兵",
-     "note": "1621 年与陈策同援沈阳, 浑河之战战死"
+     "note": "1621 年与陈策同援沈阳, 浑河之战战死",
+     "influence": 0
     },
     {
      "id": "zoushibiao",
      "name": "邹式相",
      "role": "兵备副使",
-     "note": "分巡辽东, 沈阳城破殉职"
+     "note": "分巡辽东, 沈阳城破殉职",
+     "influence": 0
     },
     {
      "id": "zhangfaming",
      "name": "张名世",
      "role": "监军",
-     "note": "1621 年沈阳之战被俘, 不降, 旋被杀"
+     "note": "1621 年沈阳之战被俘, 不降, 旋被杀",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1616 年建后金, 1621 年三月取沈阳、辽阳"
+     "note": "1616 年建后金, 1621 年三月取沈阳、辽阳",
+     "influence": 0
     },
     {
      "id": "huangtaiji",
      "name": "皇太极",
      "role": "后金四贝勒",
-     "note": "1621 年三月与二贝勒阿敏等围攻沈阳"
+     "note": "1621 年三月与二贝勒阿敏等围攻沈阳",
+     "influence": 0
     },
     {
      "id": "amin",
      "name": "阿敏",
      "role": "后金二贝勒",
-     "note": "舒尔哈齐之子, 1621 年攻沈阳北路"
+     "note": "舒尔哈齐之子, 1621 年攻沈阳北路",
+     "influence": 0
     },
     {
      "id": "goseong",
      "name": "姜弘立",
      "alias": "姜晔",
      "role": "朝鲜都元帅",
-     "note": "1621 年应袁应泰请援, 率朝鲜兵万余援辽, 浑河之战大败被俘"
+     "note": "1621 年应袁应泰请援, 率朝鲜兵万余援辽, 浑河之战大败被俘",
+     "influence": 1
     }
    ],
    "assertions": [
@@ -13989,25 +14047,29 @@ window.SANDBOX_DATA = {
      "id": "li_chengliang",
      "name": "李成梁",
      "role": "辽东总兵",
-     "note": "隆庆四年起镇辽 22 年, 万历三十四年弃宽甸六堡"
+     "note": "隆庆四年起镇辽 22 年, 万历三十四年弃宽甸六堡",
+     "influence": 0
     },
     {
      "id": "li_rubai",
      "name": "李如柏",
      "role": "辽东总兵",
-     "note": "李成梁次子, 万历四十七年萨尔浒南路军主帅"
+     "note": "李成梁次子, 万历四十七年萨尔浒南路军主帅",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1616 年建国, 万历四十六年四月取抚顺"
+     "note": "1616 年建国, 万历四十六年四月取抚顺",
+     "influence": 0
     },
     {
      "id": "li_yongfang",
      "name": "李永芳",
      "role": "明游击",
-     "note": "万历四十六年四月于抚顺城外降后金, 明朝首位降后金的明军中高级将领"
+     "note": "万历四十六年四月于抚顺城外降后金, 明朝首位降后金的明军中高级将领",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -14376,25 +14438,29 @@ window.SANDBOX_DATA = {
      "id": "liu_tingxian",
      "name": "刘廷宪",
      "role": "海州参将",
-     "note": "天启元年守海州, 城破殉职"
+     "note": "天启元年守海州, 城破殉职",
+     "influence": 0
     },
     {
      "id": "mao_wenlong",
      "name": "毛文龙",
      "role": "都司/皮岛总兵",
-     "note": "天启元年辽阳陷后, 率 197 人逃入海中皮岛, 开东江镇, 与海州/盖州失陷同期"
+     "note": "天启元年辽阳陷后, 率 197 人逃入海中皮岛, 开东江镇, 与海州/盖州失陷同期",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1621 年三月取沈阳后, 复攻海州"
+     "note": "1621 年三月取沈阳后, 复攻海州",
+     "influence": 0
     },
     {
      "id": "amin",
      "name": "阿敏",
      "role": "后金二贝勒",
-     "note": "率兵南下取海州、盖州"
+     "note": "率兵南下取海州、盖州",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -14718,19 +14784,22 @@ window.SANDBOX_DATA = {
      "id": "yang_lieue",
      "name": "杨烈崛",
      "role": "盖州参将",
-     "note": "天启元年守盖州, 城破殉职"
+     "note": "天启元年守盖州, 城破殉职",
+     "influence": 0
     },
     {
      "id": "huang_zhilong",
      "name": "黄之骥",
      "role": "盖州副将",
-     "note": "1621 年盖州之战战死"
+     "note": "1621 年盖州之战战死",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1621 年命阿敏等取盖州、复州"
+     "note": "1621 年命阿敏等取盖州、复州",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -15012,19 +15081,22 @@ window.SANDBOX_DATA = {
      "id": "mao_wenlong",
      "name": "毛文龙",
      "role": "东江总兵",
-     "note": "据皮岛创东江镇，袭扰复州/金州沿海"
+     "note": "据皮岛创东江镇，袭扰复州/金州沿海",
+     "influence": 0
     },
     {
      "id": "amin",
      "name": "阿敏",
      "role": "后金二贝勒",
-     "note": "1621 南下取复州/盖州"
+     "note": "1621 南下取复州/盖州",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1621 取辽南"
+     "note": "1621 取辽南",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -15307,19 +15379,22 @@ window.SANDBOX_DATA = {
      "id": "mao_wenlong",
      "name": "毛文龙",
      "role": "东江总兵",
-     "note": "据皮岛，1621–1622 一度收复金州、旅顺"
+     "note": "据皮岛，1621–1622 一度收复金州、旅顺",
+     "influence": 0
     },
     {
      "id": "amin",
      "name": "阿敏",
      "role": "后金二贝勒",
-     "note": "1621 取金州"
+     "note": "1621 取金州",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1621 取辽南"
+     "note": "1621 取辽南",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -15612,25 +15687,29 @@ window.SANDBOX_DATA = {
      "id": "xiongtingbing",
      "name": "熊廷弼",
      "role": "辽东经略",
-     "note": "主守，与王化贞经抚不和，广宁陷后受诛"
+     "note": "主守，与王化贞经抚不和，广宁陷后受诛",
+     "influence": 0
     },
     {
      "id": "wang_huazhen",
      "name": "王化贞",
      "role": "辽东巡抚",
-     "note": "主战，广宁之战弃城逃"
+     "note": "主战，广宁之战弃城逃",
+     "influence": 0
     },
     {
      "id": "sun_degong",
      "name": "孙得功",
      "role": "广宁将",
-     "note": "广宁陷前通敌，开门迎后金"
+     "note": "广宁陷前通敌，开门迎后金",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1622 年正月取广宁"
+     "note": "1622 年正月取广宁",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -15942,25 +16021,29 @@ window.SANDBOX_DATA = {
      "id": "zu_dashou",
      "name": "祖大寿",
      "role": "明总兵",
-     "note": "两度被围降清（大凌河/锦州），吴三桂舅父"
+     "note": "两度被围降清（大凌河/锦州），吴三桂舅父",
+     "influence": 0
     },
     {
      "id": "hong_chengchou",
      "name": "洪承畴",
      "role": "蓟辽总督",
-     "note": "松锦之战明军主帅，兵败被俘，后降清"
+     "note": "松锦之战明军主帅，兵败被俘，后降清",
+     "influence": 0
     },
     {
      "id": "huangtaiji",
      "name": "皇太极",
      "role": "清太宗",
-     "note": "1641–1642 围锦州、松山，灭明辽西机动兵力"
+     "note": "1641–1642 围锦州、松山，灭明辽西机动兵力",
+     "influence": 0
     },
     {
      "id": "duoergun",
      "name": "多尔衮",
      "role": "清睿亲王",
-     "note": "松锦之战前线统帅"
+     "note": "松锦之战前线统帅",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -16263,37 +16346,43 @@ window.SANDBOX_DATA = {
      "id": "yuan_chonghuan",
      "name": "袁崇焕",
      "role": "蓟辽督师",
-     "note": "宁远/宁锦拒清，后冤死；「五年平辽」"
+     "note": "宁远/宁锦拒清，后冤死；「五年平辽」",
+     "influence": 0
     },
     {
      "id": "zu_dashou",
      "name": "祖大寿",
      "role": "宁远副总兵",
-     "note": "袁崇焕部下，后两度降清"
+     "note": "袁崇焕部下，后两度降清",
+     "influence": 0
     },
     {
      "id": "huangtaiji",
      "name": "皇太极",
      "role": "清太宗",
-     "note": "1627 宁锦、1629 己巳入塞"
+     "note": "1627 宁锦、1629 己巳入塞",
+     "influence": 0
     },
     {
      "id": "nuerhaci",
      "name": "努尔哈赤",
      "role": "后金大汗",
-     "note": "1626 攻宁远受伤，七月死"
+     "note": "1626 攻宁远受伤，七月死",
+     "influence": 0
     },
     {
      "id": "wu_sangui",
      "name": "吴三桂",
      "role": "宁远总兵",
-     "note": "崇祯末镇宁远，1644 引清兵入关"
+     "note": "崇祯末镇宁远，1644 引清兵入关",
+     "influence": 0
     },
     {
      "id": "zhao_shuaijiao",
      "name": "赵率教",
      "role": "明总兵",
-     "note": "宁锦之战守锦州，战死"
+     "note": "宁锦之战守锦州，战死",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -16550,67 +16639,87 @@ window.SANDBOX_DATA = {
      "id": "anshan_village",
      "name": "安山村",
      "fictional": true,
-     "note": "文中的村子，多姓于，无真实坐标"
+     "note": "文中的村子，多姓于，无真实坐标",
+     "intro": "文中的村子，多姓于，无真实坐标"
     },
     {
      "id": "yu_house",
      "name": "于家",
      "fictional": true,
-     "note": "于国强家，无真实坐标"
+     "note": "于国强家，无真实坐标",
+     "intro": "于国强家，无真实坐标"
     },
     {
      "id": "great_world",
      "name": "大世界",
      "fictional": true,
-     "note": "叶为安本体所在的世界，已崩溃"
+     "note": "叶为安本体所在的世界，已崩溃",
+     "intro": "叶为安本体所在的世界，已崩溃"
     },
     {
      "id": "small_world",
      "name": "小世界",
      "fictional": true,
-     "note": "叶为安受托进入的诸副本世界"
+     "note": "叶为安受托进入的诸副本世界",
+     "intro": "叶为安受托进入的诸副本世界"
     }
    ],
    "persons": [
     {
      "id": "yeweian",
      "name": "叶为安",
-     "note": "大世界第一棵桃树妖修；入小世界接'父亲对晚辈'委托积功德"
+     "note": "大世界第一棵桃树妖修；入小世界接'父亲对晚辈'委托积功德",
+     "intro": "大世界第一棵桃树妖修；入小世界接'父亲对晚辈'委托积功德",
+     "influence": 1
     },
     {
      "id": "yu_guoqiang",
      "name": "于国强",
-     "note": "金宝之父，酗酒家暴男；叶为安附身对象"
+     "note": "金宝之父，酗酒家暴男；叶为安附身对象",
+     "intro": "金宝之父，酗酒家暴男；叶为安附身对象",
+     "influence": 2
     },
     {
      "id": "yu_jinbao",
      "name": "于金宝",
-     "note": "反派儿子，叶为安的任务目标，13岁"
+     "note": "反派儿子，叶为安的任务目标，13岁",
+     "intro": "反派儿子，叶为安的任务目标，13岁",
+     "influence": 1
     },
     {
      "id": "tang_aili",
      "name": "唐爱丽",
-     "note": "金宝之母，被追打后离家"
+     "note": "金宝之母，被追打后离家",
+     "intro": "金宝之母，被追打后离家",
+     "influence": 0
     },
     {
      "id": "yu_jinjin",
      "name": "于金金",
-     "note": "长姐，初三，成绩名列前茅"
+     "note": "长姐，初三，成绩名列前茅",
+     "intro": "长姐，初三，成绩名列前茅",
+     "influence": 1
     },
     {
      "id": "yu_jinyin",
      "name": "于金银",
-     "note": "次姐，初三，成绩名列前茅"
+     "note": "次姐，初三，成绩名列前茅",
+     "intro": "次姐，初三，成绩名列前茅",
+     "influence": 0
     },
     {
      "id": "li_weiwei",
      "name": "厉薇薇",
-     "note": "金宝妻（文中提及，因父病急需用钱嫁入于家）"
+     "note": "金宝妻（文中提及，因父病急需用钱嫁入于家）",
+     "intro": "金宝妻（文中提及，因父病急需用钱嫁入于家）",
+     "influence": 0
     },
     {
      "id": "yu_sunzi",
      "name": "金宝之子",
-     "note": "原时间线金宝入狱后由大伯爹家养大，白手起家（原文仅一笔）"
+     "note": "原时间线金宝入狱后由大伯爹家养大，白手起家（原文仅一笔）",
+     "intro": "原时间线金宝入狱后由大伯爹家养大，白手起家（原文仅一笔）",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -16791,46 +16900,106 @@ window.SANDBOX_DATA = {
      "id": "e_ml",
      "subject": "event:yu_mother_left",
      "era": "九零年代",
-     "year": "",
+     "year": 1995,
      "title": "唐爱丽离家",
      "kind": "家庭",
-     "text": "于金宝十三岁过年时，于国强醉后持菜刀追打唐爱丽，唐爱丽为活命出走。"
+     "text": "于金宝十三岁过年时，于国强醉后持菜刀追打唐爱丽，唐爱丽为活命出走。",
+     "actors": [
+      {
+       "person": "yu_guoqiang",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "yu_jinbao",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "tang_aili",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_cm",
      "subject": "event:yu_father_commission",
      "era": "同年",
-     "year": "",
+     "year": 1996,
      "title": "叶为安接委托切入",
      "kind": "转折",
-     "text": "于国强临终忏悔后，叶为安挥手让其沉睡，进入小世界接下'父亲'委托，附身于国强。"
+     "text": "于国强临终忏悔后，叶为安挥手让其沉睡，进入小世界接下'父亲'委托，附身于国强。",
+     "actors": [
+      {
+       "person": "yeweian",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "yu_guoqiang",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_eg",
      "subject": "event:yu_jinbao_eggs",
      "era": "寒假",
-     "year": "",
+     "year": 1996,
      "title": "分蛋·矫正起点",
      "kind": "矫正",
-     "text": "叶为安令金宝把碗里仅剩两个蛋分给两姐，金宝畏惧照做，第一次学会分享。"
+     "text": "叶为安令金宝把碗里仅剩两个蛋分给两姐，金宝畏惧照做，第一次学会分享。",
+     "actors": [
+      {
+       "person": "yeweian",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_cf",
      "subject": "event:yu_father_confess",
      "era": "小年前",
-     "year": "",
+     "year": 1996,
      "title": "于国强向子女认错",
      "kind": "转折",
-     "text": "叶为安以于国强之口向三子女承认追打唐爱丽是己错，承诺不再酗酒、不恨母。"
+     "text": "叶为安以于国强之口向三子女承认追打唐爱丽是己错，承诺不再酗酒、不恨母。",
+     "actors": [
+      {
+       "person": "yeweian",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "yu_guoqiang",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "tang_aili",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_corr",
      "subject": "event:yu_jinbao_corrected",
      "era": "后续",
-     "year": "",
+     "year": 1997,
      "title": "金宝被矫正（结局）",
      "kind": "结局",
-     "text": "叶为安介入后金宝学会分食、不再憎母；若无介入则延续家暴至入狱（反事实分支）。"
+     "text": "叶为安介入后金宝学会分食、不再憎母；若无介入则延续家暴至入狱（反事实分支）。",
+     "actors": [
+      {
+       "person": "yeweian",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     }
    ],
    "edges": [
@@ -17084,69 +17253,91 @@ window.SANDBOX_DATA = {
     {
      "id": "daye_palace",
      "name": "大历皇宫",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）大历皇宫"
     },
     {
      "id": "jiangjun_fu",
      "name": "将军府",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）将军府"
     },
     {
      "id": "bianjiang",
      "name": "边疆",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）边疆"
     },
     {
      "id": "shen_home",
      "name": "沈家（德宜圣皇后母族）",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）沈家（德宜圣皇后母族）"
     }
    ],
    "persons": [
     {
      "id": "yeweian",
      "name": "叶为安",
-     "desc": "大世界第一株桃树妖修，入小世界接『父亲对晚辈』委托积功德延寿；本副本占据贺云章身体执政。"
+     "desc": "大世界第一株桃树妖修，入小世界接『父亲对晚辈』委托积功德延寿；本副本占据贺云章身体执政。",
+     "intro": "（虚构人物）叶为安",
+     "influence": 1
     },
     {
      "id": "he_yunzhang",
      "name": "贺云章",
-     "desc": "大历第三代皇帝，一代明君，励精图治；因子贺凌宸毁国而断子绝孙，死后与叶为安立约。"
+     "desc": "大历第三代皇帝，一代明君，励精图治；因子贺凌宸毁国而断子绝孙，死后与叶为安立约。",
+     "intro": "（虚构人物）贺云章",
+     "influence": 2
     },
     {
      "id": "he_lingchen",
      "name": "贺凌宸",
-     "desc": "太子/嗣帝，贺云章独子；偏执『深情』，为沈岚解散后宫、杀妃嫔与己子，原时间线毁国。"
+     "desc": "太子/嗣帝，贺云章独子；偏执『深情』，为沈岚解散后宫、杀妃嫔与己子，原时间线毁国。",
+     "intro": "（虚构人物）贺凌宸",
+     "influence": 1
     },
     {
      "id": "he_min",
      "name": "贺敏",
-     "desc": "昭容，贺云章之女、贺凌宸之妹；曾助沈岚逃走，后被贺凌宸视为背叛。"
+     "desc": "昭容，贺云章之女、贺凌宸之妹；曾助沈岚逃走，后被贺凌宸视为背叛。",
+     "intro": "（虚构人物）贺敏",
+     "influence": 0
     },
     {
      "id": "shen_ying",
      "name": "沈璎",
-     "desc": "德宜圣皇后，贺云章唯一妻、贺凌宸与贺敏之母；本副本开场病逝。"
+     "desc": "德宜圣皇后，贺云章唯一妻、贺凌宸与贺敏之母；本副本开场病逝。",
+     "intro": "（虚构人物）沈璎",
+     "influence": 0
     },
     {
      "id": "shen_lan",
      "name": "沈岚",
-     "desc": "穿越者，身上带小世界碎片；被贺凌宸强掳入宫，心属少将军齐宁，并不爱贺凌宸。"
+     "desc": "穿越者，身上带小世界碎片；被贺凌宸强掳入宫，心属少将军齐宁，并不爱贺凌宸。",
+     "intro": "（虚构人物）沈岚",
+     "influence": 1
     },
     {
      "id": "qi_ning",
      "name": "齐宁",
-     "desc": "少将军，忠于皇室，与沈岚相爱；贺凌宸灭门将军府时逃过一劫，后逐戎族、斩贺凌宸。"
+     "desc": "少将军，忠于皇室，与沈岚相爱；贺凌宸灭门将军府时逃过一劫，后逐戎族、斩贺凌宸。",
+     "intro": "（虚构人物）齐宁",
+     "influence": 0
     },
     {
      "id": "lu_youde",
      "name": "鲁有德",
-     "desc": "太监，贺云章/叶为安身边的近侍。"
+     "desc": "太监，贺云章/叶为安身边的近侍。",
+     "intro": "（虚构人物）鲁有德",
+     "influence": 0
     },
     {
      "id": "shu_fei",
      "name": "淑妃",
-     "desc": "贺云章妃嫔，曾育一子；知难逃便带子向太上皇求救，母子俱死于贺凌宸之手。"
+     "desc": "贺云章妃嫔，曾育一子；知难逃便带子向太上皇求救，母子俱死于贺凌宸之手。",
+     "intro": "（虚构人物）淑妃",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -17318,7 +17509,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "贺云章立约",
-     "summary": "贺云章死后与叶为安立约：保宸儿守大历、不绝贺家血脉。"
+     "summary": "贺云章死后与叶为安立约：保宸儿守大历、不绝贺家血脉。",
+     "actors": [
+      {
+       "person": "he_yunzhang",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "ev_enter",
@@ -17327,7 +17525,19 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安入贺云章身",
-     "summary": "沈璎病逝、贺云章病倒，叶为安借机进入其身体执政。"
+     "summary": "沈璎病逝、贺云章病倒，叶为安借机进入其身体执政。",
+     "actors": [
+      {
+       "person": "yeweian",
+       "role": "文本提及",
+       "year": ""
+      },
+      {
+       "person": "he_yunzhang",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "ev_ruin",
@@ -17336,7 +17546,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "原时间线·毁国过程",
-     "summary": "解散后宫、杀妃嫔与己子、气死贺云章、灭将军府、戎族南下。"
+     "summary": "解散后宫、杀妃嫔与己子、气死贺云章、灭将军府、戎族南下。",
+     "actors": []
     },
     {
      "id": "ev_outcome",
@@ -17345,7 +17556,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "贺凌宸结局",
-     "summary": "矫正后大历存续 / 反事实无介入则大历覆灭。"
+     "summary": "矫正后大历存续 / 反事实无介入则大历覆灭。",
+     "actors": [
+      {
+       "person": "he_lingchen",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     }
    ],
    "edges": [
@@ -17573,44 +17791,57 @@ window.SANDBOX_DATA = {
     {
      "id": "xiaocheng",
      "name": "偏远小县城",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）偏远小县城"
     },
     {
      "id": "yulequan",
      "name": "娱乐圈",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）娱乐圈"
     },
     {
      "id": "linju",
      "name": "邻居家",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）邻居家"
     }
    ],
    "persons": [
     {
      "id": "xie_xilan",
      "name": "谢夕兰",
-     "desc": "谢泽非与许雯之女，美貌清醒却拜金，进娱乐圈傍金主。"
+     "desc": "谢泽非与许雯之女，美貌清醒却拜金，进娱乐圈傍金主。",
+     "intro": "（虚构人物）谢夕兰",
+     "influence": 2
     },
     {
      "id": "xie_zefei",
      "name": "谢泽非",
-     "desc": "中学老师，酗酒打女。"
+     "desc": "中学老师，酗酒打女。",
+     "intro": "（虚构人物）谢泽非",
+     "influence": 1
     },
     {
      "id": "xu_wen",
      "name": "许雯",
-     "desc": "谢夕兰之母，因贫离家。"
+     "desc": "谢夕兰之母，因贫离家。",
+     "intro": "（虚构人物）许雯",
+     "influence": 0
     },
     {
      "id": "hua_tiancheng",
      "name": "华天成",
-     "desc": "高富帅金主。"
+     "desc": "高富帅金主。",
+     "intro": "（虚构人物）华天成",
+     "influence": 0
     },
     {
      "id": "zhenai",
      "name": "真爱女友",
-     "desc": "华天成真爱，被谢夕兰坑害。"
+     "desc": "华天成真爱，被谢夕兰坑害。",
+     "intro": "（虚构人物）真爱女友",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -17748,7 +17979,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身谢泽非",
-     "summary": "谢泽非醉酒首打六岁谢夕兰，叶为安介入代父教养。"
+     "summary": "谢泽非醉酒首打六岁谢夕兰，叶为安介入代父教养。",
+     "actors": [
+      {
+       "person": "xie_zefei",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -17757,7 +17995,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "矫正",
      "title": "谢夕兰傍金主坑真爱",
-     "summary": "为抢华天成坑害其真爱女友，事败身败名裂。"
+     "summary": "为抢华天成坑害其真爱女友，事败身败名裂。",
+     "actors": [
+      {
+       "person": "xie_xilan",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_outcome",
@@ -17766,7 +18011,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "矫正后谢夕兰清醒",
-     "summary": "叶为安矫正使其认清自我、不再拜金毁人。"
+     "summary": "叶为安矫正使其认清自我、不再拜金毁人。",
+     "actors": [
+      {
+       "person": "xie_xilan",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_branch",
@@ -17775,7 +18027,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "谢夕兰一夕成众矢之的，人生尽毁。"
+     "summary": "谢夕兰一夕成众矢之的，人生尽毁。",
+     "actors": []
     }
    ],
    "edges": [
@@ -17986,34 +18239,44 @@ window.SANDBOX_DATA = {
     {
      "id": "mojie",
      "name": "末世·艾家别墅",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）末世·艾家别墅"
     },
     {
      "id": "yanshi",
      "name": "研究所",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）研究所"
     }
    ],
    "persons": [
     {
      "id": "ai_zhe",
      "name": "艾哲",
-     "desc": "宇航员，末世兽化异能者，记忆被篡改。"
+     "desc": "宇航员，末世兽化异能者，记忆被篡改。",
+     "intro": "（虚构人物）艾哲",
+     "influence": 2
     },
     {
      "id": "ai_ruian",
      "name": "艾瑞安",
-     "desc": "科学家，艾哲之父，死于艾哲爪下。"
+     "desc": "科学家，艾哲之父，死于艾哲爪下。",
+     "intro": "（虚构人物）艾瑞安",
+     "influence": 0
     },
     {
      "id": "tang_wanning",
      "name": "唐婉宁",
-     "desc": "艾瑞安继室，唐心生母。"
+     "desc": "艾瑞安继室，唐心生母。",
+     "intro": "（虚构人物）唐婉宁",
+     "influence": 0
     },
     {
      "id": "tang_xin",
      "name": "唐心",
-     "desc": "唐婉宁带来之女，无血缘妹，知艾哲真相。"
+     "desc": "唐婉宁带来之女，无血缘妹，知艾哲真相。",
+     "intro": "（虚构人物）唐心",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -18138,7 +18401,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身艾瑞安",
-     "summary": "艾瑞安死前委托叶为安让兽化儿子保持理智。"
+     "summary": "艾瑞安死前委托叶为安让兽化儿子保持理智。",
+     "actors": [
+      {
+       "person": "ai_ruian",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -18147,7 +18417,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "艾哲记忆被篡改",
-     "summary": "艾哲改众人对他的记忆，唐心知真相却不敢言。"
+     "summary": "艾哲改众人对他的记忆，唐心知真相却不敢言。",
+     "actors": [
+      {
+       "person": "ai_zhe",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_outcome",
@@ -18156,7 +18433,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "矫正后艾哲守住理智",
-     "summary": "叶为安揭穿篡改，艾哲未疯狂、唐心得救。"
+     "summary": "叶为安揭穿篡改，艾哲未疯狂、唐心得救。",
+     "actors": [
+      {
+       "person": "ai_zhe",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_branch",
@@ -18165,7 +18449,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "艾哲疯狂囚禁唐心，二人同归于尽，末世辐射真相湮灭。"
+     "summary": "艾哲疯狂囚禁唐心，二人同归于尽，末世辐射真相湮灭。",
+     "actors": []
     }
    ],
    "edges": [
@@ -18376,12 +18661,14 @@ window.SANDBOX_DATA = {
     {
      "id": "hejiacun",
      "name": "何家村",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）何家村"
     },
     {
      "id": "chengshi",
      "name": "京市",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）京市"
     }
    ],
    "persons": [
@@ -18392,27 +18679,37 @@ window.SANDBOX_DATA = {
      "party": "何母自述",
      "bucket": "何母自述",
      "src": "he_xinran_view",
-     "src_title": "何欣然视角"
+     "src_title": "何欣然视角",
+     "intro": "（虚构人物）何欣然",
+     "influence": 2
     },
     {
      "id": "he_yongan",
      "name": "何永安",
-     "desc": "巧妹姥爷，委托叶为安护孙女。"
+     "desc": "巧妹姥爷，委托叶为安护孙女。",
+     "intro": "（虚构人物）何永安",
+     "influence": 0
     },
     {
      "id": "qiao_mei",
      "name": "巧妹",
-     "desc": "何欣然之女，由姥爷姥姥带大。"
+     "desc": "何欣然之女，由姥爷姥姥带大。",
+     "intro": "（虚构人物）巧妹",
+     "influence": 0
     },
     {
      "id": "lin_wenqi",
      "name": "林文启",
-     "desc": "何欣然再婚对象（首富）。"
+     "desc": "何欣然再婚对象（首富）。",
+     "intro": "（虚构人物）林文启",
+     "influence": 0
     },
     {
      "id": "xue_yiliang",
      "name": "薛宜良",
-     "desc": "巧妹生父。"
+     "desc": "巧妹生父。",
+     "intro": "（虚构人物）薛宜良",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -18537,7 +18834,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身何永安",
-     "summary": "何永安委托叶为安护巧妹免于风言风语。"
+     "summary": "何永安委托叶为安护巧妹免于风言风语。",
+     "actors": [
+      {
+       "person": "he_yongan",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -18546,7 +18850,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "矫正",
      "title": "何欣然追梦托女",
-     "summary": "何欣然穿书女身份、将巧妹托父母后追星途。"
+     "summary": "何欣然穿书女身份、将巧妹托父母后追星途。",
+     "actors": [
+      {
+       "person": "he_xinran",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_outcome",
@@ -18555,7 +18866,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "巧妹健康成长",
-     "summary": "叶为安护巧妹在善意中长大。"
+     "summary": "叶为安护巧妹在善意中长大。",
+     "actors": [
+      {
+       "person": "qiao_mei",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_branch",
@@ -18564,7 +18882,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "巧妹在风言风语与流言中毁掉童年。"
+     "summary": "巧妹在风言风语与流言中毁掉童年。",
+     "actors": []
     }
    ],
    "edges": [
@@ -18775,12 +19094,14 @@ window.SANDBOX_DATA = {
     {
      "id": "tu_jia",
      "name": "徒家",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）徒家"
     },
     {
      "id": "gongsi",
      "name": "徒应琉公司",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）徒应琉公司"
     }
    ],
    "persons": [
@@ -18791,22 +19112,30 @@ window.SANDBOX_DATA = {
      "party": "司徒父自述",
      "bucket": "司徒父自述",
      "src": "tu_shiqing_view",
-     "src_title": "徒时卿自述"
+     "src_title": "徒时卿自述",
+     "intro": "（虚构人物）司徒锐",
+     "influence": 2
     },
     {
      "id": "tu_shiqing",
      "name": "徒时卿",
-     "desc": "司徒锐之父，委托叶为安理解儿子。"
+     "desc": "司徒锐之父，委托叶为安理解儿子。",
+     "intro": "（虚构人物）徒时卿",
+     "influence": 0
     },
     {
      "id": "tu_yingliu",
      "name": "徒应琉",
-     "desc": "上辈子'骗婚'者，实为假误会。"
+     "desc": "上辈子'骗婚'者，实为假误会。",
+     "intro": "（虚构人物）徒应琉",
+     "influence": 0
     },
     {
      "id": "chu_xiuxiu",
      "name": "褚秀秀",
-     "desc": "上辈子徒应琉之妻，带子而死。"
+     "desc": "上辈子徒应琉之妻，带子而死。",
+     "intro": "（虚构人物）褚秀秀",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -18931,7 +19260,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身徒时卿",
-     "summary": "徒时卿因上辈子骗婚误解委托叶为安理解儿子。"
+     "summary": "徒时卿因上辈子骗婚误解委托叶为安理解儿子。",
+     "actors": [
+      {
+       "person": "tu_shiqing",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -18940,7 +19276,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "上辈子骗婚真相",
-     "summary": "褚秀秀日记揭徒应琉非骗婚，是旁观同性恋的误会。"
+     "summary": "褚秀秀日记揭徒应琉非骗婚，是旁观同性恋的误会。",
+     "actors": []
     },
     {
      "id": "e_outcome",
@@ -18949,7 +19286,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "今世被接纳",
-     "summary": "司徒锐与徒应琉被家庭接纳。"
+     "summary": "司徒锐与徒应琉被家庭接纳。",
+     "actors": []
     },
     {
      "id": "e_branch",
@@ -18958,7 +19296,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "上辈子徒应琉黑化骗婚毁褚秀秀一生。"
+     "summary": "上辈子徒应琉黑化骗婚毁褚秀秀一生。",
+     "actors": []
     }
    ],
    "edges": [
@@ -19162,12 +19501,14 @@ window.SANDBOX_DATA = {
     {
      "id": "mu_jia",
      "name": "慕家",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）慕家"
     },
     {
      "id": "xuexiao",
      "name": "学校",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）学校"
     }
    ],
    "persons": [
@@ -19178,22 +19519,30 @@ window.SANDBOX_DATA = {
      "party": "慕父自述",
      "bucket": "慕父自述",
      "src": "mu_fu_view",
-     "src_title": "慕父自述"
+     "src_title": "慕父自述",
+     "intro": "（虚构人物）慕情",
+     "influence": 2
     },
     {
      "id": "mu_fu",
      "name": "慕父",
-     "desc": "委托叶为安让女儿清醒。"
+     "desc": "委托叶为安让女儿清醒。",
+     "intro": "（虚构人物）慕父",
+     "influence": 0
     },
     {
      "id": "zha_nan",
      "name": "渣男",
-     "desc": "利用慕情感情的男人。"
+     "desc": "利用慕情感情的男人。",
+     "intro": "（虚构人物）渣男",
+     "influence": 0
     },
     {
      "id": "mu_mu",
      "name": "慕母",
-     "desc": "慕情之母。"
+     "desc": "慕情之母。",
+     "intro": "（虚构人物）慕母",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -19318,7 +19667,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身慕父",
-     "summary": "慕父委托叶为安让爱情至上的女儿清醒。"
+     "summary": "慕父委托叶为安让爱情至上的女儿清醒。",
+     "actors": [
+      {
+       "person": "mu_fu",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -19327,7 +19683,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "矫正",
      "title": "女儿为爱弃学业",
-     "summary": "慕情为渣男放弃学业家庭。"
+     "summary": "慕情为渣男放弃学业家庭。",
+     "actors": []
     },
     {
      "id": "e_outcome",
@@ -19336,7 +19693,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "矫正后清醒",
-     "summary": "叶为安矫正使慕情重拾自我。"
+     "summary": "叶为安矫正使慕情重拾自我。",
+     "actors": []
     },
     {
      "id": "e_branch",
@@ -19345,7 +19703,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "慕情被渣男骗财骗色、毁掉一生。"
+     "summary": "慕情被渣男骗财骗色、毁掉一生。",
+     "actors": []
     }
    ],
    "edges": [
@@ -19556,12 +19915,14 @@ window.SANDBOX_DATA = {
     {
      "id": "mao_guo",
      "name": "猫国",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）猫国"
     },
     {
      "id": "ren_jian",
      "name": "人间",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）人间"
     }
    ],
    "persons": [
@@ -19572,17 +19933,23 @@ window.SANDBOX_DATA = {
      "party": "猫父自述",
      "bucket": "猫父自述",
      "src": "hu_ban_view",
-     "src_title": "虎斑猫自述"
+     "src_title": "虎斑猫自述",
+     "intro": "（虚构人物）珠宝",
+     "influence": 2
     },
     {
      "id": "hu_ban",
      "name": "虎斑猫",
-     "desc": "猫妖/自称朕，委托叶为安教儿子做猫。"
+     "desc": "猫妖/自称朕，委托叶为安教儿子做猫。",
+     "intro": "（虚构人物）虎斑猫",
+     "influence": 0
     },
     {
      "id": "lu_dewei",
      "name": "路德维希",
-     "desc": "狗，虎斑猫盟友。"
+     "desc": "狗，虎斑猫盟友。",
+     "intro": "（虚构人物）路德维希",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -19707,7 +20074,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "虎斑猫委托叶为安",
-     "summary": "虎斑猫请叶为安教儿子珠宝做猫。"
+     "summary": "虎斑猫请叶为安教儿子珠宝做猫。",
+     "actors": [
+      {
+       "person": "hu_ban",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -19716,7 +20090,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "矫正",
      "title": "珠宝小家子气",
-     "summary": "珠宝因铲屎官有别猫而打别的猫。"
+     "summary": "珠宝因铲屎官有别猫而打别的猫。",
+     "actors": [
+      {
+       "person": "bao_bao",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_outcome",
@@ -19725,7 +20106,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "矫正后大气",
-     "summary": "叶为安教珠宝不再小家子气。"
+     "summary": "叶为安教珠宝不再小家子气。",
+     "actors": []
     },
     {
      "id": "e_branch",
@@ -19734,7 +20116,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "珠宝仍争风吃醋、失体面。"
+     "summary": "珠宝仍争风吃醋、失体面。",
+     "actors": []
     }
    ],
    "edges": [
@@ -19938,12 +20321,14 @@ window.SANDBOX_DATA = {
     {
      "id": "jiang_jiacun",
      "name": "江家村",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）江家村"
     },
     {
      "id": "daxue",
      "name": "大学",
-     "fictional": true
+     "fictional": true,
+     "intro": "（虚构地点）大学"
     }
    ],
    "persons": [
@@ -19954,17 +20339,23 @@ window.SANDBOX_DATA = {
      "party": "江父自述",
      "bucket": "江父自述",
      "src": "jiang_dazhuang_view",
-     "src_title": "江大壮自述"
+     "src_title": "江大壮自述",
+     "intro": "（虚构人物）江容华",
+     "influence": 2
     },
     {
      "id": "jiang_dazhuang",
      "name": "江大壮",
-     "desc": "庄稼汉，委托叶为安教儿子做人。"
+     "desc": "庄稼汉，委托叶为安教儿子做人。",
+     "intro": "（虚构人物）江大壮",
+     "influence": 0
     },
     {
      "id": "jiang_nvyou",
      "name": "江容华女友",
-     "desc": "家境好的开朗女孩。"
+     "desc": "家境好的开朗女孩。",
+     "intro": "（虚构人物）江容华女友",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -20089,7 +20480,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "转折",
      "title": "叶为安附身江大壮",
-     "summary": "江大壮委托叶为安教儿子别成衣冠禽兽。"
+     "summary": "江大壮委托叶为安教儿子别成衣冠禽兽。",
+     "actors": [
+      {
+       "person": "jiang_dazhuang",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_key",
@@ -20098,7 +20496,14 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "矫正",
      "title": "江容华读点书变禽兽",
-     "summary": "江容华胎穿后凭学识欺男霸女。"
+     "summary": "江容华胎穿后凭学识欺男霸女。",
+     "actors": [
+      {
+       "person": "jiang_ronghua",
+       "role": "文本提及",
+       "year": ""
+      }
+     ]
     },
     {
      "id": "e_outcome",
@@ -20107,7 +20512,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "结局",
      "title": "矫正后做人",
-     "summary": "叶为安矫正使江容华回归本心。"
+     "summary": "叶为安矫正使江容华回归本心。",
+     "actors": []
     },
     {
      "id": "e_branch",
@@ -20116,7 +20522,8 @@ window.SANDBOX_DATA = {
      "year": "",
      "kind": "反事实",
      "title": "若叶为安未介入",
-     "summary": "江容华成衣冠禽兽、害人害己。"
+     "summary": "江容华成衣冠禽兽、害人害己。",
+     "actors": []
     }
    ],
    "edges": [

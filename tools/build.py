@@ -145,6 +145,18 @@ def build_scene(sc):
         s = src_by_id.get(a["source"])
         a["_party"] = s["party"] if s else "unknown"
 
+    # 人物影响力指标：统计引用该人物的 record/scholarship 断言数。
+    # 构建期算好缓存进 bundle.persons，前端据此把"关联人物"按史料记载量定大小。
+    pid_influence = defaultdict(int)
+    for a in assertions:
+        subj = a.get("subject", "")
+        if subj.startswith("person:"):
+            pid = subj[len("person:"):]
+            if a.get("layer") in ("record", "scholarship"):
+                pid_influence[pid] += 1
+    for p in persons["persons"]:
+        p["influence"] = pid_influence.get(p["id"], 0)
+
     meta = {k: v for k, v in sc.items()
             if k not in _REGISTRY_ONLY and not k.startswith("_")}
     meta["key"] = sc["_key"]

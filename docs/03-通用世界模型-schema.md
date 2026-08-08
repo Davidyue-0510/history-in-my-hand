@@ -176,3 +176,27 @@ worlds/
 - `layer:gap`：永远显式，不偷偷填。
 - `quotes[]`：可质证，设定 / 史料出处可追。
 - 虚构 world 若定位娱乐向，可降低 `quotes` 强制度，但 `gap` 仍保留（作者没写=缺口）。
+
+## 11. 交互与扩展接口（v0.9.1 新增字段 + 四个接缝）
+
+### 11.1 新增可选字段（均向后兼容，缺则优雅降级）
+- `places[].intro` / `aliases` / `significance`：地点介绍面板内容（点击地图地点即切换显示）。
+- `persons[].intro`：人物简介（人物视图"断言"页上方显示）。
+- `persons[].influence`：**构建期由 build.py 计算**（统计引用该人物的 `record`/`scholarship` 断言数），前端据此把"关联人物"按史料记载量定大小。不手写。
+- `events[].actors: [{person, role, year}]`：事件参与者，驱动"轨迹时间线"与"事件影响"页。
+- `edges[].from` / `edges[].to`：关系起止年（可选），供"关联人物"按时间窗过滤；缺则展示全部。
+
+### 11.2 四个扩展接缝（全部喂入同一 world 模型，断言为审计层）
+| 包 | 协议 | 具体实现（占位） | 用途 |
+|---|---|---|---|
+| `tools/extractors/` | `BaseExtractor.extract(text, meta) -> WorldSpec` | `TemplateExtractor` | 文本 → world（LLM 抽取即插即用，ingest 装配不变） |
+| `tools/enrichers/` | `BaseEnricher.enrich(entity) -> {intro,aliases,significance}` | `TemplateEnricher` | 补全地点/人物简介（LLM 补全即插即用） |
+| `tools/datasources/` | `DataSource.fetch(query) -> [record]` | `CBDBAdapter` / `CHGISAdapter` | 外接学术库；**运行时下载不打包入 git** |
+| `tools/mapproviders/` | `MapProvider.load(region) -> grid` | `AsterMapProvider`（真实）/ `UserGeoTIFFProvider`（占位） | 地图源可插拔；用户 GeoTIFF/坐标 → 动态投影 |
+
+### 11.3 单一真值原则
+所有接缝只产出 `places/persons/events/edges/assertions`，绝不绕过断言层。校验仍走四闸门（lint/test/leads/build），外部来源进库前必须过 lint。
+
+### 11.4 人物视图（county.js）
+点选人物展开多标签：断言（默认）/ 轨迹（events.actors 排序，可按 year 时间窗过滤）/ 关联人物（edges+influence，点大小=史料记载量，点密集=影响力集中；点击跳转）/ 事件影响 / 立场剖面（按 source.party 统计）/ 史料缺口 / 比较·反事实（占位，待 M6 演化引擎）。抽象图模式下选中人物会高亮其关系网（ego network）。
+

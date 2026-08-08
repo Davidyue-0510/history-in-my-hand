@@ -700,3 +700,28 @@ body{
   .tl-track{ height:26px; }
   .tl-track::before{ top:13px; }
 }
+
+/* ── 人物视图 / 地点介绍（Phase 0+1） ── */
+.ent-intro{ font-family:var(--serif); font-size:12px; line-height:1.7; color:var(--ink-2);
+  background:var(--paper-2); border-left:3px solid var(--ink-3); padding:8px 10px; margin-bottom:10px; }
+.ent-meta{ font-size:10.5px; color:var(--ink-3); margin:2px 0 8px; }
+.ent-meta b{ color:var(--ink-2); font-weight:600; }
+.ptabbar{ display:flex; flex-wrap:wrap; gap:5px; margin:2px 0 10px; }
+.ptab{ font-family:var(--serif); font-size:11px; color:var(--ink-2); background:var(--paper-2);
+  border:1px solid var(--ink-3); border-radius:6px; padding:4px 9px; cursor:pointer; line-height:1; }
+.ptab:hover{ border-color:var(--ink-2); }
+.ptab.on{ background:var(--ink-2); color:var(--paper); border-color:var(--ink-2); }
+.ptab i{ font-style:normal; font-family:var(--mono); font-size:9px; opacity:.8; margin-left:3px; }
+.ent-filter{ font-size:10.5px; color:var(--ink-2); margin-bottom:8px; display:flex; align-items:center; gap:5px; flex-wrap:wrap; }
+.ent-filter input{ width:56px; font-family:var(--mono); font-size:10px; padding:2px 5px;
+  border:1px solid var(--ink-3); border-radius:5px; background:var(--paper); color:var(--ink-2); }
+.ent-row{ border-bottom:1px solid var(--paper-2); padding:8px 0; }
+.ent-row:last-child{ border-bottom:none; }
+.ent-row-h{ font-family:var(--serif); font-size:12.5px; color:var(--ink); letter-spacing:.03em; }
+.ent-row-t{ font-size:11px; color:var(--ink-2); line-height:1.65; margin-top:3px; }
+.ent-rel{ font-size:9.5px; color:var(--ink-3); font-family:var(--mono); }
+.ent-net{ display:flex; align-items:center; gap:9px; cursor:pointer; }
+.ent-net:hover .ent-row-h{ color:#C77B30; }
+.ent-dot{ display:inline-block; border-radius:50%; background:#5A3A6E; flex:none;
+  box-shadow:0 0 0 2px var(--paper); }
+.ent-dot+div .ent-row-t{ color:var(--ink-3); }

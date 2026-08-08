@@ -1,9 +1,109 @@
 {
-  "events": [
-    {"id": "e_ml", "subject": "event:yu_mother_left", "era": "九零年代", "year": "", "title": "唐爱丽离家", "kind": "家庭", "text": "于金宝十三岁过年时，于国强醉后持菜刀追打唐爱丽，唐爱丽为活命出走。"},
-    {"id": "e_cm", "subject": "event:yu_father_commission", "era": "同年", "year": "", "title": "叶为安接委托切入", "kind": "转折", "text": "于国强临终忏悔后，叶为安挥手让其沉睡，进入小世界接下'父亲'委托，附身于国强。"},
-    {"id": "e_eg", "subject": "event:yu_jinbao_eggs", "era": "寒假", "year": "", "title": "分蛋·矫正起点", "kind": "矫正", "text": "叶为安令金宝把碗里仅剩两个蛋分给两姐，金宝畏惧照做，第一次学会分享。"},
-    {"id": "e_cf", "subject": "event:yu_father_confess", "era": "小年前", "year": "", "title": "于国强向子女认错", "kind": "转折", "text": "叶为安以于国强之口向三子女承认追打唐爱丽是己错，承诺不再酗酒、不恨母。"},
-    {"id": "e_corr", "subject": "event:yu_jinbao_corrected", "era": "后续", "year": "", "title": "金宝被矫正（结局）", "kind": "结局", "text": "叶为安介入后金宝学会分食、不再憎母；若无介入则延续家暴至入狱（反事实分支）。"}
-  ]
+ "events": [
+  {
+   "id": "e_ml",
+   "subject": "event:yu_mother_left",
+   "era": "九零年代",
+   "year": 1995,
+   "title": "唐爱丽离家",
+   "kind": "家庭",
+   "text": "于金宝十三岁过年时，于国强醉后持菜刀追打唐爱丽，唐爱丽为活命出走。",
+   "actors": [
+    {
+     "person": "yu_guoqiang",
+     "role": "文本提及",
+     "year": ""
+    },
+    {
+     "person": "yu_jinbao",
+     "role": "文本提及",
+     "year": ""
+    },
+    {
+     "person": "tang_aili",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_cm",
+   "subject": "event:yu_father_commission",
+   "era": "同年",
+   "year": 1996,
+   "title": "叶为安接委托切入",
+   "kind": "转折",
+   "text": "于国强临终忏悔后，叶为安挥手让其沉睡，进入小世界接下'父亲'委托，附身于国强。",
+   "actors": [
+    {
+     "person": "yeweian",
+     "role": "文本提及",
+     "year": ""
+    },
+    {
+     "person": "yu_guoqiang",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_eg",
+   "subject": "event:yu_jinbao_eggs",
+   "era": "寒假",
+   "year": 1996,
+   "title": "分蛋·矫正起点",
+   "kind": "矫正",
+   "text": "叶为安令金宝把碗里仅剩两个蛋分给两姐，金宝畏惧照做，第一次学会分享。",
+   "actors": [
+    {
+     "person": "yeweian",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_cf",
+   "subject": "event:yu_father_confess",
+   "era": "小年前",
+   "year": 1996,
+   "title": "于国强向子女认错",
+   "kind": "转折",
+   "text": "叶为安以于国强之口向三子女承认追打唐爱丽是己错，承诺不再酗酒、不恨母。",
+   "actors": [
+    {
+     "person": "yeweian",
+     "role": "文本提及",
+     "year": ""
+    },
+    {
+     "person": "yu_guoqiang",
+     "role": "文本提及",
+     "year": ""
+    },
+    {
+     "person": "tang_aili",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_corr",
+   "subject": "event:yu_jinbao_corrected",
+   "era": "后续",
+   "year": 1997,
+   "title": "金宝被矫正（结局）",
+   "kind": "结局",
+   "text": "叶为安介入后金宝学会分食、不再憎母；若无介入则延续家暴至入狱（反事实分支）。",
+   "actors": [
+    {
+     "person": "yeweian",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  }
+ ]
 }
