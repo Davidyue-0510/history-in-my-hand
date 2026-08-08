@@ -1,0 +1,10 @@
+{
+  "name": "history-in-my-hand",
+  "version": "0.9.0",
+  "private": true,
+  "description": "小菜狗的文明图景 / Vege-civilization — 断言驱动的文明沙盒（明清辽东 + 虚构世界）",
+  "scripts": {
+    "push": "node tools/push_app.js",
+    "push:commit": "node tools/push_app.js --commit"
+  }
+}
