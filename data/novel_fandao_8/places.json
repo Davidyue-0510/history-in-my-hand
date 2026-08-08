@@ -1,14 +1,16 @@
 {
-  "places": [
-    {
-      "id": "mao_guo",
-      "name": "猫国",
-      "fictional": true
-    },
-    {
-      "id": "ren_jian",
-      "name": "人间",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "mao_guo",
+   "name": "猫国",
+   "fictional": true,
+   "intro": "（虚构地点）猫国"
+  },
+  {
+   "id": "ren_jian",
+   "name": "人间",
+   "fictional": true,
+   "intro": "（虚构地点）人间"
+  }
+ ]
 }

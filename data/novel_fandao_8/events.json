@@ -1,40 +1,56 @@
 {
-  "events": [
+ "events": [
+  {
+   "id": "e_enter",
+   "subject": "event:bb_enter",
+   "era": "副本开端",
+   "year": "",
+   "kind": "转折",
+   "title": "虎斑猫委托叶为安",
+   "summary": "虎斑猫请叶为安教儿子珠宝做猫。",
+   "actors": [
     {
-      "id": "e_enter",
-      "subject": "event:bb_enter",
-      "era": "副本开端",
-      "year": "",
-      "kind": "转折",
-      "title": "虎斑猫委托叶为安",
-      "summary": "虎斑猫请叶为安教儿子珠宝做猫。"
-    },
-    {
-      "id": "e_key",
-      "subject": "event:bb_key",
-      "era": "情节",
-      "year": "",
-      "kind": "矫正",
-      "title": "珠宝小家子气",
-      "summary": "珠宝因铲屎官有别猫而打别的猫。"
-    },
-    {
-      "id": "e_outcome",
-      "subject": "event:bb_outcome",
-      "era": "结局",
-      "year": "",
-      "kind": "结局",
-      "title": "矫正后大气",
-      "summary": "叶为安教珠宝不再小家子气。"
-    },
-    {
-      "id": "e_branch",
-      "subject": "event:bb_branch",
-      "era": "反事实",
-      "year": "",
-      "kind": "反事实",
-      "title": "若叶为安未介入",
-      "summary": "珠宝仍争风吃醋、失体面。"
+     "person": "hu_ban",
+     "role": "文本提及",
+     "year": ""
     }
-  ]
+   ]
+  },
+  {
+   "id": "e_key",
+   "subject": "event:bb_key",
+   "era": "情节",
+   "year": "",
+   "kind": "矫正",
+   "title": "珠宝小家子气",
+   "summary": "珠宝因铲屎官有别猫而打别的猫。",
+   "actors": [
+    {
+     "person": "bao_bao",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_outcome",
+   "subject": "event:bb_outcome",
+   "era": "结局",
+   "year": "",
+   "kind": "结局",
+   "title": "矫正后大气",
+   "summary": "叶为安教珠宝不再小家子气。",
+   "actors": []
+  },
+  {
+   "id": "e_branch",
+   "subject": "event:bb_branch",
+   "era": "反事实",
+   "year": "",
+   "kind": "反事实",
+   "title": "若叶为安未介入",
+   "summary": "珠宝仍争风吃醋、失体面。",
+   "actors": []
+  }
+ ]
 }

@@ -1,19 +1,22 @@
 {
-  "places": [
-    {
-      "id": "xiaocheng",
-      "name": "偏远小县城",
-      "fictional": true
-    },
-    {
-      "id": "yulequan",
-      "name": "娱乐圈",
-      "fictional": true
-    },
-    {
-      "id": "linju",
-      "name": "邻居家",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "xiaocheng",
+   "name": "偏远小县城",
+   "fictional": true,
+   "intro": "（虚构地点）偏远小县城"
+  },
+  {
+   "id": "yulequan",
+   "name": "娱乐圈",
+   "fictional": true,
+   "intro": "（虚构地点）娱乐圈"
+  },
+  {
+   "id": "linju",
+   "name": "邻居家",
+   "fictional": true,
+   "intro": "（虚构地点）邻居家"
+  }
+ ]
 }

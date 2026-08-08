@@ -1,40 +1,56 @@
 {
-  "events": [
+ "events": [
+  {
+   "id": "e_enter",
+   "subject": "event:jr_enter",
+   "era": "副本开端",
+   "year": "",
+   "kind": "转折",
+   "title": "叶为安附身江大壮",
+   "summary": "江大壮委托叶为安教儿子别成衣冠禽兽。",
+   "actors": [
     {
-      "id": "e_enter",
-      "subject": "event:jr_enter",
-      "era": "副本开端",
-      "year": "",
-      "kind": "转折",
-      "title": "叶为安附身江大壮",
-      "summary": "江大壮委托叶为安教儿子别成衣冠禽兽。"
-    },
-    {
-      "id": "e_key",
-      "subject": "event:jr_key",
-      "era": "情节",
-      "year": "",
-      "kind": "矫正",
-      "title": "江容华读点书变禽兽",
-      "summary": "江容华胎穿后凭学识欺男霸女。"
-    },
-    {
-      "id": "e_outcome",
-      "subject": "event:jr_outcome",
-      "era": "结局",
-      "year": "",
-      "kind": "结局",
-      "title": "矫正后做人",
-      "summary": "叶为安矫正使江容华回归本心。"
-    },
-    {
-      "id": "e_branch",
-      "subject": "event:jr_branch",
-      "era": "反事实",
-      "year": "",
-      "kind": "反事实",
-      "title": "若叶为安未介入",
-      "summary": "江容华成衣冠禽兽、害人害己。"
+     "person": "jiang_dazhuang",
+     "role": "文本提及",
+     "year": ""
     }
-  ]
+   ]
+  },
+  {
+   "id": "e_key",
+   "subject": "event:jr_key",
+   "era": "情节",
+   "year": "",
+   "kind": "矫正",
+   "title": "江容华读点书变禽兽",
+   "summary": "江容华胎穿后凭学识欺男霸女。",
+   "actors": [
+    {
+     "person": "jiang_ronghua",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_outcome",
+   "subject": "event:jr_outcome",
+   "era": "结局",
+   "year": "",
+   "kind": "结局",
+   "title": "矫正后做人",
+   "summary": "叶为安矫正使江容华回归本心。",
+   "actors": []
+  },
+  {
+   "id": "e_branch",
+   "subject": "event:jr_branch",
+   "era": "反事实",
+   "year": "",
+   "kind": "反事实",
+   "title": "若叶为安未介入",
+   "summary": "江容华成衣冠禽兽、害人害己。",
+   "actors": []
+  }
+ ]
 }

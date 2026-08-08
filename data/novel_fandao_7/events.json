@@ -1,40 +1,50 @@
 {
-  "events": [
+ "events": [
+  {
+   "id": "e_enter",
+   "subject": "event:mq_enter",
+   "era": "副本开端",
+   "year": "",
+   "kind": "转折",
+   "title": "叶为安附身慕父",
+   "summary": "慕父委托叶为安让爱情至上的女儿清醒。",
+   "actors": [
     {
-      "id": "e_enter",
-      "subject": "event:mq_enter",
-      "era": "副本开端",
-      "year": "",
-      "kind": "转折",
-      "title": "叶为安附身慕父",
-      "summary": "慕父委托叶为安让爱情至上的女儿清醒。"
-    },
-    {
-      "id": "e_key",
-      "subject": "event:mq_key",
-      "era": "情节",
-      "year": "",
-      "kind": "矫正",
-      "title": "女儿为爱弃学业",
-      "summary": "慕情为渣男放弃学业家庭。"
-    },
-    {
-      "id": "e_outcome",
-      "subject": "event:mq_outcome",
-      "era": "结局",
-      "year": "",
-      "kind": "结局",
-      "title": "矫正后清醒",
-      "summary": "叶为安矫正使慕情重拾自我。"
-    },
-    {
-      "id": "e_branch",
-      "subject": "event:mq_branch",
-      "era": "反事实",
-      "year": "",
-      "kind": "反事实",
-      "title": "若叶为安未介入",
-      "summary": "慕情被渣男骗财骗色、毁掉一生。"
+     "person": "mu_fu",
+     "role": "文本提及",
+     "year": ""
     }
-  ]
+   ]
+  },
+  {
+   "id": "e_key",
+   "subject": "event:mq_key",
+   "era": "情节",
+   "year": "",
+   "kind": "矫正",
+   "title": "女儿为爱弃学业",
+   "summary": "慕情为渣男放弃学业家庭。",
+   "actors": []
+  },
+  {
+   "id": "e_outcome",
+   "subject": "event:mq_outcome",
+   "era": "结局",
+   "year": "",
+   "kind": "结局",
+   "title": "矫正后清醒",
+   "summary": "叶为安矫正使慕情重拾自我。",
+   "actors": []
+  },
+  {
+   "id": "e_branch",
+   "subject": "event:mq_branch",
+   "era": "反事实",
+   "year": "",
+   "kind": "反事实",
+   "title": "若叶为安未介入",
+   "summary": "慕情被渣男骗财骗色、毁掉一生。",
+   "actors": []
+  }
+ ]
 }

@@ -1,40 +1,62 @@
 {
-  "events": [
+ "events": [
+  {
+   "id": "e_enter",
+   "subject": "event:xf_enter",
+   "era": "副本开端",
+   "year": "",
+   "kind": "转折",
+   "title": "叶为安附身谢泽非",
+   "summary": "谢泽非醉酒首打六岁谢夕兰，叶为安介入代父教养。",
+   "actors": [
     {
-      "id": "e_enter",
-      "subject": "event:xf_enter",
-      "era": "副本开端",
-      "year": "",
-      "kind": "转折",
-      "title": "叶为安附身谢泽非",
-      "summary": "谢泽非醉酒首打六岁谢夕兰，叶为安介入代父教养。"
-    },
-    {
-      "id": "e_key",
-      "subject": "event:xf_key",
-      "era": "情节",
-      "year": "",
-      "kind": "矫正",
-      "title": "谢夕兰傍金主坑真爱",
-      "summary": "为抢华天成坑害其真爱女友，事败身败名裂。"
-    },
-    {
-      "id": "e_outcome",
-      "subject": "event:xf_outcome",
-      "era": "结局",
-      "year": "",
-      "kind": "结局",
-      "title": "矫正后谢夕兰清醒",
-      "summary": "叶为安矫正使其认清自我、不再拜金毁人。"
-    },
-    {
-      "id": "e_branch",
-      "subject": "event:xf_branch",
-      "era": "反事实",
-      "year": "",
-      "kind": "反事实",
-      "title": "若叶为安未介入",
-      "summary": "谢夕兰一夕成众矢之的，人生尽毁。"
+     "person": "xie_zefei",
+     "role": "文本提及",
+     "year": ""
     }
-  ]
+   ]
+  },
+  {
+   "id": "e_key",
+   "subject": "event:xf_key",
+   "era": "情节",
+   "year": "",
+   "kind": "矫正",
+   "title": "谢夕兰傍金主坑真爱",
+   "summary": "为抢华天成坑害其真爱女友，事败身败名裂。",
+   "actors": [
+    {
+     "person": "xie_xilan",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_outcome",
+   "subject": "event:xf_outcome",
+   "era": "结局",
+   "year": "",
+   "kind": "结局",
+   "title": "矫正后谢夕兰清醒",
+   "summary": "叶为安矫正使其认清自我、不再拜金毁人。",
+   "actors": [
+    {
+     "person": "xie_xilan",
+     "role": "文本提及",
+     "year": ""
+    }
+   ]
+  },
+  {
+   "id": "e_branch",
+   "subject": "event:xf_branch",
+   "era": "反事实",
+   "year": "",
+   "kind": "反事实",
+   "title": "若叶为安未介入",
+   "summary": "谢夕兰一夕成众矢之的，人生尽毁。",
+   "actors": []
+  }
+ ]
 }

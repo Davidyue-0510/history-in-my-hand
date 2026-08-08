@@ -1,14 +1,16 @@
 {
-  "places": [
-    {
-      "id": "mojie",
-      "name": "末世·艾家别墅",
-      "fictional": true
-    },
-    {
-      "id": "yanshi",
-      "name": "研究所",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "mojie",
+   "name": "末世·艾家别墅",
+   "fictional": true,
+   "intro": "（虚构地点）末世·艾家别墅"
+  },
+  {
+   "id": "yanshi",
+   "name": "研究所",
+   "fictional": true,
+   "intro": "（虚构地点）研究所"
+  }
+ ]
 }

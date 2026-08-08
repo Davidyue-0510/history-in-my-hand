@@ -1,23 +1,26 @@
 {
-  "persons": [
-    {
-      "id": "jiang_ronghua",
-      "name": "江容华",
-      "desc": "胎穿/魂穿之子，读点书成衣冠禽兽。",
-      "party": "江父自述",
-      "bucket": "江父自述",
-      "src": "jiang_dazhuang_view",
-      "src_title": "江大壮自述"
-    },
-    {
-      "id": "jiang_dazhuang",
-      "name": "江大壮",
-      "desc": "庄稼汉，委托叶为安教儿子做人。"
-    },
-    {
-      "id": "jiang_nvyou",
-      "name": "江容华女友",
-      "desc": "家境好的开朗女孩。"
-    }
-  ]
+ "persons": [
+  {
+   "id": "jiang_ronghua",
+   "name": "江容华",
+   "desc": "胎穿/魂穿之子，读点书成衣冠禽兽。",
+   "party": "江父自述",
+   "bucket": "江父自述",
+   "src": "jiang_dazhuang_view",
+   "src_title": "江大壮自述",
+   "intro": "（虚构人物）江容华"
+  },
+  {
+   "id": "jiang_dazhuang",
+   "name": "江大壮",
+   "desc": "庄稼汉，委托叶为安教儿子做人。",
+   "intro": "（虚构人物）江大壮"
+  },
+  {
+   "id": "jiang_nvyou",
+   "name": "江容华女友",
+   "desc": "家境好的开朗女孩。",
+   "intro": "（虚构人物）江容华女友"
+  }
+ ]
 }

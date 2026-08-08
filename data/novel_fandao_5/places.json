@@ -1,14 +1,16 @@
 {
-  "places": [
-    {
-      "id": "hejiacun",
-      "name": "何家村",
-      "fictional": true
-    },
-    {
-      "id": "chengshi",
-      "name": "京市",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "hejiacun",
+   "name": "何家村",
+   "fictional": true,
+   "intro": "（虚构地点）何家村"
+  },
+  {
+   "id": "chengshi",
+   "name": "京市",
+   "fictional": true,
+   "intro": "（虚构地点）京市"
+  }
+ ]
 }

@@ -1,28 +1,32 @@
 {
-  "persons": [
-    {
-      "id": "mu_qing",
-      "name": "慕情",
-      "desc": "为爱情放弃学业家庭的女儿。",
-      "party": "慕父自述",
-      "bucket": "慕父自述",
-      "src": "mu_fu_view",
-      "src_title": "慕父自述"
-    },
-    {
-      "id": "mu_fu",
-      "name": "慕父",
-      "desc": "委托叶为安让女儿清醒。"
-    },
-    {
-      "id": "zha_nan",
-      "name": "渣男",
-      "desc": "利用慕情感情的男人。"
-    },
-    {
-      "id": "mu_mu",
-      "name": "慕母",
-      "desc": "慕情之母。"
-    }
-  ]
+ "persons": [
+  {
+   "id": "mu_qing",
+   "name": "慕情",
+   "desc": "为爱情放弃学业家庭的女儿。",
+   "party": "慕父自述",
+   "bucket": "慕父自述",
+   "src": "mu_fu_view",
+   "src_title": "慕父自述",
+   "intro": "（虚构人物）慕情"
+  },
+  {
+   "id": "mu_fu",
+   "name": "慕父",
+   "desc": "委托叶为安让女儿清醒。",
+   "intro": "（虚构人物）慕父"
+  },
+  {
+   "id": "zha_nan",
+   "name": "渣男",
+   "desc": "利用慕情感情的男人。",
+   "intro": "（虚构人物）渣男"
+  },
+  {
+   "id": "mu_mu",
+   "name": "慕母",
+   "desc": "慕情之母。",
+   "intro": "（虚构人物）慕母"
+  }
+ ]
 }

@@ -1,14 +1,16 @@
 {
-  "places": [
-    {
-      "id": "mu_jia",
-      "name": "慕家",
-      "fictional": true
-    },
-    {
-      "id": "xuexiao",
-      "name": "学校",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "mu_jia",
+   "name": "慕家",
+   "fictional": true,
+   "intro": "（虚构地点）慕家"
+  },
+  {
+   "id": "xuexiao",
+   "name": "学校",
+   "fictional": true,
+   "intro": "（虚构地点）学校"
+  }
+ ]
 }

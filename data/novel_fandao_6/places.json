@@ -1,14 +1,16 @@
 {
-  "places": [
-    {
-      "id": "tu_jia",
-      "name": "徒家",
-      "fictional": true
-    },
-    {
-      "id": "gongsi",
-      "name": "徒应琉公司",
-      "fictional": true
-    }
-  ]
+ "places": [
+  {
+   "id": "tu_jia",
+   "name": "徒家",
+   "fictional": true,
+   "intro": "（虚构地点）徒家"
+  },
+  {
+   "id": "gongsi",
+   "name": "徒应琉公司",
+   "fictional": true,
+   "intro": "（虚构地点）徒应琉公司"
+  }
+ ]
 }

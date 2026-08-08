@@ -1,28 +1,32 @@
 {
-  "persons": [
-    {
-      "id": "situ_rui",
-      "name": "司徒锐",
-      "desc": "同性恋儿子，与徒应琉相恋。",
-      "party": "司徒父自述",
-      "bucket": "司徒父自述",
-      "src": "tu_shiqing_view",
-      "src_title": "徒时卿自述"
-    },
-    {
-      "id": "tu_shiqing",
-      "name": "徒时卿",
-      "desc": "司徒锐之父，委托叶为安理解儿子。"
-    },
-    {
-      "id": "tu_yingliu",
-      "name": "徒应琉",
-      "desc": "上辈子'骗婚'者，实为假误会。"
-    },
-    {
-      "id": "chu_xiuxiu",
-      "name": "褚秀秀",
-      "desc": "上辈子徒应琉之妻，带子而死。"
-    }
-  ]
+ "persons": [
+  {
+   "id": "situ_rui",
+   "name": "司徒锐",
+   "desc": "同性恋儿子，与徒应琉相恋。",
+   "party": "司徒父自述",
+   "bucket": "司徒父自述",
+   "src": "tu_shiqing_view",
+   "src_title": "徒时卿自述",
+   "intro": "（虚构人物）司徒锐"
+  },
+  {
+   "id": "tu_shiqing",
+   "name": "徒时卿",
+   "desc": "司徒锐之父，委托叶为安理解儿子。",
+   "intro": "（虚构人物）徒时卿"
+  },
+  {
+   "id": "tu_yingliu",
+   "name": "徒应琉",
+   "desc": "上辈子'骗婚'者，实为假误会。",
+   "intro": "（虚构人物）徒应琉"
+  },
+  {
+   "id": "chu_xiuxiu",
+   "name": "褚秀秀",
+   "desc": "上辈子徒应琉之妻，带子而死。",
+   "intro": "（虚构人物）褚秀秀"
+  }
+ ]
 }
