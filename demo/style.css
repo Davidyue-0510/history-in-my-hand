@@ -639,6 +639,17 @@ body{
   stroke-linejoin:round; pointer-events:none; user-select:none;
 }
 .node-hit{ cursor:pointer; }
+/* 可下钻的县名：在 svg 里默认 pointer-events:none，这里显式开启，并用下划线+蓝标提示可点 */
+.place-label.link{
+  pointer-events:auto; cursor:pointer; fill:#2E5C8A;
+  text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px;
+}
+.drill-btn{
+  display:inline-block; margin:0 0 12px; padding:7px 13px;
+  font-family:var(--serif); font-size:13px; color:#fff; background:#2E5C8A;
+  border:none; border-radius:5px; cursor:pointer;
+}
+.drill-btn:hover{ background:#244B73; }
 
 /* ══════ 抽屉遮罩（窄屏） ══════ */
 .scrim{

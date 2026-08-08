@@ -392,22 +392,30 @@
     D.places.forEach(function (p) {
       var big = ['city', 'capital'].indexOf(p.type) >= 0;
       var x = px(p.lon), y = py(p.lat);
+      var cs = countySceneFor(p.id);
       el('circle', {
         cx: x, cy: y, r: big ? 4.2 : 2.8, class: 'pnode' + (big ? ' big' : ''),
         fill: big ? '#2A2521' : '#FBF9F3',
         stroke: '#2A2521', 'stroke-width': 1.3, 'vector-effect': 'non-scaling-stroke'
       }, gNodes);
+      // 透明命中圈先画、在底层：点圆点 = 在战役内检视该地断言（selectPlace）
+      var hit = el('circle', { cx: x, cy: y, r: 13, fill: 'transparent', class: 'node-hit' }, gNodes);
+      hit.addEventListener('click', function () { selectPlace(p.id); });
+      // 地名标签画在命中圈之上；可下钻时开启 pointer-events：点县名 = 跳县级切片
       var lb = el('text', {
         x: x + (big ? 7 : 5.5), y: y + 3.6,
-        class: 'place-label' + (big ? '' : ' minor')
+        class: 'place-label' + (big ? '' : ' minor') + (cs ? ' link' : '')
       }, gNodes);
       lb.textContent = p.name.replace(/（.*?）/, '');
+      if (cs) {
+        lb.style.cursor = 'pointer';
+        lb.setAttribute('title', '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片');
+        lb.addEventListener('click', function () { location.href = 'county.html?scene=' + cs; });
+      }
       if (state.terrain.elev && p.elev != null) {
         var ev = el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, gNodes);
         ev.textContent = p.elev + ' m';
       }
-      var hit = el('circle', { cx: x, cy: y, r: 13, fill: 'transparent', class: 'node-hit' }, gNodes);
-      hit.addEventListener('click', function () { selectPlace(p.id); });
       if (p.type === 'battlefield') {
         el('circle', {
           cx: x, cy: y, r: 8, fill: 'none', stroke: '#B23A48',
@@ -1142,12 +1150,24 @@
     return s;
   }
 
+  /* 地名 → 县级切片：地名 id 若本身就是注册过的切片（且非战役本身 sarhu），即可下钻 */
+  function countySceneFor(pid) {
+    return (pid && pid !== 'sarhu' && SD.scenes[pid]) ? pid : null;
+  }
+  /* 检视面板里的「下钻」按钮：点击跳到对应的县级切片 */
+  function wireDrill(box) {
+    var b = box.querySelector('.drill-btn');
+    if (b) b.addEventListener('click', function () {
+      location.href = 'county.html?scene=' + b.getAttribute('data-scene');
+    });
+  }
+
   /* ═══════════ 检视 ═══════════ */
   function selectPlace(pid) {
     var p = PLACE[pid];
     var list = visibleAssertions().filter(function (a) { return a.place === pid; });
     var sub = p.modern + (p.elev != null ? ' · 海拔 ' + p.elev + ' m' : '');
-    state.selection = { type: 'place', title: p.name, sub: sub, list: list };
+    state.selection = { type: 'place', title: p.name, sub: sub, list: list, pid: pid };
     goTab('inspect'); renderInspect();
   }
   function selectRoute(rid) {
@@ -1227,12 +1247,24 @@
         }).join('　') + '</div></div>';
     }
 
+    // 地名若对应县级切片，提供「下钻」按钮（圆点点击=战役内检视，这里再给一条跳转入口）
+    var drill = '';
+    if (sel.type === 'place' && sel.pid) {
+      var dcs = countySceneFor(sel.pid);
+      if (dcs) {
+        drill = '<button class="drill-btn" data-scene="' + dcs + '">查看「' +
+          sel.title.replace(/（.*?）/, '') + '」县级切片 →</button>';
+      }
+    }
+
     if (!live.length) {
-      box.innerHTML = extra + '<div class="empty-hint">在当前采信范围内，此处没有任何断言。' +
+      box.innerHTML = drill + extra + '<div class="empty-hint">在当前采信范围内，此处没有任何断言。' +
         '<br><br>这不代表这里什么都没发生 —— 只代表你选的这几种史料没有记它。</div>';
+      wireDrill(box);
       return;
     }
-    box.innerHTML = extra + live.map(assertionCard).join('');
+    box.innerHTML = drill + extra + live.map(assertionCard).join('');
+    wireDrill(box);
   }
 
   /* ═══════════ 冲突弹层 ═══════════ */
