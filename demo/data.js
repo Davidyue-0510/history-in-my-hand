@@ -7155,6 +7155,23 @@ window.SANDBOX_DATA = {
      "color": "#8B6BA8",
      "note": "王在晋以经略辽东之身记辽事，沈阳破、辽阳围急、浑河之战明方视角，常存实录不载之异说。",
      "faction": "feng_jiang"
+    },
+    {
+     "id": "mingtongjian",
+     "title": "明通鉴",
+     "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
+     "compiler": "夏燮（清）",
+     "compiled_year": 1872,
+     "stance": "private_synthesis",
+     "stance_label": "私修编年·综合",
+     "distance_label": "成书清同治间，距事约250年，综合实录奏议",
+     "party": "二手综述",
+     "color": "#6C7A89",
+     "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",
+     "faction": null,
+     "availability": "fetched",
+     "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E9%80%9A%E9%91%91/%E5%8D%B7080",
+     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。"
     }
    ],
    "places": [
@@ -10027,6 +10044,54 @@ window.SANDBOX_DATA = {
      },
      "_party": "明·封疆奏议",
      "_faction": "feng_jiang"
+    },
+    {
+     "id": "MT_S01",
+     "subject": "event:sarhu_battle",
+     "predicate": "明军四路部署",
+     "value_text": "杨镐分兵四道：杜松督六万由抚顺出西路，马林督四万出开原会叶赫兵二万（北路），李如柏督六万出鸦鹘关趋清河（南路），刘綎督四万会朝鲜兵二万入宽甸口（东路），期二十一日后分道出塞，会师二道关。",
+     "quote": "镐议分兵四道……杜松，督兵六万由抚顺出西路；马林，督兵四万出北路，由开原会叶赫兵二万；李如柏，督兵六万出南路，田鸦鹘关趋清河；刘綎，督兵四万出东路，会朝鲜兵二万入宽甸口……期以二十一日后分道出塞，会师于二道关。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "万历四十七年二月",
+     "place": "hetuala",
+     "confidence": 0.8,
+     "note": "《明通鉴》记杨镐四路分兵之原部署，可与清太祖实录、明神宗实录对读各路兵力。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_S02",
+     "subject": "event:sarhu_battle",
+     "predicate": "杨镐结局",
+     "value_text": "开原、铁岭相继失陷后，言官交章弹劾杨镐，杨镐下诏狱论死。",
+     "quote": "初，四路总兵之败，御史扬州鹤劾镐失机，上不问。及是开原、铁岭相继失，言官交章劝镐，乃下诏狱论死。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "万历四十七年",
+     "place": "hetuala",
+     "confidence": 0.7,
+     "note": "中枢（浙党方从哲等）先发红旗促战，败则诿过经略——派系诿过的典型。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_S03",
+     "subject": "event:sarhu_battle",
+     "predicate": "战后余波·叶赫",
+     "value_text": "萨尔浒战后，后金以叶赫助兵为由攻灭叶赫（北关）。",
+     "quote": "时叶赫贝勒……大清以萨尔浒之役，叶赫助兵，故定计攻讨……于是叶赫属城俱下。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "万历四十七年八月",
+     "place": "hetuala",
+     "confidence": 0.7,
+     "note": "叶赫为海西女真扈伦四部之一，萨尔浒中助明，战后被灭。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -19508,6 +19573,23 @@ window.SANDBOX_DATA = {
      "faction": "nei_guan",
      "color": "#7A6A53",
      "note": "宦官刘若愚所撰宫禁内臣自述，价值在内部视角；魏忠贤败后作此自辩，亦带立场。记魏忠贤专政、诛东林、宫内规制。"
+    },
+    {
+     "id": "mingtongjian",
+     "title": "明通鉴",
+     "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
+     "compiler": "夏燮（清）",
+     "compiled_year": 1872,
+     "stance": "private_synthesis",
+     "stance_label": "私修编年·综合",
+     "distance_label": "成书清同治间，距事约250年，综合实录奏议",
+     "party": "二手综述",
+     "color": "#6C7A89",
+     "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",
+     "faction": null,
+     "availability": "fetched",
+     "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E9%80%9A%E9%91%91/%E5%8D%B7080",
+     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。"
     }
    ],
    "places": [
@@ -20215,6 +20297,70 @@ window.SANDBOX_DATA = {
      "note": "内臣视角记魏忠贤—客氏—王体乾阉党核心。",
      "_party": "明·内臣文献",
      "_faction": "nei_guan"
+    },
+    {
+     "id": "MT_G01",
+     "subject": "event:guangning_fall",
+     "predicate": "西平堡陷落",
+     "value_text": "天启二年正月，后金克西平堡，为广宁门户失守之始。",
+     "quote": "丁巳，大清兵克西平堡。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "天启二年正月",
+     "place": "guangning",
+     "confidence": 0.85,
+     "note": "西平堡为广宁外围要冲，其陷落直接动摇广宁。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_G02",
+     "subject": "event:guangning_fall",
+     "predicate": "经抚不和与门户",
+     "value_text": "经抚不和：王化贞大言「愿得兵六万一举荡平」，首辅叶向高（其座主）右之，廷臣多右化贞；惟何乔远、江秉谦、周宗建等少数与熊廷弼合。熊廷弼疏言「经抚不和，恃有言官；言官交攻，恃有枢部；枢部佐斗，恃有阁臣」。",
+     "quote": "王化贞屡出师辄引还……为熊廷弼所劾。而化贞奏辨，辄大言「愿得兵六万，一举荡平」……时首辅叶向高当国，化贞座主也，颇右之。廷臣惟太仆少卿何乔远、御史江秉谦、周宗建等与廷弼合，余皆右化贞。廷弼不能节制，复抗疏言：「……经、抚不和，恃有言官；言官交攻，恃有枢部；枢部佐斗，恃有阁臣……」",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "天启二年",
+     "place": "guangning",
+     "confidence": 0.85,
+     "note": "明通鉴所载经抚不和，清楚暴露中枢（阁臣叶向高）、枢部（张鹤鸣）、言官、封疆间的门户对立——熊廷弼孤立，广宁速陷之根。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_G03",
+     "subject": "event:guangning_fall",
+     "predicate": "化贞弃城",
+     "value_text": "广宁败，王化贞弃城走，遇熊廷弼于大凌河；廷弼笑曰「六万众一举荡平，竟如何？」，仍以所将五千人授化贞为殿，尽焚积聚，护难民入关。",
+     "quote": "及化贞弃城走，廷弼遇之大凌河。化贞哭，廷弼微笑曰：「六万众一举荡平，竟如何？」化贞惭，议守宁远及前屯，廷弼曰：「嘻！已晚，惟护难民入关可耳。」乃以已所将五千人授化贞为殿，尽焚积聚……先后入关。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "天启二年正月",
+     "place": "guangning",
+     "confidence": 0.85,
+     "note": "广宁溃败现场：经略与巡抚的最后一幕，亦是封疆大吏互卸责的缩影。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_G04",
+     "subject": "event:guangning_fall",
+     "predicate": "战后追责",
+     "value_text": "广宁败后，逮王化贞，削熊廷弼职回籍听勘。",
+     "quote": "己卯，逮王化贞，削熊廷弼职，回籍听勘。",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "era": "天启二年",
+     "place": "guangning",
+     "confidence": 0.8,
+     "note": "经抚同败而处分各异，熊廷弼终因阉党构陷被诛（见酌中志 ZZ006），王化贞久系后亦死。",
+     "source": "mingtongjian",
+     "_party": "二手综述",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -26683,9 +26829,9 @@ window.SANDBOX_DATA = {
    {
     "scene": "guangning",
     "name": "guangning",
-    "total": 27,
+    "total": 31,
     "layers": {
-     "record": 24,
+     "record": 28,
      "scholarship": 1,
      "gap": 2
     },
@@ -26693,15 +26839,15 @@ window.SANDBOX_DATA = {
      "清方": 15,
      "明方": 10,
      "朝鲜": 1,
-     "综述考订": 1
+     "综述考订": 5
     },
     "faction_counts": {
      "内臣 / 宦官（独立于阉党）": 9
     },
     "event_count": 3,
-    "avg_resonance": 0.444,
+    "avg_resonance": 0.489,
     "best_event": "event:guangning_fall",
-    "best_resonance": 0.667
+    "best_resonance": 0.8
    },
    {
     "scene": "haizhou",
@@ -26832,16 +26978,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "sarhu",
     "name": "萨尔浒",
-    "total": 108,
+    "total": 111,
     "layers": {
-     "record": 84,
+     "record": 87,
      "scholarship": 11,
      "inference": 6,
      "gap": 7
     },
     "party_counts": {
      "清方": 60,
-     "综述考订": 15,
+     "综述考订": 18,
      "朝鲜": 17,
      "明方": 16
     },
@@ -26849,7 +26995,7 @@ window.SANDBOX_DATA = {
      "封疆大吏 / 辽东经略系": 8
     },
     "event_count": 5,
-    "avg_resonance": 0.511,
+    "avg_resonance": 0.514,
     "best_event": "阿布达里岗（东路·刘綎）",
     "best_resonance": 0.667
    },
@@ -28603,18 +28749,18 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "萨尔浒"
     ],
-    "total": 27,
+    "total": 30,
     "gap_count": 2,
     "coverage": "2/3",
     "coverage_frac": 0.667,
-    "divergence": 0.1,
-    "gap_rate": 0.074,
-    "resonance": 0.556,
+    "divergence": 0.087,
+    "gap_rate": 0.067,
+    "resonance": 0.568,
     "party_counts": {
      "明方": 11,
      "清方": 0,
      "朝鲜": 12,
-     "综述考订": 4
+     "综述考订": 7
     },
     "parties": {
      "明方": [
@@ -28838,6 +28984,30 @@ window.SANDBOX_DATA = {
        "source": "modern",
        "layer": "scholarship",
        "scene": "sarhu"
+      },
+      {
+       "id": "MT_S01",
+       "predicate": "明军四路部署",
+       "value_text": "杨镐分兵四道：杜松督六万由抚顺出西路，马林督四万出开原会叶赫兵二万（北路），李如柏督六万出鸦鹘关趋清河（南路），刘綎督四万会朝鲜兵二万入宽甸口（东路），期二十一日后分道出塞，会师二道关。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S02",
+       "predicate": "杨镐结局",
+       "value_text": "开原、铁岭相继失陷后，言官交章弹劾杨镐，杨镐下诏狱论死。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S03",
+       "predicate": "战后余波·叶赫",
+       "value_text": "萨尔浒战后，后金以叶赫助兵为由攻灭叶赫（北关）。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
       }
      ]
     }
@@ -29049,87 +29219,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:guangning_fall",
-    "name": "event:guangning_fall",
-    "scenes": [
-     "guangning"
-    ],
-    "scene_names": [
-     "guangning"
-    ],
-    "total": 6,
-    "gap_count": 2,
-    "coverage": "3/3",
-    "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.333,
-    "resonance": 0.667,
-    "party_counts": {
-     "明方": 2,
-     "清方": 2,
-     "朝鲜": 1,
-     "综述考订": 1
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "G003",
-       "predicate": "陷落年份",
-       "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
-       "source": "ming_xizong_shilu",
-       "layer": "record",
-       "scene": "guangning"
-      },
-      {
-       "id": "ZZ006",
-       "predicate": "熊廷弼之死源于阉党私怨",
-       "value_text": "阉党冯铨因坊间小说《辽东传》'冯布政父子奔逃'情节羞愤，借讲筵奏请诛熊廷弼，非纯军事失败",
-       "source": "zhuozhongzhi",
-       "layer": "record",
-       "scene": "guangning"
-      }
-     ],
-     "清方": [
-      {
-       "id": "G010",
-       "predicate": "明军兵力部署",
-       "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "guangning"
-      },
-      {
-       "id": "G011",
-       "predicate": "经抚责任归属",
-       "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "guangning"
-      }
-     ],
-     "朝鲜": [
-      {
-       "id": "G004",
-       "predicate": "朝鲜视角",
-       "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
-       "source": "chao_xiandai",
-       "layer": "record",
-       "scene": "guangning"
-      }
-     ],
-     "综述考订": [
-      {
-       "id": "G005",
-       "predicate": "败因主流说",
-       "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "guangning"
-      }
-     ]
-    }
-   },
-   {
     "subject": "event:south_retreat",
     "name": "南路溃逃（李如柏）",
     "scenes": [
@@ -29238,6 +29327,119 @@ window.SANDBOX_DATA = {
       }
      ],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:guangning_fall",
+    "name": "event:guangning_fall",
+    "scenes": [
+     "guangning"
+    ],
+    "scene_names": [
+     "guangning"
+    ],
+    "total": 10,
+    "gap_count": 2,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.2,
+    "resonance": 0.8,
+    "party_counts": {
+     "明方": 2,
+     "清方": 2,
+     "朝鲜": 1,
+     "综述考订": 5
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G003",
+       "predicate": "陷落年份",
+       "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "ZZ006",
+       "predicate": "熊廷弼之死源于阉党私怨",
+       "value_text": "阉党冯铨因坊间小说《辽东传》'冯布政父子奔逃'情节羞愤，借讲筵奏请诛熊廷弼，非纯军事失败",
+       "source": "zhuozhongzhi",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "清方": [
+      {
+       "id": "G010",
+       "predicate": "明军兵力部署",
+       "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      },
+      {
+       "id": "G011",
+       "predicate": "经抚责任归属",
+       "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "G004",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "G005",
+       "predicate": "败因主流说",
+       "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "guangning"
+      },
+      {
+       "id": "MT_G01",
+       "predicate": "西平堡陷落",
+       "value_text": "天启二年正月，后金克西平堡，为广宁门户失守之始。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "MT_G02",
+       "predicate": "经抚不和与门户",
+       "value_text": "经抚不和：王化贞大言「愿得兵六万一举荡平」，首辅叶向高（其座主）右之，廷臣多右化贞；惟何乔远、江秉谦、周宗建等少数与熊廷弼合。熊廷弼疏言「经抚不和，恃有言官；言官交攻，恃有枢部；枢部佐斗，恃有阁臣」。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "MT_G03",
+       "predicate": "化贞弃城",
+       "value_text": "广宁败，王化贞弃城走，遇熊廷弼于大凌河；廷弼笑曰「六万众一举荡平，竟如何？」，仍以所将五千人授化贞为殿，尽焚积聚，护难民入关。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "MT_G04",
+       "predicate": "战后追责",
+       "value_text": "广宁败后，逮王化贞，削熊廷弼职回籍听勘。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ]
     }
    },
    {

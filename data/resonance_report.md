@@ -15,14 +15,14 @@
 | fushun | 20 | 3 | **0.415** | event:fushun_fall（0.580） | gap 2 / record 17 / scholarship 1 |
 | fuzhou | 6 | 2 | **0.333** | event:fuzhou_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | gaizhou | 6 | 2 | **0.389** | event:gaizhou_fall（0.444） | gap 2 / record 3 / scholarship 1 |
-| guangning | 27 | 3 | **0.444** | event:guangning_fall（0.667） | gap 2 / record 24 / scholarship 1 |
+| guangning | 31 | 3 | **0.489** | event:guangning_fall（0.800） | gap 2 / record 28 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
 | jinzhou | 7 | 2 | **0.567** | event:jinzhou_songjin（0.800） | gap 2 / record 4 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | 辽阳 | 49 | 2 | **0.401** | 辽阳陷落（1621）（0.470） | gap 3 / inference 1 / record 37 / scholarship 8 |
 | ningyuan | 31 | 4 | **0.319** | event:ningjin_dajie（0.333） | gap 2 / record 28 / scholarship 1 |
-| 萨尔浒 | 108 | 5 | **0.511** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 84 / scholarship 11 |
+| 萨尔浒 | 111 | 5 | **0.514** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 87 / scholarship 11 |
 | shenyang | 48 | 6 | **0.400** | event:shenyang_relief（0.900） | gap 4 / inference 1 / record 41 / scholarship 2 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
@@ -74,12 +74,12 @@
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:gaizhou_fall | gaizhou | **0.444** | 2/3 | 0.00 | 0.33 | 3 | 1 / 2 / 0 / 0 |
 | 辽阳陷落（1621） | 辽阳 | **0.470** | 2/3 | 0.15 | 0.17 | 18 | 8 / 6 / 0 / 4 |
-| 萨尔浒主战场 | 萨尔浒 | **0.556** | 2/3 | 0.10 | 0.07 | 27 | 11 / 0 / 12 / 4 |
+| 萨尔浒主战场 | 萨尔浒 | **0.568** | 2/3 | 0.09 | 0.07 | 30 | 11 / 0 / 12 / 7 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
 | 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
-| event:guangning_fall | guangning | **0.667** | 3/3 | 0.00 | 0.33 | 6 | 2 / 2 / 1 / 1 |
 | 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
+| event:guangning_fall | guangning | **0.800** | 3/3 | 0.00 | 0.20 | 10 | 2 / 2 / 1 / 5 |
 | event:jinzhou_songjin | jinzhou | **0.800** | 3/3 | 0.00 | 0.20 | 5 | 2 / 1 / 1 / 1 |
 | 开铁之战（开原陷落） | 开原 | **0.818** | 3/3 | 0.00 | 0.18 | 11 | 4 / 2 / 1 / 4 |
 | event:shenyang_relief | shenyang | **0.900** | 3/3 | 0.00 | 0.10 | 20 | 11 / 5 / 2 / 2 |

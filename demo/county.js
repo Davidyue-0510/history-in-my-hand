@@ -146,7 +146,8 @@
     control: { on: false, year: 1621, scope: 'county', playing: false },
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
-    personYear: { from: null, to: null }  // 人物轨迹时间窗
+    personYear: { from: null, to: null }, // 人物轨迹时间窗
+    activeFaction: null        // 派系筛选（v0.19）：点击派系面板只看该派系明方断言
   };
 
   function visibleAssertions() {
@@ -721,11 +722,13 @@
       var b = buckets[name];
       var items = D.assertions.filter(function (a) {
         return state.sources.has(a.source) && PARTY_BUCKET[SRC[a.source].party] === name &&
-               a.subject === DOSSIER;
+               a.subject === DOSSIER &&
+               (!state.activeFaction || a._faction === state.activeFaction);
       });
       var gaps = D.assertions.filter(function (a) {
         return a.layer === 'gap' && a.subject === DOSSIER &&
-               PARTY_BUCKET[SRC[a.source].party] === name;
+               PARTY_BUCKET[SRC[a.source].party] === name &&
+               (!state.activeFaction || a._faction === state.activeFaction);
       });
       var n = document.createElement('div');
       n.className = 'pty';
@@ -743,7 +746,7 @@
       if (!items.length && !gaps.length) {
         body += '<div class="pty-row"><span class="pty-k">记载</span>' +
           '<span class="pty-v">当前采信范围内无直接记载。</span></div>';
-      } else if (name === '明方' && (items.concat(gaps)).some(function (a) { return a._faction; })) {
+      } else if (name === '明方' && !state.activeFaction && (items.concat(gaps)).some(function (a) { return a._faction; })) {
         // 派系细分（v0.18）：明方桶内按 source.faction 二次分列，暴露派系间叙述冲突
         body += factionHtml(items, false) + factionHtml(gaps, true);
       } else {
@@ -811,24 +814,85 @@
       if (!fid || !FDEF[fid]) return;
       counts[fid] = (counts[fid] || 0) + 1;
     });
-    var head = '<div style="font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632">明方内部派系细分 ' +
-      '<span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span></div>';
+    var head = document.createElement('div');
+    head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632';
+    head.innerHTML = '明方内部派系细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span>';
+    box.appendChild(head);
+
     var fids = Object.keys(counts);
     if (!fids.length) {
-      box.innerHTML = head + '<div style="color:#918777;font-size:12px">本切片暂无标注派系的明方断言。</div>';
+      var empty = document.createElement('div');
+      empty.style.cssText = 'color:#918777;font-size:12px';
+      empty.textContent = '本切片暂无标注派系的明方断言。';
+      box.appendChild(empty);
       return;
     }
-    var body = '';
+
+    // 清除筛选条（v0.19）：点击派系后出现的"只看此派系"开关
+    if (state.activeFaction) {
+      var clear = document.createElement('div');
+      clear.style.cssText = 'cursor:pointer;font-size:11.5px;color:#B23A48;margin:0 0 6px;padding:3px 7px;' +
+        'background:#fbeaec;border-radius:4px;display:inline-block';
+      clear.textContent = '✕ 清除派系筛选：' + ((FDEF[state.activeFaction] || {}).name || state.activeFaction);
+      clear.addEventListener('click', function (e) {
+        e.stopPropagation();
+        state.activeFaction = null;
+        renderParties(); renderFactions();
+      });
+      box.appendChild(clear);
+    }
+
     fids.sort(function (x, y) { return counts[y] - counts[x]; }).forEach(function (fid) {
       var f = FDEF[fid]; var col = FCOLORS[fid] || '#888';
-      body += '<div style="margin:6px 0;padding-left:8px;border-left:3px solid ' + col + '">' +
-        '<div style="font-size:12.5px"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:' + col + ';margin-right:6px"></span>' +
+      var active = state.activeFaction === fid;
+      var row = document.createElement('div');
+      row.style.cssText = 'margin:6px 0;padding:5px 8px;border-left:3px solid ' + col +
+        ';' + (active ? 'background:#fff6e6;' : 'cursor:pointer;') + 'border-radius:0 4px 4px 0';
+      row.innerHTML = '<div style="font-size:12.5px"><span style="display:inline-block;width:9px;height:9px;' +
+        'border-radius:50%;background:' + col + ';margin-right:6px"></span>' +
         '<span style="color:' + col + ';font-weight:600">' + (f.name || fid) + '</span>' +
-        ' <span style="color:#918777;font-size:11px">' + counts[fid] + ' 条</span></div>' +
-        '<div style="font-size:11.5px;color:#6b6259;margin-top:2px;line-height:1.5">' + (f.interest || '') + '</div>' +
-        '</div>';
+        ' <span style="color:#918777;font-size:11px">' + counts[fid] + ' 条</span>' +
+        (active ? ' <span style="color:#B23A48;font-size:11px">· 筛选中</span>'
+                : ' <span style="color:#918777;font-size:10.5px">· 点击只看此派系</span>') +
+        '</div>' +
+        '<div style="font-size:11.5px;color:#6b6259;margin-top:2px;line-height:1.5">' + (f.interest || '') + '</div>';
+
+      if (!active) {
+        row.addEventListener('click', function () {
+          state.activeFaction = fid;
+          renderParties(); renderFactions();
+        });
+      } else {
+        // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并
+        var facs = D.assertions.filter(function (a) {
+          var src = SRC[a.source]; if (!src || !state.sources.has(a.source)) return false;
+          var b = PARTY_BUCKET[src.party] || src.party;
+          return b === '明方' && a._faction === fid;
+        });
+        var bySubj = {};
+        facs.forEach(function (a) { (bySubj[a.subject] = bySubj[a.subject] || []).push(a); });
+        var exp = document.createElement('div');
+        exp.style.cssText = 'margin-top:6px;border-top:1px dashed #e6dccb;padding-top:6px';
+        Object.keys(bySubj).sort().forEach(function (subj) {
+          var h = document.createElement('div');
+          h.style.cssText = 'font-size:11.5px;color:#5A4632;font-weight:600;margin:5px 0 2px';
+          h.textContent = subjectName(subj);
+          exp.appendChild(h);
+          bySubj[subj].forEach(function (a) {
+            var r = document.createElement('div');
+            r.className = 'pty-row';
+            r.style.fontSize = '11.5px';
+            r.innerHTML = '<span class="pty-k">' + (a.predicate || '') + '</span><span class="pty-v"' +
+              (a.layer === 'gap' ? ' style="color:#B23A48"' : '') + '>' +
+              (a.value_text || '') + (a.layer === 'gap' ? '' : ' <em style="color:#918777">（《' +
+              SRC[a.source].title + '》）</em>') + '</span>';
+            exp.appendChild(r);
+          });
+        });
+        row.appendChild(exp);
+      }
+      box.appendChild(row);
     });
-    box.innerHTML = head + body;
   }
 
   /* ═══════════ 冲突 ═══════════ */
