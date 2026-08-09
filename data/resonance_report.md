@@ -20,10 +20,10 @@
 | jinzhou | 7 | 2 | **0.567** | event:jinzhou_songjin（0.800） | gap 2 / record 4 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
-| 辽阳 | 49 | 2 | **0.401** | 辽阳陷落（1621）（0.470） | gap 3 / inference 1 / record 37 / scholarship 8 |
+| 辽阳 | 53 | 2 | **0.412** | 辽阳陷落（1621）（0.491） | gap 3 / inference 1 / record 41 / scholarship 8 |
 | ningyuan | 31 | 4 | **0.319** | event:ningjin_dajie（0.333） | gap 2 / record 28 / scholarship 1 |
 | 萨尔浒 | 111 | 5 | **0.514** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 87 / scholarship 11 |
-| shenyang | 48 | 6 | **0.400** | event:shenyang_relief（0.900） | gap 4 / inference 1 / record 41 / scholarship 2 |
+| shenyang | 50 | 6 | **0.401** | event:shenyang_relief（0.909） | gap 4 / inference 1 / record 43 / scholarship 2 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
 
@@ -56,7 +56,7 @@
 | event:guangning_zhen | guangning | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:haizhou_founded | haizhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:haizhou_mashi | haizhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
-| 浑河之战（1621） | 辽阳 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| 浑河之战（1621） | 辽阳 | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 1 / 0 / 2 |
 | event:jinzhou_founded | jinzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_fall | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_founded | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
@@ -73,7 +73,7 @@
 | event:yehe_fall | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:gaizhou_fall | gaizhou | **0.444** | 2/3 | 0.00 | 0.33 | 3 | 1 / 2 / 0 / 0 |
-| 辽阳陷落（1621） | 辽阳 | **0.470** | 2/3 | 0.15 | 0.17 | 18 | 8 / 6 / 0 / 4 |
+| 辽阳陷落（1621） | 辽阳 | **0.491** | 2/3 | 0.13 | 0.15 | 20 | 8 / 6 / 0 / 6 |
 | 萨尔浒主战场 | 萨尔浒 | **0.568** | 2/3 | 0.09 | 0.07 | 30 | 11 / 0 / 12 / 7 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
 | 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
@@ -82,7 +82,7 @@
 | event:guangning_fall | guangning | **0.800** | 3/3 | 0.00 | 0.20 | 10 | 2 / 2 / 1 / 5 |
 | event:jinzhou_songjin | jinzhou | **0.800** | 3/3 | 0.00 | 0.20 | 5 | 2 / 1 / 1 / 1 |
 | 开铁之战（开原陷落） | 开原 | **0.818** | 3/3 | 0.00 | 0.18 | 11 | 4 / 2 / 1 / 4 |
-| event:shenyang_relief | shenyang | **0.900** | 3/3 | 0.00 | 0.10 | 20 | 11 / 5 / 2 / 2 |
+| event:shenyang_relief | shenyang | **0.909** | 3/3 | 0.00 | 0.09 | 22 | 11 / 5 / 2 / 4 |
 
 ## 解读
 
