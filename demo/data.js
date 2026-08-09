@@ -7623,7 +7623,7 @@ window.SANDBOX_DATA = {
    "primary_place": "caizhou",
    "vocab_pack": "tang",
    "terrain_grid": "tang",
-   "terrain_off_grid": true,
+   "terrain_off_grid": false,
    "counts": {
     "src": 4,
     "place": 9,

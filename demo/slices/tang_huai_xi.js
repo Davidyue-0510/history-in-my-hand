@@ -25,8 +25,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "person:pei_du": "裴度"
   },
   "page": "county.html?scene=tang_huai_xi",
-  "key": "tang_huai_xi",
-  "terrain_off_grid": true
+  "key": "tang_huai_xi"
  },
  "sources": [
   {
@@ -87,7 +86,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "淮西节度使治所",
    "lon": 114.35,
    "lat": 33.53,
-   "geo_note": "唐淮西节度使治所，今河南汝南"
+   "geo_note": "唐淮西节度使治所，今河南汝南",
+   "elev": 43
   },
   {
    "id": "tangzhou",
@@ -97,7 +97,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "李愬出兵基地",
    "lon": 113.31,
    "lat": 32.73,
-   "geo_note": "今河南泌阳"
+   "geo_note": "今河南泌阳",
+   "elev": 158
   },
   {
    "id": "wenchengzhai",
@@ -107,7 +108,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "蔡州西北要栅，李愬雪夜自此发",
    "lon": 113.97,
    "lat": 33.15,
-   "geo_note": "蔡州西北要栅，今河南遂平"
+   "geo_note": "蔡州西北要栅，今河南遂平",
+   "elev": 64
   },
   {
    "id": "huiqu",
@@ -117,7 +119,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "董重质所守，蔡州北屏障",
    "lon": 114.03,
    "lat": 33.58,
-   "geo_note": "蔡州北洄曲，今河南漯河沙河一带"
+   "geo_note": "蔡州北洄曲，今河南漯河沙河一带",
+   "elev": 63
   },
   {
    "id": "yancheng",
@@ -127,7 +130,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "李光颜拒守",
    "lon": 113.97,
    "lat": 33.87,
-   "geo_note": "今河南漯河郾城"
+   "geo_note": "今河南漯河郾城",
+   "elev": 56
   },
   {
    "id": "shenzhou",
@@ -137,7 +141,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "淮西属州",
    "lon": 114.08,
    "lat": 32.15,
-   "geo_note": "今河南信阳"
+   "geo_note": "今河南信阳",
+   "elev": 91
   },
   {
    "id": "huai_xi",
@@ -147,7 +152,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "方镇，治蔡州",
    "lon": 114.35,
    "lat": 33.53,
-   "geo_note": "方镇名，治蔡州"
+   "geo_note": "方镇名，治蔡州",
+   "elev": 43
   },
   {
    "id": "changan",
@@ -157,7 +163,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "唐都",
    "lon": 108.95,
    "lat": 34.27,
-   "geo_note": "唐都，今西安"
+   "geo_note": "唐都，今西安",
+   "elev": 411
   },
   {
    "id": "luoyang",
@@ -167,7 +174,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "note": "东都",
    "lon": 112.45,
    "lat": 34.62,
-   "geo_note": "唐东都，今洛阳"
+   "geo_note": "唐东都，今洛阳",
+   "elev": 151
   }
  ],
  "persons": [
