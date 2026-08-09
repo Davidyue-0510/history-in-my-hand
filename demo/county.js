@@ -720,27 +720,49 @@
 
   function syncTimeline(year) {
     state.control.year = year;
+    syncStateT();
     if (state.control.on && window.ControlLayer && ControlLayer.isReady()) {
       ControlLayer.draw(state.control.year, state.control.scope);
       renderControlLegend();
     }
     renderUnifiedTimeline();
-    renderEvents(); // 左侧事件列表同步高亮
+    renderEvents();
+  }
+
+  // 将 state.t 同步到当前 control.year（事件列表高亮 + 页签 都走年份匹配）
+  function syncStateT() {
+    var evs = D.events || []; if (!evs.length) return;
+    var yr = state.control.year;
+    for (var i = 0; i < evs.length; i++) {
+      if (evs[i].year === yr) { state.t = i; return; }
+    }
+    // 没有精确匹配 → 选年份最近的事件
+    var best = 0, bd = 1e9;
+    for (i = 0; i < evs.length; i++) {
+      var d = Math.abs((evs[i].year || 0) - yr);
+      if (d < bd) { bd = d; best = i; }
+    }
+    state.t = best;
   }
   function renderEvents() {
     var lead = document.getElementById('evLead');
     lead.innerHTML = CFG.lead || META.lead ||
       '本切片为辽东走廊的县级 LOD 视图：建置沿革与关键战事并列，点时间轴或左栏跳转。';
     var box = document.getElementById('eventsPane'); box.innerHTML = '';
+    var curYr = state.control.year;
     D.events.forEach(function (ev, i) {
       var n = document.createElement('div');
-      n.className = 'ev' + (i === state.t ? ' sel' : '');
+      var isSel = (ev.year != null && ev.year === curYr);
+      n.className = 'ev' + (isSel ? ' sel' : '');
       n.innerHTML = '<div class="ev-when"><div class="era">' + ev.era + '</div>' +
         '<div class="yr">' + (ev.year || '') + '</div></div>' +
         '<div class="ev-body"><div class="ev-title">' + ev.title +
         '<span class="ev-kind">' + ev.kind + '</span></div>' +
         '<div class="ev-text">' + ev.text + '</div></div>';
-      n.addEventListener('click', function () { state.t = i; refresh(); });
+      n.addEventListener('click', function () {
+        state.control.year = ev.year || state.control.year;
+        refresh();
+      });
       box.appendChild(n);
     });
   }
@@ -1625,6 +1647,7 @@
 
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
+    syncStateT();  // v0.27：事件高亮跟随当前 time year
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
     renderSiblings(); renderUnifiedTimeline(); drawDynamic(); drawTerrain();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
@@ -1643,6 +1666,13 @@
       sceneData: D,                    // v0.24：场景自带 control.json 时用它；辽东切片 fallback 全局
       partyColors: VOCAB.party_colors  // v0.24c：控制层配色单一真值（语境包）
     });
+  }
+  // 初始化年份：有控制层数据时取其下界，否则取首个事件年
+  if (!IS_ABSTRACT && window.ControlLayer && ControlLayer.isReady()) {
+    var cy = ControlLayer.years();
+    state.control.year = cy[0];
+  } else if (D.events && D.events.length) {
+    state.control.year = D.events[0].year || 1621;
   }
   applyView(false); wireControl(); refresh();
 })();
