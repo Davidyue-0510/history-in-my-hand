@@ -26,6 +26,7 @@ from collections import defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "demo", "data.js")
+SLICES_DIR = os.path.join(ROOT, "demo", "slices")  # 地基二：每切片一个文件
 REGISTRY = os.path.join(DATA, "scenes.json")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -275,6 +276,69 @@ def _elev_or_none(terr, lon, lat):
     return round(terr.at(lon, lat))
 
 
+# ────────────────────────── 切片分片（v0.22 地基二）──────────────────────────
+# 在此之前，全部切片被塞进单一 784KB 的 demo/data.js。覆盖全国时单文件会膨胀到
+# 数十 MB、且每次改动都重写整份。现在每切片落地为 demo/slices/<id>.js，壳只留
+# 共享数据 + 轻量 scenes_meta + slice_index。壳在解析期同步加载全部切片组装
+# SD.scenes，保持既有前端（county.js/app.js/hub.js）零改动；未来要按需异步，
+# 把壳尾部的同步 document.write 换成 data_loader.js 的 ensureScene 即可。
+
+def _clean_slices():
+    """删掉上一轮残留的切片文件，避免被删场景留下孤儿 .js。"""
+    if not os.path.isdir(SLICES_DIR):
+        return
+    for fn in os.listdir(SLICES_DIR):
+        if fn.endswith(".js"):
+            try:
+                os.remove(os.path.join(SLICES_DIR, fn))
+            except OSError:
+                pass
+
+
+def write_slice(key, bundle):
+    os.makedirs(SLICES_DIR, exist_ok=True)
+    path = os.path.join(SLICES_DIR, key + ".js")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("// 本文件由 tools/build.py 自动生成（切片 %s），请勿手工编辑。\n" % key)
+        f.write("// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES[\"%s\"]。\n" % key)
+        f.write("(window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});\n")
+        f.write("window.SANDBOX_SLICES[\"%s\"] = " % key)
+        json.dump(bundle, f, ensure_ascii=False, indent=1)
+        f.write(";\n")
+
+
+def _slice_meta(bundle):
+    """枢纽卡片 / 懒加载所需的最小字段，避免为列表加载完整 bundle。"""
+    m = bundle.get("meta", {})
+    return {
+        "key": m.get("key"),
+        "title": m.get("title"),
+        "dossier_label": m.get("dossier_label"),
+        "subtitle": m.get("subtitle"),
+        "kind": m.get("kind"),
+        "region": m.get("region"),
+        "page": m.get("page"),
+        "primary_place": m.get("primary_place"),
+        "vocab_pack": m.get("vocab_pack"),
+        "terrain_grid": m.get("terrain_grid"),
+        "terrain_off_grid": m.get("terrain_off_grid", False),
+        "counts": {
+            "src": len(bundle.get("sources", [])),
+            "place": len(bundle.get("places", [])),
+            "person": len(bundle.get("persons", [])),
+            "assert": len(bundle.get("assertions", [])),
+            "conflict": len(bundle.get("conflicts", [])),
+            "gap": len(bundle.get("gaps", [])),
+            "record": sum(1 for a in bundle.get("assertions", [])
+                          if a.get("layer") == "record"),
+            "scholarship": sum(1 for a in bundle.get("assertions", [])
+                               if a.get("layer") == "scholarship"),
+            "inference": sum(1 for a in bundle.get("assertions", [])
+                             if a.get("layer") == "inference"),
+        },
+    }
+
+
 def main():
     reg = load_registry()
     resolved = reg["_resolved"]
@@ -312,7 +376,11 @@ def main():
     sd["wall"] = sarhu_places["wall"]
 
     scenes = {}
+    scenes_meta = {}
+    slice_index = {}
+    _clean_slices()
     for sc in resolved:
+        key = sc["_key"]
         bundle = build_scene(sc)
         # 每切片地形：默认用共享网格；场景可声明 terrain_grid 指向别的已拉取网格。
         # 声明了未拉取/部分网格 → 诚实标 OFF_GRID，绝不给越界插值。
@@ -328,7 +396,11 @@ def main():
                     p["elev"] = ev
                     if ev is None:
                         p["off_grid"] = True
-        scenes[sc["_key"]] = bundle
+        # 地基二：每切片落地为独立文件（壳不再内嵌完整 scenes 字典）
+        write_slice(key, bundle)
+        slice_index[key] = "slices/%s.js" % key
+        scenes_meta[key] = _slice_meta(bundle)
+        scenes[key] = bundle  # 仅留内存引用，供下方 route_terrain / 统计使用
 
     # 萨尔浒行军地形代价（只有带 routes 的切片才有）
     import terrain_model
@@ -347,7 +419,10 @@ def main():
             terrain_model.analyze_route(scene_terr, r, pmap) for r in bundle["routes"]
         ]
 
-    sd["scenes"] = scenes
+    # 地基二：壳不再内嵌完整 scenes 字典，只留轻量索引 + 切片文件清单。
+    # 完整 bundles 由 demo/slices/<id>.js 加载（见本文件尾部同步组装 bootstrap）。
+    sd["scenes_meta"] = scenes_meta
+    sd["slice_index"] = slice_index
 
     # 走廊路线（跨切片，读 data/corridors.json）
     corr_path = os.path.join(DATA, "corridors.json")
@@ -422,9 +497,23 @@ def main():
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
         f.write("// 权威数据源：data/scenes.json 注册的 %d 个切片\n" % len(resolved))
+        f.write("// v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，\n")
+        f.write("// 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），\n")
+        f.write("// 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。\n")
         f.write("window.SANDBOX_DATA = ")
         json.dump(sd, f, ensure_ascii=False, indent=1)
         f.write(";\n")
+        # 同步组装 SD.scenes：解析期 document.write 切片脚本，按顺序同步执行，
+        # 保证 SD.scenes 在本文件执行完毕前即完整（county.js/app.js/hub.js 不改）。
+        # 注意：组装语句本身也要 document.write 出去，确保它在所有切片脚本之后执行。
+        f.write("\nwindow.SANDBOX_SLICES = window.SANDBOX_SLICES || {};\n")
+        f.write("(function () {\n")
+        f.write("  var order = (window.SANDBOX_DATA.scene_order) || [];\n")
+        f.write("  for (var i = 0; i < order.length; i++) {\n")
+        f.write("    document.write('<script src=\"slices/' + order[i] + '.js\"><\\/script>');\n")
+        f.write("  }\n")
+        f.write("  document.write('<script>window.SANDBOX_DATA.scenes = window.SANDBOX_SLICES;<\\/script>');\n")
+        f.write("})();\n")
 
     size_kb = os.path.getsize(OUT) / 1024.0
     print("已生成 %s  (%.0f KB)" % (OUT, size_kb))
