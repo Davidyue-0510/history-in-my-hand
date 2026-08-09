@@ -699,6 +699,9 @@
   var VOCAB = (D && D.vocab) || (SD && SD.vocab) || {};
   var PARTY_BUCKET = VOCAB.party_bucket || {};
   var PARTY_ORDER = VOCAB.parties || ['明方', '清方', '朝鲜', '综述考订'];
+  // 派系维度（v0.18）：明朝内利益集团的二次立场，颜色与名称同出 vocab.json 单一真值。
+  var FCOLORS = VOCAB.faction_colors || {};
+  var FDEF = VOCAB.factions || {};
   function renderParties() {
     var box = document.getElementById('partiesPane'); box.innerHTML = '';
     var buckets = {};
@@ -740,20 +743,92 @@
       if (!items.length && !gaps.length) {
         body += '<div class="pty-row"><span class="pty-k">记载</span>' +
           '<span class="pty-v">当前采信范围内无直接记载。</span></div>';
+      } else if (name === '明方' && (items.concat(gaps)).some(function (a) { return a._faction; })) {
+        // 派系细分（v0.18）：明方桶内按 source.faction 二次分列，暴露派系间叙述冲突
+        body += factionHtml(items, false) + factionHtml(gaps, true);
+      } else {
+        items.forEach(function (a) {
+          body += '<div class="pty-row"><span class="pty-k">' + a.predicate + '</span>' +
+            '<span class="pty-v">' + a.value_text + ' <em style="color:#918777">（《' +
+            SRC[a.source].title + '》）</em></span></div>';
+        });
+        gaps.forEach(function (a) {
+          body += '<div class="pty-row"><span class="pty-k">缺口</span>' +
+            '<span class="pty-v" style="color:#B23A48">' + a.value_text + '</span></div>';
+        });
       }
-      items.forEach(function (a) {
-        body += '<div class="pty-row"><span class="pty-k">' + a.predicate + '</span>' +
-          '<span class="pty-v">' + a.value_text + ' <em style="color:#918777">（《' +
-          SRC[a.source].title + '》）</em></span></div>';
-      });
-      gaps.forEach(function (a) {
-        body += '<div class="pty-row"><span class="pty-k">缺口</span>' +
-          '<span class="pty-v" style="color:#B23A48">' + a.value_text + '</span></div>';
-      });
       body += '</div>';
       n.innerHTML = head + body;
       box.appendChild(n);
     });
+  }
+
+  /* 派系细分渲染助手：把一组断言按 _faction 分组成带颜色标签的子块。 */
+  function factionHtml(list, isGap) {
+    if (!list.length) return '';
+    var groups = {};
+    list.forEach(function (a) {
+      var fid = a._faction || '__none__';
+      (groups[fid] = groups[fid] || []).push(a);
+    });
+    var fids = Object.keys(groups).sort(function (x, y) {
+      if (x === '__none__') return 1;
+      if (y === '__none__') return -1;
+      return 0;
+    });
+    var html = '';
+    fids.forEach(function (fid) {
+      var rows = groups[fid];
+      if (fid !== '__none__') {
+        var col = FCOLORS[fid] || '#888';
+        var fname = (FDEF[fid] && FDEF[fid].name) || fid;
+        html += '<div style="border-left:3px solid ' + col + ';color:' + col +
+          ';font-size:12px;font-weight:600;margin:6px 0 2px;padding-left:6px">' + fname + '</div>';
+      } else if (fids.length > 1) {
+        html += '<div style="color:#918777;font-size:11.5px;margin:4px 0 2px;padding-left:6px">未分派系（明方其他来源）</div>';
+      }
+      rows.forEach(function (a) {
+        html += '<div class="pty-row"><span class="pty-k">' + a.predicate + '</span>' +
+          '<span class="pty-v"' + (isGap ? ' style="color:#B23A48"' : '') + '>' +
+          a.value_text + (isGap ? '' : ' <em style="color:#918777">（《' +
+          SRC[a.source].title + '》）</em>') + '</span></div>';
+      });
+    });
+    return html;
+  }
+
+  /* ═══════════ 明内部派系细分（v0.18，场景级常驻面板）══════════ */
+  /* 明朝内部各利益集团（东林/阉党/浙党/盐商/内臣/封疆…）因自身利害润色夸张记载。
+     本面板在「明方」桶之外，按 faction 二次聚合，让派系立场冲突在界面上直接可见。 */
+  function renderFactions() {
+    var box = document.getElementById('factionPane'); if (!box) return; box.innerHTML = '';
+    var counts = {};
+    D.assertions.forEach(function (a) {
+      var src = SRC[a.source]; if (!src) return;
+      var b = PARTY_BUCKET[src.party] || src.party;
+      if (b !== '明方') return;
+      var fid = a._faction;
+      if (!fid || !FDEF[fid]) return;
+      counts[fid] = (counts[fid] || 0) + 1;
+    });
+    var head = '<div style="font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632">明方内部派系细分 ' +
+      '<span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span></div>';
+    var fids = Object.keys(counts);
+    if (!fids.length) {
+      box.innerHTML = head + '<div style="color:#918777;font-size:12px">本切片暂无标注派系的明方断言。</div>';
+      return;
+    }
+    var body = '';
+    fids.sort(function (x, y) { return counts[y] - counts[x]; }).forEach(function (fid) {
+      var f = FDEF[fid]; var col = FCOLORS[fid] || '#888';
+      body += '<div style="margin:6px 0;padding-left:8px;border-left:3px solid ' + col + '">' +
+        '<div style="font-size:12.5px"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:' + col + ';margin-right:6px"></span>' +
+        '<span style="color:' + col + ';font-weight:600">' + (f.name || fid) + '</span>' +
+        ' <span style="color:#918777;font-size:11px">' + counts[fid] + ' 条</span></div>' +
+        '<div style="font-size:11.5px;color:#6b6259;margin-top:2px;line-height:1.5">' + (f.interest || '') + '</div>' +
+        '</div>';
+    });
+    box.innerHTML = head + body;
   }
 
   /* ═══════════ 冲突 ═══════════ */
@@ -1315,7 +1390,7 @@
   function refresh() {
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
     renderSiblings(); renderTimeline(); drawDynamic(); drawTerrain();
-    renderEvents(); renderParties(); renderConflicts(); renderLeads(); renderInspect();
+    renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
   }

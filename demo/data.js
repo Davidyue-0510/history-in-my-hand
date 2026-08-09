@@ -245,6 +245,17 @@ window.SANDBOX_DATA = {
     "bias_note": "前线主官文集/奏议天然护己：杨镐讳败、熊廷弼攻王化贞、袁崇焕夸大恢复、毛文龙虚报兵额——皆为立场来源。其价值在『当事人自述』，但须与敌对方、第三方对读。"
    }
   },
+  "faction_colors": {
+   "donglin": "#1B7A5A",
+   "eunuch": "#7B241C",
+   "zhe_dang": "#B9770E",
+   "chu_dang": "#CA6F1E",
+   "qi_dang": "#B7950B",
+   "xuan_kun": "#A04000",
+   "yan_shang": "#2874A6",
+   "nei_guan": "#5D6D7E",
+   "feng_jiang": "#C0392B"
+  },
   "layers": [
    "record",
    "scholarship",
