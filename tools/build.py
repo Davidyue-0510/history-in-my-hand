@@ -144,6 +144,9 @@ def build_scene(sc):
     for a in assertions:
         s = src_by_id.get(a["source"])
         a["_party"] = s["party"] if s else "unknown"
+        # faction（派系）是比 party 更细的立场维度；明朝内各利益集团会因自身
+        # 利害润色/夸张记载。暴露到 bundle 供前端与共振在「明方」桶内二次拆分。
+        a["_faction"] = s.get("faction") if s else None
 
     # 人物影响力指标：统计引用该人物的 record/scholarship 断言数。
     # 构建期算好缓存进 bundle.persons，前端据此把"关联人物"按史料记载量定大小。

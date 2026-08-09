@@ -5,6 +5,8 @@
 > 不手动贴标签——这是本项目与所有历史可视化产品的分界线。
 
 > v0.4 起本报告自动扫描 `data/*/assertions.jsonl`，新切片落盘即入表。
+> v0.17 起新增「明内部派系细分」：明朝内各利益集团（东林/阉党/浙党/盐商/内臣/封疆）
+> 会因自身利害润色夸张记载，立场派生在 `party`（宏观桶）之外再按 `faction`（派系）二次拆分。
 
 ## 切片汇总
 
@@ -13,7 +15,7 @@
 | fushun | 20 | 3 | **0.415** | event:fushun_fall（0.580） | gap 2 / record 17 / scholarship 1 |
 | fuzhou | 6 | 2 | **0.333** | event:fuzhou_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | gaizhou | 6 | 2 | **0.389** | event:gaizhou_fall（0.444） | gap 2 / record 3 / scholarship 1 |
-| guangning | 18 | 3 | **0.422** | event:guangning_fall（0.600） | gap 2 / record 15 / scholarship 1 |
+| guangning | 27 | 3 | **0.444** | event:guangning_fall（0.667） | gap 2 / record 24 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
 | jinzhou | 7 | 2 | **0.567** | event:jinzhou_songjin（0.800） | gap 2 / record 4 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
@@ -24,6 +26,15 @@
 | shenyang | 48 | 6 | **0.400** | event:shenyang_relief（0.900） | gap 4 / inference 1 / record 41 / scholarship 2 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
+
+## 明内部派系细分（faction · 明朝利益集团立场）
+
+> 下列统计仅含 `source.faction` 非空的断言——即明朝内部各利益集团。同一事件若不同派系记载冲突，此处可见叙述对立。
+
+| 派系 | 断言数 | 涉及场景 | 代表来源 |
+|---|---|---|---|
+| 封疆大吏 / 辽东经略系 | 30 | 辽阳、萨尔浒、shenyang | sanchaoliao_shilu |
+| 内臣 / 宦官（独立于阉党） | 9 | guangning | zhuozhongzhi |
 
 ## 事件共振表（按共振度升序：最不共振的最值得补）
 
@@ -65,8 +76,8 @@
 | 辽阳陷落（1621） | 辽阳 | **0.470** | 2/3 | 0.15 | 0.17 | 18 | 8 / 6 / 0 / 4 |
 | 萨尔浒主战场 | 萨尔浒 | **0.556** | 2/3 | 0.10 | 0.07 | 27 | 11 / 0 / 12 / 4 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
-| event:guangning_fall | guangning | **0.600** | 3/3 | 0.00 | 0.40 | 5 | 1 / 2 / 1 / 1 |
 | 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
+| event:guangning_fall | guangning | **0.667** | 3/3 | 0.00 | 0.33 | 6 | 2 / 2 / 1 / 1 |
 | 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
 | event:jinzhou_songjin | jinzhou | **0.800** | 3/3 | 0.00 | 0.20 | 5 | 2 / 1 / 1 / 1 |
@@ -79,3 +90,4 @@
 - **低共振**（≈0.0）：覆盖不足、分歧剧烈、或充满缺口 → 这就是"补这条史料能撬动多大"的最直白答案。
 - 萨尔浒 `event:sarhu` 与开铁 `event:kaifa` 已通过 K026 / K026a–d 完成三方闭合。
 - 新入表的铁岭 / 辽阳切片当前共振偏低，**这不是 bug，是待补清单**：缺的主要是朝鲜方视角与清方细节，见各切片 `layer: gap` 断言。
+- **派系维度（v0.17）**：`明史` 已归「清方」桶（清修），真正明方声音由明人自著（三朝辽事实录等）与朝鲜（光海君日记）承担；明朝内部东林/阉党/浙党/盐商/内臣/封疆各集团又因自身利害润色夸张，详见上方「明内部派系细分」与 `data/bibliography.json`。

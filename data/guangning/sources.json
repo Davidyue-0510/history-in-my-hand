@@ -1,48 +1,62 @@
 {
- "sources": [
-  {
-   "id": "mingshi",
-   "title": "明史",
-   "party": "清修·明臣",
-   "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
-   "color": "#8C6239",
-   "compiler": "张廷玉等",
-   "period": "清修",
-   "stance": "official_later_dynasty"
-  },
-  {
-   "id": "ming_xizong_shilu",
-   "title": "明熹宗实录",
-   "party": "明廷官方",
-   "stance_label": "本朝官修·当代",
-   "distance_label": "成书约 1630，距天启事约数年",
-   "color": "#A0473A",
-   "compiler": "明史馆",
-   "period": "天启朝",
-   "stance": "official_contemporary"
-  },
-  {
-   "id": "chao_xiandai",
-   "title": "李朝实录·宣祖/光海日记",
-   "party": "朝鲜官方",
-   "stance_label": "第三国当代官修",
-   "distance_label": "成书当代至 100 年内，与明清并行",
-   "color": "#2E5C8F",
-   "compiler": "李朝史官",
-   "period": "万历",
-   "stance": "official_contemporary"
-  },
-  {
-   "id": "modern",
-   "title": "现代史学综述",
-   "party": "学界",
-   "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
-   "color": "#2E7D8F",
-   "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
-  }
- ]
+  "sources": [
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "party": "清修·明臣",
+      "stance_label": "后朝官修",
+      "distance_label": "成书 1739，距事件约 120 年",
+      "color": "#8C6239",
+      "compiler": "张廷玉等",
+      "period": "清修",
+      "stance": "official_later_dynasty"
+    },
+    {
+      "id": "ming_xizong_shilu",
+      "title": "明熹宗实录",
+      "party": "明廷官方",
+      "stance_label": "本朝官修·当代",
+      "distance_label": "成书约 1630，距天启事约数年",
+      "color": "#A0473A",
+      "compiler": "明史馆",
+      "period": "天启朝",
+      "stance": "official_contemporary"
+    },
+    {
+      "id": "chao_xiandai",
+      "title": "李朝实录·宣祖/光海日记",
+      "party": "朝鲜官方",
+      "stance_label": "第三国当代官修",
+      "distance_label": "成书当代至 100 年内，与明清并行",
+      "color": "#2E5C8F",
+      "compiler": "李朝史官",
+      "period": "万历",
+      "stance": "official_contemporary"
+    },
+    {
+      "id": "modern",
+      "title": "现代史学综述",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "距事件 300 年以上，综合诸家",
+      "color": "#2E7D8F",
+      "compiler": "多家学术著作",
+      "period": "现代",
+      "stance": "scholarship"
+    },
+    {
+      "id": "zhuozhongzhi",
+      "title": "酌中志",
+      "juan": "卷上·先监张公纪略 / 忧危竑议 / 缢略（魏忠贤专政、诛东林、熊廷弼之死）",
+      "compiler": "刘若愚（内臣）",
+      "compiled_year": 1640,
+      "stance": "third_party_internal",
+      "stance_label": "内臣自述·半独立",
+      "distance_label": "魏忠贤败后追记，距事约 15 年",
+      "party": "明·内臣文献",
+      "faction": "nei_guan",
+      "color": "#7A6A53",
+      "note": "宦官刘若愚所撰宫禁内臣自述，价值在内部视角；魏忠贤败后作此自辩，亦带立场。记魏忠贤专政、诛东林、宫内规制。"
+    }
+  ]
 }

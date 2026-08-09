@@ -22,7 +22,18 @@
       "shenyang",
       "tieling",
       "yehe"
-    ]
+    ],
+    "factions": {
+      "donglin": "东林党（清流）",
+      "eunuch": "阉党（魏忠贤集团）",
+      "zhe_dang": "浙党",
+      "chu_dang": "楚党",
+      "qi_dang": "齐党",
+      "xuan_kun": "宣党 / 昆党",
+      "yan_shang": "盐商 / 盐政利益",
+      "nei_guan": "内臣 / 宦官（独立于阉党）",
+      "feng_jiang": "封疆大吏 / 辽东经略系"
+    }
   },
   "scene_summary": [
     {
@@ -39,6 +50,7 @@
         "朝鲜": 1,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 3,
       "avg_resonance": 0.415,
       "best_event": "event:fushun_fall",
@@ -58,6 +70,7 @@
         "朝鲜": 2,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 2,
       "avg_resonance": 0.333,
       "best_event": "event:fuzhou_fall",
@@ -77,6 +90,7 @@
         "明方": 1,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 2,
       "avg_resonance": 0.389,
       "best_event": "event:gaizhou_fall",
@@ -85,22 +99,25 @@
     {
       "scene": "guangning",
       "name": "guangning",
-      "total": 18,
+      "total": 27,
       "layers": {
-        "record": 15,
+        "record": 24,
         "scholarship": 1,
         "gap": 2
       },
       "party_counts": {
         "清方": 15,
-        "明方": 1,
+        "明方": 10,
         "朝鲜": 1,
         "综述考订": 1
       },
+      "faction_counts": {
+        "内臣 / 宦官（独立于阉党）": 9
+      },
       "event_count": 3,
-      "avg_resonance": 0.422,
+      "avg_resonance": 0.444,
       "best_event": "event:guangning_fall",
-      "best_resonance": 0.6
+      "best_resonance": 0.667
     },
     {
       "scene": "haizhou",
@@ -116,6 +133,7 @@
         "明方": 1,
         "朝鲜": 1
       },
+      "faction_counts": {},
       "event_count": 3,
       "avg_resonance": 0.472,
       "best_event": "event:haizhou_fall",
@@ -136,6 +154,7 @@
         "朝鲜": 1,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 2,
       "avg_resonance": 0.567,
       "best_event": "event:jinzhou_songjin",
@@ -155,6 +174,7 @@
         "朝鲜": 2,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 3,
       "avg_resonance": 0.278,
       "best_event": "event:jinzhouwei_fall",
@@ -176,6 +196,7 @@
         "清方": 8,
         "朝鲜": 4
       },
+      "faction_counts": {},
       "event_count": 3,
       "avg_resonance": 0.495,
       "best_event": "开铁之战（开原陷落）",
@@ -196,6 +217,9 @@
         "明方": 12,
         "综述考订": 10
       },
+      "faction_counts": {
+        "封疆大吏 / 辽东经略系": 10
+      },
       "event_count": 2,
       "avg_resonance": 0.401,
       "best_event": "辽阳陷落（1621）",
@@ -215,6 +239,7 @@
         "明方": 3,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 4,
       "avg_resonance": 0.319,
       "best_event": "event:ningjin_dajie",
@@ -235,6 +260,9 @@
         "综述考订": 15,
         "朝鲜": 17,
         "明方": 16
+      },
+      "faction_counts": {
+        "封疆大吏 / 辽东经略系": 8
       },
       "event_count": 5,
       "avg_resonance": 0.511,
@@ -257,6 +285,9 @@
         "朝鲜": 3,
         "综述考订": 2
       },
+      "faction_counts": {
+        "封疆大吏 / 辽东经略系": 12
+      },
       "event_count": 6,
       "avg_resonance": 0.4,
       "best_event": "event:shenyang_relief",
@@ -276,6 +307,7 @@
         "清方": 22,
         "综述考订": 7
       },
+      "faction_counts": {},
       "event_count": 2,
       "avg_resonance": 0.173,
       "best_event": "铁岭陷落（1619）",
@@ -294,12 +326,37 @@
         "清方": 6,
         "综述考订": 1
       },
+      "faction_counts": {},
       "event_count": 3,
       "avg_resonance": 0.278,
       "best_event": "event:yehe_fall",
       "best_resonance": 0.333
     }
   ],
+  "faction_summary": {
+    "feng_jiang": {
+      "name": "封疆大吏 / 辽东经略系",
+      "total": 30,
+      "scenes": [
+        "liaoyang",
+        "sarhu",
+        "shenyang"
+      ],
+      "sources": [
+        "sanchaoliao_shilu"
+      ]
+    },
+    "nei_guan": {
+      "name": "内臣 / 宦官（独立于阉党）",
+      "total": 9,
+      "scenes": [
+        "guangning"
+      ],
+      "sources": [
+        "zhuozhongzhi"
+      ]
+    }
+  },
   "events": [
     {
       "subject": "event:ice_walls",
@@ -2361,79 +2418,6 @@
       }
     },
     {
-      "subject": "event:guangning_fall",
-      "name": "event:guangning_fall",
-      "scenes": [
-        "guangning"
-      ],
-      "scene_names": [
-        "guangning"
-      ],
-      "total": 5,
-      "gap_count": 2,
-      "coverage": "3/3",
-      "coverage_frac": 1.0,
-      "divergence": 0.0,
-      "gap_rate": 0.4,
-      "resonance": 0.6,
-      "party_counts": {
-        "明方": 1,
-        "清方": 2,
-        "朝鲜": 1,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [
-          {
-            "id": "G003",
-            "predicate": "陷落年份",
-            "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
-            "source": "ming_xizong_shilu",
-            "layer": "record",
-            "scene": "guangning"
-          }
-        ],
-        "清方": [
-          {
-            "id": "G010",
-            "predicate": "明军兵力部署",
-            "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
-            "source": "mingshi",
-            "layer": "gap",
-            "scene": "guangning"
-          },
-          {
-            "id": "G011",
-            "predicate": "经抚责任归属",
-            "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
-            "source": "mingshi",
-            "layer": "gap",
-            "scene": "guangning"
-          }
-        ],
-        "朝鲜": [
-          {
-            "id": "G004",
-            "predicate": "朝鲜视角",
-            "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
-            "source": "chao_xiandai",
-            "layer": "record",
-            "scene": "guangning"
-          }
-        ],
-        "综述考订": [
-          {
-            "id": "G005",
-            "predicate": "败因主流说",
-            "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
-            "source": "modern",
-            "layer": "scholarship",
-            "scene": "guangning"
-          }
-        ]
-      }
-    },
-    {
       "subject": "event:abudaligang",
       "name": "阿布达里岗（东路·刘綎）",
       "scenes": [
@@ -2478,6 +2462,87 @@
           }
         ],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:guangning_fall",
+      "name": "event:guangning_fall",
+      "scenes": [
+        "guangning"
+      ],
+      "scene_names": [
+        "guangning"
+      ],
+      "total": 6,
+      "gap_count": 2,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.667,
+      "party_counts": {
+        "明方": 2,
+        "清方": 2,
+        "朝鲜": 1,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "G003",
+            "predicate": "陷落年份",
+            "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+            "source": "ming_xizong_shilu",
+            "layer": "record",
+            "scene": "guangning"
+          },
+          {
+            "id": "ZZ006",
+            "predicate": "熊廷弼之死源于阉党私怨",
+            "value_text": "阉党冯铨因坊间小说《辽东传》'冯布政父子奔逃'情节羞愤，借讲筵奏请诛熊廷弼，非纯军事失败",
+            "source": "zhuozhongzhi",
+            "layer": "record",
+            "scene": "guangning"
+          }
+        ],
+        "清方": [
+          {
+            "id": "G010",
+            "predicate": "明军兵力部署",
+            "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "guangning"
+          },
+          {
+            "id": "G011",
+            "predicate": "经抚责任归属",
+            "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+            "source": "mingshi",
+            "layer": "gap",
+            "scene": "guangning"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "G004",
+            "predicate": "朝鲜视角",
+            "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+            "source": "chao_xiandai",
+            "layer": "record",
+            "scene": "guangning"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "G005",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "guangning"
+          }
+        ]
       }
     },
     {

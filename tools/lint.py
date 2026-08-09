@@ -42,6 +42,8 @@
     W07 gap 层断言的 value_text 为空（缺口必须说清缺什么）
     W11 直引 quotes 数组条目 text 为空或 source_id 不存在（可选增强字段）
     W12 县治所在 control_liaodong.json 中无任何控制权记录——图层上该城留白（疑似漏写）
+    W13 source.faction 不在 data/vocab.json 的 factions 受控词表内
+        （派系维度拼写错误会导致共振的『明方内派系细分』统计静默把该来源归错组）
 
 用法：
     python tools/lint.py            # 全量检查
@@ -67,6 +69,7 @@ LAYERS = set(VOCAB['layers'])
 QUOTE_STATUS = set(VOCAB['quote_status'])
 PARTY_BUCKET = VOCAB['party_bucket']
 PARTIES3 = [p for p in VOCAB['parties'] if p != '综述考订']
+FACTIONS = set(VOCAB.get('factions', {}).keys())
 
 REQUIRED = ['id', 'subject', 'predicate', 'source', 'layer']
 
@@ -164,6 +167,14 @@ def check_scene(sc, rep):
             rep.err('E05', scene,
                     'source「%s」(%s) 的 party =「%s」不在 data/vocab.json 受控词表内，'
                     '该来源将被共振统计静默丢弃' % (s['id'], s.get('title', ''), party))
+
+        # W13：派系维度拼写校验（明朝内利益集团会因自身利害润色/夸张记载，
+        # 拼写错会导致『明方内派系细分』统计静默归错组——属"静默留白"类 bug）。
+        fac = s.get('faction')
+        if fac is not None and fac not in FACTIONS:
+            rep.warn('W13', scene,
+                     'source「%s」(%s) 的 faction=「%s」不在 data/vocab.json 的 factions 受控词表内'
+                     % (s['id'], s.get('title', ''), fac))
 
     # ── assertions ──
     seen_ids = {}

@@ -1,28 +1,76 @@
 {
- "persons": [
-  {
-   "id": "xiongtingbing",
-   "name": "熊廷弼",
-   "role": "辽东经略",
-   "note": "主守，与王化贞经抚不和，广宁陷后受诛"
-  },
-  {
-   "id": "wang_huazhen",
-   "name": "王化贞",
-   "role": "辽东巡抚",
-   "note": "主战，广宁之战弃城逃"
-  },
-  {
-   "id": "sun_degong",
-   "name": "孙得功",
-   "role": "广宁将",
-   "note": "广宁陷前通敌，开门迎后金"
-  },
-  {
-   "id": "nuerhaci",
-   "name": "努尔哈赤",
-   "role": "后金大汗",
-   "note": "1622 年正月取广宁"
-  }
- ]
+  "persons": [
+    {
+      "id": "xiongtingbing",
+      "name": "熊廷弼",
+      "role": "辽东经略",
+      "note": "主守，与王化贞经抚不和，广宁陷后受诛"
+    },
+    {
+      "id": "wang_huazhen",
+      "name": "王化贞",
+      "role": "辽东巡抚",
+      "note": "主战，广宁之战弃城逃"
+    },
+    {
+      "id": "sun_degong",
+      "name": "孙得功",
+      "role": "广宁将",
+      "note": "广宁陷前通敌，开门迎后金"
+    },
+    {
+      "id": "nuerhaci",
+      "name": "努尔哈赤",
+      "role": "后金大汗",
+      "note": "1622 年正月取广宁"
+    },
+    {
+      "id": "xiong_tingbi",
+      "name": "熊廷弼",
+      "faction": "feng_jiang",
+      "note": "辽东经略，广宁之失后被逮，天启五年遭阉党诛杀。"
+    },
+    {
+      "id": "liu_ruoyu",
+      "name": "刘若愚",
+      "faction": "nei_guan",
+      "note": "内臣，《酌中志》作者，魏忠贤败后自辩，记宫禁内部与阉党事。"
+    },
+    {
+      "id": "wei_zhongxian",
+      "name": "魏忠贤",
+      "faction": "eunuch",
+      "note": "阉党首领，天启朝专政。"
+    },
+    {
+      "id": "feng_quan",
+      "name": "冯铨",
+      "faction": "eunuch",
+      "note": "阉党骨干，与熊廷弼有私怨，借讲筵奏请诛之。"
+    },
+    {
+      "id": "yang_lian",
+      "name": "杨涟",
+      "faction": "donglin",
+      "note": "东林骨干，弹魏忠贤二十四罪，死于阉党诏狱。"
+    },
+    {
+      "id": "cui_chengxiu",
+      "name": "崔呈秀",
+      "faction": "eunuch",
+      "note": "阉党骨干，进《点将录》《天鉴录》列东林姓名。"
+    },
+    {
+      "id": "ke_shi",
+      "name": "客氏",
+      "faction": "eunuch",
+      "note": "奉圣夫人，魏忠贤私党。"
+    },
+    {
+      "id": "wang_tigan",
+      "name": "王体乾",
+      "faction": "eunuch",
+      "note": "司礼监掌印，党附魏忠贤。"
+    }
+  ]
 }

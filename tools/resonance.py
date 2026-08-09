@@ -32,6 +32,8 @@ with open(os.path.join(ROOT, 'data', 'vocab.json'), encoding='utf-8') as _f:
     VOCAB = json.load(_f)
 PARTY_BUCKET = VOCAB['party_bucket']
 PARTIES = [p for p in VOCAB['parties'] if p != '综述考订']
+# 明朝内部利益集团（派系）受控词表——立场派生的二次维度。
+FACTIONS = VOCAB.get('factions', {})
 
 # 虚构 world（kind: fiction）无真实史料对立面，共振度对其无意义，跳过以免污染报告。
 try:
@@ -136,12 +138,13 @@ def resonance_for_subject(assertions, src_party, subject):
 
 
 def load_all_scenes():
-    """自动扫描 data/<scene>/assertions.jsonl，返回 (断言列表, source→party)。
+    """自动扫描 data/<scene>/assertions.jsonl，返回 (断言列表, source→party, source→faction)。
 
     每条断言注入 `_scene` 字段，便于报告标注跨切片事件。
     """
     rows = []
     src_party = {}
+    src_faction = {}
     scenes = []
     for path in sorted(glob.glob(os.path.join(ROOT, 'data', '*', 'assertions.jsonl'))):
         scene = os.path.basename(os.path.dirname(path))
@@ -160,11 +163,21 @@ def load_all_scenes():
             with open(sp, encoding='utf-8') as f:
                 for s in json.load(f)['sources']:
                     src_party[(scene, s['id'])] = s.get('party', '其他')
-    return rows, src_party, scenes
+                    src_faction[(scene, s['id'])] = s.get('faction')
+    return rows, src_party, src_faction, scenes
 
 
-def scene_summary(assertions, src_party, scene):
-    """单切片层面的汇总：断言数、四层分布、三方覆盖、平均共振。"""
+def faction_of(src_faction, a):
+    """来源 faction 是切片内作用域——查表带切片。"""
+    return src_faction.get((a.get('_scene'), a.get('source')))
+
+
+def faction_name(fid):
+    return FACTIONS.get(fid, {}).get('name', fid) if fid else None
+
+
+def scene_summary(assertions, src_party, src_faction, scene):
+    """单切片层面的汇总：断言数、四层分布、三方覆盖、明内部派系细分、平均共振。"""
     rel = [a for a in assertions if a.get('_scene') == scene]
     if not rel:
         return None
@@ -174,6 +187,12 @@ def scene_summary(assertions, src_party, scene):
     parties = defaultdict(int)
     for a in rel:
         parties[bucket(party_of(src_party, a))] += 1
+    # 明内部派系细分：仅统计 faction 非空的断言（即明朝内各利益集团）
+    factions = defaultdict(int)
+    for a in rel:
+        fac = faction_of(src_faction, a)
+        if fac:
+            factions[fac] += 1
     subs = sorted({a['subject'] for a in rel if a.get('subject', '').startswith('event:')})
     rs = [resonance_for_subject(rel, src_party, s) for s in subs]
     rs = [r for r in rs if r]
@@ -185,6 +204,7 @@ def scene_summary(assertions, src_party, scene):
         'total': len(rel),
         'layers': dict(layers),
         'party_counts': dict(parties),
+        'faction_counts': {faction_name(k): v for k, v in factions.items()},
         'event_count': len(rs),
         'avg_resonance': avg,
         'best_event': best['name'] if best else None,
@@ -207,7 +227,7 @@ def fmt_report(rs):
 
 
 def main():
-    all_assertions, all_party, scene_list = load_all_scenes()
+    all_assertions, all_party, all_faction, scene_list = load_all_scenes()
 
     subjects = sorted({a['subject'] for a in all_assertions
                        if a.get('subject', '').startswith('event:')})
@@ -225,7 +245,7 @@ def main():
         print(fmt_report(rs))
         print()
 
-    scenes = [scene_summary(all_assertions, all_party, s) for s in scene_list]
+    scenes = [scene_summary(all_assertions, all_party, all_faction, s) for s in scene_list]
     scenes = [s for s in scenes if s]
     print('-' * 68)
     print('切片汇总')
@@ -238,13 +258,33 @@ def main():
     # 按共振度升序（最不共振的最值得补）
     results_sorted = sorted(results, key=lambda r: r['resonance'])
 
+    # 明内部派系细分：在所有断言中按 faction 聚合（明朝内各利益集团）
+    faction_agg = defaultdict(lambda: {'total': 0, 'scenes': set(), 'sources': set()})
+    for a in all_assertions:
+        fac = faction_of(all_faction, a)
+        if not fac:
+            continue
+        fac_info = FACTIONS.get(fac, {})
+        faction_agg[fac]['total'] += 1
+        faction_agg[fac]['scenes'].add(a.get('_scene'))
+        faction_agg[fac]['sources'].add(a.get('source'))
+
     out_json = {
         'meta': {
             'definition': 'resonance = (coverage/3) * (1 - divergence) * (1 - gap_rate)',
             'parties': PARTIES + ['综述考订'],
             'scenes': scene_list,
+            'factions': {k: v.get('name') for k, v in FACTIONS.items()},
         },
         'scene_summary': scenes,
+        'faction_summary': {
+            fac: {
+                'name': FACTIONS.get(fac, {}).get('name', fac),
+                'total': d['total'],
+                'scenes': sorted(d['scenes']),
+                'sources': sorted(d['sources']),
+            } for fac, d in sorted(faction_agg.items(), key=lambda kv: -kv[1]['total'])
+        },
         'events': results_sorted,
     }
     json_path = os.path.join(ROOT, 'data', 'resonance_report.json')
@@ -260,6 +300,8 @@ def main():
              '> 不手动贴标签——这是本项目与所有历史可视化产品的分界线。',
              '',
              '> v0.4 起本报告自动扫描 `data/*/assertions.jsonl`，新切片落盘即入表。',
+             '> v0.17 起新增「明内部派系细分」：明朝内各利益集团（东林/阉党/浙党/盐商/内臣/封疆）',
+             '> 会因自身利害润色夸张记载，立场派生在 `party`（宏观桶）之外再按 `faction`（派系）二次拆分。',
              '', '## 切片汇总', '',
              '| 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |',
              '|---|---|---|---|---|---|']
@@ -268,6 +310,16 @@ def main():
         lines.append('| %s | %d | %d | **%.3f** | %s（%.3f） | %s |'
                      % (s['name'], s['total'], s['event_count'], s['avg_resonance'],
                         s['best_event'] or '—', s['best_resonance'] or 0.0, lay))
+    lines += ['', '## 明内部派系细分（faction · 明朝利益集团立场）', '',
+              '> 下列统计仅含 `source.faction` 非空的断言——即明朝内部各利益集团。同一事件若不同派系记载冲突，此处可见叙述对立。',
+              '',
+              '| 派系 | 断言数 | 涉及场景 | 代表来源 |',
+              '|---|---|---|---|']
+    for fac, d in sorted(faction_agg.items(), key=lambda kv: -kv[1]['total']):
+        srcs = '、'.join(sorted(d['sources']))
+        scs = '、'.join(SCENE_NAMES.get(x, x) for x in sorted(d['scenes']))
+        lines.append('| %s | %d | %s | %s |'
+                     % (FACTIONS.get(fac, {}).get('name', fac), d['total'], scs, srcs))
     lines += ['', '## 事件共振表（按共振度升序：最不共振的最值得补）', '',
               '| 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |',
               '|---|---|---|---|---|---|---|---|']
@@ -285,6 +337,9 @@ def main():
               '- 萨尔浒 `event:sarhu` 与开铁 `event:kaifa` 已通过 K026 / K026a–d 完成三方闭合。',
               '- 新入表的铁岭 / 辽阳切片当前共振偏低，**这不是 bug，是待补清单**：'
               '缺的主要是朝鲜方视角与清方细节，见各切片 `layer: gap` 断言。',
+              '- **派系维度（v0.17）**：`明史` 已归「清方」桶（清修），真正明方声音由明人自著'
+              '（三朝辽事实录等）与朝鲜（光海君日记）承担；明朝内部东林/阉党/浙党/盐商/内臣/封疆'
+              '各集团又因自身利害润色夸张，详见上方「明内部派系细分」与 `data/bibliography.json`。',
               '']
     with open(md_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(lines))

@@ -81,7 +81,169 @@ window.SANDBOX_DATA = {
    "朝鲜官方": "朝鲜",
    "朝鲜·亲历": "朝鲜",
    "学界": "综述考订",
-   "二手综述": "综述考订"
+   "二手综述": "综述考订",
+   "明·东林文献": "明方",
+   "明·阉党文献": "明方",
+   "明·浙党文献": "明方",
+   "明·楚党文献": "明方",
+   "明·齐党文献": "明方",
+   "明·盐政文献": "明方",
+   "明·内臣文献": "明方",
+   "明·封疆奏议": "明方",
+   "清·满洲文献": "清方"
+  },
+  "factions": {
+   "donglin": {
+    "name": "东林党（清流）",
+    "period": "万历后期—崇祯",
+    "interest": "士大夫清议集团，反对矿税宦官、与阉党死仇；以『清流』自任。",
+    "key_figures": [
+     "顾宪成",
+     "高攀龙",
+     "杨涟",
+     "左光斗",
+     "赵南星",
+     "邹元标",
+     "孙承宗（近东林）"
+    ],
+    "typical_sources": [
+     "东林列传",
+     "东林书院志",
+     "熹宗实录（东林史官主导）",
+     "杨忠烈公文集",
+     "左忠毅公集"
+    ],
+    "bias_note": "东林叙事系统性贬阉党、褒清流：对己方人物（杨涟/熊廷弼/袁化中）多美化，对军事败绩常诿过阉党与浙党中枢；对『移宫』『红丸』三案的叙述高度立场化。"
+   },
+   "eunuch": {
+    "name": "阉党（魏忠贤集团）",
+    "period": "天启",
+    "interest": "宦官与依附官僚专政，打击东林、编《三朝要典》翻三案。",
+    "key_figures": [
+     "魏忠贤",
+     "客氏",
+     "冯铨",
+     "崔呈秀",
+     "王体乾",
+     "顾秉谦"
+    ],
+    "typical_sources": [
+     "三朝要典",
+     "魏忠贤档",
+     "酌中志（刘若愚，内臣自述，半独立）"
+    ],
+    "bias_note": "阉党文献（《三朝要典》）系统性诬东林、为魏忠贤张目；对广宁之失诿过熊廷弼、为阉党边臣（王化贞等）开脱；对天启朝军事败绩尽量淡化。"
+   },
+   "zhe_dang": {
+    "name": "浙党",
+    "period": "万历—天启",
+    "interest": "以沈一贯、方从哲为首的浙籍官僚，主导万历后期中枢，与东林争国本、争枚卜。",
+    "key_figures": [
+     "沈一贯",
+     "方从哲",
+     "姚宗文",
+     "刘廷元"
+    ],
+    "typical_sources": [
+     "万历疏钞",
+     "明神宗实录（浙党史官主导卷次）",
+     "方从哲疏草"
+    ],
+    "bias_note": "浙党主导万历后期中枢与枢辅，对辽东兵事奏报多护短、讳败；萨尔浒丧师后中枢讳言真实损失数字，杨镐讳败即其例。"
+   },
+   "chu_dang": {
+    "name": "楚党",
+    "period": "万历",
+    "interest": "楚籍官僚（官应震、吴亮嗣），与浙党合、攻东林。",
+    "key_figures": [
+     "官应震",
+     "吴亮嗣"
+    ],
+    "typical_sources": [
+     "万历疏钞"
+    ],
+    "bias_note": "楚党与浙党同盟，党争叙事中常护中枢、贬封疆，对辽东兵额奏销有修饰空间。"
+   },
+   "qi_dang": {
+    "name": "齐党",
+    "period": "万历",
+    "interest": "齐籍官僚（亓诗教、周永春），与浙楚合攻东林，多居主兵、中枢。",
+    "key_figures": [
+     "亓诗教",
+     "周永春"
+    ],
+    "typical_sources": [
+     "万历疏钞"
+    ],
+    "bias_note": "齐党多在主兵中枢，对辽东兵额与奏销有修饰空间，讳言缺额。"
+   },
+   "xuan_kun": {
+    "name": "宣党 / 昆党",
+    "period": "万历",
+    "interest": "宣城汤宾尹、昆山顾天埈为首的小集团，主要影响科举与京察。",
+    "key_figures": [
+     "汤宾尹",
+     "顾天埈"
+    ],
+    "typical_sources": [],
+    "bias_note": "小集团，主要污染科举与京察叙事，对辽东军务直接影响小。"
+   },
+   "yan_shang": {
+    "name": "盐商 / 盐政利益",
+    "period": "万历—崇祯",
+    "interest": "两淮、长芦盐商及其利益相关官僚，是辽饷加派的重要来源。",
+    "key_figures": [
+     "盐商（集体）",
+     "李汝华（户部尚书）",
+     "袁世振（纲盐法）"
+    ],
+    "typical_sources": [
+     "两淮盐法志",
+     "盐政志",
+     "万历会计录",
+     "度支奏议"
+    ],
+    "bias_note": "盐商是辽饷（镇压后金）的财政支柱，叙事倾向夸大捐输、讳言逋欠；对『辽饷加派』造成的民变与社会压力记载有利益倾向，常把加派说成『商民乐输』。"
+   },
+   "nei_guan": {
+    "name": "内臣 / 宦官（独立于阉党）",
+    "period": "万历—崇祯",
+    "interest": "内廷宦官系统：监军、镇守、矿税监。",
+    "key_figures": [
+     "陈增",
+     "高淮（辽东矿税监，激变边防）",
+     "刘若愚（《酌中志》作者）",
+     "魏忠贤"
+    ],
+    "typical_sources": [
+     "酌中志",
+     "明内廷规制考",
+     "高淮乱辽档"
+    ],
+    "bias_note": "辽东矿税监高淮横征激变、削弱边防，其记载与其他派系互相攻讦；刘若愚《酌中志》为内臣自述，价值在宫禁内部视角，但魏忠贤败后刘若愚自辩，亦带立场。"
+   },
+   "feng_jiang": {
+    "name": "封疆大吏 / 辽东经略系",
+    "period": "万历—崇祯",
+    "interest": "经略、总督、巡抚等前线主官及其幕僚，对败绩诿过、对战功夸张。",
+    "key_figures": [
+     "杨镐",
+     "熊廷弼",
+     "王在晋",
+     "袁崇焕",
+     "孙承宗",
+     "王化贞",
+     "毛文龙"
+    ],
+    "typical_sources": [
+     "熊襄愍公全集（熊廷弼）",
+     "袁督师遗集（袁崇焕）",
+     "高阳集（孙承宗）",
+     "三朝辽事实录（王在晋）",
+     "王在晋疏草"
+    ],
+    "bias_note": "前线主官文集/奏议天然护己：杨镐讳败、熊廷弼攻王化贞、袁崇焕夸大恢复、毛文龙虚报兵额——皆为立场来源。其价值在『当事人自述』，但须与敌对方、第三方对读。"
+   }
   },
   "layers": [
    "record",
@@ -6874,7 +7036,8 @@ window.SANDBOX_DATA = {
      "distance_label": "成书 1739，距事件约 120 年",
      "party": "清修·明臣",
      "color": "#B23A48",
-     "note": "清修明史，成书距事件 120 年。对明军败因的叙述受清初政治语境影响，兵力数字多沿袭明廷奏报。"
+     "note": "清修明史，成书距事件 120 年。对明军败因的叙述受清初政治语境影响，兵力数字多沿袭明廷奏报。",
+     "faction": null
     },
     {
      "id": "ming_shenzong_shilu",
@@ -6965,7 +7128,8 @@ window.SANDBOX_DATA = {
      "distance_label": "当代编年，朝鲜官方记录",
      "party": "朝鲜官方",
      "color": "#4A6FA5",
-     "note": "朝鲜王朝实录记载萨尔浒之战中朝鲜军东路（姜弘立）亲历，不受明清叙事约束，价值在第三方视角。"
+     "note": "朝鲜王朝实录记载萨尔浒之战中朝鲜军东路（姜弘立）亲历，不受明清叙事约束，价值在第三方视角。",
+     "faction": null
     },
     {
      "id": "sanchaoliao_shilu",
@@ -6976,9 +7140,10 @@ window.SANDBOX_DATA = {
      "stance": "private",
      "stance_label": "明方私修·亲历",
      "distance_label": "经略辽东者事后追记，距事约10年",
-     "party": "明·私修",
+     "party": "明·封疆奏议",
      "color": "#8B6BA8",
-     "note": "王在晋以经略辽东之身记辽事，沈阳破、辽阳围急、浑河之战明方视角，常存实录不载之异说。"
+     "note": "王在晋以经略辽东之身记辽事，沈阳破、辽阳围急、浑河之战明方视角，常存实录不载之异说。",
+     "faction": "feng_jiang"
     }
    ],
    "places": [
@@ -7399,7 +7564,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.15,
      "scale": "empire",
      "note": "对外宣称的虚数，用以震慑后金与安抚朝议。几乎所有研究者都不采信此数。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A002",
@@ -7421,7 +7587,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.25,
      "scale": "empire",
      "note": "胜方记述。夸大敌军规模以彰显战功，是所有军事史料的通病，与立场直接相关。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "A003",
@@ -7443,7 +7610,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "empire",
      "note": "不含叶赫与朝鲜援军。占位数据，正式版需落实到具体论著与页码。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A004",
@@ -7465,7 +7633,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.65,
      "scale": "empire",
      "note": "合计口径。与 A003 不冲突，是不同的统计边界——这类分歧最容易被误读为矛盾。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A010",
@@ -7487,7 +7656,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "empire",
      "note": "后金以此兵力实现局部数倍于明军的兵力优势，是本役的战术核心。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A011",
@@ -7509,7 +7679,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.2,
      "scale": "empire",
      "note": "败方对敌军规模的估计，同样存在夸大倾向——败得越惨，敌人越多。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A020",
@@ -7531,7 +7702,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.6,
      "scale": "province",
      "note": "通行说法。杜松部为明军精锐，配属车营与火器。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A021",
@@ -7553,7 +7725,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.55,
      "scale": "province",
      "note": "不含叶赫援兵。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A022",
@@ -7575,7 +7748,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.45,
      "scale": "province",
      "note": "叶赫兵闻杜松败即退回，实际未与后金交战。是否真到达战场，史料记载含糊。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A023",
@@ -7597,7 +7771,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "province",
      "note": "几乎完整撤回，是四路中唯一保全建制者。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A024",
@@ -7619,7 +7794,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.55,
      "scale": "province",
      "note": "刘綎所部多为南兵与川兵，与辽东本地军序列不同。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A025",
@@ -7642,7 +7818,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "亲历者所记本方兵力，在所有兵力数据中可信度最高——记录者没有夸大或缩小的动机。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "A030",
@@ -7664,7 +7841,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "province",
      "note": "精确到个位的数字反而值得警惕——它来自战后清点缺额的奏报，而非战场统计。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A031",
@@ -7686,7 +7864,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.45,
      "scale": "province",
      "note": "军官损失比例极高，反映的是建制被整体歼灭而非溃散。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A032",
@@ -7708,7 +7887,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "province",
      "note": "马骡损失数可与兵力数互校：若明军仅八万余，则骑兵与辎重损失近乎全灭。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A033",
@@ -7730,7 +7910,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "county",
      "note": "《栅中日录》多用概数而非确数，这本身是亲历记录的特征——身处其中的人反而数不清。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "A040",
@@ -7752,7 +7933,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.85,
      "scale": "province",
      "note": "四路中主力最先被歼，此后战局已定。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "A041",
@@ -7774,7 +7956,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.75,
      "scale": "province",
      "note": "比杨镐原定的三月初二会师期提前，是四路失去协同的起点。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "A042",
@@ -7796,7 +7979,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "province",
      "note": "明方叙事将败因归于主将个人性格，这是官修史书处理败绩的典型手法——归咎于人，则制度无过。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A043",
@@ -7818,7 +8002,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.35,
      "scale": "province",
      "note": "与 A042 直接冲突。同一件事，明方记为主将莽撞，金方记为己方谋略——冲突本身比任何一方的说法都更有信息量。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "A050",
@@ -7840,7 +8025,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "马林部得知杜松败讯后就地结营三处，被逐个击破。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "A051",
@@ -7862,7 +8048,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.75,
      "scale": "county",
      "note": "文官统兵而死战，与主将马林单骑遁走形成对照，是明代史料中反复被强调的道德叙事。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A052",
@@ -7884,7 +8071,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "同年六月开原陷落，马林战死于开原。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A060",
@@ -7906,7 +8094,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "东路军距赫图阿拉最近，也最后被歼。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "A061",
@@ -7928,7 +8117,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.6,
      "scale": "province",
      "note": "罕见地为明金双方史料共同记载，可信度因此提高——立场相反的史料若说法一致，通常意味着事实本身较为坚实。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "A062",
@@ -7950,7 +8140,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "刘綎时年六十余，为明末宿将中战功最著者之一。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A063",
@@ -7972,7 +8163,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.85,
      "scale": "county",
      "note": "朝鲜内部对姜弘立评价两极。光海君密令观望之说，是朝鲜史学界长期争论的问题。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "A070",
@@ -7994,7 +8186,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "杨镐得三路败讯后急檄南路撤兵。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "A071",
@@ -8016,7 +8209,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.45,
      "scale": "county",
      "note": "二十名哨骑吓垮一路大军。此条若属实，说明的不是兵力问题而是士气问题。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A080",
@@ -8038,7 +8232,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.65,
      "scale": "empire",
      "note": "这句话是否为努尔哈赤原话难以确证，但后金的实际行动完全符合此方针。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "A090",
@@ -8060,7 +8255,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.35,
      "scale": "province",
      "note": "AI 推演：由起讫地点与日期反推。未见任何史料直接记载行军速度，此值仅供想象战场节奏之用，不可引用。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A091",
@@ -8082,7 +8278,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.25,
      "scale": "county",
      "note": "AI 推演：纯属环境重建，无史料依据。此类断言的唯一价值是让场景可被想象，绝不可作为论据。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A092",
@@ -8113,7 +8310,8 @@ window.SANDBOX_DATA = {
       "accept": "给出杜松西路军车营与火器的可能编制区间(参照同期车营成例), 说明「无直接记录」的原因(战殁无幸存详报、败军无勘状), 而非断言「无火器」。",
       "effort": "2-3 周"
      },
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A045",
@@ -8135,7 +8333,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.55,
      "scale": "province",
      "note": "这条断言解释了为什么东路刘綎走得最慢，也解释了为什么阿布达里岗设伏能成功。植被在本项目中不做栅格图层——历史植被没有可信的空间数据源，现代林地数据反映的是当代。它只能以文献断言的形式存在。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "A046",
@@ -8157,7 +8356,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "county",
      "note": "这是『疲劳』这个抽象参数在史料中的实际形态。杜松部当日两渡浑河，接战时是湿透且受冻的状态。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A047",
@@ -8179,7 +8379,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.75,
      "scale": "empire",
      "note": "本项目的地形行军模型以步兵速度为基准，因此算出后金机动『紧张度 2.64』。这个偏差不是史料造假，是模型缺了兵种维度——系统自动生成的问题，由这条断言回答。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A048",
@@ -8201,7 +8402,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "empire",
      "note": "李成梁之子，战后遭弹劾，天启元年自杀。地形模型显示南路五日走完模型需 6.4 日的路，紧张度 1.28——按地形算他并不算慢。『逗留』这个评价可能带有战后追责的政治色彩。这是系统自动对一个流传四百年的定论提出的质疑。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "A044",
@@ -8223,7 +8425,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "empire",
      "note": "这条断言可由本系统的接战数据自动检验，不需要人为宣称——见『局部优势』面板。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "A049",
@@ -8245,7 +8448,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.35,
      "scale": "province",
      "note": "谈迁只记损失总数而不记出征人数，与《明史》『四万五千八百七十余』整整差一倍。两个数字未必矛盾——《明史》数的是『阵亡军丁』，谈迁的『丧师』可能含溃散失踪与朝鲜、叶赫附从之众。本系统不裁决，只把两条并列并标出这一解释路径。",
-     "_party": "明·私修"
+     "_party": "明·私修",
+     "_faction": null
     },
     {
      "id": "IN001",
@@ -8266,7 +8470,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.85,
      "scale": "empire",
      "note": "明方纪年「万历四十七年」与后金纪年「天命四年」指同一年（1619）。由 LLM 从《皇清开国方略》卷六抽出，经 ingest.py + reign_era 归一化。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN002",
@@ -8287,7 +8492,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "西路为四路主力；年号换算取「天命四年」对应公元 1619，月日（二月廿九）原样保留待农历模块。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN003",
@@ -8308,7 +8514,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "主战场节点；与 IN001 为同一事件的不同纪年表述。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN004",
@@ -8329,7 +8536,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.85,
      "scale": "empire",
      "note": "西路主将杜松战死，是萨尔浒西路崩溃的标志。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN005",
@@ -8350,7 +8558,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.3,
      "scale": "empire",
      "note": "明方对外宣称的虚数（震慑 + 安抚朝议），研究者普遍不采信；与 IN006 后金记述的「二十万」同为夸大，立场相关。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN006",
@@ -8371,7 +8580,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.4,
      "scale": "empire",
      "note": "胜方（后金）记述，夸大敌军以彰显战功；与 IN005 不冲突，是不同立场的同一虚数的两面。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "IN007",
@@ -8400,7 +8610,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明"
      },
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -8421,7 +8632,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -8442,7 +8654,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -8463,7 +8676,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -8484,7 +8698,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX012",
@@ -8505,7 +8720,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX013",
@@ -8526,7 +8742,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX014",
@@ -8547,7 +8764,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX017",
@@ -8568,7 +8786,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "原文未明说轻敌，但乘夜列炬暴露行踪可推",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX018",
@@ -8589,7 +8808,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX019",
@@ -8610,7 +8830,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX020",
@@ -8631,7 +8852,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX021",
@@ -8652,7 +8874,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX022",
@@ -8673,7 +8896,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX023",
@@ -8694,7 +8918,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -8715,7 +8940,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "杨镐被任命为经略。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -8736,7 +8962,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -8757,7 +8984,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "萨尔浒之战爆发，明军分四路进攻。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -8778,7 +9006,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "empire",
      "note": "此为号称兵力，实际兵力可能少于该数。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005_M1",
@@ -8799,7 +9028,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006_M1",
@@ -8820,7 +9050,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007_M1",
@@ -8841,7 +9072,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -8862,7 +9094,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -8883,7 +9116,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "杜松军覆没。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010_M1",
@@ -8904,7 +9138,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -8925,7 +9160,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "刘綎战死。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012_M1",
@@ -8946,7 +9182,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "明军总伤亡数字。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX013_M1",
@@ -8967,7 +9204,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "杨镐因战败被下狱处死。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX014_M1",
@@ -8988,7 +9226,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX015",
@@ -9017,7 +9256,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "核实萨尔浒之战明军实际兵力"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX016",
@@ -9038,7 +9278,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "杨镐在蔚山之战中先逃。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX017_M1",
@@ -9059,7 +9300,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX018_M1",
@@ -9080,7 +9322,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "杨镐隐瞒伤亡数字。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX019_M1",
@@ -9101,7 +9344,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "empire",
      "note": "杨镐在蔚山之战中先逃，导致明军溃败。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX020_M1",
@@ -9122,7 +9366,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "empire",
      "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX021_M1",
@@ -9143,7 +9388,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "empire",
      "note": "杨镐隐瞒伤亡数字，导致朝廷无法了解真实情况。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX022_M1",
@@ -9172,7 +9418,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "评估杨镐在蔚山之战中的具体责任"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX023_M1",
@@ -9201,7 +9448,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "评估杨镐在蔚山之战中的具体责任"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX024",
@@ -9230,7 +9478,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "评估杨镐在蔚山之战中的具体责任"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001_M2",
@@ -9251,7 +9500,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "朝鲜军兵力，第三方视角",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX002_M2",
@@ -9272,7 +9522,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "刘綎东路兵力，朝鲜译官探报",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX003_M2",
@@ -9293,7 +9544,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "姜弘立目测东路明军实数，与宣称三万有出入",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX004_M2",
@@ -9314,7 +9566,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "姜弘立视察刘綎营壁所见",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX005_M2",
@@ -9335,7 +9588,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "刘綎自述与杨镐矛盾，致孤军",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX006_M2",
@@ -9356,7 +9610,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "朝鲜军与后金军初战，损失惨重",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX007_M2",
@@ -9377,7 +9632,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "朝鲜平安监司驰启，战役结果",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX008_M2",
@@ -9398,7 +9654,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "刘綎战败自焚，朝鲜记载",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX009_M2",
@@ -9419,7 +9676,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "朝鲜左营将金应河英勇战死",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX010_M2",
@@ -9440,7 +9698,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "朝鲜军主帅降后金，第三方记载",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX011_M2",
@@ -9461,7 +9720,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "朝鲜记载杜松败亡，致后金专意东路",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX012_M2",
@@ -9482,7 +9742,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "萨尔浒之战明军四路皆败",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "SX001_M3",
@@ -9503,7 +9764,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "明方私修，最可信之明方记载",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX002_M3",
@@ -9524,7 +9786,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX003_M3",
@@ -9545,7 +9808,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX004_M3",
@@ -9566,7 +9830,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX005_M3",
@@ -9587,7 +9852,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX006_M3",
@@ -9608,7 +9874,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "明方估计，非实测",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "SX007_M3",
@@ -9629,7 +9896,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "兵部尚书黄嘉善言，与三朝辽事实录八万八千有出入",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "SX008_M3",
@@ -9650,7 +9918,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "黄嘉善对分兵之担忧",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "SX009_M3",
@@ -9671,7 +9940,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX010_M3",
@@ -9692,7 +9962,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "后金方战略，明方记载转述",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX011_M3",
@@ -9713,7 +9984,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "现代研究对record的量化修正",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "SX012_M3",
@@ -9742,7 +10014,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "厘清明军实际出兵人数"
      },
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     }
    ],
    "conflicts": [
@@ -11712,7 +11985,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "冯瑗《开原图说》：开原即元之黄龙府，山阻东南，河抱西北，扣、清二水环绕城面。",
      "note": "开元改开原因避朱元璋『元』字讳，为明代避讳史实例。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K002",
@@ -11728,7 +12002,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "永乐七年于开原城置安乐州、自在州，辽东仅有的两个州。",
      "note": "二州不属府县制，是明代辽东卫所制下特设的羁縻管理构件。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K003",
@@ -11744,7 +12019,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原设三关三市，提督马市公署设在开原城，为辽东贸易中心。",
      "note": "互市是开原作为『东北亚丝绸之路丝关』的核心职能。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K004",
@@ -11760,7 +12036,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "兴旺的马市贸易，使得开原三万卫成了全国三大冶铁中心之一。",
      "note": "冶铁能力支撑了边堡兵器与农具自给，是开原军镇的经济底座。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K005",
@@ -11776,7 +12053,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原，控临绝徼，翼带镇城，居全辽之上游，为东陲之险塞，九边危地此其最乎。",
      "note": "开原位于明辽东防御体系最北端，是明联络女真、蒙古的枢纽。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K006",
@@ -11792,7 +12070,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "《开原图说》上卷为开原各城堡图说，下卷为夷虏枝派图考及兵营图说。",
      "note": "以当时人记当地事，自明末以来被治东北史者视为权威。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K007",
@@ -11808,7 +12087,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "《开原图说》鲜有刊本，仅见兵部刊本、台湾中正图书馆刊本、玄览堂丛书刊本等。",
      "note": "原书属善本，数字化与开放获取是后续可做的众包缺口。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K008",
@@ -11824,7 +12104,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月初十，努尔哈赤率四万大军往攻开原，走三日后因雨驻扎。",
      "note": "公历锚点已由 K024 闭环（维基『开铁之战』条目：1619-07-20 / 07-26；区间 6 天与农历吻合）。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "K009",
@@ -11840,7 +12121,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "六月十六日直抵开原城下；叶赫报信，郑之范不信反鞭来使；后金分兵架梯，东南门失守。",
      "note": "出兵日与陷落日须区分：『六月初十』是出兵，『六月十六』是陷落。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "K010",
@@ -11856,7 +12138,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "努尔哈赤率四万大军攻开原。",
      "note": "明方记载后金兵力，常含夸大成分，宜与清方对勘。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K011",
@@ -11872,7 +12155,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月，后金兵万骑从静安堡入，乘开原疏于防守之机一举而下。",
      "note": "与『四万』说相差四倍，属典型兵力记载分歧；需更多原始记载定夺。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K012",
@@ -11888,7 +12172,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "马林及副将于化龙、参将高贞、守备何懋官等明将尽数被杀。",
      "note": "与萨尔浒西路杜松同为主将殉国，明方叙事中『死事』典型。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K013",
@@ -11904,7 +12189,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "郑之范素贪，竟不发给草料，一日饿死二百余匹马；见势弃城逃跑，连官印都丢了。",
      "note": "明方叙事惯性地将失城归咎代守文官，宜谨慎对待。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K014",
@@ -11920,7 +12206,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原军马分散、城外兵力未能协同，叶赫无力策应，援兵不至；个人贪懦是因素之一而非全部。",
      "note": "与 K013 构成『记载 vs 现代考订』之争，不裁决只陈列。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K015",
@@ -11936,7 +12223,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原本有十几万人居住，经后金血洗竟只剩一千多人。",
      "note": "屠城数字出自后世综述，清方实录不载己方屠戮，数字待核（见 K025）。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K016",
@@ -11952,7 +12240,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原为河东根底，欲保河东而开原必不可弃。今开原破矣，清阳弃矣，庆云抢矣……",
      "note": "此奏揭示开原陷落的战略连锁效应，是判断战役意义的权威一手材料。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "K017",
@@ -11968,7 +12257,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原破而北关不敢不顺……既无背腋之虞，又合东西之势以交攻，而辽沈何可守也。",
      "note": "印证『局部优势累积』：开原一落，后金在每一点都转为局部占优。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K018",
@@ -11984,7 +12274,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "瑗按开原城即辽之黄龙府，山阻东南，河抱西北，扣、清二水环绕城面。",
      "note": "与现有 ASTER 高程网格一致：开原处清河、辽河之间低地，东、北为丘陵。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K019",
@@ -12000,7 +12291,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开铁之战是萨尔浒之战后后金乘胜扩大战果、攻占辽东重镇的战役。",
      "note": "时间上紧接萨尔浒（二月），是同一战略节奏的延续。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K020",
@@ -12016,7 +12308,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原守军防备松懈、城外士兵散驻、盔甲杂乱、军马分散，未能集中有效抵抗。",
      "note": "这是萨尔浒『以少胜多实为局部优势累积』原则在县级尺度的又一次体现。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K021",
@@ -12032,7 +12325,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "马市方便了各民族之间的物资贸易，推动了经济发展与交融。",
      "note": "开原马市是明代边疆『互市—羁縻—制衡』政策的实物样本。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K022",
@@ -12048,7 +12342,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "清康熙三年设开原县，为奉天府首批所建四县之一。",
      "note": "清承明卫所制后改州县制，开原由军镇转为民县。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K023",
@@ -12064,7 +12359,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原境内有河流166条，主要河流有辽河、清河、寇河、柴河等。",
      "note": "水网是开原军镇补给与防御的命脉，也是后金雨季行军的天候变量。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K024",
@@ -12080,7 +12376,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年六月初十（1619年7月20日）努尔哈赤亲起四万大军往攻开原；六月十六（7月26日）直抵开原城下。",
      "note": "农历→公历换算依维基『开铁之战』条目（wbjc.net / profilpelajar.com 等转载）；lunardate / borax 库均只覆盖 1900–2100，本地不可独立核验，故升为 record 但仍标 paraphrase_unverified。区间 6 天与史料六月初十→十六自洽。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "K025",
@@ -12106,7 +12403,8 @@ window.SANDBOX_DATA = {
       "accept": "给出「十余万」说法的最早出处与引用链条, 并对照清方是否回避; 若数字本身不可考, 给出可信区间与原因, 并明确标注这是「对方叙事」而非中立计数。",
       "effort": "2-3 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "K026",
@@ -12122,7 +12420,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "光海君以姜弘立为五道都元帅，金景瑞副之，率兵一万三千助明，隶刘綎东路。",
      "note": "朝鲜为明盟国，萨尔浒东路实含朝鲜军，故三方史料中朝鲜非旁观；原始见《光海君日记》(朝鲜实录)。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "K026a",
@@ -12138,7 +12437,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "姜弘立遣通事黄连海诣后金，言朝鲜出兵迫于明命非其本意；副帅金景瑞单骑见代善，约『两国无怨，各解兵』。",
      "note": "朝鲜军降后金，明监军乔一琦坠崖死；此为朝鲜实录详载，是三方叙事中朝鲜立场核心。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "K026b",
@@ -12154,7 +12454,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历帝赐敕：『朕抚有万邦，绥玆属国，既安危之相倚……勉图后效，毋弃前功，雪耻除凶，务期殄灭。』",
      "note": "明对萨尔浒之降极度宽容，因战略仍需朝鲜为左腋之患牵制后金。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "K026c",
@@ -12170,7 +12471,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "贼未破开原时……朝鲜未败，犹有左腋之患。今开原破而北关不敢不顺，使币往来，而朝鲜不敢不从。",
      "note": "此奏载明实录，将开原陷落与朝鲜战略处境直接锁合，是三方共振关键环节；朝鲜侧见 K026a/b。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "K026d",
@@ -12186,7 +12488,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原、铁岭相继陷没，虏势益张，我国介于其间，进退维谷。",
      "note": "朝鲜实录原文待核，此条据《光海君日记》转引综述；三方史料(明/清/朝鲜)至此均对开原陷落有记载，原 K026 缺口收窄。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "K027a",
@@ -12202,7 +12505,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "开原马市北关通叶赫、南关通哈达，明藉互市羁縻海西，以夷制夷。",
      "note": "互市—羁縻—制衡，是明经营海西的核心手段。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K027b",
@@ -12218,7 +12522,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "海西四部叶赫、哈达、乌拉、辉发，错居开原东北，明联之以扦北虏、制建州。",
      "note": "乌拉、辉发二部未在地图标节点(超出辽东核心地形视野)，以四部整体记。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K027c",
@@ -12234,7 +12539,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "南关之市通哈达，明因以离北关而弱叶赫。",
      "note": "南关(哈达)—北关(叶赫)的互市格局，是明『以夷制夷』的实物样本。",
-     "_party": "明·开原兵备道"
+     "_party": "明·开原兵备道",
+     "_faction": null
     },
     {
      "id": "K027d",
@@ -12250,7 +12556,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "北关(叶赫)相倚，犹有后背之忧；开原破而北关不敢不顺。",
      "note": "与 K017『开原陷后叶赫灭』呼应，海西屏障的抽离是开原失守的结构性前提。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "K027e",
@@ -12266,7 +12573,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "八月，努尔哈赤灭叶赫，海西诸部悉平。",
      "note": "统一海西使后金南面再无牵制，遂得专意辽沈。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "K028a",
@@ -12282,7 +12590,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何模型，明制里 = km / 0.576；直线非实际行程（沿辽河谷/驿路绕行更远）。与史料『开原铁岭相距一日程』吻合（明制一日军行 ~30–40 里）。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028b",
@@ -12298,7 +12607,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；开原→辽阳为辽东都司北南主轴，与熊廷弼『辽阳、开原、京师不可分割』的防线判断一致。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028c",
@@ -12314,7 +12624,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；沈阳卫为开原南向最近的重镇。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028d",
@@ -12330,7 +12641,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；抚顺所 1618 已先陷（K018 地形视野），开原陷后辽沈侧翼尽失。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028e",
@@ -12346,7 +12658,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；叶赫为开原最近的海西部落，与『开原北关相倚』互为犄角。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028f",
@@ -12362,7 +12675,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；与 route_kaiyuan（努尔哈赤进军开原）共用同一对坐标，验证一致性。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028g",
@@ -12378,7 +12692,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；萨尔浒之战主战场，开原为北路马林部出发地。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K028h",
@@ -12394,7 +12709,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "quote": "",
      "note": "haversine 几何；马市紧邻开原城外，与『在城北门外』史载一致。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "K029",
@@ -12419,7 +12735,8 @@ window.SANDBOX_DATA = {
       "accept": "录入该条原文(影印或点校), 注明藏本与卷页; 评估其对「次年速陷」解释力的增量——即 1618 已入犯、1619 才正式破城之间的时间差意味着什么。",
       "effort": "1-2 周"
      },
-     "_party": "清·地方志"
+     "_party": "清·地方志",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -13042,7 +13359,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十一年三月, 置铁岭卫指挥使司于奉集堡。先是元将拔金完哥率其部属金千吉等来附, 至是, 遣指挥佥事李文、高颙, 镇抚杜锡, 置卫于奉集县, 以抚安其众。",
      "note": "依《明太祖实录》; 奉集堡与朝鲜铁岭系两地同名, 此铁岭卫与朝鲜半岛无关。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "T002",
@@ -13057,7 +13375,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "徙辽东铁岭卫治于沈阳、开元两界古嚚州之地。",
      "note": "嚚州即银州, 今铁岭市银州区。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "T003",
@@ -13072,7 +13391,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "李成梁字汝契, 高祖英自朝鲜内附, 授世铁岭卫指挥佥事, 遂家焉。",
      "note": "李成梁的族裔身份 (朝鲜系) 是李如松辈争议的话题, 章炳麟《訄书》曾为李成梁作赞。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T004",
@@ -13087,7 +13407,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "四年九月锡林阿大入辽东, 总兵王治道战死, 擢成梁署都督佥事代之。",
      "note": "辽东总兵驻节广宁 (今北镇), 非铁岭; 铁岭是李成梁故里与户籍。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T005",
@@ -13102,7 +13423,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "成梁镇辽 22 年, 先后奏大捷者十, 帝辄祭告郊庙, 受廷臣贺。蟒衣金缯, 岁赐稠叠。边帅武功之盛, 二百年来未有也。",
      "note": "明史明方赞美; 现代综述批评其虚报战功、杀平民冒级, 构成 record_vs_scholarship 冲突。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T006",
@@ -13117,7 +13439,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "三十四年成梁以地孤悬难守, 与督抚蹇达、赵楫建议弃之, 尽徙居民于内地。居民恋家室, 则以大军驱迫之, 死者狼籍。",
      "note": "六年累计生聚 6 万 4 千余户, 一夕尽弃。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T007",
@@ -13132,7 +13455,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历三十四年，成梁以宽甸六堡孤悬难守，奏请弃之，徙其民六万余户于内地。",
      "note": "明史万历三十四年 (1606); 部份二手综述记万历三十六年 (1608), 数值上为冲突。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T007b",
@@ -13147,7 +13471,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "维基记 1608; 与明史 1606 相差 2 年, 来源尚未点校核实。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "T008",
@@ -13162,7 +13487,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "成梁去辽十年之间, 更易八帅, 边备益弛。",
      "note": "万历十九年解任, 二十六年成梁复镇, 期间如马林等八人。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T009",
@@ -13177,7 +13503,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十三年 (1615) 卒, 享年九十。",
      "note": "公历 1615 年; 明史本传数值。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T010",
@@ -13192,7 +13519,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "李如柏时任辽东总兵, 由清河出鸦鹘关, 指向兴京老城。",
      "note": "李如柏是李成梁次子, 萨尔浒之战南路军主将。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T011",
@@ -13207,7 +13535,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "七月, 努尔哈赤亲自领兵攻占铁岭。",
      "note": "开铁之战六月开原、七月铁岭, 实为同一次战事两阶段。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "T011b",
@@ -13222,7 +13551,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "明总兵马林战死, 来自铁岭的援兵也被击败。",
      "note": "现代综述补全了清实录中略写的明方动态。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "T012",
@@ -13237,7 +13567,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "维基记后金兵 4 万; 清实录原文仅记『万骑』。数字未严格对照。",
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "T013",
@@ -13252,7 +13583,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "李成梁位望益隆, 贵极而骄, 奢修无度, 军资马价盐课市赏乾没不资, 虚报战功, 杀平民冒级。",
      "note": "与 T005 (明史赞美) 构成 record_vs_scholarship 冲突; 现代综述与明史立场差。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "T014",
@@ -13267,7 +13599,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "兵科给事中宋一韩力言弃地非策, 巡按御史熊廷弼勘奏如一韩言。",
      "note": "事件认同, 评价对立; 可作为内部冲突对带出现。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "T015",
@@ -13282,7 +13615,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "清康熙三年废卫设县, 铁岭、开原县属奉天府。",
      "note": "铁岭卫→铁岭县转型, 民国起入辽宁省。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "T016",
@@ -13307,7 +13641,8 @@ window.SANDBOX_DATA = {
       "accept": "给出双方兵力与伤亡区间, 澄清「万骑」的口径(是否为后金总动员而非攻铁岭专属兵力), 并说明明方奏报无细目的制度原因。",
       "effort": "2 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "T017",
@@ -13332,7 +13667,8 @@ window.SANDBOX_DATA = {
       "accept": "确认朝鲜实录是否对铁岭(李成梁起家地)陷落有专条, 录入其评价与情绪基调, 评估「朝鲜族裔将领故地」是否影响朝方叙事权重。",
       "effort": "1-2 周"
      },
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "T018",
@@ -13347,7 +13683,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "后金天命六年 (天启元年, 1621) 努尔哈赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取沈阳。",
      "note": "开铁陷落为熊廷弼复出背景。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "TX002",
@@ -13368,7 +13705,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX003",
@@ -13389,7 +13727,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "明史记熊廷弼出关时铁岭复失",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX004",
@@ -13410,7 +13749,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX005",
@@ -13431,7 +13771,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "兵力部署计划",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX006",
@@ -13452,7 +13793,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX007",
@@ -13473,7 +13815,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX008",
@@ -13494,7 +13837,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX009",
@@ -13515,7 +13859,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "时间推断为泰昌元年",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX010",
@@ -13536,7 +13881,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX011",
@@ -13557,7 +13903,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "朱童蒙评语",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "TX012",
@@ -13578,7 +13925,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -13926,7 +14274,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "叶赫始祖星根达尔汉, 蒙古人也, 居叶赫勒河, 因以为氏。",
      "note": "学界对「蒙古人起源说」有争议 (也有认为是海西女真), 这是清史稿采信的说法。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "Y002",
@@ -13941,7 +14290,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "十一年, 叶赫兵攻开原, 为官军所击, 退走。",
      "note": "具体兵力与战果在《明神宗实录》有专条, 待核。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "Y003",
@@ -13956,7 +14306,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十七年八月, 上亲率大兵攻叶赫, 布寨战死, 布扬古率西城降。",
      "note": "布扬古虽降, 但被努尔哈赤带走, 叶赫部由此彻底编入八旗。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "Y004",
@@ -13971,7 +14322,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "叶赫亡, 明廷不能救, 辽东自此门户洞开。",
      "note": "「叶赫亡, 明失北蔽」成为后世史学对萨尔浒战后格局的定论。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "Y005",
@@ -13986,7 +14338,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "叶赫为海西女真扈伦部之一, 与蒙古无关。",
      "note": "清史稿采「蒙古起源说」, 现代学界主流否认此说, 这是 record_vs_scholarship 冲突。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "Y010",
@@ -14010,7 +14363,8 @@ window.SANDBOX_DATA = {
       "accept": "给出叶赫亡时人口估计 (约 X 万) 与被编入八旗的具体牛录数, 注明出处",
       "effort": "2-3 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "Y011",
@@ -14032,7 +14386,8 @@ window.SANDBOX_DATA = {
       "accept": "整理至少两方史料对万历十一年叶赫—开原之战的兵力数字, 标注分歧",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -14139,7 +14494,8 @@ window.SANDBOX_DATA = {
      "color": "#8C6239",
      "compiler": "张廷玉等",
      "period": "清修",
-     "stance": "official_later_dynasty"
+     "stance": "official_later_dynasty",
+     "faction": null
     },
     {
      "id": "ming_taizu_shilu",
@@ -14205,9 +14561,10 @@ window.SANDBOX_DATA = {
      "stance": "private",
      "stance_label": "明方私修·亲历",
      "distance_label": "经略辽东者事后追记，距事约10年",
-     "party": "明·私修",
+     "party": "明·封疆奏议",
      "color": "#8B6BA8",
-     "note": "王在晋记辽阳围急、袁应泰殉城之明方视角；张铨疏论辽阳围急。"
+     "note": "王在晋记辽阳围急、袁应泰殉城之明方视角；张铨疏论辽阳围急。",
+     "faction": "feng_jiang"
     }
    ],
    "places": [
@@ -14446,7 +14803,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武八年, 全国都卫均改为都司, 定辽都卫指挥使司改为辽东都指挥使司, 简称辽东都司, 治所在辽阳城中。",
      "note": "明初置辽东卫指挥使司于洪武四年(1371), 4 年后升为都司。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "L002",
@@ -14461,7 +14819,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "领 25 卫, 自在州、安乐州, 128 个千户所, 官军十九万零三百人。",
      "note": "辽东都司东至鸭绿江, 西至山海关, 南至旅顺海口, 北至开原。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "L003",
@@ -14476,7 +14835,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "永乐十四年, 都指挥使王真包砖完砌。新城南北宽 1 里, 东西长 4 里, 城墙高 3 丈, 开设东、西、北三座城门。",
      "note": "洪武十二年 (1379) 始建土城, 至此包砖形成南/北二城布局。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "L004",
@@ -14491,7 +14851,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "668 年 (唐高宗总章元年), 攻灭高句丽, 设安东都护府, 辽东城 (辽城州) 一度为都护府治所所在。",
      "note": "唐代安东都护府治所后迁至平壤, 辽阳为辽东城府。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L005",
@@ -14506,7 +14867,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "928 年, 辽太宗改辽阳府为南京, 迁东丹国首都于辽阳。938 年, 因幽州升为南京, 辽阳改称东京, 东京辽阳府遂为五京之一。",
      "note": "东京辽阳府为五京中人口最多的城市, 也是金朝东北的行政中心。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L006",
@@ -14521,7 +14883,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "至元二十四年 (1287), 元朝设辽阳等处行中书省, 统辖东北, 称为京师左臂。",
      "note": "辽阳行省下辖 7 路、1 府、12 州、10 县, 京师左臂。",
-     "_party": "明修官史"
+     "_party": "明修官史",
+     "_faction": null
     },
     {
      "id": "L007",
@@ -14536,7 +14899,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "1161 年 (金海陵王正隆六年或金世宗大定元年), 完颜雍在辽阳拥兵称帝, 史称金世宗, 并改元大定。",
      "note": "辽阳作为金朝东北政治中心的延续。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L008",
@@ -14551,7 +14915,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "后金天命六年 (天启元年, 1621), 努尔哈赤统帅八旗劲旅, 一举攻下明朝的东北重镇辽阳, 随即迁都于此。",
      "note": "袁应泰任辽东经略时, 1621 年辽阳陷落, 此前 1621 浑河之战后沈阳先陷。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "L009",
@@ -14566,7 +14931,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "辽阳城年久失修, 颓圮不堪, 努尔哈赤决定在太子河东岸修筑新城, 即东京城。",
      "note": "东京城抚近门等遗址尚存。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "L010",
@@ -14581,7 +14947,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天命十年 (天启五年), 努尔哈赤迁都沈阳, 扩建城池, 加固城垣, 修太庙、宫殿等。",
      "note": "沈阳反超辽阳, 是东北政治中心的一次决定性转移。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "L011",
@@ -14596,7 +14963,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "迁都辽阳, 改建东京城, 标志着后金从地方政权升格为可与明朝对峙的帝国。",
      "note": "清方评价, 与现代综述对『破坏—迁民—重建』评价有不同。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "L011b",
@@ -14611,7 +14979,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "与 L011 清方记录形成 record_vs_scholarship 冲突; 立场派生, 不裁决。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L012",
@@ -14626,7 +14995,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "清太祖迁都沈阳, 改变了辽阳与沈阳的命运, 从此辽阳地位一直在沈阳之下, 这个格局延续到今天。",
      "note": "现代综述, 1625 至今 400 年的格局。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L013",
@@ -14641,7 +15011,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "北岸川湖等兵先后与后金红巴牙喇军、右翼四旗兵激战, 斩敌二三千人, 终因体力不支战败, 大部被歼。机动能力较差尾行最后的浙兵因北岸受阻被迫于南岸布车阵火器防御, 直至火药耗尽。",
      "note": "浑河之战实为辽阳陷落的前奏, 6 小时内明军步兵精锐折损大半。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "L014",
@@ -14656,7 +15027,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "唐太宗李世民亲征, 克辽东城, 为辽城州首府。",
      "note": "辽阳古称襄平, 唐以此为辽东城。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L015",
@@ -14671,7 +15043,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "918 年, 辽太祖神册三年, 耶律阿保机攻占辽东城。",
      "note": "契丹开始对辽东的统治, 928 年后东丹国首都迁此。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L016",
@@ -14696,7 +15069,8 @@ window.SANDBOX_DATA = {
       "accept": "录入朝鲜方对辽阳陷落的记载与朝方反应(是否派使、是否哀悼明之失辽东), 标注与明/清记载的偏差与情绪基调。",
       "effort": "1-2 周"
      },
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L017",
@@ -14721,7 +15095,8 @@ window.SANDBOX_DATA = {
       "accept": "给出双方兵力与伤亡的区间估计, 标注口径差异(「兵」含不含有夫/辅兵/田卒), 并说明为何明清两方均无可交叉验证的细目。",
       "effort": "2-3 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "L018",
@@ -14736,7 +15111,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "",
      "note": "从熊廷弼经略到袁应泰再到王化贞, 明廷内部斗争加速了辽东战事的崩溃。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "L019",
@@ -14761,7 +15137,8 @@ window.SANDBOX_DATA = {
       "accept": "把维基词条拆解为「哪些结论有独立一手支撑 / 哪些仅靠二手综述」, 输出一张溯源表, 供本项目「来源依赖度」压力测试(关掉二手综述哪些结论会塌)使用。",
       "effort": "1 周"
      },
-     "_party": "二手综述"
+     "_party": "二手综述",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -14782,7 +15159,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "原文未明确纪年，据上下文推断为泰昌元年九月。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -14803,7 +15181,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -14824,7 +15203,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "降人处之辽、沈二城。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -14845,7 +15225,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "province",
      "note": "议者言收降过多，或为敌用。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -14866,7 +15247,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -14887,7 +15269,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "贺世贤、尤世功战死。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -14908,7 +15291,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -14929,7 +15313,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁应泰督诸将出城五里迎战，军败多死。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -14950,7 +15335,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "大清兵从小西门入，城中大乱。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -14971,7 +15357,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012",
@@ -14992,7 +15379,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001_M1",
@@ -15013,7 +15401,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁应泰接替熊廷弼任辽东经略",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006_M1",
@@ -15034,7 +15423,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁应泰谋进取抚顺的方略",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007_M1",
@@ -15055,7 +15445,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁应泰招降蒙古饥民，安置于辽阳、沈阳",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008_M1",
@@ -15076,7 +15467,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "辽阳城破，袁应泰自缢死",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009_M1",
@@ -15097,7 +15489,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "沈阳城破，贺世贤、尤世功战死",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -15118,7 +15511,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "陈策、童仲揆援辽阳途中战死",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011_M1",
@@ -15139,7 +15533,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁应泰在辽阳城破后自缢",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012_M1",
@@ -15160,7 +15555,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "《明史》对袁应泰的军事能力评价",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001_M2",
@@ -15181,7 +15577,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "明方私修，立场为明方",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX002_M2",
@@ -15202,7 +15599,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX003_M2",
@@ -15223,7 +15621,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX004_M2",
@@ -15244,7 +15643,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX005_M2",
@@ -15265,7 +15665,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "明方私修，对袁应泰有批评",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX006_M2",
@@ -15286,7 +15687,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX007_M2",
@@ -15307,7 +15709,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX008_M2",
@@ -15328,7 +15731,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "明方私修，袁应泰死节",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX009_M2",
@@ -15349,7 +15753,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX010_M2",
@@ -15370,7 +15775,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.5,
      "scale": "province",
      "note": "王在晋私论，明方立场，非战役直接记录",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     }
    ],
    "conflicts": [
@@ -15637,7 +16043,8 @@ window.SANDBOX_DATA = {
      "color": "#8C6239",
      "compiler": "张廷玉等",
      "period": "清修",
-     "stance": "official_later_dynasty"
+     "stance": "official_later_dynasty",
+     "faction": null
     },
     {
      "id": "ming_taizu_shilu",
@@ -15727,9 +16134,10 @@ window.SANDBOX_DATA = {
      "stance": "private",
      "stance_label": "明方私修·亲历",
      "distance_label": "经略辽东者事后追记，距事约10年",
-     "party": "明·私修",
+     "party": "明·封疆奏议",
      "color": "#8B6BA8",
-     "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。"
+     "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。",
+     "faction": "feng_jiang"
     }
    ],
    "places": [
@@ -15997,7 +16405,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
      "note": "沈阳中卫与中屯卫、抚顺千户所同城分治, 一城三衙。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "S002",
@@ -16012,7 +16421,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "成化四年, 都指挥阚能甃砖城垣, 周九里十步。",
      "note": "明代中后期沈阳城垣规模自此定型。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S003",
@@ -16027,7 +16437,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "辽东苦寒, 冬月土冻, 乃令戍卒汲水, 夜则冻成冰块, 晨起砌墙, 覆以草土。",
      "note": "以冰筑墙是辽东诸卫 (开原、铁岭、沈阳) 共同做法, 不止沈阳一城。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S004",
@@ -16042,7 +16453,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "沈阳居辽东之中, 北通开铁, 南接辽海, 西连广宁, 实为辽东锁钥。",
      "note": "这是清史与明史都认同的「沈阳地控辽沈」定论, 但「沈阳锁钥」是后世评价, 明代不一定有此说法。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S005",
@@ -16057,7 +16469,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天启元年三月十三日, 后金兵薄沈阳城下, 巡抚袁应泰督诸军拒守。",
      "note": "三日之内, 沈阳辽阳相继陷落。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "S006",
@@ -16072,7 +16485,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "上令诸军佯为耕田状, 以诱明军, 而精骑伏林间。",
      "note": "此为清方叙事; 学界有疑为事后附会的兵家叙事。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "S007",
@@ -16087,7 +16501,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "应泰本议坚守, 然最后下令出战, 兵败, 城随破。",
      "note": "现代史家多认为袁应泰「开关出战」是沈阳失陷的直接原因, 决策失误为关键。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S008",
@@ -16102,7 +16517,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "陈策、童仲揆率浙川兵援沈阳, 城已破, 乃结阵浑河桥头。",
      "note": "援军一日夜 70 里赶到浑河桥头, 与朝鲜援军会合。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "S009",
@@ -16117,7 +16533,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "弘立率军至浑河桥头, 后金兵四面围合, 大败, 弘立被擒。",
      "note": "李民寏《栅中日录》是亲历者记录, 是浑河之战最详史料之一。",
-     "_party": "朝鲜·亲历"
+     "_party": "朝鲜·亲历",
+     "_faction": null
     },
     {
      "id": "S010",
@@ -16132,7 +16549,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "陈策、童仲揆皆战死, 浙兵死者七千, 朝鲜军死者过半。",
      "note": "此战是 1621 辽东战局的关键转折。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "S011",
@@ -16147,7 +16565,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "城破, 应泰佩剑印自缢于官署。",
      "note": "袁应泰是萨尔浒战后继熊廷弼任辽东巡抚, 半年内辽东全失, 自缢以殉。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S012",
@@ -16162,7 +16581,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天命十年三月, 上自辽阳迁都沈阳, 改其名曰盛京。",
      "note": "迁都沈阳而非辽阳, 反映后金军事战略中心北移。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "S013",
@@ -16177,7 +16597,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "崇德元年, 皇太极即位于盛京, 改国号为大清。",
      "note": "盛京 (沈阳) 自此作为清初三京之一, 直至顺治入关迁都北京。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "S014",
@@ -16192,7 +16613,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "袁应泰召募流民, 放宽军律, 看似仁政, 实削弱军队纪律, 是战败主因。",
      "note": "清方《清太祖实录》将其神化为「天祐」, 与学界评价形成 record_vs_scholarship 冲突。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "S015",
@@ -16207,7 +16629,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "上自将诸贝勒, 大军攻沈阳。",
      "note": "清实录对己方兵力常略而不书, 与明方数字差异极大。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "S016",
@@ -16222,7 +16645,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "应泰集兵号称十三万, 然实缺额甚多, 不堪用。",
      "note": "明方数字常「号称」, 实际编组可能仅半数。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "S017",
@@ -16237,7 +16661,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "沈阳、辽阳既失, 广宁尚守, 至天启二年亦失。",
      "note": "1621 三月之陷触发 1622 广宁之失, 是辽东全境丧失的连锁起点。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S018",
@@ -16252,7 +16677,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "弘立率军至浑河, 大败, 弘立被擒, 努尔哈赤善待之。",
      "note": "朝鲜对浑河之战的官方记载主要在《李朝实录》光海君日记。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "S019",
@@ -16267,7 +16693,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "凡明兵降者, 得五千一百零三员。",
      "note": "此为清实录对沈阳之战战果的夸张数字, 与明方数字相差 25 倍。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "S020",
@@ -16282,7 +16709,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "沈阳陷后, 百姓被迁或逃散, 山东登州府收辽民甚多。",
      "note": "此条说「我们不知道精确分流比例」更准确, 见 S021。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "S021",
@@ -16306,7 +16734,8 @@ window.SANDBOX_DATA = {
       "accept": "给出沈阳人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处与算法",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S022",
@@ -16329,7 +16758,8 @@ window.SANDBOX_DATA = {
       "accept": "找到一处具体工程数据 (例如某卫城筑墙用了多少冰块、多少戍卒、工时几月)",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "S023",
@@ -16353,7 +16783,8 @@ window.SANDBOX_DATA = {
       "accept": "给出朝鲜军死亡数字的区间估计, 标注三方分歧与史料口径差异",
       "effort": "1-2 周"
      },
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "S024",
@@ -16368,7 +16799,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
      "note": "同 S001 的另一条叙事, 此处为事件主语。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -16389,7 +16821,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "原文未明确纪年，据上下文推断为泰昌元年九月",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -16410,7 +16843,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -16431,7 +16865,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -16452,7 +16887,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -16473,7 +16909,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "原文未明确纪日，据上下文推断",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -16494,7 +16931,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -16515,7 +16953,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "原文未明确纪日，据上下文推断",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -16536,7 +16975,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -16557,7 +16997,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -16578,7 +17019,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -16599,7 +17041,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "county",
      "note": "原文未明说，但据前后文可推出",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012",
@@ -16620,7 +17063,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001_M2",
@@ -16641,7 +17085,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "明方私修，兵力为明方估计",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX002_M2",
@@ -16662,7 +17107,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX003_M2",
@@ -16683,7 +17129,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX004_M2",
@@ -16704,7 +17151,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX005_M2",
@@ -16725,7 +17173,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX006_M2",
@@ -16746,7 +17195,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX007_M2",
@@ -16767,7 +17217,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX008_M2",
@@ -16788,7 +17239,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "明方估计杀伤数",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX009_M2",
@@ -16809,7 +17261,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX010_M2",
@@ -16830,7 +17283,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "张铨疏中评价",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX011_M2",
@@ -16851,7 +17305,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.7,
      "scale": "province",
      "note": "",
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     },
     {
      "id": "SX012_M2",
@@ -16880,7 +17335,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "补充明军参战兵力总数"
      },
-     "_party": "明·私修"
+     "_party": "明·封疆奏议",
+     "_faction": "feng_jiang"
     }
    ],
    "conflicts": [],
@@ -17175,7 +17631,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十一年, 置抚顺千户所, 隶沈阳中卫。",
      "note": "千户所秩低, 但因其扼辽东边墙外要冲, 实控建州女真朝贡通道。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "F002",
@@ -17190,7 +17647,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四年, 令辽东抚按于抚顺关开马市, 以缎布盐粮易女真马匹人参。",
      "note": "抚顺关马市是明朝羁縻女真的核心节点。废止日期在《明神宗实录》有专条, 待核。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "F003",
@@ -17205,7 +17663,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "万历四十六年四月, 努尔哈赤以七大恨告天, 率步骑攻抚顺关, 城破, 游击李永芳降。",
      "note": "「七大恨」原文见《清太祖实录》天命三年四月, 措辞屡经改窜。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "F004",
@@ -17220,7 +17679,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "永芳率其属出城降, 上以礼待之, 赐以貂帽貂裘。",
      "note": "李永芳是明方记载中首位投降后金的明军中高级将领, 此降被视为明辽东军心瓦解之始。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "F005",
@@ -17235,7 +17695,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "辽东抚顺城陷, 贼兵所过无噍类, 识者皆忧其在中原为患。",
      "note": "李朝对抚顺之陷有详细记载, 侧重点在女真威胁论。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "F006",
@@ -17250,7 +17711,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "抚顺马市不只是互市点, 更是努尔哈赤刺探辽东情报与获取战略物资的窗口。",
      "note": "部分学者强调努尔哈赤的独立军事-政治结构, 不应过分高估马市作用。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "F010",
@@ -17274,7 +17736,8 @@ window.SANDBOX_DATA = {
       "accept": "找到一条直接记述李永芳投降前与辽东巡抚或上级沟通、或与部下商议的原话或档案",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "F011",
@@ -17297,7 +17760,8 @@ window.SANDBOX_DATA = {
       "accept": "给出至少十年间抚顺关年交易额的区间估计, 注明出处与算法",
       "effort": "2-4 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -17318,7 +17782,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "明史视角，称'我大清兵'",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -17339,7 +17804,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -17360,7 +17826,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -17381,7 +17848,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "清河非白名单地点，未映射",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -17402,7 +17870,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "地点为推断，原文未明言",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -17423,7 +17892,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -17444,7 +17914,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.8,
      "scale": "empire",
      "note": "此为号称，非实数",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -17465,7 +17936,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "宽奠、开原非白名单地点",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -17486,7 +17958,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -17507,7 +17980,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -17528,7 +18002,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012",
@@ -17549,7 +18024,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -17831,7 +18307,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武九年置海州卫, 初治牛家庄, 后徙今所。",
      "note": "初治牛庄的具体迁移年份 (永乐间徙今海城) 在《辽东志》有更细记载, 待核。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "H002",
@@ -17846,7 +18323,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "海州卫与朝鲜平安道互市, 每岁以绢布易朝鲜马匹, 岁以为常。",
      "note": "朝鲜《通文馆志》载朝鲜使臣来往海州的具体路线, 可与明方对照。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "H003",
@@ -17861,7 +18339,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天启元年三月, 后金兵攻海州, 参将刘廷宪拒守, 城破, 死之。",
      "note": "海州陷与沈阳陷 (三月十三) 仅隔六日, 是后金同一战役序列。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "H004",
@@ -17876,7 +18355,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "辽东巡抚袁应泰以海州已陷告急, 朝议援明与否, 终以兵疲财乏未遣。",
      "note": "与沈阳战役不同, 海州陷落时李朝并未实际出兵援助。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "H005",
@@ -17891,7 +18371,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "文龙以海州已陷, 率从者 197 人, 浮海至皮岛, 收辽民为军, 遂开东江镇。",
      "note": "东江镇是后金侧翼长期困扰, 直至 1630 年毛文龙被袁崇焕诛杀。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "H010",
@@ -17914,7 +18395,8 @@ window.SANDBOX_DATA = {
       "accept": "找到海州卫治所迁移的明确年份与诏令原文",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "H011",
@@ -17937,7 +18419,8 @@ window.SANDBOX_DATA = {
       "accept": "给出海州人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -18170,7 +18653,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武四年置盖州卫, 隶辽东都司。",
      "note": "盖州元代为盖州路, 明初降为卫。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "G002",
@@ -18185,7 +18669,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天启元年三月, 后金兵攻盖州, 副将黄之骥拒守, 城破, 死之。",
      "note": "盖州与海州陷落仅隔十日, 是后金同一战役序列。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "G003",
@@ -18200,7 +18685,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "上命四王、皇太极率兵四万攻盖州。",
      "note": "「四万」数字与「海州之战实际出动兵力」之比, 学界有质疑, 待考。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "G004",
@@ -18215,7 +18701,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "盖州元代为盖州路, 明洪武四年降路为卫。",
      "note": "学界对此无争议, 与明方《明太祖实录》记载一致。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "G010",
@@ -18238,7 +18725,8 @@ window.SANDBOX_DATA = {
       "accept": "从至少两方史料中找出杨烈崛死法的具体细节, 注明分歧",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "G011",
@@ -18260,7 +18748,8 @@ window.SANDBOX_DATA = {
       "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -18467,7 +18956,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武十四年, 置复州卫。",
      "note": "复州扼辽南陆桥, 南通金州、北连盖州。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "FZ002",
@@ -18482,7 +18972,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天命六年, 取复州、盖州。",
      "note": "复州陷与辽沈之陷同属 1621 三月战役序列。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "FZ003",
@@ -18497,7 +18988,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "毛文龙据皮岛, 时出兵袭复州、金州沿海。",
      "note": "东江镇活动使后金南向海运与朝鲜通道长期受扰。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "FZ004",
@@ -18512,7 +19004,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "复州居辽南陆桥, 为东江镇袭辽之跳板。",
      "note": "与金州同为辽南门户, 海陆皆要。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "FZ010",
@@ -18534,7 +19027,8 @@ window.SANDBOX_DATA = {
       "accept": "核定复州陷落的具体月日与明方弃守过程",
       "effort": "1-2 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "FZ011",
@@ -18557,7 +19051,8 @@ window.SANDBOX_DATA = {
       "accept": "量化东江镇对复州/金州袭击的次数与成果, 对比双方叙事",
       "effort": "2-3 周"
      },
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -18765,7 +19260,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武十年, 置金州卫, 辖旅顺口。",
      "note": "金州卫为辽东最南卫所, 海运通登莱、朝鲜。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "JN002",
@@ -18780,7 +19276,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天命六年, 取金州。",
      "note": "金州陷后, 辽东半岛南端尽入后金, 唯沿海为东江镇所扰。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "JN003",
@@ -18795,7 +19292,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "毛文龙渡海, 复金州、旅顺, 旋复为后金所夺。",
      "note": "东江镇收复多为袭取, 未能久守, 但其牵制作用明方与清方评价悬殊。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "JN004",
@@ -18810,7 +19308,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "金州卫控半岛南端, 海运通登莱, 援辽之喉。",
      "note": "海运通道使金州在 1621 后仍具战略价值。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "JN010",
@@ -18833,7 +19332,8 @@ window.SANDBOX_DATA = {
       "accept": "复原金州—登莱—朝鲜海运路线与年频次, 标注史料缺口",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "JN011",
@@ -18855,7 +19355,8 @@ window.SANDBOX_DATA = {
       "accept": "核定东江镇收复金州/旅顺的次数与每次持续时间",
       "effort": "1-2 周"
      },
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -18982,6 +19483,20 @@ window.SANDBOX_DATA = {
      "compiler": "多家学术著作",
      "period": "现代",
      "stance": "scholarship"
+    },
+    {
+     "id": "zhuozhongzhi",
+     "title": "酌中志",
+     "juan": "卷上·先监张公纪略 / 忧危竑议 / 缢略（魏忠贤专政、诛东林、熊廷弼之死）",
+     "compiler": "刘若愚（内臣）",
+     "compiled_year": 1640,
+     "stance": "third_party_internal",
+     "stance_label": "内臣自述·半独立",
+     "distance_label": "魏忠贤败后追记，距事约 15 年",
+     "party": "明·内臣文献",
+     "faction": "nei_guan",
+     "color": "#7A6A53",
+     "note": "宦官刘若愚所撰宫禁内臣自述，价值在内部视角；魏忠贤败后作此自辩，亦带立场。记魏忠贤专政、诛东林、宫内规制。"
     }
    ],
    "places": [
@@ -19064,6 +19579,62 @@ window.SANDBOX_DATA = {
      "role": "后金大汗",
      "note": "1622 年正月取广宁",
      "influence": 0
+    },
+    {
+     "id": "xiong_tingbi",
+     "name": "熊廷弼",
+     "faction": "feng_jiang",
+     "note": "辽东经略，广宁之失后被逮，天启五年遭阉党诛杀。",
+     "influence": 0
+    },
+    {
+     "id": "liu_ruoyu",
+     "name": "刘若愚",
+     "faction": "nei_guan",
+     "note": "内臣，《酌中志》作者，魏忠贤败后自辩，记宫禁内部与阉党事。",
+     "influence": 5
+    },
+    {
+     "id": "wei_zhongxian",
+     "name": "魏忠贤",
+     "faction": "eunuch",
+     "note": "阉党首领，天启朝专政。",
+     "influence": 1
+    },
+    {
+     "id": "feng_quan",
+     "name": "冯铨",
+     "faction": "eunuch",
+     "note": "阉党骨干，与熊廷弼有私怨，借讲筵奏请诛之。",
+     "influence": 0
+    },
+    {
+     "id": "yang_lian",
+     "name": "杨涟",
+     "faction": "donglin",
+     "note": "东林骨干，弹魏忠贤二十四罪，死于阉党诏狱。",
+     "influence": 2
+    },
+    {
+     "id": "cui_chengxiu",
+     "name": "崔呈秀",
+     "faction": "eunuch",
+     "note": "阉党骨干，进《点将录》《天鉴录》列东林姓名。",
+     "influence": 0
+    },
+    {
+     "id": "ke_shi",
+     "name": "客氏",
+     "faction": "eunuch",
+     "note": "奉圣夫人，魏忠贤私党。",
+     "influence": 0
+    },
+    {
+     "id": "wang_tigan",
+     "name": "王体乾",
+     "faction": "eunuch",
+     "note": "司礼监掌印，党附魏忠贤。",
+     "influence": 0
     }
    ],
    "assertions": [
@@ -19080,7 +19651,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十五年, 置广宁卫, 隶辽东都司。",
      "note": "广宁在辽代即为显州, 明初降为卫, 正统后辽东镇移驻。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "G002",
@@ -19095,7 +19667,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "土木之变, 辽东镇总兵移驻广宁, 节制辽西诸卫。",
      "note": "广宁由此成为明在辽西的最高军事支点。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "G003",
@@ -19110,7 +19683,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天启二年正月, 后金取广宁, 王化贞弃城走, 孙得功降, 熊廷弼以辽西民众入关。",
      "note": "经略熊廷弼主守、巡抚王化贞主战, 经抚不和是广宁速陷的直接原因。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "G004",
@@ -19125,7 +19699,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "广宁已陷, 辽西尽失, 朝议沿江增戍, 以防清兵渡。",
      "note": "朝鲜对广宁之陷的反应, 与明方记载相互印证明已无辽西屏障。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "G005",
@@ -19140,7 +19715,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "广宁之败, 经抚异议, 事权不一, 非战之罪也。",
      "note": "亦有学者强调明辽东总体战略空虚, 广宁孤城难守, 不应全归咎于人争。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "G010",
@@ -19163,7 +19739,8 @@ window.SANDBOX_DATA = {
       "accept": "给出广宁陷落时明军在辽西的估计兵力区间与主要部署, 注明分歧来源",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "G011",
@@ -19185,7 +19762,8 @@ window.SANDBOX_DATA = {
       "accept": "整理至少两方史料对经抚责任的不同表述, 标出史料政治立场的影响",
       "effort": "1-2 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -19206,7 +19784,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -19227,7 +19806,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -19248,7 +19828,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -19269,7 +19850,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -19290,7 +19872,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -19311,7 +19894,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "time 为推断，原文未明确纪年",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -19332,7 +19916,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -19353,7 +19938,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -19374,7 +19960,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -19395,7 +19982,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "place 未在白名单，待消歧",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -19416,7 +20004,206 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "time 为推断，原文未明确纪年",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
+    },
+    {
+     "id": "ZZ001",
+     "subject": "person:liu_ruoyu",
+     "predicate": "自述遭阉党排斥",
+     "value_text": "天启元年冬被魏忠贤退于御马监",
+     "time": {
+      "era_text": "天启元年",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "天啟元年冬，自司禮監被魏忠賢退於御馬監",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "内臣刘若愚自述，魏忠贤专政下被排挤出司礼监。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ002",
+     "subject": "person:liu_ruoyu",
+     "predicate": "自述遭贬斥",
+     "value_text": "天启七年十二月被降为净军发往南京",
+     "time": {
+      "era_text": "天启七年",
+      "start": "1627-01-01",
+      "end": "1627-12-31",
+      "gregorian_year": 1627
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "天啟七年十二月，著降做淨軍，發去南京孝陵衛種菜",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "刘若愚自述。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ003",
+     "subject": "person:liu_ruoyu",
+     "predicate": "自述下狱",
+     "value_text": "崇祯元年五月被逮入刑部狱",
+     "time": {
+      "era_text": "崇祯元年",
+      "start": "1628-01-01",
+      "end": "1628-12-31",
+      "gregorian_year": 1628
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "崇禎元年五月初一，逮入刑部獄",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "阉党败后刘若愚仍被牵入诏狱。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ004",
+     "subject": "person:liu_ruoyu",
+     "predicate": "自述拟斩",
+     "value_text": "崇祯元年六月被会审拟斩",
+     "time": {
+      "era_text": "崇祯元年",
+      "start": "1628-01-01",
+      "end": "1628-12-31",
+      "gregorian_year": 1628
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "崇禎元年六月二十日，中府會審……李永貞、若愚、李實俱引……俱決不待時",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "刘若愚自辩：暗害杨、左者非己。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ005",
+     "subject": "person:liu_ruoyu",
+     "predicate": "自述改判绞",
+     "value_text": "崇祯八年五月被改判绞刑",
+     "time": {
+      "era_text": "崇祯八年",
+      "start": "1635-01-01",
+      "end": "1635-12-31",
+      "gregorian_year": 1635
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "崇禎八年五月內，遂將若愚改從而加功者絞之",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "刘若愚自述冤苦。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ006",
+     "subject": "event:guangning_fall",
+     "predicate": "熊廷弼之死源于阉党私怨",
+     "value_text": "阉党冯铨因坊间小说《辽东传》'冯布政父子奔逃'情节羞愤，借讲筵奏请诛熊廷弼，非纯军事失败",
+     "time": {
+      "era_text": "天启五年",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "其害經略熊廷弼者，因書坊賣《遼東傳》，其四十八回內有《馮布政父子奔逃》一節，極恥而恨之，令妖弁蔣應暘發其事於講筵，以此傳出袖中而奏。致熊正法",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.85,
+     "scale": "county",
+     "note": "内臣刘若愚直指熊廷弼之死源于阉党冯铨个人私怨（小说情节羞辱），是明朝内派系倾轧致封疆大吏被杀的典型，印证'派系因自身利益润色夸张'。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ007",
+     "subject": "person:yang_lian",
+     "predicate": "弹魏忠贤二十四罪",
+     "value_text": "天启四年五月杨涟上疏参魏忠贤二十四罪，阉党由此反扑",
+     "time": {
+      "era_text": "天启四年",
+      "start": "1624-01-01",
+      "end": "1624-12-31",
+      "gregorian_year": 1624
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "五月二十九日，憲臣楊漣參逆賢二十四罪之疏上矣",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "东林杨涟弹阉党首领，引发阉党大狱，杨涟死于诏狱。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ008",
+     "subject": "person:yang_lian",
+     "predicate": "被列入阉党迫害名录",
+     "value_text": "崔呈秀进《点将录》《天鉴录》列东林渠魁（叶向高、杨涟、左光斗等），阉党据此迫害",
+     "time": {
+      "era_text": "天启五年",
+      "start": "1625-01-01",
+      "end": "1625-12-31",
+      "gregorian_year": 1625
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "崔呈秀密付逆賢之《天鑒錄》者，首列東林渠魁葉向高、韓爌、孫承宗、劉一燝、趙南星、楊漣、惠世揚、高攀龍、左光斗……《點將錄》者……大刀楊漣、智多星繆昌期等共三十六人",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "阉党编纂名录系统性诬东林，杨涟被列为'大刀'。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
+    },
+    {
+     "id": "ZZ009",
+     "subject": "person:wei_zhongxian",
+     "predicate": "专政党附",
+     "value_text": "魏忠贤专政，客氏、王体乾党附，矫旨杀内臣王安等",
+     "time": {
+      "era_text": "天启元年",
+      "start": "1621-01-01",
+      "end": "1621-12-31",
+      "gregorian_year": 1621
+     },
+     "place": "guangning",
+     "source": "zhuozhongzhi",
+     "quote": "客氏造謀也。其母老矣……王體乾殺王太監安、王國臣等，皆客氏造謀也",
+     "quote_status": "paraphrase_unverified",
+     "layer": "record",
+     "confidence": 0.9,
+     "scale": "person",
+     "note": "内臣视角记魏忠贤—客氏—王体乾阉党核心。",
+     "_party": "明·内臣文献",
+     "_faction": "nei_guan"
     }
    ],
    "conflicts": [
@@ -19659,7 +20446,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "洪武二十四年, 置广宁中屯卫于锦州。",
      "note": "锦州为辽西走廊咽喉, 北卫广宁、南卫宁远。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "J002",
@@ -19674,7 +20462,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "崇祯十四年, 大清兵围锦州, 祖大寿御于城。",
      "note": "松锦之战序幕, 明调洪承畴总督蓟辽援锦。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "J003",
@@ -19689,7 +20478,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "十五年, 松山破, 洪承畴被擒, 祖大寿以锦州降。",
      "note": "明方《崇祯实录》记洪承畴「殉难」, 清方记其被擒后降, 立场派生明显分歧。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "J004",
@@ -19704,7 +20494,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "清兵围锦州, 明援大溃, 辽西旦夕且不保。",
      "note": "朝鲜作为第三方, 对清军战力增长的观察较客观。",
-     "_party": "朝鲜官方"
+     "_party": "朝鲜官方",
+     "_faction": null
     },
     {
      "id": "J005",
@@ -19719,7 +20510,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "松锦既败, 蓟辽无可用之兵, 关门单弱。",
      "note": "此役与 1619 萨尔浒、1621 辽沈之陷并列为明亡三大节点。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "J010",
@@ -19742,7 +20534,8 @@ window.SANDBOX_DATA = {
       "accept": "给出松锦之战明军总兵力的估计区间, 列明各说的出处与采信理由",
       "effort": "2-3 周"
      },
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "J011",
@@ -19764,7 +20557,8 @@ window.SANDBOX_DATA = {
       "accept": "对比祖大寿两次降清的史料记述, 分析其作为明将降清的特殊处境",
       "effort": "2-3 周"
      },
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -19998,7 +20792,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "宣德三年, 置宁远卫。",
      "note": "宁远为辽西最南大城, 关宁锦防线核心。",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "N002",
@@ -20013,7 +20808,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "上攻宁远, 袁崇焕凭城固守, 炮伤甚, 七月崩。",
      "note": "明方记「炮毙虏首」, 清方讳言死因, 立场派生分歧明显。",
-     "_party": "清修官史"
+     "_party": "清修官史",
+     "_faction": null
     },
     {
      "id": "N003",
@@ -20028,7 +20824,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "天启七年, 清攻宁远、锦州, 袁崇焕御之, 清兵退。",
      "note": "宁锦之捷是袁崇焕督师期间对清的第二次大胜。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "N004",
@@ -20043,7 +20840,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "崇祯十七年, 李自成陷北京, 吴三桂弃宁远, 引清兵入关。",
      "note": "关宁锦防线至此终结, 清兵由此入主中原。",
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "N005",
@@ -20058,7 +20856,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "quote": "宁远一城, 牵制后金者二十年。",
      "note": "亦有观点认为明长期被动据城, 丧失野战主动权, 防线本质是消耗。",
-     "_party": "学界"
+     "_party": "学界",
+     "_faction": null
     },
     {
      "id": "N010",
@@ -20081,7 +20880,8 @@ window.SANDBOX_DATA = {
       "accept": "梳理努尔哈赤死因的各家说法与史料依据, 给出最可能结论及存疑点",
       "effort": "2-3 周"
      },
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "N011",
@@ -20103,7 +20903,8 @@ window.SANDBOX_DATA = {
       "accept": "整理袁崇焕经略辽西的具体措施与所受制约, 分析其成败",
       "effort": "2-4 周"
      },
-     "_party": "明廷官方"
+     "_party": "明廷官方",
+     "_faction": null
     },
     {
      "id": "SX001",
@@ -20124,7 +20925,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "侯恂推荐，破格提拔",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002",
@@ -20145,7 +20947,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "袁崇焕巡视关内外后，向朝廷表态",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003",
@@ -20166,7 +20969,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "在孙承宗召集的军事会议上，袁崇焕主张守宁远",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004",
@@ -20187,7 +20991,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "袁崇焕制定宁远城修筑规格",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005",
@@ -20208,7 +21013,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕东巡广宁所率兵力",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006",
@@ -20229,7 +21035,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕与孙承宗商议，派兵占据并修缮锦州等城",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007",
@@ -20250,7 +21057,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕反对高第撤退锦州、右屯等城的命令",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008",
@@ -20271,7 +21079,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕拒绝撤离宁远、前屯",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009",
@@ -20292,7 +21101,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "后金军进攻宁远",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010",
@@ -20313,7 +21123,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "宁远之战，明军击退后金军",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011",
@@ -20334,7 +21145,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "宁远大捷后，袁崇焕升任右佥都御史",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012",
@@ -20355,7 +21167,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕提出凭坚城用大炮的战略",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX001_M1",
@@ -20376,7 +21189,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "袁崇焕因侯恂推荐破格提拔",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX002_M1",
@@ -20397,7 +21211,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "广宁师溃后，袁崇焕独自考察关内外形势",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX003_M1",
@@ -20418,7 +21233,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕自请守关",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX004_M1",
@@ -20439,7 +21255,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "袁崇焕制定宁远城规制，祖大寿原筑仅十一且疏薄",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX005_M1",
@@ -20460,7 +21277,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "宁远城建成后成为关外重镇",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX006_M1",
@@ -20481,7 +21299,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "袁崇焕率军东巡广宁，历十三山，抵右屯",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX007_M1",
@@ -20502,7 +21321,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "province",
      "note": "高第令撤锦州、右屯等城，袁崇焕力爭不可",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX008_M1",
@@ -20523,7 +21343,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "高第欲并撤宁、前二城，袁崇焕拒绝",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX009_M1",
@@ -20544,7 +21365,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "后金军进攻宁远",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX010_M1",
@@ -20565,7 +21387,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "袁崇焕与满桂、祖大寿等誓死守城",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX011_M1",
@@ -20586,7 +21409,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "county",
      "note": "宁远之战明军获胜，后金军解围",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     },
     {
      "id": "SX012_M1",
@@ -20607,7 +21431,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "scale": "empire",
      "note": "宁远大捷后袁崇焕升任右佥都御史",
-     "_party": "清修·明臣"
+     "_party": "清修·明臣",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -20866,7 +21691,8 @@ window.SANDBOX_DATA = {
      "claim": "唐爱丽在于金宝十三岁、过年时被于国强持菜刀追打后离家出走。",
      "quote": "唐爱丽不想死，所以她走了。",
      "confidence": 0.9,
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N02",
@@ -20877,7 +21703,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "于国强临终忏悔：自己也曾打老婆，唐爱丽出走主因是他施暴而非家贫。",
      "quote": "男人打老婆，家里又穷得揭不开锅，女人完全看不到未来的希望，最终跑了。",
-     "_party": "于父自述"
+     "_party": "于父自述",
+     "_faction": null
     },
     {
      "id": "N03",
@@ -20889,7 +21716,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安切入时于金宝刚满十三岁，正值叛逆期。",
      "value_text": "十三岁",
      "quote": "这时候目标于金宝刚满十三岁，正值叛逆期。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N04",
@@ -20900,7 +21728,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "叶为安让金宝把碗里仅剩两个蛋分给两个姐姐，金宝畏惧照做，第一次学会分享。",
      "quote": "把你的蛋给你大姐二姐一人一个。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N05",
@@ -20911,7 +21740,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "于国强（叶为安）向三子女认错：追打唐爱丽致其出走是自己的错，承诺不再喝酒、不恨母。",
      "quote": "你妈会走是我的错，是我喝醉了拿着菜刀跟在你妈后面追，你妈为了活命才走的。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "N06",
@@ -20922,7 +21752,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "叶为安介入后，金宝学会分食、不再憎母，姐弟关系趋向和睦。",
      "quote": "她们是你姐姐，你是男子汉，不知道心疼姐姐还让姐姐让着你？吃独食不是什么好习惯。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "N07",
@@ -20933,7 +21764,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "claim": "若无叶为安介入（反事实）：金宝延续父辈家暴，成年后酗酒打死妻子入狱，其子成孤儿（原时间线）。",
      "value_text": "反事实：金宝延续家暴至打死妻、入狱、子成孤儿",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     },
     {
      "id": "N08",
@@ -20944,7 +21776,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "作者借于国海夫妻反衬于国强：徐娇拧于国海耳朵是示爱，于国强追砍唐爱丽是施暴——同称'怕老婆'，本质不同。",
      "quote": "家暴和家暴也是有区别的。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N09",
@@ -20955,7 +21788,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "邻居于国海不认为打老婆是什么大事，劝于国强再娶，反映乡村对家暴的麻木。",
      "quote": "再说了，她都一把年纪了，出去能干啥？",
-     "_party": "于国海视角"
+     "_party": "于国海视角",
+     "_faction": null
     },
     {
      "id": "N10",
@@ -20966,7 +21800,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "长姐于金金与次姐于金银年级名列前茅、想读书，原父母打算让她们初中辍学打工。",
      "quote": "她们自己也想读书……他不准备让她们早早辍学。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N11",
@@ -20984,7 +21819,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐副本建 world，或并入本 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N12",
@@ -21001,7 +21837,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "补全该人物支线，或标记为作者留白"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "N13",
@@ -21012,7 +21849,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "叶为安本体是大世界第一棵桃树妖修，大世界崩溃后入小世界接'父亲对晚辈'的委托积功德延寿。",
      "quote": "叶为安是大世界的一个妖修，乃是天地第一棵桃树。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -21489,7 +22327,8 @@ window.SANDBOX_DATA = {
      "confidence": 0.9,
      "claim": "贺云章为一代明君，励精图治、吏治清明、天下太平，却因子贺凌宸毁国而断子绝孙。",
      "quote": "他一生为大历打下坚实的基础，却被他儿子一个人毁掉了，就连整个天下都易了姓氏，而他贺云章更是断子绝孙。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C02",
@@ -21500,7 +22339,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "贺云章死后与叶为安立约：求仙长保宸儿守住大历、不绝贺家血脉传承。",
      "quote": "朕希望，仙长可以让宸儿保住大历，不要为了一个女人昏了头，别让贺家绝了血脉传承。",
-     "_party": "贺云章自述"
+     "_party": "贺云章自述",
+     "_faction": null
     },
     {
      "id": "C03",
@@ -21511,7 +22351,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "叶为安借沈璎病逝、贺云章病倒之机，进入贺云章身体执政。",
      "quote": "叶为安在一阵嘈杂中睁开眼，坐起身体掀开床帘，『外面什么人在喧哗？』",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "C04",
@@ -21522,7 +22363,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "原时间线贺凌宸为沈岚解散后宫，杀不肯走的妃嫔及其子，气死贺云章。",
      "quote": "不愿意走的妃嫔都是阻碍他和沈岚在一起的障碍，就被除掉了。包括不小心旁观了全程的儿子。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C05",
@@ -21533,7 +22375,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "沈岚为穿越者，被贺凌宸强掳入宫，心有所爱（齐宁），并不爱贺凌宸。",
      "quote": "她有自己喜欢的人，是贺凌宸强行将她掳进宫的，更何况看过贺凌宸对待那些嫔妃的态度，她只要没傻就更加不可能喜欢他！",
-     "_party": "沈岚视角"
+     "_party": "沈岚视角",
+     "_faction": null
     },
     {
      "id": "C06",
@@ -21544,7 +22387,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "贺凌宸为寻沈岚灭将军府，齐宁逃；后戎族南下大历大乱，齐宁归斩贺凌宸。",
      "quote": "将忠于皇室的将军府直接拔除了……贺凌宸被朝中大臣送给了齐宁，被他一剑斩下了脑袋。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C07",
@@ -21555,7 +22399,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "叶为安介入后，贺凌宸被矫正、学会对他人的责任，大历得以存续。",
      "quote": "他准备让他去体会一下……普通百姓的日常生活。至少将来，他能多动动脑子。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "C08",
@@ -21566,7 +22411,8 @@ window.SANDBOX_DATA = {
      "quote_status": "generated",
      "claim": "反事实（无叶为安介入）：贺凌宸沿原时间线毁国、被斩、大历易主、贺家绝嗣。",
      "value_text": "反事实：大历覆灭、贺家绝嗣",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     },
     {
      "id": "C09",
@@ -21577,7 +22423,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "作者借贺云章『对女人负责』的表率，反衬贺凌宸只学表面——只学独爱却学不会责任。",
      "quote": "贺云章做出的表率有问题吗？……他只是忘了教给贺凌宸什么叫做责任而已——对女人的责任。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C10",
@@ -21588,7 +22435,8 @@ window.SANDBOX_DATA = {
      "quote_status": "paraphrase_unverified",
      "claim": "作者借『小冰河』点明天灾非帝王不仁，呼应前副本明朝覆灭同样有气候因素。",
      "quote": "就像上个世界的明朝，也有相当一部分原因是小冰河的到来才会导致王朝颠覆。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C11",
@@ -21605,7 +22453,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "补全矫正后时间线，或标记为作者留白"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "C12",
@@ -21622,7 +22471,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "补全支线，或并入本 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -21998,7 +22848,8 @@ window.SANDBOX_DATA = {
      "claim": "谢夕兰拜金、有演技有颜值有情商，进娱乐圈傍高富帅金主。",
      "quote": "她很清醒，她和高富帅之间，就是单纯的金钱关系，没别的。",
      "value_text": "谢夕兰=拜金绝色女儿，以金钱关系傍金主。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "F302",
@@ -22011,7 +22862,8 @@ window.SANDBOX_DATA = {
      "claim": "谢泽非因许雯离家酗酒，醉后首打六岁谢夕兰，叶为安介入。",
      "quote": "谢泽非拿着许雯留下来的信将自己关在房间一整夜……第一次动手打了谢夕兰。",
      "value_text": "叶为安介入时间点为谢泽非首次动手打女。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "F303",
@@ -22024,7 +22876,8 @@ window.SANDBOX_DATA = {
      "claim": "谢夕兰为抢华天成坑害其真爱女友，曝光后成众矢之的。",
      "quote": "为了抢夺高富帅，谢夕兰做了不少事情……谢夕兰一夕之间成了众矢之的。",
      "value_text": "傍金主坑真爱女友是副本核心冲突。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "F304",
@@ -22037,7 +22890,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安矫正后谢夕兰认清自我、不再拜金毁人。",
      "quote": "（叶为安代入谢泽非教养谢夕兰，使其摆脱拜金执念）",
      "value_text": "矫正后谢夕兰清醒，未毁人毁己。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "F305",
@@ -22050,7 +22904,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借谢夕兰揭示拜金与人性：清醒的算计反而最易迷失。",
      "quote": "（作者借娱乐圈镜像反思金钱与自我）",
      "value_text": "谢夕兰是'拜金迷失'的文学样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "F306",
@@ -22063,7 +22918,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，谢夕兰坑害真爱曝光后身败名裂、人生尽毁。",
      "quote": "（推演）若未介入，谢夕兰一夕之间成了众矢之的。",
      "value_text": "反事实：未介入→谢夕兰身败名裂。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "F307",
@@ -22083,7 +22939,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "F308",
@@ -22096,7 +22953,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     },
     {
      "id": "F309",
@@ -22109,7 +22967,8 @@ window.SANDBOX_DATA = {
      "claim": "谢泽非自述：许雯离家后酗酒、首次动手打六岁谢夕兰，是其人生转折。",
      "quote": "（谢泽非自述：许雯走后我把自己关起来，第一次打了夕兰）",
      "value_text": "谢泽非自述承认家暴起点。",
-     "_party": "谢父自述"
+     "_party": "谢父自述",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -22436,7 +23295,8 @@ window.SANDBOX_DATA = {
      "claim": "艾哲兽化异能者，从宇宙带回陌生能量辐射全球，引发末世。",
      "quote": "所谓末世到来并不是他们所以为的地球核变进化，而是艾哲从宇宙中带了陌生能量回来，辐射全球。",
      "value_text": "艾哲=末世能量源（非核变）。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "G402",
@@ -22449,7 +23309,8 @@ window.SANDBOX_DATA = {
      "claim": "艾瑞安死前委托叶为安让兽化儿子变身后保持理智。",
      "quote": "你能让他恢复理智吗？变成怪兽的时候也保持理智。",
      "value_text": "叶为安介入动机=艾瑞安临终委托。",
-     "_party": "艾父自述"
+     "_party": "艾父自述",
+     "_faction": null
     },
     {
      "id": "G403",
@@ -22462,7 +23323,8 @@ window.SANDBOX_DATA = {
      "claim": "艾哲篡改众人对他的记忆，唯唐心见其完全体态而知真相。",
      "quote": "艾哲确实将所有人关于他的记忆都改变了，但只要见过艾哲完全状态，他想隐瞒的秘密就会开启。",
      "value_text": "唐心记忆=唯一真实。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "G404",
@@ -22475,7 +23337,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安揭穿篡改，艾哲守住理智、唐心得救。",
      "quote": "（叶为安使艾哲保持清醒，护住唐心）",
      "value_text": "矫正后艾哲未疯狂。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "G405",
@@ -22488,7 +23351,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借艾哲反思'怪物'非天生：记忆篡改与孤独才是悲剧根源。",
      "quote": "（作者借末世兽化谈人性与孤独）",
      "value_text": "艾哲是'被改写的怪物'样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "G406",
@@ -22501,7 +23365,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，艾哲疯狂囚禁唐心、二人同归于尽，末世真相无人知。",
      "quote": "（推演）唐心最后和艾哲同归于尽了……直到艾哲死后，异兽才不再那么疯狂。",
      "value_text": "反事实：未介入→同归于尽、真相湮灭。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "G407",
@@ -22521,7 +23386,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "G408",
@@ -22534,7 +23400,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -22872,7 +23739,8 @@ window.SANDBOX_DATA = {
      "claim": "何欣然为穿书女/明星，将幼女巧妹托父母后赴外地拍戏追梦。",
      "quote": "何欣然突然打电话过来，说要去外地拍戏，巧妹太小了，没办法再照顾，因此只能将她送到父母身边。",
      "value_text": "何欣然=不负责任但非恶意之母。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "H502",
@@ -22885,7 +23753,8 @@ window.SANDBOX_DATA = {
      "claim": "何永安委托叶为安护巧妹，使其不在风言风语中长大。",
      "quote": "（何永安将巧妹托付，叶为安附身护其成长）",
      "value_text": "叶为安介入动机=何永安委托。",
-     "_party": "何父自述"
+     "_party": "何父自述",
+     "_faction": null
     },
     {
      "id": "H503",
@@ -22898,7 +23767,8 @@ window.SANDBOX_DATA = {
      "claim": "何欣然嫁入林家（首富），曾为明星的身份被翻出但未被追究。",
      "quote": "欣欣嫁入林家后曾经是明星的事情确实被狗仔翻了出来……林家也不是，她就放心吧。",
      "value_text": "何欣然再婚首富，巧妹被接纳。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "H504",
@@ -22911,7 +23781,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安护巧妹于善意环境中健康成长。",
      "quote": "（叶为安与王莲居于何家村，巧妹快乐长大）",
      "value_text": "矫正后巧妹未受流言所伤。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "H505",
@@ -22924,7 +23795,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借穿书女反思'追梦与尽责'的张力：爱不是缺席的借口。",
      "quote": "（作者借巧妹命运谈母爱与义务）",
      "value_text": "何欣然是'追梦母亲'样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "H506",
@@ -22937,7 +23809,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，巧妹在'她妈不安分'的流言中自我怀疑、童年被毁。",
      "quote": "（推演）龙生龙，凤生凤……谢夕兰保不准和她妈一样。",
      "value_text": "反事实：未介入→巧妹童年被流言毁。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "H507",
@@ -22957,7 +23830,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "H508",
@@ -22970,7 +23844,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -23301,7 +24176,8 @@ window.SANDBOX_DATA = {
      "claim": "司徒锐是同性恋，与徒应琉相恋，家庭最终接纳。",
      "quote": "司徒锐和徒应琉，那张结婚证就不重要。",
      "value_text": "司徒锐=被接纳的同性恋儿子。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "I602",
@@ -23314,7 +24190,8 @@ window.SANDBOX_DATA = {
      "claim": "徒时卿因上辈子'骗婚'误解，委托叶为安理解儿子。",
      "quote": "徒时卿是什么时候知道徒应琉是个同性恋，对褚秀秀骗婚的？",
      "value_text": "叶为安介入动机=徒时卿求理解。",
-     "_party": "司徒父自述"
+     "_party": "司徒父自述",
+     "_faction": null
     },
     {
      "id": "I603",
@@ -23327,7 +24204,8 @@ window.SANDBOX_DATA = {
      "claim": "褚秀秀日记揭徒应琉非骗婚，只是旁观同性恋的误会。",
      "quote": "褚秀秀围观两个同性恋的兴奋与激动……那日记上寥寥的几句话。",
      "value_text": "上辈子骗婚=误会，非丧心病狂。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "I604",
@@ -23340,7 +24218,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安厘清误会，今世司徒锐与徒应琉被家庭接纳。",
      "quote": "（叶为安与叶云紫拼出合情合理真相）",
      "value_text": "矫正后误会被化解。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "I605",
@@ -23353,7 +24232,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借误会谈'眼见不为实'：以结果逆推真相最易误判。",
      "quote": "知道结果，然后进行逆推往往很简单，但如果一开始看到的真相就是假的呢？",
      "value_text": "司徒锐是'误判真相'样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "I606",
@@ -23366,7 +24246,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，上辈子徒应琉黑化骗婚，毁褚秀秀一生。",
      "quote": "（推演）徒应琉将褚秀秀骗得这么惨，毁了人家一辈子。",
      "value_text": "反事实：未介入→骗婚毁人。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "I607",
@@ -23386,7 +24267,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "I608",
@@ -23399,7 +24281,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -23711,7 +24594,8 @@ window.SANDBOX_DATA = {
      "claim": "慕情爱情至上，为渣男放弃学业与家庭。",
      "quote": "（慕情将爱情置于一切之上）",
      "value_text": "慕情=爱情至上的女儿。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "J702",
@@ -23724,7 +24608,8 @@ window.SANDBOX_DATA = {
      "claim": "慕父委托叶为安让女儿不再为爱盲目。",
      "quote": "（慕父求叶为安教女儿做人不被情迷）",
      "value_text": "叶为安介入动机=慕父委托。",
-     "_party": "慕父自述"
+     "_party": "慕父自述",
+     "_faction": null
     },
     {
      "id": "J703",
@@ -23737,7 +24622,8 @@ window.SANDBOX_DATA = {
      "claim": "慕情为渣男弃学业家庭，渐失自我。",
      "quote": "（慕情为爱情牺牲前途）",
      "value_text": "核心冲突=爱情盲目。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "J704",
@@ -23750,7 +24636,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安矫正后慕情重拾自我与学业。",
      "quote": "（叶为安使慕情清醒）",
      "value_text": "矫正后慕情未毁。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "J705",
@@ -23763,7 +24650,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借慕情谈'爱情至上'的边界：爱不应吞没自我。",
      "quote": "（作者借慕情反思恋爱脑）",
      "value_text": "慕情是'恋爱脑'样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "J706",
@@ -23776,7 +24664,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，慕情被渣男骗财骗色、毁掉一生。",
      "quote": "（推演）慕情为爱情至上的女儿，若无人点醒则万劫不复。",
      "value_text": "反事实：未介入→被渣男毁。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "J707",
@@ -23796,7 +24685,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "J708",
@@ -23809,7 +24699,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -24121,7 +25012,8 @@ window.SANDBOX_DATA = {
      "claim": "珠宝是小猫儿子，小家子气、因铲屎官有别猫而打别的猫。",
      "quote": "它居然跑上去将别的猫给打了！一个有别的猫的铲屎官，还留着干什么，当然是抛弃他了！",
      "value_text": "珠宝=不听话的喵儿子。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "K802",
@@ -24134,7 +25026,8 @@ window.SANDBOX_DATA = {
      "claim": "虎斑猫（猫妖）委托叶为安教儿子珠宝做猫。",
      "quote": "去不去？朕藏了一块小鱼干，可以给你当报酬！",
      "value_text": "叶为安介入动机=虎斑猫委托。",
-     "_party": "猫父自述"
+     "_party": "猫父自述",
+     "_faction": null
     },
     {
      "id": "K803",
@@ -24147,7 +25040,8 @@ window.SANDBOX_DATA = {
      "claim": "珠宝因铲屎官有别猫而打别的猫、小家子气。",
      "quote": "它居然跑上去将别的猫给打了！",
      "value_text": "核心冲突=小猫争宠。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "K804",
@@ -24160,7 +25054,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安教珠宝不再小家子气、大方做猫。",
      "quote": "（叶为安逗弄并教导小猫）",
      "value_text": "矫正后珠宝大气。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "K805",
@@ -24173,7 +25068,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借猫儿子谈'器量'：连猫都忌小家子气，况人乎。",
      "quote": "（作者以猫喻人谈气量）",
      "value_text": "珠宝是'器量'寓言样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "K806",
@@ -24186,7 +25082,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，珠宝仍争风吃醋、失猫国体面。",
      "quote": "（推演）珠宝若无人教，始终是只小家子气的猫。",
      "value_text": "反事实：未介入→珠宝仍小气。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "K807",
@@ -24206,7 +25103,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "K808",
@@ -24219,7 +25117,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -24530,7 +25429,8 @@ window.SANDBOX_DATA = {
      "claim": "江容华是江家村唯一大学生，胎穿/魂穿后读点书便成衣冠禽兽。",
      "quote": "让儿子像个人，别读点书就去当电视上说的那什么衣冠禽兽。",
      "value_text": "江容华=胎穿禽兽儿子。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "L902",
@@ -24543,7 +25443,8 @@ window.SANDBOX_DATA = {
      "claim": "江大壮委托叶为安教儿子做人、别成衣冠禽兽。",
      "quote": "俺想请仙长教教俺儿子做个人吧。",
      "value_text": "叶为安介入动机=江大壮委托。",
-     "_party": "江父自述"
+     "_party": "江父自述",
+     "_faction": null
     },
     {
      "id": "L903",
@@ -24556,7 +25457,8 @@ window.SANDBOX_DATA = {
      "claim": "江容华凭学识欺男霸女、负心女友。",
      "quote": "（江容华读点书后恃才傲物、负心滥情）",
      "value_text": "核心冲突=知识≠人品。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "L904",
@@ -24569,7 +25471,8 @@ window.SANDBOX_DATA = {
      "claim": "叶为安矫正使江容华回归本心、不再禽兽。",
      "quote": "（叶为安使江容华做回人）",
      "value_text": "矫正后江容华做人。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "L905",
@@ -24582,7 +25485,8 @@ window.SANDBOX_DATA = {
      "claim": "作者借江容华谈'读书与做人'：有才无德是为禽兽。",
      "quote": "（作者借江容华反思教育与人品）",
      "value_text": "江容华是'有才无德'样本。",
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "L906",
@@ -24595,7 +25499,8 @@ window.SANDBOX_DATA = {
      "claim": "若无叶为安介入，江容华成衣冠禽兽、害人害己。",
      "quote": "（推演）江容华读点书就去当衣冠禽兽。",
      "value_text": "反事实：未介入→禽兽毁人。",
-     "_party": "叶为安视角"
+     "_party": "叶为安视角",
+     "_faction": null
     },
     {
      "id": "L907",
@@ -24615,7 +25520,8 @@ window.SANDBOX_DATA = {
       ],
       "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
      },
-     "_party": "作者叙述"
+     "_party": "作者叙述",
+     "_faction": null
     },
     {
      "id": "L908",
@@ -24628,7 +25534,8 @@ window.SANDBOX_DATA = {
      "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
      "quote": "（系统：宿主需完成教养任务方可脱离副本）",
      "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
-     "_party": "系统任务"
+     "_party": "系统任务",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -25688,7 +26595,18 @@ window.SANDBOX_DATA = {
     "shenyang",
     "tieling",
     "yehe"
-   ]
+   ],
+   "factions": {
+    "donglin": "东林党（清流）",
+    "eunuch": "阉党（魏忠贤集团）",
+    "zhe_dang": "浙党",
+    "chu_dang": "楚党",
+    "qi_dang": "齐党",
+    "xuan_kun": "宣党 / 昆党",
+    "yan_shang": "盐商 / 盐政利益",
+    "nei_guan": "内臣 / 宦官（独立于阉党）",
+    "feng_jiang": "封疆大吏 / 辽东经略系"
+   }
   },
   "scene_summary": [
    {
@@ -25705,6 +26623,7 @@ window.SANDBOX_DATA = {
      "朝鲜": 1,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 3,
     "avg_resonance": 0.415,
     "best_event": "event:fushun_fall",
@@ -25724,6 +26643,7 @@ window.SANDBOX_DATA = {
      "朝鲜": 2,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 2,
     "avg_resonance": 0.333,
     "best_event": "event:fuzhou_fall",
@@ -25743,6 +26663,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 2,
     "avg_resonance": 0.389,
     "best_event": "event:gaizhou_fall",
@@ -25751,22 +26672,25 @@ window.SANDBOX_DATA = {
    {
     "scene": "guangning",
     "name": "guangning",
-    "total": 18,
+    "total": 27,
     "layers": {
-     "record": 15,
+     "record": 24,
      "scholarship": 1,
      "gap": 2
     },
     "party_counts": {
      "清方": 15,
-     "明方": 1,
+     "明方": 10,
      "朝鲜": 1,
      "综述考订": 1
     },
+    "faction_counts": {
+     "内臣 / 宦官（独立于阉党）": 9
+    },
     "event_count": 3,
-    "avg_resonance": 0.422,
+    "avg_resonance": 0.444,
     "best_event": "event:guangning_fall",
-    "best_resonance": 0.6
+    "best_resonance": 0.667
    },
    {
     "scene": "haizhou",
@@ -25782,6 +26706,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "朝鲜": 1
     },
+    "faction_counts": {},
     "event_count": 3,
     "avg_resonance": 0.472,
     "best_event": "event:haizhou_fall",
@@ -25802,6 +26727,7 @@ window.SANDBOX_DATA = {
      "朝鲜": 1,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 2,
     "avg_resonance": 0.567,
     "best_event": "event:jinzhou_songjin",
@@ -25821,6 +26747,7 @@ window.SANDBOX_DATA = {
      "朝鲜": 2,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 3,
     "avg_resonance": 0.278,
     "best_event": "event:jinzhouwei_fall",
@@ -25842,6 +26769,7 @@ window.SANDBOX_DATA = {
      "清方": 8,
      "朝鲜": 4
     },
+    "faction_counts": {},
     "event_count": 3,
     "avg_resonance": 0.495,
     "best_event": "开铁之战（开原陷落）",
@@ -25862,6 +26790,9 @@ window.SANDBOX_DATA = {
      "明方": 12,
      "综述考订": 10
     },
+    "faction_counts": {
+     "封疆大吏 / 辽东经略系": 10
+    },
     "event_count": 2,
     "avg_resonance": 0.401,
     "best_event": "辽阳陷落（1621）",
@@ -25881,6 +26812,7 @@ window.SANDBOX_DATA = {
      "明方": 3,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 4,
     "avg_resonance": 0.319,
     "best_event": "event:ningjin_dajie",
@@ -25901,6 +26833,9 @@ window.SANDBOX_DATA = {
      "综述考订": 15,
      "朝鲜": 17,
      "明方": 16
+    },
+    "faction_counts": {
+     "封疆大吏 / 辽东经略系": 8
     },
     "event_count": 5,
     "avg_resonance": 0.511,
@@ -25923,6 +26858,9 @@ window.SANDBOX_DATA = {
      "朝鲜": 3,
      "综述考订": 2
     },
+    "faction_counts": {
+     "封疆大吏 / 辽东经略系": 12
+    },
     "event_count": 6,
     "avg_resonance": 0.4,
     "best_event": "event:shenyang_relief",
@@ -25942,6 +26880,7 @@ window.SANDBOX_DATA = {
      "清方": 22,
      "综述考订": 7
     },
+    "faction_counts": {},
     "event_count": 2,
     "avg_resonance": 0.173,
     "best_event": "铁岭陷落（1619）",
@@ -25960,12 +26899,37 @@ window.SANDBOX_DATA = {
      "清方": 6,
      "综述考订": 1
     },
+    "faction_counts": {},
     "event_count": 3,
     "avg_resonance": 0.278,
     "best_event": "event:yehe_fall",
     "best_resonance": 0.333
    }
   ],
+  "faction_summary": {
+   "feng_jiang": {
+    "name": "封疆大吏 / 辽东经略系",
+    "total": 30,
+    "scenes": [
+     "liaoyang",
+     "sarhu",
+     "shenyang"
+    ],
+    "sources": [
+     "sanchaoliao_shilu"
+    ]
+   },
+   "nei_guan": {
+    "name": "内臣 / 宦官（独立于阉党）",
+    "total": 9,
+    "scenes": [
+     "guangning"
+    ],
+    "sources": [
+     "zhuozhongzhi"
+    ]
+   }
+  },
   "events": [
    {
     "subject": "event:ice_walls",
@@ -28027,79 +28991,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:guangning_fall",
-    "name": "event:guangning_fall",
-    "scenes": [
-     "guangning"
-    ],
-    "scene_names": [
-     "guangning"
-    ],
-    "total": 5,
-    "gap_count": 2,
-    "coverage": "3/3",
-    "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.4,
-    "resonance": 0.6,
-    "party_counts": {
-     "明方": 1,
-     "清方": 2,
-     "朝鲜": 1,
-     "综述考订": 1
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "G003",
-       "predicate": "陷落年份",
-       "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
-       "source": "ming_xizong_shilu",
-       "layer": "record",
-       "scene": "guangning"
-      }
-     ],
-     "清方": [
-      {
-       "id": "G010",
-       "predicate": "明军兵力部署",
-       "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "guangning"
-      },
-      {
-       "id": "G011",
-       "predicate": "经抚责任归属",
-       "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
-       "source": "mingshi",
-       "layer": "gap",
-       "scene": "guangning"
-      }
-     ],
-     "朝鲜": [
-      {
-       "id": "G004",
-       "predicate": "朝鲜视角",
-       "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
-       "source": "chao_xiandai",
-       "layer": "record",
-       "scene": "guangning"
-      }
-     ],
-     "综述考订": [
-      {
-       "id": "G005",
-       "predicate": "败因主流说",
-       "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "guangning"
-      }
-     ]
-    }
-   },
-   {
     "subject": "event:abudaligang",
     "name": "阿布达里岗（东路·刘綎）",
     "scenes": [
@@ -28144,6 +29035,87 @@ window.SANDBOX_DATA = {
       }
      ],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:guangning_fall",
+    "name": "event:guangning_fall",
+    "scenes": [
+     "guangning"
+    ],
+    "scene_names": [
+     "guangning"
+    ],
+    "total": 6,
+    "gap_count": 2,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.333,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 2,
+     "清方": 2,
+     "朝鲜": 1,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "G003",
+       "predicate": "陷落年份",
+       "value_text": "天启二年正月 (1622), 努尔哈赤取广宁, 王化贞弃城, 孙得功降, 熊廷弼护辽西难民入山海关",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "ZZ006",
+       "predicate": "熊廷弼之死源于阉党私怨",
+       "value_text": "阉党冯铨因坊间小说《辽东传》'冯布政父子奔逃'情节羞愤，借讲筵奏请诛熊廷弼，非纯军事失败",
+       "source": "zhuozhongzhi",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "清方": [
+      {
+       "id": "G010",
+       "predicate": "明军兵力部署",
+       "value_text": "广宁之战明军在辽西的实际总兵力与阵地部署, 三方记载数字不一, 未见统一核定",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      },
+      {
+       "id": "G011",
+       "predicate": "经抚责任归属",
+       "value_text": "熊廷弼「主守」与王化贞「主战」孰应为广宁之失负主责, 明、清、现代三方叙事侧重不同",
+       "source": "mingshi",
+       "layer": "gap",
+       "scene": "guangning"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "G004",
+       "predicate": "朝鲜视角",
+       "value_text": "李朝闻广宁陷, 知明失辽西, 急议防鸭绿江、增兵边境",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "guangning"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "G005",
+       "predicate": "败因主流说",
+       "value_text": "学界主流：广宁之失主因经略熊廷弼与巡抚王化贞战略相左、经抚不和, 非单纯兵力不敌",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "guangning"
+      }
+     ]
     }
    },
    {

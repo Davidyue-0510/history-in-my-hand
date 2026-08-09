@@ -9,7 +9,8 @@
       "color": "#8C6239",
       "compiler": "张廷玉等",
       "period": "清修",
-      "stance": "official_later_dynasty"
+      "stance": "official_later_dynasty",
+      "faction": null
     },
     {
       "id": "ming_taizu_shilu",
@@ -99,9 +100,10 @@
       "stance": "private",
       "stance_label": "明方私修·亲历",
       "distance_label": "经略辽东者事后追记，距事约10年",
-      "party": "明·私修",
+      "party": "明·封疆奏议",
       "color": "#8B6BA8",
-      "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。"
+      "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。",
+      "faction": "feng_jiang"
     }
   ]
 }
