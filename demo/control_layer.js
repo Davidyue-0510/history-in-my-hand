@@ -136,16 +136,23 @@
   // 不同党派之间的外缘边界，省略同党派内部的县界，视觉上就「合并」成块。
   // 县级（county）范围：每个县都画边界（含合成网格的外框），呈现县与县的拼图。
   function rebuild() {
-    var nx = grid.nx, ny = grid.ny, data = img.data;
-    // 1) 每格的党派索引（-1 = 该年无人控制）
+    var frame = buildFrame(curYear);
+    img = frame;
+    off.getContext('2d').putImageData(img, 0, 0);
+  }
+
+  // 生成某一年的色块 ImageData（提取自 rebuild 的可复用内核）。
+  function buildFrame(year) {
+    var nx = grid.nx, ny = grid.ny;
+    var frame = off.getContext('2d').createImageData(nx, ny);
+    var data = frame.data;
     var pg = new Int8Array(nx * ny);
     for (var iy = 0; iy < ny; iy++) {
       for (var ix = 0; ix < nx; ix++) {
         var idx = iy * nx + ix, si = assign[idx];
-        pg[idx] = pIdx(controllerAt(seats[si].place_id, curYear));
+        pg[idx] = pIdx(controllerAt(seats[si].place_id, year));
       }
     }
-    // 2) 上色 + 边界
     var nation = (curScope === 'nation');
     for (iy = 0; iy < ny; iy++) {
       for (ix = 0; ix < nx; ix++) {
@@ -153,10 +160,9 @@
         var boundary = false, external = false;
         if (ix + 1 < nx) { var r = pg[idx + 1]; if (r !== pi) { boundary = true; if (r >= 0 && pi >= 0) external = true; } }
         if (!boundary && iy + 1 < ny) { var d = pg[idx + nx]; if (d !== pi) { boundary = true; if (d >= 0 && pi >= 0) external = true; } }
-        if (!nation && (ix === 0 || iy === 0 || ix === nx - 1 || iy === ny - 1)) boundary = true; // 县级外框
+        if (!nation && (ix === 0 || iy === 0 || ix === nx - 1 || iy === ny - 1)) boundary = true;
         if (boundary) {
-          // 全国范围下，同党派内部县界不画（合并成块）；只保留跨党派外缘
-          if (nation && !external) { /* 落到下面按填充处理 */ }
+          if (nation && !external) { }
           else {
             var a = nation ? 205 : 160;
             data[o] = 74; data[o + 1] = 64; data[o + 2] = 54; data[o + 3] = a;
@@ -166,12 +172,49 @@
         var col = pCol(pi);
         if (col) {
           data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2]; data[o + 3] = nation ? 125 : 115;
-        } else {
-          data[o + 3] = 0;
         }
       }
     }
-    off.getContext('2d').putImageData(img, 0, 0);
+    return frame;
+  }
+
+  // 对 "前后年" 色块加棋盘虚线：只对与当前年**不同**的像素做半透明交错，
+  // 同一政权的区域不虚化（已稳定控制区 → 纯实线）。
+  function dashFrame(frame, curFrame) {
+    var fd = frame.data, cd = curFrame.data, total = fd.length;
+    var gw = grid.nx;
+    for (var o = 0; o < total; o += 4) {
+      if (fd[o + 3] === 0) continue;
+      var sameColor = (fd[o] === cd[o] && fd[o + 1] === cd[o + 1] && fd[o + 2] === cd[o + 2]);
+      if (!sameColor) {
+        var ix = (o / 4) % gw, iy = Math.floor((o / 4) / gw);
+        if ((ix + iy) % 2 === 0) fd[o + 3] = Math.round(fd[o + 3] * 0.35);
+      }
+    }
+  }
+
+  // v0.28 虚实对比模式：一次渲染前一年/当前年/后一年三帧，
+  // 前、后年加棋盘虚线，当年实线。
+  function drawMulti(year, scope) {
+    if (!ready) return;
+    curYear = year; curScope = scope;
+    var yr = years();
+    var lo = yr[0], hi = yr[1];
+    var prev = buildFrame(Math.max(lo, year - 1));
+    var cur  = buildFrame(year);
+    var nextFrame = buildFrame(Math.min(hi, year + 1));
+
+    dashFrame(prev, cur);
+    dashFrame(nextFrame, cur);
+
+    var ctx = off.getContext('2d');
+    ctx.clearRect(0, 0, nx, ny);
+    ctx.putImageData(prev, 0, 0);
+    ctx.putImageData(nextFrame, 0, 0);
+    ctx.putImageData(cur, 0, 0);
+    img = cur;  // 跟 normal path 一致
+    dirty = false;
+    repaint();
   }
 
   // 某年各国控制县数（用于「国家」范围图例的全国统计）
@@ -230,7 +273,7 @@
   function years() { return curYears; }
 
   window.ControlLayer = {
-    setup: setup, draw: draw, repaint: repaint, clear: clear,
+    setup: setup, draw: draw, drawMulti: drawMulti, repaint: repaint, clear: clear,
     partyColor: partyColor, controllerAt: controllerAt, tally: tally,
     activeParties: activeParties,
     isReady: isReady, years: years, seats: function () { return seats; }

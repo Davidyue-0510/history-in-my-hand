@@ -143,7 +143,7 @@
     t: 0,
     tab: 'yan',
     selection: null,
-    control: { on: false, year: 1621, scope: 'county', playing: false },
+    control: { on: false, year: 1621, scope: 'county', playing: false, compare: false },
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
     personYear: { from: null, to: null }, // 人物轨迹时间窗
@@ -1541,7 +1541,11 @@
   function drawControl() {
     if (!window.ControlLayer) return;
     if (!IS_ABSTRACT && state.control.on && ControlLayer.isReady()) {
-      ControlLayer.draw(state.control.year, state.control.scope);
+      if (state.control.compare && ControlLayer.drawMulti) {
+        ControlLayer.drawMulti(state.control.year, state.control.scope);
+      } else {
+        ControlLayer.draw(state.control.year, state.control.scope);
+      }
       renderControlLegend();
     } else {
       ControlLayer.clear();
@@ -1578,9 +1582,19 @@
     panel.style.display = '';
     var onBox = document.getElementById('ctrlOn');
     var playBtn = document.getElementById('ctrlPlay');
+    var compareBox = document.getElementById('ctrlCompare');
     var cy = ControlLayer.years();
 
     if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
+
+    // 虚实对比开关
+    if (compareBox) {
+      compareBox.checked = state.control.compare;
+      compareBox.addEventListener('change', function () {
+        state.control.compare = compareBox.checked;
+        drawControl();
+      });
+    }
 
     // 控制层开关
     if (onBox) {

@@ -320,6 +320,8 @@ body{
 .cp-scope{ flex:1; border:1px solid var(--rule); background:transparent; border-radius:3px;
   padding:3px 0; font-size:11px; cursor:pointer; color:var(--ink-2); font-family:var(--serif); }
 .cp-scope.on{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+.cp-compare{ font-size:10px; color:var(--ink-3); cursor:pointer; display:flex; align-items:center; gap:2px; padding:0 3px; white-space:nowrap; }
+.cp-compare input{ cursor:pointer; }
 .cp-play{ width:28px; border:1px solid var(--rule); background:transparent; border-radius:3px;
   font-size:11px; cursor:pointer; color:var(--ink-2); }
 .cp-play:hover{ background:var(--ink); color:var(--paper); }
