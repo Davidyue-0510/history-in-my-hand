@@ -11,7 +11,9 @@
     本文件只负责遍历它。新增一个县 = 建 data/<dir>/ 六件套 + 注册表加一条，
     build.py / lint.py / resonance.py / hub.js 全部零改动。
 
-    地形网格与江河边墙是「单一真相」，不随场景复制。
+    地形网格与江河边墙是「单一真相」，不随场景复制。地形网格本身由
+    data/terrain/registry.json 注册表驱动（v0.22 起写死常量退役），场景可声明
+    terrain_grid 指向别的已拉取网格；未拉取/部分网格诚实标 OFF_GRID，不伪造高程。
 
 用法：
     python tools/build.py
@@ -24,11 +26,11 @@ from collections import defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "demo", "data.js")
-TERRAIN = os.path.join(DATA, "terrain", "liaodong_grid.json")
 REGISTRY = os.path.join(DATA, "scenes.json")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vocab_loader as VL  # noqa: E402
+import fetch_terrain as FT  # noqa: E402  地形网格注册表（v0.22：写死常量退役）
 
 # meta 里属于「配置」而非「内容」的键，不需要原样带进 bundle.meta 的字段
 _REGISTRY_ONLY = {"dir", "extra_files"}
@@ -220,21 +222,57 @@ def build_scene(sc):
     return bundle
 
 
-def load_terrain_grid():
-    if not os.path.exists(TERRAIN):
-        print("  ! 未找到高程网格，跳过地形层。先运行 tools/fetch_terrain.py")
-        return None, None
+# ────────────────────────── 地形（v0.22 注册表驱动）──────────────────────────
+# 在此之前，LON0/LAT0/STEP 与产物文件名是写死常量，覆盖第二片区域只能改源码。
+# 现在「有哪些网格」全在 data/terrain/registry.json，本模块只按 id 取。
+_terr_cache = {}  # gid -> (terr, grid, status)，避免重复读盘
+
+
+def get_terrain(gid=None):
+    """按注册表取地形。gid 缺省=default。返回 (terr, grid, status)。
+    status != 'fetched'（未拉取/部分/文件缺失）→ 返回 (None, None, status)。
+    诚实原则：绝不把假高程喂给下游。"""
+    reg = FT.load_registry()
+    gid = gid or FT.default_grid_id(reg)
+    if gid in _terr_cache:
+        return _terr_cache[gid]
+    grids = reg.get("grids", {})
+    if gid not in grids:
+        res = (None, None, "unknown")
+        _terr_cache[gid] = res
+        return res
+    g = FT.get_grid(reg, gid)
+    status = g.get("status")
+    if status != "fetched" or not os.path.exists(g["_path"]):
+        # 诚实标注：未拉取/部分网格在界面标 OFF_GRID，不生成看着合理的假高程
+        res = (None, None, status)
+        _terr_cache[gid] = res
+        return res
     import terrain_model
-    terr = terrain_model.Terrain(TERRAIN)
+    terr = terrain_model.Terrain(g["_path"])
     grid = {
+        "_grid_id": gid,
         "lon0": terr.lon0, "lat0": terr.lat0, "step": terr.step,
         "nx": terr.nx, "ny": terr.ny,
         "elev": [int(e) if e is not None else 0 for e in terr.elev],
         "source": terr.meta.get("_source"),
         "source_url": terr.meta.get("_source_url"),
         "min": terr.meta.get("min"), "max": terr.meta.get("max"),
+        "bbox": g["bbox"],
     }
-    return terr, grid
+    res = (terr, grid, "fetched")
+    _terr_cache[gid] = res
+    return res
+
+
+def _elev_or_none(terr, lon, lat):
+    """在网格 bbox 内才返回双线性插值高程；越界返回 None（绝不 clamp 成边缘假值）。"""
+    lo1, la1 = terr.lon0, terr.lat0
+    lo2 = terr.lon0 + terr.step * (terr.nx - 1)
+    la2 = terr.lat0 + terr.step * (terr.ny - 1)
+    if not (lo1 - 1e-6 <= lon <= lo2 + 1e-6 and la1 - 1e-6 <= lat <= la2 + 1e-6):
+        return None
+    return round(terr.at(lon, lat))
 
 
 def main():
@@ -258,9 +296,15 @@ def main():
     sd["meta"]["default_vocab_pack"] = VL.default_pack_id()
     sd["meta"]["vocab_packs"] = VL.list_packs()
 
-    # 共享地形
-    terr, grid = load_terrain_grid()
+    # 共享地形（注册表驱动；默认网格见 data/terrain/registry.json）
+    default_gid = FT.default_grid_id(FT.load_registry())
+    terr, grid, tstatus = get_terrain(default_gid)
     sd["terrain"] = grid
+    sd["terrain_grid_id"] = default_gid if grid else None
+    sd["terrain_status"] = tstatus
+    if tstatus != "fetched":
+        print("  ! 默认地形网格 %r 状态=%s，地图层将标 OFF_GRID（不伪造高程）"
+              % (default_gid, tstatus))
 
     # 共享江河 / 边墙（取自萨尔浒片层的辽东风土，投影范围一致，各县在其内）
     sarhu_places = load_json(os.path.join(DATA, "sarhu"), "places.json")
@@ -270,22 +314,38 @@ def main():
     scenes = {}
     for sc in resolved:
         bundle = build_scene(sc)
-        if terr:
+        # 每切片地形：默认用共享网格；场景可声明 terrain_grid 指向别的已拉取网格。
+        # 声明了未拉取/部分网格 → 诚实标 OFF_GRID，绝不给越界插值。
+        scene_gid = sc.get("terrain_grid") or default_gid
+        scene_terr, _sg, scene_tstatus = get_terrain(scene_gid)
+        bundle["meta"]["terrain_grid"] = scene_gid
+        if scene_terr is None:
+            bundle["meta"]["terrain_off_grid"] = True
+        else:
             for p in bundle["places"]:
                 if "lon" in p and "lat" in p:
-                    p["elev"] = round(terr.at(p["lon"], p["lat"]))
+                    ev = _elev_or_none(scene_terr, p["lon"], p["lat"])
+                    p["elev"] = ev
+                    if ev is None:
+                        p["off_grid"] = True
         scenes[sc["_key"]] = bundle
 
     # 萨尔浒行军地形代价（只有带 routes 的切片才有）
-    if terr:
-        import terrain_model
-        for key, bundle in scenes.items():
-            if not bundle.get("routes"):
-                continue
-            pmap = {p["id"]: p for p in bundle["places"]}
-            bundle["route_terrain"] = [
-                terrain_model.analyze_route(terr, r, pmap) for r in bundle["routes"]
-            ]
+    import terrain_model
+    for key, bundle in scenes.items():
+        if not bundle.get("routes"):
+            continue
+        sgid = bundle["meta"].get("terrain_grid")
+        if bundle["meta"].get("terrain_off_grid"):
+            print("  ! %s 路线地形分析跳过：地形网格 %r 不可用（OFF_GRID）" % (key, sgid))
+            continue
+        scene_terr, _, _ = get_terrain(sgid)
+        if scene_terr is None:
+            continue
+        pmap = {p["id"]: p for p in bundle["places"]}
+        bundle["route_terrain"] = [
+            terrain_model.analyze_route(scene_terr, r, pmap) for r in bundle["routes"]
+        ]
 
     sd["scenes"] = scenes
 

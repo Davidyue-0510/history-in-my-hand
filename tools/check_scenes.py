@@ -23,6 +23,7 @@ DATA = os.path.join(ROOT, "data")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vocab_loader as VL  # noqa: E402
+import fetch_terrain as FT  # noqa: E402  地形网格注册表（v0.22）
 
 
 def _load(p):
@@ -72,6 +73,19 @@ def main():
         if declared and declared not in VL.list_packs():
             errors.append("场景 %r 声明 vocab_pack=%r，但 data/vocab/%s.json 不存在（会静默回退默认包）"
                           % (sid, declared, declared))
+        # 声明了却不存在/未拉取的地形网格 = 构建时静默回退默认网格，地名高程错位
+        declared_tg = sc.get("terrain_grid")
+        if declared_tg:
+            try:
+                reg_t = FT.load_registry()
+                if declared_tg not in reg_t.get("grids", {}):
+                    errors.append("场景 %r 声明 terrain_grid=%r，但 data/terrain/registry.json 无此网格（构建时静默回退默认网格）"
+                                  % (sid, declared_tg))
+                elif reg_t["grids"][declared_tg].get("status") != "fetched":
+                    warns.append("场景 %r 声明 terrain_grid=%r，但该网格 status=%s（非 fetched，构建时将标 OFF_GRID）"
+                                  % (sid, declared_tg, reg_t["grids"][declared_tg].get("status")))
+            except Exception as e:
+                errors.append("场景 %r 读取地形注册表失败：%s" % (sid, e))
         src = _load(os.path.join(d, "sources.json")) or {}
         src_ids = {s.get("id") for s in src.get("sources", [])}
         ev = _load(os.path.join(d, "events.json")) or {}

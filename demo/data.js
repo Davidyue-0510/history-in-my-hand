@@ -274,6 +274,7 @@ window.SANDBOX_DATA = {
   }
  },
  "terrain": {
+  "_grid_id": "liaodong",
   "lon0": 122.0,
   "lat0": 40.0,
   "step": 0.05,
@@ -6783,8 +6784,16 @@ window.SANDBOX_DATA = {
   "source": "ASTER GDEM v3 (NASA/METI), 经 OpenTopoData 公共实例采样",
   "source_url": "https://lpdaac.usgs.gov/products/astgtmv003/",
   "min": 0.0,
-  "max": 1784.0
+  "max": 1784.0,
+  "bbox": [
+   122.0,
+   40.0,
+   126.8,
+   43.3
+  ]
  },
+ "terrain_grid_id": "liaodong",
+ "terrain_status": "fetched",
  "rivers": [
   {
    "id": "liaohe",
@@ -7039,7 +7048,8 @@ window.SANDBOX_DATA = {
     "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
     "page": "sarhu.html",
     "key": "sarhu",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -11726,7 +11736,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=kaiyuan",
     "key": "kaiyuan",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -13193,7 +13204,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=tieling",
     "key": "tieling",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -14216,7 +14228,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=yehe",
     "key": "yehe",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -14569,7 +14582,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=liaoyang",
     "key": "liaoyang",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -14767,7 +14781,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁北镇市",
      "note": "辽东总兵驻地, 辽东都司西边重镇 (超出投影范围, 仅作 admin 关系)",
-     "elev": 13
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "shenyang_cheng",
@@ -16197,7 +16212,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=shenyang",
     "key": "shenyang",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -16409,7 +16425,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁北镇市",
      "note": "明辽东总兵驻地, 在现地形网格外, 见辽西走廊",
-     "elev": 13
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "hetuala",
@@ -17690,7 +17707,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=fushun",
     "key": "fushun",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -18347,7 +18365,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=haizhou",
     "key": "haizhou",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -18464,7 +18483,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁盖州市",
      "note": "海州南向卫城, 在地形网格外",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "xingshan",
@@ -18721,7 +18741,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=gaizhou",
     "key": "gaizhou",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -18778,7 +18799,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁盖州市",
      "note": "明盖州卫治, 在现地形网格外",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "xiongyue",
@@ -18818,7 +18840,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁瓦房店市",
      "note": "盖州南向卫城",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "jinzhou_cheng",
@@ -18828,7 +18851,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁大连市金州区",
      "note": "辽东半岛南端, 在地形网格外",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -19035,7 +19059,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=fuzhou",
     "key": "fuzhou",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -19092,7 +19117,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁瓦房店市",
      "note": "明复州卫，辽南陆桥",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "wau_fangdian",
@@ -19102,7 +19128,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁瓦房店市",
      "note": "今复州所在",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "gaizhou_cheng",
@@ -19112,7 +19139,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁盖州市",
      "note": "复州北向卫城",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "jinzhouwei_cheng",
@@ -19122,7 +19150,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁大连金州区",
      "note": "复州南向，半岛南端",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "pidao",
@@ -19132,7 +19161,8 @@ window.SANDBOX_DATA = {
      "type": "island",
      "modern": "朝鲜椴岛/皮岛",
      "note": "毛文龙东江镇基地，袭扰辽南",
-     "elev": 25
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -19340,7 +19370,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=jinzhouwei",
     "key": "jinzhouwei",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -19397,7 +19428,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁大连金州区",
      "note": "明金州卫，辖旅顺口，半岛南端",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "lvshun",
@@ -19407,7 +19439,8 @@ window.SANDBOX_DATA = {
      "type": "guan",
      "modern": "辽宁大连旅顺口",
      "note": "金州卫辖，海运要塞",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "fuzhou_cheng",
@@ -19417,7 +19450,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁瓦房店市",
      "note": "金州北向卫城",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "pidao",
@@ -19427,7 +19461,8 @@ window.SANDBOX_DATA = {
      "type": "island",
      "modern": "朝鲜椴岛",
      "note": "毛文龙东江镇，一度收复金州/旅顺",
-     "elev": 25
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "denglai",
@@ -19437,7 +19472,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "山东蓬莱",
      "note": "金州海运对岸，明援辽通道",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -19655,7 +19691,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=guangning",
     "key": "guangning",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -19744,7 +19781,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁北镇市",
      "note": "明广宁卫/辽东镇驻地，辽西最后重心",
-     "elev": 14
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "guangning_wei",
@@ -19754,7 +19792,8 @@ window.SANDBOX_DATA = {
      "type": "wei",
      "modern": "辽宁北镇市",
      "note": "洪武二十五年置，隶辽东都司",
-     "elev": 14
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "shanhaiguan",
@@ -19764,7 +19803,8 @@ window.SANDBOX_DATA = {
      "type": "guan",
      "modern": "河北秦皇岛",
      "note": "辽西走廊终端，明蓟镇门户",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "shenyang_cheng",
@@ -19784,7 +19824,8 @@ window.SANDBOX_DATA = {
      "type": "mountain",
      "modern": "冀辽交界",
      "note": "辽西走廊北缘",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -20592,7 +20633,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=jinzhou",
     "key": "jinzhou",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -20676,7 +20718,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁锦州市",
      "note": "明锦州卫，辽西走廊咽喉",
-     "elev": 15
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "songshan",
@@ -20686,7 +20729,8 @@ window.SANDBOX_DATA = {
      "type": "battle",
      "modern": "辽宁锦州市南",
      "note": "松锦决战主战场，洪承畴兵败处",
-     "elev": 10
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "ningyuan",
@@ -20696,7 +20740,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁兴城市",
      "note": "锦州南向卫城，关宁锦防线",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "guangning",
@@ -20706,7 +20751,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁北镇市",
      "note": "锦州北向卫城",
-     "elev": 14
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "shanhaiguan",
@@ -20716,7 +20762,8 @@ window.SANDBOX_DATA = {
      "type": "guan",
      "modern": "河北秦皇岛",
      "note": "辽西走廊终端",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -21071,7 +21118,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=ningyuan",
     "key": "ningyuan",
-    "vocab_pack": "ming_qing"
+    "vocab_pack": "ming_qing",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -21139,7 +21187,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁兴城市",
      "note": "明宁远卫，关宁锦防线核心",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "juehua",
@@ -21149,7 +21198,8 @@ window.SANDBOX_DATA = {
      "type": "island",
      "modern": "辽宁兴城菊花岛",
      "note": "明辽东囤粮岛，宁远之战被焚",
-     "elev": 0
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "jinzhou_cheng",
@@ -21159,7 +21209,8 @@ window.SANDBOX_DATA = {
      "type": "city",
      "modern": "辽宁锦州市",
      "note": "宁远北向卫城",
-     "elev": 15
+     "elev": null,
+     "off_grid": true
     },
     {
      "id": "shanhaiguan",
@@ -21169,7 +21220,8 @@ window.SANDBOX_DATA = {
      "type": "guan",
      "modern": "河北秦皇岛",
      "note": "宁远南向，走廊终端",
-     "elev": 38
+     "elev": null,
+     "off_grid": true
     }
    ],
    "persons": [
@@ -21987,7 +22039,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=novel_fandao",
     "key": "novel_fandao",
-    "vocab_pack": "inline:novel_fandao"
+    "vocab_pack": "inline:novel_fandao",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -22647,7 +22700,8 @@ window.SANDBOX_DATA = {
     },
     "page": "county.html?scene=novel_fandao_2",
     "key": "novel_fandao_2",
-    "vocab_pack": "inline:novel_fandao_2"
+    "vocab_pack": "inline:novel_fandao_2",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -23218,7 +23272,8 @@ window.SANDBOX_DATA = {
     "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
     "page": "county.html?scene=novel_fandao_3",
     "key": "novel_fandao_3",
-    "vocab_pack": "inline:novel_fandao_3"
+    "vocab_pack": "inline:novel_fandao_3",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -23690,7 +23745,8 @@ window.SANDBOX_DATA = {
     "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
     "page": "county.html?scene=novel_fandao_4",
     "key": "novel_fandao_4",
-    "vocab_pack": "inline:novel_fandao_4"
+    "vocab_pack": "inline:novel_fandao_4",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -24135,7 +24191,8 @@ window.SANDBOX_DATA = {
     "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。",
     "page": "county.html?scene=novel_fandao_5",
     "key": "novel_fandao_5",
-    "vocab_pack": "inline:novel_fandao_5"
+    "vocab_pack": "inline:novel_fandao_5",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -24591,7 +24648,8 @@ window.SANDBOX_DATA = {
     "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
     "page": "county.html?scene=novel_fandao_6",
     "key": "novel_fandao_6",
-    "vocab_pack": "inline:novel_fandao_6"
+    "vocab_pack": "inline:novel_fandao_6",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -25021,7 +25079,8 @@ window.SANDBOX_DATA = {
     "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
     "page": "county.html?scene=novel_fandao_7",
     "key": "novel_fandao_7",
-    "vocab_pack": "inline:novel_fandao_7"
+    "vocab_pack": "inline:novel_fandao_7",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -25458,7 +25517,8 @@ window.SANDBOX_DATA = {
     "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。",
     "page": "county.html?scene=novel_fandao_8",
     "key": "novel_fandao_8",
-    "vocab_pack": "inline:novel_fandao_8"
+    "vocab_pack": "inline:novel_fandao_8",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {
@@ -25887,7 +25947,8 @@ window.SANDBOX_DATA = {
     "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。",
     "page": "county.html?scene=novel_fandao_9",
     "key": "novel_fandao_9",
-    "vocab_pack": "inline:novel_fandao_9"
+    "vocab_pack": "inline:novel_fandao_9",
+    "terrain_grid": "liaodong"
    },
    "sources": [
     {

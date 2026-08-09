@@ -1,0 +1,38 @@
+{
+  "_comment": "高程网格注册表（v0.22）。在此之前，tools/fetch_terrain.py 把辽东的经纬边界与步长写成模块级常量，产物文件名也写死成 liaodong_grid.json——想覆盖第二片区域就得改源码。本表把「有哪些网格」变成数据：新增一片区域 = 在此加一条 + 跑 fetch_terrain.py --grid <id>，工具与构建零改动。",
+  "_schema_version": "0.1",
+  "_consumers": [
+    "tools/fetch_terrain.py → 按 id 拉取/续拉，--list 列出，--estimate 估算成本",
+    "tools/build.py         → 按 default 解析默认网格；场景可用 terrain_grid 指定别的",
+    "tools/terrain_model.py → 按文件路径加载",
+    "tools/check_scenes.py  → 校验场景声明的 terrain_grid 真的存在"
+  ],
+  "_field_notes": {
+    "bbox": "[lon0, lat0, lon1, lat1]，WGS84 十进制度。",
+    "step": "采样步长（度）。0.05° ≈ 4.2km(经)×5.5km(纬)，战役级足够；0.2° 适合全国概览。",
+    "status": "fetched = 产物已落盘且完整；not_fetched = 只登记未拉取（诚实标注，绝不用插值伪造）；partial = 拉了一部分。",
+    "file": "产物文件名，相对 data/terrain/。"
+  },
+  "_honesty_note": "status 不是 fetched 的网格，构建时不会被当作真实地形使用。本项目宁可在界面上标 OFF_GRID，也不生成看起来合理的假高程。",
+  "default": "liaodong",
+  "grids": {
+    "liaodong": {
+      "label": "辽东战场",
+      "file": "liaodong_grid.json",
+      "bbox": [122.0, 40.0, 126.8, 43.3],
+      "step": 0.05,
+      "dataset": "aster30m",
+      "status": "fetched",
+      "note": "与 demo 地图投影范围一致。97×67=6499 点，明清辽东 14 个切片全部落在其内。"
+    },
+    "china_coarse": {
+      "label": "中国全域·粗网格",
+      "file": "china_coarse_grid.json",
+      "bbox": [73.5, 18.0, 135.1, 53.6],
+      "step": 0.2,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "全国扩展的底图层。0.2° 步长 → 309×179=55311 点，按 OpenTopoData 公共实例 100 点/批、1.15 秒/批算约 11 分钟。策略是「全国粗网格打底 + 战役区局部加密」，而不是一张 0.05° 的大网格（那要 89 万点、近 3 小时，且单文件几十 MB）。"
+    }
+  }
+}
