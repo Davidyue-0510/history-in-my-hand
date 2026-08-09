@@ -19,7 +19,12 @@
     "liaodong": {
       "label": "辽东战场",
       "file": "liaodong_grid.json",
-      "bbox": [122.0, 40.0, 126.8, 43.3],
+      "bbox": [
+        122.0,
+        40.0,
+        126.8,
+        43.3
+      ],
       "step": 0.05,
       "dataset": "aster30m",
       "status": "fetched",
@@ -28,11 +33,30 @@
     "china_coarse": {
       "label": "中国全域·粗网格",
       "file": "china_coarse_grid.json",
-      "bbox": [73.5, 18.0, 135.1, 53.6],
+      "bbox": [
+        73.5,
+        18.0,
+        135.1,
+        53.6
+      ],
       "step": 0.2,
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "全国扩展的底图层。0.2° 步长 → 309×179=55311 点，按 OpenTopoData 公共实例 100 点/批、1.15 秒/批算约 11 分钟。策略是「全国粗网格打底 + 战役区局部加密」，而不是一张 0.05° 的大网格（那要 89 万点、近 3 小时，且单文件几十 MB）。"
+    },
+    "tang": {
+      "label": "唐淮西战场",
+      "file": "tang_grid.json",
+      "bbox": [
+        108.0,
+        31.0,
+        117.0,
+        35.0
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

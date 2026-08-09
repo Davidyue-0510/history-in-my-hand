@@ -364,6 +364,8 @@ def main():
     ap.add_argument("--context", help="仅加载该场景的实体白名单进 prompt（用于约束 LLM id），"
                                         "但不自动追加；配合 --out 产出待合规化文件")
     ap.add_argument("--run-gates", action="store_true", help="写完后跑 tools/gates.py --no-interaction")
+    ap.add_argument("--geocode", action="store_true",
+                    help="抽取后对该场景 places.json 落坐标（需配合 --scene；依赖 data/geo/gazetteer.json）")
     ap.add_argument("--lenient", action="store_true",
                     help="丢弃无法归一化年份/缺必填/层非法的断言后继续（不伪造年份），其余照常落库")
     args = ap.parse_args()
@@ -444,6 +446,25 @@ def main():
     if args.scene:
         tgt = append_to_scene(assertions, args.scene)
         print("[ok] 已追加进场景 %s -> %s" % (args.scene, tgt))
+
+    # 4.5) 可选 geocoding：把该场景 places.json 的地名落坐标（「任意史料导入」落点）
+    if args.geocode:
+        if not args.scene:
+            print("[warn] --geocode 需要 --scene 才能定位 places.json，跳过")
+        else:
+            import geocode as GC
+            ppath = os.path.join(ROOT, "data", args.scene, "places.json")
+            if os.path.exists(ppath):
+                blob = json.load(open(ppath, encoding="utf-8"))
+                resolved, gaps = GC.geocode_places(blob.get("places", []))
+                json.dump(blob, open(ppath, "w", encoding="utf-8"),
+                          ensure_ascii=False, indent=1)
+                print("[geocode] %s: %d 命中 / %d 未命中"
+                      % (args.scene, len(resolved), len(gaps)))
+                for nm in gaps:
+                    print("  [GAP] 未落点: %s" % nm)
+            else:
+                print("[warn] %s 无 places.json，无法 geocode" % args.scene)
 
     # 5) 可选跑 gates
     if args.run_gates:

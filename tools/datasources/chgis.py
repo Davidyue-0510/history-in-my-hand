@@ -1,17 +1,31 @@
-"""CHGIS（中国历史地理信息系统）适配器占位。
+"""CHGIS（中国历史地理信息系统）适配器。
 
-真实实现：运行时下载 CHGIS 地名点，映射为 place 记录（含 lon/lat）。
-本占位只定义接口与缓存约定，构建期不触发网络。
+真实后端：本地 curated 地名表（tools/geocode.py）。CHGIS 官方下载在沙箱不可靠，
+这份本地表先顶上，覆盖常见朝代/地域核心地名；未知地名返回空（由调用方记为缺口）。
+未来要接官方 CHGIS，只需把 fetch 内部换成下载+映射，本文件接口不变。
 """
 from .base import DataSource
+from ..geocode import geocode
 
 
 class CHGISAdapter(DataSource):
-    SOURCE = "CHGIS · 中国历史地理信息系统"
+    SOURCE = "CHGIS · 中国历史地理信息系统（本地地名表后端）"
 
     def fetch(self, query):
-        # 真实实现应：下载/查询 CHGIS → 映射为 {"id","name","lon","lat","note"} 的 place 记录。
-        raise NotImplementedError(
-            "CHGISAdapter.fetch 待实现：运行时下载 %s 地名点并映射为 place 记录；"
-            "数据缓存到本地、不打包入 git。" % self.SOURCE
-        )
+        """按地名查询，返回 place 记录列表。
+
+        :param query: 地名（中文）
+        :returns: list[dict]，形如 {"id","name","lon","lat","note","source"}
+                  未命中返回空列表（诚实：不伪造坐标）。
+        """
+        r = geocode(query)
+        if not r:
+            return []
+        return [{
+            "id": query,
+            "name": query,
+            "lon": r["lon"],
+            "lat": r["lat"],
+            "note": r.get("note"),
+            "source": self.SOURCE,
+        }]

@@ -1,0 +1,11 @@
+{
+ "persons": [
+  {"id": "li_su", "name": "李愬", "role": "随唐邓节度使", "note": "雪夜入蔡州，擒吴元济"},
+  {"id": "wu_yuanji", "name": "吴元济", "role": "淮西节度使（割据）", "note": "吴少阳子，父死自领军务，拒命朝廷"},
+  {"id": "pei_du", "name": "裴度", "role": "宰相·彰义军节度淮西宣慰处置使", "note": "主征淮西，督诸军"},
+  {"id": "xianzong", "name": "唐宪宗", "role": "皇帝", "note": "元和削藩，平淮西为其一功"},
+  {"id": "li_guangyan", "name": "李光颜", "role": "忠武军节度使", "note": "屡破淮西兵，洄曲拒守"},
+  {"id": "dong_zhongzhi", "name": "董重质", "role": "淮西骁将", "note": "守洄曲，吴元济倚为重"},
+  {"id": "li_shidao", "name": "李师道", "role": "平卢节度使", "note": "与淮西呼应，刺宰相武元衡"}
+ ]
+}

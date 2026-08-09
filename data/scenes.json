@@ -50,6 +50,11 @@
       "id": "fiction",
       "name": "虚构世界",
       "note": "由文字资料（小说/设定集）生成的虚构 world，无真实地形参照；立场派生于来源，不伪造几何。"
+    },
+    {
+      "id": "tang",
+      "name": "唐",
+      "note": "唐代切片（如元和削藩·平淮西）。地名由 data/geo/gazetteer.json 自动落点；地形网格 tang 未拉取时诚实 OFF_GRID。"
     }
   ],
   "order": [
@@ -75,7 +80,8 @@
     "novel_fandao_6",
     "novel_fandao_7",
     "novel_fandao_8",
-    "novel_fandao_9"
+    "novel_fandao_9",
+    "tang_huai_xi"
   ],
   "scenes": {
     "sarhu": {
@@ -630,6 +636,30 @@
       ],
       "fictional": true,
       "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。"
+    },
+    "tang_huai_xi": {
+      "kind": "county",
+      "region": "tang",
+      "title": "平淮西·雪夜入蔡州",
+      "dossier_label": "平淮西",
+      "subtitle": "元和九年—十二年（814—817）· 李愬雪夜入蔡州",
+      "primary_place": "caizhou",
+      "dossier_event": "event:li_su_xueye",
+      "vocab_pack": "tang",
+      "terrain_grid": "tang",
+      "extra_files": ["events", "edges"],
+      "lead": "唐宪宗元和削藩的收官之战：吴元济据淮西拒命，李愬雪夜自文城栅出、趋蔡州擒元济。本切片用唐代语境包（tang.json）自动分桶，与辽东切片共用同一套断言内核——差异只在立场语义（唐廷/藩镇/后世官修）。地名由 data/geo/gazetteer.json 自动落点。",
+      "parties_note": "现存的淮西史料多出自《通鉴》《旧/新唐书》等后世官修（宋·官修/五代·官修），唐廷本方声音极少（实录多亡佚）——这正是 tang.json 在「唐廷」桶下标注的结构性缺口。系统不裁决，只并列。",
+      "subject_names": {
+        "event:huai_xi_jufa": "吴元济拒命",
+        "event:li_su_xueye": "李愬雪夜入蔡州",
+        "event:huai_xi_ping": "淮西平定",
+        "place:caizhou": "蔡州",
+        "place:wenchengzhai": "文城栅",
+        "person:li_su": "李愬",
+        "person:wu_yuanji": "吴元济",
+        "person:pei_du": "裴度"
+      }
     }
   }
 }

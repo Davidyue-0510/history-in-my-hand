@@ -686,6 +686,22 @@
    "_src_line": 48
   },
   {
+   "id": "TH012",
+   "scene": "tang_huai_xi",
+   "subject": "event:li_su_xueye",
+   "title": "",
+   "missing": "比对《通鉴》与新旧《唐书》李愬传 / 核《裴度集》",
+   "where": "李愬雪夜入蔡与裴度督师方略的分工",
+   "skills": [
+    "比对《通鉴》与新旧《唐书》李愬传",
+    "核《裴度集》"
+   ],
+   "accept": "明确两人在平蔡战略中的各自角色",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "T016",
    "scene": "tieling",
    "subject": "event:tieling_fall",

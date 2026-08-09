@@ -1,0 +1,96 @@
+{
+ "places": [
+  {
+   "id": "caizhou",
+   "name": "蔡州",
+   "type": "city",
+   "modern": "河南汝南",
+   "note": "淮西节度使治所",
+   "lon": 114.35,
+   "lat": 33.53,
+   "geo_note": "唐淮西节度使治所，今河南汝南"
+  },
+  {
+   "id": "tangzhou",
+   "name": "唐州",
+   "type": "zhou",
+   "modern": "河南泌阳",
+   "note": "李愬出兵基地",
+   "lon": 113.31,
+   "lat": 32.73,
+   "geo_note": "今河南泌阳"
+  },
+  {
+   "id": "wenchengzhai",
+   "name": "文城栅",
+   "type": "zhai",
+   "modern": "河南遂平西北",
+   "note": "蔡州西北要栅，李愬雪夜自此发",
+   "lon": 113.97,
+   "lat": 33.15,
+   "geo_note": "蔡州西北要栅，今河南遂平"
+  },
+  {
+   "id": "huiqu",
+   "name": "洄曲",
+   "type": "river_defense",
+   "modern": "河南漯河沙河",
+   "note": "董重质所守，蔡州北屏障",
+   "lon": 114.03,
+   "lat": 33.58,
+   "geo_note": "蔡州北洄曲，今河南漯河沙河一带"
+  },
+  {
+   "id": "yancheng",
+   "name": "郾城",
+   "type": "zhou",
+   "modern": "河南漯河郾城",
+   "note": "李光颜拒守",
+   "lon": 113.97,
+   "lat": 33.87,
+   "geo_note": "今河南漯河郾城"
+  },
+  {
+   "id": "shenzhou",
+   "name": "申州",
+   "type": "zhou",
+   "modern": "河南信阳",
+   "note": "淮西属州",
+   "lon": 114.08,
+   "lat": 32.15,
+   "geo_note": "今河南信阳"
+  },
+  {
+   "id": "huai_xi",
+   "name": "淮西",
+   "type": "zhen",
+   "modern": "河南南部",
+   "note": "方镇，治蔡州",
+   "lon": 114.35,
+   "lat": 33.53,
+   "geo_note": "方镇名，治蔡州"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "type": "city",
+   "modern": "陕西西安",
+   "note": "唐都",
+   "lon": 108.95,
+   "lat": 34.27,
+   "geo_note": "唐都，今西安"
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "type": "city",
+   "modern": "河南洛阳",
+   "note": "东都",
+   "lon": 112.45,
+   "lat": 34.62,
+   "geo_note": "唐东都，今洛阳"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

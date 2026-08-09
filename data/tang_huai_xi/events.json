@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "ev_huai_xi_jufa",
+   "subject": "event:huai_xi_jufa",
+   "year": 814,
+   "era": "元和九年",
+   "title": "吴元济拒命",
+   "kind": "战事",
+   "text": "吴少阳死，其子元济匿丧，自领军务，出兵屠舞阳、焚叶县，拒朝廷命。"
+  },
+  {
+   "id": "ev_li_su_xueye",
+   "subject": "event:li_su_xueye",
+   "year": 817,
+   "era": "元和十二年冬",
+   "title": "李愬雪夜入蔡州",
+   "kind": "战事",
+   "text": "李愬以雪夜自文城栅出，趋蔡州，坎墉先登，擒吴元济；淮西遂平。"
+  },
+  {
+   "id": "ev_huai_xi_ping",
+   "subject": "event:huai_xi_ping",
+   "year": 817,
+   "era": "元和十二年",
+   "title": "淮西平定",
+   "kind": "行政",
+   "text": "吴元济槛送京师斩，淮西改为州县，分其地为三州，唐廷复直辖。"
+  }
+ ]
+}

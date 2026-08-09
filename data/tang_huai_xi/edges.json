@@ -1,0 +1,8 @@
+{
+ "edges": [
+  {"from": "caizhou", "to": "tangzhou", "type": "admin", "label": "蔡州—唐州（淮西节度辖州）"},
+  {"from": "caizhou", "to": "wenchengzhai", "type": "military", "label": "蔡州—文城栅（李愬出兵路）"},
+  {"from": "caizhou", "to": "huiqu", "type": "military", "label": "蔡州—洄曲（董重质守）"},
+  {"from": "changan", "to": "caizhou", "type": "admin", "label": "长安—蔡州（朝廷—淮西）"}
+ ]
+}

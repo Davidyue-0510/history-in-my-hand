@@ -24,6 +24,7 @@
 | ningyuan | 31 | 4 | **0.319** | event:ningjin_dajie（0.333） | gap 2 / record 28 / scholarship 1 |
 | 萨尔浒 | 111 | 5 | **0.514** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 87 / scholarship 11 |
 | shenyang | 50 | 6 | **0.401** | event:shenyang_relief（0.909） | gap 4 / inference 1 / record 43 / scholarship 2 |
+| tang_huai_xi | 12 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
 
@@ -40,6 +41,9 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
+| event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ice_walls | shenyang | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | event:jinzhouwei_mao | jinzhouwei | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 0 / 2 / 0 |
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |

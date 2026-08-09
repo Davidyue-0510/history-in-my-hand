@@ -391,7 +391,7 @@ def main():
             bundle["meta"]["terrain_off_grid"] = True
         else:
             for p in bundle["places"]:
-                if "lon" in p and "lat" in p:
+                if p.get("lon") is not None and p.get("lat") is not None:
                     ev = _elev_or_none(scene_terr, p["lon"], p["lat"])
                     p["elev"] = ev
                     if ev is None:
@@ -475,7 +475,7 @@ def main():
             continue
         pm = {p["id"]: p for p in pl}
         p = pm.get(pp)
-        if not p or "lon" not in p or "lat" not in p:
+        if not p or p.get("lon") is None or p.get("lat") is None:
             continue
         seats[pp] = {
             "place_id": pp,

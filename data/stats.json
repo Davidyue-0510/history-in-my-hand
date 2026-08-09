@@ -1,16 +1,16 @@
 {
-  "scenes_total": 23,
-  "historical": 14,
+  "scenes_total": 24,
+  "historical": 15,
   "fictional": 9,
-  "assertions_total": 500,
-  "sources_total": 36,
+  "assertions_total": 512,
+  "sources_total": 40,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
     "tang"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 47,
+  "leads_total": 48,
   "per_scene": [
     {
       "id": "sarhu",
@@ -180,6 +180,13 @@
       "kind": "fiction",
       "assertions": 8,
       "factions": {}
+    },
+    {
+      "id": "tang_huai_xi",
+      "title": "平淮西·雪夜入蔡州",
+      "kind": "county",
+      "assertions": 12,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -205,6 +212,7 @@
     "novel_fandao_6": "反派他爸教做人·同性恋骗婚儿子",
     "novel_fandao_7": "反派他爸教做人·爱情至上的女儿",
     "novel_fandao_8": "反派他爸教做人·不听话的喵儿子",
-    "novel_fandao_9": "反派他爸教做人·胎穿女和魂穿女"
+    "novel_fandao_9": "反派他爸教做人·胎穿女和魂穿女",
+    "tang_huai_xi": "平淮西·雪夜入蔡州"
   }
 }

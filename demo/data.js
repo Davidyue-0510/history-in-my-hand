@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 23 个切片
+// 权威数据源：data/scenes.json 注册的 24 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 23 个切片",
+  "slice": "multi-scene · 24 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -44,6 +44,11 @@ window.SANDBOX_DATA = {
    "id": "fiction",
    "name": "虚构世界",
    "note": "由文字资料（小说/设定集）生成的虚构 world，无真实地形参照；立场派生于来源，不伪造几何。"
+  },
+  {
+   "id": "tang",
+   "name": "唐",
+   "note": "唐代切片（如元和削藩·平淮西）。地名由 data/geo/gazetteer.json 自动落点；地形网格 tang 未拉取时诚实 OFF_GRID。"
   }
  ],
  "scene_order": [
@@ -69,7 +74,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_6",
   "novel_fandao_7",
   "novel_fandao_8",
-  "novel_fandao_9"
+  "novel_fandao_9",
+  "tang_huai_xi"
  ],
  "vocab": {
   "layers": [
@@ -7590,6 +7596,30 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "tang_huai_xi": {
+   "key": "tang_huai_xi",
+   "title": "平淮西·雪夜入蔡州",
+   "dossier_label": "平淮西",
+   "subtitle": "元和九年—十二年（814—817）· 李愬雪夜入蔡州",
+   "kind": "county",
+   "region": "tang",
+   "page": "county.html?scene=tang_huai_xi",
+   "primary_place": "caizhou",
+   "vocab_pack": "tang",
+   "terrain_grid": "tang",
+   "terrain_off_grid": true,
+   "counts": {
+    "src": 4,
+    "place": 9,
+    "person": 7,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -7615,7 +7645,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_6": "slices/novel_fandao_6.js",
   "novel_fandao_7": "slices/novel_fandao_7.js",
   "novel_fandao_8": "slices/novel_fandao_8.js",
-  "novel_fandao_9": "slices/novel_fandao_9.js"
+  "novel_fandao_9": "slices/novel_fandao_9.js",
+  "tang_huai_xi": "slices/tang_huai_xi.js"
  },
  "corridors": [
   {
@@ -8366,6 +8397,22 @@ window.SANDBOX_DATA = {
     "_src_line": 48
    },
    {
+    "id": "TH012",
+    "scene": "tang_huai_xi",
+    "subject": "event:li_su_xueye",
+    "title": "",
+    "missing": "比对《通鉴》与新旧《唐书》李愬传 / 核《裴度集》",
+    "where": "李愬雪夜入蔡与裴度督师方略的分工",
+    "skills": [
+     "比对《通鉴》与新旧《唐书》李愬传",
+     "核《裴度集》"
+    ],
+    "accept": "明确两人在平蔡战略中的各自角色",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
     "id": "T016",
     "scene": "tieling",
     "subject": "event:tieling_fall",
@@ -8453,6 +8500,7 @@ window.SANDBOX_DATA = {
     "ningyuan",
     "sarhu",
     "shenyang",
+    "tang_huai_xi",
     "tieling",
     "yehe"
    ],
@@ -8727,6 +8775,25 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.909
    },
    {
+    "scene": "tang_huai_xi",
+    "name": "tang_huai_xi",
+    "total": 12,
+    "layers": {
+     "record": 9,
+     "scholarship": 1,
+     "inference": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "后世官修": 12
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:huai_xi_jufa",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "tieling",
     "name": "铁岭",
     "total": 31,
@@ -8791,6 +8858,93 @@ window.SANDBOX_DATA = {
    }
   },
   "events": [
+   {
+    "subject": "event:huai_xi_jufa",
+    "name": "event:huai_xi_jufa",
+    "scenes": [
+     "tang_huai_xi"
+    ],
+    "scene_names": [
+     "tang_huai_xi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:huai_xi_ping",
+    "name": "event:huai_xi_ping",
+    "scenes": [
+     "tang_huai_xi"
+    ],
+    "scene_names": [
+     "tang_huai_xi"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_su_xueye",
+    "name": "event:li_su_xueye",
+    "scenes": [
+     "tang_huai_xi"
+    ],
+    "scene_names": [
+     "tang_huai_xi"
+    ],
+    "total": 5,
+    "gap_count": 1,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.333,
+    "gap_rate": 0.2,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "综述考订": []
+    }
+   },
    {
     "subject": "event:ice_walls",
     "name": "event:ice_walls",
@@ -11940,6 +12094,13 @@ window.SANDBOX_DATA = {
    "lon": 120.7,
    "lat": 40.62,
    "region": "liaoxi"
+  },
+  {
+   "place_id": "caizhou",
+   "name": "蔡州",
+   "lon": 114.35,
+   "lat": 33.53,
+   "region": "tang"
   }
  ],
  "control_years": [
