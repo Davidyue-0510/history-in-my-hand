@@ -759,7 +759,8 @@
       var head = '<div class="pty-head"><span class="pty-name">' + name +
         (isBad ? ' <em style="color:#B23A48;font-style:normal">· 未登记词表</em>' : '') +
         '</span>' +
-        '<span class="pty-n" style="background:' + (isBad ? '#B23A48' : b.color) + '">' +
+        '<span class="pty-n" style="background:' + (isBad ? '#B23A48'
+          : ((VOCAB.party_colors && VOCAB.party_colors[name]) || b.color)) + '">' +
         (items.length + gaps.length) + ' 条</span></div>';
       var body = '<div class="pty-body">';
       if (isBad) {
@@ -1511,7 +1512,10 @@
   function renderControlLegend() {
     var lg = document.getElementById('ctrlLegend');
     if (!lg) return;
-    var parts = [{ p: '明方', t: '明方' }, { p: '清方', t: '后金 / 清' }, { p: '朝鲜', t: '朝鲜' }];
+    // v0.24c：图例随控制数据实际出现的 party 动态生成（不再写死明/清/朝），
+    // 颜色走 ControlLayer.partyColor（= 语境包 party_colors 单一真值）。
+    var parts = (window.ControlLayer.activeParties
+      ? window.ControlLayer.activeParties() : []).map(function (p) { return { p: p, t: p }; });
     var nation = state.control.scope === 'nation';
     var tallyMap = nation ? ControlLayer.tally(state.control.year) : null;
     var total = 0;
@@ -1605,7 +1609,8 @@
       getView: function () { return view; },
       getCw: function () { return cw; },
       getDpr: function () { return window.devicePixelRatio || 1; },
-      sceneData: D   // v0.24：场景自带 control.json 时用它；辽东切片 fallback 全局
+      sceneData: D,                    // v0.24：场景自带 control.json 时用它；辽东切片 fallback 全局
+      partyColors: VOCAB.party_colors  // v0.24c：控制层配色单一真值（语境包）
     });
   }
   applyView(false); wireControl(); refresh();

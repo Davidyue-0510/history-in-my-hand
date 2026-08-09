@@ -30,8 +30,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "person:quan_lyu": "权栗"
   },
   "page": "county.html?scene=imjin",
-  "key": "imjin",
-  "terrain_off_grid": true
+  "key": "imjin"
  },
  "sources": [
   {
@@ -80,7 +79,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "平安道首府，平壤之战主战场",
    "lon": 125.75,
    "lat": 39.03,
-   "geo_note": "朝鲜平安道首府，壬辰倭乱平壤之战主战场"
+   "geo_note": "朝鲜平安道首府，壬辰倭乱平壤之战主战场",
+   "elev": 12
   },
   {
    "id": "hanseong",
@@ -90,7 +90,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "朝鲜都城，壬辰陷落",
    "lon": 126.98,
    "lat": 37.57,
-   "geo_note": "朝鲜都城，壬辰倭乱陷落与收复"
+   "geo_note": "朝鲜都城，壬辰倭乱陷落与收复",
+   "elev": 117
   },
   {
    "id": "kaesong",
@@ -100,7 +101,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "李如柏收复",
    "lon": 126.55,
    "lat": 37.97,
-   "geo_note": "朝鲜旧都，李如柏收复"
+   "geo_note": "朝鲜旧都，李如柏收复",
+   "elev": 100
   },
   {
    "id": "bixieguan",
@@ -110,7 +112,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "明军小挫处，三方伤亡数字分歧",
    "lon": 126.85,
    "lat": 37.6,
-   "geo_note": "汉城西北驿，1593明军小挫处，三方伤亡数字分歧极大"
+   "geo_note": "汉城西北驿，1593明军小挫处，三方伤亡数字分歧极大",
+   "elev": 61
   },
   {
    "id": "xingzhou",
@@ -120,7 +123,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "权栗大捷处",
    "lon": 126.78,
    "lat": 37.63,
-   "geo_note": "汉江西岸山城，权栗大败日军"
+   "geo_note": "汉江西岸山城，权栗大败日军",
+   "elev": 20
   },
   {
    "id": "busan",
@@ -130,7 +134,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "日军登陆点",
    "lon": 129.08,
    "lat": 35.18,
-   "geo_note": "日军登陆点，郑泼战死"
+   "geo_note": "日军登陆点，郑泼战死",
+   "elev": 38
   },
   {
    "id": "dongnae",
@@ -140,7 +145,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "宋象贤死节处",
    "lon": 129.09,
    "lat": 35.2,
-   "geo_note": "釜山北，府使宋象贤死节"
+   "geo_note": "釜山北，府使宋象贤死节",
+   "elev": 15
   },
   {
    "id": "uiju",
@@ -150,7 +156,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "宣祖行在所",
    "lon": 124.4,
    "lat": 40.1,
-   "geo_note": "鸭绿江南岸，宣祖行在所"
+   "geo_note": "鸭绿江南岸，宣祖行在所",
+   "elev": null,
+   "off_grid": true
   },
   {
    "id": "anzhou",
@@ -160,7 +168,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "宋应昌驻军处",
    "lon": 125.66,
    "lat": 39.62,
-   "geo_note": "平壤北，宋应昌驻军处"
+   "geo_note": "平壤北，宋应昌驻军处",
+   "elev": null,
+   "off_grid": true
   },
   {
    "id": "shunan",
@@ -170,7 +180,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "李如松屯兵处",
    "lon": 125.65,
    "lat": 39.05,
-   "geo_note": "平壤北，李如松屯兵处"
+   "geo_note": "平壤北，李如松屯兵处",
+   "elev": 25
   },
   {
    "id": "jinzhou",
@@ -180,7 +191,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "晋州城陷，金千镒等死之",
    "lon": 128.11,
    "lat": 35.19,
-   "geo_note": "1593晋州城陷，金千镒等死之"
+   "geo_note": "1593晋州城陷，金千镒等死之",
+   "elev": 93
   },
   {
    "id": "zhongzhou",
@@ -190,7 +202,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "申砬败死处",
    "lon": 127.93,
    "lat": 36.99,
-   "geo_note": "申砬败死处"
+   "geo_note": "申砬败死处",
+   "elev": 98
   },
   {
    "id": "shangzhou",
@@ -200,7 +213,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "李镒兵溃处",
    "lon": 128.16,
    "lat": 36.34,
-   "geo_note": "李镒兵溃处"
+   "geo_note": "李镒兵溃处",
+   "elev": 313
   },
   {
    "id": "longren",
@@ -210,7 +224,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "三道兵溃处",
    "lon": 127.2,
    "lat": 37.24,
-   "geo_note": "三道兵溃处"
+   "geo_note": "三道兵溃处",
+   "elev": 173
   },
   {
    "id": "pozhou",
@@ -220,7 +235,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "李如松退屯处",
    "lon": 126.75,
    "lat": 37.83,
-   "geo_note": "李如松退屯处"
+   "geo_note": "李如松退屯处",
+   "elev": 26
   },
   {
    "id": "tsushima",
@@ -230,7 +246,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "日军出发前哨",
    "lon": 129.3,
    "lat": 34.27,
-   "geo_note": "日军出发前哨，宗义智/平义智领地"
+   "geo_note": "日军出发前哨，宗义智/平义智领地",
+   "elev": 25
   },
   {
    "id": "nagoya",
@@ -240,7 +257,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "秀吉征朝本营",
    "lon": 129.95,
    "lat": 33.45,
-   "geo_note": "肥前，秀吉征朝本营"
+   "geo_note": "肥前，秀吉征朝本营",
+   "elev": null,
+   "off_grid": true
   },
   {
    "id": "liaodong",
@@ -250,7 +269,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "note": "明军入援出发地",
    "lon": 123.43,
    "lat": 41.8,
-   "geo_note": "唐安东都护府，今辽宁辽阳"
+   "geo_note": "唐安东都护府，今辽宁辽阳",
+   "elev": null,
+   "off_grid": true
   }
  ],
  "persons": [

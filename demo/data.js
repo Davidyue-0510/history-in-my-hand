@@ -288,6 +288,13 @@ window.SANDBOX_DATA = {
    "yan_shang": "#2874A6",
    "nei_guan": "#5D6D7E",
    "feng_jiang": "#C0392B"
+  },
+  "party_colors": {
+   "明方": "#C0392B",
+   "清方": "#437A5B",
+   "朝鲜": "#2E5C8F",
+   "日本方": "#8E44AD",
+   "综述考订": "#6C7A89"
   }
  },
  "terrain": {
@@ -7640,7 +7647,7 @@ window.SANDBOX_DATA = {
    "primary_place": "pyongyang",
    "vocab_pack": "ming_qing",
    "terrain_grid": "korea",
-   "terrain_off_grid": true,
+   "terrain_off_grid": false,
    "counts": {
     "src": 3,
     "place": 18,

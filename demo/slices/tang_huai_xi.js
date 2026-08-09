@@ -642,6 +642,13 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "nanya": "#4E7C9B",
    "hebei_sanzhen": "#A9503F",
    "shence_jun": "#C2A24B"
+  },
+  "party_colors": {
+   "唐廷": "#A0473A",
+   "藩镇": "#C77B30",
+   "外族": "#8B6BA8",
+   "后世官修": "#6C7A89",
+   "综述考订": "#9B7B5A"
   }
  }
 };

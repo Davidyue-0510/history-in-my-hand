@@ -1426,7 +1426,8 @@
   function renderControlLegend() {
     var lg = document.getElementById('ctrlLegend');
     if (!lg) return;
-    var parts = [{ p: '明方', t: '明方' }, { p: '清方', t: '后金 / 清' }, { p: '朝鲜', t: '朝鲜' }];
+    var parts = (window.ControlLayer.activeParties
+      ? window.ControlLayer.activeParties() : []).map(function (p) { return { p: p, t: p }; });
     var nation = state.control.scope === 'nation';
     var tallyMap = nation ? ControlLayer.tally(state.control.year) : null;
     var total = 0;
@@ -1533,7 +1534,8 @@
       getView: function () { return view; },
       getCw: function () { return cw; },
       getDpr: function () { return window.devicePixelRatio || 1; },
-      sceneData: D   // v0.24：battle 切片无自带 control.json → fallback 全局辽东
+      sceneData: D,                    // v0.24：battle 切片无自带 control.json → fallback 全局辽东
+      partyColors: SD && SD.vocab && SD.vocab.party_colors   // v0.24c：语境包单一真值
     });
   }
   applyView(false);

@@ -48,17 +48,26 @@
     for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
     return h;
   }
+  function hexRgb(h) {
+    h = String(h || '').replace('#', '');
+    if (h.length !== 6) return null;
+    var n = parseInt(h, 16);
+    return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+  }
   function resetParties() { partyList = []; partyIdxMap = {}; }
   function pIdx(p) {
     if (!(p in partyIdxMap)) { partyIdxMap[p] = partyList.length; partyList.push(p); }
     return partyIdxMap[p];
   }
-  function pCol(i) {
-    var p = partyList[i];
+  function pCol(i) { return partyColor(partyList[i]); }
+  // v0.24c：配色单一真值——优先宿主注入的语境包 party_colors（hex），
+  // 其次内置默认表，最后 palette 哈希兜底（任何未知 party 都有稳定色）。
+  function partyColor(p) {
     if (!p) return null;
+    var hex = cfg.partyColors && cfg.partyColors[p];
+    if (hex) { var c = hexRgb(hex); if (c) return c; }
     return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length];
   }
-  function partyColor(p) { return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length]; }
 
   var curYear = null, curScope = null, dirty = true;
 
@@ -175,6 +184,16 @@
     return t;
   }
 
+  // 当前控制数据里实际出现过的 party（按首现顺序）——图例据此动态生成，
+  // 不再写死明/清/朝三个（v0.24c：壬辰场景需出现日本方）。
+  function activeParties() {
+    var seen = [], map = {};
+    ctrlData.forEach(function (c) {
+      if (c.party && !map[c.party]) { map[c.party] = 1; seen.push(c.party); }
+    });
+    return seen;
+  }
+
   function repaint() {
     if (!ready || !cfg.cv) return;
     if (dirty) { rebuild(); dirty = false; }
@@ -213,6 +232,7 @@
   window.ControlLayer = {
     setup: setup, draw: draw, repaint: repaint, clear: clear,
     partyColor: partyColor, controllerAt: controllerAt, tally: tally,
+    activeParties: activeParties,
     isReady: isReady, years: years, seats: function () { return seats; }
   };
 })();
