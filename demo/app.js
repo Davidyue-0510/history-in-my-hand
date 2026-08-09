@@ -1457,6 +1457,7 @@
     var playBtn = document.getElementById('ctrlPlay');
     var cy = ControlLayer.years();
     yr.min = cy[0]; yr.max = cy[1];
+    if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
     yr.value = state.control.year;
     yrLbl.textContent = state.control.year;
 
@@ -1531,7 +1532,8 @@
       cv: controlCv, px: px, py: py,
       getView: function () { return view; },
       getCw: function () { return cw; },
-      getDpr: function () { return window.devicePixelRatio || 1; }
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      sceneData: D   // v0.24：battle 切片无自带 control.json → fallback 全局辽东
     });
   }
   applyView(false);

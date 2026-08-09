@@ -36,6 +36,12 @@ import fetch_terrain as FT  # noqa: E402  地形网格注册表（v0.22：写死
 # meta 里属于「配置」而非「内容」的键，不需要原样带进 bundle.meta 的字段
 _REGISTRY_ONLY = {"dir", "extra_files"}
 
+# 辽东体系 region：无场景级 control.json 时，这些切片沿用全局 SD.control（明末清初
+# 辽东控制权），保持 v0.10 既有行为。其他 region（唐/壬辰…）必须自带 control.json，
+# 否则 build 注入显式空 control=[] → 前端隐藏控制层并诚实提示（v0.24 修「控制层
+# 单例被新切片污染」：control_seats 曾把 caizhou/pyongyang 塞进辽东 Voronoi）。
+LIAODONG_REGIONS = {"liaobei", "jianzhou", "liaodong", "liaonan", "liaoxi"}
+
 
 def load_registry():
     """读取切片注册表，补全缺省字段。其他工具（lint / resonance）也调用本函数，
@@ -202,6 +208,34 @@ def build_scene(sc):
 
     bundle.setdefault("events", [])
     bundle.setdefault("edges", [])
+
+    # 实际控制权（v0.24 场景化——修「控制层单例被新切片污染」）：
+    #   有 data/<dir>/control.json          → bundle.control / control_seats / control_years（场景专属）
+    #   无文件且 region ∈ 辽东体系          → 不注入（前端 fallback 全局 SD.control，辽东 v0.10 行为不变）
+    #   无文件且 region ∉ 辽东体系          → 显式 control=[]（前端隐藏控制层，诚实提示「本场景暂无控制权数据」）
+    ctrl_path = os.path.join(dirpath, "control.json")
+    if os.path.exists(ctrl_path):
+        ctrl_blob = load_json(dirpath, "control.json")
+        ctrl = ctrl_blob.get("control", [])
+        bundle["control"] = ctrl
+        pmap2 = {p["id"]: p for p in places["places"]}
+        seats2 = {}
+        for c in ctrl:
+            pid = c.get("place_id")
+            if pid in seats2:
+                continue
+            p = pmap2.get(pid)
+            if p and p.get("lon") is not None and p.get("lat") is not None:
+                seats2[pid] = {"place_id": pid, "name": p.get("name", pid),
+                               "lon": p["lon"], "lat": p["lat"],
+                               "region": sc.get("region")}
+        bundle["control_seats"] = list(seats2.values())
+        bundle["control_years"] = ctrl_blob.get("_years") or [
+            min(c["start"] for c in ctrl if isinstance(c.get("start"), int)),
+            max(c["end"] for c in ctrl if isinstance(c.get("end"), int)),
+        ]
+    elif sc.get("region") not in LIAODONG_REGIONS:
+        bundle["control"] = []  # 显式空：前端据此隐藏控制层
 
     # 边归一化：地理切片用 type+label；小说等 world 可能只给 relation/rel 自由文本。
     # 这里保证每条边都有 label（否则 drawDynamic 会把 undefined 画上地图）与 type 兜底。
@@ -460,29 +494,31 @@ def main():
     else:
         sd["control"] = []
 
-    # 治所几何：遍历 county 切片，取 primary_place 的 lon/lat/name（去重）。
-    # 这些点就是前端推算「示意辖区」的种子；fiction 切片不参与（无真实地理）。
+    # 治所几何：由「控制权数据里出现的 place_id」驱动（v0.24 修复——之前遍历所有
+    # county 切片的 primary_place，新切片唐/壬辰的蔡州/平壤被塞进辽东 Voronoi 网格，
+    # 而 control 数据没有它们的控制权 → 空洞 + 辽东色块错位到错误经纬）。
+    # 现在只收集 control 数据实际描述的治所几何；无控制权数据的切片不进网格。
+    ctrl_ids = {c.get("place_id") for c in sd["control"]}
     seats = {}
     for sc in resolved:
         if sc.get("kind") != "county":
-            continue
-        pp = sc.get("primary_place")
-        if not pp or pp in seats:
             continue
         try:
             pl = load_json(scene_dir(sc), "places.json")["places"]
         except Exception:
             continue
-        pm = {p["id"]: p for p in pl}
-        p = pm.get(pp)
-        if not p or p.get("lon") is None or p.get("lat") is None:
-            continue
-        seats[pp] = {
-            "place_id": pp,
-            "name": p.get("name", pp),
-            "lon": p["lon"], "lat": p["lat"],
-            "region": sc.get("region"),
-        }
+        for p in pl:
+            pid = p.get("id")
+            if pid not in ctrl_ids or pid in seats:
+                continue
+            if p.get("lon") is None or p.get("lat") is None:
+                continue
+            seats[pid] = {
+                "place_id": pid,
+                "name": p.get("name", pid),
+                "lon": p["lon"], "lat": p["lat"],
+                "region": sc.get("region"),
+            }
     sd["control_seats"] = list(seats.values())
 
     # 年份滑块范围：取控制权时间线的最小 start / 最大 end，但夹到动态期窗口

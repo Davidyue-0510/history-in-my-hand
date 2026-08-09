@@ -1,0 +1,35 @@
+{
+  "_comment": "壬辰倭乱实际控制态势（v0.24 场景级控制权数据）。每 segment 表示某 place_id 在 [start,end] 年间由某 party 实际控制；end=null 表示持续至今（本场景时间窗 1598 之后）。party 取自本场景语境包 ming_qing 的 parties（明方/清方/朝鲜/日本方/综述考订）。控制权事实据《宣祖昭敬大王修正实录》编年：1592 年 4 月日军登陆、5 月汉城陷、6 月平壤陷；1593 年正月明军收复平壤、4 月日军弃王京；1593 年 6 月晋州城陷；1598 年日军全面撤退。明军为收复主力，但控制权记朝鲜为主（朝鲜王朝复国建制），note 注明明军协防——『实际控制区』的语义是政权主权归属，不是驻军构成。几何由 build.py 按本场景 places.json 的 lon/lat 取，Voronoi 近似。",
+  "_years": [1592, 1598],
+  "control": [
+    {"place_id": "pyongyang", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "朝鲜平安道首府", "note": ""},
+    {"place_id": "pyongyang", "party": "日本方", "start": 1592, "end": 1592, "basis": "1592年6月平壤陷落，行长据之", "note": ""},
+    {"place_id": "pyongyang", "party": "朝鲜", "start": 1593, "end": null, "basis": "1593年正月李如松收复平壤", "note": "明军协防主力，控制权记朝鲜（复国建制）"},
+
+    {"place_id": "hanseong", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "朝鲜都城", "note": ""},
+    {"place_id": "hanseong", "party": "日本方", "start": 1592, "end": 1593, "basis": "1592年5月倭入京城", "note": ""},
+    {"place_id": "hanseong", "party": "朝鲜", "start": 1593, "end": null, "basis": "1593年4月日军弃王京，明军入城后交还", "note": ""},
+
+    {"place_id": "kaesong", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "朝鲜旧都", "note": ""},
+    {"place_id": "kaesong", "party": "日本方", "start": 1592, "end": 1593, "basis": "1592年陷，1593年正月明军收复", "note": ""},
+    {"place_id": "kaesong", "party": "朝鲜", "start": 1593, "end": null, "basis": "李如柏复开城", "note": ""},
+
+    {"place_id": "busan", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "倭乱前朝鲜釜山浦", "note": ""},
+    {"place_id": "busan", "party": "日本方", "start": 1592, "end": 1598, "basis": "日军登陆点，始终占据直至撤退", "note": "日军在釜山筑城为持久计"},
+    {"place_id": "busan", "party": "朝鲜", "start": 1598, "end": null, "basis": "1598年日军撤退后复归", "note": ""},
+
+    {"place_id": "uiju", "party": "朝鲜", "start": 1368, "end": null, "basis": "宣祖行在所，始终朝鲜控制", "note": "义州从未陷落"},
+
+    {"place_id": "zhongzhou", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "朝鲜忠清道重镇", "note": ""},
+    {"place_id": "zhongzhou", "party": "日本方", "start": 1592, "end": 1593, "basis": "1592年4月忠州之战申砬败死，城陷", "note": ""},
+    {"place_id": "zhongzhou", "party": "朝鲜", "start": 1593, "end": null, "basis": "1593年日军收缩后复归", "note": ""},
+
+    {"place_id": "jinzhou", "party": "朝鲜", "start": 1368, "end": 1593, "basis": "朝鲜庆尚道重镇", "note": ""},
+    {"place_id": "jinzhou", "party": "日本方", "start": 1593, "end": 1593, "basis": "1593年6月晋州城陷，金千镒崔庆会死之", "note": "明军诸将畏贼不救"},
+    {"place_id": "jinzhou", "party": "朝鲜", "start": 1593, "end": null, "basis": "日军退后复归", "note": ""},
+
+    {"place_id": "dongnae", "party": "朝鲜", "start": 1368, "end": 1592, "basis": "朝鲜东莱府", "note": ""},
+    {"place_id": "dongnae", "party": "日本方", "start": 1592, "end": 1598, "basis": "1592年4月陷，府使宋象贤死节", "note": ""},
+    {"place_id": "dongnae", "party": "朝鲜", "start": 1598, "end": null, "basis": "日军撤退后复归", "note": ""}
+  ]
+}

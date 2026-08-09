@@ -883,5 +883,245 @@ window.SANDBOX_SLICES["imjin"] = {
    "type": "battle",
    "label": "碧蹄馆—幸州（权栗侧翼大捷）"
   }
+ ],
+ "control": [
+  {
+   "place_id": "pyongyang",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "朝鲜平安道首府",
+   "note": ""
+  },
+  {
+   "place_id": "pyongyang",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1592,
+   "basis": "1592年6月平壤陷落，行长据之",
+   "note": ""
+  },
+  {
+   "place_id": "pyongyang",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "basis": "1593年正月李如松收复平壤",
+   "note": "明军协防主力，控制权记朝鲜（复国建制）"
+  },
+  {
+   "place_id": "hanseong",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "朝鲜都城",
+   "note": ""
+  },
+  {
+   "place_id": "hanseong",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1593,
+   "basis": "1592年5月倭入京城",
+   "note": ""
+  },
+  {
+   "place_id": "hanseong",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "basis": "1593年4月日军弃王京，明军入城后交还",
+   "note": ""
+  },
+  {
+   "place_id": "kaesong",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "朝鲜旧都",
+   "note": ""
+  },
+  {
+   "place_id": "kaesong",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1593,
+   "basis": "1592年陷，1593年正月明军收复",
+   "note": ""
+  },
+  {
+   "place_id": "kaesong",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "basis": "李如柏复开城",
+   "note": ""
+  },
+  {
+   "place_id": "busan",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "倭乱前朝鲜釜山浦",
+   "note": ""
+  },
+  {
+   "place_id": "busan",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1598,
+   "basis": "日军登陆点，始终占据直至撤退",
+   "note": "日军在釜山筑城为持久计"
+  },
+  {
+   "place_id": "busan",
+   "party": "朝鲜",
+   "start": 1598,
+   "end": null,
+   "basis": "1598年日军撤退后复归",
+   "note": ""
+  },
+  {
+   "place_id": "uiju",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": null,
+   "basis": "宣祖行在所，始终朝鲜控制",
+   "note": "义州从未陷落"
+  },
+  {
+   "place_id": "zhongzhou",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "朝鲜忠清道重镇",
+   "note": ""
+  },
+  {
+   "place_id": "zhongzhou",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1593,
+   "basis": "1592年4月忠州之战申砬败死，城陷",
+   "note": ""
+  },
+  {
+   "place_id": "zhongzhou",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "basis": "1593年日军收缩后复归",
+   "note": ""
+  },
+  {
+   "place_id": "jinzhou",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1593,
+   "basis": "朝鲜庆尚道重镇",
+   "note": ""
+  },
+  {
+   "place_id": "jinzhou",
+   "party": "日本方",
+   "start": 1593,
+   "end": 1593,
+   "basis": "1593年6月晋州城陷，金千镒崔庆会死之",
+   "note": "明军诸将畏贼不救"
+  },
+  {
+   "place_id": "jinzhou",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "basis": "日军退后复归",
+   "note": ""
+  },
+  {
+   "place_id": "dongnae",
+   "party": "朝鲜",
+   "start": 1368,
+   "end": 1592,
+   "basis": "朝鲜东莱府",
+   "note": ""
+  },
+  {
+   "place_id": "dongnae",
+   "party": "日本方",
+   "start": 1592,
+   "end": 1598,
+   "basis": "1592年4月陷，府使宋象贤死节",
+   "note": ""
+  },
+  {
+   "place_id": "dongnae",
+   "party": "朝鲜",
+   "start": 1598,
+   "end": null,
+   "basis": "日军撤退后复归",
+   "note": ""
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "pyongyang",
+   "name": "平壤",
+   "lon": 125.75,
+   "lat": 39.03,
+   "region": "imjin"
+  },
+  {
+   "place_id": "hanseong",
+   "name": "汉城",
+   "lon": 126.98,
+   "lat": 37.57,
+   "region": "imjin"
+  },
+  {
+   "place_id": "kaesong",
+   "name": "开城",
+   "lon": 126.55,
+   "lat": 37.97,
+   "region": "imjin"
+  },
+  {
+   "place_id": "busan",
+   "name": "釜山",
+   "lon": 129.08,
+   "lat": 35.18,
+   "region": "imjin"
+  },
+  {
+   "place_id": "uiju",
+   "name": "义州",
+   "lon": 124.4,
+   "lat": 40.1,
+   "region": "imjin"
+  },
+  {
+   "place_id": "zhongzhou",
+   "name": "忠州",
+   "lon": 127.93,
+   "lat": 36.99,
+   "region": "imjin"
+  },
+  {
+   "place_id": "jinzhou",
+   "name": "晋州",
+   "lon": 128.11,
+   "lat": 35.19,
+   "region": "imjin"
+  },
+  {
+   "place_id": "dongnae",
+   "name": "东莱",
+   "lon": 129.09,
+   "lat": 35.2,
+   "region": "imjin"
+  }
+ ],
+ "control_years": [
+  1592,
+  1598
  ]
 };

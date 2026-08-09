@@ -567,6 +567,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "label": "长安—蔡州（朝廷—淮西）"
   }
  ],
+ "control": [],
  "vocab": {
   "layers": [
    "record",

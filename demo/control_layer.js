@@ -1,12 +1,18 @@
-/* 小菜狗的文明图景 · 实际控制层（v0.10）
+/* 小菜狗的文明图景 · 实际控制层（v0.10 初版 / v0.24 场景化）
  *
  * 把「谁在什么时候控制哪座城」投影成地图上一块块着色辖区。
  *
  * 设计要点：
- *   - 本文件只做「渲染」，不做「事实」。控制权事实来自 SD.control
- *     （由 data/control_liaodong.json 经 build.py 注入）；辖区几何不存文件，
- *     而是前端按治所最近邻（Voronoi 近似）在合成网格上现算——这样日后要换
- *     CHGIS 等真实边界，只需改 build 注入的 control_seats，前端不动。
+ *   - 本文件只做「渲染」，不做「事实」。控制权事实来自场景级 control 数据
+ *     （data/<scene>/control.json，经 build.py 注入到该场景 bundle 的
+ *     control / control_seats / control_years）；辽东切片没有自带 control.json，
+ *     则 fallback 到全局 SD.control（data/control_liaodong.json，v0.10 行为不变）。
+ *     辖区几何不存文件，而是前端按治所最近邻（Voronoi 近似）在合成网格上现算——
+ *     日后要换 CHGIS 等真实边界，只需改 build 注入的 control_seats，前端不动。
+ *   - v0.24 修「控制层单例被新切片污染」：此前 control_seats 由 build 遍历所有
+ *     county 切片的 primary_place 生成，新切片（唐/壬辰）的蔡州/平壤被塞进辽东
+ *     Voronoi 网格，而控制权数据里没有它们的条目 → 空洞 + 辽东色块错位。现在
+ *     控制权数据按场景隔离，颜色表也随场景 parties 动态扩展（不再写死三个政权）。
  *   - 投影用宿主页面自己的 px/py（战役图是固定投影，县级图是每片自适应投影），
  *     本层只负责把合成网格的角点交给宿主投影，再用 view 变换贴到 canvas 上。
  *   - canvas 置于地形层之上、SVG 之下（z 序：terrain → control → svg），
@@ -21,26 +27,59 @@
   var SD = null, seats = [], seatIdx = {}, grid = null, assign = null,
       off = null, img = null, ready = false;
   var cfg = { cv: null, px: null, py: null, getView: null, getCw: null, getDpr: null };
-  var PARTY_ORDER = ['明方', '清方', '朝鲜'];
-  var PARTY = {
+  var ctrlData = [], curYears = [1616, 1644];
+
+  // 默认政权配色（v0.10 三个 + v0.24 日本方）；其余 party（唐廷/藩镇/…）由
+  // PALETTE 兜底按名字哈希取色——控制层不再写死政权集合，随场景语境包扩展。
+  var PARTY_DEFAULT = {
     '明方': [197, 90, 70],     // 暖红（明）
     '清方': [67, 122, 91],     // 绿（后金/清），与 COL.jin 呼应
-    '朝鲜': [70, 120, 170]
+    '朝鲜': [70, 120, 170],    // 蓝
+    '日本方': [150, 90, 160]   // 紫（壬辰）
   };
-  function pIdx(p) { for (var i = 0; i < PARTY_ORDER.length; i++) if (PARTY_ORDER[i] === p) return i; return -1; }
-  function pCol(i) { return i >= 0 ? PARTY[PARTY_ORDER[i]] : null; }
+  var PALETTE = [
+    [197, 90, 70], [67, 122, 91], [70, 120, 170], [150, 90, 160],
+    [180, 125, 60], [90, 140, 140], [140, 110, 90], [120, 130, 190],
+    [200, 140, 160], [110, 150, 90]
+  ];
+  var partyList = [], partyIdxMap = {};
+  function hashStr(s) {
+    var h = 0;
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return h;
+  }
+  function resetParties() { partyList = []; partyIdxMap = {}; }
+  function pIdx(p) {
+    if (!(p in partyIdxMap)) { partyIdxMap[p] = partyList.length; partyList.push(p); }
+    return partyIdxMap[p];
+  }
+  function pCol(i) {
+    var p = partyList[i];
+    if (!p) return null;
+    return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length];
+  }
+  function partyColor(p) { return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length]; }
+
   var curYear = null, curScope = null, dirty = true;
 
   function setup(o) {
     SD = window.SANDBOX_DATA;
     cfg = o || {};
-    var cs = (SD && SD.control_seats) || [];
-    if (!cs.length || !(SD && SD.control)) { ready = false; return; }
+    resetParties();
+    // v0.24：场景 bundle 优先（sceneData.control），辽东等无自带控制数据的
+    // 切片 fallback 全局 SD.control。D.control === [] 表示「显式无」→ 不可用。
+    var D = cfg.sceneData || null;
+    var hasScene = !!(D && Array.isArray(D.control));
+    ctrlData = hasScene ? D.control : ((SD && SD.control) || []);
+    var cs = hasScene ? (D.control_seats || []) : ((SD && SD.control_seats) || []);
+    curYears = (hasScene && D.control_years) ? D.control_years
+             : ((SD && SD.control_years) || [1616, 1644]);
+    if (!cs.length || !ctrlData.length) { ready = false; return; }
     seats = cs;
     seatIdx = {};
     seats.forEach(function (s, i) { seatIdx[s.place_id] = i; });
 
-    // 合成网格覆盖所有治所（含西部 宁远/锦州 等，超出地形网格 122–126.8°E 范围）
+    // 合成网格覆盖所有治所（含超出地形网格范围的西部/境外治所）
     var lons = seats.map(function (s) { return s.lon; });
     var lats = seats.map(function (s) { return s.lat; });
     var pad = 1.2;
@@ -75,17 +114,14 @@
   }
 
   function controllerAt(seatId, year) {
-    var c = (SD && SD.control) || [];
-    for (var i = 0; i < c.length; i++) {
-      var s = c[i];
+    for (var i = 0; i < ctrlData.length; i++) {
+      var s = ctrlData[i];
       if (s.place_id !== seatId) continue;
       var st = s.start, en = (s.end == null ? 1e9 : s.end);
       if (year >= st && year <= en) return s.party;
     }
     return null;
   }
-
-  function partyColor(p) { var c = PARTY[p]; return c ? c : null; }
 
   // 全国（nation）范围：把同党派的县合成一个「国家板块」——只画
   // 不同党派之间的外缘边界，省略同党派内部的县界，视觉上就「合并」成块。
@@ -172,7 +208,7 @@
   }
 
   function isReady() { return ready; }
-  function years() { return (SD && SD.control_years) || [1616, 1644]; }
+  function years() { return curYears; }
 
   window.ControlLayer = {
     setup: setup, draw: draw, repaint: repaint, clear: clear,

@@ -38,6 +38,7 @@ STEPS = [
     ("地形契约 test",                ["tools/test_terrain.py"]),
     ("分片契约 test",                ["tools/test_sharding.py"]),
     ("地名落点 test",                ["tools/test_geocode.py"]),
+    ("控制层契约 test",              ["tools/test_control.py"]),
     ("重算研究线索 leads",            ["tools/leads.py"]),
     ("重编译 demo/data.js · build",  ["tools/build.py"]),
     ("统计快照 stats",                ["tools/stats.py"]),

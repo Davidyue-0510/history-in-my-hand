@@ -360,6 +360,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "branch": true
   }
  ],
+ "control": [],
  "vocab": {
   "layers": [
    "record",

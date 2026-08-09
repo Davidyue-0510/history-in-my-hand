@@ -1542,6 +1542,9 @@
     var playBtn = document.getElementById('ctrlPlay');
     var cy = ControlLayer.years();
     yr.min = cy[0]; yr.max = cy[1];
+    // v0.24：场景化后年份窗口随场景变（辽东 1616-1644 / 壬辰 1592-1598），
+    // 初始 1621 对非辽东场景越界，clamp 到场景窗口下界。
+    if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
     yr.value = state.control.year;
     yrLbl.textContent = state.control.year;
 
@@ -1601,7 +1604,8 @@
       cv: controlCv, px: px, py: py,
       getView: function () { return view; },
       getCw: function () { return cw; },
-      getDpr: function () { return window.devicePixelRatio || 1; }
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      sceneData: D   // v0.24：场景自带 control.json 时用它；辽东切片 fallback 全局
     });
   }
   applyView(false); wireControl(); refresh();

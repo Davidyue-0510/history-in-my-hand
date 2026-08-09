@@ -12468,6 +12468,13 @@ window.SANDBOX_DATA = {
    "region": "liaobei"
   },
   {
+   "place_id": "fushun",
+   "name": "抚顺",
+   "lon": 123.9,
+   "lat": 41.86,
+   "region": "liaobei"
+  },
+  {
    "place_id": "tieling_cheng",
    "name": "铁岭城",
    "lon": 124.31,
@@ -12489,17 +12496,17 @@ window.SANDBOX_DATA = {
    "region": "liaodong"
   },
   {
-   "place_id": "shenyang_cheng",
-   "name": "沈阳城",
-   "lon": 123.43,
-   "lat": 41.81,
+   "place_id": "guangning",
+   "name": "广宁",
+   "lon": 121.79,
+   "lat": 41.59,
    "region": "liaodong"
   },
   {
-   "place_id": "fushun",
-   "name": "抚顺城",
-   "lon": 123.94,
-   "lat": 41.86,
+   "place_id": "shenyang_cheng",
+   "name": "沈阳中卫",
+   "lon": 123.43,
+   "lat": 41.81,
    "region": "liaodong"
   },
   {
@@ -12511,59 +12518,38 @@ window.SANDBOX_DATA = {
   },
   {
    "place_id": "gaizhou_cheng",
-   "name": "盖州城",
+   "name": "盖州",
    "lon": 121.97,
    "lat": 40.4,
    "region": "liaonan"
   },
   {
    "place_id": "fuzhou_cheng",
-   "name": "复州城",
-   "lon": 121.97,
-   "lat": 39.63,
+   "name": "复州",
+   "lon": 121.65,
+   "lat": 39.75,
+   "region": "liaonan"
+  },
+  {
+   "place_id": "jinzhou_cheng",
+   "name": "金州",
+   "lon": 121.72,
+   "lat": 39.1,
    "region": "liaonan"
   },
   {
    "place_id": "jinzhouwei_cheng",
-   "name": "金州城",
+   "name": "金州",
    "lon": 121.7,
    "lat": 39.09,
    "region": "liaonan"
   },
   {
-   "place_id": "guangning",
-   "name": "广宁城",
-   "lon": 121.78,
-   "lat": 41.62,
-   "region": "liaoxi"
-  },
-  {
-   "place_id": "jinzhou_cheng",
-   "name": "锦州城",
-   "lon": 121.13,
-   "lat": 41.1,
-   "region": "liaoxi"
-  },
-  {
    "place_id": "ningyuan",
-   "name": "宁远城",
+   "name": "宁远",
    "lon": 120.7,
    "lat": 40.62,
    "region": "liaoxi"
-  },
-  {
-   "place_id": "caizhou",
-   "name": "蔡州",
-   "lon": 114.35,
-   "lat": 33.53,
-   "region": "tang"
-  },
-  {
-   "place_id": "pyongyang",
-   "name": "平壤",
-   "lon": 125.75,
-   "lat": 39.03,
-   "region": "imjin"
   }
  ],
  "control_years": [
