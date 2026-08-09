@@ -1,16 +1,16 @@
 {
-  "scenes_total": 24,
-  "historical": 15,
+  "scenes_total": 25,
+  "historical": 16,
   "fictional": 9,
-  "assertions_total": 512,
-  "sources_total": 40,
+  "assertions_total": 529,
+  "sources_total": 43,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
     "tang"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 48,
+  "leads_total": 50,
   "per_scene": [
     {
       "id": "sarhu",
@@ -187,6 +187,13 @@
       "kind": "county",
       "assertions": 12,
       "factions": {}
+    },
+    {
+      "id": "imjin",
+      "title": "万历朝鲜之役·壬辰倭乱",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -213,6 +220,7 @@
     "novel_fandao_7": "反派他爸教做人·爱情至上的女儿",
     "novel_fandao_8": "反派他爸教做人·不听话的喵儿子",
     "novel_fandao_9": "反派他爸教做人·胎穿女和魂穿女",
-    "tang_huai_xi": "平淮西·雪夜入蔡州"
+    "tang_huai_xi": "平淮西·雪夜入蔡州",
+    "imjin": "万历朝鲜之役·壬辰倭乱"
   }
 }

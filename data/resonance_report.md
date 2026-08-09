@@ -17,6 +17,7 @@
 | gaizhou | 6 | 2 | **0.389** | event:gaizhou_fall（0.444） | gap 2 / record 3 / scholarship 1 |
 | guangning | 31 | 3 | **0.489** | event:guangning_fall（0.800） | gap 2 / record 28 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
+| imjin | 17 | 5 | **0.333** | event:cefeng_heyi（0.667） | gap 2 / record 14 / scholarship 1 |
 | jinzhou | 15 | 2 | **0.628** | event:jinzhou_songjin（0.923） | gap 2 / record 12 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
@@ -44,12 +45,14 @@
 | event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:pyongyang_battle | imjin | **0.000** | 3/3 | 1.00 | 0.00 | 3 | 0 / 1 / 1 / 0 |
 | event:ice_walls | shenyang | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | event:jinzhouwei_mao | jinzhouwei | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 0 / 2 / 0 |
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |
 | event:yehe_kaiyuan_attack | yehe | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | 铁岭陷落（1619） | 铁岭 | **0.179** | 1/3 | 0.25 | 0.29 | 7 | 0 / 3 / 0 / 4 |
 | event:ningyuan_battle | ningyuan | **0.278** | 1/3 | 0.00 | 0.17 | 6 | 0 / 6 / 0 / 0 |
+| event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
 | 杜松渡浑河（西路） | 萨尔浒 | **0.333** | 2/3 | 0.50 | 0.00 | 3 | 1 / 2 / 0 / 0 |
 | event:fushun_founded | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:fushun_mashi | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
@@ -67,12 +70,14 @@
 | event:ningjin_dajie | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:ningyuan_founded | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
 | event:ningyuan_wusangui | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
+| event:renchen_baofa | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 0 / 2 / 0 |
 | 萨尔浒之战（广义） | 开原 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
 | 尚间崖（北路·马林） | 萨尔浒 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:shenyang_founded | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:shenyang_jurchen_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_qing_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_walls | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:xingzhou_battle | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
 | 叶赫灭亡 | 开原 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:yehe_fall | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
@@ -81,6 +86,7 @@
 | 萨尔浒主战场 | 萨尔浒 | **0.568** | 2/3 | 0.09 | 0.07 | 30 | 11 / 0 / 12 / 7 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
 | 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
+| event:cefeng_heyi | imjin | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 0 |
 | 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
 | event:guangning_fall | guangning | **0.800** | 3/3 | 0.00 | 0.20 | 10 | 2 / 2 / 1 / 5 |

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 24 个切片
+// 权威数据源：data/scenes.json 注册的 25 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 24 个切片",
+  "slice": "multi-scene · 25 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -49,6 +49,11 @@ window.SANDBOX_DATA = {
    "id": "tang",
    "name": "唐",
    "note": "唐代切片（如元和削藩·平淮西）。地名由 data/geo/gazetteer.json 自动落点；地形网格 tang 未拉取时诚实 OFF_GRID。"
+  },
+  {
+   "id": "imjin",
+   "name": "万历朝鲜之役",
+   "note": "1592—1598 壬辰倭乱：同一条时间线横跨明/朝鲜/日本三方，跨地域地形（朝鲜半岛）与多方立场分桶（明方/清方/朝鲜/日本方）。"
   }
  ],
  "scene_order": [
@@ -75,7 +80,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_7",
   "novel_fandao_8",
   "novel_fandao_9",
-  "tang_huai_xi"
+  "tang_huai_xi",
+  "imjin"
  ],
  "vocab": {
   "layers": [
@@ -93,6 +99,7 @@ window.SANDBOX_DATA = {
    "明方",
    "清方",
    "朝鲜",
+   "日本方",
    "综述考订"
   ],
   "party_bucket": {
@@ -105,6 +112,7 @@ window.SANDBOX_DATA = {
    "清·地方志": "清方",
    "朝鲜官方": "朝鲜",
    "朝鲜·亲历": "朝鲜",
+   "日本·后世修": "日本方",
    "学界": "综述考订",
    "二手综述": "综述考订",
    "明·东林文献": "明方",
@@ -7620,6 +7628,30 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "imjin": {
+   "key": "imjin",
+   "title": "万历朝鲜之役·壬辰倭乱",
+   "dossier_label": "壬辰倭乱",
+   "subtitle": "万历二十年—二十六年（1592—1598）· 明·朝鲜·日本三方",
+   "kind": "county",
+   "region": "imjin",
+   "page": "county.html?scene=imjin",
+   "primary_place": "pyongyang",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "korea",
+   "terrain_off_grid": true,
+   "counts": {
+    "src": 3,
+    "place": 18,
+    "person": 12,
+    "assert": 17,
+    "conflict": 3,
+    "gap": 2,
+    "record": 14,
+    "scholarship": 1,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -7646,7 +7678,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_7": "slices/novel_fandao_7.js",
   "novel_fandao_8": "slices/novel_fandao_8.js",
   "novel_fandao_9": "slices/novel_fandao_9.js",
-  "tang_huai_xi": "slices/tang_huai_xi.js"
+  "tang_huai_xi": "slices/tang_huai_xi.js",
+  "imjin": "slices/imjin.js"
  },
  "corridors": [
   {
@@ -7870,6 +7903,38 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 7
+   },
+   {
+    "id": "IJ016",
+    "scene": "imjin",
+    "subject": "event:bixieguan_battle",
+    "title": "",
+    "missing": "抓取明神宗实录万历二十、二十一年卷（ctext 有验证码墙，需人工） / 找万历三大征考/两朝平攘录电子版",
+    "where": "明方当事人对平壤/碧蹄馆的自述",
+    "skills": [
+     "抓取明神宗实录万历二十、二十一年卷（ctext 有验证码墙，需人工）",
+     "找万历三大征考/两朝平攘录电子版"
+    ],
+    "accept": "引入真正明方桶断言，三方分桶完整",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
+    "id": "IJ017",
+    "scene": "imjin",
+    "subject": "event:bixieguan_battle",
+    "title": "",
+    "missing": "核对宣祖实录正月二十七至二月逐日条 / 比对明军将领奏报（辽东奏报档）",
+    "where": "碧蹄馆之战明军真实伤亡",
+    "skills": [
+     "核对宣祖实录正月二十七至二月逐日条",
+     "比对明军将领奏报（辽东奏报档）"
+    ],
+    "accept": "把三方数字差距收敛到可解释的区间",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 17
    },
    {
     "id": "J010",
@@ -8485,6 +8550,7 @@ window.SANDBOX_DATA = {
     "明方",
     "清方",
     "朝鲜",
+    "日本方",
     "综述考订"
    ],
    "scenes": [
@@ -8493,6 +8559,7 @@ window.SANDBOX_DATA = {
     "gaizhou",
     "guangning",
     "haizhou",
+    "imjin",
     "jinzhou",
     "jinzhouwei",
     "kaiyuan",
@@ -8619,6 +8686,26 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.472,
     "best_event": "event:haizhou_fall",
     "best_resonance": 0.75
+   },
+   {
+    "scene": "imjin",
+    "name": "imjin",
+    "total": 17,
+    "layers": {
+     "record": 14,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "朝鲜": 9,
+     "日本方": 4,
+     "清方": 4
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.333,
+    "best_event": "event:cefeng_heyi",
+    "best_resonance": 0.667
    },
    {
     "scene": "jinzhou",
@@ -8878,12 +8965,14 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
      "明方": [],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -8907,12 +8996,14 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
      "明方": [],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -8936,12 +9027,72 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
      "明方": [],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:pyongyang_battle",
+    "name": "event:pyongyang_battle",
+    "scenes": [
+     "imjin"
+    ],
+    "scene_names": [
+     "imjin"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 1.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 1,
+     "日本方": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "IJ006",
+       "predicate": "战役损失",
+       "value_text": "李如松亲督大军克平壤，获首功千二百有奇",
+       "source": "mingshi_juan238",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "IJ005",
+       "predicate": "战役损失",
+       "value_text": "攻破七星门，斩获一千二百八十余级，烧杀过半",
+       "source": "xuanzong_shilu",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
+     "日本方": [
+      {
+       "id": "IJ007",
+       "predicate": "战役损失",
+       "value_text": "明军死伤数千不能拔，行长自率众踏冰渡江而走",
+       "source": "riben_waishi_j16",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
      "综述考订": []
     }
    },
@@ -8965,6 +9116,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -8988,6 +9140,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9011,6 +9164,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 0,
      "朝鲜": 2,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9034,6 +9188,7 @@ window.SANDBOX_DATA = {
        "scene": "jinzhouwei"
       }
      ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9057,6 +9212,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 1
     },
     "parties": {
@@ -9080,6 +9236,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": [
       {
        "id": "T007b",
@@ -9112,6 +9269,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9135,6 +9293,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9158,6 +9317,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 3,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 4
     },
     "parties": {
@@ -9189,6 +9349,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": [
       {
        "id": "T011b",
@@ -9245,6 +9406,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 6,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9300,6 +9462,89 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bixieguan_battle",
+    "name": "event:bixieguan_battle",
+    "scenes": [
+     "imjin"
+    ],
+    "scene_names": [
+     "imjin"
+    ],
+    "total": 6,
+    "gap_count": 2,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.5,
+    "gap_rate": 0.333,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 2,
+     "朝鲜": 3,
+     "日本方": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "IJ009",
+       "predicate": "明军伤亡",
+       "value_text": "猝遇倭围数重，官军丧失甚多，退驻开城",
+       "source": "mingshi_juan238",
+       "layer": "record",
+       "scene": "imjin"
+      },
+      {
+       "id": "IJ016",
+       "predicate": "明方自著缺口",
+       "value_text": "",
+       "source": "mingshi_juan238",
+       "layer": "gap",
+       "scene": "imjin"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "IJ008",
+       "predicate": "明军伤亡",
+       "value_text": "李有升及勇士八十余人被砍死，查大受殿后夺路而出",
+       "source": "xuanzong_shilu",
+       "layer": "record",
+       "scene": "imjin"
+      },
+      {
+       "id": "IJ012",
+       "predicate": "退兵理由",
+       "value_text": "李如松密奏汉城贼兵二十万众寡不敌，引疾辞退",
+       "source": "xuanzong_shilu",
+       "layer": "scholarship",
+       "scene": "imjin"
+      },
+      {
+       "id": "IJ017",
+       "predicate": "伤亡数字核验",
+       "value_text": "",
+       "source": "xuanzong_shilu",
+       "layer": "gap",
+       "scene": "imjin"
+      }
+     ],
+     "日本方": [
+      {
+       "id": "IJ010",
+       "predicate": "明军伤亡",
+       "value_text": "隆景以三万人邀击，大破明军，斩首一万，几获如松",
+       "source": "riben_waishi_j16",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
      "综述考订": []
     }
    },
@@ -9323,6 +9568,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9355,6 +9601,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9378,6 +9625,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9393,6 +9641,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9416,6 +9665,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 1
     },
     "parties": {
@@ -9431,6 +9681,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": [
       {
        "id": "F006",
@@ -9463,6 +9714,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 2,
      "朝鲜": 2,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9503,6 +9755,7 @@ window.SANDBOX_DATA = {
        "scene": "fuzhou"
       }
      ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9526,6 +9779,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9541,6 +9795,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9564,6 +9819,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9579,6 +9835,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9602,6 +9859,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9617,6 +9875,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9640,6 +9899,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9655,6 +9915,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9678,6 +9939,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9693,6 +9955,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9716,6 +9979,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9731,6 +9995,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9754,6 +10019,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 2
     },
     "parties": {
@@ -9769,6 +10035,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": [
       {
        "id": "MT_LY01",
@@ -9809,6 +10076,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9824,6 +10092,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9847,6 +10116,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9862,6 +10132,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9885,6 +10156,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9900,6 +10172,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9923,6 +10196,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9938,6 +10212,7 @@ window.SANDBOX_DATA = {
      ],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -9961,6 +10236,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 3,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -9992,6 +10268,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10015,6 +10292,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10030,6 +10308,55 @@ window.SANDBOX_DATA = {
      ],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:renchen_baofa",
+    "name": "event:renchen_baofa",
+    "scenes": [
+     "imjin"
+    ],
+    "scene_names": [
+     "imjin"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 2,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "IJ001",
+       "predicate": "日军登陆",
+       "value_text": "四月十四日倭贼大举入寇，陷釜山镇，郑泼战死；陷东莱府，宋象贤死之",
+       "source": "xuanzong_shilu",
+       "layer": "record",
+       "scene": "imjin"
+      },
+      {
+       "id": "IJ002",
+       "predicate": "汉城陷落",
+       "value_text": "五月三日倭入京城，宣祖已先西幸，至义州",
+       "source": "xuanzong_shilu",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10053,6 +10380,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 0,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10068,6 +10396,7 @@ window.SANDBOX_DATA = {
        "scene": "kaiyuan"
       }
      ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10091,6 +10420,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10106,6 +10436,7 @@ window.SANDBOX_DATA = {
      ],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10129,6 +10460,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 0,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10144,6 +10476,7 @@ window.SANDBOX_DATA = {
      ],
      "清方": [],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10167,6 +10500,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10182,6 +10516,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10205,6 +10540,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10220,6 +10556,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10243,6 +10580,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10258,6 +10596,47 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xingzhou_battle",
+    "name": "event:xingzhou_battle",
+    "scenes": [
+     "imjin"
+    ],
+    "scene_names": [
+     "imjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 1,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "IJ011",
+       "predicate": "战果",
+       "value_text": "权栗以四千兵据幸州山城，击退数万日军",
+       "source": "xuanzong_shilu",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10281,6 +10660,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10296,6 +10676,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10319,6 +10700,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10342,6 +10724,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10365,6 +10748,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10380,6 +10764,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10403,6 +10788,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 2,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -10435,6 +10821,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -10458,6 +10845,7 @@ window.SANDBOX_DATA = {
      "明方": 8,
      "清方": 6,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 6
     },
     "parties": {
@@ -10578,6 +10966,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": [
       {
        "id": "L011b",
@@ -10650,6 +11039,7 @@ window.SANDBOX_DATA = {
      "明方": 11,
      "清方": 0,
      "朝鲜": 12,
+     "日本方": 0,
      "综述考订": 7
     },
     "parties": {
@@ -10842,6 +11232,7 @@ window.SANDBOX_DATA = {
        "scene": "sarhu"
       }
      ],
+     "日本方": [],
      "综述考订": [
       {
        "id": "A091",
@@ -10922,6 +11313,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 15,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -11058,6 +11450,7 @@ window.SANDBOX_DATA = {
        "scene": "fushun"
       }
      ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -11081,6 +11474,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -11103,6 +11497,56 @@ window.SANDBOX_DATA = {
        "source": "zhazhong_rilu",
        "layer": "record",
        "scene": "sarhu"
+      }
+     ],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cefeng_heyi",
+    "name": "event:cefeng_heyi",
+    "scenes": [
+     "imjin"
+    ],
+    "scene_names": [
+     "imjin"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 0,
+     "日本方": 1,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "IJ013",
+       "predicate": "和议进程",
+       "value_text": "碧蹄败后沈惟敬款议复行，四月十八日倭弃王京遁",
+       "source": "mingshi_juan238",
+       "layer": "record",
+       "scene": "imjin"
+      }
+     ],
+     "朝鲜": [],
+     "日本方": [
+      {
+       "id": "IJ014",
+       "predicate": "册封结果",
+       "value_text": "读册至『封尔为日本国王』，秀吉变色裂册毁冕",
+       "source": "riben_waishi_j16",
+       "layer": "record",
+       "scene": "imjin"
       }
      ],
      "综述考订": []
@@ -11128,6 +11572,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 1,
      "朝鲜": 0,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -11152,6 +11597,7 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -11175,6 +11621,7 @@ window.SANDBOX_DATA = {
      "明方": 1,
      "清方": 2,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 0
     },
     "parties": {
@@ -11216,6 +11663,7 @@ window.SANDBOX_DATA = {
        "scene": "haizhou"
       }
      ],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -11239,6 +11687,7 @@ window.SANDBOX_DATA = {
      "明方": 2,
      "清方": 2,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 5
     },
     "parties": {
@@ -11288,6 +11737,7 @@ window.SANDBOX_DATA = {
        "scene": "guangning"
       }
      ],
+     "日本方": [],
      "综述考订": [
       {
        "id": "G005",
@@ -11352,6 +11802,7 @@ window.SANDBOX_DATA = {
      "明方": 4,
      "清方": 2,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 4
     },
     "parties": {
@@ -11417,6 +11868,7 @@ window.SANDBOX_DATA = {
        "scene": "kaiyuan"
       }
      ],
+     "日本方": [],
      "综述考订": [
       {
        "id": "K015",
@@ -11473,6 +11925,7 @@ window.SANDBOX_DATA = {
      "明方": 11,
      "清方": 5,
      "朝鲜": 2,
+     "日本方": 0,
      "综述考订": 4
     },
     "parties": {
@@ -11626,6 +12079,7 @@ window.SANDBOX_DATA = {
        "scene": "shenyang"
       }
      ],
+     "日本方": [],
      "综述考订": [
       {
        "id": "S014",
@@ -11682,6 +12136,7 @@ window.SANDBOX_DATA = {
      "明方": 2,
      "清方": 1,
      "朝鲜": 1,
+     "日本方": 0,
      "综述考订": 9
     },
     "parties": {
@@ -11723,6 +12178,7 @@ window.SANDBOX_DATA = {
        "scene": "jinzhou"
       }
      ],
+     "日本方": [],
      "综述考订": [
       {
        "id": "J005",
@@ -12101,6 +12557,13 @@ window.SANDBOX_DATA = {
    "lon": 114.35,
    "lat": 33.53,
    "region": "tang"
+  },
+  {
+   "place_id": "pyongyang",
+   "name": "平壤",
+   "lon": 125.75,
+   "lat": 39.03,
+   "region": "imjin"
   }
  ],
  "control_years": [

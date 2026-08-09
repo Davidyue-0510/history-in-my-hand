@@ -161,6 +161,38 @@
    "_src_line": 7
   },
   {
+   "id": "IJ016",
+   "scene": "imjin",
+   "subject": "event:bixieguan_battle",
+   "title": "",
+   "missing": "抓取明神宗实录万历二十、二十一年卷（ctext 有验证码墙，需人工） / 找万历三大征考/两朝平攘录电子版",
+   "where": "明方当事人对平壤/碧蹄馆的自述",
+   "skills": [
+    "抓取明神宗实录万历二十、二十一年卷（ctext 有验证码墙，需人工）",
+    "找万历三大征考/两朝平攘录电子版"
+   ],
+   "accept": "引入真正明方桶断言，三方分桶完整",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "IJ017",
+   "scene": "imjin",
+   "subject": "event:bixieguan_battle",
+   "title": "",
+   "missing": "核对宣祖实录正月二十七至二月逐日条 / 比对明军将领奏报（辽东奏报档）",
+   "where": "碧蹄馆之战明军真实伤亡",
+   "skills": [
+    "核对宣祖实录正月二十七至二月逐日条",
+    "比对明军将领奏报（辽东奏报档）"
+   ],
+   "accept": "把三方数字差距收敛到可解释的区间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "J010",
    "scene": "jinzhou",
    "subject": "event:jinzhou_songjin",

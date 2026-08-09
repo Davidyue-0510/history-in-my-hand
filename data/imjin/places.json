@@ -1,0 +1,186 @@
+{
+ "places": [
+  {
+   "id": "pyongyang",
+   "name": "平壤",
+   "type": "city",
+   "modern": "朝鲜平壤",
+   "note": "平安道首府，平壤之战主战场",
+   "lon": 125.75,
+   "lat": 39.03,
+   "geo_note": "朝鲜平安道首府，壬辰倭乱平壤之战主战场"
+  },
+  {
+   "id": "hanseong",
+   "name": "汉城",
+   "type": "city",
+   "modern": "韩国首尔",
+   "note": "朝鲜都城，壬辰陷落",
+   "lon": 126.98,
+   "lat": 37.57,
+   "geo_note": "朝鲜都城，壬辰倭乱陷落与收复"
+  },
+  {
+   "id": "kaesong",
+   "name": "开城",
+   "type": "city",
+   "modern": "朝鲜开城",
+   "note": "李如柏收复",
+   "lon": 126.55,
+   "lat": 37.97,
+   "geo_note": "朝鲜旧都，李如柏收复"
+  },
+  {
+   "id": "bixieguan",
+   "name": "碧蹄馆",
+   "type": "yi",
+   "modern": "韩国高阳",
+   "note": "明军小挫处，三方伤亡数字分歧",
+   "lon": 126.85,
+   "lat": 37.6,
+   "geo_note": "汉城西北驿，1593明军小挫处，三方伤亡数字分歧极大"
+  },
+  {
+   "id": "xingzhou",
+   "name": "幸州山城",
+   "type": "fortress",
+   "modern": "韩国高阳",
+   "note": "权栗大捷处",
+   "lon": 126.78,
+   "lat": 37.63,
+   "geo_note": "汉江西岸山城，权栗大败日军"
+  },
+  {
+   "id": "busan",
+   "name": "釜山",
+   "type": "port",
+   "modern": "韩国釜山",
+   "note": "日军登陆点",
+   "lon": 129.08,
+   "lat": 35.18,
+   "geo_note": "日军登陆点，郑泼战死"
+  },
+  {
+   "id": "dongnae",
+   "name": "东莱",
+   "type": "city",
+   "modern": "韩国釜山东莱",
+   "note": "宋象贤死节处",
+   "lon": 129.09,
+   "lat": 35.2,
+   "geo_note": "釜山北，府使宋象贤死节"
+  },
+  {
+   "id": "uiju",
+   "name": "义州",
+   "type": "city",
+   "modern": "朝鲜新义州一带",
+   "note": "宣祖行在所",
+   "lon": 124.4,
+   "lat": 40.1,
+   "geo_note": "鸭绿江南岸，宣祖行在所"
+  },
+  {
+   "id": "anzhou",
+   "name": "安州",
+   "type": "city",
+   "modern": "朝鲜安州",
+   "note": "宋应昌驻军处",
+   "lon": 125.66,
+   "lat": 39.62,
+   "geo_note": "平壤北，宋应昌驻军处"
+  },
+  {
+   "id": "shunan",
+   "name": "顺安",
+   "type": "yi",
+   "modern": "朝鲜平壤北",
+   "note": "李如松屯兵处",
+   "lon": 125.65,
+   "lat": 39.05,
+   "geo_note": "平壤北，李如松屯兵处"
+  },
+  {
+   "id": "jinzhou",
+   "name": "晋州",
+   "type": "city",
+   "modern": "韩国晋州",
+   "note": "晋州城陷，金千镒等死之",
+   "lon": 128.11,
+   "lat": 35.19,
+   "geo_note": "1593晋州城陷，金千镒等死之"
+  },
+  {
+   "id": "zhongzhou",
+   "name": "忠州",
+   "type": "city",
+   "modern": "韩国忠州",
+   "note": "申砬败死处",
+   "lon": 127.93,
+   "lat": 36.99,
+   "geo_note": "申砬败死处"
+  },
+  {
+   "id": "shangzhou",
+   "name": "尚州",
+   "type": "city",
+   "modern": "韩国尚州",
+   "note": "李镒兵溃处",
+   "lon": 128.16,
+   "lat": 36.34,
+   "geo_note": "李镒兵溃处"
+  },
+  {
+   "id": "longren",
+   "name": "龙仁",
+   "type": "city",
+   "modern": "韩国龙仁",
+   "note": "三道兵溃处",
+   "lon": 127.2,
+   "lat": 37.24,
+   "geo_note": "三道兵溃处"
+  },
+  {
+   "id": "pozhou",
+   "name": "坡州",
+   "type": "city",
+   "modern": "韩国坡州",
+   "note": "李如松退屯处",
+   "lon": 126.75,
+   "lat": 37.83,
+   "geo_note": "李如松退屯处"
+  },
+  {
+   "id": "tsushima",
+   "name": "对马",
+   "type": "island",
+   "modern": "日本对马岛",
+   "note": "日军出发前哨",
+   "lon": 129.3,
+   "lat": 34.27,
+   "geo_note": "日军出发前哨，宗义智/平义智领地"
+  },
+  {
+   "id": "nagoya",
+   "name": "名护屋",
+   "type": "base",
+   "modern": "日本佐贺县",
+   "note": "秀吉征朝本营",
+   "lon": 129.95,
+   "lat": 33.45,
+   "geo_note": "肥前，秀吉征朝本营"
+  },
+  {
+   "id": "liaodong",
+   "name": "辽东",
+   "type": "region",
+   "modern": "中国辽宁",
+   "note": "明军入援出发地",
+   "lon": 123.43,
+   "lat": 41.8,
+   "geo_note": "唐安东都护府，今辽宁辽阳"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {"id": "li_rusong", "name": "李如松", "role": "明提督蓟辽保定山东诸军", "note": "平壤大捷，碧蹄馆小挫后力主和议"},
+  {"id": "song_yingchang", "name": "宋应昌", "role": "明经略", "note": "主和，遣沈惟敬入倭营议和"},
+  {"id": "shen_weijing", "name": "沈惟敬", "role": "明游击·议和使", "note": "往来明倭之间议和，后获罪"},
+  {"id": "zu_chengxun", "name": "祖承训", "role": "明副总兵", "note": "平壤初战先败，后诈为韩装助破平壤"},
+  {"id": "zha_dashou", "name": "查大受", "role": "明游击/参将", "note": "碧蹄馆殿后，幸州战后叹权栗为真将军"},
+  {"id": "liu_chengryong", "name": "柳成龙", "role": "朝鲜领议政", "note": "亲历壬辰，掌粮草联络，力劝李如松勿轻退"},
+  {"id": "quan_lyu", "name": "权栗", "role": "朝鲜全罗巡察使", "note": "幸州山城大捷，宣祖嘉之"},
+  {"id": "xuanzu", "name": "宣祖李昖", "role": "朝鲜国王", "note": "汉城陷前西幸义州"},
+  {"id": "xiuji", "name": "丰臣秀吉", "role": "日本关白", "note": "出兵朝鲜，欲假道伐明；后裂册毁冕，和议破裂"},
+  {"id": "xiaoxi_hangzhang", "name": "小西行长", "role": "日军第二军主将", "note": "平壤守将，战败踏冰渡江而走"},
+  {"id": "jiateng_qingzheng", "name": "加藤清正", "role": "日军第一军主将", "note": "北进咸镜，后与行长不睦"},
+  {"id": "xiaozhaochuan_longjing", "name": "小早川隆景", "role": "日军碧蹄馆主将", "note": "以三万人邀击明军于碧蹄馆"}
+ ]
+}

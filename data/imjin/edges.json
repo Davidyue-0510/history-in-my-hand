@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {"from": "nagoya", "to": "tsushima", "type": "military", "label": "名护屋—对马（日军渡海前哨）"},
+  {"from": "tsushima", "to": "busan", "type": "military", "label": "对马—釜山（日军登陆路）"},
+  {"from": "busan", "to": "dongnae", "type": "military", "label": "釜山—东莱（登陆首战）"},
+  {"from": "liaodong", "to": "uiju", "type": "reinforcement", "label": "辽东—义州（明军入援路）"},
+  {"from": "uiju", "to": "anzhou", "type": "reinforcement", "label": "义州—安州（明军南下）"},
+  {"from": "anzhou", "to": "pyongyang", "type": "reinforcement", "label": "安州—平壤（平壤之战）"},
+  {"from": "pyongyang", "to": "kaesong", "type": "reinforcement", "label": "平壤—开城（明军东进）"},
+  {"from": "kaesong", "to": "bixieguan", "type": "military", "label": "开城—碧蹄馆（明军前出遇伏）"},
+  {"from": "bixieguan", "to": "hanseong", "type": "military", "label": "碧蹄馆—汉城（距王京三十里）"},
+  {"from": "bixieguan", "to": "xingzhou", "type": "battle", "label": "碧蹄馆—幸州（权栗侧翼大捷）"}
+ ]
+}

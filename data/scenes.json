@@ -55,6 +55,11 @@
       "id": "tang",
       "name": "唐",
       "note": "唐代切片（如元和削藩·平淮西）。地名由 data/geo/gazetteer.json 自动落点；地形网格 tang 未拉取时诚实 OFF_GRID。"
+    },
+    {
+      "id": "imjin",
+      "name": "万历朝鲜之役",
+      "note": "1592—1598 壬辰倭乱：同一条时间线横跨明/朝鲜/日本三方，跨地域地形（朝鲜半岛）与多方立场分桶（明方/清方/朝鲜/日本方）。"
     }
   ],
   "order": [
@@ -81,7 +86,8 @@
     "novel_fandao_7",
     "novel_fandao_8",
     "novel_fandao_9",
-    "tang_huai_xi"
+    "tang_huai_xi",
+    "imjin"
   ],
   "scenes": {
     "sarhu": {
@@ -659,6 +665,35 @@
         "person:li_su": "李愬",
         "person:wu_yuanji": "吴元济",
         "person:pei_du": "裴度"
+      }
+    },
+    "imjin": {
+      "kind": "county",
+      "region": "imjin",
+      "title": "万历朝鲜之役·壬辰倭乱",
+      "dossier_label": "壬辰倭乱",
+      "subtitle": "万历二十年—二十六年（1592—1598）· 明·朝鲜·日本三方",
+      "primary_place": "pyongyang",
+      "dossier_event": "event:pyongyang_battle",
+      "vocab_pack": "ming_qing",
+      "terrain_grid": "korea",
+      "extra_files": ["events", "edges"],
+      "lead": "纵向+多方验证切片：同一条时间线横跨明/朝鲜/日本三方。朝鲜方=宣祖昭敬大王修正实录（亲历官修）；清方=明史·李如松传（清修叙明事，作者党派=清）；日本方=日本外史（江户赖山阳汉文私修，学界质疑其史料价值——这本身是立场素材）。三方对碧蹄馆明军伤亡的数字（朝鲜『八十余人』/明史『喪失甚多』/日本『斬首一万』）构成教科书级冲突对。真正明方自著（明神宗实录等）无免费全文→显式缺口。",
+      "parties_note": "四桶立场：朝鲜（亲历官修）/ 清方（后朝官修叙明军战史）/ 日本方（后世私修，学界不认可其史料价值但立场=日本人叙述）/ 明方（缺口：明神宗实录万历二十·二十一年卷 ctext 验证码墙、万历三大征考/两朝平攘录 Wikisource 空页）。『明军』战史现由清修《明史》承担，不能冒充明方声音。",
+      "subject_names": {
+        "event:renchen_baofa": "壬辰倭乱爆发",
+        "event:pyongyang_battle": "平壤之战",
+        "event:bixieguan_battle": "碧蹄馆之战",
+        "event:xingzhou_battle": "幸州山城之战",
+        "event:cefeng_heyi": "明日和议册封破裂",
+        "place:jinzhou": "晋州",
+        "place:pyongyang": "平壤",
+        "place:hanseong": "汉城",
+        "place:bixieguan": "碧蹄馆",
+        "place:xingzhou": "幸州山城",
+        "person:xiuji": "丰臣秀吉",
+        "person:li_rusong": "李如松",
+        "person:quan_lyu": "权栗"
       }
     }
   }

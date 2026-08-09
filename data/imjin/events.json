@@ -1,0 +1,49 @@
+{
+ "events": [
+  {
+   "id": "ev_renchen_baofa",
+   "subject": "event:renchen_baofa",
+   "year": 1592,
+   "era": "万历二十年·壬辰",
+   "title": "壬辰倭乱爆发",
+   "kind": "战事",
+   "text": "1592年四月，日军登陆釜山，东莱陷，汉城陷，宣祖西幸义州。"
+  },
+  {
+   "id": "ev_pyongyang_battle",
+   "subject": "event:pyongyang_battle",
+   "year": 1593,
+   "era": "万历二十一年正月",
+   "title": "平壤之战",
+   "kind": "战事",
+   "text": "1593年正月，李如松率明军收复平壤，小西行长踏冰渡大同江遁走。三方对损失数字记载悬殊。"
+  },
+  {
+   "id": "ev_bixieguan_battle",
+   "subject": "event:bixieguan_battle",
+   "year": 1593,
+   "era": "万历二十一年正月末",
+   "title": "碧蹄馆之战",
+   "kind": "战事",
+   "text": "1593年正月二十七，李如松轻骑趋碧蹄馆遇伏，明军小挫退开城。朝鲜记李有升等八十余人死，明史云丧失甚多，日本外史云斩首一万——三方数字分歧教科书级。"
+  },
+  {
+   "id": "ev_xingzhou_battle",
+   "subject": "event:xingzhou_battle",
+   "year": 1593,
+   "era": "万历二十一年二月",
+   "title": "幸州山城之战",
+   "kind": "战事",
+   "text": "1593年二月，权栗以四千精兵据幸州山城，击退数万日军，朝鲜大捷。"
+  },
+  {
+   "id": "ev_cefeng_heyi",
+   "subject": "event:cefeng_heyi",
+   "year": 1596,
+   "era": "万历二十四年·庆长元年",
+   "title": "明日和议册封破裂",
+   "kind": "外交",
+   "text": "1596年明使册封秀吉为日本国王，秀吉裂册毁冕，和议破裂，再度出兵。"
+  }
+ ]
+}
