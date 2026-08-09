@@ -80,6 +80,20 @@
       "color": "#8B6BA8",
       "note": "王在晋记辽阳围急、袁应泰殉城之明方视角；张铨疏论辽阳围急。",
       "faction": "feng_jiang"
+    },
+    {
+      "id": "mingtongjian",
+      "title": "明通鉴",
+      "party": "二手综述",
+      "stance_label": "编年体私修·后世综括",
+      "distance_label": "成书 1872（清同治），距事约 250 年",
+      "color": "#6B8E9E",
+      "compiler": "夏燮",
+      "compiled_year": 1872,
+      "period": "晚清",
+      "stance": "compiled_synthesis",
+      "faction": null,
+      "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
   ]
 }

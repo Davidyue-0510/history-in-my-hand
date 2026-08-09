@@ -104,6 +104,20 @@
       "color": "#8B6BA8",
       "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。",
       "faction": "feng_jiang"
+    },
+    {
+      "id": "mingtongjian",
+      "title": "明通鉴",
+      "party": "二手综述",
+      "stance_label": "编年体私修·后世综括",
+      "distance_label": "成书 1872（清同治），距事约 250 年",
+      "color": "#6B8E9E",
+      "compiler": "夏燮",
+      "compiled_year": 1872,
+      "period": "晚清",
+      "stance": "compiled_synthesis",
+      "faction": null,
+      "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
   ]
 }

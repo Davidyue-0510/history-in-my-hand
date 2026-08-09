@@ -437,6 +437,19 @@
       hit.addEventListener('click', function () { selectPlace(p.id); });
     });
 
+    // 派系足迹着色（v0.20）：选中某派系时，其断言覆盖的地点加派系色虚线halo
+    if (state.activeFaction) {
+      var fcol = FCOLORS[state.activeFaction] || '#888';
+      var fp = factionPlaces(state.activeFaction);
+      Object.keys(fp).forEach(function (pid) {
+        var p = PLACE[pid]; if (!p) return;
+        var x = px(p.lon), y = py(p.lat);
+        el('circle', { cx: x, cy: y, r: 11, fill: 'none', stroke: fcol,
+          'stroke-width': 2.2, 'stroke-dasharray': '3 2.5', opacity: .92,
+          'vector-effect': 'non-scaling-stroke', class: 'node-hit' }, gMarks);
+      });
+    }
+
     if (state.layers.has('gap')) {
       visibleAssertions().filter(function (a) { return a.layer === 'gap'; }).forEach(function (a) {
         var p = PLACE[a.place]; if (!p) return;
@@ -666,7 +679,17 @@
       node.className = cls; node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
       if (i === 0) node.style.transform = 'translateX(-14px)';
       if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
-      node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + ev.era + '</div>';
+      // 派系着色（v0.20）：若当前选中派系在本事件有断言，时间轴节点染派系色
+      var fDot = '', fRing = '';
+      if (state.activeFaction) {
+        var fcol = FCOLORS[state.activeFaction] || '#888';
+        if (factionEventSubjects(state.activeFaction)[ev.subject]) {
+          fDot = 'background:' + fcol + ';box-shadow:0 0 0 2px ' + fcol + '33;';
+          fRing = 'box-shadow:0 0 0 3px ' + fcol + '66;';
+        }
+      }
+      node.innerHTML = '<div class="tl-dot" style="' + fDot + '"></div><div class="tl-cap">' + ev.era + '</div>';
+      if (fRing) node.style.boxShadow = fRing;
       node.title = ev.title;
       node.addEventListener('click', function () { state.t = i; refresh(); goTab('yan'); });
       track.appendChild(node);
@@ -800,6 +823,26 @@
     return html;
   }
 
+  /* 派系足迹（v0.20）：某派系断言覆盖到的地点与事件，供地图/时间轴着色。 */
+  function factionPlaces(fid) {
+    var s = {};
+    D.assertions.forEach(function (a) {
+      if (a._faction !== fid || !a.place || !PLACE[a.place]) return;
+      s[a.place] = true;
+    });
+    return s;
+  }
+  function factionEventSubjects(fid) {
+    var s = {}, i, j;
+    for (i = 0; i < D.events.length; i++) {
+      var subj = D.events[i].subject;
+      for (j = 0; j < D.assertions.length; j++) {
+        if (D.assertions[j]._faction === fid && D.assertions[j].subject === subj) { s[subj] = true; break; }
+      }
+    }
+    return s;
+  }
+
   /* ═══════════ 明内部派系细分（v0.18，场景级常驻面板）══════════ */
   /* 明朝内部各利益集团（东林/阉党/浙党/盐商/内臣/封疆…）因自身利害润色夸张记载。
      本面板在「明方」桶之外，按 faction 二次聚合，让派系立场冲突在界面上直接可见。 */
@@ -818,6 +861,13 @@
     head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632';
     head.innerHTML = '明方内部派系细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span>';
     box.appendChild(head);
+    if (state.activeFaction) {
+      var hint = document.createElement('div');
+      hint.style.cssText = 'font-size:11px;color:#6b6259;margin:0 0 6px';
+      hint.innerHTML = '↳ 时间轴节点与地图上 <span style="color:' + (FCOLORS[state.activeFaction] || '#888') +
+        ';font-weight:600">◌ 同色高亮</span> 即该派系足迹';
+      box.appendChild(hint);
+    }
 
     var fids = Object.keys(counts);
     if (!fids.length) {
@@ -837,7 +887,7 @@
       clear.addEventListener('click', function (e) {
         e.stopPropagation();
         state.activeFaction = null;
-        renderParties(); renderFactions();
+        renderParties(); renderFactions(); renderTimeline(); drawDynamic();
       });
       box.appendChild(clear);
     }
@@ -860,7 +910,7 @@
       if (!active) {
         row.addEventListener('click', function () {
           state.activeFaction = fid;
-          renderParties(); renderFactions();
+          renderParties(); renderFactions(); renderTimeline(); drawDynamic();
         });
       } else {
         // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并

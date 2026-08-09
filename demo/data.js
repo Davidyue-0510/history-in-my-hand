@@ -14641,6 +14641,20 @@ window.SANDBOX_DATA = {
      "color": "#8B6BA8",
      "note": "王在晋记辽阳围急、袁应泰殉城之明方视角；张铨疏论辽阳围急。",
      "faction": "feng_jiang"
+    },
+    {
+     "id": "mingtongjian",
+     "title": "明通鉴",
+     "party": "二手综述",
+     "stance_label": "编年体私修·后世综括",
+     "distance_label": "成书 1872（清同治），距事约 250 年",
+     "color": "#6B8E9E",
+     "compiler": "夏燮",
+     "compiled_year": 1872,
+     "period": "晚清",
+     "stance": "compiled_synthesis",
+     "faction": null,
+     "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
    ],
    "places": [
@@ -15853,6 +15867,70 @@ window.SANDBOX_DATA = {
      "note": "王在晋私论，明方立场，非战役直接记录",
      "_party": "明·封疆奏议",
      "_faction": "feng_jiang"
+    },
+    {
+     "id": "MT_LY01",
+     "subject": "event:hunhe_zhan",
+     "predicate": "浑河之战明援军覆没",
+     "value_text": "陈策统四川步兵二万渡浑河来援，大败，兵尽溺，策及张名世死之；李秉诚、朱万良、姜弼领骑兵三万来援，遇太宗文皇帝率百骑蹴之皆溃奔；周敦吉、秦邦屏、董仲贵、戚金、张名世帅浙兵三千营桥南，火药尽，大溃，副将至把总战死者百二十余人。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "总兵陈策，统四川步兵二万渡浑河来援……大败，退至浑河，兵尽溺……李秉诚、朱万良、姜弼领骑兵三万来援……皆溃奔……周敦吉、秦邦屏、董仲贵、戚金、张名世等，帅浙兵三千营于桥南……大溃……副将至把总战死者百二十余人。",
+     "note": "《明通鉴》卷081 浑河桥南北之战（简体转写）。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_LY02",
+     "subject": "event:hunhe_zhan",
+     "predicate": "明通鉴评「第一血战」",
+     "value_text": "是役也，以万余人当大清兵数万之众，虽力屈军覆，为辽左用兵以来第一血战。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "是役也，以万余人当大清兵数万之众，虽力屈军覆，为辽左用兵以来第一血战。",
+     "note": "《明通鉴》卷081 对浑河之战的综评。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_LY03",
+     "subject": "event:liaoyang_fall",
+     "predicate": "辽阳城陷",
+     "value_text": "庚申，大清兵规取辽阳，袁应泰撤奉集、威宁诸军并力守御，开太子河引水注濠。壬戌攻城急，谯楼火，大清兵自西门入，城中大乱。应泰佩剑印自缢死，巡按张铨被执不屈，亦自经死。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "liaoyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "庚申，大清兵乘驻长驱，规取辽阳……壬戌，大清兵攻城急……谯楼火，大清兵自西门入……应泰遂佩剑印自缢死……铨被执不屈……亦自经死。",
+     "note": "《明通鉴》卷081 辽阳陷落（简体转写）。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_LY04",
+     "subject": "event:liaoyang_fall",
+     "predicate": "辽阳陷后河西震动",
+     "value_text": "辽阳继失，河西军民尽奔，自塔山至闾阳二百余里，烟火断绝，京师大震。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年",
+     "place": "liaoyang_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "辽阳继失，河西军民尽奔，自塔山至闾阳二百余里，烟火断绝，京师大震。",
+     "note": "《明通鉴》卷081，辽阳失陷之连锁震荡。",
+     "_party": "二手综述",
+     "_faction": null
     }
    ],
    "conflicts": [
@@ -16214,6 +16292,20 @@ window.SANDBOX_DATA = {
      "color": "#8B6BA8",
      "note": "王在晋记浑河之战、沈阳破之明方视角；陈策、童仲揆、戚金、秦邦屏等援沈战死事。",
      "faction": "feng_jiang"
+    },
+    {
+     "id": "mingtongjian",
+     "title": "明通鉴",
+     "party": "二手综述",
+     "stance_label": "编年体私修·后世综括",
+     "distance_label": "成书 1872（清同治），距事约 250 年",
+     "color": "#6B8E9E",
+     "compiler": "夏燮",
+     "compiled_year": 1872,
+     "period": "晚清",
+     "stance": "compiled_synthesis",
+     "faction": null,
+     "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
    ],
    "places": [
@@ -17413,6 +17505,38 @@ window.SANDBOX_DATA = {
      },
      "_party": "明·封疆奏议",
      "_faction": "feng_jiang"
+    },
+    {
+     "id": "MT_SY01",
+     "subject": "event:shenyang_relief",
+     "predicate": "沈阳城陷",
+     "value_text": "乙卯，大清兵攻沈阳，贺世贤出城逆战，身被十四矢，中矢坠马而死；尤世功引兵援亦战死，城外兵七万皆溃；大清兵树云梯，拔沈阳城。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "乙卯，大清兵进攻……世贤出城逆战……身被十四矢……中矢坠马而死……世功亟引兵援，亦战死……大清兵遂树云梯，拔沈阳城。",
+     "note": "《明通鉴》卷081 乙卯条（简体转写）。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_SY02",
+     "subject": "event:shenyang_relief",
+     "predicate": "贺世贤死守语",
+     "value_text": "或劝世贤走辽阳，曰：「吾为大将，不能存城，何面目见袁经略乎！」挥铁鞭驰突围中，中矢坠马而死。",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "天启元年三月",
+     "place": "shenyang_cheng",
+     "confidence": 0.8,
+     "quote_status": "paraphrase_unverified",
+     "quote": "或劝世贤走辽阳，曰：「吾为大将，不能存城，何面目见袁经略乎！」挥铁鞭驰突围中，中矢坠马而死。",
+     "note": "《明通鉴》卷081，贺世贤拒降死战之语。",
+     "_party": "二手综述",
+     "_faction": null
     }
    ],
    "conflicts": [],
@@ -26935,9 +27059,9 @@ window.SANDBOX_DATA = {
    {
     "scene": "liaoyang",
     "name": "辽阳",
-    "total": 49,
+    "total": 53,
     "layers": {
-     "record": 37,
+     "record": 41,
      "scholarship": 8,
      "gap": 3,
      "inference": 1
@@ -26945,15 +27069,15 @@ window.SANDBOX_DATA = {
     "party_counts": {
      "清方": 27,
      "明方": 12,
-     "综述考订": 10
+     "综述考订": 14
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 10
     },
     "event_count": 2,
-    "avg_resonance": 0.401,
+    "avg_resonance": 0.412,
     "best_event": "辽阳陷落（1621）",
-    "best_resonance": 0.47
+    "best_resonance": 0.491
    },
    {
     "scene": "ningyuan",
@@ -27002,9 +27126,9 @@ window.SANDBOX_DATA = {
    {
     "scene": "shenyang",
     "name": "shenyang",
-    "total": 48,
+    "total": 50,
     "layers": {
-     "record": 41,
+     "record": 43,
      "scholarship": 2,
      "gap": 4,
      "inference": 1
@@ -27013,15 +27137,15 @@ window.SANDBOX_DATA = {
      "明方": 18,
      "清方": 25,
      "朝鲜": 3,
-     "综述考订": 2
+     "综述考订": 4
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 12
     },
     "event_count": 6,
-    "avg_resonance": 0.4,
+    "avg_resonance": 0.401,
     "best_event": "event:shenyang_relief",
-    "best_resonance": 0.9
+    "best_resonance": 0.909
    },
    {
     "scene": "tieling",
@@ -27886,7 +28010,7 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "辽阳"
     ],
-    "total": 1,
+    "total": 3,
     "gap_count": 0,
     "coverage": "1/3",
     "coverage_frac": 0.333,
@@ -27897,7 +28021,7 @@ window.SANDBOX_DATA = {
      "明方": 0,
      "清方": 1,
      "朝鲜": 0,
-     "综述考订": 0
+     "综述考订": 2
     },
     "parties": {
      "明方": [],
@@ -27912,7 +28036,24 @@ window.SANDBOX_DATA = {
       }
      ],
      "朝鲜": [],
-     "综述考订": []
+     "综述考订": [
+      {
+       "id": "MT_LY01",
+       "predicate": "浑河之战明援军覆没",
+       "value_text": "陈策统四川步兵二万渡浑河来援，大败，兵尽溺，策及张名世死之；李秉诚、朱万良、姜弼领骑兵三万来援，遇太宗文皇帝率百骑蹴之皆溃奔；周敦吉、秦邦屏、董仲贵、戚金、张名世帅浙兵三千营桥南，火药尽，大溃，副将至把总战死者百二十余人。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "MT_LY02",
+       "predicate": "明通鉴评「第一血战」",
+       "value_text": "是役也，以万余人当大清兵数万之众，虽力屈军覆，为辽左用兵以来第一血战。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      }
+     ]
     }
    },
    {
@@ -28573,18 +28714,18 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "辽阳"
     ],
-    "total": 18,
+    "total": 20,
     "gap_count": 3,
     "coverage": "2/3",
     "coverage_frac": 0.667,
-    "divergence": 0.154,
-    "gap_rate": 0.167,
-    "resonance": 0.47,
+    "divergence": 0.133,
+    "gap_rate": 0.15,
+    "resonance": 0.491,
     "party_counts": {
      "明方": 8,
      "清方": 6,
      "朝鲜": 0,
-     "综述考订": 4
+     "综述考订": 6
     },
     "parties": {
      "明方": [
@@ -28735,6 +28876,22 @@ window.SANDBOX_DATA = {
        "value_text": "缺口：维基百科『辽阳之战』条已登记为可采信来源但未落地断言——三手综述只应用于交叉指路，不应单独支撑任何结论",
        "source": "wiki",
        "layer": "gap",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "MT_LY03",
+       "predicate": "辽阳城陷",
+       "value_text": "庚申，大清兵规取辽阳，袁应泰撤奉集、威宁诸军并力守御，开太子河引水注濠。壬戌攻城急，谯楼火，大清兵自西门入，城中大乱。应泰佩剑印自缢死，巡按张铨被执不屈，亦自经死。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "MT_LY04",
+       "predicate": "辽阳陷后河西震动",
+       "value_text": "辽阳继失，河西军民尽奔，自塔山至闾阳二百余里，烟火断绝，京师大震。",
+       "source": "mingtongjian",
+       "layer": "record",
        "scene": "liaoyang"
       }
      ]
@@ -29645,18 +29802,18 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "shenyang"
     ],
-    "total": 20,
+    "total": 22,
     "gap_count": 2,
     "coverage": "3/3",
     "coverage_frac": 1.0,
     "divergence": 0.0,
-    "gap_rate": 0.1,
-    "resonance": 0.9,
+    "gap_rate": 0.091,
+    "resonance": 0.909,
     "party_counts": {
      "明方": 11,
      "清方": 5,
      "朝鲜": 2,
-     "综述考订": 2
+     "综述考订": 4
     },
     "parties": {
      "明方": [
@@ -29824,6 +29981,22 @@ window.SANDBOX_DATA = {
        "value_text": "沈阳陷后, 城内百姓部分被迁至后金腹地, 部分逃往山东",
        "source": "modern",
        "layer": "scholarship",
+       "scene": "shenyang"
+      },
+      {
+       "id": "MT_SY01",
+       "predicate": "沈阳城陷",
+       "value_text": "乙卯，大清兵攻沈阳，贺世贤出城逆战，身被十四矢，中矢坠马而死；尤世功引兵援亦战死，城外兵七万皆溃；大清兵树云梯，拔沈阳城。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "MT_SY02",
+       "predicate": "贺世贤死守语",
+       "value_text": "或劝世贤走辽阳，曰：「吾为大将，不能存城，何面目见袁经略乎！」挥铁鞭驰突围中，中矢坠马而死。",
+       "source": "mingtongjian",
+       "layer": "record",
        "scene": "shenyang"
       }
      ]
