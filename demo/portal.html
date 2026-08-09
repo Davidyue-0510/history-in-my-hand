@@ -174,12 +174,12 @@
 
 <div class="wrap">
   <div class="stats">
-    <div class="stat"><div class="n">23</div><div class="l">世界总数（切片）</div></div>
-    <div class="stat"><div class="n">9</div><div class="l">虚构世界</div></div>
-    <div class="stat"><div class="n">31</div><div class="l">史料 / 来源</div></div>
-    <div class="stat"><div class="n">290</div><div class="l">已录入断言</div></div>
-    <div class="stat"><div class="n">40</div><div class="l">可认领研究线索</div></div>
-    <div class="stat"><div class="n">40</div><div class="l">已标史料缺口</div></div>
+    <div class="stat"><div class="n" id="stat-scenes">—</div><div class="l">世界总数（切片）</div></div>
+    <div class="stat"><div class="n" id="stat-fictional">—</div><div class="l">虚构世界</div></div>
+    <div class="stat"><div class="n" id="stat-sources">—</div><div class="l">史料 / 来源</div></div>
+    <div class="stat"><div class="n" id="stat-assertions">—</div><div class="l">已录入断言</div></div>
+    <div class="stat"><div class="n" id="stat-leads">—</div><div class="l">可认领研究线索</div></div>
+    <div class="stat"><div class="n" id="stat-factions">—</div><div class="l">明内派系数</div></div>
   </div>
 </div>
 
@@ -232,7 +232,7 @@
     <div class="health">
       <span class="pill">lint 0 error / 0 warning</span>
       <span class="pill">不变量测试全绿</span>
-      <span class="pill">23 切片可构建</span>
+      <span class="pill">全部切片可构建</span>
       <span class="muted">守门三道闸门全在 <code>tools/gates.py</code> 一键跑。</span>
     </div>
   </div>
@@ -359,7 +359,7 @@ python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pr
 
 <footer>
   <div class="wrap">
-    <p><b>小菜狗的文明图景</b> · 断言驱动的文明沙盒（真实历史 + 虚构世界） · v0.9</p>
+    <p><b>小菜狗的文明图景</b> · 断言驱动的文明沙盒（真实历史 + 虚构世界） · v0.21</p>
     <p>历史由多种因素导致，某种意义上其实是必然——本项目的全部意义，是让「多种因素」可以被一条条看见、被一条条质疑。</p>
     <p>许可与署名见仓库 README。欢迎拉你的朋友入局。</p>
   </div>
@@ -367,34 +367,50 @@ python tools/build.py        <span class="c"># 重编译 demo/data.js</span></pr
 
 <script>
 (function(){
-  var SCENE_TITLE = {
-    sarhu:"萨尔浒之战", kaiyuan:"开原", tieling:"铁岭", yehe:"叶赫",
-    liaoyang:"辽阳", shenyang:"沈阳", fushun:"抚顺", haizhou:"海州", gaizhou:"盖州"
-  };
   function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
-  fetch('../data/leads.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
-    var box=document.getElementById('leads');
-    box.innerHTML='';
-    var leads=(j&&j.leads)||[];
-    if(!leads.length){box.appendChild(el('div','leads-err','暂无线索。'));return;}
-    leads.forEach(function(l){
-      var card=el('div','lead');
-      var meta=el('div','meta');
-      meta.innerHTML='<b>'+(SCENE_TITLE[l.scene]||l.scene)+'</b> · '+String(l.id)+
-        (l.effort&&l.effort!=='—'?' · 预估 '+l.effort:'');
-      var t=el('p','t', l.title||l.subject||'');
-      var sk=el('div','skills');
-      (l.skills||[]).forEach(function(s){sk.appendChild(el('span','sk',s));});
-      var ef=el('div','ef','验收：'+(l.accept||'—'));
-      card.appendChild(meta);card.appendChild(t);card.appendChild(sk);card.appendChild(ef);
-      box.appendChild(card);
-    });
-  }).catch(function(e){
-    var box=document.getElementById('leads');
-    box.innerHTML='';
-    box.appendChild(el('div','leads-err',
-      '无法实时读取 data/leads.json（可能是本地 file:// 打开）。请通过静态服务器访问，或见各切片「线索」页签。'));
+  // 统计快照 + 场景名映射统一来自 data/stats.json（由 tools/stats.py 生成），
+  // 避免门户把数字写死成会过期的常量。
+  var SCENE_TITLE = {};
+  fetch('../data/stats.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(s){
+    function set(id,v){var n=document.getElementById(id);if(n)n.textContent=v;}
+    set('stat-scenes', s.scenes_total||0);
+    set('stat-fictional', s.fictional||0);
+    set('stat-sources', s.sources_total||0);
+    set('stat-assertions', s.assertions_total||0);
+    set('stat-leads', s.leads_total||0);
+    set('stat-factions', s.factions_total||0);
+    SCENE_TITLE = s.scene_titles||{};
+    loadLeads();
+  }).catch(function(){
+    // stats.json 缺失时退回原始 id，不阻塞线索渲染
+    loadLeads();
   });
+
+  function loadLeads(){
+    fetch('../data/leads.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){
+      var box=document.getElementById('leads');
+      box.innerHTML='';
+      var leads=(j&&j.leads)||[];
+      if(!leads.length){box.appendChild(el('div','leads-err','暂无线索。'));return;}
+      leads.forEach(function(l){
+        var card=el('div','lead');
+        var meta=el('div','meta');
+        meta.innerHTML='<b>'+(SCENE_TITLE[l.scene]||l.scene)+'</b> · '+String(l.id)+
+          (l.effort&&l.effort!=='—'?' · 预估 '+l.effort:'');
+        var t=el('p','t', l.title||l.subject||'');
+        var sk=el('div','skills');
+        (l.skills||[]).forEach(function(s){sk.appendChild(el('span','sk',s));});
+        var ef=el('div','ef','验收：'+(l.accept||'—'));
+        card.appendChild(meta);card.appendChild(t);card.appendChild(sk);card.appendChild(ef);
+        box.appendChild(card);
+      });
+    }).catch(function(e){
+      var box=document.getElementById('leads');
+      box.innerHTML='';
+      box.appendChild(el('div','leads-err',
+        '无法实时读取 data/leads.json（可能是本地 file:// 打开）。请通过静态服务器访问，或见各切片「线索」页签。'));
+    });
+  }
 })();
 </script>
 </body>

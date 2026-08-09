@@ -13,8 +13,11 @@
   --era  "万历四十七年"  年号（经 reign_era 归一化后转 --year）
   --place shenyang      按地点 id
   --source mingshi      按史料来源 id
+  --party 明方           按立场桶（明方/清方/朝鲜/综述考订）；由 source.party 经 vocab 派生
+  --faction feng_jiang  按明朝内派系 id（vocab.factions）；仅对明方桶内断言生效
   --scene sarhu         限定场景（不传则跨全部场景）
   --layer record        按断言层（record/scholarship/inference/gap）
+  --by-faction          在结果集上再按派系聚合输出（需配合 --party 明方 或全量）
   --json                输出 JSON（默认人类可读表格）
 
 退出码 0 = 有结果；2 = 无匹配（便于管道判断）。
@@ -33,6 +36,18 @@ import reign_era as R
 DATA = os.path.join(ROOT, "data")
 
 
+def _load_vocab():
+    try:
+        return json.load(open(os.path.join(DATA, "vocab.json"), encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+VOCAB = _load_vocab()
+PARTY_BUCKET = VOCAB.get("party_bucket", {}) or {}
+FACTIONS = VOCAB.get("factions", {}) or {}
+
+
 def _load_scenes():
     reg = json.load(open(os.path.join(DATA, "scenes.json"), encoding="utf-8"))
     scenes = reg.get("scenes", {})
@@ -45,7 +60,18 @@ def _load_scenes():
     return out
 
 
-def _load_assertions(scene_id, scene):
+def _load_sources(scene_id, scene):
+    path = os.path.join(DATA, scene["dir"], "sources.json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        arr = json.load(open(path, encoding="utf-8")).get("sources", [])
+    except Exception:
+        return {}
+    return {s.get("id"): s for s in arr}
+
+
+def _load_assertions(scene_id, scene, src_by_id):
     path = os.path.join(DATA, scene["dir"], "assertions.jsonl")
     if not os.path.exists(path):
         return []
@@ -56,11 +82,18 @@ def _load_assertions(scene_id, scene):
             if not ln or ln.startswith("//"):
                 continue
             try:
-                rows.append(json.loads(ln))
+                a = json.loads(ln)
             except json.JSONDecodeError:
-                pass
-    for a in rows:
-        a["_scene"] = scene_id
+                continue
+            a["_scene"] = scene_id
+            src = src_by_id.get(a.get("source"))
+            if src:
+                a["_party"] = PARTY_BUCKET.get(src.get("party"), src.get("party"))
+                a["_faction"] = src.get("faction")
+            else:
+                a["_party"] = None
+                a["_faction"] = None
+            rows.append(a)
     return rows
 
 
@@ -84,7 +117,6 @@ def _overlaps_year(a, year):
     y0 = _year_of(a)
     if y0 is None:
         return False
-    # 有 end 区间则判断 year 是否落在 [y0, y1]
     e = t.get("end")
     y1 = y0
     if isinstance(e, str):
@@ -96,7 +128,8 @@ def _overlaps_year(a, year):
     return y0 <= year <= y1
 
 
-def query(year=None, era=None, place=None, source=None, scene=None, layer=None):
+def query(year=None, era=None, place=None, source=None, party=None,
+          faction=None, scene=None, layer=None):
     if era is not None:
         gy = R.normalize_year(era)
         if gy is None:
@@ -109,12 +142,17 @@ def query(year=None, era=None, place=None, source=None, scene=None, layer=None):
         scenes = {scene: scenes[scene]}
     results = []
     for sid, sc in scenes.items():
-        for a in _load_assertions(sid, sc):
+        src_by_id = _load_sources(sid, sc)
+        for a in _load_assertions(sid, sc, src_by_id):
             if year is not None and not _overlaps_year(a, year):
                 continue
             if place and a.get("place") != place:
                 continue
             if source and a.get("source") != source:
+                continue
+            if party and a.get("_party") != party:
+                continue
+            if faction and a.get("_faction") != faction:
                 continue
             if layer and a.get("layer") != layer:
                 continue
@@ -129,12 +167,30 @@ def _fmt_table(rows):
     for a in rows:
         y = _year_of(a)
         lines.append(
-            "%-7s | %-10s | %-4s | %-12s | %s"
+            "%-10s | %-13s | %-7s | %-10s | %-4s | %s"
             % (a.get("_scene", "?"), a.get("id", "?"),
-               y if y else "?", a.get("layer", "?"),
-               (a.get("value_text") or a.get("predicate") or "")[:40]))
-    header = "%-7s | %-10s | %-4s | %-12s | %s" % ("scene", "id", "year", "layer", "value_text")
+               a.get("_party") or "?", a.get("_faction") or "-",
+               y if y else "?", (a.get("value_text") or a.get("predicate") or "")[:34]))
+    header = "%-10s | %-13s | %-7s | %-10s | %-4s | %s" % (
+        "scene", "id", "party", "faction", "year", "value_text")
     return header + "\n" + "\n".join(lines)
+
+
+def _fmt_by_faction(rows):
+    buckets = {}
+    for a in rows:
+        fid = a.get("_faction") or "(无派系/非明方)"
+        buckets.setdefault(fid, []).append(a)
+    lines = []
+    for fid, arr in sorted(buckets.items(), key=lambda kv: -len(kv[1])):
+        name = FACTIONS.get(fid, {}).get("name", fid) if fid != "(无派系/非明方)" else fid
+        lines.append("【%s】 %d 条" % (name, len(arr)))
+        for a in arr[:8]:
+            lines.append("   · %s/%s : %s" % (a.get("_scene"), a.get("id"),
+                                             (a.get("value_text") or "")[:50]))
+        if len(arr) > 8:
+            lines.append("   … 另 %d 条" % (len(arr) - 8))
+    return "\n".join(lines) if lines else "(无)"
 
 
 def main():
@@ -143,19 +199,26 @@ def main():
     ap.add_argument("--era", help="年号（经 reign_era 归一化）")
     ap.add_argument("--place", help="地点 id")
     ap.add_argument("--source", help="史料来源 id")
+    ap.add_argument("--party", choices=["明方", "清方", "朝鲜", "综述考订"],
+                    help="立场桶（由 source.party 经 vocab 派生）")
+    ap.add_argument("--faction", help="明朝内派系 id（vocab.factions，如 feng_jiang/nei_guan/donglin）")
     ap.add_argument("--scene", help="限定场景 id")
     ap.add_argument("--layer", choices=["record", "scholarship", "inference", "gap"])
+    ap.add_argument("--by-faction", action="store_true", help="结果集按派系聚合输出")
     ap.add_argument("--json", action="store_true", help="输出 JSON")
     args = ap.parse_args()
 
     try:
         rows = query(year=args.year, era=args.era, place=args.place,
-                     source=args.source, scene=args.scene, layer=args.layer)
+                     source=args.source, party=args.party, faction=args.faction,
+                     scene=args.scene, layer=args.layer)
     except ValueError as e:
         print("[FAIL] %s" % e)
         return 2
 
-    if args.json:
+    if args.by_faction:
+        print(_fmt_by_faction(rows))
+    elif args.json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))
     else:
         print(_fmt_table(rows))

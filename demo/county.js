@@ -147,7 +147,8 @@
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
     personYear: { from: null, to: null }, // 人物轨迹时间窗
-    activeFaction: null        // 派系筛选（v0.19）：点击派系面板只看该派系明方断言
+    activeFaction: null,       // 派系筛选（v0.19）：点击派系面板只看该派系明方断言
+    factionCompare: false       // 派系并排对比（v0.21）：当前事件/切片各派系明方断言同屏对照
   };
 
   function visibleAssertions() {
@@ -858,9 +859,22 @@
       counts[fid] = (counts[fid] || 0) + 1;
     });
     var head = document.createElement('div');
-    head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632';
-    head.innerHTML = '明方内部派系细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span>';
+    head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632;display:flex;align-items:center;justify-content:space-between';
+    head.innerHTML = '<span>明方内部派系细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span></span>';
+    var toggle = document.createElement('span');
+    toggle.style.cssText = 'cursor:pointer;font-size:11px;font-weight:600;color:#fff;background:#8C6239;' +
+      'padding:2px 9px;border-radius:99px;flex:0 0 auto';
+    toggle.textContent = state.factionCompare ? '退出对比' : '并排对比';
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      state.factionCompare = !state.factionCompare;
+      state.activeFaction = null;
+      renderFactions(); renderParties(); renderTimeline(); drawDynamic();
+    });
+    head.appendChild(toggle);
     box.appendChild(head);
+
+    if (state.factionCompare) { renderFactionCompare(box); return; }
     if (state.activeFaction) {
       var hint = document.createElement('div');
       hint.style.cssText = 'font-size:11px;color:#6b6259;margin:0 0 6px';
@@ -943,6 +957,77 @@
       }
       box.appendChild(row);
     });
+  }
+
+  /* 派系并排对比（v0.21）：把当前事件（或整切片）各派系的明方断言同屏对照，
+     直接呈现「同一件事，各利益集团如何各说各话」——即用户所言「派系因自身利益润色夸张」。
+     对照范围随 DOSSIER 走：选了某事件则比该事件，否则比整切片。 */
+  function renderFactionCompare(box) {
+    var scope = D.assertions.filter(function (a) {
+      var src = SRC[a.source]; if (!src || !state.sources.has(a.source)) return false;
+      var b = PARTY_BUCKET[src.party] || src.party;
+      if (b !== '明方') return false;
+      if (state.activeFaction && a._faction !== state.activeFaction) return false;
+      if (DOSSIER && a.subject !== DOSSIER) return false;
+      return true;
+    });
+    var byF = {};
+    scope.forEach(function (a) {
+      var fid = a._faction;
+      if (!fid || !FDEF[fid]) { (byF._unf = byF._unf || []).push(a); return; }
+      (byF[fid] = byF[fid] || []).push(a);
+    });
+    var fids = Object.keys(byF).filter(function (k) { return k !== '_unf'; });
+    fids.sort(function (x, y) { return byF[y].length - byF[x].length; });
+
+    var tip = document.createElement('div');
+    tip.style.cssText = 'font-size:11.5px;color:#6b6259;margin:0 0 8px';
+    tip.innerHTML = (DOSSIER ? '当前事件：<b style="color:#5A4632">' + subjectName(DOSSIER) + '</b> · ' : '整切片 · ') +
+      '各派系对该范围的明方记载并排对照（相同立场=共识，相悖=互攻）：';
+    box.appendChild(tip);
+
+    if (!fids.length) {
+      var none = document.createElement('div');
+      none.style.cssText = 'color:#918777;font-size:12px';
+      none.textContent = '本范围暂无标注派系的明方断言可供对比。';
+      box.appendChild(none);
+      return;
+    }
+    fids.forEach(function (fid) {
+      var f = FDEF[fid], col = FCOLORS[fid] || '#888';
+      var card = document.createElement('div');
+      card.style.cssText = 'margin:8px 0;padding:7px 9px;border-left:3px solid ' + col +
+        ';background:#FCF8EF;border-radius:0 6px 6px 0';
+      var h = document.createElement('div');
+      h.style.cssText = 'font-size:12.5px;font-weight:700;color:' + col;
+      h.innerHTML = (f.name || fid) + ' <span style="font-weight:400;font-size:10.5px;color:#918777">· ' +
+        byF[fid].length + ' 条</span>';
+      card.appendChild(h);
+      if (f.interest) {
+        var it = document.createElement('div');
+        it.style.cssText = 'font-size:11px;color:#6b6259;margin:1px 0 4px';
+        it.textContent = f.interest;
+        card.appendChild(it);
+      }
+      byF[fid].forEach(function (a) {
+        var r = document.createElement('div');
+        r.style.cssText = 'font-size:11.5px;margin:2px 0;line-height:1.45';
+        r.innerHTML = (a.layer === 'gap' ? '<span style="color:#B23A48">缺口·</span>'
+          : (a.predicate ? a.predicate + '：' : '')) +
+          (a.layer === 'gap' ? '' : '<span style="color:#2A2521">' ) +
+          (a.value_text || '') +
+          (a.layer === 'gap' ? '' : '</span>') +
+          ' <em style="color:#918777">（《' + (SRC[a.source] ? SRC[a.source].title : a.source) + '》）</em>';
+        card.appendChild(r);
+      });
+      box.appendChild(card);
+    });
+    if (byF._unf && byF._unf.length) {
+      var u = document.createElement('div');
+      u.style.cssText = 'font-size:11px;color:#918777;margin-top:6px';
+      u.textContent = '（另有 ' + byF._unf.length + ' 条明方断言未标派系，不参与对比）';
+      box.appendChild(u);
+    }
   }
 
   /* ═══════════ 冲突 ═══════════ */

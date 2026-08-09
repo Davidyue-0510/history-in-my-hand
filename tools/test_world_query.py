@@ -59,5 +59,19 @@ try:
 except ValueError:
     check("Q7 未知年号抛 ValueError", True)
 
+# Q8 按立场桶 party 过滤（v0.21 新增）：返回结果必须全部属于该桶
+r8 = W.query(party="明方")
+check("Q8 --party 明方 命中非空", len(r8) > 0)
+check("Q8 结果全部 _party==明方（无串桶）", all(a.get("_party") == "明方" for a in r8))
+r8b = W.query(party="清方")
+check("Q8b --party 清方 结果全部 _party==清方", all(a.get("_party") == "清方" for a in r8b))
+
+# Q9 按派系 faction 过滤（v0.21 新增）：返回结果必须全部属该派系
+r9 = W.query(faction="feng_jiang")
+check("Q9 --faction feng_jiang 命中非空", len(r9) > 0)
+check("Q9 结果全部 _faction==feng_jiang", all(a.get("_faction") == "feng_jiang" for a in r9))
+# 派系只在明方桶内生效：faction 过滤结果必须都是明方
+check("Q9b faction 过滤结果都是明方桶", all(a.get("_party") == "明方" for a in r9))
+
 print("\nworld_query: %d ok, %d fail" % (OK, FAIL))
 sys.exit(1 if FAIL else 0)

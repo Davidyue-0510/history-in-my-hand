@@ -1,0 +1,205 @@
+{
+  "scenes_total": 23,
+  "historical": 14,
+  "fictional": 9,
+  "assertions_total": 500,
+  "sources_total": 36,
+  "factions_total": 9,
+  "leads_total": 47,
+  "per_scene": [
+    {
+      "id": "sarhu",
+      "title": "萨尔浒之战",
+      "kind": "battle",
+      "assertions": 111,
+      "factions": {
+        "feng_jiang": 8
+      }
+    },
+    {
+      "id": "kaiyuan",
+      "title": "开原",
+      "kind": "county",
+      "assertions": 44,
+      "factions": {}
+    },
+    {
+      "id": "tieling",
+      "title": "铁岭",
+      "kind": "county",
+      "assertions": 31,
+      "factions": {}
+    },
+    {
+      "id": "yehe",
+      "title": "叶赫",
+      "kind": "county",
+      "assertions": 7,
+      "factions": {}
+    },
+    {
+      "id": "liaoyang",
+      "title": "辽阳",
+      "kind": "county",
+      "assertions": 53,
+      "factions": {
+        "feng_jiang": 10
+      }
+    },
+    {
+      "id": "shenyang",
+      "title": "沈阳",
+      "kind": "county",
+      "assertions": 50,
+      "factions": {
+        "feng_jiang": 12
+      }
+    },
+    {
+      "id": "fushun",
+      "title": "抚顺",
+      "kind": "county",
+      "assertions": 20,
+      "factions": {}
+    },
+    {
+      "id": "haizhou",
+      "title": "海州",
+      "kind": "county",
+      "assertions": 7,
+      "factions": {}
+    },
+    {
+      "id": "gaizhou",
+      "title": "盖州",
+      "kind": "county",
+      "assertions": 6,
+      "factions": {}
+    },
+    {
+      "id": "fuzhou",
+      "title": "复州",
+      "kind": "county",
+      "assertions": 6,
+      "factions": {}
+    },
+    {
+      "id": "jinzhouwei",
+      "title": "金州",
+      "kind": "county",
+      "assertions": 6,
+      "factions": {}
+    },
+    {
+      "id": "guangning",
+      "title": "广宁",
+      "kind": "county",
+      "assertions": 31,
+      "factions": {
+        "nei_guan": 9
+      }
+    },
+    {
+      "id": "jinzhou",
+      "title": "锦州",
+      "kind": "county",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "ningyuan",
+      "title": "宁远",
+      "kind": "county",
+      "assertions": 31,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao",
+      "title": "反派他爸教做人·九零家暴男儿子",
+      "kind": "fiction",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_2",
+      "title": "反派他爸教做人·深情渣帝王儿子",
+      "kind": "fiction",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_3",
+      "title": "反派他爸教做人·拜金绝色女儿",
+      "kind": "fiction",
+      "assertions": 9,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_4",
+      "title": "反派他爸教做人·我的儿子是怪物",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_5",
+      "title": "反派他爸教做人·不负责的穿书女",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_6",
+      "title": "反派他爸教做人·同性恋骗婚儿子",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_7",
+      "title": "反派他爸教做人·爱情至上的女儿",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_8",
+      "title": "反派他爸教做人·不听话的喵儿子",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "novel_fandao_9",
+      "title": "反派他爸教做人·胎穿女和魂穿女",
+      "kind": "fiction",
+      "assertions": 8,
+      "factions": {}
+    }
+  ],
+  "scene_titles": {
+    "sarhu": "萨尔浒之战",
+    "kaiyuan": "开原",
+    "tieling": "铁岭",
+    "yehe": "叶赫",
+    "liaoyang": "辽阳",
+    "shenyang": "沈阳",
+    "fushun": "抚顺",
+    "haizhou": "海州",
+    "gaizhou": "盖州",
+    "fuzhou": "复州",
+    "jinzhouwei": "金州",
+    "guangning": "广宁",
+    "jinzhou": "锦州",
+    "ningyuan": "宁远",
+    "novel_fandao": "反派他爸教做人·九零家暴男儿子",
+    "novel_fandao_2": "反派他爸教做人·深情渣帝王儿子",
+    "novel_fandao_3": "反派他爸教做人·拜金绝色女儿",
+    "novel_fandao_4": "反派他爸教做人·我的儿子是怪物",
+    "novel_fandao_5": "反派他爸教做人·不负责的穿书女",
+    "novel_fandao_6": "反派他爸教做人·同性恋骗婚儿子",
+    "novel_fandao_7": "反派他爸教做人·爱情至上的女儿",
+    "novel_fandao_8": "反派他爸教做人·不听话的喵儿子",
+    "novel_fandao_9": "反派他爸教做人·胎穿女和魂穿女"
+  }
+}

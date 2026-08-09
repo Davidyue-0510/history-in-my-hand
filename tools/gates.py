@@ -36,6 +36,8 @@ STEPS = [
     ("世界模型查询 test",            ["tools/test_world_query.py"]),
     ("重算研究线索 leads",            ["tools/leads.py"]),
     ("重编译 demo/data.js · build",  ["tools/build.py"]),
+    ("统计快照 stats",                ["tools/stats.py"]),
+    ("场景注册表一致性 check",         ["tools/check_scenes.py"]),
 ]
 
 
