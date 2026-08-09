@@ -686,8 +686,10 @@
       if (ev.year === curYr) cls += ' now';
       node.className = cls;
       node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
-      if (i === 0) node.style.transform = 'translateX(-14px)';
-      if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
+      // 垂直居中于轨道线 + 水平偏移（首尾不超出边界）
+      if (i === 0) node.style.transform = 'translate(-14px, -50%)';
+      else if (i === n - 1) node.style.transform = 'translate(calc(-100% + 14px), -50%)';
+      else node.style.transform = 'translate(-50%, -50%)';
       node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + ev.era + '</div>';
       node.title = ev.title;
       node.addEventListener('click', function () {
