@@ -5,6 +5,11 @@
   "assertions_total": 500,
   "sources_total": 36,
   "factions_total": 9,
+  "vocab_packs": [
+    "ming_qing",
+    "tang"
+  ],
+  "default_vocab_pack": "ming_qing",
   "leads_total": 47,
   "per_scene": [
     {

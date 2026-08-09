@@ -42,7 +42,7 @@
     W07 gap 层断言的 value_text 为空（缺口必须说清缺什么）
     W11 直引 quotes 数组条目 text 为空或 source_id 不存在（可选增强字段）
     W12 县治所在 control_liaodong.json 中无任何控制权记录——图层上该城留白（疑似漏写）
-    W13 source.faction 不在 data/vocab.json 的 factions 受控词表内
+    W13 source.faction 不在该切片语境包（data/vocab/<pack>.json）的 factions 受控词表内
         （派系维度拼写错误会导致共振的『明方内派系细分』统计静默把该来源归错组）
 
 用法：
@@ -62,8 +62,13 @@ sys.stdout.reconfigure(encoding='utf-8')
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 
-with open(os.path.join(DATA, 'vocab.json'), encoding='utf-8') as f:
-    VOCAB = json.load(f)
+# 受控词表 v0.22 起按语境分包（data/vocab/），加载一律经 vocab_loader。
+# 这里取的是「默认包」，只用于不隶属任何切片的全局校验（如 bibliography 的 party）；
+# 切片内的校验必须用该切片自己的包，见 check_scene 里的 resolve_for_dir。
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
+
+VOCAB = VL.load_default()
 
 LAYERS = set(VOCAB['layers'])
 QUOTE_STATUS = set(VOCAB['quote_status'])
@@ -149,32 +154,30 @@ def check_scene(sc, rep):
     event_subjects = ({e['subject'] for e in events if e.get('subject')} |
                       {e['subject'] for e in engagements if e.get('subject')})
 
-    # 每 world 自带 vocab（docs/03）：优先用本 world 的 party_bucket，缺省回退全局。
-    svocab_path = os.path.join(DATA, scene, 'vocab.json')
-    scene_bucket = {}
-    if os.path.exists(svocab_path):
-        try:
-            scene_bucket = json.load(open(svocab_path, encoding='utf-8')).get('party_bucket', {})
-        except Exception:
-            scene_bucket = {}
-    eff_bucket = dict(PARTY_BUCKET)
-    eff_bucket.update(scene_bucket)
+    # 语境包解析（v0.22）：内联包（虚构 world）> 注册表 vocab_pack > 全局默认包。
+    # 注意这里是**替换**不是合并——v0.21 之前是 merge，那意味着一个唐代切片会
+    # 悄悄继承「建州·官修」这种明清专属桶，拼错的 party 反而校验通过。串味比重复贵。
+    pack_id, svocab = VL.resolve_for_dir(scene)
+    eff_bucket = svocab.get('party_bucket', {})
+    eff_layers = set(svocab.get('layers', LAYERS))
+    eff_quote = set(svocab.get('quote_status', QUOTE_STATUS))
+    eff_factions = set((svocab.get('factions') or {}).keys())
 
     # ── sources ──
     for s in srcs:
         party = s.get('party')
         if party not in eff_bucket:
             rep.err('E05', scene,
-                    'source「%s」(%s) 的 party =「%s」不在 data/vocab.json 受控词表内，'
-                    '该来源将被共振统计静默丢弃' % (s['id'], s.get('title', ''), party))
+                    'source「%s」(%s) 的 party =「%s」不在语境包 %s 的受控词表内，'
+                    '该来源将被共振统计静默丢弃' % (s['id'], s.get('title', ''), party, pack_id))
 
         # W13：派系维度拼写校验（明朝内利益集团会因自身利害润色/夸张记载，
         # 拼写错会导致『明方内派系细分』统计静默归错组——属"静默留白"类 bug）。
         fac = s.get('faction')
-        if fac is not None and fac not in FACTIONS:
+        if fac is not None and fac not in eff_factions:
             rep.warn('W13', scene,
-                     'source「%s」(%s) 的 faction=「%s」不在 data/vocab.json 的 factions 受控词表内'
-                     % (s['id'], s.get('title', ''), fac))
+                     'source「%s」(%s) 的 faction=「%s」不在语境包 %s 的 factions 受控词表内'
+                     % (s['id'], s.get('title', ''), fac, pack_id))
 
     # ── assertions ──
     seen_ids = {}
@@ -187,12 +190,12 @@ def check_scene(sc, rep):
             if not a.get(k):
                 rep.err('E01', scene, '%s %s 缺必填字段「%s」' % (loc, aid, k))
 
-        if a.get('layer') not in LAYERS:
+        if a.get('layer') not in eff_layers:
             rep.err('E02', scene, '%s %s 的 layer =「%s」不合法（应为 %s）'
-                    % (loc, aid, a.get('layer'), '/'.join(sorted(LAYERS))))
+                    % (loc, aid, a.get('layer'), '/'.join(sorted(eff_layers))))
 
         qs = a.get('quote_status')
-        if qs is not None and qs not in QUOTE_STATUS:
+        if qs is not None and qs not in eff_quote:
             rep.err('E03', scene, '%s %s 的 quote_status =「%s」不合法' % (loc, aid, qs))
 
         src = a.get('source')
@@ -351,13 +354,16 @@ def check_coverage(scenes, rep):
         if REG_SCENES.get(sc['scene'], {}).get('kind') == 'fiction':
             continue
         srcs = (sc['sources'] or {}).get('sources', [])
-        pmap = {s['id']: PARTY_BUCKET.get(s.get('party')) for s in srcs}
+        _pid, _v = VL.resolve_for_dir(sc['scene'])
+        _bucket = _v.get('party_bucket', {})
+        _parties3 = [x for x in _v.get('parties', []) if x != '综述考订']
+        pmap = {s['id']: _bucket.get(s.get('party')) for s in srcs}
         by_event = defaultdict(set)
         for a in sc['assertions']:
             if a.get('subject', '').startswith('event:'):
                 by_event[a['subject']].add(pmap.get(a.get('source')))
         for ev, ps in sorted(by_event.items()):
-            if not (ps & set(PARTIES3)):
+            if not (ps & set(_parties3)):
                 rep.warn('W04', sc['scene'],
                          '事件「%s」的三方覆盖为 0（现有来源分桶：%s）——'
                          '检查 source.party 是否配错' % (ev, ps or '{}'))
@@ -367,7 +373,7 @@ def check_control(rep):
     """实际控制数据（v0.10）——图层据此把「谁何时控哪城」投成辖区色块。
 
     校验：place_id 必须是某县切片已登记的地点（否则 Voronoi 网格上无对应治所）；
-    party 必须在 vocab.json 受控词表；start/end 为整数年（end 可 null 表示延续至今）；
+    party 必须在默认语境包受控词表；start/end 为整数年（end 可 null 表示延续至今）；
     end >= start；同一 place_id 的时间段不可重叠；每个县治所至少有 1 条记录。
     """
     ctrl_path = os.path.join(DATA, 'control_liaodong.json')
@@ -417,7 +423,7 @@ def check_control(rep):
         party = s.get('party')
         if party not in parties:
             rep.err('E17', 'control_liaodong',
-                    '%s 的 party「%s」不在 data/vocab.json 受控词表（parties）内' % (tag, party))
+                    '%s 的 party「%s」不在默认语境包受控词表（parties）内' % (tag, party))
         st = s.get('start')
         en = s.get('end')
         if not isinstance(st, int):

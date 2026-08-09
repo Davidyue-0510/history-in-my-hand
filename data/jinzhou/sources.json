@@ -57,18 +57,19 @@
     },
     {
       "id": "mingtongjian",
-      "title": "明通鉴（夏燮·编年体）",
+      "title": "明通鉴",
       "party": "二手综述",
-      "stance_label": "近代考异编年",
-      "distance_label": "成书清咸丰，综合诸家考异",
-      "color": "#5C6B7A",
-      "compiler": "夏燮",
-      "period": "近代",
-      "stance": "synthesis",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+      "color": "#6C7A89",
+      "compiler": "夏燮（清）",
+      "period": "晚清",
+      "stance": "private_synthesis",
       "faction": null,
       "availability": "fetched",
       "url": "https://zh.wikisource.org/wiki/明通鑑/卷091",
-      "cached_text": "已抓卷091（崇祯十四—十五年·松锦：洪承畴会八镇兵于宁远、张若麒/陈新甲促战、杨国柱败没、王朴先遁诸镇溃、松山被围）、卷092（松山克、洪承畴降、祖大寿以锦州降、松山失事论罪吴三桂逃而不问）。"
+      "cached_text": "已抓卷091（崇祯十四—十五年·松锦：洪承畴会八镇兵于宁远、张若麒/陈新甲促战、杨国柱败没、王朴先遁诸镇溃、松山被围）、卷092（松山克、洪承畴降、祖大寿以锦州降、松山失事论罪吴三桂逃而不问）。",
+      "compiled_year": 1873
     }
   ]
 }

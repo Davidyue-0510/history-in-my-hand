@@ -34,6 +34,7 @@ STEPS = [
     ("不变量回归 test",              ["tools/test_assertions.py"]),
     ("年号换算 test",                ["tools/test_reign.py"]),
     ("世界模型查询 test",            ["tools/test_world_query.py"]),
+    ("语境包 test",                  ["tools/test_vocab.py"]),
     ("重算研究线索 leads",            ["tools/leads.py"]),
     ("重编译 demo/data.js · build",  ["tools/build.py"]),
     ("统计快照 stats",                ["tools/stats.py"]),

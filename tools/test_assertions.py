@@ -127,17 +127,42 @@ def main():
           not missing,
           '缺失：%s' % missing)
 
-    # I7
-    print('\nI7: vocabulary 自身合法')
-    v = json.load(open(os.path.join(ROOT, 'data', 'vocab.json'), encoding='utf-8'))
-    pb_vals = set(v['party_bucket'].values())
-    p_set = set(v['parties'])
-    check('party_bucket 全部映射到 parties', pb_vals <= p_set,
-          '逸出：%s' % (pb_vals - p_set))
-    check('layers ⊆ 词表', set(v['layers']) >= {'record', 'scholarship', 'inference', 'gap'},
-          str(v['layers']))
-    check('quote_status ⊆ 词表', set(v['quote_status']) >= {'verbatim', 'paraphrase_unverified', 'generated'},
-          str(v['quote_status']))
+    # I7 —— v0.22：词表分语境包后，每个包都必须各自自洽。
+    # 骨架包（tang）今天没人用，但它一旦被引用就直接决定分桶；等到那时才发现
+    # party_bucket 指向了未声明的 party，就又是一次「静默归错桶」。故现在就守。
+    print('\nI7: 每个语境包自身合法')
+    sys.path.insert(0, os.path.join(ROOT, 'tools'))
+    import vocab_loader as VL
+    packs = VL.list_packs()
+    check('至少存在一个语境包', bool(packs), str(packs))
+    check('默认语境包在包列表内', VL.default_pack_id() in packs,
+          '默认=%s 现有=%s' % (VL.default_pack_id(), packs))
+    for pid in packs:
+        v = VL.load_pack(pid)
+        pb_vals = set(v['party_bucket'].values())
+        p_set = set(v['parties'])
+        check('[%s] party_bucket 全部映射到 parties' % pid, pb_vals <= p_set,
+              '逸出：%s' % (pb_vals - p_set))
+        check('[%s] layers 继承自 _base' % pid,
+              set(v['layers']) >= {'record', 'scholarship', 'inference', 'gap'}, str(v['layers']))
+        check('[%s] quote_status 继承自 _base' % pid,
+              set(v['quote_status']) >= {'verbatim', 'paraphrase_unverified', 'generated'},
+              str(v['quote_status']))
+        facs = v.get('factions') or {}
+        cols = v.get('faction_colors') or {}
+        check('[%s] faction_colors 覆盖全部 factions' % pid,
+              set(facs) <= set(cols), '缺色：%s' % (set(facs) - set(cols)))
+        bad = [k for k, f in facs.items() if f.get('macro_party') and f['macro_party'] not in p_set]
+        check('[%s] factions.macro_party 都是本包声明的 party' % pid, not bad, str(bad))
+    # 内联包（虚构 world）同样要自洽——它们的 party 不许逸出自己的 parties
+    for sn, sc in scenes.items():
+        pid, v = VL.resolve_for_dir(sn)
+        if not pid.startswith('inline:'):
+            continue
+        pb_vals = set((v.get('party_bucket') or {}).values())
+        p_set = set(v.get('parties') or [])
+        check('[%s] 内联包 party_bucket 映射到自己的 parties' % pid, pb_vals <= p_set,
+              '逸出：%s' % (pb_vals - p_set))
 
     # I8
     print('\nI8: 断言 id 切片内唯一')

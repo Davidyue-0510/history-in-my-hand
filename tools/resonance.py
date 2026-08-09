@@ -24,12 +24,18 @@ v0.4 改动：不再硬编码 kaiyuan/sarhu 两个切片，改为自动扫描
 import glob
 import json
 import os
+import sys
 from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open(os.path.join(ROOT, 'data', 'vocab.json'), encoding='utf-8') as _f:
-    VOCAB = json.load(_f)
+# 受控词表 v0.22 起按语境分包（data/vocab/），加载经 tools/vocab_loader.py。
+# 这里的模块级常量取默认包，用于报告表头等「跨切片汇总」场合；
+# 具体某条断言归哪个桶，必须按它所属切片的包来判（见 bucket(party, scene)）。
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
+
+VOCAB = VL.load_default()
 PARTY_BUCKET = VOCAB['party_bucket']
 PARTIES = [p for p in VOCAB['parties'] if p != '综述考订']
 # 明朝内部利益集团（派系）受控词表——立场派生的二次维度。
@@ -68,7 +74,19 @@ EVENT_NAMES = {
 }
 
 
-def bucket(party):
+def bucket(party, scene=None):
+    """党派 → 宏观桶。分桶规则来自该切片的语境包，不是全局硬编码。
+
+    带 scene 参数是必要的：一个唐代切片的「宋·官修」和明清切片的「清修·明臣」
+    分属不同语境包，用同一张表查会静默归错桶——而错桶不会报错，只会让
+    共振度悄悄变成另一个数字（v0.3 已经踩过一次）。
+    """
+    if scene:
+        try:
+            _, v = VL.resolve_for_dir(scene)
+            return (v.get('party_bucket') or {}).get(party, party or '其他')
+        except Exception:
+            pass
     return PARTY_BUCKET.get(party, party or '其他')
 
 
@@ -84,7 +102,7 @@ def resonance_for_subject(assertions, src_party, subject):
 
     by_party = defaultdict(list)
     for a in rel:
-        p = bucket(party_of(src_party, a))
+        p = bucket(party_of(src_party, a), a.get('_scene'))
         by_party[p].append(a)
 
     coverage = sum(1 for p in PARTIES if by_party.get(p))
@@ -186,7 +204,7 @@ def scene_summary(assertions, src_party, src_faction, scene):
         layers[a.get('layer', '?')] += 1
     parties = defaultdict(int)
     for a in rel:
-        parties[bucket(party_of(src_party, a))] += 1
+        parties[bucket(party_of(src_party, a), a.get('_scene'))] += 1
     # 明内部派系细分：仅统计 faction 非空的断言（即明朝内各利益集团）
     factions = defaultdict(int)
     for a in rel:

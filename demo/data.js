@@ -4,7 +4,12 @@ window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
   "slice": "multi-scene · 23 个切片",
-  "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。"
+  "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
+  "default_vocab_pack": "ming_qing",
+  "vocab_packs": [
+   "ming_qing",
+   "tang"
+  ]
  },
  "regions": [
   {
@@ -64,6 +69,17 @@ window.SANDBOX_DATA = {
   "novel_fandao_9"
  ],
  "vocab": {
+  "layers": [
+   "record",
+   "scholarship",
+   "inference",
+   "gap"
+  ],
+  "quote_status": [
+   "verbatim",
+   "paraphrase_unverified",
+   "generated"
+  ],
   "parties": [
    "明方",
    "清方",
@@ -255,18 +271,7 @@ window.SANDBOX_DATA = {
    "yan_shang": "#2874A6",
    "nei_guan": "#5D6D7E",
    "feng_jiang": "#C0392B"
-  },
-  "layers": [
-   "record",
-   "scholarship",
-   "inference",
-   "gap"
-  ],
-  "quote_status": [
-   "verbatim",
-   "paraphrase_unverified",
-   "generated"
-  ]
+  }
  },
  "terrain": {
   "lon0": 122.0,
@@ -7033,7 +7038,8 @@ window.SANDBOX_DATA = {
     "dossier_event": "event:sarhu",
     "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
     "page": "sarhu.html",
-    "key": "sarhu"
+    "key": "sarhu",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -7161,17 +7167,18 @@ window.SANDBOX_DATA = {
      "title": "明通鉴",
      "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
      "compiler": "夏燮（清）",
-     "compiled_year": 1872,
+     "compiled_year": 1873,
      "stance": "private_synthesis",
      "stance_label": "私修编年·综合",
-     "distance_label": "成书清同治间，距事约250年，综合实录奏议",
+     "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
      "party": "二手综述",
      "color": "#6C7A89",
      "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",
      "faction": null,
      "availability": "fetched",
      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E9%80%9A%E9%91%91/%E5%8D%B7080",
-     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。"
+     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。",
+     "period": "晚清"
     }
    ],
    "places": [
@@ -11718,7 +11725,8 @@ window.SANDBOX_DATA = {
      "doc:kaiyuan_tushuo": "开原图说"
     },
     "page": "county.html?scene=kaiyuan",
-    "key": "kaiyuan"
+    "key": "kaiyuan",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -13184,7 +13192,8 @@ window.SANDBOX_DATA = {
      "person:xiongtingbing": "熊廷弼"
     },
     "page": "county.html?scene=tieling",
-    "key": "tieling"
+    "key": "tieling",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -14206,7 +14215,8 @@ window.SANDBOX_DATA = {
      "person:nuerhaci": "努尔哈赤"
     },
     "page": "county.html?scene=yehe",
-    "key": "yehe"
+    "key": "yehe",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -14558,7 +14568,8 @@ window.SANDBOX_DATA = {
      "person:tongzhongkui": "童仲揆"
     },
     "page": "county.html?scene=liaoyang",
-    "key": "liaoyang"
+    "key": "liaoyang",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -14646,13 +14657,13 @@ window.SANDBOX_DATA = {
      "id": "mingtongjian",
      "title": "明通鉴",
      "party": "二手综述",
-     "stance_label": "编年体私修·后世综括",
-     "distance_label": "成书 1872（清同治），距事约 250 年",
-     "color": "#6B8E9E",
-     "compiler": "夏燮",
-     "compiled_year": 1872,
+     "stance_label": "私修编年·综合",
+     "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+     "color": "#6C7A89",
+     "compiler": "夏燮（清）",
+     "compiled_year": 1873,
      "period": "晚清",
-     "stance": "compiled_synthesis",
+     "stance": "private_synthesis",
      "faction": null,
      "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
@@ -16185,7 +16196,8 @@ window.SANDBOX_DATA = {
      "person:goseong": "姜弘立"
     },
     "page": "county.html?scene=shenyang",
-    "key": "shenyang"
+    "key": "shenyang",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -16297,13 +16309,13 @@ window.SANDBOX_DATA = {
      "id": "mingtongjian",
      "title": "明通鉴",
      "party": "二手综述",
-     "stance_label": "编年体私修·后世综括",
-     "distance_label": "成书 1872（清同治），距事约 250 年",
-     "color": "#6B8E9E",
-     "compiler": "夏燮",
-     "compiled_year": 1872,
+     "stance_label": "私修编年·综合",
+     "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+     "color": "#6C7A89",
+     "compiler": "夏燮（清）",
+     "compiled_year": 1873,
      "period": "晚清",
-     "stance": "compiled_synthesis",
+     "stance": "private_synthesis",
      "faction": null,
      "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
     }
@@ -17677,7 +17689,8 @@ window.SANDBOX_DATA = {
      "person:li_yongfang": "李永芳"
     },
     "page": "county.html?scene=fushun",
-    "key": "fushun"
+    "key": "fushun",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -18333,7 +18346,8 @@ window.SANDBOX_DATA = {
      "person:amin": "阿敏"
     },
     "page": "county.html?scene=haizhou",
-    "key": "haizhou"
+    "key": "haizhou",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -18706,7 +18720,8 @@ window.SANDBOX_DATA = {
      "person:nuerhaci": "努尔哈赤"
     },
     "page": "county.html?scene=gaizhou",
-    "key": "gaizhou"
+    "key": "gaizhou",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -19019,7 +19034,8 @@ window.SANDBOX_DATA = {
      "person:nuerhaci": "努尔哈赤"
     },
     "page": "county.html?scene=fuzhou",
-    "key": "fuzhou"
+    "key": "fuzhou",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -19323,7 +19339,8 @@ window.SANDBOX_DATA = {
      "person:nuerhaci": "努尔哈赤"
     },
     "page": "county.html?scene=jinzhouwei",
-    "key": "jinzhouwei"
+    "key": "jinzhouwei",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -19637,7 +19654,8 @@ window.SANDBOX_DATA = {
      "person:nuerhaci": "努尔哈赤"
     },
     "page": "county.html?scene=guangning",
-    "key": "guangning"
+    "key": "guangning",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -19703,17 +19721,18 @@ window.SANDBOX_DATA = {
      "title": "明通鉴",
      "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
      "compiler": "夏燮（清）",
-     "compiled_year": 1872,
+     "compiled_year": 1873,
      "stance": "private_synthesis",
      "stance_label": "私修编年·综合",
-     "distance_label": "成书清同治间，距事约250年，综合实录奏议",
+     "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
      "party": "二手综述",
      "color": "#6C7A89",
      "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",
      "faction": null,
      "availability": "fetched",
      "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E9%80%9A%E9%91%91/%E5%8D%B7080",
-     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。"
+     "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。",
+     "period": "晚清"
     }
    ],
    "places": [
@@ -20572,7 +20591,8 @@ window.SANDBOX_DATA = {
      "person:duoergun": "多尔衮"
     },
     "page": "county.html?scene=jinzhou",
-    "key": "jinzhou"
+    "key": "jinzhou",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -20632,18 +20652,19 @@ window.SANDBOX_DATA = {
     },
     {
      "id": "mingtongjian",
-     "title": "明通鉴（夏燮·编年体）",
+     "title": "明通鉴",
      "party": "二手综述",
-     "stance_label": "近代考异编年",
-     "distance_label": "成书清咸丰，综合诸家考异",
-     "color": "#5C6B7A",
-     "compiler": "夏燮",
-     "period": "近代",
-     "stance": "synthesis",
+     "stance_label": "私修编年·综合",
+     "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+     "color": "#6C7A89",
+     "compiler": "夏燮（清）",
+     "period": "晚清",
+     "stance": "private_synthesis",
      "faction": null,
      "availability": "fetched",
      "url": "https://zh.wikisource.org/wiki/明通鑑/卷091",
-     "cached_text": "已抓卷091（崇祯十四—十五年·松锦：洪承畴会八镇兵于宁远、张若麒/陈新甲促战、杨国柱败没、王朴先遁诸镇溃、松山被围）、卷092（松山克、洪承畴降、祖大寿以锦州降、松山失事论罪吴三桂逃而不问）。"
+     "cached_text": "已抓卷091（崇祯十四—十五年·松锦：洪承畴会八镇兵于宁远、张若麒/陈新甲促战、杨国柱败没、王朴先遁诸镇溃、松山被围）、卷092（松山克、洪承畴降、祖大寿以锦州降、松山失事论罪吴三桂逃而不问）。",
+     "compiled_year": 1873
     }
    ],
    "places": [
@@ -21049,7 +21070,8 @@ window.SANDBOX_DATA = {
      "person:zhao_shuaijiao": "赵率教"
     },
     "page": "county.html?scene=ningyuan",
-    "key": "ningyuan"
+    "key": "ningyuan",
+    "vocab_pack": "ming_qing"
    },
    "sources": [
     {
@@ -21964,7 +21986,8 @@ window.SANDBOX_DATA = {
      "person:tang_aili": "唐爱丽"
     },
     "page": "county.html?scene=novel_fandao",
-    "key": "novel_fandao"
+    "key": "novel_fandao",
+    "vocab_pack": "inline:novel_fandao"
    },
    "sources": [
     {
@@ -22496,12 +22519,23 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
-     "系统任务",
-     "于父自述",
-     "叶为安视角",
-     "于国海视角"
+     "系统设定",
+     "角色自述",
+     "矫正者",
+     "旁观者"
     ],
     "party_bucket": {
      "作者叙述": "作者叙述",
@@ -22612,7 +22646,8 @@ window.SANDBOX_DATA = {
      "person:shen_lan": "沈岚"
     },
     "page": "county.html?scene=novel_fandao_2",
-    "key": "novel_fandao_2"
+    "key": "novel_fandao_2",
+    "vocab_pack": "inline:novel_fandao_2"
    },
    "sources": [
     {
@@ -23066,6 +23101,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -23171,7 +23217,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
     "page": "county.html?scene=novel_fandao_3",
-    "key": "novel_fandao_3"
+    "key": "novel_fandao_3",
+    "vocab_pack": "inline:novel_fandao_3"
    },
    "sources": [
     {
@@ -23516,6 +23563,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -23631,7 +23689,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
     "page": "county.html?scene=novel_fandao_4",
-    "key": "novel_fandao_4"
+    "key": "novel_fandao_4",
+    "vocab_pack": "inline:novel_fandao_4"
    },
    "sources": [
     {
@@ -23949,6 +24008,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -24064,7 +24134,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。",
     "page": "county.html?scene=novel_fandao_5",
-    "key": "novel_fandao_5"
+    "key": "novel_fandao_5",
+    "vocab_pack": "inline:novel_fandao_5"
    },
    "sources": [
     {
@@ -24393,6 +24464,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -24508,7 +24590,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
     "page": "county.html?scene=novel_fandao_6",
-    "key": "novel_fandao_6"
+    "key": "novel_fandao_6",
+    "vocab_pack": "inline:novel_fandao_6"
    },
    "sources": [
     {
@@ -24811,6 +24894,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -24926,7 +25020,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
     "page": "county.html?scene=novel_fandao_7",
-    "key": "novel_fandao_7"
+    "key": "novel_fandao_7",
+    "vocab_pack": "inline:novel_fandao_7"
    },
    "sources": [
     {
@@ -25236,6 +25331,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -25351,7 +25457,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。",
     "page": "county.html?scene=novel_fandao_8",
-    "key": "novel_fandao_8"
+    "key": "novel_fandao_8",
+    "vocab_pack": "inline:novel_fandao_8"
    },
    "sources": [
     {
@@ -25653,6 +25760,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",
@@ -25768,7 +25886,8 @@ window.SANDBOX_DATA = {
     "fictional": true,
     "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。",
     "page": "county.html?scene=novel_fandao_9",
-    "key": "novel_fandao_9"
+    "key": "novel_fandao_9",
+    "vocab_pack": "inline:novel_fandao_9"
    },
    "sources": [
     {
@@ -26070,6 +26189,17 @@ window.SANDBOX_DATA = {
     }
    ],
    "vocab": {
+    "layers": [
+     "record",
+     "scholarship",
+     "inference",
+     "gap"
+    ],
+    "quote_status": [
+     "verbatim",
+     "paraphrase_unverified",
+     "generated"
+    ],
     "parties": [
      "作者叙述",
      "系统任务",

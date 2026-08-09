@@ -25,10 +25,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 OUT = os.path.join(ROOT, "demo", "data.js")
 TERRAIN = os.path.join(DATA, "terrain", "liaodong_grid.json")
-VOCAB = os.path.join(DATA, "vocab.json")
 REGISTRY = os.path.join(DATA, "scenes.json")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
 
 # meta 里属于「配置」而非「内容」的键，不需要原样带进 bundle.meta 的字段
 _REGISTRY_ONLY = {"dir", "extra_files"}
@@ -206,14 +206,15 @@ def build_scene(sc):
         e.setdefault("label", e.get("relation") or e.get("rel") or "")
         e.setdefault("type", "misc")
 
-    # 每 world 自带 vocab（docs/03）：有则覆盖全局，立场分桶单一真值降到 world 级。
+    # 语境包（v0.22）：切片用的词表可能不是默认包——内联包（虚构 world）或
+    # 注册表声明的 vocab_pack（未来的唐代切片）。只要不是默认包就随 bundle 下发，
+    # 前端读 D.vocab || SD.vocab 自动取到正确的一份，零改动。
     # 同时把本 world 的边类型表 edge_types 摊平进 bundle——图例/配色据此数据驱动，
     # 不再写死「互市/部族同盟」等辽东专属栏目（见 demo/county.js）。
-    svocab_path = os.path.join(dirpath, "vocab.json")
-    if os.path.exists(svocab_path):
-        with open(svocab_path, encoding="utf-8") as f:
-            sv = json.load(f)
-        bundle["vocab"] = {k: v for k, v in sv.items() if not k.startswith("_")}
+    pack_id, sv = VL.resolve_for_scene(sc["_key"], sc)
+    bundle["meta"]["vocab_pack"] = pack_id
+    if pack_id != VL.default_pack_id():
+        bundle["vocab"] = VL.public(sv)
         if sv.get("edge_types"):
             bundle["edge_types"] = sv["edge_types"]
     return bundle
@@ -250,10 +251,12 @@ def main():
         "scene_order": [sc["_key"] for sc in resolved],
     }
 
-    # 共享受控词表（立场派生规则的单一真值，见 data/vocab.json）
-    with open(VOCAB, "r", encoding="utf-8") as f:
-        vocab = json.load(f)
-    sd["vocab"] = {k: v for k, v in vocab.items() if not k.startswith("_")}
+    # 共享受控词表：默认语境包（data/vocab/<default>.json）。
+    # 用别的包的切片会在自己的 bundle 里带一份，见 build_scene。
+    vocab = VL.load_default()
+    sd["vocab"] = VL.public(vocab)
+    sd["meta"]["default_vocab_pack"] = VL.default_pack_id()
+    sd["meta"]["vocab_packs"] = VL.list_packs()
 
     # 共享地形
     terr, grid = load_terrain_grid()

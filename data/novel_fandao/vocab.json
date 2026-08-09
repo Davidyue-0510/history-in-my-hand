@@ -1,6 +1,8 @@
 {
-  "_comment": "本 world（小说《反派他爸教做人[快穿]》第一副本「九零家暴男儿子」）自带的受控词表，作用域仅限本 world。立场派生于 source.party，规则单一真值在此文件。layer/quote_status 仍用全局 data/vocab.json（record/scholarship/inference/gap）。",
-  "parties": ["作者叙述", "系统任务", "于父自述", "叶为安视角", "于国海视角"],
+  "_comment": "本 world（小说《反派他爸教做人[快穿]》第一副本「九零家暴男儿子」）自带的受控词表，作用域仅限本 world。立场派生于 source.party，规则单一真值在此文件。layer/quote_status 由 data/vocab/_base.json 继承（record/scholarship/inference/gap）。",
+  "_fix_note": "v0.22 修：parties 原先列的是 party_bucket 的**键**（作者叙述/系统任务/于父自述/叶为安视角/于国海视角），而 party_bucket 的值是另一组功能桶名（系统设定/角色自述/矫正者/旁观者）。二者对不上，导致这 4 个桶逸出 parties——分桶统计里它们既不算任何一方，也不报错，正是典型的静默归错组。parties 的语义是「桶名全集」，故改列桶名。本 world 的 party_bucket 是有语义的多对一映射（视角→功能角色），与其余 8 个副本的恒等映射不同，这是刻意保留的。",
+  "extends": "_base",
+  "parties": ["作者叙述", "系统设定", "角色自述", "矫正者", "旁观者"],
   "party_bucket": {
     "作者叙述": "作者叙述",
     "系统任务": "系统设定",

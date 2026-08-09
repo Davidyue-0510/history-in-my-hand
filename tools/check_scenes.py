@@ -7,7 +7,8 @@ lint 守的是单文件内字段格式；本工具守的是「引用存在性」
   * 断言引用的 source id 是否真的在该场景 sources.json 里（孤儿源 → 静默不计入共振）
   * 断言 subject 为 event:<id> 时，裸 id 是否在该场景 events.json 里（事件孤儿 → 该断言在事件层不可见，lesson #14）
   * 断言带 place 时，place id 是否在该场景 places.json 里
-  * 断言来源若带 faction，faction id 是否在 vocab.factions（lesson #13 派系 id 拼错静默归错组）
+  * 断言来源若带 faction，faction id 是否在该场景语境包的 factions（lesson #13 派系 id 拼错静默归错组）
+  * 场景声明的 vocab_pack / terrain_grid 是否真的存在（声明了不存在的包 = 构建时静默回退）
   * 存在 data/<dir>/ 但不在注册表里的孤儿目录（忘记注册即上线）
 
 退出码：0 = 无 ERROR（WARNING 也算过，但会打印）；1 = 有 ERROR。
@@ -19,6 +20,9 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
 
 
 def _load(p):
@@ -47,14 +51,27 @@ def main():
             warns.append("场景 %r 在 scenes 字典但不在 order（不影响构建，但枢纽顺序缺失）" % k)
 
     # 2) 注册表 → 文件系统
-    vocab = _load(os.path.join(DATA, "vocab.json")) or {}
-    factions = set((vocab.get("factions") or {}).keys())
+    # v0.22：faction 受控词表不再是全局单例，按各场景自己的语境包判。
+    # 同一个 faction id 在明清包里合法，在唐代包里就该报错——这正是分包的意义。
+    def _factions_of(sid, sc):
+        try:
+            _pid, _v = VL.resolve_for_scene(sid, sc)
+            return set((_v.get("factions") or {}).keys()), _pid
+        except Exception as e:
+            errors.append("场景 %r 的语境包加载失败：%s" % (sid, e))
+            return set(), "?"
 
     for sid, sc in scenes.items():
         d = os.path.join(DATA, sc.get("dir", sid))
         if not os.path.isdir(d):
             errors.append("场景 %r 注册了但 data/%s/ 目录不存在" % (sid, sc.get("dir", sid)))
             continue
+        scene_factions, scene_pack = _factions_of(sid, sc)
+        # 声明了却不存在的语境包 = 构建时静默回退到默认包，数据看着正常、分桶全错
+        declared = sc.get("vocab_pack")
+        if declared and declared not in VL.list_packs():
+            errors.append("场景 %r 声明 vocab_pack=%r，但 data/vocab/%s.json 不存在（会静默回退默认包）"
+                          % (sid, declared, declared))
         src = _load(os.path.join(d, "sources.json")) or {}
         src_ids = {s.get("id") for s in src.get("sources", [])}
         ev = _load(os.path.join(d, "events.json")) or {}
@@ -108,9 +125,9 @@ def main():
                 # 派系 id 合法
                 # faction 来自 source，这里复核 source 的 faction 是否合法
                 sdef = next((s for s in src.get("sources", []) if s.get("id") == a.get("source")), None)
-                if sdef and sdef.get("faction") and sdef["faction"] not in factions:
-                    errors.append("场景 %r 源 %r 的 faction %r 不在 vocab.factions（静默归错组）"
-                                  % (sid, a.get("source"), sdef["faction"]))
+                if sdef and sdef.get("faction") and sdef["faction"] not in scene_factions:
+                    errors.append("场景 %r 源 %r 的 faction %r 不在语境包 %s 的 factions（静默归错组）"
+                                  % (sid, a.get("source"), sdef["faction"], scene_pack))
 
     # 3) 文件系统 → 注册表（孤儿目录）
     for name in os.listdir(DATA):

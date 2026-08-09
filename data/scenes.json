@@ -14,8 +14,12 @@
     "page": "由 build.py 自动填充；battle → <key>.html，county → county.html?scene=<key>。手工指定可覆盖。",
     "extra_files": "该切片额外的 data/<dir>/*.json，会被读入 bundle。events / edges 是县级切片的标配。",
     "region": "地理分区，用于 hub 分组。辽北 / 辽东 / 辽南 / 辽西 / 关外女真。",
+    "vocab_pack": "该切片使用哪个语境包（data/vocab/<pack>.json）。缺省 = 顶层 default_vocab_pack。若 data/<dir>/vocab.json 存在（虚构世界），内联包优先级最高，本字段被忽略。",
+    "terrain_grid": "该切片使用哪张高程网格（data/terrain/registry.json 的条目 id）。缺省 = 该注册表的 default。虚构世界与网格外切片忽略此字段。",
     "lead / parties_note / subject_names": "过去写在 demo/<key>.js 里，现已归拢到此处，随 meta 注入前端。"
   },
+  "_vocab_note": "v0.22 起受控词表按语境分包（data/vocab/），不再是全局单例。原因：party_bucket 里的『建州·官修』『朝鲜·亲历』与 factions 里的东林/阉党只在明清辽东语境成立，做唐代切片时套用它是错的。加载一律经 tools/vocab_loader.py——那是唯一入口，直接读文件的代码视为回退。",
+  "default_vocab_pack": "ming_qing",
   "regions": [
     {
       "id": "liaobei",

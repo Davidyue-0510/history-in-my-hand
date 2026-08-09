@@ -21,6 +21,9 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
+
 
 def _load(p):
     try:
@@ -35,8 +38,9 @@ def main():
     scenes = reg.get("scenes", {})
     order = reg.get("order", list(scenes.keys()))
 
-    vocab = _load(os.path.join(DATA, "vocab.json")) or {}
+    vocab = VL.load_default()
     factions_total = len(vocab.get("factions") or {})
+    vocab_packs = VL.list_packs()
 
     leads = _load(os.path.join(DATA, "leads.json")) or {}
     leads_total = len(leads.get("leads", []))
@@ -103,6 +107,8 @@ def main():
         "assertions_total": assertions_total,
         "sources_total": len(source_ids),
         "factions_total": factions_total,
+        "vocab_packs": vocab_packs,
+        "default_vocab_pack": VL.default_pack_id(),
         "leads_total": leads_total,
         "per_scene": per_scene,
         "scene_titles": scene_titles,

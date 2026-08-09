@@ -63,17 +63,18 @@
       "title": "明通鉴",
       "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
       "compiler": "夏燮（清）",
-      "compiled_year": 1872,
+      "compiled_year": 1873,
       "stance": "private_synthesis",
       "stance_label": "私修编年·综合",
-      "distance_label": "成书清同治间，距事约250年，综合实录奏议",
+      "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
       "party": "二手综述",
       "color": "#6C7A89",
       "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",
       "faction": null,
       "availability": "fetched",
       "url": "https://zh.wikisource.org/wiki/%E6%98%8E%E9%80%9A%E9%91%91/%E5%8D%B7080",
-      "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。"
+      "cached_text": "已抓卷080（万历四十七年·萨尔浒）与卷082（天启二年·广宁）原文到 .tmp/mingtongjian_080.txt / _082.txt。",
+      "period": "晚清"
     }
   ]
 }

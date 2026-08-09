@@ -36,15 +36,34 @@ import reign_era as R
 DATA = os.path.join(ROOT, "data")
 
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import vocab_loader as VL  # noqa: E402
+
+
 def _load_vocab():
+    """默认语境包。跨场景查询时具体某条断言按其所属切片的包派生（见 _bucket_for）。"""
     try:
-        return json.load(open(os.path.join(DATA, "vocab.json"), encoding="utf-8"))
+        return VL.load_default()
     except Exception:
         return {}
 
 
 VOCAB = _load_vocab()
 PARTY_BUCKET = VOCAB.get("party_bucket", {}) or {}
+
+
+def _bucket_for(scene_id, party):
+    """按该切片自己的语境包派生宏观桶。
+
+    跨场景查询天然是多语境的——一次 --party 查询可能同时命中明清切片与虚构世界，
+    用一张全局表查会把「作者叙述」这类内联桶算丢。"""
+    if scene_id:
+        try:
+            _pid, v = VL.resolve_for_dir(scene_id)
+            return (v.get("party_bucket") or {}).get(party, party)
+        except Exception:
+            pass
+    return PARTY_BUCKET.get(party, party)
 FACTIONS = VOCAB.get("factions", {}) or {}
 
 
@@ -88,7 +107,7 @@ def _load_assertions(scene_id, scene, src_by_id):
             a["_scene"] = scene_id
             src = src_by_id.get(a.get("source"))
             if src:
-                a["_party"] = PARTY_BUCKET.get(src.get("party"), src.get("party"))
+                a["_party"] = _bucket_for(a.get("_scene"), src.get("party"))
                 a["_faction"] = src.get("faction")
             else:
                 a["_party"] = None

@@ -1,0 +1,28 @@
+{
+  "_comment": "基础语境包：跨朝代、跨世界通用的词表维度。层级（layer）与引文可信度（quote_status）不随时代变化——唐代史料与晚明史料同样有『记载/考订/推演/缺口』四层，同样有『逐字/意译未核/推演』三种引文状态。因此它们放在 _base，由所有语境包 extends 继承，避免每个朝代包重复一遍。",
+  "_schema_version": "0.2",
+  "_role": "base",
+  "extends": null,
+  "layers": [
+    "record",
+    "scholarship",
+    "inference",
+    "gap"
+  ],
+  "_layer_notes": {
+    "record": "史料原始记载。必须能指到具体典籍与卷次。",
+    "scholarship": "现代学界考订结论。",
+    "inference": "本项目基于地形/距离/兵额模型推算出的值。必须可复现（工具在 tools/ 下）。",
+    "gap": "已知的空白。缺口是一等公民——它出现在界面上，不是被静默省略。"
+  },
+  "quote_status": [
+    "verbatim",
+    "paraphrase_unverified",
+    "generated"
+  ],
+  "_quote_status_notes": {
+    "verbatim": "逐字引自点校本，可直接加书名号呈现。",
+    "paraphrase_unverified": "意译或转述，未与点校本逐字核对。界面以〔意译未核〕黄底斜体标出。",
+    "generated": "由本项目模型或推演生成的表述，非史料原文。界面以〔推演〕标出。"
+  }
+}
