@@ -20629,6 +20629,21 @@ window.SANDBOX_DATA = {
      "compiler": "清实录馆",
      "period": "天聪/崇德",
      "stance": "official_enemy"
+    },
+    {
+     "id": "mingtongjian",
+     "title": "明通鉴（夏燮·编年体）",
+     "party": "二手综述",
+     "stance_label": "近代考异编年",
+     "distance_label": "成书清咸丰，综合诸家考异",
+     "color": "#5C6B7A",
+     "compiler": "夏燮",
+     "period": "近代",
+     "stance": "synthesis",
+     "faction": null,
+     "availability": "fetched",
+     "url": "https://zh.wikisource.org/wiki/明通鑑/卷091",
+     "cached_text": "已抓卷091（崇祯十四—十五年·松锦：洪承畴会八镇兵于宁远、张若麒/陈新甲促战、杨国柱败没、王朴先遁诸镇溃、松山被围）、卷092（松山克、洪承畴降、祖大寿以锦州降、松山失事论罪吴三桂逃而不问）。"
     }
    ],
    "places": [
@@ -20839,6 +20854,126 @@ window.SANDBOX_DATA = {
       "effort": "2-3 周"
      },
      "_party": "清修官史",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ01",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "洪承畴集结援锦",
+     "value_text": "崇祯十四年，蓟辽总督洪承畴会八镇兵于宁远，合曹变蛟、吴三桂等八总兵军十三万、马四万，并集宁远",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十四年",
+     "place": "ningyuan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "蓟辽总督洪承畴会八镇兵于宁远……合曹变蛟、白广恩、马科、吴三桂、王廷臣八总兵军十三万，马四万，并集宁远。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ02",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "朝廷促战致决战",
+     "value_text": "崇祯十五年七月，职方郎中张若麒密奏、兵部尚书陈新甲贻书趣进兵，洪承畴不得已统兵救锦，驻师松山——中枢促战与疆臣持重之争",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "张若麒诣军中，见诸镇兵大集，围可立解，密奏上闻，而陈新甲复贻书趣进兵，承畴不得已，及与邱民仰、曹变蛟统兵救锦。是日，驻师松山。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ03",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "杨国柱败没",
+     "value_text": "崇祯十五年八月乙巳，宣府总兵杨国柱先进败绩，陷伏中矢死",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "宣府总兵官杨国柱败绩，死之。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ04",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "王朴先遁诸镇溃",
+     "value_text": "崇祯十五年八月，太宗亲率大军环松山；甲子夜大同总兵王朴先遁，吴三桂等诸镇兵皆溃，塔山、高桥伏歼其众",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "甲子夜，大同总兵王朴先遁，总兵马科、李辅明及宁远总兵吴三桂、密云总兵唐通、辽东总兵白广恩相继走，诸镇兵皆溃。大清遣兵邀之塔山。丙寅，朴、三桂率残卒自杏山遁，遇大清兵于高桥，伏四起，尽歼其众，二人仅以身免。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ05",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "松锦兵力折损",
+     "value_text": "是役洪承畴所统士卒十三万，先后失亡五万余人；自是锦州围益急，松山被围，外援亦绝",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "承畴所统士卒十三万，先后失亡五万余人，自是锦州围益急，而松山被围，外援亦绝。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ06",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "松山陷洪承畴降",
+     "value_text": "崇祯十五年戊午，大清克松山（副将夏成德内应），巡抚邱民仰、总兵曹变蛟、王廷臣等死之；洪承畴被执，遂降于大清",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "songshan",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "大清兵克松山……城遂下，巡抚邱民仰及总兵官曹变蛟、王廷臣……皆死之。承畴及祖大乐被执……承畴遂降于大清。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ07",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "祖大寿以锦州降",
+     "value_text": "崇祯十五年己卯，祖大寿以锦州降于大清——城中粮尽、人相食，战守计穷乞降",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "jinzhou_cheng",
+     "confidence": 0.9,
+     "quote_status": "paraphrase_unverified",
+     "quote": "祖大寿以锦州降于大清……锦州城中粮亦尽，人相食。大寿战守计穷，遣人投军门乞降，大清遂下锦州。",
+     "_party": "二手综述",
+     "_faction": null
+    },
+    {
+     "id": "MT_JZ08",
+     "subject": "event:jinzhou_songjin",
+     "predicate": "松山失事论罪不公",
+     "value_text": "松山失事论罪：王朴先逃独斩，吴三桂不战而逃反加提督衔——六镇罪同而罚异，御史郝晋劾『三桂实辽左主将，不战而逃，奈何反加提督』（派系互保之显例）",
+     "source": "mingtongjian",
+     "layer": "record",
+     "era": "崇祯十五年",
+     "place": "shanhaiguan",
+     "confidence": 0.85,
+     "quote_status": "paraphrase_unverified",
+     "quote": "时论松山失事，以朴先逃，下法司会鞫拟罪，而吴三桂仍镇山海，加提督衔，置不问。御史郝晋言：『六镇罪同，皆宜死。三桂实辽左主将，不战而逃，奈何反加提督！』",
+     "_party": "二手综述",
      "_faction": null
     }
    ],
@@ -26996,9 +27131,9 @@ window.SANDBOX_DATA = {
    {
     "scene": "jinzhou",
     "name": "jinzhou",
-    "total": 7,
+    "total": 15,
     "layers": {
-     "record": 4,
+     "record": 12,
      "scholarship": 1,
      "gap": 2
     },
@@ -27006,13 +27141,13 @@ window.SANDBOX_DATA = {
      "清方": 3,
      "明方": 2,
      "朝鲜": 1,
-     "综述考订": 1
+     "综述考订": 9
     },
     "faction_counts": {},
     "event_count": 2,
-    "avg_resonance": 0.567,
+    "avg_resonance": 0.628,
     "best_event": "event:jinzhou_songjin",
-    "best_resonance": 0.8
+    "best_resonance": 0.923
    },
    {
     "scene": "jinzhouwei",
@@ -29600,79 +29735,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:jinzhou_songjin",
-    "name": "event:jinzhou_songjin",
-    "scenes": [
-     "jinzhou"
-    ],
-    "scene_names": [
-     "jinzhou"
-    ],
-    "total": 5,
-    "gap_count": 1,
-    "coverage": "3/3",
-    "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.2,
-    "resonance": 0.8,
-    "party_counts": {
-     "明方": 2,
-     "清方": 1,
-     "朝鲜": 1,
-     "综述考订": 1
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "J002",
-       "predicate": "清围锦州",
-       "value_text": "崇祯十四年 (1641), 清军围锦州, 祖大寿被围于城",
-       "source": "chongzhen_shilu",
-       "layer": "record",
-       "scene": "jinzhou"
-      },
-      {
-       "id": "J010",
-       "predicate": "明军总兵力",
-       "value_text": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
-       "source": "chongzhen_shilu",
-       "layer": "gap",
-       "scene": "jinzhou"
-      }
-     ],
-     "清方": [
-      {
-       "id": "J003",
-       "predicate": "松锦决战结果",
-       "value_text": "崇祯十五年 (1642) 松山决战, 洪承畴兵败被俘, 祖大寿以锦州降, 明辽西机动兵力丧尽",
-       "source": "qing_taizong_shilu",
-       "layer": "record",
-       "scene": "jinzhou"
-      }
-     ],
-     "朝鲜": [
-      {
-       "id": "J004",
-       "predicate": "朝鲜视角",
-       "value_text": "朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西",
-       "source": "chao_xiandai",
-       "layer": "record",
-       "scene": "jinzhou"
-      }
-     ],
-     "综述考订": [
-      {
-       "id": "J005",
-       "predicate": "战略后果",
-       "value_text": "学界主流：松锦之败使明丧失辽西全部机动兵力, 清军自此直叩山海关, 入关只是时间问题",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "jinzhou"
-      }
-     ]
-    }
-   },
-   {
     "subject": "event:kaifa",
     "name": "开铁之战（开原陷落）",
     "scenes": [
@@ -29998,6 +30060,143 @@ window.SANDBOX_DATA = {
        "source": "mingtongjian",
        "layer": "record",
        "scene": "shenyang"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:jinzhou_songjin",
+    "name": "event:jinzhou_songjin",
+    "scenes": [
+     "jinzhou"
+    ],
+    "scene_names": [
+     "jinzhou"
+    ],
+    "total": 13,
+    "gap_count": 1,
+    "coverage": "3/3",
+    "coverage_frac": 1.0,
+    "divergence": 0.0,
+    "gap_rate": 0.077,
+    "resonance": 0.923,
+    "party_counts": {
+     "明方": 2,
+     "清方": 1,
+     "朝鲜": 1,
+     "综述考订": 9
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "J002",
+       "predicate": "清围锦州",
+       "value_text": "崇祯十四年 (1641), 清军围锦州, 祖大寿被围于城",
+       "source": "chongzhen_shilu",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "J010",
+       "predicate": "明军总兵力",
+       "value_text": "松锦之战明军总兵力, 记载有 8 万 / 13 万 等异说, 未见统一核定",
+       "source": "chongzhen_shilu",
+       "layer": "gap",
+       "scene": "jinzhou"
+      }
+     ],
+     "清方": [
+      {
+       "id": "J003",
+       "predicate": "松锦决战结果",
+       "value_text": "崇祯十五年 (1642) 松山决战, 洪承畴兵败被俘, 祖大寿以锦州降, 明辽西机动兵力丧尽",
+       "source": "qing_taizong_shilu",
+       "layer": "record",
+       "scene": "jinzhou"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "J004",
+       "predicate": "朝鲜视角",
+       "value_text": "朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西",
+       "source": "chao_xiandai",
+       "layer": "record",
+       "scene": "jinzhou"
+      }
+     ],
+     "综述考订": [
+      {
+       "id": "J005",
+       "predicate": "战略后果",
+       "value_text": "学界主流：松锦之败使明丧失辽西全部机动兵力, 清军自此直叩山海关, 入关只是时间问题",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ01",
+       "predicate": "洪承畴集结援锦",
+       "value_text": "崇祯十四年，蓟辽总督洪承畴会八镇兵于宁远，合曹变蛟、吴三桂等八总兵军十三万、马四万，并集宁远",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ02",
+       "predicate": "朝廷促战致决战",
+       "value_text": "崇祯十五年七月，职方郎中张若麒密奏、兵部尚书陈新甲贻书趣进兵，洪承畴不得已统兵救锦，驻师松山——中枢促战与疆臣持重之争",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ03",
+       "predicate": "杨国柱败没",
+       "value_text": "崇祯十五年八月乙巳，宣府总兵杨国柱先进败绩，陷伏中矢死",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ04",
+       "predicate": "王朴先遁诸镇溃",
+       "value_text": "崇祯十五年八月，太宗亲率大军环松山；甲子夜大同总兵王朴先遁，吴三桂等诸镇兵皆溃，塔山、高桥伏歼其众",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ05",
+       "predicate": "松锦兵力折损",
+       "value_text": "是役洪承畴所统士卒十三万，先后失亡五万余人；自是锦州围益急，松山被围，外援亦绝",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ06",
+       "predicate": "松山陷洪承畴降",
+       "value_text": "崇祯十五年戊午，大清克松山（副将夏成德内应），巡抚邱民仰、总兵曹变蛟、王廷臣等死之；洪承畴被执，遂降于大清",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ07",
+       "predicate": "祖大寿以锦州降",
+       "value_text": "崇祯十五年己卯，祖大寿以锦州降于大清——城中粮尽、人相食，战守计穷乞降",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
+      },
+      {
+       "id": "MT_JZ08",
+       "predicate": "松山失事论罪不公",
+       "value_text": "松山失事论罪：王朴先逃独斩，吴三桂不战而逃反加提督衔——六镇罪同而罚异，御史郝晋劾『三桂实辽左主将，不战而逃，奈何反加提督』（派系互保之显例）",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "jinzhou"
       }
      ]
     }

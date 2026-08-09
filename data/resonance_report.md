@@ -17,7 +17,7 @@
 | gaizhou | 6 | 2 | **0.389** | event:gaizhou_fall（0.444） | gap 2 / record 3 / scholarship 1 |
 | guangning | 31 | 3 | **0.489** | event:guangning_fall（0.800） | gap 2 / record 28 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
-| jinzhou | 7 | 2 | **0.567** | event:jinzhou_songjin（0.800） | gap 2 / record 4 / scholarship 1 |
+| jinzhou | 15 | 2 | **0.628** | event:jinzhou_songjin（0.923） | gap 2 / record 12 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | 辽阳 | 53 | 2 | **0.412** | 辽阳陷落（1621）（0.491） | gap 3 / inference 1 / record 41 / scholarship 8 |
@@ -80,9 +80,9 @@
 | 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
 | event:guangning_fall | guangning | **0.800** | 3/3 | 0.00 | 0.20 | 10 | 2 / 2 / 1 / 5 |
-| event:jinzhou_songjin | jinzhou | **0.800** | 3/3 | 0.00 | 0.20 | 5 | 2 / 1 / 1 / 1 |
 | 开铁之战（开原陷落） | 开原 | **0.818** | 3/3 | 0.00 | 0.18 | 11 | 4 / 2 / 1 / 4 |
 | event:shenyang_relief | shenyang | **0.909** | 3/3 | 0.00 | 0.09 | 22 | 11 / 5 / 2 / 4 |
+| event:jinzhou_songjin | jinzhou | **0.923** | 3/3 | 0.00 | 0.08 | 13 | 2 / 1 / 1 / 9 |
 
 ## 解读
 
