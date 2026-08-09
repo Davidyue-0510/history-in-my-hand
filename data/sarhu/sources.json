@@ -92,6 +92,32 @@
       "party": "清修官史",
       "color": "#3D6B4F",
       "note": "清官修开国史，萨尔浒叙述以天命纪年。与《清太祖实录》同源但成书更晚，对后金行军序列记载详尽，兵力数字系统性夸大明军以彰显战功。ingest.py fixture 模式抽出的 7 条断言（IN001–IN007）即源自此卷。"
+    },
+    {
+      "id": "guanghaijun_rilu",
+      "title": "朝鲜王朝实录·光海君日记",
+      "juan": "卷十一（己未，万历四十七年，萨尔浒之战）",
+      "compiler": "朝鲜承政院史官",
+      "compiled_year": 1620,
+      "stance": "third_party_official",
+      "stance_label": "第三方·官方实录",
+      "distance_label": "当代编年，朝鲜官方记录",
+      "party": "朝鲜官方",
+      "color": "#4A6FA5",
+      "note": "朝鲜王朝实录记载萨尔浒之战中朝鲜军东路（姜弘立）亲历，不受明清叙事约束，价值在第三方视角。"
+    },
+    {
+      "id": "sanchaoliao_shilu",
+      "title": "三朝辽事实录",
+      "juan": "卷四（沈阳/辽阳）",
+      "compiler": "王在晋",
+      "compiled_year": 1630,
+      "stance": "private",
+      "stance_label": "明方私修·亲历",
+      "distance_label": "经略辽东者事后追记，距事约10年",
+      "party": "明·私修",
+      "color": "#8B6BA8",
+      "note": "王在晋以经略辽东之身记辽事，沈阳破、辽阳围急、浑河之战明方视角，常存实录不载之异说。"
     }
   ]
 }

@@ -540,6 +540,22 @@
    "_src_line": 46
   },
   {
+   "id": "SX012_M3",
+   "scene": "sarhu",
+   "subject": "event:sarhu_battle",
+   "title": "号称四十七万 vs 实录二十万 vs 实数八万八千",
+   "missing": "史料考据 / 数字校勘",
+   "where": "sarhu_battle_force_discrepancy",
+   "skills": [
+    "史料考据",
+    "数字校勘"
+   ],
+   "accept": "厘清明军实际出兵人数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 108
+  },
+  {
    "id": "SX015",
    "scene": "sarhu",
    "subject": "war:sarhu",
@@ -652,6 +668,22 @@
    "effort": "1-2 周",
    "issue_url": null,
    "_src_line": 23
+  },
+  {
+   "id": "SX012_M2",
+   "scene": "shenyang",
+   "subject": "event:shenyang_relief",
+   "title": "贼数万 vs 明军诸营",
+   "missing": "明清战争 / 史料考据",
+   "where": "sanchaoliao_shilu 卷四",
+   "skills": [
+    "明清战争",
+    "史料考据"
+   ],
+   "accept": "补充明军参战兵力总数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 48
   },
   {
    "id": "T016",

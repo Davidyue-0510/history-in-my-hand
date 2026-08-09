@@ -69,6 +69,22 @@
       "role": "副总兵",
       "side": "ming",
       "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡"
+    },
+    {
+      "id": "zhangquan",
+      "name": "张铨",
+      "side": "ming",
+      "role_hint": "巡按辽东御史",
+      "column": null,
+      "note": "上疏论辽阳围急，辽阳陷后殉节"
+    },
+    {
+      "id": "chence",
+      "name": "陈策",
+      "side": "ming",
+      "role_hint": "总兵（援沈阳）",
+      "column": null,
+      "note": "1621 援沈阳，浑河之战战死；辽阳围急时在城"
     }
   ]
 }

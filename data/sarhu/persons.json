@@ -2,28 +2,183 @@
   "_comment": "人物实体。注意：实体本身只保留几乎不随时间变化的识别信息，职衔、结局、兵力等一律作为断言存放在 assertions.jsonl 中。",
   "_schema_version": "0.1",
   "persons": [
-    { "id": "yanggao",    "name": "杨镐",   "side": "ming",   "role_hint": "辽东经略",       "column": null,    "note": "四路总调度，战后下狱，崇祯二年伏诛" },
-    { "id": "dusong",     "name": "杜松",   "side": "ming",   "role_hint": "山海关总兵",     "column": "west",  "note": "西路主将，绰号杜疯子，以勇著称" },
-    { "id": "wangxuan",   "name": "王宣",   "side": "ming",   "role_hint": "保定总兵",       "column": "west",  "note": "西路副将" },
-    { "id": "zhaomenglin","name": "赵梦麟", "side": "ming",   "role_hint": "原任总兵",       "column": "west",  "note": "西路副将" },
-    { "id": "malin",      "name": "马林",   "side": "ming",   "role_hint": "开原总兵",       "column": "north", "note": "北路主将，名将马芳之子，文士气重" },
-    { "id": "panzongyan", "name": "潘宗颜", "side": "ming",   "role_hint": "开原道佥事",     "column": "north", "note": "北路，斐芬山力战死" },
-    { "id": "gongnian",   "name": "龚念遂", "side": "ming",   "role_hint": "游击",           "column": "north", "note": "北路，掌辎重车营" },
-    { "id": "liruobai",   "name": "李如柏", "side": "ming",   "role_hint": "辽东总兵",       "column": "south", "note": "李成梁之子，南路主将，行动迟缓，战后自尽" },
-    { "id": "liuting",    "name": "刘綎",   "side": "ming",   "role_hint": "辽阳总兵",       "column": "east",  "note": "东路主将，号刘大刀，宿将，阿布达里岗战死" },
-    { "id": "qiaoyilang", "name": "乔一琦", "side": "ming",   "role_hint": "监军道",         "column": "east",  "note": "东路，联络朝鲜军，兵败自尽" },
-    { "id": "kanghonglip","name": "姜弘立", "side": "joseon", "role_hint": "朝鲜五道都元帅", "column": "east",  "note": "朝鲜援军统帅，富察之野降后金" },
-    { "id": "kimkyungsuh","name": "金景瑞", "side": "joseon", "role_hint": "平安兵使",       "column": "east",  "note": "朝鲜副元帅" },
-    { "id": "liminhwan",  "name": "李民寏", "side": "joseon", "role_hint": "从事官",         "column": "east",  "note": "《栅中日录》作者，被俘后记其所历" },
-    { "id": "nurhaci",    "name": "努尔哈赤","side": "jin",   "role_hint": "后金大汗",       "column": null,    "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针" },
-    { "id": "daishan",    "name": "代善",   "side": "jin",    "role_hint": "大贝勒",         "column": null,    "note": "参与吉林崖、尚间崖、阿布达里岗诸战" },
-    { "id": "huangtaiji", "name": "皇太极", "side": "jin",    "role_hint": "四贝勒",         "column": null,    "note": "参与诸战" },
-    { "id": "eyidu",      "name": "额亦都", "side": "jin",    "role_hint": "五大臣",         "column": null,    "note": "后金重臣" }
+    {
+      "id": "yanggao",
+      "name": "杨镐",
+      "side": "ming",
+      "role_hint": "辽东经略",
+      "column": null,
+      "note": "四路总调度，战后下狱，崇祯二年伏诛"
+    },
+    {
+      "id": "dusong",
+      "name": "杜松",
+      "side": "ming",
+      "role_hint": "山海关总兵",
+      "column": "west",
+      "note": "西路主将，绰号杜疯子，以勇著称"
+    },
+    {
+      "id": "wangxuan",
+      "name": "王宣",
+      "side": "ming",
+      "role_hint": "保定总兵",
+      "column": "west",
+      "note": "西路副将"
+    },
+    {
+      "id": "zhaomenglin",
+      "name": "赵梦麟",
+      "side": "ming",
+      "role_hint": "原任总兵",
+      "column": "west",
+      "note": "西路副将"
+    },
+    {
+      "id": "malin",
+      "name": "马林",
+      "side": "ming",
+      "role_hint": "开原总兵",
+      "column": "north",
+      "note": "北路主将，名将马芳之子，文士气重"
+    },
+    {
+      "id": "panzongyan",
+      "name": "潘宗颜",
+      "side": "ming",
+      "role_hint": "开原道佥事",
+      "column": "north",
+      "note": "北路，斐芬山力战死"
+    },
+    {
+      "id": "gongnian",
+      "name": "龚念遂",
+      "side": "ming",
+      "role_hint": "游击",
+      "column": "north",
+      "note": "北路，掌辎重车营"
+    },
+    {
+      "id": "liruobai",
+      "name": "李如柏",
+      "side": "ming",
+      "role_hint": "辽东总兵",
+      "column": "south",
+      "note": "李成梁之子，南路主将，行动迟缓，战后自尽"
+    },
+    {
+      "id": "liuting",
+      "name": "刘綎",
+      "side": "ming",
+      "role_hint": "辽阳总兵",
+      "column": "east",
+      "note": "东路主将，号刘大刀，宿将，阿布达里岗战死"
+    },
+    {
+      "id": "qiaoyilang",
+      "name": "乔一琦",
+      "side": "ming",
+      "role_hint": "监军道",
+      "column": "east",
+      "note": "东路，联络朝鲜军，兵败自尽"
+    },
+    {
+      "id": "kanghonglip",
+      "name": "姜弘立",
+      "side": "joseon",
+      "role_hint": "朝鲜五道都元帅",
+      "column": "east",
+      "note": "朝鲜援军统帅，富察之野降后金"
+    },
+    {
+      "id": "kimkyungsuh",
+      "name": "金景瑞",
+      "side": "joseon",
+      "role_hint": "平安兵使",
+      "column": "east",
+      "note": "朝鲜副元帅"
+    },
+    {
+      "id": "liminhwan",
+      "name": "李民寏",
+      "side": "joseon",
+      "role_hint": "从事官",
+      "column": "east",
+      "note": "《栅中日录》作者，被俘后记其所历"
+    },
+    {
+      "id": "nurhaci",
+      "name": "努尔哈赤",
+      "side": "jin",
+      "role_hint": "后金大汗",
+      "column": null,
+      "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针"
+    },
+    {
+      "id": "daishan",
+      "name": "代善",
+      "side": "jin",
+      "role_hint": "大贝勒",
+      "column": null,
+      "note": "参与吉林崖、尚间崖、阿布达里岗诸战"
+    },
+    {
+      "id": "huangtaiji",
+      "name": "皇太极",
+      "side": "jin",
+      "role_hint": "四贝勒",
+      "column": null,
+      "note": "参与诸战"
+    },
+    {
+      "id": "eyidu",
+      "name": "额亦都",
+      "side": "jin",
+      "role_hint": "五大臣",
+      "column": null,
+      "note": "后金重臣"
+    },
+    {
+      "id": "jinyinghe",
+      "name": "金应河",
+      "side": "joseon",
+      "role_hint": "朝鲜左营将",
+      "column": "east",
+      "note": "深河之战布拒马木力战，称'依柳将'，死之"
+    }
   ],
   "columns": [
-    { "id": "west",  "name": "西路", "commander": "dusong",   "from": "shenyang", "gate": "fushunguan", "color": "#C0392B" },
-    { "id": "north", "name": "北路", "commander": "malin",    "from": "kaiyuan",  "gate": "sanchaer",   "color": "#B7791F" },
-    { "id": "east",  "name": "东路", "commander": "liuting",  "from": "kuandian", "gate": "liangmadian","color": "#2E7D8F" },
-    { "id": "south", "name": "南路", "commander": "liruobai", "from": "qinghe",   "gate": "yahuguan",   "color": "#6B7280" }
+    {
+      "id": "west",
+      "name": "西路",
+      "commander": "dusong",
+      "from": "shenyang",
+      "gate": "fushunguan",
+      "color": "#C0392B"
+    },
+    {
+      "id": "north",
+      "name": "北路",
+      "commander": "malin",
+      "from": "kaiyuan",
+      "gate": "sanchaer",
+      "color": "#B7791F"
+    },
+    {
+      "id": "east",
+      "name": "东路",
+      "commander": "liuting",
+      "from": "kuandian",
+      "gate": "liangmadian",
+      "color": "#2E7D8F"
+    },
+    {
+      "id": "south",
+      "name": "南路",
+      "commander": "liruobai",
+      "from": "qinghe",
+      "gate": "yahuguan",
+      "color": "#6B7280"
+    }
   ]
 }

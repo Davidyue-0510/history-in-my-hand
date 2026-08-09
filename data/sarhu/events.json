@@ -1,0 +1,50 @@
+{
+  "events": [
+    {
+      "id": "ev_sarhu_battle",
+      "era": "明·万历四十七年",
+      "year": 1619,
+      "title": "萨尔浒之战（主战场）",
+      "kind": "战事",
+      "text": "万历四十七年（1619）三月初一，后金努尔哈赤以「凭尔几路来，我只一路去」之策，集中兵力各个击破明军四路。西路杜松全军覆没于萨尔浒，北路马林败于尚间崖，东路刘綎殁于阿布达里岗，南路李如柏闻败退走。",
+      "subject": "event:sarhu_battle"
+    },
+    {
+      "id": "ev_dusong_cross",
+      "era": "明·万历四十七年",
+      "year": 1619,
+      "title": "杜松渡浑河（西路）",
+      "kind": "战事",
+      "text": "西路主将杜松强渡浑河，弃辎重轻进，遭后金决水与伏击，全军败没。",
+      "subject": "event:dusong_cross"
+    },
+    {
+      "id": "ev_shangjianya",
+      "era": "明·万历四十七年",
+      "year": 1619,
+      "title": "尚间崖（北路·马林）",
+      "kind": "战事",
+      "text": "北路马林驻尚间崖，因杜松败没士气受挫，遭后金攻击溃退。",
+      "subject": "event:shangjianya"
+    },
+    {
+      "id": "ev_abudaligang",
+      "era": "明·万历四十七年",
+      "year": 1619,
+      "title": "阿布达里岗（东路·刘綎）",
+      "kind": "战事",
+      "text": "东路刘綎行军迟缓，被后金诱敌深入，战死于阿布达里岗。朝鲜援军随之溃降。",
+      "subject": "event:abudaligang"
+    },
+    {
+      "id": "ev_south_retreat",
+      "era": "明·万历四十七年",
+      "year": 1619,
+      "title": "南路溃逃（李如柏）",
+      "kind": "战事",
+      "text": "南路李如柏行动迟缓，闻三路败，撤兵而还，未接战。",
+      "subject": "event:south_retreat"
+    }
+  ],
+  "_comment_subject": "subject 字段把时间轴事件与断言的 subject 命名空间接上：点时间轴上带 subject 的事件，右侧三方史料面板即切到该事件。没有 subject 的事件是纯沿革标记，不承载断言。"
+}

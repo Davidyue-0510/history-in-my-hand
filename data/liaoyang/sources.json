@@ -65,6 +65,19 @@
       "compiler": "公众编辑",
       "period": "现代",
       "stance": "tertiary"
+    },
+    {
+      "id": "sanchaoliao_shilu",
+      "title": "三朝辽事实录",
+      "juan": "卷四（沈阳/辽阳）",
+      "compiler": "王在晋",
+      "compiled_year": 1630,
+      "stance": "private",
+      "stance_label": "明方私修·亲历",
+      "distance_label": "经略辽东者事后追记，距事约10年",
+      "party": "明·私修",
+      "color": "#8B6BA8",
+      "note": "王在晋记辽阳围急、袁应泰殉城之明方视角；张铨疏论辽阳围急。"
     }
   ]
 }
