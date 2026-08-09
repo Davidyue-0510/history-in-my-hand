@@ -727,8 +727,8 @@ body{
   .panel{ width:min(298px, 88vw); }
   .map-hint, .elev-legend{ display:none; }
   .timeline{ height:56px; padding:0 10px; }
-  .tl-cap{ display:none; }
-  .date-era{ font-size:14px; }
+  .tl-header{ font-size:10.5px; }
+  .tl-cap{ font-size:7.5px; }
 }
 /* 矮屏：把纵向固定件压扁，保证地图与时间轴都在 */
 @media (max-height:720px){
@@ -736,18 +736,15 @@ body{
   .scrim, .panel{ top:46px; }
   .stage-head{ padding:6px 16px 5px; }
   .date-era{ font-size:14px; }
-  .timeline{ height:54px; }
-  .tl-track{ height:38px; }
-  .tl-track::before{ top:13px; }
-  .tl-dot{ margin-top:9px; }
-  .tl-node.key .tl-dot{ margin-top:8px; }
-  .tl-node.now .tl-dot{ margin-top:7px; }
+  .timeline{ height:52px; }
+  .tl-track{ height:34px; }
+  .tl-header{ font-size:10.5px; padding-top:0; }
 }
 @media (max-height:600px){
-  .tl-cap{ display:none; }
   .timeline{ height:42px; }
-  .tl-track{ height:26px; }
-  .tl-track::before{ top:13px; }
+  .tl-track{ height:22px; }
+  .tl-header{ font-size:9.5px; }
+  .tl-cap{ font-size:7px; }
 }
 
 /* ── 人物视图 / 地点介绍（Phase 0+1） ── */
