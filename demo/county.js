@@ -663,59 +663,50 @@
     });
   }
 
-  /* ═══════════ 沿革时间轴 + 事件 ═══════════ */
-  /* ═══════════ 统一时间轴（v0.27：合并事件时间轴+控制层滑块） ═══════════ */
-  /* 年号公元尺 */
-  function renderUnifiedTimeline() {
-    var slider = document.getElementById('utSlider');
-    var markers = document.getElementById('tlMarkers');
+  /* ═══════════ 事件时间轴 + 控制层联动（v0.27b） ═══════════ */
+  /* 原版事件圆点轨道 + 点击切事件 → 控制层年份自动跟随到该事件年。
+     控制层 toggle 保留在底栏右侧；legend 随事件年动态生成。 */
+  function renderEventTimeline() {
+    var track = document.getElementById('tlTrack');
     var eraEl = document.getElementById('dateEra');
     var labelEl = document.getElementById('dateLabel');
     var yearEl = document.getElementById('utYear');
-    if (!slider) return;
-
-    // 场景时间窗：优先 control_years（控制层），否则从 events 取
-    var cy = window.ControlLayer && ControlLayer.isReady()
-      ? ControlLayer.years() : null;
+    track.innerHTML = '';
     var evs = D.events || [];
-    if (!cy || cy[0] === cy[1]) {
-      // 无控制层数据 → 退回到纯事件时间轴
-      if (!evs.length) { eraEl.textContent = '—'; labelEl.textContent = '—'; return; }
-      var y0 = evs[0].year || 0; var y1 = evs[evs.length-1].year || y0;
-      cy = [y0, y1];
+    var curYr = state.control.year;
+    if (!evs.length) {
+      eraEl.textContent = '—'; labelEl.textContent = '—'; if (yearEl) yearEl.textContent = '';
+      return;
     }
-    var lo = cy[0], hi = cy[1], range = hi - lo || 1;
-    var yr = state.control.year;
-    if (yr < lo || yr > hi) yr = lo;
+    var n = evs.length;
 
-    // 滑块值 → 实际年
-    var pos = Math.round((yr - lo) / range * 100);
-    slider.min = 0; slider.max = 100; slider.value = pos;
-    yearEl.textContent = String(yr);
-
-    // 事件标记（dot overlays on slider）
-    markers.innerHTML = '';
-    evs.forEach(function (ev) {
-      var ey = ev.year;
-      if (ey == null || ey < lo || ey > hi) return;
-      var pct = ((ey - lo) / range * 100).toFixed(1);
-      var dot = document.createElement('div');
-      dot.className = 'tl-marker' + (ey === yr ? ' now' : '');
-      dot.style.left = pct + '%';
-      dot.title = ev.era + ' ' + ev.title;
-      dot.addEventListener('click', function () {
-        state.control.year = ey;
-        if (state.control.year > hi) state.control.year = hi;
+    evs.forEach(function (ev, i) {
+      var node = document.createElement('div');
+      var cls = 'tl-node'; if (ev.kind === '战事') cls += ' key';
+      if (ev.year === curYr) cls += ' now';
+      node.className = cls;
+      node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
+      if (i === 0) node.style.transform = 'translateX(-14px)';
+      if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
+      node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + ev.era + '</div>';
+      node.title = ev.title;
+      node.addEventListener('click', function () {
+        state.control.year = ev.year || state.control.year;
+        syncTimeline(state.control.year);
         refresh();
       });
-      markers.appendChild(dot);
+      track.appendChild(node);
     });
 
-    // 读显：当前年的事件（如有）
-    var curEv = null;
-    for (var i = 0; i < evs.length; i++) { if (evs[i].year === yr) { curEv = evs[i]; break; } }
-    eraEl.textContent = curEv ? curEv.era : String(yr);
-    labelEl.textContent = curEv ? curEv.title : '';
+    var cur = evs.find(function (ev) { return ev.year === curYr; });
+    if (!cur) {
+      // 选最近的事件
+      var bd = 1e9;
+      evs.forEach(function (ev) { var d = Math.abs((ev.year||0) - curYr); if (d < bd) { bd = d; cur = ev; } });
+    }
+    eraEl.textContent = cur ? cur.era : '—';
+    labelEl.textContent = cur ? cur.title : '';
+    if (yearEl) yearEl.textContent = cur ? String(cur.year) : '';
   }
 
   function syncTimeline(year) {
@@ -725,8 +716,7 @@
       ControlLayer.draw(state.control.year, state.control.scope);
       renderControlLegend();
     }
-    renderUnifiedTimeline();
-    renderEvents();
+    renderEventTimeline();
   }
 
   // 将 state.t 同步到当前 control.year（事件列表高亮 + 页签 都走年份匹配）
@@ -920,7 +910,7 @@
       e.stopPropagation();
       state.factionCompare = !state.factionCompare;
       state.activeFaction = null;
-      renderFactions(); renderParties(); renderUnifiedTimeline(); drawDynamic();
+      renderFactions(); renderParties(); renderEventTimeline(); drawDynamic();
     });
     head.appendChild(toggle);
     box.appendChild(head);
@@ -952,7 +942,7 @@
       clear.addEventListener('click', function (e) {
         e.stopPropagation();
         state.activeFaction = null;
-        renderParties(); renderFactions(); renderUnifiedTimeline(); drawDynamic();
+        renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
       });
       box.appendChild(clear);
     }
@@ -975,7 +965,7 @@
       if (!active) {
         row.addEventListener('click', function () {
           state.activeFaction = fid;
-          renderParties(); renderFactions(); renderUnifiedTimeline(); drawDynamic();
+          renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
         });
       } else {
         // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并
@@ -1587,23 +1577,10 @@
     }
     panel.style.display = '';
     var onBox = document.getElementById('ctrlOn');
-    var slider = document.getElementById('utSlider');
     var playBtn = document.getElementById('ctrlPlay');
     var cy = ControlLayer.years();
-    var lo = cy[0], hi = cy[1];
-    if (state.control.year < lo || state.control.year > hi) state.control.year = lo;
 
-    // 滑块 → 年份映射
-    if (slider) {
-      slider.min = 0; slider.max = 100;
-      slider.value = Math.round((state.control.year - lo) / (hi - lo) * 100);
-      slider.addEventListener('input', function () {
-        var pct = parseInt(slider.value, 10);
-        state.control.year = Math.round(lo + (hi - lo) * pct / 100);
-        syncTimeline(state.control.year);
-        drawControl();
-      });
-    }
+    if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
 
     // 控制层开关
     if (onBox) {
@@ -1628,11 +1605,11 @@
       if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
       state.control.playing = true;
       playBtn.textContent = '❚❚';
+      var lo = cy[0], hi = cy[1];
       if (state.control.year >= hi) state.control.year = lo;
       playBtn._t = setInterval(function () {
         if (state.control.year >= hi) { stopControl(); return; }
         state.control.year++;
-        if (slider) slider.value = Math.round((state.control.year - lo) / (hi - lo) * 100);
         syncTimeline(state.control.year);
         drawControl();
       }, 900);
@@ -1649,7 +1626,7 @@
   function refresh() {
     syncStateT();  // v0.27：事件高亮跟随当前 time year
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
-    renderSiblings(); renderUnifiedTimeline(); drawDynamic(); drawTerrain();
+    renderSiblings(); renderEventTimeline(); drawDynamic(); drawTerrain();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
