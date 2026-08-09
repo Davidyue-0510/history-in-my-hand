@@ -1,0 +1,40 @@
+{
+  "_comment": "一键世界生成 spec 模板。字段说明见下。实际使用时把 _comment 删掉。",
+  "_fields": {
+    "id": "场景 id（目录名 data/<id>/），如 my_scene",
+    "title": "全称，如 万历朝鲜之役·碧蹄馆之战",
+    "dossier_label": "简称，如 碧蹄馆",
+    "subtitle": "时间+地点一句话",
+    "era_hint": "朝代提示，如 明",
+    "vocab_pack": "语境包：ming_qing / tang",
+    "region": "区域：liaodong / imjin / tang / 自定义",
+    "kind": "county",
+    "lead": "切片主旨一句话",
+    "parties_note": "立场说明",
+    "source": "史料元信息",
+    "source_text": "史料原文（或 @path/to/source.txt 从文件读）"
+  },
+  "id": "example_setting",
+  "title": "示例设定·示例战役",
+  "dossier_label": "示例",
+  "subtitle": "某某年（1592）· 某方",
+  "era_hint": "明",
+  "vocab_pack": "ming_qing",
+  "region": "liaodong",
+  "kind": "county",
+  "lead": "",
+  "parties_note": "",
+  "source": {
+    "id": "example_source",
+    "title": "示例史料",
+    "party": "明·私修",
+    "color": "#A0473A",
+    "compiler": "作者名",
+    "period": "明",
+    "stance": "private_synthesis",
+    "stance_label": "私家编纂",
+    "distance_label": "距事约X年",
+    "note": ""
+  },
+  "source_text": "在此填入原始史料文本，或将本字段改为 \"@source.txt\" 指向同目录下的文本文件。"
+}

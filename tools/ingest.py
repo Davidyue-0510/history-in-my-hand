@@ -351,6 +351,299 @@ def append_to_scene(assertions, scene_id):
     return target
 
 
+# ═══════════ 一键世界生成（v0.29） ═══════════
+
+WORLD_PROMPT = r"""你是历史史料结构化抽取器。将从一段原始史料中一次性产出一个新场景的
+全部数据文件：人物、事件、地名、行军路线、断言四层。
+
+【场景元信息】
+- 场景 id: {scene_id}
+- 标题: {title}
+- 副标题: {subtitle}
+- 时代表述: {era_hint}
+- 语境包 parties: {parties}
+
+【断言 id 前缀】
+统一用 {prefix} 开头（如 {prefix}001、{prefix}002 等），保证场景内唯一。
+
+【人物 persons】每人一个对象：
+  "id": "{prefix}_p01",  // 用 {prefix}_p01～{prefix}_p99
+  "name": "中文名",
+  "role": "职务/身份, 如 明提督，日军主将",
+  "note": "一句说明"
+只抽与原文事件直接相关的主要人物（≤8 人）。
+
+【事件 events】每事件一个对象，按原文时间排列：
+  "id": "ev_{scene_id}_01",  // 用 ev_{scene_id}_01～ev_{scene_id}_99
+  "subject": "event:{scene_id}_01",
+  "year": 整数公元年,
+  "era": "年号表述, 如 万历二十一年正月",
+  "title": "简短标题, 如 平壤之战",
+  "kind": "战事/行政/外交/建置/其他",
+  "text": "一句话概述（30字内）"
+只列出原文核心场景的 2–5 个关键事件。
+
+【地名 places】每地一个对象：
+  "id": "slug",  // 英文小写+下划线，如 pyongyang
+  "name": "中文地名",
+  "type": "city/port/yi/fortress/region",
+  "modern": "今中国/朝鲜/日本 xxx",
+  "note": "一句话"
+只抽原文明确出现的地名（≤12 个）。**不要给 lon/lat**（由 geocoder 自动填）。
+
+【行军/关系路线 edges】每边一个对象：
+  "from": 出发地 place_id,
+  "to": 到达地 place_id,
+  "type": "military/reinforcement/battle",
+  "label": "简短说明, 如 明军入援路线"
+只画原文明确描写的路线（≤6 条）。
+
+【断言四层 assertions】每条断言一个 JSON 对象：
+  "id": "{prefix}001",
+  "subject": "person:xxx / event:xxx / place:xxx",
+       // 核心战役断言必须用 event:<事件id>，否则不会被三方共振表统计（静默孤儿）
+  "predicate": "谓词, 如 战役损失 / 明军伤亡 / 退兵理由 / 兵力",
+  "value_text": "精炼陈述（30字内）",
+  "time": {{"era_text": "年号月日原文", "start": 公元日期字符串(YYYY-MM-DD 或 YYYY-MM 或 YYYY)}},
+  "place": "place_id（参考上面的 places）",
+  "source": "{source_id}",
+  "quote": "直接引文（30字内）",
+  "quote_status": "paraphrase_unverified",
+  "layer": "record",  // record/scholarship/inference/gap
+  "confidence": 0.0–1.0,
+  "scale": "theater/empire/province",
+  "note": ""
+要求：10–16 条断言（至少含 1 条 scholarship、1 条 gap）。gap 断言必须含 lead 对象：
+  "lead": {{"where": "...", "skills": ["..."], "accept": "..."}}
+record 层必须给非空 quote。所有正文字段用原文的**繁体**转写（引文严格保留原文用字）。
+
+【立场冲突】如果同一 (subject, predicate) 有不同取值——正是本项目的核心展示目标——务必写出对立断言。
+例如同一战役的伤亡，各方记载不同，就给多条断言，标不���的 value_text 和不同的置信度/note。
+
+【输出格式】只输出一个 JSON 对象（不要 markdown 代码块、不要解释文字）：
+{{"persons":[...], "events":[...], "places":[...], "edges":[...], "assertions":[...]}}
+
+【原始史料】
+{source_text}
+"""
+
+
+def _build_world_prompt(spec):
+    """生成一键世界的 LLM prompt。"""
+    sc = spec.get("id")
+    prefix = (sc[:3].upper() + "_") if len(sc) >= 3 else sc[:2].upper()
+    prefix = "".join(c if c.isalnum() else "_" for c in prefix)
+
+    # 获取语境包 parties
+    pack_id = spec.get("vocab_pack", "ming_qing")
+    parties_str = "明方/清方/朝鲜/综述考订"
+    try:
+        vl_path = os.path.join(ROOT, "data", "vocab", pack_id + ".json")
+        if os.path.exists(vl_path):
+            pkg = json.load(open(vl_path, encoding="utf-8"))
+            parties_str = "、".join(pkg.get("parties", []))
+    except Exception:
+        pass
+
+    return WORLD_PROMPT.format(
+        scene_id=sc,
+        title=spec.get("title", sc),
+        subtitle=spec.get("subtitle", ""),
+        era_hint=spec.get("era_hint", ""),
+        parties=parties_str,
+        prefix=prefix,
+        source_id=spec["source"]["id"],
+        source_text=spec.get("source_text", ""),
+    )
+
+
+def _conform_world(raw, spec):
+    """轻量合规化：补缺字段、去重 id、确保 references 一致。"""
+    prefix = "".join(c if c.isalnum() else "_" for c in spec["id"][:3].upper())
+    scene_id = spec["id"]
+
+    # 1) 补齐事件 subject（如果 LLM 没写对）
+    for i, ev in enumerate(raw.get("events", [])):
+        ev.setdefault("id", "ev_%s_%02d" % (scene_id, i + 1))
+        ev.setdefault("subject", "event:%s" % ev["id"])
+
+    # 2) 断言 layer 默认值 + gap 补 lead
+    for a in raw.get("assertions", []):
+        a.setdefault("layer", "record")
+        a.setdefault("confidence", 0.8)
+        a.setdefault("quote_status", "paraphrase_unverified")
+        a.setdefault("source", spec["source"]["id"])
+        a.setdefault("scale", "theater")
+        a.setdefault("note", "")
+        a.setdefault("place", "")
+        if a.get("layer") == "gap":
+            a.setdefault("confidence", 0.0)
+            a.setdefault("quote", "")
+            a.setdefault("quote_status", "generated")
+            if "lead" not in a:
+                a["lead"] = {"where": a.get("value_text", ""),
+                              "skills": ["待补充史料"],
+                              "accept": "引用原文填补缺口"}
+
+    # 3) 统一 prefix（修复 LLM 乱编的 id）
+    expected_prefix = prefix.replace("_", "")
+    for i, a in enumerate(raw.get("assertions", [])):
+        # 如果 id 不含正确 prefix，重编号
+        raw_id = a.get("id", "")
+        if not raw_id.upper().startswith(expected_prefix.upper()):
+            a["id"] = "%s%03d" % (prefix.replace("_", "").upper(), i + 1)
+
+    return raw
+
+
+def generate_world(spec_path):
+    """一键生成完整场景：LLM 抽取 → 合规化 → 落文件 → 注册 → build → gates。"""
+    with open(spec_path, encoding="utf-8") as f:
+        spec = json.load(f)
+
+    scene_id = spec["id"]
+    scene_dir = os.path.join(ROOT, "data", scene_id)
+    os.makedirs(scene_dir, exist_ok=True)
+
+    # 若 source_text 以 @ 开头 → 从文件读取
+    src_text = spec.get("source_text", "")
+    if src_text.startswith("@"):
+        txt_path = src_text[1:]
+        if not os.path.isabs(txt_path):
+            txt_path = os.path.join(os.path.dirname(os.path.abspath(spec_path)), txt_path)
+        with open(txt_path, encoding="utf-8") as f:
+            src_text = f.read()
+        spec["source_text"] = src_text
+
+    # 1) LLM 抽取
+    prompt = _build_world_prompt(spec)
+    print("[world] 调 LLM 一次性抽取所有实体 + 断言...")
+    raw_text = _call_llm(prompt)
+    # 剥离可能的 markdown 代码块
+    raw_text = raw_text.strip()
+    if raw_text.startswith("```"):
+        raw_text = re.sub(r"^```\w*\n?", "", raw_text)
+        raw_text = re.sub(r"\n?```$", "", raw_text)
+    try:
+        raw = json.loads(raw_text)
+    except json.JSONDecodeError:
+        # 尝试提取第一个 { 到最后一个 }
+        m = re.search(r"\{[\s\S]*\}", raw_text)
+        if m:
+            raw = json.loads(m.group())
+        else:
+            raw_path = os.path.join(scene_dir, "_raw_llm_output.txt")
+            with open(raw_path, "w", encoding="utf-8") as f:
+                f.write(raw_text)
+            raise RuntimeError("LLM 返回非 JSON，原始输出已存 %s" % raw_path)
+
+    print("[world] LLM 返回: persons=%d events=%d places=%d edges=%d assertions=%d" % (
+        len(raw.get("persons", [])), len(raw.get("events", [])),
+        len(raw.get("places", [])), len(raw.get("edges", [])),
+        len(raw.get("assertions", []))))
+
+    # 2) 合规化
+    raw = _conform_world(raw, spec)
+
+    # 3) 构造 sources.json（由 spec 提供）
+    src = spec["source"]
+    sources_data = {"sources": [{
+        "id": src["id"], "title": src["title"], "party": src["party"],
+        "stance_label": src.get("stance_label", ""),
+        "distance_label": src.get("distance_label", ""),
+        "color": src.get("color", "#8C6239"),
+        "compiler": src.get("compiler", ""), "period": src.get("period", ""),
+        "stance": src.get("stance", "private_synthesis"),
+        "note": src.get("note", "")
+    }]}
+
+    # 4) 写文件
+    for name, data, key in [
+        ("sources", sources_data, None),
+        ("persons", {"persons": raw.get("persons", [])}, None),
+        ("events", {"events": raw.get("events", [])}, None),
+        ("places", {"places": raw.get("places", []), "rivers": [], "wall": []}, None),
+        ("edges", {"edges": raw.get("edges", [])}, None),
+    ]:
+        path = os.path.join(scene_dir, name + ".json")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+
+    # assertions.jsonl (每行一个对象)
+    with open(os.path.join(scene_dir, "assertions.jsonl"), "w", encoding="utf-8") as f:
+        for a in raw.get("assertions", []):
+            f.write(json.dumps(a, ensure_ascii=False) + "\n")
+
+    # 5) 注册地形网格（从 places 提取 bbox）
+    places = raw.get("places", [])
+    # geocode 先（在落文件后立即跑）
+    import geocode as GC
+    resolved, gaps = GC.geocode_places(places)
+    print("[world] geocode: %d 命中 / %d 未命中" % (len(resolved), len(gaps)))
+
+    # 自动注册 terrain 网格
+    lons = [p["lon"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
+    lats = [p["lat"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
+    if lons and lats:
+        margin = 0.5
+        bbox = [min(lons) - margin, min(lats) - margin,
+                max(lons) + margin, max(lats) + margin]
+        bbox_str = ",".join([str(round(v, 2)) for v in bbox])
+        try:
+            subprocess.run([sys.executable, os.path.join(ROOT, "tools", "fetch_terrain.py"),
+                            "--new", scene_id, "--bbox", bbox_str, "--step", "0.1",
+                            "--label", spec.get("title", scene_id)],
+                           cwd=ROOT, capture_output=True, check=False)
+            print("[world] 地形网格 %s 注册（not_fetched）" % scene_id)
+        except Exception as e:
+            print("[warn] 地形注册失败: %s" % e)
+    else:
+        print("[warn] 无有效坐标，跳过地形网格注册")
+
+    # 6) 注册到 scenes.json
+    reg_path = os.path.join(ROOT, "data", "scenes.json")
+    with open(reg_path, encoding="utf-8") as f:
+        reg = json.load(f)
+    if scene_id not in reg["scenes"]:
+        primary = places[0]["id"] if places else scene_id
+        reg["scenes"][scene_id] = {
+            "kind": spec.get("kind", "county"),
+            "region": spec.get("region", "liaodong"),
+            "title": spec.get("title", scene_id),
+            "dossier_label": spec.get("dossier_label", scene_id),
+            "subtitle": spec.get("subtitle", ""),
+            "primary_place": primary,
+            "dossier_event": raw.get("events", [{}])[0].get("subject", ""),
+            "vocab_pack": spec.get("vocab_pack", "ming_qing"),
+            "terrain_grid": scene_id,
+            "extra_files": ["events", "edges"],
+            "lead": spec.get("lead", ""),
+            "parties_note": spec.get("parties_note", ""),
+        }
+        reg["order"].append(scene_id)
+        with open(reg_path, "w", encoding="utf-8") as f:
+            json.dump(reg, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        print("[world] 已注册场景 %s 到 scenes.json" % scene_id)
+
+    # 7) build + gates
+    print("[world] 重编译 + 跑全闸门...")
+    rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build.py")],
+                       cwd=ROOT, capture_output=True)
+    if rc.returncode != 0:
+        print("[FAIL] build 失败:\n" + rc.stderr.decode("utf-8", "replace")[:500])
+        return 1
+    rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "gates.py"), "--no-interaction"],
+                       cwd=ROOT)
+    if rc.returncode != 0:
+        print("[FAIL] gates 未通过 (exit=%d)" % rc.returncode)
+        return rc.returncode
+    print("[world] 全部闸门通过！场景 %s 立即可渲染。" % scene_id)
+    print("        页面: county.html?scene=%s" % scene_id)
+    return 0
+
+
 def main():
     _load_dotenv()  # 载入 .env（gitignored 本地密钥），再读命令行参数
     ap = argparse.ArgumentParser(description="史料 ingestion 管线（断言四层 + 年号归一化）")
@@ -368,7 +661,13 @@ def main():
                     help="抽取后对该场景 places.json 落坐标（需配合 --scene；依赖 data/geo/gazetteer.json）")
     ap.add_argument("--lenient", action="store_true",
                     help="丢弃无法归一化年份/缺必填/层非法的断言后继续（不伪造年份），其余照常落库")
+    ap.add_argument("--world", help="一键世界生成：输入场景 spec JSON，LLM 一次抽取全量文件 → 自动注册 + build + gates")
     args = ap.parse_args()
+
+    # ── 一键世界生成模式 ──
+    if args.world:
+        _load_dotenv()
+        return generate_world(args.world)
 
     # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
     if args.provider == "deepseek":
