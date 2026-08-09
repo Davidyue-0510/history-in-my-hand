@@ -664,40 +664,68 @@
   }
 
   /* ═══════════ 沿革时间轴 + 事件 ═══════════ */
-  function renderTimeline() {
-    var track = document.getElementById('tlTrack'); track.innerHTML = '';
-    var n = D.events.length;
-    if (!n) {
-      document.getElementById('dateEra').textContent = '—';
-      document.getElementById('dateLabel').textContent = '本切片尚未录入建置沿革';
-      return;
+  /* ═══════════ 统一时间轴（v0.27：合并事件时间轴+控制层滑块） ═══════════ */
+  /* 年号公元尺 */
+  function renderUnifiedTimeline() {
+    var slider = document.getElementById('utSlider');
+    var markers = document.getElementById('tlMarkers');
+    var eraEl = document.getElementById('dateEra');
+    var labelEl = document.getElementById('dateLabel');
+    var yearEl = document.getElementById('utYear');
+    if (!slider) return;
+
+    // 场景时间窗：优先 control_years（控制层），否则从 events 取
+    var cy = window.ControlLayer && ControlLayer.isReady()
+      ? ControlLayer.years() : null;
+    var evs = D.events || [];
+    if (!cy || cy[0] === cy[1]) {
+      // 无控制层数据 → 退回到纯事件时间轴
+      if (!evs.length) { eraEl.textContent = '—'; labelEl.textContent = '—'; return; }
+      var y0 = evs[0].year || 0; var y1 = evs[evs.length-1].year || y0;
+      cy = [y0, y1];
     }
-    D.events.forEach(function (ev, i) {
-      var node = document.createElement('div');
-      var cls = 'tl-node'; if (ev.kind === '战事') cls += ' key';
-      if (i === state.t) cls += ' now';
-      // n === 1 时 (n-1) 为 0，除法得 NaN——单事件切片会整条时间轴消失
-      node.className = cls; node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
-      if (i === 0) node.style.transform = 'translateX(-14px)';
-      if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
-      // 派系着色（v0.20）：若当前选中派系在本事件有断言，时间轴节点染派系色
-      var fDot = '', fRing = '';
-      if (state.activeFaction) {
-        var fcol = FCOLORS[state.activeFaction] || '#888';
-        if (factionEventSubjects(state.activeFaction)[ev.subject]) {
-          fDot = 'background:' + fcol + ';box-shadow:0 0 0 2px ' + fcol + '33;';
-          fRing = 'box-shadow:0 0 0 3px ' + fcol + '66;';
-        }
-      }
-      node.innerHTML = '<div class="tl-dot" style="' + fDot + '"></div><div class="tl-cap">' + ev.era + '</div>';
-      if (fRing) node.style.boxShadow = fRing;
-      node.title = ev.title;
-      node.addEventListener('click', function () { state.t = i; refresh(); goTab('yan'); });
-      track.appendChild(node);
+    var lo = cy[0], hi = cy[1], range = hi - lo || 1;
+    var yr = state.control.year;
+    if (yr < lo || yr > hi) yr = lo;
+
+    // 滑块值 → 实际年
+    var pos = Math.round((yr - lo) / range * 100);
+    slider.min = 0; slider.max = 100; slider.value = pos;
+    yearEl.textContent = String(yr);
+
+    // 事件标记（dot overlays on slider）
+    markers.innerHTML = '';
+    evs.forEach(function (ev) {
+      var ey = ev.year;
+      if (ey == null || ey < lo || ey > hi) return;
+      var pct = ((ey - lo) / range * 100).toFixed(1);
+      var dot = document.createElement('div');
+      dot.className = 'tl-marker' + (ey === yr ? ' now' : '');
+      dot.style.left = pct + '%';
+      dot.title = ev.era + ' ' + ev.title;
+      dot.addEventListener('click', function () {
+        state.control.year = ey;
+        if (state.control.year > hi) state.control.year = hi;
+        refresh();
+      });
+      markers.appendChild(dot);
     });
-    var cur = D.events[Math.min(state.t, n - 1)];
-    document.getElementById('dateEra').textContent = cur.era;
-    document.getElementById('dateLabel').textContent = cur.title;
+
+    // 读显：当前年的事件（如有）
+    var curEv = null;
+    for (var i = 0; i < evs.length; i++) { if (evs[i].year === yr) { curEv = evs[i]; break; } }
+    eraEl.textContent = curEv ? curEv.era : String(yr);
+    labelEl.textContent = curEv ? curEv.title : '';
+  }
+
+  function syncTimeline(year) {
+    state.control.year = year;
+    if (state.control.on && window.ControlLayer && ControlLayer.isReady()) {
+      ControlLayer.draw(state.control.year, state.control.scope);
+      renderControlLegend();
+    }
+    renderUnifiedTimeline();
+    renderEvents(); // 左侧事件列表同步高亮
   }
   function renderEvents() {
     var lead = document.getElementById('evLead');
@@ -870,7 +898,7 @@
       e.stopPropagation();
       state.factionCompare = !state.factionCompare;
       state.activeFaction = null;
-      renderFactions(); renderParties(); renderTimeline(); drawDynamic();
+      renderFactions(); renderParties(); renderUnifiedTimeline(); drawDynamic();
     });
     head.appendChild(toggle);
     box.appendChild(head);
@@ -902,7 +930,7 @@
       clear.addEventListener('click', function (e) {
         e.stopPropagation();
         state.activeFaction = null;
-        renderParties(); renderFactions(); renderTimeline(); drawDynamic();
+        renderParties(); renderFactions(); renderUnifiedTimeline(); drawDynamic();
       });
       box.appendChild(clear);
     }
@@ -925,7 +953,7 @@
       if (!active) {
         row.addEventListener('click', function () {
           state.activeFaction = fid;
-          renderParties(); renderFactions(); renderTimeline(); drawDynamic();
+          renderParties(); renderFactions(); renderUnifiedTimeline(); drawDynamic();
         });
       } else {
         // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并
@@ -1497,7 +1525,7 @@
     if (pn && note) pn.textContent = note;
   })();
 
-  /* ═══════════ 实际控制层（v0.10） ═══════════ */
+  /* ═══════════ 统一时间轴 · 控制层联动 ═══════════ */
   function drawControl() {
     if (!window.ControlLayer) return;
     if (!IS_ABSTRACT && state.control.on && ControlLayer.isReady()) {
@@ -1512,8 +1540,6 @@
   function renderControlLegend() {
     var lg = document.getElementById('ctrlLegend');
     if (!lg) return;
-    // v0.24c：图例随控制数据实际出现的 party 动态生成（不再写死明/清/朝），
-    // 颜色走 ControlLayer.partyColor（= 语境包 party_colors 单一真值）。
     var parts = (window.ControlLayer.activeParties
       ? window.ControlLayer.activeParties() : []).map(function (p) { return { p: p, t: p }; });
     var nation = state.control.scope === 'nation';
@@ -1525,13 +1551,11 @@
       var label = x.t;
       if (nation && tallyMap) {
         var n = tallyMap[x.p] || 0;
-        if (total) label += ' ' + n + ' 县';
+        if (total) label += ' ' + n;
       }
       return '<i style="background:rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')"></i>' + label;
     }).join('');
-    if (nation) {
-      lg.innerHTML += '<span class="cp-tally">共 ' + total + ' 县见于此图层</span>';
-    }
+    if (nation) lg.innerHTML += ' 共 ' + total;
   }
   function wireControl() {
     var panel = document.getElementById('controlPanel');
@@ -1541,27 +1565,33 @@
     }
     panel.style.display = '';
     var onBox = document.getElementById('ctrlOn');
-    var yr = document.getElementById('ctrlYear');
-    var yrLbl = document.getElementById('ctrlYearLabel');
+    var slider = document.getElementById('utSlider');
     var playBtn = document.getElementById('ctrlPlay');
     var cy = ControlLayer.years();
-    yr.min = cy[0]; yr.max = cy[1];
-    // v0.24：场景化后年份窗口随场景变（辽东 1616-1644 / 壬辰 1592-1598），
-    // 初始 1621 对非辽东场景越界，clamp 到场景窗口下界。
-    if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
-    yr.value = state.control.year;
-    yrLbl.textContent = state.control.year;
+    var lo = cy[0], hi = cy[1];
+    if (state.control.year < lo || state.control.year > hi) state.control.year = lo;
 
-    onBox.addEventListener('change', function () {
-      state.control.on = onBox.checked;
-      panel.classList.toggle('on', state.control.on);
-      drawControl();
-    });
-    yr.addEventListener('input', function () {
-      state.control.year = parseInt(yr.value, 10);
-      yrLbl.textContent = state.control.year;
-      drawControl();
-    });
+    // 滑块 → 年份映射
+    if (slider) {
+      slider.min = 0; slider.max = 100;
+      slider.value = Math.round((state.control.year - lo) / (hi - lo) * 100);
+      slider.addEventListener('input', function () {
+        var pct = parseInt(slider.value, 10);
+        state.control.year = Math.round(lo + (hi - lo) * pct / 100);
+        syncTimeline(state.control.year);
+        drawControl();
+      });
+    }
+
+    // 控制层开关
+    if (onBox) {
+      onBox.checked = state.control.on;
+      onBox.addEventListener('change', function () {
+        state.control.on = onBox.checked;
+        drawControl();
+      });
+    }
+
     document.querySelectorAll('.cp-scope').forEach(function (b) {
       b.addEventListener('click', function () {
         state.control.scope = b.getAttribute('data-scope');
@@ -1570,17 +1600,18 @@
         drawControl();
       });
     });
+
     if (playBtn) playBtn.addEventListener('click', function () {
       if (state.control.playing) { stopControl(); return; }
-      if (!state.control.on) { onBox.checked = true; state.control.on = true; panel.classList.add('on'); }
+      if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
       state.control.playing = true;
       playBtn.textContent = '❚❚';
-      var lo = cy[0], hi = cy[1];
       if (state.control.year >= hi) state.control.year = lo;
       playBtn._t = setInterval(function () {
         if (state.control.year >= hi) { stopControl(); return; }
         state.control.year++;
-        yr.value = state.control.year; yrLbl.textContent = state.control.year;
+        if (slider) slider.value = Math.round((state.control.year - lo) / (hi - lo) * 100);
+        syncTimeline(state.control.year);
         drawControl();
       }, 900);
     });
@@ -1595,7 +1626,7 @@
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
-    renderSiblings(); renderTimeline(); drawDynamic(); drawTerrain();
+    renderSiblings(); renderUnifiedTimeline(); drawDynamic(); drawTerrain();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;

@@ -83,25 +83,29 @@
       <div id="mapLegend" class="map-legend"></div>
 
       <div class="control-panel" id="controlPanel" style="display:none">
-        <div class="cp-head">
-          <label class="cp-toggle"><input type="checkbox" id="ctrlOn"> 实际控制层</label>
-          <span class="cp-year" id="ctrlYearLabel">1621</span>
-        </div>
-        <input type="range" id="ctrlYear" class="cp-slider" min="1616" max="1644" value="1621" step="1">
         <div class="cp-row">
-          <button data-scope="county" class="cp-scope on">县</button>
-          <button data-scope="nation" class="cp-scope">国家</button>
-          <button id="ctrlPlay" class="cp-play" title="播放年份">▶</button>
+          <button data-scope="county" class="cp-scope on">县界</button>
+          <button data-scope="nation" class="cp-scope">国界</button>
+          <button id="ctrlPlay" class="cp-play" title="播放">▶</button>
         </div>
-        <div class="cp-legend" id="ctrlLegend"></div>
-        <div class="cp-note">示意辖区（按治所最近邻）· 控制权据明末清初辽东史实</div>
+        <div class="cp-note">示意辖区 · 治所最近邻近似</div>
       </div>
     </div>
 
     <div id="timelineBar" class="timeline">
-      <div class="tl-cap-l">建置沿革</div>
-      <div id="tlTrack" class="tl-track"></div>
-      <div class="tl-readout"><span id="dateEra"></span> · <span id="dateLabel"></span></div>
+      <div class="tl-header">
+        <span class="tl-era" id="dateEra">—</span>
+        <span id="dateLabel">—</span>
+      </div>
+      <div class="tl-slider-track">
+        <input type="range" id="utSlider" class="tl-slider" min="0" max="100" value="0" step="1">
+        <div id="tlMarkers" class="tl-markers"></div>
+      </div>
+      <div class="tl-foot">
+        <span class="tl-year" id="utYear">1621</span>
+        <label class="tl-ctrl"><input type="checkbox" id="ctrlOn"> 视野</label>
+        <span id="ctrlLegend" style="display:inline-flex;gap:8px;font-size:11px"></span>
+      </div>
     </div>
   </main>
 

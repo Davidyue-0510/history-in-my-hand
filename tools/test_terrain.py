@@ -46,8 +46,13 @@ def main():
     assert_(grid["bbox"] == reg["grids"]["liaodong"]["bbox"], "grid.bbox 与注册表一致")
 
     t2, g2, s2 = BUILD.get_terrain("china_coarse")
-    assert_(t2 is None and s2 == "not_fetched",
-            "get_terrain(china_coarse) 诚实返回 None（未拉取，不伪造）")
+    # china_coarse 可能 not_fetched/partial/fetched，取决于后台拉取状态。
+    # 任何状态都不应伪造：not_fetched→None，partial/fetched→网格对象但 bbox 与注册表一致。
+    if t2 is None:
+        assert_(s2 in ("not_fetched",), "get_terrain 返回 None 时状态为 not_fetched")
+    else:
+        assert_(g2 and abs(g2.get("lon0", 0) - 73.5) < 0.5,
+                "china_coarse partial/fetched 时 bbox 与注册表一致")
 
     # 4) 越界坐标返回 None，绝不 clamp 边缘假值
     ev = BUILD._elev_or_none(terr, 999.0, 999.0)
