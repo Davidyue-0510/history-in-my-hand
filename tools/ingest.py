@@ -899,13 +899,17 @@ def main():
                     help="抽取后对该场景 places.json 落坐标（需配合 --scene；依赖 data/geo/gazetteer.json）")
     ap.add_argument("--lenient", action="store_true",
                     help="丢弃无法归一化年份/缺必填/层非法的断言后继续（不伪造年份），其余照常落库")
-    ap.add_argument("--world", help="一键世界生成：输入场景 spec JSON，LLM 一次抽取全量文件 → 自动注册 + build + gates")
+    ap.add_argument("--world", help="一键世界生成：输入场景 spec JSON")
+    ap.add_argument("--multi", help="多源融合：输入多源 spec JSON（逐源 LLM + 跨源冲突检测）")
     args = ap.parse_args()
 
     # ── 一键世界生成模式 ──
     if args.world:
         _load_dotenv()
         return generate_world(args.world)
+    if args.multi:
+        _load_dotenv()
+        return generate_world_multi(args.multi)
 
     # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
     if args.provider == "deepseek":
@@ -1012,6 +1016,112 @@ def main():
             print("[FAIL] gates 未通过 (exit=%d)" % rc); return rc
 
     print("\n[ingest] 完成：%d 条断言全部通过年号归一化与 schema 校验。" % len(assertions))
+    return 0
+
+
+def generate_world_multi(spec_path):
+    """v0.37 多源融合：每源独立 LLM 调用 → 合并断言 → 自动冲突检测。"""
+    with open(spec_path, encoding="utf-8") as f:
+        spec = json.load(f)
+    scene_id = spec["id"]
+    scene_dir = os.path.join(ROOT, "data", scene_id)
+    os.makedirs(scene_dir, exist_ok=True)
+
+    sources = spec.get("sources", [spec])
+    print("[multi] %d 个来源，逐源调 LLM ..." % len(sources))
+
+    all_raws = []
+    for i, src in enumerate(sources):
+        print("[multi] 来源 %d/%d: %s" % (i+1, len(sources), src.get("title", "src_%d"%i)))
+        tmp_spec = dict(spec)
+        tmp_spec["source"] = src
+        tmp_spec["source_text"] = src.get("text", spec.get("source_text", ""))
+        raw = _conform_world(tmp_spec)  # LLM 调用在此
+        all_raws.append(raw)
+
+    # 合并
+    merged = {"persons":[], "events":[], "places":[], "edges":[], "assertions":[]}
+    seen = {k: set() for k in merged}
+    source_names = [s.get("title", "src_%d"%i) for i, s in enumerate(sources)]
+    source_parties = [s.get("party", "unknown") for s in sources]
+
+    for si, raw in enumerate(all_raws):
+        for key in merged:
+            for item in raw.get(key, []):
+                item.setdefault("_source_idx", si)
+                item.setdefault("_source_name", source_names[si])
+                item.setdefault("_source_party", source_parties[si])
+                if key == "assertions":
+                    item.setdefault("source", source_names[si])
+                pid = item.get("id", str(item))
+                if pid not in seen[key]:
+                    seen[key].add(pid)
+                    merged[key].append(item)
+
+    # 跨源冲突标注
+    conflict_pairs = []
+    for i, a1 in enumerate(merged["assertions"]):
+        for j, a2 in enumerate(merged["assertions"]):
+            if j <= i: continue
+            if (a1.get("subject") == a2.get("subject")
+                and a1.get("predicate") == a2.get("predicate")
+                and a1.get("_source_idx") != a2.get("_source_idx")
+                and a1.get("value_text") != a2.get("value_text")):
+                conflict_pairs.append((a1["id"], a2["id"]))
+                if "_cross_conflicts" not in a1: a1["_cross_conflicts"] = []
+                if "_cross_conflicts" not in a2: a2["_cross_conflicts"] = []
+                a1["_cross_conflicts"].append(a2["id"])
+                a2["_cross_conflicts"].append(a1["id"])
+    print("[multi] 跨源冲突: %d 对" % len(conflict_pairs))
+
+    # 写 sources.json（多源）
+    sources_data = {"sources": []}
+    for i, src in enumerate(sources):
+        sources_data["sources"].append({
+            "id": source_names[i],
+            "title": src.get("title", ""),
+            "party": src.get("party", "unknown"),
+            "color": src.get("color", "#8C6239"),
+            "compiler": src.get("compiler", ""),
+            "period": src.get("period", ""),
+            "stance": src.get("stance", "primary"),
+            "note": src.get("note", ""),
+        })
+
+    # 写文件
+    for name, data, key in [
+        ("sources", sources_data, None),
+        ("persons", {"persons": merged["persons"]}, None),
+        ("events", {"events": merged["events"]}, None),
+        ("places", {"places": merged["places"], "rivers":[], "wall":[]}, None),
+        ("edges", {"edges": merged["edges"]}, None),
+    ]:
+        path = os.path.join(scene_dir, name + ".json")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+    # assertions.jsonl
+    alp = os.path.join(scene_dir, "assertions.jsonl")
+    with open(alp, "w", encoding="utf-8") as f:
+        for a in merged["assertions"]:
+            f.write(json.dumps(a, ensure_ascii=False) + "\n")
+
+    # geocode + control + vocab + 注册 + build + gates
+    places = merged["places"]
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import geocode as GC
+    resolved, gaps = GC.geocode_places(places)
+    print("[multi] geocode: %d 命中 / %d 未命中" % (len(resolved), len(gaps)))
+    _gen_default_control(places, spec, scene_dir)
+    _gen_default_vocab(places, spec, scene_dir)
+    _register_scene(spec, scene_dir)
+    _register_terrain(spec, scene_dir)
+    _run_build_and_gates(scene_id)
+
+    total_asserts = len(merged["assertions"])
+    print("[multi] 完成：%d 源 → %d 人/%d 事/%d 地/%d 断言/%d 跨源冲突" % (
+        len(sources), len(merged["persons"]), len(merged["events"]),
+        len(merged["places"]), total_asserts, len(conflict_pairs)))
     return 0
 
 
