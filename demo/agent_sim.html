@@ -238,10 +238,57 @@ function simulateYear() {
     }
   });
 
-  // Suppress
+  // === 地方叛乱 + 中央控制力衰减 ===
   let rebels=agents.filter(a=>a.party==='rebel'&&a.alive), centers=agents.filter(a=>a.cls==='center'&&a.alive);
-  if(rebels.length&&centers.length){let c=centers[Math.floor(Math.random()*centers.length)],r=rebels[Math.floor(Math.random()*rebels.length)];if(c.resources.troops>r.resources.troops*1.2){r.alive=false;r.party='dead';}else{c.resources.troops=Math.max(0,c.resources.troops-20);}}
-  history.push({year,...metrics,rebelCount:rebels.filter(r=>r.alive).length});
+  let aliveCount=agents.filter(a=>a.alive).length;
+  let rebelRatio=rebels.length/Math.max(1,aliveCount);
+
+  // 叛乱向京城扩散：离 center 最近的 rebel 每天尝试攻城
+  if(rebels.length>=3&&centers.length){
+    centers.forEach(c=>{
+      let nearRebels=rebels.filter(r=>dist(r,c)<0.25);
+      if(nearRebels.length>=3){
+        // 京城被围
+        c.resources.troops-=10+c.resources.troops*0.1;
+        c.resources.grain-=15;
+        if(c.resources.troops<=0){c.alive=false;c.party='dead';
+          log('💀 朝廷 center#'+c.id+' 被叛军攻陷！京城失守！','revolt');}
+      }
+    });
+  }
+
+  // 叛乱比例越高，中心控制力越弱
+  if(rebelRatio>0.2){
+    centers.forEach(c=>{
+      c.resources.troops=Math.max(0,Math.floor(c.resources.troops*(1-rebelRatio*0.5)));
+      c.resources.grain=Math.max(0,Math.floor(c.resources.grain*(1-rebelRatio*0.3)));
+    });
+    if(rebelRatio>0.3)log('⚠ 地方失控：'+rebels.length+'叛军活跃（'+Math.floor(rebelRatio*100)+'%），中央控制力崩塌','invade');
+  }
+
+  // 一小股叛军每天尝试单点镇压（中心反击）
+  if(rebels.length&&centers.length&&rebelRatio<0.3){
+    let c=centers[Math.floor(Math.random()*centers.length)], r=rebels[Math.floor(Math.random()*rebels.length)];
+    if(c.resources.troops>r.resources.troops*1.5){r.alive=false;r.party='dead';}
+    else{c.resources.troops=Math.max(0,c.resources.troops-20);}
+  }
+
+  // === 王朝颠覆 ===
+  let aliveCenters=agents.filter(a=>a.cls==='center'&&a.alive).length;
+  let aliveRebels=agents.filter(a=>a.party==='rebel'&&a.alive).length;
+  if(aliveCenters===0||(aliveRebels>aliveCenters*5&&aliveRebels>=5)){
+    log('👑 王朝覆灭！第'+year+'年，叛军推翻旧政权。新朝建立...','revolt');
+    // 新王朝：叛军中的强者变为新 center，不满重置
+    let newRulers=agents.filter(a=>a.party==='rebel'&&a.alive).sort((a,b)=>b.resources.troops-a.resources.troops).slice(0,Math.ceil(aliveCount*0.08));
+    newRulers.forEach(a=>{a.cls='center';a.party='regime';a.resources.troops=150;a.resources.grain=300;a.grievance=0;});
+    // 其余叛军回归庶民
+    agents.filter(a=>a.party==='rebel'&&a.alive).forEach(a=>{a.party='peasant';a.cls='grassroot';a.grievance=Math.max(0,a.grievance-0.4);});
+    // 旧士绅部分保留、部分降为庶民
+    agents.filter(a=>a.cls==='local'&&a.alive&&Math.random()<0.4).forEach(a=>{a.cls='grassroot';a.party='peasant';});
+    log('✅ 新朝建立：'+newRulers.length+'位新朝廷官员。阶级重置。','metric');
+  }
+
+  history.push({year,...metrics,rebelCount:aliveRebels});
   year++;
   buildNarrative(metrics);
 }
