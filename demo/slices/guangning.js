@@ -25,6 +25,7 @@ window.SANDBOX_SLICES["guangning"] = {
   },
   "page": "county.html?scene=guangning",
   "key": "guangning",
+  "scene_id": "guangning",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

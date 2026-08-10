@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
   "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。",
   "page": "county.html?scene=novel_fandao_9",
   "key": "novel_fandao_9",
+  "scene_id": "novel_fandao_9",
   "vocab_pack": "inline:novel_fandao_9",
   "terrain_grid": "liaodong"
  },

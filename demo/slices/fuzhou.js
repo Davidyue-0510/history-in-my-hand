@@ -23,6 +23,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
   },
   "page": "county.html?scene=fuzhou",
   "key": "fuzhou",
+  "scene_id": "fuzhou",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

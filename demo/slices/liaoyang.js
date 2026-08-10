@@ -33,6 +33,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
   },
   "page": "county.html?scene=liaoyang",
   "key": "liaoyang",
+  "scene_id": "liaoyang",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

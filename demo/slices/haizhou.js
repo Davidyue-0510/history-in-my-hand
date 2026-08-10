@@ -27,6 +27,7 @@ window.SANDBOX_SLICES["haizhou"] = {
   },
   "page": "county.html?scene=haizhou",
   "key": "haizhou",
+  "scene_id": "haizhou",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

@@ -26,6 +26,7 @@ window.SANDBOX_SLICES["tieling"] = {
   },
   "page": "county.html?scene=tieling",
   "key": "tieling",
+  "scene_id": "tieling",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

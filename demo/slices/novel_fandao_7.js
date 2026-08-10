@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
   "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
   "page": "county.html?scene=novel_fandao_7",
   "key": "novel_fandao_7",
+  "scene_id": "novel_fandao_7",
   "vocab_pack": "inline:novel_fandao_7",
   "terrain_grid": "liaodong"
  },

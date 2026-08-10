@@ -24,6 +24,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
   },
   "page": "county.html?scene=jinzhou",
   "key": "jinzhou",
+  "scene_id": "jinzhou",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

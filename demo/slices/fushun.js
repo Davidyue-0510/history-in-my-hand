@@ -26,6 +26,7 @@ window.SANDBOX_SLICES["fushun"] = {
   },
   "page": "county.html?scene=fushun",
   "key": "fushun",
+  "scene_id": "fushun",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

@@ -25,7 +25,8 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "person:pei_du": "裴度"
   },
   "page": "county.html?scene=tang_huai_xi",
-  "key": "tang_huai_xi"
+  "key": "tang_huai_xi",
+  "scene_id": "tang_huai_xi"
  },
  "sources": [
   {

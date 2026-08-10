@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
   "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。",
   "page": "county.html?scene=novel_fandao_8",
   "key": "novel_fandao_8",
+  "scene_id": "novel_fandao_8",
   "vocab_pack": "inline:novel_fandao_8",
   "terrain_grid": "liaodong"
  },

@@ -26,6 +26,7 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
   },
   "page": "county.html?scene=novel_fandao_2",
   "key": "novel_fandao_2",
+  "scene_id": "novel_fandao_2",
   "vocab_pack": "inline:novel_fandao_2",
   "terrain_grid": "liaodong"
  },

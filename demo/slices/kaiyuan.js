@@ -29,6 +29,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
   },
   "page": "county.html?scene=kaiyuan",
   "key": "kaiyuan",
+  "scene_id": "kaiyuan",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

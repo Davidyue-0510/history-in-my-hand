@@ -24,6 +24,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
   },
   "page": "county.html?scene=jinzhouwei",
   "key": "jinzhouwei",
+  "scene_id": "jinzhouwei",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

@@ -28,6 +28,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
   },
   "page": "county.html?scene=ningyuan",
   "key": "ningyuan",
+  "scene_id": "ningyuan",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

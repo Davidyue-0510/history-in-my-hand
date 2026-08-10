@@ -172,6 +172,7 @@ def build_scene(sc):
     meta = {k: v for k, v in sc.items()
             if k not in _REGISTRY_ONLY and not k.startswith("_")}
     meta["key"] = sc["_key"]
+    meta["scene_id"] = sc["_key"]  # v0.32 前端用 D.scene_id 定位数据文件
 
     bundle = {
         "meta": meta,
@@ -355,6 +356,7 @@ def _slice_meta(bundle):
     m = bundle.get("meta", {})
     return {
         "key": m.get("key"),
+        "scene_id": m.get("scene_id"),  # v0.32 前端定位数据文件
         "title": m.get("title"),
         "dossier_label": m.get("dossier_label"),
         "subtitle": m.get("subtitle"),

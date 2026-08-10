@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
   "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
   "page": "county.html?scene=novel_fandao_6",
   "key": "novel_fandao_6",
+  "scene_id": "novel_fandao_6",
   "vocab_pack": "inline:novel_fandao_6",
   "terrain_grid": "liaodong"
  },

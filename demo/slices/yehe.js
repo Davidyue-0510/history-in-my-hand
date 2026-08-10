@@ -26,6 +26,7 @@ window.SANDBOX_SLICES["yehe"] = {
   },
   "page": "county.html?scene=yehe",
   "key": "yehe",
+  "scene_id": "yehe",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },

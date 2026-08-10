@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
   "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
   "page": "county.html?scene=novel_fandao_4",
   "key": "novel_fandao_4",
+  "scene_id": "novel_fandao_4",
   "vocab_pack": "inline:novel_fandao_4",
   "terrain_grid": "liaodong"
  },

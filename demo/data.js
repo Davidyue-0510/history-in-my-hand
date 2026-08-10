@@ -7068,6 +7068,7 @@ window.SANDBOX_DATA = {
  "scenes_meta": {
   "sarhu": {
    "key": "sarhu",
+   "scene_id": "sarhu",
    "title": "萨尔浒之战",
    "dossier_label": "萨尔浒之战",
    "subtitle": "万历四十七年二月—三月 · 天命四年",
@@ -7092,6 +7093,7 @@ window.SANDBOX_DATA = {
   },
   "kaiyuan": {
    "key": "kaiyuan",
+   "scene_id": "kaiyuan",
    "title": "开原",
    "dossier_label": "开原",
    "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落",
@@ -7116,6 +7118,7 @@ window.SANDBOX_DATA = {
   },
   "tieling": {
    "key": "tieling",
+   "scene_id": "tieling",
    "title": "铁岭",
    "dossier_label": "铁岭",
    "subtitle": "李成梁故里 · 辽东锁钥 · 万历四十七年陷落",
@@ -7140,6 +7143,7 @@ window.SANDBOX_DATA = {
   },
   "yehe": {
    "key": "yehe",
+   "scene_id": "yehe",
    "title": "叶赫",
    "dossier_label": "叶赫",
    "subtitle": "扈伦四部之一 · 叶赫东城西城 · 1619 年亡于建州",
@@ -7164,6 +7168,7 @@ window.SANDBOX_DATA = {
   },
   "liaoyang": {
    "key": "liaoyang",
+   "scene_id": "liaoyang",
    "title": "辽阳",
    "dossier_label": "辽阳",
    "subtitle": "辽东都司治所 · 东京辽阳府 · 天启元年改运",
@@ -7188,6 +7193,7 @@ window.SANDBOX_DATA = {
   },
   "shenyang": {
    "key": "shenyang",
+   "scene_id": "shenyang",
    "title": "沈阳",
    "dossier_label": "沈阳",
    "subtitle": "辽东锁钥 · 天启元年 (1621) 陷落 · 后金迁都于此",
@@ -7212,6 +7218,7 @@ window.SANDBOX_DATA = {
   },
   "fushun": {
    "key": "fushun",
+   "scene_id": "fushun",
    "title": "抚顺",
    "dossier_label": "抚顺",
    "subtitle": "沈阳东卫 · 万历四十六年 (1618) 陷落 · 七大恨告天",
@@ -7236,6 +7243,7 @@ window.SANDBOX_DATA = {
   },
   "haizhou": {
    "key": "haizhou",
+   "scene_id": "haizhou",
    "title": "海州",
    "dossier_label": "海州",
    "subtitle": "辽南重镇 · 海州卫 · 天启元年 (1621) 陷落",
@@ -7260,6 +7268,7 @@ window.SANDBOX_DATA = {
   },
   "gaizhou": {
    "key": "gaizhou",
+   "scene_id": "gaizhou",
    "title": "盖州",
    "dossier_label": "盖州",
    "subtitle": "辽南 · 盖州卫 · 天启元年 (1621) 陷落",
@@ -7284,6 +7293,7 @@ window.SANDBOX_DATA = {
   },
   "fuzhou": {
    "key": "fuzhou",
+   "scene_id": "fuzhou",
    "title": "复州",
    "dossier_label": "复州",
    "subtitle": "辽南陆桥 · 复州卫 · 天启元年 (1621) 陷落",
@@ -7308,6 +7318,7 @@ window.SANDBOX_DATA = {
   },
   "jinzhouwei": {
    "key": "jinzhouwei",
+   "scene_id": "jinzhouwei",
    "title": "金州",
    "dossier_label": "金州",
    "subtitle": "辽东半岛南端 · 金州卫 · 天启元年 (1621) 陷落",
@@ -7332,6 +7343,7 @@ window.SANDBOX_DATA = {
   },
   "guangning": {
    "key": "guangning",
+   "scene_id": "guangning",
    "title": "广宁",
    "dossier_label": "广宁",
    "subtitle": "辽西军政中心 · 广宁卫 · 天启二年 (1622) 陷落",
@@ -7356,6 +7368,7 @@ window.SANDBOX_DATA = {
   },
   "jinzhou": {
    "key": "jinzhou",
+   "scene_id": "jinzhou",
    "title": "锦州",
    "dossier_label": "锦州",
    "subtitle": "辽西锁钥 · 松锦之战 (1641–1642) · 祖大寿降",
@@ -7380,6 +7393,7 @@ window.SANDBOX_DATA = {
   },
   "ningyuan": {
    "key": "ningyuan",
+   "scene_id": "ningyuan",
    "title": "宁远",
    "dossier_label": "宁远",
    "subtitle": "关宁锦防线核心 · 宁远之战 (1626) · 袁崇焕",
@@ -7404,6 +7418,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao": {
    "key": "novel_fandao",
+   "scene_id": "novel_fandao",
    "title": "反派他爸教做人·九零家暴男儿子",
    "dossier_label": "小说副本·九零家暴男儿子",
    "subtitle": "快穿文《反派他爸教做人[快穿]》第一副本 · 由文本导入生成",
@@ -7428,6 +7443,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_2": {
    "key": "novel_fandao_2",
+   "scene_id": "novel_fandao_2",
    "title": "反派他爸教做人·深情渣帝王儿子",
    "dossier_label": "反派他爸教做人·深情渣帝王儿子",
    "subtitle": "快穿文《反派他爸教做人[快穿]》第二副本 · 由文本导入生成",
@@ -7452,6 +7468,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_3": {
    "key": "novel_fandao_3",
+   "scene_id": "novel_fandao_3",
    "title": "反派他爸教做人·拜金绝色女儿",
    "dossier_label": "反派他爸教做人·拜金绝色女儿",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7476,6 +7493,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_4": {
    "key": "novel_fandao_4",
+   "scene_id": "novel_fandao_4",
    "title": "反派他爸教做人·我的儿子是怪物",
    "dossier_label": "反派他爸教做人·我的儿子是怪物",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7500,6 +7518,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_5": {
    "key": "novel_fandao_5",
+   "scene_id": "novel_fandao_5",
    "title": "反派他爸教做人·不负责的穿书女",
    "dossier_label": "反派他爸教做人·不负责的穿书女",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7524,6 +7543,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_6": {
    "key": "novel_fandao_6",
+   "scene_id": "novel_fandao_6",
    "title": "反派他爸教做人·同性恋骗婚儿子",
    "dossier_label": "反派他爸教做人·同性恋骗婚儿子",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7548,6 +7568,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_7": {
    "key": "novel_fandao_7",
+   "scene_id": "novel_fandao_7",
    "title": "反派他爸教做人·爱情至上的女儿",
    "dossier_label": "反派他爸教做人·爱情至上的女儿",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7572,6 +7593,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_8": {
    "key": "novel_fandao_8",
+   "scene_id": "novel_fandao_8",
    "title": "反派他爸教做人·不听话的喵儿子",
    "dossier_label": "反派他爸教做人·不听话的喵儿子",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7596,6 +7618,7 @@ window.SANDBOX_DATA = {
   },
   "novel_fandao_9": {
    "key": "novel_fandao_9",
+   "scene_id": "novel_fandao_9",
    "title": "反派他爸教做人·胎穿女和魂穿女",
    "dossier_label": "反派他爸教做人·胎穿女和魂穿女",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -7620,6 +7643,7 @@ window.SANDBOX_DATA = {
   },
   "tang_huai_xi": {
    "key": "tang_huai_xi",
+   "scene_id": "tang_huai_xi",
    "title": "平淮西·雪夜入蔡州",
    "dossier_label": "平淮西",
    "subtitle": "元和九年—十二年（814—817）· 李愬雪夜入蔡州",
@@ -7644,6 +7668,7 @@ window.SANDBOX_DATA = {
   },
   "imjin": {
    "key": "imjin",
+   "scene_id": "imjin",
    "title": "万历朝鲜之役·壬辰倭乱",
    "dossier_label": "壬辰倭乱",
    "subtitle": "万历二十年—二十六年（1592—1598）· 明·朝鲜·日本三方",
@@ -7668,6 +7693,7 @@ window.SANDBOX_DATA = {
   },
   "yellow_sea_1894": {
    "key": "yellow_sea_1894",
+   "scene_id": "yellow_sea_1894",
    "title": "甲午战争·黄海海战",
    "dossier_label": "黄海海战",
    "subtitle": "光绪二十年八月十八（1894年9月17日）· 清·日",

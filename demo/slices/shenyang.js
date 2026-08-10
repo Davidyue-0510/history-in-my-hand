@@ -34,6 +34,7 @@ window.SANDBOX_SLICES["shenyang"] = {
   },
   "page": "county.html?scene=shenyang",
   "key": "shenyang",
+  "scene_id": "shenyang",
   "vocab_pack": "ming_qing",
   "terrain_grid": "liaodong"
  },
