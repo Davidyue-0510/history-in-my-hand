@@ -133,21 +133,26 @@ def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
         for ry, rparty, rtroops, rentry in reinforcements:
             if ry != year:
                 continue
-            # 找该 party 的最近城池作为投放点
+            # 入口城存在 → 优先投放（若敌控则强行占领）
+            if rentry in garrison:
+                entry = rentry
+                if garrison[entry]["party"] != rparty:
+                    garrison[entry] = {"party": rparty, "troops": rtroops}
+                    print("  [Y%d] INVADE %s +%d takes %s" % (year, rparty, rtroops, entry[:8]))
+                else:
+                    garrison[entry]["troops"] += rtroops
+                    print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
+                continue
+            # 否则找最近友城
             targets = [pid for pid, g in garrison.items() if g["party"] == rparty]
-            if not targets and rentry in garrison:
-                # 新势力入场：直接设为入口城（攻占或创建）
-                targets = [rentry]
             if not targets:
                 continue
-            # 选择离入口最近的
             pmap2 = {p["id"]: p for p in places["places"]}
             ep = pmap2.get(rentry) or {}
             targets.sort(key=lambda pid: abs(pmap2.get(pid, {}).get("lat", 0) - ep.get("lat", 0)))
             entry = targets[0]
             garrison[entry]["troops"] += rtroops
-            if garrison[entry]["party"] != rparty:
-                garrison[entry] = {"party": rparty, "troops": rtroops}
+            print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
             print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
 
         # 年度增援：每 party 恢复 10% 兵力（后勤补给）
