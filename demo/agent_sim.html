@@ -1,373 +1,375 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>三阶层演化模拟器 · Agent Sim</title>
+<title>历史周期律 · 王朝兴衰模拟器</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font:14px/1.5 system-ui,sans-serif;background:#1a1a2e;color:#e0e0e0;display:flex;height:100vh;overflow:hidden}
-.sidebar{width:280px;background:#16213e;padding:14px;overflow-y:auto;flex-shrink:0;border-right:1px solid #0f3460}
-.sidebar h2{font-size:16px;color:#e94560;margin-bottom:10px;border-bottom:1px solid #0f3460;padding-bottom:6px}
-.sidebar h3{font-size:12px;color:#aaa;margin:10px 0 4px;text-transform:uppercase;letter-spacing:1px}
-.panel{margin-bottom:10px}
-.panel label{display:block;font-size:11px;color:#aaa;margin-bottom:2px}
-.panel input[type=range]{width:100%;accent-color:#e94560}
-.panel .val{float:right;color:#e94560;font-weight:bold;font-size:11px}
-button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:12px;margin:2px}
-.btn-play{background:#e94560;color:#fff}
-.btn-pause{background:#533483;color:#fff}
-.btn-step{background:#0f3460;color:#ccc}
-.btn-reset{background:#333;color:#ccc}
-.btn-faster{background:#1a3a5c;color:#ccc}
-.btn-event{background:#1a1a3e;color:#ccc;border:1px solid #333;display:block;width:100%;text-align:left;margin:2px 0;padding:4px 8px;font-size:11px}
-.btn-event:hover{background:#0f3460;color:#fff}
-.btn-event .k{color:#e94560;margin-left:8px;font-size:10px}
-.stats{font-size:11px}
-.stats .row{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1a1a3e}
-.stats .row span:last-child{color:#e94560}
+body{font:13px/1.5 system-ui,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:300px;background:#161b22;padding:12px;overflow-y:auto;flex-shrink:0;border-right:1px solid #30363d}
+.sidebar h2{font-size:15px;color:#e94560;margin-bottom:8px;border-bottom:1px solid #30363d;padding-bottom:6px}
+.sidebar h3{font-size:11px;color:#8b949e;margin:10px 0 4px;text-transform:uppercase;letter-spacing:1px}
+.section{margin-bottom:8px}
+.section label{display:flex;justify-content:space-between;font-size:11px;color:#8b949e;margin-bottom:2px}
+.section label .v{color:#e94560;font-weight:bold}
+.section input[type=range]{width:100%;accent-color:#e94560}
+.section .hint{font-size:10px;color:#484f58;margin-top:1px}
+button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:11px;margin:2px}
+.btn-run{background:#238636;color:#fff}
+.btn-pause{background:#6e40c9;color:#fff}
+.btn-step{background:#1f6feb;color:#ccc}
+.btn-ff{background:#30363d;color:#ccc}
+.btn-reset{background:#da3633;color:#fff}
+.btn-evt{background:#161b22;color:#8b949e;border:1px solid #30363d;display:block;width:100%;text-align:left;margin:2px 0;padding:4px 8px;font-size:10px;border-radius:3px}
+.btn-evt:hover{background:#1f2428;color:#c9d1d9;border-color:#e94560}
+.btn-evt .k{color:#e94560;margin-left:6px;font-size:9px}
+.btn-ok{background:#238636;color:#fff;width:100%;margin-top:4px}
+.ctrl-row{display:flex;gap:4px;margin:4px 0}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.legend i{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:3px}
+.legend span{font-size:10px;color:#8b949e}
+.stats{font-size:10px}
+.stats .row{display:flex;justify-content:space-between;padding:1px 0;border-bottom:1px solid #21262d}
+.stats .row .lv{color:#e94560}
 .main{flex:1;display:flex;flex-direction:column}
-#cv{cursor:crosshair}
-.chart-area{height:140px;background:#0d1117;border-top:1px solid #0f3460}
-.tooltip{position:absolute;display:none;background:#16213e;border:1px solid #e94560;padding:6px 10px;font-size:11px;border-radius:4px;pointer-events:none;z-index:100;max-width:200px}
-.tooltip .tt-name{color:#fff;font-weight:bold}
-.tooltip .tt-stat{color:#aaa}
-.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-.legend-item{display:flex;align-items:center;gap:4px;font-size:10px}
-.legend-dot{width:10px;height:10px;border-radius:50%}
-.narrative{flex:1;padding:8px 12px;font-size:11px;background:#0d1117;color:#aaa;overflow-y:auto;min-height:60px}
-.narrative .warn{color:#f0a500}
-.narrative .danger{color:#e94560}
-.narrative .good{color:#81c784}
-.log-panel{display:none;max-height:120px;overflow-y:auto;padding:4px 8px;font-size:10px;background:#0d1117;border-top:1px solid #0f3460}
-.log-panel .evt{padding:1px 0}
-.log-panel .revolt{color:#e94560}
-.log-panel .defect{color:#f0a500}
-.log-panel .invade{color:#00b4d8}
+#cv{cursor:crosshair;border-bottom:1px solid #30363d}
+#chartCv{height:150px;background:#0d1117;border-top:1px solid #30363d}
+.narr{height:50px;padding:6px 12px;font-size:11px;background:#0d1117;border-bottom:1px solid #30363d;overflow:hidden}
+.narr .w{color:#d29922}.narr .d{color:#e94560}.narr .g{color:#3fb950}.narr .m{color:#8b949e}
+.tt{position:absolute;display:none;background:#161b22;border:1px solid #e94560;padding:5px 8px;font-size:10px;border-radius:4px;pointer-events:none;z-index:100}
+.tt b{color:#fff}.tt s{color:#8b949e}
+.log{display:none;max-height:120px;overflow-y:auto;padding:4px 8px;font-size:10px;background:#0d1117;border-top:1px solid #30363d}
+.log .r{color:#e94560}.log .y{color:#d29922}.log .b{color:#58a6ff}.log .m{color:#8b949e}
 </style>
 </head>
 <body>
 <div class="sidebar">
-  <h2>🏛 三阶层演化</h2>
-  
+  <h2>🏛 历史周期律模拟</h2>
   <div class="legend">
-    <div class="legend-item"><span class="legend-dot" style="background:#4fc3f7"></span> 朝廷 center</div>
-    <div class="legend-item"><span class="legend-dot" style="background:#81c784"></span> 士绅 local</div>
-    <div class="legend-item"><span class="legend-dot" style="background:#9e9e9e"></span> 庶民 grassroot</div>
-    <div class="legend-item"><span class="legend-dot" style="background:#e94560"></span> 叛军 rebel</div>
+    <span><i style="background:#58a6ff"></i>朝廷</span>
+    <span><i style="background:#3fb950"></i>士绅</span>
+    <span><i style="background:#8b949e"></i>庶民</span>
+    <span><i style="background:#e94560"></i>叛军</span>
   </div>
-  <div style="font-size:10px;color:#666;margin-bottom:8px;line-height:1.3">
-    绿线 = 家族姻亲同盟。单击地图上的点查看 agent 详情。
+  <div style="font-size:10px;color:#484f58;margin-bottom:6px;line-height:1.4">
+    <b>核心机制</b>：土地兼并→税基萎缩→财政危机→军队废弛→外敌入侵→王朝覆灭。<br>
+    绿线=士绅家族联姻。单击地图看详情。<br>
+    所有参数<span style="color:#e94560">实时生效</span>，无需重置。
   </div>
 
-  <h3>⚙ 参数</h3>
-  <div class="panel">
-    <label>人口规模 <span class="val" id="vPop">60</span></label>
-    <input type="range" id="population" min="20" max="200" value="60" oninput="updateVal(this)" onchange="updateVal(this)">
+  <h3>⚙ 经济参数</h3>
+  <div class="section">
+    <label>税率<span class="v" id="vTax">30%</span></label>
+    <input type="range" id="taxRate" min="5" max="60" value="30">
+    <div class="hint">↑国库收入 ↑庶民负担</div>
   </div>
-  <div class="panel">
-    <label>税率（朝廷→庶民）<span class="val" id="vTax">40%</span></label>
-    <input type="range" id="taxRate" min="10" max="90" value="40" oninput="updateValPct(this)" onchange="updateValPct(this)">
-    <div style="font-size:9px;color:#666">越高，庶民粮食越少，不满 ↑</div>
+  <div class="section">
+    <label>军费占比<span class="v" id="vMil">20%</span></label>
+    <input type="range" id="milBudget" min="5" max="50" value="20">
+    <div class="hint">↑军队战力 ↑国库消耗</div>
   </div>
-  <div class="panel">
-    <label>初始教育垄断 <span class="val" id="vEdu">30%</span></label>
-    <input type="range" id="eduInit" min="10" max="90" value="30" oninput="updateValPct(this)" onchange="updateValPct(this)">
-    <div style="font-size:9px;color:#666">士绅独占知识 → 固化 ⇗</div>
+  <div class="section">
+    <label>官僚开支<span class="v" id="vBur">15%</span></label>
+    <input type="range" id="burCost" min="5" max="40" value="15">
+    <div class="hint">↑行政效率 ↑财政负担</div>
   </div>
-  <div class="panel">
-    <label>革命动员阈值 <span class="val" id="vMob">80%</span></label>
-    <input type="range" id="mobThresh" min="50" max="95" value="80" oninput="updateValPct(this)" onchange="updateValPct(this)">
-  </div>
-  <div class="panel">
-    <label>士绅叛逃阈值 <span class="val" id="vDef">60%</span></label>
-    <input type="range" id="defectThresh" min="30" max="90" value="60" oninput="updateValPct(this)" onchange="updateValPct(this)">
-  </div>
+
+  <h3>⚡ 事件与改革</h3>
+  <button class="btn-evt" onclick="triggerEvent('invasion')">⚔ 外敌入侵<span class="k">边境威胁+40，急需军费</span></button>
+  <button class="btn-evt" onclick="triggerEvent('disaster')">🌪 天灾（旱/涝/蝗）<span class="k">全国粮食-30%，不满+0.2</span></button>
+  <button class="btn-evt" onclick="triggerEvent('land_reform')">📜 均田令<span class="k">土地兼并-0.15，士绅不满+0.3</span></button>
+  <button class="btn-evt" onclick="triggerEvent('tax_cut')">💰 减税<span class="k">税率-10%，庶民不满-0.15</span></button>
+  <button class="btn-evt" onclick="triggerEvent('purge')">🗑 肃贪<span class="k">官僚效率+0.1，士绅不满+0.1</span></button>
+  <button class="btn-evt" onclick="triggerEvent('conscript')">🏹 征兵<span class="k">朝廷兵力+30%，庶民劳力-5%</span></button>
 
   <h3>⏱ 控制</h3>
-  <div style="display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px">
-    <button class="btn-play" onclick="play()">▶</button>
+  <div class="ctrl-row">
+    <button class="btn-run" onclick="run()">▶ 运行</button>
     <button class="btn-pause" onclick="pause()">⏸</button>
-    <button class="btn-step" onclick="step()">⏭</button>
+    <button class="btn-step" onclick="tick()">⏭</button>
+    <button class="btn-ff" onclick="ff()">⏩+10</button>
+    <button class="btn-ff" onclick="ff50()">⏩+50</button>
     <button class="btn-reset" onclick="reset()">↺</button>
-    <button class="btn-faster" onclick="fastForward()">⏩+10</button>
-    <button class="btn-faster" onclick="speedUp()">2x</button>
-    <button class="btn-faster" onclick="slowDown()">½x</button>
   </div>
-  <div class="panel">
-    <label>速度 <span class="val" id="vSpd">200ms</span></label>
-    <input type="range" id="speed" min="50" max="1000" value="200" style="direction:rtl" oninput="document.getElementById('vSpd').textContent=this.value+'ms'">
+  <div class="section">
+    <label>速度<span class="v" id="vSpd">200ms</span></label>
+    <input type="range" id="speed" min="20" max="500" value="200" style="direction:rtl">
   </div>
 
-  <h3>⚡ 事件注入</h3>
-  <div style="font-size:10px;color:#666;margin-bottom:4px">单击下方按钮排入事件（在当前年+1后触发）：</div>
-  <button class="btn-event" onclick="scheduleEvent('invade','边缘')">
-    ⚔ 外敌入侵<span class="k">打击边境庶民，不满 +0.35</span></button>
-  <button class="btn-event" onclick="scheduleEvent('famine','全境')">
-    🌾 饥荒<span class="k">全境粮食 -30，不满 +0.25</span></button>
-  <button class="btn-event" onclick="scheduleEvent('reform','全境')">
-    📜 改革<span class="k">庶民不满 -0.3</span></button>
-  <button class="btn-event" onclick="scheduleEvent('crackdown','全境')">
-    🗡 镇压<span class="k">消灭叛军，但不满 +0.15</span></button>
-  <button class="btn-event" onclick="scheduleEvent('betrayal','local')">
-    🐍 高层叛变<span class="k">随机 local → rebel</span></button>
-  <div style="margin-top:6px">
-    <input id="customEvent" placeholder="或手写：5:invade:east" style="width:100%;padding:4px;background:#0d1117;border:1px solid #333;color:#aaa;font-size:11px;border-radius:3px">
-    <button class="btn-play" style="width:100%;margin-top:3px" onclick="injectCustom()">注入</button>
-  </div>
-
-  <h3>📊 状态</h3>
+  <h3>📊 国势</h3>
   <div class="stats">
-    <div class="row"><span>年份</span><span id="sYear">0</span></div>
-    <div class="row"><span>朝廷 center</span><span id="sCenter">--</span></div>
-    <div class="row"><span>士绅 local</span><span id="sLocal">--</span></div>
-    <div class="row"><span>庶民 grassroot</span><span id="sGrass">--</span></div>
-    <div class="row"><span>叛军 rebel</span><span id="sRebel">0</span></div>
-    <div class="row"><span>教育垄断</span><span id="sEdu">--</span></div>
-    <div class="row"><span>动员度</span><span id="sMob">--</span></div>
-    <div class="row"><span>center凝聚力</span><span id="sSolC">--</span></div>
-    <div class="row"><span>local凝聚力</span><span id="sSolL">--</span></div>
+    <div class="row"><span>王朝</span><span class="lv" id="sDyn">第1王朝</span></div>
+    <div class="row"><span>年份 / 享国</span><span class="lv" id="sYear">0</span></div>
+    <div class="row"><span>土地兼并度</span><span class="lv" id="sLand">--</span></div>
+    <div class="row"><span>国库（粮）</span><span class="lv" id="sTreas">--</span></div>
+    <div class="row"><span>军力 / 边患</span><span class="lv" id="sMil">--</span></div>
+    <div class="row"><span>官僚效率</span><span class="lv" id="sEff">--</span></div>
+    <div class="row"><span>朝廷(白)/士绅(绿)/庶民(灰)</span><span class="lv" id="sPop">--</span></div>
+    <div class="row"><span>叛军</span><span class="lv" id="sReb">0</span></div>
+    <div class="row"><span>庶民不满</span><span class="lv" id="sGrv">--</span></div>
   </div>
-
-  <div style="font-size:10px;color:#555;margin-top:8px;cursor:pointer" onclick="toggleLog()">
-    📋 事件日志 ▼
-  </div>
-  <div class="log-panel" id="logPanel"></div>
+  <div style="font-size:10px;color:#484f58;margin-top:6px;cursor:pointer" onclick="tgLog()">📋 事件日志 ▼</div>
+  <div class="log" id="lg"></div>
 </div>
 
 <div class="main">
   <canvas id="cv"></canvas>
-  <div class="narrative" id="narrative" style="flex:0 1 auto;max-height:60px">
-    点击 ▶ 运行 开始模拟。左侧调整参数后需点 ↺ 重置生效。
-  </div>
-  <canvas id="chartCv" class="chart-area"></canvas>
+  <div class="narr" id="narr"><span class="m">点击 ▶ 运行开始。调整左侧滑块即时生效，无需重置。</span></div>
+  <canvas id="chartCv"></canvas>
 </div>
-<div class="tooltip" id="tooltip"></div>
+<div class="tt" id="tt"></div>
 
 <script>
-// ===== DATA MODEL =====
-let agents = [];
-let year = 0, paused = true;
-let timer = null;
-let history = [];
-let events = [];
-let params = {};
-let showLog = false;
+// ============================================================
+// 历史周期律 · 土地兼并 → 财政危机 → 军力衰败 → 王朝覆灭
+// ============================================================
+let A=[], yr=0, paused=true, tm=null, hist=[], events=[];
+let dynNum=1, dynAge=0, landConc=0.2, treasury=500, milPower=100, burEff=0.8, borderThreat=20;
+const CC={center:'#58a6ff',local:'#3fb950',grassroot:'#8b949e',rebel:'#e94560'};
+const CN={center:'朝廷',local:'士绅',grassroot:'庶民',rebel:'叛军'};
 
-function getParams() {
-  return {
-    population: +document.getElementById('population').value,
-    taxRate: +document.getElementById('taxRate').value / 100,
-    eduInit: +document.getElementById('eduInit').value / 100,
-    mobThresh: +document.getElementById('mobThresh').value / 100,
-    defectThresh: +document.getElementById('defectThresh').value / 100,
-    speed: +document.getElementById('speed').value
-  };
+function P(k,def){
+  let el=document.getElementById(k);
+  return el? +el.value : def;
 }
 
-function updateVal(el) { document.getElementById('v'+el.id.slice(1)).textContent = el.value; }
-function updateValPct(el) { document.getElementById('v'+el.id.slice(1)).textContent = el.value+'%'; }
-
-const CLASS_COLORS = {center:'#4fc3f7', local:'#81c784', grassroot:'#9e9e9e', rebel:'#e94560'};
-const CLASS_NAMES = {center:'朝廷', local:'士绅', grassroot:'庶民', rebel:'叛军'};
-
-function createAgent(id, cls, x, y, family) {
-  return {id, cls, x, y, family, resources:{troops:cls==='center'?100:cls==='local'?60:30, grain:cls==='center'?200:cls==='local'?120:50, edu_control:cls==='local'?params.eduInit:0}, grievance:0, party:cls==='center'?'regime':cls==='local'?'local_elite':'peasant', alive:true};
+function createAgent(i,cls,x,y,fam){
+  return {i,cls,x,y,fam,land:cls==='local'?5:cls==='center'?3:2, gr:cls==='center'?200:cls==='local'?120:60, tp:cls==='center'?100:cls==='local'?60:30, gv:0, alive:true, party:cls==='center'?'regime':'loyal'};
 }
 
-function initAgents() {
-  params = getParams();
-  agents=[]; year=0; history=[]; events=[];
-  const N=params.population; let fid=0;
-  for(let i=0;i<N;i++){
+function reset(){
+  pause(); if(tm)clearTimeout(tm);
+  A=[]; yr=0; hist=[]; events=[]; dynNum=1; dynAge=0;
+  landConc=0.2; treasury=500; milPower=100; burEff=0.8; borderThreat=20;
+  let N=60;
+  for(let i=0,fid=0;i<N;i++){
     let cls,x,y,fam=null;
-    if(i<N*0.1){cls='center';x=0.4+Math.random()*0.2;y=0.4+Math.random()*0.2;}
-    else if(i<N*0.3){cls='local';x=0.2+Math.random()*0.6;y=0.2+Math.random()*0.6;if(Math.random()<0.5)fam='fam_'+(fid++%Math.max(1,Math.floor(N*0.05)));}
+    if(i<N*0.08){cls='center';x=0.4+Math.random()*0.2;y=0.4+Math.random()*0.2;}
+    else if(i<N*0.25){cls='local';x=0.2+Math.random()*0.6;y=0.2+Math.random()*0.6;if(Math.random()<0.5)fam='F'+(fid++%Math.max(1,Math.floor(N*0.05)));}
     else{cls='grassroot';x=Math.random();y=Math.random();}
-    agents.push(createAgent(i,cls,x,y,fam));
+    A.push(createAgent(i,cls,x,y,fam));
   }
-  updateNarrative('初始化完成：'+N+'人（朝廷'+Math.floor(N*0.1)+' / 士绅'+Math.floor(N*0.2)+' / 庶民'+Math.floor(N*0.7)+'）。调整左侧参数后点 ▶。');
+  updateSliders(); render();
+  lg('🚩 第'+dynNum+'王朝建立。均田地、轻徭役、简官僚。','m');
 }
 
-function simulateYear() {
-  // 每回合从 DOM 读取 + 同步显示（保证滑块一定生效）
-  let tv=+document.getElementById('taxRate').value; params.taxRate=tv/100; document.getElementById('vTax').textContent=tv+'%';
-  let mv=+document.getElementById('mobThresh').value; params.mobThresh=mv/100; document.getElementById('vMob').textContent=mv+'%';
-  let dv=+document.getElementById('defectThresh').value; params.defectThresh=dv/100; document.getElementById('vDef').textContent=dv+'%';
-  let sv=+document.getElementById('speed').value; params.speed=sv; document.getElementById('vSpd').textContent=sv+'ms';
+// ===== CORE CYCLE =====
+function tick(){
+  let tx=P('taxRate',30)/100, mb=P('milBudget',20)/100, bc=P('burCost',15)/100;
 
-  let yrEvents = events.filter(e=>e.year===year);
-  yrEvents.forEach(e=>{
-    if(e.type==='invade'){let edge=agents.filter(a=>a.cls==='grassroot'&&a.alive&&(a.x<0.2||a.x>0.8||a.y<0.2||a.y>0.8));if(edge.length){let t=edge[Math.floor(Math.random()*edge.length)];t.resources.troops=Math.max(0,t.resources.troops-40);t.grievance=Math.min(1,t.grievance+0.35);log('⚔ 外敌入侵'+(e.target||'边境')+'，庶民陷落 (不满+0.35)','invade');}}
-    else if(e.type==='famine'){agents.filter(a=>a.alive).forEach(a=>{a.resources.grain=Math.max(0,a.resources.grain-30);a.grievance=Math.min(1,a.grievance+0.25);});log('🌾 饥荒：全境粮减30，不满+0.25','metric');}
-    else if(e.type==='reform'){agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.max(0,a.grievance-0.3));log('📜 改革：庶民不满-0.3','metric');}
-    else if(e.type==='crackdown'){let rebels=agents.filter(a=>a.party==='rebel'&&a.alive);if(rebels.length){let t=rebels[Math.floor(Math.random()*rebels.length)];t.alive=false;t.party='dead';}agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.min(1,a.grievance+0.15));log('🗡 镇压：消灭叛军，但不满+0.15','invade');}
-    else if(e.type==='betrayal'){let locals=agents.filter(a=>a.cls==='local'&&a.alive&&a.party!=='rebel');if(locals.length){let t=locals[Math.floor(Math.random()*locals.length)];t.party='rebel';log('🐍 士绅叛变！','defect');}}
-  });
-
-  // Tax: 高税率 → 庶民 grievance 快速累积
-  agents.filter(a=>a.cls==='center'&&a.alive).forEach(c=>{
-    agents.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,c)<0.3).forEach(g=>{
-      let tax=Math.min(g.resources.grain,Math.floor(g.resources.grain*params.taxRate));
-      g.resources.grain-=tax; c.resources.grain+=tax;
+  // 1. 土地兼并（核心引擎）
+  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
+    A.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,l)<0.25&&a.land>0).forEach(g=>{
+      if(Math.random()<0.015){g.land-=0.5; l.land+=0.5;}
     });
   });
-  // 税率直接影响不满：税率>40%每年不满上升
-  agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>{
-    let taxGrievance = Math.max(0, (params.taxRate - 0.3) * 0.4);
-    a.grievance = Math.min(1, a.grievance + taxGrievance);
-    // 饥荒（grain < 10）→ 额外不满
-    if (a.resources.grain < 10) a.grievance = Math.min(1, a.grievance + 0.1);
+  // 士绅土地越多，兼并越快
+  landConc=A.filter(a=>a.alive&&a.cls==='local').reduce((s,a)=>s+a.land,0)/
+           Math.max(1,A.filter(a=>a.alive).reduce((s,a)=>s+a.land,0));
+
+  // 2. 税收
+  let taxpayers=A.filter(a=>a.cls==='grassroot'&&a.alive).length;
+  let tBase=Math.max(1,taxpayers*(1-landConc*0.7)); // 土地兼并→税基萎缩
+  let tRevenue=Math.floor(tBase*10*tx*(1-landConc*0.5));
+  // 税收先入国库，但腐败截留一部分
+  treasury+=Math.floor(tRevenue*(1-(0.8-burEff*0.5)));
+  // 税负转移到庶民
+  A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>{
+    let tax=Math.floor(Math.max(0, g.gr*tx*0.6));
+    g.gr-=tax;
+    if(g.gr<10)g.gv=Math.min(1,g.gv+0.03);
+    g.gv=Math.min(1,g.gv+(tx-0.15)*0.03); // 高税率积累不满
   });
 
-  // 教育垄断加速（基础0.02/年 → 50年后达1.0）
-  agents.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
-    l.resources.edu_control=Math.min(1,l.resources.edu_control+0.02);
+  // 3. 财政支出
+  let milCost=Math.floor(treasury*mb);
+  let burCost=Math.floor(treasury*bc);
+  treasury-=milCost+burCost;
+  milPower+=milCost>0?milCost*0.1: -milPower*0.05; // 没钱=军队溃散
+  milPower=Math.max(0,milPower);
+
+  // 4. 官僚效率自然衰减（除非持续投入）
+  burEff=Math.max(0.1, burEff-0.001 + (bc>0.15?0.002:0));
+  if(treasury<0){burEff-=0.005; treasury=Math.max(0,treasury);} // 财政崩溃
+
+  // 5. 边患积累
+  borderThreat+=1.5+landConc*2; // 土地兼并越严重，边患越猖獗
+  if(milPower>borderThreat*0.8)borderThreat=Math.max(10,borderThreat-3);
+
+  // 6. 中央对地方控制力
+  let controlPower=Math.max(0,1-landConc*1.2-(0.8-burEff)*0.5);
+
+  // 7. 事件
+  let yes=events.filter(e=>e.year===yr);
+  yes.forEach(e=>{
+    if(e.t==='invasion'){borderThreat+=40; lg('⚔ 外敌入侵！边患+40','b');
+      A.filter(a=>a.alive).forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.1);});}
+    if(e.t==='disaster'){A.filter(a=>a.alive).forEach(a=>{a.gr=Math.max(0,Math.floor(a.gr*0.7));a.gv=Math.min(1,a.gv+0.2);});lg('🌪 天灾！全国粮食-30%，不满飙升','y');}
+    if(e.t==='land_reform'){landConc=Math.max(0,landConc-0.15);
+      A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{l.land=Math.max(1,l.land*0.7);l.gv=Math.min(1,l.gv+0.3);});
+      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.land+=1); lg('📜 均田令！兼并-0.15，士绅震怒','y');}
+    if(e.t==='tax_cut'){
+      let el=document.getElementById('taxRate'); el.value=Math.max(5,+el.value-10); updateSliders();
+      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.gv=Math.max(0,g.gv-0.15));
+      lg('💰 减税10%！庶民不满-0.15','g');}
+    if(e.t==='purge'){burEff=Math.min(1,burEff+0.1);
+      A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>l.gv=Math.min(1,l.gv+0.1));
+      lg('🗑 肃贪！官僚效率+0.1','g');}
+    if(e.t==='conscript'){A.filter(a=>a.cls==='center'&&a.alive).forEach(c=>c.tp+=30);
+      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.gr=Math.max(0,Math.floor(g.gr*0.95)));
+      lg('🏹 征兵！朝廷兵力+30，庶民劳力-5%','b');}
   });
 
-  // Growth
-  agents.filter(a=>a.alive).forEach(a=>{a.resources.grain+=a.cls==='grassroot'?5:8;
-    a.resources.troops+=a.cls==='center'?2:1;});
+  // 8. 自然增长
+  A.filter(a=>a.alive).forEach(a=>{
+    a.gr+=(a.cls==='center'?8:a.cls==='local'?6:4);
+    a.tp+=(a.cls==='center'?1:0.3);
+  });
 
-  // Decisions
-  let metrics=computeMetrics();
-  agents.filter(a=>a.alive).forEach(a=>{
-    if(a.cls==='local'&&a.grievance>params.defectThresh){a.party='rebel';log('🔀 士绅投机叛逃 (不满='+a.grievance.toFixed(2)+')','defect');}
-    if(a.cls==='grassroot'&&metrics.mobilization>params.mobThresh&&a.grievance>0.4){
-      a.party='rebel';
-      agents.filter(n=>n.cls==='grassroot'&&n.alive&&n.party!=='rebel'&&dist(n,a)<0.2).forEach(n=>{n.party='rebel';n.grievance=Math.min(1,n.grievance+0.2);});
-      log('🔥 革命爆发！动员度='+metrics.mobilization.toFixed(2)+' 不满='+a.grievance.toFixed(2),'revolt');
+  // 9. 士绅投机（控制力弱→叛逃）
+  let ctl=controlPower;
+  A.filter(a=>a.cls==='local'&&a.alive&&a.party==='loyal').forEach(l=>{
+    if(l.gv>0.5||(ctl<0.3&&l.gv>0.3)){l.party='rebel';lg('🔀 士绅叛逃（不满='+l.gv.toFixed(2)+'）','y');}
+  });
+
+  // 10. 庶民造反
+  let grv_avg=A.filter(a=>a.cls==='grassroot'&&a.alive).reduce((s,a)=>s+a.gv,0)/
+              Math.max(1,A.filter(a=>a.cls==='grassroot'&&a.alive).length);
+  if(grv_avg>0.55||(ctl<0.2&&grv_avg>0.35)){
+    let gg=A.filter(a=>a.cls==='grassroot'&&a.alive&&a.party==='loyal');
+    let nRevolt=Math.ceil(gg.length*0.3);
+    for(let i=0;i<Math.min(nRevolt,gg.length);i++){
+      if(Math.random()<0.5+grv_avg*0.5){gg[i].party='rebel';}
     }
-  });
+    if(nRevolt>2)lg('🔥 农民起义！'+nRevolt+'庶民揭竿（不满='+grv_avg.toFixed(2)+' 控制力='+ctl.toFixed(2)+'）','r');
+  }
 
-  // === 地方叛乱 + 中央控制力衰减 ===
-  let rebels=agents.filter(a=>a.party==='rebel'&&a.alive), centers=agents.filter(a=>a.cls==='center'&&a.alive);
-  let aliveCount=agents.filter(a=>a.alive).length;
-  let rebelRatio=rebels.length/Math.max(1,aliveCount);
-
-  // 叛乱向京城扩散：离 center 最近的 rebel 每天尝试攻城
-  if(rebels.length>=3&&centers.length){
-    centers.forEach(c=>{
-      let nearRebels=rebels.filter(r=>dist(r,c)<0.25);
-      if(nearRebels.length>=3){
-        // 京城被围
-        c.resources.troops-=10+c.resources.troops*0.1;
-        c.resources.grain-=15;
-        if(c.resources.troops<=0){c.alive=false;c.party='dead';
-          log('💀 朝廷 center#'+c.id+' 被叛军攻陷！京城失守！','revolt');}
-      }
+  // 11. 叛乱扩散
+  let rebels=A.filter(a=>a.party==='rebel'&&a.alive);
+  if(rebels.length>=3&&ctl<0.4){
+    // 围城
+    A.filter(a=>a.cls==='center'&&a.alive).forEach(c=>{
+      let nr=rebels.filter(r=>dist(r,c)<0.25).length;
+      if(nr>=3){c.tp-=15;c.gr-=20;if(c.tp<=0){c.alive=false;c.party='dead';lg('💀 京城陷落！朝廷覆灭','r');}}
+    });
+    // 蔓延
+    rebels.forEach(r=>{
+      A.filter(n=>n.party==='loyal'&&n.alive&&dist(n,r)<0.2&&Math.random()<0.3).forEach(n=>n.party='rebel');
     });
   }
 
-  // 叛乱比例越高，中心控制力越弱
-  if(rebelRatio>0.2){
-    centers.forEach(c=>{
-      c.resources.troops=Math.max(0,Math.floor(c.resources.troops*(1-rebelRatio*0.5)));
-      c.resources.grain=Math.max(0,Math.floor(c.resources.grain*(1-rebelRatio*0.3)));
-    });
-    if(rebelRatio>0.3)log('⚠ 地方失控：'+rebels.length+'叛军活跃（'+Math.floor(rebelRatio*100)+'%），中央控制力崩塌','invade');
+  // 12. 王朝颠覆
+  let aliveC=A.filter(a=>a.cls==='center'&&a.alive).length;
+  let aliveR=rebels.filter(r=>r.alive).length;
+  let totalAlive=A.filter(a=>a.alive).length;
+  if(aliveC===0||(aliveR>totalAlive*0.4&&aliveR>=5)||(milPower<borderThreat*0.3&&aliveR>=3)){
+    lg('👑 第'+dynNum+'王朝覆灭！享国'+dynAge+'年。土地兼并='+landConc.toFixed(2)+' 边患='+Math.floor(borderThreat),'r');
+    // 新朝建立
+    dynNum++; dynAge=0; landConc=0.15; treasury=400; milPower=80; burEff=0.75; borderThreat=15;
+    // 叛军中的强者成为新朝廷
+    let newRulers=rebels.filter(r=>r.alive).sort((a,b)=>b.tp-a.tp).slice(0,Math.ceil(totalAlive*0.06));
+    newRulers.forEach(a=>{a.cls='center';a.party='regime';a.tp=120;a.gr=250;a.gv=0;});
+    // 旧朝廷全部降级
+    A.filter(a=>a.cls==='center'&&a.alive).forEach(a=>{if(!newRulers.includes(a)){a.cls='grassroot';a.party='loyal';a.gv=0.3;}});
+    A.filter(a=>a.party==='rebel').forEach(a=>{a.party='loyal';a.gv=Math.max(0,a.gv-0.4);});
+    // 旧士绅部分降级
+    A.filter(a=>a.cls==='local'&&a.alive&&Math.random()<0.3).forEach(a=>{a.cls='grassroot';a.land=1;});
+    lg('🚩 第'+dynNum+'王朝建立！均田轻徭，万象更新。','g');
   }
 
-  // 一小股叛军每天尝试单点镇压（中心反击）
-  if(rebels.length&&centers.length&&rebelRatio<0.3){
-    let c=centers[Math.floor(Math.random()*centers.length)], r=rebels[Math.floor(Math.random()*rebels.length)];
-    if(c.resources.troops>r.resources.troops*1.5){r.alive=false;r.party='dead';}
-    else{c.resources.troops=Math.max(0,c.resources.troops-20);}
-  }
-
-  // === 王朝颠覆 ===
-  let aliveCenters=agents.filter(a=>a.cls==='center'&&a.alive).length;
-  let aliveRebels=agents.filter(a=>a.party==='rebel'&&a.alive).length;
-  if(aliveCenters===0||(aliveRebels>aliveCenters*5&&aliveRebels>=5)){
-    log('👑 王朝覆灭！第'+year+'年，叛军推翻旧政权。新朝建立...','revolt');
-    // 新王朝：叛军中的强者变为新 center，不满重置
-    let newRulers=agents.filter(a=>a.party==='rebel'&&a.alive).sort((a,b)=>b.resources.troops-a.resources.troops).slice(0,Math.ceil(aliveCount*0.08));
-    newRulers.forEach(a=>{a.cls='center';a.party='regime';a.resources.troops=150;a.resources.grain=300;a.grievance=0;});
-    // 其余叛军回归庶民
-    agents.filter(a=>a.party==='rebel'&&a.alive).forEach(a=>{a.party='peasant';a.cls='grassroot';a.grievance=Math.max(0,a.grievance-0.4);});
-    // 旧士绅部分保留、部分降为庶民
-    agents.filter(a=>a.cls==='local'&&a.alive&&Math.random()<0.4).forEach(a=>{a.cls='grassroot';a.party='peasant';});
-    log('✅ 新朝建立：'+newRulers.length+'位新朝廷官员。阶级重置。','metric');
-  }
-
-  history.push({year,...metrics,rebelCount:aliveRebels});
-  year++;
-  buildNarrative(metrics);
+  // 记录
+  let rCount=rebels.filter(r=>r.alive).length;
+  hist.push({yr,dyn:yr-dynAge,landConc,treasury,milPower,borderThreat,burEff,grv_avg,rCount,dynNum,dynAge});
+  yr++; dynAge++;
+  updateNarr(controlPower,grv_avg,rCount);
+  updateStats();
 }
 
-function computeMetrics(){
-  let te=0,le=0,cts={center:0,local:0,grassroot:0},gvs={center:0,local:0,grassroot:0},fams={};
-  agents.filter(a=>a.alive).forEach(a=>{cts[a.cls]=(cts[a.cls]||0)+1;gvs[a.cls]=(gvs[a.cls]||0)+a.grievance;te+=a.resources.edu_control||0;if(a.cls==='local')le+=a.resources.edu_control||0;if(a.family)fams[a.family]=(fams[a.family]||0)+1;});
-  let n=Math.max(1,agents.filter(a=>a.alive).length),em=le/Math.max(0.01,te),mob=(1-em)*0.5+(gvs.grassroot/Math.max(1,cts.grassroot))*0.3,sl=cts.local>0?Math.max(...Object.values(fams),0)/cts.local:0;
-  return{education_monopoly:Math.min(1,em),mobilization:Math.min(1,mob),solidarity_center:1-(gvs.center/Math.max(1,cts.center)),solidarity_local:sl,solidarity_grassroot:1-(gvs.grassroot/Math.max(1,cts.grassroot)),counts:cts};
+function updateNarr(ctl,grv,r){
+  let el=document.getElementById('narr'),t='';
+  if(r>=8)t='<span class="d">💀 帝国崩溃中：'+r+'叛军横行，朝廷名存实亡。</span>';
+  else if(r>=3)t='<span class="w">⚠ 叛乱四起：'+r+'叛军。中央控制力='+ctl.toFixed(2)+'。边境告急。</span>';
+  else if(ctl<0.3)t='<span class="w">⚡ 控制力崩塌：'+ctl.toFixed(2)+'。土地兼并='+landConc.toFixed(2)+'，税基枯竭。</span>';
+  else if(landConc>0.6)t='<span class="w">📊 土地兼并严重='+landConc.toFixed(2)+'。自耕农大量破产。</span>';
+  else if(treasury<100)t='<span class="w">💰 财政告急：国库仅'+Math.floor(treasury)+'粮。军费不足。</span>';
+  else t='<span class="g">✓ 国泰民安。兼并='+landConc.toFixed(2)+' 国库='+Math.floor(treasury)+' 军力='+Math.floor(milPower)+'</span>';
+  el.innerHTML=t+' <span class="m">· 第'+dynNum+'王朝 第'+dynAge+'年</span>';
 }
-function dist(a,b){let dx=a.x-b.x,dy=a.y-b.y;return Math.sqrt(dx*dx+dy*dy);}
 
-// ===== NARRATIVE =====
-function buildNarrative(m){
-  let r=agents.filter(a=>a.party==='rebel'&&a.alive).length,el=document.getElementById('narrative'),txt='';
-  if(r>=15)txt='<span class=danger>💀 王朝崩溃：'+r+'叛军活跃。统治合法性瓦解。</span>';
-  else if(r>=6)txt='<span class=danger>🔥 大规模叛乱：'+r+'名叛军。王朝岌岌可危！</span>';
-  else if(r>=1)txt='<span class=warn>⚠ 叛乱：'+r+'名叛军。朝廷镇压中。</span>';
-  else if(m.mobilization>params.mobThresh)txt='<span class=danger>💥 动员度 '+m.mobilization.toFixed(2)+' 超阈值'+params.mobThresh.toFixed(2)+'：革命一触即发！</span>';
-  else{
-    let dist=m.mobilization/params.mobThresh;
-    if(dist>0.8)txt='<span class=warn>⚡ 动员度 '+m.mobilization.toFixed(2)+'（达阈值'+(dist*100).toFixed(0)+'%）：快炸了。</span>';
-    else txt='<span class=good>✓ 稳定。动员度='+m.mobilization.toFixed(2)+'/'+params.mobThresh.toFixed(2)+'。教育垄断='+m.education_monopoly.toFixed(2)+'</span>';
-  }
-  el.innerHTML=txt+' <span style=color:#666>· 第'+year+'年 · 庶民平均不满='
-    +(m.counts.grassroot? (m.solidarity_grassroot?(1-m.solidarity_grassroot).toFixed(2):'0'):'0')+'</span>';
-}
-function updateNarrative(s){document.getElementById('narrative').innerHTML='<span style=color:#aaa>'+s+'</span>';}
-
-// ===== RENDERING =====
-let cv,ctx,chartCv,chartCtx;
-function setupCanvas(){cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=Math.min(window.innerHeight-280,460);ctx=cv.getContext('2d');chartCv=document.getElementById('chartCv');chartCv.width=cv.width;chartCv.height=140;chartCtx=chartCv.getContext('2d');}
-function render(){
-  let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h);
-  ctx.strokeStyle='#1a1a3e';ctx.lineWidth=0.5;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
-  let fm={};agents.filter(a=>a.alive&&a.family).forEach(a=>{if(!fm[a.family])fm[a.family]=[];fm[a.family].push(a);});
-  Object.values(fm).forEach(m=>{if(m.length<2)return;ctx.strokeStyle='rgba(129,199,132,0.12)';ctx.lineWidth=1;ctx.beginPath();m.forEach((a,i)=>{let px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
-  agents.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CLASS_COLORS.rebel:CLASS_COLORS[a.cls],r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.25)';ctx.lineWidth=0.5;ctx.stroke();});
-  renderChart(); updateStats();
-}
-function renderChart(){
-  let cw=chartCv.width,ch=chartCv.height;chartCtx.clearRect(0,0,cw,ch);
-  if(history.length<2)return;
-  let N=history.length,step=Math.max(1,Math.floor(N/cw));
-  [{g:h=>h.education_monopoly,c:'#4fc3f7'},{g:h=>h.mobilization,c:'#e94560'}].forEach(l=>{chartCtx.strokeStyle=l.c;chartCtx.lineWidth=2;chartCtx.beginPath();for(let i=0;i<N;i+=step){let x=(i/N)*cw,y=ch-l.g(history[i])*ch;i===0?chartCtx.moveTo(x,y):chartCtx.lineTo(x,y);}chartCtx.stroke();});
-  chartCtx.fillStyle='#888';chartCtx.font='10px monospace';
-  chartCtx.fillText('蓝=教育垄断',5,12);chartCtx.fillText('红=动员度',5,25);
-  chartCtx.fillText('教育垄断高→阶层固化',5,40);
-  chartCtx.fillText('动员度高→革命爆发',5,55);
-}
 function updateStats(){
-  let m=history.length?history[history.length-1]:null;document.getElementById('sYear').textContent=year+' / '+(history.length?history.length:'0')+'轮';
-  if(m){document.getElementById('sCenter').textContent=m.counts.center||0;document.getElementById('sLocal').textContent=m.counts.local||0;document.getElementById('sGrass').textContent=m.counts.grassroot||0;document.getElementById('sRebel').textContent=agents.filter(a=>a.party==='rebel'&&a.alive).length;document.getElementById('sEdu').textContent=(m.education_monopoly*100).toFixed(0)+'%';document.getElementById('sMob').textContent=(m.mobilization*100).toFixed(0)+'%';document.getElementById('sSolC').textContent=m.solidarity_center.toFixed(2);document.getElementById('sSolL').textContent=m.solidarity_local.toFixed(2);}
+  document.getElementById('sDyn').textContent='第'+dynNum+'王朝';
+  document.getElementById('sYear').textContent=yr+' / 享国'+dynAge;
+  document.getElementById('sLand').textContent=(landConc*100).toFixed(0)+'%';
+  document.getElementById('sTreas').textContent=Math.floor(treasury);
+  document.getElementById('sMil').textContent=Math.floor(milPower)+' / '+Math.floor(borderThreat);
+  document.getElementById('sEff').textContent=burEff.toFixed(2);
+  let cc=A.filter(a=>a.cls==='center'&&a.alive).length, lc=A.filter(a=>a.cls==='local'&&a.alive).length, gc=A.filter(a=>a.cls==='grassroot'&&a.alive).length;
+  document.getElementById('sPop').textContent=cc+' / '+lc+' / '+gc;
+  document.getElementById('sReb').textContent=A.filter(a=>a.party==='rebel'&&a.alive).length;
+  let ga=A.filter(a=>a.cls==='grassroot'&&a.alive).reduce((s,a)=>s+a.gv,0)/Math.max(1,gc);
+  document.getElementById('sGrv').textContent=ga.toFixed(2);
 }
 
-// ===== INTERACTION =====
-cv && cv.addEventListener('click',function(e){
-  let rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top,found=null,minD=12;
-  agents.filter(a=>a.alive).forEach(a=>{let d=Math.hypot(a.x*cv.width-mx,a.y*cv.height-my);if(d<minD){found=a;minD=d;}});
-  let tt=document.getElementById('tooltip');
-  if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+15)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';tt.innerHTML='<div class=tt-name>'+CLASS_NAMES[found.cls]+' #'+found.id+'</div><div class=tt-stat>粮食:'+found.resources.grain+' 兵力:'+found.resources.troops+'</div><div class=tt-stat>不满:'+found.grievance.toFixed(2)+' 教育:'+(found.resources.edu_control||0).toFixed(2)+(found.party==='rebel'?' <span style=color:#e94560>叛军</span>':'')+'</div>';}else{tt.style.display='none';}
-});
+function updateSliders(){
+  document.getElementById('vTax').textContent=document.getElementById('taxRate').value+'%';
+  document.getElementById('vMil').textContent=document.getElementById('milBudget').value+'%';
+  document.getElementById('vBur').textContent=document.getElementById('burCost').value+'%';
+  document.getElementById('vSpd').textContent=document.getElementById('speed').value+'ms';
+}
 
-// ===== CONTROLS =====
-function play(){paused=false;tick();}
+// ===== RENDER =====
+let cv,ctx,chCv,chCtx;
+function setupCv(){
+  cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=Math.min(window.innerHeight-300,440);
+  ctx=cv.getContext('2d');
+  chCv=document.getElementById('chartCv');chCv.width=cv.width;chCv.height=150;chCtx=chCv.getContext('2d');}
+function render(){if(!ctx)return;let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h);
+  ctx.strokeStyle='#21262d';ctx.lineWidth=0.5;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
+  let fm={};A.filter(a=>a.alive&&a.fam).forEach(a=>{if(!fm[a.fam])fm[a.fam]=[];fm[a.fam].push(a);});
+  Object.values(fm).forEach(m=>{if(m.length<2)return;ctx.strokeStyle='rgba(63,185,80,0.12)';ctx.lineWidth=1;ctx.beginPath();m.forEach((a,i)=>{let px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
+  A.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CC.rebel:CC[a.cls],r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.2)';ctx.lineWidth=0.5;ctx.stroke();});
+  renderChart();
+}
+function renderChart(){if(!chCtx||hist.length<2)return;let cw=chCv.width,ch=chCv.height;chCtx.clearRect(0,0,cw,ch);
+  let N=hist.length,step=Math.max(1,Math.floor(N/cw));
+  let maxV=Math.max(1,...hist.map(h=>h.landConc),...hist.map(h=>h.borderThreat/100));
+  [{g:h=>h.landConc,c:'#d29922',l:'兼并'},{g:h=>h.borderThreat/100,c:'#e94560',l:'边患'},{g:h=>(h.rCount||0)/Math.max(1,A.filter(a=>a.alive).length),c:'#8b949e',l:'叛乱%'}].forEach(ln=>{
+    chCtx.strokeStyle=ln.c;chCtx.lineWidth=2;chCtx.beginPath();
+    for(let i=0;i<N;i+=step){let x=(i/N)*cw,y=ch-(ln.g(hist[i])/maxV)*ch;i===0?chCtx.moveTo(x,y):chCtx.lineTo(x,y);}chCtx.stroke();});
+  chCtx.fillStyle='#8b949e';chCtx.font='10px monospace';
+  chCtx.fillText('黄=土地兼并  红=边患  灰=叛乱比例',5,12);
+  // Dynasty markers
+  for(let i=1;i<hist.length;i++){if(hist[i].dynNum!==hist[i-1].dynNum){let x=(i/N)*cw;chCtx.strokeStyle='rgba(88,166,255,0.5)';chCtx.lineWidth=1;chCtx.beginPath();chCtx.moveTo(x,0);chCtx.lineTo(x,ch);chCtx.stroke();chCtx.fillStyle='#58a6ff';chCtx.fillText('第'+hist[i].dynNum+'王朝',x+2,ch-4);}}
+}
+
+// ===== UI =====
+function run(){paused=false;loop();}
 function pause(){paused=true;}
-function step(){simulateYear();render();}
-function fastForward(){for(let i=0;i<10;i++)simulateYear();render();}
-function reset(){pause();if(timer)clearTimeout(timer);initAgents();render();}
-function tick(){if(paused)return;simulateYear();render();timer=setTimeout(tick,params.speed);}
-function speedUp(){let e=document.getElementById('speed');e.value=Math.max(50,parseInt(e.value)/2);document.getElementById('vSpd').textContent=e.value+'ms';}
-function slowDown(){let e=document.getElementById('speed');e.value=Math.min(1000,parseInt(e.value)*2);document.getElementById('vSpd').textContent=e.value+'ms';}
-function scheduleEvent(type,target){events.push({year:year+1,type,target});log('📌 已排入: Y'+(year+1)+' '+type+(target?'→'+target:''),'metric');if(paused)step();}
-function injectCustom(){let raw=document.getElementById('customEvent').value.trim();if(!raw)return;let p=raw.split(':');if(p.length>=2){events.push({year:parseInt(p[0]),type:p[1],target:p[2]||''});log('📌 已排入: '+raw,'metric');}document.getElementById('customEvent').value='';}
-function log(msg,cls){document.getElementById('logPanel').innerHTML+='<div class=evt '+cls+'>[Y'+year+'] '+msg+'</div>';let lp=document.getElementById('logPanel');lp.scrollTop=lp.scrollHeight;}
-function toggleLog(){showLog=!showLog;document.getElementById('logPanel').style.display=showLog?'block':'none';}
+function ff(){for(let i=0;i<10&&!paused;i++)tick();render();}
+function ff50(){for(let i=0;i<50&&!paused;i++)tick();render();}
+function loop(){if(paused)return;tick();render();let spd=+document.getElementById('speed').value||200;tm=setTimeout(loop,spd);}
+function triggerEvent(t){events.push({year:yr+1,t});lg('📌 排入: Y'+(yr+1)+' '+t,'m');if(paused){tick();render();}}
+function lg(msg,c){let el=document.getElementById('lg');el.innerHTML+='<div class='+c+'>[Y'+yr+'] '+msg+'</div>';el.scrollTop=el.scrollHeight;}
+function tgLog(){let el=document.getElementById('lg');el.style.display=el.style.display==='block'?'none':'block';}
+function dist(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
 
-window.onload=function(){setupCanvas();initAgents();render();};
-window.onresize=function(){setupCanvas();render();};
+// Slider oninput
+['taxRate','milBudget','burCost'].forEach(id=>{
+  let el=document.getElementById(id);
+  if(el)el.oninput=el.onchange=updateSliders;
+});
+document.getElementById('speed').oninput=document.getElementById('speed').onchange=function(){document.getElementById('vSpd').textContent=this.value+'ms';};
+
+// Click tooltip
+document.getElementById('cv').onclick=function(e){
+  let rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top,found=null,md=15;
+  A.filter(a=>a.alive).forEach(a=>{let d=Math.hypot(a.x*cv.width-mx,a.y*cv.height-my);if(d<md){found=a;md=d;}});
+  let tt=document.getElementById('tt');
+  if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+15)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';
+    tt.innerHTML='<b>'+CN[found.cls]+' #'+found.i+'</b> <s>('+CN[found.party==='rebel'?'rebel':found.cls]+')</s><br>土地:'+found.land.toFixed(1)+' 粮食:'+found.gr+' 兵力:'+found.tp+'<br>不满:'+found.gv.toFixed(2);}else{tt.style.display='none';}
+};
+
+window.onload=function(){setupCv();reset();render();};
+window.onresize=function(){setupCv();render();};
 </script>
 </body>
 </html>
