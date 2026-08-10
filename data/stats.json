@@ -2,7 +2,7 @@
   "scenes_total": 26,
   "historical": 17,
   "fictional": 9,
-  "assertions_total": 544,
+  "assertions_total": 546,
   "sources_total": 44,
   "factions_total": 9,
   "vocab_packs": [
@@ -192,7 +192,7 @@
       "id": "imjin",
       "title": "万历朝鲜之役·壬辰倭乱",
       "kind": "county",
-      "assertions": 17,
+      "assertions": 19,
       "factions": {}
     },
     {

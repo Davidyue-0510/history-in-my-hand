@@ -144,6 +144,7 @@
     tab: 'yan',
     selection: null,
     control: { on: false, year: 1621, scope: 'county', playing: false, compare: false },
+    timeline: 'main',          // v0.31：当前分支时间线
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
     personYear: { from: null, to: null }, // 人物轨迹时间窗
@@ -153,7 +154,8 @@
 
   function visibleAssertions() {
     return D.assertions.filter(function (a) {
-      return state.sources.has(a.source) && state.layers.has(a.layer);
+      return state.sources.has(a.source) && state.layers.has(a.layer)
+        && (a.timeline || 'main') === state.timeline;
     });
   }
   function pick(subject, predicate) {
@@ -1616,6 +1618,24 @@
       });
     });
 
+  // v0.31 分支时间线切换器
+  function wireTimeline() {
+    var tls = D.timelines;
+    var row = document.getElementById('timelineRow');
+    var sel = document.getElementById('timelineSel');
+    if (!tls || Object.keys(tls).length <= 1 || !row || !sel) return;
+    row.style.display = '';
+    var ids = Object.keys(tls);
+    sel.innerHTML = ids.map(function (id) {
+      return '<option value="' + id + '"' + (id === state.timeline ? ' selected' : '') + '>'
+        + tls[id].label + '</option>';
+    }).join('');
+    sel.addEventListener('change', function () {
+      state.timeline = sel.value;
+      refresh();
+    });
+  }
+
     if (playBtn) playBtn.addEventListener('click', function () {
       if (state.control.playing) { stopControl(); return; }
       if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
@@ -1667,5 +1687,5 @@
   } else if (D.events && D.events.length) {
     state.control.year = D.events[0].year || 1621;
   }
-  applyView(false); wireControl(); refresh();
+  applyView(false); wireControl(); wireTimeline(); refresh();
 })();

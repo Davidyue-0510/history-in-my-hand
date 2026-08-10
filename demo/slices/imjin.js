@@ -30,7 +30,8 @@ window.SANDBOX_SLICES["imjin"] = {
    "person:quan_lyu": "权栗"
   },
   "page": "county.html?scene=imjin",
-  "key": "imjin"
+  "key": "imjin",
+  "has_timelines": true
  },
  "sources": [
   {
@@ -750,6 +751,50 @@ window.SANDBOX_SLICES["imjin"] = {
    },
    "_party": "朝鲜官方",
    "_faction": null
+  },
+  {
+   "id": "IJ901",
+   "subject": "event:pyongyang_battle",
+   "predicate": "平壤态势",
+   "value_text": "日军仍据守平壤，小西行长加固城防，明军因粮草补给未攻坚",
+   "time": {
+    "era_text": "万历二十一年正月",
+    "start": "1593-02",
+    "end": "1593-06"
+   },
+   "place": "pyongyang",
+   "source": "xuanzong_shilu",
+   "quote": "反事实推演：明军按兵不动",
+   "quote_status": "generated",
+   "layer": "inference",
+   "confidence": 0.2,
+   "scale": "theater",
+   "note": "分支时间线：日军守平壤（反事实）",
+   "timeline": "imjin_japan_held_pyongyang",
+   "_party": "朝鲜官方",
+   "_faction": null
+  },
+  {
+   "id": "IJ902",
+   "subject": "event:pyongyang_battle",
+   "predicate": "明军行动",
+   "value_text": "明军十万于四月跨义州，七月合围平壤，小西行长仓皇撤往汉城",
+   "time": {
+    "era_text": "万历二十一年四月—七月",
+    "start": "1593-04",
+    "end": "1593-07"
+   },
+   "place": "pyongyang",
+   "source": "xuanzong_shilu",
+   "quote": "反事实推演：明廷全力援朝",
+   "quote_status": "generated",
+   "layer": "inference",
+   "confidence": 0.2,
+   "scale": "theater",
+   "note": "分支时间线：明廷全力援朝（反事实）",
+   "timeline": "imjin_ming_full_commit",
+   "_party": "朝鲜官方",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -1081,6 +1126,24 @@ window.SANDBOX_SLICES["imjin"] = {
    "end": null,
    "basis": "日军撤退后复归",
    "note": ""
+  },
+  {
+   "place_id": "pyongyang",
+   "party": "日本方",
+   "start": 1593,
+   "end": 1598,
+   "timeline": "imjin_japan_held_pyongyang",
+   "basis": "反事实：日军守住平壤",
+   "note": "分支时间线"
+  },
+  {
+   "place_id": "pyongyang",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": 1595,
+   "timeline": "imjin_ming_full_commit",
+   "basis": "反事实：明军全境速复",
+   "note": "分支时间线"
   }
  ],
  "control_seats": [
@@ -1144,5 +1207,25 @@ window.SANDBOX_SLICES["imjin"] = {
  "control_years": [
   1592,
   1598
- ]
+ ],
+ "timelines": {
+  "main": {
+   "label": "史实",
+   "parent": null,
+   "fork_point": null,
+   "note": "实际发生的历史事件"
+  },
+  "imjin_japan_held_pyongyang": {
+   "label": "日军守平壤·未反攻",
+   "parent": "main",
+   "fork_point": "event:imjin_03",
+   "note": "假设：1593 年正月李如松未攻平壤，日军继续据守朝鲜北部。反事实：明军因粮草补给问题推迟攻势。"
+  },
+  "imjin_ming_full_commit": {
+   "label": "明廷全力援朝",
+   "parent": "main",
+   "fork_point": "event:imjin_02",
+   "note": "假设：万历帝在 1592 年汉城陷落后立即调集全国兵力十万，不等和议。反事实：明军六个月收复全境。"
+  }
+ }
 };

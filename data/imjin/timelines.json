@@ -1,0 +1,24 @@
+{
+  "_comment": "分支时间线定义。每条时间线是从某 fork_point 分叉的因果链。没有 fork_point 的即 'main' 史实线。断言/控制权/事件通过 timeline 字段归属到某条线。",
+  "_schema_version": "v0.31",
+  "timelines": {
+    "main": {
+      "label": "史实",
+      "parent": null,
+      "fork_point": null,
+      "note": "实际发生的历史事件"
+    },
+    "imjin_japan_held_pyongyang": {
+      "label": "日军守平壤·未反攻",
+      "parent": "main",
+      "fork_point": "event:imjin_03",
+      "note": "假设：1593 年正月李如松未攻平壤，日军继续据守朝鲜北部。反事实：明军因粮草补给问题推迟攻势。"
+    },
+    "imjin_ming_full_commit": {
+      "label": "明廷全力援朝",
+      "parent": "main",
+      "fork_point": "event:imjin_02",
+      "note": "假设：万历帝在 1592 年汉城陷落后立即调集全国兵力十万，不等和议。反事实：明军六个月收复全境。"
+    }
+  }
+}

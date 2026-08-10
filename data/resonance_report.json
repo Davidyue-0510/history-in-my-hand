@@ -146,20 +146,21 @@
     {
       "scene": "imjin",
       "name": "imjin",
-      "total": 17,
+      "total": 19,
       "layers": {
         "record": 14,
         "scholarship": 1,
-        "gap": 2
+        "gap": 2,
+        "inference": 2
       },
       "party_counts": {
-        "朝鲜": 9,
+        "朝鲜": 11,
         "日本方": 4,
         "清方": 4
       },
       "faction_counts": {},
       "event_count": 5,
-      "avg_resonance": 0.333,
+      "avg_resonance": 0.467,
       "best_event": "event:cefeng_heyi",
       "best_resonance": 0.667
     },
@@ -653,64 +654,6 @@
         "清方": [],
         "朝鲜": [],
         "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
-      "subject": "event:pyongyang_battle",
-      "name": "event:pyongyang_battle",
-      "scenes": [
-        "imjin"
-      ],
-      "scene_names": [
-        "imjin"
-      ],
-      "total": 3,
-      "gap_count": 0,
-      "coverage": "3/3",
-      "coverage_frac": 1.0,
-      "divergence": 1.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 1,
-        "朝鲜": 1,
-        "日本方": 1,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [
-          {
-            "id": "IJ006",
-            "predicate": "战役损失",
-            "value_text": "李如松亲督大军克平壤，获首功千二百有奇",
-            "source": "mingshi_juan238",
-            "layer": "record",
-            "scene": "imjin"
-          }
-        ],
-        "朝鲜": [
-          {
-            "id": "IJ005",
-            "predicate": "战役损失",
-            "value_text": "攻破七星门，斩获一千二百八十余级，烧杀过半",
-            "source": "xuanzong_shilu",
-            "layer": "record",
-            "scene": "imjin"
-          }
-        ],
-        "日本方": [
-          {
-            "id": "IJ007",
-            "predicate": "战役损失",
-            "value_text": "明军死伤数千不能拔，行长自率众踏冰渡江而走",
-            "source": "riben_waishi_j16",
-            "layer": "record",
-            "scene": "imjin"
-          }
-        ],
         "综述考订": []
       }
     },
@@ -3162,6 +3105,80 @@
             "id": "IJ014",
             "predicate": "册封结果",
             "value_text": "读册至『封尔为日本国王』，秀吉变色裂册毁冕",
+            "source": "riben_waishi_j16",
+            "layer": "record",
+            "scene": "imjin"
+          }
+        ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:pyongyang_battle",
+      "name": "event:pyongyang_battle",
+      "scenes": [
+        "imjin"
+      ],
+      "scene_names": [
+        "imjin"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.333,
+      "gap_rate": 0.0,
+      "resonance": 0.667,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 3,
+        "日本方": 1,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "IJ006",
+            "predicate": "战役损失",
+            "value_text": "李如松亲督大军克平壤，获首功千二百有奇",
+            "source": "mingshi_juan238",
+            "layer": "record",
+            "scene": "imjin"
+          }
+        ],
+        "朝鲜": [
+          {
+            "id": "IJ005",
+            "predicate": "战役损失",
+            "value_text": "攻破七星门，斩获一千二百八十余级，烧杀过半",
+            "source": "xuanzong_shilu",
+            "layer": "record",
+            "scene": "imjin"
+          },
+          {
+            "id": "IJ901",
+            "predicate": "平壤态势",
+            "value_text": "日军仍据守平壤，小西行长加固城防，明军因粮草补给未攻坚",
+            "source": "xuanzong_shilu",
+            "layer": "inference",
+            "scene": "imjin"
+          },
+          {
+            "id": "IJ902",
+            "predicate": "明军行动",
+            "value_text": "明军十万于四月跨义州，七月合围平壤，小西行长仓皇撤往汉城",
+            "source": "xuanzong_shilu",
+            "layer": "inference",
+            "scene": "imjin"
+          }
+        ],
+        "日本方": [
+          {
+            "id": "IJ007",
+            "predicate": "战役损失",
+            "value_text": "明军死伤数千不能拔，行长自率众踏冰渡江而走",
             "source": "riben_waishi_j16",
             "layer": "record",
             "scene": "imjin"

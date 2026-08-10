@@ -237,6 +237,15 @@ def build_scene(sc):
     elif sc.get("region") not in LIAODONG_REGIONS:
         bundle["control"] = []  # 显式空：前端据此隐藏控制层
 
+    # 分支时间线（v0.31）：
+    #   data/<dir>/timelines.json 定义可选的因果分支。
+    #   断言可带 timeline 字段（缺省="main"），控制权数据同理。
+    #   所有时间线的断言都注入 bundle；前端按 D.active_timeline 过滤。
+    tl_path = os.path.join(dirpath, "timelines.json")
+    if os.path.exists(tl_path):
+        bundle["timelines"] = load_json(dirpath, "timelines.json").get("timelines", {})
+        bundle["meta"]["has_timelines"] = True
+
     # 边归一化：地理切片用 type+label；小说等 world 可能只给 relation/rel 自由文本。
     # 这里保证每条边都有 label（否则 drawDynamic 会把 undefined 画上地图）与 type 兜底。
     for e in bundle["edges"]:
