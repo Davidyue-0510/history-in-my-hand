@@ -21,6 +21,8 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
+sys.path.insert(0, HERE)
+import agent_model as AM
 
 
 def load_scene_data(scene_id):
@@ -125,8 +127,17 @@ def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
         for pid in cities:
             garrison[pid]["troops"] = per
 
+    # v0.36 Phase 3: 三阶层 Agent 模型
+    agents = AM.create_agents(place_list, ctrl, start_year, branch)
+    # 初始资源注入
+    for pid, a in agents.items():
+        g = garrison.get(pid, {})
+        a.resources["troops"] = g.get("troops", 0)
+        a.resources["grain"] = max(1, a.resources["troops"] // 2)
+
     # 推演
     output_control = []
+    state_history = []  # v0.36 阶级指标时序
     reinforcements = reinforcements or []
     for year in range(start_year, end_year + 1):
         # 事件注入：新势力/增援入场
@@ -154,6 +165,67 @@ def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
             garrison[entry]["troops"] += rtroops
             print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
             print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
+
+        # v0.36 Agent 决策与阶级指标
+        # 同步 agent 资源
+        for pid, a in agents.items():
+            g = garrison.get(pid, {})
+            a.resources["troops"] = g.get("troops", 0)
+            a.resources["grain"] = max(a.resources.get("grain", 0),
+                                       a.resources["troops"] // 3)
+            if a.cls == "local":
+                a.resources["edu_control"] = min(1.0,
+                    a.resources.get("edu_control", 0) + 0.02)
+
+        metrics = AM.compute_metrics(agents, garrison)
+        state_history.append({
+            "year": year,
+            "education_monopoly": round(metrics["education_monopoly"], 3),
+            "mobilization": round(metrics["mobilization"], 3),
+            "solidarity": {k: round(v, 3)
+                           for k, v in metrics["class_solidarity"].items()},
+        })
+
+        # Agent 自主决策
+        for pid, a in agents.items():
+            if not a.holds:
+                continue
+            party = garrison.get(pid, {}).get("party", "")
+            state = {"mobilization": metrics["mobilization"]}
+            if party:
+                # 给 local agent 提供侧切换选项
+                for adj in nb.get(pid, set()):
+                    g_adj = garrison.get(adj, {})
+                    if g_adj.get("party") and g_adj["party"] != party:
+                        state["alt_regime"] = g_adj["party"]
+                        break
+            action = a.decide(state)
+            if action[0] == "rebel":
+                # grassroot 革命：随机夺取相邻城
+                targets = [adj for adj in nb.get(pid, set())
+                           if garrison.get(adj, {}).get("party") != party]
+                if targets:
+                    tgt = targets[0]
+                    garrison[tgt] = {"party": "叛军", "troops": a.resources["troops"] // 2}
+                    output_control.append({
+                        "place_id": tgt, "party": "叛军",
+                        "start": year, "end": None,
+                        "timeline": branch,
+                        "basis": "agent: grassroot revolt",
+                    })
+                    a.grievance -= 0.3
+                    print("  [Y%d] REVOLT %s -> %s" % (year, pid[:8], tgt[:8]))
+            elif action[0] == "switch":
+                # local 投机：切换阵营
+                new_party = action[1]
+                garrison[pid] = {"party": new_party, "troops": a.resources["troops"]}
+                output_control.append({
+                    "place_id": pid, "party": new_party,
+                    "start": year, "end": None,
+                    "timeline": branch,
+                    "basis": "agent: local defected",
+                })
+                print("  [Y%d] DEFECT %s -> %s" % (year, pid[:8], new_party))
 
         # 年度增援：每 party 恢复 10% 兵力（后勤补给）
         party_total_troops = {}
@@ -227,7 +299,7 @@ def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
                 "note": "确定性推演第 %d 年" % year,
             })
 
-    return output_control
+    return output_control, state_history
 
 
 def main():
@@ -255,26 +327,27 @@ def main():
             reinforcements.append(
                 (int(parts[0]), parts[1], int(parts[2]), parts[3]))
 
-    result = simulate(args.scene, args.branch,
+    result, _state_history = simulate(args.scene, args.branch,
                       args.years[0], args.years[1], forces, reinforcements)
 
     out_path = args.out or os.path.join(
         ROOT, "data", args.scene,
         "control_sim_%s.json" % args.branch)
 
-    output = {"_comment": "确定性推演结果 (v0.32 sim)",
-              "_branch": args.branch,
-              "_scene": args.scene,
-              "_years": list(args.years),
-              "_forces": forces,
+    output = {"_comment": "确定性推演结果 (v0.36 sim+agent)",
+              "_branch": args.branch, "_scene": args.scene,
+              "_years": list(args.years), "_forces": forces,
               "control": result}
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=1)
         f.write("\n")
-
-    print("[sim] %s · %s · %d-%d: %d 条控制变更 → %s" % (
+    # 同时写阶级指标
+    hist_path = out_path.replace("control_sim_", "state_hist_")
+    json.dump(_state_history, open(hist_path, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1)
+    print("[sim] %s · %s · %d-%d: %d 条控制变更 + %d 年阶级指标 → %s" % (
         args.scene, args.branch, args.years[0], args.years[1],
-        len(result), out_path))
+        len(result), len(_state_history), out_path))
 
 
 if __name__ == "__main__":
