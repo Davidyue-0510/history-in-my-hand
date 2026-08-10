@@ -697,7 +697,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "id": "IJ016",
    "subject": "event:bixieguan_battle",
    "predicate": "明方自著缺口",
-   "value_text": "",
+   "value_text": "日军在碧蹄馆之战后的补给线精确规模与明军追击决策依据（朝方实录/日方军记均缺）",
    "time": {
     "era_text": "万历二十一年",
     "start": "1593-01-01",
@@ -727,7 +727,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "id": "IJ017",
    "subject": "event:bixieguan_battle",
    "predicate": "伤亡数字核验",
-   "value_text": "",
+   "value_text": "和议期间沈惟敬与小西行长谈判的具体条款与各方真实意图（多方言辞互相矛盾）",
    "time": {
     "era_text": "万历二十一年",
     "start": "1593-01-01",

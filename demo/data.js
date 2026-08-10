@@ -7972,7 +7972,7 @@ window.SANDBOX_DATA = {
     "id": "IJ016",
     "scene": "imjin",
     "subject": "event:bixieguan_battle",
-    "title": "",
+    "title": "日军在碧蹄馆之战后的补给线精确规模与明军追击决策依据（朝方实录/日方军记均缺）",
     "missing": "抓取明神宗实录万历二十、二十一年卷（ctext 有验证码墙，需人工） / 找万历三大征考/两朝平攘录电子版",
     "where": "明方当事人对平壤/碧蹄馆的自述",
     "skills": [
@@ -7988,7 +7988,7 @@ window.SANDBOX_DATA = {
     "id": "IJ017",
     "scene": "imjin",
     "subject": "event:bixieguan_battle",
-    "title": "",
+    "title": "和议期间沈惟敬与小西行长谈判的具体条款与各方真实意图（多方言辞互相矛盾）",
     "missing": "核对宣祖实录正月二十七至二月逐日条 / 比对明军将领奏报（辽东奏报档）",
     "where": "碧蹄馆之战明军真实伤亡",
     "skills": [
@@ -8529,7 +8529,7 @@ window.SANDBOX_DATA = {
     "id": "TH012",
     "scene": "tang_huai_xi",
     "subject": "event:li_su_xueye",
-    "title": "",
+    "title": "李愬雪夜入蔡州的确切行军路线与沿途遭遇（《李愬传》细节与《通鉴》有异）",
     "missing": "比对《通鉴》与新旧《唐书》李愬传 / 核《裴度集》",
     "where": "李愬雪夜入蔡与裴度督师方略的分工",
     "skills": [
@@ -9689,7 +9689,7 @@ window.SANDBOX_DATA = {
       {
        "id": "IJ016",
        "predicate": "明方自著缺口",
-       "value_text": "",
+       "value_text": "日军在碧蹄馆之战后的补给线精确规模与明军追击决策依据（朝方实录/日方军记均缺）",
        "source": "mingshi_juan238",
        "layer": "gap",
        "scene": "imjin"
@@ -9715,7 +9715,7 @@ window.SANDBOX_DATA = {
       {
        "id": "IJ017",
        "predicate": "伤亡数字核验",
-       "value_text": "",
+       "value_text": "和议期间沈惟敬与小西行长谈判的具体条款与各方真实意图（多方言辞互相矛盾）",
        "source": "xuanzong_shilu",
        "layer": "gap",
        "scene": "imjin"

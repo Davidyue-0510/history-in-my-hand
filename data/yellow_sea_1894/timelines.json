@@ -1,0 +1,7 @@
+{
+  "_comment": "黄海海战分支时间线",
+  "timelines": {
+    "main": {"label": "史实", "parent": null, "fork_point": null, "note": "实际发生"},
+    "qing_held_weihai": {"label": "清军守威海", "parent": "main", "fork_point": "event:yellow_sea_1894_01", "note": "反事实：清军成功守住威海卫港"}
+  }
+}

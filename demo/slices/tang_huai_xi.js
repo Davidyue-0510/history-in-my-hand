@@ -477,7 +477,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "id": "TH012",
    "subject": "event:li_su_xueye",
    "predicate": "李愬与裴度方略异同",
-   "value_text": "",
+   "value_text": "李愬雪夜入蔡州的确切行军路线与沿途遭遇（《李愬传》细节与《通鉴》有异）",
    "time": {
     "era_text": "元和十二年",
     "start": "0817-01-01",
