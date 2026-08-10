@@ -40,13 +40,13 @@ canvas{border-bottom:1px solid #30363d}
 <div class="narr" id="narr"><span class="g">点击 ▶ 运行</span></div>
 <div class="stats">
   第<em id="sDyn">1</em>王朝 · 享国<em id="sYear">0</em>年 ·
-  兼并<em id="sLand">--</em> · 垄断<em id="sEdu">--</em> · 国库<em id="sTreas">--</em> ·
+  兼并<em id="sLand">--</em> · 垄断<em id="sEdu">--</em> · 士绅分化<em id="sIneq">--</em> · 国库<em id="sTreas">--</em> ·
   军力<em id="sMil">--</em>/边患<em id="sBrd">--</em> · 叛军<em id="sReb">0</em>
 </div>
 <script>
 "use strict";
 var A=[],yr=0,paused=true,tm=null,events=[],dynNum=1,dynAge=0;
-var landConc=0.2,eduMono=0.3,treasury=500,milPower=100,burEff=0.8,borderThreat=20,legitimacy=0.9;
+var landConc=0.2,eduMono=0.3,treasury=500,milPower=100,burEff=0.8,borderThreat=20,legitimacy=0.9,localIneq=0;
 var CC={center:"#58a6ff",local:"#3fb950",grassroot:"#8b949e",rebel:"#e94560"};
 
 function updSliders(){
@@ -59,7 +59,7 @@ document.querySelectorAll("input[type=range]").forEach(function(el){el.oninput=u
 function reset(){
   pause();if(tm)clearTimeout(tm);
   A=[];yr=0;events=[];dynNum=1;dynAge=0;
-  landConc=0.2;eduMono=0.3;treasury=500;milPower=100;burEff=0.8;borderThreat=20;legitimacy=0.9;
+  landConc=0.2;eduMono=0.3;treasury=500;milPower=100;burEff=0.8;borderThreat=20;legitimacy=0.9;localIneq=0;
   var N=60;
   for(var i=0,fid=0;i<N;i++){
     var cls,x,y,fam=null;
@@ -114,7 +114,37 @@ function tick(){
 
   alive.forEach(function(a){a.gr+=(a.cls==="center"?8:a.cls==="local"?6:4);a.tp+=(a.cls==="center"?1:0.3);});
 
-  locals.forEach(function(l){if(l.party==="loyal"&&(l.gv>0.5||(ctl<0.3&&l.gv>0.3)))l.party="rebel";});
+  // 士绅内部竞争
+  var famPow={},famAgents={};
+  locals.forEach(function(l){if(!l.fam)l.fam="F_independent";if(!famPow[l.fam]){famPow[l.fam]=0;famAgents[l.fam]=[];}famPow[l.fam]+=l.land+l.tp*0.1;famAgents[l.fam].push(l);});
+  var fEntries=Object.keys(famPow).map(function(k){return [k,famPow[k]];}).sort(function(a,b){return b[1]-a[1];});
+  var totalLocalPow=fEntries.reduce(function(s,e){return s+e[1];},0)||1;
+  var domRatio=fEntries.length?fEntries[0][1]/totalLocalPow:0;
+  var weakestPow=fEntries.length>1?fEntries[fEntries.length-1][1]:fEntries[0]?fEntries[0][1]:0;
+  localIneq=totalLocalPow>0?(fEntries[0][1]-weakestPow)/totalLocalPow:0;
+
+  fEntries.forEach(function(e,idx){
+    var share=e[1]/totalLocalPow;
+    if(idx>fEntries.length*0.6){famAgents[e[0]].forEach(function(l){l.gv=Math.min(1,l.gv+(0.3-share)*0.04);l._marginal=true;});}
+  });
+  if(fEntries.length>=2&&domRatio>0.5&&Math.random()<0.2){
+    var wf=fEntries[fEntries.length-1][0];
+    famAgents[fEntries[0][0]].forEach(function(l){if(Math.random()<0.3){l.land+=0.5;l.gv=Math.max(0,l.gv-0.05);}});
+    famAgents[wf].forEach(function(l){l.land=Math.max(1,l.land-0.5);l.gv=Math.min(1,l.gv+0.08);});
+  }
+  if(domRatio>0.5&&ctl<0.25&&Math.random()<0.1){
+    var coupLeaders=famAgents[fEntries[0][0]].slice(0,2);
+    coupLeaders.forEach(function(l){l.cls="center";l.party="regime";l.tp+=50;l.gr+=100;l.gv=0;});
+    A.filter(function(a){return a.cls==="center"&&a.alive&&coupLeaders.indexOf(a)<0;}).forEach(function(a){a.cls="local";a.party="loyal";a.gv=0.4;});
+  }
+
+  // 士绅叛逃（边缘家族门槛更低）
+  locals.forEach(function(l){
+    if(l.party!=="loyal")return;
+    var th=l._marginal?0.35:0.5;
+    var cth=l._marginal?0.35:0.3;
+    if(l.gv>th||(ctl<cth&&l.gv>0.2))l.party="rebel";
+  });
 
   var ga=grass.reduce(function(s,a){return s+a.gv;},0)/Math.max(1,grass.length);
   if(ga>0.55||(ctl<0.2&&ga>0.35)){
@@ -156,6 +186,7 @@ function updateUI(ctl,ga,rc){
   document.getElementById("sYear").textContent=dynAge;
   document.getElementById("sLand").textContent=(landConc*100).toFixed(0)+"%";
   document.getElementById("sEdu").textContent=(eduMono*100).toFixed(0)+"%";
+  document.getElementById("sIneq").textContent=(localIneq*100).toFixed(0)+"%";
   document.getElementById("sTreas").textContent=Math.floor(treasury);
   document.getElementById("sMil").textContent=Math.floor(milPower);
   document.getElementById("sBrd").textContent=Math.floor(borderThreat);
@@ -177,7 +208,7 @@ function paint(){if(!ctx)return;var w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h
   for(var i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
   var fm={};A.filter(function(a){return a.alive&&a.fam;}).forEach(function(a){if(!fm[a.fam])fm[a.fam]=[];fm[a.fam].push(a);});
   Object.keys(fm).forEach(function(k){var m=fm[k];if(m.length<2)return;ctx.strokeStyle="rgba(63,185,80,0.12)";ctx.lineWidth=1;ctx.beginPath();m.forEach(function(a,i){var px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
-  A.filter(function(a){return a.alive;}).forEach(function(a){var px=a.x*w,py=a.y*h,color=a.party==="rebel"?CC.rebel:CC[a.cls],r=a.cls==="center"?7:a.cls==="local"?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle="rgba(255,255,255,0.2)";ctx.lineWidth=0.5;ctx.stroke();});
+  A.filter(function(a){return a.alive;}).forEach(function(a){var px=a.x*w,py=a.y*h,color=a.party==="rebel"?CC.rebel:a.cls==="center"?CC.center:a.cls==="grassroot"?CC.grassroot:(a._marginal?"#1a6b2a":CC.local),r=a.cls==="center"?7:a.cls==="local"?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle="rgba(255,255,255,0.2)";ctx.lineWidth=0.5;ctx.stroke();});
 }
 
 function run(){paused=false;loop();}
