@@ -284,6 +284,9 @@ function tick(){
   if(treasury<50)legitimacy=Math.max(0.1,legitimacy-0.02);
   if(burEff<0.3)legitimacy=Math.max(0.1,legitimacy-0.01);
 
+  // 先算控制力（后续代码多处依赖）
+  let controlPower=Math.max(0,1-landConc*1.0-(0.8-burEff)*0.4-eduMono*0.3+(legitimacy-0.5)*0.5);
+
   // 5c. 士绅内部竞争——家族势力不均 + 随时间分化加剧
   let famPow={}, famAgents={};
   A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
@@ -334,8 +337,7 @@ function tick(){
     lg('🗡 '+domFam+'家族发动政变！夺取政权。','r');
   }
 
-  // 6. 控制力
-  let controlPower=Math.max(0,1-landConc*1.0-(0.8-burEff)*0.4-eduMono*0.3+(legitimacy-0.5)*0.5);
+  // 6. 控制力（已在上方计算）
 
   // 7. 事件
   let yes=events.filter(e=>e.year===yr);
