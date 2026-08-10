@@ -28,6 +28,7 @@
 | tang_huai_xi | 12 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
+| yellow_sea_1894 | 15 | 1 | **0.000** | event:ev_yellow_sea_1894_02（0.000） | gap 1 / record 13 / scholarship 1 |
 
 ## 明内部派系细分（faction · 明朝利益集团立场）
 
@@ -42,6 +43,7 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
+| event:ev_yellow_sea_1894_02 | yellow_sea_1894 | **0.000** | 0/3 | 0.57 | 0.07 | 14 | 0 / 0 / 0 / 14 |
 | event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |

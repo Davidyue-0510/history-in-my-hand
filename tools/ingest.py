@@ -462,10 +462,22 @@ def _conform_world(raw, spec):
     prefix = "".join(c if c.isalnum() else "_" for c in spec["id"][:3].upper())
     scene_id = spec["id"]
 
-    # 1) 补齐事件 subject（如果 LLM 没写对）
+    # 1) 强制补齐事件 subject + 建映射（LLM → correct）
+    event_id_map = {}
     for i, ev in enumerate(raw.get("events", [])):
-        ev.setdefault("id", "ev_%s_%02d" % (scene_id, i + 1))
-        ev.setdefault("subject", "event:%s" % ev["id"])
+        old_id = ev.get("id", "")
+        # 强制生成合规 id
+        new_id = "ev_%s_%02d" % (scene_id, i + 1)
+        ev["id"] = new_id
+        old_subj = ev.get("subject", "")
+        new_subj = "event:%s" % new_id
+        ev["subject"] = new_subj
+        # 映射 LLM 旧引用 → 合规 subject
+        if old_id and old_id != new_id:
+            event_id_map[old_id] = new_subj
+        if old_subj and old_subj != new_subj:
+            event_id_map[old_subj] = new_subj
+        event_id_map[new_id] = new_subj
 
     # 2) 断言 layer 默认值 + gap 补 lead
     for a in raw.get("assertions", []):
@@ -477,7 +489,7 @@ def _conform_world(raw, spec):
         a.setdefault("note", "")
         a.setdefault("place", "")
         if a.get("layer") == "gap":
-            a.setdefault("confidence", 0.0)
+            a["confidence"] = 0.0
             a.setdefault("quote", "")
             a.setdefault("quote_status", "generated")
             if "lead" not in a:
@@ -485,13 +497,34 @@ def _conform_world(raw, spec):
                               "skills": ["待补充史料"],
                               "accept": "引用原文填补缺口"}
 
-    # 3) 统一 prefix（修复 LLM 乱编的 id）
+    # 3) 统一 prefix + 补全 subject 映射（修复 LLM 乱编的 id）
+    # 3) 统一 prefix + 补全 subject 映射（修复 LLM 乱编的 id）
     expected_prefix = prefix.replace("_", "")
+    event_subjects_used = set()
     for i, a in enumerate(raw.get("assertions", [])):
-        # 如果 id 不含正确 prefix，重编号
         raw_id = a.get("id", "")
         if not raw_id.upper().startswith(expected_prefix.upper()):
             a["id"] = "%s%03d" % (prefix.replace("_", "").upper(), i + 1)
+
+        # 修正 subject：将 LLM 用的旧事件引用替换为合规的 subject
+        subj = a.get("subject", "")
+        mapped = event_id_map.get(subj)
+        if not mapped:
+            for k, v in event_id_map.items():
+                if k in subj or subj in k:
+                    mapped = v
+                    break
+        if mapped:
+            a["subject"] = mapped
+        # 记录哪个事件被引用
+        if a.get("subject", "").startswith("event:"):
+            event_subjects_used.add(a["subject"])
+
+    # 清理无断言的孤儿事件（至少保留 1 个供 dossier_event）
+    raw["events"] = [ev for ev in raw.get("events", [])
+                     if ev.get("subject") in event_subjects_used]
+    if not raw["events"] and raw.get("events_raw", []):
+        raw["events"] = [raw["events"][0]]
 
     return raw
 
@@ -518,7 +551,7 @@ def generate_world(spec_path):
     # 1) LLM 抽取
     prompt = _build_world_prompt(spec)
     print("[world] 调 LLM 一次性抽取所有实体 + 断言...")
-    raw_text = _call_llm(prompt)
+    raw_text, usage = _call_llm(prompt)
     # 剥离可能的 markdown 代码块
     raw_text = raw_text.strip()
     if raw_text.startswith("```"):
@@ -557,12 +590,19 @@ def generate_world(spec_path):
         "note": src.get("note", "")
     }]}
 
-    # 4) 写文件
+    # 4) geocode（先跑——落文件前把 lon/lat 填好）
+    places = raw.get("places", [])
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import geocode as GC
+    resolved, gaps = GC.geocode_places(places)
+    print("[world] geocode: %d 命中 / %d 未命中" % (len(resolved), len(gaps)))
+
+    # 5) 写文件（geocoded places 已含 lon/lat）
     for name, data, key in [
         ("sources", sources_data, None),
         ("persons", {"persons": raw.get("persons", [])}, None),
         ("events", {"events": raw.get("events", [])}, None),
-        ("places", {"places": raw.get("places", []), "rivers": [], "wall": []}, None),
+        ("places", {"places": places, "rivers": [], "wall": []}, None),
         ("edges", {"edges": raw.get("edges", [])}, None),
     ]:
         path = os.path.join(scene_dir, name + ".json")
@@ -575,14 +615,7 @@ def generate_world(spec_path):
         for a in raw.get("assertions", []):
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
 
-    # 5) 注册地形网格（从 places 提取 bbox）
-    places = raw.get("places", [])
-    # geocode 先（在落文件后立即跑）
-    import geocode as GC
-    resolved, gaps = GC.geocode_places(places)
-    print("[world] geocode: %d 命中 / %d 未命中" % (len(resolved), len(gaps)))
-
-    # 自动注册 terrain 网格
+    # 6) 注册地形网格（从 geocoded places 的 lon/lat）
     lons = [p["lon"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
     lats = [p["lat"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
     if lons and lats:
@@ -601,7 +634,7 @@ def generate_world(spec_path):
     else:
         print("[warn] 无有效坐标，跳过地形网格注册")
 
-    # 6) 注册到 scenes.json
+    # 7) 注册到 scenes.json
     reg_path = os.path.join(ROOT, "data", "scenes.json")
     with open(reg_path, encoding="utf-8") as f:
         reg = json.load(f)
@@ -627,7 +660,7 @@ def generate_world(spec_path):
             f.write("\n")
         print("[world] 已注册场景 %s 到 scenes.json" % scene_id)
 
-    # 7) build + gates
+    # 8) build + gates
     print("[world] 重编译 + 跑全闸门...")
     rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build.py")],
                        cwd=ROOT, capture_output=True)

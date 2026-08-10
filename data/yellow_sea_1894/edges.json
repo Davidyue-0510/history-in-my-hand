@@ -1,0 +1,16 @@
+{
+ "edges": [
+  {
+   "from": "weihai",
+   "to": "dadonggou",
+   "type": "military",
+   "label": "北洋水师护送陆军"
+  },
+  {
+   "from": "fengdao",
+   "to": "dadonggou",
+   "type": "battle",
+   "label": "日本舰队北上寻战"
+  }
+ ]
+}

@@ -80,6 +80,23 @@
       "points": 3111,
       "covered": 3111,
       "fetched_at": "2026-08-09"
+    },
+    "yellow_sea_1894": {
+      "label": "甲午战争·黄海海战",
+      "file": "yellow_sea_1894_grid.json",
+      "bbox": [
+        121.62,
+        36.03,
+        126.62,
+        40.33
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "fetched",
+      "note": "由 fetch_terrain.py --new 注册。",
+      "points": 2244,
+      "covered": 2244,
+      "fetched_at": "2026-08-10"
     }
   }
 }

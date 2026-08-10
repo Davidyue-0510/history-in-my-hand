@@ -1,0 +1,66 @@
+{
+ "places": [
+  {
+   "id": "dalu_island",
+   "name": "大鹿岛",
+   "type": "island",
+   "modern": "今中国辽宁省东港市大鹿岛",
+   "note": "黄海海战战场附近岛屿。",
+   "lon": 123.73,
+   "lat": 39.75,
+   "geo_note": "黄海海战主战场附近岛屿"
+  },
+  {
+   "id": "dadonggou",
+   "name": "大东沟",
+   "type": "port",
+   "modern": "今中国辽宁省东港市大东沟",
+   "note": "北洋水师护送陆军登陆地点。",
+   "lon": 123.9,
+   "lat": 39.83,
+   "geo_note": "黄海海战战场·鸭绿江口外"
+  },
+  {
+   "id": "weihai",
+   "name": "威海",
+   "type": "port",
+   "modern": "今中国山东省威海市",
+   "note": "北洋水师基地，出发地。",
+   "lon": 122.12,
+   "lat": 37.5,
+   "geo_note": "北洋水师母港"
+  },
+  {
+   "id": "fengdao",
+   "name": "丰岛",
+   "type": "island",
+   "modern": "今韩国忠清南道泰安郡近海",
+   "note": "丰岛海战发生地。",
+   "lon": 126.12,
+   "lat": 36.53,
+   "geo_note": "朝鲜西海岸岛·丰岛海战处"
+  },
+  {
+   "id": "heishijiao",
+   "name": "黑石礁",
+   "type": "region",
+   "modern": "今中国辽宁省大连市庄河市黑石礁",
+   "note": "黄海海战战场西侧。",
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yalu_river",
+   "name": "鸭绿江口",
+   "type": "region",
+   "modern": "今中国辽宁省丹东市鸭绿江口",
+   "note": "大东沟所在区域。",
+   "lon": 123.9,
+   "lat": 39.83,
+   "geo_note": "黄海海战战场·鸭绿江口外"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

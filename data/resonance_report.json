@@ -24,7 +24,8 @@
       "shenyang",
       "tang_huai_xi",
       "tieling",
-      "yehe"
+      "yehe",
+      "yellow_sea_1894"
     ],
     "factions": {
       "donglin": "东林党（清流）",
@@ -373,6 +374,24 @@
       "avg_resonance": 0.278,
       "best_event": "event:yehe_fall",
       "best_resonance": 0.333
+    },
+    {
+      "scene": "yellow_sea_1894",
+      "name": "yellow_sea_1894",
+      "total": 15,
+      "layers": {
+        "record": 13,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 15
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_yellow_sea_1894_02",
+      "best_resonance": 0.0
     }
   ],
   "faction_summary": {
@@ -400,6 +419,150 @@
     }
   },
   "events": [
+    {
+      "subject": "event:ev_yellow_sea_1894_02",
+      "name": "event:ev_yellow_sea_1894_02",
+      "scenes": [
+        "yellow_sea_1894"
+      ],
+      "scene_names": [
+        "yellow_sea_1894"
+      ],
+      "total": 14,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.571,
+      "gap_rate": 0.071,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 14
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "YEL_001",
+            "predicate": "战役结果",
+            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_002",
+            "predicate": "战役结果",
+            "value_text": "日本4艘遭重创、298人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_003",
+            "predicate": "制海权归属",
+            "value_text": "日本夺得黄海制海权",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_004",
+            "predicate": "战术",
+            "value_text": "北洋水师以横阵迎敌，旗舰定远居中",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_005",
+            "predicate": "战术",
+            "value_text": "日本舰队以本队和第一游击队夹击北洋水师",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_007",
+            "predicate": "兵力对比",
+            "value_text": "清朝2艘铁甲舰、10艘巡洋舰、2艘鱼雷艇；日本12艘船舰",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_008",
+            "predicate": "装备差距",
+            "value_text": "日本装备苦味酸烈性炸药炮弹，北洋军备落后",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_009",
+            "predicate": "战前评价",
+            "value_text": "傅莱曼特认为日本舰队在吨位、兵员、舰速、速射炮等方面占优",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_010",
+            "predicate": "战前评价",
+            "value_text": "英格尔斯认为日军已达欧洲海军水平，中国未必能胜",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_011",
+            "predicate": "战前评价",
+            "value_text": "多数西方观察者认为中国将获胜",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_012",
+            "predicate": "战前评价",
+            "value_text": "戚其章认为傅莱曼特评论为持平之论",
+            "source": "wikipedia_huanghai",
+            "layer": "scholarship",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_013",
+            "predicate": "战役损失",
+            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_014",
+            "predicate": "战役损失",
+            "value_text": "日本4艘遭重创、298人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_015",
+            "predicate": "战役损失",
+            "value_text": "清方损失数字可能被低估，日方损失可能被高估",
+            "source": "wikipedia_huanghai",
+            "layer": "gap",
+            "scene": "yellow_sea_1894"
+          }
+        ]
+      }
+    },
     {
       "subject": "event:huai_xi_jufa",
       "name": "event:huai_xi_jufa",

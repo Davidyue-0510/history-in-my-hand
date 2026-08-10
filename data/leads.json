@@ -796,6 +796,22 @@
    "effort": "1-2 周",
    "issue_url": null,
    "_src_line": 7
+  },
+  {
+   "id": "YEL_015",
+   "scene": "yellow_sea_1894",
+   "subject": "event:ev_yellow_sea_1894_02",
+   "title": "清方损失数字可能被低估，日方损失可能被高估",
+   "missing": "历史档案研究 / 军事史",
+   "where": "中日双方战报及战后统计",
+   "skills": [
+    "历史档案研究",
+    "军事史"
+   ],
+   "accept": "需要进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   }
  ]
 }
