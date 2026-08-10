@@ -45,7 +45,7 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .log .r{color:#e94560}.log .y{color:#d29922}.log .b{color:#58a6ff}.log .m{color:#8b949e}
 @media(min-width:1600px){body{font-size:16px}.sidebar{width:380px}.section label{font-size:13px}}
 @media(max-width:900px){.sidebar{width:260px}.btn-preset{font-size:9px;padding:2px 4px}}
-@media(max-width:768px){
+@media(max-width:768px) and (orientation:portrait){
   body{flex-direction:column;overflow-y:auto;overflow-x:hidden}
   .sidebar{width:100%!important;max-height:45vh;border-right:none;border-bottom:1px solid #30363d;position:relative;overflow-y:auto;-webkit-overflow-scrolling:touch}
   .sidebar.sidebar-hidden{max-height:0!important;padding:0!important;overflow:hidden}
@@ -61,6 +61,19 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
   .stats{font-size:11px}
   .sidebar h3{font-size:13px;padding:6px 4px}
   .sidebar h2{font-size:16px}
+}
+@media(max-width:900px) and (orientation:landscape){
+  body{flex-direction:row}
+  .sidebar{width:240px!important;max-height:100vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .sidebar-toggle{display:block!important}
+  .sidebar.sidebar-hidden{width:0!important;padding:0!important;overflow:hidden}
+  #cv{height:55vh!important}
+  #chartCv{height:100px!important}
+  .narr{font-size:11px;height:auto!important;min-height:30px}
+  button{font-size:10px;padding:3px 6px}
+  .sidebar h2{font-size:14px}
+  .sidebar h3{font-size:11px;padding:4px 2px}
+  .stats{font-size:10px}
 }
 @media(max-width:400px){
   .ctrl-row button{padding:4px 6px;font-size:10px}
