@@ -213,16 +213,35 @@
     var prev = buildFrame(Math.max(lo, year - 1));
     var cur  = buildFrame(year);
     var nextFrame = buildFrame(Math.min(hi, year + 1));
-
     dashFrame(prev, cur);
     dashFrame(nextFrame, cur);
-
     var ctx = off.getContext('2d');
-    ctx.clearRect(0, 0, nx, ny);
+    ctx.clearRect(0, 0, grid.nx, grid.ny);
     ctx.putImageData(prev, 0, 0);
     ctx.putImageData(nextFrame, 0, 0);
     ctx.putImageData(cur, 0, 0);
-    img = cur;  // 跟 normal path 一致
+    img = cur;
+    dirty = false;
+    repaint();
+  }
+
+  // v0.33 跨时间线对比渲染：主线（棋盘虚线）+ 分支（实线）叠加
+  function drawDiff(year, scope, altCtrlData) {
+    if (!ready || !altCtrlData || !altCtrlData.length) return;
+    curYear = year; curScope = scope;
+    var saved = ctrlData;
+    // 分支帧（实线，在顶层）
+    ctrlData = altCtrlData;
+    var branchFrame = buildFrame(year);
+    // 主线帧（棋盘虚线，在底层）
+    ctrlData = saved;
+    var mainFrame = buildFrame(year);
+    dashFrame(mainFrame, branchFrame);
+    var ctx = off.getContext('2d');
+    ctx.clearRect(0, 0, grid.nx, grid.ny);
+    ctx.putImageData(mainFrame, 0, 0);
+    ctx.putImageData(branchFrame, 0, 0);
+    img = branchFrame;
     dirty = false;
     repaint();
   }

@@ -1545,7 +1545,11 @@
   function drawControl() {
     if (!window.ControlLayer) return;
     if (!IS_ABSTRACT && state.control.on && ControlLayer.isReady()) {
-      if (state.control.compare && ControlLayer.drawMulti) {
+      // 跨时间线对比模式：主线（棋盘虚线）vs 分支（实线）
+      if (state.control.compare && state.timeline !== 'main'
+          && ControlLayer.drawDiff && _branchCtrlData) {
+        ControlLayer.drawDiff(state.control.year, state.control.scope, _branchCtrlData);
+      } else if (state.control.compare && ControlLayer.drawMulti) {
         ControlLayer.drawMulti(state.control.year, state.control.scope);
       } else {
         ControlLayer.draw(state.control.year, state.control.scope);
@@ -1557,6 +1561,8 @@
       if (lg) lg.innerHTML = '';
     }
   }
+
+  var _branchCtrlData = null;  // v0.33 分支控制权数据（跨时间线对比用）
   function renderControlLegend() {
     var lg = document.getElementById('ctrlLegend');
     if (!lg) return;
@@ -1637,10 +1643,12 @@
         var simUrl = '../data/' + D.scene_id + '/control_sim_' + state.timeline + '.json';
         fetch(simUrl).then(function (r) { if (r.ok) return r.json(); throw new Error('no sim'); })
           .then(function (sim) {
+            _branchCtrlData = sim.control;  // 存分支数据供 drawDiff 使用
             ControlLayer.reloadControl(sim.control, sim._years);
             drawControl();
             refresh();
           }).catch(function () {
+            _branchCtrlData = null;
             ControlLayer.reloadControl(D.control, D.control_years);
             drawControl();
             refresh();
