@@ -109,7 +109,11 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "name": "叶为安",
    "note": "大世界第一棵桃树妖修；入小世界接'父亲对晚辈'委托积功德",
    "intro": "大世界第一棵桃树妖修；入小世界接'父亲对晚辈'委托积功德",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "yeweian",
+   "_other_scenes": [
+    "novel_fandao_2"
+   ]
   },
   {
    "id": "yu_guoqiang",

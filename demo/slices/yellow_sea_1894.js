@@ -16,7 +16,8 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
   "parties_note": "清方（北洋水师奏报+清史稿）、日本方（联合舰队战报）、西方观察（英舰队司令佛莱曼特）——三方立场。source=Wikipedia 二手综述，桶='二手综述'。",
   "page": "county.html?scene=yellow_sea_1894",
   "key": "yellow_sea_1894",
-  "scene_id": "yellow_sea_1894"
+  "scene_id": "yellow_sea_1894",
+  "has_timelines": true
  },
  "sources": [
   {
@@ -540,5 +541,19 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "label": "日本舰队北上寻战"
   }
  ],
- "control": []
+ "control": [],
+ "timelines": {
+  "main": {
+   "label": "史实",
+   "parent": null,
+   "fork_point": null,
+   "note": "实际发生"
+  },
+  "qing_held_weihai": {
+   "label": "清军守威海",
+   "parent": "main",
+   "fork_point": "event:yellow_sea_1894_01",
+   "note": "反事实：清军成功守住威海卫港"
+  }
+ }
 };

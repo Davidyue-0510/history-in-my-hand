@@ -183,6 +183,14 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "city",
    "modern": "辽宁省沈阳市",
    "note": "1625 年后金迁都, 沈阳反超辽阳成为东北第一城",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "fushun",
+    "guangning",
+    "haizhou",
+    "kaiyuan",
+    "tieling"
+   ],
    "elev": 50
   },
   {
@@ -193,6 +201,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "city",
    "modern": "辽宁铁岭市银州区",
    "note": "辽东都司北路卫城, 1619 年与开原同年陷落",
+   "_global_id": "tieling",
+   "_other_scenes": [
+    "kaiyuan",
+    "tieling"
+   ],
    "elev": 238
   },
   {
@@ -203,6 +216,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "city",
    "modern": "辽宁开原市",
    "note": "辽东都司最北卫城, 1619 年陷落",
+   "_global_id": "kaiyuan_cheng",
+   "_other_scenes": [
+    "kaiyuan",
+    "tieling"
+   ],
    "elev": 85
   },
   {
@@ -213,6 +231,12 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "guan",
    "modern": "辽宁抚顺市",
    "note": "辽阳与建州女真之间的前哨, 万历四十六年(1618)先陷",
+   "_global_id": "fushun",
+   "_other_scenes": [
+    "kaiyuan",
+    "shenyang",
+    "tieling"
+   ],
    "elev": 76
   },
   {
@@ -223,6 +247,15 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "capital",
    "modern": "辽宁新宾满族自治县老城村",
    "note": "努尔哈赤起家之地, 萨尔浒之战明军四路围的目标",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "kaiyuan",
+    "sarhu",
+    "shenyang",
+    "tieling",
+    "yehe"
+   ],
    "elev": 586
   },
   {
@@ -233,6 +266,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "city",
    "modern": "辽宁北镇市",
    "note": "辽东总兵驻地, 辽东都司西边重镇 (超出投影范围, 仅作 admin 关系)",
+   "_global_id": "guangning",
+   "_other_scenes": [
+    "jinzhou",
+    "shenyang"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -244,6 +282,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "type": "wei",
    "modern": "辽宁沈阳市",
    "note": "辽东都司下辖 25 卫之一, 1621 浑河之战主战场",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "shenyang"
+   ],
    "elev": 50
   },
   {
@@ -264,7 +306,18 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "后金大汗",
    "side": "qing",
    "note": "建州女真首领, 1621 年攻占辽阳, 迁都于此, 建东京城",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "ningyuan"
+   ]
   },
   {
    "id": "huangtaiji",
@@ -272,7 +325,14 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "后金大汗 (太宗)",
    "side": "qing",
    "note": "努尔哈赤第八子, 1626 年继位, 1636 年改国号大清",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "huangtaiji",
+   "_other_scenes": [
+    "jinzhou",
+    "ningyuan",
+    "sarhu",
+    "shenyang"
+   ]
   },
   {
    "id": "yeluabuji",
@@ -304,7 +364,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任",
-   "influence": 15
+   "influence": 15,
+   "_global_id": "yuan_yingtai",
+   "_other_scenes": [
+    "shenyang"
+   ]
   },
   {
    "id": "ye_wang",
@@ -328,7 +392,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "总兵",
    "side": "ming",
    "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "chenjn",
+   "_other_scenes": [
+    "shenyang"
+   ]
   },
   {
    "id": "tongzhongkui",
@@ -336,7 +404,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "副总兵",
    "side": "ming",
    "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "tongzhongkui",
+   "_other_scenes": [
+    "shenyang"
+   ]
   },
   {
    "id": "zhangquan",
@@ -345,7 +417,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role_hint": "巡按辽东御史",
    "column": null,
    "note": "上疏论辽阳围急，辽阳陷后殉节",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "zhangquan",
+   "_other_scenes": [
+    "shenyang"
+   ]
   },
   {
    "id": "chence",
@@ -354,7 +430,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role_hint": "总兵（援沈阳）",
    "column": null,
    "note": "1621 援沈阳，浑河之战战死；辽阳围急时在城",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "chenjn",
+   "_other_scenes": [
+    "shenyang"
+   ]
   }
  ],
  "assertions": [

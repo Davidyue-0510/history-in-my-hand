@@ -85,6 +85,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "type": "capital",
    "modern": "吉林四平市梨树县东南",
    "note": "叶赫西城, 布扬古贝勒驻, 在地形网格外",
+   "_global_id": "xiyehe",
+   "_other_scenes": [
+    "shenyang"
+   ],
    "elev": 197
   },
   {
@@ -95,6 +99,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "type": "capital",
    "modern": "吉林四平市梨树县东南",
    "note": "叶赫东城, 布寨贝勒驻, 在地形网格外",
+   "_global_id": "dongyehe",
+   "_other_scenes": [
+    "shenyang"
+   ],
    "elev": 334
   },
   {
@@ -105,6 +113,11 @@ window.SANDBOX_SLICES["yehe"] = {
    "type": "city",
    "modern": "辽宁开原市",
    "note": "明辽北重镇, 叶赫受其节制",
+   "_global_id": "kaiyuan",
+   "_other_scenes": [
+    "sarhu",
+    "shenyang"
+   ],
    "elev": 85
   },
   {
@@ -115,6 +128,15 @@ window.SANDBOX_SLICES["yehe"] = {
    "type": "capital",
    "modern": "辽宁新宾县老城村",
    "note": "努尔哈赤起家之地, 建州根据地",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "kaiyuan",
+    "liaoyang",
+    "sarhu",
+    "shenyang",
+    "tieling"
+   ],
    "elev": 586
   },
   {
@@ -125,6 +147,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "type": "city",
    "modern": "吉林四平市",
    "note": "叶赫活动区域, 在地形网格外",
+   "_global_id": "sipingjie",
+   "_other_scenes": [
+    "shenyang"
+   ],
    "elev": 175
   }
  ],
@@ -155,7 +181,18 @@ window.SANDBOX_SLICES["yehe"] = {
    "name": "努尔哈赤",
    "role": "建州大汗",
    "note": "万历三十一年起五伐叶赫, 1619 年灭亡叶赫",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang"
+   ]
   }
  ],
  "assertions": [

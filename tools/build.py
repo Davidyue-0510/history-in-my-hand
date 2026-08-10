@@ -164,7 +164,6 @@ def _auto_simulate(sc, dirpath, timelines):
         }
     else:
         return
-
     for branch_id in timelines:
         if branch_id == "main":
             continue
@@ -176,8 +175,31 @@ def _auto_simulate(sc, dirpath, timelines):
             output = {"_branch": branch_id, "control": r}
             with open(out_path, "w", encoding="utf-8") as f:
                 _json.dump(output, f, ensure_ascii=False, indent=1)
-        except Exception as e:
-            pass  # 不阻断 build
+        except Exception:
+            pass
+
+
+def _inject_global_refs(persons, places, dirpath, sc):
+    """v0.34 从全局实体注册表注入跨场景引用。"""
+    reg_path = os.path.join(ROOT, "data", "entities", "global.json")
+    if not os.path.exists(reg_path):
+        return
+    reg = json.load(open(reg_path, encoding="utf-8"))
+    sid = sc["_key"]
+
+    for p in persons["persons"]:
+        name = p.get("name", "")
+        greg = reg["persons"].get(name)
+        if greg and len(greg.get("scenes", [])) > 1:
+            p["_global_id"] = greg["id"]
+            p["_other_scenes"] = [s for s in greg["scenes"] if s != sid][:8]
+
+    for p in places["places"]:
+        name = p.get("name", "")
+        greg = reg["places"].get(name)
+        if greg and len(greg.get("scenes", [])) > 1:
+            p["_global_id"] = greg["id"]
+            p["_other_scenes"] = [s for s in greg["scenes"] if s != sid][:8]
 
 
 def build_scene(sc):
@@ -207,6 +229,9 @@ def build_scene(sc):
                 pid_influence[pid] += 1
     for p in persons["persons"]:
         p["influence"] = pid_influence.get(p["id"], 0)
+
+    # v0.34 全局实体注册表：跨场景交叉引用
+    _inject_global_refs(persons, places, dirpath, sc)
 
     meta = {k: v for k, v in sc.items()
             if k not in _REGISTRY_ONLY and not k.startswith("_")}

@@ -178,6 +178,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "wei",
    "modern": "沈阳城内",
    "note": "洪武二十一年置, 与中屯卫、抚顺千户所同城分治",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "liaoyang"
+   ],
    "elev": 50
   },
   {
@@ -208,6 +212,12 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "city",
    "modern": "辽宁辽阳市",
    "note": "明辽东都司治所, 沈阳西南 70 里",
+   "_global_id": "liaoyang_cheng",
+   "_other_scenes": [
+    "haizhou",
+    "kaiyuan",
+    "tieling"
+   ],
    "elev": 22
   },
   {
@@ -218,6 +228,12 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "guan",
    "modern": "辽宁抚顺市",
    "note": "沈阳东卫, 万历四十六年 (1618) 陷落",
+   "_global_id": "fushun",
+   "_other_scenes": [
+    "kaiyuan",
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 76
   },
   {
@@ -228,6 +244,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "city",
    "modern": "辽宁开原市",
    "note": "明辽北重镇, 万历四十七年 (1619) 陷落",
+   "_global_id": "kaiyuan",
+   "_other_scenes": [
+    "sarhu",
+    "yehe"
+   ],
    "elev": 85
   },
   {
@@ -248,6 +269,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "city",
    "modern": "辽宁北镇市",
    "note": "明辽东总兵驻地, 在现地形网格外, 见辽西走廊",
+   "_global_id": "guangning",
+   "_other_scenes": [
+    "jinzhou",
+    "liaoyang"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -259,6 +285,15 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "capital",
    "modern": "辽宁新宾县老城村",
    "note": "努尔哈赤 1616 年建国都, 萨尔浒之战前明军主攻目标",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "kaiyuan",
+    "liaoyang",
+    "sarhu",
+    "tieling",
+    "yehe"
+   ],
    "elev": 586
   },
   {
@@ -269,6 +304,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "city",
    "modern": "吉林四平市",
    "note": "叶赫活动区域, 在现地形网格外",
+   "_global_id": "sipingjie",
+   "_other_scenes": [
+    "yehe"
+   ],
    "elev": 175
   },
   {
@@ -279,6 +318,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "capital",
    "modern": "吉林四平市梨树县东南",
    "note": "叶赫东城, 布寨贝勒驻, 在现地形网格外",
+   "_global_id": "dongyehe",
+   "_other_scenes": [
+    "yehe"
+   ],
    "elev": 334
   },
   {
@@ -289,6 +332,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "type": "capital",
    "modern": "吉林四平市梨树县东南",
    "note": "叶赫西城, 布扬古贝勒驻, 在现地形网格外",
+   "_global_id": "xiyehe",
+   "_other_scenes": [
+    "yehe"
+   ],
    "elev": 197
   }
  ],
@@ -299,7 +346,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "alias": "袁自如",
    "role": "辽东巡抚",
    "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢",
-   "influence": 9
+   "influence": 9,
+   "_global_id": "yuan_yingtai",
+   "_other_scenes": [
+    "liaoyang"
+   ]
   },
   {
    "id": "he_shixian",
@@ -313,14 +364,22 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "陈策",
    "role": "援辽总兵",
    "note": "1621 年自辽阳驰援沈阳, 浑河桥头中炮死",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "chenjn",
+   "_other_scenes": [
+    "liaoyang"
+   ]
   },
   {
    "id": "tongzhongkui",
    "name": "童仲揆",
    "role": "副总兵",
    "note": "1621 年与陈策同援沈阳, 浑河之战战死",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "tongzhongkui",
+   "_other_scenes": [
+    "liaoyang"
+   ]
   },
   {
    "id": "zoushibiao",
@@ -341,21 +400,45 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1616 年建后金, 1621 年三月取沈阳、辽阳",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang"
+   ]
   },
   {
    "id": "huangtaiji",
    "name": "皇太极",
    "role": "后金四贝勒",
    "note": "1621 年三月与二贝勒阿敏等围攻沈阳",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "huangtaiji",
+   "_other_scenes": [
+    "jinzhou",
+    "liaoyang",
+    "ningyuan",
+    "sarhu"
+   ]
   },
   {
    "id": "amin",
    "name": "阿敏",
    "role": "后金二贝勒",
    "note": "舒尔哈齐之子, 1621 年攻沈阳北路",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "amin",
+   "_other_scenes": [
+    "fuzhou",
+    "haizhou",
+    "jinzhouwei"
+   ]
   },
   {
    "id": "goseong",
@@ -363,7 +446,12 @@ window.SANDBOX_SLICES["shenyang"] = {
    "alias": "姜晔",
    "role": "朝鲜都元帅",
    "note": "1621 年应袁应泰请援, 率朝鲜兵万余援辽, 浑河之战大败被俘",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "jianghongli",
+   "_other_scenes": [
+    "kaiyuan",
+    "sarhu"
+   ]
   },
   {
    "id": "chence",
@@ -372,7 +460,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "总兵（援沈阳）",
    "column": null,
    "note": "1621 与童仲揆同援沈阳，浑河之战战死",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "chenjn",
+   "_other_scenes": [
+    "liaoyang"
+   ]
   },
   {
    "id": "qijin",
@@ -408,7 +500,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "巡按辽东御史",
    "column": null,
    "note": "上疏论辽阳围急，辽阳陷后殉节",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "zhangquan",
+   "_other_scenes": [
+    "liaoyang"
+   ]
   }
  ],
  "assertions": [

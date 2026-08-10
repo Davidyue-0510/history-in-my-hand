@@ -94,6 +94,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "type": "wei",
    "modern": "辽宁盖州市东北",
    "note": "盖州北卫",
+   "_global_id": "xiongyue",
+   "_other_scenes": [
+    "haizhou"
+   ],
    "elev": 0
   },
   {
@@ -124,6 +128,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "type": "city",
    "modern": "辽宁瓦房店市",
    "note": "盖州南向卫城",
+   "_global_id": "fuzhou_cheng",
+   "_other_scenes": [
+    "jinzhouwei"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -135,6 +143,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "type": "city",
    "modern": "辽宁大连市金州区",
    "note": "辽东半岛南端, 在地形网格外",
+   "_global_id": "jinzhouwei_cheng",
+   "_other_scenes": [
+    "fuzhou"
+   ],
    "elev": null,
    "off_grid": true
   }
@@ -159,7 +171,18 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1621 年命阿敏等取盖州、复州",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   }
  ],
  "assertions": [

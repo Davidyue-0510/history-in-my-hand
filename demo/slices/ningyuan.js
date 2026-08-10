@@ -131,6 +131,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "type": "guan",
    "modern": "河北秦皇岛",
    "note": "宁远南向，走廊终端",
+   "_global_id": "shanhaiguan",
+   "_other_scenes": [
+    "guangning",
+    "jinzhou"
+   ],
    "elev": null,
    "off_grid": true
   }
@@ -148,21 +153,43 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "name": "祖大寿",
    "role": "宁远副总兵",
    "note": "袁崇焕部下，后两度降清",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "zu_dashou",
+   "_other_scenes": [
+    "jinzhou"
+   ]
   },
   {
    "id": "huangtaiji",
    "name": "皇太极",
    "role": "清太宗",
    "note": "1627 宁锦、1629 己巳入塞",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "huangtaiji",
+   "_other_scenes": [
+    "jinzhou",
+    "liaoyang",
+    "sarhu",
+    "shenyang"
+   ]
   },
   {
    "id": "nuerhaci",
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1626 攻宁远受伤，七月死",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang"
+   ]
   },
   {
    "id": "wu_sangui",

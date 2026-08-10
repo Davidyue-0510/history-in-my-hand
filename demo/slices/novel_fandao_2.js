@@ -89,7 +89,11 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "name": "叶为安",
    "desc": "大世界第一株桃树妖修，入小世界接『父亲对晚辈』委托积功德延寿；本副本占据贺云章身体执政。",
    "intro": "（虚构人物）叶为安",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "yeweian",
+   "_other_scenes": [
+    "novel_fandao"
+   ]
   },
   {
    "id": "he_yunzhang",

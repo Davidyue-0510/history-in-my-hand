@@ -96,6 +96,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "city",
    "modern": "辽宁省铁岭市银州区",
    "note": "明洪武二十六年(1393)徙铁岭卫治于此, 以辽代银州古城为依托",
+   "_global_id": "tieling",
+   "_other_scenes": [
+    "kaiyuan",
+    "liaoyang"
+   ],
    "elev": 238
   },
   {
@@ -116,6 +121,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "city",
    "modern": "辽宁省开原市",
    "note": "铁岭南向最近卫城, 萨尔浒之战马林北路军征调来自开原",
+   "_global_id": "kaiyuan_cheng",
+   "_other_scenes": [
+    "kaiyuan",
+    "liaoyang"
+   ],
    "elev": 85
   },
   {
@@ -126,6 +136,14 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "city",
    "modern": "辽宁省沈阳市",
    "note": "辽东重镇, 奉集堡在其东南, 萨尔浒之战西路杜松军从沈阳出",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "fushun",
+    "guangning",
+    "haizhou",
+    "kaiyuan",
+    "liaoyang"
+   ],
    "elev": 50
   },
   {
@@ -136,6 +154,12 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "guan",
    "modern": "辽宁抚顺市",
    "note": "萨尔浒之战西路主攻出发地, 万历四十六年(1618)先陷",
+   "_global_id": "fushun",
+   "_other_scenes": [
+    "kaiyuan",
+    "liaoyang",
+    "shenyang"
+   ],
    "elev": 76
   },
   {
@@ -146,6 +170,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "guan",
    "modern": "辽宁新宾满族自治县西南",
    "note": "萨尔浒之战南路李如柏军出鸦鹘关",
+   "_global_id": "yahuguan",
+   "_other_scenes": [
+    "sarhu"
+   ],
    "elev": 531
   },
   {
@@ -156,6 +184,15 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "capital",
    "modern": "辽宁新宾满族自治县老城村",
    "note": "努尔哈赤起家之地, 萨尔浒之战明军四路围的目标",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "kaiyuan",
+    "liaoyang",
+    "sarhu",
+    "shenyang",
+    "yehe"
+   ],
    "elev": 586
   },
   {
@@ -166,6 +203,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "wei",
    "modern": "辽宁宽甸满族自治县一带",
    "note": "万历初李成梁献议兴建, 万历三十四年(1606)放弃, 迁民6万余户",
+   "_global_id": "kuandian",
+   "_other_scenes": [
+    "fushun"
+   ],
    "elev": 241
   },
   {
@@ -176,6 +217,12 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "city",
    "modern": "辽宁省辽阳市",
    "note": "辽东都司治所, 铁岭后方的明代北南主轴",
+   "_global_id": "liaoyang_cheng",
+   "_other_scenes": [
+    "haizhou",
+    "kaiyuan",
+    "shenyang"
+   ],
    "elev": 23
   },
   {
@@ -186,6 +233,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "type": "city",
    "modern": "辽宁抚顺东大伙房水库附近",
    "note": "萨尔浒之战主战场, 铁岭卫指挥使属北路军战区",
+   "_global_id": "sarhu",
+   "_other_scenes": [
+    "kaiyuan",
+    "sarhu"
+   ],
    "elev": 195
   },
   {
@@ -206,7 +258,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "辽东总兵",
    "side": "ming",
    "note": "铁岭卫人, 1526-1615, 镇辽30年, 先后十奏大捷. 高祖李英自朝鲜内附.",
-   "influence": 7
+   "influence": 7,
+   "_global_id": "li_chengliang",
+   "_other_scenes": [
+    "fushun"
+   ]
   },
   {
    "id": "li_rusong",
@@ -214,7 +270,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "总兵",
    "side": "ming",
    "note": "李成梁长子, 抗倭援朝, 宁夏哱拜之战, 万历二十六年(1598)蒙古入侵中伏阵亡",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "li_rusong",
+   "_other_scenes": [
+    "imjin"
+   ]
   },
   {
    "id": "li_ruzhui",
@@ -222,7 +282,12 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "辽东总兵",
    "side": "ming",
    "note": "李成梁次子, 萨尔浒之战南路军统帅, 因三路败未接战撤退, 天启元年(1621)被弹劾自杀",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "li_rubai",
+   "_other_scenes": [
+    "fushun",
+    "sarhu"
+   ]
   },
   {
    "id": "nuerhaci",
@@ -230,7 +295,18 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "后金大汗",
    "side": "qing",
    "note": "建州女真首领, 1619年七月亲领兵攻占铁岭",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang"
+   ]
   },
   {
    "id": "wang_gao",
@@ -246,7 +322,12 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "巡按辽东, 勘奏弃宽甸六堡非策, 后任经略",
-   "influence": 10
+   "influence": 10,
+   "_global_id": "xiongtingbing",
+   "_other_scenes": [
+    "guangning",
+    "kaiyuan"
+   ]
   },
   {
    "id": "yanghao",
@@ -254,7 +335,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "萨尔浒之战明军最高统帅, 三路败后李如柏撤回",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "yanggao",
+   "_other_scenes": [
+    "sarhu"
+   ]
   },
   {
    "id": "dubao",
@@ -262,7 +347,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "role": "山海关总兵 / 西路军主将",
    "side": "ming",
    "note": "西路军统帅出抚顺, 萨尔浒之战阵亡",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "dusong",
+   "_other_scenes": [
+    "sarhu"
+   ]
   }
  ],
  "assertions": [

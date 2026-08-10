@@ -138,6 +138,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "type": "guan",
    "modern": "河北秦皇岛",
    "note": "辽西走廊终端，明蓟镇门户",
+   "_global_id": "shanhaiguan",
+   "_other_scenes": [
+    "jinzhou",
+    "ningyuan"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -149,6 +154,14 @@ window.SANDBOX_SLICES["guangning"] = {
    "type": "city",
    "modern": "辽宁沈阳市",
    "note": "1621 陷后辽东重心西迁广宁",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "fushun",
+    "haizhou",
+    "kaiyuan",
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 50
   },
   {
@@ -169,7 +182,12 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "熊廷弼",
    "role": "辽东经略",
    "note": "主守，与王化贞经抚不和，广宁陷后受诛",
-   "influence": 11
+   "influence": 11,
+   "_global_id": "xiongtingbing",
+   "_other_scenes": [
+    "kaiyuan",
+    "tieling"
+   ]
   },
   {
    "id": "wang_huazhen",
@@ -190,14 +208,30 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1622 年正月取广宁",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   },
   {
    "id": "xiong_tingbi",
    "name": "熊廷弼",
    "faction": "feng_jiang",
    "note": "辽东经略，广宁之失后被逮，天启五年遭阉党诛杀。",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "xiongtingbing",
+   "_other_scenes": [
+    "kaiyuan",
+    "tieling"
+   ]
   },
   {
    "id": "liu_ruoyu",

@@ -189,6 +189,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "approx_10km",
    "type": "pass",
    "note": "辽东边墙关口，杜松西路出塞处",
+   "_global_id": "fushunguan",
+   "_other_scenes": [
+    "fushun"
+   ],
    "elev": 176
   },
   {
@@ -200,6 +204,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "approx_10km",
    "type": "battlefield",
    "note": "原址已沉入大伙房水库，现代定位存在争议",
+   "_global_id": "sarhu",
+   "_other_scenes": [
+    "kaiyuan",
+    "tieling"
+   ],
    "elev": 119
   },
   {
@@ -233,6 +242,15 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "site",
    "type": "capital",
    "note": "后金都城，明军四路合击的目标",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "kaiyuan",
+    "liaoyang",
+    "shenyang",
+    "tieling",
+    "yehe"
+   ],
    "elev": 386
   },
   {
@@ -244,6 +262,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "city",
    "type": "city",
    "note": "马林北路出发地",
+   "_global_id": "kaiyuan",
+   "_other_scenes": [
+    "shenyang",
+    "yehe"
+   ],
    "elev": 82
   },
   {
@@ -299,6 +322,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "approx_10km",
    "type": "pass",
    "note": "南路军出塞关口",
+   "_global_id": "yahuguan",
+   "_other_scenes": [
+    "tieling"
+   ],
    "elev": 546
   },
   {
@@ -387,6 +414,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "precision": "town",
    "type": "city",
    "note": "叶赫部，明之盟军，出兵一部随北路军",
+   "_global_id": "yehe",
+   "_other_scenes": [
+    "kaiyuan"
+   ],
    "elev": 292
   }
  ],
@@ -398,7 +429,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽东经略",
    "column": null,
    "note": "四路总调度，战后下狱，崇祯二年伏诛",
-   "influence": 8
+   "influence": 8,
+   "_global_id": "yanggao",
+   "_other_scenes": [
+    "tieling"
+   ]
   },
   {
    "id": "dusong",
@@ -407,7 +442,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "山海关总兵",
    "column": "west",
    "note": "西路主将，绰号杜疯子，以勇著称",
-   "influence": 3
+   "influence": 3,
+   "_global_id": "dusong",
+   "_other_scenes": [
+    "tieling"
+   ]
   },
   {
    "id": "wangxuan",
@@ -434,7 +473,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "开原总兵",
    "column": "north",
    "note": "北路主将，名将马芳之子，文士气重",
-   "influence": 4
+   "influence": 4,
+   "_global_id": "malin",
+   "_other_scenes": [
+    "kaiyuan"
+   ]
   },
   {
    "id": "panzongyan",
@@ -461,7 +504,12 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽东总兵",
    "column": "south",
    "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
-   "influence": 3
+   "influence": 3,
+   "_global_id": "li_rubai",
+   "_other_scenes": [
+    "fushun",
+    "tieling"
+   ]
   },
   {
    "id": "liuting",
@@ -488,7 +536,12 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "朝鲜五道都元帅",
    "column": "east",
    "note": "朝鲜援军统帅，富察之野降后金",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "jianghongli",
+   "_other_scenes": [
+    "kaiyuan",
+    "shenyang"
+   ]
   },
   {
    "id": "kimkyungsuh",
@@ -515,7 +568,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "后金大汗",
    "column": null,
    "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang"
+   ]
   },
   {
    "id": "daishan",
@@ -533,7 +597,14 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "四贝勒",
    "column": null,
    "note": "参与诸战",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "huangtaiji",
+   "_other_scenes": [
+    "jinzhou",
+    "liaoyang",
+    "ningyuan",
+    "shenyang"
+   ]
   },
   {
    "id": "eyidu",

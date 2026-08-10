@@ -104,6 +104,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "type": "city",
    "modern": "辽宁盖州市",
    "note": "复州北向卫城",
+   "_global_id": "gaizhou_cheng",
+   "_other_scenes": [
+    "haizhou"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -115,6 +119,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "type": "city",
    "modern": "辽宁大连金州区",
    "note": "复州南向，半岛南端",
+   "_global_id": "jinzhouwei_cheng",
+   "_other_scenes": [
+    "gaizhou"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -126,6 +134,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "type": "island",
    "modern": "朝鲜椴岛/皮岛",
    "note": "毛文龙东江镇基地，袭扰辽南",
+   "_global_id": "pidao",
+   "_other_scenes": [
+    "jinzhouwei"
+   ],
    "elev": null,
    "off_grid": true
   }
@@ -136,21 +148,43 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "name": "毛文龙",
    "role": "东江总兵",
    "note": "据皮岛创东江镇，袭扰复州/金州沿海",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "mao_wenlong",
+   "_other_scenes": [
+    "haizhou",
+    "jinzhouwei"
+   ]
   },
   {
    "id": "amin",
    "name": "阿敏",
    "role": "后金二贝勒",
    "note": "1621 南下取复州/盖州",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "amin",
+   "_other_scenes": [
+    "haizhou",
+    "jinzhouwei",
+    "shenyang"
+   ]
   },
   {
    "id": "nuerhaci",
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1621 取辽南",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   }
  ],
  "assertions": [

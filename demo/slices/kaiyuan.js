@@ -132,6 +132,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "capital",
    "modern": "今辽宁开原市老城街道",
    "note": "元开元路治，明三万卫/开原卫治，辽东北端第一重镇",
+   "_global_id": "kaiyuan_cheng",
+   "_other_scenes": [
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 88
   },
   {
@@ -212,6 +217,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "city",
    "modern": "今辽宁铁岭市",
    "note": "开原重要卫城，万历四十七年七月继开原后陷落",
+   "_global_id": "tieling",
+   "_other_scenes": [
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 71
   },
   {
@@ -222,6 +232,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "city",
    "modern": "今辽宁辽阳市",
    "note": "辽东镇城，全辽枢纽，开原南屏",
+   "_global_id": "liaoyang_cheng",
+   "_other_scenes": [
+    "haizhou",
+    "shenyang",
+    "tieling"
+   ],
    "elev": 23
   },
   {
@@ -232,6 +248,14 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "city",
    "modern": "今辽宁沈阳市",
    "note": "辽东重镇，开原陷后成为后金兵锋所指",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "fushun",
+    "guangning",
+    "haizhou",
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 50
   },
   {
@@ -242,6 +266,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "battlefield",
    "modern": "今抚顺大伙房水库一带",
    "note": "万历四十七年二月明金决战地；开铁之战为其后效",
+   "_global_id": "sarhu",
+   "_other_scenes": [
+    "sarhu",
+    "tieling"
+   ],
    "elev": 135
   },
   {
@@ -252,6 +281,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "city",
    "modern": "今吉林梨树叶赫镇",
    "note": "海西女真叶赫部（北关），开原北屏障；开原陷后一月被灭",
+   "_global_id": "yehe",
+   "_other_scenes": [
+    "sarhu"
+   ],
    "elev": 333
   },
   {
@@ -262,6 +295,15 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "capital",
    "modern": "今辽宁新宾老城",
    "note": "后金都城（兴京），努尔哈赤起家之地",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "fushun",
+    "liaoyang",
+    "sarhu",
+    "shenyang",
+    "tieling",
+    "yehe"
+   ],
    "elev": 416
   },
   {
@@ -272,6 +314,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "type": "city",
    "modern": "今辽宁抚顺市",
    "note": "万历四十六年（1618）后金首破之明边堡，开原之前奏",
+   "_global_id": "fushun",
+   "_other_scenes": [
+    "liaoyang",
+    "shenyang",
+    "tieling"
+   ],
    "elev": 44
   },
   {
@@ -300,7 +348,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "role": "援辽总兵",
    "side": "ming",
    "note": "开铁之战中死守开原，城破殉国",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "malin",
+   "_other_scenes": [
+    "sarhu"
+   ]
   },
   {
    "id": "zhengzhifan",
@@ -316,7 +368,18 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "role": "后金大汗",
    "side": "jin",
    "note": "万历四十七年率军克开原、铁岭，时年六十一",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "liaoyang",
+    "ningyuan"
+   ]
   },
   {
    "id": "xiongtinbi",
@@ -324,7 +387,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "开原陷后受命经略辽东，奏称『开原，河东根柢也』",
-   "influence": 1
+   "influence": 1,
+   "_global_id": "xiongtingbing",
+   "_other_scenes": [
+    "guangning",
+    "tieling"
+   ]
   },
   {
    "id": "gaozhen",
@@ -356,7 +424,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "role": "朝鲜五道都元帅",
    "side": "chaoxian",
    "note": "（1560–1627）萨尔浒之战率约1.3万朝鲜兵隶东路刘綎助明；阿布达里岗后通款后金而降，明神宗未责反赐敕",
-   "influence": 2
+   "influence": 2,
+   "_global_id": "jianghongli",
+   "_other_scenes": [
+    "sarhu",
+    "shenyang"
+   ]
   }
  ],
  "assertions": [

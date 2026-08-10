@@ -116,6 +116,12 @@ window.SANDBOX_SLICES["haizhou"] = {
    "type": "city",
    "modern": "辽宁辽阳市",
    "note": "海州北向卫城",
+   "_global_id": "liaoyang_cheng",
+   "_other_scenes": [
+    "kaiyuan",
+    "shenyang",
+    "tieling"
+   ],
    "elev": 22
   },
   {
@@ -126,6 +132,14 @@ window.SANDBOX_SLICES["haizhou"] = {
    "type": "city",
    "modern": "辽宁沈阳市",
    "note": "辽东都司治所",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "fushun",
+    "guangning",
+    "kaiyuan",
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 50
   },
   {
@@ -146,6 +160,10 @@ window.SANDBOX_SLICES["haizhou"] = {
    "type": "city",
    "modern": "辽宁盖州市",
    "note": "海州南向卫城, 在地形网格外",
+   "_global_id": "gaizhou_cheng",
+   "_other_scenes": [
+    "fuzhou"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -157,6 +175,10 @@ window.SANDBOX_SLICES["haizhou"] = {
    "type": "wei",
    "modern": "辽宁盖州市东北",
    "note": "盖州北卫, 在地形网格外",
+   "_global_id": "xiongyue",
+   "_other_scenes": [
+    "gaizhou"
+   ],
    "elev": 0
   }
  ],
@@ -173,21 +195,43 @@ window.SANDBOX_SLICES["haizhou"] = {
    "name": "毛文龙",
    "role": "都司/皮岛总兵",
    "note": "天启元年辽阳陷后, 率 197 人逃入海中皮岛, 开东江镇, 与海州/盖州失陷同期",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "mao_wenlong",
+   "_other_scenes": [
+    "fuzhou",
+    "jinzhouwei"
+   ]
   },
   {
    "id": "nuerhaci",
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1621 年三月取沈阳后, 复攻海州",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   },
   {
    "id": "amin",
    "name": "阿敏",
    "role": "后金二贝勒",
    "note": "率兵南下取海州、盖州",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "amin",
+   "_other_scenes": [
+    "fuzhou",
+    "jinzhouwei",
+    "shenyang"
+   ]
   }
  ],
  "assertions": [

@@ -95,6 +95,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "type": "guan",
    "modern": "辽宁抚顺市前甸镇",
    "note": "辽东边关, 后金入贡与互市必经",
+   "_global_id": "fushunguan",
+   "_other_scenes": [
+    "sarhu"
+   ],
    "elev": 85
   },
   {
@@ -105,6 +109,14 @@ window.SANDBOX_SLICES["fushun"] = {
    "type": "city",
    "modern": "辽宁沈阳市",
    "note": "抚顺西向卫城",
+   "_global_id": "shenyang_cheng",
+   "_other_scenes": [
+    "guangning",
+    "haizhou",
+    "kaiyuan",
+    "liaoyang",
+    "tieling"
+   ],
    "elev": 50
   },
   {
@@ -115,6 +127,15 @@ window.SANDBOX_SLICES["fushun"] = {
    "type": "capital",
    "modern": "辽宁新宾县老城村",
    "note": "努尔哈赤 1616 建国都",
+   "_global_id": "hetuala",
+   "_other_scenes": [
+    "kaiyuan",
+    "liaoyang",
+    "sarhu",
+    "shenyang",
+    "tieling",
+    "yehe"
+   ],
    "elev": 586
   },
   {
@@ -125,6 +146,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "type": "wei",
    "modern": "辽宁宽甸县一带",
    "note": "万历三十四年 (1606) 明弃",
+   "_global_id": "kuandian",
+   "_other_scenes": [
+    "tieling"
+   ],
    "elev": 241
   },
   {
@@ -144,21 +169,41 @@ window.SANDBOX_SLICES["fushun"] = {
    "name": "李成梁",
    "role": "辽东总兵",
    "note": "隆庆四年起镇辽 22 年, 万历三十四年弃宽甸六堡",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "li_chengliang",
+   "_other_scenes": [
+    "tieling"
+   ]
   },
   {
    "id": "li_rubai",
    "name": "李如柏",
    "role": "辽东总兵",
    "note": "李成梁次子, 万历四十七年萨尔浒南路军主帅",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "li_rubai",
+   "_other_scenes": [
+    "sarhu",
+    "tieling"
+   ]
   },
   {
    "id": "nuerhaci",
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1616 年建国, 万历四十六年四月取抚顺",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "jinzhouwei",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   },
   {
    "id": "li_yongfang",

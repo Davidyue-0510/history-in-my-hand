@@ -105,6 +105,10 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "type": "city",
    "modern": "辽宁瓦房店市",
    "note": "金州北向卫城",
+   "_global_id": "fuzhou_cheng",
+   "_other_scenes": [
+    "gaizhou"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -116,6 +120,10 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "type": "island",
    "modern": "朝鲜椴岛",
    "note": "毛文龙东江镇，一度收复金州/旅顺",
+   "_global_id": "pidao",
+   "_other_scenes": [
+    "fuzhou"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -137,21 +145,43 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "name": "毛文龙",
    "role": "东江总兵",
    "note": "据皮岛，1621–1622 一度收复金州、旅顺",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "mao_wenlong",
+   "_other_scenes": [
+    "fuzhou",
+    "haizhou"
+   ]
   },
   {
    "id": "amin",
    "name": "阿敏",
    "role": "后金二贝勒",
    "note": "1621 取金州",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "amin",
+   "_other_scenes": [
+    "fuzhou",
+    "haizhou",
+    "shenyang"
+   ]
   },
   {
    "id": "nuerhaci",
    "name": "努尔哈赤",
    "role": "后金大汗",
    "note": "1621 取辽南",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "nuerhaci",
+   "_other_scenes": [
+    "fushun",
+    "fuzhou",
+    "gaizhou",
+    "guangning",
+    "haizhou",
+    "kaiyuan",
+    "liaoyang",
+    "ningyuan"
+   ]
   }
  ],
  "assertions": [

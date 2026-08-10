@@ -282,7 +282,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "name": "李如松",
    "role": "明提督蓟辽保定山东诸军",
    "note": "平壤大捷，碧蹄馆小挫后力主和议",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "li_rusong",
+   "_other_scenes": [
+    "tieling"
+   ]
   },
   {
    "id": "song_yingchang",

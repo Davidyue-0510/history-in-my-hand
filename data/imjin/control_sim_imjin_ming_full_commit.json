@@ -3,7 +3,34 @@
  "control": [
   {
    "place_id": "anzhou",
+   "party": "朝鲜",
+   "start": 1592,
+   "end": null,
+   "timeline": "imjin_ming_full_commit",
+   "basis": "sim: 局部兵力比 > 1.5，占",
+   "note": "确定性推演第 1592 年"
+  },
+  {
+   "place_id": "busan",
+   "party": "朝鲜",
+   "start": 1592,
+   "end": null,
+   "timeline": "imjin_ming_full_commit",
+   "basis": "sim: 局部兵力比 > 1.5，占",
+   "note": "确定性推演第 1592 年"
+  },
+  {
+   "place_id": "anzhou",
    "party": "明方",
+   "start": 1593,
+   "end": null,
+   "timeline": "imjin_ming_full_commit",
+   "basis": "sim: 局部兵力比 > 1.5，占",
+   "note": "确定性推演第 1593 年"
+  },
+  {
+   "place_id": "busan",
+   "party": "朝鲜",
    "start": 1593,
    "end": null,
    "timeline": "imjin_ming_full_commit",
@@ -13,15 +40,6 @@
   {
    "place_id": "liaodong",
    "party": "明方",
-   "start": 1593,
-   "end": null,
-   "timeline": "imjin_ming_full_commit",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1593 年"
-  },
-  {
-   "place_id": "pyongyang",
-   "party": "朝鲜",
    "start": 1593,
    "end": null,
    "timeline": "imjin_ming_full_commit",
@@ -94,15 +112,6 @@
   {
    "place_id": "kaesong",
    "party": "明方",
-   "start": 1598,
-   "end": null,
-   "timeline": "imjin_ming_full_commit",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1598 年"
-  },
-  {
-   "place_id": "bixieguan",
-   "party": "日本方",
    "start": 1598,
    "end": null,
    "timeline": "imjin_ming_full_commit",

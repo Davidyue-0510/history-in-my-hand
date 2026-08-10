@@ -143,6 +143,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "type": "city",
    "modern": "辽宁北镇市",
    "note": "锦州北向卫城",
+   "_global_id": "guangning",
+   "_other_scenes": [
+    "liaoyang",
+    "shenyang"
+   ],
    "elev": null,
    "off_grid": true
   },
@@ -154,6 +159,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "type": "guan",
    "modern": "河北秦皇岛",
    "note": "辽西走廊终端",
+   "_global_id": "shanhaiguan",
+   "_other_scenes": [
+    "guangning",
+    "ningyuan"
+   ],
    "elev": null,
    "off_grid": true
   }
@@ -164,7 +174,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "name": "祖大寿",
    "role": "明总兵",
    "note": "两度被围降清（大凌河/锦州），吴三桂舅父",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "zu_dashou",
+   "_other_scenes": [
+    "ningyuan"
+   ]
   },
   {
    "id": "hong_chengchou",
@@ -178,7 +192,14 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "name": "皇太极",
    "role": "清太宗",
    "note": "1641–1642 围锦州、松山，灭明辽西机动兵力",
-   "influence": 0
+   "influence": 0,
+   "_global_id": "huangtaiji",
+   "_other_scenes": [
+    "liaoyang",
+    "ningyuan",
+    "sarhu",
+    "shenyang"
+   ]
   },
   {
    "id": "duoergun",
