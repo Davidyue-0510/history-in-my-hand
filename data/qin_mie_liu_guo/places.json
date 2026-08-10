@@ -1,0 +1,126 @@
+{
+ "places": [
+  {
+   "id": "handan",
+   "name": "邯郸",
+   "type": "city",
+   "modern": "今中国河北省邯郸市",
+   "note": "赵国都城，秦军围攻之地",
+   "lon": 114.48,
+   "lat": 36.61,
+   "geo_note": "赵国都城"
+  },
+  {
+   "id": "jingxing",
+   "name": "井陉",
+   "type": "yi",
+   "modern": "今中国河北省井陉县",
+   "note": "王翦下井陉，为攻赵要道",
+   "lon": 114.14,
+   "lat": 38.03,
+   "geo_note": "太行八陉"
+  },
+  {
+   "id": "he_nei",
+   "name": "河内",
+   "type": "region",
+   "modern": "今中国河南省黄河以北地区",
+   "note": "端和将河内兵伐赵",
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dongyang",
+   "name": "东阳",
+   "type": "region",
+   "modern": "今中国河北省南部及山东省西部",
+   "note": "王翦、羌瘣尽定取赵地东阳",
+   "lon": 115.0,
+   "lat": 36.5,
+   "geo_note": "赵国东阳地"
+  },
+  {
+   "id": "dai",
+   "name": "代",
+   "type": "region",
+   "modern": "今中国河北省蔚县一带",
+   "note": "赵公子嘉逃至代地自立为代王",
+   "lon": 113.0,
+   "lat": 39.0,
+   "geo_note": "赵公子嘉自立处"
+  },
+  {
+   "id": "shanggu",
+   "name": "上谷",
+   "type": "region",
+   "modern": "今中国河北省张家口市一带",
+   "note": "代王嘉与燕合兵，军上谷",
+   "lon": 115.5,
+   "lat": 40.5,
+   "geo_note": "燕代交界"
+  },
+  {
+   "id": "zhongshan",
+   "name": "中山",
+   "type": "region",
+   "modern": "今中国河北省定州市一带",
+   "note": "秦军欲攻燕，屯兵中山",
+   "lon": 114.5,
+   "lat": 38.0,
+   "geo_note": "古中山国"
+  },
+  {
+   "id": "taiyuan",
+   "name": "太原",
+   "type": "region",
+   "modern": "今中国山西省太原市",
+   "note": "秦王从太原、上郡归",
+   "lon": 112.55,
+   "lat": 37.87,
+   "geo_note": "今山西太原"
+  },
+  {
+   "id": "shangjun",
+   "name": "上郡",
+   "type": "region",
+   "modern": "今中国陕西省北部",
+   "note": "秦王从太原、上郡归",
+   "lon": 109.0,
+   "lat": 37.5,
+   "geo_note": "秦上郡"
+  },
+  {
+   "id": "yishui",
+   "name": "易水",
+   "type": "region",
+   "modern": "今中国河北省易县境内",
+   "note": "秦军破燕易水之西",
+   "lon": 115.5,
+   "lat": 39.3,
+   "geo_note": "燕赵边界"
+  },
+  {
+   "id": "daliang",
+   "name": "大梁",
+   "type": "city",
+   "modern": "今中国河南省开封市",
+   "note": "魏国都城，王贲引河沟灌之",
+   "lon": 114.35,
+   "lat": 34.8,
+   "geo_note": "魏国都城"
+  },
+  {
+   "id": "pingyu",
+   "name": "平舆",
+   "type": "city",
+   "modern": "今中国河南省平舆县",
+   "note": "王翦取陈以南至平舆",
+   "lon": 114.5,
+   "lat": 33.0,
+   "geo_note": "楚地"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

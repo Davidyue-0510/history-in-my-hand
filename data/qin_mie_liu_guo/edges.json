@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "jingxing",
+   "to": "handan",
+   "type": "military",
+   "label": "王翦攻赵路线"
+  },
+  {
+   "from": "he_nei",
+   "to": "handan",
+   "type": "military",
+   "label": "端和围邯郸路线"
+  },
+  {
+   "from": "zhongshan",
+   "to": "yishui",
+   "type": "military",
+   "label": "秦军攻燕路线"
+  },
+  {
+   "from": "dai",
+   "to": "shanggu",
+   "type": "military",
+   "label": "代王嘉与燕合兵路线"
+  },
+  {
+   "from": "daliang",
+   "to": "pingyu",
+   "type": "military",
+   "label": "王贲攻魏后转攻荆路线"
+  }
+ ]
+}

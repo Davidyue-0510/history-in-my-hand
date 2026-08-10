@@ -1,16 +1,17 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 26 个切片
+// 权威数据源：data/scenes.json 注册的 27 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 26 个切片",
+  "slice": "multi-scene · 27 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "ming_qing",
+   "qin_mie_liu_guo",
    "tang"
   ]
  },
@@ -59,6 +60,11 @@ window.SANDBOX_DATA = {
    "id": "yellow_sea",
    "name": "甲午",
    "note": "1894-95 甲午战争"
+  },
+  {
+   "id": "guangzhong",
+   "name": "秦灭六国",
+   "note": "战国·秦统一战争"
   }
  ],
  "scene_order": [
@@ -87,7 +93,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_9",
   "tang_huai_xi",
   "imjin",
-  "yellow_sea_1894"
+  "yellow_sea_1894",
+  "qin_mie_liu_guo"
  ],
  "vocab": {
   "layers": [
@@ -7715,6 +7722,31 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 0
    }
+  },
+  "qin_mie_liu_guo": {
+   "key": "qin_mie_liu_guo",
+   "scene_id": "qin_mie_liu_guo",
+   "title": "秦灭六国·灭赵之战",
+   "dossier_label": "灭赵",
+   "subtitle": "秦王政十八年至二十六年（前229-前221）",
+   "kind": "county",
+   "region": "guangzhong",
+   "page": "county.html?scene=qin_mie_liu_guo",
+   "primary_place": "handan",
+   "vocab_pack": "inline:qin_mie_liu_guo",
+   "terrain_grid": "qin_mie_liu_guo",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 12,
+    "person": 8,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 2,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -7743,7 +7775,8 @@ window.SANDBOX_DATA = {
   "novel_fandao_9": "slices/novel_fandao_9.js",
   "tang_huai_xi": "slices/tang_huai_xi.js",
   "imjin": "slices/imjin.js",
-  "yellow_sea_1894": "slices/yellow_sea_1894.js"
+  "yellow_sea_1894": "slices/yellow_sea_1894.js",
+  "qin_mie_liu_guo": "slices/qin_mie_liu_guo.js"
  },
  "corridors": [
   {
@@ -8348,6 +8381,38 @@ window.SANDBOX_DATA = {
     "_src_line": 7
    },
    {
+    "id": "QIN_013",
+    "scene": "qin_mie_liu_guo",
+    "subject": "event:ev_qin_mie_liu_guo_03",
+    "title": "燕、代发兵击秦军，但具体兵力不详",
+    "missing": "先秦军事史 / 考古发掘",
+    "where": "易水之战相关记载",
+    "skills": [
+     "先秦军事史",
+     "考古发掘"
+    ],
+    "accept": "燕代联军兵力规模",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "QIN_014",
+    "scene": "qin_mie_liu_guo",
+    "subject": "event:ev_qin_mie_liu_guo_04",
+    "title": "王贲攻魏在秦王政二十二年，但具体月份不详",
+    "missing": "先秦史 / 文献考据",
+    "where": "秦灭魏相关编年",
+    "skills": [
+     "先秦史",
+     "文献考据"
+    ],
+    "accept": "王贲攻魏的具体时间",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
     "id": "A092",
     "scene": "sarhu",
     "subject": "event:sarhu_battle",
@@ -8645,6 +8710,7 @@ window.SANDBOX_DATA = {
     "kaiyuan",
     "liaoyang",
     "ningyuan",
+    "qin_mie_liu_guo",
     "sarhu",
     "shenyang",
     "tang_huai_xi",
@@ -8896,6 +8962,24 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.333
    },
    {
+    "scene": "qin_mie_liu_guo",
+    "name": "qin_mie_liu_guo",
+    "total": 14,
+    "layers": {
+     "record": 11,
+     "scholarship": 1,
+     "gap": 2
+    },
+    "party_counts": {
+     "秦方": 14
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_qin_mie_liu_guo_01",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "sarhu",
     "name": "萨尔浒",
     "total": 111,
@@ -9045,6 +9129,161 @@ window.SANDBOX_DATA = {
    }
   },
   "events": [
+   {
+    "subject": "event:ev_qin_mie_liu_guo_01",
+    "name": "event:ev_qin_mie_liu_guo_01",
+    "scenes": [
+     "qin_mie_liu_guo"
+    ],
+    "scene_names": [
+     "qin_mie_liu_guo"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_qin_mie_liu_guo_02",
+    "name": "event:ev_qin_mie_liu_guo_02",
+    "scenes": [
+     "qin_mie_liu_guo"
+    ],
+    "scene_names": [
+     "qin_mie_liu_guo"
+    ],
+    "total": 5,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_qin_mie_liu_guo_03",
+    "name": "event:ev_qin_mie_liu_guo_03",
+    "scenes": [
+     "qin_mie_liu_guo"
+    ],
+    "scene_names": [
+     "qin_mie_liu_guo"
+    ],
+    "total": 3,
+    "gap_count": 1,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.333,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_qin_mie_liu_guo_04",
+    "name": "event:ev_qin_mie_liu_guo_04",
+    "scenes": [
+     "qin_mie_liu_guo"
+    ],
+    "scene_names": [
+     "qin_mie_liu_guo"
+    ],
+    "total": 2,
+    "gap_count": 1,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.5,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_qin_mie_liu_guo_05",
+    "name": "event:ev_qin_mie_liu_guo_05",
+    "scenes": [
+     "qin_mie_liu_guo"
+    ],
+    "scene_names": [
+     "qin_mie_liu_guo"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
    {
     "subject": "event:ev_yellow_sea_1894_02",
     "name": "event:ev_yellow_sea_1894_02",

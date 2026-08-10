@@ -23,6 +23,7 @@
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | 辽阳 | 53 | 2 | **0.412** | 辽阳陷落（1621）（0.491） | gap 3 / inference 1 / record 41 / scholarship 8 |
 | ningyuan | 31 | 4 | **0.319** | event:ningjin_dajie（0.333） | gap 2 / record 28 / scholarship 1 |
+| qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
 | 萨尔浒 | 111 | 5 | **0.514** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 87 / scholarship 11 |
 | shenyang | 50 | 6 | **0.401** | event:shenyang_relief（0.909） | gap 4 / inference 1 / record 43 / scholarship 2 |
 | tang_huai_xi | 12 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
@@ -43,6 +44,11 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
+| event:ev_qin_mie_liu_guo_01 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_qin_mie_liu_guo_02 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_qin_mie_liu_guo_03 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_qin_mie_liu_guo_04 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_qin_mie_liu_guo_05 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_yellow_sea_1894_02 | yellow_sea_1894 | **0.000** | 0/3 | 0.57 | 0.07 | 14 | 0 / 0 / 0 / 14 |
 | event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

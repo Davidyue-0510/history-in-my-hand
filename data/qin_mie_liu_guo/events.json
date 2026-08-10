@@ -1,0 +1,49 @@
+{
+ "events": [
+  {
+   "id": "ev_qin_mie_liu_guo_01",
+   "subject": "event:ev_qin_mie_liu_guo_01",
+   "year": -229,
+   "era": "秦王政十八年",
+   "title": "秦攻赵之战",
+   "kind": "战事",
+   "text": "王翦、端和、羌瘣分路攻赵，围邯郸"
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_02",
+   "subject": "event:ev_qin_mie_liu_guo_02",
+   "year": -228,
+   "era": "秦王政十九年",
+   "title": "灭赵俘王",
+   "kind": "战事",
+   "text": "王翦、羌瘣定赵地东阳，俘赵王迁"
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_03",
+   "subject": "event:ev_qin_mie_liu_guo_03",
+   "year": -227,
+   "era": "秦王政二十年",
+   "title": "荆轲刺秦",
+   "kind": "外交",
+   "text": "燕太子丹遣荆轲刺秦王，事败被杀"
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_04",
+   "subject": "event:ev_qin_mie_liu_guo_04",
+   "year": -225,
+   "era": "秦王政二十二年",
+   "title": "秦灭魏",
+   "kind": "战事",
+   "text": "王贲引河沟灌大梁，魏王请降"
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_05",
+   "subject": "event:ev_qin_mie_liu_guo_05",
+   "year": -222,
+   "era": "秦王政二十五年",
+   "title": "灭燕代",
+   "kind": "战事",
+   "text": "王贲攻燕辽东得燕王喜，还攻代虏代王嘉"
+  }
+ ]
+}

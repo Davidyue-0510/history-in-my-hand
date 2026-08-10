@@ -1,16 +1,17 @@
 {
-  "scenes_total": 26,
-  "historical": 17,
+  "scenes_total": 27,
+  "historical": 18,
   "fictional": 9,
-  "assertions_total": 546,
-  "sources_total": 44,
+  "assertions_total": 560,
+  "sources_total": 45,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
+    "qin_mie_liu_guo",
     "tang"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 51,
+  "leads_total": 53,
   "per_scene": [
     {
       "id": "sarhu",
@@ -201,6 +202,13 @@
       "kind": "county",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "qin_mie_liu_guo",
+      "title": "秦灭六国·灭赵之战",
+      "kind": "county",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -229,6 +237,7 @@
     "novel_fandao_9": "反派他爸教做人·胎穿女和魂穿女",
     "tang_huai_xi": "平淮西·雪夜入蔡州",
     "imjin": "万历朝鲜之役·壬辰倭乱",
-    "yellow_sea_1894": "甲午战争·黄海海战"
+    "yellow_sea_1894": "甲午战争·黄海海战",
+    "qin_mie_liu_guo": "秦灭六国·灭赵之战"
   }
 }

@@ -540,6 +540,38 @@
    "_src_line": 7
   },
   {
+   "id": "QIN_013",
+   "scene": "qin_mie_liu_guo",
+   "subject": "event:ev_qin_mie_liu_guo_03",
+   "title": "燕、代发兵击秦军，但具体兵力不详",
+   "missing": "先秦军事史 / 考古发掘",
+   "where": "易水之战相关记载",
+   "skills": [
+    "先秦军事史",
+    "考古发掘"
+   ],
+   "accept": "燕代联军兵力规模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "QIN_014",
+   "scene": "qin_mie_liu_guo",
+   "subject": "event:ev_qin_mie_liu_guo_04",
+   "title": "王贲攻魏在秦王政二十二年，但具体月份不详",
+   "missing": "先秦史 / 文献考据",
+   "where": "秦灭魏相关编年",
+   "skills": [
+    "先秦史",
+    "文献考据"
+   ],
+   "accept": "王贲攻魏的具体时间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "A092",
    "scene": "sarhu",
    "subject": "event:sarhu_battle",

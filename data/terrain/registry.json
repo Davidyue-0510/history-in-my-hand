@@ -97,6 +97,23 @@
       "points": 2244,
       "covered": 2244,
       "fetched_at": "2026-08-10"
+    },
+    "qin_mie_liu_guo": {
+      "label": "秦灭六国·灭赵之战",
+      "file": "qin_mie_liu_guo_grid.json",
+      "bbox": [
+        113.81,
+        34.3,
+        123.93,
+        42.3
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "fetched",
+      "note": "由 fetch_terrain.py --new 注册。",
+      "points": 8262,
+      "covered": 8262,
+      "fetched_at": "2026-08-10"
     }
   }
 }

@@ -735,6 +735,62 @@
    ],
    "aliases": []
   },
+  "王翦": {
+   "id": "QIN__p01",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "羌瘣": {
+   "id": "QIN__p02",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "端和": {
+   "id": "QIN__p03",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "赵王迁": {
+   "id": "QIN__p04",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "公子嘉": {
+   "id": "QIN__p05",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "燕太子丹": {
+   "id": "QIN__p06",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "荆轲": {
+   "id": "QIN__p07",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "王贲": {
+   "id": "QIN__p08",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
   "杨镐": {
    "id": "yanggao",
    "scenes": [
@@ -1334,7 +1390,8 @@
   "辽东": {
    "id": "liaodong",
    "scenes": [
-    "imjin"
+    "imjin",
+    "qin_mie_liu_guo"
    ],
    "aliases": []
   },
@@ -1716,6 +1773,83 @@
    "id": "daxue",
    "scenes": [
     "novel_fandao_9"
+   ],
+   "aliases": []
+  },
+  "邯郸": {
+   "id": "handan",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "井陉": {
+   "id": "jingxing",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "河内": {
+   "id": "he_nei",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "东阳": {
+   "id": "dongyang",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "代": {
+   "id": "dai",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "上谷": {
+   "id": "shanggu",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "易水": {
+   "id": "yishui",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "大梁": {
+   "id": "daliang",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "陈": {
+   "id": "chen",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "平舆": {
+   "id": "pingyu",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "郢陈": {
+   "id": "yingchen",
+   "scenes": [
+    "qin_mie_liu_guo"
    ],
    "aliases": []
   },
