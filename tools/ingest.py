@@ -526,6 +526,22 @@ def _conform_world(raw, spec):
     if not raw["events"] and raw.get("events_raw", []):
         raw["events"] = [raw["events"][0]]
 
+    # 4) 别名校正：修复 LLM 拼错的 person:/place: 引用
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import alias_resolver as AR
+    persons_ref = raw.get("persons", [])
+    places_ref = raw.get("places", [])
+    alias_fixes = 0
+    for a in raw.get("assertions", []):
+        subj = a.get("subject", "")
+        fixed, note = AR.resolve_subject(subj, persons_ref, places_ref)
+        if fixed != subj:
+            a["subject"] = fixed
+            a["note"] = (a.get("note", "") + " | " + note).strip(" |")
+            alias_fixes += 1
+    if alias_fixes:
+        print("[world] alias corrected: %d assertion subjects" % alias_fixes)
+
     return raw
 
 
