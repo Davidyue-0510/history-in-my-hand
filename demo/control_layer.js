@@ -69,6 +69,16 @@
     return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length];
   }
 
+  // v0.32 热切换控制数据（模拟结果接入）
+  function reloadControl(newCtrlData, newYears) {
+    if (!newCtrlData || !newCtrlData.length) return;
+    ctrlData = newCtrlData;
+    if (newYears && newYears.length === 2) curYears = newYears;
+    dirty = true;
+    rebuild();
+    repaint();
+  }
+
   var curYear = null, curScope = null, dirty = true;
 
   function setup(o) {
@@ -274,6 +284,7 @@
 
   window.ControlLayer = {
     setup: setup, draw: draw, drawMulti: drawMulti, repaint: repaint, clear: clear,
+    reloadControl: reloadControl,
     partyColor: partyColor, controllerAt: controllerAt, tally: tally,
     activeParties: activeParties,
     isReady: isReady, years: years, seats: function () { return seats; }

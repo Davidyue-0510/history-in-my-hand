@@ -1632,7 +1632,26 @@
     }).join('');
     sel.addEventListener('change', function () {
       state.timeline = sel.value;
-      refresh();
+      // v0.32：切换分支时热加载模拟控制权数据
+      if (state.timeline !== 'main' && D.scene_id && window.ControlLayer) {
+        var simUrl = '../data/' + D.scene_id + '/control_sim_' + state.timeline + '.json';
+        fetch(simUrl).then(function (r) { if (r.ok) return r.json(); throw new Error('no sim'); })
+          .then(function (sim) {
+            ControlLayer.reloadControl(sim.control, sim._years);
+            drawControl();
+            refresh();
+          }).catch(function () {
+            ControlLayer.reloadControl(D.control, D.control_years);
+            drawControl();
+            refresh();
+          });
+      } else {
+        if (state.timeline === 'main' && window.ControlLayer) {
+          ControlLayer.reloadControl(D.control, D.control_years);
+          drawControl();
+        }
+        refresh();
+      }
     });
   }
 
