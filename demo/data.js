@@ -1,18 +1,19 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 27 个切片
+// 权威数据源：data/scenes.json 注册的 28 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 27 个切片",
+  "slice": "multi-scene · 28 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "ming_qing",
    "qin_mie_liu_guo",
-   "tang"
+   "tang",
+   "three_campaigns"
   ]
  },
  "regions": [
@@ -65,6 +66,11 @@ window.SANDBOX_DATA = {
    "id": "guangzhong",
    "name": "秦灭六国",
    "note": "战国·秦统一战争"
+  },
+  {
+   "id": "huabei",
+   "name": "国共内战",
+   "note": "1946-1950 第二次国共内战"
   }
  ],
  "scene_order": [
@@ -94,7 +100,8 @@ window.SANDBOX_DATA = {
   "tang_huai_xi",
   "imjin",
   "yellow_sea_1894",
-  "qin_mie_liu_guo"
+  "qin_mie_liu_guo",
+  "three_campaigns"
  ],
  "vocab": {
   "layers": [
@@ -7747,6 +7754,31 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 0
    }
+  },
+  "three_campaigns": {
+   "key": "three_campaigns",
+   "scene_id": "three_campaigns",
+   "title": "三大战役·辽沈·淮海·平津",
+   "dossier_label": "三大战役",
+   "subtitle": "1948年9月—1949年1月 · 国共内战",
+   "kind": "county",
+   "region": "huabei",
+   "page": "county.html?scene=three_campaigns",
+   "primary_place": "jinzhou",
+   "vocab_pack": "inline:three_campaigns",
+   "terrain_grid": "three_campaigns",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 10,
+    "person": 8,
+    "assert": 14,
+    "conflict": 3,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -7776,7 +7808,8 @@ window.SANDBOX_DATA = {
   "tang_huai_xi": "slices/tang_huai_xi.js",
   "imjin": "slices/imjin.js",
   "yellow_sea_1894": "slices/yellow_sea_1894.js",
-  "qin_mie_liu_guo": "slices/qin_mie_liu_guo.js"
+  "qin_mie_liu_guo": "slices/qin_mie_liu_guo.js",
+  "three_campaigns": "slices/three_campaigns.js"
  },
  "corridors": [
   {
@@ -8607,6 +8640,22 @@ window.SANDBOX_DATA = {
     "_src_line": 12
    },
    {
+    "id": "THR_009",
+    "scene": "three_campaigns",
+    "subject": "event:ev_three_campaigns_01",
+    "title": "国军损失47万2千，解放军损失未详",
+    "missing": "军事史 / 档案研究",
+    "where": "辽沈战役解放军伤亡数据",
+    "skills": [
+     "军事史",
+     "档案研究"
+    ],
+    "accept": "解放军在辽沈战役中的具体伤亡数字",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 9
+   },
+   {
     "id": "T016",
     "scene": "tieling",
     "subject": "event:tieling_fall",
@@ -8714,6 +8763,7 @@ window.SANDBOX_DATA = {
     "sarhu",
     "shenyang",
     "tang_huai_xi",
+    "three_campaigns",
     "tieling",
     "yehe",
     "yellow_sea_1894"
@@ -9047,6 +9097,25 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "three_campaigns",
+    "name": "three_campaigns",
+    "total": 14,
+    "layers": {
+     "inference": 1,
+     "record": 11,
+     "gap": 1,
+     "scholarship": 1
+    },
+    "party_counts": {
+     "解放军": 14
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_three_campaigns_01",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "tieling",
     "name": "铁岭",
     "total": 31,
@@ -9267,6 +9336,99 @@ window.SANDBOX_DATA = {
     "coverage": "0/3",
     "coverage_frac": 0.0,
     "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_three_campaigns_01",
+    "name": "event:ev_three_campaigns_01",
+    "scenes": [
+     "three_campaigns"
+    ],
+    "scene_names": [
+     "three_campaigns"
+    ],
+    "total": 5,
+    "gap_count": 1,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.333,
+    "gap_rate": 0.2,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_three_campaigns_02",
+    "name": "event:ev_three_campaigns_02",
+    "scenes": [
+     "three_campaigns"
+    ],
+    "scene_names": [
+     "three_campaigns"
+    ],
+    "total": 5,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.25,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ev_three_campaigns_03",
+    "name": "event:ev_three_campaigns_03",
+    "scenes": [
+     "three_campaigns"
+    ],
+    "scene_names": [
+     "three_campaigns"
+    ],
+    "total": 4,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.333,
     "gap_rate": 0.0,
     "resonance": 0.0,
     "party_counts": {

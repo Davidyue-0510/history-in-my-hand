@@ -766,6 +766,22 @@
    "_src_line": 12
   },
   {
+   "id": "THR_009",
+   "scene": "three_campaigns",
+   "subject": "event:ev_three_campaigns_01",
+   "title": "国军损失47万2千，解放军损失未详",
+   "missing": "军事史 / 档案研究",
+   "where": "辽沈战役解放军伤亡数据",
+   "skills": [
+    "军事史",
+    "档案研究"
+   ],
+   "accept": "解放军在辽沈战役中的具体伤亡数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
    "id": "T016",
    "scene": "tieling",
    "subject": "event:tieling_fall",

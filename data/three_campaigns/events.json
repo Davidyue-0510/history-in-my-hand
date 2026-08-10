@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "ev_three_campaigns_01",
+   "subject": "event:ev_three_campaigns_01",
+   "year": 1948,
+   "era": "民国三十七年九月",
+   "title": "辽沈战役",
+   "kind": "战事",
+   "text": "东北野战军进攻锦州、长春，国军主力被歼，东北全境解放"
+  },
+  {
+   "id": "ev_three_campaigns_02",
+   "subject": "event:ev_three_campaigns_02",
+   "year": 1948,
+   "era": "民国三十七年十一月",
+   "title": "淮海战役",
+   "kind": "战事",
+   "text": "华东、中原野战军与徐州国军决战，歼敌55万"
+  },
+  {
+   "id": "ev_three_campaigns_03",
+   "subject": "event:ev_three_campaigns_03",
+   "year": 1948,
+   "era": "民国三十七年十一月",
+   "title": "平津战役",
+   "kind": "战事",
+   "text": "东北、华北野战军包围北平，傅作义投降，和平解放"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "places": [
+  {
+   "id": "jinzhou",
+   "name": "锦州",
+   "type": "city",
+   "modern": "今中国辽宁省锦州市",
+   "note": "辽沈战役关键城市，攻占锦州关闭东北国军退路",
+   "lon": 121.12,
+   "lat": 41.11,
+   "geo_note": "辽沈战役关键"
+  },
+  {
+   "id": "changchun",
+   "name": "长春",
+   "type": "city",
+   "modern": "今中国吉林省长春市",
+   "note": "辽沈战役中东北野战军进攻的城市之一",
+   "lon": 125.32,
+   "lat": 43.9,
+   "geo_note": "辽沈战役·长春围城"
+  },
+  {
+   "id": "shenyang",
+   "name": "沈阳",
+   "type": "city",
+   "modern": "今中国辽宁省沈阳市",
+   "note": "辽沈战役国军东北剿总所在地",
+   "lon": 123.43,
+   "lat": 41.8,
+   "geo_note": "辽沈战役·沈阳解放"
+  },
+  {
+   "id": "xuzhou",
+   "name": "徐州",
+   "type": "city",
+   "modern": "今中国江苏省徐州市",
+   "note": "淮海战役国军徐州剿总所在地",
+   "lon": 117.19,
+   "lat": 34.27,
+   "geo_note": "淮海战役核心"
+  },
+  {
+   "id": "huaihai",
+   "name": "淮海",
+   "type": "region",
+   "modern": "今中国淮河至海州一带",
+   "note": "淮海战役作战区域",
+   "lon": 117.0,
+   "lat": 34.0,
+   "geo_note": "淮海战役区域中心"
+  },
+  {
+   "id": "nianzhuang",
+   "name": "碾庄",
+   "type": "yi",
+   "modern": "今中国江苏省邳州市碾庄镇",
+   "note": "淮海战役中粟裕围歼黄百韬兵团之地",
+   "lon": 117.75,
+   "lat": 34.38,
+   "geo_note": "黄百韬兵团被围歼处"
+  },
+  {
+   "id": "shuangduiji",
+   "name": "双堆集",
+   "type": "yi",
+   "modern": "今中国安徽省淮北市濉溪县双堆集镇",
+   "note": "淮海战役中刘伯承围歼黄维兵团之地",
+   "lon": 116.7,
+   "lat": 33.4,
+   "geo_note": "黄维兵团被围歼处"
+  },
+  {
+   "id": "beiping",
+   "name": "北平",
+   "type": "city",
+   "modern": "今中国北京市",
+   "note": "平津战役中和平解放的城市",
+   "lon": 116.4,
+   "lat": 39.9,
+   "geo_note": "平津战役·傅作义起义"
+  },
+  {
+   "id": "xinbao'an",
+   "name": "新保安",
+   "type": "yi",
+   "modern": "今中国河北省张家口市怀来县新保安镇",
+   "note": "平津战役中歼灭郭景云35军之地",
+   "lon": 115.4,
+   "lat": 40.42,
+   "geo_note": "35军被歼处"
+  },
+  {
+   "id": "tianjin",
+   "name": "天津",
+   "type": "city",
+   "modern": "今中国天津市",
+   "note": "平津战役中通过攻坚战活捉陈长捷",
+   "lon": 117.2,
+   "lat": 39.13,
+   "geo_note": "平津战役·天津攻坚战"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

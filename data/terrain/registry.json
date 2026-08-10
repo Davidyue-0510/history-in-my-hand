@@ -114,6 +114,23 @@
       "points": 8262,
       "covered": 8262,
       "fetched_at": "2026-08-10"
+    },
+    "three_campaigns": {
+      "label": "三大战役·辽沈·淮海·平津",
+      "file": "three_campaigns_grid.json",
+      "bbox": [
+        114.9,
+        32.9,
+        118.25,
+        40.92
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "fetched",
+      "note": "由 fetch_terrain.py --new 注册。",
+      "points": 2754,
+      "covered": 2754,
+      "fetched_at": "2026-08-10"
     }
   }
 }

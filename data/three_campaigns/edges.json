@@ -1,0 +1,40 @@
+{
+ "edges": [
+  {
+   "from": "shenyang",
+   "to": "jinzhou",
+   "type": "military",
+   "label": "东北野战军进攻锦州"
+  },
+  {
+   "from": "shenyang",
+   "to": "changchun",
+   "type": "military",
+   "label": "东北野战军进攻长春"
+  },
+  {
+   "from": "xuzhou",
+   "to": "nianzhuang",
+   "type": "battle",
+   "label": "粟裕围歼黄百韬兵团"
+  },
+  {
+   "from": "xuzhou",
+   "to": "shuangduiji",
+   "type": "battle",
+   "label": "刘伯承围歼黄维兵团"
+  },
+  {
+   "from": "beiping",
+   "to": "xinbao'an",
+   "type": "battle",
+   "label": "歼灭郭景云35军"
+  },
+  {
+   "from": "beiping",
+   "to": "tianjin",
+   "type": "battle",
+   "label": "天津攻坚战"
+  }
+ ]
+}

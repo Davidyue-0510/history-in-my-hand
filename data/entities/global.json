@@ -763,7 +763,7 @@
    ],
    "aliases": []
   },
-  "公子嘉": {
+  "赵公子嘉": {
    "id": "QIN__p05",
    "scenes": [
     "qin_mie_liu_guo"
@@ -1390,8 +1390,7 @@
   "辽东": {
    "id": "liaodong",
    "scenes": [
-    "imjin",
-    "qin_mie_liu_guo"
+    "imjin"
    ],
    "aliases": []
   },
@@ -1818,6 +1817,27 @@
    ],
    "aliases": []
   },
+  "中山": {
+   "id": "zhongshan",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "太原": {
+   "id": "taiyuan",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
+  "上郡": {
+   "id": "shangjun",
+   "scenes": [
+    "qin_mie_liu_guo"
+   ],
+   "aliases": []
+  },
   "易水": {
    "id": "yishui",
    "scenes": [
@@ -1832,22 +1852,8 @@
    ],
    "aliases": []
   },
-  "陈": {
-   "id": "chen",
-   "scenes": [
-    "qin_mie_liu_guo"
-   ],
-   "aliases": []
-  },
   "平舆": {
    "id": "pingyu",
-   "scenes": [
-    "qin_mie_liu_guo"
-   ],
-   "aliases": []
-  },
-  "郢陈": {
-   "id": "yingchen",
    "scenes": [
     "qin_mie_liu_guo"
    ],

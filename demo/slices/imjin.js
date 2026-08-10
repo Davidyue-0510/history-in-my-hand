@@ -272,10 +272,6 @@ window.SANDBOX_SLICES["imjin"] = {
    "lon": 123.43,
    "lat": 41.8,
    "geo_note": "唐安东都护府，今辽宁辽阳",
-   "_global_id": "liaodong",
-   "_other_scenes": [
-    "qin_mie_liu_guo"
-   ],
    "elev": null,
    "off_grid": true
   }
