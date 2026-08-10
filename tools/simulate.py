@@ -71,10 +71,11 @@ def controller_at(control, place_id, year, timeline="main"):
     return best
 
 
-def simulate(scene, branch, start_year, end_year, forces):
+def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
     """确定性推演，返回控制权序列。
 
-    forces: {party: total_troops}
+    forces: {party: initial_troops}
+    reinforcements: [(year, party, troops, entry_place), ...]——该年在 entry_place 注入兵力
     """
     places, edges, control_data = load_scene_data(scene)
     nb = build_neighbors(places, edges)
@@ -126,7 +127,29 @@ def simulate(scene, branch, start_year, end_year, forces):
 
     # 推演
     output_control = []
+    reinforcements = reinforcements or []
     for year in range(start_year, end_year + 1):
+        # 事件注入：新势力/增援入场
+        for ry, rparty, rtroops, rentry in reinforcements:
+            if ry != year:
+                continue
+            # 找该 party 的最近城池作为投放点
+            targets = [pid for pid, g in garrison.items() if g["party"] == rparty]
+            if not targets and rentry in garrison:
+                # 新势力入场：直接设为入口城（攻占或创建）
+                targets = [rentry]
+            if not targets:
+                continue
+            # 选择离入口最近的
+            pmap2 = {p["id"]: p for p in places["places"]}
+            ep = pmap2.get(rentry) or {}
+            targets.sort(key=lambda pid: abs(pmap2.get(pid, {}).get("lat", 0) - ep.get("lat", 0)))
+            entry = targets[0]
+            garrison[entry]["troops"] += rtroops
+            if garrison[entry]["party"] != rparty:
+                garrison[entry] = {"party": rparty, "troops": rtroops}
+            print("  [Y%d] REINFORCE %s +%d at %s" % (year, rparty, rtroops, entry[:8]))
+
         # 年度增援：每 party 恢复 10% 兵力（后勤补给）
         party_total_troops = {}
         for pid, g in garrison.items():
@@ -207,22 +230,28 @@ def main():
     ap.add_argument("--scene", required=True, help="场景 id，如 imjin")
     ap.add_argument("--branch", default="main", help="分支 timeline id")
     ap.add_argument("--years", nargs=2, type=int, required=True, metavar=("START", "END"))
-    ap.add_argument("--forces", nargs="*", help="兵力: party=troops，如 朝鲜=20000 日本方=15000")
-    ap.add_argument("--out", help="输出路径（默认 data/<scene>/control_sim_<branch>.json）")
+    ap.add_argument("--forces", nargs="*", help="初始兵力 party=num")
+    ap.add_argument("--reinforce", nargs="*", help="增援 year:party:troops:entry")
+    ap.add_argument("--out", help="输出路径")
     args = ap.parse_args()
 
-    # 解析兵力
     forces = {}
     if args.forces:
         for f in args.forces:
             k, v = f.split("=")
             forces[k] = int(v)
     else:
-        # 默认兵力（从 assertions 推 or 硬编码）
-        forces = {"朝鲜": 20000, "日本方": 28000, "明方": 40000}
+        forces = {"朝鲜": 20000, "日本方": 28000}
+
+    reinforcements = []
+    if args.reinforce:
+        for r in args.reinforce:
+            parts = r.split(":")
+            reinforcements.append(
+                (int(parts[0]), parts[1], int(parts[2]), parts[3]))
 
     result = simulate(args.scene, args.branch,
-                      args.years[0], args.years[1], forces)
+                      args.years[0], args.years[1], forces, reinforcements)
 
     out_path = args.out or os.path.join(
         ROOT, "data", args.scene,

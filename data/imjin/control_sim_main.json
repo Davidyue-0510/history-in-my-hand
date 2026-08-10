@@ -8,40 +8,12 @@
  ],
  "_forces": {
   "朝鲜": 20000,
-  "日本方": 28000,
-  "明方": 40000
+  "日本方": 28000
  },
  "control": [
   {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1592,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1592 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1592,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1592 年"
-  },
-  {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1593,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1593 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
+   "place_id": "liaodong",
+   "party": "明方",
    "start": 1593,
    "end": null,
    "timeline": "main",
@@ -50,93 +22,12 @@
   },
   {
    "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1594,
+   "party": "明方",
+   "start": 1593,
    "end": null,
    "timeline": "main",
    "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1594 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1594,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1594 年"
-  },
-  {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1595,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1595 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1595,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1595 年"
-  },
-  {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1596,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1596 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1596,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1596 年"
-  },
-  {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1597,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1597 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1597,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1597 年"
-  },
-  {
-   "place_id": "anzhou",
-   "party": "朝鲜",
-   "start": 1598,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1598 年"
-  },
-  {
-   "place_id": "busan",
-   "party": "朝鲜",
-   "start": 1598,
-   "end": null,
-   "timeline": "main",
-   "basis": "sim: 局部兵力比 > 1.5，占",
-   "note": "确定性推演第 1598 年"
+   "note": "确定性推演第 1593 年"
   }
  ]
 }
