@@ -51,9 +51,10 @@ button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:1
     <span><i style="background:#e94560"></i>叛军</span>
   </div>
   <div style="font-size:10px;color:#484f58;margin-bottom:6px;line-height:1.4">
-    <b>核心机制</b>：土地兼并→税基萎缩→财政危机→军队废弛→外敌入侵→王朝覆灭。<br>
+    <b>两引擎驱动</b>：土地兼并 + 教育垄断 → 阶级固化。<br>
     绿线=士绅家族联姻。单击地图看详情。<br>
-    所有参数<span style="color:#e94560">实时生效</span>，无需重置。
+    所有参数<span style="color:#e94560">实时生效</span>，无需重置。<br>
+    <b>革命果实：士绅窃取</b>（受教育的叛军成为新朝核心）
   </div>
 
   <h3>⚙ 经济参数</h3>
@@ -99,6 +100,8 @@ button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:1
   <div class="stats">
     <div class="row"><span>王朝</span><span class="lv" id="sDyn">第1王朝</span></div>
     <div class="row"><span>年份 / 享国</span><span class="lv" id="sYear">0</span></div>
+    <div class="row"><span>教育垄断</span><span class="lv" id="sEdu">--</span></div>
+    <div class="row"><span>政权合法性</span><span class="lv" id="sLeg">--</span></div>
     <div class="row"><span>土地兼并度</span><span class="lv" id="sLand">--</span></div>
     <div class="row"><span>国库（粮）</span><span class="lv" id="sTreas">--</span></div>
     <div class="row"><span>军力 / 边患</span><span class="lv" id="sMil">--</span></div>
@@ -123,7 +126,7 @@ button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:1
 // 历史周期律 · 土地兼并 → 财政危机 → 军力衰败 → 王朝覆灭
 // ============================================================
 let A=[], yr=0, paused=true, tm=null, hist=[], events=[];
-let dynNum=1, dynAge=0, landConc=0.2, treasury=500, milPower=100, burEff=0.8, borderThreat=20;
+let dynNum=1, dynAge=0, landConc=0.2, eduMono=0.3, treasury=500, milPower=100, burEff=0.8, borderThreat=20, legitimacy=0.9;
 const CC={center:'#58a6ff',local:'#3fb950',grassroot:'#8b949e',rebel:'#e94560'};
 const CN={center:'朝廷',local:'士绅',grassroot:'庶民',rebel:'叛军'};
 
@@ -139,7 +142,7 @@ function createAgent(i,cls,x,y,fam){
 function reset(){
   pause(); if(tm)clearTimeout(tm);
   A=[]; yr=0; hist=[]; events=[]; dynNum=1; dynAge=0;
-  landConc=0.2; treasury=500; milPower=100; burEff=0.8; borderThreat=20;
+  landConc=0.2; eduMono=0.3; treasury=500; milPower=100; burEff=0.8; borderThreat=20; legitimacy=0.9;
   let N=60;
   for(let i=0,fid=0;i<N;i++){
     let cls,x,y,fam=null;
@@ -165,6 +168,12 @@ function tick(){
   // 士绅土地越多，兼并越快
   landConc=A.filter(a=>a.alive&&a.cls==='local').reduce((s,a)=>s+a.land,0)/
            Math.max(1,A.filter(a=>a.alive).reduce((s,a)=>s+a.land,0));
+
+  // 1b. 教育垄断（阶级固化第二引擎）
+  // local 独占系统性教育 → 排他性师承网络 → 释经权
+  eduMono=Math.min(1, eduMono+0.003); // 每年自然积累
+  if(landConc>0.5)eduMono=Math.min(1,eduMono+0.003); // 兼并严重加速
+  eduMono=Math.max(0,eduMono-(burEff>0.7?0.002:0)); // 高效官僚适度制衡
 
   // 2. 税收
   let taxpayers=A.filter(a=>a.cls==='grassroot'&&a.alive).length;
@@ -195,8 +204,26 @@ function tick(){
   borderThreat+=1.5+landConc*2; // 土地兼并越严重，边患越猖獗
   if(milPower>borderThreat*0.8)borderThreat=Math.max(10,borderThreat-3);
 
-  // 6. 中央对地方控制力
-  let controlPower=Math.max(0,1-landConc*1.2-(0.8-burEff)*0.5);
+  // 5b. 合法性与话语权（教育垄断→精英控制史观→center合法性流失）
+  legitimacy=Math.max(0.2,1-eduMono*0.7-landConc*0.2);
+  if(treasury<50)legitimacy=Math.max(0.1,legitimacy-0.02);
+  if(burEff<0.3)legitimacy=Math.max(0.1,legitimacy-0.01);
+
+  // 5c. 家族竞争：计算各家族实力，最强家族可能内部倾轧
+  let famPow={};
+  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
+    if(l.fam){if(!famPow[l.fam])famPow[l.fam]=0;famPow[l.fam]+=l.land+l.tp*0.1;}
+  });
+  let fEntries=Object.entries(famPow).sort((a,b)=>b[1]-a[1]);
+  // 最强家族占据过多资源时，引发内部斗争
+  if(fEntries.length>=2&&fEntries[0][1]>fEntries[1][1]*2.5){
+    let domFam=fEntries[0][0];
+    A.filter(a=>a.cls==='local'&&a.alive&&a.fam!==domFam).forEach(l=>l.gv=Math.min(1,l.gv+0.02));
+    if(yr%10===0)lg('🏛 '+domFam+'家族独大，其他士绅不满','y');
+  }
+
+  // 6. 中央控制力（综合：土地兼并 + 官僚效率 + 教育垄断 + 合法性）
+  let controlPower=Math.max(0,1-landConc*1.0-(0.8-burEff)*0.4-eduMono*0.3+(legitimacy-0.5)*0.5);
 
   // 7. 事件
   let yes=events.filter(e=>e.year===yr);
@@ -262,11 +289,20 @@ function tick(){
   let aliveR=rebels.filter(r=>r.alive).length;
   let totalAlive=A.filter(a=>a.alive).length;
   if(aliveC===0||(aliveR>totalAlive*0.4&&aliveR>=5)||(milPower<borderThreat*0.3&&aliveR>=3)){
-    lg('👑 第'+dynNum+'王朝覆灭！享国'+dynAge+'年。土地兼并='+landConc.toFixed(2)+' 边患='+Math.floor(borderThreat),'r');
+    lg('👑 第'+dynNum+'王朝覆灭！享国'+dynAge+'年。兼并='+landConc.toFixed(2)+' 垄断='+eduMono.toFixed(2),'r');
     // 新朝建立
-    dynNum++; dynAge=0; landConc=0.15; treasury=400; milPower=80; burEff=0.75; borderThreat=15;
-    // 叛军中的强者成为新朝廷
-    let newRulers=rebels.filter(r=>r.alive).sort((a,b)=>b.tp-a.tp).slice(0,Math.ceil(totalAlive*0.06));
+    dynNum++; dynAge=0; landConc=0.15; eduMono=0.25; treasury=400; milPower=80; burEff=0.75; borderThreat=15; legitimacy=0.85;
+    // 革命果实窃取：叛军中受教育(local叛逃者)优先成为新朝廷，庶民叛军回归底层
+    let eduRebels=rebels.filter(r=>r.alive&&r.cls==='local').sort((a,b)=>b.tp-a.tp);
+    let grassRebels=rebels.filter(r=>r.alive&&r.cls!=='local').sort((a,b)=>b.tp-a.tp);
+    let newRulers=eduRebels.slice(0,Math.ceil(totalAlive*0.04));
+    // 不够再从庶民叛军中补
+    if(newRulers.length<Math.ceil(totalAlive*0.05)){
+      newRulers.push(...grassRebels.slice(0,Math.ceil(totalAlive*0.05)-newRulers.length));
+    }
+    if(eduRebels.length>0&&grassRebels.length>0){
+      lg('⚠ 革命果实被窃取：士绅出身叛军('+eduRebels.length+'人)成为新朝廷核心','y');
+    }
     newRulers.forEach(a=>{a.cls='center';a.party='regime';a.tp=120;a.gr=250;a.gv=0;});
     // 旧朝廷全部降级
     A.filter(a=>a.cls==='center'&&a.alive).forEach(a=>{if(!newRulers.includes(a)){a.cls='grassroot';a.party='loyal';a.gv=0.3;}});
@@ -278,7 +314,7 @@ function tick(){
 
   // 记录
   let rCount=rebels.filter(r=>r.alive).length;
-  hist.push({yr,dyn:yr-dynAge,landConc,treasury,milPower,borderThreat,burEff,grv_avg,rCount,dynNum,dynAge});
+  hist.push({yr,dyn:yr-dynAge,landConc,eduMono,treasury,milPower,borderThreat,burEff,grv_avg,rCount,dynNum,dynAge,legitimacy});
   yr++; dynAge++;
   updateNarr(controlPower,grv_avg,rCount);
   updateStats();
@@ -286,18 +322,22 @@ function tick(){
 
 function updateNarr(ctl,grv,r){
   let el=document.getElementById('narr'),t='';
-  if(r>=8)t='<span class="d">💀 帝国崩溃中：'+r+'叛军横行，朝廷名存实亡。</span>';
-  else if(r>=3)t='<span class="w">⚠ 叛乱四起：'+r+'叛军。中央控制力='+ctl.toFixed(2)+'。边境告急。</span>';
-  else if(ctl<0.3)t='<span class="w">⚡ 控制力崩塌：'+ctl.toFixed(2)+'。土地兼并='+landConc.toFixed(2)+'，税基枯竭。</span>';
-  else if(landConc>0.6)t='<span class="w">📊 土地兼并严重='+landConc.toFixed(2)+'。自耕农大量破产。</span>';
-  else if(treasury<100)t='<span class="w">💰 财政告急：国库仅'+Math.floor(treasury)+'粮。军费不足。</span>';
-  else t='<span class="g">✓ 国泰民安。兼并='+landConc.toFixed(2)+' 国库='+Math.floor(treasury)+' 军力='+Math.floor(milPower)+'</span>';
+  if(r>=8)t='<span class="d">💀 帝国崩溃：'+r+'叛军横行。合法性='+legitimacy.toFixed(2)+'。</span>';
+  else if(r>=3)t='<span class="w">⚠ 叛乱四起：'+r+'叛军。控制力='+ctl.toFixed(2)+'。士绅垄断教育='+eduMono.toFixed(2)+'。</span>';
+  else if(ctl<0.3)t='<span class="w">⚡ 控制力崩塌：'+ctl.toFixed(2)+'。兼并='+landConc.toFixed(2)+' 垄断='+eduMono.toFixed(2)+'。</span>';
+  else if(landConc>0.5&&eduMono>0.6)t='<span class="w">📊 士绅坐大：土地兼并'+landConc.toFixed(2)+'+教育垄断'+eduMono.toFixed(2)+'。center空心化。</span>';
+  else if(landConc>0.5)t='<span class="w">📊 土地兼并严重='+landConc.toFixed(2)+'。自耕农大量破产。</span>';
+  else if(eduMono>0.7)t='<span class="w">📚 教育垄断='+eduMono.toFixed(2)+'：知识被士绅独占。释经权旁落。</span>';
+  else if(treasury<100)t='<span class="w">💰 财政告急：国库仅'+Math.floor(treasury)+'粮。</span>';
+  else t='<span class="g">✓ 国泰民安。兼并='+landConc.toFixed(2)+' 垄断='+eduMono.toFixed(2)+' 合法='+legitimacy.toFixed(2)+'</span>';
   el.innerHTML=t+' <span class="m">· 第'+dynNum+'王朝 第'+dynAge+'年</span>';
 }
 
 function updateStats(){
   document.getElementById('sDyn').textContent='第'+dynNum+'王朝';
   document.getElementById('sYear').textContent=yr+' / 享国'+dynAge;
+  document.getElementById('sEdu').textContent=(eduMono*100).toFixed(0)+'%';
+  document.getElementById('sLeg').textContent=legitimacy.toFixed(2);
   document.getElementById('sLand').textContent=(landConc*100).toFixed(0)+'%';
   document.getElementById('sTreas').textContent=Math.floor(treasury);
   document.getElementById('sMil').textContent=Math.floor(milPower)+' / '+Math.floor(borderThreat);
@@ -331,12 +371,12 @@ function render(){if(!ctx)return;let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,
 }
 function renderChart(){if(!chCtx||hist.length<2)return;let cw=chCv.width,ch=chCv.height;chCtx.clearRect(0,0,cw,ch);
   let N=hist.length,step=Math.max(1,Math.floor(N/cw));
-  let maxV=Math.max(1,...hist.map(h=>h.landConc),...hist.map(h=>h.borderThreat/100));
-  [{g:h=>h.landConc,c:'#d29922',l:'兼并'},{g:h=>h.borderThreat/100,c:'#e94560',l:'边患'},{g:h=>(h.rCount||0)/Math.max(1,A.filter(a=>a.alive).length),c:'#8b949e',l:'叛乱%'}].forEach(ln=>{
+  let maxV=Math.max(1,...hist.map(h=>h.landConc),...hist.map(h=>h.eduMono),...hist.map(h=>h.borderThreat/100));
+  [{g:h=>h.landConc,c:'#d29922',l:'土地兼并'},{g:h=>h.eduMono,c:'#58a6ff',l:'教育垄断'},{g:h=>h.borderThreat/100,c:'#e94560',l:'边患'},{g:h=>(h.rCount||0)/Math.max(1,A.filter(a=>a.alive).length),c:'#8b949e',l:'叛乱%'}].forEach(ln=>{
     chCtx.strokeStyle=ln.c;chCtx.lineWidth=2;chCtx.beginPath();
     for(let i=0;i<N;i+=step){let x=(i/N)*cw,y=ch-(ln.g(hist[i])/maxV)*ch;i===0?chCtx.moveTo(x,y):chCtx.lineTo(x,y);}chCtx.stroke();});
   chCtx.fillStyle='#8b949e';chCtx.font='10px monospace';
-  chCtx.fillText('黄=土地兼并  红=边患  灰=叛乱比例',5,12);
+  chCtx.fillText('黄=兼并 蓝=教育垄断 红=边患 灰=叛乱%',5,12);
   // Dynasty markers
   for(let i=1;i<hist.length;i++){if(hist[i].dynNum!==hist[i-1].dynNum){let x=(i/N)*cw;chCtx.strokeStyle='rgba(88,166,255,0.5)';chCtx.lineWidth=1;chCtx.beginPath();chCtx.moveTo(x,0);chCtx.lineTo(x,ch);chCtx.stroke();chCtx.fillStyle='#58a6ff';chCtx.fillText('第'+hist[i].dynNum+'王朝',x+2,ch-4);}}
 }
