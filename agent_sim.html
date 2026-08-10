@@ -11,6 +11,7 @@ body{font:14px/1.5 system-ui,sans-serif;background:#0d1117;color:#c9d1d9;display
 .sidebar h3:hover{background:#1f2428}
 .sidebar h3::after{content:'▼';font-size:10px;transition:transform .2s}
 .sidebar h3.folded::after{transform:rotate(-90deg)}
+.sidebar-toggle{display:none;position:fixed;top:8px;right:8px;z-index:200;background:#e94560;color:#fff;border:none;padding:6px 12px;border-radius:4px;font-size:14px;cursor:pointer}
 .section-body{margin-bottom:6px;overflow:hidden;transition:max-height .3s}
 .section-body.folded{max-height:0!important;margin-bottom:0}
 .section label{display:flex;justify-content:space-between;font-size:clamp(10px,1vw,12px);color:#8b949e;margin-bottom:2px}
@@ -44,9 +45,33 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .log .r{color:#e94560}.log .y{color:#d29922}.log .b{color:#58a6ff}.log .m{color:#8b949e}
 @media(min-width:1600px){body{font-size:16px}.sidebar{width:380px}.section label{font-size:13px}}
 @media(max-width:900px){.sidebar{width:260px}.btn-preset{font-size:9px;padding:2px 4px}}
+@media(max-width:768px){
+  body{flex-direction:column;overflow-y:auto;overflow-x:hidden}
+  .sidebar{width:100%!important;max-height:45vh;border-right:none;border-bottom:1px solid #30363d;position:relative;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .sidebar.sidebar-hidden{max-height:0!important;padding:0!important;overflow:hidden}
+  .sidebar-toggle{display:block!important}
+  .main{min-height:55vh}
+  #cv{height:35vh!important}
+  #chartCv{height:120px!important}
+  .narr{height:auto!important;min-height:36px;font-size:12px}
+  button{padding:6px 10px;font-size:12px}
+  .btn-evt{padding:6px 8px;font-size:11px}
+  .btn-preset{padding:4px 8px;font-size:11px}
+  .section input[type=range]{height:20px}
+  .stats{font-size:11px}
+  .sidebar h3{font-size:13px;padding:6px 4px}
+  .sidebar h2{font-size:16px}
+}
+@media(max-width:400px){
+  .ctrl-row button{padding:4px 6px;font-size:10px}
+  .btn-evt{padding:4px 6px;font-size:10px}
+  .btn-preset{padding:3px 6px;font-size:10px}
+  #chartCv{height:100px!important}
+}
 </style>
 </head>
 <body>
+<button class="sidebar-toggle" onclick="toggleSidebar()">☰ 菜单</button>
 <div class="sidebar">
   <h2>🏛 历史周期律</h2>
   <div class="legend">
@@ -450,6 +475,7 @@ function loop(){if(paused)return;tick();render();let spd=+document.getElementByI
 function triggerEvent(t){events.push({year:yr+1,t});lg('📌 排入: Y'+(yr+1)+' '+t,'m');if(paused){tick();render();}}
 function lg(msg,c){let el=document.getElementById('lg');el.innerHTML+='<div class='+c+'>[Y'+yr+'] '+msg+'</div>';el.scrollTop=el.scrollHeight;}
 function tgLog(){let el=document.getElementById('lg');el.style.display=el.style.display==='block'?'none':'block';}
+function toggleSidebar(){document.querySelector('.sidebar').classList.toggle('sidebar-hidden');}
 function dist(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
 
 // Sliders
