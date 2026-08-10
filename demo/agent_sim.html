@@ -5,97 +5,151 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font:14px/1.5 system-ui,sans-serif;background:#1a1a2e;color:#e0e0e0;display:flex;height:100vh;overflow:hidden}
-.sidebar{width:260px;background:#16213e;padding:16px;overflow-y:auto;flex-shrink:0;border-right:1px solid #0f3460}
-.sidebar h2{font-size:16px;color:#e94560;margin-bottom:12px;border-bottom:1px solid #0f3460;padding-bottom:6px}
-.panel{margin-bottom:14px}
-.panel label{display:block;font-size:12px;color:#aaa;margin-bottom:2px}
+.sidebar{width:280px;background:#16213e;padding:14px;overflow-y:auto;flex-shrink:0;border-right:1px solid #0f3460}
+.sidebar h2{font-size:16px;color:#e94560;margin-bottom:10px;border-bottom:1px solid #0f3460;padding-bottom:6px}
+.sidebar h3{font-size:12px;color:#aaa;margin:10px 0 4px;text-transform:uppercase;letter-spacing:1px}
+.panel{margin-bottom:10px}
+.panel label{display:block;font-size:11px;color:#aaa;margin-bottom:2px}
 .panel input[type=range]{width:100%;accent-color:#e94560}
-.panel .val{float:right;color:#e94560;font-weight:bold;font-size:12px}
-button{padding:6px 12px;border:none;border-radius:4px;cursor:pointer;font-size:13px;margin:2px}
+.panel .val{float:right;color:#e94560;font-weight:bold;font-size:11px}
+button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:12px;margin:2px}
 .btn-play{background:#e94560;color:#fff}
 .btn-pause{background:#533483;color:#fff}
 .btn-step{background:#0f3460;color:#ccc}
 .btn-reset{background:#333;color:#ccc}
-.btn-inject{background:#1a8a4a;color:#fff;width:100%;margin-top:6px}
-.stats{font-size:12px}
+.btn-faster{background:#1a3a5c;color:#ccc}
+.btn-event{background:#1a1a3e;color:#ccc;border:1px solid #333;display:block;width:100%;text-align:left;margin:2px 0;padding:4px 8px;font-size:11px}
+.btn-event:hover{background:#0f3460;color:#fff}
+.btn-event .k{color:#e94560;margin-left:8px;font-size:10px}
+.stats{font-size:11px}
 .stats .row{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid #1a1a3e}
 .stats .row span:last-child{color:#e94560}
 .main{flex:1;display:flex;flex-direction:column}
-canvas{border-bottom:1px solid #0f3460}
-.chart-area{height:120px;background:#0d1117}
-.log{flex:1;overflow-y:auto;padding:4px 12px;font-size:11px;background:#0d1117}
-.log .evt{padding:1px 0;border-bottom:1px solid #111}
-.log .revolt{color:#e94560}
-.log .defect{color:#f0a500}
-.log .invade{color:#00b4d8}
-.log .metric{color:#888}
+#cv{cursor:crosshair}
+.chart-area{height:140px;background:#0d1117;border-top:1px solid #0f3460}
+.tooltip{position:absolute;display:none;background:#16213e;border:1px solid #e94560;padding:6px 10px;font-size:11px;border-radius:4px;pointer-events:none;z-index:100;max-width:200px}
+.tooltip .tt-name{color:#fff;font-weight:bold}
+.tooltip .tt-stat{color:#aaa}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:10px}
+.legend-dot{width:10px;height:10px;border-radius:50%}
+.narrative{flex:1;padding:8px 12px;font-size:11px;background:#0d1117;color:#aaa;overflow-y:auto;min-height:60px}
+.narrative .warn{color:#f0a500}
+.narrative .danger{color:#e94560}
+.narrative .good{color:#81c784}
+.log-panel{display:none;max-height:120px;overflow-y:auto;padding:4px 8px;font-size:10px;background:#0d1117;border-top:1px solid #0f3460}
+.log-panel .evt{padding:1px 0}
+.log-panel .revolt{color:#e94560}
+.log-panel .defect{color:#f0a500}
+.log-panel .invade{color:#00b4d8}
 </style>
 </head>
 <body>
 <div class="sidebar">
-  <h2>三阶层演化模拟器</h2>
+  <h2>🏛 三阶层演化</h2>
+  
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot" style="background:#4fc3f7"></span> 朝廷 center</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#81c784"></span> 士绅 local</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#9e9e9e"></span> 庶民 grassroot</div>
+    <div class="legend-item"><span class="legend-dot" style="background:#e94560"></span> 叛军 rebel</div>
+  </div>
+  <div style="font-size:10px;color:#666;margin-bottom:8px;line-height:1.3">
+    绿线 = 家族姻亲同盟。单击地图上的点查看 agent 详情。
+  </div>
+
+  <h3>⚙ 参数</h3>
   <div class="panel">
     <label>人口规模 <span class="val" id="vPop">60</span></label>
     <input type="range" id="population" min="20" max="200" value="60" oninput="updateVal(this)">
   </div>
   <div class="panel">
-    <label>税率 (center→grassroot) <span class="val" id="vTax">40%</span></label>
+    <label>税率（朝廷→庶民）<span class="val" id="vTax">40%</span></label>
     <input type="range" id="taxRate" min="10" max="90" value="40" oninput="updateValPct(this)">
+    <div style="font-size:9px;color:#666">越高，庶民 grain 越少，grievance ↑</div>
   </div>
   <div class="panel">
     <label>初始教育垄断 <span class="val" id="vEdu">30%</span></label>
     <input type="range" id="eduInit" min="10" max="90" value="30" oninput="updateValPct(this)">
+    <div style="font-size:9px;color:#666">士绅独占知识 → 固化 ⇗</div>
   </div>
   <div class="panel">
     <label>革命动员阈值 <span class="val" id="vMob">80%</span></label>
     <input type="range" id="mobThresh" min="50" max="95" value="80" oninput="updateValPct(this)">
   </div>
   <div class="panel">
-    <label>local叛逃阈值 <span class="val" id="vDef">60%</span></label>
+    <label>士绅叛逃阈值 <span class="val" id="vDef">60%</span></label>
     <input type="range" id="defectThresh" min="30" max="90" value="60" oninput="updateValPct(this)">
   </div>
+
+  <h3>⏱ 控制</h3>
+  <div style="display:flex;flex-wrap:wrap;gap:3px;margin-bottom:8px">
+    <button class="btn-play" onclick="play()">▶</button>
+    <button class="btn-pause" onclick="pause()">⏸</button>
+    <button class="btn-step" onclick="step()">⏭</button>
+    <button class="btn-reset" onclick="reset()">↺</button>
+    <button class="btn-faster" onclick="speedUp()">2x</button>
+    <button class="btn-faster" onclick="slowDown()">½x</button>
+  </div>
   <div class="panel">
-    <label>速度 (ms/年)</label>
-    <input type="range" id="speed" min="50" max="1000" value="200" style="direction:rtl">
+    <label>速度 <span class="val" id="vSpd">200ms</span></label>
+    <input type="range" id="speed" min="50" max="1000" value="200" style="direction:rtl" oninput="document.getElementById('vSpd').textContent=this.value+'ms'">
   </div>
-  <div>
-    <button class="btn-play" onclick="play()">▶ 运行</button>
-    <button class="btn-pause" onclick="pause()">⏸ 暂停</button>
-    <button class="btn-step" onclick="step()">⏭ 单步</button>
-    <button class="btn-reset" onclick="reset()">↺ 重置</button>
+
+  <h3>⚡ 事件注入</h3>
+  <div style="font-size:10px;color:#666;margin-bottom:4px">单击下方按钮排入事件（在当前年+1后触发）：</div>
+  <button class="btn-event" onclick="scheduleEvent('invade','边缘')">
+    ⚔ 外敌入侵<span class="k">打击边境庶民，grievance +0.3</span></button>
+  <button class="btn-event" onclick="scheduleEvent('famine','全境')">
+    🌾 饥荒<span class="k">全境 grain -30，grievance +0.15</span></button>
+  <button class="btn-event" onclick="scheduleEvent('reform','全境')">
+    📜 改革<span class="k">庶民 grievance -0.2</span></button>
+  <button class="btn-event" onclick="scheduleEvent('crackdown','全境')">
+    🗡 镇压<span class="k">随机消灭叛军，但 grievance +0.1</span></button>
+  <button class="btn-event" onclick="scheduleEvent('betrayal','local')">
+    🐍 高层叛变<span class="k">随机 local → rebel</span></button>
+  <div style="margin-top:6px">
+    <input id="customEvent" placeholder="或手写：5:invade:east" style="width:100%;padding:4px;background:#0d1117;border:1px solid #333;color:#aaa;font-size:11px;border-radius:3px">
+    <button class="btn-play" style="width:100%;margin-top:3px" onclick="injectCustom()">注入</button>
   </div>
-  <div class="panel" style="margin-top:8px">
-    <label>事件注入（格式：年:类型:目标）</label>
-    <input type="text" id="eventInput" placeholder="5:invade:east" style="width:100%;padding:4px;margin-top:2px;background:#0d1117;border:1px solid #0f3460;color:#ccc;font-size:12px">
-    <button class="btn-inject" onclick="injectEvent()">⚡ 注入事件</button>
-  </div>
-  <div class="stats" style="margin-top:8px">
-    <h3 style="font-size:13px;color:#aaa;margin-bottom:4px">当前状态</h3>
+
+  <h3>📊 状态</h3>
+  <div class="stats">
     <div class="row"><span>年份</span><span id="sYear">0</span></div>
-    <div class="row"><span>center</span><span id="sCenter">--</span></div>
-    <div class="row"><span>local</span><span id="sLocal">--</span></div>
-    <div class="row"><span>grassroot</span><span id="sGrass">--</span></div>
-    <div class="row"><span>叛军</span><span id="sRebel">0</span></div>
+    <div class="row"><span>朝廷 center</span><span id="sCenter">--</span></div>
+    <div class="row"><span>士绅 local</span><span id="sLocal">--</span></div>
+    <div class="row"><span>庶民 grassroot</span><span id="sGrass">--</span></div>
+    <div class="row"><span>叛军 rebel</span><span id="sRebel">0</span></div>
     <div class="row"><span>教育垄断</span><span id="sEdu">--</span></div>
     <div class="row"><span>动员度</span><span id="sMob">--</span></div>
     <div class="row"><span>center凝聚力</span><span id="sSolC">--</span></div>
     <div class="row"><span>local凝聚力</span><span id="sSolL">--</span></div>
   </div>
+
+  <div style="font-size:10px;color:#555;margin-top:8px;cursor:pointer" onclick="toggleLog()">
+    📋 事件日志 ▼
+  </div>
+  <div class="log-panel" id="logPanel"></div>
 </div>
+
 <div class="main">
   <canvas id="cv"></canvas>
+  <div class="narrative" id="narrative" style="flex:0 1 auto;max-height:60px">
+    点击 ▶ 运行 开始模拟。左侧调整参数后需点 ↺ 重置生效。
+  </div>
   <canvas id="chartCv" class="chart-area"></canvas>
-  <div class="log" id="log"></div>
 </div>
+<div class="tooltip" id="tooltip"></div>
 
 <script>
 // ===== DATA MODEL =====
 let agents = [];
-let year = 0;
-let state = {running: false, timer: null};
+let year = 0, paused = true;
+let timer = null;
 let history = [];
 let events = [];
 let params = {};
+let showLog = false;
 
 function getParams() {
   return {
@@ -111,311 +165,128 @@ function getParams() {
 function updateVal(el) { document.getElementById('v'+el.id.slice(1)).textContent = el.value; }
 function updateValPct(el) { document.getElementById('v'+el.id.slice(1)).textContent = el.value+'%'; }
 
-// ===== AGENT CLASSES =====
-const AGENT_CLASSES = ['center','local','grassroot'];
 const CLASS_COLORS = {center:'#4fc3f7', local:'#81c784', grassroot:'#9e9e9e', rebel:'#e94560'};
+const CLASS_NAMES = {center:'朝廷', local:'士绅', grassroot:'庶民', rebel:'叛军'};
 
 function createAgent(id, cls, x, y, family) {
-  return {
-    id, cls, x, y, family,
-    resources: {troops: cls==='center'?100:cls==='local'?60:30, grain: cls==='center'?200:cls==='local'?120:50, edu_control: cls==='local'?params.eduInit:0},
-    grievance: 0,
-    party: cls==='center'?'regime':cls==='local'?'local_elite':'peasant',
-    alive: true
-  };
+  return {id, cls, x, y, family, resources:{troops:cls==='center'?100:cls==='local'?60:30, grain:cls==='center'?200:cls==='local'?120:50, edu_control:cls==='local'?params.eduInit:0}, grievance:0, party:cls==='center'?'regime':cls==='local'?'local_elite':'peasant', alive:true};
 }
 
 function initAgents() {
   params = getParams();
-  agents = [];
-  year = 0;
-  history = [];
-  events = [];
-  const N = params.population;
-  let familyId = 0;
-  // Grid placement: center in middle, local around center, grassroot scattered
-  for (let i = 0; i < N; i++) {
-    let cls, x, y, fam = null;
-    if (i < N * 0.1) {
-      cls = 'center';
-      x = 0.4 + Math.random() * 0.2;
-      y = 0.4 + Math.random() * 0.2;
-    } else if (i < N * 0.3) {
-      cls = 'local';
-      x = 0.2 + Math.random() * 0.6;
-      y = 0.2 + Math.random() * 0.6;
-      if (Math.random() < 0.5) fam = 'fam_' + (familyId++ % Math.max(1, Math.floor(N*0.05)));
-    } else {
-      cls = 'grassroot';
-      x = Math.random();
-      y = Math.random();
-    }
-    agents.push(createAgent(i, cls, x, y, fam));
+  agents=[]; year=0; history=[]; events=[];
+  const N=params.population; let fid=0;
+  for(let i=0;i<N;i++){
+    let cls,x,y,fam=null;
+    if(i<N*0.1){cls='center';x=0.4+Math.random()*0.2;y=0.4+Math.random()*0.2;}
+    else if(i<N*0.3){cls='local';x=0.2+Math.random()*0.6;y=0.2+Math.random()*0.6;if(Math.random()<0.5)fam='fam_'+(fid++%Math.max(1,Math.floor(N*0.05)));}
+    else{cls='grassroot';x=Math.random();y=Math.random();}
+    agents.push(createAgent(i,cls,x,y,fam));
   }
-  document.getElementById('log').innerHTML = '';
-  logEvent('init', '初始化完成：'+N+'个agent (center:'+Math.floor(N*0.1)+' local:'+Math.floor(N*0.2)+' grassroot:'+Math.floor(N*0.7)+')');
+  updateNarrative('初始化完成：'+N+'人（朝廷'+Math.floor(N*0.1)+' / 士绅'+Math.floor(N*0.2)+' / 庶民'+Math.floor(N*0.7)+'）。调整左侧参数后点 ▶。');
 }
 
-// ===== SIMULATION =====
 function simulateYear() {
-  // 1) 事件注入
-  let yrEvents = events.filter(e => e.year === year);
-  yrEvents.forEach(e => {
-    if (e.type === 'invade') {
-      // 外敌入侵：随机打击边缘 grassroot
-      let edge = agents.filter(a => a.cls==='grassroot' && a.alive && (a.x<0.2||a.x>0.8||a.y<0.2||a.y>0.8));
-      if (edge.length) {
-        let tgt = edge[Math.floor(Math.random()*edge.length)];
-        tgt.resources.troops = Math.max(0, tgt.resources.troops - 40);
-        tgt.grievance = Math.min(1, tgt.grievance + 0.3);
-        logEvent('invade', '外敌入侵打击 '+(e.target||'边缘')+' → grievance +0.3');
-      }
-    }
-    if (e.type === 'famine') {
-      agents.filter(a=>a.alive).forEach(a => {
-        a.resources.grain = Math.max(0, a.resources.grain - 30);
-        a.grievance = Math.min(1, a.grievance + 0.15);
-      });
-      logEvent('metric', '饥荒：全境 grain -30, grievance +0.15');
-    }
-    if (e.type === 'reform') {
-      agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a => a.grievance = Math.max(0, a.grievance - 0.2));
-      logEvent('metric', '改革：grassroot grievance -0.2');
-    }
+  let yrEvents = events.filter(e=>e.year===year);
+  yrEvents.forEach(e=>{
+    if(e.type==='invade'){let edge=agents.filter(a=>a.cls==='grassroot'&&a.alive&&(a.x<0.2||a.x>0.8||a.y<0.2||a.y>0.8));if(edge.length){let t=edge[Math.floor(Math.random()*edge.length)];t.resources.troops=Math.max(0,t.resources.troops-40);t.grievance=Math.min(1,t.grievance+0.3);log('⚔ 外敌入侵 '+(e.target||'边境')+'，庶民陷落','invade');}}
+    else if(e.type==='famine'){agents.filter(a=>a.alive).forEach(a=>{a.resources.grain=Math.max(0,a.resources.grain-30);a.grievance=Math.min(1,a.grievance+0.15);});log('🌾 饥荒席卷全境：grain-30，民心惶惶','metric');}
+    else if(e.type==='reform'){agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.max(0,a.grievance-0.2));log('📜 朝廷推行改革：庶民 grievance -0.2','metric');}
+    else if(e.type==='crackdown'){let rebels=agents.filter(a=>a.party==='rebel'&&a.alive);let target=rebels[Math.floor(Math.random()*rebels.length)];if(target){target.alive=false;target.party='dead';} agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.min(1,a.grievance+0.1));log('🗡 镇压行动：消灭叛军，但 grievance +0.1','invade');}
+    else if(e.type==='betrayal'){let locals=agents.filter(a=>a.cls==='local'&&a.alive&&a.party!=='rebel');if(locals.length){let t=locals[Math.floor(Math.random()*locals.length)];t.party='rebel';log('🐍 '+CLASS_NAMES[t.cls]+'#'+t.id+' 叛变投敌！','defect');}}
   });
 
-  // 2) 税收（center → grassroot 剥削）
-  let centerGrain = 0;
-  agents.filter(a=>a.cls==='center'&&a.alive).forEach(c => {
-    let nearby = agents.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,c)<0.3);
-    nearby.forEach(g => {
-      let tax = Math.min(g.resources.grain, Math.floor(g.resources.grain*params.taxRate));
-      g.resources.grain -= tax;
-      centerGrain += tax;
-    });
-    c.resources.grain += centerGrain;
+  // Tax
+  agents.filter(a=>a.cls==='center'&&a.alive).forEach(c=>{
+    agents.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,c)<0.3).forEach(g=>{let tax=Math.min(g.resources.grain,Math.floor(g.resources.grain*params.taxRate));g.resources.grain-=tax;c.resources.grain+=tax;});
   });
-
-  // 3) 教育垄断积累（local 独占）
-  agents.filter(a=>a.cls==='local'&&a.alive).forEach(l => {
-    l.resources.edu_control = Math.min(1, l.resources.edu_control + 0.01);
+  // Edu
+  agents.filter(a=>a.cls==='local'&&a.alive).forEach(l=>l.resources.edu_control=Math.min(1,l.resources.edu_control+0.01));
+  // Growth
+  agents.filter(a=>a.alive).forEach(a=>{a.resources.grain+=a.cls==='grassroot'?3:5;a.resources.troops+=a.cls==='center'?2:1;});
+  // Decisions
+  let metrics=computeMetrics();
+  agents.filter(a=>a.alive).forEach(a=>{
+    if(a.cls==='local'&&a.grievance>params.defectThresh){a.party='rebel';log('🔀 士绅#'+a.id+' 投机叛逃！(g='+a.grievance.toFixed(2)+')','defect');}
+    if(a.cls==='grassroot'&&metrics.mobilization>params.mobThresh&&a.grievance>0.5){a.party='rebel';agents.filter(n=>n.cls==='grassroot'&&n.alive&&n.party!=='rebel'&&dist(n,a)<0.15).forEach(n=>{n.party='rebel';n.grievance=Math.min(1,n.grievance+0.2);});log('🔥 革命爆发！庶民#'+a.id+' 揭竿而起 (动员度='+metrics.mobilization.toFixed(2)+')','revolt');}
   });
-
-  // 4) 自然增长
-  agents.filter(a=>a.alive).forEach(a => {
-    a.resources.grain += a.cls==='grassroot'? 3 : 5;
-    a.resources.troops += a.cls==='center'? 2 : 1;
-  });
-
-  // 5) Agent 决策
-  let metrics = computeMetrics();
-  agents.filter(a=>a.alive).forEach(a => {
-    if (a.cls === 'local' && a.grievance > params.defectThresh) {
-      // 投机叛逃
-      a.party = 'rebel';
-      logEvent('defect', 'local#'+a.id+' 叛逃！(grievance='+a.grievance.toFixed(2)+')');
-    }
-    if (a.cls === 'grassroot' && metrics.mobilization > params.mobThresh && a.grievance > 0.5) {
-      // 革命
-      a.party = 'rebel';
-      // 感染相邻 grassroot
-      agents.filter(n=>n.cls==='grassroot'&&n.alive&&n.party!=='rebel'&&dist(n,a)<0.15).forEach(n => {
-        n.party = 'rebel';
-        n.grievance = Math.min(1, n.grievance + 0.2);
-      });
-      logEvent('revolt', 'MASS REVOLT! grassroot#'+a.id+' 发动革命 (mobil='+metrics.mobilization.toFixed(2)+')');
-    }
-  });
-
-  // 6) 镇压（center → rebel）
-  let rebels = agents.filter(a=>a.party==='rebel'&&a.alive);
-  let centers = agents.filter(a=>a.cls==='center'&&a.alive);
-  if (rebels.length && centers.length) {
-    let ci = Math.floor(Math.random()*centers.length);
-    let ri = Math.floor(Math.random()*rebels.length);
-    if (centers[ci].resources.troops > rebels[ri].resources.troops * 1.2) {
-      rebels[ri].alive = false;
-      rebels[ri].party = 'dead';
-    } else {
-      centers[ci].resources.troops = Math.max(0, centers[ci].resources.troops - 20);
-    }
-  }
-
-  // 7) 记录指标
-  history.push({year, ...metrics, rebelCount: rebels.filter(r=>r.alive).length});
-
+  // Suppress
+  let rebels=agents.filter(a=>a.party==='rebel'&&a.alive), centers=agents.filter(a=>a.cls==='center'&&a.alive);
+  if(rebels.length&&centers.length){let c=centers[Math.floor(Math.random()*centers.length)],r=rebels[Math.floor(Math.random()*rebels.length)];if(c.resources.troops>r.resources.troops*1.2){r.alive=false;r.party='dead';}else{c.resources.troops=Math.max(0,c.resources.troops-20);}}
+  history.push({year,...metrics,rebelCount:rebels.filter(r=>r.alive).length});
   year++;
+  buildNarrative(metrics);
 }
 
-function computeMetrics() {
-  let totalEdu = 0, localEdu = 0;
-  let counts = {center:0, local:0, grassroot:0};
-  let grievances = {center:0, local:0, grassroot:0};
-  let families = {};
-  agents.filter(a=>a.alive).forEach(a => {
-    counts[a.cls] = (counts[a.cls]||0) + 1;
-    grievances[a.cls] = (grievances[a.cls]||0) + a.grievance;
-    totalEdu += a.resources.edu_control||0;
-    if (a.cls==='local') localEdu += a.resources.edu_control||0;
-    if (a.family) families[a.family] = (families[a.family]||0) + 1;
-  });
-  let n = Math.max(1, agents.filter(a=>a.alive).length);
-  let eduMono = localEdu / Math.max(0.01, totalEdu);
-  let mobil = (1-eduMono)*0.5 + (grievances.grassroot/Math.max(1,counts.grassroot))*0.3;
-  let solLocal = counts.local > 0 ? Math.max(...Object.values(families), 0)/counts.local : 0;
-  return {
-    education_monopoly: Math.min(1, eduMono),
-    mobilization: Math.min(1, mobil),
-    solidarity_center: 1 - (grievances.center/Math.max(1,counts.center)),
-    solidarity_local: solLocal,
-    solidarity_grassroot: 1 - (grievances.grassroot/Math.max(1,counts.grassroot)),
-    counts
-  };
+function computeMetrics(){
+  let te=0,le=0,cts={center:0,local:0,grassroot:0},gvs={center:0,local:0,grassroot:0},fams={};
+  agents.filter(a=>a.alive).forEach(a=>{cts[a.cls]=(cts[a.cls]||0)+1;gvs[a.cls]=(gvs[a.cls]||0)+a.grievance;te+=a.resources.edu_control||0;if(a.cls==='local')le+=a.resources.edu_control||0;if(a.family)fams[a.family]=(fams[a.family]||0)+1;});
+  let n=Math.max(1,agents.filter(a=>a.alive).length),em=le/Math.max(0.01,te),mob=(1-em)*0.5+(gvs.grassroot/Math.max(1,cts.grassroot))*0.3,sl=cts.local>0?Math.max(...Object.values(fams),0)/cts.local:0;
+  return{education_monopoly:Math.min(1,em),mobilization:Math.min(1,mob),solidarity_center:1-(gvs.center/Math.max(1,cts.center)),solidarity_local:sl,solidarity_grassroot:1-(gvs.grassroot/Math.max(1,cts.grassroot)),counts:cts};
 }
+function dist(a,b){let dx=a.x-b.x,dy=a.y-b.y;return Math.sqrt(dx*dx+dy*dy);}
 
-function dist(a,b) {
-  let dx = a.x - b.x, dy = a.y - b.y;
-  return Math.sqrt(dx*dx+dy*dy);
+// ===== NARRATIVE =====
+function buildNarrative(m){
+  let r=agents.filter(a=>a.party==='rebel'&&a.alive).length,el=document.getElementById('narrative'),txt='';
+  if(r>=10)txt='<span class=danger>🔥 大规模叛乱：'+r+'名叛军在活跃。王朝岌岌可危！</span>';
+  else if(r>=3)txt='<span class=warn>⚠ 小规模叛乱：'+r+'名叛军。朝廷正在镇压。</span>';
+  else if(m.mobilization>0.7)txt='<span class=warn>⚡ 动员度 '+m.mobilization.toFixed(2)+'：土壤已干，只差火星。</span>';
+  else if(m.education_monopoly>0.7)txt='<span class=warn>📚 教育垄断 '+m.education_monopoly.toFixed(2)+'：士绅完全垄断知识，阶级固3代。</span>';
+  else txt='<span class=good>✓ 社会稳定。教育垄断='+m.education_monopoly.toFixed(2)+' 动员度='+m.mobilization.toFixed(2)+'。</span>';
+  el.innerHTML=txt+' <span style=color:#666>第'+year+'年</span>';
 }
+function updateNarrative(s){document.getElementById('narrative').innerHTML='<span style=color:#aaa>'+s+'</span>';}
 
 // ===== RENDERING =====
-let cv, ctx, chartCv, chartCtx;
-function setupCanvas() {
-  cv = document.getElementById('cv');
-  cv.width = cv.parentElement.clientWidth;
-  cv.height = Math.min(window.innerHeight - 200, 500);
-  ctx = cv.getContext('2d');
-  chartCv = document.getElementById('chartCv');
-  chartCv.width = cv.width;
-  chartCv.height = 120;
-  chartCtx = chartCv.getContext('2d');
+let cv,ctx,chartCv,chartCtx;
+function setupCanvas(){cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=Math.min(window.innerHeight-280,460);ctx=cv.getContext('2d');chartCv=document.getElementById('chartCv');chartCv.width=cv.width;chartCv.height=140;chartCtx=chartCv.getContext('2d');}
+function render(){
+  let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h);
+  ctx.strokeStyle='#1a1a3e';ctx.lineWidth=0.5;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
+  let fm={};agents.filter(a=>a.alive&&a.family).forEach(a=>{if(!fm[a.family])fm[a.family]=[];fm[a.family].push(a);});
+  Object.values(fm).forEach(m=>{if(m.length<2)return;ctx.strokeStyle='rgba(129,199,132,0.12)';ctx.lineWidth=1;ctx.beginPath();m.forEach((a,i)=>{let px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
+  agents.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CLASS_COLORS.rebel:CLASS_COLORS[a.cls],r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.25)';ctx.lineWidth=0.5;ctx.stroke();});
+  renderChart(); updateStats();
+}
+function renderChart(){
+  let cw=chartCv.width,ch=chartCv.height;chartCtx.clearRect(0,0,cw,ch);
+  if(history.length<2)return;
+  let N=history.length,step=Math.max(1,Math.floor(N/cw));
+  [{g:h=>h.education_monopoly,c:'#4fc3f7'},{g:h=>h.mobilization,c:'#e94560'}].forEach(l=>{chartCtx.strokeStyle=l.c;chartCtx.lineWidth=2;chartCtx.beginPath();for(let i=0;i<N;i+=step){let x=(i/N)*cw,y=ch-l.g(history[i])*ch;i===0?chartCtx.moveTo(x,y):chartCtx.lineTo(x,y);}chartCtx.stroke();});
+  chartCtx.fillStyle='#888';chartCtx.font='10px monospace';
+  chartCtx.fillText('蓝=教育垄断',5,12);chartCtx.fillText('红=动员度',5,25);
+  chartCtx.fillText('高教育垄断→阶层固化',5,40);
+  chartCtx.fillText('高动员度→革命爆发',5,55);
+}
+function updateStats(){
+  let m=history.length?history[history.length-1]:null;document.getElementById('sYear').textContent=year+' / '+(history.length?history.length:'0')+'轮';
+  if(m){document.getElementById('sCenter').textContent=m.counts.center||0;document.getElementById('sLocal').textContent=m.counts.local||0;document.getElementById('sGrass').textContent=m.counts.grassroot||0;document.getElementById('sRebel').textContent=agents.filter(a=>a.party==='rebel'&&a.alive).length;document.getElementById('sEdu').textContent=(m.education_monopoly*100).toFixed(0)+'%';document.getElementById('sMob').textContent=(m.mobilization*100).toFixed(0)+'%';document.getElementById('sSolC').textContent=m.solidarity_center.toFixed(2);document.getElementById('sSolL').textContent=m.solidarity_local.toFixed(2);}
 }
 
-function render() {
-  if (!ctx) return;
-  let w = cv.width, h = cv.height;
-  ctx.clearRect(0,0,w,h);
-  // Grid
-  ctx.strokeStyle = '#1a1a3e';
-  ctx.lineWidth = 0.5;
-  for (let i=0;i<10;i++) { ctx.beginPath(); ctx.moveTo(i*w/10,0); ctx.lineTo(i*w/10,h); ctx.stroke(); }
-  for (let i=0;i<10;i++) { ctx.beginPath(); ctx.moveTo(0,i*h/10); ctx.lineTo(w,i*h/10); ctx.stroke(); }
-  
-  // Family lines
-  let familyMap = {};
-  agents.filter(a=>a.alive&&a.family).forEach(a => {
-    if (!familyMap[a.family]) familyMap[a.family] = [];
-    familyMap[a.family].push(a);
-  });
-  Object.values(familyMap).forEach(members => {
-    if (members.length < 2) return;
-    ctx.strokeStyle = 'rgba(129,199,132,0.15)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    members.forEach((m,i) => {
-      let px = m.x*w, py = m.y*h;
-      if (i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
-    });
-    ctx.stroke();
-  });
-
-  // Agents
-  agents.filter(a=>a.alive).forEach(a => {
-    let px = a.x*w, py = a.y*h;
-    let color = a.party==='rebel' ? CLASS_COLORS.rebel : CLASS_COLORS[a.cls];
-    let r = a.cls==='center'?6:a.cls==='local'?4:3;
-    ctx.fillStyle = color;
-    ctx.beginPath();
-    ctx.arc(px, py, r, 0, Math.PI*2);
-    ctx.fill();
-    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
-    ctx.lineWidth = 0.5;
-    ctx.stroke();
-  });
-
-  // Chart
-  renderChart();
-  // Stats
-  updateStats();
-}
-
-function renderChart() {
-  let cw = chartCv.width, ch = chartCv.height;
-  chartCtx.clearRect(0,0,cw,ch);
-  if (history.length < 2) return;
-  let maxH = history.length;
-  let step = Math.max(1, Math.floor(maxH / cw));
-  
-  let drawLine = (getter, color, label) => {
-    chartCtx.strokeStyle = color;
-    chartCtx.lineWidth = 2;
-    chartCtx.beginPath();
-    for (let i=0;i<maxH;i+=step) {
-      let x = (i/maxH)*cw;
-      let y = ch - getter(history[i])*ch;
-      if (i===0) chartCtx.moveTo(x,y); else chartCtx.lineTo(x,y);
-    }
-    chartCtx.stroke();
-  };
-  
-  drawLine(h=>h.education_monopoly, '#4fc3f7', '教育垄断');
-  drawLine(h=>h.mobilization, '#e94560', '动员度');
-  chartCtx.fillStyle = '#666';
-  chartCtx.font = '10px monospace';
-  chartCtx.fillText('蓝=教育垄断 红=动员度', 5, 12);
-}
-
-function updateStats() {
-  let m = history.length ? history[history.length-1] : null;
-  document.getElementById('sYear').textContent = year;
-  if (m) {
-    document.getElementById('sCenter').textContent = (m.counts.center||0);
-    document.getElementById('sLocal').textContent = (m.counts.local||0);
-    document.getElementById('sGrass').textContent = (m.counts.grassroot||0);
-    document.getElementById('sRebel').textContent = agents.filter(a=>a.party==='rebel'&&a.alive).length;
-    document.getElementById('sEdu').textContent = (m.education_monopoly*100).toFixed(0)+'%';
-    document.getElementById('sMob').textContent = (m.mobilization*100).toFixed(0)+'%';
-    document.getElementById('sSolC').textContent = m.solidarity_center.toFixed(2);
-    document.getElementById('sSolL').textContent = m.solidarity_local.toFixed(2);
-  }
-}
-
-function logEvent(type, msg) {
-  let el = document.getElementById('log');
-  let cls = type==='revolt'?'revolt':type==='defect'?'defect':type==='invade'?'invade':'metric';
-  el.innerHTML += '<div class="evt '+cls+'">[Y'+year+'] '+msg+'</div>';
-  el.scrollTop = el.scrollHeight;
-}
+// ===== INTERACTION =====
+cv && cv.addEventListener('click',function(e){
+  let rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top,found=null,minD=12;
+  agents.filter(a=>a.alive).forEach(a=>{let d=Math.hypot(a.x*cv.width-mx,a.y*cv.height-my);if(d<minD){found=a;minD=d;}});
+  let tt=document.getElementById('tooltip');
+  if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+15)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';tt.innerHTML='<div class=tt-name>'+CLASS_NAMES[found.cls]+' #'+found.id+'</div><div class=tt-stat>grain:'+found.resources.grain+' troops:'+found.resources.troops+'</div><div class=tt-stat>grievance:'+found.grievance.toFixed(2)+' edu:'+(found.resources.edu_control||0).toFixed(2)+(found.party==='rebel'?' <span style=color:#e94560>REBEL</span>':'')+'</div>';}else{tt.style.display='none';}
+});
 
 // ===== CONTROLS =====
-function play() { state.running = true; tick(); }
-function pause() { state.running = false; }
-function step() { simulateYear(); render(); }
-function reset() { pause(); initAgents(); render(); }
-function tick() {
-  if (!state.running) return;
-  params = getParams();
-  simulateYear();
-  render();
-  state.timer = setTimeout(tick, params.speed);
-}
-function injectEvent() {
-  let raw = document.getElementById('eventInput').value.trim();
-  if (!raw) return;
-  let parts = raw.split(':');
-  if (parts.length >= 2) {
-    events.push({year: parseInt(parts[0]), type: parts[1], target: parts[2]||''});
-    logEvent('metric', '事件已排入: Y'+parts[0]+' '+parts[1]+(parts[2]?' -> '+parts[2]:''));
-  }
-  document.getElementById('eventInput').value = '';
-}
+function play(){paused=false;tick();}
+function pause(){paused=true;}
+function step(){simulateYear();render();}
+function reset(){pause();if(timer)clearTimeout(timer);initAgents();render();}
+function tick(){if(paused)return;params=getParams();simulateYear();render();timer=setTimeout(tick,params.speed);}
+function speedUp(){let e=document.getElementById('speed');e.value=Math.max(50,parseInt(e.value)/2);document.getElementById('vSpd').textContent=e.value+'ms';}
+function slowDown(){let e=document.getElementById('speed');e.value=Math.min(1000,parseInt(e.value)*2);document.getElementById('vSpd').textContent=e.value+'ms';}
+function scheduleEvent(type,target){events.push({year:year+1,type,target});log('📌 已排入: Y'+(year+1)+' '+type+(target?'→'+target:''),'metric');if(paused)step();}
+function injectCustom(){let raw=document.getElementById('customEvent').value.trim();if(!raw)return;let p=raw.split(':');if(p.length>=2){events.push({year:parseInt(p[0]),type:p[1],target:p[2]||''});log('📌 已排入: '+raw,'metric');}document.getElementById('customEvent').value='';}
+function log(msg,cls){document.getElementById('logPanel').innerHTML+='<div class=evt '+cls+'>[Y'+year+'] '+msg+'</div>';let lp=document.getElementById('logPanel');lp.scrollTop=lp.scrollHeight;}
+function toggleLog(){showLog=!showLog;document.getElementById('logPanel').style.display=showLog?'block':'none';}
 
-window.onload = function() {
-  setupCanvas();
-  initAgents();
-  render();
-};
-window.onresize = function() { setupCanvas(); render(); };
+window.onload=function(){setupCanvas();initAgents();render();};
+window.onresize=function(){setupCanvas();render();};
 </script>
 </body>
 </html>
