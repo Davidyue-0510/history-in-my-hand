@@ -1,12 +1,12 @@
 {
- "_branch": "imjin_ming_full_commit",
+ "_branch": "imjin_japan_held_pyongyang",
  "control": [
   {
    "place_id": "liaodong",
    "party": "明方",
    "start": 1593,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1593 年"
   },
@@ -15,7 +15,7 @@
    "party": "明方",
    "start": 1593,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1593 年"
   },
@@ -24,7 +24,7 @@
    "party": "明方",
    "start": 1594,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1594 年"
   },
@@ -33,7 +33,7 @@
    "party": "明方",
    "start": 1595,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1595 年"
   },
@@ -42,7 +42,7 @@
    "party": "日本方",
    "start": 1595,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1595 年"
   },
@@ -51,7 +51,7 @@
    "party": "明方",
    "start": 1596,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1596 年"
   },
@@ -60,7 +60,7 @@
    "party": "日本方",
    "start": 1596,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1596 年"
   },
@@ -69,7 +69,7 @@
    "party": "明方",
    "start": 1597,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1597 年"
   },
@@ -78,7 +78,7 @@
    "party": "日本方",
    "start": 1597,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1597 年"
   },
@@ -87,7 +87,7 @@
    "party": "明方",
    "start": 1598,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1598 年"
   },
@@ -96,7 +96,7 @@
    "party": "日本方",
    "start": 1598,
    "end": null,
-   "timeline": "imjin_ming_full_commit",
+   "timeline": "imjin_japan_held_pyongyang",
    "basis": "sim: 局部兵力比 > 1.5，占",
    "note": "确定性推演第 1598 年"
   }

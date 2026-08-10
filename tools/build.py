@@ -141,6 +141,45 @@ def build_conflicts(assertions):
     return conflicts
 
 
+def _auto_simulate(sc, dirpath, timelines):
+    """v0.33 自动推演：为非主线分支生成 control_sim JSON。"""
+    import json as _json
+    scene_id = sc["_key"]
+    sim_config = os.path.join(dirpath, "sim.json")
+    if os.path.exists(sim_config):
+        cfg = _json.load(open(sim_config, encoding="utf-8"))
+    elif scene_id == "imjin":
+        cfg = {
+            "forces": {"朝鲜": 20000, "日本方": 28000},
+            "years": [1592, 1598],
+            "reinforce": [
+                [1593, "明方", 55000, "uiju"],
+                [1594, "明方", 25000, "pyongyang"],
+                [1594, "日本方", 15000, "busan"],
+                [1595, "明方", 20000, "hanseong"],
+                [1596, "日本方", 25000, "busan"],
+                [1597, "明方", 40000, "uiju"],
+                [1598, "明方", 30000, "busan"],
+            ],
+        }
+    else:
+        return
+
+    for branch_id in timelines:
+        if branch_id == "main":
+            continue
+        out_path = os.path.join(dirpath, "control_sim_%s.json" % branch_id)
+        try:
+            from simulate import simulate
+            r = simulate(scene_id, branch_id, *cfg["years"],
+                         cfg["forces"], cfg.get("reinforce", []))
+            output = {"_branch": branch_id, "control": r}
+            with open(out_path, "w", encoding="utf-8") as f:
+                _json.dump(output, f, ensure_ascii=False, indent=1)
+        except Exception as e:
+            pass  # 不阻断 build
+
+
 def build_scene(sc):
     """构建单个场景包（不含地形——地形在所有场景间共享）。"""
     dirpath = scene_dir(sc)
@@ -246,6 +285,8 @@ def build_scene(sc):
     if os.path.exists(tl_path):
         bundle["timelines"] = load_json(dirpath, "timelines.json").get("timelines", {})
         bundle["meta"]["has_timelines"] = True
+        # v0.33 自动推演：为所有分支生成控制权模拟数据
+        _auto_simulate(sc, dirpath, bundle["timelines"])
 
     # 边归一化：地理切片用 type+label；小说等 world 可能只给 relation/rel 自由文本。
     # 这里保证每条边都有 label（否则 drawDynamic 会把 undefined 画上地图）与 type 兜底。
