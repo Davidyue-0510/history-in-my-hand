@@ -88,6 +88,7 @@ button{padding:5px 10px;border:none;border-radius:4px;cursor:pointer;font-size:1
     <button class="btn-pause" onclick="pause()">⏸</button>
     <button class="btn-step" onclick="step()">⏭</button>
     <button class="btn-reset" onclick="reset()">↺</button>
+    <button class="btn-faster" onclick="fastForward()">⏩+10</button>
     <button class="btn-faster" onclick="speedUp()">2x</button>
     <button class="btn-faster" onclick="slowDown()">½x</button>
   </div>
@@ -187,29 +188,56 @@ function initAgents() {
 }
 
 function simulateYear() {
+  // 实时读取参数（税率/阈值无需重置即生效）
+  params.taxRate = +document.getElementById('taxRate').value / 100;
+  params.mobThresh = +document.getElementById('mobThresh').value / 100;
+  params.defectThresh = +document.getElementById('defectThresh').value / 100;
+  params.speed = +document.getElementById('speed').value;
+
   let yrEvents = events.filter(e=>e.year===year);
   yrEvents.forEach(e=>{
-    if(e.type==='invade'){let edge=agents.filter(a=>a.cls==='grassroot'&&a.alive&&(a.x<0.2||a.x>0.8||a.y<0.2||a.y>0.8));if(edge.length){let t=edge[Math.floor(Math.random()*edge.length)];t.resources.troops=Math.max(0,t.resources.troops-40);t.grievance=Math.min(1,t.grievance+0.3);log('⚔ 外敌入侵 '+(e.target||'边境')+'，庶民陷落','invade');}}
-    else if(e.type==='famine'){agents.filter(a=>a.alive).forEach(a=>{a.resources.grain=Math.max(0,a.resources.grain-30);a.grievance=Math.min(1,a.grievance+0.15);});log('🌾 饥荒席卷全境：grain-30，民心惶惶','metric');}
-    else if(e.type==='reform'){agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.max(0,a.grievance-0.2));log('📜 朝廷推行改革：庶民 grievance -0.2','metric');}
-    else if(e.type==='crackdown'){let rebels=agents.filter(a=>a.party==='rebel'&&a.alive);let target=rebels[Math.floor(Math.random()*rebels.length)];if(target){target.alive=false;target.party='dead';} agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.min(1,a.grievance+0.1));log('🗡 镇压行动：消灭叛军，但 grievance +0.1','invade');}
-    else if(e.type==='betrayal'){let locals=agents.filter(a=>a.cls==='local'&&a.alive&&a.party!=='rebel');if(locals.length){let t=locals[Math.floor(Math.random()*locals.length)];t.party='rebel';log('🐍 '+CLASS_NAMES[t.cls]+'#'+t.id+' 叛变投敌！','defect');}}
+    if(e.type==='invade'){let edge=agents.filter(a=>a.cls==='grassroot'&&a.alive&&(a.x<0.2||a.x>0.8||a.y<0.2||a.y>0.8));if(edge.length){let t=edge[Math.floor(Math.random()*edge.length)];t.resources.troops=Math.max(0,t.resources.troops-40);t.grievance=Math.min(1,t.grievance+0.35);log('⚔ 外敌入侵 '+(e.target||'边境')+'，庶民陷落 (grievance +0.35)','invade');}}
+    else if(e.type==='famine'){agents.filter(a=>a.alive).forEach(a=>{a.resources.grain=Math.max(0,a.resources.grain-30);a.grievance=Math.min(1,a.grievance+0.25);});log('🌾 饥荒：全境 grain-30，grievance +0.25','metric');}
+    else if(e.type==='reform'){agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.max(0,a.grievance-0.3));log('📜 改革：庶民 grievance -0.3','metric');}
+    else if(e.type==='crackdown'){let rebels=agents.filter(a=>a.party==='rebel'&&a.alive);if(rebels.length){let t=rebels[Math.floor(Math.random()*rebels.length)];t.alive=false;t.party='dead';}agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>a.grievance=Math.min(1,a.grievance+0.15));log('🗡 镇压：消灭叛军，但 grievance +0.15','invade');}
+    else if(e.type==='betrayal'){let locals=agents.filter(a=>a.cls==='local'&&a.alive&&a.party!=='rebel');if(locals.length){let t=locals[Math.floor(Math.random()*locals.length)];t.party='rebel';log('🐍 士绅叛变！','defect');}}
   });
 
-  // Tax
+  // Tax: 高税率 → 庶民 grievance 快速累积
   agents.filter(a=>a.cls==='center'&&a.alive).forEach(c=>{
-    agents.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,c)<0.3).forEach(g=>{let tax=Math.min(g.resources.grain,Math.floor(g.resources.grain*params.taxRate));g.resources.grain-=tax;c.resources.grain+=tax;});
+    agents.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,c)<0.3).forEach(g=>{
+      let tax=Math.min(g.resources.grain,Math.floor(g.resources.grain*params.taxRate));
+      g.resources.grain-=tax; c.resources.grain+=tax;
+    });
   });
-  // Edu
-  agents.filter(a=>a.cls==='local'&&a.alive).forEach(l=>l.resources.edu_control=Math.min(1,l.resources.edu_control+0.01));
+  // 税率直接影响不满：税率>40%每年不满上升
+  agents.filter(a=>a.cls==='grassroot'&&a.alive).forEach(a=>{
+    let taxGrievance = Math.max(0, (params.taxRate - 0.3) * 0.4);
+    a.grievance = Math.min(1, a.grievance + taxGrievance);
+    // 饥荒（grain < 10）→ 额外不满
+    if (a.resources.grain < 10) a.grievance = Math.min(1, a.grievance + 0.1);
+  });
+
+  // 教育垄断加速（基础0.02/年 → 50年后达1.0）
+  agents.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
+    l.resources.edu_control=Math.min(1,l.resources.edu_control+0.02);
+  });
+
   // Growth
-  agents.filter(a=>a.alive).forEach(a=>{a.resources.grain+=a.cls==='grassroot'?3:5;a.resources.troops+=a.cls==='center'?2:1;});
+  agents.filter(a=>a.alive).forEach(a=>{a.resources.grain+=a.cls==='grassroot'?5:8;
+    a.resources.troops+=a.cls==='center'?2:1;});
+
   // Decisions
   let metrics=computeMetrics();
   agents.filter(a=>a.alive).forEach(a=>{
-    if(a.cls==='local'&&a.grievance>params.defectThresh){a.party='rebel';log('🔀 士绅#'+a.id+' 投机叛逃！(g='+a.grievance.toFixed(2)+')','defect');}
-    if(a.cls==='grassroot'&&metrics.mobilization>params.mobThresh&&a.grievance>0.5){a.party='rebel';agents.filter(n=>n.cls==='grassroot'&&n.alive&&n.party!=='rebel'&&dist(n,a)<0.15).forEach(n=>{n.party='rebel';n.grievance=Math.min(1,n.grievance+0.2);});log('🔥 革命爆发！庶民#'+a.id+' 揭竿而起 (动员度='+metrics.mobilization.toFixed(2)+')','revolt');}
+    if(a.cls==='local'&&a.grievance>params.defectThresh){a.party='rebel';log('🔀 士绅投机叛逃 (g='+a.grievance.toFixed(2)+')','defect');}
+    if(a.cls==='grassroot'&&metrics.mobilization>params.mobThresh&&a.grievance>0.4){
+      a.party='rebel';
+      agents.filter(n=>n.cls==='grassroot'&&n.alive&&n.party!=='rebel'&&dist(n,a)<0.2).forEach(n=>{n.party='rebel';n.grievance=Math.min(1,n.grievance+0.2);});
+      log('🔥 革命爆发！mobil='+metrics.mobilization.toFixed(2)+' g='+a.grievance.toFixed(2),'revolt');
+    }
   });
+
   // Suppress
   let rebels=agents.filter(a=>a.party==='rebel'&&a.alive), centers=agents.filter(a=>a.cls==='center'&&a.alive);
   if(rebels.length&&centers.length){let c=centers[Math.floor(Math.random()*centers.length)],r=rebels[Math.floor(Math.random()*rebels.length)];if(c.resources.troops>r.resources.troops*1.2){r.alive=false;r.party='dead';}else{c.resources.troops=Math.max(0,c.resources.troops-20);}}
@@ -229,12 +257,16 @@ function dist(a,b){let dx=a.x-b.x,dy=a.y-b.y;return Math.sqrt(dx*dx+dy*dy);}
 // ===== NARRATIVE =====
 function buildNarrative(m){
   let r=agents.filter(a=>a.party==='rebel'&&a.alive).length,el=document.getElementById('narrative'),txt='';
-  if(r>=10)txt='<span class=danger>🔥 大规模叛乱：'+r+'名叛军在活跃。王朝岌岌可危！</span>';
-  else if(r>=3)txt='<span class=warn>⚠ 小规模叛乱：'+r+'名叛军。朝廷正在镇压。</span>';
-  else if(m.mobilization>0.7)txt='<span class=warn>⚡ 动员度 '+m.mobilization.toFixed(2)+'：土壤已干，只差火星。</span>';
-  else if(m.education_monopoly>0.7)txt='<span class=warn>📚 教育垄断 '+m.education_monopoly.toFixed(2)+'：士绅完全垄断知识，阶级固3代。</span>';
-  else txt='<span class=good>✓ 社会稳定。教育垄断='+m.education_monopoly.toFixed(2)+' 动员度='+m.mobilization.toFixed(2)+'。</span>';
-  el.innerHTML=txt+' <span style=color:#666>第'+year+'年</span>';
+  if(r>=15)txt='<span class=danger>💀 王朝崩溃：'+r+'叛军活跃。统治合法性瓦解。</span>';
+  else if(r>=6)txt='<span class=danger>🔥 大规模叛乱：'+r+'名叛军。王朝岌岌可危！</span>';
+  else if(r>=1)txt='<span class=warn>⚠ 叛乱：'+r+'名叛军。朝廷镇压中。</span>';
+  else if(m.mobilization>params.mobThresh)txt='<span class=danger>💥 动员度 '+m.mobilization.toFixed(2)+' > 阈值'+params.mobThresh.toFixed(2)+'：革命一触即发！</span>';
+  else{
+    let dist=m.mobilization/params.mobThresh;
+    if(dist>0.8)txt='<span class=warn>⚡ 动员度 '+m.mobilization.toFixed(2)+'（达阈值'+(dist*100).toFixed(0)+'%）：土壤将干。</span>';
+    else txt='<span class=good>✓ 稳定。动员度='+m.mobilization.toFixed(2)+'/'+params.mobThresh.toFixed(2)+'（阈值）。教育垄断='+m.education_monopoly.toFixed(2)+'</span>';
+  }
+  el.innerHTML=txt+' <span style=color:#666>· 第'+year+'年 · 庶民不满均值='+(m.counts.grassroot? (m.solidarity_grassroot?(1-m.solidarity_grassroot).toFixed(2):'0'):'0')+'</span>';
 }
 function updateNarrative(s){document.getElementById('narrative').innerHTML='<span style=color:#aaa>'+s+'</span>';}
 
@@ -276,8 +308,9 @@ cv && cv.addEventListener('click',function(e){
 function play(){paused=false;tick();}
 function pause(){paused=true;}
 function step(){simulateYear();render();}
+function fastForward(){for(let i=0;i<10;i++)simulateYear();render();}
 function reset(){pause();if(timer)clearTimeout(timer);initAgents();render();}
-function tick(){if(paused)return;params=getParams();simulateYear();render();timer=setTimeout(tick,params.speed);}
+function tick(){if(paused)return;simulateYear();render();timer=setTimeout(tick,params.speed);}
 function speedUp(){let e=document.getElementById('speed');e.value=Math.max(50,parseInt(e.value)/2);document.getElementById('vSpd').textContent=e.value+'ms';}
 function slowDown(){let e=document.getElementById('speed');e.value=Math.min(1000,parseInt(e.value)*2);document.getElementById('vSpd').textContent=e.value+'ms';}
 function scheduleEvent(type,target){events.push({year:year+1,type,target});log('📌 已排入: Y'+(year+1)+' '+type+(target?'→'+target:''),'metric');if(paused)step();}
