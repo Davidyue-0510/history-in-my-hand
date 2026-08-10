@@ -127,8 +127,9 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
       <div class="row"><span>国库（粮）</span><span class="lv" id="sTreas">--</span></div>
       <div class="row"><span>军力 / 边患</span><span class="lv" id="sMil">--</span></div>
       <div class="row"><span>官僚效率</span><span class="lv" id="sEff">--</span></div>
-      <div class="row"><span>朝廷/士绅/庶民</span><span class="lv" id="sPop">--</span></div>
-      <div class="row"><span>叛军</span><span class="lv" id="sReb">0</span></div>
+    <div class="row"><span>朝廷/士绅/庶民</span><span class="lv" id="sPop">--</span></div>
+    <div class="row"><span>士绅内部分化</span><span class="lv" id="sIneq">--</span></div>
+    <div class="row"><span>叛军</span><span class="lv" id="sReb">0</span></div>
       <div class="row"><span>庶民不满</span><span class="lv" id="sGrv">--</span></div>
     </div>
   </div>
@@ -148,7 +149,7 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 // 历史周期律 · 土地兼并 + 教育垄断 → 阶级固化
 // ============================================================
 let A=[], yr=0, paused=true, tm=null, hist=[], events=[];
-let dynNum=1, dynAge=0, landConc=0.2, eduMono=0.3, treasury=500, milPower=100, burEff=0.8, borderThreat=20, legitimacy=0.9;
+let dynNum=1, dynAge=0, landConc=0.2, eduMono=0.3, treasury=500, milPower=100, burEff=0.8, borderThreat=20, legitimacy=0.9, localIneq=0;
 const CC={center:'#58a6ff',local:'#3fb950',grassroot:'#8b949e',rebel:'#e94560'};
 const CN={center:'朝廷',local:'士绅',grassroot:'庶民',rebel:'叛军'};
 
@@ -184,7 +185,7 @@ function createAgent(i,cls,x,y,fam){
 function reset(){
   pause(); if(tm)clearTimeout(tm);
   A=[]; yr=0; hist=[]; events=[]; dynNum=1; dynAge=0;
-  landConc=0.2; eduMono=0.3; treasury=500; milPower=100; burEff=0.8; borderThreat=20; legitimacy=0.9;
+  landConc=0.2; eduMono=0.3; treasury=500; milPower=100; burEff=0.8; borderThreat=20; legitimacy=0.9; localIneq=0;
   let N=60;
   for(let i=0,fid=0;i<N;i++){
     let cls,x,y,fam=null;
@@ -245,14 +246,54 @@ function tick(){
   if(treasury<50)legitimacy=Math.max(0.1,legitimacy-0.02);
   if(burEff<0.3)legitimacy=Math.max(0.1,legitimacy-0.01);
 
-  // 5c. 家族竞争
-  let famPow={};
-  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{if(l.fam){if(!famPow[l.fam])famPow[l.fam]=0;famPow[l.fam]+=l.land+l.tp*0.1;}});
+  // 5c. 士绅内部竞争——家族势力不均 + 随时间分化加剧
+  let famPow={}, famAgents={};
+  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
+    if(!l.fam)l.fam='F_independent'; // 无家族者归为独立
+    if(!famPow[l.fam]){famPow[l.fam]=0;famAgents[l.fam]=[];}
+    famPow[l.fam]+=l.land+l.tp*0.1;
+    famAgents[l.fam].push(l);
+  });
   let fEntries=Object.entries(famPow).sort((a,b)=>b[1]-a[1]);
-  if(fEntries.length>=2&&fEntries[0][1]>fEntries[1][1]*2.5){
-    let domFam=fEntries[0][0];
-    A.filter(a=>a.cls==='local'&&a.alive&&a.fam!==domFam).forEach(l=>l.gv=Math.min(1,l.gv+0.02));
-    if(yr%10===0)lg('🏛 '+domFam+'家族独大，其他士绅不满','y');
+  let totalLocalPow=fEntries.reduce((s,e)=>s+e[1],0)||1;
+  let domFam=fEntries[0]?fEntries[0][0]:null;
+  let domRatio=fEntries[0]?fEntries[0][1]/totalLocalPow:0;
+
+  // 家族内部分化度：最弱家族 vs 最弱家族比
+  let weakestPow=fEntries.length>1?fEntries[fEntries.length-1][1]:0;
+  localIneq=localInequality; // 暴露给 stats 面板
+
+  // 弱势家族的不满：自身势力越弱，grievance 越高
+  fEntries.forEach(([fam, pow], idx)=>{
+    let share=pow/totalLocalPow;
+    // 倒数 40% 的家族每年额外积累不满
+    if(idx>fEntries.length*0.6){
+      famAgents[fam].forEach(l=>{
+        l.gv=Math.min(1,l.gv+(0.3-share)*0.04);
+        l._marginal=true; // 标记为边缘家族
+      });
+    }
+  });
+
+  // 内部倾轧：强家族欺压低家族（年概率20%）
+  if(fEntries.length>=2&&domRatio>0.5&&Math.random()<0.2){
+    let weakFam=fEntries[fEntries.length-1][0];
+    famAgents[domFam].forEach(l=>{
+      if(Math.random()<0.3){l.land+=0.5;l.gv=Math.max(0,l.gv-0.05);}
+    });
+    famAgents[weakFam].forEach(l=>{
+      l.land=Math.max(1,l.land-0.5);l.gv=Math.min(1,l.gv+0.08);
+    });
+    if(yr%5===0)lg('🏛 '+domFam+'家族侵吞'+weakFam+'家族土地','y');
+  }
+
+  // 内部政变：强家族势力>50% + center控制力弱 → 直接夺权
+  if(domRatio>0.5&&controlPower<0.25&&Math.random()<0.1){
+    let coupLeaders=famAgents[domFam].slice(0,2);
+    coupLeaders.forEach(l=>{l.cls='center';l.party='regime';l.tp+=50;l.gr+=100;l.gv=0;});
+    // 旧 center 降级
+    A.filter(a=>a.cls==='center'&&a.alive&&!coupLeaders.includes(a)).forEach(a=>{a.cls='local';a.party='loyal';a.gv=0.4;});
+    lg('🗡 '+domFam+'家族发动政变！夺取政权。','r');
   }
 
   // 6. 控制力
@@ -279,10 +320,14 @@ function tick(){
   // 8. 增长
   A.filter(a=>a.alive).forEach(a=>{a.gr+=(a.cls==='center'?8:a.cls==='local'?6:4);a.tp+=(a.cls==='center'?1:0.3);});
 
-  // 9. 士绅投机
+  // 9. 士绅投机（边缘家族更容易叛逃）
   let ctl=controlPower;
   A.filter(a=>a.cls==='local'&&a.alive&&a.party==='loyal').forEach(l=>{
-    if(l.gv>0.5||(ctl<0.3&&l.gv>0.3)){l.party='rebel';lg('🔀 士绅叛逃（不满='+l.gv.toFixed(2)+'）','y');}
+    let threshold=a._marginal?0.35:0.5;
+    let ctlThreshold=a._marginal?0.35:0.3;
+    if(l.gv>threshold||(ctl<ctlThreshold&&l.gv>0.2)){l.party='rebel';
+      let tag=a._marginal?'（边缘家族）':'';
+      lg('🔀 士绅叛逃'+tag+'（不满='+l.gv.toFixed(2)+'）','y');}
   });
 
   // 10. 庶民造反
@@ -355,6 +400,7 @@ function updateStats(){
   document.getElementById('sEff').textContent=burEff.toFixed(2);
   let cc=A.filter(a=>a.cls==='center'&&a.alive).length,lc=A.filter(a=>a.cls==='local'&&a.alive).length,gc=A.filter(a=>a.cls==='grassroot'&&a.alive).length;
   document.getElementById('sPop').textContent=cc+' / '+lc+' / '+gc;
+  document.getElementById('sIneq').textContent=(localIneq*100).toFixed(0)+'%';
   document.getElementById('sReb').textContent=A.filter(a=>a.party==='rebel'&&a.alive).length;
   document.getElementById('sGrv').textContent=(A.filter(a=>a.cls==='grassroot'&&a.alive).reduce((s,a)=>s+a.gv,0)/Math.max(1,gc)).toFixed(2);
 }
@@ -376,7 +422,7 @@ function render(){if(!ctx)return;let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,
   ctx.strokeStyle='#21262d';ctx.lineWidth=0.5;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
   let fm={};A.filter(a=>a.alive&&a.fam).forEach(a=>{if(!fm[a.fam])fm[a.fam]=[];fm[a.fam].push(a);});
   Object.values(fm).forEach(m=>{if(m.length<2)return;ctx.strokeStyle='rgba(63,185,80,0.12)';ctx.lineWidth=1;ctx.beginPath();m.forEach((a,i)=>{let px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
-  A.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CC.rebel:CC[a.cls],r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.2)';ctx.lineWidth=0.5;ctx.stroke();});
+  A.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CC.rebel:a.cls==='center'?CC.center:a.cls==='grassroot'?CC.grassroot:(a._marginal?'#1a6b2a':CC.local),r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.2)';ctx.lineWidth=0.5;ctx.stroke();});
   renderChart();
 }
 function renderChart(){
