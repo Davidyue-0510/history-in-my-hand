@@ -202,26 +202,36 @@ function reset(){
 function tick(){
   let tx=P('taxRate',30)/100, mb=P('milBudget',20)/100, bc=P('burCost',15)/100;
 
-  // 1. 土地兼并
-  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
-    A.filter(a=>a.cls==='grassroot'&&a.alive&&dist(a,l)<0.25&&a.land>0).forEach(g=>{
-      if(Math.random()<0.015){g.land-=0.5; l.land+=0.5;}
-    });
-  });
-  landConc=A.filter(a=>a.alive&&a.cls==='local').reduce((s,a)=>s+a.land,0)/
-           Math.max(1,A.filter(a=>a.alive).reduce((s,a)=>s+a.land,0));
+  // Pre-filter alive agents per class (do once, reuse throughout)
+  let alive=A.filter(a=>a.alive);
+  let centers=alive.filter(a=>a.cls==='center');
+  let locals=alive.filter(a=>a.cls==='local');
+  let grass=alive.filter(a=>a.cls==='grassroot');
+  let aliveN=alive.length||1;
+
+  // 1. 土地兼并（只用预过滤的数组）
+  let maxChecks=Math.min(locals.length*grass.length, 200);
+  let checked=0;
+  for(let li=0;li<locals.length&&checked<maxChecks;li++){
+    let l=locals[li];
+    for(let gi=0;gi<grass.length&&checked<maxChecks;gi++){checked++;
+      let g=grass[gi];
+      if(dist(g,l)<0.25&&g.land>0&&Math.random()<0.015){g.land-=0.5;l.land+=0.5;}
+    }
+  }
+  landConc=locals.reduce((s,a)=>s+a.land,0)/Math.max(1,alive.reduce((s,a)=>s+a.land,0));
 
   // 1b. 教育垄断
   eduMono=Math.min(1, eduMono+0.003);
   if(landConc>0.5)eduMono=Math.min(1,eduMono+0.003);
   eduMono=Math.max(0,eduMono-(burEff>0.7?0.002:0));
 
-  // 2. 税收
-  let taxpayers=A.filter(a=>a.cls==='grassroot'&&a.alive).length;
+  // 2. 税收（使用预过滤的 grass）
+  let taxpayers=grass.length;
   let tBase=Math.max(1,taxpayers*(1-landConc*0.7));
   let tRevenue=Math.floor(tBase*10*tx*(1-landConc*0.5));
   treasury+=Math.floor(tRevenue*(1-(0.8-burEff*0.5)));
-  A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>{
+  grass.forEach(g=>{
     let tax=Math.floor(Math.max(0, g.gr*tx*0.6)); g.gr-=tax;
     if(g.gr<10)g.gv=Math.min(1,g.gv+0.03);
     g.gv=Math.min(1,g.gv+(tx-0.15)*0.03);
@@ -251,7 +261,7 @@ function tick(){
 
   // 5c. 士绅内部竞争——家族势力不均 + 随时间分化加剧
   let famPow={}, famAgents={};
-  A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{
+  locals.forEach(l=>{
     if(!l.fam)l.fam='F_independent';
     if(!famPow[l.fam]){famPow[l.fam]=0;famAgents[l.fam]=[];}
     famPow[l.fam]+=l.land+l.tp*0.1;famAgents[l.fam].push(l);
@@ -288,18 +298,18 @@ function tick(){
   let yes=events.filter(e=>e.year===yr);
   yes.forEach(e=>{
     if(e.t==='invasion'){borderThreat+=40; lg('⚔ 外敌入侵！边患+40','b');
-      A.filter(a=>a.alive).forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.1);});}
-    if(e.t==='disaster'){A.filter(a=>a.alive).forEach(a=>{a.gr=Math.max(0,Math.floor(a.gr*0.7));a.gv=Math.min(1,a.gv+0.2);});lg('🌪 天灾！粮食-30%，不满飙升','y');}
+      alive.forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.1);});}
+    if(e.t==='disaster'){alive.forEach(a=>{a.gr=Math.max(0,Math.floor(a.gr*0.7));a.gv=Math.min(1,a.gv+0.2);});lg('🌪 天灾！粮食-30%，不满飙升','y');}
     if(e.t==='land_reform'){landConc=Math.max(0,landConc-0.15);
-      A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>{l.land=Math.max(1,l.land*0.7);l.gv=Math.min(1,l.gv+0.3);});
-      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.land+=1); lg('📜 均田令！兼并-0.15','y');}
+      locals.forEach(l=>{l.land=Math.max(1,l.land*0.7);l.gv=Math.min(1,l.gv+0.3);});
+      grass.forEach(g=>g.land+=1); lg('📜 均田令！兼并-0.15','y');}
     if(e.t==='tax_cut'){
       let el=document.getElementById('taxRate'); el.value=Math.max(5,+el.value-10); updateSliders();
-      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.gv=Math.max(0,g.gv-0.15)); lg('💰 减税10%！','g');}
+      grass.forEach(g=>g.gv=Math.max(0,g.gv-0.15)); lg('💰 减税10%！','g');}
     if(e.t==='purge'){burEff=Math.min(1,burEff+0.1);
-      A.filter(a=>a.cls==='local'&&a.alive).forEach(l=>l.gv=Math.min(1,l.gv+0.1)); lg('🗑 肃贪！效率+0.1','g');}
-    if(e.t==='conscript'){A.filter(a=>a.cls==='center'&&a.alive).forEach(c=>c.tp+=30);
-      A.filter(a=>a.cls==='grassroot'&&a.alive).forEach(g=>g.gr=Math.max(0,Math.floor(g.gr*0.95))); lg('🏹 征兵！兵力+30','b');}
+      locals.forEach(l=>l.gv=Math.min(1,l.gv+0.1)); lg('🗑 肃贪！效率+0.1','g');}
+    if(e.t==='conscript'){centers.forEach(c=>c.tp+=30);
+      grass.forEach(g=>g.gr=Math.max(0,Math.floor(g.gr*0.95))); lg('🏹 征兵！兵力+30','b');}
   });
 
   // 8. 增长
