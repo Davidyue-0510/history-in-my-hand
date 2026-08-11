@@ -92,12 +92,14 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 
   <h3 onclick="toggleSection(this)">⚡ 事件与改革</h3>
   <div class="section-body">
-    <button class="btn-evt" onclick="triggerEvent('invasion')">⚔ 外敌入侵<span class="k">边境威胁+40</span></button>
+    <button class="btn-evt" onclick="triggerEvent('invasion_tax')">⚔ 入侵·加税速决<span class="k">边患+40/税率+10%</span></button>
+    <button class="btn-evt" onclick="triggerEvent('invasion_slow')">🛡 入侵·慢慢打<span class="k">边患+40/不满+0.1</span></button>
     <button class="btn-evt" onclick="triggerEvent('disaster')">🌪 天灾<span class="k">粮食-30%，不满+0.2</span></button>
     <button class="btn-evt" onclick="triggerEvent('land_reform')">📜 均田令<span class="k">兼并-0.15，士绅震怒</span></button>
     <button class="btn-evt" onclick="triggerEvent('tax_cut')">💰 减税<span class="k">税率-10%，不满-0.15</span></button>
     <button class="btn-evt" onclick="triggerEvent('purge')">🗑 肃贪<span class="k">效率+0.1，士绅不满</span></button>
     <button class="btn-evt" onclick="triggerEvent('conscript')">🏹 征兵<span class="k">兵力+30，劳力-5%</span></button>
+    <button class="btn-evt" onclick="triggerEvent('edu_reform')">📚 普及教育<span class="k">垄断-0.1/国库-100/士绅震怒</span></button>
   </div>
 
   <h3 onclick="toggleSection(this)">⏱ 控制</h3>
@@ -299,8 +301,13 @@ function tick(){
   // 7. 事件
   let yes=events.filter(e=>e.year===yr);
   yes.forEach(e=>{
-    if(e.t==='invasion'){borderThreat+=40; lg('⚔ 外敌入侵！边患+40','b');
-      alive.forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.1);});}
+    if(e.t==='invasion_tax'){borderThreat+=40;
+      let el=document.getElementById('taxRate');el.value=Math.min(60,+el.value+10);updSliders();
+      alive.forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.05);});
+      lg('⚔ 外敌入侵！加税10%速决战费','b');}
+    if(e.t==='invasion_slow'){borderThreat+=40;
+      alive.forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.15);});
+      lg('🛡 外敌入侵！不加税硬扛，不满+0.15','b');}
     if(e.t==='disaster'){alive.forEach(a=>{a.gr=Math.max(0,Math.floor(a.gr*0.7));a.gv=Math.min(1,a.gv+0.2);});lg('🌪 天灾！粮食-30%，不满飙升','y');}
     if(e.t==='land_reform'){landConc=Math.max(0,landConc-0.15);
       locals.forEach(l=>{l.land=Math.max(1,l.land*0.7);l.gv=Math.min(1,l.gv+0.3);});
@@ -312,6 +319,10 @@ function tick(){
       locals.forEach(l=>l.gv=Math.min(1,l.gv+0.1)); lg('🗑 肃贪！效率+0.1','g');}
     if(e.t==='conscript'){centers.forEach(c=>c.tp+=30);
       grass.forEach(g=>g.gr=Math.max(0,Math.floor(g.gr*0.95))); lg('🏹 征兵！兵力+30','b');}
+    if(e.t==='edu_reform'){eduMono=Math.max(0.05,eduMono-0.1);treasury=Math.max(0,treasury-100);
+      locals.forEach(l=>l.gv=Math.min(1,l.gv+0.25));
+      grass.forEach(g=>g.gv=Math.max(0,g.gv-0.1));
+      lg('📚 普及教育！垄断-0.1 国库-100 士绅震怒 庶民开智','g');}
   });
 
   // 8. 增长
@@ -354,15 +365,30 @@ function tick(){
   if(aliveC===0||(aliveR>totalAlive*0.4&&aliveR>=5)||(milPower<borderThreat*0.3&&aliveR>=3)){
     lg('👑 第'+dynNum+'王朝覆灭！享国'+dynAge+'年。兼并='+landConc.toFixed(2)+' 垄断='+eduMono.toFixed(2),'r');
     dynNum++; dynAge=0; landConc=0.15; eduMono=0.25; treasury=400; milPower=80; burEff=0.75; borderThreat=15; legitimacy=0.85;
+    // 选新统治者——优先士绅叛军，不足则补庶民叛军，再不够则从存活者中随机
     let eduRebels=rebels.filter(r=>r.alive&&r.cls==='local').sort((a,b)=>b.tp-a.tp);
     let grassRebels=rebels.filter(r=>r.alive&&r.cls!=='local').sort((a,b)=>b.tp-a.tp);
-    let newRulers=eduRebels.slice(0,Math.ceil(totalAlive*0.04));
-    if(newRulers.length<Math.ceil(totalAlive*0.05)){newRulers.push(...grassRebels.slice(0,Math.ceil(totalAlive*0.05)-newRulers.length));}
-    if(eduRebels.length>0&&grassRebels.length>0){lg('⚠ 革命果实被窃取：士绅叛军成为新朝核心','y');}
-    newRulers.forEach(a=>{a.cls='center';a.party='regime';a.tp=120;a.gr=250;a.gv=0;});
-    A.filter(a=>a.cls==='center'&&a.alive).forEach(a=>{if(!newRulers.includes(a)){a.cls='grassroot';a.party='loyal';a.gv=0.3;}});
-    A.filter(a=>a.party==='rebel').forEach(a=>{a.party='loyal';a.gv=Math.max(0,a.gv-0.4);});
-    A.filter(a=>a.cls==='local'&&a.alive&&Math.random()<0.3).forEach(a=>{a.cls='grassroot';a.land=1;});
+    let needMin=Math.max(1,Math.ceil(totalAlive*0.05));
+    let newRulers=eduRebels.slice(0,needMin);
+    if(newRulers.length<needMin)newRulers.push(...grassRebels.slice(0,needMin-newRulers.length));
+    // 还不够——从存活的local/grassroot中随机补
+    if(newRulers.length<needMin){
+      let pool=A.filter(a=>a.alive&&a.cls!=='center'&&!newRulers.includes(a));
+      while(newRulers.length<needMin&&pool.length>0){
+        let pick=pool.splice(Math.floor(Math.random()*pool.length),1)[0];
+        newRulers.push(pick);
+      }
+    }
+    if(newRulers.length===0){// 极端情况：无人存活 → 重置整个社会
+      lg('💀 人口灭绝！文明重启...','r');
+      reset();return;
+    }
+    if(eduRebels.length>0&&grassRebels.length>0)lg('⚠ 革命果实被窃取：士绅叛军成为新朝核心','y');
+    newRulers.forEach(a=>{a.cls='center';a.party='regime';a.tp=120;a.gr=250;a.gv=0;a._marginal=false;});
+    // 旧朝廷降级（但至少保留newRulers）
+    A.filter(a=>a.cls==='center'&&a.alive&&!newRulers.includes(a)).forEach(a=>{a.cls='grassroot';a.party='loyal';a.gv=0.3;});
+    A.filter(a=>a.party==='rebel').forEach(a=>{a.party='loyal';a.gv=Math.max(0,a.gv-0.4);a._marginal=false;});
+    A.filter(a=>a.cls==='local'&&a.alive&&Math.random()<0.3).forEach(a=>{a.cls='grassroot';a.land=1;a._marginal=false;});
     lg('🚩 第'+dynNum+'王朝建立！均田轻徭，万象更新。','g');
   }
 
