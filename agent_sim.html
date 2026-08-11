@@ -150,7 +150,7 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 // ============================================================
 // 历史周期律 · 土地兼并 + 教育垄断 → 阶级固化
 // ============================================================
-let A=[], yr=0, paused=true, tm=null, hist=[], events=[];
+let A=[], yr=0, paused=true, tm=null, hist=[], events=[], lastTick=0, frameCount=0;
 let dynNum=1, dynAge=0, landConc=0.2, eduMono=0.3, treasury=500, milPower=100, burEff=0.8, borderThreat=20, legitimacy=0.9, localIneq=0;
 const CC={center:'#58a6ff',local:'#3fb950',grassroot:'#8b949e',rebel:'#e94560'};
 const CN={center:'朝廷',local:'士绅',grassroot:'庶民',rebel:'叛军'};
@@ -186,7 +186,7 @@ function createAgent(i,cls,x,y,fam){
 
 function reset(){
   pause(); if(tm)clearTimeout(tm);
-  A=[]; yr=0; hist=[]; events=[]; dynNum=1; dynAge=0;
+  A=[]; yr=0; hist=[]; events=[]; dynNum=1; dynAge=0; lastTick=0; frameCount=0;
   landConc=0.2; eduMono=0.3; treasury=500; milPower=100; burEff=0.8; borderThreat=20; legitimacy=0.9; localIneq=0;
   let N=60;
   for(let i=0,fid=0;i<N;i++){
@@ -236,7 +236,7 @@ function tick(){
   grass.forEach(g=>{
     let tax=Math.floor(Math.max(0, g.gr*tx*0.6)); g.gr-=tax;
     if(g.gr<10)g.gv=Math.min(1,g.gv+0.03);
-    g.gv=Math.min(1,g.gv+(tx-0.15)*0.03);
+    g.gv=Math.max(0,Math.min(1,g.gv+(tx-0.15)*0.03));
   });
 
   // 3. 财政支出
@@ -471,22 +471,22 @@ function renderChart(){
 }
 
 // ===== UI =====
-function run(){paused=false;loop();}
-function pause(){paused=true;}
-function ff(){for(let i=0;i<10&&!paused;i++)tick();render();}
-function ff50(){for(let i=0;i<50&&!paused;i++)tick();render();}
-function loop(){
-  if(paused)return;
-  let t0=Date.now();
-  try{tick();}catch(e){console.error('tick error:',e.message);paused=true;return;}
-  // 每50帧才重绘图表（防止大hist数组的Math.max/spread卡死）
-  if(yr%50===0||yr<5)try{render();}catch(e){console.error('render error:',e.message);}
-  else try{paintOnly();}catch(e){console.error('paint error:',e.message);}
-  try{updateStats();}catch(e){}
-  // 单帧超过300ms→强制暂停防死循环
-  if(Date.now()-t0>300){paused=true;console.warn('tick timeout, paused');}
+function run(){paused=false;lastTick=performance.now();requestAnimationFrame(loop);}
+function pause(){paused=true;tm=null;}
+function ff(){for(let i=0;i<10;i++)tick();render();}
+function ff50(){for(let i=0;i<50;i++)tick();render();}
+function loop(ts){
+  if(paused||!ts){tm=null;return;}
   let spd=+document.getElementById('speed').value||200;
-  tm=setTimeout(loop,Math.max(20,spd));
+  // 按实际经过时间决定每帧跑多少tick
+  let elapsed=ts-lastTick;
+  while(elapsed>=spd&&!paused){
+    try{tick();}catch(e){console.error('tick:',e.message);paused=true;return;}
+    lastTick+=spd;elapsed-=spd;frameCount++;
+  }
+  if(frameCount%50===0||yr<5){try{render();}catch(e){}}else{try{paintOnly();}catch(e){}}
+  try{updateStats();}catch(e){}
+  tm=requestAnimationFrame(loop);
 }
 function triggerEvent(t){events.push({year:yr+1,t});lg('📌 排入: Y'+(yr+1)+' '+t,'m');if(paused){tick();render();}}
 function lg(msg,c){let el=document.getElementById('lg');el.innerHTML+='<div class='+c+'>[Y'+yr+'] '+msg+'</div>';
