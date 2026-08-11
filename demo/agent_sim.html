@@ -455,8 +455,11 @@ function renderChart(){
   if(!chCtx||hist.length<2)return;
   let cw=chCv.width,ch=chCv.height,N=hist.length,step=Math.max(1,Math.floor(N/cw)),lh=20,ph=ch-lh;
   chCtx.clearRect(0,0,cw,ch);
-  let maxV=Math.max(0.01,...hist.map(h=>h.landConc),...hist.map(h=>h.eduMono),...hist.map(h=>h.borderThreat/100));
-  let lines=[{g:h=>h.landConc,c:'#d29922',lbl:'土地兼并'},{g:h=>h.eduMono,c:'#58a6ff',lbl:'教育垄断'},{g:h=>h.borderThreat/100,c:'#e94560',lbl:'边患'},{g:h=>(h.rCount||0)/Math.max(1,A.filter(a=>a.alive).length),c:'#8b949e',lbl:'叛乱比例'}];
+  // 安全计算max（避免spread超出栈）
+  let maxV=0.01;
+  for(let i=0;i<N;i+=step){let h=hist[i];maxV=Math.max(maxV,h.landConc,h.eduMono,h.borderThreat/100);}
+  let aliveN=A.filter(a=>a.alive).length||1;
+  let lines=[{g:h=>h.landConc,c:'#d29922',lbl:'土地兼并'},{g:h=>h.eduMono,c:'#58a6ff',lbl:'教育垄断'},{g:h=>h.borderThreat/100,c:'#e94560',lbl:'边患'},{g:h=>(h.rCount||0)/aliveN,c:'#8b949e',lbl:'叛乱比例'}];
   chCtx.strokeStyle='#21262d';chCtx.lineWidth=0.5;
   for(let i=1;i<4;i++){let y=ph*(1-i/4);chCtx.beginPath();chCtx.moveTo(0,y);chCtx.lineTo(cw,y);chCtx.stroke();}
   chCtx.fillStyle='#484f58';chCtx.font='9px monospace';
@@ -474,10 +477,14 @@ function ff(){for(let i=0;i<10&&!paused;i++)tick();render();}
 function ff50(){for(let i=0;i<50&&!paused;i++)tick();render();}
 function loop(){
   if(paused)return;
+  let t0=Date.now();
   try{tick();}catch(e){console.error('tick error:',e.message);paused=true;return;}
-  // 每20帧才重绘图表，地图每帧都画
-  if(yr%20===0||yr<5)try{render();}catch(e){console.error('render error:',e.message);}
+  // 每50帧才重绘图表（防止大hist数组的Math.max/spread卡死）
+  if(yr%50===0||yr<5)try{render();}catch(e){console.error('render error:',e.message);}
   else try{paintOnly();}catch(e){console.error('paint error:',e.message);}
+  try{updateStats();}catch(e){}
+  // 单帧超过300ms→强制暂停防死循环
+  if(Date.now()-t0>300){paused=true;console.warn('tick timeout, paused');}
   let spd=+document.getElementById('speed').value||200;
   tm=setTimeout(loop,Math.max(20,spd));
 }
