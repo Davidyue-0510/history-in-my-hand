@@ -366,6 +366,8 @@ function tick(){
 
   let rCount=rebels.filter(r=>r.alive).length;
   hist.push({yr,dyn:yr-dynAge,landConc,eduMono,treasury,milPower,borderThreat,burEff,grv_avg,rCount,dynNum,dynAge,legitimacy});
+  // 滚动窗口：只保留最近 500 年数据（防内存泄漏）
+  if(hist.length>500)hist.splice(0,hist.length-500);
   yr++; dynAge++;
   updateNarr(controlPower,grv_avg,rCount);
   updateStats();
@@ -413,12 +415,13 @@ function setupCv(){
   cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=Math.min(window.innerHeight-300,440);
   ctx=cv.getContext('2d');
   chCv=document.getElementById('chartCv');chCv.width=cv.width;chCv.height=200;chCtx=chCv.getContext('2d');}
-function render(){if(!ctx)return;let w=cv.width,h=cv.height;ctx.clearRect(0,0,w,h);
+function render(){if(!ctx)return;paintMap();renderChart();}
+function paintOnly(){if(!ctx)return;paintMap();}
+function paintMap(){
   ctx.strokeStyle='#21262d';ctx.lineWidth=0.5;for(let i=0;i<10;i++){ctx.beginPath();ctx.moveTo(i*w/10,0);ctx.lineTo(i*w/10,h);ctx.stroke();ctx.beginPath();ctx.moveTo(0,i*h/10);ctx.lineTo(w,i*h/10);ctx.stroke();}
   let fm={};A.filter(a=>a.alive&&a.fam).forEach(a=>{if(!fm[a.fam])fm[a.fam]=[];fm[a.fam].push(a);});
   Object.values(fm).forEach(m=>{if(m.length<2)return;ctx.strokeStyle='rgba(63,185,80,0.12)';ctx.lineWidth=1;ctx.beginPath();m.forEach((a,i)=>{let px=a.x*w,py=a.y*h;i===0?ctx.moveTo(px,py):ctx.lineTo(px,py);});ctx.stroke();});
   A.filter(a=>a.alive).forEach(a=>{let px=a.x*w,py=a.y*h,color=a.party==='rebel'?CC.rebel:a.cls==='center'?CC.center:a.cls==='grassroot'?CC.grassroot:(a._marginal?'#1a6b2a':CC.local),r=a.cls==='center'?7:a.cls==='local'?5:4;ctx.fillStyle=color;ctx.beginPath();ctx.arc(px,py,r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='rgba(255,255,255,0.2)';ctx.lineWidth=0.5;ctx.stroke();});
-  renderChart();
 }
 function renderChart(){
   if(!chCtx||hist.length<2)return;
@@ -441,9 +444,20 @@ function run(){paused=false;loop();}
 function pause(){paused=true;}
 function ff(){for(let i=0;i<10&&!paused;i++)tick();render();}
 function ff50(){for(let i=0;i<50&&!paused;i++)tick();render();}
-function loop(){if(paused)return;tick();render();let spd=+document.getElementById('speed').value||200;tm=setTimeout(loop,spd);}
+function loop(){
+  if(paused)return;
+  tick();
+  // 每20帧才重绘图表（图表是性能大户），地图每帧都画
+  if(yr%20===0||yr<5)render();
+  else paintOnly();
+  let spd=+document.getElementById('speed').value||200;
+  tm=setTimeout(loop,Math.max(20,spd));
+}
 function triggerEvent(t){events.push({year:yr+1,t});lg('📌 排入: Y'+(yr+1)+' '+t,'m');if(paused){tick();render();}}
-function lg(msg,c){let el=document.getElementById('lg');el.innerHTML+='<div class='+c+'>[Y'+yr+'] '+msg+'</div>';el.scrollTop=el.scrollHeight;}
+function lg(msg,c){let el=document.getElementById('lg');el.innerHTML+='<div class='+c+'>[Y'+yr+'] '+msg+'</div>';
+  // 日志超过 200 条裁剪前 50 条
+  let lines=el.children.length;if(lines>200){while(el.children.length>150)el.removeChild(el.firstChild);}
+  el.scrollTop=el.scrollHeight;}
 function tgLog(){let el=document.getElementById('lg');el.style.display=el.style.display==='block'?'none':'block';}
 function dist(a,b){return Math.hypot(a.x-b.x,a.y-b.y);}
 
