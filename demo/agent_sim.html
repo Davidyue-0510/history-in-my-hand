@@ -268,9 +268,11 @@ function tick(){
   });
   let fEntries=Object.entries(famPow).sort((a,b)=>b[1]-a[1]);
   let totalLocalPow=fEntries.reduce((s,e)=>s+e[1],0)||1;
-  let domRatio=fEntries.length?fEntries[0][1]/totalLocalPow:0;
-  let weakestPow=fEntries.length>1?fEntries[fEntries.length-1][1]:fEntries[0]?fEntries[0][1]:0;
-  localIneq=totalLocalPow>0?(fEntries[0][1]-weakestPow)/totalLocalPow:0;
+  let hasLocals=fEntries.length>0;
+  let domRatio=hasLocals?fEntries[0][1]/totalLocalPow:0;
+  let weakestPow=hasLocals?(fEntries.length>1?fEntries[fEntries.length-1][1]:fEntries[0][1]):0;
+  localIneq=hasLocals&&totalLocalPow>0?(fEntries[0][1]-weakestPow)/totalLocalPow:0;
+  if(!hasLocals){localIneq=0;}
 
   // 弱势家族不满积累更快
   fEntries.forEach(([fam,pow],idx)=>{
@@ -446,10 +448,10 @@ function ff(){for(let i=0;i<10&&!paused;i++)tick();render();}
 function ff50(){for(let i=0;i<50&&!paused;i++)tick();render();}
 function loop(){
   if(paused)return;
-  tick();
-  // 每20帧才重绘图表（图表是性能大户），地图每帧都画
-  if(yr%20===0||yr<5)render();
-  else paintOnly();
+  try{tick();}catch(e){console.error('tick error:',e.message);paused=true;return;}
+  // 每20帧才重绘图表，地图每帧都画
+  if(yr%20===0||yr<5)try{render();}catch(e){console.error('render error:',e.message);}
+  else try{paintOnly();}catch(e){console.error('paint error:',e.message);}
   let spd=+document.getElementById('speed').value||200;
   tm=setTimeout(loop,Math.max(20,spd));
 }
