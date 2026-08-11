@@ -478,11 +478,14 @@ function ff50(){for(let i=0;i<50;i++)tick();render();}
 function loop(ts){
   if(paused||!ts){tm=null;return;}
   let spd=+document.getElementById('speed').value||200;
-  // 按实际经过时间决定每帧跑多少tick
   let elapsed=ts-lastTick;
-  while(elapsed>=spd&&!paused){
+  // 标签页恢复后elapsed可能极大→跳过追赶，直接同步时钟
+  if(elapsed>2000){lastTick=ts-spd;elapsed=spd;}
+  // 每帧最多跑20 tick（防止一帧内无限循环）
+  let ticksThisFrame=0;
+  while(elapsed>=spd&&!paused&&ticksThisFrame<20){
     try{tick();}catch(e){console.error('tick:',e.message);paused=true;return;}
-    lastTick+=spd;elapsed-=spd;frameCount++;
+    lastTick+=spd;elapsed-=spd;frameCount++;ticksThisFrame++;
   }
   if(frameCount%50===0||yr<5){try{render();}catch(e){}}else{try{paintOnly();}catch(e){}}
   try{updateStats();}catch(e){}
