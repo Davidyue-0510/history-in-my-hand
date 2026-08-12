@@ -79,6 +79,28 @@
   .diff.mid{background:#F6E7CF;color:#8a5a1e}
   .role .more{margin-top:auto;font-weight:600;color:var(--earth)}
 
+  /* priority badges (合作者招募 v2) */
+  .prio{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.06em;
+    padding:3px 12px;border-radius:99px;color:#FBF6EA;margin-bottom:10px}
+  .prio.hot{background:#A8421C}
+  .prio.want{background:#B07B2E}
+  .prio.done{background:#5E6B33}
+  .prio.later{background:#8a8378}
+  .role .stage{font-size:12.5px;color:var(--ink2);margin-top:10px;padding-top:10px;
+    border-top:1px dashed var(--line)}
+  .role .stage b{color:var(--ink)}
+  .recruit-hero{background:linear-gradient(135deg,#A8421C,#C97A3D);color:#FBF6EA;border-radius:16px;
+    padding:26px 28px;margin-bottom:22px;box-shadow:var(--shadow)}
+  .recruit-hero h3{margin:0 0 8px;font-size:22px;color:#fff}
+  .recruit-hero p{margin:0;font-size:15px;line-height:1.7;opacity:.95}
+  .recruit-hero .mail{display:inline-block;margin-top:14px;background:#FBF6EA;color:#A8421C;
+    font-weight:700;font-size:14px;padding:8px 16px;border-radius:10px}
+  .recruit-hero .mail:hover{text-decoration:none;background:#fff}
+  .role.hot-card{border-color:#A8421C;border-width:2px;grid-column:1 / -1;flex-direction:row}
+  .role.hot-card .top{width:34%;border-right:1px solid var(--line);border-bottom:0}
+  .role.hot-card .body{width:66%}
+  @media (max-width:880px){.role.hot-card{flex-direction:column}.role.hot-card .top{width:100%;border-right:0;border-bottom:1px solid var(--line)}.role.hot-card .body{width:100%}}
+
   /* leads */
   .leads-note{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
   .leads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:8px}
@@ -252,15 +274,39 @@
 
 <section>
   <div class="wrap">
-    <h2>四类合作者，四种入口</h2>
-    <p class="sec-sub">辽东明清只是第一个参考实现——项目真正要做的是「全时段全地域 + 任意文字生成一个世界 + 世界自由演化」。下面四类人各有一张上手地图。完整招募手册见 <a href="../COLLABORATE.md">COLLABORATE.md</a>，技术蓝图见 <a href="../docs/02-北极星与架构演进.md">北极星与架构演进</a>。</p>
+    <h2>合作者招募 · 按当前优先级</h2>
+    <p class="sec-sub">主体功能已跑通（19 道闸门全绿）。现在缺的不是「把功能做出来」，而是三类人力：<b>数据库接入（最急）</b>、<b>界面设计</b>、<b>代码维护与深化</b>。模拟引擎方向先保持联系。</p>
+
+    <div class="recruit-hero">
+      <h3>🔴 本周最需要：历史数据库接入</h3>
+      <p>代码侧已经把适配器预留好了——<code>tools/datasources/</code> 里 CHGIS、CBDB 的骨架接口都在，只是还没接到官方数据。
+        任何一个能对接「中国历代人物传记资料库（CBDB）」「CHGIS 历史地理信息」「地名/人物规范档」的人，都能让项目从「手工录入」升级到「按需拉取」。
+        欢迎携带数据访问权限或批量下载经验来谈。</p>
+      <a class="mail" href="../docs/数据库合作联络模板.md">📧 给数据库方的联络模板 →</a>
+    </div>
+
     <div class="roles">
+
+      <div class="role hot-card">
+        <div class="top">
+          <div class="emoji">🗄️</div>
+          <h3>数据库 / 数据接入</h3>
+          <span class="prio hot">优先级 1 · 最需要</span>
+        </div>
+        <div class="body">
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">把 CBDB（人物传记）、CHGIS（历史地名）、各馆藏古籍库接进 <code>tools/datasources/</code> 适配器。让任意史料导入时，人物 / 地名 / 政权信息可以自动查证补全。</div></div>
+          <div class="blk"><div class="h">代码现状</div><div class="c">适配器骨架已在（<code>datasources/cbdb.py</code> · <code>chgis.py</code>），接口稳定，只差真实后端。本地地名表 <code>data/geo/gazetteer.json</code> 已能落点 100+ 地名。</div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">用 CBDB 公开接口跑通一个人物查询，把 <code>fetch()</code> 从占位变成可用。</div></div>
+          <span class="diff mid">难度 ★★☆</span>
+          <a class="more" href="../docs/数据库合作联络模板.md">联系模板 →</a>
+        </div>
+      </div>
 
       <div class="role">
         <div class="top">
           <div class="emoji">🎨</div>
           <h3>美工 / 界面设计</h3>
-          <span class="tag">视觉 · 交互</span>
+          <span class="prio want">优先级 2 · 需要</span>
         </div>
         <div class="body">
           <div class="blk"><div class="h">你能贡献什么</div><div class="c">地图配色、图层可读性、移动端排版、缺口/冲突的视觉语言。当前是工程师审美，需要专业眼睛。</div></div>
@@ -274,13 +320,13 @@
       <div class="role">
         <div class="top">
           <div class="emoji">🧠</div>
-          <h3>程序 / NLP · 抽取管线</h3>
-          <span class="tag">关键 · 工程</span>
+          <h3>程序 / 代码维护与深化</h3>
+          <span class="prio done">优先级 3 · 主体已完成</span>
         </div>
         <div class="body">
-          <div class="blk"><div class="h">你能贡献什么</div><div class="c">把"文本 → 结构化世界模型"做出来（ingestion 抽取层），让导入史料 / 小说即自动呈现。这是通用系统的关键工程。</div></div>
-          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/ingest.py</code>（已落地：文本 → 八件套 world 装配） · <code>docs/03-通用世界模型-schema.md</code></div></div>
-          <div class="blk"><div class="h">第一个上手任务</div><div class="c">拿一段现成文本，做出最小抽取原型，产物能直接过 <code>gates.py --strict</code>。</div></div>
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">ingestion 抽取层的质量深化（更稳的 LLM 结构化）、模拟引擎新参数、模拟器稳定性。主体功能已就绪，剩下是打磨。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>tools/ingestion/ingest.py</code> · <code>tools/simulation/simulate.py</code> · <code>demo/agent_sim.html</code></div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">给抽取层写一段难啃文本的回归用例（人名歧义 / 年号陷阱），或给模拟器加一个可调参数。</div></div>
           <span class="diff mid">难度 ★★★</span>
           <a class="more" href="../COLLABORATE.md#c">详细指引 →</a>
         </div>
@@ -289,13 +335,13 @@
       <div class="role">
         <div class="top">
           <div class="emoji">📜</div>
-          <h3>数字人文从业人</h3>
-          <span class="tag">史料 · 方法</span>
+          <h3>数字人文 / 史料补录</h3>
+          <span class="prio want">持续招募</span>
         </div>
         <div class="body">
-          <div class="blk"><div class="h">你能贡献什么</div><div class="c">核实史料、补录断言、把「缺口」认领成「线索」。这是项目的内容心脏，最直接决定质量。</div></div>
-          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>data/&lt;切片&gt;/assertions.jsonl</code> · <code>data/leads.json</code> · <code>data/vocab.json</code></div></div>
-          <div class="blk"><div class="h">第一个上手任务</div><div class="c">认领下方任一条线索（如「铁岭陷落兵数详考」），补 1–3 条带出处的断言，跑通工具链。</div></div>
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">核实史料、补录断言、认领「研究线索」。这是内容心脏，直接决定质量上限。</div></div>
+          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>data/&lt;切片&gt;/assertions.jsonl</code> · <code>data/leads.json</code></div></div>
+          <div class="blk"><div class="h">第一个上手任务</div><div class="c">认领下方任一条线索，补 1–3 条带出处的断言，跑通工具链。</div></div>
           <span class="diff mid">难度 ★★☆</span>
           <a class="more" href="../CONTRIBUTORS.md#dh">详细指引 →</a>
         </div>
@@ -305,18 +351,19 @@
         <div class="top">
           <div class="emoji">🌐</div>
           <h3>模拟引擎方向</h3>
-          <span class="tag">未来 · 物色中</span>
+          <span class="prio later">物色中 · 先联系</span>
         </div>
         <div class="body">
-          <div class="blk"><div class="h">你能贡献什么</div><div class="c">轻量规则 + LLM 推演的"世界演化 / 反事实分叉"最小可用原型。历史假设（某节点另选则走向如何）也靠它。</div></div>
-          <div class="blk"><div class="h">该碰的文件</div><div class="c"><code>docs/03-通用世界模型-schema.md</code> §6 <code>sim_config.json</code></div></div>
-          <div class="blk"><div class="h">现在的状态</div><div class="c">先建立联系、保持关注；等时间线分支模型（M5）就绪再正式拉。</div></div>
+          <div class="blk"><div class="h">你能贡献什么</div><div class="c">世界演化 / 反事实分叉的更深模型。历史假设（某节点另选则走向如何）也靠它。</div></div>
+          <div class="blk"><div class="h">现在的状态</div><div class="c">确定性兵棋推演 + 三阶层 Agent 已可用（<code>demo/agent_sim.html</code> 在线可玩）。更复杂的分支模型待物色。</div></div>
+          <div class="stage">建议<b>先玩一遍在线模拟器</b>再决定要不要入局。</div>
           <span class="diff easy">难度 待定</span>
           <a class="more" href="../COLLABORATE.md#d">详细指引 →</a>
         </div>
       </div>
 
     </div>
+    <p class="sec-sub" style="margin-top:16px;font-size:14px">完整招募手册见 <a href="../COLLABORATE.md">COLLABORATE.md</a>，技术蓝图见 <a href="../docs/02-北极星与架构演进.md">北极星与架构演进</a>。</p>
   </div>
 </section>
 
