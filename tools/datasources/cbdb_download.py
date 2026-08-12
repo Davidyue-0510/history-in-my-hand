@@ -34,24 +34,39 @@ def latest_meta():
         return json.loads(r.read().decode())
 
 
-def download(url, dest, sha256=None):
+def download(url, dest, sha256=None, retries=3):
     print("[cbdb] 下载 %s → %s" % (url, dest))
     tmp = dest + ".part"
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=60) as r, open(tmp, "wb") as f:
-        total = int(r.headers.get("Content-Length") or 0)
-        done = 0
-        while True:
-            chunk = r.read(1024 * 1024)
-            if not chunk:
-                break
-            f.write(chunk)
-            done += len(chunk)
-            if total:
-                pct = done * 100 // total
-                sys.stdout.write("\r  %d%% (%d/%d MB)" % (pct, done // 1048576, total // 1048576))
-                sys.stdout.flush()
-    sys.stdout.write("\n")
+    for attempt in range(1, retries + 1):
+        try:
+            resume = os.path.getsize(tmp) if os.path.exists(tmp) else 0
+            req = urllib.request.Request(url, headers=UA)
+            if resume:
+                req.add_header("Range", "bytes=%d-" % resume)
+                print("[cbdb] 断点续传：从 %d 字节继续（第 %d 次尝试）" % (resume, attempt))
+            with urllib.request.urlopen(req, timeout=120) as r, open(tmp, "ab") as f:
+                total = int(r.headers.get("Content-Length") or 0) + resume
+                done = resume
+                while True:
+                    chunk = r.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+                    done += len(chunk)
+                    if total:
+                        pct = done * 100 // total
+                        sys.stdout.write("\r  %d%% (%d/%d MB)" % (pct, done // 1048576, total // 1048576))
+                        sys.stdout.flush()
+            sys.stdout.write("\n")
+            break  # 下载完成，退出重试循环
+        except Exception as e:
+            print("\n[cbdb] 第 %d 次尝试失败: %s" % (attempt, e))
+            if attempt < retries:
+                print("[cbdb] 5 秒后重试…")
+                import time
+                time.sleep(5)
+            else:
+                raise RuntimeError("下载失败（重试 %d 次）：%s。可重新运行本脚本断点续传。" % (retries, e))
     if sha256:
         print("[cbdb] 校验 SHA-256 ...")
         h = hashlib.sha256()
@@ -59,8 +74,7 @@ def download(url, dest, sha256=None):
             for chunk in iter(lambda: f.read(1024 * 1024), b""):
                 h.update(chunk)
         if h.hexdigest() != sha256:
-            os.remove(tmp)
-            raise RuntimeError("SHA-256 不匹配，下载可能损坏：got %s want %s" % (h.hexdigest(), sha256))
+            raise RuntimeError("SHA-256 不匹配，下载可能损坏：got %s want %s（删掉 .part 文件后重下）" % (h.hexdigest(), sha256))
     os.replace(tmp, dest)
     print("[cbdb] 完成: %s" % dest)
 
