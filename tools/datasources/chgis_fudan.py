@@ -6,13 +6,19 @@
 
 用法：
     python tools/datasources/chgis_fudan.py --list       # 列出可下载项
-    python tools/datasources/chgis_fudan.py --all        # 批量下载全部（断点续传）
-    python tools/datasources/chgis_fudan.py --names 1911 # 只下名字含 1911 的项
+    python tools/datasources/chgis_fudan.py --all        # 批量下载全部（限速+断点续传）
+    python tools/datasources/chgis_fudan.py --names 1911 # 只下名称含 1911 的项
     python tools/datasources/chgis_fudan.py --unrar      # 解压已下载的 .rar（需 7z/WinRAR）
 
 产物：data/external/chgis/fudan/*.rar（gitignore，不打包）
 
-数据许可：CHGIS 学术免费、禁止商用/再分发。复旦镜像为官方编辑处（中国编辑处）发布。
+抗 502 策略（复旦老服务器过载/限流）：
+  · 每文件之间 4 秒请求间隔
+  · 每文件最多 5 次重试，指数退避 3/6/12/24s
+  · 遇 502（服务器过载）等 30 秒再试
+  · 已下载成功的自动跳过（重跑同命令即续传）
+
+数据许可：CHGIS 学术免费、禁止商用/再分发。复旦镜像为官方中国编辑处发布。
 """
 import argparse
 import os
@@ -26,8 +32,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 EXTERNAL = os.path.join(ROOT, "data", "external", "chgis", "fudan")
 PAGE_URL = "http://yugong.fudan.edu.cn/CHGIS/sjxz.htm"
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0"}
-RETRIES = 3
+UA = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Referer": "http://yugong.fudan.edu.cn/",
+    "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+}
+RETRIES = 5
+REQUEST_GAP = 4          # 秒：文件间请求间隔，防老服务器限流
+BACKOFF = (3, 6, 12, 24)  # 秒：失败退避（指数）
 
 
 def fetch_items():
@@ -48,6 +62,7 @@ def fetch_items():
 
 
 def download(url, dest):
+    """下载单个文件。返回 True/False。断点续传 + 指数退避 + 502 长等待。"""
     os.makedirs(os.path.dirname(dest), exist_ok=True)
     tmp = dest + ".part"
     resume = os.path.getsize(tmp) if os.path.exists(tmp) else 0
@@ -58,7 +73,7 @@ def download(url, dest):
             req = urllib.request.Request(url, headers=UA)
             if resume:
                 req.add_header("Range", "bytes=%d-" % resume)
-            with urllib.request.urlopen(req, timeout=120) as r, open(tmp, "ab") as f:
+            with urllib.request.urlopen(req, timeout=180) as r, open(tmp, "ab") as f:
                 total = int(r.headers.get("Content-Length") or 0) + resume
                 done = resume
                 while True:
@@ -68,7 +83,8 @@ def download(url, dest):
                     f.write(chunk)
                     done += len(chunk)
                     if total:
-                        sys.stdout.write("\r    %d%% (%d/%d MB)   " % (done * 100 // total, done // 1048576, total // 1048576))
+                        pct = done * 100 // total
+                        sys.stdout.write("\r    %d%% (%d/%d MB)   " % (pct, done // 1048576, total // 1048576))
                         sys.stdout.flush()
             sys.stdout.write("\n")
             os.replace(tmp, dest)
@@ -76,15 +92,16 @@ def download(url, dest):
         except Exception as e:
             print("\n    第 %d/%d 次失败: %s" % (attempt, RETRIES, e))
             if attempt < RETRIES:
-                time.sleep(3)
+                wait = 30 if "502" in str(e) else BACKOFF[min(attempt - 1, len(BACKOFF) - 1)]
+                print("    等待 %d 秒后重试…" % wait)
+                time.sleep(wait)
     return False
 
 
 def find_unrar():
     for cand in ("7z", "7za", "unrar", "rar"):
         try:
-            subprocess.run([cand, "--help" if cand.startswith("7z") else "-?"],
-                           capture_output=True, timeout=5)
+            subprocess.run([cand], capture_output=True, timeout=5)
             return cand
         except Exception:
             continue
@@ -128,7 +145,8 @@ def main():
     try:
         items = fetch_items()
     except Exception as e:
-        print("[chgis] 无法读取复旦下载页（%s）。网络可直连 yugong.fudan.edu.cn。" % e)
+        print("[chgis] 无法读取复旦下载页（%s）。" % e)
+        print("[chgis] 服务器可能过载，等几分钟重试；页面可直连 yugong.fudan.edu.cn。")
         return 1
 
     if args.list:
@@ -143,19 +161,30 @@ def main():
         print("[chgis] 无匹配项。用 --list 看清单。")
         return 1
 
-    print("[chgis] 开始下载 %d 项（断点续传，中断重跑同命令即可）…" % len(targets))
+    print("[chgis] 开始下载 %d 项（限速 %d 秒/文件，中断重跑同命令即续传）…"
+          % (len(targets), REQUEST_GAP))
     ok = 0
-    for it in targets:
+    fails = []
+    for idx, it in enumerate(targets):
         fname = re.sub(r'[\\/:*?"<>|]', "_", it["name"]) + ".rar"
         dest = os.path.join(EXTERNAL, fname)
         if os.path.exists(dest):
             print("[chgis] 已存在，跳过：%s" % it["name"])
             ok += 1
             continue
-        print("[chgis] %s" % it["name"])
+        print("[chgis] [%d/%d] %s" % (idx + 1, len(targets), it["name"]))
         if download(it["url"], dest):
             ok += 1
+        else:
+            fails.append(it["name"])
+        if idx < len(targets) - 1:
+            time.sleep(REQUEST_GAP)
+
     print("[chgis] 完成：%d/%d。CHGIS 学术免费、禁商用/再分发，勿打包入库。" % (ok, len(targets)))
+    if fails:
+        print("[chgis] 失败 %d 项（稍后重跑同命令会自动跳过已成功项）：" % len(fails))
+        for n in fails:
+            print("  - %s" % n)
     print("[chgis] 解压：python tools/datasources/chgis_fudan.py --unrar（需 7-Zip）")
     return 0
 
