@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""CHGIS（中国历史地理信息系统）数据下载器。
+"""CHGIS（中国历史地理信息系统）数据批量下载器。
 
-来源：Harvard DataVerse 仓库（官方分发，学术免费，禁止商用/再分发）。
+来源：Harvard DataVerse 官方仓库（学术免费，禁止商用/再分发）。
     V6: https://dataverse.harvard.edu/dataverse/chgis_v6
 
 用法：
-    python tools/datasources/chgis_download.py --list         # 列出 DataVerse 上的数据集
-    python tools/datasources/chgis_download.py --dataset 123  # 按 ID 下载某数据集
-    python tools/datasources/chgis_download.py --version v6   # 快捷方式：V6 推荐数据集
+    python tools/datasources/chgis_download.py --list          # 列出 DataVerse 上的全部数据集
+    python tools/datasources/chgis_download.py --all           # 批量下载全部数据集（推荐）
+    python tools/datasources/chgis_download.py --ids 123,456   # 只下指定 ID 的数据集
+    python tools/datasources/chgis_download.py --resume        # 只补下未完成的数据集
 
-产物：data/external/chgis/<dataset>/... （不打包入 git）
+产物：data/external/chgis/<dataset_id>/<files> （不打包入 git）
+特性：断点续传（.part + Range）、每文件 3 次重试、全部完成后可重跑 --resume 补漏。
 
 数据许可（CHGIS V6 官方声明）：
     "free for academic research, no commercial use, resale, or redistribution permitted"
@@ -19,89 +21,117 @@ import argparse
 import json
 import os
 import sys
+import time
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 EXTERNAL = os.path.join(ROOT, "data", "external", "chgis")
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0) history-in-my-hand"}
-
-# V6 推荐数据集（DataVerse 上 CHGIS V6 的已知内容；ID 以 --list 实查为准）
-# 典型内容：时间序列地名 CSV、1911 政区 shapefile、海岸线/河流/高程图层
-RECOMMENDED = {
-    "v6": "CHGIS V6（2016）：政区时间序列 + 1911 切片 shapefile + 地名 CSV",
-}
+RETRIES = 3
 
 
 def _api(path):
     url = "https://dataverse.harvard.edu/api/" + path
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=60) as r:
-        body = r.read().decode("utf-8", "replace")
-    return json.loads(body)
+    for attempt in range(1, RETRIES + 1):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read().decode("utf-8", "replace")
+            return json.loads(body)
+        except Exception as e:
+            print("[chgis] API 第 %d/%d 次失败: %s" % (attempt, RETRIES, e))
+            if attempt < RETRIES:
+                time.sleep(3)
+    raise RuntimeError("DataVerse API 访问失败（已重试 %d 次）" % RETRIES)
 
 
 def list_datasets():
-    try:
-        data = _api("dataverses/chgis_v6/contents")
-        items = data.get("data", [])
-        print("[chgis] DataVerse /chgis_v6 下的数据集：")
-        for d in items:
-            print("  - id=%s | %s | %s" % (d.get("id"), d.get("name"), d.get("type")))
-        return items
-    except Exception as e:
-        print("[chgis] 无法访问 DataVerse API（%s）" % e)
-        print("[chgis] 请浏览器打开 https://dataverse.harvard.edu/dataverse/chgis_v6 手动查看数据集 ID。")
-        return []
+    data = _api("dataverses/chgis_v6/contents")
+    items = data.get("data", [])
+    datasets = [d for d in items if d.get("type") == "dataset"]
+    print("[chgis] DataVerse /chgis_v6 共 %d 个数据集：" % len(datasets))
+    for d in datasets:
+        print("  - id=%s | %s" % (d.get("id"), d.get("name")))
+    return datasets
 
 
 def dataset_files(ds_id):
-    try:
-        data = _api("datasets/%s" % ds_id)
-        latest = data["data"]["latestVersion"]
-        files = latest.get("files", [])
-        print("[chgis] 数据集 %s 包含 %d 个文件：" % (ds_id, len(files)))
-        out = []
-        for f in files:
-            df = f.get("dataFile", {})
-            name = df.get("filename", "?")
-            size = df.get("filesize", 0)
-            url = "https://dataverse.harvard.edu/api/access/datafile/%s" % df.get("id")
-            print("  - %s (%.1f MB) %s" % (name, size / 1048576, url))
-            out.append({"name": name, "url": url, "size": size})
-        return out
-    except Exception as e:
-        print("[chgis] 获取数据集文件失败（%s）" % e)
-        return []
+    data = _api("datasets/%s" % ds_id)
+    latest = data["data"]["latestVersion"]
+    files = latest.get("files", [])
+    out = []
+    for f in files:
+        df = f.get("dataFile", {})
+        name = df.get("filename", "?")
+        size = df.get("filesize", 0)
+        url = "https://dataverse.harvard.edu/api/access/datafile/%s" % df.get("id")
+        out.append({"name": name, "url": url, "size": size})
+    return out
 
 
-def download_file(url, dest):
+def download_file(url, dest, retries=RETRIES):
     os.makedirs(os.path.dirname(dest), exist_ok=True)
-    print("[chgis] 下载 → %s" % dest)
     tmp = dest + ".part"
-    req = urllib.request.Request(url, headers=UA)
-    with urllib.request.urlopen(req, timeout=120) as r, open(tmp, "wb") as f:
-        total = int(r.headers.get("Content-Length") or 0)
-        done = 0
-        while True:
-            chunk = r.read(1024 * 1024)
-            if not chunk:
-                break
-            f.write(chunk)
-            done += len(chunk)
-            if total:
-                sys.stdout.write("\r  %d%% (%d/%d MB)" % (done * 100 // total, done // 1048576, total // 1048576))
-                sys.stdout.flush()
-    sys.stdout.write("\n")
-    os.replace(tmp, dest)
-    print("[chgis] 完成：%s" % dest)
+    resume = os.path.getsize(tmp) if os.path.exists(tmp) else 0
+    if resume:
+        print("[chgis]   续传 %s（已有 %d MB）" % (os.path.basename(dest), resume // 1048576))
+    for attempt in range(1, retries + 1):
+        try:
+            req = urllib.request.Request(url, headers=UA)
+            if resume:
+                req.add_header("Range", "bytes=%d-" % resume)
+            with urllib.request.urlopen(req, timeout=120) as r, open(tmp, "ab") as f:
+                total = int(r.headers.get("Content-Length") or 0) + resume
+                done = resume
+                while True:
+                    chunk = r.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+                    done += len(chunk)
+                    if total:
+                        pct = done * 100 // total
+                        sys.stdout.write("\r    %d%% (%d/%d MB)   " % (pct, done // 1048576, total // 1048576))
+                        sys.stdout.flush()
+            sys.stdout.write("\n")
+            os.replace(tmp, dest)
+            return True
+        except Exception as e:
+            print("\n[chgis]   %s 第 %d 次失败: %s" % (os.path.basename(dest), attempt, e))
+            if attempt < retries:
+                print("[chgis]   5 秒后重试…")
+                time.sleep(5)
+    return False
+
+
+def download_dataset(ds_id, name=""):
+    print("[chgis] === 数据集 %s %s ===" % (ds_id, name))
+    try:
+        files = dataset_files(ds_id)
+    except Exception as e:
+        print("[chgis] 跳过（获取文件列表失败: %s）" % e)
+        return 0
+    ok = 0
+    for f in files:
+        dest = os.path.join(EXTERNAL, str(ds_id), f["name"])
+        if os.path.exists(dest):
+            print("[chgis]   已存在，跳过 %s" % f["name"])
+            ok += 1
+            continue
+        print("[chgis]   %s (%.1f MB)" % (f["name"], f["size"] / 1048576))
+        if download_file(f["url"], dest):
+            ok += 1
+    print("[chgis] 数据集 %s 完成：%d/%d 文件" % (ds_id, ok, len(files)))
+    return ok
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--list", action="store_true", help="列出 DataVerse V6 数据集")
-    ap.add_argument("--dataset", type=int, help="按数据集 ID 下载全部文件")
-    ap.add_argument("--version", choices=["v6"], help="快捷方式：下载 V6 推荐内容")
+    ap.add_argument("--list", action="store_true", help="列出全部数据集（不下载）")
+    ap.add_argument("--all", action="store_true", help="批量下载全部数据集")
+    ap.add_argument("--ids", help="只下指定 ID 列表，逗号分隔，如 --ids 123,456")
+    ap.add_argument("--resume", action="store_true", help="只补下未完成的数据集（断点续传模式）")
     args = ap.parse_args()
 
     os.makedirs(EXTERNAL, exist_ok=True)
@@ -110,17 +140,19 @@ def main():
         list_datasets()
         return 0
 
-    if args.dataset:
-        files = dataset_files(args.dataset)
-        for f in files:
-            dest = os.path.join(EXTERNAL, str(args.dataset), f["name"])
-            download_file(f["url"], dest)
-        print("[chgis] 完成。注意：CHGIS 为学术免费、禁止商用/再分发，勿打包入库。")
+    if args.all or args.resume:
+        datasets = list_datasets()
+        total_ok = 0
+        for d in datasets:
+            total_ok += download_dataset(d.get("id"), d.get("name"))
+        print("\n[chgis] 全部完成：成功 %d 文件。注意：CHGIS 学术免费、禁商用/再分发，勿打包入库。" % total_ok)
         return 0
 
-    if args.version == "v6":
-        print("[chgis] %s" % RECOMMENDED["v6"])
-        print("[chgis] 提示：先 --list 拿真实数据集 ID，再 --dataset <ID> 下载。")
+    if args.ids:
+        ids = [x.strip() for x in args.ids.split(",") if x.strip()]
+        for i in ids:
+            download_dataset(i)
+        print("\n[chgis] 完成。")
         return 0
 
     ap.print_help()

@@ -26,16 +26,19 @@ DB_DIR = os.path.join(ROOT, "data", "external", "cbdb")
 
 # 只读：SQLite 以 URI 打开，禁止写
 def _connect():
-    dbs = sorted(
-        f for f in os.listdir(DB_DIR)
-        if f.endswith(".sqlite3") or f.endswith(".sqlite")
-    ) if os.path.isdir(DB_DIR) else []
+    dbs = []
+    if os.path.isdir(DB_DIR):
+        for root, _, files in os.walk(DB_DIR):
+            for f in files:
+                if f.endswith(".sqlite3") or f.endswith(".sqlite") or f.endswith(".db"):
+                    dbs.append(os.path.join(root, f))
+    dbs.sort()
     if not dbs:
         raise FileNotFoundError(
             "本地无 CBDB 库。请先运行:\n"
             "  python tools/datasources/cbdb_download.py"
         )
-    db = os.path.join(DB_DIR, dbs[-1])
+    db = dbs[-1]
     return sqlite3.connect("file:%s?mode=ro" % db.replace("\\", "/"), uri=True), db
 
 
@@ -57,15 +60,17 @@ class CBDBAdapter(DataSource):
         conn, db = _connect()
         cur = conn.cursor()
         tabs = _tables(cur)
-        table = "BIO_MAIN" if "BIO_MAIN" in tabs else (
-            "BIO_MAIN_TBL" if "BIO_MAIN_TBL" in tabs else None)
+        table = "BIOG_MAIN" if "BIOG_MAIN" in tabs else (
+            "BIO_MAIN" if "BIO_MAIN" in tabs else None)
         if not table:
             conn.close()
-            raise RuntimeError("CBDB 库缺少 BIO_MAIN 表: %s" % sorted(tabs)[:10])
+            raise RuntimeError("CBDB 库缺少人物主表（BIOG_MAIN/BIO_MAIN）: %s" % sorted(tabs)[:10])
 
         cols = [c[1] for c in cur.execute("PRAGMA table_info(%s)" % table)]
+        # 实际列名（2026-08 版）：c_birthyear / c_deathyear（非 c_birth_year）
         want = [c for c in ("c_personid", "c_name_chn", "c_name",
-                            "c_birth_year", "c_death_year", "c_index_year")
+                            "c_birthyear", "c_deathyear", "c_index_year",
+                            "c_female", "c_surname_chn", "c_mingzi_chn")
                 if c in cols]
         sel = ", ".join(want)
         try:
@@ -92,9 +97,12 @@ class CBDBAdapter(DataSource):
                 "id": d.get("c_personid"),
                 "name_chn": d.get("c_name_chn"),
                 "name": d.get("c_name"),
-                "birth": d.get("c_birth_year"),
-                "death": d.get("c_death_year"),
+                "surname": d.get("c_surname_chn"),
+                "given": d.get("c_mingzi_chn"),
+                "birth": d.get("c_birthyear"),
+                "death": d.get("c_deathyear"),
                 "index_year": d.get("c_index_year"),
+                "female": d.get("c_female"),
                 "source": self.SOURCE,
             })
         return out
@@ -111,7 +119,7 @@ def _cli():
         try:
             conn, db = _connect()
             cur = conn.cursor()
-            cur.execute("SELECT COUNT(*) FROM BIO_MAIN")
+            cur.execute("SELECT COUNT(*) FROM BIOG_MAIN")
             n = cur.fetchone()[0]
             cur.execute("SELECT COUNT(*) FROM sqlite_master WHERE type='table'")
             print("[cbdb] 库: %s" % db)
