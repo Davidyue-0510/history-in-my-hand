@@ -118,6 +118,7 @@ def unrar_all():
     if not rars:
         print("[chgis] 没有 .rar 文件。先 --all 下载。")
         return 1
+    failed = []
     for rar in rars:
         dest = os.path.join(EXTERNAL, rar[:-4])
         if os.path.isdir(dest) and os.listdir(dest):
@@ -125,9 +126,24 @@ def unrar_all():
             continue
         os.makedirs(dest, exist_ok=True)
         print("[chgis] 解压 %s → %s" % (rar, dest))
-        subprocess.run([exe, "x", "-y", "-o%s" % dest,
-                        os.path.join(EXTERNAL, rar)], capture_output=True)
-    print("[chgis] 解压完成。")
+        proc = subprocess.run([exe, "x", "-y", "-o%s" % dest,
+                               os.path.join(EXTERNAL, rar)],
+                              capture_output=True, text=True)
+        if proc.returncode != 0:
+            failed.append(rar)
+            print("[chgis] ✗ %s 解压失败（exit=%d）" % (rar, proc.returncode))
+            # 打印 7z 的报错尾部（找错误原因）
+            err = (proc.stderr or "")[-600:]
+            out = (proc.stdout or "")[-600:]
+            print("    stderr:", err.replace(chr(10), " | ")[:400])
+            print("    stdout:", out.replace(chr(10), " | ")[:400])
+    if failed:
+        print("[chgis] 解压完成，但有 %d 个失败：%s" % (len(failed), ", ".join(failed)))
+        print("[chgis] 处理建议：1) 若提示 CRC/损坏 → 用 --force 重下该文件再解压；")
+        print("[chgis]          2) 若 7z 版本旧 → 升级 7-Zip；")
+        print("[chgis]          3) 或直接用 WinRAR 手动解压对应 .rar 看具体报错。")
+    else:
+        print("[chgis] 全部解压完成。")
     return 0
 
 
@@ -137,6 +153,7 @@ def main():
     ap.add_argument("--all", action="store_true", help="批量下载全部")
     ap.add_argument("--names", help="只下名称含该关键字的项，如 --names 1911")
     ap.add_argument("--unrar", action="store_true", help="解压已下载的 .rar")
+    ap.add_argument("--force", action="store_true", help="强制重下（先删已存在文件）")
     args = ap.parse_args()
 
     if args.unrar:
@@ -169,9 +186,13 @@ def main():
         fname = re.sub(r'[\\/:*?"<>|]', "_", it["name"]) + ".rar"
         dest = os.path.join(EXTERNAL, fname)
         if os.path.exists(dest):
-            print("[chgis] 已存在，跳过：%s" % it["name"])
-            ok += 1
-            continue
+            if args.force:
+                print("[chgis] --force：删除重下 %s" % it["name"])
+                os.remove(dest)
+            else:
+                print("[chgis] 已存在，跳过：%s" % it["name"])
+                ok += 1
+                continue
         print("[chgis] [%d/%d] %s" % (idx + 1, len(targets), it["name"]))
         if download(it["url"], dest):
             ok += 1
