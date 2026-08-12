@@ -59,7 +59,7 @@ from collections import defaultdict
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(ROOT, 'data')
 
 # 受控词表 v0.22 起按语境分包（data/vocab/），加载一律经 vocab_loader。

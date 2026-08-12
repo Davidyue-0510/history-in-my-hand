@@ -5,7 +5,11 @@
 未来要接官方 CHGIS，只需把 fetch 内部换成下载+映射，本文件接口不变。
 """
 from .base import DataSource
-from ..geocode import geocode
+
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from ingestion.geocode import geocode  # noqa: E402
 
 
 class CHGISAdapter(DataSource):

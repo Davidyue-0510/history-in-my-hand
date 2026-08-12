@@ -7,8 +7,8 @@
   I2  所有冲突条目都能在断言里找到对应 id
   I3  每个切片至少 1 个 ground truth 断言（confidence >= 0.9, layer=record）
   I4  build.py 跑完后 demo/data.js 能加载
-  I5  tools/resonance.py 跑完后 data/resonance_report.json 含全部切片
-  I6  tools/lint.py 跑完后无 error
+  I5  tools/analysis/resonance.py 跑完后 data/resonance_report.json 含全部切片
+  I6  tools/ingestion/lint.py 跑完后无 error
   I7  vocabulary 自身合法：parties ⊆ party_bucket 值集
   I8  断言 id 在切片内唯一
   I9  events.json 里所有 subject 指向的 event:* 都能在断言里找到至少 1 条
@@ -24,7 +24,7 @@ import sys
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TOOLS = os.path.join(ROOT, 'tools')
 
 OK, FAIL = 0, 0
@@ -75,6 +75,7 @@ def main():
         for c in sc.get('events', {}).get('events', []) if isinstance(sc.get('events'), dict) else []:
             pass  # events 不是冲突表
     # 用 build_conflicts 重建
+    sys.path.insert(0, os.path.join(TOOLS, "ingestion"))
     sys.path.insert(0, TOOLS)
     import build
     for sn, sc in scenes.items():
@@ -103,11 +104,11 @@ def main():
         return subprocess.run([sys.executable] + args,
                               cwd=ROOT, capture_output=True, text=True,
                               errors='replace', env=env)
-    r = run(['tools/build.py'])
+    r = run(['tools/ingestion/build.py'])
     check('build.py', r.returncode == 0, (r.stderr or r.stdout)[-200:])
-    r = run(['tools/resonance.py'])
+    r = run(['tools/analysis/resonance.py'])
     check('resonance.py', r.returncode == 0, (r.stderr or r.stdout)[-200:])
-    r = run(['tools/lint.py'])
+    r = run(['tools/ingestion/lint.py'])
     # lint 的"无 error"输出形式取决于是否有 warning。我们只看 exit code + 不含错误断言两类。
     out = (r.stdout or '') + (r.stderr or '')
     no_error = r.returncode == 0
@@ -131,7 +132,7 @@ def main():
     # 骨架包（tang）今天没人用，但它一旦被引用就直接决定分桶；等到那时才发现
     # party_bucket 指向了未声明的 party，就又是一次「静默归错桶」。故现在就守。
     print('\nI7: 每个语境包自身合法')
-    sys.path.insert(0, os.path.join(ROOT, 'tools'))
+    sys.path.insert(0, os.path.join(ROOT, 'tools', 'ingestion'))
     import vocab_loader as VL
     packs = VL.list_packs()
     check('至少存在一个语境包', bool(packs), str(packs))

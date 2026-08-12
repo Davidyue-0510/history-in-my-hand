@@ -18,7 +18,7 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.dirname(HERE)
+ROOT = os.path.dirname(os.path.dirname(HERE))
 TB_PATH = os.path.join(ROOT, "data", "lunar_calendar.json")
 
 _WARNED = False  # 无数据时只警告一次（不骚扰每个查询）

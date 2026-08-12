@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """别名校正回归测试。验证已知的 LLM 拼写错误能被自动修复。"""
 import os, sys
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ingestion"))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import alias_resolver as AR
 

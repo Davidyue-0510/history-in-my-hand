@@ -27,11 +27,12 @@ import os
 import sys
 from collections import defaultdict
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # 受控词表 v0.22 起按语境分包（data/vocab/），加载经 tools/vocab_loader.py。
 # 这里的模块级常量取默认包，用于报告表头等「跨切片汇总」场合；
 # 具体某条断言归哪个桶，必须按它所属切片的包来判（见 bucket(party, scene)）。
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "ingestion"))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vocab_loader as VL  # noqa: E402
 

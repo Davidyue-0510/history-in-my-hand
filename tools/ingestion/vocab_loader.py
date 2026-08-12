@@ -43,7 +43,7 @@ lint.py 三处，萨尔浒共振度被静默算错。当时的解法是建 data/
 import json
 import os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(ROOT, "data")
 PACK_DIR = os.path.join(DATA, "vocab")
 REGISTRY = os.path.join(DATA, "scenes.json")

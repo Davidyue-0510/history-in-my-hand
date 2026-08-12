@@ -30,21 +30,27 @@ except Exception:
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STEPS = [
-    ("守门员 lint · 数据完整性",     ["tools/lint.py"]),
-    ("不变量回归 test",              ["tools/test_assertions.py"]),
-    ("年号换算 test",                ["tools/test_reign.py"]),
-    ("世界模型查询 test",            ["tools/test_world_query.py"]),
-    ("语境包 test",                  ["tools/test_vocab.py"]),
-    ("地形契约 test",                ["tools/test_terrain.py"]),
-    ("分片契约 test",                ["tools/test_sharding.py"]),
-    ("地名落点 test",                ["tools/test_geocode.py"]),
-    ("控制层契约 test",              ["tools/test_control.py"]),
-    ("农历转换 test",                ["tools/test_lunar.py"]),
-    ("别名校正 test",                ["tools/test_alias.py"]),
-    ("重算研究线索 leads",            ["tools/leads.py"]),
-    ("重编译 demo/data.js · build",  ["tools/build.py"]),
-    ("统计快照 stats",                ["tools/stats.py"]),
-    ("场景注册表一致性 check",         ["tools/check_scenes.py"]),
+    # ── 摄入与构建层 ──
+    ("守门员 lint · 数据完整性",     ["tools/ingestion/lint.py"]),
+    ("重算研究线索 leads",            ["tools/ingestion/leads.py"]),
+    ("重编译 demo/data.js · build",  ["tools/ingestion/build.py"]),
+    ("统计快照 stats",                ["tools/ingestion/stats.py"]),
+    ("场景注册表一致性 check",         ["tools/ingestion/check_scenes.py"]),
+    # ── 查询与分析层 ──
+    ("共振报告 resonance",            ["tools/analysis/resonance.py"]),
+    # ── 推演与模拟层 ──
+    ("推演不变量 test",               ["tools/tests/test_simulate.py"]),
+    # ── 测试层 ──
+    ("不变量回归 test",              ["tools/tests/test_assertions.py"]),
+    ("年号换算 test",                ["tools/tests/test_reign.py"]),
+    ("世界模型查询 test",            ["tools/tests/test_world_query.py"]),
+    ("语境包 test",                  ["tools/tests/test_vocab.py"]),
+    ("地形契约 test",                ["tools/tests/test_terrain.py"]),
+    ("分片契约 test",                ["tools/tests/test_sharding.py"]),
+    ("地名落点 test",                ["tools/tests/test_geocode.py"]),
+    ("控制层契约 test",              ["tools/tests/test_control.py"]),
+    ("农历转换 test",                ["tools/tests/test_lunar.py"]),
+    ("别名校正 test",                ["tools/tests/test_alias.py"]),
 ]
 
 

@@ -24,7 +24,7 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 GAZ_PATH = os.path.join(ROOT, "data", "geo", "gazetteer.json")
 
 # 通名后缀：去掉后「蔡州城」→「蔡州」、「广宁城」→「广宁」

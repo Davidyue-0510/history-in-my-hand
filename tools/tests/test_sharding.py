@@ -14,7 +14,7 @@ import os
 import re
 import sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SHELL = os.path.join(ROOT, "demo", "data.js")
 SLICES_DIR = os.path.join(ROOT, "demo", "slices")
 

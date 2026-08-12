@@ -23,7 +23,7 @@ import json
 import math
 import os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 GRID_FILE = os.path.join(ROOT, 'data', 'terrain', 'liaodong_grid.json')
 
 ARMY_FACTOR = 0.42       # 成建制部队相对单人徒步的速度折减
