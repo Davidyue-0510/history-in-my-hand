@@ -46,18 +46,33 @@ def _api(path):
     raise RuntimeError("DataVerse API 访问失败（已重试 %d 次）" % RETRIES)
 
 
+def _walk_dataverse(alias, depth=0):
+    """递归遍历 dataverse（含子 dataverse），返回全部 dataset 列表。"""
+    out = []
+    data = _api("dataverses/%s/contents" % alias)
+    for item in data.get("data", []) or []:
+        t = item.get("type", "")
+        if t == "dataset":
+            out.append(item)
+        elif t == "dataverse":
+            sub = item.get("alias")
+            if sub and sub != alias:
+                print("[chgis]   %s%s/（子仓库，递归）" % ("  " * depth, item.get("name")))
+                out.extend(_walk_dataverse(sub, depth + 1))
+    return out
+
+
 def list_datasets():
-    data = _api("dataverses/chgis_v6/contents")
-    items = data.get("data", [])
-    datasets = [d for d in items if d.get("type") == "dataset"]
-    print("[chgis] DataVerse /chgis_v6 共 %d 个数据集：" % len(datasets))
+    print("[chgis] 遍历 DataVerse /chgis_v6（含子仓库）…")
+    datasets = _walk_dataverse("chgis_v6")
+    print("[chgis] 共发现 %d 个数据集：" % len(datasets))
     for d in datasets:
         print("  - id=%s | %s" % (d.get("id"), d.get("name")))
     return datasets
 
 
 def dataset_files(ds_id):
-    data = _api("datasets/%s" % ds_id)
+    data = _api("datasets/%s/versions/latest" % ds_id)
     latest = data["data"]["latestVersion"]
     files = latest.get("files", [])
     out = []
