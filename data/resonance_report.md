@@ -65,7 +65,7 @@
 | keju | 3 | 3 | **0.000** | event:kj_1905（0.000） | scholarship 3 |
 | kunyang | 3 | 3 | **0.000** | event:ky_jz（0.000） | scholarship 3 |
 | liangshui | 2 | 2 | **0.000** | event:ls_780（0.000） | scholarship 2 |
-| 辽阳 | 53 | 2 | **0.412** | 辽阳陷落（1621）（0.491） | gap 3 / inference 1 / record 41 / scholarship 8 |
+| 辽阳 | 65 | 2 | **0.426** | 辽阳陷落（1621）（0.520） | gap 3 / inference 1 / record 51 / scholarship 10 |
 | lingqu | 2 | 2 | **0.000** | event:lq_214（0.000） | scholarship 2 |
 | little_ice | 5 | 5 | **0.000** | event:li_1580（0.000） | scholarship 5 |
 | lixue | 2 | 2 | **0.000** | event:lx_1175（0.000） | scholarship 2 |
@@ -75,16 +75,16 @@
 | maling | 3 | 3 | **0.000** | event:ml_jz（0.000） | scholarship 3 |
 | ming_fall | 3 | 3 | **0.000** | event:mf_1627（0.000） | scholarship 3 |
 | mobai | 3 | 3 | **0.000** | event:mb_chu（0.000） | scholarship 3 |
-| ningyuan | 31 | 4 | **0.319** | event:ningjin_dajie（0.333） | gap 2 / record 28 / scholarship 1 |
+| ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
 | poyanghu | 3 | 3 | **0.000** | event:py_chen（0.000） | scholarship 3 |
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
 | qin_unify | 6 | 6 | **0.000** | event:qn_221（0.000） | scholarship 6 |
 | qing_han | 3 | 3 | **0.000** | event:qh_1644（0.000） | scholarship 3 |
-| 萨尔浒 | 123 | 5 | **0.000** | 阿布达里岗（东路·刘綎）（0.000） | gap 7 / inference 6 / record 98 / scholarship 12 |
+| 萨尔浒 | 123 | 5 | **0.556** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 98 / scholarship 12 |
 | shangyang | 3 | 3 | **0.000** | event:sy_338（0.000） | scholarship 3 |
 | shaqiu | 2 | 2 | **0.000** | event:sq_210（0.000） | scholarship 2 |
 | shenkuo | 2 | 2 | **0.000** | event:sk_1072（0.000） | scholarship 2 |
-| shenyang | 50 | 6 | **0.401** | event:shenyang_relief（0.909） | gap 4 / inference 1 / record 43 / scholarship 2 |
+| shenyang | 62 | 6 | **0.387** | event:shenyang_relief（0.825） | gap 4 / inference 1 / record 55 / scholarship 2 |
 | song_he_jue | 3 | 3 | **0.000** | event:hj_1019（0.000） | scholarship 3 |
 | sui_daxing | 2 | 2 | **0.000** | event:dx_582（0.000） | scholarship 2 |
 | sui_mie_chen | 2 | 2 | **0.000** | event:sm_587（0.000） | scholarship 2 |
@@ -139,7 +139,6 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
-| 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bc_1578 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -175,7 +174,6 @@
 | event:dj_168 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_today | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 杜松渡浑河（西路） | 萨尔浒 | **0.000** | 0/3 | 0.20 | 0.00 | 6 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_relief | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -316,13 +314,10 @@
 | event:qn_225 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_228 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_230 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 萨尔浒主战场 | 萨尔浒 | **0.000** | 0/3 | 0.08 | 0.06 | 33 | 0 / 0 / 0 / 0 |
-| 尚间崖（北路·马林） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sk_1072 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 南路溃逃（李如柏） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_338 | shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -412,7 +407,8 @@
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |
 | event:yehe_kaiyuan_attack | yehe | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | 铁岭陷落（1619） | 铁岭 | **0.179** | 1/3 | 0.25 | 0.29 | 7 | 0 / 3 / 0 / 4 |
-| event:ningyuan_battle | ningyuan | **0.278** | 1/3 | 0.00 | 0.17 | 6 | 0 / 6 / 0 / 0 |
+| event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
+| event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
 | event:fushun_founded | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:fushun_mashi | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
@@ -427,11 +423,10 @@
 | event:jinzhou_founded | jinzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_fall | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_founded | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
-| event:ningjin_dajie | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
-| event:ningyuan_founded | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
 | event:ningyuan_wusangui | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:renchen_baofa | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 0 / 2 / 0 |
 | 萨尔浒之战（广义） | 开原 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
+| 尚间崖（北路·马林） | 萨尔浒 | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 1 / 0 / 0 / 2 |
 | event:shenyang_founded | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:shenyang_jurchen_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_qing_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
@@ -441,14 +436,19 @@
 | event:yehe_fall | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:gaizhou_fall | gaizhou | **0.444** | 2/3 | 0.00 | 0.33 | 3 | 1 / 2 / 0 / 0 |
-| 辽阳陷落（1621） | 辽阳 | **0.491** | 2/3 | 0.13 | 0.15 | 20 | 8 / 6 / 0 / 6 |
+| 辽阳陷落（1621） | 辽阳 | **0.520** | 2/3 | 0.13 | 0.10 | 29 | 8 / 6 / 0 / 15 |
+| 杜松渡浑河（西路） | 萨尔浒 | **0.533** | 2/3 | 0.20 | 0.00 | 6 | 1 / 2 / 0 / 3 |
+| 萨尔浒主战场 | 萨尔浒 | **0.578** | 2/3 | 0.08 | 0.06 | 33 | 11 / 0 / 12 / 10 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
+| 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
 | event:cefeng_heyi | imjin | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 0 |
+| event:ningjin_dajie | ningyuan | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:pyongyang_battle | imjin | **0.667** | 3/3 | 0.33 | 0.00 | 5 | 0 / 1 / 3 / 0 |
+| 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 3 | 1 / 1 / 0 / 1 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
 | event:guangning_fall | guangning | **0.785** | 3/3 | 0.08 | 0.15 | 20 | 2 / 2 / 1 / 15 |
 | 开铁之战（开原陷落） | 开原 | **0.818** | 3/3 | 0.00 | 0.18 | 11 | 4 / 2 / 1 / 4 |
-| event:shenyang_relief | shenyang | **0.909** | 3/3 | 0.00 | 0.09 | 22 | 11 / 5 / 2 / 4 |
+| event:shenyang_relief | shenyang | **0.825** | 3/3 | 0.12 | 0.06 | 32 | 11 / 5 / 2 / 14 |
 | event:jinzhou_songjin | jinzhou | **0.923** | 3/3 | 0.00 | 0.08 | 13 | 2 / 1 / 1 / 9 |
 
 ## 解读

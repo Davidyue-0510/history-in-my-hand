@@ -357,7 +357,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "何世贤",
    "role": "总兵",
    "note": "沈阳总兵, 1621 年浑河之战后金炮击身亡",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "chenjn",
@@ -460,7 +460,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "总兵（援沈阳）",
    "column": null,
    "note": "1621 与童仲揆同援沈阳，浑河之战战死",
-   "influence": 1,
+   "influence": 2,
    "_global_id": "chenjn",
    "_other_scenes": [
     "liaoyang"
@@ -1485,9 +1485,312 @@ window.SANDBOX_SLICES["shenyang"] = {
    "note": "《明通鉴》卷081，贺世贤拒降死战之语。",
    "_party": "二手综述",
    "_faction": null
+  },
+  {
+   "id": "SH001",
+   "subject": "event:shenyang_relief",
+   "predicate": "集兵",
+   "value_text": "议三路出师，复清河、抚顺",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "时经略袁应泰议三路出师，复清河、抚顺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "袁应泰计划未行而清兵已至",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH002",
+   "subject": "event:shenyang_relief",
+   "predicate": "集兵",
+   "value_text": "分兵乘城",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "总兵贺世贤、尤世功等分兵乘城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH003",
+   "subject": "event:shenyang_relief",
+   "predicate": "防御工事",
+   "value_text": "掘壕堑，树栅筑墙，环列枪炮",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "世贤等于城外掘壕堑，树栅筑墙，环列枪炮以拒",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH004",
+   "subject": "person:he_shixian",
+   "predicate": "阵亡",
+   "value_text": "身被十四矢，中矢坠马而死",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "身被十四矢……中矢坠马而死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "贺世贤出城逆战，且战且却",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH005",
+   "subject": "event:shenyang_relief",
+   "predicate": "城破",
+   "value_text": "拔沈阳城",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "大清兵遂树云梯，拔沈阳城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH006",
+   "subject": "event:shenyang_relief",
+   "predicate": "兵力",
+   "value_text": "城外兵七万人皆溃",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "shenyang_cheng",
+   "source": "mingtongjian",
+   "quote": "城外兵七万人皆溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "明军总数，含援军",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH007",
+   "subject": "person:chence",
+   "predicate": "阵亡",
+   "value_text": "兵尽溺，策及参将张名世死之",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "hunhe_bridge",
+   "source": "mingtongjian",
+   "quote": "退至浑河，兵尽溺，策及参将张名世死之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "陈策统四川步兵二万渡浑河来援",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH008",
+   "subject": "event:shenyang_relief",
+   "predicate": "兵力",
+   "value_text": "领骑兵三万来援",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "baita_pu",
+   "source": "mingtongjian",
+   "quote": "总兵李秉诚、朱万良、姜弼领骑兵三万来援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH009",
+   "subject": "event:shenyang_relief",
+   "predicate": "追击",
+   "value_text": "追击四十里，斩首三千级",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "baita_pu",
+   "source": "mingtongjian",
+   "quote": "同追击四十里，斩首三千级而还",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "清军追击明援军",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH010",
+   "subject": "event:shenyang_relief",
+   "predicate": "兵力",
+   "value_text": "帅浙兵三千营于桥南",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "hunhe_bridge",
+   "source": "mingtongjian",
+   "quote": "戚金、五南都司张名世等，帅浙兵三千营于桥南",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "浙兵营",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH011",
+   "subject": "event:shenyang_relief",
+   "predicate": "阵亡",
+   "value_text": "力尽矢竭，挥刀杀十七人而死",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "hunhe_bridge",
+   "source": "mingtongjian",
+   "quote": "仲贵败奔，复还斗，力尽矢竭，挥刀杀十七人而死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "童仲揆战死",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SH012",
+   "subject": "event:shenyang_relief",
+   "predicate": "评价",
+   "value_text": "为辽左用兵以来第一血战",
+   "time": {
+    "era_text": "天启元年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "hunhe_bridge",
+   "source": "mingtongjian",
+   "quote": "为辽左用兵以来第一血战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "明方史官评价",
+   "_party": "二手综述",
+   "_faction": null
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "id": "cf:event:shenyang_relief|集兵",
+   "subject": "event:shenyang_relief",
+   "predicate": "集兵",
+   "kind": "record_vs_record",
+   "count": 3,
+   "spread": null,
+   "assertion_ids": [
+    "SX001_M2",
+    "SH001",
+    "SH002"
+   ]
+  },
+  {
+   "id": "cf:event:shenyang_relief|城破",
+   "subject": "event:shenyang_relief",
+   "predicate": "城破",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX004_M2",
+    "SH005"
+   ]
+  },
+  {
+   "id": "cf:event:shenyang_relief|兵力",
+   "subject": "event:shenyang_relief",
+   "predicate": "兵力",
+   "kind": "record_vs_record",
+   "count": 3,
+   "spread": null,
+   "assertion_ids": [
+    "SH006",
+    "SH008",
+    "SH010"
+   ]
+  }
+ ],
  "gaps": [
   "S021",
   "S022",

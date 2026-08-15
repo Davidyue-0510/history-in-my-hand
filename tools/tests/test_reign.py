@@ -80,5 +80,12 @@ check("R22 dynasty_at(755) 含 唐", "唐" in R.dynasty_at(755), True)
 check("R23 dynasty_at(1271) 含 元", "元" in R.dynasty_at(1271), True)
 check("R24 dynasty_at(1000) 含 北宋", "北宋" in R.dynasty_at(1000), True)
 
+# —— LLM 抽取年份可能随机输出繁体年号，归一化须容错（ERAS 以简化年号为单一真值）——
+check("R25 天啟六年正月(繁体)->1626", R.normalize_year("天啟六年正月"), 1626)
+check("R26 萬曆四十七年(繁体)->1619", R.normalize_year("萬曆四十七年"), 1619)
+check("R27 崇禎十七年(繁体)->1644", R.normalize_year("崇禎十七年"), 1644)
+check("R28 順治元年(繁体)->1644", R.normalize_year("順治元年"), 1644)
+check("R29 天啟元年三月(繁体)->1621", R.normalize_year("天啟元年三月"), 1621)
+
 print("\nreign_era: %d ok, %d fail" % (OK, FAIL))
 sys.exit(1 if FAIL else 0)

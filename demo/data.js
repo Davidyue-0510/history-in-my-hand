@@ -7274,7 +7274,7 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "sarhu.html",
    "primary_place": "hetuala",
-   "vocab_pack": "inline:sarhu",
+   "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "counts": {
@@ -7380,12 +7380,12 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 8,
     "place": 12,
-    "person": 12,
-    "assert": 53,
-    "conflict": 3,
+    "person": 13,
+    "assert": 65,
+    "conflict": 4,
     "gap": 3,
-    "record": 41,
-    "scholarship": 8,
+    "record": 51,
+    "scholarship": 10,
     "inference": 1
    }
   },
@@ -7406,10 +7406,10 @@ window.SANDBOX_DATA = {
     "src": 10,
     "place": 13,
     "person": 15,
-    "assert": 50,
-    "conflict": 0,
+    "assert": 62,
+    "conflict": 3,
     "gap": 4,
-    "record": 43,
+    "record": 55,
     "scholarship": 2,
     "inference": 1
    }
@@ -7606,10 +7606,10 @@ window.SANDBOX_DATA = {
     "src": 5,
     "place": 4,
     "person": 6,
-    "assert": 31,
-    "conflict": 2,
+    "assert": 43,
+    "conflict": 3,
     "gap": 2,
-    "record": 28,
+    "record": 40,
     "scholarship": 1,
     "inference": 0
    }
@@ -12413,25 +12413,25 @@ window.SANDBOX_DATA = {
    {
     "scene": "liaoyang",
     "name": "辽阳",
-    "total": 53,
+    "total": 65,
     "layers": {
-     "record": 41,
-     "scholarship": 8,
+     "record": 51,
+     "scholarship": 10,
      "gap": 3,
      "inference": 1
     },
     "party_counts": {
      "清方": 27,
      "明方": 12,
-     "综述考订": 14
+     "综述考订": 26
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 10
     },
     "event_count": 2,
-    "avg_resonance": 0.412,
+    "avg_resonance": 0.426,
     "best_event": "辽阳陷落（1621）",
-    "best_resonance": 0.491
+    "best_resonance": 0.52
    },
    {
     "scene": "lingqu",
@@ -12580,22 +12580,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "ningyuan",
     "name": "ningyuan",
-    "total": 31,
+    "total": 43,
     "layers": {
-     "record": 28,
+     "record": 40,
      "scholarship": 1,
      "gap": 2
     },
     "party_counts": {
-     "清方": 27,
+     "清方": 39,
      "明方": 3,
      "综述考订": 1
     },
     "faction_counts": {},
     "event_count": 4,
-    "avg_resonance": 0.319,
+    "avg_resonance": 0.39,
     "best_event": "event:ningjin_dajie",
-    "best_resonance": 0.333
+    "best_resonance": 0.667
    },
    {
     "scene": "poyanghu",
@@ -12674,17 +12674,18 @@ window.SANDBOX_DATA = {
      "gap": 7
     },
     "party_counts": {
-     "明": 52,
-     "后金": 24,
-     "第三方": 47
+     "清方": 60,
+     "综述考订": 30,
+     "朝鲜": 17,
+     "明方": 16
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 8
     },
     "event_count": 5,
-    "avg_resonance": 0.0,
+    "avg_resonance": 0.556,
     "best_event": "阿布达里岗（东路·刘綎）",
-    "best_resonance": 0.0
+    "best_resonance": 0.667
    },
    {
     "scene": "shangyang",
@@ -12737,9 +12738,9 @@ window.SANDBOX_DATA = {
    {
     "scene": "shenyang",
     "name": "shenyang",
-    "total": 50,
+    "total": 62,
     "layers": {
-     "record": 43,
+     "record": 55,
      "scholarship": 2,
      "gap": 4,
      "inference": 1
@@ -12748,15 +12749,15 @@ window.SANDBOX_DATA = {
      "明方": 18,
      "清方": 25,
      "朝鲜": 3,
-     "综述考订": 4
+     "综述考订": 16
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 12
     },
     "event_count": 6,
-    "avg_resonance": 0.401,
+    "avg_resonance": 0.387,
     "best_event": "event:shenyang_relief",
-    "best_resonance": 0.909
+    "best_resonance": 0.825
    },
    {
     "scene": "song_he_jue",
@@ -13439,37 +13440,6 @@ window.SANDBOX_DATA = {
    }
   },
   "events": [
-   {
-    "subject": "event:abudaligang",
-    "name": "阿布达里岗（东路·刘綎）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 2,
-    "gap_count": 0,
-    "coverage": "0/3",
-    "coverage_frac": 0.0,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.0,
-    "party_counts": {
-     "明方": 0,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
    {
     "subject": "event:bc_1281",
     "name": "event:bc_1281",
@@ -14540,37 +14510,6 @@ window.SANDBOX_DATA = {
     "coverage": "0/3",
     "coverage_frac": 0.0,
     "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.0,
-    "party_counts": {
-     "明方": 0,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:dusong_cross",
-    "name": "杜松渡浑河（西路）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 6,
-    "gap_count": 0,
-    "coverage": "0/3",
-    "coverage_frac": 0.0,
-    "divergence": 0.2,
     "gap_rate": 0.0,
     "resonance": 0.0,
     "party_counts": {
@@ -19044,68 +18983,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:sarhu_battle",
-    "name": "萨尔浒主战场",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 33,
-    "gap_count": 2,
-    "coverage": "0/3",
-    "coverage_frac": 0.0,
-    "divergence": 0.077,
-    "gap_rate": 0.061,
-    "resonance": 0.0,
-    "party_counts": {
-     "明方": 0,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:shangjianya",
-    "name": "尚间崖（北路·马林）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 3,
-    "gap_count": 0,
-    "coverage": "0/3",
-    "coverage_frac": 0.0,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.0,
-    "party_counts": {
-     "明方": 0,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
     "subject": "event:sk_1072",
     "name": "event:sk_1072",
     "scenes": [
@@ -19208,37 +19085,6 @@ window.SANDBOX_DATA = {
      "sui_mie_chen"
     ],
     "total": 1,
-    "gap_count": 0,
-    "coverage": "0/3",
-    "coverage_frac": 0.0,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.0,
-    "party_counts": {
-     "明方": 0,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:south_retreat",
-    "name": "南路溃逃（李如柏）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 3,
     "gap_count": 0,
     "coverage": "0/3",
     "coverage_frac": 0.0,
@@ -22155,6 +22001,78 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:ningyuan_founded",
+    "name": "event:ningyuan_founded",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 5,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.25,
+    "gap_rate": 0.0,
+    "resonance": 0.25,
+    "party_counts": {
+     "明方": 0,
+     "清方": 5,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "N001",
+       "predicate": "建置年",
+       "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX004_M1",
+       "predicate": "筑城",
+       "value_text": "高三丈二尺，雉高六尺，址广三丈，上二丈四尺",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "SX005_M1",
+       "predicate": "竣工",
+       "value_text": "明年迄工，遂为关外重镇",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY008",
+       "predicate": "筑城",
+       "value_text": "高三丈二尺，址廣三丈",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY009",
+       "predicate": "完工",
+       "value_text": "明年迄工，遂為關外重鎮",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:ningyuan_battle",
     "name": "event:ningyuan_battle",
     "scenes": [
@@ -22163,16 +22081,16 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "ningyuan"
     ],
-    "total": 6,
+    "total": 13,
     "gap_count": 1,
     "coverage": "1/3",
     "coverage_frac": 0.333,
     "divergence": 0.0,
-    "gap_rate": 0.167,
-    "resonance": 0.278,
+    "gap_rate": 0.077,
+    "resonance": 0.308,
     "party_counts": {
      "明方": 0,
-     "清方": 6,
+     "清方": 13,
      "朝鲜": 0,
      "日本方": 0,
      "综述考订": 0
@@ -22224,6 +22142,62 @@ window.SANDBOX_DATA = {
        "id": "SX012_M1",
        "predicate": "擢升",
        "value_text": "擢崇焕右佥都御史，玺书奖励",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY001",
+       "predicate": "集兵",
+       "value_text": "集將士誓死守",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY002",
+       "predicate": "守城策略",
+       "value_text": "焚城外民居，清野以待",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY003",
+       "predicate": "使用火器",
+       "value_text": "發西洋巨砲，傷城外軍",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY004",
+       "predicate": "结果",
+       "value_text": "圍遂解",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY005",
+       "predicate": "伤亡",
+       "value_text": "啟倧以然砲死",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY006",
+       "predicate": "后金分兵略地",
+       "value_text": "分兵數萬略覺華島",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      },
+      {
+       "id": "NY012",
+       "predicate": "明军兵力",
+       "value_text": "萬二千",
        "source": "mingshi",
        "layer": "record",
        "scene": "ningyuan"
@@ -22888,102 +22862,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:ningjin_dajie",
-    "name": "event:ningjin_dajie",
-    "scenes": [
-     "ningyuan"
-    ],
-    "scene_names": [
-     "ningyuan"
-    ],
-    "total": 1,
-    "gap_count": 0,
-    "coverage": "1/3",
-    "coverage_frac": 0.333,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.333,
-    "party_counts": {
-     "明方": 1,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "N003",
-       "predicate": "宁锦大捷",
-       "value_text": "天启七年 (1627), 皇太极攻宁远、锦州不利, 明军凭城固守获胜, 清退",
-       "source": "ming_xizong_shilu",
-       "layer": "record",
-       "scene": "ningyuan"
-      }
-     ],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:ningyuan_founded",
-    "name": "event:ningyuan_founded",
-    "scenes": [
-     "ningyuan"
-    ],
-    "scene_names": [
-     "ningyuan"
-    ],
-    "total": 3,
-    "gap_count": 0,
-    "coverage": "1/3",
-    "coverage_frac": 0.333,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.333,
-    "party_counts": {
-     "明方": 0,
-     "清方": 3,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [
-      {
-       "id": "N001",
-       "predicate": "建置年",
-       "value_text": "宣德三年 (1428) 始置宁远卫, 隶辽东都司",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "ningyuan"
-      },
-      {
-       "id": "SX004_M1",
-       "predicate": "筑城",
-       "value_text": "高三丈二尺，雉高六尺，址广三丈，上二丈四尺",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "ningyuan"
-      },
-      {
-       "id": "SX005_M1",
-       "predicate": "竣工",
-       "value_text": "明年迄工，遂为关外重镇",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "ningyuan"
-      }
-     ],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
     "subject": "event:ningyuan_wusangui",
     "name": "event:ningyuan_wusangui",
     "scenes": [
@@ -23109,6 +22987,63 @@ window.SANDBOX_DATA = {
      ],
      "日本方": [],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shangjianya",
+    "name": "尚间崖（北路·马林）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "1/3",
+    "coverage_frac": 0.333,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.333,
+    "party_counts": {
+     "明方": 1,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 2
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A050",
+       "predicate": "发生时刻",
+       "value_text": "三月初二",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "MT_S11",
+       "predicate": "败绩",
+       "value_text": "林兵大溃",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S12",
+       "predicate": "阵亡",
+       "value_text": "宗颜全军尽没",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ]
     }
    },
    {
@@ -23505,19 +23440,19 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "辽阳"
     ],
-    "total": 20,
+    "total": 29,
     "gap_count": 3,
     "coverage": "2/3",
     "coverage_frac": 0.667,
-    "divergence": 0.133,
-    "gap_rate": 0.15,
-    "resonance": 0.491,
+    "divergence": 0.13,
+    "gap_rate": 0.103,
+    "resonance": 0.52,
     "party_counts": {
      "明方": 8,
      "清方": 6,
      "朝鲜": 0,
      "日本方": 0,
-     "综述考订": 6
+     "综述考订": 15
     },
     "parties": {
      "明方": [
@@ -23686,6 +23621,458 @@ window.SANDBOX_DATA = {
        "source": "mingtongjian",
        "layer": "record",
        "scene": "liaoyang"
+      },
+      {
+       "id": "LY001",
+       "predicate": "爆发",
+       "value_text": "大清兵乘驻长驱，规取辽阳",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY002",
+       "predicate": "守军兵力",
+       "value_text": "总兵李怀信等率兵五万出城",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY003",
+       "predicate": "战斗结果",
+       "value_text": "明军大乱奔溃，大兵追击六十里",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY004",
+       "predicate": "攻城",
+       "value_text": "大清兵掘城西闸泄濠水，分兵塞城东水门",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY005",
+       "predicate": "城破",
+       "value_text": "大清兵自西门入，城中大乱",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY008",
+       "predicate": "战后投降",
+       "value_text": "辽东三河等五十寨及河东大小七十余城皆降",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY009",
+       "predicate": "阵亡将领",
+       "value_text": "梁仲善、朱万良、杨宗业父子等战死",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY011",
+       "predicate": "阵亡时间考异",
+       "value_text": "梁仲善、朱万良等阵亡于克城前一日",
+       "source": "mingtongjian",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      },
+      {
+       "id": "LY012",
+       "predicate": "阵亡名单考异",
+       "value_text": "《三编》遗去朱万良及杨宗业父子之名",
+       "source": "mingtongjian",
+       "layer": "scholarship",
+       "scene": "liaoyang"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:dusong_cross",
+    "name": "杜松渡浑河（西路）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 6,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.2,
+    "gap_rate": 0.0,
+    "resonance": 0.533,
+    "party_counts": {
+     "明方": 1,
+     "清方": 2,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 3
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A041",
+       "predicate": "渡浑河",
+       "value_text": "二月廿九日出抚顺关",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [
+      {
+       "id": "A042",
+       "predicate": "渡河损失原因",
+       "value_text": "贪功轻进，不待火器辎重，涉水人马漂没",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A043",
+       "predicate": "渡河损失原因",
+       "value_text": "后金于上游筑坝蓄水，明军半渡而决之",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "MT_S08",
+       "predicate": "渡河",
+       "value_text": "先渡浑河",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S09",
+       "predicate": "伏击",
+       "value_text": "精骑尽伏谷口",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S10",
+       "predicate": "阵亡",
+       "value_text": "松与赵梦麟、王宣皆殁于阵",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:sarhu_battle",
+    "name": "萨尔浒主战场",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 33,
+    "gap_count": 2,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.077,
+    "gap_rate": 0.061,
+    "resonance": 0.578,
+    "party_counts": {
+     "明方": 11,
+     "清方": 0,
+     "朝鲜": 12,
+     "日本方": 0,
+     "综述考订": 10
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A040",
+       "predicate": "发生时刻",
+       "value_text": "三月初一",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX001_M3",
+       "predicate": "兵力",
+       "value_text": "主客出塞官军共八万八千五百五十余员名",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX002_M3",
+       "predicate": "阵亡",
+       "value_text": "阵亡军丁四万五千八百七十余名",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX003_M3",
+       "predicate": "阵亡",
+       "value_text": "阵亡道镇副协参游都司通判守备中军千把总等官共三百一十余员名",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX004_M3",
+       "predicate": "阵亡",
+       "value_text": "阵失马骡驼共二万八千六百余匹头只",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX005_M3",
+       "predicate": "兵力",
+       "value_text": "阵回见在并招集官军共四万二千三百六十余员名",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX006_M3",
+       "predicate": "兵力",
+       "value_text": "奴酋精兵约六万余",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX008_M3",
+       "predicate": "集兵",
+       "value_text": "分派数路，不免气势单薄",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX009_M3",
+       "predicate": "出击路线",
+       "value_text": "四路进兵，期会赫图阿拉",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX010_M3",
+       "predicate": "战略",
+       "value_text": "凭尔几路来，我只一路去",
+       "source": "sanchaoliao_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX012_M3",
+       "predicate": "兵力",
+       "value_text": "号称四十七万 vs 实录二十万 vs 实数八万八千",
+       "source": "sanchaoliao_shilu",
+       "layer": "gap",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [],
+     "朝鲜": [
+      {
+       "id": "SX001_M2",
+       "predicate": "参战兵力",
+       "value_text": "朝鲜三营兵马一万三千人",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX002_M2",
+       "predicate": "东路明军兵力",
+       "value_text": "宽田一路主客官兵二万四千余人",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX003_M2",
+       "predicate": "东路明军实际兵力",
+       "value_text": "不过万余",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX004_M2",
+       "predicate": "东路明军装备",
+       "value_text": "器械龃龉，无大炮大器",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX005_M2",
+       "predicate": "东路明军孤军",
+       "value_text": "东路兵甚孤，刘綎与杨镐不和",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX006_M2",
+       "predicate": "深河之战",
+       "value_text": "朝鲜军与后金军交战，中死者殆半",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX007_M2",
+       "predicate": "战役结果",
+       "value_text": "天朝大兵及朝鲜三营兵初四日败绩于深河",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX008_M2",
+       "predicate": "刘綎阵亡",
+       "value_text": "都督坐于火药包上放火自杀",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX009_M2",
+       "predicate": "金应河战死",
+       "value_text": "金应河独依大树，以三大弓迭射，被称依柳将",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX010_M2",
+       "predicate": "朝鲜军投降",
+       "value_text": "姜弘立、金景瑞率三营兵降后金",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX011_M2",
+       "predicate": "杜松败亡",
+       "value_text": "杜松贪功轻进，全军败没",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX012_M2",
+       "predicate": "四路败绩",
+       "value_text": "四路俱败绩",
+       "source": "guanghaijun_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "A091",
+       "predicate": "天象",
+       "value_text": "三月初一辽东日出约在卯时初，晨间河谷多雾",
+       "source": "modern",
+       "layer": "inference",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A092",
+       "predicate": "史料缺口",
+       "value_text": "杜松部车营与火器的具体编制、数量、损失情况，现存史料均无记载",
+       "source": "modern",
+       "layer": "gap",
+       "scene": "sarhu"
+      },
+      {
+       "id": "A044",
+       "predicate": "胜负性质",
+       "value_text": "非以少胜多，乃逐次以众击寡",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "sarhu"
+      },
+      {
+       "id": "SX011_M3",
+       "predicate": "兵力",
+       "value_text": "明军实数约八万八千",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S01",
+       "predicate": "明军四路部署",
+       "value_text": "杨镐分兵四道：杜松督六万由抚顺出西路，马林督四万出开原会叶赫兵二万（北路），李如柏督六万出鸦鹘关趋清河（南路），刘綎督四万会朝鲜兵二万入宽甸口（东路），期二十一日后分道出塞，会师二道关。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S02",
+       "predicate": "杨镐结局",
+       "value_text": "开原、铁岭相继失陷后，言官交章弹劾杨镐，杨镐下诏狱论死。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S03",
+       "predicate": "战后余波·叶赫",
+       "value_text": "萨尔浒战后，后金以叶赫助兵为由攻灭叶赫（北关）。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S04",
+       "predicate": "分兵四道",
+       "value_text": "镐议分兵四道",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S14",
+       "predicate": "结果",
+       "value_text": "四路败三路",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      },
+      {
+       "id": "MT_S15",
+       "predicate": "兵力对比",
+       "value_text": "明军约十六万，后金约六万",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "sarhu"
       }
      ]
     }
@@ -23852,6 +24239,55 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:abudaligang",
+    "name": "阿布达里岗（东路·刘綎）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 0,
+     "清方": 1,
+     "朝鲜": 1,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [
+      {
+       "id": "A061",
+       "predicate": "致败关键",
+       "value_text": "后金持杜松令箭伪为明使，绐刘綎速进",
+       "source": "qing_taizu_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "朝鲜": [
+      {
+       "id": "A060",
+       "predicate": "发生时刻",
+       "value_text": "三月初四",
+       "source": "zhazhong_rilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:cefeng_heyi",
     "name": "event:cefeng_heyi",
     "scenes": [
@@ -23897,6 +24333,55 @@ window.SANDBOX_DATA = {
        "scene": "imjin"
       }
      ],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ningjin_dajie",
+    "name": "event:ningjin_dajie",
+    "scenes": [
+     "ningyuan"
+    ],
+    "scene_names": [
+     "ningyuan"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 1,
+     "清方": 1,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "N003",
+       "predicate": "宁锦大捷",
+       "value_text": "天启七年 (1627), 皇太极攻宁远、锦州不利, 明军凭城固守获胜, 清退",
+       "source": "ming_xizong_shilu",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "清方": [
+      {
+       "id": "NY011",
+       "predicate": "背景",
+       "value_text": "高第撤錦州等城守具",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "ningyuan"
+      }
+     ],
+     "朝鲜": [],
+     "日本方": [],
      "综述考订": []
     }
    },
@@ -23972,6 +24457,64 @@ window.SANDBOX_DATA = {
       }
      ],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:south_retreat",
+    "name": "南路溃逃（李如柏）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "2/3",
+    "coverage_frac": 0.667,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.667,
+    "party_counts": {
+     "明方": 1,
+     "清方": 1,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [
+      {
+       "id": "A070",
+       "predicate": "发生时刻",
+       "value_text": "三月初五",
+       "source": "ming_shenzong_shilu",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "清方": [
+      {
+       "id": "A071",
+       "predicate": "撤退损失",
+       "value_text": "自相蹂践死者千余人",
+       "source": "mingshi",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "MT_S13",
+       "predicate": "撤军",
+       "value_text": "如柏得檄还",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "sarhu"
+      }
+     ]
     }
    },
    {
@@ -24367,19 +24910,19 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "shenyang"
     ],
-    "total": 22,
+    "total": 32,
     "gap_count": 2,
     "coverage": "3/3",
     "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.091,
-    "resonance": 0.909,
+    "divergence": 0.12,
+    "gap_rate": 0.062,
+    "resonance": 0.825,
     "party_counts": {
      "明方": 11,
      "清方": 5,
      "朝鲜": 2,
      "日本方": 0,
-     "综述考订": 4
+     "综述考订": 14
     },
     "parties": {
      "明方": [
@@ -24562,6 +25105,86 @@ window.SANDBOX_DATA = {
        "id": "MT_SY02",
        "predicate": "贺世贤死守语",
        "value_text": "或劝世贤走辽阳，曰：「吾为大将，不能存城，何面目见袁经略乎！」挥铁鞭驰突围中，中矢坠马而死。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH001",
+       "predicate": "集兵",
+       "value_text": "议三路出师，复清河、抚顺",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH002",
+       "predicate": "集兵",
+       "value_text": "分兵乘城",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH003",
+       "predicate": "防御工事",
+       "value_text": "掘壕堑，树栅筑墙，环列枪炮",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH005",
+       "predicate": "城破",
+       "value_text": "拔沈阳城",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH006",
+       "predicate": "兵力",
+       "value_text": "城外兵七万人皆溃",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH008",
+       "predicate": "兵力",
+       "value_text": "领骑兵三万来援",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH009",
+       "predicate": "追击",
+       "value_text": "追击四十里，斩首三千级",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH010",
+       "predicate": "兵力",
+       "value_text": "帅浙兵三千营于桥南",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH011",
+       "predicate": "阵亡",
+       "value_text": "力尽矢竭，挥刀杀十七人而死",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "shenyang"
+      },
+      {
+       "id": "SH012",
+       "predicate": "评价",
+       "value_text": "为辽左用兵以来第一血战",
        "source": "mingtongjian",
        "layer": "record",
        "scene": "shenyang"

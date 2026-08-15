@@ -364,7 +364,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任",
-   "influence": 15,
+   "influence": 16,
    "_global_id": "yuan_yingtai",
    "_other_scenes": [
     "shenyang"
@@ -417,7 +417,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role_hint": "巡按辽东御史",
    "column": null,
    "note": "上疏论辽阳围急，辽阳陷后殉节",
-   "influence": 0,
+   "influence": 1,
    "_global_id": "zhangquan",
    "_other_scenes": [
     "shenyang"
@@ -435,6 +435,14 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "_other_scenes": [
     "shenyang"
    ]
+  },
+  {
+   "id": "zhangshengwu",
+   "name": "张绳武",
+   "role": "四川佥司（武举）",
+   "side": "ming",
+   "note": "本姓陈，一名神武，新建人。1621 辽阳急，率亲丁二百余赴援，至首山孤军无援战没",
+   "influence": 1
   }
  ],
  "assertions": [
@@ -1489,6 +1497,270 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "note": "《明通鉴》卷081，辽阳失陷之连锁震荡。",
    "_party": "二手综述",
    "_faction": null
+  },
+  {
+   "id": "LY001",
+   "subject": "event:liaoyang_fall",
+   "predicate": "爆发",
+   "value_text": "大清兵乘驻长驱，规取辽阳",
+   "time": {
+    "era_text": "天命六年三月庚申",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "庚申，大清兵乘驻长驱，规取辽阳。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "明方视角记录战役开始。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY002",
+   "subject": "event:liaoyang_fall",
+   "predicate": "守军兵力",
+   "value_text": "总兵李怀信等率兵五万出城",
+   "time": {
+    "era_text": "天命六年三月庚申",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "总兵李怀信等率兵五万出城，五里结营",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "明军出城迎战兵力。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY003",
+   "subject": "event:liaoyang_fall",
+   "predicate": "战斗结果",
+   "value_text": "明军大乱奔溃，大兵追击六十里",
+   "time": {
+    "era_text": "天命六年三月庚申",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "遂大乱，奔溃。大兵追击六十里。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "明方记录野战失利。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY004",
+   "subject": "event:liaoyang_fall",
+   "predicate": "攻城",
+   "value_text": "大清兵掘城西闸泄濠水，分兵塞城东水门",
+   "time": {
+    "era_text": "天命六年三月辛酉",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "辛酉，大清兵掘城西闸以泄濠水，分兵塞城东水门",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "后金军攻城战术。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY005",
+   "subject": "event:liaoyang_fall",
+   "predicate": "城破",
+   "value_text": "大清兵自西门入，城中大乱",
+   "time": {
+    "era_text": "天命六年三月壬戌",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "薄暮，谯楼火，大清兵自西门入，城中大乱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "明方记录城破时间与路径。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY006",
+   "subject": "person:yuan_yingtai",
+   "predicate": "阵亡",
+   "value_text": "应泰遂佩剑印自缢死",
+   "time": {
+    "era_text": "天命六年三月壬戌",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "应泰遂佩剑印自缢死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "经略袁应泰自杀殉城。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY007",
+   "subject": "person:zhangquan",
+   "predicate": "被俘不屈",
+   "value_text": "铨被执不屈，引颈待刃，后自经死",
+   "time": {
+    "era_text": "天命六年三月壬戌",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "铨被执不屈，引颈待刃，太祖命赐死，以遂其志。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "巡按御史张铨不屈被杀。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY008",
+   "subject": "event:liaoyang_fall",
+   "predicate": "战后投降",
+   "value_text": "辽东三河等五十寨及河东大小七十余城皆降",
+   "time": {
+    "era_text": "天命六年三月壬戌",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "辽东之三河等五十寨及河东大小七十余城，皆望风降。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "辽阳失陷后，辽东地区望风归降。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY009",
+   "subject": "event:liaoyang_fall",
+   "predicate": "阵亡将领",
+   "value_text": "梁仲善、朱万良、杨宗业父子等战死",
+   "time": {
+    "era_text": "天命六年三月辛酉",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "总兵宫梁仲善、朱万良及援辽之总兵它杨宗业父子皆死之。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "明方记录主要阵亡将领。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY010",
+   "subject": "person:zhangshengwu",
+   "predicate": "阵亡",
+   "value_text": "绳武率亲丁二百余驰援，孤军无援战没",
+   "time": {
+    "era_text": "天命六年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "行至辽河，遇逃卒十馀万，绳武以忠义激其帅，欲与还战，帅不从，乃独帅所部渡河，抵首山，去辽阳十七里，而军士不食已一日。遇大清兵，疾呼奋击，孤军无援，遂战没。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "张绳武（陈绳武）率孤军赴援战死。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY011",
+   "subject": "event:liaoyang_fall",
+   "predicate": "阵亡时间考异",
+   "value_text": "梁仲善、朱万良等阵亡于克城前一日",
+   "time": {
+    "era_text": "天命六年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "据此，则仲善、万良及宗业父子皆阵亡于克辽阳之前一日。",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "《考异》根据《明史》与《殉节录》修正《三编》记载。",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "LY012",
+   "subject": "event:liaoyang_fall",
+   "predicate": "阵亡名单考异",
+   "value_text": "《三编》遗去朱万良及杨宗业父子之名",
+   "time": {
+    "era_text": "天命六年三月",
+    "start": "1621-01-01",
+    "end": "1621-12-31",
+    "gregorian_year": 1621
+   },
+   "place": "liaoyang_cheng",
+   "source": "mingtongjian",
+   "quote": "而《三编》、《辑览》所载，乃遗去万良及宗业父子之名，今据《明史·单仲揆传》及《殉节录》增入",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "《考异》指出《三编》遗漏，并据他书增补。",
+   "_party": "二手综述",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -1509,11 +1781,24 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "subject": "person:yuan_yingtai",
    "predicate": "阵亡",
    "kind": "record_vs_record",
-   "count": 2,
+   "count": 3,
    "spread": null,
    "assertion_ids": [
     "SX009",
-    "SX008_M2"
+    "SX008_M2",
+    "LY006"
+   ]
+  },
+  {
+   "id": "cf:event:liaoyang_fall|城破",
+   "subject": "event:liaoyang_fall",
+   "predicate": "城破",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX008_M1",
+    "LY005"
    ]
   },
   {

@@ -2,7 +2,7 @@
   "scenes_total": 122,
   "historical": 49,
   "fictional": 73,
-  "assertions_total": 851,
+  "assertions_total": 887,
   "sources_total": 47,
   "factions_total": 9,
   "vocab_packs": [
@@ -48,7 +48,7 @@
       "id": "liaoyang",
       "title": "辽阳",
       "kind": "county",
-      "assertions": 53,
+      "assertions": 65,
       "factions": {
         "feng_jiang": 10
       }
@@ -57,7 +57,7 @@
       "id": "shenyang",
       "title": "沈阳",
       "kind": "county",
-      "assertions": 50,
+      "assertions": 62,
       "factions": {
         "feng_jiang": 12
       }
@@ -117,7 +117,7 @@
       "id": "ningyuan",
       "title": "宁远",
       "kind": "county",
-      "assertions": 31,
+      "assertions": 43,
       "factions": {}
     },
     {

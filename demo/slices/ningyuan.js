@@ -146,7 +146,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "name": "袁崇焕",
    "role": "蓟辽督师",
    "note": "宁远/宁锦拒清，后冤死；「五年平辽」",
-   "influence": 15
+   "influence": 17
   },
   {
    "id": "zu_dashou",
@@ -861,6 +861,270 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "note": "宁远大捷后袁崇焕升任右佥都御史",
    "_party": "清修·明臣",
    "_faction": null
+  },
+  {
+   "id": "NY001",
+   "subject": "event:ningyuan_battle",
+   "predicate": "集兵",
+   "value_text": "集將士誓死守",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "崇煥聞，即偕大將桂，副將左輔、硃梅，參將大壽，守備何可剛等集將士誓死守",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY002",
+   "subject": "event:ningyuan_battle",
+   "predicate": "守城策略",
+   "value_text": "焚城外民居，清野以待",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "乃盡焚城外民居，攜守具入城，清野以待",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY003",
+   "subject": "event:ningyuan_battle",
+   "predicate": "使用火器",
+   "value_text": "發西洋巨砲，傷城外軍",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "崇煥令閩卒羅立，發西洋巨砲，傷城外軍",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY004",
+   "subject": "event:ningyuan_battle",
+   "predicate": "结果",
+   "value_text": "圍遂解",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "明日，再攻，復被卻，圍遂解",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY005",
+   "subject": "event:ningyuan_battle",
+   "predicate": "伤亡",
+   "value_text": "啟倧以然砲死",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "而啟倧亦以然砲死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "金啟倧为通判，死于炮火",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY006",
+   "subject": "event:ningyuan_battle",
+   "predicate": "后金分兵略地",
+   "value_text": "分兵數萬略覺華島",
+   "time": {
+    "era_text": "天啟六年正月",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "juehua",
+   "source": "mingshi",
+   "quote": "我大清初解圍，分兵數萬略覺華島，殺參將金冠等及軍民數萬",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY007",
+   "subject": "person:yuan_chonghuan",
+   "predicate": "官职升迁",
+   "value_text": "擢右僉都御史",
+   "time": {
+    "era_text": "天啟六年",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "",
+   "source": "mingshi",
+   "quote": "立擢崇煥右僉都御史，璽書獎勵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY008",
+   "subject": "event:ningyuan_founded",
+   "predicate": "筑城",
+   "value_text": "高三丈二尺，址廣三丈",
+   "time": {
+    "era_text": "天啟三年九月",
+    "start": "1623-01-01",
+    "end": "1623-12-31",
+    "gregorian_year": 1623
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "崇煥乃定規制：高三丈二尺，雉高六尺，址廣三丈，上二丈四尺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY009",
+   "subject": "event:ningyuan_founded",
+   "predicate": "完工",
+   "value_text": "明年迄工，遂為關外重鎮",
+   "time": {
+    "era_text": "天啟四年",
+    "start": "1624-01-01",
+    "end": "1624-12-31",
+    "gregorian_year": 1624
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "大壽與參將高見、賀謙分督之，明年迄工，遂為關外重鎮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY010",
+   "subject": "person:yuan_chonghuan",
+   "predicate": "主张",
+   "value_text": "官此當死此，我必不去",
+   "time": {
+    "era_text": "天啟五年",
+    "start": "1625-01-01",
+    "end": "1625-12-31",
+    "gregorian_year": 1625
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "崇煥曰：「我寧前道也，官此當死此，我必不去。」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY011",
+   "subject": "event:ningjin_dajie",
+   "predicate": "背景",
+   "value_text": "高第撤錦州等城守具",
+   "time": {
+    "era_text": "天啟五年",
+    "start": "1625-01-01",
+    "end": "1625-12-31",
+    "gregorian_year": 1625
+   },
+   "place": "jinzhou_cheng",
+   "source": "mingshi",
+   "quote": "乃撤錦州、右屯、大、小淩河及松山、杏山、塔山守具，盡驅屯兵入關",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "高第代孫承宗為經略，主張棄守關外",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NY012",
+   "subject": "event:ningyuan_battle",
+   "predicate": "明军兵力",
+   "value_text": "萬二千",
+   "time": {
+    "era_text": "天啟四年九月",
+    "start": "1624-01-01",
+    "end": "1624-12-31",
+    "gregorian_year": 1624
+   },
+   "place": "ningyuan",
+   "source": "mingshi",
+   "quote": "率水陸馬步軍萬二千，東巡廣寧",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "此为东巡兵力，非宁远之战守城兵力",
+   "_party": "清修·明臣",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -882,7 +1146,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "subject": "person:yuan_chonghuan",
    "predicate": "主张",
    "kind": "record_vs_record",
-   "count": 6,
+   "count": 7,
    "spread": null,
    "assertion_ids": [
     "SX002",
@@ -890,7 +1154,20 @@ window.SANDBOX_SLICES["ningyuan"] = {
     "SX006",
     "SX007",
     "SX012",
-    "SX003_M1"
+    "SX003_M1",
+    "NY010"
+   ]
+  },
+  {
+   "id": "cf:event:ningyuan_founded|筑城",
+   "subject": "event:ningyuan_founded",
+   "predicate": "筑城",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX004_M1",
+    "NY008"
    ]
   }
  ],
