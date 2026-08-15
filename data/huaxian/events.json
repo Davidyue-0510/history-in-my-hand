@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_hx_main",
+   "subject": "event:hx_main",
+   "year": 1556,
+   "era": "嘉靖三十四年腊月十二",
+   "title": "华县大地震",
+   "kind": "地震",
+   "text": "子夜巨震，山川易形，压死奏报以数十万计，《五行志》谓「震压官吏军民奏报有名者八十三万有奇」。",
+   "place": "huaxian"
+  },
+  {
+   "id": "ev_hx_after",
+   "subject": "event:hx_after",
+   "year": 1556,
+   "era": "震后",
+   "title": "余震经年·次生灾",
+   "kind": "地震",
+   "text": "震后饥疫相继，庐舍尽墟，灾情数岁未复。",
+   "place": "xian"
+  },
+  {
+   "id": "ev_hx_legacy",
+   "subject": "event:hx_legacy",
+   "year": 1556,
+   "era": "嘉靖三十四年",
+   "title": "灾异入史·天人感应",
+   "kind": "灾异",
+   "text": "明代将巨灾系于「窒阏元气」，朝野修省，亦促成地方赈济与城防重修。",
+   "place": "linfen"
+  }
+ ]
+}

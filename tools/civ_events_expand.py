@@ -1,0 +1,777 @@
+# -*- coding: utf-8 -*-
+"""文明事件切片 · 扩展数据集（v2，铺满各朝代）
+
+本文件只含「数据」，不含生成逻辑。seed_civ_events.py 会 `from civ_events_expand import EXPAND`
+把本列表并入其 B，复用同一套 build_one() 生成器。
+
+约定（与 seed_civ_events.py 完全一致）：
+  - 每个元素是一个 dict，字段同 civ() 接受的 dict；
+  - places 用 CITY[id] 元组 (pid,name,lon,lat,note) 减少坐标手误；
+  - events: (eid, subject, year, era, title, kind, text, place)
+  - persons: (pid, name, label) 或 (pid, name, label)
+  - 冲突类（王朝/起义/对外）给 a_name/b_name + routes + engagements；
+    非冲突类（天灾/工程/思想/科技/宫廷/改革）只走通用事件面板。
+  - kind∈{disaster,engineering,dynasty,reform,uprising,fusion,court,thought,tech,frontier}
+    region 对应 9 个文明事件子区 + exchange(对外交流)，全部被 SYNTHESIS_KINDS 豁免。
+"""
+import os
+
+# ───────────── 常用地名坐标（集中管理，避免手抖）─────────────
+CITY = {
+    # 通用古都
+    'changan':  ('changan',  '长安',     108.94, 34.34, '汉唐都城'),
+    'luoyang':  ('luoyang',  '洛阳',     112.45, 34.62, '东汉/唐东都'),
+    'kaofeng':  ('kaofeng',  '开封',     114.30, 34.79, '北宋汴京'),
+    'nanjing':  ('nanjing',  '南京',     118.80, 32.06, '六朝古都·建康/应天'),
+    'beijing':  ('beijing',  '北京',     116.40, 39.90, '元大都/明京师'),
+    'xianyang': ('xianyang', '咸阳',     108.70, 34.33, '秦都'),
+    'jiankang': ('jiankang', '建康',     118.80, 32.06, '南朝都，今南京'),
+    'yecheng':  ('yecheng',  '邺城',     114.08, 36.07, '曹魏都'),
+    # 商周
+    'muye':     ('muye',     '牧野',     114.17, 35.60, '武王伐纣决战地，今淇县'),
+    'zhaoge':   ('zhaoge',   '朝歌',     114.18, 35.56, '商纣都'),
+    'zhouyuan': ('zhouyuan', '周原',     107.90, 34.50, '周人兴起地，今岐山'),
+    # 秦汉
+    'chenqiao': ('chenqiao', '陈桥驿',   114.20, 34.85, '陈桥兵变地，开封东北'),
+    'dazexiang':('dazexiang','大泽乡',   117.00, 33.63, '陈胜吴广起义，今安徽宿州'),
+    'lvlin':    ('lvlin',    '绿林山',   112.85, 31.20, '绿林起义，今湖北京山'),
+    'nanyang':  ('nanyang',  '南阳',     112.53, 32.99, '张仲景故里，东汉大疫中心'),
+    # 魏晋南北朝
+    'handan':   ('handan',   '邯郸',     114.49, 36.61, '赵都，胡服骑射推行地'),
+    'linzi':    ('linzi',    '临淄',     118.05, 36.81, '齐国都，稷下学宫'),
+    'yidu':     ('yidu',     '益都',     118.48, 36.69, '贾思勰任职地，今青州'),
+    # 隋唐
+    'xingan':   ('xingan',   '兴安',     110.68, 25.63, '灵渠所在，今广西兴安'),
+    'zhaoxian': ('zhaoxian', '赵县',     114.78, 37.76, '赵州桥所在'),
+    'eqihu':    ('eqihu',    '鹅湖',     117.70, 28.28, '鹅湖之会，今江西铅山'),
+    # 宋辽金
+    'yingzhou': ('yingzhou', '颍州',     115.81, 32.90, '红巾军起义，今安徽阜阳'),
+    'puyang':   ('puyang',   '澶州',     115.03, 35.70, '澶渊之盟，今河南濮阳'),
+    'zhenjiang':('zhenjiang', '镇江',     119.45, 32.20, '沈括梦溪所在地'),
+    'huaxian_s':('huaxian_s','滑县',     114.52, 35.57, '北宋黄河滑州决口'),
+    # 元明清
+    'jiangmen': ('jiangmen', '崖山',     113.08, 22.58, '宋元最后一战，今江门'),
+    'guiping':  ('guiping',  '金田',     110.08, 23.38, '太平天国金田起义'),
+    'guangzhou':('guangzhou','广州',     113.26, 23.13, '黄巢曾克广州'),
+    'wuchang':  ('wuchang',  '武昌',     114.30, 30.59, '辛亥革命首义'),
+    'taiyuan':  ('taiyuan',  '太原',     112.55, 37.87, '丁戊奇荒重灾区'),
+    'taicang':  ('taicang',  '刘家港',   121.10, 31.45, '郑和下西洋起锚地'),
+    'yangzhou': ('yangzhou', '扬州',     119.41, 32.39, '鉴真东渡启程地'),
+    'hohhot':   ('hohhot',   '单于庭',   111.75, 40.84, '昭君出塞所至，今呼和浩特'),
+    'xingtai':  ('xingtai',  '沙丘',     114.50, 37.07, '沙丘之变，今邢台'),
+    # 对外交流支点
+    'loulan':   ('loulan',   '楼兰',      89.80, 40.50, '西域门户'),
+    'zhancheng':('zhancheng','占城',     108.00, 16.00, '郑和西洋第一站'),
+    'nalanda':  ('nalanda',  '那烂陀',    85.00, 25.00, '玄奘求学地'),
+    'heijokyo': ('heijokyo', '平城京',   135.80, 34.70, '鉴真东渡所至，今奈良'),
+}
+
+# 各 region 的统一中文名（与 seeder 既有 21 个一致）
+RN = {
+    'ecology': '天灾与生态', 'engineering': '重大工程', 'dynasty': '王朝更迭',
+    'reform': '改革与变法', 'uprising': '农民起义', 'fusion': '民族融合',
+    'court': '宫廷斗争', 'thought': '思想文化', 'tech': '科技医学', 'exchange': '对外交流',
+}
+
+EXPAND = [
+
+# ══════════════ 天灾与生态 ══════════════
+{
+ "id": "dong_han_yi", "title": "东汉大疫", "kind": "disaster", "region": "ecology",
+ "region_name": RN['ecology'], "region_note": "东汉末年的反复大疫催生了张仲景《伤寒杂病论》，是中医体系的奠基背景。",
+ "dossier_label": "东汉大疫", "subtitle": "196—220 · 建安瘟疫", "primary_place": "nanyang",
+ "lead": "汉末战乱频仍、流民转徙，瘟疫数度大作。建安廿二年（217）「家家有僵尸之痛，室室有号泣之哀」，张仲景宗族二百余口十年死其七，遂著《伤寒杂病论》以济世。",
+ "parties_note": "大疫记载见于《后汉书·五行志》与张仲景自序，死亡规模以世家记述折中，确切毒株已不可考。",
+ "places": [CITY['nanyang'], CITY['luoyang'], CITY['changan']],
+ "events": [
+  ("ev_dy_196", "event:dy_196", 196, "建安元", "乱世疫起", "疫灾", "中原板荡、民多流亡，疾疫渐兴，医书散佚。", "luoyang"),
+  ("ev_dy_217", "event:dy_217", 217, "建安廿二", "建安大疫", "疫灾", "瘟疫大作，张仲景宗族二百余口十年间死伤近七成，促其撰方书。", "nanyang"),
+  ("ev_dy_book", "event:dy_book", 220, "建安末", "伤寒杂病论成", "医学", "张仲景据临床集验成《伤寒杂病论》，开辨证论治之先，后世尊医圣。", "nanyang"),
+ ],
+ "persons": [("zhangzhongjing", "张仲景", "东汉医家")],
+},
+{
+ "id": "dingwu", "title": "丁戊奇荒", "kind": "disaster", "region": "ecology",
+ "region_name": RN['ecology'], "region_note": "1877—1878 年（丁丑、戊寅）华北大旱连蝗，史称「丁戊奇荒」，饿殍以千万计。",
+ "dossier_label": "丁戊奇荒", "subtitle": "1877—1878 · 晚清华北大旱", "primary_place": "taiyuan",
+ "lead": "光绪初年华北连年亢旱，晋豫陕冀赤地千里、继以蝗蝻，人相食。朝廷赈济与民间义赈并举，仍死者甚众，为晚清最惨重灾荒之一。",
+ "parties_note": "灾情以《清代灾荒史》与方志奏报综合，死亡数字各家估计差异大（千万级），此处取学界折中。",
+ "places": [CITY['taiyuan'], CITY['kaofeng'], CITY['beijing']],
+ "events": [
+  ("ev_dw_1876", "event:dw_1876", 1876, "光绪二", "北旱初起", "旱灾", "华北持续少雨，禾稼歉收，灾象初显。", "taiyuan"),
+  ("ev_dw_1877", "event:dw_1877", 1877, "光绪三·丁丑", "丁戊大旱", "旱灾", "旱情达顶点，晋豫「人食草根、继则人相食」，流民载道。", "taiyuan"),
+  ("ev_dw_relief", "event:dw_relief", 1878, "光绪四", "朝廷赈济", "赈济", "拨帑截漕、办赈恤，江南义赈赴晋，灾势渐缓。", "beijing"),
+ ],
+ "persons": [("zengguofan2", "曾国藩", "清重臣"), ("lihongzhang2", "李鸿章", "清重臣")],
+},
+{
+ "id": "song_he_jue", "title": "北宋滑州河决", "kind": "disaster", "region": "ecology",
+ "region_name": RN['ecology'], "region_note": "1019 年黄河于滑州决口，北宋屡费巨力堵口，河患已成朝政重负。",
+ "dossier_label": "北宋滑州河决", "subtitle": "1019 · 天禧三年河患", "primary_place": "huaxian_s",
+ "lead": "天禧三年（1019）黄河大决滑州，泛澶、濮、郓、齐诸州，坏庐舍、溺人畜无算。宋廷发兵夫数万塞之，未几复决，治河之费与害渐成北宋痼疾。",
+ "parties_note": "河决与堵口据《宋史·河渠志》综合，劳费数字为后世考订折中。",
+ "places": [CITY['huaxian_s'], CITY['puyang'], CITY['kaofeng']],
+ "events": [
+  ("ev_hj_1019", "event:hj_1019", 1019, "天禧三", "滑州大决", "河决", "黄河决滑州天台埽，泛溢诸州，坏田庐、溺人畜。", "huaxian_s"),
+  ("ev_hj_dukou", "event:hj_dukou", 1019, "同年", "发夫塞河", "堵口", "调兵夫数万筑堤堵口，耗粟帛巨万。", "puyang"),
+  ("ev_hj_late", "event:hj_late", 1034, "景祐元", "河患踵至", "河决", "澶州、横陇相继决，北流之患自此难弭。", "puyang"),
+ ],
+ "persons": [("jianglin", "贾昌朝", "宋臣")],
+},
+
+# ══════════════ 重大工程 ══════════════
+{
+ "id": "zijincheng", "title": "紫禁城营建", "kind": "engineering", "region": "engineering",
+ "region_name": RN['engineering'], "region_note": "1406 起明成祖营建紫禁城，1420 告成，为现存最大木构宫城。",
+ "dossier_label": "紫禁城营建", "subtitle": "1406—1420 · 明永乐", "primary_place": "beijing",
+ "lead": "永乐四年（1406）诏建北京宫殿，采木于川湖、陶甓于临清，役军民数十万，永乐十八年（1420）成。紫禁城据此奠定明清五百余年政治中枢。",
+ "parties_note": "营建据《明史·成祖纪》与《工部厂库须知》综合，役夫数字为折中估计。",
+ "places": [CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_zj_1406", "event:zj_1406", 1406, "永乐四", "诏建北京宫", "工程", "营建北京宫殿，取材天下、征役军民数十万。", "beijing"),
+  ("ev_zj_1420", "event:zj_1420", 1420, "永乐十八", "紫禁城成", "落成", "宫殿告成，次年迁都北京，定为京师。", "beijing"),
+ ],
+ "persons": [("zhu_di", "明成祖", "明"), ("kuai_xiang", "蒯祥", "明匠师")],
+},
+{
+ "id": "lingqu", "title": "灵渠", "kind": "engineering", "region": "engineering",
+ "region_name": RN['engineering'], "region_note": "前214 年秦始皇命史禄凿灵渠，沟通湘漓、连接长江与珠江水系。",
+ "dossier_label": "灵渠", "subtitle": "前214 · 秦", "primary_place": "xingan",
+ "layer_title": "灵渠水道叠加", "timeline_title": "灵渠开凿时间轴",
+ "lead": "秦始皇平百越，命史禄凿灵渠于今广西兴安，分湘水入漓江，舟楫得通岭南，军资转输无阻，为古代跨流域运河杰作。",
+ "parties_note": "开凿据《史记·平准书》与后世方志综合，具体工期有考订差异。",
+ "places": [CITY['xingan'], CITY['xianyang']],
+ "events": [
+  ("ev_lq_214", "event:lq_214", -214, "始皇三十三", "凿灵渠", "工程", "史禄凿渠分湘入漓，沟通长江、珠江水系，转运岭南。", "xingan"),
+  ("ev_lq_use", "event:lq_use", -214, "同年", "通粮南征", "功用", "灵渠既通，秦军南平百越，岭南初入版图。", "xingan"),
+ ],
+ "routes": [
+  ("rt_lq", "灵渠（湘→漓）", "b",
+   [("xingan", "-214", "分水铧嘴"), ("xingan", "-214", "入漓江南下")], {"at": "-214", "type": "none", "text": "湘漓通津"}),
+ ],
+ "timeline": [("-214", "始皇三十三", "灵渠凿成", True)],
+ "persons": [("shilu", "史禄", "秦监郡御史")],
+},
+{
+ "id": "zhaozhou", "title": "赵州桥", "kind": "engineering", "region": "engineering",
+ "region_name": RN['engineering'], "region_note": "595 年隋匠李春建成赵州桥（安济桥），为世界最古敞肩石拱桥。",
+ "dossier_label": "赵州桥", "subtitle": "595 · 隋开皇", "primary_place": "zhaoxian",
+ "lead": "隋开皇后期，匠师李春于洨河上建安济桥，首创敞肩拱，减重防洪、跨度逾卅七米，历一千四百年仍存，为世界桥梁史奇迹。",
+ "parties_note": "建桥据唐张嘉贞《安济桥铭》与后世方志综合。",
+ "places": [CITY['zhaoxian'], CITY['changan']],
+ "events": [
+  ("ev_zz_595", "event:zz_595", 595, "开皇十五", "李春造桥", "工程", "李春建安济桥于洨河，敞肩拱减荷、利舟行。", "zhaoxian"),
+  ("ev_zz_later", "event:zz_later", 605, "大业元", "名动南北", "影响", "桥成后通衢便利，唐人铭之，世代修缮沿用。", "zhaoxian"),
+ ],
+ "persons": [("lichun", "李春", "隋匠师")],
+},
+{
+ "id": "sui_daxing", "title": "隋大兴城", "kind": "engineering", "region": "engineering",
+ "region_name": RN['engineering'], "region_note": "582 年隋文帝命宇文恺营建大兴城（唐长安），为中古世界第一都会。",
+ "dossier_label": "隋大兴城", "subtitle": "582 · 隋开皇", "primary_place": "changan",
+ "lead": "隋文帝迁都，命宇文恺规划大兴城，中轴对称、里坊严整、规模宏阔，唐因之改为长安，为当时世界最大城市，影响东亚都城规制。",
+ "parties_note": "营建据《隋书·宇文恺传》与考古复原综合。",
+ "places": [CITY['changan'], CITY['luoyang']],
+ "events": [
+  ("ev_dx_582", "event:dx_582", 582, "开皇二", "营建大兴城", "工程", "宇文恺擘画大兴城，规整里坊、奠定中轴。", "changan"),
+  ("ev_dx_583", "event:dx_583", 583, "开皇三", "迁都新邑", "落成", "隋文帝迁入大兴城，后唐改长安。", "changan"),
+ ],
+ "persons": [("yuwenkai", "宇文恺", "隋匠师")],
+},
+
+# ══════════════ 王朝更迭 ══════════════
+{
+ "id": "wuwang", "title": "武王克商", "kind": "dynasty", "region": "dynasty",
+ "region_name": RN['dynasty'], "region_note": "前1046 年周武王于牧野大破商纣，商亡周兴，分封天下。",
+ "dossier_label": "武王克商", "subtitle": "前1046 · 商周革命", "primary_place": "muye",
+ "a_name": "周军", "b_name": "商军",
+ "lead": "商纣暴虐、众叛亲离，周武王率诸侯伐纣。前1046 牧野一战，商军倒戈，纣自焚于鹿台，周人克商，分封宗亲功臣，开启八百年基业。",
+ "parties_note": "克商年代有「夏商周断代工程」前1046 之说，与古本记载略有出入，此处取主流定年。",
+ "places": [CITY['muye'], CITY['zhaoge'], CITY['zhouyuan']],
+ "events": [
+  ("ev_ww_1048", "event:ww_1048", -1048, "文王受命", "孟津观兵", "会盟", "武王东观兵孟津，诸侯不期而会者八百，示伐纣之势。", "zhouyuan"),
+  ("ev_ww_1046", "event:ww_1046", -1046, "牧野之朝", "牧野克商", "战事", "武王誓师牧野，商军前徒倒戈，纣登鹿台自焚，商亡。", "muye"),
+ ],
+ "routes": [
+  ("rt_ww", "周师东进", "a",
+   [("zhouyuan", "-1048", "孟津观兵"), ("muye", "-1046", "牧野决战")], {"at": "-1046", "type": "victory", "text": "克商建周"}),
+ ],
+ "engagements": [
+  ("eng_ww", "牧野之战", "-1046", "牧野之朝", "muye", "a", "武王率戎车三百、虎贲三千伐商，商军倒戈，一举破之。", "event:ww_1046",
+   [("a", "周武王", 1.0, "fresh", 300, "誓师", "周师同德、士气旺盛。", 0.6), ("b", "商纣王", 1.0, "exhausted", 700, "离心", "纣师多囚俘、临阵倒戈。", 0.35)]),
+ ],
+ "timeline": [("-1048", "文王受命", "孟津观兵", True), ("-1046", "牧野", "克商·商亡", True)],
+ "persons": [("wuwang", "周武王", "周"), ("zhouwang", "商纣王", "商")],
+},
+{
+ "id": "sui_mie_chen", "title": "隋灭陈", "kind": "dynasty", "region": "dynasty",
+ "region_name": RN['dynasty'], "region_note": "589 年隋军渡江灭陈，结束近三百年分裂，重归一统。",
+ "dossier_label": "隋灭陈", "subtitle": "589 · 隋文帝统一", "primary_place": "nanjing",
+ "a_name": "隋军", "b_name": "陈军",
+ "lead": "隋文帝蓄力灭陈，587 后频出兵。589 贺若弼自广陵、韩擒虎自采石渡江，陈后主犹赋诗不辍，建康旋破，陈亡，南北复归一统。",
+ "parties_note": "灭陈据《隋书》《南史》综合，陈之腐弱与隋之蓄势对照鲜明。",
+ "places": [CITY['nanjing'], CITY['changan'], CITY['kaofeng']],
+ "events": [
+  ("ev_sm_587", "event:sm_587", 587, "开皇七", "作伐陈势", "战事", "隋废西梁、修战备，大造舟楫于蜀，待机南下。", "changan"),
+  ("ev_sm_589", "event:sm_589", 589, "开皇九", "渡江灭陈", "战事", "贺若弼、韩擒虎分道渡江，建康破，陈后主就擒，陈亡。", "nanjing"),
+ ],
+ "routes": [
+  ("rt_sm", "隋师南下", "a",
+   [("kaofeng", "587", "造舟蓄势"), ("nanjing", "589", "渡江克建康")], {"at": "589", "type": "victory", "text": "一统南北"}),
+ ],
+ "engagements": [
+  ("eng_sm", "建康之战", "589", "开皇九年", "nanjing", "a", "隋军两路渡江、钳击建康，陈军无战心，城破国灭。", "event:sm_589",
+   [("a", "贺若弼", 1.0, "fresh", 250, "强渡", "隋军精锐、部署周密。", 0.6), ("b", "陈后主", 1.0, "exhausted", 200, "涣散", "陈政荒怠、将士离心。", 0.3)]),
+ ],
+ "timeline": [("587", "开皇七", "作伐陈势", True), ("589", "开皇九", "灭陈·一统", True)],
+ "persons": [("suiwen", "隋文帝", "隋"), ("chenhouzhu", "陈后主", "陈")],
+},
+{
+ "id": "chenqiao", "title": "陈桥兵变", "kind": "dynasty", "region": "dynasty",
+ "region_name": RN['dynasty'], "region_note": "960 年赵匡胤陈桥驿兵变，黄袍加身，代后周建宋。",
+ "dossier_label": "陈桥兵变", "subtitle": "960 · 宋太祖代周", "primary_place": "chenqiao",
+ "a_name": "殿前军", "b_name": "后周",
+ "lead": "后周世宗崩、幼主临朝，殿前都点检赵匡胤掌禁军。960 出征契丹途中，军士拥之于陈桥驿，黄袍加身，回师开封，禅代而立宋，杯酒释兵权继之。",
+ "parties_note": "兵变细节《宋史》多粉饰，后世多以为是预谋，此处综合诸史。",
+ "places": [CITY['chenqiao'], CITY['kaofeng'], CITY['beijing']],
+ "events": [
+  ("ev_cq_960a", "event:cq_960a", 960, "建隆元·正月初", "陈桥拥立", "政变", "军中谋立，赵匡胤被掖黄袍，号恸而从，旋回师。", "chenqiao"),
+  ("ev_cq_960b", "event:cq_960b", 960, "建隆元·正月", "受禅建宋", "结局", "回京师，恭帝禅位，赵匡胤即帝位，国号宋。", "kaofeng"),
+ ],
+ "routes": [
+  ("rt_cq", "陈桥→开封", "a",
+   [("chenqiao", "960", "兵变处"), ("kaofeng", "960", "入城受禅")], {"at": "960", "type": "victory", "text": "黄袍加身"}),
+ ],
+ "timeline": [("960", "建隆元", "陈桥兵变·建宋", True)],
+ "persons": [("zhao_kuangyin", "赵匡胤", "宋太祖"), ("chai_rong", "周世宗", "后周")],
+},
+{
+ "id": "yashan", "title": "崖山之战", "kind": "dynasty", "region": "dynasty",
+ "region_name": RN['dynasty'], "region_note": "1279 年宋元崖山决战，陆秀夫负幼帝投海，南宋亡。",
+ "dossier_label": "崖山之战", "subtitle": "1279 · 宋元最后一战", "primary_place": "jiangmen",
+ "a_name": "元军", "b_name": "宋军",
+ "lead": "元军压境，宋室播迁海上。1279 张弘范围崖山，宋将张世杰死战，舰阵连锁。陆秀夫负幼帝昺投海，军民蹈海者十万，赵宋遂绝。",
+ "parties_note": "崖山据《宋史·瀛国公纪》《元史·张弘范传》综合，殉国规模以传说与记载折中。",
+ "places": [CITY['jiangmen'], CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_ys_1276", "event:ys_1276", 1276, "德祐二", "临安降元", "变局", "元军入临安，恭帝出降，宋室南奔海上续抗。", "nanjing"),
+  ("ev_ys_1279", "event:ys_1279", 1279, "祥兴二", "崖山蹈海", "战事", "张弘范破崖山，陆秀夫负帝投海，十万军民殉国，宋亡。", "jiangmen"),
+ ],
+ "routes": [
+  ("rt_ys", "元军南下", "a",
+   [("beijing", "1276", "大举南征"), ("jiangmen", "1279", "崖山决战")], {"at": "1279", "type": "victory", "text": "灭宋一统"}),
+ ],
+ "engagements": [
+  ("eng_ys", "崖山决战", "1279", "祥兴二年", "jiangmen", "a", "张弘范以楼船锁港、火攻夹击，宋舰阵溃，陆秀夫负帝投海。", "event:ys_1279",
+   [("a", "张弘范", 1.0, "fresh", 300, "水攻", "元军善水战、舰坚炮利。", 0.6), ("b", "张世杰", 1.0, "exhausted", 280, "困守", "宋舰连锁、进退失据。", 0.3)]),
+ ],
+ "timeline": [("1276", "德祐二", "临安降·南奔", True), ("1279", "祥兴二", "崖山·宋亡", True)],
+ "persons": [("zhangshijie", "张世杰", "宋"), ("luxinfu", "陆秀夫", "宋")],
+},
+{
+ "id": "xinhai", "title": "辛亥革命", "kind": "dynasty", "region": "dynasty",
+ "region_name": RN['dynasty'], "region_note": "1911 年武昌首义，各省响应，两千余年帝制终结。",
+ "dossier_label": "辛亥革命", "subtitle": "1911 · 帝制终结", "primary_place": "wuchang",
+ "a_name": "革命军", "b_name": "清军",
+ "lead": "1911 年 10 月 10 日武昌新军起义，各省相继独立。清廷起袁世凯讨伐，终逼宫逊位，1912 宣统退位，二百六十八年清祚与两千年帝制同终。",
+ "parties_note": "首义与独立据《辛亥革命史》综合；袁世凯之角色为关键变量。",
+ "places": [CITY['wuchang'], CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_xh_1010", "event:xh_1010", 1911, "辛亥八月十九", "武昌首义", "战事", "武昌新军起义，占楚望台、克督署，旋成立军政府。", "wuchang"),
+  ("ev_xh_res", "event:xh_res", 1911, "其后两月", "各省响应", "变局", "湘陕赣晋等省相继独立，清统治土崩。", "nanjing"),
+  ("ev_xh_1912", "event:xh_1912", 1912, "民国元", "清帝逊位", "结局", "宣统退位，帝制终结，共和肇建。", "beijing"),
+ ],
+ "routes": [
+  ("rt_xh", "首义→各省", "a",
+   [("wuchang", "1911", "首义"), ("nanjing", "1911", "独立响应")], {"at": "1911", "type": "victory", "text": "共和初立"}),
+ ],
+ "timeline": [("1911", "辛亥", "武昌首义", True), ("1912", "民国元", "清帝逊位", True)],
+ "persons": [("sun_yat", "孙中山", "革命党"), ("yuan_shikai", "袁世凯", "清/北洋")],
+},
+
+# ══════════════ 改革与变法 ══════════════
+{
+ "id": "zhangjuzheng", "title": "张居正改革", "kind": "reform", "region": "reform",
+ "region_name": RN['reform'], "region_note": "1573 起张居正行考成法、一条鞭法，挽明中叶颓势。",
+ "dossier_label": "张居正改革", "subtitle": "1573—1582 · 明万历", "primary_place": "beijing",
+ "lead": "明中叶弊政积重，张居正柄国，行考成法核吏治、清隐田、推一条鞭法总括赋役折银，国库骤充、边备稍振，然身后遭清算，新法渐弛。",
+ "parties_note": "改革利弊《明史》与近代研究颇有争议，此处综合而不偏。",
+ "places": [CITY['beijing'], CITY['kaofeng']],
+ "events": [
+  ("ev_zj_1573", "event:zj_1573", 1573, "万历元", "考成法立", "变法", "张居正上考成法，以事权课吏，令行禁止。", "beijing"),
+  ("ev_zj_1581", "event:zj_1581", 1581, "万历九", "一条鞭法", "变法", "总括赋役、概征银两，简化税制、增国库。", "beijing"),
+ ],
+ "persons": [("zhangjuzheng2", "张居正", "明首辅"), ("wanli", "明神宗", "明")],
+},
+{
+ "id": "wuxu", "title": "戊戌变法", "kind": "reform", "region": "reform",
+ "region_name": RN['reform'], "region_note": "1898 年康有为梁启超倡维新，光绪帝颁诏变法，百日而败。",
+ "dossier_label": "戊戌变法", "subtitle": "1898 · 光绪廿四", "primary_place": "beijing",
+ "lead": "甲午惨败后，维新派倡学习西洋政教。1898 光绪帝下明定国是诏，行废八股、练新军、兴学堂诸法，触怒后党，慈禧发动政变，六君子死难，维新百日而终。",
+ "parties_note": "维新据《戊戌变法史》综合；守旧与维新之争为近代转折关键。",
+ "places": [CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_wx_0611", "event:wx_0611", 1898, "光绪廿四·四月", "明定国是", "变法", "光绪颁诏变法，裁冗衙、废八股、奖工商。", "beijing"),
+  ("ev_wx_0908", "event:wx_0908", 1898, "同年八月", "戊戌政变", "结局", "慈禧囚帝、捕杀六君子，新政尽废，维新败。", "beijing"),
+ ],
+ "persons": [("guangxu", "光绪帝", "清"), ("kang_youwei", "康有为", "维新派")],
+},
+{
+ "id": "wangmang", "title": "王莽改制", "kind": "reform", "region": "reform",
+ "region_name": RN['reform'], "region_note": "9 年王莽代汉建新，托古改制，激化矛盾而速亡。",
+ "dossier_label": "王莽改制", "subtitle": "9 — 23 · 新莽", "primary_place": "changan",
+ "lead": "王莽篡汉建新，托古易制：王田、五均六筦、改币更制，意在均贫富、抑兼并，然政令繁苛、朝令夕改，农商俱困，绿林赤眉并起，新莽十五年而亡。",
+ "parties_note": "改制据《汉书·王莽传》综合，史多贬其迂阔，然亦含均平理想。",
+ "places": [CITY['changan'], CITY['lvlin']],
+ "events": [
+  ("ev_wm_9", "event:wm_9", 9, "始建国元", "代汉建新", "变局", "王莽受禅称帝，国号新，托古改制。", "changan"),
+  ("ev_wm_reform", "event:wm_reform", 9, "同年", "王田五均", "变法", "行王田、五均六筦、改币，扰民甚烈。", "changan"),
+  ("ev_wm_end", "event:wm_end", 23, "地皇四", "新莽亡", "结局", "绿林破长安，王莽死，新亡。", "changan"),
+ ],
+ "persons": [("wangmang", "王莽", "新"), ("liuxiu", "刘秀", "汉宗室")],
+},
+{
+ "id": "liangshui", "title": "两税法", "kind": "reform", "region": "reform",
+ "region_name": RN['reform'], "region_note": "780 年杨炎立两税法，以资产定税、分夏秋两征，启后世税制。",
+ "dossier_label": "两税法", "subtitle": "780 · 唐建中", "primary_place": "changan",
+ "lead": "安史乱后租庸调制坏，赋敛无准。780 宰相杨炎立两税法：户无主客、以见居为簿，人无丁中、以贫富为差，夏秋两征，税法由「税丁」转「税产」，影响及于明清。",
+ "parties_note": "两税法据《旧唐书·杨炎传》《食货志》综合。",
+ "places": [CITY['changan'], CITY['luoyang']],
+ "events": [
+  ("ev_ls_780", "event:ls_780", 780, "建中元", "杨炎立两税", "变法", "废租庸调，行两税，按资产定税、夏秋两征。", "changan"),
+  ("ev_ls_eff", "event:ls_eff", 781, "建中二", "税制转型", "影响", "税基由人丁转财产，后世田赋因之。", "changan"),
+ ],
+ "persons": [("yangyan", "杨炎", "唐宰相")],
+},
+{
+ "id": "jiupin", "title": "九品中正制", "kind": "reform", "region": "reform",
+ "region_name": RN['reform'], "region_note": "220 年曹魏陈群定九品中正，初为唯才是举，终成门阀之凭。",
+ "dossier_label": "九品中正制", "subtitle": "220 · 曹魏", "primary_place": "yecheng",
+ "lead": "延康元年（220）曹魏吏部尚书陈群立九品中正：州郡设中正，品第人物为上上至下下九等，据家世、才、德授官。初矫察举之弊，后中正多为世族把持，「上品无寒门」。",
+ "parties_note": "九品中正据《通典·选举》与《三国志》注综合，其门阀化乃渐变非一夕。",
+ "places": [CITY['yecheng'], CITY['luoyang']],
+ "events": [
+  ("ev_jp_220", "event:jp_220", 220, "延康元", "陈群定九品", "制度", "立中正品第人物，据家世才德授官，开魏晋选举之制。", "yecheng"),
+  ("ev_jp_later", "event:jp_later", 280, "西晋", "门阀固化", "结局", "中正归世族，寒门难进，「上品无寒门」成局。", "luoyang"),
+ ],
+ "persons": [("chenqun", "陈群", "魏"), ("caocao", "曹操", "魏")],
+},
+
+# ══════════════ 农民起义 ══════════════
+{
+ "id": "chensheng", "title": "陈胜吴广起义", "kind": "uprising", "region": "uprising",
+ "region_name": RN['uprising'], "region_note": "前209 年陈胜吴广大泽乡起义，首开秦末亡秦之幕。",
+ "dossier_label": "陈胜吴广起义", "subtitle": "前209 · 秦末", "primary_place": "dazexiang",
+ "a_name": "起义军", "b_name": "秦军",
+ "lead": "秦二世暴政、徭戍苛酷。前209 陈胜吴广戍渔阳，遇雨失期当斩，乃斩木为兵、揭竿而起，号「张楚」，天下响应，六国复炽，秦遂土崩。",
+ "parties_note": "起义据《史记·陈涉世家》综合，细节（鱼腹丹书、篝火狐鸣）含传说色彩。",
+ "places": [CITY['dazexiang'], CITY['chenqiao'], CITY['xianyang']],
+ "events": [
+  ("ev_cs_209a", "event:cs_209a", -209, "二世元·七月", "大泽乡起事", "战事", "失期当斩，陈胜吴广斩尉而起，号张楚，戍卒景从。", "dazexiang"),
+  ("ev_cs_209b", "event:cs_209b", -209, "同年", "天下响应", "战事", "诸郡县苦秦，杀长吏应之，六国之后并起。", "dazexiang"),
+ ],
+ "routes": [
+  ("rt_cs", "张楚扩张", "a",
+   [("dazexiang", "-209", "大泽乡"), ("xianyang", "-209", "西向击秦")], {"at": "-209", "type": "victory", "text": "首义亡秦"}),
+ ],
+ "timeline": [("-209", "二世元", "大泽乡起义", True)],
+ "persons": [("chensheng2", "陈胜", "张楚"), ("wuguang", "吴广", "张楚")],
+},
+{
+ "id": "huangchao", "title": "黄巢起义", "kind": "uprising", "region": "uprising",
+ "region_name": RN['uprising'], "region_note": "875 起黄巢转战南北，880 入长安，唐室名存实亡。",
+ "dossier_label": "黄巢起义", "subtitle": "875—884 · 唐末", "primary_place": "changan",
+ "a_name": "黄巢军", "b_name": "唐军",
+ "lead": "唐末苛政、灾荒并作，875 王仙芝、黄巢起于濮阳。黄巢转战十余省、渡江跨浙闽入广州，880 破潼关入长安称大齐，唐僖宗奔蜀，帝国崩解由此加速。",
+ "parties_note": "起义据《旧唐书·黄巢传》综合，流动作战之长与屠城之酷并存于记载。",
+ "places": [CITY['changan'], CITY['guangzhou'], CITY['kaofeng']],
+ "events": [
+  ("ev_hc_875", "event:hc_875", 875, "乾符二", "濮州起兵", "战事", "黄巢应王仙芝起于山东，号冲天大将军，转战中原。", "kaofeng"),
+  ("ev_hc_880", "event:hc_880", 880, "广明元", "入长安称帝", "战事", "黄巢破潼关入长安，僖宗奔蜀，自称大齐皇帝。", "changan"),
+ ],
+ "routes": [
+  ("rt_hc", "黄巢转战", "a",
+   [("kaofeng", "875", "中原起"), ("guangzhou", "879", "克广州"), ("changan", "880", "入长安")], {"at": "880", "type": "victory", "text": "破京称帝"}),
+ ],
+ "timeline": [("875", "乾符二", "起兵", True), ("880", "广明元", "入长安", True)],
+ "persons": [("huangchao2", "黄巢", "大齐"), ("tangxizong", "唐僖宗", "唐")],
+},
+{
+ "id": "taiping", "title": "太平天国", "kind": "uprising", "region": "uprising",
+ "region_name": RN['uprising'], "region_note": "1851 洪秀全金田起义，建太平天国，踞江南十余年。",
+ "dossier_label": "太平天国", "subtitle": "1851—1864 · 晚清", "primary_place": "guiping",
+ "a_name": "太平军", "b_name": "清军",
+ "lead": "鸦片战争后民生凋敝，1851 洪秀全于广西金田起义，建号太平天国。1853 克南京、定都天京，与清廷分庭抗礼，1864 天京陷、运动败。",
+ "parties_note": "太平天国据《太平天国史》综合；宗教色彩与政治主张兼具，正反评价悬殊。",
+ "places": [CITY['guiping'], CITY['nanjing'], CITY['beijing']],
+ "events": [
+  ("ev_tp_1851", "event:tp_1851", 1851, "咸丰元", "金田起义", "战事", "洪秀全、杨秀清等金田团营，建号太平天国。", "guiping"),
+  ("ev_tp_1853", "event:tp_1853", 1853, "咸丰三", "定都天京", "战事", "太平军破南京，改名天京，与清对峙。", "nanjing"),
+  ("ev_tp_1864", "event:tp_1864", 1864, "同治三", "天京陷落", "结局", "湘军克天京，太平天国败亡。", "nanjing"),
+ ],
+ "routes": [
+  ("rt_tp", "太平军东进", "a",
+   [("guiping", "1851", "金田起"), ("nanjing", "1853", "定天京")], {"at": "1853", "type": "victory", "text": "割据江南"}),
+ ],
+ "timeline": [("1851", "咸丰元", "金田起义", True), ("1853", "咸丰三", "定都天京", True), ("1864", "同治三", "天京陷", True)],
+ "persons": [("hongxiuquan", "洪秀全", "太平天国"), ("xiangrong", "向荣", "清")],
+},
+{
+ "id": "hongjin", "title": "红巾军", "kind": "uprising", "region": "uprising",
+ "region_name": RN['uprising'], "region_note": "1351 元末红巾起于颍州，催动朱元璋代元。",
+ "dossier_label": "红巾军", "subtitle": "1351—1368 · 元末", "primary_place": "yingzhou",
+ "a_name": "红巾军", "b_name": "元军",
+ "lead": "元末河患、民困，1351 韩山童、刘福通以白莲教聚众颍州，事泄山童死，福通立韩林儿号小明王。红巾遍起，朱元璋借此廓清群雄，终代元建明。",
+ "parties_note": "红巾据《元史》《明史》综合，其宗教色彩与民族矛盾交织。",
+ "places": [CITY['yingzhou'], CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_hj_1351", "event:hj_1351", 1351, "至正十一", "颍州举事", "战事", "刘福通等颍州起义，以红巾为号，据亳州立韩林儿。", "yingzhou"),
+  ("ev_hj_1368", "event:hj_1368", 1368, "洪武元", "朱明代元", "结局", "朱元璋并群雄、北伐，元顺帝北遁，明立。", "nanjing"),
+ ],
+ "routes": [
+  ("rt_hj", "红巾北上", "a",
+   [("yingzhou", "1351", "颍州起"), ("beijing", "1368", "克大都")], {"at": "1368", "type": "victory", "text": "驱元建明"}),
+ ],
+ "timeline": [("1351", "至正十一", "颍州举事", True), ("1368", "洪武元", "明立·元亡", True)],
+ "persons": [("liufutong", "刘福通", "红巾"), ("zhuyuanzhang", "朱元璋", "明")],
+},
+{
+ "id": "lvlin", "title": "绿林赤眉", "kind": "uprising", "region": "uprising",
+ "region_name": RN['uprising'], "region_note": "17 年起绿林、赤眉并起于新莽，刘秀乘之复汉。",
+ "dossier_label": "绿林赤眉", "subtitle": "17 — 27 · 新莽末", "primary_place": "lvlin",
+ "a_name": "绿林军", "b_name": "新莽军",
+ "lead": "新莽政乱、连年灾荒，17 荆州绿林、山东赤眉并起。绿林拥刘玄号更始，破长安杀王莽；刘秀乘群雄裂，收河北、败赤眉，终建东汉。",
+ "parties_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。",
+ "places": [CITY['lvlin'], CITY['changan'], CITY['yecheng']],
+ "events": [
+  ("ev_ll_17", "event:ll_17", 17, "天凤四", "绿林起事", "战事", "荆州饥民聚绿林山，号绿林兵，攻城略地。", "lvlin"),
+  ("ev_ll_23", "event:ll_23", 23, "更始元", "破长安·莽死", "战事", "绿林拥更始帝，破长安、杀王莽，新亡。", "changan"),
+ ],
+ "routes": [
+  ("rt_ll", "绿林西进", "a",
+   [("lvlin", "17", "绿林山"), ("changan", "23", "破长安")], {"at": "23", "type": "victory", "text": "新莽亡"}),
+ ],
+ "timeline": [("17", "天凤四", "绿林起", True), ("23", "更始元", "破长安·莽死", True)],
+ "persons": [("wangmang2", "王莽", "新"), ("liuxiu2", "刘秀", "汉宗室")],
+},
+
+# ══════════════ 民族融合 ══════════════
+{
+ "id": "zhaowulian", "title": "赵武灵王胡服骑射", "kind": "fusion", "region": "fusion",
+ "region_name": RN['fusion'], "region_note": "前307 年赵武灵王改胡服、习骑射，华夏首度系统吸收游牧武力。",
+ "dossier_label": "赵武灵王胡服骑射", "subtitle": "前307 · 战国赵", "primary_place": "handan",
+ "lead": "战国赵处北边，屡受胡骑侵扰。武灵王力排众议，令国人衣短装、习骑射，建骑兵、北拓云中雁门，开华夏大规模吸收游牧军事文化之先。",
+ "parties_note": "胡服骑射据《史记·赵世家》综合，其「变俗」之议载于对话。",
+ "places": [CITY['handan'], CITY['yecheng']],
+ "events": [
+  ("ev_zw_307", "event:zw_307", -307, "武灵王十九", "胡服令下", "改革", "武灵王下令易胡服、习骑射，臣下多谏，王力持之。", "handan"),
+  ("ev_zw_war", "event:zw_war", -306, "其后", "北拓云雁", "融合", "赵筑长城、置云中雁门，胡汉武力交融。", "handan"),
+ ],
+ "persons": [("zhaowuling", "赵武灵王", "赵")],
+},
+{
+ "id": "zhaofen", "title": "昭君出塞", "kind": "fusion", "region": "fusion",
+ "region_name": RN['fusion'], "region_note": "前33 年王昭君和亲匈奴，汉匈「三世无犬吠之警」。",
+ "dossier_label": "昭君出塞", "subtitle": "前33 · 汉元帝时", "primary_place": "hohhot",
+ "layer_title": "汉匈和亲通道叠加", "timeline_title": "昭君出塞时间轴",
+ "lead": "竟宁元年（前33）匈奴呼韩邪单于入朝请婿，宫女王嫱（昭君）请行，嫁匈奴、号宁胡阏氏。汉匈和亲，边塞宁息数十年，汉匈文化互通。",
+ "parties_note": "和亲据《汉书·匈奴传》综合，「落雁」等传说色彩浓。",
+ "places": [CITY['changan'], CITY['hohhot']],
+ "events": [
+  ("ev_zf_33", "event:zf_33", -33, "竟宁元", "昭君请行", "和亲", "呼韩邪请婿，王昭君自请出塞，嫁匈奴。", "changan"),
+  ("ev_zf_peace", "event:zf_peace", -33, "同年", "边塞宁息", "融合", "汉匈和亲，边烽少警，农牧互市渐通。", "hohhot"),
+ ],
+ "routes": [
+  ("rt_zf", "长安→塞北", "b",
+   [("changan", "-33", "长安启程"), ("hohhot", "-33", "至单于庭")], {"at": "-33", "type": "none", "text": "汉匈和亲路"}),
+ ],
+ "timeline": [("-33", "竟宁元", "昭君出塞", True)],
+ "persons": [("wangzhaojun", "王昭君", "汉"), ("huhanye", "呼韩邪单于", "匈奴")],
+},
+{
+ "id": "qing_han", "title": "清满汉融合", "kind": "fusion", "region": "fusion",
+ "region_name": RN['fusion'], "region_note": "1644 后清廷以剃发易服、满汉通婚、科举 inclusive 推动满汉渐融。",
+ "dossier_label": "清满汉融合", "subtitle": "1644 起 · 清", "primary_place": "beijing",
+ "lead": "清入关后，以八旗制度统驭、行科举取汉士、修《明史》以承正统，又令剃发易服、禁满汉通婚而后渐弛。三百年间满汉在语言、礼俗、仕途上交渗，终成「中华」一体。",
+ "parties_note": "融合过程据《清史稿》与近代研究综合，强制与涵化并行。",
+ "places": [CITY['beijing'], CITY['changan']],
+ "events": [
+  ("ev_qh_1644", "event:qh_1644", 1644, "顺治元", "清入关·定鼎", "融合", "清军入关、迁都北京，行科举、抚汉士以稳统治。", "beijing"),
+  ("ev_qh_1645", "event:qh_1645", 1645, "顺治二", "剃发易服令", "强制", "下令剃发易服，「留头不留发」，激化满汉张力。", "beijing"),
+  ("ev_qh_late", "event:qh_late", 1720, "康熙末", "渐融一体", "融合", "满汉通婚禁渐弛、儒典同尊，文化交渗成势。", "beijing"),
+ ],
+ "persons": [("shunzhi", "顺治帝", "清"), ("kangxi2", "康熙帝", "清")],
+},
+{
+ "id": "yuan_duo", "title": "元多元一体", "kind": "fusion", "region": "fusion",
+ "region_name": RN['fusion'], "region_note": "1271 忽必烈定国号大元，行行省、用汉法、容多族，开跨欧亚格局。",
+ "dossier_label": "元多元一体", "subtitle": "1271 起 · 元", "primary_place": "beijing",
+ "lead": "忽必烈取《易经》「大哉乾元」定国号，都大都，行汉法而存蒙古旧制，设行省统舆图，用色目、南人共治，宗教并容，驿路通欧亚，多元帝国初成。",
+ "parties_note": "多元治理据《元史》与近代研究综合，四等人制与务实用人并存。",
+ "places": [CITY['beijing'], CITY['nanjing']],
+ "events": [
+  ("ev_yu_1271", "event:yu_1271", 1271, "至元八", "定国号大元", "制度", "忽必烈诏建国号大元，取乾元之义，都大都。", "beijing"),
+  ("ev_yu_1276", "event:yu_1276", 1276, "至元十三", "行省定制", "制度", "立行省、行钞法、驿传通欧亚，多族共治。", "beijing"),
+ ],
+ "persons": [("kublai", "忽必烈", "元"), ("yao_shu", "姚枢", "元臣")],
+},
+{
+ "id": "chanyuan", "title": "澶渊之盟", "kind": "fusion", "region": "fusion",
+ "region_name": RN['fusion'], "region_note": "1005 年宋辽澶渊结盟，兄弟相称、岁币互市，开启百余年和平。",
+ "dossier_label": "澶渊之盟", "subtitle": "1005 · 辽宋", "primary_place": "puyang",
+ "a_name": "宋", "b_name": "辽",
+ "lead": "宋真宗景德二年（1005）辽萧太后、圣宗大举南下，宋辽战于澶州。既而议和，约为兄弟之国，宋岁遗辽币帛，沿边互市，遂成百余年无大战之局，民族关系由战转和。",
+ "parties_note": "盟约据《宋史·契丹传》综合，岁币之议宋人多有屈辱之感。",
+ "places": [CITY['puyang'], CITY['kaofeng'], CITY['beijing']],
+ "events": [
+  ("ev_cy_1004", "event:cy_1004", 1004, "景德元", "辽军南下", "战事", "辽圣宗、萧太后亲征，围澶州，宋廷主战主和相持。", "puyang"),
+  ("ev_cy_1005", "event:cy_1005", 1005, "景德二", "澶渊结盟", "和议", "约为兄弟之国，宋岁遗辽银绢，沿边置榷场互市。", "puyang"),
+ ],
+ "routes": [
+  ("rt_cy", "辽师南进", "b",
+   [("beijing", "1004", "辽都南征"), ("puyang", "1004", "澶州对峙")], {"at": "1005", "type": "none", "text": "澶渊之盟"}),
+ ],
+ "timeline": [("1004", "景德元", "辽南下·澶州", True), ("1005", "景德二", "结盟·互市", True)],
+ "persons": [("songzhen", "宋真宗", "宋"), ("liaosheng", "辽圣宗", "辽")],
+},
+
+# ══════════════ 宫廷斗争 ══════════════
+{
+ "id": "beijiu", "title": "杯酒释兵权", "kind": "court", "region": "court",
+ "region_name": RN['court'], "region_note": "961 年宋太祖宴饮间解宿将兵权，开「崇文抑武」之局。",
+ "dossier_label": "杯酒释兵权", "subtitle": "961 · 宋太祖", "primary_place": "kaofeng",
+ "lead": "建隆二年（961）太祖宴石守信等宿将，以「君臣猜疑」为由劝其释兵权、出守藩镇，赏赉优厚。兵权归枢密、将不专兵，宋之「强干弱枝」自此而定。",
+ "parties_note": "故事见《续资治通鉴长编》载，后世或疑其详，然抑武之势确然。",
+ "places": [CITY['kaofeng'], CITY['chenqiao']],
+ "events": [
+  ("ev_bj_961", "event:bj_961", 961, "建隆二", "宴饮释权", "权谋", "太祖宴宿将，婉言劝释兵权，诸将拜辞就镇。", "kaofeng"),
+  ("ev_bj_eff", "event:bj_eff", 962, "建隆三", "崇文抑武", "结局", "兵权归枢密、更戍法行，唐末藩镇之患渐弭。", "kaofeng"),
+ ],
+ "persons": [("songtaizu", "宋太祖", "宋"), ("shishouxin", "石守信", "宋将")],
+},
+{
+ "id": "jiuzi", "title": "九子夺嫡", "kind": "court", "region": "court",
+ "region_name": RN['court'], "region_note": "康熙晚年诸皇子争储，雍正终以缵承登极，谜案丛生。",
+ "dossier_label": "九子夺嫡", "subtitle": "1712—1722 · 清康熙末", "primary_place": "beijing",
+ "lead": "康熙晚年储位久虚，胤礽两立两废，皇子结党（太子、大千岁、八爷等）争斗剧烈。1722 康熙崩，四子胤禛继位为雍正，即位之正否聚讼至今。",
+ "parties_note": "夺嫡据《清圣祖实录》与清史稿综合，继位细节多传说与考辨。",
+ "places": [CITY['beijing'], CITY['changan']],
+ "events": [
+  ("ev_jz_1712", "event:jz_1712", 1712, "康熙五一", "废太子·储位空", "变局", "胤礽再废，储位久虚，诸皇子竞结党羽。", "beijing"),
+  ("ev_jz_1722", "event:jz_1722", 1722, "康熙六一", "雍正嗣位", "结局", "康熙崩，遗诏传四子胤禛，在位为雍正，夺嫡终局。", "beijing"),
+ ],
+ "persons": [("kangxi3", "康熙帝", "清"), ("yongzheng", "雍正帝", "清")],
+},
+{
+ "id": "wugu", "title": "巫蛊之祸", "kind": "court", "region": "court",
+ "region_name": RN['court'], "region_note": "前91 年汉武帝晚年巫蛊冤狱，太子据兵败身死，国本大伤。",
+ "dossier_label": "巫蛊之祸", "subtitle": "前91 · 汉武帝晚年", "primary_place": "changan",
+ "lead": "征和年间江充构陷太子据行巫蛊，武帝信谗、太子惶恐起兵，长安流血数日。太子兵败自尽，皇后卫子夫殉，牵连数万，武帝晚节丧其嗣，悔而建思子宫。",
+ "parties_note": "巫蛊据《汉书·武帝纪》《戾太子传》综合，江充之谮为祸根。",
+ "places": [CITY['changan'], CITY['luoyang']],
+ "events": [
+  ("ev_wg_91", "event:wg_91", -91, "征和二", "江充构陷", "冤狱", "江充诬太子行巫蛊，掘蛊于宫，武帝怒、太子惧。", "changan"),
+  ("ev_wg_war", "event:wg_war", -91, "同年", "太子兵败", "结局", "太子发兵捕江充、旋败走，自尽湖县，卫后殉。", "changan"),
+ ],
+ "persons": [("hanwu2", "汉武帝", "汉"), ("litai", "卫太子据", "汉")],
+},
+{
+ "id": "shaqiu", "title": "沙丘之变", "kind": "court", "region": "court",
+ "region_name": RN['court'], "region_note": "前210 年秦始皇崩于沙丘，赵高李斯矫诏立胡亥、赐死扶苏。",
+ "dossier_label": "沙丘之变", "subtitle": "前210 · 秦", "primary_place": "xingtai",
+ "lead": "始皇三十七年（前210）巡游崩于沙丘，丞相李斯恐生变秘不发丧，赵高说李斯、矫诏立少子胡亥，赐死长子扶苏与蒙恬。秦之倾覆自此伏笔。",
+ "parties_note": "沙丘之变据《史记·秦始皇本纪》综合，矫诏之详为秦亡关键转折。",
+ "places": [CITY['xingtai'], CITY['xianyang']],
+ "events": [
+  ("ev_sq_210", "event:sq_210", -210, "始皇三七", "始皇崩沙丘", "变局", "始皇巡游崩于沙丘平台，李斯赵高秘丧。", "xingtai"),
+  ("ev_sq_false", "event:sq_false", -210, "同年", "矫诏立胡亥", "结局", "赵高说李斯矫诏，赐扶苏、蒙恬死，胡亥嗣位。", "xingtai"),
+ ],
+ "persons": [("qinshihuang2", "秦始皇", "秦"), ("zhao_gao", "赵高", "秦")],
+},
+
+# ══════════════ 思想文化 ══════════════
+{
+ "id": "baijia", "title": "百家争鸣", "kind": "thought", "region": "thought",
+ "region_name": RN['thought'], "region_note": "战国诸子并起，儒墨道法名农百家论衡，中华思想奠基。",
+ "dossier_label": "百家争鸣", "subtitle": "前5—前3 世纪 · 战国", "primary_place": "linzi",
+ "lead": "周室衰微、士阶层崛起，战国诸子各张其说：儒倡仁礼、墨主兼爱、道法自然、法任刑名。齐国稷下学宫聚天下辩士，百家争鸣，奠定此后两千年思想底盘。",
+ "parties_note": "诸子据《史记》《汉书·艺文志》综合，学派源流有后世归纳成分。",
+ "places": [CITY['linzi'], CITY['changan'], CITY['luoyang']],
+ "events": [
+  ("ev_bj_350", "event:bj_350", -350, "战国中", "稷下鼎盛", "思想", "齐稷下学宫招贤，孟荀邹衍之徒并聚，论难不辍。", "linzi"),
+  ("ev_bj_schools", "event:bj_schools", -300, "战国中晚", "儒墨道法", "思想", "儒墨显学对峙，道法渐兴，名农兵杂并出。", "linzi"),
+ ],
+ "persons": [("mengzi", "孟子", "儒"), ("zhuangzi", "庄子", "道")],
+},
+{
+ "id": "fenshu", "title": "焚书坑儒", "kind": "thought", "region": "thought",
+ "region_name": RN['thought'], "region_note": "前213—前212 秦始皇焚诗书、坑术士，思想统制之极端。",
+ "dossier_label": "焚书坑儒", "subtitle": "前213—前212 · 秦", "primary_place": "xianyang",
+ "lead": "始皇三十四年（前213）李斯请焚《诗》《书》百家语，以吏为师；次年方士卢生等求仙不成亡去，始皇怒坑术士儒生四百六十余人于咸阳。文化专制之烈，后世讥之。",
+ "parties_note": "焚坑据《史记·秦始皇本纪》综合，坑儒人数与对象有考辨争议。",
+ "places": [CITY['xianyang'], CITY['changan']],
+ "events": [
+  ("ev_fs_213", "event:fs_213", -213, "始皇三四", "焚诗书", "统制", "李斯请焚民间《诗》《书》百家语，欲以法家一统思想。", "xianyang"),
+  ("ev_fs_212", "event:fs_212", -212, "始皇三五", "坑儒生", "惨案", "方士亡去、谤议朝政，始皇坑儒生于咸阳。", "xianyang"),
+ ],
+ "persons": [("lisi2", "李斯", "秦"), ("qinshihuang3", "秦始皇", "秦")],
+},
+{
+ "id": "fotao", "title": "佛教传入", "kind": "thought", "region": "thought",
+ "region_name": RN['thought'], "region_note": "东汉明帝时佛教经西域入华，洛阳白马寺为汉地第一寺。",
+ "dossier_label": "佛教传入", "subtitle": "67 · 东汉永平", "primary_place": "luoyang",
+ "lead": "永平年间（约67）汉明帝梦金人，遣使西域迎佛法，白马驮经至洛阳，建白马寺，译《四十二章经》。佛教自此东传，渐与儒道交融，成中华三大思想传统之一。",
+ "parties_note": "传入据《后汉书·西域传》与《高僧传》综合，感梦迎僧含传说成分。",
+ "places": [CITY['luoyang'], CITY['changan']],
+ "events": [
+  ("ev_ft_67", "event:ft_67", 67, "永平十", "白马驮经", "传入", "汉使迎竺法兰、摄摩腾，以白马载经至洛阳。", "luoyang"),
+  ("ev_ft_temple", "event:ft_temple", 68, "永平十一", "白马寺立", "本土化", "于洛阳建白马寺，译经其中，汉地伽蓝之始。", "luoyang"),
+ ],
+ "persons": [("hanming", "汉明帝", "汉"), ("zhufalan", "竺法兰", "天竺僧")],
+},
+{
+ "id": "lixue", "title": "宋明理学", "kind": "thought", "region": "thought",
+ "region_name": RN['thought'], "region_note": "南宋朱熹集理学大成为「程朱」，陆九渊倡心学，明清立于官学。",
+ "dossier_label": "宋明理学", "subtitle": "1175 · 鹅湖之会", "primary_place": "eqihu",
+ "lead": "两宋儒者融合佛老、重振孔孟。1175 吕祖谦邀朱熹、陆九渊会于鹅湖，论「道问学」与「尊德性」之分，朱陆异同自此显。朱熹《四书章句》后定为科举圭臬，理学统摄元明清。",
+ "parties_note": "理学据《宋史·道学传》与《朱子年谱》综合，朱陆之争为理学内部张力。",
+ "places": [CITY['eqihu'], CITY['luoyang']],
+ "events": [
+  ("ev_lx_1175", "event:lx_1175", 1175, "淳熙二", "鹅湖之会", "论辩", "朱陆会讲鹅湖，辩为学工夫，和而不同。", "eqihu"),
+  ("ev_lx_1241", "event:lx_1241", 1241, "淳祐元", "理学官学化", "影响", "朱熹从祀孔庙，四书定为科举行文之本。", "luoyang"),
+ ],
+ "persons": [("zhuxi", "朱熹", "南宋"), ("lujiuyuan", "陆九渊", "南宋")],
+},
+
+# ══════════════ 科技医学 ══════════════
+{
+ "id": "zhangheng", "title": "张衡地动仪", "kind": "tech", "region": "tech",
+ "region_name": RN['tech'], "region_note": "132 年张衡造候风地动仪，世界最早测震仪器。",
+ "dossier_label": "张衡地动仪", "subtitle": "132 · 东汉阳嘉", "primary_place": "luoyang",
+ "lead": "东汉阳嘉元年（132）张衡为太史令，铸候风地动仪，以精铜为之，外有八龙衔丸，地震则震方龙发机吐丸。曾测陇西地震，京师人服其妙，为世界测震器械之祖。",
+ "parties_note": "地动仪据《后汉书·张衡传》综合，原器失传、复原方案有争议。",
+ "places": [CITY['luoyang'], CITY['changan']],
+ "events": [
+  ("ev_zh_132", "event:zh_132", 132, "阳嘉元", "候风地动仪成", "科技", "张衡铸铜仪，八龙衔丸，机关巧绝。", "luoyang"),
+  ("ev_zh_test", "event:zh_test", 138, "永和七", "测陇西震", "验证", "一龙发机而地动，驿至果报陇西震，众乃服。", "luoyang"),
+ ],
+ "persons": [("zhangheng2", "张衡", "东汉")],
+},
+{
+ "id": "zuchongzhi", "title": "祖冲之圆周率", "kind": "tech", "region": "tech",
+ "region_name": RN['tech'], "region_note": "南朝祖冲之算圆周率至小数点后七位，领先世界千年。",
+ "dossier_label": "祖冲之圆周率", "subtitle": "480 · 南朝", "primary_place": "jiankang",
+ "lead": "南朝祖冲之精算数，以缀术求圆周率在 3.1415926 与 3.1415927 之间，并定约率 22/7、密率 355/113，此精度领先世界近千年；又造《大明历》、指南车。",
+ "parties_note": "圆周率据《南史·祖冲之传》综合，密率 355/113 后称「祖率」。",
+ "places": [CITY['jiankang'], CITY['changan']],
+ "events": [
+  ("ev_zc_463", "event:zc_463", 463, "宋大明七", "上大明历", "历法", "祖冲之进《大明历》，破旧历岁差之陋。", "jiankang"),
+  ("ev_zc_pi", "event:zc_pi", 480, "齐建元", "圆周率精算", "科技", "算圆周至七位小数，定密率 355/113，旷古未有。", "jiankang"),
+ ],
+ "persons": [("zuchongzhi2", "祖冲之", "南朝")],
+},
+{
+ "id": "shenkuo", "title": "沈括梦溪笔谈", "kind": "tech", "region": "tech",
+ "region_name": RN['tech'], "region_note": "1088 年沈括成《梦溪笔谈》，百科全书式科学笔记。",
+ "dossier_label": "沈括梦溪笔谈", "subtitle": "1088 · 北宋元祐", "primary_place": "zhenjiang",
+ "lead": "北宋沈括晚居润州梦溪园，撰《梦溪笔谈》二十六卷，记天文、历法、算数、地质、医药、技艺，最早记述磁偏角与活字，被誉为中国科学史里程碑。",
+ "parties_note": "笔谈据《梦溪笔谈》原书及研究综合。",
+ "places": [CITY['zhenjiang'], CITY['kaofeng']],
+ "events": [
+  ("ev_sk_1072", "event:sk_1072", 1072, "熙宁五", "奉使察访", "科学", "沈括提举司天监、察访两浙，究水利舆地。", "kaofeng"),
+  ("ev_sk_1088", "event:sk_1088", 1088, "元祐三", "梦溪成书", "科技", "隐居梦溪园，成《笔谈》，录格物之知。", "zhenjiang"),
+ ],
+ "persons": [("shenkuo2", "沈括", "北宋")],
+},
+{
+ "id": "jiasixie", "title": "齐民要术", "kind": "tech", "region": "tech",
+ "region_name": RN['tech'], "region_note": "544 年贾思勰撰《齐民要术》，世界最早农学巨著之一。",
+ "dossier_label": "齐民要术", "subtitle": "544 · 东魏", "primary_place": "yidu",
+ "lead": "东魏高阳太守贾思勰采捃经传、询之老成，成《齐民要术》十卷，详耕织、园蔬、畜牧、酿造，为现存最早最系统的农学总结，惠及千古农事。",
+ "parties_note": "要术据原书序及农史综合。",
+ "places": [CITY['yidu'], CITY['luoyang']],
+ "events": [
+  ("ev_js_533", "event:js_533", 533, "东魏天平", "采摭农书", "农学", "贾思勰官高阳，访老农、集古法，着手纂要术。", "yidu"),
+  ("ev_js_544", "event:js_544", 544, "东魏", "要术成", "科技", "《齐民要术》十卷成，农学体系初立。", "yidu"),
+ ],
+ "persons": [("jiasixie2", "贾思勰", "东魏")],
+},
+
+# ══════════════ 对外交流（kind=frontier, region=exchange）══════════════
+{
+ "id": "zhangqian", "title": "张骞通西域", "kind": "frontier", "region": "exchange",
+ "region_name": RN['exchange'], "region_note": "前138 起张骞「凿空」西域，丝绸之路由此贯通。",
+ "dossier_label": "张骞通西域", "subtitle": "前138—前126 · 西汉", "primary_place": "changan",
+ "layer_title": "丝绸之路叠加", "timeline_title": "张骞凿空时间轴", "route_legend": "丝绸之路",
+ "lead": "汉武帝欲联大月氏夹击匈奴，前138 张骞应募西使，途中两度被拘、历十三年归汉，具言西域诸国。其后丝路畅通，物产文明东西交辉，西域自此入中华视野。",
+ "parties_note": "凿空据《史记·大宛列传》《汉书·张骞传》综合，行程细节多采传闻。",
+ "places": [CITY['changan'], CITY['loulan']],
+ "events": [
+  ("ev_zq_138", "event:zq_138", -138, "建元三", "张骞西使", "出使", "张骞奉使大月氏，道经匈奴被留，伺机西遁。", "changan"),
+  ("ev_zq_126", "event:zq_126", -126, "元朔三", "归汉言西域", "沟通", "骞归汉，具奏西域地形物产，丝路渐通。", "changan"),
+ ],
+ "routes": [
+  ("rt_zq", "长安→西域", "b",
+   [("changan", "-138", "长安启程"), ("loulan", "-129", "抵西域")], {"at": "-138", "type": "none", "text": "凿空西域"}),
+ ],
+ "timeline": [("-138", "建元三", "张骞西使", True), ("-126", "元朔三", "归汉", True)],
+ "persons": [("zhangqian2", "张骞", "西汉"), ("hanwu3", "汉武帝", "汉")],
+},
+{
+ "id": "zhenghe", "title": "郑和下西洋", "kind": "frontier", "region": "exchange",
+ "region_name": RN['exchange'], "region_note": "1405—1433 郑和七下西洋，堪比大航海前奏的和平远航。",
+ "dossier_label": "郑和下西洋", "subtitle": "1405—1433 · 明永乐—宣德", "primary_place": "taicang",
+ "layer_title": "郑和航线叠加", "timeline_title": "郑和下西洋时间轴", "route_legend": "郑和航线",
+ "lead": "永乐三年（1405）郑和率宝船巨艦自刘家港启航，历占城、满剌加、锡兰、忽鲁谟斯诸国，凡七下西洋，耀威德、通贸易。其舰队的规模与技术，较欧人远航早近百年。",
+ "parties_note": "远航据《明史·郑和传》与《瀛涯胜览》综合。",
+ "places": [CITY['taicang'], CITY['zhancheng'], CITY['beijing']],
+ "events": [
+  ("ev_zh_1405", "event:zh_1405", 1405, "永乐三", "首航西洋", "远航", "郑和率舟师自刘家港出发，遍历南洋诸国。", "taicang"),
+  ("ev_zh_1433", "event:zh_1433", 1433, "宣德八", "七下而止", "结局", "第七次远航归，宝船之制渐弛，海洋经略中辍。", "taicang"),
+ ],
+ "routes": [
+  ("rt_zh", "刘家港→西洋", "b",
+   [("taicang", "1405", "启航"), ("zhancheng", "1405", "占城"), ("beijing", "1433", "归报")], {"at": "1405", "type": "none", "text": "七下西洋"}),
+ ],
+ "timeline": [("1405", "永乐三", "首航", True), ("1433", "宣德八", "七下止", True)],
+ "persons": [("zhenghe2", "郑和", "明"), ("yongle2", "明成祖", "明")],
+},
+{
+ "id": "xuanzang", "title": "玄奘西行", "kind": "frontier", "region": "exchange",
+ "region_name": RN['exchange'], "region_note": "629 年玄奘私发长安，西行求法十七年，归译经论。",
+ "dossier_label": "玄奘西行", "subtitle": "629—645 · 唐", "primary_place": "changan",
+ "layer_title": "玄奘西行路线叠加", "timeline_title": "玄奘西行时间轴", "route_legend": "玄奘西行",
+ "lead": "贞观三年（629）玄奘为究瑜伽唯识，冒禁西行，越葱岭、历西域、抵天竺那烂陀，从戒贤学。645 携经论归长安，译经千卷，著《大唐西域记》，为中外文化交流巨擘。",
+ "parties_note": "西行据《大慈恩寺三藏法师传》《大唐西域记》综合。",
+ "places": [CITY['changan'], CITY['nalanda']],
+ "events": [
+  ("ev_xz_629", "event:xz_629", 629, "贞观三", "冒禁西行", "求法", "玄奘自长安出发，孤身涉险、西趋天竺。", "changan"),
+  ("ev_xz_645", "event:xz_645", 645, "贞观十九", "归国译经", "沟通", "携梵本归长安，译经讲学，著《西域记》。", "changan"),
+ ],
+ "routes": [
+  ("rt_xz", "长安→天竺", "b",
+   [("changan", "629", "启程"), ("nalanda", "631", "抵那烂陀")], {"at": "629", "type": "none", "text": "西行求法"}),
+ ],
+ "timeline": [("629", "贞观三", "西行", True), ("645", "贞观十九", "归国", True)],
+ "persons": [("xuanzang2", "玄奘", "唐"), ("taizong2", "唐太宗", "唐")],
+},
+{
+ "id": "jianzhen", "title": "鉴真东渡", "kind": "frontier", "region": "exchange",
+ "region_name": RN['exchange'], "region_note": "753 年鉴真六次东渡终抵日本，传律学与盛唐文化。",
+ "dossier_label": "鉴真东渡", "subtitle": "743—753 · 唐", "primary_place": "yangzhou",
+ "layer_title": "鉴真东渡路线叠加", "timeline_title": "鉴真东渡时间轴", "route_legend": "鉴真东渡",
+ "lead": "扬州高僧鉴真应日僧之邀，六次东渡、双目失明而不辍，753 终抵平城京，于唐招提寺传律授戒，并携建筑、医药、工艺之术，盛唐文明遂植日本。",
+ "parties_note": "东渡据《唐大和上东征传》综合，五次失败之艰备载。",
+ "places": [CITY['yangzhou'], CITY['heijokyo']],
+ "events": [
+  ("ev_jz_743", "event:jz_743", 743, "天宝二", "首图东渡", "东渡", "鉴真受日僧荣叡、普照邀，首谋泛海赴日。", "yangzhou"),
+  ("ev_jz_753", "event:jz_753", 753, "天宝十二", "抵平城京", "沟通", "第六渡终抵日本，传戒建寺，唐风东被。", "heijokyo"),
+ ],
+ "routes": [
+  ("rt_jz", "扬州→平城京", "b",
+   [("yangzhou", "753", "启航"), ("heijokyo", "753", "抵日")], {"at": "753", "type": "none", "text": "六渡终成"}),
+ ],
+ "timeline": [("743", "天宝二", "首谋东渡", True), ("753", "天宝十二", "抵日传法", True)],
+ "persons": [("jianzhen2", "鉴真", "唐"), ("rongrui", "荣叡", "日僧")],
+},
+]

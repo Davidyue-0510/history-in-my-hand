@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_mf_1627",
+   "subject": "event:mf_1627",
+   "year": 1627,
+   "era": "天启七—崇祯元",
+   "title": "崇祯即位·危局",
+   "kind": "危局",
+   "text": "崇祯即位，朝政败坏、边饷告急，陕北已现民变苗头。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_mf_1644_3",
+   "subject": "event:mf_1644_3",
+   "year": 1644,
+   "era": "崇祯十七年三月",
+   "title": "李自成破北京",
+   "kind": "亡国",
+   "text": "大顺军破京师，崇祯自缢煤山，明祚亡。",
+   "place": "meishan"
+  },
+  {
+   "id": "ev_mf_1644_q",
+   "subject": "event:mf_1644_q",
+   "year": 1644,
+   "era": "崇祯十七年四月",
+   "title": "清军入关",
+   "kind": "变局",
+   "text": "吴三桂降清、引兵入关，败大顺于一片石，清迁都北京。",
+   "place": "shanhaiguan"
+  }
+ ]
+}

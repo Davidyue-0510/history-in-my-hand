@@ -1,0 +1,54 @@
+{
+ "events": [
+  {
+   "id": "ev_lc_622",
+   "subject": "event:lc_622",
+   "year": 622,
+   "era": "唐武德五年",
+   "title": "关中大蝗",
+   "kind": "灾异",
+   "text": "《新唐书》载武德五年蝗，太宗吞蝗以示为民请命。",
+   "place": "guanzhong"
+  },
+  {
+   "id": "ev_lc_715",
+   "subject": "event:lc_715",
+   "year": 715,
+   "era": "唐开元三年",
+   "title": "山东大蝗",
+   "kind": "灾异",
+   "text": "姚崇持「夜火坑捕」法灭蝗，山东、河南大蝗赖此稍弭。",
+   "place": "shandong"
+  },
+  {
+   "id": "ev_lc_1073",
+   "subject": "event:lc_1073",
+   "year": 1073,
+   "era": "北宋熙宁六年",
+   "title": "开封诸路蝗",
+   "kind": "灾异",
+   "text": "熙宁中连岁蝗旱，神宗诏赈，王安石行青苗以济。",
+   "place": "kaifeng"
+  },
+  {
+   "id": "ev_lc_1628",
+   "subject": "event:lc_1628",
+   "year": 1628,
+   "era": "明崇祯元年",
+   "title": "陕北蝗旱",
+   "kind": "灾异",
+   "text": "崇祯初陕北连年蝗旱，民大饥，流寇起。",
+   "place": "yanan"
+  },
+  {
+   "id": "ev_lc_1943",
+   "subject": "event:lc_1943",
+   "year": 1943,
+   "era": "民国三十二年",
+   "title": "河南大旱蝗",
+   "kind": "灾异",
+   "text": "1942—1943 河南大旱继以飞蝗，赤地千里，饥殍载道。",
+   "place": "henan"
+  }
+ ]
+}

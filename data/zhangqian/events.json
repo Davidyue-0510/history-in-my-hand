@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zq_138",
+   "subject": "event:zq_138",
+   "year": -138,
+   "era": "建元三",
+   "title": "张骞西使",
+   "kind": "出使",
+   "text": "张骞奉使大月氏，道经匈奴被留，伺机西遁。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_zq_126",
+   "subject": "event:zq_126",
+   "year": -126,
+   "era": "元朔三",
+   "title": "归汉言西域",
+   "kind": "沟通",
+   "text": "骞归汉，具奏西域地形物产，丝路渐通。",
+   "place": "changan"
+  }
+ ]
+}

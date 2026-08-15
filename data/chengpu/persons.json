@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "jinwen",
+   "name": "晋文公",
+   "side": "晋",
+   "influence": 0
+  },
+  {
+   "id": "ziyu",
+   "name": "子玉",
+   "side": "楚",
+   "influence": 0
+  },
+  {
+   "id": "xianzhen",
+   "name": "先轸",
+   "side": "晋",
+   "influence": 0
+  }
+ ]
+}

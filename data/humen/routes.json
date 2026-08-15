@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_hm_qing",
+   "name": "清军守口",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "guangzhou",
+     "at": "1841-01",
+     "label": "清增防"
+    },
+    {
+     "place": "humen",
+     "at": "1841-02",
+     "label": "炮台"
+    }
+   ],
+   "outcome": {
+    "at": "1841-02",
+    "type": "defeat",
+    "text": "虎门炮台陷"
+   }
+  },
+  {
+   "id": "rt_hm_ying",
+   "name": "英舰北上",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "dinghai",
+     "at": "1840-07",
+     "label": "英占定海"
+    },
+    {
+     "place": "ningbo",
+     "at": "1841-01",
+     "label": "英占宁波"
+    },
+    {
+     "place": "humen",
+     "at": "1841-02",
+     "label": "破虎门"
+    }
+   ],
+   "outcome": {
+    "at": "1841-02",
+    "type": "victory",
+    "text": "英破虎门炮台"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1840-07",
+   "era": "道光二十年",
+   "label": "英占定海",
+   "key": false
+  },
+  {
+   "at": "1841-01",
+   "era": "二十一年",
+   "label": "英逼广州",
+   "key": false
+  },
+  {
+   "at": "1841-02",
+   "era": "二月",
+   "label": "虎门陷",
+   "key": true
+  }
+ ]
+}

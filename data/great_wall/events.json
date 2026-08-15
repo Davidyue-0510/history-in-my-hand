@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_gw_qin",
+   "subject": "event:gw_qin",
+   "year": -214,
+   "era": "秦始皇三十三年",
+   "title": "连秦赵燕长城",
+   "kind": "工程",
+   "text": "始皇使蒙恬北逐匈奴，连燕、赵、秦故城，西起临洮东至辽东，为万里长城之始。",
+   "place": "lintao"
+  },
+  {
+   "id": "ev_gw_han",
+   "subject": "event:gw_han",
+   "year": -121,
+   "era": "汉武帝元狩",
+   "title": "河西长城·障塞",
+   "kind": "工程",
+   "text": "汉逐匈奴据河西，筑令居以西障塞、长城，护丝绸之路。",
+   "place": "jiayuguan"
+  },
+  {
+   "id": "ev_gw_ming",
+   "subject": "event:gw_ming",
+   "year": 1474,
+   "era": "明成化—万历",
+   "title": "九边砖石长城",
+   "kind": "工程",
+   "text": "明自洪武至万历，于北边设九镇、垒砖石、建敌台，成今日所见万里巨防。",
+   "place": "badaling"
+  }
+ ]
+}

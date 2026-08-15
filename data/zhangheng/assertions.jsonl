@@ -1,0 +1,2 @@
+{"id": "AX_ev_zh_132", "subject": "event:zh_132", "predicate": "事件", "value_text": "张衡铸铜仪，八龙衔丸，机关巧绝。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": 132, "end": 132, "era_text": "阳嘉元"}, "place": "luoyang"}
+{"id": "AX_ev_zh_test", "subject": "event:zh_test", "predicate": "事件", "value_text": "一龙发机而地动，驿至果报陇西震，众乃服。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": 138, "end": 138, "era_text": "永和七"}, "place": "luoyang"}

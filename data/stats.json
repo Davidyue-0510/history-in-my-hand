@@ -1,9 +1,9 @@
 {
-  "scenes_total": 28,
-  "historical": 19,
+  "scenes_total": 59,
+  "historical": 50,
   "fictional": 9,
   "assertions_total": 574,
-  "sources_total": 46,
+  "sources_total": 47,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
@@ -217,6 +217,223 @@
       "kind": "county",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "changping",
+      "title": "长平之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "guiling",
+      "title": "桂陵之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "maling",
+      "title": "马陵之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "chengpu",
+      "title": "城濮之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "boju",
+      "title": "柏举之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "julu",
+      "title": "巨鹿之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "gaixia",
+      "title": "垓下之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "mobai",
+      "title": "漠北之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "kunyang",
+      "title": "昆阳之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "guandu",
+      "title": "官渡之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "chibi",
+      "title": "赤壁之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "yiling",
+      "title": "夷陵之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "xiaoyaojin",
+      "title": "逍遥津之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "feishui",
+      "title": "淝水之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "canhebei",
+      "title": "参合陂之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "zhongli",
+      "title": "钟离之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "hulao",
+      "title": "虎牢关之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "talas",
+      "title": "怛罗斯之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "suiyang",
+      "title": "睢阳之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "chanyuan",
+      "title": "澶渊之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "yancheng",
+      "title": "郾城之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "heshangyuan",
+      "title": "和尚原之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "caishiji",
+      "title": "采石矶之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "diaoyucheng",
+      "title": "钓鱼城之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "yaoshan",
+      "title": "崖山海战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "poyanghu",
+      "title": "鄱阳湖之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "tumu",
+      "title": "土木堡之变",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "beijing",
+      "title": "北京保卫战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "yaksa",
+      "title": "雅克萨之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "tianjing",
+      "title": "天京保卫战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
+    },
+    {
+      "id": "humen",
+      "title": "虎门之战",
+      "kind": "battle",
+      "assertions": 0,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -247,6 +464,37 @@
     "imjin": "万历朝鲜之役·壬辰倭乱",
     "yellow_sea_1894": "甲午战争·黄海海战",
     "qin_mie_liu_guo": "秦灭六国·灭赵之战",
-    "three_campaigns": "三大战役·辽沈·淮海·平津"
+    "three_campaigns": "三大战役·辽沈·淮海·平津",
+    "changping": "长平之战",
+    "guiling": "桂陵之战",
+    "maling": "马陵之战",
+    "chengpu": "城濮之战",
+    "boju": "柏举之战",
+    "julu": "巨鹿之战",
+    "gaixia": "垓下之战",
+    "mobai": "漠北之战",
+    "kunyang": "昆阳之战",
+    "guandu": "官渡之战",
+    "chibi": "赤壁之战",
+    "yiling": "夷陵之战",
+    "xiaoyaojin": "逍遥津之战",
+    "feishui": "淝水之战",
+    "canhebei": "参合陂之战",
+    "zhongli": "钟离之战",
+    "hulao": "虎牢关之战",
+    "talas": "怛罗斯之战",
+    "suiyang": "睢阳之战",
+    "chanyuan": "澶渊之战",
+    "yancheng": "郾城之战",
+    "heshangyuan": "和尚原之战",
+    "caishiji": "采石矶之战",
+    "diaoyucheng": "钓鱼城之战",
+    "yaoshan": "崖山海战",
+    "poyanghu": "鄱阳湖之战",
+    "tumu": "土木堡之变",
+    "beijing": "北京保卫战",
+    "yaksa": "雅克萨之战",
+    "tianjing": "天京保卫战",
+    "humen": "虎门之战"
   }
 }

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_xz_629",
+   "subject": "event:xz_629",
+   "year": 629,
+   "era": "贞观三",
+   "title": "冒禁西行",
+   "kind": "求法",
+   "text": "玄奘自长安出发，孤身涉险、西趋天竺。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_xz_645",
+   "subject": "event:xz_645",
+   "year": 645,
+   "era": "贞观十九",
+   "title": "归国译经",
+   "kind": "沟通",
+   "text": "携梵本归长安，译经讲学，著《西域记》。",
+   "place": "changan"
+  }
+ ]
+}

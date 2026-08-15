@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_hs_song",
+   "name": "宋军西守",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "baoji",
+     "at": "1131-09",
+     "label": "吴玠进驻"
+    },
+    {
+     "place": "heshangyuan",
+     "at": "1131-10",
+     "label": "设伏"
+    }
+   ],
+   "outcome": {
+    "at": "1131-10",
+    "type": "victory",
+    "text": "和尚原破金"
+   }
+  },
+  {
+   "id": "rt_hs_jin",
+   "name": "金军攻蜀",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "fengxiang",
+     "at": "1131-09",
+     "label": "金起"
+    },
+    {
+     "place": "heshangyuan",
+     "at": "1131-10",
+     "label": "仰攻"
+    }
+   ],
+   "outcome": {
+    "at": "1131-10",
+    "type": "defeat",
+    "text": "金攻和尚原败退"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1131-09",
+   "era": "绍兴元年",
+   "label": "金攻和尚原",
+   "key": false
+  },
+  {
+   "at": "1131-10",
+   "era": "十月",
+   "label": "吴玠设伏",
+   "key": false
+  },
+  {
+   "at": "1131-10",
+   "era": "十月",
+   "label": "和尚原破金",
+   "key": true
+  }
+ ]
+}

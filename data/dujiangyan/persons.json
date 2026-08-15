@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "libing",
+   "name": "李冰",
+   "side": "秦蜀守",
+   "influence": 0
+  },
+  {
+   "id": "wengong",
+   "name": "文翁",
+   "side": "西汉蜀守",
+   "influence": 0
+  }
+ ]
+}

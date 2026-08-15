@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_dy_196",
+   "subject": "event:dy_196",
+   "year": 196,
+   "era": "建安元",
+   "title": "乱世疫起",
+   "kind": "疫灾",
+   "text": "中原板荡、民多流亡，疾疫渐兴，医书散佚。",
+   "place": "luoyang"
+  },
+  {
+   "id": "ev_dy_217",
+   "subject": "event:dy_217",
+   "year": 217,
+   "era": "建安廿二",
+   "title": "建安大疫",
+   "kind": "疫灾",
+   "text": "瘟疫大作，张仲景宗族二百余口十年间死伤近七成，促其撰方书。",
+   "place": "nanyang"
+  },
+  {
+   "id": "ev_dy_book",
+   "subject": "event:dy_book",
+   "year": 220,
+   "era": "建安末",
+   "title": "伤寒杂病论成",
+   "kind": "医学",
+   "text": "张仲景据临床集验成《伤寒杂病论》，开辨证论治之先，后世尊医圣。",
+   "place": "nanyang"
+  }
+ ]
+}

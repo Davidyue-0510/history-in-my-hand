@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wangmang",
+   "name": "王莽",
+   "side": "新",
+   "influence": 0
+  },
+  {
+   "id": "liuxiu",
+   "name": "刘秀",
+   "side": "汉宗室",
+   "influence": 0
+  }
+ ]
+}

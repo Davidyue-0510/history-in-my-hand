@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "hanming",
+   "name": "汉明帝",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "zhufalan",
+   "name": "竺法兰",
+   "side": "天竺僧",
+   "influence": 0
+  }
+ ]
+}

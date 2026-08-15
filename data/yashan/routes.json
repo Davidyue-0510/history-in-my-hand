@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_ys",
+   "name": "元军南下",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "beijing",
+     "at": "1276",
+     "label": "大举南征"
+    },
+    {
+     "place": "jiangmen",
+     "at": "1279",
+     "label": "崖山决战"
+    }
+   ],
+   "outcome": {
+    "at": "1279",
+    "type": "victory",
+    "text": "灭宋一统"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1276",
+   "era": "德祐二",
+   "label": "临安降·南奔",
+   "key": true
+  },
+  {
+   "at": "1279",
+   "era": "祥兴二",
+   "label": "崖山·宋亡",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_bj_main",
+   "name": "北京拒守",
+   "at": "1449-10",
+   "era": "正统十四年十月",
+   "place": "desheng",
+   "winner": "a",
+   "outcome": "于谦亲督军门，军民死守，瓦剌攻城不克，闻关外袭威胁退。",
+   "subject": "event:bj_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "于谦",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 60,
+     "posture": "死守",
+     "commit_basis": "明军据城励众，背城借一。",
+     "commit_confidence": 0.55
+    },
+    {
+     "side": "b",
+     "commander": "也先",
+     "committed_ratio": 1.0,
+     "fatigue": "marching",
+     "march_72h_li": 80,
+     "posture": "顿兵",
+     "commit_basis": "瓦剌挟帝攻坚不下，师老兵疲。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "1449-10",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "1449-10",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

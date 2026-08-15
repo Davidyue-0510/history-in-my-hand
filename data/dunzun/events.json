@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_dz_134",
+   "subject": "event:dz_134",
+   "year": -134,
+   "era": "元光元年",
+   "title": "天人三策·独尊儒术",
+   "kind": "文化",
+   "text": "武帝诏举贤良，董仲舒对天人三策，请罢黜百家、独尊儒术，立五经博士。",
+   "place": "changan_dz"
+  },
+  {
+   "id": "ev_dz_taixue",
+   "subject": "event:dz_taixue",
+   "year": -124,
+   "era": "元朔五年",
+   "title": "兴太学",
+   "kind": "制度",
+   "text": "为五经博士置弟子员，太学兴，儒生入仕之途大开。",
+   "place": "changan_dz"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "places": [
+  {
+   "id": "changping",
+   "name": "长平",
+   "lon": 112.5,
+   "lat": 35.78,
+   "note": "今山西高平西北长平村"
+  },
+  {
+   "id": "danze",
+   "name": "丹朱岭",
+   "lon": 112.62,
+   "lat": 35.85,
+   "note": "长平之北屏障"
+  },
+  {
+   "id": "handan",
+   "name": "邯郸",
+   "lon": 114.49,
+   "lat": 36.61,
+   "note": "赵都"
+  },
+  {
+   "id": "xianyang",
+   "name": "咸阳",
+   "lon": 108.7,
+   "lat": 34.33,
+   "note": "秦都"
+  },
+  {
+   "id": "shangdang",
+   "name": "上党",
+   "lon": 112.86,
+   "lat": 36.2,
+   "note": "归赵引发战端"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

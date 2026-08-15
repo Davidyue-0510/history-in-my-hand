@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "kangxi3",
+   "name": "康熙帝",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "yongzheng",
+   "name": "雍正帝",
+   "side": "清",
+   "influence": 0
+  }
+ ]
+}

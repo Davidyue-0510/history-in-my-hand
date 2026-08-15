@@ -1,0 +1,34 @@
+{
+ "routes": [
+  {
+   "id": "rt_cs",
+   "name": "张楚扩张",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "dazexiang",
+     "at": "-209",
+     "label": "大泽乡"
+    },
+    {
+     "place": "xianyang",
+     "at": "-209",
+     "label": "西向击秦"
+    }
+   ],
+   "outcome": {
+    "at": "-209",
+    "type": "victory",
+    "text": "首义亡秦"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "-209",
+   "era": "二世元",
+   "label": "大泽乡起义",
+   "key": true
+  }
+ ]
+}

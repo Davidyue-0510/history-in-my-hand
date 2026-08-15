@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_zl_wei",
+   "subject": "event:zl_wei",
+   "year": 507,
+   "era": "天监六年",
+   "title": "魏围钟离",
+   "kind": "战事",
+   "text": "北魏中山王英围钟离。"
+  },
+  {
+   "id": "ev_zl_wei2",
+   "subject": "event:zl_wei2",
+   "year": 507,
+   "era": "天监六年",
+   "title": "韦叡赴援",
+   "kind": "战事",
+   "text": "韦叡率兵救钟离。",
+   "place": "zhongli"
+  },
+  {
+   "id": "ev_zl_jz",
+   "subject": "event:zl_jz",
+   "year": 507,
+   "era": "天监六年",
+   "title": "钟离破魏",
+   "kind": "战事",
+   "text": "梁军水陆夹击，魏军溃。",
+   "place": "zhongli"
+  }
+ ]
+}

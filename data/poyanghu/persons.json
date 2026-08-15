@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhuyuanzhang",
+   "name": "朱元璋",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "chenyouliang",
+   "name": "陈友谅",
+   "side": "汉",
+   "influence": 0
+  }
+ ]
+}

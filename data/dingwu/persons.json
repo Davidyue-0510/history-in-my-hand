@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zengguofan2",
+   "name": "曾国藩",
+   "side": "清重臣",
+   "influence": 0
+  },
+  {
+   "id": "lihongzhang2",
+   "name": "李鸿章",
+   "side": "清重臣",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_jz_743",
+   "subject": "event:jz_743",
+   "year": 743,
+   "era": "天宝二",
+   "title": "首图东渡",
+   "kind": "东渡",
+   "text": "鉴真受日僧荣叡、普照邀，首谋泛海赴日。",
+   "place": "yangzhou"
+  },
+  {
+   "id": "ev_jz_753",
+   "subject": "event:jz_753",
+   "year": 753,
+   "era": "天宝十二",
+   "title": "抵平城京",
+   "kind": "沟通",
+   "text": "第六渡终抵日本，传戒建寺，唐风东被。",
+   "place": "heijokyo"
+  }
+ ]
+}

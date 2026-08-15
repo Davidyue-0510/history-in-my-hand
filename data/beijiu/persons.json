@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "songtaizu",
+   "name": "宋太祖",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "shishouxin",
+   "name": "石守信",
+   "side": "宋将",
+   "influence": 0
+  }
+ ]
+}

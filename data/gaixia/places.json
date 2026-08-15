@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "gaixia",
+   "name": "垓下",
+   "lon": 117.56,
+   "lat": 33.5,
+   "note": "今安徽灵璧南"
+  },
+  {
+   "id": "pengcheng",
+   "name": "彭城",
+   "lon": 117.18,
+   "lat": 34.26,
+   "note": "楚故都"
+  },
+  {
+   "id": "jiangdong",
+   "name": "江东",
+   "lon": 120.58,
+   "lat": 31.3,
+   "note": "项羽起兵地"
+  },
+  {
+   "id": "wujiang",
+   "name": "乌江",
+   "lon": 118.25,
+   "lat": 31.87,
+   "note": "羽自刎处"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

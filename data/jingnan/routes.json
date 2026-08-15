@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_jn_march",
+   "name": "燕军南下",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "beiping",
+     "at": "1399",
+     "label": "北平起"
+    },
+    {
+     "place": "nanjing",
+     "at": "1402",
+     "label": "破南京"
+    }
+   ],
+   "outcome": {
+    "at": "1402",
+    "type": "victory",
+    "text": "靖难成功"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1399",
+   "era": "建文元",
+   "label": "燕王起兵",
+   "key": true
+  },
+  {
+   "at": "1402",
+   "era": "四",
+   "label": "破南京·即位",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zz_595",
+   "subject": "event:zz_595",
+   "year": 595,
+   "era": "开皇十五",
+   "title": "李春造桥",
+   "kind": "工程",
+   "text": "李春建安济桥于洨河，敞肩拱减荷、利舟行。",
+   "place": "zhaoxian"
+  },
+  {
+   "id": "ev_zz_later",
+   "subject": "event:zz_later",
+   "year": 605,
+   "era": "大业元",
+   "title": "名动南北",
+   "kind": "影响",
+   "text": "桥成后通衢便利，唐人铭之，世代修缮沿用。",
+   "place": "zhaoxian"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_ch_yan",
+   "subject": "event:ch_yan",
+   "year": 395,
+   "era": "登国十年",
+   "title": "燕伐魏",
+   "kind": "战事",
+   "text": "慕容宝率燕军攻魏。"
+  },
+  {
+   "id": "ev_ch_wei",
+   "subject": "event:ch_wei",
+   "year": 395,
+   "era": "登国十年",
+   "title": "魏诱敌",
+   "kind": "战事",
+   "text": "魏王珪逐燕军疲，设伏。",
+   "place": "canhebei"
+  },
+  {
+   "id": "ev_ch_jz",
+   "subject": "event:ch_jz",
+   "year": 395,
+   "era": "登国十年",
+   "title": "参合陂破燕",
+   "kind": "战事",
+   "text": "魏军袭燕营，坑降卒四五万。",
+   "place": "canhebei"
+  }
+ ]
+}

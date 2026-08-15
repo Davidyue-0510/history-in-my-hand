@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_hj",
+   "name": "红巾北上",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "yingzhou",
+     "at": "1351",
+     "label": "颍州起"
+    },
+    {
+     "place": "beijing",
+     "at": "1368",
+     "label": "克大都"
+    }
+   ],
+   "outcome": {
+    "at": "1368",
+    "type": "victory",
+    "text": "驱元建明"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1351",
+   "era": "至正十一",
+   "label": "颍州举事",
+   "key": true
+  },
+  {
+   "at": "1368",
+   "era": "洪武元",
+   "label": "明立·元亡",
+   "key": true
+  }
+ ]
+}

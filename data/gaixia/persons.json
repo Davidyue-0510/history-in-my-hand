@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "hanxin",
+   "name": "韩信",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "xiangyu",
+   "name": "项羽",
+   "side": "楚",
+   "influence": 0
+  },
+  {
+   "id": "liubang",
+   "name": "刘邦",
+   "side": "汉",
+   "influence": 0
+  }
+ ]
+}

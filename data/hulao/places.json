@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "hulao",
+   "name": "虎牢关",
+   "lon": 113.27,
+   "lat": 34.59,
+   "note": "今河南荥阳西北"
+  },
+  {
+   "id": "luoyang_t",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "note": "王世充据"
+  },
+  {
+   "id": "changan_tx",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "唐都"
+  },
+  {
+   "id": "shanzhou",
+   "name": "陕州",
+   "lon": 111.4,
+   "lat": 34.78,
+   "note": "窦建德出兵"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_ls_780",
+   "subject": "event:ls_780",
+   "year": 780,
+   "era": "建中元",
+   "title": "杨炎立两税",
+   "kind": "变法",
+   "text": "废租庸调，行两税，按资产定税、夏秋两征。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_ls_eff",
+   "subject": "event:ls_eff",
+   "year": 781,
+   "era": "建中二",
+   "title": "税制转型",
+   "kind": "影响",
+   "text": "税基由人丁转财产，后世田赋因之。",
+   "place": "changan"
+  }
+ ]
+}

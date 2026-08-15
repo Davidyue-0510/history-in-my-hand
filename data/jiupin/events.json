@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_jp_220",
+   "subject": "event:jp_220",
+   "year": 220,
+   "era": "延康元",
+   "title": "陈群定九品",
+   "kind": "制度",
+   "text": "立中正品第人物，据家世才德授官，开魏晋选举之制。",
+   "place": "yecheng"
+  },
+  {
+   "id": "ev_jp_later",
+   "subject": "event:jp_later",
+   "year": 280,
+   "era": "西晋",
+   "title": "门阀固化",
+   "kind": "结局",
+   "text": "中正归世族，寒门难进，「上品无寒门」成局。",
+   "place": "luoyang"
+  }
+ ]
+}

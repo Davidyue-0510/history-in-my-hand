@@ -1,0 +1,61 @@
+{
+ "routes": [
+  {
+   "id": "rt_gc_line",
+   "name": "京杭运河走向",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "beijing_c",
+     "at": "605",
+     "label": "北端"
+    },
+    {
+     "place": "linqing",
+     "at": "1283",
+     "label": "山东枢纽"
+    },
+    {
+     "place": "huaian",
+     "at": "605",
+     "label": "黄淮交"
+    },
+    {
+     "place": "yangzhou",
+     "at": "605",
+     "label": "入江"
+    },
+    {
+     "place": "hangzhou",
+     "at": "605",
+     "label": "南端"
+    }
+   ],
+   "outcome": {
+    "at": "605",
+    "type": "none",
+    "text": "南北漕运主干"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "605",
+   "era": "隋大业元",
+   "label": "通济渠·邗沟开通",
+   "key": true
+  },
+  {
+   "at": "1283",
+   "era": "元至元二十",
+   "label": "会通河·通惠河成",
+   "key": true
+  },
+  {
+   "at": "1411",
+   "era": "明永乐九",
+   "label": "重浚会通河",
+   "key": false
+  }
+ ]
+}

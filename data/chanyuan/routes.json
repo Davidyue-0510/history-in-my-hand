@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_cy",
+   "name": "辽师南进",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "beijing",
+     "at": "1004",
+     "label": "辽都南征"
+    },
+    {
+     "place": "puyang",
+     "at": "1004",
+     "label": "澶州对峙"
+    }
+   ],
+   "outcome": {
+    "at": "1005",
+    "type": "none",
+    "text": "澶渊之盟"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1004",
+   "era": "景德元",
+   "label": "辽南下·澶州",
+   "key": true
+  },
+  {
+   "at": "1005",
+   "era": "景德二",
+   "label": "结盟·互市",
+   "key": true
+  }
+ ]
+}

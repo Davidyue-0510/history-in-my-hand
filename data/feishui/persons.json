@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "xiexuan",
+   "name": "谢玄",
+   "side": "晋",
+   "influence": 0
+  },
+  {
+   "id": "fuijian",
+   "name": "苻坚",
+   "side": "前秦",
+   "influence": 0
+  },
+  {
+   "id": "xiean",
+   "name": "谢安",
+   "side": "晋",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_hj_1351",
+   "subject": "event:hj_1351",
+   "year": 1351,
+   "era": "至正十一",
+   "title": "颍州举事",
+   "kind": "战事",
+   "text": "刘福通等颍州起义，以红巾为号，据亳州立韩林儿。",
+   "place": "yingzhou"
+  },
+  {
+   "id": "ev_hj_1368",
+   "subject": "event:hj_1368",
+   "year": 1368,
+   "era": "洪武元",
+   "title": "朱明代元",
+   "kind": "结局",
+   "text": "朱元璋并群雄、北伐，元顺帝北遁，明立。",
+   "place": "nanjing"
+  }
+ ]
+}

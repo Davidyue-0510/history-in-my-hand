@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_sy_zhang",
+   "subject": "event:sy_zhang",
+   "year": 757,
+   "era": "至德二载",
+   "title": "张巡守睢阳",
+   "kind": "战事",
+   "text": "张巡、许远合守睢阳拒叛。"
+  },
+  {
+   "id": "ev_sy_we",
+   "subject": "event:sy_we",
+   "year": 757,
+   "era": "至德二载",
+   "title": "叛军围城",
+   "kind": "战事",
+   "text": "尹子奇率叛军围睢阳。",
+   "place": "suiyang"
+  },
+  {
+   "id": "ev_sy_jz",
+   "subject": "event:sy_jz",
+   "year": 757,
+   "era": "至德二载",
+   "title": "城陷殉国",
+   "kind": "战事",
+   "text": "粮尽城陷，巡、远死节。",
+   "place": "suiyang"
+  }
+ ]
+}

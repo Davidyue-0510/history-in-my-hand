@@ -1,0 +1,44 @@
+{
+ "events": [
+  {
+   "id": "ev_fi_paper",
+   "subject": "event:fi_paper",
+   "year": 105,
+   "era": "东汉永元十七年",
+   "title": "蔡伦改进造纸",
+   "kind": "科技",
+   "text": "蔡伦以树皮麻头敝布渔网为纸，奏上，「蔡侯纸」行世，书写材料革命。",
+   "place": "luoyang_f"
+  },
+  {
+   "id": "ev_fi_print",
+   "subject": "event:fi_print",
+   "year": 1040,
+   "era": "北宋庆历",
+   "title": "毕昇活字印刷",
+   "kind": "科技",
+   "text": "布衣毕昇发明胶泥活字，印书省工省料，为印刷术里程碑。",
+   "place": "kaifeng_f"
+  },
+  {
+   "id": "ev_fi_gun",
+   "subject": "event:fi_gun",
+   "year": 850,
+   "era": "唐大中",
+   "title": "火药用于军事",
+   "kind": "科技",
+   "text": "唐末火药配方渐明，用于飞火、火球；宋设火药作坊，火器始兴。",
+   "place": "changan_f"
+  },
+  {
+   "id": "ev_fi_compass",
+   "subject": "event:fi_compass",
+   "year": 1119,
+   "era": "北宋宣和",
+   "title": "指南针航海",
+   "kind": "科技",
+   "text": "《萍洲可谈》载海舶「夜则观星，昼则观日，阴晦则观指南针」，罗盘用于远洋。",
+   "place": "kaifeng_f"
+  }
+ ]
+}

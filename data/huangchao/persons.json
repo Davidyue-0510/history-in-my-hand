@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "huangchao2",
+   "name": "黄巢",
+   "side": "大齐",
+   "influence": 0
+  },
+  {
+   "id": "tangxizong",
+   "name": "唐僖宗",
+   "side": "唐",
+   "influence": 0
+  }
+ ]
+}

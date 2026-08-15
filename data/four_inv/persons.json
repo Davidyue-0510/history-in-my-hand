@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "cailun",
+   "name": "蔡伦",
+   "side": "东汉",
+   "influence": 0
+  },
+  {
+   "id": "bisheng",
+   "name": "毕昇",
+   "side": "北宋",
+   "influence": 0
+  }
+ ]
+}

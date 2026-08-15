@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_cp_jin",
+   "name": "晋军救宋",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "jiang",
+     "at": "B632-01",
+     "label": "晋出兵"
+    },
+    {
+     "place": "chengpu",
+     "at": "B632-04",
+     "label": "退避三舍后决战"
+    }
+   ],
+   "outcome": {
+    "at": "B632-04",
+    "type": "victory",
+    "text": "晋退避三舍，城濮败楚"
+   }
+  },
+  {
+   "id": "rt_cp_chu",
+   "name": "楚军北上",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "ying",
+     "at": "B632-01",
+     "label": "楚围宋"
+    },
+    {
+     "place": "chengpu",
+     "at": "B632-04",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "B632-03",
+    "type": "defeat",
+    "text": "楚军北上会战败北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B632-01",
+   "era": "周襄王二十年",
+   "label": "晋楚对峙",
+   "key": false
+  },
+  {
+   "at": "B632-03",
+   "era": "三月",
+   "label": "晋退避三舍",
+   "key": false
+  },
+  {
+   "at": "B632-04",
+   "era": "四月",
+   "label": "城濮决战·楚败",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "zengguofan",
+   "name": "曾国藩",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "zengguoquan",
+   "name": "曾国荃",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "lixiucheng",
+   "name": "李秀成",
+   "side": "太平",
+   "influence": 0
+  }
+ ]
+}

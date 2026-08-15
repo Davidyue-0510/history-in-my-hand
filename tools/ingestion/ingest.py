@@ -891,6 +891,8 @@ def main():
                     default="heuristic", help="抽取后端（默认 heuristic 冒烟测试；deepseek=OpenAI 兼容直连）")
     ap.add_argument("--fixture", help="provider=fixture 时的已抽 JSON 路径")
     ap.add_argument("--out", help="输出 JSONL 路径（默认打印到 stdout 不写文件）")
+    ap.add_argument("--out-json", help="输出 JSON 数组路径（可直接当 --provider fixture 的 --fixture 复用，"
+                                        "避免重复 LLM 调用——省 token 的关键）")
     ap.add_argument("--scene", help="把归一化断言追加进该场景的 assertions.jsonl")
     ap.add_argument("--context", help="仅加载该场景的实体白名单进 prompt（用于约束 LLM id），"
                                         "但不自动追加；配合 --out 产出待合规化文件")
@@ -978,7 +980,12 @@ def main():
     if args.out:
         write_jsonl(assertions, args.out)
         print("[ok] 写入 %s (%d 条)" % (args.out, len(assertions)))
-    else:
+    if args.out_json:
+        with open(args.out_json, "w", encoding="utf-8") as f:
+            json.dump(assertions, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        print("[ok] 写入 JSON 数组 %s (%d 条，可 --provider fixture 复用)" % (args.out_json, len(assertions)))
+    if not args.out and not args.out_json:
         print("\n--- 归一化后的断言（前 3 条预览）---")
         for a in assertions[:3]:
             print(json.dumps(a, ensure_ascii=False))

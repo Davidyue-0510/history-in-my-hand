@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_hm_ying",
+   "subject": "event:hm_ying",
+   "year": 1841,
+   "era": "道光二十一年",
+   "title": "英犯虎门",
+   "kind": "战事",
+   "text": "英舰集珠江口。"
+  },
+  {
+   "id": "ev_hm_guan",
+   "subject": "event:hm_guan",
+   "year": 1841,
+   "era": "道光二十一年",
+   "title": "关天培殉国",
+   "kind": "战事",
+   "text": "英破虎门，关天培战死。",
+   "place": "humen"
+  },
+  {
+   "id": "ev_hm_jz",
+   "subject": "event:hm_jz",
+   "year": 1841,
+   "era": "道光二十一年",
+   "title": "广州门户开",
+   "kind": "战事",
+   "text": "虎门失，广州震动。",
+   "place": "humen"
+  }
+ ]
+}

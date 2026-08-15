@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_yl_liu",
+   "subject": "event:yl_liu",
+   "year": 222,
+   "era": "章武二年",
+   "title": "刘备东征",
+   "kind": "战事",
+   "text": "刘备倾国伐吴，出秭归。"
+  },
+  {
+   "id": "ev_yl_lu",
+   "subject": "event:yl_lu",
+   "year": 222,
+   "era": "章武二年",
+   "title": "陆逊坚守",
+   "kind": "战事",
+   "text": "陆逊拒战，待蜀兵疲。",
+   "place": "yiling"
+  },
+  {
+   "id": "ev_yl_jz",
+   "subject": "event:yl_jz",
+   "year": 222,
+   "era": "章武二年",
+   "title": "火烧连营",
+   "kind": "战事",
+   "text": "吴军火攻蜀营，备走白帝。",
+   "place": "xiaoting"
+  }
+ ]
+}

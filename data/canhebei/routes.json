@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_ch_wei",
+   "name": "魏军诱敌",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "shengle",
+     "at": "395-09",
+     "label": "魏佯退"
+    },
+    {
+     "place": "canhebei",
+     "at": "395-11",
+     "label": "设伏"
+    }
+   ],
+   "outcome": {
+    "at": "395-11",
+    "type": "victory",
+    "text": "参合陂破燕"
+   }
+  },
+  {
+   "id": "rt_ch_yan",
+   "name": "燕军攻魏",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "zhongshan",
+     "at": "395-08",
+     "label": "慕容宝出"
+    },
+    {
+     "place": "canhebei",
+     "at": "395-10",
+     "label": "深入"
+    },
+    {
+     "place": "canhebei",
+     "at": "395-11",
+     "label": "中伏"
+    }
+   ],
+   "outcome": {
+    "at": "395-10",
+    "type": "defeat",
+    "text": "燕军深入中伏"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "395-08",
+   "era": "登国十年",
+   "label": "燕伐魏",
+   "key": false
+  },
+  {
+   "at": "395-11",
+   "era": "十一月",
+   "label": "魏诱敌",
+   "key": false
+  },
+  {
+   "at": "395-11",
+   "era": "十一月",
+   "label": "参合陂破燕",
+   "key": true
+  }
+ ]
+}

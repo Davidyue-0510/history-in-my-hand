@@ -1,0 +1,34 @@
+{
+ "routes": [
+  {
+   "id": "rt_zf",
+   "name": "长安→塞北",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "changan",
+     "at": "-33",
+     "label": "长安启程"
+    },
+    {
+     "place": "hohhot",
+     "at": "-33",
+     "label": "至单于庭"
+    }
+   ],
+   "outcome": {
+    "at": "-33",
+    "type": "none",
+    "text": "汉匈和亲路"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "-33",
+   "era": "竟宁元",
+   "label": "昭君出塞",
+   "key": true
+  }
+ ]
+}

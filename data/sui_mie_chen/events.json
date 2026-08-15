@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_sm_587",
+   "subject": "event:sm_587",
+   "year": 587,
+   "era": "开皇七",
+   "title": "作伐陈势",
+   "kind": "战事",
+   "text": "隋废西梁、修战备，大造舟楫于蜀，待机南下。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_sm_589",
+   "subject": "event:sm_589",
+   "year": 589,
+   "era": "开皇九",
+   "title": "渡江灭陈",
+   "kind": "战事",
+   "text": "贺若弼、韩擒虎分道渡江，建康破，陈后主就擒，陈亡。",
+   "place": "nanjing"
+  }
+ ]
+}

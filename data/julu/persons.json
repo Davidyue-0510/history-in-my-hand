@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "xiangyu",
+   "name": "项羽",
+   "side": "楚",
+   "influence": 0
+  },
+  {
+   "id": "zhanghan",
+   "name": "章邯",
+   "side": "秦",
+   "influence": 0
+  },
+  {
+   "id": "wangli",
+   "name": "王离",
+   "side": "秦",
+   "influence": 0
+  }
+ ]
+}

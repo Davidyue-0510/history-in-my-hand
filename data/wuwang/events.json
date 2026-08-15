@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_ww_1048",
+   "subject": "event:ww_1048",
+   "year": -1048,
+   "era": "文王受命",
+   "title": "孟津观兵",
+   "kind": "会盟",
+   "text": "武王东观兵孟津，诸侯不期而会者八百，示伐纣之势。",
+   "place": "zhouyuan"
+  },
+  {
+   "id": "ev_ww_1046",
+   "subject": "event:ww_1046",
+   "year": -1046,
+   "era": "牧野之朝",
+   "title": "牧野克商",
+   "kind": "战事",
+   "text": "武王誓师牧野，商军前徒倒戈，纣登鹿台自焚，商亡。",
+   "place": "muye"
+  }
+ ]
+}

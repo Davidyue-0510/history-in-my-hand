@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "huoqb",
+   "name": "霍去病",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "weiqing",
+   "name": "卫青",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "yizhixie",
+   "name": "伊稚斜单于",
+   "side": "匈奴",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_tl_tang",
+   "name": "唐军西进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "anxi",
+     "at": "751-04",
+     "label": "高仙芝起"
+    },
+    {
+     "place": "suye",
+     "at": "751-06",
+     "label": "过碎叶"
+    },
+    {
+     "place": "talas",
+     "at": "751-07",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "751-07",
+    "type": "defeat",
+    "text": "怛罗斯败于大食"
+   }
+  },
+  {
+   "id": "rt_tl_dashi",
+   "name": "大食东拒",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "talas",
+     "at": "751-06",
+     "label": "大食进军"
+    },
+    {
+     "place": "talas",
+     "at": "751-07",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "751-07",
+    "type": "victory",
+    "text": "大食败唐于怛罗斯"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "751-04",
+   "era": "天宝十载",
+   "label": "高仙芝西征",
+   "key": false
+  },
+  {
+   "at": "751-07",
+   "era": "七月",
+   "label": "葛逻禄叛",
+   "key": true
+  },
+  {
+   "at": "751-07",
+   "era": "七月",
+   "label": "怛罗斯败",
+   "key": true
+  }
+ ]
+}

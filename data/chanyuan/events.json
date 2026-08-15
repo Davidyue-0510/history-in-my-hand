@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_cy_1004",
+   "subject": "event:cy_1004",
+   "year": 1004,
+   "era": "景德元",
+   "title": "辽军南下",
+   "kind": "战事",
+   "text": "辽圣宗、萧太后亲征，围澶州，宋廷主战主和相持。",
+   "place": "puyang"
+  },
+  {
+   "id": "ev_cy_1005",
+   "subject": "event:cy_1005",
+   "year": 1005,
+   "era": "景德二",
+   "title": "澶渊结盟",
+   "kind": "和议",
+   "text": "约为兄弟之国，宋岁遗辽银绢，沿边置榷场互市。",
+   "place": "puyang"
+  }
+ ]
+}

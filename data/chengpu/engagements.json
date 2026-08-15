@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_cp_main",
+   "name": "城濮决战",
+   "at": "B632-04",
+   "era": "周襄王二十年四月",
+   "place": "chengpu",
+   "winner": "a",
+   "outcome": "晋军退避三舍后分击楚军左右翼，楚左师先溃，全军退。",
+   "subject": "event:cp_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "晋文公/先轸",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 240,
+     "posture": "诱敌侧击",
+     "commit_basis": "晋伪遁诱楚，集中击其弱翼。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "子玉",
+     "committed_ratio": 1.0,
+     "fatigue": "marching",
+     "march_72h_li": 260,
+     "posture": "冒进",
+     "commit_basis": "楚军骄纵，两翼不协调。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "B632-04",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "B632-04",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

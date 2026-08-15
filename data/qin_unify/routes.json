@@ -1,0 +1,84 @@
+{
+ "routes": [
+  {
+   "id": "rt_qn_east",
+   "name": "秦军东进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "xianyang",
+     "at": "B230",
+     "label": "出兵"
+    },
+    {
+     "place": "xinzheng",
+     "at": "B230",
+     "label": "灭韩"
+    },
+    {
+     "place": "handan",
+     "at": "B228",
+     "label": "灭赵"
+    },
+    {
+     "place": "daliang",
+     "at": "B225",
+     "label": "灭魏"
+    },
+    {
+     "place": "shouchun",
+     "at": "B223",
+     "label": "灭楚"
+    },
+    {
+     "place": "linzi",
+     "at": "B221",
+     "label": "灭齐"
+    }
+   ],
+   "outcome": {
+    "at": "B221",
+    "type": "victory",
+    "text": "十年并六国"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B230",
+   "era": "十七年",
+   "label": "灭韩",
+   "key": true
+  },
+  {
+   "at": "B228",
+   "era": "十九年",
+   "label": "灭赵",
+   "key": false
+  },
+  {
+   "at": "B225",
+   "era": "二十二年",
+   "label": "灭魏",
+   "key": false
+  },
+  {
+   "at": "B223",
+   "era": "二十四年",
+   "label": "灭楚",
+   "key": true
+  },
+  {
+   "at": "B222",
+   "era": "二十五年",
+   "label": "灭燕代",
+   "key": false
+  },
+  {
+   "at": "B221",
+   "era": "二十六年",
+   "label": "灭齐·一统",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+{"id": "AX_ev_zw_307", "subject": "event:zw_307", "predicate": "事件", "value_text": "武灵王下令易胡服、习骑射，臣下多谏，王力持之。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": -307, "end": -307, "era_text": "武灵王十九"}, "place": "handan"}
+{"id": "AX_ev_zw_war", "subject": "event:zw_war", "predicate": "事件", "value_text": "赵筑长城、置云中雁门，胡汉武力交融。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": -306, "end": -306, "era_text": "其后"}, "place": "handan"}

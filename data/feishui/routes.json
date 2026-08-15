@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_fs_jin",
+   "name": "晋军北拒",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "jiankang",
+     "at": "383-08",
+     "label": "晋备战"
+    },
+    {
+     "place": "feishui",
+     "at": "383-10",
+     "label": "渡水决战"
+    }
+   ],
+   "outcome": {
+    "at": "383-10",
+    "type": "victory",
+    "text": "淝水破前秦"
+   }
+  },
+  {
+   "id": "rt_fs_qin",
+   "name": "秦军南下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "changan_qin",
+     "at": "383-07",
+     "label": "苻坚起兵"
+    },
+    {
+     "place": "shouyang",
+     "at": "383-09",
+     "label": "据寿阳"
+    },
+    {
+     "place": "feishui",
+     "at": "383-10",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "383-09",
+    "type": "defeat",
+    "text": "前秦南下自溃"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "383-07",
+   "era": "太元八年",
+   "label": "前秦南侵",
+   "key": false
+  },
+  {
+   "at": "383-10",
+   "era": "十月",
+   "label": "秦军小却",
+   "key": false
+  },
+  {
+   "at": "383-10",
+   "era": "十月",
+   "label": "淝水溃秦",
+   "key": true
+  }
+ ]
+}

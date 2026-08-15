@@ -1,0 +1,13 @@
+{
+ "places": [
+  {
+   "id": "changan_dz",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉都，策问之所"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

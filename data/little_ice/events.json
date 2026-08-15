@@ -1,0 +1,54 @@
+{
+ "events": [
+  {
+   "id": "ev_li_1580",
+   "subject": "event:li_1580",
+   "year": 1580,
+   "era": "万历前期",
+   "title": "气温转寒·北方早霜",
+   "kind": "灾异",
+   "text": "16 世纪后期全球降温，华北生长季缩短，粮食减产渐显。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_li_1637",
+   "subject": "event:li_1637",
+   "year": 1637,
+   "era": "崇祯十年",
+   "title": "北直隶大旱",
+   "kind": "饥荒",
+   "text": "崇祯十年前后北直隶、山西连旱，麦禾尽枯，人相食。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_li_1640",
+   "subject": "event:li_1640",
+   "year": 1640,
+   "era": "崇祯十三年",
+   "title": "河南连旱蝗",
+   "kind": "饥荒",
+   "text": "河南「人相食，村舍为墟」，饥民从李自成者日众。",
+   "place": "henan"
+  },
+  {
+   "id": "ev_li_1641",
+   "subject": "event:li_1641",
+   "year": 1641,
+   "era": "崇祯十四年",
+   "title": "陕西亢旱·流寇炽",
+   "kind": "饥荒",
+   "text": "陕北连旱，驿站裁撤失业者多投闯营；民变与天灾相互喂养。",
+   "place": "shaanxi"
+  },
+  {
+   "id": "ev_li_1644",
+   "subject": "event:li_1644",
+   "year": 1644,
+   "era": "崇祯十七年",
+   "title": "饥荒催化·明亡",
+   "kind": "饥荒",
+   "text": "饥馑瓦解统治根基，同年李自成破北京、崇祯自缢，清入关。",
+   "place": "beijing"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "routes": [
+  {
+   "id": "rt_wc_road",
+   "name": "唐蕃道",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "changan_wc",
+     "at": "641",
+     "label": "长安启程"
+    },
+    {
+     "place": "songzhou",
+     "at": "641",
+     "label": "松州界"
+    },
+    {
+     "place": "lhasa",
+     "at": "641",
+     "label": "逻些"
+    }
+   ],
+   "outcome": {
+    "at": "641",
+    "type": "none",
+    "text": "唐蕃和亲路"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "641",
+   "era": "贞观十五",
+   "label": "文成入藏",
+   "key": true
+  },
+  {
+   "at": "641",
+   "era": "同年",
+   "label": "大昭寺·交融",
+   "key": false
+  }
+ ]
+}

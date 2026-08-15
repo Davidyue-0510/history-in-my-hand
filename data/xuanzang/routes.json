@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_xz",
+   "name": "长安→天竺",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "changan",
+     "at": "629",
+     "label": "启程"
+    },
+    {
+     "place": "nalanda",
+     "at": "631",
+     "label": "抵那烂陀"
+    }
+   ],
+   "outcome": {
+    "at": "629",
+    "type": "none",
+    "text": "西行求法"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "629",
+   "era": "贞观三",
+   "label": "西行",
+   "key": true
+  },
+  {
+   "at": "645",
+   "era": "贞观十九",
+   "label": "归国",
+   "key": true
+  }
+ ]
+}

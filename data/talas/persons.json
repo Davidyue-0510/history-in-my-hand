@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "gaoxianzhi",
+   "name": "高仙芝",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "abumuslim",
+   "name": "阿布·穆斯林",
+   "side": "大食",
+   "influence": 0
+  }
+ ]
+}

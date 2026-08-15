@@ -144,6 +144,8 @@
     tab: 'yan',
     selection: null,
     control: { on: false, year: 1621, scope: 'county', playing: false, compare: false },
+    chgis: { on: true, ds: 'all', period: 'all', yearSync: false },
+    battle: { on: true, routes: true },
     timeline: 'main',          // v0.31：当前分支时间线
     ego: null,                 // 当前选中的人物 id（抽象图里高亮其关系网）
     personTab: 'assert',       // 人物视图子页签
@@ -170,6 +172,8 @@
   var svg  = document.getElementById('map');
   var cv   = document.getElementById('terrainCv');
   var controlCv = document.getElementById('controlCv');
+  var chgisCv = document.getElementById('chgisCv');
+  var battleCv = document.getElementById('battleCv');
   var view = { x: 0, y: 0, w: W, h: H };
   var fitW = W, cw = 1, ch = 1;
   var MIN_W = 26;
@@ -198,6 +202,8 @@
     var dpr = window.devicePixelRatio || 1;
     cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
     controlCv.width = Math.round(cw * dpr); controlCv.height = Math.round(ch * dpr);
+    if (chgisCv) { chgisCv.width = Math.round(cw * dpr); chgisCv.height = Math.round(ch * dpr); }
+    if (battleCv) { battleCv.width = Math.round(cw * dpr); battleCv.height = Math.round(ch * dpr); }
   }
   function clampView() {
     view.w = Math.min(fitW * 1.6, Math.max(MIN_W, view.w));
@@ -215,6 +221,8 @@
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     drawTerrain();
     if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
+    if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
+    if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
     if (redrawSvg !== false && !rafPending) {
       rafPending = true;
       requestAnimationFrame(function () { rafPending = false; drawDynamic(); });
@@ -240,6 +248,7 @@
   var DRAG_TH = 4;
   var UI_SEL = '.map-tools, .map-legend, .elev-legend, .zoom-badge, .map-hint, .offgrid-banner, .control-panel';
   var drag = null;
+  var _lastDragMoved = 0;   // 上次指针交互移动量；>4 视为拖拽，click 不触发政区查询
   wrap.addEventListener('pointerdown', function (e) {
     if (e.button !== 0) return;
     if (e.target && e.target.closest && e.target.closest(UI_SEL)) return;
@@ -260,6 +269,7 @@
   function endDrag(e) {
     if (!drag) return;
     var moved = drag.moved, cap = drag.cap, pid = drag.pid;
+    _lastDragMoved = moved;
     drag = null;
     wrap.classList.remove('grabbing');
     if (cap) { try { wrap.releasePointerCapture(pid); } catch (x) {} }
@@ -626,23 +636,28 @@
       TG.nx + '×' + TG.ny + '，' + TG.min + '–' + TG.max + ' m。') :
       '未载入高程网格。运行 tools/fetch_terrain.py 后重新编译。';
   }
-  /* 邻接切片：直接扫注册表顺序，新增县自动出现在这里 */
+  /* 邻接切片：严格只显示同地域（同 region）的切片。
+   * 用户原则（2026-08-14）：导航器也只显示同地域切片，绝不串场。
+   * 例：看赤壁（region=three_kingdoms）只出现官渡/夷陵/逍遥津，萨尔浒不出现；
+   *     看萨尔浒（region=liaodong）只出现辽东各切片。 */
   function renderSiblings() {
     var box = document.getElementById('siblingList'); if (!box) return;
     box.innerHTML = '';
     var regions = {};
     (SD.regions || []).forEach(function (r) { regions[r.id] = r.name; });
-    var lastRegion = null;
+    var curRegion = META.region;
+    if (curRegion) {
+      var h = document.createElement('div');
+      h.className = 'sib-region';
+      h.textContent = (regions[curRegion] || curRegion) + ' · 同地域切片';
+      box.appendChild(h);
+    }
     (SD.scene_order || Object.keys(SD.scenes)).forEach(function (k) {
       var sc = SD.scenes[k]; if (!sc) return;
       var m = sc.meta || {};
-      if (m.region && m.region !== lastRegion) {
-        lastRegion = m.region;
-        var h = document.createElement('div');
-        h.className = 'sib-region';
-        h.textContent = regions[m.region] || m.region;
-        box.appendChild(h);
-      }
+      // 严格同地域过滤：region 不一致则跳过（虚构世界彼此也隔离）
+      if (curRegion && m.region && m.region !== curRegion) return;
+      if (!curRegion && m.region) return;  // 当前切片无 region 时保守不显示任何
       var a = document.createElement('a');
       a.className = 'rt sib' + (k === sceneKey ? ' on' : ' off');
       a.href = m.page || ('county.html?scene=' + k);
@@ -720,6 +735,12 @@
       ControlLayer.draw(state.control.year, state.control.scope);
       renderControlLegend();
     }
+    // CHGIS 年份联动：开启「按时间轴年份过滤」时，只显示该年存在的政区
+    if (state.chgis.on && state.chgis.yearSync && window.ChgisLayer && ChgisLayer.isReady()) {
+      ChgisLayer.setFilter({ year: year });
+    }
+    // 注：战例图层（行军路线）与疆域时间轴解耦——不再随疆域滑块按年份过滤，
+    // 由底部独立的「行军路线时间轴」按日期回放（见 wireRouteTimeline）。
     renderEventTimeline();
   }
 
@@ -1624,7 +1645,22 @@
       });
     });
 
-  // v0.31 分支时间线切换器
+    if (playBtn) playBtn.addEventListener('click', function () {
+      if (state.control.playing) { stopControl(); return; }
+      if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
+      state.control.playing = true;
+      playBtn.textContent = '❚❚';
+      var lo = cy[0], hi = cy[1];
+      if (state.control.year >= hi) state.control.year = lo;
+      playBtn._t = setInterval(function () {
+        if (state.control.year >= hi) { stopControl(); return; }
+        state.control.year++;
+        syncTimeline(state.control.year);
+        drawControl();
+      }, 900);
+    });
+  }
+  // v0.31 分支时间线切换器（IIFE 顶层，与 wireControl/wireChgis 同级）
   function wireTimeline() {
     var tls = D.timelines;
     var row = document.getElementById('timelineRow');
@@ -1663,21 +1699,6 @@
     });
   }
 
-    if (playBtn) playBtn.addEventListener('click', function () {
-      if (state.control.playing) { stopControl(); return; }
-      if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
-      state.control.playing = true;
-      playBtn.textContent = '❚❚';
-      var lo = cy[0], hi = cy[1];
-      if (state.control.year >= hi) state.control.year = lo;
-      playBtn._t = setInterval(function () {
-        if (state.control.year >= hi) { stopControl(); return; }
-        state.control.year++;
-        syncTimeline(state.control.year);
-        drawControl();
-      }, 900);
-    });
-  }
   function stopControl() {
     state.control.playing = false;
     var pb = document.getElementById('ctrlPlay');
@@ -1707,6 +1728,78 @@
       partyColors: VOCAB.party_colors  // v0.24c：控制层配色单一真值（语境包）
     });
   }
+  if (!IS_ABSTRACT && window.ChgisLayer) {
+    ChgisLayer.setup({
+      cv: chgisCv, px: px, py: py,
+      getView: function () { return view; },
+      getCw: function () { return cw; },
+      getCh: function () { return ch; },
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      url: '../data/external/chgis/converted_ogr/all.geojson',
+      filterDs: state.chgis.ds,
+      filterYear: null,
+      filterPeriod: state.chgis.period,
+      unproject: function (cx, cy) {                 // 屏幕坐标 → 经纬度
+        var m = screenToMap(cx, cy);
+        return [ LON0 + m.x / W * (LON1 - LON0), LAT1 - m.y / H * (LAT1 - LAT0) ];
+      },
+      onReady: function (n) {
+        var st = document.getElementById('chgisStatus');
+        if (st) st.textContent = '已加载 ' + n + ' 个政区面';
+        if (state.chgis.on) ChgisLayer.repaint();
+        renderChgisLegend();
+      },
+      onRepaint: function () { renderChgisLegend(); },
+      onError: function () {
+        var st = document.getElementById('chgisStatus');
+        if (st) st.textContent = '加载失败（请通过 http 服务器打开）';
+      }
+    });
+  }
+  // 战例叠加层：严格按当前切片隔离。
+  // 依据用户原则（2026-08-13）：有联系（用户提出 or 史料提及）才能同屏查看；
+  // 否则绝不跨场景堆叠——唐/三大战役页不再出现萨尔浒，反之亦然。
+  // 加载范围 = 当前场景 + 仅其显式声明的相关场景（META.related，默认空 = 仅本切片）。
+  if (!IS_ABSTRACT && window.BattleLayer) {
+    var relatedScenes = (META.related && META.related.length)
+      ? META.related.filter(function (k) { return SD.scenes[k]; }) : [];
+    var battleScenes = [sceneKey].concat(relatedScenes);
+    var primaryPlaces = {};
+    battleScenes.forEach(function (k) {
+      var s = SD.scenes[k]; var pp = s && (s.primary_place || (s.meta && s.meta.primary_place)); if (pp) primaryPlaces[k] = pp;
+    });
+    BattleLayer.setup({
+      cv: battleCv, px: px, py: py,
+      getView: function () { return view; },
+      getCw: function () { return cw; },
+      getCh: function () { return ch; },
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      base: '../data/',
+      scenes: battleScenes,
+      primaryPlaces: primaryPlaces,
+      seedPlaces: (D.places || []),
+      currentScene: sceneKey,
+      showRoutes: state.battle.routes,
+      filterYear: null,
+      routeOrd: null,
+      unproject: function (cx, cy) {
+        var m = screenToMap(cx, cy);
+        return [ LON0 + m.x / W * (LON1 - LON0), LAT1 - m.y / H * (LAT1 - LAT0) ];
+      },
+      onReady: function (n) {
+        var st = document.getElementById('battleStatus');
+        if (st) st.textContent = '已加载 ' + n + ' 个战例（本切片：' + (META.title || sceneKey) + (relatedScenes.length ? ' + ' + relatedScenes.length + ' 个相关切片' : '') + '）';
+        if (state.battle.on) BattleLayer.repaint();
+        buildRouteTimeline();   // 数据就绪后构建底部独立「行军路线时间轴」
+        renderBattleLegend();
+      },
+      onRepaint: function () { renderBattleLegend(); },
+      onError: function () {
+        var st = document.getElementById('battleStatus');
+        if (st) st.textContent = '加载失败（请通过 http 服务器打开）';
+      }
+    });
+  }
   // 初始化年份：有控制层数据时取其下界，否则取首个事件年
   if (!IS_ABSTRACT && window.ControlLayer && ControlLayer.isReady()) {
     var cy = ControlLayer.years();
@@ -1714,5 +1807,347 @@
   } else if (D.events && D.events.length) {
     state.control.year = D.events[0].year || 1621;
   }
-  applyView(false); wireControl(); wireTimeline(); refresh();
+  applyView(false); wireControl(); wireTimeline(); wireChgis(); wireBattle(); wireRouteTimeline(); refresh();
+
+  function wireChgis() {
+    var box = document.getElementById('chgisToggle');
+    if (!box) return;
+    box.checked = state.chgis.on;
+    box.addEventListener('change', function () {
+      state.chgis.on = box.checked;
+      if (state.chgis.on) ChgisLayer.repaint(); else ChgisLayer.clear();
+      var st = document.getElementById('chgisStatus');
+      if (st) st.textContent = box.checked ? '已显示' : '已隐藏';
+    });
+    var dsSel = document.getElementById('chgisDs');
+    var periodRow = document.getElementById('chgisPeriodRow');
+    var periodSel = document.getElementById('chgisPeriod');
+    function syncPeriodRow() {
+      if (!periodRow) return;
+      periodRow.style.display = (dsSel && dsSel.value === 'T-S') ? 'flex' : 'none';
+    }
+    if (dsSel) {
+      dsSel.value = state.chgis.ds;
+      syncPeriodRow();
+      dsSel.addEventListener('change', function () {
+        state.chgis.ds = dsSel.value;
+        if (dsSel.value !== 'T-S') { state.chgis.period = 'all'; if (periodSel) periodSel.value = 'all'; }
+        syncPeriodRow();
+        if (state.chgis.on && window.ChgisLayer) {
+          ChgisLayer.setFilter({ ds: state.chgis.ds, period: state.chgis.period });
+        }
+      });
+    }
+    if (periodSel) {
+      periodSel.value = state.chgis.period;
+      periodSel.addEventListener('change', function () {
+        state.chgis.period = periodSel.value;
+        if (state.chgis.on && window.ChgisLayer) ChgisLayer.setFilter({ period: state.chgis.period });
+      });
+    }
+    var ys = document.getElementById('chgisYearSync');
+    if (ys) {
+      ys.checked = state.chgis.yearSync;
+      ys.addEventListener('change', function () {
+        state.chgis.yearSync = ys.checked;
+        if (!state.chgis.on || !window.ChgisLayer) return;
+        ChgisLayer.setFilter({ year: ys.checked ? state.control.year : null });
+      });
+    }
+    // 点击地图：优先查战例，其次查政区（拖拽后不触发；与地图 pan 不冲突）
+    wrap.addEventListener('click', function (e) {
+      if (e.target && e.target.closest && e.target.closest(UI_SEL)) return;
+      if (_lastDragMoved > 4) { _lastDragMoved = 0; return; }
+      var lon = null, lat = null;
+      try {
+        var m = screenToMap(e.clientX, e.clientY);
+        lon = LON0 + m.x / W * (LON1 - LON0); lat = LAT1 - m.y / H * (LAT1 - LAT0);
+      } catch (x) { lon = null; }
+      if (lon != null) {
+        if (state.battle.on && window.BattleLayer && BattleLayer.isReady()) {
+          var bh = BattleLayer.hitTest(lon, lat);
+          if (bh) { hideChgisTip(); showBattleTip(bh, e.clientX, e.clientY); return; }
+        }
+        if (state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) {
+          var props = ChgisLayer.hitTest(lon, lat);
+          if (props) { hideBattleTip(); showChgisTip(props, e.clientX, e.clientY); return; }
+        }
+      }
+      hideBattleTip(); hideChgisTip();
+    });
+  }
+
+  function wireBattle() {
+    var box = document.getElementById('battleToggle');
+    if (!box) return;
+    // 数据驱动块标题：用本切片标题，杜绝硬编码「萨尔浒之战」串场
+    var bt = document.getElementById('battleTitle');
+    if (bt) bt.textContent = (META.layer_title || ('战例叠加 · ' + (META.title || sceneKey)));
+    box.checked = state.battle.on;
+    box.addEventListener('change', function () {
+      state.battle.on = box.checked;
+      if (state.battle.on) BattleLayer.repaint(); else BattleLayer.clear();
+      var st = document.getElementById('battleStatus');
+      if (st) st.textContent = box.checked ? '已显示' : '已隐藏';
+      buildRouteTimeline();   // 隐藏战例时同步收起底部行军路线时间轴
+      renderBattleLegend();
+    });
+    var rt = document.getElementById('battleRoutes');
+    if (rt) {
+      rt.checked = state.battle.routes;
+      rt.addEventListener('change', function () {
+        state.battle.routes = rt.checked;
+        if (state.battle.on && window.BattleLayer) BattleLayer.setShowRoutes(rt.checked);
+        buildRouteTimeline();   // 行军路线显隐联动底部独立时间轴
+        renderBattleLegend();
+      });
+    }
+  }
+
+  /* ═══════════ 行军路线时间轴（v0.34b，与疆域时间轴完全独立） ═══════════
+   *  - 刻度来自当前场景 routes.json.timeline（按日期），与「疆域」滑块解耦。
+   *  - 点击刻度 / 播放 → BattleLayer.setRouteDate(ord) 让路线按日期生长；
+   *    地图路线图标上的年份固定为战争发生年（battle_layer 内绘制），绝不随疆域变化。 */
+  var routePlay = { timer: null };
+  function stopRoutePlay() {
+    if (routePlay.timer) { clearTimeout(routePlay.timer); routePlay.timer = null; }
+    var pb = document.getElementById('rtPlay'); if (pb) pb.textContent = '▶';
+  }
+  function setRouteDate(ord) {
+    if (window.BattleLayer) BattleLayer.setRouteDate(ord);
+    updateRouteDateLabel(ord);
+  }
+  function markRouteNow(ord) {
+    var track = document.getElementById('rtTrack'); if (!track) return;
+    var nodes = track.querySelectorAll('.tl-node');
+    nodes.forEach(function (n) {
+      var isFull = n.getAttribute('data-full') === '1';
+      var on = (ord == null && isFull) || (ord != null && !isFull && (+n.getAttribute('data-ord') === +ord));
+      n.classList.toggle('now', !!on);
+    });
+  }
+  // 年份/日期格式化：支持公元前（"B260"=前260，"B260-07"=前260年七月）与公元（"1619-04-14"）。
+  function fmtYear(y) {
+    if (y == null) return '';
+    return y < 0 ? ('公元前' + (-y) + '年') : (y + '年');
+  }
+  function fmtDate(s) {
+    if (!s) return '';
+    var isBc = /^B/.test(s);
+    var core = isBc ? s.slice(1) : s;            // 去掉 B
+    var parts = core.split('-');                 // [年,月,日]
+    var y = +parts[0], mo = parts[1] ? +parts[1] : null, d = parts[2] ? +parts[2] : null;
+    var out = (y < 0 ? '公元前' + (-y) : y) + '年';
+    if (mo != null) out += mo + '月';
+    if (d != null) out += d + '日';
+    return out;
+  }
+  function updateRouteDateLabel(ord) {
+    var lab = document.getElementById('rtDateLabel');
+    var dt = document.getElementById('rtDate');
+    var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+    if (!meta || !meta.ready) { if (lab) lab.textContent = '—'; if (dt) dt.textContent = '—'; return; }
+    if (ord == null) {
+      var last = meta.timeline[meta.timeline.length - 1];
+      if (lab) lab.textContent = last ? (last.label || '全程') : '全程';
+      if (dt) dt.textContent = last ? last.at : '全程';
+      return;
+    }
+    var cur = null;
+    for (var i = 0; i < meta.timeline.length; i++) { if (meta.timeline[i].ord === +ord) { cur = meta.timeline[i]; break; } }
+    if (lab) lab.textContent = cur ? (cur.label || cur.era || '') : '';
+    if (dt) dt.textContent = cur ? fmtDate(cur.at) : String(ord);
+  }
+  function buildRouteTimeline() {
+    var strip = document.getElementById('routeTimeline');
+    var track = document.getElementById('rtTrack');
+    var eraEl = document.getElementById('rtEra');
+    var badge = document.getElementById('rtYearBadge');
+    if (!strip || !track) return;
+    var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+    // 无数据、或「显示行军路线」未勾选 → 收起整条时间轴
+    if (!meta || !meta.ready || !meta.timeline.length || !(state.battle.on && state.battle.routes)) {
+      strip.style.display = 'none';
+      return;
+    }
+    strip.style.display = '';
+    eraEl.textContent = (META.timeline_title || '行军路线时间轴') + (meta.year != null ? '（' + fmtYear(meta.year) + '）' : '');
+    if (badge) { badge.style.display = ''; badge.textContent = (meta.year != null ? fmtYear(meta.year) : ''); }
+    var n = meta.timeline.length;
+    track.innerHTML = '';
+    meta.timeline.forEach(function (t, i) {
+      var node = document.createElement('div');
+      var cls = 'tl-node'; if (t.key) cls += ' key';
+      node.className = cls;
+      node.setAttribute('data-ord', t.ord);
+      node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
+      if (i === 0) node.style.transform = 'translate(-14px, -50%)';
+      else if (i === n - 1) node.style.transform = 'translate(calc(-100% + 14px), -50%)';
+      else node.style.transform = 'translate(-50%, -50%)';
+      node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + (t.era || t.at) + '</div>';
+      node.title = (t.label || '') + ' · ' + t.at;
+      track.appendChild(node);
+    });
+    updateRouteDateLabel(null);
+    markRouteNow(null);
+  }
+  function wireRouteTimeline() {
+    var strip = document.getElementById('routeTimeline');
+    var track = document.getElementById('rtTrack');
+    var play = document.getElementById('rtPlay');
+    var full = document.getElementById('rtFull');
+    if (!strip || !track) return;
+    track.addEventListener('click', function (ev) {
+      var node = ev.target && ev.target.closest ? ev.target.closest('.tl-node') : null;
+      if (!node) return;
+      if (node.getAttribute('data-full') === '1') { stopRoutePlay(); setRouteDate(null); markRouteNow(null); return; }
+      var ord = +node.getAttribute('data-ord');
+      stopRoutePlay();
+      setRouteDate(ord); markRouteNow(ord);
+    });
+    if (full) full.addEventListener('click', function () { stopRoutePlay(); setRouteDate(null); markRouteNow(null); });
+    if (play) play.addEventListener('click', function () {
+      var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+      if (!meta || !meta.ready || !meta.timeline.length) return;
+      if (routePlay.timer) { stopRoutePlay(); return; }
+      play.textContent = '⏸';
+      var i = 0;
+      var step = function () {
+        if (!routePlay.timer) return;
+        if (i >= meta.timeline.length) { setRouteDate(null); markRouteNow(null); stopRoutePlay(); return; }
+        var ord = meta.timeline[i].ord;
+        setRouteDate(ord); markRouteNow(ord);
+        i++;
+        routePlay.timer = setTimeout(step, 950);
+      };
+      routePlay.timer = setTimeout(step, 0);
+    });
+  }
+
+  // 反投影（屏幕→经纬度）已在 ChgisLayer.setup 的 unproject 注入；
+  // 地图 click 用同样的 screenToMap + 逆投影做命中检测。
+  function renderChgisLegend() {
+    var el = document.getElementById('chgisLegend');
+    if (!el) return;
+    if (!state.chgis.on || !window.ChgisLayer || !ChgisLayer.isReady()) { el.style.display = 'none'; return; }
+    var items = ChgisLayer.getLegend();
+    if (!items.length) { el.style.display = 'none'; return; }
+    var html = '<div class="lg-title">历史政区图例</div>';
+    items.forEach(function (it) {
+      var c = it.color;
+      html += '<div class="lg-row"><span class="lg-sw" style="background:rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')"></span>' + it.label + '</div>';
+    });
+    el.innerHTML = html;
+    el.style.display = 'block';
+  }
+
+  function showChgisTip(props, cx, cy) {
+    var el = document.getElementById('chgisTip');
+    if (!el) return;
+    var nm = props.NAME_CH || props.NAME_PY || '—';
+    var type = props.TYPE_CH || props.TYPE_PY || '';
+    var lev = [props.LEV1_CH, props.LEV2_CH, props.LEV3_CH].filter(Boolean).join(' / ');
+    var dyn = props.DYN_PY || '';
+    var cn = (window.ChgisLayer && ChgisLayer.DYN_CN && ChgisLayer.DYN_CN[dyn]) || dyn || '—';
+    var per = (props.CHGIS_DS === 'T-S' && window.ChgisLayer && ChgisLayer.PERIOD_CN)
+      ? ChgisLayer.PERIOD_CN[periodOfBeg(props.BEG_YR)] || '' : '';
+    var yr = (props.BEG_YR != null ? props.BEG_YR : '?') + '–' + (props.END_YR != null ? props.END_YR : '?');
+    var ds = { '1820': '1820 清嘉庆', '1911': '1911 清末', 'T-S': '唐宋及历代' }[props.CHGIS_DS] || props.CHGIS_DS || '';
+    var html = '<div class="tip-h"><b>' + nm + '</b>' + (type ? ' <span class="tip-t">' + type + '</span>' : '') + '</div>'
+      + '<div class="tip-r">朝代：' + cn + (per ? '（' + per + '）' : '') + '</div>'
+      + (lev ? '<div class="tip-r">层级：' + lev + '</div>' : '')
+      + '<div class="tip-r">存续：' + yr + '</div>'
+      + '<div class="tip-r">数据集：' + ds + '</div>';
+    el.innerHTML = html;
+    el.style.display = 'block';
+    var wrapRect = wrap.getBoundingClientRect();
+    var x = cx - wrapRect.left + 12, y = cy - wrapRect.top + 12;
+    var tw = el.offsetWidth, th = el.offsetHeight;
+    if (x + tw > wrapRect.width) x = cx - wrapRect.left - tw - 12;
+    if (y + th > wrapRect.height) y = wrapRect.height - th - 6;
+    if (y < 0) y = 6;
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+    el.onclick = function (ev) { ev.stopPropagation(); };
+  }
+  function hideChgisTip() {
+    var el = document.getElementById('chgisTip');
+    if (el) el.style.display = 'none';
+  }
+
+  // ══════════ 战例图层：图例 + 点击属性卡 ══════════
+  // 图例完全数据驱动：遍历 BattleLayer.getLegend() 返回的类别（来自本切片 vocab.legend，
+  // 无配置则按战例 winner/side 自动派生），不硬编码任何阵营/胜负文字。
+  function renderBattleLegend() {
+    var el = document.getElementById('battleLegend');
+    if (!el) return;
+    if (!state.battle.on || !window.BattleLayer || !BattleLayer.isReady()) { el.style.display = 'none'; return; }
+    var L = BattleLayer.getLegend();
+    if (!L) { el.style.display = 'none'; return; }
+    var html = '<div class="lg-title">' + (META.layer_title ? (META.layer_title + '图例') : '战例图例') + '</div>';
+    if (!L.battles.length && !L.routes.length) {
+      html += '<div class="lg-note">' + (META.empty_layer_note || '本切片暂无叠加数据（接战点 / 河道 / 路线）。') + '</div>';
+    } else {
+      L.battles.forEach(function (c) {
+        html += '<div class="lg-row"><span class="lg-sw" style="background:' + c.color + '"></span>' + c.label + ' · 接战 ' + c.count + '</div>';
+      });
+      L.routes.forEach(function (c) {
+        html += '<div class="lg-row"><span class="lg-sw lg-dash" style="background:' + c.color + '"></span>' + c.label + ' · ' + c.count + '</div>';
+      });
+    }
+    html += '<div class="lg-note">共 ' + L.totalEng + ' 叠加点 · ' + L.totalEv + ' 事件标记 · ' + L.totalRoutes + ' 路线（仅当前切片，不跨场景叠加）</div>';
+    el.innerHTML = html;
+    el.style.display = 'block';
+  }
+
+  function showBattleTip(bh, cx, cy) {
+    var el = document.getElementById('battleTip');
+    if (!el) return;
+    var html = '';
+    if (bh.type === 'engagement') {
+      var e = bh.data;
+      var win = e.winner === 'jin' ? '<span style="color:' + BattleLayer.COL.jin + '">后金胜</span>'
+        : e.winner === 'ming' ? '<span style="color:' + BattleLayer.COL.ming + '">明胜</span>'
+          : '<span style="color:' + BattleLayer.COL.none + '">未接战</span>';
+      html += '<div class="tip-h"><b>' + (e.name || '') + '</b> <span class="tip-t">叠加点</span></div>';
+      html += '<div class="tip-r">日期：' + (e.at || e.year || '') + ' ｜ ' + win + '</div>';
+      if (e.sides && e.sides.length) {
+        e.sides.forEach(function (s) {
+          var who = (BattleLayer.SIDE_CN && BattleLayer.SIDE_CN[s.side]) || s.side || '';
+          var ratio = (s.committed_ratio != null) ? Math.round(s.committed_ratio * 100) + '%' : '—';
+          var fat = s.fatigue || '';
+          var cm = s.commander ? '主将 ' + s.commander : '';
+          html += '<div class="tip-r">' + who + '：投入 ' + ratio + (fat ? ' · ' + fat : '') + (cm ? ' · ' + cm : '') + '</div>';
+        });
+      }
+      if (e.outcome) html += '<div class="tip-r tip-out">' + e.outcome + '</div>';
+    } else {
+      var ev = bh.data;
+      html += '<div class="tip-h"><b>' + (ev.title || '') + '</b> <span class="tip-t">' + (ev.kind || '战事') + '</span></div>';
+      html += '<div class="tip-r">年份：' + (ev.year != null ? ev.year : '') + (ev.fallback ? ' ｜ 坐标取本城' : '') + '</div>';
+      if (ev.text) html += '<div class="tip-r tip-out">' + ev.text + '</div>';
+    }
+    el.innerHTML = html;
+    el.style.display = 'block';
+    var wrapRect = wrap.getBoundingClientRect();
+    var x = cx - wrapRect.left + 12, y = cy - wrapRect.top + 12;
+    var tw = el.offsetWidth, th = el.offsetHeight;
+    if (x + tw > wrapRect.width) x = cx - wrapRect.left - tw - 12;
+    if (y + th > wrapRect.height) y = wrapRect.height - th - 6;
+    if (y < 0) y = 6;
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+    el.onclick = function (ev) { ev.stopPropagation(); };
+  }
+  function hideBattleTip() {
+    var el = document.getElementById('battleTip');
+    if (el) el.style.display = 'none';
+  }
+  function periodOfBeg(v) {
+    var n = parseInt(v, 10);
+    if (isNaN(n)) return 'other';
+    if (n >= -206 && n < 220) return 'han';
+    if (n >= 581 && n < 618) return 'sui';
+    if (n >= 618 && n < 907) return 'tang';
+    if (n >= 960 && n < 1280) return 'song';
+    return 'other';
+  }
 })();

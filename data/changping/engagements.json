@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_cp_main",
+   "name": "长平决战",
+   "at": "B260-09",
+   "era": "周赧王五十五年九月",
+   "place": "changping",
+   "winner": "a",
+   "outcome": "白起诱敌出击后奇兵绝赵粮道，反包围长平，赵军被困四十六日，主将战死，四十余万降卒被坑杀。",
+   "subject": "event:cp_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "白起",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 190,
+     "posture": "钳形反包围",
+     "commit_basis": "秦军迂回绝赵粮道，以逸待劳。",
+     "commit_confidence": 0.55
+    },
+    {
+     "side": "b",
+     "commander": "赵括",
+     "committed_ratio": 1.0,
+     "fatigue": "exhausted",
+     "march_72h_li": 160,
+     "posture": "突围",
+     "commit_basis": "赵军被困粮尽，突围失败。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "B260-09",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "B260-09",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

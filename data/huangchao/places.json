@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  },
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "lon": 113.26,
+   "lat": 23.13,
+   "note": "黄巢曾克广州"
+  },
+  {
+   "id": "kaofeng",
+   "name": "开封",
+   "lon": 114.3,
+   "lat": 34.79,
+   "note": "北宋汴京"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

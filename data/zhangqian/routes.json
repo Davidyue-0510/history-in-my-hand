@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_zq",
+   "name": "长安→西域",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "changan",
+     "at": "-138",
+     "label": "长安启程"
+    },
+    {
+     "place": "loulan",
+     "at": "-129",
+     "label": "抵西域"
+    }
+   ],
+   "outcome": {
+    "at": "-138",
+    "type": "none",
+    "text": "凿空西域"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "-138",
+   "era": "建元三",
+   "label": "张骞西使",
+   "key": true
+  },
+  {
+   "at": "-126",
+   "era": "元朔三",
+   "label": "归汉",
+   "key": true
+  }
+ ]
+}

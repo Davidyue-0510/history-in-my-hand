@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_dy_meng",
+   "subject": "event:dy_meng",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "蒙哥南征",
+   "kind": "战事",
+   "text": "蒙哥自汉中攻四川，围钓鱼城。"
+  },
+  {
+   "id": "ev_dy_wang",
+   "subject": "event:dy_wang",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "王坚守城",
+   "kind": "战事",
+   "text": "王坚、张珏死守钓鱼城。",
+   "place": "diaoyucheng"
+  },
+  {
+   "id": "ev_dy_jz",
+   "subject": "event:dy_jz",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "蒙哥死城下",
+   "kind": "战事",
+   "text": "蒙哥汗攻城死，蒙古退师。",
+   "place": "diaoyucheng"
+  }
+ ]
+}

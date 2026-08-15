@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_kj_605",
+   "subject": "event:kj_605",
+   "year": 605,
+   "era": "隋大业元年",
+   "title": "始设进士科",
+   "kind": "制度",
+   "text": "炀帝置进士科，试策取士，科举之制肇端，打破门第垄断。",
+   "place": "luoyang_k"
+  },
+  {
+   "id": "ev_kj_tang",
+   "subject": "event:kj_tang",
+   "year": 690,
+   "era": "武周—唐",
+   "title": "殿试·科目增",
+   "kind": "制度",
+   "text": "武周行殿试、制科，唐明经进士并重，科举成入仕正途。",
+   "place": "changan_k"
+  },
+  {
+   "id": "ev_kj_1905",
+   "subject": "event:kj_1905",
+   "year": 1905,
+   "era": "清光绪三十一年",
+   "title": "废科举",
+   "kind": "结局",
+   "text": "清廷下诏废科举、兴学堂，推行千三百年的选官制终结。",
+   "place": "luoyang_k"
+  }
+ ]
+}

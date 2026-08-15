@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "diaoyucheng",
+   "name": "钓鱼城",
+   "lon": 106.3,
+   "lat": 30.0,
+   "note": "今重庆合川东"
+  },
+  {
+   "id": "hezhou",
+   "name": "合州",
+   "lon": 106.27,
+   "lat": 30.03,
+   "note": "宋州"
+  },
+  {
+   "id": "chongqing",
+   "name": "重庆",
+   "lon": 106.55,
+   "lat": 29.56,
+   "note": "宋川蜀"
+  },
+  {
+   "id": "dadu",
+   "name": "大都",
+   "lon": 116.4,
+   "lat": 39.9,
+   "note": "蒙古都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

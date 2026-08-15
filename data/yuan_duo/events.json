@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_yu_1271",
+   "subject": "event:yu_1271",
+   "year": 1271,
+   "era": "至元八",
+   "title": "定国号大元",
+   "kind": "制度",
+   "text": "忽必烈诏建国号大元，取乾元之义，都大都。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_yu_1276",
+   "subject": "event:yu_1276",
+   "year": 1276,
+   "era": "至元十三",
+   "title": "行省定制",
+   "kind": "制度",
+   "text": "立行省、行钞法、驿传通欧亚，多族共治。",
+   "place": "beijing"
+  }
+ ]
+}

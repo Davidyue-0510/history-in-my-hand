@@ -1,0 +1,34 @@
+{
+ "routes": [
+  {
+   "id": "rt_cq",
+   "name": "陈桥→开封",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "chenqiao",
+     "at": "960",
+     "label": "兵变处"
+    },
+    {
+     "place": "kaofeng",
+     "at": "960",
+     "label": "入城受禅"
+    }
+   ],
+   "outcome": {
+    "at": "960",
+    "type": "victory",
+    "text": "黄袍加身"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "960",
+   "era": "建隆元",
+   "label": "陈桥兵变·建宋",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_cb_cao",
+   "subject": "event:cb_cao",
+   "year": 208,
+   "era": "建安十三年",
+   "title": "曹操南下",
+   "kind": "战事",
+   "text": "操取荆州，顺流东下。"
+  },
+  {
+   "id": "ev_cb_lk",
+   "subject": "event:cb_lk",
+   "year": 208,
+   "era": "建安十三年",
+   "title": "孙刘结盟",
+   "kind": "战事",
+   "text": "诸葛亮说权，孙刘联兵拒曹。",
+   "place": "chibi"
+  },
+  {
+   "id": "ev_cb_jz",
+   "subject": "event:cb_jz",
+   "year": 208,
+   "era": "建安十三年冬",
+   "title": "赤壁火攻",
+   "kind": "战事",
+   "text": "黄盖诈降火攻，曹军大溃。",
+   "place": "chibi"
+  }
+ ]
+}

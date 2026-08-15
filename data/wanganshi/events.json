@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_wa_1069",
+   "subject": "event:wa_1069",
+   "year": 1069,
+   "era": "熙宁二年",
+   "title": "王安石执政·变法始",
+   "kind": "变法",
+   "text": "王安石任参知政事，设制置三司条例司，颁青苗法，变法启动。",
+   "place": "kaifeng"
+  },
+  {
+   "id": "ev_wa_1070",
+   "subject": "event:wa_1070",
+   "year": 1070,
+   "era": "三年",
+   "title": "任宰相·推诸法",
+   "kind": "变法",
+   "text": "王安石拜相，行募役、市易、保甲、农田水利诸法，朝廷分裂新旧党。",
+   "place": "kaifeng"
+  },
+  {
+   "id": "ev_wa_1085",
+   "subject": "event:wa_1085",
+   "year": 1085,
+   "era": "元丰八年",
+   "title": "神宗崩·新法废",
+   "kind": "结局",
+   "text": "神宗崩、哲宗立，高太后用司马光，新法次第罢废（「元祐更化」）。",
+   "place": "kaifeng"
+  }
+ ]
+}

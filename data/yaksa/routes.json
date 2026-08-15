@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_yk_qing",
+   "name": "清军北上",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "aihui",
+     "at": "1685-05",
+     "label": "彭春集兵"
+    },
+    {
+     "place": "yaksa",
+     "at": "1685-06",
+     "label": "围雅克萨"
+    }
+   ],
+   "outcome": {
+    "at": "1685-06",
+    "type": "victory",
+    "text": "清军围雅克萨"
+   }
+  },
+  {
+   "id": "rt_yk_e",
+   "name": "俄军据点",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "niuman",
+     "at": "1685-01",
+     "label": "俄据点"
+    },
+    {
+     "place": "yaksa",
+     "at": "1685-03",
+     "label": "守城"
+    }
+   ],
+   "outcome": {
+    "at": "1686-06",
+    "type": "defeat",
+    "text": "俄军守雅克萨请盟"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1685-05",
+   "era": "康熙二十四年",
+   "label": "清军围雅克萨",
+   "key": false
+  },
+  {
+   "at": "1686-07",
+   "era": "二十五年",
+   "label": "再围",
+   "key": true
+  },
+  {
+   "at": "1689-01",
+   "era": "二十八年",
+   "label": "尼布楚条约",
+   "key": true
+  }
+ ]
+}

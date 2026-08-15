@@ -1,0 +1,46 @@
+{
+ "routes": [
+  {
+   "id": "rt_tp",
+   "name": "太平军东进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "guiping",
+     "at": "1851",
+     "label": "金田起"
+    },
+    {
+     "place": "nanjing",
+     "at": "1853",
+     "label": "定天京"
+    }
+   ],
+   "outcome": {
+    "at": "1853",
+    "type": "victory",
+    "text": "割据江南"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1851",
+   "era": "咸丰元",
+   "label": "金田起义",
+   "key": true
+  },
+  {
+   "at": "1853",
+   "era": "咸丰三",
+   "label": "定都天京",
+   "key": true
+  },
+  {
+   "at": "1864",
+   "era": "同治三",
+   "label": "天京陷",
+   "key": true
+  }
+ ]
+}

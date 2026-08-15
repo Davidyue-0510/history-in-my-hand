@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "hongxiuquan",
+   "name": "洪秀全",
+   "side": "太平天国",
+   "influence": 0
+  },
+  {
+   "id": "xiangrong",
+   "name": "向荣",
+   "side": "清",
+   "influence": 0
+  }
+ ]
+}

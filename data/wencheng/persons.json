@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wencheng",
+   "name": "文成公主",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "songzanganbu",
+   "name": "松赞干布",
+   "side": "吐蕃",
+   "influence": 0
+  }
+ ]
+}

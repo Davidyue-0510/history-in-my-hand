@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "hanwu2",
+   "name": "汉武帝",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "litai",
+   "name": "卫太子据",
+   "side": "汉",
+   "influence": 0
+  }
+ ]
+}

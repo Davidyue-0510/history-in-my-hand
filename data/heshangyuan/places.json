@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "heshangyuan",
+   "name": "和尚原",
+   "lon": 106.95,
+   "lat": 34.35,
+   "note": "今陕西宝鸡西南"
+  },
+  {
+   "id": "baoji",
+   "name": "宝鸡",
+   "lon": 107.24,
+   "lat": 34.36,
+   "note": "宋边镇"
+  },
+  {
+   "id": "fengxiang",
+   "name": "凤翔",
+   "lon": 107.39,
+   "lat": 34.52,
+   "note": "金据"
+  },
+  {
+   "id": "linan",
+   "name": "临安",
+   "lon": 120.15,
+   "lat": 30.27,
+   "note": "宋都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

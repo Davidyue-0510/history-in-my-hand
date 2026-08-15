@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_xh_1010",
+   "subject": "event:xh_1010",
+   "year": 1911,
+   "era": "辛亥八月十九",
+   "title": "武昌首义",
+   "kind": "战事",
+   "text": "武昌新军起义，占楚望台、克督署，旋成立军政府。",
+   "place": "wuchang"
+  },
+  {
+   "id": "ev_xh_res",
+   "subject": "event:xh_res",
+   "year": 1911,
+   "era": "其后两月",
+   "title": "各省响应",
+   "kind": "变局",
+   "text": "湘陕赣晋等省相继独立，清统治土崩。",
+   "place": "nanjing"
+  },
+  {
+   "id": "ev_xh_1912",
+   "subject": "event:xh_1912",
+   "year": 1912,
+   "era": "民国元",
+   "title": "清帝逊位",
+   "kind": "结局",
+   "text": "宣统退位，帝制终结，共和肇建。",
+   "place": "beijing"
+  }
+ ]
+}

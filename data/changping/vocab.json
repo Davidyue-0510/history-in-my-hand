@@ -1,0 +1,49 @@
+{
+ "_comment": "战例图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.battle/route 的 key 须与 engagements.winner / routes.side 取值一致（a/b/none）。",
+ "parties": [
+  "秦军",
+  "赵军",
+  "综合史料"
+ ],
+ "party_bucket": {
+  "秦军": "秦军",
+  "赵军": "赵军",
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "a": "#c0392b",
+  "b": "#2b6cb0",
+  "综合史料": "#7f8c8d"
+ },
+ "legend": {
+  "battle": [
+   {
+    "key": "a",
+    "label": "秦军胜",
+    "color": "#c0392b"
+   },
+   {
+    "key": "b",
+    "label": "赵军胜",
+    "color": "#2b6cb0"
+   },
+   {
+    "key": "none",
+    "label": "未接战/不分胜",
+    "color": "#7f8c8d"
+   }
+  ],
+  "route": [
+   {
+    "key": "a",
+    "label": "秦军行军",
+    "color": "#c0392b"
+   },
+   {
+    "key": "b",
+    "label": "赵军行军",
+    "color": "#2b6cb0"
+   }
+  ]
+ }
+}

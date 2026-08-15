@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "zhangxun",
+   "name": "张巡",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "xuyuan",
+   "name": "许远",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "yinziqi",
+   "name": "尹子奇",
+   "side": "安史",
+   "influence": 0
+  }
+ ]
+}

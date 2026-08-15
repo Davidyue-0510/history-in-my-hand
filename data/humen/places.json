@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "humen",
+   "name": "虎门",
+   "lon": 113.58,
+   "lat": 22.81,
+   "note": "今广东东莞珠江口"
+  },
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "lon": 113.26,
+   "lat": 23.13,
+   "note": "清粤省"
+  },
+  {
+   "id": "dinghai",
+   "name": "定海",
+   "lon": 122.07,
+   "lat": 30.03,
+   "note": "英占"
+  },
+  {
+   "id": "ningbo",
+   "name": "宁波",
+   "lon": 121.55,
+   "lat": 29.87,
+   "note": "英占"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

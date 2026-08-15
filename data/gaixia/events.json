@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_gx_han",
+   "subject": "event:gx_han",
+   "year": -202,
+   "era": "汉高帝五年",
+   "title": "汉围楚",
+   "kind": "战事",
+   "text": "韩信率诸侯兵围羽于垓下。"
+  },
+  {
+   "id": "ev_gx_ge",
+   "subject": "event:gx_ge",
+   "year": -202,
+   "era": "汉高帝五年",
+   "title": "四面楚歌",
+   "kind": "战事",
+   "text": "汉军夜歌楚声，楚军溃散。",
+   "place": "gaixia"
+  },
+  {
+   "id": "ev_gx_wj",
+   "subject": "event:gx_wj",
+   "year": -202,
+   "era": "汉高帝五年",
+   "title": "乌江自刎",
+   "kind": "战事",
+   "text": "项羽突出重围至乌江自刎。",
+   "place": "wujiang"
+  }
+ ]
+}

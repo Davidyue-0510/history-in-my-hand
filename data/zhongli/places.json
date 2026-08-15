@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "zhongli",
+   "name": "钟离",
+   "lon": 117.43,
+   "lat": 32.88,
+   "note": "今安徽凤阳东"
+  },
+  {
+   "id": "shouyang",
+   "name": "寿阳",
+   "lon": 116.78,
+   "lat": 32.57,
+   "note": "魏军据"
+  },
+  {
+   "id": "jiankang",
+   "name": "建康",
+   "lon": 118.8,
+   "lat": 32.06,
+   "note": "梁都"
+  },
+  {
+   "id": "luoyang_wei",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "note": "北魏都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_ky_liu",
+   "name": "刘秀赴援",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "wan",
+     "at": "23-05",
+     "label": "刘秀在宛"
+    },
+    {
+     "place": "kunyang",
+     "at": "23-06",
+     "label": "突阵还战"
+    }
+   ],
+   "outcome": {
+    "at": "23-06",
+    "type": "victory",
+    "text": "昆阳内外夹击破莽"
+   }
+  },
+  {
+   "id": "rt_ky_mang",
+   "name": "莽军围城",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "luoyang",
+     "at": "23-04",
+     "label": "莽军南下"
+    },
+    {
+     "place": "kunyang",
+     "at": "23-05",
+     "label": "围城"
+    }
+   ],
+   "outcome": {
+    "at": "23-05",
+    "type": "defeat",
+    "text": "莽军围城反溃"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "23-04",
+   "era": "地皇四年",
+   "label": "莽军围昆阳",
+   "key": false
+  },
+  {
+   "at": "23-05",
+   "era": "五月",
+   "label": "刘秀夜出",
+   "key": false
+  },
+  {
+   "at": "23-06",
+   "era": "六月",
+   "label": "昆阳决战·莽溃",
+   "key": true
+  }
+ ]
+}

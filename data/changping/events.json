@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_cp_sd",
+   "subject": "event:cp_sd",
+   "year": -262,
+   "era": "周赧王五十三年",
+   "title": "秦取上党",
+   "kind": "战事",
+   "text": "秦受韩上党降，取南阳扼赵。"
+  },
+  {
+   "id": "ev_cp_kr",
+   "subject": "event:cp_kr",
+   "year": -260,
+   "era": "周赧王五十五年",
+   "title": "赵括代廉颇",
+   "kind": "战事",
+   "text": "赵王以赵括代廉颇，改守为攻。",
+   "place": "changping"
+  },
+  {
+   "id": "ev_cp_jz",
+   "subject": "event:cp_jz",
+   "year": -260,
+   "era": "周赧王五十五年九月",
+   "title": "长平决战",
+   "kind": "战事",
+   "text": "白起断粮围歼，赵军降卒被坑。",
+   "place": "changping"
+  }
+ ]
+}

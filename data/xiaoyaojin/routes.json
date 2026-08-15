@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_xy_wei",
+   "name": "魏守合肥",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "hefei",
+     "at": "215-01",
+     "label": "张辽守城"
+    },
+    {
+     "place": "xiaoyaojin",
+     "at": "215-08",
+     "label": "突阵"
+    }
+   ],
+   "outcome": {
+    "at": "215-08",
+    "type": "victory",
+    "text": "逍遥津退吴"
+   }
+  },
+  {
+   "id": "rt_xy_wu",
+   "name": "吴军北上",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "chaisang",
+     "at": "215-07",
+     "label": "孙权起兵"
+    },
+    {
+     "place": "ruxu",
+     "at": "215-08",
+     "label": "北上"
+    },
+    {
+     "place": "xiaoyaojin",
+     "at": "215-08",
+     "label": "攻合肥"
+    }
+   ],
+   "outcome": {
+    "at": "215-08",
+    "type": "defeat",
+    "text": "吴攻合肥不克退走"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "215-07",
+   "era": "建安二十年",
+   "label": "孙权攻合肥",
+   "key": false
+  },
+  {
+   "at": "215-08",
+   "era": "八月",
+   "label": "张辽突阵",
+   "key": true
+  },
+  {
+   "at": "215-08",
+   "era": "八月",
+   "label": "吴退走",
+   "key": true
+  }
+ ]
+}

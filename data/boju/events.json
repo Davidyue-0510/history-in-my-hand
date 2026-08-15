@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_bj_wu",
+   "subject": "event:bj_wu",
+   "year": -506,
+   "era": "周敬王十四年",
+   "title": "吴蔡唐联军",
+   "kind": "战事",
+   "text": "吴联蔡、唐伐楚。"
+  },
+  {
+   "id": "ev_bj_bj",
+   "subject": "event:bj_bj",
+   "year": -506,
+   "era": "周敬王十四年",
+   "title": "柏举决战",
+   "kind": "战事",
+   "text": "吴军柏举大败楚主力。",
+   "place": "boju"
+  },
+  {
+   "id": "ev_bj_ruying",
+   "subject": "event:bj_ruying",
+   "year": -506,
+   "era": "周敬王十四年",
+   "title": "吴入郢",
+   "kind": "战事",
+   "text": "吴五战及郢，楚昭王奔随。",
+   "place": "ying"
+  }
+ ]
+}

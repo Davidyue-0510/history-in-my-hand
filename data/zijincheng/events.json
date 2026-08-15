@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zj_1406",
+   "subject": "event:zj_1406",
+   "year": 1406,
+   "era": "永乐四",
+   "title": "诏建北京宫",
+   "kind": "工程",
+   "text": "营建北京宫殿，取材天下、征役军民数十万。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_zj_1420",
+   "subject": "event:zj_1420",
+   "year": 1420,
+   "era": "永乐十八",
+   "title": "紫禁城成",
+   "kind": "落成",
+   "text": "宫殿告成，次年迁都北京，定为京师。",
+   "place": "beijing"
+  }
+ ]
+}

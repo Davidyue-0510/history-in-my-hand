@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_qh_1644",
+   "subject": "event:qh_1644",
+   "year": 1644,
+   "era": "顺治元",
+   "title": "清入关·定鼎",
+   "kind": "融合",
+   "text": "清军入关、迁都北京，行科举、抚汉士以稳统治。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_qh_1645",
+   "subject": "event:qh_1645",
+   "year": 1645,
+   "era": "顺治二",
+   "title": "剃发易服令",
+   "kind": "强制",
+   "text": "下令剃发易服，「留头不留发」，激化满汉张力。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_qh_late",
+   "subject": "event:qh_late",
+   "year": 1720,
+   "era": "康熙末",
+   "title": "渐融一体",
+   "kind": "融合",
+   "text": "满汉通婚禁渐弛、儒典同尊，文化交渗成势。",
+   "place": "beijing"
+  }
+ ]
+}

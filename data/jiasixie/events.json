@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_js_533",
+   "subject": "event:js_533",
+   "year": 533,
+   "era": "东魏天平",
+   "title": "采摭农书",
+   "kind": "农学",
+   "text": "贾思勰官高阳，访老农、集古法，着手纂要术。",
+   "place": "yidu"
+  },
+  {
+   "id": "ev_js_544",
+   "subject": "event:js_544",
+   "year": 544,
+   "era": "东魏",
+   "title": "要术成",
+   "kind": "科技",
+   "text": "《齐民要术》十卷成，农学体系初立。",
+   "place": "yidu"
+  }
+ ]
+}

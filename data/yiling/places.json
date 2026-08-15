@@ -1,0 +1,41 @@
+{
+ "places": [
+  {
+   "id": "yiling",
+   "name": "夷陵",
+   "lon": 111.29,
+   "lat": 30.69,
+   "note": "今湖北宜昌"
+  },
+  {
+   "id": "zigui",
+   "name": "秭归",
+   "lon": 110.78,
+   "lat": 30.83,
+   "note": "蜀军出"
+  },
+  {
+   "id": "xiaoting",
+   "name": "猇亭",
+   "lon": 111.43,
+   "lat": 30.56,
+   "note": "吴蜀相持"
+  },
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "lon": 104.07,
+   "lat": 30.67,
+   "note": "蜀都"
+  },
+  {
+   "id": "jiangling",
+   "name": "江陵",
+   "lon": 112.24,
+   "lat": 30.35,
+   "note": "吴西路"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

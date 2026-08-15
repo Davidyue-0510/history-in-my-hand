@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhenghe2",
+   "name": "郑和",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "yongle2",
+   "name": "明成祖",
+   "side": "明",
+   "influence": 0
+  }
+ ]
+}

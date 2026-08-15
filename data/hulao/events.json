@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_hl_shi",
+   "subject": "event:hl_shi",
+   "year": 621,
+   "era": "武德四年",
+   "title": "唐围洛阳",
+   "kind": "战事",
+   "text": "李世民围王世充于洛阳。"
+  },
+  {
+   "id": "ev_hl_wei",
+   "subject": "event:hl_wei",
+   "year": 621,
+   "era": "武德四年",
+   "title": "建德援郑",
+   "kind": "战事",
+   "text": "窦建德率夏军救洛阳，屯虎牢东。",
+   "place": "hulao"
+  },
+  {
+   "id": "ev_hl_jz",
+   "subject": "event:hl_jz",
+   "year": 621,
+   "era": "武德四年",
+   "title": "虎牢擒建德",
+   "kind": "战事",
+   "text": "世民突阵擒建德，世充遂降。",
+   "place": "hulao"
+  }
+ ]
+}

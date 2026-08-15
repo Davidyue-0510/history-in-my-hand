@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "sun_yat",
+   "name": "孙中山",
+   "side": "革命党",
+   "influence": 0
+  },
+  {
+   "id": "yuan_shikai",
+   "name": "袁世凯",
+   "side": "清/北洋",
+   "influence": 0
+  }
+ ]
+}

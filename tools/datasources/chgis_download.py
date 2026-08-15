@@ -20,6 +20,7 @@
 import argparse
 import json
 import os
+import ssl
 import sys
 import time
 import urllib.request
@@ -27,18 +28,53 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 EXTERNAL = os.path.join(ROOT, "data", "external", "chgis")
-UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0) history-in-my-hand"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"}
 RETRIES = 3
+VERBOSE = "--verbose" in sys.argv
+
+
+def _open(url, timeout=90, extra_headers=None):
+    """urlopen 原生支持系统代理（环境变量 HTTP_PROXY/HTTPS_PROXY）与 context。
+    返回响应对象；失败抛带上下文诊断的异常。"""
+    headers = dict(UA)
+    if extra_headers:
+        headers.update(extra_headers)
+    req = urllib.request.Request(url, headers=headers)
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = True
+    ctx.verify_mode = ssl.CERT_REQUIRED
+    if VERBOSE:
+        proxies = urllib.request.getproxies()
+        print("[chgis] 代理: %s" % (proxies if proxies else "(无，直连)"))
+    try:
+        return urllib.request.urlopen(req, timeout=timeout, context=ctx)
+    except Exception as e:
+        # 附带诊断：区分超时/证书/HTTP 状态
+        kind = type(e).__name__
+        if hasattr(e, "code"):
+            detail = "HTTP %s: %s" % (e.code, getattr(e, "reason", ""))
+        elif isinstance(e, ssl.SSLError):
+            detail = "SSL/TLS 错误（证书或握手）: %s" % e
+        elif "timed out" in str(e).lower() or isinstance(e, TimeoutError):
+            detail = "连接超时（可能被墙或代理未开）"
+        else:
+            detail = "%s" % e
+        raise RuntimeError("%s @ %s（%s）" % (kind, url[:80], detail))
 
 
 def _api(path):
     url = "https://dataverse.harvard.edu/api/" + path
     for attempt in range(1, RETRIES + 1):
         try:
-            req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with _open(url) as r:
                 body = r.read().decode("utf-8", "replace")
             return json.loads(body)
+        except json.JSONDecodeError as e:
+            print("[chgis] API 第 %d 次：返回非 JSON（可能被 WAF 拦截），前 200 字: %s"
+                  % (attempt, body[:200]))
+            if attempt < RETRIES:
+                time.sleep(3)
         except Exception as e:
             print("[chgis] API 第 %d/%d 次失败: %s" % (attempt, RETRIES, e))
             if attempt < RETRIES:
@@ -93,10 +129,8 @@ def download_file(url, dest, retries=RETRIES):
         print("[chgis]   续传 %s（已有 %d MB）" % (os.path.basename(dest), resume // 1048576))
     for attempt in range(1, retries + 1):
         try:
-            req = urllib.request.Request(url, headers=UA)
-            if resume:
-                req.add_header("Range", "bytes=%d-" % resume)
-            with urllib.request.urlopen(req, timeout=120) as r, open(tmp, "ab") as f:
+            extra = {"Range": "bytes=%d-" % resume} if resume else None
+            with _open(url, timeout=120, extra_headers=extra) as r, open(tmp, "ab") as f:
                 total = int(r.headers.get("Content-Length") or 0) + resume
                 done = resume
                 while True:
@@ -147,6 +181,7 @@ def main():
     ap.add_argument("--all", action="store_true", help="批量下载全部数据集")
     ap.add_argument("--ids", help="只下指定 ID 列表，逗号分隔，如 --ids 123,456")
     ap.add_argument("--resume", action="store_true", help="只补下未完成的数据集（断点续传模式）")
+    ap.add_argument("--verbose", action="store_true", help="显示代理检测与详细错误")
     args = ap.parse_args()
 
     os.makedirs(EXTERNAL, exist_ok=True)

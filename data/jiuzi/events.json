@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_jz_1712",
+   "subject": "event:jz_1712",
+   "year": 1712,
+   "era": "康熙五一",
+   "title": "废太子·储位空",
+   "kind": "变局",
+   "text": "胤礽再废，储位久虚，诸皇子竞结党羽。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_jz_1722",
+   "subject": "event:jz_1722",
+   "year": 1722,
+   "era": "康熙六一",
+   "title": "雍正嗣位",
+   "kind": "结局",
+   "text": "康熙崩，遗诏传四子胤禛，在位为雍正，夺嫡终局。",
+   "place": "beijing"
+  }
+ ]
+}

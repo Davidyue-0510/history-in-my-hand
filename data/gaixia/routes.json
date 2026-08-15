@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_gx_han",
+   "name": "汉军合围",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "pengcheng",
+     "at": "B202-10",
+     "label": "汉起兵"
+    },
+    {
+     "place": "gaixia",
+     "at": "B202-12",
+     "label": "垓下合围"
+    }
+   ],
+   "outcome": {
+    "at": "B202-12",
+    "type": "victory",
+    "text": "垓下灭楚"
+   }
+  },
+  {
+   "id": "rt_gx_chu",
+   "name": "楚军东走",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "gaixia",
+     "at": "B202-12",
+     "label": "羽突出"
+    },
+    {
+     "place": "wujiang",
+     "at": "B202-12",
+     "label": "乌江自刎"
+    }
+   ],
+   "outcome": {
+    "at": "B202-12",
+    "type": "defeat",
+    "text": "羽走乌江自刎"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B202-10",
+   "era": "汉高帝五年",
+   "label": "汉围楚",
+   "key": false
+  },
+  {
+   "at": "B202-12",
+   "era": "十二月",
+   "label": "四面楚歌",
+   "key": true
+  },
+  {
+   "at": "B202-12",
+   "era": "十二月",
+   "label": "乌江自刎",
+   "key": true
+  }
+ ]
+}

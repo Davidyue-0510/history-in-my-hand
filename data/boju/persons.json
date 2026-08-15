@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "sunwu",
+   "name": "孙武",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "helu",
+   "name": "阖闾",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "nangwa",
+   "name": "囊瓦",
+   "side": "楚",
+   "influence": 0
+  }
+ ]
+}

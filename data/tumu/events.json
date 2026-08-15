@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_tm_ying",
+   "subject": "event:tm_ying",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "英宗亲征",
+   "kind": "战事",
+   "text": "王振挟英宗亲征瓦剌。"
+  },
+  {
+   "id": "ev_tm_wa",
+   "subject": "event:tm_wa",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "瓦剌南犯",
+   "kind": "战事",
+   "text": "也先诱明军至土木堡。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_jz",
+   "subject": "event:tm_jz",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "土木堡溃",
+   "kind": "战事",
+   "text": "明军溃，英宗被俘。",
+   "place": "tumu"
+  }
+ ]
+}

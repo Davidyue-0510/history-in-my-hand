@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wuwang",
+   "name": "周武王",
+   "side": "周",
+   "influence": 0
+  },
+  {
+   "id": "zhouwang",
+   "name": "商纣王",
+   "side": "商",
+   "influence": 0
+  }
+ ]
+}

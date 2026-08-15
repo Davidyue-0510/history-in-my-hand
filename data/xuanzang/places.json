@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  },
+  {
+   "id": "nalanda",
+   "name": "那烂陀",
+   "lon": 85.0,
+   "lat": 25.0,
+   "note": "玄奘求学地"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

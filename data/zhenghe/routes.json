@@ -1,0 +1,45 @@
+{
+ "routes": [
+  {
+   "id": "rt_zh",
+   "name": "刘家港→西洋",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "taicang",
+     "at": "1405",
+     "label": "启航"
+    },
+    {
+     "place": "zhancheng",
+     "at": "1405",
+     "label": "占城"
+    },
+    {
+     "place": "beijing",
+     "at": "1433",
+     "label": "归报"
+    }
+   ],
+   "outcome": {
+    "at": "1405",
+    "type": "none",
+    "text": "七下西洋"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1405",
+   "era": "永乐三",
+   "label": "首航",
+   "key": true
+  },
+  {
+   "at": "1433",
+   "era": "宣德八",
+   "label": "七下止",
+   "key": true
+  }
+ ]
+}

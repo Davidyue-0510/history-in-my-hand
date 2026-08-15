@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_hl_tang",
+   "name": "唐军东扼",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "changan_tx",
+     "at": "621-01",
+     "label": "唐出兵"
+    },
+    {
+     "place": "luoyang_t",
+     "at": "621-03",
+     "label": "围洛阳"
+    },
+    {
+     "place": "hulao",
+     "at": "621-05",
+     "label": "据关擒建德"
+    }
+   ],
+   "outcome": {
+    "at": "621-05",
+    "type": "victory",
+    "text": "虎牢擒建德，世充降"
+   }
+  },
+  {
+   "id": "rt_hl_xia",
+   "name": "夏军援郑",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "shanzhou",
+     "at": "621-02",
+     "label": "建德起"
+    },
+    {
+     "place": "hulao",
+     "at": "621-04",
+     "label": "屯虎牢东"
+    }
+   ],
+   "outcome": {
+    "at": "621-04",
+    "type": "defeat",
+    "text": "夏军援郑中伏被擒"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "621-01",
+   "era": "武德四年",
+   "label": "唐围洛阳",
+   "key": false
+  },
+  {
+   "at": "621-04",
+   "era": "四月",
+   "label": "建德屯虎牢",
+   "key": false
+  },
+  {
+   "at": "621-05",
+   "era": "五月",
+   "label": "虎牢擒建德",
+   "key": true
+  }
+ ]
+}

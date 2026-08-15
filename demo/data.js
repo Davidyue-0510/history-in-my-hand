@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 28 个切片
+// 权威数据源：data/scenes.json 注册的 122 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 28 个切片",
+  "slice": "multi-scene · 122 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -71,6 +71,96 @@ window.SANDBOX_DATA = {
    "id": "huabei",
    "name": "国共内战",
    "note": "1946-1950 第二次国共内战"
+  },
+  {
+   "id": "warring_states",
+   "name": "战国",
+   "note": "公元前260年前后，秦赵决战，战国兼并战争转折点。"
+  },
+  {
+   "id": "qin_han",
+   "name": "秦汉之际",
+   "note": "前207年，项羽破釜沉舟灭秦主力。"
+  },
+  {
+   "id": "three_kingdoms",
+   "name": "三国",
+   "note": "200年，曹操以少胜多败袁绍，统一北方奠基。"
+  },
+  {
+   "id": "two_jin",
+   "name": "两晋南北朝",
+   "note": "383年，东晋以少胜多败前秦，南北对峙延续。"
+  },
+  {
+   "id": "sui_tang",
+   "name": "隋唐",
+   "note": "621年，李世民一战擒窦建德、降王世充，统一中原。"
+  },
+  {
+   "id": "song",
+   "name": "宋",
+   "note": "1004年，宋辽澶渊之盟，百年和平。"
+  },
+  {
+   "id": "yuan_ming",
+   "name": "元明之际",
+   "note": "1363年，朱元璋火攻破陈友谅，定鼎江南。"
+  },
+  {
+   "id": "qing_modern",
+   "name": "清及近代",
+   "note": "1685—1686年，清俄雅克萨之战，尼布楚条约前奏。"
+  },
+  {
+   "id": "ecology",
+   "name": "天灾与生态",
+   "note": "黄河以「善淤善决善徙」著称，史称「六年一决、百年一改道」。本切片列其历次大改道与夺淮、北归。"
+  },
+  {
+   "id": "engineering",
+   "name": "重大工程",
+   "note": "隋唐奠基、元朝裁直的南北大运河，是世界最长人工水道，维系帝国漕运命脉。"
+  },
+  {
+   "id": "dynasty",
+   "name": "王朝更迭",
+   "note": "前230—前221，秦王嬴政十年间次第灭韩赵魏楚燕齐，建立首个中央集权帝国。"
+  },
+  {
+   "id": "reform",
+   "name": "改革与变法",
+   "note": "前356 起商鞅两次变法，废井田、奖耕战、行县制，奠定秦富强之基。"
+  },
+  {
+   "id": "uprising",
+   "name": "农民起义",
+   "note": "184 年张角以太平道聚众，黄巾起义爆发，东汉名存实亡，军阀割据由此起。"
+  },
+  {
+   "id": "fusion",
+   "name": "民族融合",
+   "note": "北魏孝文帝迁都洛阳、禁胡服胡语、改汉姓，推动鲜卑融入华夏。"
+  },
+  {
+   "id": "court",
+   "name": "宫廷斗争",
+   "note": "626 年李世民于玄武门伏杀太子建成、齐王元吉，夺嫡即位。"
+  },
+  {
+   "id": "thought",
+   "name": "思想文化",
+   "note": "前134 年武帝采董仲舒议，「罢黜百家，独尊儒术」，儒术成正统。"
+  },
+  {
+   "id": "tech",
+   "name": "科技医学",
+   "note": "造纸、印刷、火药、指南针——改变世界的中国原创，经丝路与海路西传。"
+  },
+  {
+   "id": "exchange",
+   "name": "对外交流",
+   "note": "前138 起张骞「凿空」西域，丝绸之路由此贯通。"
   }
  ],
  "scene_order": [
@@ -101,7 +191,101 @@ window.SANDBOX_DATA = {
   "imjin",
   "yellow_sea_1894",
   "qin_mie_liu_guo",
-  "three_campaigns"
+  "three_campaigns",
+  "changping",
+  "guiling",
+  "maling",
+  "chengpu",
+  "boju",
+  "julu",
+  "gaixia",
+  "mobai",
+  "kunyang",
+  "guandu",
+  "chibi",
+  "yiling",
+  "xiaoyaojin",
+  "feishui",
+  "canhebei",
+  "zhongli",
+  "hulao",
+  "talas",
+  "suiyang",
+  "yancheng",
+  "heshangyuan",
+  "caishiji",
+  "diaoyucheng",
+  "yaoshan",
+  "poyanghu",
+  "tumu",
+  "beijing",
+  "yaksa",
+  "tianjing",
+  "humen",
+  "huanghe",
+  "locust",
+  "huaxian",
+  "little_ice",
+  "grand_canal",
+  "dujiangyan",
+  "great_wall",
+  "qin_unify",
+  "ming_fall",
+  "shangyang",
+  "wanganshi",
+  "huangjin",
+  "lizicheng",
+  "xiaowen",
+  "wencheng",
+  "xuanwu",
+  "jingnan",
+  "dunzun",
+  "keju",
+  "four_inv",
+  "bencao",
+  "dong_han_yi",
+  "dingwu",
+  "song_he_jue",
+  "zijincheng",
+  "lingqu",
+  "zhaozhou",
+  "sui_daxing",
+  "wuwang",
+  "sui_mie_chen",
+  "chenqiao",
+  "yashan",
+  "xinhai",
+  "zhangjuzheng",
+  "wuxu",
+  "wangmang",
+  "liangshui",
+  "jiupin",
+  "chensheng",
+  "huangchao",
+  "taiping",
+  "hongjin",
+  "lvlin",
+  "zhaowulian",
+  "zhaofen",
+  "qing_han",
+  "yuan_duo",
+  "chanyuan",
+  "beijiu",
+  "jiuzi",
+  "wugu",
+  "shaqiu",
+  "baijia",
+  "fenshu",
+  "fotao",
+  "lixue",
+  "zhangheng",
+  "zuchongzhi",
+  "shenkuo",
+  "jiasixie",
+  "zhangqian",
+  "zhenghe",
+  "xuanzang",
+  "jianzhen"
  ],
  "vocab": {
   "layers": [
@@ -7090,7 +7274,7 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "sarhu.html",
    "primary_place": "hetuala",
-   "vocab_pack": "ming_qing",
+   "vocab_pack": "inline:sarhu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "counts": {
@@ -7779,6 +7963,2356 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "changping": {
+   "key": "changping",
+   "scene_id": "changping",
+   "title": "长平之战",
+   "dossier_label": "长平之战",
+   "subtitle": "周赧王五十三—五十五年（前262—前260）· 秦 vs 赵",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "changping.html",
+   "primary_place": "changping",
+   "vocab_pack": "inline:changping",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "guiling": {
+   "key": "guiling",
+   "scene_id": "guiling",
+   "title": "桂陵之战",
+   "dossier_label": "桂陵之战",
+   "subtitle": "周显王十五年（前354）· 齐 vs 魏",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "guiling.html",
+   "primary_place": "guiling",
+   "vocab_pack": "inline:guiling",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "maling": {
+   "key": "maling",
+   "scene_id": "maling",
+   "title": "马陵之战",
+   "dossier_label": "马陵之战",
+   "subtitle": "周显王二十八—二十九年（前341—前340）· 齐 vs 魏",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "maling.html",
+   "primary_place": "maling",
+   "vocab_pack": "inline:maling",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "chengpu": {
+   "key": "chengpu",
+   "scene_id": "chengpu",
+   "title": "城濮之战",
+   "dossier_label": "城濮之战",
+   "subtitle": "周襄王二十年（前632）· 晋 vs 楚",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "chengpu.html",
+   "primary_place": "chengpu",
+   "vocab_pack": "inline:chengpu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "boju": {
+   "key": "boju",
+   "scene_id": "boju",
+   "title": "柏举之战",
+   "dossier_label": "柏举之战",
+   "subtitle": "周敬王十四年（前506）· 吴 vs 楚",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "boju.html",
+   "primary_place": "boju",
+   "vocab_pack": "inline:boju",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "julu": {
+   "key": "julu",
+   "scene_id": "julu",
+   "title": "巨鹿之战",
+   "dossier_label": "巨鹿之战",
+   "subtitle": "秦二世三年（前207）· 楚（项羽） vs 秦",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "julu.html",
+   "primary_place": "julu",
+   "vocab_pack": "inline:julu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "gaixia": {
+   "key": "gaixia",
+   "scene_id": "gaixia",
+   "title": "垓下之战",
+   "dossier_label": "垓下之战",
+   "subtitle": "汉高帝五年（前202）· 汉 vs 楚",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "gaixia.html",
+   "primary_place": "gaixia",
+   "vocab_pack": "inline:gaixia",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "mobai": {
+   "key": "mobai",
+   "scene_id": "mobai",
+   "title": "漠北之战",
+   "dossier_label": "漠北之战",
+   "subtitle": "汉武帝元狩四年（前119）· 汉 vs 匈奴",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "mobai.html",
+   "primary_place": "mobei",
+   "vocab_pack": "inline:mobai",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "kunyang": {
+   "key": "kunyang",
+   "scene_id": "kunyang",
+   "title": "昆阳之战",
+   "dossier_label": "昆阳之战",
+   "subtitle": "新莽地皇四年（23）· 汉（刘秀） vs 新莽",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "kunyang.html",
+   "primary_place": "kunyang",
+   "vocab_pack": "inline:kunyang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "guandu": {
+   "key": "guandu",
+   "scene_id": "guandu",
+   "title": "官渡之战",
+   "dossier_label": "官渡之战",
+   "subtitle": "汉献帝建安五年（200）· 曹 vs 袁",
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "page": "guandu.html",
+   "primary_place": "guandu",
+   "vocab_pack": "inline:guandu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "chibi": {
+   "key": "chibi",
+   "scene_id": "chibi",
+   "title": "赤壁之战",
+   "dossier_label": "赤壁之战",
+   "subtitle": "汉献帝建安十三年（208）· 孙刘 vs 曹",
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "page": "chibi.html",
+   "primary_place": "chibi",
+   "vocab_pack": "inline:chibi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "yiling": {
+   "key": "yiling",
+   "scene_id": "yiling",
+   "title": "夷陵之战",
+   "dossier_label": "夷陵之战",
+   "subtitle": "章武二年（222）· 吴 vs 蜀",
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "page": "yiling.html",
+   "primary_place": "yiling",
+   "vocab_pack": "inline:yiling",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "xiaoyaojin": {
+   "key": "xiaoyaojin",
+   "scene_id": "xiaoyaojin",
+   "title": "逍遥津之战",
+   "dossier_label": "逍遥津之战",
+   "subtitle": "建安二十年（215）· 魏 vs 吴",
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "page": "xiaoyaojin.html",
+   "primary_place": "xiaoyaojin",
+   "vocab_pack": "inline:xiaoyaojin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "feishui": {
+   "key": "feishui",
+   "scene_id": "feishui",
+   "title": "淝水之战",
+   "dossier_label": "淝水之战",
+   "subtitle": "太元八年（383）· 东晋 vs 前秦",
+   "kind": "battle",
+   "region": "two_jin",
+   "page": "feishui.html",
+   "primary_place": "feishui",
+   "vocab_pack": "inline:feishui",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "canhebei": {
+   "key": "canhebei",
+   "scene_id": "canhebei",
+   "title": "参合陂之战",
+   "dossier_label": "参合陂之战",
+   "subtitle": "北魏登国十年（395）· 北魏 vs 后燕",
+   "kind": "battle",
+   "region": "two_jin",
+   "page": "canhebei.html",
+   "primary_place": "canhebei",
+   "vocab_pack": "inline:canhebei",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "zhongli": {
+   "key": "zhongli",
+   "scene_id": "zhongli",
+   "title": "钟离之战",
+   "dossier_label": "钟离之战",
+   "subtitle": "天监六年（507）· 梁 vs 北魏",
+   "kind": "battle",
+   "region": "two_jin",
+   "page": "zhongli.html",
+   "primary_place": "zhongli",
+   "vocab_pack": "inline:zhongli",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "hulao": {
+   "key": "hulao",
+   "scene_id": "hulao",
+   "title": "虎牢关之战",
+   "dossier_label": "虎牢关之战",
+   "subtitle": "武德四年（621）· 唐 vs 郑/夏",
+   "kind": "battle",
+   "region": "sui_tang",
+   "page": "hulao.html",
+   "primary_place": "hulao",
+   "vocab_pack": "inline:hulao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "talas": {
+   "key": "talas",
+   "scene_id": "talas",
+   "title": "怛罗斯之战",
+   "dossier_label": "怛罗斯之战",
+   "subtitle": "天宝十载（751）· 唐 vs 大食（阿拔斯）",
+   "kind": "battle",
+   "region": "sui_tang",
+   "page": "talas.html",
+   "primary_place": "talas",
+   "vocab_pack": "inline:talas",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "suiyang": {
+   "key": "suiyang",
+   "scene_id": "suiyang",
+   "title": "睢阳之战",
+   "dossier_label": "睢阳之战",
+   "subtitle": "至德二载（757）· 唐 vs 安史",
+   "kind": "battle",
+   "region": "sui_tang",
+   "page": "suiyang.html",
+   "primary_place": "suiyang",
+   "vocab_pack": "inline:suiyang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "yancheng": {
+   "key": "yancheng",
+   "scene_id": "yancheng",
+   "title": "郾城之战",
+   "dossier_label": "郾城之战",
+   "subtitle": "绍兴十年（1140）· 宋（岳家军） vs 金",
+   "kind": "battle",
+   "region": "song",
+   "page": "yancheng.html",
+   "primary_place": "yancheng",
+   "vocab_pack": "inline:yancheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "heshangyuan": {
+   "key": "heshangyuan",
+   "scene_id": "heshangyuan",
+   "title": "和尚原之战",
+   "dossier_label": "和尚原之战",
+   "subtitle": "绍兴元年（1131）· 宋 vs 金",
+   "kind": "battle",
+   "region": "song",
+   "page": "heshangyuan.html",
+   "primary_place": "heshangyuan",
+   "vocab_pack": "inline:heshangyuan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "caishiji": {
+   "key": "caishiji",
+   "scene_id": "caishiji",
+   "title": "采石矶之战",
+   "dossier_label": "采石矶之战",
+   "subtitle": "绍兴三十一年（1161）· 宋 vs 金",
+   "kind": "battle",
+   "region": "song",
+   "page": "caishiji.html",
+   "primary_place": "caishiji",
+   "vocab_pack": "inline:caishiji",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "diaoyucheng": {
+   "key": "diaoyucheng",
+   "scene_id": "diaoyucheng",
+   "title": "钓鱼城之战",
+   "dossier_label": "钓鱼城之战",
+   "subtitle": "开庆元年（1259）· 宋 vs 蒙古",
+   "kind": "battle",
+   "region": "song",
+   "page": "diaoyucheng.html",
+   "primary_place": "diaoyucheng",
+   "vocab_pack": "inline:diaoyucheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "yaoshan": {
+   "key": "yaoshan",
+   "scene_id": "yaoshan",
+   "title": "崖山海战",
+   "dossier_label": "崖山海战",
+   "subtitle": "祥兴二年（1279）· 宋 vs 元",
+   "kind": "battle",
+   "region": "song",
+   "page": "yaoshan.html",
+   "primary_place": "yaoshan",
+   "vocab_pack": "inline:yaoshan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "poyanghu": {
+   "key": "poyanghu",
+   "scene_id": "poyanghu",
+   "title": "鄱阳湖之战",
+   "dossier_label": "鄱阳湖之战",
+   "subtitle": "龙凤九年（1363）· 朱 vs 陈",
+   "kind": "battle",
+   "region": "yuan_ming",
+   "page": "poyanghu.html",
+   "primary_place": "poyanghu",
+   "vocab_pack": "inline:poyanghu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "tumu": {
+   "key": "tumu",
+   "scene_id": "tumu",
+   "title": "土木堡之变",
+   "dossier_label": "土木堡之变",
+   "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
+   "kind": "battle",
+   "region": "yuan_ming",
+   "page": "tumu.html",
+   "primary_place": "tumu",
+   "vocab_pack": "inline:tumu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "beijing": {
+   "key": "beijing",
+   "scene_id": "beijing",
+   "title": "北京保卫战",
+   "dossier_label": "北京保卫战",
+   "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
+   "kind": "battle",
+   "region": "yuan_ming",
+   "page": "beijing.html",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:beijing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "yaksa": {
+   "key": "yaksa",
+   "scene_id": "yaksa",
+   "title": "雅克萨之战",
+   "dossier_label": "雅克萨之战",
+   "subtitle": "康熙二十四—二十五年（1685—1686）· 清 vs 沙俄",
+   "kind": "battle",
+   "region": "qing_modern",
+   "page": "yaksa.html",
+   "primary_place": "yaksa",
+   "vocab_pack": "inline:yaksa",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "tianjing": {
+   "key": "tianjing",
+   "scene_id": "tianjing",
+   "title": "天京保卫战",
+   "dossier_label": "天京保卫战",
+   "subtitle": "同治三年（1864）· 太平军 vs 清（湘军）",
+   "kind": "battle",
+   "region": "qing_modern",
+   "page": "tianjing.html",
+   "primary_place": "tianjing",
+   "vocab_pack": "inline:tianjing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "humen": {
+   "key": "humen",
+   "scene_id": "humen",
+   "title": "虎门之战",
+   "dossier_label": "虎门之战",
+   "subtitle": "道光二十一年（1841）· 清 vs 英",
+   "kind": "battle",
+   "region": "qing_modern",
+   "page": "humen.html",
+   "primary_place": "humen",
+   "vocab_pack": "inline:humen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "huanghe": {
+   "key": "huanghe",
+   "scene_id": "huanghe",
+   "title": "黄河改道",
+   "dossier_label": "黄河改道",
+   "subtitle": "前602—1855 · 六次大改道",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=huanghe",
+   "primary_place": "taohuayu",
+   "vocab_pack": "inline:huanghe",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 9,
+    "person": 2,
+    "assert": 6,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 6,
+    "inference": 0
+   }
+  },
+  "locust": {
+   "key": "locust",
+   "scene_id": "locust",
+   "title": "蝗灾",
+   "dossier_label": "蝗灾",
+   "subtitle": "622—1943 · 历代大蝗",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=locust",
+   "primary_place": "guanzhong",
+   "vocab_pack": "inline:locust",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 2,
+    "assert": 5,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 5,
+    "inference": 0
+   }
+  },
+  "huaxian": {
+   "key": "huaxian",
+   "scene_id": "huaxian",
+   "title": "华县大地震",
+   "dossier_label": "华县大地震",
+   "subtitle": "明嘉靖三十四年（1556）· 8级余",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=huaxian",
+   "primary_place": "huaxian",
+   "vocab_pack": "inline:huaxian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "little_ice": {
+   "key": "little_ice",
+   "scene_id": "little_ice",
+   "title": "明末小冰期饥荒",
+   "dossier_label": "明末小冰期饥荒",
+   "subtitle": "1580—1644 · 北中国连年亢旱",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=little_ice",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:little_ice",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 5,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 5,
+    "inference": 0
+   }
+  },
+  "grand_canal": {
+   "key": "grand_canal",
+   "scene_id": "grand_canal",
+   "title": "大运河",
+   "dossier_label": "大运河",
+   "subtitle": "605—1293 · 隋唐凿通·元朝裁直",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=grand_canal",
+   "primary_place": "hangzhou",
+   "vocab_pack": "inline:grand_canal",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "dujiangyan": {
+   "key": "dujiangyan",
+   "scene_id": "dujiangyan",
+   "title": "都江堰",
+   "dossier_label": "都江堰",
+   "subtitle": "约公元前256 · 李冰筑",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=dujiangyan",
+   "primary_place": "dujiangyan",
+   "vocab_pack": "inline:dujiangyan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "great_wall": {
+   "key": "great_wall",
+   "scene_id": "great_wall",
+   "title": "长城",
+   "dossier_label": "长城",
+   "subtitle": "前214—1644 · 秦连·明筑",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=great_wall",
+   "primary_place": "badaling",
+   "vocab_pack": "inline:great_wall",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "qin_unify": {
+   "key": "qin_unify",
+   "scene_id": "qin_unify",
+   "title": "秦灭六国",
+   "dossier_label": "秦灭六国",
+   "subtitle": "前230—前221 · 秦 vs 六国",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=qin_unify",
+   "primary_place": "xianyang",
+   "vocab_pack": "inline:qin_unify",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 2,
+    "assert": 6,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 6,
+    "inference": 0
+   }
+  },
+  "ming_fall": {
+   "key": "ming_fall",
+   "scene_id": "ming_fall",
+   "title": "明亡·崇祯自缢",
+   "dossier_label": "明亡",
+   "subtitle": "1644 · 内忧外患·国祚终结",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=ming_fall",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:ming_fall",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "shangyang": {
+   "key": "shangyang",
+   "scene_id": "shangyang",
+   "title": "商鞅变法",
+   "dossier_label": "商鞅变法",
+   "subtitle": "前356—前338 · 秦孝公时",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=shangyang",
+   "primary_place": "xianyang",
+   "vocab_pack": "inline:shangyang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "wanganshi": {
+   "key": "wanganshi",
+   "scene_id": "wanganshi",
+   "title": "王安石变法",
+   "dossier_label": "王安石变法",
+   "subtitle": "1069—1085 · 宋神宗时",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=wanganshi",
+   "primary_place": "kaifeng",
+   "vocab_pack": "inline:wanganshi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "huangjin": {
+   "key": "huangjin",
+   "scene_id": "huangjin",
+   "title": "黄巾起义",
+   "dossier_label": "黄巾起义",
+   "subtitle": "184 · 张角 vs 东汉",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=huangjin",
+   "primary_place": "julu_up",
+   "vocab_pack": "inline:huangjin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "lizicheng": {
+   "key": "lizicheng",
+   "scene_id": "lizicheng",
+   "title": "李自成起义",
+   "dossier_label": "李自成起义",
+   "subtitle": "1628—1645 · 闯军 vs 明",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=lizicheng",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:lizicheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 4,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 4,
+    "inference": 0
+   }
+  },
+  "xiaowen": {
+   "key": "xiaowen",
+   "scene_id": "xiaowen",
+   "title": "孝文帝汉化",
+   "dossier_label": "孝文帝汉化",
+   "subtitle": "493—496 · 北魏",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=xiaowen",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:xiaowen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "wencheng": {
+   "key": "wencheng",
+   "scene_id": "wencheng",
+   "title": "文成公主入藏",
+   "dossier_label": "文成公主入藏",
+   "subtitle": "641 · 唐蕃和亲",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=wencheng",
+   "primary_place": "lhasa",
+   "vocab_pack": "inline:wencheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "xuanwu": {
+   "key": "xuanwu",
+   "scene_id": "xuanwu",
+   "title": "玄武门之变",
+   "dossier_label": "玄武门之变",
+   "subtitle": "626 · 唐高祖武德九年",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=xuanwu",
+   "primary_place": "xuanwumen",
+   "vocab_pack": "inline:xuanwu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "jingnan": {
+   "key": "jingnan",
+   "scene_id": "jingnan",
+   "title": "靖难之役",
+   "dossier_label": "靖难之役",
+   "subtitle": "1399—1402 · 燕王 vs 建文",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=jingnan",
+   "primary_place": "nanjing",
+   "vocab_pack": "inline:jingnan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "dunzun": {
+   "key": "dunzun",
+   "scene_id": "dunzun",
+   "title": "独尊儒术",
+   "dossier_label": "独尊儒术",
+   "subtitle": "前134 · 汉武帝时",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=dunzun",
+   "primary_place": "changan_dz",
+   "vocab_pack": "inline:dunzun",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "keju": {
+   "key": "keju",
+   "scene_id": "keju",
+   "title": "科举制",
+   "dossier_label": "科举制",
+   "subtitle": "605—1905 · 选官制度",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=keju",
+   "primary_place": "luoyang_k",
+   "vocab_pack": "inline:keju",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "four_inv": {
+   "key": "four_inv",
+   "scene_id": "four_inv",
+   "title": "四大发明",
+   "dossier_label": "四大发明",
+   "subtitle": "2—13 世纪 · 改变世界的原创",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=four_inv",
+   "primary_place": "kaifeng_f",
+   "vocab_pack": "inline:four_inv",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 4,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 4,
+    "inference": 0
+   }
+  },
+  "bencao": {
+   "key": "bencao",
+   "scene_id": "bencao",
+   "title": "本草纲目·授时历",
+   "dossier_label": "本草纲目·授时历",
+   "subtitle": "1281 · 1578 · 科技医学高峰",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=bencao",
+   "primary_place": "dadu_b",
+   "vocab_pack": "inline:bencao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "dong_han_yi": {
+   "key": "dong_han_yi",
+   "scene_id": "dong_han_yi",
+   "title": "东汉大疫",
+   "dossier_label": "东汉大疫",
+   "subtitle": "196—220 · 建安瘟疫",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=dong_han_yi",
+   "primary_place": "nanyang",
+   "vocab_pack": "inline:dong_han_yi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "dingwu": {
+   "key": "dingwu",
+   "scene_id": "dingwu",
+   "title": "丁戊奇荒",
+   "dossier_label": "丁戊奇荒",
+   "subtitle": "1877—1878 · 晚清华北大旱",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=dingwu",
+   "primary_place": "taiyuan",
+   "vocab_pack": "inline:dingwu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "song_he_jue": {
+   "key": "song_he_jue",
+   "scene_id": "song_he_jue",
+   "title": "北宋滑州河决",
+   "dossier_label": "北宋滑州河决",
+   "subtitle": "1019 · 天禧三年河患",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=song_he_jue",
+   "primary_place": "huaxian_s",
+   "vocab_pack": "inline:song_he_jue",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "zijincheng": {
+   "key": "zijincheng",
+   "scene_id": "zijincheng",
+   "title": "紫禁城营建",
+   "dossier_label": "紫禁城营建",
+   "subtitle": "1406—1420 · 明永乐",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=zijincheng",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:zijincheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "lingqu": {
+   "key": "lingqu",
+   "scene_id": "lingqu",
+   "title": "灵渠",
+   "dossier_label": "灵渠",
+   "subtitle": "前214 · 秦",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=lingqu",
+   "primary_place": "xingan",
+   "vocab_pack": "inline:lingqu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhaozhou": {
+   "key": "zhaozhou",
+   "scene_id": "zhaozhou",
+   "title": "赵州桥",
+   "dossier_label": "赵州桥",
+   "subtitle": "595 · 隋开皇",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=zhaozhou",
+   "primary_place": "zhaoxian",
+   "vocab_pack": "inline:zhaozhou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "sui_daxing": {
+   "key": "sui_daxing",
+   "scene_id": "sui_daxing",
+   "title": "隋大兴城",
+   "dossier_label": "隋大兴城",
+   "subtitle": "582 · 隋开皇",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=sui_daxing",
+   "primary_place": "changan",
+   "vocab_pack": "inline:sui_daxing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "wuwang": {
+   "key": "wuwang",
+   "scene_id": "wuwang",
+   "title": "武王克商",
+   "dossier_label": "武王克商",
+   "subtitle": "前1046 · 商周革命",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=wuwang",
+   "primary_place": "muye",
+   "vocab_pack": "inline:wuwang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "sui_mie_chen": {
+   "key": "sui_mie_chen",
+   "scene_id": "sui_mie_chen",
+   "title": "隋灭陈",
+   "dossier_label": "隋灭陈",
+   "subtitle": "589 · 隋文帝统一",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=sui_mie_chen",
+   "primary_place": "nanjing",
+   "vocab_pack": "inline:sui_mie_chen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "chenqiao": {
+   "key": "chenqiao",
+   "scene_id": "chenqiao",
+   "title": "陈桥兵变",
+   "dossier_label": "陈桥兵变",
+   "subtitle": "960 · 宋太祖代周",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=chenqiao",
+   "primary_place": "chenqiao",
+   "vocab_pack": "inline:chenqiao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "yashan": {
+   "key": "yashan",
+   "scene_id": "yashan",
+   "title": "崖山之战",
+   "dossier_label": "崖山之战",
+   "subtitle": "1279 · 宋元最后一战",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=yashan",
+   "primary_place": "jiangmen",
+   "vocab_pack": "inline:yashan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "xinhai": {
+   "key": "xinhai",
+   "scene_id": "xinhai",
+   "title": "辛亥革命",
+   "dossier_label": "辛亥革命",
+   "subtitle": "1911 · 帝制终结",
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=xinhai",
+   "primary_place": "wuchang",
+   "vocab_pack": "inline:xinhai",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "zhangjuzheng": {
+   "key": "zhangjuzheng",
+   "scene_id": "zhangjuzheng",
+   "title": "张居正改革",
+   "dossier_label": "张居正改革",
+   "subtitle": "1573—1582 · 明万历",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=zhangjuzheng",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:zhangjuzheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "wuxu": {
+   "key": "wuxu",
+   "scene_id": "wuxu",
+   "title": "戊戌变法",
+   "dossier_label": "戊戌变法",
+   "subtitle": "1898 · 光绪廿四",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=wuxu",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:wuxu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "wangmang": {
+   "key": "wangmang",
+   "scene_id": "wangmang",
+   "title": "王莽改制",
+   "dossier_label": "王莽改制",
+   "subtitle": "9 — 23 · 新莽",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=wangmang",
+   "primary_place": "changan",
+   "vocab_pack": "inline:wangmang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "liangshui": {
+   "key": "liangshui",
+   "scene_id": "liangshui",
+   "title": "两税法",
+   "dossier_label": "两税法",
+   "subtitle": "780 · 唐建中",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=liangshui",
+   "primary_place": "changan",
+   "vocab_pack": "inline:liangshui",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "jiupin": {
+   "key": "jiupin",
+   "scene_id": "jiupin",
+   "title": "九品中正制",
+   "dossier_label": "九品中正制",
+   "subtitle": "220 · 曹魏",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=jiupin",
+   "primary_place": "yecheng",
+   "vocab_pack": "inline:jiupin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "chensheng": {
+   "key": "chensheng",
+   "scene_id": "chensheng",
+   "title": "陈胜吴广起义",
+   "dossier_label": "陈胜吴广起义",
+   "subtitle": "前209 · 秦末",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=chensheng",
+   "primary_place": "dazexiang",
+   "vocab_pack": "inline:chensheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "huangchao": {
+   "key": "huangchao",
+   "scene_id": "huangchao",
+   "title": "黄巢起义",
+   "dossier_label": "黄巢起义",
+   "subtitle": "875—884 · 唐末",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=huangchao",
+   "primary_place": "changan",
+   "vocab_pack": "inline:huangchao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "taiping": {
+   "key": "taiping",
+   "scene_id": "taiping",
+   "title": "太平天国",
+   "dossier_label": "太平天国",
+   "subtitle": "1851—1864 · 晚清",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=taiping",
+   "primary_place": "guiping",
+   "vocab_pack": "inline:taiping",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "hongjin": {
+   "key": "hongjin",
+   "scene_id": "hongjin",
+   "title": "红巾军",
+   "dossier_label": "红巾军",
+   "subtitle": "1351—1368 · 元末",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=hongjin",
+   "primary_place": "yingzhou",
+   "vocab_pack": "inline:hongjin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "lvlin": {
+   "key": "lvlin",
+   "scene_id": "lvlin",
+   "title": "绿林赤眉",
+   "dossier_label": "绿林赤眉",
+   "subtitle": "17 — 27 · 新莽末",
+   "kind": "uprising",
+   "region": "uprising",
+   "page": "county.html?scene=lvlin",
+   "primary_place": "lvlin",
+   "vocab_pack": "inline:lvlin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhaowulian": {
+   "key": "zhaowulian",
+   "scene_id": "zhaowulian",
+   "title": "赵武灵王胡服骑射",
+   "dossier_label": "赵武灵王胡服骑射",
+   "subtitle": "前307 · 战国赵",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=zhaowulian",
+   "primary_place": "handan",
+   "vocab_pack": "inline:zhaowulian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhaofen": {
+   "key": "zhaofen",
+   "scene_id": "zhaofen",
+   "title": "昭君出塞",
+   "dossier_label": "昭君出塞",
+   "subtitle": "前33 · 汉元帝时",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=zhaofen",
+   "primary_place": "hohhot",
+   "vocab_pack": "inline:zhaofen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "qing_han": {
+   "key": "qing_han",
+   "scene_id": "qing_han",
+   "title": "清满汉融合",
+   "dossier_label": "清满汉融合",
+   "subtitle": "1644 起 · 清",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=qing_han",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:qing_han",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "yuan_duo": {
+   "key": "yuan_duo",
+   "scene_id": "yuan_duo",
+   "title": "元多元一体",
+   "dossier_label": "元多元一体",
+   "subtitle": "1271 起 · 元",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=yuan_duo",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:yuan_duo",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "chanyuan": {
+   "key": "chanyuan",
+   "scene_id": "chanyuan",
+   "title": "澶渊之盟",
+   "dossier_label": "澶渊之盟",
+   "subtitle": "1005 · 辽宋",
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=chanyuan",
+   "primary_place": "puyang",
+   "vocab_pack": "inline:chanyuan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "beijiu": {
+   "key": "beijiu",
+   "scene_id": "beijiu",
+   "title": "杯酒释兵权",
+   "dossier_label": "杯酒释兵权",
+   "subtitle": "961 · 宋太祖",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=beijiu",
+   "primary_place": "kaofeng",
+   "vocab_pack": "inline:beijiu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "jiuzi": {
+   "key": "jiuzi",
+   "scene_id": "jiuzi",
+   "title": "九子夺嫡",
+   "dossier_label": "九子夺嫡",
+   "subtitle": "1712—1722 · 清康熙末",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=jiuzi",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:jiuzi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "wugu": {
+   "key": "wugu",
+   "scene_id": "wugu",
+   "title": "巫蛊之祸",
+   "dossier_label": "巫蛊之祸",
+   "subtitle": "前91 · 汉武帝晚年",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=wugu",
+   "primary_place": "changan",
+   "vocab_pack": "inline:wugu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "shaqiu": {
+   "key": "shaqiu",
+   "scene_id": "shaqiu",
+   "title": "沙丘之变",
+   "dossier_label": "沙丘之变",
+   "subtitle": "前210 · 秦",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=shaqiu",
+   "primary_place": "xingtai",
+   "vocab_pack": "inline:shaqiu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "baijia": {
+   "key": "baijia",
+   "scene_id": "baijia",
+   "title": "百家争鸣",
+   "dossier_label": "百家争鸣",
+   "subtitle": "前5—前3 世纪 · 战国",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=baijia",
+   "primary_place": "linzi",
+   "vocab_pack": "inline:baijia",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "fenshu": {
+   "key": "fenshu",
+   "scene_id": "fenshu",
+   "title": "焚书坑儒",
+   "dossier_label": "焚书坑儒",
+   "subtitle": "前213—前212 · 秦",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=fenshu",
+   "primary_place": "xianyang",
+   "vocab_pack": "inline:fenshu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "fotao": {
+   "key": "fotao",
+   "scene_id": "fotao",
+   "title": "佛教传入",
+   "dossier_label": "佛教传入",
+   "subtitle": "67 · 东汉永平",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=fotao",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:fotao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "lixue": {
+   "key": "lixue",
+   "scene_id": "lixue",
+   "title": "宋明理学",
+   "dossier_label": "宋明理学",
+   "subtitle": "1175 · 鹅湖之会",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=lixue",
+   "primary_place": "eqihu",
+   "vocab_pack": "inline:lixue",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhangheng": {
+   "key": "zhangheng",
+   "scene_id": "zhangheng",
+   "title": "张衡地动仪",
+   "dossier_label": "张衡地动仪",
+   "subtitle": "132 · 东汉阳嘉",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=zhangheng",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:zhangheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zuchongzhi": {
+   "key": "zuchongzhi",
+   "scene_id": "zuchongzhi",
+   "title": "祖冲之圆周率",
+   "dossier_label": "祖冲之圆周率",
+   "subtitle": "480 · 南朝",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=zuchongzhi",
+   "primary_place": "jiankang",
+   "vocab_pack": "inline:zuchongzhi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "shenkuo": {
+   "key": "shenkuo",
+   "scene_id": "shenkuo",
+   "title": "沈括梦溪笔谈",
+   "dossier_label": "沈括梦溪笔谈",
+   "subtitle": "1088 · 北宋元祐",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=shenkuo",
+   "primary_place": "zhenjiang",
+   "vocab_pack": "inline:shenkuo",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "jiasixie": {
+   "key": "jiasixie",
+   "scene_id": "jiasixie",
+   "title": "齐民要术",
+   "dossier_label": "齐民要术",
+   "subtitle": "544 · 东魏",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=jiasixie",
+   "primary_place": "yidu",
+   "vocab_pack": "inline:jiasixie",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhangqian": {
+   "key": "zhangqian",
+   "scene_id": "zhangqian",
+   "title": "张骞通西域",
+   "dossier_label": "张骞通西域",
+   "subtitle": "前138—前126 · 西汉",
+   "kind": "frontier",
+   "region": "exchange",
+   "page": "county.html?scene=zhangqian",
+   "primary_place": "changan",
+   "vocab_pack": "inline:zhangqian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "zhenghe": {
+   "key": "zhenghe",
+   "scene_id": "zhenghe",
+   "title": "郑和下西洋",
+   "dossier_label": "郑和下西洋",
+   "subtitle": "1405—1433 · 明永乐—宣德",
+   "kind": "frontier",
+   "region": "exchange",
+   "page": "county.html?scene=zhenghe",
+   "primary_place": "taicang",
+   "vocab_pack": "inline:zhenghe",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "xuanzang": {
+   "key": "xuanzang",
+   "scene_id": "xuanzang",
+   "title": "玄奘西行",
+   "dossier_label": "玄奘西行",
+   "subtitle": "629—645 · 唐",
+   "kind": "frontier",
+   "region": "exchange",
+   "page": "county.html?scene=xuanzang",
+   "primary_place": "changan",
+   "vocab_pack": "inline:xuanzang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "jianzhen": {
+   "key": "jianzhen",
+   "scene_id": "jianzhen",
+   "title": "鉴真东渡",
+   "dossier_label": "鉴真东渡",
+   "subtitle": "743—753 · 唐",
+   "kind": "frontier",
+   "region": "exchange",
+   "page": "county.html?scene=jianzhen",
+   "primary_place": "yangzhou",
+   "vocab_pack": "inline:jianzhen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -7809,7 +10343,101 @@ window.SANDBOX_DATA = {
   "imjin": "slices/imjin.js",
   "yellow_sea_1894": "slices/yellow_sea_1894.js",
   "qin_mie_liu_guo": "slices/qin_mie_liu_guo.js",
-  "three_campaigns": "slices/three_campaigns.js"
+  "three_campaigns": "slices/three_campaigns.js",
+  "changping": "slices/changping.js",
+  "guiling": "slices/guiling.js",
+  "maling": "slices/maling.js",
+  "chengpu": "slices/chengpu.js",
+  "boju": "slices/boju.js",
+  "julu": "slices/julu.js",
+  "gaixia": "slices/gaixia.js",
+  "mobai": "slices/mobai.js",
+  "kunyang": "slices/kunyang.js",
+  "guandu": "slices/guandu.js",
+  "chibi": "slices/chibi.js",
+  "yiling": "slices/yiling.js",
+  "xiaoyaojin": "slices/xiaoyaojin.js",
+  "feishui": "slices/feishui.js",
+  "canhebei": "slices/canhebei.js",
+  "zhongli": "slices/zhongli.js",
+  "hulao": "slices/hulao.js",
+  "talas": "slices/talas.js",
+  "suiyang": "slices/suiyang.js",
+  "yancheng": "slices/yancheng.js",
+  "heshangyuan": "slices/heshangyuan.js",
+  "caishiji": "slices/caishiji.js",
+  "diaoyucheng": "slices/diaoyucheng.js",
+  "yaoshan": "slices/yaoshan.js",
+  "poyanghu": "slices/poyanghu.js",
+  "tumu": "slices/tumu.js",
+  "beijing": "slices/beijing.js",
+  "yaksa": "slices/yaksa.js",
+  "tianjing": "slices/tianjing.js",
+  "humen": "slices/humen.js",
+  "huanghe": "slices/huanghe.js",
+  "locust": "slices/locust.js",
+  "huaxian": "slices/huaxian.js",
+  "little_ice": "slices/little_ice.js",
+  "grand_canal": "slices/grand_canal.js",
+  "dujiangyan": "slices/dujiangyan.js",
+  "great_wall": "slices/great_wall.js",
+  "qin_unify": "slices/qin_unify.js",
+  "ming_fall": "slices/ming_fall.js",
+  "shangyang": "slices/shangyang.js",
+  "wanganshi": "slices/wanganshi.js",
+  "huangjin": "slices/huangjin.js",
+  "lizicheng": "slices/lizicheng.js",
+  "xiaowen": "slices/xiaowen.js",
+  "wencheng": "slices/wencheng.js",
+  "xuanwu": "slices/xuanwu.js",
+  "jingnan": "slices/jingnan.js",
+  "dunzun": "slices/dunzun.js",
+  "keju": "slices/keju.js",
+  "four_inv": "slices/four_inv.js",
+  "bencao": "slices/bencao.js",
+  "dong_han_yi": "slices/dong_han_yi.js",
+  "dingwu": "slices/dingwu.js",
+  "song_he_jue": "slices/song_he_jue.js",
+  "zijincheng": "slices/zijincheng.js",
+  "lingqu": "slices/lingqu.js",
+  "zhaozhou": "slices/zhaozhou.js",
+  "sui_daxing": "slices/sui_daxing.js",
+  "wuwang": "slices/wuwang.js",
+  "sui_mie_chen": "slices/sui_mie_chen.js",
+  "chenqiao": "slices/chenqiao.js",
+  "yashan": "slices/yashan.js",
+  "xinhai": "slices/xinhai.js",
+  "zhangjuzheng": "slices/zhangjuzheng.js",
+  "wuxu": "slices/wuxu.js",
+  "wangmang": "slices/wangmang.js",
+  "liangshui": "slices/liangshui.js",
+  "jiupin": "slices/jiupin.js",
+  "chensheng": "slices/chensheng.js",
+  "huangchao": "slices/huangchao.js",
+  "taiping": "slices/taiping.js",
+  "hongjin": "slices/hongjin.js",
+  "lvlin": "slices/lvlin.js",
+  "zhaowulian": "slices/zhaowulian.js",
+  "zhaofen": "slices/zhaofen.js",
+  "qing_han": "slices/qing_han.js",
+  "yuan_duo": "slices/yuan_duo.js",
+  "chanyuan": "slices/chanyuan.js",
+  "beijiu": "slices/beijiu.js",
+  "jiuzi": "slices/jiuzi.js",
+  "wugu": "slices/wugu.js",
+  "shaqiu": "slices/shaqiu.js",
+  "baijia": "slices/baijia.js",
+  "fenshu": "slices/fenshu.js",
+  "fotao": "slices/fotao.js",
+  "lixue": "slices/lixue.js",
+  "zhangheng": "slices/zhangheng.js",
+  "zuchongzhi": "slices/zuchongzhi.js",
+  "shenkuo": "slices/shenkuo.js",
+  "jiasixie": "slices/jiasixie.js",
+  "zhangqian": "slices/zhangqian.js",
+  "zhenghe": "slices/zhenghe.js",
+  "xuanzang": "slices/xuanzang.js",
+  "jianzhen": "slices/jianzhen.js"
  },
  "corridors": [
   {
@@ -8748,25 +11376,119 @@ window.SANDBOX_DATA = {
     "综述考订"
    ],
    "scenes": [
+    "baijia",
+    "beijing",
+    "beijiu",
+    "bencao",
+    "boju",
+    "caishiji",
+    "canhebei",
+    "changping",
+    "chanyuan",
+    "chengpu",
+    "chenqiao",
+    "chensheng",
+    "chibi",
+    "diaoyucheng",
+    "dingwu",
+    "dong_han_yi",
+    "dujiangyan",
+    "dunzun",
+    "feishui",
+    "fenshu",
+    "fotao",
+    "four_inv",
     "fushun",
     "fuzhou",
+    "gaixia",
     "gaizhou",
+    "grand_canal",
+    "great_wall",
+    "guandu",
     "guangning",
+    "guiling",
     "haizhou",
+    "heshangyuan",
+    "hongjin",
+    "huangchao",
+    "huanghe",
+    "huangjin",
+    "huaxian",
+    "hulao",
+    "humen",
     "imjin",
+    "jianzhen",
+    "jiasixie",
+    "jingnan",
     "jinzhou",
     "jinzhouwei",
+    "jiupin",
+    "jiuzi",
+    "julu",
     "kaiyuan",
+    "keju",
+    "kunyang",
+    "liangshui",
     "liaoyang",
+    "lingqu",
+    "little_ice",
+    "lixue",
+    "lizicheng",
+    "locust",
+    "lvlin",
+    "maling",
+    "ming_fall",
+    "mobai",
     "ningyuan",
+    "poyanghu",
     "qin_mie_liu_guo",
+    "qin_unify",
+    "qing_han",
     "sarhu",
+    "shangyang",
+    "shaqiu",
+    "shenkuo",
     "shenyang",
+    "song_he_jue",
+    "sui_daxing",
+    "sui_mie_chen",
+    "suiyang",
+    "taiping",
+    "talas",
     "tang_huai_xi",
     "three_campaigns",
+    "tianjing",
     "tieling",
+    "tumu",
+    "wanganshi",
+    "wangmang",
+    "wencheng",
+    "wugu",
+    "wuwang",
+    "wuxu",
+    "xiaowen",
+    "xiaoyaojin",
+    "xinhai",
+    "xuanwu",
+    "xuanzang",
+    "yaksa",
+    "yancheng",
+    "yaoshan",
+    "yashan",
     "yehe",
-    "yellow_sea_1894"
+    "yellow_sea_1894",
+    "yiling",
+    "yuan_duo",
+    "zhangheng",
+    "zhangjuzheng",
+    "zhangqian",
+    "zhaofen",
+    "zhaowulian",
+    "zhaozhou",
+    "zhenghe",
+    "zhongli",
+    "zijincheng",
+    "zuchongzhi"
    ],
    "factions": {
     "donglin": "东林党（清流）",
@@ -8781,6 +11503,358 @@ window.SANDBOX_DATA = {
    }
   },
   "scene_summary": [
+   {
+    "scene": "baijia",
+    "name": "baijia",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:bj_350",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "beijing",
+    "name": "beijing",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:bj_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "beijiu",
+    "name": "beijiu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:bj_961",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "bencao",
+    "name": "bencao",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:bc_1281",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "boju",
+    "name": "boju",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:bj_bj",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "caishiji",
+    "name": "caishiji",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:cs_jin",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "canhebei",
+    "name": "canhebei",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ch_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "changping",
+    "name": "changping",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:cp_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chanyuan",
+    "name": "chanyuan",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:cy_1004",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chengpu",
+    "name": "chengpu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:cp_chu",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chenqiao",
+    "name": "chenqiao",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:cq_960a",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chensheng",
+    "name": "chensheng",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:cs_209a",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chibi",
+    "name": "chibi",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:cb_cao",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "diaoyucheng",
+    "name": "diaoyucheng",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:dy_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "dingwu",
+    "name": "dingwu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:dw_1876",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "dong_han_yi",
+    "name": "dong_han_yi",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:dy_196",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "dujiangyan",
+    "name": "dujiangyan",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:dj_168",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "dunzun",
+    "name": "dunzun",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:dz_134",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "feishui",
+    "name": "feishui",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:fs_jin",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "fenshu",
+    "name": "fenshu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:fs_212",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "fotao",
+    "name": "fotao",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:ft_67",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "four_inv",
+    "name": "four_inv",
+    "total": 4,
+    "layers": {
+     "scholarship": 4
+    },
+    "party_counts": {
+     "综合史料": 4
+    },
+    "faction_counts": {},
+    "event_count": 4,
+    "avg_resonance": 0.0,
+    "best_event": "event:fi_compass",
+    "best_resonance": 0.0
+   },
    {
     "scene": "fushun",
     "name": "fushun",
@@ -8822,6 +11896,22 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.333
    },
    {
+    "scene": "gaixia",
+    "name": "gaixia",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:gx_ge",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "gaizhou",
     "name": "gaizhou",
     "total": 6,
@@ -8840,6 +11930,54 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.389,
     "best_event": "event:gaizhou_fall",
     "best_resonance": 0.444
+   },
+   {
+    "scene": "grand_canal",
+    "name": "grand_canal",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:gc_ming",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "great_wall",
+    "name": "great_wall",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:gw_han",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "guandu",
+    "name": "guandu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:gd_jz",
+    "best_resonance": 0.0
    },
    {
     "scene": "guangning",
@@ -8865,6 +12003,22 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.8
    },
    {
+    "scene": "guiling",
+    "name": "guiling",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:gl_jz",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "haizhou",
     "name": "haizhou",
     "total": 7,
@@ -8883,6 +12037,134 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.472,
     "best_event": "event:haizhou_fall",
     "best_resonance": 0.75
+   },
+   {
+    "scene": "heshangyuan",
+    "name": "heshangyuan",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hs_jin",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "hongjin",
+    "name": "hongjin",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:hj_1351",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "huangchao",
+    "name": "huangchao",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:hc_875",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "huanghe",
+    "name": "huanghe",
+    "total": 6,
+    "layers": {
+     "scholarship": 6
+    },
+    "party_counts": {
+     "综合史料": 6
+    },
+    "faction_counts": {},
+    "event_count": 6,
+    "avg_resonance": 0.0,
+    "best_event": "event:hh_1128",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "huangjin",
+    "name": "huangjin",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hj_184",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "huaxian",
+    "name": "huaxian",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hx_after",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "hulao",
+    "name": "hulao",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hl_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "humen",
+    "name": "humen",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hm_guan",
+    "best_resonance": 0.0
    },
    {
     "scene": "imjin",
@@ -8904,6 +12186,54 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.467,
     "best_event": "event:cefeng_heyi",
     "best_resonance": 0.667
+   },
+   {
+    "scene": "jianzhen",
+    "name": "jianzhen",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:jz_743",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "jiasixie",
+    "name": "jiasixie",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:js_533",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "jingnan",
+    "name": "jingnan",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:jn_1399",
+    "best_resonance": 0.0
    },
    {
     "scene": "jinzhou",
@@ -8947,6 +12277,54 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.333
    },
    {
+    "scene": "jiupin",
+    "name": "jiupin",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:jp_220",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "jiuzi",
+    "name": "jiuzi",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:jz_1712",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "julu",
+    "name": "julu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:jl_jz",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "kaiyuan",
     "name": "开原",
     "total": 44,
@@ -8967,6 +12345,54 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.495,
     "best_event": "开铁之战（开原陷落）",
     "best_resonance": 0.818
+   },
+   {
+    "scene": "keju",
+    "name": "keju",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:kj_1905",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "kunyang",
+    "name": "kunyang",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ky_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "liangshui",
+    "name": "liangshui",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:ls_780",
+    "best_resonance": 0.0
    },
    {
     "scene": "liaoyang",
@@ -8992,6 +12418,150 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.491
    },
    {
+    "scene": "lingqu",
+    "name": "lingqu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:lq_214",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "little_ice",
+    "name": "little_ice",
+    "total": 5,
+    "layers": {
+     "scholarship": 5
+    },
+    "party_counts": {
+     "综合史料": 5
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:li_1580",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "lixue",
+    "name": "lixue",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:lx_1175",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "lizicheng",
+    "name": "lizicheng",
+    "total": 4,
+    "layers": {
+     "scholarship": 4
+    },
+    "party_counts": {
+     "综合史料": 4
+    },
+    "faction_counts": {},
+    "event_count": 4,
+    "avg_resonance": 0.0,
+    "best_event": "event:lc_1628",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "locust",
+    "name": "locust",
+    "total": 5,
+    "layers": {
+     "scholarship": 5
+    },
+    "party_counts": {
+     "综合史料": 5
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:lc_1073",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "lvlin",
+    "name": "lvlin",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:ll_17",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "maling",
+    "name": "maling",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ml_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "ming_fall",
+    "name": "ming_fall",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:mf_1627",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "mobai",
+    "name": "mobai",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:mb_chu",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "ningyuan",
     "name": "ningyuan",
     "total": 31,
@@ -9012,6 +12582,22 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.333
    },
    {
+    "scene": "poyanghu",
+    "name": "poyanghu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:py_chen",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "qin_mie_liu_guo",
     "name": "qin_mie_liu_guo",
     "total": 14,
@@ -9030,6 +12616,38 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "qin_unify",
+    "name": "qin_unify",
+    "total": 6,
+    "layers": {
+     "scholarship": 6
+    },
+    "party_counts": {
+     "综合史料": 6
+    },
+    "faction_counts": {},
+    "event_count": 6,
+    "avg_resonance": 0.0,
+    "best_event": "event:qn_221",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "qing_han",
+    "name": "qing_han",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:qh_1644",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "sarhu",
     "name": "萨尔浒",
     "total": 111,
@@ -9040,18 +12658,71 @@ window.SANDBOX_DATA = {
      "gap": 7
     },
     "party_counts": {
-     "清方": 60,
-     "综述考订": 18,
-     "朝鲜": 17,
-     "明方": 16
+     "清修·明臣": 36,
+     "清修官史": 24,
+     "学界": 15,
+     "朝鲜·亲历": 5,
+     "明廷官方": 7,
+     "明·私修": 1,
+     "朝鲜官方": 12,
+     "明·封疆奏议": 8,
+     "二手综述": 3
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 8
     },
     "event_count": 5,
-    "avg_resonance": 0.514,
+    "avg_resonance": 0.0,
     "best_event": "阿布达里岗（东路·刘綎）",
-    "best_resonance": 0.667
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "shangyang",
+    "name": "shangyang",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:sy_338",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "shaqiu",
+    "name": "shaqiu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:sq_210",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "shenkuo",
+    "name": "shenkuo",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:sk_1072",
+    "best_resonance": 0.0
    },
    {
     "scene": "shenyang",
@@ -9076,6 +12747,102 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.401,
     "best_event": "event:shenyang_relief",
     "best_resonance": 0.909
+   },
+   {
+    "scene": "song_he_jue",
+    "name": "song_he_jue",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hj_1019",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "sui_daxing",
+    "name": "sui_daxing",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:dx_582",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "sui_mie_chen",
+    "name": "sui_mie_chen",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:sm_587",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "suiyang",
+    "name": "suiyang",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:sy_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "taiping",
+    "name": "taiping",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:tp_1851",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "talas",
+    "name": "talas",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:tl_gel",
+    "best_resonance": 0.0
    },
    {
     "scene": "tang_huai_xi",
@@ -9116,6 +12883,22 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "tianjing",
+    "name": "tianjing",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:tj_di",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "tieling",
     "name": "铁岭",
     "total": 31,
@@ -9134,6 +12917,262 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.173,
     "best_event": "铁岭陷落（1619）",
     "best_resonance": 0.179
+   },
+   {
+    "scene": "tumu",
+    "name": "tumu",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:tm_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wanganshi",
+    "name": "wanganshi",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:wa_1069",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wangmang",
+    "name": "wangmang",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:wm_9",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wencheng",
+    "name": "wencheng",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:wc_641",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wugu",
+    "name": "wugu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:wg_91",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wuwang",
+    "name": "wuwang",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:ww_1046",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "wuxu",
+    "name": "wuxu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:wx_0611",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "xiaowen",
+    "name": "xiaowen",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:xw_493",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "xiaoyaojin",
+    "name": "xiaoyaojin",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:xy_cao",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "xinhai",
+    "name": "xinhai",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:xh_1010",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "xuanwu",
+    "name": "xuanwu",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:xx_626",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "xuanzang",
+    "name": "xuanzang",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:xz_629",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "yaksa",
+    "name": "yaksa",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:yk_e",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "yancheng",
+    "name": "yancheng",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:yc_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "yaoshan",
+    "name": "yaoshan",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ys_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "yashan",
+    "name": "yashan",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:ys_1276",
+    "best_resonance": 0.0
    },
    {
     "scene": "yehe",
@@ -9171,6 +13210,198 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.0,
     "best_event": "event:ev_yellow_sea_1894_02",
     "best_resonance": 0.0
+   },
+   {
+    "scene": "yiling",
+    "name": "yiling",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:yl_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "yuan_duo",
+    "name": "yuan_duo",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:yu_1271",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhangheng",
+    "name": "zhangheng",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zh_132",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhangjuzheng",
+    "name": "zhangjuzheng",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zj_1573",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhangqian",
+    "name": "zhangqian",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zq_126",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhaofen",
+    "name": "zhaofen",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zf_33",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhaowulian",
+    "name": "zhaowulian",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zw_307",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhaozhou",
+    "name": "zhaozhou",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zz_595",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhenghe",
+    "name": "zhenghe",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zh_1405",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zhongli",
+    "name": "zhongli",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:zl_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zijincheng",
+    "name": "zijincheng",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zj_1406",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "zuchongzhi",
+    "name": "zuchongzhi",
+    "total": 2,
+    "layers": {
+     "scholarship": 2
+    },
+    "party_counts": {
+     "综合史料": 2
+    },
+    "faction_counts": {},
+    "event_count": 2,
+    "avg_resonance": 0.0,
+    "best_event": "event:zc_463",
+    "best_resonance": 0.0
    }
   ],
   "faction_summary": {
@@ -9198,6 +13429,1558 @@ window.SANDBOX_DATA = {
    }
   },
   "events": [
+   {
+    "subject": "event:abudaligang",
+    "name": "阿布达里岗（东路·刘綎）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bc_1281",
+    "name": "event:bc_1281",
+    "scenes": [
+     "bencao"
+    ],
+    "scene_names": [
+     "bencao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bc_1578",
+    "name": "event:bc_1578",
+    "scenes": [
+     "bencao"
+    ],
+    "scene_names": [
+     "bencao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_350",
+    "name": "event:bj_350",
+    "scenes": [
+     "baijia"
+    ],
+    "scene_names": [
+     "baijia"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_961",
+    "name": "event:bj_961",
+    "scenes": [
+     "beijiu"
+    ],
+    "scene_names": [
+     "beijiu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_bj",
+    "name": "event:bj_bj",
+    "scenes": [
+     "boju"
+    ],
+    "scene_names": [
+     "boju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_eff",
+    "name": "event:bj_eff",
+    "scenes": [
+     "beijiu"
+    ],
+    "scene_names": [
+     "beijiu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_jz",
+    "name": "event:bj_jz",
+    "scenes": [
+     "beijing"
+    ],
+    "scene_names": [
+     "beijing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_ruying",
+    "name": "event:bj_ruying",
+    "scenes": [
+     "boju"
+    ],
+    "scene_names": [
+     "boju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_schools",
+    "name": "event:bj_schools",
+    "scenes": [
+     "baijia"
+    ],
+    "scene_names": [
+     "baijia"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_wa",
+    "name": "event:bj_wa",
+    "scenes": [
+     "beijing"
+    ],
+    "scene_names": [
+     "beijing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_wu",
+    "name": "event:bj_wu",
+    "scenes": [
+     "boju"
+    ],
+    "scene_names": [
+     "boju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:bj_yu",
+    "name": "event:bj_yu",
+    "scenes": [
+     "beijing"
+    ],
+    "scene_names": [
+     "beijing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cb_cao",
+    "name": "event:cb_cao",
+    "scenes": [
+     "chibi"
+    ],
+    "scene_names": [
+     "chibi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cb_jz",
+    "name": "event:cb_jz",
+    "scenes": [
+     "chibi"
+    ],
+    "scene_names": [
+     "chibi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cb_lk",
+    "name": "event:cb_lk",
+    "scenes": [
+     "chibi"
+    ],
+    "scene_names": [
+     "chibi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ch_jz",
+    "name": "event:ch_jz",
+    "scenes": [
+     "canhebei"
+    ],
+    "scene_names": [
+     "canhebei"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ch_wei",
+    "name": "event:ch_wei",
+    "scenes": [
+     "canhebei"
+    ],
+    "scene_names": [
+     "canhebei"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ch_yan",
+    "name": "event:ch_yan",
+    "scenes": [
+     "canhebei"
+    ],
+    "scene_names": [
+     "canhebei"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cp_chu",
+    "name": "event:cp_chu",
+    "scenes": [
+     "chengpu"
+    ],
+    "scene_names": [
+     "chengpu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cp_jin",
+    "name": "event:cp_jin",
+    "scenes": [
+     "chengpu"
+    ],
+    "scene_names": [
+     "chengpu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cp_jz",
+    "name": "event:cp_jz",
+    "scenes": [
+     "changping",
+     "chengpu"
+    ],
+    "scene_names": [
+     "changping",
+     "chengpu"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 1.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cp_kr",
+    "name": "event:cp_kr",
+    "scenes": [
+     "changping"
+    ],
+    "scene_names": [
+     "changping"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cp_sd",
+    "name": "event:cp_sd",
+    "scenes": [
+     "changping"
+    ],
+    "scene_names": [
+     "changping"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cq_960a",
+    "name": "event:cq_960a",
+    "scenes": [
+     "chenqiao"
+    ],
+    "scene_names": [
+     "chenqiao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cq_960b",
+    "name": "event:cq_960b",
+    "scenes": [
+     "chenqiao"
+    ],
+    "scene_names": [
+     "chenqiao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cs_209a",
+    "name": "event:cs_209a",
+    "scenes": [
+     "chensheng"
+    ],
+    "scene_names": [
+     "chensheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cs_209b",
+    "name": "event:cs_209b",
+    "scenes": [
+     "chensheng"
+    ],
+    "scene_names": [
+     "chensheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cs_jin",
+    "name": "event:cs_jin",
+    "scenes": [
+     "caishiji"
+    ],
+    "scene_names": [
+     "caishiji"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cs_jz",
+    "name": "event:cs_jz",
+    "scenes": [
+     "caishiji"
+    ],
+    "scene_names": [
+     "caishiji"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cs_yu",
+    "name": "event:cs_yu",
+    "scenes": [
+     "caishiji"
+    ],
+    "scene_names": [
+     "caishiji"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cy_1004",
+    "name": "event:cy_1004",
+    "scenes": [
+     "chanyuan"
+    ],
+    "scene_names": [
+     "chanyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:cy_1005",
+    "name": "event:cy_1005",
+    "scenes": [
+     "chanyuan"
+    ],
+    "scene_names": [
+     "chanyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dj_168",
+    "name": "event:dj_168",
+    "scenes": [
+     "dujiangyan"
+    ],
+    "scene_names": [
+     "dujiangyan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dj_256",
+    "name": "event:dj_256",
+    "scenes": [
+     "dujiangyan"
+    ],
+    "scene_names": [
+     "dujiangyan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dj_today",
+    "name": "event:dj_today",
+    "scenes": [
+     "dujiangyan"
+    ],
+    "scene_names": [
+     "dujiangyan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dusong_cross",
+    "name": "杜松渡浑河（西路）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 3,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.5,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dw_1876",
+    "name": "event:dw_1876",
+    "scenes": [
+     "dingwu"
+    ],
+    "scene_names": [
+     "dingwu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dw_1877",
+    "name": "event:dw_1877",
+    "scenes": [
+     "dingwu"
+    ],
+    "scene_names": [
+     "dingwu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dw_relief",
+    "name": "event:dw_relief",
+    "scenes": [
+     "dingwu"
+    ],
+    "scene_names": [
+     "dingwu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dx_582",
+    "name": "event:dx_582",
+    "scenes": [
+     "sui_daxing"
+    ],
+    "scene_names": [
+     "sui_daxing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dx_583",
+    "name": "event:dx_583",
+    "scenes": [
+     "sui_daxing"
+    ],
+    "scene_names": [
+     "sui_daxing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_196",
+    "name": "event:dy_196",
+    "scenes": [
+     "dong_han_yi"
+    ],
+    "scene_names": [
+     "dong_han_yi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_217",
+    "name": "event:dy_217",
+    "scenes": [
+     "dong_han_yi"
+    ],
+    "scene_names": [
+     "dong_han_yi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_book",
+    "name": "event:dy_book",
+    "scenes": [
+     "dong_han_yi"
+    ],
+    "scene_names": [
+     "dong_han_yi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_jz",
+    "name": "event:dy_jz",
+    "scenes": [
+     "diaoyucheng"
+    ],
+    "scene_names": [
+     "diaoyucheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_meng",
+    "name": "event:dy_meng",
+    "scenes": [
+     "diaoyucheng"
+    ],
+    "scene_names": [
+     "diaoyucheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dy_wang",
+    "name": "event:dy_wang",
+    "scenes": [
+     "diaoyucheng"
+    ],
+    "scene_names": [
+     "diaoyucheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dz_134",
+    "name": "event:dz_134",
+    "scenes": [
+     "dunzun"
+    ],
+    "scene_names": [
+     "dunzun"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:dz_taixue",
+    "name": "event:dz_taixue",
+    "scenes": [
+     "dunzun"
+    ],
+    "scene_names": [
+     "dunzun"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
    {
     "subject": "event:ev_qin_mie_liu_guo_01",
     "name": "event:ev_qin_mie_liu_guo_01",
@@ -9591,6 +15374,1587 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:fi_compass",
+    "name": "event:fi_compass",
+    "scenes": [
+     "four_inv"
+    ],
+    "scene_names": [
+     "four_inv"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fi_gun",
+    "name": "event:fi_gun",
+    "scenes": [
+     "four_inv"
+    ],
+    "scene_names": [
+     "four_inv"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fi_paper",
+    "name": "event:fi_paper",
+    "scenes": [
+     "four_inv"
+    ],
+    "scene_names": [
+     "four_inv"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fi_print",
+    "name": "event:fi_print",
+    "scenes": [
+     "four_inv"
+    ],
+    "scene_names": [
+     "four_inv"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fs_212",
+    "name": "event:fs_212",
+    "scenes": [
+     "fenshu"
+    ],
+    "scene_names": [
+     "fenshu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fs_213",
+    "name": "event:fs_213",
+    "scenes": [
+     "fenshu"
+    ],
+    "scene_names": [
+     "fenshu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fs_jin",
+    "name": "event:fs_jin",
+    "scenes": [
+     "feishui"
+    ],
+    "scene_names": [
+     "feishui"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fs_jz",
+    "name": "event:fs_jz",
+    "scenes": [
+     "feishui"
+    ],
+    "scene_names": [
+     "feishui"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:fs_qin",
+    "name": "event:fs_qin",
+    "scenes": [
+     "feishui"
+    ],
+    "scene_names": [
+     "feishui"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ft_67",
+    "name": "event:ft_67",
+    "scenes": [
+     "fotao"
+    ],
+    "scene_names": [
+     "fotao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ft_temple",
+    "name": "event:ft_temple",
+    "scenes": [
+     "fotao"
+    ],
+    "scene_names": [
+     "fotao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gc_ming",
+    "name": "event:gc_ming",
+    "scenes": [
+     "grand_canal"
+    ],
+    "scene_names": [
+     "grand_canal"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gc_sui",
+    "name": "event:gc_sui",
+    "scenes": [
+     "grand_canal"
+    ],
+    "scene_names": [
+     "grand_canal"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gc_yuan",
+    "name": "event:gc_yuan",
+    "scenes": [
+     "grand_canal"
+    ],
+    "scene_names": [
+     "grand_canal"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gd_jz",
+    "name": "event:gd_jz",
+    "scenes": [
+     "guandu"
+    ],
+    "scene_names": [
+     "guandu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gd_wuchao",
+    "name": "event:gd_wuchao",
+    "scenes": [
+     "guandu"
+    ],
+    "scene_names": [
+     "guandu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gd_yuan",
+    "name": "event:gd_yuan",
+    "scenes": [
+     "guandu"
+    ],
+    "scene_names": [
+     "guandu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gl_jz",
+    "name": "event:gl_jz",
+    "scenes": [
+     "guiling"
+    ],
+    "scene_names": [
+     "guiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gl_qi",
+    "name": "event:gl_qi",
+    "scenes": [
+     "guiling"
+    ],
+    "scene_names": [
+     "guiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gl_wei",
+    "name": "event:gl_wei",
+    "scenes": [
+     "guiling"
+    ],
+    "scene_names": [
+     "guiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gw_han",
+    "name": "event:gw_han",
+    "scenes": [
+     "great_wall"
+    ],
+    "scene_names": [
+     "great_wall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gw_ming",
+    "name": "event:gw_ming",
+    "scenes": [
+     "great_wall"
+    ],
+    "scene_names": [
+     "great_wall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gw_qin",
+    "name": "event:gw_qin",
+    "scenes": [
+     "great_wall"
+    ],
+    "scene_names": [
+     "great_wall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gx_ge",
+    "name": "event:gx_ge",
+    "scenes": [
+     "gaixia"
+    ],
+    "scene_names": [
+     "gaixia"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gx_han",
+    "name": "event:gx_han",
+    "scenes": [
+     "gaixia"
+    ],
+    "scene_names": [
+     "gaixia"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:gx_wj",
+    "name": "event:gx_wj",
+    "scenes": [
+     "gaixia"
+    ],
+    "scene_names": [
+     "gaixia"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hc_875",
+    "name": "event:hc_875",
+    "scenes": [
+     "huangchao"
+    ],
+    "scene_names": [
+     "huangchao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hc_880",
+    "name": "event:hc_880",
+    "scenes": [
+     "huangchao"
+    ],
+    "scene_names": [
+     "huangchao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_1128",
+    "name": "event:hh_1128",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_1194",
+    "name": "event:hh_1194",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_1494",
+    "name": "event:hh_1494",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_1855",
+    "name": "event:hh_1855",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_wangjing",
+    "name": "event:hh_wangjing",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hh_yu",
+    "name": "event:hh_yu",
+    "scenes": [
+     "huanghe"
+    ],
+    "scene_names": [
+     "huanghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_1019",
+    "name": "event:hj_1019",
+    "scenes": [
+     "song_he_jue"
+    ],
+    "scene_names": [
+     "song_he_jue"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_1351",
+    "name": "event:hj_1351",
+    "scenes": [
+     "hongjin"
+    ],
+    "scene_names": [
+     "hongjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_1368",
+    "name": "event:hj_1368",
+    "scenes": [
+     "hongjin"
+    ],
+    "scene_names": [
+     "hongjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_184",
+    "name": "event:hj_184",
+    "scenes": [
+     "huangjin"
+    ],
+    "scene_names": [
+     "huangjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_185",
+    "name": "event:hj_185",
+    "scenes": [
+     "huangjin"
+    ],
+    "scene_names": [
+     "huangjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_dukou",
+    "name": "event:hj_dukou",
+    "scenes": [
+     "song_he_jue"
+    ],
+    "scene_names": [
+     "song_he_jue"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_late",
+    "name": "event:hj_late",
+    "scenes": [
+     "song_he_jue"
+    ],
+    "scene_names": [
+     "song_he_jue"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hj_spread",
+    "name": "event:hj_spread",
+    "scenes": [
+     "huangjin"
+    ],
+    "scene_names": [
+     "huangjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hl_jz",
+    "name": "event:hl_jz",
+    "scenes": [
+     "hulao"
+    ],
+    "scene_names": [
+     "hulao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hl_shi",
+    "name": "event:hl_shi",
+    "scenes": [
+     "hulao"
+    ],
+    "scene_names": [
+     "hulao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hl_wei",
+    "name": "event:hl_wei",
+    "scenes": [
+     "hulao"
+    ],
+    "scene_names": [
+     "hulao"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hm_guan",
+    "name": "event:hm_guan",
+    "scenes": [
+     "humen"
+    ],
+    "scene_names": [
+     "humen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hm_jz",
+    "name": "event:hm_jz",
+    "scenes": [
+     "humen"
+    ],
+    "scene_names": [
+     "humen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hm_ying",
+    "name": "event:hm_ying",
+    "scenes": [
+     "humen"
+    ],
+    "scene_names": [
+     "humen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hs_jin",
+    "name": "event:hs_jin",
+    "scenes": [
+     "heshangyuan"
+    ],
+    "scene_names": [
+     "heshangyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hs_jz",
+    "name": "event:hs_jz",
+    "scenes": [
+     "heshangyuan"
+    ],
+    "scene_names": [
+     "heshangyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hs_wu",
+    "name": "event:hs_wu",
+    "scenes": [
+     "heshangyuan"
+    ],
+    "scene_names": [
+     "heshangyuan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:huai_xi_jufa",
     "name": "event:huai_xi_jufa",
     "scenes": [
@@ -9653,6 +17017,1093 @@ window.SANDBOX_DATA = {
     }
    },
    {
+    "subject": "event:hx_after",
+    "name": "event:hx_after",
+    "scenes": [
+     "huaxian"
+    ],
+    "scene_names": [
+     "huaxian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hx_legacy",
+    "name": "event:hx_legacy",
+    "scenes": [
+     "huaxian"
+    ],
+    "scene_names": [
+     "huaxian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:hx_main",
+    "name": "event:hx_main",
+    "scenes": [
+     "huaxian"
+    ],
+    "scene_names": [
+     "huaxian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jl_jz",
+    "name": "event:jl_jz",
+    "scenes": [
+     "julu"
+    ],
+    "scene_names": [
+     "julu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jl_qin",
+    "name": "event:jl_qin",
+    "scenes": [
+     "julu"
+    ],
+    "scene_names": [
+     "julu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jl_xiang",
+    "name": "event:jl_xiang",
+    "scenes": [
+     "julu"
+    ],
+    "scene_names": [
+     "julu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jn_1399",
+    "name": "event:jn_1399",
+    "scenes": [
+     "jingnan"
+    ],
+    "scene_names": [
+     "jingnan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jn_1402",
+    "name": "event:jn_1402",
+    "scenes": [
+     "jingnan"
+    ],
+    "scene_names": [
+     "jingnan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jp_220",
+    "name": "event:jp_220",
+    "scenes": [
+     "jiupin"
+    ],
+    "scene_names": [
+     "jiupin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jp_later",
+    "name": "event:jp_later",
+    "scenes": [
+     "jiupin"
+    ],
+    "scene_names": [
+     "jiupin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:js_533",
+    "name": "event:js_533",
+    "scenes": [
+     "jiasixie"
+    ],
+    "scene_names": [
+     "jiasixie"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:js_544",
+    "name": "event:js_544",
+    "scenes": [
+     "jiasixie"
+    ],
+    "scene_names": [
+     "jiasixie"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jz_1712",
+    "name": "event:jz_1712",
+    "scenes": [
+     "jiuzi"
+    ],
+    "scene_names": [
+     "jiuzi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jz_1722",
+    "name": "event:jz_1722",
+    "scenes": [
+     "jiuzi"
+    ],
+    "scene_names": [
+     "jiuzi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jz_743",
+    "name": "event:jz_743",
+    "scenes": [
+     "jianzhen"
+    ],
+    "scene_names": [
+     "jianzhen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:jz_753",
+    "name": "event:jz_753",
+    "scenes": [
+     "jianzhen"
+    ],
+    "scene_names": [
+     "jianzhen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:kj_1905",
+    "name": "event:kj_1905",
+    "scenes": [
+     "keju"
+    ],
+    "scene_names": [
+     "keju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:kj_605",
+    "name": "event:kj_605",
+    "scenes": [
+     "keju"
+    ],
+    "scene_names": [
+     "keju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:kj_tang",
+    "name": "event:kj_tang",
+    "scenes": [
+     "keju"
+    ],
+    "scene_names": [
+     "keju"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ky_jz",
+    "name": "event:ky_jz",
+    "scenes": [
+     "kunyang"
+    ],
+    "scene_names": [
+     "kunyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ky_liu",
+    "name": "event:ky_liu",
+    "scenes": [
+     "kunyang"
+    ],
+    "scene_names": [
+     "kunyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ky_wan",
+    "name": "event:ky_wan",
+    "scenes": [
+     "kunyang"
+    ],
+    "scene_names": [
+     "kunyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1073",
+    "name": "event:lc_1073",
+    "scenes": [
+     "locust"
+    ],
+    "scene_names": [
+     "locust"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1628",
+    "name": "event:lc_1628",
+    "scenes": [
+     "lizicheng",
+     "locust"
+    ],
+    "scene_names": [
+     "lizicheng",
+     "locust"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1641",
+    "name": "event:lc_1641",
+    "scenes": [
+     "lizicheng"
+    ],
+    "scene_names": [
+     "lizicheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1644",
+    "name": "event:lc_1644",
+    "scenes": [
+     "lizicheng"
+    ],
+    "scene_names": [
+     "lizicheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1645",
+    "name": "event:lc_1645",
+    "scenes": [
+     "lizicheng"
+    ],
+    "scene_names": [
+     "lizicheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_1943",
+    "name": "event:lc_1943",
+    "scenes": [
+     "locust"
+    ],
+    "scene_names": [
+     "locust"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_622",
+    "name": "event:lc_622",
+    "scenes": [
+     "locust"
+    ],
+    "scene_names": [
+     "locust"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lc_715",
+    "name": "event:lc_715",
+    "scenes": [
+     "locust"
+    ],
+    "scene_names": [
+     "locust"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_1580",
+    "name": "event:li_1580",
+    "scenes": [
+     "little_ice"
+    ],
+    "scene_names": [
+     "little_ice"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_1637",
+    "name": "event:li_1637",
+    "scenes": [
+     "little_ice"
+    ],
+    "scene_names": [
+     "little_ice"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_1640",
+    "name": "event:li_1640",
+    "scenes": [
+     "little_ice"
+    ],
+    "scene_names": [
+     "little_ice"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_1641",
+    "name": "event:li_1641",
+    "scenes": [
+     "little_ice"
+    ],
+    "scene_names": [
+     "little_ice"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:li_1644",
+    "name": "event:li_1644",
+    "scenes": [
+     "little_ice"
+    ],
+    "scene_names": [
+     "little_ice"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
     "subject": "event:li_su_xueye",
     "name": "event:li_su_xueye",
     "scenes": [
@@ -9667,6 +18118,3726 @@ window.SANDBOX_DATA = {
     "coverage_frac": 0.0,
     "divergence": 0.333,
     "gap_rate": 0.2,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ll_17",
+    "name": "event:ll_17",
+    "scenes": [
+     "lvlin"
+    ],
+    "scene_names": [
+     "lvlin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ll_23",
+    "name": "event:ll_23",
+    "scenes": [
+     "lvlin"
+    ],
+    "scene_names": [
+     "lvlin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lq_214",
+    "name": "event:lq_214",
+    "scenes": [
+     "lingqu"
+    ],
+    "scene_names": [
+     "lingqu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lq_use",
+    "name": "event:lq_use",
+    "scenes": [
+     "lingqu"
+    ],
+    "scene_names": [
+     "lingqu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ls_780",
+    "name": "event:ls_780",
+    "scenes": [
+     "liangshui"
+    ],
+    "scene_names": [
+     "liangshui"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ls_eff",
+    "name": "event:ls_eff",
+    "scenes": [
+     "liangshui"
+    ],
+    "scene_names": [
+     "liangshui"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lx_1175",
+    "name": "event:lx_1175",
+    "scenes": [
+     "lixue"
+    ],
+    "scene_names": [
+     "lixue"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:lx_1241",
+    "name": "event:lx_1241",
+    "scenes": [
+     "lixue"
+    ],
+    "scene_names": [
+     "lixue"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mb_chu",
+    "name": "event:mb_chu",
+    "scenes": [
+     "mobai"
+    ],
+    "scene_names": [
+     "mobai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mb_hq",
+    "name": "event:mb_hq",
+    "scenes": [
+     "mobai"
+    ],
+    "scene_names": [
+     "mobai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mb_wq",
+    "name": "event:mb_wq",
+    "scenes": [
+     "mobai"
+    ],
+    "scene_names": [
+     "mobai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mf_1627",
+    "name": "event:mf_1627",
+    "scenes": [
+     "ming_fall"
+    ],
+    "scene_names": [
+     "ming_fall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mf_1644_3",
+    "name": "event:mf_1644_3",
+    "scenes": [
+     "ming_fall"
+    ],
+    "scene_names": [
+     "ming_fall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:mf_1644_q",
+    "name": "event:mf_1644_q",
+    "scenes": [
+     "ming_fall"
+    ],
+    "scene_names": [
+     "ming_fall"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ml_jz",
+    "name": "event:ml_jz",
+    "scenes": [
+     "maling"
+    ],
+    "scene_names": [
+     "maling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ml_qi",
+    "name": "event:ml_qi",
+    "scenes": [
+     "maling"
+    ],
+    "scene_names": [
+     "maling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ml_wei",
+    "name": "event:ml_wei",
+    "scenes": [
+     "maling"
+    ],
+    "scene_names": [
+     "maling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:py_chen",
+    "name": "event:py_chen",
+    "scenes": [
+     "poyanghu"
+    ],
+    "scene_names": [
+     "poyanghu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:py_jz",
+    "name": "event:py_jz",
+    "scenes": [
+     "poyanghu"
+    ],
+    "scene_names": [
+     "poyanghu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:py_zhu",
+    "name": "event:py_zhu",
+    "scenes": [
+     "poyanghu"
+    ],
+    "scene_names": [
+     "poyanghu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qh_1644",
+    "name": "event:qh_1644",
+    "scenes": [
+     "qing_han"
+    ],
+    "scene_names": [
+     "qing_han"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qh_1645",
+    "name": "event:qh_1645",
+    "scenes": [
+     "qing_han"
+    ],
+    "scene_names": [
+     "qing_han"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qh_late",
+    "name": "event:qh_late",
+    "scenes": [
+     "qing_han"
+    ],
+    "scene_names": [
+     "qing_han"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_221",
+    "name": "event:qn_221",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_222",
+    "name": "event:qn_222",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_223",
+    "name": "event:qn_223",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_225",
+    "name": "event:qn_225",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_228",
+    "name": "event:qn_228",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:qn_230",
+    "name": "event:qn_230",
+    "scenes": [
+     "qin_unify"
+    ],
+    "scene_names": [
+     "qin_unify"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sarhu_battle",
+    "name": "萨尔浒主战场",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 30,
+    "gap_count": 2,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.087,
+    "gap_rate": 0.067,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:shangjianya",
+    "name": "尚间崖（北路·马林）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sk_1072",
+    "name": "event:sk_1072",
+    "scenes": [
+     "shenkuo"
+    ],
+    "scene_names": [
+     "shenkuo"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sk_1088",
+    "name": "event:sk_1088",
+    "scenes": [
+     "shenkuo"
+    ],
+    "scene_names": [
+     "shenkuo"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sm_587",
+    "name": "event:sm_587",
+    "scenes": [
+     "sui_mie_chen"
+    ],
+    "scene_names": [
+     "sui_mie_chen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sm_589",
+    "name": "event:sm_589",
+    "scenes": [
+     "sui_mie_chen"
+    ],
+    "scene_names": [
+     "sui_mie_chen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:south_retreat",
+    "name": "南路溃逃（李如柏）",
+    "scenes": [
+     "sarhu"
+    ],
+    "scene_names": [
+     "萨尔浒"
+    ],
+    "total": 2,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sq_210",
+    "name": "event:sq_210",
+    "scenes": [
+     "shaqiu"
+    ],
+    "scene_names": [
+     "shaqiu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sq_false",
+    "name": "event:sq_false",
+    "scenes": [
+     "shaqiu"
+    ],
+    "scene_names": [
+     "shaqiu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_338",
+    "name": "event:sy_338",
+    "scenes": [
+     "shangyang"
+    ],
+    "scene_names": [
+     "shangyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_350",
+    "name": "event:sy_350",
+    "scenes": [
+     "shangyang"
+    ],
+    "scene_names": [
+     "shangyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_356",
+    "name": "event:sy_356",
+    "scenes": [
+     "shangyang"
+    ],
+    "scene_names": [
+     "shangyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_jz",
+    "name": "event:sy_jz",
+    "scenes": [
+     "suiyang"
+    ],
+    "scene_names": [
+     "suiyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_we",
+    "name": "event:sy_we",
+    "scenes": [
+     "suiyang"
+    ],
+    "scene_names": [
+     "suiyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:sy_zhang",
+    "name": "event:sy_zhang",
+    "scenes": [
+     "suiyang"
+    ],
+    "scene_names": [
+     "suiyang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tj_di",
+    "name": "event:tj_di",
+    "scenes": [
+     "tianjing"
+    ],
+    "scene_names": [
+     "tianjing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tj_wang",
+    "name": "event:tj_wang",
+    "scenes": [
+     "tianjing"
+    ],
+    "scene_names": [
+     "tianjing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tj_xiang",
+    "name": "event:tj_xiang",
+    "scenes": [
+     "tianjing"
+    ],
+    "scene_names": [
+     "tianjing"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tl_gel",
+    "name": "event:tl_gel",
+    "scenes": [
+     "talas"
+    ],
+    "scene_names": [
+     "talas"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tl_jz",
+    "name": "event:tl_jz",
+    "scenes": [
+     "talas"
+    ],
+    "scene_names": [
+     "talas"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tl_tang",
+    "name": "event:tl_tang",
+    "scenes": [
+     "talas"
+    ],
+    "scene_names": [
+     "talas"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tm_jz",
+    "name": "event:tm_jz",
+    "scenes": [
+     "tumu"
+    ],
+    "scene_names": [
+     "tumu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tm_wa",
+    "name": "event:tm_wa",
+    "scenes": [
+     "tumu"
+    ],
+    "scene_names": [
+     "tumu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tm_ying",
+    "name": "event:tm_ying",
+    "scenes": [
+     "tumu"
+    ],
+    "scene_names": [
+     "tumu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tp_1851",
+    "name": "event:tp_1851",
+    "scenes": [
+     "taiping"
+    ],
+    "scene_names": [
+     "taiping"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tp_1853",
+    "name": "event:tp_1853",
+    "scenes": [
+     "taiping"
+    ],
+    "scene_names": [
+     "taiping"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:tp_1864",
+    "name": "event:tp_1864",
+    "scenes": [
+     "taiping"
+    ],
+    "scene_names": [
+     "taiping"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wa_1069",
+    "name": "event:wa_1069",
+    "scenes": [
+     "wanganshi"
+    ],
+    "scene_names": [
+     "wanganshi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wa_1070",
+    "name": "event:wa_1070",
+    "scenes": [
+     "wanganshi"
+    ],
+    "scene_names": [
+     "wanganshi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wa_1085",
+    "name": "event:wa_1085",
+    "scenes": [
+     "wanganshi"
+    ],
+    "scene_names": [
+     "wanganshi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wc_641",
+    "name": "event:wc_641",
+    "scenes": [
+     "wencheng"
+    ],
+    "scene_names": [
+     "wencheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wc_temple",
+    "name": "event:wc_temple",
+    "scenes": [
+     "wencheng"
+    ],
+    "scene_names": [
+     "wencheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wg_91",
+    "name": "event:wg_91",
+    "scenes": [
+     "wugu"
+    ],
+    "scene_names": [
+     "wugu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wg_war",
+    "name": "event:wg_war",
+    "scenes": [
+     "wugu"
+    ],
+    "scene_names": [
+     "wugu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wm_9",
+    "name": "event:wm_9",
+    "scenes": [
+     "wangmang"
+    ],
+    "scene_names": [
+     "wangmang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wm_end",
+    "name": "event:wm_end",
+    "scenes": [
+     "wangmang"
+    ],
+    "scene_names": [
+     "wangmang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wm_reform",
+    "name": "event:wm_reform",
+    "scenes": [
+     "wangmang"
+    ],
+    "scene_names": [
+     "wangmang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ww_1046",
+    "name": "event:ww_1046",
+    "scenes": [
+     "wuwang"
+    ],
+    "scene_names": [
+     "wuwang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ww_1048",
+    "name": "event:ww_1048",
+    "scenes": [
+     "wuwang"
+    ],
+    "scene_names": [
+     "wuwang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wx_0611",
+    "name": "event:wx_0611",
+    "scenes": [
+     "wuxu"
+    ],
+    "scene_names": [
+     "wuxu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:wx_0908",
+    "name": "event:wx_0908",
+    "scenes": [
+     "wuxu"
+    ],
+    "scene_names": [
+     "wuxu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xh_1010",
+    "name": "event:xh_1010",
+    "scenes": [
+     "xinhai"
+    ],
+    "scene_names": [
+     "xinhai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xh_1912",
+    "name": "event:xh_1912",
+    "scenes": [
+     "xinhai"
+    ],
+    "scene_names": [
+     "xinhai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xh_res",
+    "name": "event:xh_res",
+    "scenes": [
+     "xinhai"
+    ],
+    "scene_names": [
+     "xinhai"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xw_493",
+    "name": "event:xw_493",
+    "scenes": [
+     "xiaowen"
+    ],
+    "scene_names": [
+     "xiaowen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xw_494",
+    "name": "event:xw_494",
+    "scenes": [
+     "xiaowen"
+    ],
+    "scene_names": [
+     "xiaowen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xw_496",
+    "name": "event:xw_496",
+    "scenes": [
+     "xiaowen"
+    ],
+    "scene_names": [
+     "xiaowen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xx_626",
+    "name": "event:xx_626",
+    "scenes": [
+     "xuanwu"
+    ],
+    "scene_names": [
+     "xuanwu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xx_after",
+    "name": "event:xx_after",
+    "scenes": [
+     "xuanwu"
+    ],
+    "scene_names": [
+     "xuanwu"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xy_cao",
+    "name": "event:xy_cao",
+    "scenes": [
+     "xiaoyaojin"
+    ],
+    "scene_names": [
+     "xiaoyaojin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xy_jz",
+    "name": "event:xy_jz",
+    "scenes": [
+     "xiaoyaojin"
+    ],
+    "scene_names": [
+     "xiaoyaojin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xy_zl",
+    "name": "event:xy_zl",
+    "scenes": [
+     "xiaoyaojin"
+    ],
+    "scene_names": [
+     "xiaoyaojin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xz_629",
+    "name": "event:xz_629",
+    "scenes": [
+     "xuanzang"
+    ],
+    "scene_names": [
+     "xuanzang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:xz_645",
+    "name": "event:xz_645",
+    "scenes": [
+     "xuanzang"
+    ],
+    "scene_names": [
+     "xuanzang"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yc_jz",
+    "name": "event:yc_jz",
+    "scenes": [
+     "yancheng"
+    ],
+    "scene_names": [
+     "yancheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yc_wu",
+    "name": "event:yc_wu",
+    "scenes": [
+     "yancheng"
+    ],
+    "scene_names": [
+     "yancheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yc_yue",
+    "name": "event:yc_yue",
+    "scenes": [
+     "yancheng"
+    ],
+    "scene_names": [
+     "yancheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yk_e",
+    "name": "event:yk_e",
+    "scenes": [
+     "yaksa"
+    ],
+    "scene_names": [
+     "yaksa"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yk_meng",
+    "name": "event:yk_meng",
+    "scenes": [
+     "yaksa"
+    ],
+    "scene_names": [
+     "yaksa"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yk_qing",
+    "name": "event:yk_qing",
+    "scenes": [
+     "yaksa"
+    ],
+    "scene_names": [
+     "yaksa"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yl_jz",
+    "name": "event:yl_jz",
+    "scenes": [
+     "yiling"
+    ],
+    "scene_names": [
+     "yiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yl_liu",
+    "name": "event:yl_liu",
+    "scenes": [
+     "yiling"
+    ],
+    "scene_names": [
+     "yiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yl_lu",
+    "name": "event:yl_lu",
+    "scenes": [
+     "yiling"
+    ],
+    "scene_names": [
+     "yiling"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ys_1276",
+    "name": "event:ys_1276",
+    "scenes": [
+     "yashan"
+    ],
+    "scene_names": [
+     "yashan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ys_1279",
+    "name": "event:ys_1279",
+    "scenes": [
+     "yashan"
+    ],
+    "scene_names": [
+     "yashan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ys_jz",
+    "name": "event:ys_jz",
+    "scenes": [
+     "yaoshan"
+    ],
+    "scene_names": [
+     "yaoshan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ys_song",
+    "name": "event:ys_song",
+    "scenes": [
+     "yaoshan"
+    ],
+    "scene_names": [
+     "yaoshan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:ys_yuan",
+    "name": "event:ys_yuan",
+    "scenes": [
+     "yaoshan"
+    ],
+    "scene_names": [
+     "yaoshan"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yu_1271",
+    "name": "event:yu_1271",
+    "scenes": [
+     "yuan_duo"
+    ],
+    "scene_names": [
+     "yuan_duo"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:yu_1276",
+    "name": "event:yu_1276",
+    "scenes": [
+     "yuan_duo"
+    ],
+    "scene_names": [
+     "yuan_duo"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zc_463",
+    "name": "event:zc_463",
+    "scenes": [
+     "zuchongzhi"
+    ],
+    "scene_names": [
+     "zuchongzhi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zc_pi",
+    "name": "event:zc_pi",
+    "scenes": [
+     "zuchongzhi"
+    ],
+    "scene_names": [
+     "zuchongzhi"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zf_33",
+    "name": "event:zf_33",
+    "scenes": [
+     "zhaofen"
+    ],
+    "scene_names": [
+     "zhaofen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zf_peace",
+    "name": "event:zf_peace",
+    "scenes": [
+     "zhaofen"
+    ],
+    "scene_names": [
+     "zhaofen"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zh_132",
+    "name": "event:zh_132",
+    "scenes": [
+     "zhangheng"
+    ],
+    "scene_names": [
+     "zhangheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zh_1405",
+    "name": "event:zh_1405",
+    "scenes": [
+     "zhenghe"
+    ],
+    "scene_names": [
+     "zhenghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zh_1433",
+    "name": "event:zh_1433",
+    "scenes": [
+     "zhenghe"
+    ],
+    "scene_names": [
+     "zhenghe"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zh_test",
+    "name": "event:zh_test",
+    "scenes": [
+     "zhangheng"
+    ],
+    "scene_names": [
+     "zhangheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zj_1406",
+    "name": "event:zj_1406",
+    "scenes": [
+     "zijincheng"
+    ],
+    "scene_names": [
+     "zijincheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zj_1420",
+    "name": "event:zj_1420",
+    "scenes": [
+     "zijincheng"
+    ],
+    "scene_names": [
+     "zijincheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zj_1573",
+    "name": "event:zj_1573",
+    "scenes": [
+     "zhangjuzheng"
+    ],
+    "scene_names": [
+     "zhangjuzheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zj_1581",
+    "name": "event:zj_1581",
+    "scenes": [
+     "zhangjuzheng"
+    ],
+    "scene_names": [
+     "zhangjuzheng"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zl_jz",
+    "name": "event:zl_jz",
+    "scenes": [
+     "zhongli"
+    ],
+    "scene_names": [
+     "zhongli"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zl_wei",
+    "name": "event:zl_wei",
+    "scenes": [
+     "zhongli"
+    ],
+    "scene_names": [
+     "zhongli"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zl_wei2",
+    "name": "event:zl_wei2",
+    "scenes": [
+     "zhongli"
+    ],
+    "scene_names": [
+     "zhongli"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zq_126",
+    "name": "event:zq_126",
+    "scenes": [
+     "zhangqian"
+    ],
+    "scene_names": [
+     "zhangqian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zq_138",
+    "name": "event:zq_138",
+    "scenes": [
+     "zhangqian"
+    ],
+    "scene_names": [
+     "zhangqian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zw_307",
+    "name": "event:zw_307",
+    "scenes": [
+     "zhaowulian"
+    ],
+    "scene_names": [
+     "zhaowulian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zw_war",
+    "name": "event:zw_war",
+    "scenes": [
+     "zhaowulian"
+    ],
+    "scene_names": [
+     "zhaowulian"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zz_595",
+    "name": "event:zz_595",
+    "scenes": [
+     "zhaozhou"
+    ],
+    "scene_names": [
+     "zhaozhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 0
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": []
+    }
+   },
+   {
+    "subject": "event:zz_later",
+    "name": "event:zz_later",
+    "scenes": [
+     "zhaozhou"
+    ],
+    "scene_names": [
+     "zhaozhou"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
     "resonance": 0.0,
     "party_counts": {
      "明方": 0,
@@ -10132,63 +22303,6 @@ window.SANDBOX_DATA = {
        "scene": "imjin"
       }
      ],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:dusong_cross",
-    "name": "杜松渡浑河（西路）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 3,
-    "gap_count": 0,
-    "coverage": "2/3",
-    "coverage_frac": 0.667,
-    "divergence": 0.5,
-    "gap_rate": 0.0,
-    "resonance": 0.333,
-    "party_counts": {
-     "明方": 1,
-     "清方": 2,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "A041",
-       "predicate": "渡浑河",
-       "value_text": "二月廿九日出抚顺关",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "清方": [
-      {
-       "id": "A042",
-       "predicate": "渡河损失原因",
-       "value_text": "贪功轻进，不待火器辎重，涉水人马漂没",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "A043",
-       "predicate": "渡河损失原因",
-       "value_text": "后金于上游筑坝蓄水，明军半渡而决之",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "朝鲜": [],
-     "日本方": [],
      "综述考订": []
     }
    },
@@ -10988,46 +23102,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:shangjianya",
-    "name": "尚间崖（北路·马林）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 1,
-    "gap_count": 0,
-    "coverage": "1/3",
-    "coverage_frac": 0.333,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.333,
-    "party_counts": {
-     "明方": 1,
-     "清方": 0,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "A050",
-       "predicate": "发生时刻",
-       "value_text": "三月初二",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "清方": [],
-     "朝鲜": [],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
     "subject": "event:shenyang_founded",
     "name": "event:shenyang_founded",
     "scenes": [
@@ -11607,280 +23681,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:sarhu_battle",
-    "name": "萨尔浒主战场",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 30,
-    "gap_count": 2,
-    "coverage": "2/3",
-    "coverage_frac": 0.667,
-    "divergence": 0.087,
-    "gap_rate": 0.067,
-    "resonance": 0.568,
-    "party_counts": {
-     "明方": 11,
-     "清方": 0,
-     "朝鲜": 12,
-     "日本方": 0,
-     "综述考订": 7
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "A040",
-       "predicate": "发生时刻",
-       "value_text": "三月初一",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX001_M3",
-       "predicate": "兵力",
-       "value_text": "主客出塞官军共八万八千五百五十余员名",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX002_M3",
-       "predicate": "阵亡",
-       "value_text": "阵亡军丁四万五千八百七十余名",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX003_M3",
-       "predicate": "阵亡",
-       "value_text": "阵亡道镇副协参游都司通判守备中军千把总等官共三百一十余员名",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX004_M3",
-       "predicate": "阵亡",
-       "value_text": "阵失马骡驼共二万八千六百余匹头只",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX005_M3",
-       "predicate": "兵力",
-       "value_text": "阵回见在并招集官军共四万二千三百六十余员名",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX006_M3",
-       "predicate": "兵力",
-       "value_text": "奴酋精兵约六万余",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX008_M3",
-       "predicate": "集兵",
-       "value_text": "分派数路，不免气势单薄",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX009_M3",
-       "predicate": "出击路线",
-       "value_text": "四路进兵，期会赫图阿拉",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX010_M3",
-       "predicate": "战略",
-       "value_text": "凭尔几路来，我只一路去",
-       "source": "sanchaoliao_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX012_M3",
-       "predicate": "兵力",
-       "value_text": "号称四十七万 vs 实录二十万 vs 实数八万八千",
-       "source": "sanchaoliao_shilu",
-       "layer": "gap",
-       "scene": "sarhu"
-      }
-     ],
-     "清方": [],
-     "朝鲜": [
-      {
-       "id": "SX001_M2",
-       "predicate": "参战兵力",
-       "value_text": "朝鲜三营兵马一万三千人",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX002_M2",
-       "predicate": "东路明军兵力",
-       "value_text": "宽田一路主客官兵二万四千余人",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX003_M2",
-       "predicate": "东路明军实际兵力",
-       "value_text": "不过万余",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX004_M2",
-       "predicate": "东路明军装备",
-       "value_text": "器械龃龉，无大炮大器",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX005_M2",
-       "predicate": "东路明军孤军",
-       "value_text": "东路兵甚孤，刘綎与杨镐不和",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX006_M2",
-       "predicate": "深河之战",
-       "value_text": "朝鲜军与后金军交战，中死者殆半",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX007_M2",
-       "predicate": "战役结果",
-       "value_text": "天朝大兵及朝鲜三营兵初四日败绩于深河",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX008_M2",
-       "predicate": "刘綎阵亡",
-       "value_text": "都督坐于火药包上放火自杀",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX009_M2",
-       "predicate": "金应河战死",
-       "value_text": "金应河独依大树，以三大弓迭射，被称依柳将",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX010_M2",
-       "predicate": "朝鲜军投降",
-       "value_text": "姜弘立、金景瑞率三营兵降后金",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX011_M2",
-       "predicate": "杜松败亡",
-       "value_text": "杜松贪功轻进，全军败没",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX012_M2",
-       "predicate": "四路败绩",
-       "value_text": "四路俱败绩",
-       "source": "guanghaijun_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "日本方": [],
-     "综述考订": [
-      {
-       "id": "A091",
-       "predicate": "天象",
-       "value_text": "三月初一辽东日出约在卯时初，晨间河谷多雾",
-       "source": "modern",
-       "layer": "inference",
-       "scene": "sarhu"
-      },
-      {
-       "id": "A092",
-       "predicate": "史料缺口",
-       "value_text": "杜松部车营与火器的具体编制、数量、损失情况，现存史料均无记载",
-       "source": "modern",
-       "layer": "gap",
-       "scene": "sarhu"
-      },
-      {
-       "id": "A044",
-       "predicate": "胜负性质",
-       "value_text": "非以少胜多，乃逐次以众击寡",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "sarhu"
-      },
-      {
-       "id": "SX011_M3",
-       "predicate": "兵力",
-       "value_text": "明军实数约八万八千",
-       "source": "modern",
-       "layer": "scholarship",
-       "scene": "sarhu"
-      },
-      {
-       "id": "MT_S01",
-       "predicate": "明军四路部署",
-       "value_text": "杨镐分兵四道：杜松督六万由抚顺出西路，马林督四万出开原会叶赫兵二万（北路），李如柏督六万出鸦鹘关趋清河（南路），刘綎督四万会朝鲜兵二万入宽甸口（东路），期二十一日后分道出塞，会师二道关。",
-       "source": "mingtongjian",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "MT_S02",
-       "predicate": "杨镐结局",
-       "value_text": "开原、铁岭相继失陷后，言官交章弹劾杨镐，杨镐下诏狱论死。",
-       "source": "mingtongjian",
-       "layer": "record",
-       "scene": "sarhu"
-      },
-      {
-       "id": "MT_S03",
-       "predicate": "战后余波·叶赫",
-       "value_text": "萨尔浒战后，后金以叶赫助兵为由攻灭叶赫（北关）。",
-       "source": "mingtongjian",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ]
-    }
-   },
-   {
     "subject": "event:fushun_fall",
     "name": "event:fushun_fall",
     "scenes": [
@@ -12042,55 +23842,6 @@ window.SANDBOX_DATA = {
     }
    },
    {
-    "subject": "event:abudaligang",
-    "name": "阿布达里岗（东路·刘綎）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 2,
-    "gap_count": 0,
-    "coverage": "2/3",
-    "coverage_frac": 0.667,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.667,
-    "party_counts": {
-     "明方": 0,
-     "清方": 1,
-     "朝鲜": 1,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [],
-     "清方": [
-      {
-       "id": "A061",
-       "predicate": "致败关键",
-       "value_text": "后金持杜松令箭伪为明使，绐刘綎速进",
-       "source": "qing_taizu_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "朝鲜": [
-      {
-       "id": "A060",
-       "predicate": "发生时刻",
-       "value_text": "三月初四",
-       "source": "zhazhong_rilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "日本方": [],
-     "综述考订": []
-    }
-   },
-   {
     "subject": "event:cefeng_heyi",
     "name": "event:cefeng_heyi",
     "scenes": [
@@ -12210,55 +23961,6 @@ window.SANDBOX_DATA = {
        "scene": "imjin"
       }
      ],
-     "综述考订": []
-    }
-   },
-   {
-    "subject": "event:south_retreat",
-    "name": "南路溃逃（李如柏）",
-    "scenes": [
-     "sarhu"
-    ],
-    "scene_names": [
-     "萨尔浒"
-    ],
-    "total": 2,
-    "gap_count": 0,
-    "coverage": "2/3",
-    "coverage_frac": 0.667,
-    "divergence": 0.0,
-    "gap_rate": 0.0,
-    "resonance": 0.667,
-    "party_counts": {
-     "明方": 1,
-     "清方": 1,
-     "朝鲜": 0,
-     "日本方": 0,
-     "综述考订": 0
-    },
-    "parties": {
-     "明方": [
-      {
-       "id": "A070",
-       "predicate": "发生时刻",
-       "value_text": "三月初五",
-       "source": "ming_shenzong_shilu",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "清方": [
-      {
-       "id": "A071",
-       "predicate": "撤退损失",
-       "value_text": "自相蹂践死者千余人",
-       "source": "mingshi",
-       "layer": "record",
-       "scene": "sarhu"
-      }
-     ],
-     "朝鲜": [],
-     "日本方": [],
      "综述考订": []
     }
    },

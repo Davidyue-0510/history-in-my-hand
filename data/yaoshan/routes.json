@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_ys_song",
+   "name": "宋舟退守",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "linan",
+     "at": "1276-01",
+     "label": "宋退海上"
+    },
+    {
+     "place": "yaoshan",
+     "at": "1279-01",
+     "label": "崖山"
+    },
+    {
+     "place": "yamen",
+     "at": "1279-03",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "1279-03",
+    "type": "defeat",
+    "text": "崖山败，宋亡"
+   }
+  },
+  {
+   "id": "rt_ys_yuan",
+   "name": "元舰南追",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "dadu",
+     "at": "1278-01",
+     "label": "元南征"
+    },
+    {
+     "place": "yamen",
+     "at": "1279-02",
+     "label": "围崖山"
+    }
+   ],
+   "outcome": {
+    "at": "1279-03",
+    "type": "victory",
+    "text": "元破崖山灭宋"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1276-01",
+   "era": "德祐二年",
+   "label": "宋都陷",
+   "key": false
+  },
+  {
+   "at": "1279-01",
+   "era": "祥兴二年",
+   "label": "崖山",
+   "key": false
+  },
+  {
+   "at": "1279-03",
+   "era": "三月",
+   "label": "崖山败亡",
+   "key": true
+  }
+ ]
+}

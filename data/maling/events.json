@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_ml_wei",
+   "subject": "event:ml_wei",
+   "year": -341,
+   "era": "周显王二十八年",
+   "title": "魏攻韩",
+   "kind": "战事",
+   "text": "魏攻韩，韩请救于齐。"
+  },
+  {
+   "id": "ev_ml_qi",
+   "subject": "event:ml_qi",
+   "year": -340,
+   "era": "周显王二十九年",
+   "title": "齐救韩伐魏",
+   "kind": "战事",
+   "text": "孙膑减灶诱敌。",
+   "place": "maling"
+  },
+  {
+   "id": "ev_ml_jz",
+   "subject": "event:ml_jz",
+   "year": -340,
+   "era": "周显王二十九年",
+   "title": "马陵伏击",
+   "kind": "战事",
+   "text": "庞涓夜追中伏，魏军溃，庞涓死。",
+   "place": "maling"
+  }
+ ]
+}

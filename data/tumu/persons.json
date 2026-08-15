@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "zhengtong",
+   "name": "明英宗",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "wangzhen",
+   "name": "王振",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "yexian",
+   "name": "也先",
+   "side": "瓦剌",
+   "influence": 0
+  }
+ ]
+}

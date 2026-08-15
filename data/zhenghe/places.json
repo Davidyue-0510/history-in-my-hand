@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "taicang",
+   "name": "刘家港",
+   "lon": 121.1,
+   "lat": 31.45,
+   "note": "郑和下西洋起锚地"
+  },
+  {
+   "id": "zhancheng",
+   "name": "占城",
+   "lon": 108.0,
+   "lat": 16.0,
+   "note": "郑和西洋第一站"
+  },
+  {
+   "id": "beijing",
+   "name": "北京",
+   "lon": 116.4,
+   "lat": 39.9,
+   "note": "元大都/明京师"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

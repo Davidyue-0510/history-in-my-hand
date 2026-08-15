@@ -154,9 +154,34 @@ def analyze_route(terr, route, places):
     }
 
 
-def _days_between(a, b):
-    """两个 YYYY-MM-DD 之间的天数。"""
+def _parse_ymd(s):
+    """解析 YYYY-MM-DD 或 BC 约定 B260-08（公元前260年八月）为天文年序 (y, m, d)。"""
+    s = str(s)
+    is_bc = s[:1] in ('B', '-')
+    core = s[1:] if is_bc else s
+    parts = core.split('-')
+    y = int(parts[0])
+    mo = int(parts[1]) if len(parts) > 1 and parts[1] else 1
+    d = int(parts[2]) if len(parts) > 2 and parts[2] else 1
+    if is_bc:
+        y = 1 - y  # 260 BC → 天文年 -259（无公元0年）
+    return y, mo, d
+
+
+def _ord_of(s):
+    """日期 → 连续序数（proleptic Gregorian，与 datetime.date.toordinal 对齐）。"""
     from datetime import date
-    ya, ma, da = (int(x) for x in a.split('-'))
-    yb, mb, db = (int(x) for x in b.split('-'))
-    return (date(yb, mb, db) - date(ya, ma, da)).days
+    y, mo, d = _parse_ymd(s)
+    if y >= 1:
+        return date(y, mo, d).toordinal()
+    # 天文年 <= 0（1 BC = 0）走 JDN，再对齐到 datetime 序数（date(1,1,1)==1 ↔ JDN 1721426）
+    a = (14 - mo) // 12
+    yy = y + 4800 - a
+    mm = mo + 12 * a - 3
+    jdn = d + (153 * mm + 2) // 5 + 365 * yy + yy // 4 - yy // 100 + yy // 400 - 32045
+    return jdn - 1721425
+
+
+def _days_between(a, b):
+    """两个 YYYY-MM-DD / B260-08 之间的天数（支持公元前）。"""
+    return _ord_of(b) - _ord_of(a)

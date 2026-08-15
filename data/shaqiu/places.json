@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "xingtai",
+   "name": "沙丘",
+   "lon": 114.5,
+   "lat": 37.07,
+   "note": "沙丘之变，今邢台"
+  },
+  {
+   "id": "xianyang",
+   "name": "咸阳",
+   "lon": 108.7,
+   "lat": 34.33,
+   "note": "秦都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

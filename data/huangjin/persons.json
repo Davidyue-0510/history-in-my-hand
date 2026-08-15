@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhangjiao",
+   "name": "张角",
+   "side": "黄巾",
+   "influence": 0
+  },
+  {
+   "id": "huangfusong",
+   "name": "皇甫嵩",
+   "side": "汉",
+   "influence": 0
+  }
+ ]
+}

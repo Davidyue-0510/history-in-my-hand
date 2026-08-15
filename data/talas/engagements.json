@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_tl_main",
+   "name": "怛罗斯决战",
+   "at": "751-07",
+   "era": "天宝十载七月",
+   "place": "talas",
+   "winner": "b",
+   "outcome": "唐军深入，葛逻禄叛离，侧背受敌，高仙芝夜走，唐退出中亚。",
+   "subject": "event:tl_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "高仙芝",
+     "committed_ratio": 1.0,
+     "fatigue": "exhausted",
+     "march_72h_li": 300,
+     "posture": "远征",
+     "commit_basis": "唐军越葱岭远征，兵疲粮远。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "阿布·穆斯林",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 320,
+     "posture": "以逸",
+     "commit_basis": "大食本土之师，以众待劳。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "751-07",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "751-07",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_xy_cao",
+   "subject": "event:xy_cao",
+   "year": 215,
+   "era": "建安二十年",
+   "title": "曹征张鲁",
+   "kind": "战事",
+   "text": "曹操西征，留张辽守合肥。"
+  },
+  {
+   "id": "ev_xy_zl",
+   "subject": "event:xy_zl",
+   "year": 215,
+   "era": "建安二十年",
+   "title": "张辽突阵",
+   "kind": "战事",
+   "text": "张辽率八百突击孙权营。",
+   "place": "xiaoyaojin"
+  },
+  {
+   "id": "ev_xy_jz",
+   "subject": "event:xy_jz",
+   "year": 215,
+   "era": "建安二十年",
+   "title": "吴退走",
+   "kind": "战事",
+   "text": "孙权攻合肥不克，退走。",
+   "place": "xiaoyaojin"
+  }
+ ]
+}

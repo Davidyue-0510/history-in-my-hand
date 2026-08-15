@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_wg_91",
+   "subject": "event:wg_91",
+   "year": -91,
+   "era": "征和二",
+   "title": "江充构陷",
+   "kind": "冤狱",
+   "text": "江充诬太子行巫蛊，掘蛊于宫，武帝怒、太子惧。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_wg_war",
+   "subject": "event:wg_war",
+   "year": -91,
+   "era": "同年",
+   "title": "太子兵败",
+   "kind": "结局",
+   "text": "太子发兵捕江充、旋败走，自尽湖县，卫后殉。",
+   "place": "changan"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "wuju",
+   "name": "吴玠",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "wulin",
+   "name": "吴璘",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "wuzhu",
+   "name": "兀术",
+   "side": "金",
+   "influence": 0
+  }
+ ]
+}

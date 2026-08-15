@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_cp_chu",
+   "subject": "event:cp_chu",
+   "year": -632,
+   "era": "周襄王二十年",
+   "title": "楚围宋",
+   "kind": "战事",
+   "text": "楚成王围宋，宋乞援于晋。"
+  },
+  {
+   "id": "ev_cp_jin",
+   "subject": "event:cp_jin",
+   "year": -632,
+   "era": "周襄王二十年",
+   "title": "晋伐曹卫",
+   "kind": "战事",
+   "text": "晋文公退避三舍救宋。",
+   "place": "chengpu"
+  },
+  {
+   "id": "ev_cp_jz",
+   "subject": "event:cp_jz",
+   "year": -632,
+   "era": "周襄王二十年",
+   "title": "城濮大败楚",
+   "kind": "战事",
+   "text": "晋军城濮破楚，践土会盟。",
+   "place": "chengpu"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "sabulv",
+   "name": "萨布素",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "pengchun",
+   "name": "彭春",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "tuoer",
+   "name": "托尔布津",
+   "side": "沙俄",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_gl_wei",
+   "subject": "event:gl_wei",
+   "year": -354,
+   "era": "周显王十五年",
+   "title": "魏围邯郸",
+   "kind": "战事",
+   "text": "魏拔邯郸，赵告急于齐。"
+  },
+  {
+   "id": "ev_gl_qi",
+   "subject": "event:gl_qi",
+   "year": -353,
+   "era": "周显王十六年",
+   "title": "齐围魏救赵",
+   "kind": "战事",
+   "text": "孙膑袭大梁，魏军回救。",
+   "place": "guiling"
+  },
+  {
+   "id": "ev_gl_jz",
+   "subject": "event:gl_jz",
+   "year": -353,
+   "era": "周显王十六年",
+   "title": "桂陵擒庞涓",
+   "kind": "战事",
+   "text": "齐邀魏军于桂陵，擒庞涓。",
+   "place": "guiling"
+  }
+ ]
+}

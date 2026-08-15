@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_tp_1851",
+   "subject": "event:tp_1851",
+   "year": 1851,
+   "era": "咸丰元",
+   "title": "金田起义",
+   "kind": "战事",
+   "text": "洪秀全、杨秀清等金田团营，建号太平天国。",
+   "place": "guiping"
+  },
+  {
+   "id": "ev_tp_1853",
+   "subject": "event:tp_1853",
+   "year": 1853,
+   "era": "咸丰三",
+   "title": "定都天京",
+   "kind": "战事",
+   "text": "太平军破南京，改名天京，与清对峙。",
+   "place": "nanjing"
+  },
+  {
+   "id": "ev_tp_1864",
+   "subject": "event:tp_1864",
+   "year": 1864,
+   "era": "同治三",
+   "title": "天京陷落",
+   "kind": "结局",
+   "text": "湘军克天京，太平天国败亡。",
+   "place": "nanjing"
+  }
+ ]
+}

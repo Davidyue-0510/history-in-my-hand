@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_tl_tang",
+   "subject": "event:tl_tang",
+   "year": 751,
+   "era": "天宝十载",
+   "title": "高仙芝西征",
+   "kind": "战事",
+   "text": "高仙芝率唐兵与蕃兵西进。"
+  },
+  {
+   "id": "ev_tl_gel",
+   "subject": "event:tl_gel",
+   "year": 751,
+   "era": "天宝十载",
+   "title": "葛逻禄叛",
+   "kind": "战事",
+   "text": "唐军蕃兵葛逻禄临阵叛。",
+   "place": "talas"
+  },
+  {
+   "id": "ev_tl_jz",
+   "subject": "event:tl_jz",
+   "year": 751,
+   "era": "天宝十载",
+   "title": "怛罗斯败",
+   "kind": "战事",
+   "text": "唐军为大食所败，纸术西传。",
+   "place": "talas"
+  }
+ ]
+}

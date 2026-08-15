@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_sy_356",
+   "subject": "event:sy_356",
+   "year": -356,
+   "era": "秦孝公六年",
+   "title": "商鞅变法始",
+   "kind": "变法",
+   "text": "商鞅为左庶长，颁垦草、奖军功之法，徙木立信，秦民知令。",
+   "place": "yueyang"
+  },
+  {
+   "id": "ev_sy_350",
+   "subject": "event:sy_350",
+   "year": -350,
+   "era": "十二年",
+   "title": "徙都咸阳·再变法",
+   "kind": "变法",
+   "text": "迁都咸阳，废井田、开阡陌，行县制、统一度量，禁父子同室。",
+   "place": "xianyang"
+  },
+  {
+   "id": "ev_sy_338",
+   "subject": "event:sy_338",
+   "year": -338,
+   "era": "二十四年",
+   "title": "孝公崩·商鞅车裂",
+   "kind": "结局",
+   "text": "秦孝公死，惠文王立，宗室怨鞅，车裂以徇。",
+   "place": "xianyang"
+  }
+ ]
+}

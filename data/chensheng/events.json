@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_cs_209a",
+   "subject": "event:cs_209a",
+   "year": -209,
+   "era": "二世元·七月",
+   "title": "大泽乡起事",
+   "kind": "战事",
+   "text": "失期当斩，陈胜吴广斩尉而起，号张楚，戍卒景从。",
+   "place": "dazexiang"
+  },
+  {
+   "id": "ev_cs_209b",
+   "subject": "event:cs_209b",
+   "year": -209,
+   "era": "同年",
+   "title": "天下响应",
+   "kind": "战事",
+   "text": "诸郡县苦秦，杀长吏应之，六国之后并起。",
+   "place": "dazexiang"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_cs_jin",
+   "subject": "event:cs_jin",
+   "year": 1161,
+   "era": "绍兴三十一年",
+   "title": "金南侵",
+   "kind": "战事",
+   "text": "完颜亮率金军至采石欲渡江。"
+  },
+  {
+   "id": "ev_cs_yu",
+   "subject": "event:cs_yu",
+   "year": 1161,
+   "era": "绍兴三十一年",
+   "title": "虞允文督师",
+   "kind": "战事",
+   "text": "虞允文犒师采石，整舟师。",
+   "place": "caishiji"
+  },
+  {
+   "id": "ev_cs_jz",
+   "subject": "event:cs_jz",
+   "year": 1161,
+   "era": "绍兴三十一年",
+   "title": "采石破金",
+   "kind": "战事",
+   "text": "宋舟师火攻破金渡，亮退瓜洲。",
+   "place": "caishiji"
+  }
+ ]
+}

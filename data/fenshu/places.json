@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "xianyang",
+   "name": "咸阳",
+   "lon": 108.7,
+   "lat": 34.33,
+   "note": "秦都"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

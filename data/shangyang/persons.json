@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "shangyang",
+   "name": "商鞅",
+   "side": "秦",
+   "influence": 0
+  },
+  {
+   "id": "xiaogong",
+   "name": "秦孝公",
+   "side": "秦",
+   "influence": 0
+  }
+ ]
+}

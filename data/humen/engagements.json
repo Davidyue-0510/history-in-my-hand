@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_hm_main",
+   "name": "虎门炮台",
+   "at": "1841-02",
+   "era": "道光二十一年二月",
+   "place": "humen",
+   "winner": "b",
+   "outcome": "英舰以蒸汽船破清炮台链，炮台相继陷，关天培殉国。",
+   "subject": "event:hm_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "关天培",
+     "committed_ratio": 1.0,
+     "fatigue": "exhausted",
+     "march_72h_li": 40,
+     "posture": "死守",
+     "commit_basis": "清炮台陈旧，兵力单弱。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "英远征军",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 60,
+     "posture": "舰炮",
+     "commit_basis": "英舰船坚炮利，破其江防。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "1841-02",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "1841-02",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

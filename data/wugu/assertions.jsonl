@@ -1,0 +1,2 @@
+{"id": "AX_ev_wg_91", "subject": "event:wg_91", "predicate": "事件", "value_text": "江充诬太子行巫蛊，掘蛊于宫，武帝怒、太子惧。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": -91, "end": -91, "era_text": "征和二"}, "place": "changan"}
+{"id": "AX_ev_wg_war", "subject": "event:wg_war", "predicate": "事件", "value_text": "太子发兵捕江充、旋败走，自尽湖县，卫后殉。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": -91, "end": -91, "era_text": "同年"}, "place": "changan"}

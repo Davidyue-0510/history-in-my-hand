@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "xiaoyaojin",
+   "name": "逍遥津",
+   "lon": 117.27,
+   "lat": 31.86,
+   "note": "今安徽合肥"
+  },
+  {
+   "id": "hefei",
+   "name": "合肥",
+   "lon": 117.27,
+   "lat": 31.86,
+   "note": "魏边镇"
+  },
+  {
+   "id": "ruxu",
+   "name": "濡须",
+   "lon": 117.6,
+   "lat": 31.4,
+   "note": "吴军口"
+  },
+  {
+   "id": "chaisang",
+   "name": "柴桑",
+   "lon": 115.99,
+   "lat": 29.71,
+   "note": "孙权治"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

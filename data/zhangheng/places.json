@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "note": "东汉/唐东都"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

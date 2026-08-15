@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_py_chen",
+   "subject": "event:py_chen",
+   "year": 1363,
+   "era": "龙凤九年",
+   "title": "陈友谅围南昌",
+   "kind": "战事",
+   "text": "陈友谅率巨舰围南昌。"
+  },
+  {
+   "id": "ev_py_zhu",
+   "subject": "event:py_zhu",
+   "year": 1363,
+   "era": "龙凤九年",
+   "title": "朱救南昌",
+   "kind": "战事",
+   "text": "朱元璋率舟师入湖。",
+   "place": "poyanghu"
+  },
+  {
+   "id": "ev_py_jz",
+   "subject": "event:py_jz",
+   "year": 1363,
+   "era": "龙凤九年",
+   "title": "鄱阳湖火攻",
+   "kind": "战事",
+   "text": "朱以火舟破陈舰，友谅死。",
+   "place": "kanglang"
+  }
+ ]
+}

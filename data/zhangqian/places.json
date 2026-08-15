@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  },
+  {
+   "id": "loulan",
+   "name": "楼兰",
+   "lon": 89.8,
+   "lat": 40.5,
+   "note": "西域门户"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

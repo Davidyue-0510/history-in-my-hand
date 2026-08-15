@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_fs_213",
+   "subject": "event:fs_213",
+   "year": -213,
+   "era": "始皇三四",
+   "title": "焚诗书",
+   "kind": "统制",
+   "text": "李斯请焚民间《诗》《书》百家语，欲以法家一统思想。",
+   "place": "xianyang"
+  },
+  {
+   "id": "ev_fs_212",
+   "subject": "event:fs_212",
+   "year": -212,
+   "era": "始皇三五",
+   "title": "坑儒生",
+   "kind": "惨案",
+   "text": "方士亡去、谤议朝政，始皇坑儒生于咸阳。",
+   "place": "xianyang"
+  }
+ ]
+}

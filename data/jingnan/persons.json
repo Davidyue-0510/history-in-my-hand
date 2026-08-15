@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhudi",
+   "name": "朱棣",
+   "side": "燕/成祖",
+   "influence": 0
+  },
+  {
+   "id": "jianwen",
+   "name": "建文帝",
+   "side": "明",
+   "influence": 0
+  }
+ ]
+}

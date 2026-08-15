@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_hc_875",
+   "subject": "event:hc_875",
+   "year": 875,
+   "era": "乾符二",
+   "title": "濮州起兵",
+   "kind": "战事",
+   "text": "黄巢应王仙芝起于山东，号冲天大将军，转战中原。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_hc_880",
+   "subject": "event:hc_880",
+   "year": 880,
+   "era": "广明元",
+   "title": "入长安称帝",
+   "kind": "战事",
+   "text": "黄巢破潼关入长安，僖宗奔蜀，自称大齐皇帝。",
+   "place": "changan"
+  }
+ ]
+}

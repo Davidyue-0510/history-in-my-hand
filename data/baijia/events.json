@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_bj_350",
+   "subject": "event:bj_350",
+   "year": -350,
+   "era": "战国中",
+   "title": "稷下鼎盛",
+   "kind": "思想",
+   "text": "齐稷下学宫招贤，孟荀邹衍之徒并聚，论难不辍。",
+   "place": "linzi"
+  },
+  {
+   "id": "ev_bj_schools",
+   "subject": "event:bj_schools",
+   "year": -300,
+   "era": "战国中晚",
+   "title": "儒墨道法",
+   "kind": "思想",
+   "text": "儒墨显学对峙，道法渐兴，名农兵杂并出。",
+   "place": "linzi"
+  }
+ ]
+}

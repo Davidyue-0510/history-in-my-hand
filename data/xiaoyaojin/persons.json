@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "zhangliao",
+   "name": "张辽",
+   "side": "魏",
+   "influence": 0
+  },
+  {
+   "id": "sunquan",
+   "name": "孙权",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "liudian",
+   "name": "李典",
+   "side": "魏",
+   "influence": 0
+  }
+ ]
+}

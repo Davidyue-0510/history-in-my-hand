@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "xuanwumen",
+   "name": "玄武门",
+   "lon": 108.95,
+   "lat": 34.27,
+   "note": "唐长安宫城北门，政变处"
+  },
+  {
+   "id": "changan_xx",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "唐都"
+  },
+  {
+   "id": "qianliang",
+   "name": "太极宫",
+   "lon": 108.94,
+   "lat": 34.35,
+   "note": "高祖临朝处"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

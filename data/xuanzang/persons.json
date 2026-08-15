@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "xuanzang2",
+   "name": "玄奘",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "taizong2",
+   "name": "唐太宗",
+   "side": "唐",
+   "influence": 0
+  }
+ ]
+}

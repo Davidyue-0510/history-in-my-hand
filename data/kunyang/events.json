@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_ky_wan",
+   "subject": "event:ky_wan",
+   "year": 23,
+   "era": "地皇四年",
+   "title": "汉围宛",
+   "kind": "战事",
+   "text": "绿林军立更始，围宛。"
+  },
+  {
+   "id": "ev_ky_liu",
+   "subject": "event:ky_liu",
+   "year": 23,
+   "era": "地皇四年",
+   "title": "刘秀突阵",
+   "kind": "战事",
+   "text": "刘秀率十三骑夜出，招兵还战。",
+   "place": "kunyang"
+  },
+  {
+   "id": "ev_ky_jz",
+   "subject": "event:ky_jz",
+   "year": 23,
+   "era": "地皇四年",
+   "title": "昆阳破莽",
+   "kind": "战事",
+   "text": "内外夹击，莽军溃，王寻死。",
+   "place": "kunyang"
+  }
+ ]
+}

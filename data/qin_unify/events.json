@@ -1,0 +1,64 @@
+{
+ "events": [
+  {
+   "id": "ev_qn_230",
+   "subject": "event:qn_230",
+   "year": -230,
+   "era": "秦王政十七年",
+   "title": "灭韩",
+   "kind": "战事",
+   "text": "内史腾灭韩，俘韩王安，韩亡。",
+   "place": "xinzheng"
+  },
+  {
+   "id": "ev_qn_228",
+   "subject": "event:qn_228",
+   "year": -228,
+   "era": "十九年",
+   "title": "灭赵",
+   "kind": "战事",
+   "text": "王翦大破赵军，俘赵王迁，赵亡（公子嘉走代）。",
+   "place": "handan"
+  },
+  {
+   "id": "ev_qn_225",
+   "subject": "event:qn_225",
+   "year": -225,
+   "era": "二十二年",
+   "title": "灭魏",
+   "kind": "战事",
+   "text": "王贲引河沟灌大梁，魏王假降，魏亡。",
+   "place": "daliang"
+  },
+  {
+   "id": "ev_qn_223",
+   "subject": "event:qn_223",
+   "year": -223,
+   "era": "二十四年",
+   "title": "灭楚",
+   "kind": "战事",
+   "text": "王翦倾国六十万伐楚，破寿春，虏楚王负刍，楚亡。",
+   "place": "shouchun"
+  },
+  {
+   "id": "ev_qn_222",
+   "subject": "event:qn_222",
+   "year": -222,
+   "era": "二十五年",
+   "title": "灭燕代",
+   "kind": "战事",
+   "text": "王贲破辽东，俘燕王喜；又灭代，燕赵尽亡。",
+   "place": "ji"
+  },
+  {
+   "id": "ev_qn_221",
+   "subject": "event:qn_221",
+   "year": -221,
+   "era": "二十六年",
+   "title": "灭齐·一统",
+   "kind": "战事",
+   "text": "王贲自燕南下灭齐，齐王建降。六国尽，嬴政称始皇帝。",
+   "place": "linzi"
+  }
+ ]
+}

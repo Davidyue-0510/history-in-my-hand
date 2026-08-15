@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_wx_0611",
+   "subject": "event:wx_0611",
+   "year": 1898,
+   "era": "光绪廿四·四月",
+   "title": "明定国是",
+   "kind": "变法",
+   "text": "光绪颁诏变法，裁冗衙、废八股、奖工商。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_wx_0908",
+   "subject": "event:wx_0908",
+   "year": 1898,
+   "era": "同年八月",
+   "title": "戊戌政变",
+   "kind": "结局",
+   "text": "慈禧囚帝、捕杀六君子，新政尽废，维新败。",
+   "place": "beijing"
+  }
+ ]
+}

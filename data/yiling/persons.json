@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "luxun",
+   "name": "陆逊",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "liubei",
+   "name": "刘备",
+   "side": "蜀",
+   "influence": 0
+  },
+  {
+   "id": "zhugeliang",
+   "name": "诸葛亮",
+   "side": "蜀",
+   "influence": 0
+  }
+ ]
+}

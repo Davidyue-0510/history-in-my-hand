@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wanganshi",
+   "name": "王安石",
+   "side": "新党",
+   "influence": 0
+  },
+  {
+   "id": "simaguang",
+   "name": "司马光",
+   "side": "旧党",
+   "influence": 0
+  }
+ ]
+}

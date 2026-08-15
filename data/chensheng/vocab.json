@@ -1,0 +1,49 @@
+{
+ "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
+ "parties": [
+  "起义军",
+  "秦军",
+  "综合史料"
+ ],
+ "party_bucket": {
+  "起义军": "起义军",
+  "秦军": "秦军",
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "a": "#c0392b",
+  "b": "#2b6cb0",
+  "综合史料": "#7f8c8d"
+ },
+ "legend": {
+  "battle": [
+   {
+    "key": "a",
+    "label": "起义军胜",
+    "color": "#c0392b"
+   },
+   {
+    "key": "b",
+    "label": "秦军胜",
+    "color": "#2b6cb0"
+   },
+   {
+    "key": "none",
+    "label": "未分胜",
+    "color": "#7f8c8d"
+   }
+  ],
+  "route": [
+   {
+    "key": "a",
+    "label": "起义军行动",
+    "color": "#c0392b"
+   },
+   {
+    "key": "b",
+    "label": "秦军行动",
+    "color": "#2b6cb0"
+   }
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "lizicheng3",
+   "name": "李自成",
+   "side": "大顺",
+   "influence": 0
+  },
+  {
+   "id": "wu3gui",
+   "name": "吴三桂",
+   "side": "明降将",
+   "influence": 0
+  }
+ ]
+}

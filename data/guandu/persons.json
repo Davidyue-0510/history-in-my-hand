@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "caocao",
+   "name": "曹操",
+   "side": "曹",
+   "influence": 0
+  },
+  {
+   "id": "yuanshao",
+   "name": "袁绍",
+   "side": "袁",
+   "influence": 0
+  },
+  {
+   "id": "xunyou",
+   "name": "荀攸",
+   "side": "曹",
+   "influence": 0
+  }
+ ]
+}

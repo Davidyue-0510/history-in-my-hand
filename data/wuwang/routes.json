@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_ww",
+   "name": "周师东进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "zhouyuan",
+     "at": "-1048",
+     "label": "孟津观兵"
+    },
+    {
+     "place": "muye",
+     "at": "-1046",
+     "label": "牧野决战"
+    }
+   ],
+   "outcome": {
+    "at": "-1046",
+    "type": "victory",
+    "text": "克商建周"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "-1048",
+   "era": "文王受命",
+   "label": "孟津观兵",
+   "key": true
+  },
+  {
+   "at": "-1046",
+   "era": "牧野",
+   "label": "克商·商亡",
+   "key": true
+  }
+ ]
+}

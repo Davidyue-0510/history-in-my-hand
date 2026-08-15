@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_lq_214",
+   "subject": "event:lq_214",
+   "year": -214,
+   "era": "始皇三十三",
+   "title": "凿灵渠",
+   "kind": "工程",
+   "text": "史禄凿渠分湘入漓，沟通长江、珠江水系，转运岭南。",
+   "place": "xingan"
+  },
+  {
+   "id": "ev_lq_use",
+   "subject": "event:lq_use",
+   "year": -214,
+   "era": "同年",
+   "title": "通粮南征",
+   "kind": "功用",
+   "text": "灵渠既通，秦军南平百越，岭南初入版图。",
+   "place": "xingan"
+  }
+ ]
+}

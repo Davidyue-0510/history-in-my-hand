@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_jz",
+   "name": "扬州→平城京",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "yangzhou",
+     "at": "753",
+     "label": "启航"
+    },
+    {
+     "place": "heijokyo",
+     "at": "753",
+     "label": "抵日"
+    }
+   ],
+   "outcome": {
+    "at": "753",
+    "type": "none",
+    "text": "六渡终成"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "743",
+   "era": "天宝二",
+   "label": "首谋东渡",
+   "key": true
+  },
+  {
+   "at": "753",
+   "era": "天宝十二",
+   "label": "抵日传法",
+   "key": true
+  }
+ ]
+}

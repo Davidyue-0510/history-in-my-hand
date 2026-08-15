@@ -1,0 +1,34 @@
+{
+ "routes": [
+  {
+   "id": "rt_lq",
+   "name": "灵渠（湘→漓）",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "xingan",
+     "at": "-214",
+     "label": "分水铧嘴"
+    },
+    {
+     "place": "xingan",
+     "at": "-214",
+     "label": "入漓江南下"
+    }
+   ],
+   "outcome": {
+    "at": "-214",
+    "type": "none",
+    "text": "湘漓通津"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "-214",
+   "era": "始皇三十三",
+   "label": "灵渠凿成",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "persons": [
+  {
+   "id": "zhangzhongjing",
+   "name": "张仲景",
+   "side": "东汉医家",
+   "influence": 0
+  }
+ ]
+}

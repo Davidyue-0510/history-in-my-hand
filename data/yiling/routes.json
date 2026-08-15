@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_yl_wu",
+   "name": "吴军西拒",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "jiangling",
+     "at": "222-01",
+     "label": "陆逊进驻"
+    },
+    {
+     "place": "xiaoting",
+     "at": "222-02",
+     "label": "相持"
+    },
+    {
+     "place": "yiling",
+     "at": "222-06",
+     "label": "火攻"
+    }
+   ],
+   "outcome": {
+    "at": "222-06",
+    "type": "victory",
+    "text": "火烧连营破蜀"
+   }
+  },
+  {
+   "id": "rt_yl_shu",
+   "name": "蜀军东进",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "chengdu",
+     "at": "221-07",
+     "label": "刘备伐吴"
+    },
+    {
+     "place": "zigui",
+     "at": "222-01",
+     "label": "出秭归"
+    },
+    {
+     "place": "xiaoting",
+     "at": "222-02",
+     "label": "结营"
+    }
+   ],
+   "outcome": {
+    "at": "222-05",
+    "type": "defeat",
+    "text": "蜀军东进遇火攻败北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "221-07",
+   "era": "章武元年",
+   "label": "刘备称帝伐吴",
+   "key": false
+  },
+  {
+   "at": "222-02",
+   "era": "二年二月",
+   "label": "猇亭相持",
+   "key": false
+  },
+  {
+   "at": "222-06",
+   "era": "六月",
+   "label": "火烧连营",
+   "key": true
+  }
+ ]
+}

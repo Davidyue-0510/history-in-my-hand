@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "chenqun",
+   "name": "陈群",
+   "side": "魏",
+   "influence": 0
+  },
+  {
+   "id": "caocao",
+   "name": "曹操",
+   "side": "魏",
+   "influence": 0
+  }
+ ]
+}

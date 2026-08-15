@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_yc_yue",
+   "name": "岳家军北上",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "linan",
+     "at": "1140-05",
+     "label": "岳飞起"
+    },
+    {
+     "place": "yingchang",
+     "at": "1140-06",
+     "label": "复颍昌"
+    },
+    {
+     "place": "yancheng",
+     "at": "1140-07",
+     "label": "郾城"
+    },
+    {
+     "place": "zhuxian",
+     "at": "1140-07",
+     "label": "抵朱仙镇"
+    }
+   ],
+   "outcome": {
+    "at": "1140-07",
+    "type": "victory",
+    "text": "郾城破金，兵临汴京"
+   }
+  },
+  {
+   "id": "rt_yc_jin",
+   "name": "金军反扑",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "zhuxian",
+     "at": "1140-07",
+     "label": "金南下"
+    },
+    {
+     "place": "yancheng",
+     "at": "1140-07",
+     "label": "攻郾城"
+    }
+   ],
+   "outcome": {
+    "at": "1140-07",
+    "type": "defeat",
+    "text": "金反扑遇步击骑败北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1140-05",
+   "era": "绍兴十年",
+   "label": "岳飞北伐",
+   "key": false
+  },
+  {
+   "at": "1140-07",
+   "era": "七月",
+   "label": "兀术攻郾城",
+   "key": false
+  },
+  {
+   "at": "1140-07",
+   "era": "七月",
+   "label": "郾城破金",
+   "key": true
+  }
+ ]
+}

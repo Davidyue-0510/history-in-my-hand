@@ -14,7 +14,7 @@ window.SANDBOX_SLICES["sarhu"] = {
   "page": "sarhu.html",
   "key": "sarhu",
   "scene_id": "sarhu",
-  "vocab_pack": "ming_qing",
+  "vocab_pack": "inline:sarhu",
   "terrain_grid": "liaodong"
  },
  "sources": [
@@ -3901,5 +3901,97 @@ window.SANDBOX_SLICES["sarhu"] = {
   "exhausted": 0.7
  },
  "events": [],
- "edges": []
+ "edges": [],
+ "vocab": {
+  "layers": [
+   "record",
+   "scholarship",
+   "inference",
+   "gap"
+  ],
+  "quote_status": [
+   "verbatim",
+   "paraphrase_unverified",
+   "generated"
+  ],
+  "parties": [
+   "后金",
+   "明",
+   "清修·明臣",
+   "明廷官方",
+   "清修官史",
+   "朝鲜·亲历",
+   "明·私修",
+   "学界",
+   "朝鲜官方",
+   "明·封疆奏议",
+   "二手综述"
+  ],
+  "party_bucket": {
+   "后金": "后金",
+   "明": "明",
+   "清修·明臣": "明",
+   "明廷官方": "明",
+   "清修官史": "后金",
+   "朝鲜·亲历": "第三方",
+   "明·私修": "明",
+   "学界": "第三方",
+   "朝鲜官方": "第三方",
+   "明·封疆奏议": "明",
+   "二手综述": "第三方"
+  },
+  "party_colors": {
+   "后金": "#c0392b",
+   "明": "#2b6cb0",
+   "第三方": "#2E7D8F"
+  },
+  "factions": {
+   "feng_jiang": {
+    "name": "封疆奏议",
+    "macro_party": "明·封疆奏议",
+    "note": "auto"
+   }
+  },
+  "legend": {
+   "battle": [
+    {
+     "key": "jin",
+     "label": "后金胜",
+     "color": "#c0392b"
+    },
+    {
+     "key": "ming",
+     "label": "明胜",
+     "color": "#2b6cb0"
+    },
+    {
+     "key": "third",
+     "label": "第三方视角",
+     "color": "#2E7D8F"
+    },
+    {
+     "key": "none",
+     "label": "未接战",
+     "color": "#7f8c8d"
+    }
+   ],
+   "route": [
+    {
+     "key": "jin",
+     "label": "后金行军路线",
+     "color": "#c0392b"
+    },
+    {
+     "key": "ming",
+     "label": "明军行军路线",
+     "color": "#2b6cb0"
+    },
+    {
+     "key": "third",
+     "label": "第三方行军路线",
+     "color": "#2E7D8F"
+    }
+   ]
+  }
+ }
 };

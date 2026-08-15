@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_hj_184",
+   "subject": "event:hj_184",
+   "year": 184,
+   "era": "中平元年",
+   "title": "张角举事",
+   "kind": "战事",
+   "text": "张角以太平道聚众数十万，三十六方同日反，皆著黄巾，史称黄巾起义。",
+   "place": "julu_up"
+  },
+  {
+   "id": "ev_hj_spread",
+   "subject": "event:hj_spread",
+   "year": 184,
+   "era": "中平元年",
+   "title": "八州响应",
+   "kind": "战事",
+   "text": "黄巾蔓延青徐幽冀荆扬兖豫八州，京师震动，汉灵帝发天下兵讨之。",
+   "place": "luoyang_up"
+  },
+  {
+   "id": "ev_hj_185",
+   "subject": "event:hj_185",
+   "year": 185,
+   "era": "中平二年",
+   "title": "主力被镇压",
+   "kind": "战事",
+   "text": "皇甫嵩、朱儁等破黄巾，张角已死、张梁战广宗，黄巾主力平，余部流为军阀。",
+   "place": "guangzong"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_cq_960a",
+   "subject": "event:cq_960a",
+   "year": 960,
+   "era": "建隆元·正月初",
+   "title": "陈桥拥立",
+   "kind": "政变",
+   "text": "军中谋立，赵匡胤被掖黄袍，号恸而从，旋回师。",
+   "place": "chenqiao"
+  },
+  {
+   "id": "ev_cq_960b",
+   "subject": "event:cq_960b",
+   "year": 960,
+   "era": "建隆元·正月",
+   "title": "受禅建宋",
+   "kind": "结局",
+   "text": "回京师，恭帝禅位，赵匡胤即帝位，国号宋。",
+   "place": "kaofeng"
+  }
+ ]
+}

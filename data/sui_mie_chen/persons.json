@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "suiwen",
+   "name": "隋文帝",
+   "side": "隋",
+   "influence": 0
+  },
+  {
+   "id": "chenhouzhu",
+   "name": "陈后主",
+   "side": "陈",
+   "influence": 0
+  }
+ ]
+}

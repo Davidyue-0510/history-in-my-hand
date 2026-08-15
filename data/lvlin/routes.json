@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_ll",
+   "name": "绿林西进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "lvlin",
+     "at": "17",
+     "label": "绿林山"
+    },
+    {
+     "place": "changan",
+     "at": "23",
+     "label": "破长安"
+    }
+   ],
+   "outcome": {
+    "at": "23",
+    "type": "victory",
+    "text": "新莽亡"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "17",
+   "era": "天凤四",
+   "label": "绿林起",
+   "key": true
+  },
+  {
+   "at": "23",
+   "era": "更始元",
+   "label": "破长安·莽死",
+   "key": true
+  }
+ ]
+}

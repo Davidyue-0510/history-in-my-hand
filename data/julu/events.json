@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_jl_qin",
+   "subject": "event:jl_qin",
+   "year": -207,
+   "era": "秦二世三年",
+   "title": "章邯围巨鹿",
+   "kind": "战事",
+   "text": "秦将章邯、王离围巨鹿，赵乞援。"
+  },
+  {
+   "id": "ev_jl_xiang",
+   "subject": "event:jl_xiang",
+   "year": -207,
+   "era": "秦二世三年",
+   "title": "项羽渡河",
+   "kind": "战事",
+   "text": "项羽破釜沉舟，渡漳救巨鹿。",
+   "place": "julu"
+  },
+  {
+   "id": "ev_jl_jz",
+   "subject": "event:jl_jz",
+   "year": -207,
+   "era": "秦二世三年",
+   "title": "巨鹿破秦",
+   "kind": "战事",
+   "text": "九战绝甬道，俘王离。",
+   "place": "julu"
+  }
+ ]
+}

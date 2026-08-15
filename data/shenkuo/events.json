@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_sk_1072",
+   "subject": "event:sk_1072",
+   "year": 1072,
+   "era": "熙宁五",
+   "title": "奉使察访",
+   "kind": "科学",
+   "text": "沈括提举司天监、察访两浙，究水利舆地。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_sk_1088",
+   "subject": "event:sk_1088",
+   "year": 1088,
+   "era": "元祐三",
+   "title": "梦溪成书",
+   "kind": "科技",
+   "text": "隐居梦溪园，成《笔谈》，录格物之知。",
+   "place": "zhenjiang"
+  }
+ ]
+}

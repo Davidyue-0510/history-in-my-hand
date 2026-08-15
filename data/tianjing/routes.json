@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_tj_taiping",
+   "name": "太平守城",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "anqing",
+     "at": "1861-01",
+     "label": "安庆陷"
+    },
+    {
+     "place": "tianjing",
+     "at": "1862-01",
+     "label": "据天京守"
+    }
+   ],
+   "outcome": {
+    "at": "1864-07",
+    "type": "defeat",
+    "text": "天京陷，太平天国亡"
+   }
+  },
+  {
+   "id": "rt_tj_xiang",
+   "name": "湘军东进",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "anqing",
+     "at": "1861-01",
+     "label": "湘军取安庆"
+    },
+    {
+     "place": "yuhuatai",
+     "at": "1862-05",
+     "label": "屯雨花台"
+    },
+    {
+     "place": "tianjing",
+     "at": "1864-07",
+     "label": "破城"
+    }
+   ],
+   "outcome": {
+    "at": "1864-07",
+    "type": "victory",
+    "text": "湘军破天京"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1862-01",
+   "era": "同治元年",
+   "label": "湘军围天京",
+   "key": false
+  },
+  {
+   "at": "1864-07",
+   "era": "三年七月",
+   "label": "地堡破城",
+   "key": true
+  },
+  {
+   "at": "1864-07",
+   "era": "七月",
+   "label": "太平天国亡",
+   "key": true
+  }
+ ]
+}

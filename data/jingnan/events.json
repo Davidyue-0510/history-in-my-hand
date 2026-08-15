@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_jn_1399",
+   "subject": "event:jn_1399",
+   "year": 1399,
+   "era": "建文元年",
+   "title": "燕王起兵",
+   "kind": "战事",
+   "text": "朱棣以「清君侧、靖国难」为名起兵北平，史称靖难之役。",
+   "place": "beiping"
+  },
+  {
+   "id": "ev_jn_1402",
+   "subject": "event:jn_1402",
+   "year": 1402,
+   "era": "四年六月",
+   "title": "破南京·即位",
+   "kind": "战事",
+   "text": "燕军渡江破南京，宫中火起，建文帝失踪；棣即位，是为成祖。",
+   "place": "nanjing"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "julu_up",
+   "name": "巨鹿",
+   "lon": 115.04,
+   "lat": 37.07,
+   "note": "张角起兵地"
+  },
+  {
+   "id": "luoyang_up",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "note": "东汉都，黄巾威胁"
+  },
+  {
+   "id": "guangzong",
+   "name": "广宗",
+   "lon": 115.1,
+   "lat": 37.1,
+   "note": "张角弟张梁战死处"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

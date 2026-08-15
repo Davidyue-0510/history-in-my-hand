@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "sunbin",
+   "name": "孙膑",
+   "side": "齐",
+   "influence": 0
+  },
+  {
+   "id": "pangjuan",
+   "name": "庞涓",
+   "side": "魏",
+   "influence": 0
+  },
+  {
+   "id": "tianji",
+   "name": "田忌",
+   "side": "齐",
+   "influence": 0
+  }
+ ]
+}

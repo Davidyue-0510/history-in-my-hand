@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_lx_1175",
+   "subject": "event:lx_1175",
+   "year": 1175,
+   "era": "淳熙二",
+   "title": "鹅湖之会",
+   "kind": "论辩",
+   "text": "朱陆会讲鹅湖，辩为学工夫，和而不同。",
+   "place": "eqihu"
+  },
+  {
+   "id": "ev_lx_1241",
+   "subject": "event:lx_1241",
+   "year": 1241,
+   "era": "淳祐元",
+   "title": "理学官学化",
+   "kind": "影响",
+   "text": "朱熹从祀孔庙，四书定为科举行文之本。",
+   "place": "luoyang"
+  }
+ ]
+}

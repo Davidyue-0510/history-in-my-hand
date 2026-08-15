@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "kublai",
+   "name": "忽必烈",
+   "side": "元",
+   "influence": 0
+  },
+  {
+   "id": "yao_shu",
+   "name": "姚枢",
+   "side": "元臣",
+   "influence": 0
+  }
+ ]
+}

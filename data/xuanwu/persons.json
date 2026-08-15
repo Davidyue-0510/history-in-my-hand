@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "limin2",
+   "name": "李世民",
+   "side": "秦王/太宗",
+   "influence": 0
+  },
+  {
+   "id": "jiancheng",
+   "name": "李建成",
+   "side": "太子",
+   "influence": 0
+  },
+  {
+   "id": "gaozu",
+   "name": "唐高祖",
+   "side": "唐",
+   "influence": 0
+  }
+ ]
+}

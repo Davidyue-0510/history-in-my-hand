@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_ys_main",
+   "name": "崖山海战",
+   "at": "1279-03",
+   "era": "祥兴二年三月",
+   "place": "yaoshan",
+   "winner": "b",
+   "outcome": "元军断宋水寨汲路，火攻连环舟，宋师溃，陆秀夫负幼帝投海，宋亡。",
+   "subject": "event:ys_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "张世杰",
+     "committed_ratio": 1.0,
+     "fatigue": "exhausted",
+     "march_72h_li": 50,
+     "posture": "连环",
+     "commit_basis": "宋舟千艘连环，机动为元所制。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "张弘范",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 60,
+     "posture": "火攻",
+     "commit_basis": "元军断汲路、纵火破其连环。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "1279-03",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "1279-03",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

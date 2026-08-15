@@ -1,0 +1,57 @@
+{
+ "routes": [
+  {
+   "id": "rt_lc_march",
+   "name": "闯军东进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "yanan",
+     "at": "1628",
+     "label": "陕北起"
+    },
+    {
+     "place": "luoyang_lc",
+     "at": "1641",
+     "label": "破洛阳"
+    },
+    {
+     "place": "beijing",
+     "at": "1644",
+     "label": "破北京"
+    }
+   ],
+   "outcome": {
+    "at": "1644",
+    "type": "victory",
+    "text": "破京灭明"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1628",
+   "era": "崇祯元",
+   "label": "闯王起事",
+   "key": true
+  },
+  {
+   "at": "1641",
+   "era": "十四",
+   "label": "破洛阳",
+   "key": false
+  },
+  {
+   "at": "1644",
+   "era": "十七",
+   "label": "破北京·明亡",
+   "key": true
+  },
+  {
+   "at": "1645",
+   "era": "永昌二",
+   "label": "九宫山殁",
+   "key": true
+  }
+ ]
+}

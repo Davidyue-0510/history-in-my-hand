@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "beijing",
+   "name": "北京",
+   "lon": 116.4,
+   "lat": 39.9,
+   "note": "元大都/明京师"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

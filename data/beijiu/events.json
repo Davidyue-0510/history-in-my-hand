@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_bj_961",
+   "subject": "event:bj_961",
+   "year": 961,
+   "era": "建隆二",
+   "title": "宴饮释权",
+   "kind": "权谋",
+   "text": "太祖宴宿将，婉言劝释兵权，诸将拜辞就镇。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_bj_eff",
+   "subject": "event:bj_eff",
+   "year": 962,
+   "era": "建隆三",
+   "title": "崇文抑武",
+   "kind": "结局",
+   "text": "兵权归枢密、更戍法行，唐末藩镇之患渐弭。",
+   "place": "kaofeng"
+  }
+ ]
+}

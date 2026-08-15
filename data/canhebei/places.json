@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "canhebei",
+   "name": "参合陂",
+   "lon": 112.48,
+   "lat": 40.53,
+   "note": "今内蒙古凉城东北"
+  },
+  {
+   "id": "shengle",
+   "name": "盛乐",
+   "lon": 111.83,
+   "lat": 40.38,
+   "note": "北魏都"
+  },
+  {
+   "id": "zhongshan",
+   "name": "中山",
+   "lon": 115.01,
+   "lat": 38.51,
+   "note": "后燕都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zw_307",
+   "subject": "event:zw_307",
+   "year": -307,
+   "era": "武灵王十九",
+   "title": "胡服令下",
+   "kind": "改革",
+   "text": "武灵王下令易胡服、习骑射，臣下多谏，王力持之。",
+   "place": "handan"
+  },
+  {
+   "id": "ev_zw_war",
+   "subject": "event:zw_war",
+   "year": -306,
+   "era": "其后",
+   "title": "北拓云雁",
+   "kind": "融合",
+   "text": "赵筑长城、置云中雁门，胡汉武力交融。",
+   "place": "handan"
+  }
+ ]
+}

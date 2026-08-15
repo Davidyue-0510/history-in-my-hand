@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zc_463",
+   "subject": "event:zc_463",
+   "year": 463,
+   "era": "宋大明七",
+   "title": "上大明历",
+   "kind": "历法",
+   "text": "祖冲之进《大明历》，破旧历岁差之陋。",
+   "place": "jiankang"
+  },
+  {
+   "id": "ev_zc_pi",
+   "subject": "event:zc_pi",
+   "year": 480,
+   "era": "齐建元",
+   "title": "圆周率精算",
+   "kind": "科技",
+   "text": "算圆周至七位小数，定密率 355/113，旷古未有。",
+   "place": "jiankang"
+  }
+ ]
+}

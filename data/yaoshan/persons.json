@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "zhangshijie",
+   "name": "张世杰",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "luxiufu",
+   "name": "陆秀夫",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "zhanghongfan",
+   "name": "张弘范",
+   "side": "元",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_wc_641",
+   "subject": "event:wc_641",
+   "year": 641,
+   "era": "贞观十五年",
+   "title": "文成入藏",
+   "kind": "和亲",
+   "text": "文成公主赴吐蕃，与松赞干布和亲；携佛经、工技、谷物、工匠，唐蕃盟好。",
+   "place": "lhasa"
+  },
+  {
+   "id": "ev_wc_temple",
+   "subject": "event:wc_temple",
+   "year": 641,
+   "era": "同年",
+   "title": "大昭寺·汉藏交融",
+   "kind": "融合",
+   "text": "松赞干布建大昭寺供奉公主所带释迦像，汉地工技、历算、医药入藏。",
+   "place": "lhasa"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_hj_1019",
+   "subject": "event:hj_1019",
+   "year": 1019,
+   "era": "天禧三",
+   "title": "滑州大决",
+   "kind": "河决",
+   "text": "黄河决滑州天台埽，泛溢诸州，坏田庐、溺人畜。",
+   "place": "huaxian_s"
+  },
+  {
+   "id": "ev_hj_dukou",
+   "subject": "event:hj_dukou",
+   "year": 1019,
+   "era": "同年",
+   "title": "发夫塞河",
+   "kind": "堵口",
+   "text": "调兵夫数万筑堤堵口，耗粟帛巨万。",
+   "place": "puyang"
+  },
+  {
+   "id": "ev_hj_late",
+   "subject": "event:hj_late",
+   "year": 1034,
+   "era": "景祐元",
+   "title": "河患踵至",
+   "kind": "河决",
+   "text": "澶州、横陇相继决，北流之患自此难弭。",
+   "place": "puyang"
+  }
+ ]
+}

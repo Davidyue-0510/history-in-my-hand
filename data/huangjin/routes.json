@@ -1,0 +1,51 @@
+{
+ "routes": [
+  {
+   "id": "rt_hj_spread",
+   "name": "黄巾蔓延",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "julu_up",
+     "at": "184",
+     "label": "巨鹿起"
+    },
+    {
+     "place": "luoyang_up",
+     "at": "184",
+     "label": "逼洛阳"
+    },
+    {
+     "place": "guangzong",
+     "at": "184",
+     "label": "广宗决战"
+    }
+   ],
+   "outcome": {
+    "at": "184",
+    "type": "victory",
+    "text": "八州响应"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "184",
+   "era": "中平元",
+   "label": "张角举事",
+   "key": true
+  },
+  {
+   "at": "184",
+   "era": "中平元",
+   "label": "八州响应",
+   "key": false
+  },
+  {
+   "at": "185",
+   "era": "中平二",
+   "label": "广宗破·主力平",
+   "key": true
+  }
+ ]
+}

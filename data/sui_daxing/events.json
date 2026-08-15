@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_dx_582",
+   "subject": "event:dx_582",
+   "year": 582,
+   "era": "开皇二",
+   "title": "营建大兴城",
+   "kind": "工程",
+   "text": "宇文恺擘画大兴城，规整里坊、奠定中轴。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_dx_583",
+   "subject": "event:dx_583",
+   "year": 583,
+   "era": "开皇三",
+   "title": "迁都新邑",
+   "kind": "落成",
+   "text": "隋文帝迁入大兴城，后唐改长安。",
+   "place": "changan"
+  }
+ ]
+}

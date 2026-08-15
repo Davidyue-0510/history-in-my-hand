@@ -1,0 +1,170 @@
+{
+ "routes": [
+  {
+   "id": "rt_hh_bei1",
+   "name": "禹河/西汉故道（北流）",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "lanzhou",
+     "at": "B602",
+     "label": "上游"
+    },
+    {
+     "place": "tongguan",
+     "at": "B602",
+     "label": "出峡谷"
+    },
+    {
+     "place": "suxu",
+     "at": "B602",
+     "label": "宿胥口"
+    },
+    {
+     "place": "huangkou_n",
+     "at": "B602",
+     "label": "入渤海"
+    }
+   ],
+   "outcome": {
+    "at": "B602",
+    "type": "none",
+    "text": "前602 前长期北流"
+   }
+  },
+  {
+   "id": "rt_hh_bei2",
+   "name": "东汉—北宋北流",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "lanzhou",
+     "at": "11",
+     "label": "上游"
+    },
+    {
+     "place": "tongguan",
+     "at": "11",
+     "label": "出峡谷"
+    },
+    {
+     "place": "dapi",
+     "at": "11",
+     "label": "大伾山"
+    },
+    {
+     "place": "huangkou_n",
+     "at": "11",
+     "label": "入渤海"
+    }
+   ],
+   "outcome": {
+    "at": "11",
+    "type": "none",
+    "text": "王景治河后千年北流"
+   }
+  },
+  {
+   "id": "rt_hh_nan",
+   "name": "南宋—1855 南流（夺淮）",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "lanzhou",
+     "at": "1128",
+     "label": "上游"
+    },
+    {
+     "place": "tongguan",
+     "at": "1128",
+     "label": "出峡谷"
+    },
+    {
+     "place": "kaifeng",
+     "at": "1128",
+     "label": "经汴"
+    },
+    {
+     "place": "huangkou_s",
+     "at": "1128",
+     "label": "夺淮入黄海"
+    }
+   ],
+   "outcome": {
+    "at": "1128",
+    "type": "none",
+    "text": "杜充决河后南泛"
+   }
+  },
+  {
+   "id": "rt_hh_bei3",
+   "name": "1855 后北归",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "lanzhou",
+     "at": "1855",
+     "label": "上游"
+    },
+    {
+     "place": "tongguan",
+     "at": "1855",
+     "label": "出峡谷"
+    },
+    {
+     "place": "tongwaxiang",
+     "at": "1855",
+     "label": "铜瓦厢决"
+    },
+    {
+     "place": "huangkou_n",
+     "at": "1855",
+     "label": "复入渤海"
+    }
+   ],
+   "outcome": {
+    "at": "1855",
+    "type": "none",
+    "text": "铜瓦厢决口北归"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B602",
+   "era": "周定王五年",
+   "label": "宿胥口决·禹河改道",
+   "key": true
+  },
+  {
+   "at": "11",
+   "era": "东汉永平十二",
+   "label": "王景治河·北流入渤海",
+   "key": true
+  },
+  {
+   "at": "1128",
+   "era": "南宋建炎二",
+   "label": "杜充决河·开始夺淮",
+   "key": true
+  },
+  {
+   "at": "1194",
+   "era": "南宋绍熙五",
+   "label": "河全入淮",
+   "key": false
+  },
+  {
+   "at": "1494",
+   "era": "明弘治七",
+   "label": "筑太行堤·断北流",
+   "key": false
+  },
+  {
+   "at": "1855",
+   "era": "清咸丰五",
+   "label": "铜瓦厢决·复北归",
+   "key": true
+  }
+ ]
+}

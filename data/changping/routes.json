@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_cp_qin",
+   "name": "秦军绝粮",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "changping",
+     "at": "B260-08",
+     "label": "出奇兵绝赵粮道"
+    },
+    {
+     "place": "danze",
+     "at": "B260-09",
+     "label": "合围长平"
+    }
+   ],
+   "outcome": {
+    "at": "B260-09",
+    "type": "victory",
+    "text": "秦军合围长平，赵军覆没"
+   }
+  },
+  {
+   "id": "rt_cp_zhao",
+   "name": "赵军出击",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "handan",
+     "at": "B260-07",
+     "label": "赵括率军赴长平"
+    },
+    {
+     "place": "changping",
+     "at": "B260-08",
+     "label": "接战"
+    }
+   ],
+   "outcome": {
+    "at": "B260-08",
+    "type": "defeat",
+    "text": "赵军改守为攻，陷入包围"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B260-07",
+   "era": "周赧王五十五年七月",
+   "label": "赵括赴长平",
+   "key": false
+  },
+  {
+   "at": "B260-08",
+   "era": "八月",
+   "label": "秦绝赵粮道",
+   "key": true
+  },
+  {
+   "at": "B260-09",
+   "era": "九月",
+   "label": "长平决战·赵军覆没",
+   "key": true
+  }
+ ]
+}

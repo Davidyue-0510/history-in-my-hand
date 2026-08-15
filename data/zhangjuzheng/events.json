@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zj_1573",
+   "subject": "event:zj_1573",
+   "year": 1573,
+   "era": "万历元",
+   "title": "考成法立",
+   "kind": "变法",
+   "text": "张居正上考成法，以事权课吏，令行禁止。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_zj_1581",
+   "subject": "event:zj_1581",
+   "year": 1581,
+   "era": "万历九",
+   "title": "一条鞭法",
+   "kind": "变法",
+   "text": "总括赋役、概征银两，简化税制、增国库。",
+   "place": "beijing"
+  }
+ ]
+}

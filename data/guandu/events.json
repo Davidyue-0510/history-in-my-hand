@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_gd_yuan",
+   "subject": "event:gd_yuan",
+   "year": 200,
+   "era": "建安五年",
+   "title": "袁绍南渡",
+   "kind": "战事",
+   "text": "袁绍率众屯黎阳，南攻许。"
+  },
+  {
+   "id": "ev_gd_wuchao",
+   "subject": "event:gd_wuchao",
+   "year": 200,
+   "era": "建安五年",
+   "title": "乌巢焚粮",
+   "kind": "战事",
+   "text": "曹操亲袭乌巢，焚袁粮。",
+   "place": "guandu"
+  },
+  {
+   "id": "ev_gd_jz",
+   "subject": "event:gd_jz",
+   "year": 200,
+   "era": "建安五年",
+   "title": "官渡决战",
+   "kind": "战事",
+   "text": "袁军闻粮尽溃，曹追破之。",
+   "place": "guandu"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_bj_yu",
+   "subject": "event:bj_yu",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "于谦主战",
+   "kind": "战事",
+   "text": "于谦立景泰帝，誓守北京。"
+  },
+  {
+   "id": "ev_bj_wa",
+   "subject": "event:bj_wa",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "瓦剌逼京",
+   "kind": "战事",
+   "text": "也先挟英宗攻北京。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_bj_jz",
+   "subject": "event:bj_jz",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "北京拒敌",
+   "kind": "战事",
+   "text": "明军九门拒守，瓦剌退。",
+   "place": "desheng"
+  }
+ ]
+}

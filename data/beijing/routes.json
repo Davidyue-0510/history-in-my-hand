@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_bj_ming",
+   "name": "明军守京",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "beijing",
+     "at": "1449-09",
+     "label": "于谦整军"
+    },
+    {
+     "place": "desheng",
+     "at": "1449-10",
+     "label": "九门拒敌"
+    }
+   ],
+   "outcome": {
+    "at": "1449-10",
+    "type": "victory",
+    "text": "北京拒瓦剌"
+   }
+  },
+  {
+   "id": "rt_bj_wa",
+   "name": "瓦剌逼京",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "tumu",
+     "at": "1449-09",
+     "label": "挟帝北还"
+    },
+    {
+     "place": "juyong",
+     "at": "1449-10",
+     "label": "入关"
+    },
+    {
+     "place": "desheng",
+     "at": "1449-10",
+     "label": "攻城"
+    }
+   ],
+   "outcome": {
+    "at": "1449-10",
+    "type": "defeat",
+    "text": "瓦剌攻北京不克退"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1449-09",
+   "era": "正统十四年",
+   "label": "于谦主战",
+   "key": false
+  },
+  {
+   "at": "1449-10",
+   "era": "十月",
+   "label": "瓦剌逼京",
+   "key": false
+  },
+  {
+   "at": "1449-10",
+   "era": "十月",
+   "label": "北京拒敌",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_hs_jin",
+   "subject": "event:hs_jin",
+   "year": 1131,
+   "era": "绍兴元年",
+   "title": "金攻蜀",
+   "kind": "战事",
+   "text": "金自凤翔攻和尚原图入蜀。"
+  },
+  {
+   "id": "ev_hs_wu",
+   "subject": "event:hs_wu",
+   "year": 1131,
+   "era": "绍兴元年",
+   "title": "吴玠拒险",
+   "kind": "战事",
+   "text": "吴玠据原设伏。",
+   "place": "heshangyuan"
+  },
+  {
+   "id": "ev_hs_jz",
+   "subject": "event:hs_jz",
+   "year": 1131,
+   "era": "绍兴元年",
+   "title": "和尚原破金",
+   "kind": "战事",
+   "text": "宋军断金粮道，金军溃退。",
+   "place": "heshangyuan"
+  }
+ ]
+}

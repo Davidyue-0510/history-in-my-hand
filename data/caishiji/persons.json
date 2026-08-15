@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "yuyunwen",
+   "name": "虞允文",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "wanyanliang",
+   "name": "完颜亮",
+   "side": "金",
+   "influence": 0
+  }
+ ]
+}

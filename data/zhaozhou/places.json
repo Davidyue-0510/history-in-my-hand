@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "zhaoxian",
+   "name": "赵县",
+   "lon": 114.78,
+   "lat": 37.76,
+   "note": "赵州桥所在"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

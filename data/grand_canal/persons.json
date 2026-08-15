@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "yangdi",
+   "name": "隋炀帝",
+   "side": "隋",
+   "influence": 0
+  },
+  {
+   "id": "guoshoujing",
+   "name": "郭守敬",
+   "side": "元",
+   "influence": 0
+  }
+ ]
+}

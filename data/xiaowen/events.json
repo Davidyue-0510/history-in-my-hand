@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_xw_493",
+   "subject": "event:xw_493",
+   "year": 493,
+   "era": "太和十七年",
+   "title": "迁都洛阳",
+   "kind": "改革",
+   "text": "孝文帝以南伐为名，率众自平城迁都洛阳，脱离鲜卑守旧势力。",
+   "place": "luoyang"
+  },
+  {
+   "id": "ev_xw_494",
+   "subject": "event:xw_494",
+   "year": 494,
+   "era": "十八年",
+   "title": "禁胡服·改汉语",
+   "kind": "改革",
+   "text": "诏禁士民穿胡服、朝廷说鲜卑语，违者黜官，从汉制。",
+   "place": "luoyang"
+  },
+  {
+   "id": "ev_xw_496",
+   "subject": "event:xw_496",
+   "year": 496,
+   "era": "二十年",
+   "title": "改姓·定姓族",
+   "kind": "改革",
+   "text": "改拓跋等鲜卑姓为汉姓（皇室拓跋→元），定姓族门第，与汉高门通婚。",
+   "place": "luoyang"
+  }
+ ]
+}

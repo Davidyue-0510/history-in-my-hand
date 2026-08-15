@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_fs_qin",
+   "subject": "event:fs_qin",
+   "year": 383,
+   "era": "太元八年",
+   "title": "苻坚南征",
+   "kind": "战事",
+   "text": "前秦百万南侵，列阵淝水。"
+  },
+  {
+   "id": "ev_fs_jin",
+   "subject": "event:fs_jin",
+   "year": 383,
+   "era": "太元八年",
+   "title": "晋请战",
+   "kind": "战事",
+   "text": "谢玄请秦军小却，渡水决战。",
+   "place": "feishui"
+  },
+  {
+   "id": "ev_fs_jz",
+   "subject": "event:fs_jz",
+   "year": 383,
+   "era": "太元八年",
+   "title": "淝水溃秦",
+   "kind": "战事",
+   "text": "秦军却阵自溃，晋追击大破之。",
+   "place": "feishui"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_ft_67",
+   "subject": "event:ft_67",
+   "year": 67,
+   "era": "永平十",
+   "title": "白马驮经",
+   "kind": "传入",
+   "text": "汉使迎竺法兰、摄摩腾，以白马载经至洛阳。",
+   "place": "luoyang"
+  },
+  {
+   "id": "ev_ft_temple",
+   "subject": "event:ft_temple",
+   "year": 68,
+   "era": "永平十一",
+   "title": "白马寺立",
+   "kind": "本土化",
+   "text": "于洛阳建白马寺，译经其中，汉地伽蓝之始。",
+   "place": "luoyang"
+  }
+ ]
+}

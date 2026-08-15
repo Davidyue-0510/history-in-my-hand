@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "id": "ev_tj_xiang",
+   "subject": "event:tj_xiang",
+   "year": 1862,
+   "era": "同治元年",
+   "title": "湘军围天京",
+   "kind": "战事",
+   "text": "曾国荃屯雨花台围天京。"
+  },
+  {
+   "id": "ev_tj_di",
+   "subject": "event:tj_di",
+   "year": 1864,
+   "era": "同治三年",
+   "title": "地堡破城",
+   "kind": "战事",
+   "text": "湘军地道轰城，天京陷。",
+   "place": "tianjing"
+  },
+  {
+   "id": "ev_tj_wang",
+   "subject": "event:tj_wang",
+   "year": 1864,
+   "era": "同治三年",
+   "title": "太平天国亡",
+   "kind": "战事",
+   "text": "洪秀全先殁，城陷国亡。",
+   "place": "tianjing"
+  }
+ ]
+}

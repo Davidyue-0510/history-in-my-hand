@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_zl_liang",
+   "name": "梁军救钟离",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "jiankang",
+     "at": "507-02",
+     "label": "韦叡起"
+    },
+    {
+     "place": "zhongli",
+     "at": "507-04",
+     "label": "夹击"
+    }
+   ],
+   "outcome": {
+    "at": "507-04",
+    "type": "victory",
+    "text": "钟离破魏"
+   }
+  },
+  {
+   "id": "rt_zl_wei",
+   "name": "魏军南下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "luoyang_wei",
+     "at": "507-01",
+     "label": "魏起兵"
+    },
+    {
+     "place": "shouyang",
+     "at": "507-02",
+     "label": "据寿阳"
+    },
+    {
+     "place": "zhongli",
+     "at": "507-03",
+     "label": "围城"
+    }
+   ],
+   "outcome": {
+    "at": "507-03",
+    "type": "defeat",
+    "text": "魏围钟离反溃"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "507-01",
+   "era": "天监六年",
+   "label": "魏围钟离",
+   "key": false
+  },
+  {
+   "at": "507-03",
+   "era": "三月",
+   "label": "韦叡赴援",
+   "key": false
+  },
+  {
+   "at": "507-04",
+   "era": "四月",
+   "label": "钟离破魏",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_yk_main",
+   "name": "雅克萨围城",
+   "at": "1686-07",
+   "era": "康熙二十五年七月",
+   "place": "yaksa",
+   "winner": "a",
+   "outcome": "萨布素围雅克萨久攻，俄守军疫惫请盟，清允撤围议界。",
+   "subject": "event:yk_meng",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "萨布素",
+     "committed_ratio": 1.0,
+     "fatigue": "fresh",
+     "march_72h_li": 120,
+     "posture": "围城",
+     "commit_basis": "清军据垒久围，断其接济。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "托尔布津",
+     "committed_ratio": 1.0,
+     "fatigue": "marching",
+     "march_72h_li": 140,
+     "posture": "孤守",
+     "commit_basis": "俄军孤城援绝，疫惫请盟。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "1689-01",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "1689-01",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}

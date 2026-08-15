@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_zf_33",
+   "subject": "event:zf_33",
+   "year": -33,
+   "era": "竟宁元",
+   "title": "昭君请行",
+   "kind": "和亲",
+   "text": "呼韩邪请婿，王昭君自请出塞，嫁匈奴。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_zf_peace",
+   "subject": "event:zf_peace",
+   "year": -33,
+   "era": "同年",
+   "title": "边塞宁息",
+   "kind": "融合",
+   "text": "汉匈和亲，边烽少警，农牧互市渐通。",
+   "place": "hohhot"
+  }
+ ]
+}

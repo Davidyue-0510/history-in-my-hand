@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_sy_tang",
+   "name": "唐军守城",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "yongqiu",
+     "at": "757-01",
+     "label": "张巡起兵"
+    },
+    {
+     "place": "suiyang",
+     "at": "757-03",
+     "label": "入睢阳守"
+    }
+   ],
+   "outcome": {
+    "at": "757-10",
+    "type": "defeat",
+    "text": "城陷，然屏障江淮"
+   }
+  },
+  {
+   "id": "rt_sy_pan",
+   "name": "叛军南下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "tang_du",
+     "at": "757-01",
+     "label": "叛军西进"
+    },
+    {
+     "place": "suiyang",
+     "at": "757-02",
+     "label": "围城"
+    }
+   ],
+   "outcome": {
+    "at": "757-09",
+    "type": "victory",
+    "text": "叛军围睢阳，城终陷"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "757-01",
+   "era": "至德二载",
+   "label": "张巡起兵",
+   "key": false
+  },
+  {
+   "at": "757-03",
+   "era": "三月",
+   "label": "入睢阳",
+   "key": false
+  },
+  {
+   "at": "757-10",
+   "era": "十月",
+   "label": "城陷殉国",
+   "key": true
+  }
+ ]
+}

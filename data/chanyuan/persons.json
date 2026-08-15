@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "songzhen",
+   "name": "宋真宗",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "liaosheng",
+   "name": "辽圣宗",
+   "side": "辽",
+   "influence": 0
+  }
+ ]
+}

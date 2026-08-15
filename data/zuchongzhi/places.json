@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "jiankang",
+   "name": "建康",
+   "lon": 118.8,
+   "lat": 32.06,
+   "note": "南朝都，今南京"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

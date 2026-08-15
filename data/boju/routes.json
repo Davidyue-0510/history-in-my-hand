@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_bj_wu",
+   "name": "吴军西进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "gusu",
+     "at": "B506-09",
+     "label": "吴起兵"
+    },
+    {
+     "place": "hanshui",
+     "at": "B506-11",
+     "label": "抢渡汉水"
+    },
+    {
+     "place": "boju",
+     "at": "B506-11",
+     "label": "柏举决战"
+    },
+    {
+     "place": "ying",
+     "at": "B506-11",
+     "label": "入郢"
+    }
+   ],
+   "outcome": {
+    "at": "B506-11",
+    "type": "victory",
+    "text": "吴五战入郢"
+   }
+  },
+  {
+   "id": "rt_bj_chu",
+   "name": "楚军布防",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "ying",
+     "at": "B506-09",
+     "label": "楚调兵"
+    },
+    {
+     "place": "hanshui",
+     "at": "B506-11",
+     "label": "沿汉防御"
+    }
+   ],
+   "outcome": {
+    "at": "B506-10",
+    "type": "defeat",
+    "text": "楚军沿汉被动防御败北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B506-09",
+   "era": "周敬王十四年",
+   "label": "吴联蔡唐伐楚",
+   "key": false
+  },
+  {
+   "at": "B506-11",
+   "era": "十一月",
+   "label": "柏举决战",
+   "key": true
+  },
+  {
+   "at": "B506-11",
+   "era": "十一月",
+   "label": "吴入郢",
+   "key": true
+  }
+ ]
+}

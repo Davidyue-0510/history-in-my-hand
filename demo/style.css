@@ -166,6 +166,9 @@ body{
   border-radius:2px; margin-right:5px;
   background:var(--sc); color:#fff; opacity:.9;
 }
+.ctrl-row{ display:flex; align-items:center; gap:8px; }
+.ctrl-label{ font-size:12px; color:#888; min-width:40px; }
+#chgisDs{ font-size:12px; padding:2px 4px; border:1px solid #ccc; border-radius:3px; }
 
 /* ══════ 预设 ══════ */
 .preset-list{ display:flex; flex-wrap:wrap; gap:4px; margin-top:9px; }
@@ -270,6 +273,7 @@ body{
 .map-wrap.grabbing{ cursor:grabbing; }
 #terrainCv{ position:absolute; inset:0; width:100%; height:100%; display:block; }
 #controlCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; }
+#chgisCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; }
 #map{ position:absolute; inset:0; width:100%; height:100%; display:block; }
 
 .map-tools{
@@ -330,6 +334,62 @@ body{
 .cp-tally{ flex-basis:100%; margin-top:2px; font-size:9.5px; color:var(--ink-3); }
 .cp-note{ margin-top:8px; font-size:9.5px; color:var(--ink-3); line-height:1.45; }
 .lg-line.lg-dash{ border-top-style:dashed; }
+
+/* CHGIS 历史政区图层图例（底部右，避让地形图例/高程图例） */
+.chgis-legend{
+  position:absolute; right:12px; bottom:54px; z-index:7;
+  background:rgba(251,249,243,.94); border:1px solid var(--rule);
+  border-radius:3px; padding:6px 9px; backdrop-filter:blur(3px);
+  max-width:170px; pointer-events:none;
+}
+.chgis-legend .lg-title{ font-family:var(--mono); font-size:9.5px; letter-spacing:.05em;
+  color:#8C6239; margin-bottom:4px; text-transform:uppercase; }
+.chgis-legend .lg-row{ display:flex; align-items:center; gap:6px;
+  font-family:var(--serif); font-size:11px; color:var(--ink-2); line-height:1.7; }
+.chgis-legend .lg-sw{ width:13px; height:11px; border-radius:2px; flex:none;
+  border:1px solid rgba(0,0,0,.15); }
+
+/* 点击政区弹出的属性卡片 */
+.chgis-tip{
+  position:absolute; z-index:12; pointer-events:auto; cursor:default;
+  background:rgba(251,249,243,.98); border:1px solid var(--rule-2); border-radius:5px;
+  box-shadow:0 3px 14px rgba(40,30,20,.18); padding:8px 10px; max-width:240px;
+  font-family:var(--serif); color:var(--ink); font-size:11.5px; line-height:1.55;
+}
+.chgis-tip .tip-h{ font-size:13px; margin-bottom:3px; display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; }
+.chgis-tip .tip-h b{ font-weight:600; }
+.chgis-tip .tip-t{ font-size:10px; color:#8C6239; background:#F2E5C7; border-radius:2px; padding:0 5px; }
+.chgis-tip .tip-r{ color:var(--ink-2); font-size:11px; }
+.chgis-tip .tip-r b{ color:var(--ink); }
+
+/* 战例叠加图层：canvas + 图例 + 属性卡（复用 chgis 视觉，红系区分） */
+#battleCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:5; }
+.battle-legend{
+  position:absolute; right:12px; bottom:96px; z-index:7;
+  background:rgba(251,249,243,.94); border:1px solid var(--rule);
+  border-radius:3px; padding:6px 9px; backdrop-filter:blur(3px);
+  max-width:185px; pointer-events:none;
+}
+.battle-legend .lg-title{ font-family:var(--mono); font-size:9.5px; letter-spacing:.05em;
+  color:#9b3a2f; margin-bottom:4px; text-transform:uppercase; }
+.battle-legend .lg-row{ display:flex; align-items:center; gap:6px;
+  font-family:var(--serif); font-size:11px; color:var(--ink-2); line-height:1.7; }
+.battle-legend .lg-sw{ width:13px; height:11px; border-radius:2px; flex:none; border:1px solid rgba(0,0,0,.15); }
+.battle-legend .lg-sw.lg-dash{ height:0; border:0; border-top:2.5px dashed; border-radius:0; }
+.battle-legend .lg-note{ font-size:9px; color:var(--ink-3); margin-top:3px; line-height:1.4; }
+
+.battle-tip{
+  position:absolute; z-index:12; pointer-events:auto; cursor:default;
+  background:rgba(251,249,243,.98); border:1px solid var(--rule-2); border-radius:5px;
+  box-shadow:0 3px 14px rgba(40,30,20,.18); padding:8px 10px; max-width:255px;
+  font-family:var(--serif); color:var(--ink); font-size:11.5px; line-height:1.55;
+}
+.battle-tip .tip-h{ font-size:13px; margin-bottom:3px; display:flex; align-items:baseline; gap:6px; flex-wrap:wrap; }
+.battle-tip .tip-h b{ font-weight:600; }
+.battle-tip .tip-t{ font-size:10px; color:#9b3a2f; background:#f6dcd6; border-radius:2px; padding:0 5px; }
+.battle-tip .tip-r{ color:var(--ink-2); font-size:11px; }
+.battle-tip .tip-r b{ color:var(--ink); }
+.battle-tip .tip-out{ color:var(--ink-3); font-size:10.5px; margin-top:2px; border-top:1px dashed var(--rule); padding-top:3px; }
 
 .elev-legend{
   position:absolute; right:12px; bottom:12px;
@@ -403,6 +463,20 @@ body{
 .tl-foot #ctrlLegend i{
   display:inline-block; width:10px; height:10px; border-radius:2px;
   margin-right:2px; vertical-align:-1px;
+}
+
+/* ══════ 行军路线时间轴（与「疆域时间轴」视觉区分，独立回放） ══════ */
+.rt-timeline{ border-top:2px solid #B5732E; background:#FBF3E7; }
+.rt-timeline .tl-era{ color:#8A4E15; }
+.rt-timeline .tl-track::before{ background:#E4CBA0; }
+.rt-timeline .tl-node.key .tl-dot{ border-color:#B5732E; }
+.rt-timeline .tl-node.now .tl-dot{
+  background:#B5732E; border-color:#B5732E;
+  box-shadow:0 0 0 3px rgba(181,115,46,.18);
+}
+.rt-year-badge{
+  font-family:var(--serif); font-size:11px; font-weight:600;
+  color:#fff; background:#B5732E; padding:1px 8px; border-radius:9px;
 }
 
 /* ══════ 右栏页签 ══════ */

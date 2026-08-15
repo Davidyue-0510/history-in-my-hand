@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "tuobagui",
+   "name": "拓跋珪",
+   "side": "北魏",
+   "influence": 0
+  },
+  {
+   "id": "murongbao",
+   "name": "慕容宝",
+   "side": "后燕",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_sm",
+   "name": "隋师南下",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "kaofeng",
+     "at": "587",
+     "label": "造舟蓄势"
+    },
+    {
+     "place": "nanjing",
+     "at": "589",
+     "label": "渡江克建康"
+    }
+   ],
+   "outcome": {
+    "at": "589",
+    "type": "victory",
+    "text": "一统南北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "587",
+   "era": "开皇七",
+   "label": "作伐陈势",
+   "key": true
+  },
+  {
+   "at": "589",
+   "era": "开皇九",
+   "label": "灭陈·一统",
+   "key": true
+  }
+ ]
+}

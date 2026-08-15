@@ -43,6 +43,49 @@
     </div>
 
     <div class="block" data-fold="open">
+      <div class="block-title foldable">历史政区界线</div>
+      <div class="block-body">
+        <label class="lay-list"><input type="checkbox" id="chgisToggle" checked> 叠加 CHGIS 真实政区</label>
+        <div class="ctrl-row" style="margin-top:6px">
+          <span class="ctrl-label">数据集</span>
+          <select id="chgisDs">
+            <option value="all">全部</option>
+            <option value="1820">1820（清嘉庆）</option>
+            <option value="1911">1911（清末）</option>
+            <option value="T-S">T-S（唐宋及历代）</option>
+          </select>
+        </div>
+        <div class="ctrl-row" id="chgisPeriodRow" style="margin-top:6px; display:none">
+          <span class="ctrl-label">期段</span>
+          <select id="chgisPeriod">
+            <option value="all">全部</option>
+            <option value="han">汉（前206–220）</option>
+            <option value="tang">唐（618–907）</option>
+            <option value="song">宋（960–1279）</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+        <label class="lay-list" style="margin-top:6px">
+          <input type="checkbox" id="chgisYearSync"> 按时间轴年份过滤（只显该年存在的政区）
+        </label>
+        <div id="chgisStatus" class="src-meta" style="margin-top:6px">加载中…</div>
+        <div class="hint">CHGIS 复旦镜像真实边界，按朝代着色；仅绘制视口内要素。T-S 在辽东视口 0 面（唐宋辽东不在核心政区）。</div>
+      </div>
+    </div>
+
+    <div class="block" data-fold="open">
+      <div class="block-title foldable" id="battleTitle">战例叠加图层</div>
+      <div class="block-body">
+        <label class="lay-list"><input type="checkbox" id="battleToggle" checked> 叠加历史战例</label>
+        <label class="lay-list" style="margin-top:5px">
+          <input type="checkbox" id="battleRoutes" checked> 显示行军路线
+        </label>
+        <div id="battleStatus" class="src-meta" style="margin-top:6px">加载中…</div>
+        <div class="hint">点击地图查战例；底部「行军路线时间轴」可<strong>按日期</strong>独立回放行军。行军路线图标上的年份<strong>固定为战争发生年</strong>（不随疆域时间轴变化）。图例由本切片数据自动生成。</div>
+      </div>
+    </div>
+
+    <div class="block" data-fold="open">
       <div class="block-title foldable">建置沿革（点选跳至右栏）</div>
       <div class="block-body">
         <div id="eventList" class="rt-list"></div>
@@ -72,7 +115,9 @@
     <div id="mapWrap" class="map-wrap">
       <canvas id="terrainCv"></canvas>
       <canvas id="controlCv"></canvas>
+      <canvas id="chgisCv"></canvas>
       <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+      <canvas id="battleCv"></canvas>
       <div class="map-tools">
         <button data-zoom="in">＋</button>
         <button data-zoom="out">－</button>
@@ -81,6 +126,10 @@
       <div id="zoomBadge">1.0×</div>
       <div id="elevLegend" class="elev-legend"></div>
       <div id="mapLegend" class="map-legend"></div>
+      <div id="chgisLegend" class="map-legend chgis-legend" style="display:none"></div>
+      <div id="battleLegend" class="map-legend battle-legend" style="display:none"></div>
+      <div id="battleTip" class="battle-tip" style="display:none"></div>
+      <div id="chgisTip" class="chgis-tip" style="display:none"></div>
 
       <div class="control-panel" id="controlPanel" style="display:none">
         <div class="cp-row">
@@ -106,6 +155,21 @@
       <div class="tl-foot">
         <label class="tl-ctrl"><input type="checkbox" id="ctrlOn"> 疆域</label>
         <span id="ctrlLegend" style="display:inline-flex;gap:8px;font-size:11px"></span>
+      </div>
+    </div>
+
+    <!-- ════ 行军路线时间轴（与「疆域时间轴」完全独立，按日期回放，不随疆域滑块变化）════ -->
+    <div id="routeTimeline" class="timeline rt-timeline" style="display:none">
+      <div class="tl-header">
+        <span class="tl-era" id="rtEra">行军路线时间轴</span>
+        <span id="rtDateLabel">—</span>
+        <span class="tl-year" id="rtDate">—</span>
+      </div>
+      <div id="rtTrack" class="tl-track"></div>
+      <div class="tl-foot">
+        <span id="rtYearBadge" class="rt-year-badge" style="display:none"></span>
+        <button id="rtFull" class="cp-play" title="显示完整路线">⤢</button>
+        <button id="rtPlay" class="cp-play" title="播放行军">▶</button>
       </div>
     </div>
   </main>
@@ -160,6 +224,8 @@
 
 <script src="data.js"></script>
 <script src="control_layer.js"></script>
+<script src="chgis_layer.js"></script>
+<script src="battle_layer.js"></script>
 <script src="county.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+{
+ "events": [
+  {
+   "id": "ev_yk_qing",
+   "subject": "event:yk_qing",
+   "year": 1685,
+   "era": "康熙二十四年",
+   "title": "清军围雅克萨",
+   "kind": "战事",
+   "text": "彭春率清军围雅克萨。"
+  },
+  {
+   "id": "ev_yk_e",
+   "subject": "event:yk_e",
+   "year": 1686,
+   "era": "康熙二十五年",
+   "title": "再围雅克萨",
+   "kind": "战事",
+   "text": "萨布素再围，俄乞盟。",
+   "place": "yaksa"
+  },
+  {
+   "id": "ev_yk_meng",
+   "subject": "event:yk_meng",
+   "year": 1689,
+   "era": "康熙二十八年",
+   "title": "尼布楚条约",
+   "kind": "战事",
+   "text": "中俄订尼布楚条约。"
+  }
+ ]
+}

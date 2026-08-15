@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "baiqi",
+   "name": "白起",
+   "side": "秦",
+   "influence": 0
+  },
+  {
+   "id": "zhao_kuo",
+   "name": "赵括",
+   "side": "赵",
+   "influence": 0
+  },
+  {
+   "id": "lianpo",
+   "name": "廉颇",
+   "side": "赵",
+   "influence": 0
+  }
+ ]
+}

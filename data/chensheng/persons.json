@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "chensheng2",
+   "name": "陈胜",
+   "side": "张楚",
+   "influence": 0
+  },
+  {
+   "id": "wuguang",
+   "name": "吴广",
+   "side": "张楚",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_gl_qi",
+   "name": "齐军袭大梁",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "linzi",
+     "at": "B353-10",
+     "label": "齐起兵"
+    },
+    {
+     "place": "daliang",
+     "at": "B353-11",
+     "label": "袭大梁"
+    },
+    {
+     "place": "guiling",
+     "at": "B353-11",
+     "label": "桂陵设伏"
+    }
+   ],
+   "outcome": {
+    "at": "B353-11",
+    "type": "victory",
+    "text": "齐围魏救赵，桂陵破魏"
+   }
+  },
+  {
+   "id": "rt_gl_wei",
+   "name": "魏军回救",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "handan",
+     "at": "B353-10",
+     "label": "魏军围邯郸"
+    },
+    {
+     "place": "guiling",
+     "at": "B353-11",
+     "label": "回救中伏"
+    }
+   ],
+   "outcome": {
+    "at": "B353-10",
+    "type": "defeat",
+    "text": "魏军被迫弃邯郸回救"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B354-01",
+   "era": "周显王十五年",
+   "label": "魏围邯郸",
+   "key": false
+  },
+  {
+   "at": "B353-10",
+   "era": "十六年十月",
+   "label": "齐起兵袭大梁",
+   "key": true
+  },
+  {
+   "at": "B353-11",
+   "era": "十一月",
+   "label": "桂陵擒庞涓",
+   "key": true
+  }
+ ]
+}

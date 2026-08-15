@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "yingzheng",
+   "name": "嬴政",
+   "side": "秦",
+   "influence": 0
+  },
+  {
+   "id": "wangjian",
+   "name": "王翦",
+   "side": "秦",
+   "influence": 0
+  }
+ ]
+}

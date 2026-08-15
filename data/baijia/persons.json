@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "mengzi",
+   "name": "孟子",
+   "side": "儒",
+   "influence": 0
+  },
+  {
+   "id": "zhuangzi",
+   "name": "庄子",
+   "side": "道",
+   "influence": 0
+  }
+ ]
+}

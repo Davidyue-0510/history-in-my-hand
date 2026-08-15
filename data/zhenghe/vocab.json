@@ -1,0 +1,21 @@
+{
+ "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
+ "parties": [
+  "综合史料"
+ ],
+ "party_bucket": {
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "综合史料": "#7f8c8d"
+ },
+ "legend": {
+  "route": [
+   {
+    "key": "b",
+    "label": "郑和航线",
+    "color": "#2b6cb0"
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "lizicheng2",
+   "name": "李自成",
+   "side": "闯王",
+   "influence": 0
+  }
+ ]
+}

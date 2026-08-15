@@ -1,0 +1,56 @@
+{
+ "routes": [
+  {
+   "id": "rt_gw_line",
+   "name": "明长城主干（示意）",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "jiayuguan",
+     "at": "1474",
+     "label": "西端"
+    },
+    {
+     "place": "datong_w",
+     "at": "1474",
+     "label": "大同镇"
+    },
+    {
+     "place": "badaling",
+     "at": "1474",
+     "label": "北京段"
+    },
+    {
+     "place": "shanhai",
+     "at": "1474",
+     "label": "东端山海关"
+    }
+   ],
+   "outcome": {
+    "at": "1474",
+    "type": "none",
+    "text": "九边巨防"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B214",
+   "era": "秦始皇三十三",
+   "label": "连秦赵燕为万里",
+   "key": true
+  },
+  {
+   "at": "B121",
+   "era": "汉武帝元狩",
+   "label": "河西障塞·护丝路",
+   "key": false
+  },
+  {
+   "at": "1474",
+   "era": "明成化—万历",
+   "label": "九边砖石长城",
+   "key": true
+  }
+ ]
+}

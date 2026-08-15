@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_ml_qi",
+   "name": "齐军诱敌",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "linzi",
+     "at": "B340-01",
+     "label": "齐起兵救韩"
+    },
+    {
+     "place": "maling",
+     "at": "B340-03",
+     "label": "减灶设伏"
+    }
+   ],
+   "outcome": {
+    "at": "B340-03",
+    "type": "victory",
+    "text": "齐减灶诱敌，马陵破魏"
+   }
+  },
+  {
+   "id": "rt_ml_wei",
+   "name": "魏军轻进",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "xiang",
+     "at": "B340-01",
+     "label": "魏攻韩"
+    },
+    {
+     "place": "maling",
+     "at": "B340-03",
+     "label": "轻骑夜追"
+    }
+   ],
+   "outcome": {
+    "at": "B340-02",
+    "type": "defeat",
+    "text": "庞涓弃大军轻进中伏"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B341-01",
+   "era": "周显王二十八年",
+   "label": "魏攻韩",
+   "key": false
+  },
+  {
+   "at": "B340-01",
+   "era": "二十九年",
+   "label": "齐救韩",
+   "key": false
+  },
+  {
+   "at": "B340-03",
+   "era": "三月",
+   "label": "马陵伏击·庞涓死",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "persons": [
+  {
+   "id": "zhouyu",
+   "name": "周瑜",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "huanggai",
+   "name": "黄盖",
+   "side": "吴",
+   "influence": 0
+  },
+  {
+   "id": "caocao",
+   "name": "曹操",
+   "side": "曹",
+   "influence": 0
+  },
+  {
+   "id": "zhugeliang",
+   "name": "诸葛亮",
+   "side": "蜀",
+   "influence": 0
+  }
+ ]
+}

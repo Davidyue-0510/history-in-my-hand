@@ -1,0 +1,10 @@
+{
+ "persons": [
+  {
+   "id": "zhangheng2",
+   "name": "张衡",
+   "side": "东汉",
+   "influence": 0
+  }
+ ]
+}

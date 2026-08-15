@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "yuefei",
+   "name": "岳飞",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "wuzhu",
+   "name": "兀术",
+   "side": "金",
+   "influence": 0
+  },
+  {
+   "id": "zhangxian",
+   "name": "张宪",
+   "side": "宋",
+   "influence": 0
+  }
+ ]
+}

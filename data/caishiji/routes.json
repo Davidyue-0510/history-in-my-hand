@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_cs_song",
+   "name": "宋军守江",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "jiankang",
+     "at": "1161-10",
+     "label": "宋戒严"
+    },
+    {
+     "place": "caishiji",
+     "at": "1161-11",
+     "label": "虞允文督战"
+    }
+   ],
+   "outcome": {
+    "at": "1161-11",
+    "type": "victory",
+    "text": "采石破金舟"
+   }
+  },
+  {
+   "id": "rt_cs_jin",
+   "name": "金军渡江",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "guazhou",
+     "at": "1161-10",
+     "label": "金南下"
+    },
+    {
+     "place": "caishiji",
+     "at": "1161-11",
+     "label": "强渡"
+    }
+   ],
+   "outcome": {
+    "at": "1161-11",
+    "type": "defeat",
+    "text": "金渡江败于采石"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1161-10",
+   "era": "绍兴三十一年",
+   "label": "金南侵",
+   "key": false
+  },
+  {
+   "at": "1161-11",
+   "era": "十一月",
+   "label": "虞允文督师",
+   "key": false
+  },
+  {
+   "at": "1161-11",
+   "era": "十一月",
+   "label": "采石破金",
+   "key": true
+  }
+ ]
+}

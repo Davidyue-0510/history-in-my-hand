@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_cb_wu",
+   "name": "孙刘西进",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "chaisang",
+     "at": "208-11",
+     "label": "周瑜率兵"
+    },
+    {
+     "place": "xiaokou",
+     "at": "208-11",
+     "label": "会刘备"
+    },
+    {
+     "place": "chibi",
+     "at": "208-12",
+     "label": "赤壁列阵"
+    }
+   ],
+   "outcome": {
+    "at": "208-12",
+    "type": "victory",
+    "text": "赤壁火攻破曹"
+   }
+  },
+  {
+   "id": "rt_cb_cao",
+   "name": "曹军东下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "jiangling",
+     "at": "208-09",
+     "label": "操据荆州"
+    },
+    {
+     "place": "wulin",
+     "at": "208-11",
+     "label": "屯乌林"
+    },
+    {
+     "place": "chibi",
+     "at": "208-12",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "208-11",
+    "type": "defeat",
+    "text": "曹军下江陵遇火攻败北"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "208-09",
+   "era": "建安十三年",
+   "label": "曹操取荆州",
+   "key": false
+  },
+  {
+   "at": "208-11",
+   "era": "十一月",
+   "label": "孙刘结盟",
+   "key": false
+  },
+  {
+   "at": "208-12",
+   "era": "冬",
+   "label": "赤壁火攻·曹北还",
+   "key": true
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "jianzhen2",
+   "name": "鉴真",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "rongrui",
+   "name": "荣叡",
+   "side": "日僧",
+   "influence": 0
+  }
+ ]
+}

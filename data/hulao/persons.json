@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "limin",
+   "name": "李世民",
+   "side": "唐",
+   "influence": 0
+  },
+  {
+   "id": "wangshichong",
+   "name": "王世充",
+   "side": "郑",
+   "influence": 0
+  },
+  {
+   "id": "doujiande",
+   "name": "窦建德",
+   "side": "夏",
+   "influence": 0
+  }
+ ]
+}

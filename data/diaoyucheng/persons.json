@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "wangjian",
+   "name": "王坚",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "zhangjue",
+   "name": "张珏",
+   "side": "宋",
+   "influence": 0
+  },
+  {
+   "id": "mengge",
+   "name": "蒙哥",
+   "side": "蒙古",
+   "influence": 0
+  }
+ ]
+}

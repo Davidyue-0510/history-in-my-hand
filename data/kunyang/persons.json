@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "liuxiu",
+   "name": "刘秀",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "wangxun",
+   "name": "王寻",
+   "side": "新莽",
+   "influence": 0
+  },
+  {
+   "id": "wangyi",
+   "name": "王邑",
+   "side": "新莽",
+   "influence": 0
+  }
+ ]
+}

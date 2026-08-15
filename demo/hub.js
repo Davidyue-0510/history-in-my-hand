@@ -92,6 +92,30 @@
     return '县级 LOD · county slice';
   }
 
+  /* ═══════════ 分类与筛选 ═══════════
+   * 文明事件切片数量暴涨后，hub 需要按「分类」快速入口。
+   * 分类规则（与 scenes.json 的 kind 对齐）：
+   *   county  → 辽东走廊（县级 LOD 切片）
+   *   battle  → 历史战役
+   *   fiction → 虚构世界
+   *   civ     → 其余一切文明事件（disaster/engineering/dynasty/reform/
+   *             uprising/fusion/court/thought/tech/frontier）
+   */
+  function sceneCat(m) {
+    if (m.kind === 'fiction') return 'fiction';
+    if (m.kind === 'battle') return 'battle';
+    if (m.kind === 'county') return 'county';
+    return 'civ';
+  }
+  var CURRENT_CAT = 'all';
+  function visibleOrder(filterCat) {
+    if (filterCat === 'all' || filterCat == null) return order;
+    return order.filter(function (sk) {
+      var sc = scenes[sk]; if (!sc) return false;
+      return sceneCat(sc.meta || sc.META || {}) === filterCat;
+    });
+  }
+
   // 按当前容器尺寸重绘；窗口缩放时由 resize 监听节流触发
   function draw() {
     var rect = cv.getBoundingClientRect();
@@ -141,7 +165,7 @@
       return false;
     }
     ctx.font = '10.5px monospace';
-    order.forEach(function (sk) {
+    visibleOrder(CURRENT_CAT).forEach(function (sk) {
       var sc = scenes[sk]; if (!sc) return;
       var m = (sc.meta || {});
       var place = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
@@ -172,12 +196,12 @@
                                        (TG.max == null ? '—' : TG.max) + ' m';
   }
 
-  draw();
+  draw(CURRENT_CAT);
   // 窗口缩放时按节流重绘地形（卡片是 HTML，CSS 自适应，无需重绘）
   var _rzTimer;
   window.addEventListener('resize', function () {
     clearTimeout(_rzTimer);
-    _rzTimer = setTimeout(draw, 150);
+    _rzTimer = setTimeout(function () { draw(CURRENT_CAT); }, 150);
   });
 
   /* ═══════════ 自动渲染卡片 ═══════════ */
@@ -206,61 +230,85 @@
     return s ? s.avg_resonance : null;
   }
 
-  var html = '';
-  var lastRegion = null;
-  order.forEach(function (sk) {
-    var sc = scenes[sk];
-    if (!sc) return;
-    var m = sc.meta || {};
-    // 分区小标题：注册表里 region 一变，这里自动分组
-    if (m.region && m.region !== lastRegion) {
-      lastRegion = m.region;
-      html += '<div class="region-head"><b>' + (REGION_NAME[m.region] || m.region) + '</b>'
-        + '<span>' + (REGION_NOTE[m.region] || '') + '</span></div>';
+  /* 渲染指定分类的卡片网格。filterCat='all' 显示全部。
+   * 区域小标题（region-head）随筛选自动出现/消失：被过滤掉的 region 自然不打印其头。 */
+  function renderHub(filterCat) {
+    var html = '';
+    var lastRegion = null;
+    visibleOrder(filterCat).forEach(function (sk) {
+      var sc = scenes[sk];
+      if (!sc) return;
+      var m = sc.meta || {};
+      // 分区小标题：注册表里 region 一变，这里自动分组（仅在本分类内可见时打印）
+      if (m.region && m.region !== lastRegion) {
+        lastRegion = m.region;
+        html += '<div class="region-head"><b>' + (REGION_NAME[m.region] || m.region) + '</b>'
+          + '<span>' + (REGION_NOTE[m.region] || '') + '</span></div>';
+      }
+      var srcN = (sc['sources'] || []).length;
+      var placesN = (sc.places || []).length;
+      var personsN = (sc.persons || []).length;
+      var assertsN = (sc.assertions || []).length;
+      var conflictsN = (sc.conflicts || []).length;
+      var gapsN = count('gap', sk);
+      var recN = count('record', sk);
+      var schN = count('scholarship', sk);
+      var infN = count('inference', sk);
+      var best = bestEventName(sk);
+      var bR = bestEventR(sk);
+      var aR = avgR(sk);
+
+      var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
+      var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
+      // 虚构 world 无真实地形、也无共振度数据——用「虚构 · 文字生成」标代替「共振 —」，
+      // 并改提示为「关系图」，避免把关系图 world 误导向「地形」。
+      var isFic = m.kind === 'fiction';
+      var ficPill = '<span class="resonance-pill fiction">虚构 · 文字生成</span>';
+      var pill = isFic ? ficPill : badge(bR);
+      var hint = isFic
+        ? '点击进入 → 关系图 · 史料 · 冲突 · 缺口'
+        : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
+      var cat = sceneCat(m);
+
+      html += '<a class="card' + (isFic ? ' fic' : '') + '" data-cat="' + cat + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
+        + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
+        + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
+        + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
+        + '<div class="card-stats">'
+        +   '<div class="card-stat"><span>史料</span><b>' + srcN + '</b></div>'
+        +   '<div class="card-stat"><span>地名 / 人物</span><b>' + placesN + ' / ' + personsN + '</b></div>'
+        +   '<div class="card-stat"><span>断言</span><b>' + assertsN + '</b></div>'
+        +   '<div class="card-stat"><span>冲突</span><b>' + conflictsN + '</b></div>'
+        +   '<div class="card-stat"><span>缺口</span><b>' + gapsN + '</b></div>'
+        +   '<div class="card-stat"><span>record / scholar / infer</span><b>'
+              + recN + ' / ' + schN + ' / ' + infN + '</b></div>'
+        + '</div>'
+        + '<div class="card-extras">'
+        +   pill + ' &nbsp;'
+        +   bestLine
+        +   avgLine
+        +   '<small style="color:#918777">' + hint + '</small>'
+        + '</div></a>';
+    });
+    if (!html) {
+      html = '<div style="grid-column:1/-1;padding:24px;color:#7A6E5C;font-family:var(--serif)">'
+        + '该分类下暂无切片。</div>';
     }
-    var srcN = (sc['sources'] || []).length;
-    var placesN = (sc.places || []).length;
-    var personsN = (sc.persons || []).length;
-    var assertsN = (sc.assertions || []).length;
-    var conflictsN = (sc.conflicts || []).length;
-    var gapsN = count('gap', sk);
-    var recN = count('record', sk);
-    var schN = count('scholarship', sk);
-    var infN = count('inference', sk);
-    var best = bestEventName(sk);
-    var bR = bestEventR(sk);
-    var aR = avgR(sk);
+    grid.innerHTML = html;
+  }
 
-    var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
-    var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
-    // 虚构 world 无真实地形、也无共振度数据——用「虚构 · 文字生成」标代替「共振 —」，
-    // 并改提示为「关系图」，避免把关系图 world 误导向「地形」。
-    var isFic = m.kind === 'fiction';
-    var ficPill = '<span class="resonance-pill fiction">虚构 · 文字生成</span>';
-    var pill = isFic ? ficPill : badge(bR);
-    var hint = isFic
-      ? '点击进入 → 关系图 · 史料 · 冲突 · 缺口'
-      : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
-
-    html += '<a class="card' + (isFic ? ' fic' : '') + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
-      + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
-      + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
-      + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
-      + '<div class="card-stats">'
-      +   '<div class="card-stat"><span>史料</span><b>' + srcN + '</b></div>'
-      +   '<div class="card-stat"><span>地名 / 人物</span><b>' + placesN + ' / ' + personsN + '</b></div>'
-      +   '<div class="card-stat"><span>断言</span><b>' + assertsN + '</b></div>'
-      +   '<div class="card-stat"><span>冲突</span><b>' + conflictsN + '</b></div>'
-      +   '<div class="card-stat"><span>缺口</span><b>' + gapsN + '</b></div>'
-      +   '<div class="card-stat"><span>record / scholar / infer</span><b>'
-            + recN + ' / ' + schN + ' / ' + infN + '</b></div>'
-      + '</div>'
-      + '<div class="card-extras">'
-      +   pill + ' &nbsp;'
-      +   bestLine
-      +   avgLine
-      +   '<small style="color:#918777">' + hint + '</small>'
-      + '</div></a>';
-  });
-  grid.innerHTML = html;
+  // 初始渲染 + 暴露筛选接口给 index.html 的按钮
+  renderHub(CURRENT_CAT);
+  window.HUB = {
+    setFilter: function (cat) {
+      CURRENT_CAT = cat;
+      renderHub(cat);
+      draw(cat);
+      try {
+        document.querySelectorAll('.hub-filter button').forEach(function (b) {
+          b.classList.toggle('on', b.getAttribute('data-cat') === cat);
+        });
+      } catch (e) {}
+    }
+  };
 })();

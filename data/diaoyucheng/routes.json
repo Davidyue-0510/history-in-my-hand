@@ -1,0 +1,68 @@
+{
+ "routes": [
+  {
+   "id": "rt_dy_song",
+   "name": "宋军守城",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "hezhou",
+     "at": "1258-01",
+     "label": "王坚守合州"
+    },
+    {
+     "place": "diaoyucheng",
+     "at": "1259-01",
+     "label": "据城死守"
+    }
+   ],
+   "outcome": {
+    "at": "1259-07",
+    "type": "victory",
+    "text": "蒙哥死城下，蒙古退"
+   }
+  },
+  {
+   "id": "rt_dy_meng",
+   "name": "蒙古南下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "dadu",
+     "at": "1258-01",
+     "label": "蒙哥起"
+    },
+    {
+     "place": "diaoyucheng",
+     "at": "1259-02",
+     "label": "围城"
+    }
+   ],
+   "outcome": {
+    "at": "1259-06",
+    "type": "defeat",
+    "text": "蒙古围钓鱼城，汗死退师"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1258-01",
+   "era": "宝祐六年",
+   "label": "蒙哥攻蜀",
+   "key": false
+  },
+  {
+   "at": "1259-02",
+   "era": "开庆元年",
+   "label": "围钓鱼城",
+   "key": false
+  },
+  {
+   "at": "1259-07",
+   "era": "七月",
+   "label": "蒙哥死城下",
+   "key": true
+  }
+ ]
+}

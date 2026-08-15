@@ -1,0 +1,44 @@
+{
+ "events": [
+  {
+   "id": "ev_lc_1628",
+   "subject": "event:lc_1628",
+   "year": 1628,
+   "era": "崇祯元年",
+   "title": "闯王起事",
+   "kind": "战事",
+   "text": "陕北饥民从李自成（继高迎祥）起事，号「闯王」，流动作战于秦晋豫。",
+   "place": "yanan"
+  },
+  {
+   "id": "ev_lc_1641",
+   "subject": "event:lc_1641",
+   "year": 1641,
+   "era": "十四年",
+   "title": "破洛阳",
+   "kind": "战事",
+   "text": "闯军破洛阳，杀福王，散财赈饥，「均田免赋」声威大振。",
+   "place": "luoyang_lc"
+  },
+  {
+   "id": "ev_lc_1644",
+   "subject": "event:lc_1644",
+   "year": 1644,
+   "era": "十七年三月",
+   "title": "破北京·明亡",
+   "kind": "战事",
+   "text": "闯军破京师，崇祯自缢煤山，明亡；旋山海关败于清吴联军。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_lc_1645",
+   "subject": "event:lc_1645",
+   "year": 1645,
+   "era": "永昌二年",
+   "title": "九宫山殁",
+   "kind": "结局",
+   "text": "闯军败退，李自成卒于湖北九宫山（死因史载不一）。",
+   "place": "jiugong"
+  }
+ ]
+}

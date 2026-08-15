@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wangzhaojun",
+   "name": "王昭君",
+   "side": "汉",
+   "influence": 0
+  },
+  {
+   "id": "huhanye",
+   "name": "呼韩邪单于",
+   "side": "匈奴",
+   "influence": 0
+  }
+ ]
+}

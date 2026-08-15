@@ -1,0 +1,64 @@
+{
+ "events": [
+  {
+   "id": "ev_hh_yu",
+   "subject": "event:hh_yu",
+   "year": -602,
+   "era": "周定王五年",
+   "title": "宿胥口决，大禹河改道",
+   "kind": "改道",
+   "text": "《汉书·沟洫志》载「河徙」宿胥口，禹河（走河北）改道，为文献首次明确的大改道。",
+   "place": "suxu"
+  },
+  {
+   "id": "ev_hh_wangjing",
+   "subject": "event:hh_wangjing",
+   "year": 11,
+   "era": "东汉永平十二年",
+   "title": "王景治河，河入渤海",
+   "kind": "改道",
+   "text": "王景修渠堤，黄河自此长期走今山东入渤海（「东汉故道」），安流约千年。",
+   "place": "dapi"
+  },
+  {
+   "id": "ev_hh_1128",
+   "subject": "event:hh_1128",
+   "year": 1128,
+   "era": "南宋建炎二年",
+   "title": "杜充决河阻金，河夺淮",
+   "kind": "决溢",
+   "text": "东京留守杜充决黄河自泗入淮以阻金兵，黄河开始南泛夺淮，为近七百年南流之始。",
+   "place": "huangkou_s"
+  },
+  {
+   "id": "ev_hh_1194",
+   "subject": "event:hh_1194",
+   "year": 1194,
+   "era": "南宋绍熙五年",
+   "title": "河全入淮",
+   "kind": "改道",
+   "text": "黄河主流彻底夺淮入海，淮南河患剧增，江淮之间水系大乱。",
+   "place": "huangkou_s"
+  },
+  {
+   "id": "ev_hh_1494",
+   "subject": "event:hh_1494",
+   "year": 1494,
+   "era": "明弘治七年",
+   "title": "刘大夏筑太行堤，断北流",
+   "kind": "改道",
+   "text": "筑断黄陵冈，黄河全由南流（泗、淮）入海，北流彻底断绝。",
+   "place": "tongwaxiang"
+  },
+  {
+   "id": "ev_hh_1855",
+   "subject": "event:hh_1855",
+   "year": 1855,
+   "era": "清咸丰五年",
+   "title": "铜瓦厢决口，河复北归",
+   "kind": "决溢",
+   "text": "铜瓦厢（兰考）决口，黄河夺大清河复入渤海，奠定今日下游河道（「明清故道」北归）。",
+   "place": "tongwaxiang"
+  }
+ ]
+}

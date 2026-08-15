@@ -1,0 +1,2 @@
+{"id": "AX_ev_ft_67", "subject": "event:ft_67", "predicate": "事件", "value_text": "汉使迎竺法兰、摄摩腾，以白马载经至洛阳。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": 67, "end": 67, "era_text": "永平十"}, "place": "luoyang"}
+{"id": "AX_ev_ft_temple", "subject": "event:ft_temple", "predicate": "事件", "value_text": "于洛阳建白马寺，译经其中，汉地伽蓝之始。", "source": "synthesis", "layer": "scholarship", "quote_status": "paraphrase_unverified", "confidence": 0.4, "time": {"start": 68, "end": 68, "era_text": "永平十一"}, "place": "luoyang"}

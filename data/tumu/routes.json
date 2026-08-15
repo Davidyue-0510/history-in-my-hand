@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_tm_ming",
+   "name": "明军北征",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "beijing",
+     "at": "1449-07",
+     "label": "英宗出"
+    },
+    {
+     "place": "datong",
+     "at": "1449-08",
+     "label": "至大同"
+    },
+    {
+     "place": "tumu",
+     "at": "1449-08",
+     "label": "土木堡溃"
+    }
+   ],
+   "outcome": {
+    "at": "1449-08",
+    "type": "defeat",
+    "text": "土木堡溃，帝被俘"
+   }
+  },
+  {
+   "id": "rt_tm_wa",
+   "name": "瓦剌南犯",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "datong",
+     "at": "1449-08",
+     "label": "瓦剌入"
+    },
+    {
+     "place": "tumu",
+     "at": "1449-08",
+     "label": "合围"
+    }
+   ],
+   "outcome": {
+    "at": "1449-08",
+    "type": "victory",
+    "text": "瓦剌俘明英宗"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1449-07",
+   "era": "正统十四年",
+   "label": "英宗亲征",
+   "key": false
+  },
+  {
+   "at": "1449-08",
+   "era": "八月",
+   "label": "瓦剌诱敌",
+   "key": false
+  },
+  {
+   "at": "1449-08",
+   "era": "八月",
+   "label": "土木堡溃",
+   "key": true
+  }
+ ]
+}

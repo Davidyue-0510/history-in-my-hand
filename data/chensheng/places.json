@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "dazexiang",
+   "name": "大泽乡",
+   "lon": 117.0,
+   "lat": 33.63,
+   "note": "陈胜吴广起义，今安徽宿州"
+  },
+  {
+   "id": "chenqiao",
+   "name": "陈桥驿",
+   "lon": 114.2,
+   "lat": 34.85,
+   "note": "陈桥兵变地，开封东北"
+  },
+  {
+   "id": "xianyang",
+   "name": "咸阳",
+   "lon": 108.7,
+   "lat": 34.33,
+   "note": "秦都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

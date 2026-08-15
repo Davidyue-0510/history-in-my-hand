@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "guoshoujing_b",
+   "name": "郭守敬",
+   "side": "元",
+   "influence": 0
+  },
+  {
+   "id": "lishizhen",
+   "name": "李时珍",
+   "side": "明",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "routes": [
+  {
+   "id": "rt_xh",
+   "name": "首义→各省",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "wuchang",
+     "at": "1911",
+     "label": "首义"
+    },
+    {
+     "place": "nanjing",
+     "at": "1911",
+     "label": "独立响应"
+    }
+   ],
+   "outcome": {
+    "at": "1911",
+    "type": "victory",
+    "text": "共和初立"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1911",
+   "era": "辛亥",
+   "label": "武昌首义",
+   "key": true
+  },
+  {
+   "at": "1912",
+   "era": "民国元",
+   "label": "清帝逊位",
+   "key": true
+  }
+ ]
+}

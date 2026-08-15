@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_ll_17",
+   "subject": "event:ll_17",
+   "year": 17,
+   "era": "天凤四",
+   "title": "绿林起事",
+   "kind": "战事",
+   "text": "荆州饥民聚绿林山，号绿林兵，攻城略地。",
+   "place": "lvlin"
+  },
+  {
+   "id": "ev_ll_23",
+   "subject": "event:ll_23",
+   "year": 23,
+   "era": "更始元",
+   "title": "破长安·莽死",
+   "kind": "战事",
+   "text": "绿林拥更始帝，破长安、杀王莽，新亡。",
+   "place": "changan"
+  }
+ ]
+}

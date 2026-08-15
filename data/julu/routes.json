@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_jl_xiang",
+   "name": "楚军北上",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "pengcheng",
+     "at": "B207-10",
+     "label": "项羽北上"
+    },
+    {
+     "place": "zhangshui",
+     "at": "B207-12",
+     "label": "渡漳"
+    },
+    {
+     "place": "julu",
+     "at": "B207-12",
+     "label": "破釜决战"
+    }
+   ],
+   "outcome": {
+    "at": "B207-12",
+    "type": "victory",
+    "text": "巨鹿破秦主力"
+   }
+  },
+  {
+   "id": "rt_jl_qin",
+   "name": "秦军围巨鹿",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "xianyang",
+     "at": "B207-09",
+     "label": "秦调兵"
+    },
+    {
+     "place": "julu",
+     "at": "B207-10",
+     "label": "围城"
+    }
+   ],
+   "outcome": {
+    "at": "B207-11",
+    "type": "defeat",
+    "text": "秦军围城反被破"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B207-09",
+   "era": "秦二世三年",
+   "label": "秦围巨鹿",
+   "key": false
+  },
+  {
+   "at": "B207-12",
+   "era": "十二月",
+   "label": "项羽渡漳",
+   "key": true
+  },
+  {
+   "at": "B207-12",
+   "era": "十二月",
+   "label": "巨鹿破秦",
+   "key": true
+  }
+ ]
+}

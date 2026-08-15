@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "guantianpei",
+   "name": "关天培",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "linzeixu",
+   "name": "林则徐",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "yilie",
+   "name": "义律",
+   "side": "英",
+   "influence": 0
+  }
+ ]
+}

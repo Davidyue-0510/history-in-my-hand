@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_sq_210",
+   "subject": "event:sq_210",
+   "year": -210,
+   "era": "始皇三七",
+   "title": "始皇崩沙丘",
+   "kind": "变局",
+   "text": "始皇巡游崩于沙丘平台，李斯赵高秘丧。",
+   "place": "xingtai"
+  },
+  {
+   "id": "ev_sq_false",
+   "subject": "event:sq_false",
+   "year": -210,
+   "era": "同年",
+   "title": "矫诏立胡亥",
+   "kind": "结局",
+   "text": "赵高说李斯矫诏，赐扶苏、蒙恬死，胡亥嗣位。",
+   "place": "xingtai"
+  }
+ ]
+}

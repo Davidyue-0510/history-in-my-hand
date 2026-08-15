@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_dw_1876",
+   "subject": "event:dw_1876",
+   "year": 1876,
+   "era": "光绪二",
+   "title": "北旱初起",
+   "kind": "旱灾",
+   "text": "华北持续少雨，禾稼歉收，灾象初显。",
+   "place": "taiyuan"
+  },
+  {
+   "id": "ev_dw_1877",
+   "subject": "event:dw_1877",
+   "year": 1877,
+   "era": "光绪三·丁丑",
+   "title": "丁戊大旱",
+   "kind": "旱灾",
+   "text": "旱情达顶点，晋豫「人食草根、继则人相食」，流民载道。",
+   "place": "taiyuan"
+  },
+  {
+   "id": "ev_dw_relief",
+   "subject": "event:dw_relief",
+   "year": 1878,
+   "era": "光绪四",
+   "title": "朝廷赈济",
+   "kind": "赈济",
+   "text": "拨帑截漕、办赈恤，江南义赈赴晋，灾势渐缓。",
+   "place": "beijing"
+  }
+ ]
+}

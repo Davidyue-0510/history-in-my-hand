@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "beijing",
+   "name": "北京",
+   "lon": 116.4,
+   "lat": 39.9,
+   "note": "明都，崇祯自缢处"
+  },
+  {
+   "id": "meishan",
+   "name": "煤山",
+   "lon": 116.39,
+   "lat": 39.93,
+   "note": "今景山，崇祯自缢"
+  },
+  {
+   "id": "shanhaiguan",
+   "name": "山海关",
+   "lon": 119.75,
+   "lat": 40.0,
+   "note": "吴三桂引清兵入关处"
+  },
+  {
+   "id": "xingshi",
+   "name": "西安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "李自成称大顺皇帝"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

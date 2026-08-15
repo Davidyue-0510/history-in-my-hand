@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "guangxu",
+   "name": "光绪帝",
+   "side": "清",
+   "influence": 0
+  },
+  {
+   "id": "kang_youwei",
+   "name": "康有为",
+   "side": "维新派",
+   "influence": 0
+  }
+ ]
+}

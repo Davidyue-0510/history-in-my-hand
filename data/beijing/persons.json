@@ -1,0 +1,22 @@
+{
+ "persons": [
+  {
+   "id": "yuqian",
+   "name": "于谦",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "yexian",
+   "name": "也先",
+   "side": "瓦剌",
+   "influence": 0
+  },
+  {
+   "id": "jingtai",
+   "name": "景泰帝",
+   "side": "明",
+   "influence": 0
+  }
+ ]
+}

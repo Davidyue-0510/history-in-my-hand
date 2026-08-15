@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhangjuzheng2",
+   "name": "张居正",
+   "side": "明首辅",
+   "influence": 0
+  },
+  {
+   "id": "wanli",
+   "name": "明神宗",
+   "side": "明",
+   "influence": 0
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "lisi2",
+   "name": "李斯",
+   "side": "秦",
+   "influence": 0
+  },
+  {
+   "id": "qinshihuang3",
+   "name": "秦始皇",
+   "side": "秦",
+   "influence": 0
+  }
+ ]
+}

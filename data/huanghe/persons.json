@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "wangjing",
+   "name": "王景",
+   "side": "东汉河堤谒者",
+   "influence": 0
+  },
+  {
+   "id": "duchong",
+   "name": "杜充",
+   "side": "南宋东京留守",
+   "influence": 0
+  }
+ ]
+}

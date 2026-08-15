@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_py_zhu",
+   "name": "朱军入湖",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "yingtian",
+     "at": "1363-07",
+     "label": "朱起兵"
+    },
+    {
+     "place": "poyanghu",
+     "at": "1363-08",
+     "label": "入鄱阳湖"
+    },
+    {
+     "place": "kanglang",
+     "at": "1363-08",
+     "label": "火战"
+    }
+   ],
+   "outcome": {
+    "at": "1363-08",
+    "type": "victory",
+    "text": "鄱阳湖火攻破陈"
+   }
+  },
+  {
+   "id": "rt_py_chen",
+   "name": "陈军围南昌",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "poyanghu",
+     "at": "1363-04",
+     "label": "陈起兵"
+    },
+    {
+     "place": "nanchang",
+     "at": "1363-06",
+     "label": "围南昌"
+    },
+    {
+     "place": "kanglang",
+     "at": "1363-08",
+     "label": "决战"
+    }
+   ],
+   "outcome": {
+    "at": "1363-07",
+    "type": "defeat",
+    "text": "陈围南昌遇火攻败死"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "1363-04",
+   "era": "龙凤九年",
+   "label": "陈友谅起兵",
+   "key": false
+  },
+  {
+   "at": "1363-08",
+   "era": "八月",
+   "label": "朱入湖",
+   "key": false
+  },
+  {
+   "at": "1363-08",
+   "era": "八月",
+   "label": "鄱阳湖火攻",
+   "key": true
+  }
+ ]
+}

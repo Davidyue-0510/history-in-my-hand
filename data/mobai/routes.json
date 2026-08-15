@@ -1,0 +1,73 @@
+{
+ "routes": [
+  {
+   "id": "rt_mb_hq",
+   "name": "霍去病出代",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "dai",
+     "at": "B119-04",
+     "label": "出代郡"
+    },
+    {
+     "place": "mobei",
+     "at": "B119-06",
+     "label": "绝漠"
+    },
+    {
+     "place": "langjuxu",
+     "at": "B119-06",
+     "label": "封狼居胥"
+    }
+   ],
+   "outcome": {
+    "at": "B119-06",
+    "type": "victory",
+    "text": "霍去病封狼居胥"
+   }
+  },
+  {
+   "id": "rt_mb_wq",
+   "name": "卫青出定襄",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "chang",
+     "at": "B119-04",
+     "label": "出定襄"
+    },
+    {
+     "place": "mobei",
+     "at": "B119-06",
+     "label": "击单于"
+    }
+   ],
+   "outcome": {
+    "at": "B119-06",
+    "type": "victory",
+    "text": "卫青漠北破单于"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "B119-04",
+   "era": "元狩四年",
+   "label": "汉两道出塞",
+   "key": false
+  },
+  {
+   "at": "B119-06",
+   "era": "夏",
+   "label": "漠北决战",
+   "key": true
+  },
+  {
+   "at": "B119-06",
+   "era": "夏",
+   "label": "封狼居胥",
+   "key": true
+  }
+ ]
+}

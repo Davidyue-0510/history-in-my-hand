@@ -1,0 +1,45 @@
+{
+ "routes": [
+  {
+   "id": "rt_hc",
+   "name": "黄巢转战",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "kaofeng",
+     "at": "875",
+     "label": "中原起"
+    },
+    {
+     "place": "guangzhou",
+     "at": "879",
+     "label": "克广州"
+    },
+    {
+     "place": "changan",
+     "at": "880",
+     "label": "入长安"
+    }
+   ],
+   "outcome": {
+    "at": "880",
+    "type": "victory",
+    "text": "破京称帝"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "875",
+   "era": "乾符二",
+   "label": "起兵",
+   "key": true
+  },
+  {
+   "at": "880",
+   "era": "广明元",
+   "label": "入长安",
+   "key": true
+  }
+ ]
+}

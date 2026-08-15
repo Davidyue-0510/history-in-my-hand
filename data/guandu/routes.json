@@ -1,0 +1,78 @@
+{
+ "routes": [
+  {
+   "id": "rt_gd_cao",
+   "name": "曹袭乌巢",
+   "side": "a",
+   "nodes": [
+    {
+     "place": "xuchang",
+     "at": "200-09",
+     "label": "曹屯官渡"
+    },
+    {
+     "place": "guandu",
+     "at": "200-10",
+     "label": "正面相持"
+    },
+    {
+     "place": "wuchao",
+     "at": "200-10",
+     "label": "奇袭乌巢"
+    }
+   ],
+   "outcome": {
+    "at": "200-10",
+    "type": "victory",
+    "text": "焚袁粮，官渡破绍"
+   }
+  },
+  {
+   "id": "rt_gd_yuan",
+   "name": "袁军南下",
+   "side": "b",
+   "nodes": [
+    {
+     "place": "ye",
+     "at": "200-01",
+     "label": "袁起兵"
+    },
+    {
+     "place": "liyang",
+     "at": "200-02",
+     "label": "渡河"
+    },
+    {
+     "place": "guandu",
+     "at": "200-09",
+     "label": "屯官渡"
+    }
+   ],
+   "outcome": {
+    "at": "200-09",
+    "type": "defeat",
+    "text": "袁绍南攻受阻于官渡"
+   }
+  }
+ ],
+ "timeline": [
+  {
+   "at": "200-01",
+   "era": "建安五年",
+   "label": "袁绍南攻",
+   "key": false
+  },
+  {
+   "at": "200-09",
+   "era": "九月",
+   "label": "官渡相持",
+   "key": false
+  },
+  {
+   "at": "200-10",
+   "era": "十月",
+   "label": "乌巢焚粮·袁溃",
+   "key": true
+  }
+ ]
+}

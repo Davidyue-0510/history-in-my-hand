@@ -1,0 +1,27 @@
+{
+ "places": [
+  {
+   "id": "dujiangyan",
+   "name": "都江堰",
+   "lon": 103.62,
+   "lat": 31.0,
+   "note": "今四川都江堰市（原灌县）"
+  },
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "lon": 104.07,
+   "lat": 30.67,
+   "note": "受益的成都平原"
+  },
+  {
+   "id": "minjiang",
+   "name": "岷江",
+   "lon": 103.6,
+   "lat": 31.2,
+   "note": "被分流的大江"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

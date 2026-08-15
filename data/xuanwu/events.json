@@ -1,0 +1,24 @@
+{
+ "events": [
+  {
+   "id": "ev_xx_626",
+   "subject": "event:xx_626",
+   "year": 626,
+   "era": "武德九年六月四",
+   "title": "玄武门伏杀",
+   "kind": "政变",
+   "text": "世民伏兵玄武门，建成、元吉入朝遇杀，党羽溃；尉迟敬德甲士入宫「宿卫」高祖。",
+   "place": "xuanwumen"
+  },
+  {
+   "id": "ev_xx_after",
+   "subject": "event:xx_after",
+   "year": 626,
+   "era": "同年八月",
+   "title": "世民即位",
+   "kind": "结局",
+   "text": "高祖立世民为太子，旋禅位，是为太宗，开启贞观之治。",
+   "place": "changan_xx"
+  }
+ ]
+}

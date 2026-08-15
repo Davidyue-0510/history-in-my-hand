@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_wm_9",
+   "subject": "event:wm_9",
+   "year": 9,
+   "era": "始建国元",
+   "title": "代汉建新",
+   "kind": "变局",
+   "text": "王莽受禅称帝，国号新，托古改制。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_wm_reform",
+   "subject": "event:wm_reform",
+   "year": 9,
+   "era": "同年",
+   "title": "王田五均",
+   "kind": "变法",
+   "text": "行王田、五均六筦、改币，扰民甚烈。",
+   "place": "changan"
+  },
+  {
+   "id": "ev_wm_end",
+   "subject": "event:wm_end",
+   "year": 23,
+   "era": "地皇四",
+   "title": "新莽亡",
+   "kind": "结局",
+   "text": "绿林破长安，王莽死，新亡。",
+   "place": "changan"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "pingcheng",
+   "name": "平城",
+   "lon": 113.3,
+   "lat": 40.08,
+   "note": "北魏旧都（今大同）"
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "note": "迁都后汉化中心"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

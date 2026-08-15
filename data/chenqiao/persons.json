@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "zhao_kuangyin",
+   "name": "赵匡胤",
+   "side": "宋太祖",
+   "influence": 0
+  },
+  {
+   "id": "chai_rong",
+   "name": "周世宗",
+   "side": "后周",
+   "influence": 0
+  }
+ ]
+}

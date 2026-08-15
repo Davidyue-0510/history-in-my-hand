@@ -1,0 +1,63 @@
+{
+ "_comment": "接战（engagement）。winner 取 a/b/none，与 vocab.legend.battle.key 一致。",
+ "engagements": [
+  {
+   "id": "eng_dy_main",
+   "name": "钓鱼城死守",
+   "at": "1259-07",
+   "era": "开庆元年七月",
+   "place": "diaoyucheng",
+   "winner": "a",
+   "outcome": "钓鱼城凭山筑垒，蒙古久攻不下，蒙哥中砲死，旭烈兀西征军东归争位。",
+   "subject": "event:dy_jz",
+   "sides": [
+    {
+     "side": "a",
+     "commander": "王坚/张珏",
+     "committed_ratio": 1.0,
+     "fatigue": "exhausted",
+     "march_72h_li": 40,
+     "posture": "死守",
+     "commit_basis": "孤城天险，军民死守岁余。",
+     "commit_confidence": 0.5
+    },
+    {
+     "side": "b",
+     "commander": "蒙哥",
+     "committed_ratio": 1.0,
+     "fatigue": "marching",
+     "march_72h_li": 60,
+     "posture": "顿兵",
+     "commit_basis": "蒙古顿于坚城，暑疫主将死。",
+     "commit_confidence": 0.5
+    }
+   ]
+  }
+ ],
+ "attrition": {
+  "a": [
+   {
+    "after": "1259-07",
+    "lost": 0,
+    "basis": "胜方损失多无精确记载，待史料核实。"
+   }
+  ],
+  "b": [
+   {
+    "after": "1259-07",
+    "lost": 0,
+    "basis": "败方损失数字以现代考订折中，置信度待核。"
+   }
+  ],
+  "confidence": {
+   "a": 0.4,
+   "b": 0.4
+  },
+  "gap_note": "本切片为综合史料整理，胜败方损失数字多为估算，界面应视为待核实。"
+ },
+ "fatigue_weight": {
+  "fresh": 1.0,
+  "marching": 0.85,
+  "exhausted": 0.7
+ }
+}
