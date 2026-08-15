@@ -61,6 +61,7 @@
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | jiupin | 2 | 2 | **0.000** | event:jp_220（0.000） | scholarship 2 |
 | jiuzi | 2 | 2 | **0.000** | event:jz_1712（0.000） | scholarship 2 |
+| juehua | 14 | 3 | **0.000** | event:juehua_garrison（0.000） | gap 1 / record 12 / scholarship 1 |
 | julu | 3 | 3 | **0.000** | event:jl_jz（0.000） | scholarship 3 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | keju | 3 | 3 | **0.000** | event:kj_1905（0.000） | scholarship 3 |
@@ -75,6 +76,7 @@
 | lvlin | 2 | 2 | **0.000** | event:ll_17（0.000） | scholarship 2 |
 | maling | 3 | 3 | **0.000** | event:ml_jz（0.000） | scholarship 3 |
 | ming_fall | 3 | 3 | **0.000** | event:mf_1627（0.000） | scholarship 3 |
+| mingmo_dangzheng | 14 | 4 | **0.292** | event:dangzheng_liuruoyu（0.333） | gap 1 / record 12 / scholarship 1 |
 | mobai | 3 | 3 | **0.000** | event:mb_chu（0.000） | scholarship 3 |
 | ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
 | poyanghu | 3 | 3 | **0.000** | event:py_chen（0.000） | scholarship 3 |
@@ -135,7 +137,7 @@
 | 派系 | 断言数 | 涉及场景 | 代表来源 |
 |---|---|---|---|
 | 封疆大吏 / 辽东经略系 | 30 | 辽阳、萨尔浒、shenyang | sanchaoliao_shilu |
-| 内臣 / 宦官（独立于阉党） | 9 | guangning | zhuozhongzhi |
+| 内臣 / 宦官（独立于阉党） | 22 | guangning、mingmo_dangzheng | zhuozhongzhi |
 
 ## 事件共振表（按共振度升序：最不共振的最值得补）
 
@@ -269,6 +271,9 @@
 | event:jp_later | jiupin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:js_533 | jiasixie | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:js_544 | jiasixie | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:juehua_garrison | juehua | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 5 |
+| event:juehua_guangning_retreat | juehua | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 2 |
+| event:juehua_strategy | juehua | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
 | event:jz_1712 | jiuzi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jz_1722 | jiuzi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -415,6 +420,7 @@
 | event:zw_war | zhaowulian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zz_595 | zhaozhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zz_later | zhaozhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:dangzheng_minglu | mingmo_dangzheng | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 2 / 0 / 0 / 0 |
 | event:ice_walls | shenyang | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | event:jinzhouwei_mao | jinzhouwei | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 0 / 2 / 0 |
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |
@@ -423,6 +429,9 @@
 | event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
 | event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
+| event:dangzheng_liuruoyu | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
+| event:dangzheng_xiong_feng | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 1 / 0 / 0 / 1 |
+| event:dangzheng_yanglian | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:fushun_founded | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:fushun_mashi | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
 | event:fuzhou_fall | fuzhou | **0.333** | 2/3 | 0.00 | 0.50 | 4 | 0 / 2 / 2 / 0 |

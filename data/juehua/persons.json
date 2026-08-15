@@ -1,0 +1,10 @@
+{
+  "persons": [
+    {"id": "zu_dashou", "name": "祖大寿", "side": "ming", "role": "总兵", "note": "辽西明军主将，广宁败后走觉华岛；孙承宗令其守觉华岛。"},
+    {"id": "sun_chengzong", "name": "孙承宗", "side": "ming", "role": "督师", "note": "天启二年后督师山海关，定辽西防御，主张宁远与觉华岛犄角。"},
+    {"id": "zhao_shuaijiao", "name": "赵率教", "side": "ming", "role": "副将", "note": "孙承宗令其守前屯，与祖大寿守觉华岛相呼应。"},
+    {"id": "wang_zaijin", "name": "王在晋", "side": "ming", "role": "经略", "note": "广宁败后主张八里铺筑重关，为孙承宗所代。"},
+    {"id": "yuan_chonghuan", "side": "ming", "role": "宁前兵备佥事", "note": "请守宁远，与觉华岛犄角之策相成。"},
+    {"id": "ma_shilong", "name": "马世龙", "side": "ming", "role": "总兵", "note": "孙承宗所任总兵官，统辽西诸将。"}
+  ]
+}

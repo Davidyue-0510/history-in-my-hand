@@ -1,8 +1,8 @@
 {
-  "scenes_total": 124,
-  "historical": 51,
-  "fictional": 73,
-  "assertions_total": 915,
+  "scenes_total": 126,
+  "historical": 52,
+  "fictional": 74,
+  "assertions_total": 943,
   "sources_total": 47,
   "factions_total": 9,
   "vocab_packs": [
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 57,
+  "leads_total": 59,
   "per_scene": [
     {
       "id": "sarhu",
@@ -132,6 +132,13 @@
       "title": "大凌河之战",
       "kind": "county",
       "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "juehua",
+      "title": "觉华岛·辽西海防枢纽",
+      "kind": "county",
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -889,6 +896,15 @@
       "kind": "frontier",
       "assertions": 2,
       "factions": {}
+    },
+    {
+      "id": "mingmo_dangzheng",
+      "title": "明末党争·辽东导火索",
+      "kind": "court",
+      "assertions": 14,
+      "factions": {
+        "nei_guan": 13
+      }
     }
   ],
   "scene_titles": {
@@ -908,6 +924,7 @@
     "ningyuan": "宁远",
     "songjin": "松锦之战",
     "dalinghe": "大凌河之战",
+    "juehua": "觉华岛·辽西海防枢纽",
     "novel_fandao": "反派他爸教做人·九零家暴男儿子",
     "novel_fandao_2": "反派他爸教做人·深情渣帝王儿子",
     "novel_fandao_3": "反派他爸教做人·拜金绝色女儿",
@@ -1015,6 +1032,7 @@
     "zhangqian": "张骞通西域",
     "zhenghe": "郑和下西洋",
     "xuanzang": "玄奘西行",
-    "jianzhen": "鉴真东渡"
+    "jianzhen": "鉴真东渡",
+    "mingmo_dangzheng": "明末党争·辽东导火索"
   }
 }

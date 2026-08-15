@@ -86,6 +86,11 @@ check("R26 萬曆四十七年(繁体)->1619", R.normalize_year("萬曆四十七�
 check("R27 崇禎十七年(繁体)->1644", R.normalize_year("崇禎十七年"), 1644)
 check("R28 順治元年(繁体)->1644", R.normalize_year("順治元年"), 1644)
 check("R29 天啟元年三月(繁体)->1621", R.normalize_year("天啟元年三月"), 1621)
+# R30-R32 年号级模糊表述「年号+间/年间」：史料未精确到第几年时的兜底，
+# 取该年号起始公元年作为默认落点（v0.x 新增，配合 LLM 抽取 era-level 年份）
+check("R30 天启年间->1621(年号起始)", R.normalize_year("天启年间"), 1621)
+check("R31 万历年间->1573(年号起始)", R.normalize_year("万历年间"), 1573)
+check("R32 天啟年間(繁体)->1621", R.normalize_year("天啟年間"), 1621)
 
 print("\nreign_era: %d ok, %d fail" % (OK, FAIL))
 sys.exit(1 if FAIL else 0)

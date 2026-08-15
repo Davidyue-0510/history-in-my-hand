@@ -184,6 +184,7 @@
     "ningyuan",
     "songjin",
     "dalinghe",
+    "juehua",
     "novel_fandao",
     "novel_fandao_2",
     "novel_fandao_3",
@@ -291,7 +292,8 @@
     "zhangqian",
     "zhenghe",
     "xuanzang",
-    "jianzhen"
+    "jianzhen",
+    "mingmo_dangzheng"
   ],
   "scenes": {
     "sarhu": {
@@ -3046,6 +3048,70 @@
         "person:sun_chengzong": "孙承宗",
         "person:liang_tingdong": "梁廷栋",
         "person:fang_jina": "方吉纳"
+      }
+    },
+    "juehua": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "觉华岛·辽西海防枢纽",
+      "dossier_label": "觉华岛",
+      "subtitle": "天启二年至五年 (1622–1625) · 宁远犄角与广宁后据岛",
+      "primary_place": "juehua",
+      "dossier_event": "event:juehua_garrison",
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "觉华岛是辽西海上的要津。广宁失陷后祖大寿退走觉华岛；孙承宗督师经略辽西，定「筑宁远要害，与觉华岛相犄角」之策，令游击祖大寿等守觉华岛、副将赵率教守前屯，以为宁远海上声援与储粮之所。",
+      "parties_note": "觉华岛之设防，明、清、现代三方侧重不同：明方记孙承宗经略、辽西渐有起色；清方记其始终为据守之局；现代综述重觉华岛作为宁远—觉华犄角体系的海防意义。系统不裁决，只并列。",
+      "subject_names": {
+        "event:juehua_strategy": "孙承宗犄角战略",
+        "event:juehua_garrison": "祖大寿守觉华岛",
+        "event:juehua_guangning_retreat": "广宁败后走觉华岛",
+        "place:juehua": "觉华岛",
+        "place:ningyuan": "宁远",
+        "place:qiantun": "前屯",
+        "place:guangning": "广宁",
+        "place:shanhaiguan": "山海关",
+        "person:zu_dashou": "祖大寿",
+        "person:sun_chengzong": "孙承宗",
+        "person:zhao_shuaijiao": "赵率教",
+        "person:wang_zaijin": "王在晋",
+        "person:yuan_chonghuan": "袁崇焕",
+        "person:ma_shilong": "马世龙"
+      }
+    },
+    "mingmo_dangzheng": {
+      "kind": "court",
+      "region": "court",
+      "title": "明末党争·辽东导火索",
+      "dossier_label": "明末党争",
+      "subtitle": "天启四—五年 (1624–1625) · 阉党借辽东私怨杀熊廷弼",
+      "primary_place": "jingshi",
+      "dossier_event": "event:dangzheng_xiong_feng",
+      "back": "宫廷",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "明末辽事之败，不止在战场。经略熊廷弼下狱论死，阉党冯铨素恨小说《辽东传》写「冯布政父子奔逃」，借讲筵私怨，令私人蒋应暘袖奏发难，致熊被正法。东林杨涟劾魏忠贤二十四罪，反遭《点将录》等名录株连。辽东战事遂为京中党争所劫。",
+      "parties_note": "明末党争，明、清、现代三方侧重不同：明方（东林/内臣自述）记阉党构陷、私怨杀人；清方修史归罪阉党而自居后来定案；现代综述重制度性腐败与舆论失控。系统不裁决，只并列。",
+      "subject_names": {
+        "event:dangzheng_xiong_feng": "冯铨借《辽东传》害熊廷弼",
+        "event:dangzheng_yanglian": "杨涟弹魏二十四罪",
+        "event:dangzheng_minglu": "阉党造名录株连",
+        "event:dangzheng_liuruoyu": "刘若愚《酌中志》记阉党",
+        "place:jingshi": "京师·经筵",
+        "place:liaodong": "辽东",
+        "person:feng_quan": "冯铨",
+        "person:xiong_tingbi": "熊廷弼",
+        "person:wei_zhongxian": "魏忠贤",
+        "person:ke_shi": "客氏",
+        "person:yang_lian": "杨涟",
+        "person:liu_ruoyu": "刘若愚",
+        "person:jiang_yingyang": "蒋应暘",
+        "person:cui_chengxiu": "崔呈秀"
       }
     }
   }

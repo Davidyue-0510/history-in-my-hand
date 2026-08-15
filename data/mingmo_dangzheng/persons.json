@@ -1,0 +1,12 @@
+{
+  "persons": [
+    {"id": "feng_quan", "name": "冯铨", "side": "ming", "role": "侍讲·阉党", "note": "楚党/阉党，素恨小说《辽东传》写「冯布政父子奔逃」，借讲筵私怨害熊廷弼。"},
+    {"id": "xiong_tingbi", "name": "熊廷弼", "side": "ming", "role": "经略辽东", "note": "辽东经略，广宁败后下狱，为冯铨私怨所陷，被正法。"},
+    {"id": "wei_zhongxian", "name": "魏忠贤", "side": "ming", "role": "司礼监·阉党首脑", "note": "天启间擅政，客氏内援，罗织东林。"},
+    {"id": "ke_shi", "name": "客氏", "side": "ming", "role": "熹宗乳母", "note": "与魏忠贤相倚，宫禁内援。"},
+    {"id": "yang_lian", "name": "杨涟", "side": "ming", "role": "副都御史·东林", "note": "天启四年弹魏忠贤二十四罪，后罹党祸。"},
+    {"id": "liu_ruoyu", "name": "刘若愚", "side": "ming", "role": "内臣", "note": "《酌中志》作者，魏败后追记宫禁，半独立内臣视角。"},
+    {"id": "jiang_yingyang", "name": "蒋应暘", "side": "ming", "role": "妖弁·冯铨私人", "note": "冯铨使之于讲筵发难，袖奏陷熊廷弼。"},
+    {"id": "cui_chengxiu", "name": "崔呈秀", "side": "ming", "role": "阉党", "note": "递《点将录》等四折，按名株连东林。"}
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "sources": [
+    {
+      "id": "zhuozhongzhi",
+      "title": "酌中志",
+      "juan": "卷上·先监张公纪略 / 忧危竑议 / 缢略（魏忠贤专政、诛东林、熊廷弼之死）",
+      "compiler": "刘若愚（内臣）",
+      "compiled_year": 1640,
+      "stance": "third_party_internal",
+      "stance_label": "内臣自述·半独立",
+      "distance_label": "魏忠贤败后追记，距事约 15 年",
+      "party": "明·内臣文献",
+      "faction": "nei_guan",
+      "color": "#7A6A53",
+      "note": "宦官刘若愚所撰宫禁内臣自述，价值在内部视角；魏忠贤败后作此自辩，亦带立场。记魏忠贤专政、诛东林、宫内规制，及冯铨借《辽东传》私怨害熊廷弼之详。"
+    },
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "juan": "卷三百五·阉党传／卷二百五十九·熊廷弼传",
+      "compiler": "张廷玉等",
+      "compiled_year": 1739,
+      "stance": "official_later_dynasty",
+      "stance_label": "后朝官修",
+      "distance_label": "成书 1739，距事件约 110 年",
+      "party": "清修·明臣",
+      "color": "#8C6239",
+      "note": "清修官史，记熊廷弼之死、阉党构陷，偏清方视角。"
+    },
+    {
+      "id": "mingtongjian",
+      "title": "明通鉴",
+      "juan": "卷八十三—八十四（天启四—六年）",
+      "compiler": "夏燮（清）",
+      "compiled_year": 1873,
+      "stance": "private_synthesis",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书清同治十二年（1873），距事约 240 年",
+      "party": "二手综述",
+      "color": "#6C7A89",
+      "note": "夏燮私修明编年，记天启党争、杨涟劾魏、阉党名录诸事，综合实录与清方记载。"
+    },
+    {
+      "id": "modern",
+      "title": "现代明史学界综论",
+      "juan": "综合研究（明清党争、阉党研究）",
+      "compiler": "学界综论",
+      "compiled_year": 2000,
+      "stance": "modern_scholarship",
+      "stance_label": "现代学界",
+      "distance_label": "现代研究，距事约 390 年，基于多方史料互证",
+      "party": "学界",
+      "color": "#3C78D8",
+      "note": "现代明清史学界对明末党争、辽东战事被京中党争劫持的归因与评估。",
+      "faction": null,
+      "period": "现代",
+      "availability": "synthesis",
+      "url": "",
+      "cached_text": ""
+    }
+  ]
+}

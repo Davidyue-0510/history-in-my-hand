@@ -287,6 +287,22 @@
    "_src_line": 6
   },
   {
+   "id": "JH014",
+   "scene": "juehua",
+   "subject": "event:juehua_guangning_retreat",
+   "title": "广宁之败后祖大寿等明军残部退走觉华岛的具体兵力、补给与后继部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+   "missing": "古文 / 史料考异",
+   "where": "《明通鉴》卷八十二／《明史·孙承宗传》／现代辽西海防研究",
+   "skills": [
+    "古文",
+    "史料考异"
+   ],
+   "accept": "整理广宁败后明军退走觉华岛及孙承宗经略的各方记载，标出史料政治立场影响",
+   "effort": "2 周",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "K025",
    "scene": "kaiyuan",
    "subject": "event:kaifa",
@@ -366,6 +382,22 @@
    "effort": "1 周",
    "issue_url": null,
    "_src_line": 20
+  },
+  {
+   "id": "DZ014",
+   "scene": "mingmo_dangzheng",
+   "subject": "event:dangzheng_minglu",
+   "title": "阉党《点将录》《天鉴录》《同志录》及《东林姓名》诸名录究竟株连多少士人、各录异同与流传版本，明、清、现代三方记载详略与侧…",
+   "missing": "古文 / 史料考异",
+   "where": "《酌中志》／《明史·阉党传》／《东林点将录》诸本对照",
+   "skills": [
+    "古文",
+    "史料考异"
+   ],
+   "accept": "整理阉党名录的诸本异同与各书记载差异，标出政治立场影响",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "N010",

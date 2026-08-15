@@ -1,0 +1,9 @@
+{
+  "places": [
+    {"id": "juehua", "name": "觉华岛", "lon": 120.55, "lat": 40.55, "type": "island", "modern": "辽宁兴城东南海中（今菊花岛）", "note": "辽西海上要津，孙承宗经略时祖大寿驻守，与宁远犄角"},
+    {"id": "ningyuan", "name": "宁远", "lon": 120.75, "lat": 40.75, "type": "city", "modern": "辽宁兴城市", "note": "关宁锦防线核心，与觉华岛犄角"},
+    {"id": "qiantun", "name": "前屯", "lon": 120.05, "lat": 40.05, "type": "fortress", "modern": "辽宁绥中前屯", "note": "赵率教守前屯，护宁远侧翼"},
+    {"id": "guangning", "name": "广宁", "lon": 122.0, "lat": 41.7, "type": "city", "modern": "辽宁北镇", "note": "天启二年失陷，明军退走觉华岛"},
+    {"id": "shanhaiguan", "name": "山海关", "lon": 119.77, "lat": 39.97, "type": "fortress", "modern": "河北秦皇岛山海关", "note": "孙承宗督师镇守之处"}
+  ]
+}

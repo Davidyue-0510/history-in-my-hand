@@ -58,6 +58,7 @@
       "jinzhouwei",
       "jiupin",
       "jiuzi",
+      "juehua",
       "julu",
       "kaiyuan",
       "keju",
@@ -72,6 +73,7 @@
       "lvlin",
       "maling",
       "ming_fall",
+      "mingmo_dangzheng",
       "mobai",
       "ningyuan",
       "poyanghu",
@@ -962,6 +964,24 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "juehua",
+      "name": "juehua",
+      "total": 14,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:juehua_garrison",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "julu",
       "name": "julu",
       "total": 3,
@@ -1197,6 +1217,27 @@
       "avg_resonance": 0.0,
       "best_event": "event:mf_1627",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "mingmo_dangzheng",
+      "name": "mingmo_dangzheng",
+      "total": 14,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "明方": 13,
+        "综述考订": 1
+      },
+      "faction_counts": {
+        "内臣 / 宦官（独立于阉党）": 13
+      },
+      "event_count": 4,
+      "avg_resonance": 0.292,
+      "best_event": "event:dangzheng_liuruoyu",
+      "best_resonance": 0.333
     },
     {
       "scene": "mobai",
@@ -2086,9 +2127,10 @@
     },
     "nei_guan": {
       "name": "内臣 / 宦官（独立于阉党）",
-      "total": 9,
+      "total": 22,
       "scenes": [
-        "guangning"
+        "guangning",
+        "mingmo_dangzheng"
       ],
       "sources": [
         "zhuozhongzhi"
@@ -6279,6 +6321,166 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:juehua_garrison",
+      "name": "event:juehua_garrison",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 5
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JH006",
+            "predicate": "守将",
+            "value_text": "令游击祖大寿等守觉华岛",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH009",
+            "predicate": "军制",
+            "value_text": "定军制，申明职守",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH010",
+            "predicate": "兵力",
+            "value_text": "练兵十一万",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH011",
+            "predicate": "装备",
+            "value_text": "造铠仗数百万",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH013",
+            "predicate": "海防犄角体系的战略意义",
+            "value_text": "现代学界认为，孙承宗以宁远为陆枢、觉华岛为海翼的犄角部署，是广宁溃败后明军在辽西重建正面、保全储粮与海运的关键，使关宁锦防线得以渐次成形。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "juehua"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:juehua_guangning_retreat",
+      "name": "event:juehua_guangning_retreat",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JH001",
+            "predicate": "全军覆没",
+            "value_text": "是时全军覆没",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH014",
+            "predicate": "广宁败后海上依托的细节",
+            "value_text": "广宁之败后祖大寿等明军残部退走觉华岛的具体兵力、补给与后继部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "juehua"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:juehua_strategy",
+      "name": "event:juehua_strategy",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JH005",
+            "predicate": "筑城策略",
+            "value_text": "筑宁远要害，与觉华岛相犄角",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          }
+        ]
       }
     },
     {
@@ -10911,6 +11113,54 @@
       }
     },
     {
+      "subject": "event:dangzheng_minglu",
+      "name": "event:dangzheng_minglu",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.167,
+      "party_counts": {
+        "明方": 2,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "DZ003",
+            "predicate": "造录",
+            "value_text": "崔呈秀密付《天鉴录》《同志录》《点将录》",
+            "source": "zhuozhongzhi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "DZ014",
+            "predicate": "名录株连的名单与范围",
+            "value_text": "阉党《点将录》《天鉴录》《同志录》及《东林姓名》诸名录究竟株连多少士人、各录异同与流传版本，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "zhuozhongzhi",
+            "layer": "gap",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ice_walls",
       "name": "event:ice_walls",
       "scenes": [
@@ -11487,6 +11737,135 @@
             "scene": "imjin"
           }
         ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dangzheng_liuruoyu",
+      "name": "event:dangzheng_liuruoyu",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "DZ004",
+            "predicate": "著书",
+            "value_text": "刘若愚著《酌中志》",
+            "source": "zhuozhongzhi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dangzheng_xiong_feng",
+      "name": "event:dangzheng_xiong_feng",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "DZ001",
+            "predicate": "构陷",
+            "value_text": "冯铨令蒋应暘于讲筵发《辽东传》害熊廷弼",
+            "source": "zhuozhongzhi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DZ013",
+            "predicate": "私怨杀人的制度性背景",
+            "value_text": "现代学界指出，熊廷弼之死固有其广宁兵败之责，但冯铨借小说《辽东传》私怨、以讲筵袖奏构陷，显示辽东战事已被京中党争与内廷私怨所劫持；阉党专政下，边事成败不再纯由军功评定。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "mingmo_dangzheng"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dangzheng_yanglian",
+      "name": "event:dangzheng_yanglian",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "DZ002",
+            "predicate": "弹劾",
+            "value_text": "杨涟参魏忠贤二十四罪",
+            "source": "zhuozhongzhi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
         "综述考订": []
       }
     },

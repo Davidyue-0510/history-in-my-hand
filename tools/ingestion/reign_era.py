@@ -55,6 +55,7 @@ _TRAD2SIMP = str.maketrans({
     "閏": "闰", "儀": "仪", "鳳": "凤", "麟": "麟", "乾": "乾",
     "國": "国", "圖": "图", "壽": "寿", "陽": "阳", "陰": "阴",
     "會": "会", "書": "书", "雲": "云", "幹": "干", "徵": "征",
+    "間": "间", "餘": "余", "歸": "归", "亂": "乱", "與": "与",
 })
 
 # era: (公元起始年, 公元结束年(含), 朝代)
@@ -342,12 +343,16 @@ ERAS = {
 }
 
 
+# 年号名 alternation（按长度降序，保证同位置时取最长，如 至正/元丰 不被 正/元 截短）
+_ERA_ALT = "|".join(re.escape(e) for e in sorted(ERAS.keys(), key=len, reverse=True))
+
 # 预编译「年号名 -> 年号+年数」匹配（年号按长度降序，保证同位置时取最长，
 # 且能匹配含「元/正」的年号名，如 开元/至正/元丰）。在 normalize_year 里用 search 取最左。
-_ERA_RE = re.compile(
-    r"(%s)\s*([元正一二三四五六七八九十廿卅零]+)(?:年)?" %
-    "|".join(re.escape(e) for e in sorted(ERAS.keys(), key=len, reverse=True))
-)
+_ERA_RE = re.compile(r"(%s)\s*([元正一二三四五六七八九十廿卅零]+)(?:年)?" % _ERA_ALT)
+
+# 年号级模糊表述「年号 + 间/年间」（如 天启年间、万历年间）：史料只给到朝代/年号层级、
+# 未精确到第几年时的兜底匹配。归一化时取该年号起始公元年作为默认（见 normalize_year）。
+_ERA_PERIOD_RE = re.compile(r"(%s)\s*年?间" % _ERA_ALT)
 
 # 朝代跨度表（公元年区间，含端点）。供 dynasty_at() 反查某年属哪些朝代，
 # 也供「国家范围」控制层按朝代归属着色。BC 朝代（先秦/西汉部分）暂未纳入，
@@ -481,6 +486,11 @@ def normalize_year(s):
         return int(s)
     m = _ERA_RE.search(s)
     if not m:
+        # 兜底：年号级模糊表述「年号+间/年间」（如 天启年间），史料未精确到第几年。
+        # 取该年号起始公元年作为默认落点（保守置于纪年开端），供时间轴排序。
+        mp = _ERA_PERIOD_RE.search(s)
+        if mp and mp.group(1) in ERAS:
+            return ERAS[mp.group(1)][0]
         return None
     era = m.group(1)
     ystr = m.group(2)

@@ -553,13 +553,20 @@ def main():
     else:
         sd["leads"] = {"leads": []}
 
-    # 共振报告（hub 页面用）—— 与 tools/resonance.py 的输出同步
+    # 共振报告（hub 页面用）—— 与 tools/resonance.py 的输出同步。
+    # 壳只下发 hub 真正消费的 meta + scene_summary（约 30KB）；
+    # 完整的事件级共振矩阵（events，~190KB）留在 data/resonance_report.json，
+    # 由网关 [6] 校验、供离线深度分析，不进壳——否则 126 场景会让壳突破 500KB 上限。
     rp = os.path.join(DATA, "resonance_report.json")
     if os.path.exists(rp):
         with open(rp, encoding="utf-8") as f:
-            sd["resonance"] = json.load(f)
+            _full_res = json.load(f)
+        sd["resonance"] = {
+            "meta": _full_res.get("meta", {}),
+            "scene_summary": _full_res.get("scene_summary", []),
+        }
     else:
-        sd["resonance"] = {"scene_summary": [], "events": []}
+        sd["resonance"] = {"meta": {}, "scene_summary": []}
 
     # ── 实际控制态势（v0.10）──────────────────────────────────────────────
     # 控制权是「空间控制权」维度的断言扩展：谁在 [start,end] 年间控制哪座城。

@@ -1,0 +1,40 @@
+{
+  "events": [
+    {
+      "id": "dangzheng_xiong_feng",
+      "subject": "event:dangzheng_xiong_feng",
+      "year": 1625,
+      "era": "天启五年",
+      "title": "冯铨借《辽东传》私怨，讲筵害熊廷弼",
+      "kind": "党争",
+      "text": "经略辽东熊廷弼下狱论死。阉党冯铨素恨书坊所卖小说《辽东传》第四十八回「冯布政父子奔逃」一节，以为极耻，令私人妖弁蒋应暘于经筵发难，袖中出奏，坐实其罪，致熊廷弼被正法。辽东战事之败，遂被京中私怨劫持为杀人工具。"
+    },
+    {
+      "id": "dangzheng_yanglian",
+      "subject": "event:dangzheng_yanglian",
+      "year": 1624,
+      "era": "天启四年",
+      "title": "杨涟弹魏忠贤二十四罪",
+      "kind": "党争",
+      "text": "副都御史杨涟上疏列魏忠贤二十四罪，东林诸臣继起攻之。魏忠贤与客氏反噬，自此大兴罗织，东林渐被指为门户、邪党。"
+    },
+    {
+      "id": "dangzheng_minglu",
+      "subject": "event:dangzheng_minglu",
+      "year": 1625,
+      "era": "天启五年",
+      "title": "阉党造《点将录》《天鉴录》等名录",
+      "kind": "党争",
+      "text": "崔呈秀递入《点将录》《天鉴录》《同志录》及《东林姓名》共四折，御前按名削处。逆案所载外臣三十六人之外，更以名录株连，士绅惊惧，不知圣意何由尽知门户。"
+    },
+    {
+      "id": "dangzheng_liuruoyu",
+      "subject": "event:dangzheng_liuruoyu",
+      "year": 1640,
+      "era": "崇祯十三年",
+      "title": "刘若愚《酌中志》记阉党专政",
+      "kind": "档案",
+      "text": "内臣刘若愚于魏忠贤败后追记宫禁见闻，成《酌中志》，详载逆贤擅政、诛东林、熊廷弼之死等内情，为内臣半独立视角的党争史料。"
+    }
+  ]
+}
