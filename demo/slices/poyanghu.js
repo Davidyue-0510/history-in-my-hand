@@ -132,10 +132,318 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "place": "kanglang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "PY001",
+   "subject": "event:py_chen",
+   "predicate": "决战",
+   "value_text": "朱元璋与陈友谅决战于鄱阳湖",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "至正二十三年，朱元璋与陈友谅决战于鄱阳湖",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY002",
+   "subject": "event:py_chen",
+   "predicate": "兵力",
+   "value_text": "号六十万",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "友谅拥巨舰连锁为阵，号六十万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "号为虚数，实数待考",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY003",
+   "subject": "event:py_zhu",
+   "predicate": "战术",
+   "value_text": "舟小，火器利",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "元璋舟小，然火器利",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY004",
+   "subject": "event:py_zhu",
+   "predicate": "火攻",
+   "value_text": "乘风纵火，焚其舰",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "元璋乘风纵火，焚其舰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY005",
+   "subject": "event:py_chen",
+   "predicate": "阵亡",
+   "value_text": "友仁等皆死",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "友谅弟友仁等皆死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY006",
+   "subject": "event:py_chen",
+   "predicate": "阵亡",
+   "value_text": "中流矢贯睛及颅而死",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "友谅中流矢贯睛及颅而死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY007",
+   "subject": "event:py_chen",
+   "predicate": "溃败",
+   "value_text": "军大溃",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "军大溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY008",
+   "subject": "event:py_jz",
+   "predicate": "意义",
+   "value_text": "奠定并吞群雄、北定中原之基",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "此役奠定朱元璋并吞群雄、北定中原之基",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "后世史评，非当日实录",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY009",
+   "subject": "event:py_jz",
+   "predicate": "评价",
+   "value_text": "中世纪世界最大水战之一",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "为中世纪世界最大水战之一",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "现代学者评价，非原文",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY010",
+   "subject": "event:py_jz",
+   "predicate": "评价",
+   "value_text": "火攻破巨舰之范例",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "亦火攻破巨舰之范例",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "现代军事史评价",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "PY011",
+   "subject": "event:py_chen",
+   "predicate": "兵力",
+   "value_text": "号六十万",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": "poyanghu",
+   "source": "synthesis",
+   "quote": "号六十万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "『号六十万』为虚数，实数无考",
+   "lead": {
+    "where": "poyanghu",
+    "skills": [
+     "明清史",
+     "军事史"
+    ],
+    "accept": "考证陈友谅鄱阳湖之战实际兵力"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "POYANGHUG01",
+   "subject": "event:py_chen",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "至正二十三年",
+    "start": "1363-01-01",
+    "end": "1363-12-31",
+    "gregorian_year": 1363
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:event:py_chen|阵亡",
+   "subject": "event:py_chen",
+   "predicate": "阵亡",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "PY005",
+    "PY006"
+   ]
+  },
+  {
+   "id": "cf:event:py_jz|评价",
+   "subject": "event:py_jz",
+   "predicate": "评价",
+   "kind": "scholarly_divergence",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "PY009",
+    "PY010"
+   ]
+  }
+ ],
+ "gaps": [
+  "PY011",
+  "POYANGHUG01"
+ ],
  "events": [
   {
    "id": "ev_py_chen",

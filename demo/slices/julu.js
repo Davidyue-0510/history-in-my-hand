@@ -139,10 +139,262 @@ window.SANDBOX_SLICES["julu"] = {
    "place": "julu",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M15",
+   "subject": "event:jl_xiang",
+   "predicate": "夺兵权",
+   "value_text": "项羽杀宋义，夺其兵权",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "项羽杀上将宋义，夺其兵权",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "宋义未在白名单，未建实体",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M15",
+   "subject": "event:jl_xiang",
+   "predicate": "渡河",
+   "value_text": "率楚军渡漳水救巨鹿",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "zhangshui",
+   "source": "synthesis",
+   "quote": "率楚军渡漳水救巨鹿",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M14",
+   "subject": "event:jl_xiang",
+   "predicate": "破釜沉舟",
+   "value_text": "破釜沉舟，烧庐舍，持三日粮",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "zhangshui",
+   "source": "synthesis",
+   "quote": "破釜沉舟，烧庐舍，持三日粮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M15",
+   "subject": "event:jl_jz",
+   "predicate": "围击",
+   "value_text": "围秦将王离，九战九捷",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "至则围秦将王离，九战九捷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "王离未在白名单，未建实体",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M15",
+   "subject": "event:jl_jz",
+   "predicate": "破敌",
+   "value_text": "绝其甬道，大破之，虏王离",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "绝其甬道，大破之，虏王离",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M15",
+   "subject": "event:jl_jz",
+   "predicate": "诸侯观望",
+   "value_text": "诸侯军莫敢纵兵，从壁上观",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "诸侯军数壁救赵，莫敢纵兵，及楚击秦，皆从壁上观",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M14",
+   "subject": "event:jl_jz",
+   "predicate": "诸侯畏服",
+   "value_text": "诸侯将膝行而前，莫敢仰视",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "入辕门皆膝行而前，莫敢仰视",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M15",
+   "subject": "event:jl_qin",
+   "predicate": "主力被歼",
+   "value_text": "歼秦军主力，章邯寻降",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "是役歼秦军主力，章邯寻降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "章邯未在白名单，未建实体",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M15",
+   "subject": "event:jl_xiang",
+   "predicate": "以寡敌众",
+   "value_text": "以寡敌众，陷之死地而后生",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "julu",
+   "source": "synthesis",
+   "quote": "项羽以寡敌众、陷之死地而后生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "原文未明言兵力对比，属合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M15",
+   "subject": "event:jl_qin",
+   "predicate": "秦亡在望",
+   "value_text": "秦亡在望",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秦亡在望",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文为史家评述，非直接事实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JULUG01",
+   "subject": "event:jl_xiang",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "秦二世三年",
+    "start": "-207-01-01",
+    "end": "-207-12-31",
+    "gregorian_year": -207
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "JULUG01"
+ ],
  "events": [
   {
    "id": "ev_jl_qin",

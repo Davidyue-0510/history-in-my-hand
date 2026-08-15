@@ -139,10 +139,249 @@ window.SANDBOX_SLICES["feishui"] = {
    "place": "feishui",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "FS001",
+   "subject": "event:fs_qin",
+   "predicate": "南伐",
+   "value_text": "率戎卒六十余万、骑二十七万南伐",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "率戎卒六十余万、骑二十七万南伐",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "前秦兵力为原文表述，实数存疑",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS002",
+   "subject": "event:fs_jin",
+   "predicate": "拒敌",
+   "value_text": "率北府兵八万拒之",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "东晋以谢石、谢玄率北府兵八万拒之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS003",
+   "subject": "event:fs_jin",
+   "predicate": "请战",
+   "value_text": "请秦军移阵少却，使晋兵得渡",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "若移阵少却，使晋兵得渡，以决胜负",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS004",
+   "subject": "event:fs_qin",
+   "predicate": "许之",
+   "value_text": "秦许之",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "秦许之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS005",
+   "subject": "event:fs_qin",
+   "predicate": "阵后呼败",
+   "value_text": "朱序于阵后呼秦军败矣",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "朱序于阵后呼‘秦军败矣’",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS006",
+   "subject": "event:fs_qin",
+   "predicate": "崩溃",
+   "value_text": "众遂崩，自相蹈藉，投水死者蔽川",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "众遂崩，自相蹈藉，投水死者蔽川",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS007",
+   "subject": "event:fs_qin",
+   "predicate": "主帅受伤",
+   "value_text": "坚中流矢，单骑走淮北",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "坚中流矢，单骑走淮北",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS008",
+   "subject": "event:fs_qin",
+   "predicate": "兵力号称",
+   "value_text": "自恃兵多",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "自恃兵多",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文未明说‘号称’，但‘自恃兵多’暗示其主观夸大",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FS009",
+   "subject": "event:fs_qin",
+   "predicate": "兵力实数",
+   "value_text": "六十余万与八万对比悬殊",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": "feishui",
+   "source": "synthesis",
+   "quote": "率戎卒六十余万、骑二十七万南伐",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "前秦兵力实数存疑，学界有不同估算",
+   "lead": {
+    "where": "前秦兵力实数考证",
+    "skills": [
+     "历史文献学",
+     "军事史"
+    ],
+    "accept": "提供前秦实际兵力估算及依据"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FEISHUIG01",
+   "subject": "event:fs_qin",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "太元八年",
+    "start": "383-01-01",
+    "end": "383-12-31",
+    "gregorian_year": 383
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "FS009",
+  "FEISHUIG01"
+ ],
  "events": [
   {
    "id": "ev_fs_qin",

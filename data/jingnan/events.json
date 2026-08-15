@@ -11,6 +11,66 @@
    "place": "beiping"
   },
   {
+   "id": "ev_jn_zhenping",
+   "subject": "event:jn_zhenping",
+   "year": 1399,
+   "era": "建文元年八月",
+   "title": "真定之战",
+   "kind": "战事",
+   "text": "耿炳文率大军驻真定，燕将张玉、朱能破其前锋，炳文退守。",
+   "place": "zhenping"
+  },
+  {
+   "id": "ev_jn_zhengcunba",
+   "subject": "event:jn_zhengcunba",
+   "year": 1399,
+   "era": "建文元年十一月",
+   "title": "郑村坝之战",
+   "kind": "战事",
+   "text": "李景隆率兵五十万攻北平，燕军于郑村坝大破之，解北平围。",
+   "place": "beiping"
+  },
+  {
+   "id": "ev_jn_baigouhe",
+   "subject": "event:jn_baigouhe",
+   "year": 1400,
+   "era": "建文二年四月",
+   "title": "白沟河之战",
+   "kind": "战事",
+   "text": "李景隆屯兵白沟河与燕军会战，燕军几溃而复振，大败中央军。",
+   "place": "baigouhe"
+  },
+  {
+   "id": "ev_jn_dongchang",
+   "subject": "event:jn_dongchang",
+   "year": 1400,
+   "era": "建文二年十二月",
+   "title": "东昌之战",
+   "kind": "战事",
+   "text": "盛庸、铁铉合军东昌，大破燕军，斩燕将张玉。",
+   "place": "dongchang"
+  },
+  {
+   "id": "ev_jn_jinan",
+   "subject": "event:jn_jinan",
+   "year": 1401,
+   "era": "建文三年",
+   "title": "济南之守",
+   "kind": "战事",
+   "text": "铁铉、盛庸坚守济南，燕军围攻三月不克，解围去。",
+   "place": "jinan"
+  },
+  {
+   "id": "ev_jn_jiahe",
+   "subject": "event:jn_jiahe",
+   "year": 1401,
+   "era": "建文三年",
+   "title": "夹河·藁城之战",
+   "kind": "战事",
+   "text": "燕军与盛庸战于夹河、再战藁城，皆破之，中央军势衰。",
+   "place": "jiahe"
+  },
+  {
    "id": "ev_jn_1402",
    "subject": "event:jn_1402",
    "year": 1402,

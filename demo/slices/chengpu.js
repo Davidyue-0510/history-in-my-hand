@@ -71,13 +71,13 @@ window.SANDBOX_SLICES["chengpu"] = {
    "id": "jinwen",
    "name": "晋文公",
    "side": "晋",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "ziyu",
    "name": "子玉",
    "side": "楚",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "xianzhen",
@@ -139,10 +139,271 @@ window.SANDBOX_SLICES["chengpu"] = {
    "place": "chengpu",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M7",
+   "subject": "event:cp_chu",
+   "predicate": "起因",
+   "value_text": "楚攻宋，宋求救于晋",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "楚攻宋，宋求救于晋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "事件起因，楚攻宋引发晋介入",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M7",
+   "subject": "event:cp_jin",
+   "predicate": "战略",
+   "value_text": "先侵曹、卫以怒楚",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "先侵曹、卫以怒楚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "晋文公战略，激怒楚军",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M6",
+   "subject": "person:ziyu",
+   "predicate": "率军北上",
+   "value_text": "楚将子玉率军北上",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "楚将子玉率军北上",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "楚军主将行动",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M7",
+   "subject": "person:jinwen",
+   "predicate": "退避三舍",
+   "value_text": "退兵九十里",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "退避三舍之诺，退兵九十里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "践行诺言，战略退却",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M7",
+   "subject": "event:cp_chu",
+   "predicate": "决战地点",
+   "value_text": "两军战于城濮",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "chengpu",
+   "source": "synthesis",
+   "quote": "两军战于城濮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "战役发生地",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M7",
+   "subject": "event:cp_chu",
+   "predicate": "右师败绩",
+   "value_text": "胥臣蒙马以虎皮败楚右师",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "chengpu",
+   "source": "synthesis",
+   "quote": "晋军下军佐胥臣蒙马以虎皮败楚右师",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "战术细节，楚右师溃败",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M6",
+   "subject": "event:cp_chu",
+   "predicate": "左师溃败",
+   "value_text": "中军先轸横击，楚左师溃",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "chengpu",
+   "source": "synthesis",
+   "quote": "中军先轸横击，楚左师溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "晋军主力决胜",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M7",
+   "subject": "person:ziyu",
+   "predicate": "结局",
+   "value_text": "子玉败退连谷自杀",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "子玉败退连谷自杀",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "楚军主将结局",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M7",
+   "subject": "event:cp_jz",
+   "predicate": "会盟称霸",
+   "value_text": "晋文公践土会盟称霸",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "晋文公践土会盟称霸",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "战后晋国确立霸权",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M7",
+   "subject": "event:cp_chu",
+   "predicate": "兵力对比",
+   "value_text": "晋军兵力未明，楚军兵力未明",
+   "time": {
+    "era_text": "公元前632年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "chengpu",
+   "source": "synthesis",
+   "quote": "两军战于城濮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "county",
+   "note": "原文未载双方兵力数字，无法量化对比",
+   "lead": {
+    "where": "史料未载双方兵力，需查《左传》等原始文献",
+    "skills": [
+     "文献考据",
+     "军事史"
+    ],
+    "accept": "补充双方兵力数字及来源"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPUG01",
+   "subject": "event:cp_jz",
+   "predicate": "叙事缺环",
+   "value_text": "此战纪年与细节诸书互歧，现存叙述多据后世胜者所修史书，敌方视角的兵力、伤亡与动机常缺。",
+   "time": {
+    "era_text": "周襄王二十一年",
+    "start": "-631-01-01",
+    "end": "-631-12-31",
+    "gregorian_year": -631
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX010_M7",
+  "CHENGPUG01"
+ ],
  "events": [
   {
    "id": "ev_cp_chu",

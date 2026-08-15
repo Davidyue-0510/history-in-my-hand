@@ -80,13 +80,13 @@ window.SANDBOX_SLICES["chibi"] = {
    "id": "zhouyu",
    "name": "周瑜",
    "side": "吴",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "huanggai",
    "name": "黄盖",
    "side": "吴",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "caocao",
@@ -98,7 +98,7 @@ window.SANDBOX_SLICES["chibi"] = {
    "id": "zhugeliang",
    "name": "诸葛亮",
    "side": "蜀",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -154,10 +154,262 @@ window.SANDBOX_SLICES["chibi"] = {
    "place": "chibi",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M7",
+   "subject": "event:cb_cao",
+   "predicate": "爆发",
+   "value_text": "建安十三年曹操取荆州，顺江东下",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "jiangling",
+   "source": "synthesis",
+   "quote": "建安十三年曹操取荆州，顺江东下",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M7",
+   "subject": "event:cb_cao",
+   "predicate": "联盟",
+   "value_text": "孙权刘备联盟，周瑜为左都督、诸葛亮参谋",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "孙权刘备联盟，周瑜为左都督、诸葛亮参谋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M6",
+   "subject": "event:cb_cao",
+   "predicate": "驻军",
+   "value_text": "曹军驻乌林，联军据赤壁",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "wulin",
+   "source": "synthesis",
+   "quote": "曹军驻乌林，联军据赤壁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M7",
+   "subject": "event:cb_cao",
+   "predicate": "火攻",
+   "value_text": "黄盖诈降，乘东南风火攻曹舰",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "周瑜部将黄盖诈降，乘东南风火攻曹舰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M7",
+   "subject": "event:cb_cao",
+   "predicate": "延烧",
+   "value_text": "延烧乌林岸营",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "wulin",
+   "source": "synthesis",
+   "quote": "延烧乌林岸营",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M7",
+   "subject": "event:cb_cao",
+   "predicate": "败退",
+   "value_text": "曹军大败，曹操自华容道退江陵北还",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "jiangling",
+   "source": "synthesis",
+   "quote": "曹军大败，曹操自华容道退江陵北还",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M6",
+   "subject": "event:cb_cao",
+   "predicate": "影响",
+   "value_text": "三分雏形始现",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "三分雏形始现",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文未明说，属合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M7",
+   "subject": "person:huanggai",
+   "predicate": "诈降",
+   "value_text": "黄盖诈降",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "周瑜部将黄盖诈降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M7",
+   "subject": "person:zhouyu",
+   "predicate": "指挥",
+   "value_text": "周瑜为左都督",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "周瑜为左都督",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M7",
+   "subject": "person:zhugeliang",
+   "predicate": "参谋",
+   "value_text": "诸葛亮参谋",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "诸葛亮参谋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHIBIG01",
+   "subject": "event:cb_jz",
+   "predicate": "叙事缺环",
+   "value_text": "此战纪年与细节诸书互歧，现存叙述多据后世胜者所修史书，敌方视角的兵力、伤亡与动机常缺。",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "CHIBIG01"
+ ],
  "events": [
   {
    "id": "ev_cb_cao",

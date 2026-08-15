@@ -71,19 +71,19 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "id": "zhangshijie",
    "name": "张世杰",
    "side": "宋",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "luxiufu",
    "name": "陆秀夫",
    "side": "宋",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "zhanghongfan",
    "name": "张弘范",
    "side": "元",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -139,10 +139,262 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "place": "yaoshan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M11",
+   "subject": "event:ys_song",
+   "predicate": "爆发",
+   "value_text": "宋元最后一战",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "祥兴二年，宋元最后一战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M11",
+   "subject": "person:zhangshijie",
+   "predicate": "结舟为城",
+   "value_text": "以巨舰千艘蔽海，结舟为城",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "张世杰以巨舰千艘蔽海，结舟为城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M10",
+   "subject": "person:zhanghongfan",
+   "predicate": "围困",
+   "value_text": "率水师围之，断水道，纵火攻舟",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "元将张弘范率水师围之，断宋军取水道，纵火攻舟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M11",
+   "subject": "event:ys_song",
+   "predicate": "困顿",
+   "value_text": "宋军久困，渴甚，饮海水辄呕泄",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "宋军久困，渴甚，饮海水辄呕泄",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M11",
+   "subject": "person:luxiufu",
+   "predicate": "殉国",
+   "value_text": "先驱妻子入海，乃负幼帝昺投海殉国",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "陆秀夫见大势已去，先驱妻子入海，乃负幼帝昺投海殉国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M11",
+   "subject": "person:zhangshijie",
+   "predicate": "阵亡",
+   "value_text": "突围后遇风覆舟溺死",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "张世杰突围后遇风覆舟溺死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M10",
+   "subject": "event:ys_song",
+   "predicate": "军民蹈海",
+   "value_text": "十万军民相继蹈海",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "十万军民相继蹈海",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "十万为原文表述，实数待考",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M11",
+   "subject": "event:ys_song",
+   "predicate": "终结",
+   "value_text": "宋亡，赵宋国祚终结",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "宋亡。崖山之败标志赵宋三百余年国祚终结",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M11",
+   "subject": "event:ys_song",
+   "predicate": "历史意义",
+   "value_text": "华夏第一次整体亡于异族",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "亦为华夏第一次整体亡于异族",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "史家评价，非原文直述事实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M11",
+   "subject": "event:ys_song",
+   "predicate": "后世评价",
+   "value_text": "崖山之后无中国",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "yaoshan",
+   "source": "synthesis",
+   "quote": "史家所谓'崖山之后无中国'之叹所由起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "后世史家观点，非当时记录",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YAOSHANG01",
+   "subject": "event:ys_song",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "祥兴二年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "YAOSHANG01"
+ ],
  "events": [
   {
    "id": "ev_ys_song",

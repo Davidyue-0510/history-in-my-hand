@@ -139,10 +139,293 @@ window.SANDBOX_SLICES["hulao"] = {
    "place": "hulao",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M18",
+   "subject": "event:hl_shi",
+   "predicate": "围城",
+   "value_text": "李世民东围洛阳王世充",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "luoyang_t",
+   "source": "synthesis",
+   "quote": "秦王李世民东围洛阳王世充",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M18",
+   "subject": "event:hl_wei",
+   "predicate": "来援",
+   "value_text": "窦建德率夏军十余万来援",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "窦建德自河北率夏军十余万来援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "兵力为原文表述，未折算",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M17",
+   "subject": "event:hl_wei",
+   "predicate": "据守",
+   "value_text": "夏军据虎牢之东",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "据虎牢之东",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M18",
+   "subject": "event:hl_shi",
+   "predicate": "分兵",
+   "value_text": "世民分兵围洛，亲率骁骑据虎牢",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "世民分兵围洛，亲率骁骑据虎牢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M18",
+   "subject": "event:hl_wei",
+   "predicate": "战术",
+   "value_text": "按甲不出，以待夏军疲",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "按甲不出，以待夏军疲",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M18",
+   "subject": "event:hl_wei",
+   "predicate": "列阵",
+   "value_text": "建德恃众，列阵亘二十里",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "建德恃众，列阵亘二十里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M17",
+   "subject": "event:hl_wei",
+   "predicate": "冲锋",
+   "value_text": "世民率史大奈等驰入其阵",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "世民率史大奈等驰入其阵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M18",
+   "subject": "event:hl_wei",
+   "predicate": "溃败",
+   "value_text": "夏军望见大溃，建德被擒",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "夏军望见大溃，建德被擒",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M18",
+   "subject": "event:hl_jz",
+   "predicate": "投降",
+   "value_text": "王世充面缚出降",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "luoyang_t",
+   "source": "synthesis",
+   "quote": "世充闻之，面缚出降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M18",
+   "subject": "event:hl_jz",
+   "predicate": "结果",
+   "value_text": "唐一举兼平二雄，中原底定",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "luoyang_t",
+   "source": "synthesis",
+   "quote": "唐一举兼平二雄，中原底定",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M12",
+   "subject": "event:hl_wei",
+   "predicate": "兵力对比",
+   "value_text": "夏军十余万，唐军未明",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "hulao",
+   "source": "synthesis",
+   "quote": "窦建德自河北率夏军十余万来援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "原文未载唐军兵力，无法对比",
+   "lead": {
+    "where": "hulao",
+    "skills": [
+     "军事史",
+     "史料考据"
+    ],
+    "accept": "补充唐军兵力数据或说明缺失原因"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HULAOG01",
+   "subject": "event:hl_wei",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "武德四年",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX011_M12",
+  "HULAOG01"
+ ],
  "events": [
   {
    "id": "ev_hl_shi",

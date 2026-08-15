@@ -79,7 +79,7 @@ window.SANDBOX_SLICES["guandu"] = {
    "id": "caocao",
    "name": "曹操",
    "side": "曹",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "yuanshao",
@@ -91,7 +91,7 @@ window.SANDBOX_SLICES["guandu"] = {
    "id": "xunyou",
    "name": "荀攸",
    "side": "曹",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -147,10 +147,306 @@ window.SANDBOX_SLICES["guandu"] = {
    "place": "guandu",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M7",
+   "subject": "event:gd_yuan",
+   "predicate": "爆发",
+   "value_text": "袁绍率十万众攻曹操",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "袁绍率十万众攻曹操",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "袁绍兵力为原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M7",
+   "subject": "event:gd_yuan",
+   "predicate": "驻守",
+   "value_text": "曹守官渡",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "曹守官渡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "官渡今河南中牟",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M6",
+   "subject": "event:gd_yuan",
+   "predicate": "遣将攻白马",
+   "value_text": "袁绍遣颜良攻白马",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "袁绍遣颜良攻白马",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "白马非白名单地点，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M7",
+   "subject": "person:caocao",
+   "predicate": "部将斩将",
+   "value_text": "关羽斩颜良解围",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "关羽斩颜良解围",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "关羽非白名单人物，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M7",
+   "subject": "event:gd_yuan",
+   "predicate": "相持",
+   "value_text": "相持数月",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "相持数月",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M7",
+   "subject": "event:gd_yuan",
+   "predicate": "粮尽欲退",
+   "value_text": "曹军粮尽欲退",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "曹军粮尽欲退",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M6",
+   "subject": "person:xunyou",
+   "predicate": "劝留",
+   "value_text": "荀彧劝留",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "荀彧劝留",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M7",
+   "subject": "event:gd_wuchao",
+   "predicate": "献计",
+   "value_text": "许攸献袭乌巢火攻计",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "wuchao",
+   "source": "synthesis",
+   "quote": "许攸投曹，献袭乌巢之火攻计",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "许攸非白名单人物，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M7",
+   "subject": "event:gd_wuchao",
+   "predicate": "夜袭",
+   "value_text": "曹操夜袭乌巢",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "wuchao",
+   "source": "synthesis",
+   "quote": "曹操夜袭乌巢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "乌巢今河南延津",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M7",
+   "subject": "event:gd_wuchao",
+   "predicate": "焚粮斩将",
+   "value_text": "焚袁粮屯，斩淳于琼",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "wuchao",
+   "source": "synthesis",
+   "quote": "焚袁粮屯，斩淳于琼",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "淳于琼非白名单人物，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M7",
+   "subject": "event:gd_jz",
+   "predicate": "降将",
+   "value_text": "张郃等降",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "张郃等降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "张郃非白名单人物，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M7",
+   "subject": "event:gd_jz",
+   "predicate": "结果",
+   "value_text": "袁绍大溃北逃",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "synthesis",
+   "quote": "袁绍大溃北逃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "曹操奠定统一北方之基为后续影响，未单列",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUANDUG01",
+   "subject": "event:gd_jz",
+   "predicate": "叙事缺环",
+   "value_text": "此战纪年与细节诸书互歧，现存叙述多据后世胜者所修史书，敌方视角的兵力、伤亡与动机常缺。",
+   "time": {
+    "era_text": "建安五年",
+    "start": "200-01-01",
+    "end": "200-12-31",
+    "gregorian_year": 200
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "GUANDUG01"
+ ],
  "events": [
   {
    "id": "ev_gd_yuan",

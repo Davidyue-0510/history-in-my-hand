@@ -139,10 +139,297 @@ window.SANDBOX_SLICES["mobai"] = {
    "place": "mobei",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M16",
+   "subject": "event:mb_chu",
+   "predicate": "兵力",
+   "value_text": "各将五万骑",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉武帝以卫青、霍去病各将五万骑",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "卫青、霍去病各领五万骑，合计十万",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M16",
+   "subject": "event:mb_chu",
+   "predicate": "出击路线",
+   "value_text": "分道出塞",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "分道出塞击匈奴",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M15",
+   "subject": "event:mb_hq",
+   "predicate": "出击路线",
+   "value_text": "出代郡、右北平二千余里",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "dai",
+   "source": "synthesis",
+   "quote": "霍去病出代郡、右北平二千余里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "代郡、右北平为出发地，右北平未在白名单，记于note",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M16",
+   "subject": "event:mb_hq",
+   "predicate": "战果",
+   "value_text": "斩首七万余级",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "langjuxu",
+   "source": "synthesis",
+   "quote": "斩首七万余级",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M16",
+   "subject": "event:mb_hq",
+   "predicate": "战果",
+   "value_text": "左贤王部几灭",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "左贤王部几灭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M16",
+   "subject": "event:mb_hq",
+   "predicate": "封禅",
+   "value_text": "封狼居胥山，禅于姑衍，登临瀚海",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "langjuxu",
+   "source": "synthesis",
+   "quote": "封狼居胥山，禅于姑衍，登临瀚海",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "狼居胥山、姑衍、瀚海均属漠北地区",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M15",
+   "subject": "event:mb_wq",
+   "predicate": "战术",
+   "value_text": "武刚车自环为营，纵五千骑出营左右翼击之",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "以武刚车自环为营，纵五千骑出营左右翼击之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M16",
+   "subject": "event:mb_wq",
+   "predicate": "结果",
+   "value_text": "单于乘六骡壮骑溃围夜遁",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "单于乘六骡壮骑溃围夜遁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M16",
+   "subject": "event:mb_wq",
+   "predicate": "追击",
+   "value_text": "追至寘颜山赵信城",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉军追至寘颜山赵信城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "寘颜山赵信城未在白名单，记于note",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M16",
+   "subject": "event:mb_chu",
+   "predicate": "结果",
+   "value_text": "匈奴远遁，漠南无王庭",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "mobei",
+   "source": "synthesis",
+   "quote": "此役匈奴远遁，漠南无王庭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M11",
+   "subject": "event:mb_chu",
+   "predicate": "影响",
+   "value_text": "边患大纾，汉威震朔漠",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "边患大纾，汉威震朔漠",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MOBAIG01",
+   "subject": "event:mb_chu",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "元狩四年",
+    "start": "-119-01-01",
+    "end": "-119-12-31",
+    "gregorian_year": -119
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:event:mb_hq|战果",
+   "subject": "event:mb_hq",
+   "predicate": "战果",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX004_M16",
+    "SX005_M16"
+   ]
+  }
+ ],
+ "gaps": [
+  "MOBAIG01"
+ ],
  "events": [
   {
    "id": "ev_mb_chu",

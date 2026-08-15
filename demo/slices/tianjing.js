@@ -83,7 +83,7 @@ window.SANDBOX_SLICES["tianjing"] = {
    "id": "lixiucheng",
    "name": "李秀成",
    "side": "太平",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -139,10 +139,306 @@ window.SANDBOX_SLICES["tianjing"] = {
    "place": "tianjing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M22",
+   "subject": "event:tj_xiang",
+   "predicate": "爆发",
+   "value_text": "曾国藩督湘军围天京",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "同治元年，曾国藩督湘军围天京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M22",
+   "subject": "event:tj_xiang",
+   "predicate": "扎营",
+   "value_text": "扎营雨花台",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "yuhuatai",
+   "source": "synthesis",
+   "quote": "扎营雨花台",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M21",
+   "subject": "event:tj_xiang",
+   "predicate": "掘壕",
+   "value_text": "掘长壕困之",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "掘长壕困之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M22",
+   "subject": "person:lixiucheng",
+   "predicate": "回援",
+   "value_text": "率太平军自苏州回援",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "李秀成率太平军自苏州回援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M22",
+   "subject": "event:tj_di",
+   "predicate": "攻坚不得",
+   "value_text": "攻坚不得",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "攻坚不得",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M22",
+   "subject": "event:tj_di",
+   "predicate": "疫作",
+   "value_text": "会疫作，士卒病死相属",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "会疫作，士卒病死相属",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M21",
+   "subject": "event:tj_di",
+   "predicate": "解围",
+   "value_text": "解围去",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "解围去",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M22",
+   "subject": "event:tj_xiang",
+   "predicate": "粮匮",
+   "value_text": "城中粮匮，人相食",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "城中粮匮，人相食",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M22",
+   "subject": "event:tj_xiang",
+   "predicate": "合围",
+   "value_text": "曾围益急，合围之势成",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "曾围益急，合围之势成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M21",
+   "subject": "event:tj_wang",
+   "predicate": "陷落",
+   "value_text": "曾国荃卒克之在两年后",
+   "time": {
+    "era_text": "同治三年",
+    "start": "1864-01-01",
+    "end": "1864-12-31",
+    "gregorian_year": 1864
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "曾国荃卒克之在两年后",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "原文未明说克城日期，据'两年后'推断为同治三年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M15",
+   "subject": "event:tj_wang",
+   "predicate": "转折",
+   "value_text": "太平天国由盛转亡之枢",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "是役为太平天国由盛转亡之枢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "史家评价，非原文直述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M10",
+   "subject": "event:tj_xiang",
+   "predicate": "建都",
+   "value_text": "天京自咸丰三年为太平天国都",
+   "time": {
+    "era_text": "咸丰三年",
+    "start": "1853-01-01",
+    "end": "1853-12-31",
+    "gregorian_year": 1853
+   },
+   "place": "tianjing",
+   "source": "synthesis",
+   "quote": "天京自咸丰三年为太平天国都",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TIANJINGG01",
+   "subject": "event:tj_xiang",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "同治元年",
+    "start": "1862-01-01",
+    "end": "1862-12-31",
+    "gregorian_year": 1862
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "TIANJINGG01"
+ ],
  "events": [
   {
    "id": "ev_tj_xiang",

@@ -70,13 +70,13 @@ window.SANDBOX_SLICES["caishiji"] = {
    "id": "yuyunwen",
    "name": "虞允文",
    "side": "宋",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "wanyanliang",
    "name": "完颜亮",
    "side": "金",
-   "influence": 0
+   "influence": 2
   }
  ],
  "assertions": [
@@ -132,10 +132,306 @@ window.SANDBOX_SLICES["caishiji"] = {
    "place": "caishiji",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M9",
+   "subject": "event:cs_jin",
+   "predicate": "南侵",
+   "value_text": "金主完颜亮撕毁和议大举南侵",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "金主完颜亮撕毁和议大举南侵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "金主完颜亮撕毁和议，兵分多路渡淮",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M9",
+   "subject": "event:cs_jin",
+   "predicate": "兵临采石",
+   "value_text": "金兵临采石",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "金兵临采石",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "金兵临采石，今安徽马鞍山",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M8",
+   "subject": "event:cs_jin",
+   "predicate": "宋军主将弃职",
+   "value_text": "宋军主将弃职遁走",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "宋军主将弃职遁走",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "江防瓦解",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M9",
+   "subject": "person:yuyunwen",
+   "predicate": "犒师督战",
+   "value_text": "虞允文奉命犒师，临危督战",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "文臣虞允文奉命犒师，慷慨誓众，临危督战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "虞允文以文臣身份督战",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M9",
+   "subject": "event:cs_jin",
+   "predicate": "整肃溃卒",
+   "value_text": "整肃溃卒，列舟师于采石矶",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "整肃溃卒，列舟师于采石矶江面",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M9",
+   "subject": "event:cs_jin",
+   "predicate": "水战获胜",
+   "value_text": "战船冲撞金舟，强弩齐射，焚其战舰",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "虞允文命战船冲撞金舟，以强弩齐射，焚其战舰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "金军大败",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M8",
+   "subject": "event:cs_jin",
+   "predicate": "金军败退",
+   "value_text": "金军大败",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "caishiji",
+   "source": "synthesis",
+   "quote": "金军大败",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M9",
+   "subject": "person:wanyanliang",
+   "predicate": "移师瓜洲",
+   "value_text": "完颜亮渡江不成，移师瓜洲",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "guazhou",
+   "source": "synthesis",
+   "quote": "完颜亮渡江不成，移师瓜洲",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M9",
+   "subject": "person:wanyanliang",
+   "predicate": "被杀",
+   "value_text": "完颜亮为其下所杀",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "guazhou",
+   "source": "synthesis",
+   "quote": "为其下所杀",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M9",
+   "subject": "event:cs_jin",
+   "predicate": "影响",
+   "value_text": "阻金军渡江，保全江南半壁",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "采石之捷阻金军渡江，保全江南半壁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M8",
+   "subject": "event:cs_jin",
+   "predicate": "评价",
+   "value_text": "虞允文以一文臣临危却敌，传为美谈",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "虞允文以一文臣临危却敌，传为美谈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文为后世评价，非直接史实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M8",
+   "subject": "event:cs_jin",
+   "predicate": "暴露防线脆弱",
+   "value_text": "见南宋江淮防线的脆弱与士气之关键",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "亦见南宋江淮防线的脆弱与士气之关键",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文为总结性评价，非直接史实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CAISHIJIG01",
+   "subject": "event:cs_jin",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "绍兴三十一年",
+    "start": "1161-01-01",
+    "end": "1161-12-31",
+    "gregorian_year": 1161
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "CAISHIJIG01"
+ ],
  "events": [
   {
    "id": "ev_cs_jin",

@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["zhongli"] = {
    "id": "weirui",
    "name": "韦叡",
    "side": "梁",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "yuanying",
@@ -132,10 +132,249 @@ window.SANDBOX_SLICES["zhongli"] = {
    "place": "zhongli",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M23",
+   "subject": "event:zl_wei",
+   "predicate": "围攻",
+   "value_text": "北魏中山王元英等率众数十万围钟离",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "北魏中山王元英等率众数十万围钟离",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "北魏兵力为原文表述，实数待考。",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M23",
+   "subject": "event:zl_wei",
+   "predicate": "据城",
+   "value_text": "据淮水南北为城",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "据淮水南北为城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M22",
+   "subject": "person:weirui",
+   "predicate": "救援",
+   "value_text": "梁武帝命曹景宗、韦叡将兵救之",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "梁武帝命曹景宗、韦叡将兵救之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "曹景宗未在实体白名单，故仅以韦叡为主语。",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M23",
+   "subject": "person:weirui",
+   "predicate": "行军路线",
+   "value_text": "自合肥溯淮，筑垒逼魏城",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "shouyang",
+   "source": "synthesis",
+   "quote": "叡自合肥溯淮，筑垒逼魏城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "合肥未在place白名单，故place填shouyang并在此注明。",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M23",
+   "subject": "event:zl_wei",
+   "predicate": "战术",
+   "value_text": "堰水灌之，乘风纵火",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "堰水灌之，会风怒，叡以小车蒙楯，乘风纵火",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M23",
+   "subject": "event:zl_wei",
+   "predicate": "结果",
+   "value_text": "魏军惊乱，弃营走，赴水死者十七八",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "魏军惊乱，弃营走，赴水死者十七八",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M22",
+   "subject": "event:zl_wei",
+   "predicate": "战果",
+   "value_text": "俘斩甚众，获资粮器械山积",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "梁军俘斩甚众，获资粮器械山积",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M23",
+   "subject": "event:zl_wei",
+   "predicate": "影响",
+   "value_text": "南北攻守之势一变",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "此役为梁拒魏关键之胜，南北攻守之势一变",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文为史家评述，非直接战况，故标inference。",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M23",
+   "subject": "event:zl_wei",
+   "predicate": "兵力对比",
+   "value_text": "魏军数十万，梁军实数未载",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": "zhongli",
+   "source": "synthesis",
+   "quote": "率众数十万围钟离",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "魏军兵力为约数，梁军兵力原文未载，形成缺口。",
+   "lead": {
+    "where": "zhongli",
+    "skills": [
+     "quantitative_history",
+     "military_history"
+    ],
+    "accept": "考证钟离之战双方实际兵力对比"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHONGLIG01",
+   "subject": "event:zl_wei",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "天监六年",
+    "start": "507-01-01",
+    "end": "507-12-31",
+    "gregorian_year": 507
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX009_M23",
+  "ZHONGLIG01"
+ ],
  "events": [
   {
    "id": "ev_zl_wei",

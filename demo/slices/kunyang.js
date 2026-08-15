@@ -71,13 +71,13 @@ window.SANDBOX_SLICES["kunyang"] = {
    "id": "liuxiu",
    "name": "刘秀",
    "side": "汉",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "wangxun",
    "name": "王寻",
    "side": "新莽",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "wangyi",
@@ -139,10 +139,315 @@ window.SANDBOX_SLICES["kunyang"] = {
    "place": "kunyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M20",
+   "subject": "event:ky_wan",
+   "predicate": "爆发",
+   "value_text": "王莽遣王寻、王邑将兵围昆阳",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "王莽遣大司徒王寻、大司空王邑将兵四十二万，围昆阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M20",
+   "subject": "event:ky_wan",
+   "predicate": "兵力",
+   "value_text": "兵四十二万（号百万）",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "将兵四十二万（号百万）",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "原文记载四十二万，号称百万，实数存疑",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M19",
+   "subject": "person:liuxiu",
+   "predicate": "官职",
+   "value_text": "太常偏将军",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "刘秀时为太常偏将军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M20",
+   "subject": "person:liuxiu",
+   "predicate": "出击路线",
+   "value_text": "率十三骑夜出求援",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "自率十三骑夜出求援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M20",
+   "subject": "event:ky_wan",
+   "predicate": "战斗过程",
+   "value_text": "刘秀选敢死士三千冲其中坚",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "选敢死士三千，从城西水上冲其中坚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M20",
+   "subject": "person:wangxun",
+   "predicate": "阵亡",
+   "value_text": "被斩",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "斩王寻",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M19",
+   "subject": "event:ky_wan",
+   "predicate": "结果",
+   "value_text": "莽军大溃",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "中外合势，莽军大溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M20",
+   "subject": "event:ky_wan",
+   "predicate": "天象",
+   "value_text": "大雷风，雨下如注",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "会大雷风，屋瓦皆飞，雨下如注",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M20",
+   "subject": "event:ky_wan",
+   "predicate": "伤亡",
+   "value_text": "士卒溺死以万数",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "士卒溺死以万数，水为不流",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M20",
+   "subject": "event:ky_wan",
+   "predicate": "影响",
+   "value_text": "新室精锐丧尽",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "新室精锐丧尽，旋即土崩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M14",
+   "subject": "event:ky_wan",
+   "predicate": "兵力对比",
+   "value_text": "刘秀敢死士三千 vs 王莽军四十二万",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "选敢死士三千……将兵四十二万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "由原文兵力数字对比推出，悬殊极大",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M9",
+   "subject": "event:ky_wan",
+   "predicate": "兵力实数",
+   "value_text": "四十二万为虚数，实数待考",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "source": "synthesis",
+   "quote": "将兵四十二万（号百万）",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "county",
+   "note": "原文记载四十二万，号称百万，实数存疑",
+   "lead": {
+    "where": "kunyang",
+    "skills": [
+     "quantitative_analysis",
+     "historical_criticism"
+    ],
+    "accept": "考证王莽军实际兵力，对比其他史料记载"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KUNYANGG01",
+   "subject": "event:ky_wan",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX012_M9",
+  "KUNYANGG01"
+ ],
  "events": [
   {
    "id": "ev_ky_wan",

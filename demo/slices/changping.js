@@ -79,13 +79,13 @@ window.SANDBOX_SLICES["changping"] = {
    "id": "baiqi",
    "name": "白起",
    "side": "秦",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "zhao_kuo",
    "name": "赵括",
    "side": "赵",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "lianpo",
@@ -147,10 +147,293 @@ window.SANDBOX_SLICES["changping"] = {
    "place": "changping",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M7",
+   "subject": "event:cp_sd",
+   "predicate": "爆发",
+   "value_text": "秦赵决战于长平",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "长平之战，公元前260年秦赵决战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "原文无年号，仅记公元前260年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M7",
+   "subject": "person:zhao_kuo",
+   "predicate": "代将",
+   "value_text": "赵括代廉颇",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "赵孝成王中秦反间，以赵括代廉颇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M6",
+   "subject": "person:baiqi",
+   "predicate": "任上将",
+   "value_text": "秦秘任白起为上将",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "秦秘任白起为上将",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M7",
+   "subject": "event:cp_jz",
+   "predicate": "诱敌出击",
+   "value_text": "诱赵括出击",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "诱赵括出击，断其粮道",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M7",
+   "subject": "event:cp_jz",
+   "predicate": "围困",
+   "value_text": "围困赵军于长平丹水间",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "danze",
+   "source": "synthesis",
+   "quote": "围困赵军于长平丹水间",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M7",
+   "subject": "person:zhao_kuo",
+   "predicate": "阵亡",
+   "value_text": "赵括突围中箭死",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "赵括突围中箭死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M6",
+   "subject": "event:cp_kr",
+   "predicate": "坑杀降卒",
+   "value_text": "四十余万赵卒降，白起尽坑杀之",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "四十余万赵卒降，白起尽坑杀之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "数字为原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M7",
+   "subject": "event:cp_kr",
+   "predicate": "坑杀人数",
+   "value_text": "四十余万",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "四十余万赵卒降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "province",
+   "note": "学界对坑杀人数有争议，此处保留原文",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M7",
+   "subject": "event:cp_sd",
+   "predicate": "结果",
+   "value_text": "赵国自此大衰",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "赵国自此大衰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M7",
+   "subject": "person:zhao_kuo",
+   "predicate": "轻敌冒进",
+   "value_text": "赵括轻敌冒进",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "诱赵括出击",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "province",
+   "note": "原文未明说，由诱敌出击推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M7",
+   "subject": "event:cp_kr",
+   "predicate": "坑杀人数争议",
+   "value_text": "四十余万 vs 实数存疑",
+   "time": {
+    "era_text": "公元前260年",
+    "start": "-260-01-01",
+    "end": "-260-12-31",
+    "gregorian_year": -260
+   },
+   "place": "changping",
+   "source": "synthesis",
+   "quote": "四十余万赵卒降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "坑杀人数缺乏考古实证",
+   "lead": {
+    "where": "changping",
+    "skills": [
+     "考古",
+     "文献考据"
+    ],
+    "accept": "核实坑杀人数"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHANGPINGG01",
+   "subject": "event:cp_jz",
+   "predicate": "叙事缺环",
+   "value_text": "此战纪年与细节诸书互歧，现存叙述多据后世胜者所修史书，敌方视角的兵力、伤亡与动机常缺。",
+   "time": {
+    "era_text": "周赧王五十三年",
+    "start": "-262-01-01",
+    "end": "-262-12-31",
+    "gregorian_year": -262
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX011_M7",
+  "CHANGPINGG01"
+ ],
  "events": [
   {
    "id": "ev_cp_sd",

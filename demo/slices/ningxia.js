@@ -518,6 +518,28 @@ window.SANDBOX_SLICES["ningxia"] = {
    },
    "_party": "学界",
    "_faction": null
+  },
+  {
+   "id": "NXS01",
+   "subject": "event:ningxia_weikun",
+   "predicate": "实录所载",
+   "value_text": "明神宗实录于万历二十年诸卷记哱拜叛后，朝廷连下诏令调宣大、山西、辽东兵，命李如松为提督陕西讨逆军务总兵官赴宁围剿，并录平叛诸臣叙功。",
+   "time": {
+    "era_text": "万历二十年",
+    "start": "1592-01-01",
+    "end": "1592-12-31",
+    "gregorian_year": 1592
+   },
+   "place": "ningxia",
+   "source": "ming_shenzong_shilu",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "据明神宗实录所记诏令与叙功，补足明廷官方视角",
+   "_party": "明廷官方",
+   "_faction": null
   }
  ],
  "conflicts": [],

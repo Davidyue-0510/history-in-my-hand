@@ -138,10 +138,262 @@ window.SANDBOX_SLICES["yaksa"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "YK001",
+   "subject": "event:yk_qing",
+   "predicate": "集兵",
+   "value_text": "命都统彭春、黑龙江将军萨布素率水陆兵，携红衣炮",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "niuman",
+   "source": "synthesis",
+   "quote": "命都统彭春、黑龙江将军萨布素率水陆兵，携红衣炮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "出兵地点未明，暂以niuman代指集结地，待核",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK002",
+   "subject": "event:yk_qing",
+   "predicate": "围城",
+   "value_text": "围雅克萨",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "围雅克萨",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK003",
+   "subject": "event:yk_qing",
+   "predicate": "炮毁城垒",
+   "value_text": "清军炮毁其垒",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "清军炮毁其垒",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK004",
+   "subject": "event:yk_e",
+   "predicate": "请降",
+   "value_text": "俄酋额里克舍请降",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "俄酋额里克舍请降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "额里克舍为俄方首领，未列入白名单，故以event:yk_e代指俄方",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK005",
+   "subject": "event:yk_qing",
+   "predicate": "许降毁城",
+   "value_text": "清许其去，毁城而还",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "清许其去，毁城而还",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK006",
+   "subject": "event:yk_meng",
+   "predicate": "再据",
+   "value_text": "越二年，俄复据之",
+   "time": {
+    "era_text": "康熙二十六年",
+    "start": "1687-01-01",
+    "end": "1687-12-31",
+    "gregorian_year": 1687
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "越二年，俄复据之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "原文未明言具体年份，据康熙二十四年推算为二十六年，属推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK007",
+   "subject": "event:yk_qing",
+   "predicate": "再围",
+   "value_text": "清再围，俄乞和",
+   "time": {
+    "era_text": "康熙二十六年",
+    "start": "1687-01-01",
+    "end": "1687-12-31",
+    "gregorian_year": 1687
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "清再围，俄乞和",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "年份为推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK008",
+   "subject": "event:yk_meng",
+   "predicate": "订约",
+   "value_text": "《尼布楚条约》之订，划定中俄东段边界",
+   "time": {
+    "era_text": "康熙二十八年",
+    "start": "1689-01-01",
+    "end": "1689-12-31",
+    "gregorian_year": 1689
+   },
+   "place": "niuman",
+   "source": "synthesis",
+   "quote": "遂有康熙二十八年《尼布楚条约》之订，划定中俄东段边界",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "签约地点尼布楚不在白名单，以niuman代指，待核",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK009",
+   "subject": "event:yk_qing",
+   "predicate": "火器关键",
+   "value_text": "此役亦见火器之于城战的关键",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "亦见火器之于城战的关键",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "county",
+   "note": "原文为史家评述，非直接事实，故标inference",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YK010",
+   "subject": "event:yk_qing",
+   "predicate": "保疆卫土",
+   "value_text": "此役为清代抵御沙俄、保疆卫土之要",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": "yaksa",
+   "source": "synthesis",
+   "quote": "此役为清代抵御沙俄、保疆卫土之要",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "史家评价，非直接事实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YAKSAG01",
+   "subject": "event:yk_qing",
+   "predicate": "叙事缺环",
+   "value_text": "此役细节诸书记载互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+   "time": {
+    "era_text": "康熙二十四年",
+    "start": "1685-01-01",
+    "end": "1685-12-31",
+    "gregorian_year": 1685
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补败方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "YAKSAG01"
+ ],
  "events": [
   {
    "id": "ev_yk_qing",

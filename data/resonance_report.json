@@ -213,12 +213,14 @@
     {
       "scene": "boju",
       "name": "boju",
-      "total": 3,
+      "total": 17,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 13,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 17
       },
       "faction_counts": {},
       "event_count": 3,
@@ -248,12 +250,15 @@
     {
       "scene": "caishiji",
       "name": "caishiji",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "inference": 2,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -264,12 +269,15 @@
     {
       "scene": "canhebei",
       "name": "canhebei",
-      "total": 3,
+      "total": 13,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 13
       },
       "faction_counts": {},
       "event_count": 3,
@@ -280,12 +288,15 @@
     {
       "scene": "changping",
       "name": "changping",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 4,
+        "record": 8,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -312,12 +323,14 @@
     {
       "scene": "chengpu",
       "name": "chengpu",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 9,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -360,12 +373,15 @@
     {
       "scene": "chibi",
       "name": "chibi",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 9,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -394,12 +410,15 @@
     {
       "scene": "diaoyucheng",
       "name": "diaoyucheng",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 6,
+        "inference": 4,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -474,12 +493,15 @@
     {
       "scene": "feishui",
       "name": "feishui",
-      "total": 3,
+      "total": 13,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 13
       },
       "faction_counts": {},
       "event_count": 3,
@@ -578,12 +600,14 @@
     {
       "scene": "gaixia",
       "name": "gaixia",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -646,12 +670,14 @@
     {
       "scene": "guandu",
       "name": "guandu",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 12,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -685,12 +711,15 @@
     {
       "scene": "guiling",
       "name": "guiling",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "inference": 2,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -721,12 +750,15 @@
     {
       "scene": "heshangyuan",
       "name": "heshangyuan",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 2,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -817,12 +849,14 @@
     {
       "scene": "hulao",
       "name": "hulao",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -833,12 +867,15 @@
     {
       "scene": "humen",
       "name": "humen",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 3,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -902,15 +939,17 @@
     {
       "scene": "jingnan",
       "name": "jingnan",
-      "total": 2,
+      "total": 15,
       "layers": {
-        "scholarship": 2
+        "scholarship": 2,
+        "record": 12,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 2
+        "综合史料": 15
       },
       "faction_counts": {},
-      "event_count": 2,
+      "event_count": 8,
       "avg_resonance": 0.0,
       "best_event": "event:jn_1399",
       "best_resonance": 0.0
@@ -1031,12 +1070,15 @@
     {
       "scene": "julu",
       "name": "julu",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 8,
+        "inference": 2,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1085,12 +1127,15 @@
     {
       "scene": "kunyang",
       "name": "kunyang",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1236,12 +1281,14 @@
     {
       "scene": "maling",
       "name": "maling",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 11,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1290,12 +1337,14 @@
     {
       "scene": "mobai",
       "name": "mobai",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 11,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1306,20 +1355,22 @@
     {
       "scene": "ningxia",
       "name": "ningxia",
-      "total": 13,
+      "total": 14,
       "layers": {
         "record": 12,
-        "gap": 1
+        "gap": 1,
+        "scholarship": 1
       },
       "party_counts": {
         "清方": 12,
-        "综述考订": 1
+        "综述考订": 1,
+        "明方": 1
       },
       "faction_counts": {},
       "event_count": 3,
-      "avg_resonance": 0.305,
-      "best_event": "event:ningxia_qibing",
-      "best_resonance": 0.333
+      "avg_resonance": 0.417,
+      "best_event": "event:ningxia_weikun",
+      "best_resonance": 0.667
     },
     {
       "scene": "ningyuan",
@@ -1344,12 +1395,15 @@
     {
       "scene": "poyanghu",
       "name": "poyanghu",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 5,
+        "record": 7,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1573,12 +1627,15 @@
     {
       "scene": "suiyang",
       "name": "suiyang",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 9,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1605,12 +1662,15 @@
     {
       "scene": "talas",
       "name": "talas",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 2,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1659,12 +1719,15 @@
     {
       "scene": "tianjing",
       "name": "tianjing",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 4,
+        "record": 10,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1826,12 +1889,15 @@
     {
       "scene": "xiaoyaojin",
       "name": "xiaoyaojin",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 8,
+        "inference": 2,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1890,12 +1956,15 @@
     {
       "scene": "yaksa",
       "name": "yaksa",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 8,
+        "inference": 2,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1906,12 +1975,15 @@
     {
       "scene": "yancheng",
       "name": "yancheng",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1942,12 +2014,15 @@
     {
       "scene": "yaoshan",
       "name": "yaoshan",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 4,
+        "record": 8,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -2011,12 +2086,15 @@
     {
       "scene": "yiling",
       "name": "yiling",
-      "total": 3,
+      "total": 14,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 9,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 14
       },
       "faction_counts": {},
       "event_count": 3,
@@ -2155,12 +2233,15 @@
     {
       "scene": "zhongli",
       "name": "zhongli",
-      "total": 3,
+      "total": 13,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 7,
+        "inference": 1,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 13
       },
       "faction_counts": {},
       "event_count": 3,
@@ -2362,12 +2443,12 @@
       "scene_names": [
         "boju"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 4,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -2579,7 +2660,7 @@
       "scene_names": [
         "boju"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2672,7 +2753,7 @@
       "scene_names": [
         "boju"
       ],
-      "total": 1,
+      "total": 7,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2734,7 +2815,7 @@
       "scene_names": [
         "chibi"
       ],
-      "total": 1,
+      "total": 8,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2765,12 +2846,12 @@
       "scene_names": [
         "chibi"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 2,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.5,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -2827,12 +2908,12 @@
       "scene_names": [
         "canhebei"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -2858,7 +2939,7 @@
       "scene_names": [
         "canhebei"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2889,7 +2970,7 @@
       "scene_names": [
         "canhebei"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2920,12 +3001,12 @@
       "scene_names": [
         "chengpu"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -2951,7 +3032,7 @@
       "scene_names": [
         "chengpu"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -2984,12 +3065,12 @@
         "changping",
         "chengpu"
       ],
-      "total": 2,
-      "gap_count": 0,
+      "total": 7,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 1.0,
-      "gap_rate": 0.0,
+      "divergence": 0.25,
+      "gap_rate": 0.286,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3015,12 +3096,12 @@
       "scene_names": [
         "changping"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 4,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3046,7 +3127,7 @@
       "scene_names": [
         "changping"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -3201,12 +3282,12 @@
       "scene_names": [
         "caishiji"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 11,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.091,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3985,7 +4066,7 @@
       "scene_names": [
         "diaoyucheng"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -4016,12 +4097,12 @@
       "scene_names": [
         "diaoyucheng"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -4047,7 +4128,7 @@
       "scene_names": [
         "diaoyucheng"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -4718,7 +4799,7 @@
       "scene_names": [
         "feishui"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -4780,12 +4861,12 @@
       "scene_names": [
         "feishui"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -4966,12 +5047,12 @@
       "scene_names": [
         "guandu"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 4,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -4997,7 +5078,7 @@
       "scene_names": [
         "guandu"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5028,7 +5109,7 @@
       "scene_names": [
         "guandu"
       ],
-      "total": 1,
+      "total": 6,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5059,12 +5140,12 @@
       "scene_names": [
         "guiling"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -5121,7 +5202,7 @@
       "scene_names": [
         "guiling"
       ],
-      "total": 1,
+      "total": 6,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5245,7 +5326,7 @@
       "scene_names": [
         "gaixia"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5276,12 +5357,12 @@
       "scene_names": [
         "gaixia"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -5307,7 +5388,7 @@
       "scene_names": [
         "gaixia"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5834,7 +5915,7 @@
       "scene_names": [
         "hulao"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5865,7 +5946,7 @@
       "scene_names": [
         "hulao"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5896,12 +5977,12 @@
       "scene_names": [
         "hulao"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -5927,12 +6008,12 @@
       "scene_names": [
         "humen"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
+      "divergence": 0.167,
+      "gap_rate": 0.125,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -5958,7 +6039,7 @@
       "scene_names": [
         "humen"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -5989,7 +6070,7 @@
       "scene_names": [
         "humen"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -6020,12 +6101,12 @@
       "scene_names": [
         "heshangyuan"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -6268,7 +6349,7 @@
       "scene_names": [
         "julu"
       ],
-      "total": 1,
+      "total": 5,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -6299,7 +6380,7 @@
       "scene_names": [
         "julu"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -6330,12 +6411,12 @@
       "scene_names": [
         "julu"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -6361,7 +6442,7 @@
       "scene_names": [
         "jingnan"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -6392,7 +6473,193 @@
       "scene_names": [
         "jingnan"
       ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_baigouhe",
+      "name": "event:jn_baigouhe",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_dongchang",
+      "name": "event:jn_dongchang",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
       "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_jiahe",
+      "name": "event:jn_jiahe",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_jinan",
+      "name": "event:jn_jinan",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_zhengcunba",
+      "name": "event:jn_zhengcunba",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:jn_zhenping",
+      "name": "event:jn_zhenping",
+      "scenes": [
+        "jingnan"
+      ],
+      "scene_names": [
+        "jingnan"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -6986,12 +7253,12 @@
       "scene_names": [
         "kunyang"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 11,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.182,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -7701,12 +7968,12 @@
       "scene_names": [
         "mobai"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -7732,11 +7999,11 @@
       "scene_names": [
         "mobai"
       ],
-      "total": 1,
+      "total": 5,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.0,
+      "divergence": 0.25,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
@@ -7763,7 +8030,7 @@
       "scene_names": [
         "mobai"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -7887,12 +8154,12 @@
       "scene_names": [
         "maling"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 5,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.2,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -7949,7 +8216,7 @@
       "scene_names": [
         "maling"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -7980,12 +8247,12 @@
       "scene_names": [
         "poyanghu"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
+      "divergence": 0.2,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -8011,11 +8278,11 @@
       "scene_names": [
         "poyanghu"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.0,
+      "divergence": 0.333,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
@@ -8042,7 +8309,7 @@
       "scene_names": [
         "poyanghu"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -8887,7 +9154,7 @@
       "scene_names": [
         "suiyang"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -8918,7 +9185,7 @@
       "scene_names": [
         "suiyang"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -8949,12 +9216,12 @@
       "scene_names": [
         "suiyang"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -8980,7 +9247,7 @@
       "scene_names": [
         "tianjing"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -9011,7 +9278,7 @@
       "scene_names": [
         "tianjing"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -9042,12 +9309,12 @@
       "scene_names": [
         "tianjing"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.125,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -9073,7 +9340,7 @@
       "scene_names": [
         "talas"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -9135,12 +9402,12 @@
       "scene_names": [
         "talas"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10220,12 +10487,12 @@
       "scene_names": [
         "xiaoyaojin"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.125,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10406,12 +10673,12 @@
       "scene_names": [
         "yancheng"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 12,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.083,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10437,7 +10704,7 @@
       "scene_names": [
         "yaksa"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -10468,7 +10735,7 @@
       "scene_names": [
         "yaksa"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -10499,12 +10766,12 @@
       "scene_names": [
         "yaksa"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.111,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10530,7 +10797,7 @@
       "scene_names": [
         "yiling"
       ],
-      "total": 1,
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -10561,12 +10828,12 @@
       "scene_names": [
         "yiling"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 6,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10592,11 +10859,11 @@
       "scene_names": [
         "yiling"
       ],
-      "total": 1,
+      "total": 4,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.0,
+      "divergence": 0.333,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
@@ -10716,12 +10983,12 @@
       "scene_names": [
         "yaoshan"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 8,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.125,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -11243,12 +11510,12 @@
       "scene_names": [
         "zhongli"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 9,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.222,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -13358,54 +13625,6 @@
       }
     },
     {
-      "subject": "event:ningxia_weikun",
-      "name": "event:ningxia_weikun",
-      "scenes": [
-        "ningxia"
-      ],
-      "scene_names": [
-        "ningxia"
-      ],
-      "total": 2,
-      "gap_count": 0,
-      "coverage": "1/3",
-      "coverage_frac": 0.333,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.333,
-      "party_counts": {
-        "明方": 0,
-        "清方": 2,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [
-          {
-            "id": "SX007_M4",
-            "predicate": "围困",
-            "value_text": "总督魏学曾收复河西四十七堡，惟宁夏镇不下",
-            "source": "mingshi_ningxia",
-            "layer": "record",
-            "scene": "ningxia"
-          },
-          {
-            "id": "SX008_M5",
-            "predicate": "调兵",
-            "value_text": "调副将麻贵驰援，又调李如松为宁夏总兵围剿",
-            "source": "mingshi_ningxia",
-            "layer": "record",
-            "scene": "ningxia"
-          }
-        ],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
       "subject": "event:ningyuan_wusangui",
       "name": "event:ningyuan_wusangui",
       "scenes": [
@@ -15384,6 +15603,63 @@
             "source": "mingshi",
             "layer": "record",
             "scene": "ningyuan"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningxia_weikun",
+      "name": "event:ningxia_weikun",
+      "scenes": [
+        "ningxia"
+      ],
+      "scene_names": [
+        "ningxia"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.667,
+      "party_counts": {
+        "明方": 1,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "NXS01",
+            "predicate": "实录所载",
+            "value_text": "明神宗实录于万历二十年诸卷记哱拜叛后，朝廷连下诏令调宣大、山西、辽东兵，命李如松为提督陕西讨逆军务总兵官赴宁围剿，并录平叛诸臣叙功。",
+            "source": "ming_shenzong_shilu",
+            "layer": "scholarship",
+            "scene": "ningxia"
+          }
+        ],
+        "清方": [
+          {
+            "id": "SX007_M4",
+            "predicate": "围困",
+            "value_text": "总督魏学曾收复河西四十七堡，惟宁夏镇不下",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX008_M5",
+            "predicate": "调兵",
+            "value_text": "调副将麻贵驰援，又调李如松为宁夏总兵围剿",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
           }
         ],
         "朝鲜": [],

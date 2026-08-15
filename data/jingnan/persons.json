@@ -11,6 +11,69 @@
    "name": "建文帝",
    "side": "明",
    "influence": 0
+  },
+  {
+   "id": "qitai",
+   "name": "齐泰",
+   "side": "建文军",
+   "influence": 0,
+   "note": "兵部尚书，削藩主谋之一。"
+  },
+  {
+   "id": "huangzicheng",
+   "name": "黄子澄",
+   "side": "建文军",
+   "influence": 0,
+   "note": "翰林学士，削藩主谋之一。"
+  },
+  {
+   "id": "lijinglong",
+   "name": "李景隆",
+   "side": "建文军",
+   "influence": 0,
+   "note": "曹国公，继耿炳文为帅，兵败于郑村坝、白沟河。"
+  },
+  {
+   "id": "gengbingwen",
+   "name": "耿炳文",
+   "side": "建文军",
+   "influence": 0,
+   "note": "老将，首任征燕大将军，真定挫败。"
+  },
+  {
+   "id": "tiexuan",
+   "name": "铁铉",
+   "side": "建文军",
+   "influence": 0,
+   "note": "山东参政，死守济南，后不屈死。"
+  },
+  {
+   "id": "shengyong",
+   "name": "盛庸",
+   "side": "建文军",
+   "influence": 0,
+   "note": "大将，东昌大破燕军，夹河、藁城再战。"
+  },
+  {
+   "id": "zhangyu",
+   "name": "张玉",
+   "side": "燕军",
+   "influence": 0,
+   "note": "燕军骁将，东昌战死。"
+  },
+  {
+   "id": "zhuneng",
+   "name": "朱能",
+   "side": "燕军",
+   "influence": 0,
+   "note": "燕军骁将，真定、郑村坝立功。"
+  },
+  {
+   "id": "ningwang",
+   "name": "宁王朱权",
+   "side": "燕/宁王",
+   "influence": 0,
+   "note": "就藩大宁，为燕军挟持，所部朵颜三卫助燕。"
   }
  ]
 }
