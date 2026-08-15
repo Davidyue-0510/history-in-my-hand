@@ -1,0 +1,15 @@
+{
+  "persons": [
+    {"id": "bo_bai", "name": "哱拜", "side": "ming", "role": "叛将（蒙古降人）", "note": "主导宁夏叛，城破自尽合家自焚。"},
+    {"id": "bo_chengen", "name": "哱承恩", "side": "ming", "role": "哱拜子", "note": "袭指挥使，从叛，城破被擒，十二月磔于西安。"},
+    {"id": "liu_dongyang", "name": "刘东旸", "side": "ming", "role": "叛", "note": "自称总兵，九月杀土文秀，旋被哱拜杀。"},
+    {"id": "dang_xin", "name": "党馨", "side": "ming", "role": "巡抚", "note": "宁夏巡抚，被哱拜所杀。"},
+    {"id": "wei_xuezeng", "name": "魏学曾", "side": "ming", "role": "总督", "note": "主招安被革职，叶梦熊代之，后复职。"},
+    {"id": "ye_mengxiong", "name": "叶梦熊", "side": "ming", "role": "总督陕西三边", "note": "代魏学曾，定计决黄河灌城。"},
+    {"id": "mei_guozhen", "name": "梅国桢", "side": "ming", "role": "监军御史", "note": "定计灌城，受哱承恩谒。"},
+    {"id": "li_rusong", "name": "李如松", "side": "ming", "role": "宁夏总兵", "note": "援朝同时任宁夏总兵围剿哱拜。"},
+    {"id": "ma_gui", "name": "麻贵", "side": "ming", "role": "副将", "note": "参与攻宁夏城。"},
+    {"id": "xiao_ruxun", "name": "萧如薰", "side": "ming", "role": "参将", "note": "坚守平虏城不降。"},
+    {"id": "shi_xing", "name": "石星", "side": "ming", "role": "兵部尚书", "note": "议决黄河之水灌淹宁夏城。"}
+  ]
+}

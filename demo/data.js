@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 128 个切片
+// 权威数据源：data/scenes.json 注册的 130 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 128 个切片",
+  "slice": "multi-scene · 130 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -118,6 +118,16 @@ window.SANDBOX_DATA = {
    "note": "播州之役、平缅、奢安之乱等西南土司与改土归流，是明帝国经略西南、拉伸统治半径的关键战场。"
   },
   {
+   "id": "xibei",
+   "name": "西北·九边",
+   "note": "宁夏、甘肃、宣大等九边重镇，明蒙对峙与内部兵变前线，万历三大征之宁夏之役爆发于此。"
+  },
+  {
+   "id": "jiangnan",
+   "name": "江南·南都",
+   "note": "南京及其腹地，南明弘光政权根基，清军南下时扬州、江阴等地抵抗与劫难集中于此。"
+  },
+  {
    "id": "ecology",
    "name": "天灾与生态",
    "note": "黄河以「善淤善决善徙」著称，史称「六年一决、百年一改道」。本切片列其历次大改道与夺淮、北归。"
@@ -188,6 +198,8 @@ window.SANDBOX_DATA = {
   "juehua",
   "juehua1626",
   "bozhou",
+  "ningxia",
+  "yangzhou",
   "novel_fandao",
   "novel_fandao_2",
   "novel_fandao_3",
@@ -7750,6 +7762,56 @@ window.SANDBOX_DATA = {
     "inference": 0
    }
   },
+  "ningxia": {
+   "key": "ningxia",
+   "scene_id": "ningxia",
+   "title": "宁夏之役·哱拜之乱",
+   "dossier_label": "宁夏",
+   "subtitle": "万历二十年 (1592) · 平哱拜叛",
+   "kind": "battle",
+   "region": "xibei",
+   "page": "ningxia.html",
+   "primary_place": "ningxia",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "liaodong",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 3,
+    "place": 4,
+    "person": 11,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 0,
+    "inference": 0
+   }
+  },
+  "yangzhou": {
+   "key": "yangzhou",
+   "scene_id": "yangzhou",
+   "title": "扬州十日·乙酉之难",
+   "dossier_label": "扬州",
+   "subtitle": "顺治二年 (1645) · 清军南下屠城",
+   "kind": "battle",
+   "region": "jiangnan",
+   "page": "yangzhou.html",
+   "primary_place": "yangzhou",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "liaodong",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 4,
+    "place": 3,
+    "person": 5,
+    "assert": 11,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 0
+   }
+  },
   "novel_fandao": {
    "key": "novel_fandao",
    "scene_id": "novel_fandao",
@@ -8741,13 +8803,13 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 4,
-    "person": 3,
-    "assert": 3,
+    "person": 6,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 10,
     "scholarship": 3,
-    "inference": 0
+    "inference": 1
    }
   },
   "beijing": {
@@ -8766,11 +8828,11 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 4,
-    "person": 3,
-    "assert": 3,
+    "person": 4,
+    "assert": 16,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 12,
     "scholarship": 3,
     "inference": 0
    }
@@ -10496,6 +10558,8 @@ window.SANDBOX_DATA = {
   "juehua": "slices/juehua.js",
   "juehua1626": "slices/juehua1626.js",
   "bozhou": "slices/bozhou.js",
+  "ningxia": "slices/ningxia.js",
+  "yangzhou": "slices/yangzhou.js",
   "novel_fandao": "slices/novel_fandao.js",
   "novel_fandao_2": "slices/novel_fandao_2.js",
   "novel_fandao_3": "slices/novel_fandao_3.js",
@@ -10671,6 +10735,22 @@ window.SANDBOX_DATA = {
   "_comment": "可认领的研究线索（v0.5）。每条 gap 断言的 lead 块汇总而成。新增 gap + lead 即可出现在此；hub / county 页的「线索」页签自动渲染。",
   "_schema_version": "0.1",
   "leads": [
+   {
+    "id": "BJG01",
+    "scene": "beijing",
+    "subject": "event:bj_desheng",
+    "title": "北京保卫战以明方（明史于谦传/英宗实录）叙于谦社稷功为主，瓦剌方记载缺失，也先撤军真实动因与伤亡数字多不可考",
+    "missing": "史料搜集 / 蒙文文书释读",
+    "where": "瓦剌/蒙古侧记载、明代敌情塘报",
+    "skills": [
+     "史料搜集",
+     "蒙文文书释读"
+    ],
+    "accept": "补瓦剌方视角，平衡单一明方叙事",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
    {
     "id": "BZG01",
     "scene": "bozhou",
@@ -11115,6 +11195,22 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 26
+   },
+   {
+    "id": "NXG01",
+    "scene": "ningxia",
+    "subject": "event:ningxia_pingding",
+    "title": "宁夏之役以明方平叛凯旋叙事为主，哱拜及其部众的起事动因、宁夏镇兵变的地方社会背景多缺失",
+    "missing": "史料搜集 / 边军文书释读",
+    "where": "宁夏地方文书、哱拜部众口供原卷",
+    "skills": [
+     "史料搜集",
+     "边军文书释读"
+    ],
+    "accept": "补叛方与地方视角，平衡凯旋叙事",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
    },
    {
     "id": "N010",
@@ -11611,6 +11707,37 @@ window.SANDBOX_DATA = {
     "_src_line": 19
    },
    {
+    "id": "TM012",
+    "scene": "tumu",
+    "subject": "event:tm_collapse",
+    "title": "死伤数十万",
+    "missing": "quantitative_analysis",
+    "where": "tumu",
+    "skills": [
+     "quantitative_analysis"
+    ],
+    "accept": "核实土木堡之变明军实际兵力与伤亡数字",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
+   },
+   {
+    "id": "SX010_M5",
+    "scene": "yangzhou",
+    "subject": "event:yangzhou_tu",
+    "title": "八十万 vs 不列数 vs 未提",
+    "missing": "史料考据 / 量化分析",
+    "where": "扬州十日遇害人数",
+    "skills": [
+     "史料考据",
+     "量化分析"
+    ],
+    "accept": "需综合明遗民、清方、西人记载，给出可信区间",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
     "id": "Y010",
     "scene": "yehe",
     "subject": "place:xiyehe",
@@ -11739,6 +11866,7 @@ window.SANDBOX_DATA = {
     "ming_fall",
     "mingmo_dangzheng",
     "mobai",
+    "ningxia",
     "ningyuan",
     "poyanghu",
     "qin_mie_liu_guo",
@@ -11774,6 +11902,7 @@ window.SANDBOX_DATA = {
     "xuanzang",
     "yaksa",
     "yancheng",
+    "yangzhou",
     "yaoshan",
     "yashan",
     "yehe",
@@ -11823,17 +11952,19 @@ window.SANDBOX_DATA = {
    {
     "scene": "beijing",
     "name": "beijing",
-    "total": 3,
+    "total": 16,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 12,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 16
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 7,
     "avg_resonance": 0.0,
-    "best_event": "event:bj_jz",
+    "best_event": "event:bj_consequence",
     "best_resonance": 0.0
    },
    {
@@ -12962,6 +13093,24 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "ningxia",
+    "name": "ningxia",
+    "total": 13,
+    "layers": {
+     "record": 12,
+     "gap": 1
+    },
+    "party_counts": {
+     "清方": 12,
+     "综述考订": 1
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.305,
+    "best_event": "event:ningxia_qibing",
+    "best_resonance": 0.333
+   },
+   {
     "scene": "ningyuan",
     "name": "ningyuan",
     "total": 43,
@@ -13335,17 +13484,20 @@ window.SANDBOX_DATA = {
    {
     "scene": "tumu",
     "name": "tumu",
-    "total": 3,
+    "total": 15,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 10,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 15
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 8,
     "avg_resonance": 0.0,
-    "best_event": "event:tm_jz",
+    "best_event": "event:tm_capture",
     "best_resonance": 0.0
    },
    {
@@ -13555,6 +13707,26 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.0,
     "best_event": "event:yc_jz",
     "best_resonance": 0.0
+   },
+   {
+    "scene": "yangzhou",
+    "name": "yangzhou",
+    "total": 11,
+    "layers": {
+     "record": 9,
+     "gap": 1,
+     "scholarship": 1
+    },
+    "party_counts": {
+     "明方": 8,
+     "清方": 2,
+     "综述考订": 1
+    },
+    "faction_counts": {},
+    "event_count": 4,
+    "avg_resonance": 0.342,
+    "best_event": "event:yangzhou_tu",
+    "best_resonance": 0.37
    },
    {
     "scene": "yaoshan",

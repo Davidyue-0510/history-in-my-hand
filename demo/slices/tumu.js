@@ -84,6 +84,24 @@ window.SANDBOX_SLICES["tumu"] = {
    "name": "也先",
    "side": "瓦剌",
    "influence": 0
+  },
+  {
+   "id": "zhangfu",
+   "name": "张辅",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "kuangye",
+   "name": "邝埜",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "fanzhong",
+   "name": "樊忠",
+   "side": "明",
+   "influence": 0
   }
  ],
  "assertions": [
@@ -139,10 +157,283 @@ window.SANDBOX_SLICES["tumu"] = {
    "place": "tumu",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "TM001",
+   "subject": "event:tm_ying",
+   "predicate": "爆发",
+   "value_text": "瓦剌太师也先大举入寇",
+   "time": {
+    "era_text": "正统十四年七月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "瓦剌太师也先大举入寇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "战役起因，也先入侵",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM002",
+   "subject": "event:tm_wa",
+   "predicate": "集兵",
+   "value_text": "调集京师及各地兵马约五十万",
+   "time": {
+    "era_text": "正统十四年七月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "调集京师及各地兵马约五十万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "兵力为约数，可能夸大",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM003",
+   "subject": "event:tm_wa",
+   "predicate": "出击路线",
+   "value_text": "出居庸关，过宣府，至大同",
+   "time": {
+    "era_text": "正统十四年七月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "xuanfu",
+   "source": "synthesis",
+   "quote": "出居庸关，过宣府，至大同",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "亲征路线",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM004",
+   "subject": "event:tm_jz",
+   "predicate": "战败",
+   "value_text": "大同前哨明军战败",
+   "time": {
+    "era_text": "正统十四年七月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "datong",
+   "source": "synthesis",
+   "quote": "大同前哨明军战败",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "前哨失利",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM005",
+   "subject": "event:tm_collapse",
+   "predicate": "溃败",
+   "value_text": "明军大乱，自相践踏，死伤数十万",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "synthesis",
+   "quote": "明军大乱，自相践踏，死伤数十万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "死伤数字可能夸大",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM006",
+   "subject": "event:tm_minister",
+   "predicate": "阵亡",
+   "value_text": "张辅、邝埜、王佐等数十名重臣战死",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "synthesis",
+   "quote": "英国公张辅、兵部尚书邝埜、户部尚书王佐、刑部侍郎丁铉等数十名重臣战死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "重臣死难",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM007",
+   "subject": "event:tm_wangzhen",
+   "predicate": "被杀",
+   "value_text": "王振为樊忠锤杀",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "synthesis",
+   "quote": "宦官王振为护卫将军樊忠锤杀",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "王振之死",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM008",
+   "subject": "event:tm_capture",
+   "predicate": "被俘",
+   "value_text": "明英宗为瓦剌所执",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "synthesis",
+   "quote": "明英宗突围不得，下马盘膝面南而坐，为瓦剌所执",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "英宗被俘",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM009",
+   "subject": "event:tm_consequence",
+   "predicate": "影响",
+   "value_text": "京师震动，有迁都之议",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "败报至京师，举朝震恐，有迁都南京之议",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "战后朝局",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM010",
+   "subject": "event:tm_consequence",
+   "predicate": "决策",
+   "value_text": "于谦力主留守抗战",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "兵部侍郎于谦力言「京师天下根本，一动则大事去矣」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "北京保卫战前奏",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM011",
+   "subject": "event:tm_collapse",
+   "predicate": "原因",
+   "value_text": "王振乱命折返，延误军机",
+   "time": {
+    "era_text": "正统十四年七月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "王振闻讯震惧，乱命大军折返",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "推断王振指挥失误为溃败主因",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TM012",
+   "subject": "event:tm_collapse",
+   "predicate": "兵力",
+   "value_text": "死伤数十万",
+   "time": {
+    "era_text": "正统十四年八月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "synthesis",
+   "quote": "死伤数十万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "死伤数字与集兵五十万存在口径差异，需核验",
+   "lead": {
+    "where": "tumu",
+    "skills": [
+     "quantitative_analysis"
+    ],
+    "accept": "核实土木堡之变明军实际兵力与伤亡数字"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "TM012"
+ ],
  "events": [
   {
    "id": "ev_tm_ying",
@@ -172,6 +463,56 @@ window.SANDBOX_SLICES["tumu"] = {
    "kind": "战事",
    "text": "明军溃，英宗被俘。",
    "place": "tumu"
+  },
+  {
+   "id": "ev_tm_collapse",
+   "subject": "event:tm_collapse",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "土木堡溃败",
+   "kind": "战事",
+   "text": "也先佯败诱明军移营，乘大风扬尘突袭，明军大乱自相践踏，死伤数十万，兵械辎重尽失。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_minister",
+   "subject": "event:tm_minister",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "大臣死难",
+   "kind": "死难",
+   "text": "英国公张辅、兵部尚书邝埜、户部尚书王佐、刑部侍郎丁铉等数十名文武大臣战死。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_wangzhen",
+   "subject": "event:tm_wangzhen",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "王振被杀",
+   "kind": "死难",
+   "text": "护卫将军樊忠锤杀王振，曰「吾为天下诛此贼」。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_capture",
+   "subject": "event:tm_capture",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "英宗被俘",
+   "kind": "被俘",
+   "text": "英宗突围不得，下马盘膝面南坐，为瓦剌所执，北狩。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_consequence",
+   "subject": "event:tm_consequence",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "京师震恐",
+   "kind": "后果",
+   "text": "败报至京，举朝震恐，有迁都之议，于谦力主留守。",
+   "place": "beijing"
   }
  ],
  "engagements": [

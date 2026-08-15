@@ -17,6 +17,24 @@
    "name": "也先",
    "side": "瓦剌",
    "influence": 0
+  },
+  {
+   "id": "zhangfu",
+   "name": "张辅",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "kuangye",
+   "name": "邝埜",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "fanzhong",
+   "name": "樊忠",
+   "side": "明",
+   "influence": 0
   }
  ]
 }

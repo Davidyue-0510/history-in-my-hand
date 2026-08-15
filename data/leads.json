@@ -3,6 +3,22 @@
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "BJG01",
+   "scene": "beijing",
+   "subject": "event:bj_desheng",
+   "title": "北京保卫战以明方（明史于谦传/英宗实录）叙于谦社稷功为主，瓦剌方记载缺失，也先撤军真实动因与伤亡数字多不可考",
+   "missing": "史料搜集 / 蒙文文书释读",
+   "where": "瓦剌/蒙古侧记载、明代敌情塘报",
+   "skills": [
+    "史料搜集",
+    "蒙文文书释读"
+   ],
+   "accept": "补瓦剌方视角，平衡单一明方叙事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "BZG01",
    "scene": "bozhou",
    "subject": "event:bozhou_hailong",
@@ -446,6 +462,22 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 26
+  },
+  {
+   "id": "NXG01",
+   "scene": "ningxia",
+   "subject": "event:ningxia_pingding",
+   "title": "宁夏之役以明方平叛凯旋叙事为主，哱拜及其部众的起事动因、宁夏镇兵变的地方社会背景多缺失",
+   "missing": "史料搜集 / 边军文书释读",
+   "where": "宁夏地方文书、哱拜部众口供原卷",
+   "skills": [
+    "史料搜集",
+    "边军文书释读"
+   ],
+   "accept": "补叛方与地方视角，平衡凯旋叙事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "N010",
@@ -940,6 +972,37 @@
    "effort": "1-2 周",
    "issue_url": null,
    "_src_line": 19
+  },
+  {
+   "id": "TM012",
+   "scene": "tumu",
+   "subject": "event:tm_collapse",
+   "title": "死伤数十万",
+   "missing": "quantitative_analysis",
+   "where": "tumu",
+   "skills": [
+    "quantitative_analysis"
+   ],
+   "accept": "核实土木堡之变明军实际兵力与伤亡数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SX010_M5",
+   "scene": "yangzhou",
+   "subject": "event:yangzhou_tu",
+   "title": "八十万 vs 不列数 vs 未提",
+   "missing": "史料考据 / 量化分析",
+   "where": "扬州十日遇害人数",
+   "skills": [
+    "史料考据",
+    "量化分析"
+   ],
+   "accept": "需综合明遗民、清方、西人记载，给出可信区间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "Y010",

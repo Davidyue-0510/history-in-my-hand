@@ -1,0 +1,9 @@
+{
+  "persons": [
+    {"id": "shi_kafa", "name": "史可法", "side": "ming", "role": "南明兵部尚书", "note": "守扬州殉国。"},
+    {"id": "duoduo", "name": "多铎", "side": "qing", "role": "清豫亲王", "note": "攻扬州、下令屠城。"},
+    {"id": "liu_zhaoji", "name": "刘肇基", "side": "ming", "role": "南明将", "note": "赴援扬州。"},
+    {"id": "hongguang", "name": "弘光帝朱由崧", "side": "ming", "role": "南明帝", "note": "南京降，政权旋灭。"},
+    {"id": "yangzhou_jiri", "name": "王秀楚", "side": "ming", "role": "明遗民", "note": "《扬州十日记》作者，记屠城八十万。"}
+  ]
+}

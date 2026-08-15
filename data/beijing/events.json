@@ -28,6 +28,46 @@
    "kind": "战事",
    "text": "明军九门拒守，瓦剌退。",
    "place": "desheng"
+  },
+  {
+   "id": "ev_bj_mobilize",
+   "subject": "event:bj_mobilize",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "于谦整军列九门",
+   "kind": "部署",
+   "text": "于谦提督各营，分遣诸将帅兵二十二万陈于京城九门，申明军法连坐，背城迎敌。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_bj_desheng",
+   "subject": "event:bj_desheng",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "德胜门大捷",
+   "kind": "战事",
+   "text": "也先攻德胜门，于谦伏石亨于民房，范广神机营火炮毙瓦剌平章卯那孩、也先弟孛罗，瓦剌大败。",
+   "place": "desheng"
+  },
+  {
+   "id": "ev_bj_retreat",
+   "subject": "event:bj_retreat",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "也先退兵",
+   "kind": "退兵",
+   "text": "也先攻城不下、闻援军将至恐退路绝，夜半北退，明军追击，十一月初八退出塞外。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_bj_consequence",
+   "subject": "event:bj_consequence",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "京师保·明存续",
+   "kind": "后果",
+   "text": "北京保卫战明胜，瓦剌退，明朝渡危，翌年景泰改元、也先释英宗归。",
+   "place": "beijing"
   }
  ]
 }

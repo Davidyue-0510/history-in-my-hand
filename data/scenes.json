@@ -122,6 +122,16 @@
       "note": "播州之役、平缅、奢安之乱等西南土司与改土归流，是明帝国经略西南、拉伸统治半径的关键战场。"
     },
     {
+      "id": "xibei",
+      "name": "西北·九边",
+      "note": "宁夏、甘肃、宣大等九边重镇，明蒙对峙与内部兵变前线，万历三大征之宁夏之役爆发于此。"
+    },
+    {
+      "id": "jiangnan",
+      "name": "江南·南都",
+      "note": "南京及其腹地，南明弘光政权根基，清军南下时扬州、江阴等地抵抗与劫难集中于此。"
+    },
+    {
       "id": "ecology",
       "name": "天灾与生态",
       "note": "黄河以「善淤善决善徙」著称，史称「六年一决、百年一改道」。本切片列其历次大改道与夺淮、北归。"
@@ -192,6 +202,8 @@
     "juehua",
     "juehua1626",
     "bozhou",
+    "ningxia",
+    "yangzhou",
     "novel_fandao",
     "novel_fandao_2",
     "novel_fandao_3",
@@ -3154,6 +3166,72 @@
         "person:tian_cifeng": "田雌凤",
         "person:wu_guang": "吴广",
         "person:yang_kezhou": "杨可栋"
+      }
+    },
+    "ningxia": {
+      "kind": "battle",
+      "region": "xibei",
+      "title": "宁夏之役·哱拜之乱",
+      "dossier_label": "宁夏",
+      "subtitle": "万历二十年 (1592) · 平哱拜叛",
+      "primary_place": "ningxia",
+      "dossier_event": "event:ningxia_pingding",
+      "back": "西北",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "万历二十年二月，宁夏致仕副总兵哱拜杀巡抚党馨、副使石继芳，逼总兵张维忠自杀，连陷河西四十七堡，据宁夏镇称王。总督魏学曾收复诸堡惟宁夏镇不下，兵部尚书石星议决黄河灌城；魏学曾主招安被革，叶梦熊代之，与梅国桢定计决堤水淹。十月明军入城，哱拜自尽合家自焚，哱承恩被擒，十二月磔于西安。前后八月，与朝鲜之役、播州之役并称万历三大征。",
+      "parties_note": "宁夏之役以明方（明史/明神宗实录）叙事为主；现代综述重其平叛与西北边防。系统不裁决，只并列。",
+      "subject_names": {
+        "event:ningxia_qibing": "哱拜起事",
+        "event:ningxia_weikun": "围城灌水",
+        "event:ningxia_pingding": "城破平定",
+        "place:ningxia": "宁夏镇",
+        "place:pinglu": "平虏城",
+        "place:lingzhou": "灵州",
+        "place:huama": "花马池",
+        "person:bo_bai": "哱拜",
+        "person:bo_chengen": "哱承恩",
+        "person:liu_dongyang": "刘东旸",
+        "person:dang_xin": "党馨",
+        "person:wei_xuezeng": "魏学曾",
+        "person:ye_mengxiong": "叶梦熊",
+        "person:mei_guozhen": "梅国桢",
+        "person:li_rusong": "李如松",
+        "person:ma_gui": "麻贵",
+        "person:xiao_ruxun": "萧如薰",
+        "person:shi_xing": "石星"
+      }
+    },
+    "yangzhou": {
+      "kind": "battle",
+      "region": "jiangnan",
+      "title": "扬州十日·乙酉之难",
+      "dossier_label": "扬州",
+      "subtitle": "顺治二年 (1645) · 清军南下屠城",
+      "primary_place": "yangzhou",
+      "dossier_event": "event:yangzhou_tu",
+      "back": "江南",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "顺治二年四月，清豫亲王多铎率军南下攻扬州，南明兵部尚书史可法回扬州筹防，檄诸镇援，仅刘肇基等少数至，孤城拒守。二十四日红夷大炮轰城，二十五日总攻破城，史可法自刎不遂被执，劝降不应，请无杀扬州人，遂被杀。多铎破城后下令屠城；明遗民王秀楚《扬州十日记》记屠城五日、遇害八十万，清方如雍正《扬州府志》仅云「屠杀甚惨」不列数，立场一在控诉一在讳饰。五日后封刀，多铎谕南京「维扬可鉴」，旋入南京，弘光灭。",
+      "parties_note": "扬州十日三方立场尖锐：明遗民（扬州十日记）控诉屠城八十万；清方官史讳饰人数；第三方（卫匡国鞑靼战纪）记全城洗劫而未提八十万。系统不裁决，只并列。",
+      "subject_names": {
+        "event:yangzhou_shou": "史可法守扬州",
+        "event:yangzhou_po": "城破殉国",
+        "event:yangzhou_tu": "多铎屠城",
+        "event:yangzhou_jiang": "谕南京·弘光灭",
+        "place:yangzhou": "扬州",
+        "place:nanjing": "南京",
+        "place:guazhou": "瓜洲",
+        "person:shi_kafa": "史可法",
+        "person:duoduo": "多铎",
+        "person:liu_zhaoji": "刘肇基",
+        "person:hongguang": "弘光帝",
+        "person:yangzhou_jiri": "王秀楚"
       }
     },
     "mingmo_dangzheng": {

@@ -77,6 +77,7 @@
       "ming_fall",
       "mingmo_dangzheng",
       "mobai",
+      "ningxia",
       "ningyuan",
       "poyanghu",
       "qin_mie_liu_guo",
@@ -112,6 +113,7 @@
       "xuanzang",
       "yaksa",
       "yancheng",
+      "yangzhou",
       "yaoshan",
       "yashan",
       "yehe",
@@ -161,17 +163,19 @@
     {
       "scene": "beijing",
       "name": "beijing",
-      "total": 3,
+      "total": 16,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 12,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 16
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 7,
       "avg_resonance": 0.0,
-      "best_event": "event:bj_jz",
+      "best_event": "event:bj_consequence",
       "best_resonance": 0.0
     },
     {
@@ -1300,6 +1304,24 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "ningxia",
+      "name": "ningxia",
+      "total": 13,
+      "layers": {
+        "record": 12,
+        "gap": 1
+      },
+      "party_counts": {
+        "清方": 12,
+        "综述考订": 1
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.305,
+      "best_event": "event:ningxia_qibing",
+      "best_resonance": 0.333
+    },
+    {
       "scene": "ningyuan",
       "name": "ningyuan",
       "total": 43,
@@ -1673,17 +1695,20 @@
     {
       "scene": "tumu",
       "name": "tumu",
-      "total": 3,
+      "total": 15,
       "layers": {
-        "scholarship": 3
+        "scholarship": 3,
+        "record": 10,
+        "inference": 1,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 15
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 8,
       "avg_resonance": 0.0,
-      "best_event": "event:tm_jz",
+      "best_event": "event:tm_capture",
       "best_resonance": 0.0
     },
     {
@@ -1893,6 +1918,26 @@
       "avg_resonance": 0.0,
       "best_event": "event:yc_jz",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "yangzhou",
+      "name": "yangzhou",
+      "total": 11,
+      "layers": {
+        "record": 9,
+        "gap": 1,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "明方": 8,
+        "清方": 2,
+        "综述考订": 1
+      },
+      "faction_counts": {},
+      "event_count": 4,
+      "avg_resonance": 0.342,
+      "best_event": "event:yangzhou_tu",
+      "best_resonance": 0.37
     },
     {
       "scene": "yaoshan",
@@ -2340,6 +2385,68 @@
       }
     },
     {
+      "subject": "event:bj_consequence",
+      "name": "event:bj_consequence",
+      "scenes": [
+        "beijing"
+      ],
+      "scene_names": [
+        "beijing"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:bj_desheng",
+      "name": "event:bj_desheng",
+      "scenes": [
+        "beijing"
+      ],
+      "scene_names": [
+        "beijing"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:bj_eff",
       "name": "event:bj_eff",
       "scenes": [
@@ -2373,6 +2480,68 @@
     {
       "subject": "event:bj_jz",
       "name": "event:bj_jz",
+      "scenes": [
+        "beijing"
+      ],
+      "scene_names": [
+        "beijing"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:bj_mobilize",
+      "name": "event:bj_mobilize",
+      "scenes": [
+        "beijing"
+      ],
+      "scene_names": [
+        "beijing"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:bj_retreat",
+      "name": "event:bj_retreat",
       "scenes": [
         "beijing"
       ],
@@ -2472,7 +2641,7 @@
       "scene_names": [
         "beijing"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -8989,8 +9158,132 @@
       }
     },
     {
+      "subject": "event:tm_capture",
+      "name": "event:tm_capture",
+      "scenes": [
+        "tumu"
+      ],
+      "scene_names": [
+        "tumu"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:tm_collapse",
+      "name": "event:tm_collapse",
+      "scenes": [
+        "tumu"
+      ],
+      "scene_names": [
+        "tumu"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:tm_consequence",
+      "name": "event:tm_consequence",
+      "scenes": [
+        "tumu"
+      ],
+      "scene_names": [
+        "tumu"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:tm_jz",
       "name": "event:tm_jz",
+      "scenes": [
+        "tumu"
+      ],
+      "scene_names": [
+        "tumu"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:tm_minister",
+      "name": "event:tm_minister",
       "scenes": [
         "tumu"
       ],
@@ -9028,6 +9321,37 @@
       "scene_names": [
         "tumu"
       ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:tm_wangzhen",
+      "name": "event:tm_wangzhen",
+      "scenes": [
+        "tumu"
+      ],
+      "scene_names": [
+        "tumu"
+      ],
       "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
@@ -9059,7 +9383,7 @@
       "scene_names": [
         "tumu"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -11627,6 +11951,71 @@
       }
     },
     {
+      "subject": "event:ningxia_pingding",
+      "name": "event:ningxia_pingding",
+      "scenes": [
+        "ningxia"
+      ],
+      "scene_names": [
+        "ningxia"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.25,
+      "party_counts": {
+        "明方": 0,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX009_M5",
+            "predicate": "灌城",
+            "value_text": "叶梦熊、魏学曾、梅国桢定计决黄河大堤灌城",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX010_M5",
+            "predicate": "城破",
+            "value_text": "十月十二日明军入城，哱拜合家自焚",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX012_M5",
+            "predicate": "处决",
+            "value_text": "十二月哱承恩等被磔于西安",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "NXG01",
+            "predicate": "叙事失衡",
+            "value_text": "宁夏之役以明方平叛凯旋叙事为主，哱拜及其部众的起事动因、宁夏镇兵变的地方社会背景多缺失",
+            "source": "wiki_ningxia",
+            "layer": "gap",
+            "scene": "ningxia"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:ningyuan_founded",
       "name": "event:ningyuan_founded",
       "scenes": [
@@ -12913,6 +13302,110 @@
       }
     },
     {
+      "subject": "event:ningxia_qibing",
+      "name": "event:ningxia_qibing",
+      "scenes": [
+        "ningxia"
+      ],
+      "scene_names": [
+        "ningxia"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX001_M5",
+            "predicate": "爆发",
+            "value_text": "宁夏副总兵哱拜据宁夏镇叛",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX004_M5",
+            "predicate": "起事经过",
+            "value_text": "杀巡抚党馨及副使石继芳，焚公署，逼总兵张维忠自杀",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX005_M5",
+            "predicate": "连陷堡寨",
+            "value_text": "连陷河西四十七堡",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ningxia_weikun",
+      "name": "event:ningxia_weikun",
+      "scenes": [
+        "ningxia"
+      ],
+      "scene_names": [
+        "ningxia"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX007_M4",
+            "predicate": "围困",
+            "value_text": "总督魏学曾收复河西四十七堡，惟宁夏镇不下",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          },
+          {
+            "id": "SX008_M5",
+            "predicate": "调兵",
+            "value_text": "调副将麻贵驰援，又调李如松为宁夏总兵围剿",
+            "source": "mingshi_ningxia",
+            "layer": "record",
+            "scene": "ningxia"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ningyuan_wusangui",
       "name": "event:ningyuan_wusangui",
       "scenes": [
@@ -13298,6 +13791,134 @@
       }
     },
     {
+      "subject": "event:yangzhou_jiang",
+      "name": "event:yangzhou_jiang",
+      "scenes": [
+        "yangzhou"
+      ],
+      "scene_names": [
+        "yangzhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "YZJ01",
+            "predicate": "后续",
+            "value_text": "五日后多铎封刀，谕南京「维扬可鉴」以震江南；旋入南京，弘光政权旋灭，扬州十日与嘉定三屠并称清初江南屠城之惨。",
+            "source": "qing_shizu_shilu",
+            "layer": "scholarship",
+            "scene": "yangzhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yangzhou_po",
+      "name": "event:yangzhou_po",
+      "scenes": [
+        "yangzhou"
+      ],
+      "scene_names": [
+        "yangzhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "SX003_M4",
+            "predicate": "破城",
+            "value_text": "清军炮轰破城",
+            "source": "ming_ji_nanlue",
+            "layer": "record",
+            "scene": "yangzhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yangzhou_shou",
+      "name": "event:yangzhou_shou",
+      "scenes": [
+        "yangzhou"
+      ],
+      "scene_names": [
+        "yangzhou"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 2,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "SX001_M5",
+            "predicate": "爆发",
+            "value_text": "清军南下攻扬州",
+            "source": "ming_ji_nanlue",
+            "layer": "record",
+            "scene": "yangzhou"
+          },
+          {
+            "id": "SX002_M5",
+            "predicate": "集兵",
+            "value_text": "史可法孤城拒守",
+            "source": "ming_ji_nanlue",
+            "layer": "record",
+            "scene": "yangzhou"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:yehe",
       "name": "叶赫灭亡",
       "scenes": [
@@ -13423,6 +14044,88 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yangzhou_tu",
+      "name": "event:yangzhou_tu",
+      "scenes": [
+        "yangzhou"
+      ],
+      "scene_names": [
+        "yangzhou"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.333,
+      "gap_rate": 0.167,
+      "resonance": 0.37,
+      "party_counts": {
+        "明方": 4,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "SX005_M5",
+            "predicate": "屠城",
+            "value_text": "清军屠城十日",
+            "source": "yangzhou_shiri_ji",
+            "layer": "record",
+            "scene": "yangzhou"
+          },
+          {
+            "id": "SX006_M5",
+            "predicate": "遇害人数",
+            "value_text": "遇害八十万人",
+            "source": "yangzhou_shiri_ji",
+            "layer": "record",
+            "scene": "yangzhou"
+          },
+          {
+            "id": "SX009_M5",
+            "predicate": "伤亡",
+            "value_text": "清军伤亡上千、四军官阵亡",
+            "source": "ming_ji_nanlue",
+            "layer": "record",
+            "scene": "yangzhou"
+          },
+          {
+            "id": "SX010_M5",
+            "predicate": "遇害人数",
+            "value_text": "八十万 vs 不列数 vs 未提",
+            "source": "yangzhou_shiri_ji",
+            "layer": "gap",
+            "scene": "yangzhou"
+          }
+        ],
+        "清方": [
+          {
+            "id": "SX007_M4",
+            "predicate": "遇害人数",
+            "value_text": "屠杀甚惨，不列数",
+            "source": "qing_shizu_shilu",
+            "layer": "record",
+            "scene": "yangzhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SX008_M5",
+            "predicate": "遇害人数",
+            "value_text": "全城洗劫，未提八十万",
+            "source": "wiki_yangzhou",
+            "layer": "record",
+            "scene": "yangzhou"
+          }
+        ]
       }
     },
     {

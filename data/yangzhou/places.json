@@ -1,0 +1,7 @@
+{
+  "places": [
+    {"id": "yangzhou", "name": "扬州", "lon": 119.4, "lat": 32.4, "type": "city", "modern": "江苏扬州", "note": "史可法拒守、城破屠戮处。"},
+    {"id": "nanjing", "name": "南京", "lon": 118.8, "lat": 32.0, "type": "city", "modern": "应天/金陵", "note": "弘光朝廷、清军入城处。"},
+    {"id": "guazhou", "name": "瓜洲", "lon": 119.6, "lat": 32.4, "type": "town", "modern": "扬州南长江畔", "note": "清军渡江处。"}
+  ]
+}

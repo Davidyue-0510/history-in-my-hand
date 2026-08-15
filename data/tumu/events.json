@@ -28,6 +28,56 @@
    "kind": "战事",
    "text": "明军溃，英宗被俘。",
    "place": "tumu"
+  },
+  {
+   "id": "ev_tm_collapse",
+   "subject": "event:tm_collapse",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "土木堡溃败",
+   "kind": "战事",
+   "text": "也先佯败诱明军移营，乘大风扬尘突袭，明军大乱自相践踏，死伤数十万，兵械辎重尽失。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_minister",
+   "subject": "event:tm_minister",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "大臣死难",
+   "kind": "死难",
+   "text": "英国公张辅、兵部尚书邝埜、户部尚书王佐、刑部侍郎丁铉等数十名文武大臣战死。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_wangzhen",
+   "subject": "event:tm_wangzhen",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "王振被杀",
+   "kind": "死难",
+   "text": "护卫将军樊忠锤杀王振，曰「吾为天下诛此贼」。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_capture",
+   "subject": "event:tm_capture",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "英宗被俘",
+   "kind": "被俘",
+   "text": "英宗突围不得，下马盘膝面南坐，为瓦剌所执，北狩。",
+   "place": "tumu"
+  },
+  {
+   "id": "ev_tm_consequence",
+   "subject": "event:tm_consequence",
+   "year": 1449,
+   "era": "正统十四年八月",
+   "title": "京师震恐",
+   "kind": "后果",
+   "text": "败报至京，举朝震恐，有迁都之议，于谦力主留守。",
+   "place": "beijing"
   }
  ]
 }

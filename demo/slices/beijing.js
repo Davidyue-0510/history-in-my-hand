@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["beijing"] = {
    "id": "yuqian",
    "name": "于谦",
    "side": "明",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "yexian",
@@ -82,6 +82,12 @@ window.SANDBOX_SLICES["beijing"] = {
   {
    "id": "jingtai",
    "name": "景泰帝",
+   "side": "明",
+   "influence": 0
+  },
+  {
+   "id": "shiheng",
+   "name": "石亨",
    "side": "明",
    "influence": 0
   }
@@ -139,10 +145,306 @@ window.SANDBOX_SLICES["beijing"] = {
    "place": "desheng",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M5",
+   "subject": "event:bj_consequence",
+   "predicate": "背景",
+   "value_text": "土木堡败报至京，举朝震恐",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "土木堡败报至京，举朝震恐",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M5",
+   "subject": "person:yuqian",
+   "predicate": "主张",
+   "value_text": "言南迁者可斩，主留守",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "言南迁者，可斩也",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M4",
+   "subject": "event:bj_mobilize",
+   "predicate": "监国",
+   "value_text": "孙太后命郕王朱祁钰监国",
+   "time": {
+    "era_text": "正统十四年八月十八日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "孙太后命郕王朱祁钰监国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M5",
+   "subject": "event:bj_mobilize",
+   "predicate": "即位",
+   "value_text": "文武请太后改立监国为帝，是为景泰帝",
+   "time": {
+    "era_text": "正统十四年八月二十九日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "文武请太后改立监国为帝，是为景泰帝",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M5",
+   "subject": "event:bj_mobilize",
+   "predicate": "集兵",
+   "value_text": "分遣诸将帅兵二十二万陈于京城九门",
+   "time": {
+    "era_text": "正统十四年十月初九",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "分遣诸将帅兵二十二万陈于京城九门",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M5",
+   "subject": "event:bj_desheng",
+   "predicate": "战斗",
+   "value_text": "也先攻德胜门，范广发火炮火铳，瓦剌大败",
+   "time": {
+    "era_text": "正统十四年十月十三日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "desheng",
+   "source": "synthesis",
+   "quote": "也先攻德胜门，范广率神机营发火炮火铳，瓦剌大败",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M4",
+   "subject": "event:bj_desheng",
+   "predicate": "阵亡",
+   "value_text": "也先之弟孛罗、平章卯那孩中炮身亡",
+   "time": {
+    "era_text": "正统十四年十月十三日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "desheng",
+   "source": "synthesis",
+   "quote": "也先之弟孛罗、平章卯那孩中炮身亡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M5",
+   "subject": "event:bj_retreat",
+   "predicate": "撤退",
+   "value_text": "也先攻城旬日不下，闻援军将至，十五夜北退",
+   "time": {
+    "era_text": "正统十四年十月十五日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "也先攻城旬日不下，闻明援军将至恐归路被截，十月十五夜北退",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M5",
+   "subject": "event:bj_consequence",
+   "predicate": "结果",
+   "value_text": "十一月初八，瓦剌尽退出塞外，京师之围遂解",
+   "time": {
+    "era_text": "正统十四年十一月初八",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "十一月初八，瓦剌尽退出塞外，京师之围遂解",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M5",
+   "subject": "event:bj_consequence",
+   "predicate": "影响",
+   "value_text": "翌年景泰改元，也先遣使议和、释英宗归",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "翌年景泰改元，也先遣使议和、释英宗归",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M5",
+   "subject": "event:bj_desheng",
+   "predicate": "战术",
+   "value_text": "于谦伏石亨于德胜门外民房",
+   "time": {
+    "era_text": "正统十四年十月十三日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "desheng",
+   "source": "synthesis",
+   "quote": "于谦伏石亨于德胜门外民房",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M5",
+   "subject": "event:bj_wa",
+   "predicate": "战斗",
+   "value_text": "瓦剌转攻西直门，都督孙镗迎战，石亨等增援退敌",
+   "time": {
+    "era_text": "正统十四年十月十三日",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "瓦剌转攻西直门，都督孙镗迎战，石亨等增援退敌",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BJG01",
+   "subject": "event:bj_desheng",
+   "predicate": "叙事失衡",
+   "value_text": "北京保卫战以明方（明史于谦传/英宗实录）叙于谦社稷功为主，瓦剌方记载缺失，也先撤军真实动因与伤亡数字多不可考",
+   "time": {
+    "era_text": "正统十四年十月",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "瓦剌视角史料缺，明方叙事占绝对主导",
+   "lead": {
+    "where": "瓦剌/蒙古侧记载、明代敌情塘报",
+    "skills": [
+     "史料搜集",
+     "蒙文文书释读"
+    ],
+    "accept": "补瓦剌方视角，平衡单一明方叙事"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "BJG01"
+ ],
  "events": [
   {
    "id": "ev_bj_yu",
@@ -172,6 +474,46 @@ window.SANDBOX_SLICES["beijing"] = {
    "kind": "战事",
    "text": "明军九门拒守，瓦剌退。",
    "place": "desheng"
+  },
+  {
+   "id": "ev_bj_mobilize",
+   "subject": "event:bj_mobilize",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "于谦整军列九门",
+   "kind": "部署",
+   "text": "于谦提督各营，分遣诸将帅兵二十二万陈于京城九门，申明军法连坐，背城迎敌。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_bj_desheng",
+   "subject": "event:bj_desheng",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "德胜门大捷",
+   "kind": "战事",
+   "text": "也先攻德胜门，于谦伏石亨于民房，范广神机营火炮毙瓦剌平章卯那孩、也先弟孛罗，瓦剌大败。",
+   "place": "desheng"
+  },
+  {
+   "id": "ev_bj_retreat",
+   "subject": "event:bj_retreat",
+   "year": 1449,
+   "era": "正统十四年十月",
+   "title": "也先退兵",
+   "kind": "退兵",
+   "text": "也先攻城不下、闻援军将至恐退路绝，夜半北退，明军追击，十一月初八退出塞外。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_bj_consequence",
+   "subject": "event:bj_consequence",
+   "year": 1449,
+   "era": "正统十四年",
+   "title": "京师保·明存续",
+   "kind": "后果",
+   "text": "北京保卫战明胜，瓦剌退，明朝渡危，翌年景泰改元、也先释英宗归。",
+   "place": "beijing"
   }
  ],
  "engagements": [

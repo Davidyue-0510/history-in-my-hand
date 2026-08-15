@@ -17,6 +17,12 @@
    "name": "景泰帝",
    "side": "明",
    "influence": 0
+  },
+  {
+   "id": "shiheng",
+   "name": "石亨",
+   "side": "明",
+   "influence": 0
   }
  ]
 }

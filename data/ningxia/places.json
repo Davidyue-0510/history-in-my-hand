@@ -1,0 +1,8 @@
+{
+  "places": [
+    {"id": "ningxia", "name": "宁夏镇", "lon": 106.27, "lat": 38.47, "type": "city", "modern": "今宁夏银川", "note": "哱拜叛乱据点，万历三大征之宁夏之役主战场。"},
+    {"id": "pinglu", "name": "平虏城", "lon": 106.1, "lat": 38.3, "type": "city", "modern": "今宁夏平罗", "note": "萧如薰坚守不降。"},
+    {"id": "lingzhou", "name": "灵州", "lon": 106.4, "lat": 37.9, "type": "city", "modern": "今宁夏灵武", "note": "明军沿黄河南北调度要地。"},
+    {"id": "huama", "name": "花马池", "lon": 107.2, "lat": 37.8, "type": "town", "modern": "今宁夏盐池", "note": "魏学曾驻军冲要，蒙古著力兔入寇处。"}
+  ]
+}

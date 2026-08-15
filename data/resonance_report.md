@@ -13,7 +13,7 @@
 | 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |
 |---|---|---|---|---|---|
 | baijia | 2 | 2 | **0.000** | event:bj_350（0.000） | scholarship 2 |
-| beijing | 3 | 3 | **0.000** | event:bj_jz（0.000） | scholarship 3 |
+| beijing | 16 | 7 | **0.000** | event:bj_consequence（0.000） | gap 1 / record 12 / scholarship 3 |
 | beijiu | 2 | 2 | **0.000** | event:bj_961（0.000） | scholarship 2 |
 | bencao | 2 | 2 | **0.000** | event:bc_1281（0.000） | scholarship 2 |
 | boju | 3 | 3 | **0.000** | event:bj_bj（0.000） | scholarship 3 |
@@ -80,6 +80,7 @@
 | ming_fall | 3 | 3 | **0.000** | event:mf_1627（0.000） | scholarship 3 |
 | mingmo_dangzheng | 26 | 8 | **0.302** | event:dangzheng_donglin（0.333） | gap 2 / record 22 / scholarship 2 |
 | mobai | 3 | 3 | **0.000** | event:mb_chu（0.000） | scholarship 3 |
+| ningxia | 13 | 3 | **0.305** | event:ningxia_qibing（0.333） | gap 1 / record 12 |
 | ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
 | poyanghu | 3 | 3 | **0.000** | event:py_chen（0.000） | scholarship 3 |
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
@@ -101,7 +102,7 @@
 | three_campaigns | 14 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | tianjing | 3 | 3 | **0.000** | event:tj_di（0.000） | scholarship 3 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
-| tumu | 3 | 3 | **0.000** | event:tm_jz（0.000） | scholarship 3 |
+| tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | wanganshi | 3 | 3 | **0.000** | event:wa_1069（0.000） | scholarship 3 |
 | wangmang | 3 | 3 | **0.000** | event:wm_9（0.000） | scholarship 3 |
 | wencheng | 2 | 2 | **0.000** | event:wc_641（0.000） | scholarship 2 |
@@ -115,6 +116,7 @@
 | xuanzang | 2 | 2 | **0.000** | event:xz_629（0.000） | scholarship 2 |
 | yaksa | 3 | 3 | **0.000** | event:yk_e（0.000） | scholarship 3 |
 | yancheng | 3 | 3 | **0.000** | event:yc_jz（0.000） | scholarship 3 |
+| yangzhou | 11 | 4 | **0.342** | event:yangzhou_tu（0.370） | gap 1 / record 9 / scholarship 1 |
 | yaoshan | 3 | 3 | **0.000** | event:ys_jz（0.000） | scholarship 3 |
 | yashan | 2 | 2 | **0.000** | event:ys_1276（0.000） | scholarship 2 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
@@ -150,11 +152,15 @@
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_961 | beijiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_bj | boju | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:bj_consequence | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:bj_desheng | beijing | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:bj_eff | beijiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_jz | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:bj_mobilize | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:bj_retreat | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_ruying | boju | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_schools | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:bj_wa | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:bj_wa | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:bj_wu | boju | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_yu | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cb_cao | chibi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -352,9 +358,14 @@
 | event:tl_gel | talas | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tl_jz | talas | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tl_tang | talas | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:tm_jz | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:tm_wa | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:tm_ying | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:tm_capture | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:tm_collapse | tumu | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:tm_consequence | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:tm_jz | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:tm_minister | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:tm_wa | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:tm_wangzhen | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:tm_ying | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:tp_1851 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tp_1853 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tp_1864 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -430,6 +441,7 @@
 | 铁岭陷落（1619） | 铁岭 | **0.179** | 1/3 | 0.25 | 0.29 | 7 | 0 / 3 / 0 / 4 |
 | event:bozhou_hailong | bozhou | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 2 / 0 / 2 |
 | event:dangzheng_sanchao | mingmo_dangzheng | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 3 / 0 / 1 |
+| event:ningxia_pingding | ningxia | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 3 / 0 / 1 |
 | event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
 | event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
@@ -454,6 +466,8 @@
 | event:jinzhou_founded | jinzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_fall | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_founded | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:ningxia_qibing | ningxia | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
+| event:ningxia_weikun | ningxia | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:ningyuan_wusangui | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:renchen_baofa | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 0 / 2 / 0 |
 | 萨尔浒之战（广义） | 开原 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
@@ -463,9 +477,13 @@
 | event:shenyang_qing_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_walls | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:xingzhou_battle | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
+| event:yangzhou_jiang | yangzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:yangzhou_po | yangzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
+| event:yangzhou_shou | yangzhou | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 2 / 0 / 0 / 0 |
 | 叶赫灭亡 | 开原 | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:yehe_fall | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:yangzhou_tu | yangzhou | **0.370** | 2/3 | 0.33 | 0.17 | 6 | 4 / 1 / 0 / 1 |
 | event:gaizhou_fall | gaizhou | **0.444** | 2/3 | 0.00 | 0.33 | 3 | 1 / 2 / 0 / 0 |
 | event:juehua1626_ningyuan | juehua1626 | **0.444** | 2/3 | 0.33 | 0.00 | 4 | 1 / 3 / 0 / 0 |
 | 辽阳陷落（1621） | 辽阳 | **0.520** | 2/3 | 0.13 | 0.10 | 29 | 8 / 6 / 0 / 15 |

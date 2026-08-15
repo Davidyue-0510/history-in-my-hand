@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "id": "mingshi_ningxia",
+      "title": "明史·宁夏叛",
+      "juan": "卷二百二十八·魏学曾传等",
+      "compiler": "张廷玉等（清）",
+      "compiled_year": 1739,
+      "stance": "official_later_dynasty",
+      "stance_label": "清修官史",
+      "distance_label": "清修官史，距事约 140 年",
+      "party": "清修官史",
+      "faction": null,
+      "color": "#8C6239",
+      "note": "清修官史记哱拜之乱、明军平叛过程。"
+    },
+    {
+      "id": "ming_shenzong_shilu",
+      "title": "明神宗实录",
+      "juan": "万历二十年诸卷",
+      "compiler": "明官修",
+      "compiled_year": 1630,
+      "stance": "official_contemporary",
+      "stance_label": "明当代官修",
+      "distance_label": "明当代官修，距事约数年",
+      "party": "明廷官方",
+      "faction": null,
+      "color": "#4A6FA5",
+      "note": "记哱拜叛、调兵围剿、决河灌城与平定叙功。"
+    },
+    {
+      "id": "wiki_ningxia",
+      "title": "维基百科·宁夏之役",
+      "juan": "现代综述条目",
+      "compiler": "维基百科",
+      "compiled_year": 2024,
+      "stance": "modern_scholarship",
+      "stance_label": "现代学界",
+      "distance_label": "现代研究，距事约 420 年",
+      "party": "学界",
+      "faction": null,
+      "color": "#3C78D8",
+      "note": "现代综述，汇辑明史、明神宗实录与 Swope 等研究。"
+    }
+  ]
+}
