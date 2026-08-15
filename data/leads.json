@@ -766,6 +766,22 @@
    "_src_line": 48
   },
   {
+   "id": "SJ015",
+   "scene": "songjin",
+   "subject": "event:songjin_songshan_fall",
+   "title": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+   "missing": "古文 / 史料考异",
+   "where": "《明史·流贼·洪承畴传》/《清太宗实录》崇德七年/《明通鉴》卷九十二/现代研究（李光涛、孙文良等松锦考）",
+   "skills": [
+    "古文",
+    "史料考异"
+   ],
+   "accept": "整理松山城陷与夏成德内应的各家记载，标出史料政治立场影响",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "TH012",
    "scene": "tang_huai_xi",
    "subject": "event:li_su_xueye",

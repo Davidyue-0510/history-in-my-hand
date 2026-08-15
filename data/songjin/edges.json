@@ -1,0 +1,40 @@
+{
+ "edges": [
+  {
+   "from": "jinzhou",
+   "to": "ningyuan",
+   "type": "admin",
+   "label": "锦州—宁远（关宁锦防线）"
+  },
+  {
+   "from": "jinzhou",
+   "to": "guangning",
+   "type": "admin",
+   "label": "锦州—广宁（辽西）"
+  },
+  {
+   "from": "songshan",
+   "to": "jinzhou",
+   "type": "admin",
+   "label": "松山—锦州（围城与援营）"
+  },
+  {
+   "from": "xingshan",
+   "to": "jinzhou",
+   "type": "admin",
+   "label": "杏山—锦州（护饷隘口）"
+  },
+  {
+   "from": "tashan",
+   "to": "ningyuan",
+   "type": "admin",
+   "label": "塔山—宁远（护饷兵败）"
+  },
+  {
+   "from": "liaoyang",
+   "to": "shenyang",
+   "type": "admin",
+   "label": "辽阳—沈阳（后金/清腹地）"
+  }
+ ]
+}

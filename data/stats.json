@@ -1,8 +1,8 @@
 {
-  "scenes_total": 122,
-  "historical": 49,
+  "scenes_total": 123,
+  "historical": 50,
   "fictional": 73,
-  "assertions_total": 887,
+  "assertions_total": 902,
   "sources_total": 47,
   "factions_total": 9,
   "vocab_packs": [
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 55,
+  "leads_total": 56,
   "per_scene": [
     {
       "id": "sarhu",
@@ -118,6 +118,13 @@
       "title": "宁远",
       "kind": "county",
       "assertions": 43,
+      "factions": {}
+    },
+    {
+      "id": "songjin",
+      "title": "松锦之战",
+      "kind": "county",
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -892,6 +899,7 @@
     "guangning": "广宁",
     "jinzhou": "锦州",
     "ningyuan": "宁远",
+    "songjin": "松锦之战",
     "novel_fandao": "反派他爸教做人·九零家暴男儿子",
     "novel_fandao_2": "反派他爸教做人·深情渣帝王儿子",
     "novel_fandao_3": "反派他爸教做人·拜金绝色女儿",

@@ -86,6 +86,7 @@
 | shenkuo | 2 | 2 | **0.000** | event:sk_1072（0.000） | scholarship 2 |
 | shenyang | 62 | 6 | **0.387** | event:shenyang_relief（0.825） | gap 4 / inference 1 / record 55 / scholarship 2 |
 | song_he_jue | 3 | 3 | **0.000** | event:hj_1019（0.000） | scholarship 3 |
+| songjin | 15 | 5 | **0.000** | event:songjin_campaign（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | sui_daxing | 2 | 2 | **0.000** | event:dx_582（0.000） | scholarship 2 |
 | sui_mie_chen | 2 | 2 | **0.000** | event:sm_587（0.000） | scholarship 2 |
 | suiyang | 3 | 3 | **0.000** | event:sy_jz（0.000） | scholarship 3 |
@@ -318,6 +319,11 @@
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:songjin_campaign | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 6 |
+| event:songjin_jiju | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:songjin_jinzhou_surrender | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:songjin_songshan | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:songjin_songshan_fall | songjin | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 3 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_338 | shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

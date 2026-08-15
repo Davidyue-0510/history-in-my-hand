@@ -1,0 +1,85 @@
+{
+ "places": [
+  {
+   "id": "jinzhou",
+   "name": "锦州",
+   "lon": 121.12,
+   "lat": 41.11,
+   "type": "city",
+   "modern": "辽宁锦州市",
+   "note": "明锦州卫，辽西重镇，松锦之战围困核心；据地名表"
+  },
+  {
+   "id": "songshan",
+   "name": "松山堡",
+   "lon": 121.10,
+   "lat": 41.05,
+   "type": "fortress",
+   "modern": "辽宁锦州市松山新区",
+   "note": "锦州城南，洪承畴立营被围处；坐标为实址近似"
+  },
+  {
+   "id": "xingshan",
+   "name": "杏山",
+   "lon": 121.20,
+   "lat": 41.00,
+   "type": "fortress",
+   "modern": "辽宁锦州市西南杏山",
+   "note": "锦州西南隘口，明护饷兵败于笔架冈；坐标为实址近似"
+  },
+  {
+   "id": "tashan",
+   "name": "塔山",
+   "lon": 121.25,
+   "lat": 40.98,
+   "type": "fortress",
+   "modern": "辽宁葫芦岛市塔山乡",
+   "note": "锦州西南、宁远东北，护饷兵败处；坐标为实址近似"
+  },
+  {
+   "id": "dalinghe",
+   "name": "大凌河",
+   "lon": 121.35,
+   "lat": 41.16,
+   "type": "fortress",
+   "modern": "辽宁凌海市大凌河镇",
+   "note": "明大凌河所，锦州东北；1631 祖大寿曾据此降，后复据；坐标为实址近似"
+  },
+  {
+   "id": "ningyuan",
+   "name": "宁远",
+   "lon": 120.75,
+   "lat": 40.75,
+   "type": "city",
+   "modern": "辽宁兴城市",
+   "note": "关宁锦防线核心，八镇兵初集于此"
+  },
+  {
+   "id": "guangning",
+   "name": "广宁",
+   "lon": 121.78,
+   "lat": 41.62,
+   "type": "city",
+   "modern": "辽宁北镇市",
+   "note": "辽西军政旧中心，1622 已陷后金"
+  },
+  {
+   "id": "liaoyang",
+   "name": "辽阳",
+   "lon": 123.17,
+   "lat": 41.27,
+   "type": "city",
+   "modern": "辽宁辽阳市",
+   "note": "辽东都司旧治，1621 已陷后金"
+  },
+  {
+   "id": "shenyang",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.80,
+   "type": "city",
+   "modern": "辽宁沈阳市",
+   "note": "后金/清都城（盛京），1621 后金迁都于此"
+  }
+ ]
+}

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 122 个切片
+// 权威数据源：data/scenes.json 注册的 123 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 122 个切片",
+  "slice": "multi-scene · 123 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -178,6 +178,7 @@ window.SANDBOX_DATA = {
   "guangning",
   "jinzhou",
   "ningyuan",
+  "songjin",
   "novel_fandao",
   "novel_fandao_2",
   "novel_fandao_3",
@@ -7614,6 +7615,31 @@ window.SANDBOX_DATA = {
     "inference": 0
    }
   },
+  "songjin": {
+   "key": "songjin",
+   "scene_id": "songjin",
+   "title": "松锦之战",
+   "dossier_label": "松锦之战",
+   "subtitle": "崇祯十四—十五年 (1641–1642) · 明清辽东决战",
+   "kind": "county",
+   "region": "liaoxi",
+   "page": "county.html?scene=songjin",
+   "primary_place": "jinzhou",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "liaodong",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 4,
+    "place": 9,
+    "person": 13,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
   "novel_fandao": {
    "key": "novel_fandao",
    "scene_id": "novel_fandao",
@@ -10330,6 +10356,7 @@ window.SANDBOX_DATA = {
   "guangning": "slices/guangning.js",
   "jinzhou": "slices/jinzhou.js",
   "ningyuan": "slices/ningyuan.js",
+  "songjin": "slices/songjin.js",
   "novel_fandao": "slices/novel_fandao.js",
   "novel_fandao_2": "slices/novel_fandao_2.js",
   "novel_fandao_3": "slices/novel_fandao_3.js",
@@ -11268,6 +11295,22 @@ window.SANDBOX_DATA = {
     "_src_line": 48
    },
    {
+    "id": "SJ015",
+    "scene": "songjin",
+    "subject": "event:songjin_songshan_fall",
+    "title": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+    "missing": "古文 / 史料考异",
+    "where": "《明史·流贼·洪承畴传》/《清太宗实录》崇德七年/《明通鉴》卷九十二/现代研究（李光涛、孙文良等松锦考）",
+    "skills": [
+     "古文",
+     "史料考异"
+    ],
+    "accept": "整理松山城陷与夏成德内应的各家记载，标出史料政治立场影响",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 15
+   },
+   {
     "id": "TH012",
     "scene": "tang_huai_xi",
     "subject": "event:li_su_xueye",
@@ -11466,6 +11509,7 @@ window.SANDBOX_DATA = {
     "shenkuo",
     "shenyang",
     "song_he_jue",
+    "songjin",
     "sui_daxing",
     "sui_mie_chen",
     "suiyang",
@@ -12773,6 +12817,25 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:hj_1019",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "songjin",
+    "name": "songjin",
+    "total": 15,
+    "layers": {
+     "record": 12,
+     "inference": 1,
+     "scholarship": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "综述考订": 15
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:songjin_campaign",
     "best_resonance": 0.0
    },
    {
@@ -19104,6 +19167,262 @@ window.SANDBOX_DATA = {
      "朝鲜": [],
      "日本方": [],
      "综述考订": []
+    }
+   },
+   {
+    "subject": "event:songjin_campaign",
+    "name": "event:songjin_campaign",
+    "scenes": [
+     "songjin"
+    ],
+    "scene_names": [
+     "songjin"
+    ],
+    "total": 6,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 6
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "SJ001",
+       "predicate": "集兵",
+       "value_text": "八总兵军十三万，马四万，并集宁远",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ002",
+       "predicate": "分兵",
+       "value_text": "分四道进兵",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ003",
+       "predicate": "进兵",
+       "value_text": "洪承畴援锦州，驻师松山",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ005",
+       "predicate": "溃败",
+       "value_text": "诸镇兵皆溃，失亡五万余人",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ012",
+       "predicate": "兵力对比",
+       "value_text": "明军十三万，失亡五万余",
+       "source": "mingtongjian",
+       "layer": "inference",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ014",
+       "predicate": "败因主流说",
+       "value_text": "学界主流：松锦之败主因明廷中枢促战、粮道断绝与监军掣肘，非单纯兵力不敌；清方凭围城打援耗尽明军辽西机动兵团。",
+       "source": "modern",
+       "layer": "scholarship",
+       "scene": "songjin"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:songjin_jiju",
+    "name": "event:songjin_jiju",
+    "scenes": [
+     "songjin"
+    ],
+    "scene_names": [
+     "songjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "SJ013",
+       "predicate": "清围锦州·洪承畴会八镇兵",
+       "value_text": "崇祯十三年秋（1640）清兵围锦州；次年（1641）蓟辽总督洪承畴会八镇兵十三万、马四万于宁远，进援辽东。",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:songjin_jinzhou_surrender",
+    "name": "event:songjin_jinzhou_surrender",
+    "scenes": [
+     "songjin"
+    ],
+    "scene_names": [
+     "songjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "SJ009",
+       "predicate": "降清",
+       "value_text": "祖大寿以锦州降于大清",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:songjin_songshan",
+    "name": "event:songjin_songshan",
+    "scenes": [
+     "songjin"
+    ],
+    "scene_names": [
+     "songjin"
+    ],
+    "total": 1,
+    "gap_count": 0,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.0,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 1
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "SJ004",
+       "predicate": "阵亡",
+       "value_text": "杨国柱败绩，死之",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      }
+     ]
+    }
+   },
+   {
+    "subject": "event:songjin_songshan_fall",
+    "name": "event:songjin_songshan_fall",
+    "scenes": [
+     "songjin"
+    ],
+    "scene_names": [
+     "songjin"
+    ],
+    "total": 3,
+    "gap_count": 1,
+    "coverage": "0/3",
+    "coverage_frac": 0.0,
+    "divergence": 0.0,
+    "gap_rate": 0.333,
+    "resonance": 0.0,
+    "party_counts": {
+     "明方": 0,
+     "清方": 0,
+     "朝鲜": 0,
+     "日本方": 0,
+     "综述考订": 3
+    },
+    "parties": {
+     "明方": [],
+     "清方": [],
+     "朝鲜": [],
+     "日本方": [],
+     "综述考订": [
+      {
+       "id": "SJ006",
+       "predicate": "城破",
+       "value_text": "大清兵克松山",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ007",
+       "predicate": "被执",
+       "value_text": "承畴及祖大乐被执",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "songjin"
+      },
+      {
+       "id": "SJ015",
+       "predicate": "城内接应细节",
+       "value_text": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+       "source": "mingtongjian",
+       "layer": "gap",
+       "scene": "songjin"
+      }
+     ]
     }
    },
    {

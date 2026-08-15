@@ -83,6 +83,7 @@
       "shenkuo",
       "shenyang",
       "song_he_jue",
+      "songjin",
       "sui_daxing",
       "sui_mie_chen",
       "suiyang",
@@ -1390,6 +1391,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:hj_1019",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "songjin",
+      "name": "songjin",
+      "total": 15,
+      "layers": {
+        "record": 12,
+        "inference": 1,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 15
+      },
+      "faction_counts": {},
+      "event_count": 5,
+      "avg_resonance": 0.0,
+      "best_event": "event:songjin_campaign",
       "best_resonance": 0.0
     },
     {
@@ -7721,6 +7741,262 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_campaign",
+      "name": "event:songjin_campaign",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 6,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 6
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ001",
+            "predicate": "集兵",
+            "value_text": "八总兵军十三万，马四万，并集宁远",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ002",
+            "predicate": "分兵",
+            "value_text": "分四道进兵",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ003",
+            "predicate": "进兵",
+            "value_text": "洪承畴援锦州，驻师松山",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ005",
+            "predicate": "溃败",
+            "value_text": "诸镇兵皆溃，失亡五万余人",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ012",
+            "predicate": "兵力对比",
+            "value_text": "明军十三万，失亡五万余",
+            "source": "mingtongjian",
+            "layer": "inference",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ014",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：松锦之败主因明廷中枢促战、粮道断绝与监军掣肘，非单纯兵力不敌；清方凭围城打援耗尽明军辽西机动兵团。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "songjin"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_jiju",
+      "name": "event:songjin_jiju",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ013",
+            "predicate": "清围锦州·洪承畴会八镇兵",
+            "value_text": "崇祯十三年秋（1640）清兵围锦州；次年（1641）蓟辽总督洪承畴会八镇兵十三万、马四万于宁远，进援辽东。",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_jinzhou_surrender",
+      "name": "event:songjin_jinzhou_surrender",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ009",
+            "predicate": "降清",
+            "value_text": "祖大寿以锦州降于大清",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_songshan",
+      "name": "event:songjin_songshan",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ004",
+            "predicate": "阵亡",
+            "value_text": "杨国柱败绩，死之",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_songshan_fall",
+      "name": "event:songjin_songshan_fall",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 3
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ006",
+            "predicate": "城破",
+            "value_text": "大清兵克松山",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ007",
+            "predicate": "被执",
+            "value_text": "承畴及祖大乐被执",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ015",
+            "predicate": "城内接应细节",
+            "value_text": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "songjin"
+          }
+        ]
       }
     },
     {

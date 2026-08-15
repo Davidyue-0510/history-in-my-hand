@@ -182,6 +182,7 @@
     "guangning",
     "jinzhou",
     "ningyuan",
+    "songjin",
     "novel_fandao",
     "novel_fandao_2",
     "novel_fandao_3",
@@ -2962,6 +2963,48 @@
       },
       "layer_title": "鉴真东渡路线叠加",
       "timeline_title": "鉴真东渡时间轴"
+    },
+    "songjin": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "松锦之战",
+      "dossier_label": "松锦之战",
+      "subtitle": "崇祯十四—十五年 (1641–1642) · 明清辽东决战",
+      "primary_place": "jinzhou",
+      "dossier_event": "event:songjin_campaign",
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "松锦之战是明清辽东决战：崇祯十三年（1640）清太宗围锦州，明蓟辽总督洪承畴会八镇兵十三万于宁远；十四年（1641）进援驻师松山；十五年（1642）松山城陷、洪承畴被执降清，祖大寿以锦州降。明在辽西的机动兵团至此丧尽，山海关外仅余宁远。",
+      "parties_note": "松锦之败，明、清、现代三方侧重不同：明方记监军趣战、兵分夜溃；清方记围城下城、开门内应；现代综述重后勤断绝与庙堂促战。系统不裁决，只并列。",
+      "subject_names": {
+        "event:songjin_campaign": "松锦之战",
+        "event:songjin_jiju": "清围锦州·洪承畴会八镇兵",
+        "event:songjin_songshan": "洪承畴驻师松山",
+        "event:songjin_songshan_fall": "松山城陷·洪承畴被执",
+        "event:songjin_jinzhou_surrender": "祖大寿以锦州降",
+        "place:jinzhou": "锦州",
+        "place:songshan": "松山堡",
+        "place:xingshan": "杏山",
+        "place:tashan": "塔山",
+        "place:dalinghe": "大凌河",
+        "place:ningyuan": "宁远",
+        "person:hong_chengchou": "洪承畴",
+        "person:zu_dashou": "祖大寿",
+        "person:huangtaiji": "皇太极",
+        "person:duoergun": "多尔衮",
+        "person:cao_bianjiao": "曹变蛟",
+        "person:wang_tingchen": "王廷臣",
+        "person:wang_pu": "王朴",
+        "person:wu_sangui": "吴三桂",
+        "person:qiu_minyang": "邱民仰",
+        "person:xia_chengde": "夏成德",
+        "person:zhang_ruoqi": "张若麒",
+        "person:yang_guozhu": "杨国柱",
+        "person:chen_xinja": "陈新甲"
+      }
     }
   }
 }
