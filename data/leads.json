@@ -129,6 +129,22 @@
    "_src_line": 7
   },
   {
+   "id": "GD012",
+   "scene": "guangning",
+   "subject": "event:guangning_fall",
+   "title": "罗一贯死因有自刎与遇杀两说",
+   "missing": "史料考异 / 明清史",
+   "where": "罗一贯死因",
+   "skills": [
+    "史料考异",
+    "明清史"
+   ],
+   "accept": "核实罗一贯死因，判定自刎或遇杀",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 43
+  },
+  {
    "id": "H010",
    "scene": "haizhou",
    "subject": "place:haizhou_wei",

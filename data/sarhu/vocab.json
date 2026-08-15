@@ -1,8 +1,9 @@
 {
  "_comment": "战例图例配置（LLM 史料分析产出）。legend.battle/route 的 key 须与 engagements.json 的 winner、routes.json 的 side 取值一致；BattleLayer 据此自动生成图例与地图配色。无此配置时按 winner/side 哈希取色。parties 须枚举本切片所有 source.party（lint E05 受控词表），party_bucket 将细粒度 party 归并到 明/后金/第三方 三桶（三方覆盖）。",
- "parties": [
+  "parties": [
   "后金",
   "明",
+  "第三方",
   "清修·明臣",
   "明廷官方",
   "清修官史",

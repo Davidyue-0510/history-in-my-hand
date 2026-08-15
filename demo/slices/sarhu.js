@@ -442,7 +442,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "山海关总兵",
    "column": "west",
    "note": "西路主将，绰号杜疯子，以勇著称",
-   "influence": 3,
+   "influence": 4,
    "_global_id": "dusong",
    "_other_scenes": [
     "tieling"
@@ -473,7 +473,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "开原总兵",
    "column": "north",
    "note": "北路主将，名将马芳之子，文士气重",
-   "influence": 4,
+   "influence": 5,
    "_global_id": "malin",
    "_other_scenes": [
     "kaiyuan"
@@ -518,7 +518,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽阳总兵",
    "column": "east",
    "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
-   "influence": 4
+   "influence": 5
   },
   {
    "id": "qiaoyilang",
@@ -3146,6 +3146,270 @@ window.SANDBOX_SLICES["sarhu"] = {
    "source": "mingtongjian",
    "_party": "二手综述",
    "_faction": null
+  },
+  {
+   "id": "MT_S04",
+   "subject": "event:sarhu_battle",
+   "predicate": "分兵四道",
+   "value_text": "镐议分兵四道",
+   "time": {
+    "era_text": "万历四十七年",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "shenyang",
+   "source": "mingtongjian",
+   "quote": "镐议分兵四道",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "杨镐制定四路出击计划",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S05",
+   "subject": "person:dusong",
+   "predicate": "兵力",
+   "value_text": "督兵六万",
+   "time": {
+    "era_text": "万历四十七年",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "fushun",
+   "source": "mingtongjian",
+   "quote": "总兵官杜松，督兵六万由抚顺出西路",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "西路兵力",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S06",
+   "subject": "person:malin",
+   "predicate": "兵力",
+   "value_text": "督兵四万",
+   "time": {
+    "era_text": "万历四十七年",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "kaiyuan",
+   "source": "mingtongjian",
+   "quote": "总兵官马林，督兵四万出北路",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "北路兵力",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S07",
+   "subject": "person:liuting",
+   "predicate": "兵力",
+   "value_text": "督兵四万",
+   "time": {
+    "era_text": "万历四十七年",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "kuandian",
+   "source": "mingtongjian",
+   "quote": "总兵官刘綎，督兵四万出东路",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "东路兵力",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S08",
+   "subject": "event:dusong_cross",
+   "predicate": "渡河",
+   "value_text": "先渡浑河",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "sarhu",
+   "source": "mingtongjian",
+   "quote": "松欲立首功，先渡浑河",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "杜松急于立功，率先渡河",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S09",
+   "subject": "event:dusong_cross",
+   "predicate": "伏击",
+   "value_text": "精骑尽伏谷口",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "sarhu",
+   "source": "mingtongjian",
+   "quote": "精骑则尽伏谷口以待",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "后金设伏",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S10",
+   "subject": "event:dusong_cross",
+   "predicate": "阵亡",
+   "value_text": "松与赵梦麟、王宣皆殁于阵",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "sarhu",
+   "source": "mingtongjian",
+   "quote": "松与赵梦麟、王宣皆殁于阵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "西路主将阵亡",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S11",
+   "subject": "event:shangjianya",
+   "predicate": "败绩",
+   "value_text": "林兵大溃",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "shangjianya",
+   "source": "mingtongjian",
+   "quote": "林兵大溃，副将麻岩等阵没，林仅以身免",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "北路马林大败",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S12",
+   "subject": "event:shangjianya",
+   "predicate": "阵亡",
+   "value_text": "宗颜全军尽没",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "shangjianya",
+   "source": "mingtongjian",
+   "quote": "宗颜与游击窦永澄、守备江万春、通判董尔励及所部健丁冲突鏖战，自晨至午，力竭不支，全军尽没",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "潘宗颜部覆没",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S13",
+   "subject": "event:south_retreat",
+   "predicate": "撤军",
+   "value_text": "如柏得檄还",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "qinghe",
+   "source": "mingtongjian",
+   "quote": "如柏得檄还",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "南路李如柏撤退",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S14",
+   "subject": "event:sarhu_battle",
+   "predicate": "结果",
+   "value_text": "四路败三路",
+   "time": {
+    "era_text": "万历四十七年三月",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "sarhu",
+   "source": "mingtongjian",
+   "quote": "庚寅，东路总兵官刘綎败绩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "东路亦败，四路仅南路撤回",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "MT_S15",
+   "subject": "event:sarhu_battle",
+   "predicate": "兵力对比",
+   "value_text": "明军约十六万，后金约六万",
+   "time": {
+    "era_text": "万历四十七年",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "sarhu",
+   "source": "modern",
+   "quote": "明军四路合计约十六万，后金兵力约六万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "现代学者估算，明军实数可能低于此数",
+   "_party": "学界",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -3917,6 +4181,7 @@ window.SANDBOX_SLICES["sarhu"] = {
   "parties": [
    "后金",
    "明",
+   "第三方",
    "清修·明臣",
    "明廷官方",
    "清修官史",

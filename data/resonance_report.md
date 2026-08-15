@@ -41,7 +41,7 @@
 | grand_canal | 3 | 3 | **0.000** | event:gc_ming（0.000） | scholarship 3 |
 | great_wall | 3 | 3 | **0.000** | event:gw_han（0.000） | scholarship 3 |
 | guandu | 3 | 3 | **0.000** | event:gd_jz（0.000） | scholarship 3 |
-| guangning | 31 | 3 | **0.489** | event:guangning_fall（0.800） | gap 2 / record 28 / scholarship 1 |
+| guangning | 43 | 3 | **0.484** | event:guangning_fall（0.785） | gap 3 / record 39 / scholarship 1 |
 | guiling | 3 | 3 | **0.000** | event:gl_jz（0.000） | scholarship 3 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
 | heshangyuan | 3 | 3 | **0.000** | event:hs_jin（0.000） | scholarship 3 |
@@ -80,7 +80,7 @@
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
 | qin_unify | 6 | 6 | **0.000** | event:qn_221（0.000） | scholarship 6 |
 | qing_han | 3 | 3 | **0.000** | event:qh_1644（0.000） | scholarship 3 |
-| 萨尔浒 | 111 | 5 | **0.000** | 阿布达里岗（东路·刘綎）（0.000） | gap 7 / inference 6 / record 87 / scholarship 11 |
+| 萨尔浒 | 123 | 5 | **0.000** | 阿布达里岗（东路·刘綎）（0.000） | gap 7 / inference 6 / record 98 / scholarship 12 |
 | shangyang | 3 | 3 | **0.000** | event:sy_338（0.000） | scholarship 3 |
 | shaqiu | 2 | 2 | **0.000** | event:sq_210（0.000） | scholarship 2 |
 | shenkuo | 2 | 2 | **0.000** | event:sk_1072（0.000） | scholarship 2 |
@@ -175,7 +175,7 @@
 | event:dj_168 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_today | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 杜松渡浑河（西路） | 萨尔浒 | **0.000** | 0/3 | 0.50 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| 杜松渡浑河（西路） | 萨尔浒 | **0.000** | 0/3 | 0.20 | 0.00 | 6 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_relief | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -316,13 +316,13 @@
 | event:qn_225 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_228 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_230 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 萨尔浒主战场 | 萨尔浒 | **0.000** | 0/3 | 0.09 | 0.07 | 30 | 0 / 0 / 0 / 0 |
-| 尚间崖（北路·马林） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| 萨尔浒主战场 | 萨尔浒 | **0.000** | 0/3 | 0.08 | 0.06 | 33 | 0 / 0 / 0 / 0 |
+| 尚间崖（北路·马林） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sk_1072 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| 南路溃逃（李如柏） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| 南路溃逃（李如柏） | 萨尔浒 | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_338 | shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -446,7 +446,7 @@
 | event:cefeng_heyi | imjin | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 0 |
 | event:pyongyang_battle | imjin | **0.667** | 3/3 | 0.33 | 0.00 | 5 | 0 / 1 / 3 / 0 |
 | event:haizhou_fall | haizhou | **0.750** | 3/3 | 0.00 | 0.25 | 4 | 1 / 2 / 1 / 0 |
-| event:guangning_fall | guangning | **0.800** | 3/3 | 0.00 | 0.20 | 10 | 2 / 2 / 1 / 5 |
+| event:guangning_fall | guangning | **0.785** | 3/3 | 0.08 | 0.15 | 20 | 2 / 2 / 1 / 15 |
 | 开铁之战（开原陷落） | 开原 | **0.818** | 3/3 | 0.00 | 0.18 | 11 | 4 / 2 / 1 / 4 |
 | event:shenyang_relief | shenyang | **0.909** | 3/3 | 0.00 | 0.09 | 22 | 11 / 5 / 2 / 4 |
 | event:jinzhou_songjin | jinzhou | **0.923** | 3/3 | 0.00 | 0.08 | 13 | 2 / 1 / 1 / 9 |

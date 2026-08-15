@@ -201,7 +201,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "孙得功",
    "role": "广宁将",
    "note": "广宁陷前通敌，开门迎后金",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "nuerhaci",
@@ -226,7 +226,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "熊廷弼",
    "faction": "feng_jiang",
    "note": "辽东经略，广宁之失后被逮，天启五年遭阉党诛杀。",
-   "influence": 0,
+   "influence": 1,
    "_global_id": "xiongtingbing",
    "_other_scenes": [
     "kaiyuan",
@@ -281,6 +281,25 @@ window.SANDBOX_SLICES["guangning"] = {
    "faction": "eunuch",
    "note": "司礼监掌印，党附魏忠贤。",
    "influence": 0
+  },
+  {
+   "id": "luo_yiguan",
+   "name": "罗一贯",
+   "role": "西平堡守将",
+   "note": "广宁陷前拒降死战，城破遇杀。",
+   "influence": 0
+  },
+  {
+   "id": "zu_dashou",
+   "name": "祖大寿",
+   "role": "总兵",
+   "note": "广宁之战赴援，平阳桥败后走觉华岛。",
+   "influence": 0,
+   "_global_id": "zu_dashou",
+   "_other_scenes": [
+    "jinzhou",
+    "ningyuan"
+   ]
   }
  ],
  "assertions": [
@@ -914,6 +933,278 @@ window.SANDBOX_SLICES["guangning"] = {
    "source": "mingtongjian",
    "_party": "二手综述",
    "_faction": null
+  },
+  {
+   "id": "GD001",
+   "subject": "event:guangning_fall",
+   "predicate": "攻城",
+   "value_text": "布梯藋攻城，四面兵皆溃",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "乃布梯藋攻城，四面兵皆溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD002",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "罗一贯遇杀，陈尚仁、王崇信死之",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "一贯遂遇杀，都司陈尚仁、王崇信亦死之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "考异指出《明史》本传作自刎，此处从《实录》书法",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD003",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "刘渠、祁秉忠、刘征、黑云鹤等死之",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "渠、秉忠及副将刘征、参将黑云鹤等皆死之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD004",
+   "subject": "person:sun_degong",
+   "predicate": "叛降",
+   "value_text": "得功有异志，大呼兵败先奔",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "得功有异志，大呼兵败，与参将鲍承先等先奔",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD005",
+   "subject": "event:guangning_fall",
+   "predicate": "城陷",
+   "value_text": "化贞弃广宁，踉跄西走",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "遂弃广宁，踉跄西走",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD006",
+   "subject": "event:guangning_fall",
+   "predicate": "降附",
+   "value_text": "远近四十余城守御皆率属降",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "远近四十余城守御宜皆率属降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD007",
+   "subject": "person:xiong_tingbi",
+   "predicate": "讥讽",
+   "value_text": "六万众一举荡平，竟如何？",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "廷弼微笑曰：“六万众一举荡平，竟如何？”",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD008",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "高邦佐于杏山驿自经死",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "独邦佐否杏山驿自经死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD009",
+   "subject": "event:guangning_fall",
+   "predicate": "追击",
+   "value_text": "大清兵乘胜追击五十里，至平阳桥",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "大清兵乘胜追击五十里，至平阳桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD010",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "麻承宗于沙岭遇大清兵死之",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "副总兵麻承宗赴援，遇大清兵于沙岭，亦死之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD011",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "顾颐力屈死之",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "辽海道左参政顾颐，力屈死之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "GD012",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "value_text": "罗一贯死因有自刎与遇杀两说",
+   "time": {
+    "era_text": "天启二年正月",
+    "start": "1622-01-01",
+    "end": "1622-12-31",
+    "gregorian_year": 1622
+   },
+   "place": "guangning",
+   "source": "mingtongjian",
+   "quote": "按一贯生非自刎，而谕降不从，则其从容就义，非死于乱军之北也",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "county",
+   "note": "《明史》本传作自刎，《三编》据《实录》改斩一贯，此处从遇杀",
+   "lead": {
+    "where": "罗一贯死因",
+    "skills": [
+     "史料考异",
+     "明清史"
+    ],
+    "accept": "核实罗一贯死因，判定自刎或遇杀"
+   },
+   "_party": "二手综述",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -929,11 +1220,27 @@ window.SANDBOX_SLICES["guangning"] = {
     "SX005",
     "SX008"
    ]
+  },
+  {
+   "id": "cf:event:guangning_fall|阵亡",
+   "subject": "event:guangning_fall",
+   "predicate": "阵亡",
+   "kind": "record_vs_record",
+   "count": 5,
+   "spread": null,
+   "assertion_ids": [
+    "GD002",
+    "GD003",
+    "GD008",
+    "GD010",
+    "GD011"
+   ]
   }
  ],
  "gaps": [
   "G010",
-  "G011"
+  "G011",
+  "GD012"
  ],
  "events": [
   {

@@ -7281,11 +7281,11 @@ window.SANDBOX_DATA = {
     "src": 10,
     "place": 21,
     "person": 18,
-    "assert": 111,
+    "assert": 123,
     "conflict": 9,
     "gap": 7,
-    "record": 87,
-    "scholarship": 11,
+    "record": 98,
+    "scholarship": 12,
     "inference": 6
    }
   },
@@ -7555,11 +7555,11 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 6,
     "place": 5,
-    "person": 12,
-    "assert": 31,
-    "conflict": 1,
-    "gap": 2,
-    "record": 28,
+    "person": 14,
+    "assert": 43,
+    "conflict": 2,
+    "gap": 3,
+    "record": 39,
     "scholarship": 1,
     "inference": 0
    }
@@ -10631,6 +10631,22 @@ window.SANDBOX_DATA = {
     "_src_line": 7
    },
    {
+    "id": "GD012",
+    "scene": "guangning",
+    "subject": "event:guangning_fall",
+    "title": "罗一贯死因有自刎与遇杀两说",
+    "missing": "史料考异 / 明清史",
+    "where": "罗一贯死因",
+    "skills": [
+     "史料考异",
+     "明清史"
+    ],
+    "accept": "核实罗一贯死因，判定自刎或遇杀",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 43
+   },
+   {
     "id": "H010",
     "scene": "haizhou",
     "subject": "place:haizhou_wei",
@@ -11982,25 +11998,25 @@ window.SANDBOX_DATA = {
    {
     "scene": "guangning",
     "name": "guangning",
-    "total": 31,
+    "total": 43,
     "layers": {
-     "record": 28,
+     "record": 39,
      "scholarship": 1,
-     "gap": 2
+     "gap": 3
     },
     "party_counts": {
      "清方": 15,
      "明方": 10,
      "朝鲜": 1,
-     "综述考订": 5
+     "综述考订": 17
     },
     "faction_counts": {
      "内臣 / 宦官（独立于阉党）": 9
     },
     "event_count": 3,
-    "avg_resonance": 0.489,
+    "avg_resonance": 0.484,
     "best_event": "event:guangning_fall",
-    "best_resonance": 0.8
+    "best_resonance": 0.785
    },
    {
     "scene": "guiling",
@@ -12650,23 +12666,17 @@ window.SANDBOX_DATA = {
    {
     "scene": "sarhu",
     "name": "萨尔浒",
-    "total": 111,
+    "total": 123,
     "layers": {
-     "record": 87,
-     "scholarship": 11,
+     "record": 98,
+     "scholarship": 12,
      "inference": 6,
      "gap": 7
     },
     "party_counts": {
-     "清修·明臣": 36,
-     "清修官史": 24,
-     "学界": 15,
-     "朝鲜·亲历": 5,
-     "明廷官方": 7,
-     "明·私修": 1,
-     "朝鲜官方": 12,
-     "明·封疆奏议": 8,
-     "二手综述": 3
+     "明": 52,
+     "后金": 24,
+     "第三方": 47
     },
     "faction_counts": {
      "封疆大吏 / 辽东经略系": 8
@@ -14556,11 +14566,11 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "萨尔浒"
     ],
-    "total": 3,
+    "total": 6,
     "gap_count": 0,
     "coverage": "0/3",
     "coverage_frac": 0.0,
-    "divergence": 0.5,
+    "divergence": 0.2,
     "gap_rate": 0.0,
     "resonance": 0.0,
     "party_counts": {
@@ -19042,12 +19052,12 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "萨尔浒"
     ],
-    "total": 30,
+    "total": 33,
     "gap_count": 2,
     "coverage": "0/3",
     "coverage_frac": 0.0,
-    "divergence": 0.087,
-    "gap_rate": 0.067,
+    "divergence": 0.077,
+    "gap_rate": 0.061,
     "resonance": 0.0,
     "party_counts": {
      "明方": 0,
@@ -19073,7 +19083,7 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "萨尔浒"
     ],
-    "total": 1,
+    "total": 3,
     "gap_count": 0,
     "coverage": "0/3",
     "coverage_frac": 0.0,
@@ -19228,7 +19238,7 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "萨尔浒"
     ],
-    "total": 2,
+    "total": 3,
     "gap_count": 0,
     "coverage": "0/3",
     "coverage_frac": 0.0,
@@ -24039,19 +24049,19 @@ window.SANDBOX_DATA = {
     "scene_names": [
      "guangning"
     ],
-    "total": 10,
-    "gap_count": 2,
+    "total": 20,
+    "gap_count": 3,
     "coverage": "3/3",
     "coverage_frac": 1.0,
-    "divergence": 0.0,
-    "gap_rate": 0.2,
-    "resonance": 0.8,
+    "divergence": 0.077,
+    "gap_rate": 0.15,
+    "resonance": 0.785,
     "party_counts": {
      "明方": 2,
      "清方": 2,
      "朝鲜": 1,
      "日本方": 0,
-     "综述考订": 5
+     "综述考订": 15
     },
     "parties": {
      "明方": [
@@ -24140,6 +24150,86 @@ window.SANDBOX_DATA = {
        "value_text": "广宁败后，逮王化贞，削熊廷弼职回籍听勘。",
        "source": "mingtongjian",
        "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD001",
+       "predicate": "攻城",
+       "value_text": "布梯藋攻城，四面兵皆溃",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD002",
+       "predicate": "阵亡",
+       "value_text": "罗一贯遇杀，陈尚仁、王崇信死之",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD003",
+       "predicate": "阵亡",
+       "value_text": "刘渠、祁秉忠、刘征、黑云鹤等死之",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD005",
+       "predicate": "城陷",
+       "value_text": "化贞弃广宁，踉跄西走",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD006",
+       "predicate": "降附",
+       "value_text": "远近四十余城守御皆率属降",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD008",
+       "predicate": "阵亡",
+       "value_text": "高邦佐于杏山驿自经死",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD009",
+       "predicate": "追击",
+       "value_text": "大清兵乘胜追击五十里，至平阳桥",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD010",
+       "predicate": "阵亡",
+       "value_text": "麻承宗于沙岭遇大清兵死之",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD011",
+       "predicate": "阵亡",
+       "value_text": "顾颐力屈死之",
+       "source": "mingtongjian",
+       "layer": "record",
+       "scene": "guangning"
+      },
+      {
+       "id": "GD012",
+       "predicate": "阵亡",
+       "value_text": "罗一贯死因有自刎与遇杀两说",
+       "source": "mingtongjian",
+       "layer": "gap",
        "scene": "guangning"
       }
      ]
