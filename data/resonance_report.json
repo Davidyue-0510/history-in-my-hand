@@ -22,6 +22,7 @@
       "chenqiao",
       "chensheng",
       "chibi",
+      "dalinghe",
       "diaoyucheng",
       "dingwu",
       "dong_han_yi",
@@ -343,6 +344,24 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:cb_cao",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "dalinghe",
+      "name": "dalinghe",
+      "total": 13,
+      "layers": {
+        "record": 11,
+        "gap": 1,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "综述考订": 13
+      },
+      "faction_counts": {},
+      "event_count": 6,
+      "avg_resonance": 0.0,
+      "best_event": "event:dalinghe_build",
       "best_resonance": 0.0
     },
     {
@@ -3069,6 +3088,294 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dalinghe_build",
+      "name": "event:dalinghe_build",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH001",
+            "predicate": "兴工",
+            "value_text": "七月兴工筑大凌河城",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_campaign",
+      "name": "event:dalinghe_campaign",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 6
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH008",
+            "predicate": "起因",
+            "value_text": "筑城召衅，大清发兵",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH009",
+            "predicate": "结果",
+            "value_text": "大凌城陷，祖大寿降后归锦州",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH010",
+            "predicate": "影响",
+            "value_text": "孙承宗罢官",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH011",
+            "predicate": "争议",
+            "value_text": "筑城决策争议",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH012",
+            "predicate": "争议",
+            "value_text": "长山之败日期记载不一",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH013",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：大凌河之败主因庙堂筑城之议仓促、班军撤守反复与援军溃败，非单纯兵力不敌；清方凭围城断粮逼降，祖大寿权变脱归，暴露明辽西防御的脆弱。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_changshan",
+      "name": "event:dalinghe_changshan",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 1.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH003",
+            "predicate": "战败",
+            "value_text": "邱禾嘉、吴襄、宋伟援军败绩于长山",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH004",
+            "predicate": "战败",
+            "value_text": "张春监吴襄、宋伟军，进次长山，距城十五里",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_dazuo_return",
+      "name": "event:dalinghe_dazuo_return",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH006",
+            "predicate": "归锦州",
+            "value_text": "祖大寿脱归入锦州",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_kegang",
+      "name": "event:dalinghe_kegang",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH005",
+            "predicate": "被杀",
+            "value_text": "祖大寿杀何可纲降清",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_siege",
+      "name": "event:dalinghe_siege",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH002",
+            "predicate": "围城",
+            "value_text": "大清兵掘濠树栅四面围合",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ]
       }
     },
     {

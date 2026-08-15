@@ -1,0 +1,67 @@
+{
+  "persons": [
+    {
+      "id": "zu_dashou",
+      "name": "祖大寿",
+      "side": "ming",
+      "role": "总兵",
+      "note": "辽西明军主将，大凌河首次降清，松锦再降。"
+    },
+    {
+      "id": "he_kegang",
+      "name": "何可纲",
+      "side": "ming",
+      "role": "副将",
+      "note": "祖大寿副将，大凌河粮尽时不肯降，被大寿所杀，含笑而死。"
+    },
+    {
+      "id": "zhang_chun",
+      "name": "张春",
+      "side": "ming",
+      "role": "太仆少卿",
+      "note": "监军援大凌，长山战败被执，清太宗谕降不从。"
+    },
+    {
+      "id": "qiu_hejia",
+      "name": "邱禾嘉",
+      "side": "ming",
+      "role": "辽东巡抚",
+      "note": "倡议筑大凌河等城，援大凌败于长山。"
+    },
+    {
+      "id": "wu_xiang",
+      "name": "吴襄",
+      "side": "ming",
+      "role": "山海总兵",
+      "note": "吴三桂父，从张春援大凌，长山之败先遁。"
+    },
+    {
+      "id": "song_wei",
+      "name": "宋伟",
+      "side": "ming",
+      "role": "总兵",
+      "note": "从张春援大凌，长山力战不支而走。"
+    },
+    {
+      "id": "sun_chengzong",
+      "name": "孙承宗",
+      "side": "ming",
+      "role": "督师",
+      "note": "前督师，议筑城渐进复辽，时镇山海关。"
+    },
+    {
+      "id": "liang_tingdong",
+      "name": "梁廷栋",
+      "side": "ming",
+      "role": "兵部尚书",
+      "note": "力主筑大凌河城，旋罢，廷议撤班军。"
+    },
+    {
+      "id": "fang_jina",
+      "name": "方吉纳",
+      "side": "qing",
+      "role": "清使",
+      "note": "清方议和使者，大凌河围城期间与明议和。"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "places": [
+    {
+      "id": "dalinghe",
+      "name": "大凌河",
+      "lon": 121.35,
+      "lat": 41.16,
+      "type": "fortress",
+      "modern": "辽宁凌海市大凌河镇",
+      "note": "明大凌河所，1631 祖大寿据此降清"
+    },
+    {
+      "id": "jinzhou",
+      "name": "锦州",
+      "lon": 121.12,
+      "lat": 41.11,
+      "type": "city",
+      "modern": "辽宁锦州市",
+      "note": "辽西重镇，大凌河西南"
+    },
+    {
+      "id": "xiaolinghe",
+      "name": "小凌河",
+      "lon": 121.1,
+      "lat": 41.1,
+      "type": "river",
+      "modern": "辽宁锦州南小凌河",
+      "note": "张春筑垒处，长山在其南"
+    },
+    {
+      "id": "changshan",
+      "name": "长山",
+      "lon": 121.2,
+      "lat": 41.2,
+      "type": "hill",
+      "modern": "辽宁锦州东长山",
+      "note": "张春援军列营处，距大凌城十五里"
+    },
+    {
+      "id": "youtun",
+      "name": "右屯",
+      "lon": 121.5,
+      "lat": 41.2,
+      "type": "fortress",
+      "modern": "辽宁凌海右卫",
+      "note": "邱禾嘉议筑三城之一"
+    },
+    {
+      "id": "yizhou",
+      "name": "义州",
+      "lon": 121.3,
+      "lat": 41.5,
+      "type": "city",
+      "modern": "辽宁义县",
+      "note": "邱禾嘉议筑三城之一"
+    },
+    {
+      "id": "ningyuan",
+      "name": "宁远",
+      "lon": 120.75,
+      "lat": 40.75,
+      "type": "city",
+      "modern": "辽宁兴城市",
+      "note": "关宁锦防线核心"
+    },
+    {
+      "id": "shanhaiguan",
+      "name": "山海关",
+      "lon": 119.77,
+      "lat": 39.97,
+      "type": "fortress",
+      "modern": "河北秦皇岛山海关",
+      "note": "孙承宗督师镇守"
+    }
+  ]
+}

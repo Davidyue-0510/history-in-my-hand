@@ -3,6 +3,22 @@
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "DLH012",
+   "scene": "dalinghe",
+   "subject": "event:dalinghe_campaign",
+   "title": "长山之败日期记载不一",
+   "missing": "史料考据 / 日期比对",
+   "where": "mingtongjian 考异",
+   "skills": [
+    "史料考据",
+    "日期比对"
+   ],
+   "accept": "考证长山之败的具体日期，并说明《三编》与《史稿》记载差异的原因。",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "F010",
    "scene": "fushun",
    "subject": "event:fushun_fall",

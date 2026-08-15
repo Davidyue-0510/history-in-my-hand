@@ -25,6 +25,7 @@
 | chenqiao | 2 | 2 | **0.000** | event:cq_960a（0.000） | scholarship 2 |
 | chensheng | 2 | 2 | **0.000** | event:cs_209a（0.000） | scholarship 2 |
 | chibi | 3 | 3 | **0.000** | event:cb_cao（0.000） | scholarship 3 |
+| dalinghe | 13 | 6 | **0.000** | event:dalinghe_build（0.000） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 3 | 3 | **0.000** | event:dy_jz（0.000） | scholarship 3 |
 | dingwu | 3 | 3 | **0.000** | event:dw_1876（0.000） | scholarship 3 |
 | dong_han_yi | 3 | 3 | **0.000** | event:dy_196（0.000） | scholarship 3 |
@@ -172,6 +173,12 @@
 | event:cs_yu | caishiji | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cy_1004 | chanyuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cy_1005 | chanyuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:dalinghe_build | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:dalinghe_campaign | dalinghe | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 6 |
+| event:dalinghe_changshan | dalinghe | **0.000** | 0/3 | 1.00 | 0.00 | 2 | 0 / 0 / 0 / 2 |
+| event:dalinghe_dazuo_return | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:dalinghe_kegang | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:dalinghe_siege | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
 | event:dj_168 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dj_today | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

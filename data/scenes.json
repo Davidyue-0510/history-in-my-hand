@@ -183,6 +183,7 @@
     "jinzhou",
     "ningyuan",
     "songjin",
+    "dalinghe",
     "novel_fandao",
     "novel_fandao_2",
     "novel_fandao_3",
@@ -3004,6 +3005,47 @@
         "person:zhang_ruoqi": "张若麒",
         "person:yang_guozhu": "杨国柱",
         "person:chen_xinja": "陈新甲"
+      }
+    },
+    "dalinghe": {
+      "kind": "county",
+      "region": "liaoxi",
+      "title": "大凌河之战",
+      "dossier_label": "大凌河之战",
+      "subtitle": "崇祯四年 (1631) · 祖大寿首次降清",
+      "primary_place": "dalinghe",
+      "dossier_event": "event:dalinghe_campaign",
+      "back": "枢纽",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "大凌河之战（崇祯四年，1631）是明在辽西筑城渐进战略的受挫：辽东巡抚邱禾嘉、督师孙承宗议筑大凌河城，城未竟而清兵围之；援军长山、小凌河之战大败，张春等被执；城中粮尽，祖大寿杀副将何可纲降清，寻脱归锦州。此为祖大寿首次降清，明末辽西防御自此更形被动。",
+      "parties_note": "大凌河之败，明、清、现代三方侧重不同：明方记筑城受挫、援军溃败与祖大寿权变；清方记围城下城、劝降成功；现代综述重庙堂筑城之议的仓促与粮道之失。系统不裁决，只并列。",
+      "subject_names": {
+        "event:dalinghe_campaign": "大凌河之战",
+        "event:dalinghe_build": "筑大凌河城",
+        "event:dalinghe_siege": "清兵围大凌城",
+        "event:dalinghe_changshan": "长山·小凌河之战",
+        "event:dalinghe_kegang": "祖大寿杀何可纲降清",
+        "event:dalinghe_dazuo_return": "祖大寿脱归锦州",
+        "place:dalinghe": "大凌河",
+        "place:jinzhou": "锦州",
+        "place:xiaolinghe": "小凌河",
+        "place:changshan": "长山",
+        "place:youtun": "右屯",
+        "place:yizhou": "义州",
+        "place:ningyuan": "宁远",
+        "place:shanhaiguan": "山海关",
+        "person:zu_dashou": "祖大寿",
+        "person:he_kegang": "何可纲",
+        "person:zhang_chun": "张春",
+        "person:qiu_hejia": "邱禾嘉",
+        "person:wu_xiang": "吴襄",
+        "person:song_wei": "宋伟",
+        "person:sun_chengzong": "孙承宗",
+        "person:liang_tingdong": "梁廷栋",
+        "person:fang_jina": "方吉纳"
       }
     }
   }

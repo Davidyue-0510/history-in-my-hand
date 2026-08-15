@@ -1,8 +1,8 @@
 {
-  "scenes_total": 123,
-  "historical": 50,
+  "scenes_total": 124,
+  "historical": 51,
   "fictional": 73,
-  "assertions_total": 902,
+  "assertions_total": 915,
   "sources_total": 47,
   "factions_total": 9,
   "vocab_packs": [
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 56,
+  "leads_total": 57,
   "per_scene": [
     {
       "id": "sarhu",
@@ -125,6 +125,13 @@
       "title": "松锦之战",
       "kind": "county",
       "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "dalinghe",
+      "title": "大凌河之战",
+      "kind": "county",
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -900,6 +907,7 @@
     "jinzhou": "锦州",
     "ningyuan": "宁远",
     "songjin": "松锦之战",
+    "dalinghe": "大凌河之战",
     "novel_fandao": "反派他爸教做人·九零家暴男儿子",
     "novel_fandao_2": "反派他爸教做人·深情渣帝王儿子",
     "novel_fandao_3": "反派他爸教做人·拜金绝色女儿",

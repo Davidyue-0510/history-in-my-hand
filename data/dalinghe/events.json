@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "id": "dalinghe_campaign",
+      "subject": "event:dalinghe_campaign",
+      "year": 1631,
+      "era": "崇祯四年至五年",
+      "title": "大凌河之战",
+      "kind": "战事",
+      "text": "明崇祯四年（1631），辽东巡抚邱禾嘉、督师孙承宗议筑大凌河城以渐复辽西；城未竟而清兵围之。明援军长山、小凌河之战大败，张春等被执；城中粮尽，祖大寿杀副将何可纲降清，寻脱归锦州。此为祖大寿首次降清，明在辽西的筑城推进受挫。"
+    },
+    {
+      "id": "dalinghe_build",
+      "subject": "event:dalinghe_build",
+      "year": 1631,
+      "era": "崇祯四年七月",
+      "title": "筑大凌河城",
+      "kind": "战事",
+      "text": "崇祯四年七月，辽东巡抚邱禾嘉、总兵祖大寿、副将何可纲率班军万四千人筑大凌河城，护以石砫土兵万人；工垂成而兵部尚书梁廷栋罢，廷议以「大凌荒远」撤班军，留万人守。"
+    },
+    {
+      "id": "dalinghe_siege",
+      "subject": "event:dalinghe_siege",
+      "year": 1631,
+      "era": "崇祯四年",
+      "title": "清兵围大凌城",
+      "kind": "战事",
+      "text": "大凌河城未竣，大清兵围之；明援军屡出战不利，城中粮道渐绝。"
+    },
+    {
+      "id": "dalinghe_changshan",
+      "subject": "event:dalinghe_changshan",
+      "year": 1631,
+      "era": "崇祯四年九月",
+      "title": "长山·小凌河之战 张春败",
+      "kind": "战事",
+      "text": "崇祯四年九月，太仆少卿张春监吴襄、宋伟军援大凌，过小凌河五里筑垒，进次长山；与大清兵战，火器竞发，春军大败，春及诸将三十三人被执。"
+    },
+    {
+      "id": "dalinghe_kegang",
+      "subject": "event:dalinghe_kegang",
+      "year": 1631,
+      "era": "崇祯四年十月",
+      "title": "祖大寿杀何可纲降清",
+      "kind": "战事",
+      "text": "大凌城粮尽，人相食；祖大寿及诸将欲降，副将何可纲不从，大寿令杀之，可纲含笑而死。大寿遂降于大清，已而脱归锦州。"
+    },
+    {
+      "id": "dalinghe_dazuo_return",
+      "subject": "event:dalinghe_dazuo_return",
+      "year": 1631,
+      "era": "崇祯四年十月",
+      "title": "祖大寿脱归锦州",
+      "kind": "战事",
+      "text": "祖大寿降清后，旋脱身归锦州；此后明廷未深究，仍使守辽西，直至松锦之败再降。"
+    }
+  ]
+}
