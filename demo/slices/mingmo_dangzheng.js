@@ -18,8 +18,13 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "event:dangzheng_yanglian": "杨涟弹魏二十四罪",
    "event:dangzheng_minglu": "阉党造名录株连",
    "event:dangzheng_liuruoyu": "刘若愚《酌中志》记阉党",
+   "event:dangzheng_donglin": "东林书院重修",
+   "event:dangzheng_sanan": "明末三案",
+   "event:dangzheng_sanchao": "阉党修三朝要典",
+   "event:dangzheng_liujunzi": "六君子之狱",
    "place:jingshi": "京师·经筵",
    "place:liaodong": "辽东",
+   "place:donglin": "东林书院",
    "person:feng_quan": "冯铨",
    "person:xiong_tingbi": "熊廷弼",
    "person:wei_zhongxian": "魏忠贤",
@@ -27,7 +32,13 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "person:yang_lian": "杨涟",
    "person:liu_ruoyu": "刘若愚",
    "person:jiang_yingyang": "蒋应暘",
-   "person:cui_chengxiu": "崔呈秀"
+   "person:cui_chengxiu": "崔呈秀",
+   "person:gu_xiancheng": "顾宪成",
+   "person:zuo_guangdou": "左光斗",
+   "person:gao_panlong": "高攀龙",
+   "person:wang_wenyan": "汪文言",
+   "person:gu_bingqian": "顾秉谦",
+   "person:huo_weihua": "霍维华"
   },
   "page": "county.html?scene=mingmo_dangzheng",
   "key": "mingmo_dangzheng",
@@ -116,6 +127,17 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "modern": "辽沈一带",
    "note": "熊廷弼经略之地，《辽东传》所写即此",
    "elev": 21
+  },
+  {
+   "id": "donglin",
+   "name": "东林书院",
+   "lon": 120.3,
+   "lat": 31.57,
+   "type": "academy",
+   "modern": "无锡东林书院",
+   "note": "顾宪成、高攀龙重修讲学之所，东林党名所由起。",
+   "elev": null,
+   "off_grid": true
   }
  ],
  "persons": [
@@ -187,6 +209,54 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "阉党",
    "note": "递《点将录》等四折，按名株连东林。",
+   "influence": 0
+  },
+  {
+   "id": "gu_xiancheng",
+   "name": "顾宪成",
+   "side": "ming",
+   "role": "吏部文选司郎中·东林",
+   "note": "万历三十二年重修东林书院，东林党之始。",
+   "influence": 0
+  },
+  {
+   "id": "zuo_guangdou",
+   "name": "左光斗",
+   "side": "ming",
+   "role": "御史·东林",
+   "note": "天启四年与杨涟攻魏忠贤，五年下狱死，六君子之一。",
+   "influence": 0
+  },
+  {
+   "id": "gao_panlong",
+   "name": "高攀龙",
+   "side": "ming",
+   "role": "御史·东林",
+   "note": "与顾宪成共修东林书院；后名列阉党《点将录》。",
+   "influence": 0
+  },
+  {
+   "id": "wang_wenyan",
+   "name": "汪文言",
+   "side": "ming",
+   "role": "中书·东林联络",
+   "note": "天启五年被阉党逮治，坐杨涟等赃，狱死，为六君子之狱导火索。",
+   "influence": 0
+  },
+  {
+   "id": "gu_bingqian",
+   "name": "顾秉谦",
+   "side": "ming",
+   "role": "内阁大学士·阉党",
+   "note": "天启六年《三朝要典》总裁之一。",
+   "influence": 0
+  },
+  {
+   "id": "huo_weihua",
+   "name": "霍维华",
+   "side": "ming",
+   "role": "给事中·阉党",
+   "note": "天启六年四月初十上疏推翻三案结论，启《三朝要典》之修。",
    "influence": 0
   }
  ],
@@ -507,11 +577,285 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    },
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
+  },
+  {
+   "id": "SX001_M4",
+   "subject": "event:dangzheng_donglin",
+   "predicate": "创建",
+   "value_text": "顾宪成与高攀龙等重修东林书院",
+   "time": {
+    "era_text": "万历三十二年",
+    "start": "1604-01-01",
+    "end": "1604-12-31",
+    "gregorian_year": 1604
+   },
+   "place": "donglin",
+   "source": "mingshi",
+   "quote": "顾宪成与高攀龙等重修宋儒杨时主讲的东林书院",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M4",
+   "subject": "event:dangzheng_donglin",
+   "predicate": "活动",
+   "value_text": "每年一大会每月一小会，讲学议政",
+   "time": {
+    "era_text": "万历三十二年",
+    "start": "1604-01-01",
+    "end": "1604-12-31",
+    "gregorian_year": 1604
+   },
+   "place": "donglin",
+   "source": "mingshi",
+   "quote": "每年一大会每月一小会，讲学议政、裁量人物",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M4",
+   "subject": "event:dangzheng_sanan",
+   "predicate": "梃击案",
+   "value_text": "张差持枣木棍闯入慈庆宫",
+   "time": {
+    "era_text": "万历四十三年五月初四",
+    "start": "1615-01-01",
+    "end": "1615-12-31",
+    "gregorian_year": 1615
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "男子张差持枣木棍闯入太子朱常洛慈庆宫",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M4",
+   "subject": "event:dangzheng_sanan",
+   "predicate": "红丸案",
+   "value_text": "光宗服红丸而崩",
+   "time": {
+    "era_text": "泰昌元年八月",
+    "start": "1620-01-01",
+    "end": "1620-12-31",
+    "gregorian_year": 1620
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "李可灼进红丸，光宗服药而崩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M4",
+   "subject": "event:dangzheng_sanan",
+   "predicate": "移宫案",
+   "value_text": "杨涟、左光斗迫李选侍移宫",
+   "time": {
+    "era_text": "泰昌元年",
+    "start": "1620-01-01",
+    "end": "1620-12-31",
+    "gregorian_year": 1620
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "杨涟、左光斗等迫其移宫",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M4",
+   "subject": "event:dangzheng_sanchao",
+   "predicate": "提议",
+   "value_text": "霍维华上疏推翻三案结论",
+   "time": {
+    "era_text": "天启六年四月初十",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "给事中霍维华上疏数千字，全盘推翻梃击、红丸、移宫三案结论",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M4",
+   "subject": "event:dangzheng_sanchao",
+   "predicate": "纂修",
+   "value_text": "顾秉谦、黄立极、冯铨为总裁纂修《三朝要典》",
+   "time": {
+    "era_text": "天启六年",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "命顾秉谦、黄立极、冯铨三人为总裁……开馆纂修《三朝要典》",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M4",
+   "subject": "event:dangzheng_sanchao",
+   "predicate": "销毁",
+   "value_text": "崇祯即位后诏毁《三朝要典》",
+   "time": {
+    "era_text": "崇祯元年五月上旬",
+    "start": "1628-01-01",
+    "end": "1628-12-31",
+    "gregorian_year": 1628
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "至五月上旬诏毁其书",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M4",
+   "subject": "event:dangzheng_liujunzi",
+   "predicate": "下狱",
+   "value_text": "杨涟、左光斗等六君子下狱拷掠而死",
+   "time": {
+    "era_text": "天启五年",
+    "start": "1625-01-01",
+    "end": "1625-12-31",
+    "gregorian_year": 1625
+   },
+   "place": "jingshi",
+   "source": "mingshi",
+   "quote": "杨涟、左光斗、周朝瑞、袁化中、魏大中、顾大章「六君子」下狱，坐赃拷掠而死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M4",
+   "subject": "event:dangzheng_liujunzi",
+   "predicate": "毁书院",
+   "value_text": "熹宗下诏毁天下书院，东林书院被毁",
+   "time": {
+    "era_text": "天启五年",
+    "start": "1625-01-01",
+    "end": "1625-12-31",
+    "gregorian_year": 1625
+   },
+   "place": "donglin",
+   "source": "mingshi",
+   "quote": "明熹宗下诏毁天下书院，东林书院被毁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SX014_M2",
+   "subject": "event:dangzheng_xiong_feng",
+   "predicate": "关联",
+   "value_text": "阉党借熊廷弼、汪文言两案反攻东林",
+   "time": {
+    "era_text": "天启四年至六年",
+    "start": "1624-01-01",
+    "end": "1624-12-31",
+    "gregorian_year": 1624
+   },
+   "place": "jingshi",
+   "source": "modern",
+   "quote": "阉党借熊廷弼、汪文言两案及三朝要典向东林反攻倒算",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "现代学界综论",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "DZG01",
+   "subject": "event:dangzheng_sanchao",
+   "predicate": "诸本异同与定谳分歧",
+   "value_text": "《三朝要典》二十四卷具体案语与各案定谳、阉党名录（点将录等）株连人数，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+   "time": {
+    "era_text": "天启六年",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "jingshi",
+   "source": "modern",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "三朝要典已毁，今本仅散见他书援引；其卷数与各案案语原貌、阉党名录人数各书记载互异",
+   "lead": {
+    "where": "《明史·阉党传》／《三朝要典》佚文辑佚（四库禁毁书目）／《东林点将录》诸本对照",
+    "skills": [
+     "古文",
+     "史料考异"
+    ],
+    "accept": "整理三朝要典的卷数、案语原貌与阉党名录诸本异同，标出政治立场影响",
+    "effort": "2-3 周"
+   },
+   "_party": "学界",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
-  "DZ014"
+  "DZ014",
+  "DZG01"
  ],
  "events": [
   {
@@ -549,6 +893,42 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "title": "刘若愚《酌中志》记阉党专政",
    "kind": "档案",
    "text": "内臣刘若愚于魏忠贤败后追记宫禁见闻，成《酌中志》，详载逆贤擅政、诛东林、熊廷弼之死等内情，为内臣半独立视角的党争史料。"
+  },
+  {
+   "id": "dangzheng_donglin",
+   "subject": "event:dangzheng_donglin",
+   "year": 1604,
+   "era": "万历三十二年",
+   "title": "顾宪成重修东林书院，东林之名起",
+   "kind": "党争",
+   "text": "万历三十二年（1604），顾宪成、高攀龙等重修东林书院，讲学议政、裁量人物，渐成门户，时称东林党人；与齐、楚、浙等反对派对立自此始，门户之祸伏焉。"
+  },
+  {
+   "id": "dangzheng_sanan",
+   "subject": "event:dangzheng_sanan",
+   "year": 1615,
+   "era": "万历四十三年—泰昌元年",
+   "title": "明末三案（梃击／红丸／移宫）",
+   "kind": "党争",
+   "text": "万历四十三年（1615）梃击案，张差持梃闯慈庆宫；泰昌元年（1620）红丸案，光宗服药而崩；同年移宫案，李选侍、魏忠贤据乾清宫，杨涟、左光斗迫其移宫。三案本是宫廷疑案，后皆成党争口实。"
+  },
+  {
+   "id": "dangzheng_sanchao",
+   "subject": "event:dangzheng_sanchao",
+   "year": 1626,
+   "era": "天启六年",
+   "title": "阉党修《三朝要典》，翻三案定东林为邪党",
+   "kind": "党争",
+   "text": "天启六年（1626），魏忠贤命顾秉谦、黄立极、冯铨等为总裁，开馆纂修《三朝要典》（二十四卷），翻梃击、红丸、移宫三案结论，定东林为邪党，为陷害东林张本；崇祯即位即诏毁其书。"
+  },
+  {
+   "id": "dangzheng_liujunzi",
+   "subject": "event:dangzheng_liujunzi",
+   "year": 1625,
+   "era": "天启五年",
+   "title": "六君子之狱，杨涟左光斗等死",
+   "kind": "党争",
+   "text": "天启五年（1625），阉党借汪文言案罗织，杨涟、左光斗、周朝瑞、袁化中、魏大中、顾大章「六君子」下狱，坐赃拷掠而死；旋毁天下书院，东林骨干被清洗。"
   }
  ],
  "edges": [],

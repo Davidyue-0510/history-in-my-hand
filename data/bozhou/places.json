@@ -1,0 +1,8 @@
+{
+  "places": [
+    {"id": "bozhou", "name": "播州", "lon": 106.93, "lat": 27.71, "type": "prefecture", "modern": "贵州遵义", "note": "杨氏土司世袭之地，平播后改流"},
+    {"id": "qijiang", "name": "綦江", "lon": 106.66, "lat": 29.03, "type": "county", "modern": "重庆綦江", "note": "万历二十七年杨应龙攻陷綦江"},
+    {"id": "hailongtun", "name": "海龙囤", "lon": 106.83, "lat": 27.80, "type": "fortress", "modern": "遵义汇川海龙屯", "note": "杨应龙最后据点，明军破囤处"},
+    {"id": "chongqing", "name": "重庆", "lon": 106.55, "lat": 29.56, "type": "city", "modern": "重庆", "note": "杨可栋为质死于重庆"}
+  ]
+}

@@ -3,6 +3,22 @@
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "BZG01",
+   "scene": "bozhou",
+   "subject": "event:bozhou_hailong",
+   "title": "现存记载以明方（平播全书/明史）平播凯旋叙事为主，播州杨氏与五司七姓之地方视角、起事真实动因多缺失，因果呈单向叙述",
+   "missing": "史料搜集 / 土司文书释读",
+   "where": "播州/遵义地方文书、杨氏族谱、五司七姓诉讼原卷",
+   "skills": [
+    "史料搜集",
+    "土司文书释读"
+   ],
+   "accept": "补全播州方与土司视角，平衡单向凯旋叙事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",
@@ -303,6 +319,22 @@
    "_src_line": 14
   },
   {
+   "id": "JQ010",
+   "scene": "juehua1626",
+   "subject": "event:juehua1626_massacre",
+   "title": "明方记兵损七千余、商民损七八千",
+   "missing": "明清档案比对 / 数字考据",
+   "where": "juehua",
+   "skills": [
+    "明清档案比对",
+    "数字考据"
+   ],
+   "accept": "需核对明实录原文及清方档案，厘清守岛兵力与死伤数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 22
+  },
+  {
    "id": "K025",
    "scene": "kaiyuan",
    "subject": "event:kaifa",
@@ -398,6 +430,22 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "DZG01",
+   "scene": "mingmo_dangzheng",
+   "subject": "event:dangzheng_sanchao",
+   "title": "《三朝要典》二十四卷具体案语与各案定谳、阉党名录（点将录等）株连人数，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+   "missing": "古文 / 史料考异",
+   "where": "《明史·阉党传》／《三朝要典》佚文辑佚（四库禁毁书目）／《东林点将录》诸本对照",
+   "skills": [
+    "古文",
+    "史料考异"
+   ],
+   "accept": "整理三朝要典的卷数、案语原貌与阉党名录诸本异同，标出政治立场影响",
+   "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 26
   },
   {
    "id": "N010",

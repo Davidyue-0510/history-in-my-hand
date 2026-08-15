@@ -1,0 +1,14 @@
+{
+  "persons": [
+    {"id": "nuerhachi", "name": "努尔哈赤", "side": "houjin", "role": "后金大汗", "note": "天命十一年攻宁远不下，命武讷格取觉华岛。"},
+    {"id": "yuan_chonghuan", "name": "袁崇焕", "side": "ming", "role": "宁前兵备佥事/巡抚", "note": "守宁远城不退；战后祭觉华岛阵亡兵将、组新水师。"},
+    {"id": "gao_di", "name": "高第", "side": "ming", "role": "辽东经略", "note": "传令坚守觉华岛，宁远被攻时未敢出援。"},
+    {"id": "wunu_ge", "name": "武讷格（吴讷格）", "side": "houjin", "role": "八旗蒙古将", "note": "努尔哈赤命其率八旗蒙古益满兵八百攻取觉华岛，尽屠守军焚粮船。"},
+    {"id": "yao_fumin", "name": "姚抚民", "side": "ming", "role": "参将", "note": "率官兵凿冰十五里为壕，冰上列阵，兵溃阵亡。"},
+    {"id": "zhao_shuaijiao", "name": "赵率教", "side": "ming", "role": "总兵", "note": "宁远守将之一，与袁崇焕婴城固守。"},
+    {"id": "zu_dashou", "name": "祖大寿", "side": "ming", "role": "副将", "note": "辽西明军主将，宁远觉华体系旧部。"},
+    {"id": "man_gui", "name": "满桂", "side": "ming", "role": "总兵", "note": "宁远守将，与袁崇焕、祖大寿婴城固守。"},
+    {"id": "wang_tingchen", "name": "王廷臣", "side": "ming", "role": "将领", "note": "正月二十九奉袁崇焕令往觉华岛救援，仅收军民尸体。"},
+    {"id": "jin_guan", "name": "金冠", "side": "ming", "role": "守将", "note": "觉华岛守将，战前已死；其子金士麒迎灵战死。"}
+  ]
+}

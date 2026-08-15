@@ -1,6 +1,7 @@
 {
   "places": [
     {"id": "jingshi", "name": "京师·经筵", "lon": 116.40, "lat": 39.90, "type": "court", "modern": "北京紫禁城", "note": "讲筵（经筵）之所，冯铨发难陷熊廷弼之地"},
-    {"id": "liaodong", "name": "辽东", "lon": 123.0, "lat": 41.8, "type": "region", "modern": "辽沈一带", "note": "熊廷弼经略之地，《辽东传》所写即此"}
+    {"id": "liaodong", "name": "辽东", "lon": 123.0, "lat": 41.8, "type": "region", "modern": "辽沈一带", "note": "熊廷弼经略之地，《辽东传》所写即此"},
+    {"id": "donglin", "name": "东林书院", "lon": 120.30, "lat": 31.57, "type": "academy", "modern": "无锡东林书院", "note": "顾宪成、高攀龙重修讲学之所，东林党名所由起。"}
   ]
 }

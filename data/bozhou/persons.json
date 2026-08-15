@@ -1,0 +1,12 @@
+{
+  "persons": [
+    {"id": "yang_yinglong", "name": "杨应龙", "side": "bozhou", "role": "播州宣慰使", "note": "世袭播州土司，叛明，败死。"},
+    {"id": "li_hualong", "name": "李化龙", "side": "ming", "role": "四川总督节制三省", "note": "平播总指挥，事后编《平播全书》。"},
+    {"id": "guo_zizhang", "name": "郭子章", "side": "ming", "role": "贵州巡抚", "note": "坐镇贵阳督后，著《平播始末》。"},
+    {"id": "liu_ying", "name": "刘綎", "side": "ming", "role": "总兵", "note": "八路之一，破娄山关、攻破海龙囤最力。"},
+    {"id": "yang_chaozong", "name": "杨朝栋", "side": "bozhou", "role": "杨应龙长子", "note": "统兵四五万守娄山关，败；后被俘凌迟。"},
+    {"id": "tian_cifeng", "name": "田雌凤", "side": "bozhou", "role": "杨应龙妾", "note": "正妻张氏被休杀，田氏宠擅；战后被斩。"},
+    {"id": "wu_guang", "name": "吴广", "side": "ming", "role": "总兵", "note": "破囤时俘杨朝栋、田氏，抢出杨应龙尸体。"},
+    {"id": "yang_kezhou", "name": "杨可栋", "side": "bozhou", "role": "杨应龙次子（质子）", "note": "留重庆为质，死；播州与明关系恶化之导火索。"}
+  ]
+}

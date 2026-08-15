@@ -17,6 +17,7 @@
 | beijiu | 2 | 2 | **0.000** | event:bj_961（0.000） | scholarship 2 |
 | bencao | 2 | 2 | **0.000** | event:bc_1281（0.000） | scholarship 2 |
 | boju | 3 | 3 | **0.000** | event:bj_bj（0.000） | scholarship 3 |
+| bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | caishiji | 3 | 3 | **0.000** | event:cs_jin（0.000） | scholarship 3 |
 | canhebei | 3 | 3 | **0.000** | event:ch_jz（0.000） | scholarship 3 |
 | changping | 3 | 3 | **0.000** | event:cp_jz（0.000） | scholarship 3 |
@@ -61,6 +62,7 @@
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | jiupin | 2 | 2 | **0.000** | event:jp_220（0.000） | scholarship 2 |
 | jiuzi | 2 | 2 | **0.000** | event:jz_1712（0.000） | scholarship 2 |
+| juehua1626 | 23 | 3 | **0.545** | event:juehua1626_ice（0.667） | gap 1 / record 21 / scholarship 1 |
 | juehua | 14 | 3 | **0.000** | event:juehua_garrison（0.000） | gap 1 / record 12 / scholarship 1 |
 | julu | 3 | 3 | **0.000** | event:jl_jz（0.000） | scholarship 3 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
@@ -76,7 +78,7 @@
 | lvlin | 2 | 2 | **0.000** | event:ll_17（0.000） | scholarship 2 |
 | maling | 3 | 3 | **0.000** | event:ml_jz（0.000） | scholarship 3 |
 | ming_fall | 3 | 3 | **0.000** | event:mf_1627（0.000） | scholarship 3 |
-| mingmo_dangzheng | 14 | 4 | **0.292** | event:dangzheng_liuruoyu（0.333） | gap 1 / record 12 / scholarship 1 |
+| mingmo_dangzheng | 26 | 8 | **0.302** | event:dangzheng_donglin（0.333） | gap 2 / record 22 / scholarship 2 |
 | mobai | 3 | 3 | **0.000** | event:mb_chu（0.000） | scholarship 3 |
 | ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
 | poyanghu | 3 | 3 | **0.000** | event:py_chen（0.000） | scholarship 3 |
@@ -136,7 +138,7 @@
 
 | 派系 | 断言数 | 涉及场景 | 代表来源 |
 |---|---|---|---|
-| 封疆大吏 / 辽东经略系 | 30 | 辽阳、萨尔浒、shenyang | sanchaoliao_shilu |
+| 封疆大吏 / 辽东经略系 | 42 | juehua1626、辽阳、萨尔浒、shenyang | sanchaoliao_shilu、sanzhao_liao_shi |
 | 内臣 / 宦官（独立于阉党） | 22 | guangning、mingmo_dangzheng | zhuozhongzhi |
 
 ## 事件共振表（按共振度升序：最不共振的最值得补）
@@ -426,11 +428,18 @@
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |
 | event:yehe_kaiyuan_attack | yehe | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | 铁岭陷落（1619） | 铁岭 | **0.179** | 1/3 | 0.25 | 0.29 | 7 | 0 / 3 / 0 / 4 |
+| event:bozhou_hailong | bozhou | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 2 / 0 / 2 |
+| event:dangzheng_sanchao | mingmo_dangzheng | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 3 / 0 / 1 |
 | event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
 | event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
+| event:bozhou_pingbo | bozhou | **0.333** | 1/3 | 0.00 | 0.00 | 6 | 0 / 6 / 0 / 0 |
+| event:bozhou_qijun | bozhou | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
+| event:dangzheng_donglin | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
+| event:dangzheng_liujunzi | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:dangzheng_liuruoyu | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
-| event:dangzheng_xiong_feng | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 1 / 0 / 0 / 1 |
+| event:dangzheng_sanan | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
+| event:dangzheng_xiong_feng | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 1 / 0 / 0 / 2 |
 | event:dangzheng_yanglian | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:fushun_founded | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:fushun_mashi | fushun | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
@@ -458,12 +467,15 @@
 | event:yehe_fall | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:yehe_founded | yehe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:gaizhou_fall | gaizhou | **0.444** | 2/3 | 0.00 | 0.33 | 3 | 1 / 2 / 0 / 0 |
+| event:juehua1626_ningyuan | juehua1626 | **0.444** | 2/3 | 0.33 | 0.00 | 4 | 1 / 3 / 0 / 0 |
 | 辽阳陷落（1621） | 辽阳 | **0.520** | 2/3 | 0.13 | 0.10 | 29 | 8 / 6 / 0 / 15 |
+| event:juehua1626_massacre | juehua1626 | **0.525** | 2/3 | 0.12 | 0.10 | 10 | 7 / 2 / 0 / 1 |
 | 杜松渡浑河（西路） | 萨尔浒 | **0.533** | 2/3 | 0.20 | 0.00 | 6 | 1 / 2 / 0 / 3 |
 | 萨尔浒主战场 | 萨尔浒 | **0.578** | 2/3 | 0.08 | 0.06 | 33 | 11 / 0 / 12 / 10 |
 | event:fushun_fall | fushun | **0.580** | 2/3 | 0.07 | 0.06 | 16 | 0 / 15 / 1 / 0 |
 | 阿布达里岗（东路·刘綎） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 1 / 0 |
 | event:cefeng_heyi | imjin | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 0 |
+| event:juehua1626_ice | juehua1626 | **0.667** | 2/3 | 0.00 | 0.00 | 5 | 2 / 3 / 0 / 0 |
 | event:ningjin_dajie | ningyuan | **0.667** | 2/3 | 0.00 | 0.00 | 2 | 1 / 1 / 0 / 0 |
 | event:pyongyang_battle | imjin | **0.667** | 3/3 | 0.33 | 0.00 | 5 | 0 / 1 / 3 / 0 |
 | 南路溃逃（李如柏） | 萨尔浒 | **0.667** | 2/3 | 0.00 | 0.00 | 3 | 1 / 1 / 0 / 1 |

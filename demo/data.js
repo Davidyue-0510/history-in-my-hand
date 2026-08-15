@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 126 个切片
+// 权威数据源：data/scenes.json 注册的 128 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 126 个切片",
+  "slice": "multi-scene · 128 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -113,6 +113,11 @@ window.SANDBOX_DATA = {
    "note": "1685—1686年，清俄雅克萨之战，尼布楚条约前奏。"
   },
   {
+   "id": "chuan_gui",
+   "name": "川贵·西南",
+   "note": "播州之役、平缅、奢安之乱等西南土司与改土归流，是明帝国经略西南、拉伸统治半径的关键战场。"
+  },
+  {
    "id": "ecology",
    "name": "天灾与生态",
    "note": "黄河以「善淤善决善徙」著称，史称「六年一决、百年一改道」。本切片列其历次大改道与夺淮、北归。"
@@ -181,6 +186,8 @@ window.SANDBOX_DATA = {
   "songjin",
   "dalinghe",
   "juehua",
+  "juehua1626",
+  "bozhou",
   "novel_fandao",
   "novel_fandao_2",
   "novel_fandao_3",
@@ -7693,6 +7700,56 @@ window.SANDBOX_DATA = {
     "inference": 0
    }
   },
+  "juehua1626": {
+   "key": "juehua1626",
+   "scene_id": "juehua1626",
+   "title": "觉华岛之战·宁远犄角后的屠戮",
+   "dossier_label": "觉华岛",
+   "subtitle": "天启六年（1626）正月 · 努尔哈赤屠岛焚粮",
+   "kind": "battle",
+   "region": "liaoxi",
+   "page": "juehua1626.html",
+   "primary_place": "juehua",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "liaodong",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 6,
+    "place": 3,
+    "person": 10,
+    "assert": 23,
+    "conflict": 2,
+    "gap": 1,
+    "record": 21,
+    "scholarship": 1,
+    "inference": 0
+   }
+  },
+  "bozhou": {
+   "key": "bozhou",
+   "scene_id": "bozhou",
+   "title": "播州之役·平播之役",
+   "dossier_label": "播州",
+   "subtitle": "万历二十七年至二十八年 (1599–1600) · 平播改土归流",
+   "kind": "battle",
+   "region": "chuan_gui",
+   "page": "bozhou.html",
+   "primary_place": "bozhou",
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "liaodong",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 3,
+    "place": 4,
+    "person": 8,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 0
+   }
+  },
   "novel_fandao": {
    "key": "novel_fandao",
    "scene_id": "novel_fandao",
@@ -10408,13 +10465,13 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
-    "place": 2,
-    "person": 8,
-    "assert": 14,
+    "place": 3,
+    "person": 14,
+    "assert": 26,
     "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
+    "gap": 2,
+    "record": 22,
+    "scholarship": 2,
     "inference": 0
    }
   }
@@ -10437,6 +10494,8 @@ window.SANDBOX_DATA = {
   "songjin": "slices/songjin.js",
   "dalinghe": "slices/dalinghe.js",
   "juehua": "slices/juehua.js",
+  "juehua1626": "slices/juehua1626.js",
+  "bozhou": "slices/bozhou.js",
   "novel_fandao": "slices/novel_fandao.js",
   "novel_fandao_2": "slices/novel_fandao_2.js",
   "novel_fandao_3": "slices/novel_fandao_3.js",
@@ -10612,6 +10671,22 @@ window.SANDBOX_DATA = {
   "_comment": "可认领的研究线索（v0.5）。每条 gap 断言的 lead 块汇总而成。新增 gap + lead 即可出现在此；hub / county 页的「线索」页签自动渲染。",
   "_schema_version": "0.1",
   "leads": [
+   {
+    "id": "BZG01",
+    "scene": "bozhou",
+    "subject": "event:bozhou_hailong",
+    "title": "现存记载以明方（平播全书/明史）平播凯旋叙事为主，播州杨氏与五司七姓之地方视角、起事真实动因多缺失，因果呈单向叙述",
+    "missing": "史料搜集 / 土司文书释读",
+    "where": "播州/遵义地方文书、杨氏族谱、五司七姓诉讼原卷",
+    "skills": [
+     "史料搜集",
+     "土司文书释读"
+    ],
+    "accept": "补全播州方与土司视角，平衡单向凯旋叙事",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
    {
     "id": "DLH012",
     "scene": "dalinghe",
@@ -10913,6 +10988,22 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "JQ010",
+    "scene": "juehua1626",
+    "subject": "event:juehua1626_massacre",
+    "title": "明方记兵损七千余、商民损七八千",
+    "missing": "明清档案比对 / 数字考据",
+    "where": "juehua",
+    "skills": [
+     "明清档案比对",
+     "数字考据"
+    ],
+    "accept": "需核对明实录原文及清方档案，厘清守岛兵力与死伤数字",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 22
+   },
+   {
     "id": "K025",
     "scene": "kaiyuan",
     "subject": "event:kaifa",
@@ -11008,6 +11099,22 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "DZG01",
+    "scene": "mingmo_dangzheng",
+    "subject": "event:dangzheng_sanchao",
+    "title": "《三朝要典》二十四卷具体案语与各案定谳、阉党名录（点将录等）株连人数，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+    "missing": "古文 / 史料考异",
+    "where": "《明史·阉党传》／《三朝要典》佚文辑佚（四库禁毁书目）／《东林点将录》诸本对照",
+    "skills": [
+     "古文",
+     "史料考异"
+    ],
+    "accept": "整理三朝要典的卷数、案语原貌与阉党名录诸本异同，标出政治立场影响",
+    "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 26
    },
    {
     "id": "N010",
@@ -11569,6 +11676,7 @@ window.SANDBOX_DATA = {
     "beijiu",
     "bencao",
     "boju",
+    "bozhou",
     "caishiji",
     "canhebei",
     "changping",
@@ -11613,6 +11721,7 @@ window.SANDBOX_DATA = {
     "jinzhouwei",
     "jiupin",
     "jiuzi",
+    "juehua1626",
     "juehua",
     "julu",
     "kaiyuan",
@@ -11774,6 +11883,25 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.0,
     "best_event": "event:bj_bj",
     "best_resonance": 0.0
+   },
+   {
+    "scene": "bozhou",
+    "name": "bozhou",
+    "total": 14,
+    "layers": {
+     "record": 12,
+     "scholarship": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "清方": 12,
+     "综述考订": 2
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.305,
+    "best_event": "event:bozhou_pingbo",
+    "best_resonance": 0.333
    },
    {
     "scene": "caishiji",
@@ -12519,6 +12647,28 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "juehua1626",
+    "name": "juehua1626",
+    "total": 23,
+    "layers": {
+     "record": 21,
+     "gap": 1,
+     "scholarship": 1
+    },
+    "party_counts": {
+     "明方": 13,
+     "清方": 9,
+     "综述考订": 1
+    },
+    "faction_counts": {
+     "封疆大吏 / 辽东经略系": 12
+    },
+    "event_count": 3,
+    "avg_resonance": 0.545,
+    "best_event": "event:juehua1626_ice",
+    "best_resonance": 0.667
+   },
+   {
     "scene": "juehua",
     "name": "juehua",
     "total": 14,
@@ -12776,22 +12926,23 @@ window.SANDBOX_DATA = {
    {
     "scene": "mingmo_dangzheng",
     "name": "mingmo_dangzheng",
-    "total": 14,
+    "total": 26,
     "layers": {
-     "record": 12,
-     "scholarship": 1,
-     "gap": 1
+     "record": 22,
+     "scholarship": 2,
+     "gap": 2
     },
     "party_counts": {
      "明方": 13,
-     "综述考订": 1
+     "综述考订": 3,
+     "清方": 10
     },
     "faction_counts": {
      "内臣 / 宦官（独立于阉党）": 13
     },
-    "event_count": 4,
-    "avg_resonance": 0.292,
-    "best_event": "event:dangzheng_liuruoyu",
+    "event_count": 8,
+    "avg_resonance": 0.302,
+    "best_event": "event:dangzheng_donglin",
     "best_resonance": 0.333
    },
    {

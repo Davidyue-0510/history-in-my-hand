@@ -1,9 +1,9 @@
 {
-  "scenes_total": 126,
-  "historical": 52,
+  "scenes_total": 128,
+  "historical": 54,
   "fictional": 74,
-  "assertions_total": 943,
-  "sources_total": 47,
+  "assertions_total": 992,
+  "sources_total": 54,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 59,
+  "leads_total": 62,
   "per_scene": [
     {
       "id": "sarhu",
@@ -138,6 +138,22 @@
       "id": "juehua",
       "title": "觉华岛·辽西海防枢纽",
       "kind": "county",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "juehua1626",
+      "title": "觉华岛之战·宁远犄角后的屠戮",
+      "kind": "battle",
+      "assertions": 23,
+      "factions": {
+        "feng_jiang": 12
+      }
+    },
+    {
+      "id": "bozhou",
+      "title": "播州之役·平播之役",
+      "kind": "battle",
       "assertions": 14,
       "factions": {}
     },
@@ -901,7 +917,7 @@
       "id": "mingmo_dangzheng",
       "title": "明末党争·辽东导火索",
       "kind": "court",
-      "assertions": 14,
+      "assertions": 26,
       "factions": {
         "nei_guan": 13
       }
@@ -925,6 +941,8 @@
     "songjin": "松锦之战",
     "dalinghe": "大凌河之战",
     "juehua": "觉华岛·辽西海防枢纽",
+    "juehua1626": "觉华岛之战·宁远犄角后的屠戮",
+    "bozhou": "播州之役·平播之役",
     "novel_fandao": "反派他爸教做人·九零家暴男儿子",
     "novel_fandao_2": "反派他爸教做人·深情渣帝王儿子",
     "novel_fandao_3": "反派他爸教做人·拜金绝色女儿",

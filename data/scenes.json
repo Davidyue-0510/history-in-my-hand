@@ -117,6 +117,11 @@
       "note": "1685—1686年，清俄雅克萨之战，尼布楚条约前奏。"
     },
     {
+      "id": "chuan_gui",
+      "name": "川贵·西南",
+      "note": "播州之役、平缅、奢安之乱等西南土司与改土归流，是明帝国经略西南、拉伸统治半径的关键战场。"
+    },
+    {
       "id": "ecology",
       "name": "天灾与生态",
       "note": "黄河以「善淤善决善徙」著称，史称「六年一决、百年一改道」。本切片列其历次大改道与夺淮、北归。"
@@ -185,6 +190,8 @@
     "songjin",
     "dalinghe",
     "juehua",
+    "juehua1626",
+    "bozhou",
     "novel_fandao",
     "novel_fandao_2",
     "novel_fandao_3",
@@ -3082,6 +3089,73 @@
         "person:ma_shilong": "马世龙"
       }
     },
+    "juehua1626": {
+      "kind": "battle",
+      "region": "liaoxi",
+      "title": "觉华岛之战·宁远犄角后的屠戮",
+      "dossier_label": "觉华岛",
+      "subtitle": "天启六年（1626）正月 · 努尔哈赤屠岛焚粮",
+      "primary_place": "juehua",
+      "dossier_event": "event:juehua1626_massacre",
+      "back": "辽西",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "天启六年正月，努尔哈赤攻宁远城不下，转谋觉华岛。明将姚抚民等凿冰十五里为壕、冰上列阵，无险可守；后金武讷格率八旗蒙古益满兵八百冲入，四营尽溃。岛上军民被屠戮甚多，营房民舍、海岸舟船二千余艘、龙宫寺粮草八万石皆被焚。明将王锡斧、季士登、吴国勋、姚与贤、王朝臣、张士奇、吴惟进等阵亡，金冠之子金士麒迎灵战死。",
+      "parties_note": "觉华岛之战是明清史料对立最尖锐的一场：明方（三朝辽事实录/明熹宗实录/茅元仪）记军民损失约一万五千、兵七千余商民七八千；清方（满洲实录/清实录）记明兵四万、尽杀之、焚船二千余及粮草千余所。双方守岛兵力与死伤数字悬殊，系统不裁决，只并列。",
+      "subject_names": {
+        "event:juehua1626_ningyuan": "宁远攻城不下",
+        "event:juehua1626_ice": "凿冰为壕",
+        "event:juehua1626_massacre": "觉华岛屠戮",
+        "place:juehua": "觉华岛",
+        "place:ningyuan": "宁远",
+        "place:shenyang": "沈阳",
+        "person:nuerhachi": "努尔哈赤",
+        "person:yuan_chonghuan": "袁崇焕",
+        "person:gao_di": "高第",
+        "person:wunu_ge": "武讷格",
+        "person:yao_fumin": "姚抚民",
+        "person:zhao_shuaijiao": "赵率教",
+        "person:zu_dashou": "祖大寿",
+        "person:man_gui": "满桂",
+        "person:wang_tingchen": "王廷臣",
+        "person:jin_guan": "金冠"
+      }
+    },
+    "bozhou": {
+      "kind": "battle",
+      "region": "chuan_gui",
+      "title": "播州之役·平播之役",
+      "dossier_label": "播州",
+      "subtitle": "万历二十七年至二十八年 (1599–1600) · 平播改土归流",
+      "primary_place": "bozhou",
+      "dossier_event": "event:bozhou_hailong",
+      "back": "川贵",
+      "extra_files": [
+        "events",
+        "edges"
+      ],
+      "lead": "播州杨氏自唐末割据，明初封宣慰使。杨应龙袭位后与五司七姓结怨，子为质死于重庆，遂叛。万历二十八年李化龙督八路明军平播，破海龙囤，杨应龙自缢。明废播州土司，分设遵义、平越二府，西南改土归流。",
+      "parties_note": "播州之役以明方（平播全书/明史）叙事为主，清修明史亦记其详；现代综述重其改土归流之财政与西南格局影响。系统不裁决，只并列。",
+      "subject_names": {
+        "event:bozhou_qijun": "杨应龙起事",
+        "event:bozhou_pingbo": "八路平播",
+        "event:bozhou_hailong": "破海龙囤",
+        "place:bozhou": "播州",
+        "place:qijiang": "綦江",
+        "place:hailongtun": "海龙囤",
+        "place:chongqing": "重庆",
+        "person:yang_yinglong": "杨应龙",
+        "person:li_hualong": "李化龙",
+        "person:guo_zizhang": "郭子章",
+        "person:liu_ying": "刘綎",
+        "person:yang_chaozong": "杨朝栋",
+        "person:tian_cifeng": "田雌凤",
+        "person:wu_guang": "吴广",
+        "person:yang_kezhou": "杨可栋"
+      }
+    },
     "mingmo_dangzheng": {
       "kind": "court",
       "region": "court",
@@ -3102,8 +3176,13 @@
         "event:dangzheng_yanglian": "杨涟弹魏二十四罪",
         "event:dangzheng_minglu": "阉党造名录株连",
         "event:dangzheng_liuruoyu": "刘若愚《酌中志》记阉党",
+        "event:dangzheng_donglin": "东林书院重修",
+        "event:dangzheng_sanan": "明末三案",
+        "event:dangzheng_sanchao": "阉党修三朝要典",
+        "event:dangzheng_liujunzi": "六君子之狱",
         "place:jingshi": "京师·经筵",
         "place:liaodong": "辽东",
+        "place:donglin": "东林书院",
         "person:feng_quan": "冯铨",
         "person:xiong_tingbi": "熊廷弼",
         "person:wei_zhongxian": "魏忠贤",
@@ -3111,7 +3190,13 @@
         "person:yang_lian": "杨涟",
         "person:liu_ruoyu": "刘若愚",
         "person:jiang_yingyang": "蒋应暘",
-        "person:cui_chengxiu": "崔呈秀"
+        "person:cui_chengxiu": "崔呈秀",
+        "person:gu_xiancheng": "顾宪成",
+        "person:zuo_guangdou": "左光斗",
+        "person:gao_panlong": "高攀龙",
+        "person:wang_wenyan": "汪文言",
+        "person:gu_bingqian": "顾秉谦",
+        "person:huo_weihua": "霍维华"
       }
     }
   }

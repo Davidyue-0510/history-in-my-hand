@@ -14,6 +14,7 @@
       "beijiu",
       "bencao",
       "boju",
+      "bozhou",
       "caishiji",
       "canhebei",
       "changping",
@@ -58,6 +59,7 @@
       "jinzhouwei",
       "jiupin",
       "jiuzi",
+      "juehua1626",
       "juehua",
       "julu",
       "kaiyuan",
@@ -219,6 +221,25 @@
       "avg_resonance": 0.0,
       "best_event": "event:bj_bj",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "bozhou",
+      "name": "bozhou",
+      "total": 14,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "清方": 12,
+        "综述考订": 2
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.305,
+      "best_event": "event:bozhou_pingbo",
+      "best_resonance": 0.333
     },
     {
       "scene": "caishiji",
@@ -964,6 +985,28 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "juehua1626",
+      "name": "juehua1626",
+      "total": 23,
+      "layers": {
+        "record": 21,
+        "gap": 1,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "明方": 13,
+        "清方": 9,
+        "综述考订": 1
+      },
+      "faction_counts": {
+        "封疆大吏 / 辽东经略系": 12
+      },
+      "event_count": 3,
+      "avg_resonance": 0.545,
+      "best_event": "event:juehua1626_ice",
+      "best_resonance": 0.667
+    },
+    {
       "scene": "juehua",
       "name": "juehua",
       "total": 14,
@@ -1221,22 +1264,23 @@
     {
       "scene": "mingmo_dangzheng",
       "name": "mingmo_dangzheng",
-      "total": 14,
+      "total": 26,
       "layers": {
-        "record": 12,
-        "scholarship": 1,
-        "gap": 1
+        "record": 22,
+        "scholarship": 2,
+        "gap": 2
       },
       "party_counts": {
         "明方": 13,
-        "综述考订": 1
+        "综述考订": 3,
+        "清方": 10
       },
       "faction_counts": {
         "内臣 / 宦官（独立于阉党）": 13
       },
-      "event_count": 4,
-      "avg_resonance": 0.292,
-      "best_event": "event:dangzheng_liuruoyu",
+      "event_count": 8,
+      "avg_resonance": 0.302,
+      "best_event": "event:dangzheng_donglin",
       "best_resonance": 0.333
     },
     {
@@ -2115,14 +2159,16 @@
   "faction_summary": {
     "feng_jiang": {
       "name": "封疆大吏 / 辽东经略系",
-      "total": 30,
+      "total": 42,
       "scenes": [
+        "juehua1626",
         "liaoyang",
         "sarhu",
         "shenyang"
       ],
       "sources": [
-        "sanchaoliao_shilu"
+        "sanchaoliao_shilu",
+        "sanzhao_liao_shi"
       ]
     },
     "nei_guan": {
@@ -11451,6 +11497,136 @@
       }
     },
     {
+      "subject": "event:bozhou_hailong",
+      "name": "event:bozhou_hailong",
+      "scenes": [
+        "bozhou"
+      ],
+      "scene_names": [
+        "bozhou"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.25,
+      "party_counts": {
+        "明方": 0,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "BZ007",
+            "predicate": "决战",
+            "value_text": "刘綎破娄山关，与杨应龙九万大军决战大胜",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ008",
+            "predicate": "破囤",
+            "value_text": "刘綎部火器破土城月城内城，杨应龙自缢",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "BZS01",
+            "predicate": "改土归流影响",
+            "value_text": "播州改土归流，分设遵义（隶四川）、平越（隶贵州）二府；军费善后达三百五十万两，与宁夏、朝鲜之役合称万历三大征，明陷财政危机",
+            "source": "wiki_bozhou",
+            "layer": "scholarship",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZG01",
+            "predicate": "叙事失衡",
+            "value_text": "现存记载以明方（平播全书/明史）平播凯旋叙事为主，播州杨氏与五司七姓之地方视角、起事真实动因多缺失，因果呈单向叙述",
+            "source": "wiki_bozhou",
+            "layer": "gap",
+            "scene": "bozhou"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dangzheng_sanchao",
+      "name": "event:dangzheng_sanchao",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.25,
+      "party_counts": {
+        "明方": 0,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX008_M4",
+            "predicate": "提议",
+            "value_text": "霍维华上疏推翻三案结论",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX009_M4",
+            "predicate": "纂修",
+            "value_text": "顾秉谦、黄立极、冯铨为总裁纂修《三朝要典》",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX010_M4",
+            "predicate": "销毁",
+            "value_text": "崇祯即位后诏毁《三朝要典》",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DZG01",
+            "predicate": "诸本异同与定谳分歧",
+            "value_text": "《三朝要典》二十四卷具体案语与各案定谳、阉党名录（点将录等）株连人数，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "modern",
+            "layer": "gap",
+            "scene": "mingmo_dangzheng"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:ningyuan_founded",
       "name": "event:ningyuan_founded",
       "scenes": [
@@ -11741,6 +11917,238 @@
       }
     },
     {
+      "subject": "event:bozhou_pingbo",
+      "name": "event:bozhou_pingbo",
+      "scenes": [
+        "bozhou"
+      ],
+      "scene_names": [
+        "bozhou"
+      ],
+      "total": 6,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 6,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "BZ004",
+            "predicate": "总指挥",
+            "value_text": "李化龙为总指挥，郭子章坐镇贵阳",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ005",
+            "predicate": "分兵",
+            "value_text": "明军分兵八路，每路约三万人",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ009",
+            "predicate": "俘获",
+            "value_text": "吴广俘杨朝栋、田氏，抢出杨应龙尸体",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ010",
+            "predicate": "改土归流",
+            "value_text": "废播州土司设流官，分遵义府平越府",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ011",
+            "predicate": "军费",
+            "value_text": "军费与善后达三百五十万两白银",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ012",
+            "predicate": "影响",
+            "value_text": "播州城建筑几被焚毁，千年剏建一朝成墟",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:bozhou_qijun",
+      "name": "event:bozhou_qijun",
+      "scenes": [
+        "bozhou"
+      ],
+      "scene_names": [
+        "bozhou"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "BZ001",
+            "predicate": "起因",
+            "value_text": "杨应龙与五司七姓矛盾，杀妻张氏",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ002",
+            "predicate": "恶化",
+            "value_text": "杨可栋死于重庆，杨应龙袭扰川贵湖",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          },
+          {
+            "id": "BZ003",
+            "predicate": "攻陷",
+            "value_text": "杨应龙攻陷綦江，威胁重庆成都",
+            "source": "mingshi_bozhou",
+            "layer": "record",
+            "scene": "bozhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dangzheng_donglin",
+      "name": "event:dangzheng_donglin",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX001_M4",
+            "predicate": "创建",
+            "value_text": "顾宪成与高攀龙等重修东林书院",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX002_M4",
+            "predicate": "活动",
+            "value_text": "每年一大会每月一小会，讲学议政",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dangzheng_liujunzi",
+      "name": "event:dangzheng_liujunzi",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX011_M4",
+            "predicate": "下狱",
+            "value_text": "杨涟、左光斗等六君子下狱拷掠而死",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX012_M4",
+            "predicate": "毁书院",
+            "value_text": "熹宗下诏毁天下书院，东林书院被毁",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:dangzheng_liuruoyu",
       "name": "event:dangzheng_liuruoyu",
       "scenes": [
@@ -11781,6 +12189,62 @@
       }
     },
     {
+      "subject": "event:dangzheng_sanan",
+      "name": "event:dangzheng_sanan",
+      "scenes": [
+        "mingmo_dangzheng"
+      ],
+      "scene_names": [
+        "mingmo_dangzheng"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SX004_M4",
+            "predicate": "梃击案",
+            "value_text": "张差持枣木棍闯入慈庆宫",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX005_M4",
+            "predicate": "红丸案",
+            "value_text": "光宗服红丸而崩",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX006_M4",
+            "predicate": "移宫案",
+            "value_text": "杨涟、左光斗迫李选侍移宫",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "mingmo_dangzheng"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:dangzheng_xiong_feng",
       "name": "event:dangzheng_xiong_feng",
       "scenes": [
@@ -11789,7 +12253,7 @@
       "scene_names": [
         "mingmo_dangzheng"
       ],
-      "total": 2,
+      "total": 3,
       "gap_count": 0,
       "coverage": "1/3",
       "coverage_frac": 0.333,
@@ -11801,7 +12265,7 @@
         "清方": 0,
         "朝鲜": 0,
         "日本方": 0,
-        "综述考订": 1
+        "综述考订": 2
       },
       "parties": {
         "明方": [
@@ -11822,6 +12286,14 @@
             "id": "DZ013",
             "predicate": "私怨杀人的制度性背景",
             "value_text": "现代学界指出，熊廷弼之死固有其广宁兵败之责，但冯铨借小说《辽东传》私怨、以讲筵袖奏构陷，显示辽东战事已被京中党争与内廷私怨所劫持；阉党专政下，边事成败不再纯由军功评定。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "mingmo_dangzheng"
+          },
+          {
+            "id": "SX014_M2",
+            "predicate": "关联",
+            "value_text": "阉党借熊廷弼、汪文言两案反攻东林",
             "source": "modern",
             "layer": "scholarship",
             "scene": "mingmo_dangzheng"
@@ -13011,6 +13483,71 @@
       }
     },
     {
+      "subject": "event:juehua1626_ningyuan",
+      "name": "event:juehua1626_ningyuan",
+      "scenes": [
+        "juehua1626"
+      ],
+      "scene_names": [
+        "juehua1626"
+      ],
+      "total": 4,
+      "gap_count": 0,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.333,
+      "gap_rate": 0.0,
+      "resonance": 0.444,
+      "party_counts": {
+        "明方": 1,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "JX003",
+            "predicate": "转攻",
+            "value_text": "努尔哈赤攻宁远不下，转攻觉华岛",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          }
+        ],
+        "清方": [
+          {
+            "id": "JQ001",
+            "predicate": "攻城",
+            "value_text": "帝率大军攻宁远城",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ002",
+            "predicate": "攻城结果",
+            "value_text": "凿城已穿而不堕，满洲兵不能进",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ003",
+            "predicate": "攻城结果",
+            "value_text": "次日复攻又不能克，乃收兵",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:liaoyang_fall",
       "name": "辽阳陷落（1621）",
       "scenes": [
@@ -13272,6 +13809,120 @@
             "source": "mingtongjian",
             "layer": "scholarship",
             "scene": "liaoyang"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:juehua1626_massacre",
+      "name": "event:juehua1626_massacre",
+      "scenes": [
+        "juehua1626"
+      ],
+      "scene_names": [
+        "juehua1626"
+      ],
+      "total": 10,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.125,
+      "gap_rate": 0.1,
+      "resonance": 0.525,
+      "party_counts": {
+        "明方": 7,
+        "清方": 2,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "JX006",
+            "predicate": "屠戮",
+            "value_text": "岛上军民被屠戮很多",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX007",
+            "predicate": "焚毁",
+            "value_text": "两千多艘舟船几乎被焚毁",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX008",
+            "predicate": "焚粮",
+            "value_text": "龙宫寺八万石粮草被焚毁",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX009",
+            "predicate": "兵力损失",
+            "value_text": "兵力损失超七千，商民损失七八千",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX011",
+            "predicate": "救援",
+            "value_text": "袁崇焕传令王廷臣领兵救援",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX012",
+            "predicate": "斩首",
+            "value_text": "明军斩首后金二百六十九人",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ010",
+            "predicate": "伤亡数字",
+            "value_text": "明方记兵损七千余、商民损七八千",
+            "source": "ming_xizong_shilu",
+            "layer": "gap",
+            "scene": "juehua1626"
+          }
+        ],
+        "清方": [
+          {
+            "id": "JQ008",
+            "predicate": "屠杀",
+            "value_text": "尽杀之，焚船二千余及粮草千余所",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ009",
+            "predicate": "焚毁",
+            "value_text": "焚船二千余及粮刍高与屋等者千余所",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JXS01",
+            "predicate": "伤亡数字分歧",
+            "value_text": "明方记军民合计损失约一万五千、兵七千余商民七八千；清方记尽杀、焚船二千余及粮草千余所，双方数字悬殊",
+            "source": "wiki_juehua",
+            "layer": "scholarship",
+            "scene": "juehua1626"
           }
         ]
       }
@@ -13912,6 +14563,79 @@
             "scene": "imjin"
           }
         ],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:juehua1626_ice",
+      "name": "event:juehua1626_ice",
+      "scenes": [
+        "juehua1626"
+      ],
+      "scene_names": [
+        "juehua1626"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.667,
+      "party_counts": {
+        "明方": 2,
+        "清方": 3,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "JX004",
+            "predicate": "凿冰壕",
+            "value_text": "凿开一道长达十五里的冰壕",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JX005",
+            "predicate": "冰壕失效",
+            "value_text": "新雪频繁，冻口复合",
+            "source": "sanzhao_liao_shi",
+            "layer": "record",
+            "scene": "juehua1626"
+          }
+        ],
+        "清方": [
+          {
+            "id": "JQ005",
+            "predicate": "集兵",
+            "value_text": "武讷格率八旗蒙古及满兵八百往取觉华岛",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ006",
+            "predicate": "守军兵力",
+            "value_text": "明兵四万营于冰上",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          },
+          {
+            "id": "JQ007",
+            "predicate": "防御工事",
+            "value_text": "凿冰十五里为壕，列阵以车楯卫之",
+            "source": "qing_taizu_shilu",
+            "layer": "record",
+            "scene": "juehua1626"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
         "综述考订": []
       }
     },

@@ -1,0 +1,88 @@
+{
+  "sources": [
+    {
+      "id": "sanzhao_liao_shi",
+      "title": "三朝辽事实录",
+      "juan": "卷十五（天启六年）",
+      "compiler": "王在晋（明）",
+      "compiled_year": 1630,
+      "stance": "third_party_internal",
+      "stance_label": "明·经略亲历私修",
+      "distance_label": "经略辽东亲历，距事约数年",
+      "party": "明·私修",
+      "faction": "feng_jiang",
+      "color": "#5B7C99",
+      "note": "王在晋记觉华失守、高第报称、军民屠戮细节，明方视角。"
+    },
+    {
+      "id": "ming_xizong_shilu",
+      "title": "明熹宗实录",
+      "juan": "卷六十八—七十（天启六年二—四月）",
+      "compiler": "明官修",
+      "compiled_year": 1630,
+      "stance": "official_contemporary",
+      "stance_label": "明当代官修",
+      "distance_label": "明当代官修，距事约数年",
+      "party": "明廷官方",
+      "faction": null,
+      "color": "#4A6FA5",
+      "note": "记高第疏言、兵部叙宁远功次、觉华兵丧七千余、金冠父子事。"
+    },
+    {
+      "id": "mao_yuanyi",
+      "title": "石民四十集",
+      "juan": "卷六十二·上冯涿鹿相公书二",
+      "compiler": "茅元仪（明）",
+      "compiled_year": 1627,
+      "stance": "third_party_internal",
+      "stance_label": "明·封疆幕僚私述",
+      "distance_label": "孙承宗幕僚，距事极近",
+      "party": "明·封疆奏议",
+      "faction": "feng_jiang",
+      "color": "#6B8E23",
+      "note": "茅元仪亲历，记觉华之失：战船五百余、水犀几及万人、储粮近三十万石尽付一炬。"
+    },
+    {
+      "id": "manzhou_shilu",
+      "title": "满洲实录",
+      "juan": "卷八（天命十一年）",
+      "compiler": "清官修",
+      "compiled_year": 1635,
+      "stance": "official_contemporary",
+      "stance_label": "后金/清当代官修",
+      "distance_label": "后金当代官修",
+      "party": "清·满洲文献",
+      "faction": null,
+      "color": "#9E5B40",
+      "note": "后金视角：努尔哈赤命武讷格取岛，明兵四万、尽杀之、焚船二千余及粮草千余所。"
+    },
+    {
+      "id": "qing_taizu_shilu",
+      "title": "清实录·太祖高皇帝实录",
+      "juan": "卷之十（天命十一年正月）",
+      "compiler": "清官修",
+      "compiled_year": 1670,
+      "stance": "official_later_dynasty",
+      "stance_label": "清修官史",
+      "distance_label": "清修官史，距事约半世纪",
+      "party": "清修官史",
+      "faction": null,
+      "color": "#8C6239",
+      "note": "清修官史，记吴讷格取觉华岛、尽斩守兵、焚船二千余及粮刍千余所。"
+    },
+    {
+      "id": "wiki_juehua",
+      "title": "维基百科·觉华岛之战",
+      "juan": "现代综述条目",
+      "compiler": "维基百科",
+      "compiled_year": 2024,
+      "stance": "modern_scholarship",
+      "stance_label": "现代学界",
+      "distance_label": "现代研究，距事约 390 年",
+      "party": "学界",
+      "faction": null,
+      "color": "#3C78D8",
+      "note": "现代综述，汇辑明方（三朝辽事实录/明熹宗实录/茅元仪）与清方（满洲实录/清实录）多方引文。"
+    }
+  ]
+}

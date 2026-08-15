@@ -1,0 +1,7 @@
+{
+  "places": [
+    {"id": "juehua", "name": "觉华岛", "lon": 120.55, "lat": 40.55, "type": "island", "modern": "辽宁兴城东南海中（今菊花岛）", "note": "辽西海上储粮之所，天启六年正月被后金屠戮焚粮"},
+    {"id": "ningyuan", "name": "宁远", "lon": 120.75, "lat": 40.75, "type": "city", "modern": "辽宁兴城市", "note": "袁崇焕死守，努尔哈赤攻之不克"},
+    {"id": "shenyang", "name": "沈阳", "lon": 123.43, "lat": 41.8, "type": "city", "modern": "辽宁沈阳", "note": "后金回师之地，努尔哈赤二月九日返此"}
+  ]
+}
