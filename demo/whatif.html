@@ -67,6 +67,8 @@
   .hint{color:var(--muted);font-size:11.5px;margin-top:4px}
   code{background:#f0ebdd;padding:0 4px;border-radius:3px}
   .err{color:var(--bad);font-weight:600}
+  .cluster{animation:cluster-pop .22s ease-out;transform-box:fill-box;transform-origin:center}
+  @keyframes cluster-pop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
 </style>
 </head>
 <body>
@@ -286,7 +288,7 @@
   window.addEventListener('resize',function(){measure();fitView();applyView();});
 
   /* ── 叠加层（routes/camps/converge/armies）── */
-  var gTopo,gBase,gRoutes,gCamps,gConv,gArmies,gLabels;
+  var gTopo,gBase,gRoutes,gCamps,gConv,gArmies,gPlaces,gLabels;
   function initMap(){
     svg.innerHTML='';
     // 真实地形图栅格底图：按 DEMTOPO 经纬度范围投影到 SVG 用户坐标，随 viewBox 平移/缩放
@@ -294,7 +296,7 @@
     el('image',{href:DEMTOPO.src,x:px(DEMTOPO.lonMin),y:py(DEMTOPO.latMax),
       width:px(DEMTOPO.lonMax)-px(DEMTOPO.lonMin),height:py(DEMTOPO.latMin)-py(DEMTOPO.latMax),
       preserveAspectRatio:'none'},gTopo);
-    gBase=el('g',{},svg);gRoutes=el('g',{},svg);gCamps=el('g',{},svg);
+    gBase=el('g',{},svg);gPlaces=el('g',{},svg);gRoutes=el('g',{},svg);gCamps=el('g',{},svg);
     gConv=el('g',{},svg);gArmies=el('g',{},svg);gLabels=el('g',{},svg);drawBase();
   }
   function arrow(x1,y1,x2,y2,color){var ang=Math.atan2(y2-y1,x2-x1),s=9;
@@ -362,10 +364,39 @@
     return out;
   }
 
+  /* 地名点（v0.47 高德式自适应聚合：缩放合并带数字、放大拆散、点击聚合泡展开）*/
+  function renderPlaces(){
+    if(!gPlaces)return; gPlaces.innerHTML='';
+    var scale=cw/view.w, TH=34, pts=[];
+    PLACES.forEach(function(p){ if(typeof p.lon!=='number'||typeof p.lat!=='number')return;
+      pts.push({p:p,x:(px(p.lon)-view.x)*scale,y:(py(p.lat)-view.y)*scale}); });
+    pts.sort(function(a,b){return a.p.id<b.p.id?-1:(a.p.id>b.p.id?1:0);});
+    var cs=[];
+    pts.forEach(function(it){var best=-1,bd=TH;
+      for(var i=0;i<cs.length;i++){var d=Math.hypot(cs[i].x-it.x,cs[i].y-it.y);if(d<bd){bd=d;best=i;}}
+      if(best>=0){var c=cs[best],n=c.members.length;c.x=(c.x*n+it.x)/(n+1);c.y=(c.y*n+it.y)/(n+1);c.members.push(it);}
+      else cs.push({x:it.x,y:it.y,members:[it]});});
+    cs.forEach(function(c){var ux=view.x+c.x/scale,uy=view.y+c.y/scale;
+      if(c.members.length===1){var p=c.members[0].p,big=(p.type==='city'||p.type==='capital');
+        el('circle',{cx:ux,cy:uy,r:(big?6:4)/scale,fill:big?'#2A2521':'#FBF9F3',stroke:'#2A2521','stroke-width':1.3,'vector-effect':'non-scaling-stroke'},gPlaces);
+        var lb=el('text',{x:ux+(big?7:5.5)/scale,y:uy+3.6/scale,'font-size':(big?12:10)/scale,fill:'#2A2521','paint-order':'stroke','stroke':'#F6F3EA','stroke-width':(big?3:2.5)/scale},gPlaces);
+        lb.textContent=p.name.replace(/（.*?）/g,'');}
+      else{var n=c.members.length,sr=Math.min(26,13+n*0.42),r=sr/scale;
+        var g=el('g',{class:'cluster'},gPlaces);
+        if(n>=5)el('circle',{cx:ux,cy:uy,r:r+3/scale,fill:'none',stroke:'#3E6E99','stroke-width':1,'stroke-opacity':.35,'vector-effect':'non-scaling-stroke'},g);
+        el('circle',{cx:ux,cy:uy,r:r,fill:'#3E6E99',stroke:'#FBF9F3','stroke-width':2,'vector-effect':'non-scaling-stroke'},g);
+        el('text',{x:ux,y:uy+sr*0.36/scale,'text-anchor':'middle',fill:'#FBF9F3','font-weight':'700','font-size':sr*0.92/scale},g).textContent=n;
+        var hit=el('circle',{cx:ux,cy:uy,r:Math.max(r,16/scale),fill:'transparent'},g);
+        el('title',{},hit).textContent=n+' 处地点（点击放大展开）';
+        hit.addEventListener('click',function(){var before=view.w;view.w*=0.5;view.w=Math.min(fitW*1.6,Math.max(MIN_W,view.w));var k=view.w/before;view.h=view.w*(ch/cw);view.x=ux-(ux-view.x)*k;view.y=uy-(uy-view.y)*k;applyView();});
+      }});
+  }
+
   /* 渲染叠加层 */
   function renderOverlay(){
     if(!gRoutes)return;
     gRoutes.innerHTML='';gCamps.innerHTML='';gConv.innerHTML='';gArmies.innerHTML='';gLabels.innerHTML='';
+    renderPlaces();
     var conv=PLACE[convergeAt];
     // 路线
     armies.forEach(function(a){var A=PLACE[a.from],B=PLACE[a.to];if(!A||!B)return;

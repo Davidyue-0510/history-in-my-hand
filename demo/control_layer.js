@@ -1,41 +1,35 @@
-/* 小菜狗的文明图景 · 实际控制层（v0.10 初版 / v0.24 场景化）
+/* 小菜狗的文明图景 · 实际控制层（v0.47 重写 · 真实边界）
  *
- * 把「谁在什么时候控制哪座城」投影成地图上一块块着色辖区。
+ * 把「谁在什么时候控制哪片地」投影成地图上按年份变色的辖区。
  *
- * 设计要点：
- *   - 本文件只做「渲染」，不做「事实」。控制权事实来自场景级 control 数据
- *     （data/<scene>/control.json，经 build.py 注入到该场景 bundle 的
- *     control / control_seats / control_years）；辽东切片没有自带 control.json，
- *     则 fallback 到全局 SD.control（data/control_liaodong.json，v0.10 行为不变）。
- *     辖区几何不存文件，而是前端按治所最近邻（Voronoi 近似）在合成网格上现算——
- *     日后要换 CHGIS 等真实边界，只需改 build 注入的 control_seats，前端不动。
- *   - v0.24 修「控制层单例被新切片污染」：此前 control_seats 由 build 遍历所有
- *     county 切片的 primary_place 生成，新切片（唐/壬辰）的蔡州/平壤被塞进辽东
- *     Voronoi 网格，而控制权数据里没有它们的条目 → 空洞 + 辽东色块错位。现在
- *     控制权数据按场景隔离，颜色表也随场景 parties 动态扩展（不再写死三个政权）。
- *   - 投影用宿主页面自己的 px/py（战役图是固定投影，县级图是每片自适应投影），
- *     本层只负责把合成网格的角点交给宿主投影，再用 view 变换贴到 canvas 上。
- *   - canvas 置于地形层之上、SVG 之下（z 序：terrain → control → svg），
- *     所以控制色块在地形之上、地名节点之下；canvas 设 pointer-events:none，
- *     绝不拦截地图点击（这是此前修过的交互死区，不能复发）。
- *   - 年份/范围变化才重算离屏 ImageData（rebuild）；纯视图变化只重绘（repaint），
- *     保证拖拽缩放流畅。
+ * v0.47 重写要点（修复「边界是单纯直线太假」）：
+ *   - 不再用整屏合成网格 + 最近治所 Voronoi 直接上色（那是方块状假边界）。
+ *   - 改为：以场景真实历史治所（seats，含真实经纬度）为种子做 Voronoi 划分，
+ *     再用 CHGIS 1820 真实政区多边形（coastFeatures）栅格化成「陆地掩膜」，
+ *     把控制色**裁剪到真实海岸线以内**——外缘 = 真实海岸/国界，内部分界仍由
+ *     治所归属决定（直界近似，诚实标注）。这样既有真实外形，又能随每场战役变色。
+ *   - 控制事实来自场景级 control 数据（data/<scene>/control.json，经 build 注入
+ *     D.control / D.control_seats / D.control_years）；辽东等无自带数据则 fallback
+ *     到全局 data/control_liaodong.json（剧场级）。
+ *   - 与 BorderLayer 分工不变：BorderLayer=政区几何（线），本层=控制权语义（色）。
+ *   - canvas 置于地形层之上、SVG 之下，pointer-events:none，绝不拦截地图点击。
+ *   - 年份/范围变化才 rebuild（含掩膜裁剪），纯视图变化只 repaint。
  */
 (function () {
   'use strict';
 
   var SD = null, seats = [], seatIdx = {}, grid = null, assign = null,
-      off = null, img = null, ready = false;
+      mask = null, off = null, img = null, ready = false, coastReady = false;
   var cfg = { cv: null, px: null, py: null, getView: null, getCw: null, getDpr: null };
   var ctrlData = [], curYears = [1616, 1644];
 
-  // 默认政权配色（v0.10 三个 + v0.24 日本方）；其余 party（唐廷/藩镇/…）由
-  // PALETTE 兜底按名字哈希取色——控制层不再写死政权集合，随场景语境包扩展。
+  // 政权配色（v0.24c 单一真值：优先宿主注入的语境包 party_colors hex）。
   var PARTY_DEFAULT = {
-    '明方': [197, 90, 70],     // 暖红（明）
-    '清方': [67, 122, 91],     // 绿（后金/清），与 COL.jin 呼应
-    '朝鲜': [70, 120, 170],    // 蓝
-    '日本方': [150, 90, 160]   // 紫（壬辰）
+    '明方': [197, 90, 70],
+    '清方': [67, 122, 91],
+    '朝鲜': [70, 120, 170],
+    '日本方': [150, 90, 160],
+    'contested': [128, 122, 112]   // 无稳定控制方（争议/缓冲）
   };
   var PALETTE = [
     [197, 90, 70], [67, 122, 91], [70, 120, 170], [150, 90, 160],
@@ -59,24 +53,11 @@
     if (!(p in partyIdxMap)) { partyIdxMap[p] = partyList.length; partyList.push(p); }
     return partyIdxMap[p];
   }
-  function pCol(i) { return partyColor(partyList[i]); }
-  // v0.24c：配色单一真值——优先宿主注入的语境包 party_colors（hex），
-  // 其次内置默认表，最后 palette 哈希兜底（任何未知 party 都有稳定色）。
   function partyColor(p) {
     if (!p) return null;
     var hex = cfg.partyColors && cfg.partyColors[p];
     if (hex) { var c = hexRgb(hex); if (c) return c; }
     return PARTY_DEFAULT[p] || PALETTE[hashStr(p) % PALETTE.length];
-  }
-
-  // v0.32 热切换控制数据（模拟结果接入）
-  function reloadControl(newCtrlData, newYears) {
-    if (!newCtrlData || !newCtrlData.length) return;
-    ctrlData = newCtrlData;
-    if (newYears && newYears.length === 2) curYears = newYears;
-    dirty = true;
-    rebuild();
-    repaint();
   }
 
   var curYear = null, curScope = null, dirty = true;
@@ -85,20 +66,22 @@
     SD = window.SANDBOX_DATA;
     cfg = o || {};
     resetParties();
-    // v0.24：场景 bundle 优先（sceneData.control），辽东等无自带控制数据的
-    // 切片 fallback 全局 SD.control。D.control === [] 表示「显式无」→ 不可用。
     var D = cfg.sceneData || null;
-    var hasScene = !!(D && Array.isArray(D.control));
+    var hasScene = !!(D && Array.isArray(D.control) && D.control.length);
     ctrlData = hasScene ? D.control : ((SD && SD.control) || []);
     var cs = hasScene ? (D.control_seats || []) : ((SD && SD.control_seats) || []);
     curYears = (hasScene && D.control_years) ? D.control_years
              : ((SD && SD.control_years) || [1616, 1644]);
     if (!cs.length || !ctrlData.length) { ready = false; return; }
+    initGrid(cs);
+    ready = true; dirty = true;
+  }
+
+  // 直接用场景提供的 seats（已含真实经纬度），不再遍历所有 county 切片
+  function initGrid(cs) {
     seats = cs;
     seatIdx = {};
     seats.forEach(function (s, i) { seatIdx[s.place_id] = i; });
-
-    // 合成网格覆盖所有治所（含超出地形网格范围的西部/境外治所）
     var lons = seats.map(function (s) { return s.lon; });
     var lats = seats.map(function (s) { return s.lat; });
     var pad = 1.2;
@@ -106,12 +89,10 @@
     var lat0 = Math.min.apply(null, lats) - pad;
     var lon1 = Math.max.apply(null, lons) + pad;
     var lat1 = Math.max.apply(null, lats) + pad;
-    var step = 0.05;
+    var step = 0.04;
     var nx = Math.round((lon1 - lon0) / step) + 1;
     var ny = Math.round((lat1 - lat0) / step) + 1;
     grid = { lon0: lon0, lat0: lat0, step: step, nx: nx, ny: ny, lon1: lon1, lat1: lat1 };
-
-    // 最近治所分配（Voronoi 近似）：每格归离它最近的治所
     assign = new Int16Array(nx * ny);
     for (var iy = 0; iy < ny; iy++) {
       var lat = lat0 + iy * step;
@@ -129,7 +110,37 @@
     off = document.createElement('canvas');
     off.width = nx; off.height = ny;
     img = off.getContext('2d').createImageData(nx, ny);
-    ready = true; dirty = true;
+  }
+
+  // CHGIS 真实政区多边形 → 陆地掩膜（1=陆地）。用 canvas 栅格化，投影到网格像素。
+  function setCoast(features) {
+    if (!grid || !features || !features.length) return;
+    var nx = grid.nx, ny = grid.ny, lon0 = grid.lon0, lat1 = grid.lat1, step = grid.step;
+    var cv = document.createElement('canvas'); cv.width = nx; cv.height = ny;
+    var ctx = cv.getContext('2d');
+    ctx.fillStyle = '#fff';
+    features.forEach(function (f) {
+      var g = f.geom; if (!g) return;
+      var rings = (g.type === 'Polygon') ? g.coordinates
+                : (g.type === 'MultiPolygon') ? [].concat.apply([], g.coordinates)
+                : null;
+      if (!rings) return;
+      rings.forEach(function (ring) {
+        ctx.beginPath();
+        for (var i = 0; i < ring.length; i++) {
+          var gx = (ring[i][0] - lon0) / step;
+          var gy = (lat1 - ring[i][1]) / step;
+          if (i === 0) ctx.moveTo(gx, gy); else ctx.lineTo(gx, gy);
+        }
+        ctx.closePath();
+      });
+    });
+    ctx.fill('evenodd');
+    var d = ctx.getImageData(0, 0, nx, ny).data;
+    mask = new Uint8Array(nx * ny);
+    for (var i = 0; i < mask.length; i++) mask[i] = d[i * 4 + 3] > 10 ? 1 : 0;
+    coastReady = true;
+    if (ready) { dirty = true; repaint(); }
   }
 
   function controllerAt(seatId, year) {
@@ -142,16 +153,6 @@
     return null;
   }
 
-  // 全国（nation）范围：把同党派的县合成一个「国家板块」——只画
-  // 不同党派之间的外缘边界，省略同党派内部的县界，视觉上就「合并」成块。
-  // 县级（county）范围：每个县都画边界（含合成网格的外框），呈现县与县的拼图。
-  function rebuild() {
-    var frame = buildFrame(curYear);
-    img = frame;
-    off.getContext('2d').putImageData(img, 0, 0);
-  }
-
-  // 生成某一年的色块 ImageData（提取自 rebuild 的可复用内核）。
   function buildFrame(year) {
     var nx = grid.nx, ny = grid.ny;
     var frame = off.getContext('2d').createImageData(nx, ny);
@@ -159,37 +160,36 @@
     var pg = new Int8Array(nx * ny);
     for (var iy = 0; iy < ny; iy++) {
       for (var ix = 0; ix < nx; ix++) {
-        var idx = iy * nx + ix, si = assign[idx];
-        pg[idx] = pIdx(controllerAt(seats[si].place_id, year));
+        var idx = iy * nx + ix;
+        if (coastReady && mask[idx] === 0) { pg[idx] = -2; continue; } // 海：不填
+        pg[idx] = pIdx(controllerAt(seats[assign[idx]].place_id, year));
       }
     }
     var nation = (curScope === 'nation');
     for (iy = 0; iy < ny; iy++) {
       for (ix = 0; ix < nx; ix++) {
         idx = iy * nx + ix; var o = idx * 4; var pi = pg[idx];
+        if (pi === -2) { data[o + 3] = 0; continue; }       // 海
+        if (pi < 0) { data[o + 3] = 0; continue; }          // 无控制方
         var boundary = false, external = false;
-        if (ix + 1 < nx) { var r = pg[idx + 1]; if (r !== pi) { boundary = true; if (r >= 0 && pi >= 0) external = true; } }
-        if (!boundary && iy + 1 < ny) { var d = pg[idx + nx]; if (d !== pi) { boundary = true; if (d >= 0 && pi >= 0) external = true; } }
+        if (ix + 1 < nx) { var r = pg[idx + 1]; if (r !== pi && r >= 0) { boundary = true; if (r !== -2) external = true; } }
+        if (!boundary && iy + 1 < ny) { var d2 = pg[idx + nx]; if (d2 !== pi && d2 >= 0) { boundary = true; if (d2 !== -2) external = true; } }
         if (!nation && (ix === 0 || iy === 0 || ix === nx - 1 || iy === ny - 1)) boundary = true;
         if (boundary) {
-          if (nation && !external) { }
-          else {
-            var a = nation ? 205 : 160;
-            data[o] = 74; data[o + 1] = 64; data[o + 2] = 54; data[o + 3] = a;
-            continue;
-          }
+          if (nation && !external) { data[o + 3] = 0; continue; }
+          data[o] = 74; data[o + 1] = 64; data[o + 2] = 54; data[o + 3] = nation ? 200 : 150;
+          continue;
         }
         var col = pCol(pi);
         if (col) {
-          data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2]; data[o + 3] = nation ? 125 : 115;
+          data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2];
+          data[o + 3] = (pi === pIdx('contested')) ? 95 : (nation ? 130 : 120);
         }
       }
     }
     return frame;
   }
 
-  // 对 "前后年" 色块加棋盘虚线：只对与当前年**不同**的像素做半透明交错，
-  // 同一政权的区域不虚化（已稳定控制区 → 纯实线）。
   function dashFrame(frame, curFrame) {
     var fd = frame.data, cd = curFrame.data, total = fd.length;
     var gw = grid.nx;
@@ -203,50 +203,33 @@
     }
   }
 
-  // v0.28 虚实对比模式：一次渲染前一年/当前年/后一年三帧，
-  // 前、后年加棋盘虚线，当年实线。
   function drawMulti(year, scope) {
     if (!ready) return;
     curYear = year; curScope = scope;
     var yr = years();
-    var lo = yr[0], hi = yr[1];
-    var prev = buildFrame(Math.max(lo, year - 1));
-    var cur  = buildFrame(year);
-    var nextFrame = buildFrame(Math.min(hi, year + 1));
-    dashFrame(prev, cur);
-    dashFrame(nextFrame, cur);
+    var prev = buildFrame(Math.max(yr[0], year - 1));
+    var cur = buildFrame(year);
+    var nextFrame = buildFrame(Math.min(yr[1], year + 1));
+    dashFrame(prev, cur); dashFrame(nextFrame, cur);
     var ctx = off.getContext('2d');
     ctx.clearRect(0, 0, grid.nx, grid.ny);
-    ctx.putImageData(prev, 0, 0);
-    ctx.putImageData(nextFrame, 0, 0);
-    ctx.putImageData(cur, 0, 0);
-    img = cur;
-    dirty = false;
-    repaint();
+    ctx.putImageData(prev, 0, 0); ctx.putImageData(nextFrame, 0, 0); ctx.putImageData(cur, 0, 0);
+    img = cur; dirty = false; repaint();
   }
 
-  // v0.33 跨时间线对比渲染：主线（棋盘虚线）+ 分支（实线）叠加
   function drawDiff(year, scope, altCtrlData) {
     if (!ready || !altCtrlData || !altCtrlData.length) return;
     curYear = year; curScope = scope;
     var saved = ctrlData;
-    // 分支帧（实线，在顶层）
-    ctrlData = altCtrlData;
-    var branchFrame = buildFrame(year);
-    // 主线帧（棋盘虚线，在底层）
-    ctrlData = saved;
-    var mainFrame = buildFrame(year);
+    ctrlData = altCtrlData; var branchFrame = buildFrame(year);
+    ctrlData = saved; var mainFrame = buildFrame(year);
     dashFrame(mainFrame, branchFrame);
     var ctx = off.getContext('2d');
     ctx.clearRect(0, 0, grid.nx, grid.ny);
-    ctx.putImageData(mainFrame, 0, 0);
-    ctx.putImageData(branchFrame, 0, 0);
-    img = branchFrame;
-    dirty = false;
-    repaint();
+    ctx.putImageData(mainFrame, 0, 0); ctx.putImageData(branchFrame, 0, 0);
+    img = branchFrame; dirty = false; repaint();
   }
 
-  // 某年各国控制县数（用于「国家」范围图例的全国统计）
   function tally(year) {
     var t = {};
     seats.forEach(function (s) {
@@ -256,14 +239,20 @@
     return t;
   }
 
-  // 当前控制数据里实际出现过的 party（按首现顺序）——图例据此动态生成，
-  // 不再写死明/清/朝三个（v0.24c：壬辰场景需出现日本方）。
   function activeParties() {
     var seen = [], map = {};
     ctrlData.forEach(function (c) {
       if (c.party && !map[c.party]) { map[c.party] = 1; seen.push(c.party); }
     });
     return seen;
+  }
+
+  // 主动拉取 CHGIS 真实政区多边形做海岸线掩膜（不依赖 BorderLayer 是否打开）。
+  function loadCoast(url) {
+    if (typeof fetch !== 'function') return;
+    fetch(url).then(function (r) { return r.json(); }).then(function (gj) {
+      setCoast(gj.features || []);
+    }).catch(function (e) { console.warn('[ControlLayer] 海岸线掩膜加载失败：', e && e.message ? e.message : e); });
   }
 
   function repaint() {
@@ -292,6 +281,12 @@
     ctx.clearRect(0, 0, cfg.cv.width, cfg.cv.height);
   }
 
+  function rebuild() {
+    if (!grid) return;
+    img = buildFrame(curYear != null ? curYear : years()[0]);
+    off.getContext('2d').putImageData(img, 0, 0);
+  }
+
   function draw(year, scope) {
     if (!ready) return;
     if (year !== curYear || scope !== curScope) { curYear = year; curScope = scope; dirty = true; }
@@ -302,8 +297,8 @@
   function years() { return curYears; }
 
   window.ControlLayer = {
-    setup: setup, draw: draw, drawMulti: drawMulti, repaint: repaint, clear: clear,
-    reloadControl: reloadControl,
+    setup: setup, draw: draw, drawMulti: drawMulti, drawDiff: drawDiff, repaint: repaint,
+    clear: clear, setCoast: setCoast, loadCoast: loadCoast,
     partyColor: partyColor, controllerAt: controllerAt, tally: tally,
     activeParties: activeParties,
     isReady: isReady, years: years, seats: function () { return seats; }

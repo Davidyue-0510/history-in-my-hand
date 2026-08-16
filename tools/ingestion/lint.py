@@ -389,26 +389,33 @@ def check_control(rep):
         rep.err('E17', 'control_liaodong', 'control 字段必须是数组')
         return
 
-    # 收集所有县切片的地点 id（作为 place_id 的合集）+ 各治所中文名
-    valid_place_ids = set()
-    seat_names = {}
-    for key, sc in REG_SCENES.items():
-        if sc.get('kind') != 'county':
-            continue
-        d = os.path.join(DATA, sc.get('dir', key))
-        ppath = os.path.join(d, 'places.json')
-        if not os.path.exists(ppath):
-            continue
-        try:
-            pls = json.load(open(ppath, encoding='utf-8')).get('places', [])
-        except Exception:
-            continue
-        for p in pls:
-            valid_place_ids.add(p['id'])
-            if p['id'] == sc.get('primary_place'):
-                seat_names[p['id']] = p.get('name', p['id'])
+    # 治所白名单（v0.47 新模型）：control_liaodong.json 现在**自带 seats**
+    # （place_id + 真实经纬度），是自我完备的剧场级控制数据，不再依赖县切片 place 注册。
+    # 兼容旧格式：无 seats 时回退「place_id 反查所有县切片 places」。
+    seats = ctrl.get("seats", [])
+    if isinstance(seats, list) and seats:
+        seat_ids = [s.get("place_id") for s in seats if s.get("place_id")]
+        seat_set = set(seat_ids)
+    else:
+        valid_place_ids = set()
+        for key, sc in REG_SCENES.items():
+            if sc.get('kind') != 'county':
+                continue
+            d = os.path.join(DATA, sc.get('dir', key))
+            ppath = os.path.join(d, 'places.json')
+            if not os.path.exists(ppath):
+                continue
+            try:
+                pls = json.load(open(ppath, encoding='utf-8')).get('places', [])
+            except Exception:
+                continue
+            for p in pls:
+                valid_place_ids.add(p['id'])
+        seat_ids = list(valid_place_ids)
+        seat_set = valid_place_ids
 
-    parties = set(VOCAB['parties'])
+    # contested = 无稳定控制方（拉锯/弃守缓冲），是控制层专用语义，非史料立场桶
+    parties = set(VOCAB['parties']) | {'contested'}
     by_place = defaultdict(list)
     for i, s in enumerate(segs):
         tag = 'control[%d]' % i
@@ -416,14 +423,14 @@ def check_control(rep):
         if not pid:
             rep.err('E17', 'control_liaodong', '%s 缺 place_id' % tag)
             continue
-        if pid not in valid_place_ids:
+        if seat_set and pid not in seat_set:
             rep.err('E17', 'control_liaodong',
-                    '%s 的 place_id「%s」不是任何县切片已登记的地点（Voronoi 网格上无对应治所）'
+                    '%s 的 place_id「%s」不在 seats 治所白名单内（图层无对应治所）'
                     % (tag, pid))
         party = s.get('party')
         if party not in parties:
             rep.err('E17', 'control_liaodong',
-                    '%s 的 party「%s」不在默认语境包受控词表（parties）内' % (tag, party))
+                    '%s 的 party「%s」不在默认语境包受控词表（parties）内，也非 contested' % (tag, party))
         st = s.get('start')
         en = s.get('end')
         if not isinstance(st, int):
@@ -453,12 +460,14 @@ def check_control(rep):
                             '（%d~%d 与 %d~%d），重叠年份控制权将被静默取第一条'
                             % (pid, i1, i2, s1, e1, s2, e2))
 
-    # 治所覆盖：每个县治所至少 1 条记录，否则图层该城留白
-    for pid, name in seat_names.items():
-        if pid not in by_place:
-            rep.warn('W12', 'control_liaodong',
-                     '县治所「%s」(%s) 在 control_liaodong.json 中无任何控制权记录'
-                     '——图层上该城将留白（疑似漏写）' % (pid, name))
+    # 治所覆盖：文件自带 seats 的每个治所至少 1 条记录，否则图层该城留白
+    if isinstance(seats, list) and seats:
+        for s in seats:
+            pid = s.get('place_id')
+            if pid and pid not in by_place:
+                rep.warn('W12', 'control_liaodong',
+                         '治所「%s」(%s) 在 control 中无任何控制权记录——图层上该城留白（疑似漏写）'
+                         % (pid, s.get('name', pid)))
 
 
 def check_registry(names, rep):

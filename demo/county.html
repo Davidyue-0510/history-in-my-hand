@@ -134,7 +134,30 @@
           <button data-scope="county" class="cp-scope on">县界</button>
           <button data-scope="nation" class="cp-scope">国界</button>
         </div>
+        <div class="cp-row">
+          <label class="cp-toggle"><input type="checkbox" id="ctrlOn"> 实控区变化</label>
+          <button data-cscope="county" class="cp-scope on">县界</button>
+          <button data-cscope="nation" class="cp-scope">国界</button>
+        </div>
         <div class="cp-note" id="borderNote">界线数据待载入（打开图层后拉取）</div>
+        <div class="cp-note" id="ctrlNote"></div>
+      </div>
+    </div>
+
+    <!-- ════ 实控区·战争走势时间轴（按年份回放控制权变化，参考真实 CHGIS 海岸线）════ -->
+    <div id="ctrlTimeline" class="timeline ctrl-timeline" style="display:none">
+      <div class="tl-header">
+        <span class="tl-era">实控区 · 战争走势</span>
+        <span id="ctrlDateLabel">—</span>
+        <span class="tl-year" id="ctrlYear">—</span>
+      </div>
+      <div id="ctrlTrack" class="tl-track">
+        <input id="ctrlSlider" type="range" min="1616" max="1644" value="1616" step="1">
+      </div>
+      <div class="tl-foot">
+        <span id="ctrlLegend" class="ctrl-legend"></span>
+        <button id="ctrlPlay" class="cp-play" title="播放走势">▶</button>
+        <span id="ctrlEraNote" class="ctrl-era-note"></span>
       </div>
     </div>
 
@@ -203,10 +226,11 @@
   </div>
 </div>
 
-<script src="data.js"></script>
-<script src="chgis_layer.js"></script>
-<script src="border_layer.js"></script>
-<script src="battle_layer.js"></script>
-<script src="county.js"></script>
+  <script src="data.js"></script>
+  <script src="chgis_layer.js"></script>
+  <script src="border_layer.js"></script>
+  <script src="control_layer.js"></script>
+  <script src="battle_layer.js"></script>
+  <script src="county.js"></script>
 </body>
 </html>

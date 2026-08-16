@@ -488,6 +488,43 @@ body{
   color:#fff; background:#B5732E; padding:1px 8px; border-radius:9px;
 }
 
+/* ══════ 实控区·战争走势时间轴（v0.47 重做） ══════ */
+.ctrl-timeline{ border-top:2px solid #3E6E99; background:#EEF3F6; }
+.ctrl-timeline .tl-era{ color:#2B5A80; }
+.ctrl-timeline .tl-track::before{ background:#C7D8E2; }
+.ctrl-timeline .tl-node.key .tl-dot{ border-color:#3E6E99; }
+.ctrl-timeline .tl-node.now .tl-dot{
+  background:#3E6E99; border-color:#3E6E99;
+  box-shadow:0 0 0 3px rgba(62,110,153,.18);
+}
+#ctrlSlider{
+  -webkit-appearance:none; appearance:none; width:100%; height:6px;
+  border-radius:3px; background:#C7D8E2; outline:none; cursor:pointer; z-index:2;
+}
+#ctrlSlider::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none; width:16px; height:16px; border-radius:50%;
+  background:#3E6E99; border:2px solid #FBF9F3; box-shadow:0 1px 3px rgba(0,0,0,.25); cursor:grab;
+}
+#ctrlSlider::-moz-range-thumb{
+  width:16px; height:16px; border-radius:50%; background:#3E6E99;
+  border:2px solid #FBF9F3; box-shadow:0 1px 3px rgba(0,0,0,.25); cursor:grab;
+}
+.ctrl-legend{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.ctrl-legend i{
+  display:inline-block; width:11px; height:11px; border-radius:2px; margin-right:2px; vertical-align:-1px;
+}
+.ctrl-era-note{ color:var(--ink-3); opacity:.8; margin-left:auto; font-size:10px; }
+
+/* ══════ 聚合泡展开动画（v0.47） ══════ */
+.cluster{
+  animation:cluster-pop .22s ease-out;
+  transform-box:fill-box; transform-origin:center;
+}
+@keyframes cluster-pop{
+  from{ opacity:0; transform:scale(.5); }
+  to{ opacity:1; transform:scale(1); }
+}
+
 /* ══════ 右栏页签 ══════ */
 .tabs{
   flex:none; display:flex; position:sticky; top:0; z-index:5;

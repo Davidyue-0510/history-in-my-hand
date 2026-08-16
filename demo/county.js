@@ -148,6 +148,7 @@
     tab: 'yan',
     selection: null,
     control: { on: false, scope: 'county' },
+    ctrlOn: false,               // 实控区变化图层（v0.47 重做：真实海岸线裁剪的治所 Voronoi）
     chgis: { on: true, ds: 'all', period: 'all', yearSync: false },
     battle: { on: true, routes: true },
     timeline: 'main',          // v0.31：当前分支时间线
@@ -222,6 +223,7 @@
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
     if (!IS_ABSTRACT && state.control.on && window.BorderLayer && BorderLayer.isReady()) BorderLayer.repaint();
+    if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
     if (redrawSvg !== false && !rafPending) {
@@ -503,18 +505,19 @@
         drawSinglePlace(c.members[0].p, ux, uy, scale, gNodes);
       } else {
         var n = c.members.length;
-        var sr = Math.min(26, 13 + n * 0.4);        // 气泡屏幕半径 px
+        var sr = Math.min(26, 13 + n * 0.42);        // 气泡屏幕半径 px
         var r = sr / scale;
+        var g = el('g', { class: 'cluster' }, gNodes);   // 展开动画（见 style.css .cluster）
         if (n >= 5) el('circle', { cx: ux, cy: uy, r: r + 3 / scale, fill: 'none',
-          stroke: '#4A6FA5', 'stroke-width': 1, 'stroke-opacity': .4,
-          'vector-effect': 'non-scaling-stroke' }, gNodes);
-        el('circle', { cx: ux, cy: uy, r: r, fill: '#4A6FA5', stroke: '#FBF9F3',
-          'stroke-width': 2, 'vector-effect': 'non-scaling-stroke', class: 'node-hit' }, gNodes);
-        var t = el('text', { x: ux, y: uy + (sr * 0.36) / scale, 'text-anchor': 'middle',
-          fill: '#FBF9F3', 'font-weight': '700', 'font-size': (sr * 0.9) / scale }, gNodes);
-        t.textContent = n;
+          stroke: '#3E6E99', 'stroke-width': 1, 'stroke-opacity': .35,
+          'vector-effect': 'non-scaling-stroke' }, g);
+        el('circle', { cx: ux, cy: uy, r: r, fill: '#3E6E99', stroke: '#FBF9F3',
+          'stroke-width': 2, 'vector-effect': 'non-scaling-stroke' }, g);
+        el('text', { x: ux, y: uy + (sr * 0.36) / scale, 'text-anchor': 'middle',
+          fill: '#FBF9F3', 'font-weight': '700', 'font-size': (sr * 0.92) / scale,
+          'font-family': 'inherit' }, g).textContent = n;
         var hit = el('circle', { cx: ux, cy: uy, r: Math.max(r, 16 / scale),
-          fill: 'transparent', class: 'node-hit' }, gNodes);
+          fill: 'transparent', class: 'node-hit' }, g);
         el('title', {}, hit).textContent = n + ' 处地点（点击放大展开）';
         hit.addEventListener('click', function () { zoomToMapPoint(ux, uy, 0.5); });
       }
@@ -577,15 +580,18 @@
           'text-anchor': 'middle', transform: 'rotate(' + ang + ' ' + mx + ' ' + my + ')' }, gLabels);
         arr.textContent = '➤ ' + (D.route.label || '进军路线');
         var rp = D.route_report || {}, strain = rp.strain;
+        var md = rp.model_days, rd = rp.reported_days;
+        var u = view.w / cw;                 // 与 .route-badge 的 --u 同源：让胶囊屏幕尺寸恒定
+        var bw = 176 * u, bh = 20 * u;
+        var cx0 = ax + 6 * u, cy0 = ay - 30 * u;   // 放在路线起点右上侧，避开地图中部与地名
         var badge = el('g', { class: 'node-hit' }, gLabels);
-        var bw = 112, bh = 30;
-        el('rect', { x: mx - bw / 2, y: my + 5, width: bw, height: bh, rx: 5,
-          fill: '#FBF9F3', stroke: '#5A3A6E', 'stroke-width': 1.2,
+        el('rect', { x: cx0, y: cy0, width: bw, height: bh, rx: 5 * u,
+          fill: 'rgba(91,58,110,0.08)', stroke: '#5A3A6E', 'stroke-width': 1.1,
           'vector-effect': 'non-scaling-stroke' }, badge);
-        el('text', { x: mx, y: my + 18, 'text-anchor': 'middle', class: 'route-badge' }, badge)
-          .textContent = '地形紧张度 ' + (strain != null ? strain.toFixed(2) : '—');
-        el('text', { x: mx, y: my + 28, 'text-anchor': 'middle', class: 'route-badge-sub' }, badge)
-          .textContent = (rp.strain_label || '');
+        el('text', { x: cx0 + 8 * u, y: cy0 + 13.5 * u, class: 'route-badge', 'text-anchor': 'start' }, badge)
+          .textContent = '推演 ' + (md != null ? md : '—') + ' 日 · 史料 ' + (rd != null ? rd : '—') + ' 日';
+        el('title', {}, badge).textContent = '地形紧张度 ' + (strain != null ? strain.toFixed(2) : '—') +
+          '（' + (rp.strain_label || '') + '）＝行军模型推算天数 ÷ 史料记载天数，数值越高越偏离地形现实。';
         badge.addEventListener('click', selectRoute);
       }
     }
@@ -816,9 +822,8 @@
   }
 
   /* ═══════════ 事件导航（v0.47） ═══════════
-   * 原「疆域时间轴」（年份滑块驱动控制层变色 + CHGIS 按年过滤）已按计划移除：
-   * 控制层（实控区随年份变化）与 CHGIS 边界年份过滤都不再随年份动画。
-   * 事件高亮/导航改由左侧事件列表（renderEvents，走 state.t）承担，不再依赖底部年份轨道。 */
+   * 事件高亮/导航由左侧事件列表（renderEvents，走 state.t）承担。
+   * 「战争走势」年份回放改由底部 ctrlTimeline 承担（见 wireCtrlTimeline），二者解耦。 */
 
   function renderEvents() {
     var lead = document.getElementById('evLead');
@@ -1619,9 +1624,11 @@
     if (pn && note) pn.textContent = note;
   })();
 
-  /* ═══════════ 真实政区界线层驱动（v0.47） ═══════════
-   * 「控制层（实控区随年份变化）」已按计划移除。此处只驱动 BorderLayer：
-   * 勾选「真实政区界线」后按「县界/国界」scope 懒加载并渲染 CHGIS 真实几何。 */
+  /* ═══════════ 真实政区界线层 + 实控区变化层驱动（v0.47 重做） ═══════════
+   * BorderLayer：勾选「真实政区界线」按「县界/国界」scope 懒加载并渲染 CHGIS 真实几何。
+   * ControlLayer：勾选「实控区变化」按年份给真实海岸线裁剪的治所 Voronoi 着色（战争走势）。 */
+  var ctrlYear = null, ctrlScope = 'county', ctrlEvents = [];
+
   function drawControl() {
     if (IS_ABSTRACT || !window.BorderLayer) return;
     if (state.control.on) {
@@ -1631,6 +1638,15 @@
     } else {
       BorderLayer.clear();
     }
+    // 实控区（真实海岸线裁剪的控制权着色）
+    if (window.ControlLayer && ControlLayer.isReady()) {
+      if (state.ctrlOn) {
+        ControlLayer.draw(ctrlYear != null ? ctrlYear : ControlLayer.years()[0], ctrlScope);
+      } else {
+        ControlLayer.clear();
+      }
+    }
+    updateCtrlTimeline();
   }
 
   // 控制面板底部的界线来源说明（诚实标注几何纪年）
@@ -1639,7 +1655,107 @@
     if (el2) el2.textContent = txt;
   }
 
-  // v0.47：控制层（实控区随年份变化）及其图例已按计划移除；此处仅保留 BorderLayer 驱动（见 drawControl）。
+  // 辽东明清战争剧场 = 五个 region（关外女真/辽东/辽北/辽南/辽西）
+  function isLiaodongTheatre() {
+    var r = META.region;
+    return r === 'liaodong' || r === 'liaobei' || r === 'liaonan' || r === 'liaoxi' || r === 'jianzhou';
+  }
+
+  // 装载实控区数据：场景自带 control 优先；否则辽东剧场 fallback 全局 control_liaodong.json。
+  function loadControlLayer() {
+    if (IS_ABSTRACT || !window.ControlLayer) return;
+    var VOCAB = (D && D.vocab) || (SD && SD.vocab) || {};
+    function doSetup(cd) {
+      ctrlYear = cd.years[0];
+      ctrlEvents = cd.events || [];
+      ControlLayer.setup({
+        cv: controlCv, px: px, py: py,
+        getView: function () { return view; },
+        getCw: function () { return cw; },
+        getDpr: function () { return window.devicePixelRatio || 1; },
+        partyColors: VOCAB.party_colors || {},
+        sceneData: { control: cd.control, control_seats: cd.seats, control_years: cd.years }
+      });
+      if (window.BorderLayer && BorderLayer.isReady()) ControlLayer.setCoast(BorderLayer.features());
+      else ControlLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
+      finishCtrlSetup();
+    }
+    if (D.control && D.control.length) {
+      doSetup({ control: D.control, seats: D.control_seats || [], years: D.control_years || [1616, 1644], events: D.control_events || [] });
+    } else if (isLiaodongTheatre()) {
+      fetch('../data/control_liaodong.json').then(function (r) { return r.json(); }).then(function (g) {
+        doSetup({ control: g.control, seats: g.seats, years: g.years, events: g.events });
+      }).catch(function () { console.warn('[Control] 辽东实控数据加载失败'); });
+    }
+  }
+
+  function finishCtrlSetup() {
+    if (!window.ControlLayer || !ControlLayer.isReady()) return;
+    var ctrlBox = document.getElementById('ctrlOn');
+    if (ctrlBox) ctrlBox.disabled = false;
+    wireCtrlTimeline();
+    renderCtrlLegend();
+    if (state.ctrlOn) drawControl();
+  }
+
+  function ctrlDateHint(year) {
+    var best = null;
+    ctrlEvents.forEach(function (e) {
+      if (e.year <= year && (!best || e.year > best.year)) best = e;
+    });
+    return best ? best.label : '';
+  }
+
+  function updateCtrlTimeline() {
+    var bar = document.getElementById('ctrlTimeline');
+    if (bar) bar.style.display = (state.ctrlOn && window.ControlLayer && ControlLayer.isReady()) ? '' : 'none';
+  }
+
+  function renderCtrlLegend() {
+    var box = document.getElementById('ctrlLegend');
+    if (!box || !window.ControlLayer) return;
+    var parties = ControlLayer.activeParties();
+    var html = '';
+    parties.forEach(function (p) {
+      var c = ControlLayer.partyColor(p);
+      var css = c ? 'rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')' : '#999';
+      html += '<i style="background:' + css + '"></i>' + (p === 'contested' ? '争议缓冲' : p);
+    });
+    box.innerHTML = html;
+    var note = document.getElementById('ctrlEraNote');
+    if (note) note.textContent = '边界为治所 Voronoi 近似 + CHGIS 1820 真实海岸线裁剪，非逐日实测';
+  }
+
+  function wireCtrlTimeline() {
+    var slider = document.getElementById('ctrlSlider');
+    if (!slider || IS_ABSTRACT || !window.ControlLayer) return;
+    var ys = ControlLayer.years();
+    slider.min = ys[0]; slider.max = ys[1]; slider.step = 1;
+    if (ctrlYear == null || ctrlYear < ys[0] || ctrlYear > ys[1]) ctrlYear = ys[0];
+    slider.value = ctrlYear;
+    function sync() {
+      ctrlYear = parseInt(slider.value, 10);
+      var yl = document.getElementById('ctrlYear');
+      if (yl) yl.textContent = ctrlYear + ' 年';
+      var dl = document.getElementById('ctrlDateLabel');
+      if (dl) dl.textContent = ctrlDateHint(ctrlYear);
+      if (state.ctrlOn) drawControl();
+    }
+    slider.addEventListener('input', sync);
+    var play = document.getElementById('ctrlPlay');
+    var timer = null;
+    if (play) play.addEventListener('click', function () {
+      if (timer) { clearInterval(timer); timer = null; play.textContent = '▶'; return; }
+      play.textContent = '⏸';
+      timer = setInterval(function () {
+        var v = parseInt(slider.value, 10) + 1;
+        if (v > ys[1]) v = ys[0];
+        slider.value = v; sync();
+      }, 650);
+    });
+    sync();
+  }
+
   function wireControl() {
     var panel = document.getElementById('controlPanel');
     if (!panel || IS_ABSTRACT) { if (panel) panel.style.display = 'none'; return; }
@@ -1652,10 +1768,29 @@
         drawControl();
       });
     }
-    document.querySelectorAll('.cp-scope').forEach(function (b) {
+    var ctrlBox = document.getElementById('ctrlOn');
+    if (ctrlBox) {
+      ctrlBox.checked = state.ctrlOn;
+      ctrlBox.disabled = !(window.ControlLayer && ControlLayer.isReady());
+      ctrlBox.addEventListener('change', function () {
+        state.ctrlOn = ctrlBox.checked;
+        drawControl();
+      });
+    }
+    // 真实界线 scope（县界/国界）
+    document.querySelectorAll('.cp-scope[data-scope]').forEach(function (b) {
       b.addEventListener('click', function () {
         state.control.scope = b.getAttribute('data-scope');
-        document.querySelectorAll('.cp-scope').forEach(function (x) { x.classList.remove('on'); });
+        document.querySelectorAll('.cp-scope[data-scope]').forEach(function (x) { x.classList.remove('on'); });
+        b.classList.add('on');
+        drawControl();
+      });
+    });
+    // 实控区 scope（县界/国界）
+    document.querySelectorAll('.cp-scope[data-cscope]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        ctrlScope = b.getAttribute('data-cscope');
+        document.querySelectorAll('.cp-scope[data-cscope]').forEach(function (x) { x.classList.remove('on'); });
         b.classList.add('on');
         drawControl();
       });
@@ -1840,6 +1975,8 @@
       onLoading: function () { setBorderNote('载入真实政区界线…'); },
       onReady: function (n, m) {
         if (state.control.on) { BorderLayer.setScope(state.control.scope); BorderLayer.repaint(); }
+        // 真实政区多边形喂给控制层做「陆地掩膜」→ 实控区外缘裁剪到真实海岸线
+        if (window.ControlLayer && ControlLayer.isReady()) ControlLayer.setCoast(BorderLayer.features());
         // 诚实标注：几何纪年与本切片纪年不同，必须写明，不冒充明代政区。
         setBorderNote('真实政区界线 · CHGIS ' + (m && m.year ? m.year : 1820) + ' 年府级底本（晚于本切片纪年，仅作真实政区参照）');
       },
@@ -1847,6 +1984,7 @@
     });
   }
   loadWarCourt();   // v0.46：战—朝关联数据（将领派系）
+  loadControlLayer();  // v0.47：实控区变化（真实海岸线裁剪 + 战争走势时间轴）
   // 战例叠加层：严格按当前切片隔离。
   // 依据用户原则（2026-08-13）：有联系（用户提出 or 史料提及）才能同屏查看；
   // 否则绝不跨场景堆叠——唐/三大战役页不再出现萨尔浒，反之亦然。

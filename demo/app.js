@@ -168,6 +168,17 @@
       y: view.y + (clientY - r.top) / r.height * view.h
     };
   }
+  // 朝地图某点（用户坐标）放大/缩小 factor 倍（<1 放大）。供点击聚合泡展开（v0.47 移植 county）。
+  function zoomToMapPoint(mx, my, factor) {
+    var before = view.w;
+    view.w *= factor;
+    view.w = Math.min(fitW * 1.6, Math.max(MIN_W, view.w));
+    var k = view.w / before;
+    view.h = view.w * (ch / cw);
+    view.x = mx - (mx - view.x) * k;
+    view.y = my - (my - view.y) * k;
+    applyView();
+  }
 
   wrap.addEventListener('wheel', function (e) {
     e.preventDefault();
@@ -449,32 +460,28 @@
     gRoutes.innerHTML = ''; gNodes.innerHTML = ''; gMarks.innerHTML = ''; gLabels.innerHTML = '';
     var now = D.timeline[state.t].at;
 
-    // ── 地名点
-    D.places.forEach(function (p) {
+    // ── 地名点（v0.47 高德式自适应聚合：缩放合并带数字、放大拆散、点击聚合泡展开）
+    function drawSinglePlace(p, x, y, scale, g) {
       var big = ['city', 'capital'].indexOf(p.type) >= 0;
-      var x = px(p.lon), y = py(p.lat);
+      var sr = big ? 6 : 4;
       var cs = countySceneFor(p.id);
       el('circle', {
-        cx: x, cy: y, r: big ? 4.2 : 2.8, class: 'pnode' + (big ? ' big' : ''),
+        cx: x, cy: y, r: sr / scale, class: 'pnode' + (big ? ' big' : ''),
         fill: big ? '#2A2521' : '#FBF9F3',
         stroke: '#2A2521', 'stroke-width': 1.3, 'vector-effect': 'non-scaling-stroke'
-      }, gNodes);
-      // 透明命中圈先画、在底层：点圆点 = 在战役内检视该地断言（selectPlace）
-      var hit = el('circle', { cx: x, cy: y, r: 13, fill: 'transparent', class: 'node-hit' }, gNodes);
+      }, g);
+      var hit = el('circle', { cx: x, cy: y, r: 14 / scale, fill: 'transparent', class: 'node-hit' }, g);
       hit.addEventListener('click', function () { selectPlace(p.id); });
-      // 地名标签画在命中圈之上；可下钻时开启 pointer-events：点县名 = 跳县级切片
       var lb = el('text', {
         x: x + (big ? 7 : 5.5), y: y + 3.6,
         class: 'place-label' + (big ? '' : ' minor') + (cs ? ' link' : '')
-      }, gNodes);
+      }, g);
       lb.textContent = p.name.replace(/（.*?）/, '');
       if (cs) {
         var go = function () { location.href = 'county.html?scene=' + cs; };
         lb.style.cursor = 'pointer';
-        // SVG 里 title 属性不弹提示，必须用 <title> 子元素
         el('title', {}, lb).textContent = '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片';
         lb.addEventListener('click', go);
-        // 文字本体只有 ~22×16px，太难点：叠一层带内边距的透明命中矩形（画在文字之上）
         try {
           var bb = lb.getBBox();
           var u = parseFloat(svg.style.getPropertyValue('--u')) || 1;
@@ -483,20 +490,66 @@
             x: bb.x - pad, y: bb.y - pad,
             width: bb.width + pad * 2, height: bb.height + pad * 2,
             fill: 'transparent', class: 'label-hit'
-          }, gNodes);
+          }, g);
           el('title', {}, lh).textContent = '点击查看「' + p.name.replace(/（.*?）/, '') + '」县级切片';
           lh.addEventListener('click', go);
-        } catch (x) { /* getBBox 在未渲染时可能抛错，忽略即可，文字本体仍可点 */ }
+        } catch (x) { /* getBBox 在未渲染时可能抛错，忽略即可 */ }
       }
       if (state.terrain.elev && p.elev != null) {
-        var ev = el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, gNodes);
-        ev.textContent = p.elev + ' m';
+        el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, g).textContent = p.elev + ' m';
       }
       if (p.type === 'battlefield') {
         el('circle', {
           cx: x, cy: y, r: 8, fill: 'none', stroke: '#B23A48',
           'stroke-width': 1, opacity: '.4', 'vector-effect': 'non-scaling-stroke'
-        }, gNodes);
+        }, g);
+      }
+    }
+    var scale = cw / view.w;
+    var CLUSTER_PX = 34;
+    var pts = [];
+    D.places.forEach(function (p) {
+      if (typeof p.lon !== 'number' || typeof p.lat !== 'number') return;
+      pts.push({ p: p, x: (px(p.lon) - view.x) * scale, y: (py(p.lat) - view.y) * scale });
+    });
+    pts.sort(function (a, b) { return a.p.id < b.p.id ? -1 : (a.p.id > b.p.id ? 1 : 0); });
+    var clusters = [];
+    pts.forEach(function (it) {
+      var best = -1, bestD = CLUSTER_PX;
+      for (var ci = 0; ci < clusters.length; ci++) {
+        var c = clusters[ci];
+        var d = Math.hypot(c.x - it.x, c.y - it.y);
+        if (d < bestD) { bestD = d; best = ci; }
+      }
+      if (best >= 0) {
+        var c2 = clusters[best], n = c2.members.length;
+        c2.x = (c2.x * n + it.x) / (n + 1); c2.y = (c2.y * n + it.y) / (n + 1);
+        c2.members.push(it);
+      } else {
+        clusters.push({ x: it.x, y: it.y, members: [it] });
+      }
+    });
+    clusters.forEach(function (c) {
+      var ux = view.x + c.x / scale, uy = view.y + c.y / scale;
+      if (c.members.length === 1) {
+        drawSinglePlace(c.members[0].p, ux, uy, scale, gNodes);
+      } else {
+        var n = c.members.length;
+        var sr = Math.min(26, 13 + n * 0.42);
+        var r = sr / scale;
+        var g = el('g', { class: 'cluster' }, gNodes);
+        if (n >= 5) el('circle', { cx: ux, cy: uy, r: r + 3 / scale, fill: 'none',
+          stroke: '#3E6E99', 'stroke-width': 1, 'stroke-opacity': .35,
+          'vector-effect': 'non-scaling-stroke' }, g);
+        el('circle', { cx: ux, cy: uy, r: r, fill: '#3E6E99', stroke: '#FBF9F3',
+          'stroke-width': 2, 'vector-effect': 'non-scaling-stroke' }, g);
+        el('text', { x: ux, y: uy + (sr * 0.36) / scale, 'text-anchor': 'middle',
+          fill: '#FBF9F3', 'font-weight': '700', 'font-size': (sr * 0.92) / scale,
+          'font-family': 'inherit' }, g).textContent = n;
+        var hit = el('circle', { cx: ux, cy: uy, r: Math.max(r, 16 / scale),
+          fill: 'transparent', class: 'node-hit' }, g);
+        el('title', {}, hit).textContent = n + ' 处地点（点击放大展开）';
+        hit.addEventListener('click', function () { zoomToMapPoint(ux, uy, 0.5); });
       }
     });
 

@@ -171,6 +171,7 @@
   window.BorderLayer = {
     setup: setup, ensure: ensure, repaint: repaint, clear: clear,
     setScope: setScope, isReady: isReady, stats: stats,
+    features: function () { return feats; },
     sourceYear: function () { return meta.year; }
   };
 })();

@@ -27370,212 +27370,296 @@ window.SANDBOX_DATA = {
  },
  "control": [
   {
+   "place_id": "hetuala",
+   "party": "清方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
    "place_id": "fushun",
    "party": "明方",
-   "start": 1368,
-   "end": 1617,
-   "basis": "明抚顺千户所，洪武间置，羁縻建州女真前沿",
-   "note": ""
+   "start": 1616,
+   "end": 1617
   },
   {
    "place_id": "fushun",
    "party": "清方",
    "start": 1618,
-   "end": null,
-   "basis": "抚顺陷落 1618（万历四十六年/天命三年），七大恨告天起点",
-   "note": "李永芳降，明辽东马市羁縻体系终结"
+   "end": 1644
   },
   {
-   "place_id": "kaiyuan_cheng",
+   "place_id": "qinghe",
    "party": "明方",
-   "start": 1368,
-   "end": 1618,
-   "basis": "明开原三万卫，辽北第一重镇",
-   "note": ""
+   "start": 1616,
+   "end": 1617
   },
   {
-   "place_id": "kaiyuan_cheng",
+   "place_id": "qinghe",
+   "party": "清方",
+   "start": 1618,
+   "end": 1644
+  },
+  {
+   "place_id": "kaiyuan",
+   "party": "明方",
+   "start": 1616,
+   "end": 1618
+  },
+  {
+   "place_id": "kaiyuan",
    "party": "清方",
    "start": 1619,
-   "end": null,
-   "basis": "开原陷落 1619（万历四十七年/天命四年）",
-   "note": "叶赫随之灭亡"
+   "end": 1644
   },
   {
-   "place_id": "tieling_cheng",
+   "place_id": "tieling",
    "party": "明方",
-   "start": 1368,
-   "end": 1618,
-   "basis": "明铁岭卫，李成梁故里、辽东锁钥",
-   "note": ""
+   "start": 1616,
+   "end": 1618
   },
   {
-   "place_id": "tieling_cheng",
+   "place_id": "tieling",
    "party": "清方",
    "start": 1619,
-   "end": null,
-   "basis": "铁岭陷落 1619，与开原同年",
-   "note": ""
+   "end": 1644
   },
   {
-   "place_id": "xiyehe",
+   "place_id": "shenyang",
    "party": "明方",
-   "start": 1368,
-   "end": 1618,
-   "basis": "叶赫部，明廷敕封都督羁縻制衡建州",
-   "note": "海西女真，非明卫所但受明羁縻"
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "xiyehe",
-   "party": "清方",
-   "start": 1619,
-   "end": null,
-   "basis": "叶赫亡 1619（萨尔浒战后东城西城俱破）",
-   "note": ""
-  },
-  {
-   "place_id": "shenyang_cheng",
-   "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明沈阳中卫，辽东锁钥",
-   "note": ""
-  },
-  {
-   "place_id": "shenyang_cheng",
+   "place_id": "shenyang",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "沈阳陷落 1621（天启元年/天命六年），袁应泰自缢",
-   "note": "后金天命十年(1625)迁都于此，改名盛京"
+   "end": 1644
   },
   {
-   "place_id": "liaoyang_cheng",
+   "place_id": "liaoyang",
    "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明辽东都司治所",
-   "note": ""
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "liaoyang_cheng",
+   "place_id": "liaoyang",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "辽阳陷落 1621，后金先迁都辽阳（东京）",
-   "note": ""
+   "end": 1644
   },
   {
-   "place_id": "haizhou_cheng",
+   "place_id": "gaizhou",
    "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明海州卫，辽南粮道咽喉、朝鲜马市所在",
-   "note": ""
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "haizhou_cheng",
+   "place_id": "gaizhou",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "海州陷落 1621，沈阳陷后六日",
-   "note": "毛文龙率 197 人走皮岛，创东江镇"
+   "end": 1644
   },
   {
-   "place_id": "gaizhou_cheng",
+   "place_id": "haizhou",
    "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明盖州卫，辽南二大卫之一",
-   "note": ""
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "gaizhou_cheng",
+   "place_id": "haizhou",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "盖州陷落 1621，海州陷后十日",
-   "note": ""
+   "end": 1644
   },
   {
-   "place_id": "fuzhou_cheng",
+   "place_id": "niuzhuang",
    "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明复州卫，扼辽南陆桥",
-   "note": ""
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "fuzhou_cheng",
+   "place_id": "niuzhuang",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "复州陷落 1621，与海州盖州同月",
-   "note": "东江镇浮海袭扰复州/金州沿海，控制线反复"
+   "end": 1644
   },
   {
-   "place_id": "jinzhouwei_cheng",
+   "place_id": "yaozhou",
    "party": "明方",
-   "start": 1368,
-   "end": 1620,
-   "basis": "明金州卫，扼辽东半岛南端、辖旅顺口",
-   "note": ""
+   "start": 1616,
+   "end": 1620
   },
   {
-   "place_id": "jinzhouwei_cheng",
+   "place_id": "yaozhou",
    "party": "清方",
    "start": 1621,
-   "end": null,
-   "basis": "金州陷落 1621，旋为毛文龙东江镇一度收复",
-   "note": "辽南沿海明方反攻猛烈，此处记主体归属，反复细节属缺口"
+   "end": 1644
+  },
+  {
+   "place_id": "xiongyue",
+   "party": "明方",
+   "start": 1616,
+   "end": 1620
+  },
+  {
+   "place_id": "xiongyue",
+   "party": "清方",
+   "start": 1621,
+   "end": 1644
+  },
+  {
+   "place_id": "fuzhou",
+   "party": "明方",
+   "start": 1616,
+   "end": 1620
+  },
+  {
+   "place_id": "fuzhou",
+   "party": "清方",
+   "start": 1621,
+   "end": 1644
+  },
+  {
+   "place_id": "jinzhou_dalian",
+   "party": "明方",
+   "start": 1616,
+   "end": 1620
+  },
+  {
+   "place_id": "jinzhou_dalian",
+   "party": "清方",
+   "start": 1621,
+   "end": 1644
+  },
+  {
+   "place_id": "lushun",
+   "party": "明方",
+   "start": 1616,
+   "end": 1620
+  },
+  {
+   "place_id": "lushun",
+   "party": "清方",
+   "start": 1621,
+   "end": 1644
   },
   {
    "place_id": "guangning",
    "party": "明方",
-   "start": 1368,
-   "end": 1621,
-   "basis": "明广宁卫，辽西军政中心、辽东镇移驻",
-   "note": ""
+   "start": 1616,
+   "end": 1621
   },
   {
    "place_id": "guangning",
-   "party": "清方",
+   "party": "contested",
    "start": 1622,
-   "end": null,
-   "basis": "广宁陷落 1622（天启二年/天命七年），王化贞弃城",
-   "note": "明尽失辽西，经抚不和是直接原因"
+   "end": 1644
   },
   {
-   "place_id": "jinzhou_cheng",
+   "place_id": "yizhou",
    "party": "明方",
-   "start": 1368,
-   "end": 1641,
-   "basis": "明锦州卫，辽西锁钥，关宁锦防线",
-   "note": ""
+   "start": 1616,
+   "end": 1621
   },
   {
-   "place_id": "jinzhou_cheng",
+   "place_id": "yizhou",
+   "party": "contested",
+   "start": 1622,
+   "end": 1644
+  },
+  {
+   "place_id": "jinzhou",
+   "party": "明方",
+   "start": 1616,
+   "end": 1640
+  },
+  {
+   "place_id": "jinzhou",
    "party": "清方",
-   "start": 1642,
-   "end": null,
-   "basis": "松锦之战 1642（崇祯十四五年），祖大寿以锦州降",
-   "note": "明辽西机动兵力丧尽"
+   "start": 1641,
+   "end": 1644
+  },
+  {
+   "place_id": "dalinghe",
+   "party": "明方",
+   "start": 1616,
+   "end": 1630
+  },
+  {
+   "place_id": "dalinghe",
+   "party": "清方",
+   "start": 1631,
+   "end": 1644
+  },
+  {
+   "place_id": "songshan",
+   "party": "明方",
+   "start": 1616,
+   "end": 1640
+  },
+  {
+   "place_id": "songshan",
+   "party": "清方",
+   "start": 1641,
+   "end": 1644
+  },
+  {
+   "place_id": "xingshan",
+   "party": "明方",
+   "start": 1616,
+   "end": 1640
+  },
+  {
+   "place_id": "xingshan",
+   "party": "清方",
+   "start": 1641,
+   "end": 1644
   },
   {
    "place_id": "ningyuan",
    "party": "明方",
-   "start": 1368,
-   "end": null,
-   "basis": "明宁远卫，关宁锦防线核心，袁崇焕守",
-   "note": "宁远始终为明守：1626 宁远之战努尔哈赤受创、1644 吴三桂弃城引清入关前未失"
+   "start": 1616,
+   "end": 1643
+  },
+  {
+   "place_id": "ningyuan",
+   "party": "清方",
+   "start": 1644,
+   "end": 1644
+  },
+  {
+   "place_id": "shanhaiquan",
+   "party": "明方",
+   "start": 1616,
+   "end": 1643
+  },
+  {
+   "place_id": "shanhaiquan",
+   "party": "清方",
+   "start": 1644,
+   "end": 1644
   }
  ],
  "control_seats": [
   {
-   "place_id": "kaiyuan_cheng",
-   "name": "开原城",
-   "lon": 124.04,
-   "lat": 42.54,
+   "place_id": "tieling",
+   "name": "铁岭城",
+   "lon": 123.83,
+   "lat": 42.29,
+   "region": "liaobei"
+  },
+  {
+   "place_id": "liaoyang",
+   "name": "辽阳",
+   "lon": 123.18,
+   "lat": 41.27,
+   "region": "liaobei"
+  },
+  {
+   "place_id": "shenyang",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.8,
    "region": "liaobei"
   },
   {
@@ -27586,25 +27670,11 @@ window.SANDBOX_DATA = {
    "region": "liaobei"
   },
   {
-   "place_id": "tieling_cheng",
-   "name": "铁岭城",
-   "lon": 124.31,
-   "lat": 42.3,
-   "region": "liaobei"
-  },
-  {
-   "place_id": "xiyehe",
-   "name": "叶赫西城",
-   "lon": 124.41,
-   "lat": 43.1,
+   "place_id": "hetuala",
+   "name": "赫图阿拉",
+   "lon": 124.85,
+   "lat": 41.89,
    "region": "jianzhou"
-  },
-  {
-   "place_id": "liaoyang_cheng",
-   "name": "辽阳城",
-   "lon": 123.18,
-   "lat": 41.27,
-   "region": "liaodong"
   },
   {
    "place_id": "guangning",
@@ -27614,52 +27684,59 @@ window.SANDBOX_DATA = {
    "region": "liaodong"
   },
   {
-   "place_id": "shenyang_cheng",
-   "name": "沈阳中卫",
-   "lon": 123.43,
-   "lat": 41.81,
-   "region": "liaodong"
-  },
-  {
-   "place_id": "haizhou_cheng",
-   "name": "海州城",
-   "lon": 122.75,
-   "lat": 40.86,
+   "place_id": "niuzhuang",
+   "name": "牛庄",
+   "lon": 122.55,
+   "lat": 40.96,
    "region": "liaonan"
   },
   {
-   "place_id": "gaizhou_cheng",
-   "name": "盖州",
-   "lon": 121.97,
+   "place_id": "xingshan",
+   "name": "熊岳堡",
+   "lon": 122.1,
    "lat": 40.4,
    "region": "liaonan"
   },
   {
-   "place_id": "fuzhou_cheng",
-   "name": "复州",
-   "lon": 121.65,
-   "lat": 39.75,
+   "place_id": "xiongyue",
+   "name": "熊岳堡",
+   "lon": 122.1,
+   "lat": 40.4,
    "region": "liaonan"
   },
   {
-   "place_id": "jinzhou_cheng",
-   "name": "金州",
-   "lon": 121.72,
-   "lat": 39.1,
-   "region": "liaonan"
-  },
-  {
-   "place_id": "jinzhouwei_cheng",
-   "name": "金州",
-   "lon": 121.7,
-   "lat": 39.09,
-   "region": "liaonan"
+   "place_id": "songshan",
+   "name": "松山",
+   "lon": 121.18,
+   "lat": 41.05,
+   "region": "liaoxi"
   },
   {
    "place_id": "ningyuan",
    "name": "宁远",
    "lon": 120.7,
    "lat": 40.62,
+   "region": "liaoxi"
+  },
+  {
+   "place_id": "jinzhou",
+   "name": "锦州",
+   "lon": 121.12,
+   "lat": 41.11,
+   "region": "liaoxi"
+  },
+  {
+   "place_id": "dalinghe",
+   "name": "大凌河",
+   "lon": 121.35,
+   "lat": 41.16,
+   "region": "liaoxi"
+  },
+  {
+   "place_id": "yizhou",
+   "name": "义州",
+   "lon": 121.3,
+   "lat": 41.5,
    "region": "liaoxi"
   }
  ],
