@@ -1680,12 +1680,13 @@
       else ControlLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
       finishCtrlSetup();
     }
+    // 场景自带 control（data/<scene>/control.json 经 build 注入）优先；
+    // 否则辽东剧场直接用 SD 全局控制数据（build.py 从 control_liaodong.json 注入，
+    // 无需 fetch——file:// 打开也能跑）。
     if (D.control && D.control.length) {
       doSetup({ control: D.control, seats: D.control_seats || [], years: D.control_years || [1616, 1644], events: D.control_events || [] });
-    } else if (isLiaodongTheatre()) {
-      fetch('../data/control_liaodong.json').then(function (r) { return r.json(); }).then(function (g) {
-        doSetup({ control: g.control, seats: g.seats, years: g.years, events: g.events });
-      }).catch(function () { console.warn('[Control] 辽东实控数据加载失败'); });
+    } else if (isLiaodongTheatre() && SD.control && SD.control.length) {
+      doSetup({ control: SD.control, seats: SD.control_seats || [], years: SD.control_years || [1616, 1644], events: SD.control_events || [] });
     }
   }
 
@@ -1695,6 +1696,11 @@
     if (ctrlBox) ctrlBox.disabled = false;
     wireCtrlTimeline();
     renderCtrlLegend();
+    // 辽东剧场默认打开实控区：边境变化 + 底部战争走势时间轴立即可见，不必先找勾选框。
+    if (isLiaodongTheatre() && !state.ctrlOn) {
+      state.ctrlOn = true;
+      if (ctrlBox) ctrlBox.checked = true;
+    }
     if (state.ctrlOn) drawControl();
   }
 

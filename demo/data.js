@@ -27640,104 +27640,186 @@ window.SANDBOX_DATA = {
    "end": 1644
   }
  ],
+ "control_events": [
+  {
+   "year": 1616,
+   "label": "努尔哈赤建后金，称汗"
+  },
+  {
+   "year": 1618,
+   "label": "七大恨起兵，破抚顺、清河"
+  },
+  {
+   "year": 1619,
+   "label": "萨尔浒大胜；克开原、铁岭"
+  },
+  {
+   "year": 1621,
+   "label": "辽沈大战，取沈阳、辽阳"
+  },
+  {
+   "year": 1622,
+   "label": "渡辽河，取广宁、义州（旋弃）"
+  },
+  {
+   "year": 1626,
+   "label": "宁远之战，明守胜"
+  },
+  {
+   "year": 1627,
+   "label": "宁锦之战，明守胜"
+  },
+  {
+   "year": 1631,
+   "label": "大凌河之战，祖大寿降"
+  },
+  {
+   "year": 1641,
+   "label": "松锦之战，取锦州、松山、杏山"
+  },
+  {
+   "year": 1644,
+   "label": "清入关，取全辽"
+  }
+ ],
  "control_seats": [
   {
-   "place_id": "tieling",
-   "name": "铁岭城",
-   "lon": 123.83,
-   "lat": 42.29,
-   "region": "liaobei"
-  },
-  {
-   "place_id": "liaoyang",
-   "name": "辽阳",
-   "lon": 123.18,
-   "lat": 41.27,
-   "region": "liaobei"
-  },
-  {
-   "place_id": "shenyang",
-   "name": "沈阳",
-   "lon": 123.43,
-   "lat": 41.8,
-   "region": "liaobei"
+   "place_id": "hetuala",
+   "name": "赫图阿拉",
+   "lon": 125,
+   "lat": 41.75
   },
   {
    "place_id": "fushun",
    "name": "抚顺",
    "lon": 123.9,
-   "lat": 41.86,
-   "region": "liaobei"
+   "lat": 41.86
   },
   {
-   "place_id": "hetuala",
-   "name": "赫图阿拉",
-   "lon": 124.85,
-   "lat": 41.89,
-   "region": "jianzhou"
+   "place_id": "qinghe",
+   "name": "清河堡",
+   "lon": 124.5,
+   "lat": 41.4
   },
   {
-   "place_id": "guangning",
-   "name": "广宁",
-   "lon": 121.79,
-   "lat": 41.59,
-   "region": "liaodong"
+   "place_id": "kaiyuan",
+   "name": "开原",
+   "lon": 124,
+   "lat": 42.54
+  },
+  {
+   "place_id": "tieling",
+   "name": "铁岭",
+   "lon": 123.84,
+   "lat": 42.29
+  },
+  {
+   "place_id": "shenyang",
+   "name": "沈阳",
+   "lon": 123.43,
+   "lat": 41.8
+  },
+  {
+   "place_id": "liaoyang",
+   "name": "辽阳",
+   "lon": 123.18,
+   "lat": 41.27
+  },
+  {
+   "place_id": "gaizhou",
+   "name": "盖州",
+   "lon": 122.3,
+   "lat": 40.43
+  },
+  {
+   "place_id": "haizhou",
+   "name": "海州",
+   "lon": 122.75,
+   "lat": 40.85
   },
   {
    "place_id": "niuzhuang",
    "name": "牛庄",
-   "lon": 122.55,
-   "lat": 40.96,
-   "region": "liaonan"
+   "lon": 122.45,
+   "lat": 40.95
   },
   {
-   "place_id": "xingshan",
-   "name": "熊岳堡",
-   "lon": 122.1,
-   "lat": 40.4,
-   "region": "liaonan"
+   "place_id": "yaozhou",
+   "name": "耀州",
+   "lon": 122.85,
+   "lat": 40.68
   },
   {
    "place_id": "xiongyue",
-   "name": "熊岳堡",
-   "lon": 122.1,
-   "lat": 40.4,
-   "region": "liaonan"
+   "name": "熊岳",
+   "lon": 122.13,
+   "lat": 40.18
   },
   {
-   "place_id": "songshan",
-   "name": "松山",
-   "lon": 121.18,
-   "lat": 41.05,
-   "region": "liaoxi"
+   "place_id": "fuzhou",
+   "name": "复州",
+   "lon": 121.97,
+   "lat": 39.7
   },
   {
-   "place_id": "ningyuan",
-   "name": "宁远",
-   "lon": 120.7,
-   "lat": 40.62,
-   "region": "liaoxi"
+   "place_id": "jinzhou_dalian",
+   "name": "金州",
+   "lon": 121.65,
+   "lat": 39.09
   },
   {
-   "place_id": "jinzhou",
-   "name": "锦州",
-   "lon": 121.12,
-   "lat": 41.11,
-   "region": "liaoxi"
+   "place_id": "lushun",
+   "name": "旅顺",
+   "lon": 121.25,
+   "lat": 38.85
   },
   {
-   "place_id": "dalinghe",
-   "name": "大凌河",
-   "lon": 121.35,
-   "lat": 41.16,
-   "region": "liaoxi"
+   "place_id": "guangning",
+   "name": "广宁",
+   "lon": 121.78,
+   "lat": 41.62
   },
   {
    "place_id": "yizhou",
    "name": "义州",
    "lon": 121.3,
-   "lat": 41.5,
-   "region": "liaoxi"
+   "lat": 41.52
+  },
+  {
+   "place_id": "jinzhou",
+   "name": "锦州",
+   "lon": 121.13,
+   "lat": 41.1
+  },
+  {
+   "place_id": "dalinghe",
+   "name": "大凌河",
+   "lon": 121.35,
+   "lat": 41.16
+  },
+  {
+   "place_id": "songshan",
+   "name": "松山",
+   "lon": 121.2,
+   "lat": 41
+  },
+  {
+   "place_id": "xingshan",
+   "name": "杏山",
+   "lon": 121.18,
+   "lat": 41.05
+  },
+  {
+   "place_id": "ningyuan",
+   "name": "宁远",
+   "lon": 120.7,
+   "lat": 40.63
+  },
+  {
+   "place_id": "shanhaiquan",
+   "name": "山海关",
+   "lon": 119.75,
+   "lat": 40
   }
  ],
  "control_years": [

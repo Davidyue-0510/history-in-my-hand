@@ -642,43 +642,50 @@ def main():
         with open(ctrl_path, encoding="utf-8") as f:
             ctrl = json.load(f)
         sd["control"] = ctrl.get("control", [])
+        sd["control_events"] = ctrl.get("events", [])   # v0.48：战争走势时间轴里程碑标签
+        # v0.48：control_liaodong.json 现在**自含 seats**（place_id+真实经纬度），
+        # 优先直取；无 seats 键则回退旧逻辑（place_id 反查县切片 places.json 取坐标）。
+        inline_seats = ctrl.get("seats") or []
+        if inline_seats:
+            sd["control_seats"] = inline_seats
+        else:
+            ctrl_ids = {c.get("place_id") for c in sd["control"]}
+            seats = {}
+            for sc in resolved:
+                if sc.get("kind") != "county":
+                    continue
+                try:
+                    pl = load_json(scene_dir(sc), "places.json")["places"]
+                except Exception:
+                    continue
+                for p in pl:
+                    pid = p.get("id")
+                    if pid not in ctrl_ids or pid in seats:
+                        continue
+                    if p.get("lon") is None or p.get("lat") is None:
+                        continue
+                    seats[pid] = {
+                        "place_id": pid,
+                        "name": p.get("name", pid),
+                        "lon": p["lon"], "lat": p["lat"],
+                        "region": sc.get("region"),
+                    }
+            sd["control_seats"] = list(seats.values())
+
+        # 年份窗口：优先自含 years 键；否则按区间 min start / max end 推导并夹到 1616–1644
+        if ctrl.get("years"):
+            sd["control_years"] = ctrl["years"]
+        else:
+            yrs = [c["start"] for c in sd["control"] if isinstance(c.get("start"), int)]
+            ends = [c["end"] for c in sd["control"] if isinstance(c.get("end"), int)]
+            cy0 = max(1616, min(yrs)) if yrs else 1616
+            cy1 = max(1644, max(ends)) if ends else 1644
+            sd["control_years"] = [cy0, cy1]
     else:
         sd["control"] = []
-
-    # 治所几何：由「控制权数据里出现的 place_id」驱动（v0.24 修复——之前遍历所有
-    # county 切片的 primary_place，新切片唐/壬辰的蔡州/平壤被塞进辽东 Voronoi 网格，
-    # 而 control 数据没有它们的控制权 → 空洞 + 辽东色块错位到错误经纬）。
-    # 现在只收集 control 数据实际描述的治所几何；无控制权数据的切片不进网格。
-    ctrl_ids = {c.get("place_id") for c in sd["control"]}
-    seats = {}
-    for sc in resolved:
-        if sc.get("kind") != "county":
-            continue
-        try:
-            pl = load_json(scene_dir(sc), "places.json")["places"]
-        except Exception:
-            continue
-        for p in pl:
-            pid = p.get("id")
-            if pid not in ctrl_ids or pid in seats:
-                continue
-            if p.get("lon") is None or p.get("lat") is None:
-                continue
-            seats[pid] = {
-                "place_id": pid,
-                "name": p.get("name", pid),
-                "lon": p["lon"], "lat": p["lat"],
-                "region": sc.get("region"),
-            }
-    sd["control_seats"] = list(seats.values())
-
-    # 年份滑块范围：取控制权时间线的最小 start / 最大 end，但夹到动态期窗口
-    # （1616–1644）。pre-1616 全为明方、1644 之后格局已定，滑出去无意义。
-    yrs = [c["start"] for c in sd["control"] if isinstance(c.get("start"), int)]
-    ends = [c["end"] for c in sd["control"] if isinstance(c.get("end"), int)]
-    cy0 = max(1616, min(yrs)) if yrs else 1616
-    cy1 = max(1644, max(ends)) if ends else 1644
-    sd["control_years"] = [cy0, cy1]
+        sd["control_events"] = []
+        sd["control_seats"] = []
+        sd["control_years"] = [1616, 1644]
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:

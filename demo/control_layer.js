@@ -53,6 +53,7 @@
     if (!(p in partyIdxMap)) { partyIdxMap[p] = partyList.length; partyList.push(p); }
     return partyIdxMap[p];
   }
+  function pCol(i) { return partyColor(partyList[i]); }
   function partyColor(p) {
     if (!p) return null;
     var hex = cfg.partyColors && cfg.partyColors[p];
