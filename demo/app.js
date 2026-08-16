@@ -394,9 +394,13 @@
     // 壳级共享 basemap（SD.basemap，v0.38 中国裁剪版）只含 land/coastline，作回退。
     var BM = (D && D.basemap) ? D.basemap : (SD.basemap || {});
     if (BM && (BM.land || BM.coastline || BM.admin1 || BM.rivers || BM.lakes)) {
-      (BM.land || []).forEach(function (f) {
-        el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
-      });
+      // 陆地底色：仅在没有地形网格（或地形未绘制）时作兜底填充，避免与地形 canvas 的
+      // 半透明 hillshade「同一陆地画两遍 / 海岸错位」。有地形时陆地色由地形层单一负责。
+      if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) {
+        (BM.land || []).forEach(function (f) {
+          el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
+        });
+      }
       var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
         'vector-effect': 'non-scaling-stroke' }, gBase);
       (BM.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });

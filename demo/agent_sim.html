@@ -300,9 +300,9 @@ function tick(){
 
   // 7. 事件
   let yes=events.filter(e=>e.year===yr);
-  yes.forEach(e=>{
+  yes.forEach(e=>{ try {
     if(e.t==='invasion_tax'){borderThreat+=40;
-      let el=document.getElementById('taxRate');el.value=Math.min(60,+el.value+10);updSliders();
+      let el=document.getElementById('taxRate');el.value=Math.min(60,+el.value+10);updateSliders();
       alive.forEach(a=>{if(a.cls!=='center')a.gv=Math.min(1,a.gv+0.05);});
       lg('⚔ 外敌入侵！加税10%速决战费','b');}
     if(e.t==='invasion_slow'){borderThreat+=40;
@@ -323,7 +323,7 @@ function tick(){
       locals.forEach(l=>l.gv=Math.min(1,l.gv+0.25));
       grass.forEach(g=>g.gv=Math.max(0,g.gv-0.1));
       lg('📚 普及教育！垄断-0.1 国库-100 士绅震怒 庶民开智','g');}
-  });
+  } catch(ex){ console.error('event '+e.t+' failed:', ex); } });
 
   // 8. 增长
   A.filter(a=>a.alive).forEach(a=>{a.gr+=(a.cls==='center'?8:a.cls==='local'?6:4);a.tp+=(a.cls==='center'?1:0.3);});

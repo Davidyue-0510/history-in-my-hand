@@ -456,10 +456,14 @@
     gBase.innerHTML = '';
     if (IS_ABSTRACT) return;   // 抽象关系图模式无底图
     if (!BM) return;
-    // 1) 陆地掩膜（浅色填充，作为海陆底色）
+  // 1) 陆地底色：仅在没有地形网格（或地形未绘制）时作兜底填充。
+  //    有地形网格时，陆地色由地形 canvas 负责（半透明 hillshade，掩膜同出 BM.land），
+  //    此处若再填实心陆地 = 同一陆地画两遍 + 海岸错位（矢量平滑边 vs 栅格块边）。单一真值。
+  if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) {
     BM.land.forEach(function (f) {
       el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
     });
+  }
     // 2) 湖泊
     var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
       'vector-effect': 'non-scaling-stroke' }, gBase);
