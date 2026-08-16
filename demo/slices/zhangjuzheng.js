@@ -70,7 +70,8 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "id": "zhangjuzheng2",
    "name": "张居正",
    "side": "明首辅",
-   "influence": 7
+   "influence": 7,
+   "hometown": "江陵"
   },
   {
    "id": "wanli",
@@ -486,7 +487,11 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      "张太岳集",
      "万历起居注"
     ],
-    "bias_note": "居正自评「苟利社稷，死生以之」，其文献强调振刷颓纲、富国强兵；对打压言官多自辩为「整饬纲纪」。"
+    "bias_note": "居正自评「苟利社稷，死生以之」，其文献强调振刷颓纲、富国强兵；对打压言官多自辩为「整饬纲纪」。",
+    "bases": [
+     "江陵"
+    ],
+    "geo_note": "内阁首辅派以张居正（江陵/楚）为核心，结司礼监冯保，控中枢行政。"
    },
    "qingliu": {
     "name": "清流言官·地方官（在野批评者）",
@@ -502,8 +507,23 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      "万历野获编",
      "明臣奏议"
     ],
-    "bias_note": "私家笔记与奏议多记居正专横、廷杖言官之酷，清流叙事将其塑造为「权相窃柄」。"
+    "bias_note": "私家笔记与奏议多记居正专横、廷杖言官之酷，清流叙事将其塑造为「权相窃柄」。",
+    "bases": [
+     "吉水",
+     "常熟",
+     "武进"
+    ],
+    "geo_note": "清流言官多江南士人：邹元标（吉水/江西）、赵用贤（常熟/江苏）、吴中行（武进/江苏）——东林前身的地方舆论。"
    }
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "岭南/西南",
+     "determination": "genuine_gap",
+     "note": "张居正改革争议集中于中枢与江南清流，岭南西南非焦点，无独立代言。"
+    }
+   ]
   }
  }
 };

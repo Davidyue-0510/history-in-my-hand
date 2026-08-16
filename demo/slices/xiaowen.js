@@ -70,13 +70,15 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "id": "xiaowen",
    "name": "孝文帝",
    "side": "北魏",
-   "influence": 0
+   "influence": 0,
+   "hometown": "洛阳"
   },
   {
    "id": "fenghou",
    "name": "冯太后",
    "side": "北魏",
-   "influence": 0
+   "influence": 0,
+   "hometown": "洛阳"
   }
  ],
  "assertions": [
@@ -470,7 +472,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
      "魏书·高祖纪",
      "北史"
     ],
-    "bias_note": "北魏官修《魏书》奉孝文帝为圣主，将汉化叙述为「稽古复礼」；对保守派叛乱着墨于「逆乱」。"
+    "bias_note": "北魏官修《魏书》奉孝文帝为圣主，将汉化叙述为「稽古复礼」；对保守派叛乱着墨于「逆乱」。",
+    "bases": [
+     "洛阳"
+    ],
+    "geo_note": "汉化派以孝文帝—冯太后为核心，迁都洛阳后中原为推行基地。"
    },
    "baoshou": {
     "name": "鲜卑保守派（代北旧贵族）",
@@ -486,8 +492,21 @@ window.SANDBOX_SLICES["xiaowen"] = {
      "魏书·太子恂传",
      "北史·穆泰传"
     ],
-    "bias_note": "保守派视角仅存于官修史书的「逆乱」叙述中，其维护旧俗的诉求被简化为叛乱。"
+    "bias_note": "保守派视角仅存于官修史书的「逆乱」叙述中，其维护旧俗的诉求被简化为叛乱。",
+    "bases": [
+     "平城"
+    ],
+    "geo_note": "鲜卑保守派根基在代北平城（旧都），反对迁洛与汉化，太子恂、穆泰为代表。"
    }
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "关中/河西",
+     "determination": "genuine_gap",
+     "note": "保守派根基在代北平城，关中河西为汉化派推行区，无独立保守代言。"
+    }
+   ]
   }
  }
 };

@@ -70,13 +70,15 @@ window.SANDBOX_SLICES["shangyang"] = {
    "id": "shangyang",
    "name": "商鞅",
    "side": "秦",
-   "influence": 1
+   "influence": 1,
+   "hometown": "卫"
   },
   {
    "id": "xiaogong",
    "name": "秦孝公",
    "side": "秦",
-   "influence": 1
+   "influence": 1,
+   "hometown": "咸阳"
   }
  ],
  "assertions": [
@@ -535,7 +537,13 @@ window.SANDBOX_SLICES["shangyang"] = {
      "商君书",
      "史记·商君列传"
     ],
-    "bias_note": "法家叙事以「强国」为最高善，淡化对宗室贵族权益的冲击；《商君书》对刑赏之严酷自陈不讳，但将阻力统称为「法之不行，自上犯之」。"
+    "bias_note": "法家叙事以「强国」为最高善，淡化对宗室贵族权益的冲击；《商君书》对刑赏之严酷自陈不讳，但将阻力统称为「法之不行，自上犯之」。",
+    "bases": [
+     "卫",
+     "雍城",
+     "咸阳"
+    ],
+    "geo_note": "改革理论来自卫人商鞅（客卿），政治靠山为秦君（雍城→咸阳）；代表『君权+外来法术士』对本土贵族。"
    },
    "guizu": {
     "name": "秦国宗室·军功旧贵族",
@@ -551,8 +559,27 @@ window.SANDBOX_SLICES["shangyang"] = {
      "史记·秦本纪",
      "战国策·秦策"
     ],
-    "bias_note": "旧贵族立场多见于《史记》转述的反对言论（「不便者亦众」「恐天下之议己」），其完整诉求无专书传世，须据零散记载复原。"
+    "bias_note": "旧贵族立场多见于《史记》转述的反对言论（「不便者亦众」「恐天下之议己」），其完整诉求无专书传世，须据零散记载复原。",
+    "bases": [
+     "雍城",
+     "咸阳"
+    ],
+    "geo_note": "秦国宗室与军功旧贵族，根基在秦都本土（雍城旧都、咸阳新都）。"
    }
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "巴蜀（初设蜀郡）",
+     "determination": "genuine_gap",
+     "note": "变法时巴蜀初并入秦，尚未形成本土利益代言，属新拓边疆，无独立派系。"
+    },
+    {
+     "region": "东方六国",
+     "determination": "not_applicable",
+     "note": "此争为秦国内争，六国非场景范围，不强行标注。"
+    }
+   ]
   }
  }
 };

@@ -4,13 +4,15 @@
    "id": "shangyang",
    "name": "商鞅",
    "side": "秦",
-   "influence": 0
+   "influence": 0,
+   "hometown": "卫"
   },
   {
    "id": "xiaogong",
    "name": "秦孝公",
    "side": "秦",
-   "influence": 0
+   "influence": 0,
+   "hometown": "咸阳"
   }
  ]
 }

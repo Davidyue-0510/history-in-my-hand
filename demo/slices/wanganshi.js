@@ -62,13 +62,15 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "id": "wanganshi",
    "name": "王安石",
    "side": "新党",
-   "influence": 1
+   "influence": 1,
+   "hometown": "临川"
   },
   {
    "id": "simaguang",
    "name": "司马光",
    "side": "旧党",
-   "influence": 0
+   "influence": 0,
+   "hometown": "夏县"
   }
  ],
  "assertions": [
@@ -449,7 +451,15 @@ window.SANDBOX_SLICES["wanganshi"] = {
      "临川先生文集",
      "宋会要辑稿"
     ],
-    "bias_note": "新党文献以「理财整军、雪耻强宋」为叙事主轴，将反对者归类为因循守旧、阻挠恢复。"
+    "bias_note": "新党文献以「理财整军、雪耻强宋」为叙事主轴，将反对者归类为因循守旧、阻挠恢复。",
+    "bases": [
+     "临川",
+     "泉州",
+     "浦城",
+     "仙游",
+     "南丰"
+    ],
+    "geo_note": "新党多东南士人：王安石（临川/江西）、吕惠卿（泉州/福建）、章惇（浦城/福建）、蔡京（仙游/福建）、曾布（南丰/江西）——江南福建集团。"
    },
    "jiudang": {
     "name": "旧党（元祐更化派）",
@@ -466,8 +476,35 @@ window.SANDBOX_SLICES["wanganshi"] = {
      "温国文正司马公文集",
      "续资治通鉴长编（李焘所引旧党奏议）"
     ],
-    "bias_note": "旧党著述强调「与民休息、防苛政」，对新法扰民、聚敛之弊多有指摘；其维护的亦是士大夫—地主阶层利益。"
+    "bias_note": "旧党著述强调「与民休息、防苛政」，对新法扰民、聚敛之弊多有指摘；其维护的亦是士大夫—地主阶层利益。",
+    "bases": [
+     "夏县",
+     "介休",
+     "安阳",
+     "眉山",
+     "洛阳"
+    ],
+    "geo_note": "旧党多中原—蜀士人：司马光（夏县/山西）、文彦博（介休/山西）、韩琦（安阳/河南）、苏轼（眉山/四川）、二程（洛阳/河南）——中原与蜀地联盟。"
    }
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "关中/陕西",
+     "determination": "affiliate:jiudang",
+     "note": "宋关中士人稀少（唐末战乱后北方重心东移），多附洛阳旧党交游圈，无独立地域派系。"
+    },
+    {
+     "region": "广南（岭南）",
+     "determination": "genuine_gap",
+     "note": "远疆，非党争核心；苏轼贬惠儋属被动流放，非本土代言。"
+    },
+    {
+     "region": "湖湘",
+     "determination": "genuine_gap",
+     "note": "北宋党争期湖湘未出显著人才，南宋胡安国/岳飞方兴，此期 genuine_gap。"
+    }
+   ]
   }
  }
 };

@@ -70,13 +70,15 @@ window.SANDBOX_SLICES["wangmang"] = {
    "id": "wangmang",
    "name": "王莽",
    "side": "新",
-   "influence": 1
+   "influence": 1,
+   "hometown": "魏郡"
   },
   {
    "id": "liuxiu",
    "name": "刘秀",
    "side": "汉宗室",
-   "influence": 0
+   "influence": 0,
+   "hometown": "南阳"
   }
  ],
  "assertions": [
@@ -492,7 +494,11 @@ window.SANDBOX_SLICES["wangmang"] = {
      "汉书·王莽传",
      "王莽诏令集"
     ],
-    "bias_note": "新朝官方文献将改制包装为「奉天命、法周公」；王莽本人好引经义自辩，对失败与民变多诿于「符命未应」。"
+    "bias_note": "新朝官方文献将改制包装为「奉天命、法周公」；王莽本人好引经义自辩，对失败与民变多诿于「符命未应」。",
+    "bases": [
+     "魏郡"
+    ],
+    "geo_note": "王氏外戚出自魏郡元城，依托儒生集团与太后；代表冀南豪族—儒学士大夫进路。"
    },
    "han_zongshi": {
     "name": "汉宗室·豪强地主",
@@ -508,8 +514,27 @@ window.SANDBOX_SLICES["wangmang"] = {
      "汉书",
      "后汉书"
     ],
-    "bias_note": "东汉官修《汉书》以汉室为正统，将反莽豪强记为「义兵」，对新莽之失极力渲染；王莽的儒术理想被塑为「篡伪」。"
+    "bias_note": "东汉官修《汉书》以汉室为正统，将反莽豪强记为「义兵」，对新莽之失极力渲染；王莽的儒术理想被塑为「篡伪」。",
+    "bases": [
+     "南阳",
+     "长安"
+    ],
+    "geo_note": "刘氏宗室与关东豪强（南阳舂陵刘縯刘秀、河北豪强），反莽义兵多起东方。"
    }
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "齐鲁（今山东）",
+     "determination": "affiliate:han_zongshi",
+     "note": "山东豪强多附汉宗室反莽义兵（琅琊樊崇赤眉、东海力子都），可视为汉宗室—豪强联盟的东方支。"
+    },
+    {
+     "region": "江南（荆扬）",
+     "determination": "genuine_gap",
+     "note": "新莽时江南尚属待开发边郡，无显著中央代言利益集团。"
+    }
+   ]
   }
  }
 };

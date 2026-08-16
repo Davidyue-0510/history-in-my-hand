@@ -4,13 +4,15 @@
    "id": "wanganshi",
    "name": "王安石",
    "side": "新党",
-   "influence": 0
+   "influence": 0,
+   "hometown": "临川"
   },
   {
    "id": "simaguang",
    "name": "司马光",
    "side": "旧党",
-   "influence": 0
+   "influence": 0,
+   "hometown": "夏县"
   }
  ]
 }

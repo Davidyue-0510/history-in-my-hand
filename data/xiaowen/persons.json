@@ -4,13 +4,15 @@
    "id": "xiaowen",
    "name": "孝文帝",
    "side": "北魏",
-   "influence": 0
+   "influence": 0,
+   "hometown": "洛阳"
   },
   {
    "id": "fenghou",
    "name": "冯太后",
    "side": "北魏",
-   "influence": 0
+   "influence": 0,
+   "hometown": "洛阳"
   }
  ]
 }

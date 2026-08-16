@@ -4,13 +4,15 @@
    "id": "limin2",
    "name": "李世民",
    "side": "秦王/太宗",
-   "influence": 0
+   "influence": 0,
+   "hometown": "成纪"
   },
   {
    "id": "jiancheng",
    "name": "李建成",
    "side": "太子",
-   "influence": 0
+   "influence": 0,
+   "hometown": "长安"
   },
   {
    "id": "gaozu",
