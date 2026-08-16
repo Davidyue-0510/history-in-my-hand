@@ -149,6 +149,7 @@
     selection: null,
     control: { on: false, scope: 'county' },
     ctrlOn: false,               // 实控区变化图层（v0.47 重做：真实海岸线裁剪的治所 Voronoi）
+    impactOn: false,             // 灾情影响范围图层（v0.49 独立灾难模型：severity 热力）
     chgis: { on: true, ds: 'all', period: 'all', yearSync: false },
     battle: { on: true, routes: true },
     timeline: 'main',          // v0.31：当前分支时间线
@@ -224,6 +225,7 @@
     if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
     if (!IS_ABSTRACT && state.control.on && window.BorderLayer && BorderLayer.isReady()) BorderLayer.repaint();
     if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
+    if (!IS_ABSTRACT && state.impactOn && window.ImpactLayer && ImpactLayer.isReady()) ImpactLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
     if (redrawSvg !== false && !rafPending) {
@@ -1628,9 +1630,21 @@
    * BorderLayer：勾选「真实政区界线」按「县界/国界」scope 懒加载并渲染 CHGIS 真实几何。
    * ControlLayer：勾选「实控区变化」按年份给真实海岸线裁剪的治所 Voronoi 着色（战争走势）。 */
   var ctrlYear = null, ctrlScope = 'county', ctrlEvents = [];
+  var impactMode = false, impactYear = null, impactEvents = [];   // v0.49 灾难热力模型
 
   function drawControl() {
-    if (IS_ABSTRACT || !window.BorderLayer) return;
+    if (IS_ABSTRACT) return;
+    // ── 灾难热力模式（v0.49）：灾情影响范围随年份扩张/收缩 ──
+    if (impactMode) {
+      if (window.ImpactLayer && ImpactLayer.isReady()) {
+        if (state.impactOn) ImpactLayer.draw(impactYear != null ? impactYear : ImpactLayer.years()[0]);
+        else ImpactLayer.clear();
+      }
+      updateCtrlTimeline();
+      return;
+    }
+    // ── 战争控制模式：真实政区界线 + 实控区着色 ──
+    if (!window.BorderLayer) return;
     if (state.control.on) {
       BorderLayer.setScope(state.control.scope);
       BorderLayer.ensure();
@@ -1704,9 +1718,44 @@
     if (state.ctrlOn) drawControl();
   }
 
+  // 装载灾情影响范围（v0.49）：seats = 场景 places（带坐标），impact = 每处 severity 区间。
+  function loadImpactLayer() {
+    if (IS_ABSTRACT || !window.ImpactLayer) return;
+    if (!D.impact || !D.impact.length) return;
+    impactMode = true;
+    var seats = (D.places || []).filter(function (p) { return p.lon != null && p.lat != null; });
+    impactYear = (D.impact_years && D.impact_years[0]) || 1600;
+    impactEvents = D.impact_events || [];
+    ImpactLayer.setup({
+      cv: controlCv, px: px, py: py,
+      getView: function () { return view; },
+      getCw: function () { return cw; },
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      sceneData: { impact: D.impact, seats: seats, years: D.impact_years || [impactYear, impactYear + 1] }
+    });
+    if (window.BorderLayer && BorderLayer.isReady()) ImpactLayer.setCoast(BorderLayer.features());
+    else ImpactLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
+    finishImpactSetup();
+  }
+
+  function finishImpactSetup() {
+    if (!window.ImpactLayer || !ImpactLayer.isReady()) return;
+    var ctrlBox = document.getElementById('ctrlOn');
+    if (ctrlBox) ctrlBox.disabled = false;
+    wireCtrlTimeline();
+    renderCtrlLegend();
+    // 灾难场景默认打开影响范围热力：灾情随时间轴立即可见。
+    if (!state.impactOn) {
+      state.impactOn = true;
+      if (ctrlBox) ctrlBox.checked = true;
+    }
+    drawControl();
+  }
+
   function ctrlDateHint(year) {
+    var evs = impactMode ? impactEvents : ctrlEvents;
     var best = null;
-    ctrlEvents.forEach(function (e) {
+    evs.forEach(function (e) {
       if (e.year <= year && (!best || e.year > best.year)) best = e;
     });
     return best ? best.label : '';
@@ -1714,12 +1763,28 @@
 
   function updateCtrlTimeline() {
     var bar = document.getElementById('ctrlTimeline');
-    if (bar) bar.style.display = (state.ctrlOn && window.ControlLayer && ControlLayer.isReady()) ? '' : 'none';
+    if (!bar) return;
+    if (impactMode) {
+      bar.style.display = (state.impactOn && window.ImpactLayer && ImpactLayer.isReady()) ? '' : 'none';
+    } else {
+      bar.style.display = (state.ctrlOn && window.ControlLayer && ControlLayer.isReady()) ? '' : 'none';
+    }
   }
 
   function renderCtrlLegend() {
     var box = document.getElementById('ctrlLegend');
-    if (!box || !window.ControlLayer) return;
+    if (!box) return;
+    // 灾难模式：severity 色阶图例（轻/中/重）
+    if (impactMode) {
+      var SEV = [[1, '#EBBE64', '轻'], [2, '#DE7D32', '中'], [3, '#B22D28', '重']];
+      box.innerHTML = SEV.map(function (s) {
+        return '<i style="background:' + s[1] + '"></i>' + s[2];
+      }).join('');
+      var note = document.getElementById('ctrlEraNote');
+      if (note) note.textContent = '影响范围为治所 Voronoi 近似 + CHGIS 1820 海岸线裁剪，非逐日实测';
+      return;
+    }
+    if (!window.ControlLayer) return;
     var parties = ControlLayer.activeParties();
     var html = '';
     parties.forEach(function (p) {
@@ -1734,18 +1799,26 @@
 
   function wireCtrlTimeline() {
     var slider = document.getElementById('ctrlSlider');
-    if (!slider || IS_ABSTRACT || !window.ControlLayer) return;
-    var ys = ControlLayer.years();
+    if (!slider || IS_ABSTRACT) return;
+    if (impactMode && !window.ImpactLayer) return;
+    if (!impactMode && !window.ControlLayer) return;
+    var ys = impactMode ? ImpactLayer.years() : ControlLayer.years();
+    var yr = impactMode ? impactYear : ctrlYear;
     slider.min = ys[0]; slider.max = ys[1]; slider.step = 1;
-    if (ctrlYear == null || ctrlYear < ys[0] || ctrlYear > ys[1]) ctrlYear = ys[0];
-    slider.value = ctrlYear;
+    if (yr == null || yr < ys[0] || yr > ys[1]) yr = ys[0];
+    if (impactMode) impactYear = yr; else ctrlYear = yr;
+    slider.value = yr;
+    // 时间轴标题随模式切换（实控区 ↔ 影响范围）
+    var eraEl = document.querySelector('#ctrlTimeline .tl-era');
+    if (eraEl) eraEl.textContent = impactMode ? '影响范围 · 灾情走势' : '实控区 · 战争走势';
     function sync() {
-      ctrlYear = parseInt(slider.value, 10);
+      var v = parseInt(slider.value, 10);
+      if (impactMode) impactYear = v; else ctrlYear = v;
       var yl = document.getElementById('ctrlYear');
-      if (yl) yl.textContent = ctrlYear + ' 年';
+      if (yl) yl.textContent = v + ' 年';
       var dl = document.getElementById('ctrlDateLabel');
-      if (dl) dl.textContent = ctrlDateHint(ctrlYear);
-      if (state.ctrlOn) drawControl();
+      if (dl) dl.textContent = ctrlDateHint(v);
+      if (impactMode ? state.impactOn : state.ctrlOn) drawControl();
     }
     slider.addEventListener('input', sync);
     var play = document.getElementById('ctrlPlay');
@@ -1766,6 +1839,12 @@
     var panel = document.getElementById('controlPanel');
     if (!panel || IS_ABSTRACT) { if (panel) panel.style.display = 'none'; return; }
     panel.style.display = '';
+    // 灾难模式：隐藏政区界线/县界国界（战争专属），重命名「实控区变化」→「影响范围变化」
+    if (impactMode) {
+      var br = document.getElementById('cpBorderRow'); if (br) br.style.display = 'none';
+      document.querySelectorAll('.cp-scope[data-cscope]').forEach(function (x) { x.style.display = 'none'; });
+      var lb = document.getElementById('ctrlOnLabel'); if (lb) lb.textContent = '影响范围变化';
+    }
     var onBox = document.getElementById('borderOn');
     if (onBox) {
       onBox.checked = state.control.on;
@@ -1776,10 +1855,10 @@
     }
     var ctrlBox = document.getElementById('ctrlOn');
     if (ctrlBox) {
-      ctrlBox.checked = state.ctrlOn;
-      ctrlBox.disabled = !(window.ControlLayer && ControlLayer.isReady());
+      ctrlBox.checked = impactMode ? state.impactOn : state.ctrlOn;
+      ctrlBox.disabled = !((impactMode ? window.ImpactLayer : window.ControlLayer) && (impactMode ? ImpactLayer.isReady() : ControlLayer.isReady()));
       ctrlBox.addEventListener('change', function () {
-        state.ctrlOn = ctrlBox.checked;
+        if (impactMode) state.impactOn = ctrlBox.checked; else state.ctrlOn = ctrlBox.checked;
         drawControl();
       });
     }
@@ -1991,6 +2070,7 @@
   }
   loadWarCourt();   // v0.46：战—朝关联数据（将领派系）
   loadControlLayer();  // v0.47：实控区变化（真实海岸线裁剪 + 战争走势时间轴）
+  loadImpactLayer();   // v0.49：灾情影响范围（独立灾难模型，severity 热力 + 时间轴）
   // 战例叠加层：严格按当前切片隔离。
   // 依据用户原则（2026-08-13）：有联系（用户提出 or 史料提及）才能同屏查看；
   // 否则绝不跨场景堆叠——唐/三大战役页不再出现萨尔浒，反之亦然。

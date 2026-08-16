@@ -129,13 +129,13 @@
       <div id="chgisTip" class="chgis-tip" style="display:none"></div>
 
       <div class="control-panel" id="controlPanel" style="display:none">
-        <div class="cp-row">
+        <div class="cp-row" id="cpBorderRow">
           <label class="cp-toggle"><input type="checkbox" id="borderOn"> 真实政区界线</label>
           <button data-scope="county" class="cp-scope on">县界</button>
           <button data-scope="nation" class="cp-scope">国界</button>
         </div>
-        <div class="cp-row">
-          <label class="cp-toggle"><input type="checkbox" id="ctrlOn"> 实控区变化</label>
+        <div class="cp-row" id="cpCtrlRow">
+          <label class="cp-toggle"><input type="checkbox" id="ctrlOn"> <span id="ctrlOnLabel">实控区变化</span></label>
           <button data-cscope="county" class="cp-scope on">县界</button>
           <button data-cscope="nation" class="cp-scope">国界</button>
         </div>
@@ -230,6 +230,7 @@
   <script src="chgis_layer.js"></script>
   <script src="border_layer.js"></script>
   <script src="control_layer.js"></script>
+  <script src="impact_layer.js"></script>
   <script src="battle_layer.js"></script>
   <script src="county.js"></script>
 </body>

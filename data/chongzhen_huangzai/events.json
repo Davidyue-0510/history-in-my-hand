@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_hz_1637",
+   "subject": "event:hz_1637",
+   "year": 1637,
+   "era": "崇祯十",
+   "title": "蝗起",
+   "kind": "蝗灾",
+   "text": "华北蝗蝻渐起，田禾受损。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_hz_1639",
+   "subject": "event:hz_1639",
+   "year": 1639,
+   "era": "崇祯十二",
+   "title": "蝗极",
+   "kind": "蝗灾",
+   "text": "飞蝗蔽天，蝗区遍及九省，禾稼瞬息一空。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_hz_1644",
+   "subject": "event:hz_1644",
+   "year": 1644,
+   "era": "崇祯十七",
+   "title": "蝗食人",
+   "kind": "蝗灾",
+   "text": "河南飞蝗食民间小儿，灾情骇人听闻。",
+   "place": "kaofeng"
+  }
+ ]
+}

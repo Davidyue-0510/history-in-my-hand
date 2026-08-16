@@ -1,0 +1,58 @@
+{
+ "years": [
+  1637,
+  1644
+ ],
+ "events": [
+  {
+   "year": 1637,
+   "label": "华北蝗蝻渐起"
+  },
+  {
+   "year": 1639,
+   "label": "蝗极：飞蝗蔽天，遍及九省"
+  },
+  {
+   "year": 1644,
+   "label": "河南蝗极，竟有飞蝗食人"
+  }
+ ],
+ "impact": [
+  {
+   "place_id": "kaofeng",
+   "start": 1637,
+   "end": 1640,
+   "level": 2
+  },
+  {
+   "place_id": "kaofeng",
+   "start": 1641,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "taiyuan",
+   "start": 1637,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "changan",
+   "start": 1637,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "jinan",
+   "start": 1637,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "beijing",
+   "start": 1639,
+   "end": 1644,
+   "level": 2
+  }
+ ]
+}

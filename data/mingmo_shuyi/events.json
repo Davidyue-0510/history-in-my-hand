@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_sy_1641",
+   "subject": "event:sy_1641",
+   "year": 1641,
+   "era": "崇祯十四",
+   "title": "山西大疫",
+   "kind": "瘟疫",
+   "text": "鼠疫自山西起，沿驿道向畿辅蔓延。",
+   "place": "taiyuan"
+  },
+  {
+   "id": "ev_sy_1643",
+   "subject": "event:sy_1643",
+   "year": 1643,
+   "era": "崇祯十六",
+   "title": "京师大疫",
+   "kind": "瘟疫",
+   "text": "北京大疫，死亡枕藉、十室九空。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_sy_1644",
+   "subject": "event:sy_1644",
+   "year": 1644,
+   "era": "崇祯十七",
+   "title": "疫与国亡",
+   "kind": "瘟疫",
+   "text": "李自成入京时京师大疫未息，明亡于疫、饥、兵交攻。",
+   "place": "beijing"
+  }
+ ]
+}

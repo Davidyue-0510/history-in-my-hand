@@ -345,6 +345,15 @@ def build_scene(sc):
     elif sc.get("region") not in LIAODONG_REGIONS:
         bundle["control"] = []  # 显式空：前端据此隐藏控制层
 
+    # 灾情影响范围（v0.49 · 独立灾难模型）：data/<dir>/impact.json →
+    #   bundle.impact / impact_years / impact_events；seats 直接用场景 places（带坐标）。
+    imp_path = os.path.join(dirpath, "impact.json")
+    if os.path.exists(imp_path):
+        imp = load_json(dirpath, "impact.json")
+        bundle["impact"] = imp.get("impact", [])
+        bundle["impact_years"] = imp.get("years")
+        bundle["impact_events"] = imp.get("events", [])
+
     # 分支时间线（v0.31）：
     #   data/<dir>/timelines.json 定义可选的因果分支。
     #   断言可带 timeline 字段（缺省="main"），控制权数据同理。

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 133 个切片
+// 权威数据源：data/scenes.json 注册的 138 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 133 个切片",
+  "slice": "multi-scene · 138 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -272,6 +272,11 @@ window.SANDBOX_DATA = {
   "lingqu",
   "zhaozhou",
   "sui_daxing",
+  "mingmo_jihuang",
+  "chongzhen_han",
+  "chongzhen_huangzai",
+  "mingmo_shuyi",
+  "kaifeng_juekou",
   "wuwang",
   "sui_mie_chen",
   "chenqiao",
@@ -20565,6 +20570,131 @@ window.SANDBOX_DATA = {
     "inference": 3
    }
   },
+  "mingmo_jihuang": {
+   "key": "mingmo_jihuang",
+   "scene_id": "mingmo_jihuang",
+   "title": "明末大饥荒",
+   "dossier_label": "明末大饥荒",
+   "subtitle": "1628—1644 · 崇祯大饥",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=mingmo_jihuang",
+   "primary_place": "yanan",
+   "vocab_pack": "inline:mingmo_jihuang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 2,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "chongzhen_han": {
+   "key": "chongzhen_han",
+   "scene_id": "chongzhen_han",
+   "title": "崇祯大旱",
+   "dossier_label": "崇祯大旱",
+   "subtitle": "1637—1643 · 华北连旱",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=chongzhen_han",
+   "primary_place": "taiyuan",
+   "vocab_pack": "inline:chongzhen_han",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "chongzhen_huangzai": {
+   "key": "chongzhen_huangzai",
+   "scene_id": "chongzhen_huangzai",
+   "title": "崇祯蝗灾",
+   "dossier_label": "崇祯蝗灾",
+   "subtitle": "1637—1641 · 华北连蝗",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=chongzhen_huangzai",
+   "primary_place": "kaofeng",
+   "vocab_pack": "inline:chongzhen_huangzai",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "mingmo_shuyi": {
+   "key": "mingmo_shuyi",
+   "scene_id": "mingmo_shuyi",
+   "title": "明末鼠疫",
+   "dossier_label": "明末鼠疫",
+   "subtitle": "1641—1644 · 华北大疫",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=mingmo_shuyi",
+   "primary_place": "baoding",
+   "vocab_pack": "inline:mingmo_shuyi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 0,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
+  "kaifeng_juekou": {
+   "key": "kaifeng_juekou",
+   "scene_id": "kaifeng_juekou",
+   "title": "开封河决",
+   "dossier_label": "开封河决",
+   "subtitle": "1642 · 崇祯十五年",
+   "kind": "disaster",
+   "region": "ecology",
+   "page": "county.html?scene=kaifeng_juekou",
+   "primary_place": "kaofeng",
+   "vocab_pack": "inline:kaifeng_juekou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 1,
+    "assert": 3,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 3,
+    "inference": 0
+   }
+  },
   "wuwang": {
    "key": "wuwang",
    "scene_id": "wuwang",
@@ -21660,6 +21790,11 @@ window.SANDBOX_DATA = {
   "lingqu": "slices/lingqu.js",
   "zhaozhou": "slices/zhaozhou.js",
   "sui_daxing": "slices/sui_daxing.js",
+  "mingmo_jihuang": "slices/mingmo_jihuang.js",
+  "chongzhen_han": "slices/chongzhen_han.js",
+  "chongzhen_huangzai": "slices/chongzhen_huangzai.js",
+  "mingmo_shuyi": "slices/mingmo_shuyi.js",
+  "kaifeng_juekou": "slices/kaifeng_juekou.js",
   "wuwang": "slices/wuwang.js",
   "sui_mie_chen": "slices/sui_mie_chen.js",
   "chenqiao": "slices/chenqiao.js",
@@ -24814,6 +24949,8 @@ window.SANDBOX_DATA = {
     "chenqiao",
     "chensheng",
     "chibi",
+    "chongzhen_han",
+    "chongzhen_huangzai",
     "dalinghe",
     "diaoyucheng",
     "dingwu",
@@ -24854,6 +24991,7 @@ window.SANDBOX_DATA = {
     "juehua1626",
     "juehua",
     "julu",
+    "kaifeng_juekou",
     "kaiyuan",
     "keju",
     "kunyang",
@@ -24868,6 +25006,8 @@ window.SANDBOX_DATA = {
     "maling",
     "ming_fall",
     "mingmo_dangzheng",
+    "mingmo_jihuang",
+    "mingmo_shuyi",
     "mobai",
     "ningxia",
     "ningyuan",
@@ -25197,6 +25337,38 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:cb_cao",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chongzhen_han",
+    "name": "chongzhen_han",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ch_1637",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chongzhen_huangzai",
+    "name": "chongzhen_huangzai",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:hz_1637",
     "best_resonance": 0.0
    },
    {
@@ -25979,6 +26151,22 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "kaifeng_juekou",
+    "name": "kaifeng_juekou",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:kf_1642a",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "kaiyuan",
     "name": "开原",
     "total": 44,
@@ -26257,6 +26445,38 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.302,
     "best_event": "event:dangzheng_donglin",
     "best_resonance": 0.333
+   },
+   {
+    "scene": "mingmo_jihuang",
+    "name": "mingmo_jihuang",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:mj_1628",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "mingmo_shuyi",
+    "name": "mingmo_shuyi",
+    "total": 3,
+    "layers": {
+     "scholarship": 3
+    },
+    "party_counts": {
+     "综合史料": 3
+    },
+    "faction_counts": {},
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:sy_1641",
+    "best_resonance": 0.0
    },
    {
     "scene": "mobai",

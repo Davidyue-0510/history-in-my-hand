@@ -1,0 +1,76 @@
+{
+ "years": [
+  1637,
+  1643
+ ],
+ "events": [
+  {
+   "year": 1637,
+   "label": "陕西、山西率先亢旱"
+  },
+  {
+   "year": 1640,
+   "label": "旱极：白洋淀竭、九河俱干"
+  },
+  {
+   "year": 1642,
+   "label": "黄河水涸，人可徒步"
+  }
+ ],
+ "impact": [
+  {
+   "place_id": "changan",
+   "start": 1637,
+   "end": 1643,
+   "level": 3
+  },
+  {
+   "place_id": "taiyuan",
+   "start": 1637,
+   "end": 1643,
+   "level": 3
+  },
+  {
+   "place_id": "datong",
+   "start": 1637,
+   "end": 1643,
+   "level": 3
+  },
+  {
+   "place_id": "kaofeng",
+   "start": 1638,
+   "end": 1639,
+   "level": 2
+  },
+  {
+   "place_id": "kaofeng",
+   "start": 1640,
+   "end": 1643,
+   "level": 3
+  },
+  {
+   "place_id": "beijing",
+   "start": 1638,
+   "end": 1639,
+   "level": 1
+  },
+  {
+   "place_id": "beijing",
+   "start": 1640,
+   "end": 1643,
+   "level": 2
+  },
+  {
+   "place_id": "jinan",
+   "start": 1638,
+   "end": 1639,
+   "level": 1
+  },
+  {
+   "place_id": "jinan",
+   "start": 1640,
+   "end": 1643,
+   "level": 2
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "persons": [
+  {
+   "id": "lizicheng",
+   "name": "李自成",
+   "side": "明末义军领袖",
+   "influence": 0
+  },
+  {
+   "id": "gaoyingxiang",
+   "name": "高迎祥",
+   "side": "明末义军首领",
+   "influence": 0
+  }
+ ]
+}

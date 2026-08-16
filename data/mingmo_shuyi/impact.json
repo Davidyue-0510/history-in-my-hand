@@ -1,0 +1,52 @@
+{
+ "years": [
+  1641,
+  1644
+ ],
+ "events": [
+  {
+   "year": 1641,
+   "label": "鼠疫自山西起，沿驿道蔓延"
+  },
+  {
+   "year": 1643,
+   "label": "京师大疫，十室九空"
+  },
+  {
+   "year": 1644,
+   "label": "李自成入京，疫与国亡"
+  }
+ ],
+ "impact": [
+  {
+   "place_id": "taiyuan",
+   "start": 1641,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "baoding",
+   "start": 1642,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "beijing",
+   "start": 1643,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "kaofeng",
+   "start": 1642,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "jinan",
+   "start": 1642,
+   "end": 1644,
+   "level": 2
+  }
+ ]
+}

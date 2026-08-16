@@ -1,8 +1,8 @@
 {
-  "scenes_total": 133,
+  "scenes_total": 138,
   "historical": 56,
-  "fictional": 77,
-  "assertions_total": 1996,
+  "fictional": 82,
+  "assertions_total": 2011,
   "sources_total": 91,
   "factions_total": 9,
   "vocab_packs": [
@@ -691,6 +691,41 @@
       "factions": {}
     },
     {
+      "id": "mingmo_jihuang",
+      "title": "明末大饥荒",
+      "kind": "disaster",
+      "assertions": 3,
+      "factions": {}
+    },
+    {
+      "id": "chongzhen_han",
+      "title": "崇祯大旱",
+      "kind": "disaster",
+      "assertions": 3,
+      "factions": {}
+    },
+    {
+      "id": "chongzhen_huangzai",
+      "title": "崇祯蝗灾",
+      "kind": "disaster",
+      "assertions": 3,
+      "factions": {}
+    },
+    {
+      "id": "mingmo_shuyi",
+      "title": "明末鼠疫",
+      "kind": "disaster",
+      "assertions": 3,
+      "factions": {}
+    },
+    {
+      "id": "kaifeng_juekou",
+      "title": "开封河决",
+      "kind": "disaster",
+      "assertions": 3,
+      "factions": {}
+    },
+    {
       "id": "wuwang",
       "title": "武王克商",
       "kind": "dynasty",
@@ -1094,6 +1129,11 @@
     "lingqu": "灵渠",
     "zhaozhou": "赵州桥",
     "sui_daxing": "隋大兴城",
+    "mingmo_jihuang": "明末大饥荒",
+    "chongzhen_han": "崇祯大旱",
+    "chongzhen_huangzai": "崇祯蝗灾",
+    "mingmo_shuyi": "明末鼠疫",
+    "kaifeng_juekou": "开封河决",
     "wuwang": "武王克商",
     "sui_mie_chen": "隋灭陈",
     "chenqiao": "陈桥兵变",

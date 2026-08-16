@@ -26,6 +26,8 @@
 | chenqiao | 11 | 2 | **0.000** | event:cq_960a（0.000） | gap 1 / record 8 / scholarship 2 |
 | chensheng | 13 | 2 | **0.000** | event:cs_209a（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |
 | chibi | 14 | 3 | **0.000** | event:cb_cao（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
+| chongzhen_han | 3 | 3 | **0.000** | event:ch_1637（0.000） | scholarship 3 |
+| chongzhen_huangzai | 3 | 3 | **0.000** | event:hz_1637（0.000） | scholarship 3 |
 | dalinghe | 13 | 6 | **0.000** | event:dalinghe_build（0.000） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 15 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 6 / scholarship 3 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
@@ -66,6 +68,7 @@
 | juehua1626 | 23 | 3 | **0.545** | event:juehua1626_ice（0.667） | gap 1 / record 21 / scholarship 1 |
 | juehua | 14 | 3 | **0.000** | event:juehua_garrison（0.000） | gap 1 / record 12 / scholarship 1 |
 | julu | 14 | 3 | **0.000** | event:jl_jz（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
+| kaifeng_juekou | 3 | 3 | **0.000** | event:kf_1642a（0.000） | scholarship 3 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | keju | 14 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 7 / scholarship 3 |
 | kunyang | 16 | 3 | **0.000** | event:ky_jz（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
@@ -80,6 +83,8 @@
 | maling | 15 | 3 | **0.000** | event:ml_jz（0.000） | gap 1 / record 11 / scholarship 3 |
 | ming_fall | 14 | 3 | **0.000** | event:mf_1627（0.000） | gap 1 / inference 4 / record 6 / scholarship 3 |
 | mingmo_dangzheng | 26 | 8 | **0.302** | event:dangzheng_donglin（0.333） | gap 2 / record 22 / scholarship 2 |
+| mingmo_jihuang | 3 | 3 | **0.000** | event:mj_1628（0.000） | scholarship 3 |
+| mingmo_shuyi | 3 | 3 | **0.000** | event:sy_1641（0.000） | scholarship 3 |
 | mobai | 15 | 3 | **0.000** | event:mb_chu（0.000） | gap 1 / record 11 / scholarship 3 |
 | ningxia | 14 | 3 | **0.417** | event:ningxia_weikun（0.667） | gap 1 / record 12 / scholarship 1 |
 | ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
@@ -196,6 +201,9 @@
 | event:cb_cao | chibi | **0.000** | 0/3 | 0.00 | 0.00 | 8 | 0 / 0 / 0 / 0 |
 | event:cb_jz | chibi | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:cb_lk | chibi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ch_1637 | chongzhen_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ch_1640 | chongzhen_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ch_1642 | chongzhen_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ch_jz | canhebei | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
 | event:ch_wei | canhebei | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ch_yan | canhebei | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -304,6 +312,9 @@
 | event:hx_after | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_legacy | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_main | huaxian | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |
+| event:hz_1637 | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:hz_1639 | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:hz_1644 | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jl_jz | julu | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:jl_qin | julu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jl_xiang | julu | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -326,6 +337,9 @@
 | event:jz_1722 | jiuzi | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jz_753 | jianzhen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:kf_1642a | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:kf_1642b | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:kf_1643 | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kj_1905 | keju | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:kj_605 | keju | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:kj_tang | keju | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
@@ -363,6 +377,9 @@
 | event:mf_1627 | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:mf_1644_3 | ming_fall | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:mf_1644_q | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:mj_1628 | mingmo_jihuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:mj_1640 | mingmo_jihuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:mj_1644 | mingmo_jihuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ml_jz | maling | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ml_qi | maling | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ml_wei | maling | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -392,6 +409,9 @@
 | event:songjin_songshan_fall | songjin | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 3 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:sy_1641 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:sy_1643 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:sy_1644 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_338 | shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:sy_350 | shangyang | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:sy_356 | shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |

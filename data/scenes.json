@@ -276,6 +276,11 @@
     "lingqu",
     "zhaozhou",
     "sui_daxing",
+    "mingmo_jihuang",
+    "chongzhen_han",
+    "chongzhen_huangzai",
+    "mingmo_shuyi",
+    "kaifeng_juekou",
     "wuwang",
     "sui_mie_chen",
     "chenqiao",
@@ -3340,6 +3345,100 @@
       ],
       "lead": "桓灵之际，李膺、陈蕃等太学清流抨击宦官专权，反被诬结党诽讪朝政，遭禁锢终身——史称党锢之祸。本切片把「清流士大夫」（颍川/汝南/太原/河东士族郡望）与「宦官集团」（无乡党、依附皇权）建模为两大利益集团，并把籍贯叠到地形。宦官无地方根基，正是「皇权 vs 士族」的结构性代理。",
       "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。"
+    },
+    "mingmo_jihuang": {
+      "kind": "disaster",
+      "region": "ecology",
+      "title": "明末大饥荒",
+      "dossier_label": "明末大饥荒",
+      "subtitle": "1628—1644 · 崇祯大饥",
+      "primary_place": "yanan",
+      "dossier_event": "event:mj_1628",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events",
+        "places"
+      ],
+      "lead": "崇祯元年（1628）陕西大旱继以大饥，延安、绥德「民食蓬草、继以树皮」，王嘉胤、高迎祥起兵，李自成辈皆饥民。饥荒随旱蝗向华北、长江流域蔓延，至崇祯十三年前后「赤地千里、人相食」，饥民「迎闯王、不纳粮」，成为明亡最深的底色。",
+      "parties_note": "灾情据张德二《中国三千年气象记录总集》及明末方志综合，死亡数字各家估计差异大，此处取学界折中。",
+      "subject_names": {
+        "person:lizicheng": "李自成",
+        "person:gaoyingxiang": "高迎祥"
+      }
+    },
+    "chongzhen_han": {
+      "kind": "disaster",
+      "region": "ecology",
+      "title": "崇祯大旱",
+      "dossier_label": "崇祯大旱",
+      "subtitle": "1637—1643 · 华北连旱",
+      "primary_place": "taiyuan",
+      "dossier_event": "event:ch_1637",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events",
+        "places"
+      ],
+      "lead": "崇祯十年至十六年（1637—1643）华北连年亢旱，陕西、山西、河南、北直隶、山东连旱五年以上。崇祯十三年（1640）白洋淀竭、九河俱干；翌年黄河水涸、巢湖见底，「旱极而蝗、蝗极而饥」，为近百年所未见。",
+      "parties_note": "据气象史学者张德二研究综合，旱区范围与旱情顶峰（1640 前后）采其考订。",
+      "subject_names": {
+        "person:zhangdeer": "张德二"
+      }
+    },
+    "chongzhen_huangzai": {
+      "kind": "disaster",
+      "region": "ecology",
+      "title": "崇祯蝗灾",
+      "dossier_label": "崇祯蝗灾",
+      "subtitle": "1637—1641 · 华北连蝗",
+      "primary_place": "kaofeng",
+      "dossier_event": "event:hz_1637",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events",
+        "places"
+      ],
+      "lead": "崇祯十年（1637）起华北连年蝗蝻，崇祯十二、十三年（1639—1640）达极盛，蝗区遍及甘肃、山西、陕西、河北、河南、山东、江苏、安徽、湖北、湖南，「飞蝗蔽天、禾稼瞬息一空」。至崇祯十七年（1644）河南蝗极，竟有「飞蝗食人」之载。",
+      "parties_note": "据张德二《中国三千年气象记录总集》及《明史·五行志》综合，蝗区范围采其考订。",
+      "subject_names": {
+        "person:zhangdeer2": "张德二"
+      }
+    },
+    "mingmo_shuyi": {
+      "kind": "disaster",
+      "region": "ecology",
+      "title": "明末鼠疫",
+      "dossier_label": "明末鼠疫",
+      "subtitle": "1641—1644 · 华北大疫",
+      "primary_place": "baoding",
+      "dossier_event": "event:sy_1641",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events",
+        "places"
+      ],
+      "lead": "崇祯十四年（1641）起鼠疫自山西蔓延，崇祯十六年（1643）京师大疫，「死亡枕藉、十室九空」。至崇祯十七年（1644）李自成入京时，北京已为大疫笼罩，瘟疫与兵祸、饥荒相叠加，加速了明王朝的崩塌。",
+      "parties_note": "鼠疫路径与规模据明末清初笔记（《烈皇小识》等）及当代医疗史研究综合，确切毒株与死亡数字不可确考。",
+      "subject_names": {}
+    },
+    "kaifeng_juekou": {
+      "kind": "disaster",
+      "region": "ecology",
+      "title": "开封河决",
+      "dossier_label": "开封河决",
+      "subtitle": "1642 · 崇祯十五年",
+      "primary_place": "kaofeng",
+      "dossier_event": "event:kf_1642a",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events",
+        "places"
+      ],
+      "lead": "崇祯十五年（1642）李自成三围开封，明军扒朱家寨河堤欲淹敌军，李自成反驱民夫扒马家口，秋汛一起两处决口合流，开封城一夜没于水，阖城军民三十七万，存者不足两万，三十余万溺死饿毙。此为天灾与人祸交叠的末世之痛。",
+      "parties_note": "据《汴围湿襟录》及明末笔记综合，死亡数字取「三十七万军民、存者不满两万」的折中记载。",
+      "subject_names": {
+        "person:lizicheng2": "李自成"
+      }
     }
   }
 }

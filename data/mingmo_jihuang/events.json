@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_mj_1628",
+   "subject": "event:mj_1628",
+   "year": 1628,
+   "era": "崇祯元",
+   "title": "陕西大饥",
+   "kind": "饥荒",
+   "text": "陕北连年亢旱，延安、绥德民食蓬草树皮，饥民蜂起，王嘉胤、高迎祥揭竿。",
+   "place": "yanan"
+  },
+  {
+   "id": "ev_mj_1640",
+   "subject": "event:mj_1640",
+   "year": 1640,
+   "era": "崇祯十三",
+   "title": "赤地千里",
+   "kind": "饥荒",
+   "text": "旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_mj_1644",
+   "subject": "event:mj_1644",
+   "year": 1644,
+   "era": "崇祯十七",
+   "title": "饥民从闯",
+   "kind": "饥荒",
+   "text": "「迎闯王、不纳粮」，饥民从李自成者如流水，明社遂倾。",
+   "place": "beijing"
+  }
+ ]
+}

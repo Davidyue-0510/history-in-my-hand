@@ -1,0 +1,34 @@
+{
+ "events": [
+  {
+   "id": "ev_kf_1642a",
+   "subject": "event:kf_1642a",
+   "year": 1642,
+   "era": "崇祯十五·六月",
+   "title": "双决黄河",
+   "kind": "河决",
+   "text": "明军扒朱家寨、李自成扒马家口，黄河两处决口。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_kf_1642b",
+   "subject": "event:kf_1642b",
+   "year": 1642,
+   "era": "九月十五",
+   "title": "开封城没",
+   "kind": "河决",
+   "text": "秋汛两决合流，开封一夜没水，三十余万军民溺毙。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_kf_1643",
+   "subject": "event:kf_1643",
+   "year": 1643,
+   "era": "崇祯十六",
+   "title": "下游泛灾",
+   "kind": "河决",
+   "text": "溃水泛溢山东、河南下游诸州县，田庐漂没。",
+   "place": "jinan"
+  }
+ ]
+}

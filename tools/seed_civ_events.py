@@ -311,7 +311,7 @@ civ({
    ("B230", "十七年", "灭韩", True), ("B228", "十九年", "灭赵", False), ("B225", "二十二年", "灭魏", False),
    ("B223", "二十四年", "灭楚", True), ("B222", "二十五年", "灭燕代", False), ("B221", "二十六年", "灭齐·一统", True),
  ],
- "persons": [("yingzheng", "嬴政", "秦"), ("wangjian", "王翦", "秦")],
+ "persons": [("yingzheng", "嬴政", "秦"), ("wangjian", "王翦", "秦"), ("xiangyan", "项燕", "楚")],
 })
 civ({
  "id": "ming_fall",
@@ -417,7 +417,7 @@ civ({
  "timeline": [
    ("184", "中平元", "张角举事", True), ("184", "中平元", "八州响应", False), ("185", "中平二", "广宗破·主力平", True),
  ],
- "persons": [("zhangjiao", "张角", "黄巾"), ("huangfusong", "皇甫嵩", "汉")],
+ "persons": [("zhangjiao", "张角", "黄巾"), ("zhangliang", "张梁", "黄巾"), ("huangfusong", "皇甫嵩", "汉")],
 })
 civ({
  "id": "lizicheng",
@@ -820,6 +820,9 @@ def build_one(d):
     write_json("events.json", events)
     write_json("sources.json", sources)
     write_json("persons.json", persons)
+    # 灾情影响范围（v0.49 独立灾难模型）：disaster 场景可带 impact 字段 → impact.json
+    if d.get("impact"):
+        write_json("impact.json", d["impact"])
     with open(os.path.join(ddir, "assertions.jsonl"), "w", encoding="utf-8") as f:
         for a_obj in assertions:
             f.write(json.dumps(a_obj, ensure_ascii=False) + "\n")

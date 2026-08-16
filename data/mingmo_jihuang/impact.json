@@ -1,0 +1,58 @@
+{
+ "years": [
+  1628,
+  1644
+ ],
+ "events": [
+  {
+   "year": 1628,
+   "label": "陕西大饥，延安民食蓬草树皮"
+  },
+  {
+   "year": 1640,
+   "label": "赤地千里，人相食"
+  },
+  {
+   "year": 1644,
+   "label": "饥民从闯，明社遂倾"
+  }
+ ],
+ "impact": [
+  {
+   "place_id": "yanan",
+   "start": 1628,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "changan",
+   "start": 1628,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "taiyuan",
+   "start": 1630,
+   "end": 1644,
+   "level": 2
+  },
+  {
+   "place_id": "kaofeng",
+   "start": 1635,
+   "end": 1644,
+   "level": 3
+  },
+  {
+   "place_id": "beijing",
+   "start": 1638,
+   "end": 1644,
+   "level": 1
+  },
+  {
+   "place_id": "jinan",
+   "start": 1638,
+   "end": 1644,
+   "level": 2
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "years": [
+  1642,
+  1643
+ ],
+ "events": [
+  {
+   "year": 1642,
+   "label": "明军与李自成军双决黄河"
+  },
+  {
+   "year": 1642,
+   "label": "秋汛合流，开封一夜没水"
+  },
+  {
+   "year": 1643,
+   "label": "溃水泛溢山东、河南下游"
+  }
+ ],
+ "impact": [
+  {
+   "place_id": "kaofeng",
+   "start": 1642,
+   "end": 1643,
+   "level": 3
+  },
+  {
+   "place_id": "zhengzhou",
+   "start": 1642,
+   "end": 1643,
+   "level": 2
+  },
+  {
+   "place_id": "jinan",
+   "start": 1642,
+   "end": 1643,
+   "level": 2
+  }
+ ]
+}
