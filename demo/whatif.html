@@ -19,11 +19,17 @@
   .layout{display:grid;grid-template-columns:320px 1fr 340px;height:calc(100% - 53px);min-height:0}
   aside{overflow:auto;padding:12px;border-right:1px solid var(--line);background:var(--panel)}
   aside.right{border-right:none;border-left:1px solid var(--line)}
-  main{position:relative;min-width:0;min-height:0;background:#c5dde6}
-  #mapWrap{position:absolute;inset:0;overflow:hidden;cursor:grab}
+  main{position:relative;min-width:0;min-height:0;background:var(--paper)}
+  #mapWrap{position:absolute;inset:0;overflow:hidden;cursor:grab;background:var(--paper)}
   #mapWrap.grabbing{cursor:grabbing}
-  #terrainCv{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:0}
   #map{position:absolute;inset:0;width:100%;height:100%;display:block;background:transparent;z-index:1}
+  /* 窄屏自适应：控件/地图/输出改为纵向堆叠，地图占主视区 */
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;grid-template-rows:auto 58vh auto;height:auto}
+    aside,aside.right{max-height:none;border-left:none;border-right:none;border-top:1px solid var(--line)}
+    main{height:58vh}
+    html,body{height:auto;overflow:auto}
+  }
   .zoom-badge{position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:12px;z-index:3}
   h2{font-size:13px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
   h2:first-child{margin-top:0}
@@ -101,7 +107,6 @@
   <!-- 中：地图 -->
   <main>
     <div id="mapWrap">
-      <canvas id="terrainCv"></canvas>
       <svg id="map" viewBox="0 0 1000 918" preserveAspectRatio="none"></svg>
     </div>
     <div class="legend" id="legend"></div>
@@ -128,9 +133,10 @@
 <script>
 /* ════════════════════════════════════════════════════════════════════
  * 反事实军事推演（whatif.html）
- * 复用 county.js v0.41 的地图内核（投影 / 真实 ASTER 地形 / NE 矢量底图），
- * 在其上叠加「假设军队 / 合兵 / 扎营 / 时间轴」，并做后勤 + 物理约束校验。
- * 古地图层：按项目约定暂留缺口，以现地图（真实高程地形 + NE 矢量）凑替。
+ * 地图内核（投影 / 视窗）faithful copy county.js，但地形改为「真实地形图栅格底图」：
+ * 直接显示复旦 CHGIS DemTopo 分层设色地形图（烘焙好高程配色，海洋已重染为中性色去蓝），
+ * 不再用合成 ASTER hillshade。其上叠加「假设军队 / 合兵 / 扎营 / 时间轴」+ 后勤物理校验。
+ * 古地图层：按项目约定暂留缺口，以现地形图凑替。
  * ════════════════════════════════════════════════════════════════════ */
 (function(){
   'use strict';
@@ -199,7 +205,7 @@
   var SVGNS='http://www.w3.org/2000/svg';
   var wrap=document.getElementById('mapWrap');
   var svg=document.getElementById('map');
-  var cv=document.getElementById('terrainCv');
+  /* 地形改用真实 DemTopo 栅格底图（SVG <image>），不再需要 canvas */
   var W=1000,H=918;
   var LON0,LON1,LAT0,LAT1;
   function computeBox(){
@@ -217,64 +223,17 @@
     if(spanLon<wantLon){ var d=(wantLon-spanLon)/2; mnLon-=d; mxLon+=d; }
     else { var d2=(spanLon-wantLon)/2/cos*(H/W); /* noop guard */ }
     LON0=mnLon;LON1=mxLon;LAT0=mnLat;LAT1=mxLat;
+    // 把视野限制在 DemTopo 底图范围内，保证底图始终覆盖视区（不露出无图空白）
+    LON0=Math.max(DEMTOPO.lonMin,LON0);LON1=Math.min(DEMTOPO.lonMax,LON1);
+    LAT0=Math.max(DEMTOPO.latMin,LAT0);LAT1=Math.min(DEMTOPO.latMax,LAT1);
   }
   function px(lon){ return (lon-LON0)/(LON1-LON0)*W; }
   function py(lat){ return (LAT1-lat)/(LAT1-LAT0)*H; }
 
-  var RAMP=[
-    [0,[188,214,168]],[50,[198,222,162]],[200,[216,224,158]],[400,[233,222,150]],
-    [600,[226,202,132]],[800,[214,182,120]],[1000,[198,160,102]],[1200,[178,138,86]],
-    [1500,[152,112,72]],[2500,[122,92,66]],[4000,[150,140,132]]
-  ];
-  var SEA=[197,221,230];
-  function rampColor(e){ if(e<=0)return RAMP[0][1];
-    for(var i=1;i<RAMP.length;i++){ if(e<=RAMP[i][0]){ var a=RAMP[i-1],b=RAMP[i],t=(e-a[0])/(b[0]-a[0]||1);
-      return [a[1][0]+(b[1][0]-a[1][0])*t,a[1][1]+(b[1][1]-a[1][1])*t,a[1][2]+(b[1][2]-a[1][2])*t]; } }
-    return RAMP[RAMP.length-1][1]; }
-  var tImg=null;
-  function buildLandMask(){
-    if(!TG||!BM||!BM.land||!BM.land.length) return null;
-    var nx=TG.nx,ny=TG.ny,step=TG.step,lon0=TG.lon0,lat0=TG.lat0,m=new Uint8Array(nx*ny);
-    function inRing(lon,lat,ring){var inside=false;for(var k=0,j=ring.length-1;k<ring.length;j=k++){var xi=ring[k][0],yi=ring[k][1],xj=ring[j][0],yj=ring[j][1];
-      if(((yi>lat)!==(yj>lat))&&(lon<(xj-xi)*(lat-yi)/(yj-yi||1e-12)+xi))inside=!inside;}return inside;}
-    function inGeom(lon,lat,g){if(g.type==='Polygon'){if(!inRing(lon,lat,g.coordinates[0]))return false;for(var h=1;h<g.coordinates.length;h++)if(inRing(lon,lat,g.coordinates[h]))return false;return true;}
-      if(g.type==='MultiPolygon'){for(var p=0;p<g.coordinates.length;p++)if(inGeom(lon,lat,{type:'Polygon',coordinates:g.coordinates[p]}))return true;}return false;}
-    for(var iy=0;iy<ny;iy++){var lat=lat0+iy*step;for(var ix=0;ix<nx;ix++){var lon=lon0+ix*step;for(var fi=0;fi<BM.land.length;fi++){if(inGeom(lon,lat,BM.land[fi].g)){m[iy*nx+ix]=1;break;}}}}
-    return m;
-  }
-  function buildTerrainImage(){
-    if(!TG) return null;
-    var nx=TG.nx,ny=TG.ny,E=TG.elev,c=document.createElement('canvas');c.width=nx;c.height=ny;
-    var ctx=c.getContext('2d'),img=ctx.createImageData(nx,ny);
-    var midLat=TG.lat0+(ny-1)*TG.step/2,cellY=TG.step*111320,cellX=TG.step*111320*Math.cos(midLat*Math.PI/180);
-    var ZF=2.2,zen=(90-45)*Math.PI/180,azm=(360-315+90)*Math.PI/180;
-    function z(ix,iy){ix=Math.max(0,Math.min(nx-1,ix));iy=Math.max(0,Math.min(ny-1,iy));var v=E[iy*nx+ix];return v==null?0:v;}
-    var landMask=buildLandMask();
-    for(var iy=0;iy<ny;iy++)for(var ix=0;ix<nx;ix++){
-      var e=z(ix,iy),isSea=(e<=0),land=landMask?landMask[iy*nx+ix]:!isSea,row=(ny-1-iy),o=(row*nx+ix)*4;
-      if(!land){img.data[o]=SEA[0];img.data[o+1]=SEA[1];img.data[o+2]=SEA[2];img.data[o+3]=255;continue;}
-      var dzdx=((z(ix+1,iy-1)+2*z(ix+1,iy)+z(ix+1,iy+1))-(z(ix-1,iy-1)+2*z(ix-1,iy)+z(ix-1,iy+1)))/(8*cellX);
-      var dzdy=((z(ix-1,iy+1)+2*z(ix,iy+1)+z(ix+1,iy+1))-(z(ix-1,iy-1)+2*z(ix,iy-1)+z(ix+1,iy-1)))/(8*cellY);
-      var slope=Math.atan(ZF*Math.sqrt(dzdx*dzdx+dzdy*dzdy)),aspect=Math.atan2(dzdy,-dzdx);
-      var hs=Math.cos(zen)*Math.cos(slope)+Math.sin(zen)*Math.sin(slope)*Math.cos(azm-aspect);hs=Math.max(0,Math.min(1,hs));
-      var col=rampColor(e),f=0.72+0.42*hs;
-      img.data[o]=Math.max(0,Math.min(255,col[0]*f));img.data[o+1]=Math.max(0,Math.min(255,col[1]*f));img.data[o+2]=Math.max(0,Math.min(255,col[2]*f));img.data[o+3]=255;
-    }
-    ctx.putImageData(img,0,0);return c;
-  }
-  function drawTerrain(){
-    var ctx=cv.getContext('2d'),dpr=window.devicePixelRatio||1;
-    // 自检画布像素尺寸：布局就绪前 measure 可能拿到 0，绘制前按当前尺寸补测
-    var needW=Math.round(cw*dpr),needH=Math.round(ch*dpr);
-    if(cv.width!==needW||cv.height!==needH) measure();
-    ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);
-    if(!TG||!tImg)return;
-    var lonMax=TG.lon0+(TG.nx-1)*TG.step,latMax=TG.lat0+(TG.ny-1)*TG.step;
-    var gx=px(TG.lon0),gw=px(lonMax)-px(TG.lon0),gy=py(latMax),gh=py(TG.lat0)-py(latMax);
-    var s=(cw/view.w)*dpr;ctx.setTransform(s,0,0,s,-view.x*s,-view.y*s);
-    ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(tImg,gx,gy,gw,gh);
-    ctx.setTransform(1,0,0,1,0,0);
-  }
+  /* 真实地形图（复旦 CHGIS DemTopo 分层设色地形图，烘焙好高程配色；海洋已重染为中性色去蓝）。
+   * 经纬度范围即裁图范围：lon[114,133] lat[34,49]，与 equirectangular 投影一致，故可直接按投影落图。 */
+  var DEMTOPO = { src:'demtopo_liaodong.jpg', lonMin:114, lonMax:133, latMin:34, latMax:49 };
+  /* 地形改用真实 DemTopo 栅格底图（见 initMap 中 gTopo 的 <image>），不再用合成 ASTER hillshade / 蓝色海洋。 */
   function el(tag,attrs,parent){var n=document.createElementNS(SVGNS,tag);for(var k in attrs)if(attrs[k]!=null)n.setAttribute(k,attrs[k]);if(parent)parent.appendChild(n);return n;}
   function geomPath(g){if(!g)return'';var t=g.type,c=g.coordinates,d='';
     function ring(r){return'M'+r.map(function(p){return px(p[0])+' '+py(p[1]);}).join(' L ')+' Z';}
@@ -291,25 +250,17 @@
     return null;}
   function drawBase(){
     gBase.innerHTML='';if(!BM)return;
-    if(!TG||!tImg){
-      BM.land.forEach(function(f){el('path',{d:geomPath(f.g),fill:'#efe7d6',stroke:'none'},gBase);});
-    }
-    var gLake=el('g',{fill:'#bcd8e6',stroke:'#9cc4d6','stroke-width':0.5,'vector-effect':'non-scaling-stroke'},gBase);
-    BM.lakes.forEach(function(f){el('path',{d:geomPath(f.g)},gLake);});
-    BM.coastline.forEach(function(f){el('path',{d:geomPath(f.g),fill:'none',stroke:'#7c9aa8','stroke-width':1,'vector-effect':'non-scaling-stroke'},gBase);});
-    var gAdm=el('g',{fill:'none',stroke:'#c9bfa8','stroke-width':0.8,'vector-effect':'non-scaling-stroke'},gBase);
-    BM.admin1.forEach(function(f){el('path',{d:geomPath(f.g)},gAdm);
+    // 真实 DemTopo 底图已含海岸/河流/地形分层设色；此处仅叠加 NE 历史省界作时代参照（不与底图重复描线）
+    var gAdm=el('g',{fill:'none',stroke:'#b9a06a','stroke-width':0.7,opacity:.55,'vector-effect':'non-scaling-stroke'},gBase);
+    (BM.admin1||[]).forEach(function(f){el('path',{d:geomPath(f.g)},gAdm);
       if(f.n){var xy=geomLabelXY(f.g);if(xy){var t=el('text',{x:xy[0]+4,y:xy[1],'font-size':11,fill:'#8a7d5e'},gBase);t.textContent=f.n;}}});
-    var gRiv=el('g',{fill:'none',stroke:'#6f9fc0','stroke-linecap':'round','stroke-linejoin':'round','vector-effect':'non-scaling-stroke'},gBase);
-    BM.rivers.forEach(function(f){el('path',{d:geomPath(f.g),'stroke-width':1.4},gRiv);});
   }
 
   /* ── 视图（缩放/平移）── */
   var cw=1,ch=1,view={x:0,y:0,w:W,h:H},MIN_W=26,fitW=W,rafPending=false;
   function measure(){var r=wrap.getBoundingClientRect();
     cw=Math.max(1, r.width || (window.innerWidth-660));
-    ch=Math.max(1, r.height || (window.innerHeight-53));
-    var dpr=window.devicePixelRatio||1;cv.width=Math.round(cw*dpr);cv.height=Math.round(ch*dpr);}
+    ch=Math.max(1, r.height || (window.innerHeight-53));}
   function fitView(){var xs=[],ys=[];PLACES.forEach(function(p){xs.push(px(p.lon));ys.push(py(p.lat));});
     var b={x0:Math.min.apply(null,xs),x1:Math.max.apply(null,xs),y0:Math.min.apply(null,ys),y1:Math.max.apply(null,ys)},pad=40;
     var bw=(b.x1-b.x0)+pad*2,bh=(b.y1-b.y0)+pad*2,ar=cw/ch,w,h;
@@ -319,7 +270,7 @@
     view.x=Math.min(b.x1+slack-view.w,Math.max(b.x0-slack,view.x));view.y=Math.min(b.y1+slack-view.h,Math.max(b.y0-slack,view.y));}
   function applyView(){clampView();svg.setAttribute('viewBox',view.x.toFixed(2)+' '+view.y.toFixed(2)+' '+view.w.toFixed(2)+' '+view.h.toFixed(2));
     svg.style.setProperty('--u',(view.w/cw).toFixed(5));document.getElementById('zoomBadge').textContent=(fitW/view.w).toFixed(1)+'×';
-    drawTerrain();if(!rafPending){rafPending=true;requestAnimationFrame(function(){rafPending=false;renderOverlay();});}}
+    if(!rafPending){rafPending=true;requestAnimationFrame(function(){rafPending=false;renderOverlay();});}}
   wrap.addEventListener('wheel',function(e){e.preventDefault();var k=e.deltaY>0?1.14:1/1.14;
     var r=wrap.getBoundingClientRect(),a={x:view.x+(e.clientX-r.left)/r.width*view.w,y:view.y+(e.clientY-r.top)/r.height*view.h},before=view.w;
     view.w*=k;view.w=Math.min(fitW*1.6,Math.max(MIN_W,view.w));k=view.w/before;view.h=view.w*(ch/cw);
@@ -332,12 +283,20 @@
   function endDrag(e){if(!drag)return;var moved=drag.moved,cap=drag.cap,pid=drag.pid;drag=null;wrap.classList.remove('grabbing');if(cap){try{wrap.releasePointerCapture(pid);}catch(x){}}if(moved>DRAG_TH)renderOverlay();}
   wrap.addEventListener('pointerup',endDrag);wrap.addEventListener('pointercancel',endDrag);
   wrap.addEventListener('dblclick',function(){fitView();applyView();});
-  window.addEventListener('resize',function(){measure();applyView();});
+  window.addEventListener('resize',function(){measure();fitView();applyView();});
 
   /* ── 叠加层（routes/camps/converge/armies）── */
-  var gBase,gRoutes,gCamps,gConv,gArmies,gLabels;
-  function initMap(){svg.innerHTML='';tImg=buildTerrainImage();gBase=el('g',{},svg);gRoutes=el('g',{},svg);gCamps=el('g',{},svg);
-    gConv=el('g',{},svg);gArmies=el('g',{},svg);gLabels=el('g',{},svg);drawBase();}
+  var gTopo,gBase,gRoutes,gCamps,gConv,gArmies,gLabels;
+  function initMap(){
+    svg.innerHTML='';
+    // 真实地形图栅格底图：按 DEMTOPO 经纬度范围投影到 SVG 用户坐标，随 viewBox 平移/缩放
+    gTopo=el('g',{},svg);
+    el('image',{href:DEMTOPO.src,x:px(DEMTOPO.lonMin),y:py(DEMTOPO.latMax),
+      width:px(DEMTOPO.lonMax)-px(DEMTOPO.lonMin),height:py(DEMTOPO.latMin)-py(DEMTOPO.latMax),
+      preserveAspectRatio:'none'},gTopo);
+    gBase=el('g',{},svg);gRoutes=el('g',{},svg);gCamps=el('g',{},svg);
+    gConv=el('g',{},svg);gArmies=el('g',{},svg);gLabels=el('g',{},svg);drawBase();
+  }
   function arrow(x1,y1,x2,y2,color){var ang=Math.atan2(y2-y1,x2-x1),s=9;
     el('path',{d:'M'+x2+' '+y2+' L'+(x2-s*Math.cos(ang-0.4))+' '+(y2-s*Math.sin(ang-0.4))+' L'+(x2-s*Math.cos(ang+0.4))+' '+(y2-s*Math.sin(ang+0.4))+' Z',fill:color},gRoutes);}
   function lerp(A,B,t){return [A[0]+(B[0]-A[0])*t, A[1]+(B[1]-A[1])*t];}
@@ -488,7 +447,8 @@
       +'<div class="li"><span class="sw" style="background:#b23a48"></span>后金（敌军）</div>'
       +'<div class="li"><span class="sw" style="background:#e0a92b;border-radius:50%"></span>合兵点</div>'
       +'<div class="li"><span class="sw" style="background:#fff;border:1px solid #7d7464"></span>扎营点（白=近水）</div>'
-      +'<div class="li"><span class="sw" style="background:#c0392b;border-radius:50%"></span>扎营点（红=远水）</div>';
+      +'<div class="li"><span class="sw" style="background:#c0392b;border-radius:50%"></span>扎营点（红=远水）</div>'
+      +'<div class="li" style="margin-top:4px;color:#7d7464">底层为真实地形图（复旦 CHGIS DemTopo 分层设色，海洋已抹去蓝色），陆地配色即地图本色。</div>';
   }
 
   /* ── LLM 推演接口（预留 + 本地确定性回退）── */
@@ -556,7 +516,7 @@
 
   /* ── 变更重算 ── */
   function onChange(){
-    computeBox();fitView();measure();applyView();
+    measure();computeBox();fitView();applyView();
     renderChecks();renderLogi();
     // 时间轴范围
     var ds=armies.map(function(a){return parseD(a.depart);});var minD=Math.min.apply(null,ds),maxD=parseD(convergeBy);
