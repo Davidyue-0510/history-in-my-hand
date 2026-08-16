@@ -147,7 +147,7 @@
     t: 0,
     tab: 'yan',
     selection: null,
-    control: { on: false, year: 1621, scope: 'county', playing: false, compare: false },
+    control: { on: false, scope: 'county' },
     chgis: { on: true, ds: 'all', period: 'all', yearSync: false },
     battle: { on: true, routes: true },
     timeline: 'main',          // v0.31：当前分支时间线
@@ -221,7 +221,6 @@
     svg.style.setProperty('--u', (view.w / cw).toFixed(5));
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
-    if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
     if (!IS_ABSTRACT && state.control.on && window.BorderLayer && BorderLayer.isReady()) BorderLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
@@ -234,6 +233,17 @@
     var r = wrap.getBoundingClientRect();
     return { x: view.x + (clientX - r.left) / r.width * view.w,
              y: view.y + (clientY - r.top) / r.height * view.h };
+  }
+  // 朝地图某点（用户坐标 mx,my）放大/缩小 factor 倍（<1 放大）。供点击聚合泡展开使用。
+  function zoomToMapPoint(mx, my, factor) {
+    var before = view.w;
+    view.w *= factor;
+    view.w = Math.min(fitW * 1.6, Math.max(MIN_W, view.w));
+    var k = view.w / before;
+    view.h = view.w * (ch / cw);
+    view.x = mx - (mx - view.x) * k;
+    view.y = my - (my - view.y) * k;
+    applyView();
   }
   wrap.addEventListener('wheel', function (e) {
     e.preventDefault();
@@ -419,6 +429,25 @@
 
     if (IS_ABSTRACT) { drawAbstractGraph(STYLE); return; }
 
+    // 单独画一个地点（半径/命中区按屏幕像素恒定，避免放大后圆点过大）。
+    function drawSinglePlace(p, x, y, scale, g) {
+      var big = ['capital', 'city'].indexOf(p.type) >= 0;
+      var guan = p.type === 'guan';
+      var sr = big ? 6 : (guan ? 4.6 : 4);
+      el('circle', { cx: x, cy: y, r: sr / scale, class: 'pnode' + (big ? ' big' : ''),
+        fill: big ? '#2A2521' : '#FBF9F3', stroke: '#2A2521', 'stroke-width': 1.3,
+        'vector-effect': 'non-scaling-stroke' }, g);
+      var lb = el('text', { x: x + (big ? 7 : 5.5), y: y + 3.6,
+        class: 'place-label' + (big ? '' : ' minor') }, g);
+      lb.textContent = p.name.replace(/（.*?）/g, '');
+      if (state.terrain.elev && p.elev != null) {
+        el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, g)
+          .textContent = p.elev + ' m';
+      }
+      var hit = el('circle', { cx: x, cy: y, r: 14 / scale, fill: 'transparent', class: 'node-hit' }, g);
+      hit.addEventListener('click', function () { selectPlace(p.id); });
+    }
+
     D.edges.forEach(function (ed) {
       var a = PLACE[ed.from], b = PLACE[ed.to]; if (!a || !b) return;
       var st = STYLE[ed.type] || { color: '#9A9384', dash: null };
@@ -435,21 +464,60 @@
       lab.textContent = ed.label;
     });
 
+    // ══ 地点自适应聚合（v0.47，参考高德地图收藏夹交互）══
+    // 大范围浏览：就近地点合并成「带数字徽标的聚合泡」；局部放大（点间距拉开）自动拆散；
+    // 点击聚合泡朝该处放大展开。所有半径/字号按屏幕像素恒定（除以 scale），
+    // 解决“放大后圆点过大”与“缩小时一堆圆点挤在一起”两个问题。
+    var scale = cw / view.w;                 // 每用户单位对应的屏幕 px
+    var CLUSTER_PX = 34;                     // 同屏间距 < 34px 即合并
+    var pts = [];
     D.places.forEach(function (p) {
-      var big = ['capital', 'city'].indexOf(p.type) >= 0;
-      var x = px(p.lon), y = py(p.lat);
-      el('circle', { cx: x, cy: y, r: big ? 4.6 : (p.type === 'guan' ? 3.2 : 3),
-        class: 'pnode' + (big ? ' big' : ''), fill: big ? '#2A2521' : '#FBF9F3',
-        stroke: '#2A2521', 'stroke-width': 1.3, 'vector-effect': 'non-scaling-stroke' }, gNodes);
-      var lb = el('text', { x: x + (big ? 7 : 5.5), y: y + 3.6,
-        class: 'place-label' + (big ? '' : ' minor') }, gNodes);
-      lb.textContent = p.name.replace(/（.*?）/g, '');
-      if (state.terrain.elev && p.elev != null) {
-        el('text', { x: x + (big ? 7 : 5.5), y: y + 13, class: 'place-elev' }, gNodes)
-          .textContent = p.elev + ' m';
+      if (typeof p.lon !== 'number' || typeof p.lat !== 'number') return;
+      pts.push({ p: p, x: (px(p.lon) - view.x) * scale, y: (py(p.lat) - view.y) * scale });
+    });
+    pts.sort(function (a, b) { return a.p.id < b.p.id ? -1 : (a.p.id > b.p.id ? 1 : 0); });
+    var clusters = [];
+    pts.forEach(function (it) {
+      var best = -1, bestD = CLUSTER_PX;
+      for (var ci = 0; ci < clusters.length; ci++) {
+        var c = clusters[ci];
+        var d = Math.hypot(c.x - it.x, c.y - it.y);
+        if (d < bestD) { bestD = d; best = ci; }
       }
-      var hit = el('circle', { cx: x, cy: y, r: 13, fill: 'transparent', class: 'node-hit' }, gNodes);
-      hit.addEventListener('click', function () { selectPlace(p.id); });
+      if (best >= 0) {
+        var c2 = clusters[best], n = c2.members.length;
+        c2.x = (c2.x * n + it.x) / (n + 1); c2.y = (c2.y * n + it.y) / (n + 1);
+        c2.members.push(it);
+      } else {
+        clusters.push({ x: it.x, y: it.y, members: [it] });
+      }
+    });
+    // 无坐标地点：按旧样式单独画，不参与聚合
+    D.places.forEach(function (p) {
+      if (typeof p.lon === 'number' && typeof p.lat === 'number') return;
+      drawSinglePlace(p, px(p.lon), py(p.lat), scale, gNodes);
+    });
+    clusters.forEach(function (c) {
+      var ux = view.x + c.x / scale, uy = view.y + c.y / scale;
+      if (c.members.length === 1) {
+        drawSinglePlace(c.members[0].p, ux, uy, scale, gNodes);
+      } else {
+        var n = c.members.length;
+        var sr = Math.min(26, 13 + n * 0.4);        // 气泡屏幕半径 px
+        var r = sr / scale;
+        if (n >= 5) el('circle', { cx: ux, cy: uy, r: r + 3 / scale, fill: 'none',
+          stroke: '#4A6FA5', 'stroke-width': 1, 'stroke-opacity': .4,
+          'vector-effect': 'non-scaling-stroke' }, gNodes);
+        el('circle', { cx: ux, cy: uy, r: r, fill: '#4A6FA5', stroke: '#FBF9F3',
+          'stroke-width': 2, 'vector-effect': 'non-scaling-stroke', class: 'node-hit' }, gNodes);
+        var t = el('text', { x: ux, y: uy + (sr * 0.36) / scale, 'text-anchor': 'middle',
+          fill: '#FBF9F3', 'font-weight': '700', 'font-size': (sr * 0.9) / scale }, gNodes);
+        t.textContent = n;
+        var hit = el('circle', { cx: ux, cy: uy, r: Math.max(r, 16 / scale),
+          fill: 'transparent', class: 'node-hit' }, gNodes);
+        el('title', {}, hit).textContent = n + ' 处地点（点击放大展开）';
+        hit.addEventListener('click', function () { zoomToMapPoint(ux, uy, 0.5); });
+      }
     });
 
     // 派系足迹着色（v0.20）：选中某派系时，其断言覆盖的地点加派系色虚线halo
@@ -550,7 +618,7 @@
           }
           g.addEventListener('click', function () {
             state.activeFaction = fid;
-            renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+            renderParties(); renderFactions(); drawDynamic();
           });
         });
       });
@@ -747,94 +815,19 @@
     });
   }
 
-  /* ═══════════ 事件时间轴 + 控制层联动（v0.27b） ═══════════ */
-  /* 原版事件圆点轨道 + 点击切事件 → 控制层年份自动跟随到该事件年。
-     控制层 toggle 保留在底栏右侧；legend 随事件年动态生成。 */
-  function renderEventTimeline() {
-    var track = document.getElementById('tlTrack');
-    var eraEl = document.getElementById('dateEra');
-    var labelEl = document.getElementById('dateLabel');
-    var yearEl = document.getElementById('utYear');
-    track.innerHTML = '';
-    var evs = D.events || [];
-    var curYr = state.control.year;
-    if (!evs.length) {
-      eraEl.textContent = '—'; labelEl.textContent = '—'; if (yearEl) yearEl.textContent = '';
-      return;
-    }
-    var n = evs.length;
+  /* ═══════════ 事件导航（v0.47） ═══════════
+   * 原「疆域时间轴」（年份滑块驱动控制层变色 + CHGIS 按年过滤）已按计划移除：
+   * 控制层（实控区随年份变化）与 CHGIS 边界年份过滤都不再随年份动画。
+   * 事件高亮/导航改由左侧事件列表（renderEvents，走 state.t）承担，不再依赖底部年份轨道。 */
 
-    evs.forEach(function (ev, i) {
-      var node = document.createElement('div');
-      var cls = 'tl-node'; if (ev.kind === '战事') cls += ' key';
-      if (ev.year === curYr) cls += ' now';
-      node.className = cls;
-      node.style.left = (n > 1 ? (i / (n - 1) * 100) : 50) + '%';
-      // 垂直居中于轨道线 + 水平偏移（首尾不超出边界）
-      if (i === 0) node.style.transform = 'translate(-14px, -50%)';
-      else if (i === n - 1) node.style.transform = 'translate(calc(-100% + 14px), -50%)';
-      else node.style.transform = 'translate(-50%, -50%)';
-      node.innerHTML = '<div class="tl-dot"></div><div class="tl-cap">' + ev.era + '</div>';
-      node.title = ev.title;
-      node.addEventListener('click', function () {
-        state.control.year = ev.year || state.control.year;
-        syncTimeline(state.control.year);
-        refresh();
-      });
-      track.appendChild(node);
-    });
-
-    var cur = evs.find(function (ev) { return ev.year === curYr; });
-    if (!cur) {
-      // 选最近的事件
-      var bd = 1e9;
-      evs.forEach(function (ev) { var d = Math.abs((ev.year||0) - curYr); if (d < bd) { bd = d; cur = ev; } });
-    }
-    eraEl.textContent = cur ? cur.era : '—';
-    labelEl.textContent = cur ? cur.title : '';
-    if (yearEl) yearEl.textContent = cur ? String(cur.year) : '';
-  }
-
-  function syncTimeline(year) {
-    state.control.year = year;
-    syncStateT();
-    if (state.control.on && window.ControlLayer && ControlLayer.isReady()) {
-      ControlLayer.draw(state.control.year, state.control.scope);
-      renderControlLegend();
-    }
-    // CHGIS 年份联动：开启「按时间轴年份过滤」时，只显示该年存在的政区
-    if (state.chgis.on && state.chgis.yearSync && window.ChgisLayer && ChgisLayer.isReady()) {
-      ChgisLayer.setFilter({ year: year });
-    }
-    // 注：战例图层（行军路线）与疆域时间轴解耦——不再随疆域滑块按年份过滤，
-    // 由底部独立的「行军路线时间轴」按日期回放（见 wireRouteTimeline）。
-    renderEventTimeline();
-  }
-
-  // 将 state.t 同步到当前 control.year（事件列表高亮 + 页签 都走年份匹配）
-  function syncStateT() {
-    var evs = D.events || []; if (!evs.length) return;
-    var yr = state.control.year;
-    for (var i = 0; i < evs.length; i++) {
-      if (evs[i].year === yr) { state.t = i; return; }
-    }
-    // 没有精确匹配 → 选年份最近的事件
-    var best = 0, bd = 1e9;
-    for (i = 0; i < evs.length; i++) {
-      var d = Math.abs((evs[i].year || 0) - yr);
-      if (d < bd) { bd = d; best = i; }
-    }
-    state.t = best;
-  }
   function renderEvents() {
     var lead = document.getElementById('evLead');
     lead.innerHTML = CFG.lead || META.lead ||
-      '本切片为辽东走廊的县级 LOD 视图：建置沿革与关键战事并列，点时间轴或左栏跳转。';
+      '本切片为辽东走廊的县级 LOD 视图：建置沿革与关键战事并列，点左栏事件跳转。';
     var box = document.getElementById('eventsPane'); box.innerHTML = '';
-    var curYr = state.control.year;
     D.events.forEach(function (ev, i) {
       var n = document.createElement('div');
-      var isSel = (ev.year != null && ev.year === curYr);
+      var isSel = (i === state.t);
       n.className = 'ev' + (isSel ? ' sel' : '');
       n.innerHTML = '<div class="ev-when"><div class="era">' + ev.era + '</div>' +
         '<div class="yr">' + (ev.year || '') + '</div></div>' +
@@ -842,8 +835,9 @@
         '<span class="ev-kind">' + ev.kind + '</span></div>' +
         '<div class="ev-text">' + ev.text + '</div></div>';
       n.addEventListener('click', function () {
-        state.control.year = ev.year || state.control.year;
+        state.t = i;
         refresh();
+        goTab('yan');
       });
       box.appendChild(n);
     });
@@ -1000,7 +994,7 @@
       e.stopPropagation();
       state.factionCompare = !state.factionCompare;
       state.activeFaction = null;
-      renderFactions(); renderParties(); renderEventTimeline(); drawDynamic();
+      renderFactions(); renderParties(); drawDynamic();
     });
     head.appendChild(toggle);
     box.appendChild(head);
@@ -1032,7 +1026,7 @@
       clear.addEventListener('click', function (e) {
         e.stopPropagation();
         state.activeFaction = null;
-        renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+        renderParties(); renderFactions(); drawDynamic();
       });
       box.appendChild(clear);
     }
@@ -1055,7 +1049,7 @@
       if (!active) {
         row.addEventListener('click', function () {
           state.activeFaction = fid;
-          renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+          renderParties(); renderFactions(); drawDynamic();
         });
       } else {
         // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并
@@ -1625,32 +1619,16 @@
     if (pn && note) pn.textContent = note;
   })();
 
-  /* ═══════════ 统一时间轴 · 控制层联动 ═══════════ */
+  /* ═══════════ 真实政区界线层驱动（v0.47） ═══════════
+   * 「控制层（实控区随年份变化）」已按计划移除。此处只驱动 BorderLayer：
+   * 勾选「真实政区界线」后按「县界/国界」scope 懒加载并渲染 CHGIS 真实几何。 */
   function drawControl() {
-    if (!window.ControlLayer) return;
-    if (!IS_ABSTRACT && state.control.on && ControlLayer.isReady()) {
-      // 跨时间线对比模式：主线（棋盘虚线）vs 分支（实线）
-      if (state.control.compare && state.timeline !== 'main'
-          && ControlLayer.drawDiff && _branchCtrlData) {
-        ControlLayer.drawDiff(state.control.year, state.control.scope, _branchCtrlData);
-      } else if (state.control.compare && ControlLayer.drawMulti) {
-        ControlLayer.drawMulti(state.control.year, state.control.scope);
-      } else {
-        ControlLayer.draw(state.control.year, state.control.scope);
-      }
-      renderControlLegend();
-    } else {
-      ControlLayer.clear();
-      var lg = document.getElementById('ctrlLegend');
-      if (lg) lg.innerHTML = '';
-    }
-    // v0.46：真实 CHGIS 政区边界随「县界/国界」切换（替换原 Voronoi 示意辖区）。
-    // ensure() 懒加载：只有真正打开图层才拉那 2MB GeoJSON。
-    if (!IS_ABSTRACT && state.control.on && window.BorderLayer) {
+    if (IS_ABSTRACT || !window.BorderLayer) return;
+    if (state.control.on) {
       BorderLayer.setScope(state.control.scope);
       BorderLayer.ensure();
       BorderLayer.repaint();
-    } else if (window.BorderLayer) {
+    } else {
       BorderLayer.clear();
     }
   }
@@ -1661,51 +1639,12 @@
     if (el2) el2.textContent = txt;
   }
 
-  var _branchCtrlData = null;  // v0.33 分支控制权数据（跨时间线对比用）
-  function renderControlLegend() {
-    var lg = document.getElementById('ctrlLegend');
-    if (!lg) return;
-    var parts = (window.ControlLayer.activeParties
-      ? window.ControlLayer.activeParties() : []).map(function (p) { return { p: p, t: p }; });
-    var nation = state.control.scope === 'nation';
-    var tallyMap = nation ? ControlLayer.tally(state.control.year) : null;
-    var total = 0;
-    if (tallyMap) Object.keys(tallyMap).forEach(function (k) { total += tallyMap[k]; });
-    lg.innerHTML = parts.map(function (x) {
-      var c = ControlLayer.partyColor(x.p) || [120, 120, 120];
-      var label = x.t;
-      if (nation && tallyMap) {
-        var n = tallyMap[x.p] || 0;
-        if (total) label += ' ' + n;
-      }
-      return '<i style="background:rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')"></i>' + label;
-    }).join('');
-    if (nation) lg.innerHTML += ' 共 ' + total;
-  }
+  // v0.47：控制层（实控区随年份变化）及其图例已按计划移除；此处仅保留 BorderLayer 驱动（见 drawControl）。
   function wireControl() {
     var panel = document.getElementById('controlPanel');
-    if (!panel || IS_ABSTRACT || !window.ControlLayer || !ControlLayer.isReady()) {
-      if (panel) panel.style.display = 'none';
-      return;
-    }
+    if (!panel || IS_ABSTRACT) { if (panel) panel.style.display = 'none'; return; }
     panel.style.display = '';
-    var onBox = document.getElementById('ctrlOn');
-    var playBtn = document.getElementById('ctrlPlay');
-    var compareBox = document.getElementById('ctrlCompare');
-    var cy = ControlLayer.years();
-
-    if (state.control.year < cy[0] || state.control.year > cy[1]) state.control.year = cy[0];
-
-    // 虚实对比开关
-    if (compareBox) {
-      compareBox.checked = state.control.compare;
-      compareBox.addEventListener('change', function () {
-        state.control.compare = compareBox.checked;
-        drawControl();
-      });
-    }
-
-    // 控制层开关
+    var onBox = document.getElementById('borderOn');
     if (onBox) {
       onBox.checked = state.control.on;
       onBox.addEventListener('change', function () {
@@ -1713,7 +1652,6 @@
         drawControl();
       });
     }
-
     document.querySelectorAll('.cp-scope').forEach(function (b) {
       b.addEventListener('click', function () {
         state.control.scope = b.getAttribute('data-scope');
@@ -1722,67 +1660,6 @@
         drawControl();
       });
     });
-
-    if (playBtn) playBtn.addEventListener('click', function () {
-      if (state.control.playing) { stopControl(); return; }
-      if (!state.control.on) { state.control.on = true; if (onBox) onBox.checked = true; }
-      state.control.playing = true;
-      playBtn.textContent = '❚❚';
-      var lo = cy[0], hi = cy[1];
-      if (state.control.year >= hi) state.control.year = lo;
-      playBtn._t = setInterval(function () {
-        if (state.control.year >= hi) { stopControl(); return; }
-        state.control.year++;
-        syncTimeline(state.control.year);
-        drawControl();
-      }, 900);
-    });
-  }
-  // v0.31 分支时间线切换器（IIFE 顶层，与 wireControl/wireChgis 同级）
-  function wireTimeline() {
-    var tls = D.timelines;
-    var row = document.getElementById('timelineRow');
-    var sel = document.getElementById('timelineSel');
-    if (!tls || Object.keys(tls).length <= 1 || !row || !sel) return;
-    row.style.display = '';
-    var ids = Object.keys(tls);
-    sel.innerHTML = ids.map(function (id) {
-      return '<option value="' + id + '"' + (id === state.timeline ? ' selected' : '') + '>'
-        + tls[id].label + '</option>';
-    }).join('');
-    sel.addEventListener('change', function () {
-      state.timeline = sel.value;
-      // v0.32：切换分支时热加载模拟控制权数据
-      // v0.46 bugfix：原写 D.scene_id（恒 undefined，见 META.scene_id），分支模拟数据从未被加载过。
-      if (state.timeline !== 'main' && (META.scene_id || sceneKey) && window.ControlLayer) {
-        var simUrl = '../data/' + (META.scene_id || sceneKey) + '/control_sim_' + state.timeline + '.json';
-        fetch(simUrl).then(function (r) { if (r.ok) return r.json(); throw new Error('no sim'); })
-          .then(function (sim) {
-            _branchCtrlData = sim.control;  // 存分支数据供 drawDiff 使用
-            ControlLayer.reloadControl(sim.control, sim._years);
-            drawControl();
-            refresh();
-          }).catch(function () {
-            _branchCtrlData = null;
-            ControlLayer.reloadControl(D.control, D.control_years);
-            drawControl();
-            refresh();
-          });
-      } else {
-        if (state.timeline === 'main' && window.ControlLayer) {
-          ControlLayer.reloadControl(D.control, D.control_years);
-          drawControl();
-        }
-        refresh();
-      }
-    });
-  }
-
-  function stopControl() {
-    state.control.playing = false;
-    var pb = document.getElementById('ctrlPlay');
-    if (pb) pb.textContent = '▶';
-    if (pb && pb._t) { clearInterval(pb._t); pb._t = null; }
   }
 
   /* ═══════════ 战—朝关联（v0.46）：战争 ↔ 朝堂 ═══════════ */
@@ -1900,7 +1777,7 @@
           dot.addEventListener('click', function (ev) {
             ev.stopPropagation();
             state.activeFaction = (state.activeFaction === s.faction) ? null : s.faction;
-            renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+            renderParties(); renderFactions(); drawDynamic();
           });
           line.appendChild(dot);
         }
@@ -1913,9 +1790,8 @@
 
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
-    syncStateT();  // v0.27：事件高亮跟随当前 time year
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
-    renderSiblings(); renderEventTimeline(); drawDynamic();
+    renderSiblings(); drawDynamic();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderWarCourt(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
@@ -1923,16 +1799,6 @@
 
   /* ═══════════ 启动 ═══════════ */
   measure(); fitView(); initMap();
-  if (!IS_ABSTRACT && window.ControlLayer) {
-    ControlLayer.setup({
-      cv: controlCv, px: px, py: py,
-      getView: function () { return view; },
-      getCw: function () { return cw; },
-      getDpr: function () { return window.devicePixelRatio || 1; },
-      sceneData: D,                    // v0.24：场景自带 control.json 时用它；辽东切片 fallback 全局
-      partyColors: VOCAB.party_colors  // v0.24c：控制层配色单一真值（语境包）
-    });
-  }
   if (!IS_ABSTRACT && window.ChgisLayer) {
     ChgisLayer.setup({
       cv: chgisCv, px: px, py: py,
@@ -1974,7 +1840,6 @@
       onLoading: function () { setBorderNote('载入真实政区界线…'); },
       onReady: function (n, m) {
         if (state.control.on) { BorderLayer.setScope(state.control.scope); BorderLayer.repaint(); }
-        renderControlLegend();
         // 诚实标注：几何纪年与本切片纪年不同，必须写明，不冒充明代政区。
         setBorderNote('真实政区界线 · CHGIS ' + (m && m.year ? m.year : 1820) + ' 年府级底本（晚于本切片纪年，仅作真实政区参照）');
       },
@@ -2026,14 +1891,9 @@
       }
     });
   }
-  // 初始化年份：有控制层数据时取其下界，否则取首个事件年
-  if (!IS_ABSTRACT && window.ControlLayer && ControlLayer.isReady()) {
-    var cy = ControlLayer.years();
-    state.control.year = cy[0];
-  } else if (D.events && D.events.length) {
-    state.control.year = D.events[0].year || 1621;
-  }
-  applyView(false); wireControl(); wireTimeline(); wireChgis(); wireBattle(); wireRouteTimeline(); refresh();
+  // 初始化：默认选中首个事件（左侧事件列表高亮用 state.t）
+  if (D.events && D.events.length) state.t = 0;
+  applyView(false); wireControl(); wireChgis(); wireBattle(); wireRouteTimeline(); refresh();
 
   function wireChgis() {
     var box = document.getElementById('chgisToggle');
@@ -2069,15 +1929,6 @@
       periodSel.addEventListener('change', function () {
         state.chgis.period = periodSel.value;
         if (state.chgis.on && window.ChgisLayer) ChgisLayer.setFilter({ period: state.chgis.period });
-      });
-    }
-    var ys = document.getElementById('chgisYearSync');
-    if (ys) {
-      ys.checked = state.chgis.yearSync;
-      ys.addEventListener('change', function () {
-        state.chgis.yearSync = ys.checked;
-        if (!state.chgis.on || !window.ChgisLayer) return;
-        ChgisLayer.setFilter({ year: ys.checked ? state.control.year : null });
       });
     }
     // 点击地图：优先查战例，其次查政区（拖拽后不触发；与地图 pan 不冲突）

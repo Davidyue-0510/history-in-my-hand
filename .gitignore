@@ -32,6 +32,9 @@ tools/secrets/
 # 外部数据库（CBDB/CHGIS 等）运行时下载，非商用/不可再分发，绝不打包
 data/external/
 
+# GeoNames 原始抓取包（cities*/CN.zip 等，~91MB 仅本地用）；入库用 data/geo/gazetteer.json
+data/geo/geonames/
+
 # IDE / 临时产物
 .idea/
 lint_tmp.txt

@@ -65,9 +65,6 @@
             <option value="other">其他</option>
           </select>
         </div>
-        <label class="lay-list" style="margin-top:6px">
-          <input type="checkbox" id="chgisYearSync"> 按时间轴年份过滤（只显该年存在的政区）
-        </label>
         <div id="chgisStatus" class="src-meta" style="margin-top:6px">加载中…</div>
         <div class="hint">CHGIS 复旦镜像真实边界，按朝代着色；仅绘制视口内要素。T-S 在辽东视口 0 面（唐宋辽东不在核心政区）。</div>
       </div>
@@ -133,29 +130,11 @@
 
       <div class="control-panel" id="controlPanel" style="display:none">
         <div class="cp-row">
+          <label class="cp-toggle"><input type="checkbox" id="borderOn"> 真实政区界线</label>
           <button data-scope="county" class="cp-scope on">县界</button>
           <button data-scope="nation" class="cp-scope">国界</button>
-          <label class="cp-compare"><input type="checkbox" id="ctrlCompare"> 对比</label>
-          <button id="ctrlPlay" class="cp-play" title="播放">▶</button>
         </div>
-        <div class="cp-row" id="timelineRow" style="display:none">
-          <select id="timelineSel" class="cp-select"></select>
-        </div>
-        <div class="cp-note">界线=真实政区几何（CHGIS 复旦镜像）· 填色=治所控制归属近似</div>
         <div class="cp-note" id="borderNote">界线数据待载入（打开图层后拉取）</div>
-      </div>
-    </div>
-
-    <div id="timelineBar" class="timeline">
-      <div class="tl-header">
-        <span class="tl-era" id="dateEra">—</span>
-        <span id="dateLabel">—</span>
-        <span class="tl-year" id="utYear"></span>
-      </div>
-      <div id="tlTrack" class="tl-track"></div>
-      <div class="tl-foot">
-        <label class="tl-ctrl"><input type="checkbox" id="ctrlOn"> 疆域</label>
-        <span id="ctrlLegend" style="display:inline-flex;gap:8px;font-size:11px"></span>
       </div>
     </div>
 
@@ -225,7 +204,6 @@
 </div>
 
 <script src="data.js"></script>
-<script src="control_layer.js"></script>
 <script src="chgis_layer.js"></script>
 <script src="border_layer.js"></script>
 <script src="battle_layer.js"></script>
