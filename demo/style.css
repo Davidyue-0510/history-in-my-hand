@@ -271,10 +271,10 @@ body{
   cursor:grab; touch-action:none;
 }
 .map-wrap.grabbing{ cursor:grabbing; }
-#terrainCv{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+#terrainCv{ position:absolute; inset:0; width:100%; height:100%; display:block; z-index:1; }
 #controlCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; }
 #chgisCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; }
-#map{ position:absolute; inset:0; width:100%; height:100%; display:block; }
+#map{ position:absolute; inset:0; width:100%; height:100%; display:block; background:#c5dde6; }
 
 .map-tools{
   position:absolute; right:12px; top:12px;

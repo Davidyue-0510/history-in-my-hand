@@ -390,28 +390,30 @@
 
   function drawBase() {
     gBase.innerHTML = '';
-    var BM = SD.basemap;   // 共享 Natural Earth 矢量底图（v0.38：中国裁剪版）
-    if (BM) {
-      BM.land.forEach(function (f) {
+    // 优先用「场景级」basemap（含 admin1/rivers/lakes 全层，细节锐利）；
+    // 壳级共享 basemap（SD.basemap，v0.38 中国裁剪版）只含 land/coastline，作回退。
+    var BM = (D && D.basemap) ? D.basemap : (SD.basemap || {});
+    if (BM && (BM.land || BM.coastline || BM.admin1 || BM.rivers || BM.lakes)) {
+      (BM.land || []).forEach(function (f) {
         el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
       });
       var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
         'vector-effect': 'non-scaling-stroke' }, gBase);
-      BM.lakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
-      BM.coastline.forEach(function (f) {
+      (BM.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+      (BM.coastline || []).forEach(function (f) {
         el('path', { d: geomPath(f.g), fill: 'none', stroke: '#7c9aa8', 'stroke-width': 1,
           'vector-effect': 'non-scaling-stroke' }, gBase);
       });
       var gAdm = el('g', { fill: 'none', stroke: '#c9bfa8', 'stroke-width': 0.8,
         'vector-effect': 'non-scaling-stroke' }, gBase);
-      BM.admin1.forEach(function (f) {
+      (BM.admin1 || []).forEach(function (f) {
         el('path', { d: geomPath(f.g) }, gAdm);
         if (f.n) { var a = geomLabelXY(f.g); if (a) {
           var t = el('text', { x: a[0] + 4, y: a[1], class: 'adm-label' }, gBase); t.textContent = f.n; } }
       });
       var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
         'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
-      BM.rivers.forEach(function (f) {
+      (BM.rivers || []).forEach(function (f) {
         el('path', { d: geomPath(f.g), 'stroke-width': 1.4 }, gRiv);
         if (f.n) { var r = geomLabelXY(f.g); if (r) {
           var t = el('text', { x: r[0] + 4, y: r[1] - 3, class: 'river-label' }, gBase); t.textContent = f.n; } }

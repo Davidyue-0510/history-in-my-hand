@@ -76,44 +76,132 @@ def _in(lo, la, b):
     return b[0] <= lo <= b[2] and b[1] <= la <= b[3]
 
 
-def _clip_coords(coords, b, nd=3):
+def _liang_barsky(p1, p2, b):
+    """Liang-Barsky 线段裁剪：返回裁剪后端点 (a,c) 或 None（线段完全在 bbox 外）。
+    正确处理折线跨 bbox 边界的情形——在边界处插入交点，而不是简单地丢弃越界顶点。
+    曲线参数 t∈[0,1] 用标准四边 (左/右/下/上) 迭代；p,q 配对为
+    (-dx, x1-xmin) / (dx, xmax-x1) / (-dy, y1-ymin) / (dy, ymax-y1)。"""
+    xmin, ymin, xmax, ymax = b
+    x1, y1 = p1[0], p1[1]
+    x2, y2 = p2[0], p2[1]
+    dx = x2 - x1
+    dy = y2 - y1
+    t0, t1 = 0.0, 1.0
+    for p, q in ((-dx, x1 - xmin), (dx, xmax - x1),
+                 (-dy, y1 - ymin), (dy, ymax - y1)):
+        if p == 0:
+            if q < 0:
+                return None  # 与边界平行且在外侧
+            continue
+        r = q / p
+        if p < 0:  # 进入边：收紧 t0
+            if r > t1:
+                return None
+            if r > t0:
+                t0 = r
+        else:       # 离开边：收紧 t1
+            if r < t0:
+                return None
+            if r < t1:
+                t1 = r
+    a = [x1 + t0 * dx, y1 + t0 * dy]
+    c = [x1 + t1 * dx, y1 + t1 * dy]
+    return a, c
+
+
+def _clip_linestring(coords, b, nd=3):
+    """Liang-Barsky 折线裁剪：保留每段在 bbox 内的部分，跨边界处插入交点。"""
     out = []
-    for c in coords:
-        if _in(c[0], c[1], b):
-            out.append([round(c[0], nd), round(c[1], nd)])
+    for i in range(len(coords) - 1):
+        seg = _liang_barsky(coords[i], coords[i + 1], b)
+        if not seg:
+            continue
+        a, c = seg
+        ra = [round(a[0], nd), round(a[1], nd)]
+        rc = [round(c[0], nd), round(c[1], nd)]
+        if not out:
+            out.append(ra)
+        elif ra[0] != out[-1][0] or ra[1] != out[-1][1]:
+            # 上一段被裁掉，本段起点接续（避免断线）
+            out.append(ra)
+        out.append(rc)
     return out
 
 
-def _clip_ring(ring, b, nd=3):
-    r = _clip_coords(ring, b, nd)
-    return r if len(r) >= 4 else None
+def _sh_clip_ring(ring, b, nd=3):
+    """Sutherland-Hodgman 闭合多边形环裁剪，返回闭合环或 None。
+    正确处理大陆级多边形被小 bbox 裁剪的情形——沿边界插入交点，保留拓扑。
+    旧实现用「坐标级过滤」会让横跨 bbox 的大陆多边形退化为局部残片。"""
+    xmin, ymin, xmax, ymax = b
 
+    def inside(p, edge):
+        if edge == 0: return p[0] >= xmin
+        if edge == 1: return p[0] <= xmax
+        if edge == 2: return p[1] >= ymin
+        if edge == 3: return p[1] <= ymax
 
-def _clip_polygon(poly, b, nd=3):
-    outer = _clip_ring(poly[0], b, nd)
-    if not outer:
+    def cross(p1, p2, edge):
+        x1, y1 = p1[0], p1[1]
+        x2, y2 = p2[0], p2[1]
+        if edge == 0:
+            t = (xmin - x1) / (x2 - x1) if x2 != x1 else 0
+            return [xmin, y1 + t * (y2 - y1)]
+        if edge == 1:
+            t = (xmax - x1) / (x2 - x1) if x2 != x1 else 0
+            return [xmax, y1 + t * (y2 - y1)]
+        if edge == 2:
+            t = (ymin - y1) / (y2 - y1) if y2 != y1 else 0
+            return [x1 + t * (x2 - x1), ymin]
+        if edge == 3:
+            t = (ymax - y1) / (y2 - y1) if y2 != y1 else 0
+            return [x1 + t * (x2 - x1), ymax]
+
+    v = [list(p) for p in ring]
+    for edge in range(4):
+        nv = []
+        m = len(v)
+        if m == 0:
+            return None
+        for i in range(m):
+            curr = v[i]
+            prev = v[(i - 1) % m]
+            ci = inside(curr, edge)
+            pi = inside(prev, edge)
+            if ci:
+                if not pi:
+                    nv.append(cross(prev, curr, edge))
+                nv.append(curr)
+            elif pi:
+                nv.append(cross(prev, curr, edge))
+        v = nv
+    if len(v) < 3:
         return None
-    inners = [r for r in (_clip_ring(r, b, nd) for r in poly[1:]) if r]
-    return [outer] + inners
+    if v[0] != v[-1]:
+        v.append(v[0])
+    return [[round(p[0], nd), round(p[1], nd)] for p in v]
 
 
 def _clip_geom(g, b, nd=3):
     t = g["type"]
     c = g["coordinates"]
     if t == "Polygon":
-        p = _clip_polygon(c, b, nd)
-        return {"type": "Polygon", "coordinates": p} if p else None
+        rings = [r for r in (_sh_clip_ring(ring, b, nd) for ring in c) if r and len(r) >= 4]
+        return {"type": "Polygon", "coordinates": rings} if rings else None
     if t == "MultiPolygon":
-        ps = [p for p in (_clip_polygon(p, b, nd) for p in c) if p]
-        return {"type": "MultiPolygon", "coordinates": ps} if ps else None
+        polys = []
+        for poly in c:
+            rings = [r for r in (_sh_clip_ring(ring, b, nd) for ring in poly) if r and len(r) >= 4]
+            if rings:
+                polys.append(rings)
+        return {"type": "MultiPolygon", "coordinates": polys} if polys else None
     if t == "LineString":
-        l = _clip_coords(c, b, nd)
+        l = _clip_linestring(c, b, nd)
         return {"type": "LineString", "coordinates": l} if len(l) >= 2 else None
     if t == "MultiLineString":
-        ls = [l for l in (_clip_coords(l, b, nd) for l in c) if len(l) >= 2]
+        ls = [l for l in (_clip_linestring(line, b, nd) for line in c) if len(l) >= 2]
         return {"type": "MultiLineString", "coordinates": ls} if ls else None
     if t == "Point":
-        if _in(c[0], c[1], b):
+        if b[0] <= c[0] <= b[2] and b[1] <= c[1] <= b[3]:
             return {"type": "Point", "coordinates": [round(c[0], nd), round(c[1], nd)]}
         return None
     return None

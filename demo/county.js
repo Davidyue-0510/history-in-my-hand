@@ -311,6 +311,46 @@
     return RAMP[RAMP.length - 1][1];
   }
   var tImg = null;
+  // NE 陆地掩膜：把 BM.land 多边形栅格化到地形网格（v0.38+），让 hillshade 严格跟随 NE 海岸
+  // ——既消除「矩形贴片」观感，也保证地形层的海岸线与矢量底图完全对齐。
+  function buildLandMask() {
+    if (!TG || !BM || !BM.land || !BM.land.length) return null;
+    var nx = TG.nx, ny = TG.ny, step = TG.step, lon0 = TG.lon0, lat0 = TG.lat0,
+        m = new Uint8Array(nx * ny);
+    function inRing(lon, lat, ring) {
+      var inside = false;
+      for (var k = 0, j = ring.length - 1; k < ring.length; j = k++) {
+        var xi = ring[k][0], yi = ring[k][1], xj = ring[j][0], yj = ring[j][1];
+        if (((yi > lat) !== (yj > lat)) &&
+            (lon < (xj - xi) * (lat - yi) / (yj - yi || 1e-12) + xi)) inside = !inside;
+      }
+      return inside;
+    }
+    function inGeom(lon, lat, g) {
+      if (g.type === 'Polygon') {
+        if (!inRing(lon, lat, g.coordinates[0])) return false;
+        for (var h = 1; h < g.coordinates.length; h++)
+          if (inRing(lon, lat, g.coordinates[h])) return false; // 洞
+        return true;
+      }
+      if (g.type === 'MultiPolygon') {
+        for (var p = 0; p < g.coordinates.length; p++)
+          if (inGeom(lon, lat, { type: 'Polygon', coordinates: g.coordinates[p] })) return true;
+        return false;
+      }
+      return false;
+    }
+    for (var iy = 0; iy < ny; iy++) {
+      var lat = lat0 + iy * step;
+      for (var ix = 0; ix < nx; ix++) {
+        var lon = lon0 + ix * step;
+        for (var fi = 0; fi < BM.land.length; fi++) {
+          if (inGeom(lon, lat, BM.land[fi].g)) { m[iy * nx + ix] = 1; break; }
+        }
+      }
+    }
+    return m;
+  }
   function buildTerrainImage() {
     if (!TG) return null;
     var nx = TG.nx, ny = TG.ny, E = TG.elev, c = document.createElement('canvas');
@@ -323,6 +363,7 @@
       ix = Math.max(0, Math.min(nx - 1, ix)); iy = Math.max(0, Math.min(ny - 1, iy));
       var v = E[iy * nx + ix]; return v == null ? 0 : v;
     }
+    var landMask = buildLandMask();
     for (var iy = 0; iy < ny; iy++) for (var ix = 0; ix < nx; ix++) {
       var e = z(ix, iy);
       var dzdx = ((z(ix + 1, iy - 1) + 2 * z(ix + 1, iy) + z(ix + 1, iy + 1)) -
@@ -336,11 +377,19 @@
       var col = state.terrain.tint ? rampColor(e) : [239, 235, 223];
       var f = state.terrain.shade ? (0.62 + 0.52 * hs) : 1;
       if (e <= 0) f = 1;
+      var isSea = (e <= 0);
+      // 陆地判定：NE 矢量多边形掩膜优先（保证海岸与底图对齐），无掩膜时回落高程
+      var land = landMask ? landMask[iy * nx + ix] : !isSea;
+      // 边缘羽化（~12 格）：平滑 NE 陆地延伸到网格外缘时的硬截断
+      var edgeMin = Math.min(ix, iy, nx - 1 - ix, ny - 1 - iy);
+      var fade = Math.min(1, edgeMin / 12);
+      // 非陆地 → 全透明；陆地 → 半透明叠加（让 NE 省界/河流/边墙透出）
+      var alpha = land ? Math.round(255 * 0.55 * fade) : 0;
       var row = (ny - 1 - iy), o = (row * nx + ix) * 4;
       img.data[o] = Math.max(0, Math.min(255, col[0] * f));
       img.data[o + 1] = Math.max(0, Math.min(255, col[1] * f));
       img.data[o + 2] = Math.max(0, Math.min(255, col[2] * f));
-      img.data[o + 3] = 255;
+      img.data[o + 3] = alpha;
     }
     ctx.putImageData(img, 0, 0);
     return c;
@@ -349,7 +398,8 @@
     if (IS_ABSTRACT) { var c = cv.getContext('2d'); c.clearRect(0, 0, cv.width, cv.height); return; }
     var ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
-    ctx.fillStyle = '#EFECE2'; ctx.fillRect(0, 0, cv.width, cv.height);
+    // 透明底：v0.38+ 与 NE 矢量底图无缝合成（陆地半透明叠加、海面全透由 #map 背景海色承担）
+    ctx.clearRect(0, 0, cv.width, cv.height);
     if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) return;
     var lonMax = TG.lon0 + (TG.nx - 1) * TG.step, latMax = TG.lat0 + (TG.ny - 1) * TG.step;
     var gx = px(TG.lon0), gw = px(lonMax) - px(TG.lon0);
