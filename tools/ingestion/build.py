@@ -518,15 +518,22 @@ def main():
     sd["meta"]["default_vocab_pack"] = VL.default_pack_id()
     sd["meta"]["vocab_packs"] = VL.list_packs()
 
-    # 共享地形（注册表驱动；默认网格见 data/terrain/registry.json）
-    default_gid = FT.default_grid_id(FT.load_registry())
-    terr, grid, tstatus = get_terrain(default_gid)
+# 共享地形（注册表驱动；默认网格见 data/terrain/registry.json）
+    # v0.37：「场景解析默认」与「shell 回退默认」解耦——
+    #   default = china_coarse（55k 点）：供 build_scene 解析未声明 terrain_grid 的场景，
+    #     让 bozhou/ningxia/yangzhou 等非东北场景得到全国粗底而非被错误渲染为辽东。
+    #   shell_default = liaodong（6499 点）：仅供总览页/壳做轻量回退，shell 体积受分片契约约束（<500KB）。
+    #     shell 不应背全国大网格——分片的核心就是大网格放切片里。
+    reg = FT.load_registry()
+    default_gid = FT.default_grid_id(reg)
+    shell_gid = reg.get("shell_default", default_gid)
+    terr, grid, tstatus = get_terrain(shell_gid)
     sd["terrain"] = grid
     sd["terrain_grid_id"] = default_gid if grid else None
     sd["terrain_status"] = tstatus
     if tstatus != "fetched":
-        print("  ! 默认地形网格 %r 状态=%s，地图层将标 OFF_GRID（不伪造高程）"
-              % (default_gid, tstatus))
+      print("  ! shell 地形网格 %r 状态=%s，总览页将标 OFF_GRID（不伪造高程）"
+              % (shell_gid, tstatus))
 
     # 共享江河 / 边墙（取自萨尔浒片层的辽东风土，投影范围一致，各县在其内）
     sarhu_places = load_json(os.path.join(DATA, "sarhu"), "places.json")
@@ -545,6 +552,10 @@ def main():
         scene_gid = sc.get("terrain_grid") or default_gid
         scene_terr, _sg, scene_tstatus = get_terrain(scene_gid)
         bundle["meta"]["terrain_grid"] = scene_gid
+        # v0.37：把 per-scene 地形网格注入 bundle，前端优先用 D.terrain，
+        # 不再永远读共享 SD.terrain（旧逻辑导致非辽东场景误显辽东地形）。
+        if _sg is not None:
+            bundle["terrain"] = _sg
         if scene_terr is None:
             bundle["meta"]["terrain_off_grid"] = True
         else:

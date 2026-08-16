@@ -14,7 +14,8 @@
     "file": "产物文件名，相对 data/terrain/。"
   },
   "_honesty_note": "status 不是 fetched 的网格，构建时不会被当作真实地形使用。本项目宁可在界面上标 OFF_GRID，也不生成看起来合理的假高程。",
-  "default": "liaodong",
+  "default": "china_coarse",
+  "shell_default": "liaodong",
   "grids": {
     "liaodong": {
       "label": "辽东战场",

@@ -32,8 +32,21 @@ def main():
     assert_("liaodong" in reg["grids"], "registry 含 liaodong 网格")
     assert_("china_coarse" in reg["grids"], "registry 含 china_coarse（全国底图预留）")
     dft = FT.default_grid_id(reg)
-    assert_(dft == "liaodong", "default 网格 = liaodong")
+    assert_(dft == "china_coarse", "default 网格 = china_coarse（v0.37 起默认全国粗底，不再默认东北）")
     assert_(reg["grids"][dft]["status"] == "fetched", "默认网格状态为 fetched")
+    # 防回归：默认网格必须全国级（经度跨度 ≥50°），否则非东北场景会被错误渲染成东北地形。
+    # 区域窄网格（liaodong 4.8°、tang 9° 等）必须显式 terrain_grid 钉住才能用，不能默认。
+    dft_bbox = reg["grids"][dft]["bbox"]
+    lon_span = dft_bbox[2] - dft_bbox[0]
+    assert_(lon_span >= 50, "默认网格经度跨度 ≥50°（全国级，绝非区域窄网格；钉住「不要默认东北地形」契约）")
+
+    # shell 回退默认（v0.37）：与场景解析默认解耦，shell 不背全国大网格以守分片契约。
+    shell_dft = reg.get("shell_default")
+    assert_(shell_dft and shell_dft in reg["grids"], "registry 含 shell_default 字段（shell 轻量回退）")
+    assert_(reg["grids"][shell_dft]["status"] == "fetched", "shell_default 网格状态为 fetched")
+    s_bbox = reg["grids"][shell_dft]["bbox"]
+    s_lon_span = s_bbox[2] - s_bbox[0]
+    assert_(s_lon_span < 30, f"shell_default 经度跨度 <30°（轻量，{shell_dft} {s_lon_span:.1f}°）；避免 shell 膨胀破坏分片契约")
 
     # 2) grid_path 指向真实产物
     p = FT.grid_path()

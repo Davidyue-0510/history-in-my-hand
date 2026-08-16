@@ -7101,7 +7101,7 @@ window.SANDBOX_DATA = {
    43.3
   ]
  },
- "terrain_grid_id": "liaodong",
+ "terrain_grid_id": "china_coarse",
  "terrain_status": "fetched",
  "rivers": [
   {
@@ -7706,7 +7706,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=songjin",
    "primary_place": "jinzhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -7731,7 +7731,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=dalinghe",
    "primary_place": "dalinghe",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 3,
@@ -7806,7 +7806,7 @@ window.SANDBOX_DATA = {
    "page": "bozhou.html",
    "primary_place": "bozhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 3,
@@ -7831,7 +7831,7 @@ window.SANDBOX_DATA = {
    "page": "ningxia.html",
    "primary_place": "ningxia",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 3,
@@ -7856,7 +7856,7 @@ window.SANDBOX_DATA = {
    "page": "yangzhou.html",
    "primary_place": "yangzhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -7881,7 +7881,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao",
    "primary_place": "anshan_village",
    "vocab_pack": "inline:novel_fandao",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 5,
@@ -7906,7 +7906,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_2",
    "primary_place": "daye_palace",
    "vocab_pack": "inline:novel_fandao_2",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 5,
@@ -7931,7 +7931,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_3",
    "primary_place": "xiaocheng",
    "vocab_pack": "inline:novel_fandao_3",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -7956,7 +7956,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_4",
    "primary_place": "mojie",
    "vocab_pack": "inline:novel_fandao_4",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -7981,7 +7981,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_5",
    "primary_place": "hejiacun",
    "vocab_pack": "inline:novel_fandao_5",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -8006,7 +8006,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_6",
    "primary_place": "tu_jia",
    "vocab_pack": "inline:novel_fandao_6",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -8031,7 +8031,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_7",
    "primary_place": "mu_jia",
    "vocab_pack": "inline:novel_fandao_7",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -8056,7 +8056,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_8",
    "primary_place": "mao_guo",
    "vocab_pack": "inline:novel_fandao_8",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -8081,7 +8081,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=novel_fandao_9",
    "primary_place": "jiang_jiacun",
    "vocab_pack": "inline:novel_fandao_9",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,
@@ -10581,7 +10581,7 @@ window.SANDBOX_DATA = {
    "page": "county.html?scene=mingmo_dangzheng",
    "primary_place": "jingshi",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
     "src": 4,

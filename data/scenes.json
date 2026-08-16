@@ -330,7 +330,8 @@
         "routes",
         "engagements"
       ],
-      "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。"
+      "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
+      "terrain_grid": "liaodong"
     },
     "kaiyuan": {
       "kind": "county",
@@ -361,7 +362,8 @@
         "person:zhengzhifan": "郑之范",
         "event:yehe": "叶赫",
         "doc:kaiyuan_tushuo": "开原图说"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "tieling": {
       "kind": "county",
@@ -388,7 +390,8 @@
         "person:wang_gao": "王杲",
         "person:yanghao": "杨镐",
         "person:xiongtingbing": "熊廷弼"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "yehe": {
       "kind": "county",
@@ -415,7 +418,8 @@
         "person:bucai": "布寨",
         "person:buyanggu": "布扬古",
         "person:nuerhaci": "努尔哈赤"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "liaoyang": {
       "kind": "county",
@@ -449,7 +453,8 @@
         "person:ma_yun": "马云",
         "person:chenjn": "陈策",
         "person:tongzhongkui": "童仲揆"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "shenyang": {
       "kind": "county",
@@ -484,7 +489,8 @@
         "person:huangtaiji": "皇太极",
         "person:amin": "阿敏",
         "person:goseong": "姜弘立"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "fushun": {
       "kind": "county",
@@ -511,7 +517,8 @@
         "person:li_rubai": "李如柏",
         "person:nuerhaci": "努尔哈赤",
         "person:li_yongfang": "李永芳"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "haizhou": {
       "kind": "county",
@@ -539,7 +546,8 @@
         "person:mao_wenlong": "毛文龙",
         "person:nuerhaci": "努尔哈赤",
         "person:amin": "阿敏"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "gaizhou": {
       "kind": "county",
@@ -564,7 +572,8 @@
         "person:yang_lieue": "杨烈崛",
         "person:huang_zhilong": "黄之骥",
         "person:nuerhaci": "努尔哈赤"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "fuzhou": {
       "kind": "county",
@@ -588,7 +597,8 @@
         "person:mao_wenlong": "毛文龙",
         "person:amin": "阿敏",
         "person:nuerhaci": "努尔哈赤"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "jinzhouwei": {
       "kind": "county",
@@ -613,7 +623,8 @@
         "person:mao_wenlong": "毛文龙",
         "person:amin": "阿敏",
         "person:nuerhaci": "努尔哈赤"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "guangning": {
       "kind": "county",
@@ -639,7 +650,8 @@
         "person:wang_huazhen": "王化贞",
         "person:sun_degong": "孙得功",
         "person:nuerhaci": "努尔哈赤"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "jinzhou": {
       "kind": "county",
@@ -664,7 +676,8 @@
         "person:hong_chengchou": "洪承畴",
         "person:huangtaiji": "皇太极",
         "person:duoergun": "多尔衮"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "ningyuan": {
       "kind": "county",
@@ -693,7 +706,8 @@
         "person:nuerhaci": "努尔哈赤",
         "person:wu_sangui": "吴三桂",
         "person:zhao_shuaijiao": "赵率教"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "novel_fandao": {
       "kind": "fiction",
@@ -3102,7 +3116,8 @@
         "person:wang_zaijin": "王在晋",
         "person:yuan_chonghuan": "袁崇焕",
         "person:ma_shilong": "马世龙"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "juehua1626": {
       "kind": "battle",
@@ -3136,7 +3151,8 @@
         "person:man_gui": "满桂",
         "person:wang_tingchen": "王廷臣",
         "person:jin_guan": "金冠"
-      }
+      },
+      "terrain_grid": "liaodong"
     },
     "bozhou": {
       "kind": "battle",

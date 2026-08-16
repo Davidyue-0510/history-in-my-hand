@@ -39,7 +39,7 @@
   var PRIMARY = CFG.primary_place || META.primary_place;
   var DOSSIER = CFG.dossier_event || META.dossier_event;
 
-  var TG = SD.terrain;                // 共享高程网格
+  var TG = D.terrain || SD.terrain;   // 优先 per-scene 网格，回退共享网格
   var RIVERS = SD.rivers;             // 共享江河
   var WALL = SD.wall;                 // 共享边墙
   var SVGNS = 'http://www.w3.org/2000/svg';
@@ -50,7 +50,7 @@
    * 默认框 = 共享地形网格 (122–126.8°E / 40–43.3°N)，网格内县与萨尔浒同框。
    * 若本切片主地点在网格外（辽西/辽南），投影扩展为「网格框 ∪ 本切片地点」，
    * 使地点可见；地形层在离线时跳过绘制（见 drawTerrain / state.terrainOffGrid）。 */
-  var GRID_LON0 = 122.0, GRID_LON1 = 126.8, GRID_LAT0 = 40.0, GRID_LAT1 = 43.3;
+  var GRID_LON0 = 73.5, GRID_LON1 = 135.1, GRID_LAT0 = 18.0, GRID_LAT1 = 53.6;
   var TG_BOX = TG ? { lon0: TG.lon0, lon1: TG.lon0 + (TG.nx - 1) * TG.step,
                       lat0: TG.lat0, lat1: TG.lat0 + (TG.ny - 1) * TG.step } : null;
   var PRIM = (D.places.filter(function (p) { return p.id === META.primary_place; })[0]) || D.places[0];
@@ -119,7 +119,11 @@
         + '为虚构设定，<b>无真实地形参照</b>——此处不渲染高程阴影，这是「共享真实地形」主张的诚实边界。'
         + '史料 / 断言 / 时间轴（含反事实分支）/ 线索功能均正常。';
     } else {
-      banner.innerHTML = '⚠ 本切片主地点位于共享地形网格之外（网格覆盖 122–126.8°E / 40–43.3°N）。'
+      var _tg = TG_BOX
+        ? ('网格覆盖 ' + TG_BOX.lon0.toFixed(1) + '–' + TG_BOX.lon1.toFixed(1) + '°E / '
+           + TG_BOX.lat0.toFixed(1) + '–' + TG_BOX.lat1.toFixed(1) + '°N')
+        : '未载入地形网格';
+      banner.innerHTML = '⚠ 本切片主地点位于地形网格之外（' + _tg + '）。'
         + '此处不渲染高程阴影——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
     }
     var _mw = document.getElementById('mapWrap');
