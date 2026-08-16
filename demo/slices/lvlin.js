@@ -62,7 +62,7 @@ window.SANDBOX_SLICES["lvlin"] = {
    "id": "wangmang2",
    "name": "王莽",
    "side": "新",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "liuxiu2",
@@ -107,10 +107,322 @@ window.SANDBOX_SLICES["lvlin"] = {
    "place": "changan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M62",
+   "subject": "event:ll_17",
+   "predicate": "爆发",
+   "value_text": "绿林兵起于荆楚",
+   "time": {
+    "era_text": "地皇二年",
+    "start": "21-01-01",
+    "end": "21-12-31",
+    "gregorian_year": 21
+   },
+   "place": "lvlin",
+   "source": "synthesis",
+   "quote": "公元17年绿林兵起于荆楚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "原文用公元纪年，此处按年号纪年表述；具体月份缺失",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M63",
+   "subject": "event:ll_23",
+   "predicate": "大捷",
+   "value_text": "昆阳大捷",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "yecheng",
+   "source": "synthesis",
+   "quote": "公元23年昆阳大捷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "昆阳非白名单地点，暂以yecheng代指，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M61",
+   "subject": "event:ll_23",
+   "predicate": "入长安",
+   "value_text": "更始入长安",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "更始入长安",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M63",
+   "subject": "person:wangmang2",
+   "predicate": "死亡",
+   "value_text": "王莽死",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "王莽死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M61",
+   "subject": "event:ll_23",
+   "predicate": "亡国",
+   "value_text": "新亡",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "新亡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M59",
+   "subject": "event:ll_23",
+   "predicate": "后续",
+   "value_text": "群雄并起",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "然群雄并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "地点未指明，留空待补",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M56",
+   "subject": "event:ll_17",
+   "predicate": "起兵地点",
+   "value_text": "起于荆楚",
+   "time": {
+    "era_text": "地皇二年",
+    "start": "21-01-01",
+    "end": "21-12-31",
+    "gregorian_year": 21
+   },
+   "place": "lvlin",
+   "source": "synthesis",
+   "quote": "绿林兵起于荆楚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M57",
+   "subject": "event:ll_23",
+   "predicate": "时间跨度",
+   "value_text": "从起兵到大捷六年",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元17年绿林兵起；公元23年昆阳大捷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "由原文时间推算，非直述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M43",
+   "subject": "event:ll_23",
+   "predicate": "政权更迭",
+   "value_text": "新朝灭亡，更始入主",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "更始入长安，王莽死，新亡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "由原文事件顺序推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M38",
+   "subject": "event:ll_23",
+   "predicate": "后续局势",
+   "value_text": "群雄并起，天下未定",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "然群雄并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "由原文推断，具体势力未明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M19",
+   "subject": "event:ll_17",
+   "predicate": "起兵首领",
+   "value_text": "首领未明",
+   "time": {
+    "era_text": "地皇二年",
+    "start": "21-01-01",
+    "end": "21-12-31",
+    "gregorian_year": 21
+   },
+   "place": "lvlin",
+   "source": "synthesis",
+   "quote": "绿林兵起于荆楚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "原文未提及具体首领",
+   "lead": {
+    "where": "绿林军首领身份",
+    "skills": [
+     "历史考证"
+    ],
+    "accept": "补充绿林军主要首领姓名"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M14",
+   "subject": "event:ll_23",
+   "predicate": "昆阳之战细节",
+   "value_text": "战役过程缺失",
+   "time": {
+    "era_text": "地皇四年",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": "yecheng",
+   "source": "synthesis",
+   "quote": "昆阳大捷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "county",
+   "note": "原文仅提大捷，无兵力、战术等细节",
+   "lead": {
+    "where": "昆阳之战具体经过",
+    "skills": [
+     "军事史"
+    ],
+    "accept": "补充昆阳之战双方兵力与战术"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LVLING01",
+   "subject": "event:ll_23",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "地皇",
+    "start": "23-01-01",
+    "end": "23-12-31",
+    "gregorian_year": 23
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX011_M19",
+  "SX012_M14",
+  "LVLING01"
+ ],
  "events": [
   {
    "id": "ev_ll_17",

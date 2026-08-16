@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "id": "zhaowuling",
    "name": "赵武灵王",
    "side": "赵",
-   "influence": 0
+   "influence": 4
   }
  ],
  "assertions": [
@@ -92,10 +92,218 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "place": "handan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M39",
+   "subject": "person:zhaowuling",
+   "predicate": "推行胡服骑射",
+   "value_text": "行胡服骑射",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "赵武灵王行胡服骑射",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M40",
+   "subject": "person:zhaowuling",
+   "predicate": "习骑射",
+   "value_text": "习骑射",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "习骑射",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M38",
+   "subject": "person:zhaowuling",
+   "predicate": "御北胡",
+   "value_text": "御北胡",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "御北胡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M40",
+   "subject": "event:zw_war",
+   "predicate": "结果",
+   "value_text": "赵国遂强",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "赵国遂强",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "event:zw_war 为白名单事件，此处描述其直接结果",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M38",
+   "subject": "event:zw_war",
+   "predicate": "辟地",
+   "value_text": "辟地至云中、九原",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "辟地至云中、九原",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "云中、九原不在 place 白名单，note 注明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M37",
+   "subject": "event:zw_war",
+   "predicate": "影响",
+   "value_text": "开中原尚骑之先",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "开中原尚骑之先",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文为总结性评价，属合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M35",
+   "subject": "person:zhaowuling",
+   "predicate": "改革时间",
+   "value_text": "周赧王八年",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "周赧王八年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M35",
+   "subject": "event:zw_307",
+   "predicate": "关联",
+   "value_text": "胡服骑射为赵武灵王重要举措",
+   "time": {
+    "era_text": "周赧王八年",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "赵武灵王行胡服骑射",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "event:zw_307 为白名单事件，此处建立关联",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHAOWULIANG01",
+   "subject": "event:zw_war",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "周赧王",
+    "start": "-307-01-01",
+    "end": "-307-12-31",
+    "gregorian_year": -307
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHAOWULIANG01"
+ ],
  "events": [
   {
    "id": "ev_zw_307",

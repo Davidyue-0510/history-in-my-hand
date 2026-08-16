@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "id": "yuwenkai",
    "name": "宇文恺",
    "side": "隋匠师",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -92,10 +92,218 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "place": "changan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M74",
+   "subject": "event:dx_582",
+   "predicate": "筑城",
+   "value_text": "隋文帝命宇文恺筑大兴城",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "开皇二年，隋文帝命宇文恺筑大兴城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M74",
+   "subject": "event:dx_582",
+   "predicate": "规划",
+   "value_text": "规画棋盘、坊市井然",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "规画棋盘、坊市井然",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M73",
+   "subject": "event:dx_582",
+   "predicate": "迁都",
+   "value_text": "迁都于此",
+   "time": {
+    "era_text": "开皇三年",
+    "start": "583-01-01",
+    "end": "583-12-31",
+    "gregorian_year": 583
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "开皇三年迁都于此",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M75",
+   "subject": "event:dx_582",
+   "predicate": "奠基",
+   "value_text": "为唐长安之基",
+   "time": {
+    "era_text": "开皇三年",
+    "start": "583-01-01",
+    "end": "583-12-31",
+    "gregorian_year": 583
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "为唐长安之基",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说，但由'为唐长安之基'可推出大兴城对唐长安的奠基作用",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M73",
+   "subject": "person:yuwenkai",
+   "predicate": "主持筑城",
+   "value_text": "宇文恺筑大兴城",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "隋文帝命宇文恺筑大兴城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M72",
+   "subject": "event:dx_582",
+   "predicate": "布局",
+   "value_text": "棋盘式布局",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "规画棋盘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "由'规画棋盘'推断为棋盘式布局",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M65",
+   "subject": "event:dx_582",
+   "predicate": "坊市制度",
+   "value_text": "坊市井然",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "坊市井然",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M67",
+   "subject": "event:dx_582",
+   "predicate": "时间跨度",
+   "value_text": "开皇二年至开皇三年",
+   "time": {
+    "era_text": "开皇二年",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "开皇二年...开皇三年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "由原文时间点推出筑城与迁都的时间跨度",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SUI_DAXINGG01",
+   "subject": "event:dx_582",
+   "predicate": "史料缺环",
+   "value_text": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "time": {
+    "era_text": "开皇",
+    "start": "582-01-01",
+    "end": "582-12-31",
+    "gregorian_year": 582
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "engineering",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SUI_DAXINGG01"
+ ],
  "events": [
   {
    "id": "ev_dx_582",

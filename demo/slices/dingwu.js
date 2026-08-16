@@ -125,10 +125,262 @@ window.SANDBOX_SLICES["dingwu"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M65",
+   "subject": "event:dw_1876",
+   "predicate": "爆发",
+   "value_text": "北方大旱，晋豫尤甚",
+   "time": {
+    "era_text": "光绪二年",
+    "start": "1876-01-01",
+    "end": "1876-12-31",
+    "gregorian_year": 1876
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "光绪二年，北方大旱，晋豫尤甚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "旱灾起始，晋豫为重灾区",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M66",
+   "subject": "event:dw_1877",
+   "predicate": "达到极重",
+   "value_text": "丁戊大旱达极",
+   "time": {
+    "era_text": "光绪三年",
+    "start": "1877-01-01",
+    "end": "1877-12-31",
+    "gregorian_year": 1877
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "光绪三年，丁戊大旱达极",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "灾情最重年份",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M64",
+   "subject": "event:dw_1877",
+   "predicate": "导致人相食",
+   "value_text": "人相食",
+   "time": {
+    "era_text": "光绪三年",
+    "start": "1877-01-01",
+    "end": "1877-12-31",
+    "gregorian_year": 1877
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "人相食",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "极端后果，反映灾情惨烈",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M66",
+   "subject": "event:dw_1877",
+   "predicate": "导致流民载道",
+   "value_text": "流民载道",
+   "time": {
+    "era_text": "光绪三年",
+    "start": "1877-01-01",
+    "end": "1877-12-31",
+    "gregorian_year": 1877
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "流民载道",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "社会秩序崩溃迹象",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M64",
+   "subject": "event:dw_relief",
+   "predicate": "朝廷拨帑截漕",
+   "value_text": "朝廷拨帑截漕赈济",
+   "time": {
+    "era_text": "光绪四年",
+    "start": "1878-01-01",
+    "end": "1878-12-31",
+    "gregorian_year": 1878
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "光绪四年，朝廷拨帑截漕赈济",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "官方赈灾措施",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M62",
+   "subject": "event:dw_relief",
+   "predicate": "江南义赈赴晋",
+   "value_text": "江南义赈赴晋",
+   "time": {
+    "era_text": "光绪四年",
+    "start": "1878-01-01",
+    "end": "1878-12-31",
+    "gregorian_year": 1878
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "江南义赈赴晋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "民间赈灾力量介入",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M59",
+   "subject": "event:dw_1876",
+   "predicate": "波及范围",
+   "value_text": "北方大旱",
+   "time": {
+    "era_text": "光绪二年",
+    "start": "1876-01-01",
+    "end": "1876-12-31",
+    "gregorian_year": 1876
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "北方大旱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "北方多省受灾，具体范围待考",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M60",
+   "subject": "event:dw_1877",
+   "predicate": "灾情对比",
+   "value_text": "晋豫尤甚",
+   "time": {
+    "era_text": "光绪三年",
+    "start": "1877-01-01",
+    "end": "1877-12-31",
+    "gregorian_year": 1877
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "晋豫尤甚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "山西河南灾情最重",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M45",
+   "subject": "event:dw_relief",
+   "predicate": "赈灾时间",
+   "value_text": "光绪四年",
+   "time": {
+    "era_text": "光绪四年",
+    "start": "1878-01-01",
+    "end": "1878-12-31",
+    "gregorian_year": 1878
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "光绪四年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "官方与民间赈灾同年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M40",
+   "subject": "event:dw_1877",
+   "predicate": "灾情持续",
+   "value_text": "丁戊大旱",
+   "time": {
+    "era_text": "光绪三年",
+    "start": "1877-01-01",
+    "end": "1877-12-31",
+    "gregorian_year": 1877
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "丁戊大旱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "丁丑戊寅连年干旱",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DINGWUG01",
+   "subject": "event:dw_1877",
+   "predicate": "史料缺环",
+   "value_text": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "time": {
+    "era_text": "光绪",
+    "start": "1876-01-01",
+    "end": "1876-12-31",
+    "gregorian_year": 1876
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "disaster",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "DINGWUG01"
+ ],
  "events": [
   {
    "id": "ev_dw_1876",

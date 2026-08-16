@@ -62,13 +62,13 @@ window.SANDBOX_SLICES["hongjin"] = {
    "id": "liufutong",
    "name": "刘福通",
    "side": "红巾",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "zhuyuanzhang",
    "name": "朱元璋",
    "side": "明",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -107,10 +107,262 @@ window.SANDBOX_SLICES["hongjin"] = {
    "place": "nanjing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M59",
+   "subject": "event:hj_1351",
+   "predicate": "爆发",
+   "value_text": "红巾军起于颍州",
+   "time": {
+    "era_text": "至正十一年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "yingzhou",
+   "source": "synthesis",
+   "quote": "至正十一年，韩山童、刘福通以白莲教倡言弥勒下生，红巾军起于颍州",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "红巾军起义地点为颍州，已映射至白名单",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M60",
+   "subject": "person:liufutong",
+   "predicate": "倡言",
+   "value_text": "以白莲教倡言弥勒下生",
+   "time": {
+    "era_text": "至正十一年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "yingzhou",
+   "source": "synthesis",
+   "quote": "韩山童、刘福通以白莲教倡言弥勒下生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M58",
+   "subject": "person:liufutong",
+   "predicate": "参与",
+   "value_text": "参与红巾军起义",
+   "time": {
+    "era_text": "至正十一年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "yingzhou",
+   "source": "synthesis",
+   "quote": "韩山童、刘福通以白莲教倡言弥勒下生，红巾军起于颍州",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M60",
+   "subject": "event:hj_1368",
+   "predicate": "建国",
+   "value_text": "朱元璋代元，建国明",
+   "time": {
+    "era_text": "至正二十八年",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "至正二十八年，朱元璋代元，建国明",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "建国地点未明说，按常识推断为南京，已映射至白名单",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M58",
+   "subject": "person:zhuyuanzhang",
+   "predicate": "代元",
+   "value_text": "代元建国",
+   "time": {
+    "era_text": "至正二十八年",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "朱元璋代元，建国明",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M57",
+   "subject": "event:hj_1351",
+   "predicate": "关联人物",
+   "value_text": "韩山童、刘福通为首",
+   "time": {
+    "era_text": "至正十一年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "yingzhou",
+   "source": "synthesis",
+   "quote": "韩山童、刘福通以白莲教倡言弥勒下生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M54",
+   "subject": "event:hj_1351",
+   "predicate": "性质",
+   "value_text": "白莲教起义",
+   "time": {
+    "era_text": "至正十一年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "yingzhou",
+   "source": "synthesis",
+   "quote": "以白莲教倡言弥勒下生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M54",
+   "subject": "event:hj_1368",
+   "predicate": "结果",
+   "value_text": "明朝建立",
+   "time": {
+    "era_text": "至正二十八年",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "建国明",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M40",
+   "subject": "event:hj_1351",
+   "predicate": "时间跨度",
+   "value_text": "至正十一年至至正二十八年",
+   "time": {
+    "era_text": "至正十一年至至正二十八年",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "至正十一年……至正二十八年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "从两事件时间推断红巾军至明朝建立的时间跨度",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M35",
+   "subject": "event:hj_1351",
+   "predicate": "影响",
+   "value_text": "导致元朝灭亡",
+   "time": {
+    "era_text": "至正二十八年",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "朱元璋代元",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说因果关系，但可合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HONGJING01",
+   "subject": "event:hj_1351",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "至正",
+    "start": "1351-01-01",
+    "end": "1351-12-31",
+    "gregorian_year": 1351
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "HONGJING01"
+ ],
  "events": [
   {
    "id": "ev_hj_1351",

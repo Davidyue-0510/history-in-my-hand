@@ -91,10 +91,42 @@ window.SANDBOX_SLICES["dunzun"] = {
    "place": "changan_dz",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "DUNZUNG01",
+   "subject": "event:dz_taixue",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "正始",
+    "start": "240-01-01",
+    "end": "240-12-31",
+    "gregorian_year": 240
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "DUNZUNG01"
+ ],
  "events": [
   {
    "id": "ev_dz_134",

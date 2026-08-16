@@ -62,7 +62,7 @@ window.SANDBOX_SLICES["taiping"] = {
    "id": "hongxiuquan",
    "name": "洪秀全",
    "side": "太平天国",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "xiangrong",
@@ -125,10 +125,218 @@ window.SANDBOX_SLICES["taiping"] = {
    "place": "nanjing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M63",
+   "subject": "event:tp_1851",
+   "predicate": "爆发",
+   "value_text": "洪秀全于金田起义",
+   "time": {
+    "era_text": "咸丰元年",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": "guiping",
+   "source": "synthesis",
+   "quote": "洪秀全于金田起义",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "金田属桂平县，以place:guiping代",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M64",
+   "subject": "event:tp_1851",
+   "predicate": "建国",
+   "value_text": "建太平天国",
+   "time": {
+    "era_text": "咸丰元年",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": "guiping",
+   "source": "synthesis",
+   "quote": "建太平天国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M62",
+   "subject": "event:tp_1864",
+   "predicate": "陷落",
+   "value_text": "天京陷落",
+   "time": {
+    "era_text": "同治三年",
+    "start": "1864-01-01",
+    "end": "1864-12-31",
+    "gregorian_year": 1864
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "天京陷落",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "天京即南京",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M64",
+   "subject": "event:tp_1864",
+   "predicate": "终结",
+   "value_text": "乱平",
+   "time": {
+    "era_text": "同治三年",
+    "start": "1864-01-01",
+    "end": "1864-12-31",
+    "gregorian_year": 1864
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "乱平",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M62",
+   "subject": "event:tp_1851",
+   "predicate": "波及范围",
+   "value_text": "十余年波及半壁",
+   "time": {
+    "era_text": "咸丰元年",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "十余年波及半壁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文未指明具体地点，place留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M60",
+   "subject": "person:hongxiuquan",
+   "predicate": "领导起义",
+   "value_text": "洪秀全领导金田起义",
+   "time": {
+    "era_text": "咸丰元年",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": "guiping",
+   "source": "synthesis",
+   "quote": "洪秀全于金田起义",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M57",
+   "subject": "event:tp_1851",
+   "predicate": "持续时间",
+   "value_text": "十余年",
+   "time": {
+    "era_text": "咸丰元年",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "十余年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "从1851到1864推算，原文未明说具体年数",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M58",
+   "subject": "event:tp_1864",
+   "predicate": "影响范围",
+   "value_text": "波及半壁江山",
+   "time": {
+    "era_text": "同治三年",
+    "start": "1864-01-01",
+    "end": "1864-12-31",
+    "gregorian_year": 1864
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "波及半壁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "半壁为概数，未指明具体省份",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TAIPINGG01",
+   "subject": "event:tp_1851",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "道光",
+    "start": "1851-01-01",
+    "end": "1851-12-31",
+    "gregorian_year": 1851
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "TAIPINGG01"
+ ],
  "events": [
   {
    "id": "ev_tp_1851",

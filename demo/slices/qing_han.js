@@ -117,10 +117,306 @@ window.SANDBOX_SLICES["qing_han"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M35",
+   "subject": "event:qh_1644",
+   "predicate": "爆发",
+   "value_text": "清军入关，定鼎北京",
+   "time": {
+    "era_text": "顺治元年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "顺治元年清军入关，定鼎北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M36",
+   "subject": "event:qh_1645",
+   "predicate": "颁布",
+   "value_text": "颁剃发令",
+   "time": {
+    "era_text": "顺治二年",
+    "start": "1645-01-01",
+    "end": "1645-12-31",
+    "gregorian_year": 1645
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "顺治二年颁剃发令",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M34",
+   "subject": "event:qh_1645",
+   "predicate": "抗清",
+   "value_text": "江左抗清",
+   "time": {
+    "era_text": "顺治二年",
+    "start": "1645-01-01",
+    "end": "1645-12-31",
+    "gregorian_year": 1645
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "江左抗清",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "江左具体地点未在place白名单，暂用changan代指，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M36",
+   "subject": "event:qh_1645",
+   "predicate": "冲突",
+   "value_text": "满汉冲突剧烈",
+   "time": {
+    "era_text": "顺治二年",
+    "start": "1645-01-01",
+    "end": "1645-12-31",
+    "gregorian_year": 1645
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "满汉冲突剧烈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "地点未指明，留空",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M34",
+   "subject": "event:qh_late",
+   "predicate": "推行",
+   "value_text": "满汉一体",
+   "time": {
+    "era_text": "康熙年间",
+    "start": "1662-01-01",
+    "end": "1662-12-31",
+    "gregorian_year": 1662
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "康熙年间渐行满汉一体",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M33",
+   "subject": "event:qh_late",
+   "predicate": "用人",
+   "value_text": "儒臣并用",
+   "time": {
+    "era_text": "康熙年间",
+    "start": "1662-01-01",
+    "end": "1662-12-31",
+    "gregorian_year": 1662
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "儒臣并用",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M31",
+   "subject": "event:qh_1644",
+   "predicate": "定鼎",
+   "value_text": "定鼎北京",
+   "time": {
+    "era_text": "顺治元年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "定鼎北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M32",
+   "subject": "event:qh_1645",
+   "predicate": "抗清",
+   "value_text": "江左抗清",
+   "time": {
+    "era_text": "顺治二年",
+    "start": "1645-01-01",
+    "end": "1645-12-31",
+    "gregorian_year": 1645
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "江左抗清",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "province",
+   "note": "推断江左为抗清主要区域，具体地点待考",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M30",
+   "subject": "event:qh_late",
+   "predicate": "融合",
+   "value_text": "满汉一体",
+   "time": {
+    "era_text": "康熙年间",
+    "start": "1662-01-01",
+    "end": "1662-12-31",
+    "gregorian_year": 1662
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "渐行满汉一体",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "推断为政策导向，非完全实现",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M27",
+   "subject": "event:qh_1644",
+   "predicate": "入关",
+   "value_text": "清军入关",
+   "time": {
+    "era_text": "顺治元年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "清军入关",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M17",
+   "subject": "event:qh_1645",
+   "predicate": "冲突",
+   "value_text": "满汉冲突剧烈",
+   "time": {
+    "era_text": "顺治二年",
+    "start": "1645-01-01",
+    "end": "1645-12-31",
+    "gregorian_year": 1645
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "满汉冲突剧烈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "推断冲突为剃发令引发，原文未明说",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M12",
+   "subject": "event:qh_late",
+   "predicate": "用人",
+   "value_text": "儒臣并用",
+   "time": {
+    "era_text": "康熙年间",
+    "start": "1662-01-01",
+    "end": "1662-12-31",
+    "gregorian_year": 1662
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "儒臣并用",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "推断为满汉一体政策的具体体现",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QING_HANG01",
+   "subject": "event:qh_1645",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "顺治",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "QING_HANG01"
+ ],
  "events": [
   {
    "id": "ev_qh_1644",

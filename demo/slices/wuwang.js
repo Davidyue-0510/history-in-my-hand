@@ -107,10 +107,42 @@ window.SANDBOX_SLICES["wuwang"] = {
    "place": "muye",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "WUWANGG01",
+   "subject": "event:ww_1048",
+   "predicate": "史料缺环",
+   "value_text": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "time": {
+    "era_text": "周武王",
+    "start": "-1036-01-01",
+    "end": "-1036-12-31",
+    "gregorian_year": -1036
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "dynasty",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "WUWANGG01"
+ ],
  "events": [
   {
    "id": "ev_ww_1048",

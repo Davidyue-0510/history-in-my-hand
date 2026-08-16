@@ -29,6 +29,22 @@ window.SANDBOX_SLICES["jiupin"] = {
    "party": "综合史料",
    "availability": "not_free",
    "bias_note": "九品中正据《通典·选举》与《三国志》注综合，其门阀化乃渐变非一夕。"
+  },
+  {
+   "id": "san_guo_zhi_jp",
+   "title": "《三国志》",
+   "name": "《三国志》",
+   "party": "官修史书",
+   "faction": "menfa",
+   "bias_note": "陈寿记九品中正之设，措辞平允，反映士族立场。"
+  },
+  {
+   "id": "bao_pu_zi",
+   "title": "《抱朴子》",
+   "name": "《抱朴子》",
+   "party": "私家著述",
+   "faction": "hanmen",
+   "bias_note": "葛洪出身寒微，直言中正舞弊、士族壅塞贤路。"
   }
  ],
  "places": [
@@ -54,7 +70,7 @@ window.SANDBOX_SLICES["jiupin"] = {
    "id": "chenqun",
    "name": "陈群",
    "side": "魏",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "caocao",
@@ -99,10 +115,298 @@ window.SANDBOX_SLICES["jiupin"] = {
    "place": "luoyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M44",
+   "subject": "event:jp_220",
+   "predicate": "实行",
+   "value_text": "行九品中正制",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "黄初元年，魏文帝采陈群议，行九品中正制",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件主体为魏文帝采纳陈群建议，实行九品中正制",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M45",
+   "subject": "person:chenqun",
+   "predicate": "提出建议",
+   "value_text": "采陈群议",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "魏文帝采陈群议",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M43",
+   "subject": "event:jp_220",
+   "predicate": "设置官职",
+   "value_text": "州郡设中正",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "州郡设中正",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "中正官设置于州郡两级",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M45",
+   "subject": "event:jp_220",
+   "predicate": "职能",
+   "value_text": "品第人物",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "品第人物",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M43",
+   "subject": "event:jp_220",
+   "predicate": "影响",
+   "value_text": "门第渐固",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "门第渐固",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文直述影响",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M42",
+   "subject": "event:jp_220",
+   "predicate": "影响",
+   "value_text": "寒门难进",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "寒门难进",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M40",
+   "subject": "event:jp_220",
+   "predicate": "影响",
+   "value_text": "士族之势成",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "士族之势成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M40",
+   "subject": "event:jp_220",
+   "predicate": "结果",
+   "value_text": "门阀政治形成",
+   "time": {
+    "era_text": "黄初元年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "门第渐固，寒门难进，士族之势成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "由原文影响推断出门阀政治形成",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIUPING01",
+   "subject": "event:jp_220",
+   "predicate": "史料缺环",
+   "value_text": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "time": {
+    "era_text": "黄初",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "reform",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JP_FX1",
+   "subject": "event:jp_220",
+   "predicate": "利益交换",
+   "value_text": "曹丕为换取士族对代汉的支持，采陈群议行九品中正制，以官位清浊换取门阀政治背书——皇权向士族的利益妥协。",
+   "source": "san_guo_zhi_jp",
+   "quote": "（陈群）立九品官人之法，州郡皆置中正。",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "layer": "record",
+   "time": {
+    "era_text": "公元220年",
+    "start": "220-01-01",
+    "end": "220-12-31",
+    "gregorian_year": 220
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "制度诞生即含门阀红利",
+   "_party": "官修史书",
+   "_faction": "menfa"
+  },
+  {
+   "id": "JP_FX2",
+   "subject": "event:jp_later",
+   "predicate": "垄断固化",
+   "value_text": "中正多由士族出任，品第依门第而非才德，遂成「上品无寒门，下品无势族」，寒门沉滞、门阀世袭。",
+   "source": "bao_pu_zi",
+   "quote": "举秀才，不知书；察孝廉，父别居。",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "layer": "record",
+   "time": {
+    "era_text": "公元280年",
+    "start": "280-01-01",
+    "end": "280-12-31",
+    "gregorian_year": 280
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "寒门视角的制度批判",
+   "_party": "私家著述",
+   "_faction": "hanmen"
+  },
+  {
+   "id": "JP_FX3",
+   "subject": "event:jp_later",
+   "predicate": "结构性冲突",
+   "value_text": "九品中正是皇权、寒门与门阀三方博弈的凝固点：它短暂满足了曹魏的禅代需要，却让士族利益制度化，奠定此后两百年门阀政治。",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.6,
+   "layer": "inference",
+   "time": {
+    "era_text": "公元280年",
+    "start": "280-01-01",
+    "end": "280-12-31",
+    "gregorian_year": 280
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "综合各方记载的因果判断",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:event:jp_220|影响",
+   "subject": "event:jp_220",
+   "predicate": "影响",
+   "kind": "record_vs_record",
+   "count": 3,
+   "spread": null,
+   "assertion_ids": [
+    "SX005_M43",
+    "SX006_M42",
+    "SX007_M40"
+   ]
+  }
+ ],
+ "gaps": [
+  "JIUPING01"
+ ],
  "events": [
   {
    "id": "ev_jp_220",
@@ -140,14 +444,59 @@ window.SANDBOX_SLICES["jiupin"] = {
    "generated"
   ],
   "parties": [
-   "综合史料"
+   "综合史料",
+   "官修史书",
+   "私家著述"
   ],
   "party_bucket": {
-   "综合史料": "综合史料"
+   "综合史料": "综合史料",
+   "官修史书": "官修史书",
+   "私家著述": "私家著述"
   },
   "party_colors": {
-   "综合史料": "#7f8c8d"
+   "综合史料": "#7f8c8d",
+   "官修史书": "#6d4c41",
+   "私家著述": "#2980b9"
   },
-  "legend": {}
+  "legend": {},
+  "faction_colors": {
+   "menfa": "#8e44ad",
+   "hanmen": "#16a085"
+  },
+  "factions": {
+   "menfa": {
+    "name": "门阀士族（世家大族）",
+    "period": "曹魏—东晋（公元220—420）",
+    "interest": "以九品中正垄断清途官位，使「上品无寒门，下品无势族」；通过联姻、门生故吏编织权力网络，世代把持政权。",
+    "key_figures": [
+     "颍川荀氏",
+     "琅琊王氏",
+     "陈郡谢氏",
+     "陈群"
+    ],
+    "typical_sources": [
+     "三国志",
+     "晋书",
+     "世说新语"
+    ],
+    "bias_note": "正史多出自士族史官之手，自然将门阀垄断叙述为「德望所归」；对寒门沉滞之怨多轻描淡写。"
+   },
+   "hanmen": {
+    "name": "寒门·皇权（寒素与君主）",
+    "period": "曹魏—东晋",
+    "interest": "皇权欲借选官收拢人才、制衡士族；寒门子弟求以才学入仕，却受中正品第压制，二者皆与门阀利益冲突。",
+    "key_figures": [
+     "曹丕",
+     "司马炎",
+     "葛洪",
+     "左思"
+    ],
+    "typical_sources": [
+     "抱朴子",
+     "文选·咏史"
+    ],
+    "bias_note": "寒门著述（如葛洪《抱朴子》）直斥「举秀才不知书，察孝廉父别居」，是门阀政治的少数非官方控诉。"
+   }
+  }
  }
 };

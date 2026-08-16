@@ -62,7 +62,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "id": "libing",
    "name": "李冰",
    "side": "秦蜀守",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "wengong",
@@ -125,10 +125,240 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "place": "dujiangyan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M71",
+   "subject": "event:dj_256",
+   "predicate": "筑成",
+   "value_text": "蜀守李冰筑都江堰",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "公元前256年蜀守李冰筑都江堰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "原文无年号，仅记公元前256年，按原文表述保留",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M71",
+   "subject": "event:dj_256",
+   "predicate": "分水",
+   "value_text": "分岷江为内外江",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "分岷江为内外江",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M70",
+   "subject": "event:dj_256",
+   "predicate": "功能",
+   "value_text": "旱溉潦泄",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "旱溉潦泄",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M72",
+   "subject": "place:chengdu",
+   "predicate": "受益",
+   "value_text": "成都平原沃野千里",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "chengdu",
+   "source": "synthesis",
+   "quote": "成都平原沃野千里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M68",
+   "subject": "event:dj_256",
+   "predicate": "地位",
+   "value_text": "为天府之源",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "为天府之源",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M62",
+   "subject": "person:libing",
+   "predicate": "主持修建",
+   "value_text": "蜀守李冰筑都江堰",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "蜀守李冰筑都江堰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "李冰为蜀守，主持修建",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M64",
+   "subject": "place:minjiang",
+   "predicate": "被分",
+   "value_text": "分岷江为内外江",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "minjiang",
+   "source": "synthesis",
+   "quote": "分岷江为内外江",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M47",
+   "subject": "event:dj_256",
+   "predicate": "影响范围",
+   "value_text": "成都平原沃野千里",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "chengdu",
+   "source": "synthesis",
+   "quote": "成都平原沃野千里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "原文未明说影响范围，但'沃野千里'可合理推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M42",
+   "subject": "event:dj_256",
+   "predicate": "历史评价",
+   "value_text": "为天府之源",
+   "time": {
+    "era_text": "公元前256年",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": "dujiangyan",
+   "source": "synthesis",
+   "quote": "为天府之源",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "原文为评价性表述，非直接事实",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DUJIANGYANG01",
+   "subject": "event:dj_256",
+   "predicate": "史料缺环",
+   "value_text": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "time": {
+    "era_text": "秦昭襄王",
+    "start": "-256-01-01",
+    "end": "-256-12-31",
+    "gregorian_year": -256
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "engineering",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "DUJIANGYANG01"
+ ],
  "events": [
   {
    "id": "ev_dj_256",

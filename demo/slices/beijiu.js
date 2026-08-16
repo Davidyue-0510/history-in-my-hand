@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["beijiu"] = {
    "id": "shishouxin",
    "name": "石守信",
    "side": "宋将",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -99,10 +99,231 @@ window.SANDBOX_SLICES["beijiu"] = {
    "place": "kaofeng",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M51",
+   "subject": "event:bj_961",
+   "predicate": "发生",
+   "value_text": "宋太祖宴禁军将石守信等",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "宋太祖宴禁军将石守信等",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件主体为杯酒释兵权",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M52",
+   "subject": "event:bj_961",
+   "predicate": "结果",
+   "value_text": "杯酒释兵权",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "杯酒释兵权",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M50",
+   "subject": "person:shishouxin",
+   "predicate": "参与",
+   "value_text": "石守信等被宴请",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "宴禁军将石守信等",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M52",
+   "subject": "event:bj_961",
+   "predicate": "措施",
+   "value_text": "收精兵归枢密",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "收精兵归枢密",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M50",
+   "subject": "event:bj_961",
+   "predicate": "影响",
+   "value_text": "藩镇之祸弭",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "藩镇之祸弭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文评价性表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M49",
+   "subject": "event:bj_961",
+   "predicate": "影响",
+   "value_text": "中央集权成",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "中央集权成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文评价性表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M46",
+   "subject": "person:songtaizu",
+   "predicate": "主导",
+   "value_text": "宋太祖主导释兵权",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "宋太祖宴禁军将石守信等",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说主导者，但主语为宋太祖",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M46",
+   "subject": "event:bj_961",
+   "predicate": "性质",
+   "value_text": "和平解除兵权",
+   "time": {
+    "era_text": "建隆二年",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "杯酒释兵权",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "由'杯酒'推断非武力",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BEIJIUG01",
+   "subject": "event:bj_961",
+   "predicate": "史料缺环",
+   "value_text": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "time": {
+    "era_text": "建隆",
+    "start": "961-01-01",
+    "end": "961-12-31",
+    "gregorian_year": 961
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "court",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:event:bj_961|影响",
+   "subject": "event:bj_961",
+   "predicate": "影响",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX005_M50",
+    "SX006_M49"
+   ]
+  }
+ ],
+ "gaps": [
+  "BEIJIUG01"
+ ],
  "events": [
   {
    "id": "ev_bj_961",

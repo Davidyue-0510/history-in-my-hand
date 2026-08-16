@@ -8954,12 +8954,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 2,
-    "assert": 5,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 5,
     "scholarship": 5,
-    "inference": 0
+    "inference": 1
    }
   },
   "huaxian": {
@@ -8979,10 +8979,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 1,
-    "assert": 3,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 5,
     "scholarship": 3,
     "inference": 0
    }
@@ -9004,12 +9004,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 2,
-    "assert": 5,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 12,
+    "conflict": 2,
+    "gap": 2,
+    "record": 3,
     "scholarship": 5,
-    "inference": 0
+    "inference": 2
    }
   },
   "grand_canal": {
@@ -9029,12 +9029,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 2,
-    "assert": 3,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 8,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "dujiangyan": {
@@ -9054,12 +9054,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 3,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "great_wall": {
@@ -9079,10 +9079,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 2,
-    "assert": 3,
+    "assert": 6,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 2,
     "scholarship": 3,
     "inference": 0
    }
@@ -9129,12 +9129,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 6,
     "scholarship": 3,
-    "inference": 0
+    "inference": 4
    }
   },
   "shangyang": {
@@ -9151,15 +9151,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 3,
+    "assert": 17,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 11,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "wanganshi": {
@@ -9176,15 +9176,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 1,
     "person": 2,
-    "assert": 3,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 1
    }
   },
   "huangjin": {
@@ -9204,12 +9204,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 3,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 5,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "lizicheng": {
@@ -9229,12 +9229,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 2,
-    "assert": 4,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 7,
     "scholarship": 4,
-    "inference": 0
+    "inference": 2
    }
   },
   "xiaowen": {
@@ -9251,13 +9251,13 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 10,
     "scholarship": 3,
     "inference": 0
    }
@@ -9279,12 +9279,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "xuanwu": {
@@ -9301,15 +9301,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 3,
     "person": 3,
-    "assert": 2,
+    "assert": 16,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 12,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "jingnan": {
@@ -9354,9 +9354,9 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 1,
     "person": 2,
-    "assert": 2,
+    "assert": 3,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
     "scholarship": 2,
     "inference": 0
@@ -9379,12 +9379,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "four_inv": {
@@ -9404,10 +9404,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 4,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 10,
     "scholarship": 4,
     "inference": 0
    }
@@ -9429,10 +9429,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 9,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 6,
     "scholarship": 2,
     "inference": 0
    }
@@ -9454,12 +9454,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 1,
-    "assert": 3,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 5,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "dingwu": {
@@ -9479,10 +9479,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 10,
     "scholarship": 3,
     "inference": 0
    }
@@ -9504,12 +9504,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 1,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 3
    }
   },
   "zijincheng": {
@@ -9529,12 +9529,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 5,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "lingqu": {
@@ -9554,12 +9554,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 6,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "zhaozhou": {
@@ -9579,10 +9579,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 10,
     "scholarship": 2,
     "inference": 0
    }
@@ -9604,12 +9604,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 5,
     "scholarship": 2,
-    "inference": 0
+    "inference": 3
    }
   },
   "wuwang": {
@@ -9629,9 +9629,9 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 3,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
     "scholarship": 2,
     "inference": 0
@@ -9654,12 +9654,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "chenqiao": {
@@ -9679,10 +9679,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
     "inference": 0
    }
@@ -9704,12 +9704,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 5,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "xinhai": {
@@ -9729,12 +9729,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 3,
+    "assert": 14,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 3
    }
   },
   "zhangjuzheng": {
@@ -9751,15 +9751,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 11,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "wuxu": {
@@ -9776,15 +9776,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 2,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 16,
+    "conflict": 1,
+    "gap": 1,
+    "record": 11,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "wangmang": {
@@ -9801,15 +9801,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 3,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 9,
     "scholarship": 3,
-    "inference": 0
+    "inference": 2
    }
   },
   "liangshui": {
@@ -9829,12 +9829,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "jiupin": {
@@ -9851,15 +9851,15 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 2,
     "person": 2,
-    "assert": 2,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "chensheng": {
@@ -9879,12 +9879,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "huangchao": {
@@ -9904,12 +9904,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 9,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "taiping": {
@@ -9929,12 +9929,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 3,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 3,
-    "inference": 0
+    "inference": 1
    }
   },
   "hongjin": {
@@ -9954,12 +9954,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "lvlin": {
@@ -9979,12 +9979,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 3,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 3
    }
   },
   "zhaowulian": {
@@ -10004,12 +10004,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 6,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "zhaofen": {
@@ -10029,10 +10029,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
     "inference": 0
    }
@@ -10054,12 +10054,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 3,
+    "assert": 16,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 3,
-    "inference": 0
+    "inference": 4
    }
   },
   "yuan_duo": {
@@ -10079,10 +10079,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
     "inference": 0
    }
@@ -10104,12 +10104,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
-    "scholarship": 2,
-    "inference": 0
+    "gap": 2,
+    "record": 6,
+    "scholarship": 3,
+    "inference": 2
    }
   },
   "beijiu": {
@@ -10129,12 +10129,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 11,
+    "conflict": 1,
+    "gap": 1,
+    "record": 6,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "jiuzi": {
@@ -10154,12 +10154,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 3,
+    "record": 5,
     "scholarship": 2,
-    "inference": 0
+    "inference": 3
    }
   },
   "wugu": {
@@ -10179,12 +10179,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 15,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 5
    }
   },
   "shaqiu": {
@@ -10204,12 +10204,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 5,
     "scholarship": 2,
-    "inference": 0
+    "inference": 3
    }
   },
   "baijia": {
@@ -10229,12 +10229,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 7,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 3,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "fenshu": {
@@ -10254,12 +10254,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 3
    }
   },
   "fotao": {
@@ -10279,10 +10279,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
     "inference": 0
    }
@@ -10304,12 +10304,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "zhangheng": {
@@ -10329,10 +10329,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
     "inference": 0
    }
@@ -10354,12 +10354,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 2,
+    "record": 6,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "shenkuo": {
@@ -10379,10 +10379,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 11,
+    "conflict": 1,
+    "gap": 1,
+    "record": 8,
     "scholarship": 2,
     "inference": 0
    }
@@ -10404,10 +10404,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 1,
-    "assert": 2,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "assert": 7,
+    "conflict": 1,
+    "gap": 1,
+    "record": 4,
     "scholarship": 2,
     "inference": 0
    }
@@ -10429,12 +10429,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "zhenghe": {
@@ -10454,12 +10454,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 2,
-    "assert": 2,
+    "assert": 13,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 9,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "xuanzang": {
@@ -10479,12 +10479,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 7,
     "scholarship": 2,
-    "inference": 0
+    "inference": 1
    }
   },
   "jianzhen": {
@@ -10504,12 +10504,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 2,
+    "assert": 11,
     "conflict": 0,
-    "gap": 0,
-    "record": 0,
+    "gap": 1,
+    "record": 6,
     "scholarship": 2,
-    "inference": 0
+    "inference": 2
    }
   },
   "mingmo_dangzheng": {
@@ -10736,6 +10736,22 @@ window.SANDBOX_DATA = {
   "_schema_version": "0.1",
   "leads": [
    {
+    "id": "BAIJIAG01",
+    "scene": "baijia",
+    "subject": "event:bj_schools",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
     "id": "BJG01",
     "scene": "beijing",
     "subject": "event:bj_desheng",
@@ -10750,6 +10766,38 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 16
+   },
+   {
+    "id": "BEIJIUG01",
+    "scene": "beijiu",
+    "subject": "event:bj_961",
+    "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "BENCAOG01",
+    "scene": "bencao",
+    "subject": "event:bc_1281",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 9
    },
    {
     "id": "BOJUG01",
@@ -10864,6 +10912,38 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "CHANYUANG01",
+    "scene": "chanyuan",
+    "subject": "event:cy_1005",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "SX010_M26",
+    "scene": "chanyuan",
+    "subject": "event:cy_1004",
+    "title": "宋真宗亲征兵力未载",
+    "missing": "宋史 / 军事史",
+    "where": "宋真宗亲征澶州之兵力规模",
+    "skills": [
+     "宋史",
+     "军事史"
+    ],
+    "accept": "补充宋真宗亲征兵力数据或考证",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
     "id": "CHENGPUG01",
     "scene": "chengpu",
     "subject": "event:cp_jz",
@@ -10891,6 +10971,38 @@ window.SANDBOX_DATA = {
      "军事史"
     ],
     "accept": "补充双方兵力数字及来源",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "CHENQIAOG01",
+    "scene": "chenqiao",
+    "subject": "event:cq_960a",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "CHENSHENGG01",
+    "scene": "chensheng",
+    "subject": "event:cs_209a",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
     "effort": "—",
     "issue_url": null,
     "_src_line": 13
@@ -10960,6 +11072,86 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "DINGWUG01",
+    "scene": "dingwu",
+    "subject": "event:dw_1877",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
+    "id": "DONG_HAN_YIG01",
+    "scene": "dong_han_yi",
+    "subject": "event:dy_196",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "SX008_M61",
+    "scene": "dong_han_yi",
+    "subject": "event:dy_196",
+    "title": "建安七子凋零",
+    "missing": "历史考据 / 文献比对",
+    "where": "event:dy_196 与 event:dy_217 的关联",
+    "skills": [
+     "历史考据",
+     "文献比对"
+    ],
+    "accept": "明确建安七子凋零与两次大疫的具体关联",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "DUJIANGYANG01",
+    "scene": "dujiangyan",
+    "subject": "event:dj_256",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "DUNZUNG01",
+    "scene": "dunzun",
+    "subject": "event:dz_taixue",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 3
+   },
+   {
     "id": "FEISHUIG01",
     "scene": "feishui",
     "subject": "event:fs_qin",
@@ -10990,6 +11182,54 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 12
+   },
+   {
+    "id": "FENSHUG01",
+    "scene": "fenshu",
+    "subject": "event:fs_213",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "FOTAOG01",
+    "scene": "fotao",
+    "subject": "event:ft_67",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
+    "id": "FOUR_INVG01",
+    "scene": "four_inv",
+    "subject": "event:fi_paper",
+    "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
    },
    {
     "id": "F010",
@@ -11099,6 +11339,38 @@ window.SANDBOX_DATA = {
     ],
     "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
     "effort": "2-3 周",
+    "issue_url": null,
+    "_src_line": 6
+   },
+   {
+    "id": "GRAND_CANALG01",
+    "scene": "grand_canal",
+    "subject": "event:gc_sui",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
+    "id": "GREAT_WALLG01",
+    "scene": "great_wall",
+    "subject": "event:gw_ming",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
     "issue_url": null,
     "_src_line": 6
    },
@@ -11245,6 +11517,101 @@ window.SANDBOX_DATA = {
     "_src_line": 13
    },
    {
+    "id": "HONGJING01",
+    "scene": "hongjin",
+    "subject": "event:hj_1351",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "HUANGCHAOG01",
+    "scene": "huangchao",
+    "subject": "event:hc_880",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "HUANGJING01",
+    "scene": "huangjin",
+    "subject": "event:hj_184",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "SX010_M37",
+    "scene": "huangjin",
+    "subject": "event:hj_184",
+    "title": "原文仅记公元年，未记年号",
+    "missing": "历史纪年换算",
+    "where": "synthesis",
+    "skills": [
+     "历史纪年换算"
+    ],
+    "accept": "确认中平元年对应公元184年",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "HUAXIANG01",
+    "scene": "huaxian",
+    "subject": "event:hx_main",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
+    "id": "SX006_M64",
+    "scene": "huaxian",
+    "subject": "event:hx_main",
+    "title": "八十三万有奇可能夸大",
+    "missing": "历史文献考证 / 灾害史研究",
+    "where": "event:hx_main 伤亡数字",
+    "skills": [
+     "历史文献考证",
+     "灾害史研究"
+    ],
+    "accept": "核实八十三万伤亡数字的真实性或来源",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 9
+   },
+   {
     "id": "HULAOG01",
     "scene": "hulao",
     "subject": "event:hl_wei",
@@ -11325,6 +11692,38 @@ window.SANDBOX_DATA = {
     "_src_line": 17
    },
    {
+    "id": "JIANZHENG01",
+    "scene": "jianzhen",
+    "subject": "event:jz_753",
+    "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "JIASIXIEG01",
+    "scene": "jiasixie",
+    "subject": "event:js_533",
+    "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
     "id": "JNG01",
     "scene": "jingnan",
     "subject": "event:jn_1402",
@@ -11401,6 +11800,68 @@ window.SANDBOX_DATA = {
     "effort": "1-2 周",
     "issue_url": null,
     "_src_line": 6
+   },
+   {
+    "id": "JIUPING01",
+    "scene": "jiupin",
+    "subject": "event:jp_220",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "JIUZIG01",
+    "scene": "jiuzi",
+    "subject": "event:jz_1722",
+    "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "SX009_M36",
+    "scene": "jiuzi",
+    "subject": "event:jz_1712",
+    "title": "原文未明说",
+    "missing": "史料考据",
+    "where": "康熙五十一年再废太子的具体原因",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充再废的直接原因",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "SX010_M31",
+    "scene": "jiuzi",
+    "subject": "event:jz_1722",
+    "title": "原文未明说",
+    "missing": "史料考据",
+    "where": "允禩、允禟被圈禁的具体地点",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充圈禁地点",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
    },
    {
     "id": "JH014",
@@ -11484,6 +11945,37 @@ window.SANDBOX_DATA = {
     "_src_line": 44
    },
    {
+    "id": "KEJUG01",
+    "scene": "keju",
+    "subject": "event:kj_1905",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
+    "id": "SX010_M24",
+    "scene": "keju",
+    "subject": "event:kj_1905",
+    "title": "宋以后科举演变未述",
+    "missing": "历史考证",
+    "where": "宋景德年间之后",
+    "skills": [
+     "历史考证"
+    ],
+    "accept": "补充宋后科举制度演变",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
     "id": "KUNYANGG01",
     "scene": "kunyang",
     "subject": "event:ky_wan",
@@ -11514,6 +12006,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 15
+   },
+   {
+    "id": "LIANGSHUIG01",
+    "scene": "liangshui",
+    "subject": "event:ls_780",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
    },
    {
     "id": "L016",
@@ -11564,6 +12072,180 @@ window.SANDBOX_DATA = {
     "_src_line": 20
    },
    {
+    "id": "LINGQUG01",
+    "scene": "lingqu",
+    "subject": "event:lq_214",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "SX009_M49",
+    "scene": "lingqu",
+    "subject": "event:lq_214",
+    "title": "史禄为秦监",
+    "missing": "秦汉官制 / 文献考据",
+    "where": "史禄官职考",
+    "skills": [
+     "秦汉官制",
+     "文献考据"
+    ],
+    "accept": "补充史禄任监御史或都水长等确切官职记载",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "LITTLE_ICEG01",
+    "scene": "little_ice",
+    "subject": "event:li_1640",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "SX006_M65",
+    "scene": "little_ice",
+    "subject": "event:li_1640",
+    "title": "原文未载李自成具体活动",
+    "missing": "史料检索 / 年号换算",
+    "where": "event:li_1640",
+    "skills": [
+     "史料检索",
+     "年号换算"
+    ],
+    "accept": "补充崇祯元年至十一年间李自成活动记录",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "LIXUEG01",
+    "scene": "lixue",
+    "subject": "event:lx_1175",
+    "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "LIZICHENGG01",
+    "scene": "lizicheng",
+    "subject": "event:lc_1644",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
+   },
+   {
+    "id": "SX010_M39",
+    "scene": "lizicheng",
+    "subject": "event:lc_1645",
+    "title": "南走而殁",
+    "missing": "明清史 / 史料考据",
+    "where": "南走路线与死亡地点",
+    "skills": [
+     "明清史",
+     "史料考据"
+    ],
+    "accept": "考证李自成南走具体路线及死亡详情",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
+    "id": "LOCUSTG01",
+    "scene": "locust",
+    "subject": "event:lc_622",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "LVLING01",
+    "scene": "lvlin",
+    "subject": "event:ll_23",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
+   },
+   {
+    "id": "SX011_M19",
+    "scene": "lvlin",
+    "subject": "event:ll_17",
+    "title": "首领未明",
+    "missing": "历史考证",
+    "where": "绿林军首领身份",
+    "skills": [
+     "历史考证"
+    ],
+    "accept": "补充绿林军主要首领姓名",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "SX012_M14",
+    "scene": "lvlin",
+    "subject": "event:ll_23",
+    "title": "战役过程缺失",
+    "missing": "军事史",
+    "where": "昆阳之战具体经过",
+    "skills": [
+     "军事史"
+    ],
+    "accept": "补充昆阳之战双方兵力与战术",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
     "id": "MALINGG01",
     "scene": "maling",
     "subject": "event:ml_jz",
@@ -11578,6 +12260,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 15
+   },
+   {
+    "id": "MING_FALLG01",
+    "scene": "ming_fall",
+    "subject": "event:mf_1644_3",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
    },
    {
     "id": "DZ014",
@@ -11912,6 +12610,22 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "QING_HANG01",
+    "scene": "qing_han",
+    "subject": "event:qh_1645",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
     "id": "A092",
     "scene": "sarhu",
     "subject": "event:sarhu_battle",
@@ -12024,6 +12738,54 @@ window.SANDBOX_DATA = {
     "_src_line": 84
    },
    {
+    "id": "SHANGYANGG01",
+    "scene": "shangyang",
+    "subject": "event:sy_350",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "SHAQIUG01",
+    "scene": "shaqiu",
+    "subject": "event:sq_210",
+    "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "SHENKUOG01",
+    "scene": "shenkuo",
+    "subject": "event:sk_1072",
+    "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
     "id": "S021",
     "scene": "shenyang",
     "subject": "place:shenyang_cheng",
@@ -12090,6 +12852,22 @@ window.SANDBOX_DATA = {
     "_src_line": 48
    },
    {
+    "id": "SONG_HE_JUEG01",
+    "scene": "song_he_jue",
+    "subject": "event:hj_1019",
+    "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
     "id": "SJ015",
     "scene": "songjin",
     "subject": "event:songjin_songshan_fall",
@@ -12104,6 +12882,38 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 15
+   },
+   {
+    "id": "SUI_DAXINGG01",
+    "scene": "sui_daxing",
+    "subject": "event:dx_582",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "SUI_MIE_CHENG01",
+    "scene": "sui_mie_chen",
+    "subject": "event:sm_589",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
    },
    {
     "id": "SUIYANGG01",
@@ -12136,6 +12946,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "TAIPINGG01",
+    "scene": "taiping",
+    "subject": "event:tp_1851",
+    "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
    },
    {
     "id": "SX010_M17",
@@ -12265,6 +13091,133 @@ window.SANDBOX_DATA = {
     "_src_line": 15
    },
    {
+    "id": "SX006_M45",
+    "scene": "wanganshi",
+    "subject": "event:wa_1085",
+    "title": "新法渐弛后未明述结局",
+    "missing": "史料考据",
+    "where": "event:wa_1085",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充新法废止的具体时间与过程",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 9
+   },
+   {
+    "id": "WANGANSHIG01",
+    "scene": "wanganshi",
+    "subject": "event:wa_1069",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
+    "id": "WANGMANGG01",
+    "scene": "wangmang",
+    "subject": "event:wm_9",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "WENCHENGG01",
+    "scene": "wencheng",
+    "subject": "event:wc_641",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "WUGUG01",
+    "scene": "wugu",
+    "subject": "event:wg_war",
+    "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
+   },
+   {
+    "id": "WUWANGG01",
+    "scene": "wuwang",
+    "subject": "event:ww_1048",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 3
+   },
+   {
+    "id": "WUXUG01",
+    "scene": "wuxu",
+    "subject": "event:wx_0908",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "XIAOWENG01",
+    "scene": "xiaowen",
+    "subject": "event:xw_494",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
     "id": "XIAOYAOJING01",
     "scene": "xiaoyaojin",
     "subject": "event:xy_jz",
@@ -12279,6 +13232,54 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "XINHAIG01",
+    "scene": "xinhai",
+    "subject": "event:xh_1010",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
+   },
+   {
+    "id": "XUANWUG01",
+    "scene": "xuanwu",
+    "subject": "event:xx_626",
+    "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "XUANZANGG01",
+    "scene": "xuanzang",
+    "subject": "event:xz_629",
+    "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
    },
    {
     "id": "YAKSAG01",
@@ -12345,6 +13346,38 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "YASHANG01",
+    "scene": "yashan",
+    "subject": "event:ys_1279",
+    "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "YS006",
+    "scene": "yashan",
+    "subject": "event:ys_1279",
+    "title": "宋军千艘，元军数不详",
+    "missing": "史料考据 / 宋元战争史",
+    "where": "event:ys_1279",
+    "skills": [
+     "史料考据",
+     "宋元战争史"
+    ],
+    "accept": "补充元军参战兵力及双方对比的可靠史料",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 8
+   },
+   {
     "id": "Y010",
     "scene": "yehe",
     "subject": "place:xiyehe",
@@ -12409,6 +13442,134 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "YUAN_DUOG01",
+    "scene": "yuan_duo",
+    "subject": "event:yu_1276",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZHANGHENGG01",
+    "scene": "zhangheng",
+    "subject": "event:zh_132",
+    "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZHANGJUZHENGG01",
+    "scene": "zhangjuzheng",
+    "subject": "event:zj_1573",
+    "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "ZHANGQIANG01",
+    "scene": "zhangqian",
+    "subject": "event:zq_138",
+    "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZHAOFENG01",
+    "scene": "zhaofen",
+    "subject": "event:zf_peace",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZHAOWULIANG01",
+    "scene": "zhaowulian",
+    "subject": "event:zw_war",
+    "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZHAOZHOUG01",
+    "scene": "zhaozhou",
+    "subject": "event:zz_595",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
+    "id": "ZHENGHEG01",
+    "scene": "zhenghe",
+    "subject": "event:zh_1405",
+    "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 13
+   },
+   {
     "id": "SX009_M23",
     "scene": "zhongli",
     "subject": "event:zl_wei",
@@ -12439,6 +13600,68 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 13
+   },
+   {
+    "id": "SX008_M69",
+    "scene": "zijincheng",
+    "subject": "event:zj_1420",
+    "title": "迁都次年",
+    "missing": "史料考据",
+    "where": "synthesis",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "确认迁都北京的具体年份",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
+    "id": "ZIJINCHENGG01",
+    "scene": "zijincheng",
+    "subject": "event:zj_1420",
+    "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "SX009_M28",
+    "scene": "zuchongzhi",
+    "subject": "event:zc_463",
+    "title": "原文无年号纪年",
+    "missing": "历史纪年",
+    "where": "原文时间表述",
+    "skills": [
+     "历史纪年"
+    ],
+    "accept": "补充年号纪年",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
+   },
+   {
+    "id": "ZUCHONGZHIG01",
+    "scene": "zuchongzhi",
+    "subject": "event:zc_463",
+    "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
    }
   ]
  },
@@ -12591,12 +13814,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "baijia",
     "name": "baijia",
-    "total": 2,
+    "total": 7,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 3,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 7
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12625,12 +13851,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "beijiu",
     "name": "beijiu",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12641,12 +13870,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "bencao",
     "name": "bencao",
-    "total": 2,
+    "total": 9,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 9
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12751,12 +13982,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "chanyuan",
     "name": "chanyuan",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 3,
+     "record": 6,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12785,12 +14019,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "chenqiao",
     "name": "chenqiao",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12801,12 +14037,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "chensheng",
     "name": "chensheng",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12873,12 +14112,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "dingwu",
     "name": "dingwu",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 10,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -12889,12 +14130,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "dong_han_yi",
     "name": "dong_han_yi",
-    "total": 3,
+    "total": 12,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 5,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 3,
@@ -12905,12 +14149,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "dujiangyan",
     "name": "dujiangyan",
-    "total": 3,
+    "total": 13,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 3,
@@ -12921,12 +14168,13 @@ window.SANDBOX_DATA = {
    {
     "scene": "dunzun",
     "name": "dunzun",
-    "total": 2,
+    "total": 3,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 3
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12956,12 +14204,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "fenshu",
     "name": "fenshu",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 3,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12972,12 +14223,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "fotao",
     "name": "fotao",
-    "total": 2,
+    "total": 10,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 10
     },
     "faction_counts": {},
     "event_count": 2,
@@ -12988,12 +14241,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "four_inv",
     "name": "four_inv",
-    "total": 4,
+    "total": 15,
     "layers": {
-     "scholarship": 4
+     "scholarship": 4,
+     "record": 10,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 4
+     "综合史料": 15
     },
     "faction_counts": {},
     "event_count": 4,
@@ -13082,12 +14337,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "grand_canal",
     "name": "grand_canal",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 8,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13098,12 +14356,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "great_wall",
     "name": "great_wall",
-    "total": 3,
+    "total": 6,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 6
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13213,12 +14473,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "hongjin",
     "name": "hongjin",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13229,12 +14492,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "huangchao",
     "name": "huangchao",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 9,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13261,12 +14527,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "huangjin",
     "name": "huangjin",
-    "total": 3,
+    "total": 12,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 5,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13277,12 +14546,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "huaxian",
     "name": "huaxian",
-    "total": 3,
+    "total": 10,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 5,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 10
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13351,12 +14622,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "jianzhen",
     "name": "jianzhen",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13367,12 +14641,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "jiasixie",
     "name": "jiasixie",
-    "total": 2,
+    "total": 7,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 4,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 7
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13442,14 +14718,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "jiupin",
     "name": "jiupin",
-    "total": 2,
+    "total": 14,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 9,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 12,
+     "官修史书": 1,
+     "私家著述": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "menfa": 1,
+     "hanmen": 1
+    },
     "event_count": 2,
     "avg_resonance": 0.0,
     "best_event": "event:jp_220",
@@ -13458,12 +14742,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "jiuzi",
     "name": "jiuzi",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 5,
+     "inference": 3,
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13555,12 +14842,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "keju",
     "name": "keju",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13590,12 +14880,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "liangshui",
     "name": "liangshui",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13629,12 +14922,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "lingqu",
     "name": "lingqu",
-    "total": 2,
+    "total": 12,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13645,12 +14941,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "little_ice",
     "name": "little_ice",
-    "total": 5,
+    "total": 12,
     "layers": {
-     "scholarship": 5
+     "scholarship": 5,
+     "record": 3,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 5
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 5,
@@ -13661,12 +14960,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "lixue",
     "name": "lixue",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13677,12 +14979,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "lizicheng",
     "name": "lizicheng",
-    "total": 4,
+    "total": 15,
     "layers": {
-     "scholarship": 4
+     "scholarship": 4,
+     "record": 7,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 4
+     "综合史料": 15
     },
     "faction_counts": {},
     "event_count": 4,
@@ -13693,12 +14998,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "locust",
     "name": "locust",
-    "total": 5,
+    "total": 12,
     "layers": {
-     "scholarship": 5
+     "scholarship": 5,
+     "record": 5,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 5
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 5,
@@ -13709,12 +15017,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "lvlin",
     "name": "lvlin",
-    "total": 2,
+    "total": 15,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 3,
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 15
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13743,12 +15054,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "ming_fall",
     "name": "ming_fall",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 6,
+     "inference": 4,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13892,12 +15206,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "qing_han",
     "name": "qing_han",
-    "total": 3,
+    "total": 16,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 8,
+     "inference": 4,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 16
     },
     "faction_counts": {},
     "event_count": 3,
@@ -13932,14 +15249,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "shangyang",
     "name": "shangyang",
-    "total": 3,
+    "total": 17,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 11,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14,
+     "法家典籍": 1,
+     "官修史书": 2
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "fajia": 1,
+     "guizu": 2
+    },
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:sy_338",
@@ -13948,12 +15273,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "shaqiu",
     "name": "shaqiu",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 5,
+     "inference": 3,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -13964,12 +15292,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "shenkuo",
     "name": "shenkuo",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14004,12 +15334,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "song_he_jue",
     "name": "song_he_jue",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "inference": 3,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -14039,12 +15372,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "sui_daxing",
     "name": "sui_daxing",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 5,
+     "inference": 3,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14055,12 +15391,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "sui_mie_chen",
     "name": "sui_mie_chen",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14090,12 +15429,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "taiping",
     "name": "taiping",
-    "total": 3,
+    "total": 12,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 3,
@@ -14221,14 +15563,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "wanganshi",
     "name": "wanganshi",
-    "total": 3,
+    "total": 13,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "gap": 2,
+     "inference": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 11,
+     "旧党文献": 1,
+     "新党文献": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "jiudang": 1,
+     "xindang": 1
+    },
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:wa_1069",
@@ -14237,14 +15587,20 @@ window.SANDBOX_DATA = {
    {
     "scene": "wangmang",
     "name": "wangmang",
-    "total": 3,
+    "total": 15,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 9,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 13,
+     "官修史书": 2
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "han_zongshi": 2
+    },
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:wm_9",
@@ -14253,12 +15609,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "wencheng",
     "name": "wencheng",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14269,12 +15628,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "wugu",
     "name": "wugu",
-    "total": 2,
+    "total": 15,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 5,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 15
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14285,12 +15647,13 @@ window.SANDBOX_DATA = {
    {
     "scene": "wuwang",
     "name": "wuwang",
-    "total": 2,
+    "total": 3,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 3
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14301,14 +15664,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "wuxu",
     "name": "wuxu",
-    "total": 2,
+    "total": 16,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 11,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 14,
+     "帝党文献": 1,
+     "官修史书": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "didang": 1,
+     "houding": 1
+    },
     "event_count": 2,
     "avg_resonance": 0.0,
     "best_event": "event:wx_0611",
@@ -14317,14 +15688,20 @@ window.SANDBOX_DATA = {
    {
     "scene": "xiaowen",
     "name": "xiaowen",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 10,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 11,
+     "官修史书": 3
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "hanhua": 1,
+     "baoshou": 2
+    },
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:xw_493",
@@ -14352,12 +15729,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "xinhai",
     "name": "xinhai",
-    "total": 3,
+    "total": 14,
     "layers": {
-     "scholarship": 3
+     "scholarship": 3,
+     "record": 7,
+     "inference": 3,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 14
     },
     "faction_counts": {},
     "event_count": 3,
@@ -14368,14 +15748,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "xuanwu",
     "name": "xuanwu",
-    "total": 2,
+    "total": 16,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 12,
+     "gap": 1,
+     "inference": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 14,
+     "编年史": 1,
+     "官修史书": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "donggong": 1,
+     "qinwang": 1
+    },
     "event_count": 2,
     "avg_resonance": 0.0,
     "best_event": "event:xx_626",
@@ -14384,12 +15772,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "xuanzang",
     "name": "xuanzang",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14477,12 +15868,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "yashan",
     "name": "yashan",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 5,
+     "gap": 2,
+     "inference": 2
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14549,12 +15943,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "yuan_duo",
     "name": "yuan_duo",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14565,12 +15961,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhangheng",
     "name": "zhangheng",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14581,14 +15979,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhangjuzheng",
     "name": "zhangjuzheng",
-    "total": 2,
+    "total": 15,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 11,
+     "gap": 1,
+     "inference": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13,
+     "内阁文献": 1,
+     "私家笔记": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "neige": 1,
+     "qingliu": 1
+    },
     "event_count": 2,
     "avg_resonance": 0.0,
     "best_event": "event:zj_1573",
@@ -14597,12 +16003,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhangqian",
     "name": "zhangqian",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 7,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14613,12 +16022,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhaofen",
     "name": "zhaofen",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 8,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14629,12 +16040,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhaowulian",
     "name": "zhaowulian",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "inference": 2,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14645,12 +16059,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhaozhou",
     "name": "zhaozhou",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 10,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14661,12 +16077,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "zhenghe",
     "name": "zhenghe",
-    "total": 2,
+    "total": 13,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 9,
+     "inference": 1,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 13
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14696,12 +16115,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "zijincheng",
     "name": "zijincheng",
-    "total": 2,
+    "total": 11,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 5,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 11
     },
     "faction_counts": {},
     "event_count": 2,
@@ -14712,12 +16134,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "zuchongzhi",
     "name": "zuchongzhi",
-    "total": 2,
+    "total": 12,
     "layers": {
-     "scholarship": 2
+     "scholarship": 2,
+     "record": 6,
+     "inference": 2,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 2
+     "综合史料": 12
     },
     "faction_counts": {},
     "event_count": 2,

@@ -56,7 +56,7 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "id": "xuanzang2",
    "name": "玄奘",
    "side": "唐",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "taizong2",
@@ -101,10 +101,218 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "place": "changan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M56",
+   "subject": "event:xz_629",
+   "predicate": "出发",
+   "value_text": "玄奘私发长安，西行求法",
+   "time": {
+    "era_text": "贞观元年",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "贞观元年，玄奘私发长安，西行求法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M57",
+   "subject": "event:xz_629",
+   "predicate": "路线",
+   "value_text": "历葱岭、天竺",
+   "time": {
+    "era_text": "贞观元年",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "历葱岭、天竺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "葱岭、天竺未在白名单，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M55",
+   "subject": "event:xz_645",
+   "predicate": "归国",
+   "value_text": "玄奘归国",
+   "time": {
+    "era_text": "贞观十九年",
+    "start": "645-01-01",
+    "end": "645-12-31",
+    "gregorian_year": 645
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "贞观十九年归国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M57",
+   "subject": "event:xz_645",
+   "predicate": "译经",
+   "value_text": "译经于慈恩寺",
+   "time": {
+    "era_text": "贞观十九年",
+    "start": "645-01-01",
+    "end": "645-12-31",
+    "gregorian_year": 645
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "译经于慈恩寺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "慈恩寺未在白名单，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M55",
+   "subject": "person:xuanzang2",
+   "predicate": "著书",
+   "value_text": "著《大唐西域记》",
+   "time": {
+    "era_text": "贞观十九年",
+    "start": "645-01-01",
+    "end": "645-12-31",
+    "gregorian_year": 645
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "著《大唐西域记》",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M54",
+   "subject": "person:xuanzang2",
+   "predicate": "身份",
+   "value_text": "玄奘为求法僧",
+   "time": {
+    "era_text": "贞观元年",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "西行求法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "由'求法'推断其身份",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M51",
+   "subject": "event:xz_629",
+   "predicate": "性质",
+   "value_text": "玄奘私发，未经官方批准",
+   "time": {
+    "era_text": "贞观元年",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "私发长安",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M51",
+   "subject": "event:xz_645",
+   "predicate": "成果",
+   "value_text": "归国后译经著书",
+   "time": {
+    "era_text": "贞观十九年",
+    "start": "645-01-01",
+    "end": "645-12-31",
+    "gregorian_year": 645
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "归国，译经于慈恩寺，著《大唐西域记》",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XUANZANGG01",
+   "subject": "event:xz_629",
+   "predicate": "史料缺环",
+   "value_text": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "time": {
+    "era_text": "贞观",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "frontier",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "XUANZANGG01"
+ ],
  "events": [
   {
    "id": "ev_xz_629",

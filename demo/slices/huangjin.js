@@ -125,10 +125,226 @@ window.SANDBOX_SLICES["huangjin"] = {
    "place": "guangzong",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M61",
+   "subject": "event:hj_184",
+   "predicate": "爆发",
+   "value_text": "张角以太平道倡言苍天已死、黄天当立，三十六方并起",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "公元184年张角以太平道倡言苍天已死、黄天当立，三十六方并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文用公元纪年，年号据史实补为中平元年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M62",
+   "subject": "event:hj_184",
+   "predicate": "参与者",
+   "value_text": "张角",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "张角以太平道倡言",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M60",
+   "subject": "event:hj_184",
+   "predicate": "口号",
+   "value_text": "苍天已死、黄天当立",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "倡言苍天已死、黄天当立",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M62",
+   "subject": "event:hj_184",
+   "predicate": "规模",
+   "value_text": "三十六方并起",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "三十六方并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M60",
+   "subject": "event:hj_184",
+   "predicate": "别称",
+   "value_text": "黄巾之乱",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "黄巾之乱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M56",
+   "subject": "event:hj_spread",
+   "predicate": "波及范围",
+   "value_text": "三十六方并起，波及全国",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "guangzong",
+   "source": "synthesis",
+   "quote": "三十六方并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "由三十六方并起推断波及范围广",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M42",
+   "subject": "event:hj_184",
+   "predicate": "持续时间",
+   "value_text": "约八年",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "公元184年……公元192年乱平",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "由起止年份推算",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M37",
+   "subject": "event:hj_184",
+   "predicate": "史料矛盾",
+   "value_text": "原文仅记公元年，未记年号",
+   "time": {
+    "era_text": "中平元年",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "source": "synthesis",
+   "quote": "公元184年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文用公元纪年，年号系补注，需核验",
+   "lead": {
+    "where": "synthesis",
+    "skills": [
+     "历史纪年换算"
+    ],
+    "accept": "确认中平元年对应公元184年"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HUANGJING01",
+   "subject": "event:hj_184",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "中平",
+    "start": "184-01-01",
+    "end": "184-12-31",
+    "gregorian_year": 184
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX010_M37",
+  "HUANGJING01"
+ ],
  "events": [
   {
    "id": "ev_hj_184",

@@ -63,7 +63,7 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "id": "rongrui",
    "name": "荣叡",
    "side": "日僧",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -102,10 +102,218 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "place": "heijokyo",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "JZ001",
+   "subject": "event:jz_743",
+   "predicate": "发起",
+   "value_text": "日僧荣叡、普照请鉴真东渡",
+   "time": {
+    "era_text": "天宝元年",
+    "start": "742-01-01",
+    "end": "742-12-31",
+    "gregorian_year": 742
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "日僧荣叡、普照请鉴真东渡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ002",
+   "subject": "event:jz_753",
+   "predicate": "抵达",
+   "value_text": "鉴真抵日本",
+   "time": {
+    "era_text": "天宝十二载",
+    "start": "753-01-01",
+    "end": "753-12-31",
+    "gregorian_year": 753
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "鉴真抵日本",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ003",
+   "subject": "event:jz_753",
+   "predicate": "建寺",
+   "value_text": "于奈良建唐招提寺",
+   "time": {
+    "era_text": "天宝十二载",
+    "start": "753-01-01",
+    "end": "753-12-31",
+    "gregorian_year": 753
+   },
+   "place": "heijokyo",
+   "source": "synthesis",
+   "quote": "于奈良建唐招提寺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ004",
+   "subject": "event:jz_753",
+   "predicate": "传播",
+   "value_text": "传律宗、医方",
+   "time": {
+    "era_text": "天宝十二载",
+    "start": "753-01-01",
+    "end": "753-12-31",
+    "gregorian_year": 753
+   },
+   "place": "heijokyo",
+   "source": "synthesis",
+   "quote": "传律宗、医方",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ005",
+   "subject": "event:jz_753",
+   "predicate": "影响",
+   "value_text": "文化东被",
+   "time": {
+    "era_text": "天宝十二载",
+    "start": "753-01-01",
+    "end": "753-12-31",
+    "gregorian_year": 753
+   },
+   "place": "heijokyo",
+   "source": "synthesis",
+   "quote": "文化东被",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ006",
+   "subject": "person:jianzhen2",
+   "predicate": "身份",
+   "value_text": "鉴真为律宗高僧",
+   "time": {
+    "era_text": "天宝元年",
+    "start": "742-01-01",
+    "end": "742-12-31",
+    "gregorian_year": 742
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "鉴真",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文未明说身份，据史实推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ007",
+   "subject": "person:rongrui",
+   "predicate": "身份",
+   "value_text": "荣叡为日僧",
+   "time": {
+    "era_text": "天宝元年",
+    "start": "742-01-01",
+    "end": "742-12-31",
+    "gregorian_year": 742
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "日僧荣叡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JZ008",
+   "subject": "event:jz_743",
+   "predicate": "时间跨度",
+   "value_text": "从请愿到抵达历时十二年",
+   "time": {
+    "era_text": "天宝元年",
+    "start": "742-01-01",
+    "end": "742-12-31",
+    "gregorian_year": 742
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天宝元年…天宝十二载",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "由两时间点推算",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIANZHENG01",
+   "subject": "event:jz_753",
+   "predicate": "史料缺环",
+   "value_text": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "time": {
+    "era_text": "天宝",
+    "start": "742-01-01",
+    "end": "742-12-31",
+    "gregorian_year": 742
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "frontier",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "JIANZHENG01"
+ ],
  "events": [
   {
    "id": "ev_jz_743",

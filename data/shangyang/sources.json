@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "商鞅变法·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "变法内容据《史记·商君列传》《韩非子》综合，部分细节（如刑公子虔）有史家考辨。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "商鞅变法·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "变法内容据《史记·商君列传》《韩非子》综合，部分细节（如刑公子虔）有史家考辨。"
+    },
+    {
+      "id": "shangjunshu",
+      "title": "《商君书》",
+      "name": "《商君书》",
+      "party": "法家典籍",
+      "faction": "fajia",
+      "bias_note": "法家变法派自述，系统陈述农战、刑赏、弱民强君之术。"
+    },
+    {
+      "id": "shiji_sy",
+      "title": "《史记·商君列传》",
+      "name": "《史记·商君列传》",
+      "party": "官修史书",
+      "faction": "guizu",
+      "bias_note": "司马迁记商鞅变法与宗室贵族（甘龙、杜挚、公子虔）之冲突，兼录反对言论。"
+    }
+  ]
 }

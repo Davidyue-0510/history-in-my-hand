@@ -2,8 +2,8 @@
   "scenes_total": 130,
   "historical": 56,
   "fictional": 74,
-  "assertions_total": 1381,
-  "sources_total": 62,
+  "assertions_total": 1966,
+  "sources_total": 78,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 107,
+  "leads_total": 184,
   "per_scene": [
     {
       "id": "sarhu",
@@ -490,42 +490,42 @@
       "id": "locust",
       "title": "蝗灾",
       "kind": "disaster",
-      "assertions": 5,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "huaxian",
       "title": "华县大地震",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "little_ice",
       "title": "明末小冰期饥荒",
       "kind": "disaster",
-      "assertions": 5,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "grand_canal",
       "title": "大运河",
       "kind": "engineering",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "dujiangyan",
       "title": "都江堰",
       "kind": "engineering",
-      "assertions": 3,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "great_wall",
       "title": "长城",
       "kind": "engineering",
-      "assertions": 3,
+      "assertions": 6,
       "factions": {}
     },
     {
@@ -539,57 +539,69 @@
       "id": "ming_fall",
       "title": "明亡·崇祯自缢",
       "kind": "dynasty",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "shangyang",
       "title": "商鞅变法",
       "kind": "reform",
-      "assertions": 3,
-      "factions": {}
+      "assertions": 17,
+      "factions": {
+        "fajia": 1,
+        "guizu": 2
+      }
     },
     {
       "id": "wanganshi",
       "title": "王安石变法",
       "kind": "reform",
-      "assertions": 3,
-      "factions": {}
+      "assertions": 13,
+      "factions": {
+        "jiudang": 1,
+        "xindang": 1
+      }
     },
     {
       "id": "huangjin",
       "title": "黄巾起义",
       "kind": "uprising",
-      "assertions": 3,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "lizicheng",
       "title": "李自成起义",
       "kind": "uprising",
-      "assertions": 4,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "xiaowen",
       "title": "孝文帝汉化",
       "kind": "fusion",
-      "assertions": 3,
-      "factions": {}
+      "assertions": 14,
+      "factions": {
+        "hanhua": 1,
+        "baoshou": 2
+      }
     },
     {
       "id": "wencheng",
       "title": "文成公主入藏",
       "kind": "fusion",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "xuanwu",
       "title": "玄武门之变",
       "kind": "court",
-      "assertions": 2,
-      "factions": {}
+      "assertions": 16,
+      "factions": {
+        "donggong": 1,
+        "qinwang": 1
+      }
     },
     {
       "id": "jingnan",
@@ -602,329 +614,340 @@
       "id": "dunzun",
       "title": "独尊儒术",
       "kind": "thought",
-      "assertions": 2,
+      "assertions": 3,
       "factions": {}
     },
     {
       "id": "keju",
       "title": "科举制",
       "kind": "thought",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "four_inv",
       "title": "四大发明",
       "kind": "tech",
-      "assertions": 4,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "bencao",
       "title": "本草纲目·授时历",
       "kind": "tech",
-      "assertions": 2,
+      "assertions": 9,
       "factions": {}
     },
     {
       "id": "dong_han_yi",
       "title": "东汉大疫",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "dingwu",
       "title": "丁戊奇荒",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "song_he_jue",
       "title": "北宋滑州河决",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "zijincheng",
       "title": "紫禁城营建",
       "kind": "engineering",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "lingqu",
       "title": "灵渠",
       "kind": "engineering",
-      "assertions": 2,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "zhaozhou",
       "title": "赵州桥",
       "kind": "engineering",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "sui_daxing",
       "title": "隋大兴城",
       "kind": "engineering",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "wuwang",
       "title": "武王克商",
       "kind": "dynasty",
-      "assertions": 2,
+      "assertions": 3,
       "factions": {}
     },
     {
       "id": "sui_mie_chen",
       "title": "隋灭陈",
       "kind": "dynasty",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "chenqiao",
       "title": "陈桥兵变",
       "kind": "dynasty",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "yashan",
       "title": "崖山之战",
       "kind": "dynasty",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "xinhai",
       "title": "辛亥革命",
       "kind": "dynasty",
-      "assertions": 3,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "zhangjuzheng",
       "title": "张居正改革",
       "kind": "reform",
-      "assertions": 2,
-      "factions": {}
+      "assertions": 15,
+      "factions": {
+        "neige": 1,
+        "qingliu": 1
+      }
     },
     {
       "id": "wuxu",
       "title": "戊戌变法",
       "kind": "reform",
-      "assertions": 2,
-      "factions": {}
+      "assertions": 16,
+      "factions": {
+        "didang": 1,
+        "houding": 1
+      }
     },
     {
       "id": "wangmang",
       "title": "王莽改制",
       "kind": "reform",
-      "assertions": 3,
-      "factions": {}
+      "assertions": 15,
+      "factions": {
+        "han_zongshi": 2
+      }
     },
     {
       "id": "liangshui",
       "title": "两税法",
       "kind": "reform",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "jiupin",
       "title": "九品中正制",
       "kind": "reform",
-      "assertions": 2,
-      "factions": {}
+      "assertions": 14,
+      "factions": {
+        "menfa": 1,
+        "hanmen": 1
+      }
     },
     {
       "id": "chensheng",
       "title": "陈胜吴广起义",
       "kind": "uprising",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "huangchao",
       "title": "黄巢起义",
       "kind": "uprising",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "taiping",
       "title": "太平天国",
       "kind": "uprising",
-      "assertions": 3,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "hongjin",
       "title": "红巾军",
       "kind": "uprising",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "lvlin",
       "title": "绿林赤眉",
       "kind": "uprising",
-      "assertions": 2,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "zhaowulian",
       "title": "赵武灵王胡服骑射",
       "kind": "fusion",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "zhaofen",
       "title": "昭君出塞",
       "kind": "fusion",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "qing_han",
       "title": "清满汉融合",
       "kind": "fusion",
-      "assertions": 3,
+      "assertions": 16,
       "factions": {}
     },
     {
       "id": "yuan_duo",
       "title": "元多元一体",
       "kind": "fusion",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "chanyuan",
       "title": "澶渊之盟",
       "kind": "fusion",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "beijiu",
       "title": "杯酒释兵权",
       "kind": "court",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "jiuzi",
       "title": "九子夺嫡",
       "kind": "court",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "wugu",
       "title": "巫蛊之祸",
       "kind": "court",
-      "assertions": 2,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "shaqiu",
       "title": "沙丘之变",
       "kind": "court",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "baijia",
       "title": "百家争鸣",
       "kind": "thought",
-      "assertions": 2,
+      "assertions": 7,
       "factions": {}
     },
     {
       "id": "fenshu",
       "title": "焚书坑儒",
       "kind": "thought",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "fotao",
       "title": "佛教传入",
       "kind": "thought",
-      "assertions": 2,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "lixue",
       "title": "宋明理学",
       "kind": "thought",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "zhangheng",
       "title": "张衡地动仪",
       "kind": "tech",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "zuchongzhi",
       "title": "祖冲之圆周率",
       "kind": "tech",
-      "assertions": 2,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "shenkuo",
       "title": "沈括梦溪笔谈",
       "kind": "tech",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "jiasixie",
       "title": "齐民要术",
       "kind": "tech",
-      "assertions": 2,
+      "assertions": 7,
       "factions": {}
     },
     {
       "id": "zhangqian",
       "title": "张骞通西域",
       "kind": "frontier",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "zhenghe",
       "title": "郑和下西洋",
       "kind": "frontier",
-      "assertions": 2,
+      "assertions": 13,
       "factions": {}
     },
     {
       "id": "xuanzang",
       "title": "玄奘西行",
       "kind": "frontier",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {
       "id": "jianzhen",
       "title": "鉴真东渡",
       "kind": "frontier",
-      "assertions": 2,
+      "assertions": 11,
       "factions": {}
     },
     {

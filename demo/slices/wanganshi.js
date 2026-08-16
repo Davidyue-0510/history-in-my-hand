@@ -29,6 +29,22 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "party": "综合史料",
    "availability": "not_free",
    "bias_note": "新法利弊争议千年，司马光等旧党力诋；此处综合《宋史》与近代研究，不偏一方。"
+  },
+  {
+   "id": "lin_chuan_ji",
+   "title": "《临川先生文集》",
+   "name": "《临川先生文集》",
+   "party": "新党文献",
+   "faction": "xindang",
+   "bias_note": "王安石自著，系统陈述变法理念与理财主张。"
+  },
+  {
+   "id": "wen_gong_ji",
+   "title": "《温国文正司马公文集》",
+   "name": "《温国文正司马公文集》",
+   "party": "旧党文献",
+   "faction": "jiudang",
+   "bias_note": "司马光奏议，力陈新法之弊、请废诸法。"
   }
  ],
  "places": [
@@ -46,7 +62,7 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "id": "wanganshi",
    "name": "王安石",
    "side": "新党",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "simaguang",
@@ -109,10 +125,248 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "place": "kaifeng",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M47",
+   "subject": "event:wa_1069",
+   "predicate": "开始变法",
+   "value_text": "熙宁二年王安石任参知政事，行新法",
+   "time": {
+    "era_text": "熙宁二年",
+    "start": "1069-01-01",
+    "end": "1069-12-31",
+    "gregorian_year": 1069
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "熙宁二年，宋神宗任王安石参知政事",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M48",
+   "subject": "event:wa_1069",
+   "predicate": "推行新法",
+   "value_text": "行青苗、募役、农田水利、保甲诸法",
+   "time": {
+    "era_text": "熙宁二年",
+    "start": "1069-01-01",
+    "end": "1069-12-31",
+    "gregorian_year": 1069
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "行青苗、募役、农田水利、保甲诸法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M46",
+   "subject": "person:wanganshi",
+   "predicate": "任职",
+   "value_text": "任参知政事",
+   "time": {
+    "era_text": "熙宁二年",
+    "start": "1069-01-01",
+    "end": "1069-12-31",
+    "gregorian_year": 1069
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "宋神宗任王安石参知政事",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M48",
+   "subject": "event:wa_1070",
+   "predicate": "罢相",
+   "value_text": "熙宁七年罢相",
+   "time": {
+    "era_text": "熙宁七年",
+    "start": "1074-01-01",
+    "end": "1074-12-31",
+    "gregorian_year": 1074
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "熙宁七年罢相",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M46",
+   "subject": "event:wa_1070",
+   "predicate": "新法渐弛",
+   "value_text": "新法渐弛",
+   "time": {
+    "era_text": "熙宁七年",
+    "start": "1074-01-01",
+    "end": "1074-12-31",
+    "gregorian_year": 1074
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "新法渐弛",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M45",
+   "subject": "event:wa_1085",
+   "predicate": "后续影响",
+   "value_text": "新法渐弛后未明述结局",
+   "time": {
+    "era_text": "熙宁七年",
+    "start": "1074-01-01",
+    "end": "1074-12-31",
+    "gregorian_year": 1074
+   },
+   "place": "kaifeng",
+   "source": "synthesis",
+   "quote": "新法渐弛",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文未述新法最终废止时间，需进一步史料",
+   "lead": {
+    "where": "event:wa_1085",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充新法废止的具体时间与过程"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WANGANSHIG01",
+   "subject": "event:wa_1069",
+   "predicate": "史料缺环",
+   "value_text": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "time": {
+    "era_text": "熙宁",
+    "start": "1069-01-01",
+    "end": "1069-12-31",
+    "gregorian_year": 1069
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "reform",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WA_FX1",
+   "subject": "event:wa_1069",
+   "predicate": "路线对立",
+   "value_text": "王安石任参知政事推行新法，司马光等以「祖宗之法不可变」「财利之事非所以示天下」力阻，熙宁党争自此开幕。",
+   "source": "wen_gong_ji",
+   "quote": "光曰：「祖宗之法不可变也。」安石曰：「变法度以治天下，何为不可？」",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.82,
+   "layer": "record",
+   "time": {
+    "era_text": "公元1069年",
+    "start": "1069-01-01",
+    "end": "1069-12-31",
+    "gregorian_year": 1069
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "新党与旧党的首次正面论战",
+   "_party": "旧党文献",
+   "_faction": "jiudang"
+  },
+  {
+   "id": "WA_FX2",
+   "subject": "event:wa_1070",
+   "predicate": "制度博弈",
+   "value_text": "王安石拜相全面推行诸法，旧党要员韩琦、富弼、苏轼等连章攻讦，或黜或贬；变法派借神宗乾纲独断压制异议，两党更替用事。",
+   "source": "lin_chuan_ji",
+   "quote": "（安石）上《三经新义》，一道德、同风俗。",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "layer": "record",
+   "time": {
+    "era_text": "公元1070年",
+    "start": "1070-01-01",
+    "end": "1070-12-31",
+    "gregorian_year": 1070
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "皇权+新党 vs 官僚地主旧党的角力",
+   "_party": "新党文献",
+   "_faction": "xindang"
+  },
+  {
+   "id": "WA_FX3",
+   "subject": "event:wa_1085",
+   "predicate": "反扑与反复",
+   "value_text": "神宗崩、哲宗立，太皇太后高氏主政，旧党尽废新法（元祐更化）；及哲宗亲政复行新法（绍圣绍述）——党争由政见之争滑向意气与权位之争，延及北宋亡。",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.65,
+   "layer": "inference",
+   "time": {
+    "era_text": "公元1085年",
+    "start": "1085-01-01",
+    "end": "1085-12-31",
+    "gregorian_year": 1085
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "党争周期往复，拖累国势",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX006_M45",
+  "WANGANSHIG01"
+ ],
  "events": [
   {
    "id": "ev_wa_1069",
@@ -160,14 +414,60 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "generated"
   ],
   "parties": [
-   "综合史料"
+   "综合史料",
+   "新党文献",
+   "旧党文献"
   ],
   "party_bucket": {
-   "综合史料": "综合史料"
+   "综合史料": "综合史料",
+   "新党文献": "新党文献",
+   "旧党文献": "旧党文献"
   },
   "party_colors": {
-   "综合史料": "#7f8c8d"
+   "综合史料": "#7f8c8d",
+   "新党文献": "#c0392b",
+   "旧党文献": "#2980b9"
   },
-  "legend": {}
+  "legend": {},
+  "faction_colors": {
+   "xindang": "#c0392b",
+   "jiudang": "#2980b9"
+  },
+  "factions": {
+   "xindang": {
+    "name": "新党（熙丰变法派）",
+    "period": "熙宁—元丰（公元1069—1085）",
+    "interest": "以「强兵富国」为号，行青苗、募役、市易、保甲诸法，强化中央财政与皇权对社会的直接控制；倚神宗支持压制反对。",
+    "key_figures": [
+     "王安石",
+     "宋神宗",
+     "吕惠卿",
+     "蔡京",
+     "章惇"
+    ],
+    "typical_sources": [
+     "临川先生文集",
+     "宋会要辑稿"
+    ],
+    "bias_note": "新党文献以「理财整军、雪耻强宋」为叙事主轴，将反对者归类为因循守旧、阻挠恢复。"
+   },
+   "jiudang": {
+    "name": "旧党（元祐更化派）",
+    "period": "熙宁—元祐",
+    "interest": "以司马光、文彦博为首，主张「祖宗之法不可变」，维护官僚—大地主既有的免役、差役与财政格局，反对国家深度介入民生。",
+    "key_figures": [
+     "司马光",
+     "文彦博",
+     "苏轼",
+     "韩琦",
+     "程颢"
+    ],
+    "typical_sources": [
+     "温国文正司马公文集",
+     "续资治通鉴长编（李焘所引旧党奏议）"
+    ],
+    "bias_note": "旧党著述强调「与民休息、防苛政」，对新法扰民、聚敛之弊多有指摘；其维护的亦是士大夫—地主阶层利益。"
+   }
+  }
  }
 };

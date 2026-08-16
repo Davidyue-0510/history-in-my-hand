@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["ming_fall"] = {
    "id": "chongzhen",
    "name": "崇祯帝",
    "side": "明",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "lizicheng3",
@@ -140,10 +140,262 @@ window.SANDBOX_SLICES["ming_fall"] = {
    "place": "shanhaiguan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M41",
+   "subject": "event:mf_1644_3",
+   "predicate": "爆发",
+   "value_text": "李自成破北京",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "李自成破北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M42",
+   "subject": "person:chongzhen",
+   "predicate": "自缢",
+   "value_text": "崇祯帝自缢煤山",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "meishan",
+   "source": "synthesis",
+   "quote": "崇祯帝自缢煤山",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M40",
+   "subject": "event:mf_1644_3",
+   "predicate": "结果",
+   "value_text": "明亡",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "明亡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M42",
+   "subject": "event:mf_1644_q",
+   "predicate": "入关",
+   "value_text": "清军入关",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "shanhaiguan",
+   "source": "synthesis",
+   "quote": "清军入关",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M40",
+   "subject": "event:mf_1644_q",
+   "predicate": "迁都",
+   "value_text": "迁都北京",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "迁都北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M39",
+   "subject": "event:mf_1644_q",
+   "predicate": "后续",
+   "value_text": "南明继起而终蹙",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "南明继起而终蹙",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "南明具体地点未明，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M37",
+   "subject": "event:mf_1644_3",
+   "predicate": "攻方",
+   "value_text": "李自成率军",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "李自成破北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说攻方，但破北京者为李自成，合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M37",
+   "subject": "event:mf_1644_3",
+   "predicate": "守方",
+   "value_text": "明朝守军",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "李自成破北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说守方，但北京为明都，合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M31",
+   "subject": "event:mf_1644_q",
+   "predicate": "入关路径",
+   "value_text": "经山海关入关",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "shanhaiguan",
+   "source": "synthesis",
+   "quote": "清军入关",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文未明说路径，但山海关为清军入关要道，合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M28",
+   "subject": "event:mf_1644_3",
+   "predicate": "时间",
+   "value_text": "崇祯十七年三月",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "崇祯十七年，李自成破北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "原文仅记年，未记月；据史实补三月，属推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MING_FALLG01",
+   "subject": "event:mf_1644_3",
+   "predicate": "史料缺环",
+   "value_text": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "time": {
+    "era_text": "崇祯",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "dynasty",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "MING_FALLG01"
+ ],
  "events": [
   {
    "id": "ev_mf_1627",

@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "玄武门之变·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "事据《旧唐书》《资治通鉴》综合；建成、元吉一方记载多经太宗朝删改。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "玄武门之变·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "事据《旧唐书》《资治通鉴》综合；建成、元吉一方记载多经太宗朝删改。"
+    },
+    {
+      "id": "jiu_tang_xx",
+      "title": "《旧唐书·太宗纪》",
+      "name": "《旧唐书·太宗纪》",
+      "party": "官修史书",
+      "faction": "qinwang",
+      "bias_note": "唐官修，秦王视角，曲笔避血腥。"
+    },
+    {
+      "id": "zztj_xx",
+      "title": "《资治通鉴》",
+      "name": "《资治通鉴》",
+      "party": "编年史",
+      "faction": "donggong",
+      "bias_note": "司马光于建成、元吉多存同情，保留东宫叙事。"
+    }
+  ]
 }

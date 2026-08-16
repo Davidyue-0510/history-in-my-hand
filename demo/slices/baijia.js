@@ -62,13 +62,13 @@ window.SANDBOX_SLICES["baijia"] = {
    "id": "mengzi",
    "name": "孟子",
    "side": "儒",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "zhuangzi",
    "name": "庄子",
    "side": "道",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -107,10 +107,130 @@ window.SANDBOX_SLICES["baijia"] = {
    "place": "linzi",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX002_M24",
+   "subject": "person:mengzi",
+   "predicate": "生年",
+   "value_text": "公元前372年生",
+   "time": {
+    "era_text": "公元前372年",
+    "start": "-372-01-01",
+    "end": "-372-12-31",
+    "gregorian_year": -372
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元前372年孟轲生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文用公元前纪年，非年号；此处保留原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M24",
+   "subject": "person:zhuangzi",
+   "predicate": "生年",
+   "value_text": "公元前369年生",
+   "time": {
+    "era_text": "公元前369年",
+    "start": "-369-01-01",
+    "end": "-369-12-31",
+    "gregorian_year": -369
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元前369年庄周生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文用公元前纪年，非年号；此处保留原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M24",
+   "subject": "event:bj_schools",
+   "predicate": "形成",
+   "value_text": "儒道墨法名阴阳纵横诸家并起",
+   "time": {
+    "era_text": "公元前313年后",
+    "start": "-313-01-01",
+    "end": "-313-12-31",
+    "gregorian_year": -313
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "儒道墨法名阴阳纵横诸家并起",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "时间推断自荀子生年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M22",
+   "subject": "event:bj_schools",
+   "predicate": "时间范围",
+   "value_text": "公元前551年至公元前313年间",
+   "time": {
+    "era_text": "公元前551年至公元前313年",
+    "start": "-551-01-01",
+    "end": "-551-12-31",
+    "gregorian_year": -551
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元前551年孔子生……公元前313年荀况生",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "由孔子生年与荀子生年推断百家争鸣大致时间范围",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BAIJIAG01",
+   "subject": "event:bj_schools",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "周显王",
+    "start": "-355-01-01",
+    "end": "-355-12-31",
+    "gregorian_year": -355
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "BAIJIAG01"
+ ],
  "events": [
   {
    "id": "ev_bj_350",

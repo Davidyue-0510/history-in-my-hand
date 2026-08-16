@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["fotao"] = {
    "id": "hanming",
    "name": "汉明帝",
    "side": "汉",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "zhufalan",
@@ -99,10 +99,196 @@ window.SANDBOX_SLICES["fotao"] = {
    "place": "luoyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M27",
+   "subject": "event:ft_67",
+   "predicate": "起因",
+   "value_text": "汉明帝遣使西域求法",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉明帝遣使西域求法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文未用年号纪年，直接使用公元纪年，此处保留原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M28",
+   "subject": "event:ft_67",
+   "predicate": "方式",
+   "value_text": "白马驮经至洛阳",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "luoyang",
+   "source": "synthesis",
+   "quote": "白马驮经至洛阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M26",
+   "subject": "event:ft_67",
+   "predicate": "结果",
+   "value_text": "立白马寺",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "luoyang",
+   "source": "synthesis",
+   "quote": "立白马寺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M28",
+   "subject": "event:ft_67",
+   "predicate": "意义",
+   "value_text": "佛教始东传中土",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "佛教始东传中土",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M27",
+   "subject": "event:ft_temple",
+   "predicate": "建置",
+   "value_text": "白马寺建立",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "luoyang",
+   "source": "synthesis",
+   "quote": "立白马寺",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "白马寺为佛教东传标志性建筑",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M27",
+   "subject": "person:hanming",
+   "predicate": "行为",
+   "value_text": "遣使西域求法",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉明帝遣使西域求法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M27",
+   "subject": "event:ft_67",
+   "predicate": "时间定位",
+   "value_text": "公元67年",
+   "time": {
+    "era_text": "公元67年",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元67年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文直接使用公元纪年，非年号纪年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FOTAOG01",
+   "subject": "event:ft_67",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "永平",
+    "start": "67-01-01",
+    "end": "67-12-31",
+    "gregorian_year": 67
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "FOTAOG01"
+ ],
  "events": [
   {
    "id": "ev_ft_67",

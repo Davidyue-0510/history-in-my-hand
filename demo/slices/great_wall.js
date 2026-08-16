@@ -143,10 +143,86 @@ window.SANDBOX_SLICES["great_wall"] = {
    "place": "badaling",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX005_M71",
+   "subject": "event:gw_ming",
+   "predicate": "重筑边墙",
+   "value_text": "万历年间明重筑蓟镇边墙",
+   "time": {
+    "era_text": "万历年间",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "datong_w",
+   "source": "synthesis",
+   "quote": "万历年间明重筑蓟镇边墙",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "蓟镇边墙未在本次白名单，暂以 datong_w 代指，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M70",
+   "subject": "event:gw_ming",
+   "predicate": "建材",
+   "value_text": "砖石为垣",
+   "time": {
+    "era_text": "万历年间",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "datong_w",
+   "source": "synthesis",
+   "quote": "砖石为垣",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "蓟镇边墙未在本次白名单，暂以 datong_w 代指，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GREAT_WALLG01",
+   "subject": "event:gw_ming",
+   "predicate": "史料缺环",
+   "value_text": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "time": {
+    "era_text": "秦始皇",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "engineering",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "GREAT_WALLG01"
+ ],
  "events": [
   {
    "id": "ev_gw_qin",

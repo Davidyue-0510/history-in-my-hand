@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "王安石变法·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "新法利弊争议千年，司马光等旧党力诋；此处综合《宋史》与近代研究，不偏一方。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "王安石变法·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "新法利弊争议千年，司马光等旧党力诋；此处综合《宋史》与近代研究，不偏一方。"
+    },
+    {
+      "id": "lin_chuan_ji",
+      "title": "《临川先生文集》",
+      "name": "《临川先生文集》",
+      "party": "新党文献",
+      "faction": "xindang",
+      "bias_note": "王安石自著，系统陈述变法理念与理财主张。"
+    },
+    {
+      "id": "wen_gong_ji",
+      "title": "《温国文正司马公文集》",
+      "name": "《温国文正司马公文集》",
+      "party": "旧党文献",
+      "faction": "jiudang",
+      "bias_note": "司马光奏议，力陈新法之弊、请废诸法。"
+    }
+  ]
 }

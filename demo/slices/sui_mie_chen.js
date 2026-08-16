@@ -62,13 +62,13 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "id": "suiwen",
    "name": "隋文帝",
    "side": "隋",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "chenhouzhu",
    "name": "陈后主",
    "side": "陈",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -107,10 +107,218 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "place": "nanjing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M42",
+   "subject": "event:sm_587",
+   "predicate": "发起",
+   "value_text": "隋文帝命晋王广帅师伐陈",
+   "time": {
+    "era_text": "开皇八年",
+    "start": "588-01-01",
+    "end": "588-12-31",
+    "gregorian_year": 588
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "开皇八年，隋文帝命晋王广帅师伐陈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "伐陈战役发起，主帅为晋王杨广",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M43",
+   "subject": "event:sm_589",
+   "predicate": "攻陷",
+   "value_text": "韩擒虎入建康",
+   "time": {
+    "era_text": "开皇九年",
+    "start": "589-01-01",
+    "end": "589-12-31",
+    "gregorian_year": 589
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "开皇九年韩擒虎入建康",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "建康即今南京，隋军攻陷陈都",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M41",
+   "subject": "event:sm_589",
+   "predicate": "俘获",
+   "value_text": "陈后主被俘",
+   "time": {
+    "era_text": "开皇九年",
+    "start": "589-01-01",
+    "end": "589-12-31",
+    "gregorian_year": 589
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "陈后主被俘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "陈后主即陈叔宝，被俘标志陈亡",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M43",
+   "subject": "event:sm_589",
+   "predicate": "结果",
+   "value_text": "南北复归一统",
+   "time": {
+    "era_text": "开皇九年",
+    "start": "589-01-01",
+    "end": "589-12-31",
+    "gregorian_year": 589
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "南北复归一统",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "隋灭陈后结束南北朝分裂",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M41",
+   "subject": "event:sm_589",
+   "predicate": "后续政策",
+   "value_text": "天下均田",
+   "time": {
+    "era_text": "开皇九年",
+    "start": "589-01-01",
+    "end": "589-12-31",
+    "gregorian_year": 589
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天下均田",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "统一后推行均田制，原文未详述具体措施",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M40",
+   "subject": "person:suiwen",
+   "predicate": "决策",
+   "value_text": "命晋王广帅师伐陈",
+   "time": {
+    "era_text": "开皇八年",
+    "start": "588-01-01",
+    "end": "588-12-31",
+    "gregorian_year": 588
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "隋文帝命晋王广帅师伐陈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "隋文帝为伐陈最高决策者",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M38",
+   "subject": "person:chenhouzhu",
+   "predicate": "被俘",
+   "value_text": "陈后主被俘",
+   "time": {
+    "era_text": "开皇九年",
+    "start": "589-01-01",
+    "end": "589-12-31",
+    "gregorian_year": 589
+   },
+   "place": "nanjing",
+   "source": "synthesis",
+   "quote": "陈后主被俘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "陈后主被俘地点在建康",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M38",
+   "subject": "event:sm_587",
+   "predicate": "时间跨度",
+   "value_text": "开皇八年至九年",
+   "time": {
+    "era_text": "开皇八年",
+    "start": "588-01-01",
+    "end": "588-12-31",
+    "gregorian_year": 588
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "开皇八年...开皇九年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文分述两年，推断战役跨年",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SUI_MIE_CHENG01",
+   "subject": "event:sm_589",
+   "predicate": "史料缺环",
+   "value_text": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "time": {
+    "era_text": "开皇",
+    "start": "588-01-01",
+    "end": "588-12-31",
+    "gregorian_year": 588
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "dynasty",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SUI_MIE_CHENG01"
+ ],
  "events": [
   {
    "id": "ev_sm_587",

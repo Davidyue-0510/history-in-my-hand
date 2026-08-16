@@ -107,10 +107,271 @@ window.SANDBOX_SLICES["chanyuan"] = {
    "place": "puyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M34",
+   "subject": "event:cy_1004",
+   "predicate": "爆发",
+   "value_text": "辽圣宗、萧太后南下攻宋",
+   "time": {
+    "era_text": "景德元年",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "辽圣宗、萧太后南下",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件主体为澶渊之盟前战事，地点未明，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M35",
+   "subject": "event:cy_1004",
+   "predicate": "亲征",
+   "value_text": "宋真宗亲征至澶州",
+   "time": {
+    "era_text": "景德元年",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "puyang",
+   "source": "synthesis",
+   "quote": "宋真宗亲征至澶州",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "澶州即今濮阳，映射至puyang",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M33",
+   "subject": "event:cy_1005",
+   "predicate": "订盟",
+   "value_text": "宋辽订澶渊之盟",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "puyang",
+   "source": "synthesis",
+   "quote": "宋辽订澶渊之盟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "盟约地点在澶州，映射至puyang",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M35",
+   "subject": "event:cy_1005",
+   "predicate": "关系",
+   "value_text": "约为兄弟之国",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "约为兄弟之国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M33",
+   "subject": "event:cy_1005",
+   "predicate": "岁币",
+   "value_text": "宋岁输银十万两、绢二十万匹",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宋岁输银十万两、绢二十万匹",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M32",
+   "subject": "event:cy_1005",
+   "predicate": "结果",
+   "value_text": "边陲息兵",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "边陲息兵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M30",
+   "subject": "event:cy_1004",
+   "predicate": "主帅",
+   "value_text": "辽方主帅为圣宗与萧太后",
+   "time": {
+    "era_text": "景德元年",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "辽圣宗、萧太后南下",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文未明言主帅，但南下由二人主导，合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M31",
+   "subject": "event:cy_1005",
+   "predicate": "性质",
+   "value_text": "盟约确立兄弟之国关系",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "约为兄弟之国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文直述，但兄弟之国为关系定性，属推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M29",
+   "subject": "event:cy_1005",
+   "predicate": "岁币数额",
+   "value_text": "岁币总额折银约三十万两",
+   "time": {
+    "era_text": "景德二年",
+    "start": "1005-01-01",
+    "end": "1005-12-31",
+    "gregorian_year": 1005
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宋岁输银十万两、绢二十万匹",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "学界常将绢折银估算，非原文直述，故标scholarship",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M26",
+   "subject": "event:cy_1004",
+   "predicate": "宋方兵力",
+   "value_text": "宋真宗亲征兵力未载",
+   "time": {
+    "era_text": "景德元年",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宋真宗亲征至澶州",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文未载宋方兵力，属证据缺口",
+   "lead": {
+    "where": "宋真宗亲征澶州之兵力规模",
+    "skills": [
+     "宋史",
+     "军事史"
+    ],
+    "accept": "补充宋真宗亲征兵力数据或考证"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHANYUANG01",
+   "subject": "event:cy_1005",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "景德",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX010_M26",
+  "CHANYUANG01"
+ ],
  "events": [
   {
    "id": "ev_cy_1004",

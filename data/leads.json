@@ -3,6 +3,22 @@
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "BAIJIAG01",
+   "scene": "baijia",
+   "subject": "event:bj_schools",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
    "id": "BJG01",
    "scene": "beijing",
    "subject": "event:bj_desheng",
@@ -17,6 +33,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "BEIJIUG01",
+   "scene": "beijiu",
+   "subject": "event:bj_961",
+   "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "BENCAOG01",
+   "scene": "bencao",
+   "subject": "event:bc_1281",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
   },
   {
    "id": "BOJUG01",
@@ -131,6 +179,38 @@
    "_src_line": 14
   },
   {
+   "id": "CHANYUANG01",
+   "scene": "chanyuan",
+   "subject": "event:cy_1005",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SX010_M26",
+   "scene": "chanyuan",
+   "subject": "event:cy_1004",
+   "title": "宋真宗亲征兵力未载",
+   "missing": "宋史 / 军事史",
+   "where": "宋真宗亲征澶州之兵力规模",
+   "skills": [
+    "宋史",
+    "军事史"
+   ],
+   "accept": "补充宋真宗亲征兵力数据或考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "CHENGPUG01",
    "scene": "chengpu",
    "subject": "event:cp_jz",
@@ -158,6 +238,38 @@
     "军事史"
    ],
    "accept": "补充双方兵力数字及来源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "CHENQIAOG01",
+   "scene": "chenqiao",
+   "subject": "event:cq_960a",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "CHENSHENGG01",
+   "scene": "chensheng",
+   "subject": "event:cs_209a",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
@@ -227,6 +339,86 @@
    "_src_line": 14
   },
   {
+   "id": "DINGWUG01",
+   "scene": "dingwu",
+   "subject": "event:dw_1877",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "DONG_HAN_YIG01",
+   "scene": "dong_han_yi",
+   "subject": "event:dy_196",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SX008_M61",
+   "scene": "dong_han_yi",
+   "subject": "event:dy_196",
+   "title": "建安七子凋零",
+   "missing": "历史考据 / 文献比对",
+   "where": "event:dy_196 与 event:dy_217 的关联",
+   "skills": [
+    "历史考据",
+    "文献比对"
+   ],
+   "accept": "明确建安七子凋零与两次大疫的具体关联",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "DUJIANGYANG01",
+   "scene": "dujiangyan",
+   "subject": "event:dj_256",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "DUNZUNG01",
+   "scene": "dunzun",
+   "subject": "event:dz_taixue",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 3
+  },
+  {
    "id": "FEISHUIG01",
    "scene": "feishui",
    "subject": "event:fs_qin",
@@ -257,6 +449,54 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "FENSHUG01",
+   "scene": "fenshu",
+   "subject": "event:fs_213",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "FOTAOG01",
+   "scene": "fotao",
+   "subject": "event:ft_67",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "FOUR_INVG01",
+   "scene": "four_inv",
+   "subject": "event:fi_paper",
+   "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "F010",
@@ -366,6 +606,38 @@
    ],
    "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
    "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "GRAND_CANALG01",
+   "scene": "grand_canal",
+   "subject": "event:gc_sui",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "GREAT_WALLG01",
+   "scene": "great_wall",
+   "subject": "event:gw_ming",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
    "issue_url": null,
    "_src_line": 6
   },
@@ -512,6 +784,101 @@
    "_src_line": 13
   },
   {
+   "id": "HONGJING01",
+   "scene": "hongjin",
+   "subject": "event:hj_1351",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HUANGCHAOG01",
+   "scene": "huangchao",
+   "subject": "event:hc_880",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HUANGJING01",
+   "scene": "huangjin",
+   "subject": "event:hj_184",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SX010_M37",
+   "scene": "huangjin",
+   "subject": "event:hj_184",
+   "title": "原文仅记公元年，未记年号",
+   "missing": "历史纪年换算",
+   "where": "synthesis",
+   "skills": [
+    "历史纪年换算"
+   ],
+   "accept": "确认中平元年对应公元184年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HUAXIANG01",
+   "scene": "huaxian",
+   "subject": "event:hx_main",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "SX006_M64",
+   "scene": "huaxian",
+   "subject": "event:hx_main",
+   "title": "八十三万有奇可能夸大",
+   "missing": "历史文献考证 / 灾害史研究",
+   "where": "event:hx_main 伤亡数字",
+   "skills": [
+    "历史文献考证",
+    "灾害史研究"
+   ],
+   "accept": "核实八十三万伤亡数字的真实性或来源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
    "id": "HULAOG01",
    "scene": "hulao",
    "subject": "event:hl_wei",
@@ -592,6 +959,38 @@
    "_src_line": 17
   },
   {
+   "id": "JIANZHENG01",
+   "scene": "jianzhen",
+   "subject": "event:jz_753",
+   "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "JIASIXIEG01",
+   "scene": "jiasixie",
+   "subject": "event:js_533",
+   "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
    "id": "JNG01",
    "scene": "jingnan",
    "subject": "event:jn_1402",
@@ -668,6 +1067,68 @@
    "effort": "1-2 周",
    "issue_url": null,
    "_src_line": 6
+  },
+  {
+   "id": "JIUPING01",
+   "scene": "jiupin",
+   "subject": "event:jp_220",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "JIUZIG01",
+   "scene": "jiuzi",
+   "subject": "event:jz_1722",
+   "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SX009_M36",
+   "scene": "jiuzi",
+   "subject": "event:jz_1712",
+   "title": "原文未明说",
+   "missing": "史料考据",
+   "where": "康熙五十一年再废太子的具体原因",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "补充再废的直接原因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SX010_M31",
+   "scene": "jiuzi",
+   "subject": "event:jz_1722",
+   "title": "原文未明说",
+   "missing": "史料考据",
+   "where": "允禩、允禟被圈禁的具体地点",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "补充圈禁地点",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "JH014",
@@ -751,6 +1212,37 @@
    "_src_line": 44
   },
   {
+   "id": "KEJUG01",
+   "scene": "keju",
+   "subject": "event:kj_1905",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "SX010_M24",
+   "scene": "keju",
+   "subject": "event:kj_1905",
+   "title": "宋以后科举演变未述",
+   "missing": "历史考证",
+   "where": "宋景德年间之后",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "补充宋后科举制度演变",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "KUNYANGG01",
    "scene": "kunyang",
    "subject": "event:ky_wan",
@@ -781,6 +1273,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "LIANGSHUIG01",
+   "scene": "liangshui",
+   "subject": "event:ls_780",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "L016",
@@ -831,6 +1339,180 @@
    "_src_line": 20
   },
   {
+   "id": "LINGQUG01",
+   "scene": "lingqu",
+   "subject": "event:lq_214",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SX009_M49",
+   "scene": "lingqu",
+   "subject": "event:lq_214",
+   "title": "史禄为秦监",
+   "missing": "秦汉官制 / 文献考据",
+   "where": "史禄官职考",
+   "skills": [
+    "秦汉官制",
+    "文献考据"
+   ],
+   "accept": "补充史禄任监御史或都水长等确切官职记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "LITTLE_ICEG01",
+   "scene": "little_ice",
+   "subject": "event:li_1640",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SX006_M65",
+   "scene": "little_ice",
+   "subject": "event:li_1640",
+   "title": "原文未载李自成具体活动",
+   "missing": "史料检索 / 年号换算",
+   "where": "event:li_1640",
+   "skills": [
+    "史料检索",
+    "年号换算"
+   ],
+   "accept": "补充崇祯元年至十一年间李自成活动记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "LIXUEG01",
+   "scene": "lixue",
+   "subject": "event:lx_1175",
+   "title": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "LIZICHENGG01",
+   "scene": "lizicheng",
+   "subject": "event:lc_1644",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SX010_M39",
+   "scene": "lizicheng",
+   "subject": "event:lc_1645",
+   "title": "南走而殁",
+   "missing": "明清史 / 史料考据",
+   "where": "南走路线与死亡地点",
+   "skills": [
+    "明清史",
+    "史料考据"
+   ],
+   "accept": "考证李自成南走具体路线及死亡详情",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "LOCUSTG01",
+   "scene": "locust",
+   "subject": "event:lc_622",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "LVLING01",
+   "scene": "lvlin",
+   "subject": "event:ll_23",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SX011_M19",
+   "scene": "lvlin",
+   "subject": "event:ll_17",
+   "title": "首领未明",
+   "missing": "历史考证",
+   "where": "绿林军首领身份",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "补充绿林军主要首领姓名",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SX012_M14",
+   "scene": "lvlin",
+   "subject": "event:ll_23",
+   "title": "战役过程缺失",
+   "missing": "军事史",
+   "where": "昆阳之战具体经过",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "补充昆阳之战双方兵力与战术",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "MALINGG01",
    "scene": "maling",
    "subject": "event:ml_jz",
@@ -845,6 +1527,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "MING_FALLG01",
+   "scene": "ming_fall",
+   "subject": "event:mf_1644_3",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "DZ014",
@@ -1179,6 +1877,22 @@
    "_src_line": 14
   },
   {
+   "id": "QING_HANG01",
+   "scene": "qing_han",
+   "subject": "event:qh_1645",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "A092",
    "scene": "sarhu",
    "subject": "event:sarhu_battle",
@@ -1291,6 +2005,54 @@
    "_src_line": 84
   },
   {
+   "id": "SHANGYANGG01",
+   "scene": "shangyang",
+   "subject": "event:sy_350",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SHAQIUG01",
+   "scene": "shaqiu",
+   "subject": "event:sq_210",
+   "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SHENKUOG01",
+   "scene": "shenkuo",
+   "subject": "event:sk_1072",
+   "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "S021",
    "scene": "shenyang",
    "subject": "place:shenyang_cheng",
@@ -1357,6 +2119,22 @@
    "_src_line": 48
   },
   {
+   "id": "SONG_HE_JUEG01",
+   "scene": "song_he_jue",
+   "subject": "event:hj_1019",
+   "title": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SJ015",
    "scene": "songjin",
    "subject": "event:songjin_songshan_fall",
@@ -1371,6 +2149,38 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SUI_DAXINGG01",
+   "scene": "sui_daxing",
+   "subject": "event:dx_582",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SUI_MIE_CHENG01",
+   "scene": "sui_mie_chen",
+   "subject": "event:sm_589",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "SUIYANGG01",
@@ -1403,6 +2213,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "TAIPINGG01",
+   "scene": "taiping",
+   "subject": "event:tp_1851",
+   "title": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SX010_M17",
@@ -1532,6 +2358,133 @@
    "_src_line": 15
   },
   {
+   "id": "SX006_M45",
+   "scene": "wanganshi",
+   "subject": "event:wa_1085",
+   "title": "新法渐弛后未明述结局",
+   "missing": "史料考据",
+   "where": "event:wa_1085",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "补充新法废止的具体时间与过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "WANGANSHIG01",
+   "scene": "wanganshi",
+   "subject": "event:wa_1069",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "WANGMANGG01",
+   "scene": "wangmang",
+   "subject": "event:wm_9",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "WENCHENGG01",
+   "scene": "wencheng",
+   "subject": "event:wc_641",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "WUGUG01",
+   "scene": "wugu",
+   "subject": "event:wg_war",
+   "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "WUWANGG01",
+   "scene": "wuwang",
+   "subject": "event:ww_1048",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 3
+  },
+  {
+   "id": "WUXUG01",
+   "scene": "wuxu",
+   "subject": "event:wx_0908",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIAOWENG01",
+   "scene": "xiaowen",
+   "subject": "event:xw_494",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "XIAOYAOJING01",
    "scene": "xiaoyaojin",
    "subject": "event:xy_jz",
@@ -1546,6 +2499,54 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "XINHAIG01",
+   "scene": "xinhai",
+   "subject": "event:xh_1010",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XUANWUG01",
+   "scene": "xuanwu",
+   "subject": "event:xx_626",
+   "title": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XUANZANGG01",
+   "scene": "xuanzang",
+   "subject": "event:xz_629",
+   "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "YAKSAG01",
@@ -1612,6 +2613,38 @@
    "_src_line": 14
   },
   {
+   "id": "YASHANG01",
+   "scene": "yashan",
+   "subject": "event:ys_1279",
+   "title": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "YS006",
+   "scene": "yashan",
+   "subject": "event:ys_1279",
+   "title": "宋军千艘，元军数不详",
+   "missing": "史料考据 / 宋元战争史",
+   "where": "event:ys_1279",
+   "skills": [
+    "史料考据",
+    "宋元战争史"
+   ],
+   "accept": "补充元军参战兵力及双方对比的可靠史料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "Y010",
    "scene": "yehe",
    "subject": "place:xiyehe",
@@ -1676,6 +2709,134 @@
    "_src_line": 14
   },
   {
+   "id": "YUAN_DUOG01",
+   "scene": "yuan_duo",
+   "subject": "event:yu_1276",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHANGHENGG01",
+   "scene": "zhangheng",
+   "subject": "event:zh_132",
+   "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHANGJUZHENGG01",
+   "scene": "zhangjuzheng",
+   "subject": "event:zj_1573",
+   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "ZHANGQIANG01",
+   "scene": "zhangqian",
+   "subject": "event:zq_138",
+   "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHAOFENG01",
+   "scene": "zhaofen",
+   "subject": "event:zf_peace",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHAOWULIANG01",
+   "scene": "zhaowulian",
+   "subject": "event:zw_war",
+   "title": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHAOZHOUG01",
+   "scene": "zhaozhou",
+   "subject": "event:zz_595",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "ZHENGHEG01",
+   "scene": "zhenghe",
+   "subject": "event:zh_1405",
+   "title": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "SX009_M23",
    "scene": "zhongli",
    "subject": "event:zl_wei",
@@ -1706,6 +2867,68 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "SX008_M69",
+   "scene": "zijincheng",
+   "subject": "event:zj_1420",
+   "title": "迁都次年",
+   "missing": "史料考据",
+   "where": "synthesis",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "确认迁都北京的具体年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "ZIJINCHENGG01",
+   "scene": "zijincheng",
+   "subject": "event:zj_1420",
+   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SX009_M28",
+   "scene": "zuchongzhi",
+   "subject": "event:zc_463",
+   "title": "原文无年号纪年",
+   "missing": "历史纪年",
+   "where": "原文时间表述",
+   "skills": [
+    "历史纪年"
+   ],
+   "accept": "补充年号纪年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZUCHONGZHIG01",
+   "scene": "zuchongzhi",
+   "subject": "event:zc_463",
+   "title": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "missing": "纪年校勘 / 多源比对",
+   "where": "诸史原文对读",
+   "skills": [
+    "纪年校勘",
+    "多源比对"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   }
  ]
 }

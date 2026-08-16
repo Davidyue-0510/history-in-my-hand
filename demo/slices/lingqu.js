@@ -94,10 +94,249 @@ window.SANDBOX_SLICES["lingqu"] = {
    "place": "xingan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M73",
+   "subject": "event:lq_214",
+   "predicate": "开凿",
+   "value_text": "史禄凿灵渠",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "史禄凿灵渠",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "原文无年号，仅记公元前214年，属公元纪年直接引用",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M73",
+   "subject": "event:lq_214",
+   "predicate": "连通水系",
+   "value_text": "通湘、漓二水",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "通湘、漓二水",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M72",
+   "subject": "event:lq_214",
+   "predicate": "粮道济岭南",
+   "value_text": "粮道济岭南",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "粮道济岭南",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M74",
+   "subject": "event:lq_214",
+   "predicate": "戍五岭",
+   "value_text": "戍五岭",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "戍五岭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "五岭为泛称，未映射具体地点id",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M72",
+   "subject": "event:lq_214",
+   "predicate": "舟楫相衔",
+   "value_text": "舟楫相衔",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "舟楫相衔",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M71",
+   "subject": "event:lq_214",
+   "predicate": "岭南始通中原",
+   "value_text": "岭南始与中原通",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "岭南始与中原通",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M64",
+   "subject": "event:lq_214",
+   "predicate": "军事目的",
+   "value_text": "为秦征岭南供粮",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "粮道济岭南",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "province",
+   "note": "原文未明言军事目的，由粮道与戍五岭推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M66",
+   "subject": "event:lq_use",
+   "predicate": "后续使用",
+   "value_text": "灵渠后世沿用",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "岭南始与中原通",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "province",
+   "note": "原文未述后世，由'始通'推出，待补史料",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M49",
+   "subject": "event:lq_214",
+   "predicate": "主持者身份",
+   "value_text": "史禄为秦监",
+   "time": {
+    "era_text": "公元前214年",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": "xingan",
+   "source": "synthesis",
+   "quote": "史禄凿灵渠",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "原文仅记'史禄'，未载其官职，学界有争议",
+   "lead": {
+    "where": "史禄官职考",
+    "skills": [
+     "秦汉官制",
+     "文献考据"
+    ],
+    "accept": "补充史禄任监御史或都水长等确切官职记载"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LINGQUG01",
+   "subject": "event:lq_214",
+   "predicate": "史料缺环",
+   "value_text": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "time": {
+    "era_text": "秦始皇",
+    "start": "-214-01-01",
+    "end": "-214-12-31",
+    "gregorian_year": -214
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "engineering",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX009_M49",
+  "LINGQUG01"
+ ],
  "events": [
   {
    "id": "ev_lq_214",

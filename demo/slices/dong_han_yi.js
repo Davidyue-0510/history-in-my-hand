@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "id": "zhangzhongjing",
    "name": "张仲景",
    "side": "东汉医家",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -118,10 +118,227 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "place": "nanyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M66",
+   "subject": "event:dy_196",
+   "predicate": "爆发",
+   "value_text": "建安元年，天下大疫",
+   "time": {
+    "era_text": "建安元年",
+    "start": "196-01-01",
+    "end": "196-12-31",
+    "gregorian_year": 196
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建安元年，天下大疫",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "地点未明，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M67",
+   "subject": "person:zhangzhongjing",
+   "predicate": "宗族伤亡",
+   "value_text": "宗族二百余口死者过半",
+   "time": {
+    "era_text": "建安元年",
+    "start": "196-01-01",
+    "end": "196-12-31",
+    "gregorian_year": 196
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "张仲景宗族二百余口死者过半",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "宗族具体所在地未明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M65",
+   "subject": "event:dy_217",
+   "predicate": "爆发",
+   "value_text": "建安二十二年，大疫复作",
+   "time": {
+    "era_text": "建安二十二年",
+    "start": "217-01-01",
+    "end": "217-12-31",
+    "gregorian_year": 217
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建安二十二年，大疫复作",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "地点未明，待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M67",
+   "subject": "event:dy_217",
+   "predicate": "影响",
+   "value_text": "建安七子凋零",
+   "time": {
+    "era_text": "建安二十二年",
+    "start": "217-01-01",
+    "end": "217-12-31",
+    "gregorian_year": 217
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建安七子凋零",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "建安七子具体伤亡情况未详",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M65",
+   "subject": "event:dy_book",
+   "predicate": "成书背景",
+   "value_text": "医方急出",
+   "time": {
+    "era_text": "建安二十二年",
+    "start": "217-01-01",
+    "end": "217-12-31",
+    "gregorian_year": 217
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "医方急出",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "county",
+   "note": "推断张仲景因疫著书，原文未明说",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M63",
+   "subject": "event:dy_196",
+   "predicate": "与张仲景关联",
+   "value_text": "宗族死者过半",
+   "time": {
+    "era_text": "建安元年",
+    "start": "196-01-01",
+    "end": "196-12-31",
+    "gregorian_year": 196
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "张仲景宗族二百余口死者过半",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "直接关联事件与人物",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M60",
+   "subject": "event:dy_217",
+   "predicate": "与医方关联",
+   "value_text": "大疫复作，医方急出",
+   "time": {
+    "era_text": "建安二十二年",
+    "start": "217-01-01",
+    "end": "217-12-31",
+    "gregorian_year": 217
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建安二十二年，大疫复作，建安七子凋零，医方急出",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "推断医方因大疫而急出，原文未明说因果",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M61",
+   "subject": "event:dy_196",
+   "predicate": "与建安七子关联",
+   "value_text": "建安七子凋零",
+   "time": {
+    "era_text": "建安二十二年",
+    "start": "217-01-01",
+    "end": "217-12-31",
+    "gregorian_year": 217
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建安七子凋零",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "建安七子凋零是否与建安元年疫直接相关，原文未明",
+   "lead": {
+    "where": "event:dy_196 与 event:dy_217 的关联",
+    "skills": [
+     "历史考据",
+     "文献比对"
+    ],
+    "accept": "明确建安七子凋零与两次大疫的具体关联"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DONG_HAN_YIG01",
+   "subject": "event:dy_196",
+   "predicate": "史料缺环",
+   "value_text": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "time": {
+    "era_text": "建安",
+    "start": "196-01-01",
+    "end": "196-12-31",
+    "gregorian_year": 196
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "disaster",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX008_M61",
+  "DONG_HAN_YIG01"
+ ],
  "events": [
   {
    "id": "ev_dy_196",

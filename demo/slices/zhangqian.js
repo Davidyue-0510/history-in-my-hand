@@ -56,7 +56,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "id": "zhangqian2",
    "name": "张骞",
    "side": "西汉",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "hanwu3",
@@ -101,10 +101,218 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "place": "changan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M57",
+   "subject": "event:zq_138",
+   "predicate": "凿空",
+   "value_text": "张骞使西域，凿空",
+   "time": {
+    "era_text": "建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "建元二年，汉武帝遣张骞使西域，凿空",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在白名单，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M58",
+   "subject": "event:zq_138",
+   "predicate": "再使",
+   "value_text": "元朔六年再使",
+   "time": {
+    "era_text": "元朔六年",
+    "start": "-123-01-01",
+    "end": "-123-12-31",
+    "gregorian_year": -123
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "元朔六年再使",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在白名单，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M56",
+   "subject": "event:zq_138",
+   "predicate": "通乌孙大宛",
+   "value_text": "通乌孙、大宛",
+   "time": {
+    "era_text": "元朔六年",
+    "start": "-123-01-01",
+    "end": "-123-12-31",
+    "gregorian_year": -123
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "通乌孙、大宛",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "乌孙、大宛未在白名单，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M58",
+   "subject": "event:zq_138",
+   "predicate": "丝路肇端",
+   "value_text": "丝路肇端",
+   "time": {
+    "era_text": "元朔六年",
+    "start": "-123-01-01",
+    "end": "-123-12-31",
+    "gregorian_year": -123
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "丝路肇端",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在白名单，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M56",
+   "subject": "event:zq_138",
+   "predicate": "西域始通中原",
+   "value_text": "西域诸国始通中原",
+   "time": {
+    "era_text": "元朔六年",
+    "start": "-123-01-01",
+    "end": "-123-12-31",
+    "gregorian_year": -123
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "西域诸国始通中原",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在白名单，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M55",
+   "subject": "person:zhangqian2",
+   "predicate": "受命",
+   "value_text": "汉武帝遣张骞使西域",
+   "time": {
+    "era_text": "建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "汉武帝遣张骞使西域",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M52",
+   "subject": "person:zhangqian2",
+   "predicate": "再使",
+   "value_text": "元朔六年再使",
+   "time": {
+    "era_text": "元朔六年",
+    "start": "-123-01-01",
+    "end": "-123-12-31",
+    "gregorian_year": -123
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "元朔六年再使",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M52",
+   "subject": "event:zq_126",
+   "predicate": "关联",
+   "value_text": "张骞凿空与西域通中原相关",
+   "time": {
+    "era_text": "建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "凿空",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "event:zq_126 与 zq_138 关系未明，推断关联，待核验",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGQIANG01",
+   "subject": "event:zq_138",
+   "predicate": "史料缺环",
+   "value_text": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "time": {
+    "era_text": "建元",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "frontier",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHANGQIANG01"
+ ],
  "events": [
   {
    "id": "ev_zq_138",

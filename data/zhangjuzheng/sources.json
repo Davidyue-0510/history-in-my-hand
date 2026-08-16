@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "张居正改革·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "改革利弊《明史》与近代研究颇有争议，此处综合而不偏。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "张居正改革·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "改革利弊《明史》与近代研究颇有争议，此处综合而不偏。"
+    },
+    {
+      "id": "zhang_tai_yue",
+      "title": "《张太岳集》",
+      "name": "《张太岳集》",
+      "party": "内阁文献",
+      "faction": "neige",
+      "bias_note": "居正自著，申说考成、清丈、鞭法之必要。"
+    },
+    {
+      "id": "wan_li_ye_huo",
+      "title": "《万历野获编》",
+      "name": "《万历野获编》",
+      "party": "私家笔记",
+      "faction": "qingliu",
+      "bias_note": "沈德符记居正专权、廷杖言官与清丈之弊，多清流视角。"
+    }
+  ]
 }

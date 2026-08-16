@@ -62,13 +62,13 @@ window.SANDBOX_SLICES["chensheng"] = {
    "id": "chensheng2",
    "name": "陈胜",
    "side": "张楚",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "wuguang",
    "name": "吴广",
    "side": "张楚",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -107,10 +107,262 @@ window.SANDBOX_SLICES["chensheng"] = {
    "place": "dazexiang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M58",
+   "subject": "event:cs_209a",
+   "predicate": "爆发",
+   "value_text": "陈胜吴广于大泽乡起义",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "dazexiang",
+   "source": "synthesis",
+   "quote": "陈胜、吴广谪戍渔阳，大泽乡遇雨失期",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "起义爆发于大泽乡",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M59",
+   "subject": "event:cs_209a",
+   "predicate": "起因",
+   "value_text": "谪戍渔阳途中遇雨失期",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "dazexiang",
+   "source": "synthesis",
+   "quote": "谪戍渔阳，大泽乡遇雨失期",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M57",
+   "subject": "event:cs_209a",
+   "predicate": "策略",
+   "value_text": "斩木为兵，揭竿而起",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "dazexiang",
+   "source": "synthesis",
+   "quote": "斩木为兵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "描述起义军装备简陋",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M59",
+   "subject": "event:cs_209a",
+   "predicate": "国号",
+   "value_text": "号张楚",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "号张楚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "张楚国号建立，地点未明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M57",
+   "subject": "person:chensheng2",
+   "predicate": "结局",
+   "value_text": "二世二年败死",
+   "time": {
+    "era_text": "秦二世二年",
+    "start": "-208-01-01",
+    "end": "-208-12-31",
+    "gregorian_year": -208
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "二世二年败死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "陈胜败亡，具体地点未载",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M56",
+   "subject": "event:cs_209a",
+   "predicate": "影响",
+   "value_text": "反秦之旗已举",
+   "time": {
+    "era_text": "秦二世二年",
+    "start": "-208-01-01",
+    "end": "-208-12-31",
+    "gregorian_year": -208
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "然反秦之旗已举",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "起义虽败但引发全国反秦浪潮",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M53",
+   "subject": "person:chensheng2",
+   "predicate": "身份",
+   "value_text": "谪戍渔阳之戍卒",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "陈胜、吴广谪戍渔阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "陈胜为戍卒身份",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M53",
+   "subject": "person:wuguang",
+   "predicate": "身份",
+   "value_text": "谪戍渔阳之戍卒",
+   "time": {
+    "era_text": "秦二世元年",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "陈胜、吴广谪戍渔阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "吴广为戍卒身份",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M39",
+   "subject": "event:cs_209a",
+   "predicate": "失败原因",
+   "value_text": "二世二年败死",
+   "time": {
+    "era_text": "秦二世二年",
+    "start": "-208-01-01",
+    "end": "-208-12-31",
+    "gregorian_year": -208
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "二世二年败死",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "province",
+   "note": "原文未明说败因，仅记败死结果",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M34",
+   "subject": "event:cs_209a",
+   "predicate": "历史意义",
+   "value_text": "首举反秦大旗",
+   "time": {
+    "era_text": "秦二世二年",
+    "start": "-208-01-01",
+    "end": "-208-12-31",
+    "gregorian_year": -208
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "然反秦之旗已举",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "由原文推断其开启反秦先河",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENSHENGG01",
+   "subject": "event:cs_209a",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "秦二世",
+    "start": "-209-01-01",
+    "end": "-209-12-31",
+    "gregorian_year": -209
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "CHENSHENGG01"
+ ],
  "events": [
   {
    "id": "ev_cs_209a",

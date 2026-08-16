@@ -177,10 +177,174 @@ window.SANDBOX_SLICES["locust"] = {
    "place": "henan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M69",
+   "subject": "place:guanzhong",
+   "predicate": "蝗灾",
+   "value_text": "关辅大蝗",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "关辅大蝗",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M68",
+   "subject": "place:guanzhong",
+   "predicate": "蝗不为灾",
+   "value_text": "蝗不为灾",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "蝗不为灾",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "因果关联为原文表述，未作科学验证",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M70",
+   "subject": "place:guanzhong",
+   "predicate": "伤稼",
+   "value_text": "蝗伤稼",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "蝗伤稼",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M68",
+   "subject": "place:guanzhong",
+   "predicate": "乏食",
+   "value_text": "民有乏食",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "民有乏食",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M66",
+   "subject": "place:guanzhong",
+   "predicate": "赈济",
+   "value_text": "诏出粟赈之",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "诏出粟赈之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M62",
+   "subject": "place:guanzhong",
+   "predicate": "蝗灾后果",
+   "value_text": "蝗不为灾",
+   "time": {
+    "era_text": "贞观二年",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": "guanzhong",
+   "source": "synthesis",
+   "quote": "蝗不为灾",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "province",
+   "note": "原文将蝗不为灾归因于太宗吞蝗，属主观叙事，非客观因果",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LOCUSTG01",
+   "subject": "event:lc_622",
+   "predicate": "史料缺环",
+   "value_text": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "time": {
+    "era_text": "贞观",
+    "start": "628-01-01",
+    "end": "628-12-31",
+    "gregorian_year": 628
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "disaster",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "LOCUSTG01"
+ ],
  "events": [
   {
    "id": "ev_lc_622",

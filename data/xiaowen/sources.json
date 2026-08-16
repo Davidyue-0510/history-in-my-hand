@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "孝文帝汉化·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "汉化措施据《魏书·高祖纪》与《资治通鉴》综合，守旧鲜卑贵族多反对。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "孝文帝汉化·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "汉化措施据《魏书·高祖纪》与《资治通鉴》综合，守旧鲜卑贵族多反对。"
+    },
+    {
+      "id": "wei_shu_xw",
+      "title": "《魏书·高祖纪》",
+      "name": "《魏书·高祖纪》",
+      "party": "官修史书",
+      "faction": "hanhua",
+      "bias_note": "魏收奉孝文帝汉化为正朔，详记改制而略保守派诉求。"
+    },
+    {
+      "id": "bei_shi_xt",
+      "title": "《北史·穆泰传》",
+      "name": "《北史·穆泰传》",
+      "party": "官修史书",
+      "faction": "baoshou",
+      "bias_note": "记穆泰、太子恂据平城叛乱，保留保守派抗拒汉化的线索。"
+    }
+  ]
 }

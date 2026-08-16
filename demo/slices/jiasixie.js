@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "id": "jiasixie2",
    "name": "贾思勰",
    "side": "东魏",
-   "influence": 0
+   "influence": 4
   }
  ],
  "assertions": [
@@ -92,10 +92,143 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "place": "yidu",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M32",
+   "subject": "person:jiasixie2",
+   "predicate": "撰书",
+   "value_text": "撰《齐民要术》十卷",
+   "time": {
+    "era_text": "公元540年",
+    "start": "540-01-01",
+    "end": "540-12-31",
+    "gregorian_year": 540
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元540年贾思勰撰《齐民要术》十卷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文用公元纪年，非年号纪年，保留原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M33",
+   "subject": "person:jiasixie2",
+   "predicate": "著作内容",
+   "value_text": "集黄河中下游农法",
+   "time": {
+    "era_text": "公元540年",
+    "start": "540-01-01",
+    "end": "540-12-31",
+    "gregorian_year": 540
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "集黄河中下游农法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "黄河中下游为地理范围，未映射到白名单地点",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M31",
+   "subject": "person:jiasixie2",
+   "predicate": "著作内容",
+   "value_text": "区种、轮作、酿醋造曲皆备",
+   "time": {
+    "era_text": "公元540年",
+    "start": "540-01-01",
+    "end": "540-12-31",
+    "gregorian_year": 540
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "区种、轮作、酿醋造曲皆备",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M33",
+   "subject": "person:jiasixie2",
+   "predicate": "著作地位",
+   "value_text": "中国现存最早之农书",
+   "time": {
+    "era_text": "公元540年",
+    "start": "540-01-01",
+    "end": "540-12-31",
+    "gregorian_year": 540
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "为中国现存最早之农书",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIASIXIEG01",
+   "subject": "event:js_533",
+   "predicate": "史料缺环",
+   "value_text": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "time": {
+    "era_text": "武定",
+    "start": "540-01-01",
+    "end": "540-12-31",
+    "gregorian_year": 540
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "tech",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:person:jiasixie2|著作内容",
+   "subject": "person:jiasixie2",
+   "predicate": "著作内容",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX002_M33",
+    "SX003_M31"
+   ]
+  }
+ ],
+ "gaps": [
+  "JIASIXIEG01"
+ ],
  "events": [
   {
    "id": "ev_js_533",

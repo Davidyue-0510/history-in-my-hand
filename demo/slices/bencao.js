@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["bencao"] = {
    "id": "lishizhen",
    "name": "李时珍",
    "side": "明",
-   "influence": 0
+   "influence": 6
   }
  ],
  "assertions": [
@@ -99,10 +99,174 @@ window.SANDBOX_SLICES["bencao"] = {
    "place": "qizhou",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M28",
+   "subject": "person:lishizhen",
+   "predicate": "撰成",
+   "value_text": "撰《本草纲目》五十二卷成",
+   "time": {
+    "era_text": "万历六年",
+    "start": "1578-01-01",
+    "end": "1578-12-31",
+    "gregorian_year": 1578
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "李时珍撰《本草纲目》五十二卷成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M29",
+   "subject": "person:lishizhen",
+   "predicate": "刊行",
+   "value_text": "《本草纲目》刊行",
+   "time": {
+    "era_text": "万历二十四年",
+    "start": "1596-01-01",
+    "end": "1596-12-31",
+    "gregorian_year": 1596
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "万历二十四年刊行",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M27",
+   "subject": "person:lishizhen",
+   "predicate": "收药",
+   "value_text": "收药一千八百九十二种",
+   "time": {
+    "era_text": "万历二十四年",
+    "start": "1596-01-01",
+    "end": "1596-12-31",
+    "gregorian_year": 1596
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "收药一千八百九十二种",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M29",
+   "subject": "person:lishizhen",
+   "predicate": "附图",
+   "value_text": "附图千余",
+   "time": {
+    "era_text": "万历二十四年",
+    "start": "1596-01-01",
+    "end": "1596-12-31",
+    "gregorian_year": 1596
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "附图千余",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M28",
+   "subject": "person:lishizhen",
+   "predicate": "集大成",
+   "value_text": "集本草之大成",
+   "time": {
+    "era_text": "万历二十四年",
+    "start": "1596-01-01",
+    "end": "1596-12-31",
+    "gregorian_year": 1596
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "集本草之大成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M28",
+   "subject": "person:lishizhen",
+   "predicate": "传于东邻",
+   "value_text": "传于东邻",
+   "time": {
+    "era_text": "万历二十四年",
+    "start": "1596-01-01",
+    "end": "1596-12-31",
+    "gregorian_year": 1596
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "传于东邻",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "东邻指日本，place 未在 whitelist，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BENCAOG01",
+   "subject": "event:bc_1281",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "万历",
+    "start": "1578-01-01",
+    "end": "1578-12-31",
+    "gregorian_year": 1578
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "BENCAOG01"
+ ],
  "events": [
   {
    "id": "ev_bc_1281",

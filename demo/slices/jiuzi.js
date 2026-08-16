@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "id": "yongzheng",
    "name": "雍正帝",
    "side": "清",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -99,10 +99,278 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M52",
+   "subject": "event:jz_1712",
+   "predicate": "废黜",
+   "value_text": "皇太子胤礽再废",
+   "time": {
+    "era_text": "康熙五十一年",
+    "start": "1712-01-01",
+    "end": "1712-12-31",
+    "gregorian_year": 1712
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "康熙五十一年，皇太子胤礽再废",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "直接描述废太子事件本身，subject 用 event:jz_1712",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M53",
+   "subject": "event:jz_1722",
+   "predicate": "即位",
+   "value_text": "四子胤禛即位，是为雍正",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "康熙六十一年，四子胤禛即位，是为雍正",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "直接描述雍正即位事件，subject 用 event:jz_1722",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M51",
+   "subject": "person:yongzheng",
+   "predicate": "身份",
+   "value_text": "康熙第四子，即位为雍正",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "四子胤禛即位，是为雍正",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "人物身份信息，用 person:yongzheng",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M53",
+   "subject": "event:jz_1722",
+   "predicate": "兄弟相残",
+   "value_text": "兄弟夺嫡相残",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "兄弟夺嫡相残",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "描述夺嫡事件的性质，subject 用 event:jz_1722",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M51",
+   "subject": "event:jz_1722",
+   "predicate": "圈禁",
+   "value_text": "圈禁允禩、允禟",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "圈禁允禩、允禟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "圈禁行为属于夺嫡事件的一部分，subject 用 event:jz_1722",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M50",
+   "subject": "person:yongzheng",
+   "predicate": "处置兄弟",
+   "value_text": "圈禁允禩、允禟",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "圈禁允禩、允禟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说圈禁是雍正下令，但可合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M47",
+   "subject": "event:jz_1712",
+   "predicate": "再废",
+   "value_text": "胤礽第二次被废",
+   "time": {
+    "era_text": "康熙五十一年",
+    "start": "1712-01-01",
+    "end": "1712-12-31",
+    "gregorian_year": 1712
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "皇太子胤礽再废",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "「再废」暗示此前已有一次废黜，此处为合理推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M47",
+   "subject": "event:jz_1722",
+   "predicate": "夺嫡结果",
+   "value_text": "胤禛胜出，兄弟被圈禁",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "四子胤禛即位，是为雍正，兄弟夺嫡相残，圈禁允禩、允禟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "从即位与圈禁可推出夺嫡以胤禛胜出告终",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M36",
+   "subject": "event:jz_1712",
+   "predicate": "废黜原因",
+   "value_text": "原文未明说",
+   "time": {
+    "era_text": "康熙五十一年",
+    "start": "1712-01-01",
+    "end": "1712-12-31",
+    "gregorian_year": 1712
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "皇太子胤礽再废",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文未交代再废的具体原因",
+   "lead": {
+    "where": "康熙五十一年再废太子的具体原因",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充再废的直接原因"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M31",
+   "subject": "event:jz_1722",
+   "predicate": "圈禁地点",
+   "value_text": "原文未明说",
+   "time": {
+    "era_text": "康熙六十一年",
+    "start": "1722-01-01",
+    "end": "1722-12-31",
+    "gregorian_year": 1722
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "圈禁允禩、允禟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文未指明圈禁的具体地点",
+   "lead": {
+    "where": "允禩、允禟被圈禁的具体地点",
+    "skills": [
+     "史料考据"
+    ],
+    "accept": "补充圈禁地点"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIUZIG01",
+   "subject": "event:jz_1722",
+   "predicate": "史料缺环",
+   "value_text": "此次宫廷政争的密谋、人数与处置，宫禁事秘，实录多所讳饰，相关细节存在缺口。",
+   "time": {
+    "era_text": "康熙",
+    "start": "1712-01-01",
+    "end": "1712-12-31",
+    "gregorian_year": 1712
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "court",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX009_M36",
+  "SX010_M31",
+  "JIUZIG01"
+ ],
  "events": [
   {
    "id": "ev_jz_1712",

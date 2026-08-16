@@ -64,13 +64,13 @@ window.SANDBOX_SLICES["wencheng"] = {
    "id": "wencheng",
    "name": "文成公主",
    "side": "唐",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "songzanganbu",
    "name": "松赞干布",
    "side": "吐蕃",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -109,10 +109,218 @@ window.SANDBOX_SLICES["wencheng"] = {
    "place": "lhasa",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "WC001",
+   "subject": "event:wc_641",
+   "predicate": "和亲",
+   "value_text": "唐太宗以宗女文成公主妻吐蕃赞普松赞干布",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "changan_wc",
+   "source": "synthesis",
+   "quote": "唐太宗以宗女文成公主妻吐蕃赞普松赞干布",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC002",
+   "subject": "event:wc_641",
+   "predicate": "携带物品",
+   "value_text": "携释迦像、百工典籍入藏",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "changan_wc",
+   "source": "synthesis",
+   "quote": "携释迦像、百工典籍入藏",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC003",
+   "subject": "event:wc_641",
+   "predicate": "结果",
+   "value_text": "汉藏通好，佛法渐兴于吐蕃",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "lhasa",
+   "source": "synthesis",
+   "quote": "汉藏通好，佛法渐兴于吐蕃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC004",
+   "subject": "person:wencheng",
+   "predicate": "身份",
+   "value_text": "唐太宗宗女",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "changan_wc",
+   "source": "synthesis",
+   "quote": "宗女文成公主",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC005",
+   "subject": "person:songzanganbu",
+   "predicate": "身份",
+   "value_text": "吐蕃赞普",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "lhasa",
+   "source": "synthesis",
+   "quote": "吐蕃赞普松赞干布",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC006",
+   "subject": "event:wc_temple",
+   "predicate": "建立背景",
+   "value_text": "佛法渐兴于吐蕃",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "lhasa",
+   "source": "synthesis",
+   "quote": "佛法渐兴于吐蕃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说建寺，但佛法渐兴为后续建寺之背景",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC007",
+   "subject": "event:wc_641",
+   "predicate": "影响",
+   "value_text": "汉藏通好",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "changan_wc",
+   "source": "synthesis",
+   "quote": "汉藏通好",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WC008",
+   "subject": "event:wc_641",
+   "predicate": "路线",
+   "value_text": "入藏",
+   "time": {
+    "era_text": "贞观十五年",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": "lhasa",
+   "source": "synthesis",
+   "quote": "入藏",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "具体路线未详，仅知目的地为吐蕃",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WENCHENGG01",
+   "subject": "event:wc_641",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "贞观",
+    "start": "641-01-01",
+    "end": "641-12-31",
+    "gregorian_year": 641
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "WENCHENGG01"
+ ],
  "events": [
   {
    "id": "ev_wc_641",

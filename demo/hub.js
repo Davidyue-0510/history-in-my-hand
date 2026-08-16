@@ -86,10 +86,26 @@
   function gx(lo) { return (lo - lonMin) / (lonMax - lonMin) * W; }
   function gy(la) { return (latMax - la) / (latMax - latMin) * H; }
   // 切片类型不再按 key 硬编码——meta.kind 来自 data/scenes.json
+  var KIND_LABEL = {
+    battle: '战役 · battle',
+    county: '县级 LOD · county',
+    fiction: '虚构世界 · fiction',
+    disaster: '灾异 · disaster',
+    engineering: '工程 · engineering',
+    uprising: '起义 · uprising',
+    thought: '思想 · thought',
+    tech: '科技 · technology',
+    fusion: '民族融合 · fusion',
+    dynasty: '王朝 · dynasty',
+    reform: '改革 · reform',
+    court: '宫廷 · court',
+    frontier: '边疆 · frontier',
+    war: '战争 · war',
+    event: '事件 · event',
+    migration: '迁徙 · migration'
+  };
   function kindLabel(m) {
-    if (m.kind === 'battle') return '事件切片 · battle slice';
-    if (m.kind === 'fiction') return '虚构世界 · fiction world';
-    return '县级 LOD · county slice';
+    return KIND_LABEL[m.kind] || (m.kind || 'civ');
   }
 
   /* ═══════════ 分类与筛选 ═══════════
@@ -270,7 +286,7 @@
         : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
       var cat = sceneCat(m);
 
-      html += '<a class="card' + (isFic ? ' fic' : '') + '" data-cat="' + cat + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
+      html += '<a class="card card--' + (m.kind || 'civ') + (isFic ? ' fic' : '') + '" data-cat="' + cat + '" data-kind="' + (m.kind || 'civ') + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
         + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
         + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
         + '<div class="card-sub">' + (m.subtitle || '') + '</div>'

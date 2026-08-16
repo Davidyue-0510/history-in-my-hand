@@ -56,13 +56,13 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "id": "wangzhaojun",
    "name": "王昭君",
    "side": "汉",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "huhanye",
    "name": "呼韩邪单于",
    "side": "匈奴",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -101,10 +101,218 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "place": "hohhot",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M38",
+   "subject": "event:zf_peace",
+   "predicate": "和亲",
+   "value_text": "汉元帝以宫女王嫱赐匈奴呼韩邪单于",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "竟宁元年，汉元帝以宫女王嫱赐匈奴呼韩邪单于",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件主体为和亲，故用event:zf_peace",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M39",
+   "subject": "person:wangzhaojun",
+   "predicate": "封号",
+   "value_text": "号宁胡阏氏",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "号宁胡阏氏",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "王昭君封号，地点未明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M37",
+   "subject": "event:zf_peace",
+   "predicate": "结果",
+   "value_text": "汉匈和亲，边陲少事",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉匈和亲，边陲少事",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "empire",
+   "note": "和亲后边疆安宁，属事件结果",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M39",
+   "subject": "event:zf_33",
+   "predicate": "前因",
+   "value_text": "郅支既诛而呼韩邪内附",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "郅支既诛而呼韩邪内附",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "empire",
+   "note": "郅支单于被诛后呼韩邪归附，为和亲背景",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M37",
+   "subject": "person:huhanye",
+   "predicate": "身份",
+   "value_text": "匈奴呼韩邪单于",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "匈奴呼韩邪单于",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "呼韩邪单于身份确认",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M36",
+   "subject": "person:wangzhaojun",
+   "predicate": "身份",
+   "value_text": "汉元帝宫女王嫱",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "汉元帝以宫女王嫱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "王昭君原为汉宫宫女",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M34",
+   "subject": "event:zf_peace",
+   "predicate": "性质",
+   "value_text": "汉匈和亲",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "汉匈和亲",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件性质为和亲",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M34",
+   "subject": "event:zf_peace",
+   "predicate": "影响",
+   "value_text": "边陲少事",
+   "time": {
+    "era_text": "竟宁元年",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "边陲少事",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "和亲后边境冲突减少",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHAOFENG01",
+   "subject": "event:zf_peace",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "竟宁",
+    "start": "-33-01-01",
+    "end": "-33-12-31",
+    "gregorian_year": -33
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHAOFENG01"
+ ],
  "events": [
   {
    "id": "ev_zf_33",

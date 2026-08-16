@@ -169,10 +169,209 @@ window.SANDBOX_SLICES["little_ice"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M68",
+   "subject": "event:li_1640",
+   "predicate": "背景",
+   "value_text": "崇祯元年北方连荒，小冰期河冰可渡",
+   "time": {
+    "era_text": "崇祯元年",
+    "start": "1628-01-01",
+    "end": "1628-12-31",
+    "gregorian_year": 1628
+   },
+   "place": "shaanxi",
+   "source": "synthesis",
+   "quote": "崇祯元年，北方连荒，小冰期寒甚，河冰可渡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "小冰期气候背景，为李自成起事之远因",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M69",
+   "subject": "event:li_1640",
+   "predicate": "背景",
+   "value_text": "崇祯十一年大旱蝗起，流民载道",
+   "time": {
+    "era_text": "崇祯十一年",
+    "start": "1638-01-01",
+    "end": "1638-12-31",
+    "gregorian_year": 1638
+   },
+   "place": "henan",
+   "source": "synthesis",
+   "quote": "崇祯十一年，大旱蝗起，流民载道",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "灾荒导致流民，为李自成势力壮大提供兵源",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M67",
+   "subject": "event:li_1640",
+   "predicate": "背景",
+   "value_text": "饥馑荐臻，乱端萌焉",
+   "time": {
+    "era_text": "崇祯十一年",
+    "start": "1638-01-01",
+    "end": "1638-12-31",
+    "gregorian_year": 1638
+   },
+   "place": "henan",
+   "source": "synthesis",
+   "quote": "饥馑荐臻，乱端萌焉",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "饥荒引发动乱，为李自成起事之直接诱因",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M69",
+   "subject": "event:li_1640",
+   "predicate": "推断",
+   "value_text": "小冰期气候加剧北方灾荒",
+   "time": {
+    "era_text": "崇祯元年",
+    "start": "1628-01-01",
+    "end": "1628-12-31",
+    "gregorian_year": 1628
+   },
+   "place": "shaanxi",
+   "source": "synthesis",
+   "quote": "小冰期寒甚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "province",
+   "note": "小冰期与灾荒的因果关系为现代气候史推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M67",
+   "subject": "event:li_1640",
+   "predicate": "推断",
+   "value_text": "流民成为李自成军主要兵源",
+   "time": {
+    "era_text": "崇祯十一年",
+    "start": "1638-01-01",
+    "end": "1638-12-31",
+    "gregorian_year": 1638
+   },
+   "place": "henan",
+   "source": "synthesis",
+   "quote": "流民载道",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "province",
+   "note": "流民与李自成军的关系为学界共识，原文未明说",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M65",
+   "subject": "event:li_1640",
+   "predicate": "缺口",
+   "value_text": "原文未载李自成具体活动",
+   "time": {
+    "era_text": "崇祯元年",
+    "start": "1628-01-01",
+    "end": "1628-12-31",
+    "gregorian_year": 1628
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "乱端萌焉",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "史料仅述背景，未涉及李自成个人行迹",
+   "lead": {
+    "where": "event:li_1640",
+    "skills": [
+     "史料检索",
+     "年号换算"
+    ],
+    "accept": "补充崇祯元年至十一年间李自成活动记录"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LITTLE_ICEG01",
+   "subject": "event:li_1640",
+   "predicate": "史料缺环",
+   "value_text": "此次灾异的死亡与受灾范围，方志、奏报与私家记载互有出入，朝廷赈济之实效亦见仁见智，相关数字存在缺口。",
+   "time": {
+    "era_text": "崇祯",
+    "start": "1628-01-01",
+    "end": "1628-12-31",
+    "gregorian_year": 1628
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "disaster",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
- "gaps": [],
+ "conflicts": [
+  {
+   "id": "cf:event:li_1640|背景",
+   "subject": "event:li_1640",
+   "predicate": "背景",
+   "kind": "record_vs_record",
+   "count": 3,
+   "spread": null,
+   "assertion_ids": [
+    "SX001_M68",
+    "SX002_M69",
+    "SX003_M67"
+   ]
+  },
+  {
+   "id": "cf:event:li_1640|推断",
+   "subject": "event:li_1640",
+   "predicate": "推断",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX004_M69",
+    "SX005_M67"
+   ]
+  }
+ ],
+ "gaps": [
+  "SX006_M65",
+  "LITTLE_ICEG01"
+ ],
  "events": [
   {
    "id": "ev_li_1580",

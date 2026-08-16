@@ -836,7 +836,7 @@
       if (!items.length && !gaps.length) {
         body += '<div class="pty-row"><span class="pty-k">记载</span>' +
           '<span class="pty-v">当前采信范围内无直接记载。</span></div>';
-      } else if (name === '明方' && !state.activeFaction && (items.concat(gaps)).some(function (a) { return a._faction; })) {
+      } else if (!state.activeFaction && (items.concat(gaps)).some(function (a) { return a._faction && FDEF[a._faction]; })) {
         // 派系细分（v0.18）：明方桶内按 source.faction 二次分列，暴露派系间叙述冲突
         body += factionHtml(items, false) + factionHtml(gaps, true);
       } else {
@@ -918,15 +918,13 @@
     var counts = {};
     D.assertions.forEach(function (a) {
       var src = SRC[a.source]; if (!src) return;
-      var b = PARTY_BUCKET[src.party] || src.party;
-      if (b !== '明方') return;
       var fid = a._faction;
       if (!fid || !FDEF[fid]) return;
       counts[fid] = (counts[fid] || 0) + 1;
     });
     var head = document.createElement('div');
     head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632;display:flex;align-items:center;justify-content:space-between';
-    head.innerHTML = '<span>明方内部派系细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction</span></span>';
+    head.innerHTML = '<span>派系利益细分 <span style="font-weight:400;font-size:11px;color:#918777">· 立场二次派生 faction（跨朝代）</span></span>';
     var toggle = document.createElement('span');
     toggle.style.cssText = 'cursor:pointer;font-size:11px;font-weight:600;color:#fff;background:#8C6239;' +
       'padding:2px 9px;border-radius:99px;flex:0 0 auto';
@@ -953,7 +951,7 @@
     if (!fids.length) {
       var empty = document.createElement('div');
       empty.style.cssText = 'color:#918777;font-size:12px';
-      empty.textContent = '本切片暂无标注派系的明方断言。';
+      empty.textContent = '本切片暂无标注派系的断言。';
       box.appendChild(empty);
       return;
     }
@@ -996,8 +994,7 @@
         // 展开：该派系在本场景的全部明方断言（跨事件），按 subject 归并
         var facs = D.assertions.filter(function (a) {
           var src = SRC[a.source]; if (!src || !state.sources.has(a.source)) return false;
-          var b = PARTY_BUCKET[src.party] || src.party;
-          return b === '明方' && a._faction === fid;
+          return a._faction === fid;
         });
         var bySubj = {};
         facs.forEach(function (a) { (bySubj[a.subject] = bySubj[a.subject] || []).push(a); });
@@ -1031,8 +1028,7 @@
   function renderFactionCompare(box) {
     var scope = D.assertions.filter(function (a) {
       var src = SRC[a.source]; if (!src || !state.sources.has(a.source)) return false;
-      var b = PARTY_BUCKET[src.party] || src.party;
-      if (b !== '明方') return false;
+      if (!a._faction || !FDEF[a._faction]) return false;
       if (state.activeFaction && a._faction !== state.activeFaction) return false;
       if (DOSSIER && a.subject !== DOSSIER) return false;
       return true;
@@ -1049,13 +1045,13 @@
     var tip = document.createElement('div');
     tip.style.cssText = 'font-size:11.5px;color:#6b6259;margin:0 0 8px';
     tip.innerHTML = (DOSSIER ? '当前事件：<b style="color:#5A4632">' + subjectName(DOSSIER) + '</b> · ' : '整切片 · ') +
-      '各派系对该范围的明方记载并排对照（相同立场=共识，相悖=互攻）：';
+      '各派系对该范围的记载并排对照（相同立场=共识，相悖=互攻）：';
     box.appendChild(tip);
 
     if (!fids.length) {
       var none = document.createElement('div');
       none.style.cssText = 'color:#918777;font-size:12px';
-      none.textContent = '本范围暂无标注派系的明方断言可供对比。';
+      none.textContent = '本范围暂无标注派系的断言可供对比。';
       box.appendChild(none);
       return;
     }
@@ -1091,7 +1087,7 @@
     if (byF._unf && byF._unf.length) {
       var u = document.createElement('div');
       u.style.cssText = 'font-size:11px;color:#918777;margin-top:6px';
-      u.textContent = '（另有 ' + byF._unf.length + ' 条明方断言未标派系，不参与对比）';
+      u.textContent = '（另有 ' + byF._unf.length + ' 条断言未标派系，不参与对比）';
       box.appendChild(u);
     }
   }

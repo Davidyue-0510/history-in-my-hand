@@ -29,6 +29,22 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "party": "综合史料",
    "availability": "not_free",
    "bias_note": "改革利弊《明史》与近代研究颇有争议，此处综合而不偏。"
+  },
+  {
+   "id": "zhang_tai_yue",
+   "title": "《张太岳集》",
+   "name": "《张太岳集》",
+   "party": "内阁文献",
+   "faction": "neige",
+   "bias_note": "居正自著，申说考成、清丈、鞭法之必要。"
+  },
+  {
+   "id": "wan_li_ye_huo",
+   "title": "《万历野获编》",
+   "name": "《万历野获编》",
+   "party": "私家笔记",
+   "faction": "qingliu",
+   "bias_note": "沈德符记居正专权、廷杖言官与清丈之弊，多清流视角。"
   }
  ],
  "places": [
@@ -54,7 +70,7 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "id": "zhangjuzheng2",
    "name": "张居正",
    "side": "明首辅",
-   "influence": 0
+   "influence": 7
   },
   {
    "id": "wanli",
@@ -99,10 +115,306 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M50",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "任首辅",
+   "value_text": "任首辅",
+   "time": {
+    "era_text": "万历元年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "万历元年，张居正任首辅",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M51",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "行考成法",
+   "value_text": "行考成法",
+   "time": {
+    "era_text": "万历元年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "行考成法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M49",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "课吏职",
+   "value_text": "课吏职",
+   "time": {
+    "era_text": "万历元年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "课吏职",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M51",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "信赏罚",
+   "value_text": "信赏罚",
+   "time": {
+    "era_text": "万历元年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "信赏罚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M49",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "推行一条鞭法",
+   "value_text": "推行一条鞭法",
+   "time": {
+    "era_text": "万历九年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "万历九年推行一条鞭法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M48",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "赋役征银",
+   "value_text": "赋役征银",
+   "time": {
+    "era_text": "万历九年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "赋役征银",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M45",
+   "subject": "person:zhangjuzheng2",
+   "predicate": "国库渐充",
+   "value_text": "国库渐充",
+   "time": {
+    "era_text": "万历九年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "国库渐充",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M45",
+   "subject": "event:zj_1573",
+   "predicate": "开始",
+   "value_text": "张居正任首辅，行考成法",
+   "time": {
+    "era_text": "万历元年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "万历元年，张居正任首辅，行考成法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件zj_1573为张居正改革起始",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M35",
+   "subject": "event:zj_1581",
+   "predicate": "开始",
+   "value_text": "推行一条鞭法",
+   "time": {
+    "era_text": "万历九年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "万历九年推行一条鞭法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件zj_1581为一条鞭法推行",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGJUZHENGG01",
+   "subject": "event:zj_1573",
+   "predicate": "史料缺环",
+   "value_text": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "time": {
+    "era_text": "万历",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "reform",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZJ_FX1",
+   "subject": "event:zj_1573",
+   "predicate": "集权整饬",
+   "value_text": "张居正立考成法，以六科稽查六部、以内阁督责地方，行政机关效率骤增，却触怒惯于因循的官僚与地方官，言路怨谤四起。",
+   "source": "zhang_tai_yue",
+   "quote": "（居正）立考成法，尊主权、课吏职、信赏罚。",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.82,
+   "layer": "record",
+   "time": {
+    "era_text": "公元1573年",
+    "start": "1573-01-01",
+    "end": "1573-12-31",
+    "gregorian_year": 1573
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "首辅集权 vs 官僚因循之利",
+   "_party": "内阁文献",
+   "_faction": "neige"
+  },
+  {
+   "id": "ZJ_FX2",
+   "subject": "event:zj_1573",
+   "predicate": "夺情之争",
+   "value_text": "父丧丁忧，神宗留居正夺情视事；吴中行、赵用贤、邹元标等疏谏，反遭廷杖贬谪——清流以礼法攻专权，首辅以刑威压言路，冲突公开化。",
+   "source": "wan_li_ye_huo",
+   "quote": "吴中行等疏论居正夺情，杖谪有差。",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "layer": "record",
+   "time": {
+    "era_text": "公元1577年",
+    "start": "1577-01-01",
+    "end": "1577-12-31",
+    "gregorian_year": 1577
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "礼法清议 vs 君主专制联盟",
+   "_party": "私家笔记",
+   "_faction": "qingliu"
+  },
+  {
+   "id": "ZJ_FX3",
+   "subject": "event:zj_1581",
+   "predicate": "利益再分配",
+   "value_text": "一条鞭法并赋役为银、清丈隐田，削弱了豪强诡寄与胥吏中饱的空间，遭乡绅与州县官联手软抵抗；改革红利归于国库，阵痛由地方承担。",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.6,
+   "layer": "inference",
+   "time": {
+    "era_text": "公元1581年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "",
+   "scale": "empire",
+   "note": "财政集权与既得利益的冲突",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHANGJUZHENGG01"
+ ],
  "events": [
   {
    "id": "ev_zj_1573",
@@ -140,14 +452,58 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "generated"
   ],
   "parties": [
-   "综合史料"
+   "综合史料",
+   "内阁文献",
+   "私家笔记"
   ],
   "party_bucket": {
-   "综合史料": "综合史料"
+   "综合史料": "综合史料",
+   "内阁文献": "内阁文献",
+   "私家笔记": "私家笔记"
   },
   "party_colors": {
-   "综合史料": "#7f8c8d"
+   "综合史料": "#7f8c8d",
+   "内阁文献": "#8e44ad",
+   "私家笔记": "#16a085"
   },
-  "legend": {}
+  "legend": {},
+  "faction_colors": {
+   "neige": "#8e44ad",
+   "qingliu": "#16a085"
+  },
+  "factions": {
+   "neige": {
+    "name": "内阁首辅派（张居正—司礼监联盟）",
+    "period": "万历初—中后期（公元1573—1582）",
+    "interest": "以内阁首辅揽权、借司礼监冯保钳制言路，行考成法督责吏治、清丈田亩、行一条鞭法，重塑中央财政与行政效率。",
+    "key_figures": [
+     "张居正",
+     "冯保",
+     "戚继光",
+     "张学颜"
+    ],
+    "typical_sources": [
+     "张太岳集",
+     "万历起居注"
+    ],
+    "bias_note": "居正自评「苟利社稷，死生以之」，其文献强调振刷颓纲、富国强兵；对打压言官多自辩为「整饬纲纪」。"
+   },
+   "qingliu": {
+    "name": "清流言官·地方官（在野批评者）",
+    "period": "万历",
+    "interest": "以台谏清议自任，维护官僚与乡绅既有利益；反对夺情、清丈与鞭法扰民，借风宪之权制衡首辅专权。",
+    "key_figures": [
+     "邹元标",
+     "吴中行",
+     "赵用贤",
+     "海瑞（同调）"
+    ],
+    "typical_sources": [
+     "万历野获编",
+     "明臣奏议"
+    ],
+    "bias_note": "私家笔记与奏议多记居正专横、廷杖言官之酷，清流叙事将其塑造为「权相窃柄」。"
+   }
+  }
  }
 };

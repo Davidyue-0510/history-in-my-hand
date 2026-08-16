@@ -70,13 +70,13 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "id": "lizicheng4",
    "name": "李自成",
    "side": "闯",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "chongzhen2",
    "name": "崇祯帝",
    "side": "明",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -151,10 +151,271 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "place": "jiugong",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M64",
+   "subject": "person:lizicheng4",
+   "predicate": "投奔",
+   "value_text": "投闯王高迎祥",
+   "time": {
+    "era_text": "崇祯二年",
+    "start": "1629-01-01",
+    "end": "1629-12-31",
+    "gregorian_year": 1629
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "崇祯二年，李自成投闯王高迎祥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "高迎祥为闯王，李自成后袭其号",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M65",
+   "subject": "event:lc_1644",
+   "predicate": "破城",
+   "value_text": "破北京",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "崇祯十七年破北京",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M63",
+   "subject": "person:chongzhen2",
+   "predicate": "自缢",
+   "value_text": "崇祯帝自缢",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "崇祯帝自缢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M65",
+   "subject": "event:lc_1644",
+   "predicate": "败于",
+   "value_text": "败于山海关",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "旋败于山海关",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "山海关不在白名单，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M63",
+   "subject": "event:lc_1645",
+   "predicate": "南走",
+   "value_text": "南走而殁",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "南走而殁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "南走具体地点未明，殁于何处存疑",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M61",
+   "subject": "event:lc_1645",
+   "predicate": "结局",
+   "value_text": "李自成南走而殁",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "南走而殁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文未明言死因与地点，推断为南逃途中死亡",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M58",
+   "subject": "event:lc_1644",
+   "predicate": "时间线",
+   "value_text": "破北京后旋败",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "破北京；旋败于山海关",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "时间紧凑，未明具体间隔",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M59",
+   "subject": "event:lc_1644",
+   "predicate": "关联",
+   "value_text": "崇祯帝自缢与城破相关",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "破北京，崇祯帝自缢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文并列，推断因果关系",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M44",
+   "subject": "person:lizicheng4",
+   "predicate": "身份",
+   "value_text": "闯王高迎祥部下",
+   "time": {
+    "era_text": "崇祯二年",
+    "start": "1629-01-01",
+    "end": "1629-12-31",
+    "gregorian_year": 1629
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "投闯王高迎祥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M39",
+   "subject": "event:lc_1645",
+   "predicate": "死亡",
+   "value_text": "南走而殁",
+   "time": {
+    "era_text": "崇祯十七年",
+    "start": "1644-01-01",
+    "end": "1644-12-31",
+    "gregorian_year": 1644
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "南走而殁",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "死亡时间、地点、方式均未详述",
+   "lead": {
+    "where": "南走路线与死亡地点",
+    "skills": [
+     "明清史",
+     "史料考据"
+    ],
+    "accept": "考证李自成南走具体路线及死亡详情"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIZICHENGG01",
+   "subject": "event:lc_1644",
+   "predicate": "史料缺环",
+   "value_text": "此次起事的兵力、战损与平息过程，胜败双方史述各异，民间歌谣与正史口径不同，相关叙述存在缺口。",
+   "time": {
+    "era_text": "崇祯",
+    "start": "1629-01-01",
+    "end": "1629-12-31",
+    "gregorian_year": 1629
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "uprising",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX010_M39",
+  "LIZICHENGG01"
+ ],
  "events": [
   {
    "id": "ev_lc_1628",

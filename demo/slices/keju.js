@@ -117,10 +117,270 @@ window.SANDBOX_SLICES["keju"] = {
    "place": "luoyang_k",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M26",
+   "subject": "event:kj_605",
+   "predicate": "置科",
+   "value_text": "炀帝置进士科",
+   "time": {
+    "era_text": "大业二年",
+    "start": "606-01-01",
+    "end": "606-12-31",
+    "gregorian_year": 606
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "隋大业二年，炀帝置进士科",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "科举肇端",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M27",
+   "subject": "event:kj_605",
+   "predicate": "肇端",
+   "value_text": "科举肇端",
+   "time": {
+    "era_text": "大业二年",
+    "start": "606-01-01",
+    "end": "606-12-31",
+    "gregorian_year": 606
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "科举肇端",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M25",
+   "subject": "event:kj_tang",
+   "predicate": "诏贡",
+   "value_text": "高祖诏诸州岁贡",
+   "time": {
+    "era_text": "武德五年",
+    "start": "622-01-01",
+    "end": "622-12-31",
+    "gregorian_year": 622
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "唐武德五年，高祖诏诸州岁贡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M27",
+   "subject": "event:kj_tang",
+   "predicate": "加试",
+   "value_text": "进士加试诗赋",
+   "time": {
+    "era_text": "武德五年",
+    "start": "622-01-01",
+    "end": "622-12-31",
+    "gregorian_year": 622
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "进士加试诗赋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M26",
+   "subject": "event:kj_1905",
+   "predicate": "定制",
+   "value_text": "科举定制",
+   "time": {
+    "era_text": "景德年间",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宋景德年间，科举定制",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M26",
+   "subject": "event:kj_1905",
+   "predicate": "兴制",
+   "value_text": "糊名誊录制兴",
+   "time": {
+    "era_text": "景德年间",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "糊名誊录制兴",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M25",
+   "subject": "event:kj_1905",
+   "predicate": "取士倾向",
+   "value_text": "取士渐重文辞",
+   "time": {
+    "era_text": "景德年间",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "取士渐重文辞",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M26",
+   "subject": "event:kj_605",
+   "predicate": "关联",
+   "value_text": "隋唐科举一脉相承",
+   "time": {
+    "era_text": "大业二年至武德五年",
+    "start": "606-01-01",
+    "end": "606-12-31",
+    "gregorian_year": 606
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "隋唐科举一脉相承",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说，但由置科与诏贡推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M26",
+   "subject": "event:kj_1905",
+   "predicate": "演变",
+   "value_text": "科举制度从隋至宋持续演变",
+   "time": {
+    "era_text": "大业二年至景德年间",
+    "start": "606-01-01",
+    "end": "606-12-31",
+    "gregorian_year": 606
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "科举制度从隋至宋持续演变",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "综合三段原文推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M24",
+   "subject": "event:kj_1905",
+   "predicate": "缺失",
+   "value_text": "宋以后科举演变未述",
+   "time": {
+    "era_text": "景德年间之后",
+    "start": "1004-01-01",
+    "end": "1004-12-31",
+    "gregorian_year": 1004
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宋以后科举演变未述",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "原文止于宋景德，后续发展缺失",
+   "lead": {
+    "where": "宋景德年间之后",
+    "skills": [
+     "历史考证"
+    ],
+    "accept": "补充宋后科举制度演变"
+   },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KEJUG01",
+   "subject": "event:kj_1905",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "大业",
+    "start": "606-01-01",
+    "end": "606-12-31",
+    "gregorian_year": 606
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "SX010_M24",
+  "KEJUG01"
+ ],
  "events": [
   {
    "id": "ev_kj_605",

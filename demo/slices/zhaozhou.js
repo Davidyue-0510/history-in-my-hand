@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "id": "lichun",
    "name": "李春",
    "side": "隋匠师",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -92,10 +92,262 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "place": "zhaoxian",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M75",
+   "subject": "event:zz_595",
+   "predicate": "建造",
+   "value_text": "李春造赵州桥",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "大业元年，李春造赵州桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "事件event:zz_595对应赵州桥建造",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M75",
+   "subject": "event:zz_595",
+   "predicate": "别名",
+   "value_text": "又名安济桥",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "李春造赵州桥（安济桥）",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M74",
+   "subject": "event:zz_595",
+   "predicate": "结构特征",
+   "value_text": "敞肩拱跨洨水",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "敞肩拱跨洨水",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M76",
+   "subject": "event:zz_595",
+   "predicate": "存续时长",
+   "value_text": "历千四百年不圮",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "历千四百年不圮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "county",
+   "note": "原文约数，非精确年数",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M74",
+   "subject": "event:zz_595",
+   "predicate": "历史地位",
+   "value_text": "世界现存最古之石拱桥",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "为世界现存最古之石拱桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "此为原文评价，现代学界或有争议",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M73",
+   "subject": "person:lichun",
+   "predicate": "身份",
+   "value_text": "赵州桥建造者",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "李春造赵州桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M66",
+   "subject": "place:zhaoxian",
+   "predicate": "地标",
+   "value_text": "有赵州桥",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "李春造赵州桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M68",
+   "subject": "event:zz_595",
+   "predicate": "建造年代",
+   "value_text": "大业元年",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "大业元年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M50",
+   "subject": "event:zz_595",
+   "predicate": "建造者",
+   "value_text": "李春",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "李春造赵州桥",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M44",
+   "subject": "event:zz_595",
+   "predicate": "跨河",
+   "value_text": "跨洨水",
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "zhaoxian",
+   "source": "synthesis",
+   "quote": "敞肩拱跨洨水",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "洨水为当地河流，未在place白名单，故不单列",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHAOZHOUG01",
+   "subject": "event:zz_595",
+   "predicate": "史料缺环",
+   "value_text": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
+   "time": {
+    "era_text": "大业",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "engineering",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHAOZHOUG01"
+ ],
  "events": [
   {
    "id": "ev_zz_595",

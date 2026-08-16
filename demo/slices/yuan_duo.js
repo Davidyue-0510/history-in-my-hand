@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "id": "kublai",
    "name": "忽必烈",
    "side": "元",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "yao_shu",
@@ -99,10 +99,218 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "place": "beijing",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M37",
+   "subject": "event:yu_1271",
+   "predicate": "定国号",
+   "value_text": "忽必烈定国号曰大元",
+   "time": {
+    "era_text": "至元八年",
+    "start": "1271-01-01",
+    "end": "1271-12-31",
+    "gregorian_year": 1271
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "至元八年，忽必烈定国号曰大元",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "国号确立事件",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M38",
+   "subject": "event:yu_1276",
+   "predicate": "灭南宋",
+   "value_text": "灭南宋，混一南北",
+   "time": {
+    "era_text": "至元十六年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "至元十六年灭南宋，混一南北",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "南宋灭亡，南北统一",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M36",
+   "subject": "person:kublai",
+   "predicate": "定国号",
+   "value_text": "忽必烈定国号曰大元",
+   "time": {
+    "era_text": "至元八年",
+    "start": "1271-01-01",
+    "end": "1271-12-31",
+    "gregorian_year": 1271
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "忽必烈定国号曰大元",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M38",
+   "subject": "person:kublai",
+   "predicate": "灭南宋",
+   "value_text": "灭南宋，混一南北",
+   "time": {
+    "era_text": "至元十六年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "灭南宋，混一南北",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M36",
+   "subject": "event:yu_1276",
+   "predicate": "民族杂处",
+   "value_text": "蒙、汉、色目诸族杂处",
+   "time": {
+    "era_text": "至元十六年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "蒙、汉、色目诸族杂处",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "民族融合现象",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M35",
+   "subject": "event:yu_1276",
+   "predicate": "多元融合",
+   "value_text": "多元融合",
+   "time": {
+    "era_text": "至元十六年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "多元融合",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "文化融合特征",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M33",
+   "subject": "event:yu_1276",
+   "predicate": "行省制立",
+   "value_text": "行省制立",
+   "time": {
+    "era_text": "至元十六年",
+    "start": "1279-01-01",
+    "end": "1279-12-31",
+    "gregorian_year": 1279
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "行省制立",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "行省制度确立",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M33",
+   "subject": "event:yu_1271",
+   "predicate": "国号确立",
+   "value_text": "定国号曰大元",
+   "time": {
+    "era_text": "至元八年",
+    "start": "1271-01-01",
+    "end": "1271-12-31",
+    "gregorian_year": 1271
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "定国号曰大元",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "YUAN_DUOG01",
+   "subject": "event:yu_1276",
+   "predicate": "史料缺环",
+   "value_text": "此次民族融合的动因、过程与人口规模，各族纪述不一，相关叙述存在缺口。",
+   "time": {
+    "era_text": "至元",
+    "start": "1271-01-01",
+    "end": "1271-12-31",
+    "gregorian_year": 1271
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "fusion",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "YUAN_DUOG01"
+ ],
  "events": [
   {
    "id": "ev_yu_1271",

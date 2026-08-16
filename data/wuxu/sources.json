@@ -1,11 +1,27 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "戊戌变法·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "维新据《戊戌变法史》综合；守旧与维新之争为近代转折关键。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "戊戌变法·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "维新据《戊戌变法史》综合；守旧与维新之争为近代转折关键。"
+    },
+    {
+      "id": "kang_nian_pu",
+      "title": "康有为《自编年谱》",
+      "name": "康有为《自编年谱》",
+      "party": "帝党文献",
+      "faction": "didang",
+      "bias_note": "维新派核心文献，自述变法因缘与帝党困境。"
+    },
+    {
+      "id": "qing_shi_gao_wx",
+      "title": "《清史稿》",
+      "name": "《清史稿》",
+      "party": "官修史书",
+      "faction": "houding",
+      "bias_note": "民国初修，多沿后党立场，称变法为「乱政」。"
+    }
+  ]
 }

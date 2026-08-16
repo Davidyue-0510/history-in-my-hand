@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["liangshui"] = {
    "id": "yangyan",
    "name": "杨炎",
    "side": "唐宰相",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -92,10 +92,218 @@ window.SANDBOX_SLICES["liangshui"] = {
    "place": "changan",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M45",
+   "subject": "event:ls_780",
+   "predicate": "奏行",
+   "value_text": "杨炎奏行两税法",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "建中元年，宰相杨炎奏行两税法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M46",
+   "subject": "event:ls_780",
+   "predicate": "内容",
+   "value_text": "户税地税夏秋两征",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "户税地税夏秋两征",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "地点未明说，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M44",
+   "subject": "event:ls_780",
+   "predicate": "废除",
+   "value_text": "废租庸调",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "废租庸调",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M46",
+   "subject": "event:ls_780",
+   "predicate": "征税原则",
+   "value_text": "以资产为宗",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "以资产为宗",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M44",
+   "subject": "event:ls_780",
+   "predicate": "税制特点",
+   "value_text": "税目趋简",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "税目趋简",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M43",
+   "subject": "person:yangyan",
+   "predicate": "官职",
+   "value_text": "宰相",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "宰相杨炎",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M41",
+   "subject": "event:ls_780",
+   "predicate": "推行者",
+   "value_text": "杨炎",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "source": "synthesis",
+   "quote": "宰相杨炎奏行",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M41",
+   "subject": "event:ls_780",
+   "predicate": "影响",
+   "value_text": "两税法取代租庸调",
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "废租庸调，以资产为宗",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "原文未明说'取代'，但由'废租庸调'可合理推出",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIANGSHUIG01",
+   "subject": "event:ls_780",
+   "predicate": "史料缺环",
+   "value_text": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
+   "time": {
+    "era_text": "建中",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "reform",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "LIANGSHUIG01"
+ ],
  "events": [
   {
    "id": "ev_ls_780",

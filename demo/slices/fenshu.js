@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["fenshu"] = {
    "id": "lisi2",
    "name": "李斯",
    "side": "秦",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "qinshihuang3",
@@ -99,10 +99,262 @@ window.SANDBOX_SLICES["fenshu"] = {
    "place": "xianyang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M24",
+   "subject": "event:fs_213",
+   "predicate": "发生",
+   "value_text": "秦始皇从李斯之议焚书",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秦始皇从丞相李斯之议，焚《诗》《书》及百家语",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文未用年号纪年，直接使用公元纪年，此处保留原文表述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M25",
+   "subject": "event:fs_213",
+   "predicate": "法令",
+   "value_text": "令下三十日不烧者黥为城旦",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "令下三十日不烧者黥为城旦",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M23",
+   "subject": "person:lisi2",
+   "predicate": "提议",
+   "value_text": "李斯提议焚书",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秦始皇从丞相李斯之议",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M25",
+   "subject": "event:fs_212",
+   "predicate": "发生",
+   "value_text": "坑术士方士于咸阳",
+   "time": {
+    "era_text": "公元前212年",
+    "start": "-212-01-01",
+    "end": "-212-12-31",
+    "gregorian_year": -212
+   },
+   "place": "xianyang",
+   "source": "synthesis",
+   "quote": "坑术士方士于咸阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M24",
+   "subject": "event:fs_212",
+   "predicate": "别称",
+   "value_text": "史称焚书坑儒",
+   "time": {
+    "era_text": "公元前212年",
+    "start": "-212-01-01",
+    "end": "-212-12-31",
+    "gregorian_year": -212
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "史称焚书坑儒",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "焚书坑儒为后世合称，原文分述两事",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M25",
+   "subject": "event:fs_213",
+   "predicate": "关联人物",
+   "value_text": "秦始皇主导焚书",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秦始皇从丞相李斯之议",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文主语为秦始皇，推断其为主导者",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M23",
+   "subject": "event:fs_212",
+   "predicate": "关联人物",
+   "value_text": "秦始皇主导坑儒",
+   "time": {
+    "era_text": "公元前212年",
+    "start": "-212-01-01",
+    "end": "-212-12-31",
+    "gregorian_year": -212
+   },
+   "place": "xianyang",
+   "source": "synthesis",
+   "quote": "坑术士方士于咸阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "原文未明说主语，但承接前文推断为秦始皇",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M24",
+   "subject": "event:fs_213",
+   "predicate": "时间关系",
+   "value_text": "焚书发生于坑儒之前",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元前213年……公元前212年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "原文按时间顺序叙述",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX009_M24",
+   "subject": "event:fs_213",
+   "predicate": "焚书范围",
+   "value_text": "焚《诗》《书》及百家语",
+   "time": {
+    "era_text": "公元前213年",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "焚《诗》《书》及百家语",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M23",
+   "subject": "event:fs_212",
+   "predicate": "地点",
+   "value_text": "坑儒发生于咸阳",
+   "time": {
+    "era_text": "公元前212年",
+    "start": "-212-01-01",
+    "end": "-212-12-31",
+    "gregorian_year": -212
+   },
+   "place": "xianyang",
+   "source": "synthesis",
+   "quote": "坑术士方士于咸阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FENSHUG01",
+   "subject": "event:fs_213",
+   "predicate": "史料缺环",
+   "value_text": "此学派或议题的师承、著作与影响，诸子文献散佚、后世追述不一，相关脉络存在缺口。",
+   "time": {
+    "era_text": "秦始皇",
+    "start": "-213-01-01",
+    "end": "-213-12-31",
+    "gregorian_year": -213
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "thought",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "FENSHUG01"
+ ],
  "events": [
   {
    "id": "ev_fs_213",

@@ -62,13 +62,13 @@ window.SANDBOX_SLICES["four_inv"] = {
    "id": "cailun",
    "name": "蔡伦",
    "side": "东汉",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "bisheng",
    "name": "毕昇",
    "side": "北宋",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -143,10 +143,262 @@ window.SANDBOX_SLICES["four_inv"] = {
    "place": "kaifeng_f",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M33",
+   "subject": "person:cailun",
+   "predicate": "改进造纸",
+   "value_text": "公元105年改进造纸",
+   "time": {
+    "era_text": "公元105年",
+    "start": "105-01-01",
+    "end": "105-12-31",
+    "gregorian_year": 105
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元105年蔡伦改进造纸",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "公元纪年非年号，原文如此",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M34",
+   "subject": "event:fi_paper",
+   "predicate": "成形",
+   "value_text": "蔡伦改进造纸",
+   "time": {
+    "era_text": "公元105年",
+    "start": "105-01-01",
+    "end": "105-12-31",
+    "gregorian_year": 105
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天下便之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件直接描述，用event前缀",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M32",
+   "subject": "person:bisheng",
+   "predicate": "创泥活字",
+   "value_text": "庆历年间创泥活字",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "庆历年间毕昇创泥活字",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M34",
+   "subject": "event:fi_print",
+   "predicate": "成形",
+   "value_text": "毕昇创泥活字",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "毕昇创泥活字",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件直接描述，用event前缀",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M32",
+   "subject": "event:fi_compass",
+   "predicate": "应用",
+   "value_text": "海船用罗盘辨向",
+   "time": {
+    "era_text": "绍兴年间",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "绍兴年间海船用罗盘辨向",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "事件直接描述，用event前缀",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M29",
+   "subject": "event:fi_paper",
+   "predicate": "影响",
+   "value_text": "天下便之",
+   "time": {
+    "era_text": "公元105年",
+    "start": "105-01-01",
+    "end": "105-12-31",
+    "gregorian_year": 105
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天下便之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M30",
+   "subject": "event:fi_compass",
+   "predicate": "应用场景",
+   "value_text": "海船辨向",
+   "time": {
+    "era_text": "绍兴年间",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "海船用罗盘辨向",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010_M25",
+   "subject": "event:fi_paper",
+   "predicate": "时间",
+   "value_text": "公元105年",
+   "time": {
+    "era_text": "公元105年",
+    "start": "105-01-01",
+    "end": "105-12-31",
+    "gregorian_year": 105
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "公元105年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "公元纪年非年号，原文如此",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX011_M16",
+   "subject": "event:fi_print",
+   "predicate": "时间",
+   "value_text": "庆历年间",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "庆历年间",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX012_M11",
+   "subject": "event:fi_compass",
+   "predicate": "时间",
+   "value_text": "绍兴年间",
+   "time": {
+    "era_text": "绍兴年间",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "绍兴年间",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FOUR_INVG01",
+   "subject": "event:fi_paper",
+   "predicate": "史料缺环",
+   "value_text": "此技术或发明的源流、改进与传播，古籍记载简略且间有附会，相关细节存在缺口。",
+   "time": {
+    "era_text": "庆历",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "tech",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "FOUR_INVG01"
+ ],
  "events": [
   {
    "id": "ev_fi_paper",

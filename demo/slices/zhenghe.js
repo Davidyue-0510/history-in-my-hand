@@ -65,7 +65,7 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "id": "zhenghe2",
    "name": "郑和",
    "side": "明",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "yongle2",
@@ -110,10 +110,262 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "place": "taicang",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "ZH001",
+   "subject": "event:zh_1405",
+   "predicate": "首航",
+   "value_text": "永乐三年首下西洋",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "taicang",
+   "source": "synthesis",
+   "quote": "永乐三年，郑和首下西洋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "出发地推测为太仓，原文未明言",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH002",
+   "subject": "event:zh_1405",
+   "predicate": "途经",
+   "value_text": "至占城、爪哇",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "zhancheng",
+   "source": "synthesis",
+   "quote": "至占城、爪哇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "占城为白名单地点，爪哇未登记，留待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH003",
+   "subject": "event:zh_1405",
+   "predicate": "统帅",
+   "value_text": "郑和统领",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "郑和首下西洋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH004",
+   "subject": "event:zh_1433",
+   "predicate": "再航",
+   "value_text": "永乐七年再航抵锡兰",
+   "time": {
+    "era_text": "永乐七年",
+    "start": "1409-01-01",
+    "end": "1409-12-31",
+    "gregorian_year": 1409
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "永乐七年再航抵锡兰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "锡兰未登记地点，留待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH005",
+   "subject": "event:zh_1433",
+   "predicate": "第七次远航",
+   "value_text": "宣德六年第七次远航",
+   "time": {
+    "era_text": "宣德六年",
+    "start": "1431-01-01",
+    "end": "1431-12-31",
+    "gregorian_year": 1431
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宣德六年第七次远航",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH006",
+   "subject": "event:zh_1433",
+   "predicate": "抵达",
+   "value_text": "抵非洲东岸",
+   "time": {
+    "era_text": "宣德六年",
+    "start": "1431-01-01",
+    "end": "1431-12-31",
+    "gregorian_year": 1431
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "抵非洲东岸",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "非洲东岸未登记地点，留待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH007",
+   "subject": "event:zh_1405",
+   "predicate": "影响",
+   "value_text": "威航海宇",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "威航海宇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "原文为总结性评价，非具体事件，标为推断",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH008",
+   "subject": "person:zhenghe2",
+   "predicate": "身份",
+   "value_text": "远航统帅",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "郑和首下西洋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH009",
+   "subject": "event:zh_1405",
+   "predicate": "次数",
+   "value_text": "首航",
+   "time": {
+    "era_text": "永乐三年",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "首下西洋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZH010",
+   "subject": "event:zh_1433",
+   "predicate": "次数",
+   "value_text": "第七次",
+   "time": {
+    "era_text": "宣德六年",
+    "start": "1431-01-01",
+    "end": "1431-12-31",
+    "gregorian_year": 1431
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "第七次远航",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHENGHEG01",
+   "subject": "event:zh_1405",
+   "predicate": "史料缺环",
+   "value_text": "此次交通或交往的路线、规模与影响，中外纪述互证不足，相关细节存在缺口。",
+   "time": {
+    "era_text": "永乐",
+    "start": "1405-01-01",
+    "end": "1405-12-31",
+    "gregorian_year": 1405
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "frontier",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "ZHENGHEG01"
+ ],
  "events": [
   {
    "id": "ev_zh_1405",

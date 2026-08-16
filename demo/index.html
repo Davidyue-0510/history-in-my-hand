@@ -171,6 +171,32 @@
       background: #8C6239; color: #FBF9F3; border-color: #8C6239;
       box-shadow: 0 1px 4px rgba(140,98,57,.25);
     }
+
+    /* ── 分类色标：按 kind 给卡片左缘与标签上色，文明事件网格一眼可辨 ── */
+    .card--battle{border-left:3px solid #B23A48;}      .card--battle .card-kind{color:#B23A48;}
+    .card--disaster{border-left:3px solid #2E6FB0;}    .card--disaster .card-kind{color:#2E6FB0;}
+    .card--engineering{border-left:3px solid #3D8B5A;}  .card--engineering .card-kind{color:#3D8B5A;}
+    .card--uprising{border-left:3px solid #C0532B;}     .card--uprising .card-kind{color:#C0532B;}
+    .card--thought{border-left:3px solid #7A5AA0;}      .card--thought .card-kind{color:#7A5AA0;}
+    .card--tech{border-left:3px solid #2E8B8B;}         .card--tech .card-kind{color:#2E8B8B;}
+    .card--fusion{border-left:3px solid #C08A2E;}       .card--fusion .card-kind{color:#C08A2E;}
+    .card--dynasty{border-left:3px solid #8C6239;}       .card--dynasty .card-kind{color:#8C6239;}
+    .card--reform{border-left:3px solid #5A7DA0;}        .card--reform .card-kind{color:#5A7DA0;}
+    .card--court{border-left:3px solid #A05A78;}          .card--court .card-kind{color:#A05A78;}
+    .card--frontier{border-left:3px solid #6B8E23;}       .card--frontier .card-kind{color:#6B8E23;}
+    .card--county{border-left:3px solid #6E6A5A;}         .card--county .card-kind{color:#6E6A5A;}
+    .card--fiction{border-left:3px solid #9B7FD0;}        .card--fiction .card-kind{color:#6B4E9E;}
+    .card--war{border-left:3px solid #9A4B3B;}            .card--war .card-kind{color:#9A4B3B;}
+    .card--event{border-left:3px solid #8A7A52;}          .card--event .card-kind{color:#8A7A52;}
+    .card--migration{border-left:3px solid #4F8A6B;}      .card--migration .card-kind{color:#4F8A6B;}
+    /* 色标图例 */
+    .hub-legend{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 14px;padding:2px 0 4px;}
+    .hub-legend span{display:inline-flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10.5px;color:#5C544A;}
+    .hub-legend i{width:10px;height:10px;border-radius:2px;display:inline-block;}
+    /* 总览统计条 */
+    .hub-stats{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;
+      padding:6px 0 2px;font-family:var(--mono);font-size:12px;color:#5C544A;}
+    .hub-stats b{font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600;margin-right:4px;}
   </style>
 </head>
 <body>
@@ -181,22 +207,21 @@
     <span class="brand-en">Vege-civilization</span>
   </div>
   <div class="warn-badge" title="本切片为架构演示，引文未经点校本逐字核对">演示数据 · 引文待校</div>
+  <a href="factions.html" style="font-family:var(--serif);font-size:13px;font-weight:600;color:#fff;background:#8C6239;text-decoration:none;padding:5px 13px;border-radius:99px;margin-left:12px;white-space:nowrap">党派利益之争 →</a>
 </header>
 
 <main class="hub-main">
 
   <section class="hub-hero">
     <div>
-      <div class="hub-sub">VEGE-CIVILIZATION · v0.4 · 辽东走廊时空沙盘</div>
-      <h1 class="hub-title">同一块<em>真实地形</em>，<br><em>四种</em>史观切片。</h1>
+      <div class="hub-sub">VEGE-CIVILIZATION · 中华文明时空切片 · 先秦—清</div>
+      <h1 class="hub-title">同一套<em>断言内核</em>，<br>铺开<em>三千年</em>的文明图景。</h1>
       <p class="hub-lead">
-        萨尔浒之战（1619）把「明军分四路、后金凭你几路来我只一路去」摊在地图上；
-        开原 / 铁岭 / 辽阳三个县级 LOD 切片则把同一片辽东山脉、江河、边墙
-        切成不同尺度的城堡、互市、军事驻地与三方史料。
-        四片共用一份真实 ASTER 高程、四层证据物理隔离、断言内核自动发现冲突——
-        立场不靠手贴标签，靠来源派生。
+        从百家争鸣、商鞅变法、楚汉相争，到赤壁、淝水、崖山，再到丁戊奇荒、大运河、紫禁城——
+        一百三十余个时空切片共用同一份真实地理底图、四层证据物理隔离、断言内核自动发现冲突。
+        立场不靠手贴标签，靠来源派生；缺口是一等公民。
       </p>
-      <div style="margin-top:14px"><span class="hub-version">v0.4 · 通用切片引擎 + 受控词表 + lint 守门</span></div>
+      <div style="margin-top:14px"><span class="hub-version">v0.6 · 全时段文明切片引擎 + 受控词表 + lint 守门</span></div>
     </div>
     <div>
       <div class="hub-terrain-wrap">
@@ -313,12 +338,28 @@
     <button type="button" data-cat="civ" onclick="window.HUB&&HUB.setFilter('civ')">文明事件</button>
     <button type="button" data-cat="fiction" onclick="window.HUB&&HUB.setFilter('fiction')">虚构世界</button>
   </div>
+  <div class="hub-legend">
+    <span><i style="background:#B23A48"></i>战役</span>
+    <span><i style="background:#2E6FB0"></i>灾异</span>
+    <span><i style="background:#3D8B5A"></i>工程</span>
+    <span><i style="background:#C0532B"></i>起义</span>
+    <span><i style="background:#7A5AA0"></i>思想</span>
+    <span><i style="background:#2E8B8B"></i>科技</span>
+    <span><i style="background:#C08A2E"></i>融合</span>
+    <span><i style="background:#8C6239"></i>王朝</span>
+    <span><i style="background:#5A7DA0"></i>改革</span>
+    <span><i style="background:#A05A78"></i>宫廷</span>
+    <span><i style="background:#6B8E23"></i>边疆</span>
+    <span><i style="background:#6E6A5A"></i>县级</span>
+    <span><i style="background:#9B7FD0"></i>虚构</span>
+  </div>
+  <div class="hub-stats" id="hubStats"></div>
   <section class="hub-grid" id="hubGrid">
     <!-- 由 demo/hub.js 自动按 SD.scenes 渲染：增删切片无需改 HTML -->
   </section>
 
   <footer class="hub-foot">
-    <span>状态：v0.4 · 零额外权限（仅本地 + 联网检索 + 隔离 venv）</span>
+    <span>状态：v0.6 · 零额外权限（仅本地 + 联网检索 + 隔离 venv）</span>
     <span>模块：<a href="agent_sim.html">模拟器</a> · <a href="portal.html">招募门户</a> · <a href="share-design.html">设计招募</a> · <a href="share-dh.html">史料招募</a> · <a href="../docs/FEATURE-CATALOG.md">文档</a> · 共振报告：<a href="../data/resonance_report.md">data/resonance_report.md</a></span>
   </footer>
 
@@ -327,5 +368,19 @@
 <script src="data.js"></script>
 <script>window.HUB_RESONANCE = window.SANDBOX_DATA.resonance || {};</script>
 <script src="hub.js"></script>
+<script>
+  (function(){
+    var SD = window.SANDBOX_DATA || {};
+    var scenes = SD.scenes || {};
+    var n = Object.keys(scenes).length;
+    var a = 0;
+    Object.keys(scenes).forEach(function(k){ a += (scenes[k].assertions||[]).length; });
+    var el = document.getElementById('hubStats');
+    if (el) el.innerHTML = '<span><b>'+n+'</b>个时空切片</span>'
+      + '<span><b>'+a+'</b>条史料断言</span>'
+      + '<span><b>先秦—清</b>全时段覆盖</span>'
+      + '<span><b>四层证据</b>：record / scholarship / inference / gap</span>';
+  })();
+</script>
 </body>
 </html>

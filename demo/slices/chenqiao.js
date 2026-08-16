@@ -62,7 +62,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "id": "zhao_kuangyin",
    "name": "赵匡胤",
    "side": "宋太祖",
-   "influence": 0
+   "influence": 2
   },
   {
    "id": "chai_rong",
@@ -107,10 +107,218 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "place": "kaofeng",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX001_M40",
+   "subject": "event:cq_960a",
+   "predicate": "爆发",
+   "value_text": "赵匡胤陈桥兵变",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "chenqiao",
+   "source": "synthesis",
+   "quote": "公元960年殿前都点检赵匡胤陈桥兵变",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX002_M41",
+   "subject": "event:cq_960a",
+   "predicate": "结果",
+   "value_text": "黄袍加身，代后周称帝",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "chenqiao",
+   "source": "synthesis",
+   "quote": "黄袍加身，代后周称帝",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003_M39",
+   "subject": "event:cq_960b",
+   "predicate": "定都",
+   "value_text": "国号宋，定都开封",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "国号宋，定都开封",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004_M41",
+   "subject": "event:cq_960b",
+   "predicate": "集权措施",
+   "value_text": "杯酒之间收藩镇之权",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "杯酒之间收藩镇之权",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX005_M39",
+   "subject": "person:zhao_kuangyin",
+   "predicate": "官职",
+   "value_text": "殿前都点检",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "殿前都点检赵匡胤",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "place 未在史料中明确，留空待消歧",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX006_M38",
+   "subject": "person:zhao_kuangyin",
+   "predicate": "称帝",
+   "value_text": "代后周称帝",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "代后周称帝",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007_M36",
+   "subject": "event:cq_960a",
+   "predicate": "地点",
+   "value_text": "陈桥",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "chenqiao",
+   "source": "synthesis",
+   "quote": "陈桥兵变",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008_M36",
+   "subject": "event:cq_960b",
+   "predicate": "国号",
+   "value_text": "宋",
+   "time": {
+    "era_text": "公元960年",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "quote": "国号宋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENQIAOG01",
+   "subject": "event:cq_960a",
+   "predicate": "史料缺环",
+   "value_text": "此次政权更迭的兵略、伤亡与后续处置，新朝国史多讳败饰胜，相关细节存在缺口。",
+   "time": {
+    "era_text": "显德",
+    "start": "960-01-01",
+    "end": "960-12-31",
+    "gregorian_year": 960
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "dynasty",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
- "gaps": [],
+ "gaps": [
+  "CHENQIAOG01"
+ ],
  "events": [
   {
    "id": "ev_cq_960a",
