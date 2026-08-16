@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>分支时间线 · 反事实推演</title>
+<style>
+  :root{
+    --paper:#f7f3e9; --paper-2:#efe9d8; --ink:#2b2117; --ink-2:#5d5040; --ink-3:#8a7c66;
+    --rule:#d8cdb2; --rule-2:#c3b794;
+    --ming:#9a3b2e; --houjin:#3d6b4f; --neutral:#7a6e57;
+    --ok:#2f7d4f; --bad:#b23b2e;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Songti SC","SimSun",Georgia,serif;font-size:14px;line-height:1.5}
+  .wrap{max-width:1080px;margin:0 auto;padding:26px 22px 60px}
+  h1{font-size:22px;letter-spacing:.06em;margin:0 0 4px}
+  .sub{color:var(--ink-3);font-size:12px;margin-bottom:18px}
+  .hypo-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+  .hypo-tabs button{border:1px solid var(--rule-2);background:var(--paper-2);color:var(--ink-2);
+    padding:7px 12px;border-radius:5px;cursor:pointer;font-family:inherit;font-size:13px}
+  .hypo-tabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .lane{background:#fffdf7;border:1px solid var(--rule);border-radius:7px;padding:10px 12px 14px;margin-bottom:14px;
+    box-shadow:0 1px 4px rgba(60,40,20,.06)}
+  .lane-head{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+  .lane-head .tag{font-size:11px;padding:1px 8px;border-radius:3px;color:#fff;font-family:monospace}
+  .lane-head .t{font-weight:600;font-size:15px;letter-spacing:.04em}
+  .lane-head .d{color:var(--ink-3);font-size:11.5px}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .axis line{stroke:var(--rule-2);stroke-width:1}
+  .axis text{fill:var(--ink-3);font-size:10px;font-family:monospace}
+  .evt circle{stroke:#fff;stroke-width:1.5}
+  .evt text{font-size:10.5px;fill:var(--ink)}
+  .evt .date{fill:var(--ink-3);font-family:monospace;font-size:9.5px}
+  .conn{stroke:var(--ink-3);stroke-dasharray:3 3;stroke-width:1}
+  .panel{background:#fffdf7;border:1px solid var(--rule);border-radius:7px;padding:14px 16px;margin-top:6px}
+  .panel h3{margin:0 0 10px;font-size:14px;letter-spacing:.04em}
+  .chk{display:flex;gap:9px;align-items:flex-start;padding:6px 0;border-top:1px dashed var(--rule);font-size:12.5px}
+  .chk:first-of-type{border-top:none}
+  .chk .ic{flex:none;width:16px;height:16px;border-radius:50%;color:#fff;font-size:11px;line-height:16px;text-align:center;margin-top:1px}
+  .chk.ok .ic{background:var(--ok)} .chk.bad .ic{background:var(--bad)}
+  .chk .msg{color:var(--ink-2)}
+  .chk.bad .msg{color:var(--bad)}
+  .rules{margin-top:14px;font-size:11.5px;color:var(--ink-3);line-height:1.7}
+  .rules b{color:var(--ink-2)}
+  .gap-note{margin-top:10px;font-size:11px;color:var(--ink-3);border-left:3px solid var(--rule-2);padding:4px 0 4px 10px}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin:4px 0 10px;font-size:11px;color:var(--ink-2)}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1 id="title">分支时间线</h1>
+  <div class="sub" id="subtitle"></div>
+
+  <div class="legend" id="legend"></div>
+  <div class="hypo-tabs" id="tabs"></div>
+
+  <div class="lane" id="lane-orig">
+    <div class="lane-head"><span class="tag" style="background:var(--neutral)">ORIG</span>
+      <span class="t">史实时间线</span><span class="d" id="orig-d"></span></div>
+    <svg id="svg-orig" viewBox="0 0 1000 150" preserveAspectRatio="xMinYMin meet"></svg>
+  </div>
+
+  <div class="lane" id="lane-hypo">
+    <div class="lane-head"><span class="tag" style="background:var(--ming)">HYPO</span>
+      <span class="t" id="hypo-t"></span><span class="d" id="hypo-d"></span></div>
+    <svg id="svg-hypo" viewBox="0 0 1000 150" preserveAspectRatio="xMinYMin meet"></svg>
+  </div>
+
+  <div class="panel">
+    <h3>物理约束校验 · <span id="chk-name"></span></h3>
+    <div id="checks"></div>
+    <div class="rules">
+      <b>物理约束规则（反事实分支必须遵守）：</b><br>
+      ① <b>行军/奔袭</b>：按大圆距离 ÷ 日行军速（急行 60 / 骑兵 80 / 步卒 40 km·日⁻¹）得所需天数；若标注耗时少于此值，判定为「一日千里」式不可能，标红拦截。<br>
+      ② <b>加税/征敛</b>：单一加税政令若在本分支内无配套措置（招抚·蠲免·编伍等），判定为「竭泽而渔」，标红。<br>
+      ③ <b>分兵与补给</b>：长距离分兵须有相应补给/后路事件，否则提示风险（演示中简化为①②）。
+    </div>
+    <div class="gap-note">古地图图层：暂留缺口，本视图以现地图（真实高程地形 + NE 矢量底图）凑替，待古地图数据接入后替换。</div>
+  </div>
+</div>
+
+<script>
+/* ════════ 分支数据（内嵌；后续可由 tools/ingestion/build.py 注入 SANDBOX_DATA.branches 外置） ════════ */
+const BRANCH = {
+  scene:"sarhu",
+  title:"萨尔浒之战 · 分支时间线",
+  subtitle:"史实时间线 vs 反事实假设——假设分支须遵循物理限制",
+  places:{
+    shenyang:["沈阳",123.43,41.80], fushun:["抚顺",123.96,41.88],
+    sarhu:["萨尔浒",124.10,41.90], hetuala:["赫图阿拉",125.03,41.78]
+  },
+  // 史实：月份取自《两千年中西历对照表》核验种子（万历四十七年三月初一=1619-04-14 等）
+  original:[
+    {id:"o0",date:"1619-04-14",label:"杜松出抚顺关",kind:"行军",side:"明",from:"fushun",to:"sarhu",mode:"forced"},
+    {id:"o1",date:"1619-04-16",label:"杜松全军覆没于萨尔浒",kind:"战事",side:"明"},
+    {id:"o2",date:"1619-04-16",label:"马林败于尚间崖",kind:"战事",side:"明"},
+    {id:"o3",date:"1619-04-17",label:"刘綎殁于阿布达里岗",kind:"战事",side:"明"},
+    {id:"o4",date:"1619-04-17",label:"李如柏闻败退走",kind:"战事",side:"明"}
+  ],
+  hypotheses:[
+    {
+      id:"concentrate", label:"假设甲 · 集中兵力直捣赫图阿拉（合规）",
+      choice:"若杨镐拒纳分兵之议，以主力自沈阳疾进赫图阿拉，先斩后金腹心。",
+      events:[
+        {id:"c0",date:"1619-04-08",label:"明军主力集结沈阳",kind:"决策",side:"明"},
+        {id:"c1",date:"1619-04-10",label:"自沈阳奔袭赫图阿拉",kind:"行军",side:"明",from:"shenyang",to:"hetuala",mode:"forced"},
+        {id:"c2",date:"1619-04-14",label:"抵赫图阿拉，努尔哈赤仓促应战",kind:"战事",side:"明"},
+        {id:"c3",date:"1619-04-18",label:"加征辽饷以继军需",kind:"政令",side:"明",needs_measures:true},
+        {id:"c4",date:"1619-04-20",label:"招抚辽民、编伍屯田以安后路",kind:"政令",side:"明",measures_for:"c3"}
+      ]
+    },
+    {
+      id:"raid", label:"假设乙 · 当日千里奔袭劫粮（演示物理约束拦截）",
+      choice:"若杨镐令沈阳守军于萨尔浒开战当日，分兵当日奔袭赫图阿拉劫粮、并径加辽饷。",
+      events:[
+        {id:"r0",date:"1619-04-14",label:"萨尔浒开战",kind:"战事",side:"明"},
+        {id:"r1",date:"1619-04-14",label:"沈阳守军当日奔袭赫图阿拉劫粮",kind:"行军",side:"明",from:"shenyang",to:"hetuala",mode:"forced",duration_days:0},
+        {id:"r2",date:"1619-04-14",label:"加征辽饷",kind:"政令",side:"明",needs_measures:true}
+      ]
+    }
+  ]
+};
+
+/* ════════ 工具 ════════ */
+const SVGNS="http://www.w3.org/2000/svg";
+const SIDE_COLOR={明:"var(--ming)", 后金:"var(--houjin)", 中性:"var(--neutral)"};
+const KIND_COLOR={战事:"var(--ming)", 行军:"#b5793a", 决策:"#5a6b8c", 政令:"#7a5ea0", 中性:"var(--neutral)"};
+const RATES={forced:60, cavalry:80, foot:40};
+const MODE_NAME={forced:"急行", cavalry:"骑兵", foot:"步卒"};
+function dayNum(d){return Date.parse(d+"T00:00:00Z");}
+function haversine(a,b){
+  const R=6371, toR=Math.PI/180;
+  // places 元素格式为 [名称, 经度, 纬度]
+  const dLat=(b[2]-a[2])*toR, dLon=(b[1]-a[1])*toR;
+  const la1=a[2]*toR, la2=b[2]*toR;
+  const h=Math.sin(dLat/2)**2 + Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.min(1,Math.sqrt(h)));
+}
+function placeName(id){const p=BRANCH.places[id];return p?p[0]:id;}
+function daysBetween(a,b){return Math.round((dayNum(b)-dayNum(a))/86400000);}
+function fmtDate(d){const t=d.split("-");return t[0]+"·"+parseInt(t[1])+"·"+parseInt(t[2]);}
+
+/* ════════ 渲染单条时间线 ════════ */
+function renderLane(svg, events, minD, maxD){
+  while(svg.firstChild) svg.removeChild(svg.firstChild);
+  const W=1000, padL=40, padR=20, trackY=92, axisY=128;
+  const span=Math.max(1, maxD-minD);
+  const xOf=d=> padL + (dayNum(d)-minD)/span*(W-padL-padR);
+  // 轴线 + 年月刻度
+  const gAxis=document.createElementNS(SVGNS,"g"); gAxis.setAttribute("class","axis");
+  gAxis.appendChild(line(padL,axisY,W-padR,axisY));
+  // 生成月份刻度
+  const d0=new Date(minD), d1=new Date(maxD);
+  let cur=new Date(Date.UTC(d0.getUTCFullYear(),d0.getUTCMonth(),1));
+  while(cur.getTime()<=d1.getTime()){
+    const t=cur.getTime();
+    if(t>=minD && t<=maxD){
+      const xx=padL+(t-minD)/span*(W-padL-padR);
+      gAxis.appendChild(line(xx,axisY-4,xx,axisY+4));
+      const tx=document.createElementNS(SVGNS,"text");
+      tx.setAttribute("x",xx); tx.setAttribute("y",axisY+16); tx.setAttribute("text-anchor","middle");
+      tx.textContent=(cur.getUTCFullYear())+"-"+(cur.getUTCMonth()+1);
+      gAxis.appendChild(tx);
+    }
+    cur=new Date(Date.UTC(cur.getUTCFullYear(),cur.getUTCMonth()+1,1));
+  }
+  svg.appendChild(gAxis);
+  // 事件节点
+  events.slice().sort((a,b)=>dayNum(a.date)-dayNum(b.date)).forEach((ev,i,arr)=>{
+    const x=xOf(ev.date);
+    const g=document.createElementNS(SVGNS,"g"); g.setAttribute("class","evt");
+    const up = i%2===0;
+    const col = SIDE_COLOR[ev.side] || KIND_COLOR[ev.kind] || "var(--neutral)";
+    const c=document.createElementNS(SVGNS,"circle");
+    c.setAttribute("cx",x); c.setAttribute("cy",trackY); c.setAttribute("r",6);
+    c.setAttribute("fill",col); g.appendChild(c);
+    const lab=document.createElementNS(SVGNS,"text");
+    lab.setAttribute("x",x); lab.setAttribute("y", up?trackY-14:trackY+22);
+    lab.setAttribute("text-anchor","middle"); lab.textContent=ev.label;
+    g.appendChild(lab);
+    const dt=document.createElementNS(SVGNS,"text");
+    dt.setAttribute("x",x); dt.setAttribute("y", up?trackY-26:trackY+34);
+    dt.setAttribute("text-anchor","middle"); dt.setAttribute("class","date");
+    dt.textContent=fmtDate(ev.date);
+    g.appendChild(dt);
+    svg.appendChild(g);
+  });
+}
+function line(x1,y1,x2,y2){const l=document.createElementNS(SVGNS,"line");
+  l.setAttribute("x1",x1);l.setAttribute("y1",y1);l.setAttribute("x2",x2);l.setAttribute("y2",y2);return l;}
+
+/* ════════ 物理约束校验 ════════ */
+function checkHypothesis(h){
+  const out=[];
+  const idx={}; h.events.forEach(e=>idx[e.id]=e);
+  h.events.forEach(ev=>{
+    if(ev.from && ev.to){
+      const A=BRANCH.places[ev.from], B=BRANCH.places[ev.to];
+      if(A&&B){
+        const dist=haversine(A,B), rate=RATES[ev.mode]||60, req=Math.ceil(dist/rate);
+        let actual = ev.duration_days!=null ? ev.duration_days
+                     : (()=>{ const nx=h.events.find(e=>dayNum(e.date)>dayNum(ev.date));
+                              return nx?daysBetween(ev.date,nx.date):req; })();
+        if(actual<req) out.push({ok:false, msg:`行军 ${placeName(ev.from)}→${placeName(ev.to)} 大圆约 ${dist.toFixed(0)} km，按${MODE_NAME[ev.mode]||"急行"}日行 ${rate} km 需 ⌈${dist.toFixed(0)}/${rate}⌉=${req} 天，本分支标注仅 ${actual} 天 → 违反物理限制（不可能一日千里）`});
+        else out.push({ok:true, msg:`行军 ${placeName(ev.from)}→${placeName(ev.to)} ${dist.toFixed(0)} km / 需 ${req} 天（合规）`});
+      }
+    }
+    if(ev.needs_measures){
+      const has=h.events.some(e=>e.measures_for===ev.id);
+      if(!has) out.push({ok:false, msg:`「${ev.label}」为加税/征敛类政令，本分支无配套措置（招抚·蠲免·编伍）→ 违反「单纯加税必辅以别措」`});
+      else out.push({ok:true, msg:`加税且已有配套措置（合规）`});
+    }
+  });
+  return out;
+}
+
+/* ════════ 初始化 ════════ */
+function init(){
+  document.getElementById("title").textContent=BRANCH.title;
+  document.getElementById("subtitle").textContent=BRANCH.subtitle;
+  // 图例
+  const lg=document.getElementById("legend");
+  [["明方",BRANCH? "var(--ming)":"#000"],["后金","var(--houjin)"],["行军","#b5793a"],["决策","#5a6b8c"],["政令","#7a5ea0"]].forEach(([n,c])=>{
+    const s=document.createElement("span"); s.innerHTML=`<i style="background:${c}"></i>${n}`; lg.appendChild(s);
+  });
+  const allDates=[...BRANCH.original.map(e=>dayNum(e.date)),
+                  ...BRANCH.hypotheses.flatMap(h=>h.events.map(e=>dayNum(e.date)))];
+  const minD=Math.min(...allDates), maxD=Math.max(...allDates);
+  // 原始时间线
+  renderLane(document.getElementById("svg-orig"), BRANCH.original, minD, maxD);
+  document.getElementById("orig-d").textContent =
+    fmtDate(BRANCH.original[0].date)+" — "+fmtDate(BRANCH.original[BRANCH.original.length-1].date)+" · 史料记录";
+  // 假设分支标签
+  const tabs=document.getElementById("tabs");
+  BRANCH.hypotheses.forEach((h,i)=>{
+    const b=document.createElement("button"); b.textContent=h.label; b.dataset.i=i;
+    if(i===0) b.classList.add("on");
+    b.onclick=()=>{ [...tabs.children].forEach(x=>x.classList.remove("on")); b.classList.add("on"); showHypo(i,minD,maxD); };
+    tabs.appendChild(b);
+  });
+  showHypo(0,minD,maxD);
+}
+function showHypo(i,minD,maxD){
+  const h=BRANCH.hypotheses[i];
+  document.getElementById("hypo-t").textContent=h.label;
+  document.getElementById("hypo-d").textContent=h.choice;
+  document.getElementById("chk-name").textContent=h.label;
+  renderLane(document.getElementById("svg-hypo"), h.events, minD, maxD);
+  const res=checkHypothesis(h);
+  const box=document.getElementById("checks"); box.innerHTML="";
+  if(!res.length){ box.innerHTML='<div class="chk"><span class="ic">·</span><span class="msg">本分支无行军/加税类事件，无需物理约束校验。</span></div>'; return; }
+  res.forEach(r=>{
+    const d=document.createElement("div"); d.className="chk "+(r.ok?"ok":"bad");
+    d.innerHTML=`<span class="ic">${r.ok?"✓":"✕"}</span><span class="msg">${r.msg}</span>`;
+    box.appendChild(d);
+  });
+}
+init();
+</script>
+</body>
+</html>
