@@ -293,12 +293,25 @@
     });
   });
 
-  /* ═══════════ 地形 ═══════════ */
+  /* ═══════════ 地形 ═══════════
+     配色遵循在线地图（Google / OSM topographic / Natural Earth 分层设色）惯例：
+     低地→绿、丘陵→黄绿、山地→棕、高山→暗棕，海洋统一海蓝。
+     地形画布为全不透明底层：陆地出分层设色+山体阴影，海洋出与 #mapWrap 一致的 SEA 海蓝，
+     因此不再依赖 SVG 海蓝背景透出（避免此前「半透明陆地叠海蓝→发灰发蓝」的洗白观感）。 */
   var RAMP = [
-    [0,    [214, 227, 232]], [1,    [243, 240, 229]], [80,   [235, 229, 212]],
-    [250,  [223, 213, 188]], [500,  [208, 194, 161]], [900,  [191, 172, 136]],
-    [1400, [173, 150, 115]], [1800, [156, 131,  98]]
+    [0,    [188, 214, 168]],   // 0–50m 沿海低地·浅绿
+    [50,   [198, 222, 162]],   // 0–200m 平原绿
+    [200,  [216, 224, 158]],   // 200m 黄绿
+    [400,  [233, 222, 150]],   // 400m 浅黄
+    [600,  [226, 202, 132]],   // 600m 稻黄
+    [800,  [214, 182, 120]],   // 800m 浅棕
+    [1000, [198, 160, 102]],   // 1000m 棕
+    [1200, [178, 138, 86]],    // 1200m 深棕
+    [1500, [152, 112, 72]],    // 1500m+ 暗棕
+    [2500, [122, 92, 66]],     // 高山
+    [4000, [150, 140, 132]]    // 极高·灰棕
   ];
+  var SEA = [197, 221, 230];   // 与 #mapWrap 背景一致的海蓝
   function rampColor(e) {
     if (e <= 0) return RAMP[0][1];
     for (var i = 1; i < RAMP.length; i++) {
@@ -358,7 +371,7 @@
     var ctx = c.getContext('2d'), img = ctx.createImageData(nx, ny);
     var midLat = TG.lat0 + (ny - 1) * TG.step / 2;
     var cellY = TG.step * 111320, cellX = TG.step * 111320 * Math.cos(midLat * Math.PI / 180);
-    var ZF = 2.6, zen = (90 - 45) * Math.PI / 180, azm = (360 - 315 + 90) * Math.PI / 180;
+    var ZF = 2.2, zen = (90 - 45) * Math.PI / 180, azm = (360 - 315 + 90) * Math.PI / 180;
     function z(ix, iy) {
       ix = Math.max(0, Math.min(nx - 1, ix)); iy = Math.max(0, Math.min(ny - 1, iy));
       var v = E[iy * nx + ix]; return v == null ? 0 : v;
@@ -366,6 +379,14 @@
     var landMask = buildLandMask();
     for (var iy = 0; iy < ny; iy++) for (var ix = 0; ix < nx; ix++) {
       var e = z(ix, iy);
+      var isSea = (e <= 0);
+      // 陆地判定：NE 矢量多边形掩膜优先（保证海岸与底图对齐），无掩膜时回落高程
+      var land = landMask ? landMask[iy * nx + ix] : !isSea;
+      var row = (ny - 1 - iy), o = (row * nx + ix) * 4;
+      if (!land) {                       // 海洋：不透明海蓝（与 #mapWrap 一致）
+        img.data[o] = SEA[0]; img.data[o + 1] = SEA[1]; img.data[o + 2] = SEA[2];
+        img.data[o + 3] = 255; continue;
+      }
       var dzdx = ((z(ix + 1, iy - 1) + 2 * z(ix + 1, iy) + z(ix + 1, iy + 1)) -
                   (z(ix - 1, iy - 1) + 2 * z(ix - 1, iy) + z(ix - 1, iy + 1))) / (8 * cellX);
       var dzdy = ((z(ix - 1, iy + 1) + 2 * z(ix, iy + 1) + z(ix + 1, iy + 1)) -
@@ -374,22 +395,13 @@
       var aspect = Math.atan2(dzdy, -dzdx);
       var hs = Math.cos(zen) * Math.cos(slope) + Math.sin(zen) * Math.sin(slope) * Math.cos(azm - aspect);
       hs = Math.max(0, Math.min(1, hs));
-      var col = state.terrain.tint ? rampColor(e) : [239, 235, 223];
-      var f = state.terrain.shade ? (0.62 + 0.52 * hs) : 1;
-      if (e <= 0) f = 1;
-      var isSea = (e <= 0);
-      // 陆地判定：NE 矢量多边形掩膜优先（保证海岸与底图对齐），无掩膜时回落高程
-      var land = landMask ? landMask[iy * nx + ix] : !isSea;
-      // 边缘羽化（~12 格）：平滑 NE 陆地延伸到网格外缘时的硬截断
-      var edgeMin = Math.min(ix, iy, nx - 1 - ix, ny - 1 - iy);
-      var fade = Math.min(1, edgeMin / 12);
-      // 非陆地 → 全透明；陆地 → 半透明叠加（让 NE 省界/河流/边墙透出）
-      var alpha = land ? Math.round(255 * 0.55 * fade) : 0;
-      var row = (ny - 1 - iy), o = (row * nx + ix) * 4;
+      var col = state.terrain.tint ? rampColor(e) : [222, 216, 198];
+      var f = state.terrain.shade ? (0.72 + 0.42 * hs) : 1;
+      // 地形画布全不透明：陆地出分层设色+山体阴影，不再半透明叠海蓝（消除洗白）
       img.data[o] = Math.max(0, Math.min(255, col[0] * f));
       img.data[o + 1] = Math.max(0, Math.min(255, col[1] * f));
       img.data[o + 2] = Math.max(0, Math.min(255, col[2] * f));
-      img.data[o + 3] = alpha;
+      img.data[o + 3] = 255;
     }
     ctx.putImageData(img, 0, 0);
     return c;
