@@ -2037,7 +2037,7 @@
   }
   // 初始化：默认选中首个事件（左侧事件列表高亮用 state.t）
   if (D.events && D.events.length) state.t = 0;
-  applyView(false); wireControl(); wireChgis(); wireBattle(); wireRouteTimeline(); refresh();
+  applyView(false); wireControl(); wireChgis(); wireBattle(); wireRouteTimeline(); buildRouteTimeline(); refresh();
 
   function wireChgis() {
     var box = document.getElementById('chgisToggle');
@@ -2166,7 +2166,7 @@
   function updateRouteDateLabel(ord) {
     var lab = document.getElementById('rtDateLabel');
     var dt = document.getElementById('rtDate');
-    var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+    var meta = routeMeta();
     if (!meta || !meta.ready) { if (lab) lab.textContent = '—'; if (dt) dt.textContent = '—'; return; }
     if (ord == null) {
       var last = meta.timeline[meta.timeline.length - 1];
@@ -2179,13 +2179,34 @@
     if (lab) lab.textContent = cur ? (cur.label || cur.era || '') : '';
     if (dt) dt.textContent = cur ? fmtDate(cur.at) : String(ord);
   }
+  function ordOfDate(at) {
+    var s = String(at || ''), core = s.replace(/^B/, '').replace(/-/g, '');
+    var n = parseInt(core, 10);
+    return isNaN(n) ? null : (s.charAt(0) === 'B' ? -n : n);
+  }
+  // 行军路线回放序列：优先 BattleLayer（含跨场景/接战回退），否则用 bundle 的 D.timeline
+  // （file:// 下 BattleLayer fetch 失败也能用——v0.48.1）。
+  function routeMeta() {
+    if (window.BattleLayer) {
+      var m = BattleLayer.getRouteMeta(sceneKey);
+      if (m && m.ready) return m;
+    }
+    if (D.timeline && D.timeline.length) {
+      var tl = D.timeline.map(function (t) {
+        return { at: t.at, ord: ordOfDate(t.at), era: t.era || '', label: t.label || '', key: !!t.key };
+      }).sort(function (a, b) { return (a.ord == null ? 0 : a.ord) - (b.ord == null ? 0 : b.ord); });
+      var year = tl.length ? parseInt(String(tl[0].at).replace(/^B/, '').split('-')[0], 10) : null;
+      return { ready: true, timeline: tl, year: year, scene: sceneKey };
+    }
+    return { ready: false, timeline: [], year: null, scene: sceneKey };
+  }
   function buildRouteTimeline() {
     var strip = document.getElementById('routeTimeline');
     var track = document.getElementById('rtTrack');
     var eraEl = document.getElementById('rtEra');
     var badge = document.getElementById('rtYearBadge');
     if (!strip || !track) return;
-    var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+    var meta = routeMeta();
     // 无数据、或「显示行军路线」未勾选 → 收起整条时间轴
     if (!meta || !meta.ready || !meta.timeline.length || !(state.battle.on && state.battle.routes)) {
       strip.style.display = 'none';
@@ -2228,7 +2249,7 @@
     });
     if (full) full.addEventListener('click', function () { stopRoutePlay(); setRouteDate(null); markRouteNow(null); });
     if (play) play.addEventListener('click', function () {
-      var meta = window.BattleLayer && BattleLayer.getRouteMeta(sceneKey);
+      var meta = routeMeta();
       if (!meta || !meta.ready || !meta.timeline.length) return;
       if (routePlay.timer) { stopRoutePlay(); return; }
       play.textContent = '⏸';

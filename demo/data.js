@@ -27638,6 +27638,120 @@ window.SANDBOX_DATA = {
    "party": "清方",
    "start": 1644,
    "end": 1644
+  },
+  {
+   "place_id": "horqin",
+   "party": "明方",
+   "start": 1616,
+   "end": 1623
+  },
+  {
+   "place_id": "horqin",
+   "party": "清方",
+   "start": 1624,
+   "end": 1644
+  },
+  {
+   "place_id": "chahar",
+   "party": "明方",
+   "start": 1616,
+   "end": 1627
+  },
+  {
+   "place_id": "chahar",
+   "party": "contested",
+   "start": 1628,
+   "end": 1634
+  },
+  {
+   "place_id": "chahar",
+   "party": "清方",
+   "start": 1635,
+   "end": 1644
+  },
+  {
+   "place_id": "harqin",
+   "party": "明方",
+   "start": 1616,
+   "end": 1627
+  },
+  {
+   "place_id": "harqin",
+   "party": "清方",
+   "start": 1628,
+   "end": 1644
+  },
+  {
+   "place_id": "tumed",
+   "party": "明方",
+   "start": 1616,
+   "end": 1631
+  },
+  {
+   "place_id": "tumed",
+   "party": "清方",
+   "start": 1632,
+   "end": 1644
+  },
+  {
+   "place_id": "ordos",
+   "party": "明方",
+   "start": 1616,
+   "end": 1634
+  },
+  {
+   "place_id": "ordos",
+   "party": "清方",
+   "start": 1635,
+   "end": 1644
+  },
+  {
+   "place_id": "jizhou",
+   "party": "明方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "beijing",
+   "party": "明方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "xuanfu",
+   "party": "明方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "datong",
+   "party": "明方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "ningguta",
+   "party": "清方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "jilin",
+   "party": "清方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "qiqihar",
+   "party": "清方",
+   "start": 1616,
+   "end": 1644
+  },
+  {
+   "place_id": "aigun",
+   "party": "清方",
+   "start": 1616,
+   "end": 1644
   }
  ],
  "control_events": [
@@ -27662,16 +27776,36 @@ window.SANDBOX_DATA = {
    "label": "渡辽河，取广宁、义州（旋弃）"
   },
   {
+   "year": 1624,
+   "label": "科尔沁部联姻归附后金"
+  },
+  {
    "year": 1626,
    "label": "宁远之战，明守胜"
   },
   {
    "year": 1627,
-   "label": "宁锦之战，明守胜"
+   "label": "宁锦明守胜；丁卯征朝鲜"
+  },
+  {
+   "year": 1628,
+   "label": "皇太极西征，破察哈尔部"
   },
   {
    "year": 1631,
    "label": "大凌河之战，祖大寿降"
+  },
+  {
+   "year": 1632,
+   "label": "远征林丹汗，进归化城，土默特降"
+  },
+  {
+   "year": 1635,
+   "label": "察哈尔亡，漠南蒙古归清"
+  },
+  {
+   "year": 1636,
+   "label": "皇太极称帝，改国号大清"
   },
   {
    "year": 1641,
@@ -27820,6 +27954,84 @@ window.SANDBOX_DATA = {
    "name": "山海关",
    "lon": 119.75,
    "lat": 40
+  },
+  {
+   "place_id": "horqin",
+   "name": "科尔沁(哲里木)",
+   "lon": 122.25,
+   "lat": 43.65
+  },
+  {
+   "place_id": "chahar",
+   "name": "察哈尔(林丹汗)",
+   "lon": 116.05,
+   "lat": 43.95
+  },
+  {
+   "place_id": "harqin",
+   "name": "喀喇沁(承德)",
+   "lon": 118.9,
+   "lat": 42.27
+  },
+  {
+   "place_id": "tumed",
+   "name": "土默特(归化)",
+   "lon": 111.75,
+   "lat": 40.82
+  },
+  {
+   "place_id": "ordos",
+   "name": "鄂尔多斯(伊克昭)",
+   "lon": 110,
+   "lat": 39.83
+  },
+  {
+   "place_id": "jizhou",
+   "name": "蓟州(蓟镇)",
+   "lon": 117.42,
+   "lat": 40.04
+  },
+  {
+   "place_id": "beijing",
+   "name": "北京(顺天)",
+   "lon": 116.41,
+   "lat": 39.9
+  },
+  {
+   "place_id": "xuanfu",
+   "name": "宣府(宣化)",
+   "lon": 115.06,
+   "lat": 40.61
+  },
+  {
+   "place_id": "datong",
+   "name": "大同",
+   "lon": 113.3,
+   "lat": 40.09
+  },
+  {
+   "place_id": "ningguta",
+   "name": "宁古塔",
+   "lon": 129.47,
+   "lat": 44.34
+  },
+  {
+   "place_id": "jilin",
+   "name": "吉林乌拉",
+   "lon": 126.55,
+   "lat": 43.84
+  },
+  {
+   "place_id": "qiqihar",
+   "name": "齐齐哈尔",
+   "lon": 123.92,
+   "lat": 47.35
+  },
+  {
+   "place_id": "aigun",
+   "name": "瑷珲(黑龙江)",
+   "lon": 127.48,
+   "lat": 49.6
   }
  ],
  "control_years": [
