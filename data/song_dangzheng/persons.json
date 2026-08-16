@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "id": "chengyi",
+      "name": "程颐",
+      "side": "luo_dang",
+      "influence": 0,
+      "hometown": "洛阳"
+    },
+    {
+      "id": "sushi",
+      "name": "苏轼",
+      "side": "shu_dang",
+      "influence": 0,
+      "hometown": "眉山"
+    },
+    {
+      "id": "suzhe",
+      "name": "苏辙",
+      "side": "shu_dang",
+      "influence": 0,
+      "hometown": "眉山"
+    },
+    {
+      "id": "liuzhi",
+      "name": "刘挚",
+      "side": "shuo_dang",
+      "influence": 0,
+      "hometown": "东光"
+    },
+    {
+      "id": "liangtao",
+      "name": "梁焘",
+      "side": "shuo_dang",
+      "influence": 0,
+      "hometown": "郓州"
+    }
+  ]
+}

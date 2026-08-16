@@ -28,7 +28,29 @@ window.SANDBOX_SLICES["huangjin"] = {
    "title": "黄巾起义·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "黄巾与东汉双方记载悬殊：官方视「贼」、民间多同情；此处综合《后汉书》与近代研究。"
+   "bias_note": "黄巾与东汉双方记载悬殊：官方视「贼」、民间多同情；此处综合《后汉书》与近代研究。",
+   "stance_label": "私修编年·综合",
+   "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250 年"
+  },
+  {
+   "id": "hj_rebel_src",
+   "title": "黄巾方文献",
+   "name": "太平道相关",
+   "party": "黄巾军",
+   "faction": "hj_rebel",
+   "bias_note": "民间道门叙事，几无文字传世，多经官书转述。",
+   "stance_label": "民间·几无文字传世",
+   "distance_label": "黄巾方自身无文献，多经官书转述"
+  },
+  {
+   "id": "hj_court_src",
+   "title": "东汉讨伐军文献",
+   "name": "《后汉书·皇甫嵩传》",
+   "party": "汉军",
+   "faction": "hj_court",
+   "bias_note": "朝廷纪功，叙平乱之功。",
+   "stance_label": "后世官修·纪功",
+   "distance_label": "《后汉书·皇甫嵩传》成书约 5 世纪，距事约 250 年"
   }
  ],
  "places": [
@@ -55,6 +77,30 @@ window.SANDBOX_SLICES["huangjin"] = {
    "lat": 37.1,
    "note": "张角弟张梁战死处",
    "elev": 33
+  },
+  {
+   "id": "zhao",
+   "name": "朝那",
+   "lon": 106.2,
+   "lat": 35.9,
+   "note": "皇甫嵩故里",
+   "elev": 1989
+  },
+  {
+   "id": "shangyu",
+   "name": "上虞",
+   "lon": 120.87,
+   "lat": 30.03,
+   "note": "朱儁故里",
+   "elev": 71
+  },
+  {
+   "id": "zhuozhou",
+   "name": "涿州",
+   "lon": 115.98,
+   "lat": 39.48,
+   "note": "卢植故里",
+   "elev": 35
   }
  ],
  "persons": [
@@ -62,13 +108,29 @@ window.SANDBOX_SLICES["huangjin"] = {
    "id": "zhangjiao",
    "name": "张角",
    "side": "黄巾",
-   "influence": 0
+   "influence": 0,
+   "hometown": "钜鹿"
   },
   {
    "id": "huangfusong",
    "name": "皇甫嵩",
    "side": "汉",
-   "influence": 0
+   "influence": 0,
+   "hometown": "朝那"
+  },
+  {
+   "id": "zhujun",
+   "name": "朱儁",
+   "side": "汉",
+   "influence": 0,
+   "hometown": "上虞"
+  },
+  {
+   "id": "luzhi",
+   "name": "卢植",
+   "side": "汉",
+   "influence": 0,
+   "hometown": "涿州"
   }
  ],
  "assertions": [
@@ -338,12 +400,81 @@ window.SANDBOX_SLICES["huangjin"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "HJ_FX1",
+   "subject": "event:hj_184",
+   "predicate": "利益对立",
+   "value_text": "张角以太平道聚众，号「苍天已死，黄天当立」，底层流民对东汉赋役压榨的总爆发。",
+   "source": "hj_rebel_src",
+   "layer": "record",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "中平元年",
+    "start": 184,
+    "end": 184,
+    "gregorian_year": 184
+   },
+   "place": "julu_up",
+   "quote": "苍天已死，黄天当立",
+   "note": "流民利益 vs 皇权秩序",
+   "_party": "黄巾军",
+   "_faction": "hj_rebel"
+  },
+  {
+   "id": "HJ_FX2",
+   "subject": "event:hj_185",
+   "predicate": "镇压叙事",
+   "value_text": "皇甫嵩、朱儁等分兵镇压，张角已死、张梁战广宗，黄巾主力平——朝廷倚各地豪强兵源。",
+   "source": "hj_court_src",
+   "layer": "record",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "中平二年",
+    "start": 185,
+    "end": 185,
+    "gregorian_year": 185
+   },
+   "place": "guangzong",
+   "quote": "嵩等讨破之",
+   "note": "讨伐军将领籍贯分散=兵源地方化",
+   "_party": "汉军",
+   "_faction": "hj_court"
+  },
+  {
+   "id": "HJ_GAP1",
+   "subject": "event:hj_184",
+   "predicate": "史料缺环",
+   "value_text": "黄巾兵力、战损与平息过程，胜败双方记载悬殊，民间歌谣与正史口径不同。",
+   "source": "synthesis",
+   "layer": "gap",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0,
+   "time": {
+    "era_text": "中平",
+    "start": 184,
+    "end": 184,
+    "gregorian_year": 184
+   },
+   "place": null,
+   "lead": {
+    "where": "后汉书与民间史料对读",
+    "skills": [
+     "多源比对"
+    ],
+    "accept": "补黄巾方视角与兵力估计"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
   "SX010_M37",
-  "HUANGJING01"
+  "HUANGJING01",
+  "HJ_GAP1"
  ],
  "events": [
   {
@@ -544,6 +675,120 @@ window.SANDBOX_SLICES["huangjin"] = {
      "key": "b",
      "label": "汉军行动",
      "color": "#2b6cb0"
+    }
+   ]
+  },
+  "factions": {
+   "hj_rebel": {
+    "name": "太平道·黄巾",
+    "period": "184 起事",
+    "interest": "张角以太平道聚众数十万，三十六方同日反，代表底层流民对东汉压榨的反抗。",
+    "key_figures": [
+     "张角",
+     "张宝",
+     "张梁"
+    ],
+    "typical_sources": [
+     "后汉书·皇甫嵩传"
+    ],
+    "bias_note": "官方视「贼」、民间多同情；兵力与战损双方记载悬殊。",
+    "bases": [
+     "钜鹿",
+     "广宗"
+    ],
+    "geo_note": "张角钜鹿人，起兵于冀州钜鹿、广宗一带，蔓延八州。"
+   },
+   "hj_court": {
+    "name": "东汉朝廷讨伐军",
+    "period": "184—185",
+    "interest": "皇甫嵩、朱儁、卢植等率州郡兵镇压，代表衰败的东汉皇权与豪强秩序。",
+    "key_figures": [
+     "皇甫嵩",
+     "朱儁",
+     "卢植",
+     "何进"
+    ],
+    "typical_sources": [
+     "后汉书·皇甫嵩传"
+    ],
+    "bias_note": "朝廷纪功叙事，淡化镇压之酷与流民之困。",
+    "bases": [
+     "朝那",
+     "上虞",
+     "涿州",
+     "南阳"
+    ],
+    "geo_note": "皇甫嵩安定朝那（西北将种）、朱儁会稽上虞（江南）、卢植涿郡（河北）、何进南阳（外戚）——讨伐军将领籍贯分散，反映朝廷倚各地豪强兵源。"
+   }
+  },
+  "faction_colors": {
+   "hj_rebel": "#c0392b",
+   "hj_court": "#2b6cb0"
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "江南/巴蜀",
+     "determination": "genuine_gap",
+     "note": "黄巾主力在冀州—中原，江南巴蜀非核心。"
+    }
+   ]
+  }
+ },
+ "faction_geo": {
+  "hj_rebel": {
+   "name": "太平道·黄巾",
+   "color": "#c0392b",
+   "geo_note": "张角钜鹿人，起兵于冀州钜鹿、广宗一带，蔓延八州。",
+   "points": [
+    {
+     "name": "钜鹿",
+     "lon": 115.04,
+     "lat": 37.67,
+     "note": "魏征故里，今河北晋州",
+     "resolved": true
+    },
+    {
+     "name": "广宗",
+     "lon": 115.1,
+     "lat": 37.1,
+     "note": "张梁战死处，今河北广宗",
+     "resolved": true
+    }
+   ]
+  },
+  "hj_court": {
+   "name": "东汉朝廷讨伐军",
+   "color": "#2b6cb0",
+   "geo_note": "皇甫嵩安定朝那（西北将种）、朱儁会稽上虞（江南）、卢植涿郡（河北）、何进南阳（外戚）——讨伐军将领籍贯分散，反映朝廷倚各地豪强兵源。",
+   "points": [
+    {
+     "name": "朝那",
+     "lon": 106.2,
+     "lat": 35.9,
+     "note": "皇甫嵩故里，安定朝那，今宁夏彭阳",
+     "resolved": true
+    },
+    {
+     "name": "上虞",
+     "lon": 120.87,
+     "lat": 30.03,
+     "note": "朱儁故里，会稽上虞，今浙江上虞",
+     "resolved": true
+    },
+    {
+     "name": "涿州",
+     "lon": 115.98,
+     "lat": 39.48,
+     "note": "卢植故里，涿郡，今河北涿州",
+     "resolved": true
+    },
+    {
+     "name": "南阳",
+     "lon": 112.53,
+     "lat": 32.99,
+     "note": "汉宗室/光武舂陵起兵，舂陵在今湖北枣阳，郡治宛今河南南阳",
+     "resolved": true
     }
    ]
   }

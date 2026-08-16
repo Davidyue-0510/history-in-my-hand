@@ -136,7 +136,7 @@
   /* ═══════════ 状态 ═══════════ */
   var state = {
     sources: new Set(D.sources.map(function (s) { return s.id; })),
-    layers:  new Set(['record', 'scholarship', 'gap']),
+    layers:  new Set(['record', 'scholarship', 'gap'].concat(D.faction_geo ? ['faction_geo'] : [])),
     terrain: { shade: true, tint: true, elev: false },
     terrainOffGrid: OFF_GRID,
     route:   true,
@@ -506,6 +506,40 @@
         badge.addEventListener('click', selectRoute);
       }
     }
+
+    // 派系籍贯叠加层（v0.36）：消费 build.py 注入的 D.faction_geo，
+    // 把各 faction 的 bases（历史城市）按 faction 色画成菱形籍贯锚点，直接叠在该朝地形上。
+    // 点击锚点即筛选该派系；选中某派系时其余派系籍贯淡出。地名表无此城的诚实留白，绝不伪造坐标。
+    if (state.layers.has('faction_geo') && D.faction_geo) {
+      Object.keys(D.faction_geo).forEach(function (fid) {
+        var fg = D.faction_geo[fid], col = fg.color || '#888';
+        var dim = state.activeFaction && state.activeFaction !== fid;
+        fg.points.forEach(function (pt) {
+          if (!pt.resolved || pt.lon == null) return; // 地名表无此城：诚实留白，不伪造坐标
+          var x = px(pt.lon), y = py(pt.lat);
+          var sz = (state.activeFaction === fid) ? 6.5 : 5, op = dim ? .26 : .95;
+          var g = el('g', { class: 'node-hit' }, gMarks);
+          el('path', {
+            d: 'M' + x.toFixed(1) + ' ' + (y - sz).toFixed(1) +
+               ' L' + (x + sz).toFixed(1) + ' ' + y.toFixed(1) +
+               ' L' + x.toFixed(1) + ' ' + (y + sz).toFixed(1) +
+               ' L' + (x - sz).toFixed(1) + ' ' + y.toFixed(1) + ' Z',
+            fill: col, stroke: '#FBF9F3', 'stroke-width': 1.2,
+            opacity: op, 'vector-effect': 'non-scaling-stroke', class: 'node-hit'
+          }, g);
+          var ttl = el('title', {}, g);
+          ttl.textContent = (fg.name || fid) + ' · ' + pt.name + (pt.note ? '（' + pt.note + '）' : '');
+          if (!dim) {
+            el('text', { x: x + sz + 3, y: y + 3.2, class: 'place-label minor',
+              fill: col, opacity: .95 }, gLabels).textContent = pt.name;
+          }
+          g.addEventListener('click', function () {
+            state.activeFaction = fid;
+            renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+          });
+        });
+      });
+    }
   }
 
   /* 抽象关系图：节点 = 人物 + 地点，边按 per-world edge_types 上色；无地理坐标。 */
@@ -598,6 +632,24 @@
       });
       box.appendChild(n);
     });
+    // 派系籍贯叠加层（v0.36）：仅当本场景注入了 D.faction_geo 才出现此开关
+    if (D.faction_geo) {
+      var fk = 'faction_geo', fon = state.layers.has(fk), fcnt = 0, fnotes = [];
+      Object.keys(D.faction_geo).forEach(function (fid) {
+        var fg = D.faction_geo[fid];
+        fg.points.forEach(function (pt) { if (pt.resolved) fcnt++; });
+        if (fg.geo_note) fnotes.push((fg.name || fid) + '：' + fg.geo_note);
+      });
+      var fn = document.createElement('div');
+      fn.className = 'lay' + (fon ? '' : ' off'); fn.style.setProperty('--lc', '#7E57C2');
+      fn.title = (fnotes.length ? fnotes.join('\n') : '各派系核心籍贯地（vocab.factions.bases 经地名表解析）');
+      fn.innerHTML = '<i class="lay-dot"></i><span class="lay-name">派系籍贯</span>' +
+        '<span class="lay-n">' + fcnt + '</span>';
+      fn.addEventListener('click', function () {
+        if (state.layers.has(fk)) state.layers.delete(fk); else state.layers.add(fk); refresh();
+      });
+      box.appendChild(fn);
+    }
   }
   function renderTerrainCtl() {
     var box = document.getElementById('terrainCtl'); box.innerHTML = '';

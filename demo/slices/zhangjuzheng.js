@@ -525,5 +525,49 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "neige": {
+   "name": "内阁首辅派（张居正—司礼监联盟）",
+   "color": "#8e44ad",
+   "geo_note": "内阁首辅派以张居正（江陵/楚）为核心，结司礼监冯保，控中枢行政。",
+   "points": [
+    {
+     "name": "江陵",
+     "lon": 112.24,
+     "lat": 30.33,
+     "note": "张居正故里，今湖北荆州",
+     "resolved": true
+    }
+   ]
+  },
+  "qingliu": {
+   "name": "清流言官·地方官（在野批评者）",
+   "color": "#16a085",
+   "geo_note": "清流言官多江南士人：邹元标（吉水/江西）、赵用贤（常熟/江苏）、吴中行（武进/江苏）——东林前身的地方舆论。",
+   "points": [
+    {
+     "name": "吉水",
+     "lon": 115.13,
+     "lat": 27.22,
+     "note": "邹元标故里，今江西吉水",
+     "resolved": true
+    },
+    {
+     "name": "常熟",
+     "lon": 120.75,
+     "lat": 31.65,
+     "note": "赵用贤故里，今江苏常熟",
+     "resolved": true
+    },
+    {
+     "name": "武进",
+     "lon": 119.97,
+     "lat": 31.81,
+     "note": "吴中行故里，今江苏常州",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

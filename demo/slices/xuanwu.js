@@ -568,5 +568,70 @@ window.SANDBOX_SLICES["xuanwu"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "qinwang": {
+   "name": "秦王府集团（天策系）",
+   "color": "#2980b9",
+   "geo_note": "秦王府集团：李世民（成纪/陇西）、房玄龄（临淄/山东）、杜如晦（京兆）、尉迟敬德（朔州）——关陇+山东士人联盟。",
+   "points": [
+    {
+     "name": "成纪",
+     "lon": 105.68,
+     "lat": 34.86,
+     "note": "李唐祖籍，今甘肃秦安",
+     "resolved": true
+    },
+    {
+     "name": "临淄",
+     "lon": 118.05,
+     "lat": 36.81,
+     "note": "今山东淄博临淄；房玄龄故里",
+     "resolved": true
+    },
+    {
+     "name": "长安",
+     "lon": 108.95,
+     "lat": 34.27,
+     "note": "唐都，今西安",
+     "resolved": true
+    },
+    {
+     "name": "朔州",
+     "lon": 112.43,
+     "lat": 39.33,
+     "note": "尉迟敬德故里，今山西朔州",
+     "resolved": true
+    }
+   ]
+  },
+  "donggong": {
+   "name": "东宫—元老派（建成集团）",
+   "color": "#c0392b",
+   "geo_note": "东宫—元老派：李建成（宗室/长安）、魏征（钜鹿/河北）、王珪（祁县/山西）——河北山西旧部。",
+   "points": [
+    {
+     "name": "长安",
+     "lon": 108.95,
+     "lat": 34.27,
+     "note": "唐都，今西安",
+     "resolved": true
+    },
+    {
+     "name": "钜鹿",
+     "lon": 115.04,
+     "lat": 37.67,
+     "note": "魏征故里，今河北晋州",
+     "resolved": true
+    },
+    {
+     "name": "祁县",
+     "lon": 112.34,
+     "lat": 37.36,
+     "note": "王珪故里，今山西祁县",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

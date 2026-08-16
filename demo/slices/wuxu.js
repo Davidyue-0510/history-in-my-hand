@@ -573,5 +573,70 @@ window.SANDBOX_SLICES["wuxu"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "didang": {
+   "name": "帝党（维新派）",
+   "color": "#2980b9",
+   "geo_note": "帝党维新派：康有为（南海/广东）、梁启超（新会/广东）、谭嗣同（浏阳/湖南）——岭南与湖湘新兴士人；光绪居宫廷（北京）。",
+   "points": [
+    {
+     "name": "南海",
+     "lon": 113.26,
+     "lat": 23.13,
+     "note": "康有为故里，今广东广州",
+     "resolved": true
+    },
+    {
+     "name": "新会",
+     "lon": 113.08,
+     "lat": 22.58,
+     "note": "梁启超故里，今广东江门新会",
+     "resolved": true
+    },
+    {
+     "name": "浏阳",
+     "lon": 113.63,
+     "lat": 28.16,
+     "note": "谭嗣同故里，今湖南浏阳",
+     "resolved": true
+    },
+    {
+     "name": "幽州",
+     "lon": 116.4,
+     "lat": 39.9,
+     "note": "今北京",
+     "resolved": true
+    }
+   ]
+  },
+  "houding": {
+   "name": "后党（守旧派）",
+   "color": "#c0392b",
+   "geo_note": "后党守旧派：慈禧（满洲叶赫那拉）、李鸿章（合肥/淮系）、袁世凯（项城/河南）——满洲贵族+淮军系。",
+   "points": [
+    {
+     "name": "赫图阿拉",
+     "lon": 124.7,
+     "lat": 41.6,
+     "note": "后金/满洲发祥地，今辽宁新宾",
+     "resolved": true
+    },
+    {
+     "name": "合肥",
+     "lon": 117.27,
+     "lat": 31.86,
+     "note": "李鸿章故里，今安徽合肥",
+     "resolved": true
+    },
+    {
+     "name": "项城",
+     "lon": 114.87,
+     "lat": 33.4,
+     "note": "袁世凯故里，今河南项城",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

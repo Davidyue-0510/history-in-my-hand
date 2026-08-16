@@ -536,5 +536,42 @@ window.SANDBOX_SLICES["wangmang"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "waimang": {
+   "name": "外戚儒生改制派（王莽集团）",
+   "color": "#8e44ad",
+   "geo_note": "王氏外戚出自魏郡元城，依托儒生集团与太后；代表冀南豪族—儒学士大夫进路。",
+   "points": [
+    {
+     "name": "魏郡",
+     "lon": 115.14,
+     "lat": 36.28,
+     "note": "王莽魏郡元城人，外戚王氏根基，今河北大名东",
+     "resolved": true
+    }
+   ]
+  },
+  "han_zongshi": {
+   "name": "汉宗室·豪强地主",
+   "color": "#c0392b",
+   "geo_note": "刘氏宗室与关东豪强（南阳舂陵刘縯刘秀、河北豪强），反莽义兵多起东方。",
+   "points": [
+    {
+     "name": "南阳",
+     "lon": 112.53,
+     "lat": 32.99,
+     "note": "汉宗室/光武舂陵起兵，舂陵在今湖北枣阳，郡治宛今河南南阳",
+     "resolved": true
+    },
+    {
+     "name": "长安",
+     "lon": 108.95,
+     "lat": 34.27,
+     "note": "唐都，今西安",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

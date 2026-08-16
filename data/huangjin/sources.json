@@ -1,11 +1,33 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "黄巾起义·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "黄巾与东汉双方记载悬殊：官方视「贼」、民间多同情；此处综合《后汉书》与近代研究。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "黄巾起义·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "黄巾与东汉双方记载悬殊：官方视「贼」、民间多同情；此处综合《后汉书》与近代研究。",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250 年"
+    },
+    {
+      "id": "hj_rebel_src",
+      "title": "黄巾方文献",
+      "name": "太平道相关",
+      "party": "黄巾军",
+      "faction": "hj_rebel",
+      "bias_note": "民间道门叙事，几无文字传世，多经官书转述。",
+      "stance_label": "民间·几无文字传世",
+      "distance_label": "黄巾方自身无文献，多经官书转述"
+    },
+    {
+      "id": "hj_court_src",
+      "title": "东汉讨伐军文献",
+      "name": "《后汉书·皇甫嵩传》",
+      "party": "汉军",
+      "faction": "hj_court",
+      "bias_note": "朝廷纪功，叙平乱之功。",
+      "stance_label": "后世官修·纪功",
+      "distance_label": "《后汉书·皇甫嵩传》成书约 5 世纪，距事约 250 年"
+    }
+  ]
 }

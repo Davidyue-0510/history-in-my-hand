@@ -526,5 +526,77 @@ window.SANDBOX_SLICES["jiupin"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "menfa": {
+   "name": "门阀士族（世家大族）",
+   "color": "#8e44ad",
+   "geo_note": "门阀士族以郡望为根基：颍川荀氏、琅琊王氏、陈郡谢氏、清河崔氏、河东裴氏、陇西李氏——地方大族垄断入仕。",
+   "points": [
+    {
+     "name": "颍川",
+     "lon": 113.85,
+     "lat": 34.04,
+     "note": "荀氏、陈氏等士族郡望，今河南许昌",
+     "resolved": true
+    },
+    {
+     "name": "琅琊",
+     "lon": 118.35,
+     "lat": 35.1,
+     "note": "王氏郡望，今山东临沂",
+     "resolved": true
+    },
+    {
+     "name": "陈郡",
+     "lon": 114.88,
+     "lat": 33.74,
+     "note": "谢氏郡望，今河南淮阳",
+     "resolved": true
+    },
+    {
+     "name": "清河",
+     "lon": 115.98,
+     "lat": 37.07,
+     "note": "崔氏郡望，今河北清河",
+     "resolved": true
+    },
+    {
+     "name": "闻喜",
+     "lon": 111.23,
+     "lat": 35.16,
+     "note": "裴氏郡望，今山西闻喜",
+     "resolved": true
+    },
+    {
+     "name": "陇西",
+     "lon": 103.85,
+     "lat": 35.36,
+     "note": "李氏郡望，今甘肃临洮",
+     "resolved": true
+    }
+   ]
+  },
+  "hanmen": {
+   "name": "寒门·皇权（寒素与君主）",
+   "color": "#16a085",
+   "geo_note": "寒门与君主：皇权在洛阳（后建康），寒素散居无统一郡望，靠皇权破格提拔对抗士族。",
+   "points": [
+    {
+     "name": "洛阳",
+     "lon": 112.45,
+     "lat": 34.62,
+     "note": "唐东都，今洛阳",
+     "resolved": true
+    },
+    {
+     "name": "长安",
+     "lon": 108.95,
+     "lat": 34.27,
+     "note": "唐都，今西安",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

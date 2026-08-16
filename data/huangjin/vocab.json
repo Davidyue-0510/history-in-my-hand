@@ -1,49 +1,106 @@
 {
- "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
- "parties": [
-  "黄巾军",
-  "汉军",
-  "综合史料"
- ],
- "party_bucket": {
-  "黄巾军": "黄巾军",
-  "汉军": "汉军",
-  "综合史料": "综合史料"
- },
- "party_colors": {
-  "a": "#c0392b",
-  "b": "#2b6cb0",
-  "综合史料": "#7f8c8d"
- },
- "legend": {
-  "battle": [
-   {
-    "key": "a",
-    "label": "黄巾军胜",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "汉军胜",
-    "color": "#2b6cb0"
-   },
-   {
-    "key": "none",
-    "label": "未分胜",
-    "color": "#7f8c8d"
-   }
+  "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
+  "parties": [
+    "黄巾军",
+    "汉军",
+    "综合史料"
   ],
-  "route": [
-   {
-    "key": "a",
-    "label": "黄巾军行动",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "汉军行动",
-    "color": "#2b6cb0"
-   }
-  ]
- }
+  "party_bucket": {
+    "黄巾军": "黄巾军",
+    "汉军": "汉军",
+    "综合史料": "综合史料"
+  },
+  "party_colors": {
+    "a": "#c0392b",
+    "b": "#2b6cb0",
+    "综合史料": "#7f8c8d"
+  },
+  "legend": {
+    "battle": [
+      {
+        "key": "a",
+        "label": "黄巾军胜",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "汉军胜",
+        "color": "#2b6cb0"
+      },
+      {
+        "key": "none",
+        "label": "未分胜",
+        "color": "#7f8c8d"
+      }
+    ],
+    "route": [
+      {
+        "key": "a",
+        "label": "黄巾军行动",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "汉军行动",
+        "color": "#2b6cb0"
+      }
+    ]
+  },
+  "extends": "_base",
+  "factions": {
+    "hj_rebel": {
+      "name": "太平道·黄巾",
+      "period": "184 起事",
+      "interest": "张角以太平道聚众数十万，三十六方同日反，代表底层流民对东汉压榨的反抗。",
+      "key_figures": [
+        "张角",
+        "张宝",
+        "张梁"
+      ],
+      "typical_sources": [
+        "后汉书·皇甫嵩传"
+      ],
+      "bias_note": "官方视「贼」、民间多同情；兵力与战损双方记载悬殊。",
+      "bases": [
+        "钜鹿",
+        "广宗"
+      ],
+      "geo_note": "张角钜鹿人，起兵于冀州钜鹿、广宗一带，蔓延八州。"
+    },
+    "hj_court": {
+      "name": "东汉朝廷讨伐军",
+      "period": "184—185",
+      "interest": "皇甫嵩、朱儁、卢植等率州郡兵镇压，代表衰败的东汉皇权与豪强秩序。",
+      "key_figures": [
+        "皇甫嵩",
+        "朱儁",
+        "卢植",
+        "何进"
+      ],
+      "typical_sources": [
+        "后汉书·皇甫嵩传"
+      ],
+      "bias_note": "朝廷纪功叙事，淡化镇压之酷与流民之困。",
+      "bases": [
+        "朝那",
+        "上虞",
+        "涿州",
+        "南阳"
+      ],
+      "geo_note": "皇甫嵩安定朝那（西北将种）、朱儁会稽上虞（江南）、卢植涿郡（河北）、何进南阳（外戚）——讨伐军将领籍贯分散，反映朝廷倚各地豪强兵源。"
+    }
+  },
+  "faction_colors": {
+    "hj_rebel": "#c0392b",
+    "hj_court": "#2b6cb0"
+  },
+  "faction_geo": {
+    "gaps": [
+      {
+        "region": "江南/巴蜀",
+        "determination": "genuine_gap",
+        "note": "黄巾主力在冀州—中原，江南巴蜀非核心。"
+      }
+    ]
+  }
 }

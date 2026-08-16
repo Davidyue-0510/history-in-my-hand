@@ -1,11 +1,33 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "黄巢起义·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "起义据《旧唐书·黄巢传》综合，流动作战之长与屠城之酷并存于记载。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "黄巢起义·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "起义据《旧唐书·黄巢传》综合，流动作战之长与屠城之酷并存于记载。",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书后晋开运二年（945《旧唐书》），距事约 60–70 年"
+    },
+    {
+      "id": "hc_rebel_src",
+      "title": "黄巢方文献",
+      "name": "《旧唐书·黄巢传》",
+      "party": "黄巢军",
+      "faction": "hc_rebel",
+      "bias_note": "官书转述，多贬。",
+      "stance_label": "后朝官修·贬起义方",
+      "distance_label": "《旧唐书·黄巢传》成书 945，距事约 60–70 年"
+    },
+    {
+      "id": "hc_court_src",
+      "title": "唐廷文献",
+      "name": "《旧唐书·僖宗纪》",
+      "party": "唐军",
+      "faction": "hc_court",
+      "bias_note": "唐廷纪功。",
+      "stance_label": "后朝官修·纪功",
+      "distance_label": "《旧唐书·僖宗纪》成书 945，距事约 60–70 年"
+    }
+  ]
 }

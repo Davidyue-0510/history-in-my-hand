@@ -1,16 +1,32 @@
 {
- "persons": [
-  {
-   "id": "zhangjiao",
-   "name": "张角",
-   "side": "黄巾",
-   "influence": 0
-  },
-  {
-   "id": "huangfusong",
-   "name": "皇甫嵩",
-   "side": "汉",
-   "influence": 0
-  }
- ]
+  "persons": [
+    {
+      "id": "zhangjiao",
+      "name": "张角",
+      "side": "黄巾",
+      "influence": 0,
+      "hometown": "钜鹿"
+    },
+    {
+      "id": "huangfusong",
+      "name": "皇甫嵩",
+      "side": "汉",
+      "influence": 0,
+      "hometown": "朝那"
+    },
+    {
+      "id": "zhujun",
+      "name": "朱儁",
+      "side": "汉",
+      "influence": 0,
+      "hometown": "上虞"
+    },
+    {
+      "id": "luzhi",
+      "name": "卢植",
+      "side": "汉",
+      "influence": 0,
+      "hometown": "涿州"
+    }
+  ]
 }

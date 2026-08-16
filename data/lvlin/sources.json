@@ -1,11 +1,33 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "绿林赤眉·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "绿林赤眉·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250–300 年"
+    },
+    {
+      "id": "ll_rebel_src",
+      "title": "绿林方文献",
+      "name": "《后汉书·刘玄传》",
+      "party": "绿林军",
+      "faction": "ll_rebel",
+      "bias_note": "经东汉官修转述。",
+      "stance_label": "后世官修·起义方转述",
+      "distance_label": "《后汉书·刘玄传》成书约 5 世纪，距事约 250–300 年"
+    },
+    {
+      "id": "ll_court_src",
+      "title": "新莽文献",
+      "name": "《汉书·王莽传》",
+      "party": "新莽军",
+      "faction": "ll_court",
+      "bias_note": "东汉官修，多贬王莽。",
+      "stance_label": "后世官修·贬王莽",
+      "distance_label": "班固《汉书·王莽传》成书约 1 世纪初，距事约 80–90 年"
+    }
+  ]
 }

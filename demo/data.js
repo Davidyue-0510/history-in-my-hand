@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 130 个切片
+// 权威数据源：data/scenes.json 注册的 133 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 130 个切片",
+  "slice": "multi-scene · 133 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -308,7 +308,10 @@ window.SANDBOX_DATA = {
   "zhenghe",
   "xuanzang",
   "jianzhen",
-  "mingmo_dangzheng"
+  "mingmo_dangzheng",
+  "tang_dangzheng",
+  "song_dangzheng",
+  "donghan_danggu"
  ],
  "vocab": {
   "layers": [
@@ -9256,13 +9259,13 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 12,
+    "src": 3,
+    "place": 6,
+    "person": 4,
+    "assert": 15,
     "conflict": 0,
-    "gap": 2,
-    "record": 5,
+    "gap": 3,
+    "record": 7,
     "scholarship": 3,
     "inference": 2
    }
@@ -9956,13 +9959,13 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
+    "src": 3,
+    "place": 4,
+    "person": 3,
+    "assert": 16,
     "conflict": 0,
-    "gap": 1,
-    "record": 9,
+    "gap": 2,
+    "record": 11,
     "scholarship": 2,
     "inference": 1
    }
@@ -10031,13 +10034,13 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "counts": {
-    "src": 1,
-    "place": 3,
+    "src": 3,
+    "place": 5,
     "person": 2,
-    "assert": 15,
+    "assert": 18,
     "conflict": 0,
-    "gap": 3,
-    "record": 7,
+    "gap": 4,
+    "record": 9,
     "scholarship": 2,
     "inference": 3
    }
@@ -10591,6 +10594,81 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 0
    }
+  },
+  "tang_dangzheng": {
+   "key": "tang_dangzheng",
+   "scene_id": "tang_dangzheng",
+   "title": "牛李党争",
+   "dossier_label": "牛李党争",
+   "subtitle": "唐宪宗—宣宗（808—846）· 士族门第 vs 科举寒素",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=tang_dangzheng",
+   "primary_place": "changan",
+   "vocab_pack": "inline:tang_dangzheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 3,
+    "place": 7,
+    "person": 5,
+    "assert": 7,
+    "conflict": 0,
+    "gap": 1,
+    "record": 2,
+    "scholarship": 3,
+    "inference": 1
+   }
+  },
+  "song_dangzheng": {
+   "key": "song_dangzheng",
+   "scene_id": "song_dangzheng",
+   "title": "洛蜀朔党争",
+   "dossier_label": "洛蜀朔党争",
+   "subtitle": "北宋元祐（1086—1093）· 洛党·蜀党·朔党",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=song_dangzheng",
+   "primary_place": "kaifeng",
+   "vocab_pack": "inline:song_dangzheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 4,
+    "place": 5,
+    "person": 5,
+    "assert": 7,
+    "conflict": 0,
+    "gap": 1,
+    "record": 2,
+    "scholarship": 3,
+    "inference": 1
+   }
+  },
+  "donghan_danggu": {
+   "key": "donghan_danggu",
+   "scene_id": "donghan_danggu",
+   "title": "党锢之祸",
+   "dossier_label": "党锢之祸",
+   "subtitle": "东汉桓灵（166—184）· 清流士大夫 vs 宦官",
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=donghan_danggu",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:donghan_danggu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "counts": {
+    "src": 3,
+    "place": 5,
+    "person": 6,
+    "assert": 7,
+    "conflict": 0,
+    "gap": 1,
+    "record": 1,
+    "scholarship": 3,
+    "inference": 2
+   }
   }
  },
  "slice_index": {
@@ -10723,7 +10801,10 @@ window.SANDBOX_DATA = {
   "zhenghe": "slices/zhenghe.js",
   "xuanzang": "slices/xuanzang.js",
   "jianzhen": "slices/jianzhen.js",
-  "mingmo_dangzheng": "slices/mingmo_dangzheng.js"
+  "mingmo_dangzheng": "slices/mingmo_dangzheng.js",
+  "tang_dangzheng": "slices/tang_dangzheng.js",
+  "song_dangzheng": "slices/song_dangzheng.js",
+  "donghan_danggu": "slices/donghan_danggu.js"
  },
  "corridors": [
   {
@@ -11175,6 +11256,22 @@ window.SANDBOX_DATA = {
     "_src_line": 11
    },
    {
+    "id": "DH_GAP1",
+    "scene": "donghan_danggu",
+    "subject": "event:dh_166",
+    "title": "宦官集团的立场几无自述文献，其「利益」只能据士人史官对立记载反推；「无乡党」是制度设计还是史书叙事，仍有考订空间。",
+    "missing": "制度史分析 / 传记对读",
+    "where": "后汉书宦者列传与党锢列传对读",
+    "skills": [
+     "制度史分析",
+     "传记对读"
+    ],
+    "accept": "补宦官任用制度与其社会来源",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
     "id": "DUJIANGYANG01",
     "scene": "dujiangyan",
     "subject": "event:dj_256",
@@ -11588,6 +11685,21 @@ window.SANDBOX_DATA = {
     "_src_line": 13
    },
    {
+    "id": "HC_GAP1",
+    "scene": "huangchao",
+    "subject": "event:hc_875",
+    "title": "黄巢兵力与流动作战路线，官书多讳，民间记载零散；「均平」口号的实际社会基础待考。",
+    "missing": "多源比对",
+    "where": "旧唐书与唐末笔记对读",
+    "skills": [
+     "多源比对"
+    ],
+    "accept": "补黄巢军社会构成与路线",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
     "id": "HUANGCHAOG01",
     "scene": "huangchao",
     "subject": "event:hc_880",
@@ -11602,6 +11714,21 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 13
+   },
+   {
+    "id": "HJ_GAP1",
+    "scene": "huangjin",
+    "subject": "event:hj_184",
+    "title": "黄巾兵力、战损与平息过程，胜败双方记载悬殊，民间歌谣与正史口径不同。",
+    "missing": "多源比对",
+    "where": "后汉书与民间史料对读",
+    "skills": [
+     "多源比对"
+    ],
+    "accept": "补黄巾方视角与兵力估计",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
    },
    {
     "id": "HUANGJING01",
@@ -12253,6 +12380,21 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 12
+   },
+   {
+    "id": "LL_GAP1",
+    "scene": "lvlin",
+    "subject": "event:ll_17",
+    "title": "绿林初起细节多经东汉官修转述，刘秀一支在《后汉书》中被突出，早期诸部力量对比有叙事倾斜。",
+    "missing": "多源比对",
+    "where": "后汉书与东观汉记对读",
+    "skills": [
+     "多源比对"
+    ],
+    "accept": "补绿林诸部早期实力分布",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 18
    },
    {
     "id": "LVLING01",
@@ -12907,6 +13049,22 @@ window.SANDBOX_DATA = {
     "_src_line": 48
    },
    {
+    "id": "LS_GAP1",
+    "scene": "song_dangzheng",
+    "subject": "event:ls_1086",
+    "title": "洛蜀朔的「地缘阵营」在宋代史料中多为时人贬称，严格以籍贯划营易过度简化；三党更多是政见—师承网络而非铁板地域集团。",
+    "missing": "师承网络分析 / 传记对读",
+    "where": "宋元学案/宋史列传对读",
+    "skills": [
+     "师承网络分析",
+     "传记对读"
+    ],
+    "accept": "厘清三党人物确切师承与籍贯分布",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
+   },
+   {
     "id": "SONG_HE_JUEG01",
     "scene": "song_he_jue",
     "subject": "event:hj_1019",
@@ -13049,6 +13207,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "NT_GAP1",
+    "scene": "tang_dangzheng",
+    "subject": "event:nt_808",
+    "title": "牛李党争的籍贯—门第对应并非铁板；部分人物郡望记载互异，严格以地名划营存在过度简化风险。",
+    "missing": "郡望考证 / 传记对读",
+    "where": "诸史列传对读",
+    "skills": [
+     "郡望考证",
+     "传记对读"
+    ],
+    "accept": "补各党核心人物确切籍贯与起家途径",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 7
    },
    {
     "id": "TH012",
@@ -13749,6 +13923,7 @@ window.SANDBOX_DATA = {
     "diaoyucheng",
     "dingwu",
     "dong_han_yi",
+    "donghan_danggu",
     "dujiangyan",
     "dunzun",
     "feishui",
@@ -13810,6 +13985,7 @@ window.SANDBOX_DATA = {
     "shaqiu",
     "shenkuo",
     "shenyang",
+    "song_dangzheng",
     "song_he_jue",
     "songjin",
     "sui_daxing",
@@ -13817,6 +13993,7 @@ window.SANDBOX_DATA = {
     "suiyang",
     "taiping",
     "talas",
+    "tang_dangzheng",
     "tang_huai_xi",
     "three_campaigns",
     "tianjing",
@@ -14202,6 +14379,30 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.0
    },
    {
+    "scene": "donghan_danggu",
+    "name": "donghan_danggu",
+    "total": 7,
+    "layers": {
+     "scholarship": 3,
+     "record": 1,
+     "inference": 2,
+     "gap": 1
+    },
+    "party_counts": {
+     "综合史料": 5,
+     "清流文献": 1,
+     "宦官相关": 1
+    },
+    "faction_counts": {
+     "qingliu": 1,
+     "huanguan": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:dh_166",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "dujiangyan",
     "name": "dujiangyan",
     "total": 13,
@@ -14547,18 +14748,23 @@ window.SANDBOX_DATA = {
    {
     "scene": "huangchao",
     "name": "huangchao",
-    "total": 13,
+    "total": 16,
     "layers": {
      "scholarship": 2,
-     "record": 9,
+     "record": 11,
      "inference": 1,
-     "gap": 1
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 13
+     "综合史料": 14,
+     "黄巢军": 1,
+     "唐军": 1
     },
-    "faction_counts": {},
-    "event_count": 2,
+    "faction_counts": {
+     "hc_rebel": 1,
+     "hc_court": 1
+    },
+    "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:hc_875",
     "best_resonance": 0.0
@@ -14582,17 +14788,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "huangjin",
     "name": "huangjin",
-    "total": 12,
+    "total": 15,
     "layers": {
      "scholarship": 3,
-     "record": 5,
+     "record": 7,
      "inference": 2,
-     "gap": 2
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 12
+     "综合史料": 13,
+     "黄巾军": 1,
+     "汉军": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "hj_rebel": 1,
+     "hj_court": 1
+    },
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:hj_184",
@@ -15072,17 +15283,22 @@ window.SANDBOX_DATA = {
    {
     "scene": "lvlin",
     "name": "lvlin",
-    "total": 15,
+    "total": 18,
     "layers": {
      "scholarship": 2,
-     "record": 7,
+     "record": 9,
      "inference": 3,
-     "gap": 3
+     "gap": 4
     },
     "party_counts": {
-     "综合史料": 15
+     "综合史料": 16,
+     "绿林军": 1,
+     "新莽军": 1
     },
-    "faction_counts": {},
+    "faction_counts": {
+     "ll_rebel": 1,
+     "ll_court": 1
+    },
     "event_count": 2,
     "avg_resonance": 0.0,
     "best_event": "event:ll_17",
@@ -15387,6 +15603,32 @@ window.SANDBOX_DATA = {
     "best_resonance": 0.825
    },
    {
+    "scene": "song_dangzheng",
+    "name": "song_dangzheng",
+    "total": 7,
+    "layers": {
+     "scholarship": 3,
+     "record": 2,
+     "inference": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "综合史料": 4,
+     "洛党文献": 1,
+     "蜀党文献": 1,
+     "朔党文献": 1
+    },
+    "faction_counts": {
+     "luo_dang": 1,
+     "shu_dang": 1,
+     "shuo_dang": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:ls_1086",
+    "best_resonance": 0.0
+   },
+   {
     "scene": "song_he_jue",
     "name": "song_he_jue",
     "total": 14,
@@ -15517,6 +15759,30 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:tl_gel",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "tang_dangzheng",
+    "name": "tang_dangzheng",
+    "total": 7,
+    "layers": {
+     "scholarship": 3,
+     "record": 2,
+     "inference": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "综合史料": 5,
+     "牛党文献": 1,
+     "李党文献": 1
+    },
+    "faction_counts": {
+     "niu_dang": 1,
+     "li_dang": 1
+    },
+    "event_count": 3,
+    "avg_resonance": 0.0,
+    "best_event": "event:nt_808",
     "best_resonance": 0.0
    },
    {

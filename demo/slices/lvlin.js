@@ -28,7 +28,29 @@ window.SANDBOX_SLICES["lvlin"] = {
    "title": "绿林赤眉·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。"
+   "bias_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。",
+   "stance_label": "私修编年·综合",
+   "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250–300 年"
+  },
+  {
+   "id": "ll_rebel_src",
+   "title": "绿林方文献",
+   "name": "《后汉书·刘玄传》",
+   "party": "绿林军",
+   "faction": "ll_rebel",
+   "bias_note": "经东汉官修转述。",
+   "stance_label": "后世官修·起义方转述",
+   "distance_label": "《后汉书·刘玄传》成书约 5 世纪，距事约 250–300 年"
+  },
+  {
+   "id": "ll_court_src",
+   "title": "新莽文献",
+   "name": "《汉书·王莽传》",
+   "party": "新莽军",
+   "faction": "ll_court",
+   "bias_note": "东汉官修，多贬王莽。",
+   "stance_label": "后世官修·贬王莽",
+   "distance_label": "班固《汉书·王莽传》成书约 1 世纪初，距事约 80–90 年"
   }
  ],
  "places": [
@@ -55,6 +77,22 @@ window.SANDBOX_SLICES["lvlin"] = {
    "lat": 36.07,
    "note": "曹魏都",
    "elev": 334
+  },
+  {
+   "id": "lvlsh",
+   "name": "绿林山",
+   "lon": 112.9,
+   "lat": 31.2,
+   "note": "绿林军起事处",
+   "elev": 176
+  },
+  {
+   "id": "caiyang",
+   "name": "蔡阳",
+   "lon": 112.5,
+   "lat": 32.4,
+   "note": "刘玄/刘秀舂陵故里",
+   "elev": 77
   }
  ],
  "persons": [
@@ -62,13 +100,15 @@ window.SANDBOX_SLICES["lvlin"] = {
    "id": "wangmang2",
    "name": "王莽",
    "side": "新",
-   "influence": 1
+   "influence": 1,
+   "hometown": "魏郡"
   },
   {
    "id": "liuxiu2",
    "name": "刘秀",
    "side": "汉宗室",
-   "influence": 0
+   "influence": 0,
+   "hometown": "蔡阳"
   }
  ],
  "assertions": [
@@ -415,13 +455,82 @@ window.SANDBOX_SLICES["lvlin"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "LL_FX1",
+   "subject": "event:ll_17",
+   "predicate": "利益对立",
+   "value_text": "天凤年间荆楚饥馑，王匡、王凤聚绿林山亡命，新市、平林、下江诸部并起，反新莽暴政。",
+   "source": "ll_rebel_src",
+   "layer": "record",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "天凤",
+    "start": 17,
+    "end": 17,
+    "gregorian_year": 17
+   },
+   "place": "lvlsh",
+   "quote": "（绿林）依阻山泽，劫略活命",
+   "note": "流民利益 vs 新莽秩序",
+   "_party": "绿林军",
+   "_faction": "ll_rebel"
+  },
+  {
+   "id": "LL_FX2",
+   "subject": "event:ll_23",
+   "predicate": "镇压叙事",
+   "value_text": "王莽遣王邑、王寻发兵围昆阳，刘秀突围求援破之；新莽主力丧，长安旋陷。",
+   "source": "ll_court_src",
+   "layer": "record",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "地皇四年",
+    "start": 23,
+    "end": 23,
+    "gregorian_year": 23
+   },
+   "place": "caiyang",
+   "quote": "（莽）遣大司空王邑、司徒王寻将兵百万",
+   "note": "新莽倚关中与河北兵",
+   "_party": "新莽军",
+   "_faction": "ll_court"
+  },
+  {
+   "id": "LL_GAP1",
+   "subject": "event:ll_17",
+   "predicate": "史料缺环",
+   "value_text": "绿林初起细节多经东汉官修转述，刘秀一支在《后汉书》中被突出，早期诸部力量对比有叙事倾斜。",
+   "source": "synthesis",
+   "layer": "gap",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0,
+   "time": {
+    "era_text": "天凤",
+    "start": 17,
+    "end": 17,
+    "gregorian_year": 17
+   },
+   "place": null,
+   "lead": {
+    "where": "后汉书与东观汉记对读",
+    "skills": [
+     "多源比对"
+    ],
+    "accept": "补绿林诸部早期实力分布"
+   },
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
   "SX011_M19",
   "SX012_M14",
-  "LVLING01"
+  "LVLING01",
+  "LL_GAP1"
  ],
  "events": [
   {
@@ -541,6 +650,112 @@ window.SANDBOX_SLICES["lvlin"] = {
      "key": "b",
      "label": "新莽军行动",
      "color": "#2b6cb0"
+    }
+   ]
+  },
+  "factions": {
+   "ll_rebel": {
+    "name": "绿林军",
+    "period": "17—25",
+    "interest": "王匡、王凤起于绿林山，新市、平林、下江诸部并起，后拥刘玄（更始）；刘秀兄弟舂陵军随之。",
+    "key_figures": [
+     "王匡",
+     "王凤",
+     "刘玄",
+     "刘秀"
+    ],
+    "typical_sources": [
+     "后汉书·刘玄传"
+    ],
+    "bias_note": "绿林叙事多经东汉官修转述，刘秀一支被后来的《后汉书》突出。",
+    "bases": [
+     "绿林山",
+     "蔡阳",
+     "南阳"
+    ],
+    "geo_note": "绿林山在江汉（今湖北京山），刘玄、刘秀皆南阳蔡阳舂陵人——荆楚—南阳为起义渊薮。"
+   },
+   "ll_court": {
+    "name": "新莽朝廷",
+    "period": "9—23",
+    "interest": "王莽调集州郡兵与刑徒镇压，守洛阳、长安。",
+    "key_figures": [
+     "王莽",
+     "王邑",
+     "王寻"
+    ],
+    "typical_sources": [
+     "汉书·王莽传"
+    ],
+    "bias_note": "新莽叙事经东汉官修，《汉书》多贬王莽。",
+    "bases": [
+     "魏郡",
+     "长安"
+    ],
+    "geo_note": "王莽魏郡元城人；新莽中枢在长安，兵力倚关中与河北。"
+   }
+  },
+  "faction_colors": {
+   "ll_rebel": "#c0392b",
+   "ll_court": "#2b6cb0"
+  },
+  "faction_geo": {
+   "gaps": [
+    {
+     "region": "江南/巴蜀",
+     "determination": "genuine_gap",
+     "note": "绿林主力在荆楚—南阳，江南巴蜀非核心。"
+    }
+   ]
+  }
+ },
+ "faction_geo": {
+  "ll_rebel": {
+   "name": "绿林军",
+   "color": "#c0392b",
+   "geo_note": "绿林山在江汉（今湖北京山），刘玄、刘秀皆南阳蔡阳舂陵人——荆楚—南阳为起义渊薮。",
+   "points": [
+    {
+     "name": "绿林山",
+     "lon": 112.9,
+     "lat": 31.2,
+     "note": "绿林军起事处，今湖北京山",
+     "resolved": true
+    },
+    {
+     "name": "蔡阳",
+     "lon": 112.5,
+     "lat": 32.4,
+     "note": "刘玄/刘秀舂陵故里，今湖北枣阳",
+     "resolved": true
+    },
+    {
+     "name": "南阳",
+     "lon": 112.53,
+     "lat": 32.99,
+     "note": "汉宗室/光武舂陵起兵，舂陵在今湖北枣阳，郡治宛今河南南阳",
+     "resolved": true
+    }
+   ]
+  },
+  "ll_court": {
+   "name": "新莽朝廷",
+   "color": "#2b6cb0",
+   "geo_note": "王莽魏郡元城人；新莽中枢在长安，兵力倚关中与河北。",
+   "points": [
+    {
+     "name": "魏郡",
+     "lon": 115.14,
+     "lat": 36.28,
+     "note": "王莽魏郡元城人，外戚王氏根基，今河北大名东",
+     "resolved": true
+    },
+    {
+     "name": "长安",
+     "lon": 108.95,
+     "lat": 34.27,
+     "note": "唐都，今西安",
+     "resolved": true
     }
    ]
   }

@@ -508,5 +508,35 @@ window.SANDBOX_SLICES["xiaowen"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "hanhua": {
+   "name": "汉化派（孝文帝—冯太后集团）",
+   "color": "#c0392b",
+   "geo_note": "汉化派以孝文帝—冯太后为核心，迁都洛阳后中原为推行基地。",
+   "points": [
+    {
+     "name": "洛阳",
+     "lon": 112.45,
+     "lat": 34.62,
+     "note": "唐东都，今洛阳",
+     "resolved": true
+    }
+   ]
+  },
+  "baoshou": {
+   "name": "鲜卑保守派（代北旧贵族）",
+   "color": "#27ae60",
+   "geo_note": "鲜卑保守派根基在代北平城（旧都），反对迁洛与汉化，太子恂、穆泰为代表。",
+   "points": [
+    {
+     "name": "平城",
+     "lon": 113.3,
+     "lat": 40.08,
+     "note": "北魏旧都，鲜卑保守派根基，今山西大同",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

@@ -1,27 +1,48 @@
 {
- "places": [
-  {
-   "id": "julu_up",
-   "name": "巨鹿",
-   "lon": 115.04,
-   "lat": 37.07,
-   "note": "张角起兵地"
-  },
-  {
-   "id": "luoyang_up",
-   "name": "洛阳",
-   "lon": 112.45,
-   "lat": 34.62,
-   "note": "东汉都，黄巾威胁"
-  },
-  {
-   "id": "guangzong",
-   "name": "广宗",
-   "lon": 115.1,
-   "lat": 37.1,
-   "note": "张角弟张梁战死处"
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "julu_up",
+      "name": "巨鹿",
+      "lon": 115.04,
+      "lat": 37.07,
+      "note": "张角起兵地"
+    },
+    {
+      "id": "luoyang_up",
+      "name": "洛阳",
+      "lon": 112.45,
+      "lat": 34.62,
+      "note": "东汉都，黄巾威胁"
+    },
+    {
+      "id": "guangzong",
+      "name": "广宗",
+      "lon": 115.1,
+      "lat": 37.1,
+      "note": "张角弟张梁战死处"
+    },
+    {
+      "id": "zhao",
+      "name": "朝那",
+      "lon": 106.2,
+      "lat": 35.9,
+      "note": "皇甫嵩故里"
+    },
+    {
+      "id": "shangyu",
+      "name": "上虞",
+      "lon": 120.87,
+      "lat": 30.03,
+      "note": "朱儁故里"
+    },
+    {
+      "id": "zhuozhou",
+      "name": "涿州",
+      "lon": 115.98,
+      "lat": 39.48,
+      "note": "卢植故里"
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

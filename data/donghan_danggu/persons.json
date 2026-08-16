@@ -1,0 +1,46 @@
+{
+  "persons": [
+    {
+      "id": "liying",
+      "name": "李膺",
+      "side": "qingliu",
+      "influence": 0,
+      "hometown": "颍川"
+    },
+    {
+      "id": "chenfan",
+      "name": "陈蕃",
+      "side": "qingliu",
+      "influence": 0,
+      "hometown": "汝南"
+    },
+    {
+      "id": "guotai",
+      "name": "郭泰",
+      "side": "qingliu",
+      "influence": 0,
+      "hometown": "太原"
+    },
+    {
+      "id": "douwu",
+      "name": "窦武",
+      "side": "qingliu",
+      "influence": 0,
+      "hometown": "扶风"
+    },
+    {
+      "id": "houjian",
+      "name": "侯览",
+      "side": "huanguan",
+      "influence": 0,
+      "hometown": ""
+    },
+    {
+      "id": "caojie",
+      "name": "曹节",
+      "side": "huanguan",
+      "influence": 0,
+      "hometown": ""
+    }
+  ]
+}

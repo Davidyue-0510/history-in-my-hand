@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_ls_1086",
+      "subject": "event:ls_1086",
+      "year": 1086,
+      "era": "元祐元年",
+      "title": "旧党执政·三党并立",
+      "kind": "党争",
+      "text": "司马光卒后，旧党内裂：洛党程颐、蜀党苏轼、朔党刘挚各树旗帜，交攻不已。",
+      "place": "kaifeng"
+    },
+    {
+      "id": "ev_ls_1089",
+      "subject": "event:ls_1089",
+      "year": 1089,
+      "era": "元祐四年",
+      "title": "蜀洛构怨",
+      "kind": "党争",
+      "text": "程颐与苏轼因礼议事相攻，洛蜀之隙公开化，朔党乘间攻之。",
+      "place": "kaifeng"
+    },
+    {
+      "id": "ev_ls_1093",
+      "subject": "event:ls_1093",
+      "year": 1093,
+      "era": "元祐八年",
+      "title": "朔党得势·蜀洛俱黜",
+      "kind": "结局",
+      "text": "高太后崩、哲宗亲政前，朔党刘挚、梁焘居枢要，蜀洛并遭排挤。",
+      "place": "kaifeng"
+    }
+  ]
+}

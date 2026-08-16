@@ -1,49 +1,105 @@
 {
- "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
- "parties": [
-  "绿林军",
-  "新莽军",
-  "综合史料"
- ],
- "party_bucket": {
-  "绿林军": "绿林军",
-  "新莽军": "新莽军",
-  "综合史料": "综合史料"
- },
- "party_colors": {
-  "a": "#c0392b",
-  "b": "#2b6cb0",
-  "综合史料": "#7f8c8d"
- },
- "legend": {
-  "battle": [
-   {
-    "key": "a",
-    "label": "绿林军胜",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "新莽军胜",
-    "color": "#2b6cb0"
-   },
-   {
-    "key": "none",
-    "label": "未分胜",
-    "color": "#7f8c8d"
-   }
+  "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
+  "parties": [
+    "绿林军",
+    "新莽军",
+    "综合史料"
   ],
-  "route": [
-   {
-    "key": "a",
-    "label": "绿林军行动",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "新莽军行动",
-    "color": "#2b6cb0"
-   }
-  ]
- }
+  "party_bucket": {
+    "绿林军": "绿林军",
+    "新莽军": "新莽军",
+    "综合史料": "综合史料"
+  },
+  "party_colors": {
+    "a": "#c0392b",
+    "b": "#2b6cb0",
+    "综合史料": "#7f8c8d"
+  },
+  "legend": {
+    "battle": [
+      {
+        "key": "a",
+        "label": "绿林军胜",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "新莽军胜",
+        "color": "#2b6cb0"
+      },
+      {
+        "key": "none",
+        "label": "未分胜",
+        "color": "#7f8c8d"
+      }
+    ],
+    "route": [
+      {
+        "key": "a",
+        "label": "绿林军行动",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "新莽军行动",
+        "color": "#2b6cb0"
+      }
+    ]
+  },
+  "extends": "_base",
+  "factions": {
+    "ll_rebel": {
+      "name": "绿林军",
+      "period": "17—25",
+      "interest": "王匡、王凤起于绿林山，新市、平林、下江诸部并起，后拥刘玄（更始）；刘秀兄弟舂陵军随之。",
+      "key_figures": [
+        "王匡",
+        "王凤",
+        "刘玄",
+        "刘秀"
+      ],
+      "typical_sources": [
+        "后汉书·刘玄传"
+      ],
+      "bias_note": "绿林叙事多经东汉官修转述，刘秀一支被后来的《后汉书》突出。",
+      "bases": [
+        "绿林山",
+        "蔡阳",
+        "南阳"
+      ],
+      "geo_note": "绿林山在江汉（今湖北京山），刘玄、刘秀皆南阳蔡阳舂陵人——荆楚—南阳为起义渊薮。"
+    },
+    "ll_court": {
+      "name": "新莽朝廷",
+      "period": "9—23",
+      "interest": "王莽调集州郡兵与刑徒镇压，守洛阳、长安。",
+      "key_figures": [
+        "王莽",
+        "王邑",
+        "王寻"
+      ],
+      "typical_sources": [
+        "汉书·王莽传"
+      ],
+      "bias_note": "新莽叙事经东汉官修，《汉书》多贬王莽。",
+      "bases": [
+        "魏郡",
+        "长安"
+      ],
+      "geo_note": "王莽魏郡元城人；新莽中枢在长安，兵力倚关中与河北。"
+    }
+  },
+  "faction_colors": {
+    "ll_rebel": "#c0392b",
+    "ll_court": "#2b6cb0"
+  },
+  "faction_geo": {
+    "gaps": [
+      {
+        "region": "江南/巴蜀",
+        "determination": "genuine_gap",
+        "note": "绿林主力在荆楚—南阳，江南巴蜀非核心。"
+      }
+    ]
+  }
 }

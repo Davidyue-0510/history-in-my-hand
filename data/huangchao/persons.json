@@ -1,16 +1,24 @@
 {
- "persons": [
-  {
-   "id": "huangchao2",
-   "name": "黄巢",
-   "side": "大齐",
-   "influence": 0
-  },
-  {
-   "id": "tangxizong",
-   "name": "唐僖宗",
-   "side": "唐",
-   "influence": 0
-  }
- ]
+  "persons": [
+    {
+      "id": "huangchao2",
+      "name": "黄巢",
+      "side": "大齐",
+      "influence": 0,
+      "hometown": "曹州"
+    },
+    {
+      "id": "tangxizong",
+      "name": "唐僖宗",
+      "side": "唐",
+      "influence": 0
+    },
+    {
+      "id": "gaopian",
+      "name": "高骈",
+      "side": "唐",
+      "influence": 0,
+      "hometown": "幽州"
+    }
+  ]
 }

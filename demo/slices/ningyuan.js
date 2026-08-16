@@ -1226,5 +1226,168 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "type": "admin",
    "label": "宁远—山海关"
   }
- ]
+ ],
+ "faction_geo": {
+  "donglin": {
+   "name": "东林党（清流）",
+   "color": "#1B7A5A",
+   "geo_note": "东林以江南无锡东林书院为舆论中心（顾宪成、高攀龙），成员近三成出自南直隶，余布各省清流。",
+   "points": [
+    {
+     "name": "无锡",
+     "lon": 120.3,
+     "lat": 31.57,
+     "note": "顾宪成故里、东林书院所在，今江苏无锡",
+     "resolved": true
+    },
+    {
+     "name": "常州",
+     "lon": 119.97,
+     "lat": 31.81,
+     "note": "吴中行故里，今江苏常州",
+     "resolved": true
+    },
+    {
+     "name": "苏州",
+     "lon": null,
+     "lat": null,
+     "note": "",
+     "resolved": false
+    }
+   ]
+  },
+  "eunuch": {
+   "name": "阉党（魏忠贤集团）",
+   "color": "#7B241C",
+   "geo_note": "阉党依附魏忠贤（北直隶/河间）与客氏，核心是内廷宦官+北直隶依附官僚。",
+   "points": [
+    {
+     "name": "幽州",
+     "lon": 116.4,
+     "lat": 39.9,
+     "note": "今北京",
+     "resolved": true
+    },
+    {
+     "name": "赫图阿拉",
+     "lon": 124.7,
+     "lat": 41.6,
+     "note": "后金/满洲发祥地，今辽宁新宾",
+     "resolved": true
+    }
+   ]
+  },
+  "zhe_dang": {
+   "name": "浙党",
+   "color": "#B9770E",
+   "geo_note": "浙党以沈一贯、方从哲为首的浙籍官僚，主导万历后期中枢。",
+   "points": [
+    {
+     "name": "杭州",
+     "lon": 120.15,
+     "lat": 30.27,
+     "note": "浙党核心，今浙江杭州",
+     "resolved": true
+    }
+   ]
+  },
+  "chu_dang": {
+   "name": "楚党",
+   "color": "#CA6F1E",
+   "geo_note": "楚党以楚籍官僚官应震、吴亮嗣为首，与浙党合攻东林。",
+   "points": [
+    {
+     "name": "武昌",
+     "lon": 114.3,
+     "lat": 30.59,
+     "note": "楚党核心，今湖北武汉",
+     "resolved": true
+    }
+   ]
+  },
+  "qi_dang": {
+   "name": "齐党",
+   "color": "#B7950B",
+   "geo_note": "齐党以齐籍官僚亓诗教、周永春为首，多居主兵中枢。",
+   "points": [
+    {
+     "name": "济南",
+     "lon": 117.0,
+     "lat": 36.65,
+     "note": "齐党核心，今山东济南",
+     "resolved": true
+    }
+   ]
+  },
+  "xuan_kun": {
+   "name": "宣党 / 昆党",
+   "color": "#A04000",
+   "geo_note": "宣党（汤宾尹/宣城）与昆党（顾天埈/昆山）小集团，主要影响科举京察。",
+   "points": [
+    {
+     "name": "宣城",
+     "lon": 118.75,
+     "lat": 30.94,
+     "note": "宣党核心，今安徽宣城",
+     "resolved": true
+    },
+    {
+     "name": "昆山",
+     "lon": 120.98,
+     "lat": 31.39,
+     "note": "昆党核心，今江苏昆山",
+     "resolved": true
+    }
+   ]
+  },
+  "yan_shang": {
+   "name": "盐商 / 盐政利益",
+   "color": "#2874A6",
+   "geo_note": "盐商/盐政利益以两淮（扬州）盐商及其利益相关官僚为主体。",
+   "points": [
+    {
+     "name": "扬州",
+     "lon": 119.41,
+     "lat": 32.39,
+     "note": "今江苏扬州",
+     "resolved": true
+    }
+   ]
+  },
+  "nei_guan": {
+   "name": "内臣 / 宦官（独立于阉党）",
+   "color": "#5D6D7E",
+   "geo_note": "内臣/宦官系统独立于阉党，监军镇守矿税监多出自内廷，北直隶为活动中心。",
+   "points": [
+    {
+     "name": "幽州",
+     "lon": 116.4,
+     "lat": 39.9,
+     "note": "今北京",
+     "resolved": true
+    }
+   ]
+  },
+  "feng_jiang": {
+   "name": "封疆大吏 / 辽东经略系",
+   "color": "#C0392B",
+   "geo_note": "封疆大吏/辽东经略系据辽东边镇（辽阳、沈阳），对败绩诿过、战功夸张。",
+   "points": [
+    {
+     "name": "辽阳",
+     "lon": 123.43,
+     "lat": 41.8,
+     "note": "唐安东都护府，今辽宁辽阳",
+     "resolved": true
+    },
+    {
+     "name": "沈阳",
+     "lon": 123.43,
+     "lat": 41.8,
+     "note": "辽沈战役·沈阳解放",
+     "resolved": true
+    }
+   ]
+  }
+ }
 };

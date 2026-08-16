@@ -387,6 +387,22 @@
    "_src_line": 11
   },
   {
+   "id": "DH_GAP1",
+   "scene": "donghan_danggu",
+   "subject": "event:dh_166",
+   "title": "宦官集团的立场几无自述文献，其「利益」只能据士人史官对立记载反推；「无乡党」是制度设计还是史书叙事，仍有考订空间。",
+   "missing": "制度史分析 / 传记对读",
+   "where": "后汉书宦者列传与党锢列传对读",
+   "skills": [
+    "制度史分析",
+    "传记对读"
+   ],
+   "accept": "补宦官任用制度与其社会来源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
    "id": "DUJIANGYANG01",
    "scene": "dujiangyan",
    "subject": "event:dj_256",
@@ -800,6 +816,21 @@
    "_src_line": 13
   },
   {
+   "id": "HC_GAP1",
+   "scene": "huangchao",
+   "subject": "event:hc_875",
+   "title": "黄巢兵力与流动作战路线，官书多讳，民间记载零散；「均平」口号的实际社会基础待考。",
+   "missing": "多源比对",
+   "where": "旧唐书与唐末笔记对读",
+   "skills": [
+    "多源比对"
+   ],
+   "accept": "补黄巢军社会构成与路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "HUANGCHAOG01",
    "scene": "huangchao",
    "subject": "event:hc_880",
@@ -814,6 +845,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "HJ_GAP1",
+   "scene": "huangjin",
+   "subject": "event:hj_184",
+   "title": "黄巾兵力、战损与平息过程，胜败双方记载悬殊，民间歌谣与正史口径不同。",
+   "missing": "多源比对",
+   "where": "后汉书与民间史料对读",
+   "skills": [
+    "多源比对"
+   ],
+   "accept": "补黄巾方视角与兵力估计",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "HUANGJING01",
@@ -1465,6 +1511,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "LL_GAP1",
+   "scene": "lvlin",
+   "subject": "event:ll_17",
+   "title": "绿林初起细节多经东汉官修转述，刘秀一支在《后汉书》中被突出，早期诸部力量对比有叙事倾斜。",
+   "missing": "多源比对",
+   "where": "后汉书与东观汉记对读",
+   "skills": [
+    "多源比对"
+   ],
+   "accept": "补绿林诸部早期实力分布",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 18
   },
   {
    "id": "LVLING01",
@@ -2119,6 +2180,22 @@
    "_src_line": 48
   },
   {
+   "id": "LS_GAP1",
+   "scene": "song_dangzheng",
+   "subject": "event:ls_1086",
+   "title": "洛蜀朔的「地缘阵营」在宋代史料中多为时人贬称，严格以籍贯划营易过度简化；三党更多是政见—师承网络而非铁板地域集团。",
+   "missing": "师承网络分析 / 传记对读",
+   "where": "宋元学案/宋史列传对读",
+   "skills": [
+    "师承网络分析",
+    "传记对读"
+   ],
+   "accept": "厘清三党人物确切师承与籍贯分布",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
    "id": "SONG_HE_JUEG01",
    "scene": "song_he_jue",
    "subject": "event:hj_1019",
@@ -2261,6 +2338,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "NT_GAP1",
+   "scene": "tang_dangzheng",
+   "subject": "event:nt_808",
+   "title": "牛李党争的籍贯—门第对应并非铁板；部分人物郡望记载互异，严格以地名划营存在过度简化风险。",
+   "missing": "郡望考证 / 传记对读",
+   "where": "诸史列传对读",
+   "skills": [
+    "郡望考证",
+    "传记对读"
+   ],
+   "accept": "补各党核心人物确切籍贯与起家途径",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
   },
   {
    "id": "TH012",

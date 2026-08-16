@@ -312,7 +312,10 @@
     "zhenghe",
     "xuanzang",
     "jianzhen",
-    "mingmo_dangzheng"
+    "mingmo_dangzheng",
+    "tang_dangzheng",
+    "song_dangzheng",
+    "donghan_danggu"
   ],
   "scenes": {
     "sarhu": {
@@ -3276,6 +3279,51 @@
         "person:gu_bingqian": "顾秉谦",
         "person:huo_weihua": "霍维华"
       }
+    },
+    "tang_dangzheng": {
+      "kind": "court",
+      "region": "court",
+      "title": "牛李党争",
+      "dossier_label": "牛李党争",
+      "subtitle": "唐宪宗—宣宗（808—846）· 士族门第 vs 科举寒素",
+      "primary_place": "changan",
+      "dossier_event": "event:nt_808",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events"
+      ],
+      "lead": "中晚唐最持久的权力缠斗：牛僧孺、李宗闵为首的「牛党」（多进士出身）与李德裕为首的「李党」（山东士族门荫）更相进退，史称牛李党争。本切片把两党的利益 stakes、核心人物与史料偏见并列，并把他们的籍贯（灵台/华阴/赞皇/荥阳）叠到地形上——有人的地方就有利益纠葛。",
+      "parties_note": "牛党多据科举公议、讥弹权幸；李党重门荫士族、强干弱枝。两方叙事互贬，系统不裁决，只并列。"
+    },
+    "song_dangzheng": {
+      "kind": "court",
+      "region": "court",
+      "title": "洛蜀朔党争",
+      "dossier_label": "洛蜀朔党争",
+      "subtitle": "北宋元祐（1086—1093）· 洛党·蜀党·朔党",
+      "primary_place": "kaifeng",
+      "dossier_event": "event:ls_1086",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events"
+      ],
+      "lead": "元祐更化后，旧党内部再裂为三：程颐为首的「洛党」（洛阳理学）、苏轼兄弟为首的「蜀党」（眉山）、刘挚为首的「朔党」（河北）。一席之礼、一句之论皆可相攻。本切片把三营的 stakes 与籍贯（洛阳/眉山/东光—郓州）并列，叠到地形。",
+      "parties_note": "洛党尚礼法、蜀党尚文采宽政、朔党居台谏攻讦；三方皆反新法，却互不相能。系统不裁决，只并列。"
+    },
+    "donghan_danggu": {
+      "kind": "court",
+      "region": "court",
+      "title": "党锢之祸",
+      "dossier_label": "党锢之祸",
+      "subtitle": "东汉桓灵（166—184）· 清流士大夫 vs 宦官",
+      "primary_place": "luoyang",
+      "dossier_event": "event:dh_166",
+      "terrain_grid": "china_coarse",
+      "extra_files": [
+        "events"
+      ],
+      "lead": "桓灵之际，李膺、陈蕃等太学清流抨击宦官专权，反被诬结党诽讪朝政，遭禁锢终身——史称党锢之祸。本切片把「清流士大夫」（颍川/汝南/太原/河东士族郡望）与「宦官集团」（无乡党、依附皇权）建模为两大利益集团，并把籍贯叠到地形。宦官无地方根基，正是「皇权 vs 士族」的结构性代理。",
+      "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。"
     }
   }
 }

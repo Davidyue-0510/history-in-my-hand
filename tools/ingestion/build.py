@@ -204,6 +204,46 @@ def _inject_global_refs(persons, places, dirpath, sc):
             p["_other_scenes"] = [s for s in greg["scenes"] if s != sid][:8]
 
 
+def _resolve_faction_geo(sv, sc):
+    """v0.36 派系籍贯叠加层：把 vocab.factions 的 bases（历史城市名）解析成坐标，
+    注入 bundle.faction_geo，供 county.html 地图直接叠「派系籍贯」overlay。
+    坐标来自 data/geo/gazetteer.json；解析不到的城市诚实标 resolved:false，绝不伪造。
+    无 factions 或不含 bases 的场景返回 None（前端据此不显示叠加层）。"""
+    facs = (sv or {}).get("factions") or {}
+    if not facs:
+        return None
+    # 懒加载地名表（含 alias）
+    _gpath = os.path.join(ROOT, "data", "geo", "gazetteer.json")
+    if not hasattr(_resolve_faction_geo, "_g"):
+        g = json.load(open(_gpath, encoding="utf-8")) if os.path.exists(_gpath) else {"entries": []}
+        _gl = {}
+        for e in g.get("entries", []):
+            _gl[e["name"]] = (e["lon"], e["lat"], e.get("note", ""))
+            for a in e.get("alias", []):
+                _gl.setdefault(a, (e["lon"], e["lat"], e.get("note", "")))
+        _resolve_faction_geo._g = _gl
+    G = _resolve_faction_geo._g
+
+    out = {}
+    for fid, f in facs.items():
+        bases = f.get("bases") or []
+        pts = []
+        for bname in bases:
+            if bname in G:
+                lon, lat, note = G[bname]
+                pts.append({"name": bname, "lon": lon, "lat": lat, "note": note, "resolved": True})
+            else:
+                pts.append({"name": bname, "lon": None, "lat": None, "note": "", "resolved": False})
+        if pts:
+            out[fid] = {
+                "name": f.get("name", fid),
+                "color": (sv.get("faction_colors") or {}).get(fid, "#888"),
+                "geo_note": f.get("geo_note", ""),
+                "points": pts,
+            }
+    return out or None
+
+
 def build_scene(sc):
     """构建单个场景包（不含地形——地形在所有场景间共享）。"""
     dirpath = scene_dir(sc)
@@ -332,6 +372,11 @@ def build_scene(sc):
         bundle["vocab"] = VL.public(sv)
         if sv.get("edge_types"):
             bundle["edge_types"] = sv["edge_types"]
+
+    # 派系籍贯叠加层（v0.36）：factions 的 bases（城市名）→ 坐标，注入 bundle.faction_geo
+    fg = _resolve_faction_geo(sv, sc)
+    if fg:
+        bundle["faction_geo"] = fg
     return bundle
 
 

@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "id": "niusengru",
+      "name": "牛僧孺",
+      "side": "niu_dang",
+      "influence": 0,
+      "hometown": "灵台"
+    },
+    {
+      "id": "lizongmin",
+      "name": "李宗闵",
+      "side": "niu_dang",
+      "influence": 0,
+      "hometown": "陇西"
+    },
+    {
+      "id": "yangshifu",
+      "name": "杨嗣复",
+      "side": "niu_dang",
+      "influence": 0,
+      "hometown": "华阴"
+    },
+    {
+      "id": "lideyu",
+      "name": "李德裕",
+      "side": "li_dang",
+      "influence": 0,
+      "hometown": "赞皇"
+    },
+    {
+      "id": "zhengtan",
+      "name": "郑覃",
+      "side": "li_dang",
+      "influence": 0,
+      "hometown": "荥阳"
+    }
+  ]
+}

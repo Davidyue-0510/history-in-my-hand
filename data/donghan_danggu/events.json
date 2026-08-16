@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_dh_166",
+      "subject": "event:dh_166",
+      "year": 166,
+      "era": "延熹九年",
+      "title": "第一次党锢",
+      "kind": "党争",
+      "text": "李膺杀张成，宦官诬膺等结党诽讪朝政，桓帝下诏捕党人，二百余人禁锢。",
+      "place": "luoyang"
+    },
+    {
+      "id": "ev_dh_168",
+      "subject": "event:dh_168",
+      "year": 168,
+      "era": "建宁元年",
+      "title": "窦武陈蕃谋诛宦不成",
+      "kind": "党争",
+      "text": "窦武、陈蕃谋诛宦官，事泄，陈蕃死、窦武兵败，宦官更张。",
+      "place": "luoyang"
+    },
+    {
+      "id": "ev_dh_169",
+      "subject": "event:dh_169",
+      "year": 169,
+      "era": "建宁二年",
+      "title": "第二次党锢",
+      "kind": "结局",
+      "text": "曹节等诬陷党人谋反，捕李膺、范滂等百余人杀之，天下名士殆尽，汉室益衰。",
+      "place": "luoyang"
+    }
+  ]
+}

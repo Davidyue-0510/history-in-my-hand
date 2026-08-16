@@ -1,27 +1,41 @@
 {
- "places": [
-  {
-   "id": "lvlin",
-   "name": "绿林山",
-   "lon": 112.85,
-   "lat": 31.2,
-   "note": "绿林起义，今湖北京山"
-  },
-  {
-   "id": "changan",
-   "name": "长安",
-   "lon": 108.94,
-   "lat": 34.34,
-   "note": "汉唐都城"
-  },
-  {
-   "id": "yecheng",
-   "name": "邺城",
-   "lon": 114.08,
-   "lat": 36.07,
-   "note": "曹魏都"
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "lvlin",
+      "name": "绿林山",
+      "lon": 112.85,
+      "lat": 31.2,
+      "note": "绿林起义，今湖北京山"
+    },
+    {
+      "id": "changan",
+      "name": "长安",
+      "lon": 108.94,
+      "lat": 34.34,
+      "note": "汉唐都城"
+    },
+    {
+      "id": "yecheng",
+      "name": "邺城",
+      "lon": 114.08,
+      "lat": 36.07,
+      "note": "曹魏都"
+    },
+    {
+      "id": "lvlsh",
+      "name": "绿林山",
+      "lon": 112.9,
+      "lat": 31.2,
+      "note": "绿林军起事处"
+    },
+    {
+      "id": "caiyang",
+      "name": "蔡阳",
+      "lon": 112.5,
+      "lat": 32.4,
+      "note": "刘玄/刘秀舂陵故里"
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

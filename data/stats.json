@@ -1,9 +1,9 @@
 {
-  "scenes_total": 130,
+  "scenes_total": 133,
   "historical": 56,
-  "fictional": 74,
-  "assertions_total": 1966,
-  "sources_total": 78,
+  "fictional": 77,
+  "assertions_total": 1996,
+  "sources_total": 91,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 184,
+  "leads_total": 190,
   "per_scene": [
     {
       "id": "sarhu",
@@ -566,8 +566,11 @@
       "id": "huangjin",
       "title": "黄巾起义",
       "kind": "uprising",
-      "assertions": 12,
-      "factions": {}
+      "assertions": 15,
+      "factions": {
+        "hj_rebel": 1,
+        "hj_court": 1
+      }
     },
     {
       "id": "lizicheng",
@@ -779,8 +782,11 @@
       "id": "huangchao",
       "title": "黄巢起义",
       "kind": "uprising",
-      "assertions": 13,
-      "factions": {}
+      "assertions": 16,
+      "factions": {
+        "hc_rebel": 1,
+        "hc_court": 1
+      }
     },
     {
       "id": "taiping",
@@ -800,8 +806,11 @@
       "id": "lvlin",
       "title": "绿林赤眉",
       "kind": "uprising",
-      "assertions": 15,
-      "factions": {}
+      "assertions": 18,
+      "factions": {
+        "ll_rebel": 1,
+        "ll_court": 1
+      }
     },
     {
       "id": "zhaowulian",
@@ -958,6 +967,37 @@
       "factions": {
         "nei_guan": 13
       }
+    },
+    {
+      "id": "tang_dangzheng",
+      "title": "牛李党争",
+      "kind": "court",
+      "assertions": 7,
+      "factions": {
+        "niu_dang": 1,
+        "li_dang": 1
+      }
+    },
+    {
+      "id": "song_dangzheng",
+      "title": "洛蜀朔党争",
+      "kind": "court",
+      "assertions": 7,
+      "factions": {
+        "luo_dang": 1,
+        "shu_dang": 1,
+        "shuo_dang": 1
+      }
+    },
+    {
+      "id": "donghan_danggu",
+      "title": "党锢之祸",
+      "kind": "court",
+      "assertions": 7,
+      "factions": {
+        "qingliu": 1,
+        "huanguan": 1
+      }
     }
   ],
   "scene_titles": {
@@ -1090,6 +1130,9 @@
     "zhenghe": "郑和下西洋",
     "xuanzang": "玄奘西行",
     "jianzhen": "鉴真东渡",
-    "mingmo_dangzheng": "明末党争·辽东导火索"
+    "mingmo_dangzheng": "明末党争·辽东导火索",
+    "tang_dangzheng": "牛李党争",
+    "song_dangzheng": "洛蜀朔党争",
+    "donghan_danggu": "党锢之祸"
   }
 }

@@ -581,5 +581,56 @@ window.SANDBOX_SLICES["shangyang"] = {
     }
    ]
   }
+ },
+ "faction_geo": {
+  "fajia": {
+   "name": "法家改革派（商鞅—秦孝公）",
+   "color": "#2e7d32",
+   "geo_note": "改革理论来自卫人商鞅（客卿），政治靠山为秦君（雍城→咸阳）；代表『君权+外来法术士』对本土贵族。",
+   "points": [
+    {
+     "name": "卫",
+     "lon": 114.18,
+     "lat": 35.43,
+     "note": "商鞅故里，卫国公族，今河南淇县/卫辉一带",
+     "resolved": true
+    },
+    {
+     "name": "雍城",
+     "lon": 107.39,
+     "lat": 34.52,
+     "note": "秦都（德公至献公），今陕西凤翔",
+     "resolved": true
+    },
+    {
+     "name": "咸阳",
+     "lon": 108.7,
+     "lat": 34.33,
+     "note": "秦都",
+     "resolved": true
+    }
+   ]
+  },
+  "guizu": {
+   "name": "秦国宗室·军功旧贵族",
+   "color": "#8d6e63",
+   "geo_note": "秦国宗室与军功旧贵族，根基在秦都本土（雍城旧都、咸阳新都）。",
+   "points": [
+    {
+     "name": "雍城",
+     "lon": 107.39,
+     "lat": 34.52,
+     "note": "秦都（德公至献公），今陕西凤翔",
+     "resolved": true
+    },
+    {
+     "name": "咸阳",
+     "lon": 108.7,
+     "lat": 34.33,
+     "note": "秦都",
+     "resolved": true
+    }
+   ]
+  }
  }
 };

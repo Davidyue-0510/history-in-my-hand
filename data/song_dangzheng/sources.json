@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "洛蜀朔党争·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "综合《宋史》《续资治通鉴长编》，三党互攻记载多经对方转述。",
+      "stance_label": "私修编年·综合",
+      "distance_label": "成书南宋至元（李焘《长编》1143 等），距事约 50–150 年"
+    },
+    {
+      "id": "luo_wen",
+      "title": "洛党文献",
+      "name": "《程氏经说》等",
+      "party": "洛党文献",
+      "faction": "luo_dang",
+      "bias_note": "洛党尚礼法，叙蜀党无礼。",
+      "stance_label": "本朝·当方阵营文献",
+      "distance_label": "北宋元祐时洛党奏议，距事极近"
+    },
+    {
+      "id": "shu_wen",
+      "title": "蜀党文献",
+      "name": "《东坡全集》",
+      "party": "蜀党文献",
+      "faction": "shu_dang",
+      "bias_note": "蜀党尚文采宽政，叙洛党峻刻。",
+      "stance_label": "本朝·当方阵营文献",
+      "distance_label": "北宋元祐时苏轼奏议，距事极近"
+    },
+    {
+      "id": "shuo_wen",
+      "title": "朔党文献",
+      "name": "《宋史·刘挚传》等",
+      "party": "朔党文献",
+      "faction": "shuo_dang",
+      "bias_note": "朔党居台谏，以弹劾为器。",
+      "stance_label": "本朝·当方阵营文献",
+      "distance_label": "北宋元祐时朔党奏议，距事极近"
+    }
+  ]
+}

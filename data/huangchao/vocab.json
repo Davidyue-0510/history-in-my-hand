@@ -1,49 +1,102 @@
 {
- "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
- "parties": [
-  "黄巢军",
-  "唐军",
-  "综合史料"
- ],
- "party_bucket": {
-  "黄巢军": "黄巢军",
-  "唐军": "唐军",
-  "综合史料": "综合史料"
- },
- "party_colors": {
-  "a": "#c0392b",
-  "b": "#2b6cb0",
-  "综合史料": "#7f8c8d"
- },
- "legend": {
-  "battle": [
-   {
-    "key": "a",
-    "label": "黄巢军胜",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "唐军胜",
-    "color": "#2b6cb0"
-   },
-   {
-    "key": "none",
-    "label": "未分胜",
-    "color": "#7f8c8d"
-   }
+  "_comment": "文明事件图例配置（本切片内联，驱动 battle_layer 数据驱动图例）。legend.route 的 key 须与 routes.side 取值一致。",
+  "parties": [
+    "黄巢军",
+    "唐军",
+    "综合史料"
   ],
-  "route": [
-   {
-    "key": "a",
-    "label": "黄巢军行动",
-    "color": "#c0392b"
-   },
-   {
-    "key": "b",
-    "label": "唐军行动",
-    "color": "#2b6cb0"
-   }
-  ]
- }
+  "party_bucket": {
+    "黄巢军": "黄巢军",
+    "唐军": "唐军",
+    "综合史料": "综合史料"
+  },
+  "party_colors": {
+    "a": "#c0392b",
+    "b": "#2b6cb0",
+    "综合史料": "#7f8c8d"
+  },
+  "legend": {
+    "battle": [
+      {
+        "key": "a",
+        "label": "黄巢军胜",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "唐军胜",
+        "color": "#2b6cb0"
+      },
+      {
+        "key": "none",
+        "label": "未分胜",
+        "color": "#7f8c8d"
+      }
+    ],
+    "route": [
+      {
+        "key": "a",
+        "label": "黄巢军行动",
+        "color": "#c0392b"
+      },
+      {
+        "key": "b",
+        "label": "唐军行动",
+        "color": "#2b6cb0"
+      }
+    ]
+  },
+  "extends": "_base",
+  "factions": {
+    "hc_rebel": {
+      "name": "黄巢起义军",
+      "period": "875—884",
+      "interest": "黄巢曹州冤句人，盐贩起事，转战南北，破长安称大齐皇帝。",
+      "key_figures": [
+        "黄巢",
+        "黄揆",
+        "尚让"
+      ],
+      "typical_sources": [
+        "旧唐书·黄巢传"
+      ],
+      "bias_note": "官书称「贼」，其均平口号与流动作战被妖魔化。",
+      "bases": [
+        "曹州"
+      ],
+      "geo_note": "黄巢曹州冤句（今山东菏泽）人，私盐贩出身，山东为盐患重区。"
+    },
+    "hc_court": {
+      "name": "唐廷讨伐军",
+      "period": "875—884",
+      "interest": "高骈、王铎等率兵镇压，唐僖宗奔蜀。",
+      "key_figures": [
+        "高骈",
+        "王铎",
+        "唐僖宗"
+      ],
+      "typical_sources": [
+        "旧唐书·僖宗纪"
+      ],
+      "bias_note": "唐廷纪功，叙收复之功，讳藩镇割据之实。",
+      "bases": [
+        "幽州",
+        "长安"
+      ],
+      "geo_note": "高骈幽州人（河朔藩镇），唐僖宗在长安——唐廷倚关中与河朔兵。"
+    }
+  },
+  "faction_colors": {
+    "hc_rebel": "#c0392b",
+    "hc_court": "#2b6cb0"
+  },
+  "faction_geo": {
+    "gaps": [
+      {
+        "region": "岭南",
+        "determination": "genuine_gap",
+        "note": "黄巢曾转战岭南，非核心根基。"
+      }
+    ]
+  }
 }
