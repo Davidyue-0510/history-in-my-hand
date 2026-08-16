@@ -49,7 +49,7 @@
   /* ═══════════ 投影 ═══════════
    * 默认框 = 共享地形网格 (122–126.8°E / 40–43.3°N)，网格内县与萨尔浒同框。
    * 若本切片主地点在网格外（辽西/辽南），投影扩展为「网格框 ∪ 本切片地点」，
-   * 使地点可见；地形层在离线时跳过绘制（见 drawTerrain / state.terrainOffGrid）。 */
+   * 使地点可见；真实 DemTopo 底图按经纬度投影，离线的虚构世界不放置（见 initMap / state.terrain.on）。 */
   var GRID_LON0 = 73.5, GRID_LON1 = 135.1, GRID_LAT0 = 18.0, GRID_LAT1 = 53.6;
   var TG_BOX = TG ? { lon0: TG.lon0, lon1: TG.lon0 + (TG.nx - 1) * TG.step,
                       lat0: TG.lat0, lat1: TG.lat0 + (TG.ny - 1) * TG.step } : null;
@@ -123,8 +123,8 @@
         ? ('网格覆盖 ' + TG_BOX.lon0.toFixed(1) + '–' + TG_BOX.lon1.toFixed(1) + '°E / '
            + TG_BOX.lat0.toFixed(1) + '–' + TG_BOX.lat1.toFixed(1) + '°N')
         : '未载入地形网格';
-      banner.innerHTML = '⚠ 本切片主地点位于地形网格之外（' + _tg + '）。'
-        + '此处不渲染高程阴影——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
+      banner.innerHTML = '⚠ 本切片主地点位于实测高程网格之外（' + _tg + '）。'
+        + '底层仍按经纬度显示真实 DemTopo 分层设色地形图，仅不额外叠加高程晕渲——这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。';
     }
     var _mw = document.getElementById('mapWrap');
     if (_mw && _mw.parentNode) _mw.parentNode.insertBefore(banner, _mw);
@@ -141,7 +141,7 @@
   var state = {
     sources: new Set(D.sources.map(function (s) { return s.id; })),
     layers:  new Set(['record', 'scholarship', 'gap'].concat(D.faction_geo ? ['faction_geo'] : [])),
-    terrain: { shade: true, tint: true, elev: false },
+    terrain: { on: true, elev: false },   // v0.45：on=显示真实 DemTopo 栅格底图；elev=地点标注海拔
     terrainOffGrid: OFF_GRID,
     route:   true,
     t: 0,
@@ -174,7 +174,6 @@
   /* ═══════════ 视图：缩放与平移 ═══════════ */
   var wrap = document.getElementById('mapWrap');
   var svg  = document.getElementById('map');
-  var cv   = document.getElementById('terrainCv');
   var controlCv = document.getElementById('controlCv');
   var chgisCv = document.getElementById('chgisCv');
   var battleCv = document.getElementById('battleCv');
@@ -201,7 +200,6 @@
     var r = wrap.getBoundingClientRect();
     cw = Math.max(1, r.width); ch = Math.max(1, r.height);
     var dpr = window.devicePixelRatio || 1;
-    cv.width = Math.round(cw * dpr); cv.height = Math.round(ch * dpr);
     controlCv.width = Math.round(cw * dpr); controlCv.height = Math.round(ch * dpr);
     if (chgisCv) { chgisCv.width = Math.round(cw * dpr); chgisCv.height = Math.round(ch * dpr); }
     if (battleCv) { battleCv.width = Math.round(cw * dpr); battleCv.height = Math.round(ch * dpr); }
@@ -220,7 +218,7 @@
       view.w.toFixed(2) + ' ' + view.h.toFixed(2));
     svg.style.setProperty('--u', (view.w / cw).toFixed(5));
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
-    drawTerrain();
+    if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
     if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
@@ -294,134 +292,18 @@
   });
 
   /* ═══════════ 地形 ═══════════
-     配色遵循在线地图（Google / OSM topographic / Natural Earth 分层设色）惯例：
-     低地→绿、丘陵→黄绿、山地→棕、高山→暗棕，海洋统一海蓝。
-     地形画布为全不透明底层：陆地出分层设色+山体阴影，海洋出与 #mapWrap 一致的 SEA 海蓝，
-     因此不再依赖 SVG 海蓝背景透出（避免此前「半透明陆地叠海蓝→发灰发蓝」的洗白观感）。 */
-  var RAMP = [
-    [0,    [188, 214, 168]],   // 0–50m 沿海低地·浅绿
-    [50,   [198, 222, 162]],   // 0–200m 平原绿
-    [200,  [216, 224, 158]],   // 200m 黄绿
-    [400,  [233, 222, 150]],   // 400m 浅黄
-    [600,  [226, 202, 132]],   // 600m 稻黄
-    [800,  [214, 182, 120]],   // 800m 浅棕
-    [1000, [198, 160, 102]],   // 1000m 棕
-    [1200, [178, 138, 86]],    // 1200m 深棕
-    [1500, [152, 112, 72]],    // 1500m+ 暗棕
-    [2500, [122, 92, 66]],     // 高山
-    [4000, [150, 140, 132]]    // 极高·灰棕
-  ];
-  var SEA = [197, 221, 230];   // 与 #mapWrap 背景一致的海蓝
-  function rampColor(e) {
-    if (e <= 0) return RAMP[0][1];
-    for (var i = 1; i < RAMP.length; i++) {
-      if (e <= RAMP[i][0]) {
-        var a = RAMP[i - 1], b = RAMP[i], t = (e - a[0]) / (b[0] - a[0] || 1);
-        return [a[1][0] + (b[1][0] - a[1][0]) * t, a[1][1] + (b[1][1] - a[1][1]) * t,
-                a[1][2] + (b[1][2] - a[1][2]) * t];
-      }
-    }
-    return RAMP[RAMP.length - 1][1];
-  }
-  var tImg = null;
-  // NE 陆地掩膜：把 BM.land 多边形栅格化到地形网格（v0.38+），让 hillshade 严格跟随 NE 海岸
-  // ——既消除「矩形贴片」观感，也保证地形层的海岸线与矢量底图完全对齐。
-  function buildLandMask() {
-    if (!TG || !BM || !BM.land || !BM.land.length) return null;
-    var nx = TG.nx, ny = TG.ny, step = TG.step, lon0 = TG.lon0, lat0 = TG.lat0,
-        m = new Uint8Array(nx * ny);
-    function inRing(lon, lat, ring) {
-      var inside = false;
-      for (var k = 0, j = ring.length - 1; k < ring.length; j = k++) {
-        var xi = ring[k][0], yi = ring[k][1], xj = ring[j][0], yj = ring[j][1];
-        if (((yi > lat) !== (yj > lat)) &&
-            (lon < (xj - xi) * (lat - yi) / (yj - yi || 1e-12) + xi)) inside = !inside;
-      }
-      return inside;
-    }
-    function inGeom(lon, lat, g) {
-      if (g.type === 'Polygon') {
-        if (!inRing(lon, lat, g.coordinates[0])) return false;
-        for (var h = 1; h < g.coordinates.length; h++)
-          if (inRing(lon, lat, g.coordinates[h])) return false; // 洞
-        return true;
-      }
-      if (g.type === 'MultiPolygon') {
-        for (var p = 0; p < g.coordinates.length; p++)
-          if (inGeom(lon, lat, { type: 'Polygon', coordinates: g.coordinates[p] })) return true;
-        return false;
-      }
-      return false;
-    }
-    for (var iy = 0; iy < ny; iy++) {
-      var lat = lat0 + iy * step;
-      for (var ix = 0; ix < nx; ix++) {
-        var lon = lon0 + ix * step;
-        for (var fi = 0; fi < BM.land.length; fi++) {
-          if (inGeom(lon, lat, BM.land[fi].g)) { m[iy * nx + ix] = 1; break; }
-        }
-      }
-    }
-    return m;
-  }
-  function buildTerrainImage() {
-    if (!TG) return null;
-    var nx = TG.nx, ny = TG.ny, E = TG.elev, c = document.createElement('canvas');
-    c.width = nx; c.height = ny;
-    var ctx = c.getContext('2d'), img = ctx.createImageData(nx, ny);
-    var midLat = TG.lat0 + (ny - 1) * TG.step / 2;
-    var cellY = TG.step * 111320, cellX = TG.step * 111320 * Math.cos(midLat * Math.PI / 180);
-    var ZF = 2.2, zen = (90 - 45) * Math.PI / 180, azm = (360 - 315 + 90) * Math.PI / 180;
-    function z(ix, iy) {
-      ix = Math.max(0, Math.min(nx - 1, ix)); iy = Math.max(0, Math.min(ny - 1, iy));
-      var v = E[iy * nx + ix]; return v == null ? 0 : v;
-    }
-    var landMask = buildLandMask();
-    for (var iy = 0; iy < ny; iy++) for (var ix = 0; ix < nx; ix++) {
-      var e = z(ix, iy);
-      var isSea = (e <= 0);
-      // 陆地判定：NE 矢量多边形掩膜优先（保证海岸与底图对齐），无掩膜时回落高程
-      var land = landMask ? landMask[iy * nx + ix] : !isSea;
-      var row = (ny - 1 - iy), o = (row * nx + ix) * 4;
-      if (!land) {                       // 海洋：不透明海蓝（与 #mapWrap 一致）
-        img.data[o] = SEA[0]; img.data[o + 1] = SEA[1]; img.data[o + 2] = SEA[2];
-        img.data[o + 3] = 255; continue;
-      }
-      var dzdx = ((z(ix + 1, iy - 1) + 2 * z(ix + 1, iy) + z(ix + 1, iy + 1)) -
-                  (z(ix - 1, iy - 1) + 2 * z(ix - 1, iy) + z(ix - 1, iy + 1))) / (8 * cellX);
-      var dzdy = ((z(ix - 1, iy + 1) + 2 * z(ix, iy + 1) + z(ix + 1, iy + 1)) -
-                  (z(ix - 1, iy - 1) + 2 * z(ix, iy - 1) + z(ix + 1, iy - 1))) / (8 * cellY);
-      var slope = Math.atan(ZF * Math.sqrt(dzdx * dzdx + dzdy * dzdy));
-      var aspect = Math.atan2(dzdy, -dzdx);
-      var hs = Math.cos(zen) * Math.cos(slope) + Math.sin(zen) * Math.sin(slope) * Math.cos(azm - aspect);
-      hs = Math.max(0, Math.min(1, hs));
-      var col = state.terrain.tint ? rampColor(e) : [222, 216, 198];
-      var f = state.terrain.shade ? (0.72 + 0.42 * hs) : 1;
-      // 地形画布全不透明：陆地出分层设色+山体阴影，不再半透明叠海蓝（消除洗白）
-      img.data[o] = Math.max(0, Math.min(255, col[0] * f));
-      img.data[o + 1] = Math.max(0, Math.min(255, col[1] * f));
-      img.data[o + 2] = Math.max(0, Math.min(255, col[2] * f));
-      img.data[o + 3] = 255;
-    }
-    ctx.putImageData(img, 0, 0);
-    return c;
-  }
-  function drawTerrain() {
-    if (IS_ABSTRACT) { var c = cv.getContext('2d'); c.clearRect(0, 0, cv.width, cv.height); return; }
-    var ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-    // 透明底：v0.38+ 与 NE 矢量底图无缝合成（陆地半透明叠加、海面全透由 #map 背景海色承担）
-    ctx.clearRect(0, 0, cv.width, cv.height);
-    if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) return;
-    var lonMax = TG.lon0 + (TG.nx - 1) * TG.step, latMax = TG.lat0 + (TG.ny - 1) * TG.step;
-    var gx = px(TG.lon0), gw = px(lonMax) - px(TG.lon0);
-    var gy = py(latMax), gh = py(TG.lat0) - py(latMax);
-    var s = (cw / view.w) * dpr;
-    ctx.setTransform(s, 0, 0, s, -view.x * s, -view.y * s);
-    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
-    ctx.drawImage(tImg, gx, gy, gw, gh);
-    ctx.setTransform(1, 0, 0, 1, 0, 0);
-  }
+     v0.45：弃用「合成 ASTER 山体阴影 + 海蓝海洋」画布，改用真实 DemTopo 分层设色栅格
+     （复旦 CHGIS，按高程染色，海洋已抹去蓝色改为羊皮纸色）作为地图底图。
+     该栅格已含海岸线 / 河流 / 湖泊 / 高程配色，故矢量底图只叠加「历史省界 + 辽东边墙」作参考，
+     不再重复绘制陆地/海岸/河流实心填充（单一真值，避免双重绘制 + 海岸错位）。
+     栅格以 SVG <image> 形式按地理经纬度投影进用户坐标（见 initMap 的 gTopo），随 viewBox 自动平移缩放。 */
+  var DEMTOPO = {
+    src: 'demtopo_china.jpg',
+    // 与 tools/gen_demtopo_china.py 生成的 equirectangular 栅格严格一致：
+    // 左=60.00556°E，右=149.116667°E；上=59.98861°N，下=10°N
+    lonMin: 60.00556, lonMax: 149.116667, latMin: 10, latMax: 59.98861
+  };
+  var gTopo = null;   // DemTopo 栅格底图组（initMap 中创建）
 
   /* ═══════════ SVG 底图 ═══════════ */
   function el(tag, attrs, parent) {
@@ -438,6 +320,20 @@
   var gBase, gEdges, gNodes, gMarks, gLabels;
   function initMap() {
     svg.innerHTML = '';
+    // 真实地形底图：SVG <image> 按 DEMTOPO 经纬度范围投影进用户坐标，随 viewBox 自动平移/缩放。
+    // 虚构世界（IS_ABSTRACT）无地理投影，不放置——避免中国地形图浮在关系图背后。
+    gTopo = null;
+    if (!IS_ABSTRACT) {
+      gTopo = el('g', {}, svg);
+      el('image', {
+        href: DEMTOPO.src,
+        x: px(DEMTOPO.lonMin), y: py(DEMTOPO.latMax),
+        width: px(DEMTOPO.lonMax) - px(DEMTOPO.lonMin),
+        height: py(DEMTOPO.latMin) - py(DEMTOPO.latMax),
+        preserveAspectRatio: 'none'
+      }, gTopo);
+      gTopo.style.display = state.terrain.on ? '' : 'none';
+    }
     gBase = el('g', {}, svg); gEdges = el('g', {}, svg);
     gMarks = el('g', {}, svg); gNodes = el('g', {}, svg); gLabels = el('g', {}, svg);
     drawBase();
@@ -468,25 +364,15 @@
     gBase.innerHTML = '';
     if (IS_ABSTRACT) return;   // 抽象关系图模式无底图
     if (!BM) return;
-  // 1) 陆地底色：仅在没有地形网格（或地形未绘制）时作兜底填充。
-  //    有地形网格时，陆地色由地形 canvas 负责（半透明 hillshade，掩膜同出 BM.land），
-  //    此处若再填实心陆地 = 同一陆地画两遍 + 海岸错位（矢量平滑边 vs 栅格块边）。单一真值。
-  if (!TG || !tImg || state.terrainOffGrid || (!state.terrain.shade && !state.terrain.tint)) {
-    BM.land.forEach(function (f) {
-      el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
-    });
-  }
-    // 2) 湖泊
-    var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
-      'vector-effect': 'non-scaling-stroke' }, gBase);
-    BM.lakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
-    // 3) 海岸线
-    BM.coastline.forEach(function (f) {
-      el('path', { d: geomPath(f.g), fill: 'none', stroke: '#7c9aa8', 'stroke-width': 1,
-        'vector-effect': 'non-scaling-stroke' }, gBase);
-    });
-    // 4) 省 / 州界 + 标注
-    var gAdm = el('g', { fill: 'none', stroke: '#c9bfa8', 'stroke-width': 0.8,
+    // 1) 陆地兜底底色：仅当用户关闭 DemTopo 底图时填充（单一真值——底图栅格已含高程配色，
+    //    再填实心陆地 = 同一陆地画两遍 + 海岸错位）。海岸/河流/湖泊同理交由 DemTopo 栅格呈现。
+    if (!state.terrain.on) {
+      BM.land.forEach(function (f) {
+        el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
+      });
+    }
+    // 2) 历史省 / 州界 + 标注（参考叠层，DemTopo 栅格之上使其清晰）
+    var gAdm = el('g', { fill: 'none', stroke: '#c9bfa8', 'stroke-width': 0.8, opacity: .7,
       'vector-effect': 'non-scaling-stroke' }, gBase);
     BM.admin1.forEach(function (f) {
       el('path', { d: geomPath(f.g) }, gAdm);
@@ -498,20 +384,7 @@
         }
       }
     });
-    // 5) 河流 + 标注
-    var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
-      'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
-    BM.rivers.forEach(function (f) {
-      el('path', { d: geomPath(f.g), 'stroke-width': 1.4 }, gRiv);
-      if (f.n) {
-        var xy = geomLabelXY(f.g);
-        if (xy) {
-          var t = el('text', { x: xy[0] + 4, y: xy[1] - 3, class: 'river-label' }, gBase);
-          t.textContent = f.n;
-        }
-      }
-    });
-    // 6) 辽东边墙（仅辽东体系场景注入，不再共享误显）
+    // 3) 辽东边墙（仅辽东体系场景注入，不再共享误显）
     if (WALL && WALL.path) {
       el('path', { d: poly(WALL.path), fill: 'none', stroke: '#7A7466', 'stroke-width': 2,
         'stroke-dasharray': '1 5', 'stroke-linecap': 'round', opacity: '.85',
@@ -784,8 +657,7 @@
         '本 world 为虚构设定，<b>无真实地形参照</b>——以关系图呈现人物与事件脉络。';
       return;
     }
-    [{ k: 'shade', name: '山影晕渲', c: '#8C7B5E' },
-     { k: 'tint', name: '高程配色', c: '#A88C5A' },
+    [{ k: 'on', name: '真实地形图', c: '#5A7A52' },
      { k: 'elev', name: '标注海拔', c: '#7A6E5C' }].forEach(function (it) {
       var on = state.terrain[it.k];
       var n = document.createElement('div');
@@ -794,7 +666,7 @@
         '<span class="lay-n">' + (on ? '开' : '关') + '</span>';
       n.addEventListener('click', function () {
         state.terrain[it.k] = !state.terrain[it.k];
-        if (it.k !== 'elev') tImg = buildTerrainImage();
+        if (it.k === 'on' && gTopo) gTopo.style.display = state.terrain.on ? '' : 'none';
         refresh();
       });
       box.appendChild(n);
@@ -810,9 +682,10 @@
       box.appendChild(n);
     }
     var src = document.getElementById('terrainSrc');
-    src.innerHTML = TG ? ('高程为实测值，非示意。<br><b>' + (TG.source || '') + '</b><br>网格 ' +
-      TG.nx + '×' + TG.ny + '，' + TG.min + '–' + TG.max + ' m。') :
-      '未载入高程网格。运行 tools/fetch_terrain.py 后重新编译。';
+    src.innerHTML = '底图：复旦 CHGIS <b>DemTopo 分层设色地形图</b>（海洋已去蓝，陆地即地图本色）。' +
+      (TG ? ('<br>高程网格 <b>' + (TG.source || '') + '</b>：' + TG.nx + '×' + TG.ny + '，' +
+        TG.min + '–' + TG.max + ' m，实测非示意。') :
+        '<br>未载入高程网格（地点海拔标注不可用）。');
   }
   /* 邻接切片：严格只显示同地域（同 region）的切片。
    * 用户原则（2026-08-14）：导航器也只显示同地域切片，绝不串场。
@@ -1884,14 +1757,14 @@
   function refresh() {
     syncStateT();  // v0.27：事件高亮跟随当前 time year
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
-    renderSiblings(); renderEventTimeline(); drawDynamic(); drawTerrain();
+    renderSiblings(); renderEventTimeline(); drawDynamic();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
   }
 
   /* ═══════════ 启动 ═══════════ */
-  measure(); fitView(); tImg = buildTerrainImage(); initMap();
+  measure(); fitView(); initMap();
   if (!IS_ABSTRACT && window.ControlLayer) {
     ControlLayer.setup({
       cv: controlCv, px: px, py: py,

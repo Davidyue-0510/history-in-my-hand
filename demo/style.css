@@ -267,13 +267,12 @@ body{
 
 .map-wrap{
   flex:1; min-height:0; position:relative;
-  overflow:hidden; background:#c5dde6;   /* 海蓝：地形网格范围外（及 off-grid 时）的海面底色 */
+  overflow:hidden; background:#e9e2d0;   /* 羊皮纸：地形图栅格之外的留白（与 DemTopo 海洋去蓝后的本色一致） */
   cursor:grab; touch-action:none;
 }
 .map-wrap.grabbing{ cursor:grabbing; }
-/* 图层叠放（v0.41 重排）：地形画布=不透明底层（陆地分层设色+海蓝海洋）；
-   SVG 矢量底图(z1) 提到地形之上使海岸/河流/省界清晰可见；控制层/CHGIS 历史政区(z2) 再之上。 */
-#terrainCv{ position:absolute; inset:0; width:100%; height:100%; display:block; z-index:0; }
+/* 图层叠放（v0.45 重排）：真实 DemTopo 分层设色栅格作为 SVG <image> 置于 #map(z1) 最底层，
+   矢量历史省界/边墙叠于其上；控制层/CHGIS 历史政区画布(z2)、战斗层(z5) 再之上。 */
 #controlCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:2; }
 #chgisCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:2; }
 #map{ position:absolute; inset:0; width:100%; height:100%; display:block; z-index:1; background:transparent; }
