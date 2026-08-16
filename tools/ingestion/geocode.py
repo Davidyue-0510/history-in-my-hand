@@ -26,6 +26,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 GAZ_PATH = os.path.join(ROOT, "data", "geo", "gazetteer.json")
+GN_PATH = os.path.join(ROOT, "data", "geo", "geonames_index.json")
 
 # 通名后缀：去掉后「蔡州城」→「蔡州」、「广宁城」→「广宁」
 _SUFFIX = ("州", "府", "郡", "县", "城", "关", "镇", "军", "监", "卫",
@@ -87,7 +88,41 @@ def geocode(name):
             out = dict(r)
             out["matched_by"] = "substring"
             return out
+    # 兜底：GeoNames 全球地名库（免费 CC BY 4.0）。覆盖 curated 表外的「文献地名」。
+    # 仅在 curated 三次匹配全失后才触发（懒加载，避免每次调用都读 ~20MB 索引）。
+    gn = _gn()
+    if gn:
+        if n in gn:
+            return _gn_rec(gn[n], "geonames_exact")
+        s2 = n
+        while s2 and s2[-1] in _SUFFIX:
+            s2 = s2[:-1]
+            if s2 in gn:
+                return _gn_rec(gn[s2], "geonames_strip")
     return None
+
+
+_GN = None
+
+
+def _gn():
+    global _GN
+    if _GN is None:
+        if os.path.exists(GN_PATH):
+            with open(GN_PATH, encoding="utf-8") as f:
+                _GN = json.load(f)
+        else:
+            _GN = {}  # 未构建索引则静默跳过（不报错，不影响 curated 流程）
+    return _GN
+
+
+def _gn_rec(rec, matched_by):
+    """GeoNames 索引记录 = [lon, lat, feature_class, country]。"""
+    return {
+        "lon": rec[0], "lat": rec[1],
+        "geo_source": "GeoNames", "feature": rec[2], "country": rec[3],
+        "matched_by": matched_by,
+    }
 
 
 def geocode_places(places):

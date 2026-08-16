@@ -40,8 +40,8 @@
   var DOSSIER = CFG.dossier_event || META.dossier_event;
 
   var TG = D.terrain || SD.terrain;   // 优先 per-scene 网格，回退共享网格
-  var RIVERS = SD.rivers;             // 共享江河
-  var WALL = SD.wall;                 // 共享边墙
+  var BM = D.basemap || SD.basemap;   // per-scene Natural Earth 矢量底图（v0.38）
+  var WALL = D.wall || null;          // 辽东边墙仅辽东体系场景注入（不再共享误显）
   var SVGNS = 'http://www.w3.org/2000/svg';
 
   document.title = (META.title || sceneKey) + ' · 小菜狗的文明图景';
@@ -186,9 +186,6 @@
     if (IS_ABSTRACT) return { x0: 0, y0: 0, x1: W, y1: H };
     var xs = [], ys = [];
     D.places.forEach(function (p) { xs.push(px(p.lon)); ys.push(py(p.lat)); });
-    RIVERS.forEach(function (r) {
-      r.path.forEach(function (c) { xs.push(px(c[0])); ys.push(py(c[1])); });
-    });
     return { x0: Math.min.apply(null, xs), x1: Math.max.apply(null, xs),
              y0: Math.min.apply(null, ys), y1: Math.max.apply(null, ys) };
   }
@@ -383,21 +380,80 @@
     gMarks = el('g', {}, svg); gNodes = el('g', {}, svg); gLabels = el('g', {}, svg);
     drawBase();
   }
+  // GeoJSON geometry -> SVG path d（Polygon/MultiPolygon/LineString/MultiLineString）
+  function geomPath(g) {
+    if (!g) return '';
+    var t = g.type, c = g.coordinates, d = '';
+    function ring(r) { return 'M' + r.map(function (p) { return px(p[0]) + ' ' + py(p[1]); }).join(' L ') + ' Z'; }
+    function line(l) { return 'M' + l.map(function (p) { return px(p[0]) + ' ' + py(p[1]); }).join(' L '); }
+    if (t === 'Polygon') { g.coordinates.forEach(function (r) { d += ring(r) + ' '; }); }
+    else if (t === 'MultiPolygon') { g.coordinates.forEach(function (p) { p.forEach(function (r) { d += ring(r) + ' '; }); }); }
+    else if (t === 'LineString') { d = line(c); }
+    else if (t === 'MultiLineString') { c.forEach(function (l) { d += line(l) + ' '; }); }
+    return d.trim();
+  }
+  // 取几何标注点（像素）：Polygon→外环首点；MultiPolygon→首多边形外环首点；Line→中点
+  function geomLabelXY(g) {
+    var c = g.coordinates;
+    if (g.type === 'Polygon') return [px(c[0][0][0]), py(c[0][0][1])];
+    if (g.type === 'MultiPolygon') return [px(c[0][0][0][0]), py(c[0][0][0][1])];
+    if (g.type === 'LineString') { var m = c[Math.floor(c.length / 2)]; return [px(m[0]), py(m[1])]; }
+    if (g.type === 'MultiLineString') { var l = c[0], mm = l[Math.floor(l.length / 2)]; return [px(mm[0]), py(mm[1])]; }
+    return null;
+  }
+
   function drawBase() {
     gBase.innerHTML = '';
-    if (IS_ABSTRACT) return;   // 抽象关系图模式无江河 / 边墙
-    var gRiv = el('g', { fill: 'none', stroke: '#8FAEC2', 'stroke-linecap': 'round',
-      'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
-    RIVERS.forEach(function (r) {
-      var wgt = (r.id === 'liaohe' || r.id === 'yalu') ? 2.4 : 1.7;
-      el('path', { d: poly(r.path), 'stroke-width': wgt, 'vector-effect': 'non-scaling-stroke' }, gRiv);
-      var mid = r.path[Math.floor(r.path.length / 2)];
-      var tx = el('text', { x: px(mid[0]) + 6, y: py(mid[1]) - 5, class: 'river-label' }, gBase);
-      tx.textContent = r.name;
+    if (IS_ABSTRACT) return;   // 抽象关系图模式无底图
+    if (!BM) return;
+    // 1) 陆地掩膜（浅色填充，作为海陆底色）
+    BM.land.forEach(function (f) {
+      el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
     });
-    el('path', { d: poly(WALL.path), fill: 'none', stroke: '#7A7466', 'stroke-width': 2,
-      'stroke-dasharray': '1 5', 'stroke-linecap': 'round', opacity: '.85',
+    // 2) 湖泊
+    var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
       'vector-effect': 'non-scaling-stroke' }, gBase);
+    BM.lakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+    // 3) 海岸线
+    BM.coastline.forEach(function (f) {
+      el('path', { d: geomPath(f.g), fill: 'none', stroke: '#7c9aa8', 'stroke-width': 1,
+        'vector-effect': 'non-scaling-stroke' }, gBase);
+    });
+    // 4) 省 / 州界 + 标注
+    var gAdm = el('g', { fill: 'none', stroke: '#c9bfa8', 'stroke-width': 0.8,
+      'vector-effect': 'non-scaling-stroke' }, gBase);
+    BM.admin1.forEach(function (f) {
+      el('path', { d: geomPath(f.g) }, gAdm);
+      if (f.n) {
+        var xy = geomLabelXY(f.g);
+        if (xy) {
+          var t = el('text', { x: xy[0] + 4, y: xy[1], class: 'adm-label' }, gBase);
+          t.textContent = f.n;
+        }
+      }
+    });
+    // 5) 河流 + 标注
+    var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
+      'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
+    BM.rivers.forEach(function (f) {
+      el('path', { d: geomPath(f.g), 'stroke-width': 1.4 }, gRiv);
+      if (f.n) {
+        var xy = geomLabelXY(f.g);
+        if (xy) {
+          var t = el('text', { x: xy[0] + 4, y: xy[1] - 3, class: 'river-label' }, gBase);
+          t.textContent = f.n;
+        }
+      }
+    });
+    // 6) 辽东边墙（仅辽东体系场景注入，不再共享误显）
+    if (WALL && WALL.path) {
+      el('path', { d: poly(WALL.path), fill: 'none', stroke: '#7A7466', 'stroke-width': 2,
+        'stroke-dasharray': '1 5', 'stroke-linecap': 'round', opacity: '.85',
+        'vector-effect': 'non-scaling-stroke' }, gBase);
+      var wm = WALL.path[2];
+      var wl = el('text', { x: px(wm[0]) - 60, y: py(wm[1]), class: 'place-label minor' }, gBase);
+      wl.textContent = WALL.name || '辽东边墙';
+    }
   }
 
   var EDGE_STYLE = {

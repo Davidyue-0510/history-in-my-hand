@@ -98,9 +98,6 @@
   function dataBounds() {
     var xs = [], ys = [];
     D.places.forEach(function (p) { xs.push(px(p.lon)); ys.push(py(p.lat)); });
-    SD.rivers.forEach(function (r) {
-      r.path.forEach(function (c) { xs.push(px(c[0])); ys.push(py(c[1])); });
-    });
     // 治所也纳入视野范围：让控制层能呈现全辽东（含西部 宁远/锦州 等超出
     // 地形网格 122–126.8°E 范围的治所），而非只在视图中央一小块。
     (SD.control_seats || []).forEach(function (s) {
@@ -370,29 +367,67 @@
     drawBase();
   }
 
+  // GeoJSON geometry -> SVG path d（用于 Natural Earth 矢量底图）
+  function geomPath(g) {
+    if (!g) return '';
+    var t = g.type, c = g.coordinates, d = '';
+    function ring(r) { return 'M' + r.map(function (p) { return px(p[0]) + ' ' + py(p[1]); }).join(' L ') + ' Z'; }
+    function line(l) { return 'M' + l.map(function (p) { return px(p[0]) + ' ' + py(p[1]); }).join(' L '); }
+    if (t === 'Polygon') { g.coordinates.forEach(function (r) { d += ring(r) + ' '; }); }
+    else if (t === 'MultiPolygon') { g.coordinates.forEach(function (p) { p.forEach(function (r) { d += ring(r) + ' '; }); }); }
+    else if (t === 'LineString') { d = line(c); }
+    else if (t === 'MultiLineString') { c.forEach(function (l) { d += line(l) + ' '; }); }
+    return d.trim();
+  }
+  function geomLabelXY(g) {
+    var c = g.coordinates;
+    if (g.type === 'Polygon') return [px(c[0][0][0]), py(c[0][0][1])];
+    if (g.type === 'MultiPolygon') return [px(c[0][0][0][0]), py(c[0][0][0][1])];
+    if (g.type === 'LineString') { var m = c[Math.floor(c.length / 2)]; return [px(m[0]), py(m[1])]; }
+    if (g.type === 'MultiLineString') { var l = c[0], mm = l[Math.floor(l.length / 2)]; return [px(mm[0]), py(mm[1])]; }
+    return null;
+  }
+
   function drawBase() {
     gBase.innerHTML = '';
-    // 河流
-    var gRiv = el('g', {
-      fill: 'none', stroke: '#8FAEC2', 'stroke-linecap': 'round',
-      'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke'
-    }, gBase);
-    SD.rivers.forEach(function (r) {
-      var wgt = (r.id === 'liaohe' || r.id === 'yalu') ? 2.4 : 1.7;
-      el('path', { d: poly(r.path), 'stroke-width': wgt, 'vector-effect': 'non-scaling-stroke' }, gRiv);
-      var mid = r.path[Math.floor(r.path.length / 2)];
-      var tx = el('text', { x: px(mid[0]) + 6, y: py(mid[1]) - 5, class: 'river-label' }, gBase);
-      tx.textContent = r.name;
-    });
-    // 辽东边墙
-    el('path', {
-      d: poly(SD.wall.path), fill: 'none', stroke: '#7A7466',
-      'stroke-width': 2, 'stroke-dasharray': '1 5', 'stroke-linecap': 'round',
-      opacity: '.85', 'vector-effect': 'non-scaling-stroke'
-    }, gBase);
-    var wm = SD.wall.path[2];
-    var wl = el('text', { x: px(wm[0]) - 60, y: py(wm[1]), class: 'place-label minor' }, gBase);
-    wl.textContent = '辽东边墙';
+    var BM = SD.basemap;   // 共享 Natural Earth 矢量底图（v0.38：中国裁剪版）
+    if (BM) {
+      BM.land.forEach(function (f) {
+        el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase);
+      });
+      var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
+        'vector-effect': 'non-scaling-stroke' }, gBase);
+      BM.lakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+      BM.coastline.forEach(function (f) {
+        el('path', { d: geomPath(f.g), fill: 'none', stroke: '#7c9aa8', 'stroke-width': 1,
+          'vector-effect': 'non-scaling-stroke' }, gBase);
+      });
+      var gAdm = el('g', { fill: 'none', stroke: '#c9bfa8', 'stroke-width': 0.8,
+        'vector-effect': 'non-scaling-stroke' }, gBase);
+      BM.admin1.forEach(function (f) {
+        el('path', { d: geomPath(f.g) }, gAdm);
+        if (f.n) { var a = geomLabelXY(f.g); if (a) {
+          var t = el('text', { x: a[0] + 4, y: a[1], class: 'adm-label' }, gBase); t.textContent = f.n; } }
+      });
+      var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
+        'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
+      BM.rivers.forEach(function (f) {
+        el('path', { d: geomPath(f.g), 'stroke-width': 1.4 }, gRiv);
+        if (f.n) { var r = geomLabelXY(f.g); if (r) {
+          var t = el('text', { x: r[0] + 4, y: r[1] - 3, class: 'river-label' }, gBase); t.textContent = f.n; } }
+      });
+    }
+    // 辽东边墙（壳级共享，总览页中国视角下展示）
+    if (SD.wall && SD.wall.path) {
+      el('path', {
+        d: poly(SD.wall.path), fill: 'none', stroke: '#7A7466',
+        'stroke-width': 2, 'stroke-dasharray': '1 5', 'stroke-linecap': 'round',
+        opacity: '.85', 'vector-effect': 'non-scaling-stroke'
+      }, gBase);
+      var wm = SD.wall.path[2];
+      var wl = el('text', { x: px(wm[0]) - 60, y: py(wm[1]), class: 'place-label minor' }, gBase);
+      wl.textContent = SD.wall.name || '辽东边墙';
+    }
   }
 
   /* ═══════════ 地图动态层 ═══════════ */

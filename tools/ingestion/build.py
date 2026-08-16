@@ -34,6 +34,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "analysis"))  # terrain_model 驻留处
 import vocab_loader as VL  # noqa: E402
 import fetch_terrain as FT  # noqa: E402  地形网格注册表（v0.22：写死常量退役）
+import basemap as BM  # noqa: E402   Natural Earth 矢量底图（v0.38：替换手绘辽东江河）
 
 # meta 里属于「配置」而非「内容」的键，不需要原样带进 bundle.meta 的字段
 _REGISTRY_ONLY = {"dir", "extra_files"}
@@ -535,10 +536,13 @@ def main():
       print("  ! shell 地形网格 %r 状态=%s，总览页将标 OFF_GRID（不伪造高程）"
               % (shell_gid, tstatus))
 
-    # 共享江河 / 边墙（取自萨尔浒片层的辽东风土，投影范围一致，各县在其内）
-    sarhu_places = load_json(os.path.join(DATA, "sarhu"), "places.json")
-    sd["rivers"] = sarhu_places["rivers"]
-    sd["wall"] = sarhu_places["wall"]
+    # 共享矢量底图（Natural Earth 1:50m，公共领域）：中国裁剪版供壳/总览页使用。
+    # v0.38 起取代「手绘辽东江河」——之前 SD.rivers 来自 sarhu/places.json 的 6 条
+    # 手画 path，太丑且只覆盖辽东；现统一用 NE 真实省界/河流/湖泊/海岸线。
+    sd["basemap"] = BM.build_basemap({}, shell=True)
+    # 辽东边墙（历史地理标注）保留为壳级共享资产，仅总览页（中国视角）使用。
+    wall_path = os.path.join(ROOT, "data", "geo", "liaodong_wall.json")
+    sd["wall"] = json.load(open(wall_path, encoding="utf-8")) if os.path.exists(wall_path) else None
 
     scenes = {}
     scenes_meta = {}
@@ -565,6 +569,11 @@ def main():
                     p["elev"] = ev
                     if ev is None:
                         p["off_grid"] = True
+        # v0.38：按场景视野裁剪 Natural Earth 矢量底图，注入 bundle（取代手绘江河）。
+        bundle["basemap"] = BM.build_basemap(bundle)
+        # 辽东边墙仅注入辽东体系场景（其余场景不误显辽东边墙）。
+        if sc.get("region") in LIAODONG_REGIONS:
+            bundle["wall"] = sd.get("wall")
         # 地基二：每切片落地为独立文件（壳不再内嵌完整 scenes 字典）
         write_slice(key, bundle)
         slice_index[key] = "slices/%s.js" % key

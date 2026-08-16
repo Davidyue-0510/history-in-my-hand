@@ -733,6 +733,11 @@ body{
   paint-order:stroke; stroke:#F6F3EA; stroke-width:calc(var(--u) * 3px);
   stroke-linejoin:round; pointer-events:none; user-select:none;
 }
+.adm-label{
+  font-family:var(--sans); font-size:calc(var(--u) * 9px); fill:#8a7f68;
+  paint-order:stroke; stroke:#F6F3EA; stroke-width:calc(var(--u) * 2.4px);
+  stroke-linejoin:round; pointer-events:none; user-select:none; opacity:.85;
+}
 .route-label{
   font-family:var(--serif); font-size:calc(var(--u) * 10.5px); font-weight:600;
   paint-order:stroke; stroke:#F6F3EA; stroke-width:calc(var(--u) * 3.4px);
