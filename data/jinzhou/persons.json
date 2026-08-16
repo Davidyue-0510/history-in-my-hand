@@ -1,28 +1,30 @@
 {
- "persons": [
-  {
-   "id": "zu_dashou",
-   "name": "祖大寿",
-   "role": "明总兵",
-   "note": "两度被围降清（大凌河/锦州），吴三桂舅父"
-  },
-  {
-   "id": "hong_chengchou",
-   "name": "洪承畴",
-   "role": "蓟辽总督",
-   "note": "松锦之战明军主帅，兵败被俘，后降清"
-  },
-  {
-   "id": "huangtaiji",
-   "name": "皇太极",
-   "role": "清太宗",
-   "note": "1641–1642 围锦州、松山，灭明辽西机动兵力"
-  },
-  {
-   "id": "duoergun",
-   "name": "多尔衮",
-   "role": "清睿亲王",
-   "note": "松锦之战前线统帅"
-  }
- ]
+  "persons": [
+    {
+      "id": "zu_dashou",
+      "name": "祖大寿",
+      "role": "明总兵",
+      "note": "两度被围降清（大凌河/锦州），吴三桂舅父",
+      "faction": "feng_jiang"
+    },
+    {
+      "id": "hong_chengchou",
+      "name": "洪承畴",
+      "role": "蓟辽总督",
+      "note": "松锦之战明军主帅，兵败被俘，后降清",
+      "faction": "feng_jiang"
+    },
+    {
+      "id": "huangtaiji",
+      "name": "皇太极",
+      "role": "清太宗",
+      "note": "1641–1642 围锦州、松山，灭明辽西机动兵力"
+    },
+    {
+      "id": "duoergun",
+      "name": "多尔衮",
+      "role": "清睿亲王",
+      "note": "松锦之战前线统帅"
+    }
+  ]
 }

@@ -229,6 +229,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "洪承畴",
    "role": "蓟辽总督·兵部尚书",
    "note": "崇祯十四年督八镇兵援锦，松山城陷被执，降清",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -236,6 +237,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "祖大寿",
    "role": "锦州总兵",
    "note": "坚守锦州经年，松山陷后粮尽以城降清；吴三桂之舅",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "zu_dashou",
    "_other_scenes": [
@@ -270,6 +272,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "曹变蛟",
    "role": "明总兵",
    "note": "松山北、乳峰山西立营；城陷力战死",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -277,6 +280,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "王廷臣",
    "role": "明总兵",
    "note": "八镇之一；松山城陷死之",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -284,6 +288,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "王朴",
    "role": "明大同总兵",
    "note": "八镇之一；松锦之夜率先溃遁",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -291,6 +296,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "吴三桂",
    "role": "明宁远总兵",
    "note": "八镇之一；松锦后独守宁远，1644 引清入关",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -298,6 +304,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "邱民仰",
    "role": "辽东巡抚",
    "note": "随洪承畴督师，松山城陷死之",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -305,6 +312,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "夏成德",
    "role": "明松山副将",
    "note": "遣子为质约为内应，开门献松山",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -312,6 +320,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "张若麒",
    "role": "职方郎中",
    "note": "监军趣进兵，松山溃后从海逃还",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -319,6 +328,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "杨国柱",
    "role": "明宣府总兵",
    "note": "八镇之一；崇祯十四年八月陷伏战死",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -326,6 +336,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "name": "陈新甲",
    "role": "兵部尚书",
    "note": "力主分进速战，贻书趣洪承畴进兵",
+   "faction": "feng_jiang",
    "influence": 1
   }
  ],

@@ -169,6 +169,7 @@ window.SANDBOX_SLICES["fushun"] = {
    "name": "李成梁",
    "role": "辽东总兵",
    "note": "隆庆四年起镇辽 22 年, 万历三十四年弃宽甸六堡",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "li_chengliang",
    "_other_scenes": [
@@ -180,6 +181,7 @@ window.SANDBOX_SLICES["fushun"] = {
    "name": "李如柏",
    "role": "辽东总兵",
    "note": "李成梁次子, 万历四十七年萨尔浒南路军主帅",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "li_rubai",
    "_other_scenes": [

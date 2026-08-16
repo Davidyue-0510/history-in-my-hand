@@ -108,6 +108,13 @@ window.SANDBOX_SLICES["qin_unify"] = {
    "name": "王翦",
    "side": "秦",
    "influence": 0
+  },
+  {
+   "id": "xiangyan",
+   "name": "项燕",
+   "side": "楚",
+   "influence": 0,
+   "role_hint": "楚国名将，项羽祖父；王翦灭楚之役兵败身死"
   }
  ],
  "assertions": [

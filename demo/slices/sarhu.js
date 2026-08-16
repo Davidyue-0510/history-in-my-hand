@@ -429,6 +429,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽东经略",
    "column": null,
    "note": "四路总调度，战后下狱，崇祯二年伏诛",
+   "faction": "feng_jiang",
    "influence": 8,
    "_global_id": "yanggao",
    "_other_scenes": [
@@ -442,6 +443,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "山海关总兵",
    "column": "west",
    "note": "西路主将，绰号杜疯子，以勇著称",
+   "faction": "feng_jiang",
    "influence": 4,
    "_global_id": "dusong",
    "_other_scenes": [
@@ -455,6 +457,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "保定总兵",
    "column": "west",
    "note": "西路副将",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -464,6 +467,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "原任总兵",
    "column": "west",
    "note": "西路副将",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -473,6 +477,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "开原总兵",
    "column": "north",
    "note": "北路主将，名将马芳之子，文士气重",
+   "faction": "feng_jiang",
    "influence": 5,
    "_global_id": "malin",
    "_other_scenes": [
@@ -486,6 +491,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "开原道佥事",
    "column": "north",
    "note": "北路，斐芬山力战死",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -495,6 +501,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "游击",
    "column": "north",
    "note": "北路，掌辎重车营",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -504,6 +511,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽东总兵",
    "column": "south",
    "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
+   "faction": "feng_jiang",
    "influence": 3,
    "_global_id": "li_rubai",
    "_other_scenes": [
@@ -518,6 +526,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "辽阳总兵",
    "column": "east",
    "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
+   "faction": "feng_jiang",
    "influence": 5
   },
   {
@@ -527,6 +536,7 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "监军道",
    "column": "east",
    "note": "东路，联络朝鲜军，兵败自尽",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -3948,7 +3958,7 @@ window.SANDBOX_SLICES["sarhu"] = {
     {
      "side": "ming",
      "force": "army:joseon",
-     "commander": "kanghongli",
+     "commander": "kanghonglip",
      "committed_ratio": 0.7,
      "commit_basis": "朝鲜三营，金应河左营先溃，姜弘立中营与右营被围。",
      "commit_confidence": 0.5,
@@ -3985,7 +3995,7 @@ window.SANDBOX_SLICES["sarhu"] = {
     {
      "side": "ming",
      "force": "army:ming_south",
-     "commander": "liruibai",
+     "commander": "liruobai",
      "committed_ratio": 0.0,
      "commit_basis": "全程未与后金主力接战，奉檄撤回。",
      "commit_confidence": 0.8,

@@ -114,6 +114,7 @@
 
     <div id="mapWrap" class="map-wrap">
       <canvas id="controlCv"></canvas>
+      <canvas id="borderCv"></canvas>
       <canvas id="chgisCv"></canvas>
       <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
       <canvas id="battleCv"></canvas>
@@ -140,7 +141,8 @@
         <div class="cp-row" id="timelineRow" style="display:none">
           <select id="timelineSel" class="cp-select"></select>
         </div>
-        <div class="cp-note">示意辖区 · 治所最近邻近似</div>
+        <div class="cp-note">界线=真实政区几何（CHGIS 复旦镜像）· 填色=治所控制归属近似</div>
+        <div class="cp-note" id="borderNote">界线数据待载入（打开图层后拉取）</div>
       </div>
     </div>
 
@@ -193,6 +195,7 @@
       <div class="parties-note"></div>
       <div id="partiesPane" class="parties-list"></div>
       <div id="factionPane" class="faction-list"></div>
+      <div id="warCourtPane" class="faction-list"></div>
     </div>
 
     <div class="tabpane" data-pane="conflict">
@@ -224,6 +227,7 @@
 <script src="data.js"></script>
 <script src="control_layer.js"></script>
 <script src="chgis_layer.js"></script>
+<script src="border_layer.js"></script>
 <script src="battle_layer.js"></script>
 <script src="county.js"></script>
 </body>

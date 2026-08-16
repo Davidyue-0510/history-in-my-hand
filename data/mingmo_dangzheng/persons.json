@@ -1,18 +1,109 @@
 {
   "persons": [
-    {"id": "feng_quan", "name": "冯铨", "side": "ming", "role": "侍讲·阉党", "note": "楚党/阉党，素恨小说《辽东传》写「冯布政父子奔逃」，借讲筵私怨害熊廷弼。"},
-    {"id": "xiong_tingbi", "name": "熊廷弼", "side": "ming", "role": "经略辽东", "note": "辽东经略，广宁败后下狱，为冯铨私怨所陷，被正法。"},
-    {"id": "wei_zhongxian", "name": "魏忠贤", "side": "ming", "role": "司礼监·阉党首脑", "note": "天启间擅政，客氏内援，罗织东林。"},
-    {"id": "ke_shi", "name": "客氏", "side": "ming", "role": "熹宗乳母", "note": "与魏忠贤相倚，宫禁内援。"},
-    {"id": "yang_lian", "name": "杨涟", "side": "ming", "role": "副都御史·东林", "note": "天启四年弹魏忠贤二十四罪，后罹党祸。"},
-    {"id": "liu_ruoyu", "name": "刘若愚", "side": "ming", "role": "内臣", "note": "《酌中志》作者，魏败后追记宫禁，半独立内臣视角。"},
-    {"id": "jiang_yingyang", "name": "蒋应暘", "side": "ming", "role": "妖弁·冯铨私人", "note": "冯铨使之于讲筵发难，袖奏陷熊廷弼。"},
-    {"id": "cui_chengxiu", "name": "崔呈秀", "side": "ming", "role": "阉党", "note": "递《点将录》等四折，按名株连东林。"},
-    {"id": "gu_xiancheng", "name": "顾宪成", "side": "ming", "role": "吏部文选司郎中·东林", "note": "万历三十二年重修东林书院，东林党之始。"},
-    {"id": "zuo_guangdou", "name": "左光斗", "side": "ming", "role": "御史·东林", "note": "天启四年与杨涟攻魏忠贤，五年下狱死，六君子之一。"},
-    {"id": "gao_panlong", "name": "高攀龙", "side": "ming", "role": "御史·东林", "note": "与顾宪成共修东林书院；后名列阉党《点将录》。"},
-    {"id": "wang_wenyan", "name": "汪文言", "side": "ming", "role": "中书·东林联络", "note": "天启五年被阉党逮治，坐杨涟等赃，狱死，为六君子之狱导火索。"},
-    {"id": "gu_bingqian", "name": "顾秉谦", "side": "ming", "role": "内阁大学士·阉党", "note": "天启六年《三朝要典》总裁之一。"},
-    {"id": "huo_weihua", "name": "霍维华", "side": "ming", "role": "给事中·阉党", "note": "天启六年四月初十上疏推翻三案结论，启《三朝要典》之修。"}
+    {
+      "id": "feng_quan",
+      "name": "冯铨",
+      "side": "ming",
+      "role": "侍讲·阉党",
+      "note": "楚党/阉党，素恨小说《辽东传》写「冯布政父子奔逃」，借讲筵私怨害熊廷弼。"
+    },
+    {
+      "id": "xiong_tingbi",
+      "name": "熊廷弼",
+      "side": "ming",
+      "role": "经略辽东",
+      "note": "辽东经略，广宁败后下狱，为冯铨私怨所陷，被正法。"
+    },
+    {
+      "id": "wei_zhongxian",
+      "name": "魏忠贤",
+      "side": "ming",
+      "role": "司礼监·阉党首脑",
+      "note": "天启间擅政，客氏内援，罗织东林。"
+    },
+    {
+      "id": "ke_shi",
+      "name": "客氏",
+      "side": "ming",
+      "role": "熹宗乳母",
+      "note": "与魏忠贤相倚，宫禁内援。"
+    },
+    {
+      "id": "yang_lian",
+      "name": "杨涟",
+      "side": "ming",
+      "role": "副都御史·东林",
+      "note": "天启四年弹魏忠贤二十四罪，后罹党祸。"
+    },
+    {
+      "id": "liu_ruoyu",
+      "name": "刘若愚",
+      "side": "ming",
+      "role": "内臣",
+      "note": "《酌中志》作者，魏败后追记宫禁，半独立内臣视角。"
+    },
+    {
+      "id": "jiang_yingyang",
+      "name": "蒋应暘",
+      "side": "ming",
+      "role": "妖弁·冯铨私人",
+      "note": "冯铨使之于讲筵发难，袖奏陷熊廷弼。",
+      "faction": "eunuch"
+    },
+    {
+      "id": "cui_chengxiu",
+      "name": "崔呈秀",
+      "side": "ming",
+      "role": "阉党",
+      "note": "递《点将录》等四折，按名株连东林。"
+    },
+    {
+      "id": "gu_xiancheng",
+      "name": "顾宪成",
+      "side": "ming",
+      "role": "吏部文选司郎中·东林",
+      "note": "万历三十二年重修东林书院，东林党之始。",
+      "faction": "donglin"
+    },
+    {
+      "id": "zuo_guangdou",
+      "name": "左光斗",
+      "side": "ming",
+      "role": "御史·东林",
+      "note": "天启四年与杨涟攻魏忠贤，五年下狱死，六君子之一。",
+      "faction": "donglin"
+    },
+    {
+      "id": "gao_panlong",
+      "name": "高攀龙",
+      "side": "ming",
+      "role": "御史·东林",
+      "note": "与顾宪成共修东林书院；后名列阉党《点将录》。",
+      "faction": "donglin"
+    },
+    {
+      "id": "wang_wenyan",
+      "name": "汪文言",
+      "side": "ming",
+      "role": "中书·东林联络",
+      "note": "天启五年被阉党逮治，坐杨涟等赃，狱死，为六君子之狱导火索。",
+      "faction": "donglin"
+    },
+    {
+      "id": "gu_bingqian",
+      "name": "顾秉谦",
+      "side": "ming",
+      "role": "内阁大学士·阉党",
+      "note": "天启六年《三朝要典》总裁之一。",
+      "faction": "eunuch"
+    },
+    {
+      "id": "huo_weihua",
+      "name": "霍维华",
+      "side": "ming",
+      "role": "给事中·阉党",
+      "note": "天启六年四月初十上疏推翻三案结论，启《三朝要典》之修。",
+      "faction": "eunuch"
+    }
   ]
 }

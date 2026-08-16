@@ -190,6 +190,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "总兵",
    "note": "辽西明军主将，大凌河首次降清，松锦再降。",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "zu_dashou",
    "_other_scenes": [
@@ -203,6 +204,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "副将",
    "note": "祖大寿副将，大凌河粮尽时不肯降，被大寿所杀，含笑而死。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -211,6 +213,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "太仆少卿",
    "note": "监军援大凌，长山战败被执，清太宗谕降不从。",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -219,6 +222,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "辽东巡抚",
    "note": "倡议筑大凌河等城，援大凌败于长山。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -227,6 +231,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "山海总兵",
    "note": "吴三桂父，从张春援大凌，长山之败先遁。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -235,6 +240,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "总兵",
    "note": "从张春援大凌，长山力战不支而走。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -243,6 +249,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "督师",
    "note": "前督师，议筑城渐进复辽，时镇山海关。",
+   "faction": "donglin",
    "influence": 0
   },
   {
@@ -251,6 +258,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "side": "ming",
    "role": "兵部尚书",
    "note": "力主筑大凌河城，旋罢，廷议撤班军。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {

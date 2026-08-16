@@ -8,6 +8,14 @@
       "hometown": "钜鹿"
     },
     {
+      "id": "zhangliang",
+      "name": "张梁",
+      "side": "黄巾",
+      "influence": 0,
+      "hometown": "钜鹿",
+      "role_hint": "人公将军，张角弟；广宗之战与皇甫嵩决战，战死"
+    },
+    {
       "id": "huangfusong",
       "name": "皇甫嵩",
       "side": "汉",

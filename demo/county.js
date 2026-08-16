@@ -176,6 +176,7 @@
   var svg  = document.getElementById('map');
   var controlCv = document.getElementById('controlCv');
   var chgisCv = document.getElementById('chgisCv');
+  var borderCv = document.getElementById('borderCv');
   var battleCv = document.getElementById('battleCv');
   var view = { x: 0, y: 0, w: W, h: H };
   var fitW = W, cw = 1, ch = 1;
@@ -202,6 +203,7 @@
     var dpr = window.devicePixelRatio || 1;
     controlCv.width = Math.round(cw * dpr); controlCv.height = Math.round(ch * dpr);
     if (chgisCv) { chgisCv.width = Math.round(cw * dpr); chgisCv.height = Math.round(ch * dpr); }
+    if (borderCv) { borderCv.width = Math.round(cw * dpr); borderCv.height = Math.round(ch * dpr); }
     if (battleCv) { battleCv.width = Math.round(cw * dpr); battleCv.height = Math.round(ch * dpr); }
   }
   function clampView() {
@@ -220,6 +222,7 @@
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
     if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
+    if (!IS_ABSTRACT && state.control.on && window.BorderLayer && BorderLayer.isReady()) BorderLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();
     if (redrawSvg !== false && !rafPending) {
@@ -460,6 +463,19 @@
           'stroke-width': 2.2, 'stroke-dasharray': '3 2.5', opacity: .92,
           'vector-effect': 'non-scaling-stroke', class: 'node-hit' }, gMarks);
       });
+      // 战—朝关联高亮（v0.46）：该派系成员指挥的接战点在地图描派系色环，
+      // 把「朝堂派系」直接挂到「战场」上。
+      if (warCourtReady && warCourt) {
+        warCourt.forEach(function (e) {
+          if (e.lon == null || e.lat == null) return;
+          var hit = e.sides.some(function (s) { return s.faction === state.activeFaction; });
+          if (!hit) return;
+          var x = px(e.lon), y = py(e.lat);
+          el('circle', { cx: x, cy: y, r: 12, fill: 'none', stroke: fcol,
+            'stroke-width': 2.8, 'stroke-dasharray': '4 2.5', opacity: .95,
+            'vector-effect': 'non-scaling-stroke', class: 'node-hit' }, gMarks);
+        });
+      }
     }
 
     if (state.layers.has('gap')) {
@@ -1628,6 +1644,21 @@
       var lg = document.getElementById('ctrlLegend');
       if (lg) lg.innerHTML = '';
     }
+    // v0.46：真实 CHGIS 政区边界随「县界/国界」切换（替换原 Voronoi 示意辖区）。
+    // ensure() 懒加载：只有真正打开图层才拉那 2MB GeoJSON。
+    if (!IS_ABSTRACT && state.control.on && window.BorderLayer) {
+      BorderLayer.setScope(state.control.scope);
+      BorderLayer.ensure();
+      BorderLayer.repaint();
+    } else if (window.BorderLayer) {
+      BorderLayer.clear();
+    }
+  }
+
+  // 控制面板底部的界线来源说明（诚实标注几何纪年）
+  function setBorderNote(txt) {
+    var el2 = document.getElementById('borderNote');
+    if (el2) el2.textContent = txt;
   }
 
   var _branchCtrlData = null;  // v0.33 分支控制权数据（跨时间线对比用）
@@ -1722,8 +1753,9 @@
     sel.addEventListener('change', function () {
       state.timeline = sel.value;
       // v0.32：切换分支时热加载模拟控制权数据
-      if (state.timeline !== 'main' && D.scene_id && window.ControlLayer) {
-        var simUrl = '../data/' + D.scene_id + '/control_sim_' + state.timeline + '.json';
+      // v0.46 bugfix：原写 D.scene_id（恒 undefined，见 META.scene_id），分支模拟数据从未被加载过。
+      if (state.timeline !== 'main' && (META.scene_id || sceneKey) && window.ControlLayer) {
+        var simUrl = '../data/' + (META.scene_id || sceneKey) + '/control_sim_' + state.timeline + '.json';
         fetch(simUrl).then(function (r) { if (r.ok) return r.json(); throw new Error('no sim'); })
           .then(function (sim) {
             _branchCtrlData = sim.control;  // 存分支数据供 drawDiff 使用
@@ -1753,12 +1785,138 @@
     if (pb && pb._t) { clearInterval(pb._t); pb._t = null; }
   }
 
+  /* ═══════════ 战—朝关联（v0.46）：战争 ↔ 朝堂 ═══════════ */
+  var warCourt = null, warCourtReady = false;
+
+  // 人名 → person 索引。engagements.json 里 commander 的写法**并不统一**：
+  //   · 辽东系切片写 person id（dusong）
+  //   · seed_famous_battles 批量生成的 37 个名战切片写**汉文名**（白起 / 阖闾/孙武）
+  // 全库扫描：76 条 commander 无法按 id 命中 persons.json，其中 67 条按「名」可命中，
+  // 余 9 条是集体单位（明守军/英远征军/建文军）本就不是人。
+  // 故解析走三级：id → 名 → 复合名按「/」拆分；都不中就诚实显示原文、不编派系。
+  var PERSON_BY_NAME = {};
+  (D.persons || []).forEach(function (p) { if (p.name && !PERSON_BY_NAME[p.name]) PERSON_BY_NAME[p.name] = p; });
+
+  function resolveCommanders(raw) {
+    if (!raw || raw === '-') return [];
+    var out = [];
+    var byId = NODE[raw] && NODE[raw].kind === 'person' ? NODE[raw].ref : null;
+    if (byId) { out.push(byId); return out; }
+    if (PERSON_BY_NAME[raw]) { out.push(PERSON_BY_NAME[raw]); return out; }
+    // 复合写法「阖闾/孙武」：逐段解析，命中几个算几个
+    if (raw.indexOf('/') >= 0) {
+      raw.split('/').forEach(function (seg) {
+        var t = seg.trim(); if (!t) return;
+        var hit = (NODE[t] && NODE[t].kind === 'person' ? NODE[t].ref : null) || PERSON_BY_NAME[t];
+        if (hit) out.push(hit);
+      });
+    }
+    return out;
+  }
+
+  function loadWarCourt() {
+    // 注意：切片 bundle 的 scene_id 在 META 里（D.meta.scene_id），D.scene_id 恒为 undefined。
+    // 用 sceneKey 才是权威场景 id（见 v0.46 修复记录）。
+    var SID = META.scene_id || sceneKey;
+    if (IS_ABSTRACT || !SID) { warCourtReady = true; return; }
+    fetch('../data/' + SID + '/engagements.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (gj) {
+        warCourt = [];
+        (gj && gj.engagements || []).forEach(function (e) {
+          var pp = PLACE[e.place];
+          var sides = (e.sides || []).map(function (s) {
+            var hits = resolveCommanders(s.commander);
+            // 一个 side 可能有多位主将（复合写法），派系取第一个有标注的
+            var fid = null;
+            for (var i = 0; i < hits.length; i++) { if (hits[i].faction) { fid = hits[i].faction; break; } }
+            var pname = hits.length
+              ? hits.map(function (h) { return h.name || h.id; }).join(' / ')
+              : (s.commander && s.commander !== '-' ? s.commander : '');
+            return { side: s.side, commander: s.commander, cname: pname,
+                     faction: fid, resolved: hits.length > 0,
+                     pids: hits.map(function (h) { return h.id; }) };
+          });
+          warCourt.push({ id: e.id, name: e.name, at: e.at, place: e.place,
+            lon: pp ? pp.lon : null, lat: pp ? pp.lat : null, sides: sides });
+        });
+        warCourtReady = true;
+        renderWarCourt(); drawDynamic();
+      })
+      .catch(function () { warCourtReady = true; renderWarCourt(); });
+  }
+  function renderWarCourt() {
+    var box = document.getElementById('warCourtPane'); if (!box) return;
+    box.innerHTML = '';
+    var head = document.createElement('div');
+    head.style.cssText = 'font-weight:700;font-size:13px;margin:2px 0 6px;color:#5A4632;';
+    head.innerHTML = '战—朝关联 <span style="font-weight:400;font-size:11px;color:#918777">· 将领派系（战争↔朝堂）</span>';
+    box.appendChild(head);
+    if (!warCourtReady) { box.appendChild(_wcNote('加载战例派系…')); return; }
+    if (!warCourt || !warCourt.length) {
+      var empty = document.createElement('div'); empty.style.cssText = 'color:#918777;font-size:12px';
+      empty.textContent = '本切片无接战数据。'; box.appendChild(empty); return;
+    }
+    var fac = {};
+    warCourt.forEach(function (e) { e.sides.forEach(function (s) { if (s.faction && FDEF[s.faction]) fac[s.faction] = (fac[s.faction] || 0) + 1; }); });
+    var facKeys = Object.keys(fac);
+    if (facKeys.length) {
+      var sum = document.createElement('div'); sum.style.cssText = 'font-size:11.5px;color:#6b6259;margin:0 0 6px';
+      sum.innerHTML = '本场景 ' + warCourt.length + ' 场接战 · 涉朝堂派系：' + facKeys.map(function (k) {
+        return '<span style="color:' + (FCOLORS[k] || '#888') + ';font-weight:600">' + ((FDEF[k] && FDEF[k].name) || k) + '</span> ' + fac[k];
+      }).join(' · ');
+      box.appendChild(sum);
+    } else {
+      // 诚实区分两种「无派系」：本语境包没有派系维度（如战国/唐切片）vs 有维度但将领未标注
+      var hasFacDim = FDEF && Object.keys(FDEF).length > 0;
+      var unres = 0, totSide = 0;
+      warCourt.forEach(function (e) { e.sides.forEach(function (s) { totSide++; if (!s.resolved && s.commander && s.commander !== '-') unres++; }); });
+      var n = document.createElement('div'); n.style.cssText = 'font-size:11.5px;color:#918777;margin:0 0 6px';
+      n.textContent = hasFacDim
+        ? ('本场景 ' + warCourt.length + ' 场接战 · 将领均未标注朝堂派系'
+           + (unres ? ('（其中 ' + unres + '/' + totSide + ' 位主将未在本切片 persons.json 注册）') : '') + '。')
+        : ('本场景 ' + warCourt.length + ' 场接战 · 本语境包未定义朝堂派系维度，仅列主将。');
+      box.appendChild(n);
+    }
+    warCourt.forEach(function (e) {
+      var row = document.createElement('div'); row.style.cssText = 'margin:4px 0;border-left:2px solid #cfc6b6;padding:2px 0 2px 7px';
+      var title = document.createElement('div'); title.style.cssText = 'font-size:12.5px;font-weight:600;color:#3a2f22';
+      title.textContent = (e.name || e.id) + (e.at ? (' · ' + e.at) : '');
+      row.appendChild(title);
+      e.sides.forEach(function (s) {
+        var line = document.createElement('div'); line.style.cssText = 'font-size:11.5px;color:#6b6259;padding:1px 0';
+        var sideCn = s.side === 'ming' ? '明' : (s.side === 'jin' ? '后金' : '—');
+        line.textContent = '　' + sideCn + '：' + (s.cname || '—');
+        // 未能解析成 persons.json 里的人（多为集体单位：明守军/英远征军），标灰不冒充人物
+        if (s.commander && s.commander !== '-' && !s.resolved) {
+          line.style.color = '#a49a8c';
+          line.title = '「' + s.commander + '」未在本切片 persons.json 注册（可能是集体单位而非个人）';
+        }
+        if (s.faction && FDEF[s.faction]) {
+          var col = FCOLORS[s.faction] || '#888';
+          var dot = document.createElement('span');
+          dot.style.cssText = 'display:inline-block;width:9px;height:9px;border-radius:50%;background:' + col + ';margin-left:5px;cursor:pointer;vertical-align:middle';
+          dot.title = (FDEF[s.faction].name || s.faction);
+          dot.addEventListener('click', function (ev) {
+            ev.stopPropagation();
+            state.activeFaction = (state.activeFaction === s.faction) ? null : s.faction;
+            renderParties(); renderFactions(); renderEventTimeline(); drawDynamic();
+          });
+          line.appendChild(dot);
+        }
+        row.appendChild(line);
+      });
+      box.appendChild(row);
+    });
+  }
+  function _wcNote(t) { var d = document.createElement('div'); d.style.cssText = 'color:#918777;font-size:12px'; d.textContent = t; return d; }
+
   /* ═══════════ 刷新 ═══════════ */
   function refresh() {
     syncStateT();  // v0.27：事件高亮跟随当前 time year
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
     renderSiblings(); renderEventTimeline(); drawDynamic();
-    renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderInspect();
+    renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderWarCourt(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
   }
@@ -1803,6 +1961,27 @@
       }
     });
   }
+  // 真实政区边界层（v0.46）：CHGIS 1820 府级界线（府界）+ 府级面拓扑合并的疆域外轮廓（国界）。
+  // 替换控制面板原「治所最近邻 Voronoi 示意」。约 2MB，故 setup 只登记、打开图层才 fetch。
+  if (!IS_ABSTRACT && window.BorderLayer) {
+    BorderLayer.setup({
+      cv: borderCv, px: px, py: py,
+      getView: function () { return view; },
+      getCw: function () { return cw; },
+      getCh: function () { return ch; },
+      getDpr: function () { return window.devicePixelRatio || 1; },
+      scope: state.control.scope,
+      onLoading: function () { setBorderNote('载入真实政区界线…'); },
+      onReady: function (n, m) {
+        if (state.control.on) { BorderLayer.setScope(state.control.scope); BorderLayer.repaint(); }
+        renderControlLegend();
+        // 诚实标注：几何纪年与本切片纪年不同，必须写明，不冒充明代政区。
+        setBorderNote('真实政区界线 · CHGIS ' + (m && m.year ? m.year : 1820) + ' 年府级底本（晚于本切片纪年，仅作真实政区参照）');
+      },
+      onError: function () { setBorderNote('真实界线加载失败（需通过 http 服务器打开）'); }
+    });
+  }
+  loadWarCourt();   // v0.46：战—朝关联数据（将领派系）
   // 战例叠加层：严格按当前切片隔离。
   // 依据用户原则（2026-08-13）：有联系（用户提出 or 史料提及）才能同屏查看；
   // 否则绝不跨场景堆叠——唐/三大战役页不再出现萨尔浒，反之亦然。

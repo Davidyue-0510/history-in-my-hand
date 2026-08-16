@@ -145,6 +145,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "name": "毛文龙",
    "role": "东江总兵",
    "note": "据皮岛，1621–1622 一度收复金州、旅顺",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "mao_wenlong",
    "_other_scenes": [

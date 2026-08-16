@@ -193,7 +193,7 @@
         {
           "side": "ming",
           "force": "army:joseon",
-          "commander": "kanghongli",
+          "commander": "kanghonglip",
           "committed_ratio": 0.7,
           "commit_basis": "朝鲜三营，金应河左营先溃，姜弘立中营与右营被围。",
           "commit_confidence": 0.5,
@@ -230,7 +230,7 @@
         {
           "side": "ming",
           "force": "army:ming_south",
-          "commander": "liruibai",
+          "commander": "liruobai",
           "committed_ratio": 0.0,
           "commit_basis": "全程未与后金主力接战，奉檄撤回。",
           "commit_confidence": 0.8,

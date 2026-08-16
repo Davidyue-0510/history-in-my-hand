@@ -91,6 +91,13 @@ body{
   grid-template-columns:var(--lw) minmax(0,1fr) var(--rw);
 }
 
+/* 抽屉遮罩 + 模态：默认脱离布局，避免成为栅格项抢占纵向空间（v0.46 底部自适应修复）。
+   #scrim 仅在 .on 时入流定位为遮罩；#modal 由 county.js 用内联 display:flex 显式唤起。 */
+#scrim{ display:none; }
+#scrim.on{ display:block; position:fixed; top:54px; left:0; right:0; bottom:0;
+  z-index:40; background:transparent; cursor:pointer; }
+#modal{ display:none; }
+
 .panel{
   background:var(--paper-2);
   overflow-y:auto; overflow-x:hidden;
@@ -275,6 +282,7 @@ body{
    矢量历史省界/边墙叠于其上；控制层/CHGIS 历史政区画布(z2)、战斗层(z5) 再之上。 */
 #controlCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:2; }
 #chgisCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:2; }
+#borderCv{ position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none; z-index:2; }
 #map{ position:absolute; inset:0; width:100%; height:100%; display:block; z-index:1; background:transparent; }
 
 .map-tools{
@@ -790,13 +798,14 @@ body{
   .drawer-btn{ display:block; }
   .layout{ grid-template-columns:minmax(0,1fr); }
   .panel{
+    display:none;                            /* 关闭态脱离栅格 → 消除底部幻影行 + 离屏 translateX 引发的横向溢出 */
     position:fixed; top:54px; bottom:0; width:298px; z-index:50;
     box-shadow:0 0 26px rgba(42,37,33,.16);
     transition:transform .22s cubic-bezier(.4,0,.2,1);
   }
   .panel-left{  left:0;  transform:translateX(-100%); }
   .panel-right{ right:0; transform:translateX(100%); }
-  .panel.open{ transform:translateX(0); }
+  .panel.open{ display:flex; transform:translateX(0); }
   .brand{ display:none; }
   .slice-title{ border-left:none; padding-left:0; }
 }

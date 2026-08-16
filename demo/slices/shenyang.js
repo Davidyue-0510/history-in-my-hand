@@ -346,6 +346,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "alias": "袁自如",
    "role": "辽东巡抚",
    "note": "万历四十八年 (1620) 任辽东巡抚, 天启元年三月守沈阳, 城破自缢",
+   "faction": "feng_jiang",
    "influence": 9,
    "_global_id": "yuan_yingtai",
    "_other_scenes": [
@@ -357,6 +358,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "何世贤",
    "role": "总兵",
    "note": "沈阳总兵, 1621 年浑河之战后金炮击身亡",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -364,6 +366,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "陈策",
    "role": "援辽总兵",
    "note": "1621 年自辽阳驰援沈阳, 浑河桥头中炮死",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "chenjn",
    "_other_scenes": [
@@ -375,6 +378,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "童仲揆",
    "role": "副总兵",
    "note": "1621 年与陈策同援沈阳, 浑河之战战死",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "tongzhongkui",
    "_other_scenes": [
@@ -386,6 +390,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "邹式相",
    "role": "兵备副使",
    "note": "分巡辽东, 沈阳城破殉职",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -393,6 +398,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "name": "张名世",
    "role": "监军",
    "note": "1621 年沈阳之战被俘, 不降, 旋被杀",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -460,6 +466,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "总兵（援沈阳）",
    "column": null,
    "note": "1621 与童仲揆同援沈阳，浑河之战战死",
+   "faction": "feng_jiang",
    "influence": 2,
    "_global_id": "chenjn",
    "_other_scenes": [
@@ -473,6 +480,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "浙兵大将",
    "column": null,
    "note": "浑河之战留河南札营，战死",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -482,6 +490,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "石柱司土司将领",
    "column": null,
    "note": "渡浑河先击贼，战死",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -491,6 +500,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "裨将",
    "column": null,
    "note": "力主直前薄贼",
+   "faction": "feng_jiang",
    "influence": 2
   },
   {
@@ -500,6 +510,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "role_hint": "巡按辽东御史",
    "column": null,
    "note": "上疏论辽阳围急，辽阳陷后殉节",
+   "faction": "feng_jiang",
    "influence": 1,
    "_global_id": "zhangquan",
    "_other_scenes": [

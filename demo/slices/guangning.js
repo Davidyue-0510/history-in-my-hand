@@ -182,6 +182,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "熊廷弼",
    "role": "辽东经略",
    "note": "主守，与王化贞经抚不和，广宁陷后受诛",
+   "faction": "feng_jiang",
    "influence": 11,
    "_global_id": "xiongtingbing",
    "_other_scenes": [
@@ -194,6 +195,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "王化贞",
    "role": "辽东巡抚",
    "note": "主战，广宁之战弃城逃",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -201,6 +203,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "孙得功",
    "role": "广宁将",
    "note": "广宁陷前通敌，开门迎后金",
+   "faction": "feng_jiang",
    "influence": 1
   },
   {
@@ -287,6 +290,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "罗一贯",
    "role": "西平堡守将",
    "note": "广宁陷前拒降死战，城破遇杀。",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -294,6 +298,7 @@ window.SANDBOX_SLICES["guangning"] = {
    "name": "祖大寿",
    "role": "总兵",
    "note": "广宁之战赴援，平阳桥败后走觉华岛。",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "zu_dashou",
    "_other_scenes": [

@@ -49,6 +49,7 @@ STEPS = [
     ("分片契约 test",                ["tools/tests/test_sharding.py"]),
     ("地名落点 test",                ["tools/tests/test_geocode.py"]),
     ("控制层契约 test",              ["tools/tests/test_control.py"]),
+    ("战—朝关联契约 test",          ["tools/tests/test_warcourt.py"]),
     ("农历转换 test",                ["tools/tests/test_lunar.py"]),
     ("别名校正 test",                ["tools/tests/test_alias.py"]),
 ]

@@ -364,6 +364,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "辽东经略",
    "side": "ming",
    "note": "接替熊廷弼任辽东经略, 1621 年浑河之战、辽阳陷落时在任",
+   "faction": "feng_jiang",
    "influence": 16,
    "_global_id": "yuan_yingtai",
    "_other_scenes": [
@@ -384,6 +385,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "辽东都指挥使",
    "side": "ming",
    "note": "洪武初年与叶旺共同出镇辽东, 奠定明代辽东防务",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {
@@ -392,6 +394,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "总兵",
    "side": "ming",
    "note": "1621 浑河之战, 率川湖兵北上援沈阳, 阵亡",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "chenjn",
    "_other_scenes": [
@@ -404,6 +407,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "副总兵",
    "side": "ming",
    "note": "1621 浑河之战, 与陈策同援沈阳, 阵亡",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "tongzhongkui",
    "_other_scenes": [
@@ -417,6 +421,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role_hint": "巡按辽东御史",
    "column": null,
    "note": "上疏论辽阳围急，辽阳陷后殉节",
+   "faction": "feng_jiang",
    "influence": 1,
    "_global_id": "zhangquan",
    "_other_scenes": [
@@ -430,6 +435,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role_hint": "总兵（援沈阳）",
    "column": null,
    "note": "1621 援沈阳，浑河之战战死；辽阳围急时在城",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "chenjn",
    "_other_scenes": [
@@ -442,6 +448,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "role": "四川佥司（武举）",
    "side": "ming",
    "note": "本姓陈，一名神武，新建人。1621 辽阳急，率亲丁二百余赴援，至首山孤军无援战没",
+   "faction": "feng_jiang",
    "influence": 1
   }
  ],

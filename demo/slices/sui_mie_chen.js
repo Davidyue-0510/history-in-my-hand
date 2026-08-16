@@ -72,6 +72,13 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "name": "陈后主",
    "side": "陈",
    "influence": 1
+  },
+  {
+   "id": "heruobi",
+   "name": "贺若弼",
+   "side": "隋",
+   "influence": 0,
+   "role_hint": "隋灭陈主将，与韩擒虎分兵渡江，克建康"
   }
  ],
  "assertions": [

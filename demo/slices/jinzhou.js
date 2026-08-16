@@ -174,6 +174,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "name": "祖大寿",
    "role": "明总兵",
    "note": "两度被围降清（大凌河/锦州），吴三桂舅父",
+   "faction": "feng_jiang",
    "influence": 0,
    "_global_id": "zu_dashou",
    "_other_scenes": [
@@ -185,6 +186,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "name": "洪承畴",
    "role": "蓟辽总督",
    "note": "松锦之战明军主帅，兵败被俘，后降清",
+   "faction": "feng_jiang",
    "influence": 0
   },
   {

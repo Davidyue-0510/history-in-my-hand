@@ -72,6 +72,13 @@ window.SANDBOX_SLICES["yashan"] = {
    "name": "陆秀夫",
    "side": "宋",
    "influence": 1
+  },
+  {
+   "id": "zhanghongfan",
+   "name": "张弘范",
+   "side": "元",
+   "influence": 0,
+   "role_hint": "元将，崖山海战灭宋"
   }
  ],
  "assertions": [

@@ -199,6 +199,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "妖弁·冯铨私人",
    "note": "冯铨使之于讲筵发难，袖奏陷熊廷弼。",
+   "faction": "eunuch",
    "influence": 0
   },
   {
@@ -215,6 +216,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "吏部文选司郎中·东林",
    "note": "万历三十二年重修东林书院，东林党之始。",
+   "faction": "donglin",
    "influence": 0
   },
   {
@@ -223,6 +225,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "御史·东林",
    "note": "天启四年与杨涟攻魏忠贤，五年下狱死，六君子之一。",
+   "faction": "donglin",
    "influence": 0
   },
   {
@@ -231,6 +234,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "御史·东林",
    "note": "与顾宪成共修东林书院；后名列阉党《点将录》。",
+   "faction": "donglin",
    "influence": 0
   },
   {
@@ -239,6 +243,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "中书·东林联络",
    "note": "天启五年被阉党逮治，坐杨涟等赃，狱死，为六君子之狱导火索。",
+   "faction": "donglin",
    "influence": 0
   },
   {
@@ -247,6 +252,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "内阁大学士·阉党",
    "note": "天启六年《三朝要典》总裁之一。",
+   "faction": "eunuch",
    "influence": 0
   },
   {
@@ -255,6 +261,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "side": "ming",
    "role": "给事中·阉党",
    "note": "天启六年四月初十上疏推翻三案结论，启《三朝要典》之修。",
+   "faction": "eunuch",
    "influence": 0
   }
  ],
