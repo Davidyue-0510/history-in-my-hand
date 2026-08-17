@@ -6,11 +6,11 @@
  "events": [
   {
    "year": 1637,
-   "label": "华北蝗蝻渐起"
+   "label": "陕东、晋南、豫开蝗蝻渐起"
   },
   {
    "year": 1639,
-   "label": "蝗极：飞蝗蔽天，遍及九省"
+   "label": "蝗极：飞蝗蔽天，遍及十省"
   },
   {
    "year": 1644,
@@ -22,37 +22,241 @@
    "place_id": "kaofeng",
    "start": 1637,
    "end": 1640,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "kaofeng",
    "start": 1641,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 800000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zhangde",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaiqing",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "weihui",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "runing",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "taiyuan",
    "start": 1637,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "linfen",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fenzhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zezhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "pudong",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "changan",
    "start": 1637,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yulin",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
    "start": 1637,
+   "end": 1640,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "jinan",
+   "start": 1641,
    "end": 1644,
-   "level": 2
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fengyang",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "beijing",
    "start": 1639,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "baoding",
+   "start": 1639,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "daming",
+   "start": 1640,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "guangping",
+   "start": 1640,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xiangyang",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "wuchang",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
   }
  ]
 }

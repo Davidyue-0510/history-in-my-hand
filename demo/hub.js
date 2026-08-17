@@ -1,11 +1,10 @@
-/* hub 主枢纽（v0.4）—— 自动读取 SD.scenes 渲染所有切片卡片
+/* hub 主枢纽（v0.6 重设计）—— 自动读取 SD.scenes 渲染所有切片卡片
  *
- * v0.4 改动：不再写死 sarhu/kaiyuan 两个切片。扫描 SANDBOX_DATA.scenes
- * 里所有切片，自动渲染：
- *   - 地形预览上每个切片 PRIMARY_PLACE 的 pin
- *   - 一张卡片：统计（史料/地名/人物/断言/冲突/缺口）+ 共振度色标
- * 共振度从 tools/resonance.py 写出的 data/resonance_report.json 直接读入。
- * 哪天增加第 5 个切片，本文件不用改。
+ * 入口页分面筛选（对齐「类型 / 朝代 / 地域」三维分类整合）：
+ *   - 类型(kind) / 朝代(由副标题代表年推导) / 地域(region) 三个分面
+ *   - 面内多选（OR），面间 AND；加搜索框 + 清除筛选
+ *   - 卡片多标签：类型 + 朝代 + 地域 三枚 chip，一个事件可同时命中多个分面
+ * 分面按钮由数据动态生成（增删切片无需改 HTML），声明式优先。
  */
 (function () {
   'use strict';
@@ -65,10 +64,7 @@
   var REGION_NOTE = {};
   (SD.regions || []).forEach(function (r) { REGION_NOTE[r.id] = r.note; });
 
-  /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════
-   * 默认（v0.5）gx/gy 死绑地形网格，导致辽西/辽南（网格外）切片的
-   * pin 被裁出画布。现改为按「地形网格 ∪ 每切片主地点」算范围，
-   * 地形只在覆盖区绘制，网格外切片照常显示 pin —— 绝不伪造高程。 */
+  /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════ */
   (function computeBounds() {
     var lons = [TG.lon0, TG.lon0 + (nx - 1) * TG.step];
     var lats = [TG.lat0, TG.lat0 + (ny - 1) * TG.step];
@@ -87,50 +83,92 @@
   function gy(la) { return (latMax - la) / (latMax - latMin) * H; }
   // 切片类型不再按 key 硬编码——meta.kind 来自 data/scenes.json
   var KIND_LABEL = {
-    battle: '战役 · battle',
-    county: '县级 LOD · county',
-    fiction: '虚构世界 · fiction',
-    disaster: '灾异 · disaster',
-    engineering: '工程 · engineering',
-    uprising: '起义 · uprising',
-    thought: '思想 · thought',
-    tech: '科技 · technology',
-    fusion: '民族融合 · fusion',
-    dynasty: '王朝 · dynasty',
-    reform: '改革 · reform',
-    court: '宫廷 · court',
-    frontier: '边疆 · frontier',
-    war: '战争 · war',
-    event: '事件 · event',
-    migration: '迁徙 · migration'
+    battle: '战役 · battle', county: '县级 LOD · county', fiction: '虚构世界 · fiction',
+    disaster: '灾异 · disaster', engineering: '工程 · engineering', uprising: '起义 · uprising',
+    thought: '思想 · thought', tech: '科技 · technology', fusion: '民族融合 · fusion',
+    dynasty: '王朝 · dynasty', reform: '改革 · reform', court: '宫廷 · court',
+    frontier: '边疆 · frontier', war: '战争 · war', event: '事件 · event', migration: '迁徙 · migration'
   };
-  function kindLabel(m) {
-    return KIND_LABEL[m.kind] || (m.kind || 'civ');
+  var KIND_SHORT = {
+    battle: '战役', county: '县级', fiction: '虚构', disaster: '灾异', engineering: '工程',
+    uprising: '起义', thought: '思想', tech: '科技', fusion: '融合', dynasty: '王朝',
+    reform: '改革', court: '宫廷', frontier: '边疆', war: '战争', event: '事件',
+    migration: '迁徙', civ: '文明事件'
+  };
+  function kindLabel(m) { return KIND_LABEL[m.kind] || (m.kind || 'civ'); }
+  function kindShort(k) { return KIND_SHORT[k] || k; }
+
+  /* ═══════════ 朝代推导（由副标题代表年）══════════
+   * region 字段混杂了地理/时代/主题，不能干净地作「朝代」分面；
+   * 故从场景代表年（副标题首个数字，支持「前」/负号与「起止」区间）推导朝代桶。 */
+  function parseYear(sub) {
+    if (!sub) return null;
+    var m = sub.match(/(前|-)\s*\d+|\d+/);
+    if (!m) return null;
+    var s = m[0].replace(/\s/g, '');
+    var neg = (s[0] === '前' || s[0] === '-');
+    var num = parseInt(neg ? s.slice(1) : s, 10);
+    return isNaN(num) ? null : (neg ? -num : num);
+  }
+  function yearToDynasty(y) {
+    if (y == null) return '未知';
+    if (y < -221) return '先秦';
+    if (y <= -207) return '秦';
+    if (y <= 220) return '汉';
+    if (y <= 280) return '三国';
+    if (y <= 580) return '两晋南北朝';
+    if (y <= 618) return '隋';
+    if (y <= 907) return '唐';
+    if (y <= 960) return '五代十国';
+    if (y <= 1279) return '宋辽金';
+    if (y <= 1368) return '元';
+    if (y <= 1644) return '明';
+    if (y <= 1912) return '清';
+    return '近代';
+  }
+  var DYN_ORDER = ['先秦', '秦', '汉', '三国', '两晋南北朝', '隋', '唐', '五代十国',
+                   '宋辽金', '元', '明', '清', '近代', '未知'];
+  var DYN_NOTE = {
+    '先秦': '百家争鸣、封邦建国，文明奠基期。',
+    '秦': '一统天下，郡县制与书同文。',
+    '汉': '大一统定型，丝路开通、儒术独尊。',
+    '三国': '群雄割据，赤壁等经典会战。',
+    '两晋南北朝': '分裂动荡，民族大融合。',
+    '隋': '重归一统，开运河、创科举。',
+    '唐': '盛世气象，藩镇与边患交织。',
+    '五代十国': '唐亡后短促分裂。',
+    '宋辽金': '文治巅峰，宋辽金夏对峙。',
+    '元': '蒙古一统，行省与海漕。',
+    '明': '再造华夏，明清易代的前夜。',
+    '清': '满汉共治，末世灾变与变局。',
+    '近代': '三千年未有之大变局。',
+    '未知': '年代待考。'
+  };
+  function sceneDynasty(sk) {
+    var sc = scenes[sk]; if (!sc) return '未知';
+    var m = sc.meta || {};
+    return yearToDynasty(parseYear(m.subtitle));
   }
 
-  /* ═══════════ 分类与筛选 ═══════════
-   * 文明事件切片数量暴涨后，hub 需要按「分类」快速入口。
-   * 分类规则（与 scenes.json 的 kind 对齐）：
-   *   county  → 辽东走廊（县级 LOD 切片）
-   *   battle  → 历史战役
-   *   fiction → 虚构世界
-   *   civ     → 其余一切文明事件（disaster/engineering/dynasty/reform/
-   *             uprising/fusion/court/thought/tech/frontier）
-   */
-  function sceneCat(m) {
-    if (m.kind === 'fiction') return 'fiction';
-    if (m.kind === 'battle') return 'battle';
-    if (m.kind === 'county') return 'county';
-    return 'civ';
+  /* ═══════════ 分面筛选状态 ═══════════
+   * 三个分面各自一个选中集合（空集合 = 不过滤）；面内 OR，面间 AND。 */
+  var sel = { type: [], era: [], region: [] };
+  var query = '';
+  function inSel(arr, v) { return arr.length === 0 || arr.indexOf(v) >= 0; }
+  function matches(sk) {
+    var sc = scenes[sk]; if (!sc) return false;
+    var m = sc.meta || {};
+    if (!inSel(sel.type, m.kind)) return false;
+    if (!inSel(sel.era, sceneDynasty(sk))) return false;
+    if (!inSel(sel.region, m.region)) return false;
+    if (query) {
+      var q = query.toLowerCase();
+      var hay = ((m.dossier_label || '') + ' ' + (m.title || '') + ' ' + (m.subtitle || '') + ' ' + sk).toLowerCase();
+      if (hay.indexOf(q) < 0) return false;
+    }
+    return true;
   }
-  var CURRENT_CAT = 'all';
-  function visibleOrder(filterCat) {
-    if (filterCat === 'all' || filterCat == null) return order;
-    return order.filter(function (sk) {
-      var sc = scenes[sk]; if (!sc) return false;
-      return sceneCat(sc.meta || sc.META || {}) === filterCat;
-    });
-  }
+  function visibleOrder() { return order.filter(matches); }
 
   // 按当前容器尺寸重绘；窗口缩放时由 resize 监听节流触发
   function draw() {
@@ -138,7 +176,6 @@
     W = Math.max(280, Math.round(rect.width));
     H = Math.max(150, Math.round(rect.height));
     cv.width = W * dpr; cv.height = H * dpr;
-    // 显示尺寸由 CSS 控制（width:100% + clamp 高度），此处只设绘制缓冲
 
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = '#EFECE2'; ctx.fillRect(0, 0, W, H);
@@ -170,8 +207,7 @@
       }
     }
 
-    // 自动 pin 所有切片中心点。标签会互相压——按已放置矩形做一次简单避让，
-    // 切片多起来之后这是必需的（14 个 pin 挤在辽东走廊上）。
+    // 自动 pin 所有切片中心点（按当前筛选结果），做一次简单避让
     var placed = [];
     function collides(x, y, w, h) {
       for (var i = 0; i < placed.length; i++) {
@@ -181,7 +217,7 @@
       return false;
     }
     ctx.font = '10.5px monospace';
-    visibleOrder(CURRENT_CAT).forEach(function (sk) {
+    visibleOrder().forEach(function (sk) {
       var sc = scenes[sk]; if (!sc) return;
       var m = (sc.meta || {});
       var place = (sc.places || []).filter(function (x) { return x.id === m.primary_place; })[0];
@@ -189,7 +225,6 @@
       var cx = gx(place.lon), cy = gy(place.lat);
       var label = m.dossier_label || m.title || sk;
       var tw = ctx.measureText(label).width, th = 11;
-      // 候选位：右、左、上、下
       var cands = [[cx + 8, cy + 4], [cx - 8 - tw, cy + 4],
                    [cx - tw / 2, cy - 8], [cx - tw / 2, cy + 15]];
       var pos = cands[0];
@@ -201,7 +236,6 @@
       ctx.beginPath(); ctx.arc(cx, cy, m.kind === 'battle' ? 5 : 4, 0, Math.PI * 2);
       ctx.fillStyle = m.kind === 'battle' ? '#B23A48' : '#FBF9F3'; ctx.fill();
       ctx.lineWidth = 1.4; ctx.strokeStyle = '#2A2521'; ctx.stroke();
-      // 标签描白边，压在山影上也读得出来
       ctx.lineWidth = 2.6; ctx.strokeStyle = 'rgba(251,249,243,.85)';
       ctx.strokeText(label, pos[0], pos[1]);
       ctx.fillStyle = '#2A2521';
@@ -212,12 +246,11 @@
                                        (TG.max == null ? '—' : TG.max) + ' m';
   }
 
-  draw(CURRENT_CAT);
-  // 窗口缩放时按节流重绘地形（卡片是 HTML，CSS 自适应，无需重绘）
+  draw();
   var _rzTimer;
   window.addEventListener('resize', function () {
     clearTimeout(_rzTimer);
-    _rzTimer = setTimeout(function () { draw(CURRENT_CAT); }, 150);
+    _rzTimer = setTimeout(function () { draw(); }, 150);
   });
 
   /* ═══════════ 自动渲染卡片 ═══════════ */
@@ -231,8 +264,6 @@
     if (r >= 0.3) return '<span class="resonance-pill mid">' + txt + '</span>';
     return '<span class="resonance-pill low">' + txt + '</span>';
   }
-
-  // 共振度最高的事件名（按 slice 在 resonance_report.json 里查）
   function bestEventName(sk) {
     var s = resonance.scene_summary && resonance.scene_summary.filter(function (x) { return x.scene === sk; })[0];
     return (s && s.best_event) || null;
@@ -246,85 +277,145 @@
     return s ? s.avg_resonance : null;
   }
 
-  /* 渲染指定分类的卡片网格。filterCat='all' 显示全部。
-   * 区域小标题（region-head）随筛选自动出现/消失：被过滤掉的 region 自然不打印其头。 */
-  function renderHub(filterCat) {
+  function tagsHtml(sk) {
+    var sc = scenes[sk]; var m = sc.meta || {};
+    var dy = sceneDynasty(sk);
+    var region = REGION_NAME[m.region] || m.region || '—';
+    return '<div class="card-tags">'
+      + '<span class="chip chip-k">' + kindShort(m.kind) + '</span>'
+      + '<span class="chip chip-e">' + dy + '</span>'
+      + '<span class="chip chip-r">' + region + '</span>'
+      + '</div>';
+  }
+
+  function cardHtml(sk) {
+    var sc = scenes[sk]; if (!sc) return '';
+    var m = sc.meta || {};
+    var srcN = (sc['sources'] || []).length;
+    var placesN = (sc.places || []).length;
+    var personsN = (sc.persons || []).length;
+    var assertsN = (sc.assertions || []).length;
+    var conflictsN = (sc.conflicts || []).length;
+    var gapsN = count('gap', sk);
+    var recN = count('record', sk);
+    var schN = count('scholarship', sk);
+    var infN = count('inference', sk);
+    var best = bestEventName(sk);
+    var bR = bestEventR(sk);
+    var aR = avgR(sk);
+    var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
+    var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
+    var isFic = m.kind === 'fiction';
+    var pill = isFic ? '<span class="resonance-pill fiction">虚构 · 文字生成</span>' : badge(bR);
+    var hint = isFic ? '点击进入 → 关系图 · 史料 · 冲突 · 缺口'
+                     : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
+
+    return '<a class="card card--' + (m.kind || 'civ') + (isFic ? ' fic' : '') + '" '
+      + 'data-kind="' + (m.kind || 'civ') + '" data-era="' + sceneDynasty(sk) + '" data-region="' + (m.region || '') + '" '
+      + 'href="' + (m.page || ('county.html?scene=' + sk)) + '">'
+      + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
+      + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
+      + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
+      + tagsHtml(sk)
+      + '<div class="card-stats">'
+      +   '<div class="card-stat"><span>史料</span><b>' + srcN + '</b></div>'
+      +   '<div class="card-stat"><span>地名 / 人物</span><b>' + placesN + ' / ' + personsN + '</b></div>'
+      +   '<div class="card-stat"><span>断言</span><b>' + assertsN + '</b></div>'
+      +   '<div class="card-stat"><span>冲突</span><b>' + conflictsN + '</b></div>'
+      +   '<div class="card-stat"><span>缺口</span><b>' + gapsN + '</b></div>'
+      +   '<div class="card-stat"><span>record / scholar / infer</span><b>' + recN + ' / ' + schN + ' / ' + infN + '</b></div>'
+      + '</div>'
+      + '<div class="card-extras">'
+      +   pill + ' &nbsp;' + bestLine + avgLine
+      +   '<small style="color:#918777">' + hint + '</small>'
+      + '</div></a>';
+  }
+
+  /* 渲染：按朝代分组（时间轴整合），被筛掉的朝代自然不打印。 */
+  function renderHub() {
+    var vis = visibleOrder();
+    var byDyn = {};
+    vis.forEach(function (sk) {
+      var dy = sceneDynasty(sk);
+      (byDyn[dy] = byDyn[dy] || []).push(sk);
+    });
     var html = '';
-    var lastRegion = null;
-    visibleOrder(filterCat).forEach(function (sk) {
-      var sc = scenes[sk];
-      if (!sc) return;
-      var m = sc.meta || {};
-      // 分区小标题：注册表里 region 一变，这里自动分组（仅在本分类内可见时打印）
-      if (m.region && m.region !== lastRegion) {
-        lastRegion = m.region;
-        html += '<div class="region-head"><b>' + (REGION_NAME[m.region] || m.region) + '</b>'
-          + '<span>' + (REGION_NOTE[m.region] || '') + '</span></div>';
-      }
-      var srcN = (sc['sources'] || []).length;
-      var placesN = (sc.places || []).length;
-      var personsN = (sc.persons || []).length;
-      var assertsN = (sc.assertions || []).length;
-      var conflictsN = (sc.conflicts || []).length;
-      var gapsN = count('gap', sk);
-      var recN = count('record', sk);
-      var schN = count('scholarship', sk);
-      var infN = count('inference', sk);
-      var best = bestEventName(sk);
-      var bR = bestEventR(sk);
-      var aR = avgR(sk);
-
-      var bestLine = best ? '最高共振：<b>' + best + '</b>（' + bR.toFixed(3) + '）<br>' : '';
-      var avgLine = aR != null ? '切片平均共振：<b>' + aR.toFixed(3) + '</b> · ' : '';
-      // 虚构 world 无真实地形、也无共振度数据——用「虚构 · 文字生成」标代替「共振 —」，
-      // 并改提示为「关系图」，避免把关系图 world 误导向「地形」。
-      var isFic = m.kind === 'fiction';
-      var ficPill = '<span class="resonance-pill fiction">虚构 · 文字生成</span>';
-      var pill = isFic ? ficPill : badge(bR);
-      var hint = isFic
-        ? '点击进入 → 关系图 · 史料 · 冲突 · 缺口'
-        : '点击进入 → 史料 · 冲突 · 缺口 · 地形';
-      var cat = sceneCat(m);
-
-      html += '<a class="card card--' + (m.kind || 'civ') + (isFic ? ' fic' : '') + '" data-cat="' + cat + '" data-kind="' + (m.kind || 'civ') + '" href="' + (m.page || ('county.html?scene=' + sk)) + '">'
-        + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
-        + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
-        + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
-        + '<div class="card-stats">'
-        +   '<div class="card-stat"><span>史料</span><b>' + srcN + '</b></div>'
-        +   '<div class="card-stat"><span>地名 / 人物</span><b>' + placesN + ' / ' + personsN + '</b></div>'
-        +   '<div class="card-stat"><span>断言</span><b>' + assertsN + '</b></div>'
-        +   '<div class="card-stat"><span>冲突</span><b>' + conflictsN + '</b></div>'
-        +   '<div class="card-stat"><span>缺口</span><b>' + gapsN + '</b></div>'
-        +   '<div class="card-stat"><span>record / scholar / infer</span><b>'
-              + recN + ' / ' + schN + ' / ' + infN + '</b></div>'
-        + '</div>'
-        + '<div class="card-extras">'
-        +   pill + ' &nbsp;'
-        +   bestLine
-        +   avgLine
-        +   '<small style="color:#918777">' + hint + '</small>'
-        + '</div></a>';
+    DYN_ORDER.forEach(function (dy) {
+      if (!byDyn[dy]) return;
+      html += '<div class="region-head"><b>' + dy + '</b><span>' + (DYN_NOTE[dy] || '') + '</span></div>';
+      byDyn[dy].forEach(function (sk) { html += cardHtml(sk); });
     });
     if (!html) {
       html = '<div style="grid-column:1/-1;padding:24px;color:#7A6E5C;font-family:var(--serif)">'
-        + '该分类下暂无切片。</div>';
+        + '没有匹配的切片，试试清除筛选或更换标签。</div>';
     }
     grid.innerHTML = html;
+    updateStats(vis.length);
   }
 
-  // 初始渲染 + 暴露筛选接口给 index.html 的按钮
-  renderHub(CURRENT_CAT);
+  function updateStats(n) {
+    var el = document.getElementById('hubStats');
+    if (!el) return;
+    var total = order.length;
+    var txt = '<span><b>' + n + '</b>/' + total + ' 个切片匹配</span>';
+    var active = sel.type.length + sel.era.length + sel.region.length + (query ? 1 : 0);
+    if (active) txt += '<span><b>' + active + '</b> 个筛选条件生效</span>';
+    el.innerHTML = txt;
+  }
+
+  /* ═══════════ 分面按钮（数据驱动生成）══════════ */
+  function uniq(arr) { var s = {}, out = []; arr.forEach(function (v) { if (!s[v]) { s[v] = 1; out.push(v); } }); return out; }
+
+  function buildFacet(containerId, values, selKey, labelFn) {
+    var box = document.getElementById(containerId);
+    if (!box) return;
+    box.innerHTML = '';
+    values.forEach(function (v) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'facet-btn';
+      b.textContent = labelFn ? labelFn(v) : v;
+      b.setAttribute('data-v', v);
+      b.addEventListener('click', function () {
+        var arr = sel[selKey];
+        var i = arr.indexOf(v);
+        if (i >= 0) { arr.splice(i, 1); b.classList.remove('on'); }
+        else { arr.push(v); b.classList.add('on'); }
+        renderHub(); draw();
+      });
+      box.appendChild(b);
+    });
+  }
+
+  function initFacets() {
+    var types = uniq(order.map(function (sk) { return (scenes[sk].meta || {}).kind; })).filter(Boolean);
+    var eras = uniq(order.map(function (sk) { return sceneDynasty(sk); }));
+    var regions = uniq(order.map(function (sk) { return (scenes[sk].meta || {}).region; })).filter(Boolean);
+    // 朝代按时间序、类型按 KIND 序、地域按出现序
+    eras.sort(function (a, b) { return DYN_ORDER.indexOf(a) - DYN_ORDER.indexOf(b); });
+    types.sort(function (a, b) { return (KIND_SHORT[a] || a).localeCompare(KIND_SHORT[b] || b, 'zh'); });
+    buildFacet('fType', types, 'type', function (v) { return kindShort(v); });
+    buildFacet('fEra', eras, 'era', null);
+    buildFacet('fRegion', regions, 'region', function (v) { return REGION_NAME[v] || v; });
+
+    var search = document.getElementById('hubSearch');
+    if (search) search.addEventListener('input', function () {
+      query = search.value.trim(); renderHub(); draw();
+    });
+    var clear = document.getElementById('hubClear');
+    if (clear) clear.addEventListener('click', function () {
+      sel.type = []; sel.era = []; sel.region = []; query = '';
+      if (search) search.value = '';
+      Array.prototype.forEach.call(document.querySelectorAll('.facet-btn.on'), function (b) { b.classList.remove('on'); });
+      renderHub(); draw();
+    });
+  }
+
+  initFacets();
+  renderHub();
+  // 入口页筛选接口（保留，供其它页面或控制台调用）
   window.HUB = {
-    setFilter: function (cat) {
-      CURRENT_CAT = cat;
-      renderHub(cat);
-      draw(cat);
-      try {
-        document.querySelectorAll('.hub-filter button').forEach(function (b) {
-          b.classList.toggle('on', b.getAttribute('data-cat') === cat);
-        });
-      } catch (e) {}
-    }
+    reset: function () { sel.type = []; sel.era = []; sel.region = []; query = ''; renderHub(); draw(); },
+    visible: function () { return visibleOrder(); }
   };
 })();

@@ -172,6 +172,48 @@
       box-shadow: 0 1px 4px rgba(140,98,57,.25);
     }
 
+    /* ── 分面筛选（v0.6 重设计：类型 / 朝代 / 地域 三维，面内多选 OR、面间 AND）── */
+    .hub-facets{
+      grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px;
+      padding: 12px 0 2px; border-top: 1px solid #E3DCC8;
+    }
+    .facet{ display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+    .facet-label{
+      flex: none; width: 40px; text-align: right;
+      font-family: var(--mono); font-size: 11px; letter-spacing: .07em; color: #7A6E5C;
+    }
+    .facet-btns{ display: flex; flex-wrap: wrap; gap: 6px; }
+    .facet-btn{
+      font-family: var(--serif); font-size: 13px; color: #5C544A; cursor: pointer;
+      border: 1px solid #D8D2C2; background: #FBF9F3; border-radius: 999px;
+      padding: 4px 13px; transition: all .12s ease; white-space: nowrap;
+    }
+    .facet-btn:hover{ border-color: #B89C70; color: #2A2521; }
+    .facet-btn.on{
+      background: #8C6239; color: #FBF9F3; border-color: #8C6239;
+      box-shadow: 0 1px 4px rgba(140,98,57,.25);
+    }
+    .facet-actions{ display: flex; gap: 8px; align-items: center; margin-top: 2px; }
+    .facet-actions input[type=search]{
+      font-family: var(--serif); font-size: 13px; padding: 5px 12px;
+      border: 1px solid #D8D2C2; border-radius: 999px; background: #fff; min-width: 220px;
+    }
+    .facet-actions button{
+      font-family: var(--serif); font-size: 13px; color: #7A6E5C; cursor: pointer;
+      border: 1px solid #C9BFA5; background: #F4F0E4; border-radius: 999px; padding: 5px 14px;
+    }
+    .facet-actions button:hover{ border-color: #B89C70; color: #2A2521; }
+
+    /* 卡片多标签 chip（类型 / 朝代 / 地域） */
+    .card-tags{ display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+    .card-tags .chip{
+      font-family: var(--mono); font-size: 10.5px; letter-spacing: .03em;
+      padding: 2px 9px; border-radius: 999px; border: 1px solid #D8D2C2; background: #F4F0E4; color: #5C544A;
+    }
+    .card-tags .chip-k{ border-color: #B89C70; color: #8C6239; background: #FBF4E9; }
+    .card-tags .chip-e{ border-color: #9aa7bd; color: #3E6E99; background: #EEF3F6; }
+    .card-tags .chip-r{ border-color: #C2B59A; color: #6E6A5A; background: #F6F1E6; }
+
     /* ── 分类色标：按 kind 给卡片左缘与标签上色，文明事件网格一眼可辨 ── */
     .card--battle{border-left:3px solid #B23A48;}      .card--battle .card-kind{color:#B23A48;}
     .card--disaster{border-left:3px solid #2E6FB0;}    .card--disaster .card-kind{color:#2E6FB0;}
@@ -331,13 +373,23 @@
   </section>
 
   <h2 class="sec-title" style="margin-top:8px">史料 × 地图切片沙盘 <small>同一片真实地形，四种史观切片</small></h2>
-  <div class="hub-filter">
-    <span class="hub-filter-label">分类入口</span>
-    <button type="button" data-cat="all" class="on" onclick="window.HUB&&HUB.setFilter('all')">全部</button>
-    <button type="button" data-cat="county" onclick="window.HUB&&HUB.setFilter('county')">辽东走廊</button>
-    <button type="button" data-cat="battle" onclick="window.HUB&&HUB.setFilter('battle')">历史战役</button>
-    <button type="button" data-cat="civ" onclick="window.HUB&&HUB.setFilter('civ')">文明事件</button>
-    <button type="button" data-cat="fiction" onclick="window.HUB&&HUB.setFilter('fiction')">虚构世界</button>
+  <div class="hub-facets" id="hubFacets">
+    <div class="facet">
+      <span class="facet-label">类型</span>
+      <div class="facet-btns" id="fType"></div>
+    </div>
+    <div class="facet">
+      <span class="facet-label">朝代</span>
+      <div class="facet-btns" id="fEra"></div>
+    </div>
+    <div class="facet">
+      <span class="facet-label">地域</span>
+      <div class="facet-btns" id="fRegion"></div>
+    </div>
+    <div class="facet-actions">
+      <input id="hubSearch" type="search" placeholder="搜索切片名 / 副标题…" aria-label="搜索切片">
+      <button id="hubClear" type="button">清除筛选</button>
+    </div>
   </div>
   <div class="hub-legend">
     <span><i style="background:#B23A48"></i>战役</span>
@@ -369,19 +421,7 @@
 <script src="data.js"></script>
 <script>window.HUB_RESONANCE = window.SANDBOX_DATA.resonance || {};</script>
 <script src="hub.js"></script>
-<script>
-  (function(){
-    var SD = window.SANDBOX_DATA || {};
-    var scenes = SD.scenes || {};
-    var n = Object.keys(scenes).length;
-    var a = 0;
-    Object.keys(scenes).forEach(function(k){ a += (scenes[k].assertions||[]).length; });
-    var el = document.getElementById('hubStats');
-    if (el) el.innerHTML = '<span><b>'+n+'</b>个时空切片</span>'
-      + '<span><b>'+a+'</b>条史料断言</span>'
-      + '<span><b>先秦—清</b>全时段覆盖</span>'
-      + '<span><b>四层证据</b>：record / scholarship / inference / gap</span>';
-  })();
-</script>
+<!-- hub.js 已全权负责 #hubStats（面感知的「n/total 匹配」+ 生效筛选数），
+     此处不再覆盖，避免把分面统计刷回静态总数。 -->
 </body>
 </html>

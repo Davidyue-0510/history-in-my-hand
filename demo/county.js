@@ -1743,6 +1743,7 @@
     var ctrlBox = document.getElementById('ctrlOn');
     if (ctrlBox) ctrlBox.disabled = false;
     wireCtrlTimeline();
+    wireImpactMetric();
     renderCtrlLegend();
     // 灾难场景默认打开影响范围热力：灾情随时间轴立即可见。
     if (!state.impactOn) {
@@ -1750,6 +1751,28 @@
       if (ctrlBox) ctrlBox.checked = true;
     }
     drawControl();
+  }
+
+  // 灾难模式：指标切换（严重程度 / 死亡人口 / 死亡率）——对齐实控区层「按指标梯度上色」
+  function wireImpactMetric() {
+    var box = document.getElementById('ctrlMetric');
+    if (!box) return;
+    box.style.display = impactMode ? '' : 'none';
+    if (!impactMode) return;
+    var btns = Array.prototype.slice.call(box.querySelectorAll('button[data-m]'));
+    // 初始高亮对齐当前指标
+    var cur = (window.ImpactLayer && ImpactLayer.getMetric) ? ImpactLayer.getMetric() : 'severity';
+    btns.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-m') === cur); });
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var m = b.getAttribute('data-m');
+        if (window.ImpactLayer) ImpactLayer.setMetric(m);
+        btns.forEach(function (x) { x.classList.remove('on'); });
+        b.classList.add('on');
+        renderCtrlLegend();
+        if (state.impactOn) drawControl();
+      });
+    });
   }
 
   function ctrlDateHint(year) {
@@ -1774,14 +1797,19 @@
   function renderCtrlLegend() {
     var box = document.getElementById('ctrlLegend');
     if (!box) return;
-    // 灾难模式：severity 色阶图例（轻/中/重）
+    // 灾难模式：受灾区（梯度）vs 正常区（中性浅色）图例，按当前指标
     if (impactMode) {
-      var SEV = [[1, '#EBBE64', '轻'], [2, '#DE7D32', '中'], [3, '#B22D28', '重']];
-      box.innerHTML = SEV.map(function (s) {
-        return '<i style="background:' + s[1] + '"></i>' + s[2];
-      }).join('');
+      var meta = (window.ImpactLayer && ImpactLayer.metricMeta)
+        ? ImpactLayer.metricMeta() : { label: '严重程度', min: '轻', max: '重' };
+      var grad = (window.ImpactLayer && ImpactLayer.gradientCss)
+        ? ImpactLayer.gradientCss() : 'linear-gradient(90deg,#F5DEB2,#DE7832,#781010)';
+      var normalCss = 'rgb(201,196,180)';
+      box.innerHTML =
+        '<span class="lg-item"><i style="background:' + normalCss + '"></i>正常区</span>' +
+        '<span class="lg-item lg-grad"><span class="lg-bar" style="background:' + grad + '"></span>' +
+          '<span class="lg-ticks"><em>' + meta.min + '</em><em>' + meta.label + '</em><em>' + meta.max + '</em></span></span>';
       var note = document.getElementById('ctrlEraNote');
-      if (note) note.textContent = '影响范围为治所 Voronoi 近似 + CHGIS 1820 海岸线裁剪，非逐日实测';
+      if (note) note.textContent = '影响范围为治所 Voronoi 近似 + CHGIS 1820 海岸线裁剪（非逐日实测）；深色=愈重，浅色块=正常未受灾';
       return;
     }
     if (!window.ControlLayer) return;

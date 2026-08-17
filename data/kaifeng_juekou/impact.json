@@ -1,12 +1,12 @@
 {
  "years": [
   1642,
-  1643
+  1644
  ],
  "events": [
   {
    "year": 1642,
-   "label": "明军与李自成军双决黄河"
+   "label": "明军与李自成军双决黄河（朱家寨·马家口）"
   },
   {
    "year": 1642,
@@ -14,27 +14,79 @@
   },
   {
    "year": 1643,
-   "label": "溃水泛溢山东、河南下游"
+   "label": "溃水由涡入淮，下游豫皖苏鲁大涝"
   }
  ],
  "impact": [
   {
    "place_id": "kaofeng",
    "start": 1642,
-   "end": 1643,
-   "level": 3
+   "end": 1644,
+   "level": 3,
+   "deaths": 340000,
+   "deaths_approx": true,
+   "mortality": 0.9,
+   "mortality_approx": true
   },
   {
    "place_id": "zhengzhou",
    "start": 1642,
    "end": 1643,
-   "level": 2
+   "level": 2,
+   "deaths": 80000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 60000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 50000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fengyang",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 40000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaian",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 40000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
-   "start": 1642,
-   "end": 1643,
-   "level": 2
+   "start": 1643,
+   "end": 1644,
+   "level": 1,
+   "deaths": 20000,
+   "deaths_approx": true,
+   "mortality": 0.1,
+   "mortality_approx": true
   }
  ]
 }

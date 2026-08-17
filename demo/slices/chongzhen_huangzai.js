@@ -27,17 +27,57 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "title": "崇祯蝗灾·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "据张德二《中国三千年气象记录总集》及《明史·五行志》综合，蝗区范围采其考订。"
+   "bias_note": "据张德二《中国三千年气象记录总集》及《中国蝗灾史》综合，蝗区范围与扩散年份采其考订；蝗灾致死多经饥馑，直接死亡数难剥离，此处仅作粗略估算并标 _approx。"
   }
  ],
  "places": [
   {
-   "id": "changan",
-   "name": "长安",
-   "lon": 108.94,
-   "lat": 34.34,
-   "note": "汉唐都城",
-   "elev": 391
+   "id": "kaofeng",
+   "name": "开封",
+   "lon": 114.3,
+   "lat": 34.79,
+   "note": "北宋汴京",
+   "elev": 76
+  },
+  {
+   "id": "zhangde",
+   "name": "彰德",
+   "lon": 114.35,
+   "lat": 36.1,
+   "note": "河南，旱蝗",
+   "elev": 103
+  },
+  {
+   "id": "huaiqing",
+   "name": "怀庆",
+   "lon": 112.93,
+   "lat": 35.08,
+   "note": "河南，旱蝗",
+   "elev": 143
+  },
+  {
+   "id": "weihui",
+   "name": "卫辉",
+   "lon": 114.07,
+   "lat": 35.43,
+   "note": "河南，旱蝗",
+   "elev": 91
+  },
+  {
+   "id": "shangqiu",
+   "name": "归德",
+   "lon": 115.65,
+   "lat": 34.41,
+   "note": "河南，旱蝗",
+   "elev": 52
+  },
+  {
+   "id": "runing",
+   "name": "汝宁",
+   "lon": 114.36,
+   "lat": 33.0,
+   "note": "河南，旱蝗",
+   "elev": 44
   },
   {
    "id": "taiyuan",
@@ -48,12 +88,76 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "elev": 807
   },
   {
-   "id": "kaofeng",
-   "name": "开封",
-   "lon": 114.3,
-   "lat": 34.79,
-   "note": "北宋汴京",
-   "elev": 76
+   "id": "linfen",
+   "name": "临汾",
+   "lon": 111.5,
+   "lat": 36.08,
+   "note": "山西平阳，明末旱蝗重灾",
+   "elev": 483
+  },
+  {
+   "id": "fenzhou",
+   "name": "汾州",
+   "lon": 111.76,
+   "lat": 37.27,
+   "note": "山西，旱疫",
+   "elev": 978
+  },
+  {
+   "id": "zezhou",
+   "name": "泽州",
+   "lon": 112.85,
+   "lat": 35.49,
+   "note": "山西，旱蝗",
+   "elev": 759
+  },
+  {
+   "id": "pudong",
+   "name": "蒲州",
+   "lon": 110.33,
+   "lat": 34.83,
+   "note": "山西，黄河东岸",
+   "elev": 486
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城",
+   "elev": 391
+  },
+  {
+   "id": "yulin",
+   "name": "榆林",
+   "lon": 109.7,
+   "lat": 38.3,
+   "note": "陕西，明末旱饥重灾",
+   "elev": 1105
+  },
+  {
+   "id": "jinan",
+   "name": "济南",
+   "lon": 117.12,
+   "lat": 36.65,
+   "note": "山东，明末大旱重灾",
+   "elev": 253
+  },
+  {
+   "id": "xuzhou",
+   "name": "徐州",
+   "lon": 117.18,
+   "lat": 34.26,
+   "note": "江苏，旱蝗泛及",
+   "elev": 63
+  },
+  {
+   "id": "fengyang",
+   "name": "凤阳",
+   "lon": 117.5,
+   "lat": 32.9,
+   "note": "南直隶，蝗旱",
+   "elev": 27
   },
   {
    "id": "beijing",
@@ -64,12 +168,92 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "elev": 44
   },
   {
-   "id": "jinan",
-   "name": "济南",
-   "lon": 117.12,
-   "lat": 36.65,
-   "note": "山东，明末大旱重灾",
-   "elev": 253
+   "id": "baoding",
+   "name": "保定",
+   "lon": 115.46,
+   "lat": 38.87,
+   "note": "北直隶，明末鼠疫重灾",
+   "elev": 21
+  },
+  {
+   "id": "daming",
+   "name": "大名",
+   "lon": 115.14,
+   "lat": 36.28,
+   "note": "北直隶，明末鼠疫重灾",
+   "elev": 47
+  },
+  {
+   "id": "guangping",
+   "name": "广平",
+   "lon": 114.5,
+   "lat": 36.76,
+   "note": "北直隶，旱蝗",
+   "elev": 64
+  },
+  {
+   "id": "xiangyang",
+   "name": "襄阳",
+   "lon": 112.14,
+   "lat": 32.0,
+   "note": "湖广，灾稍轻",
+   "elev": 77
+  },
+  {
+   "id": "wuchang",
+   "name": "武昌",
+   "lon": 114.3,
+   "lat": 30.59,
+   "note": "辛亥革命首义",
+   "elev": 40
+  },
+  {
+   "id": "nanjing",
+   "name": "南京",
+   "lon": 118.8,
+   "lat": 32.06,
+   "note": "六朝古都·建康/应天",
+   "elev": 17
+  },
+  {
+   "id": "hangzhou",
+   "name": "杭州",
+   "lon": 120.15,
+   "lat": 30.27,
+   "note": "江南，未遭北灾",
+   "elev": 98
+  },
+  {
+   "id": "suzhou",
+   "name": "苏州",
+   "lon": 120.58,
+   "lat": 31.3,
+   "note": "江南，未遭北灾",
+   "elev": 6
+  },
+  {
+   "id": "changsha",
+   "name": "长沙",
+   "lon": 112.94,
+   "lat": 28.23,
+   "note": "湖广，蝗旱偏南",
+   "elev": 42
+  },
+  {
+   "id": "yinchuan",
+   "name": "宁夏",
+   "lon": 106.27,
+   "lat": 38.47,
+   "note": "宁夏，旱饥",
+   "elev": 1105
+  },
+  {
+   "id": "lanzhou",
+   "name": "兰州",
+   "lon": 103.83,
+   "lat": 36.06,
+   "note": "甘肃，旱饥重灾",
+   "elev": 1891
   }
  ],
  "persons": [
@@ -85,7 +269,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "id": "AX_ev_hz_1637",
    "subject": "event:hz_1637",
    "predicate": "事件",
-   "value_text": "华北蝗蝻渐起，田禾受损。",
+   "value_text": "陕东、晋南、豫开蝗蝻渐起，田禾受损。",
    "source": "synthesis",
    "layer": "scholarship",
    "quote_status": "paraphrase_unverified",
@@ -103,7 +287,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "id": "AX_ev_hz_1639",
    "subject": "event:hz_1639",
    "predicate": "事件",
-   "value_text": "飞蝗蔽天，蝗区遍及九省，禾稼瞬息一空。",
+   "value_text": "飞蝗蔽天，蝗区遍及十省，禾稼瞬息一空。",
    "source": "synthesis",
    "layer": "scholarship",
    "quote_status": "paraphrase_unverified",
@@ -146,7 +330,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "era": "崇祯十",
    "title": "蝗起",
    "kind": "蝗灾",
-   "text": "华北蝗蝻渐起，田禾受损。",
+   "text": "陕东、晋南、豫开蝗蝻渐起，田禾受损。",
    "place": "kaofeng"
   },
   {
@@ -156,7 +340,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "era": "崇祯十二",
    "title": "蝗极",
    "kind": "蝗灾",
-   "text": "飞蝗蔽天，蝗区遍及九省，禾稼瞬息一空。",
+   "text": "飞蝗蔽天，蝗区遍及十省，禾稼瞬息一空。",
    "place": "kaofeng"
   },
   {
@@ -177,37 +361,241 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "place_id": "kaofeng",
    "start": 1637,
    "end": 1640,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "kaofeng",
    "start": 1641,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 800000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zhangde",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaiqing",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "weihui",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "runing",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "taiyuan",
    "start": 1637,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "linfen",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fenzhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zezhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "pudong",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "changan",
    "start": 1637,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yulin",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
    "start": 1637,
+   "end": 1640,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "jinan",
+   "start": 1641,
    "end": 1644,
-   "level": 2
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1637,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fengyang",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "beijing",
    "start": 1639,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "baoding",
+   "start": 1639,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "daming",
+   "start": 1640,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "guangping",
+   "start": 1640,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xiangyang",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "wuchang",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.15,
+   "mortality_approx": true
   }
  ],
  "impact_years": [
@@ -217,11 +605,11 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
  "impact_events": [
   {
    "year": 1637,
-   "label": "华北蝗蝻渐起"
+   "label": "陕东、晋南、豫开蝗蝻渐起"
   },
   {
    "year": 1639,
-   "label": "蝗极：飞蝗蔽天，遍及九省"
+   "label": "蝗极：飞蝗蔽天，遍及十省"
   },
   {
    "year": 1644,

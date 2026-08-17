@@ -27,7 +27,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "title": "开封河决·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "据《汴围湿襟录》及明末笔记综合，死亡数字取「三十七万军民、存者不满两万」的折中记载。"
+   "bias_note": "据《汴围湿襟录》白愚、《豫变纪略》郑廉及《明史·庄烈帝纪》综合：围城军民约三十七万，存者不满两万，三十余万溺死饿毙；洪水「注涡水」，黄河由此改道由涡入淮，下游豫、皖、苏、鲁大涝。死亡与下游受灾数字为折中估算并标 _approx。"
   }
  ],
  "places": [
@@ -46,6 +46,38 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "lat": 34.75,
    "note": "河南，开封下游",
    "elev": 117
+  },
+  {
+   "id": "shangqiu",
+   "name": "归德",
+   "lon": 115.65,
+   "lat": 34.41,
+   "note": "河南，旱蝗",
+   "elev": 52
+  },
+  {
+   "id": "xuzhou",
+   "name": "徐州",
+   "lon": 117.18,
+   "lat": 34.26,
+   "note": "江苏，旱蝗泛及",
+   "elev": 63
+  },
+  {
+   "id": "fengyang",
+   "name": "凤阳",
+   "lon": 117.5,
+   "lat": 32.9,
+   "note": "南直隶，蝗旱",
+   "elev": 27
+  },
+  {
+   "id": "huaian",
+   "name": "淮安",
+   "lon": 119.0,
+   "lat": 33.5,
+   "note": "南直隶，泛及",
+   "elev": 11
   },
   {
    "id": "jinan",
@@ -69,7 +101,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "id": "AX_ev_kf_1642a",
    "subject": "event:kf_1642a",
    "predicate": "事件",
-   "value_text": "明军扒朱家寨、李自成扒马家口，黄河两处决口。",
+   "value_text": "明军扒朱家寨、李自成扒马家口，黄河南北两处决口，相距三十里。",
    "source": "synthesis",
    "layer": "scholarship",
    "quote_status": "paraphrase_unverified",
@@ -87,7 +119,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "id": "AX_ev_kf_1642b",
    "subject": "event:kf_1642b",
    "predicate": "事件",
-   "value_text": "秋汛两决合流，开封一夜没水，三十余万军民溺毙。",
+   "value_text": "秋汛两决合流，怒涛入北门，水深数丈，城如釜底，钟鼓二楼与周邸屋脊外尽没，三十余万军民溺毙。",
    "source": "synthesis",
    "layer": "scholarship",
    "quote_status": "paraphrase_unverified",
@@ -105,7 +137,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "id": "AX_ev_kf_1643",
    "subject": "event:kf_1643",
    "predicate": "事件",
-   "value_text": "溃水泛溢山东、河南下游诸州县，田庐漂没。",
+   "value_text": "溃水注涡水，黄河改道由涡入淮，下游归德、徐州、凤阳、淮安、山东泛溢大涝。",
    "source": "synthesis",
    "layer": "scholarship",
    "quote_status": "paraphrase_unverified",
@@ -130,7 +162,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "era": "崇祯十五·六月",
    "title": "双决黄河",
    "kind": "河决",
-   "text": "明军扒朱家寨、李自成扒马家口，黄河两处决口。",
+   "text": "明军扒朱家寨、李自成扒马家口，黄河南北两处决口，相距三十里。",
    "place": "kaofeng"
   },
   {
@@ -140,7 +172,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "era": "九月十五",
    "title": "开封城没",
    "kind": "河决",
-   "text": "秋汛两决合流，开封一夜没水，三十余万军民溺毙。",
+   "text": "秋汛两决合流，怒涛入北门，水深数丈，城如釜底，钟鼓二楼与周邸屋脊外尽没，三十余万军民溺毙。",
    "place": "kaofeng"
   },
   {
@@ -148,9 +180,9 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
    "subject": "event:kf_1643",
    "year": 1643,
    "era": "崇祯十六",
-   "title": "下游泛灾",
+   "title": "由涡入淮",
    "kind": "河决",
-   "text": "溃水泛溢山东、河南下游诸州县，田庐漂没。",
+   "text": "溃水注涡水，黄河改道由涡入淮，下游归德、徐州、凤阳、淮安、山东泛溢大涝。",
    "place": "jinan"
   }
  ],
@@ -160,30 +192,82 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
   {
    "place_id": "kaofeng",
    "start": 1642,
-   "end": 1643,
-   "level": 3
+   "end": 1644,
+   "level": 3,
+   "deaths": 340000,
+   "deaths_approx": true,
+   "mortality": 0.9,
+   "mortality_approx": true
   },
   {
    "place_id": "zhengzhou",
    "start": 1642,
    "end": 1643,
-   "level": 2
+   "level": 2,
+   "deaths": 80000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 60000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 50000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fengyang",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 40000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaian",
+   "start": 1643,
+   "end": 1644,
+   "level": 2,
+   "deaths": 40000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
-   "start": 1642,
-   "end": 1643,
-   "level": 2
+   "start": 1643,
+   "end": 1644,
+   "level": 1,
+   "deaths": 20000,
+   "deaths_approx": true,
+   "mortality": 0.1,
+   "mortality_approx": true
   }
  ],
  "impact_years": [
   1642,
-  1643
+  1644
  ],
  "impact_events": [
   {
    "year": 1642,
-   "label": "明军与李自成军双决黄河"
+   "label": "明军与李自成军双决黄河（朱家寨·马家口）"
   },
   {
    "year": 1642,
@@ -191,7 +275,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
   },
   {
    "year": 1643,
-   "label": "溃水泛溢山东、河南下游"
+   "label": "溃水由涡入淮，下游豫皖苏鲁大涝"
   }
  ],
  "vocab": {

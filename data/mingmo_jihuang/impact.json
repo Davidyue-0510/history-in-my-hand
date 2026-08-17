@@ -6,7 +6,7 @@
  "events": [
   {
    "year": 1628,
-   "label": "陕西大饥，延安民食蓬草树皮"
+   "label": "陕北大饥，延安民食蓬草树皮"
   },
   {
    "year": 1640,
@@ -22,37 +22,241 @@
    "place_id": "yanan",
    "start": 1628,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "suide",
+   "start": 1628,
+   "end": 1644,
+   "level": 3,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "mizhi",
+   "start": 1628,
+   "end": 1644,
+   "level": 3,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
   },
   {
    "place_id": "changan",
    "start": 1628,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 600000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yulin",
+   "start": 1628,
+   "end": 1644,
+   "level": 3,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
   },
   {
    "place_id": "taiyuan",
    "start": 1630,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "linfen",
+   "start": 1630,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fenzhou",
+   "start": 1630,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "kaofeng",
    "start": 1635,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 1500000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zhangde",
+   "start": 1635,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaiqing",
+   "start": 1635,
+   "end": 1644,
+   "level": 3,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "weihui",
+   "start": 1635,
+   "end": 1644,
+   "level": 3,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1635,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "runing",
+   "start": 1635,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
   },
   {
    "place_id": "beijing",
    "start": 1638,
    "end": 1644,
-   "level": 1
+   "level": 1,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.2,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "baoding",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shijiazhuang",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "hejian",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "daming",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "guangping",
+   "start": 1638,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
    "start": 1638,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1640,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "lanzhou",
+   "start": 1630,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yinchuan",
+   "start": 1630,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
   }
  ]
 }

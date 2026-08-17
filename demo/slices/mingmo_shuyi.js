@@ -25,10 +25,18 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "title": "明末鼠疫·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "鼠疫路径与规模据明末清初笔记（《烈皇小识》等）及当代医疗史研究综合，确切毒株与死亡数字不可确考。"
+   "bias_note": "鼠疫路径据曹树基《鼠疫：战争与和平》及明末清初笔记综合；北京死亡约 20 万、死亡率约三至四成采邱仲麟考订，其余省份死亡数为方志「人死大半」之折中估算，均标 _approx。"
   }
  ],
  "places": [
+  {
+   "id": "xingxian",
+   "name": "兴县",
+   "lon": 111.13,
+   "lat": 38.47,
+   "note": "山西，明末鼠疫发源地",
+   "elev": 1214
+  },
   {
    "id": "taiyuan",
    "name": "太原",
@@ -38,12 +46,76 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "elev": 807
   },
   {
+   "id": "luan",
+   "name": "潞安",
+   "lon": 113.13,
+   "lat": 36.18,
+   "note": "山西，明末鼠疫重疫",
+   "elev": 953
+  },
+  {
+   "id": "linfen",
+   "name": "临汾",
+   "lon": 111.5,
+   "lat": 36.08,
+   "note": "山西平阳，明末旱蝗重灾",
+   "elev": 483
+  },
+  {
+   "id": "fenzhou",
+   "name": "汾州",
+   "lon": 111.76,
+   "lat": 37.27,
+   "note": "山西，旱疫",
+   "elev": 978
+  },
+  {
+   "id": "datong",
+   "name": "大同",
+   "lon": 113.3,
+   "lat": 40.09,
+   "note": "山西，明末大旱重灾",
+   "elev": 1060
+  },
+  {
+   "id": "yulin",
+   "name": "榆林",
+   "lon": 109.7,
+   "lat": 38.3,
+   "note": "陕西，明末旱饥重灾",
+   "elev": 1105
+  },
+  {
    "id": "baoding",
    "name": "保定",
    "lon": 115.46,
    "lat": 38.87,
    "note": "北直隶，明末鼠疫重灾",
    "elev": 21
+  },
+  {
+   "id": "daming",
+   "name": "大名",
+   "lon": 115.14,
+   "lat": 36.28,
+   "note": "北直隶，明末鼠疫重灾",
+   "elev": 47
+  },
+  {
+   "id": "shijiazhuang",
+   "name": "真定",
+   "lon": 114.5,
+   "lat": 38.04,
+   "note": "北直隶，旱疫重灾",
+   "elev": 63
+  },
+  {
+   "id": "hejian",
+   "name": "河间",
+   "lon": 116.1,
+   "lat": 38.43,
+   "note": "北直隶，明末大疫",
+   "elev": 14
   },
   {
    "id": "beijing",
@@ -62,12 +134,116 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "elev": 76
   },
   {
+   "id": "zhangde",
+   "name": "彰德",
+   "lon": 114.35,
+   "lat": 36.1,
+   "note": "河南，旱蝗",
+   "elev": 103
+  },
+  {
+   "id": "huaiqing",
+   "name": "怀庆",
+   "lon": 112.93,
+   "lat": 35.08,
+   "note": "河南，旱蝗",
+   "elev": 143
+  },
+  {
+   "id": "weihui",
+   "name": "卫辉",
+   "lon": 114.07,
+   "lat": 35.43,
+   "note": "河南，旱蝗",
+   "elev": 91
+  },
+  {
+   "id": "shangqiu",
+   "name": "归德",
+   "lon": 115.65,
+   "lat": 34.41,
+   "note": "河南，旱蝗",
+   "elev": 52
+  },
+  {
    "id": "jinan",
    "name": "济南",
    "lon": 117.12,
    "lat": 36.65,
    "note": "山东，明末大旱重灾",
    "elev": 253
+  },
+  {
+   "id": "xuzhou",
+   "name": "徐州",
+   "lon": 117.18,
+   "lat": 34.26,
+   "note": "江苏，旱蝗泛及",
+   "elev": 63
+  },
+  {
+   "id": "nanjing",
+   "name": "南京",
+   "lon": 118.8,
+   "lat": 32.06,
+   "note": "六朝古都·建康/应天",
+   "elev": 17
+  },
+  {
+   "id": "hangzhou",
+   "name": "杭州",
+   "lon": 120.15,
+   "lat": 30.27,
+   "note": "江南，未遭北灾",
+   "elev": 98
+  },
+  {
+   "id": "suzhou",
+   "name": "苏州",
+   "lon": 120.58,
+   "lat": 31.3,
+   "note": "江南，未遭北灾",
+   "elev": 6
+  },
+  {
+   "id": "xiangyang",
+   "name": "襄阳",
+   "lon": 112.14,
+   "lat": 32.0,
+   "note": "湖广，灾稍轻",
+   "elev": 77
+  },
+  {
+   "id": "changsha",
+   "name": "长沙",
+   "lon": 112.94,
+   "lat": 28.23,
+   "note": "湖广，蝗旱偏南",
+   "elev": 42
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "note": "汉唐都城",
+   "elev": 391
+  },
+  {
+   "id": "yinchuan",
+   "name": "宁夏",
+   "lon": 106.27,
+   "lat": 38.47,
+   "note": "宁夏，旱饥",
+   "elev": 1105
+  },
+  {
+   "id": "lanzhou",
+   "name": "兰州",
+   "lon": 103.83,
+   "lat": 36.06,
+   "note": "甘肃，旱饥重灾",
+   "elev": 1891
   }
  ],
  "persons": [],
@@ -165,34 +341,194 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
  "control": [],
  "impact": [
   {
+   "place_id": "xingxian",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
    "place_id": "taiyuan",
    "start": 1641,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 600000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "luan",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "linfen",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 350000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fenzhou",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "datong",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yulin",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "baoding",
    "start": 1642,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "daming",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shijiazhuang",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "hejian",
+   "start": 1642,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
   },
   {
    "place_id": "beijing",
    "start": 1643,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "kaofeng",
    "start": 1642,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zhangde",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaiqing",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "weihui",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
    "start": 1642,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
   }
  ],
  "impact_years": [

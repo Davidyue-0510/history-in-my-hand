@@ -515,6 +515,25 @@ body{
 }
 .ctrl-era-note{ color:var(--ink-3); opacity:.8; margin-left:auto; font-size:10px; }
 
+/* 灾难指标分段选择器（v0.50） */
+.ctrl-metric{ display:inline-flex; border:1px solid var(--rule); border-radius:4px; overflow:hidden; }
+.ctrl-metric button{
+  border:0; background:transparent; color:var(--ink-2); font-size:11px; padding:3px 8px; cursor:pointer;
+  border-right:1px solid var(--rule);
+}
+.ctrl-metric button:last-child{ border-right:0; }
+.ctrl-metric button.on{ background:var(--ink); color:var(--paper); }
+.ctrl-metric button:hover{ background:rgba(0,0,0,.06); }
+.ctrl-metric button.on:hover{ background:var(--ink); }
+
+/* 受灾区/正常区 渐变图例 */
+.ctrl-legend .lg-item{ display:inline-flex; align-items:center; gap:3px; font-size:11px; color:var(--ink-2); }
+.ctrl-legend .lg-item i{ margin-right:0; }
+.ctrl-legend .lg-grad{ flex-direction:column; align-items:stretch; gap:2px; min-width:150px; }
+.ctrl-legend .lg-bar{ display:block; height:10px; border-radius:2px; border:1px solid rgba(0,0,0,.15); }
+.ctrl-legend .lg-ticks{ display:flex; justify-content:space-between; font-size:9px; color:var(--ink-3); font-style:normal; }
+.ctrl-legend .lg-ticks em{ font-style:normal; }
+
 /* ══════ 聚合泡展开动画（v0.47） ══════ */
 .cluster{
   animation:cluster-pop .22s ease-out;

@@ -1,13 +1,23 @@
-/* 小菜狗的文明图景 · 灾情影响范围层（v0.49 新增 · 独立灾难模型）
+/* 小菜狗的文明图景 · 灾情影响范围层（v0.49 新增 · v0.50 升级）
  *
  * 天灾（旱/蝗/饥/疫/洪水…）不是「谁占哪城」的政权控制，而是「影响范围随年份
- * 扩张/收缩」的现象扩散。所以灾难用**独立的 severity 热力模型**，不复用控制层：
- *   - 数据：data/<scene>/impact.json = { years, events, impact:[{place_id,start,end,level}] }
- *     level ∈ 1(轻)2(中)3(重)，同一地点可多段叠加取最大。
- *   - 几何：与控制层同款——真实治所(经纬度) Voronoi 划分，再用 CHGIS 1820 真实
- *     政区多边形栅格化成陆地掩膜裁剪到海岸线以内（非逐日实测，诚实边界）。
- *   - 渲染：level→热力色（淡琥珀→橙→深红），半透明叠在地形上；年份驱动 draw(year)。
- *   - canvas 置于地形之上、SVG 之下，pointer-events:none，绝不拦截地图交互。
+ * 扩张/收缩」的现象扩散。所以灾难用**独立的 severity 热力模型**，不复用控制层。
+ *
+ * v0.50 升级（对齐实控区层的可读性）：
+ *   - 受灾 / 正常 二分：未受灾陆地填中性浅色（parchment-grey），受灾区按指标梯度上色，
+ *     边界因此自然浮现——解决旧版「只叠半透明、看不出哪受灾」的问题。
+ *   - 指标可切换（setMetric）：
+ *       · severity   严重程度（level 1→3 归一）
+ *       · deaths     死亡人口（按本场景 maxDeaths 归一）
+ *       · mortality  死亡率（0→1 直接映射）
+ *     三者均走同一条连续色带（浅琥珀→橙→深红），颜色越深=越重。
+ *   - 时间驱动：draw(year) 重算各地当年受灾状态，受灾范围随滑块/播放「随时间变化」。
+ *
+ * 数据：data/<scene>/impact.json = { years, events, impact:[{place_id,start,end,level,
+ *        deaths,deaths_approx,mortality,mortality_approx}] }。
+ * 几何：与控制层同款——真实治所(经纬度) Voronoi 划分 + CHGIS 1820 真实政区多边形
+ *       栅格化成陆地掩膜裁剪到海岸线以内（非逐日实测，诚实边界）。
+ * canvas 置于地形之上、SVG 之下，pointer-events:none，绝不拦截地图交互。
  */
 (function () {
   'use strict';
@@ -16,10 +26,19 @@
       mask = null, off = null, img = null, ready = false, coastReady = false;
   var impactData = [], curYears = [1600, 1650];
 
-  var LEVEL_COLORS = [null, [235, 190, 100], [222, 125, 50], [178, 45, 40]];
-  var LEVEL_ALPHA = [0, 95, 135, 175];
+  // 当前着色指标：severity | deaths | mortality
+  var metric = 'severity';
+  // 本场景死亡人口上限（deaths 指标归一化用，setup 时计算）
+  var maxDeaths = 1;
 
   var curYear = null, dirty = true;
+
+  // 受灾/正常二分配色
+  var NORMAL = [201, 196, 180];   // 未受灾陆地：中性浅色（区别于地形羊皮纸）
+  var NORMAL_ALPHA = 55;
+  var LIGHT = [245, 222, 178], MID = [222, 120, 45], DEEP = [120, 16, 16]; // 受灾梯度端点
+
+  function lerp(a, b, u) { return Math.round(a + (b - a) * u); }
 
   function setup(o) {
     cfg = o || {};
@@ -29,8 +48,17 @@
     curYears = (has && D.years) ? D.years : [1600, 1650];
     seats = (has && Array.isArray(D.seats)) ? D.seats : [];
     seatIdx = {};
-    seats.forEach(function (s, i) { seatIdx[s.place_id] = i; });
+    seats.forEach(function (s, i) {
+      // 治所可能带 id（场景 places）或 place_id（自含 seats）；统一到 place_id
+      if (s.place_id == null) s.place_id = s.id;
+      seatIdx[s.place_id] = i;
+    });
     if (!seats.length || !impactData.length) { ready = false; return; }
+    // 死亡人口上限（仅 deaths 指标用）
+    maxDeaths = 1;
+    impactData.forEach(function (s) {
+      if (typeof s.deaths === 'number' && s.deaths > maxDeaths) maxDeaths = s.deaths;
+    });
     initGrid();
     ready = true; dirty = true;
   }
@@ -102,16 +130,81 @@
     }).catch(function (e) { console.warn('[ImpactLayer] 海岸线掩膜加载失败：', e && e.message ? e.message : e); });
   }
 
-  // 某地某年受灾等级：多段取最大
-  function levelAt(placeId, year) {
-    var lv = 0;
+  // 某地某年「命中」的受灾区间（取 level 最高者；多段重叠时代表最高烈度）
+  function entryAt(placeId, year) {
+    var best = null;
     for (var i = 0; i < impactData.length; i++) {
       var s = impactData[i];
       if (s.place_id !== placeId) continue;
-      if (year >= s.start && year <= s.end) lv = Math.max(lv, s.level || 0);
+      if (year >= s.start && year <= s.end) {
+        if (!best || (s.level || 0) > (best.level || 0)) best = s;
+      }
     }
-    return lv;
+    return best;
   }
+
+  // 受灾等级（兼容旧接口）：多段取最大 level
+  function levelAt(placeId, year) {
+    var e = entryAt(placeId, year);
+    return e ? (e.level || 0) : 0;
+  }
+
+  // 当前指标下的强度 t∈[0,1] 与原始值（用于图例/tooltip）
+  function intensityAt(placeId, year) {
+    var e = entryAt(placeId, year);
+    if (!e) return { t: 0, raw: null, approx: false };
+    if (metric === 'deaths') {
+      var d = (typeof e.deaths === 'number') ? e.deaths : 0;
+      return { t: maxDeaths ? d / maxDeaths : 0, raw: d, approx: !!e.deaths_approx };
+    }
+    if (metric === 'mortality') {
+      var m = (typeof e.mortality === 'number') ? e.mortality : 0;
+      return { t: Math.max(0, Math.min(1, m)), raw: m, approx: !!e.mortality_approx };
+    }
+    return { t: (e.level || 0) / 3, raw: e.level || 0, approx: false }; // severity
+  }
+
+  // 强度 t∈[0,1] → 连续色带（浅琥珀→橙→深红）
+  function metricColor(t) {
+    t = Math.max(0, Math.min(1, t));
+    var r, g, b;
+    if (t < 0.5) {
+      var u = t / 0.5;
+      r = lerp(LIGHT[0], MID[0], u); g = lerp(LIGHT[1], MID[1], u); b = lerp(LIGHT[2], MID[2], u);
+    } else {
+      var v = (t - 0.5) / 0.5;
+      r = lerp(MID[0], DEEP[0], v); g = lerp(MID[1], DEEP[1], v); b = lerp(MID[2], DEEP[2], v);
+    }
+    return [r, g, b];
+  }
+
+  // 把当前指标图例暴露给前端（renderCtrlLegend 用）
+  function metricMeta() {
+    if (metric === 'deaths') {
+      var mx = maxDeaths >= 10000 ? (maxDeaths / 10000) + '万' : ('' + maxDeaths);
+      return { metric: 'deaths', label: '死亡人口', min: '0', max: mx };
+    }
+    if (metric === 'mortality') return { metric: 'mortality', label: '死亡率', min: '0%', max: '100%' };
+    return { metric: 'severity', label: '严重程度', min: '轻', max: '重' };
+  }
+
+  // 当前指标色带 → CSS linear-gradient（图例条）
+  function gradientCss() {
+    var stops = [0, 0.25, 0.5, 0.75, 1].map(function (t) {
+      var c = metricColor(t);
+      return 'rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ') ' + (t * 100) + '%';
+    }).join(',');
+    return 'linear-gradient(90deg,' + stops + ')';
+  }
+
+  // 切指标并重绘
+  function setMetric(m) {
+    if (m !== 'severity' && m !== 'deaths' && m !== 'mortality') return;
+    if (m === metric) return;
+    metric = m; dirty = true;
+    if (ready) repaint();
+  }
+  function getMetric() { return metric; }
 
   function buildFrame(year) {
     var nx = grid.nx, ny = grid.ny;
@@ -122,16 +215,25 @@
       for (var ix = 0; ix < nx; ix++) {
         var idx = iy * nx + ix;
         if (coastReady && mask[idx] === 0) { pg[idx] = -2; continue; }
-        pg[idx] = levelAt(seats[assign[idx]].place_id, year);
+        var seat = seats[assign[idx]];
+        var e = entryAt(seat.place_id, year);
+        pg[idx] = e ? (e.level || 0) : 0; // 0 = 未受灾陆地；-2 = 海
       }
     }
     for (iy = 0; iy < ny; iy++) {
       for (ix = 0; ix < nx; ix++) {
         idx = iy * nx + ix; var o = idx * 4; var lv = pg[idx];
-        if (lv <= 0) { data[o + 3] = 0; continue; }
-        var col = LEVEL_COLORS[lv] || LEVEL_COLORS[3];
+        if (lv === -2) { data[o + 3] = 0; continue; }       // 海：透明
+        if (lv <= 0) {                                        // 未受灾陆地：中性浅色
+          data[o] = NORMAL[0]; data[o + 1] = NORMAL[1]; data[o + 2] = NORMAL[2];
+          data[o + 3] = NORMAL_ALPHA; continue;
+        }
+        var seat2 = seats[assign[idx]];
+        var it = intensityAt(seat2.place_id, year);
+        var col = metricColor(it.t);
+        var alpha = 110 + it.t * 90; if (alpha > 205) alpha = 205;
         data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2];
-        data[o + 3] = LEVEL_ALPHA[lv] || 150;
+        data[o + 3] = alpha;
       }
     }
     return frame;
@@ -181,6 +283,9 @@
   window.ImpactLayer = {
     setup: setup, draw: draw, repaint: repaint, clear: clear,
     setCoast: setCoast, loadCoast: loadCoast,
-    levelAt: levelAt, isReady: isReady, years: years, seats: function () { return seats; }
+    levelAt: levelAt, entryAt: entryAt, intensityAt: intensityAt,
+    setMetric: setMetric, getMetric: getMetric,
+    metricMeta: metricMeta, gradientCss: gradientCss, metricColor: metricColor,
+    isReady: isReady, years: years, seats: function () { return seats; }
   };
 })();

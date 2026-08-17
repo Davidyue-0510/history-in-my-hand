@@ -20585,7 +20585,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 1,
-    "place": 6,
+    "place": 29,
     "person": 2,
     "assert": 3,
     "conflict": 0,
@@ -20610,7 +20610,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 1,
-    "place": 6,
+    "place": 31,
     "person": 1,
     "assert": 3,
     "conflict": 0,
@@ -20635,7 +20635,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 1,
-    "place": 5,
+    "place": 28,
     "person": 1,
     "assert": 3,
     "conflict": 0,
@@ -20660,7 +20660,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 1,
-    "place": 5,
+    "place": 27,
     "person": 0,
     "assert": 3,
     "conflict": 0,
@@ -20685,7 +20685,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "counts": {
     "src": 1,
-    "place": 3,
+    "place": 7,
     "person": 1,
     "assert": 3,
     "conflict": 0,

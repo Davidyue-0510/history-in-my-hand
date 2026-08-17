@@ -19,34 +19,194 @@
  ],
  "impact": [
   {
+   "place_id": "xingxian",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
    "place_id": "taiyuan",
    "start": 1641,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 600000,
+   "deaths_approx": true,
+   "mortality": 0.35,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "luan",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "linfen",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 350000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "fenzhou",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "datong",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.4,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "yulin",
+   "start": 1641,
+   "end": 1644,
+   "level": 2,
+   "deaths": 150000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "baoding",
    "start": 1642,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "daming",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 500000,
+   "deaths_approx": true,
+   "mortality": 0.5,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shijiazhuang",
+   "start": 1641,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "hejian",
+   "start": 1642,
+   "end": 1644,
+   "level": 3,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.45,
+   "mortality_approx": true
   },
   {
    "place_id": "beijing",
    "start": 1643,
    "end": 1644,
-   "level": 3
+   "level": 3,
+   "deaths": 200000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "kaofeng",
    "start": 1642,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "zhangde",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 300000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "huaiqing",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "weihui",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "shangqiu",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
   },
   {
    "place_id": "jinan",
    "start": 1642,
    "end": 1644,
-   "level": 2
+   "level": 2,
+   "deaths": 400000,
+   "deaths_approx": true,
+   "mortality": 0.3,
+   "mortality_approx": true
+  },
+  {
+   "place_id": "xuzhou",
+   "start": 1642,
+   "end": 1644,
+   "level": 2,
+   "deaths": 250000,
+   "deaths_approx": true,
+   "mortality": 0.25,
+   "mortality_approx": true
   }
  ]
 }
