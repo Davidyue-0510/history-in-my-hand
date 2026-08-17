@@ -113,6 +113,7 @@ async function main() {
       Accept: 'application/vnd.github+json',
       'User-Agent': 'vege-civ-push-app',
     },
+    signal: AbortSignal.timeout(30000),  // 30s 超时，避免 GitHub API 挂起导致 push_app 卡死
   });
   const data = await res.json().catch(() => ({}));
   if (res.status !== 201 || !data.token) {
@@ -126,17 +127,20 @@ async function main() {
   try {
     out = execSync(
       `git -c credential.helper= push "https://x-access-token:${token}@github.com/${REPO}.git" HEAD:${branch}`,
-      { encoding: 'utf8' }
+      { encoding: 'utf8', timeout: 120000 }  // 120s 超时，避免网络挂起导致 push_app 卡死
     );
   } catch (e) {
     out = (e.stdout || '') + (e.stderr || '');
+    if (e.killed && e.signal) {
+      out += `\n[push_app] git push 超时（>${e.signal}），已被强制终止，未卡死。`;
+    }
   }
   const masked = mask(out, token);
   process.stdout.write(masked);
-  if (/Everything up-to-date|->/.test(masked) && !/fatal|error:/i.test(masked)) {
+  if (/Everything up-to-date|->/.test(masked) && !/fatal|error:/i.test(masked) && !/超时/.test(masked)) {
     console.log('\n[push_app] 推送成功（或已是最新）。');
-  } else if (/fatal|error:/i.test(masked)) {
-    console.error('\n[push_app] 推送出现错误，见上。');
+  } else if (/fatal|error:/i.test(masked) || /超时/.test(masked)) {
+    console.error('\n[push_app] 推送出现错误/超时，见上。');
     process.exit(4);
   }
 }

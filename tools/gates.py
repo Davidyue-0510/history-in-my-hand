@@ -18,6 +18,7 @@ import shutil
 import subprocess
 import sys
 import os
+import signal
 
 # Windows 控制台默认 GBK，非 ASCII 符号（✓/✗/✅）会抛 UnicodeEncodeError。
 # 统一用 ASCII，且尽量强制 stdout 为 UTF-8，避免协作者在本机跑时崩溃。
@@ -67,6 +68,37 @@ def find_node():
     return None
 
 
+def _run(cmd, timeout, label):
+    """运行子命令并带超时保护：超时则强制终止整组进程（含无头浏览器孙进程），
+    避免某个步骤卡死导致整个 gates 无限挂起。返回 exit code。"""
+    try:
+        if os.name == "nt":
+            proc = subprocess.Popen(cmd, cwd=ROOT,
+                                    creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+        else:
+            proc = subprocess.Popen(cmd, cwd=ROOT, start_new_session=True)
+    except Exception as e:
+        print("[FAIL] %s 启动失败: %s" % (label, e))
+        return 1
+    try:
+        proc.wait(timeout=timeout)
+        return proc.returncode
+    except subprocess.TimeoutExpired:
+        # 杀掉整个进程组，避免无头 Edge / 子 shell 残留导致资源泄漏与假挂起
+        try:
+            if os.name == "nt":
+                os.kill(proc.pid, signal.CTRL_BREAK_EVENT)  # 作用于新建的进程组
+            else:
+                os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+        except Exception:
+            try:
+                proc.kill()
+            except Exception:
+                pass
+        print("[FAIL] %s 超时（>%d 秒），已强制终止，避免卡死。" % (label, timeout))
+        return 124
+
+
 def main():
     args = sys.argv[1:]
     strict = "--strict" in args
@@ -79,7 +111,7 @@ def main():
         if name.startswith("守门员") and strict:
             cmd.append("--strict")
         print("\n=== [%d/%d] %s ===" % (i, total, name))
-        rc = subprocess.run(cmd, cwd=ROOT).returncode
+        rc = _run(cmd, timeout=300, label=name)
         if rc != 0:
             ok = False
             print("[FAIL] %s (exit=%d)" % (name, rc))
@@ -92,8 +124,8 @@ def main():
         if not node:
             print("[SKIP] 未找到 Node，交互闸门跳过（装 Node>=20 或设 WORLD_NODE 后可启用）")
         else:
-            rc = subprocess.run([node, os.path.join(ROOT, "tools", "probe_interaction.js")],
-                                cwd=ROOT).returncode
+            rc = _run([node, os.path.join(ROOT, "tools", "probe_interaction.js")],
+                      timeout=600, label="交互闸门")
             if rc != 0:
                 ok = False
                 print("[FAIL] 交互闸门 (exit=%d)" % rc)
