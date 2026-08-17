@@ -12,7 +12,7 @@ const ROOT = path.resolve(__dirname, '..');
 const DEMO = path.join(ROOT, 'demo');
 const PORT = 8801;
 const TARGET = '/sim_engine.html';
-const MIME = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json', '.css':'text/css' };
+const MIME = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json', '.css':'text/css', '.jpg':'image/jpeg' };
 
 function serve(){return http.createServer((req,res)=>{
   let p = decodeURIComponent(req.url.split('?')[0]);
@@ -100,8 +100,39 @@ async function main(){
       hasPf2: !!pf2, hasLogi: !!logi, pf };
   });
 
+  // 9c：v0.57 分支事件模板（跨事件通用·纯函数派生）
+  const v057 = await page.evaluate(()=>{
+    const E=SIM_ENGINE;
+    const schema=E.branchEventTemplateSchema();
+    E.resetDefault(); E.runTo(1644);
+    const ev0=E.branchEvents();
+    E.runTo(1644,'B5_logistics');
+    const ev5=E.branchEvents();
+    E.runTo(1644,'B6_both');
+    const ev6=E.branchEvents();
+    E.resetDefault();
+    const sample = ev6.find(e=>e.kind==='summary') || ev6[0];
+    return {
+      kinds: E.branchEventKinds(),
+      schema,
+      ev0Count: ev0.length,
+      ev0FirstKind: ev0[0]?ev0[0].kind:null,
+      ev5Count: ev5.length,
+      ev6Count: ev6.length,
+      ev5Kinds: Array.from(new Set(ev5.map(e=>e.kind))),
+      ev6Kinds: Array.from(new Set(ev6.map(e=>e.kind))),
+      hasSummary5: ev5.some(e=>e.kind==='summary'),
+      hasLogistics5: ev5.some(e=>e.kind==='logistics'),
+      hasFaction6: ev6.some(e=>e.kind==='faction'),
+      sampleFieldOk: sample ? (typeof sample.year==='number' && typeof sample.kind==='string' && ['info','warn','bad'].includes(sample.severity)) : false
+    };
+  });
+
   // 10：地形底图 + 经纬度投影（中国真实高程）
-  const terr = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasTerrain(), ready: SIM_ENGINE.terrainReady(), view: SIM_ENGINE.viewFit() }; });
+  // 等待中国 DemTopo 栅格异步加载完成（避免中心像素采样早于图加载）
+  let waitTerr=0;
+  while(waitTerr<5000){ const rdy=await page.evaluate(()=>!!(window.SIM_ENGINE&&SIM_ENGINE.terrainReady())); if(rdy) break; await sleep(150); waitTerr+=150; }
+  const terr = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasTerrain(), ready: SIM_ENGINE.terrainReady(), src: SIM_ENGINE.chinaTerrainSrc(), view: SIM_ENGINE.viewFit() }; });
   await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
   await sleep(200);
   const posL = await page.evaluate(()=>SIM_ENGINE.seatScreenPositions());
@@ -113,9 +144,16 @@ async function main(){
   // 视图切换前后中心治所位置必须不同（投影尺度不同）
   const pL1 = posL.find(p=>p.id==='shenyang'), pC1 = posC.find(p=>p.id==='shenyang');
   const viewsDiffer = pL1 && pC1 && (Math.abs(pL1.x-pC1.x)>10 || Math.abs(pL1.y-pC1.y)>10);
-  // 中心像素必须被地形覆盖（不是 #0d1117 背景色）
-  const px = await page.evaluate(()=>{ const c=document.getElementById('terrainCv'); const d=c.getContext('2d').getImageData(Math.floor(c.width/2),Math.floor(c.height/2),1,1).data; return [d[0],d[1],d[2]]; });
-  const pxIsBg = (px[0]===13&&px[1]===17&&px[2]===23);
+  // 中心像素必须被真实地形覆盖（不是羊皮纸底 #EFECE2），证明中国 DemTopo 已按辽东视窗裁剪绘制
+  const px = await page.evaluate(()=>{
+    const c=document.getElementById('terrainCv'); const ctx=c.getContext('2d');
+    const cx=Math.floor(c.width/2), cy=Math.floor(c.height/2);
+    const d=ctx.getImageData(cx-2,cy-2,4,4).data; // 4×4 块
+    let nonParch=0, tot=0;
+    for(let i=0;i<d.length;i+=4){ tot++; if(!(d[i]===239&&d[i+1]===236&&d[i+2]===226)) nonParch++; }
+    return { nonParch, tot };
+  });
+  const pxIsBg = (px.nonParch===0);
 
   // 11：v0.55 basemap 矢量层加载
   const bm = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasBasemap(), layers: SIM_ENGINE.basemapLayerCount() }; });
@@ -210,12 +248,18 @@ async function main(){
   ok(v056.d6>0 && v056.m6<36, '反事实 F（内耗+物理双开）确定性偏离：'+v056.d6+' 处，吻合 '+v056.m6+'/36');
   ok(v056.hasPf2 && v056.hasLogi, '党派面板(#pf2)与物理/后勤面板(#logi)均已渲染');
   ok(v056.pf && typeof v056.pf.factor==='number', 'physicalFactorFor(1621,shenyang) 返回因子 → '+JSON.stringify(v056.pf));
+  ok(Array.isArray(v057.kinds) && v057.kinds.includes('divergence') && v057.kinds.includes('summary'), 'v0.57 模板 kind 枚举完整 → '+v057.kinds.join(','));
+  ok(v057.schema && Array.isArray(v057.schema.kind_options) && v057.schema.kind_options.length===5, 'v0.57 模板 schema 合约存在');
+  ok(v057.ev0Count===1 && v057.ev0FirstKind==='summary', '史实重放下仅含 0 偏离 summary 事件 → 实际 '+v057.ev0Count+' ('+v057.ev0FirstKind+')');
+  ok(v057.ev5Count>0 && v057.hasSummary5 && v057.hasLogistics5, 'B5_logistics 触发 logistics+summary 事件 → 共 '+v057.ev5Count+' 件 ('+v057.ev5Kinds.join(',')+')');
+  ok(v057.ev6Count>0 && v057.hasFaction6 && v057.ev6Kinds.includes('logistics'), 'B6_both 触发 faction+logistics+summary 事件 → 共 '+v057.ev6Count+' 件 ('+v057.ev6Kinds.join(',')+')');
+  ok(v057.sampleFieldOk, '事件结构含 year/kind/severity 等合约字段');
   ok(terr.has, 'CHINA_TERRAIN 已加载（中国真实高程网格，ASTER GDEM）');
   ok(terr.ready, '地形底图离屏画布已构建（terrainReady）');
   ok(posOkL, '辽东视图：36 治所按经纬度投影（viewBox 0-1000）全部有效');
   ok(posOkC, '全中国视图：36 治所按经纬度投影（viewBox 0-1000）全部有效');
   ok(viewsDiffer, '两视图中心治所位置不同（投影尺度差异）：L=('+pL1.x.toFixed(0)+','+pL1.y.toFixed(0)+') C=('+pC1.x.toFixed(0)+','+pC1.y.toFixed(0)+')');
-  ok(!pxIsBg, '全中国视图中心像素被地形覆盖（非 #0d1117 背景色 rgb='+px.join(',')+'）');
+  ok(!pxIsBg, '全中国视图中心像素被地形覆盖（4×4 块内非羊皮纸像素 '+px.nonParch+'/'+px.tot+'）');
   ok(bm.has, 'SIM_BASEMAP 已加载（Natural Earth 矢量底图 + 辽东边墙）');
   ok(bm.layers.land>0, '战区 land 多边形>0 → '+bm.layers.land);
   ok(bm.layers.rivers>0, '战区 rivers>0 → '+bm.layers.rivers);

@@ -502,7 +502,7 @@ window.SANDBOX_SLICES["chibi"] = {
    "id": "GAP_EXPAND",
    "subject": "event:cb_jz",
    "predicate": "史料缺环",
-   "value_text": "",
+   "value_text": "此役孙刘联军与曹方兵力、火攻具体部署与伤亡数字多据后世追述，三方记载互有出入，相关数字与因果链存在缺口。",
    "time": {
     "era_text": "建安十三年",
     "gregorian_year": 208,
@@ -512,11 +512,19 @@ window.SANDBOX_SLICES["chibi"] = {
    "place": "",
    "source": "synthesis",
    "quote": "",
-   "quote_status": "no_quote",
+   "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0,
    "scale": "battle",
-   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "《三国志》魏蜀吴三方本纪/传记对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补曹方视角与纪年异文"
+   },
    "_party": "综合史料",
    "_faction": null
   }

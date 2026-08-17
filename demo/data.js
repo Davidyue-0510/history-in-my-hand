@@ -19262,9 +19262,9 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 15,
+    "assert": 14,
     "conflict": 0,
-    "gap": 2,
+    "gap": 1,
     "record": 8,
     "scholarship": 3,
     "inference": 2
@@ -22030,6 +22030,22 @@ window.SANDBOX_DATA = {
     "_src_line": 13
    },
    {
+    "id": "GAP_EXPAND",
+    "scene": "canhebei",
+    "subject": "event:ch_jz",
+    "title": "此役魏军兵力、坑杀降卒确切数字与慕容宝败逃细节，诸书记载互有出入，相关数字与因果链存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "《魏书》《晋书》等诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补魏军兵力与慕容氏败逃细节",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
     "id": "SX009_M21",
     "scene": "canhebei",
     "subject": "event:ch_jz",
@@ -22126,6 +22142,22 @@ window.SANDBOX_DATA = {
     "_src_line": 14
    },
    {
+    "id": "GAP_EXPAND",
+    "scene": "chengpu",
+    "subject": "event:cp_chu",
+    "title": "此役细节（《左传》《国语》等）互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "《左传》《国语》等诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补楚方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
     "id": "SX010_M7",
     "scene": "chengpu",
     "subject": "event:cp_chu",
@@ -22188,6 +22220,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "GAP_EXPAND",
+    "scene": "chibi",
+    "subject": "event:cb_jz",
+    "title": "此役孙刘联军与曹方兵力、火攻具体部署与伤亡数字多据后世追述，三方记载互有出入，相关数字与因果链存在缺口。",
+    "missing": "纪年校勘 / 多源比对",
+    "where": "《三国志》魏蜀吴三方本纪/传记对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补曹方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 19
    },
    {
     "id": "DLH012",
@@ -22666,6 +22714,22 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 7
+   },
+   {
+    "id": "GAP_EXPAND",
+    "scene": "heshangyuan",
+    "subject": "event:hs_jz",
+    "title": "此役金方兵力、吴玠军确切伤亡与和尚原之战后续细节，现存以宋方叙事为主，金方视角与精确数字存在缺口。",
+    "missing": "宋金史料比对 / 军事史考据",
+    "where": "《金史》《宋史》双方传记对读",
+    "skills": [
+     "宋金史料比对",
+     "军事史考据"
+    ],
+    "accept": "补金方视角与精确兵力伤亡",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 18
    },
    {
     "id": "HESHANGYUANG01",
@@ -25211,15 +25275,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "canhebei",
     "name": "canhebei",
-    "total": 13,
+    "total": 16,
     "layers": {
      "scholarship": 3,
-     "record": 7,
+     "record": 9,
      "inference": 1,
-     "gap": 2
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 13
+     "综合史料": 16
     },
     "faction_counts": {},
     "event_count": 3,
@@ -25268,14 +25332,14 @@ window.SANDBOX_DATA = {
    {
     "scene": "chengpu",
     "name": "chengpu",
-    "total": 14,
+    "total": 16,
     "layers": {
      "scholarship": 3,
-     "record": 9,
-     "gap": 2
+     "record": 10,
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 14
+     "综合史料": 16
     },
     "faction_counts": {},
     "event_count": 3,
@@ -25323,15 +25387,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "chibi",
     "name": "chibi",
-    "total": 14,
+    "total": 19,
     "layers": {
      "scholarship": 3,
-     "record": 9,
+     "record": 13,
      "inference": 1,
-     "gap": 1
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 14
+     "综合史料": 19
     },
     "faction_counts": {},
     "event_count": 3,
@@ -25777,15 +25841,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "heshangyuan",
     "name": "heshangyuan",
-    "total": 14,
+    "total": 18,
     "layers": {
      "scholarship": 3,
-     "record": 7,
-     "inference": 2,
-     "gap": 2
+     "record": 9,
+     "inference": 3,
+     "gap": 3
     },
     "party_counts": {
-     "综合史料": 14
+     "综合史料": 18
     },
     "faction_counts": {},
     "event_count": 3,

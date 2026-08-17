@@ -428,7 +428,7 @@ window.SANDBOX_SLICES["chengpu"] = {
    "id": "GAP_EXPAND",
    "subject": "event:cp_chu",
    "predicate": "史料缺环",
-   "value_text": "",
+   "value_text": "此役细节（《左传》《国语》等）互有出入，胜者所修史书常省略败方视角、兵力与伤亡之确切数字，相关叙述存在缺口。",
    "time": {
     "era_text": "周襄王二十年",
     "gregorian_year": -632,
@@ -438,11 +438,19 @@ window.SANDBOX_SLICES["chengpu"] = {
    "place": "",
    "source": "synthesis",
    "quote": "",
-   "quote_status": "no_quote",
+   "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0,
    "scale": "battle",
-   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "《左传》《国语》等诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补楚方视角与纪年异文"
+   },
    "_party": "综合史料",
    "_faction": null
   }

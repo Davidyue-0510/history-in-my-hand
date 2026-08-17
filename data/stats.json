@@ -2,7 +2,7 @@
   "scenes_total": 138,
   "historical": 56,
   "fictional": 82,
-  "assertions_total": 2011,
+  "assertions_total": 2025,
   "sources_total": 91,
   "factions_total": 9,
   "vocab_packs": [
@@ -12,7 +12,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 190,
+  "leads_total": 194,
   "per_scene": [
     {
       "id": "sarhu",
@@ -294,7 +294,7 @@
       "id": "chengpu",
       "title": "城濮之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -343,7 +343,7 @@
       "id": "chibi",
       "title": "赤壁之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -371,7 +371,7 @@
       "id": "canhebei",
       "title": "参合陂之战",
       "kind": "battle",
-      "assertions": 13,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -413,7 +413,7 @@
       "id": "heshangyuan",
       "title": "和尚原之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 18,
       "factions": {}
     },
     {

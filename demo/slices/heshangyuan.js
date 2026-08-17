@@ -471,7 +471,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "id": "GAP_EXPAND",
    "subject": "event:hs_jz",
    "predicate": "史料缺环",
-   "value_text": "",
+   "value_text": "此役金方兵力、吴玠军确切伤亡与和尚原之战后续细节，现存以宋方叙事为主，金方视角与精确数字存在缺口。",
    "time": {
     "era_text": "绍兴元年",
     "gregorian_year": 1131,
@@ -481,11 +481,19 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "place": "",
    "source": "synthesis",
    "quote": "",
-   "quote_status": "no_quote",
+   "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0,
    "scale": "battle",
-   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "《金史》《宋史》双方传记对读",
+    "skills": [
+     "宋金史料比对",
+     "军事史考据"
+    ],
+    "accept": "补金方视角与精确兵力伤亡"
+   },
    "_party": "综合史料",
    "_faction": null
   }

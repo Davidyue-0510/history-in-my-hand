@@ -412,7 +412,7 @@ window.SANDBOX_SLICES["canhebei"] = {
    "id": "GAP_EXPAND",
    "subject": "event:ch_jz",
    "predicate": "史料缺环",
-   "value_text": "",
+   "value_text": "此役魏军兵力、坑杀降卒确切数字与慕容宝败逃细节，诸书记载互有出入，相关数字与因果链存在缺口。",
    "time": {
     "era_text": "太元二十年",
     "gregorian_year": 395,
@@ -422,11 +422,19 @@ window.SANDBOX_SLICES["canhebei"] = {
    "place": "",
    "source": "synthesis",
    "quote": "",
-   "quote_status": "no_quote",
+   "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0,
    "scale": "battle",
-   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "《魏书》《晋书》等诸史原文对读",
+    "skills": [
+     "纪年校勘",
+     "多源比对"
+    ],
+    "accept": "补魏军兵力与慕容氏败逃细节"
+   },
    "_party": "综合史料",
    "_faction": null
   }

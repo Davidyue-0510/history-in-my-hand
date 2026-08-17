@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://history-in-my-hand/schemas/sim_branch_event.schema.json",
+  "title": "Branch Event (跨事件通用·v0.57)",
+  "description": "任何历史事件场景下，由引擎状态确定性派生的反事实分支事件。合约与 whatif 的 ok/warn/bad 视觉一致。",
+  "type": "object",
+  "required": ["kind", "year", "severity"],
+  "properties": {
+    "kind": {
+      "type": "string",
+      "enum": ["divergence", "logistics", "faction", "momentum", "summary"],
+      "description": "事件类别：关键偏离 / 后勤瓶颈 / 朝堂内耗 / 势能转折 / 分支结局"
+    },
+    "year": {
+      "type": "integer",
+      "description": "事件发生的公元年"
+    },
+    "place_id": {
+      "type": "string",
+      "description": "关联治所 ID（可选；某些事件无具体治所，如 faction/summary）"
+    },
+    "place_name": {
+      "type": "string",
+      "description": "关联治所中文名（便于 UI 直接渲染）"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["info", "warn", "bad"],
+      "description": "严重度；对应 whatif ok/warn/bad 三档视觉"
+    },
+    "description": {
+      "type": "string",
+      "description": "叙事描述（一般由模板 beNarrative() 派生）"
+    },
+    "evidence": {
+      "type": "object",
+      "description": "可追溯字段，承载规则 ID/距离/振幅/累计等原始数值",
+      "properties": {
+        "rule": { "type": "string", "description": "裁决规则 ID，如 R1/R6/R7" },
+        "real_to": { "type": "string", "description": "史实阵营" },
+        "new_to": { "type": "string", "description": "本分支阵营" },
+        "factor": { "type": "number", "description": "物理因子（logistics）" },
+        "dist": { "type": "number", "description": "投送距离 km（logistics）" },
+        "radius": { "type": "number", "description": "投送半径 km（logistics）" },
+        "season": { "type": "string", "description": "季节 spring/summer/fall/winter（logistics）" },
+        "winter": { "type": "boolean", "description": "是否冬季（logistics）" },
+        "winterPenalty": { "type": "number", "description": "冬季系数（logistics）" },
+        "amp": { "type": "number", "description": "派系内耗振幅（faction）" },
+        "inf": { "type": "number", "description": "派系弹性（faction）" },
+        "pen": { "type": "number", "description": "派系内耗折扣 = amp × inf（faction）" },
+        "active": { "type": "integer", "description": "活跃派系数（faction）" },
+        "cum": { "type": "integer", "description": "累计偏离数（momentum/summary）" },
+        "threshold": { "type": "integer", "description": "势能阈值 5/10/15/20（momentum）" },
+        "match": { "type": "integer", "description": "吻合治所数（summary）" },
+        "total": { "type": "integer", "description": "治所总数（summary）" }
+      }
+    }
+  },
+  "examples": [
+    {
+      "kind": "divergence",
+      "year": 1619,
+      "place_id": "kaiyuan",
+      "place_name": "开原",
+      "severity": "bad",
+      "evidence": { "rule": "R1", "real_to": "明方", "new_to": "清方" }
+    },
+    {
+      "kind": "logistics",
+      "year": 1622,
+      "place_id": "guangning",
+      "place_name": "广宁",
+      "severity": "warn",
+      "evidence": {
+        "factor": 0.75,
+        "dist": 0,
+        "radius": 300,
+        "season": "winter",
+        "winter": true,
+        "winterPenalty": 0.75
+      }
+    },
+    {
+      "kind": "faction",
+      "year": 1622,
+      "severity": "info",
+      "evidence": { "amp": 0.6, "inf": 0.1, "pen": 0.06, "active": 8 }
+    },
+    {
+      "kind": "momentum",
+      "year": 1621,
+      "severity": "warn",
+      "evidence": { "cum": 5, "threshold": 5 }
+    },
+    {
+      "kind": "summary",
+      "year": 1644,
+      "severity": "bad",
+      "evidence": { "cum": 18, "match": 24, "total": 36 }
+    }
+  ]
+}

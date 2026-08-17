@@ -68,6 +68,22 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .fac-bar i{display:block;height:5px;background:#3fb950;border-radius:2px;min-width:1px}
 .logi-row{font-size:clamp(9px,0.9vw,11px);color:#c9d1d9;border-bottom:1px solid #21262d;padding:2px 0}
 .logi-row .f{color:#8b949e;font-size:9px}
+/* v0.57 分支事件（跨事件通用模板，对应 whatif 的 ok/warn/bad 视觉） */
+.be-year{border:1px solid #30363d;border-radius:4px;margin:4px 0;padding:4px 6px;background:#161b22}
+.be-year.be-info{border-left:3px solid #58a6ff}
+.be-year.be-warn{border-left:3px solid #d29922}
+.be-year.be-bad{border-left:3px solid #f85149}
+.be-yr{font-size:10px;color:#8b949e;font-weight:600;margin-bottom:3px}
+.be-row{display:flex;gap:4px;align-items:flex-start;font-size:clamp(9px,0.9vw,11px);color:#c9d1d9;padding:2px 0;border-top:1px dashed #21262d}
+.be-row:first-of-type{border-top:none}
+.be-kind{flex:0 0 auto;font-size:9px;color:#8b949e;background:#21262d;padding:1px 4px;border-radius:3px}
+.be-sev{flex:0 0 auto;font-size:9px;padding:1px 4px;border-radius:3px;color:#0d1117;font-weight:600}
+.be-info .be-sev{background:#58a6ff}
+.be-warn .be-sev{background:#d29922}
+.be-bad  .be-sev{background:#f85149}
+.be-desc{flex:1 1 auto;line-height:1.4}
+.be-desc .hl{color:#f85149;font-weight:600}
+.be-desc .ok{color:#3fb950;font-weight:600}
 </style>
 </head>
 <body>
@@ -101,6 +117,9 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 
   <h3>🔀 反事实分支（维度#12）</h3>
   <div class="ctrl-row" id="branchBox"></div>
+
+  <h3>🧩 分支事件（v0.57·跨事件通用模板）</h3>
+  <div id="be"><span class="m">（默认重放：零分支事件。切换反事实分支后渲染）</span></div>
 
   <h3>📊 国势 / 吻合度</h3>
   <div class="stats" id="stats"></div>
@@ -492,6 +511,17 @@ document.querySelectorAll('.map-tools button').forEach(b=>{
 // 地形：羊皮纸色带 + ESRI 山影（自 sarhu.html 移植，符号化）
 // =============================================================
 let tImg=null;
+// 真实中国地形栅格底图（复旦 CHGIS DemTopo，等距圆柱投影，范围 lon[60.00556,149.116667] lat[59.98861(顶)→10.0(底)]）
+// 关键修复：用 9 参 drawImage 按当前视窗（辽东/中国）做「源裁剪」，
+// 做到「中国地形图，但截出辽东这一块」，而非把整张中国地形拉伸进辽东子窗。
+let chinaImg=null, chinaReady=false;
+const CHINA_DEM={ src:'demtopo_china.jpg', lonMin:60.00556, lonMax:149.116667, latTop:59.98861, latBot:10.0 };
+function loadChinaTerrain(){
+  const img=new Image();
+  img.onload=function(){ chinaImg=img; chinaReady=true; drawTerrain(); };
+  img.onerror=function(){ chinaImg=null; chinaReady=false; };
+  img.src=CHINA_DEM.src;
+}
 const RAMP=[
   [0,    [214,227,232]],  // 水体：淡蓝
   [1,    [243,240,229]],  // 海平面：羊皮纸
@@ -552,22 +582,48 @@ function drawTerrain(){
   const dpr=window.devicePixelRatio||1;
   ctx.setTransform(1,0,0,1,0,0);
   ctx.fillStyle='#EFECE2'; ctx.fillRect(0,0,cv.width,cv.height);
-  if(!TERR || !tImg) return;
-  // 把 GDEM 网格（lon0..lon0+(nx-1)*step × lat0..lat0+(ny-1)*step）按视图 bbox 投影
-  const lonMax=TERR.lon0+(TERR.nx-1)*TERR.step;
-  const latMax=TERR.lat0+(TERR.ny-1)*TERR.step;
-  const lonC=Math.max(VIEW_LON0, Math.min(VIEW_LON1, lonMax));
-  const lonC0=Math.max(VIEW_LON0, Math.min(VIEW_LON1, TERR.lon0));
-  const latC0=Math.max(VIEW_LAT0, Math.min(VIEW_LAT1, TERR.lat0));
-  const latC1=Math.max(VIEW_LAT0, Math.min(VIEW_LAT1, latMax));
-  if(lonC0>=lonC || latC0>=latC1) return;
-  const gx=pX(lonC0, 1000), gw=pX(lonC, 1000)-gx;
-  const gy=pY(latC1, 800),   gh=pY(latC0, 800)-gy;
   const s=(cw/view.w)*dpr;
   ctx.setTransform(s,0,0,s,-view.x*s,-view.y*s);
   ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high';
-  ctx.drawImage(tImg, gx,gy,gw,gh);
+  if(chinaReady && chinaImg){ drawChinaCrop(ctx); }
+  else if(TERR && tImg){ drawGridCrop(ctx); }
   ctx.setTransform(1,0,0,1,0,0);
+}
+// 真实中国 DemTopo：按当前视窗对全中国图做「源裁剪」，只绘出视窗对应的经纬度区块
+function drawChinaCrop(ctx){
+  const L0=CHINA_DEM.lonMin, L1=CHINA_DEM.lonMax, T=CHINA_DEM.latTop, B=CHINA_DEM.latBot;
+  const iw=chinaImg.naturalWidth, ih=chinaImg.naturalHeight;
+  // 视图 bbox 与图像地理范围的交集
+  const lonA=Math.max(VIEW_LON0, L0), lonB=Math.min(VIEW_LON1, L1);
+  const latA=Math.max(VIEW_LAT0, B),  latB=Math.min(VIEW_LAT1, T);
+  if(lonA>=lonB || latA>=latB) return;
+  // 源裁剪矩形（图像像素坐标，北在上）
+  const sx0=(lonA-L0)/(L1-L0)*iw;
+  const sw =(lonB-lonA)/(L1-L0)*iw;
+  const syTop=(T-latB)/(T-B)*ih;   // latB = 较高纬 → 顶部，y 小
+  const syBot=(T-latA)/(T-B)*ih;   // latA = 较低纬 → 底部，y 大
+  const sy0=Math.min(syTop,syBot), sh=Math.abs(syBot-syTop);
+  // 目标矩形（地图用户坐标，与矢量底图同一投影）
+  const gx=pX(lonA,1000), gw=pX(lonB,1000)-gx;
+  const gy=pY(latB,800),   gh=pY(latA,800)-gy;
+  if(gw<=0||gh<=0||sw<=0||sh<=0) return;
+  ctx.drawImage(chinaImg, sx0,sy0,sw,sh, gx,gy,gw,gh);
+}
+// 兜底：GDEM 网格 canvas（低分辨率），同样按经纬度源裁剪，避免整图拉伸
+function drawGridCrop(ctx){
+  const lonMax=TERR.lon0+(TERR.nx-1)*TERR.step;
+  const latMax=TERR.lat0+(TERR.ny-1)*TERR.step;
+  const lonA=Math.max(VIEW_LON0, TERR.lon0), lonB=Math.min(VIEW_LON1, lonMax);
+  const latA=Math.max(VIEW_LAT0, TERR.lat0),  latB=Math.min(VIEW_LAT1, latMax);
+  if(lonA>=lonB || latA>=latB) return;
+  const ixA=(lonA-TERR.lon0)/TERR.step, ixB=(lonB-TERR.lon0)/TERR.step;
+  const rowTop=(TERR.ny-1)-(latB-TERR.lat0)/TERR.step;
+  const rowBot=(TERR.ny-1)-(latA-TERR.lat0)/TERR.step;
+  const sx0=ixA, sw=ixB-ixA, sy0=Math.min(rowTop,rowBot), sh=Math.abs(rowBot-rowTop);
+  const gx=pX(lonA,1000), gw=pX(lonB,1000)-gx;
+  const gy=pY(latB,800),   gh=pY(latA,800)-gy;
+  if(gw<=0||gh<=0||sw<=0||sh<=0) return;
+  ctx.drawImage(tImg, sx0,sy0,sw,sh, gx,gy,gw,gh);
 }
 
 // =============================================================
@@ -756,7 +812,7 @@ function paint(){
   applyViewBBox();
   fitView();
   drawTerrain(); drawBase(); drawDynamic(); drawScaleBar();
-  renderFactions(); renderLogistics();
+  renderFactions(); renderLogistics(); renderBranchEvents();
   updateStats(); updateNarr(); updateTrace();
   document.getElementById('vYear').textContent=year;
   document.getElementById('year').value=year;
@@ -851,6 +907,160 @@ function renderLogistics(){
   el.innerHTML=html;
 }
 
+// ---- v0.57 分支事件（跨事件通用模板·whatif 同源 ok/warn/bad 视觉） ----
+// 任何历史事件只要提供 seats/transitions/rules/state 即可派生以下事件：
+//  divergence（关键偏离）/ logistics（后勤瓶颈）/ faction（朝堂内耗）/ momentum（势能转折）/ summary（分支结局）
+// 每个事件 severity=info|warn|bad → 对应 whatif 的 ok/warn/bad 视觉。事件纯函数派生，确定性、无随机。
+const BE_KIND_LABEL     = { divergence:'关键偏离', logistics:'后勤瓶颈', faction:'朝堂内耗', momentum:'势能转折', summary:'分支结局' };
+const BE_SEVERITY_LABEL = { info:'趋势', warn:'风险', bad:'危局' };
+function beKeySeats(){
+  // 场景可在 SIM_RULES.keySeats 覆盖；缺省走辽东战略重镇列表（任何新历史事件直接复用本模板）
+  return (R && R.keySeats) || ['shenyang','liaoyang','guangning','jinzhou','ningyuan'];
+}
+// 有效参数：合并当前反事实分支的 override。任何需要按分支敏感派生事件的读取都走这里，
+// 否则 runTo 只改本地 p 而不动全局 params，模板会读到默认参数（看不到 logistics/faction 事件）。
+function effectiveParams(){
+  const p = Object.assign({}, params);
+  const br = currentBranch ? getBranch(currentBranch) : null;
+  if(br && br.override) Object.keys(br.override).forEach(k=> p[k]=br.override[k]);
+  return p;
+}
+// 通用叙事模板（中文·对应 whatif 的「可行→走势预测+风险 / 不可行→逐条列违规」）
+function beNarrative(ev){
+  const placeName = ev.place_name || '';
+  const evYear = ev.year;
+  const evd = ev.evidence || {};
+  switch(ev.kind){
+    case 'divergence': {
+      if(ev.severity==='bad')  return `${evYear}年，<span class="hl">${placeName}</span>脱离史实（${evd.rule||'裁决'}）：原${evd.real_to||'明方'} → 本分支${evd.new_to||'清方'}。`;
+      if(ev.severity==='warn') return `${evYear}年，${placeName}归属争议（contested），朝局或军势受压。`;
+      return `${evYear}年，${placeName}回到史实阵营。`;
+    }
+    case 'logistics':
+      return `${evYear}年投送${placeName}：${evd.dist.toFixed(0)}km / 半径${evd.radius}km${(evd.dist>evd.radius)?'（<span class="hl">超距</span>）':'（<span class="ok">在半径内</span>）'}，季节${seasonCN(evd.season)}${evd.winter?'（冬×'+evd.winterPenalty+'）':''}，物理因子 <b>${evd.factor.toFixed(2)}</b>。`;
+    case 'faction':
+      return `${evYear}年朝堂内耗 <b>${(evd.amp*evd.inf).toFixed(2)}</b>（振幅 ${evd.amp.toFixed(2)} × 弹性 ${evd.inf.toFixed(2)}），活跃 ${evd.active} 派，明方执行力×<b>${(1-evd.amp*evd.inf).toFixed(2)}</b>。`;
+    case 'momentum':
+      return `${evYear}年累计偏离已达 <span class="hl">${evd.cum} 处</span>（${evd.threshold}阈值触发），分支势能转向。`;
+    case 'summary': {
+      const c = evd.cum;
+      const pct = Math.round(evd.match*100/evd.total);
+      const verdict = c===0?'与史实一致':c<10?'<span class="hl">小幅偏差</span>':c<20?'<span class="hl">明显偏差</span>':'<span class="hl">大幅偏离史实</span>';
+      return `${evYear}分支终局：${c} 处偏离（吻合 ${evd.match}/${evd.total}，${pct}%），${verdict}。`;
+    }
+    default: return ev.description || '';
+  }
+}
+// 事件派生器（纯函数，对引擎状态确定性生成。任何历史事件复用同一组生成器）
+function computeBranchEvents(){
+  const events = [];
+  const ks = beKeySeats();
+  const ep = effectiveParams();   // 当前反事实分支的有效参数（含 override）
+  // 1) divergence 事件（按年份聚合关键偏离，trace 取规则与原阵营）
+  const byYear = {};
+  (divergences||[]).forEach(d=>{ (byYear[d.year]=byYear[d.year]||[]).push(d); });
+  Object.keys(byYear).sort((a,b)=>+a-+b).forEach(y=>{
+    const ds = byYear[y];
+    const hit = ds.find(d=> ks.includes(d.place));
+    if(hit){
+      const tr = (trace||[]).find(t=> t.year===+y && t.place_id===hit.place);
+      events.push({
+        kind:'divergence', year:+y, place_id:hit.place,
+        place_name: seatById[hit.place]?seatById[hit.place].name:hit.name,
+        severity:'bad',
+        evidence:{ rule: tr?tr.rule:'R1', real_to: tr?tr.from:'史实', new_to: hit.to }
+      });
+    } else {
+      events.push({
+        kind:'divergence', year:+y, place_id: ds[0].place,
+        place_name: seatById[ds[0].place]?seatById[ds[0].place].name:ds[0].name,
+        severity: ds[0].faction?'warn':'info',
+        evidence:{ rule: ds[0].faction?'R6':'R1', summary:`${ds.length}处争议/弃守` }
+      });
+    }
+  });
+  // 2) momentum 事件（每累计 5/10/15/20 处偏离触发势能转折）
+  const thresholds = [5,10,15,20];
+  let cum = 0; const triggered = new Set();
+  (divergences||[]).slice().sort((a,b)=>a.year-b.year).forEach(d=>{
+    cum++;
+    thresholds.forEach(t=>{ if(cum===t && !triggered.has(t)){ triggered.add(t);
+      events.push({ kind:'momentum', year:d.year, severity: t>=15?'bad':'warn', evidence:{ cum, threshold:t } });
+    } });
+  });
+  // 3) logistics 事件（启用后勤惩罚时，每处超距/冬季运输为风险/危局）
+  if(ep.logisticsPenalty > 0){
+    const baseState = Object.assign({},state);
+    D.transitions.forEach(t=>{
+      const pf = physicalFactor(t, t.year, baseState);
+      if(pf.factor < 0.95 && (pf.over>0 || pf.winter)){
+        events.push({
+          kind:'logistics', year:t.year, place_id:t.place_id,
+          place_name: seatById[t.place_id]?seatById[t.place_id].name:t.place_id,
+          severity: pf.factor < 0.7 ? 'bad' : 'warn',
+          evidence:{ factor:pf.factor, dist:pf.dist, radius:pf.radius, season:pf.season, winter:pf.winter, base:pf.base, winterPenalty:ep.winterPenalty }
+        });
+      }
+    });
+  }
+  // 4) faction 事件（启用内耗时，扫描全时间轴取峰值——任何历史事件复用同一口径）
+  if(ep.factionInfightAmp > 0){
+    const FACTION_PEN_THRESHOLD = 0.05;
+    let peakY = year, peakPen = 0, peakInf = 0;
+    for(let y = D.meta.startYear; y <= year; y++){
+      const inf = courtInfighting(y);
+      const pen = ep.factionInfightAmp*inf;
+      if(pen > peakPen){ peakPen=pen; peakY=y; peakInf=inf; }
+    }
+    if(peakPen > FACTION_PEN_THRESHOLD){
+      const active = (IC.factions||[]).filter(f=>f.side==='ming' && peakY>=f.period[0] && peakY<=f.period[1]);
+      events.push({
+        kind:'faction', year:peakY, faction:'court',
+        severity: peakPen > 0.5 ? 'bad' : (peakPen > 0.25 ? 'warn' : 'info'),
+        evidence:{ amp:ep.factionInfightAmp, inf:peakInf, pen:peakPen, active:active.length }
+      });
+    }
+  }
+  // 5) summary（终局·权重偏离数）
+  const cumDiv = (divergences||[]).length;
+  events.push({
+    kind:'summary', year: D.meta.endYear,
+    severity: cumDiv===0?'info':(cumDiv<10?'warn':'bad'),
+    evidence:{ cum:cumDiv, match:matchCount(), total:SEATS.length }
+  });
+  // 排序：summary 在末；其余按年份升序
+  events.sort((a,b)=>{ if(a.kind==='summary') return 1; if(b.kind==='summary') return -1; return a.year-b.year; });
+  return events;
+}
+function renderBranchEvents(){
+  const el = document.getElementById('be');
+  if(!el) return;
+  if(!currentBranch){
+    el.innerHTML = '<div class="md">（史实重放：零分支事件。切换反事实分支后渲染）</div>';
+    return;
+  }
+  const events = computeBranchEvents();
+  if(events.length===0){ el.innerHTML = '<div class="md">（本分支无偏离事件）</div>'; return; }
+  // 按年份聚合（同年事件合并为一块）
+  const byYear = {};
+  events.forEach(e=>{ (byYear[e.year]=byYear[e.year]||[]).push(e); });
+  let html = '';
+  Object.keys(byYear).sort((a,b)=>+a-+b).forEach(y=>{
+    const list = byYear[y];
+    const sevs = list.map(e=>e.severity);
+    const cls = sevs.includes('bad')?'be-bad':(sevs.includes('warn')?'be-warn':'be-info');
+    html += '<div class="be-year '+cls+'"><div class="be-yr">'+y+(list.some(e=>e.kind==='summary')?' · 终局':'')+'</div>';
+    list.forEach(e=>{
+      html += '<div class="be-row be-'+e.severity+'">'+
+        '<span class="be-kind">'+BE_KIND_LABEL[e.kind]+'</span>'+
+        '<span class="be-sev">'+BE_SEVERITY_LABEL[e.severity]+'</span>'+
+        '<div class="be-desc">'+beNarrative(e)+'</div></div>';
+    });
+    html += '</div>';
+  });
+  el.innerHTML = html;
+}
+
 // ---- 控制 ----
 document.getElementById('btnRun').onclick=run;
 document.getElementById('btnPause').onclick=pause;
@@ -877,8 +1087,9 @@ window.SIM_ENGINE = {
   hasRule: (id)=> (R.rules||[]).some(x=>x.id===id),
   branchIds: ()=> (R.branches||[]).map(b=>b.id),
   missingDimDims: ()=> Object.keys(R.missing_dims||{}).map(k=>R.missing_dims[k].dim),
-  hasTerrain: ()=> !!TERR,
-  terrainReady: ()=> !!tImg,
+  hasTerrain: ()=> chinaReady || !!TERR,
+  terrainReady: ()=> chinaReady,
+  chinaTerrainSrc: ()=> chinaReady? CHINA_DEM.src : null,
   hasBasemap: ()=> !!BM,
   viewFit: ()=> viewFit,
   setView: setView,
@@ -894,12 +1105,18 @@ window.SIM_ENGINE = {
   branchIds: ()=> (R.branches||[]).map(b=>b.id),
   factionPanelHTML: ()=> { const e=document.getElementById('pf2'); return e?e.innerHTML:null; },
   logisticsPanelHTML: ()=> { const e=document.getElementById('logi'); return e?e.innerHTML:null; },
+  // v0.57 分支事件模板（跨事件通用）
+  branchEvents: ()=> computeBranchEvents ? computeBranchEvents() : [],
+  branchEventHTML: ()=> { const e=document.getElementById('be'); return e?e.innerHTML:null; },
+  branchEventKinds: ()=> Object.keys(BE_KIND_LABEL),
+  branchEventTemplateSchema: ()=> ({ kind_options:['divergence','logistics','faction','momentum','summary'], severity_options:['info','warn','bad'], required:['kind','year'], optional:['place_id','place_name','description','evidence'] }),
   resetDefault: replay
 };
 
 // ---- 启动 ----
 window.onload=function(){
   tImg=buildTerrainImage();
+  loadChinaTerrain();
   initMap();
   buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims();
   measure();

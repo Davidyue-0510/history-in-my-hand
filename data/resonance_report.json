@@ -285,15 +285,15 @@
     {
       "scene": "canhebei",
       "name": "canhebei",
-      "total": 13,
+      "total": 16,
       "layers": {
         "scholarship": 3,
-        "record": 7,
+        "record": 9,
         "inference": 1,
-        "gap": 2
+        "gap": 3
       },
       "party_counts": {
-        "综合史料": 13
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -342,14 +342,14 @@
     {
       "scene": "chengpu",
       "name": "chengpu",
-      "total": 14,
+      "total": 16,
       "layers": {
         "scholarship": 3,
-        "record": 9,
-        "gap": 2
+        "record": 10,
+        "gap": 3
       },
       "party_counts": {
-        "综合史料": 14
+        "综合史料": 16
       },
       "faction_counts": {},
       "event_count": 3,
@@ -397,15 +397,15 @@
     {
       "scene": "chibi",
       "name": "chibi",
-      "total": 14,
+      "total": 19,
       "layers": {
         "scholarship": 3,
-        "record": 9,
+        "record": 13,
         "inference": 1,
-        "gap": 1
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 14
+        "综合史料": 19
       },
       "faction_counts": {},
       "event_count": 3,
@@ -851,15 +851,15 @@
     {
       "scene": "heshangyuan",
       "name": "heshangyuan",
-      "total": 14,
+      "total": 18,
       "layers": {
         "scholarship": 3,
-        "record": 7,
-        "inference": 2,
-        "gap": 2
+        "record": 9,
+        "inference": 3,
+        "gap": 3
       },
       "party_counts": {
-        "综合史料": 14
+        "综合史料": 18
       },
       "faction_counts": {},
       "event_count": 3,
@@ -3497,12 +3497,12 @@
       "scene_names": [
         "chibi"
       ],
-      "total": 2,
-      "gap_count": 1,
+      "total": 3,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.5,
+      "gap_rate": 0.667,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3652,12 +3652,12 @@
       "scene_names": [
         "canhebei"
       ],
-      "total": 9,
-      "gap_count": 2,
+      "total": 10,
+      "gap_count": 3,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.222,
+      "gap_rate": 0.3,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3745,12 +3745,12 @@
       "scene_names": [
         "chengpu"
       ],
-      "total": 6,
-      "gap_count": 1,
+      "total": 7,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.167,
+      "gap_rate": 0.286,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -7000,12 +7000,12 @@
       "scene_names": [
         "heshangyuan"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 2,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.5,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
