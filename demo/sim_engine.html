@@ -56,12 +56,24 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100;color:#c9d1d9}
 .tt b{color:#fff}.tt s{color:#8b949e}
 .wall-label{font:9px system-ui;fill:#7A7466;letter-spacing:.3px}
+.fac-list{margin:4px 0}
+.fac-row{display:flex;align-items:center;gap:5px;font-size:clamp(10px,1vw,12px);padding:1px 0;opacity:.5}
+.fac-row.on{opacity:1}
+.fac-row .sw{width:10px;height:10px;border-radius:50%;flex:none}
+.fac-row .fn{font-weight:600;color:#c9d1d9;flex:1}
+.fac-row .fb{color:#8b949e;font-size:9px}
+.fac-row .belief{color:#d29922;font-size:9px}
+.fac-bar{display:flex;align-items:center;gap:4px;font-size:9px;color:#8b949e;margin:0 0 2px 15px}
+.fac-bar span{width:22px;flex:none}
+.fac-bar i{display:block;height:5px;background:#3fb950;border-radius:2px;min-width:1px}
+.logi-row{font-size:clamp(9px,0.9vw,11px);color:#c9d1d9;border-bottom:1px solid #21262d;padding:2px 0}
+.logi-row .f{color:#8b949e;font-size:9px}
 </style>
 </head>
 <body>
 <div class="sidebar">
   <h2>⚙ 确定性演化引擎</h2>
-  <div class="hint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实（同参同结果）。</div>
+  <div class="hint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实。<b>新增</b>：whatif 物理/后勤约束（R7）与党派九派内耗（R6）已整合——参数/分支 D·E·F 开启后，补给半径/冬季与朝堂内斗会真实改写推演。</div>
   <div class="legend" id="legend"></div>
 
   <h3>⛰ 海拔图例（米，底图=中国真实高程）</h3>
@@ -96,8 +108,14 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
   <h3>🔀 推演偏离史实</h3>
   <div class="divl" id="divl"><span class="m">（默认重放：零偏离）</span></div>
 
+  <h3>🚚 物理/后勤（whatif 同源）</h3>
+  <div id="logi"></div>
+
   <h3>🎭 真实 actors（派系，#3）</h3>
   <div id="pf"></div>
+
+  <h3>🏛 党派九派（#3延伸·心怀叵测）</h3>
+  <div id="pf2"></div>
 
   <h3>🧬 缺失维度占位（#7/#9/#10，带 dist）</h3>
   <div id="md"></div>
@@ -160,6 +178,76 @@ function neighbors(id){
   return SEATS.filter(b=>b.id!==id && Math.hypot((a.lon-b.lon)*COSMID, a.lat-b.lat)<1.6).map(b=>b.id);
 }
 
+// ════════════════════════════════════════════════════════════════════
+// whatif 物理/后勤模型（同源 constants；确定性，无 RNG）
+// 把 whatif.html 的「后勤/行军/补给/季节」约束抽象为可复用的单点判定，
+// 供 R7 对每条史实征服做攻击方投送可行性折扣。
+// ════════════════════════════════════════════════════════════════════
+const PHYS = {
+  rates:        { forced:60, cavalry:80, foot:40 },  // km/日：急行/骑兵/步卒 行军速（文献约值）
+  winterRate:   0.75,        // 冬季路冻/雪阻，有效行军速 ×0.75
+  ration:       1.8,         // kg/人/日 军粮（明制约 1.5–2.0）
+  water:        4,           // L/人/日 饮水
+  campEvery:    3,           // 每 3 日扎营一次
+  waterMaxKm:   8,           // 扎营点须距水源 ≤8km，否则无水
+  siegeDays:    10,          // 会战/围城 10 日
+  supplyRadius: { ming:300, qing:400 },  // 补给半径 km（超距按比例削减攻击方执行力）
+  overScale:    500,         // 超距惩罚尺度
+  // 关键战役史载季节（公历月）：其余按 seedHash 确定性派生，UI 标注"示意"
+  knownSeason: {
+    '1618|fushun':'summer','1618|qinghe':'summer',
+    '1619|kaiyuan':'spring','1619|tieling':'spring',
+    '1621|shenyang':'spring','1621|liaoyang':'spring','1621|lushun':'spring','1621|fuzhou':'spring',
+    '1621|gaizhou':'spring','1621|haizhou':'spring','1621|niuzhuang':'spring','1621|xiongyue':'spring','1621|yaozhou':'spring','1621|jinzhou_dalian':'spring',
+    '1622|guangning':'winter','1622|yizhou':'winter',
+    '1624|horqin':'summer',
+    '1628|chahar':'autumn','1628|harqin':'summer',
+    '1631|dalinghe':'autumn',
+    '1632|tumed':'summer',
+    '1635|chahar':'summer','1635|ordos':'summer',
+    '1641|jinzhou':'summer','1641|songshan':'summer','1641|xingshan':'summer',
+    '1644|ningyuan':'autumn','1644|shanhaiquan':'winter'
+  }
+};
+const SEASONS = ['spring','summer','autumn','winter'];
+const SEASON_CN = { spring:'春', summer:'夏', autumn:'秋', winter:'冬' };
+function haversine(a,b){ const R=6371,toR=Math.PI/180;
+  const dLat=(b[1]-a[1])*toR,dLon=(b[0]-a[0])*toR,la1=a[1]*toR,la2=b[1]*toR;
+  const h=Math.sin(dLat/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;
+  return 2*R*Math.asin(Math.min(1,Math.sqrt(h))); }
+function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+function seasonCN(s){ return SEASON_CN[s]||s; }
+function seasonOf(Y, pid){
+  const k=Y+'|'+pid; if(PHYS.knownSeason[k]) return PHYS.knownSeason[k];
+  const h=seedHash('season|'+k); return SEASONS[Math.floor(h*4)];
+}
+// 朝堂内耗指数（R6 前置，确定性）：活跃派系越多/利益越分化/凝聚越低 → 越高
+function courtInfighting(Y){
+  const fd=IC.factionDynamics; if(!fd) return 0;
+  const active=(IC.factions||[]).filter(f=>f.side==='ming' && Y>=f.period[0] && Y<=f.period[1]);
+  const key=active.map(f=>f.id).sort().join(',');
+  const h=seedHash('court|'+key);
+  const frac=active.length/(IC.factions?IC.factions.length:1);
+  let mean=0; active.forEach(f=>mean+=f.selfInterest); mean/=(active.length||1);
+  let varc=0; active.forEach(f=>varc+=(f.selfInterest-mean)*(f.selfInterest-mean)); varc/=(active.length||1);
+  const diversity=0.5*frac+0.5*Math.sqrt(varc);
+  return clamp((1-fd.courtCohesionBase)*(0.4+0.6*diversity)*(0.5+0.5*h), 0, 0.95);
+}
+// 攻击方投送可行性（R7）：返回 {factor,dist,base,radius,over,season,winter}
+function physicalFactor(t, Y, baseState){
+  const target=seatById[t.place_id];
+  if(!target) return { factor:1, dist:0, base:null, radius:0, over:0, season:'spring', winter:false };
+  const attacker=t.to;
+  let best=1e9, base=null;
+  SEATS.forEach(s=>{ if((baseState[s.id]||'?')===attacker){ const d=haversine([s.lon,s.lat],[target.lon,target.lat]); if(d<best){best=d; base=s;} } });
+  const radius=(attacker==='清方')?PHYS.supplyRadius.qing:PHYS.supplyRadius.ming;
+  let factor=1; const over=Math.max(0, best-radius);
+  if(over>0) factor*=clamp(1-over/PHYS.overScale, 0.3, 1);
+  const season=seasonOf(Y, t.place_id); let winter=false;
+  if(season==='winter'){ factor*=(params.winterPenalty||0.75); winter=true; }
+  return { factor, dist:best, base:base?base.name:null, radius, over, season, winter };
+}
+
 // ---- 确定性哈希（无 Math.random）：FNV-1a → [0,1) ----
 function seedHash(str){
   let h = 2166136261 >>> 0;
@@ -196,9 +284,35 @@ function resetSim(branchId){
 function applyYear(Y, p, branch){
   const ts = D.transitions.filter(t=>t.year===Y);
   const blocked = branch && branch.block ? branch.block : [];
+  const infight = (p.factionInfightAmp>0) ? courtInfighting(Y) : 0;  // 0..~0.95
+  const baseState = Object.assign({}, state);  // 本年转移前快照（供 R7 最近基地判定）
   for(const t of ts){
     if(blocked.some(b=>b.year===t.year && b.place_id===t.place_id)) continue;
-    const eff = effFor(t.to, p);
+    let eff = effFor(t.to, p);
+    let physPen = 0, infightPen = 0;
+    // R7：后勤物理约束（whatif 同源）→ 攻击方投送可行性折扣
+    if(p.logisticsPenalty>0){
+      const pf = physicalFactor(t, Y, baseState);
+      if(pf.over>0){
+        // 超补给半径→投送不可达（确定性硬约束，whatif 同源：超出可持续补给线则战役无法维持）。
+        // 仅保留极小 intrinsicP「奇迹」空间以诚实表达不确定性。
+        physPen = p.logisticsPenalty;
+        eff = Math.min(eff, 0.015);
+      } else {
+        // 半径内：距离衰减（距己方最近已控治所越远越难）+ 基础投送摩擦（即便相邻也有辎重损耗）+ 冬季折扣。
+        const gentle = clamp(1 - (pf.dist/pf.radius)*0.35, 0.45, 1);  // 距己方最近治所越远，投送越难
+        const f = pf.factor;  // 含冬季折扣
+        const baseFric = 1 - p.logisticsPenalty*0.4;                  // 基础投送摩擦：确定性，与距离无关
+        physPen = p.logisticsPenalty * (1 - gentle*f*baseFric);
+        eff *= gentle * f * baseFric;
+      }
+    }
+    // R6：党派内耗→明方攻防均弱（防御侧：攻方更易得手）
+    if(p.factionInfightAmp>0 && (t.to==='明方' || t.from==='明方') && t.to!=='contested'){
+      infightPen = p.factionInfightAmp * infight;
+      if(t.to==='明方') eff *= (1 - infightPen);
+      else eff = Math.min(1, eff * (1 + infightPen*0.6));
+    }
     const ip = intrinsicP(t.year, t.place_id, t.to, 'a');
     let success = (t.to==='contested') ? true : (ip < eff);
     if(success && p.spreadPref < 1.0 && t.to!=='contested'){
@@ -206,9 +320,25 @@ function applyYear(Y, p, branch){
       if(!hasN){ const ip2 = intrinsicP(t.year, t.place_id, t.to, 'b'); success = (ip2 < p.spreadPref); }
     }
     trace.push({ year:Y, place_id:t.place_id, name:seatById[t.place_id]?seatById[t.place_id].name:'', from:t.from, to:t.to,
-      rule:'R1', mechanism:'战争裁决(04 §战争裁决)', intrinsicP:+ip.toFixed(4), eff:+eff.toFixed(2), success, seed:(t.year+'|'+t.place_id+'|'+t.to) });
+      rule:'R1', mechanism:'战争裁决(04 §战争裁决)', intrinsicP:+ip.toFixed(4), eff:+eff.toFixed(3), physPen:+physPen.toFixed(3), infightPen:+infightPen.toFixed(3),
+      success, seed:(t.year+'|'+t.place_id+'|'+t.to) });
     if(success) state[t.place_id]=t.to;
     else divergences.push({year:Y, place:t.place_id, to:t.to, name:seatById[t.place_id]?seatById[t.place_id].name:''});
+  }
+  // R6：党派内耗→明方守土崩溃（模型推演，非史载转移）：内耗越高、确定性命中→守军溃散→contested
+  if(p.factionInfightAmp>0){
+    const pen = p.factionInfightAmp * infight;
+    SEATS.forEach(s=>{
+      if((state[s.id]||'?')==='明方'){
+        const h=seedHash('collapse|'+Y+'|'+s.id);
+        if(h < pen*0.5){
+          state[s.id]='contested';
+          divergences.push({year:Y, place:s.id, to:'contested', name:s.name, faction:true});
+          trace.push({ year:Y, place_id:s.id, name:s.name, from:'明方', to:'contested', rule:'R6', mechanism:'党派内耗守土崩溃',
+            intrinsicP:+h.toFixed(4), eff:+pen.toFixed(3), physPen:0, infightPen:+pen.toFixed(3), success:true, factionCollapse:true, seed:'collapse|'+Y+'|'+s.id });
+        }
+      }
+    });
   }
 }
 function runTo(Y, branchId){
@@ -609,8 +739,12 @@ function updateStats(){
 function updateNarr(){
   const el=document.getElementById('narr'); const pct=Math.round(matchCount()/SEATS.length*100);
   const br = currentBranch ? ('［'+getBranch(currentBranch).label+'］') : '';
-  if(pct===100) el.innerHTML='<span class="g">✓ '+br+' 精确重放史实（'+year+'年）。调低执行力/扩散或选分支即产生确定性反事实。</span>';
-  else el.innerHTML='<span class="w">⚠ '+br+' 反事实推演（'+year+'年），史实吻合度 '+pct+'%。'+divergences.length+' 处征服未在参数下达成。</span>';
+  const modes=[];
+  if(params.factionInfightAmp>0) modes.push('党派内耗');
+  if(params.logisticsPenalty>0) modes.push('后勤物理');
+  const modeTag = modes.length ? ' <span class="m">· 已启 '+modes.join('/')+' 模型</span>' : '';
+  if(pct===100) el.innerHTML='<span class="g">✓ '+br+' 精确重放史实（'+year+'年）。调低执行力/扩散或选分支即产生确定性反事实。</span>'+modeTag;
+  else el.innerHTML='<span class="w">⚠ '+br+' 反事实推演（'+year+'年），史实吻合度 '+pct+'%。'+divergences.length+' 处征服未在参数下达成。</span>'+modeTag;
 }
 function updateTrace(){ const el=document.getElementById('trace'); if(!trace.length){el.innerHTML='<span class="m">运行后显示裁决记录</span>';return;}
   el.innerHTML=trace.slice(-60).map(t=>{
@@ -622,6 +756,7 @@ function paint(){
   applyViewBBox();
   fitView();
   drawTerrain(); drawBase(); drawDynamic(); drawScaleBar();
+  renderFactions(); renderLogistics();
   updateStats(); updateNarr(); updateTrace();
   document.getElementById('vYear').textContent=year;
   document.getElementById('year').value=year;
@@ -671,6 +806,51 @@ function renderMissingDims(){
   }).join('');
 }
 
+// ── 党派九派面板（#3延伸）：各派皆信「明不亡」，私利/增援度与当年内耗 ──
+function renderFactions(){
+  const el=document.getElementById('pf2');
+  if(!el || !IC.factions) return;
+  const fd=IC.factionDynamics||{courtCohesionBase:0.85};
+  const inf = (params.factionInfightAmp>0) ? courtInfighting(year) : 0;
+  const pen = (params.factionInfightAmp>0) ? params.factionInfightAmp*inf : 0;
+  const active=IC.factions.filter(f=>f.side==='ming' && year>=f.period[0] && year<=f.period[1]);
+  let html='<div class="md"><b>朝堂内耗</b>：'+
+    (params.factionInfightAmp>0
+      ? '本年活跃 '+active.length+' 派，内耗折扣≈'+pen.toFixed(2)+'（明方执行力×'+(1-pen).toFixed(2)+'）'
+      : '（未启用：党派内耗强度=0，见参数/分支 D）')+'</div>';
+  html+='<div class="fac-list">';
+  IC.factions.forEach(f=>{
+    const on = (year>=f.period[0] && year<=f.period[1]);
+    html+='<div class="fac-row'+(on?' on':'')+'">'+
+      '<span class="sw" style="background:'+f.color+'"></span>'+
+      '<span class="fn">'+f.name+'</span>'+
+      '<span class="fb">'+(on?'活跃':'休眠')+'</span>'+
+      '<span class="belief" title="各派皆信明朝不亡，故党争优先于边患">信明不亡 ✓</span>'+
+      '</div>'+
+      '<div class="fac-bar"><span>私利</span><i style="width:'+(f.selfInterest*100)+'%"></i></div>'+
+      '<div class="fac-bar"><span>增援</span><i style="width:'+(f.reinforce*100)+'%"></i></div>';
+  });
+  html+='</div>';
+  el.innerHTML=html;
+}
+
+// ── 物理/后勤面板（whatif 同源）：启用后显示本年每处征服的投送可行性 ──
+function renderLogistics(){
+  const el=document.getElementById('logi');
+  if(!el) return;
+  if(!(params.logisticsPenalty>0)){ el.innerHTML='<div class="md">（未启用：后勤物理约束=0，见参数/分支 E。启用后显示每处征服的补给距离/季节/半径判定）</div>'; return; }
+  const ts=D.transitions.filter(t=>t.year===year);
+  if(!ts.length){ el.innerHTML='<div class="md">本年无征服事件。</div>'; return; }
+  const baseState=Object.assign({},state);
+  let html='';
+  ts.forEach(t=>{ const pf=physicalFactor(t, year, baseState);
+    html+='<div class="logi-row">'+(seatById[t.place_id]?seatById[t.place_id].name:'')+' ← '+(pf.base||'—')+
+      '<br><span class="f">'+pf.dist.toFixed(0)+'km / 半径'+pf.radius+'km '+(pf.over>0?'⚠超距':'✓')+
+      ' · '+seasonCN(pf.season)+(pf.winter?' (冬×'+params.winterPenalty+')':'')+'</span></div>';
+  });
+  el.innerHTML=html;
+}
+
 // ---- 控制 ----
 document.getElementById('btnRun').onclick=run;
 document.getElementById('btnPause').onclick=pause;
@@ -703,7 +883,18 @@ window.SIM_ENGINE = {
   viewFit: ()=> viewFit,
   setView: setView,
   basemapLayerCount: ()=>{ const s=BM[viewFit]||{}; return { land:(s.land||[]).length, rivers:(s.rivers||[]).length, admin1:(s.admin1||[]).length, lakes:(s.lakes||[]).length, coastline:(s.coastline||[]).length, wall:!!(BM.wall&&BM.wall.path) }; },
-  seatScreenPositions: ()=>{ return SEATS.map(s=>({id:s.id,name:s.name,x:pX(s.lon,1000),y:pY(s.lat,800)})); }
+  seatScreenPositions: ()=>{ return SEATS.map(s=>({id:s.id,name:s.name,x:pX(s.lon,1000),y:pY(s.lat,800)})); },
+  // ── v0.56 whatif 物理 + 党派集成访问器 ──
+  factionCount: ()=> (IC.factions||[]).length,
+  activeFactions: (Y)=> (IC.factions||[]).filter(f=>f.side==='ming' && Y>=f.period[0] && Y<=f.period[1]).map(f=>f.id),
+  infightAt: (Y)=> courtInfighting(Y),
+  physicalFactorFor: (Y,pid)=>{ const t=D.transitions.find(x=>x.year===Y && x.place_id===pid); return t?physicalFactor(t, Y, Object.assign({},state)):null; },
+  physConst: ()=> PHYS,
+  paramIds: ()=> R.params.map(p=>p.id),
+  branchIds: ()=> (R.branches||[]).map(b=>b.id),
+  factionPanelHTML: ()=> { const e=document.getElementById('pf2'); return e?e.innerHTML:null; },
+  logisticsPanelHTML: ()=> { const e=document.getElementById('logi'); return e?e.innerHTML:null; },
+  resetDefault: replay
 };
 
 // ---- 启动 ----

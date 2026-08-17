@@ -80,6 +80,26 @@ async function main(){
   const tr = await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); const t=SIM_ENGINE.getTrace();
     return { len: t.length, sampleOk: t.length>0 && !!(t[0].mechanism && t[0].seed && t[0].rule && typeof t[0].intrinsicP==='number' && typeof t[0].success==='boolean') }; });
 
+  // 9b：v0.56 whatif 物理 + 党派九派集成
+  const v056 = await page.evaluate(()=>{
+    const E=SIM_ENGINE;
+    const fcount=E.factionCount();
+    const act1644=E.activeFactions(1644);
+    const inf1=E.infightAt(1625), inf2=E.infightAt(1625);
+    const bid=E.branchIds(), pid=E.paramIds();
+    E.resetDefault(); E.runTo(1644); const defMatch=E.matchCount();
+    E.runTo(1644,'B4_faction'); const sB4a=JSON.stringify(E.getState()); const d4=E.divergences().length; const m4=E.matchCount();
+    E.runTo(1644,'B4_faction'); const sB4b=JSON.stringify(E.getState());
+    E.runTo(1644,'B5_logistics'); const d5=E.divergences().length; const m5=E.matchCount();
+    E.runTo(1644,'B6_both'); const d6=E.divergences().length; const m6=E.matchCount();
+    E.resetDefault(); const defMatch2=E.matchCount();
+    const pf2=E.factionPanelHTML(), logi=E.logisticsPanelHTML();
+    const pf=E.physicalFactorFor(1621,'shenyang');
+    return { fcount, act1644, infSame: inf1===inf2, infVal: inf1, bid, pid,
+      defMatch, d4, m4, b4same: sB4a===sB4b, d5, m5, d6, m6, defMatch2,
+      hasPf2: !!pf2, hasLogi: !!logi, pf };
+  });
+
   // 10：地形底图 + 经纬度投影（中国真实高程）
   const terr = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasTerrain(), ready: SIM_ENGINE.terrainReady(), view: SIM_ENGINE.viewFit() }; });
   await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
@@ -179,6 +199,17 @@ async function main(){
   ok(b1.guangning==='明方' && b1.guangning!==b1.terminalReal, '分支 B1 守广宁：广宁维持明方（史实='+b1.terminalReal+'），已偏离');
   ok(b1.same && b1.match < b1.total, '分支 B1 确定性且偏离史实（吻合 '+b1.match+'/'+b1.total+'）');
   ok(tr.len>0 && tr.sampleOk, '推演溯源 trace 非空且含 mechanism/seed/rule/intrinsicP/success → 条数 '+tr.len);
+  ok(v056.fcount===9, '党派九派数=9 → 实际 '+v056.fcount);
+  ok(Array.isArray(v056.act1644), 'activeFactions(1644) 返回数组 → '+JSON.stringify(v056.act1644));
+  ok(v056.infSame && typeof v056.infVal==='number', 'infightAt 确定性（同参同值）→ '+v056.infVal.toFixed(3));
+  ok(v056.bid.includes('B4_faction')&&v056.bid.includes('B5_logistics')&&v056.bid.includes('B6_both'), '新增反事实分支 B4/B5/B6 存在 → '+v056.bid.join(','));
+  ok(v056.pid.includes('factionInfightAmp')&&v056.pid.includes('logisticsPenalty')&&v056.pid.includes('winterPenalty'), '新增参数 党派内耗/后勤物理/冬季系数 → '+v056.pid.join(','));
+  ok(v056.defMatch===36 && v056.defMatch2===36, '默认重放仍 100%（新层默认参数=0 不破坏重放）→ '+v056.defMatch+'/'+v056.defMatch2);
+  ok(v056.d4>0 && v056.m4<36 && v056.b4same, '反事实 D（党派内耗）确定性偏离：额外崩溃 '+v056.d4+' 处，吻合 '+v056.m4+'/36');
+  ok(v056.d5>0 && v056.m5<36, '反事实 E（后勤物理）确定性偏离：'+v056.d5+' 处，吻合 '+v056.m5+'/36');
+  ok(v056.d6>0 && v056.m6<36, '反事实 F（内耗+物理双开）确定性偏离：'+v056.d6+' 处，吻合 '+v056.m6+'/36');
+  ok(v056.hasPf2 && v056.hasLogi, '党派面板(#pf2)与物理/后勤面板(#logi)均已渲染');
+  ok(v056.pf && typeof v056.pf.factor==='number', 'physicalFactorFor(1621,shenyang) 返回因子 → '+JSON.stringify(v056.pf));
   ok(terr.has, 'CHINA_TERRAIN 已加载（中国真实高程网格，ASTER GDEM）');
   ok(terr.ready, '地形底图离屏画布已构建（terrainReady）');
   ok(posOkL, '辽东视图：36 治所按经纬度投影（viewBox 0-1000）全部有效');
