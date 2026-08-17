@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["chengpu"] = {
    "id": "jinwen",
    "name": "晋文公",
    "side": "晋",
-   "influence": 1
+   "influence": 2
   },
   {
    "id": "ziyu",
@@ -401,12 +401,57 @@ window.SANDBOX_SLICES["chengpu"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX009",
+   "subject": "person:jinwen",
+   "predicate": "动机",
+   "value_text": "报楚三年之恩",
+   "time": {
+    "era_text": "周襄王二十年",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "报楚三年之恩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "晋文公个人动机，地点未明确",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAP_EXPAND",
+   "subject": "event:cp_chu",
+   "predicate": "史料缺环",
+   "value_text": "",
+   "time": {
+    "era_text": "周襄王二十年",
+    "gregorian_year": -632,
+    "start": "-632-01-01",
+    "end": "-632-12-31"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "no_quote",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
   "SX010_M7",
-  "CHENGPUG01"
+  "CHENGPUG01",
+  "GAP_EXPAND"
  ],
  "events": [
   {

@@ -65,13 +65,13 @@ window.SANDBOX_SLICES["canhebei"] = {
    "id": "tuobagui",
    "name": "拓跋珪",
    "side": "北魏",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "murongbao",
    "name": "慕容宝",
    "side": "后燕",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -363,12 +363,79 @@ window.SANDBOX_SLICES["canhebei"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX003",
+   "subject": "person:tuobagui",
+   "predicate": "军事行动",
+   "value_text": "潜济河，屯于河南",
+   "time": {
+    "era_text": "太元二十年",
+    "start": "395-01-01",
+    "end": "395-12-31",
+    "gregorian_year": 395
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "魏主拓跋珪潜济河，屯于河南",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "河南为泛称，未映射",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007",
+   "subject": "person:murongbao",
+   "predicate": "败逃",
+   "value_text": "单骑走免",
+   "time": {
+    "era_text": "太元二十年",
+    "start": "395-01-01",
+    "end": "395-12-31",
+    "gregorian_year": 395
+   },
+   "place": "canhebei",
+   "source": "synthesis",
+   "quote": "慕容宝单骑走免",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAP_EXPAND",
+   "subject": "event:ch_jz",
+   "predicate": "史料缺环",
+   "value_text": "",
+   "time": {
+    "era_text": "太元二十年",
+    "gregorian_year": 395,
+    "start": "395-01-01",
+    "end": "395-12-31"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "no_quote",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
   "SX009_M21",
-  "CANHEBEIG01"
+  "CANHEBEIG01",
+  "GAP_EXPAND"
  ],
  "events": [
   {

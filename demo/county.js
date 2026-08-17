@@ -224,7 +224,10 @@
     document.getElementById('zoomBadge').textContent = (fitW / view.w).toFixed(1) + '×';
     if (gTopo) gTopo.style.display = (state.terrain.on && !IS_ABSTRACT) ? '' : 'none';
     if (!IS_ABSTRACT && state.control.on && window.BorderLayer && BorderLayer.isReady()) BorderLayer.repaint();
-    if (!IS_ABSTRACT && state.control.on && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
+    // 实控区图层的可见性由 state.ctrlOn 驱动（drawControl 仅在 ctrlOn 时绘制 ControlLayer），
+    // 不能用 state.control.on（那只管 BorderLayer 政区界线）。否则辽东剧场战争场景 ctrlOn 自动开启、
+    // control.on 仍为 false 时，拖动地图 applyView 不重绘控制层 → 暂停时间轴拖动地图控制层卡死。
+    if (!IS_ABSTRACT && state.ctrlOn && window.ControlLayer && ControlLayer.isReady()) ControlLayer.repaint();
     if (!IS_ABSTRACT && state.impactOn && window.ImpactLayer && ImpactLayer.isReady()) ImpactLayer.repaint();
     if (!IS_ABSTRACT && state.chgis.on && window.ChgisLayer && ChgisLayer.isReady()) ChgisLayer.repaint();
     if (!IS_ABSTRACT && state.battle.on && window.BattleLayer && BattleLayer.isReady()) BattleLayer.repaint();

@@ -393,11 +393,34 @@ window.SANDBOX_SLICES["julu"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "GAP_EXPAND",
+   "subject": "event:jl_xiang",
+   "predicate": "史料缺环",
+   "value_text": "",
+   "time": {
+    "era_text": "秦二世三年",
+    "gregorian_year": -207,
+    "start": "-207-01-01",
+    "end": "-207-12-31"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "no_quote",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
-  "JULUG01"
+  "JULUG01",
+  "GAP_EXPAND"
  ],
  "events": [
   {

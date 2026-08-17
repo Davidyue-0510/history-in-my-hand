@@ -85,13 +85,13 @@ window.SANDBOX_SLICES["chibi"] = {
    "id": "zhouyu",
    "name": "周瑜",
    "side": "吴",
-   "influence": 1
+   "influence": 2
   },
   {
    "id": "huanggai",
    "name": "黄盖",
    "side": "吴",
-   "influence": 1
+   "influence": 2
   },
   {
    "id": "caocao",
@@ -409,11 +409,122 @@ window.SANDBOX_SLICES["chibi"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX002",
+   "subject": "person:zhouyu",
+   "predicate": "任命",
+   "value_text": "前部大督",
+   "time": {
+    "era_text": "建安十三年冬",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "孙权命周瑜为前部大督",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX003",
+   "subject": "army:wu_total",
+   "predicate": "兵力",
+   "value_text": "吴军三万",
+   "time": {
+    "era_text": "建安十三年冬",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "率吴军三万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "army:wu_total 未在白名单，改用 note 说明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX004",
+   "subject": "army:liubei_total",
+   "predicate": "兵力",
+   "value_text": "刘备军二万",
+   "time": {
+    "era_text": "建安十三年冬",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "与刘备军二万会于樊口",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "army:liubei_total 未在白名单，改用 note 说明",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX008",
+   "subject": "person:huanggai",
+   "predicate": "火攻",
+   "value_text": "诈降火攻之策",
+   "time": {
+    "era_text": "建安十三年冬",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "synthesis",
+   "quote": "周瑜用黄盖诈降火攻之策",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAP_EXPAND",
+   "subject": "event:cb_jz",
+   "predicate": "史料缺环",
+   "value_text": "",
+   "time": {
+    "era_text": "建安十三年",
+    "gregorian_year": 208,
+    "start": "208-01-01",
+    "end": "208-12-31"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "no_quote",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "gaps": [
-  "CHIBIG01"
+  "CHIBIG01",
+  "GAP_EXPAND"
  ],
  "events": [
   {

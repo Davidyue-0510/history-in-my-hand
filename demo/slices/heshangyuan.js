@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "id": "wuju",
    "name": "吴玠",
    "side": "宋",
-   "influence": 3
+   "influence": 4
   },
   {
    "id": "wulin",
@@ -87,7 +87,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "id": "wuzhu",
    "name": "兀术",
    "side": "金",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -400,12 +400,114 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SX003",
+   "subject": "person:wuju",
+   "predicate": "部署",
+   "value_text": "吴玠命弟吴璘以劲弩据险邀击",
+   "time": {
+    "era_text": "绍兴元年三月",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "heshangyuan",
+   "source": "synthesis",
+   "quote": "吴玠命弟吴璘以劲弩据险邀击",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX007",
+   "subject": "person:wuzhu",
+   "predicate": "败逃",
+   "value_text": "宗弼仅以身免，剃须髯遁归",
+   "time": {
+    "era_text": "绍兴元年三月",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "heshangyuan",
+   "source": "synthesis",
+   "quote": "宗弼仅以身免，剃其须髯遁归",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "county",
+   "note": "",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SX010",
+   "subject": "person:wuju",
+   "predicate": "战术",
+   "value_text": "吴玠以步制骑之策由此显",
+   "time": {
+    "era_text": "绍兴元年三月",
+    "start": "1131-01-01",
+    "end": "1131-12-31",
+    "gregorian_year": 1131
+   },
+   "place": "heshangyuan",
+   "source": "synthesis",
+   "quote": "吴玠以步制骑之策由此显",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "county",
+   "note": "原文为史家评述，非直接事实，故标inference",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAP_EXPAND",
+   "subject": "event:hs_jz",
+   "predicate": "史料缺环",
+   "value_text": "",
+   "time": {
+    "era_text": "绍兴元年",
+    "gregorian_year": 1131,
+    "start": "1131-01-01",
+    "end": "1131-12-31"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "no_quote",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "battle",
+   "note": "此役的伤亡数字、参战兵力与战役时长，正史与诸家记载互有出入，相关数字与因果链存在缺口。",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "id": "cf:person:wuju|战术",
+   "subject": "person:wuju",
+   "predicate": "战术",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX005_M12",
+    "SX010"
+   ]
+  }
+ ],
  "gaps": [
   "SX010_M12",
-  "HESHANGYUANG01"
+  "HESHANGYUANG01",
+  "GAP_EXPAND"
  ],
  "events": [
   {
