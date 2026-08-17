@@ -4176,6 +4176,245 @@ window.SANDBOX_SLICES["sarhu"] = {
  },
  "events": [],
  "edges": [],
+ "control": [
+  {
+   "place_id": "hetuala",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "jiefan",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "sarhu",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "jilinya",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "fushun",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "qinghe",
+   "party": "清方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "shenyang",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "kaiyuan",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "kuandian",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "shangjianya",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "shangjianya",
+   "party": "清方",
+   "start": 1619,
+   "end": 1619
+  },
+  {
+   "place_id": "feifenshan",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "feifenshan",
+   "party": "清方",
+   "start": 1619,
+   "end": 1619
+  },
+  {
+   "place_id": "niumaozhai",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "niumaozhai",
+   "party": "清方",
+   "start": 1619,
+   "end": 1619
+  },
+  {
+   "place_id": "abudaligang",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "abudaligang",
+   "party": "清方",
+   "start": 1619,
+   "end": 1619
+  },
+  {
+   "place_id": "fucha",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "fucha",
+   "party": "清方",
+   "start": 1619,
+   "end": 1619
+  },
+  {
+   "place_id": "yehe",
+   "party": "明方",
+   "start": 1618,
+   "end": 1619
+  },
+  {
+   "place_id": "yehe",
+   "party": "contested",
+   "start": 1619,
+   "end": 1619
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "hetuala",
+   "name": "赫图阿拉",
+   "lon": 125.03,
+   "lat": 41.78,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "jiefan",
+   "name": "界凡（界藩城）",
+   "lon": 124.22,
+   "lat": 41.94,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "sarhu",
+   "name": "萨尔浒",
+   "lon": 124.1,
+   "lat": 41.9,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "jilinya",
+   "name": "吉林崖",
+   "lon": 124.18,
+   "lat": 41.93,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "fushun",
+   "name": "抚顺（抚顺所）",
+   "lon": 123.96,
+   "lat": 41.88,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "qinghe",
+   "name": "清河（清河堡）",
+   "lon": 124.2,
+   "lat": 41.35,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "shenyang",
+   "name": "沈阳（沈阳中卫）",
+   "lon": 123.43,
+   "lat": 41.8,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "kaiyuan",
+   "name": "开原",
+   "lon": 124.03,
+   "lat": 42.55,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "kuandian",
+   "name": "宽甸（宽奠堡）",
+   "lon": 124.78,
+   "lat": 40.73,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "shangjianya",
+   "name": "尚间崖",
+   "lon": 124.3,
+   "lat": 42.05,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "feifenshan",
+   "name": "斐芬山",
+   "lon": 124.38,
+   "lat": 42.0,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "niumaozhai",
+   "name": "牛毛寨",
+   "lon": 125.15,
+   "lat": 41.35,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "abudaligang",
+   "name": "阿布达里岗",
+   "lon": 125.0,
+   "lat": 41.55,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "fucha",
+   "name": "富察之野",
+   "lon": 124.92,
+   "lat": 41.5,
+   "region": "liaodong"
+  },
+  {
+   "place_id": "yehe",
+   "name": "叶赫",
+   "lon": 124.6,
+   "lat": 43.05,
+   "region": "liaodong"
+  }
+ ],
+ "control_years": [
+  1618,
+  1619
+ ],
  "faction_geo": {
   "donglin": {
    "name": "东林党（清流）",

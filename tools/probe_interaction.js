@@ -263,20 +263,27 @@ async function main() {
     if(!b) return false; b.click();
     const t=document.getElementById('ctrlLegend').textContent||''; return /县/.test(t);})()`);
   ok(nationOk, '切到「国家」范围 → 图例显示各县控制数（板块合并生效）');
-  // 回到县范围，确认年份变化驱动辖区重算（1625 沈阳已属清方）。
-  // ctrlData 异步就绪，gates 连续运行下偶发未就绪 → 轮询等待 + 重试，消除时序偶发。
+  // 年份驱动重算（1617 沈阳=明方 → 1625 沈阳=清方）必须用「全局辽东 control」验证：
+  // sarhu 场景级 control 只覆盖战役期 1618–1621（无 明→清 跨度），算不出该断言；
+  // 而 county.html?scene=shenyang 切片无自带 control → 回退全局辽东 control
+  // （沈阳 明方1616-1620 / 清方1621-1644），才能体现 1617→1625 的党派切换。
+  await nav(BASE + '/county.html?scene=shenyang');
+  let ready3 = false;
+  for (let t = 0; t < 20 && !ready3; t++) {
+    if (t > 0) await sleep(250);
+    ready3 = await ev(`window.ControlLayer && ControlLayer.isReady()`);
+  }
+  ok(ready3 === true, '沈阳县级切片 ControlLayer 已就位（回退全局辽东 control）');
+  // ctrlData 异步就绪，gates 连续运行下偶发未就绪 → 轮询等待，消除时序偶发。
   let yearShift = '';
   for (let t = 0; t < 12 && yearShift !== '明方|清方'; t++) {
     if (t > 0) await sleep(250);
-    yearShift = await ev(`(()=>{const y=document.getElementById('ctrlYear');
-      if(!y) return 'no-ctrlYear';
-      const cc=document.querySelector('.cp-scope[data-scope="county"]'); if(cc) cc.click();
-      y.value=1617; y.dispatchEvent(new Event('input'));
+    yearShift = await ev(`(()=>{
       const a=ControlLayer.controllerAt('shenyang',1617);
       const b=ControlLayer.controllerAt('shenyang',1625);
       return (a==null?'null':a)+'|'+(b==null?'null':b);})()`) || '';
   }
-  ok(yearShift === '明方|清方', '同一城 1617→1625 控制权由 明方 变 清方（年份驱动重算）' + (yearShift ? '（实得 ' + yearShift + '）' : ''));
+  ok(yearShift === '明方|清方', '同一城 1617→1625 控制权由 明方 变 清方（年份驱动重算 · 全局辽东 control）' + (yearShift ? '（实得 ' + yearShift + '）' : ''));
 
   /* ═════════ 县级切片（真实地理） ═════════ */
   console.log('\n-- 县级切片 county.html?scene=shenyang --');
