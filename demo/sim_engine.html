@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>确定性演化引擎 · 明末辽东（三阶层声明式推演）</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:14px/1.5 system-ui,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;height:100vh;overflow:hidden}
+.sidebar{width:min(360px,32vw);background:#161b22;padding:10px;overflow-y:auto;flex-shrink:0;border-right:1px solid #30363d;font-size:clamp(12px,1.2vw,14px)}
+.sidebar h2{font-size:clamp(14px,1.5vw,18px);color:#58a6ff;margin-bottom:6px;border-bottom:1px solid #30363d;padding-bottom:6px}
+.sidebar h3{font-size:clamp(11px,1.1vw,13px);color:#8b949e;margin:10px 0 4px;cursor:pointer;user-select:none}
+.legend{display:flex;gap:8px;margin:4px 0;flex-wrap:wrap}
+.legend i{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:3px}
+.legend span{font-size:clamp(10px,1vw,12px);color:#8b949e}
+.section label{display:flex;justify-content:space-between;font-size:clamp(10px,1vw,12px);color:#8b949e;margin:4px 0 1px}
+.section input[type=range]{width:100%;accent-color:#58a6ff}
+.ctrl-row{display:flex;flex-wrap:wrap;gap:3px;margin:6px 0}
+button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:clamp(10px,1vw,12px);margin:1px}
+.btn-run{background:#238636;color:#fff}.btn-pause{background:#6e40c9;color:#fff}.btn-step{background:#1f6feb;color:#ccc}
+.btn-reset{background:#da3633;color:#fff}.btn-mode{background:#1f2428;color:#8b949e;border:1px solid #30363d}
+.btn-mode:hover{background:#58a6ff;color:#fff}.btn-mode.active{background:#1f6feb;color:#fff}
+.stats{font-size:clamp(10px,1vw,12px)}
+.stats .row{display:flex;justify-content:space-between;padding:1px 0;border-bottom:1px solid #21262d}
+.stats .row .lv{color:#58a6ff}
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+#cv{flex:1;cursor:crosshair;border-bottom:1px solid #30363d;min-height:0}
+.narr{height:clamp(36px,6vh,50px);padding:4px 12px;font-size:clamp(11px,1.1vw,14px);background:#0d1117;border-bottom:1px solid #30363d;display:flex;align-items:center}
+.narr .w{color:#d29922}.narr .g{color:#3fb950}.narr .m{color:#8b949e}.narr .d{color:#e94560}
+.pf{font-size:clamp(10px,1vw,12px);margin:2px 0}
+.pf b{color:#c9d1d9}.pf .f{color:#8b949e;font-size:10px}
+.divl{font-size:clamp(9px,0.9vw,11px);color:#e94560;max-height:90px;overflow-y:auto}
+.trace{font-size:clamp(9px,0.9vw,11px);color:#8b949e;max-height:130px;overflow-y:auto}
+.trace .ok{color:#3fb950}.trace .no{color:#e94560}
+.md{font-size:clamp(9px,0.9vw,11px);color:#8b949e;margin:2px 0}
+.md b{color:#d29922}
+.hint{font-size:clamp(9px,0.9vw,11px);color:#484f58;line-height:1.4}
+.tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100}
+.tt b{color:#fff}.tt s{color:#8b949e}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <h2>⚙ 确定性演化引擎</h2>
+  <div class="hint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实（同参同结果）。</div>
+  <div class="legend" id="legend"></div>
+
+  <h3>⏱ 时间</h3>
+  <div class="section">
+    <label>年份<span class="v" id="vYear">1616</span></label>
+    <input type="range" id="year" min="1616" max="1644" value="1616" step="1">
+  </div>
+  <div class="ctrl-row">
+    <button class="btn-run" id="btnRun">▶ 运行</button>
+    <button class="btn-pause" id="btnPause">⏸</button>
+    <button class="btn-step" id="btnStep">⏭</button>
+    <button class="btn-reset" id="btnReset">↺ 复位</button>
+    <button class="btn-mode" id="btnReplay">📜 史实重放</button>
+  </div>
+
+  <h3>⚙ 机制参数（调参=反事实）</h3>
+  <div id="paramBox"></div>
+
+  <h3>🔀 反事实分支（维度#12）</h3>
+  <div class="ctrl-row" id="branchBox"></div>
+
+  <h3>📊 国势 / 吻合度</h3>
+  <div class="stats" id="stats"></div>
+
+  <h3>🔀 推演偏离史实</h3>
+  <div class="divl" id="divl"><span class="m">（默认重放：零偏离）</span></div>
+
+  <h3>🎭 真实 actors（派系，#3）</h3>
+  <div id="pf"></div>
+
+  <h3>🧬 缺失维度占位（#7/#9/#10，带 dist）</h3>
+  <div id="md"></div>
+
+  <h3>📜 推演溯源 trace（#15 provenance）</h3>
+  <div class="trace" id="trace"><span class="m">运行后显示裁决记录</span></div>
+</div>
+
+<div class="main">
+  <canvas id="cv"></canvas>
+  <div class="narr" id="narr"><span class="m">点击 ▶ 运行，或拖动年份滑块。地图坐标 = 真实治所经纬度投影。</span></div>
+</div>
+<div class="tt" id="tt"></div>
+
+<script src="_sim_liaodong.js"></script>
+<script src="sim_rules_liaodong.js"></script>
+<script src="sim_ic_liaodong.js"></script>
+<script>
+// ============================================================
+// 确定性演化引擎：声明式三阶层规则解释器 + 真实史料基底
+// ============================================================
+const D = window.SIM_DATA;
+const R = window.SIM_RULES;
+const IC = window.SIM_IC;
+if(!D || !R || !IC){ document.getElementById('narr').innerHTML='<span class="d">✗ 未加载 SIM_DATA / SIM_RULES / SIM_IC</span>'; }
+
+const PARTY = D.partyColors;
+const SEATS = D.seats;
+const seatById = {}; SEATS.forEach(s=>seatById[s.id]=s);
+const COSMID = Math.cos(44*Math.PI/180);
+function hex(c){return 'rgb('+c[0]+','+c[1]+','+c[2]+')';}
+function neighbors(id){
+  const a=seatById[id]; if(!a)return [];
+  return SEATS.filter(b=>b.id!==id && Math.hypot((a.lon-b.lon)*COSMID, a.lat-b.lat)<1.6).map(b=>b.id);
+}
+
+// ---- 确定性哈希（无 Math.random）：FNV-1a → [0,1) ----
+function seedHash(str){
+  let h = 2166136261 >>> 0;
+  for(let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+  return (h >>> 0) / 4294967296;
+}
+function intrinsicP(year, place_id, to, salt){ return seedHash(year+'|'+place_id+'|'+to+'|'+(salt||'a')); }
+
+// ---- 参数 ----
+let params = Object.assign({}, IC.params);   // 默认锚定
+let currentBranch = null;                     // 分支 id 或 null
+function effFor(party, p){
+  if(party==='清方') return p.qingExec;
+  if(party==='明方') return p.mingExec;
+  return 1.0; // contested 必然发生
+}
+
+// ---- 状态机 ----
+let state = {};
+let year = D.meta.startYear;
+let divergences = [];
+let trace = [];
+
+function getBranch(id){ return (R.branches||[]).find(b=>b.id===id) || null; }
+
+function applyParamsFromUI(){
+  R.params.forEach(pr=>{ const el=document.getElementById('p_'+pr.id); if(el) params[pr.id]=+el.value; });
+}
+
+function resetSim(branchId){
+  state = Object.assign({}, IC.control);   // 初始控制=1616 真实基底
+  year = D.meta.startYear;
+  divergences = [];
+  trace = [];
+  currentBranch = branchId || currentBranch;
+}
+
+// 单年确定性推演（解释 R1 战争裁决）
+function applyYear(Y, p, branch){
+  const ts = D.transitions.filter(t=>t.year===Y);
+  const blocked = branch && branch.block ? branch.block : [];
+  for(const t of ts){
+    if(blocked.some(b=>b.year===t.year && b.place_id===t.place_id)) continue; // 分支抑制
+    const eff = effFor(t.to, p);
+    const ip = intrinsicP(t.year, t.place_id, t.to, 'a');
+    let success = (t.to==='contested') ? true : (ip < eff);
+    if(success && p.spreadPref < 1.0 && t.to!=='contested'){
+      const hasN = neighbors(t.place_id).some(nid=>state[nid]===t.to);
+      if(!hasN){ const ip2 = intrinsicP(t.year, t.place_id, t.to, 'b'); success = (ip2 < p.spreadPref); }
+    }
+    // 溯源（#15）：每次裁决记录机制/初值/seed
+    trace.push({ year:Y, place_id:t.place_id, name:seatById[t.place_id]?seatById[t.place_id].name:'', from:t.from, to:t.to,
+      rule:'R1', mechanism:'战争裁决(04 §战争裁决)', intrinsicP:+ip.toFixed(4), eff:+eff.toFixed(2), success, seed:(t.year+'|'+t.place_id+'|'+t.to) });
+    if(success) state[t.place_id]=t.to;
+    else divergences.push({year:Y, place:t.place_id, to:t.to, name:seatById[t.place_id]?seatById[t.place_id].name:''});
+  }
+}
+
+function runTo(Y, branchId){
+  const br = branchId!==undefined ? getBranch(branchId) : getBranch(currentBranch);
+  const p = Object.assign({}, params);
+  if(br && br.override) Object.keys(br.override).forEach(k=> p[k]=br.override[k]);
+  resetSim(branchId);
+  for(let y=D.meta.startYear+1; y<=Y; y++) applyYear(y, p, br);
+  year = Y;
+}
+
+// ---- 渲染 ----
+let cv,ctx;
+function setupCv(){cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=cv.parentElement.clientHeight;ctx=cv.getContext('2d');}
+function render(){
+  if(!ctx)return;
+  const w=cv.width,h=cv.height,pad=30;
+  ctx.clearRect(0,0,w,h);
+  let xs=SEATS.map(s=>s.x), ys=SEATS.map(s=>s.y);
+  let xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
+  const sc=Math.min((w-2*pad)/(xmax-xmin||1),(h-2*pad)/(ymax-ymin||1));
+  const X=s=>pad+(s.x-xmin)*sc, Yc=s=>pad+(s.y-ymin)*sc;
+  ctx.strokeStyle='rgba(255,255,255,0.06)';ctx.lineWidth=1;
+  SEATS.forEach(s=>neighbors(s.id).forEach(nid=>{const b=seatById[nid];ctx.beginPath();ctx.moveTo(X(s),Yc(s));ctx.lineTo(X(b),Yc(b));ctx.stroke();}));
+  SEATS.forEach(s=>{
+    const p=state[s.id]||'?'; const col=PARTY[p]?hex(PARTY[p]):'#555';
+    const r=6; ctx.fillStyle=col;ctx.beginPath();ctx.arc(X(s),Yc(s),r,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle='rgba(255,255,255,0.25)';ctx.lineWidth=0.5;ctx.stroke();
+    ctx.fillStyle='#8b949e';ctx.font='9px system-ui';ctx.fillText(s.name, X(s)+8, Yc(s)+3);
+  });
+  drawLegend();
+}
+function drawLegend(){ const el=document.getElementById('legend'); el.innerHTML=''; Object.keys(PARTY).forEach(p=>{ el.innerHTML+='<span><i style="background:'+hex(PARTY[p])+'"></i>'+p+'</span>'; }); }
+function matchCount(){ return SEATS.filter(s=>(state[s.id]||'')===(D.terminalReal[s.id]||'')).length; }
+function updateStats(){
+  const ys=Object.values(state); const cnt={}; ys.forEach(p=>cnt[p]=(cnt[p]||0)+1);
+  const total=SEATS.length, m=matchCount(); const pct=(m/total*100).toFixed(0);
+  let html='';
+  Object.keys(PARTY).forEach(p=>{html+='<div class="row"><span>'+p+'</span><span class="lv">'+(cnt[p]||0)+'</span></div>';});
+  html+='<div class="row"><span>推演年</span><span class="lv">'+year+'</span></div>';
+  html+='<div class="row"><span>史实吻合度</span><span class="lv" style="color:'+(pct==='100'?'#3fb950':'#d29922')+'">'+pct+'%</span></div>';
+  document.getElementById('stats').innerHTML=html;
+  const dl=document.getElementById('divl');
+  if(divergences.length===0) dl.innerHTML='<span class="m">（零偏离：推演==史实）</span>';
+  else dl.innerHTML=divergences.map(d=>'· '+d.year+' '+d.name+' 归'+d.to+' 未达成').join('<br>');
+}
+function updateNarr(){
+  const el=document.getElementById('narr'); const pct=Math.round(matchCount()/SEATS.length*100);
+  const br = currentBranch ? ('［'+getBranch(currentBranch).label+'］') : '';
+  if(pct===100) el.innerHTML='<span class="g">✓ '+br+' 精确重放史实（'+year+'年）。调低执行力/扩散或选分支即产生确定性反事实。</span>';
+  else el.innerHTML='<span class="w">⚠ '+br+' 反事实推演（'+year+'年），史实吻合度 '+pct+'%。'+divergences.length+' 处征服未在参数下达成。</span>';
+}
+function updateTrace(){ const el=document.getElementById('trace'); if(!trace.length){el.innerHTML='<span class="m">运行后显示裁决记录</span>';return;}
+  el.innerHTML=trace.slice(-60).map(t=>{
+    const tag=t.success?'<span class="ok">✓</span>':'<span class="no">✗</span>';
+    return t.year+' '+t.name+'→'+t.to+' '+tag+' p='+t.intrinsicP+' eff='+t.eff;
+  }).join('<br>'); }
+function paint(){render();updateStats();updateNarr();updateTrace();document.getElementById('vYear').textContent=year;document.getElementById('year').value=year;}
+
+// ---- 控制 ----
+function step(){ if(year<D.meta.endYear){year++; applyYear(year, Object.assign({},params), getBranch(currentBranch)); paint();} else {pause();} }
+function run(){ if(running)return; running=true; timer=setInterval(()=>{ if(year>=D.meta.endYear){pause();return;} step(); }, 350); document.getElementById('btnRun').textContent='▶ 运行中'; }
+function pause(){ running=false; if(timer)clearInterval(timer); timer=null; document.getElementById('btnRun').textContent='▶ 运行'; }
+function resetAll(){ pause(); runTo(year, currentBranch); paint(); }
+let running=false, timer=null;
+
+// ---- 参数 UI ----
+function buildParamBox(){
+  const box=document.getElementById('paramBox'); box.innerHTML='';
+  R.params.forEach(pr=>{
+    box.innerHTML+='<div class="section"><label>'+pr.label+'<span class="v" id="v_'+pr.id+'">'+(params[pr.id]||pr.default).toFixed(2)+'</span></label>'+
+      '<input type="range" id="p_'+pr.id+'" min="'+pr.min+'" max="'+pr.max+'" step="'+pr.step+'" value="'+(params[pr.id]||pr.default)+'"></div>';
+  });
+  R.params.forEach(pr=>{ const el=document.getElementById('p_'+pr.id);
+    el.oninput=function(){ params[pr.id]=+this.value; document.getElementById('v_'+pr.id).textContent=(+this.value).toFixed(2); if(!running){runTo(year,currentBranch);} paint(); };
+  });
+}
+function syncParamLabels(){ R.params.forEach(pr=>{ const el=document.getElementById('p_'+pr.id); if(el){el.value=params[pr.id]; document.getElementById('v_'+pr.id).textContent=(+params[pr.id]).toFixed(2);} }); }
+function buildBranchBox(){
+  const box=document.getElementById('branchBox'); box.innerHTML='<button class="btn-mode active" id="br_none">📜 史实重放</button>';
+  (R.branches||[]).forEach(b=>{ box.innerHTML+='<button class="btn-mode" id="br_'+b.id+'">'+b.label+'</button>'; });
+  document.getElementById('br_none').onclick=function(){ currentBranch=null; setActiveBranchBtn('br_none'); params=Object.assign({},IC.params); syncParamLabels(); replay(); };
+  (R.branches||[]).forEach(b=>{ document.getElementById('br_'+b.id).onclick=function(){
+    currentBranch=b.id; setActiveBranchBtn('br_'+b.id);
+    if(b.override){ Object.keys(b.override).forEach(k=>{ params[k]=b.override[k]; }); syncParamLabels(); }
+    runTo(year, b.id); paint();
+  }; });
+}
+function setActiveBranchBtn(id){ ['br_none'].concat((R.branches||[]).map(b=>'br_'+b.id)).forEach(x=>{const e=document.getElementById(x); if(e) e.classList.toggle('active', x===id);}); }
+
+// ---- 人物面板（#3）----
+function renderPersons(){
+  const el=document.getElementById('pf');
+  const by = IC.personsByFaction;
+  el.innerHTML=Object.keys(by).map(f=>'<div class="pf"><b>'+by[f].label+'</b> <span class="f">('+by[f].count+'人 · '+by[f].side+')</span></div>').join('');
+}
+// ---- 缺失维度面板（#7/#9/#10）----
+function renderMissingDims(){
+  const el=document.getElementById('md'); const md=R.missing_dims||IC.missing_dims||{};
+  el.innerHTML=Object.keys(md).map(k=>{ const d=md[k];
+    return '<div class="md"><b>'+k+'</b> <span class="f">(#'+d.dim+' · '+d.status+')</span><br>dist: '+JSON.stringify(d.dist)+'</div>';
+  }).join('');
+}
+
+// 悬浮提示
+document.getElementById('cv').onmousemove=function(e){
+  if(!ctx)return; const rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top;
+  const w=cv.width,h=cv.height,pad=30;
+  let xs=SEATS.map(s=>s.x),ys=SEATS.map(s=>s.y);
+  let xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
+  const sc=Math.min((w-2*pad)/(xmax-xmin||1),(h-2*pad)/(ymax-ymin||1));
+  const X=s=>pad+(s.x-xmin)*sc, Yc=s=>pad+(s.y-ymin)*sc;
+  let found=null,md=12; SEATS.forEach(s=>{const d=Math.hypot(X(s)-mx,Yc(s)-my);if(d<md){found=s;md=d;}});
+  const tt=document.getElementById('tt');
+  if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+12)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';
+    tt.innerHTML='<b>'+found.name+'</b> <s>('+found.lon+','+found.lat+')</s><br>推演控制: '+(state[found.id]||'?')+'<br>史实1644: '+(D.terminalReal[found.id]||'?');}
+  else tt.style.display='none';
+};
+
+document.getElementById('btnRun').onclick=run;
+document.getElementById('btnPause').onclick=pause;
+document.getElementById('btnStep').onclick=()=>{pause();step();};
+document.getElementById('btnReset').onclick=resetAll;
+function replay(){ params=Object.assign({},IC.params); currentBranch=null; setActiveBranchBtn('br_none'); syncParamLabels(); resetAll(); }
+document.getElementById('btnReplay').onclick=replay;
+document.getElementById('year').oninput=function(){ pause(); year=+this.value; runTo(year, currentBranch); paint(); };
+
+// ---- 探针 API（无头验证用）----
+window.SIM_ENGINE = {
+  runTo: runTo,
+  getState: ()=>state,
+  getYear: ()=>year,
+  getTrace: ()=>trace,
+  getParams: ()=>params,
+  matchCount: matchCount,
+  total: SEATS.length,
+  divergences: ()=>divergences,
+  hasRule: (id)=> (R.rules||[]).some(x=>x.id===id),
+  branchIds: ()=> (R.branches||[]).map(b=>b.id),
+  missingDimDims: ()=> Object.keys(R.missing_dims||{}).map(k=>R.missing_dims[k].dim)
+};
+
+window.onload=function(){ setupCv(); buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims(); resetSim(null); runTo(D.meta.endYear); paint(); };
+window.onresize=function(){ setupCv(); paint(); };
+</script>
+</body>
+</html>

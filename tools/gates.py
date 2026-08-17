@@ -39,6 +39,7 @@ STEPS = [
     # ── 查询与分析层 ──
     ("共振报告 resonance",            ["tools/analysis/resonance.py"]),
     # ── 推演与模拟层 ──
+    ("仿真维度契约 check",            ["tools/check_sim_contract.py"]),
     ("推演不变量 test",               ["tools/tests/test_simulate.py"]),
     # ── 测试层 ──
     ("不变量回归 test",              ["tools/tests/test_assertions.py"]),
