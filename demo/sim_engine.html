@@ -33,6 +33,12 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .md{font-size:clamp(9px,0.9vw,11px);color:#8b949e;margin:2px 0}
 .md b{color:#d29922}
 .hint{font-size:clamp(9px,0.9vw,11px);color:#484f58;line-height:1.4}
+.maptools{display:flex;align-items:center;gap:6px;padding:5px 10px;background:#0d1117;border-bottom:1px solid #30363d;font-size:clamp(10px,1vw,12px);flex-wrap:wrap}
+.mhint{color:#8b949e;font-size:clamp(9px,0.9vw,11px)}
+.elev-bar{height:12px;border-radius:3px;border:1px solid #30363d;margin-top:2px}
+.elev-ticks{display:flex;justify-content:space-between;font-size:9px;color:#8b949e;margin-top:1px}
+.elev-water{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:middle;margin-right:3px;background:#9cc3d8;border:1px solid #30363d}
+.elev-water-lbl{font-size:clamp(9px,0.9vw,11px);color:#8b949e;margin:2px 0 1px}
 .tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100}
 .tt b{color:#fff}.tt s{color:#8b949e}
 </style>
@@ -42,6 +48,11 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
   <h2>⚙ 确定性演化引擎</h2>
   <div class="hint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实（同参同结果）。</div>
   <div class="legend" id="legend"></div>
+
+  <h3>⛰ 海拔图例（米，底图=中国真实高程）</h3>
+  <div class="elev-water-lbl"><span class="elev-water"></span>水体 / 海（高程 ≤ 0）</div>
+  <div class="elev-bar" style="background:linear-gradient(to right,#b6d77a 0%,#d9d36a 7%,#e6c34d 14%,#dd9b46 28%,#c87a3c 43%,#a85a32 57%,#8a6b5c 71%,#ece4dc 100%)"></div>
+  <div class="elev-ticks"><span>0</span><span>200</span><span>500</span><span>1k</span><span>2k</span><span>3k</span><span>4k</span><span>5k+</span></div>
 
   <h3>⏱ 时间</h3>
   <div class="section">
@@ -79,12 +90,18 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 </div>
 
 <div class="main">
+  <div class="maptools">
+    <button class="btn-mode active" id="vw_liaodong">📍 辽东战区</button>
+    <button class="btn-mode" id="vw_china">🌏 全中国</button>
+    <span class="mhint">底图 = 中国真实高程（ASTER GDEM），按海拔分层设色</span>
+  </div>
   <canvas id="cv"></canvas>
-  <div class="narr" id="narr"><span class="m">点击 ▶ 运行，或拖动年份滑块。地图坐标 = 真实治所经纬度投影。</span></div>
+  <div class="narr" id="narr"><span class="m">点击 ▶ 运行，或拖动年份滑块。治所按真实经纬度投影叠加于中国地形底图。</span></div>
 </div>
 <div class="tt" id="tt"></div>
 
 <script src="_sim_liaodong.js"></script>
+<script src="china_terrain.js"></script>
 <script src="sim_rules_liaodong.js"></script>
 <script src="sim_ic_liaodong.js"></script>
 <script>
@@ -173,25 +190,107 @@ function runTo(Y, branchId){
   year = Y;
 }
 
-// ---- 渲染 ----
+// ---- 渲染（中国地形底图 + 经纬度投影叠加）----
 let cv,ctx;
+const TERR = window.CHINA_TERRAIN || null;
+let terrCanvas=null, terrainReady=false;
+let viewFit='liaodong';            // 'liaodong' | 'china'
+let seatBBox=null;                 // 计算一次：辽东战区 bbox
 function setupCv(){cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=cv.parentElement.clientHeight;ctx=cv.getContext('2d');}
+
+// 海拔 → 分层设色（hypsometric），与侧栏图例一致
+const ELEV_BANDS=[
+  [0,   [182,215,122]],  // 0–200 平原绿
+  [200, [217,211,106]],  // 200–500 黄绿
+  [500, [230,195,77]],   // 500–1000 黄
+  [1000,[221,155,70]],   // 1000–2000 橙
+  [2000,[200,122,60]],   // 2000–3000 浅棕
+  [3000,[168,90,50]],    // 3000–4000 棕
+  [4000,[138,107,92]],   // 4000–5000 深棕
+  [5000,[236,228,220]],  // >5000 雪
+];
+const WATER=[156,195,216];
+function elevColor(e){
+  if(e===null||e<=0) return WATER;
+  for(let i=ELEV_BANDS.length-1;i>=0;i--){ if(e>=ELEV_BANDS[i][0]) return ELEV_BANDS[i][1]; }
+  return ELEV_BANDS[0][1];
+}
+
+// 构建离屏地形画布（nx×ny，Y 翻转使北在上）
+function buildTerrain(){
+  if(!TERR) return;
+  const c=document.createElement('canvas'); c.width=TERR.nx; c.height=TERR.ny;
+  const cx=c.getContext('2d'); const img=cx.createImageData(TERR.nx,TERR.ny);
+  for(let iy=0;iy<TERR.ny;iy++){
+    for(let ix=0;ix<TERR.nx;ix++){
+      const e=TERR.elev[iy*TERR.nx+ix];
+      const col=elevColor(e);
+      const di=((TERR.ny-1-iy)*TERR.nx+ix)*4;
+      img.data[di]=col[0];img.data[di+1]=col[1];img.data[di+2]=col[2];img.data[di+3]=255;
+    }
+  }
+  cx.putImageData(img,0,0); terrCanvas=c; terrainReady=true;
+}
+
+// 视图 bbox
+function viewBBox(){
+  if(viewFit==='china') return {lon0:TERR?TERR.lon0:73.5, lat0:TERR?TERR.lat0:18, lon1:TERR?TERR.lon0+TERR.nx*TERR.step:135.1, lat1:TERR?TERR.lat0+TERR.ny*TERR.step:53.6};
+  if(!seatBBox){ // 辽东战区：治所 bbox + 边距
+    let lons=SEATS.map(s=>s.lon), lats=SEATS.map(s=>s.lat);
+    const m=1.6;
+    seatBBox={lon0:Math.min(...lons)-m, lat0:Math.min(...lats)-m, lon1:Math.max(...lons)+m, lat1:Math.max(...lats)+m};
+  }
+  return seatBBox;
+}
+
+// 视图 → 屏幕的统一投影（equirectangular + cos(latMid) 校正，北在上、居中）
+function projector(vb,w,h){
+  const pad=24;
+  const latMid=(vb.lat0+vb.lat1)/2, cml=Math.cos(latMid*Math.PI/180);
+  const effW=(vb.lon1-vb.lon0)*cml, effH=(vb.lat1-vb.lat0);
+  const scale=Math.min((w-2*pad)/effW,(h-2*pad)/effH);
+  const mapW=effW*scale, mapH=effH*scale;
+  const ox=(w-mapW)/2, oy=(h-mapH)/2;
+  return { X:(lon)=> ox + (lon-vb.lon0)*cml*scale, Y:(lat)=> oy + (vb.lat1-lat)*scale, scale, cml, latMid };
+}
+
 function render(){
   if(!ctx)return;
-  const w=cv.width,h=cv.height,pad=30;
+  const w=cv.width,h=cv.height;
   ctx.clearRect(0,0,w,h);
-  let xs=SEATS.map(s=>s.x), ys=SEATS.map(s=>s.y);
-  let xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
-  const sc=Math.min((w-2*pad)/(xmax-xmin||1),(h-2*pad)/(ymax-ymin||1));
-  const X=s=>pad+(s.x-xmin)*sc, Yc=s=>pad+(s.y-ymin)*sc;
-  ctx.strokeStyle='rgba(255,255,255,0.06)';ctx.lineWidth=1;
-  SEATS.forEach(s=>neighbors(s.id).forEach(nid=>{const b=seatById[nid];ctx.beginPath();ctx.moveTo(X(s),Yc(s));ctx.lineTo(X(b),Yc(b));ctx.stroke();}));
+  ctx.fillStyle='#0d1117'; ctx.fillRect(0,0,w,h);
+  const vb=viewBBox();
+  const P=projector(vb,w,h);
+
+  // 1) 地形底图
+  if(terrCanvas){
+    const gW=(TERR.nx*TERR.step)*P.cml*P.scale;
+    const gH=(TERR.ny*TERR.step)*P.scale;
+    const gx=P.X(TERR.lon0), gy=P.Y(TERR.lat0+TERR.ny*TERR.step);
+    ctx.imageSmoothingEnabled=true;
+    ctx.drawImage(terrCanvas, 0,0,TERR.nx,TERR.ny, gx,gy,gW,gH);
+  } else {
+    ctx.fillStyle='#9cc3d8'; ctx.fillRect(0,0,w,h);
+    ctx.fillStyle='#c9d1d9'; ctx.font='14px system-ui';
+    ctx.fillText('⚠ 未加载 china_terrain.js（地形底图缺失）', 20, 30);
+  }
+
+  // 2) 战区连线（仅辽东视图，避免全国尺度杂乱）
+  if(viewFit==='liaodong'){
+    ctx.strokeStyle='rgba(20,20,20,0.25)';ctx.lineWidth=1;
+    SEATS.forEach(s=>neighbors(s.id).forEach(nid=>{const b=seatById[nid];ctx.beginPath();ctx.moveTo(P.X(s.lon),P.Y(s.lat));ctx.lineTo(P.X(b.lon),P.Y(b.lat));ctx.stroke();}));
+  }
+
+  // 3) 治所控制点
+  const r = viewFit==='liaodong' ? 6 : 4;
   SEATS.forEach(s=>{
     const p=state[s.id]||'?'; const col=PARTY[p]?hex(PARTY[p]):'#555';
-    const r=6; ctx.fillStyle=col;ctx.beginPath();ctx.arc(X(s),Yc(s),r,0,Math.PI*2);ctx.fill();
-    ctx.strokeStyle='rgba(255,255,255,0.25)';ctx.lineWidth=0.5;ctx.stroke();
-    ctx.fillStyle='#8b949e';ctx.font='9px system-ui';ctx.fillText(s.name, X(s)+8, Yc(s)+3);
+    const x=P.X(s.lon), y=P.Y(s.lat);
+    ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+    ctx.strokeStyle='rgba(255,255,255,0.6)';ctx.lineWidth=0.8;ctx.stroke();
+    if(viewFit==='liaodong'){ ctx.fillStyle='#1a1a1a';ctx.font='10px system-ui';ctx.fillText(s.name, x+8, y+3); }
   });
+
   drawLegend();
 }
 function drawLegend(){ const el=document.getElementById('legend'); el.innerHTML=''; Object.keys(PARTY).forEach(p=>{ el.innerHTML+='<span><i style="background:'+hex(PARTY[p])+'"></i>'+p+'</span>'; }); }
@@ -269,12 +368,9 @@ function renderMissingDims(){
 // 悬浮提示
 document.getElementById('cv').onmousemove=function(e){
   if(!ctx)return; const rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top;
-  const w=cv.width,h=cv.height,pad=30;
-  let xs=SEATS.map(s=>s.x),ys=SEATS.map(s=>s.y);
-  let xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys);
-  const sc=Math.min((w-2*pad)/(xmax-xmin||1),(h-2*pad)/(ymax-ymin||1));
-  const X=s=>pad+(s.x-xmin)*sc, Yc=s=>pad+(s.y-ymin)*sc;
-  let found=null,md=12; SEATS.forEach(s=>{const d=Math.hypot(X(s)-mx,Yc(s)-my);if(d<md){found=s;md=d;}});
+  const w=cv.width,h=cv.height; const vb=viewBBox(); const P=projector(vb,w,h);
+  let found=null,md=(viewFit==='liaodong'?14:10);
+  SEATS.forEach(s=>{const d=Math.hypot(P.X(s.lon)-mx,P.Y(s.lat)-my);if(d<md){found=s;md=d;}});
   const tt=document.getElementById('tt');
   if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+12)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';
     tt.innerHTML='<b>'+found.name+'</b> <s>('+found.lon+','+found.lat+')</s><br>推演控制: '+(state[found.id]||'?')+'<br>史实1644: '+(D.terminalReal[found.id]||'?');}
@@ -288,6 +384,10 @@ document.getElementById('btnReset').onclick=resetAll;
 function replay(){ params=Object.assign({},IC.params); currentBranch=null; setActiveBranchBtn('br_none'); syncParamLabels(); resetAll(); }
 document.getElementById('btnReplay').onclick=replay;
 document.getElementById('year').oninput=function(){ pause(); year=+this.value; runTo(year, currentBranch); paint(); };
+document.getElementById('vw_liaodong').onclick=function(){ setView('liaodong'); };
+document.getElementById('vw_china').onclick=function(){ setView('china'); };
+function setViewBtn(id){ ['vw_liaodong','vw_china'].forEach(x=>{const e=document.getElementById(x); if(e) e.classList.toggle('active', x===id);}); }
+function setView(v){ if(v!=='china'&&v!=='liaodong')return; viewFit=v; setViewBtn('vw_'+v); paint(); }
 
 // ---- 探针 API（无头验证用）----
 window.SIM_ENGINE = {
@@ -301,10 +401,15 @@ window.SIM_ENGINE = {
   divergences: ()=>divergences,
   hasRule: (id)=> (R.rules||[]).some(x=>x.id===id),
   branchIds: ()=> (R.branches||[]).map(b=>b.id),
-  missingDimDims: ()=> Object.keys(R.missing_dims||{}).map(k=>R.missing_dims[k].dim)
+  missingDimDims: ()=> Object.keys(R.missing_dims||{}).map(k=>R.missing_dims[k].dim),
+  hasTerrain: ()=> !!TERR,
+  terrainReady: ()=> terrainReady,
+  viewFit: ()=> viewFit,
+  setView: setView,
+  seatScreenPositions: ()=>{ const w=cv.width,h=cv.height; const vb=viewBBox(); const P=projector(vb,w,h); return SEATS.map(s=>({id:s.id,name:s.name,x:P.X(s.lon),y:P.Y(s.lat)})); }
 };
 
-window.onload=function(){ setupCv(); buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims(); resetSim(null); runTo(D.meta.endYear); paint(); };
+window.onload=function(){ setupCv(); buildTerrain(); buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims(); resetSim(null); runTo(D.meta.endYear); paint(); };
 window.onresize=function(){ setupCv(); paint(); };
 </script>
 </body>

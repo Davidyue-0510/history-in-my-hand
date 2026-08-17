@@ -79,6 +79,29 @@ async function main(){
   const tr = await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); const t=SIM_ENGINE.getTrace();
     return { len: t.length, sampleOk: t.length>0 && !!(t[0].mechanism && t[0].seed && t[0].rule && typeof t[0].intrinsicP==='number' && typeof t[0].success==='boolean') }; });
 
+  // 10：地形底图 + 经纬度投影（中国真实高程）
+  const terr = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasTerrain(), ready: SIM_ENGINE.terrainReady(), view: SIM_ENGINE.viewFit() }; });
+  await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
+  await sleep(200);
+  const posL = await page.evaluate(()=>SIM_ENGINE.seatScreenPositions());
+  const cvSize = await page.evaluate(()=>{const c=document.getElementById('cv');return {w:c.width,h:c.height};});
+  const inL = posL.length===36 && posL.every(p=>p.x>=0&&p.x<=cvSize.w&&p.y>=0&&p.y<=cvSize.h);
+  await page.evaluate(()=>{ SIM_ENGINE.setView('china'); });
+  await sleep(200);
+  const posC = await page.evaluate(()=>SIM_ENGINE.seatScreenPositions());
+  const inC = posC.length===36 && posC.every(p=>p.x>=0&&p.x<=cvSize.w&&p.y>=0&&p.y<=cvSize.h);
+  // 全中国视图中心像素应被地形覆盖（非背景色）
+  const px = await page.evaluate(()=>{ const c=document.getElementById('cv'); const d=c.getContext('2d').getImageData(Math.floor(c.width/2),Math.floor(c.height/2),1,1).data; return [d[0],d[1],d[2]]; });
+  const pxIsBg = (px[0]===13&&px[1]===17&&px[2]===23);
+
+  fs.mkdirSync(path.join(ROOT,'.tmp'),{recursive:true});
+  await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
+  await sleep(250);
+  await page.screenshot(path.join(ROOT,'.tmp','sim_engine_terrain.png'));
+  await page.evaluate(()=>SIM_ENGINE.setView('china'));
+  await sleep(250);
+  await page.screenshot(path.join(ROOT,'.tmp','sim_engine_terrain_china.png'));
+
   await browser.close(); server.close();
 
   let pass=true; const ok=(c,m)=>{ console.log((c?'  ✓ ':'  ✗ ')+m); if(!c)pass=false; };
@@ -105,6 +128,11 @@ async function main(){
   ok(b1.guangning==='明方' && b1.guangning!==b1.terminalReal, '分支 B1 守广宁：广宁维持明方（史实='+b1.terminalReal+'），已偏离');
   ok(b1.same && b1.match < b1.total, '分支 B1 确定性且偏离史实（吻合 '+b1.match+'/'+b1.total+'）');
   ok(tr.len>0 && tr.sampleOk, '推演溯源 trace 非空且含 mechanism/seed/rule/intrinsicP/success → 条数 '+tr.len);
+  ok(terr.has, 'CHINA_TERRAIN 已加载（中国真实高程网格，ASTER GDEM）');
+  ok(terr.ready, '地形底图离屏画布已构建（terrainReady）');
+  ok(inL, '辽东视图：36 治所全部按经纬度投影落在画布内（'+posL.length+'/'+cvSize.w+'x'+cvSize.h+'）');
+  ok(inC, '全中国视图：36 治所全部按经纬度投影落在画布内');
+  ok(!pxIsBg, '全中国视图中心像素被地形覆盖（非背景色 rgb='+px.join(',')+'）');
 
   console.log(pass?'\n✓ 全部通过':'\n✗ 存在失败');
   process.exit(pass?0:1);
@@ -141,6 +169,7 @@ async function launch(){
       if(!r.result) throw new Error('evaluate 无 result: '+JSON.stringify(r).slice(0,300));
       if(r.result.exceptionDetails) throw new Error('evaluate 异常: '+JSON.stringify(r.result.exceptionDetails).slice(0,300));
       return r.result.result.value; },
+    async screenshot(file){ const r=await send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false}); fs.writeFileSync(file, Buffer.from(r.result.data,'base64')); },
     on(){},
   };
   return { page, close:()=>{ try{child.kill();}catch(e){} try{wsClient.close();}catch(e){} } };
