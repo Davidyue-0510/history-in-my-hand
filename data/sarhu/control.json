@@ -1,0 +1,55 @@
+{
+  "_comment": "萨尔浒之战（1619）实控演变史料锚定模型。year0=1618（抚顺/清河已陷），yearEnd=1619。schema 与 control_liaodong.json 同构，供 gen_sarhu_bundle.py 生成 demo/sim_data_sarhu.js（window.SIM_DATA_SARHU）。诚实边界：萨尔浒是单次会战而非长时段易手，故 seats 只取 15 个战略控制点（后金都城/筑城工地/明军出发地与扎营战场），waypoint 型行军节点不入控制模型。",
+  "scene": "sarhu",
+  "meta": {
+    "title": "萨尔浒之战 实控演变（史实锚定）",
+    "startYear": 1618,
+    "endYear": 1619,
+    "source": "《明史》卷二五九《杨镐传》/《清史稿·太祖本纪》/朝鲜《栅中日录》萨尔浒之战（1619）",
+    "mechanism": "每条史实征服按参数'是否成功施加'；默认=精确重放史实（四路尽墨），调参=确定性反事实"
+  },
+  "years": [1618, 1619],
+  "seats": [
+    { "place_id": "hetuala",    "name": "赫图阿拉",     "lon": 125.03, "lat": 41.78 },
+    { "place_id": "jiefan",     "name": "界凡（界藩城）", "lon": 124.22, "lat": 41.94 },
+    { "place_id": "sarhu",      "name": "萨尔浒",       "lon": 124.10, "lat": 41.90 },
+    { "place_id": "jilinya",    "name": "吉林崖",       "lon": 124.18, "lat": 41.93 },
+    { "place_id": "fushun",     "name": "抚顺",         "lon": 123.96, "lat": 41.88 },
+    { "place_id": "qinghe",     "name": "清河堡",       "lon": 124.20, "lat": 41.35 },
+    { "place_id": "shenyang",   "name": "沈阳",         "lon": 123.43, "lat": 41.80 },
+    { "place_id": "kaiyuan",    "name": "开原",         "lon": 124.03, "lat": 42.55 },
+    { "place_id": "kuandian",   "name": "宽甸",         "lon": 124.78, "lat": 40.73 },
+    { "place_id": "shangjianya","name": "尚间崖",       "lon": 124.30, "lat": 42.05 },
+    { "place_id": "feifenshan", "name": "斐芬山",       "lon": 124.38, "lat": 42.00 },
+    { "place_id": "niumaozhai", "name": "牛毛寨",       "lon": 125.15, "lat": 41.35 },
+    { "place_id": "abudaligang","name": "阿布达里岗",   "lon": 125.00, "lat": 41.55 },
+    { "place_id": "fucha",      "name": "富察之野",     "lon": 124.92, "lat": 41.50 },
+    { "place_id": "yehe",       "name": "叶赫",         "lon": 124.60, "lat": 43.05 }
+  ],
+  "control": [
+    { "place_id": "hetuala",    "party": "清方", "start": 1618, "end": 1619 },
+    { "place_id": "jiefan",     "party": "清方", "start": 1618, "end": 1619 },
+    { "place_id": "sarhu",      "party": "清方", "start": 1618, "end": 1619 },
+    { "place_id": "jilinya",    "party": "清方", "start": 1618, "end": 1619 },
+    { "place_id": "fushun",     "party": "清方", "start": 1618, "end": 1619 },
+    { "place_id": "qinghe",     "party": "清方", "start": 1618, "end": 1619 },
+
+    { "place_id": "shenyang",   "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "kaiyuan",    "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "kuandian",   "party": "明方", "start": 1618, "end": 1619 },
+
+    { "place_id": "shangjianya","party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "shangjianya","party": "清方", "start": 1619, "end": 1619 },
+    { "place_id": "feifenshan", "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "feifenshan", "party": "清方", "start": 1619, "end": 1619 },
+    { "place_id": "niumaozhai", "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "niumaozhai", "party": "清方", "start": 1619, "end": 1619 },
+    { "place_id": "abudaligang","party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "abudaligang","party": "清方", "start": 1619, "end": 1619 },
+    { "place_id": "fucha",      "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "fucha",      "party": "清方", "start": 1619, "end": 1619 },
+
+    { "place_id": "yehe",       "party": "明方", "start": 1618, "end": 1619 },
+    { "place_id": "yehe",       "party": "contested", "start": 1619, "end": 1619 }
+  ]
+}

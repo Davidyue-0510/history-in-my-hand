@@ -53,6 +53,8 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .hint{font-size:clamp(9px,0.9vw,11px);color:#484f58;line-height:1.4}
 .maptools{display:flex;align-items:center;gap:6px;padding:5px 10px;background:#0d1117;border-bottom:1px solid #30363d;font-size:clamp(10px,1vw,12px);flex-wrap:wrap}
 .mhint{color:#8b949e;font-size:clamp(9px,0.9vw,11px)}
+.scene-sel{background:#161b22;color:#c9d1d9;border:1px solid #30363d;border-radius:4px;padding:3px 6px;font-size:clamp(10px,1vw,12px);cursor:pointer}
+.scene-sel:hover{border-color:#58a6ff}
 .tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100;color:#c9d1d9}
 .tt b{color:#fff}.tt s{color:#8b949e}
 .wall-label{font:9px system-ui;fill:#7A7466;letter-spacing:.3px}
@@ -89,7 +91,7 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 <body>
 <div class="sidebar">
   <h2>⚙ 确定性演化引擎</h2>
-  <div class="hint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实。<b>新增</b>：whatif 物理/后勤约束（R7）与党派九派内耗（R6）已整合——参数/分支 D·E·F 开启后，补给半径/冬季与朝堂内斗会真实改写推演。</div>
+  <div class="hint" id="sceneHint">世界=真实史料（36 治所/28 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放史实；调参/分支=确定性反事实。<b>新增</b>：whatif 物理/后勤约束（R7）与党派九派内耗（R6）已整合——参数/分支 D·E·F 开启后，补给半径/冬季与朝堂内斗会真实改写推演。</div>
   <div class="legend" id="legend"></div>
 
   <h3>⛰ 海拔图例（米，底图=中国真实高程）</h3>
@@ -145,6 +147,10 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 
 <div class="main">
   <div class="maptools">
+    <select id="sceneSel" class="scene-sel" title="切换模拟场景">
+      <option value="liaodong">辽东全期 (1616–1644)</option>
+      <option value="sarhu">萨尔浒之战 (1619)</option>
+    </select>
     <button class="btn-mode active" id="vw_liaodong">📍 辽东战区</button>
     <button class="btn-mode" id="vw_china">🌏 全中国</button>
     <span class="mhint">底图 = 羊皮纸+山影（ASTER GDEM 真实高程）+ Natural Earth 矢量水系/省界 + 辽东边墙</span>
@@ -175,14 +181,22 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 <script src="sim_basemap.js"></script>
 <script src="sim_rules_liaodong.js"></script>
 <script src="sim_ic_liaodong.js"></script>
+<script src="sim_data_sarhu.js"></script>
+<script src="sim_rules_sarhu.js"></script>
+<script src="sim_ic_sarhu.js"></script>
 <script>
 // =============================================================
 // 确定性演化引擎：声明式三阶层规则解释器 + 真实史料基底
 // v0.55：地图升级为羊皮纸+山影+SVG 矢量底（同 sarhu 视觉）
 // =============================================================
-const D = window.SIM_DATA;
-const R = window.SIM_RULES;
-const IC = window.SIM_IC;
+// ── 多场景加载：?scene=sarhu 切到萨尔浒之战；缺省=辽东全期（零侵入辽东现有文件）──
+const SCENE = (new URLSearchParams(location.search)).get('scene') || 'liaodong';
+const SIM_NS = (SCENE==='sarhu')
+  ? { d: window.SIM_DATA_SARHU, r: window.SIM_RULES_SARHU, ic: window.SIM_IC_SARHU, name:'SIM_DATA_SARHU' }
+  : { d: window.SIM_DATA, r: window.SIM_RULES, ic: window.SIM_IC, name:'SIM_DATA' };
+const D = SIM_NS.d;
+const R = SIM_NS.r;
+const IC = SIM_NS.ic;
 const BM = window.SIM_BASEMAP;
 const TERR = window.CHINA_TERRAIN || null;
 if(!D || !R || !IC){ document.getElementById('narr').innerHTML='<span class="d">✗ 未加载 SIM_DATA / SIM_RULES / SIM_IC</span>'; }
@@ -225,7 +239,12 @@ const PHYS = {
     '1632|tumed':'summer',
     '1635|chahar':'summer','1635|ordos':'summer',
     '1641|jinzhou':'summer','1641|songshan':'summer','1641|xingshan':'summer',
-    '1644|ningyuan':'autumn','1644|shanhaiquan':'winter'
+    '1644|ningyuan':'autumn','1644|shanhaiquan':'winter',
+    // 萨尔浒之战（1619）关键据点史载季节：春/夏行军；赫图阿拉/界凡为后金出击基地
+    '1619|hetuala':'spring','1619|jiefan':'spring',
+    '1619|sarhu':'spring','1619|shangjianya':'spring','1619|feifenshan':'spring',
+    '1619|niumaozhai':'summer','1619|abudaligang':'summer','1619|fucha':'summer',
+    '1619|yehe':'summer'
   }
 };
 const SEASONS = ['spring','summer','autumn','winter'];
@@ -1071,6 +1090,12 @@ document.getElementById('btnReplay').onclick=replay;
 document.getElementById('year').oninput=function(){ pause(); year=+this.value; runTo(year, currentBranch); paint(); };
 document.getElementById('vw_liaodong').onclick=function(){ setView('liaodong'); };
 document.getElementById('vw_china').onclick=function(){ setView('china'); };
+// ── 多场景切换（?scene=）──
+const sceneSel=document.getElementById('sceneSel');
+if(sceneSel){
+  sceneSel.value=SCENE;
+  sceneSel.onchange=function(){ const u=new URLSearchParams(location.search); u.set('scene',this.value); location.search=u.toString(); };
+}
 function setViewBtn(id){ ['vw_liaodong','vw_china'].forEach(x=>{const e=document.getElementById(x); if(e) e.classList.toggle('active', x===id);}); }
 function setView(v){ if(v!=='china'&&v!=='liaodong')return; viewFit=v; setViewBtn('vw_'+v); paint(); }
 
@@ -1091,6 +1116,8 @@ window.SIM_ENGINE = {
   terrainReady: ()=> chinaReady,
   chinaTerrainSrc: ()=> chinaReady? CHINA_DEM.src : null,
   hasBasemap: ()=> !!BM,
+  scene: ()=> SCENE,
+  metaYears: ()=> ({ start: D.meta.startYear, end: D.meta.endYear }),
   viewFit: ()=> viewFit,
   setView: setView,
   basemapLayerCount: ()=>{ const s=BM[viewFit]||{}; return { land:(s.land||[]).length, rivers:(s.rivers||[]).length, admin1:(s.admin1||[]).length, lakes:(s.lakes||[]).length, coastline:(s.coastline||[]).length, wall:!!(BM.wall&&BM.wall.path) }; },
@@ -1124,6 +1151,12 @@ window.onload=function(){
   resetSim(null); runTo(D.meta.endYear);
   applyView();
   drawLegend();
+  // ── 多场景动态：年份滑块范围 + 侧栏提示随场景变化 ──
+  const yEl=document.getElementById('year');
+  yEl.min=D.meta.startYear; yEl.max=D.meta.endYear;
+  const hintEl=document.getElementById('sceneHint');
+  if(hintEl && R.meta && R.meta.uiHint) hintEl.innerHTML=R.meta.uiHint;
+  paint();
 };
 window.onresize=function(){ measure(); fitView(); applyView(); };
 </script>
