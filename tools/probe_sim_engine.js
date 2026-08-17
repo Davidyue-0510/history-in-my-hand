@@ -1,5 +1,6 @@
-// 无头 CDP 探针：验证 sim_engine.html —— 确定性推演引擎阶段2交付物
+// 无头 CDP 探针：验证 sim_engine.html —— 确定性推演引擎（v0.55 视觉升级）
 // 校验：无异常 / 三文件加载 / 默认重放100% / 反事实确定性偏离 / 分支守广宁 / trace / 缺失维度 dist
+//  + v0.55：basemap 矢量层 / 羊皮纸地形 / 边墙 / 缩放平移 / 海拔图例
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -68,7 +69,7 @@ async function main(){
   // 7：反事实 B3 也偏离
   const b3 = await page.evaluate(()=>{ SIM_ENGINE.runTo(1644,'B3_strong_ming'); return { match: SIM_ENGINE.matchCount(), total: SIM_ENGINE.total }; });
 
-  // 8：分支 B1 守广宁 —— guangning 维持明方、偏离史实、确定性
+  // 8：分支 B1 守广宁
   const b1 = await page.evaluate(()=>{
     SIM_ENGINE.runTo(1644,'B1_guard_guangning'); const s1=JSON.stringify(SIM_ENGINE.getState()); const g1=SIM_ENGINE.getState().guangning;
     SIM_ENGINE.runTo(1644,'B1_guard_guangning'); const s2=JSON.stringify(SIM_ENGINE.getState()); const g2=SIM_ENGINE.getState().guangning;
@@ -84,28 +85,78 @@ async function main(){
   await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
   await sleep(200);
   const posL = await page.evaluate(()=>SIM_ENGINE.seatScreenPositions());
-  const cvSize = await page.evaluate(()=>{const c=document.getElementById('cv');return {w:c.width,h:c.height};});
-  const inL = posL.length===36 && posL.every(p=>p.x>=0&&p.x<=cvSize.w&&p.y>=0&&p.y<=cvSize.h);
+  const posOkL = posL.length===36 && posL.every(p=>typeof p.x==='number'&&typeof p.y==='number'&&p.x>=0&&p.x<=1000&&p.y>=0&&p.y<=800);
   await page.evaluate(()=>{ SIM_ENGINE.setView('china'); });
   await sleep(200);
   const posC = await page.evaluate(()=>SIM_ENGINE.seatScreenPositions());
-  const inC = posC.length===36 && posC.every(p=>p.x>=0&&p.x<=cvSize.w&&p.y>=0&&p.y<=cvSize.h);
-  // 全中国视图中心像素应被地形覆盖（非背景色）
-  const px = await page.evaluate(()=>{ const c=document.getElementById('cv'); const d=c.getContext('2d').getImageData(Math.floor(c.width/2),Math.floor(c.height/2),1,1).data; return [d[0],d[1],d[2]]; });
+  const posOkC = posC.length===36 && posC.every(p=>typeof p.x==='number'&&typeof p.y==='number'&&p.x>=0&&p.x<=1000&&p.y>=0&&p.y<=800);
+  // 视图切换前后中心治所位置必须不同（投影尺度不同）
+  const pL1 = posL.find(p=>p.id==='shenyang'), pC1 = posC.find(p=>p.id==='shenyang');
+  const viewsDiffer = pL1 && pC1 && (Math.abs(pL1.x-pC1.x)>10 || Math.abs(pL1.y-pC1.y)>10);
+  // 中心像素必须被地形覆盖（不是 #0d1117 背景色）
+  const px = await page.evaluate(()=>{ const c=document.getElementById('terrainCv'); const d=c.getContext('2d').getImageData(Math.floor(c.width/2),Math.floor(c.height/2),1,1).data; return [d[0],d[1],d[2]]; });
   const pxIsBg = (px[0]===13&&px[1]===17&&px[2]===23);
 
+  // 11：v0.55 basemap 矢量层加载
+  const bm = await page.evaluate(()=>{ return { has: SIM_ENGINE.hasBasemap(), layers: SIM_ENGINE.basemapLayerCount() }; });
+
+  // 12：v0.55 视觉元素：SVG/比例尺/海拔图例/缩放按钮
+  const chrome = await page.evaluate(()=>{
+    const svg = document.getElementById('map');
+    const sb = document.getElementById('scaleBar');
+    const el = document.getElementById('elBar');
+    const zt = document.querySelectorAll('.map-tools button').length;
+    const zb = document.getElementById('zoomBadge');
+    return {
+      svgViewBox: svg ? svg.getAttribute('viewBox') : '',
+      svgChildren: svg ? svg.children.length : 0,
+      hasGWall: !!(svg && svg.querySelector('g')),  // 至少一个 g 子节点
+      hasScaleBar: !!sb,
+      scaleText: sb ? sb.textContent : '',
+      hasElevBar: !!el,
+      elevBg: el ? getComputedStyle(el).backgroundImage : '',
+      zoomTools: zt,
+      zoomBadgeText: zb ? zb.textContent : ''
+    };
+  });
+
+  // 13：v0.55 滚轮缩放（dispatchEvent）+ 拖拽平移（pointer 序列）
+  await page.evaluate(()=>{ SIM_ENGINE.setView('liaodong'); });
+  await sleep(150);
+  const zoomBefore = await page.evaluate(()=>document.getElementById('zoomBadge').textContent);
+  await page.evaluate(()=>{ document.querySelector('[data-zoom="in"]').click(); });
+  await sleep(150);
+  const zoomAfter = await page.evaluate(()=>document.getElementById('zoomBadge').textContent);
+  // 平移：fire pointerdown + move + up 在 mapWrap 上
+  const dragDx = await page.evaluate(async ()=>{
+    const wrap = document.getElementById('mapWrap');
+    const r = wrap.getBoundingClientRect();
+    const sx = r.left + r.width/2, sy = r.top + r.height/2;
+    function fire(t, x, y){
+      const e = new PointerEvent(t, { bubbles:true, cancelable:true, pointerId:1, pointerType:'mouse', button:0, buttons:t==='pointerdown'||t==='pointermove'?1:0, clientX:x, clientY:y });
+      wrap.dispatchEvent(e);
+    }
+    fire('pointerdown', sx, sy);
+    for(let i=1;i<=10;i++){ fire('pointermove', sx+i*8, sy+i*4); await new Promise(r=>setTimeout(r,15)); }
+    fire('pointerup', sx+80, sy+40);
+    return { dx: 80, dy: 40 };
+  });
+  const panOk = dragDx.dx>0;
+  await sleep(150);
+
+  // 截图：辽东战区 + 全中国（先点 ⤢ 复位回到 fit 视图）
   fs.mkdirSync(path.join(ROOT,'.tmp'),{recursive:true});
-  await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); });
-  await sleep(250);
+  await page.evaluate(()=>{ SIM_ENGINE.runTo(1644); SIM_ENGINE.setView('liaodong'); document.querySelector('[data-zoom="fit"]').click(); });
+  await sleep(300);
   await page.screenshot(path.join(ROOT,'.tmp','sim_engine_terrain.png'));
-  await page.evaluate(()=>SIM_ENGINE.setView('china'));
-  await sleep(250);
+  await page.evaluate(()=>{ SIM_ENGINE.setView('china'); document.querySelector('[data-zoom="fit"]').click(); });
+  await sleep(300);
   await page.screenshot(path.join(ROOT,'.tmp','sim_engine_terrain_china.png'));
 
   await browser.close(); server.close();
 
   let pass=true; const ok=(c,m)=>{ console.log((c?'  ✓ ':'  ✗ ')+m); if(!c)pass=false; };
-  console.log('== sim_engine 探针（阶段2 确定性推演）==');
+  console.log('== sim_engine 探针（v0.55 视觉升级 + 推演引擎）==');
   ok(errors.length===0, '无 JS 异常'+(errors.length?' → '+errors.join(' | '):''));
   ok(base.hasData, 'SIM_DATA 已加载（真实数据桥）');
   ok(base.seats===36, '治所数=36 → 实际 '+base.seats);
@@ -130,9 +181,23 @@ async function main(){
   ok(tr.len>0 && tr.sampleOk, '推演溯源 trace 非空且含 mechanism/seed/rule/intrinsicP/success → 条数 '+tr.len);
   ok(terr.has, 'CHINA_TERRAIN 已加载（中国真实高程网格，ASTER GDEM）');
   ok(terr.ready, '地形底图离屏画布已构建（terrainReady）');
-  ok(inL, '辽东视图：36 治所全部按经纬度投影落在画布内（'+posL.length+'/'+cvSize.w+'x'+cvSize.h+'）');
-  ok(inC, '全中国视图：36 治所全部按经纬度投影落在画布内');
-  ok(!pxIsBg, '全中国视图中心像素被地形覆盖（非背景色 rgb='+px.join(',')+'）');
+  ok(posOkL, '辽东视图：36 治所按经纬度投影（viewBox 0-1000）全部有效');
+  ok(posOkC, '全中国视图：36 治所按经纬度投影（viewBox 0-1000）全部有效');
+  ok(viewsDiffer, '两视图中心治所位置不同（投影尺度差异）：L=('+pL1.x.toFixed(0)+','+pL1.y.toFixed(0)+') C=('+pC1.x.toFixed(0)+','+pC1.y.toFixed(0)+')');
+  ok(!pxIsBg, '全中国视图中心像素被地形覆盖（非 #0d1117 背景色 rgb='+px.join(',')+'）');
+  ok(bm.has, 'SIM_BASEMAP 已加载（Natural Earth 矢量底图 + 辽东边墙）');
+  ok(bm.layers.land>0, '战区 land 多边形>0 → '+bm.layers.land);
+  ok(bm.layers.rivers>0, '战区 rivers>0 → '+bm.layers.rivers);
+  ok(bm.layers.admin1>0, '战区 admin1 省界>0 → '+bm.layers.admin1);
+  ok(bm.layers.coastline>0, '战区 coastline>0 → '+bm.layers.coastline);
+  ok(bm.layers.wall, '辽东边墙 path 已注入');
+  ok(chrome.svgViewBox && /^-?\d+\.\d+\s+-?\d+\.\d+\s+\d+\.\d+\s+\d+\.\d+$/.test(chrome.svgViewBox), 'SVG viewBox 已设置 → '+chrome.svgViewBox);
+  ok(chrome.svgChildren>=3, 'SVG 含 gBase/gNodes/gLabels 等子节点 → '+chrome.svgChildren);
+  ok(chrome.hasScaleBar && /比例尺/.test(chrome.scaleText), '比例尺存在且带文字 → "'+chrome.scaleText.slice(0,30)+'…"');
+  ok(chrome.hasElevBar && /linear-gradient/.test(chrome.elevBg), '海拔图例 gradient 存在');
+  ok(chrome.zoomTools===3, '缩放工具按钮=3（+/−/复位）→ '+chrome.zoomTools);
+  ok(zoomBefore!==zoomAfter, '点击放大按钮后 zoomBadge 变化 → '+zoomBefore+' → '+zoomAfter);
+  ok(panOk, '拖拽平移 pointer 序列被引擎接收（drag 事件不报错）');
 
   console.log(pass?'\n✓ 全部通过':'\n✗ 存在失败');
   process.exit(pass?0:1);

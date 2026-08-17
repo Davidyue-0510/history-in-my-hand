@@ -4,7 +4,9 @@
 <title>确定性演化引擎 · 明末辽东（三阶层声明式推演）</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
 body{font:14px/1.5 system-ui,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;height:100vh;overflow:hidden}
+/* ──────── 左侧栏（保持不变） ──────── */
 .sidebar{width:min(360px,32vw);background:#161b22;padding:10px;overflow-y:auto;flex-shrink:0;border-right:1px solid #30363d;font-size:clamp(12px,1.2vw,14px)}
 .sidebar h2{font-size:clamp(14px,1.5vw,18px);color:#58a6ff;margin-bottom:6px;border-bottom:1px solid #30363d;padding-bottom:6px}
 .sidebar h3{font-size:clamp(11px,1.1vw,13px);color:#8b949e;margin:10px 0 4px;cursor:pointer;user-select:none}
@@ -14,16 +16,32 @@ body{font:14px/1.5 system-ui,sans-serif;background:#0d1117;color:#c9d1d9;display
 .section label{display:flex;justify-content:space-between;font-size:clamp(10px,1vw,12px);color:#8b949e;margin:4px 0 1px}
 .section input[type=range]{width:100%;accent-color:#58a6ff}
 .ctrl-row{display:flex;flex-wrap:wrap;gap:3px;margin:6px 0}
-button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:clamp(10px,1vw,12px);margin:1px}
+button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:clamp(10px,1vw,12px);margin:1px;font-family:inherit}
 .btn-run{background:#238636;color:#fff}.btn-pause{background:#6e40c9;color:#fff}.btn-step{background:#1f6feb;color:#ccc}
 .btn-reset{background:#da3633;color:#fff}.btn-mode{background:#1f2428;color:#8b949e;border:1px solid #30363d}
 .btn-mode:hover{background:#58a6ff;color:#fff}.btn-mode.active{background:#1f6feb;color:#fff}
 .stats{font-size:clamp(10px,1vw,12px)}
 .stats .row{display:flex;justify-content:space-between;padding:1px 0;border-bottom:1px solid #21262d}
 .stats .row .lv{color:#58a6ff}
-.main{flex:1;display:flex;flex-direction:column;min-width:0}
-#cv{flex:1;cursor:crosshair;border-bottom:1px solid #30363d;min-height:0}
-.narr{height:clamp(36px,6vh,50px);padding:4px 12px;font-size:clamp(11px,1.1vw,14px);background:#0d1117;border-bottom:1px solid #30363d;display:flex;align-items:center}
+.main{flex:1;display:flex;flex-direction:column;min-width:0;background:#EFECE2}  /* 羊皮纸色兜底 */
+.map-wrap{flex:1;position:relative;min-height:0;overflow:hidden}
+#terrainCv{position:absolute;inset:0;width:100%;height:100%}
+#map{position:absolute;inset:0;width:100%;height:100%;pointer-events:auto}
+.map-tools{position:absolute;top:8px;right:8px;display:flex;flex-direction:column;gap:4px;z-index:5}
+.map-tools button{background:rgba(251,249,243,.95);border:1px solid #c9bfa8;color:#2A2521;width:28px;height:28px;font-size:14px;border-radius:3px;line-height:1;padding:0;margin:0}
+.map-tools button:hover{background:#fff;border-color:#8C6239}
+.zoom-badge{position:absolute;top:8px;left:8px;background:rgba(251,249,243,.95);border:1px solid #c9bfa8;color:#2A2521;padding:2px 6px;font-size:11px;border-radius:3px;z-index:5;font-family:monospace}
+.scale-bar{position:absolute;bottom:8px;left:8px;background:rgba(251,249,243,.95);border:1px solid #c9bfa8;padding:4px 6px;font-size:10px;color:#2A2521;border-radius:3px;z-index:5;font-family:monospace;line-height:1.3}
+.scale-bar svg{display:block;margin:2px 0 1px}
+.elev-legend{position:absolute;bottom:8px;right:8px;background:rgba(251,249,243,.95);border:1px solid #c9bfa8;padding:4px 6px;font-size:10px;color:#2A2521;border-radius:3px;z-index:5;line-height:1.3}
+.elev-legend .el-bar{width:120px;height:10px;border:1px solid #c9bfa8;border-radius:2px;margin:2px 0 1px}
+.elev-legend .el-ticks{display:flex;justify-content:space-between;font-size:9px;color:#6a5d49}
+.elev-legend .el-water{display:inline-block;width:9px;height:9px;border:1px solid #9cc4d6;background:#bcd8e6;vertical-align:middle;margin-right:3px}
+.map-hint{position:absolute;top:8px;left:50%;transform:translateX(-50%);background:rgba(251,249,243,.85);color:#6a5d49;font-size:10px;padding:2px 6px;border-radius:3px;z-index:5;pointer-events:none}
+.place-label{font:11px system-ui;fill:#2A2521;text-shadow:0 0 2px #FBF9F3,0 0 2px #FBF9F3,0 0 2px #FBF9F3}
+.river-label{font:9px system-ui;fill:#2c5570;font-style:italic;letter-spacing:.4px}
+.adm-label{font:9px system-ui;fill:#7a6e5c;letter-spacing:.4px}
+.narr{height:clamp(36px,6vh,50px);padding:4px 12px;font-size:clamp(11px,1.1vw,14px);background:#0d1117;border-bottom:1px solid #30363d;border-top:1px solid #30363d;display:flex;align-items:center;color:#c9d1d9}
 .narr .w{color:#d29922}.narr .g{color:#3fb950}.narr .m{color:#8b949e}.narr .d{color:#e94560}
 .pf{font-size:clamp(10px,1vw,12px);margin:2px 0}
 .pf b{color:#c9d1d9}.pf .f{color:#8b949e;font-size:10px}
@@ -35,12 +53,9 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .hint{font-size:clamp(9px,0.9vw,11px);color:#484f58;line-height:1.4}
 .maptools{display:flex;align-items:center;gap:6px;padding:5px 10px;background:#0d1117;border-bottom:1px solid #30363d;font-size:clamp(10px,1vw,12px);flex-wrap:wrap}
 .mhint{color:#8b949e;font-size:clamp(9px,0.9vw,11px)}
-.elev-bar{height:12px;border-radius:3px;border:1px solid #30363d;margin-top:2px}
-.elev-ticks{display:flex;justify-content:space-between;font-size:9px;color:#8b949e;margin-top:1px}
-.elev-water{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:middle;margin-right:3px;background:#9cc3d8;border:1px solid #30363d}
-.elev-water-lbl{font-size:clamp(9px,0.9vw,11px);color:#8b949e;margin:2px 0 1px}
-.tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100}
+.tt{position:absolute;display:none;background:#161b22;border:1px solid #58a6ff;padding:5px 8px;font-size:clamp(10px,1vw,12px);border-radius:4px;pointer-events:none;z-index:100;color:#c9d1d9}
 .tt b{color:#fff}.tt s{color:#8b949e}
+.wall-label{font:9px system-ui;fill:#7A7466;letter-spacing:.3px}
 </style>
 </head>
 <body>
@@ -50,9 +65,11 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
   <div class="legend" id="legend"></div>
 
   <h3>⛰ 海拔图例（米，底图=中国真实高程）</h3>
-  <div class="elev-water-lbl"><span class="elev-water"></span>水体 / 海（高程 ≤ 0）</div>
-  <div class="elev-bar" style="background:linear-gradient(to right,#b6d77a 0%,#d9d36a 7%,#e6c34d 14%,#dd9b46 28%,#c87a3c 43%,#a85a32 57%,#8a6b5c 71%,#ece4dc 100%)"></div>
-  <div class="elev-ticks"><span>0</span><span>200</span><span>500</span><span>1k</span><span>2k</span><span>3k</span><span>4k</span><span>5k+</span></div>
+  <div style="font-size:clamp(9px,0.9vw,11px);color:#8b949e;margin:2px 0">
+    <span style="display:inline-block;width:10px;height:10px;background:#bcd8e6;border:1px solid #9cc4d6;vertical-align:middle;margin-right:3px"></span>水体 / 海
+  </div>
+  <div style="height:12px;border-radius:3px;border:1px solid #30363d;margin-top:2px;background:linear-gradient(to right,#D6E3E8 0%,#F3F0E5 5%,#E0D4B7 15%,#CFA78C 35%,#BFAD8D 60%,#9C8362 80%,#9C8362 100%)"></div>
+  <div style="display:flex;justify-content:space-between;font-size:9px;color:#8b949e;margin-top:1px"><span>0</span><span>200</span><span>500</span><span>1k</span><span>2k</span><span>3k+</span></div>
 
   <h3>⏱ 时间</h3>
   <div class="section">
@@ -93,24 +110,44 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
   <div class="maptools">
     <button class="btn-mode active" id="vw_liaodong">📍 辽东战区</button>
     <button class="btn-mode" id="vw_china">🌏 全中国</button>
-    <span class="mhint">底图 = 中国真实高程（ASTER GDEM），按海拔分层设色</span>
+    <span class="mhint">底图 = 羊皮纸+山影（ASTER GDEM 真实高程）+ Natural Earth 矢量水系/省界 + 辽东边墙</span>
   </div>
-  <canvas id="cv"></canvas>
-  <div class="narr" id="narr"><span class="m">点击 ▶ 运行，或拖动年份滑块。治所按真实经纬度投影叠加于中国地形底图。</span></div>
+  <div class="map-wrap" id="mapWrap">
+    <canvas id="terrainCv"></canvas>
+    <svg id="map" preserveAspectRatio="none"></svg>
+    <div class="map-tools">
+      <button data-zoom="in"  title="放大 (+)">＋</button>
+      <button data-zoom="out" title="缩小 (−)">−</button>
+      <button data-zoom="fit" title="复位 (0 / 双击)">⤢</button>
+    </div>
+    <div class="zoom-badge" id="zoomBadge">1.0×</div>
+    <div class="scale-bar" id="scaleBar"></div>
+    <div class="elev-legend" id="elevLegend">
+      <span><span class="el-water"></span>水体</span> 海拔 m
+      <div class="el-bar" id="elBar"></div>
+      <div class="el-ticks"><span>0</span><span>500</span><span>1200</span><span>1800+</span></div>
+    </div>
+    <div class="map-hint">滚轮缩放 · 拖拽平移 · 双击复位</div>
+  </div>
+  <div class="narr" id="narr"><span class="m">点击 ▶ 运行，或拖动年份滑块。治所按真实经纬度投影叠加于羊皮纸地图。</span></div>
 </div>
 <div class="tt" id="tt"></div>
 
 <script src="_sim_liaodong.js"></script>
 <script src="china_terrain.js"></script>
+<script src="sim_basemap.js"></script>
 <script src="sim_rules_liaodong.js"></script>
 <script src="sim_ic_liaodong.js"></script>
 <script>
-// ============================================================
+// =============================================================
 // 确定性演化引擎：声明式三阶层规则解释器 + 真实史料基底
-// ============================================================
+// v0.55：地图升级为羊皮纸+山影+SVG 矢量底（同 sarhu 视觉）
+// =============================================================
 const D = window.SIM_DATA;
 const R = window.SIM_RULES;
 const IC = window.SIM_IC;
+const BM = window.SIM_BASEMAP;
+const TERR = window.CHINA_TERRAIN || null;
 if(!D || !R || !IC){ document.getElementById('narr').innerHTML='<span class="d">✗ 未加载 SIM_DATA / SIM_RULES / SIM_IC</span>'; }
 
 const PARTY = D.partyColors;
@@ -132,12 +169,12 @@ function seedHash(str){
 function intrinsicP(year, place_id, to, salt){ return seedHash(year+'|'+place_id+'|'+to+'|'+(salt||'a')); }
 
 // ---- 参数 ----
-let params = Object.assign({}, IC.params);   // 默认锚定
-let currentBranch = null;                     // 分支 id 或 null
+let params = Object.assign({}, IC.params);
+let currentBranch = null;
 function effFor(party, p){
   if(party==='清方') return p.qingExec;
   if(party==='明方') return p.mingExec;
-  return 1.0; // contested 必然发生
+  return 1.0;
 }
 
 // ---- 状态机 ----
@@ -145,27 +182,22 @@ let state = {};
 let year = D.meta.startYear;
 let divergences = [];
 let trace = [];
-
 function getBranch(id){ return (R.branches||[]).find(b=>b.id===id) || null; }
-
 function applyParamsFromUI(){
   R.params.forEach(pr=>{ const el=document.getElementById('p_'+pr.id); if(el) params[pr.id]=+el.value; });
 }
-
 function resetSim(branchId){
-  state = Object.assign({}, IC.control);   // 初始控制=1616 真实基底
+  state = Object.assign({}, IC.control);
   year = D.meta.startYear;
   divergences = [];
   trace = [];
   currentBranch = branchId || currentBranch;
 }
-
-// 单年确定性推演（解释 R1 战争裁决）
 function applyYear(Y, p, branch){
   const ts = D.transitions.filter(t=>t.year===Y);
   const blocked = branch && branch.block ? branch.block : [];
   for(const t of ts){
-    if(blocked.some(b=>b.year===t.year && b.place_id===t.place_id)) continue; // 分支抑制
+    if(blocked.some(b=>b.year===t.year && b.place_id===t.place_id)) continue;
     const eff = effFor(t.to, p);
     const ip = intrinsicP(t.year, t.place_id, t.to, 'a');
     let success = (t.to==='contested') ? true : (ip < eff);
@@ -173,14 +205,12 @@ function applyYear(Y, p, branch){
       const hasN = neighbors(t.place_id).some(nid=>state[nid]===t.to);
       if(!hasN){ const ip2 = intrinsicP(t.year, t.place_id, t.to, 'b'); success = (ip2 < p.spreadPref); }
     }
-    // 溯源（#15）：每次裁决记录机制/初值/seed
     trace.push({ year:Y, place_id:t.place_id, name:seatById[t.place_id]?seatById[t.place_id].name:'', from:t.from, to:t.to,
       rule:'R1', mechanism:'战争裁决(04 §战争裁决)', intrinsicP:+ip.toFixed(4), eff:+eff.toFixed(2), success, seed:(t.year+'|'+t.place_id+'|'+t.to) });
     if(success) state[t.place_id]=t.to;
     else divergences.push({year:Y, place:t.place_id, to:t.to, name:seatById[t.place_id]?seatById[t.place_id].name:''});
   }
 }
-
 function runTo(Y, branchId){
   const br = branchId!==undefined ? getBranch(branchId) : getBranch(currentBranch);
   const p = Object.assign({}, params);
@@ -190,109 +220,378 @@ function runTo(Y, branchId){
   year = Y;
 }
 
-// ---- 渲染（中国地形底图 + 经纬度投影叠加）----
-let cv,ctx;
-const TERR = window.CHINA_TERRAIN || null;
-let terrCanvas=null, terrainReady=false;
-let viewFit='liaodong';            // 'liaodong' | 'china'
-let seatBBox=null;                 // 计算一次：辽东战区 bbox
-function setupCv(){cv=document.getElementById('cv');cv.width=cv.parentElement.clientWidth;cv.height=cv.parentElement.clientHeight;ctx=cv.getContext('2d');}
+// =============================================================
+// 视图 / 投影 / 缩放 / 平移（自 sarhu.html 移植，等比 viewBox）
+// =============================================================
+const wrap = document.getElementById('mapWrap');
+const svg  = document.getElementById('map');
+const cv   = document.getElementById('terrainCv');
+const SVGNS = 'http://www.w3.org/2000/svg';
+let viewFit = 'liaodong';
+let VIEW_LON0, VIEW_LON1, VIEW_LAT0, VIEW_LAT1;
+function applyViewBBox(){
+  if(viewFit==='china'){
+    // 全中国：直接吃 CHGIS/NE bbox
+    VIEW_LON0=73.5; VIEW_LON1=135.1; VIEW_LAT0=18.0; VIEW_LAT1=53.6;
+  } else {
+    // 辽东战区：治所 bbox + 1.0° 边距
+    let lons=SEATS.map(s=>s.lon), lats=SEATS.map(s=>s.lat);
+    VIEW_LON0=Math.min(...lons)-1.0; VIEW_LON1=Math.max(...lons)+1.0;
+    VIEW_LAT0=Math.min(...lats)-1.0; VIEW_LAT1=Math.max(...lats)+1.0;
+  }
+}
+applyViewBBox();
 
-// 海拔 → 分层设色（hypsometric），与侧栏图例一致
-const ELEV_BANDS=[
-  [0,   [182,215,122]],  // 0–200 平原绿
-  [200, [217,211,106]],  // 200–500 黄绿
-  [500, [230,195,77]],   // 500–1000 黄
-  [1000,[221,155,70]],   // 1000–2000 橙
-  [2000,[200,122,60]],   // 2000–3000 浅棕
-  [3000,[168,90,50]],    // 3000–4000 棕
-  [4000,[138,107,92]],   // 4000–5000 深棕
-  [5000,[236,228,220]],  // >5000 雪
-];
-const WATER=[156,195,216];
-function elevColor(e){
-  if(e===null||e<=0) return WATER;
-  for(let i=ELEV_BANDS.length-1;i>=0;i--){ if(e>=ELEV_BANDS[i][0]) return ELEV_BANDS[i][1]; }
-  return ELEV_BANDS[0][1];
+let view = {x:0,y:0,w:1000,h:800};
+let fitW = 1000, cw = 1, ch = 1;
+const MIN_W = 28;
+
+function px(lon){ return (lon - VIEW_LON0) / (VIEW_LON1 - VIEW_LON0) * 1000; }
+function py(lat){ return (VIEW_LAT1 - lat) / (VIEW_LAT1 - VIEW_LAT0) * 800; }
+function pX(lon,w){ return (lon - VIEW_LON0) / (VIEW_LON1 - VIEW_LON0) * w; }
+function pY(lat,h){ return (VIEW_LAT1 - lat) / (VIEW_LAT1 - VIEW_LAT0) * h; }
+
+function dataBounds(){
+  const xs=[], ys=[];
+  for(let i=0;i<=1000;i+=50){
+    const lon=VIEW_LON0 + (VIEW_LON1-VIEW_LON0)*i/1000;
+    xs.push(pX(lon,1000)); ys.push(pY(VIEW_LAT0,800));
+  }
+  return { x0: Math.min(...xs), x1: Math.max(...xs), y0: Math.min(...ys), y1: Math.max(...ys) };
+}
+function fitView(){
+  const pad=30;
+  const b=dataBounds();
+  const bw=(b.x1-b.x0)+pad*2, bh=(b.y1-b.y0)+pad*2;
+  const ar=cw/ch;
+  let w,h;
+  if(bw/bh>ar){ w=bw; h=bw/ar; } else { h=bh; w=bh*ar; }
+  fitW=w;
+  view={ x:(b.x0+b.x1)/2-w/2, y:(b.y0+b.y1)/2-h/2, w:w, h:h };
+}
+function measure(){
+  const r=wrap.getBoundingClientRect();
+  cw=Math.max(1,r.width); ch=Math.max(1,r.height);
+  const dpr=window.devicePixelRatio||1;
+  cv.width=Math.round(cw*dpr); cv.height=Math.round(ch*dpr);
+}
+function clampView(){
+  view.w=Math.min(fitW*1.6, Math.max(MIN_W, view.w));
+  view.h=view.w*(ch/cw);
+  const b=dataBounds(), slack=Math.max(view.w,view.h)*0.5;
+  view.x=Math.min(b.x1+slack-view.w, Math.max(b.x0-slack, view.x));
+  view.y=Math.min(b.y1+slack-view.h, Math.max(b.y0-slack, view.y));
+}
+let rafPending=false;
+function applyView(redrawSvg){
+  clampView();
+  svg.setAttribute('viewBox', view.x.toFixed(2)+' '+view.y.toFixed(2)+' '+view.w.toFixed(2)+' '+view.h.toFixed(2));
+  svg.style.setProperty('--u', (view.w/cw).toFixed(5));
+  document.getElementById('zoomBadge').textContent = (fitW/view.w).toFixed(1)+'×';
+  drawTerrain();
+  if(redrawSvg!==false && !rafPending){
+    rafPending=true;
+    requestAnimationFrame(()=>{ rafPending=false; drawDynamic(); });
+  }
+  drawScaleBar();
+}
+function screenToMap(cx,cy){
+  const r=wrap.getBoundingClientRect();
+  return { x: view.x+(cx-r.left)/r.width*view.w, y: view.y+(cy-r.top)/r.height*view.h };
 }
 
-// 构建离屏地形画布（nx×ny，Y 翻转使北在上）
-function buildTerrain(){
-  if(!TERR) return;
-  const c=document.createElement('canvas'); c.width=TERR.nx; c.height=TERR.ny;
-  const cx=c.getContext('2d'); const img=cx.createImageData(TERR.nx,TERR.ny);
-  for(let iy=0;iy<TERR.ny;iy++){
-    for(let ix=0;ix<TERR.nx;ix++){
-      const e=TERR.elev[iy*TERR.nx+ix];
-      const col=elevColor(e);
-      const di=((TERR.ny-1-iy)*TERR.nx+ix)*4;
-      img.data[di]=col[0];img.data[di+1]=col[1];img.data[di+2]=col[2];img.data[di+3]=255;
+// 滚轮缩放
+wrap.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const k=e.deltaY>0 ? 1.14 : 1/1.14;
+  const a=screenToMap(e.clientX, e.clientY);
+  const before=view.w;
+  view.w*=k; view.w=Math.min(fitW*1.6, Math.max(MIN_W,view.w));
+  const kk=view.w/before; view.h=view.w*(ch/cw);
+  view.x=a.x-(a.x-view.x)*kk; view.y=a.y-(a.y-view.y)*kk;
+  applyView();
+}, {passive:false});
+
+// 拖拽平移（延迟 setPointerCapture 防止 click 失效）
+const DRAG_TH=4;
+let drag=null;
+wrap.addEventListener('pointerdown', e=>{
+  if(e.button!==0) return;
+  if(e.target && e.target.closest && e.target.closest('.map-tools, .scale-bar, .elev-legend, .zoom-badge, .map-hint')) return;
+  drag={ sx:e.clientX, sy:e.clientY, vx:view.x, vy:view.y, moved:0, pid:e.pointerId, cap:false };
+});
+wrap.addEventListener('pointermove', e=>{
+  if(!drag) return;
+  const dx=e.clientX-drag.sx, dy=e.clientY-drag.sy;
+  drag.moved=Math.max(drag.moved, Math.abs(dx)+Math.abs(dy));
+  if(!drag.cap){
+    if(drag.moved<=DRAG_TH) return;
+    try{ wrap.setPointerCapture(drag.pid); }catch(_){}
+    drag.cap=true; wrap.classList.add('grabbing');
+  }
+  view.x=drag.vx - dx/cw*view.w;
+  view.y=drag.vy - dy/ch*view.h;
+  applyView(false);
+});
+function endDrag(e){
+  if(!drag) return;
+  const moved=drag.moved, cap=drag.cap, pid=drag.pid;
+  drag=null; wrap.classList.remove('grabbing');
+  if(cap){ try{ wrap.releasePointerCapture(pid); }catch(_){} }
+  if(moved>DRAG_TH) drawDynamic();
+}
+wrap.addEventListener('pointerup', endDrag);
+wrap.addEventListener('pointercancel', endDrag);
+wrap.addEventListener('dblclick', ()=>{ fitView(); applyView(); });
+
+document.querySelectorAll('.map-tools button').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    const m=b.getAttribute('data-zoom');
+    if(m==='fit'){ fitView(); }
+    else {
+      const k=m==='in' ? 1/1.45 : 1.45;
+      const cx=view.x+view.w/2, cy=view.y+view.h/2;
+      view.w*=k; view.h=view.w*(ch/cw);
+      view.x=cx-view.w/2; view.y=cy-view.h/2;
+    }
+    applyView();
+  });
+});
+
+// =============================================================
+// 地形：羊皮纸色带 + ESRI 山影（自 sarhu.html 移植，符号化）
+// =============================================================
+let tImg=null;
+const RAMP=[
+  [0,    [214,227,232]],  // 水体：淡蓝
+  [1,    [243,240,229]],  // 海平面：羊皮纸
+  [80,   [235,229,212]],
+  [250,  [223,213,188]],
+  [500,  [208,194,161]],
+  [900,  [191,172,136]],
+  [1400, [173,150,115]],
+  [1800, [156,131, 98]]
+];
+function rampColor(e){
+  if(e<=0) return RAMP[0][1];
+  for(let i=1;i<RAMP.length;i++){
+    if(e<=RAMP[i][0]){
+      const a=RAMP[i-1], b=RAMP[i], t=(e-a[0])/(b[0]-a[0]||1);
+      return [a[1][0]+(b[1][0]-a[1][0])*t, a[1][1]+(b[1][1]-a[1][1])*t, a[1][2]+(b[1][2]-a[1][2])*t];
     }
   }
-  cx.putImageData(img,0,0); terrCanvas=c; terrainReady=true;
+  return RAMP[RAMP.length-1][1];
+}
+function buildTerrainImage(){
+  if(!TERR) return null;
+  const nx=TERR.nx, ny=TERR.ny, E=TERR.elev;
+  const c=document.createElement('canvas'); c.width=nx; c.height=ny;
+  const ctx=c.getContext('2d'); const img=ctx.createImageData(nx,ny);
+  const midLat=TERR.lat0+(ny-1)*TERR.step/2;
+  const cellY=TERR.step*111320;
+  const cellX=TERR.step*111320*Math.cos(midLat*Math.PI/180);
+  const ZF=2.6;
+  const zen=(90-45)*Math.PI/180, azm=(360-315+90)*Math.PI/180;
+  function z(ix,iy){ ix=Math.max(0,Math.min(nx-1,ix)); iy=Math.max(0,Math.min(ny-1,iy)); const v=E[iy*nx+ix]; return v==null?0:v; }
+  for(let iy=0;iy<ny;iy++){
+    for(let ix=0;ix<nx;ix++){
+      const e=z(ix,iy);
+      const dzdx=((z(ix+1,iy-1)+2*z(ix+1,iy)+z(ix+1,iy+1))-(z(ix-1,iy-1)+2*z(ix-1,iy)+z(ix-1,iy+1)))/(8*cellX);
+      const dzdy=((z(ix-1,iy+1)+2*z(ix,iy+1)+z(ix+1,iy+1))-(z(ix-1,iy-1)+2*z(ix,iy-1)+z(ix+1,iy-1)))/(8*cellY);
+      const slope=Math.atan(ZF*Math.sqrt(dzdx*dzdx+dzdy*dzdy));
+      const aspect=Math.atan2(dzdy,-dzdx);
+      let hs=Math.cos(zen)*Math.cos(slope)+Math.sin(zen)*Math.sin(slope)*Math.cos(azm-aspect);
+      hs=Math.max(0,Math.min(1,hs));
+      const col=rampColor(e);
+      const f=0.62+0.52*hs;
+      const ff = (e<=0) ? 1 : f;
+      const row=(ny-1-iy);
+      const o=(row*nx+ix)*4;
+      img.data[o]  =Math.max(0,Math.min(255,col[0]*ff));
+      img.data[o+1]=Math.max(0,Math.min(255,col[1]*ff));
+      img.data[o+2]=Math.max(0,Math.min(255,col[2]*ff));
+      img.data[o+3]=255;
+    }
+  }
+  ctx.putImageData(img,0,0);
+  return c;
+}
+function drawTerrain(){
+  if(!cv) return;
+  const ctx=cv.getContext('2d');
+  const dpr=window.devicePixelRatio||1;
+  ctx.setTransform(1,0,0,1,0,0);
+  ctx.fillStyle='#EFECE2'; ctx.fillRect(0,0,cv.width,cv.height);
+  if(!TERR || !tImg) return;
+  // 把 GDEM 网格（lon0..lon0+(nx-1)*step × lat0..lat0+(ny-1)*step）按视图 bbox 投影
+  const lonMax=TERR.lon0+(TERR.nx-1)*TERR.step;
+  const latMax=TERR.lat0+(TERR.ny-1)*TERR.step;
+  const lonC=Math.max(VIEW_LON0, Math.min(VIEW_LON1, lonMax));
+  const lonC0=Math.max(VIEW_LON0, Math.min(VIEW_LON1, TERR.lon0));
+  const latC0=Math.max(VIEW_LAT0, Math.min(VIEW_LAT1, TERR.lat0));
+  const latC1=Math.max(VIEW_LAT0, Math.min(VIEW_LAT1, latMax));
+  if(lonC0>=lonC || latC0>=latC1) return;
+  const gx=pX(lonC0, 1000), gw=pX(lonC, 1000)-gx;
+  const gy=pY(latC1, 800),   gh=pY(latC0, 800)-gy;
+  const s=(cw/view.w)*dpr;
+  ctx.setTransform(s,0,0,s,-view.x*s,-view.y*s);
+  ctx.imageSmoothingEnabled=true; ctx.imageSmoothingQuality='high';
+  ctx.drawImage(tImg, gx,gy,gw,gh);
+  ctx.setTransform(1,0,0,1,0,0);
 }
 
-// 视图 bbox
-function viewBBox(){
-  if(viewFit==='china') return {lon0:TERR?TERR.lon0:73.5, lat0:TERR?TERR.lat0:18, lon1:TERR?TERR.lon0+TERR.nx*TERR.step:135.1, lat1:TERR?TERR.lat0+TERR.ny*TERR.step:53.6};
-  if(!seatBBox){ // 辽东战区：治所 bbox + 边距
-    let lons=SEATS.map(s=>s.lon), lats=SEATS.map(s=>s.lat);
-    const m=1.6;
-    seatBBox={lon0:Math.min(...lons)-m, lat0:Math.min(...lats)-m, lon1:Math.max(...lons)+m, lat1:Math.max(...lats)+m};
-  }
-  return seatBBox;
+// =============================================================
+// SVG 矢量底：水系/省界/湖泊/边墙（自 sarhu.html 移植）
+// =============================================================
+let gBase, gNodes, gLabels, gWall;
+function el(tag, attrs, parent){
+  const n=document.createElementNS(SVGNS, tag);
+  for(const k in attrs) if(attrs[k]!=null) n.setAttribute(k, attrs[k]);
+  if(parent) parent.appendChild(n);
+  return n;
 }
-
-// 视图 → 屏幕的统一投影（equirectangular + cos(latMid) 校正，北在上、居中）
-function projector(vb,w,h){
-  const pad=24;
-  const latMid=(vb.lat0+vb.lat1)/2, cml=Math.cos(latMid*Math.PI/180);
-  const effW=(vb.lon1-vb.lon0)*cml, effH=(vb.lat1-vb.lat0);
-  const scale=Math.min((w-2*pad)/effW,(h-2*pad)/effH);
-  const mapW=effW*scale, mapH=effH*scale;
-  const ox=(w-mapW)/2, oy=(h-mapH)/2;
-  return { X:(lon)=> ox + (lon-vb.lon0)*cml*scale, Y:(lat)=> oy + (vb.lat1-lat)*scale, scale, cml, latMid };
+function geomPath(g){
+  if(!g) return '';
+  const t=g.type, c=g.coordinates; let d='';
+  function ring(r){ return 'M'+r.map(p=>pX(p[0],1000)+' '+pY(p[1],800)).join(' L ')+' Z'; }
+  function line(l){ return 'M'+l.map(p=>pX(p[0],1000)+' '+pY(p[1],800)).join(' L '); }
+  if(t==='Polygon'){ g.coordinates.forEach(r=>{ d+=ring(r)+' '; }); }
+  else if(t==='MultiPolygon'){ g.coordinates.forEach(p=>{ p.forEach(r=>{ d+=ring(r)+' '; }); }); }
+  else if(t==='LineString'){ d=line(c); }
+  else if(t==='MultiLineString'){ c.forEach(l=>{ d+=line(l)+' '; }); }
+  return d.trim();
 }
-
-function render(){
-  if(!ctx)return;
-  const w=cv.width,h=cv.height;
-  ctx.clearRect(0,0,w,h);
-  ctx.fillStyle='#0d1117'; ctx.fillRect(0,0,w,h);
-  const vb=viewBBox();
-  const P=projector(vb,w,h);
-
-  // 1) 地形底图
-  if(terrCanvas){
-    const gW=(TERR.nx*TERR.step)*P.cml*P.scale;
-    const gH=(TERR.ny*TERR.step)*P.scale;
-    const gx=P.X(TERR.lon0), gy=P.Y(TERR.lat0+TERR.ny*TERR.step);
-    ctx.imageSmoothingEnabled=true;
-    ctx.drawImage(terrCanvas, 0,0,TERR.nx,TERR.ny, gx,gy,gW,gH);
-  } else {
-    ctx.fillStyle='#9cc3d8'; ctx.fillRect(0,0,w,h);
-    ctx.fillStyle='#c9d1d9'; ctx.font='14px system-ui';
-    ctx.fillText('⚠ 未加载 china_terrain.js（地形底图缺失）', 20, 30);
-  }
-
-  // 2) 战区连线（仅辽东视图，避免全国尺度杂乱）
-  if(viewFit==='liaodong'){
-    ctx.strokeStyle='rgba(20,20,20,0.25)';ctx.lineWidth=1;
-    SEATS.forEach(s=>neighbors(s.id).forEach(nid=>{const b=seatById[nid];ctx.beginPath();ctx.moveTo(P.X(s.lon),P.Y(s.lat));ctx.lineTo(P.X(b.lon),P.Y(b.lat));ctx.stroke();}));
-  }
-
-  // 3) 治所控制点
-  const r = viewFit==='liaodong' ? 6 : 4;
-  SEATS.forEach(s=>{
-    const p=state[s.id]||'?'; const col=PARTY[p]?hex(PARTY[p]):'#555';
-    const x=P.X(s.lon), y=P.Y(s.lat);
-    ctx.fillStyle=col;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
-    ctx.strokeStyle='rgba(255,255,255,0.6)';ctx.lineWidth=0.8;ctx.stroke();
-    if(viewFit==='liaodong'){ ctx.fillStyle='#1a1a1a';ctx.font='10px system-ui';ctx.fillText(s.name, x+8, y+3); }
+function geomLabelXY(g){
+  const c=g.coordinates;
+  if(g.type==='Polygon') return [pX(c[0][0][0],1000), pY(c[0][0][1],800)];
+  if(g.type==='MultiPolygon') return [pX(c[0][0][0][0],1000), pY(c[0][0][0][1],800)];
+  if(g.type==='LineString'){ const m=c[Math.floor(c.length/2)]; return [pX(m[0],1000), pY(m[1],800)]; }
+  if(g.type==='MultiLineString'){ const l=c[0], m=l[Math.floor(l.length/2)]; return [pX(m[0],1000), pY(m[1],800)]; }
+  return null;
+}
+function initMap(){
+  svg.innerHTML='';
+  gBase=el('g',{},svg);
+  gWall=el('g',{},svg);
+  gNodes=el('g',{},svg);
+  gLabels=el('g',{},svg);
+  drawBase();
+}
+function drawBase(){
+  if(!BM) return;
+  gBase.innerHTML=''; gWall.innerHTML='';
+  const src=BM[viewFit] || BM.liaodong;
+  if(!src) return;
+  // 1) 陆地（无地形网格时兜底用；有地形时地形 canvas 已盖住陆地，避免重画）
+  (src.land||[]).forEach(f=>{ el('path',{ d:geomPath(f.g), fill:'#efe7d6', stroke:'none' },gBase); });
+  // 2) 湖泊
+  const gLake=el('g',{ fill:'#bcd8e6', stroke:'#9cc4d6', 'stroke-width':0.5, 'vector-effect':'non-scaling-stroke' },gBase);
+  (src.lakes||[]).forEach(f=>{ el('path',{ d:geomPath(f.g) },gLake); });
+  // 3) 海岸线
+  (src.coastline||[]).forEach(f=>{
+    el('path',{ d:geomPath(f.g), fill:'none', stroke:'#7c9aa8', 'stroke-width':1, 'vector-effect':'non-scaling-stroke' },gBase);
   });
-
-  drawLegend();
+  // 4) 省界 + 中文标注
+  const gAdm=el('g',{ fill:'none', stroke:'#c9bfa8', 'stroke-width':0.8, 'vector-effect':'non-scaling-stroke' },gBase);
+  (src.admin1||[]).forEach(f=>{
+    el('path',{ d:geomPath(f.g) },gAdm);
+    if(f.n){ const a=geomLabelXY(f.g); if(a){
+      const t=el('text',{ x:a[0]+4, y:a[1], class:'adm-label' },gBase); t.textContent=f.n;
+    } }
+  });
+  // 5) 河流 + 河名（关键：让辽河、松花江等名可见）
+  const gRiv=el('g',{ fill:'none', stroke:'#6f9fc0', 'stroke-linecap':'round', 'stroke-linejoin':'round', 'vector-effect':'non-scaling-stroke' },gBase);
+  (src.rivers||[]).forEach(f=>{
+    el('path',{ d:geomPath(f.g), 'stroke-width':1.4 },gRiv);
+    if(f.n){ const r=geomLabelXY(f.g); if(r){
+      const t=el('text',{ x:r[0]+4, y:r[1]-3, class:'river-label' },gBase); t.textContent=f.n;
+    } }
+  });
+  // 6) 辽东边墙（仅战区视图）
+  if(viewFit==='liaodong' && BM.wall && BM.wall.path && BM.wall.path.length>1){
+    const pts=BM.wall.path.map(p=>[pX(p[0],1000), pY(p[1],800)]);
+    const d=pts.map((p,i)=> (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' ');
+    el('path',{ d, fill:'none', stroke:'#7A7466', 'stroke-width':2, 'stroke-dasharray':'1 5',
+      'stroke-linecap':'round', opacity:'.85', 'vector-effect':'non-scaling-stroke' },gWall);
+    const mid=pts[Math.floor(pts.length/2)];
+    const t=el('text',{ x:mid[0]+6, y:mid[1]-4, class:'wall-label' },gWall);
+    t.textContent=BM.wall.name || '辽东边墙';
+  }
 }
+
+// =============================================================
+// 动态层：控制色 + 治所点（黑实心/白实心 + 米色描边，同 sarhu）
+// =============================================================
+function drawDynamic(){
+  if(!gNodes) return;
+  gNodes.innerHTML=''; gLabels.innerHTML='';
+  const scale=cw/view.w;
+  SEATS.forEach(s=>{
+    const ux=pX(s.lon,1000), uy=pY(s.lat,800);
+    const p=state[s.id]||'?';
+    const col=PARTY[p]?hex(PARTY[p]):'#555';
+    const big = (viewFit==='liaodong');
+    const sr=big?6:4;
+    el('circle',{ cx:ux, cy:uy, r:sr/scale, class:'pnode'+(big?' big':''),
+      fill:col, stroke:'#FBF9F3', 'stroke-width':1.3, 'vector-effect':'non-scaling-stroke' },gNodes);
+    const hit=el('circle',{ cx:ux, cy:uy, r:14/scale, fill:'transparent', class:'node-hit', style:'cursor:pointer' },gNodes);
+    hit.addEventListener('click', ()=>{ showTT(s); });
+    if(big){
+      const lb=el('text',{ x:ux+7/scale, y:uy+3.6/scale, class:'place-label' },gLabels);
+      lb.textContent=s.name;
+    }
+  });
+}
+function showTT(s){
+  const tt=document.getElementById('tt');
+  tt.style.display='block';
+  const r=wrap.getBoundingClientRect();
+  // 简单定位：相对 wrap 的中心偏右
+  const sx=(pX(s.lon,1000)-view.x)/view.w*r.width;
+  const sy=(pY(s.lat,800)-view.y)/view.h*r.height;
+  tt.style.left=(sx+12)+'px';
+  tt.style.top=(sy-10)+'px';
+  tt.innerHTML='<b>'+s.name+'</b> <s>('+s.lon+','+s.lat+')</s><br>推演控制: '+(state[s.id]||'?')+'<br>史实1644: '+(D.terminalReal[s.id]||'?');
+}
+
+// =============================================================
+// 比例尺（米，按当前 view.w / 经度跨度反算）
+// =============================================================
+function drawScaleBar(){
+  const el=document.getElementById('scaleBar');
+  // 1 用户单位 = (VIEW_LON1-VIEW_LON0)/1000 经度，按视图中央纬度换米
+  const latMid=(VIEW_LAT0+VIEW_LAT1)/2;
+  const cml=Math.cos(latMid*Math.PI/180);
+  const metersPerUnit=(VIEW_LON1-VIEW_LON0)/1000 * 111320 * cml;
+  // 选一个「漂亮」的 1/2/5×10^n 长度
+  const totalMeters=view.w*metersPerUnit;
+  const target=totalMeters/5;
+  const pow=Math.pow(10, Math.floor(Math.log10(target)));
+  const norm=target/pow;
+  const nice = norm<2 ? 2 : norm<5 ? 5 : 10;
+  const segMeters=nice*pow;
+  const segPx=segMeters/metersPerUnit;
+  const label = segMeters>=1000 ? (segMeters/1000)+' km' : Math.round(segMeters)+' m';
+  el.innerHTML='比例尺 '+label+
+    '<svg width="'+(segPx+2)+'" height="6"><rect x="0" y="0" width="'+segPx+'" height="4" fill="#2A2521"/>'+
+    '<rect x="0" y="4" width="'+segPx+'" height="2" fill="#FBF9F3" stroke="#2A2521" stroke-width="0.4"/></svg>';
+}
+
+// =============================================================
+// 海拔图例：按视图级别（重画侧栏 + 角落）
+// =============================================================
+function paintElevLegend(){
+  const stops=RAMP.map(s=>{
+    const c=s[1]; return 'rgb('+c[0]+','+c[1]+','+c[2]+') '+(Math.min(1800,s[0])/1800*100).toFixed(0)+'%';
+  }).join(',');
+  const bar=document.getElementById('elBar');
+  if(bar) bar.style.background='linear-gradient(90deg,'+stops+')';
+}
+paintElevLegend();
+
+// =============================================================
+// 侧栏图例 / 统计 / trace
+// =============================================================
 function drawLegend(){ const el=document.getElementById('legend'); el.innerHTML=''; Object.keys(PARTY).forEach(p=>{ el.innerHTML+='<span><i style="background:'+hex(PARTY[p])+'"></i>'+p+'</span>'; }); }
 function matchCount(){ return SEATS.filter(s=>(state[s.id]||'')===(D.terminalReal[s.id]||'')).length; }
 function updateStats(){
@@ -318,7 +617,15 @@ function updateTrace(){ const el=document.getElementById('trace'); if(!trace.len
     const tag=t.success?'<span class="ok">✓</span>':'<span class="no">✗</span>';
     return t.year+' '+t.name+'→'+t.to+' '+tag+' p='+t.intrinsicP+' eff='+t.eff;
   }).join('<br>'); }
-function paint(){render();updateStats();updateNarr();updateTrace();document.getElementById('vYear').textContent=year;document.getElementById('year').value=year;}
+function paint(){
+  // 视图参数变了 → 重算 view bbox 并重 fit
+  applyViewBBox();
+  fitView();
+  drawTerrain(); drawBase(); drawDynamic(); drawScaleBar();
+  updateStats(); updateNarr(); updateTrace();
+  document.getElementById('vYear').textContent=year;
+  document.getElementById('year').value=year;
+}
 
 // ---- 控制 ----
 function step(){ if(year<D.meta.endYear){year++; applyYear(year, Object.assign({},params), getBranch(currentBranch)); paint();} else {pause();} }
@@ -351,13 +658,12 @@ function buildBranchBox(){
 }
 function setActiveBranchBtn(id){ ['br_none'].concat((R.branches||[]).map(b=>'br_'+b.id)).forEach(x=>{const e=document.getElementById(x); if(e) e.classList.toggle('active', x===id);}); }
 
-// ---- 人物面板（#3）----
+// ---- 人物 / 缺失维度面板 ----
 function renderPersons(){
   const el=document.getElementById('pf');
-  const by = IC.personsByFaction;
+  const by=IC.personsByFaction;
   el.innerHTML=Object.keys(by).map(f=>'<div class="pf"><b>'+by[f].label+'</b> <span class="f">('+by[f].count+'人 · '+by[f].side+')</span></div>').join('');
 }
-// ---- 缺失维度面板（#7/#9/#10）----
 function renderMissingDims(){
   const el=document.getElementById('md'); const md=R.missing_dims||IC.missing_dims||{};
   el.innerHTML=Object.keys(md).map(k=>{ const d=md[k];
@@ -365,18 +671,7 @@ function renderMissingDims(){
   }).join('');
 }
 
-// 悬浮提示
-document.getElementById('cv').onmousemove=function(e){
-  if(!ctx)return; const rect=cv.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top;
-  const w=cv.width,h=cv.height; const vb=viewBBox(); const P=projector(vb,w,h);
-  let found=null,md=(viewFit==='liaodong'?14:10);
-  SEATS.forEach(s=>{const d=Math.hypot(P.X(s.lon)-mx,P.Y(s.lat)-my);if(d<md){found=s;md=d;}});
-  const tt=document.getElementById('tt');
-  if(found){tt.style.display='block';tt.style.left=(e.clientX-rect.left+12)+'px';tt.style.top=(e.clientY-rect.top-10)+'px';
-    tt.innerHTML='<b>'+found.name+'</b> <s>('+found.lon+','+found.lat+')</s><br>推演控制: '+(state[found.id]||'?')+'<br>史实1644: '+(D.terminalReal[found.id]||'?');}
-  else tt.style.display='none';
-};
-
+// ---- 控制 ----
 document.getElementById('btnRun').onclick=run;
 document.getElementById('btnPause').onclick=pause;
 document.getElementById('btnStep').onclick=()=>{pause();step();};
@@ -403,14 +698,26 @@ window.SIM_ENGINE = {
   branchIds: ()=> (R.branches||[]).map(b=>b.id),
   missingDimDims: ()=> Object.keys(R.missing_dims||{}).map(k=>R.missing_dims[k].dim),
   hasTerrain: ()=> !!TERR,
-  terrainReady: ()=> terrainReady,
+  terrainReady: ()=> !!tImg,
+  hasBasemap: ()=> !!BM,
   viewFit: ()=> viewFit,
   setView: setView,
-  seatScreenPositions: ()=>{ const w=cv.width,h=cv.height; const vb=viewBBox(); const P=projector(vb,w,h); return SEATS.map(s=>({id:s.id,name:s.name,x:P.X(s.lon),y:P.Y(s.lat)})); }
+  basemapLayerCount: ()=>{ const s=BM[viewFit]||{}; return { land:(s.land||[]).length, rivers:(s.rivers||[]).length, admin1:(s.admin1||[]).length, lakes:(s.lakes||[]).length, coastline:(s.coastline||[]).length, wall:!!(BM.wall&&BM.wall.path) }; },
+  seatScreenPositions: ()=>{ return SEATS.map(s=>({id:s.id,name:s.name,x:pX(s.lon,1000),y:pY(s.lat,800)})); }
 };
 
-window.onload=function(){ setupCv(); buildTerrain(); buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims(); resetSim(null); runTo(D.meta.endYear); paint(); };
-window.onresize=function(){ setupCv(); paint(); };
+// ---- 启动 ----
+window.onload=function(){
+  tImg=buildTerrainImage();
+  initMap();
+  buildParamBox(); buildBranchBox(); renderPersons(); renderMissingDims();
+  measure();
+  fitView();
+  resetSim(null); runTo(D.meta.endYear);
+  applyView();
+  drawLegend();
+};
+window.onresize=function(){ measure(); fitView(); applyView(); };
 </script>
 </body>
 </html>
