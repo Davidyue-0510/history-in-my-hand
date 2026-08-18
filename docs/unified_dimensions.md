@@ -34,13 +34,13 @@
 | 3 | 派系/立场动因 | 共建 | implemented(数据)/missing(模拟消费) | `persons[].faction` + `vocab.factions/parties`；sim 读为 `agent.factionDriver` | 隐（驱动） |
 | 4 | 史料4层+诚实缺口 | 实际 | implemented | `assertions.jsonl`（`layer`:record/scholarship/inference/gap/conflict）；`gap.conf=0` + `lead` | 缺口显 / 参数隐 |
 | 5 | 来源党派偏见 | 实际 | implemented | `sources[].party` + `vocab.stance_buckets`；sim 读为 `obs = true + bias(party)` | 隐 |
-| 6 | 因果机制/规则引擎 | 模拟 | specified(04)/missing(落地文件) | **待建** `worlds/<w>/rules.yaml`（或 `sim/rules/<scene>.json`），声明式；把 `agent_sim` 硬编码抽出 | 隐 |
+| 6 | 因果机制/规则引擎 | 模拟 | implemented(v0.62 SIM_RULES 声明式) | `demo/sim_rules_<scene>.js`（R1-R7 声明式；`SIM_CORE` 消费）；`agent_sim` 硬编码已抽出 | 隐 |
 | 7 | 概率/不确定性传播 | 共建 | missing | **待建** `assertions[].dist`(gap→prior) + `sim_config` 参数 `dist`；替代现有 `confidence` 标量 | 隐 |
 | 8 | 决策主体能动性 | 模拟 | specified(04)/partial(未绑真实) | `04` Phase3 agent；绑定 `persons[].id` 作 `agent.utility(state)→action` | 隐 |
-| 9 | 后勤/补给约束 | 模拟 | partial(whatif局部)/missing(通用化) | **待建** `data/<scene>/logistics.json`（routes/capacity/attrition）或并入 `rules` | 隐 |
+| 9 | 后勤/物理约束(R7) | 模拟 | implemented-**required**(v0.63) | `demo/sim_engine.js` R7；超补给半径(明300/清400km)硬失败 `eff=0.015`，三子约束(抵达时间窗/扎营水源≤waterMaxKm/粮草可持续)仅 `logisticsPenalty>0` 折入（=0 忠实重放） | 隐（必算必显） |
 | 10 | 人口/经济基底 | 共建 | implemented(impact)/implemented(sim state) | `impact.json`(`deaths/mortality`) + sim `state.pop / landGini / eduGini` | 部分显 |
 | 11 | 时间演化步长 | 模拟 | specified(03§5,04)/implemented(agent_sim tick) | `timeline.json`(year) + `sim_config.steps`；统一为**1 回合=1 年** | 轴显 / 内隐 |
-| 12 | 反事实分支管理 | 模拟 | specified(03§5)/partial | `timeline.json` nodes[].branch + `assertions[].branch`(隐藏元数据) | 隐 |
+| 12 | 反事实分支管理 | 模拟 | implemented(SIM_RULES.branches B1-B6) | `demo/sim_rules_<scene>.js` `branches[]`；确定性反事实（FNV-1a seedHash，无 Math.random） | 隐 |
 | 13 | 反馈循环 | 模拟 | specified(04)/implemented(agent_sim) | `rules` 带 back-edge（控失→派变→再失）；`04` 阶层固化循环 | 隐 |
 | 14 | 多政权并存交互 | 实际 | implemented(数据)/missing(模拟对抗) | `vocab.parties` + `control` per party；sim 做多 agent 对抗网 | 显 / 隐 |
 | 15 | 可解释归因(provenance) | 共建 | implemented(实际)/missing(模拟) | 模拟输出带 `trace:[{mechanism,initialCondition,seed}]`；断言保 `source/lead` | 可选显 |

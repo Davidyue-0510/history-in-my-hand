@@ -307,7 +307,9 @@ async function launch(){
     async goto(url){ await send('Page.navigate',{url}); await sleep(900); },
     async evaluate(fn){ const expr='('+fn.toString()+')()'; const r=await send('Runtime.evaluate',{expression:expr,returnByValue:true,awaitPromise:true});
       if(!r.result) throw new Error('evaluate 无 result: '+JSON.stringify(r).slice(0,300));
-      if(r.result.exceptionDetails) throw new Error('evaluate 异常: '+JSON.stringify(r.result.exceptionDetails).slice(0,300));
+      if(r.result.exceptionDetails){ const ed=r.result.exceptionDetails;
+        const desc=(ed.exception&&(ed.exception.description||ed.exception.value))||ed.text||'';
+        throw new Error('evaluate 异常: '+String(desc).slice(0,900)+' | '+JSON.stringify(ed).slice(0,400)); }
       return r.result.result.value; },
     async screenshot(file){ const r=await send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false}); fs.writeFileSync(file, Buffer.from(r.result.data,'base64')); },
     on(){},

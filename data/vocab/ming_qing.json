@@ -77,7 +77,18 @@
     "常州",
     "苏州"
    ],
-   "geo_note": "东林以江南无锡东林书院为舆论中心（顾宪成、高攀龙），成员近三成出自南直隶，余布各省清流。"
+   "geo_note": "东林以江南无锡东林书院为舆论中心（顾宪成、高攀龙），成员近三成出自南直隶，余布各省清流。",
+   "period_years": [
+    1594,
+    1644
+   ],
+   "sim": {
+    "power": 0.55,
+    "self_interest": 0.6,
+    "reinforce_willingness": 0.65,
+    "belief_no_fall": true,
+    "belief_note": "清流必胜论：以为只需扫除阉党、正君心，边患自平；故倾全力于京察与三案翻覆，视辽饷为权柄消息而非军需。"
+   }
   },
   "eunuch": {
    "name": "阉党（魏忠贤集团）",
@@ -101,7 +112,18 @@
     "幽州",
     "赫图阿拉"
    ],
-   "geo_note": "阉党依附魏忠贤（北直隶/河间）与客氏，核心是内廷宦官+北直隶依附官僚。"
+   "geo_note": "阉党依附魏忠贤（北直隶/河间）与客氏，核心是内廷宦官+北直隶依附官僚。",
+   "period_years": [
+    1621,
+    1627
+   ],
+   "sim": {
+    "power": 0.75,
+    "self_interest": 0.8,
+    "reinforce_willingness": 0.4,
+    "belief_no_fall": true,
+    "belief_note": "内廷可控论：以为兵权财权尽握内府即万无一失，边将存亡取决于是否附己；广宁失后先诿熊廷弼而不补边。"
+   }
   },
   "zhe_dang": {
    "name": "浙党",
@@ -122,7 +144,18 @@
    "bases": [
     "杭州"
    ],
-   "geo_note": "浙党以沈一贯、方从哲为首的浙籍官僚，主导万历后期中枢。"
+   "geo_note": "浙党以沈一贯、方从哲为首的浙籍官僚，主导万历后期中枢。",
+   "period_years": [
+    1596,
+    1620
+   ],
+   "sim": {
+    "power": 0.6,
+    "self_interest": 0.65,
+    "reinforce_willingness": 0.55,
+    "belief_no_fall": true,
+    "belief_note": "中枢粉饰论：以为讳败即无败；萨尔浒丧师后压低损数、护杨镐，以保枢辅不倒。"
+   }
   },
   "chu_dang": {
    "name": "楚党",
@@ -139,7 +172,18 @@
    "bases": [
     "武昌"
    ],
-   "geo_note": "楚党以楚籍官僚官应震、吴亮嗣为首，与浙党合攻东林。"
+   "geo_note": "楚党以楚籍官僚官应震、吴亮嗣为首，与浙党合攻东林。",
+   "period_years": [
+    1596,
+    1620
+   ],
+   "sim": {
+    "power": 0.35,
+    "self_interest": 0.6,
+    "reinforce_willingness": 0.55,
+    "belief_no_fall": true,
+    "belief_note": "结盟自保论：以为附浙党即可长保中枢，边事只是攻东林的题目而非亡国之危。"
+   }
   },
   "qi_dang": {
    "name": "齐党",
@@ -156,7 +200,18 @@
    "bases": [
     "济南"
    ],
-   "geo_note": "齐党以齐籍官僚亓诗教、周永春为首，多居主兵中枢。"
+   "geo_note": "齐党以齐籍官僚亓诗教、周永春为首，多居主兵中枢。",
+   "period_years": [
+    1596,
+    1620
+   ],
+   "sim": {
+    "power": 0.45,
+    "self_interest": 0.62,
+    "reinforce_willingness": 0.55,
+    "belief_no_fall": true,
+    "belief_note": "兵额账面论：身居主兵中枢，以为册上有兵即实有兵，讳言辽东缺额与逃亡。"
+   }
   },
   "xuan_kun": {
    "name": "宣党 / 昆党",
@@ -172,7 +227,18 @@
     "宣城",
     "昆山"
    ],
-   "geo_note": "宣党（汤宾尹/宣城）与昆党（顾天埈/昆山）小集团，主要影响科举京察。"
+   "geo_note": "宣党（汤宾尹/宣城）与昆党（顾天埈/昆山）小集团，主要影响科举京察。",
+   "period_years": [
+    1600,
+    1620
+   ],
+   "sim": {
+    "power": 0.25,
+    "self_interest": 0.55,
+    "reinforce_willingness": 0.6,
+    "belief_no_fall": true,
+    "belief_note": "科场根本论：以为国本在科举座主而不在边墙，京察得手即万事可定。"
+   }
   },
   "yan_shang": {
    "name": "盐商 / 盐政利益",
@@ -193,7 +259,18 @@
    "bases": [
     "扬州"
    ],
-   "geo_note": "盐商/盐政利益以两淮（扬州）盐商及其利益相关官僚为主体。"
+   "geo_note": "盐商/盐政利益以两淮（扬州）盐商及其利益相关官僚为主体。",
+   "period_years": [
+    1583,
+    1644
+   ],
+   "sim": {
+    "power": 0.5,
+    "self_interest": 0.7,
+    "reinforce_willingness": 0.7,
+    "belief_no_fall": true,
+    "belief_note": "输饷即忠论：以为加派可无穷输、商民必乐输；不问加派激出的民变会先烧穿内地。"
+   }
   },
   "nei_guan": {
    "name": "内臣 / 宦官（独立于阉党）",
@@ -214,7 +291,18 @@
    "bases": [
     "幽州"
    ],
-   "geo_note": "内臣/宦官系统独立于阉党，监军镇守矿税监多出自内廷，北直隶为活动中心。"
+   "geo_note": "内臣/宦官系统独立于阉党，监军镇守矿税监多出自内廷，北直隶为活动中心。",
+   "period_years": [
+    1583,
+    1644
+   ],
+   "sim": {
+    "power": 0.4,
+    "self_interest": 0.55,
+    "reinforce_willingness": 0.5,
+    "belief_no_fall": true,
+    "belief_note": "监军自利论：矿税监视辽东为利源（高淮乱辽），以为边军可榨而不溃。"
+   }
   },
   "feng_jiang": {
    "name": "封疆大吏 / 辽东经略系",
@@ -241,8 +329,25 @@
     "辽阳",
     "沈阳"
    ],
-   "geo_note": "封疆大吏/辽东经略系据辽东边镇（辽阳、沈阳），对败绩诿过、战功夸张。"
+   "geo_note": "封疆大吏/辽东经略系据辽东边镇（辽阳、沈阳），对败绩诿过、战功夸张。",
+   "period_years": [
+    1583,
+    1644
+   ],
+   "sim": {
+    "power": 0.7,
+    "self_interest": 0.75,
+    "reinforce_willingness": 0.85,
+    "belief_no_fall": true,
+    "belief_note": "本镇独存论：以为守住本镇即为功，败则诿邻镇/中枢、胜则夸报，宁内斗不协同。"
+   }
   }
+ },
+ "_faction_sim_note": "派系推演参数单一真值（v0.62 / Task #266）。此前 power/self_interest/reinforce_willingness/belief_no_fall 只硬编码在 demo/sim_ic_liaodong.js 与 sim_ic_sarhu.js 两处，新增场景必然第三次抄写→串味。现在提为本包 factions[id].sim，由 tools/gen_faction_bundle.py 编译成 demo/_faction_ming.js（window.FACTION_VOCAB），模拟器与沙盘都只读它。字段语义：period_years=该派在中枢的活跃年窗（公元年，用于逐年判定活跃派系集合）；power=相对朝堂影响力(prior)；self_interest=私利优先度(prior)；reinforce_willingness=愿向前线增援度(prior)；belief_no_fall=是否以为『明朝不会亡』；belief_note=该派具体的自欺逻辑（与 bias_note 对应，有史料依据）。三个 0–1 标量均为先验(prior)而非实测，故在 SIM_RULES.missing_dims.faction 带 dist 诚实标注；全部确定性，无随机数。",
+ "faction_dynamics": {
+  "court_cohesion_base": 0.85,
+  "infight_amp": 0.45,
+  "note": "朝堂内耗动力学单一真值（原 sim_ic_*.js 的 factionDynamics）。用户洞察：明末各派皆信『明不亡』，故把资源投向党内争斗而非边患→朝堂内耗确定性映射为明方执行力折扣与守土崩溃风险（SIM_RULES R6）。court_cohesion_base=朝堂基准凝聚度；infight_amp=内耗对前线的传导振幅上限。"
  },
  "faction_colors": {
   "donglin": "#1B7A5A",

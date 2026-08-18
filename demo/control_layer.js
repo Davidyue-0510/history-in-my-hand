@@ -120,6 +120,7 @@
     var cv = document.createElement('canvas'); cv.width = nx; cv.height = ny;
     var ctx = cv.getContext('2d');
     ctx.fillStyle = '#fff';
+    ctx.beginPath();
     features.forEach(function (f) {
       var g = f.geom; if (!g) return;
       var rings = (g.type === 'Polygon') ? g.coordinates
@@ -127,7 +128,6 @@
                 : null;
       if (!rings) return;
       rings.forEach(function (ring) {
-        ctx.beginPath();
         for (var i = 0; i < ring.length; i++) {
           var gx = (ring[i][0] - lon0) / step;
           var gy = (lat1 - ring[i][1]) / step;

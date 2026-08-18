@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>辽东明清 · 沙盘 + 模拟器合体（SIM_MAPCORE + ControlLayer + SimLayer）</title>
+<style>
+  :root{
+    --ink:#2A2521; --ink-soft:#5b5249; --parch:#efe7d6; --parch2:#f6f1e4;
+    --line:#c9bfa8; --accent:#7a5a2e; --bad:#b5443a; --ok:#3f7d54;
+    --ming:rgb(197,90,70); --qing:rgb(67,122,91); --cont:rgb(128,122,112);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;font-family:"Noto Serif SC","Songti SC",serif;color:var(--ink);background:var(--parch2);}
+  .app{display:flex;flex-direction:column;height:100vh;}
+  header{display:flex;align-items:center;gap:14px;padding:10px 18px;background:#332d27;color:#f3ecdc;border-bottom:2px solid #110f0d;}
+  header h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.5px;}
+  header .scene{font-size:12px;color:#d9cdb6;border:1px solid #6a5f50;padding:2px 8px;border-radius:10px;}
+  header .spacer{flex:1;}
+  .mode-toggle{display:flex;gap:0;border:1px solid #6a5f50;border-radius:8px;overflow:hidden;}
+  .mode-toggle button{background:transparent;color:#d9cdb6;border:0;padding:6px 13px;cursor:pointer;font-size:13px;font-family:inherit;}
+  .mode-toggle button.active{background:#c8a24a;color:#221c14;font-weight:700;}
+  .body{display:flex;flex:1;min-height:0;}
+  aside{width:330px;flex:0 0 330px;background:var(--parch);border-right:1px solid var(--line);overflow-y:auto;padding:14px;}
+  main{flex:1;min-width:0;position:relative;display:flex;flex-direction:column;}
+  .map-wrap{position:relative;flex:1;min-height:0;overflow:hidden;background:#EFECE2;cursor:grab;}
+  .map-wrap.grabbing{cursor:grabbing;}
+  .map-wrap canvas,.map-wrap svg{position:absolute;inset:0;width:100%;height:100%;}
+  #ctrlCv{pointer-events:none;}
+  #map{pointer-events:none;}
+  .map-tools{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;gap:6px;z-index:5;}
+  .map-tools button{width:34px;height:34px;border:1px solid var(--line);background:var(--parch2);border-radius:8px;cursor:pointer;font-size:16px;color:var(--ink);font-family:inherit;box-shadow:0 1px 3px rgba(0,0,0,.15);}
+  .map-tools button:hover{background:#e6dcc4;}
+  .zoom-badge{position:absolute;right:12px;top:12px;background:rgba(51,45,39,.82);color:#f3ecdc;padding:3px 9px;border-radius:10px;font-size:12px;z-index:5;}
+  .scale-bar{position:absolute;left:12px;bottom:12px;background:rgba(246,241,228,.86);padding:4px 8px;border-radius:6px;font-size:11px;color:var(--ink);z-index:5;display:flex;align-items:center;gap:6px;}
+  .elev-legend{position:absolute;right:12px;bottom:12px;width:130px;height:12px;border:1px solid var(--line);border-radius:3px;z-index:5;}
+  .elev-legend::after{content:"海拔";position:absolute;left:0;top:-15px;font-size:10px;color:var(--ink-soft);}
+  .legend{display:flex;gap:14px;padding:8px 14px;background:var(--parch2);border-top:1px solid var(--line);font-size:12px;flex-wrap:wrap;align-items:center;}
+  .legend .it{display:flex;align-items:center;gap:5px;}
+  .legend .sw{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.2);}
+  section.block{margin-bottom:14px;border:1px solid var(--line);border-radius:8px;background:var(--parch2);overflow:hidden;}
+  section.block > h2{margin:0;font-size:13px;padding:7px 11px;background:#e3d8bf;border-bottom:1px solid var(--line);font-weight:700;}
+  section.block .c{padding:9px 11px;font-size:12.5px;line-height:1.5;}
+  .yr-row{display:flex;align-items:center;gap:10px;}
+  .yr-row input[type=range]{flex:1;}
+  .yr-val{font-weight:700;font-size:15px;min-width:42px;text-align:right;}
+  .btn-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+  .btn{border:1px solid var(--line);background:#e3d8bf;color:var(--ink);padding:5px 10px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:12px;}
+  .btn:hover{background:#d8caa8;}
+  .btn.primary{background:#c8a24a;border-color:#9c7a2e;color:#221c14;font-weight:700;}
+  .param{margin:7px 0;}
+  .param label{display:flex;justify-content:space-between;font-size:12px;}
+  .param label .v{color:var(--accent);font-weight:700;}
+  .param input[type=range]{width:100%;}
+  .branches{display:flex;flex-wrap:wrap;gap:6px;}
+  .branches button{border:1px solid var(--line);background:#e9dfc8;color:var(--ink);padding:5px 9px;border-radius:6px;cursor:pointer;font-size:12px;font-family:inherit;}
+  .branches button.active{background:#7a5a2e;color:#fff;border-color:#5a3f1e;font-weight:700;}
+  .stat{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed var(--line);}
+  .stat .num{font-weight:700;}
+  .bar{height:9px;background:#ddd2b8;border-radius:5px;overflow:hidden;margin:4px 0 8px;}
+  .bar > i{display:block;height:100%;background:linear-gradient(90deg,#b5443a,#c8a24a,#3f7d54);}
+  .divl{list-style:none;margin:0;padding:0;max-height:170px;overflow:auto;}
+  .divl li{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px;border-bottom:1px dotted var(--line);}
+  .chip{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.2);}
+  .arrow{color:var(--ink-soft);}
+  .ev{font-size:12px;line-height:1.5;margin:5px 0;padding-left:8px;border-left:3px solid var(--line);}
+  .ev.bad{border-color:var(--bad);} .ev.warn{border-color:#c8a24a;} .ev.info{border-color:#7fa7c4;}
+  .ev .sev{font-size:10px;padding:1px 5px;border-radius:8px;margin-right:5px;color:#fff;}
+  .ev.bad .sev{background:var(--bad);} .ev.warn .sev{background:#c8a24a;} .ev.info .sev{background:#7fa7c4;}
+  .hint{font-size:11px;color:var(--ink-soft);margin-top:4px;}
+  .map-hint{position:absolute;left:50%;top:10px;transform:translateX(-50%);background:rgba(51,45,39,.78);color:#f3ecdc;padding:4px 12px;border-radius:12px;font-size:12px;z-index:5;white-space:nowrap;}
+  .err{margin:20px;padding:15px;background:#fbe9e7;border:1px solid var(--bad);border-radius:8px;color:#7a241c;font-family:monospace;white-space:pre-wrap;}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>辽东明清 · 沙盘 + 模拟器</h1>
+    <span class="scene" id="sceneHint">载入中…</span>
+    <span class="spacer"></span>
+    <div class="mode-toggle" id="modeToggle">
+      <button data-mode="real" class="active">史实</button>
+      <button data-mode="sim">反事实</button>
+      <button data-mode="diff">差异</button>
+    </div>
+  </header>
+  <div class="body">
+    <aside>
+      <section class="block">
+        <h2>年份</h2>
+        <div class="c">
+          <div class="yr-row"><input type="range" id="year" min="1616" max="1644" step="1" value="1616"><span class="yr-val" id="yrVal">1616</span></div>
+          <div class="btn-row">
+            <button class="btn" id="btnReset">复位</button>
+            <button class="btn" id="btnStep">单步 ▶</button>
+            <button class="btn primary" id="btnRun">运行 ▶▶</button>
+            <button class="btn" id="btnPause">暂停</button>
+            <button class="btn" id="btnReplay">重放史实</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>反事实分支</h2>
+        <div class="c"><div class="branches" id="branchBox"></div>
+          <div class="hint">选分支后参数自动套用其 override；改参数即偏离该分支预设。</div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>机制参数</h2>
+        <div class="c" id="paramBox"></div>
+      </section>
+
+      <section class="block">
+        <h2>吻合度 / 偏离</h2>
+        <div class="c" id="stats"></div>
+        <div class="c" style="padding-top:0"><ul class="divl" id="divl"></ul></div>
+      </section>
+
+      <section class="block">
+        <h2>分支事件叙述</h2>
+        <div class="c" id="be"></div>
+      </section>
+    </aside>
+
+    <main>
+      <div class="map-wrap" id="mapWrap">
+        <canvas id="terrainCv"></canvas>
+        <canvas id="ctrlCv"></canvas>
+        <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="map-tools">
+          <button data-zoom="in" title="放大">＋</button>
+          <button data-zoom="out" title="缩小">－</button>
+          <button data-zoom="fit" title="复位视图">⤢</button>
+        </div>
+        <div class="zoom-badge" id="zoomBadge">1.0×</div>
+        <div class="scale-bar" id="scaleBar"></div>
+        <div class="elev-legend" id="elBar"></div>
+        <div class="map-hint" id="mapHint"></div>
+      </div>
+      <div class="legend" id="legend"></div>
+    </main>
+  </div>
+</div>
+
+<!-- 加载顺序：数据 → 引擎 → 地图内核 → 控制层 → 模拟态势层 -->
+<script src="_sim_liaodong.js"></script>
+<script src="sim_basemap.js"></script>
+<script src="_faction_ming.js"></script>
+<script src="sim_rules_liaodong.js"></script>
+<script src="sim_ic_liaodong.js"></script>
+<script src="sim_data_sarhu.js"></script>
+<script src="sim_rules_sarhu.js"></script>
+<script src="sim_ic_sarhu.js"></script>
+<script src="control_layer.js"></script>
+<script src="sim_engine.js"></script>
+<script src="sim_mapcore.js"></script>
+<script src="sim_layer.js"></script>
+<script>
+(function(){
+  'use strict';
+  var $ = function(id){ return document.getElementById(id); };
+  var errBox = null;
+  function fail(e){ var m=document.createElement('div'); m.className='err'; m.textContent='初始化失败：\n'+(e&&e.stack?e.stack:e); document.querySelector('.body').prepend(m); console.error(e); }
+
+  try { init(); } catch(e){ fail(e); }
+
+  function init(){
+    var scene = SIM_CORE.sceneFromURL();
+    var core = SIM_CORE.create(scene);
+    var R = core.R, D = core.D, IC = core.IC;
+    $('sceneHint').textContent = core.label + '（' + D.meta.startYear + '–' + D.meta.endYear + '）';
+
+    var year0 = D.meta.startYear, year1 = D.meta.endYear;
+    var state = { branch:'', mode:'real', year:year0 };
+    var terminalMatch = 0, running = false, runTimer = null;
+
+    // ── 地图内核：地形 + 矢量底 + 交互 ──
+    var mapWrap = $('mapWrap'), terrainCv = $('terrainCv'), ctrlCv = $('ctrlCv'), svg = $('map');
+    var MC = SIM_MAPCORE.create({
+      wrap: mapWrap, svg: svg, cv: terrainCv,
+      seats: core.SEATS, basemap: window.SIM_BASEMAP,
+      extraCanvases: function(){ return [ctrlCv]; },
+      ids: { zoomBadge:'zoomBadge', scaleBar:'scaleBar', elBar:'elBar' },
+      onDynamic: function(){ if (window.SimLayer && SimLayer.isReady()) SimLayer.repaint(); }
+    });
+    MC.measure(); MC.initMap(); MC.loadTerrain(); MC.fitView(); MC.applyView(); MC.bindInteractions(); MC.paintElevLegend();
+
+    // ── 控制层（沙盘）+ 模拟态势层（适配器）──
+    var CL = window.ControlLayer;
+    var Sim = window.SimLayer;
+    Sim.setup({
+      core: core, controlLayer: CL,
+      cv: ctrlCv, px: MC.px, py: MC.py,
+      getView: function(){ return MC.view; }, getCw: function(){ return MC.cw; }, getDpr: function(){ return window.devicePixelRatio || 1; }
+    });
+
+    drawSeats();
+    loadCoast();
+
+    // ── 参数滑块 ──
+    (function buildParams(){
+      var box = $('paramBox'); box.innerHTML='';
+      (R.params||[]).forEach(function(pr){
+        var wrap=document.createElement('div'); wrap.className='param';
+        wrap.innerHTML='<label>'+pr.label+'<span class="v" id="v_'+pr.id+'">'+(core.params[pr.id]!=null?core.params[pr.id]:pr.default).toFixed(2)+'</span></label>'+
+          '<input type="range" id="p_'+pr.id+'" min="'+pr.min+'" max="'+pr.max+'" step="'+pr.step+'" value="'+(core.params[pr.id]!=null?core.params[pr.id]:pr.default)+'">';
+        box.appendChild(wrap);
+        var el=wrap.querySelector('input');
+        el.addEventListener('input', function(){
+          core.setParams((function(o){o[pr.id]=+el.value;return o;})({}));
+          $('v_'+pr.id).textContent=(+el.value).toFixed(2);
+          Sim.invalidate(); recomputeTerminal(); render();
+        });
+      });
+    })();
+    function syncParamLabels(){ (R.params||[]).forEach(function(pr){ var el=$('p_'+pr.id); if(el){ el.value=core.params[pr.id]; $('v_'+pr.id).textContent=(+core.params[pr.id]).toFixed(2);} }); }
+
+    // ── 分支按钮 ──
+    (function buildBranches(){
+      var box=$('branchBox'); box.innerHTML='<button id="br_none" class="active">📜 史实重放</button>';
+      (R.branches||[]).forEach(function(b){ var x=document.createElement('button'); x.id='br_'+b.id; x.textContent=b.label||b.id; box.appendChild(x); });
+      $('br_none').addEventListener('click', function(){ selectBranch(''); });
+      (R.branches||[]).forEach(function(b){ $('br_'+b.id).addEventListener('click', function(){ selectBranch(b.id); }); });
+    })();
+    function selectBranch(id){
+      state.branch = id;
+      ['br_none'].concat((R.branches||[]).map(function(b){return 'br_'+b.id;})).forEach(function(x){ var e=$(x); if(e) e.classList.toggle('active', x===('br_'+(id||'none'))); });
+      if (id){ var b=core.getBranch(id); if(b&&b.override){ Object.keys(b.override).forEach(function(k){ core.params[k]=b.override[k]; }); } }
+      else { core.resetParams(); }
+      syncParamLabels(); Sim.invalidate(); recomputeTerminal(); render();
+    }
+
+    // ── 模式切换 ──
+    $('modeToggle').querySelectorAll('button').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        state.mode = btn.getAttribute('data-mode');
+        $('modeToggle').querySelectorAll('button').forEach(function(x){ x.classList.toggle('active', x===btn); });
+        Sim.setMode(state.mode); render();
+      });
+    });
+
+    // ── 年份滑块 + 运行控制 ──
+    var ySlider=$('year'); ySlider.min=year0; ySlider.max=year1; ySlider.value=year0;
+    ySlider.addEventListener('input', function(){ state.year=+ySlider.value; render(); });
+    $('btnReset').addEventListener('click', function(){ stopRun(); state.year=year0; ySlider.value=year0; render(); });
+    $('btnStep').addEventListener('click', function(){ stopRun(); if(state.year<year1){ state.year++; ySlider.value=state.year; render(); } });
+    $('btnRun').addEventListener('click', function(){ startRun(); });
+    $('btnPause').addEventListener('click', function(){ stopRun(); });
+    $('btnReplay').addEventListener('click', function(){ stopRun(); selectBranch(''); state.year=year0; ySlider.value=year0; render(); });
+
+    function startRun(){
+      if(running) return; running=true;
+      if(state.year>=year1){ state.year=year0; ySlider.value=year0; }
+      runTimer=setInterval(function(){
+        state.year++; ySlider.value=state.year; render();
+        if(state.year>=year1) stopRun();
+      }, 130);
+    }
+    function stopRun(){ running=false; if(runTimer){ clearInterval(runTimer); runTimer=null; } }
+
+    // ── 海岸线掩膜（真实边界裁剪控制色）──
+    function loadCoast(){
+      if(typeof fetch!=='function') return;
+      fetch('../data/external/chgis/borders_1820.geojson').then(function(r){return r.json();}).then(function(gj){
+        Sim.setCoast((gj.features||[]).map(function(f){ return { geom: f.geometry }; }));
+      }).catch(function(e){ console.warn('[sim_map] 海岸线掩膜加载失败（file://?），退化为无裁剪 Voronoi：', e && e.message); });
+    }
+
+    // ── 治所标记（SVG，随 viewBox 自动缩放，无需逐帧重绘）──
+    function drawSeats(){
+      var L = MC.layers(); if(!L.gNodes) return;
+      var key = core.beKeySeats ? core.beKeySeats() : [];
+      core.SEATS.forEach(function(s){
+        var x=MC.px(s.lon), y=MC.py(s.lat), isKey=key.indexOf(s.id)>=0;
+        var c=document.createElementNS(MC.SVGNS,'circle');
+        c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r', isKey?2.6:1.8);
+        c.setAttribute('fill', isKey?'#2A2521':'#6b5f50'); c.setAttribute('stroke','#f3ecdc'); c.setAttribute('stroke-width',0.6);
+        c.setAttribute('vector-effect','non-scaling-stroke'); L.gNodes.appendChild(c);
+        if(isKey){
+          var t=document.createElementNS(MC.SVGNS,'text');
+          t.setAttribute('x',x+3.5); t.setAttribute('y',y+1.2); t.setAttribute('class','adm-label');
+          t.setAttribute('font-size','7'); t.setAttribute('fill','#2A2521'); t.setAttribute('stroke','#f3ecdc'); t.setAttribute('stroke-width',0.5);
+          t.textContent=s.name; L.gLabels.appendChild(t);
+        }
+      });
+    }
+
+    // ── 终局吻合度（分支/参数变化时重算一次）──
+    function recomputeTerminal(){
+      core.runTo(year1, state.branch||'');
+      terminalMatch = core.matchCount();
+    }
+
+    // ── 主渲染 ──
+    function render(){
+      $('yrVal').textContent = state.year;
+      Sim.setMode(state.mode);
+      Sim.draw(state.year, 'region', state.branch||null);
+      updatePanel(state.year);
+    }
+
+    function realAt(year){
+      var m={}; Sim.realIntervals().forEach(function(c){ if(year>=c.start && year<=(c.end==null?1e9:c.end)) m[c.place_id]=c.party; });
+      return m;
+    }
+    function partyChip(p){
+      var c=core.D.partyColors && core.D.partyColors[p]; c = c?('rgb('+c[0]+','+c[1]+','+c[2]+')'):'#888';
+      return '<span class="chip" style="background:'+c+'"></span>'+(p||'—');
+    }
+
+    function updatePanel(year){
+      // 当前年状态
+      core.runTo(year, state.branch||'');
+      var simState = core.state;
+      var real = realAt(year);
+      var match=0, total=core.SEATS.length, divs=[];
+      core.SEATS.forEach(function(s){
+        var a=real[s.id], b=simState[s.id];
+        if(a===b) match++; else divs.push({name:s.name, real:a, sim:b});
+      });
+      var pctCur = Math.round(match/total*100);
+      var pctTerm = Math.round(terminalMatch/total*100);
+      $('stats').innerHTML =
+        '<div class="stat"><span>当前年吻合度（'+year+'）</span><span class="num">'+match+'/'+total+' ('+pctCur+'%)</span></div>'+
+        '<div class="bar"><i style="width:'+pctCur+'%"></i></div>'+
+        '<div class="stat"><span>终局吻合度（'+year1+'）</span><span class="num">'+terminalMatch+'/'+total+' ('+pctTerm+'%)</span></div>'+
+        '<div class="bar"><i style="width:'+pctTerm+'%"></i></div>'+
+        '<div class="stat"><span>本年偏离席位</span><span class="num">'+divs.length+'</span></div>'+
+        '<div class="hint">终局吻合度=该分支推演到 '+year1+' 与史实终局一致席位；默认参数应为 100%（精确重放）。</div>';
+
+      // 本年偏离列表
+      var dl=$('divl'); dl.innerHTML='';
+      if(!divs.length){ dl.innerHTML='<li style="color:var(--ink-soft)">与史实一致 ✓</li>'; }
+      else divs.slice(0,40).forEach(function(d){
+        var li=document.createElement('li');
+        li.innerHTML = partyChip(d.real)+' <span class="arrow">→</span> '+partyChip(d.sim)+' <span style="margin-left:auto;color:var(--ink-soft)">'+d.name+'</span>';
+        dl.appendChild(li);
+      });
+
+      // 分支事件
+      renderBranchEvents();
+    }
+
+    function renderBranchEvents(){
+      var el=$('be');
+      if(!state.branch){ el.innerHTML='<div class="hint">史实重放：零分支事件。切换反事实分支后渲染。</div>'; return; }
+      var events=core.computeBranchEvents();
+      if(!events.length){ el.innerHTML='<div class="hint">本分支无偏离事件。</div>'; return; }
+      var byYear={}; events.forEach(function(e){ (byYear[e.year]=byYear[e.year]||[]).push(e); });
+      var sevlbl={info:'趋势',warn:'风险',bad:'危局'};
+      var html='';
+      Object.keys(byYear).sort(function(a,b){return +a-+b;}).forEach(function(y){
+        byYear[y].forEach(function(e){
+          html+='<div class="ev '+(e.severity||'info')+'"><span class="sev">'+(sevlbl[e.severity]||e.severity)+'</span><b>'+y+'</b> '+core.beNarrative(e)+'</div>';
+        });
+      });
+      el.innerHTML=html;
+    }
+
+    // 图例
+    (function legend(){
+      var box=$('legend');
+      ['明方','清方','contested'].forEach(function(p){
+        var c=core.D.partyColors && core.D.partyColors[p]; c=c?('rgb('+c[0]+','+c[1]+','+c[2]+')'):'#888';
+        var it=document.createElement('div'); it.className='it';
+        it.innerHTML='<span class="sw" style="background:'+c+'"></span>'+p;
+        box.appendChild(it);
+      });
+      var h=document.createElement('div'); h.className='it'; h.style.marginLeft='auto'; h.style.color='var(--ink-soft)';
+      h.textContent='地形：复旦 CHGIS DemTopo · 边界：CHGIS 1820 府级（时代差≈200年，诚实标注）';
+      box.appendChild(h);
+    })();
+
+    // 首帧
+    recomputeTerminal();
+    Sim.setMode(state.mode);
+    render();
+    window.addEventListener('resize', function(){ MC.measure(); MC.applyView(); });
+    // 布局稳定后再量一次（headless / 字体加载可能导致首帧量到 0 尺寸）
+    if (window.ResizeObserver) { var ro = new ResizeObserver(function(){ MC.measure(); MC.applyView(); }); ro.observe(mapWrap); }
+    window.addEventListener('load', function(){ MC.measure(); MC.applyView(); });
+  }
+})();
+</script>
+</body>
+</html>

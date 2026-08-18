@@ -68,6 +68,8 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 .fac-bar{display:flex;align-items:center;gap:4px;font-size:9px;color:#8b949e;margin:0 0 2px 15px}
 .fac-bar span{width:22px;flex:none}
 .fac-bar i{display:block;height:5px;background:#3fb950;border-radius:2px;min-width:1px}
+.fac-bar i.pw{background:#58a6ff}
+.fac-belief{margin:1px 0 3px 15px;font-size:9px;line-height:1.35;color:#d29922;opacity:.85}
 .logi-row{font-size:clamp(9px,0.9vw,11px);color:#c9d1d9;border-bottom:1px solid #21262d;padding:2px 0}
 .logi-row .f{color:#8b949e;font-size:9px}
 /* v0.57 分支事件（跨事件通用模板，对应 whatif 的 ok/warn/bad 视觉） */
@@ -179,215 +181,45 @@ button{padding:4px 8px;border:none;border-radius:4px;cursor:pointer;font-size:cl
 <script src="_sim_liaodong.js"></script>
 <script src="china_terrain.js"></script>
 <script src="sim_basemap.js"></script>
+<script src="_faction_ming.js"></script>
 <script src="sim_rules_liaodong.js"></script>
 <script src="sim_ic_liaodong.js"></script>
 <script src="sim_data_sarhu.js"></script>
 <script src="sim_rules_sarhu.js"></script>
 <script src="sim_ic_sarhu.js"></script>
+<script src="sim_engine.js"></script>
 <script>
 // =============================================================
 // 确定性演化引擎：声明式三阶层规则解释器 + 真实史料基底
 // v0.55：地图升级为羊皮纸+山影+SVG 矢量底（同 sarhu 视觉）
 // =============================================================
-// ── 多场景加载：?scene=sarhu 切到萨尔浒之战；缺省=辽东全期（零侵入辽东现有文件）──
-const SCENE = (new URLSearchParams(location.search)).get('scene') || 'liaodong';
-const SIM_NS = (SCENE==='sarhu')
-  ? { d: window.SIM_DATA_SARHU, r: window.SIM_RULES_SARHU, ic: window.SIM_IC_SARHU, name:'SIM_DATA_SARHU' }
-  : { d: window.SIM_DATA, r: window.SIM_RULES, ic: window.SIM_IC, name:'SIM_DATA' };
-const D = SIM_NS.d;
-const R = SIM_NS.r;
-const IC = SIM_NS.ic;
+// ── 多场景加载：复用抽取出的确定性引擎核心（sim_engine.js → window.SIM_CORE）──
+// 目标：模拟器(sim_engine.html)与沙盘合体页(sim_map.html)共用同一引擎核心，消除「地图内核复制债」。
+const CORE = SIM_CORE.create(SIM_CORE.sceneFromURL());
+if(!CORE){ document.getElementById('narr').innerHTML='<span class="d">✗ 未加载 SIM_CORE / 场景数据</span>'; }
+const D = CORE.D, R = CORE.R, IC = CORE.IC;
 const BM = window.SIM_BASEMAP;
 const TERR = window.CHINA_TERRAIN || null;
-if(!D || !R || !IC){ document.getElementById('narr').innerHTML='<span class="d">✗ 未加载 SIM_DATA / SIM_RULES / SIM_IC</span>'; }
-
-const PARTY = D.partyColors;
-const SEATS = D.seats;
-const seatById = {}; SEATS.forEach(s=>seatById[s.id]=s);
-const COSMID = Math.cos(44*Math.PI/180);
-function hex(c){return 'rgb('+c[0]+','+c[1]+','+c[2]+')';}
-function neighbors(id){
-  const a=seatById[id]; if(!a)return [];
-  return SEATS.filter(b=>b.id!==id && Math.hypot((a.lon-b.lon)*COSMID, a.lat-b.lat)<1.6).map(b=>b.id);
-}
-
-// ════════════════════════════════════════════════════════════════════
-// whatif 物理/后勤模型（同源 constants；确定性，无 RNG）
-// 把 whatif.html 的「后勤/行军/补给/季节」约束抽象为可复用的单点判定，
-// 供 R7 对每条史实征服做攻击方投送可行性折扣。
-// ════════════════════════════════════════════════════════════════════
-const PHYS = {
-  rates:        { forced:60, cavalry:80, foot:40 },  // km/日：急行/骑兵/步卒 行军速（文献约值）
-  winterRate:   0.75,        // 冬季路冻/雪阻，有效行军速 ×0.75
-  ration:       1.8,         // kg/人/日 军粮（明制约 1.5–2.0）
-  water:        4,           // L/人/日 饮水
-  campEvery:    3,           // 每 3 日扎营一次
-  waterMaxKm:   8,           // 扎营点须距水源 ≤8km，否则无水
-  siegeDays:    10,          // 会战/围城 10 日
-  supplyRadius: { ming:300, qing:400 },  // 补给半径 km（超距按比例削减攻击方执行力）
-  overScale:    500,         // 超距惩罚尺度
-  // 关键战役史载季节（公历月）：其余按 seedHash 确定性派生，UI 标注"示意"
-  knownSeason: {
-    '1618|fushun':'summer','1618|qinghe':'summer',
-    '1619|kaiyuan':'spring','1619|tieling':'spring',
-    '1621|shenyang':'spring','1621|liaoyang':'spring','1621|lushun':'spring','1621|fuzhou':'spring',
-    '1621|gaizhou':'spring','1621|haizhou':'spring','1621|niuzhuang':'spring','1621|xiongyue':'spring','1621|yaozhou':'spring','1621|jinzhou_dalian':'spring',
-    '1622|guangning':'winter','1622|yizhou':'winter',
-    '1624|horqin':'summer',
-    '1628|chahar':'autumn','1628|harqin':'summer',
-    '1631|dalinghe':'autumn',
-    '1632|tumed':'summer',
-    '1635|chahar':'summer','1635|ordos':'summer',
-    '1641|jinzhou':'summer','1641|songshan':'summer','1641|xingshan':'summer',
-    '1644|ningyuan':'autumn','1644|shanhaiquan':'winter',
-    // 萨尔浒之战（1619）关键据点史载季节：春/夏行军；赫图阿拉/界凡为后金出击基地
-    '1619|hetuala':'spring','1619|jiefan':'spring',
-    '1619|sarhu':'spring','1619|shangjianya':'spring','1619|feifenshan':'spring',
-    '1619|niumaozhai':'summer','1619|abudaligang':'summer','1619|fucha':'summer',
-    '1619|yehe':'summer'
-  }
-};
-const SEASONS = ['spring','summer','autumn','winter'];
-const SEASON_CN = { spring:'春', summer:'夏', autumn:'秋', winter:'冬' };
-function haversine(a,b){ const R=6371,toR=Math.PI/180;
-  const dLat=(b[1]-a[1])*toR,dLon=(b[0]-a[0])*toR,la1=a[1]*toR,la2=b[1]*toR;
-  const h=Math.sin(dLat/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;
-  return 2*R*Math.asin(Math.min(1,Math.sqrt(h))); }
-function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
-function seasonCN(s){ return SEASON_CN[s]||s; }
-function seasonOf(Y, pid){
-  const k=Y+'|'+pid; if(PHYS.knownSeason[k]) return PHYS.knownSeason[k];
-  const h=seedHash('season|'+k); return SEASONS[Math.floor(h*4)];
-}
-// 朝堂内耗指数（R6 前置，确定性）：活跃派系越多/利益越分化/凝聚越低 → 越高
-function courtInfighting(Y){
-  const fd=IC.factionDynamics; if(!fd) return 0;
-  const active=(IC.factions||[]).filter(f=>f.side==='ming' && Y>=f.period[0] && Y<=f.period[1]);
-  const key=active.map(f=>f.id).sort().join(',');
-  const h=seedHash('court|'+key);
-  const frac=active.length/(IC.factions?IC.factions.length:1);
-  let mean=0; active.forEach(f=>mean+=f.selfInterest); mean/=(active.length||1);
-  let varc=0; active.forEach(f=>varc+=(f.selfInterest-mean)*(f.selfInterest-mean)); varc/=(active.length||1);
-  const diversity=0.5*frac+0.5*Math.sqrt(varc);
-  return clamp((1-fd.courtCohesionBase)*(0.4+0.6*diversity)*(0.5+0.5*h), 0, 0.95);
-}
-// 攻击方投送可行性（R7）：返回 {factor,dist,base,radius,over,season,winter}
-function physicalFactor(t, Y, baseState){
-  const target=seatById[t.place_id];
-  if(!target) return { factor:1, dist:0, base:null, radius:0, over:0, season:'spring', winter:false };
-  const attacker=t.to;
-  let best=1e9, base=null;
-  SEATS.forEach(s=>{ if((baseState[s.id]||'?')===attacker){ const d=haversine([s.lon,s.lat],[target.lon,target.lat]); if(d<best){best=d; base=s;} } });
-  const radius=(attacker==='清方')?PHYS.supplyRadius.qing:PHYS.supplyRadius.ming;
-  let factor=1; const over=Math.max(0, best-radius);
-  if(over>0) factor*=clamp(1-over/PHYS.overScale, 0.3, 1);
-  const season=seasonOf(Y, t.place_id); let winter=false;
-  if(season==='winter'){ factor*=(params.winterPenalty||0.75); winter=true; }
-  return { factor, dist:best, base:base?base.name:null, radius, over, season, winter };
-}
-
-// ---- 确定性哈希（无 Math.random）：FNV-1a → [0,1) ----
-function seedHash(str){
-  let h = 2166136261 >>> 0;
-  for(let i=0;i<str.length;i++){ h ^= str.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
-  return (h >>> 0) / 4294967296;
-}
-function intrinsicP(year, place_id, to, salt){ return seedHash(year+'|'+place_id+'|'+to+'|'+(salt||'a')); }
-
-// ---- 参数 ----
-let params = Object.assign({}, IC.params);
-let currentBranch = null;
-function effFor(party, p){
-  if(party==='清方') return p.qingExec;
-  if(party==='明方') return p.mingExec;
-  return 1.0;
-}
-
-// ---- 状态机 ----
-let state = {};
-let year = D.meta.startYear;
-let divergences = [];
-let trace = [];
-function getBranch(id){ return (R.branches||[]).find(b=>b.id===id) || null; }
-function applyParamsFromUI(){
-  R.params.forEach(pr=>{ const el=document.getElementById('p_'+pr.id); if(el) params[pr.id]=+el.value; });
-}
-function resetSim(branchId){
-  state = Object.assign({}, IC.control);
-  year = D.meta.startYear;
-  divergences = [];
-  trace = [];
-  currentBranch = branchId || currentBranch;
-}
-function applyYear(Y, p, branch){
-  const ts = D.transitions.filter(t=>t.year===Y);
-  const blocked = branch && branch.block ? branch.block : [];
-  const infight = (p.factionInfightAmp>0) ? courtInfighting(Y) : 0;  // 0..~0.95
-  const baseState = Object.assign({}, state);  // 本年转移前快照（供 R7 最近基地判定）
-  for(const t of ts){
-    if(blocked.some(b=>b.year===t.year && b.place_id===t.place_id)) continue;
-    let eff = effFor(t.to, p);
-    let physPen = 0, infightPen = 0;
-    // R7：后勤物理约束（whatif 同源）→ 攻击方投送可行性折扣
-    if(p.logisticsPenalty>0){
-      const pf = physicalFactor(t, Y, baseState);
-      if(pf.over>0){
-        // 超补给半径→投送不可达（确定性硬约束，whatif 同源：超出可持续补给线则战役无法维持）。
-        // 仅保留极小 intrinsicP「奇迹」空间以诚实表达不确定性。
-        physPen = p.logisticsPenalty;
-        eff = Math.min(eff, 0.015);
-      } else {
-        // 半径内：距离衰减（距己方最近已控治所越远越难）+ 基础投送摩擦（即便相邻也有辎重损耗）+ 冬季折扣。
-        const gentle = clamp(1 - (pf.dist/pf.radius)*0.35, 0.45, 1);  // 距己方最近治所越远，投送越难
-        const f = pf.factor;  // 含冬季折扣
-        const baseFric = 1 - p.logisticsPenalty*0.4;                  // 基础投送摩擦：确定性，与距离无关
-        physPen = p.logisticsPenalty * (1 - gentle*f*baseFric);
-        eff *= gentle * f * baseFric;
-      }
-    }
-    // R6：党派内耗→明方攻防均弱（防御侧：攻方更易得手）
-    if(p.factionInfightAmp>0 && (t.to==='明方' || t.from==='明方') && t.to!=='contested'){
-      infightPen = p.factionInfightAmp * infight;
-      if(t.to==='明方') eff *= (1 - infightPen);
-      else eff = Math.min(1, eff * (1 + infightPen*0.6));
-    }
-    const ip = intrinsicP(t.year, t.place_id, t.to, 'a');
-    let success = (t.to==='contested') ? true : (ip < eff);
-    if(success && p.spreadPref < 1.0 && t.to!=='contested'){
-      const hasN = neighbors(t.place_id).some(nid=>state[nid]===t.to);
-      if(!hasN){ const ip2 = intrinsicP(t.year, t.place_id, t.to, 'b'); success = (ip2 < p.spreadPref); }
-    }
-    trace.push({ year:Y, place_id:t.place_id, name:seatById[t.place_id]?seatById[t.place_id].name:'', from:t.from, to:t.to,
-      rule:'R1', mechanism:'战争裁决(04 §战争裁决)', intrinsicP:+ip.toFixed(4), eff:+eff.toFixed(3), physPen:+physPen.toFixed(3), infightPen:+infightPen.toFixed(3),
-      success, seed:(t.year+'|'+t.place_id+'|'+t.to) });
-    if(success) state[t.place_id]=t.to;
-    else divergences.push({year:Y, place:t.place_id, to:t.to, name:seatById[t.place_id]?seatById[t.place_id].name:''});
-  }
-  // R6：党派内耗→明方守土崩溃（模型推演，非史载转移）：内耗越高、确定性命中→守军溃散→contested
-  if(p.factionInfightAmp>0){
-    const pen = p.factionInfightAmp * infight;
-    SEATS.forEach(s=>{
-      if((state[s.id]||'?')==='明方'){
-        const h=seedHash('collapse|'+Y+'|'+s.id);
-        if(h < pen*0.5){
-          state[s.id]='contested';
-          divergences.push({year:Y, place:s.id, to:'contested', name:s.name, faction:true});
-          trace.push({ year:Y, place_id:s.id, name:s.name, from:'明方', to:'contested', rule:'R6', mechanism:'党派内耗守土崩溃',
-            intrinsicP:+h.toFixed(4), eff:+pen.toFixed(3), physPen:0, infightPen:+pen.toFixed(3), success:true, factionCollapse:true, seed:'collapse|'+Y+'|'+s.id });
-        }
-      }
-    });
-  }
-}
-function runTo(Y, branchId){
-  const br = branchId!==undefined ? getBranch(branchId) : getBranch(currentBranch);
-  const p = Object.assign({}, params);
-  if(br && br.override) Object.keys(br.override).forEach(k=> p[k]=br.override[k]);
-  resetSim(branchId);
-  for(let y=D.meta.startYear+1; y<=Y; y++) applyYear(y, p, br);
-  year = Y;
-}
-
+const SCENE = CORE.scene;
+// 只读别名：核心为单一真值（sim_engine.js 内含 PHYS/courtDetail/physicalFactor/...）
+const PARTY = CORE.PARTY, SEATS = CORE.SEATS, seatById = CORE.seatById;
+const PHYS = CORE.PHYS, SEASONS = CORE.SEASONS, SEASON_CN = CORE.SEASON_CN;
+const hex = CORE.hex, neighbors = CORE.neighbors;
+const haversine = CORE.haversine, clamp = CORE.clamp, seasonCN = CORE.seasonCN, seasonOf = CORE.seasonOf;
+const courtDetail = CORE.courtDetail, courtInfighting = CORE.courtInfighting, physicalFactor = CORE.physicalFactor;
+const seedHash = CORE.seedHash, intrinsicP = CORE.intrinsicP;
+const effFor = CORE.effFor, getBranch = CORE.getBranch;
+const runTo = CORE.runTo, resetSim = CORE.resetSim, applyYear = CORE.applyYear;
+const matchCount = CORE.matchCount;
+const computeBranchEvents = CORE.computeBranchEvents, beNarrative = CORE.beNarrative, beKeySeats = CORE.beKeySeats, effectiveParams = CORE.effectiveParams;
+const BE_KIND_LABEL = CORE.BE_KIND_LABEL, BE_SEVERITY_LABEL = CORE.BE_SEVERITY_LABEL;
+// 可变态：以 CORE 为唯一真值；view 侧只读镜像，控制函数经 CORE 写入（保持对象身份不变）
+Object.defineProperty(window,'params',{configurable:true,get:function(){return CORE.params;}});
+Object.defineProperty(window,'state',{configurable:true,get:function(){return CORE.state;}});
+Object.defineProperty(window,'year',{configurable:true,get:function(){return CORE.year;},set:function(v){CORE.year=v;}});
+Object.defineProperty(window,'divergences',{configurable:true,get:function(){return CORE.divergences;}});
+Object.defineProperty(window,'trace',{configurable:true,get:function(){return CORE.trace;}});
+Object.defineProperty(window,'currentBranch',{configurable:true,get:function(){return CORE.currentBranch;},set:function(v){CORE.currentBranch=v;}});
 // =============================================================
 // 视图 / 投影 / 缩放 / 平移（自 sarhu.html 移植，等比 viewBox）
 // =============================================================
@@ -798,7 +630,6 @@ paintElevLegend();
 // 侧栏图例 / 统计 / trace
 // =============================================================
 function drawLegend(){ const el=document.getElementById('legend'); el.innerHTML=''; Object.keys(PARTY).forEach(p=>{ el.innerHTML+='<span><i style="background:'+hex(PARTY[p])+'"></i>'+p+'</span>'; }); }
-function matchCount(){ return SEATS.filter(s=>(state[s.id]||'')===(D.terminalReal[s.id]||'')).length; }
 function updateStats(){
   const ys=Object.values(state); const cnt={}; ys.forEach(p=>cnt[p]=(cnt[p]||0)+1);
   const total=SEATS.length, m=matchCount(); const pct=(m/total*100).toFixed(0);
@@ -859,7 +690,7 @@ function syncParamLabels(){ R.params.forEach(pr=>{ const el=document.getElementB
 function buildBranchBox(){
   const box=document.getElementById('branchBox'); box.innerHTML='<button class="btn-mode active" id="br_none">📜 史实重放</button>';
   (R.branches||[]).forEach(b=>{ box.innerHTML+='<button class="btn-mode" id="br_'+b.id+'">'+b.label+'</button>'; });
-  document.getElementById('br_none').onclick=function(){ currentBranch=null; setActiveBranchBtn('br_none'); params=Object.assign({},IC.params); syncParamLabels(); replay(); };
+  document.getElementById('br_none').onclick=function(){ currentBranch=null; setActiveBranchBtn('br_none'); CORE.resetParams(); syncParamLabels(); replay(); };
   (R.branches||[]).forEach(b=>{ document.getElementById('br_'+b.id).onclick=function(){
     currentBranch=b.id; setActiveBranchBtn('br_'+b.id);
     if(b.override){ Object.keys(b.override).forEach(k=>{ params[k]=b.override[k]; }); syncParamLabels(); }
@@ -885,27 +716,35 @@ function renderMissingDims(){
 function renderFactions(){
   const el=document.getElementById('pf2');
   if(!el || !IC.factions) return;
-  const fd=IC.factionDynamics||{courtCohesionBase:0.85};
-  const inf = (params.factionInfightAmp>0) ? courtInfighting(year) : 0;
+  const cd=courtDetail(year);
+  const inf = (params.factionInfightAmp>0) ? cd.infight : 0;
   const pen = (params.factionInfightAmp>0) ? params.factionInfightAmp*inf : 0;
-  const active=IC.factions.filter(f=>f.side==='ming' && year>=f.period[0] && year<=f.period[1]);
   let html='<div class="md"><b>朝堂内耗</b>：'+
     (params.factionInfightAmp>0
-      ? '本年活跃 '+active.length+' 派，内耗折扣≈'+pen.toFixed(2)+'（明方执行力×'+(1-pen).toFixed(2)+'）'
+      ? '本年活跃 '+cd.n+' 派，内耗折扣≈'+pen.toFixed(2)+'（明方执行力×'+(1-pen).toFixed(2)+'）'
       : '（未启用：党派内耗强度=0，见参数/分支 D）')+'</div>';
+  html+='<div class="md" title="按 power(朝堂影响力) 加权；参数单源 data/vocab/ming_qing.json">'+
+    '本年活跃 '+cd.n+' 派 · 加权私利 '+cd.wSelf.toFixed(2)+' · 加权增援意愿 '+cd.wReinf.toFixed(2)+
+    '<br><span class="f">信「明不亡」共识度 '+(cd.belief*100).toFixed(0)+'% → 边患忽视度 '+cd.neglect.toFixed(2)+
+    '（越确信不会亡、越不愿增援，越把资源投向党争）</span></div>';
   html+='<div class="fac-list">';
   IC.factions.forEach(f=>{
     const on = (year>=f.period[0] && year<=f.period[1]);
+    const note=(f.beliefNote||'各派皆信明朝不亡，故党争优先于边患').replace(/"/g,'&quot;');
     html+='<div class="fac-row'+(on?' on':'')+'">'+
       '<span class="sw" style="background:'+f.color+'"></span>'+
-      '<span class="fn">'+f.name+'</span>'+
+      '<span class="fn" title="'+note+'">'+f.name+'</span>'+
       '<span class="fb">'+(on?'活跃':'休眠')+'</span>'+
-      '<span class="belief" title="各派皆信明朝不亡，故党争优先于边患">信明不亡 ✓</span>'+
+      '<span class="belief" title="'+note+'">信明不亡 ✓</span>'+
       '</div>'+
+      (on&&f.beliefNote ? '<div class="fac-belief">“'+f.beliefNote+'”</div>' : '')+
+      '<div class="fac-bar"><span>影响</span><i class="pw" style="width:'+(f.power*100)+'%"></i></div>'+
       '<div class="fac-bar"><span>私利</span><i style="width:'+(f.selfInterest*100)+'%"></i></div>'+
       '<div class="fac-bar"><span>增援</span><i style="width:'+(f.reinforce*100)+'%"></i></div>';
   });
   html+='</div>';
+  html+='<div class="md f">派系参数单一真值：'+(IC.factionSource||'data/vocab/ming_qing.json')+
+        '（勿在 demo 内硬编码）</div>';
   el.innerHTML=html;
 }
 
@@ -913,15 +752,24 @@ function renderFactions(){
 function renderLogistics(){
   const el=document.getElementById('logi');
   if(!el) return;
-  if(!(params.logisticsPenalty>0)){ el.innerHTML='<div class="md">（未启用：后勤物理约束=0，见参数/分支 E。启用后显示每处征服的补给距离/季节/半径判定）</div>'; return; }
+  const on = (params.logisticsPenalty>0);
   const ts=D.transitions.filter(t=>t.year===year);
   if(!ts.length){ el.innerHTML='<div class="md">本年无征服事件。</div>'; return; }
   const baseState=Object.assign({},state);
-  let html='';
+  // 物理维度（whatif 同源）已提升为「必开」：三约束始终计算并展示；
+  // 折扣仅在 logisticsPenalty>0 时施加（=0 → 忠实重放，下列仅为物理事实分析）。
+  let html='<div class="md">物理维度（whatif 同源·必开）：投送可行性三约束——①抵达时间窗 ②扎营水源 ③粮草可持续。'
+    +(on?'<b>已启用折扣</b>。':'<span class="f">（折扣关闭=忠实重放，以下为物理事实分析）</span>')+'</div>';
   ts.forEach(t=>{ const pf=physicalFactor(t, year, baseState);
+    const wTag = (pf.waterDist===null)?'水源n/a':(pf.waterOK?'✓近水':'⚠缺水');
+    const fTag = pf.foodOK?'✓粮可继':'⚠粮不可继';
+    const tTag = (pf.timeOver>0)?'⚠超时窗':'✓在窗内';
     html+='<div class="logi-row">'+(seatById[t.place_id]?seatById[t.place_id].name:'')+' ← '+(pf.base||'—')+
       '<br><span class="f">'+pf.dist.toFixed(0)+'km / 半径'+pf.radius+'km '+(pf.over>0?'⚠超距':'✓')+
-      ' · '+seasonCN(pf.season)+(pf.winter?' (冬×'+params.winterPenalty+')':'')+'</span></div>';
+      ' · '+seasonCN(pf.season)+(pf.winter?' (冬×'+params.winterPenalty+')':'')+
+      ' · 行军'+pf.arrivalDays+'d/窗'+pf.windowDays+'d['+tTag+']'+
+      ' · '+wTag+(pf.waterDist!==null?('('+pf.waterDist.toFixed(0)+'km)'):'')+
+      ' · '+fTag+'</span></div>';
   });
   el.innerHTML=html;
 }
@@ -930,127 +778,10 @@ function renderLogistics(){
 // 任何历史事件只要提供 seats/transitions/rules/state 即可派生以下事件：
 //  divergence（关键偏离）/ logistics（后勤瓶颈）/ faction（朝堂内耗）/ momentum（势能转折）/ summary（分支结局）
 // 每个事件 severity=info|warn|bad → 对应 whatif 的 ok/warn/bad 视觉。事件纯函数派生，确定性、无随机。
-const BE_KIND_LABEL     = { divergence:'关键偏离', logistics:'后勤瓶颈', faction:'朝堂内耗', momentum:'势能转折', summary:'分支结局' };
-const BE_SEVERITY_LABEL = { info:'趋势', warn:'风险', bad:'危局' };
-function beKeySeats(){
-  // 场景可在 SIM_RULES.keySeats 覆盖；缺省走辽东战略重镇列表（任何新历史事件直接复用本模板）
-  return (R && R.keySeats) || ['shenyang','liaoyang','guangning','jinzhou','ningyuan'];
-}
 // 有效参数：合并当前反事实分支的 override。任何需要按分支敏感派生事件的读取都走这里，
 // 否则 runTo 只改本地 p 而不动全局 params，模板会读到默认参数（看不到 logistics/faction 事件）。
-function effectiveParams(){
-  const p = Object.assign({}, params);
-  const br = currentBranch ? getBranch(currentBranch) : null;
-  if(br && br.override) Object.keys(br.override).forEach(k=> p[k]=br.override[k]);
-  return p;
-}
 // 通用叙事模板（中文·对应 whatif 的「可行→走势预测+风险 / 不可行→逐条列违规」）
-function beNarrative(ev){
-  const placeName = ev.place_name || '';
-  const evYear = ev.year;
-  const evd = ev.evidence || {};
-  switch(ev.kind){
-    case 'divergence': {
-      if(ev.severity==='bad')  return `${evYear}年，<span class="hl">${placeName}</span>脱离史实（${evd.rule||'裁决'}）：原${evd.real_to||'明方'} → 本分支${evd.new_to||'清方'}。`;
-      if(ev.severity==='warn') return `${evYear}年，${placeName}归属争议（contested），朝局或军势受压。`;
-      return `${evYear}年，${placeName}回到史实阵营。`;
-    }
-    case 'logistics':
-      return `${evYear}年投送${placeName}：${evd.dist.toFixed(0)}km / 半径${evd.radius}km${(evd.dist>evd.radius)?'（<span class="hl">超距</span>）':'（<span class="ok">在半径内</span>）'}，季节${seasonCN(evd.season)}${evd.winter?'（冬×'+evd.winterPenalty+'）':''}，物理因子 <b>${evd.factor.toFixed(2)}</b>。`;
-    case 'faction':
-      return `${evYear}年朝堂内耗 <b>${(evd.amp*evd.inf).toFixed(2)}</b>（振幅 ${evd.amp.toFixed(2)} × 弹性 ${evd.inf.toFixed(2)}），活跃 ${evd.active} 派，明方执行力×<b>${(1-evd.amp*evd.inf).toFixed(2)}</b>。`;
-    case 'momentum':
-      return `${evYear}年累计偏离已达 <span class="hl">${evd.cum} 处</span>（${evd.threshold}阈值触发），分支势能转向。`;
-    case 'summary': {
-      const c = evd.cum;
-      const pct = Math.round(evd.match*100/evd.total);
-      const verdict = c===0?'与史实一致':c<10?'<span class="hl">小幅偏差</span>':c<20?'<span class="hl">明显偏差</span>':'<span class="hl">大幅偏离史实</span>';
-      return `${evYear}分支终局：${c} 处偏离（吻合 ${evd.match}/${evd.total}，${pct}%），${verdict}。`;
-    }
-    default: return ev.description || '';
-  }
-}
 // 事件派生器（纯函数，对引擎状态确定性生成。任何历史事件复用同一组生成器）
-function computeBranchEvents(){
-  const events = [];
-  const ks = beKeySeats();
-  const ep = effectiveParams();   // 当前反事实分支的有效参数（含 override）
-  // 1) divergence 事件（按年份聚合关键偏离，trace 取规则与原阵营）
-  const byYear = {};
-  (divergences||[]).forEach(d=>{ (byYear[d.year]=byYear[d.year]||[]).push(d); });
-  Object.keys(byYear).sort((a,b)=>+a-+b).forEach(y=>{
-    const ds = byYear[y];
-    const hit = ds.find(d=> ks.includes(d.place));
-    if(hit){
-      const tr = (trace||[]).find(t=> t.year===+y && t.place_id===hit.place);
-      events.push({
-        kind:'divergence', year:+y, place_id:hit.place,
-        place_name: seatById[hit.place]?seatById[hit.place].name:hit.name,
-        severity:'bad',
-        evidence:{ rule: tr?tr.rule:'R1', real_to: tr?tr.from:'史实', new_to: hit.to }
-      });
-    } else {
-      events.push({
-        kind:'divergence', year:+y, place_id: ds[0].place,
-        place_name: seatById[ds[0].place]?seatById[ds[0].place].name:ds[0].name,
-        severity: ds[0].faction?'warn':'info',
-        evidence:{ rule: ds[0].faction?'R6':'R1', summary:`${ds.length}处争议/弃守` }
-      });
-    }
-  });
-  // 2) momentum 事件（每累计 5/10/15/20 处偏离触发势能转折）
-  const thresholds = [5,10,15,20];
-  let cum = 0; const triggered = new Set();
-  (divergences||[]).slice().sort((a,b)=>a.year-b.year).forEach(d=>{
-    cum++;
-    thresholds.forEach(t=>{ if(cum===t && !triggered.has(t)){ triggered.add(t);
-      events.push({ kind:'momentum', year:d.year, severity: t>=15?'bad':'warn', evidence:{ cum, threshold:t } });
-    } });
-  });
-  // 3) logistics 事件（启用后勤惩罚时，每处超距/冬季运输为风险/危局）
-  if(ep.logisticsPenalty > 0){
-    const baseState = Object.assign({},state);
-    D.transitions.forEach(t=>{
-      const pf = physicalFactor(t, t.year, baseState);
-      if(pf.factor < 0.95 && (pf.over>0 || pf.winter)){
-        events.push({
-          kind:'logistics', year:t.year, place_id:t.place_id,
-          place_name: seatById[t.place_id]?seatById[t.place_id].name:t.place_id,
-          severity: pf.factor < 0.7 ? 'bad' : 'warn',
-          evidence:{ factor:pf.factor, dist:pf.dist, radius:pf.radius, season:pf.season, winter:pf.winter, base:pf.base, winterPenalty:ep.winterPenalty }
-        });
-      }
-    });
-  }
-  // 4) faction 事件（启用内耗时，扫描全时间轴取峰值——任何历史事件复用同一口径）
-  if(ep.factionInfightAmp > 0){
-    const FACTION_PEN_THRESHOLD = 0.05;
-    let peakY = year, peakPen = 0, peakInf = 0;
-    for(let y = D.meta.startYear; y <= year; y++){
-      const inf = courtInfighting(y);
-      const pen = ep.factionInfightAmp*inf;
-      if(pen > peakPen){ peakPen=pen; peakY=y; peakInf=inf; }
-    }
-    if(peakPen > FACTION_PEN_THRESHOLD){
-      const active = (IC.factions||[]).filter(f=>f.side==='ming' && peakY>=f.period[0] && peakY<=f.period[1]);
-      events.push({
-        kind:'faction', year:peakY, faction:'court',
-        severity: peakPen > 0.5 ? 'bad' : (peakPen > 0.25 ? 'warn' : 'info'),
-        evidence:{ amp:ep.factionInfightAmp, inf:peakInf, pen:peakPen, active:active.length }
-      });
-    }
-  }
-  // 5) summary（终局·权重偏离数）
-  const cumDiv = (divergences||[]).length;
-  events.push({
-    kind:'summary', year: D.meta.endYear,
-    severity: cumDiv===0?'info':(cumDiv<10?'warn':'bad'),
-    evidence:{ cum:cumDiv, match:matchCount(), total:SEATS.length }
-  });
-  // 排序：summary 在末；其余按年份升序
-  events.sort((a,b)=>{ if(a.kind==='summary') return 1; if(b.kind==='summary') return -1; return a.year-b.year; });
-  return events;
-}
 function renderBranchEvents(){
   const el = document.getElementById('be');
   if(!el) return;
@@ -1085,7 +816,7 @@ document.getElementById('btnRun').onclick=run;
 document.getElementById('btnPause').onclick=pause;
 document.getElementById('btnStep').onclick=()=>{pause();step();};
 document.getElementById('btnReset').onclick=resetAll;
-function replay(){ params=Object.assign({},IC.params); currentBranch=null; setActiveBranchBtn('br_none'); syncParamLabels(); resetAll(); }
+function replay(){ CORE.resetParams(); currentBranch=null; setActiveBranchBtn('br_none'); syncParamLabels(); resetAll(); }
 document.getElementById('btnReplay').onclick=replay;
 document.getElementById('year').oninput=function(){ pause(); year=+this.value; runTo(year, currentBranch); paint(); };
 document.getElementById('vw_liaodong').onclick=function(){ setView('liaodong'); };
@@ -1126,6 +857,8 @@ window.SIM_ENGINE = {
   factionCount: ()=> (IC.factions||[]).length,
   activeFactions: (Y)=> (IC.factions||[]).filter(f=>f.side==='ming' && Y>=f.period[0] && Y<=f.period[1]).map(f=>f.id),
   infightAt: (Y)=> courtInfighting(Y),
+  courtDetailAt: (Y)=> courtDetail(Y),
+  factionSource: ()=> (IC.factionSource||null),
   physicalFactorFor: (Y,pid)=>{ const t=D.transitions.find(x=>x.year===Y && x.place_id===pid); return t?physicalFactor(t, Y, Object.assign({},state)):null; },
   physConst: ()=> PHYS,
   paramIds: ()=> R.params.map(p=>p.id),

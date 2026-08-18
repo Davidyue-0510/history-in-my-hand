@@ -88,15 +88,15 @@ window.SIM_RULES_SARHU = {
   {
    "id": "R6",
    "type": "feedback_court",
-   "desc": "党派内耗→明方削弱（#3延伸）：每年活跃派系(period 覆盖当年)越多、利益越分化、朝堂凝聚越低，内耗越高。① 对明方作场的转移，明方执行力 = mingExec×(1−infightAmp×内耗)；② 防御侧(明方为 from)攻方更易得手 eff×min(1,1+infightAmp×内耗×0.6)；③ 模型推演：内耗高时部分明方治所守军溃散降为 contested（确定性哈希命中，非史载转移）。全部确定性（无 RNG）。",
-   "source": "用户洞察：各派皆信明不亡→党争优先于边患",
-   "formula": "infight=(1−courtCohesion)·(0.4+0.6·diversity)·(0.5+0.5·hash(activeSet)); mingEff=mingExec·(1−amp·infight); collapse if hash('collapse|Y|id')<amp·infight·0.5",
+   "desc": "党派内耗→明方削弱（#3延伸）：每年活跃派系(period_years 覆盖当年)越多、利益越分化、朝堂凝聚越低、越确信「明不亡」而越不愿增援，则内耗越高。① 对明方作场的转移，明方执行力 = mingExec×(1−infightAmp×内耗)；② 防御侧(明方为 from)攻方更易得手 eff×min(1,1+infightAmp×内耗×0.6)；③ 模型推演：内耗高时部分明方治所守军溃散降为 contested（确定性哈希命中，非史载转移）。全部确定性（无 RNG）。萨尔浒之战（1619）恰在浙/楚/齐/宣昆诸党与东林互攻、辽饷争夺最烈之时，四路统帅节制不一即此内耗的战场投影。派系参数单一真值 = data/vocab/ming_qing.json（勿在 demo 内硬编码）。",
+   "source": "用户洞察：各派皆信明不亡→党争优先于边患；参数源 data/vocab/ming_qing.json (factions[].sim + faction_dynamics)",
+   "formula": "按 power 加权：wSelf=Σwᵢ·selfInterestᵢ, wReinf=Σwᵢ·reinforceᵢ, belief=Σwᵢ·[beliefNoFallᵢ], wᵢ=powerᵢ/Σpower; diversity=0.5·frac+0.5·√Var_w(selfInterest); neglect=belief·(1−wReinf); drive=0.5·wSelf+0.5·neglect; infight=clamp((1−courtCohesion)·(0.4+0.6·diversity)·(0.6+0.8·drive)·(0.5+0.5·hash(activeSet)),0,0.95); mingEff=mingExec·(1−amp·infight); collapse if hash('collapse|Y|id')<amp·infight·0.5",
    "activeInPhase": "2"
   },
   {
    "id": "R7",
    "type": "physical_logistics",
-   "desc": "whatif 物理极限→攻击方投送折扣（后勤/行军模型同源）：攻击方需自最近已控治所投送兵力。两段模型——①超补给半径(明300km/清400km)：投送不可达，战役无法维持，执行力压至近似0（硬失败）；②半径内：距最近治所越远投送越难，叠加冬季雪阻路冻(winterPenalty)与基础辎重摩擦，按比例削减攻击方执行力（软失败）。季节按 seedHash 确定性派生，少量关键战役用史载月份。仅 logisticsPenalty>0 时生效（=0→重放）。",
+   "desc": "whatif 物理极限→攻击方投送折扣（后勤/行军模型同源）：攻击方需自最近已控治所投送兵力。v0.63 提升为「必开」物理维度——三约束始终计算并展示：①超补给半径(明300km/清400km)：投送不可达，执行力压至近似0（硬失败）；②半径内：距最近治所越远投送越难，叠加冬季雪阻路冻与基础辎重摩擦（软失败）；③抵达时间窗、④扎营水源(BM.rivers 邻近判定)、⑤粮草可持续。折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）。",
    "source": "whatif.html 后勤/行军模型（RATES/RATION/WINTER_RATE/补给半径）",
    "formula": "if dist>radius: eff=min(eff,0.015); else: gentle=clamp(1-(dist/radius)*0.35,0.45,1); baseFric=1-logisticsPenalty*0.4; eff*= gentle * winterFactor * baseFric",
    "activeInPhase": "2"
@@ -167,8 +167,8 @@ window.SIM_RULES_SARHU = {
   },
   "logistics": {
    "dim": 9,
-   "status": "partial",
-   "desc": "后勤/补给约束：已整合进 sim_engine 物理层(R7)，每处征服按最近已控基地投送距离+季节判定（超补给半径/冬季按比例削减攻击方执行力）；同源 whatif.html 行军/粮草模型。仍为 prior 而非逐营实测。",
+   "status": "implemented-required",
+   "desc": "物理维度提升为必开（v0.63）：R7 已整合进 sim_engine 物理层，每处征服按最近已控基地投送距离+季节判定（超补给半径/冬季按比例削减攻击方执行力），并新增三约束——①抵达时间窗 ②扎营水源(BM.rivers 邻近判定) ③粮草可持续(假定兵力×日耗×行军天数 vs 30日上限)。折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）。",
    "dist": { "type": "prior", "mean": 0.6, "sd": 0.2, "note": "占位先验，非实测" }
   },
   "population": {

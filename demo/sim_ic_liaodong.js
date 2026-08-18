@@ -30,29 +30,11 @@ window.SIM_IC = {
   "无派系": { "count": 8, "ids": ["kanghonglip","kimkyungsuh","liminhwan","jinyinghe","nurhaci","daishan","huangtaiji","eyidu"], "side": "mixed", "label": "无明确派系(后金宗室/朝鲜将)" }
  },
 
- // 明末九大利益派系（party=明方内部二次立场；立场靠 vocab/ming_qing.json 派生）。
- // 用户洞察：各派皆"以为明朝不会亡"，故把资源投向党内争斗而非边患 → 朝堂内耗削弱前线执行力（#3 延伸）。
- // period=该派在中枢活跃年窗；power=相对朝堂影响力(prior)；selfInterest=私利优先度；reinforce=愿向前线增援度；
- // beliefNoFall=皆信"明不亡"（历史 irony：恰恰因不信会亡而内斗不止）。全部确定性，无 RNG。
- "factions": [
-  { "id":"donglin",   "name":"东林(清流)",      "color":"#1B7A5A", "side":"ming", "period":[1594,1644], "power":0.55, "selfInterest":0.60, "reinforce":0.65, "beliefNoFall":true },
-  { "id":"eunuch",    "name":"阉党(魏忠贤)",    "color":"#7B241C", "side":"ming", "period":[1621,1627], "power":0.75, "selfInterest":0.80, "reinforce":0.40, "beliefNoFall":true },
-  { "id":"zhe_dang",  "name":"浙党",            "color":"#B9770E", "side":"ming", "period":[1596,1620], "power":0.60, "selfInterest":0.65, "reinforce":0.55, "beliefNoFall":true },
-  { "id":"chu_dang",  "name":"楚党",            "color":"#CA6F1E", "side":"ming", "period":[1596,1620], "power":0.35, "selfInterest":0.60, "reinforce":0.55, "beliefNoFall":true },
-  { "id":"qi_dang",   "name":"齐党",            "color":"#B7950B", "side":"ming", "period":[1596,1620], "power":0.45, "selfInterest":0.62, "reinforce":0.55, "beliefNoFall":true },
-  { "id":"xuan_kun",  "name":"宣党/昆党",       "color":"#A04000", "side":"ming", "period":[1600,1620], "power":0.25, "selfInterest":0.55, "reinforce":0.60, "beliefNoFall":true },
-  { "id":"yan_shang", "name":"盐商/盐政利益",   "color":"#2874A6", "side":"ming", "period":[1583,1644], "power":0.50, "selfInterest":0.70, "reinforce":0.70, "beliefNoFall":true },
-  { "id":"nei_guan",  "name":"内臣/宦官(独立)","color":"#5D6D7E", "side":"ming", "period":[1583,1644], "power":0.40, "selfInterest":0.55, "reinforce":0.50, "beliefNoFall":true },
-  { "id":"feng_jiang","name":"封疆大吏/辽东系","color":"#C0392B", "side":"ming", "period":[1583,1644], "power":0.70, "selfInterest":0.75, "reinforce":0.85, "beliefNoFall":true }
- ],
-
- // 朝堂内耗动力学（#3 延伸；确定性，无 RNG）：
- // 每年活跃派系数越多、利益越分化、朝堂凝聚越低 → 内耗越高 → 前线(明方)执行力被削弱 / 守土崩溃。
- "factionDynamics": {
-  "courtCohesionBase": 0.85,
-  "infightAmp": 0.45,
-  "note": "各派皆信『明不亡』，故党争优先于边患；内耗确定性映射为明方执行力折扣与守土崩溃风险（R6）。"
- },
+ // 明末九大利益派系（#3 派系/立场动因）与朝堂内耗动力学：
+ // ⚠ 不在此硬编码。单一真值 = data/vocab/ming_qing.json（factions[].sim + faction_dynamics），
+ //   经 tools/gen_faction_bundle.py 编译为 demo/_faction_ming.js（window.FACTION_VOCAB），
+ //   在本文件末尾派生挂载为 SIM_IC.factions / SIM_IC.factionDynamics。
+ // 用户洞察：各派皆"以为明朝不会亡"，故把资源投向党内争斗而非边患 → 朝堂内耗削弱前线执行力。
 
  // 三阶层指标初值（#13 反馈环输入；阶段2仅派生展示，阶段3/4 反控控制图）
  "threeTier": {
@@ -69,8 +51,23 @@ window.SIM_IC = {
  // 落实 unified_dimensions §4：隐藏维度"可以不显示但不能没有"，且必须带 dist。
  "missing_dims": {
   "probability": { "dim": 7, "status": "latent", "dist": { "type": "deterministic-hash", "family": "FNV-1a", "range": [0,1] } },
-  "logistics":   { "dim": 9, "status": "partial", "dist": { "type": "prior", "mean": 0.6, "sd": 0.2 }, "note": "已整合进 sim_engine 物理层(R7)：每处征服按最近已控基地投送距离+季节判定，超补给半径/冬季按比例削减攻击方执行力" },
+  "logistics":   { "dim": 9, "status": "implemented-required", "dist": { "type": "prior", "mean": 0.6, "sd": 0.2 }, "note": "物理维度提升为必开（v0.63）：R7 三约束——①超补给半径/冬季折扣 ②抵达时间窗 ③扎营水源(BM.rivers) ④粮草可持续，均整合进 sim_engine 物理层；每处征服按最近已控基地投送距离+季节判定，超补给半径/冬季按比例削减攻击方执行力；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）" },
   "population":  { "dim": 10, "status": "partial", "dist": { "type": "prior", "mean": 1.0, "sd": 0.3, "unit": "相对万户" } },
-  "faction":     { "dim": 3, "status": "partial", "dist": { "type": "prior", "mean": 0.6, "sd": 0.2 }, "note": "九派系内斗→朝堂内耗（R6）：确定性映射为明方执行力折扣与守土崩溃风险；beliefs=各派皆信『明不亡』" }
+  "faction":     { "dim": 3, "status": "partial", "dist": { "type": "prior", "mean": 0.6, "sd": 0.2 }, "note": "九派系内斗→朝堂内耗（R6）：确定性映射为明方执行力折扣与守土崩溃风险；beliefs=各派皆信『明不亡』；参数单源=data/vocab/ming_qing.json" }
  }
 };
+
+// ── 派系单源挂载（#3）──────────────────────────────────────────────
+// factions / factionDynamics 一律来自 data/vocab/ming_qing.json 的编译产物
+// demo/_faction_ming.js（window.FACTION_VOCAB）。本文件不得再出现派系数值。
+(function(){
+  var V = window.FACTION_VOCAB;
+  if(!V || typeof V.attachTo!=='function'){
+    console.error('[SIM_IC] 缺少 _faction_ming.js（派系单一真值）：请在本文件之前加载 <script src="_faction_ming.js">，'+
+                  '并用 python tools/gen_faction_bundle.py 重新生成。');
+    window.SIM_IC.factions = [];
+    window.SIM_IC.factionDynamics = null;
+    return;
+  }
+  V.attachTo(window.SIM_IC);
+})();
