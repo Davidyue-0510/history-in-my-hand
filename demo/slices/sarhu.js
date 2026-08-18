@@ -430,6 +430,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": null,
    "note": "四路总调度，战后下狱，崇祯二年伏诛",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "cinC",
+    "objective": "四路合击、按期会师于沈阳城下，一举捣毁后金老巢",
+    "needs": [
+     "各路严守约期同时并进",
+     "避免任何一路抢功孤军深入",
+     "后方粮道与斥候衔接不断"
+    ],
+    "info_quality": 0.35,
+    "info_note": "分兵四路却无统一机动通讯；雪地行军更易迷路失联；对后金集中兵力毫无察觉",
+    "assessment": "视此战为'以多击少'的捣巢速决，低估后金情报与机动能力，未料'凭尔几路来我只一路去'",
+    "decision_style": "严令按期、重罚后期；以申军法维系合击节拍"
+   },
    "influence": 8,
    "_global_id": "yanggao",
    "_other_scenes": [
@@ -444,6 +457,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "west",
    "note": "西路主将，绰号杜疯子，以勇著称",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "column_cmd",
+    "objective": "抢在诸路之前破敌立功，雪'杜疯子'之勇名",
+    "needs": [
+     "率先渡浑河直捣",
+     "独吞首功不受掣肘"
+    ],
+    "info_quality": 0.4,
+    "info_note": "愤激轻敌，雪天裸衣渡河；不待他路，孤军急进",
+    "assessment": "以为后金可一鼓破之，轻敌冒进，未察埋伏",
+    "decision_style": "贪功冒进、违期疾进"
+   },
    "influence": 4,
    "_global_id": "dusong",
    "_other_scenes": [
@@ -458,6 +483,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "west",
    "note": "西路副将",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "随西路主将破敌，保身立功",
+    "needs": [
+     "紧跟主将",
+     "稳守辎重"
+    ],
+    "info_quality": 0.4,
+    "info_note": "随杜松同进退，信息同源",
+    "assessment": "倚主将决断，自身无独立判断",
+    "decision_style": "从主将、慎独断"
+   },
    "influence": 1
   },
   {
@@ -468,6 +505,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "west",
    "note": "西路副将",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "随西路主将破敌",
+    "needs": [
+     "协防西路",
+     "护辎重"
+    ],
+    "info_quality": 0.4,
+    "info_note": "西路副将，随杜松",
+    "assessment": "随主将进退",
+    "decision_style": "从主将"
+   },
    "influence": 1
   },
   {
@@ -478,6 +527,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "north",
    "note": "北路主将，名将马芳之子，文士气重",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "column_cmd",
+    "objective": "稳扎稳打、按约期与主力合击，不贪功",
+    "needs": [
+     "与他路协同",
+     "保全所部",
+     "倚车营自固"
+    ],
+    "info_quality": 0.45,
+    "info_note": "文士气重，持重但怯战；北路地形生疏",
+    "assessment": "偏于自保，闻杜松败讯即动摇，未能坚持合击节拍",
+    "decision_style": "持重迟疑、闻败即退"
+   },
    "influence": 5,
    "_global_id": "malin",
    "_other_scenes": [
@@ -492,6 +554,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "north",
    "note": "北路，斐芬山力战死",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "守斐芬山、护北路侧翼",
+    "needs": [
+     "坚壁拒马",
+     "等主力"
+    ],
+    "info_quality": 0.45,
+    "info_note": "北路裨将，随马林",
+    "assessment": "力战死守",
+    "decision_style": "死守待援"
+   },
    "influence": 1
   },
   {
@@ -502,6 +576,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "north",
    "note": "北路，掌辎重车营",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "掌辎重车营、护北路后勤",
+    "needs": [
+     "护粮车",
+     "依车营自固"
+    ],
+    "info_quality": 0.45,
+    "info_note": "掌辎重，行动迟缓",
+    "assessment": "后勤视角，重自保",
+    "decision_style": "依车营结阵"
+   },
    "influence": 0
   },
   {
@@ -512,6 +598,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "south",
    "note": "李成梁之子，南路主将，行动迟缓，战后自尽",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "column_cmd",
+    "objective": "持重应变、保全所部，避免陷敌",
+    "needs": [
+     "观望待机",
+     "不与敌硬拼"
+    ],
+    "info_quality": 0.3,
+    "info_note": "李成梁之子，与努尔哈赤有旧；行动迟缓、有意逗留",
+    "assessment": "深知后金之强，倾向持重自保，未按期进兵",
+    "decision_style": "持重逗留、不欲力战"
+   },
    "influence": 3,
    "_global_id": "li_rubai",
    "_other_scenes": [
@@ -527,6 +625,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "east",
    "note": "东路主将，号刘大刀，宿将，阿布达里岗战死",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "column_cmd",
+    "objective": "远道深入、按期会师，立老将之功",
+    "needs": [
+     "道路给养",
+     "与朝鲜军协同",
+     "按时抵合击点"
+    ],
+    "info_quality": 0.35,
+    "info_note": "东路最远、道路险阻；与朝鲜军协同但号令不一",
+    "assessment": "宿将谨慎，但道远期促，且不知他路已败",
+    "decision_style": "谨慎稳进、按期图功"
+   },
    "influence": 5
   },
   {
@@ -537,6 +648,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "column": "east",
    "note": "东路，联络朝鲜军，兵败自尽",
    "faction": "feng_jiang",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "监军东路、联络朝鲜",
+    "needs": [
+     "联络朝鲜",
+     "督催进军"
+    ],
+    "info_quality": 0.4,
+    "info_note": "监军，协同朝鲜军",
+    "assessment": "夹在明军与朝鲜之间",
+    "decision_style": "联络协调"
+   },
    "influence": 0
   },
   {
@@ -546,6 +669,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "朝鲜五道都元帅",
    "column": "east",
    "note": "朝鲜援军统帅，富察之野降后金",
+   "perspective": {
+    "role_tier": "ally_cmd",
+    "objective": "奉明命出援、保全朝鲜军，避免与后金死战",
+    "needs": [
+     "保存实力",
+     "观望形势",
+     "不被明方裹挟送死"
+    ],
+    "info_quality": 0.3,
+    "info_note": "被迫出兵助明；与明军号令不一，信息隔阂",
+    "assessment": "视此战为明人内战，不愿为明力战；富察之野兵败即降",
+    "decision_style": "首鼠两端、兵败则降"
+   },
    "influence": 1,
    "_global_id": "jianghongli",
    "_other_scenes": [
@@ -560,6 +696,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "平安兵使",
    "column": "east",
    "note": "朝鲜副元帅",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "副元帅，随姜弘立出援",
+    "needs": [
+     "协同元帅",
+     "保军"
+    ],
+    "info_quality": 0.3,
+    "info_note": "朝鲜副帅",
+    "assessment": "随元帅进退",
+    "decision_style": "从元帅"
+   },
    "influence": 0
   },
   {
@@ -569,6 +717,17 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "从事官",
    "column": "east",
    "note": "《栅中日录》作者，被俘后记其所历",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "随军记录、观察战局",
+    "needs": [
+     "记录战况"
+    ],
+    "info_quality": 0.3,
+    "info_note": "《栅中日录》作者，被俘后记其所历",
+    "assessment": "第三方亲历视角，不受明清双方叙事约束",
+    "decision_style": "记录为主"
+   },
    "influence": 0
   },
   {
@@ -578,6 +737,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "后金大汗",
    "column": null,
    "note": "亲自指挥，采取凭尔几路来我只一路去的集中打击方针",
+   "perspective": {
+    "role_tier": "enemy_cmd",
+    "objective": "集中兵力、各个击破，歼灭明军主力",
+    "needs": [
+     "掌握明军分兵虚实",
+     "以逸待劳",
+     "速决"
+    ],
+    "info_quality": 0.9,
+    "info_note": "本土作战、情报灵通（谍报+降人），熟悉地形",
+    "assessment": "洞悉明军分进不合、号令不一，定下'凭尔几路来我只一路去'的集中打击方针",
+    "decision_style": "集中优势、先破一路、连续转兵"
+   },
    "influence": 0,
    "_global_id": "nuerhaci",
    "_other_scenes": [
@@ -598,6 +770,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "大贝勒",
    "column": null,
    "note": "参与吉林崖、尚间崖、阿布达里岗诸战",
+   "perspective": {
+    "role_tier": "prince",
+    "objective": "执行大汗集中打击方略，破明各路",
+    "needs": [
+     "协同大汗",
+     "速战"
+    ],
+    "info_quality": 0.85,
+    "info_note": "后金核心，参与诸战",
+    "assessment": "执行集中打击",
+    "decision_style": "依方略速决"
+   },
    "influence": 0
   },
   {
@@ -607,6 +791,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "四贝勒",
    "column": null,
    "note": "参与诸战",
+   "perspective": {
+    "role_tier": "prince",
+    "objective": "同代善，破明军",
+    "needs": [
+     "协同",
+     "速战"
+    ],
+    "info_quality": 0.85,
+    "info_note": "后金核心",
+    "assessment": "执行方略",
+    "decision_style": "依方略"
+   },
    "influence": 0,
    "_global_id": "huangtaiji",
    "_other_scenes": [
@@ -623,6 +819,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "五大臣",
    "column": null,
    "note": "后金重臣",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "为大汗前驱破敌",
+    "needs": [
+     "随大汗",
+     "冲阵"
+    ],
+    "info_quality": 0.85,
+    "info_note": "后金重臣",
+    "assessment": "执行",
+    "decision_style": "冲阵效死"
+   },
    "influence": 0
   },
   {
@@ -632,6 +840,18 @@ window.SANDBOX_SLICES["sarhu"] = {
    "role_hint": "朝鲜左营将",
    "column": "east",
    "note": "深河之战布拒马木力战，称'依柳将'，死之",
+   "perspective": {
+    "role_tier": "sub_cmd",
+    "objective": "深河之战力战拒后金",
+    "needs": [
+     "布拒马木",
+     "死守"
+    ],
+    "info_quality": 0.3,
+    "info_note": "深河之战布拒马力战，称'依柳将'",
+    "assessment": "力战殉国",
+    "decision_style": "死战拒马"
+   },
    "influence": 0
   }
  ],

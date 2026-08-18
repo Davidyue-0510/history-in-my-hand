@@ -94,6 +94,7 @@ def main():
                 "id": p.get("id"), "name": p.get("name"),
                 "side": p.get("side"), "faction": p.get("faction"),
                 "role": p.get("role") or p.get("role_hint"),
+                "perspective": p.get("perspective"),
             })
 
     bundle = {
