@@ -62,6 +62,9 @@
     if (!wrap || !svg || !cv) throw new Error('[SIM_MAPCORE] 需要 wrap / svg / cv 三个宿主节点');
 
     var viewFit = o.viewFit || 'liaodong';
+    // 固定「全辽东」视窗（仅传此选项的场景生效，如 sarhu 战场需放到区域尺度；
+    // 默认 liaodong 场景不传 → 仍按治所 bbox 自适应，零回归）
+    var LIAODONG_BBOX = o.liaodongBBox || null;
     var VIEW_LON0, VIEW_LON1, VIEW_LAT0, VIEW_LAT1;
     var view = { x: 0, y: 0, w: 1000, h: 800 };
     var fitW = 1000, cw = 1, ch = 1;
@@ -73,6 +76,10 @@
       if (viewFit === 'china') {
         VIEW_LON0 = CHINA_BBOX[0]; VIEW_LON1 = CHINA_BBOX[1];
         VIEW_LAT0 = CHINA_BBOX[2]; VIEW_LAT1 = CHINA_BBOX[3];
+      } else if (LIAODONG_BBOX) {
+        // 固定辽东区域视窗（[lonMin,lonMax,latMin,latMax]），把战场放到区域尺度看上下文
+        VIEW_LON0 = LIAODONG_BBOX[0]; VIEW_LON1 = LIAODONG_BBOX[1];
+        VIEW_LAT0 = LIAODONG_BBOX[2]; VIEW_LAT1 = LIAODONG_BBOX[3];
       } else {
         var lons = SEATS.map(function (s) { return s.lon; });
         var lats = SEATS.map(function (s) { return s.lat; });

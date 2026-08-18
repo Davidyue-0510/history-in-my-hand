@@ -183,7 +183,12 @@
       seats: core.SEATS, basemap: window.SIM_BASEMAP,
       extraCanvases: function(){ return [ctrlCv]; },
       ids: { zoomBadge:'zoomBadge', scaleBar:'scaleBar', elBar:'elBar' },
-      onDynamic: function(){ if (window.SimLayer && SimLayer.isReady()) SimLayer.repaint(); }
+      onDynamic: function(){ if (window.SimLayer && SimLayer.isReady()) SimLayer.repaint(); },
+      // 萨尔浒战场仅 15 治所聚成一小簇，默认会因「自适应到治所 bbox」被放大到看不清区域上下文。
+      // 传入固定辽东区域 bbox（与矢量底图 liaodong 视图一致 [119.5,38.5,129.0,44.5]），
+      // 把战场放到全辽东尺度，边墙/河流/海岸线全部就位。默认 liaodong 场景不传 → 维持原行为。
+      viewFit: 'liaodong',
+      liaodongBBox: scene === 'sarhu' ? [119.5, 129.0, 38.5, 44.5] : null
     });
     MC.measure(); MC.initMap(); MC.loadTerrain(); MC.fitView(); MC.applyView(); MC.bindInteractions(); MC.paintElevLegend();
 
