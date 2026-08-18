@@ -70,6 +70,23 @@
   .hint{font-size:11px;color:var(--ink-soft);margin-top:4px;}
   .map-hint{position:absolute;left:50%;top:10px;transform:translateX(-50%);background:rgba(51,45,39,.78);color:#f3ecdc;padding:4px 12px;border-radius:12px;font-size:12px;z-index:5;white-space:nowrap;}
   .err{margin:20px;padding:15px;background:#fbe9e7;border:1px solid var(--bad);border-radius:8px;color:#7a241c;font-family:monospace;white-space:pre-wrap;}
+  /* v0.68 视角切换 */
+  .vp-sel{width:100%;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--parch2);font-family:inherit;font-size:12.5px;color:var(--ink);cursor:pointer;}
+  .vp-card{margin-top:8px;font-size:12px;line-height:1.5;}
+  .vp-head{display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap;}
+  .vp-name{font-weight:700;font-size:13.5px;}
+  .vp-badge{font-size:10px;padding:1px 6px;border-radius:8px;color:#fff;}
+  .vp-badge.me{background:var(--accent);}
+  .vp-badge.foe{background:var(--bad);}
+  .vp-badge.ally{background:#3f7d54;}
+  .vp-badge.third{background:#6b5f50;}
+  .vp-row{display:flex;gap:6px;margin:3px 0;}
+  .vp-k{flex:0 0 52px;color:var(--ink-soft);}
+  .vp-v{flex:1;}
+  .vp-needs{margin:0;padding-left:16px;}
+  .vp-ia{height:7px;background:#ddd2b8;border-radius:4px;overflow:hidden;margin-top:2px;}
+  .vp-ia > i{display:block;height:100%;background:linear-gradient(90deg,#b5443a,#c8a24a,#3f7d54);}
+  .vp-assess{margin-top:6px;padding:7px 9px;background:#f3ecdc;border-left:3px solid var(--accent);border-radius:0 5px 5px 0;color:var(--ink);}
 </style>
 </head>
 <body>
@@ -97,6 +114,14 @@
             <button class="btn" id="btnPause">暂停</button>
             <button class="btn" id="btnReplay">重放史实</button>
           </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>视角 / Viewpoint</h2>
+        <div class="c">
+          <select class="vp-sel" id="vpSel"></select>
+          <div class="vp-card" id="vpCard"></div>
         </div>
       </section>
 
@@ -173,8 +198,20 @@
     $('sceneHint').textContent = core.label + '（' + D.meta.startYear + '–' + D.meta.endYear + '）';
 
     var year0 = D.meta.startYear, year1 = D.meta.endYear;
-    var state = { branch:'', mode:'real', year:year0 };
+    var state = { branch:'', mode:'real', year:year0, vp:'', vpSide:null };
     var terminalMatch = 0, running = false, runTimer = null;
+
+    // ── 视角切换（v0.68）：同一战役，不同人（角色/派系/信息）决策与理解不同 ──
+    var ROLE_TIER_LABEL = { cinC:'总指挥', column_cmd:'一路主将', enemy_cmd:'敌方统帅', ally_cmd:'盟军统帅', prince:'贝勒', sub_cmd:'裨将' };
+    // side（数据真值：ming/jin/joseon）→ 党派名（partyColors 键：明方/清方；朝鲜无控色，仅叙事）
+    var SIDE_PARTY = { ming:'明方', jin:'清方', joseon:'朝鲜' };
+    // 视角党派翻转映射（唯一真值：明方/清方/朝鲜/contested）。史官视角（vpSide=null）不翻转。
+    var VP_MAP = {
+      ming:   { '明方':'我方', '清方':'敌方', '朝鲜':'友方', 'contested':'争夺中' },
+      jin:    { '明方':'敌方', '清方':'我方', '朝鲜':'敌方', 'contested':'争夺中' },
+      joseon: { '明方':'友方', '清方':'敌方', '朝鲜':'我方', 'contested':'争夺中' }
+    };
+    var VPS = (core.D.persons||[]).filter(function(p){ return p && p.perspective; });
 
     // ── 地图内核：地形 + 矢量底 + 交互 ──
     var mapWrap = $('mapWrap'), terrainCv = $('terrainCv'), ctrlCv = $('ctrlCv'), svg = $('map');
@@ -312,7 +349,8 @@
     }
     function partyChip(p){
       var c=core.D.partyColors && core.D.partyColors[p]; c = c?('rgb('+c[0]+','+c[1]+','+c[2]+')'):'#888';
-      return '<span class="chip" style="background:'+c+'"></span>'+(p||'—');
+      var label = vpPartyLabel(p==null?'—':p);
+      return '<span class="chip" style="background:'+c+'"></span>'+label;
     }
 
     function updatePanel(year){
@@ -358,10 +396,69 @@
       var html='';
       Object.keys(byYear).sort(function(a,b){return +a-+b;}).forEach(function(y){
         byYear[y].forEach(function(e){
-          html+='<div class="ev '+(e.severity||'info')+'"><span class="sev">'+(sevlbl[e.severity]||e.severity)+'</span><b>'+y+'</b> '+core.beNarrative(e)+'</div>';
+          html+='<div class="ev '+(e.severity||'info')+'"><span class="sev">'+(sevlbl[e.severity]||e.severity)+'</span><b>'+y+'</b> '+relabelText(core.beNarrative(e))+'</div>';
         });
       });
       el.innerHTML=html;
+    }
+
+    // ── 视角切换（v0.68）：选角 → 叙事按该 actor 的 understanding 重写 + 事件我方/敌方归属翻转 ──
+    function vpPartyLabel(party){
+      if(!state.vpSide) return party;
+      var m = VP_MAP[state.vpSide]; return (m && m[party]) || party;
+    }
+    function relabelText(html){
+      if(!state.vpSide) return html;
+      return String(html).replace(/明方|清方|朝鲜/g, function(m){ return vpPartyLabel(m); });
+    }
+    function vpBadgeClass(side){
+      if(!state.vpSide) return 'third';
+      if(side===state.vpSide) return 'me';
+      if((side==='joseon'&&state.vpSide==='ming')||(side==='ming'&&state.vpSide==='joseon')) return 'ally';
+      return 'foe';
+    }
+    function buildViewpoint(){
+      var sel=$('vpSel'); sel.innerHTML='';
+      var o0=document.createElement('option'); o0.value=''; o0.textContent='📜 史官视角（中立）'; sel.appendChild(o0);
+      if(!VPS.length){ sel.disabled=true; renderVPCard(); return; }
+      [['ming','明方'],['jin','后金'],['joseon','朝鲜']].forEach(function(g){
+        var ps=VPS.filter(function(p){return p.side===g[0];}); if(!ps.length) return;
+        var og=document.createElement('optgroup'); og.label=g[1];
+        ps.forEach(function(p){
+          var o=document.createElement('option'); o.value=p.id;
+          o.textContent=p.name+'（'+(ROLE_TIER_LABEL[p.perspective.role_tier]||p.perspective.role_tier)+'）';
+          og.appendChild(o);
+        });
+        sel.appendChild(og);
+      });
+      sel.addEventListener('change', function(){ selectViewpoint(sel.value); });
+      renderVPCard();
+    }
+    function selectViewpoint(id){
+      state.vp = id || '';
+      var p = id ? VPS.find(function(x){return x.id===id;}) : null;
+      state.vpSide = p ? p.side : null;
+      renderVPCard(); render();
+    }
+    function renderVPCard(){
+      var el=$('vpCard');
+      if(!VPS.length){ el.innerHTML='<div class="hint">本场景暂无多视角数据。</div>'; return; }
+      if(!state.vp){ el.innerHTML='<div class="hint">选择一位参战者，以其视角重看此役——总指挥、一路主将、敌方统帅，所见与所求截然不同。</div>'; return; }
+      var p=VPS.find(function(x){return x.id===state.vp;}); if(!p) return;
+      var vp=p.perspective;
+      var sideLabel=SIDE_PARTY[p.side]||p.side;
+      var badgeText=vpPartyLabel(sideLabel);
+      var ia=Math.round((vp.info_quality||0)*100);
+      var needs=(vp.needs||[]).map(function(n){return '<li>'+n+'</li>';}).join('');
+      el.innerHTML =
+        '<div class="vp-head"><span class="vp-name">'+p.name+'</span>'+
+        '<span class="vp-badge '+vpBadgeClass(p.side)+'">'+(ROLE_TIER_LABEL[vp.role_tier]||vp.role_tier)+'</span>'+
+        '<span class="vp-badge '+vpBadgeClass(p.side)+'">'+badgeText+'</span></div>'+
+        '<div class="vp-row"><span class="vp-k">目标</span><span class="vp-v">'+ (vp.objective||'—') +'</span></div>'+
+        (needs?'<div class="vp-row"><span class="vp-k">需求</span><span class="vp-v"><ul class="vp-needs">'+needs+'</ul></span></div>':'')+
+        '<div class="vp-row"><span class="vp-k">信息</span><span class="vp-v"><div class="vp-ia"><i style="width:'+ia+'%"></i></div><span class="hint" style="margin:0">质量 '+ia+'% · '+(vp.info_note||'')+'</span></span></div>'+
+        '<div class="vp-row"><span class="vp-k">决策</span><span class="vp-v">'+(vp.decision_style||'—')+'</span></div>'+
+        '<div class="vp-assess"><b>此役理解：</b>'+(vp.assessment||'—')+'</div>';
     }
 
     // 图例
@@ -379,6 +476,7 @@
     })();
 
     // 首帧
+    buildViewpoint();
     recomputeTerminal();
     Sim.setMode(state.mode);
     render();
