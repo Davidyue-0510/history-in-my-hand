@@ -87,6 +87,9 @@
   .vp-ia{height:7px;background:#ddd2b8;border-radius:4px;overflow:hidden;margin-top:2px;}
   .vp-ia > i{display:block;height:100%;background:linear-gradient(90deg,#b5443a,#c8a24a,#3f7d54);}
   .vp-assess{margin-top:6px;padding:7px 9px;background:#f3ecdc;border-left:3px solid var(--accent);border-radius:0 5px 5px 0;color:var(--ink);}
+  .tg{display:flex;align-items:center;gap:5px;font-size:12px;color:#5a4f42;margin-top:7px;cursor:pointer;user-select:none;}
+  .tg input{margin:0;}
+  .tg .sw{display:inline-block;width:18px;height:0;border-top:2px dashed var(--accent);}
 </style>
 </head>
 <body>
@@ -114,6 +117,7 @@
             <button class="btn" id="btnPause">暂停</button>
             <button class="btn" id="btnReplay">重放史实</button>
           </div>
+          <label class="tg"><input type="checkbox" id="tgArrows" checked> <span class="sw"></span>进军箭头（实控易手方向）</label>
         </div>
       </section>
 
@@ -241,6 +245,72 @@
     drawSeats();
     loadCoast();
 
+    // ── 进军箭头层（v0.69）：实控易手方向，从「获取方最近据点」派生，零逐帧重绘（随 viewBox 缩放）──
+    var gArrows = document.createElementNS(MC.SVGNS,'g'); gArrows.setAttribute('id','gArrows'); $('map').appendChild(gArrows);
+    function partyHex(p){ var c=core.D.partyColors && core.D.partyColors[p]; return c?('rgb('+c[0]+','+c[1]+','+c[2]+')'):'#888'; }
+    function currentIntervals(){
+      // diff 主图=史实（虚线），箭头随主图走史实；sim 模式走分支控制
+      if(state.mode==='sim') return Sim.simIntervals(state.branch||'');
+      return Sim.realIntervals();
+    }
+    function partyAt(iv, id, year){
+      // 取覆盖该年、start 最大（最近生效）的区间，避免边界年重叠误判
+      var best=null, bestStart=-1;
+      for(var i=0;i<iv.length;i++){ var c=iv[i]; if(c.place_id===id && year>=c.start && year<=(c.end==null?1e9:c.end) && c.start>bestStart){ best=c.party; bestStart=c.start; } }
+      return best;
+    }
+    function nearestSeatOfParty(target, party, partyMap){
+      var best=null, bd=1e9;
+      core.SEATS.forEach(function(s){
+        if(s.id===target.id || partyMap[s.id]!==party) return;
+        var d=(s.lon-target.lon)*(s.lon-target.lon)+(s.lat-target.lat)*(s.lat-target.lat);
+        if(d<bd){ bd=d; best=s; }
+      });
+      return best;
+    }
+    function drawArrow(src, dst, party){
+      var x1=MC.px(src.lon), y1=MC.py(src.lat), x2=MC.px(dst.lon), y2=MC.py(dst.lat);
+      var col=partyHex(party);
+      // halo：宽深色半透底线，保证在同色 voronoi 上仍可见
+      var halo=document.createElementNS(MC.SVGNS,'line');
+      halo.setAttribute('x1',x1); halo.setAttribute('y1',y1); halo.setAttribute('x2',x2); halo.setAttribute('y2',y2);
+      halo.setAttribute('stroke','#2a2521'); halo.setAttribute('stroke-width',3.4); halo.setAttribute('opacity',0.35);
+      halo.setAttribute('vector-effect','non-scaling-stroke');
+      gArrows.appendChild(halo);
+      // 有色虚线箭头（class=arr，供探针计数）
+      var line=document.createElementNS(MC.SVGNS,'line');
+      line.setAttribute('x1',x1); line.setAttribute('y1',y1); line.setAttribute('x2',x2); line.setAttribute('y2',y2);
+      line.setAttribute('class','arr');
+      line.setAttribute('stroke',col); line.setAttribute('stroke-width',1.6); line.setAttribute('stroke-dasharray','4 3');
+      line.setAttribute('vector-effect','non-scaling-stroke'); line.setAttribute('opacity',0.95);
+      gArrows.appendChild(line);
+      // 箭头三角：深色描边 + 党派色填充
+      var ang=Math.atan2(y2-y1,x2-x1), L=7.5;
+      var ax=x2-L*Math.cos(ang-Math.PI/7), ay=y2-L*Math.sin(ang-Math.PI/7);
+      var bx=x2-L*Math.cos(ang+Math.PI/7), by=y2-L*Math.sin(ang+Math.PI/7);
+      var tri=document.createElementNS(MC.SVGNS,'polygon');
+      tri.setAttribute('points', x2+','+y2+' '+ax+','+ay+' '+bx+','+by);
+      tri.setAttribute('fill',col); tri.setAttribute('stroke','#2a2521'); tri.setAttribute('stroke-width',0.6);
+      tri.setAttribute('vector-effect','non-scaling-stroke');
+      gArrows.appendChild(tri);
+    }
+    function renderAdvanceArrows(){
+      while(gArrows.firstChild) gArrows.removeChild(gArrows.firstChild);
+      var tg=$('tgArrows'); if(!tg || !tg.checked) return;
+      var y=state.year; if(y<=year0) return;            // year0 无前一年可比 → 不画
+      var iv=currentIntervals();
+      var prev={}, cur={};
+      core.SEATS.forEach(function(s){ prev[s.id]=partyAt(iv,s.id,y-1); cur[s.id]=partyAt(iv,s.id,y); });
+      core.SEATS.forEach(function(s){
+        var p0=prev[s.id], p1=cur[s.id];
+        if(p1 && p1!==p0 && (p1==='明方'||p1==='清方')){   // 仅具体党派易手画方向箭头；contested 易手由控制色表达
+          var src=nearestSeatOfParty(s, p1, prev); if(!src) return;
+          drawArrow(src, s, p1);
+        }
+      });
+    }
+    if($('tgArrows')) $('tgArrows').addEventListener('change', renderAdvanceArrows);
+
     // ── 参数滑块 ──
     (function buildParams(){
       var box = $('paramBox'); box.innerHTML='';
@@ -340,6 +410,7 @@
       $('yrVal').textContent = state.year;
       Sim.setMode(state.mode);
       Sim.draw(state.year, 'region', state.branch||null);
+      renderAdvanceArrows();
       updatePanel(state.year);
     }
 
