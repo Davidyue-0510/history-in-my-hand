@@ -94,13 +94,14 @@
     function pX(lon, w) { return (lon - VIEW_LON0) / (VIEW_LON1 - VIEW_LON0) * w; }
     function pY(lat, h) { return (VIEW_LAT1 - lat) / (VIEW_LAT1 - VIEW_LAT0) * h; }
 
+    // 数据（=当前视窗地理范围）在 1000×800 参考系里的外框。
+    // 必须同时扫经度和纬度——旧实现只用了固定纬度 VIEW_LAT0，纵向范围塌缩成一条线，
+    // 导致 fitView 算出的视窗比例失真、地形只铺满画布上半，下半永远停在 #EFECE2 卡其底。
     function dataBounds() {
-      var xs = [], ys = [];
-      for (var i = 0; i <= 1000; i += 50) {
-        var lon = VIEW_LON0 + (VIEW_LON1 - VIEW_LON0) * i / 1000;
-        xs.push(pX(lon, 1000)); ys.push(pY(VIEW_LAT0, 800));
-      }
-      return { x0: Math.min.apply(null, xs), x1: Math.max.apply(null, xs), y0: Math.min.apply(null, ys), y1: Math.max.apply(null, ys) };
+      return {
+        x0: pX(VIEW_LON0, 1000), x1: pX(VIEW_LON1, 1000),
+        y0: pY(VIEW_LAT1, 800), y1: pY(VIEW_LAT0, 800)
+      };
     }
     function fitView() {
       var pad = 30, b = dataBounds();
@@ -262,38 +263,47 @@
       else if (TERR && tImg) drawGridCrop(ctx);
       ctx.setTransform(1, 0, 0, 1, 0, 0);
     }
-    // 真实中国 DemTopo：按当前视窗做「源裁剪」→ 中国地形图，但只截出本战区那一块
+    // 真实中国 DemTopo：按当前视窗做「源裁剪」→ 中国地形图，只截出本战区那一块。
+    // 关键修正：目标矩形改为「当前视窗在参考系里的矩形」，而非写死的 [0,0,1000,800]。
+    // view 经 setTransform 变换后必铺满整张画布，故地形不再露 #EFECE2 底色（任意缩放/平移都不露）。
     function drawChinaCrop(ctx) {
       var L0 = CHINA_DEM.lonMin, L1 = CHINA_DEM.lonMax, T = CHINA_DEM.latTop, B = CHINA_DEM.latBot;
       var iw = chinaImg.naturalWidth, ih = chinaImg.naturalHeight;
-      var lonA = Math.max(VIEW_LON0, L0), lonB = Math.min(VIEW_LON1, L1);
-      var latA = Math.max(VIEW_LAT0, B), latB = Math.min(VIEW_LAT1, T);
-      if (lonA >= lonB || latA >= latB) return;
+      // 当前视窗（view 是 1000×800 参考系里的子矩形）对应的经纬度范围：由 view 反投影
+      var lonA = VIEW_LON0 + (view.x / 1000) * (VIEW_LON1 - VIEW_LON0);
+      var lonB = VIEW_LON0 + ((view.x + view.w) / 1000) * (VIEW_LON1 - VIEW_LON0);
+      var latTop = VIEW_LAT1 - (view.y / 800) * (VIEW_LAT1 - VIEW_LAT0);
+      var latBot = VIEW_LAT1 - ((view.y + view.h) / 800) * (VIEW_LAT1 - VIEW_LAT0);
+      lonA = Math.max(lonA, L0); lonB = Math.min(lonB, L1);   // 裁剪到中国 DEM 范围
+      var la = Math.max(Math.min(latTop, latBot), B), lb = Math.min(Math.max(latTop, latBot), T);
+      if (lonA >= lonB || la >= lb) return;
       var sx0 = (lonA - L0) / (L1 - L0) * iw;
       var sw = (lonB - lonA) / (L1 - L0) * iw;
-      var syTop = (T - latB) / (T - B) * ih;
-      var syBot = (T - latA) / (T - B) * ih;
+      var syTop = (T - lb) / (T - B) * ih;
+      var syBot = (T - la) / (T - B) * ih;
       var sy0 = Math.min(syTop, syBot), sh = Math.abs(syBot - syTop);
-      var gx = pX(lonA, 1000), gw = pX(lonB, 1000) - gx;
-      var gy = pY(latB, 800), gh = pY(latA, 800) - gy;
-      if (gw <= 0 || gh <= 0 || sw <= 0 || sh <= 0) return;
-      ctx.drawImage(chinaImg, sx0, sy0, sw, sh, gx, gy, gw, gh);
+      if (view.w <= 0 || view.h <= 0 || sw <= 0 || sh <= 0) return;
+      ctx.drawImage(chinaImg, sx0, sy0, sw, sh, view.x, view.y, view.w, view.h);
     }
-    // 兜底：GDEM 网格 canvas（低分辨率），同样按经纬度源裁剪，避免整图拉伸
+    // 兜底：GDEM 网格 canvas（低分辨率），同样按当前视窗矩形绘制 + 经纬度源裁剪，
+    // 与 drawChinaCrop 对称——保证任意缩放/平移下地形都不露 #EFECE2 底色。
     function drawGridCrop(ctx) {
       var lonMax = TERR.lon0 + (TERR.nx - 1) * TERR.step;
       var latMax = TERR.lat0 + (TERR.ny - 1) * TERR.step;
-      var lonA = Math.max(VIEW_LON0, TERR.lon0), lonB = Math.min(VIEW_LON1, lonMax);
-      var latA = Math.max(VIEW_LAT0, TERR.lat0), latB = Math.min(VIEW_LAT1, latMax);
-      if (lonA >= lonB || latA >= latB) return;
+      // 当前视窗（view 是 1000×800 参考系里的子矩形）对应的经纬度范围：由 view 反投影
+      var lonA = VIEW_LON0 + (view.x / 1000) * (VIEW_LON1 - VIEW_LON0);
+      var lonB = VIEW_LON0 + ((view.x + view.w) / 1000) * (VIEW_LON1 - VIEW_LON0);
+      var latTop = VIEW_LAT1 - (view.y / 800) * (VIEW_LAT1 - VIEW_LAT0);
+      var latBot = VIEW_LAT1 - ((view.y + view.h) / 800) * (VIEW_LAT1 - VIEW_LAT0);
+      lonA = Math.max(lonA, TERR.lon0); lonB = Math.min(lonB, lonMax);   // 裁剪到 GDEM 范围
+      var la = Math.max(Math.min(latTop, latBot), TERR.lat0), lb = Math.min(Math.max(latTop, latBot), latMax);
+      if (lonA >= lonB || la >= lb) return;
       var ixA = (lonA - TERR.lon0) / TERR.step, ixB = (lonB - TERR.lon0) / TERR.step;
-      var rowTop = (TERR.ny - 1) - (latB - TERR.lat0) / TERR.step;
-      var rowBot = (TERR.ny - 1) - (latA - TERR.lat0) / TERR.step;
+      var rowTop = (TERR.ny - 1) - (lb - TERR.lat0) / TERR.step;
+      var rowBot = (TERR.ny - 1) - (la - TERR.lat0) / TERR.step;
       var sx0 = ixA, sw = ixB - ixA, sy0 = Math.min(rowTop, rowBot), sh = Math.abs(rowBot - rowTop);
-      var gx = pX(lonA, 1000), gw = pX(lonB, 1000) - gx;
-      var gy = pY(latB, 800), gh = pY(latA, 800) - gy;
-      if (gw <= 0 || gh <= 0 || sw <= 0 || sh <= 0) return;
-      ctx.drawImage(tImg, sx0, sy0, sw, sh, gx, gy, gw, gh);
+      if (view.w <= 0 || view.h <= 0 || sw <= 0 || sh <= 0) return;
+      ctx.drawImage(tImg, sx0, sy0, sw, sh, view.x, view.y, view.w, view.h);
     }
 
     // ── SVG 矢量底 ───────────────────────────────────────
