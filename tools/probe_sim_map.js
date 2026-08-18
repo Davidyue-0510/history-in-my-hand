@@ -12,7 +12,9 @@ const errors = [];
 const ROOT = path.resolve(__dirname, '..');
 const DEMO = path.join(ROOT, 'demo');
 const PORT = 8807;
-const TARGET = '/sim_map.html';
+// 支持 ?scene=sarhu 等：SIM_SCENE=sarhu node tools/probe_sim_map.js
+const SCENE = process.env.SIM_SCENE || '';
+const TARGET = '/sim_map.html' + (SCENE ? ('?scene=' + SCENE) : '');
 const MIME = { '.html':'text/html', '.js':'text/javascript', '.json':'application/json', '.css':'text/css', '.jpg':'image/jpeg', '.png':'image/png' };
 
 function serve(){return http.createServer((req,res)=>{
@@ -50,16 +52,31 @@ async function main(){
     return out;
   });
 
+  // 场景元数据（动态，避免把 liaodong 的 36 治所/1630/B2_weak_jin 硬编码进来）
+  const meta = await page.evaluate(()=>{
+    const scene = SIM_CORE.sceneFromURL();
+    const core = SIM_CORE.create(scene);
+    const br = (core.R && core.R.branches && core.R.branches[0]) || null;
+    return {
+      scene: scene,
+      branchId: br ? br.id : null,
+      startYear: core.D.meta.startYear,
+      endYear: core.D.meta.endYear,
+      seatCount: (core.SEATS || []).length,
+      branchCount: (core.R && core.R.branches || []).length
+    };
+  });
+
   // 默认重放 100% + 反事实偏离
-  const sim = await page.evaluate(()=>{
+  const sim = await page.evaluate((bid, ey)=>{
     const S=window.SimLayer;
     const real=S.realIntervals(), def=S.simIntervals();
     const defaultReplay = JSON.stringify(real)===JSON.stringify(def);
-    const defDiv = S.divergenceAt(1644, null).length;
-    const b2Div = S.divergenceAt(1644, 'B2_weak_jin').length;
-    const b2Div2 = S.divergenceAt(1644, 'B2_weak_jin').length;
-    return { realLen:real.length, defLen:def.length, defaultReplay, defDiv, b2Div, b2Deterministic:(b2Div===b2Div2) };
-  });
+    const defDiv = S.divergenceAt(ey, null).length;
+    const bDiv = bid ? S.divergenceAt(ey, bid).length : -1;
+    const bDiv2 = bid ? S.divergenceAt(ey, bid).length : -1;
+    return { realLen:real.length, defLen:def.length, defaultReplay, defDiv, bDiv, bDeterministic:(bid? (bDiv===bDiv2):true), hasBranch:!!bid };
+  }, meta.branchId, meta.endYear);
 
   // 三模式切换 + 绘制无异常
   const modes = await page.evaluate(()=>{
@@ -70,6 +87,21 @@ async function main(){
     return { m1, m2, m3 };
   });
   const errAfterModes = errors.length;
+
+  // 早断点诊断：sarhu 等场景若 init 抛错，模式按钮不存在 → 在此先暴露根因
+  const diag = await page.evaluate(()=>{
+    var errDiv = document.querySelector('.err');
+    return {
+      hasRealBtn: !!document.querySelector('[data-mode="real"]'),
+      hasFitBtn: !!document.querySelector('[data-zoom="fit"]'),
+      branchBox: !!document.getElementById('branchBox'),
+      initErr: errDiv ? errDiv.textContent.slice(0,400) : null,
+      simLayerReady: !!(window.SimLayer && SimLayer.isReady && SimLayer.isReady()),
+      simCoreScene: window.SIM_CORE ? (SIM_CORE.sceneFromURL && SIM_CORE.sceneFromURL()) : 'NO_CORE'
+    };
+  });
+  console.log('  [diag] sarhu 场景诊断 ->', JSON.stringify(diag));
+  if (diag.initErr) console.log('  [diag] init 抛错 ->', diag.initErr);
 
   // 地形像素（中心非羊皮纸 → DemTopo 已绘制）
   let waitT=0; while(waitT<6000){ const r=await page.evaluate(()=>{
@@ -97,30 +129,31 @@ async function main(){
   });
 
   // UI 交互：点击反事实分支 → 偏离列表更新
-  const ui = await page.evaluate(()=>{
-    const b=document.getElementById('br_B2_weak_jin'); if(!b) return { hasBtn:false };
+  const ui = await page.evaluate((bid)=>{
+    const b=document.getElementById('br_'+bid); if(!b) return { hasBtn:false };
     b.click();
     const divl=document.getElementById('divl');
     const modeBtn=document.querySelector('[data-mode="sim"]');
     modeBtn.click();
     const mode=window.SimLayer.mode();
     return { hasBtn:true, divlChildren: divl? divl.children.length:0, modeAfterClick: mode, statsText: (document.getElementById('stats')||{}).textContent||'' };
-  });
+  }, meta.branchId);
 
-  // 年份滑块拖动
-  const yearScrub = await page.evaluate(()=>{
-    const s=document.getElementById('year'); s.value=1630;
+  // 年份滑块拖动（用场景实际年份范围内的值）
+  const yrScrub = Math.min(meta.startYear + 5, meta.endYear);
+  const yearScrub = await page.evaluate((yr)=>{
+    const s=document.getElementById('year'); s.value=yr;
     s.dispatchEvent(new Event('input',{bubbles:true}));
     return { yrVal: document.getElementById('yrVal').textContent };
-  });
+  }, yrScrub);
 
   // 截图：real / sim / diff
   fs.mkdirSync(path.join(ROOT,'.tmp'),{recursive:true});
-  await page.evaluate(()=>{ document.querySelector('[data-mode="real"]').click(); document.querySelector('[data-zoom="fit"]').click(); });
+  await page.evaluate(()=>{ var a=document.querySelector('[data-mode="real"]'); if(a)a.click(); var b=document.querySelector('[data-zoom="fit"]'); if(b)b.click(); });
   await sleep(400); await page.screenshot(path.join(ROOT,'.tmp','sim_map_real.png'));
-  await page.evaluate(()=>{ document.querySelector('[data-mode="sim"]').click(); document.getElementById('br_B2_weak_jin').click(); document.querySelector('[data-zoom="fit"]').click(); });
+  await page.evaluate((bid)=>{ var a=document.querySelector('[data-mode="sim"]'); if(a)a.click(); var c=bid?document.getElementById('br_'+bid):null; if(c)c.click(); var b=document.querySelector('[data-zoom="fit"]'); if(b)b.click(); }, meta.branchId);
   await sleep(400); await page.screenshot(path.join(ROOT,'.tmp','sim_map_sim.png'));
-  await page.evaluate(()=>{ document.querySelector('[data-mode="diff"]').click(); document.getElementById('br_B2_weak_jin').click(); document.querySelector('[data-zoom="fit"]').click(); });
+  await page.evaluate((bid)=>{ var a=document.querySelector('[data-mode="diff"]'); if(a)a.click(); var c=bid?document.getElementById('br_'+bid):null; if(c)c.click(); var b=document.querySelector('[data-zoom="fit"]'); if(b)b.click(); }, meta.branchId);
   await sleep(400); await page.screenshot(path.join(ROOT,'.tmp','sim_map_diff.png'));
 
   await browser.close(); server.close();
@@ -134,16 +167,16 @@ async function main(){
   ok(base.terr && base.ctrl && base.terrW>0 && base.ctrlW>0, '双画布已按 DPR 尺寸化 → terrW='+base.terrW+' ctrlW='+base.ctrlW);
   ok(base.branchBtns>=7, '分支按钮≥7（史实+6分支）→ '+base.branchBtns);
   ok(base.paramInputs>=6, '参数滑块≥6 → '+base.paramInputs);
-  ok(base.seatCircles===36, 'SVG 治所标记=36 → 实际 '+base.seatCircles);
+  ok(base.seatCircles===meta.seatCount, 'SVG 治所标记='+meta.seatCount+' → 实际 '+base.seatCircles+'（场景 '+(meta.scene||'默认')+'）');
   ok(sim.defaultReplay && sim.defDiv===0, '默认参数=100% 重放（sim≡real，偏离0）→ defDiv='+sim.defDiv);
-  ok(sim.b2Div>0 && sim.b2Deterministic, '反事实 B2 确定性偏离（'+sim.b2Div+' 处，两次一致）');
+  ok(!sim.hasBranch || (sim.bDiv>0 && sim.bDeterministic), '反事实分支('+meta.branchId+') 确定性偏离（'+sim.bDiv+' 处，两次一致）');
   ok(modes.m1==='sim' && modes.m2==='diff' && modes.m3==='real', 'real/sim/diff 三模式可切换 → '+modes.m1+'/'+modes.m2+'/'+modes.m3);
   ok(errAfterModes===0, '三模式绘制无异常');
   ok(terrainPx.non>0, '地形底图已绘制（中心非羊皮纸像素 '+terrainPx.non+'/'+terrainPx.tot+'）');
   ok(ctrlPx.painted>0, '控制层已着色（ctrlCv 全域控制色像素 '+ctrlPx.painted+'/'+ctrlPx.tot+'，bbox '+ctrlPx.bbox+'）');
-  ok(ui.hasBtn && ui.divlChildren>0, '点击 B2 分支后偏离列表更新 → 子节点 '+ui.divlChildren);
+  ok(ui.hasBtn && ui.divlChildren>0, '点击分支('+meta.branchId+')后偏离列表更新 → 子节点 '+ui.divlChildren);
   ok(ui.modeAfterClick==='sim', '点击反事实模式按钮 → SimLayer 模式切换为 sim');
-  ok(yearScrub.yrVal==='1630', '年份滑块拖动 → 年份标签更新为 '+yearScrub.yrVal);
+  ok(yearScrub.yrVal===String(yrScrub), '年份滑块拖动 → 年份标签更新为 '+yearScrub.yrVal);
   console.log(pass?'\n✓ 全部通过':'\n✗ 存在失败');
   process.exit(pass?0:1);
 }
@@ -174,7 +207,7 @@ async function launch(){
   await send('Page.enable'); await send('Runtime.enable');
   const page = {
     async goto(url){ await send('Page.navigate',{url}); await sleep(900); },
-    async evaluate(fn){ const expr='('+fn.toString()+')()'; const r=await send('Runtime.evaluate',{expression:expr,returnByValue:true,awaitPromise:true});
+    async evaluate(fn, ...args){ const expr='('+fn.toString()+')('+args.map(a=>JSON.stringify(a)).join(',')+')'; const r=await send('Runtime.evaluate',{expression:expr,returnByValue:true,awaitPromise:true});
       if(!r.result) throw new Error('evaluate 无 result: '+JSON.stringify(r).slice(0,300));
       if(r.result.exceptionDetails){ const ed=r.result.exceptionDetails;
         const desc=(ed.exception&&(ed.exception.description||ed.exception.value))||ed.text||'';
