@@ -209,7 +209,7 @@
     function loadTerrain() {
       tImg = buildTerrainImage();
       var img = new Image();
-      img.onload = function () { chinaImg = img; chinaReady = true; drawTerrain(); };
+      img.onload = function () { chinaImg = img; chinaReady = true; drawTerrain(); drawBase(); };
       img.onerror = function () { chinaImg = null; chinaReady = false; };
       img.src = CHINA_DEM.src;
     }
@@ -347,7 +347,7 @@
       gBase.innerHTML = ''; gWall.innerHTML = '';
       var src = BM[viewFit] || BM.liaodong;
       if (!src) return;
-      (src.land || []).forEach(function (f) { el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase); });
+      if (!chinaReady) (src.land || []).forEach(function (f) { el('path', { d: geomPath(f.g), fill: '#efe7d6', stroke: 'none' }, gBase); });
       var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5, 'vector-effect': 'non-scaling-stroke' }, gBase);
       (src.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
       (src.coastline || []).forEach(function (f) {
