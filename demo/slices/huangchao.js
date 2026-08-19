@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "person:huangchao2": "黄巢",
    "person:tangxizong": "唐僖宗"
   },
+  "dims": [
+   4,
+   6
+  ],
   "page": "county.html?scene=huangchao",
   "key": "huangchao",
   "scene_id": "huangchao",

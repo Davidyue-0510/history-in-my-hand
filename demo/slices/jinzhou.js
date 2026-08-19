@@ -23,6 +23,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "person:duoergun": "多尔衮"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=jinzhou",
   "key": "jinzhou",
   "scene_id": "jinzhou",

@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["gaixia"] = {
    "person:xiangyu": "项羽",
    "person:liubang": "刘邦"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "gaixia.html",
   "key": "gaixia",
   "scene_id": "gaixia",

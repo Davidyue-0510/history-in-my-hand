@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "person:xiaowen": "孝文帝",
    "person:fenghou": "冯太后"
   },
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=xiaowen",
   "key": "xiaowen",
   "scene_id": "xiaowen",

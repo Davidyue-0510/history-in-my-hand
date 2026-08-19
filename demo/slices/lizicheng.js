@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "person:lizicheng4": "李自成",
    "person:chongzhen2": "崇祯帝"
   },
+  "dims": [
+   3,
+   4,
+   6
+  ],
   "page": "county.html?scene=lizicheng",
   "key": "lizicheng",
   "scene_id": "lizicheng",

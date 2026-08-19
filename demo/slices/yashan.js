@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["yashan"] = {
    "person:zhangshijie": "张世杰",
    "person:luxinfu": "陆秀夫"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=yashan",
   "key": "yashan",
   "scene_id": "yashan",

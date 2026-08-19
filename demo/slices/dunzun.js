@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["dunzun"] = {
    "person:wudi": "汉武帝",
    "person:dongzhongshu": "董仲舒"
   },
+  "dims": [
+   5,
+   6
+  ],
   "page": "county.html?scene=dunzun",
   "key": "dunzun",
   "scene_id": "dunzun",

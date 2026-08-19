@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["locust"] = {
    "person:yaochong": "姚崇",
    "person:chongzhen": "崇祯帝"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=locust",
   "key": "locust",
   "scene_id": "locust",

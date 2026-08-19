@@ -16,6 +16,11 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
   "subject_names": {
    "person:zhangzhongjing": "张仲景"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=dong_han_yi",
   "key": "dong_han_yi",
   "scene_id": "dong_han_yi",

@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "person:yuyunwen": "虞允文",
    "person:wanyanliang": "完颜亮"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "caishiji.html",
   "key": "caishiji",
   "scene_id": "caishiji",

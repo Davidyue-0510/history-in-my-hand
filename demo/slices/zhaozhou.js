@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
   "subject_names": {
    "person:lichun": "李春"
   },
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=zhaozhou",
   "key": "zhaozhou",
   "scene_id": "zhaozhou",

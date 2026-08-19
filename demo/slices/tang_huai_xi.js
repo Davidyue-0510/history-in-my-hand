@@ -24,6 +24,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "person:wu_yuanji": "吴元济",
    "person:pei_du": "裴度"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=tang_huai_xi",
   "key": "tang_huai_xi",
   "scene_id": "tang_huai_xi"

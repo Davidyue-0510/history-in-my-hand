@@ -32,6 +32,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "person:tongzhongkui": "童仲揆"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=liaoyang",
   "key": "liaoyang",
   "scene_id": "liaoyang",

@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
   },
   "layer_title": "丝绸之路叠加",
   "timeline_title": "张骞凿空时间轴",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=zhangqian",
   "key": "zhangqian",
   "scene_id": "zhangqian",

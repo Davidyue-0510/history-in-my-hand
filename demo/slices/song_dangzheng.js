@@ -13,6 +13,10 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
   "terrain_grid": "liaodong",
   "lead": "元祐更化后，旧党内部再裂为三：程颐为首的「洛党」（洛阳理学）、苏轼兄弟为首的「蜀党」（眉山）、刘挚为首的「朔党」（河北）。一席之礼、一句之论皆可相攻。本切片把三营的 stakes 与籍贯（洛阳/眉山/东光—郓州）并列，叠到地形。",
   "parties_note": "洛党尚礼法、蜀党尚文采宽政、朔党居台谏攻讦；三方皆反新法，却互不相能。系统不裁决，只并列。",
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=song_dangzheng",
   "key": "song_dangzheng",
   "scene_id": "song_dangzheng",

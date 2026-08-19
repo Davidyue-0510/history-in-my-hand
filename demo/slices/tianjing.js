@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "person:zengguoquan": "曾国荃",
    "person:lixiucheng": "李秀成"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "tianjing.html",
   "key": "tianjing",
   "scene_id": "tianjing",

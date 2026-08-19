@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "person:wulin": "吴璘",
    "person:wuzhu": "兀术"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "heshangyuan.html",
   "key": "heshangyuan",
   "scene_id": "heshangyuan",

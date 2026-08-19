@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["talas"] = {
    "person:gaoxianzhi": "高仙芝",
    "person:abumuslim": "阿布·穆斯林"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "talas.html",
   "key": "talas",
   "scene_id": "talas",

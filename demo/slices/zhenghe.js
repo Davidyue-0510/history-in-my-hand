@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
   },
   "layer_title": "郑和航线叠加",
   "timeline_title": "郑和下西洋时间轴",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=zhenghe",
   "key": "zhenghe",
   "scene_id": "zhenghe",

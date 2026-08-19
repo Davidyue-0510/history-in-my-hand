@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "person:hanming": "汉明帝",
    "person:zhufalan": "竺法兰"
   },
+  "dims": [
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=fotao",
   "key": "fotao",
   "scene_id": "fotao",

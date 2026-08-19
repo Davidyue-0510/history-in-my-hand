@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["chengpu"] = {
    "person:ziyu": "子玉",
    "person:xianzhen": "先轸"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "chengpu.html",
   "key": "chengpu",
   "scene_id": "chengpu",

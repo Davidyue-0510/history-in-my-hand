@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
   "subject_names": {
    "person:yuwenkai": "宇文恺"
   },
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=sui_daxing",
   "key": "sui_daxing",
   "scene_id": "sui_daxing",

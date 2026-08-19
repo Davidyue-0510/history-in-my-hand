@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "person:wangzhen": "王振",
    "person:yexian": "也先"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "tumu.html",
   "key": "tumu",
   "scene_id": "tumu",

@@ -13,6 +13,10 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
   "terrain_grid": "liaodong",
   "lead": "中晚唐最持久的权力缠斗：牛僧孺、李宗闵为首的「牛党」（多进士出身）与李德裕为首的「李党」（山东士族门荫）更相进退，史称牛李党争。本切片把两党的利益 stakes、核心人物与史料偏见并列，并把他们的籍贯（灵台/华阴/赞皇/荥阳）叠到地形上——有人的地方就有利益纠葛。",
   "parties_note": "牛党多据科举公议、讥弹权幸；李党重门荫士族、强干弱枝。两方叙事互贬，系统不裁决，只并列。",
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=tang_dangzheng",
   "key": "tang_dangzheng",
   "scene_id": "tang_dangzheng",

@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["lvlin"] = {
    "person:wangmang2": "王莽",
    "person:liuxiu2": "刘秀"
   },
+  "dims": [
+   4,
+   6
+  ],
   "page": "county.html?scene=lvlin",
   "key": "lvlin",
   "scene_id": "lvlin",

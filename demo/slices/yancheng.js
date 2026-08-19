@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "person:wuzhu": "兀术",
    "person:zhangxian": "张宪"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "yancheng.html",
   "key": "yancheng",
   "scene_id": "yancheng",

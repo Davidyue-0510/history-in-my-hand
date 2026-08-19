@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["dingwu"] = {
    "person:zengguofan2": "曾国藩",
    "person:lihongzhang2": "李鸿章"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=dingwu",
   "key": "dingwu",
   "scene_id": "dingwu",

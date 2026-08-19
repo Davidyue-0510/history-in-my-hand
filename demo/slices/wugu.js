@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "person:hanwu2": "汉武帝",
    "person:litai": "卫太子据"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=wugu",
   "key": "wugu",
   "scene_id": "wugu",

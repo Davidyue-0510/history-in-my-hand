@@ -214,6 +214,23 @@
     .card-tags .chip-e{ border-color: #9aa7bd; color: #3E6E99; background: #EEF3F6; }
     .card-tags .chip-r{ border-color: #C2B59A; color: #6E6A5A; background: #F6F1E6; }
 
+    /* ── 六维覆盖标记（显式化「立体场景」6 维：①地理②技术③制度④社会⑤思想⑥事件）── */
+    .card-dims{ display: flex; gap: 4px; margin: 0 0 10px; }
+    .card-dims .dim{
+      width: 18px; height: 18px; border-radius: 5px; display: inline-flex;
+      align-items: center; justify-content: center;
+      font-family: var(--mono); font-size: 10px; line-height: 1; font-weight: 600;
+      border: 1px solid #E3DCC8; background: #FBF9F3; color: #C9C0AE;
+      cursor: default; transition: all .12s ease;
+    }
+    .card-dims .dim.on{ color: #FBF9F3; border-color: transparent; }
+    .card-dims .dim.d1.on{ background: #3E6E99; }   /* ① 物理与地理环境 */
+    .card-dims .dim.d2.on{ background: #3D8B5A; }   /* ② 技术与物质文明 */
+    .card-dims .dim.d3.on{ background: #8C6239; }   /* ③ 经济与制度运行 */
+    .card-dims .dim.d4.on{ background: #C0532B; }   /* ④ 社会结构与日常生活 */
+    .card-dims .dim.d5.on{ background: #7A5AA0; }   /* ⑤ 思想文化与观念世界 */
+    .card-dims .dim.d6.on{ background: #B23A48; }   /* ⑥ 重大事件与关键人物 */
+
     /* ── 分类色标：按 kind 给卡片左缘与标签上色，文明事件网格一眼可辨 ── */
     .card--battle{border-left:3px solid #B23A48;}      .card--battle .card-kind{color:#B23A48;}
     .card--disaster{border-left:3px solid #2E6FB0;}    .card--disaster .card-kind{color:#2E6FB0;}
@@ -395,6 +412,10 @@
     <div class="facet">
       <span class="facet-label">地域</span>
       <div class="facet-btns" id="fRegion"></div>
+    </div>
+    <div class="facet">
+      <span class="facet-label">维度</span>
+      <div class="facet-btns" id="fDim"></div>
     </div>
     <div class="facet-actions">
       <input id="hubSearch" type="search" placeholder="搜索切片名 / 副标题…" aria-label="搜索切片">

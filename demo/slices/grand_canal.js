@@ -19,6 +19,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
   },
   "layer_title": "大运河河道叠加",
   "timeline_title": "大运河修凿时间轴",
+  "dims": [
+   1,
+   2,
+   3
+  ],
   "page": "county.html?scene=grand_canal",
   "key": "grand_canal",
   "scene_id": "grand_canal",

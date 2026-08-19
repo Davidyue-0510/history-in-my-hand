@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "person:wangxun": "王寻",
    "person:wangyi": "王邑"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "kunyang.html",
   "key": "kunyang",
   "scene_id": "kunyang",

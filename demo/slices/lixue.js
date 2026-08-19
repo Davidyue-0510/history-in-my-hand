@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["lixue"] = {
    "person:zhuxi": "朱熹",
    "person:lujiuyuan": "陆九渊"
   },
+  "dims": [
+   5,
+   6
+  ],
   "page": "county.html?scene=lixue",
   "key": "lixue",
   "scene_id": "lixue",

@@ -30,6 +30,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "person:ma_shilong": "马世龙"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=juehua",
   "key": "juehua",
   "scene_id": "juehua",

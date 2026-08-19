@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["wuxu"] = {
    "person:guangxu": "光绪帝",
    "person:kang_youwei": "康有为"
   },
+  "dims": [
+   3,
+   5,
+   6
+  ],
   "page": "county.html?scene=wuxu",
   "key": "wuxu",
   "scene_id": "wuxu",

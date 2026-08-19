@@ -22,6 +22,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "person:nuerhaci": "努尔哈赤"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=fuzhou",
   "key": "fuzhou",
   "scene_id": "fuzhou",

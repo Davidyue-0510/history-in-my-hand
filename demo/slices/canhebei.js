@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "person:tuobagui": "拓跋珪",
    "person:murongbao": "慕容宝"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "canhebei.html",
   "key": "canhebei",
   "scene_id": "canhebei",

@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["humen"] = {
    "person:linzeixu": "林则徐",
    "person:yilie": "义律"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "humen.html",
   "key": "humen",
   "scene_id": "humen",

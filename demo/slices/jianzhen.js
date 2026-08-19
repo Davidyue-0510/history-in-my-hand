@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["jianzhen"] = {
   },
   "layer_title": "鉴真东渡路线叠加",
   "timeline_title": "鉴真东渡时间轴",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=jianzhen",
   "key": "jianzhen",
   "scene_id": "jianzhen",

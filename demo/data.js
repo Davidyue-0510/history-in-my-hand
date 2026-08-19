@@ -178,6 +178,38 @@ window.SANDBOX_DATA = {
    "note": "前138 起张骞「凿空」西域，丝绸之路由此贯通。"
   }
  ],
+ "dimensions": {
+  "1": {
+   "name": "物理与地理环境",
+   "short": "地理",
+   "note": "古地理 / 气候 / 资源 / 交通关隘"
+  },
+  "2": {
+   "name": "技术与物质文明",
+   "short": "技术",
+   "note": "生产 / 兵器 / 能源 / 工程 / 信息载体"
+  },
+  "3": {
+   "name": "经济与制度运行",
+   "short": "制度",
+   "note": "土地 / 赋税 / 货币 / 市场 / 官僚"
+  },
+  "4": {
+   "name": "社会结构与日常生活",
+   "short": "社会",
+   "note": "人口 / 阶层 / 日常 / 医疗 / 信仰"
+  },
+  "5": {
+   "name": "思想文化与观念世界",
+   "short": "思想",
+   "note": "意识形态 / 价值 / 知识 / 舆论 / 生死观"
+  },
+  "6": {
+   "name": "重大事件与关键人物",
+   "short": "事件",
+   "note": "考证 / 决策 / 连锁 / 偶然必然"
+  }
+ },
  "scene_order": [
   "sarhu",
   "kaiyuan",
@@ -18362,6 +18394,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 10,
     "place": 21,
@@ -18387,6 +18423,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 8,
     "place": 16,
@@ -18412,6 +18452,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 5,
     "place": 11,
@@ -18437,6 +18481,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 5,
@@ -18462,6 +18510,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 8,
     "place": 12,
@@ -18487,6 +18539,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 10,
     "place": 13,
@@ -18512,6 +18568,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 6,
@@ -18537,6 +18597,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 8,
@@ -18562,6 +18626,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 6,
@@ -18587,6 +18655,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 5,
@@ -18612,6 +18684,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 5,
@@ -18637,6 +18713,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 6,
     "place": 5,
@@ -18662,6 +18742,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 6,
     "place": 5,
@@ -18687,6 +18771,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 5,
     "place": 4,
@@ -18712,6 +18800,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 9,
@@ -18737,6 +18829,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 8,
@@ -18762,6 +18858,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 5,
@@ -18787,6 +18887,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 6,
     "place": 3,
@@ -18812,6 +18916,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 4,
@@ -18837,6 +18945,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 4,
@@ -18862,6 +18974,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 3,
@@ -18887,6 +19003,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 5,
     "place": 4,
@@ -18912,6 +19033,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_2",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 5,
     "place": 4,
@@ -18937,6 +19063,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_3",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 3,
@@ -18962,6 +19093,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_4",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -18987,6 +19123,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_5",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -19012,6 +19153,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_6",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -19037,6 +19183,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_7",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -19062,6 +19213,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_8",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -19087,6 +19243,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:novel_fandao_9",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 2,
@@ -19112,6 +19273,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "tang",
    "terrain_grid": "tang",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 9,
@@ -19137,6 +19302,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "korea",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 18,
@@ -19162,6 +19331,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "yellow_sea_1894",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 6,
@@ -19187,6 +19360,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:qin_mie_liu_guo",
    "terrain_grid": "qin_mie_liu_guo",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 12,
@@ -19212,6 +19389,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:three_campaigns",
    "terrain_grid": "three_campaigns",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 10,
@@ -19237,6 +19418,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:changping",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -19262,6 +19447,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:guiling",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19287,6 +19476,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:maling",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19312,6 +19505,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chengpu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19337,6 +19534,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:boju",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19362,6 +19563,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:julu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19387,6 +19592,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:gaixia",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19412,6 +19621,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:mobai",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19437,6 +19650,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:kunyang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19462,6 +19679,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:guandu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -19487,6 +19708,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chibi",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -19512,6 +19737,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yiling",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -19537,6 +19766,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:xiaoyaojin",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19562,6 +19795,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:feishui",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19587,6 +19824,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:canhebei",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -19612,6 +19853,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhongli",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19637,6 +19882,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:hulao",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19662,6 +19911,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:talas",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19687,6 +19940,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:suiyang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19712,6 +19969,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yancheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19737,6 +19998,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:heshangyuan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19762,6 +20027,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:caishiji",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19787,6 +20056,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:diaoyucheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19812,6 +20085,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yaoshan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19837,6 +20114,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:poyanghu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19862,6 +20143,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:tumu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19887,6 +20172,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:beijing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19912,6 +20201,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yaksa",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19937,6 +20230,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:tianjing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19962,6 +20259,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:humen",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -19987,6 +20288,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:huanghe",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 9,
@@ -20012,6 +20318,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:locust",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -20037,6 +20348,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:huaxian",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -20062,6 +20378,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:little_ice",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -20087,6 +20408,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:grand_canal",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3
+   ],
    "counts": {
     "src": 1,
     "place": 6,
@@ -20112,6 +20438,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:dujiangyan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20137,6 +20467,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:great_wall",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 5,
@@ -20162,6 +20496,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:qin_unify",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 7,
@@ -20187,6 +20525,12 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:ming_fall",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -20212,6 +20556,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:shangyang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -20237,6 +20586,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wanganshi",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 1,
@@ -20262,6 +20616,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:huangjin",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 6,
@@ -20287,6 +20646,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:lizicheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 4,
@@ -20312,6 +20676,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:xiaowen",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -20337,6 +20705,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wencheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20362,6 +20734,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:xuanwu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 3,
@@ -20387,6 +20763,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:jingnan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 9,
@@ -20412,6 +20792,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:dunzun",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 1,
@@ -20437,6 +20821,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:keju",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20462,6 +20850,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:four_inv",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20487,6 +20879,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:bencao",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20512,6 +20908,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:dong_han_yi",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20537,6 +20938,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:dingwu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20562,6 +20968,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:song_he_jue",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20587,6 +20998,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zijincheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20612,6 +21027,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:lingqu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20637,6 +21056,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhaozhou",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20662,6 +21085,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:sui_daxing",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    2
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -20687,6 +21114,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:mingmo_jihuang",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 29,
@@ -20712,6 +21144,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chongzhen_han",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 31,
@@ -20737,6 +21174,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chongzhen_huangzai",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 28,
@@ -20762,6 +21204,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:mingmo_shuyi",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 27,
@@ -20787,6 +21234,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:kaifeng_juekou",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "counts": {
     "src": 1,
     "place": 7,
@@ -20812,6 +21264,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wuwang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20837,6 +21293,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:sui_mie_chen",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20862,6 +21322,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chenqiao",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20887,6 +21351,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yashan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20912,6 +21380,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:xinhai",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -20937,6 +21409,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhangjuzheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -20962,6 +21438,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wuxu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -20987,6 +21468,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wangmang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -21012,6 +21497,9 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:liangshui",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21037,6 +21525,9 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:jiupin",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3
+   ],
    "counts": {
     "src": 3,
     "place": 2,
@@ -21062,6 +21553,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chensheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21087,6 +21582,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:huangchao",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 4,
@@ -21112,6 +21611,12 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:taiping",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21137,6 +21642,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:hongjin",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21162,6 +21671,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:lvlin",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 5,
@@ -21187,6 +21700,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhaowulian",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21212,6 +21729,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhaofen",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21237,6 +21758,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:qing_han",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21262,6 +21787,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:yuan_duo",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21287,6 +21816,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:chanyuan",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21312,6 +21845,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:beijiu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21337,6 +21874,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:jiuzi",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21362,6 +21903,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:wugu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21387,6 +21932,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:shaqiu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21412,6 +21961,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:baijia",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21437,6 +21990,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:fenshu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21462,6 +22019,11 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:fotao",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21487,6 +22049,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:lixue",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21512,6 +22078,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhangheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21537,6 +22107,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zuchongzhi",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21562,6 +22136,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:shenkuo",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21587,6 +22165,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:jiasixie",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    2,
+    5
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21612,6 +22194,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhangqian",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21637,6 +22223,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:zhenghe",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 3,
@@ -21662,6 +22252,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:xuanzang",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21687,6 +22281,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:jianzhen",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
    "counts": {
     "src": 1,
     "place": 2,
@@ -21712,6 +22310,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "ming_qing",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 3,
@@ -21737,6 +22339,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:tang_dangzheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 7,
@@ -21762,6 +22368,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:song_dangzheng",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 4,
     "place": 5,
@@ -21787,6 +22397,10 @@ window.SANDBOX_DATA = {
    "vocab_pack": "inline:donghan_danggu",
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
    "counts": {
     "src": 3,
     "place": 5,

@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["chanyuan"] = {
    "person:songzhen": "宋真宗",
    "person:liaosheng": "辽圣宗"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=chanyuan",
   "key": "chanyuan",
   "scene_id": "chanyuan",

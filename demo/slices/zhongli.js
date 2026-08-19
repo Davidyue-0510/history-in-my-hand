@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "person:weirui": "韦叡",
    "person:yuanying": "元英"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "zhongli.html",
   "key": "zhongli",
   "scene_id": "zhongli",

@@ -64,6 +64,13 @@
   var REGION_NOTE = {};
   (SD.regions || []).forEach(function (r) { REGION_NOTE[r.id] = r.note; });
 
+  // 六维目录（单一真值，来自 data/scenes.json 顶层 dimensions），用于「按维度浏览」分面与卡片覆盖标记
+  var DIMENSIONS = SD.dimensions || {};
+  var DIM_NAME = {}, DIM_SHORT = {};
+  Object.keys(DIMENSIONS).forEach(function (k) {
+    DIM_NAME[k] = DIMENSIONS[k].name; DIM_SHORT[k] = DIMENSIONS[k].short;
+  });
+
   /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════ */
   (function computeBounds() {
     var lons = [TG.lon0, TG.lon0 + (nx - 1) * TG.step];
@@ -152,7 +159,7 @@
 
   /* ═══════════ 分面筛选状态 ═══════════
    * 三个分面各自一个选中集合（空集合 = 不过滤）；面内 OR，面间 AND。 */
-  var sel = { type: [], era: [], region: [] };
+  var sel = { type: [], era: [], region: [], dim: [] };
   var query = '';
   function inSel(arr, v) { return arr.length === 0 || arr.indexOf(v) >= 0; }
   function matches(sk) {
@@ -161,6 +168,9 @@
     if (!inSel(sel.type, m.kind)) return false;
     if (!inSel(sel.era, sceneDynasty(sk))) return false;
     if (!inSel(sel.region, m.region)) return false;
+    // 「按维度浏览」：一个 world 可覆盖多个维度；选中任一维度即命中（面内 OR）
+    var ds = m.dims || [];
+    if (sel.dim.length && !ds.some(function (d) { return sel.dim.indexOf(d) >= 0; })) return false;
     if (query) {
       var q = query.toLowerCase();
       var hay = ((m.dossier_label || '') + ' ' + (m.title || '') + ' ' + (m.subtitle || '') + ' ' + sk).toLowerCase();
@@ -288,6 +298,18 @@
       + '</div>';
   }
 
+  // 六维覆盖标记：①地理②技术③制度④社会⑤思想⑥事件；点亮的 = 该 world 触及的维度
+  function dimChipsHtml(m) {
+    var ds = m.dims || [];
+    var html = '<div class="card-dims" title="六维覆盖（地理/技术/制度/社会/思想/事件）">';
+    Object.keys(DIMENSIONS).forEach(function (k) {
+      var on = ds.indexOf(parseInt(k, 10)) >= 0;
+      html += '<span class="dim d' + k + (on ? ' on' : '') + '"'
+        + ' title="' + (DIM_NAME[k] || k) + '：' + ((DIMENSIONS[k] && DIMENSIONS[k].note) || '') + '">' + k + '</span>';
+    });
+    return html + '</div>';
+  }
+
   function cardHtml(sk) {
     var sc = scenes[sk]; if (!sc) return '';
     var m = sc.meta || {};
@@ -317,6 +339,7 @@
       + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
       + '<div class="card-sub">' + (m.subtitle || '') + '</div>'
       + tagsHtml(sk)
+      + dimChipsHtml(m)
       + '<div class="card-stats">'
       +   '<div class="card-stat"><span>史料</span><b>' + srcN + '</b></div>'
       +   '<div class="card-stat"><span>地名 / 人物</span><b>' + placesN + ' / ' + personsN + '</b></div>'
@@ -358,7 +381,7 @@
     if (!el) return;
     var total = order.length;
     var txt = '<span><b>' + n + '</b>/' + total + ' 个切片匹配</span>';
-    var active = sel.type.length + sel.era.length + sel.region.length + (query ? 1 : 0);
+    var active = sel.type.length + sel.era.length + sel.region.length + sel.dim.length + (query ? 1 : 0);
     if (active) txt += '<span><b>' + active + '</b> 个筛选条件生效</span>';
     el.innerHTML = txt;
   }
@@ -398,13 +421,20 @@
     buildFacet('fEra', eras, 'era', null);
     buildFacet('fRegion', regions, 'region', function (v) { return REGION_NAME[v] || v; });
 
+    // 「按维度浏览」分面：维度顺序固定为 1→6
+    var dimKeys = Object.keys(DIMENSIONS).map(function (k) { return parseInt(k, 10); })
+      .sort(function (a, b) { return a - b; });
+    buildFacet('fDim', dimKeys, 'dim', function (v) {
+      var s = String(v); return (DIM_SHORT[s] || DIM_NAME[s] || s);
+    });
+
     var search = document.getElementById('hubSearch');
     if (search) search.addEventListener('input', function () {
       query = search.value.trim(); renderHub(); draw();
     });
     var clear = document.getElementById('hubClear');
     if (clear) clear.addEventListener('click', function () {
-      sel.type = []; sel.era = []; sel.region = []; query = '';
+      sel.type = []; sel.era = []; sel.region = []; sel.dim = []; query = '';
       if (search) search.value = '';
       Array.prototype.forEach.call(document.querySelectorAll('.facet-btn.on'), function (b) { b.classList.remove('on'); });
       renderHub(); draw();
@@ -413,9 +443,4 @@
 
   initFacets();
   renderHub();
-  // 入口页筛选接口（保留，供其它页面或控制台调用）
-  window.HUB = {
-    reset: function () { sel.type = []; sel.era = []; sel.region = []; query = ''; renderHub(); draw(); },
-    visible: function () { return visibleOrder(); }
-  };
 })();

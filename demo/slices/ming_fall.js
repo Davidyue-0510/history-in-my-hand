@@ -18,6 +18,12 @@ window.SANDBOX_SLICES["ming_fall"] = {
    "person:lizicheng3": "李自成",
    "person:wu3gui": "吴三桂"
   },
+  "dims": [
+   1,
+   3,
+   4,
+   6
+  ],
   "page": "county.html?scene=ming_fall",
   "key": "ming_fall",
   "scene_id": "ming_fall",

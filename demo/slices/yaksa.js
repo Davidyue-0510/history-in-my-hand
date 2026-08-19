@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["yaksa"] = {
    "person:pengchun": "彭春",
    "person:tuoer": "托尔布津"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "yaksa.html",
   "key": "yaksa",
   "scene_id": "yaksa",

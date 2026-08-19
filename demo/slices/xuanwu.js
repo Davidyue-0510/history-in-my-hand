@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "person:jiancheng": "李建成",
    "person:gaozu": "唐高祖"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=xuanwu",
   "key": "xuanwu",
   "scene_id": "xuanwu",

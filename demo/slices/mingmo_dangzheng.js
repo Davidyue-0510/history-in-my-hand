@@ -40,6 +40,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "person:gu_bingqian": "顾秉谦",
    "person:huo_weihua": "霍维华"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=mingmo_dangzheng",
   "key": "mingmo_dangzheng",
   "scene_id": "mingmo_dangzheng",

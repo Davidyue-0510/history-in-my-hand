@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["shenkuo"] = {
   "subject_names": {
    "person:shenkuo2": "沈括"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=shenkuo",
   "key": "shenkuo",
   "scene_id": "shenkuo",

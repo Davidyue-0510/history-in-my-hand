@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["qin_unify"] = {
    "person:yingzheng": "嬴政",
    "person:wangjian": "王翦"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=qin_unify",
   "key": "qin_unify",
   "scene_id": "qin_unify",

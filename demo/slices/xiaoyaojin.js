@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "person:sunquan": "孙权",
    "person:liudian": "李典"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "xiaoyaojin.html",
   "key": "xiaoyaojin",
   "scene_id": "xiaoyaojin",

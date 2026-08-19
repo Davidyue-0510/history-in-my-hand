@@ -25,6 +25,11 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "person:yu_jinbao": "于金宝",
    "person:tang_aili": "唐爱丽"
   },
+  "dims": [
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=novel_fandao",
   "key": "novel_fandao",
   "scene_id": "novel_fandao",

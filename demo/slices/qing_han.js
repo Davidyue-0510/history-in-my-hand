@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "person:shunzhi": "顺治帝",
    "person:kangxi2": "康熙帝"
   },
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=qing_han",
   "key": "qing_han",
   "scene_id": "qing_han",

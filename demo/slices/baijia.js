@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["baijia"] = {
    "person:mengzi": "孟子",
    "person:zhuangzi": "庄子"
   },
+  "dims": [
+   5,
+   6
+  ],
   "page": "county.html?scene=baijia",
   "key": "baijia",
   "scene_id": "baijia",

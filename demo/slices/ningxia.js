@@ -33,6 +33,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "person:xiao_ruxun": "萧如薰",
    "person:shi_xing": "石星"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "ningxia.html",
   "key": "ningxia",
   "scene_id": "ningxia",

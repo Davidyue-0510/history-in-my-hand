@@ -14,6 +14,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
   "terrain_grid": "three_campaigns",
   "lead": "三大战役是国共内战的决定性会战——辽沈(52天)、淮海(66天)、平津(64天)。解放军以伤亡24万代价歼灭/改编国军154万，奠定全国胜利。三方视角：共方战史、国方战史、第三方观察。",
   "parties_note": "共方(解放军)、国方(国军)。source=Wikipedia 二手综述，桶='二手综述'。",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=three_campaigns",
   "key": "three_campaigns",
   "scene_id": "three_campaigns"

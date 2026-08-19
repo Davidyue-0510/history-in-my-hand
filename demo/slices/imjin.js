@@ -29,6 +29,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "person:li_rusong": "李如松",
    "person:quan_lyu": "权栗"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=imjin",
   "key": "imjin",
   "scene_id": "imjin",

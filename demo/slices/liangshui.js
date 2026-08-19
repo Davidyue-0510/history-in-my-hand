@@ -16,6 +16,9 @@ window.SANDBOX_SLICES["liangshui"] = {
   "subject_names": {
    "person:yangyan": "杨炎"
   },
+  "dims": [
+   3
+  ],
   "page": "county.html?scene=liangshui",
   "key": "liangshui",
   "scene_id": "liangshui",

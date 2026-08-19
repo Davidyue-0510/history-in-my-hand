@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "person:zhao_kuangyin": "赵匡胤",
    "person:chai_rong": "周世宗"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=chenqiao",
   "key": "chenqiao",
   "scene_id": "chenqiao",

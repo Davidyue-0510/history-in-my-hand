@@ -17,6 +17,12 @@ window.SANDBOX_SLICES["taiping"] = {
    "person:hongxiuquan": "洪秀全",
    "person:xiangrong": "向荣"
   },
+  "dims": [
+   3,
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=taiping",
   "key": "taiping",
   "scene_id": "taiping",

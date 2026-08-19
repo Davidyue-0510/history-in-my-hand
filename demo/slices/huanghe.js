@@ -19,6 +19,11 @@ window.SANDBOX_SLICES["huanghe"] = {
   },
   "layer_title": "黄河河道叠加",
   "timeline_title": "黄河改道时间轴",
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=huanghe",
   "key": "huanghe",
   "scene_id": "huanghe",

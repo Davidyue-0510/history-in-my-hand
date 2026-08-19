@@ -32,6 +32,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "person:jin_guan": "金冠"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "juehua1626.html",
   "key": "juehua1626",
   "scene_id": "juehua1626",

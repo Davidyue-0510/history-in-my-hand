@@ -17,6 +17,9 @@ window.SANDBOX_SLICES["jiupin"] = {
    "person:chenqun": "陈群",
    "person:caocao": "曹操"
   },
+  "dims": [
+   3
+  ],
   "page": "county.html?scene=jiupin",
   "key": "jiupin",
   "scene_id": "jiupin",

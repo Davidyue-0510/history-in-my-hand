@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "person:zhu_di": "明成祖",
    "person:kuai_xiang": "蒯祥"
   },
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=zijincheng",
   "key": "zijincheng",
   "scene_id": "zijincheng",

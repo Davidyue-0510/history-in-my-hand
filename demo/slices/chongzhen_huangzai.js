@@ -16,6 +16,11 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
   "subject_names": {
    "person:zhangdeer2": "张德二"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=chongzhen_huangzai",
   "key": "chongzhen_huangzai",
   "scene_id": "chongzhen_huangzai",

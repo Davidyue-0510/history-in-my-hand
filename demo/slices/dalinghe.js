@@ -38,6 +38,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "person:liang_tingdong": "梁廷栋",
    "person:fang_jina": "方吉纳"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=dalinghe",
   "key": "dalinghe",
   "scene_id": "dalinghe",

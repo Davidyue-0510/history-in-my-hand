@@ -13,6 +13,10 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
   "terrain_grid": "liaodong",
   "lead": "桓灵之际，李膺、陈蕃等太学清流抨击宦官专权，反被诬结党诽讪朝政，遭禁锢终身——史称党锢之祸。本切片把「清流士大夫」（颍川/汝南/太原/河东士族郡望）与「宦官集团」（无乡党、依附皇权）建模为两大利益集团，并把籍贯叠到地形。宦官无地方根基，正是「皇权 vs 士族」的结构性代理。",
   "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。",
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=donghan_danggu",
   "key": "donghan_danggu",
   "scene_id": "donghan_danggu",

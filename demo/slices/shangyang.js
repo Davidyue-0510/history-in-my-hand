@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["shangyang"] = {
    "person:shangyang": "商鞅",
    "person:xiaogong": "秦孝公"
   },
+  "dims": [
+   3,
+   5,
+   6
+  ],
   "page": "county.html?scene=shangyang",
   "key": "shangyang",
   "scene_id": "shangyang",

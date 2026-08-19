@@ -23,6 +23,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "person:nuerhaci": "努尔哈赤"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=gaizhou",
   "key": "gaizhou",
   "scene_id": "gaizhou",

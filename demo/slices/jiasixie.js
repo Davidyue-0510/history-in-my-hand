@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["jiasixie"] = {
   "subject_names": {
    "person:jiasixie2": "贾思勰"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=jiasixie",
   "key": "jiasixie",
   "scene_id": "jiasixie",

@@ -14,6 +14,11 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
   "lead": "崇祯十四年（1641）起鼠疫自山西蔓延，崇祯十六年（1643）京师大疫，「死亡枕藉、十室九空」。至崇祯十七年（1644）李自成入京时，北京已为大疫笼罩，瘟疫与兵祸、饥荒相叠加，加速了明王朝的崩塌。",
   "parties_note": "鼠疫路径与规模据明末清初笔记（《烈皇小识》等）及当代医疗史研究综合，确切毒株与死亡数字不可确考。",
   "subject_names": {},
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=mingmo_shuyi",
   "key": "mingmo_shuyi",
   "scene_id": "mingmo_shuyi",

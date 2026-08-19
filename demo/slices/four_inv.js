@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "person:cailun": "蔡伦",
    "person:bisheng": "毕昇"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=four_inv",
   "key": "four_inv",
   "scene_id": "four_inv",

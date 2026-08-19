@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "person:caocao": "曹操",
    "person:zhugeliang": "诸葛亮"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "chibi.html",
   "key": "chibi",
   "scene_id": "chibi",

@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "person:yuanshao": "袁绍",
    "person:xunyou": "荀攸"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "guandu.html",
   "key": "guandu",
   "scene_id": "guandu",

@@ -25,6 +25,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "person:li_yongfang": "李永芳"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=fushun",
   "key": "fushun",
   "scene_id": "fushun",

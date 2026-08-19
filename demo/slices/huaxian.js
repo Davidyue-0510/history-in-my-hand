@@ -16,6 +16,11 @@ window.SANDBOX_SLICES["huaxian"] = {
   "subject_names": {
    "person:jiajing": "嘉靖帝"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=huaxian",
   "key": "huaxian",
   "scene_id": "huaxian",

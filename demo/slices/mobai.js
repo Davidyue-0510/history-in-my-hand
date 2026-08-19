@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "person:weiqing": "卫青",
    "person:yizhixie": "伊稚斜单于"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "mobai.html",
   "key": "mobai",
   "scene_id": "mobai",

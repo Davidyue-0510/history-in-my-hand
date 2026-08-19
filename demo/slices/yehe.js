@@ -25,6 +25,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "person:nuerhaci": "努尔哈赤"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=yehe",
   "key": "yehe",
   "scene_id": "yehe",

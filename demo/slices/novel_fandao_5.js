@@ -13,6 +13,11 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
   "back": "枢纽",
   "fictional": true,
   "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。",
+  "dims": [
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=novel_fandao_5",
   "key": "novel_fandao_5",
   "scene_id": "novel_fandao_5",

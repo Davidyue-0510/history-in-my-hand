@@ -14,6 +14,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
   "terrain_grid": "yellow_sea_1894",
   "lead": "1894年甲午战争决定性海战：清北洋水师 vs 日本联合舰队。双方主力尽出，日方凭借速射炮与苦味酸弹药取胜，清军丧失黄海制海权。多方数字分歧（清日报销差异大）是冲突对素材。",
   "parties_note": "清方（北洋水师奏报+清史稿）、日本方（联合舰队战报）、西方观察（英舰队司令佛莱曼特）——三方立场。source=Wikipedia 二手综述，桶='二手综述'。",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=yellow_sea_1894",
   "key": "yellow_sea_1894",
   "scene_id": "yellow_sea_1894",

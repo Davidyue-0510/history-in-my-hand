@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
    "person:lizicheng": "李自成",
    "person:gaoyingxiang": "高迎祥"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=mingmo_jihuang",
   "key": "mingmo_jihuang",
   "scene_id": "mingmo_jihuang",

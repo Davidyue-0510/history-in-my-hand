@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["huangjin"] = {
    "person:zhangjiao": "张角",
    "person:huangfusong": "皇甫嵩"
   },
+  "dims": [
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=huangjin",
   "key": "huangjin",
   "scene_id": "huangjin",

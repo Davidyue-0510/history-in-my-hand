@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["changping"] = {
    "person:zhao_kuo": "赵括",
    "person:lianpo": "廉颇"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "changping.html",
   "key": "changping",
   "scene_id": "changping",

@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["little_ice"] = {
    "person:chongzhen": "崇祯帝",
    "person:lizicheng2": "李自成"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=little_ice",
   "key": "little_ice",
   "scene_id": "little_ice",

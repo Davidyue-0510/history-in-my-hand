@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["lingqu"] = {
   },
   "layer_title": "灵渠水道叠加",
   "timeline_title": "灵渠开凿时间轴",
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=lingqu",
   "key": "lingqu",
   "scene_id": "lingqu",

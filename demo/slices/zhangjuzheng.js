@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "person:zhangjuzheng2": "张居正",
    "person:wanli": "明神宗"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=zhangjuzheng",
   "key": "zhangjuzheng",
   "scene_id": "zhangjuzheng",

@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["wencheng"] = {
   },
   "layer_title": "唐蕃通道叠加",
   "timeline_title": "唐蕃和亲时间轴",
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=wencheng",
   "key": "wencheng",
   "scene_id": "wencheng",

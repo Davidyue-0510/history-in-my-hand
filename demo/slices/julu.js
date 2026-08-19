@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["julu"] = {
    "person:zhanghan": "章邯",
    "person:wangli": "王离"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "julu.html",
   "key": "julu",
   "scene_id": "julu",

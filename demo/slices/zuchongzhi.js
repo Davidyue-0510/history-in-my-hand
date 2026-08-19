@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
   "subject_names": {
    "person:zuchongzhi2": "祖冲之"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=zuchongzhi",
   "key": "zuchongzhi",
   "scene_id": "zuchongzhi",

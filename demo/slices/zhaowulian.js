@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["zhaowulian"] = {
   "subject_names": {
    "person:zhaowuling": "赵武灵王"
   },
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=zhaowulian",
   "key": "zhaowulian",
   "scene_id": "zhaowulian",

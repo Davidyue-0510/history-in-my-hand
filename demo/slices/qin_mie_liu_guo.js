@@ -14,6 +14,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
   "terrain_grid": "qin_mie_liu_guo",
   "lead": "秦灭六国的决定性战役。王翦伐赵，以反间计杀李牧，赵都邯郸陷落。",
   "parties_note": "秦方vs赵方。史料来源以秦记为主（二手综述）。",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=qin_mie_liu_guo",
   "key": "qin_mie_liu_guo",
   "scene_id": "qin_mie_liu_guo"

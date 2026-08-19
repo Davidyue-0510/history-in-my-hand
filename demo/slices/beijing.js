@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "person:yexian": "也先",
    "person:jingtai": "景泰帝"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "beijing.html",
   "key": "beijing",
   "scene_id": "beijing",

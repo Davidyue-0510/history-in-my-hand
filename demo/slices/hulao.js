@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["hulao"] = {
    "person:wangshichong": "王世充",
    "person:doujiande": "窦建德"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "hulao.html",
   "key": "hulao",
   "scene_id": "hulao",

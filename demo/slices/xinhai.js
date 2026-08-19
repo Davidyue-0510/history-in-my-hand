@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "person:sun_yat": "孙中山",
    "person:yuan_shikai": "袁世凯"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=xinhai",
   "key": "xinhai",
   "scene_id": "xinhai",

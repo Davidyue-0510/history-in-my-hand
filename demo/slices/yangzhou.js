@@ -27,6 +27,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "person:hongguang": "弘光帝",
    "person:yangzhou_jiri": "王秀楚"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "yangzhou.html",
   "key": "yangzhou",
   "scene_id": "yangzhou",

@@ -336,7 +336,11 @@
         "engagements"
       ],
       "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "kaiyuan": {
       "kind": "county",
@@ -368,7 +372,11 @@
         "event:yehe": "叶赫",
         "doc:kaiyuan_tushuo": "开原图说"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "tieling": {
       "kind": "county",
@@ -396,7 +404,11 @@
         "person:yanghao": "杨镐",
         "person:xiongtingbing": "熊廷弼"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "yehe": {
       "kind": "county",
@@ -424,7 +436,11 @@
         "person:buyanggu": "布扬古",
         "person:nuerhaci": "努尔哈赤"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "liaoyang": {
       "kind": "county",
@@ -459,7 +475,11 @@
         "person:chenjn": "陈策",
         "person:tongzhongkui": "童仲揆"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "shenyang": {
       "kind": "county",
@@ -495,7 +515,11 @@
         "person:amin": "阿敏",
         "person:goseong": "姜弘立"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "fushun": {
       "kind": "county",
@@ -523,7 +547,11 @@
         "person:nuerhaci": "努尔哈赤",
         "person:li_yongfang": "李永芳"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "haizhou": {
       "kind": "county",
@@ -552,7 +580,11 @@
         "person:nuerhaci": "努尔哈赤",
         "person:amin": "阿敏"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "gaizhou": {
       "kind": "county",
@@ -578,7 +610,11 @@
         "person:huang_zhilong": "黄之骥",
         "person:nuerhaci": "努尔哈赤"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "fuzhou": {
       "kind": "county",
@@ -603,7 +639,11 @@
         "person:amin": "阿敏",
         "person:nuerhaci": "努尔哈赤"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "jinzhouwei": {
       "kind": "county",
@@ -629,7 +669,11 @@
         "person:amin": "阿敏",
         "person:nuerhaci": "努尔哈赤"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "guangning": {
       "kind": "county",
@@ -656,7 +700,11 @@
         "person:sun_degong": "孙得功",
         "person:nuerhaci": "努尔哈赤"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "jinzhou": {
       "kind": "county",
@@ -682,7 +730,11 @@
         "person:huangtaiji": "皇太极",
         "person:duoergun": "多尔衮"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "ningyuan": {
       "kind": "county",
@@ -712,7 +764,11 @@
         "person:wu_sangui": "吴三桂",
         "person:zhao_shuaijiao": "赵率教"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "novel_fandao": {
       "kind": "fiction",
@@ -741,7 +797,12 @@
         "person:yu_guoqiang": "于国强",
         "person:yu_jinbao": "于金宝",
         "person:tang_aili": "唐爱丽"
-      }
+      },
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_2": {
       "kind": "fiction",
@@ -769,7 +830,12 @@
         "person:he_yunzhang": "贺云章",
         "person:he_lingchen": "贺凌宸",
         "person:shen_lan": "沈岚"
-      }
+      },
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_3": {
       "kind": "fiction",
@@ -786,7 +852,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。"
+      "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_4": {
       "kind": "fiction",
@@ -803,7 +874,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。"
+      "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_5": {
       "kind": "fiction",
@@ -820,7 +896,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。"
+      "lead": "不负责的穿书女：一个追梦母亲与留守女儿——同一断言内核服务'穿书'设定，证明虚构子类（穿书/系统/快穿）皆可作输入。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_6": {
       "kind": "fiction",
@@ -837,7 +918,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。"
+      "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_7": {
       "kind": "fiction",
@@ -854,7 +940,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。"
+      "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_8": {
       "kind": "fiction",
@@ -871,7 +962,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。"
+      "lead": "不听话的喵儿子：一只小家子气的猫儿子——同一断言内核服务'寓言'子类，证明动物视角世界也可作输入。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "novel_fandao_9": {
       "kind": "fiction",
@@ -888,7 +984,12 @@
         "timeline"
       ],
       "fictional": true,
-      "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。"
+      "lead": "胎穿女和魂穿女：一个读点书成禽兽的儿子——同一断言内核服务'穿/胎'设定，全系列九个副本至此齐备。",
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "tang_huai_xi": {
       "kind": "county",
@@ -915,7 +1016,11 @@
         "person:li_su": "李愬",
         "person:wu_yuanji": "吴元济",
         "person:pei_du": "裴度"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "imjin": {
       "kind": "county",
@@ -947,7 +1052,11 @@
         "person:xiuji": "丰臣秀吉",
         "person:li_rusong": "李如松",
         "person:quan_lyu": "权栗"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yellow_sea_1894": {
       "kind": "county",
@@ -964,7 +1073,11 @@
         "edges"
       ],
       "lead": "1894年甲午战争决定性海战：清北洋水师 vs 日本联合舰队。双方主力尽出，日方凭借速射炮与苦味酸弹药取胜，清军丧失黄海制海权。多方数字分歧（清日报销差异大）是冲突对素材。",
-      "parties_note": "清方（北洋水师奏报+清史稿）、日本方（联合舰队战报）、西方观察（英舰队司令佛莱曼特）——三方立场。source=Wikipedia 二手综述，桶='二手综述'。"
+      "parties_note": "清方（北洋水师奏报+清史稿）、日本方（联合舰队战报）、西方观察（英舰队司令佛莱曼特）——三方立场。source=Wikipedia 二手综述，桶='二手综述'。",
+      "dims": [
+        1,
+        6
+      ]
     },
     "qin_mie_liu_guo": {
       "kind": "county",
@@ -981,7 +1094,11 @@
         "edges"
       ],
       "lead": "秦灭六国的决定性战役。王翦伐赵，以反间计杀李牧，赵都邯郸陷落。",
-      "parties_note": "秦方vs赵方。史料来源以秦记为主（二手综述）。"
+      "parties_note": "秦方vs赵方。史料来源以秦记为主（二手综述）。",
+      "dims": [
+        1,
+        6
+      ]
     },
     "three_campaigns": {
       "kind": "county",
@@ -998,7 +1115,11 @@
         "edges"
       ],
       "lead": "三大战役是国共内战的决定性会战——辽沈(52天)、淮海(66天)、平津(64天)。解放军以伤亡24万代价歼灭/改编国军154万，奠定全国胜利。三方视角：共方战史、国方战史、第三方观察。",
-      "parties_note": "共方(解放军)、国方(国军)。source=Wikipedia 二手综述，桶='二手综述'。"
+      "parties_note": "共方(解放军)、国方(国军)。source=Wikipedia 二手综述，桶='二手综述'。",
+      "dims": [
+        1,
+        6
+      ]
     },
     "changping": {
       "kind": "battle",
@@ -1021,7 +1142,11 @@
         "person:baiqi": "白起",
         "person:zhao_kuo": "赵括",
         "person:lianpo": "廉颇"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "guiling": {
       "kind": "battle",
@@ -1044,7 +1169,11 @@
         "person:sunbin": "孙膑",
         "person:pangjuan": "庞涓",
         "person:tianji": "田忌"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "maling": {
       "kind": "battle",
@@ -1067,7 +1196,11 @@
         "person:sunbin": "孙膑",
         "person:pangjuan": "庞涓",
         "person:tianji": "田忌"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "chengpu": {
       "kind": "battle",
@@ -1090,7 +1223,11 @@
         "person:jinwen": "晋文公",
         "person:ziyu": "子玉",
         "person:xianzhen": "先轸"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "boju": {
       "kind": "battle",
@@ -1113,7 +1250,11 @@
         "person:sunwu": "孙武",
         "person:helu": "阖闾",
         "person:nangwa": "囊瓦"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "julu": {
       "kind": "battle",
@@ -1136,7 +1277,11 @@
         "person:xiangyu": "项羽",
         "person:zhanghan": "章邯",
         "person:wangli": "王离"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "gaixia": {
       "kind": "battle",
@@ -1159,7 +1304,11 @@
         "person:hanxin": "韩信",
         "person:xiangyu": "项羽",
         "person:liubang": "刘邦"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "mobai": {
       "kind": "battle",
@@ -1182,7 +1331,11 @@
         "person:huoqb": "霍去病",
         "person:weiqing": "卫青",
         "person:yizhixie": "伊稚斜单于"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "kunyang": {
       "kind": "battle",
@@ -1205,7 +1358,11 @@
         "person:liuxiu": "刘秀",
         "person:wangxun": "王寻",
         "person:wangyi": "王邑"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "guandu": {
       "kind": "battle",
@@ -1228,7 +1385,11 @@
         "person:caocao": "曹操",
         "person:yuanshao": "袁绍",
         "person:xunyou": "荀攸"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "chibi": {
       "kind": "battle",
@@ -1252,7 +1413,11 @@
         "person:huanggai": "黄盖",
         "person:caocao": "曹操",
         "person:zhugeliang": "诸葛亮"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yiling": {
       "kind": "battle",
@@ -1275,7 +1440,11 @@
         "person:luxun": "陆逊",
         "person:liubei": "刘备",
         "person:zhugeliang": "诸葛亮"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "xiaoyaojin": {
       "kind": "battle",
@@ -1298,7 +1467,11 @@
         "person:zhangliao": "张辽",
         "person:sunquan": "孙权",
         "person:liudian": "李典"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "feishui": {
       "kind": "battle",
@@ -1321,7 +1494,11 @@
         "person:xiexuan": "谢玄",
         "person:fuijian": "苻坚",
         "person:xiean": "谢安"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "canhebei": {
       "kind": "battle",
@@ -1343,7 +1520,11 @@
       "subject_names": {
         "person:tuobagui": "拓跋珪",
         "person:murongbao": "慕容宝"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "zhongli": {
       "kind": "battle",
@@ -1365,7 +1546,11 @@
       "subject_names": {
         "person:weirui": "韦叡",
         "person:yuanying": "元英"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "hulao": {
       "kind": "battle",
@@ -1388,7 +1573,11 @@
         "person:limin": "李世民",
         "person:wangshichong": "王世充",
         "person:doujiande": "窦建德"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "talas": {
       "kind": "battle",
@@ -1410,7 +1599,11 @@
       "subject_names": {
         "person:gaoxianzhi": "高仙芝",
         "person:abumuslim": "阿布·穆斯林"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "suiyang": {
       "kind": "battle",
@@ -1433,7 +1626,11 @@
         "person:zhangxun": "张巡",
         "person:xuyuan": "许远",
         "person:yinziqi": "尹子奇"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yancheng": {
       "kind": "battle",
@@ -1456,7 +1653,11 @@
         "person:yuefei": "岳飞",
         "person:wuzhu": "兀术",
         "person:zhangxian": "张宪"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "heshangyuan": {
       "kind": "battle",
@@ -1479,7 +1680,11 @@
         "person:wuju": "吴玠",
         "person:wulin": "吴璘",
         "person:wuzhu": "兀术"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "caishiji": {
       "kind": "battle",
@@ -1501,7 +1706,11 @@
       "subject_names": {
         "person:yuyunwen": "虞允文",
         "person:wanyanliang": "完颜亮"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "diaoyucheng": {
       "kind": "battle",
@@ -1524,7 +1733,11 @@
         "person:wangjian": "王坚",
         "person:zhangjue": "张珏",
         "person:mengge": "蒙哥"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yaoshan": {
       "kind": "battle",
@@ -1547,7 +1760,11 @@
         "person:zhangshijie": "张世杰",
         "person:luxiufu": "陆秀夫",
         "person:zhanghongfan": "张弘范"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "poyanghu": {
       "kind": "battle",
@@ -1569,7 +1786,11 @@
       "subject_names": {
         "person:zhuyuanzhang": "朱元璋",
         "person:chenyouliang": "陈友谅"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "tumu": {
       "kind": "battle",
@@ -1592,7 +1813,11 @@
         "person:zhengtong": "明英宗",
         "person:wangzhen": "王振",
         "person:yexian": "也先"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "beijing": {
       "kind": "battle",
@@ -1615,7 +1840,11 @@
         "person:yuqian": "于谦",
         "person:yexian": "也先",
         "person:jingtai": "景泰帝"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yaksa": {
       "kind": "battle",
@@ -1638,7 +1867,11 @@
         "person:sabulv": "萨布素",
         "person:pengchun": "彭春",
         "person:tuoer": "托尔布津"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "tianjing": {
       "kind": "battle",
@@ -1661,7 +1894,11 @@
         "person:zengguofan": "曾国藩",
         "person:zengguoquan": "曾国荃",
         "person:lixiucheng": "李秀成"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "humen": {
       "kind": "battle",
@@ -1684,7 +1921,11 @@
         "person:guantianpei": "关天培",
         "person:linzeixu": "林则徐",
         "person:yilie": "义律"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "huanghe": {
       "kind": "disaster",
@@ -1707,7 +1948,12 @@
         "person:duchong": "杜充"
       },
       "layer_title": "黄河河道叠加",
-      "timeline_title": "黄河改道时间轴"
+      "timeline_title": "黄河改道时间轴",
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "locust": {
       "kind": "disaster",
@@ -1727,7 +1973,12 @@
       "subject_names": {
         "person:yaochong": "姚崇",
         "person:chongzhen": "崇祯帝"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "huaxian": {
       "kind": "disaster",
@@ -1746,7 +1997,12 @@
       "parties_note": "死亡数字据《明史·五行志》与方志，为当时奏报折中，实际恐更高。",
       "subject_names": {
         "person:jiajing": "嘉靖帝"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "little_ice": {
       "kind": "disaster",
@@ -1766,7 +2022,12 @@
       "subject_names": {
         "person:chongzhen": "崇祯帝",
         "person:lizicheng2": "李自成"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "grand_canal": {
       "kind": "engineering",
@@ -1789,7 +2050,12 @@
         "person:guoshoujing": "郭守敬"
       },
       "layer_title": "大运河河道叠加",
-      "timeline_title": "大运河修凿时间轴"
+      "timeline_title": "大运河修凿时间轴",
+      "dims": [
+        1,
+        2,
+        3
+      ]
     },
     "dujiangyan": {
       "kind": "engineering",
@@ -1809,7 +2075,11 @@
       "subject_names": {
         "person:libing": "李冰",
         "person:wengong": "文翁"
-      }
+      },
+      "dims": [
+        1,
+        2
+      ]
     },
     "great_wall": {
       "kind": "engineering",
@@ -1832,7 +2102,11 @@
         "person:mingtaizu": "明太祖"
       },
       "layer_title": "长城走向叠加",
-      "timeline_title": "长城修筑时间轴"
+      "timeline_title": "长城修筑时间轴",
+      "dims": [
+        1,
+        2
+      ]
     },
     "qin_unify": {
       "kind": "dynasty",
@@ -1854,7 +2128,11 @@
       "subject_names": {
         "person:yingzheng": "嬴政",
         "person:wangjian": "王翦"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "ming_fall": {
       "kind": "dynasty",
@@ -1875,7 +2153,13 @@
         "person:chongzhen": "崇祯帝",
         "person:lizicheng3": "李自成",
         "person:wu3gui": "吴三桂"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4,
+        6
+      ]
     },
     "shangyang": {
       "kind": "reform",
@@ -1895,7 +2179,12 @@
       "subject_names": {
         "person:shangyang": "商鞅",
         "person:xiaogong": "秦孝公"
-      }
+      },
+      "dims": [
+        3,
+        5,
+        6
+      ]
     },
     "wanganshi": {
       "kind": "reform",
@@ -1915,7 +2204,12 @@
       "subject_names": {
         "person:wanganshi": "王安石",
         "person:simaguang": "司马光"
-      }
+      },
+      "dims": [
+        3,
+        5,
+        6
+      ]
     },
     "huangjin": {
       "kind": "uprising",
@@ -1937,7 +2231,12 @@
       "subject_names": {
         "person:zhangjiao": "张角",
         "person:huangfusong": "皇甫嵩"
-      }
+      },
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "lizicheng": {
       "kind": "uprising",
@@ -1959,7 +2258,12 @@
       "subject_names": {
         "person:lizicheng4": "李自成",
         "person:chongzhen2": "崇祯帝"
-      }
+      },
+      "dims": [
+        3,
+        4,
+        6
+      ]
     },
     "xiaowen": {
       "kind": "fusion",
@@ -1979,7 +2283,11 @@
       "subject_names": {
         "person:xiaowen": "孝文帝",
         "person:fenghou": "冯太后"
-      }
+      },
+      "dims": [
+        4,
+        5
+      ]
     },
     "wencheng": {
       "kind": "fusion",
@@ -2002,7 +2310,11 @@
         "person:songzanganbu": "松赞干布"
       },
       "layer_title": "唐蕃通道叠加",
-      "timeline_title": "唐蕃和亲时间轴"
+      "timeline_title": "唐蕃和亲时间轴",
+      "dims": [
+        4,
+        5
+      ]
     },
     "xuanwu": {
       "kind": "court",
@@ -2023,7 +2335,11 @@
         "person:limin2": "李世民",
         "person:jiancheng": "李建成",
         "person:gaozu": "唐高祖"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "jingnan": {
       "kind": "court",
@@ -2045,7 +2361,11 @@
       "subject_names": {
         "person:zhudi": "朱棣",
         "person:jianwen": "建文帝"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "dunzun": {
       "kind": "thought",
@@ -2065,7 +2385,11 @@
       "subject_names": {
         "person:wudi": "汉武帝",
         "person:dongzhongshu": "董仲舒"
-      }
+      },
+      "dims": [
+        5,
+        6
+      ]
     },
     "keju": {
       "kind": "thought",
@@ -2085,7 +2409,11 @@
       "subject_names": {
         "person:yangdi_k": "隋炀帝",
         "person:wuzetian": "武周皇帝"
-      }
+      },
+      "dims": [
+        3,
+        5
+      ]
     },
     "four_inv": {
       "kind": "tech",
@@ -2105,7 +2433,11 @@
       "subject_names": {
         "person:cailun": "蔡伦",
         "person:bisheng": "毕昇"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "bencao": {
       "kind": "tech",
@@ -2125,7 +2457,11 @@
       "subject_names": {
         "person:guoshoujing_b": "郭守敬",
         "person:lishizhen": "李时珍"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "dong_han_yi": {
       "kind": "disaster",
@@ -2144,7 +2480,12 @@
       "parties_note": "大疫记载见于《后汉书·五行志》与张仲景自序，死亡规模以世家记述折中，确切毒株已不可考。",
       "subject_names": {
         "person:zhangzhongjing": "张仲景"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "dingwu": {
       "kind": "disaster",
@@ -2164,7 +2505,12 @@
       "subject_names": {
         "person:zengguofan2": "曾国藩",
         "person:lihongzhang2": "李鸿章"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "song_he_jue": {
       "kind": "disaster",
@@ -2183,7 +2529,12 @@
       "parties_note": "河决与堵口据《宋史·河渠志》综合，劳费数字为后世考订折中。",
       "subject_names": {
         "person:jianglin": "贾昌朝"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "zijincheng": {
       "kind": "engineering",
@@ -2203,7 +2554,11 @@
       "subject_names": {
         "person:zhu_di": "明成祖",
         "person:kuai_xiang": "蒯祥"
-      }
+      },
+      "dims": [
+        1,
+        2
+      ]
     },
     "lingqu": {
       "kind": "engineering",
@@ -2225,7 +2580,11 @@
         "person:shilu": "史禄"
       },
       "layer_title": "灵渠水道叠加",
-      "timeline_title": "灵渠开凿时间轴"
+      "timeline_title": "灵渠开凿时间轴",
+      "dims": [
+        1,
+        2
+      ]
     },
     "zhaozhou": {
       "kind": "engineering",
@@ -2244,7 +2603,11 @@
       "parties_note": "建桥据唐张嘉贞《安济桥铭》与后世方志综合。",
       "subject_names": {
         "person:lichun": "李春"
-      }
+      },
+      "dims": [
+        1,
+        2
+      ]
     },
     "sui_daxing": {
       "kind": "engineering",
@@ -2263,7 +2626,11 @@
       "parties_note": "营建据《隋书·宇文恺传》与考古复原综合。",
       "subject_names": {
         "person:yuwenkai": "宇文恺"
-      }
+      },
+      "dims": [
+        1,
+        2
+      ]
     },
     "wuwang": {
       "kind": "dynasty",
@@ -2285,7 +2652,11 @@
       "subject_names": {
         "person:wuwang": "周武王",
         "person:zhouwang": "商纣王"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "sui_mie_chen": {
       "kind": "dynasty",
@@ -2307,7 +2678,11 @@
       "subject_names": {
         "person:suiwen": "隋文帝",
         "person:chenhouzhu": "陈后主"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "chenqiao": {
       "kind": "dynasty",
@@ -2328,7 +2703,11 @@
       "subject_names": {
         "person:zhao_kuangyin": "赵匡胤",
         "person:chai_rong": "周世宗"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "yashan": {
       "kind": "dynasty",
@@ -2350,7 +2729,11 @@
       "subject_names": {
         "person:zhangshijie": "张世杰",
         "person:luxinfu": "陆秀夫"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "xinhai": {
       "kind": "dynasty",
@@ -2371,7 +2754,11 @@
       "subject_names": {
         "person:sun_yat": "孙中山",
         "person:yuan_shikai": "袁世凯"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "zhangjuzheng": {
       "kind": "reform",
@@ -2391,7 +2778,11 @@
       "subject_names": {
         "person:zhangjuzheng2": "张居正",
         "person:wanli": "明神宗"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "wuxu": {
       "kind": "reform",
@@ -2411,7 +2802,12 @@
       "subject_names": {
         "person:guangxu": "光绪帝",
         "person:kang_youwei": "康有为"
-      }
+      },
+      "dims": [
+        3,
+        5,
+        6
+      ]
     },
     "wangmang": {
       "kind": "reform",
@@ -2431,7 +2827,11 @@
       "subject_names": {
         "person:wangmang": "王莽",
         "person:liuxiu": "刘秀"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "liangshui": {
       "kind": "reform",
@@ -2450,7 +2850,10 @@
       "parties_note": "两税法据《旧唐书·杨炎传》《食货志》综合。",
       "subject_names": {
         "person:yangyan": "杨炎"
-      }
+      },
+      "dims": [
+        3
+      ]
     },
     "jiupin": {
       "kind": "reform",
@@ -2470,7 +2873,10 @@
       "subject_names": {
         "person:chenqun": "陈群",
         "person:caocao": "曹操"
-      }
+      },
+      "dims": [
+        3
+      ]
     },
     "chensheng": {
       "kind": "uprising",
@@ -2491,7 +2897,11 @@
       "subject_names": {
         "person:chensheng2": "陈胜",
         "person:wuguang": "吴广"
-      }
+      },
+      "dims": [
+        4,
+        6
+      ]
     },
     "huangchao": {
       "kind": "uprising",
@@ -2512,7 +2922,11 @@
       "subject_names": {
         "person:huangchao2": "黄巢",
         "person:tangxizong": "唐僖宗"
-      }
+      },
+      "dims": [
+        4,
+        6
+      ]
     },
     "taiping": {
       "kind": "uprising",
@@ -2533,7 +2947,13 @@
       "subject_names": {
         "person:hongxiuquan": "洪秀全",
         "person:xiangrong": "向荣"
-      }
+      },
+      "dims": [
+        3,
+        4,
+        5,
+        6
+      ]
     },
     "hongjin": {
       "kind": "uprising",
@@ -2554,7 +2974,11 @@
       "subject_names": {
         "person:liufutong": "刘福通",
         "person:zhuyuanzhang": "朱元璋"
-      }
+      },
+      "dims": [
+        4,
+        6
+      ]
     },
     "lvlin": {
       "kind": "uprising",
@@ -2575,7 +2999,11 @@
       "subject_names": {
         "person:wangmang2": "王莽",
         "person:liuxiu2": "刘秀"
-      }
+      },
+      "dims": [
+        4,
+        6
+      ]
     },
     "zhaowulian": {
       "kind": "fusion",
@@ -2594,7 +3022,11 @@
       "parties_note": "胡服骑射据《史记·赵世家》综合，其「变俗」之议载于对话。",
       "subject_names": {
         "person:zhaowuling": "赵武灵王"
-      }
+      },
+      "dims": [
+        4,
+        5
+      ]
     },
     "zhaofen": {
       "kind": "fusion",
@@ -2617,7 +3049,11 @@
         "person:huhanye": "呼韩邪单于"
       },
       "layer_title": "汉匈和亲通道叠加",
-      "timeline_title": "昭君出塞时间轴"
+      "timeline_title": "昭君出塞时间轴",
+      "dims": [
+        4,
+        5
+      ]
     },
     "qing_han": {
       "kind": "fusion",
@@ -2637,7 +3073,11 @@
       "subject_names": {
         "person:shunzhi": "顺治帝",
         "person:kangxi2": "康熙帝"
-      }
+      },
+      "dims": [
+        4,
+        5
+      ]
     },
     "yuan_duo": {
       "kind": "fusion",
@@ -2657,7 +3097,11 @@
       "subject_names": {
         "person:kublai": "忽必烈",
         "person:yao_shu": "姚枢"
-      }
+      },
+      "dims": [
+        4,
+        5
+      ]
     },
     "chanyuan": {
       "kind": "fusion",
@@ -2678,7 +3122,11 @@
       "subject_names": {
         "person:songzhen": "宋真宗",
         "person:liaosheng": "辽圣宗"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "beijiu": {
       "kind": "court",
@@ -2698,7 +3146,11 @@
       "subject_names": {
         "person:songtaizu": "宋太祖",
         "person:shishouxin": "石守信"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "jiuzi": {
       "kind": "court",
@@ -2718,7 +3170,11 @@
       "subject_names": {
         "person:kangxi3": "康熙帝",
         "person:yongzheng": "雍正帝"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "wugu": {
       "kind": "court",
@@ -2738,7 +3194,11 @@
       "subject_names": {
         "person:hanwu2": "汉武帝",
         "person:litai": "卫太子据"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "shaqiu": {
       "kind": "court",
@@ -2758,7 +3218,11 @@
       "subject_names": {
         "person:qinshihuang2": "秦始皇",
         "person:zhao_gao": "赵高"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "baijia": {
       "kind": "thought",
@@ -2778,7 +3242,11 @@
       "subject_names": {
         "person:mengzi": "孟子",
         "person:zhuangzi": "庄子"
-      }
+      },
+      "dims": [
+        5,
+        6
+      ]
     },
     "fenshu": {
       "kind": "thought",
@@ -2798,7 +3266,11 @@
       "subject_names": {
         "person:lisi2": "李斯",
         "person:qinshihuang3": "秦始皇"
-      }
+      },
+      "dims": [
+        5,
+        6
+      ]
     },
     "fotao": {
       "kind": "thought",
@@ -2818,7 +3290,12 @@
       "subject_names": {
         "person:hanming": "汉明帝",
         "person:zhufalan": "竺法兰"
-      }
+      },
+      "dims": [
+        4,
+        5,
+        6
+      ]
     },
     "lixue": {
       "kind": "thought",
@@ -2838,7 +3315,11 @@
       "subject_names": {
         "person:zhuxi": "朱熹",
         "person:lujiuyuan": "陆九渊"
-      }
+      },
+      "dims": [
+        5,
+        6
+      ]
     },
     "zhangheng": {
       "kind": "tech",
@@ -2857,7 +3338,11 @@
       "parties_note": "地动仪据《后汉书·张衡传》综合，原器失传、复原方案有争议。",
       "subject_names": {
         "person:zhangheng2": "张衡"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "zuchongzhi": {
       "kind": "tech",
@@ -2876,7 +3361,11 @@
       "parties_note": "圆周率据《南史·祖冲之传》综合，密率 355/113 后称「祖率」。",
       "subject_names": {
         "person:zuchongzhi2": "祖冲之"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "shenkuo": {
       "kind": "tech",
@@ -2895,7 +3384,11 @@
       "parties_note": "笔谈据《梦溪笔谈》原书及研究综合。",
       "subject_names": {
         "person:shenkuo2": "沈括"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "jiasixie": {
       "kind": "tech",
@@ -2914,7 +3407,11 @@
       "parties_note": "要术据原书序及农史综合。",
       "subject_names": {
         "person:jiasixie2": "贾思勰"
-      }
+      },
+      "dims": [
+        2,
+        5
+      ]
     },
     "zhangqian": {
       "kind": "frontier",
@@ -2937,7 +3434,11 @@
         "person:hanwu3": "汉武帝"
       },
       "layer_title": "丝绸之路叠加",
-      "timeline_title": "张骞凿空时间轴"
+      "timeline_title": "张骞凿空时间轴",
+      "dims": [
+        1,
+        6
+      ]
     },
     "zhenghe": {
       "kind": "frontier",
@@ -2960,7 +3461,11 @@
         "person:yongle2": "明成祖"
       },
       "layer_title": "郑和航线叠加",
-      "timeline_title": "郑和下西洋时间轴"
+      "timeline_title": "郑和下西洋时间轴",
+      "dims": [
+        1,
+        6
+      ]
     },
     "xuanzang": {
       "kind": "frontier",
@@ -2983,7 +3488,11 @@
         "person:taizong2": "唐太宗"
       },
       "layer_title": "玄奘西行路线叠加",
-      "timeline_title": "玄奘西行时间轴"
+      "timeline_title": "玄奘西行时间轴",
+      "dims": [
+        1,
+        6
+      ]
     },
     "jianzhen": {
       "kind": "frontier",
@@ -3006,7 +3515,11 @@
         "person:rongrui": "荣叡"
       },
       "layer_title": "鉴真东渡路线叠加",
-      "timeline_title": "鉴真东渡时间轴"
+      "timeline_title": "鉴真东渡时间轴",
+      "dims": [
+        1,
+        6
+      ]
     },
     "songjin": {
       "kind": "county",
@@ -3048,7 +3561,11 @@
         "person:zhang_ruoqi": "张若麒",
         "person:yang_guozhu": "杨国柱",
         "person:chen_xinja": "陈新甲"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "dalinghe": {
       "kind": "county",
@@ -3089,7 +3606,11 @@
         "person:sun_chengzong": "孙承宗",
         "person:liang_tingdong": "梁廷栋",
         "person:fang_jina": "方吉纳"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "juehua": {
       "kind": "county",
@@ -3122,7 +3643,11 @@
         "person:yuan_chonghuan": "袁崇焕",
         "person:ma_shilong": "马世龙"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "juehua1626": {
       "kind": "battle",
@@ -3157,7 +3682,11 @@
         "person:wang_tingchen": "王廷臣",
         "person:jin_guan": "金冠"
       },
-      "terrain_grid": "liaodong"
+      "terrain_grid": "liaodong",
+      "dims": [
+        1,
+        6
+      ]
     },
     "bozhou": {
       "kind": "battle",
@@ -3190,7 +3719,11 @@
         "person:tian_cifeng": "田雌凤",
         "person:wu_guang": "吴广",
         "person:yang_kezhou": "杨可栋"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "ningxia": {
       "kind": "battle",
@@ -3226,7 +3759,11 @@
         "person:ma_gui": "麻贵",
         "person:xiao_ruxun": "萧如薰",
         "person:shi_xing": "石星"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "yangzhou": {
       "kind": "battle",
@@ -3256,7 +3793,11 @@
         "person:liu_zhaoji": "刘肇基",
         "person:hongguang": "弘光帝",
         "person:yangzhou_jiri": "王秀楚"
-      }
+      },
+      "dims": [
+        1,
+        6
+      ]
     },
     "mingmo_dangzheng": {
       "kind": "court",
@@ -3299,7 +3840,11 @@
         "person:wang_wenyan": "汪文言",
         "person:gu_bingqian": "顾秉谦",
         "person:huo_weihua": "霍维华"
-      }
+      },
+      "dims": [
+        3,
+        6
+      ]
     },
     "tang_dangzheng": {
       "kind": "court",
@@ -3314,7 +3859,11 @@
         "events"
       ],
       "lead": "中晚唐最持久的权力缠斗：牛僧孺、李宗闵为首的「牛党」（多进士出身）与李德裕为首的「李党」（山东士族门荫）更相进退，史称牛李党争。本切片把两党的利益 stakes、核心人物与史料偏见并列，并把他们的籍贯（灵台/华阴/赞皇/荥阳）叠到地形上——有人的地方就有利益纠葛。",
-      "parties_note": "牛党多据科举公议、讥弹权幸；李党重门荫士族、强干弱枝。两方叙事互贬，系统不裁决，只并列。"
+      "parties_note": "牛党多据科举公议、讥弹权幸；李党重门荫士族、强干弱枝。两方叙事互贬，系统不裁决，只并列。",
+      "dims": [
+        3,
+        6
+      ]
     },
     "song_dangzheng": {
       "kind": "court",
@@ -3329,7 +3878,11 @@
         "events"
       ],
       "lead": "元祐更化后，旧党内部再裂为三：程颐为首的「洛党」（洛阳理学）、苏轼兄弟为首的「蜀党」（眉山）、刘挚为首的「朔党」（河北）。一席之礼、一句之论皆可相攻。本切片把三营的 stakes 与籍贯（洛阳/眉山/东光—郓州）并列，叠到地形。",
-      "parties_note": "洛党尚礼法、蜀党尚文采宽政、朔党居台谏攻讦；三方皆反新法，却互不相能。系统不裁决，只并列。"
+      "parties_note": "洛党尚礼法、蜀党尚文采宽政、朔党居台谏攻讦；三方皆反新法，却互不相能。系统不裁决，只并列。",
+      "dims": [
+        3,
+        6
+      ]
     },
     "donghan_danggu": {
       "kind": "court",
@@ -3344,7 +3897,11 @@
         "events"
       ],
       "lead": "桓灵之际，李膺、陈蕃等太学清流抨击宦官专权，反被诬结党诽讪朝政，遭禁锢终身——史称党锢之祸。本切片把「清流士大夫」（颍川/汝南/太原/河东士族郡望）与「宦官集团」（无乡党、依附皇权）建模为两大利益集团，并把籍贯叠到地形。宦官无地方根基，正是「皇权 vs 士族」的结构性代理。",
-      "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。"
+      "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。",
+      "dims": [
+        3,
+        6
+      ]
     },
     "mingmo_jihuang": {
       "kind": "disaster",
@@ -3364,7 +3921,12 @@
       "subject_names": {
         "person:lizicheng": "李自成",
         "person:gaoyingxiang": "高迎祥"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "chongzhen_han": {
       "kind": "disaster",
@@ -3383,7 +3945,12 @@
       "parties_note": "据气象史学者张德二研究综合，旱区范围与旱情顶峰（1640 前后）采其考订。",
       "subject_names": {
         "person:zhangdeer": "张德二"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "chongzhen_huangzai": {
       "kind": "disaster",
@@ -3402,7 +3969,12 @@
       "parties_note": "据张德二《中国三千年气象记录总集》及《明史·五行志》综合，蝗区范围采其考订。",
       "subject_names": {
         "person:zhangdeer2": "张德二"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "mingmo_shuyi": {
       "kind": "disaster",
@@ -3419,7 +3991,12 @@
       ],
       "lead": "崇祯十四年（1641）起鼠疫自山西蔓延，崇祯十六年（1643）京师大疫，「死亡枕藉、十室九空」。至崇祯十七年（1644）李自成入京时，北京已为大疫笼罩，瘟疫与兵祸、饥荒相叠加，加速了明王朝的崩塌。",
       "parties_note": "鼠疫路径与规模据明末清初笔记（《烈皇小识》等）及当代医疗史研究综合，确切毒株与死亡数字不可确考。",
-      "subject_names": {}
+      "subject_names": {},
+      "dims": [
+        1,
+        3,
+        4
+      ]
     },
     "kaifeng_juekou": {
       "kind": "disaster",
@@ -3438,7 +4015,44 @@
       "parties_note": "据《汴围湿襟录》及明末笔记综合，死亡数字取「三十七万军民、存者不满两万」的折中记载。",
       "subject_names": {
         "person:lizicheng2": "李自成"
-      }
+      },
+      "dims": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  "dimensions": {
+    "1": {
+      "name": "物理与地理环境",
+      "short": "地理",
+      "note": "古地理 / 气候 / 资源 / 交通关隘"
+    },
+    "2": {
+      "name": "技术与物质文明",
+      "short": "技术",
+      "note": "生产 / 兵器 / 能源 / 工程 / 信息载体"
+    },
+    "3": {
+      "name": "经济与制度运行",
+      "short": "制度",
+      "note": "土地 / 赋税 / 货币 / 市场 / 官僚"
+    },
+    "4": {
+      "name": "社会结构与日常生活",
+      "short": "社会",
+      "note": "人口 / 阶层 / 日常 / 医疗 / 信仰"
+    },
+    "5": {
+      "name": "思想文化与观念世界",
+      "short": "思想",
+      "note": "意识形态 / 价值 / 知识 / 舆论 / 生死观"
+    },
+    "6": {
+      "name": "重大事件与关键人物",
+      "short": "事件",
+      "note": "考证 / 决策 / 连锁 / 偶然必然"
     }
   }
 }

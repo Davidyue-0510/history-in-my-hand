@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["wuwang"] = {
    "person:wuwang": "周武王",
    "person:zhouwang": "商纣王"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=wuwang",
   "key": "wuwang",
   "scene_id": "wuwang",

@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "person:luxiufu": "陆秀夫",
    "person:zhanghongfan": "张弘范"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "yaoshan.html",
   "key": "yaoshan",
   "scene_id": "yaoshan",

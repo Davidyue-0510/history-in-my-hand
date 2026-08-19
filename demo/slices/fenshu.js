@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["fenshu"] = {
    "person:lisi2": "李斯",
    "person:qinshihuang3": "秦始皇"
   },
+  "dims": [
+   5,
+   6
+  ],
   "page": "county.html?scene=fenshu",
   "key": "fenshu",
   "scene_id": "fenshu",

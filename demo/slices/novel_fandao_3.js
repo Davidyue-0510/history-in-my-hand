@@ -13,6 +13,11 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
   "back": "枢纽",
   "fictional": true,
   "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
+  "dims": [
+   4,
+   5,
+   6
+  ],
   "page": "county.html?scene=novel_fandao_3",
   "key": "novel_fandao_3",
   "scene_id": "novel_fandao_3",

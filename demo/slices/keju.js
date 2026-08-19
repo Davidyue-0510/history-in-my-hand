@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["keju"] = {
    "person:yangdi_k": "隋炀帝",
    "person:wuzetian": "武周皇帝"
   },
+  "dims": [
+   3,
+   5
+  ],
   "page": "county.html?scene=keju",
   "key": "keju",
   "scene_id": "keju",

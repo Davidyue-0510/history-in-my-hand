@@ -497,6 +497,7 @@ def _slice_meta(bundle):
         "vocab_pack": m.get("vocab_pack"),
         "terrain_grid": m.get("terrain_grid"),
         "terrain_off_grid": m.get("terrain_off_grid", False),
+        "dims": m.get("dims"),
         "counts": {
             "src": len(bundle.get("sources", [])),
             "place": len(bundle.get("places", [])),
@@ -525,6 +526,7 @@ def main():
             "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
         },
         "regions": reg.get("regions", []),
+        "dimensions": reg.get("dimensions", {}),
         "scene_order": [sc["_key"] for sc in resolved],
     }
 

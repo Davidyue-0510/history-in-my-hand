@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["hongjin"] = {
    "person:liufutong": "刘福通",
    "person:zhuyuanzhang": "朱元璋"
   },
+  "dims": [
+   4,
+   6
+  ],
   "page": "county.html?scene=hongjin",
   "key": "hongjin",
   "scene_id": "hongjin",

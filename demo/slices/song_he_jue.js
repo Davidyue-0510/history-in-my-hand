@@ -16,6 +16,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
   "subject_names": {
    "person:jianglin": "贾昌朝"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=song_he_jue",
   "key": "song_he_jue",
   "scene_id": "song_he_jue",

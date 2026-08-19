@@ -12,6 +12,10 @@ window.SANDBOX_SLICES["sarhu"] = {
   "dossier_event": "event:sarhu",
   "lead": "四路明军分进合击，五日之内三路溃灭。本切片记录的不是「谁赢了」，而是四支部队各自走了多远、爬了多少米、史料说他们用了几天——以及这三个数字对不对得上。",
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "sarhu.html",
   "key": "sarhu",
   "scene_id": "sarhu",

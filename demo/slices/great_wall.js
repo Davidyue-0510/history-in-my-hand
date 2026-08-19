@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["great_wall"] = {
   },
   "layer_title": "长城走向叠加",
   "timeline_title": "长城修筑时间轴",
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=great_wall",
   "key": "great_wall",
   "scene_id": "great_wall",

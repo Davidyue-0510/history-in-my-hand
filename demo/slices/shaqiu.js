@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "person:qinshihuang2": "秦始皇",
    "person:zhao_gao": "赵高"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=shaqiu",
   "key": "shaqiu",
   "scene_id": "shaqiu",

@@ -30,6 +30,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "person:wu_guang": "吴广",
    "person:yang_kezhou": "杨可栋"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "bozhou.html",
   "key": "bozhou",
   "scene_id": "bozhou",

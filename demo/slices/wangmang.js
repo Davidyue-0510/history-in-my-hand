@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["wangmang"] = {
    "person:wangmang": "王莽",
    "person:liuxiu": "刘秀"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=wangmang",
   "key": "wangmang",
   "scene_id": "wangmang",

@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "person:libing": "李冰",
    "person:wengong": "文翁"
   },
+  "dims": [
+   1,
+   2
+  ],
   "page": "county.html?scene=dujiangyan",
   "key": "dujiangyan",
   "scene_id": "dujiangyan",

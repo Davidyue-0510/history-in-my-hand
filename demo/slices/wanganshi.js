@@ -17,6 +17,11 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "person:wanganshi": "王安石",
    "person:simaguang": "司马光"
   },
+  "dims": [
+   3,
+   5,
+   6
+  ],
   "page": "county.html?scene=wanganshi",
   "key": "wanganshi",
   "scene_id": "wanganshi",

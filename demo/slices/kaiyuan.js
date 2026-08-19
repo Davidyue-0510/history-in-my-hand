@@ -28,6 +28,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "doc:kaiyuan_tushuo": "开原图说"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=kaiyuan",
   "key": "kaiyuan",
   "scene_id": "kaiyuan",

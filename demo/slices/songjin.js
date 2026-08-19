@@ -39,6 +39,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "person:yang_guozhu": "杨国柱",
    "person:chen_xinja": "陈新甲"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=songjin",
   "key": "songjin",
   "scene_id": "songjin",

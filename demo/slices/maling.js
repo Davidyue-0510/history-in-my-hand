@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["maling"] = {
    "person:pangjuan": "庞涓",
    "person:tianji": "田忌"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "maling.html",
   "key": "maling",
   "scene_id": "maling",

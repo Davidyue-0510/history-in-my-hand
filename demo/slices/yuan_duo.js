@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "person:kublai": "忽必烈",
    "person:yao_shu": "姚枢"
   },
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=yuan_duo",
   "key": "yuan_duo",
   "scene_id": "yuan_duo",

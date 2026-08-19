@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["jingnan"] = {
    "person:zhudi": "朱棣",
    "person:jianwen": "建文帝"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=jingnan",
   "key": "jingnan",
   "scene_id": "jingnan",

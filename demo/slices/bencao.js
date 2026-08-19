@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["bencao"] = {
    "person:guoshoujing_b": "郭守敬",
    "person:lishizhen": "李时珍"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=bencao",
   "key": "bencao",
   "scene_id": "bencao",

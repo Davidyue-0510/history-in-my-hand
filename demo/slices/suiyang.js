@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["suiyang"] = {
    "person:xuyuan": "许远",
    "person:yinziqi": "尹子奇"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "suiyang.html",
   "key": "suiyang",
   "scene_id": "suiyang",

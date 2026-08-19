@@ -16,6 +16,11 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
   "subject_names": {
    "person:lizicheng2": "李自成"
   },
+  "dims": [
+   1,
+   3,
+   4
+  ],
   "page": "county.html?scene=kaifeng_juekou",
   "key": "kaifeng_juekou",
   "scene_id": "kaifeng_juekou",

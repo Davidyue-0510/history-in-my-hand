@@ -26,6 +26,10 @@ window.SANDBOX_SLICES["haizhou"] = {
    "person:amin": "阿敏"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=haizhou",
   "key": "haizhou",
   "scene_id": "haizhou",

@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["boju"] = {
    "person:helu": "阖闾",
    "person:nangwa": "囊瓦"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "boju.html",
   "key": "boju",
   "scene_id": "boju",

@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "person:kangxi3": "康熙帝",
    "person:yongzheng": "雍正帝"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=jiuzi",
   "key": "jiuzi",
   "scene_id": "jiuzi",

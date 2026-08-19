@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "person:chensheng2": "陈胜",
    "person:wuguang": "吴广"
   },
+  "dims": [
+   4,
+   6
+  ],
   "page": "county.html?scene=chensheng",
   "key": "chensheng",
   "scene_id": "chensheng",

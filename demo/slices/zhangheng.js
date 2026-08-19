@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
   "subject_names": {
    "person:zhangheng2": "张衡"
   },
+  "dims": [
+   2,
+   5
+  ],
   "page": "county.html?scene=zhangheng",
   "key": "zhangheng",
   "scene_id": "zhangheng",

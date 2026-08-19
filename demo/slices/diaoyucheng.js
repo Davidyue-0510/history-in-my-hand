@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "person:zhangjue": "张珏",
    "person:mengge": "蒙哥"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "diaoyucheng.html",
   "key": "diaoyucheng",
   "scene_id": "diaoyucheng",

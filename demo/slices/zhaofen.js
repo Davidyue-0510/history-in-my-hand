@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
   },
   "layer_title": "汉匈和亲通道叠加",
   "timeline_title": "昭君出塞时间轴",
+  "dims": [
+   4,
+   5
+  ],
   "page": "county.html?scene=zhaofen",
   "key": "zhaofen",
   "scene_id": "zhaofen",

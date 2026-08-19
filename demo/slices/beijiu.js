@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "person:songtaizu": "宋太祖",
    "person:shishouxin": "石守信"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=beijiu",
   "key": "beijiu",
   "scene_id": "beijiu",

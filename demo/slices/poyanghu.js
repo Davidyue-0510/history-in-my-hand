@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "person:zhuyuanzhang": "朱元璋",
    "person:chenyouliang": "陈友谅"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "poyanghu.html",
   "key": "poyanghu",
   "scene_id": "poyanghu",

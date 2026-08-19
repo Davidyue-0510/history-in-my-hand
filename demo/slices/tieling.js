@@ -25,6 +25,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "person:xiongtingbing": "熊廷弼"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=tieling",
   "key": "tieling",
   "scene_id": "tieling",

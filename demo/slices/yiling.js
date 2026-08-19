@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "person:liubei": "刘备",
    "person:zhugeliang": "诸葛亮"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "yiling.html",
   "key": "yiling",
   "scene_id": "yiling",

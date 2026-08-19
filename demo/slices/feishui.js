@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["feishui"] = {
    "person:fuijian": "苻坚",
    "person:xiean": "谢安"
   },
+  "dims": [
+   1,
+   6
+  ],
   "page": "feishui.html",
   "key": "feishui",
   "scene_id": "feishui",

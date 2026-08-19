@@ -17,6 +17,10 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "person:suiwen": "隋文帝",
    "person:chenhouzhu": "陈后主"
   },
+  "dims": [
+   3,
+   6
+  ],
   "page": "county.html?scene=sui_mie_chen",
   "key": "sui_mie_chen",
   "scene_id": "sui_mie_chen",

@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
   },
   "layer_title": "玄奘西行路线叠加",
   "timeline_title": "玄奘西行时间轴",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=xuanzang",
   "key": "xuanzang",
   "scene_id": "xuanzang",

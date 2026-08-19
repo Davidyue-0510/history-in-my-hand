@@ -27,6 +27,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "person:zhao_shuaijiao": "赵率教"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=ningyuan",
   "key": "ningyuan",
   "scene_id": "ningyuan",

@@ -33,6 +33,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "person:goseong": "姜弘立"
   },
   "terrain_grid": "liaodong",
+  "dims": [
+   1,
+   6
+  ],
   "page": "county.html?scene=shenyang",
   "key": "shenyang",
   "scene_id": "shenyang",
