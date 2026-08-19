@@ -71,6 +71,14 @@
     DIM_NAME[k] = DIMENSIONS[k].name; DIM_SHORT[k] = DIMENSIONS[k].short;
   });
 
+  // 战略维度契约目录（epochs / strategic_dims / scale_tiers，单一真值）
+  var SCALE_TIERS = SD.scale_tiers || {};
+  var SCALE_NAME = {};
+  Object.keys(SCALE_TIERS).forEach(function (k) { SCALE_NAME[k] = SCALE_TIERS[k].name; });
+  var STRAT_DIMS = SD.strategic_dims || {};
+  var STRAT_NAME = {};
+  Object.keys(STRAT_DIMS).forEach(function (k) { STRAT_NAME[k] = STRAT_DIMS[k].name; });
+
   /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════ */
   (function computeBounds() {
     var lons = [TG.lon0, TG.lon0 + (nx - 1) * TG.step];
@@ -159,7 +167,7 @@
 
   /* ═══════════ 分面筛选状态 ═══════════
    * 三个分面各自一个选中集合（空集合 = 不过滤）；面内 OR，面间 AND。 */
-  var sel = { type: [], era: [], region: [], dim: [] };
+  var sel = { type: [], era: [], region: [], dim: [], scale_tier: [] };
   var query = '';
   function inSel(arr, v) { return arr.length === 0 || arr.indexOf(v) >= 0; }
   function matches(sk) {
@@ -171,6 +179,8 @@
     // 「按维度浏览」：一个 world 可覆盖多个维度；选中任一维度即命中（面内 OR）
     var ds = m.dims || [];
     if (sel.dim.length && !ds.some(function (d) { return sel.dim.indexOf(d) >= 0; })) return false;
+    // 「战略层级」：tactical / operational / strategic（面内 OR）
+    if (!inSel(sel.scale_tier, m.scale_tier)) return false;
     if (query) {
       var q = query.toLowerCase();
       var hay = ((m.dossier_label || '') + ' ' + (m.title || '') + ' ' + (m.subtitle || '') + ' ' + sk).toLowerCase();
@@ -295,6 +305,8 @@
       + '<span class="chip chip-k">' + kindShort(m.kind) + '</span>'
       + '<span class="chip chip-e">' + dy + '</span>'
       + '<span class="chip chip-r">' + region + '</span>'
+      + '<span class="chip chip-s" title="战略层级：' + ((SCALE_TIERS[m.scale_tier] || {}).note || '') + '">'
+      + (SCALE_NAME[m.scale_tier] || m.scale_tier || '—') + '</span>'
       + '</div>';
   }
 
@@ -334,6 +346,7 @@
 
     return '<a class="card card--' + (m.kind || 'civ') + (isFic ? ' fic' : '') + '" '
       + 'data-kind="' + (m.kind || 'civ') + '" data-era="' + sceneDynasty(sk) + '" data-region="' + (m.region || '') + '" '
+      + 'data-scale="' + (m.scale_tier || '') + '" '
       + 'href="' + (m.page || ('county.html?scene=' + sk)) + '">'
       + '<div class="card-kind' + (isFic ? ' fic' : '') + '">' + kindLabel(m) + '</div>'
       + '<div class="card-title">' + (m.dossier_label || sk) + '</div>'
@@ -381,7 +394,7 @@
     if (!el) return;
     var total = order.length;
     var txt = '<span><b>' + n + '</b>/' + total + ' 个切片匹配</span>';
-    var active = sel.type.length + sel.era.length + sel.region.length + sel.dim.length + (query ? 1 : 0);
+    var active = sel.type.length + sel.era.length + sel.region.length + sel.dim.length + sel.scale_tier.length + (query ? 1 : 0);
     if (active) txt += '<span><b>' + active + '</b> 个筛选条件生效</span>';
     el.innerHTML = txt;
   }
@@ -428,13 +441,19 @@
       var s = String(v); return (DIM_SHORT[s] || DIM_NAME[s] || s);
     });
 
+    // 「战略层级」分面：按目录顺序（战术→战役→战略）
+    var tierKeys = Object.keys(SCALE_TIERS).filter(function (t) {
+      return order.some(function (sk) { return (scenes[sk].meta || {}).scale_tier === t; });
+    });
+    buildFacet('fScale', tierKeys, 'scale_tier', function (v) { return SCALE_NAME[v] || v; });
+
     var search = document.getElementById('hubSearch');
     if (search) search.addEventListener('input', function () {
       query = search.value.trim(); renderHub(); draw();
     });
     var clear = document.getElementById('hubClear');
     if (clear) clear.addEventListener('click', function () {
-      sel.type = []; sel.era = []; sel.region = []; sel.dim = []; query = '';
+      sel.type = []; sel.era = []; sel.region = []; sel.dim = []; sel.scale_tier = []; query = '';
       if (search) search.value = '';
       Array.prototype.forEach.call(document.querySelectorAll('.facet-btn.on'), function (b) { b.classList.remove('on'); });
       renderHub(); draw();

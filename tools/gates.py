@@ -37,6 +37,7 @@ STEPS = [
     ("重编译 demo/data.js · build",  ["tools/ingestion/build.py"]),
     ("统计快照 stats",                ["tools/ingestion/stats.py"]),
     ("场景注册表一致性 check",         ["tools/ingestion/check_scenes.py"]),
+    ("战略维度契约 check",             ["tools/check_strategic_contract.py"]),
     # ── 查询与分析层 ──
     ("共振报告 resonance",            ["tools/analysis/resonance.py"]),
     # ── 推演与模拟层 ──

@@ -210,6 +210,42 @@ window.SANDBOX_DATA = {
    "note": "考证 / 决策 / 连锁 / 偶然必然"
   }
  },
+ "strategic_dims": {
+  "political_cohesion": {
+   "name": "政治凝聚",
+   "short": "凝聚",
+   "note": "朝堂/派系凝聚力，派生自 制度+思想（R6 courtCohesion/infight）"
+  },
+  "material_logistics": {
+   "name": "物质后勤",
+   "short": "后勤",
+   "note": "技术↔生产力、赋税↔后勤半径（R7 物理后勤）"
+  },
+  "population_mobilization": {
+   "name": "人口动员",
+   "short": "动员",
+   "note": "人口↔常驻军、流民↔动员潜力（社会维扩展）"
+  },
+  "geopolitical_strategy": {
+   "name": "地缘战略",
+   "short": "地缘",
+   "note": "地形/关隘/外交→战略重心与窗口（地理+事件维扩展）"
+  }
+ },
+ "scale_tiers": {
+  "tactical": {
+   "name": "战术",
+   "note": "交战/个役，展开个体视角"
+  },
+  "operational": {
+   "name": "战役",
+   "note": "会战/战区，中等聚合"
+  },
+  "strategic": {
+   "name": "战略",
+   "note": "全局/时代，聚合省略个体"
+  }
+ },
  "scene_order": [
   "sarhu",
   "kaiyuan",
@@ -18398,6 +18434,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 10,
     "place": 21,
@@ -18427,6 +18465,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 8,
     "place": 16,
@@ -18456,6 +18496,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 5,
     "place": 11,
@@ -18485,6 +18527,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 5,
@@ -18514,6 +18558,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 8,
     "place": 12,
@@ -18543,6 +18589,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 10,
     "place": 13,
@@ -18572,6 +18620,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 6,
@@ -18601,6 +18651,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 8,
@@ -18630,6 +18682,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 6,
@@ -18659,6 +18713,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 5,
@@ -18688,6 +18744,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 5,
@@ -18717,6 +18775,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 6,
     "place": 5,
@@ -18746,6 +18806,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 6,
     "place": 5,
@@ -18775,6 +18837,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 5,
     "place": 4,
@@ -18804,6 +18868,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 9,
@@ -18833,6 +18899,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 8,
@@ -18862,6 +18930,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 5,
@@ -18891,6 +18961,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 6,
     "place": 3,
@@ -18920,6 +18992,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 4,
@@ -18949,6 +19023,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 4,
@@ -18978,6 +19054,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 3,
@@ -19008,6 +19086,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 5,
     "place": 4,
@@ -19038,6 +19118,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 5,
     "place": 4,
@@ -19068,6 +19150,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 3,
@@ -19098,6 +19182,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19128,6 +19214,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19158,6 +19246,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19188,6 +19278,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19218,6 +19310,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19248,6 +19342,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "fiction",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 2,
@@ -19277,6 +19373,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 9,
@@ -19306,6 +19404,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 18,
@@ -19335,6 +19435,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 6,
@@ -19364,6 +19466,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 12,
@@ -19393,6 +19497,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "huabei",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 10,
@@ -19422,6 +19528,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -19451,6 +19559,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19480,6 +19590,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19509,6 +19621,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19538,6 +19652,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19567,6 +19683,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qin_han",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19596,6 +19714,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qin_han",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19625,6 +19745,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qin_han",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19654,6 +19776,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qin_han",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19683,6 +19807,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -19712,6 +19838,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -19741,6 +19869,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -19770,6 +19900,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19799,6 +19931,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19828,6 +19962,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 3,
@@ -19857,6 +19993,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19886,6 +20024,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19915,6 +20055,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19944,6 +20086,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -19973,6 +20117,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20002,6 +20148,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20031,6 +20179,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20060,6 +20210,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20089,6 +20241,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20118,6 +20272,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "yuan_ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20147,6 +20303,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "yuan_ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20176,6 +20334,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "yuan_ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20205,6 +20365,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20234,6 +20396,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20263,6 +20427,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20293,6 +20459,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 9,
@@ -20323,6 +20491,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -20353,6 +20523,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20383,6 +20555,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20413,6 +20587,8 @@ window.SANDBOX_DATA = {
     2,
     3
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 6,
@@ -20442,6 +20618,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 3,
@@ -20471,6 +20649,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 5,
@@ -20500,6 +20680,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 7,
@@ -20531,6 +20713,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20561,6 +20745,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -20591,6 +20777,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 1,
@@ -20621,6 +20809,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 6,
@@ -20651,6 +20841,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 4,
@@ -20680,6 +20872,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -20709,6 +20903,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -20738,6 +20934,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 3,
@@ -20767,6 +20965,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 9,
@@ -20796,6 +20996,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 1,
@@ -20825,6 +21027,8 @@ window.SANDBOX_DATA = {
     3,
     5
    ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -20854,6 +21058,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -20883,6 +21089,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -20913,6 +21121,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "han",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 3,
@@ -20943,6 +21153,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 3,
@@ -20973,6 +21185,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "song",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21002,6 +21216,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21031,6 +21247,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21060,6 +21278,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21089,6 +21309,8 @@ window.SANDBOX_DATA = {
     1,
     2
    ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21119,6 +21341,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 29,
@@ -21149,6 +21373,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 31,
@@ -21179,6 +21405,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 28,
@@ -21209,6 +21437,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 27,
@@ -21239,6 +21469,8 @@ window.SANDBOX_DATA = {
     3,
     4
    ],
+   "epoch": "ming",
+   "scale_tier": "operational",
    "counts": {
     "src": 1,
     "place": 7,
@@ -21268,6 +21500,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21297,6 +21531,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21326,6 +21562,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21355,6 +21593,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21384,6 +21624,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21413,6 +21655,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -21443,6 +21687,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -21472,6 +21718,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -21500,6 +21748,8 @@ window.SANDBOX_DATA = {
    "dims": [
     3
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21528,6 +21778,8 @@ window.SANDBOX_DATA = {
    "dims": [
     3
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 2,
@@ -21557,6 +21809,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21586,6 +21840,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 4,
@@ -21617,6 +21873,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21646,6 +21904,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21675,6 +21935,8 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 5,
@@ -21704,6 +21966,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21733,6 +21997,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21762,6 +22028,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21791,6 +22059,8 @@ window.SANDBOX_DATA = {
     4,
     5
    ],
+   "epoch": "yuan",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21820,6 +22090,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "yuan",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21849,6 +22121,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21878,6 +22152,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21907,6 +22183,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21936,6 +22214,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -21965,6 +22245,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -21994,6 +22276,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22024,6 +22308,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22053,6 +22339,8 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22082,6 +22370,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22111,6 +22401,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22140,6 +22432,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "song",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22169,6 +22463,8 @@ window.SANDBOX_DATA = {
     2,
     5
    ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22198,6 +22494,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22227,6 +22525,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 3,
@@ -22256,6 +22556,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22285,6 +22587,8 @@ window.SANDBOX_DATA = {
     1,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 1,
     "place": 2,
@@ -22314,6 +22618,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 3,
@@ -22343,6 +22649,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 7,
@@ -22372,6 +22680,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "song",
+   "scale_tier": "strategic",
    "counts": {
     "src": 4,
     "place": 5,
@@ -22401,6 +22711,8 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
+   "epoch": "han",
+   "scale_tier": "strategic",
    "counts": {
     "src": 3,
     "place": 5,
@@ -29045,6 +29357,7 @@ window.SANDBOX_DATA = {
 window.SANDBOX_SLICES = window.SANDBOX_SLICES || {};
 (function () {
   var order = (window.SANDBOX_DATA.scene_order) || [];
+  document.write('<script src="epochs.js"><\/script>');
   for (var i = 0; i < order.length; i++) {
     document.write('<script src="slices/' + order[i] + '.js"><\/script>');
   }

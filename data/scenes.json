@@ -340,7 +340,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "kaiyuan": {
       "kind": "county",
@@ -376,7 +426,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "tieling": {
       "kind": "county",
@@ -408,7 +508,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yehe": {
       "kind": "county",
@@ -440,7 +590,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "liaoyang": {
       "kind": "county",
@@ -479,7 +679,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "shenyang": {
       "kind": "county",
@@ -519,7 +769,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "fushun": {
       "kind": "county",
@@ -551,7 +851,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "haizhou": {
       "kind": "county",
@@ -584,7 +934,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "gaizhou": {
       "kind": "county",
@@ -614,7 +1014,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "fuzhou": {
       "kind": "county",
@@ -643,7 +1093,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jinzhouwei": {
       "kind": "county",
@@ -673,7 +1173,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "guangning": {
       "kind": "county",
@@ -704,7 +1254,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jinzhou": {
       "kind": "county",
@@ -734,7 +1334,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "ningyuan": {
       "kind": "county",
@@ -768,7 +1418,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao": {
       "kind": "fiction",
@@ -802,7 +1502,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_2": {
       "kind": "fiction",
@@ -835,7 +1585,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_3": {
       "kind": "fiction",
@@ -857,7 +1657,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_4": {
       "kind": "fiction",
@@ -879,7 +1729,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_5": {
       "kind": "fiction",
@@ -901,7 +1801,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_6": {
       "kind": "fiction",
@@ -923,7 +1873,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_7": {
       "kind": "fiction",
@@ -945,7 +1945,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_8": {
       "kind": "fiction",
@@ -967,7 +2017,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "novel_fandao_9": {
       "kind": "fiction",
@@ -989,7 +2089,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "fiction",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "tang_huai_xi": {
       "kind": "county",
@@ -1020,7 +2170,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "imjin": {
       "kind": "county",
@@ -1056,7 +2256,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yellow_sea_1894": {
       "kind": "county",
@@ -1077,7 +2327,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qing_modern",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "qin_mie_liu_guo": {
       "kind": "county",
@@ -1098,7 +2398,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "guangzhong",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "three_campaigns": {
       "kind": "county",
@@ -1119,7 +2469,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "huabei",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "changping": {
       "kind": "battle",
@@ -1146,7 +2546,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "guiling": {
       "kind": "battle",
@@ -1173,7 +2623,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "maling": {
       "kind": "battle",
@@ -1200,7 +2700,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chengpu": {
       "kind": "battle",
@@ -1227,7 +2777,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "boju": {
       "kind": "battle",
@@ -1254,7 +2854,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "julu": {
       "kind": "battle",
@@ -1281,7 +2931,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qin_han",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "gaixia": {
       "kind": "battle",
@@ -1308,7 +3008,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qin_han",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "mobai": {
       "kind": "battle",
@@ -1335,7 +3085,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qin_han",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "kunyang": {
       "kind": "battle",
@@ -1362,7 +3162,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qin_han",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "guandu": {
       "kind": "battle",
@@ -1389,7 +3239,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "three_kingdoms",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chibi": {
       "kind": "battle",
@@ -1417,7 +3317,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "three_kingdoms",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yiling": {
       "kind": "battle",
@@ -1444,7 +3394,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "three_kingdoms",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "xiaoyaojin": {
       "kind": "battle",
@@ -1471,7 +3471,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "three_kingdoms",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "feishui": {
       "kind": "battle",
@@ -1498,7 +3548,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "canhebei": {
       "kind": "battle",
@@ -1524,7 +3624,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhongli": {
       "kind": "battle",
@@ -1550,7 +3700,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "hulao": {
       "kind": "battle",
@@ -1577,7 +3777,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "sui_tang",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "talas": {
       "kind": "battle",
@@ -1603,7 +3853,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "sui_tang",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "suiyang": {
       "kind": "battle",
@@ -1630,7 +3930,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "sui_tang",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yancheng": {
       "kind": "battle",
@@ -1657,7 +4007,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "heshangyuan": {
       "kind": "battle",
@@ -1684,7 +4084,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "caishiji": {
       "kind": "battle",
@@ -1710,7 +4160,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "diaoyucheng": {
       "kind": "battle",
@@ -1737,7 +4237,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yaoshan": {
       "kind": "battle",
@@ -1764,7 +4314,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "poyanghu": {
       "kind": "battle",
@@ -1790,7 +4390,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "yuan_ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "tumu": {
       "kind": "battle",
@@ -1817,7 +4467,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "yuan_ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "beijing": {
       "kind": "battle",
@@ -1844,7 +4544,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "yuan_ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yaksa": {
       "kind": "battle",
@@ -1871,7 +4621,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qing_modern",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "tianjing": {
       "kind": "battle",
@@ -1898,7 +4698,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qing_modern",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "humen": {
       "kind": "battle",
@@ -1925,7 +4775,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "qing_modern",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "huanghe": {
       "kind": "disaster",
@@ -1953,7 +4853,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "cross_dynastic",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "locust": {
       "kind": "disaster",
@@ -1978,7 +4928,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "cross_dynastic",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "huaxian": {
       "kind": "disaster",
@@ -2002,7 +5002,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "little_ice": {
       "kind": "disaster",
@@ -2027,7 +5077,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "grand_canal": {
       "kind": "engineering",
@@ -2055,7 +5155,57 @@
         1,
         2,
         3
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "dujiangyan": {
       "kind": "engineering",
@@ -2079,7 +5229,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "great_wall": {
       "kind": "engineering",
@@ -2106,7 +5306,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "qin_unify": {
       "kind": "dynasty",
@@ -2132,7 +5382,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "ming_fall": {
       "kind": "dynasty",
@@ -2159,7 +5459,57 @@
         3,
         4,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "shangyang": {
       "kind": "reform",
@@ -2184,7 +5534,57 @@
         3,
         5,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wanganshi": {
       "kind": "reform",
@@ -2209,7 +5609,57 @@
         3,
         5,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "huangjin": {
       "kind": "uprising",
@@ -2236,7 +5686,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "lizicheng": {
       "kind": "uprising",
@@ -2263,7 +5763,57 @@
         3,
         4,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "xiaowen": {
       "kind": "fusion",
@@ -2287,7 +5837,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wencheng": {
       "kind": "fusion",
@@ -2314,7 +5914,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "xuanwu": {
       "kind": "court",
@@ -2339,7 +5989,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jingnan": {
       "kind": "court",
@@ -2365,7 +6065,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "dunzun": {
       "kind": "thought",
@@ -2389,7 +6139,57 @@
       "dims": [
         5,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "keju": {
       "kind": "thought",
@@ -2413,7 +6213,57 @@
       "dims": [
         3,
         5
-      ]
+      ],
+      "epoch": "sui_tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "four_inv": {
       "kind": "tech",
@@ -2437,7 +6287,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "cross_dynastic",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "bencao": {
       "kind": "tech",
@@ -2461,7 +6361,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "dong_han_yi": {
       "kind": "disaster",
@@ -2485,7 +6435,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "dingwu": {
       "kind": "disaster",
@@ -2510,7 +6510,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "qing_modern",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "song_he_jue": {
       "kind": "disaster",
@@ -2534,7 +6584,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zijincheng": {
       "kind": "engineering",
@@ -2558,7 +6658,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "lingqu": {
       "kind": "engineering",
@@ -2584,7 +6734,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhaozhou": {
       "kind": "engineering",
@@ -2607,7 +6807,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "sui_daxing": {
       "kind": "engineering",
@@ -2630,7 +6880,57 @@
       "dims": [
         1,
         2
-      ]
+      ],
+      "epoch": "sui_yuan",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wuwang": {
       "kind": "dynasty",
@@ -2656,7 +6956,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "sui_mie_chen": {
       "kind": "dynasty",
@@ -2682,7 +7032,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chenqiao": {
       "kind": "dynasty",
@@ -2707,7 +7107,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yashan": {
       "kind": "dynasty",
@@ -2733,7 +7183,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "xinhai": {
       "kind": "dynasty",
@@ -2758,7 +7258,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhangjuzheng": {
       "kind": "reform",
@@ -2782,7 +7332,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wuxu": {
       "kind": "reform",
@@ -2807,7 +7407,57 @@
         3,
         5,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wangmang": {
       "kind": "reform",
@@ -2831,7 +7481,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "liangshui": {
       "kind": "reform",
@@ -2853,7 +7553,57 @@
       },
       "dims": [
         3
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jiupin": {
       "kind": "reform",
@@ -2876,7 +7626,57 @@
       },
       "dims": [
         3
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chensheng": {
       "kind": "uprising",
@@ -2901,7 +7701,57 @@
       "dims": [
         4,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "huangchao": {
       "kind": "uprising",
@@ -2926,7 +7776,57 @@
       "dims": [
         4,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "taiping": {
       "kind": "uprising",
@@ -2953,7 +7853,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "hongjin": {
       "kind": "uprising",
@@ -2978,7 +7928,57 @@
       "dims": [
         4,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "lvlin": {
       "kind": "uprising",
@@ -3003,7 +8003,57 @@
       "dims": [
         4,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhaowulian": {
       "kind": "fusion",
@@ -3026,7 +8076,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhaofen": {
       "kind": "fusion",
@@ -3053,7 +8153,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "qing_han": {
       "kind": "fusion",
@@ -3077,7 +8227,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "qing",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yuan_duo": {
       "kind": "fusion",
@@ -3101,7 +8301,57 @@
       "dims": [
         4,
         5
-      ]
+      ],
+      "epoch": "yuan",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chanyuan": {
       "kind": "fusion",
@@ -3126,7 +8376,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "yuan",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "beijiu": {
       "kind": "court",
@@ -3150,7 +8450,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jiuzi": {
       "kind": "court",
@@ -3174,7 +8524,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qing",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "wugu": {
       "kind": "court",
@@ -3198,7 +8598,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "shaqiu": {
       "kind": "court",
@@ -3222,7 +8672,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "baijia": {
       "kind": "thought",
@@ -3246,7 +8746,57 @@
       "dims": [
         5,
         6
-      ]
+      ],
+      "epoch": "warring_states",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "fenshu": {
       "kind": "thought",
@@ -3270,7 +8820,57 @@
       "dims": [
         5,
         6
-      ]
+      ],
+      "epoch": "qin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "fotao": {
       "kind": "thought",
@@ -3295,7 +8895,57 @@
         4,
         5,
         6
-      ]
+      ],
+      "epoch": "cross_dynastic",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "lixue": {
       "kind": "thought",
@@ -3319,7 +8969,57 @@
       "dims": [
         5,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhangheng": {
       "kind": "tech",
@@ -3342,7 +9042,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zuchongzhi": {
       "kind": "tech",
@@ -3365,7 +9115,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "shenkuo": {
       "kind": "tech",
@@ -3388,7 +9188,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jiasixie": {
       "kind": "tech",
@@ -3411,7 +9261,57 @@
       "dims": [
         2,
         5
-      ]
+      ],
+      "epoch": "two_jin",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhangqian": {
       "kind": "frontier",
@@ -3438,7 +9338,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "zhenghe": {
       "kind": "frontier",
@@ -3465,7 +9415,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "xuanzang": {
       "kind": "frontier",
@@ -3492,7 +9492,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "jianzhen": {
       "kind": "frontier",
@@ -3519,7 +9569,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "songjin": {
       "kind": "county",
@@ -3565,7 +9665,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "dalinghe": {
       "kind": "county",
@@ -3610,7 +9760,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "juehua": {
       "kind": "county",
@@ -3647,7 +9847,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "juehua1626": {
       "kind": "battle",
@@ -3686,7 +9936,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming_qing",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "bozhou": {
       "kind": "battle",
@@ -3723,7 +10023,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "ningxia": {
       "kind": "battle",
@@ -3763,7 +10113,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "yangzhou": {
       "kind": "battle",
@@ -3797,7 +10197,57 @@
       "dims": [
         1,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "mingmo_dangzheng": {
       "kind": "court",
@@ -3844,7 +10294,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "tang_dangzheng": {
       "kind": "court",
@@ -3863,7 +10363,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "tang",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "song_dangzheng": {
       "kind": "court",
@@ -3882,7 +10432,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "song",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "donghan_danggu": {
       "kind": "court",
@@ -3901,7 +10501,57 @@
       "dims": [
         3,
         6
-      ]
+      ],
+      "epoch": "han",
+      "scale_tier": "strategic",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "mingmo_jihuang": {
       "kind": "disaster",
@@ -3926,7 +10576,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chongzhen_han": {
       "kind": "disaster",
@@ -3950,7 +10650,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "chongzhen_huangzai": {
       "kind": "disaster",
@@ -3974,7 +10724,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "mingmo_shuyi": {
       "kind": "disaster",
@@ -3996,7 +10796,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     },
     "kaifeng_juekou": {
       "kind": "disaster",
@@ -4020,7 +10870,57 @@
         1,
         3,
         4
-      ]
+      ],
+      "epoch": "ming",
+      "scale_tier": "operational",
+      "strategic": {
+        "political_cohesion": {
+          "from": [
+            "strategic",
+            "doctrine"
+          ],
+          "from_dims": [
+            3,
+            5
+          ],
+          "layer": "inference",
+          "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+        },
+        "material_logistics": {
+          "from": [
+            "tech",
+            "economy"
+          ],
+          "from_dims": [
+            2,
+            3
+          ],
+          "layer": "inference",
+          "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+        },
+        "population_mobilization": {
+          "from": [
+            "society"
+          ],
+          "from_dims": [
+            4
+          ],
+          "layer": "inference",
+          "note": "人口↔常驻军；流民→动员潜力"
+        },
+        "geopolitical_strategy": {
+          "from": [
+            "international",
+            "anchors"
+          ],
+          "from_dims": [
+            1,
+            6
+          ],
+          "layer": "inference",
+          "note": "地形/关隘/外交→战略重心与窗口"
+        }
+      }
     }
   },
   "dimensions": {
@@ -4053,6 +10953,797 @@
       "name": "重大事件与关键人物",
       "short": "事件",
       "note": "考证 / 决策 / 连锁 / 偶然必然"
+    }
+  },
+  "epochs": {
+    "ming_qing": {
+      "label": "明清之际（1570–1683）",
+      "status": "derived",
+      "note": "辽东走廊从萨尔浒到宁远、松锦的军政网络易手期；小冰期叠加卫所崩坏。",
+      "tech": {
+        "productivity": {
+          "value": "低—人畜力为主，火器初兴",
+          "layer": "scholarship",
+          "basis": "技术↔生产力：辽东驻军依赖屯田与驿站，非农具革命"
+        },
+        "energy_base": {
+          "value": "生物能（人/畜/风/水）",
+          "layer": "scholarship"
+        },
+        "key_techs": [
+          "卫所屯田",
+          "佛郎机/红夷炮(渐入)",
+          "驿站驿传"
+        ],
+        "engineering": {
+          "value": "边墙+堡坞+漕运",
+          "layer": "scholarship"
+        }
+      },
+      "international": {
+        "neighbors": [
+          "蒙古(林丹汗)",
+          "朝鲜(藩属)",
+          "日本(丰臣朝鲜之役)"
+        ],
+        "diplomatic_posture": "宗藩+九边防御",
+        "external_threat": "后金崛起 / 壬辰倭乱余波",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "tax_system": "一条鞭法(万历)",
+        "currency": "白银本位(美洲流入)",
+        "market_integration": "运河—海运漕运命脉",
+        "fiscal_health": {
+          "value": "辽东军费透支+加派(辽饷)",
+          "layer": "scholarship",
+          "basis": "赋税↔后勤半径：加派直接决定边镇补给"
+        }
+      },
+      "society": {
+        "population_scale": "辽东卫所军户+民户，小冰期灾荒",
+        "social_structure": [
+          "军户",
+          "民户",
+          "女真羁縻"
+        ],
+        "standing_army_link": {
+          "value": "卫所军制→兵额与户均绑定，人口↔常驻军",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军：军户即兵源，户数衰减=战力衰减"
+        },
+        "livelihood": {
+          "value": "灾荒+加派→流民(李自成之源)",
+          "layer": "inference"
+        }
+      },
+      "doctrine": {
+        "dominant_ideology": "程朱理学(官学)",
+        "state_religion": "儒教(非国教但正统)",
+        "knowledge_system": "科举/实学萌芽",
+        "public_opinion": "清议/东林",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "key_institutions": [
+          "辽东都司",
+          "奴儿干都司(废)",
+          "九边"
+        ],
+        "geographic_pivots": [
+          "广宁",
+          "沈阳",
+          "辽阳",
+          "赫图阿拉"
+        ],
+        "critical_nodes": [
+          "抚顺关",
+          "山海关"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "凭边墙+屯田守辽东，以夷制夷",
+        "center_of_gravity": "辽阳—沈阳防线",
+        "vulnerabilities": [
+          "卫所崩坏",
+          "小冰期粮荒",
+          "党争误国"
+        ],
+        "windows": [
+          "1618 后金破抚顺"
+        ],
+        "layer": "inference"
+      }
+    },
+    "fiction": {
+      "label": "虚构世界",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "tang": {
+      "label": "唐（618–907）",
+      "status": "derived",
+      "note": "唐代（均田/府兵、盛世与藩镇）。",
+      "tech": {
+        "productivity": {
+          "value": "曲辕犁+筒车，农业跃升",
+          "layer": "scholarship",
+          "basis": "技术↔生产力"
+        },
+        "key_techs": [
+          "雕版印刷",
+          "大运河(承隋)"
+        ]
+      },
+      "international": {
+        "neighbors": [
+          "突厥",
+          "吐蕃",
+          "回纥",
+          "新罗",
+          "日本"
+        ],
+        "diplomatic_posture": "天可汗/羁縻",
+        "external_threat": "安史后藩镇",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "tax_system": "租庸调制→两税法",
+        "layer": "scholarship"
+      },
+      "society": {
+        "standing_army_link": {
+          "value": "府兵制：兵农合一，均田民户即兵源→人口↔常驻军",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军"
+        }
+      },
+      "doctrine": {
+        "dominant_ideology": "儒释道并流",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "geographic_pivots": [
+          "长安",
+          "洛阳",
+          "节度使藩镇"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "羁縻+藩镇，安史后由盛转衰",
+        "layer": "inference"
+      }
+    },
+    "ming": {
+      "label": "明（1368–1644）",
+      "status": "derived",
+      "note": "明代（含万历朝鲜之役、九边、江南、西南土司等切片）。",
+      "tech": {
+        "productivity": {
+          "value": "农业精耕+棉纺，人畜力为主",
+          "layer": "scholarship",
+          "basis": "技术↔生产力"
+        },
+        "key_techs": [
+          "夯土/砖包边墙",
+          "漕运船闸",
+          "火器(神机营)"
+        ]
+      },
+      "international": {
+        "neighbors": [
+          "蒙古",
+          "女真",
+          "日本",
+          "朝鲜(藩属)"
+        ],
+        "diplomatic_posture": "宗藩+朝贡",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "tax_system": "一条鞭法(后期)",
+        "currency": "白银本位",
+        "market_integration": "运河—海运",
+        "layer": "scholarship"
+      },
+      "society": {
+        "standing_army_link": {
+          "value": "卫所军户制→兵农合一，人口↔常驻军",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军"
+        },
+        "social_structure": [
+          "军户",
+          "民户",
+          "匠户",
+          "灶户"
+        ]
+      },
+      "doctrine": {
+        "dominant_ideology": "程朱理学(官学)/阳明心学(民间)",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "geographic_pivots": [
+          "北京",
+          "南京",
+          "九边重镇"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "守内虚外、以文驭武",
+        "layer": "inference"
+      }
+    },
+    "qing_modern": {
+      "label": "清及近代（1685–1900）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "guangzhong": {
+      "label": "秦末（前209–前202）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "huabei": {
+      "label": "近现代（1911–1950）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "warring_states": {
+      "label": "战国（前475–前221）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "qin_han": {
+      "label": "秦汉（前221–220）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "three_kingdoms": {
+      "label": "三国（190–280）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "two_jin": {
+      "label": "两晋南北朝（265–589）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "sui_tang": {
+      "label": "隋唐（581–907）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "song": {
+      "label": "宋（960–1279）",
+      "status": "derived",
+      "note": "宋代（火器萌芽、纸币、文人政治）。",
+      "tech": {
+        "productivity": {
+          "value": "农业+手工业(瓷器/纺织)高峰，火药武器化",
+          "layer": "scholarship",
+          "basis": "技术↔生产力"
+        },
+        "key_techs": [
+          "火药武器",
+          "指南针航海",
+          "活字印刷"
+        ]
+      },
+      "international": {
+        "neighbors": [
+          "辽/金",
+          "西夏",
+          "大理"
+        ],
+        "diplomatic_posture": "岁币/盟约",
+        "external_threat": "辽金蒙",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "currency": "铜钱+交子(世界最早纸币)",
+        "market_integration": "突破坊市制",
+        "layer": "scholarship"
+      },
+      "society": {
+        "standing_army_link": {
+          "value": "募兵(禁军)+更戍法，财政养兵→人口↔常驻军(财政视角)",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军"
+        },
+        "social_structure": [
+          "士农工商",
+          "厢军/乡兵"
+        ]
+      },
+      "doctrine": {
+        "dominant_ideology": "理学(程朱)成型",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "geographic_pivots": [
+          "开封/临安",
+          "燕云(失)"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "守内虚外、重文抑武",
+        "layer": "inference"
+      }
+    },
+    "yuan_ming": {
+      "label": "元明之际（1363±）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "cross_dynastic": {
+      "label": "跨朝代（以黄河为例）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "sui_yuan": {
+      "label": "隋唐—元（581–1368）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "qin": {
+      "label": "秦（前230–前207）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    },
+    "han": {
+      "label": "汉（前202–220）",
+      "status": "derived",
+      "note": "汉代（含黄巾与流民）。",
+      "tech": {
+        "productivity": {
+          "value": "牛耕普及+耧车，铁器推广",
+          "layer": "scholarship",
+          "basis": "技术↔生产力"
+        }
+      },
+      "international": {
+        "neighbors": [
+          "匈奴",
+          "西域诸国",
+          "南越",
+          "朝鲜"
+        ],
+        "diplomatic_posture": "和亲/征伐/通西域",
+        "external_threat": "匈奴",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "tax_system": "田租+算赋口赋",
+        "currency": "五铢钱",
+        "market_integration": "盐铁官营",
+        "layer": "scholarship"
+      },
+      "society": {
+        "standing_army_link": {
+          "value": "征兵(郡国兵)+东汉募兵，黄巾后军阀私兵→人口↔常驻军",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军"
+        },
+        "livelihood": {
+          "value": "黄巾→流民，坞堡自保",
+          "layer": "inference"
+        }
+      },
+      "doctrine": {
+        "dominant_ideology": "独尊儒术(汉武)",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "geographic_pivots": [
+          "长安",
+          "洛阳"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "强干弱枝、经略西域",
+        "layer": "inference"
+      }
+    },
+    "qing": {
+      "label": "清（1644–1912）",
+      "status": "derived",
+      "note": "清代（入关后至近代）。",
+      "tech": {
+        "productivity": {
+          "value": "承明农技，摊丁入亩促垦",
+          "layer": "scholarship",
+          "basis": "技术↔生产力"
+        },
+        "key_techs": [
+          "绿营/八旗驻防",
+          "火器渐制"
+        ]
+      },
+      "international": {
+        "neighbors": [
+          "准噶尔",
+          "俄罗斯",
+          "藩属朝贡国"
+        ],
+        "diplomatic_posture": "天朝朝贡+条约(后期)",
+        "layer": "scholarship"
+      },
+      "economy": {
+        "tax_system": "摊丁入亩",
+        "currency": "白银+铜钱",
+        "market_integration": "全国市场成型",
+        "layer": "scholarship"
+      },
+      "society": {
+        "standing_army_link": {
+          "value": "八旗+绿营，旗民分治，人口↔常驻军",
+          "layer": "scholarship",
+          "basis": "人口↔常驻军"
+        },
+        "social_structure": [
+          "旗人",
+          "民人",
+          "苗瑶土司"
+        ]
+      },
+      "doctrine": {
+        "dominant_ideology": "程朱理学+钦定典籍",
+        "layer": "scholarship"
+      },
+      "anchors": {
+        "geographic_pivots": [
+          "北京",
+          "承德",
+          "边疆将军辖区"
+        ],
+        "layer": "scholarship"
+      },
+      "strategic": {
+        "grand_strategy": "满汉并治、边疆封禁与拓张并行",
+        "layer": "inference"
+      }
+    },
+    "yuan": {
+      "label": "元（1271–1368）",
+      "status": "stub",
+      "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+      "tech": {
+        "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+      },
+      "international": {
+        "_gap": "待补：邻邦/外交态势"
+      },
+      "economy": {
+        "_gap": "待补：赋税/货币/市场整合"
+      },
+      "society": {
+        "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+      },
+      "doctrine": {
+        "_gap": "待补：主流意识形态/知识体系"
+      },
+      "anchors": {
+        "_gap": "待补：关键制度/地理支点"
+      },
+      "strategic": {
+        "_gap": "待补：大战略/重心/脆弱性"
+      }
+    }
+  },
+  "strategic_dims": {
+    "political_cohesion": {
+      "name": "政治凝聚",
+      "short": "凝聚",
+      "note": "朝堂/派系凝聚力，派生自 制度+思想（R6 courtCohesion/infight）"
+    },
+    "material_logistics": {
+      "name": "物质后勤",
+      "short": "后勤",
+      "note": "技术↔生产力、赋税↔后勤半径（R7 物理后勤）"
+    },
+    "population_mobilization": {
+      "name": "人口动员",
+      "short": "动员",
+      "note": "人口↔常驻军、流民↔动员潜力（社会维扩展）"
+    },
+    "geopolitical_strategy": {
+      "name": "地缘战略",
+      "short": "地缘",
+      "note": "地形/关隘/外交→战略重心与窗口（地理+事件维扩展）"
+    }
+  },
+  "scale_tiers": {
+    "tactical": {
+      "name": "战术",
+      "note": "交战/个役，展开个体视角"
+    },
+    "operational": {
+      "name": "战役",
+      "note": "会战/战区，中等聚合"
+    },
+    "strategic": {
+      "name": "战略",
+      "note": "全局/时代，聚合省略个体"
     }
   }
 }

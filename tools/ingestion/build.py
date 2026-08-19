@@ -498,6 +498,10 @@ def _slice_meta(bundle):
         "terrain_grid": m.get("terrain_grid"),
         "terrain_off_grid": m.get("terrain_off_grid", False),
         "dims": m.get("dims"),
+        "epoch": m.get("epoch"),
+        "scale_tier": m.get("scale_tier"),
+        # 注意：strategic 战略配方体积大，只留在切片 meta（build_scene 已透传），
+        # 不进壳——壳 500KB 契约 + 战略面板按需加载切片即可消费。
         "counts": {
             "src": len(bundle.get("sources", [])),
             "place": len(bundle.get("places", [])),
@@ -517,6 +521,7 @@ def _slice_meta(bundle):
 
 def main():
     reg = load_registry()
+    scenes_reg = reg  # 地形注册表 load 会重载 reg，先留存 scenes 注册表引用（epochs.js 落盘用）
     resolved = reg["_resolved"]
 
     sd = {
@@ -527,6 +532,9 @@ def main():
         },
         "regions": reg.get("regions", []),
         "dimensions": reg.get("dimensions", {}),
+        # epochs（时代背景七维）体积大，独立成 demo/epochs.js 懒加载，不进壳
+        "strategic_dims": reg.get("strategic_dims", {}),
+        "scale_tiers": reg.get("scale_tiers", {}),
         "scene_order": [sc["_key"] for sc in resolved],
     }
 
@@ -705,6 +713,18 @@ def main():
         sd["control_seats"] = []
         sd["control_years"] = [1616, 1644]
 
+    # 时代背景七维全局参数表：独立懒加载 chunk（epochs.js），不进壳（壳体积守 500KB 契约）
+    epochs_path = os.path.join(os.path.dirname(OUT), "epochs.js")
+    with open(epochs_path, "w", encoding="utf-8") as f:
+        f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
+        f.write("// 权威数据源：data/scenes.json 顶层 epochs（时代背景七维全局参数表，历史资料可视化上屏）。\n")
+        f.write("// 懒加载 chunk：解析期由 data.js bootstrap document.write 同步装载，无需前端改动。\n")
+        f.write("window.SANDBOX_EPOCHS = ")
+        json.dump(scenes_reg.get("epochs", {}), f, ensure_ascii=False, indent=1)
+        f.write(";\n")
+        f.write("window.SANDBOX_DATA.epochs = window.SANDBOX_EPOCHS;\n")
+    print("已生成 %s  (%.0f KB)" % (epochs_path, os.path.getsize(epochs_path) / 1024.0))
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
@@ -721,6 +741,7 @@ def main():
         f.write("\nwindow.SANDBOX_SLICES = window.SANDBOX_SLICES || {};\n")
         f.write("(function () {\n")
         f.write("  var order = (window.SANDBOX_DATA.scene_order) || [];\n")
+        f.write("  document.write('<script src=\"epochs.js\"><\\/script>');\n")
         f.write("  for (var i = 0; i < order.length; i++) {\n")
         f.write("    document.write('<script src=\"slices/' + order[i] + '.js\"><\\/script>');\n")
         f.write("  }\n")

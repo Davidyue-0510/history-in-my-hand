@@ -22,6 +22,56 @@ window.SANDBOX_SLICES["beijing"] = {
    1,
    6
   ],
+  "epoch": "yuan_ming",
+  "scale_tier": "operational",
+  "strategic": {
+   "political_cohesion": {
+    "from": [
+     "strategic",
+     "doctrine"
+    ],
+    "from_dims": [
+     3,
+     5
+    ],
+    "layer": "inference",
+    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+   },
+   "material_logistics": {
+    "from": [
+     "tech",
+     "economy"
+    ],
+    "from_dims": [
+     2,
+     3
+    ],
+    "layer": "inference",
+    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+   },
+   "population_mobilization": {
+    "from": [
+     "society"
+    ],
+    "from_dims": [
+     4
+    ],
+    "layer": "inference",
+    "note": "人口↔常驻军；流民→动员潜力"
+   },
+   "geopolitical_strategy": {
+    "from": [
+     "international",
+     "anchors"
+    ],
+    "from_dims": [
+     1,
+     6
+    ],
+    "layer": "inference",
+    "note": "地形/关隘/外交→战略重心与窗口"
+   }
+  },
   "page": "beijing.html",
   "key": "beijing",
   "scene_id": "beijing",
