@@ -20,6 +20,7 @@ window.SANDBOX_SLICES["maling"] = {
   },
   "dims": [
    1,
+   2,
    6
   ],
   "epoch": "warring_states",
@@ -159,6 +160,9 @@ window.SANDBOX_SLICES["maling"] = {
     "end": -341,
     "era_text": "周显王二十八年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +181,9 @@ window.SANDBOX_SLICES["maling"] = {
     "era_text": "周显王二十九年"
    },
    "place": "maling",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +202,9 @@ window.SANDBOX_SLICES["maling"] = {
     "era_text": "周显王二十九年"
    },
    "place": "maling",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +227,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +252,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +277,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +302,10 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +328,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +353,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +378,10 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +404,11 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +431,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +456,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +481,9 @@ window.SANDBOX_SLICES["maling"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -467,6 +514,9 @@ window.SANDBOX_SLICES["maling"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

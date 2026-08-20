@@ -40,6 +40,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -344,6 +348,12 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "筑城兵力：祖大寿、何可纲兵四千，班军一万四千，石砫土兵一万。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -366,6 +376,11 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -388,6 +403,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "战场在长山、小凌河间。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -410,6 +429,11 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "张春军为声援，未直接入城。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -432,6 +456,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "何可纲不从降，被祖大寿令人掖出城外杀之。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -454,6 +482,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "大寿言妻子在锦州，请归设计诱守者降。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -476,6 +508,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "张春被执在九月。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -498,6 +534,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "筑城为大清出兵的直接原因。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -520,6 +560,9 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "城破粮尽，食人马。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -542,6 +585,10 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "承宗因长山之败及筑城召衅被论，引病归。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -564,6 +611,11 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "邱禾嘉与孙承宗筑城方案不同，梁廷栋支持承宗。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -594,6 +646,9 @@ window.SANDBOX_SLICES["dalinghe"] = {
     ],
     "accept": "考证长山之败的具体日期，并说明《三编》与《史稿》记载差异的原因。"
    },
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -616,6 +671,11 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "confidence": 0.88,
    "scale": "province",
    "note": "亦有观点强调筑城渐进本为稳健之策，惜朝廷中枢摇摆、任将非人，致前功尽弃。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   }

@@ -26,6 +26,10 @@ window.SANDBOX_SLICES["guangning"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -375,6 +379,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十五年, 置广宁卫, 隶辽东都司。",
    "note": "广宁在辽代即为显州, 明初降为卫, 正统后辽东镇移驻。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -391,6 +399,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "土木之变, 辽东镇总兵移驻广宁, 节制辽西诸卫。",
    "note": "广宁由此成为明在辽西的最高军事支点。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -407,6 +419,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天启二年正月, 后金取广宁, 王化贞弃城走, 孙得功降, 熊廷弼以辽西民众入关。",
    "note": "经略熊廷弼主守、巡抚王化贞主战, 经抚不和是广宁速陷的直接原因。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -423,6 +439,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "广宁已陷, 辽西尽失, 朝议沿江增戍, 以防清兵渡。",
    "note": "朝鲜对广宁之陷的反应, 与明方记载相互印证明已无辽西屏障。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -439,6 +460,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "广宁之败, 经抚异议, 事权不一, 非战之罪也。",
    "note": "亦有学者强调明辽东总体战略空虚, 广宁孤城难守, 不应全归咎于人争。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -463,6 +488,10 @@ window.SANDBOX_SLICES["guangning"] = {
     "accept": "给出广宁陷落时明军在辽西的估计兵力区间与主要部署, 注明分歧来源",
     "effort": "2-3 周"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -486,6 +515,10 @@ window.SANDBOX_SLICES["guangning"] = {
     "accept": "整理至少两方史料对经抚责任的不同表述, 标出史料政治立场的影响",
     "effort": "1-2 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -508,6 +541,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -530,6 +567,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -552,6 +593,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -574,6 +620,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -596,6 +646,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -618,6 +673,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "time 为推断，原文未明确纪年",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -640,6 +699,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -662,6 +725,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -684,6 +752,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -706,6 +778,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -728,6 +804,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "time 为推断，原文未明确纪年",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -750,6 +830,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "内臣刘若愚自述，魏忠贤专政下被排挤出司礼监。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -772,6 +856,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "刘若愚自述。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -794,6 +882,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "阉党败后刘若愚仍被牵入诏狱。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -816,6 +908,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "刘若愚自辩：暗害杨、左者非己。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -838,6 +934,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "刘若愚自述冤苦。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -860,6 +960,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.85,
    "scale": "county",
    "note": "内臣刘若愚直指熊廷弼之死源于阉党冯铨个人私怨（小说情节羞辱），是明朝内派系倾轧致封疆大吏被杀的典型，印证'派系因自身利益润色夸张'。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -882,6 +986,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "东林杨涟弹阉党首领，引发阉党大狱，杨涟死于诏狱。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -904,6 +1012,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "阉党编纂名录系统性诬东林，杨涟被列为'大刀'。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -926,6 +1038,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "person",
    "note": "内臣视角记魏忠贤—客氏—王体乾阉党核心。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -942,6 +1058,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.85,
    "note": "西平堡为广宁外围要冲，其陷落直接动摇广宁。",
    "source": "mingtongjian",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -958,6 +1078,11 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.85,
    "note": "明通鉴所载经抚不和，清楚暴露中枢（阁臣叶向高）、枢部（张鹤鸣）、言官、封疆间的门户对立——熊廷弼孤立，广宁速陷之根。",
    "source": "mingtongjian",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -974,6 +1099,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.85,
    "note": "广宁溃败现场：经略与巡抚的最后一幕，亦是封疆大吏互卸责的缩影。",
    "source": "mingtongjian",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -990,6 +1119,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.8,
    "note": "经抚同败而处分各异，熊廷弼终因阉党构陷被诛（见酌中志 ZZ006），王化贞久系后亦死。",
    "source": "mingtongjian",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1012,6 +1145,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1034,6 +1171,9 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "考异指出《明史》本传作自刎，此处从《实录》书法",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1056,6 +1196,9 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1078,6 +1221,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1100,6 +1247,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1122,6 +1273,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1144,6 +1299,9 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1166,6 +1324,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1188,6 +1350,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1210,6 +1376,10 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1232,6 +1402,9 @@ window.SANDBOX_SLICES["guangning"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1262,6 +1435,9 @@ window.SANDBOX_SLICES["guangning"] = {
     ],
     "accept": "核实罗一贯死因，判定自刎或遇杀"
    },
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

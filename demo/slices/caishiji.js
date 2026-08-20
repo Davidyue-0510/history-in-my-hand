@@ -19,6 +19,9 @@ window.SANDBOX_SLICES["caishiji"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "song",
@@ -152,6 +155,10 @@ window.SANDBOX_SLICES["caishiji"] = {
     "end": 1161,
     "era_text": "绍兴三十一年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +177,10 @@ window.SANDBOX_SLICES["caishiji"] = {
     "era_text": "绍兴三十一年"
    },
    "place": "caishiji",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -188,6 +199,10 @@ window.SANDBOX_SLICES["caishiji"] = {
     "era_text": "绍兴三十一年"
    },
    "place": "caishiji",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -210,6 +225,9 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "金主完颜亮撕毁和议，兵分多路渡淮",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -232,6 +250,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "金兵临采石，今安徽马鞍山",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +276,9 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "江防瓦解",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +301,9 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "虞允文以文臣身份督战",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +326,11 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +353,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "金军大败",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +379,9 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +404,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +430,9 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -408,6 +455,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -430,6 +481,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为后世评价，非直接史实",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -452,6 +507,10 @@ window.SANDBOX_SLICES["caishiji"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为总结性评价，非直接史实",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -482,6 +541,9 @@ window.SANDBOX_SLICES["caishiji"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

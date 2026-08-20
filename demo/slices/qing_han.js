@@ -18,8 +18,11 @@ window.SANDBOX_SLICES["qing_han"] = {
    "person:kangxi2": "康熙帝"
   },
   "dims": [
+   1,
+   3,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "qing",
   "scale_tier": "strategic",
@@ -135,6 +138,12 @@ window.SANDBOX_SLICES["qing_han"] = {
     "era_text": "顺治元"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +162,11 @@ window.SANDBOX_SLICES["qing_han"] = {
     "era_text": "顺治二"
    },
    "place": "beijing",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +185,11 @@ window.SANDBOX_SLICES["qing_han"] = {
     "era_text": "康熙末"
    },
    "place": "beijing",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -193,6 +212,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -215,6 +238,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -237,6 +264,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "江左具体地点未在place白名单，暂用changan代指，待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -259,6 +290,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "地点未指明，留空",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -281,6 +316,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -303,6 +342,11 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -325,6 +369,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -347,6 +395,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "推断江左为抗清主要区域，具体地点待考",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -369,6 +421,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "推断为政策导向，非完全实现",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -391,6 +447,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -413,6 +473,10 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "推断冲突为剃发令引发，原文未明说",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -435,6 +499,11 @@ window.SANDBOX_SLICES["qing_han"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "推断为满汉一体政策的具体体现",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -465,6 +534,10 @@ window.SANDBOX_SLICES["qing_han"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

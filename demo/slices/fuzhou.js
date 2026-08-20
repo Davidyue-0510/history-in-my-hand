@@ -24,6 +24,8 @@ window.SANDBOX_SLICES["fuzhou"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -255,6 +257,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武十四年, 置复州卫。",
    "note": "复州扼辽南陆桥, 南通金州、北连盖州。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -271,6 +277,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天命六年, 取复州、盖州。",
    "note": "复州陷与辽沈之陷同属 1621 三月战役序列。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -287,6 +297,11 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "毛文龙据皮岛, 时出兵袭复州、金州沿海。",
    "note": "东江镇活动使后金南向海运与朝鲜通道长期受扰。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -303,6 +318,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "复州居辽南陆桥, 为东江镇袭辽之跳板。",
    "note": "与金州同为辽南门户, 海陆皆要。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -326,6 +345,9 @@ window.SANDBOX_SLICES["fuzhou"] = {
     "accept": "核定复州陷落的具体月日与明方弃守过程",
     "effort": "1-2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -350,6 +372,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
     "accept": "量化东江镇对复州/金州袭击的次数与成果, 对比双方叙事",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   }

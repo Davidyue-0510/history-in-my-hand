@@ -19,7 +19,8 @@ window.SANDBOX_SLICES["dujiangyan"] = {
   },
   "dims": [
    1,
-   2
+   2,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -144,6 +145,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     "era_text": "秦昭襄王后期"
    },
    "place": "dujiangyan",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +168,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     "era_text": "西汉景帝"
    },
    "place": "chengdu",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -180,6 +191,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     "era_text": "至今"
    },
    "place": "dujiangyan",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -202,6 +218,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文无年号，仅记公元前256年，按原文表述保留",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -224,6 +245,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -246,6 +272,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -268,6 +299,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -290,6 +325,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -312,6 +351,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "李冰为蜀守，主持修建",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -334,6 +378,11 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -356,6 +405,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文未明说影响范围，但'沃野千里'可合理推出",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -378,6 +431,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文为评价性表述，非直接事实",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -408,6 +465,10 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -18,7 +18,7 @@ window.SANDBOX_SLICES["taiping"] = {
    "person:xiangrong": "向荣"
   },
   "dims": [
-   3,
+   1,
    4,
    5,
    6
@@ -146,6 +146,10 @@ window.SANDBOX_SLICES["taiping"] = {
     "era_text": "咸丰元"
    },
    "place": "guiping",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -164,6 +168,10 @@ window.SANDBOX_SLICES["taiping"] = {
     "era_text": "咸丰三"
    },
    "place": "nanjing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -182,6 +190,9 @@ window.SANDBOX_SLICES["taiping"] = {
     "era_text": "同治三"
    },
    "place": "nanjing",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -204,6 +215,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "金田属桂平县，以place:guiping代",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -226,6 +240,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -248,6 +265,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "天京即南京",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +290,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -292,6 +315,10 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未指明具体地点，place留空待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -314,6 +341,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +366,9 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "从1851到1864推算，原文未明说具体年数",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +391,10 @@ window.SANDBOX_SLICES["taiping"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "半壁为概数，未指明具体省份",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -388,6 +425,11 @@ window.SANDBOX_SLICES["taiping"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

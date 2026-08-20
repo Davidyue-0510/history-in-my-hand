@@ -20,8 +20,9 @@ window.SANDBOX_SLICES["zhaofen"] = {
   "layer_title": "汉匈和亲通道叠加",
   "timeline_title": "昭君出塞时间轴",
   "dims": [
+   3,
    4,
-   5
+   6
   ],
   "epoch": "warring_states",
   "scale_tier": "strategic",
@@ -137,6 +138,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
     "era_text": "竟宁元"
    },
    "place": "changan",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -155,6 +160,11 @@ window.SANDBOX_SLICES["zhaofen"] = {
     "era_text": "同年"
    },
    "place": "hohhot",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +187,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件主体为和亲，故用event:zf_peace",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +213,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "王昭君封号，地点未明",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -221,6 +239,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "和亲后边疆安宁，属事件结果",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -243,6 +265,9 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "郅支单于被诛后呼韩邪归附，为和亲背景",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -265,6 +290,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "呼韩邪单于身份确认",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -287,6 +316,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "王昭君原为汉宫宫女",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -309,6 +342,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件性质为和亲",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -331,6 +368,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "和亲后边境冲突减少",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -361,6 +402,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

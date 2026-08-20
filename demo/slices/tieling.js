@@ -27,6 +27,9 @@ window.SANDBOX_SLICES["tieling"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -422,6 +425,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十一年三月, 置铁岭卫指挥使司于奉集堡。先是元将拔金完哥率其部属金千吉等来附, 至是, 遣指挥佥事李文、高颙, 镇抚杜锡, 置卫于奉集县, 以抚安其众。",
    "note": "依《明太祖实录》; 奉集堡与朝鲜铁岭系两地同名, 此铁岭卫与朝鲜半岛无关。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -438,6 +446,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "徙辽东铁岭卫治于沈阳、开元两界古嚚州之地。",
    "note": "嚚州即银州, 今铁岭市银州区。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -454,6 +467,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "李成梁字汝契, 高祖英自朝鲜内附, 授世铁岭卫指挥佥事, 遂家焉。",
    "note": "李成梁的族裔身份 (朝鲜系) 是李如松辈争议的话题, 章炳麟《訄书》曾为李成梁作赞。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -470,6 +488,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "四年九月锡林阿大入辽东, 总兵王治道战死, 擢成梁署都督佥事代之。",
    "note": "辽东总兵驻节广宁 (今北镇), 非铁岭; 铁岭是李成梁故里与户籍。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -486,6 +508,9 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "成梁镇辽 22 年, 先后奏大捷者十, 帝辄祭告郊庙, 受廷臣贺。蟒衣金缯, 岁赐稠叠。边帅武功之盛, 二百年来未有也。",
    "note": "明史明方赞美; 现代综述批评其虚报战功、杀平民冒级, 构成 record_vs_scholarship 冲突。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -502,6 +527,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "三十四年成梁以地孤悬难守, 与督抚蹇达、赵楫建议弃之, 尽徙居民于内地。居民恋家室, 则以大军驱迫之, 死者狼籍。",
    "note": "六年累计生聚 6 万 4 千余户, 一夕尽弃。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -518,6 +548,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历三十四年，成梁以宽甸六堡孤悬难守，奏请弃之，徙其民六万余户于内地。",
    "note": "明史万历三十四年 (1606); 部份二手综述记万历三十六年 (1608), 数值上为冲突。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -534,6 +569,9 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "",
    "note": "维基记 1608; 与明史 1606 相差 2 年, 来源尚未点校核实。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -550,6 +588,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "成梁去辽十年之间, 更易八帅, 边备益弛。",
    "note": "万历十九年解任, 二十六年成梁复镇, 期间如马林等八人。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -566,6 +608,9 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十三年 (1615) 卒, 享年九十。",
    "note": "公历 1615 年; 明史本传数值。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -582,6 +627,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "李如柏时任辽东总兵, 由清河出鸦鹘关, 指向兴京老城。",
    "note": "李如柏是李成梁次子, 萨尔浒之战南路军主将。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -598,6 +648,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "七月, 努尔哈赤亲自领兵攻占铁岭。",
    "note": "开铁之战六月开原、七月铁岭, 实为同一次战事两阶段。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -614,6 +668,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "明总兵马林战死, 来自铁岭的援兵也被击败。",
    "note": "现代综述补全了清实录中略写的明方动态。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -630,6 +688,9 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "",
    "note": "维基记后金兵 4 万; 清实录原文仅记『万骑』。数字未严格对照。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -646,6 +707,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "李成梁位望益隆, 贵极而骄, 奢修无度, 军资马价盐课市赏乾没不资, 虚报战功, 杀平民冒级。",
    "note": "与 T005 (明史赞美) 构成 record_vs_scholarship 冲突; 现代综述与明史立场差。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -662,6 +727,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "兵科给事中宋一韩力言弃地非策, 巡按御史熊廷弼勘奏如一韩言。",
    "note": "事件认同, 评价对立; 可作为内部冲突对带出现。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -678,6 +747,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "清康熙三年废卫设县, 铁岭、开原县属奉天府。",
    "note": "铁岭卫→铁岭县转型, 民国起入辽宁省。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -704,6 +778,9 @@ window.SANDBOX_SLICES["tieling"] = {
     "accept": "给出双方兵力与伤亡区间, 澄清「万骑」的口径(是否为后金总动员而非攻铁岭专属兵力), 并说明明方奏报无细目的制度原因。",
     "effort": "2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -730,6 +807,10 @@ window.SANDBOX_SLICES["tieling"] = {
     "accept": "确认朝鲜实录是否对铁岭(李成梁起家地)陷落有专条, 录入其评价与情绪基调, 评估「朝鲜族裔将领故地」是否影响朝方叙事权重。",
     "effort": "1-2 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -746,6 +827,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "后金天命六年 (天启元年, 1621) 努尔哈赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取沈阳。",
    "note": "开铁陷落为熊廷弼复出背景。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -768,6 +853,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -790,6 +879,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "明史记熊廷弼出关时铁岭复失",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -812,6 +906,11 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -834,6 +933,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "兵力部署计划",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -856,6 +959,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -878,6 +985,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -900,6 +1011,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -922,6 +1037,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "时间推断为泰昌元年",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -944,6 +1063,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -966,6 +1089,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "朱童蒙评语",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -988,6 +1115,10 @@ window.SANDBOX_SLICES["tieling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

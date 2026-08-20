@@ -18,7 +18,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "person:zhuyuanzhang": "朱元璋"
   },
   "dims": [
+   1,
    4,
+   5,
    6
   ],
   "epoch": "han",
@@ -144,6 +146,12 @@ window.SANDBOX_SLICES["hongjin"] = {
     "era_text": "至正十一"
    },
    "place": "yingzhou",
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +170,10 @@ window.SANDBOX_SLICES["hongjin"] = {
     "era_text": "洪武元"
    },
    "place": "nanjing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -184,6 +196,12 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "红巾军起义地点为颍州，已映射至白名单",
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -206,6 +224,10 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -228,6 +250,10 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -250,6 +276,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "建国地点未明说，按常识推断为南京，已映射至白名单",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -272,6 +301,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -294,6 +326,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -316,6 +351,10 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -338,6 +377,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -360,6 +402,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "从两事件时间推断红巾军至明朝建立的时间跨度",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -382,6 +427,9 @@ window.SANDBOX_SLICES["hongjin"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说因果关系，但可合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -412,6 +460,10 @@ window.SANDBOX_SLICES["hongjin"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

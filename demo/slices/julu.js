@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["julu"] = {
   },
   "dims": [
    1,
+   2,
+   4,
    6
   ],
   "epoch": "qin_han",
@@ -159,6 +161,10 @@ window.SANDBOX_SLICES["julu"] = {
     "end": -207,
     "era_text": "秦二世三年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +183,10 @@ window.SANDBOX_SLICES["julu"] = {
     "era_text": "秦二世三年"
    },
    "place": "julu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +205,10 @@ window.SANDBOX_SLICES["julu"] = {
     "era_text": "秦二世三年"
    },
    "place": "julu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +231,9 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "宋义未在白名单，未建实体",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +256,10 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +282,10 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +308,10 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "王离未在白名单，未建实体",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +334,10 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +360,9 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +385,10 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +411,9 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "章邯未在白名单，未建实体",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +436,9 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文未明言兵力对比，属合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +461,9 @@ window.SANDBOX_SLICES["julu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为史家评述，非直接事实",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +494,9 @@ window.SANDBOX_SLICES["julu"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

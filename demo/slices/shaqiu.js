@@ -18,6 +18,7 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "person:zhao_gao": "赵高"
   },
   "dims": [
+   1,
    3,
    6
   ],
@@ -135,6 +136,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
     "era_text": "始皇三七"
    },
    "place": "xingtai",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +158,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
     "era_text": "同年"
    },
    "place": "xingtai",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +184,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "沙丘平台位于今邢台，已映射至place:xingtai",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +210,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +236,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +262,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +288,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为结果性描述，推断为矫诏引发的直接后果",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +314,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文并列赵高李斯，未明说主谋，推断赵高主导",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +340,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.5,
    "scale": "empire",
    "note": "sq_false为已登记事件，推断矫诏属此事件范畴",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +366,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "沙丘平台具体位置待考，已映射至place:xingtai",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -359,6 +400,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -163,6 +163,10 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "何欣然为穿书女/明星，将幼女巧妹托父母后赴外地拍戏追梦。",
    "quote": "何欣然突然打电话过来，说要去外地拍戏，巧妹太小了，没办法再照顾，因此只能将她送到父母身边。",
    "value_text": "何欣然=不负责任但非恶意之母。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -177,6 +181,9 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "何永安委托叶为安护巧妹，使其不在风言风语中长大。",
    "quote": "（何永安将巧妹托付，叶为安附身护其成长）",
    "value_text": "叶为安介入动机=何永安委托。",
+   "dims": [
+    6
+   ],
    "_party": "何父自述",
    "_faction": null
   },
@@ -191,6 +198,10 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "何欣然嫁入林家（首富），曾为明星的身份被翻出但未被追究。",
    "quote": "欣欣嫁入林家后曾经是明星的事情确实被狗仔翻了出来……林家也不是，她就放心吧。",
    "value_text": "何欣然再婚首富，巧妹被接纳。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -205,6 +216,10 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "叶为安护巧妹于善意环境中健康成长。",
    "quote": "（叶为安与王莲居于何家村，巧妹快乐长大）",
    "value_text": "矫正后巧妹未受流言所伤。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -219,6 +234,9 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "作者借穿书女反思'追梦与尽责'的张力：爱不是缺席的借口。",
    "quote": "（作者借巧妹命运谈母爱与义务）",
    "value_text": "何欣然是'追梦母亲'样本。",
+   "dims": [
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -233,6 +251,10 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "若无叶为安介入，巧妹在'她妈不安分'的流言中自我怀疑、童年被毁。",
    "quote": "（推演）龙生龙，凤生凤……谢夕兰保不准和她妈一样。",
    "value_text": "反事实：未介入→巧妹童年被流言毁。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -254,6 +276,9 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -268,6 +293,9 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

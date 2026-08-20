@@ -25,6 +25,8 @@ window.SANDBOX_SLICES["jinzhou"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -279,6 +281,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十四年, 置广宁中屯卫于锦州。",
    "note": "锦州为辽西走廊咽喉, 北卫广宁、南卫宁远。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -295,6 +302,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "崇祯十四年, 大清兵围锦州, 祖大寿御于城。",
    "note": "松锦之战序幕, 明调洪承畴总督蓟辽援锦。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -311,6 +322,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "十五年, 松山破, 洪承畴被擒, 祖大寿以锦州降。",
    "note": "明方《崇祯实录》记洪承畴「殉难」, 清方记其被擒后降, 立场派生明显分歧。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -327,6 +342,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "清兵围锦州, 明援大溃, 辽西旦夕且不保。",
    "note": "朝鲜作为第三方, 对清军战力增长的观察较客观。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -343,6 +363,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "松锦既败, 蓟辽无可用之兵, 关门单弱。",
    "note": "此役与 1619 萨尔浒、1621 辽沈之陷并列为明亡三大节点。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -367,6 +391,9 @@ window.SANDBOX_SLICES["jinzhou"] = {
     "accept": "给出松锦之战明军总兵力的估计区间, 列明各说的出处与采信理由",
     "effort": "2-3 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -390,6 +417,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
     "accept": "对比祖大寿两次降清的史料记述, 分析其作为明将降清的特殊处境",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -405,6 +436,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "蓟辽总督洪承畴会八镇兵于宁远……合曹变蛟、白广恩、马科、吴三桂、王廷臣八总兵军十三万，马四万，并集宁远。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -420,6 +456,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.85,
    "quote_status": "paraphrase_unverified",
    "quote": "张若麒诣军中，见诸镇兵大集，围可立解，密奏上闻，而陈新甲复贻书趣进兵，承畴不得已，及与邱民仰、曹变蛟统兵救锦。是日，驻师松山。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -435,6 +475,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "宣府总兵官杨国柱败绩，死之。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -450,6 +494,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "甲子夜，大同总兵王朴先遁，总兵马科、李辅明及宁远总兵吴三桂、密云总兵唐通、辽东总兵白广恩相继走，诸镇兵皆溃。大清遣兵邀之塔山。丙寅，朴、三桂率残卒自杏山遁，遇大清兵于高桥，伏四起，尽歼其众，二人仅以身免。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -465,6 +513,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "承畴所统士卒十三万，先后失亡五万余人，自是锦州围益急，而松山被围，外援亦绝。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -480,6 +532,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "大清兵克松山……城遂下，巡抚邱民仰及总兵官曹变蛟、王廷臣……皆死之。承畴及祖大乐被执……承畴遂降于大清。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -495,6 +551,11 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.9,
    "quote_status": "paraphrase_unverified",
    "quote": "祖大寿以锦州降于大清……锦州城中粮亦尽，人相食。大寿战守计穷，遣人投军门乞降，大清遂下锦州。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -510,6 +571,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "confidence": 0.85,
    "quote_status": "paraphrase_unverified",
    "quote": "时论松山失事，以朴先逃，下法司会鞫拟罪，而吴三桂仍镇山海，加提督衔，置不问。御史郝晋言：『六镇罪同，皆宜死。三桂实辽左主将，不战而逃，奈何反加提督！』",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

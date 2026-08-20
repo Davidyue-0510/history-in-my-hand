@@ -17,9 +17,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "person:zhangzhongjing": "张仲景"
   },
   "dims": [
-   1,
-   3,
-   4
+   2,
+   4,
+   5,
+   6
   ],
   "epoch": "han",
   "scale_tier": "operational",
@@ -138,6 +139,11 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     "era_text": "建安元"
    },
    "place": "luoyang",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -156,6 +162,11 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     "era_text": "建安廿二"
    },
    "place": "nanyang",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -174,6 +185,11 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     "era_text": "建安末"
    },
    "place": "nanyang",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -196,6 +212,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "地点未明，待消歧",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -218,6 +238,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "宗族具体所在地未明",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -240,6 +264,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "地点未明，待消歧",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -262,6 +290,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "建安七子具体伤亡情况未详",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -284,6 +316,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.6,
    "scale": "county",
    "note": "推断张仲景因疫著书，原文未明说",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -306,6 +342,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "直接关联事件与人物",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -328,6 +368,11 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "推断医方因大疫而急出，原文未明说因果",
+   "dims": [
+    2,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +403,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     ],
     "accept": "明确建安七子凋零与两次大疫的具体关联"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -388,6 +437,10 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

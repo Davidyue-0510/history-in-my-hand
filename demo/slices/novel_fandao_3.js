@@ -14,6 +14,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
   "fictional": true,
   "lead": "拜金绝色女儿：一个清醒拜金的女儿，与『九零家暴男儿子』同属『父亲委托叶为安矫正子女』系列——这是『任意文字→一个世界』的第三个小说副本。",
   "dims": [
+   3,
    4,
    5,
    6
@@ -165,6 +166,10 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "谢夕兰拜金、有演技有颜值有情商，进娱乐圈傍高富帅金主。",
    "quote": "她很清醒，她和高富帅之间，就是单纯的金钱关系，没别的。",
    "value_text": "谢夕兰=拜金绝色女儿，以金钱关系傍金主。",
+   "dims": [
+    4,
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -179,6 +184,10 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "谢泽非因许雯离家酗酒，醉后首打六岁谢夕兰，叶为安介入。",
    "quote": "谢泽非拿着许雯留下来的信将自己关在房间一整夜……第一次动手打了谢夕兰。",
    "value_text": "叶为安介入时间点为谢泽非首次动手打女。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -193,6 +202,11 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "谢夕兰为抢华天成坑害其真爱女友，曝光后成众矢之的。",
    "quote": "为了抢夺高富帅，谢夕兰做了不少事情……谢夕兰一夕之间成了众矢之的。",
    "value_text": "傍金主坑真爱女友是副本核心冲突。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -207,6 +221,11 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "叶为安矫正后谢夕兰认清自我、不再拜金毁人。",
    "quote": "（叶为安代入谢泽非教养谢夕兰，使其摆脱拜金执念）",
    "value_text": "矫正后谢夕兰清醒，未毁人毁己。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -221,6 +240,9 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "作者借谢夕兰揭示拜金与人性：清醒的算计反而最易迷失。",
    "quote": "（作者借娱乐圈镜像反思金钱与自我）",
    "value_text": "谢夕兰是'拜金迷失'的文学样本。",
+   "dims": [
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -235,6 +257,10 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "若无叶为安介入，谢夕兰坑害真爱曝光后身败名裂、人生尽毁。",
    "quote": "（推演）若未介入，谢夕兰一夕之间成了众矢之的。",
    "value_text": "反事实：未介入→谢夕兰身败名裂。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -256,6 +282,9 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -270,6 +299,10 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   },
@@ -284,6 +317,10 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
    "claim": "谢泽非自述：许雯离家后酗酒、首次动手打六岁谢夕兰，是其人生转折。",
    "quote": "（谢泽非自述：许雯走后我把自己关起来，第一次打了夕兰）",
    "value_text": "谢泽非自述承认家暴起点。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "谢父自述",
    "_faction": null
   }

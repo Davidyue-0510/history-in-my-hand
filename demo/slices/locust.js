@@ -19,8 +19,11 @@ window.SANDBOX_SLICES["locust"] = {
   },
   "dims": [
    1,
+   2,
    3,
-   4
+   4,
+   5,
+   6
   ],
   "epoch": "cross_dynastic",
   "scale_tier": "operational",
@@ -163,6 +166,11 @@ window.SANDBOX_SLICES["locust"] = {
     "era_text": "唐武德五年"
    },
    "place": "guanzhong",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -181,6 +189,12 @@ window.SANDBOX_SLICES["locust"] = {
     "era_text": "唐开元三年"
    },
    "place": "shandong",
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +213,11 @@ window.SANDBOX_SLICES["locust"] = {
     "era_text": "北宋熙宁六年"
    },
    "place": "kaifeng",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +236,11 @@ window.SANDBOX_SLICES["locust"] = {
     "era_text": "明崇祯元年"
    },
    "place": "yanan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -235,6 +259,11 @@ window.SANDBOX_SLICES["locust"] = {
     "era_text": "民国三十二年"
    },
    "place": "henan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -257,6 +286,11 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -279,6 +313,11 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "因果关联为原文表述，未作科学验证",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -301,6 +340,11 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -323,6 +367,11 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -345,6 +394,12 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -367,6 +422,11 @@ window.SANDBOX_SLICES["locust"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "原文将蝗不为灾归因于太宗吞蝗，属主观叙事，非客观因果",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -397,6 +457,10 @@ window.SANDBOX_SLICES["locust"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

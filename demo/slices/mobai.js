@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["mobai"] = {
   },
   "dims": [
    1,
+   2,
+   5,
    6
   ],
   "epoch": "qin_han",
@@ -159,6 +161,9 @@ window.SANDBOX_SLICES["mobai"] = {
     "end": -119,
     "era_text": "元狩四年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,10 @@ window.SANDBOX_SLICES["mobai"] = {
     "era_text": "元狩四年"
    },
    "place": "langjuxu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +204,10 @@ window.SANDBOX_SLICES["mobai"] = {
     "era_text": "元狩四年"
    },
    "place": "mobei",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +230,9 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "卫青、霍去病各领五万骑，合计十万",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +255,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +281,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "代郡、右北平为出发地，右北平未在白名单，记于note",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +307,9 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +332,9 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +357,11 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "狼居胥山、姑衍、瀚海均属漠北地区",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +384,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +410,9 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +435,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "寘颜山赵信城未在白名单，记于note",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +461,10 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +487,9 @@ window.SANDBOX_SLICES["mobai"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -467,6 +520,9 @@ window.SANDBOX_SLICES["mobai"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

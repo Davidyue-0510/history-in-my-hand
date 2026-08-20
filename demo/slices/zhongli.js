@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["zhongli"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "two_jin",
@@ -152,6 +154,10 @@ window.SANDBOX_SLICES["zhongli"] = {
     "end": 507,
     "era_text": "天监六年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +176,10 @@ window.SANDBOX_SLICES["zhongli"] = {
     "era_text": "天监六年"
    },
    "place": "zhongli",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -188,6 +198,10 @@ window.SANDBOX_SLICES["zhongli"] = {
     "era_text": "天监六年"
    },
    "place": "zhongli",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -210,6 +224,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "北魏兵力为原文表述，实数待考。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -232,6 +250,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +276,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "曹景宗未在实体白名单，故仅以韦叡为主语。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +302,11 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "合肥未在place白名单，故place填shouyang并在此注明。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +329,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +355,9 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +380,10 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +406,9 @@ window.SANDBOX_SLICES["zhongli"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为史家评述，非直接战况，故标inference。",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -394,6 +439,9 @@ window.SANDBOX_SLICES["zhongli"] = {
     ],
     "accept": "考证钟离之战双方实际兵力对比"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +472,9 @@ window.SANDBOX_SLICES["zhongli"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

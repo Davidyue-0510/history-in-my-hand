@@ -231,6 +231,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "claim": "唐爱丽在于金宝十三岁、过年时被于国强持菜刀追打后离家出走。",
    "quote": "唐爱丽不想死，所以她走了。",
    "confidence": 0.9,
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -243,6 +247,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "于国强临终忏悔：自己也曾打老婆，唐爱丽出走主因是他施暴而非家贫。",
    "quote": "男人打老婆，家里又穷得揭不开锅，女人完全看不到未来的希望，最终跑了。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "于父自述",
    "_faction": null
   },
@@ -256,6 +264,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "claim": "叶为安切入时于金宝刚满十三岁，正值叛逆期。",
    "value_text": "十三岁",
    "quote": "这时候目标于金宝刚满十三岁，正值叛逆期。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -268,6 +280,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "叶为安让金宝把碗里仅剩两个蛋分给两个姐姐，金宝畏惧照做，第一次学会分享。",
    "quote": "把你的蛋给你大姐二姐一人一个。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -280,6 +296,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "于国强（叶为安）向三子女认错：追打唐爱丽致其出走是自己的错，承诺不再喝酒、不恨母。",
    "quote": "你妈会走是我的错，是我喝醉了拿着菜刀跟在你妈后面追，你妈为了活命才走的。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -292,6 +312,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "叶为安介入后，金宝学会分食、不再憎母，姐弟关系趋向和睦。",
    "quote": "她们是你姐姐，你是男子汉，不知道心疼姐姐还让姐姐让着你？吃独食不是什么好习惯。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -304,6 +328,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "generated",
    "claim": "若无叶为安介入（反事实）：金宝延续父辈家暴，成年后酗酒打死妻子入狱，其子成孤儿（原时间线）。",
    "value_text": "反事实：金宝延续家暴至打死妻、入狱、子成孤儿",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   },
@@ -316,6 +344,11 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "作者借于国海夫妻反衬于国强：徐娇拧于国海耳朵是示爱，于国强追砍唐爱丽是施暴——同称'怕老婆'，本质不同。",
    "quote": "家暴和家暴也是有区别的。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -328,6 +361,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "邻居于国海不认为打老婆是什么大事，劝于国强再娶，反映乡村对家暴的麻木。",
    "quote": "再说了，她都一把年纪了，出去能干啥？",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "于国海视角",
    "_faction": null
   },
@@ -340,6 +377,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "长姐于金金与次姐于金银年级名列前茅、想读书，原父母打算让她们初中辍学打工。",
    "quote": "她们自己也想读书……他不准备让她们早早辍学。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -359,6 +400,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     ],
     "accept": "逐副本建 world，或并入本 world 的 events/assertions"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -377,6 +422,10 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     ],
     "accept": "补全该人物支线，或标记为作者留白"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -389,6 +438,11 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "叶为安本体是大世界第一棵桃树妖修，大世界崩溃后入小世界接'父亲对晚辈'的委托积功德延寿。",
    "quote": "叶为安是大世界的一个妖修，乃是天地第一棵桃树。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   }

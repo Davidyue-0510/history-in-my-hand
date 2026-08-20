@@ -41,7 +41,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "person:huo_weihua": "霍维华"
   },
   "dims": [
+   1,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -339,6 +342,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "冯铨借《辽东传》私怨构陷熊廷弼。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -361,6 +368,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -383,6 +394,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "阉党造名录株连东林。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -405,6 +421,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "作者自述著书背景。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -427,6 +447,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -449,6 +473,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "宫廷内部斗争。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -471,6 +499,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "描述魏忠贤权势扩张。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -493,6 +526,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -515,6 +552,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "魏忠贤出身背景。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -537,6 +579,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "描述魏忠贤生活奢靡。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -559,6 +605,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "反映魏忠贤权势。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -581,6 +631,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "魏忠贤破坏制度。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -603,6 +657,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "亦有观点强调熊廷弼刚愎、处置辽事确有失当，不宜尽归党争。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -634,6 +693,12 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     "accept": "整理阉党名录的诸本异同与各书记载差异，标出政治立场影响",
     "effort": "2-3 周"
    },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -656,6 +721,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -678,6 +747,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -700,6 +773,9 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -722,6 +798,9 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -744,6 +823,9 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -766,6 +848,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -788,6 +874,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -810,6 +901,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -832,6 +927,10 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -854,6 +953,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -876,6 +980,11 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "现代学界综论",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -907,6 +1016,12 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     "accept": "整理三朝要典的卷数、案语原貌与阉党名录诸本异同，标出政治立场影响",
     "effort": "2-3 周"
    },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   }

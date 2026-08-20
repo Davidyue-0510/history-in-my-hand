@@ -287,6 +287,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.4,
    "scale": "theater",
    "note": "辽沈战役国军损失 | [auto] 补层 inference",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -307,6 +310,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "锦州关键性",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -328,6 +335,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "淮海战役双方损失",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -348,6 +358,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "兵力对比",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -368,6 +381,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "关键战斗",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -388,6 +405,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "平津战役结局",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -409,6 +429,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "关键战斗",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -429,6 +453,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "兵力对比",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -458,6 +485,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
     ],
     "accept": "解放军在辽沈战役中的具体伤亡数字"
    },
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -479,6 +509,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "双方损失",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -499,6 +532,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "辽沈战役结果",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -519,6 +556,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "淮海战役结果",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -539,6 +580,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "三大战役总损失",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   },
@@ -560,6 +604,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "confidence": 0.6,
    "scale": "theater",
    "note": "解放军损失数据缺失，需进一步考证",
+   "dims": [
+    6
+   ],
    "_party": "解放军",
    "_faction": null
   }

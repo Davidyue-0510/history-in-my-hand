@@ -159,6 +159,10 @@ window.SANDBOX_SLICES["hulao"] = {
     "end": 621,
     "era_text": "武德四年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +181,10 @@ window.SANDBOX_SLICES["hulao"] = {
     "era_text": "武德四年"
    },
    "place": "hulao",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +203,9 @@ window.SANDBOX_SLICES["hulao"] = {
     "era_text": "武德四年"
    },
    "place": "hulao",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +228,10 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +254,10 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "兵力为原文表述，未折算",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +280,10 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +306,10 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +332,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +357,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +382,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +407,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +432,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +457,9 @@ window.SANDBOX_SLICES["hulao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +490,9 @@ window.SANDBOX_SLICES["hulao"] = {
     ],
     "accept": "补充唐军兵力数据或说明缺失原因"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -475,6 +523,9 @@ window.SANDBOX_SLICES["hulao"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

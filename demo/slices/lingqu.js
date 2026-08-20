@@ -20,7 +20,10 @@ window.SANDBOX_SLICES["lingqu"] = {
   "timeline_title": "灵渠开凿时间轴",
   "dims": [
    1,
-   2
+   2,
+   3,
+   4,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -130,6 +133,12 @@ window.SANDBOX_SLICES["lingqu"] = {
     "era_text": "始皇三十三"
    },
    "place": "xingan",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -148,6 +157,11 @@ window.SANDBOX_SLICES["lingqu"] = {
     "era_text": "同年"
    },
    "place": "xingan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +184,10 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "原文无年号，仅记公元前214年，属公元纪年直接引用",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -192,6 +210,11 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -214,6 +237,11 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -236,6 +264,11 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "五岭为泛称，未映射具体地点id",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -258,6 +291,10 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -280,6 +317,10 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -302,6 +343,10 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "原文未明言军事目的，由粮道与戍五岭推出",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -324,6 +369,10 @@ window.SANDBOX_SLICES["lingqu"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "原文未述后世，由'始通'推出，待补史料",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -354,6 +403,10 @@ window.SANDBOX_SLICES["lingqu"] = {
     ],
     "accept": "补充史禄任监御史或都水长等确切官职记载"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -384,6 +437,10 @@ window.SANDBOX_SLICES["lingqu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

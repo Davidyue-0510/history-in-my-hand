@@ -15,6 +15,8 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
   "parties_note": "清流标榜名节、攻宦官；宦官挟制幼主、诬陷清流。双方记载经《后汉书》转述，系统不裁决，只并列。",
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "han",
@@ -211,6 +213,12 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     "gregorian_year": 166
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -230,6 +238,11 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     "gregorian_year": 168
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -249,6 +262,11 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     "gregorian_year": 169
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +288,11 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
    "place": "yingchuan",
    "quote": "（李膺）振拔士人，崇奖名节，海内争附",
    "note": "清流以名教相尚",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "清流文献",
    "_faction": "qingliu"
   },
@@ -291,6 +314,12 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
    "place": "luoyang",
    "quote": "（宦官）诬告党人欲图社稷",
    "note": "无根基势力借皇权压制有根基士族",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "宦官相关",
    "_faction": "huanguan"
   },
@@ -311,6 +340,10 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
    },
    "place": "luoyang",
    "note": "党争削弱统治根基，间接酿黄巾",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -338,6 +371,12 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     ],
     "accept": "补宦官任用制度与其社会来源"
    },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

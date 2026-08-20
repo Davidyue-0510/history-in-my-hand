@@ -18,7 +18,9 @@ window.SANDBOX_SLICES["zhaozhou"] = {
   },
   "dims": [
    1,
-   2
+   2,
+   3,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -128,6 +130,11 @@ window.SANDBOX_SLICES["zhaozhou"] = {
     "era_text": "开皇十五"
    },
    "place": "zhaoxian",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +153,11 @@ window.SANDBOX_SLICES["zhaozhou"] = {
     "era_text": "大业元"
    },
    "place": "zhaoxian",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +180,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "事件event:zz_595对应赵州桥建造",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +206,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +232,11 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +259,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "原文约数，非精确年数",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +285,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "此为原文评价，现代学界或有争议",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +311,9 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +336,11 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +363,9 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -344,6 +388,9 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -366,6 +413,11 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "洨水为当地河流，未在place白名单，故不单列",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -396,6 +448,10 @@ window.SANDBOX_SLICES["zhaozhou"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

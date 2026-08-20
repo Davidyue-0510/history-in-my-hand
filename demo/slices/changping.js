@@ -20,6 +20,10 @@ window.SANDBOX_SLICES["changping"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -168,6 +172,11 @@ window.SANDBOX_SLICES["changping"] = {
     "end": -262,
     "era_text": "周赧王五十三年"
    },
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -186,6 +195,10 @@ window.SANDBOX_SLICES["changping"] = {
     "era_text": "周赧王五十五年"
    },
    "place": "changping",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -204,6 +217,10 @@ window.SANDBOX_SLICES["changping"] = {
     "era_text": "周赧王五十五年九月"
    },
    "place": "changping",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -226,6 +243,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文无年号，仅记公元前260年",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -248,6 +269,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +295,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -292,6 +321,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -314,6 +347,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +373,9 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +398,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "数字为原文表述",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -380,6 +424,10 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "学界对坑杀人数有争议，此处保留原文",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -402,6 +450,9 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +475,9 @@ window.SANDBOX_SLICES["changping"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "原文未明说，由诱敌出击推出",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -454,6 +508,10 @@ window.SANDBOX_SLICES["changping"] = {
     ],
     "accept": "核实坑杀人数"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -484,6 +542,10 @@ window.SANDBOX_SLICES["changping"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -17,8 +17,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "person:jiasixie2": "贾思勰"
   },
   "dims": [
+   1,
    2,
-   5
+   4,
+   5,
+   6
   ],
   "epoch": "two_jin",
   "scale_tier": "strategic",
@@ -128,6 +131,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
     "era_text": "东魏天平"
    },
    "place": "yidu",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +154,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
     "era_text": "东魏"
    },
    "place": "yidu",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +181,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号纪年，保留原文表述",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +208,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "黄河中下游为地理范围，未映射到白名单地点",
+   "dims": [
+    1,
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +235,10 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +261,10 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -264,6 +295,11 @@ window.SANDBOX_SLICES["jiasixie"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

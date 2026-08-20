@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["tianjing"] = {
   },
   "dims": [
    1,
+   2,
+   4,
    6
   ],
   "epoch": "qing_modern",
@@ -159,6 +161,10 @@ window.SANDBOX_SLICES["tianjing"] = {
     "end": 1862,
     "era_text": "同治元年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +183,10 @@ window.SANDBOX_SLICES["tianjing"] = {
     "era_text": "同治三年"
    },
    "place": "tianjing",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +205,9 @@ window.SANDBOX_SLICES["tianjing"] = {
     "era_text": "同治三年"
    },
    "place": "tianjing",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +230,9 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +255,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +281,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +307,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +333,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +359,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +385,9 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +410,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +436,9 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +461,9 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "原文未明说克城日期，据'两年后'推断为同治三年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +486,9 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "史家评价，非原文直述",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +511,10 @@ window.SANDBOX_SLICES["tianjing"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -489,6 +545,9 @@ window.SANDBOX_SLICES["tianjing"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

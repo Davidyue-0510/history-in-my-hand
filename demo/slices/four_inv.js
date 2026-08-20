@@ -18,8 +18,11 @@ window.SANDBOX_SLICES["four_inv"] = {
    "person:bisheng": "毕昇"
   },
   "dims": [
+   1,
    2,
-   5
+   3,
+   5,
+   6
   ],
   "epoch": "cross_dynastic",
   "scale_tier": "strategic",
@@ -144,6 +147,11 @@ window.SANDBOX_SLICES["four_inv"] = {
     "era_text": "东汉永元十七年"
    },
    "place": "luoyang_f",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +170,11 @@ window.SANDBOX_SLICES["four_inv"] = {
     "era_text": "北宋庆历"
    },
    "place": "kaifeng_f",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -180,6 +193,11 @@ window.SANDBOX_SLICES["four_inv"] = {
     "era_text": "唐大中"
    },
    "place": "changan_f",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -198,6 +216,11 @@ window.SANDBOX_SLICES["four_inv"] = {
     "era_text": "北宋宣和"
    },
    "place": "kaifeng_f",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -220,6 +243,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "公元纪年非年号，原文如此",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -242,6 +269,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件直接描述，用event前缀",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -264,6 +295,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -286,6 +321,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件直接描述，用event前缀",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -308,6 +347,11 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件直接描述，用event前缀",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -330,6 +374,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +400,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    2
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -374,6 +426,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "公元纪年非年号，原文如此",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -396,6 +452,10 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -418,6 +478,11 @@ window.SANDBOX_SLICES["four_inv"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -448,6 +513,11 @@ window.SANDBOX_SLICES["four_inv"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

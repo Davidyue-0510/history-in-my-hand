@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["yashan"] = {
    "person:luxinfu": "陆秀夫"
   },
   "dims": [
+   1,
+   2,
    3,
+   4,
    6
   ],
   "epoch": "qin",
@@ -151,6 +154,10 @@ window.SANDBOX_SLICES["yashan"] = {
     "era_text": "德祐二"
    },
    "place": "nanjing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -169,6 +176,10 @@ window.SANDBOX_SLICES["yashan"] = {
     "era_text": "祥兴二"
    },
    "place": "jiangmen",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -191,6 +202,10 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "崖山位于今广东江门新会，以place:jiangmen代指",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -213,6 +228,10 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "千艘为原文表述，实数待考",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -235,6 +254,9 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -257,6 +279,10 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "十万为原文表述，实数存疑，待核",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -279,6 +305,9 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.95,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -309,6 +338,10 @@ window.SANDBOX_SLICES["yashan"] = {
     ],
     "accept": "补充元军参战兵力及双方对比的可靠史料"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -331,6 +364,9 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由战役结果及宋亡推断为决战",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -353,6 +389,9 @@ window.SANDBOX_SLICES["yashan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "由宋亡直接推出",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -383,6 +422,10 @@ window.SANDBOX_SLICES["yashan"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

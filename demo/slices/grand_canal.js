@@ -22,7 +22,8 @@ window.SANDBOX_SLICES["grand_canal"] = {
   "dims": [
    1,
    2,
-   3
+   3,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -174,6 +175,12 @@ window.SANDBOX_SLICES["grand_canal"] = {
     "era_text": "隋大业元年"
    },
    "place": "yangzhou",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -192,6 +199,12 @@ window.SANDBOX_SLICES["grand_canal"] = {
     "era_text": "元至元二十年"
    },
    "place": "linqing",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -210,6 +223,12 @@ window.SANDBOX_SLICES["grand_canal"] = {
     "era_text": "明永乐九年"
    },
    "place": "linqing",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -232,6 +251,12 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "通济渠具体流经地点未在原文中详述，待消歧",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +279,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "永济渠具体流经地点未在原文中详述，待消歧",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +306,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "江南河具体流经地点未在原文中详述，待消歧",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +333,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "南北水运贯通，标志大运河全线形成",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +360,12 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "隋炀帝为开凿通济渠的发起者",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +388,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "民夫数量为原文记载，实际人数可能有出入",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +415,10 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "从大业元年到大业六年，推断整个运河工程历时约六年",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +441,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "三段运河在不同年份分别建成",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -408,6 +468,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "南北水运贯通，推断对经济文化交流有重大影响",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -430,6 +495,11 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "工程规模巨大，反映隋朝国力动员能力",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -460,6 +530,10 @@ window.SANDBOX_SLICES["grand_canal"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

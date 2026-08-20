@@ -14,7 +14,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
   "fictional": true,
   "lead": "我的儿子是怪物：末世兽化儿子与记忆篡改——同一断言内核服务科幻设定与亲情，证明『任意文字→世界』不限于现实题材。",
   "dims": [
-   4,
+   3,
    5,
    6
   ],
@@ -152,6 +152,10 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "艾哲兽化异能者，从宇宙带回陌生能量辐射全球，引发末世。",
    "quote": "所谓末世到来并不是他们所以为的地球核变进化，而是艾哲从宇宙中带了陌生能量回来，辐射全球。",
    "value_text": "艾哲=末世能量源（非核变）。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -166,6 +170,9 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "艾瑞安死前委托叶为安让兽化儿子变身后保持理智。",
    "quote": "你能让他恢复理智吗？变成怪兽的时候也保持理智。",
    "value_text": "叶为安介入动机=艾瑞安临终委托。",
+   "dims": [
+    6
+   ],
    "_party": "艾父自述",
    "_faction": null
   },
@@ -180,6 +187,10 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "艾哲篡改众人对他的记忆，唯唐心见其完全体态而知真相。",
    "quote": "艾哲确实将所有人关于他的记忆都改变了，但只要见过艾哲完全状态，他想隐瞒的秘密就会开启。",
    "value_text": "唐心记忆=唯一真实。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -194,6 +205,9 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "叶为安揭穿篡改，艾哲守住理智、唐心得救。",
    "quote": "（叶为安使艾哲保持清醒，护住唐心）",
    "value_text": "矫正后艾哲未疯狂。",
+   "dims": [
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -208,6 +222,10 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "作者借艾哲反思'怪物'非天生：记忆篡改与孤独才是悲剧根源。",
    "quote": "（作者借末世兽化谈人性与孤独）",
    "value_text": "艾哲是'被改写的怪物'样本。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -222,6 +240,9 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "若无叶为安介入，艾哲疯狂囚禁唐心、二人同归于尽，末世真相无人知。",
    "quote": "（推演）唐心最后和艾哲同归于尽了……直到艾哲死后，异兽才不再那么疯狂。",
    "value_text": "反事实：未介入→同归于尽、真相湮灭。",
+   "dims": [
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -243,6 +264,9 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -257,6 +281,10 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

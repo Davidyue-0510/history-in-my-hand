@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["wuxu"] = {
   },
   "dims": [
    3,
+   4,
    5,
    6
   ],
@@ -153,6 +154,11 @@ window.SANDBOX_SLICES["wuxu"] = {
     "era_text": "光绪廿四·四月"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +177,10 @@ window.SANDBOX_SLICES["wuxu"] = {
     "era_text": "同年八月"
    },
    "place": "beijing",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -193,6 +203,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -215,6 +229,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -237,6 +255,9 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -259,6 +280,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -281,6 +306,9 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -303,6 +331,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -325,6 +357,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -347,6 +383,9 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说康有为，但学界公认其为变法核心人物",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -369,6 +408,9 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -391,6 +433,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "具体新政内容未详述",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -421,6 +467,10 @@ window.SANDBOX_SLICES["wuxu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -443,6 +493,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "place": "",
    "scale": "empire",
    "note": "帝党欲借变法收权，后党先握兵",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "帝党文献",
    "_faction": "didang"
   },
@@ -465,6 +519,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "place": "",
    "scale": "empire",
    "note": "枪杆子在谁手谁赢",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "houding"
   },
@@ -487,6 +545,10 @@ window.SANDBOX_SLICES["wuxu"] = {
    "place": "",
    "scale": "empire",
    "note": "利益集团较量以武力定鼎",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

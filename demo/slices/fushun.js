@@ -27,6 +27,10 @@ window.SANDBOX_SLICES["fushun"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -283,6 +287,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十一年, 置抚顺千户所, 隶沈阳中卫。",
    "note": "千户所秩低, 但因其扼辽东边墙外要冲, 实控建州女真朝贡通道。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -299,6 +307,12 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四年, 令辽东抚按于抚顺关开马市, 以缎布盐粮易女真马匹人参。",
    "note": "抚顺关马市是明朝羁縻女真的核心节点。废止日期在《明神宗实录》有专条, 待核。",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -315,6 +329,11 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十六年四月, 努尔哈赤以七大恨告天, 率步骑攻抚顺关, 城破, 游击李永芳降。",
    "note": "「七大恨」原文见《清太祖实录》天命三年四月, 措辞屡经改窜。",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -331,6 +350,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "永芳率其属出城降, 上以礼待之, 赐以貂帽貂裘。",
    "note": "李永芳是明方记载中首位投降后金的明军中高级将领, 此降被视为明辽东军心瓦解之始。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -347,6 +370,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "辽东抚顺城陷, 贼兵所过无噍类, 识者皆忧其在中原为患。",
    "note": "李朝对抚顺之陷有详细记载, 侧重点在女真威胁论。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -363,6 +390,13 @@ window.SANDBOX_SLICES["fushun"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "抚顺马市不只是互市点, 更是努尔哈赤刺探辽东情报与获取战略物资的窗口。",
    "note": "部分学者强调努尔哈赤的独立军事-政治结构, 不应过分高估马市作用。",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -388,6 +422,10 @@ window.SANDBOX_SLICES["fushun"] = {
     "accept": "找到一条直接记述李永芳投降前与辽东巡抚或上级沟通、或与部下商议的原话或档案",
     "effort": "1-2 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -412,6 +450,11 @@ window.SANDBOX_SLICES["fushun"] = {
     "accept": "给出至少十年间抚顺关年交易额的区间估计, 注明出处与算法",
     "effort": "2-4 周"
    },
+   "dims": [
+    1,
+    3,
+    4
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -434,6 +477,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "明史视角，称'我大清兵'",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -456,6 +503,9 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -478,6 +528,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -500,6 +554,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清河非白名单地点，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -522,6 +580,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "地点为推断，原文未明言",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -544,6 +606,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -566,6 +632,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "此为号称，非实数",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -588,6 +658,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "宽奠、开原非白名单地点",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -610,6 +684,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -632,6 +710,9 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -654,6 +735,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -676,6 +761,10 @@ window.SANDBOX_SLICES["fushun"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

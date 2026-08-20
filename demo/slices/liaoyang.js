@@ -34,6 +34,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -520,6 +524,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武八年, 全国都卫均改为都司, 定辽都卫指挥使司改为辽东都指挥使司, 简称辽东都司, 治所在辽阳城中。",
    "note": "明初置辽东卫指挥使司于洪武四年(1371), 4 年后升为都司。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -536,6 +544,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "领 25 卫, 自在州、安乐州, 128 个千户所, 官军十九万零三百人。",
    "note": "辽东都司东至鸭绿江, 西至山海关, 南至旅顺海口, 北至开原。",
+   "dims": [
+    3,
+    4
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -552,6 +564,12 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "永乐十四年, 都指挥使王真包砖完砌。新城南北宽 1 里, 东西长 4 里, 城墙高 3 丈, 开设东、西、北三座城门。",
    "note": "洪武十二年 (1379) 始建土城, 至此包砖形成南/北二城布局。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -568,6 +586,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "668 年 (唐高宗总章元年), 攻灭高句丽, 设安东都护府, 辽东城 (辽城州) 一度为都护府治所所在。",
    "note": "唐代安东都护府治所后迁至平壤, 辽阳为辽东城府。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -584,6 +607,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "928 年, 辽太宗改辽阳府为南京, 迁东丹国首都于辽阳。938 年, 因幽州升为南京, 辽阳改称东京, 东京辽阳府遂为五京之一。",
    "note": "东京辽阳府为五京中人口最多的城市, 也是金朝东北的行政中心。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -600,6 +628,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "至元二十四年 (1287), 元朝设辽阳等处行中书省, 统辖东北, 称为京师左臂。",
    "note": "辽阳行省下辖 7 路、1 府、12 州、10 县, 京师左臂。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明修官史",
    "_faction": null
   },
@@ -616,6 +649,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "1161 年 (金海陵王正隆六年或金世宗大定元年), 完颜雍在辽阳拥兵称帝, 史称金世宗, 并改元大定。",
    "note": "辽阳作为金朝东北政治中心的延续。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -632,6 +669,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "后金天命六年 (天启元年, 1621), 努尔哈赤统帅八旗劲旅, 一举攻下明朝的东北重镇辽阳, 随即迁都于此。",
    "note": "袁应泰任辽东经略时, 1621 年辽阳陷落, 此前 1621 浑河之战后沈阳先陷。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -648,6 +689,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "辽阳城年久失修, 颓圮不堪, 努尔哈赤决定在太子河东岸修筑新城, 即东京城。",
    "note": "东京城抚近门等遗址尚存。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -664,6 +710,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天命十年 (天启五年), 努尔哈赤迁都沈阳, 扩建城池, 加固城垣, 修太庙、宫殿等。",
    "note": "沈阳反超辽阳, 是东北政治中心的一次决定性转移。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -680,6 +731,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "迁都辽阳, 改建东京城, 标志着后金从地方政权升格为可与明朝对峙的帝国。",
    "note": "清方评价, 与现代综述对『破坏—迁民—重建』评价有不同。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -696,6 +750,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "",
    "note": "与 L011 清方记录形成 record_vs_scholarship 冲突; 立场派生, 不裁决。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -712,6 +770,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "清太祖迁都沈阳, 改变了辽阳与沈阳的命运, 从此辽阳地位一直在沈阳之下, 这个格局延续到今天。",
    "note": "现代综述, 1625 至今 400 年的格局。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -728,6 +790,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "北岸川湖等兵先后与后金红巴牙喇军、右翼四旗兵激战, 斩敌二三千人, 终因体力不支战败, 大部被歼。机动能力较差尾行最后的浙兵因北岸受阻被迫于南岸布车阵火器防御, 直至火药耗尽。",
    "note": "浑河之战实为辽阳陷落的前奏, 6 小时内明军步兵精锐折损大半。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -744,6 +810,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "唐太宗李世民亲征, 克辽东城, 为辽城州首府。",
    "note": "辽阳古称襄平, 唐以此为辽东城。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -760,6 +830,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "918 年, 辽太祖神册三年, 耶律阿保机攻占辽东城。",
    "note": "契丹开始对辽东的统治, 928 年后东丹国首都迁此。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -786,6 +860,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     "accept": "录入朝鲜方对辽阳陷落的记载与朝方反应(是否派使、是否哀悼明之失辽东), 标注与明/清记载的偏差与情绪基调。",
     "effort": "1-2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -812,6 +889,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     "accept": "给出双方兵力与伤亡的区间估计, 标注口径差异(「兵」含不含有夫/辅兵/田卒), 并说明为何明清两方均无可交叉验证的细目。",
     "effort": "2-3 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -828,6 +908,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "",
    "note": "从熊廷弼经略到袁应泰再到王化贞, 明廷内部斗争加速了辽东战事的崩溃。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -854,6 +938,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     "accept": "把维基词条拆解为「哪些结论有独立一手支撑 / 哪些仅靠二手综述」, 输出一张溯源表, 供本项目「来源依赖度」压力测试(关掉二手综述哪些结论会塌)使用。",
     "effort": "1 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -876,6 +963,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文未明确纪年，据上下文推断为泰昌元年九月。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -898,6 +989,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -920,6 +1015,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "降人处之辽、沈二城。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -942,6 +1041,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "议者言收降过多，或为敌用。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -964,6 +1067,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -986,6 +1093,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "贺世贤、尤世功战死。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1008,6 +1118,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1030,6 +1145,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰督诸将出城五里迎战，军败多死。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1052,6 +1170,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "大清兵从小西门入，城中大乱。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1074,6 +1195,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1096,6 +1221,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1118,6 +1247,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰接替熊廷弼任辽东经略",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1140,6 +1273,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰谋进取抚顺的方略",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1162,6 +1299,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰招降蒙古饥民，安置于辽阳、沈阳",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1184,6 +1325,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "辽阳城破，袁应泰自缢死",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1206,6 +1351,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "沈阳城破，贺世贤、尤世功战死",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1228,6 +1376,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "陈策、童仲揆援辽阳途中战死",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1250,6 +1401,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰在辽阳城破后自缢",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1272,6 +1426,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "《明史》对袁应泰的军事能力评价",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1294,6 +1452,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "明方私修，立场为明方",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1316,6 +1479,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1338,6 +1506,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1360,6 +1532,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1382,6 +1558,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "明方私修，对袁应泰有批评",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1404,6 +1584,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1426,6 +1610,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1448,6 +1635,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "明方私修，袁应泰死节",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1470,6 +1660,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1492,6 +1686,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "王在晋私论，明方立场，非战役直接记录",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1508,6 +1706,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "总兵陈策，统四川步兵二万渡浑河来援……大败，退至浑河，兵尽溺……李秉诚、朱万良、姜弼领骑兵三万来援……皆溃奔……周敦吉、秦邦屏、董仲贵、戚金、张名世等，帅浙兵三千营于桥南……大溃……副将至把总战死者百二十余人。",
    "note": "《明通鉴》卷081 浑河桥南北之战（简体转写）。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1524,6 +1727,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "是役也，以万余人当大清兵数万之众，虽力屈军覆，为辽左用兵以来第一血战。",
    "note": "《明通鉴》卷081 对浑河之战的综评。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1540,6 +1746,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "庚申，大清兵乘驻长驱，规取辽阳……壬戌，大清兵攻城急……谯楼火，大清兵自西门入……应泰遂佩剑印自缢死……铨被执不屈……亦自经死。",
    "note": "《明通鉴》卷081 辽阳陷落（简体转写）。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1556,6 +1767,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "辽阳继失，河西军民尽奔，自塔山至闾阳二百余里，烟火断绝，京师大震。",
    "note": "《明通鉴》卷081，辽阳失陷之连锁震荡。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1578,6 +1794,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明方视角记录战役开始。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1600,6 +1820,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "明军出城迎战兵力。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1622,6 +1845,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明方记录野战失利。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1644,6 +1871,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "后金军攻城战术。",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1666,6 +1898,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明方记录城破时间与路径。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1688,6 +1924,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "经略袁应泰自杀殉城。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1710,6 +1949,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "巡按御史张铨不屈被杀。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1732,6 +1975,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "辽阳失陷后，辽东地区望风归降。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1754,6 +2001,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明方记录主要阵亡将领。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1776,6 +2026,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "张绳武（陈绳武）率孤军赴援战死。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1798,6 +2052,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "《考异》根据《明史》与《殉节录》修正《三编》记载。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1820,6 +2077,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "《考异》指出《三编》遗漏，并据他书增补。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

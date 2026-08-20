@@ -16,6 +16,9 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
   "parties_note": "秦方vs赵方。史料来源以秦记为主（二手综述）。",
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "guangzhong",
@@ -299,6 +302,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "theater",
    "note": "秦三路攻赵，围邯郸",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -319,6 +326,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "theater",
    "note": "赵王迁被俘，赵国灭亡",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -339,6 +350,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "秦王报复邯郸旧怨",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -359,6 +374,11 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "赵残余势力在代地延续",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -379,6 +399,9 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "empire",
    "note": "荆轲刺秦引发秦攻燕",
+   "dims": [
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -399,6 +422,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "燕代联军败于易水",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -419,6 +446,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "theater",
    "note": "水攻大梁灭魏",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -439,6 +470,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "theater",
    "note": "燕、代残余势力被彻底消灭",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -459,6 +494,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.95,
    "scale": "empire",
    "note": "秦统一六国，议帝号",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -479,6 +518,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "秦军分三路攻赵",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -499,6 +542,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "赵地饥荒削弱抵抗力",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -519,6 +566,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "赵虽灭，但代王嘉延续至二十五年",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -547,6 +598,9 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     ],
     "accept": "燕代联军兵力规模"
    },
+   "dims": [
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   },
@@ -575,6 +629,10 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     ],
     "accept": "王贲攻魏的具体时间"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "秦方",
    "_faction": null
   }

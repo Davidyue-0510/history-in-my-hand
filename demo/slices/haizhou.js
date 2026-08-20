@@ -28,6 +28,8 @@ window.SANDBOX_SLICES["haizhou"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -302,6 +304,11 @@ window.SANDBOX_SLICES["haizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武九年置海州卫, 初治牛家庄, 后徙今所。",
    "note": "初治牛庄的具体迁移年份 (永乐间徙今海城) 在《辽东志》有更细记载, 待核。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -318,6 +325,11 @@ window.SANDBOX_SLICES["haizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "海州卫与朝鲜平安道互市, 每岁以绢布易朝鲜马匹, 岁以为常。",
    "note": "朝鲜《通文馆志》载朝鲜使臣来往海州的具体路线, 可与明方对照。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -334,6 +346,10 @@ window.SANDBOX_SLICES["haizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天启元年三月, 后金兵攻海州, 参将刘廷宪拒守, 城破, 死之。",
    "note": "海州陷与沈阳陷 (三月十三) 仅隔六日, 是后金同一战役序列。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -350,6 +366,10 @@ window.SANDBOX_SLICES["haizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "辽东巡抚袁应泰以海州已陷告急, 朝议援明与否, 终以兵疲财乏未遣。",
    "note": "与沈阳战役不同, 海州陷落时李朝并未实际出兵援助。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -366,6 +386,11 @@ window.SANDBOX_SLICES["haizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "文龙以海州已陷, 率从者 197 人, 浮海至皮岛, 收辽民为军, 遂开东江镇。",
    "note": "东江镇是后金侧翼长期困扰, 直至 1630 年毛文龙被袁崇焕诛杀。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -390,6 +415,11 @@ window.SANDBOX_SLICES["haizhou"] = {
     "accept": "找到海州卫治所迁移的明确年份与诏令原文",
     "effort": "1-2 周"
    },
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -414,6 +444,10 @@ window.SANDBOX_SLICES["haizhou"] = {
     "accept": "给出海州人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

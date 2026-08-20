@@ -159,6 +159,9 @@ window.SANDBOX_SLICES["boju"] = {
     "end": -506,
     "era_text": "周敬王十四年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +180,9 @@ window.SANDBOX_SLICES["boju"] = {
     "era_text": "周敬王十四年"
    },
    "place": "boju",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +201,10 @@ window.SANDBOX_SLICES["boju"] = {
     "era_text": "周敬王十四年"
    },
    "place": "ying",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +227,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "无年号纪年，仅公元纪年，无法换算",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +252,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "无年号纪年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +277,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "无年号纪年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +302,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "淮汭不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +328,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +354,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "夫概不在白名单，未映射",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +379,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +404,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "郑不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +430,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "清发水不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +456,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "雍澨不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +482,10 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +508,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "楚平王墓不在白名单，未映射",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -481,6 +533,9 @@ window.SANDBOX_SLICES["boju"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -511,6 +566,9 @@ window.SANDBOX_SLICES["boju"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

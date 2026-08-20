@@ -34,6 +34,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -338,6 +341,11 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "战前储备描述",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -360,6 +368,11 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "战前武装清单",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -382,6 +395,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "战役转折点",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -404,6 +421,11 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "守军防御措施",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -426,6 +448,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "防御失效原因",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -448,6 +474,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "后金攻击结果",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -470,6 +500,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "物资损失",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -492,6 +526,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "粮草损失",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -514,6 +552,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "战后统计",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -536,6 +578,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "守将及家属阵亡",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -558,6 +604,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "战后救援行动",
+   "dims": [
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -580,6 +629,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "明军战果",
+   "dims": [
+    6
+   ],
    "_party": "明·私修",
    "_faction": "feng_jiang"
   },
@@ -602,6 +654,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方视角，记攻城过程",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -624,6 +680,11 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方承认攻城未克",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -646,6 +707,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方承认宁远未下",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -668,6 +732,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方对努尔哈赤战绩的总结，含宁远未下之憾",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -690,6 +757,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方记进攻觉华岛兵力构成",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -712,6 +783,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "清方记载，与明方数字悬殊",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -734,6 +809,11 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "明军冰上防御部署",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -756,6 +836,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方记载屠杀与焚毁，数字为清方口径",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -778,6 +862,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清方记载焚毁规模",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -808,6 +896,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
     ],
     "accept": "需核对明实录原文及清方档案，厘清守岛兵力与死伤数字"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -830,6 +922,10 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "confidence": 0.6,
    "scale": "theater",
    "note": "现代综述汇辑明清双方记载之矛盾：守岛兵力明方记三万、清方记四万；死伤明方记兵七千余商民七八千、清方记尽杀",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   }

@@ -149,6 +149,11 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "江容华是江家村唯一大学生，胎穿/魂穿后读点书便成衣冠禽兽。",
    "quote": "让儿子像个人，别读点书就去当电视上说的那什么衣冠禽兽。",
    "value_text": "江容华=胎穿禽兽儿子。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -163,6 +168,10 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "江大壮委托叶为安教儿子做人、别成衣冠禽兽。",
    "quote": "俺想请仙长教教俺儿子做个人吧。",
    "value_text": "叶为安介入动机=江大壮委托。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "江父自述",
    "_faction": null
   },
@@ -177,6 +186,10 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "江容华凭学识欺男霸女、负心女友。",
    "quote": "（江容华读点书后恃才傲物、负心滥情）",
    "value_text": "核心冲突=知识≠人品。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -191,6 +204,11 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "叶为安矫正使江容华回归本心、不再禽兽。",
    "quote": "（叶为安使江容华做回人）",
    "value_text": "矫正后江容华做人。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -205,6 +223,10 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "作者借江容华谈'读书与做人'：有才无德是为禽兽。",
    "quote": "（作者借江容华反思教育与人品）",
    "value_text": "江容华是'有才无德'样本。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -219,6 +241,11 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "若无叶为安介入，江容华成衣冠禽兽、害人害己。",
    "quote": "（推演）江容华读点书就去当衣冠禽兽。",
    "value_text": "反事实：未介入→禽兽毁人。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -240,6 +267,9 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -254,6 +284,10 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

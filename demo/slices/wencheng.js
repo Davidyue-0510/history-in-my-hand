@@ -20,8 +20,11 @@ window.SANDBOX_SLICES["wencheng"] = {
   "layer_title": "唐蕃通道叠加",
   "timeline_title": "唐蕃和亲时间轴",
   "dims": [
+   1,
+   2,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "tang",
   "scale_tier": "strategic",
@@ -146,6 +149,13 @@ window.SANDBOX_SLICES["wencheng"] = {
     "era_text": "贞观十五年"
    },
    "place": "lhasa",
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -164,6 +174,12 @@ window.SANDBOX_SLICES["wencheng"] = {
     "era_text": "同年"
    },
    "place": "lhasa",
+   "dims": [
+    2,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -186,6 +202,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -208,6 +228,11 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -230,6 +255,11 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -252,6 +282,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -274,6 +308,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -296,6 +334,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说建寺，但佛法渐兴为后续建寺之背景",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -318,6 +360,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -340,6 +386,10 @@ window.SANDBOX_SLICES["wencheng"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "具体路线未详，仅知目的地为吐蕃",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -370,6 +420,10 @@ window.SANDBOX_SLICES["wencheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

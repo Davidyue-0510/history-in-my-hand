@@ -25,6 +25,7 @@ window.SANDBOX_SLICES["gaizhou"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
    6
   ],
   "epoch": "ming_qing",
@@ -253,6 +254,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武四年置盖州卫, 隶辽东都司。",
    "note": "盖州元代为盖州路, 明初降为卫。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -269,6 +274,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天启元年三月, 后金兵攻盖州, 副将黄之骥拒守, 城破, 死之。",
    "note": "盖州与海州陷落仅隔十日, 是后金同一战役序列。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -285,6 +294,9 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "上命四王、皇太极率兵四万攻盖州。",
    "note": "「四万」数字与「海州之战实际出动兵力」之比, 学界有质疑, 待考。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -301,6 +313,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "盖州元代为盖州路, 明洪武四年降路为卫。",
    "note": "学界对此无争议, 与明方《明太祖实录》记载一致。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -325,6 +341,9 @@ window.SANDBOX_SLICES["gaizhou"] = {
     "accept": "从至少两方史料中找出杨烈崛死法的具体细节, 注明分歧",
     "effort": "1-2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -348,6 +367,11 @@ window.SANDBOX_SLICES["gaizhou"] = {
     "accept": "梳理熊岳堡从明初建置到 1621 年陷落的完整卫所调整时间线",
     "effort": "2-3 周"
    },
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

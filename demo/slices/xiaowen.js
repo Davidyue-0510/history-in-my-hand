@@ -18,8 +18,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "person:fenghou": "冯太后"
   },
   "dims": [
+   1,
+   3,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "two_jin",
   "scale_tier": "strategic",
@@ -153,6 +156,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
     "era_text": "太和十七年"
    },
    "place": "luoyang",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +180,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
     "era_text": "十八年"
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -189,6 +204,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
     "era_text": "二十年"
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -211,6 +232,10 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -233,6 +258,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -255,6 +285,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +312,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -299,6 +339,10 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -321,6 +365,11 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -343,6 +392,10 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -373,6 +426,10 @@ window.SANDBOX_SLICES["xiaowen"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -395,6 +452,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "place": "",
    "scale": "empire",
    "note": "都城迁移即是利益重分配",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "hanhua"
   },
@@ -417,6 +480,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "place": "",
    "scale": "empire",
    "note": "文化政策背后的利益再分配",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "baoshou"
   },
@@ -439,6 +508,12 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "place": "",
    "scale": "empire",
    "note": "派系冲突的暴力顶点",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "baoshou"
   }

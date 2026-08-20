@@ -19,7 +19,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
   },
   "dims": [
    1,
-   2
+   2,
+   3,
+   4,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -135,6 +138,12 @@ window.SANDBOX_SLICES["zijincheng"] = {
     "era_text": "永乐四"
    },
    "place": "beijing",
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +162,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
     "era_text": "永乐十八"
    },
    "place": "beijing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +188,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +214,9 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +239,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文未明言迁都具体年份，据'次年'推断为永乐十九年",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +265,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +291,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +317,9 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明言，但由后续迁都事实合理推出",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +342,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由迁都事实推出",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +375,9 @@ window.SANDBOX_SLICES["zijincheng"] = {
     ],
     "accept": "确认迁都北京的具体年份"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -366,6 +408,10 @@ window.SANDBOX_SLICES["zijincheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

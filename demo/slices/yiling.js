@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["yiling"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "three_kingdoms",
@@ -168,6 +170,10 @@ window.SANDBOX_SLICES["yiling"] = {
     "end": 222,
     "era_text": "章武二年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -186,6 +192,9 @@ window.SANDBOX_SLICES["yiling"] = {
     "era_text": "章武二年"
    },
    "place": "yiling",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -204,6 +213,10 @@ window.SANDBOX_SLICES["yiling"] = {
     "era_text": "章武二年"
    },
    "place": "xiaoting",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -226,6 +239,9 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "刘备东征动机",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -248,6 +264,9 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +289,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -292,6 +315,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "连营范围自巫峡至夷陵",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -314,6 +341,9 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "吴将皆欲战，陆逊不从",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +366,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +392,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "白帝城不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -380,6 +418,9 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -402,6 +443,9 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "章武三年为刘备崩年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +468,10 @@ window.SANDBOX_SLICES["yiling"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "史称与范例为后世评价，非原文直述",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -454,6 +502,9 @@ window.SANDBOX_SLICES["yiling"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

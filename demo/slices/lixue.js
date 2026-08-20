@@ -18,6 +18,8 @@ window.SANDBOX_SLICES["lixue"] = {
    "person:lujiuyuan": "陆九渊"
   },
   "dims": [
+   2,
+   3,
    5,
    6
   ],
@@ -135,6 +137,10 @@ window.SANDBOX_SLICES["lixue"] = {
     "era_text": "淳熙二"
    },
    "place": "eqihu",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +159,11 @@ window.SANDBOX_SLICES["lixue"] = {
     "era_text": "淳祐元"
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +186,10 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "原文用公元纪年，非年号；此处保留原文表述",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +212,10 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +238,10 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +264,11 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "地点未在原文提及，留空待消歧",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +291,11 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +318,9 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "评价性表述，非事实陈述",
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +343,9 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未明说朱熹师承二程，但理学脉络隐含；此处仅记录二程开端的史实",
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +368,10 @@ window.SANDBOX_SLICES["lixue"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "原文仅说论辩，未明说分歧内容；此为合理推断",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -359,6 +402,10 @@ window.SANDBOX_SLICES["lixue"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

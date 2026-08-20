@@ -18,8 +18,10 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "person:yao_shu": "姚枢"
   },
   "dims": [
+   3,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "yuan",
   "scale_tier": "strategic",
@@ -135,6 +137,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
     "era_text": "至元八"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +160,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
     "era_text": "至元十三"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +187,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "国号确立事件",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +214,9 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "南宋灭亡，南北统一",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +239,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +266,9 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +291,10 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "民族融合现象",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +317,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "文化融合特征",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +344,10 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "行省制度确立",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +370,11 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -359,6 +405,10 @@ window.SANDBOX_SLICES["yuan_duo"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -159,6 +159,9 @@ window.SANDBOX_SLICES["gaixia"] = {
     "end": -202,
     "era_text": "汉高帝五年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +180,9 @@ window.SANDBOX_SLICES["gaixia"] = {
     "era_text": "汉高帝五年"
    },
    "place": "gaixia",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +201,10 @@ window.SANDBOX_SLICES["gaixia"] = {
     "era_text": "汉高帝五年"
    },
    "place": "wujiang",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +227,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +252,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +277,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +302,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +327,10 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +353,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +378,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "地点未明确，留空",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +403,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +428,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "追击路线未明确，地点留空",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +453,9 @@ window.SANDBOX_SLICES["gaixia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +486,9 @@ window.SANDBOX_SLICES["gaixia"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

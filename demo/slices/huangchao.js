@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "person:tangxizong": "唐僖宗"
   },
   "dims": [
+   1,
+   3,
    4,
+   5,
    6
   ],
   "epoch": "han",
@@ -183,6 +186,11 @@ window.SANDBOX_SLICES["huangchao"] = {
     "era_text": "乾符二"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -201,6 +209,11 @@ window.SANDBOX_SLICES["huangchao"] = {
     "era_text": "广明元"
    },
    "place": "changan",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -223,6 +236,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "起兵地点未明，待考",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -245,6 +262,9 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -267,6 +287,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -289,6 +313,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -311,6 +339,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -333,6 +365,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -355,6 +391,9 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "败死地点未明，待考",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -377,6 +416,9 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -399,6 +441,9 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -421,6 +466,10 @@ window.SANDBOX_SLICES["huangchao"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为结果陈述，推断为对唐朝国势的负面影响",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -451,6 +500,9 @@ window.SANDBOX_SLICES["huangchao"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -472,6 +524,12 @@ window.SANDBOX_SLICES["huangchao"] = {
    "place": "caozhou",
    "quote": "（巢）募众数万，陷州县",
    "note": "私盐利益集团 vs 唐廷专卖",
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
    "_party": "黄巢军",
    "_faction": "hc_rebel"
   },
@@ -493,6 +551,11 @@ window.SANDBOX_SLICES["huangchao"] = {
    "place": "changan",
    "quote": "（僖宗）奔蜀",
    "note": "唐廷倚河朔—关中兵，藩镇割据并行",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "唐军",
    "_faction": "hc_court"
   },
@@ -519,6 +582,12 @@ window.SANDBOX_SLICES["huangchao"] = {
     ],
     "accept": "补黄巢军社会构成与路线"
    },
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

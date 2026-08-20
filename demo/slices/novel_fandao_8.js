@@ -149,6 +149,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "珠宝是小猫儿子，小家子气、因铲屎官有别猫而打别的猫。",
    "quote": "它居然跑上去将别的猫给打了！一个有别的猫的铲屎官，还留着干什么，当然是抛弃他了！",
    "value_text": "珠宝=不听话的喵儿子。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -163,6 +167,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "虎斑猫（猫妖）委托叶为安教儿子珠宝做猫。",
    "quote": "去不去？朕藏了一块小鱼干，可以给你当报酬！",
    "value_text": "叶为安介入动机=虎斑猫委托。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "猫父自述",
    "_faction": null
   },
@@ -177,6 +185,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "珠宝因铲屎官有别猫而打别的猫、小家子气。",
    "quote": "它居然跑上去将别的猫给打了！",
    "value_text": "核心冲突=小猫争宠。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -191,6 +203,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "叶为安教珠宝不再小家子气、大方做猫。",
    "quote": "（叶为安逗弄并教导小猫）",
    "value_text": "矫正后珠宝大气。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -205,6 +221,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "作者借猫儿子谈'器量'：连猫都忌小家子气，况人乎。",
    "quote": "（作者以猫喻人谈气量）",
    "value_text": "珠宝是'器量'寓言样本。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -219,6 +239,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "若无叶为安介入，珠宝仍争风吃醋、失猫国体面。",
    "quote": "（推演）珠宝若无人教，始终是只小家子气的猫。",
    "value_text": "反事实：未介入→珠宝仍小气。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -240,6 +264,9 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -254,6 +281,10 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

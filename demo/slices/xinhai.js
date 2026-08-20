@@ -144,6 +144,9 @@ window.SANDBOX_SLICES["xinhai"] = {
     "era_text": "辛亥八月十九"
    },
    "place": "wuchang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +165,9 @@ window.SANDBOX_SLICES["xinhai"] = {
     "era_text": "其后两月"
    },
    "place": "nanjing",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -180,6 +186,10 @@ window.SANDBOX_SLICES["xinhai"] = {
     "era_text": "民国元"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -202,6 +212,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -224,6 +237,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "具体省份未列出，待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -246,6 +262,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -268,6 +287,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "共和政府成立地点未明说，推断为南京",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -290,6 +313,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "帝制终结为宏观概括，非具体事件",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -312,6 +339,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未提袁世凯，但学界公认其作用",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -334,6 +364,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.5,
    "scale": "empire",
    "note": "原文未提孙中山，但学界公认其领导角色",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -356,6 +389,9 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说因果关系，但可合理推出",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -378,6 +414,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -400,6 +440,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -430,6 +474,9 @@ window.SANDBOX_SLICES["xinhai"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

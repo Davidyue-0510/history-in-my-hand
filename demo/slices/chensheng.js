@@ -18,6 +18,9 @@ window.SANDBOX_SLICES["chensheng"] = {
    "person:wuguang": "吴广"
   },
   "dims": [
+   1,
+   2,
+   3,
    4,
    6
   ],
@@ -144,6 +147,10 @@ window.SANDBOX_SLICES["chensheng"] = {
     "era_text": "二世元·七月"
    },
    "place": "dazexiang",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +169,10 @@ window.SANDBOX_SLICES["chensheng"] = {
     "era_text": "同年"
    },
    "place": "dazexiang",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -184,6 +195,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "起义爆发于大泽乡",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -206,6 +221,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -228,6 +247,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "描述起义军装备简陋",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -250,6 +273,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "张楚国号建立，地点未明",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -272,6 +299,9 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "陈胜败亡，具体地点未载",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -294,6 +324,9 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "起义虽败但引发全国反秦浪潮",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -316,6 +349,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "陈胜为戍卒身份",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -338,6 +375,10 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "吴广为戍卒身份",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -360,6 +401,9 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "原文未明说败因，仅记败死结果",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -382,6 +426,9 @@ window.SANDBOX_SLICES["chensheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "由原文推断其开启反秦先河",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -412,6 +459,9 @@ window.SANDBOX_SLICES["chensheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

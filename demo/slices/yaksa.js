@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["yaksa"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "qing_modern",
@@ -159,6 +161,10 @@ window.SANDBOX_SLICES["yaksa"] = {
     "end": 1685,
     "era_text": "康熙二十四年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +183,9 @@ window.SANDBOX_SLICES["yaksa"] = {
     "era_text": "康熙二十五年"
    },
    "place": "yaksa",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -194,6 +203,10 @@ window.SANDBOX_SLICES["yaksa"] = {
     "end": 1689,
     "era_text": "康熙二十八年"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -216,6 +229,12 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "出兵地点未明，暂以niuman代指集结地，待核",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -238,6 +257,10 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -260,6 +283,10 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -282,6 +309,9 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "额里克舍为俄方首领，未列入白名单，故以event:yk_e代指俄方",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -304,6 +334,9 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -326,6 +359,9 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "原文未明言具体年份，据康熙二十四年推算为二十六年，属推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -348,6 +384,9 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "年份为推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -370,6 +409,11 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "签约地点尼布楚不在白名单，以niuman代指，待核",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -392,6 +436,10 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.6,
    "scale": "county",
    "note": "原文为史家评述，非直接事实，故标inference",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -414,6 +462,9 @@ window.SANDBOX_SLICES["yaksa"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "史家评价，非直接事实",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -444,6 +495,9 @@ window.SANDBOX_SLICES["yaksa"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

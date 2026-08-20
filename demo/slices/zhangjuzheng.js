@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
   },
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -152,6 +154,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
     "era_text": "万历元"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +176,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
     "era_text": "万历九"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -192,6 +202,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -214,6 +228,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -236,6 +254,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -258,6 +280,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -280,6 +306,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -302,6 +332,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -324,6 +358,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -346,6 +384,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件zj_1573为张居正改革起始",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -368,6 +410,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件zj_1581为一条鞭法推行",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -398,6 +444,10 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -420,6 +470,11 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "place": "",
    "scale": "empire",
    "note": "首辅集权 vs 官僚因循之利",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "内阁文献",
    "_faction": "neige"
   },
@@ -442,6 +497,11 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "place": "",
    "scale": "empire",
    "note": "礼法清议 vs 君主专制联盟",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "私家笔记",
    "_faction": "qingliu"
   },
@@ -464,6 +524,11 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
    "place": "",
    "scale": "empire",
    "note": "财政集权与既得利益的冲突",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

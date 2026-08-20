@@ -20,7 +20,8 @@ window.SANDBOX_SLICES["dingwu"] = {
   "dims": [
    1,
    3,
-   4
+   4,
+   6
   ],
   "epoch": "qing_modern",
   "scale_tier": "operational",
@@ -145,6 +146,10 @@ window.SANDBOX_SLICES["dingwu"] = {
     "era_text": "光绪二"
    },
    "place": "taiyuan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -163,6 +168,10 @@ window.SANDBOX_SLICES["dingwu"] = {
     "era_text": "光绪三·丁丑"
    },
    "place": "taiyuan",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -181,6 +190,11 @@ window.SANDBOX_SLICES["dingwu"] = {
     "era_text": "光绪四"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -203,6 +217,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "旱灾起始，晋豫为重灾区",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -225,6 +243,9 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "灾情最重年份",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -247,6 +268,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "极端后果，反映灾情惨烈",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -269,6 +294,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "社会秩序崩溃迹象",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -291,6 +320,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "官方赈灾措施",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -313,6 +346,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "民间赈灾力量介入",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -335,6 +372,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "北方多省受灾，具体范围待考",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -357,6 +398,10 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "山西河南灾情最重",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -379,6 +424,9 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "官方与民间赈灾同年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -401,6 +449,9 @@ window.SANDBOX_SLICES["dingwu"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "丁丑戊寅连年干旱",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -431,6 +482,9 @@ window.SANDBOX_SLICES["dingwu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

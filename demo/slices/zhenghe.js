@@ -21,6 +21,8 @@ window.SANDBOX_SLICES["zhenghe"] = {
   "timeline_title": "郑和下西洋时间轴",
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "ming",
@@ -146,6 +148,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
     "era_text": "永乐三"
    },
    "place": "taicang",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -164,6 +170,11 @@ window.SANDBOX_SLICES["zhenghe"] = {
     "era_text": "宣德八"
    },
    "place": "taicang",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -186,6 +197,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "出发地推测为太仓，原文未明言",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -208,6 +222,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "占城为白名单地点，爪哇未登记，留待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -230,6 +248,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -252,6 +273,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "锡兰未登记地点，留待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -274,6 +299,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -296,6 +324,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "非洲东岸未登记地点，留待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -318,6 +350,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文为总结性评价，非具体事件，标为推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -340,6 +375,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -362,6 +400,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -384,6 +425,9 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -414,6 +458,10 @@ window.SANDBOX_SLICES["zhenghe"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

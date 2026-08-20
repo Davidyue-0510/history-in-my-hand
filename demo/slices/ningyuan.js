@@ -29,6 +29,9 @@ window.SANDBOX_SLICES["ningyuan"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -274,6 +277,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "宣德三年, 置宁远卫。",
    "note": "宁远为辽西最南大城, 关宁锦防线核心。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -290,6 +298,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "上攻宁远, 袁崇焕凭城固守, 炮伤甚, 七月崩。",
    "note": "明方记「炮毙虏首」, 清方讳言死因, 立场派生分歧明显。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -306,6 +318,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天启七年, 清攻宁远、锦州, 袁崇焕御之, 清兵退。",
    "note": "宁锦之捷是袁崇焕督师期间对清的第二次大胜。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -322,6 +338,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "崇祯十七年, 李自成陷北京, 吴三桂弃宁远, 引清兵入关。",
    "note": "关宁锦防线至此终结, 清兵由此入主中原。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -338,6 +358,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "宁远一城, 牵制后金者二十年。",
    "note": "亦有观点认为明长期被动据城, 丧失野战主动权, 防线本质是消耗。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -362,6 +386,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
     "accept": "梳理努尔哈赤死因的各家说法与史料依据, 给出最可能结论及存疑点",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -385,6 +413,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
     "accept": "整理袁崇焕经略辽西的具体措施与所受制约, 分析其成败",
     "effort": "2-4 周"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -407,6 +439,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "侯恂推荐，破格提拔",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -429,6 +465,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "袁崇焕巡视关内外后，向朝廷表态",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -451,6 +491,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "在孙承宗召集的军事会议上，袁崇焕主张守宁远",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -473,6 +517,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "袁崇焕制定宁远城修筑规格",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -495,6 +544,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕东巡广宁所率兵力",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -517,6 +570,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕与孙承宗商议，派兵占据并修缮锦州等城",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -539,6 +596,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕反对高第撤退锦州、右屯等城的命令",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -561,6 +622,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕拒绝撤离宁远、前屯",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -583,6 +648,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "后金军进攻宁远",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -605,6 +674,9 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "宁远之战，明军击退后金军",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -627,6 +699,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "宁远大捷后，袁崇焕升任右佥都御史",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -649,6 +725,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕提出凭坚城用大炮的战略",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -671,6 +751,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "袁崇焕因侯恂推荐破格提拔",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -693,6 +777,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "广宁师溃后，袁崇焕独自考察关内外形势",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -715,6 +803,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕自请守关",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -737,6 +829,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "袁崇焕制定宁远城规制，祖大寿原筑仅十一且疏薄",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -759,6 +856,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "宁远城建成后成为关外重镇",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -781,6 +882,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁崇焕率军东巡广宁，历十三山，抵右屯",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -803,6 +908,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "高第令撤锦州、右屯等城，袁崇焕力爭不可",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -825,6 +934,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "高第欲并撤宁、前二城，袁崇焕拒绝",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -847,6 +960,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "后金军进攻宁远",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -869,6 +986,9 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "袁崇焕与满桂、祖大寿等誓死守城",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -891,6 +1011,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "宁远之战明军获胜，后金军解围",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -913,6 +1037,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "宁远大捷后袁崇焕升任右佥都御史",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -935,6 +1063,9 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -957,6 +1088,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -979,6 +1114,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1001,6 +1140,9 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1023,6 +1165,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "金啟倧为通判，死于炮火",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1045,6 +1191,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1067,6 +1217,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1089,6 +1243,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1111,6 +1270,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1133,6 +1296,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1155,6 +1322,11 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "高第代孫承宗為經略，主張棄守關外",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1177,6 +1349,10 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "此为东巡兵力，非宁远之战守城兵力",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

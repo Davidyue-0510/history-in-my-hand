@@ -16,6 +16,8 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
   "parties_note": "清方（北洋水师奏报+清史稿）、日本方（联合舰队战报）、西方观察（英舰队司令佛莱曼特）——三方立场。source=Wikipedia 二手综述，桶='二手综述'。",
   "dims": [
    1,
+   2,
+   5,
    6
   ],
   "epoch": "qing_modern",
@@ -223,6 +225,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "综合记载",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -243,6 +249,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "综合记载",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -263,6 +273,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "战后态势",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -283,6 +297,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "阵型描述",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -303,6 +321,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "战术描述",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -323,6 +345,9 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "战后策略",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -343,6 +368,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "参战兵力",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -363,6 +392,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "装备对比",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -383,6 +416,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "西方观察者评论",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -403,6 +440,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "日本顾问观点",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -423,6 +464,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.6,
    "scale": "theater",
    "note": "舆论背景",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -443,6 +488,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "学者评价",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -463,6 +512,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "清方损失",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -483,6 +536,10 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "日方损失",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -511,6 +568,9 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     ],
     "accept": "需要进一步考证"
    },
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

@@ -25,6 +25,8 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -253,6 +255,11 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武十年, 置金州卫, 辖旅顺口。",
    "note": "金州卫为辽东最南卫所, 海运通登莱、朝鲜。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -269,6 +276,10 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天命六年, 取金州。",
    "note": "金州陷后, 辽东半岛南端尽入后金, 唯沿海为东江镇所扰。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -285,6 +296,11 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "毛文龙渡海, 复金州、旅顺, 旋复为后金所夺。",
    "note": "东江镇收复多为袭取, 未能久守, 但其牵制作用明方与清方评价悬殊。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -301,6 +317,11 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "金州卫控半岛南端, 海运通登莱, 援辽之喉。",
    "note": "海运通道使金州在 1621 后仍具战略价值。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -325,6 +346,10 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
     "accept": "复原金州—登莱—朝鲜海运路线与年频次, 标注史料缺口",
     "effort": "2-3 周"
    },
+   "dims": [
+    1,
+    3
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -348,6 +373,10 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
     "accept": "核定东江镇收复金州/旅顺的次数与每次持续时间",
     "effort": "1-2 周"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   }

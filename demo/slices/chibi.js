@@ -21,6 +21,9 @@ window.SANDBOX_SLICES["chibi"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "three_kingdoms",
@@ -175,6 +178,10 @@ window.SANDBOX_SLICES["chibi"] = {
     "end": 208,
     "era_text": "建安十三年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -193,6 +200,9 @@ window.SANDBOX_SLICES["chibi"] = {
     "era_text": "建安十三年"
    },
    "place": "chibi",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -211,6 +221,10 @@ window.SANDBOX_SLICES["chibi"] = {
     "era_text": "建安十三年冬"
    },
    "place": "chibi",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -233,6 +247,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -255,6 +273,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +299,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -299,6 +325,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -321,6 +351,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -343,6 +377,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -365,6 +403,9 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未明说，属合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -387,6 +428,9 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -409,6 +453,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -431,6 +479,9 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -461,6 +512,9 @@ window.SANDBOX_SLICES["chibi"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -483,6 +537,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -505,6 +563,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "army:wu_total 未在白名单，改用 note 说明",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -527,6 +589,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "army:liubei_total 未在白名单，改用 note 说明",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -549,6 +615,10 @@ window.SANDBOX_SLICES["chibi"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -579,6 +649,9 @@ window.SANDBOX_SLICES["chibi"] = {
     ],
     "accept": "补曹方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

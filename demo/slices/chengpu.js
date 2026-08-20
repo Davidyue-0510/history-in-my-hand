@@ -159,6 +159,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     "end": -632,
     "era_text": "周襄王二十年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +180,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     "era_text": "周襄王二十年"
    },
    "place": "chengpu",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +201,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     "era_text": "周襄王二十年"
    },
    "place": "chengpu",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +226,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "事件起因，楚攻宋引发晋介入",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +251,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "晋文公战略，激怒楚军",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +276,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "楚军主将行动",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +301,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "践行诺言，战略退却",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +326,10 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "战役发生地",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +352,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "战术细节，楚右师溃败",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +377,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "晋军主力决胜",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +402,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "楚军主将结局",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +427,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "战后晋国确立霸权",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -423,6 +460,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     ],
     "accept": "补充双方兵力数字及来源"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -453,6 +493,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -475,6 +518,9 @@ window.SANDBOX_SLICES["chengpu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "晋文公个人动机，地点未明确",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -505,6 +551,9 @@ window.SANDBOX_SLICES["chengpu"] = {
     ],
     "accept": "补楚方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

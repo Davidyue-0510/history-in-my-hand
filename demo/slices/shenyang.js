@@ -35,6 +35,9 @@ window.SANDBOX_SLICES["shenyang"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -586,6 +589,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
    "note": "沈阳中卫与中屯卫、抚顺千户所同城分治, 一城三衙。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -602,6 +609,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "成化四年, 都指挥阚能甃砖城垣, 周九里十步。",
    "note": "明代中后期沈阳城垣规模自此定型。",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -618,6 +630,12 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "辽东苦寒, 冬月土冻, 乃令戍卒汲水, 夜则冻成冰块, 晨起砌墙, 覆以草土。",
    "note": "以冰筑墙是辽东诸卫 (开原、铁岭、沈阳) 共同做法, 不止沈阳一城。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -634,6 +652,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "沈阳居辽东之中, 北通开铁, 南接辽海, 西连广宁, 实为辽东锁钥。",
    "note": "这是清史与明史都认同的「沈阳地控辽沈」定论, 但「沈阳锁钥」是后世评价, 明代不一定有此说法。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -650,6 +672,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天启元年三月十三日, 后金兵薄沈阳城下, 巡抚袁应泰督诸军拒守。",
    "note": "三日之内, 沈阳辽阳相继陷落。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -666,6 +692,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "上令诸军佯为耕田状, 以诱明军, 而精骑伏林间。",
    "note": "此为清方叙事; 学界有疑为事后附会的兵家叙事。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -682,6 +711,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "应泰本议坚守, 然最后下令出战, 兵败, 城随破。",
    "note": "现代史家多认为袁应泰「开关出战」是沈阳失陷的直接原因, 决策失误为关键。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -698,6 +730,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "陈策、童仲揆率浙川兵援沈阳, 城已破, 乃结阵浑河桥头。",
    "note": "援军一日夜 70 里赶到浑河桥头, 与朝鲜援军会合。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -714,6 +750,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "弘立率军至浑河桥头, 后金兵四面围合, 大败, 弘立被擒。",
    "note": "李民寏《栅中日录》是亲历者记录, 是浑河之战最详史料之一。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -730,6 +771,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "陈策、童仲揆皆战死, 浙兵死者七千, 朝鲜军死者过半。",
    "note": "此战是 1621 辽东战局的关键转折。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -746,6 +791,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "城破, 应泰佩剑印自缢于官署。",
    "note": "袁应泰是萨尔浒战后继熊廷弼任辽东巡抚, 半年内辽东全失, 自缢以殉。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -762,6 +810,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "天命十年三月, 上自辽阳迁都沈阳, 改其名曰盛京。",
    "note": "迁都沈阳而非辽阳, 反映后金军事战略中心北移。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -778,6 +830,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "崇德元年, 皇太极即位于盛京, 改国号为大清。",
    "note": "盛京 (沈阳) 自此作为清初三京之一, 直至顺治入关迁都北京。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -794,6 +850,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "袁应泰召募流民, 放宽军律, 看似仁政, 实削弱军队纪律, 是战败主因。",
    "note": "清方《清太祖实录》将其神化为「天祐」, 与学界评价形成 record_vs_scholarship 冲突。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -810,6 +870,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "上自将诸贝勒, 大军攻沈阳。",
    "note": "清实录对己方兵力常略而不书, 与明方数字差异极大。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -826,6 +889,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "应泰集兵号称十三万, 然实缺额甚多, 不堪用。",
    "note": "明方数字常「号称」, 实际编组可能仅半数。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -842,6 +909,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "沈阳、辽阳既失, 广宁尚守, 至天启二年亦失。",
    "note": "1621 三月之陷触发 1622 广宁之失, 是辽东全境丧失的连锁起点。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -858,6 +929,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "弘立率军至浑河, 大败, 弘立被擒, 努尔哈赤善待之。",
    "note": "朝鲜对浑河之战的官方记载主要在《李朝实录》光海君日记。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -874,6 +949,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "凡明兵降者, 得五千一百零三员。",
    "note": "此为清实录对沈阳之战战果的夸张数字, 与明方数字相差 25 倍。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -890,6 +968,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "沈阳陷后, 百姓被迁或逃散, 山东登州府收辽民甚多。",
    "note": "此条说「我们不知道精确分流比例」更准确, 见 S021。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -915,6 +997,10 @@ window.SANDBOX_SLICES["shenyang"] = {
     "accept": "给出沈阳人口约 X 万、其中约 Y% 逃往 Z 方向, 有具体出处与算法",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -939,6 +1025,11 @@ window.SANDBOX_SLICES["shenyang"] = {
     "accept": "找到一处具体工程数据 (例如某卫城筑墙用了多少冰块、多少戍卒、工时几月)",
     "effort": "1-2 周"
    },
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -964,6 +1055,10 @@ window.SANDBOX_SLICES["shenyang"] = {
     "accept": "给出朝鲜军死亡数字的区间估计, 标注三方分歧与史料口径差异",
     "effort": "1-2 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -980,6 +1075,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "洪武二十一年, 改元沈阳路为沈阳中卫, 隶辽东都司。",
    "note": "同 S001 的另一条叙事, 此处为事件主语。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1002,6 +1101,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文未明确纪年，据上下文推断为泰昌元年九月",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1024,6 +1127,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1046,6 +1153,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1068,6 +1180,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1090,6 +1207,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "原文未明确纪日，据上下文推断",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1112,6 +1232,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1134,6 +1258,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "原文未明确纪日，据上下文推断",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1156,6 +1283,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1178,6 +1308,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1200,6 +1333,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1222,6 +1359,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "原文未明说，但据前后文可推出",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1244,6 +1384,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1266,6 +1409,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "明方私修，兵力为明方估计",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1288,6 +1435,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1310,6 +1461,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1332,6 +1487,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1354,6 +1512,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1376,6 +1537,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1398,6 +1562,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1420,6 +1588,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "明方估计杀伤数",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1442,6 +1613,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1464,6 +1638,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "张铨疏中评价",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1486,6 +1663,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1516,6 +1697,9 @@ window.SANDBOX_SLICES["shenyang"] = {
     ],
     "accept": "补充明军参战兵力总数"
    },
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1532,6 +1716,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "乙卯，大清兵进攻……世贤出城逆战……身被十四矢……中矢坠马而死……世功亟引兵援，亦战死……大清兵遂树云梯，拔沈阳城。",
    "note": "《明通鉴》卷081 乙卯条（简体转写）。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1548,6 +1736,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "或劝世贤走辽阳，曰：「吾为大将，不能存城，何面目见袁经略乎！」挥铁鞭驰突围中，中矢坠马而死。",
    "note": "《明通鉴》卷081，贺世贤拒降死战之语。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1570,6 +1761,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁应泰计划未行而清兵已至",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1592,6 +1787,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1614,6 +1813,11 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1636,6 +1840,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "贺世贤出城逆战，且战且却",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1658,6 +1865,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1680,6 +1890,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "明军总数，含援军",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1702,6 +1915,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "陈策统四川步兵二万渡浑河来援",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1724,6 +1940,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1746,6 +1965,10 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "清军追击明援军",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1768,6 +1991,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "浙兵营",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1790,6 +2016,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "童仲揆战死",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -1812,6 +2041,9 @@ window.SANDBOX_SLICES["shenyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "明方史官评价",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

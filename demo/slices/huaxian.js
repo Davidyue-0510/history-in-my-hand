@@ -18,8 +18,11 @@ window.SANDBOX_SLICES["huaxian"] = {
   },
   "dims": [
    1,
+   2,
    3,
-   4
+   4,
+   5,
+   6
   ],
   "epoch": "ming",
   "scale_tier": "operational",
@@ -147,6 +150,11 @@ window.SANDBOX_SLICES["huaxian"] = {
     "era_text": "嘉靖三十四年腊月十二"
    },
    "place": "huaxian",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -165,6 +173,10 @@ window.SANDBOX_SLICES["huaxian"] = {
     "era_text": "震后"
    },
    "place": "xian",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -183,6 +195,11 @@ window.SANDBOX_SLICES["huaxian"] = {
     "era_text": "嘉靖三十四年"
    },
    "place": "linfen",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -205,6 +222,10 @@ window.SANDBOX_SLICES["huaxian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "事件主体为华州地震，subject 用 event:hx_main",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -227,6 +248,10 @@ window.SANDBOX_SLICES["huaxian"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "数字为原文表述，未折算；真实性存疑，待核验",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -249,6 +274,10 @@ window.SANDBOX_SLICES["huaxian"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "渭南未在白名单，note 待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -271,6 +300,10 @@ window.SANDBOX_SLICES["huaxian"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -293,6 +326,10 @@ window.SANDBOX_SLICES["huaxian"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "描述地震影响范围",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -323,6 +360,9 @@ window.SANDBOX_SLICES["huaxian"] = {
     ],
     "accept": "核实八十三万伤亡数字的真实性或来源"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -353,6 +393,10 @@ window.SANDBOX_SLICES["huaxian"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

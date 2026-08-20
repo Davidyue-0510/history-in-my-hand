@@ -18,8 +18,8 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
   },
   "dims": [
    1,
-   3,
-   4
+   4,
+   6
   ],
   "epoch": "ming",
   "scale_tier": "operational",
@@ -335,6 +335,11 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
     "era_text": "崇祯十"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -353,6 +358,11 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
     "era_text": "崇祯十二"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +381,10 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
     "era_text": "崇祯十七"
    },
    "place": "kaofeng",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

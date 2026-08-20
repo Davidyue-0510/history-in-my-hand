@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["wugu"] = {
   },
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "han",
@@ -135,6 +137,11 @@ window.SANDBOX_SLICES["wugu"] = {
     "era_text": "征和二"
    },
    "place": "changan",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +160,10 @@ window.SANDBOX_SLICES["wugu"] = {
     "era_text": "同年"
    },
    "place": "changan",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +186,11 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +213,9 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +238,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +264,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +290,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +316,11 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +343,11 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "推断巫蛊案与太子兵变的因果关系",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +370,9 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "从原文时间点推断事件延续",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -351,6 +395,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "推断为宫廷内部权力斗争",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -373,6 +421,11 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "学界普遍认为轮台诏标志政策转向",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -395,6 +448,9 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -417,6 +473,10 @@ window.SANDBOX_SLICES["wugu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "从原文行为推断悔悟",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -447,6 +507,9 @@ window.SANDBOX_SLICES["wugu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

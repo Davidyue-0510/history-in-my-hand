@@ -17,7 +17,8 @@ window.SANDBOX_SLICES["liangshui"] = {
    "person:yangyan": "杨炎"
   },
   "dims": [
-   3
+   3,
+   6
   ],
   "epoch": "warring_states",
   "scale_tier": "strategic",
@@ -127,6 +128,10 @@ window.SANDBOX_SLICES["liangshui"] = {
     "era_text": "建中元"
    },
    "place": "changan",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -145,6 +150,10 @@ window.SANDBOX_SLICES["liangshui"] = {
     "era_text": "建中二"
    },
    "place": "changan",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -167,6 +176,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -189,6 +202,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "地点未明说，留空待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -211,6 +228,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -233,6 +254,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -255,6 +280,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +306,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -299,6 +332,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -321,6 +358,10 @@ window.SANDBOX_SLICES["liangshui"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说'取代'，但由'废租庸调'可合理推出",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -351,6 +392,10 @@ window.SANDBOX_SLICES["liangshui"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

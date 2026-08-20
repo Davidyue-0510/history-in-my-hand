@@ -20,6 +20,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
   },
   "dims": [
    1,
+   2,
    6
   ],
   "epoch": "song",
@@ -159,6 +160,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     "end": 1259,
     "era_text": "开庆元年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     "era_text": "开庆元年"
    },
    "place": "diaoyucheng",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +203,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     "era_text": "开庆元年"
    },
    "place": "diaoyucheng",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +228,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "战役开端，蒙哥亲征四川",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +254,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "钓鱼城为合州治所，今重庆合川",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +280,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "王坚为钓鱼城主将",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +305,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "张珏为副将，后为主将",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +331,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "死因有飞石与疫病两说，此处取原文飞石说",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +357,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文直述影响，但因果链为后世史家共识，故标inference",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +382,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文直述，但属宏观影响判断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +407,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "祥兴二年为宋亡之年，钓鱼城降于宋亡后",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +432,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.6,
    "scale": "county",
    "note": "原文评价性表述，非严格史实",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +457,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "宏观历史评价，非原文直述事实",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +490,10 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     ],
     "accept": "找到开庆元年钓鱼城之战双方兵力具体数字"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -475,6 +524,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

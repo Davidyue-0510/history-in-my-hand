@@ -17,8 +17,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "person:shenkuo2": "沈括"
   },
   "dims": [
+   1,
    2,
-   5
+   3,
+   5,
+   6
   ],
   "epoch": "song",
   "scale_tier": "strategic",
@@ -128,6 +131,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
     "era_text": "熙宁五"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +154,10 @@ window.SANDBOX_SLICES["shenkuo"] = {
     "era_text": "元祐三"
    },
    "place": "zhenjiang",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +180,10 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "《梦溪笔谈》成书时间笼统记为元丰年间，具体年份待考",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +206,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +233,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +260,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "沈括首次使用‘石油’一词，见《梦溪笔谈》",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +287,12 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "汴渠流经开封，故place映射为kaofeng",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +315,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "鄜延路不在白名单，故place留空",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +342,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +369,10 @@ window.SANDBOX_SLICES["shenkuo"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "具体奉使年份未明，仅笼统记熙宁年间",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +403,11 @@ window.SANDBOX_SLICES["shenkuo"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

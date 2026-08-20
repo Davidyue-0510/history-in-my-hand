@@ -18,7 +18,7 @@ window.SANDBOX_SLICES["fotao"] = {
    "person:zhufalan": "竺法兰"
   },
   "dims": [
-   4,
+   1,
    5,
    6
   ],
@@ -136,6 +136,11 @@ window.SANDBOX_SLICES["fotao"] = {
     "era_text": "永平十"
    },
    "place": "luoyang",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -154,6 +159,11 @@ window.SANDBOX_SLICES["fotao"] = {
     "era_text": "永平十一"
    },
    "place": "luoyang",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -176,6 +186,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未用年号纪年，直接使用公元纪年，此处保留原文表述",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -198,6 +213,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -220,6 +240,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -242,6 +267,10 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -264,6 +293,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "白马寺为佛教东传标志性建筑",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -286,6 +320,11 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -308,6 +347,9 @@ window.SANDBOX_SLICES["fotao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文直接使用公元纪年，非年号纪年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -338,6 +380,10 @@ window.SANDBOX_SLICES["fotao"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

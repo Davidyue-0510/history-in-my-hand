@@ -19,7 +19,8 @@ window.SANDBOX_SLICES["bencao"] = {
   },
   "dims": [
    2,
-   5
+   5,
+   6
   ],
   "epoch": "tang",
   "scale_tier": "strategic",
@@ -135,6 +136,11 @@ window.SANDBOX_SLICES["bencao"] = {
     "era_text": "元至元十八年"
    },
    "place": "dadu_b",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +159,11 @@ window.SANDBOX_SLICES["bencao"] = {
     "era_text": "明万历六年"
    },
    "place": "qizhou",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +186,11 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +213,11 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +240,10 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +266,10 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +292,10 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +318,11 @@ window.SANDBOX_SLICES["bencao"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "东邻指日本，place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -315,6 +353,10 @@ window.SANDBOX_SLICES["bencao"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

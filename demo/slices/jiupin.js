@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["jiupin"] = {
    "person:caocao": "曹操"
   },
   "dims": [
-   3
+   3,
+   4,
+   5,
+   6
   ],
   "epoch": "warring_states",
   "scale_tier": "strategic",
@@ -150,6 +153,11 @@ window.SANDBOX_SLICES["jiupin"] = {
     "era_text": "延康元"
    },
    "place": "yecheng",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +176,12 @@ window.SANDBOX_SLICES["jiupin"] = {
     "era_text": "西晋"
    },
    "place": "luoyang",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +204,10 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件主体为魏文帝采纳陈群建议，实行九品中正制",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +230,10 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +256,10 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "中正官设置于州郡两级",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +282,10 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +308,11 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文直述影响",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +335,11 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +362,11 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -344,6 +389,11 @@ window.SANDBOX_SLICES["jiupin"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "由原文影响推断出门阀政治形成",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -374,6 +424,10 @@ window.SANDBOX_SLICES["jiupin"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -396,6 +450,11 @@ window.SANDBOX_SLICES["jiupin"] = {
    "place": "",
    "scale": "empire",
    "note": "制度诞生即含门阀红利",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "menfa"
   },
@@ -418,6 +477,12 @@ window.SANDBOX_SLICES["jiupin"] = {
    "place": "",
    "scale": "empire",
    "note": "寒门视角的制度批判",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "私家著述",
    "_faction": "hanmen"
   },
@@ -440,6 +505,12 @@ window.SANDBOX_SLICES["jiupin"] = {
    "place": "",
    "scale": "empire",
    "note": "综合各方记载的因果判断",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -18,7 +18,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "person:chai_rong": "周世宗"
   },
   "dims": [
+   1,
    3,
+   4,
    6
   ],
   "epoch": "qin",
@@ -144,6 +146,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
     "era_text": "建隆元·正月初"
    },
    "place": "chenqiao",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +168,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
     "era_text": "建隆元·正月"
    },
    "place": "kaofeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -184,6 +194,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -206,6 +219,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -228,6 +244,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -250,6 +270,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -272,6 +296,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在史料中明确，留空待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -294,6 +322,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -316,6 +347,10 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -338,6 +373,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -368,6 +406,9 @@ window.SANDBOX_SLICES["chenqiao"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -83,7 +83,26 @@ PROMPT_TMPL = os.path.join(ROOT, "tools", "spikes", "extraction_demo", "prompt.m
 # 断言四层 JSON 兼容 demo 的全字段；heuristic / llm 都应产出这些
 _DEF_FIELDS = ["id", "subject", "predicate", "value_text", "time", "place",
                "source", "quote", "quote_status", "layer", "confidence",
-               "scale", "note"]
+               "scale", "note", "dims"]
+
+# 六维信息类别（单一真值，须与 data/scenes.json 顶层 dimensions 完全一致）。
+# 每条断言声明它**提供证据**的维度（子集，源驱动），其余维度显式「待补」——E18 精神。
+DIM_TAXONOMY = {
+    1: "地理（物理与地理环境：古地理/气候/资源/交通关隘/地形/水文）",
+    2: "技术（技术与物质文明：生产/兵器/能源/工程/信息载体/医疗技术）",
+    3: "制度（经济与制度运行：土地/赋税/货币/市场/官僚/法律/选官/军事制度）",
+    4: "社会（社会结构与日常生活：人口/阶层/日常/医疗/信仰/民族/家庭）",
+    5: "思想（思想文化与观念世界：意识形态/价值/知识/舆论/宗教/学术/生死观）",
+    6: "事件（重大事件与关键人物：考证/决策/战役/连锁/偶然必然/关键人物）",
+}
+DIM_PROMPT_BLOCK = (
+    "【六维信息类别（每条断言必须声明它提供证据的维度，取下列编号，可多选）】\n"
+    + "\n".join("%d = %s" % (k, v) for k, v in DIM_TAXONOMY.items()) + "\n"
+    "- 在每条断言里加字段 \"dims\": [编号列表]。例：战役类写 [1,6]（地理+事件），"
+    "兵器描述写 [2]，赋税制度写 [3]，人口流民写 [4]，意识形态写 [5]，纯纪年提及写 [6]。\n"
+    "- 一条断言可跨多维（如「筑城界藩」涉地理[1]+技术工程[2]+制度后勤[3]），按实际证据选最小完备集。\n"
+    "- 只声明该断言真正提供证据的维度，不要编造维度。\n"
+)
 
 
 def _read_source(path):
@@ -120,6 +139,7 @@ def _build_prompt(text, id_space=None):
         "- value_text 与 quote 都控制在 30 字以内的精炼陈述/引文，不要展开叙述。\n"
         "- 每个史料只抽 8–12 条最有信息量的断言，宁缺毋滥，不要凑数。\n"
         "- 只返回 JSON 数组，不要 markdown 代码块、不要任何解释文字。\n\n"
+        + DIM_PROMPT_BLOCK
     )
     if id_space:
         compliance += (
@@ -130,7 +150,7 @@ def _build_prompt(text, id_space=None):
             "event:  " + "、".join(id_space.get("events", [])) + "\n"
             "source: " + "、".join(id_space.get("sources", [])) + "\n\n"
         )
-    return (
+    prompt_template = (
         "你是历史史料结构化抽取器。严格按下面的「输出契约」与「四层抽取规则」\n"
         "把史料变成断言四层 JSON 数组（只返回 JSON，不要解释）。\n\n"
         "【契约与规则】\n" + contract + "\n\n"
@@ -143,7 +163,12 @@ def _build_prompt(text, id_space=None):
         '"quote":"...","quote_status":"paraphrase_unverified","layer":"record",'
         '"confidence":0.9,"scale":"empire","note":""}]\n'
         "再次强调：time 只给 era_text（年号），不要自己换算公元年。"
-    ).replace("__EX_SRC__", ex_src)
+    )
+    # 示例断言补 dims 字段，给 LLM 一个具体形状参照；并把占位 source 替换为真实白名单
+    prompt_template = prompt_template.replace(
+        '"confidence":0.9,"scale":"empire","note":""}]',
+        '"confidence":0.9,"scale":"empire","note":"","dims":[1,6]}]')
+    return prompt_template.replace("__EX_SRC__", ex_src)
 
 
 def _call_llm(prompt):
@@ -252,6 +277,7 @@ def extract_heuristic(text):
             "layer": "record",
             "confidence": 0.3,
             "scale": "county",
+            "dims": [6],
             "note": "heuristic 自动抽取（仅年号提及），非生产抽取，待 LLM/人工核验",
         })
         if len(out) >= 50:  # 冒烟测试上限，避免噪声爆炸
@@ -293,6 +319,18 @@ def normalize_and_validate(assertions):
                 t["end"] = "%d-12-31" % g
             t["gregorian_year"] = g
             print("       %-6s %s -> 公元 %d" % (aid, era, g))
+        # 维度标注（源驱动；缺省/非法回退 [6] 并告警，绝不丢字段）
+        dims = a.get("dims")
+        if not isinstance(dims, list) or not dims:
+            a["dims"] = [6]
+            print("  [WW] %-6s 缺 dims，回退 [6]" % aid)
+        else:
+            cleaned = sorted({int(d) for d in dims
+                              if isinstance(d, (int, float)) and 1 <= int(d) <= 6})
+            if not cleaned:
+                cleaned = [6]
+                print("  [WW] %-6s dims 非法，回退 [6]" % aid)
+            a["dims"] = cleaned
     return OK, FAIL, by_layer
 
 
@@ -349,6 +387,43 @@ def append_to_scene(assertions, scene_id):
         for a in assertions:
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
     return target
+
+
+def recompute_scene_dims(scene_id):
+    """场景级 dims = 该场景所有断言 dims 的并集（源驱动，替换 assign_dims 启发式）。
+
+    读 data/<scene_id>/assertions.jsonl 全部断言，collect 各断言 dims（1..6 合法值），
+    排序去重后写回 scenes.json 的 scenes[scene_id].dims。无断言则 dims=[]（诚实待补）。
+    返回最终的 dims 列表；场景不存在返回 None。"""
+    p = os.path.join(ROOT, "data", scene_id, "assertions.jsonl")
+    ds = set()
+    if os.path.exists(p):
+        for line in open(p, encoding="utf-8"):
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                a = json.loads(line)
+            except Exception:
+                continue
+            for d in (a.get("dims") or []):
+                try:
+                    d = int(d)
+                except Exception:
+                    continue
+                if 1 <= d <= 6:
+                    ds.add(d)
+    dims = sorted(ds)
+    reg_path = os.path.join(ROOT, "data", "scenes.json")
+    reg = json.load(open(reg_path, encoding="utf-8"))
+    if scene_id not in reg.get("scenes", {}):
+        return None
+    reg["scenes"][scene_id]["dims"] = dims
+    with open(reg_path, "w", encoding="utf-8") as f:
+        json.dump(reg, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    print("[dims] %s 源驱动并集 -> %s" % (scene_id, dims))
+    return dims
 
 
 # ═══════════ 一键世界生成（v0.29） ═══════════
@@ -412,7 +487,8 @@ WORLD_PROMPT = r"""你是历史史料结构化抽取器。将从一段原始史�
   "layer": "record",  // record/scholarship/inference/gap
   "confidence": 0.0–1.0,
   "scale": "theater/empire/province",
-  "note": ""
+  "note": "",
+  "dims": [1,6]  // 六维信息类别：该断言提供证据的维度编号（1地理/2技术/3制度/4社会/5思想/6事件），可多选
 要求：10–16 条断言（至少含 1 条 scholarship、1 条 gap）。gap 断言必须含 lead 对象：
   "lead": {{"where": "...", "skills": ["..."], "accept": "..."}}
 record 层必须给非空 quote。所有正文字段用原文的**繁体**转写（引文严格保留原文用字）。
@@ -488,6 +564,7 @@ def _conform_world(raw, spec):
         a.setdefault("scale", "theater")
         a.setdefault("note", "")
         a.setdefault("place", "")
+        a.setdefault("dims", [6])
         if a.get("layer") == "gap":
             a["confidence"] = 0.0
             a.setdefault("quote", "")
@@ -819,6 +896,8 @@ def generate_world(spec_path):
     with open(os.path.join(scene_dir, "assertions.jsonl"), "w", encoding="utf-8") as f:
         for a in raw.get("assertions", []):
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
+    # 场景级 dims = 断言并集（源驱动，替换启发式）
+    recompute_scene_dims(spec["id"])
 
     # 6) 注册地形网格（从 geocoded places 的 lon/lat）
     lons = [p["lon"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
@@ -994,6 +1073,8 @@ def main():
     if args.scene:
         tgt = append_to_scene(assertions, args.scene)
         print("[ok] 已追加进场景 %s -> %s" % (args.scene, tgt))
+        # 场景级 dims = 该场景全部断言（含新追加）的并集（源驱动，替换启发式）
+        recompute_scene_dims(args.scene)
 
     # 4.5) 可选 geocoding：把该场景 places.json 的地名落坐标（「任意史料导入」落点）
     if args.geocode:
@@ -1112,6 +1193,8 @@ def generate_world_multi(spec_path):
     with open(alp, "w", encoding="utf-8") as f:
         for a in merged["assertions"]:
             f.write(json.dumps(a, ensure_ascii=False) + "\n")
+    # 场景级 dims = 断言并集（源驱动，替换启发式）
+    recompute_scene_dims(spec["id"])
 
     # geocode + control + vocab + 注册 + build + gates
     places = merged["places"]

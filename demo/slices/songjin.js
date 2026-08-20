@@ -41,6 +41,7 @@ window.SANDBOX_SLICES["songjin"] = {
   },
   "dims": [
    1,
+   3,
    6
   ],
   "epoch": "ming_qing",
@@ -414,6 +415,11 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明军总兵力及集结地",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -436,6 +442,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "陈新甲主张分兵，洪承畴反对",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -458,6 +468,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -480,6 +494,9 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -502,6 +519,9 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明军溃败及损失",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -524,6 +544,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "夏成德内应",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -546,6 +570,9 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -568,6 +595,9 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -590,6 +620,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "粮尽人相食",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -612,6 +646,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "因先逃被斩",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -634,6 +672,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "因松锦之失被劾",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -656,6 +698,9 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "由原文数据推出，明军损失惨重",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -678,6 +723,11 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明军总兵力集结与清围锦州之开局",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -700,6 +750,10 @@ window.SANDBOX_SLICES["songjin"] = {
    "confidence": 0.88,
    "scale": "province",
    "note": "亦有观点强调明长期被动据城、丧失野战主动权，防线本质是消耗。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -731,6 +785,9 @@ window.SANDBOX_SLICES["songjin"] = {
     "accept": "整理松山城陷与夏成德内应的各家记载，标出史料政治立场影响",
     "effort": "2-3 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

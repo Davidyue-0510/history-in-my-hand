@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["xuanwu"] = {
   },
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "tang",
@@ -169,6 +171,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
     "era_text": "武德九年六月四"
    },
    "place": "xuanwumen",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -187,6 +192,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
     "era_text": "同年八月"
    },
    "place": "changan_xx",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -209,6 +218,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -231,6 +243,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -253,6 +268,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "subject 用 event:xx_626 更合适，此处保留 person 以记录其行为",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -275,6 +293,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -297,6 +318,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "地点未明，留空",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -319,6 +344,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -341,6 +370,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -363,6 +396,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -385,6 +422,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -407,6 +448,10 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "event:xx_after 表示即位后的事件",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +482,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +507,11 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "place": "",
    "scale": "empire",
    "note": "两大利益集团的正面博弈",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "编年史",
    "_faction": "donggong"
   },
@@ -481,6 +534,9 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "place": "",
    "scale": "empire",
    "note": "派系冲突的暴力顶点",
+   "dims": [
+    6
+   ],
    "_party": "官修史书",
    "_faction": "qinwang"
   },
@@ -503,6 +559,11 @@ window.SANDBOX_SLICES["xuanwu"] = {
    "place": "",
    "scale": "empire",
    "note": "谁胜谁写史的诚实标注",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

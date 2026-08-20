@@ -18,6 +18,7 @@ window.SANDBOX_SLICES["huangjin"] = {
    "person:huangfusong": "皇甫嵩"
   },
   "dims": [
+   1,
    4,
    5,
    6
@@ -218,6 +219,11 @@ window.SANDBOX_SLICES["huangjin"] = {
     "era_text": "中平元年"
    },
    "place": "julu_up",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -236,6 +242,11 @@ window.SANDBOX_SLICES["huangjin"] = {
     "era_text": "中平元年"
    },
    "place": "luoyang_up",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +265,10 @@ window.SANDBOX_SLICES["huangjin"] = {
     "era_text": "中平二年"
    },
    "place": "guangzong",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +291,10 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，年号据史实补为中平元年",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +317,9 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +342,10 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +368,9 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +393,9 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +418,10 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "由三十六方并起推断波及范围广",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -408,6 +444,9 @@ window.SANDBOX_SLICES["huangjin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由起止年份推算",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +476,9 @@ window.SANDBOX_SLICES["huangjin"] = {
     ],
     "accept": "确认中平元年对应公元184年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -467,6 +509,9 @@ window.SANDBOX_SLICES["huangjin"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -488,6 +533,11 @@ window.SANDBOX_SLICES["huangjin"] = {
    "place": "julu_up",
    "quote": "苍天已死，黄天当立",
    "note": "流民利益 vs 皇权秩序",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "黄巾军",
    "_faction": "hj_rebel"
   },
@@ -509,6 +559,10 @@ window.SANDBOX_SLICES["huangjin"] = {
    "place": "guangzong",
    "quote": "嵩等讨破之",
    "note": "讨伐军将领籍贯分散=兵源地方化",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "汉军",
    "_faction": "hj_court"
   },
@@ -535,6 +589,9 @@ window.SANDBOX_SLICES["huangjin"] = {
     ],
     "accept": "补黄巾方视角与兵力估计"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

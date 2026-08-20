@@ -20,6 +20,7 @@ window.SANDBOX_SLICES["feishui"] = {
   },
   "dims": [
    1,
+   3,
    6
   ],
   "epoch": "two_jin",
@@ -159,6 +160,10 @@ window.SANDBOX_SLICES["feishui"] = {
     "end": 383,
     "era_text": "太元八年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,9 @@ window.SANDBOX_SLICES["feishui"] = {
     "era_text": "太元八年"
    },
    "place": "feishui",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +203,9 @@ window.SANDBOX_SLICES["feishui"] = {
     "era_text": "太元八年"
    },
    "place": "feishui",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +228,10 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "前秦兵力为原文表述，实数存疑",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +254,10 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +280,9 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +305,9 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +330,9 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +355,9 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +380,10 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +406,9 @@ window.SANDBOX_SLICES["feishui"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未明说‘号称’，但‘自恃兵多’暗示其主观夸大",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -401,6 +439,10 @@ window.SANDBOX_SLICES["feishui"] = {
     ],
     "accept": "提供前秦实际兵力估算及依据"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -431,6 +473,9 @@ window.SANDBOX_SLICES["feishui"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -26,6 +26,9 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "tang",
@@ -304,6 +307,11 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -326,6 +334,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.85,
    "scale": "theater",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "五代·官修",
    "_faction": null
   },
@@ -348,6 +360,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -370,6 +386,11 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -392,6 +413,11 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.6,
    "scale": "theater",
    "note": "行军艰苦的学者推断",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -414,6 +440,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "五代·官修",
    "_faction": null
   },
@@ -436,6 +466,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -458,6 +492,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -480,6 +518,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "北门说",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "五代·官修",
    "_faction": null
   },
@@ -502,6 +544,11 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "南门说（与旧唐书异）",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -524,6 +571,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "confidence": 0.5,
    "scale": "empire",
    "note": "通鉴推论",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   },
@@ -554,6 +605,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     ],
     "accept": "明确两人在平蔡战略中的各自角色"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "宋·官修",
    "_faction": null
   }

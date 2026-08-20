@@ -135,6 +135,10 @@ window.SANDBOX_SLICES["beijiu"] = {
     "era_text": "建隆二"
    },
    "place": "kaofeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +157,10 @@ window.SANDBOX_SLICES["beijiu"] = {
     "era_text": "建隆三"
    },
    "place": "kaofeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +183,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "事件主体为杯酒释兵权",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +209,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +235,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +261,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +287,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文评价性表述",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +313,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文评价性表述",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +339,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说主导者，但主语为宋太祖",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +365,10 @@ window.SANDBOX_SLICES["beijiu"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "由'杯酒'推断非武力",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -359,6 +399,10 @@ window.SANDBOX_SLICES["beijiu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

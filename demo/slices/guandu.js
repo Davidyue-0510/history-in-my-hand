@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["guandu"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "three_kingdoms",
@@ -168,6 +171,11 @@ window.SANDBOX_SLICES["guandu"] = {
     "end": 200,
     "era_text": "建安五年"
    },
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -186,6 +194,10 @@ window.SANDBOX_SLICES["guandu"] = {
     "era_text": "建安五年"
    },
    "place": "guandu",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -204,6 +216,9 @@ window.SANDBOX_SLICES["guandu"] = {
     "era_text": "建安五年"
    },
    "place": "guandu",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -226,6 +241,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "袁绍兵力为原文表述",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -248,6 +267,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "官渡今河南中牟",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +293,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "白马非白名单地点，未映射",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -292,6 +318,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "关羽非白名单人物，未映射",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -314,6 +343,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +368,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +394,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -380,6 +419,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "许攸非白名单人物，未映射",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -402,6 +445,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "乌巢今河南延津",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +471,10 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "淳于琼非白名单人物，未映射",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -446,6 +497,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "张郃非白名单人物，未映射",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -468,6 +522,9 @@ window.SANDBOX_SLICES["guandu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "曹操奠定统一北方之基为后续影响，未单列",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -498,6 +555,10 @@ window.SANDBOX_SLICES["guandu"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

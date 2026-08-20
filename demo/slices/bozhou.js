@@ -32,6 +32,10 @@ window.SANDBOX_SLICES["bozhou"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -262,6 +266,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "五司七姓上告谋反，朝廷举棋不定",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -284,6 +292,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "杨可栋为质，死因未详",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -306,6 +318,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "万历帝震怒严令进剿",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -328,6 +344,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "贵州巡抚郭子章坐镇贵阳",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -350,6 +370,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "三成官兵七成土兵",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -372,6 +396,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "杨朝栋所统四五万精兵",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -394,6 +422,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "推进至海龙囤下",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -416,6 +448,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "杨应龙锁死内室放火，与两妾自缢",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -438,6 +474,9 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "从八路出师至破囤共一百一十四日",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -460,6 +499,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "杨应龙被挫尸，子杨朝栋、弟杨兆龙凌迟，妻田雌凤斩首",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -482,6 +525,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "与宁夏、朝鲜之役合称万历三大征，使明朝陷入财政危机",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -504,6 +551,9 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "为明末民变埋下祸根",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -526,6 +576,10 @@ window.SANDBOX_SLICES["bozhou"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "现代综述对平播财政与西南格局之评估",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -556,6 +610,11 @@ window.SANDBOX_SLICES["bozhou"] = {
     ],
     "accept": "补全播州方与土司视角，平衡单向凯旋叙事"
    },
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   }

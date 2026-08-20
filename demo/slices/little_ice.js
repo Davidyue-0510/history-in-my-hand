@@ -20,7 +20,8 @@ window.SANDBOX_SLICES["little_ice"] = {
   "dims": [
    1,
    3,
-   4
+   4,
+   6
   ],
   "epoch": "ming_qing",
   "scale_tier": "operational",
@@ -153,6 +154,10 @@ window.SANDBOX_SLICES["little_ice"] = {
     "era_text": "万历前期"
    },
    "place": "beijing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +176,11 @@ window.SANDBOX_SLICES["little_ice"] = {
     "era_text": "崇祯十年"
    },
    "place": "beijing",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -189,6 +199,11 @@ window.SANDBOX_SLICES["little_ice"] = {
     "era_text": "崇祯十三年"
    },
    "place": "henan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -207,6 +222,12 @@ window.SANDBOX_SLICES["little_ice"] = {
     "era_text": "崇祯十四年"
    },
    "place": "shaanxi",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -225,6 +246,10 @@ window.SANDBOX_SLICES["little_ice"] = {
     "era_text": "崇祯十七年"
    },
    "place": "beijing",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -247,6 +272,10 @@ window.SANDBOX_SLICES["little_ice"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "小冰期气候背景，为李自成起事之远因",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -269,6 +298,11 @@ window.SANDBOX_SLICES["little_ice"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "灾荒导致流民，为李自成势力壮大提供兵源",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -291,6 +325,10 @@ window.SANDBOX_SLICES["little_ice"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "饥荒引发动乱，为李自成起事之直接诱因",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -313,6 +351,10 @@ window.SANDBOX_SLICES["little_ice"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "小冰期与灾荒的因果关系为现代气候史推断",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -335,6 +377,10 @@ window.SANDBOX_SLICES["little_ice"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "流民与李自成军的关系为学界共识，原文未明说",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -365,6 +411,9 @@ window.SANDBOX_SLICES["little_ice"] = {
     ],
     "accept": "补充崇祯元年至十一年间李自成活动记录"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -395,6 +444,10 @@ window.SANDBOX_SLICES["little_ice"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

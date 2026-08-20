@@ -137,6 +137,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
     "era_text": "建元三"
    },
    "place": "changan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -155,6 +159,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
     "era_text": "元朔三"
    },
    "place": "changan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +185,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，留空待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +210,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，留空待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -221,6 +235,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "乌孙、大宛未在白名单，留空待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -243,6 +261,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，留空待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -265,6 +287,10 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "place 未在白名单，留空待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -287,6 +313,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -309,6 +338,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -331,6 +363,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "event:zq_126 与 zq_138 关系未明，推断关联，待核验",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -361,6 +396,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -18,6 +18,8 @@ window.SANDBOX_SLICES["dunzun"] = {
    "person:dongzhongshu": "董仲舒"
   },
   "dims": [
+   3,
+   4,
    5,
    6
   ],
@@ -126,6 +128,11 @@ window.SANDBOX_SLICES["dunzun"] = {
     "era_text": "元光元年"
    },
    "place": "changan_dz",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -144,6 +151,12 @@ window.SANDBOX_SLICES["dunzun"] = {
     "era_text": "元朔五年"
    },
    "place": "changan_dz",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -174,6 +187,10 @@ window.SANDBOX_SLICES["dunzun"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

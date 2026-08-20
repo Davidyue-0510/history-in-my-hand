@@ -18,8 +18,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
   },
   "dims": [
    1,
+   2,
    3,
-   4
+   4,
+   6
   ],
   "epoch": "song",
   "scale_tier": "operational",
@@ -138,6 +140,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
     "era_text": "天禧三"
    },
    "place": "huaxian_s",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -156,6 +163,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
     "era_text": "同年"
    },
    "place": "puyang",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -174,6 +186,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
     "era_text": "景祐元"
    },
    "place": "puyang",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -196,6 +212,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "商胡埽位于澶州，今河南濮阳附近，以huaxian_s代指。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -218,6 +238,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "具体入海地点未明，留待消歧。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -240,6 +264,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "梁山泊位于开封府境内，以kaofeng代指。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -262,6 +290,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "河北泛指黄河以北地区，以puyang代指。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -284,6 +317,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "庆历年间为景祐之后的时段，具体年份缺失。",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -306,6 +344,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "河道多次改道，具体路径未详。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -328,6 +370,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "由决口推断黄河改道，原文未明说。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -350,6 +396,11 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "推断治理未成功，原文未明说。",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -372,6 +423,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "推断河道多次改道与治理不力有关。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -394,6 +449,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "商胡埽具体位置在澶州，以huaxian_s代指。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +483,10 @@ window.SANDBOX_SLICES["song_he_jue"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

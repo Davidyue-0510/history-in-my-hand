@@ -144,6 +144,9 @@ window.SANDBOX_SLICES["baijia"] = {
     "era_text": "战国中"
    },
    "place": "linzi",
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +165,9 @@ window.SANDBOX_SLICES["baijia"] = {
     "era_text": "战国中晚"
    },
    "place": "linzi",
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -184,6 +190,9 @@ window.SANDBOX_SLICES["baijia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元前纪年，非年号；此处保留原文表述",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -206,6 +215,9 @@ window.SANDBOX_SLICES["baijia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元前纪年，非年号；此处保留原文表述",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -228,6 +240,9 @@ window.SANDBOX_SLICES["baijia"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "时间推断自荀子生年",
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -250,6 +265,9 @@ window.SANDBOX_SLICES["baijia"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由孔子生年与荀子生年推断百家争鸣大致时间范围",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -280,6 +298,9 @@ window.SANDBOX_SLICES["baijia"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5
+   ],
    "_party": "综合史料",
    "_faction": null
   }

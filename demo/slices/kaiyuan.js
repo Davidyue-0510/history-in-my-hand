@@ -30,6 +30,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -501,6 +505,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "冯瑗《开原图说》：开原即元之黄龙府，山阻东南，河抱西北，扣、清二水环绕城面。",
    "note": "开元改开原因避朱元璋『元』字讳，为明代避讳史实例。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -518,6 +527,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "永乐七年于开原城置安乐州、自在州，辽东仅有的两个州。",
    "note": "二州不属府县制，是明代辽东卫所制下特设的羁縻管理构件。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -535,6 +549,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原设三关三市，提督马市公署设在开原城，为辽东贸易中心。",
    "note": "互市是开原作为『东北亚丝绸之路丝关』的核心职能。",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -552,6 +572,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "兴旺的马市贸易，使得开原三万卫成了全国三大冶铁中心之一。",
    "note": "冶铁能力支撑了边堡兵器与农具自给，是开原军镇的经济底座。",
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -569,6 +595,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原，控临绝徼，翼带镇城，居全辽之上游，为东陲之险塞，九边危地此其最乎。",
    "note": "开原位于明辽东防御体系最北端，是明联络女真、蒙古的枢纽。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -586,6 +617,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "《开原图说》上卷为开原各城堡图说，下卷为夷虏枝派图考及兵营图说。",
    "note": "以当时人记当地事，自明末以来被治东北史者视为权威。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -603,6 +638,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "《开原图说》鲜有刊本，仅见兵部刊本、台湾中正图书馆刊本、玄览堂丛书刊本等。",
    "note": "原书属善本，数字化与开放获取是后续可做的众包缺口。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -620,6 +659,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十七年六月初十，努尔哈赤率四万大军往攻开原，走三日后因雨驻扎。",
    "note": "公历锚点已由 K024 闭环（维基『开铁之战』条目：1619-07-20 / 07-26；区间 6 天与农历吻合）。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -637,6 +680,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "六月十六日直抵开原城下；叶赫报信，郑之范不信反鞭来使；后金分兵架梯，东南门失守。",
    "note": "出兵日与陷落日须区分：『六月初十』是出兵，『六月十六』是陷落。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -654,6 +701,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "努尔哈赤率四万大军攻开原。",
    "note": "明方记载后金兵力，常含夸大成分，宜与清方对勘。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -671,6 +722,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十七年六月，后金兵万骑从静安堡入，乘开原疏于防守之机一举而下。",
    "note": "与『四万』说相差四倍，属典型兵力记载分歧；需更多原始记载定夺。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -688,6 +743,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "马林及副将于化龙、参将高贞、守备何懋官等明将尽数被杀。",
    "note": "与萨尔浒西路杜松同为主将殉国，明方叙事中『死事』典型。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -705,6 +763,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "郑之范素贪，竟不发给草料，一日饿死二百余匹马；见势弃城逃跑，连官印都丢了。",
    "note": "明方叙事惯性地将失城归咎代守文官，宜谨慎对待。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -722,6 +785,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原军马分散、城外兵力未能协同，叶赫无力策应，援兵不至；个人贪懦是因素之一而非全部。",
    "note": "与 K013 构成『记载 vs 现代考订』之争，不裁决只陈列。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -739,6 +807,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原本有十几万人居住，经后金血洗竟只剩一千多人。",
    "note": "屠城数字出自后世综述，清方实录不载己方屠戮，数字待核（见 K025）。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -756,6 +828,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原为河东根底，欲保河东而开原必不可弃。今开原破矣，清阳弃矣，庆云抢矣……",
    "note": "此奏揭示开原陷落的战略连锁效应，是判断战役意义的权威一手材料。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -773,6 +850,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原破而北关不敢不顺……既无背腋之虞，又合东西之势以交攻，而辽沈何可守也。",
    "note": "印证『局部优势累积』：开原一落，后金在每一点都转为局部占优。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -790,6 +871,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "瑗按开原城即辽之黄龙府，山阻东南，河抱西北，扣、清二水环绕城面。",
    "note": "与现有 ASTER 高程网格一致：开原处清河、辽河之间低地，东、北为丘陵。",
+   "dims": [
+    1
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -807,6 +891,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开铁之战是萨尔浒之战后后金乘胜扩大战果、攻占辽东重镇的战役。",
    "note": "时间上紧接萨尔浒（二月），是同一战略节奏的延续。",
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -824,6 +911,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原守军防备松懈、城外士兵散驻、盔甲杂乱、军马分散，未能集中有效抵抗。",
    "note": "这是萨尔浒『以少胜多实为局部优势累积』原则在县级尺度的又一次体现。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -841,6 +932,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "马市方便了各民族之间的物资贸易，推动了经济发展与交融。",
    "note": "开原马市是明代边疆『互市—羁縻—制衡』政策的实物样本。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -858,6 +954,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "清康熙三年设开原县，为奉天府首批所建四县之一。",
    "note": "清承明卫所制后改州县制，开原由军镇转为民县。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -875,6 +975,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原境内有河流166条，主要河流有辽河、清河、寇河、柴河等。",
    "note": "水网是开原军镇补给与防御的命脉，也是后金雨季行军的天候变量。",
+   "dims": [
+    1
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -892,6 +995,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十七年六月初十（1619年7月20日）努尔哈赤亲起四万大军往攻开原；六月十六（7月26日）直抵开原城下。",
    "note": "农历→公历换算依维基『开铁之战』条目（wbjc.net / profilpelajar.com 等转载）；lunardate / borax 库均只覆盖 1900–2100，本地不可独立核验，故升为 record 但仍标 paraphrase_unverified。区间 6 天与史料六月初十→十六自洽。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -919,6 +1025,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     "accept": "给出「十余万」说法的最早出处与引用链条, 并对照清方是否回避; 若数字本身不可考, 给出可信区间与原因, 并明确标注这是「对方叙事」而非中立计数。",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -936,6 +1046,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "光海君以姜弘立为五道都元帅，金景瑞副之，率兵一万三千助明，隶刘綎东路。",
    "note": "朝鲜为明盟国，萨尔浒东路实含朝鲜军，故三方史料中朝鲜非旁观；原始见《光海君日记》(朝鲜实录)。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -953,6 +1068,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "姜弘立遣通事黄连海诣后金，言朝鲜出兵迫于明命非其本意；副帅金景瑞单骑见代善，约『两国无怨，各解兵』。",
    "note": "朝鲜军降后金，明监军乔一琦坠崖死；此为朝鲜实录详载，是三方叙事中朝鲜立场核心。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -970,6 +1089,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历帝赐敕：『朕抚有万邦，绥玆属国，既安危之相倚……勉图后效，毋弃前功，雪耻除凶，务期殄灭。』",
    "note": "明对萨尔浒之降极度宽容，因战略仍需朝鲜为左腋之患牵制后金。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -987,6 +1110,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "贼未破开原时……朝鲜未败，犹有左腋之患。今开原破而北关不敢不顺，使币往来，而朝鲜不敢不从。",
    "note": "此奏载明实录，将开原陷落与朝鲜战略处境直接锁合，是三方共振关键环节；朝鲜侧见 K026a/b。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1004,6 +1131,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原、铁岭相继陷没，虏势益张，我国介于其间，进退维谷。",
    "note": "朝鲜实录原文待核，此条据《光海君日记》转引综述；三方史料(明/清/朝鲜)至此均对开原陷落有记载，原 K026 缺口收窄。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1021,6 +1152,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "开原马市北关通叶赫、南关通哈达，明藉互市羁縻海西，以夷制夷。",
    "note": "互市—羁縻—制衡，是明经营海西的核心手段。",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -1038,6 +1175,11 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "海西四部叶赫、哈达、乌拉、辉发，错居开原东北，明联之以扦北虏、制建州。",
    "note": "乌拉、辉发二部未在地图标节点(超出辽东核心地形视野)，以四部整体记。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1055,6 +1197,12 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "南关之市通哈达，明因以离北关而弱叶赫。",
    "note": "南关(哈达)—北关(叶赫)的互市格局，是明『以夷制夷』的实物样本。",
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -1072,6 +1220,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "北关(叶赫)相倚，犹有后背之忧；开原破而北关不敢不顺。",
    "note": "与 K017『开原陷后叶赫灭』呼应，海西屏障的抽离是开原失守的结构性前提。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1089,6 +1241,10 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "八月，努尔哈赤灭叶赫，海西诸部悉平。",
    "note": "统一海西使后金南面再无牵制，遂得专意辽沈。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1106,6 +1262,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何模型，明制里 = km / 0.576；直线非实际行程（沿辽河谷/驿路绕行更远）。与史料『开原铁岭相距一日程』吻合（明制一日军行 ~30–40 里）。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1123,6 +1282,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；开原→辽阳为辽东都司北南主轴，与熊廷弼『辽阳、开原、京师不可分割』的防线判断一致。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1140,6 +1302,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；沈阳卫为开原南向最近的重镇。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1157,6 +1322,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；抚顺所 1618 已先陷（K018 地形视野），开原陷后辽沈侧翼尽失。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1174,6 +1342,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；叶赫为开原最近的海西部落，与『开原北关相倚』互为犄角。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1191,6 +1362,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；与 route_kaiyuan（努尔哈赤进军开原）共用同一对坐标，验证一致性。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1208,6 +1382,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；萨尔浒之战主战场，开原为北路马林部出发地。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1225,6 +1402,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "quote_status": "generated",
    "quote": "",
    "note": "haversine 几何；马市紧邻开原城外，与『在城北门外』史载一致。",
+   "dims": [
+    1
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1251,6 +1431,9 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     "accept": "录入该条原文(影印或点校), 注明藏本与卷页; 评估其对「次年速陷」解释力的增量——即 1618 已入犯、1619 才正式破城之间的时间差意味着什么。",
     "effort": "1-2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清·地方志",
    "_faction": null
   }

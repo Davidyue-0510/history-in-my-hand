@@ -17,8 +17,12 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "person:zhaowuling": "赵武灵王"
   },
   "dims": [
+   1,
+   2,
+   3,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "warring_states",
   "scale_tier": "strategic",
@@ -128,6 +132,12 @@ window.SANDBOX_SLICES["zhaowulian"] = {
     "era_text": "武灵王十九"
    },
    "place": "handan",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +156,13 @@ window.SANDBOX_SLICES["zhaowulian"] = {
     "era_text": "其后"
    },
    "place": "handan",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +185,12 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +213,10 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +239,11 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +266,9 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "event:zw_war 为白名单事件，此处描述其直接结果",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +291,10 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "云中、九原不在 place 白名单，note 注明",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +317,11 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为总结性评价，属合理推断",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +344,9 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +369,9 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "event:zw_307 为白名单事件，此处建立关联",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +402,10 @@ window.SANDBOX_SLICES["zhaowulian"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

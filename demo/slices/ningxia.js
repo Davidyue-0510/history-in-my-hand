@@ -35,6 +35,9 @@ window.SANDBOX_SLICES["ningxia"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "ming",
@@ -294,6 +297,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "宁夏之役为万历三大征之一",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -316,6 +323,11 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -338,6 +350,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -360,6 +376,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -382,6 +402,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -404,6 +428,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -426,6 +454,11 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -448,6 +481,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -470,6 +507,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "兵部尚书石星议决黄河灌城，魏学曾主招安后被革职",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -492,6 +533,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -514,6 +559,9 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -536,6 +584,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "前后八月，与朝鲜之役、播州之役并称万历三大征",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -566,6 +618,10 @@ window.SANDBOX_SLICES["ningxia"] = {
     ],
     "accept": "补叛方与地方视角，平衡凯旋叙事"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -588,6 +644,10 @@ window.SANDBOX_SLICES["ningxia"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "据明神宗实录所记诏令与叙功，补足明廷官方视角",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   }

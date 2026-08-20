@@ -21,7 +21,9 @@ window.SANDBOX_SLICES["great_wall"] = {
   "timeline_title": "长城修筑时间轴",
   "dims": [
    1,
-   2
+   2,
+   3,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -164,6 +166,11 @@ window.SANDBOX_SLICES["great_wall"] = {
     "era_text": "秦始皇三十三年"
    },
    "place": "lintao",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -182,6 +189,11 @@ window.SANDBOX_SLICES["great_wall"] = {
     "era_text": "汉武帝元狩"
    },
    "place": "jiayuguan",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -200,6 +212,12 @@ window.SANDBOX_SLICES["great_wall"] = {
     "era_text": "明成化—万历"
    },
    "place": "badaling",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -222,6 +240,11 @@ window.SANDBOX_SLICES["great_wall"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "蓟镇边墙未在本次白名单，暂以 datong_w 代指，待消歧",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -244,6 +267,9 @@ window.SANDBOX_SLICES["great_wall"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "蓟镇边墙未在本次白名单，暂以 datong_w 代指，待消歧",
+   "dims": [
+    2
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -274,6 +300,9 @@ window.SANDBOX_SLICES["great_wall"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

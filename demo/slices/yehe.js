@@ -27,6 +27,9 @@ window.SANDBOX_SLICES["yehe"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -263,6 +266,11 @@ window.SANDBOX_SLICES["yehe"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "叶赫始祖星根达尔汉, 蒙古人也, 居叶赫勒河, 因以为氏。",
    "note": "学界对「蒙古人起源说」有争议 (也有认为是海西女真), 这是清史稿采信的说法。",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -279,6 +287,11 @@ window.SANDBOX_SLICES["yehe"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "十一年, 叶赫兵攻开原, 为官军所击, 退走。",
    "note": "具体兵力与战果在《明神宗实录》有专条, 待核。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -295,6 +308,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "万历四十七年八月, 上亲率大兵攻叶赫, 布寨战死, 布扬古率西城降。",
    "note": "布扬古虽降, 但被努尔哈赤带走, 叶赫部由此彻底编入八旗。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -311,6 +328,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "叶赫亡, 明廷不能救, 辽东自此门户洞开。",
    "note": "「叶赫亡, 明失北蔽」成为后世史学对萨尔浒战后格局的定论。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -327,6 +348,10 @@ window.SANDBOX_SLICES["yehe"] = {
    "quote_status": "paraphrase_unverified",
    "quote": "叶赫为海西女真扈伦部之一, 与蒙古无关。",
    "note": "清史稿采「蒙古起源说」, 现代学界主流否认此说, 这是 record_vs_scholarship 冲突。",
+   "dims": [
+    4,
+    5
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -352,6 +377,10 @@ window.SANDBOX_SLICES["yehe"] = {
     "accept": "给出叶赫亡时人口估计 (约 X 万) 与被编入八旗的具体牛录数, 注明出处",
     "effort": "2-3 周"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -375,6 +404,9 @@ window.SANDBOX_SLICES["yehe"] = {
     "accept": "整理至少两方史料对万历十一年叶赫—开原之战的兵力数字, 标注分歧",
     "effort": "1-2 周"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   }

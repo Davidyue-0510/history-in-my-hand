@@ -14,6 +14,9 @@ window.SANDBOX_SLICES["sarhu"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "ming_qing",
@@ -930,6 +933,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.15,
    "scale": "empire",
    "note": "对外宣称的虚数，用以震慑后金与安抚朝议。几乎所有研究者都不采信此数。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -953,6 +960,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.25,
    "scale": "empire",
    "note": "胜方记述。夸大敌军规模以彰显战功，是所有军事史料的通病，与立场直接相关。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -976,6 +987,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "不含叶赫与朝鲜援军。占位数据，正式版需落实到具体论著与页码。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -999,6 +1014,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.65,
    "scale": "empire",
    "note": "合计口径。与 A003 不冲突，是不同的统计边界——这类分歧最容易被误读为矛盾。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1022,6 +1041,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "后金以此兵力实现局部数倍于明军的兵力优势，是本役的战术核心。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1045,6 +1068,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.2,
    "scale": "empire",
    "note": "败方对敌军规模的估计，同样存在夸大倾向——败得越惨，敌人越多。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1068,6 +1095,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "通行说法。杜松部为明军精锐，配属车营与火器。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1091,6 +1122,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.55,
    "scale": "province",
    "note": "不含叶赫援兵。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1114,6 +1149,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.45,
    "scale": "province",
    "note": "叶赫兵闻杜松败即退回，实际未与后金交战。是否真到达战场，史料记载含糊。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1137,6 +1176,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "几乎完整撤回，是四路中唯一保全建制者。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1160,6 +1203,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.55,
    "scale": "province",
    "note": "刘綎所部多为南兵与川兵，与辽东本地军序列不同。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1184,6 +1231,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "亲历者所记本方兵力，在所有兵力数据中可信度最高——记录者没有夸大或缩小的动机。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -1207,6 +1258,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.4,
    "scale": "province",
    "note": "精确到个位的数字反而值得警惕——它来自战后清点缺额的奏报，而非战场统计。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1230,6 +1284,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.45,
    "scale": "province",
    "note": "军官损失比例极高，反映的是建制被整体歼灭而非溃散。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1253,6 +1310,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.4,
    "scale": "province",
    "note": "马骡损失数可与兵力数互校：若明军仅八万余，则骑兵与辎重损失近乎全灭。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1276,6 +1336,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.5,
    "scale": "county",
    "note": "《栅中日录》多用概数而非确数，这本身是亲历记录的特征——身处其中的人反而数不清。",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -1299,6 +1362,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "四路中主力最先被歼，此后战局已定。",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1322,6 +1388,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.75,
    "scale": "province",
    "note": "比杨镐原定的三月初二会师期提前，是四路失去协同的起点。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1345,6 +1415,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "明方叙事将败因归于主将个人性格，这是官修史书处理败绩的典型手法——归咎于人，则制度无过。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1368,6 +1442,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.35,
    "scale": "province",
    "note": "与 A042 直接冲突。同一件事，明方记为主将莽撞，金方记为己方谋略——冲突本身比任何一方的说法都更有信息量。",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1391,6 +1469,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "马林部得知杜松败讯后就地结营三处，被逐个击破。",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1414,6 +1495,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.75,
    "scale": "county",
    "note": "文官统兵而死战，与主将马林单骑遁走形成对照，是明代史料中反复被强调的道德叙事。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1437,6 +1522,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "同年六月开原陷落，马林战死于开原。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1460,6 +1549,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "东路军距赫图阿拉最近，也最后被歼。",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -1483,6 +1575,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "罕见地为明金双方史料共同记载，可信度因此提高——立场相反的史料若说法一致，通常意味着事实本身较为坚实。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1506,6 +1601,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "刘綎时年六十余，为明末宿将中战功最著者之一。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1529,6 +1627,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.85,
    "scale": "county",
    "note": "朝鲜内部对姜弘立评价两极。光海君密令观望之说，是朝鲜史学界长期争论的问题。",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -1552,6 +1653,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "杨镐得三路败讯后急檄南路撤兵。",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1575,6 +1679,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.45,
    "scale": "county",
    "note": "二十名哨骑吓垮一路大军。此条若属实，说明的不是兵力问题而是士气问题。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1598,6 +1705,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.65,
    "scale": "empire",
    "note": "这句话是否为努尔哈赤原话难以确证，但后金的实际行动完全符合此方针。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1621,6 +1731,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.35,
    "scale": "province",
    "note": "AI 推演：由起讫地点与日期反推。未见任何史料直接记载行军速度，此值仅供想象战场节奏之用，不可引用。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1644,6 +1758,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.25,
    "scale": "county",
    "note": "AI 推演：纯属环境重建，无史料依据。此类断言的唯一价值是让场景可被想象，绝不可作为论据。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1676,6 +1794,10 @@ window.SANDBOX_SLICES["sarhu"] = {
     "accept": "给出杜松西路军车营与火器的可能编制区间(参照同期车营成例), 说明「无直接记录」的原因(战殁无幸存详报、败军无勘状), 而非断言「无火器」。",
     "effort": "2-3 周"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1699,6 +1821,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.55,
    "scale": "province",
    "note": "这条断言解释了为什么东路刘綎走得最慢，也解释了为什么阿布达里岗设伏能成功。植被在本项目中不做栅格图层——历史植被没有可信的空间数据源，现代林地数据反映的是当代。它只能以文献断言的形式存在。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -1722,6 +1848,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.5,
    "scale": "county",
    "note": "这是『疲劳』这个抽象参数在史料中的实际形态。杜松部当日两渡浑河，接战时是湿透且受冻的状态。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1745,6 +1875,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.75,
    "scale": "empire",
    "note": "本项目的地形行军模型以步兵速度为基准，因此算出后金机动『紧张度 2.64』。这个偏差不是史料造假，是模型缺了兵种维度——系统自动生成的问题，由这条断言回答。",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1768,6 +1903,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.4,
    "scale": "empire",
    "note": "李成梁之子，战后遭弹劾，天启元年自杀。地形模型显示南路五日走完模型需 6.4 日的路，紧张度 1.28——按地形算他并不算慢。『逗留』这个评价可能带有战后追责的政治色彩。这是系统自动对一个流传四百年的定论提出的质疑。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1791,6 +1929,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "这条断言可由本系统的接战数据自动检验，不需要人为宣称——见『局部优势』面板。",
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1814,6 +1955,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.35,
    "scale": "province",
    "note": "谈迁只记损失总数而不记出征人数，与《明史》『四万五千八百七十余』整整差一倍。两个数字未必矛盾——《明史》数的是『阵亡军丁』，谈迁的『丧师』可能含溃散失踪与朝鲜、叶赫附从之众。本系统不裁决，只把两条并列并标出这一解释路径。",
+   "dims": [
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -1836,6 +1980,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "明方纪年「万历四十七年」与后金纪年「天命四年」指同一年（1619）。由 LLM 从《皇清开国方略》卷六抽出，经 ingest.py + reign_era 归一化。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1858,6 +2006,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "西路为四路主力；年号换算取「天命四年」对应公元 1619，月日（二月廿九）原样保留待农历模块。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1880,6 +2032,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "主战场节点；与 IN001 为同一事件的不同纪年表述。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1902,6 +2058,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "西路主将杜松战死，是萨尔浒西路崩溃的标志。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1924,6 +2083,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.3,
    "scale": "empire",
    "note": "明方对外宣称的虚数（震慑 + 安抚朝议），研究者普遍不采信；与 IN006 后金记述的「二十万」同为夸大，立场相关。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1946,6 +2108,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.4,
    "scale": "empire",
    "note": "胜方（后金）记述，夸大敌军以彰显战功；与 IN005 不冲突，是不同立场的同一虚数的两面。",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -1976,6 +2141,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "认领后可补一条 scholarship 层断言（如 A003 式），把八万八千的推算来源写明"
    },
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -1998,6 +2166,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2020,6 +2192,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2042,6 +2218,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2064,6 +2244,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2086,6 +2270,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2108,6 +2295,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2130,6 +2320,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2152,6 +2345,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "原文未明说轻敌，但乘夜列炬暴露行踪可推",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2174,6 +2370,11 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2196,6 +2397,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2218,6 +2423,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2240,6 +2448,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2262,6 +2474,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2284,6 +2500,12 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -2306,6 +2528,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "杨镐被任命为经略。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2328,6 +2554,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2350,6 +2580,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "萨尔浒之战爆发，明军分四路进攻。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2372,6 +2606,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "此为号称兵力，实际兵力可能少于该数。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2394,6 +2631,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2416,6 +2657,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2438,6 +2683,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2460,6 +2709,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2482,6 +2735,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "杜松军覆没。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2504,6 +2761,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2526,6 +2786,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "刘綎战死。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2548,6 +2812,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "明军总伤亡数字。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2570,6 +2837,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "杨镐因战败被下狱处死。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2592,6 +2863,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2622,6 +2897,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "核实萨尔浒之战明军实际兵力"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2644,6 +2922,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "杨镐在蔚山之战中先逃。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2666,6 +2947,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2688,6 +2972,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "杨镐隐瞒伤亡数字。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2710,6 +2997,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "杨镐在蔚山之战中先逃，导致明军溃败。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2732,6 +3022,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "杨镐因嫉妒而鸣金收兵，导致战败。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2754,6 +3047,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "杨镐隐瞒伤亡数字，导致朝廷无法了解真实情况。",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2784,6 +3080,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "评估杨镐在蔚山之战中的具体责任"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2814,6 +3113,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "评估杨镐在蔚山之战中的具体责任"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2844,6 +3146,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "评估杨镐在蔚山之战中的具体责任"
    },
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -2866,6 +3171,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "朝鲜军兵力，第三方视角",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2888,6 +3196,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "刘綎东路兵力，朝鲜译官探报",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2910,6 +3221,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "姜弘立目测东路明军实数，与宣称三万有出入",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2932,6 +3246,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "姜弘立视察刘綎营壁所见",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2954,6 +3272,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "刘綎自述与杨镐矛盾，致孤军",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2976,6 +3298,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "朝鲜军与后金军初战，损失惨重",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -2998,6 +3324,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "朝鲜平安监司驰启，战役结果",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3020,6 +3349,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "刘綎战败自焚，朝鲜记载",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3042,6 +3375,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "朝鲜左营将金应河英勇战死",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3064,6 +3401,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "朝鲜军主帅降后金，第三方记载",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3086,6 +3426,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "朝鲜记载杜松败亡，致后金专意东路",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3108,6 +3451,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "萨尔浒之战明军四路皆败",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -3130,6 +3476,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "明方私修，最可信之明方记载",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3152,6 +3501,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3174,6 +3526,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3196,6 +3551,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3218,6 +3576,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3240,6 +3601,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "明方估计，非实测",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -3262,6 +3626,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "兵部尚书黄嘉善言，与三朝辽事实录八万八千有出入",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -3284,6 +3651,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "黄嘉善对分兵之担忧",
+   "dims": [
+    6
+   ],
    "_party": "明廷官方",
    "_faction": null
   },
@@ -3306,6 +3676,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3328,6 +3702,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "后金方战略，明方记载转述",
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3350,6 +3727,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "现代研究对record的量化修正",
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -3380,6 +3760,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     ],
     "accept": "厘清明军实际出兵人数"
    },
+   "dims": [
+    6
+   ],
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -3396,6 +3779,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.8,
    "note": "《明通鉴》记杨镐四路分兵之原部署，可与清太祖实录、明神宗实录对读各路兵力。",
    "source": "mingtongjian",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3412,6 +3799,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "note": "中枢（浙党方从哲等）先发红旗促战，败则诿过经略——派系诿过的典型。",
    "source": "mingtongjian",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3428,6 +3819,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "note": "叶赫为海西女真扈伦四部之一，萨尔浒中助明，战后被灭。",
    "source": "mingtongjian",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3450,6 +3844,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "杨镐制定四路出击计划",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3472,6 +3869,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "西路兵力",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3494,6 +3894,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "北路兵力",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3516,6 +3919,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "东路兵力",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3538,6 +3944,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "杜松急于立功，率先渡河",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3560,6 +3970,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "后金设伏",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3582,6 +3995,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "西路主将阵亡",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3604,6 +4020,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "北路马林大败",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3626,6 +4045,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "潘宗颜部覆没",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3648,6 +4070,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "南路李如柏撤退",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3670,6 +4095,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "东路亦败，四路仅南路撤回",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -3692,6 +4120,9 @@ window.SANDBOX_SLICES["sarhu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "现代学者估算，明军实数可能低于此数",
+   "dims": [
+    6
+   ],
    "_party": "学界",
    "_faction": null
   }

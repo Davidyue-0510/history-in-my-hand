@@ -19,7 +19,8 @@ window.SANDBOX_SLICES["keju"] = {
   },
   "dims": [
    3,
-   5
+   5,
+   6
   ],
   "epoch": "sui_tang",
   "scale_tier": "strategic",
@@ -135,6 +136,11 @@ window.SANDBOX_SLICES["keju"] = {
     "era_text": "隋大业元年"
    },
    "place": "luoyang_k",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +159,11 @@ window.SANDBOX_SLICES["keju"] = {
     "era_text": "武周—唐"
    },
    "place": "changan_k",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +182,11 @@ window.SANDBOX_SLICES["keju"] = {
     "era_text": "清光绪三十一年"
    },
    "place": "luoyang_k",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -193,6 +209,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "科举肇端",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -215,6 +235,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -237,6 +261,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -259,6 +287,11 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -281,6 +314,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -303,6 +340,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -325,6 +366,11 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -347,6 +393,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说，但由置科与诏贡推出",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -369,6 +419,10 @@ window.SANDBOX_SLICES["keju"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "综合三段原文推出",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -398,6 +452,10 @@ window.SANDBOX_SLICES["keju"] = {
     ],
     "accept": "补充宋后科举制度演变"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -428,6 +486,11 @@ window.SANDBOX_SLICES["keju"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

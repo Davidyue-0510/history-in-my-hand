@@ -19,8 +19,9 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
   },
   "dims": [
    1,
-   3,
-   4
+   4,
+   5,
+   6
   ],
   "epoch": "ming",
   "scale_tier": "operational",
@@ -350,6 +351,11 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     "era_text": "崇祯元"
    },
    "place": "yanan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -368,6 +374,11 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     "era_text": "崇祯十三"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +397,11 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     "era_text": "崇祯十七"
    },
    "place": "beijing",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

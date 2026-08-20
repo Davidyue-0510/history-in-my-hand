@@ -15,6 +15,8 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
   "parties_note": "洛党尚礼法、蜀党尚文采宽政、朔党居台谏攻讦；三方皆反新法，却互不相能。系统不裁决，只并列。",
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "song",
@@ -214,6 +216,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     "gregorian_year": 1086
    },
    "place": "kaifeng",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -233,6 +240,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     "gregorian_year": 1089
    },
    "place": "kaifeng",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -252,6 +264,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     "gregorian_year": 1093
    },
    "place": "kaifeng",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -273,6 +290,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
    "place": "luoyang",
    "quote": "（洛党）以礼法绳人",
    "note": "理学 vs 文治的立场裂痕",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "洛党文献",
    "_faction": "luo_dang"
   },
@@ -294,6 +316,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
    "place": "meishan",
    "quote": "（蜀党）以文采相高，讥洛党峻刻",
    "note": "党争下沉到礼仪细故",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "蜀党文献",
    "_faction": "shu_dang"
   },
@@ -314,6 +341,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
    },
    "place": "kaifeng",
    "note": "内斗削弱旧党整体",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "朔党文献",
    "_faction": "shuo_dang"
   },
@@ -341,6 +373,11 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     ],
     "accept": "厘清三党人物确切师承与籍贯分布"
    },
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

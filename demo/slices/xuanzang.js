@@ -21,6 +21,8 @@ window.SANDBOX_SLICES["xuanzang"] = {
   "timeline_title": "玄奘西行时间轴",
   "dims": [
    1,
+   3,
+   5,
    6
   ],
   "epoch": "tang",
@@ -137,6 +139,11 @@ window.SANDBOX_SLICES["xuanzang"] = {
     "era_text": "贞观三"
    },
    "place": "changan",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -155,6 +162,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
     "era_text": "贞观十九"
    },
    "place": "changan",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +188,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +214,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "葱岭、天竺未在白名单，待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -221,6 +240,9 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -243,6 +265,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "慈恩寺未在白名单，待消歧",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -265,6 +291,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -287,6 +317,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由'求法'推断其身份",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -309,6 +343,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -331,6 +369,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -361,6 +403,10 @@ window.SANDBOX_SLICES["xuanzang"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

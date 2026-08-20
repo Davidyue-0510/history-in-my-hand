@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["beijing"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "yuan_ming",
@@ -165,6 +168,10 @@ window.SANDBOX_SLICES["beijing"] = {
     "end": 1449,
     "era_text": "正统十四年"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -183,6 +190,10 @@ window.SANDBOX_SLICES["beijing"] = {
     "era_text": "正统十四年"
    },
    "place": "beijing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -201,6 +212,11 @@ window.SANDBOX_SLICES["beijing"] = {
     "era_text": "正统十四年"
    },
    "place": "desheng",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -223,6 +239,9 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -245,6 +264,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -267,6 +290,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -289,6 +316,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -311,6 +342,11 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -333,6 +369,11 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -355,6 +396,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -377,6 +422,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -399,6 +448,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -421,6 +474,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -443,6 +500,11 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -465,6 +527,10 @@ window.SANDBOX_SLICES["beijing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -495,6 +561,9 @@ window.SANDBOX_SLICES["beijing"] = {
     ],
     "accept": "补瓦剌方视角，平衡单一明方叙事"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

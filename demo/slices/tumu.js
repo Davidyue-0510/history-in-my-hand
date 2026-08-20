@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["tumu"] = {
   },
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "yuan_ming",
@@ -177,6 +179,9 @@ window.SANDBOX_SLICES["tumu"] = {
     "end": 1449,
     "era_text": "正统十四年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +200,10 @@ window.SANDBOX_SLICES["tumu"] = {
     "era_text": "正统十四年"
    },
    "place": "tumu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -213,6 +222,9 @@ window.SANDBOX_SLICES["tumu"] = {
     "era_text": "正统十四年"
    },
    "place": "tumu",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -235,6 +247,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "战役起因，也先入侵",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -257,6 +272,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "兵力为约数，可能夸大",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -279,6 +298,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "亲征路线",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -301,6 +324,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "前哨失利",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -323,6 +349,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "死伤数字可能夸大",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -345,6 +375,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "重臣死难",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -367,6 +400,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "王振之死",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -389,6 +425,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "英宗被俘",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -411,6 +450,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "战后朝局",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -433,6 +476,10 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "北京保卫战前奏",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -455,6 +502,9 @@ window.SANDBOX_SLICES["tumu"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "推断王振指挥失误为溃败主因",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -484,6 +534,10 @@ window.SANDBOX_SLICES["tumu"] = {
     ],
     "accept": "核实土木堡之变明军实际兵力与伤亡数字"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["canhebei"] = {
   },
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "two_jin",
@@ -143,6 +145,9 @@ window.SANDBOX_SLICES["canhebei"] = {
     "end": 395,
     "era_text": "登国十年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -161,6 +166,9 @@ window.SANDBOX_SLICES["canhebei"] = {
     "era_text": "登国十年"
    },
    "place": "canhebei",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -179,6 +187,9 @@ window.SANDBOX_SLICES["canhebei"] = {
     "era_text": "登国十年"
    },
    "place": "canhebei",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -201,6 +212,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "后燕主动进攻北魏，兵力八万",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -223,6 +238,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "北魏采取避战策略",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -245,6 +264,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "燕军顿兵坚城之下",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -267,6 +290,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "慕容垂死讯影响燕军士气",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -289,6 +316,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "北魏战术优势",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -311,6 +342,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "战役结果",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -333,6 +368,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "降卒数量与处置",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -355,6 +394,9 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文总结性陈述，属合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -385,6 +427,10 @@ window.SANDBOX_SLICES["canhebei"] = {
     ],
     "accept": "补充魏军兵力或说明缺失原因"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +461,9 @@ window.SANDBOX_SLICES["canhebei"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +486,10 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "河南为泛称，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +512,9 @@ window.SANDBOX_SLICES["canhebei"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -489,6 +545,9 @@ window.SANDBOX_SLICES["canhebei"] = {
     ],
     "accept": "补魏军兵力与慕容氏败逃细节"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

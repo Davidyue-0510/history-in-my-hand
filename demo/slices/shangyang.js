@@ -18,8 +18,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "person:xiaogong": "秦孝公"
   },
   "dims": [
+   1,
    3,
-   5,
+   4,
    6
   ],
   "epoch": "warring_states",
@@ -154,6 +155,10 @@ window.SANDBOX_SLICES["shangyang"] = {
     "era_text": "秦孝公六年"
    },
    "place": "yueyang",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -172,6 +177,11 @@ window.SANDBOX_SLICES["shangyang"] = {
     "era_text": "十二年"
    },
    "place": "xianyang",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +200,9 @@ window.SANDBOX_SLICES["shangyang"] = {
     "era_text": "二十四年"
    },
    "place": "xianyang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +225,10 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "变法事件，subject 用 event:sy_356",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +251,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "变法具体措施",
+   "dims": [
+    3
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +276,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "商鞅为变法主持者",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +301,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "秦孝公为决策者",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +326,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "迁都事件，subject 用 event:sy_350",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +351,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "迁都后推行县制",
+   "dims": [
+    3
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -344,6 +376,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "迁都后统一度量衡",
+   "dims": [
+    3
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -366,6 +401,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "变法迁都后国力增强，subject 用 event:sy_338",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -388,6 +426,9 @@ window.SANDBOX_SLICES["shangyang"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "由原文'秦骤强'合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -418,6 +459,9 @@ window.SANDBOX_SLICES["shangyang"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -440,6 +484,11 @@ window.SANDBOX_SLICES["shangyang"] = {
    "place": "",
    "scale": "empire",
    "note": "变法派与旧贵族的首次正面交锋",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "法家典籍",
    "_faction": "fajia"
   },
@@ -462,6 +511,11 @@ window.SANDBOX_SLICES["shangyang"] = {
    "place": "",
    "scale": "empire",
    "note": "以贵族之身立威，激化矛盾",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "guizu"
   },
@@ -484,6 +538,10 @@ window.SANDBOX_SLICES["shangyang"] = {
    "place": "",
    "scale": "empire",
    "note": "旧贵族借新君即位翻案",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "guizu"
   },
@@ -506,6 +564,11 @@ window.SANDBOX_SLICES["shangyang"] = {
    "place": "",
    "scale": "empire",
    "note": "综合各方记载的因果判断",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

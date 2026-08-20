@@ -20,6 +20,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
   },
   "dims": [
    1,
+   2,
    6
   ],
   "epoch": "song",
@@ -159,6 +160,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     "end": 1131,
     "era_text": "绍兴元年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     "era_text": "绍兴元年"
    },
    "place": "heshangyuan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +204,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     "era_text": "绍兴元年"
    },
    "place": "heshangyuan",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +230,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "金军战略意图为迂回灭宋",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +256,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文未明说攻和尚原，但由上下文推出",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +282,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +308,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +334,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +360,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +385,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +411,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "时间跨度较长，非单次事件",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +437,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文为后世评价，非直接史实",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -422,6 +469,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     ],
     "accept": "补充金军具体兵力数字"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -452,6 +502,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -474,6 +527,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -496,6 +553,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -518,6 +578,10 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    "confidence": 0.7,
    "scale": "county",
    "note": "原文为史家评述，非直接事实，故标inference",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -548,6 +612,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     ],
     "accept": "补金方视角与精确兵力伤亡"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

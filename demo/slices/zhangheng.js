@@ -17,8 +17,9 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "person:zhangheng2": "张衡"
   },
   "dims": [
+   1,
    2,
-   5
+   6
   ],
   "epoch": "han",
   "scale_tier": "strategic",
@@ -128,6 +129,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
     "era_text": "阳嘉元"
    },
    "place": "luoyang",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +151,11 @@ window.SANDBOX_SLICES["zhangheng"] = {
     "era_text": "永和七"
    },
    "place": "luoyang",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +178,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文用公元纪年，非年号纪年，保留原文表述",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +204,9 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +229,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +255,11 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "地震发生在陇西，但地动仪在洛阳，place 记录仪器所在地",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +282,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +308,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +334,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "陇西不在白名单，未新建 place，待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +360,9 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +393,10 @@ window.SANDBOX_SLICES["zhangheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

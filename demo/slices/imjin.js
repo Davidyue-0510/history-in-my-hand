@@ -31,6 +31,10 @@ window.SANDBOX_SLICES["imjin"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -440,6 +444,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.9,
    "scale": "theater",
    "note": "",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -462,6 +471,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.85,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -484,6 +497,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "朝鲜官方记载日军二十万（冲突C 成员）",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -506,6 +523,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "日本后世史书载十五万（冲突C 成员）；学界对日本外史史料价值有疑",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -528,6 +549,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "朝鲜记平壤之战明军斩获（冲突A 成员）",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -550,6 +575,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "清修明史载明军首级数（冲突A 成员）",
+   "dims": [
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -572,6 +600,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.5,
    "scale": "theater",
    "note": "日本方称明军伤亡数千（冲突A 成员）；与朝鲜『烧杀过半』并列，谁损失多少说法迥异",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -594,6 +627,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.85,
    "scale": "theater",
    "note": "朝鲜记碧蹄馆明军死80余人（冲突B 成员）",
+   "dims": [
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -616,6 +652,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.8,
    "scale": "theater",
    "note": "清修明史不载具体数字（冲突B 成员）",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -638,6 +678,9 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.3,
    "scale": "theater",
    "note": "日本方称斩首一万（冲突B 成员）；学界多认为虚构成分大，与朝鲜『八十余人』差距悬殊——教科书级数字分歧",
+   "dims": [
+    6
+   ],
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -660,6 +703,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.85,
    "scale": "theater",
    "note": "朝鲜大捷，宣祖传旨嘉奖『朕甚嘉之』",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -682,6 +729,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.7,
    "scale": "theater",
    "note": "实录载李如松奏报口径，『憚於進取』系史官对退兵动机的定性，故列 scholarship 层",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -704,6 +755,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "清修明史：和议与日军撤王京并行",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -726,6 +781,10 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.5,
    "scale": "empire",
    "note": "日本方记载册封破裂场景（史实框架可信，细节带文学性）",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -748,6 +807,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "confidence": 0.85,
    "scale": "theater",
    "note": "朝鲜记明军诸将坐视晋州之陷",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -778,6 +842,10 @@ window.SANDBOX_SLICES["imjin"] = {
     ],
     "accept": "引入真正明方桶断言，三方分桶完整"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -808,6 +876,10 @@ window.SANDBOX_SLICES["imjin"] = {
     ],
     "accept": "把三方数字差距收敛到可解释的区间"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -830,6 +902,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "scale": "theater",
    "note": "分支时间线：日军守平壤（反事实）",
    "timeline": "imjin_japan_held_pyongyang",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -852,6 +929,11 @@ window.SANDBOX_SLICES["imjin"] = {
    "scale": "theater",
    "note": "分支时间线：明廷全力援朝（反事实）",
    "timeline": "imjin_ming_full_commit",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "朝鲜官方",
    "_faction": null
   }

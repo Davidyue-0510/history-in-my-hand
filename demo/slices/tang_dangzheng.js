@@ -14,7 +14,10 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
   "lead": "中晚唐最持久的权力缠斗：牛僧孺、李宗闵为首的「牛党」（多进士出身）与李德裕为首的「李党」（山东士族门荫）更相进退，史称牛李党争。本切片把两党的利益 stakes、核心人物与史料偏见并列，并把他们的籍贯（灵台/华阴/赞皇/荥阳）叠到地形上——有人的地方就有利益纠葛。",
   "parties_note": "牛党多据科举公议、讥弹权幸；李党重门荫士族、强干弱枝。两方叙事互贬，系统不裁决，只并列。",
   "dims": [
+   1,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "tang",
@@ -224,6 +227,11 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
    "place": "changan",
    "quote": "（牛僧孺等）对策，指陈时政得失，宰相李吉甫恶之",
    "note": "综合《旧唐书》《通鉴》",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -243,6 +251,10 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
     "gregorian_year": 823
    },
    "place": "changan",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -262,6 +274,10 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
     "gregorian_year": 846
    },
    "place": "changan",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +299,12 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
    "place": "lingtai",
    "quote": "（牛党）以进士举子为羽翼，讥弹权幸",
    "note": "两营取士路线之争",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
    "_party": "牛党文献",
    "_faction": "niu_dang"
   },
@@ -304,6 +326,11 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
    "place": "zhanghui",
    "quote": "（德裕）尤恶进士，累朝率由门荫",
    "note": "门第 vs 科举的结构性对立",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "李党文献",
    "_faction": "li_dang"
   },
@@ -324,6 +351,10 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
    },
    "place": "changan",
    "note": "牛李更迭，国势坐困",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -351,6 +382,11 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
     ],
     "accept": "补各党核心人物确切籍贯与起家途径"
    },
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

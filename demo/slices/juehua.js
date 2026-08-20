@@ -32,6 +32,8 @@ window.SANDBOX_SLICES["juehua"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "ming_qing",
@@ -277,6 +279,9 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "广宁之败，明军全军覆没。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -299,6 +304,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "祖大寿败走觉华岛。",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -321,6 +330,9 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "得功为化贞心腹，请降。",
+   "dims": [
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -343,6 +355,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "孙承宗自请督师辽西。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -365,6 +381,12 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "孙承宗主张筑宁远城与觉华岛犄角。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -387,6 +409,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "祖大寿守觉华岛。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -409,6 +435,11 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "赵率教守前屯。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -431,6 +462,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "马世龙任总兵官。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -453,6 +488,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "孙承宗定军制。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -475,6 +514,10 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "孙承宗练兵十一万。",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -497,6 +540,11 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "造铠仗数百万。",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -519,6 +567,11 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "开屯田五千顷。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   },
@@ -541,6 +594,12 @@ window.SANDBOX_SLICES["juehua"] = {
    "confidence": 0.85,
    "scale": "province",
    "note": "亦有其局限：觉华岛孤悬海上，后于宁远之战同期遭清军绕袭，暴露了海疆防御的薄弱。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -572,6 +631,10 @@ window.SANDBOX_SLICES["juehua"] = {
     "accept": "整理广宁败后明军退走觉华岛及孙承宗经略的各方记载，标出史料政治立场影响",
     "effort": "2 周"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "二手综述",
    "_faction": null
   }

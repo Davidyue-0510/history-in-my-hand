@@ -18,6 +18,7 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "person:chongzhen2": "崇祯帝"
   },
   "dims": [
+   1,
    3,
    4,
    6
@@ -154,6 +155,11 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "era_text": "崇祯元年"
    },
    "place": "yanan",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -172,6 +178,11 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "era_text": "十四年"
    },
    "place": "luoyang_lc",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +201,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "era_text": "十七年三月"
    },
    "place": "beijing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -208,6 +223,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "era_text": "永昌二年"
    },
    "place": "jiugong",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -230,6 +249,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "高迎祥为闯王，李自成后袭其号",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -252,6 +274,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -274,6 +299,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -296,6 +324,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "山海关不在白名单，未映射",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -318,6 +350,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "南走具体地点未明，殁于何处存疑",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -340,6 +376,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未明言死因与地点，推断为南逃途中死亡",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -362,6 +402,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "时间紧凑，未明具体间隔",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -384,6 +428,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文并列，推断因果关系",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -406,6 +453,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -436,6 +486,10 @@ window.SANDBOX_SLICES["lizicheng"] = {
     ],
     "accept": "考证李自成南走具体路线及死亡详情"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -466,6 +520,9 @@ window.SANDBOX_SLICES["lizicheng"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

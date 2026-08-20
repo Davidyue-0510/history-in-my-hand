@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
   },
   "dims": [
    1,
+   2,
+   4,
+   5,
    6
   ],
   "epoch": "song",
@@ -159,6 +162,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
     "end": 1279,
     "era_text": "祥兴二年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +184,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
     "era_text": "祥兴二年"
    },
    "place": "yaoshan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +206,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
     "era_text": "祥兴二年"
    },
    "place": "yaoshan",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +231,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +256,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +282,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +308,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +334,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +360,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +385,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "十万为原文表述，实数待考",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +410,9 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +435,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "史家评价，非原文直述事实",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +461,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "confidence": 0.5,
    "scale": "empire",
    "note": "后世史家观点，非当时记录",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +495,10 @@ window.SANDBOX_SLICES["yaoshan"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

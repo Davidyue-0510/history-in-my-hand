@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["kunyang"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "qin_han",
@@ -159,6 +161,9 @@ window.SANDBOX_SLICES["kunyang"] = {
     "end": 23,
     "era_text": "地皇四年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,9 @@ window.SANDBOX_SLICES["kunyang"] = {
     "era_text": "地皇四年"
    },
    "place": "kunyang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +203,9 @@ window.SANDBOX_SLICES["kunyang"] = {
     "era_text": "地皇四年"
    },
    "place": "kunyang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +228,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +253,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "原文记载四十二万，号称百万，实数存疑",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +279,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +305,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +330,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +356,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +381,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +406,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +432,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +457,9 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +482,10 @@ window.SANDBOX_SLICES["kunyang"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "由原文兵力数字对比推出，悬殊极大",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -467,6 +516,9 @@ window.SANDBOX_SLICES["kunyang"] = {
     ],
     "accept": "考证王莽军实际兵力，对比其他史料记载"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -497,6 +549,9 @@ window.SANDBOX_SLICES["kunyang"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

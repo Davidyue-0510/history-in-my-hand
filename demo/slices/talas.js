@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["talas"] = {
   },
   "dims": [
    1,
+   2,
    6
   ],
   "epoch": "sui_tang",
@@ -152,6 +153,10 @@ window.SANDBOX_SLICES["talas"] = {
     "end": 751,
     "era_text": "天宝十载"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +175,9 @@ window.SANDBOX_SLICES["talas"] = {
     "era_text": "天宝十载"
    },
    "place": "talas",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -188,6 +196,10 @@ window.SANDBOX_SLICES["talas"] = {
     "era_text": "天宝十载"
    },
    "place": "talas",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -210,6 +222,10 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -232,6 +248,9 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "兵力具体数目未载，仅言数万",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +273,9 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +298,9 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +323,9 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +348,9 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +373,10 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为后世评述，非当日记录",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +399,10 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "学界公认，但具体路径存争议",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +425,10 @@ window.SANDBOX_SLICES["talas"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为总结性陈述",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -416,6 +459,9 @@ window.SANDBOX_SLICES["talas"] = {
     ],
     "accept": "补充怛罗斯之战双方兵力估算"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -446,6 +492,9 @@ window.SANDBOX_SLICES["talas"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

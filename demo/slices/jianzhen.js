@@ -20,7 +20,9 @@ window.SANDBOX_SLICES["jianzhen"] = {
   "layer_title": "鉴真东渡路线叠加",
   "timeline_title": "鉴真东渡时间轴",
   "dims": [
-   1,
+   2,
+   4,
+   5,
    6
   ],
   "epoch": "tang",
@@ -137,6 +139,11 @@ window.SANDBOX_SLICES["jianzhen"] = {
     "era_text": "天宝二"
    },
    "place": "yangzhou",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -155,6 +162,11 @@ window.SANDBOX_SLICES["jianzhen"] = {
     "era_text": "天宝十二"
    },
    "place": "heijokyo",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +189,11 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +216,9 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "place 未在 whitelist，留空待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -221,6 +241,10 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -243,6 +267,11 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -265,6 +294,10 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -287,6 +320,10 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未明说身份，据史实推断",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -309,6 +346,10 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -331,6 +372,9 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "由两时间点推算",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -361,6 +405,9 @@ window.SANDBOX_SLICES["jianzhen"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

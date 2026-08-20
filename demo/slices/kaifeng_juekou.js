@@ -18,8 +18,10 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
   },
   "dims": [
    1,
+   2,
    3,
-   4
+   4,
+   6
   ],
   "epoch": "ming",
   "scale_tier": "operational",
@@ -167,6 +169,12 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     "era_text": "崇祯十五·六月"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -185,6 +193,11 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     "era_text": "九月十五"
    },
    "place": "kaofeng",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -203,6 +216,10 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     "era_text": "崇祯十六"
    },
    "place": "jinan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

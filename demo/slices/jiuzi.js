@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
   },
   "dims": [
    3,
+   4,
    6
   ],
   "epoch": "qing",
@@ -135,6 +136,11 @@ window.SANDBOX_SLICES["jiuzi"] = {
     "era_text": "康熙五一"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +159,11 @@ window.SANDBOX_SLICES["jiuzi"] = {
     "era_text": "康熙六一"
    },
    "place": "beijing",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +186,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "直接描述废太子事件本身，subject 用 event:jz_1712",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +212,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "直接描述雍正即位事件，subject 用 event:jz_1722",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +238,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "人物身份信息，用 person:yongzheng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +264,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "描述夺嫡事件的性质，subject 用 event:jz_1722",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +290,11 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "圈禁行为属于夺嫡事件的一部分，subject 用 event:jz_1722",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +317,11 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说圈禁是雍正下令，但可合理推断",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +344,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "「再废」暗示此前已有一次废黜，此处为合理推断",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +370,11 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "从即位与圈禁可推出夺嫡以胤禛胜出告终",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +404,9 @@ window.SANDBOX_SLICES["jiuzi"] = {
     ],
     "accept": "补充再废的直接原因"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -387,6 +436,9 @@ window.SANDBOX_SLICES["jiuzi"] = {
     ],
     "accept": "补充圈禁地点"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -417,6 +469,9 @@ window.SANDBOX_SLICES["jiuzi"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

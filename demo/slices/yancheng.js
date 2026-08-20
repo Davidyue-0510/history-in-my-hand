@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["yancheng"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "song",
@@ -159,6 +162,10 @@ window.SANDBOX_SLICES["yancheng"] = {
     "end": 1140,
     "era_text": "绍兴十年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +184,10 @@ window.SANDBOX_SLICES["yancheng"] = {
     "era_text": "绍兴十年"
    },
    "place": "yancheng",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +206,10 @@ window.SANDBOX_SLICES["yancheng"] = {
     "era_text": "绍兴十年"
    },
    "place": "yancheng",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +232,9 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未指明具体地点，留空待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +257,9 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未指明具体地点，留空待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +282,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "颍昌、郑州、洛阳不在白名单，未映射，待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +308,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +334,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +360,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "颍昌不在白名单，未映射，待消歧",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +386,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +412,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "地点未指明，留空",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +438,9 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +463,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未指明地点，留空",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +489,10 @@ window.SANDBOX_SLICES["yancheng"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文为叙述性评价，非直接事实，标为推断",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -467,6 +523,10 @@ window.SANDBOX_SLICES["yancheng"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

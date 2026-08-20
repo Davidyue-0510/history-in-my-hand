@@ -18,6 +18,7 @@ window.SANDBOX_SLICES["lvlin"] = {
    "person:liuxiu2": "刘秀"
   },
   "dims": [
+   1,
    4,
    6
   ],
@@ -186,6 +187,11 @@ window.SANDBOX_SLICES["lvlin"] = {
     "era_text": "天凤四"
    },
    "place": "lvlin",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -204,6 +210,9 @@ window.SANDBOX_SLICES["lvlin"] = {
     "era_text": "更始元"
    },
    "place": "changan",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -226,6 +235,10 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "原文用公元纪年，此处按年号纪年表述；具体月份缺失",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -248,6 +261,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "昆阳非白名单地点，暂以yecheng代指，待消歧",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -270,6 +286,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -292,6 +311,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -314,6 +336,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -336,6 +361,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "地点未指明，留空待补",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -358,6 +386,10 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -380,6 +412,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "由原文时间推算，非直述",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -402,6 +437,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "由原文事件顺序推出",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -424,6 +462,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "由原文推断，具体势力未明",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -453,6 +494,9 @@ window.SANDBOX_SLICES["lvlin"] = {
     ],
     "accept": "补充绿林军主要首领姓名"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -482,6 +526,9 @@ window.SANDBOX_SLICES["lvlin"] = {
     ],
     "accept": "补充昆阳之战双方兵力与战术"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -512,6 +559,9 @@ window.SANDBOX_SLICES["lvlin"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -533,6 +583,11 @@ window.SANDBOX_SLICES["lvlin"] = {
    "place": "lvlsh",
    "quote": "（绿林）依阻山泽，劫略活命",
    "note": "流民利益 vs 新莽秩序",
+   "dims": [
+    1,
+    4,
+    6
+   ],
    "_party": "绿林军",
    "_faction": "ll_rebel"
   },
@@ -554,6 +609,9 @@ window.SANDBOX_SLICES["lvlin"] = {
    "place": "caiyang",
    "quote": "（莽）遣大司空王邑、司徒王寻将兵百万",
    "note": "新莽倚关中与河北兵",
+   "dims": [
+    6
+   ],
    "_party": "新莽军",
    "_faction": "ll_court"
   },
@@ -580,6 +638,9 @@ window.SANDBOX_SLICES["lvlin"] = {
     ],
     "accept": "补绿林诸部早期实力分布"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

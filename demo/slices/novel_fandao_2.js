@@ -25,6 +25,8 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "person:shen_lan": "沈岚"
   },
   "dims": [
+   1,
+   3,
    4,
    5,
    6
@@ -218,6 +220,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "confidence": 0.9,
    "claim": "贺云章为一代明君，励精图治、吏治清明、天下太平，却因子贺凌宸毁国而断子绝孙。",
    "quote": "他一生为大历打下坚实的基础，却被他儿子一个人毁掉了，就连整个天下都易了姓氏，而他贺云章更是断子绝孙。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -230,6 +236,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "贺云章死后与叶为安立约：求仙长保宸儿守住大历、不绝贺家血脉传承。",
    "quote": "朕希望，仙长可以让宸儿保住大历，不要为了一个女人昏了头，别让贺家绝了血脉传承。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "贺云章自述",
    "_faction": null
   },
@@ -242,6 +252,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "叶为安借沈璎病逝、贺云章病倒之机，进入贺云章身体执政。",
    "quote": "叶为安在一阵嘈杂中睁开眼，坐起身体掀开床帘，『外面什么人在喧哗？』",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -254,6 +268,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "原时间线贺凌宸为沈岚解散后宫，杀不肯走的妃嫔及其子，气死贺云章。",
    "quote": "不愿意走的妃嫔都是阻碍他和沈岚在一起的障碍，就被除掉了。包括不小心旁观了全程的儿子。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -266,6 +284,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "沈岚为穿越者，被贺凌宸强掳入宫，心有所爱（齐宁），并不爱贺凌宸。",
    "quote": "她有自己喜欢的人，是贺凌宸强行将她掳进宫的，更何况看过贺凌宸对待那些嫔妃的态度，她只要没傻就更加不可能喜欢他！",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "沈岚视角",
    "_faction": null
   },
@@ -278,6 +300,11 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "贺凌宸为寻沈岚灭将军府，齐宁逃；后戎族南下大历大乱，齐宁归斩贺凌宸。",
    "quote": "将忠于皇室的将军府直接拔除了……贺凌宸被朝中大臣送给了齐宁，被他一剑斩下了脑袋。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -290,6 +317,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "叶为安介入后，贺凌宸被矫正、学会对他人的责任，大历得以存续。",
    "quote": "他准备让他去体会一下……普通百姓的日常生活。至少将来，他能多动动脑子。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -302,6 +333,10 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "generated",
    "claim": "反事实（无叶为安介入）：贺凌宸沿原时间线毁国、被斩、大历易主、贺家绝嗣。",
    "value_text": "反事实：大历覆灭、贺家绝嗣",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   },
@@ -314,6 +349,11 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "作者借贺云章『对女人负责』的表率，反衬贺凌宸只学表面——只学独爱却学不会责任。",
    "quote": "贺云章做出的表率有问题吗？……他只是忘了教给贺凌宸什么叫做责任而已——对女人的责任。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -326,6 +366,11 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
    "quote_status": "paraphrase_unverified",
    "claim": "作者借『小冰河』点明天灾非帝王不仁，呼应前副本明朝覆灭同样有气候因素。",
    "quote": "就像上个世界的明朝，也有相当一部分原因是小冰河的到来才会导致王朝颠覆。",
+   "dims": [
+    1,
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -344,6 +389,9 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
     ],
     "accept": "补全矫正后时间线，或标记为作者留白"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -362,6 +410,9 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
     ],
     "accept": "补全支线，或并入本 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   }

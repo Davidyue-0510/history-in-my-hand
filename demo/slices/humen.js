@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["humen"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "qing_modern",
@@ -159,6 +162,10 @@ window.SANDBOX_SLICES["humen"] = {
     "end": 1841,
     "era_text": "道光二十一年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +184,10 @@ window.SANDBOX_SLICES["humen"] = {
     "era_text": "道光二十一年"
    },
    "place": "humen",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +206,10 @@ window.SANDBOX_SLICES["humen"] = {
     "era_text": "道光二十一年"
    },
    "place": "humen",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +232,9 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "时间点明确，地点未指明，留空待补",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +257,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文称'上年'，即道光二十年",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +283,11 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "沙角、大角炮台属虎门，未单独建id",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +310,9 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +335,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +361,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +387,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文为史家评述，非直接事实，标为推断",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +413,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "史家评价，非原始事实，置信度低",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +439,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "史家评述，非直接事实",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +465,10 @@ window.SANDBOX_SLICES["humen"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "琦善未在person白名单，故用event关联",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +499,10 @@ window.SANDBOX_SLICES["humen"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

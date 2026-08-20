@@ -18432,6 +18432,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18463,6 +18466,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18494,6 +18501,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18525,6 +18535,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18556,6 +18569,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18587,6 +18604,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18618,6 +18638,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18649,6 +18673,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18680,6 +18706,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
     6
    ],
    "epoch": "ming_qing",
@@ -18711,6 +18738,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18742,6 +18771,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18773,6 +18804,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18804,6 +18839,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18835,6 +18872,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18866,6 +18906,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
     6
    ],
    "epoch": "ming_qing",
@@ -18897,6 +18938,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -18928,6 +18973,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "ming_qing",
@@ -18959,6 +19006,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "ming_qing",
@@ -18990,6 +19040,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -19021,6 +19075,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "ming",
@@ -19052,6 +19109,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    4,
     6
    ],
    "epoch": "ming",
@@ -19114,6 +19173,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    3,
     4,
     5,
     6
@@ -19146,6 +19207,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
     5,
     6
@@ -19178,7 +19240,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
-    4,
+    3,
     5,
     6
    ],
@@ -19242,6 +19304,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
     5,
     6
@@ -19274,6 +19337,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
     5,
     6
@@ -19371,6 +19435,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "tang",
@@ -19402,6 +19469,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -19433,6 +19504,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    5,
     6
    ],
    "epoch": "qing_modern",
@@ -19464,6 +19537,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "guangzhong",
@@ -19526,6 +19602,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -19557,6 +19637,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -19588,6 +19671,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     6
    ],
    "epoch": "warring_states",
@@ -19681,6 +19765,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    4,
     6
    ],
    "epoch": "qin_han",
@@ -19743,6 +19829,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    5,
     6
    ],
    "epoch": "qin_han",
@@ -19774,6 +19862,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "qin_han",
@@ -19805,6 +19895,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "three_kingdoms",
@@ -19836,6 +19929,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "three_kingdoms",
@@ -19867,6 +19963,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "three_kingdoms",
@@ -19898,6 +19996,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "three_kingdoms",
@@ -19929,6 +20029,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
     6
    ],
    "epoch": "two_jin",
@@ -19960,6 +20061,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "two_jin",
@@ -19991,6 +20094,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "two_jin",
@@ -20053,6 +20158,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     6
    ],
    "epoch": "sui_tang",
@@ -20084,6 +20190,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
     6
    ],
    "epoch": "sui_tang",
@@ -20115,6 +20224,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "song",
@@ -20146,6 +20258,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     6
    ],
    "epoch": "song",
@@ -20177,6 +20290,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "song",
@@ -20208,6 +20324,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     6
    ],
    "epoch": "song",
@@ -20239,6 +20356,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    4,
+    5,
     6
    ],
    "epoch": "song",
@@ -20270,6 +20390,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "yuan_ming",
@@ -20301,6 +20423,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    4,
     6
    ],
    "epoch": "yuan_ming",
@@ -20332,6 +20456,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "yuan_ming",
@@ -20363,6 +20490,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "qing_modern",
@@ -20394,6 +20523,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    4,
     6
    ],
    "epoch": "qing_modern",
@@ -20425,6 +20556,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    5,
     6
    ],
    "epoch": "qing_modern",
@@ -20456,8 +20590,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
-    4
+    6
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational",
@@ -20488,8 +20623,11 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
-    4
+    4,
+    5,
+    6
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational",
@@ -20520,8 +20658,11 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
-    4
+    4,
+    5,
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -20553,7 +20694,8 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     3,
-    4
+    4,
+    6
    ],
    "epoch": "ming_qing",
    "scale_tier": "operational",
@@ -20585,7 +20727,8 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     2,
-    3
+    3,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -20616,7 +20759,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -20647,7 +20791,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    3,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -20677,7 +20823,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3,
+    1,
+    2,
     6
    ],
    "epoch": "qin",
@@ -20741,8 +20888,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
-    5,
+    4,
     6
    ],
    "epoch": "warring_states",
@@ -20805,6 +20953,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     4,
     5,
     6
@@ -20837,6 +20986,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
     4,
     6
@@ -20869,8 +21019,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    3,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "two_jin",
    "scale_tier": "strategic",
@@ -20900,8 +21053,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "tang",
    "scale_tier": "strategic",
@@ -20932,6 +21088,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -20962,7 +21120,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3,
+    2,
+    5,
     6
    ],
    "epoch": "two_jin",
@@ -20993,6 +21152,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    3,
+    4,
     5,
     6
    ],
@@ -21025,7 +21186,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
-    5
+    5,
+    6
    ],
    "epoch": "sui_tang",
    "scale_tier": "strategic",
@@ -21055,8 +21217,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
-    5
+    3,
+    5,
+    6
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "strategic",
@@ -21087,7 +21252,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     2,
-    5
+    5,
+    6
    ],
    "epoch": "tang",
    "scale_tier": "strategic",
@@ -21117,9 +21283,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    1,
-    3,
-    4
+    2,
+    4,
+    5,
+    6
    ],
    "epoch": "han",
    "scale_tier": "operational",
@@ -21151,7 +21318,8 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     3,
-    4
+    4,
+    6
    ],
    "epoch": "qing_modern",
    "scale_tier": "operational",
@@ -21182,8 +21350,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
-    4
+    4,
+    6
    ],
    "epoch": "song",
    "scale_tier": "operational",
@@ -21214,7 +21384,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    3,
+    4,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -21245,7 +21418,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    3,
+    4,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -21276,7 +21452,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    3,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -21307,7 +21485,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    2
+    2,
+    3,
+    5,
+    6
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational",
@@ -21338,8 +21519,9 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    3,
-    4
+    4,
+    5,
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -21370,8 +21552,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    3,
-    4
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -21402,8 +21583,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    3,
-    4
+    4,
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -21434,8 +21615,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
-    3,
-    4
+    4,
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -21466,8 +21647,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
-    4
+    4,
+    6
    ],
    "epoch": "ming",
    "scale_tier": "operational",
@@ -21497,7 +21680,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3,
+    1,
     6
    ],
    "epoch": "qin",
@@ -21528,6 +21711,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
     6
    ],
@@ -21559,7 +21744,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
+    4,
     6
    ],
    "epoch": "qin",
@@ -21590,7 +21777,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
     6
    ],
    "epoch": "qin",
@@ -21653,6 +21843,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -21684,6 +21876,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
     5,
     6
    ],
@@ -21716,6 +21909,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -21746,7 +21941,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3
+    3,
+    6
    ],
    "epoch": "warring_states",
    "scale_tier": "strategic",
@@ -21776,7 +21972,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3
+    3,
+    4,
+    5,
+    6
    ],
    "epoch": "warring_states",
    "scale_tier": "strategic",
@@ -21806,6 +22005,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
+    3,
     4,
     6
    ],
@@ -21837,7 +22039,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    3,
     4,
+    5,
     6
    ],
    "epoch": "han",
@@ -21868,7 +22073,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    3,
+    1,
     4,
     5,
     6
@@ -21901,7 +22106,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     4,
+    5,
     6
    ],
    "epoch": "han",
@@ -21932,6 +22139,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     4,
     6
    ],
@@ -21963,8 +22171,12 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
+    3,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "warring_states",
    "scale_tier": "strategic",
@@ -21994,8 +22206,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
-    5
+    6
    ],
    "epoch": "warring_states",
    "scale_tier": "strategic",
@@ -22025,8 +22238,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    3,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "qing",
    "scale_tier": "strategic",
@@ -22056,8 +22272,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "yuan",
    "scale_tier": "strategic",
@@ -22087,7 +22305,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "yuan",
@@ -22150,6 +22371,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
     6
    ],
    "epoch": "qing",
@@ -22181,6 +22403,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "han",
@@ -22211,6 +22435,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
     6
    ],
@@ -22273,6 +22498,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    3,
+    4,
     5,
     6
    ],
@@ -22304,7 +22532,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    4,
+    1,
     5,
     6
    ],
@@ -22336,6 +22564,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    2,
+    3,
     5,
     6
    ],
@@ -22367,8 +22597,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
-    5
+    6
    ],
    "epoch": "han",
    "scale_tier": "strategic",
@@ -22398,8 +22629,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
-    5
+    5,
+    6
    ],
    "epoch": "two_jin",
    "scale_tier": "strategic",
@@ -22429,8 +22662,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
-    5
+    3,
+    5,
+    6
    ],
    "epoch": "song",
    "scale_tier": "strategic",
@@ -22460,8 +22696,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
-    5
+    4,
+    5,
+    6
    ],
    "epoch": "two_jin",
    "scale_tier": "strategic",
@@ -22523,6 +22762,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     6
    ],
    "epoch": "ming",
@@ -22554,6 +22795,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    3,
+    5,
     6
    ],
    "epoch": "tang",
@@ -22584,7 +22827,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
-    1,
+    2,
+    4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -22615,7 +22860,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -22646,7 +22894,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "liaodong",
    "terrain_off_grid": false,
    "dims": [
+    1,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -22678,6 +22929,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "song",
@@ -22709,6 +22962,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
+    4,
+    5,
     6
    ],
    "epoch": "han",

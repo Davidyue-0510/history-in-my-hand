@@ -20,6 +20,8 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
   },
   "dims": [
    1,
+   3,
+   4,
    6
   ],
   "epoch": "three_kingdoms",
@@ -159,6 +161,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
     "end": 215,
     "era_text": "建安二十年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +182,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
     "era_text": "建安二十年"
    },
    "place": "xiaoyaojin",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +203,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
     "era_text": "建安二十年"
    },
    "place": "xiaoyaojin",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +228,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "孙权攻合肥之战，以event:xy_jz为核心事件",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +253,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "曹军守合肥兵力",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +279,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +304,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +329,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +355,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +381,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +407,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "战役结果与后续影响",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +432,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文为后世评价，非直接战报，故标inference",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +457,10 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "原文为后世评价，非直接战报，故标inference",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +491,9 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

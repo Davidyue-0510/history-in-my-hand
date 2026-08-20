@@ -17,8 +17,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "person:zuchongzhi2": "祖冲之"
   },
   "dims": [
+   1,
    2,
-   5
+   5,
+   6
   ],
   "epoch": "two_jin",
   "scale_tier": "strategic",
@@ -128,6 +130,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
     "era_text": "宋大明七"
    },
    "place": "jiankang",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +152,11 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
     "era_text": "齐建元"
    },
    "place": "jiankang",
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +179,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文无年号纪年，仅用公元纪年；place 未登记，留空",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +205,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "此为后世评价，非当时记录，但原文直述，故标 record",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +231,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "祖冲之活动于建康，故 place 映射 jiankang",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +257,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +283,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "event:zc_pi 为圆周率计算事件，与 event:zc_463 关联",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +309,9 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文并列叙述，推断为同年发生",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +334,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "原文未提地点，据学界共识推断在建康",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +360,10 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文直述评价",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -351,6 +393,9 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
     ],
     "accept": "补充年号纪年"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -381,6 +426,11 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

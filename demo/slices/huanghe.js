@@ -21,8 +21,9 @@ window.SANDBOX_SLICES["huanghe"] = {
   "timeline_title": "黄河改道时间轴",
   "dims": [
    1,
+   2,
    3,
-   4
+   6
   ],
   "epoch": "cross_dynastic",
   "scale_tier": "operational",
@@ -201,6 +202,10 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "周定王五年"
    },
    "place": "suxu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +224,11 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "东汉永平十二年"
    },
    "place": "dapi",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -237,6 +247,11 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "南宋建炎二年"
    },
    "place": "huangkou_s",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -255,6 +270,10 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "南宋绍熙五年"
    },
    "place": "huangkou_s",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -273,6 +292,11 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "明弘治七年"
    },
    "place": "tongwaxiang",
+   "dims": [
+    1,
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -291,6 +315,10 @@ window.SANDBOX_SLICES["huanghe"] = {
     "era_text": "清咸丰五年"
    },
    "place": "tongwaxiang",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["suiyang"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
    6
   ],
   "epoch": "sui_tang",
@@ -159,6 +162,9 @@ window.SANDBOX_SLICES["suiyang"] = {
     "end": 757,
     "era_text": "至德二载"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +183,9 @@ window.SANDBOX_SLICES["suiyang"] = {
     "era_text": "至德二载"
    },
    "place": "suiyang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +204,9 @@ window.SANDBOX_SLICES["suiyang"] = {
     "era_text": "至德二载"
    },
    "place": "suiyang",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +229,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +254,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +279,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "杀贼数可能夸大，待核",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +304,10 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +330,10 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.8,
    "scale": "county",
    "note": "惨烈细节，或有争议",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +356,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +381,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +406,10 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "战略意义评价",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +432,10 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +458,9 @@ window.SANDBOX_SLICES["suiyang"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "论者评价，属后世推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -445,6 +491,9 @@ window.SANDBOX_SLICES["suiyang"] = {
     ],
     "accept": "补充睢阳守军具体兵力数字"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -475,6 +524,9 @@ window.SANDBOX_SLICES["suiyang"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

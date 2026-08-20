@@ -18,6 +18,8 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "person:chenhouzhu": "陈后主"
   },
   "dims": [
+   1,
+   2,
    3,
    6
   ],
@@ -151,6 +153,11 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
     "era_text": "开皇七"
    },
    "place": "changan",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -169,6 +176,10 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
     "era_text": "开皇九"
    },
    "place": "nanjing",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -191,6 +202,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "伐陈战役发起，主帅为晋王杨广",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -213,6 +227,10 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "建康即今南京，隋军攻陷陈都",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -235,6 +253,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "陈后主即陈叔宝，被俘标志陈亡",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -257,6 +278,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "隋灭陈后结束南北朝分裂",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -279,6 +303,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "统一后推行均田制，原文未详述具体措施",
+   "dims": [
+    3
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -301,6 +328,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "隋文帝为伐陈最高决策者",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -323,6 +353,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "陈后主被俘地点在建康",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -345,6 +378,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文分述两年，推断战役跨年",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -375,6 +411,9 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

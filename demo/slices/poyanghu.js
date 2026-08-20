@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["poyanghu"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    6
   ],
   "epoch": "yuan_ming",
@@ -152,6 +154,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
     "end": 1363,
     "era_text": "龙凤九年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -170,6 +176,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
     "era_text": "龙凤九年"
    },
    "place": "poyanghu",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -188,6 +198,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
     "era_text": "龙凤九年"
    },
    "place": "kanglang",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -210,6 +224,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -232,6 +250,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "号为虚数，实数待考",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -254,6 +276,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -276,6 +302,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -298,6 +328,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +353,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -342,6 +378,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -364,6 +403,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "后世史评，非当日实录",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -386,6 +428,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "现代学者评价，非原文",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -408,6 +453,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
    "confidence": 0.6,
    "scale": "empire",
    "note": "现代军事史评价",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -438,6 +487,10 @@ window.SANDBOX_SLICES["poyanghu"] = {
     ],
     "accept": "考证陈友谅鄱阳湖之战实际兵力"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -468,6 +521,9 @@ window.SANDBOX_SLICES["poyanghu"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

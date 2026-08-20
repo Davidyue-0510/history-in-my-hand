@@ -18,6 +18,9 @@ window.SANDBOX_SLICES["fenshu"] = {
    "person:qinshihuang3": "秦始皇"
   },
   "dims": [
+   1,
+   3,
+   4,
    5,
    6
   ],
@@ -135,6 +138,11 @@ window.SANDBOX_SLICES["fenshu"] = {
     "era_text": "始皇三四"
    },
    "place": "xianyang",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -153,6 +161,11 @@ window.SANDBOX_SLICES["fenshu"] = {
     "era_text": "始皇三五"
    },
    "place": "xianyang",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -175,6 +188,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文未用年号纪年，直接使用公元纪年，此处保留原文表述",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -197,6 +215,10 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -219,6 +241,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +268,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -263,6 +295,10 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "焚书坑儒为后世合称，原文分述两事",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -285,6 +321,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文主语为秦始皇，推断其为主导者",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -307,6 +348,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "原文未明说主语，但承接前文推断为秦始皇",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -329,6 +375,9 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "原文按时间顺序叙述",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -351,6 +400,11 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -373,6 +427,12 @@ window.SANDBOX_SLICES["fenshu"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -403,6 +463,10 @@ window.SANDBOX_SLICES["fenshu"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -14,6 +14,7 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
   "fictional": true,
   "lead": "同性恋骗婚儿子：一个被误读的上辈子——同一断言内核服务'误判真相'主题，反事实分支呈现'若未介入则骗婚毁人'。",
   "dims": [
+   3,
    4,
    5,
    6
@@ -156,6 +157,10 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "司徒锐是同性恋，与徒应琉相恋，家庭最终接纳。",
    "quote": "司徒锐和徒应琉，那张结婚证就不重要。",
    "value_text": "司徒锐=被接纳的同性恋儿子。",
+   "dims": [
+    4,
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -170,6 +175,11 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "徒时卿因上辈子'骗婚'误解，委托叶为安理解儿子。",
    "quote": "徒时卿是什么时候知道徒应琉是个同性恋，对褚秀秀骗婚的？",
    "value_text": "叶为安介入动机=徒时卿求理解。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "司徒父自述",
    "_faction": null
   },
@@ -184,6 +194,11 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "褚秀秀日记揭徒应琉非骗婚，只是旁观同性恋的误会。",
    "quote": "褚秀秀围观两个同性恋的兴奋与激动……那日记上寥寥的几句话。",
    "value_text": "上辈子骗婚=误会，非丧心病狂。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -198,6 +213,11 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "叶为安厘清误会，今世司徒锐与徒应琉被家庭接纳。",
    "quote": "（叶为安与叶云紫拼出合情合理真相）",
    "value_text": "矫正后误会被化解。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -212,6 +232,10 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "作者借误会谈'眼见不为实'：以结果逆推真相最易误判。",
    "quote": "知道结果，然后进行逆推往往很简单，但如果一开始看到的真相就是假的呢？",
    "value_text": "司徒锐是'误判真相'样本。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -226,6 +250,11 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "若无叶为安介入，上辈子徒应琉黑化骗婚，毁褚秀秀一生。",
    "quote": "（推演）徒应琉将褚秀秀骗得这么惨，毁了人家一辈子。",
    "value_text": "反事实：未介入→骗婚毁人。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -247,6 +276,9 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -261,6 +293,11 @@ window.SANDBOX_SLICES["novel_fandao_6"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

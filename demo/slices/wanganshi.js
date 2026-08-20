@@ -145,6 +145,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
     "era_text": "熙宁二年"
    },
    "place": "kaifeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -163,6 +167,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
     "era_text": "三年"
    },
    "place": "kaifeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -181,6 +189,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
     "era_text": "元丰八年"
    },
    "place": "kaifeng",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -203,6 +215,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -225,6 +241,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -247,6 +267,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -269,6 +293,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -291,6 +319,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -320,6 +352,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
     ],
     "accept": "补充新法废止的具体时间与过程"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -350,6 +386,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -372,6 +412,11 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "place": "",
    "scale": "empire",
    "note": "新党与旧党的首次正面论战",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "旧党文献",
    "_faction": "jiudang"
   },
@@ -394,6 +439,11 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "place": "",
    "scale": "empire",
    "note": "皇权+新党 vs 官僚地主旧党的角力",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "新党文献",
    "_faction": "xindang"
   },
@@ -416,6 +466,10 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "place": "",
    "scale": "empire",
    "note": "党争周期往复，拖累国势",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

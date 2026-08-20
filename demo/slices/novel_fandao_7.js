@@ -14,6 +14,7 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
   "fictional": true,
   "lead": "爱情至上的女儿：一个恋爱脑女儿——同一断言内核服务'情感盲目'主题，反事实分支呈现'若未介入则被渣男毁'。",
   "dims": [
+   3,
    4,
    5,
    6
@@ -156,6 +157,10 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "慕情爱情至上，为渣男放弃学业与家庭。",
    "quote": "（慕情将爱情置于一切之上）",
    "value_text": "慕情=爱情至上的女儿。",
+   "dims": [
+    4,
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -170,6 +175,10 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "慕父委托叶为安让女儿不再为爱盲目。",
    "quote": "（慕父求叶为安教女儿做人不被情迷）",
    "value_text": "叶为安介入动机=慕父委托。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "慕父自述",
    "_faction": null
   },
@@ -184,6 +193,10 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "慕情为渣男弃学业家庭，渐失自我。",
    "quote": "（慕情为爱情牺牲前途）",
    "value_text": "核心冲突=爱情盲目。",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -198,6 +211,10 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "叶为安矫正后慕情重拾自我与学业。",
    "quote": "（叶为安使慕情清醒）",
    "value_text": "矫正后慕情未毁。",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -212,6 +229,9 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "作者借慕情谈'爱情至上'的边界：爱不应吞没自我。",
    "quote": "（作者借慕情反思恋爱脑）",
    "value_text": "慕情是'恋爱脑'样本。",
+   "dims": [
+    5
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -226,6 +246,11 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "若无叶为安介入，慕情被渣男骗财骗色、毁掉一生。",
    "quote": "（推演）慕情为爱情至上的女儿，若无人点醒则万劫不复。",
    "value_text": "反事实：未介入→被渣男毁。",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -247,6 +272,9 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
     ],
     "accept": "逐章结构化各副本事件与人物关系，并入对应 world 的 events/assertions"
    },
+   "dims": [
+    6
+   ],
    "_party": "作者叙述",
    "_faction": null
   },
@@ -261,6 +289,11 @@ window.SANDBOX_SLICES["novel_fandao_7"] = {
    "claim": "快穿系统选派叶为安代入本副本父亲身体，以教养反派子女（使其不走原剧情绝路）为通关任务。",
    "quote": "（系统：宿主需完成教养任务方可脱离副本）",
    "value_text": "系统设定：叶为安受派代入父亲，教养反派子女为通关条件。",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "系统任务",
    "_faction": null
   }

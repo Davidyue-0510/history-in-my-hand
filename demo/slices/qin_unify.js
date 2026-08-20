@@ -18,7 +18,8 @@ window.SANDBOX_SLICES["qin_unify"] = {
    "person:wangjian": "王翦"
   },
   "dims": [
-   3,
+   1,
+   2,
    6
   ],
   "epoch": "qin",
@@ -187,6 +188,9 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "秦王政十七年"
    },
    "place": "xinzheng",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -205,6 +209,9 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "十九年"
    },
    "place": "handan",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -223,6 +230,10 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "二十二年"
    },
    "place": "daliang",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -241,6 +252,9 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "二十四年"
    },
    "place": "shouchun",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -259,6 +273,10 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "二十五年"
    },
    "place": "ji",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +295,9 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "era_text": "二十六年"
    },
    "place": "linzi",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

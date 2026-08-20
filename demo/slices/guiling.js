@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["guiling"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -159,6 +162,10 @@ window.SANDBOX_SLICES["guiling"] = {
     "end": -354,
     "era_text": "周显王十五年"
    },
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -177,6 +184,10 @@ window.SANDBOX_SLICES["guiling"] = {
     "era_text": "周显王十六年"
    },
    "place": "guiling",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -195,6 +206,10 @@ window.SANDBOX_SLICES["guiling"] = {
     "era_text": "周显王十六年"
    },
    "place": "guiling",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -217,6 +232,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "原文无年号，仅记公元前354年",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -239,6 +258,9 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -261,6 +283,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place未明，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -283,6 +309,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "place未明，待消歧",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -305,6 +335,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +361,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -349,6 +387,9 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -371,6 +412,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -393,6 +438,9 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -415,6 +463,9 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -437,6 +488,9 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "原文为总结性表述，属合理推断",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +513,10 @@ window.SANDBOX_SLICES["guiling"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "原文未明说诱敌意图，由围魏救赵策略推出",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -489,6 +547,10 @@ window.SANDBOX_SLICES["guiling"] = {
     ],
     "accept": "补败方视角与纪年异文"
    },
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

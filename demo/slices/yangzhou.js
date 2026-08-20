@@ -29,6 +29,8 @@ window.SANDBOX_SLICES["yangzhou"] = {
   },
   "dims": [
    1,
+   2,
+   4,
    6
   ],
   "epoch": "ming",
@@ -239,6 +241,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "多铎四月十四日南下",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -261,6 +267,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "檄诸镇援，仅刘肇基等少数至",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -283,6 +293,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "多铎四月十八日兵临扬州",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -305,6 +319,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "曰「请无杀扬州人」",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -327,6 +345,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "多铎破城后下令屠城",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -349,6 +371,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.5,
    "scale": "province",
    "note": "明遗民王秀楚记载，立场在控诉",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -371,6 +397,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "清方立场在讳饰",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   },
@@ -393,6 +423,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.6,
    "scale": "province",
    "note": "立场在讳饰",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "学界",
    "_faction": null
   },
@@ -415,6 +449,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.7,
    "scale": "province",
    "note": "五日后豫王令封刀",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -445,6 +483,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
     ],
     "accept": "需综合明遗民、清方、西人记载，给出可信区间"
    },
+   "dims": [
+    4,
+    6
+   ],
    "_party": "明·私修",
    "_faction": null
   },
@@ -467,6 +509,10 @@ window.SANDBOX_SLICES["yangzhou"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "多铎入南京、弘光降",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "清修官史",
    "_faction": null
   }

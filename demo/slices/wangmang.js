@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["wangmang"] = {
   },
   "dims": [
    3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -153,6 +155,11 @@ window.SANDBOX_SLICES["wangmang"] = {
     "era_text": "始建国元"
    },
    "place": "changan",
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -171,6 +178,11 @@ window.SANDBOX_SLICES["wangmang"] = {
     "era_text": "同年"
    },
    "place": "changan",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -189,6 +201,9 @@ window.SANDBOX_SLICES["wangmang"] = {
     "era_text": "地皇四"
    },
    "place": "changan",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -211,6 +226,10 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "王田、五均六筦为改制核心内容",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -233,6 +252,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -255,6 +277,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +302,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -299,6 +327,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "绿林为起义军，未在person白名单，故以event关联",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -321,6 +352,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -343,6 +377,10 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文直述，但为概括性描述，故标inference",
+   "dims": [
+    4,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -365,6 +403,9 @@ window.SANDBOX_SLICES["wangmang"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -395,6 +436,11 @@ window.SANDBOX_SLICES["wangmang"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -417,6 +463,11 @@ window.SANDBOX_SLICES["wangmang"] = {
    "place": "",
    "scale": "empire",
    "note": "改制派与豪强的根本利益对立",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "han_zongshi"
   },
@@ -439,6 +490,11 @@ window.SANDBOX_SLICES["wangmang"] = {
    "place": "",
    "scale": "empire",
    "note": "宗室豪强是反莽主力",
+   "dims": [
+    3,
+    4,
+    6
+   ],
    "_party": "官修史书",
    "_faction": "han_zongshi"
   },
@@ -461,6 +517,11 @@ window.SANDBOX_SLICES["wangmang"] = {
    "place": "",
    "scale": "empire",
    "note": "综合各方记载的因果判断",
+   "dims": [
+    4,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

@@ -18,7 +18,7 @@ window.SANDBOX_SLICES["wuwang"] = {
    "person:zhouwang": "商纣王"
   },
   "dims": [
-   3,
+   1,
    6
   ],
   "epoch": "qin",
@@ -144,6 +144,10 @@ window.SANDBOX_SLICES["wuwang"] = {
     "era_text": "文王受命"
    },
    "place": "zhouyuan",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -162,6 +166,10 @@ window.SANDBOX_SLICES["wuwang"] = {
     "era_text": "牧野之朝"
    },
    "place": "muye",
+   "dims": [
+    1,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -192,6 +200,9 @@ window.SANDBOX_SLICES["wuwang"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

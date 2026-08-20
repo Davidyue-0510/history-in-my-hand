@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
   },
   "dims": [
    1,
-   2
+   2,
+   3,
+   5,
+   6
   ],
   "epoch": "sui_yuan",
   "scale_tier": "operational",
@@ -128,6 +131,12 @@ window.SANDBOX_SLICES["sui_daxing"] = {
     "era_text": "开皇二"
    },
    "place": "changan",
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -146,6 +155,11 @@ window.SANDBOX_SLICES["sui_daxing"] = {
     "era_text": "开皇三"
    },
    "place": "changan",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -168,6 +182,11 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -190,6 +209,11 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -212,6 +236,11 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    1,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -234,6 +263,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.7,
    "scale": "empire",
    "note": "原文未明说，但由'为唐长安之基'可推出大兴城对唐长安的奠基作用",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -256,6 +289,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -278,6 +315,11 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由'规画棋盘'推断为棋盘式布局",
+   "dims": [
+    2,
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -300,6 +342,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "",
+   "dims": [
+    3,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -322,6 +368,9 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "confidence": 0.8,
    "scale": "empire",
    "note": "由原文时间点推出筑城与迁都的时间跨度",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +401,10 @@ window.SANDBOX_SLICES["sui_daxing"] = {
     ],
     "accept": "补各方视角与纪年异文"
    },
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }

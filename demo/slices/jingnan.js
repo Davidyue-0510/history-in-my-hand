@@ -18,7 +18,8 @@ window.SANDBOX_SLICES["jingnan"] = {
    "person:jianwen": "建文帝"
   },
   "dims": [
-   3,
+   2,
+   5,
    6
   ],
   "epoch": "two_jin",
@@ -275,6 +276,10 @@ window.SANDBOX_SLICES["jingnan"] = {
     "era_text": "建文元年"
    },
    "place": "beiping",
+   "dims": [
+    5,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -293,6 +298,9 @@ window.SANDBOX_SLICES["jingnan"] = {
     "era_text": "四年六月"
    },
    "place": "nanjing",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -315,6 +323,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "建文元年七月，朱棣起兵北平",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -337,6 +348,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -359,6 +373,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "中央军兵力，号称三十万",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -381,6 +398,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "真定之战，燕军未克城",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -403,6 +423,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "李景隆代耿炳文后调集",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -425,6 +448,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "郑村坝之战",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -447,6 +473,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.8,
    "scale": "province",
    "note": "李景隆合兵",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -469,6 +498,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "白沟河之战",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -491,6 +523,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "济南之守",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -513,6 +548,10 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "county",
    "note": "东昌之战，中央军首捷",
+   "dims": [
+    2,
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -535,6 +574,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "province",
    "note": "夹河·藁城之战",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -557,6 +599,9 @@ window.SANDBOX_SLICES["jingnan"] = {
    "confidence": 0.9,
    "scale": "empire",
    "note": "破南京·即位，建文帝失踪",
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   },
@@ -587,6 +632,9 @@ window.SANDBOX_SLICES["jingnan"] = {
     ],
     "accept": "补建文侧记载与夺位细节的多元叙述"
    },
+   "dims": [
+    6
+   ],
    "_party": "综合史料",
    "_faction": null
   }
