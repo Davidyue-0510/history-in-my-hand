@@ -232,6 +232,27 @@
     .card-dims .dim.d5.on{ background: #7A5AA0; }   /* ⑤ 思想文化与观念世界 */
     .card-dims .dim.d6.on{ background: #B23A48; }   /* ⑥ 重大事件与关键人物 */
 
+    /* ── 六维信息类别覆盖透视（预留信息类别：6 槽恒在，未覆盖显式「待补」）── */
+    .dim-coverage{ margin: 16px 0 6px; }
+    .dc-head{ font-family: var(--serif); font-size: 14px; color: #5A5246; margin-bottom: 9px; }
+    .dc-head .dc-sub{ font-family: var(--sans); font-size: 12px; color: #9A9080; margin-left: 8px; }
+    .dc-slots{ display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .dc-slot{ text-align: left; background: #FBF9F3; border: 1px solid #E8E0CC; border-radius: 8px;
+      padding: 10px 11px; cursor: pointer; font-family: var(--sans); transition: all .12s ease;
+      display: flex; flex-direction: column; gap: 6px; }
+    .dc-slot:hover{ border-color: #B89C70; }
+    .dc-slot.on{ box-shadow: inset 0 0 0 2px #B89C70; }
+    .dc-name{ font-size: 13px; font-weight: 600; }
+    .dc-slot.d1{ color: #3E6E99; } .dc-slot.d2{ color: #3D8B5A; }
+    .dc-slot.d3{ color: #8C6239; } .dc-slot.d4{ color: #C0532B; }
+    .dc-slot.d5{ color: #7A5AA0; } .dc-slot.d6{ color: #B23A48; }
+    .dc-bar{ height: 5px; background: #EDE6D6; border-radius: 3px; overflow: hidden; }
+    .dc-bar i{ display: block; height: 100%; border-radius: 3px; background: currentColor; }
+    .dc-num{ font-size: 12px; color: #6E6A5A; }
+    .dc-num b{ color: #2A2521; font-size: 14px; }
+    .dc-status{ font-size: 11px; color: #9A9080; }
+    .dc-slot.on .dc-status{ color: #8C6239; font-weight: 600; }
+
     /* ── 分类色标：按 kind 给卡片左缘与标签上色，文明事件网格一眼可辨 ── */
     .card--battle{border-left:3px solid #B23A48;}      .card--battle .card-kind{color:#B23A48;}
     .card--disaster{border-left:3px solid #2E6FB0;}    .card--disaster .card-kind{color:#2E6FB0;}
@@ -443,6 +464,7 @@
     <span><i style="background:#9B7FD0"></i>虚构</span>
   </div>
   <div class="hub-stats" id="hubStats"></div>
+  <section class="dim-coverage" id="dimCoverage" aria-label="六维信息类别覆盖"></section>
   <section class="hub-grid" id="hubGrid">
     <!-- 由 demo/hub.js 自动按 SD.scenes 渲染：增删切片无需改 HTML -->
   </section>

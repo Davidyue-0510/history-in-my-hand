@@ -387,6 +387,51 @@
     }
     grid.innerHTML = html;
     updateStats(vis.length);
+    renderDimCoverage(vis);
+  }
+
+  /* 六维信息类别覆盖透视：所有 6 个维度始终作为「预留槽」存在，
+     可见切片中覆盖它的数量点亮，未覆盖显式「待补」——不假装齐全（E18 精神）。 */
+  function renderDimCoverage(vis) {
+    var box = document.getElementById('dimCoverage');
+    if (!box) return;
+    var total = vis.length;
+    var cov = {};
+    Object.keys(DIMENSIONS).forEach(function (k) { cov[parseInt(k, 10)] = 0; });
+    vis.forEach(function (sk) {
+      var ds = (scenes[sk].meta || {}).dims || [];
+      ds.forEach(function (d) { if (cov[d] != null) cov[d]++; });
+    });
+    var html = '<div class="dc-head">六维信息类别覆盖'
+      + '<span class="dc-sub">可见 ' + total + ' 个切片 · 未覆盖的维度显式「待补」，不假装齐全</span></div>';
+    html += '<div class="dc-slots">';
+    Object.keys(DIMENSIONS).map(function (k) { return parseInt(k, 10); }).sort(function (a, b) { return a - b; })
+      .forEach(function (k) {
+        var c = cov[k] || 0;
+        var pct = total ? Math.round(c / total * 100) : 0;
+        var active = sel.dim.indexOf(k) >= 0;
+        var status = c > 0 ? (c === total ? '全覆盖' : '覆盖 ' + c) : '待补';
+        html += '<button type="button" class="dc-slot d' + k + (active ? ' on' : '') + '" data-dim="' + k + '"'
+          + ' title="' + (DIM_NAME[k] || k) + '：' + ((DIMENSIONS[k] && DIMENSIONS[k].note) || '') + '">'
+          + '<span class="dc-name">' + (DIM_SHORT[k] || DIM_NAME[k] || k) + '</span>'
+          + '<span class="dc-bar"><i style="width:' + pct + '%"></i></span>'
+          + '<span class="dc-num"><b>' + c + '</b> / ' + total + '</span>'
+          + '<span class="dc-status">' + status + '</span>'
+          + '</button>';
+      });
+    html += '</div>';
+    box.innerHTML = html;
+    Array.prototype.forEach.call(box.querySelectorAll('.dc-slot'), function (b) {
+      b.addEventListener('click', function () {
+        var k = parseInt(b.getAttribute('data-dim'), 10);
+        var i = sel.dim.indexOf(k);
+        if (i >= 0) sel.dim.splice(i, 1); else sel.dim.push(k);
+        Array.prototype.forEach.call(document.querySelectorAll('#fDim .facet-btn'), function (x) {
+          if (parseInt(x.getAttribute('data-v'), 10) === k) x.classList.toggle('on', i < 0);
+        });
+        renderHub();
+      });
+    });
   }
 
   function updateStats(n) {
