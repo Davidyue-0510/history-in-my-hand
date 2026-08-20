@@ -2040,7 +2040,40 @@
   function _wcNote(t) { var d = document.createElement('div'); d.style.cssText = 'color:#918777;font-size:12px'; d.textContent = t; return d; }
 
   /* ═══════════ 刷新 ═══════════ */
+  /* 六维信息类别覆盖（单切片版，与枢纽页同款契约）：
+     6 个维度始终作为预留槽存在；本切片史料实际覆盖的维度点亮，未覆盖显式「待补」，不假装齐全（E18 精神）。 */
+  function renderDimCoverage() {
+    var box = document.getElementById('dimCoverage');
+    if (!box) return;
+    var DIM = SD.dimensions || {};
+    var keys = Object.keys(DIM).map(function (k) { return parseInt(k, 10); })
+      .filter(function (n) { return !isNaN(n); }).sort(function (a, b) { return a - b; });
+    if (!keys.length) keys = [1, 2, 3, 4, 5, 6];
+    var covSet = {};
+    ((META.dims || []).slice()).forEach(function (d) { covSet[parseInt(d, 10)] = true; });
+    var html = '<div class="dc-head">六维信息类别覆盖'
+      + '<span class="dc-sub">六维（地理/技术/制度/社会/思想/事件）始终作为预留槽；本切片史料实际覆盖的维度点亮，未覆盖显式「待补」，不假装齐全。</span></div>'
+      + '<div class="dc-slots">';
+    keys.forEach(function (k) {
+      var on = !!covSet[k];
+      var entry = DIM[String(k)] || DIM[k] || {};
+      var short = entry.short || entry.name || ('维度' + k);
+      var full = entry.name || ('维度' + k);
+      var note = entry.note || '';
+      var status = on ? '已覆盖' : '待补';
+      html += '<div class="dc-slot d' + k + (on ? ' on' : '') + '" data-dim="' + k + '"'
+        + ' title="' + full + '：' + note + '">'
+        + '<span class="dc-name">' + short + '</span>'
+        + '<span class="dc-bar"><i style="width:' + (on ? 100 : 0) + '%"></i></span>'
+        + '<span class="dc-status">' + status + '</span>'
+        + '</div>';
+    });
+    html += '</div>';
+    box.innerHTML = html;
+  }
+
   function refresh() {
+    renderDimCoverage();
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
     renderSiblings(); drawDynamic();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderWarCourt(); renderInspect();
