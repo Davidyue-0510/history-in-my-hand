@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
    "title": "东汉大疫·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "大疫记载见于《后汉书·五行志》与张仲景自序，死亡规模以世家记述折中，确切毒株已不可考。"
+   "bias_note": "大疫记载见于《后汉书·五行志》与张仲景自序，死亡规模以世家记述折中，确切毒株已不可考。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["lixue"] = {
    "title": "宋明理学·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "理学据《宋史·道学传》与《朱子年谱》综合，朱陆之争为理学内部张力。"
+   "bias_note": "理学据《宋史·道学传》与《朱子年谱》综合，朱陆之争为理学内部张力。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["tumu"] = {
    "title": "土木堡之变·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "明方叙王振乱政，瓦剌叙俘帝。"
+   "bias_note": "明方叙王振乱政，瓦剌叙俘帝。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

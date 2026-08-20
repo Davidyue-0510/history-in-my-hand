@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["hongjin"] = {
    "title": "红巾军·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "红巾据《元史》《明史》综合，其宗教色彩与民族矛盾交织。"
+   "bias_note": "红巾据《元史》《明史》综合，其宗教色彩与民族矛盾交织。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

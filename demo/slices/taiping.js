@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["taiping"] = {
    "title": "太平天国·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "太平天国据《太平天国史》综合；宗教色彩与政治主张兼具，正反评价悬殊。"
+   "bias_note": "太平天国据《太平天国史》综合；宗教色彩与政治主张兼具，正反评价悬殊。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

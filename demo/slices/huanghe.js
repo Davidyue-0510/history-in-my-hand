@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["huanghe"] = {
    "title": "黄河改道·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "河道变迁据谭其骧《中国历史地图集》与《黄河志》综合，具体摆幅与年份学界仍有考订空间。"
+   "bias_note": "河道变迁据谭其骧《中国历史地图集》与《黄河志》综合，具体摆幅与年份学界仍有考订空间。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

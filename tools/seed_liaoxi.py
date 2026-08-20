@@ -24,15 +24,13 @@ EXTRA_SOURCES = {
         "id": "chongzhen_shilu", "title": "明崇祯实录",
         "party": "明廷官方", "stance_label": "本朝官修·当代",
         "distance_label": "成书约 1645，距崇祯事约数年",
-        "color": "#A0473A", "compiler": "明史馆", "period": "崇祯朝",
-        "stance": "official_contemporary"
+        "color": "#A0473A", "compiler": "明史馆", "period": "崇祯朝"
     },
     'qing_taizong_shilu': {
         "id": "qing_taizong_shilu", "title": "清太宗实录",
         "party": "清修官史", "stance_label": "敌方官修",
         "distance_label": "初纂 1644 后屡经改窜，距皇太极事数年",
-        "color": "#7B5C3E", "compiler": "清实录馆", "period": "天聪/崇德",
-        "stance": "official_enemy"
+        "color": "#7B5C3E", "compiler": "清实录馆", "period": "天聪/崇德"
     },
 }
 

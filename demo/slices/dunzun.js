@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["dunzun"] = {
    "title": "独尊儒术·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "思想政策据《汉书·董仲舒传》《武帝纪》综合；「独尊」后百家并未尽绝，实为儒术官学化。"
+   "bias_note": "思想政策据《汉书·董仲舒传》《武帝纪》综合；「独尊」后百家并未尽绝，实为儒术官学化。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

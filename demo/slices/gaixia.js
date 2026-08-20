@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["gaixia"] = {
    "title": "垓下之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "汉方叙垓下合围，楚方叙项羽悲歌。"
+   "bias_note": "汉方叙垓下合围，楚方叙项羽悲歌。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

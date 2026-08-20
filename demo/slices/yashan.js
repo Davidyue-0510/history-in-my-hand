@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["yashan"] = {
    "title": "崖山之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "崖山据《宋史·瀛国公纪》《元史·张弘范传》综合，殉国规模以传说与记载折中。"
+   "bias_note": "崖山据《宋史·瀛国公纪》《元史·张弘范传》综合，殉国规模以传说与记载折中。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

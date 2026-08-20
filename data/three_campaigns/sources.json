@@ -1,16 +1,15 @@
 {
- "sources": [
-  {
-   "id": "wikipedia_three_campaigns",
-   "title": "维基百科·三大战役",
-   "party": "解放军",
-   "stance_label": "百科条目",
-   "distance_label": "距事约70年",
-   "color": "#6C7A89",
-   "compiler": "维基百科编者",
-   "period": "现代",
-   "stance": "encyclopedic",
-   "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
-  }
- ]
+  "sources": [
+    {
+      "id": "wikipedia_three_campaigns",
+      "title": "维基百科·三大战役",
+      "party": "解放军",
+      "stance_label": "百科条目",
+      "distance_label": "距事约70年",
+      "color": "#6C7A89",
+      "compiler": "维基百科编者",
+      "period": "现代",
+      "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
+    }
+  ]
 }

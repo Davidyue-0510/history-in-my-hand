@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "title": "九子夺嫡·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "夺嫡据《清圣祖实录》与清史稿综合，继位细节多传说与考辨。"
+   "bias_note": "夺嫡据《清圣祖实录》与清史稿综合，继位细节多传说与考辨。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

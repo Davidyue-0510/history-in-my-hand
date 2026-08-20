@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["yiling"] = {
    "title": "夷陵之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "吴方叙陆逊持重，蜀方叙复仇之师。"
+   "bias_note": "吴方叙陆逊持重，蜀方叙复仇之师。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

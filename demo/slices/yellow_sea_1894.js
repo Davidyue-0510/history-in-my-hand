@@ -85,8 +85,23 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "color": "#6C7A89",
    "compiler": "维基百科编者",
    "period": "现代",
-   "stance": "encyclopedic",
    "note": "现代百科条目，二手综述——综合中日英多方史料。数字差异/参战兵力口径不一致处已标注。来源：zh.wikipedia.org/wiki/黄海海战_(1894年)"
+  },
+  {
+   "id": "qing_bing_beiyang",
+   "title": "《清史稿·北洋海军列传》/ 李鸿章海军奏稿",
+   "party": "清修官史",
+   "stance_label": "清修官史",
+   "distance_label": "成书 1928（民国未定稿），距甲午约 30 余年",
+   "color": "#437A5B"
+  },
+  {
+   "id": "japan_kainan",
+   "title": "《明治廿七八年海战史》（日本海军军令部）",
+   "party": "日本·后世修",
+   "stance_label": "日本方战史",
+   "distance_label": "日方战史，战后编纂，距事极近",
+   "color": "#8E44AD"
   }
  ],
  "places": [
@@ -218,7 +233,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     "start": "1894-09-17"
    },
    "place": "dadonggou",
-   "source": "wikipedia_huanghai",
+   "source": "qing_bing_beiyang",
    "quote": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -229,7 +244,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修官史",
    "_faction": null
   },
   {
@@ -242,7 +257,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     "start": "1894-09-17"
    },
    "place": "dadonggou",
-   "source": "wikipedia_huanghai",
+   "source": "japan_kainan",
    "quote": "日本4艘遭重创、298人死伤",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -253,7 +268,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
-   "_party": "二手综述",
+   "_party": "日本·后世修",
    "_faction": null
   },
   {

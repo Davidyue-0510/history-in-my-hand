@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "华县大地震·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "死亡数字据《明史·五行志》与方志，为当时奏报折中，实际恐更高。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "华县大地震·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "死亡数字据《明史·五行志》与方志，为当时奏报折中，实际恐更高。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

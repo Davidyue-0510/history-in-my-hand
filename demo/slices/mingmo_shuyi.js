@@ -80,7 +80,8 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "title": "明末鼠疫·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "鼠疫路径据曹树基《鼠疫：战争与和平》及明末清初笔记综合；北京死亡约 20 万、死亡率约三至四成采邱仲麟考订，其余省份死亡数为方志「人死大半」之折中估算，均标 _approx。"
+   "bias_note": "鼠疫路径据曹树基《鼠疫：战争与和平》及明末清初笔记综合；北京死亡约 20 万、死亡率约三至四成采邱仲麟考订，其余省份死亡数为方志「人死大半」之折中估算，均标 _approx。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

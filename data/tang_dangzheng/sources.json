@@ -7,7 +7,7 @@
       "availability": "not_free",
       "bias_note": "综合《旧唐书》《新唐书》《资治通鉴》等，党争细节多经宋代史官转述。",
       "stance_label": "私修编年·综合",
-      "distance_label": "成书宋初（945–1084），距事约 100–280 年，综合《旧唐书》《新唐书》《资治通鉴》"
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
     },
     {
       "id": "niu_wen",

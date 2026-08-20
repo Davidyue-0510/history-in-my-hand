@@ -83,21 +83,8 @@ window.SANDBOX_SLICES["jingnan"] = {
    "title": "靖难之役·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "官方《太宗实录》多方掩饰夺位；建文一朝事迹多湮，此处综合诸史。"
-  },
-  {
-   "id": "src_yan",
-   "title": "太宗实录·燕军纪",
-   "party": "燕军",
-   "availability": "not_free",
-   "bias_note": "燕王即位后所修，叙燕军战功、讳饰夺位与建文结局。"
-  },
-  {
-   "id": "src_jianwen",
-   "title": "建文朝野记",
-   "party": "建文军",
-   "availability": "not_free",
-   "bias_note": "建文侧与后世私记为多，记齐黄削藩、铁铉盛庸苦战、建文失踪之疑。"
+   "bias_note": "官方《太宗实录》多方掩饰夺位；建文一朝事迹多湮，此处综合诸史。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

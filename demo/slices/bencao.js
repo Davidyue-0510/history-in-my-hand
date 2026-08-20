@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["bencao"] = {
    "title": "本草纲目·授时历·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "二书年代据《元史·历志》《明史·方技传》综合。"
+   "bias_note": "二书年代据《元史·历志》《明史·方技传》综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

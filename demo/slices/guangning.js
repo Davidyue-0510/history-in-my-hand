@@ -93,22 +93,20 @@ window.SANDBOX_SLICES["guangning"] = {
    "title": "明史",
    "party": "清修·明臣",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "color": "#8C6239",
    "compiler": "张廷玉等",
-   "period": "清修",
-   "stance": "official_later_dynasty"
+   "period": "清修"
   },
   {
    "id": "ming_xizong_shilu",
    "title": "明熹宗实录",
    "party": "明廷官方",
    "stance_label": "本朝官修·当代",
-   "distance_label": "成书约 1630，距天启事约数年",
+   "distance_label": "明当代官修，距天启事约数年",
    "color": "#A0473A",
    "compiler": "明史馆",
-   "period": "天启朝",
-   "stance": "official_contemporary"
+   "period": "天启朝"
   },
   {
    "id": "chao_xiandai",
@@ -118,19 +116,17 @@ window.SANDBOX_SLICES["guangning"] = {
    "distance_label": "成书当代至 100 年内，与明清并行",
    "color": "#2E5C8F",
    "compiler": "李朝史官",
-   "period": "万历",
-   "stance": "official_contemporary"
+   "period": "万历"
   },
   {
    "id": "modern",
    "title": "现代史学综述",
    "party": "学界",
    "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "color": "#2E7D8F",
    "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
+   "period": "现代"
   },
   {
    "id": "zhuozhongzhi",
@@ -138,7 +134,6 @@ window.SANDBOX_SLICES["guangning"] = {
    "juan": "卷上·先监张公纪略 / 忧危竑议 / 缢略（魏忠贤专政、诛东林、熊廷弼之死）",
    "compiler": "刘若愚（内臣）",
    "compiled_year": 1640,
-   "stance": "third_party_internal",
    "stance_label": "内臣自述·半独立",
    "distance_label": "魏忠贤败后追记，距事约 15 年",
    "party": "明·内臣文献",
@@ -152,9 +147,8 @@ window.SANDBOX_SLICES["guangning"] = {
    "juan": "卷八十（万历四十七年·萨尔浒）／卷八十二（天启二年·广宁）",
    "compiler": "夏燮（清）",
    "compiled_year": 1873,
-   "stance": "private_synthesis",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+   "distance_label": "成书清同治十二年（1873），综合实录奏议并附考异",
    "party": "二手综述",
    "color": "#6C7A89",
    "note": "夏燮私修明编年，广采实录、奏议、私史并附考异。叙事相对平允，但立场属后世综合，非当代当事人；其经抚不和、门户之争的记载尤可印证明内部派系互攻。",

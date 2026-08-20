@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["zhaowulian"] = {
    "title": "赵武灵王胡服骑射·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "胡服骑射据《史记·赵世家》综合，其「变俗」之议载于对话。"
+   "bias_note": "胡服骑射据《史记·赵世家》综合，其「变俗」之议载于对话。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

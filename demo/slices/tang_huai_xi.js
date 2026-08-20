@@ -87,18 +87,6 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
  },
  "sources": [
   {
-   "id": "tang_zhaoling",
-   "title": "唐大诏令集",
-   "party": "唐·官修",
-   "stance_label": "本朝官修·当代",
-   "distance_label": "成书唐宣宗大中年间（约850），距事约30年",
-   "color": "#A0473A",
-   "compiler": "唐宣宗敕编（宋敏求补）",
-   "period": "唐",
-   "stance": "official_contemporary",
-   "note": "唐廷本方声音（唐·官修桶）；现存淮西史料中唐廷直接声音极少"
-  },
-  {
    "id": "jiu_tangshu",
    "title": "旧唐书",
    "party": "五代·官修",
@@ -107,7 +95,6 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "color": "#7A6A53",
    "compiler": "刘昫等（后晋）",
    "period": "五代",
-   "stance": "official_later_dynasty",
    "note": "李愬传详记雪夜入蔡细节（北门说）"
   },
   {
@@ -119,7 +106,6 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "color": "#6C7A89",
    "compiler": "欧阳修、宋祁等（宋）",
    "period": "宋",
-   "stance": "official_later_dynasty",
    "note": "南门说，与旧唐书异（冲突对）"
   },
   {
@@ -131,7 +117,6 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "color": "#8C6239",
    "compiler": "司马光等（宋）",
    "period": "宋",
-   "stance": "official_later_dynasty",
    "note": "编年体主干，附考异"
   }
  ],

@@ -858,7 +858,6 @@ def generate_world(spec_path):
         "distance_label": src.get("distance_label", ""),
         "color": src.get("color", "#8C6239"),
         "compiler": src.get("compiler", ""), "period": src.get("period", ""),
-        "stance": src.get("stance", "private_synthesis"),
         "note": src.get("note", "")
     }]}
 
@@ -1172,7 +1171,6 @@ def generate_world_multi(spec_path):
             "color": src.get("color", "#8C6239"),
             "compiler": src.get("compiler", ""),
             "period": src.get("period", ""),
-            "stance": src.get("stance", "primary"),
             "note": src.get("note", ""),
         })
 

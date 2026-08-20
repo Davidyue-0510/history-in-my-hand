@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["jiasixie"] = {
    "title": "齐民要术·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "要术据原书序及农史综合。"
+   "bias_note": "要术据原书序及农史综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

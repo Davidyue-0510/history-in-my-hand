@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["chanyuan"] = {
    "title": "澶渊之盟·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "盟约据《宋史·契丹传》综合，岁币之议宋人多有屈辱之感。"
+   "bias_note": "盟约据《宋史·契丹传》综合，岁币之议宋人多有屈辱之感。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -90,11 +90,10 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "title": "明史",
    "party": "清修·明臣",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "color": "#8C6239",
    "compiler": "张廷玉等",
-   "period": "清修",
-   "stance": "official_later_dynasty"
+   "period": "清修"
   },
   {
    "id": "chao_xiandai",
@@ -104,19 +103,17 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "distance_label": "成书当代至 100 年内，与明清并行",
    "color": "#2E5C8F",
    "compiler": "李朝史官",
-   "period": "万历",
-   "stance": "official_contemporary"
+   "period": "万历"
   },
   {
    "id": "modern",
    "title": "现代史学综述",
    "party": "学界",
    "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "color": "#2E7D8F",
    "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
+   "period": "现代"
   },
   {
    "id": "chongzhen_shilu",
@@ -126,8 +123,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "distance_label": "成书约 1645，距崇祯事约数年",
    "color": "#A0473A",
    "compiler": "明史馆",
-   "period": "崇祯朝",
-   "stance": "official_contemporary"
+   "period": "崇祯朝"
   },
   {
    "id": "qing_taizong_shilu",
@@ -137,19 +133,17 @@ window.SANDBOX_SLICES["jinzhou"] = {
    "distance_label": "初纂 1644 后屡经改窜，距皇太极事数年",
    "color": "#7B5C3E",
    "compiler": "清实录馆",
-   "period": "天聪/崇德",
-   "stance": "official_enemy"
+   "period": "天聪/崇德"
   },
   {
    "id": "mingtongjian",
    "title": "明通鉴",
    "party": "二手综述",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+   "distance_label": "成书清同治十二年（1873），综合实录奏议并附考异",
    "color": "#6C7A89",
    "compiler": "夏燮（清）",
    "period": "晚清",
-   "stance": "private_synthesis",
    "faction": null,
    "availability": "fetched",
    "url": "https://zh.wikisource.org/wiki/明通鑑/卷091",

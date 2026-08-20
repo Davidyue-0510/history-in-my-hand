@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["zhangqian"] = {
    "title": "张骞通西域·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "凿空据《史记·大宛列传》《汉书·张骞传》综合，行程细节多采传闻。"
+   "bias_note": "凿空据《史记·大宛列传》《汉书·张骞传》综合，行程细节多采传闻。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

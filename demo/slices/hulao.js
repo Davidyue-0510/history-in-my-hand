@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["hulao"] = {
    "title": "虎牢关之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "唐方叙太宗用兵，郑夏讳败。"
+   "bias_note": "唐方叙太宗用兵，郑夏讳败。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

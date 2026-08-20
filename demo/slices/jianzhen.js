@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["jianzhen"] = {
    "title": "鉴真东渡·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "东渡据《唐大和上东征传》综合，五次失败之艰备载。"
+   "bias_note": "东渡据《唐大和上东征传》综合，五次失败之艰备载。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

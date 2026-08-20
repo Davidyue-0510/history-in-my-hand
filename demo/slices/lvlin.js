@@ -85,7 +85,7 @@ window.SANDBOX_SLICES["lvlin"] = {
    "availability": "not_free",
    "bias_note": "绿林赤眉据《后汉书》综合，其众初起为饥民，后渐成割据。",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250–300 年"
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   },
   {
    "id": "ll_rebel_src",

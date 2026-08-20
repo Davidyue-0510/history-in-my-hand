@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["zhenghe"] = {
    "title": "郑和下西洋·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "远航据《明史·郑和传》与《瀛涯胜览》综合。"
+   "bias_note": "远航据《明史·郑和传》与《瀛涯胜览》综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -81,7 +81,8 @@ window.SANDBOX_SLICES["liangshui"] = {
    "title": "两税法·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "两税法据《旧唐书·杨炎传》《食货志》综合。"
+   "bias_note": "两税法据《旧唐书·杨炎传》《食货志》综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

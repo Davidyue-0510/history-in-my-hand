@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "title": "昭君出塞·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "和亲据《汉书·匈奴传》综合，「落雁」等传说色彩浓。"
+   "bias_note": "和亲据《汉书·匈奴传》综合，「落雁」等传说色彩浓。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

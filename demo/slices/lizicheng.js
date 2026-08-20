@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["lizicheng"] = {
    "title": "李自成起义·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "李自成一方记载多清修，立场需对读；此处综合《明史·流贼传》与近代研究。"
+   "bias_note": "李自成一方记载多清修，立场需对读；此处综合《明史·流贼传》与近代研究。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -102,7 +102,6 @@ window.SANDBOX_SLICES["imjin"] = {
    "color": "#2E86C1",
    "compiler": "朝鲜春秋馆（光海朝重修）",
    "period": "朝鲜·光海君朝",
-   "stance": "official_contemporary",
    "note": "朝鲜官方实录（修正本）。亲历当事国立场，逐日记录；修正本系光海朝对宣祖朝的重修，带有光海朝政治重修色彩。来源：ko.wikisource（조선왕조실록/선조소경대왕수정실록/25·26년）"
   },
   {
@@ -114,7 +113,6 @@ window.SANDBOX_SLICES["imjin"] = {
    "color": "#6C7A89",
    "compiler": "张廷玉等（清）",
    "period": "清",
-   "stance": "official_later_dynasty",
    "note": "清修《明史》。作者党派=清（后朝官修前朝史），归清方桶——不能当明方声音。李如松传对成梁『掩败为功，杀良冒级』有清修史官的批判立场。来源：zh.wikisource 明史/卷238"
   },
   {
@@ -126,7 +124,6 @@ window.SANDBOX_SLICES["imjin"] = {
    "color": "#A04000",
    "compiler": "赖山阳（日本江户末期）",
    "period": "日本·江户时代",
-   "stance": "private_synthesis",
    "note": "日本后世私修史书（汉文）。立场=日本人如何讲这场战争。学界普遍不认可其史料价值（多虚构成分，如碧蹄馆『斩首一万』），但它是现存免费可得的日本方叙述，数字与朝鲜/明史差距极大，正是冲突对素材。来源：zh.wikisource 日本外史/卷之十六"
   }
  ],

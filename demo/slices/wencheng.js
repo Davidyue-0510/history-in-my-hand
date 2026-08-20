@@ -87,7 +87,8 @@ window.SANDBOX_SLICES["wencheng"] = {
    "title": "文成公主入藏·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "和亲事迹据《旧唐书·吐蕃传》与藏文史料综合，细节（如带物）有传说成分。"
+   "bias_note": "和亲事迹据《旧唐书·吐蕃传》与藏文史料综合，细节（如带物）有传说成分。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

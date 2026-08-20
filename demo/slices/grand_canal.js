@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["grand_canal"] = {
    "title": "大运河·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "运河走向据《中国历史地图集》，具体渠口与年代有考订差异。"
+   "bias_note": "运河走向据《中国历史地图集》，具体渠口与年代有考订差异。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

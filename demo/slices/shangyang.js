@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["shangyang"] = {
    "title": "商鞅变法·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "变法内容据《史记·商君列传》《韩非子》综合，部分细节（如刑公子虔）有史家考辨。"
+   "bias_note": "变法内容据《史记·商君列传》《韩非子》综合，部分细节（如刑公子虔）有史家考辨。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   },
   {
    "id": "shangjunshu",

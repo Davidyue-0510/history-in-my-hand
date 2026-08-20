@@ -1,16 +1,15 @@
 {
- "sources": [
-  {
-   "id": "shiji_qin",
-   "title": "史记·秦始皇本纪",
-   "party": "秦方",
-   "stance_label": "私家编纂",
-   "distance_label": "距事约100年",
-   "color": "#A0473A",
-   "compiler": "司马迁",
-   "period": "西汉",
-   "stance": "private_synthesis",
-   "note": "二手综述，秦纪为主要依据"
-  }
- ]
+  "sources": [
+    {
+      "id": "shiji_qin",
+      "title": "史记·秦始皇本纪",
+      "party": "秦方",
+      "stance_label": "私家编纂",
+      "distance_label": "距事约100年",
+      "color": "#A0473A",
+      "compiler": "司马迁",
+      "period": "西汉",
+      "note": "二手综述，秦纪为主要依据"
+    }
+  ]
 }

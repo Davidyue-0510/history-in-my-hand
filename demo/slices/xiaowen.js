@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["xiaowen"] = {
    "title": "孝文帝汉化·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "汉化措施据《魏书·高祖纪》与《资治通鉴》综合，守旧鲜卑贵族多反对。"
+   "bias_note": "汉化措施据《魏书·高祖纪》与《资治通鉴》综合，守旧鲜卑贵族多反对。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   },
   {
    "id": "wei_shu_xw",

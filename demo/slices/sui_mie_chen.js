@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    "title": "隋灭陈·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "灭陈据《隋书》《南史》综合，陈之腐弱与隋之蓄势对照鲜明。"
+   "bias_note": "灭陈据《隋书》《南史》综合，陈之腐弱与隋之蓄势对照鲜明。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

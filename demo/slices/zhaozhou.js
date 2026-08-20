@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["zhaozhou"] = {
    "title": "赵州桥·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "建桥据唐张嘉贞《安济桥铭》与后世方志综合。"
+   "bias_note": "建桥据唐张嘉贞《安济桥铭》与后世方志综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

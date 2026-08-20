@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "崇祯大旱·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "据气象史学者张德二研究综合，旱区范围与旱情顶峰（1640 前后）采其考订；旱灾直接死亡数难与饥、蝗、疫剥离，此处仅作粗略估算并标 _approx。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "崇祯大旱·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "据气象史学者张德二研究综合，旱区范围与旱情顶峰（1640 前后）采其考订；旱灾直接死亡数难与饥、蝗、疫剥离，此处仅作粗略估算并标 _approx。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

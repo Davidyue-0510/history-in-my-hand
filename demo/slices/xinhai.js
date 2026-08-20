@@ -82,7 +82,8 @@ window.SANDBOX_SLICES["xinhai"] = {
    "title": "辛亥革命·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "首义与独立据《辛亥革命史》综合；袁世凯之角色为关键变量。"
+   "bias_note": "首义与独立据《辛亥革命史》综合；袁世凯之角色为关键变量。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["humen"] = {
    "title": "虎门之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "清方叙关天培死节，英方叙船坚炮利。"
+   "bias_note": "清方叙关天培死节，英方叙船坚炮利。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

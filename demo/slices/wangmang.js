@@ -84,15 +84,8 @@ window.SANDBOX_SLICES["wangmang"] = {
    "title": "王莽改制·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "改制据《汉书·王莽传》综合，史多贬其迂阔，然亦含均平理想。"
-  },
-  {
-   "id": "wang_mang_ji",
-   "title": "王莽诏令集",
-   "name": "王莽诏令集",
-   "party": "新朝官方",
-   "faction": "waimang",
-   "bias_note": "新朝改制派自述，托古立说、宣示符命。"
+   "bias_note": "改制据《汉书·王莽传》综合，史多贬其迂阔，然亦含均平理想。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   },
   {
    "id": "han_shu_wm",

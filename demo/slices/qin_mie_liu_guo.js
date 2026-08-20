@@ -85,7 +85,6 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "color": "#A0473A",
    "compiler": "司马迁",
    "period": "西汉",
-   "stance": "private_synthesis",
    "note": "二手综述，秦纪为主要依据"
   }
  ],

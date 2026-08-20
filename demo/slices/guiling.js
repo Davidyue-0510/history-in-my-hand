@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["guiling"] = {
    "title": "桂陵之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "齐方叙孙膑谋略，魏方讳败。"
+   "bias_note": "齐方叙孙膑谋略，魏方讳败。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

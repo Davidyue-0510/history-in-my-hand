@@ -86,7 +86,7 @@ window.SANDBOX_SLICES["huangjin"] = {
    "availability": "not_free",
    "bias_note": "黄巾与东汉双方记载悬殊：官方视「贼」、民间多同情；此处综合《后汉书》与近代研究。",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书南朝宋（范晔《后汉书》约 5 世纪），距事约 250 年"
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   },
   {
    "id": "hj_rebel_src",

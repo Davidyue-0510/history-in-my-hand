@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["beijing"] = {
    "title": "北京保卫战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "明方叙于谦社稷功，瓦剌讳攻城不下。"
+   "bias_note": "明方叙于谦社稷功，瓦剌讳攻城不下。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

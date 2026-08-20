@@ -82,7 +82,8 @@ window.SANDBOX_SLICES["zhangheng"] = {
    "title": "张衡地动仪·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "地动仪据《后汉书·张衡传》综合，原器失传、复原方案有争议。"
+   "bias_note": "地动仪据《后汉书·张衡传》综合，原器失传、复原方案有争议。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

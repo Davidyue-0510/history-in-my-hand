@@ -95,33 +95,30 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "title": "明史",
    "party": "清修·明臣",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "color": "#8C6239",
    "compiler": "张廷玉等",
-   "period": "清修",
-   "stance": "official_later_dynasty"
+   "period": "清修"
   },
   {
    "id": "ming_xizong_shilu",
    "title": "明熹宗实录",
    "party": "明廷官方",
    "stance_label": "本朝官修·当代",
-   "distance_label": "成书约 1630，距天启事约数年",
+   "distance_label": "明当代官修，距天启事约数年",
    "color": "#A0473A",
    "compiler": "明史馆",
-   "period": "天启朝",
-   "stance": "official_contemporary"
+   "period": "天启朝"
   },
   {
    "id": "modern",
    "title": "现代史学综述",
    "party": "学界",
    "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "color": "#2E7D8F",
    "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
+   "period": "现代"
   },
   {
    "id": "qing_taizong_shilu",
@@ -131,8 +128,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "distance_label": "初纂 1644 后屡经改窜，距皇太极事数年",
    "color": "#7B5C3E",
    "compiler": "清实录馆",
-   "period": "天聪/崇德",
-   "stance": "official_enemy"
+   "period": "天聪/崇德"
   },
   {
    "id": "chongzhen_shilu",
@@ -142,8 +138,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "distance_label": "成书约 1645，距崇祯事约数年",
    "color": "#A0473A",
    "compiler": "明史馆",
-   "period": "崇祯朝",
-   "stance": "official_contemporary"
+   "period": "崇祯朝"
   }
  ],
  "places": [

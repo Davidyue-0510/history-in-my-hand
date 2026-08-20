@@ -28,7 +28,7 @@
 | chibi | 19 | 3 | **0.000** | event:cb_cao（0.000） | gap 2 / inference 1 / record 13 / scholarship 3 |
 | chongzhen_han | 3 | 3 | **0.000** | event:ch_1637（0.000） | scholarship 3 |
 | chongzhen_huangzai | 3 | 3 | **0.000** | event:hz_1637（0.000） | scholarship 3 |
-| dalinghe | 13 | 6 | **0.000** | event:dalinghe_build（0.000） | gap 1 / record 11 / scholarship 1 |
+| dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 15 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 6 / scholarship 3 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
 | dong_han_yi | 12 | 3 | **0.000** | event:dy_196（0.000） | gap 2 / inference 2 / record 5 / scholarship 3 |
@@ -66,7 +66,7 @@
 | jiupin | 14 | 2 | **0.000** | event:jp_220（0.000） | gap 1 / inference 2 / record 9 / scholarship 2 |
 | jiuzi | 13 | 2 | **0.000** | event:jz_1712（0.000） | gap 3 / inference 3 / record 5 / scholarship 2 |
 | juehua1626 | 23 | 3 | **0.545** | event:juehua1626_ice（0.667） | gap 1 / record 21 / scholarship 1 |
-| juehua | 14 | 3 | **0.000** | event:juehua_garrison（0.000） | gap 1 / record 12 / scholarship 1 |
+| juehua | 14 | 3 | **0.278** | event:juehua_garrison（0.333） | gap 1 / record 12 / scholarship 1 |
 | julu | 14 | 3 | **0.000** | event:jl_jz（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
 | kaifeng_juekou | 3 | 3 | **0.000** | event:kf_1642a（0.000） | scholarship 3 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
@@ -99,7 +99,7 @@
 | shenyang | 62 | 6 | **0.387** | event:shenyang_relief（0.825） | gap 4 / inference 1 / record 55 / scholarship 2 |
 | song_dangzheng | 7 | 3 | **0.000** | event:ls_1086（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | song_he_jue | 14 | 3 | **0.000** | event:hj_1019（0.000） | gap 1 / inference 3 / record 7 / scholarship 3 |
-| songjin | 15 | 5 | **0.000** | event:songjin_campaign（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| songjin | 15 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
 | sui_mie_chen | 11 | 2 | **0.000** | event:sm_587（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | suiyang | 15 | 3 | **0.000** | event:sy_jz（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
@@ -128,7 +128,7 @@
 | yaoshan | 14 | 3 | **0.000** | event:ys_jz（0.000） | gap 1 / inference 1 / record 8 / scholarship 4 |
 | yashan | 11 | 2 | **0.000** | event:ys_1276（0.000） | gap 2 / inference 2 / record 5 / scholarship 2 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
-| yellow_sea_1894 | 15 | 1 | **0.000** | event:ev_yellow_sea_1894_02（0.000） | gap 1 / record 13 / scholarship 1 |
+| yellow_sea_1894 | 15 | 1 | **0.265** | event:ev_yellow_sea_1894_02（0.265） | gap 1 / record 13 / scholarship 1 |
 | yiling | 14 | 3 | **0.000** | event:yl_jz（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
 | zhangheng | 11 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 8 / scholarship 2 |
@@ -148,7 +148,7 @@
 
 | 派系 | 断言数 | 涉及场景 | 代表来源 |
 |---|---|---|---|
-| 封疆大吏 / 辽东经略系 | 42 | juehua1626、辽阳、萨尔浒、shenyang | sanchaoliao_shilu、sanzhao_liao_shi |
+| 封疆大吏 / 辽东经略系 | 42 | juehua1626、辽阳、萨尔浒、shenyang | sanchaoliao_shilu |
 | 内臣 / 宦官（独立于阉党） | 22 | guangning、mingmo_dangzheng | zhuozhongzhi |
 | qingliu | 2 | donghan_danggu、zhangjuzheng | qingliu_wen、wan_li_ye_huo |
 | guizu | 2 | shangyang | shiji_sy |
@@ -221,12 +221,7 @@
 | event:cs_yu | caishiji | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cy_1004 | chanyuan | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:cy_1005 | chanyuan | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
-| event:dalinghe_build | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:dalinghe_campaign | dalinghe | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 6 |
-| event:dalinghe_changshan | dalinghe | **0.000** | 0/3 | 1.00 | 0.00 | 2 | 0 / 0 / 0 / 2 |
-| event:dalinghe_dazuo_return | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:dalinghe_kegang | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:dalinghe_siege | dalinghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
+| event:dalinghe_changshan | dalinghe | **0.000** | 1/3 | 1.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
 | event:dh_166 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:dh_168 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dh_169 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
@@ -254,7 +249,6 @@
 | event:ev_three_campaigns_01 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_02 | three_campaigns | **0.000** | 0/3 | 0.25 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_03 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.00 | 4 | 0 / 0 / 0 / 0 |
-| event:ev_yellow_sea_1894_02 | yellow_sea_1894 | **0.000** | 0/3 | 0.57 | 0.07 | 14 | 0 / 0 / 0 / 14 |
 | event:fi_compass | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:fi_gun | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:fi_paper | four_inv | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
@@ -330,9 +324,6 @@
 | event:jp_later | jiupin | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:js_533 | jiasixie | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:js_544 | jiasixie | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:juehua_garrison | juehua | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 5 |
-| event:juehua_guangning_retreat | juehua | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 2 |
-| event:juehua_strategy | juehua | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
 | event:jz_1712 | jiuzi | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:jz_1722 | jiuzi | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
@@ -402,11 +393,6 @@
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
-| event:songjin_campaign | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 6 |
-| event:songjin_jiju | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:songjin_jinzhou_surrender | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:songjin_songshan | songjin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
-| event:songjin_songshan_fall | songjin | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 3 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:sy_1641 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -502,17 +488,25 @@
 | event:dangzheng_minglu | mingmo_dangzheng | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 2 / 0 / 0 / 0 |
 | event:ice_walls | shenyang | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | event:jinzhouwei_mao | jinzhouwei | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 0 / 2 / 0 |
+| event:juehua_guangning_retreat | juehua | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 1 / 0 / 1 |
 | 弃宽甸六堡 | 铁岭 | **0.167** | 1/3 | 0.50 | 0.00 | 3 | 0 / 2 / 0 / 1 |
 | event:yehe_kaiyuan_attack | yehe | **0.167** | 1/3 | 0.00 | 0.50 | 2 | 0 / 2 / 0 / 0 |
 | 铁岭陷落（1619） | 铁岭 | **0.179** | 1/3 | 0.25 | 0.29 | 7 | 0 / 3 / 0 / 4 |
+| event:songjin_songshan_fall | songjin | **0.222** | 1/3 | 0.00 | 0.33 | 3 | 0 / 1 / 0 / 2 |
 | event:bozhou_hailong | bozhou | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 2 / 0 / 2 |
 | event:dangzheng_sanchao | mingmo_dangzheng | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 3 / 0 / 1 |
 | event:ningxia_pingding | ningxia | **0.250** | 1/3 | 0.00 | 0.25 | 4 | 0 / 3 / 0 / 1 |
 | event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
+| event:ev_yellow_sea_1894_02 | yellow_sea_1894 | **0.265** | 2/3 | 0.57 | 0.07 | 14 | 0 / 1 / 0 / 12 |
+| event:dalinghe_campaign | dalinghe | **0.278** | 1/3 | 0.00 | 0.17 | 6 | 0 / 1 / 0 / 5 |
 | event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
 | event:bozhou_pingbo | bozhou | **0.333** | 1/3 | 0.00 | 0.00 | 6 | 0 / 6 / 0 / 0 |
 | event:bozhou_qijun | bozhou | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
+| event:dalinghe_build | dalinghe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:dalinghe_dazuo_return | dalinghe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:dalinghe_kegang | dalinghe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:dalinghe_siege | dalinghe | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:dangzheng_donglin | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:dangzheng_liujunzi | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 2 / 0 / 0 |
 | event:dangzheng_liuruoyu | mingmo_dangzheng | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
@@ -532,6 +526,8 @@
 | event:jinzhou_founded | jinzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_fall | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_founded | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:juehua_garrison | juehua | **0.333** | 1/3 | 0.00 | 0.00 | 5 | 0 / 1 / 0 / 4 |
+| event:juehua_strategy | juehua | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:ningxia_qibing | ningxia | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
 | event:ningyuan_wusangui | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:renchen_baofa | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 0 / 2 / 0 |
@@ -541,6 +537,10 @@
 | event:shenyang_jurchen_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_qing_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_walls | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:songjin_campaign | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 6 | 0 / 1 / 0 / 5 |
+| event:songjin_jiju | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:songjin_jinzhou_surrender | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:songjin_songshan | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:xingzhou_battle | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 0 / 1 / 0 |
 | event:yangzhou_jiang | yangzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:yangzhou_po | yangzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |

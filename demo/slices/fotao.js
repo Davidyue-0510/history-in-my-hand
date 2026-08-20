@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["fotao"] = {
    "title": "佛教传入·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "传入据《后汉书·西域传》与《高僧传》综合，感梦迎僧含传说成分。"
+   "bias_note": "传入据《后汉书·西域传》与《高僧传》综合，感梦迎僧含传说成分。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

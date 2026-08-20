@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["xuanzang"] = {
    "title": "玄奘西行·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "西行据《大慈恩寺三藏法师传》《大唐西域记》综合。"
+   "bias_note": "西行据《大慈恩寺三藏法师传》《大唐西域记》综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

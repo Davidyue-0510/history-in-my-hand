@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "明末大饥荒·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "灾情据张德二《中国三千年气象记录总集》及明末方志综合；全国人口由约 9987 万（崇祯初）减至 8848 万（灾后），减员逾千万，死亡数字各家估计差异大，此处取学界折中并标 _approx。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "明末大饥荒·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "灾情据张德二《中国三千年气象记录总集》及明末方志综合；全国人口由约 9987 万（崇祯初）减至 8848 万（灾后），减员逾千万，死亡数字各家估计差异大，此处取学界折中并标 _approx。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

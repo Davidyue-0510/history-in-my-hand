@@ -100,41 +100,37 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "stance_label": "本朝地方官修·当代",
    "compiler": "冯瑗（1572–1627）辑，万历末年成书",
    "color": "#7A5C2E",
-   "period": "明万历",
-   "stance": "official_local_contemporary"
+   "period": "明万历"
   },
   {
    "id": "mingshi",
    "title": "明史",
    "party": "清修·明臣",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "stance_label": "后朝官修",
    "compiler": "张廷玉等，《明史·地理志/列传》",
    "color": "#8C6239",
-   "period": "清乾隆",
-   "stance": "official_later_dynasty"
+   "period": "清乾隆"
   },
   {
    "id": "ming_shenzong_shilu",
    "title": "明神宗实录",
    "party": "明廷官方",
-   "distance_label": "成书约 1630，距万历末事约 10 年",
+   "distance_label": "明当代官修，距万历事约数年",
    "stance_label": "本朝官修·当代",
    "compiler": "明代历朝实录馆",
    "color": "#9C7A45",
-   "period": "明",
-   "stance": "official_contemporary"
+   "period": "明"
   },
   {
    "id": "qing_taizu_shilu",
    "title": "清太祖实录",
    "party": "清修官史",
-   "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+   "distance_label": "初纂 1636 后屡经改窜，距努尔哈赤事 17 年以上",
    "stance_label": "敌方官修",
    "compiler": "清代国史馆",
    "color": "#3D6B4F",
-   "period": "清",
-   "stance": "official_enemy"
+   "period": "清"
   },
   {
    "id": "chaoxian_shilu",
@@ -144,8 +140,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "stance_label": "第三方官修·逐日记注",
    "compiler": "朝鲜春秋馆",
    "color": "#2E7D8F",
-   "period": "朝鲜",
-   "stance": "third_party_official"
+   "period": "朝鲜"
   },
   {
    "id": "xuantong_kao",
@@ -155,19 +150,17 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "stance_label": "地方志",
    "compiler": "《开原县志》（据《开原图说》转引）",
    "color": "#6E6A5E",
-   "period": "清",
-   "stance": "local_gazetteer"
+   "period": "清"
   },
   {
    "id": "modern",
    "title": "现代考订",
    "party": "学界",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "stance_label": "学界考证",
    "compiler": "辽东镇长城与明清东北史综合研究",
    "color": "#2E7D8F",
-   "period": "今",
-   "stance": "scholarship"
+   "period": "今"
   },
   {
    "id": "wiki",
@@ -177,8 +170,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "stance_label": "三手综述",
    "compiler": "维基百科、中国民族报等公开综述",
    "color": "#8A8275",
-   "period": "今",
-   "stance": "tertiary"
+   "period": "今"
   }
  ],
  "places": [

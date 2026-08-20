@@ -455,13 +455,14 @@
         "scholarship": 1
       },
       "party_counts": {
-        "综述考订": 13
+        "清方": 6,
+        "综述考订": 7
       },
       "faction_counts": {},
       "event_count": 6,
-      "avg_resonance": 0.0,
+      "avg_resonance": 0.268,
       "best_event": "event:dalinghe_build",
-      "best_resonance": 0.0
+      "best_resonance": 0.333
     },
     {
       "scene": "diaoyucheng",
@@ -1197,13 +1198,14 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 14
+        "清方": 3,
+        "综述考订": 11
       },
       "faction_counts": {},
       "event_count": 3,
-      "avg_resonance": 0.0,
+      "avg_resonance": 0.278,
       "best_event": "event:juehua_garrison",
-      "best_resonance": 0.0
+      "best_resonance": 0.333
     },
     {
       "scene": "julu",
@@ -1847,13 +1849,14 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 15
+        "清方": 5,
+        "综述考订": 10
       },
       "faction_counts": {},
       "event_count": 5,
-      "avg_resonance": 0.0,
+      "avg_resonance": 0.311,
       "best_event": "event:songjin_campaign",
-      "best_resonance": 0.0
+      "best_resonance": 0.333
     },
     {
       "scene": "sui_daxing",
@@ -2423,13 +2426,15 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 15
+        "清方": 1,
+        "日本方": 1,
+        "综述考订": 13
       },
       "faction_counts": {},
       "event_count": 1,
-      "avg_resonance": 0.0,
+      "avg_resonance": 0.265,
       "best_event": "event:ev_yellow_sea_1894_02",
-      "best_resonance": 0.0
+      "best_resonance": 0.265
     },
     {
       "scene": "yiling",
@@ -2672,8 +2677,7 @@
         "shenyang"
       ],
       "sources": [
-        "sanchaoliao_shilu",
-        "sanzhao_liao_shi"
+        "sanchaoliao_shilu"
       ]
     },
     "nei_guan": {
@@ -4173,126 +4177,6 @@
       }
     },
     {
-      "subject": "event:dalinghe_build",
-      "name": "event:dalinghe_build",
-      "scenes": [
-        "dalinghe"
-      ],
-      "scene_names": [
-        "dalinghe"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "DLH001",
-            "predicate": "兴工",
-            "value_text": "七月兴工筑大凌河城",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:dalinghe_campaign",
-      "name": "event:dalinghe_campaign",
-      "scenes": [
-        "dalinghe"
-      ],
-      "scene_names": [
-        "dalinghe"
-      ],
-      "total": 6,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.167,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 6
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "DLH008",
-            "predicate": "起因",
-            "value_text": "筑城召衅，大清发兵",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          },
-          {
-            "id": "DLH009",
-            "predicate": "结果",
-            "value_text": "大凌城陷，祖大寿降后归锦州",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          },
-          {
-            "id": "DLH010",
-            "predicate": "影响",
-            "value_text": "孙承宗罢官",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          },
-          {
-            "id": "DLH011",
-            "predicate": "争议",
-            "value_text": "筑城决策争议",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          },
-          {
-            "id": "DLH012",
-            "predicate": "争议",
-            "value_text": "长山之败日期记载不一",
-            "source": "mingtongjian",
-            "layer": "gap",
-            "scene": "dalinghe"
-          },
-          {
-            "id": "DLH013",
-            "predicate": "败因主流说",
-            "value_text": "学界主流：大凌河之败主因庙堂筑城之议仓促、班军撤守反复与援军溃败，非单纯兵力不敌；清方凭围城断粮逼降，祖大寿权变脱归，暴露明辽西防御的脆弱。",
-            "source": "modern",
-            "layer": "scholarship",
-            "scene": "dalinghe"
-          }
-        ]
-      }
-    },
-    {
       "subject": "event:dalinghe_changshan",
       "name": "event:dalinghe_changshan",
       "scenes": [
@@ -4303,156 +4187,37 @@
       ],
       "total": 2,
       "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
       "divergence": 1.0,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
-        "清方": 0,
+        "清方": 1,
         "朝鲜": 0,
         "日本方": 0,
-        "综述考订": 2
+        "综述考订": 1
       },
       "parties": {
         "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
+        "清方": [
           {
             "id": "DLH003",
             "predicate": "战败",
             "value_text": "邱禾嘉、吴襄、宋伟援军败绩于长山",
-            "source": "mingtongjian",
+            "source": "mingshi",
             "layer": "record",
             "scene": "dalinghe"
-          },
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
           {
             "id": "DLH004",
             "predicate": "战败",
             "value_text": "张春监吴襄、宋伟军，进次长山，距城十五里",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:dalinghe_dazuo_return",
-      "name": "event:dalinghe_dazuo_return",
-      "scenes": [
-        "dalinghe"
-      ],
-      "scene_names": [
-        "dalinghe"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "DLH006",
-            "predicate": "归锦州",
-            "value_text": "祖大寿脱归入锦州",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:dalinghe_kegang",
-      "name": "event:dalinghe_kegang",
-      "scenes": [
-        "dalinghe"
-      ],
-      "scene_names": [
-        "dalinghe"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "DLH005",
-            "predicate": "被杀",
-            "value_text": "祖大寿杀何可纲降清",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "dalinghe"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:dalinghe_siege",
-      "name": "event:dalinghe_siege",
-      "scenes": [
-        "dalinghe"
-      ],
-      "scene_names": [
-        "dalinghe"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "DLH002",
-            "predicate": "围城",
-            "value_text": "大清兵掘濠树栅四面围合",
             "source": "mingtongjian",
             "layer": "record",
             "scene": "dalinghe"
@@ -5295,150 +5060,6 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
-      }
-    },
-    {
-      "subject": "event:ev_yellow_sea_1894_02",
-      "name": "event:ev_yellow_sea_1894_02",
-      "scenes": [
-        "yellow_sea_1894"
-      ],
-      "scene_names": [
-        "yellow_sea_1894"
-      ],
-      "total": 14,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.571,
-      "gap_rate": 0.071,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 14
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "YEL_001",
-            "predicate": "战役结果",
-            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_002",
-            "predicate": "战役结果",
-            "value_text": "日本4艘遭重创、298人死伤",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_003",
-            "predicate": "制海权归属",
-            "value_text": "日本夺得黄海制海权",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_004",
-            "predicate": "战术",
-            "value_text": "北洋水师以横阵迎敌，旗舰定远居中",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_005",
-            "predicate": "战术",
-            "value_text": "日本舰队以本队和第一游击队夹击北洋水师",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_007",
-            "predicate": "兵力对比",
-            "value_text": "清朝2艘铁甲舰、10艘巡洋舰、2艘鱼雷艇；日本12艘船舰",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_008",
-            "predicate": "装备差距",
-            "value_text": "日本装备苦味酸烈性炸药炮弹，北洋军备落后",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_009",
-            "predicate": "战前评价",
-            "value_text": "傅莱曼特认为日本舰队在吨位、兵员、舰速、速射炮等方面占优",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_010",
-            "predicate": "战前评价",
-            "value_text": "英格尔斯认为日军已达欧洲海军水平，中国未必能胜",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_011",
-            "predicate": "战前评价",
-            "value_text": "多数西方观察者认为中国将获胜",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_012",
-            "predicate": "战前评价",
-            "value_text": "戚其章认为傅莱曼特评论为持平之论",
-            "source": "wikipedia_huanghai",
-            "layer": "scholarship",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_013",
-            "predicate": "战役损失",
-            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_014",
-            "predicate": "战役损失",
-            "value_text": "日本4艘遭重创、298人死伤",
-            "source": "wikipedia_huanghai",
-            "layer": "record",
-            "scene": "yellow_sea_1894"
-          },
-          {
-            "id": "YEL_015",
-            "predicate": "战役损失",
-            "value_text": "清方损失数字可能被低估，日方损失可能被高估",
-            "source": "wikipedia_huanghai",
-            "layer": "gap",
-            "scene": "yellow_sea_1894"
-          }
-        ]
       }
     },
     {
@@ -7767,166 +7388,6 @@
       }
     },
     {
-      "subject": "event:juehua_garrison",
-      "name": "event:juehua_garrison",
-      "scenes": [
-        "juehua"
-      ],
-      "scene_names": [
-        "juehua"
-      ],
-      "total": 5,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 5
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "JH006",
-            "predicate": "守将",
-            "value_text": "令游击祖大寿等守觉华岛",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          },
-          {
-            "id": "JH009",
-            "predicate": "军制",
-            "value_text": "定军制，申明职守",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          },
-          {
-            "id": "JH010",
-            "predicate": "兵力",
-            "value_text": "练兵十一万",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          },
-          {
-            "id": "JH011",
-            "predicate": "装备",
-            "value_text": "造铠仗数百万",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          },
-          {
-            "id": "JH013",
-            "predicate": "海防犄角体系的战略意义",
-            "value_text": "现代学界认为，孙承宗以宁远为陆枢、觉华岛为海翼的犄角部署，是广宁溃败后明军在辽西重建正面、保全储粮与海运的关键，使关宁锦防线得以渐次成形。",
-            "source": "modern",
-            "layer": "scholarship",
-            "scene": "juehua"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:juehua_guangning_retreat",
-      "name": "event:juehua_guangning_retreat",
-      "scenes": [
-        "juehua"
-      ],
-      "scene_names": [
-        "juehua"
-      ],
-      "total": 2,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.5,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 2
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "JH001",
-            "predicate": "全军覆没",
-            "value_text": "是时全军覆没",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          },
-          {
-            "id": "JH014",
-            "predicate": "广宁败后海上依托的细节",
-            "value_text": "广宁之败后祖大寿等明军残部退走觉华岛的具体兵力、补给与后继部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
-            "source": "mingtongjian",
-            "layer": "gap",
-            "scene": "juehua"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:juehua_strategy",
-      "name": "event:juehua_strategy",
-      "scenes": [
-        "juehua"
-      ],
-      "scene_names": [
-        "juehua"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "JH005",
-            "predicate": "筑城策略",
-            "value_text": "筑宁远要害，与觉华岛相犄角",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "juehua"
-          }
-        ]
-      }
-    },
-    {
       "subject": "event:jz_1712",
       "name": "event:jz_1712",
       "scenes": [
@@ -10065,262 +9526,6 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
-      }
-    },
-    {
-      "subject": "event:songjin_campaign",
-      "name": "event:songjin_campaign",
-      "scenes": [
-        "songjin"
-      ],
-      "scene_names": [
-        "songjin"
-      ],
-      "total": 6,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 6
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "SJ001",
-            "predicate": "集兵",
-            "value_text": "八总兵军十三万，马四万，并集宁远",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ002",
-            "predicate": "分兵",
-            "value_text": "分四道进兵",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ003",
-            "predicate": "进兵",
-            "value_text": "洪承畴援锦州，驻师松山",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ005",
-            "predicate": "溃败",
-            "value_text": "诸镇兵皆溃，失亡五万余人",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ012",
-            "predicate": "兵力对比",
-            "value_text": "明军十三万，失亡五万余",
-            "source": "mingtongjian",
-            "layer": "inference",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ014",
-            "predicate": "败因主流说",
-            "value_text": "学界主流：松锦之败主因明廷中枢促战、粮道断绝与监军掣肘，非单纯兵力不敌；清方凭围城打援耗尽明军辽西机动兵团。",
-            "source": "modern",
-            "layer": "scholarship",
-            "scene": "songjin"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:songjin_jiju",
-      "name": "event:songjin_jiju",
-      "scenes": [
-        "songjin"
-      ],
-      "scene_names": [
-        "songjin"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "SJ013",
-            "predicate": "清围锦州·洪承畴会八镇兵",
-            "value_text": "崇祯十三年秋（1640）清兵围锦州；次年（1641）蓟辽总督洪承畴会八镇兵十三万、马四万于宁远，进援辽东。",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:songjin_jinzhou_surrender",
-      "name": "event:songjin_jinzhou_surrender",
-      "scenes": [
-        "songjin"
-      ],
-      "scene_names": [
-        "songjin"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "SJ009",
-            "predicate": "降清",
-            "value_text": "祖大寿以锦州降于大清",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:songjin_songshan",
-      "name": "event:songjin_songshan",
-      "scenes": [
-        "songjin"
-      ],
-      "scene_names": [
-        "songjin"
-      ],
-      "total": 1,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 1
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "SJ004",
-            "predicate": "阵亡",
-            "value_text": "杨国柱败绩，死之",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          }
-        ]
-      }
-    },
-    {
-      "subject": "event:songjin_songshan_fall",
-      "name": "event:songjin_songshan_fall",
-      "scenes": [
-        "songjin"
-      ],
-      "scene_names": [
-        "songjin"
-      ],
-      "total": 3,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.333,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 3
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": [
-          {
-            "id": "SJ006",
-            "predicate": "城破",
-            "value_text": "大清兵克松山",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ007",
-            "predicate": "被执",
-            "value_text": "承畴及祖大乐被执",
-            "source": "mingtongjian",
-            "layer": "record",
-            "scene": "songjin"
-          },
-          {
-            "id": "SJ015",
-            "predicate": "城内接应细节",
-            "value_text": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
-            "source": "mingtongjian",
-            "layer": "gap",
-            "scene": "songjin"
-          }
-        ]
       }
     },
     {
@@ -13320,6 +12525,55 @@
       }
     },
     {
+      "subject": "event:juehua_guangning_retreat",
+      "name": "event:juehua_guangning_retreat",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.167,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "JH001",
+            "predicate": "全军覆没",
+            "value_text": "是时全军覆没",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "juehua"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JH014",
+            "predicate": "广宁败后海上依托的细节",
+            "value_text": "广宁之败后祖大寿等明军残部退走觉华岛的具体兵力、补给与后继部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "juehua"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:kuanbian_abandon",
       "name": "弃宽甸六堡",
       "scenes": [
@@ -13509,6 +12763,63 @@
             "source": "modern",
             "layer": "scholarship",
             "scene": "tieling"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_songshan_fall",
+      "name": "event:songjin_songshan_fall",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.222,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SJ006",
+            "predicate": "城破",
+            "value_text": "大清兵克松山",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ007",
+            "predicate": "被执",
+            "value_text": "承畴及祖大乐被执",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ015",
+            "predicate": "城内接应细节",
+            "value_text": "松山城陷、夏成德内应的具体经过与各方兵力部署，明、清、现代三方记载详略与侧重不一，未见统一核定。",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "songjin"
           }
         ]
       }
@@ -13778,6 +13089,233 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yellow_sea_1894_02",
+      "name": "event:ev_yellow_sea_1894_02",
+      "scenes": [
+        "yellow_sea_1894"
+      ],
+      "scene_names": [
+        "yellow_sea_1894"
+      ],
+      "total": 14,
+      "gap_count": 1,
+      "coverage": "2/3",
+      "coverage_frac": 0.667,
+      "divergence": 0.571,
+      "gap_rate": 0.071,
+      "resonance": 0.265,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 1,
+        "综述考订": 12
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "YEL_001",
+            "predicate": "战役结果",
+            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
+            "source": "qing_bing_beiyang",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [
+          {
+            "id": "YEL_002",
+            "predicate": "战役结果",
+            "value_text": "日本4艘遭重创、298人死伤",
+            "source": "japan_kainan",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "YEL_003",
+            "predicate": "制海权归属",
+            "value_text": "日本夺得黄海制海权",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_004",
+            "predicate": "战术",
+            "value_text": "北洋水师以横阵迎敌，旗舰定远居中",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_005",
+            "predicate": "战术",
+            "value_text": "日本舰队以本队和第一游击队夹击北洋水师",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_007",
+            "predicate": "兵力对比",
+            "value_text": "清朝2艘铁甲舰、10艘巡洋舰、2艘鱼雷艇；日本12艘船舰",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_008",
+            "predicate": "装备差距",
+            "value_text": "日本装备苦味酸烈性炸药炮弹，北洋军备落后",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_009",
+            "predicate": "战前评价",
+            "value_text": "傅莱曼特认为日本舰队在吨位、兵员、舰速、速射炮等方面占优",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_010",
+            "predicate": "战前评价",
+            "value_text": "英格尔斯认为日军已达欧洲海军水平，中国未必能胜",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_011",
+            "predicate": "战前评价",
+            "value_text": "多数西方观察者认为中国将获胜",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_012",
+            "predicate": "战前评价",
+            "value_text": "戚其章认为傅莱曼特评论为持平之论",
+            "source": "wikipedia_huanghai",
+            "layer": "scholarship",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_013",
+            "predicate": "战役损失",
+            "value_text": "清朝损失5艘沉没、3艘遭破坏、850人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_014",
+            "predicate": "战役损失",
+            "value_text": "日本4艘遭重创、298人死伤",
+            "source": "wikipedia_huanghai",
+            "layer": "record",
+            "scene": "yellow_sea_1894"
+          },
+          {
+            "id": "YEL_015",
+            "predicate": "战役损失",
+            "value_text": "清方损失数字可能被低估，日方损失可能被高估",
+            "source": "wikipedia_huanghai",
+            "layer": "gap",
+            "scene": "yellow_sea_1894"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:dalinghe_campaign",
+      "name": "event:dalinghe_campaign",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.167,
+      "resonance": 0.278,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 5
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "DLH008",
+            "predicate": "起因",
+            "value_text": "筑城召衅，大清发兵",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "DLH009",
+            "predicate": "结果",
+            "value_text": "大凌城陷，祖大寿降后归锦州",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH010",
+            "predicate": "影响",
+            "value_text": "孙承宗罢官",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH011",
+            "predicate": "争议",
+            "value_text": "筑城决策争议",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH012",
+            "predicate": "争议",
+            "value_text": "长山之败日期记载不一",
+            "source": "mingtongjian",
+            "layer": "gap",
+            "scene": "dalinghe"
+          },
+          {
+            "id": "DLH013",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：大凌河之败主因庙堂筑城之议仓促、班军撤守反复与援军溃败，非单纯兵力不敌；清方凭围城断粮逼降，祖大寿权变脱归，暴露明辽西防御的脆弱。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "dalinghe"
+          }
+        ]
       }
     },
     {
@@ -14127,6 +13665,166 @@
             "source": "mingshi_bozhou",
             "layer": "record",
             "scene": "bozhou"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dalinghe_build",
+      "name": "event:dalinghe_build",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "DLH001",
+            "predicate": "兴工",
+            "value_text": "七月兴工筑大凌河城",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dalinghe_dazuo_return",
+      "name": "event:dalinghe_dazuo_return",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "DLH006",
+            "predicate": "归锦州",
+            "value_text": "祖大寿脱归入锦州",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dalinghe_kegang",
+      "name": "event:dalinghe_kegang",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "DLH005",
+            "predicate": "被杀",
+            "value_text": "祖大寿杀何可纲降清",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "dalinghe"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dalinghe_siege",
+      "name": "event:dalinghe_siege",
+      "scenes": [
+        "dalinghe"
+      ],
+      "scene_names": [
+        "dalinghe"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "DLH002",
+            "predicate": "围城",
+            "value_text": "大清兵掘濠树栅四面围合",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "dalinghe"
           }
         ],
         "朝鲜": [],
@@ -14995,6 +14693,119 @@
       }
     },
     {
+      "subject": "event:juehua_garrison",
+      "name": "event:juehua_garrison",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 4
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "JH006",
+            "predicate": "守将",
+            "value_text": "令游击祖大寿等守觉华岛",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "juehua"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "JH009",
+            "predicate": "军制",
+            "value_text": "定军制，申明职守",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH010",
+            "predicate": "兵力",
+            "value_text": "练兵十一万",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH011",
+            "predicate": "装备",
+            "value_text": "造铠仗数百万",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "juehua"
+          },
+          {
+            "id": "JH013",
+            "predicate": "海防犄角体系的战略意义",
+            "value_text": "现代学界认为，孙承宗以宁远为陆枢、觉华岛为海翼的犄角部署，是广宁溃败后明军在辽西重建正面、保全储粮与海运的关键，使关宁锦防线得以渐次成形。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "juehua"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:juehua_strategy",
+      "name": "event:juehua_strategy",
+      "scenes": [
+        "juehua"
+      ],
+      "scene_names": [
+        "juehua"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "JH005",
+            "predicate": "筑城策略",
+            "value_text": "筑宁远要害，与觉华岛相犄角",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "juehua"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ningxia_qibing",
       "name": "event:ningxia_qibing",
       "scenes": [
@@ -15388,6 +15199,207 @@
             "source": "mingshi",
             "layer": "record",
             "scene": "shenyang"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_campaign",
+      "name": "event:songjin_campaign",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 6,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 5
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SJ001",
+            "predicate": "集兵",
+            "value_text": "八总兵军十三万，马四万，并集宁远",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SJ002",
+            "predicate": "分兵",
+            "value_text": "分四道进兵",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ003",
+            "predicate": "进兵",
+            "value_text": "洪承畴援锦州，驻师松山",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ005",
+            "predicate": "溃败",
+            "value_text": "诸镇兵皆溃，失亡五万余人",
+            "source": "mingtongjian",
+            "layer": "record",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ012",
+            "predicate": "兵力对比",
+            "value_text": "明军十三万，失亡五万余",
+            "source": "mingtongjian",
+            "layer": "inference",
+            "scene": "songjin"
+          },
+          {
+            "id": "SJ014",
+            "predicate": "败因主流说",
+            "value_text": "学界主流：松锦之败主因明廷中枢促战、粮道断绝与监军掣肘，非单纯兵力不敌；清方凭围城打援耗尽明军辽西机动兵团。",
+            "source": "modern",
+            "layer": "scholarship",
+            "scene": "songjin"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:songjin_jiju",
+      "name": "event:songjin_jiju",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SJ013",
+            "predicate": "清围锦州·洪承畴会八镇兵",
+            "value_text": "崇祯十三年秋（1640）清兵围锦州；次年（1641）蓟辽总督洪承畴会八镇兵十三万、马四万于宁远，进援辽东。",
+            "source": "mingshi",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_jinzhou_surrender",
+      "name": "event:songjin_jinzhou_surrender",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SJ009",
+            "predicate": "降清",
+            "value_text": "祖大寿以锦州降于大清",
+            "source": "qingshigao",
+            "layer": "record",
+            "scene": "songjin"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_songshan",
+      "name": "event:songjin_songshan",
+      "scenes": [
+        "songjin"
+      ],
+      "scene_names": [
+        "songjin"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "SJ004",
+            "predicate": "阵亡",
+            "value_text": "杨国柱败绩，死之",
+            "source": "qingshigao",
+            "layer": "record",
+            "scene": "songjin"
           }
         ],
         "朝鲜": [],
@@ -15859,7 +15871,7 @@
             "id": "JX003",
             "predicate": "转攻",
             "value_text": "努尔哈赤攻宁远不下，转攻觉华岛",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           }
@@ -16190,7 +16202,7 @@
             "id": "JX006",
             "predicate": "屠戮",
             "value_text": "岛上军民被屠戮很多",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16198,7 +16210,7 @@
             "id": "JX007",
             "predicate": "焚毁",
             "value_text": "两千多艘舟船几乎被焚毁",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16206,7 +16218,7 @@
             "id": "JX008",
             "predicate": "焚粮",
             "value_text": "龙宫寺八万石粮草被焚毁",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16214,7 +16226,7 @@
             "id": "JX009",
             "predicate": "兵力损失",
             "value_text": "兵力损失超七千，商民损失七八千",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16222,7 +16234,7 @@
             "id": "JX011",
             "predicate": "救援",
             "value_text": "袁崇焕传令王廷臣领兵救援",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16230,7 +16242,7 @@
             "id": "JX012",
             "predicate": "斩首",
             "value_text": "明军斩首后金二百六十九人",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16943,7 +16955,7 @@
             "id": "JX004",
             "predicate": "凿冰壕",
             "value_text": "凿开一道长达十五里的冰壕",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           },
@@ -16951,7 +16963,7 @@
             "id": "JX005",
             "predicate": "冰壕失效",
             "value_text": "新雪频繁，冻口复合",
-            "source": "sanzhao_liao_shi",
+            "source": "sanchaoliao_shilu",
             "layer": "record",
             "scene": "juehua1626"
           }

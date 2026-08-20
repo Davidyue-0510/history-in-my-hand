@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["yaoshan"] = {
    "title": "崖山海战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "宋方叙崖山殉国，元方叙灭宋。"
+   "bias_note": "宋方叙崖山殉国，元方叙灭宋。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

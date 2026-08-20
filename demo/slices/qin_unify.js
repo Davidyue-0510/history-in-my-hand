@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["qin_unify"] = {
    "title": "秦灭六国·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "秦方纪功（如《史记·秦始皇本纪》），六国方多散见诸国世家；灭国次序以《史记》为据。"
+   "bias_note": "秦方纪功（如《史记·秦始皇本纪》），六国方多散见诸国世家；灭国次序以《史记》为据。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

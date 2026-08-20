@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["dingwu"] = {
    "title": "丁戊奇荒·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "灾情以《清代灾荒史》与方志奏报综合，死亡数字各家估计差异大（千万级），此处取学界折中。"
+   "bias_note": "灾情以《清代灾荒史》与方志奏报综合，死亡数字各家估计差异大（千万级），此处取学界折中。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

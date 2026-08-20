@@ -101,11 +101,10 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "title": "明史",
    "party": "清修·明臣",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "color": "#8C6239",
    "compiler": "张廷玉等",
    "period": "清修",
-   "stance": "official_later_dynasty",
    "faction": null
   },
   {
@@ -116,19 +115,17 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "distance_label": "三修至 1418，距洪武建置约 30 年",
    "color": "#A0473A",
    "compiler": "明史馆",
-   "period": "洪武朝",
-   "stance": "official_contemporary"
+   "period": "洪武朝"
   },
   {
    "id": "qing_taizu_shilu",
    "title": "清太祖实录",
    "party": "清修官史",
    "stance_label": "敌方官修",
-   "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+   "distance_label": "初纂 1636 后屡经改窜，距努尔哈赤事 17 年以上",
    "color": "#7B5C3E",
    "compiler": "清实录馆",
-   "period": "天命",
-   "stance": "official_enemy"
+   "period": "天命"
   },
   {
    "id": "yuan_shi",
@@ -138,19 +135,17 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "distance_label": "1369 年修成，距元亡仅一年但史源杂糅未及考订",
    "color": "#6C5C3E",
    "compiler": "宋濂等",
-   "period": "明修",
-   "stance": "official_later_dynasty"
+   "period": "明修"
   },
   {
    "id": "modern",
    "title": "现代史学综述",
    "party": "学界",
    "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "color": "#2E7D8F",
    "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
+   "period": "现代"
   },
   {
    "id": "wiki",
@@ -160,8 +155,7 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "distance_label": "当代，未经同行评议；任何依赖它的断言都是待升级项",
    "color": "#9B7B5A",
    "compiler": "公众编辑",
-   "period": "现代",
-   "stance": "tertiary"
+   "period": "现代"
   },
   {
    "id": "sanchaoliao_shilu",
@@ -169,7 +163,6 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "juan": "卷四（沈阳/辽阳）",
    "compiler": "王在晋",
    "compiled_year": 1630,
-   "stance": "private",
    "stance_label": "明方私修·亲历",
    "distance_label": "经略辽东者事后追记，距事约10年",
    "party": "明·封疆奏议",
@@ -182,12 +175,11 @@ window.SANDBOX_SLICES["liaoyang"] = {
    "title": "明通鉴",
    "party": "二手综述",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+   "distance_label": "成书清同治十二年（1873），综合实录奏议并附考异",
    "color": "#6C7A89",
    "compiler": "夏燮（清）",
    "compiled_year": 1873,
    "period": "晚清",
-   "stance": "private_synthesis",
    "faction": null,
    "note": "已抓卷080(萨尔浒)/081(辽沈陷落)/082(广宁)。综述考订立场，与明清各方互参。"
   }

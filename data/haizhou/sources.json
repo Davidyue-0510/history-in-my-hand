@@ -5,33 +5,30 @@
       "title": "明史",
       "party": "清修·明臣",
       "stance_label": "后朝官修",
-      "distance_label": "成书 1739，距事件约 120 年",
+      "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
       "color": "#8C6239",
       "compiler": "张廷玉等",
-      "period": "清修",
-      "stance": "official_later_dynasty"
+      "period": "清修"
     },
     {
       "id": "ming_xizong_shilu",
       "title": "明熹宗实录",
       "party": "明廷官方",
       "stance_label": "本朝官修·当代",
-      "distance_label": "成书约 1630，距天启事约数年",
+      "distance_label": "明当代官修，距天启事约数年",
       "color": "#A0473A",
       "compiler": "明史馆",
-      "period": "天启朝",
-      "stance": "official_contemporary"
+      "period": "天启朝"
     },
     {
       "id": "qingshigao",
       "title": "清史稿",
       "party": "清修官史",
       "stance_label": "民国未定稿·清方立场",
-      "distance_label": "成书 1928，距事件约 300 年",
+      "distance_label": "成书 1928（民国未定稿），距所记明清战事约 280–300 年",
       "color": "#7B5C3E",
       "compiler": "赵尔巽等",
-      "period": "清末/民国",
-      "stance": "official_later_dynasty"
+      "period": "清末/民国"
     },
     {
       "id": "chao_xiandai",
@@ -41,8 +38,7 @@
       "distance_label": "成书当代至 100 年内，与明清并行",
       "color": "#2E5C8F",
       "compiler": "李朝史官",
-      "period": "万历",
-      "stance": "official_contemporary"
+      "period": "万历"
     }
   ]
 }

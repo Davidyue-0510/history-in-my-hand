@@ -109,9 +109,8 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "juan": "卷八十六（崇祯三年—四年·大凌河）",
    "compiler": "夏燮（清）",
    "compiled_year": 1873,
-   "stance": "private_synthesis",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书清同治十二年（1873），距事约 240 年，综合实录奏议并附考异",
+   "distance_label": "成书清同治十二年（1873），综合实录奏议并附考异",
    "party": "二手综述",
    "color": "#6C7A89",
    "note": "夏燮私修明编年，大凌河叙事采实录与清方记载并附考异，平允但属后世综合。",
@@ -127,9 +126,8 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "juan": "卷二百四十八·张春传／卷二百七十一·祖大寿传",
    "compiler": "张廷玉等",
    "compiled_year": 1739,
-   "stance": "official_later_dynasty",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 100 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "party": "清修·明臣",
    "color": "#8C6239",
    "note": "清修官史，记大凌河筑城、长山之败、祖大寿杀何可纲降清，偏清方视角。"
@@ -140,9 +138,8 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "juan": "综合研究（李光涛、孙文良等明清战争论述）",
    "compiler": "学界综论",
    "compiled_year": 2000,
-   "stance": "modern_scholarship",
    "stance_label": "现代学界",
-   "distance_label": "现代研究，距事约 390 年，基于多方史料互证",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "party": "学界",
    "color": "#3C78D8",
    "note": "现代明清史学界对大凌河之战的归因与战略评估。",
@@ -341,7 +338,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "dalinghe",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "遂以七月兴工，命总兵祖大寿、副将何可纲以兵四千据其地，发班军万四千人筑之，护以石砫土兵万人。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -354,7 +351,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -369,7 +366,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "dalinghe",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "乃发兵薄大凌城，掘濠树栅，四面围合",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -381,7 +378,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     2,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -396,7 +393,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "changshan",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "辽东巡抚邱禾嘉，山海总兵官吴襄、宋伟援大凌，败绩于长山。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -407,7 +404,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     1,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -449,7 +446,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "dalinghe",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "戊辰，祖大寿杀副总兵何可纲，降于大清。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -460,7 +457,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     4,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -475,7 +472,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "jinzhou",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "已巳，大寿脱归，入锦州。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -486,7 +483,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     1,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -527,7 +524,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     "gregorian_year": 1631
    },
    "place": "dalinghe",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "时大清以方吉纳等议和，方欲遣使定约，闻大寿等兴城工为拒守计，乃发兵薄大凌城",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -538,7 +535,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {

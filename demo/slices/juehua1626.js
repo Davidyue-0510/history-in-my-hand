@@ -96,15 +96,14 @@ window.SANDBOX_SLICES["juehua1626"] = {
  },
  "sources": [
   {
-   "id": "sanzhao_liao_shi",
+   "id": "sanchaoliao_shilu",
    "title": "三朝辽事实录",
    "juan": "卷十五（天启六年）",
    "compiler": "王在晋（明）",
    "compiled_year": 1630,
-   "stance": "third_party_internal",
-   "stance_label": "明·经略亲历私修",
-   "distance_label": "经略辽东亲历，距事约数年",
-   "party": "明·私修",
+   "stance_label": "明方私修·亲历",
+   "distance_label": "经略辽东者事后追记，距事约10年",
+   "party": "明·封疆奏议",
    "faction": "feng_jiang",
    "color": "#5B7C99",
    "note": "王在晋记觉华失守、高第报称、军民屠戮细节，明方视角。"
@@ -115,41 +114,12 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "juan": "卷六十八—七十（天启六年二—四月）",
    "compiler": "明官修",
    "compiled_year": 1630,
-   "stance": "official_contemporary",
    "stance_label": "明当代官修",
-   "distance_label": "明当代官修，距事约数年",
+   "distance_label": "明当代官修，距天启事约数年",
    "party": "明廷官方",
    "faction": null,
    "color": "#4A6FA5",
    "note": "记高第疏言、兵部叙宁远功次、觉华兵丧七千余、金冠父子事。"
-  },
-  {
-   "id": "mao_yuanyi",
-   "title": "石民四十集",
-   "juan": "卷六十二·上冯涿鹿相公书二",
-   "compiler": "茅元仪（明）",
-   "compiled_year": 1627,
-   "stance": "third_party_internal",
-   "stance_label": "明·封疆幕僚私述",
-   "distance_label": "孙承宗幕僚，距事极近",
-   "party": "明·封疆奏议",
-   "faction": "feng_jiang",
-   "color": "#6B8E23",
-   "note": "茅元仪亲历，记觉华之失：战船五百余、水犀几及万人、储粮近三十万石尽付一炬。"
-  },
-  {
-   "id": "manzhou_shilu",
-   "title": "满洲实录",
-   "juan": "卷八（天命十一年）",
-   "compiler": "清官修",
-   "compiled_year": 1635,
-   "stance": "official_contemporary",
-   "stance_label": "后金/清当代官修",
-   "distance_label": "后金当代官修",
-   "party": "清·满洲文献",
-   "faction": null,
-   "color": "#9E5B40",
-   "note": "后金视角：努尔哈赤命武讷格取岛，明兵四万、尽杀之、焚船二千余及粮草千余所。"
   },
   {
    "id": "qing_taizu_shilu",
@@ -157,9 +127,8 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "juan": "卷之十（天命十一年正月）",
    "compiler": "清官修",
    "compiled_year": 1670,
-   "stance": "official_later_dynasty",
    "stance_label": "清修官史",
-   "distance_label": "清修官史，距事约半世纪",
+   "distance_label": "初纂 1636 后屡经改窜，距努尔哈赤事 17 年以上",
    "party": "清修官史",
    "faction": null,
    "color": "#8C6239",
@@ -171,7 +140,6 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "juan": "现代综述条目",
    "compiler": "维基百科",
    "compiled_year": 2024,
-   "stance": "modern_scholarship",
    "stance_label": "现代学界",
    "distance_label": "现代研究，距事约 390 年",
    "party": "学界",
@@ -334,7 +302,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "觉华岛在明朝时是辽东士兵储粮之所，粮料可达三十万余石",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -346,7 +314,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     3,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -361,7 +329,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "士兵一万，铁火枪一万，竹火枪三万",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -373,7 +341,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     3,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -388,7 +356,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "宁远之战时努尔哈赤攻击袁崇焕防守的宁远城不下，转攻觉华岛",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -399,7 +367,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     1,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -414,7 +382,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "姚抚民等率官兵凿开一道长达十五里的冰壕",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -426,7 +394,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     2,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -441,7 +409,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "虽凿冰沟为壕，但新雪频繁，许多冻口再次合上",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -452,7 +420,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     1,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -467,7 +435,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "岛上原有军民被屠戮很多",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -478,7 +446,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     4,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -493,7 +461,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "海岸两千多艘舟船几乎被焚毁",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -504,7 +472,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     2,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -519,7 +487,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "龙宫寺储八万石粮草、粮堆一千多处亦被焚毁",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -530,7 +498,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     3,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -545,7 +513,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "觉华岛兵力损失超七千，商民损失七八千",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -556,7 +524,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     4,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -571,7 +539,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "守将金冠刚死，其子金士麒与事丁三百人至岛迎灵亦与后金军作战全部被杀",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -582,7 +550,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     4,
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -597,7 +565,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "袁崇焕传令王廷臣领兵前往救援",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -607,7 +575,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "dims": [
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {
@@ -622,7 +590,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
     "gregorian_year": 1626
    },
    "place": "juehua",
-   "source": "sanzhao_liao_shi",
+   "source": "sanchaoliao_shilu",
    "quote": "明军于宁远之战及觉华岛一带斩首后金二百六十九人",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -632,7 +600,7 @@ window.SANDBOX_SLICES["juehua1626"] = {
    "dims": [
     6
    ],
-   "_party": "明·私修",
+   "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
   {

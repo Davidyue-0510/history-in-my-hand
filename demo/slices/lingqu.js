@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["lingqu"] = {
    "title": "灵渠·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "开凿据《史记·平准书》与后世方志综合，具体工期有考订差异。"
+   "bias_note": "开凿据《史记·平准书》与后世方志综合，具体工期有考订差异。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

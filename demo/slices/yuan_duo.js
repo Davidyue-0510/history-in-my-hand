@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["yuan_duo"] = {
    "title": "元多元一体·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "多元治理据《元史》与近代研究综合，四等人制与务实用人并存。"
+   "bias_note": "多元治理据《元史》与近代研究综合，四等人制与务实用人并存。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

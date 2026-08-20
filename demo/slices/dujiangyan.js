@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["dujiangyan"] = {
    "title": "都江堰·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "都江堰年代据《华阳国志》《水经注》综合，李冰父子身世细节史载有限。"
+   "bias_note": "都江堰年代据《华阳国志》《水经注》综合，李冰父子身世细节史载有限。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

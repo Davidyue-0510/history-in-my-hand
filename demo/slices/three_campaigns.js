@@ -82,7 +82,6 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "color": "#6C7A89",
    "compiler": "维基百科编者",
    "period": "现代",
-   "stance": "encyclopedic",
    "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
   }
  ],

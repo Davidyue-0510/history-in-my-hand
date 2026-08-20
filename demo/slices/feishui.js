@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["feishui"] = {
    "title": "淝水之战·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "晋方叙风声鹤唳，秦方叙恃众轻敌。"
+   "bias_note": "晋方叙风声鹤唳，秦方叙恃众轻敌。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

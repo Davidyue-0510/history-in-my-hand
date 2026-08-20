@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["locust"] = {
    "title": "蝗灾·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "蝗灾记载来自正史《五行志》与方志，范围为「蝗至某州」，具体受灾面积无精确统计。"
+   "bias_note": "蝗灾记载来自正史《五行志》与方志，范围为「蝗至某州」，具体受灾面积无精确统计。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

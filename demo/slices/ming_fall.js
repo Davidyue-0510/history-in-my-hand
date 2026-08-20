@@ -85,7 +85,8 @@ window.SANDBOX_SLICES["ming_fall"] = {
    "title": "明亡·崇祯自缢·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "明亡为内外交困之果，非单一缘由；此处综合《明史》《崇祯实录》与近代研究。"
+   "bias_note": "明亡为内外交困之果，非单一缘由；此处综合《明史》《崇祯实录》与近代研究。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

@@ -7,7 +7,7 @@
       "availability": "not_free",
       "bias_note": "综合《宋史》《续资治通鉴长编》，三党互攻记载多经对方转述。",
       "stance_label": "私修编年·综合",
-      "distance_label": "成书南宋至元（李焘《长编》1143 等），距事约 50–150 年"
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
     },
     {
       "id": "luo_wen",

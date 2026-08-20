@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["keju"] = {
    "title": "科举制·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "科举沿革据《隋书》《新唐书·选举志》与近代研究综合。"
+   "bias_note": "科举沿革据《隋书》《新唐书·选举志》与近代研究综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

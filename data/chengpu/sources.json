@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "城濮之战·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "晋方叙尊王攘楚，楚方讳败。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "城濮之战·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "晋方叙尊王攘楚，楚方讳败。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

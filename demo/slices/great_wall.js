@@ -86,7 +86,8 @@ window.SANDBOX_SLICES["great_wall"] = {
    "title": "长城·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "长城具体走向历代不同，此处为明代九边主干示意，非历代重合。"
+   "bias_note": "长城具体走向历代不同，此处为明代九边主干示意，非历代重合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

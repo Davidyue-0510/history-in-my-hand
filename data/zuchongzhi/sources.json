@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "祖冲之圆周率·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "圆周率据《南史·祖冲之传》综合，密率 355/113 后称「祖率」。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "祖冲之圆周率·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "圆周率据《南史·祖冲之传》综合，密率 355/113 后称「祖率」。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

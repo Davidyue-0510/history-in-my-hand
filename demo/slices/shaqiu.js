@@ -83,7 +83,8 @@ window.SANDBOX_SLICES["shaqiu"] = {
    "title": "沙丘之变·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "沙丘之变据《史记·秦始皇本纪》综合，矫诏之详为秦亡关键转折。"
+   "bias_note": "沙丘之变据《史记·秦始皇本纪》综合，矫诏之详为秦亡关键转折。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

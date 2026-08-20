@@ -84,7 +84,8 @@ window.SANDBOX_SLICES["sui_daxing"] = {
    "title": "隋大兴城·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "营建据《隋书·宇文恺传》与考古复原综合。"
+   "bias_note": "营建据《隋书·宇文恺传》与考古复原综合。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

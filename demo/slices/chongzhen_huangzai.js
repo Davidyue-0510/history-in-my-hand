@@ -82,7 +82,8 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "title": "崇祯蝗灾·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "据张德二《中国三千年气象记录总集》及《中国蝗灾史》综合，蝗区范围与扩散年份采其考订；蝗灾致死多经饥馑，直接死亡数难剥离，此处仅作粗略估算并标 _approx。"
+   "bias_note": "据张德二《中国三千年气象记录总集》及《中国蝗灾史》综合，蝗区范围与扩散年份采其考订；蝗灾致死多经饥馑，直接死亡数难剥离，此处仅作粗略估算并标 _approx。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

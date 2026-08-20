@@ -5,7 +5,8 @@
       "title": "戊戌变法·综合史料",
       "party": "综合史料",
       "availability": "not_free",
-      "bias_note": "维新据《戊戌变法史》综合；守旧与维新之争为近代转折关键。"
+      "bias_note": "维新据《戊戌变法史》综合；守旧与维新之争为近代转折关键。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
     },
     {
       "id": "kang_nian_pu",

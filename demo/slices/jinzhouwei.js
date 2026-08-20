@@ -90,22 +90,20 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "title": "明史",
    "party": "清修·明臣",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 120 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "color": "#8C6239",
    "compiler": "张廷玉等",
-   "period": "清修",
-   "stance": "official_later_dynasty"
+   "period": "清修"
   },
   {
    "id": "qing_taizu_shilu",
    "title": "清太祖实录",
    "party": "清修官史",
    "stance_label": "敌方官修",
-   "distance_label": "初纂 1636 后屡经改窜，距事件 17 年以上",
+   "distance_label": "初纂 1636 后屡经改窜，距努尔哈赤事 17 年以上",
    "color": "#7B5C3E",
    "compiler": "清实录馆",
-   "period": "天命",
-   "stance": "official_enemy"
+   "period": "天命"
   },
   {
    "id": "chao_xiandai",
@@ -115,19 +113,17 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
    "distance_label": "成书当代至 100 年内，与明清并行",
    "color": "#2E5C8F",
    "compiler": "李朝史官",
-   "period": "万历",
-   "stance": "official_contemporary"
+   "period": "万历"
   },
   {
    "id": "modern",
    "title": "现代史学综述",
    "party": "学界",
    "stance_label": "学界考证",
-   "distance_label": "距事件 300 年以上，综合诸家",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "color": "#2E7D8F",
    "compiler": "多家学术著作",
-   "period": "现代",
-   "stance": "scholarship"
+   "period": "现代"
   }
  ],
  "places": [

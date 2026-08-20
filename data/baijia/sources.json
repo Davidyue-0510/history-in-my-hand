@@ -1,11 +1,12 @@
 {
- "sources": [
-  {
-   "id": "synthesis",
-   "title": "百家争鸣·综合史料",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "诸子据《史记》《汉书·艺文志》综合，学派源流有后世归纳成分。"
-  }
- ]
+  "sources": [
+    {
+      "id": "synthesis",
+      "title": "百家争鸣·综合史料",
+      "party": "综合史料",
+      "availability": "not_free",
+      "bias_note": "诸子据《史记》《汉书·艺文志》综合，学派源流有后世归纳成分。",
+      "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+    }
+  ]
 }

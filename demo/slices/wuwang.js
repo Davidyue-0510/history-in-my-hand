@@ -82,7 +82,8 @@ window.SANDBOX_SLICES["wuwang"] = {
    "title": "武王克商·综合史料",
    "party": "综合史料",
    "availability": "not_free",
-   "bias_note": "克商年代有「夏商周断代工程」前1046 之说，与古本记载略有出入，此处取主流定年。"
+   "bias_note": "克商年代有「夏商周断代工程」前1046 之说，与古本记载略有出入，此处取主流定年。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [

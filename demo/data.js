@@ -19014,7 +19014,7 @@ window.SANDBOX_DATA = {
    "epoch": "ming_qing",
    "scale_tier": "operational",
    "counts": {
-    "src": 6,
+    "src": 4,
     "place": 3,
     "person": 10,
     "assert": 23,
@@ -19049,7 +19049,7 @@ window.SANDBOX_DATA = {
    "epoch": "ming",
    "scale_tier": "operational",
    "counts": {
-    "src": 3,
+    "src": 2,
     "place": 4,
     "person": 8,
     "assert": 14,
@@ -19443,7 +19443,7 @@ window.SANDBOX_DATA = {
    "epoch": "tang",
    "scale_tier": "operational",
    "counts": {
-    "src": 4,
+    "src": 3,
     "place": 9,
     "person": 7,
     "assert": 12,
@@ -19511,7 +19511,7 @@ window.SANDBOX_DATA = {
    "epoch": "qing_modern",
    "scale_tier": "operational",
    "counts": {
-    "src": 1,
+    "src": 3,
     "place": 6,
     "person": 7,
     "assert": 15,
@@ -21127,7 +21127,7 @@ window.SANDBOX_DATA = {
    "epoch": "two_jin",
    "scale_tier": "strategic",
    "counts": {
-    "src": 3,
+    "src": 1,
     "place": 9,
     "person": 11,
     "assert": 15,
@@ -21916,7 +21916,7 @@ window.SANDBOX_DATA = {
    "epoch": "warring_states",
    "scale_tier": "strategic",
    "counts": {
-    "src": 3,
+    "src": 2,
     "place": 2,
     "person": 2,
     "assert": 15,
@@ -22869,7 +22869,7 @@ window.SANDBOX_DATA = {
    "epoch": "ming",
    "scale_tier": "strategic",
    "counts": {
-    "src": 4,
+    "src": 3,
     "place": 3,
     "person": 14,
     "assert": 26,
@@ -26730,13 +26730,14 @@ window.SANDBOX_DATA = {
      "scholarship": 1
     },
     "party_counts": {
-     "综述考订": 13
+     "清方": 6,
+     "综述考订": 7
     },
     "faction_counts": {},
     "event_count": 6,
-    "avg_resonance": 0.0,
+    "avg_resonance": 0.268,
     "best_event": "event:dalinghe_build",
-    "best_resonance": 0.0
+    "best_resonance": 0.333
    },
    {
     "scene": "diaoyucheng",
@@ -27472,13 +27473,14 @@ window.SANDBOX_DATA = {
      "gap": 1
     },
     "party_counts": {
-     "综述考订": 14
+     "清方": 3,
+     "综述考订": 11
     },
     "faction_counts": {},
     "event_count": 3,
-    "avg_resonance": 0.0,
+    "avg_resonance": 0.278,
     "best_event": "event:juehua_garrison",
-    "best_resonance": 0.0
+    "best_resonance": 0.333
    },
    {
     "scene": "julu",
@@ -28122,13 +28124,14 @@ window.SANDBOX_DATA = {
      "gap": 1
     },
     "party_counts": {
-     "综述考订": 15
+     "清方": 5,
+     "综述考订": 10
     },
     "faction_counts": {},
     "event_count": 5,
-    "avg_resonance": 0.0,
+    "avg_resonance": 0.311,
     "best_event": "event:songjin_campaign",
-    "best_resonance": 0.0
+    "best_resonance": 0.333
    },
    {
     "scene": "sui_daxing",
@@ -28698,13 +28701,15 @@ window.SANDBOX_DATA = {
      "gap": 1
     },
     "party_counts": {
-     "综述考订": 15
+     "清方": 1,
+     "日本方": 1,
+     "综述考订": 13
     },
     "faction_counts": {},
     "event_count": 1,
-    "avg_resonance": 0.0,
+    "avg_resonance": 0.265,
     "best_event": "event:ev_yellow_sea_1894_02",
-    "best_resonance": 0.0
+    "best_resonance": 0.265
    },
    {
     "scene": "yiling",

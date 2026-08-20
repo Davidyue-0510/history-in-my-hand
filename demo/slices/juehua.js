@@ -98,9 +98,8 @@ window.SANDBOX_SLICES["juehua"] = {
    "juan": "卷八十二（天启二年·广宁之败与孙承宗经略）",
    "compiler": "夏燮（清）",
    "compiled_year": 1873,
-   "stance": "private_synthesis",
    "stance_label": "私修编年·综合",
-   "distance_label": "成书清同治十二年（1873），距事约 250 年，综合实录奏议并附考异",
+   "distance_label": "成书清同治十二年（1873），综合实录奏议并附考异",
    "party": "二手综述",
    "color": "#6C7A89",
    "note": "夏燮私修明编年，记广宁之败后祖大寿走觉华岛、孙承宗经略辽西、令祖大寿守觉华岛与宁远犄角，平允而属后世综合。"
@@ -111,9 +110,8 @@ window.SANDBOX_SLICES["juehua"] = {
    "juan": "卷二百四十八·孙承宗传／卷二百五十九·袁崇焕传",
    "compiler": "张廷玉等",
    "compiled_year": 1739,
-   "stance": "official_later_dynasty",
    "stance_label": "后朝官修",
-   "distance_label": "成书 1739，距事件约 110 年",
+   "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
    "party": "清修·明臣",
    "color": "#8C6239",
    "note": "清修官史，记孙承宗督师、宁远觉华犄角之部署，偏清方视角。"
@@ -124,9 +122,8 @@ window.SANDBOX_SLICES["juehua"] = {
    "juan": "综合研究（关宁锦防线、辽西海防研究）",
    "compiler": "学界综论",
    "compiled_year": 2000,
-   "stance": "modern_scholarship",
    "stance_label": "现代学界",
-   "distance_label": "现代研究，距事约 390 年，基于多方史料互证",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
    "party": "学界",
    "color": "#3C78D8",
    "note": "现代明清史学界对觉华岛—宁远犄角体系与辽西海防的归因与战略评估。",
@@ -272,7 +269,7 @@ window.SANDBOX_SLICES["juehua"] = {
     "gregorian_year": 1622
    },
    "place": "guangning",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "是时全军覆没。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -282,7 +279,7 @@ window.SANDBOX_SLICES["juehua"] = {
    "dims": [
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -374,7 +371,7 @@ window.SANDBOX_SLICES["juehua"] = {
     "gregorian_year": 1622
    },
    "place": "ningyuan",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "筑重城不若筑宁远要害，与觉华岛相犄角。",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -387,7 +384,7 @@ window.SANDBOX_SLICES["juehua"] = {
     3,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
@@ -402,7 +399,7 @@ window.SANDBOX_SLICES["juehua"] = {
     "gregorian_year": 1622
    },
    "place": "juehua",
-   "source": "mingtongjian",
+   "source": "mingshi",
    "quote": "令游击祖大寿等守觉华岛",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
@@ -413,7 +410,7 @@ window.SANDBOX_SLICES["juehua"] = {
     3,
     6
    ],
-   "_party": "二手综述",
+   "_party": "清修·明臣",
    "_faction": null
   },
   {
