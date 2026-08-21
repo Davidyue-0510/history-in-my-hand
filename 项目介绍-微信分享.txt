@@ -11,6 +11,7 @@
 让你一眼看清：哪里三方史料一致、哪里各执一词、哪里根本没人记载。
 不替你下结论，只把分歧和缺口摆给你看。
 
+在线演示（点开即看）：https://davidyue-0510.github.io/history-in-my-hand/demo/index.html
 仓库：https://github.com/Davidyue-0510/history-in-my-hand
 
 ————————————————————————————
@@ -47,5 +48,9 @@
 · 每次提交自动跑 20+ 道质量闸门（lint + 不变量 + 契约校验）
 
 许可：代码 AGPL-3.0 · 数据 CC BY 4.0
+
+在线演示：
+· 切片枢纽地图：https://davidyue-0510.github.io/history-in-my-hand/demo/index.html
+· 合作者门户：https://davidyue-0510.github.io/history-in-my-hand/demo/portal.html
 
 项目地址：https://github.com/Davidyue-0510/history-in-my-hand
