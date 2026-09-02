@@ -923,12 +923,20 @@ body{
 .dc-head{ font:600 13px/1.4 var(--sans); color:var(--ink); margin-bottom:8px; }
 .dc-sub{ display:block; font-weight:400; font-size:11px; color:var(--ink-3); margin-top:2px; }
 .dc-slots{ display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
-.dc-slot{ text-align:left; background:var(--paper-2); border:1px solid var(--rule);
-  border-radius:8px; padding:8px 6px; display:flex; flex-direction:column; gap:4px; }
+.dc-slot{ font:inherit; font-family:var(--sans); color:inherit; text-align:left; width:100%;
+  cursor:pointer; background:var(--paper-2); border:1px solid var(--rule);
+  border-radius:8px; padding:8px 6px; display:flex; flex-direction:column; gap:4px;
+  transition:box-shadow .12s ease, background .12s ease, transform .08s ease; }
 .dc-slot .dc-name{ font:600 12px/1.2 var(--sans); }
 .dc-slot .dc-status{ font-size:11px; color:var(--ink-3); }
 .dc-slot.on{ background:#FBF7EC; box-shadow:inset 0 0 0 2px var(--rule-2); }
 .dc-slot.on .dc-status{ color:var(--jin); font-weight:600; }
+.dc-slot.on:not(:disabled):hover{ box-shadow:inset 0 0 0 2px currentColor; }
+.dc-slot:active:not(:disabled){ transform:translateY(1px); }
+.dc-slot.sel{ background:#FFF8E8; outline:2px solid currentColor; outline-offset:1px; }
+.dc-slot.sel .dc-status{ color:var(--jin); font-weight:600; }
+.dc-slot:disabled{ opacity:.5; cursor:not-allowed; filter:grayscale(.5); background:var(--paper-2); }
+.dc-slot:disabled .dc-bar i{ background:var(--ink-3); }
 .dc-bar{ height:5px; background:var(--rule); border-radius:3px; overflow:hidden; }
 .dc-bar i{ display:block; height:100%; border-radius:3px; background:currentColor; }
 .dc-num{ font-size:12px; color:var(--ink-3); }
@@ -939,3 +947,9 @@ body{
 .dc-slot.d4{ color:#C0532B; } .dc-slot.d4.on{ border-left:3px solid #C0532B; }
 .dc-slot.d5{ color:#7A5AA0; } .dc-slot.d5.on{ border-left:3px solid #7A5AA0; }
 .dc-slot.d6{ color:#B23A48; } .dc-slot.d6.on{ border-left:3px solid #B23A48; }
+.dc-clear{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:9px;
+  font-size:11px; color:var(--ink-2); }
+.dc-clear-txt{ flex:1; }
+.dc-clear-btn{ font:600 11px/1 var(--sans); color:var(--paper); background:var(--jin);
+  border:none; border-radius:6px; padding:5px 9px; cursor:pointer; }
+.dc-clear-btn:hover{ background:#B0732B; }

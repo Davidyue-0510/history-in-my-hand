@@ -157,13 +157,25 @@
     personTab: 'assert',       // 人物视图子页签
     personYear: { from: null, to: null }, // 人物轨迹时间窗
     activeFaction: null,       // 派系筛选（v0.19）：点击派系面板只看该派系明方断言
-    factionCompare: false       // 派系并排对比（v0.21）：当前事件/切片各派系明方断言同屏对照
+    factionCompare: false,      // 派系并排对比（v0.21）：当前事件/切片各派系明方断言同屏对照
+    dims: new Set()             // v0.74 六维筛选：点击覆盖面板的维度槽钻取；空集 = 不过滤
   };
 
+  /* v0.74：把过滤拆成「基础（来源 / 图层 / 时间线）」与「维度」两段。
+     六维面板的计数只能走基础段——否则一旦按维度筛选，各维度计数会自我塌缩成选中项的数。 */
+  function assertPassBase(a) {
+    return state.sources.has(a.source) && state.layers.has(a.layer)
+      && (a.timeline || 'main') === state.timeline;
+  }
+  function assertPassDim(a) {
+    if (!state.dims.size) return true;   // 空集 = 不过滤
+    var ad = a.dims || [], hit = false;
+    state.dims.forEach(function (d) { if (ad.indexOf(d) >= 0) hit = true; });
+    return hit;                          // 多选取并集：命中任一选中维度即保留
+  }
   function visibleAssertions() {
     return D.assertions.filter(function (a) {
-      return state.sources.has(a.source) && state.layers.has(a.layer)
-        && (a.timeline || 'main') === state.timeline;
+      return assertPassBase(a) && assertPassDim(a);
     });
   }
   function pick(subject, predicate) {
@@ -2041,7 +2053,10 @@
 
   /* ═══════════ 刷新 ═══════════ */
   /* 六维信息类别覆盖（单切片版，与枢纽页同款契约）：
-     6 个维度始终作为预留槽存在；本切片史料实际覆盖的维度点亮，未覆盖显式「待补」，不假装齐全（E18 精神）。 */
+     6 个维度始终作为预留槽存在；本切片史料实际覆盖的维度点亮，未覆盖显式「待补」，不假装齐全（E18 精神）。
+     v0.74：覆盖的槽可点击 —— 点一下即按该维度筛选断言（可多选，再点取消）。
+     未覆盖的槽是「史料缺口」而不是筛选项，故禁用并在 title 里写明原因：点了必然是 0 条，
+     只会被当成功能故障；而「待补」两个字已经把缺口表达清楚了。 */
   function renderDimCoverage() {
     var box = document.getElementById('dimCoverage');
     if (!box) return;
@@ -2051,25 +2066,59 @@
     if (!keys.length) keys = [1, 2, 3, 4, 5, 6];
     var covSet = {};
     ((META.dims || []).slice()).forEach(function (d) { covSet[parseInt(d, 10)] = true; });
+    // 各维度当前有多少条断言：只走基础过滤，不叠维度筛选，否则计数会自我塌缩成选中项的数
+    var counts = {};
+    D.assertions.forEach(function (a) {
+      if (!assertPassBase(a)) return;
+      (a.dims || []).forEach(function (d) { counts[d] = (counts[d] || 0) + 1; });
+    });
+    var sel = state.dims;
     var html = '<div class="dc-head">六维信息类别覆盖'
-      + '<span class="dc-sub">六维（地理/技术/制度/社会/思想/事件）始终作为预留槽；本切片史料实际覆盖的维度点亮，未覆盖显式「待补」，不假装齐全。</span></div>'
+      + '<span class="dc-sub">六维（地理/技术/制度/社会/思想/事件）始终作为预留槽；'
+      + '点亮的维度<b>可点击筛选</b>断言（可多选，再点取消），未覆盖的显式「待补」，不假装齐全。</span></div>'
       + '<div class="dc-slots">';
     keys.forEach(function (k) {
-      var on = !!covSet[k];
+      var covered = !!covSet[k];   // 本切片史料是否覆盖该维度
+      var n = counts[k] || 0;      // 当前来源 / 图层过滤下该维度的断言数
+      var picked = sel.has(k);
       var entry = DIM[String(k)] || DIM[k] || {};
       var short = entry.short || entry.name || ('维度' + k);
       var full = entry.name || ('维度' + k);
       var note = entry.note || '';
-      var status = on ? '已覆盖' : '待补';
-      html += '<div class="dc-slot d' + k + (on ? ' on' : '') + '" data-dim="' + k + '"'
-        + ' title="' + full + '：' + note + '">'
+      var title = covered
+        ? (full + '：' + note + '（当前 ' + n + ' 条断言，点击筛选）')
+        : (full + '：本切片史料未覆盖此维度（0 条断言）—— 这是缺口，不是功能问题');
+      var status = !covered ? '待补' : (picked ? '筛选中' : '已覆盖');
+      html += '<button type="button" class="dc-slot d' + k + (covered ? ' on' : '') + (picked ? ' sel' : '') + '"'
+        + ' data-dim="' + k + '"' + (covered ? '' : ' disabled')
+        + ' aria-pressed="' + (picked ? 'true' : 'false') + '" title="' + title + '">'
         + '<span class="dc-name">' + short + '</span>'
-        + '<span class="dc-bar"><i style="width:' + (on ? 100 : 0) + '%"></i></span>'
+        + '<span class="dc-num"><b>' + n + '</b> 条</span>'
+        + '<span class="dc-bar"><i style="width:' + (covered ? 100 : 0) + '%"></i></span>'
         + '<span class="dc-status">' + status + '</span>'
-        + '</div>';
+        + '</button>';
     });
     html += '</div>';
+    if (sel.size) {
+      var names = [];
+      keys.forEach(function (k) {
+        if (sel.has(k)) names.push((DIM[String(k)] || {}).short || (DIM[String(k)] || {}).name || ('维度' + k));
+      });
+      html += '<div class="dc-clear"><span class="dc-clear-txt">已按 ' + names.join('、')
+        + ' 筛选</span><button type="button" class="dc-clear-btn" id="dimClear">清除维度筛选</button></div>';
+    }
     box.innerHTML = html;
+    // 点维度槽 = toggle 该维度（可多选）；点清除 = 清空全部
+    Array.prototype.forEach.call(box.querySelectorAll('.dc-slot'), function (b) {
+      b.addEventListener('click', function () {
+        var k = parseInt(b.getAttribute('data-dim'), 10);
+        if (isNaN(k)) return;
+        if (sel.has(k)) sel.delete(k); else sel.add(k);
+        refresh();
+      });
+    });
+    var clr = document.getElementById('dimClear');
+    if (clr) clr.addEventListener('click', function () { sel.clear(); refresh(); });
   }
 
   function refresh() {
