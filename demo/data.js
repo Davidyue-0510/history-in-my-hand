@@ -19583,10 +19583,10 @@ window.SANDBOX_DATA = {
     "src": 3,
     "place": 15,
     "person": 16,
-    "assert": 34,
+    "assert": 54,
     "conflict": 3,
     "gap": 1,
-    "record": 31,
+    "record": 51,
     "scholarship": 1,
     "inference": 1
    }
@@ -28278,16 +28278,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "three_campaigns",
     "name": "three_campaigns",
-    "total": 34,
+    "total": 54,
     "layers": {
      "inference": 1,
-     "record": 31,
+     "record": 51,
      "gap": 1,
      "scholarship": 1
     },
     "party_counts": {
-     "解放军": 29,
-     "国军": 5
+     "解放军": 44,
+     "国军": 10
     },
     "faction_counts": {},
     "event_count": 3,
