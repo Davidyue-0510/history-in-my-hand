@@ -383,8 +383,16 @@ def extract_heuristic(text):
     return out
 
 
-def normalize_and_validate(assertions):
-    """原地归一化 time.start，并校验。返回 (ok, fail, by_layer)。"""
+def normalize_and_validate(assertions, dim_source_mode="auto"):
+    """原地归一化 time.start，并校验。返回 (ok, fail, by_layer)。
+
+    dim_source_mode:
+      - "auto"   （默认）：显式声明 dims -> declared；缺省 -> 词表推断(inferred)；
+                  词表无命中 -> 诚实回退 [6] 标 fallback。
+      - "declared"：用户担保本批来自权威/已校订来源，dims 由你担保——
+                  显式声明者原样保留，缺省者仍用词表推断填充（绝不空维度），
+                  但全部标 dim_source=declared，与 curated 数据字段约定对齐。
+    """
     OK, FAIL = 0, 0
     by_layer = {}
     for a in assertions:
@@ -447,6 +455,10 @@ def normalize_and_validate(assertions):
                 a["dims"] = [6]
                 a["dim_source"] = "fallback"
                 print("  [WW] %-6s 缺 dims，词表无命中，回退 [6]" % aid)
+        # 维度来源标记策略（--dim-source declared）：用户担保本批来源权威，
+        # 不论 dims 是显式声明还是词表推断填充，一律标 declared，与 curated 数据对齐。
+        if dim_source_mode == "declared":
+            a["dim_source"] = "declared"
     return OK, FAIL, by_layer
 
 
@@ -1095,6 +1107,11 @@ def main():
                     help="抽取后对该场景 places.json 落坐标（需配合 --scene；依赖 data/geo/gazetteer.json）")
     ap.add_argument("--lenient", action="store_true",
                     help="丢弃无法归一化年份/缺必填/层非法的断言后继续（不伪造年份），其余照常落库")
+    ap.add_argument("--dim-source", choices=["auto", "declared"], default="auto",
+                    help="维度来源标记策略：auto=声明则 declared、缺省则词表推断(inferred)/"
+                         "无命中回退(fallback)；declared=担保本批来自权威/已校订来源，dims 由你担保——"
+                         "显式声明者原样保留，缺省者仍用词表推断填充（绝不空维度），但全部标 dim_source=declared，"
+                         "与 curated 数据对齐。")
     ap.add_argument("--world", help="一键世界生成：输入场景 spec JSON")
     ap.add_argument("--multi", help="多源融合：输入多源 spec JSON（逐源 LLM + 跨源冲突检测）")
     args = ap.parse_args()
@@ -1153,7 +1170,7 @@ def main():
 
     # 2) 归一化 + 校验
     print("\n=== 年号归一化 + schema 校验 ===")
-    ok, fail, by_layer = normalize_and_validate(assertions)
+    ok, fail, by_layer = normalize_and_validate(assertions, args.dim_source)
     print("\n各 layer 条数:", by_layer)
     print("ingest 校验: %d ok, %d fail" % (ok, fail))
     if args.lenient:

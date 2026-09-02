@@ -104,5 +104,27 @@ try:
 finally:
     IN.extract_llm = _real
 
+# 8) --dim-source declared 模式：整批强制 dim_source=declared，且 dims 必非空
+a_declmode = [
+    {"id": "T4", "subject": "event:x", "predicate": "p", "layer": "record",
+     "time": {"era_text": "万历元年"}, "source": "s", "confidence": 0.9,
+     "quote": "明月几时有，把酒问青天"},  # 无信号 -> 回退 [6]
+    {"id": "T5", "subject": "event:x", "predicate": "筑城", "layer": "record",
+     "time": {"era_text": "万历四十七年"}, "source": "s", "confidence": 0.9,
+     "quote": "明军筑城抚顺，以红夷炮守边关"},  # 词表推断 -> 地理/技术
+]
+IN.normalize_and_validate(a_declmode, "declared")
+check("declared 模式: 无信号断言 dims 仍被填充([6])", a_declmode[0]["dims"] == [6])
+check("declared 模式: 全部断言 dim_source=declared",
+      all(a.get("dim_source") == "declared" for a in a_declmode))
+check("declared 模式: 词表推断填充的断言也标 declared(非 inferred)",
+      a_declmode[1].get("dim_source") == "declared")
+# auto 模式对照：缺 dims 应标 inferred
+a_auto = [{"id": "T6", "subject": "event:x", "predicate": "筑城", "layer": "record",
+           "time": {"era_text": "万历四十七年"}, "source": "s", "confidence": 0.9,
+           "quote": "明军筑城抚顺，以红夷炮守边关"}]
+IN.normalize_and_validate(a_auto, "auto")
+check("auto 模式对照: 缺 dims 仍标 inferred", a_auto[0].get("dim_source") == "inferred")
+
 print("\ningest_dims: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)
