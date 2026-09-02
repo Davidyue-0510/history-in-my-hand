@@ -95,6 +95,87 @@ DIM_TAXONOMY = {
     5: "思想（思想文化与观念世界：意识形态/价值/知识/舆论/宗教/学术/生死观）",
     6: "事件（重大事件与关键人物：考证/决策/战役/连锁/偶然必然/关键人物）",
 }
+
+# ───────── 六维词表推断器（任意来源鲁棒性，v0.75） ─────────
+# 设计意图：LLM 漏给 dims / heuristic 抽取 / fixture 缺字段时，不再一律静默回退 [6]
+# （会把任意文本的维度全污染成「事件」，令六维面板失真）。改用保守的六维关键词词表，
+# 对断言文本做确定性匹配，推断出它「触碰」的维度，并打 `dim_source` 溯源标记
+# （declared=LLM/显式声明；inferred=词表推断；fallback=词表无命中、最后回退 [6]）。
+# 推断 ≠ 声明：UI/契约可据 dim_source 区分「已核验覆盖」与「推断覆盖」，守住诚实边界。
+# 词表刻意保守（多为 2 字以上短语，少数安全单字），宁漏勿滥——漏掉只退化为 [6]，
+# 不会把无关维度强塞进来制造虚假覆盖。
+DIM_LEXICON = {
+    1: [  # 地理
+        "城垣", "城池", "城寨", "边城", "卫城", "府城", "州城", "县城", "孤城", "空城",
+        "筑城", "边墙", "长城", "关隘", "边关", "关口", "关城", "雄关", "山海", "界", "疆",
+        "驻防", "驻地", "戍", "防区", "据点", "屯", "营", "堡", "寨", "墩", "烽", "堠",
+        "塞", "驿", "山川", "河", "江", "岭", "山地", "丘陵", "平原", "海岸", "岛", "流域",
+        "地形", "舆图", "疆域", "屯田", "濠", "壕", "闸", "堤", "渠",
+    ],
+    2: [  # 技术
+        "火器", "火炮", "红夷炮", "佛郎机", "抬枪", "鸟铳", "鸟枪", "礮", "铳", "冶炼", "铸铁",
+        "工坊", "营造", "兵器", "甲胄", "铠甲", "战船", "舟", "战车", "辎", "粮车", "器械",
+        "云梯", "橹", "火药", "织", "造纸", "印刷", "矿", "窑", "灌溉", "水利", "子母炮",
+    ],
+    3: [  # 制度
+        "卫所", "军制", "军屯", "屯田", "赋税", "徭役", "律", "法", "令", "爵", "世袭", "任免",
+        "科举", "朝贡", "册封", "条约", "盟", "户籍", "里甲", "兵制", "饷", "盐", "币", "钞",
+        "改土归流", "行省", "藩", "宗藩", "制", "典", "贡", "榷", "关税", "吏", "铨", "考成",
+        "一条鞭", "均田", "赋", "蠲免", "驿站", "建制", "规制",
+    ],
+    4: [  # 社会
+        "流民", "饥荒", "饥", "荒", "疫", "灾", "旱", "涝", "蝗", "震", "瘟", "疫疠", "赈",
+        "户", "人口", "丁口", "族", "部", "商", "市", "集", "粮价", "米价", "起义", "民变",
+        "盗", "匪", "奴", "婢", "婚", "丧", "寺", "庙", "移民", "边民", "土司", "村", "里",
+        "棚民", "客民", "土著", "汉", "夷", "蛮", "番", "回", "蒙", "藏", "羌", "苗", "瑶",
+        "壮", "黎", "民俗", "乡约", "宗族", "丐", "赈济",
+    ],
+    5: [  # 思想
+        "儒生", "儒学", "孔庙", "文庙", "书院", "理学", "心学", "程朱", "陆王", "性理", "禅宗",
+        "道观", "佛寺", "清真", "天命", "谶纬", "格物", "西学", "社学", "义学", "学堂", "讲学",
+        "寺观", "道藏", "佛经", "教义", "斋", "皈依", "祀", "祭", "祠", "士", "绅士", "乡绅",
+        "礼", "忠", "孝", "义", "儒", "道", "佛", "释", "教", "禅", "观",
+    ],
+    6: [  # 事件
+        "战", "役", "攻", "守", "陷", "克", "捷", "败", "降", "叛", "乱", "变", "盟", "会",
+        "使", "贡", "遣", "巡", "幸", "崩", "薨", "立", "废", "即位", "征", "讨", "平", "伐",
+        "入寇", "犯", "侵", "溃", "奔", "遁", "围", "援", "斩", "俘", "破", "袭", "剿", "起事",
+        "作乱", "倡乱", "兵变", "城破", "师溃", "交锋", "接战", "鏖战", "血战", "复", "失",
+        "退", "进", "伏", "却", "御", "荡", "定", "纪年", "即位",
+    ],
+}
+
+
+def _assertion_text_blob(a):
+    """拼接断言全部文本字段，供词表匹配（不含 dims 自身，避免自指）。"""
+    parts = []
+    for k in ("quote", "value_text", "predicate", "subject", "note", "place", "source"):
+        v = a.get(k)
+        if isinstance(v, str) and v:
+            parts.append(v)
+        elif isinstance(v, dict):
+            for sv in v.values():
+                if isinstance(sv, str) and sv:
+                    parts.append(sv)
+    return " ".join(parts)
+
+
+def infer_dims_lexical(a):
+    """对任意断言做确定性六维词表推断（无 LLM、无网络）。
+
+    返回命中维度的排序列表（1..6 子集）；全未命中返回空列表 []。
+    调用方据是否为空决定用推断结果还是回退 [6]，并打 `dim_source` 溯源标记。
+    """
+    blob = _assertion_text_blob(a)
+    if not blob:
+        return []
+    hit = set()
+    for d, terms in DIM_LEXICON.items():
+        if any(t in blob for t in terms):
+            hit.add(d)
+    return sorted(hit)
+
+
 DIM_PROMPT_BLOCK = (
     "【六维信息类别（每条断言必须声明它提供证据的维度，取下列编号，可多选）】\n"
     + "\n".join("%d = %s" % (k, v) for k, v in DIM_TAXONOMY.items()) + "\n"
@@ -277,7 +358,6 @@ def extract_heuristic(text):
             "layer": "record",
             "confidence": 0.3,
             "scale": "county",
-            "dims": [6],
             "note": "heuristic 自动抽取（仅年号提及），非生产抽取，待 LLM/人工核验",
         })
         if len(out) >= 50:  # 冒烟测试上限，避免噪声爆炸
@@ -319,18 +399,36 @@ def normalize_and_validate(assertions):
                 t["end"] = "%d-12-31" % g
             t["gregorian_year"] = g
             print("       %-6s %s -> 公元 %d" % (aid, era, g))
-        # 维度标注（源驱动；缺省/非法回退 [6] 并告警，绝不丢字段）
+        # 维度标注（源驱动；缺省/非法 → 词表推断；词表无命中才回退 [6]，绝不丢字段）
         dims = a.get("dims")
-        if not isinstance(dims, list) or not dims:
-            a["dims"] = [6]
-            print("  [WW] %-6s 缺 dims，回退 [6]" % aid)
-        else:
+        declared = isinstance(dims, list) and len(dims) > 0
+        if declared:
             cleaned = sorted({int(d) for d in dims
                               if isinstance(d, (int, float)) and 1 <= int(d) <= 6})
-            if not cleaned:
-                cleaned = [6]
-                print("  [WW] %-6s dims 非法，回退 [6]" % aid)
-            a["dims"] = cleaned
+            if cleaned:
+                a["dims"] = cleaned
+                if a.get("dim_source") not in ("declared", "inferred", "fallback"):
+                    a["dim_source"] = "declared"
+            else:
+                inferred = infer_dims_lexical(a)
+                if inferred:
+                    a["dims"] = inferred
+                    a["dim_source"] = "inferred"
+                    print("  [II] %-6s dims 非法，词表推断 -> %s" % (aid, inferred))
+                else:
+                    a["dims"] = [6]
+                    a["dim_source"] = "fallback"
+                    print("  [WW] %-6s dims 非法且词表无命中，回退 [6]" % aid)
+        else:
+            inferred = infer_dims_lexical(a)
+            if inferred:
+                a["dims"] = inferred
+                a["dim_source"] = "inferred"
+                print("  [II] %-6s 缺 dims，词表推断 -> %s" % (aid, inferred))
+            else:
+                a["dims"] = [6]
+                a["dim_source"] = "fallback"
+                print("  [WW] %-6s 缺 dims，词表无命中，回退 [6]" % aid)
     return OK, FAIL, by_layer
 
 

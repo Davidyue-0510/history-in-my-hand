@@ -56,6 +56,7 @@ STEPS = [
     ("战—朝关联契约 test",          ["tools/tests/test_warcourt.py"]),
     ("农历转换 test",                ["tools/tests/test_lunar.py"]),
     ("别名校正 test",                ["tools/tests/test_alias.py"]),
+    ("六维词表推断鲁棒性 test",        ["tools/tests/test_ingest_dims.py"]),
 ]
 
 

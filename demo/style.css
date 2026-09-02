@@ -947,6 +947,11 @@ body{
 .dc-slot.d4{ color:#C0532B; } .dc-slot.d4.on{ border-left:3px solid #C0532B; }
 .dc-slot.d5{ color:#7A5AA0; } .dc-slot.d5.on{ border-left:3px solid #7A5AA0; }
 .dc-slot.d6{ color:#B23A48; } .dc-slot.d6.on{ border-left:3px solid #B23A48; }
+/* v0.75 诚实标记：仅靠词表推断覆盖（非史料显式声明）——虚线弱态，区别于已核验实色 */
+.dc-infbadge{ font-style:normal; font-size:9px; line-height:1; margin-left:4px; padding:1px 3px;
+  border:1px dashed var(--ink-3); border-radius:4px; color:var(--ink-3); vertical-align:1px; }
+.dc-slot.dc-inf.on{ background:#F4F1E8; border-left-style:dashed; }
+.dc-slot.dc-inf .dc-status{ color:var(--ink-3); font-weight:600; }
 .dc-clear{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:9px;
   font-size:11px; color:var(--ink-2); }
 .dc-clear-txt{ flex:1; }

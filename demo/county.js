@@ -2068,31 +2068,42 @@
     ((META.dims || []).slice()).forEach(function (d) { covSet[parseInt(d, 10)] = true; });
     // 各维度当前有多少条断言：只走基础过滤，不叠维度筛选，否则计数会自我塌缩成选中项的数
     var counts = {};
+    // 推断-only 判定：某维覆盖且所有带该维断言 dim_source 均为 'inferred' → 仅靠词表推断
+    // （缺 dim_source = 遗留已核验声明，优先；声明 > 推断）。用于诚实标记「推」覆盖。
+    var infFlag = {};
     D.assertions.forEach(function (a) {
       if (!assertPassBase(a)) return;
+      var inf = (a.dim_source === 'inferred');
+      (a.dims || []).forEach(function (d) {
+        if (infFlag[d] === false) return;        // 已确知有声明证据
+        if (inf) { if (infFlag[d] !== false) infFlag[d] = true; }
+        else { infFlag[d] = false; }
+      });
       (a.dims || []).forEach(function (d) { counts[d] = (counts[d] || 0) + 1; });
     });
     var sel = state.dims;
     var html = '<div class="dc-head">六维信息类别覆盖'
       + '<span class="dc-sub">六维（地理/技术/制度/社会/思想/事件）始终作为预留槽；'
-      + '点亮的维度<b>可点击筛选</b>断言（可多选，再点取消），未覆盖的显式「待补」，不假装齐全。</span></div>'
+      + '点亮的维度<b>可点击筛选</b>断言（可多选，再点取消），未覆盖的显式「待补」，不假装齐全。'
+      + '标有 <b>推</b> 的维度仅靠词表自动推断覆盖（任意来源鲁棒性，非史料显式声明）。</span></div>'
       + '<div class="dc-slots">';
     keys.forEach(function (k) {
       var covered = !!covSet[k];   // 本切片史料是否覆盖该维度
       var n = counts[k] || 0;      // 当前来源 / 图层过滤下该维度的断言数
+      var infOnly = covered && infFlag[k] === true;  // 仅词表推断覆盖（诚实标记）
       var picked = sel.has(k);
       var entry = DIM[String(k)] || DIM[k] || {};
       var short = entry.short || entry.name || ('维度' + k);
       var full = entry.name || ('维度' + k);
       var note = entry.note || '';
-      var title = covered
-        ? (full + '：' + note + '（当前 ' + n + ' 条断言，点击筛选）')
-        : (full + '：本切片史料未覆盖此维度（0 条断言）—— 这是缺口，不是功能问题');
-      var status = !covered ? '待补' : (picked ? '筛选中' : '已覆盖');
-      html += '<button type="button" class="dc-slot d' + k + (covered ? ' on' : '') + (picked ? ' sel' : '') + '"'
+      var title = !covered
+        ? (full + '：本切片史料未覆盖此维度（0 条断言）—— 这是缺口，不是功能问题')
+        : (full + '：' + note + '（当前 ' + n + ' 条断言' + (infOnly ? '，词表推断覆盖' : '') + '，点击筛选）');
+      var status = !covered ? '待补' : (infOnly ? '推·覆盖' : (picked ? '筛选中' : '已覆盖'));
+      html += '<button type="button" class="dc-slot d' + k + (covered ? ' on' : '') + (infOnly ? ' dc-inf' : '') + (picked ? ' sel' : '') + '"'
         + ' data-dim="' + k + '"' + (covered ? '' : ' disabled')
         + ' aria-pressed="' + (picked ? 'true' : 'false') + '" title="' + title + '">'
-        + '<span class="dc-name">' + short + '</span>'
+        + '<span class="dc-name">' + short + (infOnly ? '<i class="dc-infbadge">推</i>' : '') + '</span>'
         + '<span class="dc-num"><b>' + n + '</b> 条</span>'
         + '<span class="dc-bar"><i style="width:' + (covered ? 100 : 0) + '%"></i></span>'
         + '<span class="dc-status">' + status + '</span>'
