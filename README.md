@@ -11,32 +11,41 @@
 - **断言驱动，不裁判**：内核只投影、不裁判。真伪由读者的「来源采信开关」决定。
 - **叠在真实地形上**：所有地点投影到真实高程网格（辽东 122–126.8°E，40–43.3°N），不是示意图。
 
-## 当前状态（v0.9）
+## 当前状态（截至 2026-09 · commit v0.73）
 
 | 维度 | 数量 |
 |---|---|
-| 世界总数（切片） | 23（14 历史切片 + 9 虚构世界） |
-| 历史切片 | 14（萨尔浒之战 + 开原/铁岭/叶赫/辽阳/沈阳/抚顺/海州/盖州 + 广宁/锦州/宁远/复州/金州） |
-| 虚构世界 | 9（《反派他爸教做人[快穿]》全书 9 个副本，全部由文本导入生成，以关系图呈现） |
-| 地理分区 | 5（辽北 / 辽东 / 辽南 / 辽西 / 关外女真）+ 虚构世界无分区 |
-| 史料 / 来源 | 31（一手/二手去重；含崇祯实录、清太宗实录，及小说各视角来源） |
-| 已录断言 | 290（含 40 条史料缺口；层级：record 182 / scholarship 49 / inference 19 / gap 40） |
-| 可认领线索 | 40（与缺口一一对应，实时读取 `data/leads.json`） |
+| 世界总数（切片） | **138**（129 历史切片 + 9 虚构世界） |
+| 历史切片 | **129**（战役 35 / 县 21 / 天灾 12 / 宫廷 10 / 工程·王朝·改革·起义·民族融合各 7 / 思想 6 / 科技 6 / 边疆 4） |
+| 虚构世界 | **9**（《反派他爸教做人[快穿]》全书 9 个副本，全部由文本导入生成，以关系图呈现） |
+| 覆盖时段 | 战国 → 明清（秦灭六国、唐淮西、壬辰战争、清末三大战役、黄海海战等） |
+| 史料 / 来源 | **85**（一手 / 二手去重） |
+| 已录断言 | **2025**（record 1322 / scholarship 350 / inference 159 / gap 194） |
+| 可认领线索 | **194**（与缺口一一对应，实时读取 `data/leads.json`） |
+| 六维覆盖 | 地理 78% · 技术 49% · 制度 70% · 社会 60% · 思想 49% · 事件 100% |
 
-> 走廊已从辽东核心区一路延伸到山海关：辽西（广宁/锦州/宁远）与辽南（复州/金州）5 县已录入。
-> 这 5 县位于共享地形网格（122–126.8°E / 40–43.3°N）之外，县页与枢纽地图会显式标注「地形网格外」，**绝不伪造高程**——
-> 这是「共享真实地形」主张的诚实边界，史料 / 断言 / 线索功能均正常。
+> 上表数字**不是手写的**，由两道脚本实时生成，且都挂在 `tools/gates.py` 里每次提交自动跑：
+> `python tools/ingestion/stats.py`（统计快照 → `data/stats.json`）与
+> `python tools/check_dims_contract.py`（六维覆盖 + 契约校验）。**改了数据请重跑脚本，别手改这张表**——
+> 这张表曾经写过「23 世界 / 290 断言」，与真实数据差了一个数量级。
 
-> **v0.7 新增「虚构世界」通道**：一部快穿小说《反派他爸教做人[快穿]》的第一副本已直接由文本抽取为结构化 world（`data/novel_fandao/`），与辽东切片共用同一套断言模型与四闸门，立场派生于来源、时间轴带反事实分支——这是「任意文字→一个世界」北极星方向的第一个可运行原型。详见 [`docs/03-通用世界模型-schema.md`](docs/03-通用世界模型-schema.md)。
->
-> **v0.8 把「任意文字→一个世界」做成可复用管线**：新增 [`tools/ingest.py`](tools/ingest.py)——`parse` 启发式预抽取章节/人名/引文，`assemble` 把一份结构化 spec 自动装配成八件套 world、注册进 `scenes.json` 并跑通四闸门。
->
-> **v0.9 把全书 9 个副本一次性铺开**：在 v0.8 管线基础上，用 `.tmp/gen_specs.py` 批量生成 7 份 spec（副本三~九）并经 `ingest.py assemble` 装配出 9 个虚构 world（`data/novel_fandao_3/` … `novel_fandao_9/`）。关键架构改进：**虚构世界无真实坐标时自动以关系图呈现（IS_ABSTRACT 模式）**，图例按各 world 的 `edge_types` 数据驱动生成——辽东的「互市 / 部族同盟」栏目绝不强行套用到小说。每 world 自带 vocab（含 `edge_types`），立场仍靠 `source.party` 派生，时间轴带反事实分支。
+> **六维信息类别是脊柱**：每条断言都标注它覆盖哪些维度（1 地理 / 2 技术 / 3 制度 / 4 社会 / 5 思想 / 6 事件），
+> 一个场景的维度 = 该场景所有断言维度的**并集**（源驱动，非启发式猜测）。六维在界面上**始终作为预留槽存在**，
+> 史料没覆盖的维度显式标「待补」，绝不假装齐全——这是「缺口一等公民」在可视化层的落地。
+
+> **诚实边界**：没有高程数据就显式标注「地形网格外」，**绝不伪造高程**；没有记载就留成可认领的缺口线索。
+> 这是「叠在真实地形上」主张的边界，也是本项目的立身之本。
+
+> **虚构世界通道（v0.7–v0.9，已验证、暂缓投入）**：一部快穿小说《反派他爸教做人[快穿]》的 9 个副本
+> 全部由文本抽取为结构化 world，与历史切片共用同一套断言模型，立场派生于来源、无真实坐标时自动以关系图
+> 呈现（IS_ABSTRACT 模式）。该通道证明了「任意文字 → 一个世界」可行；**当前重心放在
+> 「任意史料 + 对应区域地图 → 可视化」，小说方向暂不追加投入。** 详见
+> [`docs/03-通用世界模型-schema.md`](docs/03-通用世界模型-schema.md)。
 
 ## 快速开始
 
 ```bash
-git clone https://github.com/davidyue-0510/history-in-my-hand.git
+git clone https://github.com/Davidyue-0510/history-in-my-hand.git
 cd history-in-my-hand
 python -m http.server 8787
 # 打开 http://localhost:8787/demo/portal.html
@@ -46,9 +55,15 @@ python -m http.server 8787
 
 ## 看成品
 
-- **合作者门户 / 项目总览**：`demo/portal.html`
-- **切片枢纽地图（23 世界）**：`demo/index.html`
-- **通用县级切片页**：`demo/county.html?scene=shenyang`（把 `shenyang` 换成任意切片 key）
+在线版已部署在 GitHub Pages（**免安装、点开即看**，随 `main` 自动同步）：
+
+- **切片枢纽地图（138 个切片）**：https://davidyue-0510.github.io/history-in-my-hand/demo/index.html
+- **合作者门户 / 项目总览**：https://davidyue-0510.github.io/history-in-my-hand/demo/portal.html
+- **萨尔浒之战专题地图**：https://davidyue-0510.github.io/history-in-my-hand/demo/sarhu.html
+- **通用县级切片页**（`shenyang` 可换成任意切片 key）：https://davidyue-0510.github.io/history-in-my-hand/demo/county.html?scene=shenyang
+- **历史周期律模拟器**（独立演示，方向已验证、暂缓投入）：https://davidyue-0510.github.io/history-in-my-hand/agent_sim.html
+
+对应的本地路径：`demo/portal.html`、`demo/index.html`、`demo/sarhu.html`、`demo/county.html?scene=<key>`。
 
 ## 想加入？
 

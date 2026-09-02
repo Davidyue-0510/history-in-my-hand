@@ -64,10 +64,15 @@ def main():
         title = sc.get("title", sid)
         scene_titles[sid] = title
         kind = sc.get("kind", "county")
-        if kind in ("battle", "county"):
-            historical += 1
-        else:
+        # 虚构与否由场景自己声明（scenes.json 的 fictional 字段），不按 kind 猜。
+        # 起因：kind 只有 battle/county 两类时，白名单判定 `kind in (...)` 尚能凑合；
+        # 后来 kind 扩到 13 类（天灾/宫廷/改革/起义/融合/王朝/思想/科技/工程/边疆），
+        # 白名单把其中 73 个真实历史场景全算成「虚构」——portal 的「虚构世界」卡片
+        # 因此显示成 82（真实值 9）。分类判定必须读已声明的单一真值，不能另发明一套。
+        if sc.get("fictional"):
             fictional += 1
+        else:
+            historical += 1
 
         # 源
         src = _load(os.path.join(d, "sources.json")) or {}
