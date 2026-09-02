@@ -19571,18 +19571,22 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "huabei",
    "scale_tier": "operational",
    "counts": {
-    "src": 1,
-    "place": 10,
-    "person": 8,
-    "assert": 14,
+    "src": 3,
+    "place": 15,
+    "person": 16,
+    "assert": 34,
     "conflict": 3,
     "gap": 1,
-    "record": 11,
+    "record": 31,
     "scholarship": 1,
     "inference": 1
    }
@@ -28274,15 +28278,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "three_campaigns",
     "name": "three_campaigns",
-    "total": 14,
+    "total": 34,
     "layers": {
      "inference": 1,
-     "record": 11,
+     "record": 31,
      "gap": 1,
      "scholarship": 1
     },
     "party_counts": {
-     "解放军": 14
+     "解放军": 29,
+     "国军": 5
     },
     "faction_counts": {},
     "event_count": 3,

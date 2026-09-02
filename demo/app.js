@@ -45,6 +45,7 @@
     sources: new Set(D.sources.map(function (s) { return s.id; })),
     layers:  new Set(['record', 'scholarship', 'gap']),
     dims:    new Set(),       // v0.74 六维筛选：点击覆盖面板的维度槽钻取；空集 = 不过滤
+    declaredOnly: false,      // v0.76「只看声明」：隐藏 dim_source=inferred 的推断覆盖，守 E18 诚实边界
     routes:  new Set(D.routes.map(function (r) { return r.id; })),
     terrain: { shade: true, tint: true, elev: false },
     t: 0,
@@ -72,6 +73,8 @@
   /* ═══════════ 过滤 ═══════════ */
   // 基础过滤：来源桶 + 四层。维度筛选叠加在这之上（v0.74）。
   function assertPassBase(a) {
+    // v0.76「只看声明」：开启后直接隐藏仅靠词表推断的断言，使其不进任何视图/计数
+    if (state.declaredOnly && a.dim_source === 'inferred') return false;
     return state.sources.has(a.source) && state.layers.has(a.layer);
   }
   function assertPassDim(a) {
@@ -1622,40 +1625,49 @@
     if (!keys.length) keys = [1, 2, 3, 4, 5, 6];
     var covSet = {};
     ((D.meta || {}).dims || []).slice().forEach(function (d) { covSet[parseInt(d, 10)] = true; });
-    // 各维度当前有多少条断言：只走基础过滤，不叠维度筛选，否则计数会自我塌缩成选中项的数
-    var counts = {};
-    // 推断-only 判定：某维覆盖且所有带该维断言 dim_source 均为 'inferred' → 仅靠词表推断
-    // （缺 dim_source = 遗留已核验声明，优先；声明 > 推断）。用于诚实标记「推」覆盖。
-    var infFlag = {};
+    var declOnly = state.declaredOnly;
+    // 各维度当前有多少条断言（走基础过滤 + 声明过滤）：
+    //  - infFlag[d]===true：该维覆盖**且**全部是词表推断（缺声明证据）
+    //  - declFlag[d]：该维是否存在至少一条「声明」断言（非 inferred）
+    //  - counts[d]：声明过滤后的断言数（declOnly 时_hidden 推断不计入，数字=可见数）
+    var counts = {}, infFlag = {}, declFlag = {};
     D.assertions.forEach(function (a) {
       if (!assertPassBase(a)) return;
       var inf = (a.dim_source === 'inferred');
       (a.dims || []).forEach(function (d) {
-        if (infFlag[d] === false) return;        // 已确知有声明证据
         if (inf) { if (infFlag[d] !== false) infFlag[d] = true; }
-        else { infFlag[d] = false; }
+        else { infFlag[d] = false; declFlag[d] = true; }
+        if (!(declOnly && inf)) counts[d] = (counts[d] || 0) + 1;
       });
-      (a.dims || []).forEach(function (d) { counts[d] = (counts[d] || 0) + 1; });
     });
     var sel = state.dims;
     var html = '<div class="dc-head">六维信息类别覆盖'
       + '<span class="dc-sub">六维（地理/技术/制度/社会/思想/事件）始终作为预留槽；'
       + '点亮的维度<b>可点击筛选</b>断言（可多选，再点取消），未覆盖的显式「待补」，不假装齐全。'
-      + '标有 <b>推</b> 的维度仅靠词表自动推断覆盖（任意来源鲁棒性，非史料显式声明）。</span></div>'
+      + '标有 <b>推</b> 的维度仅靠词表自动推断覆盖（任意来源鲁棒性，非史料显式声明）。'
+      + '开启 <b>只看声明</b> 会隐藏「推」覆盖，只呈现史料显式声明维度，更彻底守诚实边界。</span>'
+      + '<button type="button" class="dc-toggle' + (declOnly ? ' on' : '') + '" id="dimDeclaredToggle"'
+      + ' aria-pressed="' + (declOnly ? 'true' : 'false') + '">'
+      + (declOnly ? '✓ 只看声明（隐藏推断）' : '只看声明（隐藏推断覆盖）') + '</button>'
+      + '</div>'
       + '<div class="dc-slots">';
     keys.forEach(function (k) {
-      var covered = !!covSet[k];   // 本切片史料是否覆盖该维度
-      var n = counts[k] || 0;      // 当前来源 / 图层过滤下该维度的断言数
-      var infOnly = covered && infFlag[k] === true;  // 仅词表推断覆盖（诚实标记）
+      // 显示用的「是否覆盖」：declOnly 下，仅靠推断的维度塌缩为缺口（诚实边界）
+      var covered = declOnly ? !!declFlag[k] : !!covSet[k];
+      var n = counts[k] || 0;      // 当前过滤下该维度的断言数
+      var infOnly = !declOnly && covered && infFlag[k] === true;  // 仅词表推断覆盖（诚实标记）
+      var hiddenByDecl = declOnly && infFlag[k] === true && !declFlag[k]; // 声明视图下被隐藏的推断维
       var picked = sel.has(k);
       var entry = DIM[String(k)] || DIM[k] || {};
       var short = entry.short || entry.name || ('维度' + k);
       var full = entry.name || ('维度' + k);
       var note = entry.note || '';
       var title = !covered
-        ? (full + '：本切片史料未覆盖此维度（0 条断言）—— 这是缺口，不是功能问题')
+        ? (full + '：本切片史料未覆盖此维度（0 条断言）—— 这是缺口，不是功能问题'
+           + (hiddenByDecl ? '；该维度仅有词表推断覆盖，已在「只看声明」下隐藏' : ''))
         : (full + '：' + note + '（当前 ' + n + ' 条断言' + (infOnly ? '，词表推断覆盖' : '') + '，点击筛选）');
-      var status = !covered ? '待补' : (infOnly ? '推·覆盖' : (picked ? '筛选中' : '已覆盖'));
+      var status = !covered ? (hiddenByDecl ? '推·待补' : '待补')
+                             : (infOnly ? '推·覆盖' : (picked ? '筛选中' : '已覆盖'));
       html += '<button type="button" class="dc-slot d' + k + (covered ? ' on' : '') + (infOnly ? ' dc-inf' : '') + (picked ? ' sel' : '') + '"'
         + ' data-dim="' + k + '"' + (covered ? '' : ' disabled')
         + ' aria-pressed="' + (picked ? 'true' : 'false') + '" title="' + title + '">'
@@ -1675,7 +1687,7 @@
         + ' 筛选</span><button type="button" class="dc-clear-btn" id="dimClear">清除维度筛选</button></div>';
     }
     box.innerHTML = html;
-    // 点维度槽 = toggle 该维度（可多选）；点清除 = 清空全部
+    // 维度槽 = toggle 该维度（可多选）；清除 = 清空全部；只看声明 = 切换声明视图
     Array.prototype.forEach.call(box.querySelectorAll('.dc-slot'), function (b) {
       b.addEventListener('click', function () {
         var k = parseInt(b.getAttribute('data-dim'), 10);
@@ -1686,6 +1698,10 @@
     });
     var clr = document.getElementById('dimClear');
     if (clr) clr.addEventListener('click', function () { sel.clear(); refresh(); });
+    var tog = document.getElementById('dimDeclaredToggle');
+    if (tog) tog.addEventListener('click', function () {
+      state.declaredOnly = !state.declaredOnly; refresh();
+    });
   }
 
   function refresh() {

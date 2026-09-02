@@ -1,15 +1,37 @@
 {
   "sources": [
-    {
-      "id": "wikipedia_three_campaigns",
-      "title": "维基百科·三大战役",
-      "party": "解放军",
-      "stance_label": "百科条目",
-      "distance_label": "距事约70年",
-      "color": "#6C7A89",
-      "compiler": "维基百科编者",
-      "period": "现代",
-      "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
-    }
-  ]
+  {
+   "id": "wikipedia_three_campaigns",
+   "title": "维基百科·三大战役",
+   "party": "解放军",
+   "stance_label": "百科条目",
+   "distance_label": "距事约70年",
+   "color": "#6C7A89",
+   "compiler": "维基百科编者",
+   "period": "现代",
+   "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
+  },
+  {
+   "id": "plahw_huaihai",
+   "title": "《淮海战役史》解放军战史",
+   "party": "解放军",
+   "stance_label": "共方战史",
+   "distance_label": "战后战史",
+   "color": "#A0473A",
+   "compiler": "解放军战史编写组",
+   "period": "现代",
+   "note": "中共党史出版社《淮海战役》，共方视角战史，总前委与华野中野作战记述"
+  },
+  {
+   "id": "guojun_huaihai",
+   "title": "国军战史·将领回忆录",
+   "party": "国军",
+   "stance_label": "国方战史",
+   "distance_label": "当事人回忆",
+   "color": "#3D6B4F",
+   "compiler": "国军将领回忆录",
+   "period": "现代",
+   "note": "国军将领回忆录与战史，国方视角，徐蚌部署与西撤记述"
+  }
+ ]
 }

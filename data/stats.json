@@ -2,8 +2,8 @@
   "scenes_total": 138,
   "historical": 129,
   "fictional": 9,
-  "assertions_total": 2025,
-  "sources_total": 85,
+  "assertions_total": 2045,
+  "sources_total": 87,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
@@ -266,7 +266,7 @@
       "id": "three_campaigns",
       "title": "三大战役·辽沈·淮海·平津",
       "kind": "county",
-      "assertions": 14,
+      "assertions": 34,
       "factions": {}
     },
     {

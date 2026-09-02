@@ -1999,15 +1999,16 @@
     {
       "scene": "three_campaigns",
       "name": "three_campaigns",
-      "total": 14,
+      "total": 34,
       "layers": {
         "inference": 1,
-        "record": 11,
+        "record": 31,
         "gap": 1,
         "scholarship": 1
       },
       "party_counts": {
-        "解放军": 14
+        "解放军": 29,
+        "国军": 5
       },
       "faction_counts": {},
       "event_count": 3,
@@ -5009,11 +5010,11 @@
       "scene_names": [
         "three_campaigns"
       ],
-      "total": 5,
+      "total": 19,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.25,
+      "divergence": 0.056,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {

@@ -321,6 +321,24 @@ def extract_llm(text, id_space=None):
     return _extract_json_array(raw)
 
 
+def extract_with_fallback(text, id_space=None):
+    """A（v0.76）: LLM 整批抽取失败时的管线韧性回退。
+
+    LLM 调用（无 key / 网络超时 / JSON 解析失败 / 截断自愈失败）任一异常
+    都**不丢整批**——回退到 extract_heuristic（年号提及机械抽取）+ 下游
+    normalize_and_validate 里的词表推断（infer_dims_lexical），保证管线仍
+    能产出带维度标注的低置信断言，而不是返回空列表让整批史料蒸发。
+
+    返回 (assertions, used_llm:bool)：used_llm=False 表示走了回退路径。
+    """
+    try:
+        return extract_llm(text, id_space), True
+    except Exception as e:
+        print("[WW] LLM 抽取失败（%s），回退 heuristic + 词表推断，整批不丢"
+              % type(e).__name__)
+        return extract_heuristic(text), False
+
+
 def extract_heuristic(text):
     """冒烟测试抽取：用 reign_era 在原文里找年号提及，逐句产出 record 断言。
     不做什么：人名/地名 NER、关系抽取——那是 LLM 的活。这只是证明
@@ -1123,8 +1141,12 @@ def main():
             else:
                 print("[ingest] 未指定 --scene 或场景无实体，LLM 不限白名单（产出需人工校正 id）")
             print("[ingest] 调用 LLM 抽取 ...")
-            assertions = extract_llm(text, id_space)
-            print("[ingest] LLM 抽取 %d 条" % len(assertions))
+            assertions, _used_llm = extract_with_fallback(text, id_space)
+            if _used_llm:
+                print("[ingest] LLM 抽取 %d 条" % len(assertions))
+            else:
+                print("[ingest] heuristic 回退抽取 %d 条（低置信，待 LLM/人工核验）"
+                      % len(assertions))
 
     if not isinstance(assertions, list) or not assertions:
         print("[FAIL] 未抽到任何断言"); return 2

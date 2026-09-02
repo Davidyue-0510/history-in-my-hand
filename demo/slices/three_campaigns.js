@@ -16,6 +16,10 @@ window.SANDBOX_SLICES["three_campaigns"] = {
   "parties_note": "共方(解放军)、国方(国军)。source=Wikipedia 二手综述，桶='二手综述'。",
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "huabei",
@@ -83,6 +87,28 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "compiler": "维基百科编者",
    "period": "现代",
    "note": "国共内战三大战役综合条目，来源zh.wikipedia.org/wiki/三大战役"
+  },
+  {
+   "id": "plahw_huaihai",
+   "title": "《淮海战役史》解放军战史",
+   "party": "解放军",
+   "stance_label": "共方战史",
+   "distance_label": "战后战史",
+   "color": "#A0473A",
+   "compiler": "解放军战史编写组",
+   "period": "现代",
+   "note": "中共党史出版社《淮海战役》，共方视角战史，总前委与华野中野作战记述"
+  },
+  {
+   "id": "guojun_huaihai",
+   "title": "国军战史·将领回忆录",
+   "party": "国军",
+   "stance_label": "国方战史",
+   "distance_label": "当事人回忆",
+   "color": "#3D6B4F",
+   "compiler": "国军将领回忆录",
+   "period": "现代",
+   "note": "国军将领回忆录与战史，国方视角，徐蚌部署与西撤记述"
   }
  ],
  "places": [
@@ -207,6 +233,61 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "lat": 39.13,
    "geo_note": "平津战役·天津攻坚战",
    "elev": 17
+  },
+  {
+   "id": "chenguanzhuang",
+   "name": "陈官庄",
+   "type": "yi",
+   "modern": "今中国河南省永城市陈官庄乡",
+   "note": "淮海战役第三阶段杜聿明集团被合围、杜聿明被俘之地",
+   "lon": 116.33,
+   "lat": 33.95,
+   "geo_note": "杜聿明集团覆灭处",
+   "elev": 27
+  },
+  {
+   "id": "suxian",
+   "name": "宿县",
+   "type": "city",
+   "modern": "今中国安徽省宿州市",
+   "note": "淮海战役中国中原野战军攻占宿县，截断津浦线徐蚌段，分割国军",
+   "lon": 116.98,
+   "lat": 33.63,
+   "geo_note": "截断徐蚌线关键",
+   "elev": 15
+  },
+  {
+   "id": "bengbu",
+   "name": "蚌埠",
+   "type": "city",
+   "modern": "今中国安徽省蚌埠市",
+   "note": "淮海战役中国军南线依托、淮河防线支点",
+   "lon": 117.39,
+   "lat": 32.92,
+   "geo_note": "淮河南岸防线",
+   "elev": 14
+  },
+  {
+   "id": "xinanzhen",
+   "name": "新安镇",
+   "type": "yi",
+   "modern": "今中国江苏省邳州市新安街道",
+   "note": "淮海战役中黄百韬第7兵团自新安镇西撤，渡运河被追击",
+   "lon": 117.96,
+   "lat": 34.35,
+   "geo_note": "黄百韬西撤出发地",
+   "elev": 27
+  },
+  {
+   "id": "yongcheng",
+   "name": "永城",
+   "type": "city",
+   "modern": "今中国河南省永城市",
+   "note": "淮海战役中国军南撤方向，陈官庄在其东北",
+   "lon": 115.95,
+   "lat": 33.87,
+   "geo_note": "杜聿明南撤方向",
+   "elev": 32
   }
  ],
  "persons": [
@@ -257,13 +338,69 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "name": "邓小平",
    "role": "淮海战役总前委书记",
    "note": "淮海战役统筹指挥",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "THR__p08",
    "name": "傅作义",
    "role": "国军华北剿匪总司令部总司令",
    "note": "平津战役国军华北最高指挥官，最终投降",
+   "influence": 0
+  },
+  {
+   "id": "THR__p09",
+   "name": "黄百韬",
+   "role": "国军第7兵团司令",
+   "note": "淮海战役第一阶段碾庄圩被围，兵败自杀",
+   "influence": 1
+  },
+  {
+   "id": "THR__p10",
+   "name": "黄维",
+   "role": "国军第12兵团司令",
+   "note": "淮海战役第二阶段双堆集被围，兵败被俘",
+   "influence": 1
+  },
+  {
+   "id": "THR__p11",
+   "name": "杜聿明",
+   "role": "国军徐州剿总副总司令",
+   "note": "淮海战役第三阶段陈官庄被合围，兵败被俘",
+   "influence": 1
+  },
+  {
+   "id": "THR__p12",
+   "name": "邱清泉",
+   "role": "国军第2兵团司令",
+   "note": "随杜聿明南撤，陈官庄突围中毙命",
+   "influence": 0
+  },
+  {
+   "id": "THR__p13",
+   "name": "李弥",
+   "role": "国军第13兵团司令",
+   "note": "淮海战役中随杜聿明集团行动，突围",
+   "influence": 0
+  },
+  {
+   "id": "THR__p14",
+   "name": "刘峙",
+   "role": "国军徐州剿总总司令",
+   "note": "淮海战役国军徐州方面最高指挥官，执行犹豫",
+   "influence": 2
+  },
+  {
+   "id": "THR__p15",
+   "name": "谭震林",
+   "role": "华东野战军副政委、总前委委员",
+   "note": "淮海战役总前委统筹，负责华野政治与支前",
+   "influence": 0
+  },
+  {
+   "id": "THR__p16",
+   "name": "蒋介石",
+   "role": "国军统帅",
+   "note": "决策徐蚌会战方针，远程干预徐州部署",
    "influence": 0
   }
  ],
@@ -606,6 +743,499 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "dims": [
     6
    ],
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_001",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "作战中心",
+   "value_text": "淮海战役以徐州为中心，津浦、陇海铁路十字交叉；又称徐蚌会战",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "xuzhou",
+   "source": "wikipedia_three_campaigns",
+   "quote": "淮海战役，又称徐蚌会战，以徐州为中心",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    1,
+    6
+   ],
+   "note": "徐州为中心的铁路十字枢纽",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_002",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "截断交通",
+   "value_text": "中原野战军攻占宿县（宿州），截断津浦线徐蚌段，分割国军南北",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-15",
+    "end": null
+   },
+   "place": "suxian",
+   "source": "plahw_huaihai",
+   "quote": "中野攻占宿县，截断徐蚌线",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    1,
+    6
+   ],
+   "note": "宿县为分割国军之关键",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_003",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "作战区域",
+   "value_text": "作战区域在黄河以南、长江以北、津浦线两侧，跨豫皖苏鲁四省",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "wikipedia_three_campaigns",
+   "quote": "战场在黄淮之间、津浦线两侧",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    1
+   ],
+   "note": "广阔腹地作战",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_004",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "西撤失误",
+   "value_text": "黄百韬第7兵团自新安镇西撤，渡运河时被追击，错失运河东岸防线",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-08",
+    "end": null
+   },
+   "place": "xinanzhen",
+   "source": "guojun_huaihai",
+   "quote": "黄百韬自新安镇西撤，渡运河受阻",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "battle",
+   "dims": [
+    1,
+    6
+   ],
+   "note": "国方视角：西撤延误",
+   "_party": "国军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_005",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "南撤合围",
+   "value_text": "杜聿明集团自徐州南撤，退守永城陈官庄一带被华东野战军合围",
+   "time": {
+    "era_text": "民国三十七年十二月",
+    "start": "1948-12-01",
+    "end": null
+   },
+   "place": "yongcheng",
+   "source": "plahw_huaihai",
+   "quote": "杜聿明放弃徐州南撤，于陈官庄被围",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "battle",
+   "dims": [
+    1,
+    6
+   ],
+   "note": "徐州弃守南撤",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_006",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "近迫作业",
+   "value_text": "解放军大规模土工作业（交通壕、堑壕）逼近，消解国军火力优势",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "近迫作业、交通壕逼近敌阵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "dims": [
+    2,
+    1
+   ],
+   "note": "土工作业攻坚",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_007",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "空投补给",
+   "value_text": "国军依赖空投补给（徐州空投），后期空域失守、补给失效",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "xuzhou",
+   "source": "guojun_huaihai",
+   "quote": "国军靠空投维持补给，空域失守后中断",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "dims": [
+    2
+   ],
+   "note": "国方视角：空投失效",
+   "_party": "国军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_008",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "炮兵运用",
+   "value_text": "华东野战军于碾庄集中重炮，炮兵运用成为攻坚关键",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-11",
+    "end": null
+   },
+   "place": "nianzhuang",
+   "source": "plahw_huaihai",
+   "quote": "华野集中重炮于碾庄",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "battle",
+   "dims": [
+    2,
+    6
+   ],
+   "note": "炮兵决胜",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_009",
+   "subject": "person:THR__p07",
+   "predicate": "统一指挥",
+   "value_text": "总前委（邓小平、刘伯承、陈毅、粟裕、谭震林）统一指挥中野、华野",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "总前委统一指挥中原、华东野战军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    3,
+    5
+   ],
+   "note": "总前委体制",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_010",
+   "subject": "person:THR__p14",
+   "predicate": "指挥体系",
+   "value_text": "徐州剿总（刘峙任总司令、杜聿明副）指挥体系混乱，决心反复",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "xuzhou",
+   "source": "guojun_huaihai",
+   "quote": "徐州剿总指挥犹豫、部署混乱",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "dims": [
+    3
+   ],
+   "note": "国方视角：指挥失当",
+   "_party": "国军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_011",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "支前组织",
+   "value_text": "解放区党政组织支前（华东/中原/华北），建立兵站与粮弹转运网络",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "党政组织支前、兵站转运",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "dims": [
+    3,
+    4
+   ],
+   "note": "支前体制",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_012",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "经济支撑",
+   "value_text": "国统区金圆券改革崩溃，经济支撑瓦解、物价飞涨",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "bengbu",
+   "source": "guojun_huaihai",
+   "quote": "金圆券崩溃，国统区经济瓦解",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "dims": [
+    3
+   ],
+   "note": "国方视角：经济崩溃",
+   "_party": "国军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_013",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "民工支前",
+   "value_text": "543万民工支前（小车、担架、粮弹），后勤决定胜负",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "543万民工支前，小车运粮弹",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    4,
+    3
+   ],
+   "note": "民众后勤",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_014",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "民众向背",
+   "value_text": "翻身农民踊跃参军支前，国统区抢粮、民怨沸腾，民众向背分明",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "翻身农民支前，国统区民怨",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "dims": [
+    4
+   ],
+   "note": "社会基础",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_015",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "歼灭战思想",
+   "value_text": "毛泽东十大军事原则、歼灭战思想（歼敌有生力量优先于占地）",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "十大军事原则、歼灭战思想",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    5,
+    3
+   ],
+   "note": "军事思想指导",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_016",
+   "subject": "person:THR__p14",
+   "predicate": "守江必守淮",
+   "value_text": "国军持“守江必守淮”战略，但执行犹豫、决心反复",
+   "time": {
+    "era_text": "民国三十七年十一月",
+    "start": "1948-11-06",
+    "end": null
+   },
+   "place": "xuzhou",
+   "source": "guojun_huaihai",
+   "quote": "守江必守淮，执行犹豫",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "dims": [
+    5
+   ],
+   "note": "国方视角：战略犹豫",
+   "_party": "国军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_017",
+   "subject": "person:THR__p09",
+   "predicate": "第一阶段",
+   "value_text": "第一阶段（11.6–11.22）碾庄圩围歼黄百韬第7兵团，黄百韬兵败自杀",
+   "time": {
+    "era_text": "民国三十七年十一月至十二月",
+    "start": "1948-11-06",
+    "end": "1948-11-22"
+   },
+   "place": "nianzhuang",
+   "source": "plahw_huaihai",
+   "quote": "碾庄围歼黄百韬兵团，黄百韬自杀",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "battle",
+   "dims": [
+    6,
+    1
+   ],
+   "note": "第一阶段·碾庄",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_018",
+   "subject": "person:THR__p10",
+   "predicate": "第二阶段",
+   "value_text": "第二阶段（11.23–12.15）双堆集围歼黄维第12兵团，黄维被俘",
+   "time": {
+    "era_text": "民国三十七年十一月至十二月",
+    "start": "1948-11-23",
+    "end": "1948-12-15"
+   },
+   "place": "shuangduiji",
+   "source": "plahw_huaihai",
+   "quote": "双堆集围歼黄维兵团，黄维被俘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "battle",
+   "dims": [
+    6,
+    1
+   ],
+   "note": "第二阶段·双堆集",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_019",
+   "subject": "person:THR__p11",
+   "predicate": "第三阶段",
+   "value_text": "第三阶段（12.16–1949.1.10）陈官庄围歼杜聿明集团，杜聿明被俘、邱清泉毙命",
+   "time": {
+    "era_text": "民国三十七年十二月至三十八年一月",
+    "start": "1948-12-16",
+    "end": "1949-01-10"
+   },
+   "place": "chenguanzhuang",
+   "source": "plahw_huaihai",
+   "quote": "陈官庄围歼杜聿明集团，杜聿明被俘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "battle",
+   "dims": [
+    6,
+    1
+   ],
+   "note": "第三阶段·陈官庄",
+   "_party": "解放军",
+   "_faction": null
+  },
+  {
+   "id": "HHG_020",
+   "subject": "event:ev_three_campaigns_02",
+   "predicate": "战略结局",
+   "value_text": "淮海战役胜利奠定渡江战役基础，长江以北广大地区尽归中共",
+   "time": {
+    "era_text": "民国三十八年一月",
+    "start": "1949-01-10",
+    "end": null
+   },
+   "place": "huaihai",
+   "source": "plahw_huaihai",
+   "quote": "淮海胜利奠定渡江基础",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "dims": [
+    6
+   ],
+   "note": "战略后果",
    "_party": "解放军",
    "_faction": null
   }

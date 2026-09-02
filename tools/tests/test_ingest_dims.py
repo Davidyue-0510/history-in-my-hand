@@ -79,5 +79,30 @@ IN.normalize_and_validate(a_decl)
 check("已声明 dims 保持 [3] 不被词表覆盖",
       a_decl[0]["dims"] == [3] and a_decl[0].get("dim_source") == "declared")
 
+# 7) A（v0.76）: extract_with_fallback 在 LLM 整批失败时回退 heuristic，不丢整批
+def _boom_llm(*a, **k):
+    raise RuntimeError("simulated API down")
+_real = IN.extract_llm
+IN.extract_llm = _boom_llm
+try:
+    fb, used = IN.extract_with_fallback("万历四十七年，明军筑城抚顺，以红夷炮守边关。", None)
+    check("A: LLM 失败 → 回退 heuristic 产出非空", len(fb) >= 1)
+    check("A: LLM 失败 → used_llm=False 标记回退", used is False)
+    # 回退产出的断言应能过 normalize（年份+维度推断闭环）
+    IN.normalize_and_validate(fb)
+    check("A: 回退断言经 normalize 后仍合法（有 dims）",
+          all(a.get("dims") for a in fb))
+finally:
+    IN.extract_llm = _real
+# 正常路径：LLM 成功时被调用
+IN.extract_llm = lambda *a, **k: [{"id": "OK1", "subject": "event:x", "predicate": "p",
+                                   "layer": "record", "time": {"era_text": "万历元年"},
+                                   "source": "s", "confidence": 0.9, "quote": "q", "dims": [6]}]
+try:
+    ok_asserts, used2 = IN.extract_with_fallback("万历元年某事。", None)
+    check("A: LLM 正常 → used_llm=True 且走 LLM 结果", used2 is True and len(ok_asserts) == 1)
+finally:
+    IN.extract_llm = _real
+
 print("\ningest_dims: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

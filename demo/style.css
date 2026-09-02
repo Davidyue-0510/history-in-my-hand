@@ -922,6 +922,13 @@ body{
 .dim-coverage{ margin:0; }
 .dc-head{ font:600 13px/1.4 var(--sans); color:var(--ink); margin-bottom:8px; }
 .dc-sub{ display:block; font-weight:400; font-size:11px; color:var(--ink-3); margin-top:2px; }
+/* v0.76「只看声明」切换：默认弱态，开启后实色高亮，与面板配色一致 */
+.dc-toggle{ display:inline-block; margin-top:7px; font:600 11px/1 var(--sans);
+  color:var(--ink-2); background:var(--paper-2); border:1px solid var(--rule);
+  border-radius:999px; padding:5px 11px; cursor:pointer; transition:background .12s ease, color .12s ease, border-color .12s ease; }
+.dc-toggle:hover{ border-color:var(--jin); color:var(--jin); }
+.dc-toggle.on{ background:var(--jin); color:var(--paper); border-color:var(--jin);
+  box-shadow:0 1px 4px rgba(160,71,58,.28); }
 .dc-slots{ display:grid; grid-template-columns:repeat(6,1fr); gap:8px; }
 .dc-slot{ font:inherit; font-family:var(--sans); color:inherit; text-align:left; width:100%;
   cursor:pointer; background:var(--paper-2); border:1px solid var(--rule);
