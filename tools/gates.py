@@ -62,6 +62,7 @@ STEPS = [
     ("CLI 世界生成 smoke test",       ["tools/tests/test_world_cli.py"]),
     ("跨源冲突汇总 test",             ["tools/tests/test_cross_conflicts.py"]),
     ("v0.82 world emit 仅产 JSON test", ["tools/tests/test_emit.py"]),
+    ("v0.83 emit→from-json 往返 test",  ["tools/tests/test_emit_roundtrip.py"]),
 ]
 
 

@@ -1179,6 +1179,9 @@ def main():
     ap.add_argument("--emit", help="配合 --world/--multi：仅产出组装 JSON（world dict）到该路径，"
                                     "不写库/不注册/不 build；管道化复用（朝北极星'任意文字→生成世界'）。"
                                     "省略则写到 data/<id>/world_emit.json")
+    ap.add_argument("--from-json", help="v0.83 闭环：读取 --emit 产物 JSON，反装配成真实场景"
+                                        "（写文件/注册/地形 + build/gates；设 WORLD_SKIP_BUILD=1 跳过收尾）。"
+                                        "闭合「文字→emit JSON→场景」管道。")
     args = ap.parse_args()
 
     # ── 一键世界生成模式 ──
@@ -1188,6 +1191,9 @@ def main():
     if args.multi:
         _load_dotenv()
         return generate_world_multi(args.multi, emit_path=args.emit)
+    if args.from_json:
+        _load_dotenv()
+        return assemble_from_emit(args.from_json)
 
     # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
     if args.provider == "deepseek":
@@ -1404,6 +1410,60 @@ def generate_world_multi(spec_path, emit_path=None):
         len(sources), len(merged["persons"]), len(merged["events"]),
         len(merged["places"]), total_asserts, len(conflict_pairs)))
     return rc
+
+
+def assemble_from_emit(json_path):
+    """v0.83 闭环：读取 v0.82 --emit 产物（meta + persons/events/places/edges/assertions），
+    重建 spec + 已 conform 的 world dict，复用 _assemble_and_register 装配成真实场景
+    （写文件/注册/地形），再 _run_build_and_gates（尊重 WORLD_SKIP_BUILD）。
+    闭合「文字 → emit JSON → 场景」管道——直接服务北极星②「任意文字生成世界」。
+    说明：emit 产物里的实体已带 _source_* 线程与（多源）_cross_conflicts 标注，
+    本函数原样透传给 _assemble_and_register，不再二次 LLM/合规化（避免 id 重新编号丢冲突）。"""
+    with open(json_path, encoding="utf-8") as f:
+        emit = json.load(f)
+    meta = emit.get("meta", {})
+    scene_id = meta.get("id")
+    if not scene_id:
+        print("[FAIL] emit 产物缺少 meta.id，无法反装配"); return 2
+    sources = meta.get("sources", [])
+
+    # 重建 spec：单源→spec.source，多源→spec._multi_sources + _derived_parties
+    spec = {
+        "id": scene_id,
+        "title": meta.get("title", scene_id),
+        "region": meta.get("region", "liaodong"),
+        "kind": meta.get("kind", "county"),
+        "source_text": "",
+    }
+    if len(sources) > 1:
+        spec["_multi_sources"] = sources
+        spec["_derived_parties"] = [s.get("party", "unknown") for s in sources]
+        spec["source"] = sources[0]  # _gen_default_vocab 无守卫读 spec["source"]["party"]
+    elif sources:
+        spec["source"] = sources[0]
+        spec["_derived_parties"] = [sources[0].get("party", "unknown")]
+    else:
+        # 兜底：emit 未带 sources（老格式/手动构造）→ 构造 unknown 源，避免 KeyError
+        print("[warn] emit 未带 sources，构造 unknown 源兜底")
+        spec["source"] = {"id": scene_id, "title": meta.get("title", scene_id),
+                          "party": "unknown", "credibility": None}
+        spec["_derived_parties"] = ["unknown"]
+
+    scene_dir = os.path.join(ROOT, "data", scene_id)
+    os.makedirs(scene_dir, exist_ok=True)
+    raw = {
+        "persons": emit.get("persons", []),
+        "events": emit.get("events", []),
+        "places": emit.get("places", []),
+        "edges": emit.get("edges", []),
+        "assertions": emit.get("assertions", []),
+    }
+    print("[from-json] 读取 emit 产物: %s" % json_path)
+    print("[from-json] 装配: %d 人 / %d 事 / %d 地 / %d 断言 / %d 源" % (
+        len(raw["persons"]), len(raw["events"]), len(raw["places"]),
+        len(raw["assertions"]), len(sources)))
+    _assemble_and_register(spec, raw, scene_dir)
+    return _run_build_and_gates(scene_id)
 
 
 if __name__ == "__main__":

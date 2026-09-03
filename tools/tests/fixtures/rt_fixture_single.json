@@ -1,0 +1,23 @@
+{
+  "persons": [
+    {"id": "wt_p01", "name": "李成梁", "role": "明总兵", "note": "辽东名将"},
+    {"id": "wt_p02", "name": "努尔哈赤", "role": "建州女真首领", "note": "后金奠基者"}
+  ],
+  "events": [
+    {"id": "ev_rt_tmp_01", "subject": "event:rt_tmp_01", "year": 1618, "era": "万历四十六年", "title": "抚顺之战", "kind": "战事", "text": "后金克抚顺"}
+  ],
+  "places": [
+    {"id": "p_a", "name": "测地甲", "type": "city", "modern": "测试地名（不可 geocode）", "note": "边城"},
+    {"id": "p_b", "name": "测地乙", "type": "fortress", "modern": "测试地名（不可 geocode）", "note": "战场"},
+    {"id": "p_c", "name": "测地丙", "type": "city", "modern": "测试地名（不可 geocode）", "note": "首府"}
+  ],
+  "edges": [
+    {"from": "p_b", "to": "p_a", "type": "military", "label": "后金攻测地甲"}
+  ],
+  "assertions": [
+    {"id": "RTE001", "subject": "event:rt_tmp_01", "predicate": "爆发", "value_text": "后金起兵克测地甲", "time": {"era_text": "万历四十六年"}, "place": "p_a", "source": "rt_src", "quote": "万历四十六年，努尔哈赤起兵", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.9, "scale": "empire", "note": "", "dims": [1, 6]},
+    {"id": "RTE002", "subject": "person:wt_p01", "predicate": "镇守", "value_text": "李成梁镇守辽东", "time": {"era_text": "万历四十五年"}, "place": "p_c", "source": "rt_src", "quote": "成梁镇辽东", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.85, "scale": "empire", "note": "", "dims": [3]},
+    {"id": "RTE003", "subject": "person:wt_p02", "predicate": "起兵", "value_text": "努尔哈赤以十三副遗甲起兵", "time": {"era_text": "万历四十六年"}, "place": "p_b", "source": "rt_src", "quote": "以遗甲十三副起兵", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.8, "scale": "empire", "note": "", "dims": [6]},
+    {"id": "RTE004", "subject": "event:rt_tmp_01", "predicate": "战术细节", "value_text": "待补：火器配置", "time": {"era_text": "万历四十六年"}, "place": "p_a", "source": "rt_src", "quote": "", "quote_status": "generated", "layer": "gap", "confidence": 0.0, "scale": "empire", "note": "证据缺口", "dims": [2]}
+  ]
+}

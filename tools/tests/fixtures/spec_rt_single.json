@@ -1,0 +1,16 @@
+{
+  "id": "wtest_rt_single",
+  "title": "RoundTrip 单源",
+  "kind": "county",
+  "region": "liaodong",
+  "source": {
+    "id": "rt_src",
+    "title": "测试史料甲",
+    "party": "明方",
+    "color": "#8C6239",
+    "period": "明",
+    "note": "离线 round-trip fixture",
+    "credibility": "中"
+  },
+  "llm_fixture": "rt_fixture_single.json"
+}

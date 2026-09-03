@@ -1,0 +1,15 @@
+{
+  "persons": [
+    {"id": "p_m", "name": "明将", "role": "总兵"}
+  ],
+  "events": [
+    {"id": "shared_ev", "year": 1619, "era": "万历四十七年", "title": "萨尔浒之战", "kind": "战事", "text": "萨尔浒之战"}
+  ],
+  "places": [
+    {"id": "saerhu", "name": "测地甲", "type": "fortress"}
+  ],
+  "edges": [],
+  "assertions": [
+    {"id": "a0_res", "subject": "shared_ev", "predicate": "result", "value_text": "明军胜", "layer": "record", "dims": [6]}
+  ]
+}
