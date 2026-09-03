@@ -1,0 +1,19 @@
+{
+  "id": "wtest_emit_new",
+  "title": "跨会话记忆载体 new",
+  "kind": "county",
+  "region": "liaodong",
+  "llm_fixture_dir": "extend_new",
+  "sources": [
+    {
+      "id": "wt_en_src",
+      "title": "测试清方史料",
+      "party": "清方",
+      "color": "#3F6B3F",
+      "period": "清",
+      "note": "离线 fixture",
+      "credibility": "高",
+      "fixture": "src0.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "wtest_emit_base",
+  "title": "跨会话记忆载体 base",
+  "kind": "county",
+  "region": "liaodong",
+  "source": {
+    "id": "wt_eb_src",
+    "title": "测试明方史料",
+    "party": "明方",
+    "color": "#8C6239",
+    "period": "明",
+    "note": "离线 fixture",
+    "credibility": "中"
+  },
+  "llm_fixture": "extend_base/src0.json"
+}

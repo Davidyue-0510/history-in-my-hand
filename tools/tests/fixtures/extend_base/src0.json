@@ -1,0 +1,16 @@
+{
+  "persons": [
+    {"id": "p_ming", "name": "明将", "role": "总兵"}
+  ],
+  "events": [
+    {"id": "shared_ev", "year": 1619, "era": "万历四十七年", "title": "萨尔浒之战", "kind": "战事", "text": "萨尔浒之战"}
+  ],
+  "places": [
+    {"id": "saerhu", "name": "萨尔浒", "type": "fortress"}
+  ],
+  "edges": [],
+  "assertions": [
+    {"id": "a_res", "subject": "shared_ev", "predicate": "result", "value_text": "明军大捷", "layer": "record", "dims": [6], "quote": "明军四路出师，萨尔浒师大败"},
+    {"id": "a_lead", "subject": "shared_ev", "predicate": "兵力", "value_text": "明军约十万", "layer": "record", "dims": [6], "quote": "明军四路出师"}
+  ]
+}

@@ -1183,12 +1183,20 @@ def main():
     ap.add_argument("--from-json", help="v0.83 闭环：读取 --emit 产物 JSON，反装配成真实场景"
                                         "（写文件/注册/地形 + build/gates；设 WORLD_SKIP_BUILD=1 跳过收尾）。"
                                         "闭合「文字→emit JSON→场景」管道。")
+    ap.add_argument("--extend-json", help="v0.86 跨会话记忆载体：读取 A 会话 --emit 产物 JSON，"
+                                          "配合 --multi <新来源 spec> 追加新来源扩展，仅产出扩展 emit JSON"
+                                          "（零 repo 副作用、不 build；要落场景再用 --from-json 加载产物）。")
     args = ap.parse_args()
 
     # ── 一键世界生成模式 ──
     if args.world:
         _load_dotenv()
         return generate_world(args.world, emit_path=args.emit)
+    if args.extend_json:
+        if not args.multi:
+            print("[FAIL] --extend-json 需要配合 --multi <新来源 spec>（提供要追加的来源）"); return 2
+        _load_dotenv()
+        return extend_from_emit(args.extend_json, args.multi, emit_path=args.emit)
     if args.multi:
         _load_dotenv()
         return generate_world_multi(args.multi, emit_path=args.emit)
@@ -1466,6 +1474,156 @@ def assemble_from_emit(json_path):
         len(raw["assertions"]), len(sources)))
     _assemble_and_register(spec, raw, scene_dir)
     return _run_build_and_gates(scene_id)
+
+
+def extend_from_emit(json_path, new_spec_path, emit_path=None):
+    """v0.86 跨会话记忆载体：在 A 会话 --emit 产出的快照上，B 会话追加新来源继续扩展。
+
+    - 保留 base 全部断言的 id 与 _source_* 线程（不重编号，记忆不漂移；base 内部 _cross_conflicts 不丢）；
+    - 新来源各自合规化后，按「事件标题」与 base 对齐（同名事件复用 base 事件 id，使跨会话冲突可被检测），
+      其余实体 id 重映射到独立命名空间（避免与 base 撞车）；
+    - 合并后做跨会话冲突检测（base vs 新 / 新 vs 新）；
+    - 默认仅产出扩展后的 emit JSON（零 repo 副作用、不 build）。要落场景用 --from-json 加载产物。
+    直接服务北极星②「任意文字→生成世界」的管道化复用：emit JSON 成为可跨会话累积、
+    跨会话比对冲突的「记忆载体」。
+    """
+    with open(json_path, encoding="utf-8") as f:
+        base = json.load(f)
+    meta = base.get("meta", {})
+    scene_id = meta.get("id")
+    if not scene_id:
+        print("[FAIL] base emit 缺少 meta.id，无法扩展"); return 2
+    base_sources = meta.get("sources", [])
+    base_n = len(base_sources)
+    if base_n == 0:
+        print("[warn] base emit 未带 sources，按单源兜底扩展")
+
+    with open(new_spec_path, encoding="utf-8") as f:
+        new_spec = json.load(f)
+    new_spec["_spec_path"] = new_spec_path
+    new_sources = new_spec.get("sources", [new_spec])
+    print("[extend] base 源数=%d，追加源数=%d" % (base_n, len(new_sources)))
+
+    # 载入 base world（深拷贝，避免改原 emit），已合规化、带 _source_* 线程
+    merged = {k: [dict(x) for x in base.get(k, [])]
+              for k in ("persons", "events", "places", "edges", "assertions")}
+    seen = {k: {it.get("id") for it in merged[k] if it.get("id")}
+            for k in ("persons", "events", "places", "edges")}
+    seen_event_title = {ev.get("title"): ev.get("id")
+                        for ev in merged["events"] if ev.get("title")}
+
+    for si, src in enumerate(new_sources):
+        tmp_spec = dict(new_spec)
+        tmp_spec["source"] = src
+        tmp_spec["id"] = scene_id  # 复用 base 场景 id 以正确推导 parties / 断言前缀
+        _mt = src.get("text", new_spec.get("source_text", ""))
+        if isinstance(_mt, str) and _mt.startswith("@"):
+            _mtp = _mt[1:]
+            if not os.path.isabs(_mtp):
+                _mtp = os.path.join(os.path.dirname(os.path.abspath(new_spec_path)), _mtp)
+            with open(_mtp, encoding="utf-8") as _mf:
+                _mt = _mf.read()
+        tmp_spec["source_text"] = _mt
+        if new_spec.get("llm_fixture_dir"):
+            _fxdir = new_spec["llm_fixture_dir"]
+            if not os.path.isabs(_fxdir) and new_spec.get("_spec_path"):
+                _fxdir = os.path.join(os.path.dirname(os.path.abspath(new_spec_path)), _fxdir)
+            tmp_spec["llm_fixture"] = os.path.join(
+                _fxdir, src.get("fixture", "src_%d.json" % si))
+        # 新来源合规化（独立），事件 id = ev_<scene>_NN，断言 id = WTE001..
+        new_raw = _llm_extract_world(tmp_spec, conform=True)
+
+        # ── 事件对齐：同名事件复用 base 事件 id（使跨会话冲突可被检测）──
+        ev_map = {}  # conform 生成的事件 id -> 最终 id
+        new_event_counter = 1
+        for ev in new_raw.get("events", []):
+            conform_id = ev.get("id")
+            t = ev.get("title")
+            if t and t in seen_event_title:
+                final = seen_event_title[t]
+            else:
+                final = "ev_%s_E%d_%d_%02d" % (scene_id, base_n, si, new_event_counter)
+                new_event_counter += 1
+                if t:
+                    seen_event_title[t] = final
+                ev["_final_id"] = final
+            ev_map[conform_id] = final
+
+        # 新断言 id 重映射到独立命名空间（避免与 base 撞车）+ 事件引用对齐
+        for k, a in enumerate(new_raw.get("assertions", [])):
+            a["id"] = "%s_E%d_%d_%03d" % (
+                "".join(c for c in scene_id[:3].upper() if c.isalnum()), base_n, si, k + 1)
+            subj = a.get("subject", "")
+            if subj.startswith("event:"):
+                m = ev_map.get(subj[len("event:"):])
+                if m:
+                    a["subject"] = "event:" + m
+
+        # 线程 _source_* 并合并（非断言按 id 去重保留 base；断言全部追加以支持冲突）
+        idx = base_n + si
+        nm = src.get("title", src.get("id", ""))
+        party = src.get("party", "unknown")
+        cred = src.get("credibility")
+        for key in ("persons", "events", "places", "edges", "assertions"):
+            for item in new_raw.get(key, []):
+                if key == "events":
+                    final = item.get("_final_id")
+                    if not final:  # 同名事件，复用 base，跳过追加
+                        continue
+                    item["id"] = final
+                    if final in seen["events"]:
+                        continue
+                    seen["events"].add(final)
+                    merged["events"].append(item)
+                elif key == "assertions":
+                    item.setdefault("_source_idx", idx)
+                    item.setdefault("_source_name", nm)
+                    item.setdefault("_source_party", party)
+                    item.setdefault("_source_credibility", cred)
+                    item.setdefault("source", nm)
+                    item.setdefault("_source_quote", item.get("quote", ""))
+                    merged[key].append(item)
+                else:
+                    iid = item.get("id")
+                    if iid and iid in seen[key]:
+                        continue
+                    if iid:
+                        seen[key].add(iid)
+                    merged[key].append(item)
+
+    # ── 跨会话冲突检测（base vs 新 / 新 vs 新）──
+    conflict_pairs = []
+    al = merged["assertions"]
+    for i in range(len(al)):
+        for j in range(i + 1, len(al)):
+            a1, a2 = al[i], al[j]
+            if (a1.get("subject") == a2.get("subject")
+                    and a1.get("predicate") == a2.get("predicate")
+                    and a1.get("_source_idx") != a2.get("_source_idx")
+                    and a1.get("value_text") != a2.get("value_text")):
+                conflict_pairs.append((a1["id"], a2["id"]))
+                a1.setdefault("_cross_conflicts", []).append(a2["id"])
+                a2.setdefault("_cross_conflicts", []).append(a1["id"])
+    print("[extend] 跨会话冲突: %d 对" % len(conflict_pairs))
+
+    spec = {
+        "id": scene_id,
+        "title": meta.get("title", scene_id) + "（扩展）",
+        "region": meta.get("region", "liaodong"),
+        "kind": meta.get("kind", "county"),
+        "source_text": "",
+        "_multi_sources": base_sources + [{
+            "id": s.get("id", s.get("title", "")), "title": s.get("title", ""),
+            "party": s.get("party", "unknown"), "color": s.get("color", "#8C6239"),
+            "compiler": s.get("compiler", ""), "period": s.get("period", ""),
+            "note": s.get("note", ""), "credibility": s.get("credibility"),
+        } for s in new_sources],
+        "_derived_parties": [s.get("party", "unknown") for s in (base_sources + new_sources)],
+        "source": (base_sources + new_sources)[0],
+    }
+    scene_dir = os.path.join(ROOT, "data", scene_id)
+    _emit_world(spec, merged, scene_dir, emit_path, "extend")
+    return 0
 
 
 if __name__ == "__main__":
