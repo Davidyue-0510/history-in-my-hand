@@ -1237,20 +1237,49 @@
       });
     }
     var pcolors = (typeof VOCAB !== 'undefined' && VOCAB.party_colors) || {};
+    // 可信度加权：高>中>低>待补；相当则标「留待考」，并把较低方暗化（加权视觉）
+    var credRank = { '高': 3, '中': 2, '低': 1, '待补': 0 };
+    var credCls = { '高': 'high', '中': 'mid', '低': 'low', '待补': 'tbd' };
     list.forEach(function (c) {
       var va = c.a.value == null ? String(c.a.value_text == null ? '' : c.a.value_text) : String(c.a.value);
       var vb = c.b.value == null ? String(c.b.value_text == null ? '' : c.b.value_text) : String(c.b.value);
       var pa = c.a.party || '未知', pb = c.b.party || '未知';
       var ca = pcolors[pa] || '#8C6239', cb = pcolors[pb] || '#7B5C3E';
+      var credA = c.a.credibility || '待补', credB = c.b.credibility || '待补';
+      var nmA = c.a.source_name || c.a.source || '未知', nmB = c.b.source_name || c.b.source || '未知';
+      var ra = credRank[credA] != null ? credRank[credA] : 0;
+      var rb = credRank[credB] != null ? credRank[credB] : 0;
+      var weightNote, mutA = '', mutB = '';
+      if (ra > rb) { weightNote = pa + '（' + credA + '）较可信；' + pb + '（' + credB + '）待考'; mutB = ' muted'; }
+      else if (rb > ra) { weightNote = pb + '（' + credB + '）较可信；' + pa + '（' + credA + '）待考'; mutA = ' muted'; }
+      else { weightNote = '双方可信度相当（' + credA + '），留待考'; }
       var n = document.createElement('div');
       n.className = 'cf';
       n.innerHTML = '<div class="cf-top"><span class="cf-sub">' + esc(subjectName(c.subject)) +
         ' · ' + esc(c.predicate) + '</span></div>' +
-        '<div class="cf-kind">跨源冲突：' + esc(pa) + '　vs　' + esc(pb) + '</div>' +
-        '<div class="cf-vals">' +
-        '<span class="cf-chip" style="--cc:' + ca + '">' + esc(va.slice(0, 24)) + '</span>' +
-        '<span class="cf-chip" style="--cc:' + cb + '">' + esc(vb.slice(0, 24)) + '</span>' +
-        '</div>';
+        '<div class="cf-sides">' +
+          '<div class="cf-side' + mutA + '">' +
+            '<div class="cf-party">' + esc(pa) + ' <span class="cf-cred cred-' + (credCls[credA] || 'tbd') + '">可信度·' + credA + '</span></div>' +
+            '<div class="cf-src">出处：' + esc(nmA) + '</div>' +
+            '<div class="cf-vals"><span class="cf-chip" style="--cc:' + ca + '">' + esc(va.slice(0, 24)) + '</span></div>' +
+            '<div class="cf-row"><span>层级：' + esc(c.a.layer || '') + '</span><span>断言：' + esc(c.a.assertion_id || '') + '</span></div>' +
+          '</div>' +
+          '<div class="cf-vs">vs</div>' +
+          '<div class="cf-side' + mutB + '">' +
+            '<div class="cf-party">' + esc(pb) + ' <span class="cf-cred cred-' + (credCls[credB] || 'tbd') + '">可信度·' + credB + '</span></div>' +
+            '<div class="cf-src">出处：' + esc(nmB) + '</div>' +
+            '<div class="cf-vals"><span class="cf-chip" style="--cc:' + cb + '">' + esc(vb.slice(0, 24)) + '</span></div>' +
+            '<div class="cf-row"><span>层级：' + esc(c.b.layer || '') + '</span><span>断言：' + esc(c.b.assertion_id || '') + '</span></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="cf-weight">' + weightNote + '</div>' +
+        '<div class="cf-spread">展开 ▾</div>';
+      // 整卡可点击展开：看双方原始断言上下文（层级 / 断言 id）
+      n.addEventListener('click', function () {
+        var open = n.classList.toggle('open');
+        var sp = n.querySelector('.cf-spread');
+        if (sp) sp.textContent = open ? '收起 ▴' : '展开 ▾';
+      });
       box.appendChild(n);
     });
     // 有跨源冲突也让 conflict tab 的提醒点显示

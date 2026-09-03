@@ -174,13 +174,19 @@ def build_cross_conflicts(assertions):
                     "predicate": predicate,
                     "a": {
                         "assertion_id": a["id"], "source": a.get("source"),
-                        "party": a.get("_party"), "value_text": a.get("value_text"),
+                        "source_name": a.get("_source_name"),
+                        "party": a.get("_party") or a.get("_source_party"),
+                        "value_text": a.get("value_text"),
                         "value": a.get("value"), "layer": a.get("layer"),
+                        "credibility": a.get("_source_credibility"),
                     },
                     "b": {
                         "assertion_id": b["id"], "source": b.get("source"),
-                        "party": b.get("_party"), "value_text": b.get("value_text"),
+                        "source_name": b.get("_source_name"),
+                        "party": b.get("_party") or b.get("_source_party"),
+                        "value_text": b.get("value_text"),
                         "value": b.get("value"), "layer": b.get("layer"),
+                        "credibility": b.get("_source_credibility"),
                     },
                 })
     return out

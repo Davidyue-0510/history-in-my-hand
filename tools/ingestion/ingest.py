@@ -900,9 +900,11 @@ def _gen_default_vocab(places, spec, scene_dir):
     return vocab
 
 
-def _llm_extract_world(spec):
+def _llm_extract_world(spec, conform=True):
     """调 LLM（或 llm_fixture 离线）一次性抽取场景全部实体 + 断言，合规化后返回 raw。
-    单源 --world 与多源 --multi 共用，避免两条路径各写一套导致行为漂移。"""
+    单源 --world 与多源 --multi 共用，避免两条路径各写一套导致行为漂移。
+    conform=False 时仅做抽取/解析、不做合规化（多源模式在合并后统一合规化一次，
+    否则逐源合规化会把各源断言重编号成同一场景前缀、合并时 id 撞车丢断言）。"""
     prompt = _build_world_prompt(spec)
     if spec.get("llm_fixture"):
         fx = spec["llm_fixture"]
@@ -925,7 +927,9 @@ def _llm_extract_world(spec):
             raw = json.loads(m.group())
         else:
             raise RuntimeError("LLM/fixture 返回非 JSON")
-    return _conform_world(raw, spec)
+    if conform:
+        raw = _conform_world(raw, spec)
+    return raw
 
 
 def _register_terrain(spec, scene_dir):
@@ -1265,7 +1269,7 @@ def generate_world_multi(spec_path):
                 _fxdir = os.path.join(os.path.dirname(os.path.abspath(spec_path)), _fxdir)
             tmp_spec["llm_fixture"] = os.path.join(
                 _fxdir, src.get("fixture", "src_%d.json" % i))
-        raw = _llm_extract_world(tmp_spec)  # 真调 LLM（或离线 fixture）
+        raw = _llm_extract_world(tmp_spec, conform=False)  # 多源：合并后统一合规化一次
         all_raws.append(raw)
 
     # 合并
@@ -1280,6 +1284,7 @@ def generate_world_multi(spec_path):
                 item.setdefault("_source_idx", si)
                 item.setdefault("_source_name", source_names[si])
                 item.setdefault("_source_party", source_parties[si])
+                item.setdefault("_source_credibility", sources[si].get("credibility"))
                 if key == "assertions":
                     item.setdefault("source", source_names[si])
                 pid = item.get("id", str(item))
@@ -1287,7 +1292,19 @@ def generate_world_multi(spec_path):
                     seen[key].add(pid)
                     merged[key].append(item)
 
-    # 跨源冲突标注
+    # 先设 source 元信息（_conform_world 需要 spec["source"].id/party），再合并后统一合规化一次。
+    # 关键：多源若逐源合规化，各源断言会被重编号成同一场景前缀、合并时 id 撞车丢断言，
+    # 故合并后只合规化一次（真实 LLM 抽取的多源场景同理，避免断言丢失）。
+    spec["_multi_sources"] = [{
+        "id": source_names[i], "title": s.get("title", ""), "party": s.get("party", "unknown"),
+        "color": s.get("color", "#8C6239"), "compiler": s.get("compiler", ""),
+        "period": s.get("period", ""), "note": s.get("note", ""),
+    } for i, s in enumerate(sources)]
+    spec["_derived_parties"] = source_parties
+    spec["source"] = spec["_multi_sources"][0]
+    merged = _conform_world(merged, spec)  # 一次合规化，避免逐源重编号撞 id
+
+    # 跨源冲突标注（合规化后 subject 已归一）
     conflict_pairs = []
     for i, a1 in enumerate(merged["assertions"]):
         for j, a2 in enumerate(merged["assertions"]):
@@ -1301,15 +1318,6 @@ def generate_world_multi(spec_path):
                 a1.setdefault("_cross_conflicts", []).append(a2["id"])
                 a2.setdefault("_cross_conflicts", []).append(a1["id"])
     print("[multi] 跨源冲突: %d 对" % len(conflict_pairs))
-
-    # 让 _assemble_and_register 写多源 sources.json + 用各 source party 构图包
-    spec["_multi_sources"] = [{
-        "id": source_names[i], "title": s.get("title", ""), "party": s.get("party", "unknown"),
-        "color": s.get("color", "#8C6239"), "compiler": s.get("compiler", ""),
-        "period": s.get("period", ""), "note": s.get("note", ""),
-    } for i, s in enumerate(sources)]
-    spec["_derived_parties"] = source_parties
-    spec["source"] = spec["_multi_sources"][0]
 
     _assemble_and_register(spec, merged, scene_dir)
     rc = _run_build_and_gates(scene_id)

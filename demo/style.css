@@ -680,6 +680,22 @@ body{
 }
 .cf.muted{ border-left-color:var(--rule-2); opacity:.5; }
 .cf.muted .cf-spread{ color:var(--ink-3); }
+/* 跨源冲突深化（v0.81）：双方并排 + 可信度徽标 + 加权视觉 + 整卡展开看原始上下文 */
+.cf-sides{ display:flex; gap:8px; margin-top:6px; }
+.cf-side{ flex:1; min-width:0; border:1px solid var(--rule-2); border-radius:3px; padding:6px; }
+.cf-side.muted{ opacity:.45; border-style:dashed; }
+.cf-party{ font-size:11px; font-weight:600; }
+.cf-cred{ font-size:10px; margin-left:4px; padding:0 4px; border-radius:2px; color:#fff; }
+.cf-cred.cred-high{ background:#2e7d32; }
+.cf-cred.cred-mid{ background:#f9a825; }
+.cf-cred.cred-low{ background:#c62828; }
+.cf-cred.cred-tbd{ background:#757575; }
+.cf-src{ font-size:10px; color:var(--ink-3); margin-top:2px; }
+.cf-vs{ align-self:center; font-size:11px; color:var(--ink-3); }
+.cf-weight{ font-size:10px; color:var(--rule-3); margin-top:6px; line-height:1.5; }
+.cf-row{ display:none; font-size:10px; color:var(--ink-3); margin-top:4px; gap:10px; }
+.cf.open .cf-row{ display:flex; }
+.cf-spread{ cursor:pointer; font-size:10px; color:var(--rule-3); margin-top:4px; user-select:none; }
 
 /* ══════ 检视 ══════ */
 .inspect{ display:flex; flex-direction:column; gap:7px; }
