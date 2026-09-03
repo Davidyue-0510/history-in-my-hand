@@ -39,6 +39,14 @@ extraction_demo spike 固化成一个**可复用、可进闸门、可换后端**
   # 直连 DeepSeek（OpenAI 兼容；设 LLM_API_KEY 即可，base/model 有默认值）
   LLM_API_KEY=sk-xxx python tools/ingest.py --source 某史料.txt --provider deepseek --scene sarhu --run-gates
 
+  # v0.87 主路径：一键世界 + 真实 LLM 抽取（默认），仅产 emit JSON 不落库
+  #   spec 的 source_text 写真实史料文本（或 "@file.txt" 引用外部文件），
+  #   不设 llm_fixture 即走真实 DeepSeek；配 --emit 产出可跨会话复用的快照。
+  python tools/ingest.py --world spec.json --emit world_emit.json
+
+  # 离线 / 无 key：给 spec 加 llm_fixture（单源）或 llm_fixture_dir（多源）走 fixture，零 token。
+  #   真实文本是默认输入，离线 fixture 仅用于测试与无 key 环境，二者互斥清晰（_require_real_llm_or_fixture）。
+
 退出码非零 = 有断言无法归一化或校验失败（ingestion 缺口），应阻断后续。
 """
 import argparse
@@ -278,6 +286,11 @@ def _call_llm(prompt):
     usage = data.get("usage") or {}
     _report_usage(model, usage)
     return content, usage
+
+
+# 保留真实实现的引用，供 _require_real_llm_or_fixture 识别「测试 monkeypatch 了 _call_llm」，
+# 此时离线跑不应触发 fail-fast（真实 CLI 永不替换它）。
+_CALL_LLM_ORIGINAL = _call_llm
 
 
 def _report_usage(model, usage):
@@ -783,16 +796,10 @@ def _conform_world(raw, spec):
                 if len(parties) >= 2:
                     break
         if len(parties) < 2:
-            # 从原文中搜参战方名称
-            text = spec.get("source_text", "")
-            if "解放军" in text and "国军" in text:
-                parties = ["解放军", "国军"]
-            elif "共方" in text:
-                parties = ["共方", "国方"]
-            else:
-                parties = ["共方", "国方"]
-        if len(parties) < 2:
-            parties = ["共方", "国方"]
+            # 无法从事件标题/原文可靠推导出参战方时，绝不伪造对立阵营
+            # （旧逻辑硬编码「共方/国方」「解放军/国军」属现代史域，会污染明清华东等任意
+            #  综述来源，违反 honest boundary）。诚实回退到来源自身 party：综述类即「无对立阵营标注」。
+            parties = [src_party]
     else:
         opposing = set()
         for a in raw.get("assertions", []):
@@ -930,6 +937,32 @@ def _llm_extract_world(spec, conform=True):
     if conform:
         raw = _conform_world(raw, spec)
     return raw
+
+
+def _require_real_llm_or_fixture(spec, multi=False):
+    """生产路径默认走真实 LLM；无 fixture 且无 key 时 fail-fast，给清晰报错而非静默崩。
+
+    - 单源 --world：spec 带 llm_fixture 走离线；否则需 LLM_API_KEY。
+    - 多源 --multi：spec 带 llm_fixture_dir 走离线；否则需 LLM_API_KEY。
+    这是「emit 默认走真实 DeepSeek（v0.87）」的安全网：真实文本是默认输入，
+    离线 fixture 仅用于测试/无 key 环境，二者互斥清晰，不假绿。
+
+    识别测试 monkeypatch：若 _call_llm 已被替换为离线替身（测试常见），则本进程不会真联网，
+    直接放行，不误杀离线用例。
+    """
+    if _call_llm is not _CALL_LLM_ORIGINAL:
+        return None
+    has_fixture = bool(spec.get("llm_fixture")) or (multi and bool(spec.get("llm_fixture_dir")))
+    if has_fixture:
+        return None
+    key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY")
+    if not key:
+        return ("[FAIL] 未检测到 LLM_API_KEY / OPENAI_API_KEY，且 spec 未设 llm_fixture"
+                "%s，无法走真实抽取。\n"
+                "       解决方案：① 在 .env 或环境变量设 LLM_API_KEY（DeepSeek 端点，"
+                "详见 smoke_llm_world.py）；或 ② 给 spec 加 llm_fixture / llm_fixture_dir 走离线。"
+                % ("（--multi 需要 llm_fixture_dir）" if multi else ""))
+    return None
 
 
 def _register_terrain(spec, scene_dir):
@@ -1134,6 +1167,11 @@ def generate_world(spec_path, emit_path=None):
             src_text = f.read()
         spec["source_text"] = src_text
 
+    _err = _require_real_llm_or_fixture(spec, multi=False)
+    if _err:
+        print(_err)
+        return 3
+
     raw = _llm_extract_world(spec)
     print("[world] 抽取: persons=%d events=%d places=%d edges=%d assertions=%d" % (
         len(raw.get("persons", [])), len(raw.get("events", [])),
@@ -1333,6 +1371,10 @@ def generate_world_multi(spec_path, emit_path=None):
     scene_dir = os.path.join(ROOT, "data", scene_id)
 
     sources = spec.get("sources", [spec])
+    _err = _require_real_llm_or_fixture(spec, multi=True)
+    if _err:
+        print(_err)
+        return 3
     print("[multi] %d 个来源，逐源抽取 ..." % len(sources))
 
     all_raws = []

@@ -64,6 +64,7 @@ STEPS = [
     ("v0.82 world emit 仅产 JSON test", ["tools/tests/test_emit.py"]),
     ("v0.83 emit→from-json 往返 test",  ["tools/tests/test_emit_roundtrip.py"]),
     ("v0.86 跨会话记忆载体 test",        ["tools/tests/test_emit_memory_carrier.py"]),
+    ("v0.87 派系推导诚实化 test",         ["tools/tests/test_party_derivation.py"]),
 ]
 
 # 真实 LLM 接入冒烟：可选闸门，默认不挂（避免每次 gates 烧 token）。
