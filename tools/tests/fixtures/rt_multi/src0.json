@@ -10,6 +10,6 @@
   ],
   "edges": [],
   "assertions": [
-    {"id": "a0_res", "subject": "shared_ev", "predicate": "result", "value_text": "明军胜", "layer": "record", "dims": [6]}
+    {"id": "a0_res", "subject": "shared_ev", "predicate": "result", "value_text": "明军胜", "layer": "record", "dims": [6], "quote": "明军四路出师，萨尔浒师大败"}
   ]
 }

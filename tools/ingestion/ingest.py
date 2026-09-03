@@ -1066,6 +1066,7 @@ def _thread_single_source(raw, spec):
             item.setdefault("_source_credibility", cred)
             if key == "assertions":
                 item.setdefault("source", nm)
+                item.setdefault("_source_quote", item.get("quote", ""))
     return raw
 
 
@@ -1365,6 +1366,7 @@ def generate_world_multi(spec_path, emit_path=None):
                 item.setdefault("_source_credibility", sources[si].get("credibility"))
                 if key == "assertions":
                     item.setdefault("source", source_names[si])
+                    item.setdefault("_source_quote", item.get("quote", ""))
                 pid = item.get("id", str(item))
                 if pid not in seen[key]:
                     seen[key].add(pid)

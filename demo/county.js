@@ -1263,6 +1263,7 @@
             '<div class="cf-src">出处：' + esc(nmA) + '</div>' +
             '<div class="cf-vals"><span class="cf-chip" style="--cc:' + ca + '">' + esc(va.slice(0, 24)) + '</span></div>' +
             '<div class="cf-row"><span>层级：' + esc(c.a.layer || '') + '</span><span>断言：' + esc(c.a.assertion_id || '') + '</span></div>' +
+            '<div class="cf-quote">原始引文：「' + esc(c.a.quote || '待补') + '」</div>' +
           '</div>' +
           '<div class="cf-vs">vs</div>' +
           '<div class="cf-side' + mutB + '">' +
@@ -1270,11 +1271,12 @@
             '<div class="cf-src">出处：' + esc(nmB) + '</div>' +
             '<div class="cf-vals"><span class="cf-chip" style="--cc:' + cb + '">' + esc(vb.slice(0, 24)) + '</span></div>' +
             '<div class="cf-row"><span>层级：' + esc(c.b.layer || '') + '</span><span>断言：' + esc(c.b.assertion_id || '') + '</span></div>' +
+            '<div class="cf-quote">原始引文：「' + esc(c.b.quote || '待补') + '」</div>' +
           '</div>' +
         '</div>' +
         '<div class="cf-weight">' + weightNote + '</div>' +
         '<div class="cf-spread">展开 ▾</div>';
-      // 整卡可点击展开：看双方原始断言上下文（层级 / 断言 id）
+      // 整卡可点击展开：看双方原始断言上下文（层级 / 断言 id / 原始史料引文）
       n.addEventListener('click', function () {
         var open = n.classList.toggle('open');
         var sp = n.querySelector('.cf-spread');

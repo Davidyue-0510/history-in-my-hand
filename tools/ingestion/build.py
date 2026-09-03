@@ -179,6 +179,7 @@ def build_cross_conflicts(assertions):
                         "value_text": a.get("value_text"),
                         "value": a.get("value"), "layer": a.get("layer"),
                         "credibility": a.get("_source_credibility"),
+                        "quote": a.get("_source_quote") or a.get("quote") or "",
                     },
                     "b": {
                         "assertion_id": b["id"], "source": b.get("source"),
@@ -187,6 +188,7 @@ def build_cross_conflicts(assertions):
                         "value_text": b.get("value_text"),
                         "value": b.get("value"), "layer": b.get("layer"),
                         "credibility": b.get("_source_credibility"),
+                        "quote": b.get("_source_quote") or b.get("quote") or "",
                     },
                 })
     return out

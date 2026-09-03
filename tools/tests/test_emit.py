@@ -115,6 +115,14 @@ def main():
         ok = check("_source_idx 覆盖 [0,1]", idxs == [0, 1]) and ok
         creds = sorted(a.get("_source_credibility") for a in ast_m)
         ok = check("可信度线程 [中,高]", creds == ["中", "高"]) and ok
+        # 原始引文线程：两源断言都带 _source_quote（前端展开可看原始史料引文）
+        quotes = sorted(a.get("_source_quote", "") for a in ast_m)
+        ok = check("原始引文线程到断言 (2 条均带)",
+                   all(a.get("_source_quote") for a in ast_m)) and ok
+        ok = check("断言 a0 引文正确",
+                   ast_m[0].get("_source_quote") == "明军四路出师，萨尔浒师大败") and ok
+        ok = check("断言 a1 引文正确",
+                   ast_m[1].get("_source_quote") == "我军大破明兵，斩获甚众") and ok
         # 跨源冲突标注：至少一条带 _cross_conflicts 且指向另一源
         cc = [a for a in ast_m if a.get("_cross_conflicts")]
         ok = check("含跨源冲突标注 (%d 条)" % len(cc), len(cc) >= 1) and ok

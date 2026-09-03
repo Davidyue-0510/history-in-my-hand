@@ -20,10 +20,12 @@ def main():
     A = [
         {"id": "a1", "subject": "event:x", "predicate": "result", "layer": "record",
          "_source_idx": 0, "_party": "明方", "source": "srcA", "_source_name": "明实录",
-         "_source_credibility": "高", "value_text": "胜", "_cross_conflicts": ["a2"]},
+         "_source_credibility": "高", "value_text": "胜", "_source_quote": "明实录曰：明军大捷",
+         "_cross_conflicts": ["a2"]},
         {"id": "a2", "subject": "event:x", "predicate": "result", "layer": "record",
          "_source_idx": 1, "_party": "清方", "source": "srcB", "_source_name": "清实录",
-         "_source_credibility": "中", "value_text": "败", "_cross_conflicts": ["a1"]},
+         "_source_credibility": "中", "value_text": "败", "_source_quote": "清实录曰：后金破明",
+         "_cross_conflicts": ["a1"]},
         # 同 subject/predicate 但无冲突标记（第三源同值）→ 不应产生额外对
         {"id": "a3", "subject": "event:x", "predicate": "result", "layer": "record",
          "_source_idx": 0, "_party": "明方", "source": "srcA", "value_text": "胜"},
@@ -48,12 +50,26 @@ def main():
         ok = check("a 携带 source_name", c0["a"].get("source_name") == "明实录") and ok
         ok = check("a 携带 credibility", c0["a"].get("credibility") == "高") and ok
         ok = check("b 携带 credibility", c0["b"].get("credibility") == "中") and ok
+        ok = check("a 携带原始引文", c0["a"].get("quote") == "明实录曰：明军大捷") and ok
+        ok = check("b 携带原始引文", c0["b"].get("quote") == "清实录曰：后金破明") and ok
     # 单源场景（全同 _source_idx）应无跨源冲突
     A2 = [dict(a, _source_idx=0, _cross_conflicts=[]) for a in A[:2]]
     ok = check("单源（同 _source_idx）无跨源冲突", len(B.build_cross_conflicts(A2)) == 0) and ok
     # gap 层应被忽略
     A3 = [dict(a, layer="gap") for a in A[:2]]
     ok = check("gap 层不参与跨源冲突", len(B.build_cross_conflicts(A3)) == 0) and ok
+    # 空引文回退：某方未携带 quote → 落 ""（前端显示「待补」，不伪造）
+    A4 = [
+        {"id": "q1", "subject": "event:z", "predicate": "result", "layer": "record",
+         "_source_idx": 0, "_party": "明方", "source": "srcA", "_source_name": "明实录",
+         "_source_credibility": "高", "value_text": "胜", "_source_quote": "明实录有载",
+         "_cross_conflicts": ["q2"]},
+        {"id": "q2", "subject": "event:z", "predicate": "result", "layer": "record",
+         "_source_idx": 1, "_party": "清方", "source": "srcB", "_source_name": "清实录",
+         "_source_credibility": "中", "value_text": "败", "_cross_conflicts": ["q1"]},
+    ]
+    o4 = B.build_cross_conflicts(A4)
+    ok = check("空引文回退为 ''", o4 and o4[0]["b"].get("quote") == "") and ok
     print("cross_conflicts: %s" % ("PASS" if ok else "FAIL"))
     return 0 if ok else 1
 

@@ -10,6 +10,6 @@
   ],
   "edges": [],
   "assertions": [
-    {"id": "a1_res", "subject": "shared_ev", "predicate": "result", "value_text": "后金胜", "layer": "record", "dims": [6]}
+    {"id": "a1_res", "subject": "shared_ev", "predicate": "result", "value_text": "后金胜", "layer": "record", "dims": [6], "quote": "我军大破明兵，斩获甚众"}
   ]
 }
