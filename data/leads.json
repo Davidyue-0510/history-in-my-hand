@@ -339,6 +339,22 @@
    "_src_line": 19
   },
   {
+   "id": "CH015",
+   "scene": "chu_han",
+   "subject": "event:gai_xia",
+   "title": "楚本方原始记载（楚汉之际起居注等）多佚，项羽败亡细节主要经汉方（史记）回溯叙述，楚视角为结构性缺口",
+   "missing": "核《史记·项羽本纪》与汉方叙事的立场偏见 / 比对楚本方亡佚记载的逆推成分",
+   "where": "项羽败亡细节与楚方动机（鸿门不杀、垓下心态）",
+   "skills": [
+    "核《史记·项羽本纪》与汉方叙事的立场偏见",
+    "比对楚本方亡佚记载的逆推成分"
+   ],
+   "accept": "明确汉方（史记）对楚败亡的回溯叙述成分",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",

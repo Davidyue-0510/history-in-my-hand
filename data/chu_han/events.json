@@ -1,0 +1,10 @@
+{
+  "events": [
+    {"id": "ev_ru_guanzhong", "subject": "event:ru_guanzhong", "name": "刘邦入关中", "start": -207, "end": -207, "note": "前207 刘邦破武关入咸阳，秦亡"},
+    {"id": "ev_hongmen", "subject": "event:hongmen", "name": "鸿门宴", "start": -206, "end": -206, "note": "前206 项羽鸿门宴纵刘邦"},
+    {"id": "ev_huandingsanqin", "subject": "event:huandingsanqin", "name": "还定三秦", "start": -206, "end": -205, "note": "韩信明修栈道暗度陈仓，定三秦"},
+    {"id": "ev_pengcheng", "subject": "event:pengcheng", "name": "彭城之战", "start": -205, "end": -205, "note": "项羽以少破汉于彭城"},
+    {"id": "ev_chenggao", "subject": "event:chenggao", "name": "成皋相持", "start": -205, "end": -203, "note": "荥阳—成皋拉锯数年"},
+    {"id": "ev_gai_xia", "subject": "event:gai_xia", "name": "垓下之围", "start": -202, "end": -202, "note": "韩信合围，四面楚歌，项羽败亡"}
+  ]
+}

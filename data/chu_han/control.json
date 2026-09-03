@@ -1,0 +1,14 @@
+{
+  "_comment": "楚汉 control 层（前206—前202）。楚汉战线长期拉锯，荥阳—成皋为 transient 前线；本控制层画前202终局稳定态势（汉据关中/中原，楚据江淮），不把 transient 突入绘成控制权变更。垓下后彭城归汉（end:null 表示此后持续）。",
+  "_years": [-206, -202],
+  "control": [
+    {"place_id": "guanzhong", "party": "汉", "start": -206, "end": -202, "basis": "刘邦就汉王，都南郑，萧何治关中后勤根本", "note": "汉根本之地"},
+    {"place_id": "hanguan", "party": "汉", "start": -206, "end": -202, "basis": "关中东出咽喉，汉控", "note": ""},
+    {"place_id": "xingyang", "party": "汉", "start": -206, "end": -202, "basis": "前202终局汉据中原，前线拉锯不绘入稳定层", "note": "终局态，前线 transient"},
+    {"place_id": "chenggao", "party": "汉", "start": -206, "end": -202, "basis": "前202终局汉据成皋", "note": "终局态，前线 transient"},
+    {"place_id": "pengcheng", "party": "楚", "start": -206, "end": -202, "basis": "项羽都彭城，楚方核心", "note": "楚都"},
+    {"place_id": "pengcheng", "party": "汉", "start": -202, "end": null, "basis": "垓下后楚亡，彭城归汉", "note": "终局归汉"},
+    {"place_id": "gai_xia", "party": "楚", "start": -206, "end": -202, "basis": "楚地，垓下决战所在", "note": ""},
+    {"place_id": "huai_yin", "party": "楚", "start": -206, "end": -202, "basis": "韩信故乡，属楚地", "note": ""}
+  ]
+}

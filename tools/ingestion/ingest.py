@@ -970,21 +970,27 @@ def _register_terrain(spec, scene_dir):
     places = json.load(open(os.path.join(scene_dir, "places.json"), encoding="utf-8")).get("places", [])
     lons = [p["lon"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
     lats = [p["lat"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
-    if lons and lats:
-        margin = 0.5
-        bbox = [min(lons) - margin, min(lats) - margin,
-                max(lons) + margin, max(lats) + margin]
-        bbox_str = ",".join([str(round(v, 2)) for v in bbox])
-        try:
-            subprocess.run([sys.executable, os.path.join(ROOT, "tools", "fetch_terrain.py"),
-                            "--new", spec["id"], "--bbox", bbox_str, "--step", "0.1",
-                            "--label", spec.get("title", spec["id"])],
-                           cwd=ROOT, capture_output=True, check=False)
-            print("[world] 地形网格 %s 注册（not_fetched）" % spec["id"])
-        except Exception as e:
-            print("[warn] 地形注册失败: %s" % e)
-    else:
+    if not (lons and lats):
         print("[warn] 无有效坐标，跳过地形网格注册")
+        return
+    margin = 0.5
+    bbox = [min(lons) - margin, min(lats) - margin,
+            max(lons) + margin, max(lats) + margin]
+    bbox_str = ",".join([str(round(v, 2)) for v in bbox])
+    # WORLD_SKIP_TERRAIN=1：仅注册网格元数据、不联网拉高程。gates 的 300s 单步超时
+    # 会被 OpenTopoData 的公共实例限速/抖动误杀 world-gen smoke；离线 CI 用此开关绕开
+    # 网络时序，真实高程仍由 build / 手动 fetch_terrain 拉取补全（status=not_fetched）。
+    offline = ["--offline"] if os.environ.get("WORLD_SKIP_TERRAIN") == "1" else []
+    if offline:
+        print("[world] WORLD_SKIP_TERRAIN=1，地形仅注册元数据、不联网")
+    try:
+        subprocess.run([sys.executable, os.path.join(ROOT, "tools", "fetch_terrain.py"),
+                        "--new", spec["id"], "--bbox", bbox_str, "--step", "0.1",
+                        "--label", spec.get("title", spec["id"])] + offline,
+                       cwd=ROOT, capture_output=True, check=False)
+        print("[world] 地形网格 %s 注册（not_fetched）" % spec["id"])
+    except Exception as e:
+        print("[warn] 地形注册失败: %s" % e)
 
 
 def _register_scene(spec, scene_dir):

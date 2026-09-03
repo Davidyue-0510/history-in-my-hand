@@ -54,28 +54,18 @@ SCENES_JSON = os.path.join(ROOT, "data", "scenes.json")
 def _cleanup():
     """严格清理：场景目录 + 语境包 + 注销 scenes.json，零残留。
 
-    注意：本沙箱的 sitecustomize 把 shutil.rmtree/os.remove/os.rmdir 对项目内路径
-    路由到 safe-delete（移到回收站或 fail-closed 保留），直接 rmtree 不真删、会留下
-    污染。故先 os.rename（沙箱不拦截）把产物移到项目**外**同盘目录，再在外部
-    shutil.rmtree 真删（项目外路径 safe-delete 放行）。这是既清理干净又不对抗沙箱的做法。
+    就地删除：目录用 shutil.rmtree（对多文件目录有效）；单文件用 os.remove
+    （shutil.rmtree 对单文件静默 no-op）。不走「rename 到工作区外盘根 + 外部批量删」
+    老路——那条会触发 BULK_CONFIRM_REQUIRED 守卫，导致场景目录残留。scenes.json 用
+    json 注销后写回（保留原始格式）。
     """
-    drive = os.path.splitdrive(ROOT)[0] or "E:"
-    _trash = os.path.join(drive + os.sep, "__wtest_trash_%d" % os.getpid())
-    os.makedirs(_trash, exist_ok=True)
-    # os.rename 沙箱不拦截 → 把产物移出 workspace（这一步可靠保证项目内零残留）
     if os.path.isdir(SCENE_DIR):
-        _dst = os.path.join(_trash, "wtest_tmp")
-        if os.path.isdir(_dst):
-            _rmtree_manual(_dst)
-        os.rename(SCENE_DIR, _dst)
+        shutil.rmtree(SCENE_DIR, ignore_errors=True)
     if os.path.exists(VOCAB_PACK):
-        _vdst = os.path.join(_trash, "wtest_tmp.json")
-        if os.path.exists(_vdst):
-            try:
-                os.remove(_vdst)
-            except Exception:
-                pass
-        os.rename(VOCAB_PACK, _vdst)
+        try:
+            os.remove(VOCAB_PACK)
+        except Exception:
+            pass
     if os.path.exists(SCENES_JSON):
         reg = json.load(open(SCENES_JSON, encoding="utf-8"))
         if SCENE in reg.get("scenes", {}):
@@ -85,11 +75,6 @@ def _cleanup():
         json.dump(reg, open(SCENES_JSON, "w", encoding="utf-8"),
                   ensure_ascii=False, indent=1)
         open(SCENES_JSON, "a", encoding="utf-8").write("\n")
-    # 外部整树删除（项目外，safe-delete 放行）。注意：沙箱「批量删除守卫」会拒绝
-    # 对「含多文件的目录」整体 shutil.rmtree，但放行逐文件 os.remove + 空目录 os.rmdir，
-    # 故用 _rmtree_manual 自底向上逐个删。workspace 已靠 rename 干净，此处务必清掉 E:\ 垃圾。
-    if os.path.isdir(_trash):
-        _rmtree_manual(_trash)
 
 
 def _rmtree_manual(path):

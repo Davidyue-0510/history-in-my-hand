@@ -1,11 +1,12 @@
 {
-  "scenes_total": 139,
-  "historical": 130,
+  "scenes_total": 140,
+  "historical": 131,
   "fictional": 9,
-  "assertions_total": 2086,
-  "sources_total": 91,
+  "assertions_total": 2103,
+  "sources_total": 94,
   "factions_total": 9,
   "vocab_packs": [
+    "chu_han",
     "ming_qing",
     "qin_mie_liu_guo",
     "song",
@@ -13,7 +14,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 195,
+  "leads_total": 196,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1036,6 +1037,13 @@
       }
     },
     {
+      "id": "chu_han",
+      "title": "楚汉之争",
+      "kind": "battle",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
       "id": "song_chan_yuan",
       "title": "澶渊之盟",
       "kind": "county",
@@ -1182,6 +1190,7 @@
     "tang_dangzheng": "牛李党争",
     "song_dangzheng": "洛蜀朔党争",
     "donghan_danggu": "党锢之祸",
+    "chu_han": "楚汉之争",
     "song_chan_yuan": "澶渊之盟"
   }
 }

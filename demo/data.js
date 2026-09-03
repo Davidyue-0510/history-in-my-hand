@@ -1,15 +1,16 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 139 个切片
+// 权威数据源：data/scenes.json 注册的 140 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 139 个切片",
+  "slice": "multi-scene · 140 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
+   "chu_han",
    "ming_qing",
    "qin_mie_liu_guo",
    "song",
@@ -386,6 +387,7 @@ window.SANDBOX_DATA = {
   "tang_dangzheng",
   "song_dangzheng",
   "donghan_danggu",
+  "chu_han",
   "song_chan_yuan"
  ],
  "vocab": {
@@ -22987,6 +22989,41 @@ window.SANDBOX_DATA = {
     "inference": 2
    }
   },
+  "chu_han": {
+   "key": "chu_han",
+   "scene_id": "chu_han",
+   "title": "楚汉之争",
+   "dossier_label": "楚汉之争",
+   "subtitle": "前206—前202 · 汉（刘邦） vs 楚（项羽）",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "chu_han.html",
+   "primary_place": "chenggao",
+   "vocab_pack": "chu_han",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin_han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 3,
+    "place": 8,
+    "person": 6,
+    "assert": 17,
+    "conflict": 0,
+    "gap": 1,
+    "record": 16,
+    "scholarship": 0,
+    "inference": 0
+   }
+  },
   "song_chan_yuan": {
    "key": "song_chan_yuan",
    "scene_id": "song_chan_yuan",
@@ -23162,6 +23199,7 @@ window.SANDBOX_DATA = {
   "tang_dangzheng": "slices/tang_dangzheng.js",
   "song_dangzheng": "slices/song_dangzheng.js",
   "donghan_danggu": "slices/donghan_danggu.js",
+  "chu_han": "slices/chu_han.js",
   "song_chan_yuan": "slices/song_chan_yuan.js"
  },
  "corridors": [
@@ -23564,6 +23602,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 19
+   },
+   {
+    "id": "CH015",
+    "scene": "chu_han",
+    "subject": "event:gai_xia",
+    "title": "楚本方原始记载（楚汉之际起居注等）多佚，项羽败亡细节主要经汉方（史记）回溯叙述，楚视角为结构性缺口",
+    "missing": "核《史记·项羽本纪》与汉方叙事的立场偏见 / 比对楚本方亡佚记载的逆推成分",
+    "where": "项羽败亡细节与楚方动机（鸿门不杀、垓下心态）",
+    "skills": [
+     "核《史记·项羽本纪》与汉方叙事的立场偏见",
+     "比对楚本方亡佚记载的逆推成分"
+    ],
+    "accept": "明确汉方（史记）对楚败亡的回溯叙述成分",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
    },
    {
     "id": "DLH012",
@@ -26359,6 +26413,7 @@ window.SANDBOX_DATA = {
     "chibi",
     "chongzhen_han",
     "chongzhen_huangzai",
+    "chu_han",
     "dalinghe",
     "diaoyucheng",
     "dingwu",
@@ -26778,6 +26833,24 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:hz_1637",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "chu_han",
+    "name": "chu_han",
+    "total": 17,
+    "layers": {
+     "record": 16,
+     "gap": 1
+    },
+    "party_counts": {
+     "汉": 16,
+     "二手综述": 1
+    },
+    "faction_counts": {},
+    "event_count": 6,
+    "avg_resonance": 0.0,
+    "best_event": "event:chenggao",
     "best_resonance": 0.0
    },
    {

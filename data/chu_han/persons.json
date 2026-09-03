@@ -1,0 +1,10 @@
+{
+  "persons": [
+    {"id": "liu_bang", "name": "刘邦", "party": "汉", "note": "汉王 / 汉高祖"},
+    {"id": "xiang_yu", "name": "项羽", "party": "楚", "note": "西楚霸王"},
+    {"id": "han_xin", "name": "韩信", "party": "汉", "note": "大将，定三秦、垓下合围"},
+    {"id": "xiao_he", "name": "萧何", "party": "汉", "note": "治关中后勤"},
+    {"id": "zhang_liang", "name": "张良", "party": "汉", "note": "谋臣"},
+    {"id": "fan_zeng", "name": "范增", "party": "楚", "note": "项羽谋主，鸿门劝杀刘邦"}
+  ]
+}

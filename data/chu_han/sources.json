@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "shiji",
+      "title": "史记",
+      "party": "汉·官修",
+      "stance_label": "汉人当代/近当代",
+      "distance_label": "成书汉武帝时，距楚汉约百年",
+      "color": "#B23A48",
+      "compiler": "司马迁（西汉）",
+      "period": "汉",
+      "note": "本纪·高祖本纪、项羽本纪、淮阴侯列传载楚汉之事，汉人叙汉，视角含汉方立场"
+    },
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "高帝纪、韩信传等，东汉官修西汉史"
+    },
+    {
+      "id": "chuhan_lun",
+      "title": "楚汉战争史论",
+      "party": "二手综述",
+      "stance_label": "近现代考订",
+      "distance_label": "现代楚汉战争研究",
+      "color": "#9B7B5A",
+      "compiler": "近现代研究",
+      "period": "现代",
+      "note": "现代综述，可关；楚汉战略定性多据此类研究"
+    }
+  ]
+}

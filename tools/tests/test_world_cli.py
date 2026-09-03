@@ -10,6 +10,7 @@ import sys
 import json
 import shutil
 import subprocess
+import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FIX = os.path.join(HERE, "fixtures")
@@ -60,34 +61,17 @@ def _capture_backup():
 
 
 def _cleanup():
-    drive = os.path.splitdrive(ROOT)[0] or "E:"
-    _trash = os.path.join(drive + os.sep, "__wtest_cli_trash_%d" % os.getpid())
-    os.makedirs(_trash, exist_ok=True)
+    # 就地删除：目录用 shutil.rmtree（对多文件目录有效）；单文件用 os.remove
+    # （shutil.rmtree 对单文件静默 no-op，必须 os.remove）。不走「rename 到工作区外盘根 +
+    # 外部批量删」老路——那条会触发 BULK_CONFIRM_REQUIRED 守卫，导致场景目录残留、闸门误杀。
     if os.path.isdir(SCENE_DIR):
-        _dst = os.path.join(_trash, SCENE)
-        if os.path.isdir(_dst):
+        shutil.rmtree(SCENE_DIR, ignore_errors=True)
+    for p in (VOCAB_PACK, TERRAIN_GRID):
+        if os.path.exists(p):
             try:
-                shutil.rmtree(_dst)
+                os.remove(p)
             except Exception:
                 pass
-        os.rename(SCENE_DIR, _dst)
-    if os.path.exists(VOCAB_PACK):
-        _vdst = os.path.join(_trash, SCENE + ".json")
-        if os.path.exists(_vdst):
-            try:
-                os.remove(_vdst)
-            except Exception:
-                pass
-        os.rename(VOCAB_PACK, _vdst)
-    # 地形网格数据文件（_register_terrain 经 fetch_terrain.py --new 写出）：移入 trash 删除
-    if os.path.exists(TERRAIN_GRID):
-        _gdst = os.path.join(_trash, SCENE + "_grid.json")
-        if os.path.exists(_gdst):
-            try:
-                os.remove(_gdst)
-            except Exception:
-                pass
-        os.rename(TERRAIN_GRID, _gdst)
     # scenes.json / registry.json：原样回写备份（移除 wtest_cli 注册项 + 保留原始格式/换行）
     for p in (SCENES_JSON, TERRAIN_REG):
         if p in _BACKUP and _BACKUP[p] is not None:
@@ -96,8 +80,6 @@ def _cleanup():
                     f.write(_BACKUP[p])
             except Exception:
                 pass
-    if os.path.isdir(_trash):
-        _rmtree_manual(_trash)
 
 
 def check(name, cond):
@@ -112,6 +94,10 @@ def main():
         _capture_backup()  # 备份 scenes.json / registry.json 原始字节，供 cleanup 零漂移回写
         env = dict(os.environ)
         env["WORLD_SKIP_BUILD"] = "1"
+        # 地形联网拉取在 gates 下会被 OpenTopoData 限速抖动误杀（300s 单步超时）。
+        # smoke 仅验证 CLI→抽取→落文件→注册 scenes.json，真实高程由 build/手动 fetch 补全，
+        # 故离线注册网格元数据即可（fetch_terrain --offline），去掉网络时序不确定性。
+        env["WORLD_SKIP_TERRAIN"] = "1"
         rc = subprocess.run([PY, "tools/ingestion/ingest.py", "--world", spec_path],
                             cwd=ROOT, env=env, capture_output=True, text=True)
         out = rc.stdout + rc.stderr

@@ -1,0 +1,12 @@
+{
+  "places": [
+    {"id": "guanzhong", "name": "关中", "lon": 108.9, "lat": 34.3, "type": "region", "note": "汉王刘邦根本之地，萧何治后勤"},
+    {"id": "hanzhong", "name": "汉中", "lon": 107.0, "lat": 33.1, "type": "region", "note": "刘邦就封汉王之所"},
+    {"id": "hanguan", "name": "函谷关", "lon": 111.3, "lat": 34.3, "type": "pass", "note": "关中东出咽喉"},
+    {"id": "xingyang", "name": "荥阳", "lon": 113.36, "lat": 34.72, "type": "city", "note": "成皋相持前线"},
+    {"id": "chenggao", "name": "成皋", "lon": 113.0, "lat": 34.75, "type": "city", "note": "荥阳以东险隘，楚汉拉锯"},
+    {"id": "pengcheng", "name": "彭城", "lon": 117.18, "lat": 34.27, "type": "city", "note": "项羽都，西楚霸王都"},
+    {"id": "gai_xia", "name": "垓下", "lon": 117.3, "lat": 33.53, "type": "city", "note": "项羽败亡决战地（今安徽灵璧）"},
+    {"id": "huai_yin", "name": "淮阴", "lon": 119.0, "lat": 33.5, "type": "city", "note": "韩信故乡（今江苏淮安）"}
+  ]
+}

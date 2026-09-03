@@ -245,6 +245,8 @@ def main():
     ap.add_argument('--step', type=float, default=0.05, help='配合 --new：步长（度）')
     ap.add_argument('--label', default='', help='配合 --new：中文标签')
     ap.add_argument('--dataset', default='aster30m', help='配合 --new：数据集')
+    ap.add_argument('--offline', action='store_true',
+                    help='配合 --new：仅注册网格元数据、不联网拉取（离线/CI 用，status=not_fetched）')
     args = ap.parse_args()
 
     reg = load_registry()
@@ -278,6 +280,13 @@ def main():
         if args.estimate:
             return 0
         args.grid = args.new
+
+    if args.offline and args.new:
+        # 离线/CI：只把网格元数据写进注册表（status=not_fetched），不发起任何联网拉取。
+        # 真实高程由 build / 手动 fetch_terrain 后续补全，避免 gates 300s 单步超时被
+        # 公共实例限速抖动误杀 world-gen smoke。
+        print('offline 模式：仅注册网格 %r 元数据，跳过联网拉取（status=not_fetched）' % args.new)
+        return 0
 
     gid = args.grid or default_grid_id(reg)
     g = get_grid(reg, gid)

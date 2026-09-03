@@ -321,6 +321,7 @@
   "tang_dangzheng",
   "song_dangzheng",
   "donghan_danggu",
+  "chu_han",
   "song_chan_yuan"
  ],
  "scenes": {
@@ -2282,6 +2283,89 @@
      ],
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口（白沟河界、幽蓟门户）"
+    }
+   }
+  },
+  "chu_han": {
+   "kind": "battle",
+   "region": "qin_han",
+   "title": "楚汉之争",
+   "dossier_label": "楚汉之争",
+   "subtitle": "前206—前202 · 汉（刘邦） vs 楚（项羽）",
+   "primary_place": "chenggao",
+   "dossier_event": "event:gai_xia",
+   "vocab_pack": "chu_han",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "楚汉之争（前206—前202）：刘邦据关中，项羽都彭城，争天下。本切片用楚汉语境包（chu_han.json）分桶，与宋/唐切片共用同一套断言内核——差异只在立场语义（汉/楚/后世官修）。地形复用 china_coarse 网格（覆盖关中—中原—江淮全剧场，高程为真，不伪造）。",
+   "parties_note": "楚本方原始记载多佚，项羽事迹主要经汉方（史记）回溯叙述；『楚』桶在来源共振上偏空，结构性缺口在 _party_notes 显式标注。系统不裁决，只并列。",
+   "subject_names": {
+    "event:gai_xia": "垓下之围",
+    "event:hongmen": "鸿门宴",
+    "event:pengcheng": "彭城之战",
+    "person:liu_bang": "刘邦",
+    "person:xiang_yu": "项羽",
+    "person:han_xin": "韩信"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin_han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（汉拜将/联诸侯 vs 楚分封）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；关中漕运→后勤半径"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；长期拉锯的民生代价"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/江淮→战略重心与窗口"
     }
    }
   },

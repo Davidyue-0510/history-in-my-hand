@@ -1,0 +1,10 @@
+{
+  "edges": [
+    {"from": "guanzhong", "to": "hanguan", "type": "admin", "label": "关中—函谷关（东出咽喉）"},
+    {"from": "hanguan", "to": "xingyang", "type": "military", "label": "函谷—荥阳（中原通道）"},
+    {"from": "xingyang", "to": "chenggao", "type": "military", "label": "荥阳—成皋（相持前线）"},
+    {"from": "chenggao", "to": "pengcheng", "type": "military", "label": "成皋—彭城（楚汉战线）"},
+    {"from": "pengcheng", "to": "gai_xia", "type": "military", "label": "彭城—垓下（楚地）"},
+    {"from": "huai_yin", "to": "gai_xia", "type": "military", "label": "淮阴—垓下（韩信出兵）"}
+  ]
+}
