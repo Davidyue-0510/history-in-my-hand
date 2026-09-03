@@ -1,18 +1,19 @@
 {
-  "scenes_total": 138,
-  "historical": 129,
+  "scenes_total": 139,
+  "historical": 130,
   "fictional": 9,
-  "assertions_total": 2070,
-  "sources_total": 87,
+  "assertions_total": 2086,
+  "sources_total": 91,
   "factions_total": 9,
   "vocab_packs": [
     "ming_qing",
     "qin_mie_liu_guo",
+    "song",
     "tang",
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 194,
+  "leads_total": 195,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1033,6 +1034,13 @@
         "qingliu": 1,
         "huanguan": 1
       }
+    },
+    {
+      "id": "song_chan_yuan",
+      "title": "澶渊之盟",
+      "kind": "county",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1173,6 +1181,7 @@
     "mingmo_dangzheng": "明末党争·辽东导火索",
     "tang_dangzheng": "牛李党争",
     "song_dangzheng": "洛蜀朔党争",
-    "donghan_danggu": "党锢之祸"
+    "donghan_danggu": "党锢之祸",
+    "song_chan_yuan": "澶渊之盟"
   }
 }

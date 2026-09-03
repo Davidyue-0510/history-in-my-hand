@@ -320,7 +320,8 @@
   "mingmo_dangzheng",
   "tang_dangzheng",
   "song_dangzheng",
-  "donghan_danggu"
+  "donghan_danggu",
+  "song_chan_yuan"
  ],
  "scenes": {
   "sarhu": {
@@ -2183,6 +2184,104 @@
      ],
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
+    }
+   }
+  },
+  "song_chan_yuan": {
+   "kind": "county",
+   "region": "song",
+   "title": "澶渊之盟",
+   "dossier_label": "澶渊之盟",
+   "subtitle": "景德元年—二年（1004—1005）· 宋辽",
+   "primary_place": "chanzhou",
+   "dossier_event": "event:chanyuan_meng",
+   "vocab_pack": "song",
+   "terrain_grid": "qin_mie_liu_guo",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "宋辽澶渊之盟（1004—1005）：辽圣宗、萧太后大举南侵，兵临澶州；寇准力主真宗渡河亲征，萧挞凛为宋军床子弩射死，辽势挫而议和。本切片用宋辽语境包（song.json）自动分桶，与辽东/唐切片共用同一套断言内核——差异只在立场语义（宋廷/辽廷/后世官修）。地名由 places.json 内联经纬度落点，地形复用已拉取的 qin_mie_liu_guo 网格（同属华北，高程为真，不伪造）。",
+   "parties_note": "宋辽双方当代实录（宋真宗实录/辽耶律俨实录）多亡佚：现存最接近宋本方叙述的是南宋李焘《续资治通鉴长编》（故归『宋廷』桶），而《宋史》《辽史》皆元修（归『后世官修』）。『辽廷』桶在来源共振上几乎为空——辽方南侵动机主要靠宋方叙述逆向推测，这是 song 包在 _party_notes 显式标注的结构性缺口。系统不裁决，只并列。",
+   "subject_names": {
+    "event:liao_nanqin": "辽南侵",
+    "event:kezhun_qincheng": "寇准请亲征",
+    "event:xiaodalian_shi": "萧挞凛中弩",
+    "event:chanyuan_meng": "澶渊之盟",
+    "event:suibi": "岁币之约",
+    "place:bianjing": "汴京",
+    "place:chanzhou": "澶州",
+    "place:nanjing_liao": "南京析津府",
+    "place:yingzhou": "瀛州",
+    "place:mozhou": "莫州",
+    "place:xiongzhou": "雄州",
+    "place:suicheng": "遂城",
+    "person:zhenzong": "宋真宗",
+    "person:kezhun": "寇准",
+    "person:wangqinruo": "王钦若",
+    "person:chenyaoshou": "陈尧叟",
+    "person:bishian": "毕士安",
+    "person:xiaotaihou": "萧太后",
+    "person:liaoshengzong": "辽圣宗",
+    "person:xiaodalianshi": "萧挞凛",
+    "person:yangyanzhao": "杨延昭"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（主战寇准 vs 主和迁都派）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；岁币/漕运→后勤半径"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；边境民生→动员潜力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心与窗口（白沟河界、幽蓟门户）"
     }
    }
   },

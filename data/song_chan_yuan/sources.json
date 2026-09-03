@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "本纪·真宗纪、寇准传载澶渊之事，元人修宋史，视角非宋当代"
+    },
+    {
+      "id": "liaoshi",
+      "title": "辽史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正四年（1344），距事约340年",
+      "color": "#5E6E7C",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "圣宗纪载辽南侵与萧挞凛之死；元修，作者非辽人，不能冒充辽方声音"
+    },
+    {
+      "id": "xzztjcb",
+      "title": "续资治通鉴长编",
+      "party": "宋·私修",
+      "stance_label": "宋人编当代",
+      "distance_label": "成书南宋孝宗淳熙十年（1183），距事约180年，同王朝",
+      "color": "#B23A48",
+      "compiler": "李焘（南宋）",
+      "period": "宋",
+      "note": "编年辑存大量已佚宋档，是离宋本方叙述最近的载体；寇准请亲征、岁币数额多据此"
+    },
+    {
+      "id": "taojinsheng",
+      "title": "宋辽关系史研究",
+      "party": "二手综述",
+      "stance_label": "近现代考订",
+      "distance_label": "陶晋生（20世纪），现代宋辽关系专著",
+      "color": "#9B7B5A",
+      "compiler": "陶晋生",
+      "period": "现代",
+      "note": "现代综述，可关；岁币『以货币换和平』之定性多据此类研究"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "edges": [
+  {"from": "bianjing", "to": "chanzhou", "type": "admin", "label": "汴京—澶州（都城—河北前线）"},
+  {"from": "chanzhou", "to": "xiongzhou", "type": "military", "label": "澶州—雄州（宋河北防线）"},
+  {"from": "xiongzhou", "to": "nanjing_liao", "type": "admin", "label": "雄州—南京析津府（白沟河为宋辽界）"},
+  {"from": "suicheng", "to": "xiongzhou", "type": "military", "label": "遂城—雄州（杨延昭守边）"},
+  {"from": "yingzhou", "to": "mozhou", "type": "admin", "label": "瀛州—莫州（宋河北边防州军）"}
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "places": [
+  {
+   "id": "bianjing",
+   "name": "汴京",
+   "type": "city",
+   "modern": "河南开封",
+   "note": "北宋都城（东京开封府），澶渊之盟决策中枢",
+   "lon": 114.34,
+   "lat": 34.80,
+   "geo_note": "北宋东京，今河南开封"
+  },
+  {
+   "id": "chanzhou",
+   "name": "澶州",
+   "type": "zhou",
+   "modern": "河南濮阳",
+   "note": "澶渊之盟缔结地，黄河北岸宋军前线",
+   "lon": 115.03,
+   "lat": 35.73,
+   "geo_note": "今河南濮阳，黄河北岸"
+  },
+  {
+   "id": "nanjing_liao",
+   "name": "南京析津府",
+   "type": "city",
+   "modern": "北京西南",
+   "note": "辽南京（幽州），辽南进中原的基地",
+   "lon": 116.40,
+   "lat": 39.92,
+   "geo_note": "辽南京，今北京西南（幽州）"
+  },
+  {
+   "id": "yingzhou",
+   "name": "瀛州",
+   "type": "zhou",
+   "modern": "河北河间",
+   "note": "宋河北边防州军，白沟河南宋界",
+   "lon": 116.00,
+   "lat": 38.52,
+   "geo_note": "今河北河间"
+  },
+  {
+   "id": "mozhou",
+   "name": "莫州",
+   "type": "zhou",
+   "modern": "河北任丘",
+   "note": "宋河北边防州军",
+   "lon": 116.05,
+   "lat": 38.95,
+   "geo_note": "今河北任丘"
+  },
+  {
+   "id": "xiongzhou",
+   "name": "雄州",
+   "type": "zhou",
+   "modern": "河北雄县",
+   "note": "宋河北最北边防（白沟河为宋辽界），塘泺阻骑",
+   "lon": 116.10,
+   "lat": 39.05,
+   "geo_note": "今河北雄县，白沟河界"
+  },
+  {
+   "id": "suicheng",
+   "name": "遂城",
+   "type": "jun",
+   "modern": "河北徐水",
+   "note": "杨延昭（杨六郎）守城拒辽，号『铁遂城』",
+   "lon": 115.67,
+   "lat": 39.13,
+   "geo_note": "今河北徐水"
+  }
+ ],
+ "rivers": [
+  {"id": "yellow_river_song", "name": "黄河（宋河道）", "note": "澶州段为宋河北防线，辽军至北岸而止"}
+ ],
+ "wall": []
+}

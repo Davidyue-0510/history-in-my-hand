@@ -1,17 +1,18 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 138 个切片
+// 权威数据源：data/scenes.json 注册的 139 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 138 个切片",
+  "slice": "multi-scene · 139 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "ming_qing",
    "qin_mie_liu_guo",
+   "song",
    "tang",
    "three_campaigns"
   ]
@@ -384,7 +385,8 @@ window.SANDBOX_DATA = {
   "mingmo_dangzheng",
   "tang_dangzheng",
   "song_dangzheng",
-  "donghan_danggu"
+  "donghan_danggu",
+  "song_chan_yuan"
  ],
  "vocab": {
   "layers": [
@@ -22984,6 +22986,41 @@ window.SANDBOX_DATA = {
     "scholarship": 3,
     "inference": 2
    }
+  },
+  "song_chan_yuan": {
+   "key": "song_chan_yuan",
+   "scene_id": "song_chan_yuan",
+   "title": "澶渊之盟",
+   "dossier_label": "澶渊之盟",
+   "subtitle": "景德元年—二年（1004—1005）· 宋辽",
+   "kind": "county",
+   "region": "song",
+   "page": "county.html?scene=song_chan_yuan",
+   "primary_place": "chanzhou",
+   "vocab_pack": "song",
+   "terrain_grid": "qin_mie_liu_guo",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 4,
+    "place": 7,
+    "person": 9,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 14,
+    "scholarship": 1,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -23124,7 +23161,8 @@ window.SANDBOX_DATA = {
   "mingmo_dangzheng": "slices/mingmo_dangzheng.js",
   "tang_dangzheng": "slices/tang_dangzheng.js",
   "song_dangzheng": "slices/song_dangzheng.js",
-  "donghan_danggu": "slices/donghan_danggu.js"
+  "donghan_danggu": "slices/donghan_danggu.js",
+  "song_chan_yuan": "slices/song_chan_yuan.js"
  },
  "corridors": [
   {
@@ -25433,6 +25471,22 @@ window.SANDBOX_DATA = {
     "_src_line": 48
    },
    {
+    "id": "SC016",
+    "scene": "song_chan_yuan",
+    "subject": "event:liao_nanqin",
+    "title": "宋方叙事多称辽为『虏』掠边、萧太后主战；辽本方南侵动机（萧太后主战之国内考量、需战胜以固权）无当代辽档可核，现有叙述皆宋…",
+    "missing": "核《辽史·圣宗纪》与《契丹国志》 / 比对宋方『虏掠』叙述的立场偏见",
+    "where": "辽南侵的战略动机（掠地 vs 迫增币 vs 固权）",
+    "skills": [
+     "核《辽史·圣宗纪》与《契丹国志》",
+     "比对宋方『虏掠』叙述的立场偏见"
+    ],
+    "accept": "明确宋方叙述对辽动机的逆向推测成分",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 16
+   },
+   {
     "id": "LS_GAP1",
     "scene": "song_dangzheng",
     "subject": "event:ls_1086",
@@ -26374,6 +26428,7 @@ window.SANDBOX_DATA = {
     "shaqiu",
     "shenkuo",
     "shenyang",
+    "song_chan_yuan",
     "song_dangzheng",
     "song_he_jue",
     "songjin",
@@ -28072,6 +28127,26 @@ window.SANDBOX_DATA = {
     "avg_resonance": 0.387,
     "best_event": "event:shenyang_relief",
     "best_resonance": 0.825
+   },
+   {
+    "scene": "song_chan_yuan",
+    "name": "song_chan_yuan",
+    "total": 16,
+    "layers": {
+     "record": 14,
+     "scholarship": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "宋廷": 5,
+     "后世官修": 10,
+     "综述考订": 1
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:chanyuan_meng",
+    "best_resonance": 0.0
    },
    {
     "scene": "song_dangzheng",

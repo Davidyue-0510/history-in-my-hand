@@ -1,0 +1,13 @@
+{
+  "_comment": "宋辽澶渊之盟实际控制态势（场景级控制权数据）。每 segment 表示某 place_id 在 [start,end] 年间由某 party 实际控制；end=null 表示持续至今（本场景时间窗 1005 之后）。party 取自本场景语境包 song 的 parties（宋廷/辽廷/后世官修/综述考订）；控制权事实为物理占领，故只用「宋廷」「辽廷」两桶，立场/后世官修桶不进入控制层。控制权事实据《宋史·真宗纪》《辽史·圣宗纪》《续资治通鉴长编》编年：辽南京（幽州）为辽南进基地、长期属辽；宋以白沟河（雄州—南京析津府一线）为河北北界，瀛/莫/雄/遂城等河北边防州军属宋，澶州为黄河北岸前线、汴京为都城，皆宋土。注：1004 辽圣宗萧太后南侵曾突入河北、兵临澶州北岸，但属 transient 突入而非长期占领，盟约（1005）后仍以白沟河旧界罢兵——本控制层表现的是长期稳定边界（劫掠未改疆界），不把 transient 突入绘成控制权变更，以免与史实疆界错位。",
+  "_years": [1004, 1005],
+  "control": [
+    {"place_id": "bianjing", "party": "宋廷", "start": 1004, "end": null, "basis": "北宋都城东京开封府，澶渊之盟决策中枢", "note": "都城，稳定属宋"},
+    {"place_id": "chanzhou", "party": "宋廷", "start": 1004, "end": null, "basis": "澶州为宋黄河北岸前线，辽军 1004 至北岸未固守", "note": "盟约缔结地，长期属宋"},
+    {"place_id": "yingzhou", "party": "宋廷", "start": 1004, "end": null, "basis": "瀛州为宋河北边防州军，白沟河南", "note": ""},
+    {"place_id": "mozhou", "party": "宋廷", "start": 1004, "end": null, "basis": "莫州为宋河北边防州军", "note": ""},
+    {"place_id": "xiongzhou", "party": "宋廷", "start": 1004, "end": null, "basis": "雄州为宋河北最北边防，白沟河即宋辽界", "note": "塘泺阻骑"},
+    {"place_id": "suicheng", "party": "宋廷", "start": 1004, "end": null, "basis": "遂城杨延昭守，拒辽，号铁遂城", "note": ""},
+    {"place_id": "nanjing_liao", "party": "辽廷", "start": 1004, "end": null, "basis": "南京析津府（幽州）为辽南进基地，长期属辽", "note": "幽蓟十六州之一"}
+  ]
+}

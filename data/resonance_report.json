@@ -94,6 +94,7 @@
       "shaqiu",
       "shenkuo",
       "shenyang",
+      "song_chan_yuan",
       "song_dangzheng",
       "song_he_jue",
       "songjin",
@@ -1792,6 +1793,26 @@
       "avg_resonance": 0.387,
       "best_event": "event:shenyang_relief",
       "best_resonance": 0.825
+    },
+    {
+      "scene": "song_chan_yuan",
+      "name": "song_chan_yuan",
+      "total": 16,
+      "layers": {
+        "record": 14,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "宋廷": 5,
+        "后世官修": 10,
+        "综述考订": 1
+      },
+      "faction_counts": {},
+      "event_count": 5,
+      "avg_resonance": 0.0,
+      "best_event": "event:chanyuan_meng",
+      "best_resonance": 0.0
     },
     {
       "scene": "song_dangzheng",
@@ -3718,6 +3739,37 @@
       ],
       "scene_names": [
         "canhebei"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:chanyuan_meng",
+      "name": "event:chanyuan_meng",
+      "scenes": [
+        "song_chan_yuan"
+      ],
+      "scene_names": [
+        "song_chan_yuan"
       ],
       "total": 2,
       "gap_count": 0,
@@ -7513,6 +7565,37 @@
       }
     },
     {
+      "subject": "event:kezhun_qincheng",
+      "name": "event:kezhun_qincheng",
+      "scenes": [
+        "song_chan_yuan"
+      ],
+      "scene_names": [
+        "song_chan_yuan"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:kf_1642a",
       "name": "event:kf_1642a",
       "scenes": [
@@ -8211,6 +8294,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.333,
       "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:liao_nanqin",
+      "name": "event:liao_nanqin",
+      "scenes": [
+        "song_chan_yuan"
+      ],
+      "scene_names": [
+        "song_chan_yuan"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -9592,6 +9706,46 @@
       }
     },
     {
+      "subject": "event:suibi",
+      "name": "event:suibi",
+      "scenes": [
+        "song_chan_yuan"
+      ],
+      "scene_names": [
+        "song_chan_yuan"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SC013",
+            "predicate": "息兵百年",
+            "value_text": "岁币换和平，河北沿边罢戍减兵，中原得息兵戈，宋辽间维持逾百年无大戰",
+            "source": "taojinsheng",
+            "layer": "scholarship",
+            "scene": "song_chan_yuan"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:sy_1641",
       "name": "event:sy_1641",
       "scenes": [
@@ -10903,6 +11057,37 @@
         "xinhai"
       ],
       "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:xiaodalian_shi",
+      "name": "event:xiaodalian_shi",
+      "scenes": [
+        "song_chan_yuan"
+      ],
+      "scene_names": [
+        "song_chan_yuan"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,

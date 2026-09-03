@@ -2244,6 +2244,22 @@
    "_src_line": 48
   },
   {
+   "id": "SC016",
+   "scene": "song_chan_yuan",
+   "subject": "event:liao_nanqin",
+   "title": "宋方叙事多称辽为『虏』掠边、萧太后主战；辽本方南侵动机（萧太后主战之国内考量、需战胜以固权）无当代辽档可核，现有叙述皆宋…",
+   "missing": "核《辽史·圣宗纪》与《契丹国志》 / 比对宋方『虏掠』叙述的立场偏见",
+   "where": "辽南侵的战略动机（掠地 vs 迫增币 vs 固权）",
+   "skills": [
+    "核《辽史·圣宗纪》与《契丹国志》",
+    "比对宋方『虏掠』叙述的立场偏见"
+   ],
+   "accept": "明确宋方叙述对辽动机的逆向推测成分",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "LS_GAP1",
    "scene": "song_dangzheng",
    "subject": "event:ls_1086",

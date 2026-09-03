@@ -1,0 +1,49 @@
+{
+ "events": [
+  {
+   "id": "ev_liao_nanqin",
+   "subject": "event:liao_nanqin",
+   "year": 1004,
+   "era": "景德元年闰九月",
+   "title": "辽圣宗萧太后南侵",
+   "kind": "战事",
+   "text": "辽圣宗、萧太后以萧挞凛为统军，大举南下，破宋河北数州军，进围澶州，兵锋直指黄河。"
+  },
+  {
+   "id": "ev_kezhun_qincheng",
+   "subject": "event:kezhun_qincheng",
+   "year": 1004,
+   "era": "景德元年十一月",
+   "title": "寇准请真宗亲征",
+   "kind": "政治",
+   "text": "辽深入，王钦若请迁都金陵、陈尧叟请迁都成都；宰相寇准力主真宗渡河亲征，谓『不过河则人心危』。"
+  },
+  {
+   "id": "ev_xiaodalian_shi",
+   "subject": "event:xiaodalian_shi",
+   "year": 1004,
+   "era": "景德元年十一月",
+   "title": "萧挞凛中弩死",
+   "kind": "战事",
+   "text": "辽统军萧挞凛巡营至澶州城下，为宋军床子弩射杀，辽势顿挫，南侵之志稍沮。"
+  },
+  {
+   "id": "ev_chanyuan_meng",
+   "subject": "event:chanyuan_meng",
+   "year": 1005,
+   "era": "景德元年十二月（二年正月）",
+   "title": "澶渊之盟",
+   "kind": "外交",
+   "text": "宋辽约为兄弟之国，宋岁遗辽银十万两、绢二十万匹，以白沟河为界，罢兵通好。"
+  },
+  {
+   "id": "ev_suibi",
+   "subject": "event:suibi",
+   "year": 1005,
+   "era": "景德二年",
+   "title": "岁币之约",
+   "kind": "制度",
+   "text": "盟约既定，宋于岁输银绢，河北沿边罢戍减兵，中原得息兵戈百年。"
+  }
+ ]
+}

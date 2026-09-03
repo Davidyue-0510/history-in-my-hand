@@ -1,0 +1,13 @@
+{
+ "persons": [
+  {"id": "zhenzong", "name": "宋真宗", "role": "北宋皇帝（赵恒）", "note": "澶渊之盟时在位，初惧辽，终从寇准议亲征"},
+  {"id": "kezhun", "name": "寇准", "role": "宰相·同平章事", "note": "主战派核心，力请真宗渡河亲征，促成盟成而止损"},
+  {"id": "wangqinruo", "name": "王钦若", "role": "参知政事", "note": "主和，请迁都金陵避辽锋"},
+  {"id": "chenyaoshou", "name": "陈尧叟", "role": "签书枢密院事", "note": "主和，请迁都成都"},
+  {"id": "bishian", "name": "毕士安", "role": "宰相", "note": "与寇准同主战，荐寇准并辅政"},
+  {"id": "xiaotaihou", "name": "萧太后", "role": "辽承天皇太后（萧绰）", "note": "辽实际掌权者，决策南侵"},
+  {"id": "liaoshengzong", "name": "辽圣宗", "role": "辽皇帝（耶律隆绪）", "note": "萧太后子，南侵之役在位"},
+  {"id": "xiaodalianshi", "name": "萧挞凛", "role": "辽统军", "note": "南侵前军主将，澶州城下中弩死"},
+  {"id": "yangyanzhao", "name": "杨延昭", "role": "保州缘边都巡检使", "note": "守遂城拒辽，时号杨六郎"}
+ ]
+}

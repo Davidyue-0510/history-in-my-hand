@@ -97,6 +97,7 @@
 | shaqiu | 11 | 2 | **0.000** | event:sq_210（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
 | shenkuo | 11 | 2 | **0.000** | event:sk_1072（0.000） | gap 1 / record 8 / scholarship 2 |
 | shenyang | 62 | 6 | **0.387** | event:shenyang_relief（0.825） | gap 4 / inference 1 / record 55 / scholarship 2 |
+| song_chan_yuan | 16 | 5 | **0.000** | event:chanyuan_meng（0.000） | gap 1 / record 14 / scholarship 1 |
 | song_dangzheng | 7 | 3 | **0.000** | event:ls_1086（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | song_he_jue | 14 | 3 | **0.000** | event:hj_1019（0.000） | gap 1 / inference 3 / record 7 / scholarship 3 |
 | songjin | 15 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 12 / scholarship 1 |
@@ -207,6 +208,7 @@
 | event:ch_jz | canhebei | **0.000** | 0/3 | 0.00 | 0.30 | 10 | 0 / 0 / 0 / 0 |
 | event:ch_wei | canhebei | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ch_yan | canhebei | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:chanyuan_meng | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:cp_chu | chengpu | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:cp_jin | chengpu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:cp_jz | changping/chengpu | **0.000** | 0/3 | 0.25 | 0.29 | 7 | 0 / 0 / 0 / 0 |
@@ -328,6 +330,7 @@
 | event:jz_1722 | jiuzi | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jz_753 | jianzhen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:kezhun_qincheng | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:kf_1642a | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kf_1642b | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kf_1643 | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -351,6 +354,7 @@
 | event:li_1641 | little_ice | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:li_1644 | little_ice | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:liao_nanqin | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ll_17 | lvlin | **0.000** | 0/3 | 0.00 | 0.33 | 6 | 0 / 0 / 0 / 0 |
 | event:ll_23 | lvlin | **0.000** | 0/3 | 0.00 | 0.18 | 11 | 0 / 0 / 0 / 0 |
 | event:lq_214 | lingqu | **0.000** | 0/3 | 0.00 | 0.20 | 10 | 0 / 0 / 0 / 0 |
@@ -395,6 +399,7 @@
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:suibi | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 1 |
 | event:sy_1641 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_1643 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sy_1644 | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -438,6 +443,7 @@
 | event:xh_1010 | xinhai | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:xh_1912 | xinhai | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:xh_res | xinhai | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:xiaodalian_shi | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:xw_493 | xiaowen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:xw_494 | xiaowen | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:xw_496 | xiaowen | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
