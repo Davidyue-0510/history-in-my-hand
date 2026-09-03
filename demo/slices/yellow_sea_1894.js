@@ -642,6 +642,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "YEL_015"
  ],

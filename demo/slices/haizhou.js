@@ -449,6 +449,7 @@ window.SANDBOX_SLICES["haizhou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "H010",
   "H011"

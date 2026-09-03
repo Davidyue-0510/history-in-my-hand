@@ -557,6 +557,7 @@ window.SANDBOX_SLICES["guiling"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "GUILINGG01"
  ],

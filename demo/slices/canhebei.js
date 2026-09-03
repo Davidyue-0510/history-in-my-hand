@@ -554,6 +554,7 @@ window.SANDBOX_SLICES["canhebei"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX009_M21",
   "CANHEBEIG01",

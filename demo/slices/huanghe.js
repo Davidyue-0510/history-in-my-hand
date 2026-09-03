@@ -325,6 +325,7 @@ window.SANDBOX_SLICES["huanghe"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

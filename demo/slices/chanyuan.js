@@ -482,6 +482,7 @@ window.SANDBOX_SLICES["chanyuan"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M26",
   "CHANYUANG01"

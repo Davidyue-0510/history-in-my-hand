@@ -1,0 +1,15 @@
+{
+  "id": "wtest_cli",
+  "title": "CLI 冒烟场景",
+  "kind": "county",
+  "region": "liaodong",
+  "source": {
+    "id": "wt_src",
+    "title": "测试史料",
+    "party": "明方",
+    "color": "#8C6239",
+    "period": "明",
+    "note": "离线测试 fixture"
+  },
+  "llm_fixture": "world_fixture.json"
+}

@@ -560,6 +560,7 @@ window.SANDBOX_SLICES["chengpu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M7",
   "CHENGPUG01",

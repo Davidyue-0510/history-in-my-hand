@@ -523,6 +523,7 @@ window.SANDBOX_SLICES["maling"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "MALINGG01"
  ],

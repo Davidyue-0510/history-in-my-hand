@@ -1444,6 +1444,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "K025",
   "K029"

@@ -553,6 +553,7 @@ window.SANDBOX_SLICES["grand_canal"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "GRAND_CANALG01"
  ],

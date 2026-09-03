@@ -414,6 +414,7 @@ window.SANDBOX_SLICES["jianzhen"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "JIANZHENG01"
  ],

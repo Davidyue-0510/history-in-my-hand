@@ -403,6 +403,7 @@ window.SANDBOX_SLICES["huaxian"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX006_M64",
   "HUAXIANG01"

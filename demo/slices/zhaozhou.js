@@ -458,6 +458,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "ZHAOZHOUG01"
  ],

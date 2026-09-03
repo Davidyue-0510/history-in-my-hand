@@ -467,6 +467,7 @@ window.SANDBOX_SLICES["locust"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "LOCUSTG01"
  ],

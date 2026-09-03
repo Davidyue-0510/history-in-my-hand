@@ -411,6 +411,7 @@ window.SANDBOX_SLICES["sui_daxing"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SUI_DAXINGG01"
  ],

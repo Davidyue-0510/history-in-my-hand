@@ -612,6 +612,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "TH012"
  ],

@@ -427,6 +427,7 @@ window.SANDBOX_SLICES["shenkuo"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "SHENKUOG01"
  ],

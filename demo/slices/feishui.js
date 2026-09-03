@@ -482,6 +482,7 @@ window.SANDBOX_SLICES["feishui"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "FS009",
   "FEISHUIG01"

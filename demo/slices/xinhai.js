@@ -483,6 +483,7 @@ window.SANDBOX_SLICES["xinhai"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "XINHAIG01"
  ],

@@ -555,6 +555,7 @@ window.SANDBOX_SLICES["poyanghu"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "PY011",
   "POYANGHUG01"

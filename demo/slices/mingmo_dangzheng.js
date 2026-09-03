@@ -1011,6 +1011,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "DZ014",
   "DZG01"

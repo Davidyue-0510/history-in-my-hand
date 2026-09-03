@@ -412,6 +412,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

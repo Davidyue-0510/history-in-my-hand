@@ -1396,6 +1396,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "N010",
   "N011"

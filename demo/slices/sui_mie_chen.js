@@ -420,6 +420,7 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SUI_MIE_CHENG01"
  ],

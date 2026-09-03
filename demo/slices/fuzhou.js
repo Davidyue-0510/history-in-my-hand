@@ -377,6 +377,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "FZ010",
   "FZ011"

@@ -528,6 +528,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M5"
  ],

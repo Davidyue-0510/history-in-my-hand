@@ -593,6 +593,7 @@ window.SANDBOX_SLICES["huangchao"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "HUANGCHAOG01",
   "HC_GAP1"

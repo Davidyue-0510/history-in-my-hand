@@ -447,6 +447,7 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX008_M61",
   "DONG_HAN_YIG01"

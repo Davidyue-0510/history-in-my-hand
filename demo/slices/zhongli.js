@@ -481,6 +481,7 @@ window.SANDBOX_SLICES["zhongli"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX009_M23",
   "ZHONGLIG01"

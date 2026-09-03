@@ -408,6 +408,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

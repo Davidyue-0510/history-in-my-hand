@@ -575,6 +575,7 @@ window.SANDBOX_SLICES["boju"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "BOJUG01"
  ],

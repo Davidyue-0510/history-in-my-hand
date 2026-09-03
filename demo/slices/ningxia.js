@@ -650,6 +650,7 @@ window.SANDBOX_SLICES["ningxia"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "NXG01"
  ],

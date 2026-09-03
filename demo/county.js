@@ -1215,6 +1215,48 @@
     document.getElementById('conflictCount').textContent = live + ' / ' + D.conflicts.length;
     document.getElementById('tabDot').style.display = live ? '' : 'none';
   }
+
+  /* ═══════════ 跨源融合冲突（多源 world 专属）═══════════ */
+  /* 与上方「自动发现冲突」(build_conflicts = 同场景断言间矛盾) 是两套不同来源：
+     这里是 generate_world_multi 的跨源检测——不同史料（_source_idx）对同一
+     (subject, predicate) 给出不同 value_text，标记为 _cross_conflicts。
+     数据层由 tools/ingestion/build.py 的 build_cross_conflicts 汇总进 D.crossConflicts。 */
+  function renderCrossConflicts() {
+    var box = document.getElementById('crossConflictList'); if (!box) return;
+    var list = D.crossConflicts || [];
+    document.getElementById('crossConflictCount').textContent = list.length;
+    box.innerHTML = '';
+    if (!list.length) {
+      box.innerHTML = '<div class="empty-hint">本切片无跨源融合冲突（单源场景，' +
+        '或各源对同一事实说法一致）。</div>';
+      return;
+    }
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c];
+      });
+    }
+    var pcolors = (typeof VOCAB !== 'undefined' && VOCAB.party_colors) || {};
+    list.forEach(function (c) {
+      var va = c.a.value == null ? String(c.a.value_text == null ? '' : c.a.value_text) : String(c.a.value);
+      var vb = c.b.value == null ? String(c.b.value_text == null ? '' : c.b.value_text) : String(c.b.value);
+      var pa = c.a.party || '未知', pb = c.b.party || '未知';
+      var ca = pcolors[pa] || '#8C6239', cb = pcolors[pb] || '#7B5C3E';
+      var n = document.createElement('div');
+      n.className = 'cf';
+      n.innerHTML = '<div class="cf-top"><span class="cf-sub">' + esc(subjectName(c.subject)) +
+        ' · ' + esc(c.predicate) + '</span></div>' +
+        '<div class="cf-kind">跨源冲突：' + esc(pa) + '　vs　' + esc(pb) + '</div>' +
+        '<div class="cf-vals">' +
+        '<span class="cf-chip" style="--cc:' + ca + '">' + esc(va.slice(0, 24)) + '</span>' +
+        '<span class="cf-chip" style="--cc:' + cb + '">' + esc(vb.slice(0, 24)) + '</span>' +
+        '</div>';
+      box.appendChild(n);
+    });
+    // 有跨源冲突也让 conflict tab 的提醒点显示
+    var dot = document.getElementById('tabDot');
+    if (dot) dot.style.display = '';
+  }
   /* ═══════════ 研究线索（gap 的闭环）═══════════ */
   /* 缺口不该只是界面上一个灰点。每条 gap 断言携带 lead 块（缺什么 / 去哪找 /
      需要什么技能 / 验收标准），tools/leads.py 汇总成 data/leads.json，
@@ -2152,7 +2194,7 @@
     renderDimCoverage();
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
     renderSiblings(); drawDynamic();
-    renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderLeads(); renderWarCourt(); renderInspect();
+    renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderCrossConflicts(); renderLeads(); renderWarCourt(); renderInspect();
     var vis = visibleAssertions().length;
     document.getElementById('statVisible').textContent = vis;
   }

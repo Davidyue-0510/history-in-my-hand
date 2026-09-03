@@ -522,6 +522,7 @@ window.SANDBOX_SLICES["humen"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "HUMENG01"
  ],

@@ -637,6 +637,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "QIN_013",
   "QIN_014"

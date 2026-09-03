@@ -491,6 +491,7 @@ window.SANDBOX_SLICES["dingwu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "DINGWUG01"
  ],

@@ -493,6 +493,7 @@ window.SANDBOX_SLICES["song_he_jue"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SONG_HE_JUEG01"
  ],

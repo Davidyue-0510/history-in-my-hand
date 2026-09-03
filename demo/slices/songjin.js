@@ -789,6 +789,7 @@ window.SANDBOX_SLICES["songjin"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SJ015"
  ],

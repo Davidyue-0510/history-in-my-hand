@@ -382,6 +382,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "DH_GAP1"
  ],

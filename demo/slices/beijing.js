@@ -570,6 +570,7 @@ window.SANDBOX_SLICES["beijing"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "BJG01"
  ],

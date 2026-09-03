@@ -476,6 +476,7 @@ window.SANDBOX_SLICES["wanganshi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX006_M45",
   "WANGANSHIG01"

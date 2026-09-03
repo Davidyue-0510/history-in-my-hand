@@ -307,6 +307,7 @@ window.SANDBOX_SLICES["baijia"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "BAIJIAG01"
  ],

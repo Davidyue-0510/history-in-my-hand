@@ -550,6 +550,7 @@ window.SANDBOX_SLICES["caishiji"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "CAISHIJIG01"
  ],

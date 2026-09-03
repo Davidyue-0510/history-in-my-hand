@@ -975,6 +975,7 @@ window.SANDBOX_SLICES["imjin"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "IJ016",
   "IJ017"

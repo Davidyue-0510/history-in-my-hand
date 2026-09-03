@@ -2078,6 +2078,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "S021",
   "S022",

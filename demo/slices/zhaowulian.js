@@ -412,6 +412,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "ZHAOWULIANG01"
  ],

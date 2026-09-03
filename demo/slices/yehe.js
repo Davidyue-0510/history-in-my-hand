@@ -408,6 +408,7 @@ window.SANDBOX_SLICES["yehe"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "Y010",
   "Y011"

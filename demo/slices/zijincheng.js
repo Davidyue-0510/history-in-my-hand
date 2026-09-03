@@ -418,6 +418,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX008_M69",
   "ZIJINCHENGG01"

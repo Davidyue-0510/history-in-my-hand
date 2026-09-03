@@ -505,6 +505,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "YAOSHANG01"
  ],

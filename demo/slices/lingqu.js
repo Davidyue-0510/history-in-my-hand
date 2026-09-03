@@ -447,6 +447,7 @@ window.SANDBOX_SLICES["lingqu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX009_M49",
   "LINGQUG01"

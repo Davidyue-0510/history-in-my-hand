@@ -520,6 +520,7 @@ window.SANDBOX_SLICES["wangmang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "WANGMANGG01"
  ],

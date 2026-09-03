@@ -597,6 +597,7 @@ window.SANDBOX_SLICES["huangjin"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M37",
   "HUANGJING01",

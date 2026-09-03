@@ -544,6 +544,7 @@ window.SANDBOX_SLICES["tumu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "TM012"
  ],

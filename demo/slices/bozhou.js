@@ -604,6 +604,7 @@ window.SANDBOX_SLICES["bozhou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "BZG01"
  ],

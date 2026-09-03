@@ -461,6 +461,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "N11",
   "N12"

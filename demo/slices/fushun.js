@@ -779,6 +779,7 @@ window.SANDBOX_SLICES["fushun"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "F010",
   "F011"

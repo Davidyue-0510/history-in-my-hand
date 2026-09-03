@@ -500,6 +500,7 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "XIAOYAOJING01"
  ],

@@ -634,6 +634,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M12",
   "HESHANGYUANG01",

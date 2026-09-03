@@ -470,6 +470,7 @@ window.SANDBOX_SLICES["hongjin"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "HONGJING01"
  ],

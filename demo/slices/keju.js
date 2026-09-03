@@ -497,6 +497,7 @@ window.SANDBOX_SLICES["keju"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M24",
   "KEJUG01"

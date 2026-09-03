@@ -144,6 +144,48 @@ def build_conflicts(assertions):
     return conflicts
 
 
+def build_cross_conflicts(assertions):
+    """多源融合冲突：同 (subject, predicate) 下、不同 _source_idx 的断言给出不同
+    value_text → 成对冲突。与 build_conflicts（同场景断言间矛盾）互补：这里是
+    **跨源**（不同史料）对同一事实说法不一，前端单列「多源冲突」面板呈现。
+    断言级 _cross_conflicts 由 ingest.generate_world_multi 写入 assertions.jsonl。"""
+    pair_items = defaultdict(list)
+    for a in assertions:
+        if a.get("layer") == "gap":
+            continue
+        if "_cross_conflicts" not in a:
+            continue
+        pair_items[(a["subject"], a["predicate"])].append(a)
+    out = []
+    seen = set()
+    for (subject, predicate), items in pair_items.items():
+        for i in range(len(items)):
+            for j in range(i + 1, len(items)):
+                a, b = items[i], items[j]
+                if a.get("_source_idx") == b.get("_source_idx"):
+                    continue
+                key = tuple(sorted([a["id"], b["id"]]))
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append({
+                    "id": "xc:%s|%s|%s" % (subject, predicate, a["id"]),
+                    "subject": subject,
+                    "predicate": predicate,
+                    "a": {
+                        "assertion_id": a["id"], "source": a.get("source"),
+                        "party": a.get("_party"), "value_text": a.get("value_text"),
+                        "value": a.get("value"), "layer": a.get("layer"),
+                    },
+                    "b": {
+                        "assertion_id": b["id"], "source": b.get("source"),
+                        "party": b.get("_party"), "value_text": b.get("value_text"),
+                        "value": b.get("value"), "layer": b.get("layer"),
+                    },
+                })
+    return out
+
+
 def _auto_simulate(sc, dirpath, timelines):
     """v0.33 自动推演：为非主线分支生成 control_sim JSON。"""
     import json as _json
@@ -288,6 +330,7 @@ def build_scene(sc):
         "persons": persons["persons"],
         "assertions": assertions,
         "conflicts": build_conflicts(assertions),
+        "crossConflicts": build_cross_conflicts(assertions),
         "gaps": [a["id"] for a in assertions if a.get("layer") == "gap"],
     }
 
@@ -338,10 +381,11 @@ def build_scene(sc):
                                "lon": p["lon"], "lat": p["lat"],
                                "region": sc.get("region")}
         bundle["control_seats"] = list(seats2.values())
-        bundle["control_years"] = ctrl_blob.get("_years") or [
-            min(c["start"] for c in ctrl if isinstance(c.get("start"), int)),
-            max(c["end"] for c in ctrl if isinstance(c.get("end"), int)),
-        ]
+        _starts = [c["start"] for c in ctrl if isinstance(c.get("start"), int)]
+        _ends = [c["end"] for c in ctrl if isinstance(c.get("end"), int)]
+        bundle["control_years"] = ctrl_blob.get("_years") or (
+            [min(_starts), max(_ends)] if _starts and _ends else None
+        )
     elif sc.get("region") not in LIAODONG_REGIONS:
         bundle["control"] = []  # 显式空：前端据此隐藏控制层
 

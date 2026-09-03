@@ -495,6 +495,7 @@ window.SANDBOX_SLICES["gaixia"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "GAIXIAG01"
  ],

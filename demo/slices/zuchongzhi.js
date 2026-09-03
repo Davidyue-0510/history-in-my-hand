@@ -437,6 +437,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX009_M28",
   "ZUCHONGZHIG01"

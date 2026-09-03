@@ -516,6 +516,7 @@ window.SANDBOX_SLICES["wugu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "WUGUG01"
  ],

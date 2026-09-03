@@ -981,9 +981,14 @@ def _register_scene(spec, scene_dir):
 
 
 def _run_build_and_gates(scene_id):
-    """重编译 + 跑全闸门（--world / --multi 共用收尾）。返回 exit code。"""
+    """重编译 + 跑全闸门（--world / --multi 共用收尾）。返回 exit code。
+    设 WORLD_SKIP_BUILD=1 可跳过 build+gates——仅验证「CLI 入口 → 抽取 → 落文件 →
+    注册」链路（CLI 级 smoke test 用，避免每次污染 demo/ 与整库重 build）。"""
+    if os.environ.get("WORLD_SKIP_BUILD") == "1":
+        print("[world] WORLD_SKIP_BUILD=1，跳过 build+gates（仅抽取+注册已验证）")
+        return 0
     print("[world] 重编译 + 跑全闸门...")
-    rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "build.py")],
+    rc = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "ingestion", "build.py")],
                        cwd=ROOT, capture_output=True)
     if rc.returncode != 0:
         print("[FAIL] build 失败:\n" + rc.stderr.decode("utf-8", "replace")[:500])
@@ -1244,11 +1249,22 @@ def generate_world_multi(spec_path):
         print("[multi] 来源 %d/%d: %s" % (i + 1, len(sources), src.get("title", "src_%d" % i)))
         tmp_spec = dict(spec)
         tmp_spec["source"] = src
-        tmp_spec["source_text"] = src.get("text", spec.get("source_text", ""))
+        # 每源支持内联 text 或 @text 外部文件引用（相对 spec 目录解析）
+        _mt = src.get("text", spec.get("source_text", ""))
+        if isinstance(_mt, str) and _mt.startswith("@"):
+            _mtp = _mt[1:]
+            if not os.path.isabs(_mtp):
+                _mtp = os.path.join(os.path.dirname(os.path.abspath(spec_path)), _mtp)
+            with open(_mtp, encoding="utf-8") as _mf:
+                _mt = _mf.read()
+        tmp_spec["source_text"] = _mt
         tmp_spec["_spec_path"] = spec_path
         if spec.get("llm_fixture_dir"):
+            _fxdir = spec["llm_fixture_dir"]
+            if not os.path.isabs(_fxdir) and spec.get("_spec_path"):
+                _fxdir = os.path.join(os.path.dirname(os.path.abspath(spec_path)), _fxdir)
             tmp_spec["llm_fixture"] = os.path.join(
-                spec["llm_fixture_dir"], src.get("fixture", "src_%d.json" % i))
+                _fxdir, src.get("fixture", "src_%d.json" % i))
         raw = _llm_extract_world(tmp_spec)  # 真调 LLM（或离线 fixture）
         all_raws.append(raw)
 

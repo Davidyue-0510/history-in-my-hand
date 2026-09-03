@@ -468,6 +468,7 @@ window.SANDBOX_SLICES["chensheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "CHENSHENGG01"
  ],

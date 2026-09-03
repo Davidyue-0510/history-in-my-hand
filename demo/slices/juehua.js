@@ -637,6 +637,7 @@ window.SANDBOX_SLICES["juehua"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "JH014"
  ],

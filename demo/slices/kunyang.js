@@ -558,6 +558,7 @@ window.SANDBOX_SLICES["kunyang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX012_M9",
   "KUNYANGG01"

@@ -412,6 +412,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "ZHAOFENG01"
  ],

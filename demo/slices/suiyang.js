@@ -533,6 +533,7 @@ window.SANDBOX_SLICES["suiyang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX011_M13",
   "SUIYANGG01"

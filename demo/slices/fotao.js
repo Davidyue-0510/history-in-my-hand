@@ -390,6 +390,7 @@ window.SANDBOX_SLICES["fotao"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "FOTAOG01"
  ],

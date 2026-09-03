@@ -415,6 +415,7 @@ window.SANDBOX_SLICES["yuan_duo"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "YUAN_DUOG01"
  ],

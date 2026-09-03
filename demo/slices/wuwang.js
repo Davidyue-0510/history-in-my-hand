@@ -209,6 +209,7 @@ window.SANDBOX_SLICES["wuwang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "WUWANGG01"
  ],

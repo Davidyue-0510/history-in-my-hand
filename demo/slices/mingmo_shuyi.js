@@ -373,6 +373,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

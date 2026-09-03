@@ -226,6 +226,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

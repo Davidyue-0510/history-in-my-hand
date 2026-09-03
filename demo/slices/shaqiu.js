@@ -410,6 +410,7 @@ window.SANDBOX_SLICES["shaqiu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SHAQIUG01"
  ],

@@ -524,6 +524,7 @@ window.SANDBOX_SLICES["four_inv"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "FOUR_INVG01"
  ],

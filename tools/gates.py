@@ -59,6 +59,8 @@ STEPS = [
     ("六维词表推断鲁棒性 test",        ["tools/tests/test_ingest_dims.py"]),
     # ── 一键世界生成闭环（v0.79 修 --multi 假绿后挂入） ──
     ("一键世界生成 smoke test",       ["tools/tests/test_world_gen.py"]),
+    ("CLI 世界生成 smoke test",       ["tools/tests/test_world_cli.py"]),
+    ("跨源冲突汇总 test",             ["tools/tests/test_cross_conflicts.py"]),
 ]
 
 

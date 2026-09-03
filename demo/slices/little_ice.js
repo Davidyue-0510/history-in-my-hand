@@ -480,6 +480,7 @@ window.SANDBOX_SLICES["little_ice"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "SX006_M65",
   "LITTLE_ICEG01"

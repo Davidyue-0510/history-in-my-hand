@@ -533,6 +533,7 @@ window.SANDBOX_SLICES["yancheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "YANCHENGG01"
  ],

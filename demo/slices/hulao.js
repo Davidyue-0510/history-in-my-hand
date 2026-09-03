@@ -532,6 +532,7 @@ window.SANDBOX_SLICES["hulao"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX011_M12",
   "HULAOG01"

@@ -504,6 +504,7 @@ window.SANDBOX_SLICES["yaksa"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "YAKSAG01"
  ],

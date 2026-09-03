@@ -432,6 +432,7 @@ window.SANDBOX_SLICES["yashan"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "YS006",
   "YASHANG01"

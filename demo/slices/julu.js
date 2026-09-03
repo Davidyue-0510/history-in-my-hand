@@ -503,6 +503,7 @@ window.SANDBOX_SLICES["julu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "JULUG01"
  ],

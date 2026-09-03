@@ -478,6 +478,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX009_M36",
   "SX010_M31",

@@ -554,6 +554,7 @@ window.SANDBOX_SLICES["tianjing"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "TIANJINGG01"
  ],

@@ -574,6 +574,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "J010",
   "J011"

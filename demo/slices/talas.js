@@ -501,6 +501,7 @@ window.SANDBOX_SLICES["talas"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M17",
   "TALASG01"

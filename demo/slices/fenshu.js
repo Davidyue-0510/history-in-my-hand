@@ -473,6 +473,7 @@ window.SANDBOX_SLICES["fenshu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "FENSHUG01"
  ],

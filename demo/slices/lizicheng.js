@@ -529,6 +529,7 @@ window.SANDBOX_SLICES["lizicheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX010_M39",
   "LIZICHENGG01"

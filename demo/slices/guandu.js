@@ -565,6 +565,7 @@ window.SANDBOX_SLICES["guandu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "GUANDUG01"
  ],

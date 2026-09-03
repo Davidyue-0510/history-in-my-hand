@@ -475,6 +475,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "DUJIANGYANG01"
  ],

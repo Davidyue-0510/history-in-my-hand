@@ -392,6 +392,7 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "NT_GAP1"
  ],

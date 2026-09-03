@@ -422,6 +422,7 @@ window.SANDBOX_SLICES["beijiu"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "BEIJIUG01"
  ],

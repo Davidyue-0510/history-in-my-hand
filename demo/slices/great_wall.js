@@ -309,6 +309,7 @@ window.SANDBOX_SLICES["great_wall"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "GREAT_WALLG01"
  ],

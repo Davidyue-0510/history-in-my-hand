@@ -412,6 +412,7 @@ window.SANDBOX_SLICES["lixue"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "LIXUEG01"
  ],

@@ -363,6 +363,7 @@ window.SANDBOX_SLICES["bencao"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "BENCAOG01"
  ],

@@ -415,6 +415,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "CHENQIAOG01"
  ],

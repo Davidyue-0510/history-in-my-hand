@@ -383,6 +383,7 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "LS_GAP1"
  ],

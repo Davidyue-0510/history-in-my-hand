@@ -533,6 +533,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX011_M10",
   "DIAOYUCHENGG01"

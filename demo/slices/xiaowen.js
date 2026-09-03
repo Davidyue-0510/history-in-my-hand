@@ -520,6 +520,7 @@ window.SANDBOX_SLICES["xiaowen"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "XIAOWENG01"
  ],

@@ -391,6 +391,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [],
  "events": [
   {

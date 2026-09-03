@@ -402,6 +402,7 @@ window.SANDBOX_SLICES["liangshui"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "LIANGSHUIG01"
  ],

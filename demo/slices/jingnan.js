@@ -627,6 +627,7 @@ window.SANDBOX_SLICES["jingnan"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "JNG01"
  ],

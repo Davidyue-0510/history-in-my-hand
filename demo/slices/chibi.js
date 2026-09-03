@@ -658,6 +658,7 @@ window.SANDBOX_SLICES["chibi"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "CHIBIG01",
   "GAP_EXPAND"

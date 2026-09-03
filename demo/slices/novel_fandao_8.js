@@ -290,6 +290,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "K807"
  ],

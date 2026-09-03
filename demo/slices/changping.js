@@ -552,6 +552,7 @@ window.SANDBOX_SLICES["changping"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX011_M7",
   "CHANGPINGG01"

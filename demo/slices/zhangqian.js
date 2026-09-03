@@ -405,6 +405,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "ZHANGQIANG01"
  ],

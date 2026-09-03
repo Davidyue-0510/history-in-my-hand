@@ -575,6 +575,7 @@ window.SANDBOX_SLICES["shangyang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SHANGYANGG01"
  ],

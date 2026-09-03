@@ -646,6 +646,7 @@ window.SANDBOX_SLICES["lvlin"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "SX011_M19",
   "SX012_M14",

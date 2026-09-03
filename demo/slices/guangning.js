@@ -1466,6 +1466,7 @@ window.SANDBOX_SLICES["guangning"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "G010",
   "G011",

@@ -413,6 +413,7 @@ window.SANDBOX_SLICES["xuanzang"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "XUANZANGG01"
  ],

@@ -544,6 +544,7 @@ window.SANDBOX_SLICES["qing_han"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "QING_HANG01"
  ],

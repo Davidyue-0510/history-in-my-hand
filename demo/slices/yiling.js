@@ -524,6 +524,7 @@ window.SANDBOX_SLICES["yiling"] = {
    ]
   }
  ],
+ "crossConflicts": [],
  "gaps": [
   "YILINGG01"
  ],

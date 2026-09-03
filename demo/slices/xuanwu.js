@@ -570,6 +570,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "XUANWUG01"
  ],

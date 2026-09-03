@@ -436,6 +436,7 @@ window.SANDBOX_SLICES["taiping"] = {
   }
  ],
  "conflicts": [],
+ "crossConflicts": [],
  "gaps": [
   "TAIPINGG01"
  ],
