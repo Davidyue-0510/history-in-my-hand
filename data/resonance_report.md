@@ -106,7 +106,7 @@
 | taiping | 12 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 7 / scholarship 3 |
 | talas | 14 | 3 | **0.000** | event:tl_gel（0.000） | gap 2 / inference 2 / record 7 / scholarship 3 |
 | tang_dangzheng | 7 | 3 | **0.000** | event:nt_808（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
-| tang_huai_xi | 12 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
+| tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
@@ -302,7 +302,7 @@
 | event:hs_jz | heshangyuan | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:hs_wu | heshangyuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:hx_after | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_legacy | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_main | huaxian | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |

@@ -29,6 +29,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    2,
    3,
    4,
+   5,
    6
   ],
   "epoch": "tang",
@@ -241,7 +242,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "裴度",
    "role": "宰相·彰义军节度淮西宣慰处置使",
    "note": "主征淮西，督诸军",
-   "influence": 1
+   "influence": 3
   },
   {
    "id": "xianzong",
@@ -262,14 +263,14 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "董重质",
    "role": "淮西骁将",
    "note": "守洄曲，吴元济倚为重",
-   "influence": 0
+   "influence": 1
   },
   {
    "id": "li_shidao",
    "name": "李师道",
    "role": "平卢节度使",
    "note": "与淮西呼应，刺宰相武元衡",
-   "influence": 0
+   "influence": 1
   }
  ],
  "assertions": [
@@ -596,6 +597,132 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    ],
    "_party": "宋·官修",
    "_faction": null
+  },
+  {
+   "id": "TH013",
+   "subject": "event:huai_xi_ping",
+   "predicate": "平淮西碑叙事",
+   "value_text": "宪宗平淮西，诏韩愈撰《平淮西碑》，文多归功裴度；李愬妻（唐安公主女）入诉碑文叙功不平，帝命段文昌重撰。",
+   "time": {
+    "era_text": "元和十二年—十三年",
+    "start": "0817-01-01",
+    "end": "0818-12-31",
+    "gregorian_year": 817
+   },
+   "place": "changan",
+   "source": "zztj_tang",
+   "quote": "诏韩愈撰平淮西碑；李愬妻诉碑文不实，帝命段文昌更撰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "思想/舆论维度：官方胜利叙事的建构与朝堂争议（南北史笔之别）。",
+   "dims": [
+    5
+   ],
+   "_party": "宋·官修",
+   "_faction": null
+  },
+  {
+   "id": "TH014",
+   "subject": "person:pei_du",
+   "predicate": "朝堂战和之争",
+   "value_text": "讨淮西初，宰相李逢吉、韦贯之等数请罢兵；宪宗独用裴度之议，以度为相，督诸军讨蔡。",
+   "time": {
+    "era_text": "元和九年—十年",
+    "start": "0814-01-01",
+    "end": "0815-12-31",
+    "gregorian_year": 815
+   },
+   "place": "changan",
+   "source": "zztj_tang",
+   "quote": "宰相李逢吉等数请罢兵，帝独任裴度",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "empire",
+   "note": "思想/制度维度：削藩战略共识的形成（主战派 vs 主和派）。",
+   "dims": [
+    5
+   ],
+   "_party": "宋·官修",
+   "_faction": null
+  },
+  {
+   "id": "TH015",
+   "subject": "person:pei_du",
+   "predicate": "裴度督战去监军",
+   "value_text": "裴度拜相，为彰义军节度淮西宣慰处置使，奏罢诸道监军宦官，使将得专兵柄。",
+   "time": {
+    "era_text": "元和十年—十二年",
+    "start": "0815-01-01",
+    "end": "0817-12-31",
+    "gregorian_year": 816
+   },
+   "place": "yancheng",
+   "source": "zztj_tang",
+   "quote": "度奏罢诸道监军，使将得专其兵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "empire",
+   "note": "制度维度：削弱宦官监军、集中兵权是平藩关键改革。",
+   "dims": [
+    3
+   ],
+   "_party": "宋·官修",
+   "_faction": null
+  },
+  {
+   "id": "TH016",
+   "subject": "person:li_shidao",
+   "predicate": "李师道刺武元衡",
+   "value_text": "平卢节度使李师道遣刺客杀宰相武元衡于通衢、伤裴度，欲沮朝廷讨蔡之师。",
+   "time": {
+    "era_text": "元和十年六月",
+    "start": "0815-06-01",
+    "end": "0815-06-30",
+    "gregorian_year": 815
+   },
+   "place": "changan",
+   "source": "jiu_tangshu",
+   "quote": "盗杀武元衡，伤裴度",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "empire",
+   "note": "事件/社会维度：藩镇以恐怖手段干预朝政，反促宪宗主战之志。",
+   "dims": [
+    4,
+    6
+   ],
+   "_party": "五代·官修",
+   "_faction": null
+  },
+  {
+   "id": "TH017",
+   "subject": "person:dong_zhongzhi",
+   "predicate": "董重质降",
+   "value_text": "李愬入蔡州，访得董重质母，遣重质子传谕；重质单骑诣愬降，淮西骁将遂定。",
+   "time": {
+    "era_text": "元和十二年冬",
+    "start": "0817-01-01",
+    "end": "0817-12-31",
+    "gregorian_year": 817
+   },
+   "place": "caizhou",
+   "source": "jiu_tangshu",
+   "quote": "愬得重质母，遣其子传谕，重质降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "note": "事件维度：雪夜入蔡后安抚骁将，决定淮西能否真正平定。",
+   "dims": [
+    6
+   ],
+   "_party": "五代·官修",
+   "_faction": null
   }
  ],
  "conflicts": [
@@ -671,7 +798,166 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "label": "长安—蔡州（朝廷—淮西）"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "caizhou",
+   "party": "藩镇",
+   "start": 814,
+   "end": 817,
+   "basis": "吴元济据蔡州为淮西治所，拒命朝廷",
+   "note": ""
+  },
+  {
+   "place_id": "caizhou",
+   "party": "唐廷",
+   "start": 817,
+   "end": null,
+   "basis": "元和十二年十月李愬雪夜入蔡州，擒吴元济，淮西平",
+   "note": "归唐廷直辖，改淮西为州县"
+  },
+  {
+   "place_id": "shenzhou",
+   "party": "藩镇",
+   "start": 814,
+   "end": 817,
+   "basis": "申州为淮西属州，吴元济辖",
+   "note": ""
+  },
+  {
+   "place_id": "shenzhou",
+   "party": "唐廷",
+   "start": 817,
+   "end": null,
+   "basis": "淮西平后随蔡州归唐廷",
+   "note": ""
+  },
+  {
+   "place_id": "huiqu",
+   "party": "藩镇",
+   "start": 814,
+   "end": 817,
+   "basis": "董重质守洄曲，蔡州北屏障",
+   "note": ""
+  },
+  {
+   "place_id": "huiqu",
+   "party": "唐廷",
+   "start": 817,
+   "end": null,
+   "basis": "淮西平后归唐廷",
+   "note": ""
+  },
+  {
+   "place_id": "wenchengzhai",
+   "party": "藩镇",
+   "start": 814,
+   "end": 816,
+   "basis": "文城栅为淮西戍守要栅",
+   "note": ""
+  },
+  {
+   "place_id": "wenchengzhai",
+   "party": "唐廷",
+   "start": 817,
+   "end": null,
+   "basis": "李愬取文城栅为前进基地，雪夜自此发",
+   "note": "元和十二年冬"
+  },
+  {
+   "place_id": "tangzhou",
+   "party": "唐廷",
+   "start": 814,
+   "end": null,
+   "basis": "唐州为朝廷讨伐军基地，李愬随唐邓节度治所",
+   "note": "本非淮西辖州"
+  },
+  {
+   "place_id": "yancheng",
+   "party": "唐廷",
+   "start": 814,
+   "end": null,
+   "basis": "李光颜忠武军拒守，朝廷军前线",
+   "note": ""
+  },
+  {
+   "place_id": "changan",
+   "party": "唐廷",
+   "start": 814,
+   "end": null,
+   "basis": "唐都，讨藩决策中枢",
+   "note": ""
+  },
+  {
+   "place_id": "luoyang",
+   "party": "唐廷",
+   "start": 814,
+   "end": null,
+   "basis": "东都",
+   "note": ""
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "caizhou",
+   "name": "蔡州",
+   "lon": 114.35,
+   "lat": 33.53,
+   "region": "tang"
+  },
+  {
+   "place_id": "shenzhou",
+   "name": "申州",
+   "lon": 114.08,
+   "lat": 32.15,
+   "region": "tang"
+  },
+  {
+   "place_id": "huiqu",
+   "name": "洄曲",
+   "lon": 114.03,
+   "lat": 33.58,
+   "region": "tang"
+  },
+  {
+   "place_id": "wenchengzhai",
+   "name": "文城栅",
+   "lon": 113.97,
+   "lat": 33.15,
+   "region": "tang"
+  },
+  {
+   "place_id": "tangzhou",
+   "name": "唐州",
+   "lon": 113.31,
+   "lat": 32.73,
+   "region": "tang"
+  },
+  {
+   "place_id": "yancheng",
+   "name": "郾城",
+   "lon": 113.97,
+   "lat": 33.87,
+   "region": "tang"
+  },
+  {
+   "place_id": "changan",
+   "name": "长安",
+   "lon": 108.95,
+   "lat": 34.27,
+   "region": "tang"
+  },
+  {
+   "place_id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "region": "tang"
+  }
+ ],
+ "control_years": [
+  814,
+  817
+ ],
  "vocab": {
   "layers": [
    "record",

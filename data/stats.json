@@ -2,7 +2,7 @@
   "scenes_total": 138,
   "historical": 129,
   "fictional": 9,
-  "assertions_total": 2065,
+  "assertions_total": 2070,
   "sources_total": 87,
   "factions_total": 9,
   "vocab_packs": [
@@ -238,7 +238,7 @@
       "id": "tang_huai_xi",
       "title": "平淮西·雪夜入蔡州",
       "kind": "county",
-      "assertions": 12,
+      "assertions": 17,
       "factions": {}
     },
     {

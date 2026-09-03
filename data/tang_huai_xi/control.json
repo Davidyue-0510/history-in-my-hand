@@ -1,0 +1,18 @@
+{
+  "_comment": "平淮西实际控制态势（v0.87 场景级控制权数据）。每 segment 表示某 place_id 在 [start,end] 年间由某 party 实际控制；end=null 表示持续至今（本场景时间窗 817 之后）。party 取自本场景语境包 tang 的 parties（唐廷/藩镇/外族/后世官修/综述考订）；控制权事实为物理占领，故只用「唐廷」「藩镇」两桶，立场/后世官修桶不进入控制层。控制权事实据《资治通鉴·唐纪》《旧/新唐书》编年：元和九年（814）吴元济拒命据淮西，元和十二年十月（817）李愬雪夜入蔡州擒元济，淮西归唐廷直辖。注：huai_xi（方镇）与 caizhou 同坐标，已从控制段排除，避免 Voronoi 退化；方镇作为 polity 仅作事件/地名实体出现。",
+  "_years": [814, 817],
+  "control": [
+    {"place_id": "caizhou", "party": "藩镇", "start": 814, "end": 817, "basis": "吴元济据蔡州为淮西治所，拒命朝廷", "note": ""},
+    {"place_id": "caizhou", "party": "唐廷", "start": 817, "end": null, "basis": "元和十二年十月李愬雪夜入蔡州，擒吴元济，淮西平", "note": "归唐廷直辖，改淮西为州县"},
+    {"place_id": "shenzhou", "party": "藩镇", "start": 814, "end": 817, "basis": "申州为淮西属州，吴元济辖", "note": ""},
+    {"place_id": "shenzhou", "party": "唐廷", "start": 817, "end": null, "basis": "淮西平后随蔡州归唐廷", "note": ""},
+    {"place_id": "huiqu", "party": "藩镇", "start": 814, "end": 817, "basis": "董重质守洄曲，蔡州北屏障", "note": ""},
+    {"place_id": "huiqu", "party": "唐廷", "start": 817, "end": null, "basis": "淮西平后归唐廷", "note": ""},
+    {"place_id": "wenchengzhai", "party": "藩镇", "start": 814, "end": 816, "basis": "文城栅为淮西戍守要栅", "note": ""},
+    {"place_id": "wenchengzhai", "party": "唐廷", "start": 817, "end": null, "basis": "李愬取文城栅为前进基地，雪夜自此发", "note": "元和十二年冬"},
+    {"place_id": "tangzhou", "party": "唐廷", "start": 814, "end": null, "basis": "唐州为朝廷讨伐军基地，李愬随唐邓节度治所", "note": "本非淮西辖州"},
+    {"place_id": "yancheng", "party": "唐廷", "start": 814, "end": null, "basis": "李光颜忠武军拒守，朝廷军前线", "note": ""},
+    {"place_id": "changan", "party": "唐廷", "start": 814, "end": null, "basis": "唐都，讨藩决策中枢", "note": ""},
+    {"place_id": "luoyang", "party": "唐廷", "start": 814, "end": null, "basis": "东都", "note": ""}
+  ]
+}

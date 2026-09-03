@@ -19438,6 +19438,7 @@ window.SANDBOX_DATA = {
     2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -19446,10 +19447,10 @@ window.SANDBOX_DATA = {
     "src": 3,
     "place": 9,
     "person": 7,
-    "assert": 12,
+    "assert": 17,
     "conflict": 1,
     "gap": 1,
-    "record": 9,
+    "record": 14,
     "scholarship": 1,
     "inference": 1
    }
@@ -28259,15 +28260,15 @@ window.SANDBOX_DATA = {
    {
     "scene": "tang_huai_xi",
     "name": "tang_huai_xi",
-    "total": 12,
+    "total": 17,
     "layers": {
-     "record": 9,
+     "record": 14,
      "scholarship": 1,
      "inference": 1,
      "gap": 1
     },
     "party_counts": {
-     "后世官修": 12
+     "后世官修": 17
     },
     "faction_counts": {},
     "event_count": 3,

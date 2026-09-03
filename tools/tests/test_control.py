@@ -76,7 +76,18 @@ def main():
           {c.get("place_id") for c in im["control"]} <= im_places)
 
     ta = get_slice("tang_huai_xi")
-    check("tang 显式 control=[]（前端隐藏控制层）", ta.get("control") == [])
+    # v0.88：唐淮西补全 control.json（12 段/8 席/years [814,817]），不再是无 control 的 exemplar。
+    # 与 imjin 对称做正向契约（自带 control + seats + years + place_id ⊆ places）。
+    check("tang_huai_xi 自带 control（>=10 条）", isinstance(ta.get("control"), list) and len(ta["control"]) >= 10)
+    ta_seats = [s["place_id"] for s in ta.get("control_seats", [])]
+    check("tang_huai_xi control_seats 非空（>=8 治所）", len(ta_seats) >= 8)
+    check("tang_huai_xi 治所几何齐全（lon/lat 非 None）",
+          all(s.get("lon") is not None and s.get("lat") is not None for s in ta.get("control_seats", [])))
+    check("tang_huai_xi 场景窗口 [814,817]",
+          ta.get("control_years") == [814, 817])
+    ta_places = {p["id"] for p in ta.get("places", [])}
+    check("tang_huai_xi control 的 place_id ⊆ 场景 places",
+          {c.get("place_id") for c in ta["control"]} <= ta_places)
 
     gu = get_slice("guangning")
     check("guangning（辽东体系）不注入 control → fallback 全局", "control" not in gu)
