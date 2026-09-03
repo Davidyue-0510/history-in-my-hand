@@ -57,6 +57,8 @@ STEPS = [
     ("农历转换 test",                ["tools/tests/test_lunar.py"]),
     ("别名校正 test",                ["tools/tests/test_alias.py"]),
     ("六维词表推断鲁棒性 test",        ["tools/tests/test_ingest_dims.py"]),
+    # ── 一键世界生成闭环（v0.79 修 --multi 假绿后挂入） ──
+    ("一键世界生成 smoke test",       ["tools/tests/test_world_gen.py"]),
 ]
 
 

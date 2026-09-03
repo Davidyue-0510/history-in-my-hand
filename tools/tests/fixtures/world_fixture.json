@@ -1,0 +1,24 @@
+{
+  "persons": [
+    {"id": "wt_p01", "name": "李成梁", "role": "明总兵", "note": "辽东名将"},
+    {"id": "wt_p02", "name": "努尔哈赤", "role": "建州女真首领", "note": "后金奠基者"}
+  ],
+  "events": [
+    {"id": "ev_wtest_tmp_01", "subject": "event:wtest_tmp_01", "year": 1618, "era": "万历四十六年", "title": "抚顺之战", "kind": "战事", "text": "后金克抚顺"}
+  ],
+  "places": [
+    {"id": "fu_shun", "name": "抚顺", "type": "city", "modern": "今辽宁抚顺", "note": "边城"},
+    {"id": "saerhu", "name": "萨尔浒", "type": "fortress", "modern": "今辽宁抚顺东", "note": "战场"},
+    {"id": "liao_yang", "name": "辽阳", "type": "city", "modern": "今辽宁辽阳", "note": "辽东首府"}
+  ],
+  "edges": [
+    {"from": "saerhu", "to": "fu_shun", "type": "military", "label": "后金攻抚顺"}
+  ],
+  "assertions": [
+    {"id": "WTE001", "subject": "event:wtest_tmp_01", "predicate": "爆发", "value_text": "后金起兵克抚顺", "time": {"era_text": "万历四十六年"}, "place": "fu_shun", "source": "wt_src", "quote": "万历四十六年，努尔哈赤起兵", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.9, "scale": "empire", "note": "", "dims": [1, 6]},
+    {"id": "WTE002", "subject": "person:wt_p01", "predicate": "镇守", "value_text": "李成梁镇守辽东", "time": {"era_text": "万历四十五年"}, "place": "liao_yang", "source": "wt_src", "quote": "成梁镇辽东", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.85, "scale": "empire", "note": "", "dims": [3]},
+    {"id": "WTE003", "subject": "person:wt_p02", "predicate": "起兵", "value_text": "努尔哈赤以十三副遗甲起兵", "time": {"era_text": "万历四十六年"}, "place": "saerhu", "source": "wt_src", "quote": "以遗甲十三副起兵", "quote_status": "paraphrase_unverified", "layer": "record", "confidence": 0.8, "scale": "empire", "note": "", "dims": [6]},
+    {"id": "WTE004", "subject": "event:wtest_tmp_01", "predicate": "史料记载差异", "value_text": "明实录与满文老档对兵力记载不同", "time": {"era_text": "万历四十六年"}, "place": "fu_shun", "source": "wt_src", "quote": "", "quote_status": "generated", "layer": "scholarship", "confidence": 0.6, "scale": "empire", "note": "学界研究", "dims": [6]},
+    {"id": "WTE005", "subject": "event:wtest_tmp_01", "predicate": "战术细节", "value_text": "待补：火器配置细节", "time": {"era_text": "万历四十六年"}, "place": "fu_shun", "source": "wt_src", "quote": "", "quote_status": "generated", "layer": "gap", "confidence": 0.0, "scale": "empire", "note": "证据缺口", "dims": [2]}
+  ]
+}
