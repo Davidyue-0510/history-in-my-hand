@@ -1,0 +1,29 @@
+{
+  "id": "wtest_emit_multi",
+  "title": "Emit 多源冒烟",
+  "kind": "county",
+  "region": "liaodong",
+  "llm_fixture_dir": "emit_multi",
+  "sources": [
+    {
+      "id": "wt_emit_m0",
+      "title": "明实录",
+      "party": "明方",
+      "color": "#8C6239",
+      "period": "明",
+      "note": "离线测试 fixture 0",
+      "credibility": "高",
+      "fixture": "src0.json"
+    },
+    {
+      "id": "wt_emit_m1",
+      "title": "清实录",
+      "party": "清方",
+      "color": "#3F6B3F",
+      "period": "清",
+      "note": "离线测试 fixture 1",
+      "credibility": "中",
+      "fixture": "src1.json"
+    }
+  ]
+}

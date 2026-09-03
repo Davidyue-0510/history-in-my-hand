@@ -1051,7 +1051,70 @@ def _assemble_and_register(spec, raw, scene_dir):
     recompute_scene_dims(spec["id"])
 
 
-def generate_world(spec_path):
+def _thread_single_source(raw, spec):
+    """单源 emit：把源元信息线程到每个实体（与多源 merge 循环一致），
+    使 emit 产物对单/多源结构统一（断言带 _source_idx/_source_name/party/credibility）。"""
+    src = spec.get("source", {})
+    nm = src.get("title", spec["id"])
+    party = src.get("party", "unknown")
+    cred = src.get("credibility")
+    for key in ("persons", "events", "places", "edges", "assertions"):
+        for item in raw.get(key, []):
+            item.setdefault("_source_idx", 0)
+            item.setdefault("_source_name", nm)
+            item.setdefault("_source_party", party)
+            item.setdefault("_source_credibility", cred)
+            if key == "assertions":
+                item.setdefault("source", nm)
+    return raw
+
+
+def _emit_world(spec, world_dict, scene_dir, out_path, mode):
+    """--emit：把组装好的 world dict 序列化为 JSON（不写任何 repo 文件、不注册场景、
+    不注册地形、不 build）。单源与多源共用。world_dict 已是 conform + 跨源冲突标注后的结构。
+    这是朝北极星「任意文字 → 生成世界」管道化复用的关键产物：一份自描述、可回灌的快照。"""
+    import datetime
+    sources_meta = spec.get("_multi_sources") or [{
+        "id": (spec.get("source") or {}).get("id", spec["id"]),
+        "title": (spec.get("source") or {}).get("title", ""),
+        "party": (spec.get("source") or {}).get("party", "unknown"),
+        "color": (spec.get("source") or {}).get("color", "#8C6239"),
+        "compiler": (spec.get("source") or {}).get("compiler", ""),
+        "period": (spec.get("source") or {}).get("period", ""),
+        "note": (spec.get("source") or {}).get("note", ""),
+        "credibility": (spec.get("source") or {}).get("credibility"),
+    }]
+    emit = {
+        "meta": {
+            "id": spec["id"],
+            "title": spec.get("title", spec["id"]),
+            "region": spec.get("region", "liaodong"),
+            "kind": spec.get("kind", "county"),
+            "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+            "mode": mode,
+            "sources": sources_meta,
+        },
+        "persons": world_dict.get("persons", []),
+        "events": world_dict.get("events", []),
+        "places": world_dict.get("places", []),
+        "edges": world_dict.get("edges", []),
+        "assertions": world_dict.get("assertions", []),
+    }
+    if not out_path:
+        out_path = os.path.join(scene_dir, "world_emit.json")
+        os.makedirs(scene_dir, exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(emit, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+    print("[emit] 仅产出 JSON（不写库/不注册/不 build）: %s" % out_path)
+    print("[emit] 统计: %d 人 / %d 事 / %d 地 / %d 断言" % (
+        len(emit["persons"]), len(emit["events"]),
+        len(emit["places"]), len(emit["assertions"])))
+    return out_path
+
+
+def generate_world(spec_path, emit_path=None):
     """一键生成完整场景：LLM 抽取 → 合规化 → 落文件 → 注册 → build → gates。"""
     with open(spec_path, encoding="utf-8") as f:
         spec = json.load(f)
@@ -1059,7 +1122,6 @@ def generate_world(spec_path):
 
     scene_id = spec["id"]
     scene_dir = os.path.join(ROOT, "data", scene_id)
-    os.makedirs(scene_dir, exist_ok=True)
 
     # 若 source_text 以 @ 开头 → 从文件读取
     src_text = spec.get("source_text", "")
@@ -1077,6 +1139,13 @@ def generate_world(spec_path):
         len(raw.get("places", [])), len(raw.get("edges", [])),
         len(raw.get("assertions", []))))
 
+    # --emit：仅产出组装 JSON，不写库/不注册/不 build（零 repo 副作用，管道化复用）
+    if emit_path is not None:
+        raw = _thread_single_source(raw, spec)
+        _emit_world(spec, raw, scene_dir, emit_path, "single")
+        return 0
+
+    os.makedirs(scene_dir, exist_ok=True)
     _assemble_and_register(spec, raw, scene_dir)
     return _run_build_and_gates(scene_id)
 
@@ -1107,15 +1176,18 @@ def main():
                          "与 curated 数据对齐。")
     ap.add_argument("--world", help="一键世界生成：输入场景 spec JSON")
     ap.add_argument("--multi", help="多源融合：输入多源 spec JSON（逐源 LLM + 跨源冲突检测）")
+    ap.add_argument("--emit", help="配合 --world/--multi：仅产出组装 JSON（world dict）到该路径，"
+                                    "不写库/不注册/不 build；管道化复用（朝北极星'任意文字→生成世界'）。"
+                                    "省略则写到 data/<id>/world_emit.json")
     args = ap.parse_args()
 
     # ── 一键世界生成模式 ──
     if args.world:
         _load_dotenv()
-        return generate_world(args.world)
+        return generate_world(args.world, emit_path=args.emit)
     if args.multi:
         _load_dotenv()
-        return generate_world_multi(args.multi)
+        return generate_world_multi(args.multi, emit_path=args.emit)
 
     # deepseek 是 llm 的 OpenAI 兼容快捷方式：填好 base/model 默认值后当 llm 跑
     if args.provider == "deepseek":
@@ -1236,14 +1308,14 @@ def main():
     return 0
 
 
-def generate_world_multi(spec_path):
-    """v0.37 多源融合：每源独立抽取 → 合并断言 → 自动冲突检测 → 注册 → build → gates。"""
+def generate_world_multi(spec_path, emit_path=None):
+    """v0.37 多源融合：每源独立抽取 → 合并断言 → 自动冲突检测 → 注册 → build → gates。
+    emit_path 非空时仅产出组装 JSON（含跨源冲突标注），不写库/不注册/不 build。"""
     with open(spec_path, encoding="utf-8") as f:
         spec = json.load(f)
     spec["_spec_path"] = spec_path
     scene_id = spec["id"]
     scene_dir = os.path.join(ROOT, "data", scene_id)
-    os.makedirs(scene_dir, exist_ok=True)
 
     sources = spec.get("sources", [spec])
     print("[multi] %d 个来源，逐源抽取 ..." % len(sources))
@@ -1319,6 +1391,12 @@ def generate_world_multi(spec_path):
                 a2.setdefault("_cross_conflicts", []).append(a1["id"])
     print("[multi] 跨源冲突: %d 对" % len(conflict_pairs))
 
+    # --emit：仅产出组装 JSON（含跨源冲突标注），不写库/不注册/不 build
+    if emit_path is not None:
+        _emit_world(spec, merged, scene_dir, emit_path, "multi")
+        return 0
+
+    os.makedirs(scene_dir, exist_ok=True)
     _assemble_and_register(spec, merged, scene_dir)
     rc = _run_build_and_gates(scene_id)
     total_asserts = len(merged["assertions"])

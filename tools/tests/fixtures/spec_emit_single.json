@@ -1,0 +1,16 @@
+{
+  "id": "wtest_emit_single",
+  "title": "Emit 单源冒烟",
+  "kind": "county",
+  "region": "liaodong",
+  "source": {
+    "id": "wt_emit_src",
+    "title": "测试史料甲",
+    "party": "明方",
+    "color": "#8C6239",
+    "period": "明",
+    "note": "离线测试 fixture",
+    "credibility": "中"
+  },
+  "llm_fixture": "world_fixture.json"
+}
