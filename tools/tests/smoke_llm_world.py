@@ -1,7 +1,9 @@
-"""真实 LLM 接入冒烟（v0.80）：仅验证 world 模式的「抽取 + 合规化」链路真能跑通。
+"""真实 LLM 接入冒烟（v0.80，v0.85 改为可选闸门）：仅验证 world 模式的「抽取 + 合规化」链路真能跑通。
 
-不挂 gates——它会真烧一次小 token，不该每次 gates 跑时重复调用。
-手动执行：python tools/tests/smoke_llm_world.py
+默认不挂 gates——它会真烧一次小 token，不该每次 gates 跑时重复调用。
+可选挂入：设环境变量 REAL_LLM=1，gates 会把它作为最后一道闸门纳入；
+未设 REAL_LLM 时完全不跑，零 token 消耗。
+手动执行：python tools/tests/smoke_llm_world.py  或  REAL_LLM=1 python tools/gates.py --strict
 前置：.env 配置 LLM_API_KEY（DeepSeek 端点，ingest._call_llm 自动读取）。
 
 设计：只调 _llm_extract_world（内部真调 _call_llm + JSON 解析 + _conform_world 合规化），

@@ -65,6 +65,12 @@ STEPS = [
     ("v0.83 emit→from-json 往返 test",  ["tools/tests/test_emit_roundtrip.py"]),
 ]
 
+# 真实 LLM 接入冒烟：可选闸门，默认不挂（避免每次 gates 烧 token）。
+# 仅当设 REAL_LLM=1 才纳入；无 key / 网络不可达时脚本返回 0 并显式「跳过」，
+# gates 据此报 [SKIP] 而非假绿。env 取值：1/true/yes/on 视为开启。
+if os.environ.get("REAL_LLM", "").lower() in ("1", "true", "yes", "on"):
+    STEPS = STEPS + [("真实 LLM 接入冒烟 test（REAL_LLM=1）", ["tools/tests/smoke_llm_world.py"])]
+
 
 def find_node():
     """交互闸门需要 Node >= 20（内置 fetch / WebSocket）。找不到就跳过，不误伤 CI。"""
@@ -108,6 +114,41 @@ def _run(cmd, timeout, label):
         return 124
 
 
+def _run_capture(cmd, timeout, label):
+    """同 _run，但捕获 stdout 以便判断真实 LLM 冒烟是否 SKIP（无 key / 网络不可达）。"""
+    try:
+        if os.name == "nt":
+            proc = subprocess.Popen(cmd, cwd=ROOT, stdout=subprocess.PIPE,
+                                    stderr=subprocess.STDOUT,
+                                    creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+        else:
+            proc = subprocess.Popen(cmd, cwd=ROOT, stdout=subprocess.PIPE,
+                                    stderr=subprocess.STDOUT, start_new_session=True)
+    except Exception as e:
+        print("[FAIL] %s 启动失败: %s" % (label, e))
+        return 1, ""
+    try:
+        out, _ = proc.communicate(timeout=timeout)
+        try:
+            text = out.decode("utf-8", "replace")
+        except Exception:
+            text = ""
+        return proc.returncode, text
+    except subprocess.TimeoutExpired:
+        try:
+            if os.name == "nt":
+                os.kill(proc.pid, signal.CTRL_BREAK_EVENT)
+            else:
+                os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+        except Exception:
+            try:
+                proc.kill()
+            except Exception:
+                pass
+        print("[FAIL] %s 超时（>%d 秒），已强制终止，避免卡死。" % (label, timeout))
+        return 124, ""
+
+
 def main():
     args = sys.argv[1:]
     strict = "--strict" in args
@@ -120,12 +161,24 @@ def main():
         if name.startswith("守门员") and strict:
             cmd.append("--strict")
         print("\n=== [%d/%d] %s ===" % (i, total, name))
-        rc = _run(cmd, timeout=300, label=name)
-        if rc != 0:
-            ok = False
-            print("[FAIL] %s (exit=%d)" % (name, rc))
-            break
-        print("[PASS] %s" % name)
+        if "真实 LLM" in name:
+            # 可选闸门：捕获输出以区分 PASS / SKIP（无 key 时不假绿）
+            rc, out = _run_capture(cmd, timeout=300, label=name)
+            if rc == 0 and ("跳过" in out or "SKIP" in out):
+                print("[SKIP] %s：无 key / 网络不可达，跳过（未烧 token）" % name)
+            elif rc != 0:
+                ok = False
+                print("[FAIL] %s (exit=%d)" % (name, rc))
+                break
+            else:
+                print("[PASS] %s" % name)
+        else:
+            rc = _run(cmd, timeout=300, label=name)
+            if rc != 0:
+                ok = False
+                print("[FAIL] %s (exit=%d)" % (name, rc))
+                break
+            print("[PASS] %s" % name)
 
     if ok and want_interaction:
         print("\n=== [%d/%d] 交互闸门 · 无头浏览器真实点击 ===" % (total, total))
