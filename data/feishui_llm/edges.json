@@ -1,0 +1,8 @@
+{
+  "edges": [
+    {"from": "shouyang", "to": "feishui", "type": "battle", "label": "秦军自寿阳至淝水列阵"},
+    {"from": "luojian", "to": "feishui", "type": "military", "label": "晋军洛涧捷后进逼淝水"},
+    {"from": "feishui", "to": "huaibei", "type": "military", "label": "苻坚败逃淮北"},
+    {"from": "jiankang", "to": "shouyang", "type": "military", "label": "东晋自都城建康遣军北上御敌"}
+  ]
+}

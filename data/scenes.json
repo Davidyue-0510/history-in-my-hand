@@ -324,7 +324,8 @@
   "chu_han",
   "song_chan_yuan",
   "guandu_llm",
-  "san_guo"
+  "san_guo",
+  "feishui_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -11461,6 +11462,104 @@
      ],
      "layer": "inference",
      "note": "人口↔常驻军；流民→动员潜力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心与窗口"
+    }
+   }
+  },
+  "feishui_llm": {
+   "kind": "battle",
+   "region": "two_jin",
+   "title": "淝水之战（LLM 抽取·人工校订）",
+   "dossier_label": "淝水之战（LLM 抽取落库）",
+   "subtitle": "太元八年（383）· 东晋（谢安/谢玄） vs 前秦（苻坚）",
+   "primary_place": "feishui",
+   "dossier_event": "event:ev_feishui_llm_03",
+   "vocab_pack": "feishui_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "淝水之战（383，东晋太元八年／前秦建元十九年）：前秦苻坚统一北方后征大军南下，东晋以谢安总揽朝议、谢石/谢玄率北府兵御敌；洛涧刘牢之斩梁成首捷，淝水对峙中朱序阵后呼『秦军败矣』致秦军自溃，苻融死、苻坚中箭奔淮北，东晋以少胜多，前秦瓦解、北方再分裂。本切片是「真实 LLM 抽取（DeepSeek）+ 人工校订落库」复用模式的第二例：LLM 依《资治通鉴》淝水叙事抽出 15 条断言（8 人/3 事/6 地），经 curate_emit 门禁报 BLOCK 0 / WARN 23（引文待核 19、维度兜底 4），再由人工逐条校订——把全为 dims=[6] 的 conform 兜底值改为按内容判定的真实维度，把 LLM 误填的来源 party『北宋·官修』拆为参战方（东晋/前秦/第三方/诸胡），补显式坐标，并增 2 名诸胡人物（慕容垂/姚苌）与第 2 源《十六国春秋》辑本以承载前秦视角缺口。未经校订的 LLM 产物一律不入库。",
+   "parties_note": "《资治通鉴》为北宋官修综合叙述，以东晋为叙事主轴，故『东晋』桶相对充实；前秦内部真实决策（如苻坚拒权翼、石越、苻融之谏）多经东晋/后世记载折射，独立声音缺位——缺口显式保留，不伪造。朱序原东晋襄阳守将、降前秦，淝水为晋内应，非前秦核心亦非东晋阵中，独立成『第三方』桶（与 guandu 刘备同逻辑）；慕容垂/姚苌为前秦内部鲜卑/羌首领，战后叛秦立国，独立成『诸胡』桶。立场分桶是产品核心，塞错即伪造立场（v0.87 已修同类暗病）。系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_feishui_llm_01": "洛涧之战",
+    "event:ev_feishui_llm_02": "淝水对峙",
+    "event:ev_feishui_llm_03": "淝水决战·秦军自溃",
+    "event:ev_feishui_llm_04": "前秦瓦解·北方再分裂",
+    "event:ev_feishui_llm_05": "谢安得捷报",
+    "place:feishui": "淝水",
+    "place:luojian": "洛涧",
+    "place:shouyang": "寿阳",
+    "place:bagongshan": "八公山",
+    "place:huaibei": "淮北",
+    "place:jiankang": "建康",
+    "person:xie_an": "谢安",
+    "person:xie_shi": "谢石",
+    "person:xie_xuan": "谢玄",
+    "person:liu_laozhi": "刘牢之",
+    "person:fu_jian": "苻坚",
+    "person:fu_rong": "苻融",
+    "person:liang_cheng": "梁成",
+    "person:zhu_xu": "朱序",
+    "person:mu_rongchui": "慕容垂",
+    "person:yao_chang": "姚苌"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（R6 courtCohesion）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；赋税/漕运→后勤半径"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；部族动员潜力"
     },
     "geopolitical_strategy": {
      "from": [

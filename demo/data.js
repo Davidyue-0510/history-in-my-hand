@@ -1,16 +1,17 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 142 个切片
+// 权威数据源：data/scenes.json 注册的 143 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 142 个切片",
+  "slice": "multi-scene · 143 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "chu_han",
+   "feishui_llm",
    "guandu_llm",
    "ming_qing",
    "qin_mie_liu_guo",
@@ -392,7 +393,8 @@ window.SANDBOX_DATA = {
   "chu_han",
   "song_chan_yuan",
   "guandu_llm",
-  "san_guo"
+  "san_guo",
+  "feishui_llm"
  ],
  "vocab": {
   "layers": [
@@ -23144,6 +23146,41 @@ window.SANDBOX_DATA = {
     "scholarship": 3,
     "inference": 2
    }
+  },
+  "feishui_llm": {
+   "key": "feishui_llm",
+   "scene_id": "feishui_llm",
+   "title": "淝水之战（LLM 抽取·人工校订）",
+   "dossier_label": "淝水之战（LLM 抽取落库）",
+   "subtitle": "太元八年（383）· 东晋（谢安/谢玄） vs 前秦（苻坚）",
+   "kind": "battle",
+   "region": "two_jin",
+   "page": "feishui_llm.html",
+   "primary_place": "feishui",
+   "vocab_pack": "feishui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 2,
+    "place": 6,
+    "person": 10,
+    "assert": 19,
+    "conflict": 0,
+    "gap": 1,
+    "record": 13,
+    "scholarship": 2,
+    "inference": 3
+   }
   }
  },
  "slice_index": {
@@ -23288,7 +23325,8 @@ window.SANDBOX_DATA = {
   "chu_han": "slices/chu_han.js",
   "song_chan_yuan": "slices/song_chan_yuan.js",
   "guandu_llm": "slices/guandu_llm.js",
-  "san_guo": "slices/san_guo.js"
+  "san_guo": "slices/san_guo.js",
+  "feishui_llm": "slices/feishui_llm.js"
  },
  "corridors": [
   {
@@ -23930,6 +23968,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 12
+   },
+   {
+    "id": "FEI_018",
+    "scene": "feishui_llm",
+    "subject": "event:ev_feishui_llm_02",
+    "title": "《资治通鉴》未明言晋军总数；北府兵约八万为后世常见说法，确数待考",
+    "missing": "文献考据 / 数字辨析",
+    "where": "《晋书·谢玄传》或《资治通鉴》",
+    "skills": [
+     "文献考据",
+     "数字辨析"
+    ],
+    "accept": "若能核到北府兵确切出战人数，可补此缺",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 18
    },
    {
     "id": "FENSHUG01",
@@ -26623,6 +26677,7 @@ window.SANDBOX_DATA = {
     "dujiangyan",
     "dunzun",
     "feishui",
+    "feishui_llm",
     "fenshu",
     "fotao",
     "four_inv",
@@ -27210,6 +27265,26 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:fs_jin",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "feishui_llm",
+    "name": "feishui_llm",
+    "total": 19,
+    "layers": {
+     "record": 13,
+     "inference": 3,
+     "scholarship": 2,
+     "gap": 1
+    },
+    "party_counts": {
+     "后世官修": 17,
+     "诸胡": 2
+    },
+    "faction_counts": {},
+    "event_count": 5,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_feishui_llm_01",
     "best_resonance": 0.0
    },
    {

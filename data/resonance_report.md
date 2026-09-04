@@ -37,6 +37,7 @@
 | dujiangyan | 13 | 3 | **0.000** | event:dj_168（0.000） | gap 1 / inference 2 / record 7 / scholarship 3 |
 | dunzun | 11 | 6 | **0.000** | event:dz_134（0.000） | gap 2 / scholarship 9 |
 | feishui | 13 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 7 / scholarship 3 |
+| feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
 | fenshu | 13 | 2 | **0.000** | event:fs_212（0.000） | gap 1 / inference 3 / record 7 / scholarship 2 |
 | fotao | 10 | 2 | **0.000** | event:ft_67（0.000） | gap 1 / record 7 / scholarship 2 |
 | four_inv | 15 | 4 | **0.000** | event:fi_compass（0.000） | gap 1 / record 10 / scholarship 4 |
@@ -254,6 +255,11 @@
 | event:dz_legacy | dunzun | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dz_taixue | dunzun | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_chibi | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_feishui_llm_01 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_feishui_llm_02 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
+| event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_feishui_llm_04 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_feishui_llm_05 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_gaopingling | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_guandu_llm_01 | guandu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_guandu_llm_02 | guandu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |

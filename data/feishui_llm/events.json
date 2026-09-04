@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "id": "ev_feishui_llm_01",
+      "subject": "event:ev_feishui_llm_01",
+      "year": 383,
+      "era": "东晋·太元八年",
+      "title": "洛涧之战",
+      "kind": "战事·前哨战",
+      "text": "刘牢之率北府兵夜袭洛涧，斩秦将梁成，秦军溃退；洛涧之捷大振晋军士气，奠定淝水决战的心理优势",
+      "place_id": "luojian"
+    },
+    {
+      "id": "ev_feishui_llm_02",
+      "subject": "event:ev_feishui_llm_02",
+      "year": 383,
+      "era": "东晋·太元八年",
+      "title": "淝水对峙",
+      "kind": "战事·会战",
+      "text": "苻坚登寿阳城望八公山草木，疑皆晋兵（草木皆兵）；东晋遣使请秦军稍退以便决战，苻坚欲半渡击之而许之",
+      "place_id": "feishui"
+    },
+    {
+      "id": "ev_feishui_llm_03",
+      "subject": "event:ev_feishui_llm_03",
+      "year": 383,
+      "era": "东晋·太元八年",
+      "title": "淝水决战·秦军自溃",
+      "kind": "战事·决战",
+      "text": "秦军多新附之众本无斗志，甫退即自乱；降将朱序阵后大呼『秦军败矣』，军心崩溃自溃；苻融马倒被杀，前线指挥断绝；苻坚中流矢单骑奔淮北，『风声鹤唳，昼夜不敢息』",
+      "place_id": "feishui"
+    },
+    {
+      "id": "ev_feishui_llm_04",
+      "subject": "event:ev_feishui_llm_04",
+      "year": 383,
+      "era": "东晋·太元八年（战后）",
+      "title": "前秦瓦解·北方再分裂",
+      "kind": "战后格局",
+      "text": "淝水败后前秦土崩瓦解，慕容垂、姚苌相继叛秦立后燕、后秦，北方重新陷入分裂",
+      "place_id": "huaibei"
+    },
+    {
+      "id": "ev_feishui_llm_05",
+      "subject": "event:ev_feishui_llm_05",
+      "year": 383,
+      "era": "东晋·太元八年",
+      "title": "谢安得捷报（矫情镇物）",
+      "kind": "战事·善后",
+      "text": "谢安得驿书了无喜色，围棋如故，体现东晋门阀宰相以镇定安朝野的政治文化",
+      "place_id": "jiankang"
+    }
+  ]
+}

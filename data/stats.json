@@ -1,12 +1,13 @@
 {
-  "scenes_total": 142,
-  "historical": 133,
+  "scenes_total": 143,
+  "historical": 134,
   "fictional": 9,
-  "assertions_total": 2175,
-  "sources_total": 101,
+  "assertions_total": 2194,
+  "sources_total": 103,
   "factions_total": 9,
   "vocab_packs": [
     "chu_han",
+    "feishui_llm",
     "guandu_llm",
     "ming_qing",
     "qin_mie_liu_guo",
@@ -16,7 +17,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 203,
+  "leads_total": 204,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1065,6 +1066,13 @@
       "kind": "dynasty",
       "assertions": 20,
       "factions": {}
+    },
+    {
+      "id": "feishui_llm",
+      "title": "淝水之战（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 19,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1209,6 +1217,7 @@
     "chu_han": "楚汉之争",
     "song_chan_yuan": "澶渊之盟",
     "guandu_llm": "官渡之战（LLM 抽取·人工校订）",
-    "san_guo": "三国鼎立"
+    "san_guo": "三国鼎立",
+    "feishui_llm": "淝水之战（LLM 抽取·人工校订）"
   }
 }

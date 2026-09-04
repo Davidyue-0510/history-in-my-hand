@@ -34,6 +34,7 @@
       "dujiangyan",
       "dunzun",
       "feishui",
+      "feishui_llm",
       "fenshu",
       "fotao",
       "four_inv",
@@ -621,6 +622,26 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:fs_jin",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "feishui_llm",
+      "name": "feishui_llm",
+      "total": 19,
+      "layers": {
+        "record": 13,
+        "inference": 3,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 17,
+        "诸胡": 2
+      },
+      "faction_counts": {},
+      "event_count": 5,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_feishui_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -5160,6 +5181,161 @@
         "san_guo"
       ],
       "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_feishui_llm_01",
+      "name": "event:ev_feishui_llm_01",
+      "scenes": [
+        "feishui_llm"
+      ],
+      "scene_names": [
+        "feishui_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_feishui_llm_02",
+      "name": "event:ev_feishui_llm_02",
+      "scenes": [
+        "feishui_llm"
+      ],
+      "scene_names": [
+        "feishui_llm"
+      ],
+      "total": 9,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.111,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_feishui_llm_03",
+      "name": "event:ev_feishui_llm_03",
+      "scenes": [
+        "feishui_llm"
+      ],
+      "scene_names": [
+        "feishui_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_feishui_llm_04",
+      "name": "event:ev_feishui_llm_04",
+      "scenes": [
+        "feishui_llm"
+      ],
+      "scene_names": [
+        "feishui_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_feishui_llm_05",
+      "name": "event:ev_feishui_llm_05",
+      "scenes": [
+        "feishui_llm"
+      ],
+      "scene_names": [
+        "feishui_llm"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
