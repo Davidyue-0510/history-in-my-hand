@@ -858,7 +858,7 @@
         '<div class="yr">' + (ev.year || '') + '</div></div>' +
         '<div class="ev-body"><div class="ev-title">' + ev.title +
         '<span class="ev-kind">' + ev.kind + '</span></div>' +
-        '<div class="ev-text">' + ev.text + '</div></div>';
+        '<div class="ev-text">' + (ev.text || ev.summary || '') + '</div></div>';
       n.addEventListener('click', function () {
         state.t = i;
         refresh();

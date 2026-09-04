@@ -28,6 +28,9 @@
     E16 gap 层 lead.skills 不是「非空字符串数组」（写成字符串会被打散成单字并让前端崩溃）
     E17 实际控制数据 data/control_liaodong.json 不规整（place_id 无主 / party 不在词表 /
         start·end 非整数 / end<start / 同地点时间段重叠）——图层会据此算出错的辖区
+    E18 events.json 字段契约（v0.95）：renderEvents 只读 era/year/title/kind/text，
+        缺任一必需字段或正文（text/summary 皆空）会让事件面板显示 undefined；
+        旧格式 name/start/end/note 不被渲染器读取，属 schema 漂移
 
   W 级（warning，该修）
     W01 引文标 verbatim 但项目整体尚未完成点校本核对
@@ -44,6 +47,7 @@
     W12 县治所在 control_liaodong.json 中无任何控制权记录——图层上该城留白（疑似漏写）
     W13 source.faction 不在该切片语境包（data/vocab/<pack>.json）的 factions 受控词表内
         （派系维度拼写错误会导致共振的『明方内派系细分』统计静默把该来源归错组）
+    W14 events.json 事件含旧格式字段 name/start/end/note（渲染器不读，疑似 schema 漂移）
 
 用法：
     python tools/lint.py            # 全量检查
@@ -148,6 +152,33 @@ def check_scene(sc, rep):
     place_ids = {p['id'] for p in places}
     person_ids = {p['id'] for p in persons}
     event_ids = {e['id'] for e in events}
+
+    # ── events.json 字段契约（v0.95）──
+    # renderEvents 只读 era/year/title/kind/text。旧格式 name/start/end/note 会让
+    # 事件面板显示「undefined undefined」（v0.95 前 chu_han/guandu_llm/san_guo 即此坑）。
+    # 虚构切片（kind=fiction）用 summary 承载正文，renderEvents 已兼容
+    # (ev.text || ev.summary)；虚构的 year 可为空串「」（时间靠 era 承载），故不强制。
+    is_fiction = REG_SCENES.get(scene, {}).get('kind') == 'fiction'
+    EV_REQUIRED = ('era', 'title', 'kind')  # 所有切片都必须有
+    EV_OLD = ('name', 'start', 'end', 'note')
+    for ev in events:
+        evid = ev.get('id', '<无 id>')
+        miss = [k for k in EV_REQUIRED if not ev.get(k)]
+        if not is_fiction and not ev.get('year'):
+            miss.append('year')
+        if miss:
+            rep.err('E18', scene,
+                    'events.json 事件「%s」缺渲染器必需字段 %s（renderEvents 读 era/year/title/kind/text）'
+                    % (evid, '/'.join(miss)))
+        if not (ev.get('text') or ev.get('summary')):
+            rep.err('E18', scene,
+                    'events.json 事件「%s」缺正文（text / summary 皆空）——事件面板将显示 undefined'
+                    % evid)
+        used_old = [k for k in EV_OLD if k in ev]
+        if used_old:
+            rep.warn('W14', scene,
+                     'events.json 事件「%s」含旧格式字段 %s（渲染器不读，疑似 schema 漂移）'
+                     % (evid, '/'.join(used_old)))
     # 时间轴事件 / 交战点通过显式 subject 字段与断言 subject 挂钩
     # （见 events.json / engagements.json 的 _comment_subject）
     engagements = (sc['engagements'] or {}).get('engagements', [])
