@@ -111,8 +111,8 @@ window.SANDBOX_SLICES["san_guo"] = {
   {
    "id": "sanguozhi",
    "title": "三国志（魏书/蜀书/吴书）",
-   "party": "晋·官修",
-   "stance_label": "西晋官修正史，整合三国",
+   "party": "西晋·私修",
+   "stance_label": "西晋陈寿私修史，整合三国",
    "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
    "color": "#6C7A89",
    "compiler": "陈寿（西晋）",
@@ -363,7 +363,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     1
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -387,7 +387,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     1,
     2
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -410,7 +410,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     2
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -433,7 +433,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     2
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -456,7 +456,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     3
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -479,7 +479,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     3
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -548,7 +548,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     5
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -571,7 +571,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     5
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -594,7 +594,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     6
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -617,7 +617,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "dims": [
     6
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -641,7 +641,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     1,
     6
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -665,7 +665,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     1,
     6
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -744,7 +744,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     ],
     "accept": "辑校《华阳国志》与魏吴记载中蜀汉内政的交叉证据，标出可确证与仅见单方记载的部分"
    },
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -791,7 +791,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     3,
     6
    ],
-   "_party": "晋·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -1241,7 +1241,7 @@ window.SANDBOX_SLICES["san_guo"] = {
    "蜀·当代": "蜀",
    "吴·官修": "吴",
    "吴·当代": "吴",
-   "晋·官修": "晋",
+   "西晋·私修": "晋",
    "晋·当代": "晋",
    "唐·官修": "后世官修",
    "宋·官修": "后世官修",

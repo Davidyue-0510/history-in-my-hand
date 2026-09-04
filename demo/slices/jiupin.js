@@ -91,7 +91,7 @@ window.SANDBOX_SLICES["jiupin"] = {
    "id": "san_guo_zhi_jp",
    "title": "《三国志》",
    "name": "《三国志》",
-   "party": "官修史书",
+   "party": "私家著述",
    "faction": "menfa",
    "bias_note": "陈寿记九品中正之设，措辞平允，反映士族立场。"
   },
@@ -456,7 +456,7 @@ window.SANDBOX_SLICES["jiupin"] = {
     5,
     6
    ],
-   "_party": "官修史书",
+   "_party": "私家著述",
    "_faction": "menfa"
   },
   {

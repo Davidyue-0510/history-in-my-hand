@@ -1244,8 +1244,7 @@ window.SANDBOX_RESONANCE = {
    },
    "party_counts": {
     "综合史料": 12,
-    "官修史书": 1,
-    "私家著述": 1
+    "私家著述": 2
    },
    "faction_counts": {
     "menfa": 1,

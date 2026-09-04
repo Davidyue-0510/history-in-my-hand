@@ -3,8 +3,8 @@
     {
       "id": "sanguozhi",
       "title": "三国志（魏书/蜀书/吴书）",
-      "party": "晋·官修",
-      "stance_label": "西晋官修正史，整合三国",
+      "party": "西晋·私修",
+      "stance_label": "西晋陈寿私修史，整合三国",
       "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
       "color": "#6C7A89",
       "compiler": "陈寿（西晋）",

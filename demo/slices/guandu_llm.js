@@ -102,8 +102,8 @@ window.SANDBOX_SLICES["guandu_llm"] = {
   {
    "id": "sanguozhi_wudi",
    "title": "三国志·魏书·武帝纪",
-   "party": "魏·官修",
-   "stance_label": "魏方本纪（西晋官修正史）",
+   "party": "西晋·私修",
+   "stance_label": "魏方本纪（西晋陈寿私修）",
    "distance_label": "西晋陈寿撰，距官渡之战约八十年",
    "color": "#B23A48",
    "compiler": "陈寿（西晋）",
@@ -113,8 +113,8 @@ window.SANDBOX_SLICES["guandu_llm"] = {
   {
    "id": "peisongzhi",
    "title": "三国志注（裴松之注）",
-   "party": "南朝宋·官修",
-   "stance_label": "后世注疏考订",
+   "party": "南朝宋·私修",
+   "stance_label": "南朝宋私修注疏考订",
    "distance_label": "南朝刘宋裴松之奉诏作注，距官渡之战约二百五十年",
    "color": "#6C7A89",
    "compiler": "裴松之（南朝宋）",
@@ -275,7 +275,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -299,7 +299,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     3,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -322,7 +322,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -346,7 +346,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -369,7 +369,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -393,7 +393,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -416,7 +416,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -441,7 +441,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -465,7 +465,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -489,7 +489,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -513,7 +513,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     1,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -537,7 +537,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     5,
     6
    ],
-   "_party": "南朝宋·官修",
+   "_party": "南朝宋·私修",
    "_faction": null
   },
   {
@@ -561,7 +561,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
-   "_party": "魏·官修",
+   "_party": "西晋·私修",
    "_faction": null
   },
   {
@@ -593,7 +593,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     ],
     "accept": "需要更多文献或考古证据核实三方兵力实数"
    },
-   "_party": "南朝宋·官修",
+   "_party": "南朝宋·私修",
    "_faction": null
   }
  ],
@@ -811,13 +811,13 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "二手综述"
   ],
   "party_bucket": {
-   "魏·官修": "魏",
+   "西晋·私修": "魏",
    "魏·当代": "魏",
    "晋·官修": "魏",
    "袁·官修": "袁",
    "袁·当代": "袁",
    "第三方": "第三方",
-   "南朝宋·官修": "后世官修",
+   "南朝宋·私修": "后世官修",
    "宋·官修": "后世官修",
    "二手综述": "二手综述"
   },
