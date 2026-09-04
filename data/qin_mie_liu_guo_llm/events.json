@@ -1,0 +1,82 @@
+{
+ "events": [
+  {
+   "id": "ev_qin_mie_liu_guo_llm_01",
+   "subject": "event:ev_qin_mie_liu_guo_llm_01",
+   "year": -230,
+   "era": "秦王政十七年",
+   "title": "滅韓",
+   "kind": "戰事",
+   "text": "內史騰攻韓，虜韓王安，置潁川郡",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_llm_02",
+   "subject": "event:ev_qin_mie_liu_guo_llm_02",
+   "year": -228,
+   "era": "秦王政十九年",
+   "title": "滅趙",
+   "kind": "戰事",
+   "text": "王翦、羌瘣定趙地，虜趙王遷",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_llm_03",
+   "subject": "event:ev_qin_mie_liu_guo_llm_03",
+   "year": -225,
+   "era": "秦王政二十二年",
+   "title": "滅魏",
+   "kind": "戰事",
+   "text": "王賁引河溝灌大梁，魏王請降",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_llm_04",
+   "subject": "event:ev_qin_mie_liu_guo_llm_04",
+   "year": -224,
+   "era": "秦王政二十三年",
+   "title": "滅楚",
+   "kind": "戰事",
+   "text": "王翦、蒙武破楚軍，虜荊王",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_llm_05",
+   "subject": "event:ev_qin_mie_liu_guo_llm_05",
+   "year": -222,
+   "era": "秦王政二十五年",
+   "title": "滅燕、代",
+   "kind": "戰事",
+   "text": "王賁攻燕遼東，得燕王喜，還攻代虜代王嘉",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_mie_liu_guo_llm_06",
+   "subject": "event:ev_qin_mie_liu_guo_llm_06",
+   "year": -221,
+   "era": "秦王政二十六年",
+   "title": "滅齊",
+   "kind": "戰事",
+   "text": "王賁從燕南攻齊，得齊王建",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -132,6 +132,20 @@
       "points": 2754,
       "covered": 2754,
       "fetched_at": "2026-08-10"
+    },
+    "qin_mie_liu_guo_llm": {
+      "label": "秦灭六国（LLM 抽取·人工校订）",
+      "file": "qin_mie_liu_guo_llm_grid.json",
+      "bbox": [
+        112.5,
+        34.3,
+        115.0,
+        39.5
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

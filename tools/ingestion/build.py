@@ -688,28 +688,30 @@ def main():
     else:
         sd["corridors"] = []
 
-    # 研究线索（由 tools/leads.py 从 gap 断言生成）
+    # 研究线索（由 tools/leads.py 从 gap 断言生成）—— 不进壳，改为懒加载 chunk
+    # （leads.js），与 epochs.js 同机制；否则随场景增长壳会突破 500KB 契约。
     leads_path = os.path.join(DATA, "leads.json")
     if os.path.exists(leads_path):
         with open(leads_path, encoding="utf-8") as f:
-            sd["leads"] = json.load(f)
+            leads_data = json.load(f)
     else:
-        sd["leads"] = {"leads": []}
+        leads_data = {"leads": []}
 
     # 共振报告（hub 页面用）—— 与 tools/resonance.py 的输出同步。
     # 壳只下发 hub 真正消费的 meta + scene_summary（约 30KB）；
     # 完整的事件级共振矩阵（events，~190KB）留在 data/resonance_report.json，
     # 由网关 [6] 校验、供离线深度分析，不进壳——否则 126 场景会让壳突破 500KB 上限。
+    # meta + scene_summary 同样拆为懒加载 chunk（resonance.js），与 epochs.js 同机制。
     rp = os.path.join(DATA, "resonance_report.json")
     if os.path.exists(rp):
         with open(rp, encoding="utf-8") as f:
             _full_res = json.load(f)
-        sd["resonance"] = {
+        resonance_data = {
             "meta": _full_res.get("meta", {}),
             "scene_summary": _full_res.get("scene_summary", []),
         }
     else:
-        sd["resonance"] = {"meta": {}, "scene_summary": []}
+        resonance_data = {"meta": {}, "scene_summary": []}
 
     # ── 实际控制态势（v0.10）──────────────────────────────────────────────
     # 控制权是「空间控制权」维度的断言扩展：谁在 [start,end] 年间控制哪座城。
@@ -777,6 +779,23 @@ def main():
         f.write("window.SANDBOX_DATA.epochs = window.SANDBOX_EPOCHS;\n")
     print("已生成 %s  (%.0f KB)" % (epochs_path, os.path.getsize(epochs_path) / 1024.0))
 
+    # 研究线索 / 共振报告：独立懒加载 chunk（leads.js / resonance.js），不进壳，
+    # 与 epochs.js 同机制——解析期由 data.js bootstrap document.write 同步装载，
+    # 前端（county.js / index.html）仍读 window.SANDBOX_DATA.leads / .resonance，零改动。
+    for _name, _var, _data in (
+        ("leads", "SANDBOX_LEADS", leads_data),
+        ("resonance", "SANDBOX_RESONANCE", resonance_data),
+    ):
+        _p = os.path.join(os.path.dirname(OUT), _name + ".js")
+        with open(_p, "w", encoding="utf-8") as f:
+            f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
+            f.write("// 懒加载 chunk：解析期由 data.js bootstrap document.write 同步装载，无需前端改动。\n")
+            f.write("window.%s = " % _var)
+            json.dump(_data, f, ensure_ascii=False, indent=1)
+            f.write(";\n")
+            f.write("window.SANDBOX_DATA.%s = window.%s;\n" % (_name, _var))
+        print("已生成 %s  (%.0f KB)" % (_p, os.path.getsize(_p) / 1024.0))
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("// 本文件由 tools/build.py 自动生成，请勿手工编辑。\n")
@@ -794,6 +813,8 @@ def main():
         f.write("(function () {\n")
         f.write("  var order = (window.SANDBOX_DATA.scene_order) || [];\n")
         f.write("  document.write('<script src=\"epochs.js\"><\\/script>');\n")
+        f.write("  document.write('<script src=\"leads.js\"><\\/script>');\n")
+        f.write("  document.write('<script src=\"resonance.js\"><\\/script>');\n")
         f.write("  for (var i = 0; i < order.length; i++) {\n")
         f.write("    document.write('<script src=\"slices/' + order[i] + '.js\"><\\/script>');\n")
         f.write("  }\n")

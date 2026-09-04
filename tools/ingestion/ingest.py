@@ -274,7 +274,7 @@ def _call_llm(prompt):
         "model": model,
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0,
-        "max_tokens": 16000,
+        "max_tokens": 24000,
         "stream": False,
     }).encode("utf-8")
     req = urllib.request.Request(
@@ -631,9 +631,14 @@ WORLD_PROMPT = r"""你是历史史料结构化抽取器。将从一段原始史�
   "scale": "theater/empire/province",
   "note": "",
   "dims": [1,6]  // 六维信息类别：该断言提供证据的维度编号（1地理/2技术/3制度/4社会/5思想/6事件），可多选
-要求：10–16 条断言（至少含 1 条 scholarship、1 条 gap）。gap 断言必须含 lead 对象：
+要求：12–15 条断言（至少含 1 条 scholarship、1 条 gap）。gap 断言必须含 lead 对象：
   "lead": {{"where": "...", "skills": ["..."], "accept": "..."}}
 record 层必须给非空 quote。所有正文字段用原文的**繁体**转写（引文严格保留原文用字）。
+
+【精简硬约束（务必遵守，否则输出被截断导致生成失败）】
+- value_text / quote / text / note 每个字段严格 ≤ 20 个汉字，note 除必要说明外留空，严禁长叙述。
+- 断言总数 12–15 条；persons ≤ 8；events ≤ 6；places ≤ 10；edges ≤ 5。
+- 直接输出 JSON，不要任何解释、不要 markdown 代码块。篇幅超限会触发模型截断，JSON 非法即失败。
 
 【立场冲突】如果同一 (subject, predicate) 有不同取值——正是本项目的核心展示目标——务必写出对立断言。
 例如同一战役的伤亡，各方记载不同，就给多条断言，标不���的 value_text 和不同的置信度/note。

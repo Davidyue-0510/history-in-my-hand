@@ -1,4 +1,6 @@
-{
+// 本文件由 tools/build.py 自动生成，请勿手工编辑。
+// 懒加载 chunk：解析期由 data.js bootstrap document.write 同步装载，无需前端改动。
+window.SANDBOX_LEADS = {
  "_comment": "可认领的研究线索（v0.5）。每条 gap 断言的 lead 块汇总而成。新增 gap + lead 即可出现在此；hub / county 页的「线索」页签自动渲染。",
  "_schema_version": "0.1",
  "leads": [
@@ -3281,4 +3283,5 @@
    "_src_line": 12
   }
  ]
-}
+};
+window.SANDBOX_DATA.leads = window.SANDBOX_LEADS;

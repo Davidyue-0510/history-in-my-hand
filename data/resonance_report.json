@@ -91,6 +91,7 @@
       "ningyuan",
       "poyanghu",
       "qin_mie_liu_guo",
+      "qin_mie_liu_guo_llm",
       "qin_unify",
       "qing_han",
       "san_guo",
@@ -1734,6 +1735,25 @@
       "event_count": 5,
       "avg_resonance": 0.0,
       "best_event": "event:ev_qin_mie_liu_guo_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "qin_mie_liu_guo_llm",
+      "name": "qin_mie_liu_guo_llm",
+      "total": 17,
+      "layers": {
+        "record": 14,
+        "inference": 1,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 17
+      },
+      "faction_counts": {},
+      "event_count": 6,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_qin_mie_liu_guo_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -5821,6 +5841,192 @@
         "qin_mie_liu_guo"
       ],
       "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_01",
+      "name": "event:ev_qin_mie_liu_guo_llm_01",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_02",
+      "name": "event:ev_qin_mie_liu_guo_llm_02",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 4,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_03",
+      "name": "event:ev_qin_mie_liu_guo_llm_03",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_04",
+      "name": "event:ev_qin_mie_liu_guo_llm_04",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_05",
+      "name": "event:ev_qin_mie_liu_guo_llm_05",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qin_mie_liu_guo_llm_06",
+      "name": "event:ev_qin_mie_liu_guo_llm_06",
+      "scenes": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "scene_names": [
+        "qin_mie_liu_guo_llm"
+      ],
+      "total": 3,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,

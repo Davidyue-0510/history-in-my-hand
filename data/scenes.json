@@ -326,7 +326,8 @@
   "guandu_llm",
   "san_guo",
   "feishui_llm",
-  "changping_llm"
+  "changping_llm",
+  "qin_mie_liu_guo_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -11770,6 +11771,109 @@
      ],
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
+    }
+   }
+  },
+  "qin_mie_liu_guo_llm": {
+   "kind": "battle",
+   "region": "guangzhong",
+   "title": "秦灭六国（LLM 抽取·人工校订）",
+   "dossier_label": "qin_mie_liu_guo_llm",
+   "subtitle": "",
+   "primary_place": "xianyang",
+   "dossier_event": "event:ev_qin_mie_liu_guo_llm_06",
+   "vocab_pack": "qin_mie_liu_guo_llm",
+   "terrain_grid": "qin_mie_liu_guo",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
+   "subject_names": {
+    "event:ev_qin_mie_liu_guo_llm_01": "滅韓",
+    "event:ev_qin_mie_liu_guo_llm_02": "滅趙",
+    "event:ev_qin_mie_liu_guo_llm_03": "滅魏",
+    "event:ev_qin_mie_liu_guo_llm_04": "滅楚",
+    "event:ev_qin_mie_liu_guo_llm_05": "滅燕、代",
+    "event:ev_qin_mie_liu_guo_llm_06": "滅齊",
+    "place:hanyang": "潁川",
+    "place:jingxing": "井陘",
+    "place:handan": "邯鄲",
+    "place:zhongshan": "中山",
+    "place:ji": "薊",
+    "place:daliang": "大梁",
+    "place:chen": "陳",
+    "place:pingyu": "平輿",
+    "place:liaodong": "遼東",
+    "place:dai": "代",
+    "place:xianyang": "咸陽",
+    "place:linzi": "臨淄",
+    "person:QIN__p01": "秦王政",
+    "person:QIN__p02": "王翦",
+    "person:QIN__p03": "王賁",
+    "person:QIN__p04": "內史騰",
+    "person:QIN__p05": "韓王安",
+    "person:QIN__p06": "趙王遷",
+    "person:QIN__p07": "燕太子丹",
+    "person:QIN__p08": "荊軻"
+   },
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（秦行郡县、六国旧贵离心，统一后治理张力）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；远交近攻+分化瓦解（反间杀李牧）降低后勤消耗（R7）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；六国各自为战，秦得地利渐并，动员潜力不对称"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心（自西向东次第吞并，前221 一统）"
     }
    }
   }

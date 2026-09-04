@@ -1,9 +1,9 @@
 {
-  "scenes_total": 144,
-  "historical": 135,
+  "scenes_total": 145,
+  "historical": 136,
   "fictional": 9,
-  "assertions_total": 2209,
-  "sources_total": 105,
+  "assertions_total": 2226,
+  "sources_total": 106,
   "factions_total": 9,
   "vocab_packs": [
     "changping_llm",
@@ -12,13 +12,14 @@
     "guandu_llm",
     "ming_qing",
     "qin_mie_liu_guo",
+    "qin_mie_liu_guo_llm",
     "san_guo",
     "song",
     "tang",
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 205,
+  "leads_total": 206,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1081,6 +1082,13 @@
       "kind": "battle",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "qin_mie_liu_guo_llm",
+      "title": "秦灭六国（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1227,6 +1235,7 @@
     "guandu_llm": "官渡之战（LLM 抽取·人工校订）",
     "san_guo": "三国鼎立",
     "feishui_llm": "淝水之战（LLM 抽取·人工校订）",
-    "changping_llm": "长平之战（LLM 抽取·人工校订）"
+    "changping_llm": "长平之战（LLM 抽取·人工校订）",
+    "qin_mie_liu_guo_llm": "秦灭六国（LLM 抽取·人工校订）"
   }
 }

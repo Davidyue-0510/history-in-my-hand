@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "hanyang",
+   "to": "jingxing",
+   "type": "military",
+   "label": "王翦攻趙路線",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "handan",
+   "to": "zhongshan",
+   "type": "military",
+   "label": "王翦屯中山",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "ji",
+   "to": "liaodong",
+   "type": "military",
+   "label": "燕王喜東退",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "daliang",
+   "to": "liaodong",
+   "type": "military",
+   "label": "王賁攻燕遼東",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "liaodong",
+   "to": "dai",
+   "type": "military",
+   "label": "還攻代",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "秦王政",
+   "role": "秦國國君",
+   "note": "後為秦始皇",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "王翦",
+   "role": "秦將",
+   "note": "滅趙、楚主將",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p03",
+   "name": "王賁",
+   "role": "秦將",
+   "note": "王翦之子，滅魏、燕、齊",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p04",
+   "name": "內史騰",
+   "role": "秦內史",
+   "note": "攻韓主將",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p05",
+   "name": "韓王安",
+   "role": "韓國末代王",
+   "note": "被俘",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p06",
+   "name": "趙王遷",
+   "role": "趙國末代王",
+   "note": "被俘",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p07",
+   "name": "燕太子丹",
+   "role": "燕國太子",
+   "note": "遣荊軻刺秦",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p08",
+   "name": "荊軻",
+   "role": "刺客",
+   "note": "刺秦失敗被殺",
+   "_source_idx": 0,
+   "_source_name": "史记·秦始皇本纪（附王翦列传灭六国段落）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
