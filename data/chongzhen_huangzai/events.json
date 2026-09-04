@@ -1,34 +1,54 @@
 {
- "events": [
-  {
-   "id": "ev_hz_1637",
-   "subject": "event:hz_1637",
-   "year": 1637,
-   "era": "崇祯十",
-   "title": "蝗起",
-   "kind": "蝗灾",
-   "text": "陕东、晋南、豫开蝗蝻渐起，田禾受损。",
-   "place": "kaofeng"
-  },
-  {
-   "id": "ev_hz_1639",
-   "subject": "event:hz_1639",
-   "year": 1639,
-   "era": "崇祯十二",
-   "title": "蝗极",
-   "kind": "蝗灾",
-   "text": "飞蝗蔽天，蝗区遍及十省，禾稼瞬息一空。",
-   "place": "kaofeng"
-  },
-  {
-   "id": "ev_hz_1644",
-   "subject": "event:hz_1644",
-   "year": 1644,
-   "era": "崇祯十七",
-   "title": "蝗食人",
-   "kind": "蝗灾",
-   "text": "河南飞蝗食民间小儿，灾情骇人听闻。",
-   "place": "kaofeng"
-  }
- ]
+  "events": [
+    {
+      "id": "ev_hz_1637",
+      "subject": "event:hz_1637",
+      "year": 1637,
+      "era": "崇祯十",
+      "title": "蝗起",
+      "kind": "蝗灾",
+      "text": "陕东、晋南、豫开蝗蝻渐起，田禾受损。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_hz_1639",
+      "subject": "event:hz_1639",
+      "year": 1639,
+      "era": "崇祯十二",
+      "title": "蝗极",
+      "kind": "蝗灾",
+      "text": "飞蝗蔽天，蝗区遍及十省，禾稼瞬息一空。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_hz_1644",
+      "subject": "event:hz_1644",
+      "year": 1644,
+      "era": "崇祯十七",
+      "title": "蝗食人",
+      "kind": "蝗灾",
+      "text": "河南飞蝗食民间小儿，灾情骇人听闻。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_hz_zhi",
+      "subject": "event:hz_zhi",
+      "year": 1639,
+      "era": "崇祯十二",
+      "title": "官民治蝗",
+      "kind": "应对",
+      "text": "捕蝻掘卵、以米易蝻，然灾广力薄。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_hz_causal",
+      "subject": "event:hz_causal",
+      "year": 1640,
+      "era": "崇祯十三",
+      "title": "蝗极而饥",
+      "kind": "因果",
+      "text": "禾稼瞬空，饥馑随起，蝗饥表里。",
+      "place": "kaofeng"
+    }
+  ]
 }

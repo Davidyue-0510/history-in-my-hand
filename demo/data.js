@@ -21176,11 +21176,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 1,
     "person": 2,
-    "assert": 3,
+    "assert": 11,
     "conflict": 0,
-    "gap": 1,
+    "gap": 2,
     "record": 0,
-    "scholarship": 2,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -21532,6 +21532,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     4,
     5,
     6
@@ -21541,12 +21543,12 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 29,
-    "person": 2,
-    "assert": 3,
-    "conflict": 0,
-    "gap": 0,
+    "person": 3,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 1,
     "record": 0,
-    "scholarship": 3,
+    "scholarship": 11,
     "inference": 0
    }
   },
@@ -21565,6 +21567,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -21572,12 +21578,12 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 31,
-    "person": 1,
-    "assert": 3,
+    "person": 2,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 3,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -21596,7 +21602,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -21604,12 +21613,12 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 28,
-    "person": 1,
-    "assert": 3,
+    "person": 2,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 3,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -21628,7 +21637,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
+    3,
     4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -21636,12 +21648,12 @@ window.SANDBOX_DATA = {
    "counts": {
     "src": 1,
     "place": 27,
-    "person": 0,
-    "assert": 3,
+    "person": 1,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 3,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -23680,6 +23692,38 @@ window.SANDBOX_DATA = {
     "_src_line": 19
    },
    {
+    "id": "chongzhen_han_07",
+    "scene": "chongzhen_han",
+    "subject": "event:ch_1640",
+    "title": "崇祯朝降水序列据《中国近五百年旱涝分布图集》等重建，地方志记载详略不一，具体年际强度存研究空间。",
+    "missing": "气候重建 / 方志辑录",
+    "where": "方志与旱涝图集对读",
+    "skills": [
+     "气候重建",
+     "方志辑录"
+    ],
+    "accept": "补年际强度异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
+    "id": "chongzhen_huangzai_07",
+    "scene": "chongzhen_huangzai",
+    "subject": "event:hz_1639",
+    "title": "明末蝗灾发生面积与迁入路径多据地方志辑录，飞蝗种群动态无可量化记录，具体规模存研究空间。",
+    "missing": "昆虫种群重建 / 方志辑录",
+    "where": "方志蝗灾条对读",
+    "skills": [
+     "昆虫种群重建",
+     "方志辑录"
+    ],
+    "accept": "补迁入路径异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
+   },
+   {
     "id": "CH015",
     "scene": "chu_han",
     "subject": "event:gai_xia",
@@ -23838,6 +23882,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 3
+   },
+   {
+    "id": "dunzun_08",
+    "scene": "dunzun",
+    "subject": "event:dz_jinwen",
+    "title": "董仲舒对策原本与师说流传，后世辑佚不一，今传本或经窜乱，具体文本存在缺口。",
+    "missing": "经学辑佚 / 文本校勘",
+    "where": "今文辑佚对读",
+    "skills": [
+     "经学辑佚",
+     "文本校勘"
+    ],
+    "accept": "补师说异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 11
    },
    {
     "id": "FEISHUIG01",
@@ -25073,6 +25133,38 @@ window.SANDBOX_DATA = {
     "effort": "2-3 周",
     "issue_url": null,
     "_src_line": 26
+   },
+   {
+    "id": "mingmo_jihuang_09",
+    "scene": "mingmo_jihuang",
+    "subject": "event:mj_1644",
+    "title": "明末人口损耗因战乱饥疫交乘，官方黄册散佚，具体死亡数各家估算差异大，列为可认领研究线索。",
+    "missing": "人口估算 / 灾损校勘",
+    "where": "诸史原文对读",
+    "skills": [
+     "人口估算",
+     "灾损校勘"
+    ],
+    "accept": "补各方视角与纪年异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 12
+   },
+   {
+    "id": "mingmo_shuyi_07",
+    "scene": "mingmo_shuyi",
+    "subject": "event:sy_1643",
+    "title": "明末鼠疫死亡数因叠加剧乱无精确统计，现代研究据方志与人口曲线推估差异大，列为可认领研究线索。",
+    "missing": "人口估算 / 疫情重建",
+    "where": "方志与人口曲线对读",
+    "skills": [
+     "人口估算",
+     "疫情重建"
+    ],
+    "accept": "补死亡规模异文",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 10
    },
    {
     "id": "MOBAIG01",
@@ -26917,15 +27009,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "chongzhen_han",
     "name": "chongzhen_han",
-    "total": 3,
+    "total": 10,
     "layers": {
-     "scholarship": 3
+     "scholarship": 9,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 10
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 5,
     "avg_resonance": 0.0,
     "best_event": "event:ch_1637",
     "best_resonance": 0.0
@@ -26933,15 +27026,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "chongzhen_huangzai",
     "name": "chongzhen_huangzai",
-    "total": 3,
+    "total": 10,
     "layers": {
-     "scholarship": 3
+     "scholarship": 9,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 10
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 5,
     "avg_resonance": 0.0,
     "best_event": "event:hz_1637",
     "best_resonance": 0.0
@@ -27085,16 +27179,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "dunzun",
     "name": "dunzun",
-    "total": 3,
+    "total": 11,
     "layers": {
-     "scholarship": 2,
-     "gap": 1
+     "scholarship": 9,
+     "gap": 2
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 11
     },
     "faction_counts": {},
-    "event_count": 2,
+    "event_count": 6,
     "avg_resonance": 0.0,
     "best_event": "event:dz_134",
     "best_resonance": 0.0
@@ -28064,15 +28158,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "mingmo_jihuang",
     "name": "mingmo_jihuang",
-    "total": 3,
+    "total": 12,
     "layers": {
-     "scholarship": 3
+     "scholarship": 11,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 12
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 6,
     "avg_resonance": 0.0,
     "best_event": "event:mj_1628",
     "best_resonance": 0.0
@@ -28080,15 +28175,16 @@ window.SANDBOX_DATA = {
    {
     "scene": "mingmo_shuyi",
     "name": "mingmo_shuyi",
-    "total": 3,
+    "total": 10,
     "layers": {
-     "scholarship": 3
+     "scholarship": 9,
+     "gap": 1
     },
     "party_counts": {
-     "综合史料": 3
+     "综合史料": 10
     },
     "faction_counts": {},
-    "event_count": 3,
+    "event_count": 5,
     "avg_resonance": 0.0,
     "best_event": "event:sy_1641",
     "best_resonance": 0.0

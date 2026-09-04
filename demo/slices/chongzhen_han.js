@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -341,6 +345,12 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
    "name": "张德二",
    "side": "气象史学者",
    "influence": 0
+  },
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
   }
  ],
  "assertions": [
@@ -409,11 +419,172 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
    ],
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "subject": "event:ch_1637",
+   "predicate": "地理",
+   "value_text": "旱区自陕晋豫扩及北直隶、山东，连旱五载以上，为小冰期鼎盛之表征。",
+   "time": {
+    "start": 1637,
+    "end": 1637,
+    "era_text": "崇祯十"
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    1
+   ],
+   "id": "chongzhen_han_01",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_1640",
+   "predicate": "技术",
+   "value_text": "北方灌溉依赖河渠，大旱河竭，抗旱手段有限，惟事祈祷、截流，无大规模溉田之备。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    2
+   ],
+   "id": "chongzhen_han_02",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_1640",
+   "predicate": "制度",
+   "value_text": "明末三饷加派、仓储虚耗，旱灾之年仍徵比如故，赈济名存实亡。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    3
+   ],
+   "id": "chongzhen_han_03",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_1642",
+   "predicate": "社会",
+   "value_text": "禾稼尽槁，民掘草根、剥树皮，继以人相食，流亡载道。",
+   "time": {
+    "start": 1642,
+    "end": 1642,
+    "era_text": "崇祯十五"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    4
+   ],
+   "id": "chongzhen_han_04",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_zuiji",
+   "predicate": "思想",
+   "value_text": "崇祯屡下罪己诏，以旱为天谴、自省修省，灾异谴告构成应对框架。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    5
+   ],
+   "id": "chongzhen_han_05",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_causal",
+   "predicate": "因果",
+   "value_text": "『旱极而蝗』——连旱令土壤燥坼、虫卵孳生，崇祯十二年后蝗灾随起。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    1,
+    6
+   ],
+   "id": "chongzhen_han_06",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:ch_1640",
+   "predicate": "史料缺环",
+   "value_text": "崇祯朝降水序列据《中国近五百年旱涝分布图集》等重建，地方志记载详略不一，具体年际强度存研究空间。",
+   "time": {
+    "era_text": "崇祯中",
+    "start": 1640,
+    "end": 1640
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "region",
+   "note": "旱涝序列据现代重建",
+   "lead": {
+    "where": "方志与旱涝图集对读",
+    "skills": [
+     "气候重建",
+     "方志辑录"
+    ],
+    "accept": "补年际强度异文"
+   },
+   "dims": [
+    1
+   ],
+   "id": "chongzhen_han_07",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "chongzhen_han_07"
+ ],
  "events": [
   {
    "id": "ev_ch_1637",
@@ -443,6 +614,26 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
    "title": "河涸",
    "kind": "旱灾",
    "text": "黄河水涸、人可徒步，旱情仍炽，饥疫交作。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_ch_zuiji",
+   "subject": "event:ch_zuiji",
+   "year": 1640,
+   "era": "崇祯十三",
+   "title": "旱极罪己",
+   "kind": "诏示",
+   "text": "赤地千里，帝下诏罪己，修省弭灾。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_ch_causal",
+   "subject": "event:ch_causal",
+   "year": 1640,
+   "era": "崇祯十三",
+   "title": "旱极而蝗",
+   "kind": "因果",
+   "text": "连旱土燥，蝗蝻孳生，旱蝗相因。",
    "place": "kaofeng"
   }
  ],

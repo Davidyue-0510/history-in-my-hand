@@ -1,3 +1,10 @@
 {
- "persons": []
+  "persons": [
+    {
+      "id": "chongzhen",
+      "name": "崇祯帝",
+      "side": "明",
+      "influence": 0
+    }
+  ]
 }

@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    4,
    5,
    6
@@ -334,6 +336,12 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
    "name": "高迎祥",
    "side": "明末义军首领",
    "influence": 0
+  },
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
   }
  ],
  "assertions": [
@@ -405,11 +413,230 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
    ],
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "subject": "event:mj_1628",
+   "predicate": "地理",
+   "value_text": "灾区以陕北为起点，沿渭河、黄河谷地东扩至山西、河南。",
+   "time": {
+    "start": 1628,
+    "end": 1628,
+    "era_text": "崇祯元"
+   },
+   "place": "yanan",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    1
+   ],
+   "id": "mingmo_jihuang_01",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_zuibao",
+   "predicate": "技术",
+   "value_text": "常平仓、社仓本备荒，至明末积谷挪用、仓廪空虚无备，荒政失效。",
+   "time": {
+    "start": 1630,
+    "end": 1630,
+    "era_text": "崇祯三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    2,
+    3
+   ],
+   "id": "mingmo_jihuang_02",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_zuibao",
+   "predicate": "制度",
+   "value_text": "明末辽饷、剿饷、练饷三饷迭加，赋税倍增而仓储空竭，赈济几无从措手。",
+   "time": {
+    "start": 1630,
+    "end": 1630,
+    "era_text": "崇祯三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    3
+   ],
+   "id": "mingmo_jihuang_03",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_1640",
+   "predicate": "社会",
+   "value_text": "华北『人相食』记载屡见，流民数以百万计，村落丘墟。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    4
+   ],
+   "id": "mingmo_jihuang_04",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_zuibao",
+   "predicate": "制度",
+   "value_text": "有司恐干谴惧，匿灾不报、徵比如故，灾伤愈重。",
+   "time": {
+    "start": 1630,
+    "end": 1630,
+    "era_text": "崇祯三"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    3,
+    4
+   ],
+   "id": "mingmo_jihuang_05",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_zuiji",
+   "predicate": "思想",
+   "value_text": "崇祯帝屡下罪己诏，以旱蝗为『上天示警、吏治不修』之谴，灾异观主导应对叙事。",
+   "time": {
+    "start": 1637,
+    "end": 1637,
+    "era_text": "崇祯十"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    5
+   ],
+   "id": "mingmo_jihuang_06",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_1644",
+   "predicate": "思想",
+   "value_text": "『迎闯王、不纳粮』切中饥民诉求，饥荒转化为改朝换代的社会动力。",
+   "time": {
+    "start": 1644,
+    "end": 1644,
+    "era_text": "崇祯十七"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    4,
+    5,
+    6
+   ],
+   "id": "mingmo_jihuang_07",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_1631",
+   "predicate": "事件",
+   "value_text": "饥民从乱自陕北蔓延，高迎祥、李自成、张献忠等部势成燎原。",
+   "time": {
+    "start": 1631,
+    "end": 1631,
+    "era_text": "崇祯四"
+   },
+   "place": "yanan",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    6
+   ],
+   "id": "mingmo_jihuang_08",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:mj_1644",
+   "predicate": "史料缺环",
+   "value_text": "明末人口损耗因战乱饥疫交乘，官方黄册散佚，具体死亡数各家估算差异大，列为可认领研究线索。",
+   "time": {
+    "era_text": "崇祯末",
+    "start": 1644,
+    "end": 1644
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "多源纪年需对读",
+   "lead": {
+    "where": "诸史原文对读",
+    "skills": [
+     "人口估算",
+     "灾损校勘"
+    ],
+    "accept": "补各方视角与纪年异文"
+   },
+   "dims": [
+    4
+   ],
+   "id": "mingmo_jihuang_09",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "id": "cf:event:mj_zuibao|制度",
+   "subject": "event:mj_zuibao",
+   "predicate": "制度",
+   "kind": "scholarly_divergence",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "mingmo_jihuang_03",
+    "mingmo_jihuang_05"
+   ]
+  }
+ ],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "mingmo_jihuang_09"
+ ],
  "events": [
   {
    "id": "ev_mj_1628",
@@ -439,6 +666,36 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
    "title": "饥民从闯",
    "kind": "饥荒",
    "text": "「迎闯王、不纳粮」，饥民从李自成者如流水，明社遂倾。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_mj_1631",
+   "subject": "event:mj_1631",
+   "year": 1631,
+   "era": "崇祯四",
+   "title": "饥民从乱",
+   "kind": "起义",
+   "text": "饥荒与加派交织，陕西饥民从乱者众，义军势张。",
+   "place": "yanan"
+  },
+  {
+   "id": "ev_mj_zuibao",
+   "subject": "event:mj_zuibao",
+   "year": 1630,
+   "era": "崇祯三",
+   "title": "三饷加派",
+   "kind": "制度",
+   "text": "辽饷之外复加剿饷、练饷，赋繁仓储空，赈济无从。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_mj_zuiji",
+   "subject": "event:mj_zuiji",
+   "year": 1637,
+   "era": "崇祯十",
+   "title": "崇祯罪己诏",
+   "kind": "诏示",
+   "text": "旱蝗大祲，帝下罪己诏，引为己过、归诸吏弊。",
    "place": "beijing"
   }
  ],

@@ -1,10 +1,16 @@
 {
- "persons": [
-  {
-   "id": "zhangdeer2",
-   "name": "张德二",
-   "side": "气象史学者",
-   "influence": 0
-  }
- ]
+  "persons": [
+    {
+      "id": "zhangdeer2",
+      "name": "张德二",
+      "side": "气象史学者",
+      "influence": 0
+    },
+    {
+      "id": "chongzhen",
+      "name": "崇祯帝",
+      "side": "明",
+      "influence": 0
+    }
+  ]
 }

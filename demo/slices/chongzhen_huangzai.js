@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -318,6 +321,12 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "name": "张德二",
    "side": "气象史学者",
    "influence": 0
+  },
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
   }
  ],
  "assertions": [
@@ -388,11 +397,171 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    ],
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "subject": "event:hz_1639",
+   "predicate": "地理",
+   "value_text": "蝗区遍及十省，自陕晋豫东抵徐淮、南及湖广，为明末最强蝗次。",
+   "time": {
+    "start": 1639,
+    "end": 1639,
+    "era_text": "崇祯十二"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    1
+   ],
+   "id": "chongzhen_huangzai_01",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_zhi",
+   "predicate": "技术",
+   "value_text": "传统治蝗赖捕蝻、掘卵、以米易蝻，然灾广力薄，官民俱穷于应对。",
+   "time": {
+    "start": 1639,
+    "end": 1639,
+    "era_text": "崇祯十二"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    2
+   ],
+   "id": "chongzhen_huangzai_02",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_1639",
+   "predicate": "制度",
+   "value_text": "地方有司救荒无策，蝗蝻任其孳蔓，荒政废弛。",
+   "time": {
+    "start": 1639,
+    "end": 1639,
+    "era_text": "崇祯十二"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    3
+   ],
+   "id": "chongzhen_huangzai_03",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_1644",
+   "predicate": "社会",
+   "value_text": "河南『飞蝗食人』之载虽涉夸张，亦见饥民羸毙、人蝗争食之惨。",
+   "time": {
+    "start": 1644,
+    "end": 1644,
+    "era_text": "崇祯十七"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    4
+   ],
+   "id": "chongzhen_huangzai_04",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_1639",
+   "predicate": "思想",
+   "value_text": "时人以蝗为天罚，祷神、噬蝗者皆有，灾异观主导解释。",
+   "time": {
+    "start": 1639,
+    "end": 1639,
+    "era_text": "崇祯十二"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    5
+   ],
+   "id": "chongzhen_huangzai_05",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_causal",
+   "predicate": "因果",
+   "value_text": "『蝗极而饥』——禾稼瞬空，饥馑随之，蝗灾与旱饥互为表里。",
+   "time": {
+    "start": 1640,
+    "end": 1640,
+    "era_text": "崇祯十三"
+   },
+   "place": "kaofeng",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    6
+   ],
+   "id": "chongzhen_huangzai_06",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:hz_1639",
+   "predicate": "史料缺环",
+   "value_text": "明末蝗灾发生面积与迁入路径多据地方志辑录，飞蝗种群动态无可量化记录，具体规模存研究空间。",
+   "time": {
+    "era_text": "崇祯中",
+    "start": 1639,
+    "end": 1639
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "region",
+   "note": "蝗灾序列据方志辑录",
+   "lead": {
+    "where": "方志蝗灾条对读",
+    "skills": [
+     "昆虫种群重建",
+     "方志辑录"
+    ],
+    "accept": "补迁入路径异文"
+   },
+   "dims": [
+    1
+   ],
+   "id": "chongzhen_huangzai_07",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "chongzhen_huangzai_07"
+ ],
  "events": [
   {
    "id": "ev_hz_1637",
@@ -422,6 +591,26 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    "title": "蝗食人",
    "kind": "蝗灾",
    "text": "河南飞蝗食民间小儿，灾情骇人听闻。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_hz_zhi",
+   "subject": "event:hz_zhi",
+   "year": 1639,
+   "era": "崇祯十二",
+   "title": "官民治蝗",
+   "kind": "应对",
+   "text": "捕蝻掘卵、以米易蝻，然灾广力薄。",
+   "place": "kaofeng"
+  },
+  {
+   "id": "ev_hz_causal",
+   "subject": "event:hz_causal",
+   "year": 1640,
+   "era": "崇祯十三",
+   "title": "蝗极而饥",
+   "kind": "因果",
+   "text": "禾稼瞬空，饥馑随起，蝗饥表里。",
    "place": "kaofeng"
   }
  ],

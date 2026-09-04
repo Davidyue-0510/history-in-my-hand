@@ -1,34 +1,64 @@
 {
- "events": [
-  {
-   "id": "ev_mj_1628",
-   "subject": "event:mj_1628",
-   "year": 1628,
-   "era": "崇祯元",
-   "title": "陕西大饥",
-   "kind": "饥荒",
-   "text": "陕北连年亢旱，延安、绥德民食蓬草树皮，饥民蜂起，王嘉胤、高迎祥揭竿。",
-   "place": "yanan"
-  },
-  {
-   "id": "ev_mj_1640",
-   "subject": "event:mj_1640",
-   "year": 1640,
-   "era": "崇祯十三",
-   "title": "赤地千里",
-   "kind": "饥荒",
-   "text": "旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。",
-   "place": "kaofeng"
-  },
-  {
-   "id": "ev_mj_1644",
-   "subject": "event:mj_1644",
-   "year": 1644,
-   "era": "崇祯十七",
-   "title": "饥民从闯",
-   "kind": "饥荒",
-   "text": "「迎闯王、不纳粮」，饥民从李自成者如流水，明社遂倾。",
-   "place": "beijing"
-  }
- ]
+  "events": [
+    {
+      "id": "ev_mj_1628",
+      "subject": "event:mj_1628",
+      "year": 1628,
+      "era": "崇祯元",
+      "title": "陕西大饥",
+      "kind": "饥荒",
+      "text": "陕北连年亢旱，延安、绥德民食蓬草树皮，饥民蜂起，王嘉胤、高迎祥揭竿。",
+      "place": "yanan"
+    },
+    {
+      "id": "ev_mj_1640",
+      "subject": "event:mj_1640",
+      "year": 1640,
+      "era": "崇祯十三",
+      "title": "赤地千里",
+      "kind": "饥荒",
+      "text": "旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_mj_1644",
+      "subject": "event:mj_1644",
+      "year": 1644,
+      "era": "崇祯十七",
+      "title": "饥民从闯",
+      "kind": "饥荒",
+      "text": "「迎闯王、不纳粮」，饥民从李自成者如流水，明社遂倾。",
+      "place": "beijing"
+    },
+    {
+      "id": "ev_mj_1631",
+      "subject": "event:mj_1631",
+      "year": 1631,
+      "era": "崇祯四",
+      "title": "饥民从乱",
+      "kind": "起义",
+      "text": "饥荒与加派交织，陕西饥民从乱者众，义军势张。",
+      "place": "yanan"
+    },
+    {
+      "id": "ev_mj_zuibao",
+      "subject": "event:mj_zuibao",
+      "year": 1630,
+      "era": "崇祯三",
+      "title": "三饷加派",
+      "kind": "制度",
+      "text": "辽饷之外复加剿饷、练饷，赋繁仓储空，赈济无从。",
+      "place": "beijing"
+    },
+    {
+      "id": "ev_mj_zuiji",
+      "subject": "event:mj_zuiji",
+      "year": 1637,
+      "era": "崇祯十",
+      "title": "崇祯罪己诏",
+      "kind": "诏示",
+      "text": "旱蝗大祲，帝下罪己诏，引为己过、归诸吏弊。",
+      "place": "beijing"
+    }
+  ]
 }

@@ -16,7 +16,10 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
   "subject_names": {},
   "dims": [
    1,
+   2,
+   3,
    4,
+   5,
    6
   ],
   "epoch": "ming",
@@ -302,7 +305,14 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "elev": 1891
   }
  ],
- "persons": [],
+ "persons": [
+  {
+   "id": "chongzhen",
+   "name": "崇祯帝",
+   "side": "明",
+   "influence": 0
+  }
+ ],
  "assertions": [
   {
    "id": "AX_ev_sy_1641",
@@ -370,11 +380,171 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    ],
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "subject": "event:sy_1641",
+   "predicate": "地理",
+   "value_text": "鼠疫自山西兴县一带起，沿驿道、河流向冀南、畿辅播散，北方连成疫区。",
+   "time": {
+    "start": 1641,
+    "end": 1641,
+    "era_text": "崇祯十四"
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    1
+   ],
+   "id": "mingmo_shuyi_01",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_zhi",
+   "predicate": "技术",
+   "value_text": "时人不知鼠疫病原（腺鼠疫/肺鼠疫），惟事驱疫、醮禳，无隔离检疫之制，疫势失控。",
+   "time": {
+    "start": 1643,
+    "end": 1643,
+    "era_text": "崇祯十六"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    2
+   ],
+   "id": "mingmo_shuyi_02",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_1643",
+   "predicate": "制度",
+   "value_text": "京营、守军染疫溃散，北京城防与勤王之师皆受重创。",
+   "time": {
+    "start": 1643,
+    "end": 1643,
+    "era_text": "崇祯十六"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    3
+   ],
+   "id": "mingmo_shuyi_03",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_1643",
+   "predicate": "社会",
+   "value_text": "京师『死亡枕藉、十室九空』，人口损耗剧烈，市井萧然。",
+   "time": {
+    "start": 1643,
+    "end": 1643,
+    "era_text": "崇祯十六"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    4
+   ],
+   "id": "mingmo_shuyi_04",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_1643",
+   "predicate": "思想",
+   "value_text": "朝野以疫为天谴、亡征，人心惶惶，士气瓦解。",
+   "time": {
+    "start": 1643,
+    "end": 1643,
+    "era_text": "崇祯十六"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    5
+   ],
+   "id": "mingmo_shuyi_05",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_causal",
+   "predicate": "因果",
+   "value_text": "明亡于疫、饥、兵三端交攻，瘟疫先夺民力，再溃军心，最后倾社稷。",
+   "time": {
+    "start": 1644,
+    "end": 1644,
+    "era_text": "崇祯十七"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.4,
+   "dims": [
+    6
+   ],
+   "id": "mingmo_shuyi_06",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "subject": "event:sy_1643",
+   "predicate": "史料缺环",
+   "value_text": "明末鼠疫死亡数因叠加剧乱无精确统计，现代研究据方志与人口曲线推估差异大，列为可认领研究线索。",
+   "time": {
+    "era_text": "崇祯十六",
+    "start": 1643,
+    "end": 1643
+   },
+   "place": null,
+   "source": "synthesis",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "empire",
+   "note": "死亡数叠加剧乱难精算",
+   "lead": {
+    "where": "方志与人口曲线对读",
+    "skills": [
+     "人口估算",
+     "疫情重建"
+    ],
+    "accept": "补死亡规模异文"
+   },
+   "dims": [
+    4
+   ],
+   "id": "mingmo_shuyi_07",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "mingmo_shuyi_07"
+ ],
  "events": [
   {
    "id": "ev_sy_1641",
@@ -404,6 +574,26 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
    "title": "疫与国亡",
    "kind": "瘟疫",
    "text": "李自成入京时京师大疫未息，明亡于疫、饥、兵交攻。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_sy_zhi",
+   "subject": "event:sy_zhi",
+   "year": 1643,
+   "era": "崇祯十六",
+   "title": "京营染疫",
+   "kind": "应对",
+   "text": "京师大疫，守军勤王之师皆染，城防重创。",
+   "place": "beijing"
+  },
+  {
+   "id": "ev_sy_causal",
+   "subject": "event:sy_causal",
+   "year": 1644,
+   "era": "崇祯十七",
+   "title": "疫饥兵交攻",
+   "kind": "因果",
+   "text": "明亡于疫、饥、兵三端交攻。",
    "place": "beijing"
   }
  ],

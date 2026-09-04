@@ -1,24 +1,64 @@
 {
- "events": [
-  {
-   "id": "ev_dz_134",
-   "subject": "event:dz_134",
-   "year": -134,
-   "era": "元光元年",
-   "title": "天人三策·独尊儒术",
-   "kind": "文化",
-   "text": "武帝诏举贤良，董仲舒对天人三策，请罢黜百家、独尊儒术，立五经博士。",
-   "place": "changan_dz"
-  },
-  {
-   "id": "ev_dz_taixue",
-   "subject": "event:dz_taixue",
-   "year": -124,
-   "era": "元朔五年",
-   "title": "兴太学",
-   "kind": "制度",
-   "text": "为五经博士置弟子员，太学兴，儒生入仕之途大开。",
-   "place": "changan_dz"
-  }
- ]
+  "events": [
+    {
+      "id": "ev_dz_134",
+      "subject": "event:dz_134",
+      "year": -134,
+      "era": "元光元年",
+      "title": "天人三策·独尊儒术",
+      "kind": "文化",
+      "text": "武帝诏举贤良，董仲舒对天人三策，请罢黜百家、独尊儒术，立五经博士。",
+      "place": "changan_dz"
+    },
+    {
+      "id": "ev_dz_taixue",
+      "subject": "event:dz_taixue",
+      "year": -124,
+      "era": "元朔五年",
+      "title": "兴太学",
+      "kind": "制度",
+      "text": "为五经博士置弟子员，太学兴，儒生入仕之途大开。",
+      "place": "changan_dz"
+    },
+    {
+      "id": "ev_dz_boshi",
+      "subject": "event:dz_boshi",
+      "year": -136,
+      "era": "建元五年",
+      "title": "置五经博士",
+      "kind": "制度",
+      "text": "罢传记博士，专立五经博士，儒家经典定为官学。",
+      "place": "changan_dz"
+    },
+    {
+      "id": "ev_dz_chaju",
+      "subject": "event:dz_chaju",
+      "year": -134,
+      "era": "元光元年",
+      "title": "诏举孝廉",
+      "kind": "制度",
+      "text": "诏郡国岁举孝廉一人，察举以儒术为归。",
+      "place": "changan_dz"
+    },
+    {
+      "id": "ev_dz_jinwen",
+      "subject": "event:dz_jinwen",
+      "year": -130,
+      "era": "约元光中",
+      "title": "今文经学兴",
+      "kind": "思想",
+      "text": "今文博士援阴阳灾异说经，开谶纬先声。",
+      "place": "changan_dz"
+    },
+    {
+      "id": "ev_dz_legacy",
+      "subject": "event:dz_legacy",
+      "year": -100,
+      "era": "武帝后期",
+      "title": "儒术定于一尊",
+      "kind": "影响",
+      "text": "经学立为官学、学校以儒为宗，影响迄于清季。",
+      "place": "changan_dz"
+    }
+  ]
 }

@@ -1,34 +1,54 @@
 {
- "events": [
-  {
-   "id": "ev_ch_1637",
-   "subject": "event:ch_1637",
-   "year": 1637,
-   "era": "崇祯十",
-   "title": "北旱初起",
-   "kind": "旱灾",
-   "text": "陕西、山西率先亢旱，禾稼歉收。",
-   "place": "taiyuan"
-  },
-  {
-   "id": "ev_ch_1640",
-   "subject": "event:ch_1640",
-   "year": 1640,
-   "era": "崇祯十三",
-   "title": "旱极",
-   "kind": "旱灾",
-   "text": "白洋淀竭、九河俱干，华北旱情达顶峰，赤地千里。",
-   "place": "beijing"
-  },
-  {
-   "id": "ev_ch_1642",
-   "subject": "event:ch_1642",
-   "year": 1642,
-   "era": "崇祯十五",
-   "title": "河涸",
-   "kind": "旱灾",
-   "text": "黄河水涸、人可徒步，旱情仍炽，饥疫交作。",
-   "place": "kaofeng"
-  }
- ]
+  "events": [
+    {
+      "id": "ev_ch_1637",
+      "subject": "event:ch_1637",
+      "year": 1637,
+      "era": "崇祯十",
+      "title": "北旱初起",
+      "kind": "旱灾",
+      "text": "陕西、山西率先亢旱，禾稼歉收。",
+      "place": "taiyuan"
+    },
+    {
+      "id": "ev_ch_1640",
+      "subject": "event:ch_1640",
+      "year": 1640,
+      "era": "崇祯十三",
+      "title": "旱极",
+      "kind": "旱灾",
+      "text": "白洋淀竭、九河俱干，华北旱情达顶峰，赤地千里。",
+      "place": "beijing"
+    },
+    {
+      "id": "ev_ch_1642",
+      "subject": "event:ch_1642",
+      "year": 1642,
+      "era": "崇祯十五",
+      "title": "河涸",
+      "kind": "旱灾",
+      "text": "黄河水涸、人可徒步，旱情仍炽，饥疫交作。",
+      "place": "kaofeng"
+    },
+    {
+      "id": "ev_ch_zuiji",
+      "subject": "event:ch_zuiji",
+      "year": 1640,
+      "era": "崇祯十三",
+      "title": "旱极罪己",
+      "kind": "诏示",
+      "text": "赤地千里，帝下诏罪己，修省弭灾。",
+      "place": "beijing"
+    },
+    {
+      "id": "ev_ch_causal",
+      "subject": "event:ch_causal",
+      "year": 1640,
+      "era": "崇祯十三",
+      "title": "旱极而蝗",
+      "kind": "因果",
+      "text": "连旱土燥，蝗蝻孳生，旱蝗相因。",
+      "place": "kaofeng"
+    }
+  ]
 }

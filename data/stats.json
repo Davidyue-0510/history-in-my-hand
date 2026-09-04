@@ -2,7 +2,7 @@
   "scenes_total": 142,
   "historical": 133,
   "fictional": 9,
-  "assertions_total": 2137,
+  "assertions_total": 2175,
   "sources_total": 101,
   "factions_total": 9,
   "vocab_packs": [
@@ -16,7 +16,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 198,
+  "leads_total": 203,
   "per_scene": [
     {
       "id": "sarhu",
@@ -621,7 +621,7 @@
       "id": "dunzun",
       "title": "独尊儒术",
       "kind": "thought",
-      "assertions": 3,
+      "assertions": 11,
       "factions": {}
     },
     {
@@ -698,28 +698,28 @@
       "id": "mingmo_jihuang",
       "title": "明末大饥荒",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 12,
       "factions": {}
     },
     {
       "id": "chongzhen_han",
       "title": "崇祯大旱",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "chongzhen_huangzai",
       "title": "崇祯蝗灾",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "mingmo_shuyi",
       "title": "明末鼠疫",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 10,
       "factions": {}
     },
     {

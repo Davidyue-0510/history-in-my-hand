@@ -339,6 +339,38 @@
    "_src_line": 19
   },
   {
+   "id": "chongzhen_han_07",
+   "scene": "chongzhen_han",
+   "subject": "event:ch_1640",
+   "title": "崇祯朝降水序列据《中国近五百年旱涝分布图集》等重建，地方志记载详略不一，具体年际强度存研究空间。",
+   "missing": "气候重建 / 方志辑录",
+   "where": "方志与旱涝图集对读",
+   "skills": [
+    "气候重建",
+    "方志辑录"
+   ],
+   "accept": "补年际强度异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "chongzhen_huangzai_07",
+   "scene": "chongzhen_huangzai",
+   "subject": "event:hz_1639",
+   "title": "明末蝗灾发生面积与迁入路径多据地方志辑录，飞蝗种群动态无可量化记录，具体规模存研究空间。",
+   "missing": "昆虫种群重建 / 方志辑录",
+   "where": "方志蝗灾条对读",
+   "skills": [
+    "昆虫种群重建",
+    "方志辑录"
+   ],
+   "accept": "补迁入路径异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "CH015",
    "scene": "chu_han",
    "subject": "event:gai_xia",
@@ -497,6 +529,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 3
+  },
+  {
+   "id": "dunzun_08",
+   "scene": "dunzun",
+   "subject": "event:dz_jinwen",
+   "title": "董仲舒对策原本与师说流传，后世辑佚不一，今传本或经窜乱，具体文本存在缺口。",
+   "missing": "经学辑佚 / 文本校勘",
+   "where": "今文辑佚对读",
+   "skills": [
+    "经学辑佚",
+    "文本校勘"
+   ],
+   "accept": "补师说异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "FEISHUIG01",
@@ -1732,6 +1780,38 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 26
+  },
+  {
+   "id": "mingmo_jihuang_09",
+   "scene": "mingmo_jihuang",
+   "subject": "event:mj_1644",
+   "title": "明末人口损耗因战乱饥疫交乘，官方黄册散佚，具体死亡数各家估算差异大，列为可认领研究线索。",
+   "missing": "人口估算 / 灾损校勘",
+   "where": "诸史原文对读",
+   "skills": [
+    "人口估算",
+    "灾损校勘"
+   ],
+   "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "mingmo_shuyi_07",
+   "scene": "mingmo_shuyi",
+   "subject": "event:sy_1643",
+   "title": "明末鼠疫死亡数因叠加剧乱无精确统计，现代研究据方志与人口曲线推估差异大，列为可认领研究线索。",
+   "missing": "人口估算 / 疫情重建",
+   "where": "方志与人口曲线对读",
+   "skills": [
+    "人口估算",
+    "疫情重建"
+   ],
+   "accept": "补死亡规模异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "MOBAIG01",

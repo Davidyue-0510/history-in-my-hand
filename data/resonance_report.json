@@ -420,15 +420,16 @@
     {
       "scene": "chongzhen_han",
       "name": "chongzhen_han",
-      "total": 3,
+      "total": 10,
       "layers": {
-        "scholarship": 3
+        "scholarship": 9,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 10
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 5,
       "avg_resonance": 0.0,
       "best_event": "event:ch_1637",
       "best_resonance": 0.0
@@ -436,15 +437,16 @@
     {
       "scene": "chongzhen_huangzai",
       "name": "chongzhen_huangzai",
-      "total": 3,
+      "total": 10,
       "layers": {
-        "scholarship": 3
+        "scholarship": 9,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 10
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 5,
       "avg_resonance": 0.0,
       "best_event": "event:hz_1637",
       "best_resonance": 0.0
@@ -588,16 +590,16 @@
     {
       "scene": "dunzun",
       "name": "dunzun",
-      "total": 3,
+      "total": 11,
       "layers": {
-        "scholarship": 2,
-        "gap": 1
+        "scholarship": 9,
+        "gap": 2
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 11
       },
       "faction_counts": {},
-      "event_count": 2,
+      "event_count": 6,
       "avg_resonance": 0.0,
       "best_event": "event:dz_134",
       "best_resonance": 0.0
@@ -1567,15 +1569,16 @@
     {
       "scene": "mingmo_jihuang",
       "name": "mingmo_jihuang",
-      "total": 3,
+      "total": 12,
       "layers": {
-        "scholarship": 3
+        "scholarship": 11,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 12
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 6,
       "avg_resonance": 0.0,
       "best_event": "event:mj_1628",
       "best_resonance": 0.0
@@ -1583,15 +1586,16 @@
     {
       "scene": "mingmo_shuyi",
       "name": "mingmo_shuyi",
-      "total": 3,
+      "total": 10,
       "layers": {
-        "scholarship": 3
+        "scholarship": 9,
+        "gap": 1
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 10
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 5,
       "avg_resonance": 0.0,
       "best_event": "event:sy_1641",
       "best_resonance": 0.0
@@ -3647,7 +3651,7 @@
       "scene_names": [
         "chongzhen_han"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -3678,7 +3682,38 @@
       "scene_names": [
         "chongzhen_han"
       ],
-      "total": 1,
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ch_1642",
+      "name": "event:ch_1642",
+      "scenes": [
+        "chongzhen_han"
+      ],
+      "scene_names": [
+        "chongzhen_han"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -3701,8 +3736,8 @@
       }
     },
     {
-      "subject": "event:ch_1642",
-      "name": "event:ch_1642",
+      "subject": "event:ch_causal",
+      "name": "event:ch_causal",
       "scenes": [
         "chongzhen_han"
       ],
@@ -3803,6 +3838,37 @@
         "canhebei"
       ],
       "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ch_zuiji",
+      "name": "event:ch_zuiji",
+      "scenes": [
+        "chongzhen_han"
+      ],
+      "scene_names": [
+        "chongzhen_han"
+      ],
+      "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -4907,6 +4973,130 @@
       "scene_names": [
         "dunzun"
       ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dz_boshi",
+      "name": "event:dz_boshi",
+      "scenes": [
+        "dunzun"
+      ],
+      "scene_names": [
+        "dunzun"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dz_chaju",
+      "name": "event:dz_chaju",
+      "scenes": [
+        "dunzun"
+      ],
+      "scene_names": [
+        "dunzun"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dz_jinwen",
+      "name": "event:dz_jinwen",
+      "scenes": [
+        "dunzun"
+      ],
+      "scene_names": [
+        "dunzun"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:dz_legacy",
+      "name": "event:dz_legacy",
+      "scenes": [
+        "dunzun"
+      ],
+      "scene_names": [
+        "dunzun"
+      ],
       "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
@@ -4938,12 +5128,12 @@
       "scene_names": [
         "dunzun"
       ],
-      "total": 2,
+      "total": 3,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.5,
+      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -7449,6 +7639,68 @@
       "scene_names": [
         "chongzhen_huangzai"
       ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:hz_1644",
+      "name": "event:hz_1644",
+      "scenes": [
+        "chongzhen_huangzai"
+      ],
+      "scene_names": [
+        "chongzhen_huangzai"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:hz_causal",
+      "name": "event:hz_causal",
+      "scenes": [
+        "chongzhen_huangzai"
+      ],
+      "scene_names": [
+        "chongzhen_huangzai"
+      ],
       "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
@@ -7472,8 +7724,8 @@
       }
     },
     {
-      "subject": "event:hz_1644",
-      "name": "event:hz_1644",
+      "subject": "event:hz_zhi",
+      "name": "event:hz_zhi",
       "scenes": [
         "chongzhen_huangzai"
       ],
@@ -9404,6 +9656,37 @@
       "scene_names": [
         "mingmo_jihuang"
       ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:mj_1631",
+      "name": "event:mj_1631",
+      "scenes": [
+        "mingmo_jihuang"
+      ],
+      "scene_names": [
+        "mingmo_jihuang"
+      ],
       "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
@@ -9435,7 +9718,7 @@
       "scene_names": [
         "mingmo_jihuang"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -9460,6 +9743,68 @@
     {
       "subject": "event:mj_1644",
       "name": "event:mj_1644",
+      "scenes": [
+        "mingmo_jihuang"
+      ],
+      "scene_names": [
+        "mingmo_jihuang"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:mj_zuibao",
+      "name": "event:mj_zuibao",
+      "scenes": [
+        "mingmo_jihuang"
+      ],
+      "scene_names": [
+        "mingmo_jihuang"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.5,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:mj_zuiji",
+      "name": "event:mj_zuiji",
       "scenes": [
         "mingmo_jihuang"
       ],
@@ -10343,7 +10688,7 @@
       "scene_names": [
         "mingmo_shuyi"
       ],
-      "total": 1,
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -10374,12 +10719,12 @@
       "scene_names": [
         "mingmo_shuyi"
       ],
-      "total": 1,
-      "gap_count": 0,
+      "total": 5,
+      "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.0,
+      "gap_rate": 0.2,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -10521,6 +10866,37 @@
       }
     },
     {
+      "subject": "event:sy_causal",
+      "name": "event:sy_causal",
+      "scenes": [
+        "mingmo_shuyi"
+      ],
+      "scene_names": [
+        "mingmo_shuyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:sy_jz",
       "name": "event:sy_jz",
       "scenes": [
@@ -10597,6 +10973,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:sy_zhi",
+      "name": "event:sy_zhi",
+      "scenes": [
+        "mingmo_shuyi"
+      ],
+      "scene_names": [
+        "mingmo_shuyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
