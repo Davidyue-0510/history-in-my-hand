@@ -1,0 +1,60 @@
+{
+  "_comment": "sui_mie_chen_llm 全局 pack（v0.101）",
+  "parties": [
+    "隋方",
+    "陳方",
+    "後世官修",
+    "二手綜述"
+  ],
+  "party_bucket": {
+    "隋方": "隋方",
+    "陳方": "陳方",
+    "後世官修": "後世官修",
+    "二手綜述": "二手綜述"
+  },
+  "party_colors": {
+    "隋方": "#2E86C1",
+    "陳方": "#B23A48",
+    "後世官修": "#6C7A89",
+    "二手綜述": "#9B7B5A"
+  },
+  "factions": {
+    "f_隋方": {
+      "name": "隋方",
+      "macro_party": "隋方",
+      "note": "楊堅／楊廣／楊素／賀若弼／韓擒虎"
+    },
+    "f_陳方": {
+      "name": "陳方",
+      "macro_party": "陳方",
+      "note": "陳叔寶／任忠／魯廣達；陳方独立叙事缺位（陳書為唐修）"
+    },
+    "f_後世官修": {
+      "name": "後世官修",
+      "macro_party": "後世官修",
+      "note": "魏徵等《隋書》（唐）"
+    },
+    "f_二手綜述": {
+      "name": "二手綜述",
+      "macro_party": "二手綜述",
+      "note": "《資治通鑑》《陳書》"
+    }
+  },
+  "faction_colors": {
+    "f_隋方": "#2E86C1",
+    "f_陳方": "#B23A48",
+    "f_後世官修": "#6C7A89",
+    "f_二手綜述": "#9B7B5A"
+  },
+  "layers": {
+    "record": "原始史料",
+    "scholarship": "学界研究",
+    "inference": "合理推断",
+    "gap": "证据缺口"
+  },
+  "quote_status": {
+    "verbatim": "直接引文",
+    "paraphrase_unverified": "转述待核",
+    "generated": "生成"
+  }
+}

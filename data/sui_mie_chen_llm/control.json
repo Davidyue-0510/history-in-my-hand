@@ -1,0 +1,68 @@
+{
+  "_comment": "sui_mie_chen_llm 戰略控制層（手寫覆蓋 v0.35 auto-generated）",
+  "control": [
+    {
+      "place_id": "guangling",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控guangling"
+    },
+    {
+      "place_id": "caishi",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控caishi"
+    },
+    {
+      "place_id": "gushu",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控gushu"
+    },
+    {
+      "place_id": "zhongshan",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控zhongshan"
+    },
+    {
+      "place_id": "xinlin",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控xinlin"
+    },
+    {
+      "place_id": "jiankang",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控jiankang"
+    },
+    {
+      "place_id": "jiangnan",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控jiangnan"
+    },
+    {
+      "place_id": "lingnan",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控lingnan"
+    },
+    {
+      "place_id": "shudi",
+      "party": "隋方",
+      "start": 589,
+      "end": 605,
+      "basis": "historical:隋滅陳後控shudi"
+    }
+  ]
+}

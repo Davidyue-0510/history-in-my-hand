@@ -1,9 +1,9 @@
 {
-  "scenes_total": 146,
-  "historical": 137,
+  "scenes_total": 147,
+  "historical": 138,
   "fictional": 9,
-  "assertions_total": 2243,
-  "sources_total": 107,
+  "assertions_total": 2263,
+  "sources_total": 108,
   "factions_total": 9,
   "vocab_packs": [
     "changping_llm",
@@ -16,11 +16,12 @@
     "qin_mie_liu_guo_llm",
     "san_guo",
     "song",
+    "sui_mie_chen_llm",
     "tang",
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 208,
+  "leads_total": 210,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1097,6 +1098,13 @@
       "kind": "battle",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "sui_mie_chen_llm",
+      "title": "隋滅陳·金陵之變",
+      "kind": "battle",
+      "assertions": 20,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1245,6 +1253,7 @@
     "feishui_llm": "淝水之战（LLM 抽取·人工校订）",
     "changping_llm": "长平之战（LLM 抽取·人工校订）",
     "qin_mie_liu_guo_llm": "秦灭六国（LLM 抽取·人工校订）",
-    "chuhai_llm": "楚漢之爭·垓下之戰"
+    "chuhai_llm": "楚漢之爭·垓下之戰",
+    "sui_mie_chen_llm": "隋滅陳·金陵之變"
   }
 }

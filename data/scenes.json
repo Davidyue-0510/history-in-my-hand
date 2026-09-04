@@ -180,6 +180,11 @@
    "id": "exchange",
    "name": "对外交流",
    "note": "前138 起张骞「凿空」西域，丝绸之路由此贯通。"
+  },
+  {
+   "id": "nan_bei_chao",
+   "name": "南北朝",
+   "note": "420-589 南朝宋齐梁陈与北朝魏齐周对峙；隋滅陳（589）終結分裂、南北復歸一統。核心地緣：建康—長江防線—江左。"
   }
  ],
  "order": [
@@ -328,7 +333,8 @@
   "feishui_llm",
   "changping_llm",
   "qin_mie_liu_guo_llm",
-  "chuhai_llm"
+  "chuhai_llm",
+  "sui_mie_chen_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -11977,6 +11983,107 @@
     "person:CHU__p07": "項伯",
     "person:CHU__p08": "樊噲"
    }
+  },
+  "sui_mie_chen_llm": {
+   "kind": "battle",
+   "region": "nan_bei_chao",
+   "title": "隋滅陳·金陵之變",
+   "dossier_label": "sui_mie_chen_llm",
+   "subtitle": "",
+   "primary_place": "jiankang",
+   "dossier_event": "event:ev_sui_mie_chen_llm_04",
+   "vocab_pack": "sui_mie_chen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "strategic",
+   "subject_names": [
+    "event:ev_sui_mie_chen_llm_01",
+    "event:ev_sui_mie_chen_llm_02",
+    "event:ev_sui_mie_chen_llm_03",
+    "event:ev_sui_mie_chen_llm_04",
+    "event:ev_sui_mie_chen_llm_05",
+    "place:guangling",
+    "place:caishi",
+    "place:gushu",
+    "place:zhongshan",
+    "place:xinlin",
+    "place:jiankang",
+    "place:jiangnan",
+    "place:lingnan",
+    "place:shudi",
+    "person:SUI__p01",
+    "person:SUI__p02",
+    "person:SUI__p03",
+    "person:SUI__p04",
+    "person:SUI__p05",
+    "person:SUI__p06",
+    "person:SUI__p07",
+    "person:SUI__p08"
+   ],
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→隋方統一意志（文帝決策、晉王為帥凝聚諸軍）vs 陳後主荒淫失政、內部分裂"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→八路兵分、楊素水軍、運河轉輸；陳恃長江天險失守（賀若弼廣陵、韓擒虎采石多點渡江）"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→隋出兵五十一萬八千 vs 陳在籍兵六十萬（含地方軍非皆野戰，實際野戰兵力無確載）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→自廣陵／采石多點渡江，避實擊虛，建康速陷，南北復归一統"
+    }
+   }
   }
  },
  "dimensions": {
@@ -12763,6 +12870,32 @@
    },
    "strategic": {
     "_gap": "待补：大战略/重心/脆弱性"
+   }
+  },
+  "sui": {
+   "label": "隋（581–618，滅陳589南北統一）",
+   "status": "stub",
+   "note": "待按史料扩展：技術↔生產力、人口↔常駐軍等關聯推斷（見 docs/unified_dimensions.md）。",
+   "tech": {
+    "_gap": "待補：關中/江南經濟、運河漕運、府兵制裝備"
+   },
+   "international": {
+    "_gap": "待補：突厥/高句麗外交態勢"
+   },
+   "economy": {
+    "_gap": "待補：賦稅/貨幣/江南財賦整合"
+   },
+   "society": {
+    "_gap": "待補：人口規模/階層/府兵（人口↔常駐軍）"
+   },
+   "doctrine": {
+    "_gap": "待補：主流意識形態/科舉萌孽"
+   },
+   "anchors": {
+    "_gap": "待補：關中/建康/江都關鍵支點"
+   },
+   "strategic": {
+    "_gap": "待補：大戰略/重心/脆弱性"
    }
   }
  },

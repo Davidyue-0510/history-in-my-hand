@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "guangling",
+   "to": "jiankang",
+   "type": "military",
+   "label": "賀若弼渡江路線",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "caishi",
+   "to": "gushu",
+   "type": "military",
+   "label": "韓擒虎夜渡",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "gushu",
+   "to": "xinlin",
+   "type": "military",
+   "label": "韓擒虎進軍",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "xinlin",
+   "to": "jiankang",
+   "type": "military",
+   "label": "韓擒虎入建康",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "zhongshan",
+   "to": "jiankang",
+   "type": "battle",
+   "label": "賀若弼進逼",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

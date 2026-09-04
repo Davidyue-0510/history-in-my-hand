@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 146 个切片
+// 权威数据源：data/scenes.json 注册的 147 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 146 个切片",
+  "slice": "multi-scene · 147 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -20,6 +20,7 @@ window.SANDBOX_DATA = {
    "qin_mie_liu_guo_llm",
    "san_guo",
    "song",
+   "sui_mie_chen_llm",
    "tang",
    "three_campaigns"
   ]
@@ -184,6 +185,11 @@ window.SANDBOX_DATA = {
    "id": "exchange",
    "name": "对外交流",
    "note": "前138 起张骞「凿空」西域，丝绸之路由此贯通。"
+  },
+  {
+   "id": "nan_bei_chao",
+   "name": "南北朝",
+   "note": "420-589 南朝宋齐梁陈与北朝魏齐周对峙；隋滅陳（589）終結分裂、南北復歸一統。核心地緣：建康—長江防線—江左。"
   }
  ],
  "dimensions": {
@@ -400,7 +406,8 @@ window.SANDBOX_DATA = {
   "feishui_llm",
   "changping_llm",
   "qin_mie_liu_guo_llm",
-  "chuhai_llm"
+  "chuhai_llm",
+  "sui_mie_chen_llm"
  ],
  "vocab": {
   "layers": [
@@ -23292,6 +23299,41 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "sui_mie_chen_llm": {
+   "key": "sui_mie_chen_llm",
+   "scene_id": "sui_mie_chen_llm",
+   "title": "隋滅陳·金陵之變",
+   "dossier_label": "sui_mie_chen_llm",
+   "subtitle": "",
+   "kind": "battle",
+   "region": "nan_bei_chao",
+   "page": "sui_mie_chen_llm.html",
+   "primary_place": "jiankang",
+   "vocab_pack": "sui_mie_chen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 9,
+    "person": 8,
+    "assert": 20,
+    "conflict": 0,
+    "gap": 2,
+    "record": 15,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -23440,7 +23482,8 @@ window.SANDBOX_DATA = {
   "feishui_llm": "slices/feishui_llm.js",
   "changping_llm": "slices/changping_llm.js",
   "qin_mie_liu_guo_llm": "slices/qin_mie_liu_guo_llm.js",
-  "chuhai_llm": "slices/chuhai_llm.js"
+  "chuhai_llm": "slices/chuhai_llm.js",
+  "sui_mie_chen_llm": "slices/sui_mie_chen_llm.js"
  },
  "corridors": [
   {

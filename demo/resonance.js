@@ -109,6 +109,7 @@ window.SANDBOX_RESONANCE = {
    "songjin",
    "sui_daxing",
    "sui_mie_chen",
+   "sui_mie_chen_llm",
    "suiyang",
    "taiping",
    "talas",
@@ -2064,6 +2065,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:sm_587",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "sui_mie_chen_llm",
+   "name": "sui_mie_chen_llm",
+   "total": 20,
+   "layers": {
+    "inference": 1,
+    "record": 15,
+    "scholarship": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "後世官修": 20
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sui_mie_chen_llm_01",
    "best_resonance": 0.0
   },
   {

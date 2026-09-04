@@ -110,6 +110,7 @@
 | songjin | 15 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
 | sui_mie_chen | 11 | 2 | **0.000** | event:sm_587（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
+| sui_mie_chen_llm | 20 | 5 | **0.000** | event:ev_sui_mie_chen_llm_01（0.000） | gap 2 / inference 1 / record 15 / scholarship 2 |
 | suiyang | 15 | 3 | **0.000** | event:sy_jz（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | taiping | 12 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 7 / scholarship 3 |
 | talas | 14 | 3 | **0.000** | event:tl_gel（0.000） | gap 2 / inference 2 / record 7 / scholarship 3 |
@@ -290,6 +291,11 @@
 | event:ev_qin_mie_liu_guo_llm_05 | qin_mie_liu_guo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_qin_mie_liu_guo_llm_06 | qin_mie_liu_guo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_sima_daijin | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sui_mie_chen_llm_01 | sui_mie_chen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sui_mie_chen_llm_02 | sui_mie_chen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sui_mie_chen_llm_03 | sui_mie_chen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sui_mie_chen_llm_04 | sui_mie_chen_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_sui_mie_chen_llm_05 | sui_mie_chen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 7 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_01 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_02 | three_campaigns | **0.000** | 0/3 | 0.03 | 0.00 | 36 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_03 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.00 | 4 | 0 / 0 / 0 / 0 |

@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_sui_mie_chen_llm_01",
+   "subject": "event:ev_sui_mie_chen_llm_01",
+   "year": 588,
+   "era": "開皇八年冬十月",
+   "title": "隋文帝下詔伐陳",
+   "kind": "戰事",
+   "text": "隋發兵五十一萬八千，八路攻陳",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_mie_chen_llm_02",
+   "subject": "event:ev_sui_mie_chen_llm_02",
+   "year": 589,
+   "era": "開皇九年春正月",
+   "title": "賀若弼濟江",
+   "kind": "戰事",
+   "text": "賀若弼自廣陵渡江，陳不覺",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_mie_chen_llm_03",
+   "subject": "event:ev_sui_mie_chen_llm_03",
+   "year": 589,
+   "era": "開皇九年春正月",
+   "title": "韓擒虎克姑孰",
+   "kind": "戰事",
+   "text": "韓擒虎夜渡采石，克姑孰",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_mie_chen_llm_04",
+   "subject": "event:ev_sui_mie_chen_llm_04",
+   "year": 589,
+   "era": "開皇九年春正月",
+   "title": "建康陷落",
+   "kind": "戰事",
+   "text": "任忠引隋軍入建康，陳亡",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_mie_chen_llm_05",
+   "subject": "event:ev_sui_mie_chen_llm_05",
+   "year": 589,
+   "era": "開皇九年",
+   "title": "隋并陳",
+   "kind": "行政",
+   "text": "陳地悉平，南北一統",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "SUI__p01",
+   "name": "楊堅",
+   "role": "隋文帝",
+   "note": "下詔伐陳",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p02",
+   "name": "楊廣",
+   "role": "晉王，行軍元帥",
+   "note": "總領伐陳",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p03",
+   "name": "楊素",
+   "role": "清河公，行軍元帥",
+   "note": "率水軍",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p04",
+   "name": "賀若弼",
+   "role": "隋將",
+   "note": "濟江克京口",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p05",
+   "name": "韓擒虎",
+   "role": "隋將",
+   "note": "夜渡采石",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p06",
+   "name": "陳叔寶",
+   "role": "陳後主",
+   "note": "被俘",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p07",
+   "name": "任忠",
+   "role": "陳驍將",
+   "note": "降隋引路",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p08",
+   "name": "魯廣達",
+   "role": "陳都督",
+   "note": "拒戰賀若弼",
+   "_source_idx": 0,
+   "_source_name": "隋書·高祖紀下（附資治通鑑陳亡段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -754,6 +754,32 @@ window.SANDBOX_EPOCHS = {
   "strategic": {
    "_gap": "待补：大战略/重心/脆弱性"
   }
+ },
+ "sui": {
+  "label": "隋（581–618，滅陳589南北統一）",
+  "status": "stub",
+  "note": "待按史料扩展：技術↔生產力、人口↔常駐軍等關聯推斷（見 docs/unified_dimensions.md）。",
+  "tech": {
+   "_gap": "待補：關中/江南經濟、運河漕運、府兵制裝備"
+  },
+  "international": {
+   "_gap": "待補：突厥/高句麗外交態勢"
+  },
+  "economy": {
+   "_gap": "待補：賦稅/貨幣/江南財賦整合"
+  },
+  "society": {
+   "_gap": "待補：人口規模/階層/府兵（人口↔常駐軍）"
+  },
+  "doctrine": {
+   "_gap": "待補：主流意識形態/科舉萌孽"
+  },
+  "anchors": {
+   "_gap": "待補：關中/建康/江都關鍵支點"
+  },
+  "strategic": {
+   "_gap": "待補：大戰略/重心/脆弱性"
+  }
  }
 };
 window.SANDBOX_DATA.epochs = window.SANDBOX_EPOCHS;

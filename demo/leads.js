@@ -2552,6 +2552,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "SUI_018",
+   "scene": "sui_mie_chen_llm",
+   "subject": "event:ev_sui_mie_chen_llm_04",
+   "title": "陳軍實際兵力不詳",
+   "missing": "考據",
+   "where": "隋書·高祖紀",
+   "skills": [
+    "考據"
+   ],
+   "accept": "需核實陳軍實際",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 18
+  },
+  {
+   "id": "SUI_020",
+   "scene": "sui_mie_chen_llm",
+   "subject": "party:陳方",
+   "title": "陳方獨立叙事缺位，《陳書》為唐姚思廉撰，陳亡後由勝方修史",
+   "missing": "隋陳史 / 出土墓誌 / 南朝文學",
+   "where": "《陳書》（唐姚思廉）＋陳代出土墓誌／磚誌＋南朝詩文（陳叔寶《玉樹後庭花》等）",
+   "skills": [
+    "隋陳史",
+    "出土墓誌",
+    "南朝文學"
+   ],
+   "accept": "陳方視角的墓誌或詩文考據，能與《隋書》形成隋方／陳方雙聲敘事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
    "id": "SUIYANGG01",
    "scene": "suiyang",
    "subject": "event:sy_zhang",
