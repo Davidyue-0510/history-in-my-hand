@@ -29,6 +29,7 @@ window.SANDBOX_RESONANCE = {
    "chongzhen_han",
    "chongzhen_huangzai",
    "chu_han",
+   "chuhai_llm",
    "dalinghe",
    "diaoyucheng",
    "dingwu",
@@ -491,6 +492,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 6,
    "avg_resonance": 0.0,
    "best_event": "event:chenggao",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chuhai_llm",
+   "name": "chuhai_llm",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "inference": 1,
+    "scholarship": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "後世官修": 17
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chuhai_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -1731,7 +1751,7 @@ window.SANDBOX_RESONANCE = {
     "gap": 2
    },
    "party_counts": {
-    "秦方": 14
+    "后世官修": 14
    },
    "faction_counts": {},
    "event_count": 5,

@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "CHU__p01",
+   "name": "項羽",
+   "role": "西楚霸王",
+   "note": "楚漢之爭核心人物，垓下兵敗自刎",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p02",
+   "name": "劉邦",
+   "role": "漢王",
+   "note": "漢朝開國皇帝，與項羽爭天下",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p03",
+   "name": "韓信",
+   "role": "齊王",
+   "note": "漢軍大將，垓下之戰關鍵人物",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p04",
+   "name": "張良",
+   "role": "漢謀士",
+   "note": "勸劉邦封韓信彭越以破楚",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p05",
+   "name": "彭越",
+   "role": "梁王",
+   "note": "漢軍將領，受封後出兵助戰",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p06",
+   "name": "虞姬",
+   "role": "項羽愛姬",
+   "note": "垓下之圍中與項羽悲歌和之",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p07",
+   "name": "項伯",
+   "role": "楚左尹",
+   "note": "鴻門宴中翼蔽沛公劉邦",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHU__p08",
+   "name": "樊噲",
+   "role": "漢將",
+   "note": "鴻門宴中闖帳護主",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

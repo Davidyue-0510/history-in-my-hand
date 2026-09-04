@@ -30,6 +30,7 @@
 | chongzhen_han | 10 | 5 | **0.000** | event:ch_1637（0.000） | gap 1 / scholarship 9 |
 | chongzhen_huangzai | 10 | 5 | **0.000** | event:hz_1637（0.000） | gap 1 / scholarship 9 |
 | chu_han | 17 | 6 | **0.000** | event:chenggao（0.000） | gap 1 / record 16 |
+| chuhai_llm | 17 | 5 | **0.000** | event:ev_chuhai_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 2 |
 | dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 15 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 6 / scholarship 3 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
@@ -261,6 +262,11 @@
 | event:ev_changping_llm_03 | changping_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_04 | changping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_chibi | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chuhai_llm_01 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chuhai_llm_02 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chuhai_llm_03 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chuhai_llm_04 | chuhai_llm | **0.000** | 0/3 | 0.67 | 0.11 | 9 | 0 / 0 / 0 / 0 |
+| event:ev_chuhai_llm_05 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_01 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_02 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |

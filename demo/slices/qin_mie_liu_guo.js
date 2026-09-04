@@ -79,13 +79,13 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
   {
    "id": "shiji_qin",
    "title": "史记·秦始皇本纪",
-   "party": "秦方",
-   "stance_label": "私家编纂",
+   "party": "后世官修",
+   "stance_label": "官修史书（西汉）",
    "distance_label": "距事约100年",
-   "color": "#A0473A",
+   "color": "#6C7A89",
    "compiler": "司马迁",
    "period": "西汉",
-   "note": "二手综述，秦纪为主要依据"
+   "note": "西汉官修史书，距秦灭国约百年；以秦纪为主要依据，非秦方当代记录"
   }
  ],
  "places": [
@@ -307,7 +307,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -331,7 +331,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -355,7 +355,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -380,7 +380,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -403,7 +403,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "dims": [
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -427,7 +427,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -451,7 +451,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     2,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -475,7 +475,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -499,7 +499,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     3,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -523,7 +523,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -547,7 +547,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -571,7 +571,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -602,7 +602,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "dims": [
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
@@ -634,7 +634,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     2,
     6
    ],
-   "_party": "秦方",
+   "_party": "后世官修",
    "_faction": null
   }
  ],
@@ -899,15 +899,18 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
   },
   "parties": [
    "秦方",
-   "对方"
+   "对方",
+   "后世官修"
   ],
   "party_bucket": {
    "秦方": "秦方",
-   "对方": "对方"
+   "对方": "对方",
+   "后世官修": "后世官修"
   },
   "party_colors": {
    "秦方": "#A0473A",
-   "对方": "#3D6B4F"
+   "对方": "#3D6B4F",
+   "后世官修": "#6C7A89"
   },
   "factions": {
    "f_秦方": {

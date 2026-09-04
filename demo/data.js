@@ -1,17 +1,18 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 145 个切片
+// 权威数据源：data/scenes.json 注册的 146 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 145 个切片",
+  "slice": "multi-scene · 146 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "changping_llm",
    "chu_han",
+   "chuhai_llm",
    "feishui_llm",
    "guandu_llm",
    "ming_qing",
@@ -398,7 +399,8 @@ window.SANDBOX_DATA = {
   "san_guo",
   "feishui_llm",
   "changping_llm",
-  "qin_mie_liu_guo_llm"
+  "qin_mie_liu_guo_llm",
+  "chuhai_llm"
  ],
  "vocab": {
   "layers": [
@@ -23255,6 +23257,41 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "chuhai_llm": {
+   "key": "chuhai_llm",
+   "scene_id": "chuhai_llm",
+   "title": "楚漢之爭·垓下之戰",
+   "dossier_label": "chuhai_llm",
+   "subtitle": "秦二世元年至漢五年（前207-前202）",
+   "kind": "battle",
+   "region": "qin_han",
+   "page": "chuhai_llm.html",
+   "primary_place": "gaixia",
+   "vocab_pack": "chuhai_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 10,
+    "person": 8,
+    "assert": 17,
+    "conflict": 2,
+    "gap": 2,
+    "record": 12,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -23402,7 +23439,8 @@ window.SANDBOX_DATA = {
   "san_guo": "slices/san_guo.js",
   "feishui_llm": "slices/feishui_llm.js",
   "changping_llm": "slices/changping_llm.js",
-  "qin_mie_liu_guo_llm": "slices/qin_mie_liu_guo_llm.js"
+  "qin_mie_liu_guo_llm": "slices/qin_mie_liu_guo_llm.js",
+  "chuhai_llm": "slices/chuhai_llm.js"
  },
  "corridors": [
   {

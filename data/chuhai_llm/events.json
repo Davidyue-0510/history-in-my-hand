@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_chuhai_llm_01",
+   "subject": "event:ev_chuhai_llm_01",
+   "year": -206,
+   "era": "漢元年",
+   "title": "鴻門宴",
+   "kind": "外交",
+   "text": "項羽欲擊劉邦，項伯翼蔽得脫",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chuhai_llm_02",
+   "subject": "event:ev_chuhai_llm_02",
+   "year": -206,
+   "era": "漢元年",
+   "title": "分封諸侯",
+   "kind": "行政",
+   "text": "項羽自立西楚霸王，都彭城",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chuhai_llm_03",
+   "subject": "event:ev_chuhai_llm_03",
+   "year": -205,
+   "era": "漢二年",
+   "title": "滎陽之圍",
+   "kind": "戰事",
+   "text": "項羽圍劉邦於滎陽，紀信誑楚",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chuhai_llm_04",
+   "subject": "event:ev_chuhai_llm_04",
+   "year": -202,
+   "era": "漢五年",
+   "title": "垓下之戰",
+   "kind": "戰事",
+   "text": "漢軍圍項羽於垓下，楚軍潰敗",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chuhai_llm_05",
+   "subject": "event:ev_chuhai_llm_05",
+   "year": -202,
+   "era": "漢五年",
+   "title": "烏江自刎",
+   "kind": "戰事",
+   "text": "項羽至烏江，笑拒渡江自刎",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "_comment": "chuhai_llm 戰略控制層（手寫覆蓋 v0.35 auto-generated）",
+ "control": [
+  {
+   "place_id": "gaixia",
+   "party": "漢方",
+   "start": -202,
+   "end": -195,
+   "basis": "historical:垓下戰後漢方控"
+  },
+  {
+   "place_id": "wujiang",
+   "party": "漢方",
+   "start": -202,
+   "end": -195,
+   "basis": "historical:烏江歸漢"
+  },
+  {
+   "place_id": "pengcheng",
+   "party": "漢方",
+   "start": -202,
+   "end": -195,
+   "basis": "historical:漢定楚地"
+  },
+  {
+   "place_id": "gailing",
+   "party": "漢方",
+   "start": -202,
+   "end": -195,
+   "basis": "historical:固陵漢軍控"
+  },
+  {
+   "place_id": "xingyang",
+   "party": "漢方",
+   "start": -205,
+   "end": -195,
+   "basis": "historical:滎陽長期漢控"
+  },
+  {
+   "place_id": "hongmen",
+   "party": "漢方",
+   "start": -206,
+   "end": -195,
+   "basis": "historical:關中漢方"
+  },
+  {
+   "place_id": "bashang",
+   "party": "漢方",
+   "start": -206,
+   "end": -195,
+   "basis": "historical:關中漢方"
+  },
+  {
+   "place_id": "hanzhong",
+   "party": "漢方",
+   "start": -206,
+   "end": -195,
+   "basis": "historical:劉邦就國漢中"
+  },
+  {
+   "place_id": "chencang",
+   "party": "漢方",
+   "start": -206,
+   "end": -195,
+   "basis": "historical:漢定三秦（明修棧道暗度陳倉）"
+  },
+  {
+   "place_id": "sangu",
+   "party": "漢方",
+   "start": -206,
+   "end": -195,
+   "basis": "historical:關中漢方"
+  }
+ ]
+}

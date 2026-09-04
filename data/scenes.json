@@ -327,7 +327,8 @@
   "san_guo",
   "feishui_llm",
   "changping_llm",
-  "qin_mie_liu_guo_llm"
+  "qin_mie_liu_guo_llm",
+  "chuhai_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -11875,6 +11876,106 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心（自西向东次第吞并，前221 一统）"
     }
+   }
+  },
+  "chuhai_llm": {
+   "kind": "battle",
+   "region": "qin_han",
+   "title": "楚漢之爭·垓下之戰",
+   "dossier_label": "chuhai_llm",
+   "subtitle": "秦二世元年至漢五年（前207-前202）",
+   "primary_place": "gaixia",
+   "dossier_event": "event:ev_chuhai_llm_04",
+   "vocab_pack": "chuhai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "楚漢相爭的收官戰役。垓下會戰，劉邦合韓信彭越等諸侯軍圍項羽；項王夜起悲歌「力拔山兮」，八百餘騎潰逃至烏江自刎，楚亡漢興。",
+   "parties_note": "漢方(劉邦) vs 楚方(項羽)。史料以《史記·項羽本紀》為主(後世官修·西漢)；楚方獨立文獻《楚漢春秋》(陸賈)已佚(CHU_017 gap)。",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→楚方內部凝聚力（項羽分封裂楚、齊梁叛變、諸侯各懷；張良勸封策略瓦解楚聯盟）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術↔生產力；漢軍以關中+巴蜀後勤，持續遠征楚地；楚方補給線拉長"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口動員；劉邦約40-60萬垓下合圍（含齊梁九江諸侯軍，CHU_016 考據），項羽800餘騎潰逃"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/關隘/外交→戰略重心（關中-楚地東西對峙，滎陽拉鋸、垓下收官）"
+    }
+   },
+   "subject_names": {
+    "event:ev_chuhai_llm_01": "鴻門宴",
+    "event:ev_chuhai_llm_02": "分封諸侯",
+    "event:ev_chuhai_llm_03": "滎陽之圍",
+    "event:ev_chuhai_llm_04": "垓下之戰",
+    "event:ev_chuhai_llm_05": "烏江自刎",
+    "place:hongmen": "鴻門",
+    "place:bashang": "霸上",
+    "place:pengcheng": "彭城",
+    "place:hanzhong": "漢中",
+    "place:xingyang": "滎陽",
+    "place:gailing": "固陵",
+    "place:gaixia": "垓下",
+    "place:wujiang": "烏江",
+    "place:chencang": "陳倉",
+    "place:sangu": "三秦",
+    "person:CHU__p01": "項羽",
+    "person:CHU__p02": "劉邦",
+    "person:CHU__p03": "韓信",
+    "person:CHU__p04": "張良",
+    "person:CHU__p05": "彭越",
+    "person:CHU__p06": "虞姬",
+    "person:CHU__p07": "項伯",
+    "person:CHU__p08": "樊噲"
    }
   }
  },

@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "hongmen",
+   "to": "bashang",
+   "type": "battle",
+   "label": "鴻門宴對峙",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "pengcheng",
+   "to": "xingyang",
+   "type": "military",
+   "label": "項羽圍滎陽",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "hanzhong",
+   "to": "chencang",
+   "type": "military",
+   "label": "暗度陳倉",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "gailing",
+   "to": "gaixia",
+   "type": "military",
+   "label": "漢軍追擊",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "gaixia",
+   "to": "wujiang",
+   "type": "military",
+   "label": "項羽突圍",
+   "_source_idx": 0,
+   "_source_name": "史記·項羽本紀（附高祖本紀楚漢段落）",
+   "_source_party": "後世官修",
+   "_source_credibility": null
+  }
+ ]
+}

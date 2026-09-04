@@ -403,6 +403,39 @@
    "_src_line": 15
   },
   {
+   "id": "CHU_015",
+   "scene": "chuhai_llm",
+   "subject": "event:ev_chuhai_llm_04",
+   "title": "虞姬和項羽歌後下落不明",
+   "missing": "文獻考據 / 考古發掘",
+   "where": "gaixia",
+   "skills": [
+    "文獻考據",
+    "考古發掘"
+   ],
+   "accept": "虞姬後續事蹟待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "CHU_017",
+   "scene": "chuhai_llm",
+   "subject": "place:gaixia",
+   "title": "楚方獨立文獻《楚漢春秋》已佚，楚方立場靠後世戲曲/評書/考古補。",
+   "missing": "秦漢史 / 出土文獻 / 古文字（楚簡/帛書）",
+   "where": "楚方故地考古（馬王堆漢墓帛書、銀雀山漢簡、睡虎地秦簡等）+《楚漢春秋》（陸賈）佚文輯本",
+   "skills": [
+    "秦漢史",
+    "出土文獻",
+    "古文字（楚簡/帛書）"
+   ],
+   "accept": "楚方獨立視角的出土文獻或佚文考據成果，能與《史記·項羽本紀》形成楚方/漢方雙聲敘事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",
