@@ -44,6 +44,7 @@
       "grand_canal",
       "great_wall",
       "guandu",
+      "guandu_llm",
       "guangning",
       "guiling",
       "haizhou",
@@ -90,6 +91,7 @@
       "qin_mie_liu_guo",
       "qin_unify",
       "qing_han",
+      "san_guo",
       "sarhu",
       "shangyang",
       "shaqiu",
@@ -805,6 +807,26 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:gd_jz",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "guandu_llm",
+      "name": "guandu_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "魏": 12,
+        "后世官修": 2
+      },
+      "faction_counts": {},
+      "event_count": 4,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_guandu_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -1702,6 +1724,27 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:qh_1644",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "san_guo",
+      "name": "san_guo",
+      "total": 20,
+      "layers": {
+        "record": 14,
+        "inference": 2,
+        "scholarship": 3,
+        "gap": 1
+      },
+      "party_counts": {
+        "晋": 14,
+        "后世官修": 5,
+        "二手综述": 1
+      },
+      "faction_counts": {},
+      "event_count": 7,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_chibi",
       "best_resonance": 0.0
     },
     {
@@ -4918,6 +4961,223 @@
       }
     },
     {
+      "subject": "event:ev_chibi",
+      "name": "event:ev_chibi",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_gaopingling",
+      "name": "event:ev_gaopingling",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_guandu_llm_01",
+      "name": "event:ev_guandu_llm_01",
+      "scenes": [
+        "guandu_llm"
+      ],
+      "scene_names": [
+        "guandu_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_guandu_llm_02",
+      "name": "event:ev_guandu_llm_02",
+      "scenes": [
+        "guandu_llm"
+      ],
+      "scene_names": [
+        "guandu_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_guandu_llm_03",
+      "name": "event:ev_guandu_llm_03",
+      "scenes": [
+        "guandu_llm"
+      ],
+      "scene_names": [
+        "guandu_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_guandu_llm_04",
+      "name": "event:ev_guandu_llm_04",
+      "scenes": [
+        "guandu_llm"
+      ],
+      "scene_names": [
+        "guandu_llm"
+      ],
+      "total": 7,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.143,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_jin_mie_wu",
+      "name": "event:ev_jin_mie_wu",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_qin_mie_liu_guo_01",
       "name": "event:ev_qin_mie_liu_guo_01",
       "scenes": [
@@ -5073,6 +5333,37 @@
       }
     },
     {
+      "subject": "event:ev_sima_daijin",
+      "name": "event:ev_sima_daijin",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_three_campaigns_01",
       "name": "event:ev_three_campaigns_01",
       "scenes": [
@@ -5148,6 +5439,99 @@
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.333,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wei_mie_shu",
+      "name": "event:ev_wei_mie_shu",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yiling",
+      "name": "event:ev_yiling",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhuge_beifa",
+      "name": "event:ev_zhuge_beifa",
+      "scenes": [
+        "san_guo"
+      ],
+      "scene_names": [
+        "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
       "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {

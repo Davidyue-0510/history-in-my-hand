@@ -322,7 +322,9 @@
   "song_dangzheng",
   "donghan_danggu",
   "chu_han",
-  "song_chan_yuan"
+  "song_chan_yuan",
+  "guandu_llm",
+  "san_guo"
  ],
  "scenes": {
   "sarhu": {
@@ -2236,7 +2238,7 @@
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
+   "scale_tier": "operational",
    "strategic": {
     "political_cohesion": {
      "from": [
@@ -2248,7 +2250,7 @@
       5
      ],
      "layer": "inference",
-     "note": "制度+思想→朝堂凝聚力（主战寇准 vs 主和迁都派）"
+     "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
     },
     "material_logistics": {
      "from": [
@@ -2260,7 +2262,7 @@
       3
      ],
      "layer": "inference",
-     "note": "技术↔生产力；岁币/漕运→后勤半径"
+     "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
     },
     "population_mobilization": {
      "from": [
@@ -2270,7 +2272,7 @@
       4
      ],
      "layer": "inference",
-     "note": "人口↔常驻军；边境民生→动员潜力"
+     "note": "人口↔常驻军；流民→动员潜力"
     },
     "geopolitical_strategy": {
      "from": [
@@ -2282,7 +2284,7 @@
       6
      ],
      "layer": "inference",
-     "note": "地形/关隘/外交→战略重心与窗口（白沟河界、幽蓟门户）"
+     "note": "地形/关隘/外交→战略重心与窗口"
     }
    }
   },
@@ -2319,7 +2321,7 @@
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "strategic",
+   "scale_tier": "operational",
    "strategic": {
     "political_cohesion": {
      "from": [
@@ -2331,7 +2333,7 @@
       5
      ],
      "layer": "inference",
-     "note": "制度+思想→朝堂凝聚力（汉拜将/联诸侯 vs 楚分封）"
+     "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
     },
     "material_logistics": {
      "from": [
@@ -2343,7 +2345,7 @@
       3
      ],
      "layer": "inference",
-     "note": "技术↔生产力；关中漕运→后勤半径"
+     "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
     },
     "population_mobilization": {
      "from": [
@@ -2353,7 +2355,7 @@
       4
      ],
      "layer": "inference",
-     "note": "人口↔常驻军；长期拉锯的民生代价"
+     "note": "人口↔常驻军；流民→动员潜力"
     },
     "geopolitical_strategy": {
      "from": [
@@ -2365,7 +2367,7 @@
       6
      ],
      "layer": "inference",
-     "note": "地形/关隘/江淮→战略重心与窗口"
+     "note": "地形/关隘/外交→战略重心与窗口"
     }
    }
   },
@@ -11364,6 +11366,209 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    }
+  },
+  "guandu_llm": {
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "title": "官渡之战（LLM 抽取·人工校订）",
+   "dossier_label": "官渡之战（LLM 抽取落库）",
+   "subtitle": "建安五年（200）· 魏（曹操） vs 袁（袁绍）",
+   "primary_place": "guandu",
+   "dossier_event": "event:ev_guandu_llm_04",
+   "vocab_pack": "guandu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "官渡之战（200，建安五年）：袁绍据河北四州号十万，曹操据兖豫兵仅两万余，战于官渡；曹操用荀攸声东击西解白马之围、斩颜良文丑，后纳许攸之谋夜袭乌巢焚粮，张郃高览降，绍军溃退河北。本切片是**首个「真实 LLM 抽取 + 人工校订落库」的正式场景**：DeepSeek 依据《三国志·武帝纪》原文抽出 14 条断言（8 人/4 事/8 地/6 边），经 curate_emit 门禁报 BLOCK 0 / WARN 29（引文待核 14、维度兜底 14、控制层缺失 1），再由人工逐条校订——把 LLM 全部标为 dims=[6] 的 conform 兜底值改为按内容判定的真实维度，把裴松之注的异载从魏方来源剥离归到注疏层，并按史实补出七段多方 control（黄河以南归魏、河北归袁）。未经校订的 LLM 产物一律不入库。",
+   "parties_note": "袁方无独立官史存世，袁绍阵营的决策与动机只能经魏方《武帝纪》逆向推测——「袁」桶在来源共振上几乎为空；刘备建安五年叛曹后依附袁绍而非袁氏旧部，故独立成「第三方」桶，**不硬塞进魏或袁**——立场分桶是产品核心，塞错了就是伪造立场。系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_guandu_llm_01": "刘备叛曹",
+    "event:ev_guandu_llm_02": "白马·延津之战",
+    "event:ev_guandu_llm_03": "官渡对峙",
+    "event:ev_guandu_llm_04": "乌巢烧粮",
+    "place:guandu": "官渡",
+    "place:baima": "白马",
+    "place:yanjin": "延津",
+    "place:wuchao": "乌巢",
+    "place:xuchang": "许都",
+    "place:xuzhou": "徐州",
+    "place:hebei": "河北（邺）",
+    "place:huanghe": "黄河（官渡段）",
+    "person:cao_cao": "曹操",
+    "person:yuan_shao": "袁绍",
+    "person:liu_bei": "刘备",
+    "person:xun_you": "荀攸",
+    "person:xu_you": "许攸",
+    "person:yan_liang": "颜良",
+    "person:wen_chou": "文丑",
+    "person:zhang_he": "张郃"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；流民→动员潜力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心与窗口"
+    }
+   }
+  },
+  "san_guo": {
+   "kind": "dynasty",
+   "region": "three_kingdoms",
+   "title": "三国鼎立",
+   "dossier_label": "三国鼎立",
+   "subtitle": "220—280 · 魏 / 蜀 / 吴 → 三分归晋",
+   "primary_place": "luoyang",
+   "dossier_event": "event:ev_jin_mie_wu",
+   "vocab_pack": "san_guo",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "三国鼎立（220—280）：曹丕代汉、刘备继汉、孙权据江东，三方六十年的对峙以 263 魏灭蜀、265 晋代魏、280 晋灭吴告终。本切片不以单战役为题，而以**格局的形成、固化与终结**为题——战略尺度（strategic），六维全覆盖：地理（九州/益州/江东的纵深差异）、技术（木牛流马、连弩、楼船与航海）、制度（九品中正、屯田、蜀锦官营、世袭领兵）、社会（著籍户口锐减与豪强荫附）、思想（玄学兴起、唯才是举、正统之争）、事件（赤壁—夷陵—北伐—灭蜀—灭吴）。与 guandu_llm（战役尺度）相邻互补：同一朝代、两种尺度。",
+   "parties_note": "三国史料最根本的不对称：**蜀汉「国不置史，注记无官」**（陈寿语），蜀方原始记载系统性亡佚，我们对蜀汉内政的理解本质是魏吴记载的投影（SG017 显式标注为可认领研究线索）。「晋」独立成桶而非并入「魏」，是为了不把「统一」伪装成「三国内部事件」——三分归晋是格局的终结，不是某一方的胜利。正统之争（司马光以魏为正统 vs 习凿齿以蜀为正统）并列展示，不裁决。",
+   "subject_names": {
+    "place:luoyang": "洛阳",
+    "place:chang_an": "长安",
+    "place:wuzhangyuan": "五丈原",
+    "place:hanzhong": "汉中",
+    "place:chengdu": "成都",
+    "place:jian_ge": "剑阁",
+    "place:yinping": "阴平",
+    "place:jiangling": "江陵",
+    "place:chibi": "赤壁",
+    "place:jianye": "建业",
+    "person:cao_pi": "曹丕",
+    "person:sima_yi": "司马懿",
+    "person:deng_ai": "邓艾",
+    "person:sima_yan": "司马炎",
+    "person:liu_bei": "刘备",
+    "person:zhu_ge_liang": "诸葛亮",
+    "person:liu_shan": "刘禅",
+    "person:jiang_wei": "姜维",
+    "person:sun_quan": "孙权",
+    "person:zhou_yu": "周瑜",
+    "person:lu_xun": "陆逊",
+    "person:sun_hao": "孙皓",
+    "event:ev_chibi": "赤壁之战",
+    "event:ev_yiling": "夷陵（猇亭）之战",
+    "event:ev_zhuge_beifa": "诸葛亮北伐",
+    "event:ev_gaopingling": "高平陵之变",
+    "event:ev_wei_mie_shu": "魏灭蜀",
+    "event:ev_sima_daijin": "司马炎代魏建晋",
+    "event:ev_jin_mie_wu": "晋灭吴"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；流民→动员潜力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心与窗口"
+    }
+   }
   }
  },
  "dimensions": {
@@ -11501,6 +11706,90 @@
   },
   "fiction": {
    "label": "虚构世界",
+   "status": "stub",
+   "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+   "tech": {
+    "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+   },
+   "international": {
+    "_gap": "待补：邻邦/外交态势"
+   },
+   "economy": {
+    "_gap": "待补：赋税/货币/市场整合"
+   },
+   "society": {
+    "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+   },
+   "doctrine": {
+    "_gap": "待补：主流意识形态/知识体系"
+   },
+   "anchors": {
+    "_gap": "待补：关键制度/地理支点"
+   },
+   "strategic": {
+    "_gap": "待补：大战略/重心/脆弱性"
+   }
+  },
+  "song": {
+   "label": "宋（960–1279）",
+   "status": "derived",
+   "note": "宋代（火器萌芽、纸币、文人政治）。",
+   "tech": {
+    "productivity": {
+     "value": "农业+手工业(瓷器/纺织)高峰，火药武器化",
+     "layer": "scholarship",
+     "basis": "技术↔生产力"
+    },
+    "key_techs": [
+     "火药武器",
+     "指南针航海",
+     "活字印刷"
+    ]
+   },
+   "international": {
+    "neighbors": [
+     "辽/金",
+     "西夏",
+     "大理"
+    ],
+    "diplomatic_posture": "岁币/盟约",
+    "external_threat": "辽金蒙",
+    "layer": "scholarship"
+   },
+   "economy": {
+    "currency": "铜钱+交子(世界最早纸币)",
+    "market_integration": "突破坊市制",
+    "layer": "scholarship"
+   },
+   "society": {
+    "standing_army_link": {
+     "value": "募兵(禁军)+更戍法，财政养兵→人口↔常驻军(财政视角)",
+     "layer": "scholarship",
+     "basis": "人口↔常驻军"
+    },
+    "social_structure": [
+     "士农工商",
+     "厢军/乡兵"
+    ]
+   },
+   "doctrine": {
+    "dominant_ideology": "理学(程朱)成型",
+    "layer": "scholarship"
+   },
+   "anchors": {
+    "geographic_pivots": [
+     "开封/临安",
+     "燕云(失)"
+    ],
+    "layer": "scholarship"
+   },
+   "strategic": {
+    "grand_strategy": "守内虚外、重文抑武",
+    "layer": "inference"
+   }
+  },
+  "qin_han": {
+   "label": "秦汉（前221–220）",
    "status": "stub",
    "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
    "tech": {
@@ -11746,32 +12035,6 @@
     "_gap": "待补：大战略/重心/脆弱性"
    }
   },
-  "qin_han": {
-   "label": "秦汉（前221–220）",
-   "status": "stub",
-   "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
-   "tech": {
-    "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
-   },
-   "international": {
-    "_gap": "待补：邻邦/外交态势"
-   },
-   "economy": {
-    "_gap": "待补：赋税/货币/市场整合"
-   },
-   "society": {
-    "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
-   },
-   "doctrine": {
-    "_gap": "待补：主流意识形态/知识体系"
-   },
-   "anchors": {
-    "_gap": "待补：关键制度/地理支点"
-   },
-   "strategic": {
-    "_gap": "待补：大战略/重心/脆弱性"
-   }
-  },
   "three_kingdoms": {
    "label": "三国（190–280）",
    "status": "stub",
@@ -11848,64 +12111,6 @@
    },
    "strategic": {
     "_gap": "待补：大战略/重心/脆弱性"
-   }
-  },
-  "song": {
-   "label": "宋（960–1279）",
-   "status": "derived",
-   "note": "宋代（火器萌芽、纸币、文人政治）。",
-   "tech": {
-    "productivity": {
-     "value": "农业+手工业(瓷器/纺织)高峰，火药武器化",
-     "layer": "scholarship",
-     "basis": "技术↔生产力"
-    },
-    "key_techs": [
-     "火药武器",
-     "指南针航海",
-     "活字印刷"
-    ]
-   },
-   "international": {
-    "neighbors": [
-     "辽/金",
-     "西夏",
-     "大理"
-    ],
-    "diplomatic_posture": "岁币/盟约",
-    "external_threat": "辽金蒙",
-    "layer": "scholarship"
-   },
-   "economy": {
-    "currency": "铜钱+交子(世界最早纸币)",
-    "market_integration": "突破坊市制",
-    "layer": "scholarship"
-   },
-   "society": {
-    "standing_army_link": {
-     "value": "募兵(禁军)+更戍法，财政养兵→人口↔常驻军(财政视角)",
-     "layer": "scholarship",
-     "basis": "人口↔常驻军"
-    },
-    "social_structure": [
-     "士农工商",
-     "厢军/乡兵"
-    ]
-   },
-   "doctrine": {
-    "dominant_ideology": "理学(程朱)成型",
-    "layer": "scholarship"
-   },
-   "anchors": {
-    "geographic_pivots": [
-     "开封/临安",
-     "燕云(失)"
-    ],
-    "layer": "scholarship"
-   },
-   "strategic": {
-    "grand_strategy": "守内虚外、重文抑武",
-    "layer": "inference"
    }
   },
   "yuan_ming": {

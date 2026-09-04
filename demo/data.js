@@ -1,18 +1,20 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 140 个切片
+// 权威数据源：data/scenes.json 注册的 142 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 140 个切片",
+  "slice": "multi-scene · 142 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "chu_han",
+   "guandu_llm",
    "ming_qing",
    "qin_mie_liu_guo",
+   "san_guo",
    "song",
    "tang",
    "three_campaigns"
@@ -388,7 +390,9 @@ window.SANDBOX_DATA = {
   "song_dangzheng",
   "donghan_danggu",
   "chu_han",
-  "song_chan_yuan"
+  "song_chan_yuan",
+  "guandu_llm",
+  "san_guo"
  ],
  "vocab": {
   "layers": [
@@ -23011,7 +23015,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "strategic",
+   "scale_tier": "operational",
    "counts": {
     "src": 3,
     "place": 8,
@@ -23046,7 +23050,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
+   "scale_tier": "operational",
    "counts": {
     "src": 4,
     "place": 7,
@@ -23057,6 +23061,76 @@ window.SANDBOX_DATA = {
     "record": 14,
     "scholarship": 1,
     "inference": 0
+   }
+  },
+  "guandu_llm": {
+   "key": "guandu_llm",
+   "scene_id": "guandu_llm",
+   "title": "官渡之战（LLM 抽取·人工校订）",
+   "dossier_label": "官渡之战（LLM 抽取落库）",
+   "subtitle": "建安五年（200）· 魏（曹操） vs 袁（袁绍）",
+   "kind": "battle",
+   "region": "three_kingdoms",
+   "page": "guandu_llm.html",
+   "primary_place": "guandu",
+   "vocab_pack": "guandu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 2,
+    "place": 8,
+    "person": 8,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "san_guo": {
+   "key": "san_guo",
+   "scene_id": "san_guo",
+   "title": "三国鼎立",
+   "dossier_label": "三国鼎立",
+   "subtitle": "220—280 · 魏 / 蜀 / 吴 → 三分归晋",
+   "kind": "dynasty",
+   "region": "three_kingdoms",
+   "page": "county.html?scene=san_guo",
+   "primary_place": "luoyang",
+   "vocab_pack": "san_guo",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 5,
+    "place": 10,
+    "person": 12,
+    "assert": 20,
+    "conflict": 2,
+    "gap": 1,
+    "record": 14,
+    "scholarship": 3,
+    "inference": 2
    }
   }
  },
@@ -23200,7 +23274,9 @@ window.SANDBOX_DATA = {
   "song_dangzheng": "slices/song_dangzheng.js",
   "donghan_danggu": "slices/donghan_danggu.js",
   "chu_han": "slices/chu_han.js",
-  "song_chan_yuan": "slices/song_chan_yuan.js"
+  "song_chan_yuan": "slices/song_chan_yuan.js",
+  "guandu_llm": "slices/guandu_llm.js",
+  "san_guo": "slices/san_guo.js"
  },
  "corridors": [
   {
@@ -24001,6 +24077,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 16
+   },
+   {
+    "id": "GUA_014",
+    "scene": "guandu_llm",
+    "subject": "event:ev_guandu_llm_04",
+    "title": "袁绍军实际兵力是否真达十万、曹操是否仅两万余，三方记载不一，难定",
+    "missing": "史料对比 / 军事史分析",
+    "where": "《三国志》裴松之注及《献帝春秋》等异载",
+    "skills": [
+     "史料对比",
+     "军事史分析"
+    ],
+    "accept": "需要更多文献或考古证据核实三方兵力实数",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 14
    },
    {
     "id": "G010",
@@ -25299,6 +25391,23 @@ window.SANDBOX_DATA = {
     "_src_line": 16
    },
    {
+    "id": "SG017",
+    "scene": "san_guo",
+    "subject": "person:liu_shan",
+    "title": "蜀汉『国不置史，注记无官』（陈寿语）：蜀方无系统史官记载，其内政、制度、朝堂争议大量亡佚，今人欲知蜀事只能经魏吴记载逆向…",
+    "missing": "史料辑佚 / 蜀汉制度史 / 地方志比勘",
+    "where": "《三国志·蜀书》陈寿评、及《华阳国志》（东晋常璩，蜀地地方志）",
+    "skills": [
+     "史料辑佚",
+     "蜀汉制度史",
+     "地方志比勘"
+    ],
+    "accept": "辑校《华阳国志》与魏吴记载中蜀汉内政的交叉证据，标出可确证与仅见单方记载的部分",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 17
+   },
+   {
     "id": "A092",
     "scene": "sarhu",
     "subject": "event:sarhu_battle",
@@ -26432,6 +26541,7 @@ window.SANDBOX_DATA = {
     "grand_canal",
     "great_wall",
     "guandu",
+    "guandu_llm",
     "guangning",
     "guiling",
     "haizhou",
@@ -26478,6 +26588,7 @@ window.SANDBOX_DATA = {
     "qin_mie_liu_guo",
     "qin_unify",
     "qing_han",
+    "san_guo",
     "sarhu",
     "shangyang",
     "shaqiu",
@@ -27193,6 +27304,26 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:gd_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "guandu_llm",
+    "name": "guandu_llm",
+    "total": 14,
+    "layers": {
+     "inference": 1,
+     "record": 11,
+     "scholarship": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "魏": 12,
+     "后世官修": 2
+    },
+    "faction_counts": {},
+    "event_count": 4,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_guandu_llm_01",
     "best_resonance": 0.0
    },
    {
@@ -28090,6 +28221,27 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:qh_1644",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "san_guo",
+    "name": "san_guo",
+    "total": 20,
+    "layers": {
+     "record": 14,
+     "inference": 2,
+     "scholarship": 3,
+     "gap": 1
+    },
+    "party_counts": {
+     "晋": 14,
+     "后世官修": 5,
+     "二手综述": 1
+    },
+    "faction_counts": {},
+    "event_count": 7,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_chibi",
     "best_resonance": 0.0
    },
    {

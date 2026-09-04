@@ -738,6 +738,22 @@
    "_src_line": 16
   },
   {
+   "id": "GUA_014",
+   "scene": "guandu_llm",
+   "subject": "event:ev_guandu_llm_04",
+   "title": "袁绍军实际兵力是否真达十万、曹操是否仅两万余，三方记载不一，难定",
+   "missing": "史料对比 / 军事史分析",
+   "where": "《三国志》裴松之注及《献帝春秋》等异载",
+   "skills": [
+    "史料对比",
+    "军事史分析"
+   ],
+   "accept": "需要更多文献或考古证据核实三方兵力实数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "G010",
    "scene": "guangning",
    "subject": "event:guangning_fall",
@@ -2032,6 +2048,23 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "SG017",
+   "scene": "san_guo",
+   "subject": "person:liu_shan",
+   "title": "蜀汉『国不置史，注记无官』（陈寿语）：蜀方无系统史官记载，其内政、制度、朝堂争议大量亡佚，今人欲知蜀事只能经魏吴记载逆向…",
+   "missing": "史料辑佚 / 蜀汉制度史 / 地方志比勘",
+   "where": "《三国志·蜀书》陈寿评、及《华阳国志》（东晋常璩，蜀地地方志）",
+   "skills": [
+    "史料辑佚",
+    "蜀汉制度史",
+    "地方志比勘"
+   ],
+   "accept": "辑校《华阳国志》与魏吴记载中蜀汉内政的交叉证据，标出可确证与仅见单方记载的部分",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
   },
   {
    "id": "A092",

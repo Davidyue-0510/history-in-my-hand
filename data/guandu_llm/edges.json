@@ -1,0 +1,10 @@
+{
+  "edges": [
+    {"from": "hebei", "to": "baima", "type": "military", "label": "袁绍军自河北南下攻白马"},
+    {"from": "xuchang", "to": "baima", "type": "military", "label": "曹操自许都北救白马"},
+    {"from": "baima", "to": "yanjin", "type": "battle", "label": "曹军追击至延津斩文丑"},
+    {"from": "yanjin", "to": "guandu", "type": "military", "label": "袁绍大军进至官渡"},
+    {"from": "xuchang", "to": "wuchao", "type": "military", "label": "曹操自官渡夜袭乌巢"},
+    {"from": "guandu", "to": "huanghe", "type": "military", "label": "袁绍残部北渡黄河退回河北"}
+  ]
+}

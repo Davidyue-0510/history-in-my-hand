@@ -1,26 +1,40 @@
-// 本文件由 tools/build.py 自动生成（切片 chu_han），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["chu_han"]。
+// 本文件由 tools/build.py 自动生成（切片 guandu_llm），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["guandu_llm"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["chu_han"] = {
+window.SANDBOX_SLICES["guandu_llm"] = {
  "meta": {
   "kind": "battle",
-  "region": "qin_han",
-  "title": "楚汉之争",
-  "dossier_label": "楚汉之争",
-  "subtitle": "前206—前202 · 汉（刘邦） vs 楚（项羽）",
-  "primary_place": "chenggao",
-  "dossier_event": "event:gai_xia",
-  "vocab_pack": "chu_han",
+  "region": "three_kingdoms",
+  "title": "官渡之战（LLM 抽取·人工校订）",
+  "dossier_label": "官渡之战（LLM 抽取落库）",
+  "subtitle": "建安五年（200）· 魏（曹操） vs 袁（袁绍）",
+  "primary_place": "guandu",
+  "dossier_event": "event:ev_guandu_llm_04",
+  "vocab_pack": "guandu_llm",
   "terrain_grid": "china_coarse",
-  "lead": "楚汉之争（前206—前202）：刘邦据关中，项羽都彭城，争天下。本切片用楚汉语境包（chu_han.json）分桶，与宋/唐切片共用同一套断言内核——差异只在立场语义（汉/楚/后世官修）。地形复用 china_coarse 网格（覆盖关中—中原—江淮全剧场，高程为真，不伪造）。",
-  "parties_note": "楚本方原始记载多佚，项羽事迹主要经汉方（史记）回溯叙述；『楚』桶在来源共振上偏空，结构性缺口在 _party_notes 显式标注。系统不裁决，只并列。",
+  "lead": "官渡之战（200，建安五年）：袁绍据河北四州号十万，曹操据兖豫兵仅两万余，战于官渡；曹操用荀攸声东击西解白马之围、斩颜良文丑，后纳许攸之谋夜袭乌巢焚粮，张郃高览降，绍军溃退河北。本切片是**首个「真实 LLM 抽取 + 人工校订落库」的正式场景**：DeepSeek 依据《三国志·武帝纪》原文抽出 14 条断言（8 人/4 事/8 地/6 边），经 curate_emit 门禁报 BLOCK 0 / WARN 29（引文待核 14、维度兜底 14、控制层缺失 1），再由人工逐条校订——把 LLM 全部标为 dims=[6] 的 conform 兜底值改为按内容判定的真实维度，把裴松之注的异载从魏方来源剥离归到注疏层，并按史实补出七段多方 control（黄河以南归魏、河北归袁）。未经校订的 LLM 产物一律不入库。",
+  "parties_note": "袁方无独立官史存世，袁绍阵营的决策与动机只能经魏方《武帝纪》逆向推测——「袁」桶在来源共振上几乎为空；刘备建安五年叛曹后依附袁绍而非袁氏旧部，故独立成「第三方」桶，**不硬塞进魏或袁**——立场分桶是产品核心，塞错了就是伪造立场。系统不裁决，只并列。",
   "subject_names": {
-   "event:gai_xia": "垓下之围",
-   "event:hongmen": "鸿门宴",
-   "event:pengcheng": "彭城之战",
-   "person:liu_bang": "刘邦",
-   "person:xiang_yu": "项羽",
-   "person:han_xin": "韩信"
+   "event:ev_guandu_llm_01": "刘备叛曹",
+   "event:ev_guandu_llm_02": "白马·延津之战",
+   "event:ev_guandu_llm_03": "官渡对峙",
+   "event:ev_guandu_llm_04": "乌巢烧粮",
+   "place:guandu": "官渡",
+   "place:baima": "白马",
+   "place:yanjin": "延津",
+   "place:wuchao": "乌巢",
+   "place:xuchang": "许都",
+   "place:xuzhou": "徐州",
+   "place:hebei": "河北（邺）",
+   "place:huanghe": "黄河（官渡段）",
+   "person:cao_cao": "曹操",
+   "person:yuan_shao": "袁绍",
+   "person:liu_bei": "刘备",
+   "person:xun_you": "荀攸",
+   "person:xu_you": "许攸",
+   "person:yan_liang": "颜良",
+   "person:wen_chou": "文丑",
+   "person:zhang_he": "张郃"
   },
   "dims": [
    1,
@@ -30,7 +44,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    5,
    6
   ],
-  "epoch": "qin_han",
+  "epoch": "three_kingdoms",
   "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {
@@ -80,779 +94,698 @@ window.SANDBOX_SLICES["chu_han"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "page": "chu_han.html",
-  "key": "chu_han",
-  "scene_id": "chu_han"
+  "page": "guandu_llm.html",
+  "key": "guandu_llm",
+  "scene_id": "guandu_llm"
  },
  "sources": [
   {
-   "id": "shiji",
-   "title": "史记",
-   "party": "汉·官修",
-   "stance_label": "汉人当代/近当代",
-   "distance_label": "成书汉武帝时，距楚汉约百年",
+   "id": "sanguozhi_wudi",
+   "title": "三国志·魏书·武帝纪",
+   "party": "魏·官修",
+   "stance_label": "魏方本纪（西晋官修正史）",
+   "distance_label": "西晋陈寿撰，距官渡之战约八十年",
    "color": "#B23A48",
-   "compiler": "司马迁（西汉）",
-   "period": "汉",
-   "note": "本纪·高祖本纪、项羽本纪、淮阴侯列传载楚汉之事，汉人叙汉，视角含汉方立场"
+   "compiler": "陈寿（西晋）",
+   "period": "晋",
+   "note": "本切片主干史料。《武帝纪》为魏方本纪，叙官渡以曹操为主角，兵力、过程、斩获皆出此。使用时须记：这是胜利方（魏）的自我叙述，袁绍阵营的动机与内部决策只能经此逆向推测"
   },
   {
-   "id": "hanshu",
-   "title": "汉书",
-   "party": "汉·后朝官修",
-   "stance_label": "汉后朝官修",
-   "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
-   "color": "#C0584F",
-   "compiler": "班固（东汉）",
-   "period": "汉",
-   "note": "高帝纪、韩信传等，东汉官修西汉史"
-  },
-  {
-   "id": "chuhan_lun",
-   "title": "楚汉战争史论",
-   "party": "二手综述",
-   "stance_label": "近现代考订",
-   "distance_label": "现代楚汉战争研究",
-   "color": "#9B7B5A",
-   "compiler": "近现代研究",
-   "period": "现代",
-   "note": "现代综述，可关；楚汉战略定性多据此类研究"
+   "id": "peisongzhi",
+   "title": "三国志注（裴松之注）",
+   "party": "南朝宋·官修",
+   "stance_label": "后世注疏考订",
+   "distance_label": "南朝刘宋裴松之奉诏作注，距官渡之战约二百五十年",
+   "color": "#6C7A89",
+   "compiler": "裴松之（南朝宋）",
+   "period": "南朝宋",
+   "note": "裴注广引《献帝春秋》等异载，暴露出官渡兵力与过程细节在不同记载间的出入。本切片仅用其『异载共存』这一层考订结论，不据其补充叙事——蜀/吴二方官史对官渡的独立叙述本切片仍然缺位，缺口显式保留"
   }
  ],
  "places": [
   {
-   "id": "guanzhong",
-   "name": "关中",
-   "lon": 108.9,
-   "lat": 34.3,
-   "type": "region",
-   "note": "汉王刘邦根本之地，萧何治后勤",
-   "elev": 383
+   "id": "guandu",
+   "name": "官渡",
+   "lon": 114.1,
+   "lat": 34.85,
+   "type": "fortress",
+   "note": "官渡之战主战场（今河南中牟东北；坐标为今地推定，非考古实测）",
+   "elev": 73
   },
   {
-   "id": "hanzhong",
-   "name": "汉中",
-   "lon": 107.0,
-   "lat": 33.1,
-   "type": "region",
-   "note": "刘邦就封汉王之所",
-   "elev": 598
-  },
-  {
-   "id": "hanguan",
-   "name": "函谷关",
-   "lon": 111.3,
-   "lat": 34.3,
-   "type": "pass",
-   "note": "关中东出咽喉",
-   "elev": 748
-  },
-  {
-   "id": "xingyang",
-   "name": "荥阳",
-   "lon": 113.36,
-   "lat": 34.72,
+   "id": "baima",
+   "name": "白马",
+   "lon": 114.7,
+   "lat": 35.6,
    "type": "city",
-   "note": "成皋相持前线",
-   "elev": 253
+   "note": "颜良围攻之城（今河南滑县东；黄河渡口，坐标为今地推定）",
+   "elev": 54
   },
   {
-   "id": "chenggao",
-   "name": "成皋",
-   "lon": 113.0,
-   "lat": 34.75,
+   "id": "yanjin",
+   "name": "延津",
+   "lon": 114.19,
+   "lat": 35.15,
    "type": "city",
-   "note": "荥阳以东险隘，楚汉拉锯",
-   "elev": 238
+   "note": "文丑被斩之处（今河南延津；坐标为今地推定）",
+   "elev": 65
   },
   {
-   "id": "pengcheng",
-   "name": "彭城",
+   "id": "wuchao",
+   "name": "乌巢",
+   "lon": 114.45,
+   "lat": 35.02,
+   "type": "fortress",
+   "note": "袁绍军粮屯积地（今河南延津东南，一说封丘西；坐标为今地推定，诸说不一）",
+   "elev": 72
+  },
+  {
+   "id": "xuchang",
+   "name": "许都",
+   "lon": 113.85,
+   "lat": 34.04,
+   "type": "city",
+   "note": "曹操迎献帝所都，政治中心（今河南许昌）",
+   "elev": 72
+  },
+  {
+   "id": "xuzhou",
+   "name": "徐州",
    "lon": 117.18,
-   "lat": 34.27,
-   "type": "city",
-   "note": "项羽都，西楚霸王都",
-   "elev": 62
+   "lat": 34.26,
+   "type": "region",
+   "note": "刘备袭杀车胄叛曹之地（治今江苏徐州；坐标为州域治所推定）",
+   "elev": 63
   },
   {
-   "id": "gai_xia",
-   "name": "垓下",
-   "lon": 117.3,
-   "lat": 33.53,
-   "type": "city",
-   "note": "项羽败亡决战地（今安徽灵璧）",
-   "elev": 19
+   "id": "hebei",
+   "name": "河北（邺）",
+   "lon": 114.6,
+   "lat": 36.3,
+   "type": "region",
+   "note": "袁绍据冀青幽并四州之根本，治邺（今河北临漳；坐标为四州重心推定）",
+   "elev": 64
   },
   {
-   "id": "huai_yin",
-   "name": "淮阴",
-   "lon": 119.0,
-   "lat": 33.5,
-   "type": "city",
-   "note": "韩信故乡（今江苏淮安）",
-   "elev": 11
+   "id": "huanghe",
+   "name": "黄河（官渡段）",
+   "lon": 114.2,
+   "lat": 34.95,
+   "type": "river",
+   "note": "袁绍残部北渡退回河北之处；官渡段黄河河道历代屡徙，今河道与汉末故道不重合，坐标为古河道近似位置",
+   "elev": 71
   }
  ],
  "persons": [
   {
-   "id": "liu_bang",
-   "name": "刘邦",
-   "party": "汉",
-   "note": "汉王 / 汉高祖",
-   "influence": 2
-  },
-  {
-   "id": "xiang_yu",
-   "name": "项羽",
-   "party": "楚",
-   "note": "西楚霸王",
-   "influence": 2
-  },
-  {
-   "id": "han_xin",
-   "name": "韩信",
-   "party": "汉",
-   "note": "大将，定三秦、垓下合围",
-   "influence": 2
-  },
-  {
-   "id": "xiao_he",
-   "name": "萧何",
-   "party": "汉",
-   "note": "治关中后勤",
+   "id": "cao_cao",
+   "name": "曹操",
+   "party": "魏",
+   "note": "东汉司空、丞相；官渡之战胜利方主帅，以少胜多",
    "influence": 0
   },
   {
-   "id": "zhang_liang",
-   "name": "张良",
-   "party": "汉",
-   "note": "谋臣",
-   "influence": 1
+   "id": "yuan_shao",
+   "name": "袁绍",
+   "party": "袁",
+   "note": "大将军、冀州牧；据河北四州，官渡战败方主帅",
+   "influence": 0
   },
   {
-   "id": "fan_zeng",
-   "name": "范增",
-   "party": "楚",
-   "note": "项羽谋主，鸿门劝杀刘邦",
+   "id": "liu_bei",
+   "name": "刘备",
+   "party": "第三方",
+   "note": "左将军；建安五年袭杀徐州刺史车胄叛曹，为曹操东征所破后依附袁绍。非袁绍旧部，故独立成桶",
+   "influence": 0
+  },
+  {
+   "id": "xun_you",
+   "name": "荀攸",
+   "party": "魏",
+   "note": "曹操谋士；献声东击西之策解白马之围",
+   "influence": 0
+  },
+  {
+   "id": "xu_you",
+   "name": "许攸",
+   "party": "袁",
+   "note": "原袁绍谋士，建安五年十月叛投曹操，献袭乌巢烧粮之策",
+   "influence": 0
+  },
+  {
+   "id": "yan_liang",
+   "name": "颜良",
+   "party": "袁",
+   "note": "袁绍大将；攻白马时为曹军所斩",
+   "influence": 0
+  },
+  {
+   "id": "wen_chou",
+   "name": "文丑",
+   "party": "袁",
+   "note": "袁绍大将；延津之战为曹军所斩",
+   "influence": 0
+  },
+  {
+   "id": "zhang_he",
+   "name": "张郃",
+   "party": "袁",
+   "note": "袁绍大将；乌巢失守后与高览降曹",
    "influence": 0
   }
  ],
  "assertions": [
   {
-   "id": "CH001",
-   "subject": "place:xingyang",
-   "predicate": "前线地理",
-   "value_text": "楚汉对峙核心为中原荥阳—成皋一线与江淮彭城—垓下；关中为汉根本",
+   "id": "GUA_001",
+   "subject": "event:ev_guandu_llm_01",
+   "predicate": "起因",
+   "value_text": "刘备袭杀徐州刺史车胄，叛离曹操，牵制曹军东线",
    "time": {
-    "era_text": "楚汉（前206—前202）",
-    "gregorian_year": -206
+    "era_text": "建安五年正月",
+    "gregorian_year": 200
    },
-   "place": "xingyang",
-   "source": "shiji",
-   "quote": "荥阳、成皋间相持数年",
+   "place": "xuzhou",
+   "source": "sanguozhi_wudi",
+   "quote": "刘备袭杀徐州刺史车胄叛曹",
    "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "地理维度（1）：中原—江淮双战场，关中为汉后勤根本",
-   "dims": [
-    1
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH002",
-   "subject": "place:guanzhong",
-   "predicate": "后勤根本",
-   "value_text": "萧何治关中，转漕给军，为汉之后勤根本，故汉能持久",
-   "time": {
-    "era_text": "楚汉（前206—前202）",
-    "gregorian_year": -206
-   },
-   "place": "guanzhong",
-   "source": "hanshu",
-   "quote": "萧何转漕给军，未尝乏绝",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "技术/后勤维度（2）：关中转漕支撑长期战争",
-   "dims": [
-    2
-   ],
-   "_party": "汉·后朝官修",
-   "_faction": null
-  },
-  {
-   "id": "CH003",
-   "subject": "person:han_xin",
-   "predicate": "拜将",
-   "value_text": "刘邦拜韩信为大将，明修栈道暗度陈仓，还定三秦",
-   "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
-   },
-   "place": "hanzhong",
-   "source": "shiji",
-   "quote": "信数与萧何语，何奇之，荐于王，拜大将",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "制度维度（3）：拜将—暗度陈仓开辟关中—中原通道",
-   "dims": [
-    3
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH004",
-   "subject": "person:xiang_yu",
-   "predicate": "分封",
-   "value_text": "项羽分封十八王，自立西楚霸王，都彭城",
-   "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
-   },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "项王自立为西楚霸王，王九郡，都彭城",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "制度维度（3）：项羽分封体系，楚都彭城",
-   "dims": [
-    3
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH005",
-   "subject": "place:guanzhong",
-   "predicate": "收民心",
-   "value_text": "刘邦入关中约法三章『杀人者死，伤人及盗抵罪』，收关中民心",
-   "time": {
-    "era_text": "前207",
-    "gregorian_year": -207
-   },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "杀人者死，伤人及盗抵罪",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "社会维度（4）：约法三章收关中民心，与项羽屠烧形成对照",
-   "dims": [
-    4
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH006",
-   "subject": "event:chenggao",
-   "predicate": "民疲",
-   "value_text": "楚汉相持荥阳—成皋数年，民疲饷竭，户口锐减",
-   "time": {
-    "era_text": "前205—前203",
-    "gregorian_year": -205
-   },
-   "place": "chenggao",
-   "source": "hanshu",
-   "quote": "楚汉相距荥阳，民不得耕稼",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "社会维度（4）：长期拉锯的民生代价",
-   "dims": [
-    4
-   ],
-   "_party": "汉·后朝官修",
-   "_faction": null
-  },
-  {
-   "id": "CH007",
-   "subject": "person:zhang_liang",
-   "predicate": "功臣叙事",
-   "value_text": "张良『运筹帷幄之中，决胜千里之外』，汉初功臣叙事成形",
-   "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -206
-   },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "思想维度（5）：汉初功臣叙事的话语建构",
-   "dims": [
-    5
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH008",
-   "subject": "person:xiang_yu",
-   "predicate": "悲剧英雄",
-   "value_text": "项羽垓下歌『力拔山兮气盖世』，乌江自刎，悲剧英雄形象入史",
-   "time": {
-    "era_text": "前202",
-    "gregorian_year": -202
-   },
-   "place": "gai_xia",
-   "source": "shiji",
-   "quote": "力拔山兮气盖世，时不利兮骓不逝",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "思想维度（5）：楚汉叙事中项羽的悲剧英雄化",
-   "dims": [
-    5
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH009",
-   "subject": "event:hongmen",
-   "predicate": "转折",
-   "value_text": "鸿门宴项羽纵刘邦，后世视为楚汉转折关键",
-   "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
-   },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "项王默然不应，范增起，出召项庄舞剑",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：鸿门不杀刘邦的转折意义",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH010",
-   "subject": "event:pengcheng",
-   "predicate": "以少破众",
-   "value_text": "彭城之战项羽以三万破汉五十六万，刘邦父妻被俘",
-   "time": {
-    "era_text": "前205",
-    "gregorian_year": -205
-   },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "羽以精兵三万人破汉军五十六万",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：彭城以少破众，楚方战术巅峰",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH011",
-   "subject": "event:gai_xia",
-   "predicate": "决战",
-   "value_text": "垓下之围四面楚歌，韩信合围，项羽败亡，楚汉终",
-   "time": {
-    "era_text": "前202",
-    "gregorian_year": -202
-   },
-   "place": "gai_xia",
-   "source": "shiji",
-   "quote": "夜闻汉军四面皆楚歌，项王乃悲歌慷慨",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：垓下决战，楚汉终结",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH012",
-   "subject": "person:han_xin",
-   "predicate": "开辟战线",
-   "value_text": "韩信袭齐、垓下合围，开辟北方—江淮战线，汉由守转攻",
-   "time": {
-    "era_text": "前203—前202",
-    "gregorian_year": -203
-   },
-   "place": "huai_yin",
-   "source": "shiji",
-   "quote": "信将三十万自当之，孔将军居左，费将军居右",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "地理维度（1）：韩信北方—江淮战线，汉战略转守为攻",
-   "dims": [
-    1
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH013",
-   "subject": "person:liu_bang",
-   "predicate": "联盟",
-   "value_text": "刘邦广纳叛楚诸侯（英布、彭越）归汉，联盟优于单体",
-   "time": {
-    "era_text": "前205—前202",
-    "gregorian_year": -205
-   },
-   "place": "guanzhong",
-   "source": "hanshu",
-   "quote": "汉王发使使彭越、英布，皆引兵会垓下",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "制度维度（3）：联诸侯叛楚，多体联盟压单体",
-   "dims": [
-    3
-   ],
-   "_party": "汉·后朝官修",
-   "_faction": null
-  },
-  {
-   "id": "CH014",
-   "subject": "person:liu_bang",
-   "predicate": "天命与人谋",
-   "value_text": "司马迁以楚汉论『天命』与『人谋』，归胜负于人谋而非纯天命",
-   "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -206
-   },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "岂非天哉，岂非天哉",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
+   "layer": "inference",
    "confidence": 0.7,
-   "scale": "empire",
-   "note": "思想维度（5）：史记对楚汉胜负的天命/人谋叙事立场",
+   "scale": "province",
+   "note": "事件维度（6）：战前导火索；刘备叛曹牵制曹操兵力",
    "dims": [
-    5
+    6
    ],
-   "_party": "汉·官修",
+   "_party": "魏·官修",
    "_faction": null
   },
   {
-   "id": "CH015",
-   "subject": "event:gai_xia",
-   "predicate": "楚方视角之Gap",
-   "value_text": "楚本方原始记载（楚汉之际起居注等）多佚，项羽败亡细节主要经汉方（史记）回溯叙述，楚视角为结构性缺口",
+   "id": "GUA_002",
+   "subject": "event:ev_guandu_llm_01",
+   "predicate": "袁绍应对",
+   "value_text": "谋士田丰建议乘虚袭许都，袁绍不从，坐失先机",
    "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -202
+    "era_text": "建安五年正月",
+    "gregorian_year": 200
    },
-   "place": "gai_xia",
-   "source": "chuhan_lun",
-   "quote": "",
-   "quote_status": "generated",
-   "layer": "gap",
-   "confidence": 0,
-   "scale": "empire",
-   "note": "楚廷桶在来源共振上几乎为空：楚当代档案亡佚，楚方意图靠汉方叙述推测。此为结构性缺口，不伪造。",
-   "lead": {
-    "where": "项羽败亡细节与楚方动机（鸿门不杀、垓下心态）",
-    "skills": [
-     "核《史记·项羽本纪》与汉方叙事的立场偏见",
-     "比对楚本方亡佚记载的逆推成分"
-    ],
-    "accept": "明确汉方（史记）对楚败亡的回溯叙述成分"
-   },
-   "dims": [
-    5
-   ],
-   "_party": "二手综述",
-   "_faction": null
-  },
-  {
-   "id": "CH016",
-   "subject": "event:huandingsanqin",
-   "predicate": "还定三秦",
-   "value_text": "韩信明修栈道暗度陈仓，还定三秦，为刘邦东出争天下开路",
-   "time": {
-    "era_text": "前206—前205",
-    "gregorian_year": -206
-   },
-   "place": "hanzhong",
-   "source": "shiji",
-   "quote": "明修栈道，暗度陈仓",
+   "place": "hebei",
+   "source": "sanguozhi_wudi",
+   "quote": "田丰建议袭许都，绍不从",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件(6)/制度(3)：还定三秦打开关中—中原通道",
+   "scale": "province",
+   "note": "制度/决策维度（3）：袁绍战略抉择失误",
    "dims": [
     3,
     6
    ],
-   "_party": "汉·官修",
+   "_party": "魏·官修",
    "_faction": null
   },
   {
-   "id": "CH017",
-   "subject": "event:ru_guanzhong",
-   "predicate": "入关中",
-   "value_text": "刘邦入关中破咸阳，秦亡，约法三章收民心，开启楚汉之争",
+   "id": "GUA_003",
+   "subject": "event:ev_guandu_llm_02",
+   "predicate": "战果",
+   "value_text": "曹操北救白马，斩袁绍大将颜良",
    "time": {
-    "era_text": "前207",
-    "gregorian_year": -207
+    "era_text": "建安五年二月",
+    "gregorian_year": 200
    },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "沛公兵遂先诸侯至霸上",
+   "place": "baima",
+   "source": "sanguozhi_wudi",
+   "quote": "北救白马斩颜良",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "事件维度（6）：白马解围战",
+   "dims": [
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_004",
+   "subject": "event:ev_guandu_llm_02",
+   "predicate": "战术",
+   "value_text": "荀攸献声东击西之策，佯攻白马而实救延津",
+   "time": {
+    "era_text": "建安五年二月",
+    "gregorian_year": 200
+   },
+   "place": "baima",
+   "source": "sanguozhi_wudi",
+   "quote": "曹操用荀攸声东击西之策",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "技术/战术维度（2）：声东击西的指挥艺术",
+   "dims": [
+    2,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_005",
+   "subject": "event:ev_guandu_llm_02",
+   "predicate": "后续战事",
+   "value_text": "曹操复于延津斩袁绍大将文丑",
+   "time": {
+    "era_text": "建安五年二月",
+    "gregorian_year": 200
+   },
+   "place": "yanjin",
+   "source": "sanguozhi_wudi",
+   "quote": "复斩文丑于延津",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "事件维度（6）：延津再斩大将",
+   "dims": [
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_006",
+   "subject": "event:ev_guandu_llm_03",
+   "predicate": "兵力对比",
+   "value_text": "战前袁绍据河北四州，兵多粮足，号十万之众；曹操据兖豫，兵少粮乏，仅两万余人",
+   "time": {
+    "era_text": "建安五年",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "sanguozhi_wudi",
+   "quote": "袁绍据河北四州，兵多粮足，号十万之众；曹操据兖豫，兵少粮乏，仅两万余人",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "社会/人口维度（4）：双方兵力与后勤差距悬殊；『号十万』为号称，实数有争议",
+   "dims": [
+    4,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_007",
+   "subject": "event:ev_guandu_llm_03",
+   "predicate": "对峙状态",
+   "value_text": "八月袁绍大军至官渡，曹操坚守不退，形成长期拉锯",
+   "time": {
+    "era_text": "建安五年八月",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "sanguozhi_wudi",
+   "quote": "袁绍大军至官渡，曹操坚守不退",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "事件维度（6）：官渡主战场对峙",
+   "dims": [
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_008",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "转折点",
+   "value_text": "袁绍谋士许攸叛投曹操，献袭乌巢烧粮之策",
+   "time": {
+    "era_text": "建安五年十月",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "sanguozhi_wudi",
+   "quote": "许攸叛绍投曹，献袭乌巢烧粮之策",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "技术/后勤维度（2）：断粮道为胜负枢纽；社会维度（4）：谋士倒戈",
+   "dims": [
+    2,
+    4,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_009",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "战果",
+   "value_text": "曹操率五千步骑夜袭乌巢，焚袁绍军粮，斩守将淳于琼",
+   "time": {
+    "era_text": "建安五年十月",
+    "gregorian_year": 200
+   },
+   "place": "wuchao",
+   "source": "sanguozhi_wudi",
+   "quote": "曹率五千步骑袭乌巢，焚绍军粮谷，斩淳于琼",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
-   "scale": "empire",
-   "note": "地理(1)/事件(6)：入关中秦亡，楚汉起点",
+   "scale": "theater",
+   "note": "技术/后勤维度（2）：奇袭烧粮；事件维度（6）",
+   "dims": [
+    2,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_010",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "连锁崩溃",
+   "value_text": "张郃、高览闻乌巢失守降曹，袁绍大军随之崩溃",
+   "time": {
+    "era_text": "建安五年十月",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "sanguozhi_wudi",
+   "quote": "张郃、高览闻讯降曹。绍军大溃",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "社会维度（4）：将领倒戈；事件维度（6）",
+   "dims": [
+    4,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_011",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "结局",
+   "value_text": "袁绍残部北渡黄河，退回河北，此役曹操以少胜多奠定统一北方之基",
+   "time": {
+    "era_text": "建安五年十月",
+    "gregorian_year": 200
+   },
+   "place": "huanghe",
+   "source": "sanguozhi_wudi",
+   "quote": "绍军大溃，残部北渡黄河",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "地理维度（1）：黄河为袁军退路；事件维度（6）",
    "dims": [
     1,
     6
    ],
-   "_party": "汉·官修",
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_012",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "史料异载",
+   "value_text": "裴松之注引《献帝春秋》等异载，魏·蜀·吴三方官史对官渡兵力与过程叙述互有出入",
+   "time": {
+    "era_text": "建安五年（后世考订）",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "peisongzhi",
+   "quote": "裴松之注引《献帝春秋》等异载，三方叙述互有出入",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "思想/史学维度（5）：南朝注疏揭示异载；本切片仅据魏方《武帝纪》+裴注，蜀/吴二方官史对官渡的独立叙述仍缺，为显式缺口",
+   "dims": [
+    5,
+    6
+   ],
+   "_party": "南朝宋·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_013",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "兵力",
+   "value_text": "曹操袭乌巢所率兵力为五千步骑，对比袁绍大军极为悬殊",
+   "time": {
+    "era_text": "建安五年十月",
+    "gregorian_year": 200
+   },
+   "place": "wuchao",
+   "source": "sanguozhi_wudi",
+   "quote": "曹率五千步骑袭乌巢",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "note": "技术/后勤维度（2）：精兵奇袭 vs 大军对峙",
+   "dims": [
+    2,
+    6
+   ],
+   "_party": "魏·官修",
+   "_faction": null
+  },
+  {
+   "id": "GUA_014",
+   "subject": "event:ev_guandu_llm_04",
+   "predicate": "兵力待考",
+   "value_text": "袁绍军实际兵力是否真达十万、曹操是否仅两万余，三方记载不一，难定",
+   "time": {
+    "era_text": "建安五年（待考）",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "source": "peisongzhi",
+   "quote": "兵力与过程细节难定",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0.0,
+   "scale": "theater",
+   "note": "诚实缺口：魏·蜀·吴三方兵力数字互异，需更多文献/考古证据；列为可认领研究线索",
+   "dims": [
+    4,
+    6
+   ],
+   "lead": {
+    "where": "《三国志》裴松之注及《献帝春秋》等异载",
+    "skills": [
+     "史料对比",
+     "军事史分析"
+    ],
+    "accept": "需要更多文献或考古证据核实三方兵力实数"
+   },
+   "_party": "南朝宋·官修",
    "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
  "gaps": [
-  "CH015"
+  "GUA_014"
  ],
  "events": [
   {
-   "id": "ev_ru_guanzhong",
-   "subject": "event:ru_guanzhong",
-   "name": "刘邦入关中",
-   "start": -207,
-   "end": -207,
-   "note": "前207 刘邦破武关入咸阳，秦亡"
+   "id": "ev_guandu_llm_01",
+   "subject": "event:ev_guandu_llm_01",
+   "name": "刘备叛曹",
+   "start": 200,
+   "end": 200,
+   "note": "建安五年正月，刘备袭杀徐州刺史车胄叛离曹操；田丰建议袁绍乘虚袭许都，绍不从"
   },
   {
-   "id": "ev_hongmen",
-   "subject": "event:hongmen",
-   "name": "鸿门宴",
-   "start": -206,
-   "end": -206,
-   "note": "前206 项羽鸿门宴纵刘邦"
+   "id": "ev_guandu_llm_02",
+   "subject": "event:ev_guandu_llm_02",
+   "name": "白马·延津之战",
+   "start": 200,
+   "end": 200,
+   "note": "建安五年二月，曹操用荀攸声东击西之策北救白马斩颜良，复斩文丑于延津"
   },
   {
-   "id": "ev_huandingsanqin",
-   "subject": "event:huandingsanqin",
-   "name": "还定三秦",
-   "start": -206,
-   "end": -205,
-   "note": "韩信明修栈道暗度陈仓，定三秦"
+   "id": "ev_guandu_llm_03",
+   "subject": "event:ev_guandu_llm_03",
+   "name": "官渡对峙",
+   "start": 200,
+   "end": 200,
+   "note": "建安五年八月，袁绍大军进至官渡，曹操坚守不退，两军长期拉锯"
   },
   {
-   "id": "ev_pengcheng",
-   "subject": "event:pengcheng",
-   "name": "彭城之战",
-   "start": -205,
-   "end": -205,
-   "note": "项羽以少破汉于彭城"
-  },
-  {
-   "id": "ev_chenggao",
-   "subject": "event:chenggao",
-   "name": "成皋相持",
-   "start": -205,
-   "end": -203,
-   "note": "荥阳—成皋拉锯数年"
-  },
-  {
-   "id": "ev_gai_xia",
-   "subject": "event:gai_xia",
-   "name": "垓下之围",
-   "start": -202,
-   "end": -202,
-   "note": "韩信合围，四面楚歌，项羽败亡"
+   "id": "ev_guandu_llm_04",
+   "subject": "event:ev_guandu_llm_04",
+   "name": "乌巢烧粮",
+   "start": 200,
+   "end": 200,
+   "note": "建安五年十月，许攸叛投献计，曹操率五千步骑夜袭乌巢焚粮斩淳于琼，张郃高览降，绍军大溃北渡黄河"
   }
  ],
  "edges": [
   {
-   "from": "guanzhong",
-   "to": "hanguan",
-   "type": "admin",
-   "label": "关中—函谷关（东出咽喉）"
+   "from": "hebei",
+   "to": "baima",
+   "type": "military",
+   "label": "袁绍军自河北南下攻白马"
   },
   {
-   "from": "hanguan",
-   "to": "xingyang",
+   "from": "xuchang",
+   "to": "baima",
    "type": "military",
-   "label": "函谷—荥阳（中原通道）"
+   "label": "曹操自许都北救白马"
   },
   {
-   "from": "xingyang",
-   "to": "chenggao",
-   "type": "military",
-   "label": "荥阳—成皋（相持前线）"
+   "from": "baima",
+   "to": "yanjin",
+   "type": "battle",
+   "label": "曹军追击至延津斩文丑"
   },
   {
-   "from": "chenggao",
-   "to": "pengcheng",
+   "from": "yanjin",
+   "to": "guandu",
    "type": "military",
-   "label": "成皋—彭城（楚汉战线）"
+   "label": "袁绍大军进至官渡"
   },
   {
-   "from": "pengcheng",
-   "to": "gai_xia",
+   "from": "xuchang",
+   "to": "wuchao",
    "type": "military",
-   "label": "彭城—垓下（楚地）"
+   "label": "曹操自官渡夜袭乌巢"
   },
   {
-   "from": "huai_yin",
-   "to": "gai_xia",
+   "from": "guandu",
+   "to": "huanghe",
    "type": "military",
-   "label": "淮阴—垓下（韩信出兵）"
+   "label": "袁绍残部北渡黄河退回河北"
   }
  ],
  "control": [
   {
-   "place_id": "guanzhong",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "刘邦就汉王，都南郑，萧何治关中后勤根本",
-   "note": "汉根本之地"
+   "place_id": "xuchang",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "曹操迎献帝都许，政治中心",
+   "note": "魏根本"
   },
   {
-   "place_id": "hanguan",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "关中东出咽喉，汉控",
-   "note": ""
+   "place_id": "guandu",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "官渡对峙曹操坚守不退，战后属魏控制区",
+   "note": "主战场终局归魏"
   },
   {
-   "place_id": "xingyang",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "前202终局汉据中原，前线拉锯不绘入稳定层",
-   "note": "终局态，前线 transient"
+   "place_id": "baima",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "白马解围后曹操控制河津渡口",
+   "note": "黄河南岸前哨"
   },
   {
-   "place_id": "chenggao",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "前202终局汉据成皋",
-   "note": "终局态，前线 transient"
+   "place_id": "yanjin",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "延津斩文丑后曹操控制",
+   "note": "黄河南岸前哨"
   },
   {
-   "place_id": "pengcheng",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "项羽都彭城，楚方核心",
-   "note": "楚都"
+   "place_id": "wuchao",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "乌巢距官渡近，战后属魏控制区",
+   "note": "袁军旧粮屯，战后归魏"
   },
   {
-   "place_id": "pengcheng",
-   "party": "汉",
-   "start": -202,
-   "end": null,
-   "basis": "垓下后楚亡，彭城归汉",
-   "note": "终局归汉"
+   "place_id": "huanghe",
+   "party": "魏",
+   "start": 200,
+   "end": 202,
+   "basis": "黄河为界，南岸属魏",
+   "note": "天险边界"
   },
   {
-   "place_id": "gai_xia",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "楚地，垓下决战所在",
-   "note": ""
-  },
-  {
-   "place_id": "huai_yin",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "韩信故乡，属楚地",
-   "note": ""
+   "place_id": "hebei",
+   "party": "袁",
+   "start": 200,
+   "end": 202,
+   "basis": "袁绍据河北四州，治邺；官渡败后残部北渡退回",
+   "note": "袁根本，至 202 袁绍死"
   }
  ],
  "control_seats": [
   {
-   "place_id": "guanzhong",
-   "name": "关中",
-   "lon": 108.9,
-   "lat": 34.3,
-   "region": "qin_han"
+   "place_id": "xuchang",
+   "name": "许都",
+   "lon": 113.85,
+   "lat": 34.04,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "hanguan",
-   "name": "函谷关",
-   "lon": 111.3,
-   "lat": 34.3,
-   "region": "qin_han"
+   "place_id": "guandu",
+   "name": "官渡",
+   "lon": 114.1,
+   "lat": 34.85,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "xingyang",
-   "name": "荥阳",
-   "lon": 113.36,
-   "lat": 34.72,
-   "region": "qin_han"
+   "place_id": "baima",
+   "name": "白马",
+   "lon": 114.7,
+   "lat": 35.6,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "chenggao",
-   "name": "成皋",
-   "lon": 113.0,
-   "lat": 34.75,
-   "region": "qin_han"
+   "place_id": "yanjin",
+   "name": "延津",
+   "lon": 114.19,
+   "lat": 35.15,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "pengcheng",
-   "name": "彭城",
-   "lon": 117.18,
-   "lat": 34.27,
-   "region": "qin_han"
+   "place_id": "wuchao",
+   "name": "乌巢",
+   "lon": 114.45,
+   "lat": 35.02,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "gai_xia",
-   "name": "垓下",
-   "lon": 117.3,
-   "lat": 33.53,
-   "region": "qin_han"
+   "place_id": "huanghe",
+   "name": "黄河（官渡段）",
+   "lon": 114.2,
+   "lat": 34.95,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "huai_yin",
-   "name": "淮阴",
-   "lon": 119.0,
-   "lat": 33.5,
-   "region": "qin_han"
+   "place_id": "hebei",
+   "name": "河北（邺）",
+   "lon": 114.6,
+   "lat": 36.3,
+   "region": "three_kingdoms"
   }
  ],
  "control_years": [
-  -206,
-  -202
+  200,
+  202
  ],
  "vocab": {
   "layers": [
@@ -867,23 +800,27 @@ window.SANDBOX_SLICES["chu_han"] = {
    "generated"
   ],
   "parties": [
-   "汉",
-   "楚",
+   "魏",
+   "袁",
+   "第三方",
    "后世官修",
    "二手综述"
   ],
   "party_bucket": {
-   "汉·官修": "汉",
-   "汉·当代": "汉",
-   "汉·后朝官修": "汉",
-   "楚·官修": "楚",
-   "楚·当代": "楚",
+   "魏·官修": "魏",
+   "魏·当代": "魏",
+   "晋·官修": "魏",
+   "袁·官修": "袁",
+   "袁·当代": "袁",
+   "第三方": "第三方",
+   "南朝宋·官修": "后世官修",
    "宋·官修": "后世官修",
    "二手综述": "二手综述"
   },
   "party_colors": {
-   "汉": "#B23A48",
-   "楚": "#2E86C1",
+   "魏": "#B23A48",
+   "袁": "#2E86C1",
+   "第三方": "#7D8B52",
    "后世官修": "#6C7A89",
    "二手综述": "#9B7B5A"
   }

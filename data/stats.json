@@ -1,20 +1,22 @@
 {
-  "scenes_total": 140,
-  "historical": 131,
+  "scenes_total": 142,
+  "historical": 133,
   "fictional": 9,
-  "assertions_total": 2103,
-  "sources_total": 94,
+  "assertions_total": 2137,
+  "sources_total": 101,
   "factions_total": 9,
   "vocab_packs": [
     "chu_han",
+    "guandu_llm",
     "ming_qing",
     "qin_mie_liu_guo",
+    "san_guo",
     "song",
     "tang",
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 196,
+  "leads_total": 198,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1049,6 +1051,20 @@
       "kind": "county",
       "assertions": 16,
       "factions": {}
+    },
+    {
+      "id": "guandu_llm",
+      "title": "官渡之战（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "san_guo",
+      "title": "三国鼎立",
+      "kind": "dynasty",
+      "assertions": 20,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1191,6 +1207,8 @@
     "song_dangzheng": "洛蜀朔党争",
     "donghan_danggu": "党锢之祸",
     "chu_han": "楚汉之争",
-    "song_chan_yuan": "澶渊之盟"
+    "song_chan_yuan": "澶渊之盟",
+    "guandu_llm": "官渡之战（LLM 抽取·人工校订）",
+    "san_guo": "三国鼎立"
   }
 }

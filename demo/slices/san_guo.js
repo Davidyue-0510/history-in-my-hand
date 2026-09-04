@@ -1,26 +1,49 @@
-// 本文件由 tools/build.py 自动生成（切片 chu_han），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["chu_han"]。
+// 本文件由 tools/build.py 自动生成（切片 san_guo），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["san_guo"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["chu_han"] = {
+window.SANDBOX_SLICES["san_guo"] = {
  "meta": {
-  "kind": "battle",
-  "region": "qin_han",
-  "title": "楚汉之争",
-  "dossier_label": "楚汉之争",
-  "subtitle": "前206—前202 · 汉（刘邦） vs 楚（项羽）",
-  "primary_place": "chenggao",
-  "dossier_event": "event:gai_xia",
-  "vocab_pack": "chu_han",
+  "kind": "dynasty",
+  "region": "three_kingdoms",
+  "title": "三国鼎立",
+  "dossier_label": "三国鼎立",
+  "subtitle": "220—280 · 魏 / 蜀 / 吴 → 三分归晋",
+  "primary_place": "luoyang",
+  "dossier_event": "event:ev_jin_mie_wu",
+  "vocab_pack": "san_guo",
   "terrain_grid": "china_coarse",
-  "lead": "楚汉之争（前206—前202）：刘邦据关中，项羽都彭城，争天下。本切片用楚汉语境包（chu_han.json）分桶，与宋/唐切片共用同一套断言内核——差异只在立场语义（汉/楚/后世官修）。地形复用 china_coarse 网格（覆盖关中—中原—江淮全剧场，高程为真，不伪造）。",
-  "parties_note": "楚本方原始记载多佚，项羽事迹主要经汉方（史记）回溯叙述；『楚』桶在来源共振上偏空，结构性缺口在 _party_notes 显式标注。系统不裁决，只并列。",
+  "lead": "三国鼎立（220—280）：曹丕代汉、刘备继汉、孙权据江东，三方六十年的对峙以 263 魏灭蜀、265 晋代魏、280 晋灭吴告终。本切片不以单战役为题，而以**格局的形成、固化与终结**为题——战略尺度（strategic），六维全覆盖：地理（九州/益州/江东的纵深差异）、技术（木牛流马、连弩、楼船与航海）、制度（九品中正、屯田、蜀锦官营、世袭领兵）、社会（著籍户口锐减与豪强荫附）、思想（玄学兴起、唯才是举、正统之争）、事件（赤壁—夷陵—北伐—灭蜀—灭吴）。与 guandu_llm（战役尺度）相邻互补：同一朝代、两种尺度。",
+  "parties_note": "三国史料最根本的不对称：**蜀汉「国不置史，注记无官」**（陈寿语），蜀方原始记载系统性亡佚，我们对蜀汉内政的理解本质是魏吴记载的投影（SG017 显式标注为可认领研究线索）。「晋」独立成桶而非并入「魏」，是为了不把「统一」伪装成「三国内部事件」——三分归晋是格局的终结，不是某一方的胜利。正统之争（司马光以魏为正统 vs 习凿齿以蜀为正统）并列展示，不裁决。",
   "subject_names": {
-   "event:gai_xia": "垓下之围",
-   "event:hongmen": "鸿门宴",
-   "event:pengcheng": "彭城之战",
-   "person:liu_bang": "刘邦",
-   "person:xiang_yu": "项羽",
-   "person:han_xin": "韩信"
+   "place:luoyang": "洛阳",
+   "place:chang_an": "长安",
+   "place:wuzhangyuan": "五丈原",
+   "place:hanzhong": "汉中",
+   "place:chengdu": "成都",
+   "place:jian_ge": "剑阁",
+   "place:yinping": "阴平",
+   "place:jiangling": "江陵",
+   "place:chibi": "赤壁",
+   "place:jianye": "建业",
+   "person:cao_pi": "曹丕",
+   "person:sima_yi": "司马懿",
+   "person:deng_ai": "邓艾",
+   "person:sima_yan": "司马炎",
+   "person:liu_bei": "刘备",
+   "person:zhu_ge_liang": "诸葛亮",
+   "person:liu_shan": "刘禅",
+   "person:jiang_wei": "姜维",
+   "person:sun_quan": "孙权",
+   "person:zhou_yu": "周瑜",
+   "person:lu_xun": "陆逊",
+   "person:sun_hao": "孙皓",
+   "event:ev_chibi": "赤壁之战",
+   "event:ev_yiling": "夷陵（猇亭）之战",
+   "event:ev_zhuge_beifa": "诸葛亮北伐",
+   "event:ev_gaopingling": "高平陵之变",
+   "event:ev_wei_mie_shu": "魏灭蜀",
+   "event:ev_sima_daijin": "司马炎代魏建晋",
+   "event:ev_jin_mie_wu": "晋灭吴"
   },
   "dims": [
    1,
@@ -30,8 +53,8 @@ window.SANDBOX_SLICES["chu_han"] = {
    5,
    6
   ],
-  "epoch": "qin_han",
-  "scale_tier": "operational",
+  "epoch": "three_kingdoms",
+  "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {
     "from": [
@@ -80,779 +103,1109 @@ window.SANDBOX_SLICES["chu_han"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "page": "chu_han.html",
-  "key": "chu_han",
-  "scene_id": "chu_han"
+  "page": "county.html?scene=san_guo",
+  "key": "san_guo",
+  "scene_id": "san_guo"
  },
  "sources": [
   {
-   "id": "shiji",
-   "title": "史记",
-   "party": "汉·官修",
-   "stance_label": "汉人当代/近当代",
-   "distance_label": "成书汉武帝时，距楚汉约百年",
-   "color": "#B23A48",
-   "compiler": "司马迁（西汉）",
-   "period": "汉",
-   "note": "本纪·高祖本纪、项羽本纪、淮阴侯列传载楚汉之事，汉人叙汉，视角含汉方立场"
+   "id": "sanguozhi",
+   "title": "三国志（魏书/蜀书/吴书）",
+   "party": "晋·官修",
+   "stance_label": "西晋官修正史，整合三国",
+   "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
+   "color": "#6C7A89",
+   "compiler": "陈寿（西晋）",
+   "period": "晋",
+   "note": "本切片主干史料，距事最近的正史。注意其定位与 guandu_llm 切片不同：彼处 source id 为 `sanguozhi_wudi`，只用《武帝纪》叙魏事、归『魏』桶；此处 id 为 `sanguozhi`，通取魏书/蜀书/吴书叙三国、归『后世官修』桶。同一部书拆两个 id，是因为所写对象不同、归属的立场桶就不同——用同一 id 会让跨切片共振统计把两种立场混为一谈。判断依据始终是作者立场与叙述对象，不是书名。陈寿身仕西晋，以魏为正统的基本框架贯穿全书，且蜀汉『国不置史』使其叙蜀事时先天材料不足——这正是 SG017 缺口的史料根源"
   },
   {
-   "id": "hanshu",
-   "title": "汉书",
-   "party": "汉·后朝官修",
-   "stance_label": "汉后朝官修",
-   "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
-   "color": "#C0584F",
-   "compiler": "班固（东汉）",
-   "period": "汉",
-   "note": "高帝纪、韩信传等，东汉官修西汉史"
+   "id": "jinshu",
+   "title": "晋书",
+   "party": "唐·官修",
+   "stance_label": "唐代官修前朝史",
+   "distance_label": "唐房玄龄等撰，距三国约三百五十年",
+   "color": "#6C7A89",
+   "compiler": "房玄龄等（唐）",
+   "period": "唐",
+   "note": "本切片用它取两件事：《武帝纪》载太康元年灭吴、《地理志》载全国统一著籍户口数。唐修晋史，以唐人视角叙晋之统一，胜者与叙事者同调"
   },
   {
-   "id": "chuhan_lun",
-   "title": "楚汉战争史论",
+   "id": "zizhi_tongjian",
+   "title": "资治通鉴",
+   "party": "宋·官修",
+   "stance_label": "北宋官修编年通史",
+   "distance_label": "宋司马光撰（1084 成书），距三国八百余年",
+   "color": "#6C7A89",
+   "compiler": "司马光（北宋）",
+   "period": "宋",
+   "note": "三国部分以魏纪年，明确主张魏为正统。其取舍的根据是『苟不能使九州合为一统，皆有天子之名而无其实』——身处北宋大一统的修史者，自然以据有中原者为正统。与汉晋春秋构成直接冲突，本切片并列不裁决"
+  },
+  {
+   "id": "hanjin_chunqiu",
+   "title": "汉晋春秋",
+   "party": "东晋·私修",
+   "stance_label": "东晋私修史，以蜀为正统",
+   "distance_label": "东晋习凿齿撰，距三国约百年",
+   "color": "#6C7A89",
+   "compiler": "习凿齿（东晋）",
+   "period": "东晋",
+   "note": "主张黜魏为僭、以蜀汉继汉统，晋当继汉而非继魏。原书已佚，今存辑本。其立场与东晋偏安江左、自居正朔的现实处境互为表里——这是理解『正统之争』的关键：它讲的是修史者的时代，不只是三国的时代"
+  },
+  {
+   "id": "sanguo_yanjiu",
+   "title": "现代三国史与人口史研究",
    "party": "二手综述",
    "stance_label": "近现代考订",
-   "distance_label": "现代楚汉战争研究",
+   "distance_label": "现代研究，距事一千七百余年",
    "color": "#9B7B5A",
    "compiler": "近现代研究",
    "period": "现代",
-   "note": "现代综述，可关；楚汉战略定性多据此类研究"
+   "note": "本切片只在两处依赖它：人口实数问题（官方著籍数之外的豪强荫附户口）与部曲佃客制。凡依赖此源的断言皆为待升级项，默认可关闭"
   }
  ],
  "places": [
   {
-   "id": "guanzhong",
-   "name": "关中",
-   "lon": 108.9,
-   "lat": 34.3,
-   "type": "region",
-   "note": "汉王刘邦根本之地，萧何治后勤",
-   "elev": 383
+   "id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "type": "city",
+   "note": "魏都（曹丕代汉后定都）；延康受禅、九品中正制立制、正始玄学与高平陵之变皆在此",
+   "elev": 171
+  },
+  {
+   "id": "chang_an",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "type": "city",
+   "note": "魏西京、关中根本，诸葛亮北伐的魏方后方枢纽",
+   "elev": 391
+  },
+  {
+   "id": "wuzhangyuan",
+   "name": "五丈原",
+   "lon": 107.63,
+   "lat": 34.2,
+   "type": "fortress",
+   "note": "建兴十二年诸葛亮与司马懿对峙于此，同年病卒军中（今陕西岐山；坐标为今地推定）",
+   "elev": 900
   },
   {
    "id": "hanzhong",
    "name": "汉中",
-   "lon": 107.0,
-   "lat": 33.1,
+   "lon": 107.02,
+   "lat": 33.07,
    "type": "region",
-   "note": "刘邦就封汉王之所",
-   "elev": 598
+   "note": "蜀汉北伐基地，秦岭以南的攻守枢纽，木牛流马运输线起点",
+   "elev": 618
   },
   {
-   "id": "hanguan",
-   "name": "函谷关",
-   "lon": 111.3,
-   "lat": 34.3,
+   "id": "chengdu",
+   "name": "成都",
+   "lon": 104.07,
+   "lat": 30.67,
+   "type": "city",
+   "note": "蜀汉都城、益州根本；蜀不置史官，蜀汉内政记载即在此地系统性亡佚",
+   "elev": 490
+  },
+  {
+   "id": "jian_ge",
+   "name": "剑阁",
+   "lon": 105.52,
+   "lat": 32.3,
    "type": "pass",
-   "note": "关中东出咽喉",
-   "elev": 748
+   "note": "蜀北门户，一夫当关之险；邓艾偷渡阴平正是绕开此关",
+   "elev": 917
   },
   {
-   "id": "xingyang",
-   "name": "荥阳",
-   "lon": 113.36,
-   "lat": 34.72,
-   "type": "city",
-   "note": "成皋相持前线",
-   "elev": 253
+   "id": "yinping",
+   "name": "阴平",
+   "lon": 104.68,
+   "lat": 32.63,
+   "type": "pass",
+   "note": "景元四年邓艾自此凿山通道行无人之地七百余里，直取成都（今甘肃文县；坐标为今地推定，道里诸说不一）",
+   "elev": 1837
   },
   {
-   "id": "chenggao",
-   "name": "成皋",
-   "lon": 113.0,
-   "lat": 34.75,
+   "id": "jiangling",
+   "name": "江陵",
+   "lon": 112.19,
+   "lat": 30.35,
    "type": "city",
-   "note": "荥阳以东险隘，楚汉拉锯",
-   "elev": 238
+   "note": "荆州重镇，魏蜀吴三方反复争夺；夷陵之战的吴军防线核心",
+   "elev": 34
   },
   {
-   "id": "pengcheng",
-   "name": "彭城",
-   "lon": 117.18,
-   "lat": 34.27,
-   "type": "city",
-   "note": "项羽都，西楚霸王都",
-   "elev": 62
+   "id": "chibi",
+   "name": "赤壁",
+   "lon": 113.9,
+   "lat": 29.75,
+   "type": "battlefield",
+   "note": "建安十三年孙刘联军破曹处（今湖北赤壁市；具体位置有蒲圻、黄州等说，坐标为今地推定）",
+   "elev": 131
   },
   {
-   "id": "gai_xia",
-   "name": "垓下",
-   "lon": 117.3,
-   "lat": 33.53,
+   "id": "jianye",
+   "name": "建业",
+   "lon": 118.78,
+   "lat": 32.06,
    "type": "city",
-   "note": "项羽败亡决战地（今安徽灵璧）",
-   "elev": 19
-  },
-  {
-   "id": "huai_yin",
-   "name": "淮阴",
-   "lon": 119.0,
-   "lat": 33.5,
-   "type": "city",
-   "note": "韩信故乡（今江苏淮安）",
-   "elev": 11
+   "note": "吴都（今南京）；太康元年王濬楼船直抵城下，孙皓出降，三国归晋",
+   "elev": 15
   }
  ],
  "persons": [
   {
-   "id": "liu_bang",
-   "name": "刘邦",
-   "party": "汉",
-   "note": "汉王 / 汉高祖",
+   "id": "cao_pi",
+   "name": "曹丕",
+   "party": "魏",
+   "note": "魏文帝；延康元年受禅代汉，定都洛阳，陈群九品中正制立于其时",
    "influence": 2
   },
   {
-   "id": "xiang_yu",
-   "name": "项羽",
-   "party": "楚",
-   "note": "西楚霸王",
-   "influence": 2
-  },
-  {
-   "id": "han_xin",
-   "name": "韩信",
-   "party": "汉",
-   "note": "大将，定三秦、垓下合围",
-   "influence": 2
-  },
-  {
-   "id": "xiao_he",
-   "name": "萧何",
-   "party": "汉",
-   "note": "治关中后勤",
+   "id": "sima_yi",
+   "name": "司马懿",
+   "party": "魏",
+   "note": "魏太傅；拒诸葛亮于渭南，正始十年发动高平陵之变，魏政归司马氏",
    "influence": 0
   },
   {
-   "id": "zhang_liang",
-   "name": "张良",
-   "party": "汉",
-   "note": "谋臣",
+   "id": "deng_ai",
+   "name": "邓艾",
+   "party": "魏",
+   "note": "魏征西将军；景元四年偷渡阴平直取成都，蜀汉亡于其手",
+   "influence": 0
+  },
+  {
+   "id": "sima_yan",
+   "name": "司马炎",
+   "party": "晋",
+   "note": "晋武帝；咸熙二年代魏建晋，太康元年灭吴，三分归晋",
+   "influence": 0
+  },
+  {
+   "id": "liu_bei",
+   "name": "刘备",
+   "party": "蜀",
+   "note": "蜀汉昭烈帝；章武元年伐吴，次年败于夷陵",
+   "influence": 0
+  },
+  {
+   "id": "zhu_ge_liang",
+   "name": "诸葛亮",
+   "party": "蜀",
+   "note": "蜀汉丞相；损益连弩、木牛流马，五次北伐，卒于五丈原",
    "influence": 1
   },
   {
-   "id": "fan_zeng",
-   "name": "范增",
-   "party": "楚",
-   "note": "项羽谋主，鸿门劝杀刘邦",
+   "id": "liu_shan",
+   "name": "刘禅",
+   "party": "蜀",
+   "note": "蜀汉后主；景元四年出降。蜀不置史官，其朝内政记载大量亡佚",
+   "influence": 0
+  },
+  {
+   "id": "jiang_wei",
+   "name": "姜维",
+   "party": "蜀",
+   "note": "蜀汉大将军；继诸葛亮志屡次北伐，蜀亡后谋复国事泄被杀",
+   "influence": 0
+  },
+  {
+   "id": "sun_quan",
+   "name": "孙权",
+   "party": "吴",
+   "note": "吴大帝；赤壁联刘破曹，黄龙二年遣卫温浮海至夷洲",
+   "influence": 0
+  },
+  {
+   "id": "zhou_yu",
+   "name": "周瑜",
+   "party": "吴",
+   "note": "吴都督；建安十三年赤壁之战主将，部将黄盖火攻破曹",
+   "influence": 0
+  },
+  {
+   "id": "lu_xun",
+   "name": "陆逊",
+   "party": "吴",
+   "note": "吴大都督；章武二年夷陵之战火攻连营大破刘备",
+   "influence": 0
+  },
+  {
+   "id": "sun_hao",
+   "name": "孙皓",
+   "party": "吴",
+   "note": "吴末帝；太康元年面缚舆榇降于王濬，吴亡",
    "influence": 0
   }
  ],
  "assertions": [
   {
-   "id": "CH001",
-   "subject": "place:xingyang",
-   "predicate": "前线地理",
-   "value_text": "楚汉对峙核心为中原荥阳—成皋一线与江淮彭城—垓下；关中为汉根本",
+   "id": "SG001",
+   "subject": "place:luoyang",
+   "predicate": "地理基础",
+   "value_text": "鼎立格局的地理基础：魏据中原九州（司豫兖冀青徐幽并凉），蜀据益州凭剑阁之险，吴据江东恃长江天险；三方战略纵深差异决定攻守节奏",
    "time": {
-    "era_text": "楚汉（前206—前202）",
-    "gregorian_year": -206
+    "era_text": "220（魏黄初元年）",
+    "gregorian_year": 220
    },
-   "place": "xingyang",
-   "source": "shiji",
-   "quote": "荥阳、成皋间相持数年",
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "魏跨带九州，蜀保益州之险，吴据江东而阻长江",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "scale": "empire",
-   "note": "地理维度（1）：中原—江淮双战场，关中为汉后勤根本",
+   "note": "地理维度（1）：疆域与地形决定三方战略纵深",
    "dims": [
     1
    ],
-   "_party": "汉·官修",
+   "_party": "晋·官修",
    "_faction": null
   },
   {
-   "id": "CH002",
-   "subject": "place:guanzhong",
-   "predicate": "后勤根本",
-   "value_text": "萧何治关中，转漕给军，为汉之后勤根本，故汉能持久",
+   "id": "SG002",
+   "subject": "place:jian_ge",
+   "predicate": "地形约束",
+   "value_text": "秦岭栈道—剑阁—三峡三条通道决定蜀汉攻守：北伐受制于秦岭粮运，防御倚剑阁一夫当关",
    "time": {
-    "era_text": "楚汉（前206—前202）",
-    "gregorian_year": -206
+    "era_text": "228—234（建兴中）",
+    "gregorian_year": 228
    },
-   "place": "guanzhong",
-   "source": "hanshu",
-   "quote": "萧何转漕给军，未尝乏绝",
+   "place": "jian_ge",
+   "source": "sanguozhi",
+   "quote": "亮围祁山，以粮尽退军；剑阁峥嵘而崔嵬，一夫当关万夫莫开",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "地理（1）+技术（2）维度：栈道运输能力决定北伐半径；『一夫当关』句出李白《蜀道难》为后世文学，非三国史料，仅作地形注脚",
+   "dims": [
+    1,
+    2
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG003",
+   "subject": "person:zhu_ge_liang",
+   "predicate": "技术发明",
+   "value_text": "诸葛亮损益连弩、创制木牛流马，为蜀汉北伐的运输与兵器技术支撑",
+   "time": {
+    "era_text": "227—234（建兴）",
+    "gregorian_year": 231
+   },
+   "place": "hanzhong",
+   "source": "sanguozhi",
+   "quote": "亮性长于巧思，损益连弩，木牛流马，皆出其意",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "技术/后勤维度（2）：关中转漕支撑长期战争",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "技术维度（2）：语出《三国志·蜀书·诸葛亮传》陈寿评语，文句可靠但**未经点校本逐字核对**，故仍标意译待核；木牛流马具体形制后世诸说不一，实物与原理均未定谳",
    "dims": [
     2
    ],
-   "_party": "汉·后朝官修",
+   "_party": "晋·官修",
    "_faction": null
   },
   {
-   "id": "CH003",
-   "subject": "person:han_xin",
-   "predicate": "拜将",
-   "value_text": "刘邦拜韩信为大将，明修栈道暗度陈仓，还定三秦",
+   "id": "SG004",
+   "subject": "place:jianye",
+   "predicate": "水师技术",
+   "value_text": "孙吴凭造船与水师技术控长江，黄龙二年遣卫温、诸葛直浮海至夷洲，为大陆政权经略台湾的最早明确记载",
    "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
+    "era_text": "230（黄龙二年）",
+    "gregorian_year": 230
    },
-   "place": "hanzhong",
-   "source": "shiji",
-   "quote": "信数与萧何语，何奇之，荐于王，拜大将",
+   "place": "jianye",
+   "source": "sanguozhi",
+   "quote": "遣将军卫温、诸葛直将甲士万人浮海求夷洲及亶洲",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
+   "scale": "theater",
+   "note": "技术维度（2）：航海与造船；『夷洲』是否即今台湾学界尚有讨论，主流认为是，但非定论",
+   "dims": [
+    2
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG005",
+   "subject": "person:cao_pi",
+   "predicate": "制度创设",
+   "value_text": "延康元年陈群立九品中正制，由中正官评定人才品第，选官权自中央渐移士族，开启门阀政治",
+   "time": {
+    "era_text": "220（延康元年）",
+    "gregorian_year": 220
+   },
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "制九品官人之法，州郡皆置中正",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
    "scale": "empire",
-   "note": "制度维度（3）：拜将—暗度陈仓开辟关中—中原通道",
+   "note": "制度维度（3）：九品中正制的长期后果是士族门阀化，此为后话，本条仅记制度创设",
    "dims": [
     3
    ],
-   "_party": "汉·官修",
+   "_party": "晋·官修",
    "_faction": null
   },
   {
-   "id": "CH004",
-   "subject": "person:xiang_yu",
-   "predicate": "分封",
-   "value_text": "项羽分封十八王，自立西楚霸王，都彭城",
+   "id": "SG006",
+   "subject": "place:luoyang",
+   "predicate": "经济制度",
+   "value_text": "三国各异的经济制度：魏行屯田（枣祗、韩浩）以足军粮，蜀设锦官专营蜀锦，吴行世袭领兵制使兵权世代相承",
    "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
+    "era_text": "220—280",
+    "gregorian_year": 220
    },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "项王自立为西楚霸王，王九郡，都彭城",
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "募民屯田许下，得谷百万斛；蜀锦官营；吴将兵世袭",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
+   "confidence": 0.75,
    "scale": "empire",
-   "note": "制度维度（3）：项羽分封体系，楚都彭城",
+   "note": "制度维度（3）：三方以不同制度动员资源——魏靠国家屯田、蜀靠专卖、吴靠私家兵权，制度差异直接影响三方国祚长短",
    "dims": [
     3
    ],
-   "_party": "汉·官修",
+   "_party": "晋·官修",
    "_faction": null
   },
   {
-   "id": "CH005",
-   "subject": "place:guanzhong",
-   "predicate": "收民心",
-   "value_text": "刘邦入关中约法三章『杀人者死，伤人及盗抵罪』，收关中民心",
+   "id": "SG007",
+   "subject": "place:luoyang",
+   "predicate": "三国人口",
+   "value_text": "太康元年（280）全国统一在册户245.9万、口1616.4万，较东汉永寿三年（157）口5648万锐减逾七成",
    "time": {
-    "era_text": "前207",
-    "gregorian_year": -207
+    "era_text": "280（太康元年）",
+    "gregorian_year": 280
    },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "杀人者死，伤人及盗抵罪",
+   "place": "luoyang",
+   "source": "jinshu",
+   "quote": "太康元年平吴，大凡户二百四十五万九千八百四十，口一千六百一十六万三千八百六十三",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
    "scale": "empire",
-   "note": "社会维度（4）：约法三章收关中民心，与项羽屠烧形成对照",
+   "note": "社会维度（4）：此为国家『著籍』人口，不等于实际人口——大量户口隐匿于世家豪强，见 SG008 现代研究",
    "dims": [
     4
    ],
-   "_party": "汉·官修",
+   "_party": "唐·官修",
    "_faction": null
   },
   {
-   "id": "CH006",
-   "subject": "event:chenggao",
-   "predicate": "民疲",
-   "value_text": "楚汉相持荥阳—成皋数年，民疲饷竭，户口锐减",
+   "id": "SG008",
+   "subject": "place:luoyang",
+   "predicate": "三国人口",
+   "value_text": "现代研究认为三国实际人口远高于著籍数：战乱中大量人口脱离国家编户，成为世家豪强的部曲、佃客、奴婢，著籍数锐减不等于实际人口锐减",
    "time": {
-    "era_text": "前205—前203",
-    "gregorian_year": -205
+    "era_text": "220—280（现代研究）",
+    "gregorian_year": 220
    },
-   "place": "chenggao",
-   "source": "hanshu",
-   "quote": "楚汉相距荥阳，民不得耕稼",
+   "place": "jianye",
+   "source": "sanguo_yanjiu",
+   "quote": "著籍户口之外，豪强荫附户口数量巨大，实际人口当远高于官方统计",
    "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "社会维度（4）：长期拉锯的民生代价",
-   "dims": [
-    4
-   ],
-   "_party": "汉·后朝官修",
-   "_faction": null
-  },
-  {
-   "id": "CH007",
-   "subject": "person:zhang_liang",
-   "predicate": "功臣叙事",
-   "value_text": "张良『运筹帷幄之中，决胜千里之外』，汉初功臣叙事成形",
-   "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -206
-   },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "夫运筹策帷帐之中，决胜于千里之外，吾不如子房",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "思想维度（5）：汉初功臣叙事的话语建构",
-   "dims": [
-    5
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH008",
-   "subject": "person:xiang_yu",
-   "predicate": "悲剧英雄",
-   "value_text": "项羽垓下歌『力拔山兮气盖世』，乌江自刎，悲剧英雄形象入史",
-   "time": {
-    "era_text": "前202",
-    "gregorian_year": -202
-   },
-   "place": "gai_xia",
-   "source": "shiji",
-   "quote": "力拔山兮气盖世，时不利兮骓不逝",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "思想维度（5）：楚汉叙事中项羽的悲剧英雄化",
-   "dims": [
-    5
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH009",
-   "subject": "event:hongmen",
-   "predicate": "转折",
-   "value_text": "鸿门宴项羽纵刘邦，后世视为楚汉转折关键",
-   "time": {
-    "era_text": "前206",
-    "gregorian_year": -206
-   },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "项王默然不应，范增起，出召项庄舞剑",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：鸿门不杀刘邦的转折意义",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH010",
-   "subject": "event:pengcheng",
-   "predicate": "以少破众",
-   "value_text": "彭城之战项羽以三万破汉五十六万，刘邦父妻被俘",
-   "time": {
-    "era_text": "前205",
-    "gregorian_year": -205
-   },
-   "place": "pengcheng",
-   "source": "shiji",
-   "quote": "羽以精兵三万人破汉军五十六万",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：彭城以少破众，楚方战术巅峰",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH011",
-   "subject": "event:gai_xia",
-   "predicate": "决战",
-   "value_text": "垓下之围四面楚歌，韩信合围，项羽败亡，楚汉终",
-   "time": {
-    "era_text": "前202",
-    "gregorian_year": -202
-   },
-   "place": "gai_xia",
-   "source": "shiji",
-   "quote": "夜闻汉军四面皆楚歌，项王乃悲歌慷慨",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "事件维度（6）：垓下决战，楚汉终结",
-   "dims": [
-    6
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH012",
-   "subject": "person:han_xin",
-   "predicate": "开辟战线",
-   "value_text": "韩信袭齐、垓下合围，开辟北方—江淮战线，汉由守转攻",
-   "time": {
-    "era_text": "前203—前202",
-    "gregorian_year": -203
-   },
-   "place": "huai_yin",
-   "source": "shiji",
-   "quote": "信将三十万自当之，孔将军居左，费将军居右",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "地理维度（1）：韩信北方—江淮战线，汉战略转守为攻",
-   "dims": [
-    1
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH013",
-   "subject": "person:liu_bang",
-   "predicate": "联盟",
-   "value_text": "刘邦广纳叛楚诸侯（英布、彭越）归汉，联盟优于单体",
-   "time": {
-    "era_text": "前205—前202",
-    "gregorian_year": -205
-   },
-   "place": "guanzhong",
-   "source": "hanshu",
-   "quote": "汉王发使使彭越、英布，皆引兵会垓下",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "empire",
-   "note": "制度维度（3）：联诸侯叛楚，多体联盟压单体",
-   "dims": [
-    3
-   ],
-   "_party": "汉·后朝官修",
-   "_faction": null
-  },
-  {
-   "id": "CH014",
-   "subject": "person:liu_bang",
-   "predicate": "天命与人谋",
-   "value_text": "司马迁以楚汉论『天命』与『人谋』，归胜负于人谋而非纯天命",
-   "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -206
-   },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "岂非天哉，岂非天哉",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
+   "layer": "scholarship",
    "confidence": 0.7,
    "scale": "empire",
-   "note": "思想维度（5）：史记对楚汉胜负的天命/人谋叙事立场",
+   "note": "社会维度（4）：与 SG007 的官方著籍数构成跨源张力——户口数字反映的是国家控制力的衰减，不（仅）是人口的衰减。系统不裁决，只并列",
    "dims": [
-    5
-   ],
-   "_party": "汉·官修",
-   "_faction": null
-  },
-  {
-   "id": "CH015",
-   "subject": "event:gai_xia",
-   "predicate": "楚方视角之Gap",
-   "value_text": "楚本方原始记载（楚汉之际起居注等）多佚，项羽败亡细节主要经汉方（史记）回溯叙述，楚视角为结构性缺口",
-   "time": {
-    "era_text": "楚汉",
-    "gregorian_year": -202
-   },
-   "place": "gai_xia",
-   "source": "chuhan_lun",
-   "quote": "",
-   "quote_status": "generated",
-   "layer": "gap",
-   "confidence": 0,
-   "scale": "empire",
-   "note": "楚廷桶在来源共振上几乎为空：楚当代档案亡佚，楚方意图靠汉方叙述推测。此为结构性缺口，不伪造。",
-   "lead": {
-    "where": "项羽败亡细节与楚方动机（鸿门不杀、垓下心态）",
-    "skills": [
-     "核《史记·项羽本纪》与汉方叙事的立场偏见",
-     "比对楚本方亡佚记载的逆推成分"
-    ],
-    "accept": "明确汉方（史记）对楚败亡的回溯叙述成分"
-   },
-   "dims": [
-    5
+    4
    ],
    "_party": "二手综述",
    "_faction": null
   },
   {
-   "id": "CH016",
-   "subject": "event:huandingsanqin",
-   "predicate": "还定三秦",
-   "value_text": "韩信明修栈道暗度陈仓，还定三秦，为刘邦东出争天下开路",
+   "id": "SG009",
+   "subject": "place:luoyang",
+   "predicate": "思想变迁",
+   "value_text": "正始玄学兴起：何晏、王弼倡『以无为本』，名教与自然之辨取代两汉经学，为魏晋思想转折",
    "time": {
-    "era_text": "前206—前205",
-    "gregorian_year": -206
+    "era_text": "240—249（正始年间）",
+    "gregorian_year": 240
    },
-   "place": "hanzhong",
-   "source": "shiji",
-   "quote": "明修栈道，暗度陈仓",
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "晏、弼好老庄言，立论以无为本",
    "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
+   "layer": "inference",
+   "confidence": 0.7,
    "scale": "empire",
-   "note": "事件(6)/制度(3)：还定三秦打开关中—中原通道",
+   "note": "思想维度（5）：玄学兴起的直接背景是汉末名教破产与政治高压（高平陵之变后名士少有全者）",
    "dims": [
-    3,
-    6
+    5
    ],
-   "_party": "汉·官修",
+   "_party": "晋·官修",
    "_faction": null
   },
   {
-   "id": "CH017",
-   "subject": "event:ru_guanzhong",
-   "predicate": "入关中",
-   "value_text": "刘邦入关中破咸阳，秦亡，约法三章收民心，开启楚汉之争",
+   "id": "SG010",
+   "subject": "person:cao_pi",
+   "predicate": "用人思想",
+   "value_text": "曹操三下求才令倡『唯才是举』，明确不问德行出处，对东汉以名教征辟的用人标准构成正面冲击",
    "time": {
-    "era_text": "前207",
-    "gregorian_year": -207
+    "era_text": "210—217（建安中）",
+    "gregorian_year": 210
    },
-   "place": "guanzhong",
-   "source": "shiji",
-   "quote": "沛公兵遂先诸侯至霸上",
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "唯才是举，吾得而用之；负污辱之名、见笑之行、不仁不孝而有治国用兵之术者，其各举所知",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
+   "confidence": 0.85,
    "scale": "empire",
-   "note": "地理(1)/事件(6)：入关中秦亡，楚汉起点",
+   "note": "思想维度（5）：求才令颁发于建安十五年、十九年、二十二年，早于魏立国（220），此为鼎立格局的思想前因",
+   "dims": [
+    5
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG011",
+   "subject": "event:ev_chibi",
+   "predicate": "战果",
+   "value_text": "建安十三年赤壁之战，孙刘联军破曹操于乌林赤壁，曹操北还，鼎立雏形由此奠定",
+   "time": {
+    "era_text": "208（建安十三年）",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "sanguozhi",
+   "quote": "瑜部将黄盖烧曹军船，曹公烧余船引退，士卒饥疫死者大半",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "note": "事件维度（6）：赤壁之战发生于魏立国之前十二年，作为鼎立格局的前因纳入本切片",
+   "dims": [
+    6
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG012",
+   "subject": "event:ev_yiling",
+   "predicate": "战果",
+   "value_text": "章武元年至二年夷陵（猇亭）之战，陆逊火烧连营大破刘备，蜀汉元气大伤，鼎立格局自此固化",
+   "time": {
+    "era_text": "221—222（章武）",
+    "gregorian_year": 221
+   },
+   "place": "jiangling",
+   "source": "sanguozhi",
+   "quote": "逊命诸军同时俱攻，斩张南、冯习及胡王沙摩柯等首，破其四十余营",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "note": "事件维度（6）：夷陵败后蜀汉再无力东出，只能北伐；吴蜀复盟以抗魏",
+   "dims": [
+    6
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG013",
+   "subject": "event:ev_zhuge_beifa",
+   "predicate": "战果",
+   "value_text": "建兴六年至十二年诸葛亮五次北伐（世称六出祁山），街亭之失与粮运不继使其功亏一篑，建兴十二年病卒五丈原",
+   "time": {
+    "era_text": "228—234（建兴六至十二年）",
+    "gregorian_year": 228
+   },
+   "place": "wuzhangyuan",
+   "source": "sanguozhi",
+   "quote": "亮悉大众由斜谷出，据武功五丈原，与司马宣王对于渭南；其年八月，亮疾病，卒于军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "theater",
+   "note": "事件（6）+地理（1）维度：北伐屡以粮尽退军，是地形与后勤对战略的硬约束",
    "dims": [
     1,
     6
    ],
-   "_party": "汉·官修",
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG014",
+   "subject": "event:ev_wei_mie_shu",
+   "predicate": "战果",
+   "value_text": "景元四年魏钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降，蜀汉亡",
+   "time": {
+    "era_text": "263（景元四年）",
+    "gregorian_year": 263
+   },
+   "place": "yinping",
+   "source": "sanguozhi",
+   "quote": "艾自阴平道行无人之地七百余里，凿山通道，造作桥阁；刘禅遣使奉皇帝玺绶，请降",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "事件维度（6）：邓艾绕开剑阁主力防线，印证 SG002 的地形—后勤约束可被奇袭打破",
+   "dims": [
+    1,
+    6
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG015",
+   "subject": "event:ev_jin_mie_wu",
+   "predicate": "战果",
+   "value_text": "太康元年王濬楼船自益州顺江而下，直抵建业，孙皓出降，吴亡，三分归晋",
+   "time": {
+    "era_text": "280（太康元年）",
+    "gregorian_year": 280
+   },
+   "place": "jianye",
+   "source": "jinshu",
+   "quote": "王濬楼船下益州，金陵王气黯然收；皓面缚舆榇，降于濬",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "事件维度（6）：『金陵王气』句出刘禹锡《西塞山怀古》为后世诗作，非《晋书》原文，仅作注脚；史事本体据《晋书·武帝纪》",
+   "dims": [
+    6
+   ],
+   "_party": "唐·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG016",
+   "subject": "place:luoyang",
+   "predicate": "正统之争",
+   "value_text": "司马光《资治通鉴》以魏为正统、用魏纪年，习凿齿《汉晋春秋》以蜀汉为正统、主张晋继汉而非继魏——两说针锋相对",
+   "time": {
+    "era_text": "后世（宋/东晋）",
+    "gregorian_year": 1084
+   },
+   "place": "luoyang",
+   "source": "zizhi_tongjian",
+   "quote": "窃以为苟不能使九州合为一统，皆有天子之名而无其实者也；故以魏纪年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "scale": "empire",
+   "note": "思想维度（5）：正统之争不是史实的分歧，而是修史者自身政治处境的投射。本切片并列两说（另见汉晋春秋条目），不裁决谁是正统",
+   "dims": [
+    5
+   ],
+   "_party": "宋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG017",
+   "subject": "person:liu_shan",
+   "predicate": "史料缺口",
+   "value_text": "蜀汉『国不置史，注记无官』（陈寿语）：蜀方无系统史官记载，其内政、制度、朝堂争议大量亡佚，今人欲知蜀事只能经魏吴记载逆向推测",
+   "time": {
+    "era_text": "221—263（蜀汉）",
+    "gregorian_year": 263
+   },
+   "place": "chengdu",
+   "source": "sanguozhi",
+   "quote": "国不置史，注记无官，是以行事多遗，灾异靡书",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0.0,
+   "scale": "empire",
+   "note": "诚实缺口：制度（3）+思想（5）维度。语出《三国志·蜀书》陈寿评，为节引且**未经点校本逐字核对**；这是三国史料最根本的结构性不对称——魏吴皆有史，蜀独无。蜀汉面貌的每一分『清楚』，都可能是魏吴记载的投影",
+   "dims": [
+    3,
+    5
+   ],
+   "lead": {
+    "where": "《三国志·蜀书》陈寿评、及《华阳国志》（东晋常璩，蜀地地方志）",
+    "skills": [
+     "史料辑佚",
+     "蜀汉制度史",
+     "地方志比勘"
+    ],
+    "accept": "辑校《华阳国志》与魏吴记载中蜀汉内政的交叉证据，标出可确证与仅见单方记载的部分"
+   },
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG018",
+   "subject": "place:luoyang",
+   "predicate": "正统之争",
+   "value_text": "习凿齿《汉晋春秋》以蜀汉为正统：认为魏为篡逆、晋当继汉而非继魏，故记事以蜀汉纪年，与《资治通鉴》的魏正统说截然相反",
+   "time": {
+    "era_text": "东晋（后世）",
+    "gregorian_year": 380
+   },
+   "place": "luoyang",
+   "source": "hanjin_chunqiu",
+   "quote": "以晋继汉，黜魏为僭；三国之时蜀以宗室为正，魏虽受禅终为篡",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "思想维度（5）：与 SG016（通鉴魏正统说）构成跨源冲突，本切片并列不裁决。习凿齿身处东晋偏安，其以蜀为正统与东晋自居正朔的现实处境互为表里；司马光身处北宋大一统，取魏纪年亦有其政治语境——正统之争讲的是修史者的时代，不只是三国的时代",
+   "dims": [
+    5
+   ],
+   "_party": "东晋·私修",
+   "_faction": null
+  },
+  {
+   "id": "SG019",
+   "subject": "event:ev_gaopingling",
+   "predicate": "政权转移",
+   "value_text": "正始十年司马懿趁曹爽陪少帝曹芳谒高平陵，闭城据武库发动政变，诛曹爽及其党羽夷三族，魏政自此归司马氏",
+   "time": {
+    "era_text": "249（正始十年）",
+    "gregorian_year": 249
+   },
+   "place": "luoyang",
+   "source": "sanguozhi",
+   "quote": "宣王部勒兵马，先据武库，遂出屯洛水浮桥；于是收爽、羲、训、晏等，皆伏诛，夷三族",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "empire",
+   "note": "制度（3）+事件（6）维度：魏晋嬗代的实际起点在 249 年的这场政变，而非 265 年的受禅——此后十六年不过是走完程序。形式上不是篡位而是『诛奸辅政』，这是权臣易代的典型路径",
+   "dims": [
+    3,
+    6
+   ],
+   "_party": "晋·官修",
+   "_faction": null
+  },
+  {
+   "id": "SG020",
+   "subject": "event:ev_sima_daijin",
+   "predicate": "受禅易代",
+   "value_text": "咸熙二年司马炎逼魏元帝曹奂禅让，设坛南郊受禅，改元泰始，魏亡晋立",
+   "time": {
+    "era_text": "265（咸熙二年/泰始元年）",
+    "gregorian_year": 265
+   },
+   "place": "luoyang",
+   "source": "jinshu",
+   "quote": "设坛于南郊，百僚在位及匈奴单于四夷会者数万人，帝升坛受禅，柴燎告类于上帝",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "制度（3）+事件（6）维度：以禅让之名行易代之实，受禅仪式为后世王朝嬗代提供模板。此条与 SG016/SG018 的正统之争直接咬合——正统之争争的正是这场合法性表演算不算数",
+   "dims": [
+    3,
+    6
+   ],
+   "_party": "唐·官修",
    "_faction": null
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "id": "cf:place:luoyang|三国人口",
+   "subject": "place:luoyang",
+   "predicate": "三国人口",
+   "kind": "record_vs_scholarship",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SG007",
+    "SG008"
+   ]
+  },
+  {
+   "id": "cf:place:luoyang|正统之争",
+   "subject": "place:luoyang",
+   "predicate": "正统之争",
+   "kind": "scholarly_divergence",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SG016",
+    "SG018"
+   ]
+  }
+ ],
  "crossConflicts": [],
  "gaps": [
-  "CH015"
+  "SG017"
  ],
  "events": [
   {
-   "id": "ev_ru_guanzhong",
-   "subject": "event:ru_guanzhong",
-   "name": "刘邦入关中",
-   "start": -207,
-   "end": -207,
-   "note": "前207 刘邦破武关入咸阳，秦亡"
+   "id": "ev_chibi",
+   "subject": "event:ev_chibi",
+   "name": "赤壁之战",
+   "start": 208,
+   "end": 208,
+   "note": "建安十三年，孙刘联军破曹操于乌林赤壁，曹操北还，鼎立雏形奠定"
   },
   {
-   "id": "ev_hongmen",
-   "subject": "event:hongmen",
-   "name": "鸿门宴",
-   "start": -206,
-   "end": -206,
-   "note": "前206 项羽鸿门宴纵刘邦"
+   "id": "ev_yiling",
+   "subject": "event:ev_yiling",
+   "name": "夷陵（猇亭）之战",
+   "start": 221,
+   "end": 222,
+   "note": "章武元年至二年，陆逊火烧连营大破刘备，蜀汉元气大伤，鼎立格局固化"
   },
   {
-   "id": "ev_huandingsanqin",
-   "subject": "event:huandingsanqin",
-   "name": "还定三秦",
-   "start": -206,
-   "end": -205,
-   "note": "韩信明修栈道暗度陈仓，定三秦"
+   "id": "ev_zhuge_beifa",
+   "subject": "event:ev_zhuge_beifa",
+   "name": "诸葛亮北伐",
+   "start": 228,
+   "end": 234,
+   "note": "建兴六年至十二年五次北伐（世称六出祁山），屡以粮尽退军，建兴十二年卒于五丈原"
   },
   {
-   "id": "ev_pengcheng",
-   "subject": "event:pengcheng",
-   "name": "彭城之战",
-   "start": -205,
-   "end": -205,
-   "note": "项羽以少破汉于彭城"
+   "id": "ev_gaopingling",
+   "subject": "event:ev_gaopingling",
+   "name": "高平陵之变",
+   "start": 249,
+   "end": 249,
+   "note": "正始十年司马懿发动政变诛曹爽，魏政归司马氏，为魏晋嬗代埋下伏笔"
   },
   {
-   "id": "ev_chenggao",
-   "subject": "event:chenggao",
-   "name": "成皋相持",
-   "start": -205,
-   "end": -203,
-   "note": "荥阳—成皋拉锯数年"
+   "id": "ev_wei_mie_shu",
+   "subject": "event:ev_wei_mie_shu",
+   "name": "魏灭蜀",
+   "start": 263,
+   "end": 263,
+   "note": "景元四年钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降"
   },
   {
-   "id": "ev_gai_xia",
-   "subject": "event:gai_xia",
-   "name": "垓下之围",
-   "start": -202,
-   "end": -202,
-   "note": "韩信合围，四面楚歌，项羽败亡"
+   "id": "ev_sima_daijin",
+   "subject": "event:ev_sima_daijin",
+   "name": "司马炎代魏建晋",
+   "start": 265,
+   "end": 265,
+   "note": "咸熙二年司马炎受禅代魏，改元泰始，魏亡晋立"
+  },
+  {
+   "id": "ev_jin_mie_wu",
+   "subject": "event:ev_jin_mie_wu",
+   "name": "晋灭吴",
+   "start": 280,
+   "end": 280,
+   "note": "太康元年王濬楼船下益州直抵建业，孙皓出降，吴亡，三分归晋"
   }
  ],
  "edges": [
   {
-   "from": "guanzhong",
-   "to": "hanguan",
+   "from": "luoyang",
+   "to": "chang_an",
    "type": "admin",
-   "label": "关中—函谷关（东出咽喉）"
+   "label": "洛阳—长安（魏两京，关中根本）"
   },
   {
-   "from": "hanguan",
-   "to": "xingyang",
+   "from": "chang_an",
+   "to": "wuzhangyuan",
    "type": "military",
-   "label": "函谷—荥阳（中原通道）"
+   "label": "长安—五丈原（魏关中防线前推）"
   },
   {
-   "from": "xingyang",
-   "to": "chenggao",
+   "from": "hanzhong",
+   "to": "wuzhangyuan",
    "type": "military",
-   "label": "荥阳—成皋（相持前线）"
+   "label": "汉中—五丈原（诸葛亮北伐出秦岭）"
   },
   {
-   "from": "chenggao",
-   "to": "pengcheng",
-   "type": "military",
-   "label": "成皋—彭城（楚汉战线）"
+   "from": "hanzhong",
+   "to": "chengdu",
+   "type": "admin",
+   "label": "汉中—成都（蜀根本与北伐基地间运输线）"
   },
   {
-   "from": "pengcheng",
-   "to": "gai_xia",
+   "from": "chengdu",
+   "to": "jian_ge",
    "type": "military",
-   "label": "彭城—垓下（楚地）"
+   "label": "成都—剑阁（蜀北门户）"
   },
   {
-   "from": "huai_yin",
-   "to": "gai_xia",
+   "from": "jian_ge",
+   "to": "hanzhong",
    "type": "military",
-   "label": "淮阴—垓下（韩信出兵）"
+   "label": "剑阁—汉中（蜀内线纵深）"
+  },
+  {
+   "from": "yinping",
+   "to": "jian_ge",
+   "type": "military",
+   "label": "阴平—剑阁（邓艾偷渡，绕开关险）"
+  },
+  {
+   "from": "yinping",
+   "to": "chengdu",
+   "type": "military",
+   "label": "阴平—成都（邓艾凿山通道直取蜀都）"
+  },
+  {
+   "from": "jianye",
+   "to": "jiangling",
+   "type": "military",
+   "label": "建业—江陵（吴长江防线）"
+  },
+  {
+   "from": "jiangling",
+   "to": "chibi",
+   "type": "military",
+   "label": "江陵—赤壁（长江中游战场）"
   }
  ],
  "control": [
   {
-   "place_id": "guanzhong",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "刘邦就汉王，都南郑，萧何治关中后勤根本",
-   "note": "汉根本之地"
+   "place_id": "luoyang",
+   "party": "魏",
+   "start": 220,
+   "end": 265,
+   "basis": "曹丕受禅定都洛阳，魏都；咸熙二年司马炎代魏",
+   "note": "魏都"
   },
   {
-   "place_id": "hanguan",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "关中东出咽喉，汉控",
+   "place_id": "luoyang",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "泰始元年司马炎受禅建晋，仍都洛阳",
+   "note": "晋都"
+  },
+  {
+   "place_id": "chang_an",
+   "party": "魏",
+   "start": 220,
+   "end": 265,
+   "basis": "魏据关中，长安为西京",
+   "note": "魏西京"
+  },
+  {
+   "place_id": "chang_an",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
    "note": ""
   },
   {
-   "place_id": "xingyang",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "前202终局汉据中原，前线拉锯不绘入稳定层",
-   "note": "终局态，前线 transient"
+   "place_id": "wuzhangyuan",
+   "party": "魏",
+   "start": 220,
+   "end": 265,
+   "basis": "五丈原在魏境关中，诸葛亮北伐曾据之与司马懿对峙（对峙非控制变更，不绘）",
+   "note": "魏境；北伐突入为 transient，不占控制层"
   },
   {
-   "place_id": "chenggao",
-   "party": "汉",
-   "start": -206,
-   "end": -202,
-   "basis": "前202终局汉据成皋",
-   "note": "终局态，前线 transient"
-  },
-  {
-   "place_id": "pengcheng",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "项羽都彭城，楚方核心",
-   "note": "楚都"
-  },
-  {
-   "place_id": "pengcheng",
-   "party": "汉",
-   "start": -202,
-   "end": null,
-   "basis": "垓下后楚亡，彭城归汉",
-   "note": "终局归汉"
-  },
-  {
-   "place_id": "gai_xia",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "楚地，垓下决战所在",
+   "place_id": "wuzhangyuan",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
    "note": ""
   },
   {
-   "place_id": "huai_yin",
-   "party": "楚",
-   "start": -206,
-   "end": -202,
-   "basis": "韩信故乡，属楚地",
+   "place_id": "yinping",
+   "party": "魏",
+   "start": 220,
+   "end": 265,
+   "basis": "阴平道在魏境，邓艾由此入蜀",
+   "note": "魏境，灭蜀突破口"
+  },
+  {
+   "place_id": "yinping",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
+   "note": ""
+  },
+  {
+   "place_id": "chengdu",
+   "party": "蜀",
+   "start": 220,
+   "end": 263,
+   "basis": "刘备据有益州（219 称汉中王、221 称帝建国），成都为蜀都；景元四年刘禅出降",
+   "note": "蜀都"
+  },
+  {
+   "place_id": "chengdu",
+   "party": "魏",
+   "start": 264,
+   "end": 265,
+   "basis": "蜀亡后益州入魏",
+   "note": ""
+  },
+  {
+   "place_id": "chengdu",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
+   "note": ""
+  },
+  {
+   "place_id": "hanzhong",
+   "party": "蜀",
+   "start": 220,
+   "end": 263,
+   "basis": "建安二十四年刘备取汉中，为蜀北伐基地",
+   "note": "蜀北伐基地"
+  },
+  {
+   "place_id": "hanzhong",
+   "party": "魏",
+   "start": 264,
+   "end": 265,
+   "basis": "蜀亡后汉中入魏",
+   "note": ""
+  },
+  {
+   "place_id": "hanzhong",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
+   "note": ""
+  },
+  {
+   "place_id": "jian_ge",
+   "party": "蜀",
+   "start": 220,
+   "end": 263,
+   "basis": "剑阁为蜀北门户，蜀亡前始终在蜀手",
+   "note": "蜀门户；邓艾偷渡阴平正是绕开此关，非正面攻破"
+  },
+  {
+   "place_id": "jian_ge",
+   "party": "魏",
+   "start": 264,
+   "end": 265,
+   "basis": "蜀亡后剑阁入魏",
+   "note": ""
+  },
+  {
+   "place_id": "jian_ge",
+   "party": "晋",
+   "start": 266,
+   "end": 280,
+   "basis": "晋承魏土",
+   "note": ""
+  },
+  {
+   "place_id": "jianye",
+   "party": "吴",
+   "start": 220,
+   "end": 280,
+   "basis": "孙权据江东（220 已实控，222 称吴王、229 称帝），建业为吴都；太康元年孙皓出降",
+   "note": "吴都；控制层按实控计自220，称帝在229"
+  },
+  {
+   "place_id": "jiangling",
+   "party": "吴",
+   "start": 220,
+   "end": 280,
+   "basis": "建安二十四年吕蒙袭取江陵后属吴，为吴荆州重镇",
+   "note": "吴荆州重镇"
+  },
+  {
+   "place_id": "chibi",
+   "party": "吴",
+   "start": 220,
+   "end": 280,
+   "basis": "赤壁战后江夏、南郡一带归吴",
    "note": ""
   }
  ],
  "control_seats": [
   {
-   "place_id": "guanzhong",
-   "name": "关中",
-   "lon": 108.9,
-   "lat": 34.3,
-   "region": "qin_han"
+   "place_id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "hanguan",
-   "name": "函谷关",
-   "lon": 111.3,
-   "lat": 34.3,
-   "region": "qin_han"
+   "place_id": "chang_an",
+   "name": "长安",
+   "lon": 108.94,
+   "lat": 34.34,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "xingyang",
-   "name": "荥阳",
-   "lon": 113.36,
-   "lat": 34.72,
-   "region": "qin_han"
+   "place_id": "wuzhangyuan",
+   "name": "五丈原",
+   "lon": 107.63,
+   "lat": 34.2,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "chenggao",
-   "name": "成皋",
-   "lon": 113.0,
-   "lat": 34.75,
-   "region": "qin_han"
+   "place_id": "yinping",
+   "name": "阴平",
+   "lon": 104.68,
+   "lat": 32.63,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "pengcheng",
-   "name": "彭城",
-   "lon": 117.18,
-   "lat": 34.27,
-   "region": "qin_han"
+   "place_id": "chengdu",
+   "name": "成都",
+   "lon": 104.07,
+   "lat": 30.67,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "gai_xia",
-   "name": "垓下",
-   "lon": 117.3,
-   "lat": 33.53,
-   "region": "qin_han"
+   "place_id": "hanzhong",
+   "name": "汉中",
+   "lon": 107.02,
+   "lat": 33.07,
+   "region": "three_kingdoms"
   },
   {
-   "place_id": "huai_yin",
-   "name": "淮阴",
-   "lon": 119.0,
-   "lat": 33.5,
-   "region": "qin_han"
+   "place_id": "jian_ge",
+   "name": "剑阁",
+   "lon": 105.52,
+   "lat": 32.3,
+   "region": "three_kingdoms"
+  },
+  {
+   "place_id": "jianye",
+   "name": "建业",
+   "lon": 118.78,
+   "lat": 32.06,
+   "region": "three_kingdoms"
+  },
+  {
+   "place_id": "jiangling",
+   "name": "江陵",
+   "lon": 112.19,
+   "lat": 30.35,
+   "region": "three_kingdoms"
+  },
+  {
+   "place_id": "chibi",
+   "name": "赤壁",
+   "lon": 113.9,
+   "lat": 29.75,
+   "region": "three_kingdoms"
   }
  ],
  "control_years": [
-  -206,
-  -202
+  220,
+  280
  ],
  "vocab": {
   "layers": [
@@ -867,23 +1220,32 @@ window.SANDBOX_SLICES["chu_han"] = {
    "generated"
   ],
   "parties": [
-   "汉",
-   "楚",
+   "魏",
+   "蜀",
+   "吴",
+   "晋",
    "后世官修",
    "二手综述"
   ],
   "party_bucket": {
-   "汉·官修": "汉",
-   "汉·当代": "汉",
-   "汉·后朝官修": "汉",
-   "楚·官修": "楚",
-   "楚·当代": "楚",
+   "魏·官修": "魏",
+   "魏·当代": "魏",
+   "蜀·官修": "蜀",
+   "蜀·当代": "蜀",
+   "吴·官修": "吴",
+   "吴·当代": "吴",
+   "晋·官修": "晋",
+   "晋·当代": "晋",
+   "唐·官修": "后世官修",
    "宋·官修": "后世官修",
+   "东晋·私修": "后世官修",
    "二手综述": "二手综述"
   },
   "party_colors": {
-   "汉": "#B23A48",
-   "楚": "#2E86C1",
+   "魏": "#B23A48",
+   "蜀": "#2E86C1",
+   "吴": "#2E8B57",
+   "晋": "#8E7CC3",
    "后世官修": "#6C7A89",
    "二手综述": "#9B7B5A"
   }

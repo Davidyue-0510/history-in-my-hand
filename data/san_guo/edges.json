@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "luoyang", "to": "chang_an", "type": "admin", "label": "洛阳—长安（魏两京，关中根本）"},
+    {"from": "chang_an", "to": "wuzhangyuan", "type": "military", "label": "长安—五丈原（魏关中防线前推）"},
+    {"from": "hanzhong", "to": "wuzhangyuan", "type": "military", "label": "汉中—五丈原（诸葛亮北伐出秦岭）"},
+    {"from": "hanzhong", "to": "chengdu", "type": "admin", "label": "汉中—成都（蜀根本与北伐基地间运输线）"},
+    {"from": "chengdu", "to": "jian_ge", "type": "military", "label": "成都—剑阁（蜀北门户）"},
+    {"from": "jian_ge", "to": "hanzhong", "type": "military", "label": "剑阁—汉中（蜀内线纵深）"},
+    {"from": "yinping", "to": "jian_ge", "type": "military", "label": "阴平—剑阁（邓艾偷渡，绕开关险）"},
+    {"from": "yinping", "to": "chengdu", "type": "military", "label": "阴平—成都（邓艾凿山通道直取蜀都）"},
+    {"from": "jianye", "to": "jiangling", "type": "military", "label": "建业—江陵（吴长江防线）"},
+    {"from": "jiangling", "to": "chibi", "type": "military", "label": "江陵—赤壁（长江中游战场）"}
+  ]
+}

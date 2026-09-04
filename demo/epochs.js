@@ -128,6 +128,90 @@ window.SANDBOX_EPOCHS = {
    "_gap": "待补：大战略/重心/脆弱性"
   }
  },
+ "song": {
+  "label": "宋（960–1279）",
+  "status": "derived",
+  "note": "宋代（火器萌芽、纸币、文人政治）。",
+  "tech": {
+   "productivity": {
+    "value": "农业+手工业(瓷器/纺织)高峰，火药武器化",
+    "layer": "scholarship",
+    "basis": "技术↔生产力"
+   },
+   "key_techs": [
+    "火药武器",
+    "指南针航海",
+    "活字印刷"
+   ]
+  },
+  "international": {
+   "neighbors": [
+    "辽/金",
+    "西夏",
+    "大理"
+   ],
+   "diplomatic_posture": "岁币/盟约",
+   "external_threat": "辽金蒙",
+   "layer": "scholarship"
+  },
+  "economy": {
+   "currency": "铜钱+交子(世界最早纸币)",
+   "market_integration": "突破坊市制",
+   "layer": "scholarship"
+  },
+  "society": {
+   "standing_army_link": {
+    "value": "募兵(禁军)+更戍法，财政养兵→人口↔常驻军(财政视角)",
+    "layer": "scholarship",
+    "basis": "人口↔常驻军"
+   },
+   "social_structure": [
+    "士农工商",
+    "厢军/乡兵"
+   ]
+  },
+  "doctrine": {
+   "dominant_ideology": "理学(程朱)成型",
+   "layer": "scholarship"
+  },
+  "anchors": {
+   "geographic_pivots": [
+    "开封/临安",
+    "燕云(失)"
+   ],
+   "layer": "scholarship"
+  },
+  "strategic": {
+   "grand_strategy": "守内虚外、重文抑武",
+   "layer": "inference"
+  }
+ },
+ "qin_han": {
+  "label": "秦汉（前221–220）",
+  "status": "stub",
+  "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
+  "tech": {
+   "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
+  },
+  "international": {
+   "_gap": "待补：邻邦/外交态势"
+  },
+  "economy": {
+   "_gap": "待补：赋税/货币/市场整合"
+  },
+  "society": {
+   "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
+  },
+  "doctrine": {
+   "_gap": "待补：主流意识形态/知识体系"
+  },
+  "anchors": {
+   "_gap": "待补：关键制度/地理支点"
+  },
+  "strategic": {
+   "_gap": "待补：大战略/重心/脆弱性"
+  }
+ },
  "tang": {
   "label": "唐（618–907）",
   "status": "derived",
@@ -349,32 +433,6 @@ window.SANDBOX_EPOCHS = {
    "_gap": "待补：大战略/重心/脆弱性"
   }
  },
- "qin_han": {
-  "label": "秦汉（前221–220）",
-  "status": "stub",
-  "note": "待按史料扩展：技术↔生产力、人口↔常驻军 等关联推断（见 docs/unified_dimensions.md 扩展方法论）。",
-  "tech": {
-   "_gap": "待补：关键技术/生产力水平（技术↔生产力）"
-  },
-  "international": {
-   "_gap": "待补：邻邦/外交态势"
-  },
-  "economy": {
-   "_gap": "待补：赋税/货币/市场整合"
-  },
-  "society": {
-   "_gap": "待补：人口规模/阶层/常驻军（人口↔常驻军）"
-  },
-  "doctrine": {
-   "_gap": "待补：主流意识形态/知识体系"
-  },
-  "anchors": {
-   "_gap": "待补：关键制度/地理支点"
-  },
-  "strategic": {
-   "_gap": "待补：大战略/重心/脆弱性"
-  }
- },
  "three_kingdoms": {
   "label": "三国（190–280）",
   "status": "stub",
@@ -451,64 +509,6 @@ window.SANDBOX_EPOCHS = {
   },
   "strategic": {
    "_gap": "待补：大战略/重心/脆弱性"
-  }
- },
- "song": {
-  "label": "宋（960–1279）",
-  "status": "derived",
-  "note": "宋代（火器萌芽、纸币、文人政治）。",
-  "tech": {
-   "productivity": {
-    "value": "农业+手工业(瓷器/纺织)高峰，火药武器化",
-    "layer": "scholarship",
-    "basis": "技术↔生产力"
-   },
-   "key_techs": [
-    "火药武器",
-    "指南针航海",
-    "活字印刷"
-   ]
-  },
-  "international": {
-   "neighbors": [
-    "辽/金",
-    "西夏",
-    "大理"
-   ],
-   "diplomatic_posture": "岁币/盟约",
-   "external_threat": "辽金蒙",
-   "layer": "scholarship"
-  },
-  "economy": {
-   "currency": "铜钱+交子(世界最早纸币)",
-   "market_integration": "突破坊市制",
-   "layer": "scholarship"
-  },
-  "society": {
-   "standing_army_link": {
-    "value": "募兵(禁军)+更戍法，财政养兵→人口↔常驻军(财政视角)",
-    "layer": "scholarship",
-    "basis": "人口↔常驻军"
-   },
-   "social_structure": [
-    "士农工商",
-    "厢军/乡兵"
-   ]
-  },
-  "doctrine": {
-   "dominant_ideology": "理学(程朱)成型",
-   "layer": "scholarship"
-  },
-  "anchors": {
-   "geographic_pivots": [
-    "开封/临安",
-    "燕云(失)"
-   ],
-   "layer": "scholarship"
-  },
-  "strategic": {
-   "grand_strategy": "守内虚外、重文抑武",
-   "layer": "inference"
   }
  },
  "yuan_ming": {

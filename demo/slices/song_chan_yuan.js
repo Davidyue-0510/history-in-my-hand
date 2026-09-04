@@ -46,7 +46,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    6
   ],
   "epoch": "song",
-  "scale_tier": "strategic",
+  "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（主战寇准 vs 主和迁都派）"
+    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
    },
    "material_logistics": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；岁币/漕运→后勤半径"
+    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
    },
    "population_mobilization": {
     "from": [
@@ -80,7 +80,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；边境民生→动员潜力"
+    "note": "人口↔常驻军；流民→动员潜力"
    },
    "geopolitical_strategy": {
     "from": [
@@ -92,7 +92,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口（白沟河界、幽蓟门户）"
+    "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
   "page": "county.html?scene=song_chan_yuan",

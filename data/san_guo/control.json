@@ -1,0 +1,26 @@
+{
+  "_comment": "三国鼎立控制层（220—280）。本切片为战略尺度，控制层画的是**格局的存续与终结**，不是战线拉锯：三方边界六十年间基本稳定（汉中—剑阁、长江—江陵），真正的变化只有三次——263 魏灭蜀、265 晋代魏、280 晋灭吴。故本层只按这三次变化分段，不把北伐突入（诸葛亮出祁山、姜维出陇西）绘成控制权变更——那些是 transient 战线，属于事件层而非控制层。",
+  "_years": [220, 280],
+  "control": [
+    {"place_id": "luoyang", "party": "魏", "start": 220, "end": 265, "basis": "曹丕受禅定都洛阳，魏都；咸熙二年司马炎代魏", "note": "魏都"},
+    {"place_id": "luoyang", "party": "晋", "start": 266, "end": 280, "basis": "泰始元年司马炎受禅建晋，仍都洛阳", "note": "晋都"},
+    {"place_id": "chang_an", "party": "魏", "start": 220, "end": 265, "basis": "魏据关中，长安为西京", "note": "魏西京"},
+    {"place_id": "chang_an", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "wuzhangyuan", "party": "魏", "start": 220, "end": 265, "basis": "五丈原在魏境关中，诸葛亮北伐曾据之与司马懿对峙（对峙非控制变更，不绘）", "note": "魏境；北伐突入为 transient，不占控制层"},
+    {"place_id": "wuzhangyuan", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "yinping", "party": "魏", "start": 220, "end": 265, "basis": "阴平道在魏境，邓艾由此入蜀", "note": "魏境，灭蜀突破口"},
+    {"place_id": "yinping", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "chengdu", "party": "蜀", "start": 220, "end": 263, "basis": "刘备据有益州（219 称汉中王、221 称帝建国），成都为蜀都；景元四年刘禅出降", "note": "蜀都"},
+    {"place_id": "chengdu", "party": "魏", "start": 264, "end": 265, "basis": "蜀亡后益州入魏", "note": ""},
+    {"place_id": "chengdu", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "hanzhong", "party": "蜀", "start": 220, "end": 263, "basis": "建安二十四年刘备取汉中，为蜀北伐基地", "note": "蜀北伐基地"},
+    {"place_id": "hanzhong", "party": "魏", "start": 264, "end": 265, "basis": "蜀亡后汉中入魏", "note": ""},
+    {"place_id": "hanzhong", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "jian_ge", "party": "蜀", "start": 220, "end": 263, "basis": "剑阁为蜀北门户，蜀亡前始终在蜀手", "note": "蜀门户；邓艾偷渡阴平正是绕开此关，非正面攻破"},
+    {"place_id": "jian_ge", "party": "魏", "start": 264, "end": 265, "basis": "蜀亡后剑阁入魏", "note": ""},
+    {"place_id": "jian_ge", "party": "晋", "start": 266, "end": 280, "basis": "晋承魏土", "note": ""},
+    {"place_id": "jianye", "party": "吴", "start": 220, "end": 280, "basis": "孙权据江东（220 已实控，222 称吴王、229 称帝），建业为吴都；太康元年孙皓出降", "note": "吴都；控制层按实控计自220，称帝在229"},
+    {"place_id": "jiangling", "party": "吴", "start": 220, "end": 280, "basis": "建安二十四年吕蒙袭取江陵后属吴，为吴荆州重镇", "note": "吴荆州重镇"},
+    {"place_id": "chibi", "party": "吴", "start": 220, "end": 280, "basis": "赤壁战后江夏、南郡一带归吴", "note": ""}
+  ]
+}
