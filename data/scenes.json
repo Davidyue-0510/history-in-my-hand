@@ -325,7 +325,8 @@
   "song_chan_yuan",
   "guandu_llm",
   "san_guo",
-  "feishui_llm"
+  "feishui_llm",
+  "changping_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -11678,6 +11679,97 @@
      ],
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
+    }
+   }
+  },
+  "changping_llm": {
+   "kind": "battle",
+   "region": "warring_states",
+   "title": "长平之战（LLM 抽取·人工校订）",
+   "dossier_label": "长平之战（LLM 抽取落库）",
+   "subtitle": "周赧王五十五年（前260）· 秦（白起） vs 赵（赵括）",
+   "primary_place": "changping",
+   "dossier_event": "event:ev_changping_llm_03",
+   "vocab_pack": "changping_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "长平之战（前260，周赧王五十五年）：秦将王龁攻韩取上党，上党民归赵；赵以廉颇坚壁拒秦，秦行反间使赵以赵括代廉颇；白起至，佯败绝粮道、射杀赵括，坑杀赵降卒（史记载前后斩首虏四十五万，含坑杀四十万，遗小者二百四十人归赵），赵国元气大伤、东方均势倾斜。本切片是「真实 LLM 抽取（DeepSeek）+ 人工校订落库」复用模式的第三例：LLM 依《史记·白起王翦列传》长平片段抽出 15 条断言（8 人/4 事/2 地/1 边），经 curate_emit 门禁报 BLOCK 0 / WARN 2（引文待核 1、缺控制层 1），再由人工逐条校订——把 5 条全为 dims=[6] 的 conform 兜底值改为按内容判定的真实维度（赵括战死/坑杀→技术+事件，斩首/坑杀人数→社会+事件，考异→思想+事件），并补显式坐标、注册现代学界考订源（坑杀人数争议，scholarship/paraphrase_unverified，可关闭）。未经校订的 LLM 产物一律不入库。立场分桶：赵方原始记载因秦火几近无存，本切片『赵方』声音本就缺位——缺口显式保留，不伪造。",
+   "parties_note": "《史记·白起王翦列传》为西汉司马迁所撰，距长平约百余年，归『后世官修』；其长平记载主要来自秦国方面流传与汉初传闻整合，故全部断言 source 桶皆『后世官修』，秦方/赵方之分仅经叙事折射。赵方原始记载因秦火几近无存，『赵方』声音本就缺位——缺口显式保留，不伪造。现代学界对坑杀四十万之数的考异归『二手综述』（scholarship，可关闭）。立场分桶是产品核心：塞错即伪造立场；系统不裁决，只并列。",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "subject_names": {
+    "event:ev_changping_llm_01": "秦攻韩取上党",
+    "event:ev_changping_llm_02": "赵括代廉颇",
+    "event:ev_changping_llm_03": "长平之战·白起破赵",
+    "event:ev_changping_llm_04": "坑杀赵降卒",
+    "place:shangdang": "上党",
+    "place:changping": "长平",
+    "person:CHA__p01": "王龁",
+    "person:CHA__p02": "廉颇",
+    "person:CHA__p03": "赵孝成王",
+    "person:CHA__p04": "范雎（应侯）",
+    "person:CHA__p05": "赵括",
+    "person:CHA__p06": "蔺相如",
+    "person:CHA__p07": "白起",
+    "person:CHA__p08": "括母"
+   },
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→朝堂凝聚力（赵王中反间、拒蔺相如/括母之谏，决策结构脆弱）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技术↔生产力；绝粮道→后勤半径崩溃"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "人口↔常驻军；坑杀四十五万即动员潜力之毁灭"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
     }
    }
   }

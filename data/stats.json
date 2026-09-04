@@ -1,11 +1,12 @@
 {
-  "scenes_total": 143,
-  "historical": 134,
+  "scenes_total": 144,
+  "historical": 135,
   "fictional": 9,
-  "assertions_total": 2194,
-  "sources_total": 103,
+  "assertions_total": 2209,
+  "sources_total": 105,
   "factions_total": 9,
   "vocab_packs": [
+    "changping_llm",
     "chu_han",
     "feishui_llm",
     "guandu_llm",
@@ -17,7 +18,7 @@
     "three_campaigns"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 204,
+  "leads_total": 205,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1073,6 +1074,13 @@
       "kind": "battle",
       "assertions": 19,
       "factions": {}
+    },
+    {
+      "id": "changping_llm",
+      "title": "长平之战（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1218,6 +1226,7 @@
     "song_chan_yuan": "澶渊之盟",
     "guandu_llm": "官渡之战（LLM 抽取·人工校订）",
     "san_guo": "三国鼎立",
-    "feishui_llm": "淝水之战（LLM 抽取·人工校订）"
+    "feishui_llm": "淝水之战（LLM 抽取·人工校订）",
+    "changping_llm": "长平之战（LLM 抽取·人工校订）"
   }
 }

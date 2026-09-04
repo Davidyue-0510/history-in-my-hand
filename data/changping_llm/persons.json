@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "CHA__p01",
+   "name": "王龁",
+   "role": "秦左庶长",
+   "note": "秦将，率军攻韩取上党",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p02",
+   "name": "廉颇",
+   "role": "赵将",
+   "note": "赵军主帅，坚壁不出",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p03",
+   "name": "赵王",
+   "role": "赵王",
+   "note": "赵孝成王，中反间计",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p04",
+   "name": "应侯",
+   "role": "秦相",
+   "note": "范雎，行反间计",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p05",
+   "name": "赵括",
+   "role": "赵将",
+   "note": "马服子，代廉颇为将",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p06",
+   "name": "蔺相如",
+   "role": "赵上卿",
+   "note": "谏赵王勿用赵括",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p07",
+   "name": "白起",
+   "role": "秦武安君",
+   "note": "秦军主帅，坑杀赵卒",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p08",
+   "name": "括母",
+   "role": "赵括之母",
+   "note": "上书谏赵王不可使括",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

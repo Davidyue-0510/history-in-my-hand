@@ -1,15 +1,16 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 143 个切片
+// 权威数据源：data/scenes.json 注册的 144 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 143 个切片",
+  "slice": "multi-scene · 144 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
+   "changping_llm",
    "chu_han",
    "feishui_llm",
    "guandu_llm",
@@ -394,7 +395,8 @@ window.SANDBOX_DATA = {
   "song_chan_yuan",
   "guandu_llm",
   "san_guo",
-  "feishui_llm"
+  "feishui_llm",
+  "changping_llm"
  ],
  "vocab": {
   "layers": [
@@ -23181,6 +23183,41 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 3
    }
+  },
+  "changping_llm": {
+   "key": "changping_llm",
+   "scene_id": "changping_llm",
+   "title": "长平之战（LLM 抽取·人工校订）",
+   "dossier_label": "长平之战（LLM 抽取落库）",
+   "subtitle": "周赧王五十五年（前260）· 秦（白起） vs 赵（赵括）",
+   "kind": "battle",
+   "region": "warring_states",
+   "page": "changping_llm.html",
+   "primary_place": "changping",
+   "vocab_pack": "changping_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 2,
+    "place": 2,
+    "person": 8,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -23326,7 +23363,8 @@ window.SANDBOX_DATA = {
   "song_chan_yuan": "slices/song_chan_yuan.js",
   "guandu_llm": "slices/guandu_llm.js",
   "san_guo": "slices/san_guo.js",
-  "feishui_llm": "slices/feishui_llm.js"
+  "feishui_llm": "slices/feishui_llm.js",
+  "changping_llm": "slices/changping_llm.js"
  },
  "corridors": [
   {
@@ -23584,6 +23622,22 @@ window.SANDBOX_DATA = {
     "effort": "—",
     "issue_url": null,
     "_src_line": 14
+   },
+   {
+    "id": "CHA_015",
+    "scene": "changping_llm",
+    "subject": "event:ev_changping_llm_03",
+    "title": "赵括实战能力缺乏证据，仅知纸上谈兵",
+    "missing": "考古学 / 军事史",
+    "where": "长平之战相关考古遗址",
+    "skills": [
+     "考古学",
+     "军事史"
+    ],
+    "accept": "赵括实际指挥能力",
+    "effort": "—",
+    "issue_url": null,
+    "_src_line": 15
    },
    {
     "id": "CHANYUANG01",
@@ -26661,6 +26715,7 @@ window.SANDBOX_DATA = {
     "caishiji",
     "canhebei",
     "changping",
+    "changping_llm",
     "chanyuan",
     "chengpu",
     "chenqiao",
@@ -26966,6 +27021,25 @@ window.SANDBOX_DATA = {
     "event_count": 3,
     "avg_resonance": 0.0,
     "best_event": "event:cp_jz",
+    "best_resonance": 0.0
+   },
+   {
+    "scene": "changping_llm",
+    "name": "changping_llm",
+    "total": 15,
+    "layers": {
+     "record": 13,
+     "scholarship": 1,
+     "gap": 1
+    },
+    "party_counts": {
+     "后世官修": 14,
+     "二手综述": 1
+    },
+    "faction_counts": {},
+    "event_count": 4,
+    "avg_resonance": 0.0,
+    "best_event": "event:ev_changping_llm_01",
     "best_resonance": 0.0
    },
    {

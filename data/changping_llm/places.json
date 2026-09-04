@@ -1,0 +1,32 @@
+{
+ "places": [
+  {
+   "id": "shangdang",
+   "name": "上党",
+   "type": "region",
+   "modern": "今中国山西省东南部",
+   "note": "韩地，秦攻取后民归赵",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.86,
+   "lat": 36.2
+  },
+  {
+   "id": "changping",
+   "name": "长平",
+   "type": "fortress",
+   "modern": "今中国山西省高平市",
+   "note": "赵军驻守之地，主战场",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.5,
+   "lat": 35.78
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

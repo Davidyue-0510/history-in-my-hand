@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_changping_llm_01",
+   "subject": "event:ev_changping_llm_01",
+   "year": -260,
+   "era": "周赧王五十五年",
+   "title": "秦攻韩取上党",
+   "kind": "战事",
+   "text": "王龁攻韩取上党，上党民归赵",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_changping_llm_02",
+   "subject": "event:ev_changping_llm_02",
+   "year": -260,
+   "era": "周赧王五十五年",
+   "title": "赵括代廉颇",
+   "kind": "行政",
+   "text": "赵王中反间计，以赵括代廉颇",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_changping_llm_03",
+   "subject": "event:ev_changping_llm_03",
+   "year": -260,
+   "era": "周赧王五十五年",
+   "title": "长平之战",
+   "kind": "战事",
+   "text": "白起绝赵粮道，射杀赵括",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_changping_llm_04",
+   "subject": "event:ev_changping_llm_04",
+   "year": -260,
+   "era": "周赧王五十五年",
+   "title": "坑杀赵卒",
+   "kind": "战事",
+   "text": "白起坑杀赵降卒四十万",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

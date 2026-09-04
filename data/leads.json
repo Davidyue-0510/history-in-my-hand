@@ -195,6 +195,22 @@
    "_src_line": 14
   },
   {
+   "id": "CHA_015",
+   "scene": "changping_llm",
+   "subject": "event:ev_changping_llm_03",
+   "title": "赵括实战能力缺乏证据，仅知纸上谈兵",
+   "missing": "考古学 / 军事史",
+   "where": "长平之战相关考古遗址",
+   "skills": [
+    "考古学",
+    "军事史"
+   ],
+   "accept": "赵括实际指挥能力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "CHANYUANG01",
    "scene": "chanyuan",
    "subject": "event:cy_1005",

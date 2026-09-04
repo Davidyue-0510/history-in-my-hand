@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "shangdang",
+   "to": "changping",
+   "type": "military",
+   "label": "秦攻韩取上党后，赵军驻长平",
+   "_source_idx": 0,
+   "_source_name": "史记·白起王翦列传（长平片段）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

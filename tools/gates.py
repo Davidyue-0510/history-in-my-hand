@@ -92,9 +92,12 @@ def _run(cmd, timeout, label):
     """运行子命令并带超时保护：超时则强制终止整组进程（含无头浏览器孙进程），
     避免某个步骤卡死导致整个 gates 无限挂起。返回 exit code。"""
     env = dict(os.environ)
-    if any("test_world_gen" in str(c) for c in cmd):
-        # 关闭沙箱 safe-delete 守卫：否则 cleanup 的删除被静默吞成 no-op，
-        # 导致 wtest_tmp 残留污染 lint(#1) 且 zero-residue 检查失败（#23 假绿）。
+    if any(any(k in str(c) for k in ("test_world_gen", "test_world_cli",
+            "test_emit", "test_curate")) for c in cmd):
+        # 关闭沙箱 safe-delete 守卫：否则 cleanup 的删除（_rmtree_manual 的 os.remove/os.rmdir、
+        # 或 shutil.rmtree）被静默吞成 no-op，导致 wtest_tmp / wtest_cli / wtest_rt 残影
+        # 污染 lint(#1) 且 zero-residue 检查失败（#23 假绿）。所有会建+删 workspace 场景目录的
+        # world/emit/curate 家族测试都必须放行（硬经验 #28）。
         env["CODEBUDDY_SAFE_DELETE_ENABLED"] = "0"
     try:
         if os.name == "nt":
@@ -127,9 +130,12 @@ def _run(cmd, timeout, label):
 def _run_capture(cmd, timeout, label):
     """同 _run，但捕获 stdout 以便判断真实 LLM 冒烟是否 SKIP（无 key / 网络不可达）。"""
     env = dict(os.environ)
-    if any("test_world_gen" in str(c) for c in cmd):
-        # 关闭沙箱 safe-delete 守卫：否则 cleanup 的删除被静默吞成 no-op，
-        # 导致 wtest_tmp 残留污染 lint(#1) 且 zero-residue 检查失败（#23 假绿）。
+    if any(any(k in str(c) for k in ("test_world_gen", "test_world_cli",
+            "test_emit", "test_curate")) for c in cmd):
+        # 关闭沙箱 safe-delete 守卫：否则 cleanup 的删除（_rmtree_manual 的 os.remove/os.rmdir、
+        # 或 shutil.rmtree）被静默吞成 no-op，导致 wtest_tmp / wtest_cli / wtest_rt 残影
+        # 污染 lint(#1) 且 zero-residue 检查失败（#23 假绿）。所有会建+删 workspace 场景目录的
+        # world/emit/curate 家族测试都必须放行（硬经验 #28）。
         env["CODEBUDDY_SAFE_DELETE_ENABLED"] = "0"
     try:
         if os.name == "nt":

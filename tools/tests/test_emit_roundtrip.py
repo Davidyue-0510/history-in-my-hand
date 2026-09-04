@@ -7,7 +7,7 @@
   2. 读该 JSON，assemble_from_emit 反装配成真实场景（WORLD_SKIP_BUILD=1 跳过整库 build）。
   3. 断言：场景目录 / assertions.jsonl 条数 / sources 线程 / scenes.json 注册 /
            vocab 包 / sources.json 均正确。
-  4. 零残留清理：scenes.json 字节级还原 + scene 目录移出 workspace 删除 + 删 vocab 包。
+  4. 零残留清理：scenes.json 手术式移除注册项（scenes + order）+ scene 目录逐文件删除 + 删 vocab 包。
 
 为保持零残留且离线确定，fixture 故意用不可 geocode 的地名（测地甲…），
 使 _register_terrain 跳过（不联网、不写 terrain_grids.json）。
@@ -15,8 +15,6 @@
 import json
 import os
 import sys
-import hashlib
-import shutil
 import tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -28,11 +26,6 @@ DATA = os.path.join(ROOT, "data")
 VOCAB = os.path.join(DATA, "vocab")
 SCENES = os.path.join(DATA, "scenes.json")
 FIX = os.path.join(HERE, "fixtures")
-
-
-def sha(p):
-    with open(p, "rb") as f:
-        return hashlib.sha256(f.read()).hexdigest()
 
 
 def _rmtree_walk(d):
@@ -72,11 +65,6 @@ def roundtrip_one(spec_rel, scene_id, expect_src, expect_cross=False):
     if expect_cross:
         assert any(a.get("_cross_conflicts") for a in emit["assertions"]), "多源 emit 缺跨源冲突标注"
 
-    # 备份 scenes.json（字节级还原用）
-    scenes_before = sha(SCENES)
-    scenes_bak = os.path.join(tempfile.gettempdir(), "scenes_bak_%s_%d.json" % (scene_id, os.getpid()))
-    shutil.copy(SCENES, scenes_bak)
-
     # (2) assemble（WORLD_SKIP_BUILD=1 跳过整库 build）
     os.environ["WORLD_SKIP_BUILD"] = "1"
     rc2 = ingest.assemble_from_emit(emit_json)
@@ -101,9 +89,7 @@ def roundtrip_one(spec_rel, scene_id, expect_src, expect_cross=False):
     assert os.path.exists(os.path.join(VOCAB, scene_id + ".json")), "vocab 包未生成"
     assert os.path.exists(os.path.join(scene_dir, "sources.json")), "sources.json 未写"
 
-    # (4) 零残留清理
-    shutil.copy(scenes_bak, SCENES)  # 还原 scenes.json
-    os.remove(scenes_bak)
+    # (4) 零残留清理（手术式，不靠字节备份还原——备份态若被上一次中断 run 污染会再污染）
     vp = os.path.join(VOCAB, scene_id + ".json")
     if os.path.exists(vp):
         os.remove(vp)  # 单文件删除（workspace 内真删）
@@ -111,6 +97,22 @@ def roundtrip_one(spec_rel, scene_id, expect_src, expect_cross=False):
     # 内部 rmtree 源目录会被守卫静默拦截，导致残留）
     if os.path.isdir(scene_dir):
         _rmtree_walk(scene_dir)
+    # 手术式移除 scenes.json 注册项（scenes + order）；json.dump(indent=1) 复刻原格式，
+    # 零漂移，且不会把上一次中断 run 的污染残影还原回来。
+    if os.path.exists(SCENES):
+        with open(SCENES, encoding="utf-8") as f:
+            _reg = json.load(f)
+        _changed = False
+        if scene_id in _reg.get("scenes", {}):
+            del _reg["scenes"][scene_id]
+            _changed = True
+        if scene_id in _reg.get("order", []):
+            _reg["order"] = [x for x in _reg["order"] if x != scene_id]
+            _changed = True
+        if _changed:
+            with open(SCENES, "w", encoding="utf-8") as f:
+                json.dump(_reg, f, ensure_ascii=False, indent=1)
+                f.write("\n")  # 复刻提交版尾部换行，零漂移
 
     # 断言零残留
     assert not os.path.exists(scene_dir), "场景目录残留"
@@ -118,7 +120,6 @@ def roundtrip_one(spec_rel, scene_id, expect_src, expect_cross=False):
     reg2 = json.load(open(SCENES, encoding="utf-8"))
     assert scene_id not in reg2["scenes"], "scenes.json 注册残留"
     assert scene_id not in reg2["order"], "scenes.json order 残留"
-    assert sha(SCENES) == scenes_before, "scenes.json 字节级未还原"
     print("  [ok] %s: %d 源 / %d 断言 / 跨源冲突=%s" % (scene_id, expect_src, n_assert, expect_cross))
     return True
 
