@@ -117,9 +117,11 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "type": "region",
    "modern": "今中国河南省黄河以北地区",
    "note": "端和将河内兵伐赵",
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 112.9,
+   "lat": 35.1,
+   "geo_note": "河内郡·约今河南沁阳（黄河北岸），坐标约略±0.1°",
+   "elev": null,
+   "off_grid": true
   },
   {
    "id": "dongyang",

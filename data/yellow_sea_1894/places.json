@@ -46,9 +46,9 @@
    "type": "region",
    "modern": "今中国辽宁省大连市庄河市黑石礁",
    "note": "黄海海战战场西侧。",
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 121.5,
+   "lat": 38.87,
+   "geo_note": "旅顺口外黑石礁，坐标约略±0.1°"
   },
   {
    "id": "yalu_river",
