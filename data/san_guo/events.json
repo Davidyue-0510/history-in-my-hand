@@ -1,11 +1,11 @@
 {
   "events": [
-    {"id": "ev_chibi", "subject": "event:ev_chibi", "name": "赤壁之战", "start": 208, "end": 208, "note": "建安十三年，孙刘联军破曹操于乌林赤壁，曹操北还，鼎立雏形奠定"},
-    {"id": "ev_yiling", "subject": "event:ev_yiling", "name": "夷陵（猇亭）之战", "start": 221, "end": 222, "note": "章武元年至二年，陆逊火烧连营大破刘备，蜀汉元气大伤，鼎立格局固化"},
-    {"id": "ev_zhuge_beifa", "subject": "event:ev_zhuge_beifa", "name": "诸葛亮北伐", "start": 228, "end": 234, "note": "建兴六年至十二年五次北伐（世称六出祁山），屡以粮尽退军，建兴十二年卒于五丈原"},
-    {"id": "ev_gaopingling", "subject": "event:ev_gaopingling", "name": "高平陵之变", "start": 249, "end": 249, "note": "正始十年司马懿发动政变诛曹爽，魏政归司马氏，为魏晋嬗代埋下伏笔"},
-    {"id": "ev_wei_mie_shu", "subject": "event:ev_wei_mie_shu", "name": "魏灭蜀", "start": 263, "end": 263, "note": "景元四年钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降"},
-    {"id": "ev_sima_daijin", "subject": "event:ev_sima_daijin", "name": "司马炎代魏建晋", "start": 265, "end": 265, "note": "咸熙二年司马炎受禅代魏，改元泰始，魏亡晋立"},
-    {"id": "ev_jin_mie_wu", "subject": "event:ev_jin_mie_wu", "name": "晋灭吴", "start": 280, "end": 280, "note": "太康元年王濬楼船下益州直抵建业，孙皓出降，吴亡，三分归晋"}
+    {"id": "ev_chibi", "subject": "event:ev_chibi", "year": 208, "era": "东汉·建安十三年", "title": "赤壁之战", "kind": "战事·会战", "text": "建安十三年，孙刘联军破曹操于乌林赤壁，曹操北还，鼎立雏形奠定"},
+    {"id": "ev_yiling", "subject": "event:ev_yiling", "year": 221, "era": "蜀汉·章武元年至二年", "title": "夷陵（猇亭）之战", "kind": "战事·决战", "text": "章武元年至二年，陆逊火烧连营大破刘备，蜀汉元气大伤，鼎立格局固化"},
+    {"id": "ev_zhuge_beifa", "subject": "event:ev_zhuge_beifa", "year": 228, "era": "蜀汉·建兴六年至十二年", "title": "诸葛亮北伐", "kind": "战事·北伐", "text": "建兴六年至十二年五次北伐（世称六出祁山），屡以粮尽退军，建兴十二年卒于五丈原"},
+    {"id": "ev_gaopingling", "subject": "event:ev_gaopingling", "year": 249, "era": "曹魏·正始十年", "title": "高平陵之变", "kind": "政治·政变", "text": "正始十年司马懿发动政变诛曹爽，魏政归司马氏，为魏晋嬗代埋下伏笔"},
+    {"id": "ev_wei_mie_shu", "subject": "event:ev_wei_mie_shu", "year": 263, "era": "曹魏·景元四年", "title": "魏灭蜀", "kind": "战事·灭国", "text": "景元四年钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降"},
+    {"id": "ev_sima_daijin", "subject": "event:ev_sima_daijin", "year": 265, "era": "曹魏·咸熙二年", "title": "司马炎代魏建晋", "kind": "朝代·禅代", "text": "咸熙二年司马炎受禅代魏，改元泰始，魏亡晋立"},
+    {"id": "ev_jin_mie_wu", "subject": "event:ev_jin_mie_wu", "year": 280, "era": "西晋·太康元年", "title": "晋灭吴", "kind": "战事·灭国", "text": "太康元年王濬楼船下益州直抵建业，孙皓出降，吴亡，三分归晋"}
   ]
 }

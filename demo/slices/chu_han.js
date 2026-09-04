@@ -649,50 +649,56 @@ window.SANDBOX_SLICES["chu_han"] = {
   {
    "id": "ev_ru_guanzhong",
    "subject": "event:ru_guanzhong",
-   "name": "刘邦入关中",
-   "start": -207,
-   "end": -207,
-   "note": "前207 刘邦破武关入咸阳，秦亡"
+   "year": -207,
+   "era": "秦末·前207",
+   "title": "刘邦入关中",
+   "kind": "战略·入关",
+   "text": "前207 刘邦破武关入咸阳，秦亡"
   },
   {
    "id": "ev_hongmen",
    "subject": "event:hongmen",
-   "name": "鸿门宴",
-   "start": -206,
-   "end": -206,
-   "note": "前206 项羽鸿门宴纵刘邦"
+   "year": -206,
+   "era": "楚汉·前206",
+   "title": "鸿门宴",
+   "kind": "政治·宴请",
+   "text": "前206 项羽鸿门宴纵刘邦"
   },
   {
    "id": "ev_huandingsanqin",
    "subject": "event:huandingsanqin",
-   "name": "还定三秦",
-   "start": -206,
-   "end": -205,
-   "note": "韩信明修栈道暗度陈仓，定三秦"
+   "year": -206,
+   "era": "楚汉·前206",
+   "title": "还定三秦",
+   "kind": "战事·奇袭",
+   "text": "韩信明修栈道暗度陈仓，定三秦"
   },
   {
    "id": "ev_pengcheng",
    "subject": "event:pengcheng",
-   "name": "彭城之战",
-   "start": -205,
-   "end": -205,
-   "note": "项羽以少破汉于彭城"
+   "year": -205,
+   "era": "楚汉·前205",
+   "title": "彭城之战",
+   "kind": "战事·会战",
+   "text": "项羽以少破汉于彭城"
   },
   {
    "id": "ev_chenggao",
    "subject": "event:chenggao",
-   "name": "成皋相持",
-   "start": -205,
-   "end": -203,
-   "note": "荥阳—成皋拉锯数年"
+   "year": -205,
+   "era": "楚汉·前205–前203",
+   "title": "成皋相持",
+   "kind": "战事·相持",
+   "text": "荥阳—成皋拉锯数年"
   },
   {
    "id": "ev_gai_xia",
    "subject": "event:gai_xia",
-   "name": "垓下之围",
-   "start": -202,
-   "end": -202,
-   "note": "韩信合围，四面楚歌，项羽败亡"
+   "year": -202,
+   "era": "楚汉·前202",
+   "title": "垓下之围",
+   "kind": "战事·决战",
+   "text": "韩信合围，四面楚歌，项羽败亡"
   }
  ],
  "edges": [
