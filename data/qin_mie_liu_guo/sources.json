@@ -3,13 +3,13 @@
     {
       "id": "shiji_qin",
       "title": "史记·秦始皇本纪",
-      "party": "秦方",
-      "stance_label": "私家编纂",
+      "party": "后世官修",
+      "stance_label": "官修史书（西汉）",
       "distance_label": "距事约100年",
-      "color": "#A0473A",
+      "color": "#6C7A89",
       "compiler": "司马迁",
       "period": "西汉",
-      "note": "二手综述，秦纪为主要依据"
+      "note": "西汉官修史书，距秦灭国约百年；以秦纪为主要依据，非秦方当代记录"
     }
   ]
 }
