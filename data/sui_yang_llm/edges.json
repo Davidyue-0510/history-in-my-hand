@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "ningling",
+   "to": "suiyang",
+   "type": "military",
+   "label": "张巡引兵入城",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  }
+ ]
+}

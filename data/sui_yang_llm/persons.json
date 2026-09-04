@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "SUI__p01",
+   "name": "张巡",
+   "role": "睢阳守将",
+   "note": "宁陵引兵入城，与许远合兵守睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p02",
+   "name": "许远",
+   "role": "睢阳太守",
+   "note": "告急于张巡，共守睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p03",
+   "name": "尹子奇",
+   "role": "安庆绪部将",
+   "note": "率兵围睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p04",
+   "name": "南霁云",
+   "role": "张巡部将",
+   "note": "突围乞师于贺兰进明",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p05",
+   "name": "贺兰进明",
+   "role": "唐将",
+   "note": "拥兵不救睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUI__p06",
+   "name": "安庆绪",
+   "role": "叛军首领",
+   "note": "遣尹子奇围睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  }
+ ]
+}

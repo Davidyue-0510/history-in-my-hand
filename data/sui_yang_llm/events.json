@@ -1,0 +1,82 @@
+{
+ "events": [
+  {
+   "id": "ev_sui_yang_llm_01",
+   "subject": "event:ev_sui_yang_llm_01",
+   "year": 757,
+   "era": "至德二载",
+   "title": "睢阳被围",
+   "kind": "战事",
+   "text": "尹子奇率兵围睢阳",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_yang_llm_02",
+   "subject": "event:ev_sui_yang_llm_02",
+   "year": 757,
+   "era": "至德二载",
+   "title": "张巡入城合兵",
+   "kind": "战事",
+   "text": "张巡自宁陵入睢阳与许远合兵",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_yang_llm_03",
+   "subject": "event:ev_sui_yang_llm_03",
+   "year": 757,
+   "era": "至德二载",
+   "title": "睢阳城陷",
+   "kind": "战事",
+   "text": "十月城陷，张巡许远被执",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_yang_llm_04",
+   "subject": "event:ev_sui_yang_llm_04",
+   "year": 757,
+   "era": "至德二载",
+   "title": "粮尽杀妾飨士",
+   "kind": "战事",
+   "text": "城中食尽，巡杀爱妾烹以飨士",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_yang_llm_05",
+   "subject": "event:ev_sui_yang_llm_05",
+   "year": 757,
+   "era": "至德二载",
+   "title": "南霁云乞师断指",
+   "kind": "战事",
+   "text": "霁云突围乞师于贺兰进明，进明拥兵不救，霁云断指明志",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_yang_llm_06",
+   "subject": "event:ev_sui_yang_llm_06",
+   "year": 757,
+   "era": "至德二载后",
+   "title": "唐追赠巡远",
+   "kind": "封赠",
+   "text": "唐赠张巡扬州大都督、许远荆州大都督",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（睢阳之战）",
+   "_source_party": "宋·官修",
+   "_source_credibility": null
+  }
+ ]
+}

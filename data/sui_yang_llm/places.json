@@ -1,0 +1,71 @@
+{
+  "places": [
+    {
+      "id": "suiyang",
+      "name": "睢阳",
+      "type": "city",
+      "modern": "今河南省商丘市",
+      "note": "唐睢阳郡治",
+      "_source_idx": 0,
+      "_source_name": "资治通鉴·唐纪（睢阳之战）",
+      "_source_party": "宋·官修",
+      "_source_credibility": null,
+      "lon": 115.65,
+      "lat": 34.41
+    },
+    {
+      "id": "ningling",
+      "name": "宁陵",
+      "type": "city",
+      "modern": "今河南省宁陵县",
+      "note": "张巡引兵出发地",
+      "_source_idx": 0,
+      "_source_name": "资治通鉴·唐纪（睢阳之战）",
+      "_source_party": "宋·官修",
+      "_source_credibility": null,
+      "lon": 115.3,
+      "lat": 34.45
+    },
+    {
+      "id": "yongqiu",
+      "name": "雍丘",
+      "type": "city",
+      "modern": "今河南省杞县",
+      "note": "张巡旧守",
+      "lon": 114.78,
+      "lat": 34.55,
+      "_source_idx": 0,
+      "_source_name": "资治通鉴·唐纪（睢阳之战）",
+      "_source_party": "宋·官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "linhuai",
+      "name": "临淮",
+      "type": "city",
+      "modern": "今安徽省泗县一带（贺兰进明镇临淮）",
+      "note": "贺兰进明屯兵不救处",
+      "lon": 118.18,
+      "lat": 33.0,
+      "_source_idx": 0,
+      "_source_name": "资治通鉴·唐纪（睢阳之战）",
+      "_source_party": "宋·官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "ye",
+      "name": "邺",
+      "type": "city",
+      "modern": "今河北省临漳县（安庆绪据此称帝）",
+      "note": "燕都",
+      "lon": 114.62,
+      "lat": 36.35,
+      "_source_idx": 0,
+      "_source_name": "资治通鉴·唐纪（睢阳之战）",
+      "_source_party": "宋·官修",
+      "_source_credibility": null
+    }
+  ],
+  "rivers": [],
+  "wall": []
+}

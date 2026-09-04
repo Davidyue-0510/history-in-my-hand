@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "zztj_suiyang",
+   "title": "资治通鉴·唐纪（睢阳之战）",
+   "party": "宋·官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "司马光（宋）",
+   "period": "宋",
+   "note": "重建语料：本 spec 之 source_text 据《资治通鉴》至德二载、《新唐书·张巡传》叙事重建，非逐字底本；抽取断言一律 paraphrase_unverified。"
+  }
+ ]
+}

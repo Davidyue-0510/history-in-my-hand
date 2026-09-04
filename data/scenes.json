@@ -334,7 +334,8 @@
   "changping_llm",
   "qin_mie_liu_guo_llm",
   "chuhai_llm",
-  "sui_mie_chen_llm"
+  "sui_mie_chen_llm",
+  "sui_yang_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -12084,6 +12085,96 @@
      "note": "地理+制度→自廣陵／采石多點渡江，避實擊虛，建康速陷，南北復归一統"
     }
    }
+  },
+  "sui_yang_llm": {
+   "kind": "battle",
+   "region": "tang",
+   "title": "唐·睢阳之战",
+   "dossier_label": "sui_yang_llm",
+   "subtitle": "唐至德二载（757）张巡许远守睢阳",
+   "primary_place": "suiyang",
+   "dossier_event": "event:ev_sui_yang_llm_01",
+   "vocab_pack": "sui_yang_llm",
+   "terrain_grid": "china_coarse",
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "安史之乱中期，张巡许远以数千疲卒守睢阳，屏障江淮财赋之区，牵制燕军南下。城陷前粮尽，杀妾飨士、食老弱三万口，为唐代最惨烈之城守。",
+   "parties_note": "唐方（张巡/许远/南霁云）守城 vs 燕方（安庆绪/尹子奇）围城；立场分桶见 vocab。贺兰进明拥兵不救为第三方失援。",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐廷号令能否贯注孤城，与燕方内部分裂对照"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "孤城粮尽、食人维军，后勤崩溃即城破"
+    },
+    "population_mobilization": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      6
+     ],
+     "layer": "inference",
+     "note": "城中老弱三万口被食，社会代价极端"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "睢阳锁江淮，失则赋税重镇不保"
+    }
+   },
+   "subject_names": [
+    "张巡",
+    "许远",
+    "南霁云",
+    "尹子奇",
+    "安庆绪",
+    "贺兰进明",
+    "睢阳",
+    "宁陵",
+    "雍丘",
+    "临淮",
+    "邺"
+   ],
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
   }
  },
  "dimensions": {

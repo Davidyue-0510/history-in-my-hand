@@ -1,0 +1,32 @@
+{
+  "control": [
+    {
+      "place_id": "suiyang",
+      "party": "唐方",
+      "start": 757,
+      "end": 757,
+      "basis": "historical: 资治通鉴 至德二载 张巡许远合兵守睢阳"
+    },
+    {
+      "place_id": "ningling",
+      "party": "唐方",
+      "start": 757,
+      "end": 757,
+      "basis": "historical: 张巡自宁陵引兵入睢阳"
+    },
+    {
+      "place_id": "yongqiu",
+      "party": "唐方",
+      "start": 757,
+      "end": 757,
+      "basis": "historical: 雍丘为张巡旧守"
+    },
+    {
+      "place_id": "suiyang",
+      "party": "燕方",
+      "start": 757,
+      "end": 758,
+      "basis": "historical: 尹子奇破城取睢阳，乾元初唐复取"
+    }
+  ]
+}

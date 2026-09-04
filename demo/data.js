@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 147 个切片
+// 权威数据源：data/scenes.json 注册的 148 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 147 个切片",
+  "slice": "multi-scene · 148 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -21,6 +21,7 @@ window.SANDBOX_DATA = {
    "san_guo",
    "song",
    "sui_mie_chen_llm",
+   "sui_yang_llm",
    "tang",
    "three_campaigns"
   ]
@@ -407,7 +408,8 @@ window.SANDBOX_DATA = {
   "changping_llm",
   "qin_mie_liu_guo_llm",
   "chuhai_llm",
-  "sui_mie_chen_llm"
+  "sui_mie_chen_llm",
+  "sui_yang_llm"
  ],
  "vocab": {
   "layers": [
@@ -23334,6 +23336,41 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "sui_yang_llm": {
+   "key": "sui_yang_llm",
+   "scene_id": "sui_yang_llm",
+   "title": "唐·睢阳之战",
+   "dossier_label": "sui_yang_llm",
+   "subtitle": "唐至德二载（757）张巡许远守睢阳",
+   "kind": "battle",
+   "region": "tang",
+   "page": "sui_yang_llm.html",
+   "primary_place": "suiyang",
+   "vocab_pack": "sui_yang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 15,
+    "conflict": 1,
+    "gap": 0,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -23483,7 +23520,8 @@ window.SANDBOX_DATA = {
   "changping_llm": "slices/changping_llm.js",
   "qin_mie_liu_guo_llm": "slices/qin_mie_liu_guo_llm.js",
   "chuhai_llm": "slices/chuhai_llm.js",
-  "sui_mie_chen_llm": "slices/sui_mie_chen_llm.js"
+  "sui_mie_chen_llm": "slices/sui_mie_chen_llm.js",
+  "sui_yang_llm": "slices/sui_yang_llm.js"
  },
  "corridors": [
   {

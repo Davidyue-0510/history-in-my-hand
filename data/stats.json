@@ -1,9 +1,9 @@
 {
-  "scenes_total": 147,
-  "historical": 138,
+  "scenes_total": 148,
+  "historical": 139,
   "fictional": 9,
-  "assertions_total": 2263,
-  "sources_total": 108,
+  "assertions_total": 2278,
+  "sources_total": 109,
   "factions_total": 9,
   "vocab_packs": [
     "changping_llm",
@@ -17,6 +17,7 @@
     "san_guo",
     "song",
     "sui_mie_chen_llm",
+    "sui_yang_llm",
     "tang",
     "three_campaigns"
   ],
@@ -1105,6 +1106,13 @@
       "kind": "battle",
       "assertions": 20,
       "factions": {}
+    },
+    {
+      "id": "sui_yang_llm",
+      "title": "唐·睢阳之战",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1254,6 +1262,7 @@
     "changping_llm": "长平之战（LLM 抽取·人工校订）",
     "qin_mie_liu_guo_llm": "秦灭六国（LLM 抽取·人工校订）",
     "chuhai_llm": "楚漢之爭·垓下之戰",
-    "sui_mie_chen_llm": "隋滅陳·金陵之變"
+    "sui_mie_chen_llm": "隋滅陳·金陵之變",
+    "sui_yang_llm": "唐·睢阳之战"
   }
 }
