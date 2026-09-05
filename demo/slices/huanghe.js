@@ -75,6 +75,7 @@ window.SANDBOX_SLICES["huanghe"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=huanghe",
   "key": "huanghe",
   "scene_id": "huanghe",

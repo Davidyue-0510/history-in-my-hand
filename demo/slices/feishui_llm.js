@@ -95,6 +95,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "feishui_llm.html",
   "key": "feishui_llm",
   "scene_id": "feishui_llm"

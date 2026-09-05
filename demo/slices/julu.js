@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["julu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "julu.html",
   "key": "julu",
   "scene_id": "julu",

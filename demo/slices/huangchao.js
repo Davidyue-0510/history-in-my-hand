@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["huangchao"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=huangchao",
   "key": "huangchao",
   "scene_id": "huangchao",

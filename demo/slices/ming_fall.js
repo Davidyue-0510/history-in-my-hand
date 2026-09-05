@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["ming_fall"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=ming_fall",
   "key": "ming_fall",
   "scene_id": "ming_fall",

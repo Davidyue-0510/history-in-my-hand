@@ -75,6 +75,7 @@ window.SANDBOX_SLICES["great_wall"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=great_wall",
   "key": "great_wall",
   "scene_id": "great_wall",

@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=lizicheng",
   "key": "lizicheng",
   "scene_id": "lizicheng",

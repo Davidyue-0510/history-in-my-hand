@@ -100,6 +100,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo_llm"] = {
     "note": "地形/关隘/外交→战略重心（自西向东次第吞并，前221 一统）"
    }
   },
+  "province": "shaanxi",
   "page": "qin_mie_liu_guo_llm.html",
   "key": "qin_mie_liu_guo_llm",
   "scene_id": "qin_mie_liu_guo_llm"

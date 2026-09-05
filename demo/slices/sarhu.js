@@ -69,6 +69,7 @@ window.SANDBOX_SLICES["sarhu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "sarhu.html",
   "key": "sarhu",
   "scene_id": "sarhu",

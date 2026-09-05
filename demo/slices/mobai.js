@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["mobai"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "mobai.html",
   "key": "mobai",
   "scene_id": "mobai",

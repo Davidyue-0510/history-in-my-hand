@@ -4,6 +4,9 @@ import json, os, collections, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = lambda *p: os.path.join(ROOT, *p)
+sys.path.insert(0, os.path.join(ROOT, 'tools', 'ingestion'))
+from province_map import (is_legal_province, provinces_touched,
+                          PROVINCE_CODES, PROVINCE_NAMES, SENTINELS)
 
 def jload(p):
     try:
@@ -177,3 +180,43 @@ for ek,n in sorted(real_ep,key=lambda x:-x[1]): print(f'   {ek[:24]:<26} 叶子�
 print()
 print(f'空壳/近乎空壳时代 (< 8)      : {len(stub_ep)}')
 for ek,n in sorted(stub_ep,key=lambda x:x[1]): print(f'   {ek[:24]:<26} 叶子值 {n}')
+
+print()
+print('='*74)
+print('SECTION 8 · 全地域覆盖（province 字段，v0.109 拆分自 region）')
+print('='*74)
+# province 已从 region 的「地理+主题桶」混用里拆出；此处度量中国 34 省级覆盖。
+recs_pv = []
+for sid, sm in scenes.items():
+    pv = sm.get('province', '__ABSENT__')
+    recs_pv.append((sid, pv))
+illegal_pv = [(sid, pv) for sid, pv in recs_pv
+              if pv != '__ABSENT__' and not is_legal_province(pv)]
+if illegal_pv:
+    print(f'⚠️  {len(illegal_pv)} 个场景 province 非法（须回刷/修正）:')
+    for sid, pv in illegal_pv[:20]:
+        print(f'   {sid[:28]:<30} {pv!r}')
+else:
+    print(f'✅ province 字段全部合法（{len(recs_pv)} 场景）')
+
+touched = provinces_touched(pv for _, pv in recs_pv)
+per = {}
+for _, pv in recs_pv:
+    if isinstance(pv, str) and pv in PROVINCE_CODES:
+        per[pv] = per.get(pv, 0) + 1
+    elif isinstance(pv, list):
+        for x in pv:
+            if x in PROVINCE_CODES:
+                per[x] = per.get(x, 0) + 1
+n_fiction = sum(1 for _, pv in recs_pv if pv == 'fiction')
+n_overseas = sum(1 for _, pv in recs_pv if pv == 'overseas')
+n_theme = sum(1 for _, pv in recs_pv if pv is None)
+print()
+print(f'中国 34 省级行政区覆盖: {len(touched)}/{len(PROVINCE_CODES)}'
+      f' ({len(touched)*100.0/len(PROVINCE_CODES):.1f}%)')
+print(f'  已覆盖: ' + ('、'.join(f'{PROVINCE_NAMES[c]}({per.get(c,0)})'
+      for c in sorted(touched)) or '（无）'))
+print(f'  未覆盖 {len(PROVINCE_CODES)-len(touched)} 省: '
+      + '、'.join(PROVINCE_NAMES[c] for c in PROVINCE_CODES if c not in touched))
+print(f'  非省份取值: 主题/朝代桶(null)={n_theme} · fiction={n_fiction} · overseas={n_overseas}')
+

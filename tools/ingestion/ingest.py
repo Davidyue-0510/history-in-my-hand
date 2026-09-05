@@ -61,6 +61,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 sys.path.insert(0, os.path.join(ROOT, "tools", "ingestion"))  # 同目录模块 geocode/alias_resolver 总能解析
 import reign_era as R
+from province_map import derive_province  # v0.109：注册时自动派生 province（地理省份，拆自 region）
 
 
 def _load_dotenv():
@@ -1013,6 +1014,7 @@ def _register_scene(spec, scene_dir):
         reg["scenes"][spec["id"]] = {
             "kind": spec.get("kind", "county"),
             "region": spec.get("region", "liaodong"),
+            "province": spec.get("province") or derive_province(spec.get("region", "liaodong")),
             "title": spec.get("title", spec["id"]),
             "dossier_label": spec.get("dossier_label", spec["id"]),
             "subtitle": spec.get("subtitle", ""),
@@ -1143,6 +1145,7 @@ def _emit_world(spec, world_dict, scene_dir, out_path, mode):
             "id": spec["id"],
             "title": spec.get("title", spec["id"]),
             "region": spec.get("region", "liaodong"),
+            "province": spec.get("province") or derive_province(spec.get("region", "liaodong")),
             "kind": spec.get("kind", "county"),
             "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "mode": mode,
@@ -1504,6 +1507,7 @@ def assemble_from_emit(json_path):
         "id": scene_id,
         "title": meta.get("title", scene_id),
         "region": meta.get("region", "liaodong"),
+        "province": meta.get("province") or derive_province(meta.get("region", "liaodong")),
         "kind": meta.get("kind", "county"),
         "source_text": "",
     }
@@ -1672,6 +1676,7 @@ def extend_from_emit(json_path, new_spec_path, emit_path=None):
         "id": scene_id,
         "title": meta.get("title", scene_id) + "（扩展）",
         "region": meta.get("region", "liaodong"),
+        "province": meta.get("province") or derive_province(meta.get("region", "liaodong")),
         "kind": meta.get("kind", "county"),
         "source_text": "",
         "_multi_sources": base_sources + [{

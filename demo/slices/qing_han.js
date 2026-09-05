@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["qing_han"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=qing_han",
   "key": "qing_han",
   "scene_id": "qing_han",

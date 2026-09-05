@@ -83,6 +83,7 @@ window.SANDBOX_SLICES["fushun"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=fushun",
   "key": "fushun",
   "scene_id": "fushun",

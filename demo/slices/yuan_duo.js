@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["yuan_duo"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=yuan_duo",
   "key": "yuan_duo",
   "scene_id": "yuan_duo",

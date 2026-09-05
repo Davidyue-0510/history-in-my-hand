@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=qin_unify",
   "key": "qin_unify",
   "scene_id": "qin_unify",

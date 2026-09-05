@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "heshangyuan.html",
   "key": "heshangyuan",
   "scene_id": "heshangyuan",

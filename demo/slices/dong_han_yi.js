@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=dong_han_yi",
   "key": "dong_han_yi",
   "scene_id": "dong_han_yi",

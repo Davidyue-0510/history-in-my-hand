@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["wuxu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=wuxu",
   "key": "wuxu",
   "scene_id": "wuxu",

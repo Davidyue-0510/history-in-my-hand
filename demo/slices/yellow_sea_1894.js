@@ -70,6 +70,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "overseas",
   "page": "county.html?scene=yellow_sea_1894",
   "key": "yellow_sea_1894",
   "scene_id": "yellow_sea_1894",

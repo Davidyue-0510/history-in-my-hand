@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["hulao"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "hulao.html",
   "key": "hulao",
   "scene_id": "hulao",

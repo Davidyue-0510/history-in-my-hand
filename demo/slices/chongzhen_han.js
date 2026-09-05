@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=chongzhen_han",
   "key": "chongzhen_han",
   "scene_id": "chongzhen_han",

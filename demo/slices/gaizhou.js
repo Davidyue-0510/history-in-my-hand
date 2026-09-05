@@ -78,6 +78,7 @@ window.SANDBOX_SLICES["gaizhou"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=gaizhou",
   "key": "gaizhou",
   "scene_id": "gaizhou",

@@ -16,7 +16,8 @@
   "region": "地理分区，用于 hub 分组。辽北 / 辽东 / 辽南 / 辽西 / 关外女真。",
   "vocab_pack": "该切片使用哪个语境包（data/vocab/<pack>.json）。缺省 = 顶层 default_vocab_pack。若 data/<dir>/vocab.json 存在（虚构世界），内联包优先级最高，本字段被忽略。",
   "terrain_grid": "该切片使用哪张高程网格（data/terrain/registry.json 的条目 id）。缺省 = 该注册表的 default。虚构世界与网格外切片忽略此字段。",
-  "lead / parties_note / subject_names": "过去写在 demo/<key>.js 里，现已归拢到此处，随 meta 注入前端。"
+  "lead / parties_note / subject_names": "过去写在 demo/<key>.js 里，现已归拢到此处，随 meta 注入前端。",
+  "province": "地理省份（现代中国 34 省级行政区码），从 region 的「地理+主题桶」混用里拆出，专供「全地域覆盖」度量。取值：省份码字符串 / 省份码列表 / null（主题·朝代桶不绑省份）/ \"fiction\"（虚构世界）/ \"overseas\"（外国战区·海域）。合法码见 tools/ingestion/province_map.py。"
  },
  "_vocab_note": "v0.22 起受控词表按语境分包（data/vocab/），不再是全局单例。原因：party_bucket 里的『建州·官修』『朝鲜·亲历』与 factions 里的东林/阉党只在明清辽东语境成立，做唐代切片时套用它是错的。加载一律经 tools/vocab_loader.py——那是唯一入口，直接读文件的代码视为回退。",
  "default_vocab_pack": "ming_qing",
@@ -408,7 +409,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "kaiyuan": {
    "kind": "county",
@@ -498,7 +500,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "tieling": {
    "kind": "county",
@@ -583,7 +586,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "yehe": {
    "kind": "county",
@@ -668,7 +672,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "liaoyang": {
    "kind": "county",
@@ -761,7 +766,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "shenyang": {
    "kind": "county",
@@ -854,7 +860,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "fushun": {
    "kind": "county",
@@ -940,7 +947,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "haizhou": {
    "kind": "county",
@@ -1025,7 +1033,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "gaizhou": {
    "kind": "county",
@@ -1106,7 +1115,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "fuzhou": {
    "kind": "county",
@@ -1187,7 +1197,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "jinzhouwei": {
    "kind": "county",
@@ -1269,7 +1280,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "guangning": {
    "kind": "county",
@@ -1354,7 +1366,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "jinzhou": {
    "kind": "county",
@@ -1436,7 +1449,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "ningyuan": {
    "kind": "county",
@@ -1523,7 +1537,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "novel_fandao": {
    "kind": "fiction",
@@ -1607,7 +1622,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_2": {
    "kind": "fiction",
@@ -1692,7 +1708,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_3": {
    "kind": "fiction",
@@ -1765,7 +1782,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_4": {
    "kind": "fiction",
@@ -1837,7 +1855,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_5": {
    "kind": "fiction",
@@ -1909,7 +1928,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_6": {
    "kind": "fiction",
@@ -1982,7 +2002,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_7": {
    "kind": "fiction",
@@ -2055,7 +2076,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_8": {
    "kind": "fiction",
@@ -2127,7 +2149,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "novel_fandao_9": {
    "kind": "fiction",
@@ -2199,7 +2222,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "fiction"
   },
   "song_chan_yuan": {
    "kind": "county",
@@ -2297,7 +2321,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chu_han": {
    "kind": "battle",
@@ -2380,7 +2405,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "tang_huai_xi": {
    "kind": "county",
@@ -2465,7 +2491,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "imjin": {
    "kind": "county",
@@ -2555,7 +2582,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "overseas"
   },
   "yellow_sea_1894": {
    "kind": "county",
@@ -2628,7 +2656,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "overseas"
   },
   "qin_mie_liu_guo": {
    "kind": "county",
@@ -2702,7 +2731,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "shaanxi"
   },
   "three_campaigns": {
    "kind": "county",
@@ -2777,7 +2807,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "changping": {
    "kind": "battle",
@@ -2858,7 +2889,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "guiling": {
    "kind": "battle",
@@ -2938,7 +2970,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "maling": {
    "kind": "battle",
@@ -3016,7 +3049,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chengpu": {
    "kind": "battle",
@@ -3093,7 +3127,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "boju": {
    "kind": "battle",
@@ -3170,7 +3205,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "julu": {
    "kind": "battle",
@@ -3249,7 +3285,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "gaixia": {
    "kind": "battle",
@@ -3326,7 +3363,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "mobai": {
    "kind": "battle",
@@ -3405,7 +3443,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "kunyang": {
    "kind": "battle",
@@ -3484,7 +3523,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "guandu": {
    "kind": "battle",
@@ -3564,7 +3604,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chibi": {
    "kind": "battle",
@@ -3645,7 +3686,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yiling": {
    "kind": "battle",
@@ -3724,7 +3766,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "xiaoyaojin": {
    "kind": "battle",
@@ -3803,7 +3846,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "feishui": {
    "kind": "battle",
@@ -3881,7 +3925,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "canhebei": {
    "kind": "battle",
@@ -3959,7 +4004,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhongli": {
    "kind": "battle",
@@ -4037,7 +4083,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "hulao": {
    "kind": "battle",
@@ -4114,7 +4161,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "talas": {
    "kind": "battle",
@@ -4191,7 +4239,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "suiyang": {
    "kind": "battle",
@@ -4271,7 +4320,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yancheng": {
    "kind": "battle",
@@ -4351,7 +4401,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "heshangyuan": {
    "kind": "battle",
@@ -4429,7 +4480,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "caishiji": {
    "kind": "battle",
@@ -4508,7 +4560,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "diaoyucheng": {
    "kind": "battle",
@@ -4586,7 +4639,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yaoshan": {
    "kind": "battle",
@@ -4666,7 +4720,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "poyanghu": {
    "kind": "battle",
@@ -4744,7 +4799,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "tumu": {
    "kind": "battle",
@@ -4823,7 +4879,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "beijing": {
    "kind": "battle",
@@ -4903,7 +4960,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yaksa": {
    "kind": "battle",
@@ -4982,7 +5040,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "tianjing": {
    "kind": "battle",
@@ -5061,7 +5120,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "humen": {
    "kind": "battle",
@@ -5141,7 +5201,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "huanghe": {
    "kind": "disaster",
@@ -5220,7 +5281,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "locust": {
    "kind": "disaster",
@@ -5298,7 +5360,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "huaxian": {
    "kind": "disaster",
@@ -5375,7 +5438,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "little_ice": {
    "kind": "disaster",
@@ -5451,7 +5515,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "grand_canal": {
    "kind": "engineering",
@@ -5530,7 +5595,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "dujiangyan": {
    "kind": "engineering",
@@ -5605,7 +5671,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "great_wall": {
    "kind": "engineering",
@@ -5684,7 +5751,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "qin_unify": {
    "kind": "dynasty",
@@ -5761,7 +5829,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "ming_fall": {
    "kind": "dynasty",
@@ -5838,7 +5907,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "shangyang": {
    "kind": "reform",
@@ -5914,7 +5984,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wanganshi": {
    "kind": "reform",
@@ -5989,7 +6060,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "huangjin": {
    "kind": "uprising",
@@ -6067,7 +6139,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "lizicheng": {
    "kind": "uprising",
@@ -6145,7 +6218,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "xiaowen": {
    "kind": "fusion",
@@ -6222,7 +6296,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wencheng": {
    "kind": "fusion",
@@ -6302,7 +6377,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "xuanwu": {
    "kind": "court",
@@ -6379,7 +6455,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "jingnan": {
    "kind": "court",
@@ -6456,7 +6533,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "dunzun": {
    "kind": "thought",
@@ -6532,7 +6610,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "keju": {
    "kind": "thought",
@@ -6607,7 +6686,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "four_inv": {
    "kind": "tech",
@@ -6684,7 +6764,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "bencao": {
    "kind": "tech",
@@ -6759,7 +6840,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "dong_han_yi": {
    "kind": "disaster",
@@ -6834,7 +6916,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "dingwu": {
    "kind": "disaster",
@@ -6910,7 +6993,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "song_he_jue": {
    "kind": "disaster",
@@ -6986,7 +7070,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zijincheng": {
    "kind": "engineering",
@@ -7063,7 +7148,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "lingqu": {
    "kind": "engineering",
@@ -7142,7 +7228,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhaozhou": {
    "kind": "engineering",
@@ -7217,7 +7304,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "sui_daxing": {
    "kind": "engineering",
@@ -7293,7 +7381,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wuwang": {
    "kind": "dynasty",
@@ -7369,7 +7458,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "sui_mie_chen": {
    "kind": "dynasty",
@@ -7447,7 +7537,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chenqiao": {
    "kind": "dynasty",
@@ -7524,7 +7615,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yashan": {
    "kind": "dynasty",
@@ -7603,7 +7695,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "xinhai": {
    "kind": "dynasty",
@@ -7678,7 +7771,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhangjuzheng": {
    "kind": "reform",
@@ -7754,7 +7848,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wuxu": {
    "kind": "reform",
@@ -7830,7 +7925,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wangmang": {
    "kind": "reform",
@@ -7906,7 +8002,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "liangshui": {
    "kind": "reform",
@@ -7979,7 +8076,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "jiupin": {
    "kind": "reform",
@@ -8055,7 +8153,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chensheng": {
    "kind": "uprising",
@@ -8133,7 +8232,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "huangchao": {
    "kind": "uprising",
@@ -8211,7 +8311,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "taiping": {
    "kind": "uprising",
@@ -8288,7 +8389,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "hongjin": {
    "kind": "uprising",
@@ -8365,7 +8467,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "lvlin": {
    "kind": "uprising",
@@ -8441,7 +8544,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhaowulian": {
    "kind": "fusion",
@@ -8518,7 +8622,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhaofen": {
    "kind": "fusion",
@@ -8596,7 +8701,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "qing_han": {
    "kind": "fusion",
@@ -8673,7 +8779,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yuan_duo": {
    "kind": "fusion",
@@ -8749,7 +8856,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chanyuan": {
    "kind": "fusion",
@@ -8827,7 +8935,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "beijiu": {
    "kind": "court",
@@ -8901,7 +9010,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "jiuzi": {
    "kind": "court",
@@ -8976,7 +9086,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "wugu": {
    "kind": "court",
@@ -9052,7 +9163,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "shaqiu": {
    "kind": "court",
@@ -9127,7 +9239,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "baijia": {
    "kind": "thought",
@@ -9201,7 +9314,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "fenshu": {
    "kind": "thought",
@@ -9278,7 +9392,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "fotao": {
    "kind": "thought",
@@ -9353,7 +9468,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "lixue": {
    "kind": "thought",
@@ -9429,7 +9545,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhangheng": {
    "kind": "tech",
@@ -9503,7 +9620,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zuchongzhi": {
    "kind": "tech",
@@ -9578,7 +9696,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "shenkuo": {
    "kind": "tech",
@@ -9654,7 +9773,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "jiasixie": {
    "kind": "tech",
@@ -9730,7 +9850,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhangqian": {
    "kind": "frontier",
@@ -9807,7 +9928,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "zhenghe": {
    "kind": "frontier",
@@ -9886,7 +10008,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "xuanzang": {
    "kind": "frontier",
@@ -9965,7 +10088,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "jianzhen": {
    "kind": "frontier",
@@ -10044,7 +10168,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "songjin": {
    "terrain_grid": "china_coarse",
@@ -10142,7 +10267,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "dalinghe": {
    "terrain_grid": "china_coarse",
@@ -10242,7 +10368,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "juehua": {
    "kind": "county",
@@ -10331,7 +10458,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "juehua1626": {
    "kind": "battle",
@@ -10423,7 +10551,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": "liaoning"
   },
   "bozhou": {
    "terrain_grid": "china_coarse",
@@ -10515,7 +10644,11 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": [
+    "sichuan",
+    "guizhou"
+   ]
   },
   "ningxia": {
    "terrain_grid": "china_coarse",
@@ -10609,7 +10742,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "yangzhou": {
    "terrain_grid": "china_coarse",
@@ -10696,7 +10830,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "mingmo_dangzheng": {
    "terrain_grid": "china_coarse",
@@ -10797,7 +10932,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "tang_dangzheng": {
    "kind": "court",
@@ -10869,7 +11005,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "song_dangzheng": {
    "kind": "court",
@@ -10940,7 +11077,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "donghan_danggu": {
    "kind": "court",
@@ -11011,7 +11149,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "mingmo_jihuang": {
    "kind": "disaster",
@@ -11089,7 +11228,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chongzhen_han": {
    "kind": "disaster",
@@ -11166,7 +11306,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "chongzhen_huangzai": {
    "kind": "disaster",
@@ -11243,7 +11384,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "mingmo_shuyi": {
    "kind": "disaster",
@@ -11318,7 +11460,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "kaifeng_juekou": {
    "kind": "disaster",
@@ -11394,7 +11537,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "guandu_llm": {
    "kind": "battle",
@@ -11491,7 +11635,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "feishui_llm": {
    "kind": "battle",
@@ -11589,7 +11734,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "san_guo": {
    "kind": "dynasty",
@@ -11695,7 +11841,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口"
     }
-   }
+   },
+   "province": null
   },
   "changping_llm": {
    "kind": "battle",
@@ -11786,7 +11933,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
     }
-   }
+   },
+   "province": null
   },
   "qin_mie_liu_guo_llm": {
    "kind": "battle",
@@ -11889,7 +12037,8 @@
      "layer": "inference",
      "note": "地形/关隘/外交→战略重心（自西向东次第吞并，前221 一统）"
     }
-   }
+   },
+   "province": "shaanxi"
   },
   "chuhai_llm": {
    "kind": "battle",
@@ -11989,7 +12138,8 @@
     "person:CHU__p06": "虞姬",
     "person:CHU__p07": "項伯",
     "person:CHU__p08": "樊噲"
-   }
+   },
+   "province": null
   },
   "sui_mie_chen_llm": {
    "kind": "battle",
@@ -12090,7 +12240,8 @@
      "layer": "inference",
      "note": "地理+制度→自廣陵／采石多點渡江，避實擊虛，建康速陷，南北復归一統"
     }
-   }
+   },
+   "province": null
   },
   "sui_yang_llm": {
    "kind": "battle",
@@ -12180,7 +12331,8 @@
     4,
     5,
     6
-   ]
+   ],
+   "province": null
   }
  },
  "dimensions": {

@@ -95,6 +95,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=song_chan_yuan",
   "key": "song_chan_yuan",
   "scene_id": "song_chan_yuan"

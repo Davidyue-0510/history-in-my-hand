@@ -71,6 +71,7 @@ window.SANDBOX_SLICES["zhangheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=zhangheng",
   "key": "zhangheng",
   "scene_id": "zhangheng",

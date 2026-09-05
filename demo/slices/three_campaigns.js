@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["three_campaigns"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=three_campaigns",
   "key": "three_campaigns",
   "scene_id": "three_campaigns"

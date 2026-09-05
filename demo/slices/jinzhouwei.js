@@ -79,6 +79,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=jinzhouwei",
   "key": "jinzhouwei",
   "scene_id": "jinzhouwei",

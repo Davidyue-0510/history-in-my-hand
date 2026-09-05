@@ -75,6 +75,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=mingmo_jihuang",
   "key": "mingmo_jihuang",
   "scene_id": "mingmo_jihuang",

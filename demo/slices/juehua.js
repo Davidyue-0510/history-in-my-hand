@@ -86,6 +86,7 @@ window.SANDBOX_SLICES["juehua"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=juehua",
   "key": "juehua",
   "scene_id": "juehua",

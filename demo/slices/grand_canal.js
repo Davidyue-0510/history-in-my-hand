@@ -75,6 +75,7 @@ window.SANDBOX_SLICES["grand_canal"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=grand_canal",
   "key": "grand_canal",
   "scene_id": "grand_canal",

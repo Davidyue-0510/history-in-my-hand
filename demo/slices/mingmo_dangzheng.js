@@ -98,6 +98,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=mingmo_dangzheng",
   "key": "mingmo_dangzheng",
   "scene_id": "mingmo_dangzheng",

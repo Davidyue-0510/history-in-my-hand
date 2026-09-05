@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["kunyang"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "kunyang.html",
   "key": "kunyang",
   "scene_id": "kunyang",

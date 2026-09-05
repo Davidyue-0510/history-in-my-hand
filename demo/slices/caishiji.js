@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["caishiji"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "caishiji.html",
   "key": "caishiji",
   "scene_id": "caishiji",

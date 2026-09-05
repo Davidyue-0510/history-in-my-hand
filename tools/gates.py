@@ -37,6 +37,7 @@ STEPS = [
     ("重编译 demo/data.js · build",  ["tools/ingestion/build.py"]),
     ("统计快照 stats",                ["tools/ingestion/stats.py"]),
     ("场景注册表一致性 check",         ["tools/ingestion/check_scenes.py"]),
+    ("省份覆盖契约 check（province 合法性）", ["tools/check_province_coverage.py"]),
     ("战略维度契约 check",             ["tools/check_strategic_contract.py"]),
     ("六维信息类别契约 check",          ["tools/check_dims_contract.py"]),
     ("渲染层字段契约扫描（places/edges/control）", ["tools/check_render_schema.py"]),

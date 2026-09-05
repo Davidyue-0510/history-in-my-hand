@@ -69,6 +69,7 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=song_dangzheng",
   "key": "song_dangzheng",
   "scene_id": "song_dangzheng",

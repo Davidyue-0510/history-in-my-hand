@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["lixue"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=lixue",
   "key": "lixue",
   "scene_id": "lixue",

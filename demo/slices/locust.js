@@ -75,6 +75,7 @@ window.SANDBOX_SLICES["locust"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=locust",
   "key": "locust",
   "scene_id": "locust",

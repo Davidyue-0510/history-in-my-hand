@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["talas"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "talas.html",
   "key": "talas",
   "scene_id": "talas",

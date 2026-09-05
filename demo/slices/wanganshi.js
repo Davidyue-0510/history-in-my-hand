@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["wanganshi"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=wanganshi",
   "key": "wanganshi",
   "scene_id": "wanganshi",

@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["yashan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=yashan",
   "key": "yashan",
   "scene_id": "yashan",

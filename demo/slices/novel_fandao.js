@@ -80,6 +80,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "fiction",
   "page": "county.html?scene=novel_fandao",
   "key": "novel_fandao",
   "scene_id": "novel_fandao",

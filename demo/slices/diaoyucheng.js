@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "diaoyucheng.html",
   "key": "diaoyucheng",
   "scene_id": "diaoyucheng",

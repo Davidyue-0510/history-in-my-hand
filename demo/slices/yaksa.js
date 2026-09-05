@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["yaksa"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "yaksa.html",
   "key": "yaksa",
   "scene_id": "yaksa",

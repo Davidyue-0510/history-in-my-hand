@@ -76,6 +76,7 @@ window.SANDBOX_SLICES["wencheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=wencheng",
   "key": "wencheng",
   "scene_id": "wencheng",

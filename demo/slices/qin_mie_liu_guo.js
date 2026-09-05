@@ -71,6 +71,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "shaanxi",
   "page": "county.html?scene=qin_mie_liu_guo",
   "key": "qin_mie_liu_guo",
   "scene_id": "qin_mie_liu_guo"

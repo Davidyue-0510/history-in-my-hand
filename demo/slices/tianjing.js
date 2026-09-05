@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["tianjing"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "tianjing.html",
   "key": "tianjing",
   "scene_id": "tianjing",

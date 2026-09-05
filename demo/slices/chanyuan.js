@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["chanyuan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=chanyuan",
   "key": "chanyuan",
   "scene_id": "chanyuan",

@@ -74,6 +74,7 @@ window.SANDBOX_SLICES["four_inv"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=four_inv",
   "key": "four_inv",
   "scene_id": "four_inv",

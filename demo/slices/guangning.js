@@ -82,6 +82,7 @@ window.SANDBOX_SLICES["guangning"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=guangning",
   "key": "guangning",
   "scene_id": "guangning",

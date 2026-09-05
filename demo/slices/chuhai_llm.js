@@ -97,6 +97,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "person:CHU__p07": "項伯",
    "person:CHU__p08": "樊噲"
   },
+  "province": null,
   "page": "chuhai_llm.html",
   "key": "chuhai_llm",
   "scene_id": "chuhai_llm"

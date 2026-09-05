@@ -95,6 +95,7 @@ window.SANDBOX_SLICES["songjin"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=songjin",
   "key": "songjin",
   "scene_id": "songjin",

@@ -82,6 +82,7 @@ window.SANDBOX_SLICES["yehe"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=yehe",
   "key": "yehe",
   "scene_id": "yehe",

@@ -71,6 +71,7 @@ window.SANDBOX_SLICES["beijiu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=beijiu",
   "key": "beijiu",
   "scene_id": "beijiu",

@@ -84,6 +84,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=ningyuan",
   "key": "ningyuan",
   "scene_id": "ningyuan",

@@ -72,6 +72,7 @@ window.SANDBOX_SLICES["boju"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "boju.html",
   "key": "boju",
   "scene_id": "boju",

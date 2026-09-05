@@ -73,6 +73,7 @@ window.SANDBOX_SLICES["huangjin"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=huangjin",
   "key": "huangjin",
   "scene_id": "huangjin",

@@ -103,6 +103,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=san_guo",
   "key": "san_guo",
   "scene_id": "san_guo"

@@ -80,6 +80,7 @@ window.SANDBOX_SLICES["chu_han"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "chu_han.html",
   "key": "chu_han",
   "scene_id": "chu_han"

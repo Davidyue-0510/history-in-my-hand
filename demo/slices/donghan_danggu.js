@@ -69,6 +69,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "county.html?scene=donghan_danggu",
   "key": "donghan_danggu",
   "scene_id": "donghan_danggu",

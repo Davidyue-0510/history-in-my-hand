@@ -76,6 +76,7 @@ window.SANDBOX_SLICES["changping"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "changping.html",
   "key": "changping",
   "scene_id": "changping",

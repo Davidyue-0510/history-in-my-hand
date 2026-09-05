@@ -90,6 +90,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "liaoning",
   "page": "county.html?scene=shenyang",
   "key": "shenyang",
   "scene_id": "shenyang",

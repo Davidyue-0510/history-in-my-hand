@@ -76,6 +76,7 @@ window.SANDBOX_SLICES["chibi"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": null,
   "page": "chibi.html",
   "key": "chibi",
   "scene_id": "chibi",

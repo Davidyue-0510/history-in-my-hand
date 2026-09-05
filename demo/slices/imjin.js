@@ -87,6 +87,7 @@ window.SANDBOX_SLICES["imjin"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
+  "province": "overseas",
   "page": "county.html?scene=imjin",
   "key": "imjin",
   "scene_id": "imjin",
