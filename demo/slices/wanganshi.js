@@ -18,7 +18,9 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "person:simaguang": "司马光"
   },
   "dims": [
+   2,
    3,
+   4,
    5,
    6
   ],
@@ -482,6 +484,56 @@ window.SANDBOX_SLICES["wanganshi"] = {
    "dims": [
     3,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WANGANSHI_THK1",
+   "subject": "event:wa_1069",
+   "predicate": "财政改革",
+   "value_text": "青苗法（官贷农粮）、募役法（出钱代役）、农田水利法",
+   "time": {
+    "start": 1069,
+    "end": 1069,
+    "era_text": "熙宁二年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "青苗募役",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "财政军事改革",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WANGANSHI_THK2",
+   "subject": "event:wa_1069",
+   "predicate": "阶层冲突",
+   "value_text": "“民不加赋而国用足”的理想 vs 豪强阻挠、新旧党争",
+   "time": {
+    "start": 1069,
+    "end": 1069,
+    "era_text": "熙宁二年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "民不加赋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "阶层冲突",
+   "dims": [
+    4
    ],
    "dim_source": "declared",
    "_party": "综合史料",

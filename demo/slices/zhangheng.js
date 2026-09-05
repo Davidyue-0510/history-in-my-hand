@@ -19,6 +19,9 @@ window.SANDBOX_SLICES["zhangheng"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "han",
@@ -408,6 +411,81 @@ window.SANDBOX_SLICES["zhangheng"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGHENG_THK1",
+   "subject": "event:zh_132",
+   "predicate": "官制观测",
+   "value_text": "太史令职掌天文历法；“灵台”国家观测台建制",
+   "time": {
+    "start": 132,
+    "end": 132,
+    "era_text": "阳嘉元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "灵台",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "官制观测",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGHENG_THK2",
+   "subject": "event:zh_132",
+   "predicate": "知识社会",
+   "value_text": "服务于农政（地震预警）、历法民生；知识贵族化",
+   "time": {
+    "start": 132,
+    "end": 132,
+    "era_text": "阳嘉元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "农政",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "知识社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGHENG_THK3",
+   "subject": "event:zh_132",
+   "predicate": "宇宙观",
+   "value_text": "“究天人之际”的浑天说宇宙观，反谶纬的求实精神",
+   "time": {
+    "start": 132,
+    "end": 132,
+    "era_text": "阳嘉元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "浑天说",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "宇宙观",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["dujiangyan"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "sui_yuan",
@@ -481,6 +484,81 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DUJIANGYAN_THK1",
+   "subject": "event:dj_256",
+   "predicate": "水利工程",
+   "value_text": "李冰“深淘滩，低作堰”，分水鱼嘴+飞沙堰+宝瓶口三体工程",
+   "time": {
+    "start": -256,
+    "end": -256,
+    "era_text": "秦昭襄王后期"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "深淘滩低作堰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "水利工程",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DUJIANGYAN_THK2",
+   "subject": "event:dj_256",
+   "predicate": "农业社会",
+   "value_text": "成都平原“水旱从人，不知饥馑”，沃野千里为“天府”",
+   "time": {
+    "start": -256,
+    "end": -256,
+    "era_text": "秦昭襄王后期"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "水旱从人",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "农业社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DUJIANGYAN_THK3",
+   "subject": "event:dj_256",
+   "predicate": "工程思想",
+   "value_text": "“乘势利导，因时制宜”的无坝引水生态智慧，沿用两千年",
+   "time": {
+    "start": -256,
+    "end": -256,
+    "era_text": "秦昭襄王后期"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "乘势利导",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "工程思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

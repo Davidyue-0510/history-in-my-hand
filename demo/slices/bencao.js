@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["bencao"] = {
    "person:lishizhen": "李时珍"
   },
   "dims": [
+   1,
    2,
+   3,
+   4,
    5,
    6
   ],
@@ -364,6 +367,81 @@ window.SANDBOX_SLICES["bencao"] = {
    "dims": [
     5,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BENCAO_THK1",
+   "subject": "event:bc_1281",
+   "predicate": "药物地理",
+   "value_text": "历 27 年“遍尝百草”，足迹湖广、江西；“纲举目张”分类（16部60类）",
+   "time": {
+    "start": 1281,
+    "end": 1281,
+    "era_text": "元至元十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "纲举目张",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "药物地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BENCAO_THK2",
+   "subject": "event:bc_1281",
+   "predicate": "学术传承",
+   "value_text": "私家修纂（非官修），“稿凡三易”；承《证类本草》体系",
+   "time": {
+    "start": 1281,
+    "end": 1281,
+    "era_text": "元至元十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "稿凡三易",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "学术传承",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BENCAO_THK3",
+   "subject": "event:bc_1281",
+   "predicate": "知识下移",
+   "value_text": "面向社会用药实用；“本草”由贵族方技转向民生日用",
+   "time": {
+    "start": 1281,
+    "end": 1281,
+    "era_text": "元至元十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "民生日用",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "知识下移",
+   "dims": [
+    4
    ],
    "dim_source": "declared",
    "_party": "综合史料",

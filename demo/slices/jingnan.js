@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["jingnan"] = {
   },
   "dims": [
    2,
+   3,
+   4,
    5,
    6
   ],
@@ -629,6 +631,56 @@ window.SANDBOX_SLICES["jingnan"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JINGNAN_THK1",
+   "subject": "event:jn_1399",
+   "predicate": "宗法危机",
+   "value_text": "建文“削藩”引发；朱棣“清君侧”以藩抗中央，违背嫡长",
+   "time": {
+    "start": 1399,
+    "end": 1399,
+    "era_text": "建文元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "削藩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "宗法危机",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JINGNAN_THK2",
+   "subject": "event:jn_1399",
+   "predicate": "军力对比",
+   "value_text": "北军（燕）善骑射 vs 南军（中央）数量优而指挥乱象",
+   "time": {
+    "start": 1399,
+    "end": 1399,
+    "era_text": "建文元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "北军南军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军力对比",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

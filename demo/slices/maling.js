@@ -21,6 +21,9 @@ window.SANDBOX_SLICES["maling"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -530,6 +533,81 @@ window.SANDBOX_SLICES["maling"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MALING_THK1",
+   "subject": "event:ml_wei",
+   "predicate": "运动调动",
+   "value_text": "魏以太子申、庞涓将主力攻韩；“围魏救赵”后再“围魏救韩”，调动敌军",
+   "time": {
+    "start": -341,
+    "end": -341,
+    "era_text": "周显王二十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "围魏救韩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "运动战调动",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MALING_THK2",
+   "subject": "event:ml_wei",
+   "predicate": "三晋内耗",
+   "value_text": "齐威王遣田忌、孙膑救韩；三晋（魏赵韩）内耗，诸侯离心",
+   "time": {
+    "start": -341,
+    "end": -341,
+    "era_text": "周显王二十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "三晋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "三晋格局",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MALING_THK3",
+   "subject": "event:ml_wei",
+   "predicate": "兵学范例",
+   "value_text": "“避实击虚”“攻其无备”，桂陵、马陵连续示弱设伏的兵学范例",
+   "time": {
+    "start": -341,
+    "end": -341,
+    "era_text": "周显王二十八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "避实击虚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "兵学",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

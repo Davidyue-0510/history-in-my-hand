@@ -257,14 +257,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "bencao",
    "name": "bencao",
-   "total": 9,
+   "total": 12,
    "layers": {
-    "scholarship": 2,
-    "record": 6,
+    "scholarship": 3,
+    "record": 8,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 9
+    "综合史料": 12
    },
    "faction_counts": {},
    "event_count": 2,
@@ -571,15 +571,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "diaoyucheng",
    "name": "diaoyucheng",
-   "total": 15,
+   "total": 18,
    "layers": {
-    "scholarship": 3,
-    "record": 6,
+    "scholarship": 4,
+    "record": 8,
     "inference": 4,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 18
    },
    "faction_counts": {},
    "event_count": 3,
@@ -651,15 +651,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "dujiangyan",
    "name": "dujiangyan",
-   "total": 13,
+   "total": 16,
    "layers": {
-    "scholarship": 3,
-    "record": 7,
+    "scholarship": 4,
+    "record": 9,
     "inference": 2,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 13
+    "综合史料": 16
    },
    "faction_counts": {},
    "event_count": 3,
@@ -687,15 +687,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "feishui",
    "name": "feishui",
-   "total": 13,
+   "total": 16,
    "layers": {
     "scholarship": 3,
-    "record": 7,
+    "record": 10,
     "inference": 1,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 13
+    "综合史料": 16
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1351,14 +1351,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "jingnan",
    "name": "jingnan",
-   "total": 15,
+   "total": 17,
    "layers": {
-    "scholarship": 2,
-    "record": 12,
+    "scholarship": 3,
+    "record": 13,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 17
    },
    "faction_counts": {},
    "event_count": 8,
@@ -1550,15 +1550,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "keju",
    "name": "keju",
-   "total": 14,
+   "total": 17,
    "layers": {
     "scholarship": 3,
-    "record": 7,
+    "record": 10,
     "inference": 2,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 14
+    "综合史料": 17
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1725,15 +1725,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "lvlin",
    "name": "lvlin",
-   "total": 18,
+   "total": 21,
    "layers": {
-    "scholarship": 2,
-    "record": 9,
+    "scholarship": 3,
+    "record": 11,
     "inference": 3,
     "gap": 4
    },
    "party_counts": {
-    "综合史料": 16,
+    "综合史料": 19,
     "绿林军": 1,
     "新莽军": 1
    },
@@ -1749,14 +1749,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "maling",
    "name": "maling",
-   "total": 15,
+   "total": 18,
    "layers": {
-    "scholarship": 3,
-    "record": 11,
+    "scholarship": 4,
+    "record": 13,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 18
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1976,12 +1976,13 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "qin_unify",
    "name": "qin_unify",
-   "total": 6,
+   "total": 9,
    "layers": {
-    "scholarship": 6
+    "scholarship": 6,
+    "record": 3
    },
    "party_counts": {
-    "综合史料": 6
+    "综合史料": 9
    },
    "faction_counts": {},
    "event_count": 6,
@@ -2226,15 +2227,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "songjin",
    "name": "songjin",
-   "total": 15,
+   "total": 18,
    "layers": {
-    "record": 12,
+    "record": 15,
     "inference": 1,
     "scholarship": 1,
     "gap": 1
    },
    "party_counts": {
-    "清方": 5,
+    "清方": 8,
     "综述考订": 10
    },
    "faction_counts": {},
@@ -2340,15 +2341,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "taiping",
    "name": "taiping",
-   "total": 12,
+   "total": 15,
    "layers": {
-    "scholarship": 3,
-    "record": 7,
+    "scholarship": 4,
+    "record": 9,
     "inference": 1,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 12
+    "综合史料": 15
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2359,15 +2360,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "talas",
    "name": "talas",
-   "total": 14,
+   "total": 17,
    "layers": {
-    "scholarship": 3,
-    "record": 7,
+    "scholarship": 4,
+    "record": 9,
     "inference": 2,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 14
+    "综合史料": 17
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2499,15 +2500,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "wanganshi",
    "name": "wanganshi",
-   "total": 13,
+   "total": 15,
    "layers": {
     "scholarship": 3,
-    "record": 7,
+    "record": 9,
     "gap": 2,
     "inference": 1
    },
    "party_counts": {
-    "综合史料": 11,
+    "综合史料": 13,
     "旧党文献": 1,
     "新党文献": 1
    },
@@ -2940,14 +2941,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "zhangheng",
    "name": "zhangheng",
-   "total": 11,
+   "total": 14,
    "layers": {
-    "scholarship": 2,
-    "record": 8,
+    "scholarship": 4,
+    "record": 9,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 14
    },
    "faction_counts": {},
    "event_count": 2,

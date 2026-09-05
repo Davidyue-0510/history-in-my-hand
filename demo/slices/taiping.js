@@ -19,6 +19,8 @@ window.SANDBOX_SLICES["taiping"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    4,
    5,
    6
@@ -439,6 +441,81 @@ window.SANDBOX_SLICES["taiping"] = {
     4,
     5,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TAIPING_THK1",
+   "subject": "event:tp_1851",
+   "predicate": "军事组织",
+   "value_text": "太平军“圣库制”均贫富；湘军（曾国藩）以团练对抗",
+   "time": {
+    "start": 1851,
+    "end": 1851,
+    "era_text": "咸丰元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "圣库制",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "军事组织",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TAIPING_THK2",
+   "subject": "event:tp_1851",
+   "predicate": "乌托邦制度",
+   "value_text": "《天朝田亩制度》“有田同耕”；拜上帝会政教合一建制",
+   "time": {
+    "start": 1851,
+    "end": 1851,
+    "era_text": "咸丰元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天朝田亩",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "乌托邦制度",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TAIPING_THK3",
+   "subject": "event:tp_1851",
+   "predicate": "宗教思想",
+   "value_text": "“天下一家，共享太平”的平等教义 vs 基督义中国化",
+   "time": {
+    "start": 1851,
+    "end": 1851,
+    "era_text": "咸丰元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天下一家",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "宗教思想",
+   "dims": [
+    5
    ],
    "dim_source": "declared",
    "_party": "综合史料",

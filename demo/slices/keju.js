@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["keju"] = {
    "person:wuzetian": "武周皇帝"
   },
   "dims": [
+   1,
+   2,
    3,
+   4,
    5,
    6
   ],
@@ -503,6 +506,81 @@ window.SANDBOX_SLICES["keju"] = {
     3,
     5,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KEJU_THK1",
+   "subject": "event:kj_605",
+   "predicate": "考试制度",
+   "value_text": "考场（贡院）分科（明经、进士）射策；“锁院”“糊名”防弊",
+   "time": {
+    "start": 605,
+    "end": 605,
+    "era_text": "隋大业元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "糊名",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "考试制度",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KEJU_THK2",
+   "subject": "event:kj_605",
+   "predicate": "选官技术",
+   "value_text": "以诗赋经义取士，打破门第；“朝为田舍郎，暮登天子堂”",
+   "time": {
+    "start": 605,
+    "end": 605,
+    "era_text": "隋大业元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "诗赋取士",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "选官技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KEJU_THK3",
+   "subject": "event:kj_605",
+   "predicate": "社会流动",
+   "value_text": "寒门子弟入仕，“士大夫”阶层流动；门阀衰落",
+   "time": {
+    "start": 605,
+    "end": 605,
+    "era_text": "隋大业元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "寒门入仕",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "社会流动",
+   "dims": [
+    4
    ],
    "dim_source": "declared",
    "_party": "综合史料",

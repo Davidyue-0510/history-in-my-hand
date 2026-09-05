@@ -16,7 +16,7 @@
 | baijia | 11 | 2 | **0.000** | event:bj_350（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | beijing | 16 | 7 | **0.000** | event:bj_consequence（0.000） | gap 1 / record 12 / scholarship 3 |
 | beijiu | 15 | 2 | **0.000** | event:bj_961（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
-| bencao | 9 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 6 / scholarship 2 |
+| bencao | 12 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 8 / scholarship 3 |
 | boju | 21 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 4 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | caishiji | 16 | 3 | **0.000** | event:cs_jin（0.000） | gap 1 / inference 2 / record 10 / scholarship 3 |
@@ -33,13 +33,13 @@
 | chu_han | 17 | 6 | **0.000** | event:chenggao（0.000） | gap 1 / record 16 |
 | chuhai_llm | 17 | 5 | **0.000** | event:ev_chuhai_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 2 |
 | dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
-| diaoyucheng | 15 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 6 / scholarship 3 |
+| diaoyucheng | 18 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 8 / scholarship 4 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
 | dong_han_yi | 12 | 3 | **0.000** | event:dy_196（0.000） | gap 2 / inference 2 / record 5 / scholarship 3 |
 | donghan_danggu | 7 | 3 | **0.000** | event:dh_166（0.000） | gap 1 / inference 2 / record 1 / scholarship 3 |
-| dujiangyan | 13 | 3 | **0.000** | event:dj_168（0.000） | gap 1 / inference 2 / record 7 / scholarship 3 |
+| dujiangyan | 16 | 3 | **0.000** | event:dj_168（0.000） | gap 1 / inference 2 / record 9 / scholarship 4 |
 | dunzun | 11 | 6 | **0.000** | event:dz_134（0.000） | gap 2 / scholarship 9 |
-| feishui | 13 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 7 / scholarship 3 |
+| feishui | 16 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
 | fenshu | 13 | 2 | **0.000** | event:fs_212（0.000） | gap 1 / inference 3 / record 7 / scholarship 2 |
 | fotao | 10 | 2 | **0.000** | event:ft_67（0.000） | gap 1 / record 7 / scholarship 2 |
@@ -73,7 +73,7 @@
 | jianzhen | 11 | 2 | **0.000** | event:jz_743（0.000） | gap 1 / inference 2 / record 6 / scholarship 2 |
 | jiasixie | 7 | 2 | **0.000** | event:js_533（0.000） | gap 1 / record 4 / scholarship 2 |
 | jilin_gaogouli_llm | 16 | 3 | **0.000** | event:ev_jilin_gaogouli_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 1 |
-| jingnan | 15 | 8 | **0.000** | event:jn_1399（0.000） | gap 1 / record 12 / scholarship 2 |
+| jingnan | 17 | 8 | **0.000** | event:jn_1399（0.000） | gap 1 / record 13 / scholarship 3 |
 | jinzhou | 15 | 2 | **0.628** | event:jinzhou_songjin（0.923） | gap 2 / record 12 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
 | jiupin | 14 | 2 | **0.000** | event:jp_220（0.000） | gap 1 / inference 2 / record 9 / scholarship 2 |
@@ -83,7 +83,7 @@
 | julu | 14 | 3 | **0.000** | event:jl_jz（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
 | kaifeng_juekou | 3 | 3 | **0.000** | event:kf_1642a（0.000） | scholarship 3 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
-| keju | 14 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 7 / scholarship 3 |
+| keju | 17 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 10 / scholarship 3 |
 | kunyang | 16 | 3 | **0.000** | event:ky_jz（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | liangshui | 15 | 2 | **0.000** | event:ls_780（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | 辽阳 | 65 | 2 | **0.426** | 辽阳陷落（1621）（0.520） | gap 3 / inference 1 / record 51 / scholarship 10 |
@@ -92,8 +92,8 @@
 | lixue | 11 | 2 | **0.000** | event:lx_1175（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | lizicheng | 15 | 4 | **0.000** | event:lc_1628（0.000） | gap 2 / inference 2 / record 7 / scholarship 4 |
 | locust | 12 | 5 | **0.000** | event:lc_1073（0.000） | gap 1 / inference 1 / record 5 / scholarship 5 |
-| lvlin | 18 | 2 | **0.000** | event:ll_17（0.000） | gap 4 / inference 3 / record 9 / scholarship 2 |
-| maling | 15 | 3 | **0.000** | event:ml_jz（0.000） | gap 1 / record 11 / scholarship 3 |
+| lvlin | 21 | 2 | **0.000** | event:ll_17（0.000） | gap 4 / inference 3 / record 11 / scholarship 3 |
+| maling | 18 | 3 | **0.000** | event:ml_jz（0.000） | gap 1 / record 13 / scholarship 4 |
 | ming_fall | 14 | 3 | **0.000** | event:mf_1627（0.000） | gap 1 / inference 4 / record 6 / scholarship 3 |
 | mingmo_dangzheng | 26 | 8 | **0.302** | event:dangzheng_donglin（0.333） | gap 2 / record 22 / scholarship 2 |
 | mingmo_jihuang | 12 | 6 | **0.000** | event:mj_1628（0.000） | gap 1 / scholarship 11 |
@@ -105,7 +105,7 @@
 | poyanghu | 15 | 3 | **0.000** | event:py_chen（0.000） | gap 2 / inference 1 / record 7 / scholarship 5 |
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
 | qin_mie_liu_guo_llm | 17 | 6 | **0.000** | event:ev_qin_mie_liu_guo_llm_01（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
-| qin_unify | 6 | 6 | **0.000** | event:qn_221（0.000） | scholarship 6 |
+| qin_unify | 9 | 6 | **0.000** | event:qn_221（0.000） | record 3 / scholarship 6 |
 | qing_han | 16 | 3 | **0.000** | event:qh_1644（0.000） | gap 1 / inference 4 / record 8 / scholarship 3 |
 | qinghai_tuyuhun_llm | 17 | 3 | **0.000** | event:ev_qinghai_tuyuhun_llm_01（0.000） | gap 4 / inference 1 / record 11 / scholarship 1 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
@@ -117,21 +117,21 @@
 | song_chan_yuan | 16 | 5 | **0.000** | event:chanyuan_meng（0.000） | gap 1 / record 14 / scholarship 1 |
 | song_dangzheng | 7 | 3 | **0.000** | event:ls_1086（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | song_he_jue | 14 | 3 | **0.000** | event:hj_1019（0.000） | gap 1 / inference 3 / record 7 / scholarship 3 |
-| songjin | 15 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| songjin | 18 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 15 / scholarship 1 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
 | sui_mie_chen | 11 | 2 | **0.000** | event:sm_587（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | sui_mie_chen_llm | 20 | 5 | **0.000** | event:ev_sui_mie_chen_llm_01（0.000） | gap 2 / inference 1 / record 15 / scholarship 2 |
 | sui_yang_llm | 15 | 6 | **0.000** | event:ev_sui_yang_llm_01（0.000） | inference 1 / record 13 / scholarship 1 |
 | suiyang | 15 | 3 | **0.000** | event:sy_jz（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
-| taiping | 12 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 7 / scholarship 3 |
-| talas | 14 | 3 | **0.000** | event:tl_gel（0.000） | gap 2 / inference 2 / record 7 / scholarship 3 |
+| taiping | 15 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 9 / scholarship 4 |
+| talas | 17 | 3 | **0.000** | event:tl_gel（0.000） | gap 2 / inference 2 / record 9 / scholarship 4 |
 | tang_dangzheng | 7 | 3 | **0.000** | event:nt_808（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
-| wanganshi | 13 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 7 / scholarship 3 |
+| wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | wencheng | 11 | 2 | **0.000** | event:wc_641（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | wugu | 15 | 2 | **0.000** | event:wg_91（0.000） | gap 1 / inference 5 / record 7 / scholarship 2 |
@@ -153,7 +153,7 @@
 | yellow_sea_1894 | 15 | 1 | **0.265** | event:ev_yellow_sea_1894_02（0.265） | gap 1 / record 13 / scholarship 1 |
 | yiling | 14 | 3 | **0.000** | event:yl_jz（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
-| zhangheng | 11 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 8 / scholarship 2 |
+| zhangheng | 14 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 9 / scholarship 4 |
 | zhangjuzheng | 15 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 1 / record 11 / scholarship 2 |
 | zhangqian | 15 | 2 | **0.000** | event:zq_126（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | zhaofen | 11 | 2 | **0.000** | event:zf_33（0.000） | gap 1 / record 8 / scholarship 2 |
@@ -206,7 +206,7 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
-| event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:bc_1578 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:bj_961 | beijiu | **0.000** | 0/3 | 0.10 | 0.08 | 12 | 0 / 0 / 0 / 0 |
@@ -254,7 +254,7 @@
 | event:dh_168 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dh_169 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dj_168 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
+| event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.09 | 11 | 0 / 0 / 0 / 0 |
 | event:dj_today | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
@@ -265,7 +265,7 @@
 | event:dy_217 | dong_han_yi | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:dy_book | dong_han_yi | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:dy_jz | diaoyucheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
-| event:dy_meng | diaoyucheng | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |
+| event:dy_meng | diaoyucheng | **0.000** | 0/3 | 0.00 | 0.18 | 11 | 0 / 0 / 0 / 0 |
 | event:dy_wang | diaoyucheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dz_134 | dunzun | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dz_boshi | dunzun | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -371,7 +371,7 @@
 | event:fs_213 | fenshu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:fs_jin | feishui | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:fs_jz | feishui | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:fs_qin | feishui | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
+| event:fs_qin | feishui | **0.000** | 0/3 | 0.00 | 0.17 | 12 | 0 / 0 / 0 / 0 |
 | event:ft_67 | fotao | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:ft_temple | fotao | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:gai_xia | chu_han | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
@@ -431,7 +431,7 @@
 | event:jl_jz | julu | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:jl_qin | julu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jl_xiang | julu | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
-| event:jn_1399 | jingnan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:jn_1399 | jingnan | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:jn_1402 | jingnan | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:jn_baigouhe | jingnan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:jn_dongchang | jingnan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -452,7 +452,7 @@
 | event:kf_1642b | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kf_1643 | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kj_1905 | keju | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
-| event:kj_605 | keju | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:kj_605 | keju | **0.000** | 0/3 | 0.00 | 0.00 | 7 | 0 / 0 / 0 / 0 |
 | event:kj_tang | keju | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ky_jz | kunyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ky_liu | kunyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -472,7 +472,7 @@
 | event:li_1644 | little_ice | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:liao_nanqin | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
-| event:ll_17 | lvlin | **0.000** | 0/3 | 0.00 | 0.33 | 6 | 0 / 0 / 0 / 0 |
+| event:ll_17 | lvlin | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
 | event:ll_23 | lvlin | **0.000** | 0/3 | 0.00 | 0.18 | 11 | 0 / 0 / 0 / 0 |
 | event:lq_214 | lingqu | **0.000** | 0/3 | 0.00 | 0.20 | 10 | 0 / 0 / 0 / 0 |
 | event:lq_use | lingqu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -497,7 +497,7 @@
 | event:mj_zuiji | mingmo_jihuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ml_jz | maling | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ml_qi | maling | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:ml_wei | maling | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ml_wei | maling | **0.000** | 0/3 | 0.00 | 0.00 | 7 | 0 / 0 / 0 / 0 |
 | event:nt_808 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:nt_823 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:nt_840 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -513,7 +513,7 @@
 | event:qn_223 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_225 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_228 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:qn_230 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:qn_230 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ru_guanzhong | chu_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sk_1072 | shenkuo | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -538,7 +538,7 @@
 | event:tj_xiang | tianjing | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:tl_gel | talas | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:tl_jz | talas | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:tl_tang | talas | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
+| event:tl_tang | talas | **0.000** | 0/3 | 0.11 | 0.17 | 12 | 0 / 0 / 0 / 0 |
 | event:tm_capture | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tm_collapse | tumu | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:tm_consequence | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -547,10 +547,10 @@
 | event:tm_wa | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:tm_wangzhen | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tm_ying | tumu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
-| event:tp_1851 | taiping | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:tp_1851 | taiping | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:tp_1853 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tp_1864 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
-| event:wa_1069 | wanganshi | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:wa_1069 | wanganshi | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:wa_1070 | wanganshi | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:wa_1085 | wanganshi | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:wc_641 | wencheng | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
@@ -598,7 +598,7 @@
 | event:zc_pi | zuchongzhi | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:zf_33 | zhaofen | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:zf_peace | zhaofen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
-| event:zh_132 | zhangheng | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:zh_132 | zhangheng | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:zh_1405 | zhenghe | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:zh_1433 | zhenghe | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:zh_test | zhangheng | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -667,7 +667,7 @@
 | event:shenyang_jurchen_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_qing_capital | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:shenyang_walls | shenyang | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
-| event:songjin_campaign | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 6 | 0 / 1 / 0 / 5 |
+| event:songjin_campaign | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 9 | 0 / 4 / 0 / 5 |
 | event:songjin_jiju | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:songjin_jinzhou_surrender | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:songjin_songshan | songjin | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |

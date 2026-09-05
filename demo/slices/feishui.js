@@ -20,7 +20,10 @@ window.SANDBOX_SLICES["feishui"] = {
   },
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "two_jin",
@@ -487,6 +490,81 @@ window.SANDBOX_SLICES["feishui"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FEISHUI_THK1",
+   "subject": "event:fs_qin",
+   "predicate": "以少胜多",
+   "value_text": "东晋北府兵（谢玄）以少胜多；“风声鹤唳”“草木皆兵”，前秦骑兵溃于淝水",
+   "time": {
+    "start": 383,
+    "end": 383,
+    "era_text": "太元八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "北府兵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "以少胜多",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FEISHUI_THK2",
+   "subject": "event:fs_qin",
+   "predicate": "军心离散",
+   "value_text": "前秦征发各族“戎卒六十余万”，民怨军心离散；东晋“君臣辑睦”",
+   "time": {
+    "start": 383,
+    "end": 383,
+    "era_text": "太元八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "戎卒六十余万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "民心军心",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FEISHUI_THK3",
+   "subject": "event:fs_qin",
+   "predicate": "战略定力",
+   "value_text": "“镇之以静”的从容战略；“不战而屈人之兵”的东晋士族气度",
+   "time": {
+    "start": 383,
+    "end": 383,
+    "era_text": "太元八年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "镇之以静",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "战略定力",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

@@ -2,7 +2,7 @@
   "scenes_total": 162,
   "historical": 153,
   "fictional": 9,
-  "assertions_total": 2534,
+  "assertions_total": 2574,
   "sources_total": 123,
   "factions_total": 9,
   "vocab_packs": [
@@ -148,7 +148,7 @@
       "id": "songjin",
       "title": "松锦之战",
       "kind": "county",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -311,7 +311,7 @@
       "id": "maling",
       "title": "马陵之战",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -388,7 +388,7 @@
       "id": "feishui",
       "title": "淝水之战",
       "kind": "battle",
-      "assertions": 13,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -416,7 +416,7 @@
       "id": "talas",
       "title": "怛罗斯之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -451,7 +451,7 @@
       "id": "diaoyucheng",
       "title": "钓鱼城之战",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -542,7 +542,7 @@
       "id": "dujiangyan",
       "title": "都江堰",
       "kind": "engineering",
-      "assertions": 13,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -556,7 +556,7 @@
       "id": "qin_unify",
       "title": "秦灭六国",
       "kind": "dynasty",
-      "assertions": 6,
+      "assertions": 9,
       "factions": {}
     },
     {
@@ -580,7 +580,7 @@
       "id": "wanganshi",
       "title": "王安石变法",
       "kind": "reform",
-      "assertions": 13,
+      "assertions": 15,
       "factions": {
         "jiudang": 1,
         "xindang": 1
@@ -634,7 +634,7 @@
       "id": "jingnan",
       "title": "靖难之役",
       "kind": "court",
-      "assertions": 15,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -648,7 +648,7 @@
       "id": "keju",
       "title": "科举制",
       "kind": "thought",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -662,7 +662,7 @@
       "id": "bencao",
       "title": "本草纲目·授时历",
       "kind": "tech",
-      "assertions": 9,
+      "assertions": 12,
       "factions": {}
     },
     {
@@ -851,7 +851,7 @@
       "id": "taiping",
       "title": "太平天国",
       "kind": "uprising",
-      "assertions": 12,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -865,7 +865,7 @@
       "id": "lvlin",
       "title": "绿林赤眉",
       "kind": "uprising",
-      "assertions": 18,
+      "assertions": 21,
       "factions": {
         "ll_rebel": 1,
         "ll_court": 1
@@ -966,7 +966,7 @@
       "id": "zhangheng",
       "title": "张衡地动仪",
       "kind": "tech",
-      "assertions": 11,
+      "assertions": 14,
       "factions": {}
     },
     {

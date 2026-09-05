@@ -21,6 +21,9 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "song",
@@ -540,6 +543,81 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DIAOYUCHENG_THK1",
+   "subject": "event:dy_meng",
+   "predicate": "山城体系",
+   "value_text": "余玠“依山为垒”的山城防御体系（钓鱼、重庆、白帝）；“城塞相维”",
+   "time": {
+    "start": 1259,
+    "end": 1259,
+    "era_text": "开庆元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "依山为垒",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "山城体系",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DIAOYUCHENG_THK2",
+   "subject": "event:dy_meng",
+   "predicate": "军民死守",
+   "value_text": "王坚、张珏率军民死守；“春以水、夏以粮”长期对峙，蒙哥暴卒",
+   "time": {
+    "start": 1259,
+    "end": 1259,
+    "era_text": "开庆元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "王坚张珏",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军民死守",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "DIAOYUCHENG_THK3",
+   "subject": "event:dy_meng",
+   "predicate": "战略转折",
+   "value_text": "“上帝折鞭”——蒙哥死使旭烈兀西征回师，缓解欧亚压力",
+   "time": {
+    "start": 1259,
+    "end": 1259,
+    "era_text": "开庆元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "上帝折鞭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "战略转折",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

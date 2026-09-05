@@ -42,7 +42,10 @@ window.SANDBOX_SLICES["songjin"] = {
   },
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -801,6 +804,84 @@ window.SANDBOX_SLICES["songjin"] = {
    ],
    "dim_source": "fallback",
    "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "SONGJIN_THK1",
+   "subject": "event:songjin_campaign",
+   "predicate": "炮兵坚城",
+   "value_text": "明“凭坚城用大炮”（红夷炮）守锦州；清“围点打援”破洪承畴",
+   "time": {
+    "era_text": "崇祯十四年",
+    "start": "1641-01-01",
+    "end": "1641-12-31",
+    "gregorian_year": 1641
+   },
+   "place": "",
+   "source": "mingshi",
+   "quote": "围点打援",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "炮兵坚城",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SONGJIN_THK2",
+   "subject": "event:songjin_campaign",
+   "predicate": "兵力崩溃",
+   "value_text": "明“十三万”援军粮尽溃败；“祖大寿”锦州降清",
+   "time": {
+    "era_text": "崇祯十四年",
+    "start": "1641-01-01",
+    "end": "1641-12-31",
+    "gregorian_year": 1641
+   },
+   "place": "",
+   "source": "mingshi",
+   "quote": "十三万",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "兵力崩溃",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "SONGJIN_THK3",
+   "subject": "event:songjin_campaign",
+   "predicate": "战略转折",
+   "value_text": "“取关外以屏关内”的战略转折；松锦败后明疆防门户洞开",
+   "time": {
+    "era_text": "崇祯十四年",
+    "start": "1641-01-01",
+    "end": "1641-12-31",
+    "gregorian_year": 1641
+   },
+   "place": "",
+   "source": "mingshi",
+   "quote": "取关外",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "战略转折",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
    "_faction": null
   }
  ],

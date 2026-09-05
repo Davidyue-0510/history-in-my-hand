@@ -19,7 +19,10 @@ window.SANDBOX_SLICES["lvlin"] = {
   },
   "dims": [
    1,
+   2,
+   3,
    4,
+   5,
    6
   ],
   "epoch": "han",
@@ -655,6 +658,81 @@ window.SANDBOX_SLICES["lvlin"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LVLIN_THK1",
+   "subject": "event:ll_17",
+   "predicate": "山泽起兵",
+   "value_text": "绿林军（新市、平林）据山泽起事；“昆阳之战”以少破莽",
+   "time": {
+    "start": 17,
+    "end": 17,
+    "era_text": "天凤四"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "昆阳",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "山泽起兵",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LVLIN_THK2",
+   "subject": "event:ll_17",
+   "predicate": "政权草创",
+   "value_text": "更始政权草创；“绿林”“赤眉”并起，豪强（刘縯、刘秀）渗入",
+   "time": {
+    "start": 17,
+    "end": 17,
+    "era_text": "天凤四"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "更始",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "政权草创",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LVLIN_THK3",
+   "subject": "event:ll_17",
+   "predicate": "天命论",
+   "value_text": "“王莽篡汉”失天命，复汉旗号聚拢豪杰的合法性逻辑",
+   "time": {
+    "start": 17,
+    "end": 17,
+    "era_text": "天凤四"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "人心思汉",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "天命论",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

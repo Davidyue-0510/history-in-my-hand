@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["qin_unify"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "qin",
@@ -299,6 +302,81 @@ window.SANDBOX_SLICES["qin_unify"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QIN_UNIFY_THK1",
+   "subject": "event:qn_230",
+   "predicate": "中央集权",
+   "value_text": "废分封行郡县，“书同文，车同轨，统一度量衡”；中央集权确立",
+   "time": {
+    "start": -230,
+    "end": -230,
+    "era_text": "秦王政十七年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "书同文",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "中央集权",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QIN_UNIFY_THK2",
+   "subject": "event:qn_230",
+   "predicate": "编户齐民",
+   "value_text": "“黔首”编户齐民，什伍连坐；六国遗民迁咸阳",
+   "time": {
+    "start": -230,
+    "end": -230,
+    "era_text": "秦王政十七年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "黔首",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "编户齐民",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QIN_UNIFY_THK3",
+   "subject": "event:qn_230",
+   "predicate": "法家理念",
+   "value_text": "“大一统”政统与法家（韩非、李斯）治国理念定型",
+   "time": {
+    "start": -230,
+    "end": -230,
+    "era_text": "秦王政十七年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "大一统",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "法家理念",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

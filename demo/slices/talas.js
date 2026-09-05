@@ -20,6 +20,9 @@ window.SANDBOX_SLICES["talas"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "sui_tang",
@@ -513,9 +516,97 @@ window.SANDBOX_SLICES["talas"] = {
    "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "TALAS_THK1",
+   "subject": "event:tl_tang",
+   "predicate": "边疆建制",
+   "value_text": "唐安西四镇（龟兹、于阗、疏勒、碎叶）经营西域；大食设呼罗珊总督",
+   "time": {
+    "start": 751,
+    "end": 751,
+    "era_text": "天宝十载"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "安西四镇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "边疆建制",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TALAS_THK2",
+   "subject": "event:tl_tang",
+   "predicate": "西域诸国",
+   "value_text": "高仙芝偕拔汗那、葛逻禄联军；石国（塔什干）冤杀引发西域不满",
+   "time": {
+    "start": 751,
+    "end": 751,
+    "era_text": "天宝十载"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "石国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "西域诸国",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "TALAS_THK3",
+   "subject": "event:tl_tang",
+   "predicate": "技术传播",
+   "value_text": "造纸术由此西传（战俘工匠入撒马尔罕）；“中国纸”技术外溢",
+   "time": {
+    "start": 751,
+    "end": 751,
+    "era_text": "天宝十载"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "造纸西传",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "技术传播",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
- "conflicts": [],
+ "conflicts": [
+  {
+   "id": "cf:event:tl_tang|技术传播",
+   "subject": "event:tl_tang",
+   "predicate": "技术传播",
+   "kind": "record_vs_record",
+   "count": 2,
+   "spread": null,
+   "assertion_ids": [
+    "SX008_M17",
+    "TALAS_THK3"
+   ]
+  }
+ ],
  "crossConflicts": [],
  "gaps": [
   "SX010_M17",
