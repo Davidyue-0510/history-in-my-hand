@@ -176,6 +176,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -199,6 +200,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -221,6 +223,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

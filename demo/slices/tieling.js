@@ -425,6 +425,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -446,6 +447,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -467,6 +469,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -487,6 +490,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -506,6 +510,7 @@ window.SANDBOX_SLICES["tieling"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -527,6 +532,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -548,6 +554,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -567,6 +574,7 @@ window.SANDBOX_SLICES["tieling"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -587,6 +595,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -606,6 +615,7 @@ window.SANDBOX_SLICES["tieling"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -627,6 +637,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -647,6 +658,7 @@ window.SANDBOX_SLICES["tieling"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -667,6 +679,7 @@ window.SANDBOX_SLICES["tieling"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -686,6 +699,7 @@ window.SANDBOX_SLICES["tieling"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -706,6 +720,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -726,6 +741,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -747,6 +763,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -776,6 +793,7 @@ window.SANDBOX_SLICES["tieling"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -806,6 +824,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -826,6 +845,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -852,6 +872,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -879,6 +900,7 @@ window.SANDBOX_SLICES["tieling"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -906,6 +928,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -932,6 +955,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -958,6 +982,7 @@ window.SANDBOX_SLICES["tieling"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -984,6 +1009,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1010,6 +1036,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1036,6 +1063,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1062,6 +1090,7 @@ window.SANDBOX_SLICES["tieling"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1088,6 +1117,7 @@ window.SANDBOX_SLICES["tieling"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1114,6 +1144,7 @@ window.SANDBOX_SLICES["tieling"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   }

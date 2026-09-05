@@ -158,6 +158,7 @@ window.SANDBOX_SLICES["talas"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -179,6 +180,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -201,6 +203,7 @@ window.SANDBOX_SLICES["talas"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -227,6 +230,7 @@ window.SANDBOX_SLICES["talas"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -252,6 +256,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -277,6 +282,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -302,6 +308,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -327,6 +334,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -352,6 +360,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -378,6 +387,7 @@ window.SANDBOX_SLICES["talas"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -404,6 +414,7 @@ window.SANDBOX_SLICES["talas"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -430,6 +441,7 @@ window.SANDBOX_SLICES["talas"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -463,6 +475,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -496,6 +509,7 @@ window.SANDBOX_SLICES["talas"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   }

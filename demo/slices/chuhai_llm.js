@@ -373,6 +373,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "項莊舞劍，意在沛公",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -402,6 +403,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "會項伯與張良有舊，翼蔽沛公",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -431,6 +433,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "自立為西楚霸王，據九郡，都彭城",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -460,6 +463,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "蕭何薦韓信為大將",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -489,6 +493,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "紀信誑楚，漢王得脫",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -518,6 +523,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "漢軍圍項王垓下",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -547,6 +553,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "力拔山兮氣蓋世，時不利兮騅不逝",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -577,6 +584,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "天之亡我，非戰之罪",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -606,6 +614,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "亭長舣船待，項王笑曰",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -635,6 +644,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "張良勸漢王封齊王信、更封彭越",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -665,6 +675,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "騎從者八百餘人",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -694,6 +705,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "韓信、彭越不至",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -723,6 +735,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "楚遂分",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -753,6 +766,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "漢軍圍項王垓下",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -790,6 +804,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "虞姬和之",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -812,6 +827,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "predicate": "兵力對比",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -843,6 +859,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "predicate": "史料立場",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   }

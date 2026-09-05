@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["songjin"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "county",
   "region": "liaoxi",
   "title": "松锦之战",
@@ -97,8 +98,7 @@ window.SANDBOX_SLICES["songjin"] = {
   "page": "county.html?scene=songjin",
   "key": "songjin",
   "scene_id": "songjin",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -416,6 +416,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -442,6 +443,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -468,6 +470,7 @@ window.SANDBOX_SLICES["songjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -493,6 +496,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -518,6 +522,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -544,6 +549,7 @@ window.SANDBOX_SLICES["songjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -569,6 +575,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -594,6 +601,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -620,6 +628,7 @@ window.SANDBOX_SLICES["songjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -646,6 +655,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -672,6 +682,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -697,6 +708,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -724,6 +736,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -750,6 +763,7 @@ window.SANDBOX_SLICES["songjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -784,6 +798,7 @@ window.SANDBOX_SLICES["songjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   }

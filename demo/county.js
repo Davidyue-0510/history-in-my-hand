@@ -714,9 +714,10 @@
       var on = state.sources.has(s.id);
       var n = document.createElement('div');
       n.className = 'src' + (on ? ' on' : ' off'); n.style.setProperty('--sc', s.color);
+      var stance_pill = s.stance_label ? '<span class="src-stance">' + s.stance_label + '</span>' : '';
       n.innerHTML = '<div class="src-tick">' + (on ? '✓' : '') + '</div>' +
         '<div class="src-body"><div class="src-name">《' + s.title + '》</div>' +
-        '<div class="src-meta"><span class="src-stance">' + s.stance_label + '</span>' +
+        '<div class="src-meta">' + stance_pill +
         s.distance_label + '</div></div>';
       n.addEventListener('click', function () {
         if (state.sources.has(s.id)) state.sources.delete(s.id); else state.sources.add(s.id);

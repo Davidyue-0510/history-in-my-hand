@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["dalinghe"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "county",
   "region": "liaoxi",
   "title": "大凌河之战",
@@ -99,8 +100,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
   "page": "county.html?scene=dalinghe",
   "key": "dalinghe",
   "scene_id": "dalinghe",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -351,6 +351,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -378,6 +379,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -404,6 +406,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -431,6 +434,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -457,6 +461,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -483,6 +488,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -509,6 +515,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -535,6 +542,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -560,6 +568,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -586,6 +595,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -613,6 +623,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -646,6 +657,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -673,6 +685,7 @@ window.SANDBOX_SLICES["dalinghe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   }

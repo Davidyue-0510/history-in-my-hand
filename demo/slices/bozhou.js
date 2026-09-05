@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["bozhou"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "battle",
   "region": "chuan_gui",
   "title": "播州之役·平播之役",
@@ -91,8 +92,7 @@ window.SANDBOX_SLICES["bozhou"] = {
   "page": "bozhou.html",
   "key": "bozhou",
   "scene_id": "bozhou",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -254,6 +254,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -280,6 +281,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -306,6 +308,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -332,6 +335,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -358,6 +362,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -384,6 +389,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -410,6 +416,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -436,6 +443,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -461,6 +469,7 @@ window.SANDBOX_SLICES["bozhou"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -487,6 +496,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -513,6 +523,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -538,6 +549,7 @@ window.SANDBOX_SLICES["bozhou"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -564,6 +576,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -599,6 +612,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   }

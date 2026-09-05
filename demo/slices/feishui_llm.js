@@ -273,6 +273,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -297,6 +298,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -321,6 +323,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -345,6 +348,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -369,6 +373,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -393,6 +398,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -416,6 +422,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -439,6 +446,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -463,6 +471,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -487,6 +496,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -511,6 +521,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -534,6 +545,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -558,6 +570,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -581,6 +594,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -605,6 +619,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -629,6 +644,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "诸胡·后世辑",
    "_faction": null
   },
@@ -652,6 +668,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -684,6 +701,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     ],
     "accept": "若能核到北府兵确切出战人数，可补此缺"
    },
+   "dim_source": "declared",
    "_party": "北宋·官修",
    "_faction": null
   },
@@ -708,6 +726,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "诸胡·后世辑",
    "_faction": null
   }

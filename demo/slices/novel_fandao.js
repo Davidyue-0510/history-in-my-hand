@@ -235,6 +235,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -251,6 +252,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "于父自述",
    "_faction": null
   },
@@ -268,6 +270,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -284,6 +287,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -300,6 +304,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -316,6 +321,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -332,6 +338,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "系统任务",
    "_faction": null
   },
@@ -349,6 +356,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -365,6 +373,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "于国海视角",
    "_faction": null
   },
@@ -381,6 +390,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -404,6 +414,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -426,6 +437,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -443,6 +455,7 @@ window.SANDBOX_SLICES["novel_fandao"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   }

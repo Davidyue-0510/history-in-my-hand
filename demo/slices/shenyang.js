@@ -583,6 +583,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -604,6 +605,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -626,6 +628,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -646,6 +649,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -666,6 +670,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -685,6 +690,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -704,6 +710,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -724,6 +731,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -745,6 +753,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜·亲历",
    "_faction": null
   },
@@ -765,6 +774,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -784,6 +794,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -804,6 +815,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -824,6 +836,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -844,6 +857,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -863,6 +877,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -883,6 +898,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -903,6 +919,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -923,6 +940,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -942,6 +960,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -962,6 +981,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -991,6 +1011,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1020,6 +1041,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1049,6 +1071,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1069,6 +1092,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1095,6 +1119,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1121,6 +1146,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1148,6 +1174,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1175,6 +1202,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1200,6 +1228,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1226,6 +1255,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1251,6 +1281,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1276,6 +1307,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1301,6 +1333,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1327,6 +1360,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1352,6 +1386,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1377,6 +1412,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1403,6 +1439,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1429,6 +1466,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1455,6 +1493,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1480,6 +1519,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1505,6 +1545,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1530,6 +1571,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1556,6 +1598,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1581,6 +1624,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1606,6 +1650,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1631,6 +1676,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1657,6 +1703,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1690,6 +1737,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },
@@ -1710,6 +1758,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1729,6 +1778,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1755,6 +1805,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1781,6 +1832,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1808,6 +1860,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1833,6 +1886,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1858,6 +1912,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1883,6 +1938,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1908,6 +1964,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1933,6 +1990,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1959,6 +2017,7 @@ window.SANDBOX_SLICES["shenyang"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1984,6 +2043,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -2009,6 +2069,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -2034,6 +2095,7 @@ window.SANDBOX_SLICES["shenyang"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   }

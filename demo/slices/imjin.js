@@ -446,6 +446,7 @@ window.SANDBOX_SLICES["imjin"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -472,6 +473,7 @@ window.SANDBOX_SLICES["imjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -498,6 +500,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -524,6 +527,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -550,6 +554,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -575,6 +580,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -602,6 +608,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -627,6 +634,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -653,6 +661,7 @@ window.SANDBOX_SLICES["imjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -678,6 +687,7 @@ window.SANDBOX_SLICES["imjin"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -704,6 +714,7 @@ window.SANDBOX_SLICES["imjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -730,6 +741,7 @@ window.SANDBOX_SLICES["imjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -756,6 +768,7 @@ window.SANDBOX_SLICES["imjin"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -782,6 +795,7 @@ window.SANDBOX_SLICES["imjin"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -809,6 +823,7 @@ window.SANDBOX_SLICES["imjin"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -843,6 +858,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -877,6 +893,7 @@ window.SANDBOX_SLICES["imjin"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -904,6 +921,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -931,6 +949,7 @@ window.SANDBOX_SLICES["imjin"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   }

@@ -365,6 +365,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -388,6 +389,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -411,6 +413,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -432,6 +435,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     1
    ],
    "id": "mingmo_jihuang_01",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -454,6 +458,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     3
    ],
    "id": "mingmo_jihuang_02",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -475,6 +480,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     3
    ],
    "id": "mingmo_jihuang_03",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -496,6 +502,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     4
    ],
    "id": "mingmo_jihuang_04",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -518,6 +525,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     4
    ],
    "id": "mingmo_jihuang_05",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -539,6 +547,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     5
    ],
    "id": "mingmo_jihuang_06",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -562,6 +571,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     6
    ],
    "id": "mingmo_jihuang_07",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -583,6 +593,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     6
    ],
    "id": "mingmo_jihuang_08",
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -615,6 +626,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     4
    ],
    "id": "mingmo_jihuang_09",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

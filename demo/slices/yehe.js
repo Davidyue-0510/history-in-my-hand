@@ -267,6 +267,7 @@ window.SANDBOX_SLICES["yehe"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -288,6 +289,7 @@ window.SANDBOX_SLICES["yehe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -308,6 +310,7 @@ window.SANDBOX_SLICES["yehe"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -328,6 +331,7 @@ window.SANDBOX_SLICES["yehe"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -348,6 +352,7 @@ window.SANDBOX_SLICES["yehe"] = {
     4,
     5
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -377,6 +382,7 @@ window.SANDBOX_SLICES["yehe"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -403,6 +409,7 @@ window.SANDBOX_SLICES["yehe"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   }

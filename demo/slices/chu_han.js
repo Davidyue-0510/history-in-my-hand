@@ -258,6 +258,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -281,6 +282,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     2
    ],
+   "dim_source": "declared",
    "_party": "汉·后朝官修",
    "_faction": null
   },
@@ -304,6 +306,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -327,6 +330,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -350,6 +354,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     4
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -373,6 +378,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     4
    ],
+   "dim_source": "declared",
    "_party": "汉·后朝官修",
    "_faction": null
   },
@@ -396,6 +402,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -419,6 +426,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -442,6 +450,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -465,6 +474,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -488,6 +498,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -511,6 +522,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -534,6 +546,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "汉·后朝官修",
    "_faction": null
   },
@@ -557,6 +570,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -588,6 +602,7 @@ window.SANDBOX_SLICES["chu_han"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -612,6 +627,7 @@ window.SANDBOX_SLICES["chu_han"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   },
@@ -636,6 +652,7 @@ window.SANDBOX_SLICES["chu_han"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "汉·官修",
    "_faction": null
   }

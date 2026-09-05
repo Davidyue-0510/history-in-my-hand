@@ -263,6 +263,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "秦王使左庶长王龁攻韩，取上党",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -292,6 +293,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "上党民不乐为秦而归赵",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -321,6 +323,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "秦相应侯使人行千金于赵为反间",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -350,6 +353,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "赵王因以括代廉颇将",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -379,6 +383,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "王以名使括，若胶柱而鼓瑟耳",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -408,6 +413,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "括母上书言括不可使",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -437,6 +443,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "武安君白起至，佯败走，而绝赵粮道",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -466,6 +473,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "赵军分而为二，粮道绝",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -495,6 +503,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "秦军射杀赵括",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -524,6 +533,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "乃挟诈而尽坑杀之",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -553,6 +563,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "前后斩首虏四十五万",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -582,6 +593,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "遗其小者二百四十人归赵",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -611,6 +623,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "赵卒反覆，非尽杀之，恐为乱",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -640,6 +653,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "四十万之数或为夸大",
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -677,6 +691,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "括徒能读其父书传，不知合变也",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   }

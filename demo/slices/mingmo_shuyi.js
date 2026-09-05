@@ -334,6 +334,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -356,6 +357,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -378,6 +380,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -399,6 +402,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     1
    ],
    "id": "mingmo_shuyi_01",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -420,6 +424,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     2
    ],
    "id": "mingmo_shuyi_02",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -441,6 +446,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     3
    ],
    "id": "mingmo_shuyi_03",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -462,6 +468,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     4
    ],
    "id": "mingmo_shuyi_04",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -483,6 +490,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     5
    ],
    "id": "mingmo_shuyi_05",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -504,6 +512,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     6
    ],
    "id": "mingmo_shuyi_06",
+   "dim_source": "fallback",
    "_party": "综合史料",
    "_faction": null
   },
@@ -536,6 +545,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     4
    ],
    "id": "mingmo_shuyi_07",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

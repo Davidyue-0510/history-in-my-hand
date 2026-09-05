@@ -502,6 +502,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -524,6 +525,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -547,6 +549,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -570,6 +573,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -592,6 +596,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -613,6 +618,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -634,6 +640,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -655,6 +662,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -676,6 +684,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -697,6 +706,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -718,6 +728,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -738,6 +749,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -760,6 +772,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -782,6 +795,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -803,6 +817,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -825,6 +840,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -846,6 +862,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -866,6 +883,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -886,6 +904,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "学界",
    "_faction": null
   },
@@ -907,6 +926,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -929,6 +949,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -950,6 +971,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -970,6 +992,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -990,6 +1013,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -1021,6 +1045,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -1043,6 +1068,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1064,6 +1090,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1085,6 +1112,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1106,6 +1134,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1127,6 +1156,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -1150,6 +1180,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -1172,6 +1203,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1195,6 +1227,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·开原兵备道",
    "_faction": null
   },
@@ -1216,6 +1249,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   },
@@ -1237,6 +1271,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1257,6 +1292,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1277,6 +1313,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1297,6 +1334,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1317,6 +1355,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1337,6 +1376,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1357,6 +1397,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1377,6 +1418,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1397,6 +1439,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1426,6 +1469,7 @@ window.SANDBOX_SLICES["kaiyuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清·地方志",
    "_faction": null
   }

@@ -298,6 +298,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -324,6 +325,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "五代·官修",
    "_faction": null
   },
@@ -350,6 +352,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -377,6 +380,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -404,6 +408,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -430,6 +435,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "五代·官修",
    "_faction": null
   },
@@ -456,6 +462,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -482,6 +489,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -508,6 +516,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "五代·官修",
    "_faction": null
   },
@@ -535,6 +544,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -561,6 +571,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -595,6 +606,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -620,6 +632,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -645,6 +658,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -670,6 +684,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -696,6 +711,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "五代·官修",
    "_faction": null
   },
@@ -721,6 +737,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "五代·官修",
    "_faction": null
   }

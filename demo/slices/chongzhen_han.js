@@ -373,6 +373,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -395,6 +396,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -417,6 +419,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -438,6 +441,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     1
    ],
    "id": "chongzhen_han_01",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -459,6 +463,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     2
    ],
    "id": "chongzhen_han_02",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -480,6 +485,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     3
    ],
    "id": "chongzhen_han_03",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -501,6 +507,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     4
    ],
    "id": "chongzhen_han_04",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -522,6 +529,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     5
    ],
    "id": "chongzhen_han_05",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -544,6 +552,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     6
    ],
    "id": "chongzhen_han_06",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   },
@@ -576,6 +585,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     1
    ],
    "id": "chongzhen_han_07",
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

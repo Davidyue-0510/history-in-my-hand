@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["yangzhou"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "battle",
   "region": "jiangnan",
   "title": "扬州十日·乙酉之难",
@@ -86,8 +87,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
   "page": "yangzhou.html",
   "key": "yangzhou",
   "scene_id": "yangzhou",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -241,6 +241,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -267,6 +268,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -293,6 +295,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -319,6 +322,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -345,6 +349,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -371,6 +376,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -397,6 +403,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -423,6 +430,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -449,6 +457,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -483,6 +492,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·私修",
    "_faction": null
   },
@@ -509,6 +519,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   }

@@ -447,7 +447,10 @@ def normalize_and_validate(assertions, dim_source_mode="auto"):
                               if isinstance(d, (int, float)) and 1 <= int(d) <= 6})
             if cleaned:
                 a["dims"] = cleaned
-                if a.get("dim_source") not in ("declared", "inferred", "fallback"):
+                if cleaned == [6]:
+                    # 单维[6]=事件兜底：无法证伪为 deliberate 事件-only，诚实标 fallback
+                    a["dim_source"] = "fallback"
+                elif a.get("dim_source") not in ("declared", "inferred", "fallback"):
                     a["dim_source"] = "declared"
             else:
                 inferred = infer_dims_lexical(a)
@@ -1083,6 +1086,12 @@ def _assemble_and_register(spec, raw, scene_dir):
         with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=1)
             f.write("\n")
+
+    # 维度来源标记（dim_source）：v0.75/76 的诚实特性（「只看声明」开关 + 「推」徽标）
+    # 此前因四条 world-gen 路径提前 return 跳过 normalize_and_validate 而从未落地；
+    # 在此补标（v0.104）。normalize_and_validate 仅补充 dim_source / 兜底 dims，
+    # 对已合规断言幂等，不改变已归一化年份。
+    normalize_and_validate(raw.get("assertions", []), "auto")
 
     with open(os.path.join(scene_dir, "assertions.jsonl"), "w", encoding="utf-8") as f:
         for a in raw.get("assertions", []):

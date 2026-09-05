@@ -312,6 +312,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "宋·私修",
    "_faction": null
   },
@@ -337,6 +338,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -363,6 +365,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -389,6 +392,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
     3,
     5
    ],
+   "dim_source": "declared",
    "_party": "宋·私修",
    "_faction": null
   },
@@ -414,6 +418,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -439,6 +444,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     4
    ],
+   "dim_source": "declared",
    "_party": "宋·私修",
    "_faction": null
   },
@@ -464,6 +470,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     5
    ],
+   "dim_source": "declared",
    "_party": "宋·私修",
    "_faction": null
   },
@@ -487,9 +494,10 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "scale": "empire",
    "note": "思想/制度维度：名分（兄/弟、南北朝之争）关乎正统叙事，是盟约的外交修辞核心",
    "dims": [
-    5,
-    3
+    3,
+    5
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -515,6 +523,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "元·官修",
    "_faction": null
   },
@@ -540,6 +549,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     1
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -565,6 +575,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     2
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   },
@@ -590,6 +601,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "元·官修",
    "_faction": null
   },
@@ -615,6 +627,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     4
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -640,6 +653,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     3
    ],
+   "dim_source": "declared",
    "_party": "宋·私修",
    "_faction": null
   },
@@ -665,6 +679,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "元·官修",
    "_faction": null
   },
@@ -699,6 +714,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "元·官修",
    "_faction": null
   }

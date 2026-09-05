@@ -1051,7 +1051,7 @@
     "person:huang_zhilong": "黄之骥",
     "person:nuerhaci": "努尔哈赤"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     3,
@@ -1131,7 +1131,7 @@
     "person:amin": "阿敏",
     "person:nuerhaci": "努尔哈赤"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     3,
@@ -1213,7 +1213,7 @@
     "person:amin": "阿敏",
     "person:nuerhaci": "努尔哈赤"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     3,
@@ -1296,7 +1296,7 @@
     "person:sun_degong": "孙得功",
     "person:nuerhaci": "努尔哈赤"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     2,
@@ -1380,7 +1380,7 @@
     "person:huangtaiji": "皇太极",
     "person:duoergun": "多尔衮"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     3,
@@ -1466,7 +1466,7 @@
     "person:wu_sangui": "吴三桂",
     "person:zhao_shuaijiao": "赵率教"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     2,
@@ -2713,7 +2713,7 @@
    "primary_place": "jinzhou",
    "dossier_event": "event:ev_three_campaigns_01",
    "vocab_pack": "three_campaigns",
-   "terrain_grid": "three_campaigns",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "edges"
@@ -2787,7 +2787,7 @@
    "subtitle": "周赧王五十三—五十五年（前262—前260）· 秦 vs 赵",
    "primary_place": "changping",
    "dossier_event": "event:cp_sd",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -2868,7 +2868,7 @@
    "subtitle": "周显王十五年（前354）· 齐 vs 魏",
    "primary_place": "guiling",
    "dossier_event": "event:gl_wei",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -2948,7 +2948,7 @@
    "subtitle": "周显王二十八—二十九年（前341—前340）· 齐 vs 魏",
    "primary_place": "maling",
    "dossier_event": "event:ml_wei",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3026,7 +3026,7 @@
    "subtitle": "周襄王二十年（前632）· 晋 vs 楚",
    "primary_place": "chengpu",
    "dossier_event": "event:cp_chu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3103,7 +3103,7 @@
    "subtitle": "周敬王十四年（前506）· 吴 vs 楚",
    "primary_place": "boju",
    "dossier_event": "event:bj_wu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3180,7 +3180,7 @@
    "subtitle": "秦二世三年（前207）· 楚（项羽） vs 秦",
    "primary_place": "julu",
    "dossier_event": "event:jl_qin",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3259,7 +3259,7 @@
    "subtitle": "汉高帝五年（前202）· 汉 vs 楚",
    "primary_place": "gaixia",
    "dossier_event": "event:gx_han",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3336,7 +3336,7 @@
    "subtitle": "汉武帝元狩四年（前119）· 汉 vs 匈奴",
    "primary_place": "mobei",
    "dossier_event": "event:mb_chu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3415,7 +3415,7 @@
    "subtitle": "新莽地皇四年（23）· 汉（刘秀） vs 新莽",
    "primary_place": "kunyang",
    "dossier_event": "event:ky_wan",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3494,7 +3494,7 @@
    "subtitle": "汉献帝建安五年（200）· 曹 vs 袁",
    "primary_place": "guandu",
    "dossier_event": "event:gd_yuan",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3574,7 +3574,7 @@
    "subtitle": "汉献帝建安十三年（208）· 孙刘 vs 曹",
    "primary_place": "chibi",
    "dossier_event": "event:cb_cao",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3655,7 +3655,7 @@
    "subtitle": "章武二年（222）· 吴 vs 蜀",
    "primary_place": "yiling",
    "dossier_event": "event:yl_liu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3734,7 +3734,7 @@
    "subtitle": "建安二十年（215）· 魏 vs 吴",
    "primary_place": "xiaoyaojin",
    "dossier_event": "event:xy_cao",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3813,7 +3813,7 @@
    "subtitle": "太元八年（383）· 东晋 vs 前秦",
    "primary_place": "feishui",
    "dossier_event": "event:fs_qin",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3891,7 +3891,7 @@
    "subtitle": "北魏登国十年（395）· 北魏 vs 后燕",
    "primary_place": "canhebei",
    "dossier_event": "event:ch_yan",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -3969,7 +3969,7 @@
    "subtitle": "天监六年（507）· 梁 vs 北魏",
    "primary_place": "zhongli",
    "dossier_event": "event:zl_wei",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4047,7 +4047,7 @@
    "subtitle": "武德四年（621）· 唐 vs 郑/夏",
    "primary_place": "hulao",
    "dossier_event": "event:hl_shi",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4201,7 +4201,7 @@
    "subtitle": "至德二载（757）· 唐 vs 安史",
    "primary_place": "suiyang",
    "dossier_event": "event:sy_zhang",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4281,7 +4281,7 @@
    "subtitle": "绍兴十年（1140）· 宋（岳家军） vs 金",
    "primary_place": "yancheng",
    "dossier_event": "event:yc_yue",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4361,7 +4361,7 @@
    "subtitle": "绍兴元年（1131）· 宋 vs 金",
    "primary_place": "heshangyuan",
    "dossier_event": "event:hs_jin",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4439,7 +4439,7 @@
    "subtitle": "绍兴三十一年（1161）· 宋 vs 金",
    "primary_place": "caishiji",
    "dossier_event": "event:cs_jin",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4518,7 +4518,7 @@
    "subtitle": "开庆元年（1259）· 宋 vs 蒙古",
    "primary_place": "diaoyucheng",
    "dossier_event": "event:dy_meng",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4596,7 +4596,7 @@
    "subtitle": "祥兴二年（1279）· 宋 vs 元",
    "primary_place": "yaoshan",
    "dossier_event": "event:ys_song",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4676,7 +4676,7 @@
    "subtitle": "龙凤九年（1363）· 朱 vs 陈",
    "primary_place": "poyanghu",
    "dossier_event": "event:py_chen",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4754,7 +4754,7 @@
    "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
    "primary_place": "tumu",
    "dossier_event": "event:tm_ying",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4833,7 +4833,7 @@
    "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
    "primary_place": "beijing",
    "dossier_event": "event:bj_yu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4913,7 +4913,7 @@
    "subtitle": "康熙二十四—二十五年（1685—1686）· 清 vs 沙俄",
    "primary_place": "yaksa",
    "dossier_event": "event:yk_qing",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -4992,7 +4992,7 @@
    "subtitle": "同治三年（1864）· 太平军 vs 清（湘军）",
    "primary_place": "tianjing",
    "dossier_event": "event:tj_xiang",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -5071,7 +5071,7 @@
    "subtitle": "道光二十一年（1841）· 清 vs 英",
    "primary_place": "humen",
    "dossier_event": "event:hm_ying",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "engagements",
@@ -5151,7 +5151,7 @@
    "subtitle": "前602—1855 · 六次大改道",
    "primary_place": "taohuayu",
    "dossier_event": "event:hh_yu",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -5230,7 +5230,7 @@
    "subtitle": "622—1943 · 历代大蝗",
    "primary_place": "guanzhong",
    "dossier_event": "event:lc_622",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5308,7 +5308,7 @@
    "subtitle": "明嘉靖三十四年（1556）· 8级余",
    "primary_place": "huaxian",
    "dossier_event": "event:hx_main",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5385,7 +5385,7 @@
    "subtitle": "1580—1644 · 北中国连年亢旱",
    "primary_place": "beijing",
    "dossier_event": "event:li_1580",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5461,7 +5461,7 @@
    "subtitle": "605—1293 · 隋唐凿通·元朝裁直",
    "primary_place": "hangzhou",
    "dossier_event": "event:gc_sui",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -5540,7 +5540,7 @@
    "subtitle": "约公元前256 · 李冰筑",
    "primary_place": "dujiangyan",
    "dossier_event": "event:dj_256",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5615,7 +5615,7 @@
    "subtitle": "前214—1644 · 秦连·明筑",
    "primary_place": "badaling",
    "dossier_event": "event:gw_qin",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -5694,7 +5694,7 @@
    "subtitle": "前230—前221 · 秦 vs 六国",
    "primary_place": "xianyang",
    "dossier_event": "event:qn_230",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -5771,7 +5771,7 @@
    "subtitle": "1644 · 内忧外患·国祚终结",
    "primary_place": "beijing",
    "dossier_event": "event:mf_1627",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5848,7 +5848,7 @@
    "subtitle": "前356—前338 · 秦孝公时",
    "primary_place": "xianyang",
    "dossier_event": "event:sy_356",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5924,7 +5924,7 @@
    "subtitle": "1069—1085 · 宋神宗时",
    "primary_place": "kaifeng",
    "dossier_event": "event:wa_1069",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -5999,7 +5999,7 @@
    "subtitle": "184 · 张角 vs 东汉",
    "primary_place": "julu_up",
    "dossier_event": "event:hj_184",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -6077,7 +6077,7 @@
    "subtitle": "1628—1645 · 闯军 vs 明",
    "primary_place": "beijing",
    "dossier_event": "event:lc_1628",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -6155,7 +6155,7 @@
    "subtitle": "493—496 · 北魏",
    "primary_place": "luoyang",
    "dossier_event": "event:xw_493",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6232,7 +6232,7 @@
    "subtitle": "641 · 唐蕃和亲",
    "primary_place": "lhasa",
    "dossier_event": "event:wc_641",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -6312,7 +6312,7 @@
    "subtitle": "626 · 唐高祖武德九年",
    "primary_place": "xuanwumen",
    "dossier_event": "event:xx_626",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6389,7 +6389,7 @@
    "subtitle": "1399—1402 · 燕王 vs 建文",
    "primary_place": "nanjing",
    "dossier_event": "event:jn_1399",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -6466,7 +6466,7 @@
    "subtitle": "前134 · 汉武帝时",
    "primary_place": "changan_dz",
    "dossier_event": "event:dz_134",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6542,7 +6542,7 @@
    "subtitle": "605—1905 · 选官制度",
    "primary_place": "luoyang_k",
    "dossier_event": "event:kj_605",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6617,7 +6617,7 @@
    "subtitle": "2—13 世纪 · 改变世界的原创",
    "primary_place": "kaifeng_f",
    "dossier_event": "event:fi_paper",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6694,7 +6694,7 @@
    "subtitle": "1281 · 1578 · 科技医学高峰",
    "primary_place": "dadu_b",
    "dossier_event": "event:bc_1281",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6769,7 +6769,7 @@
    "subtitle": "196—220 · 建安瘟疫",
    "primary_place": "nanyang",
    "dossier_event": "event:dy_196",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6844,7 +6844,7 @@
    "subtitle": "1877—1878 · 晚清华北大旱",
    "primary_place": "taiyuan",
    "dossier_event": "event:dw_1876",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6920,7 +6920,7 @@
    "subtitle": "1019 · 天禧三年河患",
    "primary_place": "huaxian_s",
    "dossier_event": "event:hj_1019",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -6996,7 +6996,7 @@
    "subtitle": "1406—1420 · 明永乐",
    "primary_place": "beijing",
    "dossier_event": "event:zj_1406",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7073,7 +7073,7 @@
    "subtitle": "前214 · 秦",
    "primary_place": "xingan",
    "dossier_event": "event:lq_214",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7152,7 +7152,7 @@
    "subtitle": "595 · 隋开皇",
    "primary_place": "zhaoxian",
    "dossier_event": "event:zz_595",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7227,7 +7227,7 @@
    "subtitle": "582 · 隋开皇",
    "primary_place": "changan",
    "dossier_event": "event:dx_582",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7303,7 +7303,7 @@
    "subtitle": "前1046 · 商周革命",
    "primary_place": "muye",
    "dossier_event": "event:ww_1048",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7379,7 +7379,7 @@
    "subtitle": "589 · 隋文帝统一",
    "primary_place": "nanjing",
    "dossier_event": "event:sm_587",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7457,7 +7457,7 @@
    "subtitle": "960 · 宋太祖代周",
    "primary_place": "chenqiao",
    "dossier_event": "event:cq_960a",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7534,7 +7534,7 @@
    "subtitle": "1279 · 宋元最后一战",
    "primary_place": "jiangmen",
    "dossier_event": "event:ys_1276",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7613,7 +7613,7 @@
    "subtitle": "1911 · 帝制终结",
    "primary_place": "wuchang",
    "dossier_event": "event:xh_1010",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -7688,7 +7688,7 @@
    "subtitle": "1573—1582 · 明万历",
    "primary_place": "beijing",
    "dossier_event": "event:zj_1573",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7764,7 +7764,7 @@
    "subtitle": "1898 · 光绪廿四",
    "primary_place": "beijing",
    "dossier_event": "event:wx_0611",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7840,7 +7840,7 @@
    "subtitle": "9 — 23 · 新莽",
    "primary_place": "changan",
    "dossier_event": "event:wm_9",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7916,7 +7916,7 @@
    "subtitle": "780 · 唐建中",
    "primary_place": "changan",
    "dossier_event": "event:ls_780",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -7989,7 +7989,7 @@
    "subtitle": "220 · 曹魏",
    "primary_place": "yecheng",
    "dossier_event": "event:jp_220",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8065,7 +8065,7 @@
    "subtitle": "前209 · 秦末",
    "primary_place": "dazexiang",
    "dossier_event": "event:cs_209a",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8143,7 +8143,7 @@
    "subtitle": "875—884 · 唐末",
    "primary_place": "changan",
    "dossier_event": "event:hc_875",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8221,7 +8221,7 @@
    "subtitle": "1851—1864 · 晚清",
    "primary_place": "guiping",
    "dossier_event": "event:tp_1851",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8298,7 +8298,7 @@
    "subtitle": "1351—1368 · 元末",
    "primary_place": "yingzhou",
    "dossier_event": "event:hj_1351",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8375,7 +8375,7 @@
    "subtitle": "17 — 27 · 新莽末",
    "primary_place": "lvlin",
    "dossier_event": "event:ll_17",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8451,7 +8451,7 @@
    "subtitle": "前307 · 战国赵",
    "primary_place": "handan",
    "dossier_event": "event:zw_307",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8528,7 +8528,7 @@
    "subtitle": "前33 · 汉元帝时",
    "primary_place": "hohhot",
    "dossier_event": "event:zf_33",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8606,7 +8606,7 @@
    "subtitle": "1644 起 · 清",
    "primary_place": "beijing",
    "dossier_event": "event:qh_1644",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8683,7 +8683,7 @@
    "subtitle": "1271 起 · 元",
    "primary_place": "beijing",
    "dossier_event": "event:yu_1271",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8759,7 +8759,7 @@
    "subtitle": "1005 · 辽宋",
    "primary_place": "puyang",
    "dossier_event": "event:cy_1004",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -8837,7 +8837,7 @@
    "subtitle": "961 · 宋太祖",
    "primary_place": "kaofeng",
    "dossier_event": "event:bj_961",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8911,7 +8911,7 @@
    "subtitle": "1712—1722 · 清康熙末",
    "primary_place": "beijing",
    "dossier_event": "event:jz_1712",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -8986,7 +8986,7 @@
    "subtitle": "前91 · 汉武帝晚年",
    "primary_place": "changan",
    "dossier_event": "event:wg_91",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9062,7 +9062,7 @@
    "subtitle": "前210 · 秦",
    "primary_place": "xingtai",
    "dossier_event": "event:sq_210",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9137,7 +9137,7 @@
    "subtitle": "前5—前3 世纪 · 战国",
    "primary_place": "linzi",
    "dossier_event": "event:bj_350",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9211,7 +9211,7 @@
    "subtitle": "前213—前212 · 秦",
    "primary_place": "xianyang",
    "dossier_event": "event:fs_213",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9288,7 +9288,7 @@
    "subtitle": "67 · 东汉永平",
    "primary_place": "luoyang",
    "dossier_event": "event:ft_67",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9363,7 +9363,7 @@
    "subtitle": "1175 · 鹅湖之会",
    "primary_place": "eqihu",
    "dossier_event": "event:lx_1175",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9439,7 +9439,7 @@
    "subtitle": "132 · 东汉阳嘉",
    "primary_place": "luoyang",
    "dossier_event": "event:zh_132",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9513,7 +9513,7 @@
    "subtitle": "480 · 南朝",
    "primary_place": "jiankang",
    "dossier_event": "event:zc_463",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9588,7 +9588,7 @@
    "subtitle": "1088 · 北宋元祐",
    "primary_place": "zhenjiang",
    "dossier_event": "event:sk_1072",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9664,7 +9664,7 @@
    "subtitle": "544 · 东魏",
    "primary_place": "yidu",
    "dossier_event": "event:js_533",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places"
@@ -9740,7 +9740,7 @@
    "subtitle": "前138—前126 · 西汉",
    "primary_place": "changan",
    "dossier_event": "event:zq_138",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -9817,7 +9817,7 @@
    "subtitle": "1405—1433 · 明永乐—宣德",
    "primary_place": "taicang",
    "dossier_event": "event:zh_1405",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -9896,7 +9896,7 @@
    "subtitle": "629—645 · 唐",
    "primary_place": "changan",
    "dossier_event": "event:xz_629",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -9975,7 +9975,7 @@
    "subtitle": "743—753 · 唐",
    "primary_place": "yangzhou",
    "dossier_event": "event:jz_743",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "places",
@@ -10047,6 +10047,7 @@
    }
   },
   "songjin": {
+   "terrain_grid": "china_coarse",
    "kind": "county",
    "region": "liaoxi",
    "title": "松锦之战",
@@ -10144,6 +10145,7 @@
    }
   },
   "dalinghe": {
+   "terrain_grid": "china_coarse",
    "kind": "county",
    "region": "liaoxi",
    "title": "大凌河之战",
@@ -10273,7 +10275,7 @@
     "person:yuan_chonghuan": "袁崇焕",
     "person:ma_shilong": "马世龙"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     2,
@@ -10364,7 +10366,7 @@
     "person:wang_tingchen": "王廷臣",
     "person:jin_guan": "金冠"
    },
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "dims": [
     1,
     2,
@@ -10424,6 +10426,7 @@
    }
   },
   "bozhou": {
+   "terrain_grid": "china_coarse",
    "kind": "battle",
    "region": "chuan_gui",
    "title": "播州之役·平播之役",
@@ -10515,6 +10518,7 @@
    }
   },
   "ningxia": {
+   "terrain_grid": "china_coarse",
    "kind": "battle",
    "region": "xibei",
    "title": "宁夏之役·哱拜之乱",
@@ -10608,6 +10612,7 @@
    }
   },
   "yangzhou": {
+   "terrain_grid": "china_coarse",
    "kind": "battle",
    "region": "jiangnan",
    "title": "扬州十日·乙酉之难",
@@ -10694,6 +10699,7 @@
    }
   },
   "mingmo_dangzheng": {
+   "terrain_grid": "china_coarse",
    "kind": "court",
    "region": "court",
    "title": "明末党争·辽东导火索",
@@ -10801,7 +10807,7 @@
    "subtitle": "唐宪宗—宣宗（808—846）· 士族门第 vs 科举寒素",
    "primary_place": "changan",
    "dossier_event": "event:nt_808",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events"
    ],
@@ -10873,7 +10879,7 @@
    "subtitle": "北宋元祐（1086—1093）· 洛党·蜀党·朔党",
    "primary_place": "kaifeng",
    "dossier_event": "event:ls_1086",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events"
    ],
@@ -10944,7 +10950,7 @@
    "subtitle": "东汉桓灵（166—184）· 清流士大夫 vs 宦官",
    "primary_place": "luoyang",
    "dossier_event": "event:dh_166",
-   "terrain_grid": "liaodong",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events"
    ],
@@ -11791,7 +11797,7 @@
    "primary_place": "xianyang",
    "dossier_event": "event:ev_qin_mie_liu_guo_llm_06",
    "vocab_pack": "qin_mie_liu_guo_llm",
-   "terrain_grid": "qin_mie_liu_guo",
+   "terrain_grid": "china_coarse",
    "extra_files": [
     "events",
     "edges"

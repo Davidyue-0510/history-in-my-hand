@@ -275,6 +275,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -299,6 +300,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -322,6 +324,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -346,6 +349,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -369,6 +373,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -393,6 +398,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -416,6 +422,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -441,6 +448,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -465,6 +473,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -489,6 +498,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -513,6 +523,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -537,6 +548,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "南朝宋·私修",
    "_faction": null
   },
@@ -561,6 +573,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "西晋·私修",
    "_faction": null
   },
@@ -593,6 +606,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     ],
     "accept": "需要更多文献或考古证据核实三方兵力实数"
    },
+   "dim_source": "declared",
    "_party": "南朝宋·私修",
    "_faction": null
   }

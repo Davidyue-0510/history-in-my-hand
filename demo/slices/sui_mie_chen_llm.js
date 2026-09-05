@@ -360,6 +360,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "兵五十一萬八千",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -389,6 +390,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "賀若弼自廣陵引兵濟江，陳人弗之覺",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -418,6 +420,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "韓擒虎將五百人自采石夜濟",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -447,6 +450,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "任忠率降卒迎之，引擒虎自南掖門入建康",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -476,6 +480,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "陳叔寶與張貴妃、孔貴嬪俱投於井",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -505,6 +510,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "南北復歸一統",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -534,6 +540,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "戶口五十萬",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -563,6 +570,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "兵籍六十萬",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -592,6 +600,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "弼幾為所敗",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -621,6 +630,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "韓擒虎自新林進攻",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -650,6 +660,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "賀若弼、韓擒虎爭功於帝前",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -679,6 +690,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "文帝兩賞之",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -708,6 +720,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "陳地舊制多仍其俗",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -737,6 +750,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "虞世基、虞世南兄弟入隋為官",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -766,6 +780,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "陳都督魯廣達拒戰",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -795,6 +810,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "任忠率降卒迎之",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -824,6 +840,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "距永嘉之亂凡二百七十餘年",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -860,6 +877,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_party": "後世官修",
    "_source_credibility": null,
    "_source_quote": "兵籍六十萬",
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -876,6 +894,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "quote_status": "paraphrase_unverified",
    "source": "sui_shu_llm",
    "confidence": 0.8,
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   },
@@ -902,6 +921,7 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
     ],
     "accept": "陳方視角的墓誌或詩文考據，能與《隋書》形成隋方／陳方雙聲敘事"
    },
+   "dim_source": "declared",
    "_party": "後世官修",
    "_faction": null
   }

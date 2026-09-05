@@ -287,6 +287,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -309,6 +310,7 @@ window.SANDBOX_SLICES["fushun"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -330,6 +332,7 @@ window.SANDBOX_SLICES["fushun"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -350,6 +353,7 @@ window.SANDBOX_SLICES["fushun"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -370,6 +374,7 @@ window.SANDBOX_SLICES["fushun"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "朝鲜官方",
    "_faction": null
   },
@@ -393,6 +398,7 @@ window.SANDBOX_SLICES["fushun"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -422,6 +428,7 @@ window.SANDBOX_SLICES["fushun"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -451,6 +458,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     4
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -477,6 +485,7 @@ window.SANDBOX_SLICES["fushun"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -502,6 +511,7 @@ window.SANDBOX_SLICES["fushun"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -528,6 +538,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -554,6 +565,7 @@ window.SANDBOX_SLICES["fushun"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -580,6 +592,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -606,6 +619,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -632,6 +646,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -658,6 +673,7 @@ window.SANDBOX_SLICES["fushun"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -684,6 +700,7 @@ window.SANDBOX_SLICES["fushun"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -709,6 +726,7 @@ window.SANDBOX_SLICES["fushun"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -735,6 +753,7 @@ window.SANDBOX_SLICES["fushun"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -761,6 +780,7 @@ window.SANDBOX_SLICES["fushun"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   }

@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["ningxia"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "battle",
   "region": "xibei",
   "title": "宁夏之役·哱拜之乱",
@@ -93,8 +94,7 @@ window.SANDBOX_SLICES["ningxia"] = {
   "page": "ningxia.html",
   "key": "ningxia",
   "scene_id": "ningxia",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -298,6 +298,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -325,6 +326,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -351,6 +353,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -377,6 +380,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -403,6 +407,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -429,6 +434,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -456,6 +462,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -482,6 +489,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -508,6 +516,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -534,6 +543,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -559,6 +569,7 @@ window.SANDBOX_SLICES["ningxia"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修官史",
    "_faction": null
   },
@@ -585,6 +596,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -619,6 +631,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -645,6 +658,7 @@ window.SANDBOX_SLICES["ningxia"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明廷官方",
    "_faction": null
   }

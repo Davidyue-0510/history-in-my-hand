@@ -153,6 +153,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -171,6 +172,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "猫父自述",
    "_faction": null
   },
@@ -189,6 +191,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -207,6 +210,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -225,6 +229,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -243,6 +248,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "叶为安视角",
    "_faction": null
   },
@@ -267,6 +273,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "作者叙述",
    "_faction": null
   },
@@ -285,6 +292,7 @@ window.SANDBOX_SLICES["novel_fandao_8"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "系统任务",
    "_faction": null
   }

@@ -307,6 +307,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -331,6 +332,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -355,6 +357,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -380,6 +383,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -403,6 +407,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
@@ -427,6 +432,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -451,6 +457,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -475,6 +482,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -499,6 +507,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -523,6 +532,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -547,6 +557,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -571,6 +582,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
@@ -602,6 +614,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
@@ -634,6 +647,7 @@ window.SANDBOX_SLICES["qin_mie_liu_guo"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   }

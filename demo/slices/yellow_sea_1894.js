@@ -246,6 +246,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修官史",
    "_faction": null
   },
@@ -270,6 +271,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "日本·后世修",
    "_faction": null
   },
@@ -294,6 +296,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -318,6 +321,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -342,6 +346,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -365,6 +370,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   },
@@ -389,6 +395,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -413,6 +420,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -437,6 +445,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -461,6 +470,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -485,6 +495,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -509,6 +520,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -533,6 +545,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -557,6 +570,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     2,
     6
    ],
+   "dim_source": "declared",
    "_party": "二手综述",
    "_faction": null
   },
@@ -588,6 +602,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "二手综述",
    "_faction": null
   }

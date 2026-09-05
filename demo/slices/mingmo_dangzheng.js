@@ -3,6 +3,7 @@
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
 window.SANDBOX_SLICES["mingmo_dangzheng"] = {
  "meta": {
+  "terrain_grid": "china_coarse",
   "kind": "court",
   "region": "court",
   "title": "明末党争·辽东导火索",
@@ -100,8 +101,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
   "page": "county.html?scene=mingmo_dangzheng",
   "key": "mingmo_dangzheng",
   "scene_id": "mingmo_dangzheng",
-  "vocab_pack": "ming_qing",
-  "terrain_grid": "china_coarse"
+  "vocab_pack": "ming_qing"
  },
  "sources": [
   {
@@ -330,6 +330,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -356,6 +357,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -383,6 +385,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -409,6 +412,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -435,6 +439,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -461,6 +466,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -488,6 +494,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -514,6 +521,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     1,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -541,6 +549,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -567,6 +576,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -593,6 +603,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -619,6 +630,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -646,6 +658,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -683,6 +696,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -709,6 +723,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -735,6 +750,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -760,6 +776,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -785,6 +802,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -810,6 +828,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
    "dims": [
     6
    ],
+   "dim_source": "fallback",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -836,6 +855,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -863,6 +883,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -889,6 +910,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -915,6 +937,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     3,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -942,6 +965,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -969,6 +993,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     4,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   },
@@ -1006,6 +1031,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     5,
     6
    ],
+   "dim_source": "declared",
    "_party": "学界",
    "_faction": null
   }

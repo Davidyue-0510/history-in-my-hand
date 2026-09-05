@@ -270,6 +270,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "安庆绪遣将尹子奇率兵围睢阳",
+   "dim_source": "fallback",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -298,6 +299,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "众才六千八百人",
+   "dim_source": "fallback",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -326,6 +328,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "射尹子奇，几获之",
+   "dim_source": "fallback",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -355,6 +358,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "子奇益兵久围",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -384,6 +388,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "城中食尽，初啖驴马，继食妇孺老弱",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -414,6 +419,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "巡杀爱妾烹以飨士",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -444,6 +450,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "远亦杀僮奴，括城中老弱凡食三万口",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -472,6 +479,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "南霁云突围乞师于贺兰进明",
+   "dim_source": "fallback",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -501,6 +509,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "进明拥兵不救",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -529,6 +538,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "十月城陷，巡、远俱被执",
+   "dim_source": "fallback",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -558,6 +568,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "不屈被害",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -587,6 +598,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "唐赠巡扬州大都督",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -616,6 +628,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "远荆州大都督",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -645,6 +658,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "睢阳之守障蔽江淮，贼不得南下",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   },
@@ -674,6 +688,7 @@ window.SANDBOX_SLICES["sui_yang_llm"] = {
    "_source_party": "宋·官修",
    "_source_credibility": null,
    "_source_quote": "括城中老弱凡食三万口",
+   "dim_source": "declared",
    "_party": "宋·官修",
    "_faction": null
   }
