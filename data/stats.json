@@ -2,7 +2,7 @@
   "scenes_total": 162,
   "historical": 153,
   "fictional": 9,
-  "assertions_total": 2494,
+  "assertions_total": 2534,
   "sources_total": 123,
   "factions_total": 9,
   "vocab_packs": [
@@ -318,14 +318,14 @@
       "id": "chengpu",
       "title": "城濮之战",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 20,
       "factions": {}
     },
     {
       "id": "boju",
       "title": "柏举之战",
       "kind": "battle",
-      "assertions": 17,
+      "assertions": 21,
       "factions": {}
     },
     {
@@ -339,7 +339,7 @@
       "id": "gaixia",
       "title": "垓下之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -409,7 +409,7 @@
       "id": "hulao",
       "title": "虎牢关之战",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -753,7 +753,7 @@
       "id": "wuwang",
       "title": "武王克商",
       "kind": "dynasty",
-      "assertions": 3,
+      "assertions": 7,
       "factions": {}
     },
     {
@@ -781,7 +781,7 @@
       "id": "xinhai",
       "title": "辛亥革命",
       "kind": "dynasty",
-      "assertions": 14,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -817,7 +817,7 @@
       "id": "liangshui",
       "title": "两税法",
       "kind": "reform",
-      "assertions": 11,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -910,7 +910,7 @@
       "id": "beijiu",
       "title": "杯酒释兵权",
       "kind": "court",
-      "assertions": 11,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -938,7 +938,7 @@
       "id": "baijia",
       "title": "百家争鸣",
       "kind": "thought",
-      "assertions": 7,
+      "assertions": 11,
       "factions": {}
     },
     {
@@ -994,7 +994,7 @@
       "id": "zhangqian",
       "title": "张骞通西域",
       "kind": "frontier",
-      "assertions": 11,
+      "assertions": 15,
       "factions": {}
     },
     {

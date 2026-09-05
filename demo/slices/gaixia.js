@@ -20,6 +20,10 @@ window.SANDBOX_SLICES["gaixia"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "qin_han",
@@ -501,6 +505,110 @@ window.SANDBOX_SLICES["gaixia"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAIXIA_THK1",
+   "subject": "event:gx_han",
+   "predicate": "围歼战术",
+   "value_text": "汉军围垓下，“四面楚歌”心理战；韩信十面埋伏，车骑协同",
+   "time": {
+    "era_text": "汉高帝五年（前202）",
+    "start": "-202-01-01",
+    "end": "-202-12-31",
+    "gregorian_year": -202
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "四面楚歌",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "围困与心理战",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAIXIA_THK2",
+   "subject": "event:gx_han",
+   "predicate": "联军分封",
+   "value_text": "刘邦“捐关以东”封韩信、彭越、英布为诸侯王，联军体制破楚",
+   "time": {
+    "era_text": "汉高帝五年（前202）",
+    "start": "-202-01-01",
+    "end": "-202-12-31",
+    "gregorian_year": -202
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "捐关以东",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "以分封换联军",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAIXIA_THK3",
+   "subject": "event:gx_han",
+   "predicate": "楚军溃散",
+   "value_text": "楚军“兵少食尽”，江东子弟散亡；“霸王别姬”反映军队解体",
+   "time": {
+    "era_text": "汉高帝五年（前202）",
+    "start": "-202-01-01",
+    "end": "-202-12-31",
+    "gregorian_year": -202
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "兵少食尽",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "楚军士气崩溃",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GAIXIA_THK4",
+   "subject": "event:gx_han",
+   "predicate": "制度博弈",
+   "value_text": "楚汉相争“化家为国”，郡县与分封并行的权力安排",
+   "time": {
+    "era_text": "汉高帝五年（前202）",
+    "start": "-202-01-01",
+    "end": "-202-12-31",
+    "gregorian_year": -202
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "化家为国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "郡国并行博弈",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

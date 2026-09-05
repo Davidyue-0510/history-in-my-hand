@@ -199,15 +199,15 @@
     {
       "scene": "baijia",
       "name": "baijia",
-      "total": 7,
+      "total": 11,
       "layers": {
         "scholarship": 2,
-        "record": 3,
+        "record": 7,
         "inference": 1,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 7
+        "综合史料": 11
       },
       "faction_counts": {},
       "event_count": 2,
@@ -236,15 +236,15 @@
     {
       "scene": "beijiu",
       "name": "beijiu",
-      "total": 11,
+      "total": 15,
       "layers": {
-        "scholarship": 2,
-        "record": 6,
+        "scholarship": 3,
+        "record": 9,
         "inference": 2,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 11
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 2,
@@ -273,14 +273,14 @@
     {
       "scene": "boju",
       "name": "boju",
-      "total": 17,
+      "total": 21,
       "layers": {
-        "scholarship": 3,
-        "record": 13,
+        "scholarship": 4,
+        "record": 16,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 17
+        "综合史料": 21
       },
       "faction_counts": {},
       "event_count": 3,
@@ -405,14 +405,14 @@
     {
       "scene": "chengpu",
       "name": "chengpu",
-      "total": 16,
+      "total": 20,
       "layers": {
-        "scholarship": 3,
-        "record": 10,
+        "scholarship": 4,
+        "record": 13,
         "gap": 3
       },
       "party_counts": {
-        "综合史料": 16
+        "综合史料": 20
       },
       "faction_counts": {},
       "event_count": 3,
@@ -839,14 +839,14 @@
     {
       "scene": "gaixia",
       "name": "gaixia",
-      "total": 14,
+      "total": 18,
       "layers": {
-        "scholarship": 3,
-        "record": 10,
+        "scholarship": 4,
+        "record": 13,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 14
+        "综合史料": 18
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1214,14 +1214,14 @@
     {
       "scene": "hulao",
       "name": "hulao",
-      "total": 15,
+      "total": 19,
       "layers": {
-        "scholarship": 3,
-        "record": 10,
+        "scholarship": 4,
+        "record": 13,
         "gap": 2
       },
       "party_counts": {
-        "综合史料": 15
+        "综合史料": 19
       },
       "faction_counts": {},
       "event_count": 3,
@@ -1586,15 +1586,15 @@
     {
       "scene": "liangshui",
       "name": "liangshui",
-      "total": 11,
+      "total": 15,
       "layers": {
-        "scholarship": 2,
-        "record": 7,
+        "scholarship": 3,
+        "record": 10,
         "inference": 1,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 11
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 2,
@@ -2581,13 +2581,14 @@
     {
       "scene": "wuwang",
       "name": "wuwang",
-      "total": 3,
+      "total": 7,
       "layers": {
-        "scholarship": 2,
-        "gap": 1
+        "scholarship": 3,
+        "gap": 1,
+        "record": 3
       },
       "party_counts": {
-        "综合史料": 3
+        "综合史料": 7
       },
       "faction_counts": {},
       "event_count": 2,
@@ -2683,15 +2684,15 @@
     {
       "scene": "xinhai",
       "name": "xinhai",
-      "total": 14,
+      "total": 18,
       "layers": {
-        "scholarship": 3,
-        "record": 7,
+        "scholarship": 4,
+        "record": 10,
         "inference": 3,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 14
+        "综合史料": 18
       },
       "faction_counts": {},
       "event_count": 3,
@@ -2979,15 +2980,15 @@
     {
       "scene": "zhangqian",
       "name": "zhangqian",
-      "total": 11,
+      "total": 15,
       "layers": {
-        "scholarship": 2,
-        "record": 7,
+        "scholarship": 3,
+        "record": 10,
         "inference": 1,
         "gap": 1
       },
       "party_counts": {
-        "综合史料": 11
+        "综合史料": 15
       },
       "faction_counts": {},
       "event_count": 2,
@@ -3537,7 +3538,7 @@
       "scene_names": [
         "baijia"
       ],
-      "total": 1,
+      "total": 5,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -3568,12 +3569,12 @@
       "scene_names": [
         "beijiu"
       ],
-      "total": 8,
+      "total": 12,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.167,
-      "gap_rate": 0.125,
+      "divergence": 0.1,
+      "gap_rate": 0.083,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -3909,7 +3910,7 @@
       "scene_names": [
         "boju"
       ],
-      "total": 7,
+      "total": 11,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -4374,12 +4375,12 @@
       "scene_names": [
         "chengpu"
       ],
-      "total": 7,
+      "total": 11,
       "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.286,
+      "gap_rate": 0.182,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -9137,12 +9138,12 @@
       "scene_names": [
         "gaixia"
       ],
-      "total": 6,
+      "total": 10,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.167,
+      "gap_rate": 0.1,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -9757,7 +9758,7 @@
       "scene_names": [
         "hulao"
       ],
-      "total": 3,
+      "total": 7,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -11960,12 +11961,12 @@
       "scene_names": [
         "liangshui"
       ],
-      "total": 9,
+      "total": 13,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.111,
+      "gap_rate": 0.077,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -14511,12 +14512,12 @@
       "scene_names": [
         "wuwang"
       ],
-      "total": 2,
+      "total": 6,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.5,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -14604,12 +14605,12 @@
       "scene_names": [
         "xinhai"
       ],
-      "total": 5,
+      "total": 9,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.2,
+      "gap_rate": 0.111,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -16030,12 +16031,12 @@
       "scene_names": [
         "zhangqian"
       ],
-      "total": 7,
+      "total": 11,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.143,
+      "gap_rate": 0.091,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

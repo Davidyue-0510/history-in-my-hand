@@ -19,6 +19,10 @@ window.SANDBOX_SLICES["wuwang"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "qin",
@@ -205,6 +209,110 @@ window.SANDBOX_SLICES["wuwang"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WUWANG_THK1",
+   "subject": "event:ww_1048",
+   "predicate": "牧野之战",
+   "value_text": "周军以车兵为主（“戎车三百辆”），牧野之战临阵“前徒倒戈”",
+   "time": {
+    "era_text": "周武王十一年（约前1046）",
+    "start": "-1046-01-01",
+    "end": "-1046-12-31",
+    "gregorian_year": -1046
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "前徒倒戈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "车战与阵前倒戈",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WUWANG_THK2",
+   "subject": "event:ww_1048",
+   "predicate": "分封宗法",
+   "value_text": "周灭商后行分封制与宗法制，立嫡长子继承；“天命”转移",
+   "time": {
+    "era_text": "周武王十一年（约前1046）",
+    "start": "-1046-01-01",
+    "end": "-1046-12-31",
+    "gregorian_year": -1046
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "分封宗法",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "封建诸侯",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WUWANG_THK3",
+   "subject": "event:ww_1048",
+   "predicate": "方国联军",
+   "value_text": "庸、蜀、羌、髳、微、卢、彭、濮等方国联军，夷夏同盟伐纣",
+   "time": {
+    "era_text": "周武王十一年（约前1046）",
+    "start": "-1046-01-01",
+    "end": "-1046-12-31",
+    "gregorian_year": -1046
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "八国联军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "方国同盟",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "WUWANG_THK4",
+   "subject": "event:ww_1048",
+   "predicate": "敬天保民",
+   "value_text": "由神权政治转向“敬天保民”的德治思想，确立周代政统",
+   "time": {
+    "era_text": "周武王十一年（约前1046）",
+    "start": "-1046-01-01",
+    "end": "-1046-12-31",
+    "gregorian_year": -1046
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "敬天保民",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "德治思想确立",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

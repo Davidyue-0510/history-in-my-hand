@@ -20,6 +20,10 @@ window.SANDBOX_SLICES["hulao"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "sui_tang",
@@ -539,6 +543,110 @@ window.SANDBOX_SLICES["hulao"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HULAO_THK1",
+   "subject": "event:hl_shi",
+   "predicate": "坚城疲敌",
+   "value_text": "唐军据虎牢坚城疲敌，“牧马诱敌”；玄甲军骑兵突击破阵",
+   "time": {
+    "era_text": "武德四年（621）",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "牧马诱敌",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "坚城+骑兵突击",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HULAO_THK2",
+   "subject": "event:hl_shi",
+   "predicate": "军府雏形",
+   "value_text": "李世民以“天策上将”总制出征，藩镇军府（折冲府前身）初显",
+   "time": {
+    "era_text": "武德四年（621）",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "天策上将",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军府制萌芽",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HULAO_THK3",
+   "subject": "event:hl_shi",
+   "predicate": "山东归唐",
+   "value_text": "“据武牢之险”，山东豪杰归唐；窦建德河北义军与王世充合流失败",
+   "time": {
+    "era_text": "武德四年（621）",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "山东豪杰归唐",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "地方势力归附",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HULAO_THK4",
+   "subject": "event:hl_shi",
+   "predicate": "围城打援",
+   "value_text": "“先破窦建德，王世充自下”的围城打援、歼灭战思想",
+   "time": {
+    "era_text": "武德四年（621）",
+    "start": "621-01-01",
+    "end": "621-12-31",
+    "gregorian_year": 621
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "先破窦建德",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "歼灭战战略",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

@@ -21,6 +21,9 @@ window.SANDBOX_SLICES["zhangqian"] = {
   "timeline_title": "张骞凿空时间轴",
   "dims": [
    1,
+   2,
+   4,
+   5,
    6
   ],
   "epoch": "han",
@@ -410,6 +413,110 @@ window.SANDBOX_SLICES["zhangqian"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGQIAN_THK1",
+   "subject": "event:zq_138",
+   "predicate": "凿空西域",
+   "value_text": "张骞“凿空”西域，丝绸之路开通；“驰命走驿，不绝于时月”",
+   "time": {
+    "era_text": "建元三年（前138）",
+    "start": "-138-01-01",
+    "end": "-138-12-31",
+    "gregorian_year": -138
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "凿空西域",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "丝路开通",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGQIAN_THK2",
+   "subject": "event:zq_138",
+   "predicate": "断匈右臂",
+   "value_text": "“断匈奴右臂”战略，汉设河西四郡（武威、张掖、酒泉、敦煌）经营西域",
+   "time": {
+    "era_text": "建元三年（前138）",
+    "start": "-138-01-01",
+    "end": "-138-12-31",
+    "gregorian_year": -138
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "断匈奴右臂",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "河西四郡",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGQIAN_THK3",
+   "subject": "event:zq_138",
+   "predicate": "西域通使",
+   "value_text": "“汉之号令班西域”，西域诸国置译长通使；乌孙、大宛、大月氏往来",
+   "time": {
+    "era_text": "建元三年（前138）",
+    "start": "-138-01-01",
+    "end": "-138-12-31",
+    "gregorian_year": -138
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "西域通使",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "诸国往来",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHANGQIAN_THK4",
+   "subject": "event:zq_138",
+   "predicate": "天下秩序",
+   "value_text": "“大一统”疆域观拓展，“海内为一”的天下秩序外延",
+   "time": {
+    "era_text": "建元三年（前138）",
+    "start": "-138-01-01",
+    "end": "-138-12-31",
+    "gregorian_year": -138
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "大一统",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "疆域观扩展",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

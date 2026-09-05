@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["xinhai"] = {
    "person:yuan_shikai": "袁世凯"
   },
   "dims": [
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "qin",
@@ -490,6 +493,110 @@ window.SANDBOX_SLICES["xinhai"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XINHAI_THK1",
+   "subject": "event:xh_1010",
+   "predicate": "新军主力",
+   "value_text": "湖北新军（陆军第八镇等）为革命主力；汉阳兵工厂供应枪械",
+   "time": {
+    "era_text": "辛亥八月十九（1911）",
+    "start": "1911-01-01",
+    "end": "1911-12-31",
+    "gregorian_year": 1911
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "新军起义",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "新军与兵工",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XINHAI_THK2",
+   "subject": "event:xh_1010",
+   "predicate": "清末新政",
+   "value_text": "废科举、练新军、预备立宪的清末新政为革命铺垫；“驱除鞑虏，恢复中华”",
+   "time": {
+    "era_text": "辛亥八月十九（1911）",
+    "start": "1911-01-01",
+    "end": "1911-12-31",
+    "gregorian_year": 1911
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "清末新政",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "新政与革命",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XINHAI_THK3",
+   "subject": "event:xh_1010",
+   "predicate": "排满合流",
+   "value_text": "“排满”民族情绪与立宪派、革命派合流；共进会、文学社等会党动员",
+   "time": {
+    "era_text": "辛亥八月十九（1911）",
+    "start": "1911-01-01",
+    "end": "1911-12-31",
+    "gregorian_year": 1911
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "排满合流",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "会党与阶层动员",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XINHAI_THK4",
+   "subject": "event:xh_1010",
+   "predicate": "三民主义",
+   "value_text": "“三民主义”（民族、民权、民生）思想指导；“敢有帝制自为者，天下共击之”",
+   "time": {
+    "era_text": "辛亥八月十九（1911）",
+    "start": "1911-01-01",
+    "end": "1911-12-31",
+    "gregorian_year": 1911
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "三民主义",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "革命指导思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

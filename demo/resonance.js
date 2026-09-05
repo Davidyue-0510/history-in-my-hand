@@ -201,15 +201,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "baijia",
    "name": "baijia",
-   "total": 7,
+   "total": 11,
    "layers": {
     "scholarship": 2,
-    "record": 3,
+    "record": 7,
     "inference": 1,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 7
+    "综合史料": 11
    },
    "faction_counts": {},
    "event_count": 2,
@@ -238,15 +238,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "beijiu",
    "name": "beijiu",
-   "total": 11,
+   "total": 15,
    "layers": {
-    "scholarship": 2,
-    "record": 6,
+    "scholarship": 3,
+    "record": 9,
     "inference": 2,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 15
    },
    "faction_counts": {},
    "event_count": 2,
@@ -275,14 +275,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "boju",
    "name": "boju",
-   "total": 17,
+   "total": 21,
    "layers": {
-    "scholarship": 3,
-    "record": 13,
+    "scholarship": 4,
+    "record": 16,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 17
+    "综合史料": 21
    },
    "faction_counts": {},
    "event_count": 3,
@@ -407,14 +407,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "chengpu",
    "name": "chengpu",
-   "total": 16,
+   "total": 20,
    "layers": {
-    "scholarship": 3,
-    "record": 10,
+    "scholarship": 4,
+    "record": 13,
     "gap": 3
    },
    "party_counts": {
-    "综合史料": 16
+    "综合史料": 20
    },
    "faction_counts": {},
    "event_count": 3,
@@ -841,14 +841,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "gaixia",
    "name": "gaixia",
-   "total": 14,
+   "total": 18,
    "layers": {
-    "scholarship": 3,
-    "record": 10,
+    "scholarship": 4,
+    "record": 13,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 14
+    "综合史料": 18
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1216,14 +1216,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "hulao",
    "name": "hulao",
-   "total": 15,
+   "total": 19,
    "layers": {
-    "scholarship": 3,
-    "record": 10,
+    "scholarship": 4,
+    "record": 13,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 19
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1588,15 +1588,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "liangshui",
    "name": "liangshui",
-   "total": 11,
+   "total": 15,
    "layers": {
-    "scholarship": 2,
-    "record": 7,
+    "scholarship": 3,
+    "record": 10,
     "inference": 1,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 15
    },
    "faction_counts": {},
    "event_count": 2,
@@ -2583,13 +2583,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "wuwang",
    "name": "wuwang",
-   "total": 3,
+   "total": 7,
    "layers": {
-    "scholarship": 2,
-    "gap": 1
+    "scholarship": 3,
+    "gap": 1,
+    "record": 3
    },
    "party_counts": {
-    "综合史料": 3
+    "综合史料": 7
    },
    "faction_counts": {},
    "event_count": 2,
@@ -2685,15 +2686,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "xinhai",
    "name": "xinhai",
-   "total": 14,
+   "total": 18,
    "layers": {
-    "scholarship": 3,
-    "record": 7,
+    "scholarship": 4,
+    "record": 10,
     "inference": 3,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 14
+    "综合史料": 18
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2981,15 +2982,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "zhangqian",
    "name": "zhangqian",
-   "total": 11,
+   "total": 15,
    "layers": {
-    "scholarship": 2,
-    "record": 7,
+    "scholarship": 3,
+    "record": 10,
     "inference": 1,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 15
    },
    "faction_counts": {},
    "event_count": 2,

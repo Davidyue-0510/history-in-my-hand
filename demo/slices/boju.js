@@ -20,6 +20,10 @@ window.SANDBOX_SLICES["boju"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -584,6 +588,110 @@ window.SANDBOX_SLICES["boju"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BOJU_THK1",
+   "subject": "event:bj_wu",
+   "predicate": "奔袭战术",
+   "value_text": "吴以舟师溯淮、舍舟登陆，千里奔袭；车步协同破楚郢都",
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-506-01-01",
+    "end": "-506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "吴舟师溯淮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "水陆协同远程奔袭",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BOJU_THK2",
+   "subject": "event:bj_wu",
+   "predicate": "军制弊端",
+   "value_text": "吴“三分其师”疲楚；楚沈尹戌献策未果，军制调度失灵",
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-506-01-01",
+    "end": "-506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "三分其师",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "楚国军制弊端暴露",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BOJU_THK3",
+   "subject": "event:bj_wu",
+   "predicate": "小国倒戈",
+   "value_text": "吴楚之争牵动蔡、唐等小国倒戈；“民劳则疲”的民心向背",
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-506-01-01",
+    "end": "-506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "蔡唐倒戈",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "小国归附影响战局",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BOJU_THK4",
+   "subject": "event:bj_wu",
+   "predicate": "兵学实战",
+   "value_text": "孙武《孙子兵法》“攻其无备，出其不意”首次大规模实战检验",
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-506-01-01",
+    "end": "-506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "攻其无备",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "兵学思想实战化",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

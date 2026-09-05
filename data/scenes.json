@@ -3114,6 +3114,10 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -3192,6 +3196,10 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -3350,6 +3358,10 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "qin_han",
@@ -4148,6 +4160,10 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "sui_tang",
@@ -7445,6 +7461,10 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "qin",
@@ -7757,7 +7777,10 @@
     "person:yuan_shikai": "袁世凯"
    },
    "dims": [
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "qin",
@@ -8062,7 +8085,11 @@
     "person:yangyan": "杨炎"
    },
    "dims": [
+    1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -8996,7 +9023,10 @@
     "person:shishouxin": "石守信"
    },
    "dims": [
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "song",
@@ -9300,6 +9330,10 @@
     "person:zhuangzi": "庄子"
    },
    "dims": [
+    1,
+    2,
+    3,
+    4,
     5,
     6
    ],
@@ -9915,6 +9949,9 @@
    "timeline_title": "张骞凿空时间轴",
    "dims": [
     1,
+    2,
+    4,
+    5,
     6
    ],
    "epoch": "han",

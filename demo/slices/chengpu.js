@@ -20,6 +20,10 @@ window.SANDBOX_SLICES["chengpu"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -568,6 +572,110 @@ window.SANDBOX_SLICES["chengpu"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPU_THK1",
+   "subject": "event:cp_chu",
+   "predicate": "军制",
+   "value_text": "晋文公作三军（中军、上军、下军），以车战为主；楚军亦分左右师车兵",
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "晋文公作三军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "春秋晋楚军制以车兵为核心",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPU_THK2",
+   "subject": "event:cp_chu",
+   "predicate": "军制改革",
+   "value_text": "晋“作三军”以卿将中军，确立世卿军制，军政合一",
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "作三军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "世卿军制",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPU_THK3",
+   "subject": "event:cp_chu",
+   "predicate": "联军构成",
+   "value_text": "晋率齐、秦、宋诸侯联军，楚率陈、蔡、郑、许；“兵者，国之大事”",
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "晋率齐秦宋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "参战为诸侯联军",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPU_THK4",
+   "subject": "event:cp_chu",
+   "predicate": "战略思想",
+   "value_text": "“退避三舍”（一舍三十里）彰显春秋礼战与信义；“师直为壮，曲为老”",
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-632-01-01",
+    "end": "-632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "退避三舍",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "礼战观念",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

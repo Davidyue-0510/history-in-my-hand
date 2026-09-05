@@ -18,6 +18,10 @@ window.SANDBOX_SLICES["baijia"] = {
    "person:zhuangzi": "庄子"
   },
   "dims": [
+   1,
+   2,
+   3,
+   4,
    5,
    6
   ],
@@ -305,6 +309,110 @@ window.SANDBOX_SLICES["baijia"] = {
    },
    "dims": [
     5
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BAIJIA_THK1",
+   "subject": "event:bj_350",
+   "predicate": "稷下学宫",
+   "value_text": "齐临淄稷下学宫为辩论中心，“不治而议论”的士人汇聚",
+   "time": {
+    "era_text": "战国中叶（约前350）",
+    "start": "-350-01-01",
+    "end": "-350-12-31",
+    "gregorian_year": -350
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "稷下学宫",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "学术中心",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BAIJIA_THK2",
+   "subject": "event:bj_350",
+   "predicate": "私学兴盛",
+   "value_text": "“处士横议”，私学兴盛，竹简帛书传播；儒墨道法名农诸家并起",
+   "time": {
+    "era_text": "战国中叶（约前350）",
+    "start": "-350-01-01",
+    "end": "-350-12-31",
+    "gregorian_year": -350
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "处士横议",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "私学与传播",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BAIJIA_THK3",
+   "subject": "event:bj_350",
+   "predicate": "养士之风",
+   "value_text": "“士”阶层崛起，“礼贤下士”养士（孟尝、平原、信陵、春申四公子）",
+   "time": {
+    "era_text": "战国中叶（约前350）",
+    "start": "-350-01-01",
+    "end": "-350-12-31",
+    "gregorian_year": -350
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "礼贤下士",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "士阶层崛起",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BAIJIA_THK4",
+   "subject": "event:bj_350",
+   "predicate": "诸子竞出",
+   "value_text": "儒（孔孟）墨（墨翟）道（老庄）法（商鞅、韩非）竞相，“百家殊方”",
+   "time": {
+    "era_text": "战国中叶（约前350）",
+    "start": "-350-01-01",
+    "end": "-350-12-31",
+    "gregorian_year": -350
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "百家殊方",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "诸子流派",
+   "dims": [
+    4
    ],
    "dim_source": "declared",
    "_party": "综合史料",

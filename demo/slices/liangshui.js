@@ -17,7 +17,11 @@ window.SANDBOX_SLICES["liangshui"] = {
    "person:yangyan": "杨炎"
   },
   "dims": [
+   1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -407,6 +411,110 @@ window.SANDBOX_SLICES["liangshui"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIANGSHUI_THK1",
+   "subject": "event:ls_780",
+   "predicate": "税期农时",
+   "value_text": "两税分夏秋两季：夏输无过六月，秋输无过十一月，适应南北农时",
+   "time": {
+    "era_text": "建中元年（780）",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "夏秋两季",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "按农时征税",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIANGSHUI_THK2",
+   "subject": "event:ls_780",
+   "predicate": "资产税法",
+   "value_text": "“户无主客，以见居为簿；人无丁中，以贫富为差”，按资产定税",
+   "time": {
+    "era_text": "建中元年（780）",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "以贫富为差",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "资产税原则",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIANGSHUI_THK3",
+   "subject": "event:ls_780",
+   "predicate": "客户入籍",
+   "value_text": "“唯以资产为宗，不以丁身为本”，减轻无地农民负担，客户（流民）入籍",
+   "time": {
+    "era_text": "建中元年（780）",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "客户入籍",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "客户编入",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "LIANGSHUI_THK4",
+   "subject": "event:ls_780",
+   "predicate": "量出制入",
+   "value_text": "“量出制入”原则，由租庸调制转向资产税，影响后世税制千年",
+   "time": {
+    "era_text": "建中元年（780）",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "量出制入",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "税制范式转移",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }
