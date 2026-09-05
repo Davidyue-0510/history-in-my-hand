@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_hexi_sijun_llm_01",
+   "subject": "event:ev_hexi_sijun_llm_01",
+   "year": -121,
+   "era": "元狩二年",
+   "title": "霍去病击匈奴",
+   "kind": "战事",
+   "text": "霍去病击匈奴，浑邪王降",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hexi_sijun_llm_02",
+   "subject": "event:ev_hexi_sijun_llm_02",
+   "year": -121,
+   "era": "元狩二年",
+   "title": "置河西四郡",
+   "kind": "建置",
+   "text": "置武威酒泉张掖敦煌四郡",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hexi_sijun_llm_03",
+   "subject": "event:ev_hexi_sijun_llm_03",
+   "year": -121,
+   "era": "元狩二年",
+   "title": "徙民实边",
+   "kind": "行政",
+   "text": "徙民实河西，通西域道",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hexi_sijun_llm_04",
+   "subject": "event:ev_hexi_sijun_llm_04",
+   "year": -121,
+   "era": "元狩二年",
+   "title": "张骞凿空",
+   "kind": "外交",
+   "text": "张骞使月氏大宛，丝路通",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

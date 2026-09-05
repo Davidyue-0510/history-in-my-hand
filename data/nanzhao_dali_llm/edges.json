@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "taihe_cheng",
+   "to": "dali",
+   "type": "military",
+   "label": "南诏迁都大理",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  }
+ ]
+}

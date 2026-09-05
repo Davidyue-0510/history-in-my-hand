@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "huangdaopo_llm_yazhou",
+   "to": "huangdaopo_llm_wunijing",
+   "type": "military",
+   "label": "黄道婆归乡路线",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  }
+ ]
+}

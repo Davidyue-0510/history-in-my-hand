@@ -186,6 +186,16 @@
    "id": "nan_bei_chao",
    "name": "南北朝",
    "note": "420-589 南朝宋齐梁陈与北朝魏齐周对峙；隋滅陳（589）終結分裂、南北復歸一統。核心地緣：建康—長江防線—江左。"
+  },
+  {
+   "id": "taiwan",
+   "name": "臺灣",
+   "note": "明鄭收復與清治臺灣（東南海疆）"
+  },
+  {
+   "id": "yunnan",
+   "name": "雲南",
+   "note": "南詔—大理地方政權與西南邊疆"
   }
  ],
  "order": [
@@ -336,7 +346,12 @@
   "qin_mie_liu_guo_llm",
   "chuhai_llm",
   "sui_mie_chen_llm",
-  "sui_yang_llm"
+  "sui_yang_llm",
+  "zheng_chenggong_taiwan_llm",
+  "xiyu_dunhu_llm",
+  "hexi_sijun_llm",
+  "nanzhao_dali_llm",
+  "huangdaopo_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -12339,6 +12354,459 @@
     6
    ],
    "province": "henan"
+  },
+  "zheng_chenggong_taiwan_llm": {
+   "kind": "battle",
+   "region": "taiwan",
+   "province": "taiwan",
+   "title": "郑成功收复台湾（1661–1662）",
+   "dossier_label": "zheng_chenggong_taiwan_llm",
+   "subtitle": "",
+   "primary_place": "xiamen",
+   "dossier_event": "event:ev_zheng_chenggong_taiwan_llm_01",
+   "vocab_pack": "zheng_chenggong_taiwan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→南明抗清的民族復仇意志與海上貿易集團支持 vs 荷蘭東印度公司殖民統治缺乏本地認同"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→熱蘭遮城棱堡防禦 vs 鄭軍水師封鎖海路、斷接濟迫降"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→鄭氏招沿海遷民墾臺、屯田自給；荷方僅據城堡與少數原住民村社"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→自廈門東征、鹿耳門登陸，據臺控海峽，切斷荷蘭東亞航路"
+    }
+   },
+   "subject_names": [
+    "person:ZHE__p01",
+    "person:ZHE__p02",
+    "place:xiamen",
+    "place:luerermen",
+    "place:taiwan",
+    "place:re_lan_che_cheng",
+    "event:ev_zheng_chenggong_taiwan_llm_01",
+    "event:ev_zheng_chenggong_taiwan_llm_02",
+    "event:ev_zheng_chenggong_taiwan_llm_03",
+    "event:ev_zheng_chenggong_taiwan_llm_04"
+   ]
+  },
+  "xiyu_dunhu_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "xinjiang",
+   "title": "西域都护府之设（前60）",
+   "dossier_label": "xiyu_dunhu_llm",
+   "subtitle": "",
+   "primary_place": "wulei",
+   "dossier_event": "event:ev_xiyu_dunhu_llm_01",
+   "vocab_pack": "xiyu_dunhu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→漢設西域都護、頒號令於三十六國，將西域納入朝貢—都護體系 vs 匈奴勢力退出"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→自敦煌西至鹽澤起亭、烽燧相望，驛站與屯田支撐長程管控"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→日逐王率眾降漢、西域諸國質子入侍，兵民一體的邊疆編戶"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→烏壘城居中鎮撫，控天山南北通道，斷匈奴右臂"
+    }
+   },
+   "subject_names": [
+    "person:XIY__p01",
+    "person:XIY__p02",
+    "place:wulei",
+    "place:dunhuang",
+    "place:yanze",
+    "event:ev_xiyu_dunhu_llm_01",
+    "event:ev_xiyu_dunhu_llm_02"
+   ]
+  },
+  "hexi_sijun_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "汉武帝经营河西·河西四郡（前121）",
+   "dossier_label": "hexi_sijun_llm",
+   "subtitle": "",
+   "primary_place": "wuwei",
+   "dossier_event": "event:ev_hexi_sijun_llm_01",
+   "vocab_pack": "hexi_sijun_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→漢置四郡、徙民實邊，河西由游牧變為郡縣；匈奴渾邪王殺休屠王率眾降"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→四郡+玉門/陽關構築河西走廊防禦與驛傳，保障絲路東段"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→徙中原民實邊、戍卒屯田，農牧混合的邊疆社會"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→河西走廊連接長安與西域，扼絲路咽喉，張騫鑿空於此通達"
+    }
+   },
+   "subject_names": [
+    "person:HEX__p01",
+    "person:HEX__p02",
+    "person:HEX__p03",
+    "person:HEX__p04",
+    "person:HEX__p05",
+    "place:wuwei",
+    "place:jiuquan",
+    "place:zhangye",
+    "place:dunhuang",
+    "place:chang_an",
+    "place:yumen_guan",
+    "place:yang_guan",
+    "place:yuezhi",
+    "place:dayuan",
+    "place:anxi",
+    "event:ev_hexi_sijun_llm_01",
+    "event:ev_hexi_sijun_llm_02",
+    "event:ev_hexi_sijun_llm_03",
+    "event:ev_hexi_sijun_llm_04"
+   ]
+  },
+  "nanzhao_dali_llm": {
+   "kind": "fusion",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "南诏统一六诏·大理国（738–1253）",
+   "dossier_label": "nanzhao_dali_llm",
+   "subtitle": "",
+   "primary_place": "taihe_cheng",
+   "dossier_event": "event:ev_nanzhao_dali_llm_01",
+   "vocab_pack": "nanzhao_dali_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→皮羅閣並六詔、唐冊云南王，南詔奴隸制政權與唐羈縻體系既臣且叛"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→太和城依山築城、滇地鹽鐵與馬匹支撐戰力；唐天寶戰瀘水唐師敗"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→役屬群蠻、整合烏蠻白蠻，段思平後依白蠻大姓建大理"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→據雲南高原、控西南茶馬道，北接吐蕃、東鄰唐劍南，三角博弈"
+    }
+   },
+   "subject_names": [
+    "person:NAN__p01",
+    "person:NAN__p02",
+    "person:NAN__p03",
+    "place:taihe_cheng",
+    "place:dali",
+    "place:lushui",
+    "event:ev_nanzhao_dali_llm_01",
+    "event:ev_nanzhao_dali_llm_02",
+    "event:ev_nanzhao_dali_llm_03"
+   ]
+  },
+  "huangdaopo_llm": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "黄道婆传棉纺之法（元贞间）",
+   "dossier_label": "huangdaopo_llm",
+   "subtitle": "",
+   "primary_place": "huangdaopo_llm_yazhou",
+   "dossier_event": "event:ev_huangdaopo_llm_01",
+   "vocab_pack": "huangdaopo_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→元江南棉紡由家庭副業轉為專業手工，黃道婆傳黎族技法是技術擴散節點"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→捍彈紡器具改良、錯紗配色，松江布産能與流通優於舊法"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→烏泥涇千餘家以紡織為業，婦女勞動組織化，衣被天下"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→松江濱海棉區+江南市場，技術擴散改寫元明紡織地理格局"
+    }
+   },
+   "subject_names": [
+    "person:HUA__p01",
+    "person:HUA__p02",
+    "place:huangdaopo_llm_yazhou",
+    "place:huangdaopo_llm_songjiang",
+    "place:huangdaopo_llm_wunijing",
+    "event:ev_huangdaopo_llm_01",
+    "event:ev_huangdaopo_llm_02",
+    "event:ev_huangdaopo_llm_03"
+   ]
   }
  },
  "dimensions": {

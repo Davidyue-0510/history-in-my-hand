@@ -1,0 +1,29 @@
+{
+ "_comment": "huangdaopo_llm vocab pack (world-gen 手補完整版)",
+ "parties": [
+  "元笔记",
+  "综合史料"
+ ],
+ "party_bucket": {
+  "元笔记": "元笔记",
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "元笔记": "#8C6239",
+  "综合史料": "#9B7B5A"
+ },
+ "factions": {},
+ "faction_colors": {},
+ "layers": [
+  "record",
+  "scholarship",
+  "inference",
+  "gap",
+  "conflict"
+ ],
+ "quote_status": [
+  "verbatim",
+  "paraphrase_unverified",
+  "generated"
+ ]
+}

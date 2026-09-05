@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 148 个切片
+// 权威数据源：data/scenes.json 注册的 153 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 148 个切片",
+  "slice": "multi-scene · 153 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -15,7 +15,10 @@ window.SANDBOX_DATA = {
    "chuhai_llm",
    "feishui_llm",
    "guandu_llm",
+   "hexi_sijun_llm",
+   "huangdaopo_llm",
    "ming_qing",
+   "nanzhao_dali_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
    "san_guo",
@@ -23,7 +26,9 @@ window.SANDBOX_DATA = {
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "tang",
-   "three_campaigns"
+   "three_campaigns",
+   "xiyu_dunhu_llm",
+   "zheng_chenggong_taiwan_llm"
   ]
  },
  "regions": [
@@ -191,6 +196,16 @@ window.SANDBOX_DATA = {
    "id": "nan_bei_chao",
    "name": "南北朝",
    "note": "420-589 南朝宋齐梁陈与北朝魏齐周对峙；隋滅陳（589）終結分裂、南北復歸一統。核心地緣：建康—長江防線—江左。"
+  },
+  {
+   "id": "taiwan",
+   "name": "臺灣",
+   "note": "明鄭收復與清治臺灣（東南海疆）"
+  },
+  {
+   "id": "yunnan",
+   "name": "雲南",
+   "note": "南詔—大理地方政權與西南邊疆"
   }
  ],
  "dimensions": {
@@ -409,7 +424,12 @@ window.SANDBOX_DATA = {
   "qin_mie_liu_guo_llm",
   "chuhai_llm",
   "sui_mie_chen_llm",
-  "sui_yang_llm"
+  "sui_yang_llm",
+  "zheng_chenggong_taiwan_llm",
+  "xiyu_dunhu_llm",
+  "hexi_sijun_llm",
+  "nanzhao_dali_llm",
+  "huangdaopo_llm"
  ],
  "vocab": {
   "layers": [
@@ -23371,6 +23391,181 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "zheng_chenggong_taiwan_llm": {
+   "key": "zheng_chenggong_taiwan_llm",
+   "scene_id": "zheng_chenggong_taiwan_llm",
+   "title": "郑成功收复台湾（1661–1662）",
+   "dossier_label": "zheng_chenggong_taiwan_llm",
+   "subtitle": "",
+   "kind": "battle",
+   "region": "taiwan",
+   "page": "zheng_chenggong_taiwan_llm.html",
+   "primary_place": "xiamen",
+   "vocab_pack": "inline:zheng_chenggong_taiwan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 4,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 4,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xiyu_dunhu_llm": {
+   "key": "xiyu_dunhu_llm",
+   "scene_id": "xiyu_dunhu_llm",
+   "title": "西域都护府之设（前60）",
+   "dossier_label": "xiyu_dunhu_llm",
+   "subtitle": "",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=xiyu_dunhu_llm",
+   "primary_place": "wulei",
+   "vocab_pack": "inline:xiyu_dunhu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 3,
+    "person": 2,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 4,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "hexi_sijun_llm": {
+   "key": "hexi_sijun_llm",
+   "scene_id": "hexi_sijun_llm",
+   "title": "汉武帝经营河西·河西四郡（前121）",
+   "dossier_label": "hexi_sijun_llm",
+   "subtitle": "",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=hexi_sijun_llm",
+   "primary_place": "wuwei",
+   "vocab_pack": "inline:hexi_sijun_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 11,
+    "person": 5,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 2,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "nanzhao_dali_llm": {
+   "key": "nanzhao_dali_llm",
+   "scene_id": "nanzhao_dali_llm",
+   "title": "南诏统一六诏·大理国（738–1253）",
+   "dossier_label": "nanzhao_dali_llm",
+   "subtitle": "",
+   "kind": "fusion",
+   "region": "yunnan",
+   "page": "county.html?scene=nanzhao_dali_llm",
+   "primary_place": "taihe_cheng",
+   "vocab_pack": "inline:nanzhao_dali_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 3,
+    "person": 3,
+    "assert": 17,
+    "conflict": 1,
+    "gap": 4,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "huangdaopo_llm": {
+   "key": "huangdaopo_llm",
+   "scene_id": "huangdaopo_llm",
+   "title": "黄道婆传棉纺之法（元贞间）",
+   "dossier_label": "huangdaopo_llm",
+   "subtitle": "",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=huangdaopo_llm",
+   "primary_place": "huangdaopo_llm_yazhou",
+   "vocab_pack": "inline:huangdaopo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 2,
+    "place": 3,
+    "person": 2,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 3,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -23521,7 +23716,12 @@ window.SANDBOX_DATA = {
   "qin_mie_liu_guo_llm": "slices/qin_mie_liu_guo_llm.js",
   "chuhai_llm": "slices/chuhai_llm.js",
   "sui_mie_chen_llm": "slices/sui_mie_chen_llm.js",
-  "sui_yang_llm": "slices/sui_yang_llm.js"
+  "sui_yang_llm": "slices/sui_yang_llm.js",
+  "zheng_chenggong_taiwan_llm": "slices/zheng_chenggong_taiwan_llm.js",
+  "xiyu_dunhu_llm": "slices/xiyu_dunhu_llm.js",
+  "hexi_sijun_llm": "slices/hexi_sijun_llm.js",
+  "nanzhao_dali_llm": "slices/nanzhao_dali_llm.js",
+  "huangdaopo_llm": "slices/huangdaopo_llm.js"
  },
  "corridors": [
   {

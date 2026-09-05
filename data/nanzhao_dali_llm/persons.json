@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "NAN__p01",
+   "name": "皮罗阁",
+   "role": "南诏王",
+   "note": "统一六诏，受唐册封",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NAN__p02",
+   "name": "段思平",
+   "role": "大理国建立者",
+   "note": "后晋天福二年建大理国",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NAN__p03",
+   "name": "忽必烈",
+   "role": "元宪宗",
+   "note": "1253年平大理",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  }
+ ]
+}

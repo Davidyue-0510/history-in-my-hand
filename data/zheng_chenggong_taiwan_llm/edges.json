@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "xiamen",
+   "to": "luerermen",
+   "type": "military",
+   "label": "鄭成功東征路線",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "luerermen",
+   "to": "re_lan_che_cheng",
+   "type": "battle",
+   "label": "圍攻熱蘭遮城",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  }
+ ]
+}

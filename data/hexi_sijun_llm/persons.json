@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "HEX__p01",
+   "name": "汉武帝",
+   "role": "汉朝皇帝",
+   "note": "决策经营河西，设四郡",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEX__p02",
+   "name": "霍去病",
+   "role": "汉将",
+   "note": "元狩二年击匈奴，降浑邪王",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEX__p03",
+   "name": "浑邪王",
+   "role": "匈奴王",
+   "note": "杀休屠王降汉",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEX__p04",
+   "name": "休屠王",
+   "role": "匈奴王",
+   "note": "被浑邪王所杀",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEX__p05",
+   "name": "张骞",
+   "role": "汉使",
+   "note": "凿空西域，通使月氏大宛",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

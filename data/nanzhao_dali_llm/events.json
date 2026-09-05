@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_nanzhao_dali_llm_01",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "year": 738,
+   "era": "唐开元二十六年",
+   "title": "皮罗阁并六诏",
+   "kind": "行政",
+   "text": "皮罗阁统一六诏，唐册为云南王",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_nanzhao_dali_llm_02",
+   "subject": "event:ev_nanzhao_dali_llm_02",
+   "year": 937,
+   "era": "后晋天福二年",
+   "title": "段思平建大理国",
+   "kind": "建置",
+   "text": "段思平建立大理国，传二十二主",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_nanzhao_dali_llm_03",
+   "subject": "event:ev_nanzhao_dali_llm_03",
+   "year": 1253,
+   "era": "元宪宗时期",
+   "title": "忽必烈平大理",
+   "kind": "战事",
+   "text": "忽必烈攻灭大理国",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null
+  }
+ ]
+}

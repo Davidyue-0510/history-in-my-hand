@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "chang_an",
+   "to": "wuwei",
+   "type": "military",
+   "label": "汉军西进路线",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wuwei",
+   "to": "zhangye",
+   "type": "military",
+   "label": "河西走廊行军",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "zhangye",
+   "to": "jiuquan",
+   "type": "military",
+   "label": "河西走廊行军",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "jiuquan",
+   "to": "dunhuang",
+   "type": "military",
+   "label": "河西走廊行军",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "dunhuang",
+   "to": "yumen_guan",
+   "type": "military",
+   "label": "出关通西域",
+   "_source_idx": 0,
+   "_source_name": "史记·大宛列传（河西经营）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

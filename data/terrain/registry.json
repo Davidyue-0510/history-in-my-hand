@@ -160,6 +160,20 @@
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "hexi_sijun_llm": {
+      "label": "汉武帝经营河西·河西四郡（前121）",
+      "file": "hexi_sijun_llm_grid.json",
+      "bbox": [
+        102.13,
+        32.49,
+        113.03,
+        38.43
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

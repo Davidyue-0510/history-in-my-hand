@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "ZHE__p01",
+   "name": "鄭成功",
+   "role": "明延平郡王",
+   "note": "率師東征，克臺灣",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHE__p02",
+   "name": "揆一",
+   "role": "荷蘭總督",
+   "note": "守熱蘭遮城，後出降",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  }
+ ]
+}

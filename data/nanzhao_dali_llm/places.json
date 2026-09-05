@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "taihe_cheng",
+   "name": "太和城",
+   "type": "city",
+   "modern": "今云南大理",
+   "note": "南诏都城",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null,
+   "lon": 100.15,
+   "lat": 25.62,
+   "geo_unresolved": false
+  },
+  {
+   "id": "dali",
+   "name": "大理",
+   "type": "city",
+   "modern": "今云南大理",
+   "note": "大理国都城",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null,
+   "lon": 100.27,
+   "lat": 25.61,
+   "geo_unresolved": false
+  },
+  {
+   "id": "lushui",
+   "name": "泸水",
+   "type": "river",
+   "modern": "今云南金沙江支流",
+   "note": "天宝战争地",
+   "_source_idx": 0,
+   "_source_name": "新唐书·南诏传",
+   "_source_party": "唐官修",
+   "_source_credibility": null,
+   "lon": 98.85,
+   "lat": 25.85,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

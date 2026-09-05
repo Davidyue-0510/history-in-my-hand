@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_zheng_chenggong_taiwan_llm_01",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_01",
+   "year": 1661,
+   "era": "永曆十五年",
+   "title": "鄭成功率師東征",
+   "kind": "戰事",
+   "text": "自廈門出師，入鹿耳門，登陸臺灣",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zheng_chenggong_taiwan_llm_02",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_02",
+   "year": 1661,
+   "era": "永曆十五年",
+   "title": "圍攻熱蘭遮城",
+   "kind": "戰事",
+   "text": "圍城，斷荷蘭接濟",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zheng_chenggong_taiwan_llm_03",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_03",
+   "year": 1662,
+   "era": "永曆十六年二月",
+   "title": "揆一出降",
+   "kind": "戰事",
+   "text": "荷蘭人退走，臺灣歸中國",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zheng_chenggong_taiwan_llm_04",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_04",
+   "year": 1662,
+   "era": "永曆十六年",
+   "title": "設承天府",
+   "kind": "行政",
+   "text": "置承天府，以為東都",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  }
+ ]
+}

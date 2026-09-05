@@ -1,9 +1,9 @@
 {
-  "scenes_total": 148,
-  "historical": 139,
+  "scenes_total": 153,
+  "historical": 144,
   "fictional": 9,
-  "assertions_total": 2278,
-  "sources_total": 109,
+  "assertions_total": 2355,
+  "sources_total": 114,
   "factions_total": 9,
   "vocab_packs": [
     "changping_llm",
@@ -11,7 +11,10 @@
     "chuhai_llm",
     "feishui_llm",
     "guandu_llm",
+    "hexi_sijun_llm",
+    "huangdaopo_llm",
     "ming_qing",
+    "nanzhao_dali_llm",
     "qin_mie_liu_guo",
     "qin_mie_liu_guo_llm",
     "san_guo",
@@ -19,10 +22,12 @@
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "tang",
-    "three_campaigns"
+    "three_campaigns",
+    "xiyu_dunhu_llm",
+    "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 210,
+  "leads_total": 227,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1113,6 +1118,41 @@
       "kind": "battle",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "zheng_chenggong_taiwan_llm",
+      "title": "郑成功收复台湾（1661–1662）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "xiyu_dunhu_llm",
+      "title": "西域都护府之设（前60）",
+      "kind": "frontier",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "hexi_sijun_llm",
+      "title": "汉武帝经营河西·河西四郡（前121）",
+      "kind": "frontier",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "nanzhao_dali_llm",
+      "title": "南诏统一六诏·大理国（738–1253）",
+      "kind": "fusion",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "huangdaopo_llm",
+      "title": "黄道婆传棉纺之法（元贞间）",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1263,6 +1303,11 @@
     "qin_mie_liu_guo_llm": "秦灭六国（LLM 抽取·人工校订）",
     "chuhai_llm": "楚漢之爭·垓下之戰",
     "sui_mie_chen_llm": "隋滅陳·金陵之變",
-    "sui_yang_llm": "唐·睢阳之战"
+    "sui_yang_llm": "唐·睢阳之战",
+    "zheng_chenggong_taiwan_llm": "郑成功收复台湾（1661–1662）",
+    "xiyu_dunhu_llm": "西域都护府之设（前60）",
+    "hexi_sijun_llm": "汉武帝经营河西·河西四郡（前121）",
+    "nanzhao_dali_llm": "南诏统一六诏·大理国（738–1253）",
+    "huangdaopo_llm": "黄道婆传棉纺之法（元贞间）"
   }
 }

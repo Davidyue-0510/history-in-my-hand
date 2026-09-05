@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xiyu_dunhu_llm_01",
+   "subject": "event:ev_xiyu_dunhu_llm_01",
+   "year": -60,
+   "era": "汉宣帝神爵二年",
+   "title": "日逐王降汉",
+   "kind": "外交",
+   "text": "匈奴日逐王先贤掸率众降汉",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xiyu_dunhu_llm_02",
+   "subject": "event:ev_xiyu_dunhu_llm_02",
+   "year": -60,
+   "era": "汉宣帝神爵二年",
+   "title": "设西域都护",
+   "kind": "建置",
+   "text": "郑吉为西域都护，治乌垒城",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

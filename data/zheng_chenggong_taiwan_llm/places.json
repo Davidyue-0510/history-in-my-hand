@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "xiamen",
+   "name": "廈門",
+   "type": "port",
+   "modern": "今中國福建省廈門市",
+   "note": "鄭成功出發地",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": 118.09,
+   "lat": 24.48,
+   "geo_unresolved": false
+  },
+  {
+   "id": "luerermen",
+   "name": "鹿耳門",
+   "type": "port",
+   "modern": "今臺灣臺南市安平區",
+   "note": "登陸地",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": 120.16,
+   "lat": 23.03,
+   "geo_unresolved": false
+  },
+  {
+   "id": "taiwan",
+   "name": "臺灣",
+   "type": "region",
+   "modern": "今臺灣",
+   "note": "鄭成功攻取之地",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": 120.95,
+   "lat": 23.7,
+   "geo_unresolved": false
+  },
+  {
+   "id": "re_lan_che_cheng",
+   "name": "熱蘭遮城",
+   "type": "fortress",
+   "modern": "今臺灣臺南市安平古堡",
+   "note": "荷蘭人所築，鄭成功圍攻",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟纪（郑氏据台）",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": 120.16,
+   "lat": 23.0,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

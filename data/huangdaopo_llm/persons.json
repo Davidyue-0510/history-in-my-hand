@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HUA__p01",
+   "name": "黄道婆",
+   "role": "棉纺织技术革新者",
+   "note": "元贞间自崖州归松江，传纺棉之法",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUA__p02",
+   "name": "乌泥泾民",
+   "role": "当地居民",
+   "note": "受黄道婆教习纺织，以织为业",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_huangdaopo_llm_01",
+   "subject": "event:ev_huangdaopo_llm_01",
+   "year": 1295,
+   "era": "元元贞间",
+   "title": "黄道婆归乌泥泾",
+   "kind": "其他",
+   "text": "黄道婆自崖州还松江乌泥泾",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_huangdaopo_llm_02",
+   "subject": "event:ev_huangdaopo_llm_02",
+   "year": 1296,
+   "era": "元元贞间",
+   "title": "传纺棉之法",
+   "kind": "其他",
+   "text": "传黎族纺车错纱配色之法，改良工具",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_huangdaopo_llm_03",
+   "subject": "event:ev_huangdaopo_llm_03",
+   "year": 1297,
+   "era": "元元贞间",
+   "title": "松江布被天下",
+   "kind": "其他",
+   "text": "乌泥泾千余家以纺织为业，衣被天下",
+   "_source_idx": 0,
+   "_source_name": "辍耕录·黄道婆",
+   "_source_party": "元笔记",
+   "_source_credibility": null
+  }
+ ]
+}

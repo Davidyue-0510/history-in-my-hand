@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "wulei",
+   "name": "乌垒城",
+   "type": "city",
+   "modern": "今新疆轮台县",
+   "note": "西域都护治所",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 84.36,
+   "lat": 41.78,
+   "geo_unresolved": false
+  },
+  {
+   "id": "dunhuang",
+   "name": "敦煌",
+   "type": "city",
+   "modern": "今甘肃敦煌",
+   "note": "汉西陲重镇",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 94.66,
+   "lat": 40.14,
+   "geo_unresolved": false
+  },
+  {
+   "id": "yanze",
+   "name": "盐泽",
+   "type": "region",
+   "modern": "今罗布泊",
+   "note": "敦煌西之盐泽",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 90.5,
+   "lat": 40.3,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "XIY__p01",
+   "name": "郑吉",
+   "role": "西域都护",
+   "note": "首任西域都护，镇抚西域",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIY__p02",
+   "name": "先贤掸",
+   "role": "匈奴日逐王",
+   "note": "率众降汉，导致西域都护设立",
+   "_source_idx": 0,
+   "_source_name": "汉书·西域传",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "sources": [
+  {
+   "id": "chuo_geng_lu_llm",
+   "title": "辍耕录·黄道婆",
+   "party": "元笔记",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "陶宗仪",
+   "period": "元",
+   "note": ""
+  },
+  {
+   "id": "synthesis",
+   "title": "綜合研判·缺口標註",
+   "party": "综合史料",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）",
+   "compiler": "綜合",
+   "period": "",
+   "note": "",
+   "availability": "not_free",
+   "bias_note": "諸場景據原始文獻綜合研判，缺環以 gap 層誠實標註。"
+  }
+ ]
+}

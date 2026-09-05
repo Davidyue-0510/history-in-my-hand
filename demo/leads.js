@@ -1011,6 +1011,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "HEXIG2",
+   "scene": "hexi_sijun_llm",
+   "subject": "event:ev_hexi_sijun_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "HEX_015",
+   "scene": "hexi_sijun_llm",
+   "subject": "event:ev_hexi_sijun_llm_01",
+   "title": "降汉过程细节不详",
+   "missing": "考古 / 文献",
+   "where": "河西走廊",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "浑邪王降汉的具体过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "HONGJING01",
    "scene": "hongjin",
    "subject": "event:hj_1351",
@@ -1056,6 +1088,53 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "HUANG1",
+   "scene": "huangdaopo_llm",
+   "subject": "event:ev_huangdaopo_llm_01",
+   "title": "此場景關於「地理」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補地理維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "HUANG4",
+   "scene": "huangdaopo_llm",
+   "subject": "event:ev_huangdaopo_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HUA_011",
+   "scene": "huangdaopo_llm",
+   "subject": "person:HUA__p01",
+   "title": "元贞间具体年份未详",
+   "missing": "文献考据",
+   "where": "乌泥泾",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "HJ_GAP1",
@@ -1895,6 +1974,69 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "NANZG2",
+   "scene": "nanzhao_dali_llm",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "NANZG4",
+   "scene": "nanzhao_dali_llm",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "NANZG5",
+   "scene": "nanzhao_dali_llm",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
+   "id": "NAN_011",
+   "scene": "nanzhao_dali_llm",
+   "subject": "event:ev_nanzhao_dali_llm_02",
+   "title": "传二十二主，具体世系待考",
+   "missing": "文献考据",
+   "where": "大理国世系记载",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "补充世系细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "NXG01",
@@ -2934,6 +3076,69 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "XIYUG2",
+   "scene": "xiyu_dunhu_llm",
+   "subject": "event:ev_xiyu_dunhu_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIYUG4",
+   "scene": "xiyu_dunhu_llm",
+   "subject": "event:ev_xiyu_dunhu_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "XIYUG5",
+   "scene": "xiyu_dunhu_llm",
+   "subject": "event:ev_xiyu_dunhu_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "XIY_013",
+   "scene": "xiyu_dunhu_llm",
+   "subject": "event:ev_xiyu_dunhu_llm_02",
+   "title": "三十六国具体名单不详",
+   "missing": "历史地理",
+   "where": "汉书·西域传",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "XUANWUG01",
    "scene": "xuanwu",
    "subject": "event:xx_626",
@@ -3236,6 +3441,68 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "ZHENG2",
+   "scene": "zheng_chenggong_taiwan_llm",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "ZHENG5",
+   "scene": "zheng_chenggong_taiwan_llm",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "ZHE_011",
+   "scene": "zheng_chenggong_taiwan_llm",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_01",
+   "title": "鄭成功率師東征，兵力不詳",
+   "missing": "軍事史",
+   "where": "廈門",
+   "skills": [
+    "軍事史"
+   ],
+   "accept": "查考鄭成功東征兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHE_012",
+   "scene": "zheng_chenggong_taiwan_llm",
+   "subject": "event:ev_zheng_chenggong_taiwan_llm_02",
+   "title": "荷蘭損失不詳",
+   "missing": "荷蘭東印度公司檔案",
+   "where": "熱蘭遮城",
+   "skills": [
+    "荷蘭東印度公司檔案"
+   ],
+   "accept": "查荷蘭方面損失",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "ZHENGHEG01",
