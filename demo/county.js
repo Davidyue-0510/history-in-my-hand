@@ -39,7 +39,9 @@
   var PRIMARY = CFG.primary_place || META.primary_place;
   var DOSSIER = CFG.dossier_event || META.dossier_event;
 
-  var TG = D.terrain || SD.terrain;   // 优先 per-scene 网格，回退共享网格
+  // v0.105：优先共享懒加载块 SANDBOX_TERRAIN[gid]（demo/terrain/<gid>.js，浏览器缓存一次、
+  // 同 gid 全场景共享），回退 per-scene 内嵌 D.terrain，最后回退壳 SD.terrain。
+  var TG = (window.SANDBOX_TERRAIN && window.SANDBOX_TERRAIN[META.terrain_grid]) || D.terrain || SD.terrain;
   var BM = D.basemap || SD.basemap;   // per-scene Natural Earth 矢量底图（v0.38）
   var WALL = D.wall || null;          // 辽东边墙仅辽东体系场景注入（不再共享误显）
   var SVGNS = 'http://www.w3.org/2000/svg';

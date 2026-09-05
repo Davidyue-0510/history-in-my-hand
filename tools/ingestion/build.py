@@ -485,6 +485,25 @@ def get_terrain(gid=None):
     return res
 
 
+def _write_shared_terrain_chunk(reg, gid):
+    """v0.105：把默认地形网格写成共享懒加载块 demo/terrain/<gid>.js。
+
+    前端 county.js 用 window.SANDBOX_TERRAIN[gid] 取，浏览器缓存一次、
+    全部同 gid 场景共享，避免每切片内嵌 1.42MB 冗余（规模化前提）。"""
+    import json as _json
+    terr, grid, status = get_terrain(gid)
+    if grid is None:
+        print("  ! 共享地形块跳过：网格 %r 状态=%s" % (gid, status))
+        return
+    out_dir = os.path.join(ROOT, "demo", "terrain")
+    os.makedirs(out_dir, exist_ok=True)
+    chunk = ("window.SANDBOX_TERRAIN = window.SANDBOX_TERRAIN || {};\n"
+             "window.SANDBOX_TERRAIN[%r] = %s;\n" % (gid, _json.dumps(grid, ensure_ascii=False)))
+    with open(os.path.join(out_dir, gid + ".js"), "w", encoding="utf-8") as f:
+        f.write(chunk)
+    print("  ✓ 共享地形块 demo/terrain/%s.js (%.2f MB)" % (gid, len(chunk) / 1024 / 1024))
+
+
 def _elev_or_none(terr, lon, lat):
     """在网格 bbox 内才返回双线性插值高程；越界返回 None（绝不 clamp 成边缘假值）。"""
     lo1, la1 = terr.lon0, terr.lat0
@@ -636,7 +655,10 @@ def main():
         bundle["meta"]["terrain_grid"] = scene_gid
         # v0.37：把 per-scene 地形网格注入 bundle，前端优先用 D.terrain，
         # 不再永远读共享 SD.terrain（旧逻辑导致非辽东场景误显辽东地形）。
-        if _sg is not None:
+        # v0.105：默认网格（china_coarse，125 场景 ×1.42MB）抽为共享懒加载块
+        #   demo/terrain/<gid>.js，去除每切片冗余；仅非默认小网格（liaodong/tang/…）
+        #   仍 per-slice 内嵌（体积极小）。前端 county.js 经 SANDBOX_TERRAIN[gid] 取共享块。
+        if _sg is not None and scene_gid != default_gid:
             bundle["terrain"] = _sg
         if scene_terr is None:
             bundle["meta"]["terrain_off_grid"] = True
@@ -657,6 +679,10 @@ def main():
         slice_index[key] = "slices/%s.js" % key
         scenes_meta[key] = _slice_meta(bundle)
         scenes[key] = bundle  # 仅留内存引用，供下方 route_terrain / 统计使用
+
+    # v0.105：默认地形网格抽为共享懒加载块（去除每切片 1.42MB 冗余）。
+    # 非默认小网格仍 per-slice 内嵌，不必抽。
+    _write_shared_terrain_chunk(reg, default_gid)
 
     # 萨尔浒行军地形代价（只有带 routes 的切片才有）
     import terrain_model
