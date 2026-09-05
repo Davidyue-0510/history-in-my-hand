@@ -564,6 +564,9 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
    ],
    "id": "chongzhen_huangzai_07",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

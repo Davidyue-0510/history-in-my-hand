@@ -641,6 +641,9 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
    "_source_credibility": null,
    "_source_quote": "为唐所灭",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "魏晋官修",
    "_faction": null
   },
@@ -675,6 +678,9 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

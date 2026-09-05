@@ -531,6 +531,9 @@ window.SANDBOX_SLICES["nanzhao_dali_llm"] = {
    "_source_credibility": null,
    "_source_quote": "传二十二主",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "唐官修",
    "_faction": null
   },
@@ -654,6 +657,9 @@ window.SANDBOX_SLICES["nanzhao_dali_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -688,6 +694,9 @@ window.SANDBOX_SLICES["nanzhao_dali_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -722,6 +731,9 @@ window.SANDBOX_SLICES["nanzhao_dali_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

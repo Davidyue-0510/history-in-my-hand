@@ -821,6 +821,9 @@ window.SANDBOX_SLICES["hexi_sijun_llm"] = {
    "_source_credibility": null,
    "_source_quote": "并将其众降",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -855,6 +858,9 @@ window.SANDBOX_SLICES["hexi_sijun_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

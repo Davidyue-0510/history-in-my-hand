@@ -278,6 +278,9 @@ window.SANDBOX_SLICES["novel_fandao_9"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "作者叙述",
    "_faction": null
   },

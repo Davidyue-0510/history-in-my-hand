@@ -806,6 +806,9 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_credibility": null,
    "_source_quote": "虞姬和之",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "後世官修",
    "_faction": null
   },
@@ -861,6 +864,9 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    "_source_credibility": null,
    "predicate": "史料立場",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "後世官修",
    "_faction": null
   }

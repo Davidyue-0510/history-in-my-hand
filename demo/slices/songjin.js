@@ -803,6 +803,9 @@ window.SANDBOX_SLICES["songjin"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   },

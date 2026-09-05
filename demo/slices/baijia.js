@@ -311,6 +311,9 @@ window.SANDBOX_SLICES["baijia"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

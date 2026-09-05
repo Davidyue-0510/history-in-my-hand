@@ -528,6 +528,9 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "元元贞间",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "元笔记",
    "_faction": null
   },
@@ -562,6 +565,9 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
     1
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -596,6 +602,9 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

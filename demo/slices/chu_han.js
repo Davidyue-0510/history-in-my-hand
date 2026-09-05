@@ -607,6 +607,9 @@ window.SANDBOX_SLICES["chu_han"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   },

@@ -663,6 +663,9 @@ window.SANDBOX_SLICES["fujian_quanzhou_llm"] = {
    "_source_credibility": null,
    "_source_quote": "番货填委",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -697,6 +700,9 @@ window.SANDBOX_SLICES["fujian_quanzhou_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

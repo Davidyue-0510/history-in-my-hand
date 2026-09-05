@@ -604,6 +604,9 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   }

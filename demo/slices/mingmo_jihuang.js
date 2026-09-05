@@ -628,6 +628,9 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
    ],
    "id": "mingmo_jihuang_09",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

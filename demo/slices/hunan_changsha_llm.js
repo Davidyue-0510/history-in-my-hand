@@ -486,6 +486,9 @@ window.SANDBOX_SLICES["hunan_changsha_llm"] = {
    "_source_credibility": null,
    "_source_quote": "至景帝削",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -522,6 +525,9 @@ window.SANDBOX_SLICES["hunan_changsha_llm"] = {
    "_source_credibility": null,
    "_source_quote": "帛书",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -585,6 +591,9 @@ window.SANDBOX_SLICES["hunan_changsha_llm"] = {
     3
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

@@ -643,6 +643,9 @@ window.SANDBOX_SLICES["juehua"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   }

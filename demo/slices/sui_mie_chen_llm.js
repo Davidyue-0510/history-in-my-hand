@@ -879,6 +879,9 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
    "_source_credibility": null,
    "_source_quote": "兵籍六十萬",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "後世官修",
    "_faction": null
   },
@@ -923,6 +926,9 @@ window.SANDBOX_SLICES["sui_mie_chen_llm"] = {
     "accept": "陳方視角的墓誌或詩文考據，能與《隋書》形成隋方／陳方雙聲敘事"
    },
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "後世官修",
    "_faction": null
   }

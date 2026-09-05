@@ -489,6 +489,9 @@ window.SANDBOX_SLICES["guangning"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -517,6 +520,9 @@ window.SANDBOX_SLICES["guangning"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -1472,6 +1478,9 @@ window.SANDBOX_SLICES["guangning"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   }

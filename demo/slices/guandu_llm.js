@@ -608,6 +608,9 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     "accept": "需要更多文献或考古证据核实三方兵力实数"
    },
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "南朝宋·私修",
    "_faction": null
   }

@@ -452,6 +452,9 @@ window.SANDBOX_SLICES["zhongli"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -486,6 +489,9 @@ window.SANDBOX_SLICES["zhongli"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

@@ -762,6 +762,9 @@ window.SANDBOX_SLICES["san_guo"] = {
     "accept": "辑校《华阳国志》与魏吴记载中蜀汉内政的交叉证据，标出可确证与仅见单方记载的部分"
    },
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "西晋·私修",
    "_faction": null
   },

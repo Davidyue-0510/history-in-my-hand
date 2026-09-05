@@ -430,6 +430,9 @@ window.SANDBOX_SLICES["fushun"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -460,6 +463,9 @@ window.SANDBOX_SLICES["fushun"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },

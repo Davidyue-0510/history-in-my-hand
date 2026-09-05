@@ -1822,6 +1822,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "学界",
    "_faction": null
   },
@@ -2181,6 +2184,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "学界",
    "_faction": null
   },
@@ -2966,6 +2972,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -3156,6 +3165,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -3190,6 +3202,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -3224,6 +3239,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -3862,6 +3880,9 @@ window.SANDBOX_SLICES["sarhu"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "明·封疆奏议",
    "_faction": "feng_jiang"
   },

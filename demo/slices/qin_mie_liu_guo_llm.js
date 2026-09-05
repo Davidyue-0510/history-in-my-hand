@@ -892,6 +892,9 @@ window.SANDBOX_SLICES["qin_mie_liu_guo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "后世官修",
    "_faction": null
   }

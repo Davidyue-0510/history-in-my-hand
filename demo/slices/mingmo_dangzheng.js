@@ -698,6 +698,9 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "明·内臣文献",
    "_faction": "nei_guan"
   },
@@ -1033,6 +1036,9 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "学界",
    "_faction": null
   }

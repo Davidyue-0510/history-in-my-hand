@@ -522,6 +522,9 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
    "_source_credibility": null,
    "_source_quote": "未载",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "隋官修",
    "_faction": null
   },
@@ -649,6 +652,9 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
    "_source_credibility": null,
    "_source_quote": "未载",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "隋官修",
    "_faction": null
   },
@@ -743,6 +749,9 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -777,6 +786,9 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

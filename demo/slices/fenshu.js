@@ -480,6 +480,9 @@ window.SANDBOX_SLICES["fenshu"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

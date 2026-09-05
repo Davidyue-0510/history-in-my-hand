@@ -693,6 +693,9 @@ window.SANDBOX_SLICES["changping_llm"] = {
    "_source_credibility": null,
    "_source_quote": "括徒能读其父书传，不知合变也",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "后世官修",
    "_faction": null
   }

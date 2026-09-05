@@ -637,6 +637,9 @@ window.SANDBOX_SLICES["three_campaigns"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "解放军",
    "_faction": null
   },

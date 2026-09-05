@@ -347,6 +347,9 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
     3
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -375,6 +378,9 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "朝鲜官方",
    "_faction": null
   }

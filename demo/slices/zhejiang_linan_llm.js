@@ -521,6 +521,9 @@ window.SANDBOX_SLICES["zhejiang_linan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -561,6 +564,9 @@ window.SANDBOX_SLICES["zhejiang_linan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -595,6 +601,9 @@ window.SANDBOX_SLICES["zhejiang_linan_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

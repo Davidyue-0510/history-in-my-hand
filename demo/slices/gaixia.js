@@ -505,6 +505,9 @@ window.SANDBOX_SLICES["gaixia"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

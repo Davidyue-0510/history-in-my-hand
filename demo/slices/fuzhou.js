@@ -345,6 +345,9 @@ window.SANDBOX_SLICES["fuzhou"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修官史",
    "_faction": null
   },
@@ -374,6 +377,9 @@ window.SANDBOX_SLICES["fuzhou"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "朝鲜官方",
    "_faction": null
   }

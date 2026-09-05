@@ -608,6 +608,9 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋·官修",
    "_faction": null
   },

@@ -703,6 +703,9 @@ window.SANDBOX_SLICES["feishui_llm"] = {
     "accept": "若能核到北府兵确切出战人数，可补此缺"
    },
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "北宋·官修",
    "_faction": null
   },

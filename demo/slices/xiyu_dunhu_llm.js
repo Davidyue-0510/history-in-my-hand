@@ -573,6 +573,9 @@ window.SANDBOX_SLICES["xiyu_dunhu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "西域三十六国",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -607,6 +610,9 @@ window.SANDBOX_SLICES["xiyu_dunhu_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -641,6 +647,9 @@ window.SANDBOX_SLICES["xiyu_dunhu_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -675,6 +684,9 @@ window.SANDBOX_SLICES["xiyu_dunhu_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

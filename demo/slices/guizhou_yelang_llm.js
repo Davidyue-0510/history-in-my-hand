@@ -696,6 +696,9 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    "_source_credibility": null,
    "_source_quote": "夜郎自大",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -730,6 +733,9 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

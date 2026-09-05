@@ -631,6 +631,9 @@ window.SANDBOX_SLICES["hainan_zhuyai_llm"] = {
    "_source_credibility": null,
    "_source_quote": "县属合浦",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "汉官修",
    "_faction": null
   },
@@ -665,6 +668,9 @@ window.SANDBOX_SLICES["hainan_zhuyai_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

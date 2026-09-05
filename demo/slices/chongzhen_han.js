@@ -587,6 +587,9 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
    ],
    "id": "chongzhen_han_07",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

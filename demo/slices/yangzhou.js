@@ -494,6 +494,9 @@ window.SANDBOX_SLICES["yangzhou"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "明·私修",
    "_faction": null
   },

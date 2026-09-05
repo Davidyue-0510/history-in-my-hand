@@ -423,6 +423,9 @@ window.SANDBOX_SLICES["haizhou"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   },
@@ -452,6 +455,9 @@ window.SANDBOX_SLICES["haizhou"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修·明臣",
    "_faction": null
   }

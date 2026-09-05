@@ -551,6 +551,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "崖山溃",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -590,6 +593,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "崖山溃",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -628,6 +634,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "筑行宫",
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -667,6 +676,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "崖山溃",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "宋官修",
    "_faction": null
   },
@@ -701,6 +713,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -735,6 +750,9 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

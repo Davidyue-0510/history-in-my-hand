@@ -404,6 +404,9 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "作者叙述",
    "_faction": null
   },
@@ -426,6 +429,9 @@ window.SANDBOX_SLICES["novel_fandao_2"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "作者叙述",
    "_faction": null
   }

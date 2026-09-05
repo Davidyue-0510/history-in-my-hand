@@ -412,6 +412,9 @@ window.SANDBOX_SLICES["aomen_portugal_llm"] = {
    "_source_credibility": null,
    "_source_quote": "万历中，筑城列炮",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "明官修",
    "_faction": null
   },
@@ -632,6 +635,9 @@ window.SANDBOX_SLICES["aomen_portugal_llm"] = {
     1
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -666,6 +672,9 @@ window.SANDBOX_SLICES["aomen_portugal_llm"] = {
     4
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -700,6 +709,9 @@ window.SANDBOX_SLICES["aomen_portugal_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },

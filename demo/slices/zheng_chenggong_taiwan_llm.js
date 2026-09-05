@@ -528,6 +528,9 @@ window.SANDBOX_SLICES["zheng_chenggong_taiwan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "率師東征",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清官修",
    "_faction": null
   },
@@ -564,6 +567,9 @@ window.SANDBOX_SLICES["zheng_chenggong_taiwan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "圍熱蘭遮城",
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清官修",
    "_faction": null
   },
@@ -627,6 +633,9 @@ window.SANDBOX_SLICES["zheng_chenggong_taiwan_llm"] = {
     2
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   },
@@ -661,6 +670,9 @@ window.SANDBOX_SLICES["zheng_chenggong_taiwan_llm"] = {
     5
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }

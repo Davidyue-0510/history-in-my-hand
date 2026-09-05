@@ -889,6 +889,9 @@ window.SANDBOX_SLICES["juehua1626"] = {
     6
    ],
    "dim_source": "declared",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "明廷官方",
    "_faction": null
   },

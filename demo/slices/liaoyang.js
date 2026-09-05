@@ -873,6 +873,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "学界",
    "_faction": null
   },
@@ -903,6 +906,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "清修官史",
    "_faction": null
   },
@@ -954,6 +960,9 @@ window.SANDBOX_SLICES["liaoyang"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "二手综述",
    "_faction": null
   },

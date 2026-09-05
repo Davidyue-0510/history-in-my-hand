@@ -306,6 +306,9 @@ window.SANDBOX_SLICES["great_wall"] = {
     6
    ],
    "dim_source": "fallback",
+   "dist": {
+    "type": "degenerate"
+   },
    "_party": "综合史料",
    "_faction": null
   }
