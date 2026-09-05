@@ -1,0 +1,33 @@
+{
+ "_comment": "确定性推演结果 (v0.36 sim+agent)",
+ "_branch": "imjin_korea_early_reinf",
+ "_scene": "imjin",
+ "_years": [
+  1592,
+  1598
+ ],
+ "_forces": {
+  "朝鲜": 20000,
+  "日本方": 28000
+ },
+ "control": [
+  {
+   "place_id": "busan",
+   "party": "朝鲜",
+   "start": 1593,
+   "end": null,
+   "timeline": "imjin_korea_early_reinf",
+   "basis": "sim: 局部兵力比 > 1.5，占",
+   "note": "确定性推演第 1593 年"
+  },
+  {
+   "place_id": "dongnae",
+   "party": "朝鲜",
+   "start": 1594,
+   "end": null,
+   "timeline": "imjin_korea_early_reinf",
+   "basis": "sim: 局部兵力比 > 1.5，占",
+   "note": "确定性推演第 1594 年"
+  }
+ ]
+}
