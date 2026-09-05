@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "开封河决：朝堂凝聚力——明军扒朱家寨、李自成扒马家口，黄河南北两处决口，相距三十里。"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "开封河决：后勤物力——明军扒朱家寨、李自成扒马家口，黄河南北两处决口，相距三十里。"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "开封河决：人口动员——秋汛两决合流，怒涛入北门，水深数丈，城如釜底，钟鼓二楼与周邸屋脊外尽没，三十余万军民溺毙。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "开封河决：地缘战略——明军扒朱家寨、李自成扒马家口，黄河南北两处决口，相距三十里。"
    }
   },
   "province": "henan",

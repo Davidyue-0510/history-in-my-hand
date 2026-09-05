@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "赵武灵王胡服骑射：朝堂凝聚力——行胡服骑射"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "赵武灵王胡服骑射：后勤物力——习骑射"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "赵武灵王胡服骑射：人口动员——御北胡"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "赵武灵王胡服骑射：地缘战略——习骑射"
    }
   },
   "province": null,

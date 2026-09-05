@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["chengpu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "城濮之战：朝堂凝聚力——“退避三舍”（一舍三十里）彰显春秋礼战与信义；“师直为壮，曲为老”"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["chengpu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "城濮之战：后勤物力——晋文公作三军（中军、上军、下军），以车战为主；楚军亦分左右师车兵"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["chengpu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "城濮之战：人口动员——晋率齐、秦、宋诸侯联军，楚率陈、蔡、郑、许；“兵者，国之大事”"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["chengpu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "城濮之战：地缘战略——退兵九十里"
    }
   },
   "province": "shandong",

@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["xinhai"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "辛亥革命：朝堂凝聚力——共和肇建"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["xinhai"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "辛亥革命：后勤物力——共和肇建"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["xinhai"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "辛亥革命：人口动员——“排满”民族情绪与立宪派、革命派合流；共进会、文学社等会党动员"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["xinhai"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "辛亥革命：地缘战略——各省响应"
    }
   },
   "province": null,

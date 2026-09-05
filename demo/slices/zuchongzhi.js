@@ -35,7 +35,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "祖冲之圆周率：朝堂凝聚力——定岁差"
    },
    "material_logistics": {
     "from": [
@@ -47,7 +47,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "祖冲之圆周率：后勤物力——得3.1415926与3.1415927之间"
    },
    "population_mobilization": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "祖冲之圆周率：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "祖冲之圆周率：地缘战略——定岁差"
    }
   },
   "province": null,

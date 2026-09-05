@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "紫禁城营建：朝堂凝聚力——诏建北京宫城"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "紫禁城营建：后勤物力——诏建北京宫城"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "紫禁城营建：人口动员——营建北京宫殿，取材天下、征役军民数十万。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "紫禁城营建：地缘战略——紫禁城成"
    }
   },
   "province": "beijing",

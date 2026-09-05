@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "张居正改革：朝堂凝聚力——任首辅"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "张居正改革：后勤物力——任首辅"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "张居正改革：人口动员——张居正立考成法，以六科稽查六部、以内阁督责地方，行政机关效率骤增，却触怒惯于因循的官僚与地方官，言路怨谤"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["zhangjuzheng"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "张居正改革：地缘战略——任首辅"
    }
   },
   "province": null,

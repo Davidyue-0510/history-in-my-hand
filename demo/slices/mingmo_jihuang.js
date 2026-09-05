@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "明末大饥荒：朝堂凝聚力——有司恐干谴惧，匿灾不报、徵比如故，灾伤愈重。"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "明末大饥荒：后勤物力——有司恐干谴惧，匿灾不报、徵比如故，灾伤愈重。"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "明末大饥荒：人口动员——有司恐干谴惧，匿灾不报、徵比如故，灾伤愈重。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "明末大饥荒：地缘战略——旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。"
    }
   },
   "province": null,

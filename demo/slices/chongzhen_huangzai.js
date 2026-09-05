@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "崇祯蝗灾：朝堂凝聚力——地方有司救荒无策，蝗蝻任其孳蔓，荒政废弛。"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "崇祯蝗灾：后勤物力——地方有司救荒无策，蝗蝻任其孳蔓，荒政废弛。"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "崇祯蝗灾：人口动员——河南飞蝗食民间小儿，灾情骇人听闻。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "崇祯蝗灾：地缘战略——河南飞蝗食民间小儿，灾情骇人听闻。"
    }
   },
   "province": null,

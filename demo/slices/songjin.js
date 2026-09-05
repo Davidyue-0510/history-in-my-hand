@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["songjin"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "松锦之战：朝堂凝聚力——王朴弃市"
    },
    "material_logistics": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["songjin"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "松锦之战：后勤物力——王朴弃市"
    },
    "population_mobilization": {
     "from": [
@@ -83,7 +83,7 @@ window.SANDBOX_SLICES["songjin"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "松锦之战：人口动员——明“十三万”援军粮尽溃败；“祖大寿”锦州降清"
    },
    "geopolitical_strategy": {
     "from": [
@@ -95,7 +95,7 @@ window.SANDBOX_SLICES["songjin"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "松锦之战：地缘战略——王朴弃市"
    }
   },
   "province": "liaoning",

@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["juehua"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "觉华岛·辽西海防枢纽：朝堂凝聚力——自请督师"
    },
    "material_logistics": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["juehua"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "觉华岛·辽西海防枢纽：后勤物力——自请督师"
    },
    "population_mobilization": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["juehua"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "觉华岛·辽西海防枢纽：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -83,7 +83,7 @@ window.SANDBOX_SLICES["juehua"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "觉华岛·辽西海防枢纽：地缘战略——得功请降"
    }
   },
   "province": "liaoning",

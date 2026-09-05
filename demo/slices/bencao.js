@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["bencao"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "本草纲目·授时历：朝堂凝聚力——附图千余"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["bencao"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "本草纲目·授时历：后勤物力——附图千余"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["bencao"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "本草纲目·授时历：人口动员——面向社会用药实用；“本草”由贵族方技转向民生日用"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["bencao"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "本草纲目·授时历：地缘战略——传于东邻"
    }
   },
   "province": null,

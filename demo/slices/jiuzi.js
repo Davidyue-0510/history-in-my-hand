@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "九子夺嫡：朝堂凝聚力——皇太子胤礽再废"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "九子夺嫡：后勤物力——皇太子胤礽再废"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "九子夺嫡：人口动员——兄弟夺嫡相残"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["jiuzi"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "九子夺嫡：地缘战略——兄弟夺嫡相残"
    }
   },
   "province": "beijing",

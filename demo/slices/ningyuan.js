@@ -47,7 +47,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "宁远：朝堂凝聚力——万二千"
    },
    "material_logistics": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "宁远：后勤物力——万二千"
    },
    "population_mobilization": {
     "from": [
@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "宁远：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -81,7 +81,7 @@ window.SANDBOX_SLICES["ningyuan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "宁远：地缘战略——守宁远"
    }
   },
   "province": "liaoning",

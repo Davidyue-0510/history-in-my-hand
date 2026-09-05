@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["huaxian"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "华县大地震：朝堂凝聚力——明代将巨灾系于「窒阏元气」，朝野修省，亦促成地方赈济与城防重修。"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["huaxian"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "华县大地震：后勤物力——城郭尽圮"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["huaxian"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "华县大地震：人口动员——压死官吏军民八十三万有奇"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["huaxian"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "华县大地震：地缘战略——城郭尽圮"
    }
   },
   "province": null,

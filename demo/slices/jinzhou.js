@@ -42,7 +42,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "锦州：朝堂凝聚力——洪武二十四年 (1391) 始置广宁中屯卫于锦州, 后定名锦州卫"
    },
    "material_logistics": {
     "from": [
@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "锦州：后勤物力——洪武二十四年 (1391) 始置广宁中屯卫于锦州, 后定名锦州卫"
    },
    "population_mobilization": {
     "from": [
@@ -64,7 +64,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "锦州：人口动员——朝鲜使臣沿途记松锦之战清军声势浩大、明援军溃散, 预感明将不保辽西"
    },
    "geopolitical_strategy": {
     "from": [
@@ -76,7 +76,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "锦州：地缘战略——崇祯十五年八月乙巳，宣府总兵杨国柱先进败绩，陷伏中矢死"
    }
   },
   "province": "liaoning",

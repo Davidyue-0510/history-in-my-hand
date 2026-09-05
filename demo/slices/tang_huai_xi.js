@@ -45,7 +45,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "平淮西·雪夜入蔡州：朝堂凝聚力——吴少阳死，元济匿丧，自领军务，拒朝命"
    },
    "material_logistics": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "平淮西·雪夜入蔡州：后勤物力——李愬令击破鹅鸭池以乱声，自南门登"
    },
    "population_mobilization": {
     "from": [
@@ -67,7 +67,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "平淮西·雪夜入蔡州：人口动员——平卢节度使李师道遣刺客杀宰相武元衡于通衢、伤裴度，欲沮朝廷讨蔡之师。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -79,7 +79,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "平淮西·雪夜入蔡州：地缘战略——吴元济出兵屠舞阳、焚叶县，拒命"
    }
   },
   "province": "henan",

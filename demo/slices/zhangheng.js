@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["zhangheng"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "张衡地动仪：朝堂凝聚力——太史令职掌天文历法；“灵台”国家观测台建制"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["zhangheng"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "张衡地动仪：后勤物力——以精铜铸"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["zhangheng"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "张衡地动仪：人口动员——服务于农政（地震预警）、历法民生；知识贵族化"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["zhangheng"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "张衡地动仪：地缘战略——方向无误"
    }
   },
   "province": "henan",

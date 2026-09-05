@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "崖山海战：朝堂凝聚力——崖山之后无中国"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "崖山海战：后勤物力——以巨舰千艘蔽海，结舟为城"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "崖山海战：人口动员——宋军久困，渴甚，饮海水辄呕泄"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "崖山海战：地缘战略——宋元最后一战"
    }
   },
   "province": "guangdong",

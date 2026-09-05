@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["caishiji"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "采石矶之战：朝堂凝聚力——虞允文以一文臣临危却敌，传为美谈"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["caishiji"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "采石矶之战：后勤物力——整肃溃卒，列舟师于采石矶"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["caishiji"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "采石矶之战：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["caishiji"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "采石矶之战：地缘战略——金军大败"
    }
   },
   "province": "anhui",

@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["gaixia"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "垓下之战：朝堂凝聚力——刘邦“捐关以东”封韩信、彭越、英布为诸侯王，联军体制破楚"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["gaixia"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "垓下之战：后勤物力——汉军围垓下，“四面楚歌”心理战；韩信十面埋伏，车骑协同"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["gaixia"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "垓下之战：人口动员——楚军“兵少食尽”，江东子弟散亡；“霸王别姬”反映军队解体"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["gaixia"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "垓下之战：地缘战略——围项羽于垓下"
    }
   },
   "province": "anhui",

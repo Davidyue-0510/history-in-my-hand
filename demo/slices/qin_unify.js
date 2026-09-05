@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "秦灭六国：朝堂凝聚力——“大一统”政统与法家（韩非、李斯）治国理念定型"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "秦灭六国：后勤物力——废分封行郡县，“书同文，车同轨，统一度量衡”；中央集权确立"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "秦灭六国：人口动员——“黔首”编户齐民，什伍连坐；六国遗民迁咸阳"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "秦灭六国：地缘战略——内史腾灭韩，俘韩王安，韩亡。"
    }
   },
   "province": null,

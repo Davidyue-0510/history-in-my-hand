@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["zhenghe"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "郑和下西洋：朝堂凝聚力——第七次远航归，宝船之制渐弛，海洋经略中辍。"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["zhenghe"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "郑和下西洋：后勤物力——第七次远航归，宝船之制渐弛，海洋经略中辍。"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["zhenghe"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "郑和下西洋：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["zhenghe"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "郑和下西洋：地缘战略——首航"
    }
   },
   "province": "jiangsu",

@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["jiasixie"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "齐民要术：朝堂凝聚力——集黄河中下游农法"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["jiasixie"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "齐民要术：后勤物力——集黄河中下游农法"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["jiasixie"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "齐民要术：人口动员——贾思勰官高阳，访老农、集古法，着手纂要术。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["jiasixie"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "齐民要术：地缘战略——集黄河中下游农法"
    }
   },
   "province": "shandong",

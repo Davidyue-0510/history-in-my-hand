@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["taiping"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "太平天国：朝堂凝聚力——“天下一家，共享太平”的平等教义 vs 基督义中国化"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["taiping"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "太平天国：后勤物力——太平军“圣库制”均贫富；湘军（曾国藩）以团练对抗"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["taiping"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "太平天国：人口动员——洪秀全、杨秀清等金田团营，建号太平天国。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["taiping"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "太平天国：地缘战略——乱平"
    }
   },
   "province": null,

@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["boju"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "柏举之战：朝堂凝聚力——孙武《孙子兵法》“攻其无备，出其不意”首次大规模实战检验"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["boju"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "柏举之战：后勤物力——吴以舟师溯淮、舍舟登陆，千里奔袭；车步协同破楚郢都"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["boju"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "柏举之战：人口动员——吴楚之争牵动蔡、唐等小国倒戈；“民劳则疲”的民心向背"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["boju"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "柏举之战：地缘战略——奔郑"
    }
   },
   "province": "hubei",

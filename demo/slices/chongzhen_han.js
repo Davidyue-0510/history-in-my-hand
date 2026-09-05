@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "崇祯大旱：朝堂凝聚力——明末三饷加派、仓储虚耗，旱灾之年仍徵比如故，赈济名存实亡。"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "崇祯大旱：后勤物力——明末三饷加派、仓储虚耗，旱灾之年仍徵比如故，赈济名存实亡。"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "崇祯大旱：人口动员——禾稼尽槁，民掘草根、剥树皮，继以人相食，流亡载道。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "崇祯大旱：地缘战略——陕西、山西率先亢旱，禾稼歉收。"
    }
   },
   "province": null,

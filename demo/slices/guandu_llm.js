@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "官渡之战（LLM 抽取·人工校订）：朝堂凝聚力——谋士田丰建议乘虚袭许都，袁绍不从，坐失先机"
    },
    "material_logistics": {
     "from": [
@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "官渡之战（LLM 抽取·人工校订）：后勤物力——荀攸献声东击西之策，佯攻白马而实救延津"
    },
    "population_mobilization": {
     "from": [
@@ -79,7 +79,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "官渡之战（LLM 抽取·人工校订）：人口动员——袁绍谋士许攸叛投曹操，献袭乌巢烧粮之策"
    },
    "geopolitical_strategy": {
     "from": [
@@ -91,7 +91,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "官渡之战（LLM 抽取·人工校订）：地缘战略——曹操复于延津斩袁绍大将文丑"
    }
   },
   "province": "henan",

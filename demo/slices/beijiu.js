@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["beijiu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "杯酒释兵权：朝堂凝聚力——杯酒释兵权"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["beijiu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "杯酒释兵权：后勤物力——杯酒释兵权"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["beijiu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "杯酒释兵权：人口动员——“重文轻武”国策，“与士大夫治天下”的政治格局成型"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["beijiu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "杯酒释兵权：地缘战略——杯酒释兵权"
    }
   },
   "province": null,

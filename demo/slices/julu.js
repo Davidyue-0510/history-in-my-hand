@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["julu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "巨鹿之战：朝堂凝聚力（详见场景史料）"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["julu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "巨鹿之战：后勤物力——破釜沉舟，烧庐舍，持三日粮"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["julu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "巨鹿之战：人口动员——诸侯将膝行而前，莫敢仰视"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["julu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "巨鹿之战：地缘战略——率楚军渡漳水救巨鹿"
    }
   },
   "province": "hebei",

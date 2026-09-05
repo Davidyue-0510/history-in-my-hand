@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["wugu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "巫蛊之祸：朝堂凝聚力——武帝悟"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["wugu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "巫蛊之祸：后勤物力——族江充"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["wugu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "巫蛊之祸：人口动员——江充告太子据行巫蛊"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["wugu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "巫蛊之祸：地缘战略——武帝悟"
    }
   },
   "province": "shaanxi",

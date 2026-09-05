@@ -45,7 +45,7 @@ window.SANDBOX_SLICES["tieling"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "铁岭：朝堂凝聚力——请集兵十八万"
    },
    "material_logistics": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["tieling"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "铁岭：后勤物力——请集兵十八万"
    },
    "population_mobilization": {
     "from": [
@@ -67,7 +67,7 @@ window.SANDBOX_SLICES["tieling"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "铁岭：人口动员——"
    },
    "geopolitical_strategy": {
     "from": [
@@ -79,7 +79,7 @@ window.SANDBOX_SLICES["tieling"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "铁岭：地缘战略——"
    }
   },
   "province": "liaoning",

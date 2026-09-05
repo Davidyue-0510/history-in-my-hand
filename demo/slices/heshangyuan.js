@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "和尚原之战：朝堂凝聚力——和尚原、仙人关连捷“保全蜀口”，阻断金军入川，撑住南宋西线"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "和尚原之战：后勤物力——金兵负重甲登山仰攻"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "和尚原之战：人口动员——金军“重甲骑兵”攻坚受挫；蜀口“民供馈饷”支撑长期守御"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "和尚原之战：地缘战略——金兵负重甲登山仰攻"
    }
   },
   "province": null,

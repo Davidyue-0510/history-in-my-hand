@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "钓鱼城之战：朝堂凝聚力——“上帝折鞭”——蒙哥死使旭烈兀西征回师，缓解欧亚压力"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "钓鱼城之战：后勤物力——蒙哥为飞石所中，重伤而卒"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "钓鱼城之战：人口动员——王坚、张珏率军民死守；“春以水、夏以粮”长期对峙，蒙哥暴卒"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["diaoyucheng"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "钓鱼城之战：地缘战略——围合州钓鱼城"
    }
   },
   "province": "chongqing",

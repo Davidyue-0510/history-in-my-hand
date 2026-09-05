@@ -92,7 +92,7 @@ window.SANDBOX_SLICES["feishui_llm"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "淝水之战（LLM 抽取·人工校订）：地缘战略——苻融马倒被杀，前秦前线指挥断绝"
    }
   },
   "province": "anhui",

@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["huangjin"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "黄巾起义：朝堂凝聚力——苍天已死、黄天当立"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["huangjin"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "黄巾起义：后勤物力（详见场景史料）"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["huangjin"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "黄巾起义：人口动员——张角以太平道聚众，号「苍天已死，黄天当立」，底层流民对东汉赋役压榨的总爆发。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["huangjin"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "黄巾起义：地缘战略——张角"
    }
   },
   "province": null,

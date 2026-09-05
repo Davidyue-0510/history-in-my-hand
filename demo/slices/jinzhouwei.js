@@ -42,7 +42,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "金州：朝堂凝聚力——洪武十年 (1377) 始置金州卫, 辖旅顺口, 扼辽东半岛南端海运"
    },
    "material_logistics": {
     "from": [
@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "金州：后勤物力——洪武十年 (1377) 始置金州卫, 辖旅顺口, 扼辽东半岛南端海运"
    },
    "population_mobilization": {
     "from": [
@@ -64,7 +64,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "金州：人口动员——毛文龙据皮岛/铁山, 1621–1622 一度收复金州、旅顺, 牵制后金南翼"
    },
    "geopolitical_strategy": {
     "from": [
@@ -76,7 +76,7 @@ window.SANDBOX_SLICES["jinzhouwei"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "金州：地缘战略——天启元年 (1621), 后金取辽南, 金州卫陷"
    }
   },
   "province": "liaoning",

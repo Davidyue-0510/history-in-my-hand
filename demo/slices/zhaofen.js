@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "昭君出塞：朝堂凝聚力——“和亲”作为“柔远”战略，以婚姻缔和平；“宁胡”寓意安宁匈奴"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "昭君出塞：后勤物力——和亲“赐乘舆服御”，嫁妆与仪仗彰显汉家礼制；“宁胡阏氏”名号"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "昭君出塞：人口动员——汉匈和亲"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "昭君出塞：地缘战略——汉匈和亲"
    }
   },
   "province": "neimenggu",

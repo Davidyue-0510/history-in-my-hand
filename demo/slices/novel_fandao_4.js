@@ -31,7 +31,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "反派他爸教做人·我的儿子是怪物：朝堂凝聚力——唐心记忆=唯一真实。"
    },
    "material_logistics": {
     "from": [
@@ -43,7 +43,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "反派他爸教做人·我的儿子是怪物：后勤物力——系统设定：叶为安受派代入父亲，教养反派子女为通关条件。"
    },
    "population_mobilization": {
     "from": [
@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "反派他爸教做人·我的儿子是怪物：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -65,7 +65,7 @@ window.SANDBOX_SLICES["novel_fandao_4"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "反派他爸教做人·我的儿子是怪物：地缘战略——矫正后艾哲未疯狂。"
    }
   },
   "province": "fiction",

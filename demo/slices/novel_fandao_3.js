@@ -32,7 +32,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "反派他爸教做人·拜金绝色女儿：朝堂凝聚力——矫正后谢夕兰清醒，未毁人毁己。"
    },
    "material_logistics": {
     "from": [
@@ -44,7 +44,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "反派他爸教做人·拜金绝色女儿：后勤物力——系统设定：叶为安受派代入父亲，教养反派子女为通关条件。"
    },
    "population_mobilization": {
     "from": [
@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "反派他爸教做人·拜金绝色女儿：人口动员——谢泽非自述承认家暴起点。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -66,7 +66,7 @@ window.SANDBOX_SLICES["novel_fandao_3"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "反派他爸教做人·拜金绝色女儿：地缘战略——谢泽非自述承认家暴起点。"
    }
   },
   "province": "fiction",

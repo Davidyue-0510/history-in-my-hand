@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["imjin"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "万历朝鲜之役·壬辰倭乱：朝堂凝聚力——读册至『封尔为日本国王』，秀吉变色裂册毁冕"
    },
    "material_logistics": {
     "from": [
@@ -62,7 +62,7 @@ window.SANDBOX_SLICES["imjin"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "万历朝鲜之役·壬辰倭乱：后勤物力——水陆九军，总十五万人"
    },
    "population_mobilization": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["imjin"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "万历朝鲜之役·壬辰倭乱：人口动员——倭将合兵攻晋州，诸将畏贼不救，金千镒崔庆会死之"
    },
    "geopolitical_strategy": {
     "from": [
@@ -84,7 +84,7 @@ window.SANDBOX_SLICES["imjin"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "万历朝鲜之役·壬辰倭乱：地缘战略——水陆九军，总十五万人"
    }
   },
   "province": "overseas",

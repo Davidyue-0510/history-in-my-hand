@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["feishui"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "淝水之战：朝堂凝聚力——率北府兵八万拒之"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["feishui"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "淝水之战：后勤物力——率北府兵八万拒之"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["feishui"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "淝水之战：人口动员——前秦征发各族“戎卒六十余万”，民怨军心离散；东晋“君臣辑睦”"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["feishui"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "淝水之战：地缘战略——秦许之"
    }
   },
   "province": "anhui",

@@ -66,7 +66,7 @@ window.SANDBOX_SLICES["san_guo"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "三国鼎立：朝堂凝聚力——咸熙二年司马炎逼魏元帝曹奂禅让，设坛南郊受禅，改元泰始，魏亡晋立"
    },
    "material_logistics": {
     "from": [
@@ -78,7 +78,7 @@ window.SANDBOX_SLICES["san_guo"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "三国鼎立：后勤物力——诸葛亮损益连弩、创制木牛流马，为蜀汉北伐的运输与兵器技术支撑"
    },
    "population_mobilization": {
     "from": [
@@ -88,7 +88,7 @@ window.SANDBOX_SLICES["san_guo"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "三国鼎立：人口动员——太康元年（280）全国统一在册户245.9万、口1616.4万，较东汉永寿三年（157）口5648万锐减"
    },
    "geopolitical_strategy": {
     "from": [
@@ -100,7 +100,7 @@ window.SANDBOX_SLICES["san_guo"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "三国鼎立：地缘战略——景元四年魏钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降，蜀汉亡"
    }
   },
   "province": null,

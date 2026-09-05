@@ -45,7 +45,7 @@ window.SANDBOX_SLICES["haizhou"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "海州：朝堂凝聚力——洪武九年 (1376) 始置海州卫, 初治牛家庄"
    },
    "material_logistics": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["haizhou"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "海州：后勤物力——洪武九年 (1376) 始置海州卫, 初治牛家庄"
    },
    "population_mobilization": {
     "from": [
@@ -67,7 +67,7 @@ window.SANDBOX_SLICES["haizhou"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "海州：人口动员——李朝接毛文龙急报, 知海州已陷, 议援明"
    },
    "geopolitical_strategy": {
     "from": [
@@ -79,7 +79,7 @@ window.SANDBOX_SLICES["haizhou"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "海州：地缘战略——李朝接毛文龙急报, 知海州已陷, 议援明"
    }
   },
   "province": "liaoning",

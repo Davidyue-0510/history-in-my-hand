@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["yaksa"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "雅克萨之战：朝堂凝聚力——《尼布楚条约》之订，划定中俄东段边界"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["yaksa"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "雅克萨之战：后勤物力——清军炮毁其垒"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["yaksa"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "雅克萨之战：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["yaksa"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "雅克萨之战：地缘战略——围雅克萨"
    }
   },
   "province": "heilongjiang",

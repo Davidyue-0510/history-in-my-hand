@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["fotao"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "佛教传入：朝堂凝聚力——立白马寺"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["fotao"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "佛教传入：后勤物力——汉明帝“梦金人”，遣蔡愔等使西域迎佛法；译《四十二章经》"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["fotao"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "佛教传入：人口动员——士人“格义”会通儒道；民间祈福需求推动寺院下沉"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["fotao"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "佛教传入：地缘战略——立白马寺"
    }
   },
   "province": null,

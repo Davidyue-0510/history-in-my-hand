@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["huanghe"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "黄河改道：朝堂凝聚力——东京留守杜充决黄河自泗入淮以阻金兵，黄河开始南泛夺淮，为近七百年南流之始。"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["huanghe"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "黄河改道：后勤物力——筑断黄陵冈，黄河全由南流（泗、淮）入海，北流彻底断绝。"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["huanghe"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "黄河改道：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["huanghe"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "黄河改道：地缘战略——黄河主流彻底夺淮入海，淮南河患剧增，江淮之间水系大乱。"
    }
   },
   "province": null,

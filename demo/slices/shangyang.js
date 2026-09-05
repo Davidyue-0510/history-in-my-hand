@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["shangyang"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "商鞅变法：朝堂凝聚力——行县制"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["shangyang"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "商鞅变法：后勤物力——行县制"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["shangyang"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "商鞅变法：人口动员——秦孝公崩，惠文王立，旧贵族公子虔等告商鞅「欲反」，车裂以徇——改革派领袖死于既得利益集团的政治反扑。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["shangyang"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "商鞅变法：地缘战略——秦骤强"
    }
   },
   "province": "shaanxi",

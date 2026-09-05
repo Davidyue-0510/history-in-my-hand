@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["wuwang"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "武王克商：朝堂凝聚力——周灭商后行分封制与宗法制，立嫡长子继承；“天命”转移"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["wuwang"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "武王克商：后勤物力——周灭商后行分封制与宗法制，立嫡长子继承；“天命”转移"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["wuwang"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "武王克商：人口动员——庸、蜀、羌、髳、微、卢、彭、濮等方国联军，夷夏同盟伐纣"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["wuwang"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "武王克商：地缘战略——武王东观兵孟津，诸侯不期而会者八百，示伐纣之势。"
    }
   },
   "province": "henan",

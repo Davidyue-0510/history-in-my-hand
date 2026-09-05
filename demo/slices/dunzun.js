@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["dunzun"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "独尊儒术：朝堂凝聚力——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["dunzun"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "独尊儒术：后勤物力——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["dunzun"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "独尊儒术：人口动员——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["dunzun"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "独尊儒术：地缘战略——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
    }
   },
   "province": null,

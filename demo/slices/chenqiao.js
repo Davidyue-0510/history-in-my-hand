@@ -36,7 +36,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "陈桥兵变：朝堂凝聚力——殿前都点检"
    },
    "material_logistics": {
     "from": [
@@ -48,7 +48,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "陈桥兵变：后勤物力——殿前都点检"
    },
    "population_mobilization": {
     "from": [
@@ -58,7 +58,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "陈桥兵变：人口动员——军中谋立，赵匡胤被掖黄袍，号恸而从，旋回师。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "陈桥兵变：地缘战略——宋"
    }
   },
   "province": "henan",

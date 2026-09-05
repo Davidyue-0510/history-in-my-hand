@@ -85,7 +85,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
+    "note": "长平之战（LLM 抽取·人工校订）：地缘战略——王龁攻韩取上党（上党归赵触发战端）"
    }
   },
   "province": "shanxi",

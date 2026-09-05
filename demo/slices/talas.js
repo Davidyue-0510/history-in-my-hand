@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["talas"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "怛罗斯之战：朝堂凝聚力——造纸术由此西传（战俘工匠入撒马尔罕）；“中国纸”技术外溢"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["talas"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "怛罗斯之战：后勤物力——被俘唐匠将造纸术西传"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["talas"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "怛罗斯之战：人口动员——高仙芝偕拔汗那、葛逻禄联军；石国（塔什干）冤杀引发西域不满"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["talas"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "怛罗斯之战：地缘战略——相持五日"
    }
   },
   "province": null,

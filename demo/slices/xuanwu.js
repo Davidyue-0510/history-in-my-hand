@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "玄武门之变：朝堂凝聚力——旋即位"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "玄武门之变：后勤物力——旋即位"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "玄武门之变：人口动员——武德末秦王与太子争储白热化：建成结元吉、引关陇元老固储位，世民倚山东豪杰与府兵骁将谋夺嫡，双方各树党羽、"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "玄武门之变：地缘战略——旋即位"
    }
   },
   "province": "shaanxi",

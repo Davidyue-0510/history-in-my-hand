@@ -43,7 +43,7 @@ window.SANDBOX_SLICES["chu_han"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "楚汉之争：朝堂凝聚力——项羽分封十八王，自立西楚霸王，都彭城"
    },
    "material_logistics": {
     "from": [
@@ -55,7 +55,7 @@ window.SANDBOX_SLICES["chu_han"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "楚汉之争：后勤物力——项羽分封十八王，自立西楚霸王，都彭城"
    },
    "population_mobilization": {
     "from": [
@@ -65,7 +65,7 @@ window.SANDBOX_SLICES["chu_han"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "楚汉之争：人口动员——楚汉相持荥阳—成皋数年，民疲饷竭，户口锐减"
    },
    "geopolitical_strategy": {
     "from": [
@@ -77,7 +77,7 @@ window.SANDBOX_SLICES["chu_han"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "楚汉之争：地缘战略——鸿门宴项羽纵刘邦，后世视为楚汉转折关键"
    }
   },
   "province": [

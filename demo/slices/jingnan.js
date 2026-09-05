@@ -37,7 +37,7 @@ window.SANDBOX_SLICES["jingnan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "靖难之役：朝堂凝聚力——朱棣以「清君侧、靖国难」为名起兵北平，史称靖难之役。"
    },
    "material_logistics": {
     "from": [
@@ -49,7 +49,7 @@ window.SANDBOX_SLICES["jingnan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "靖难之役：后勤物力——张玉战死，朱棣溃围北还"
    },
    "population_mobilization": {
     "from": [
@@ -59,7 +59,7 @@ window.SANDBOX_SLICES["jingnan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "靖难之役：人口动员——北军（燕）善骑射 vs 南军（中央）数量优而指挥乱象"
    },
    "geopolitical_strategy": {
     "from": [
@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["jingnan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "靖难之役：地缘战略——合兵六十万"
    }
   },
   "province": null,

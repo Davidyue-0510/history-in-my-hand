@@ -41,7 +41,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "复州：朝堂凝聚力——洪武十四年 (1381) 始置复州卫, 隶辽东都司"
    },
    "material_logistics": {
     "from": [
@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "复州：后勤物力——洪武十四年 (1381) 始置复州卫, 隶辽东都司"
    },
    "population_mobilization": {
     "from": [
@@ -63,7 +63,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "复州：人口动员——毛文龙据皮岛创东江镇, 浮海袭扰复州、金州沿海, 牵制后金南翼"
    },
    "geopolitical_strategy": {
     "from": [
@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["fuzhou"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "复州：地缘战略——洪武十四年 (1381) 始置复州卫, 隶辽东都司"
    }
   },
   "province": "liaoning",

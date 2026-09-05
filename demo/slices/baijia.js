@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["baijia"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "百家争鸣：朝堂凝聚力——儒道墨法名阴阳纵横诸家并起"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["baijia"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "百家争鸣：后勤物力——“处士横议”，私学兴盛，竹简帛书传播；儒墨道法名农诸家并起"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["baijia"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "百家争鸣：人口动员——儒（孔孟）墨（墨翟）道（老庄）法（商鞅、韩非）竞相，“百家殊方”"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["baijia"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "百家争鸣：地缘战略——公元前372年生"
    }
   },
   "province": null,

@@ -35,7 +35,7 @@ window.SANDBOX_SLICES["three_campaigns"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "三大战役·辽沈·淮海·平津：朝堂凝聚力——国统区金圆券改革崩溃，经济支撑瓦解、物价飞涨"
    },
    "material_logistics": {
     "from": [
@@ -47,7 +47,7 @@ window.SANDBOX_SLICES["three_campaigns"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "三大战役·辽沈·淮海·平津：后勤物力——国统区金圆券改革崩溃，经济支撑瓦解、物价飞涨"
    },
    "population_mobilization": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["three_campaigns"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "三大战役·辽沈·淮海·平津：人口动员——国统区强征粮款、抓丁，民怨沸腾、地方武装瓦解"
    },
    "geopolitical_strategy": {
     "from": [
@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["three_campaigns"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "三大战役·辽沈·淮海·平津：地缘战略——东北全境为中共所占"
    }
   },
   "province": [

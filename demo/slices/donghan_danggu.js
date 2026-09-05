@@ -32,7 +32,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "党锢之祸：朝堂凝聚力——清流以太学为舆论场，标榜名节攻宦官；宦官挟幼主、诬结党，以「诽讪」罪反制——皇权与士族的结构性对撞。"
    },
    "material_logistics": {
     "from": [
@@ -44,7 +44,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "党锢之祸：后勤物力——建宁元年窦武、陈蕃谋诛宦官，事泄兵败，陈蕃死、窦武诛，宦官更张。"
    },
    "population_mobilization": {
     "from": [
@@ -54,7 +54,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "党锢之祸：人口动员——清流以太学为舆论场，标榜名节攻宦官；宦官挟幼主、诬结党，以「诽讪」罪反制——皇权与士族的结构性对撞。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -66,7 +66,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "党锢之祸：地缘战略——清流以太学为舆论场，标榜名节攻宦官；宦官挟幼主、诬结党，以「诽讪」罪反制——皇权与士族的结构性对撞。"
    }
   },
   "province": null,

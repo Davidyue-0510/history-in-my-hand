@@ -31,7 +31,7 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "反派他爸教做人·不负责的穿书女：朝堂凝聚力——何欣然是'追梦母亲'样本。"
    },
    "material_logistics": {
     "from": [
@@ -43,7 +43,7 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "反派他爸教做人·不负责的穿书女：后勤物力（详见场景史料）"
    },
    "population_mobilization": {
     "from": [
@@ -53,7 +53,7 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "反派他爸教做人·不负责的穿书女：人口动员——矫正后巧妹未受流言所伤。"
    },
    "geopolitical_strategy": {
     "from": [
@@ -65,7 +65,7 @@ window.SANDBOX_SLICES["novel_fandao_5"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "反派他爸教做人·不负责的穿书女：地缘战略——矫正后巧妹未受流言所伤。"
    }
   },
   "province": "fiction",

@@ -38,7 +38,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "都江堰：朝堂凝聚力——李冰“深淘滩，低作堰”，分水鱼嘴+飞沙堰+宝瓶口三体工程"
    },
    "material_logistics": {
     "from": [
@@ -50,7 +50,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "都江堰：后勤物力——旱溉潦泄"
    },
    "population_mobilization": {
     "from": [
@@ -60,7 +60,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "都江堰：人口动员——成都平原“水旱从人，不知饥馑”，沃野千里为“天府”"
    },
    "geopolitical_strategy": {
     "from": [
@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "都江堰：地缘战略——旱溉潦泄"
    }
   },
   "province": "sichuan",

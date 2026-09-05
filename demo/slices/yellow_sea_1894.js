@@ -33,7 +33,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "甲午战争·黄海海战：朝堂凝聚力——多数西方观察者认为中国将获胜"
    },
    "material_logistics": {
     "from": [
@@ -45,7 +45,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "甲午战争·黄海海战：后勤物力——日本4艘遭重创、298人死伤"
    },
    "population_mobilization": {
     "from": [
@@ -55,7 +55,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "甲午战争·黄海海战：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -67,7 +67,7 @@ window.SANDBOX_SLICES["yellow_sea_1894"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "甲午战争·黄海海战：地缘战略——日本夺得黄海制海权"
    }
   },
   "province": "overseas",

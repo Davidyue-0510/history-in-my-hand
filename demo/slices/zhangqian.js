@@ -39,7 +39,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "张骞通西域：朝堂凝聚力——“大一统”疆域观拓展，“海内为一”的天下秩序外延"
    },
    "material_logistics": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "张骞通西域：后勤物力——“断匈奴右臂”战略，汉设河西四郡（武威、张掖、酒泉、敦煌）经营西域"
    },
    "population_mobilization": {
     "from": [
@@ -61,7 +61,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "张骞通西域：人口动员——“汉之号令班西域”，西域诸国置译长通使；乌孙、大宛、大月氏往来"
    },
    "geopolitical_strategy": {
     "from": [
@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "张骞通西域：地缘战略——丝路肇端"
    }
   },
   "province": "shaanxi",

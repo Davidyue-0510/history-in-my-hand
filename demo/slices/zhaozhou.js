@@ -35,7 +35,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→朝堂凝聚力（R6 courtCohesion/infight）"
+    "note": "赵州桥：朝堂凝聚力——桥成后通衢便利，唐人铭之，世代修缮沿用。"
    },
    "material_logistics": {
     "from": [
@@ -47,7 +47,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
      3
     ],
     "layer": "inference",
-    "note": "技术↔生产力；赋税/漕运→后勤半径（R7）"
+    "note": "赵州桥：后勤物力——跨洨水"
    },
    "population_mobilization": {
     "from": [
@@ -57,7 +57,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
      4
     ],
     "layer": "inference",
-    "note": "人口↔常驻军；流民→动员潜力"
+    "note": "赵州桥：人口动员（详见场景史料）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["zhaozhou"] = {
      6
     ],
     "layer": "inference",
-    "note": "地形/关隘/外交→战略重心与窗口"
+    "note": "赵州桥：地缘战略——李春"
    }
   },
   "province": "hebei",
