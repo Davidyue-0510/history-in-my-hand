@@ -11,6 +11,9 @@
   7. 错误隔离：无 API 的 LLM spec 失败快速返回，批继续，summary emit_fail>=1，rc=1
   8. --report 写出合法 JSON（totals/emits/无 build/gates）
   9. --texts-dir --dry-run：任意文字自动裹 spec 进入计划、rc 0、零副作用
+  10. --from-text FILE --dry-run：单文件一键流水线（任意文字 → 世界 单行入口）、rc 0、零副作用
+  11. --limit N --dry-run：大目录只处理前 N 个做冒烟、specs=N、rc 0
+  12. --retries N：确定性崩溃重试 N 次仍失败、rc=1、批继续、attempts=N+1
 
 清理：emits-dir 与 text 临时目录都用系统 temp + shutil.rmtree（系统 temp 不受
 项目内批量删除守卫拦截）。不 register（避免 repo 污染）。
@@ -197,6 +200,51 @@ def main():
     ok = check("--texts-dir 计划含裹出的 md spec（note）",
                "note" in out) and ok
     _rmtree(td_txt)
+
+    # 10) --from-text FILE --dry-run（单文件一键流水线，任意文字 → 世界 单行入口）
+    td_txt1 = tempfile.mkdtemp(prefix="batch_fromtext_")
+    txt1 = os.path.join(td_txt1, "官渡之战.txt")
+    with open(txt1, "w", encoding="utf-8") as f:
+        f.write("官渡之战\n曹操奇袭乌巢，焚袁绍粮草，遂破袁军。\n")
+    ed_ft = tempfile.mkdtemp(prefix="batch_emits_ft_")
+    rc = subprocess.run([PY, BATCH, "--from-text", txt1, "--emits-dir", ed_ft,
+                         "--dry-run"], cwd=ROOT, capture_output=True, text=True)
+    out = rc.stdout + rc.stderr
+    ok = check("--from-text --dry-run 退出码 0", rc.returncode == 0) and ok
+    ok = check("--from-text 计划含裹出的 spec（官渡之战）", "官渡之战" in out) and ok
+    ok = check("--from-text 零副作用（emits 空/未写）", not any(
+        fn.endswith(".json") for fn in os.listdir(ed_ft))) and ok
+    _rmtree(td_txt1); _rmtree(ed_ft)
+
+    # 11) --limit N --dry-run（大目录冒烟，只处理前 N 个）
+    sd_lim = tempfile.mkdtemp(prefix="batch_limit_")
+    _copy_fixture_specs(sd_lim, 5)
+    ed_lim = tempfile.mkdtemp(prefix="batch_emits_lim_")
+    rc = subprocess.run([PY, BATCH, "--specs-dir", sd_lim, "--emits-dir", ed_lim,
+                         "--limit", "2", "--dry-run"], cwd=ROOT,
+                        capture_output=True, text=True)
+    out = rc.stdout + rc.stderr
+    ok = check("--limit 2 --dry-run 退出码 0", rc.returncode == 0) and ok
+    ok = check("--limit 打印冒烟提示（仅前 2 / 5）", "仅处理前 2 / 5" in out) and ok
+    ok = check("--limit 计划 specs=2", "specs=2" in out) and ok
+    _rmtree(sd_lim); _rmtree(ed_lim)
+
+    # 12) --retries N 错误隔离（确定性离线崩溃，重试 N 次仍失败 → rc=1，批继续）
+    sd_ret = tempfile.mkdtemp(prefix="batch_retries_")
+    bad_spec = {"id": "batch_ret_x", "title": "坏 spec",
+                "source": {"title": "x", "party": "明方"},  # 缺 id → KeyError
+                "source_text": "缺 source.id，必崩。"}
+    bad_p = os.path.join(sd_ret, "bad.spec.json")
+    json.dump(bad_spec, open(bad_p, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    ed_ret = tempfile.mkdtemp(prefix="batch_emits_ret_")
+    rc = subprocess.run([PY, BATCH, "--specs-dir", sd_ret, "--emits-dir", ed_ret,
+                         "--retries", "2", "--retry-delay", "0.4", "--jobs", "1"],
+                        cwd=ROOT, capture_output=True, text=True)
+    out = rc.stdout + rc.stderr
+    ok = check("--retries 确定性崩溃仍 rc=1", rc.returncode == 1) and ok
+    ok = check("--retries 汇总 emit_fail=1", "emit_fail=1" in out) and ok
+    ok = check("--retries 重试到 3/3（1+2）", "重试 3/3" in out) and ok
+    _rmtree(sd_ret); _rmtree(ed_ret)
 
     print("\nbatch_world_gen: %s" % ("PASS" if ok else "FAIL"))
     return 0 if ok else 1

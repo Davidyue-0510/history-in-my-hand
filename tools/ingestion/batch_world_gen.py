@@ -6,22 +6,28 @@
   # 1) 已有 spec 批量生成（emit 阶段可并行）
   python tools/ingestion/batch_world_gen.py --specs-dir <DIR> [--jobs N]
       [--register] [--build/--no-build] [--run-gates]
-      [--emits-dir DIR] [--force] [--report FILE] [--dry-run]
+      [--emits-dir DIR] [--force] [--limit N] [--retries N] [--report FILE] [--dry-run]
 
   # 2) 任意文字目录批量导入（最贴近「任意文字生成世界」语义）
   python tools/ingestion/batch_world_gen.py --texts-dir <DIR> [--jobs N]
       [--register] [--run-gates] [--default-party 明方] [--default-region liaodong]
 
-设计要点（v0.106 → v0.107 优化）：
+  # 3) 单文件一键流水线（任意文字 → 世界 的单行入口）
+  python tools/ingestion/batch_world_gen.py --from-text 史料.txt
+      [--register] [--run-gates] [--default-party 明方]
+
+设计要点（v0.106 → v0.108 优化）：
   - emit 阶段：逐个 subprocess 调 `--world <spec> --emit <emit>`（纯 LLM 抽取→写文件，
     零 repo 副作用）。subprocess 隔离 _terr_cache/全局状态，可安全并行（--jobs N）。
   - 断点续跑：emit 文件已存在则跳过（--force 覆盖重跑），省 LLM token（规模化关键）。
+  - 重试：--retries N 对 emit 瞬时失败（限流/5xx）自动重试 + 退避，规模化稳定性关键。
   - register 阶段：每个成功 emit 调 `--from-json`（写文件/注册/地形），但设
     WORLD_SKIP_BUILD=1 跳过各自的整轮 build；收尾**只跑一次** build.py（O(1) 而非 O(n)）。
     串行 register（共享 data/scenes.json / demo/data.js 不可并行写）。
-  - 任意文字：--texts-dir 扫描 *.txt/*.md，自动裹成 spec（slug 化文件名作 id，
-    source_text=文件全文，title=首行/文件名），进入同一条流水线。
+  - 任意文字：--texts-dir 扫描 *.txt/*.md / --from-text 单文件，自动裹成 spec
+    （slug 化文件名作 id，source_text=文件全文，title=首行/文件名），进入同一条流水线。
   - 结构化报告：--report FILE 落 JSON（配置 + 每 spec 结果 + 汇总），供 CI/gates 集成。
+  - --limit N：大目录先跑前 N 个做冒烟（不烧整批 token）。
 
 为什么 subprocess 而非 in-process：隔离全局状态；并行零侵入；单 spec 失败不中断整批。
 """
@@ -86,25 +92,39 @@ def _wrap_text(path: str, default_party: str, default_region: str,
 
 
 def _emit_one(python: str, spec_path: str, emit_path: str, dry: bool,
-              timeout: int) -> dict:
-    """单 spec emit（subprocess）。返回结构化结果。"""
+              timeout: int, retries: int = 0, retry_delay: float = 3.0) -> dict:
+    """单 spec emit（subprocess）。返回结构化结果。对瞬时失败自动重试。"""
     if dry:
         return {"spec": spec_path, "emit": emit_path, "rc": "DRY",
-                "ok": True, "skipped": False, "err": ""}
-    t0 = time.time()
-    try:
-        proc = subprocess.run(
-            [python, INGEST, "--world", spec_path, "--emit", emit_path],
-            cwd=ROOT, capture_output=True, text=True, timeout=timeout)
-    except subprocess.TimeoutExpired:
-        return {"spec": spec_path, "emit": emit_path, "rc": -1,
-                "ok": False, "skipped": False, "err": "timeout",
-                "secs": round(time.time() - t0, 1)}
-    rc = proc.returncode
-    return {"spec": spec_path, "emit": emit_path, "rc": rc, "ok": rc == 0,
-            "skipped": False,
-            "err": (proc.stderr or proc.stdout).strip()[-300:] if rc != 0 else "",
-            "secs": round(time.time() - t0, 1)}
+                "ok": True, "skipped": False, "err": "", "attempts": 1}
+    attempts = 0
+    last = None
+    for attempt in range(1 + max(0, retries)):
+        attempts = attempt + 1
+        t0 = time.time()
+        try:
+            proc = subprocess.run(
+                [python, INGEST, "--world", spec_path, "--emit", emit_path],
+                cwd=ROOT, capture_output=True, text=True, timeout=timeout)
+        except subprocess.TimeoutExpired:
+            last = {"spec": spec_path, "emit": emit_path, "rc": -1,
+                    "ok": False, "skipped": False, "err": "timeout",
+                    "secs": round(time.time() - t0, 1), "attempts": attempts}
+            print("  ⚠ emit 超时(重试 %d/%d) %s" % (attempts, 1 + retries, spec_path))
+        else:
+            rc = proc.returncode
+            last = {"spec": spec_path, "emit": emit_path, "rc": rc, "ok": rc == 0,
+                    "skipped": False,
+                    "err": (proc.stderr or proc.stdout).strip()[-300:] if rc != 0 else "",
+                    "secs": round(time.time() - t0, 1), "attempts": attempts}
+            if rc == 0:
+                return last
+            print("  ⚠ emit 失败 rc=%s(重试 %d/%d) %s" % (rc, attempts, 1 + retries, spec_path))
+        if attempt < retries:
+            time.sleep(retry_delay)
+    return last if last is not None else {"spec": spec_path, "emit": emit_path,
+                                           "rc": -1, "ok": False, "skipped": False,
+                                           "err": "no-attempt", "attempts": attempts}
 
 
 def _register_one(python: str, emit_path: str, dry: bool) -> dict:
@@ -173,6 +193,29 @@ def _collect_specs(args) -> tuple:
                 json.dump(spec, f, ensure_ascii=False, indent=1)
                 f.write("\n")
             specs.append((key, out, True))
+
+    if args.from_text:
+        # 单文件：裹成 spec 进同一条流水线（北极星② 单行入口）
+        td = tempfile.mkdtemp(prefix="batch_from_text_")
+        temp_dirs.append(td)
+        spec = _wrap_text(args.from_text, args.default_party, args.default_region,
+                          args.default_kind)
+        key = spec["id"]
+        if key in seen:
+            key = "%s_%d" % (key, len(seen))
+            spec["id"] = key
+        seen.add(key)
+        out = os.path.join(td, key + ".spec.json")
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(spec, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        specs.append((key, out, True))
+
+    # --limit N：大目录先跑前 N 个做冒烟（不烧整批 token）
+    if args.limit and args.limit > 0 and len(specs) > args.limit:
+        print("[batch] --limit %d：仅处理前 %d / %d 个 spec"
+              % (args.limit, args.limit, len(specs)))
+        specs = specs[:args.limit]
     return specs, temp_dirs
 
 
@@ -182,9 +225,16 @@ def main() -> int:
     ap.add_argument("--specs-dir", default=None, help="含 *.spec.json 的目录")
     ap.add_argument("--texts-dir", default=None,
                     help="含 *.txt/*.md 的目录（自动裹成 spec，直击北极星②）")
+    ap.add_argument("--from-text", default=None,
+                    help="单文件一键流水线（任意文字 → 世界 的单行入口）")
     ap.add_argument("--emits-dir", default=None, help="emit JSON 输出目录（默认 .tmp/batch_emits）")
     ap.add_argument("--jobs", type=int, default=1,
                     help="emit 阶段并行 worker 数（默认 1；LLM 调用密集，受 API 限速）")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="最多处理前 N 个 spec（大目录冒烟用，默认 0=不限制）")
+    ap.add_argument("--retries", type=int, default=0,
+                    help="emit 瞬时失败自动重试次数（限流/5xx，默认 0=不重试）")
+    ap.add_argument("--retry-delay", type=float, default=3.0, help="emit 重试退避秒数")
     ap.add_argument("--register", action="store_true",
                     help="emit 后逐个 --from-json 回灌（WORLD_SKIP_BUILD=1）+ 收尾单次 build")
     ap.add_argument("--no-build", action="store_true",
@@ -194,15 +244,15 @@ def main() -> int:
                     help="忽略已存在的 emit 文件，强制重跑 LLM")
     ap.add_argument("--report", default=None, help="写出 JSON 汇总报告路径")
     ap.add_argument("--default-party", default="unknown",
-                    help="--texts-dir 自动裹 spec 的默认 source.party（按语料设）")
-    ap.add_argument("--default-region", default="liaodong", help="--texts-dir 默认 region")
-    ap.add_argument("--default-kind", default="county", help="--texts-dir 默认 kind")
+                    help="--texts-dir/--from-text 自动裹 spec 的默认 source.party（按语料设）")
+    ap.add_argument("--default-region", default="liaodong", help="--texts-dir/--from-text 默认 region")
+    ap.add_argument("--default-kind", default="county", help="--texts-dir/--from-text 默认 kind")
     ap.add_argument("--dry-run", action="store_true", help="只打印计划，不调 LLM / 不写库")
     ap.add_argument("--python", default=sys.executable, help="调 ingest.py 的 python 解释器")
     args = ap.parse_args()
 
-    if not args.specs_dir and not args.texts_dir:
-        print("[batch] 需 --specs-dir 或 --texts-dir")
+    if not args.specs_dir and not args.texts_dir and not args.from_text:
+        print("[batch] 需 --specs-dir / --texts-dir / --from-text 之一")
         return 2
 
     emits_dir = args.emits_dir or os.path.join(ROOT, ".tmp", "batch_emits")
@@ -216,7 +266,9 @@ def main() -> int:
 
     jobs = max(1, min(args.jobs, 8))
     print("[batch] specs=%d  emits-dir=%s  jobs=%d  register=%s  gates=%s  force=%s"
-          % (len(specs), emits_dir, jobs, args.register, args.run_gates, args.force))
+          "  limit=%d  retries=%d"
+          % (len(specs), emits_dir, jobs, args.register, args.run_gates, args.force,
+             args.limit, args.retries))
 
     # ── 1) emit 阶段（并行，可续跑） ──
     emit_results: list = []
@@ -237,10 +289,12 @@ def main() -> int:
                 print("----  emit %s  →  %s%s" % (key, os.path.basename(emit),
                                                   "  (dry)" if args.dry_run else ""))
                 emit_results.append({"key": key, **_emit_one(
-                    args.python, sp, emit, args.dry_run, 900)})
+                    args.python, sp, emit, args.dry_run, 900,
+                    args.retries, args.retry_delay)})
         else:
             with ThreadPoolExecutor(max_workers=jobs) as ex:
-                futs = {ex.submit(_emit_one, args.python, sp, emit, False, 900): key
+                futs = {ex.submit(_emit_one, args.python, sp, emit, False, 900,
+                                  args.retries, args.retry_delay): key
                         for key, sp, emit, _ in pending}
                 for fut in as_completed(futs):
                     r = fut.result()
@@ -288,9 +342,10 @@ def main() -> int:
     if args.report and not args.dry_run:
         report = {
             "config": {"specs_dir": args.specs_dir, "texts_dir": args.texts_dir,
-                       "emits_dir": emits_dir, "jobs": jobs, "register": args.register,
-                       "no_build": args.no_build, "run_gates": args.run_gates,
-                       "force": args.force},
+                       "from_text": args.from_text, "emits_dir": emits_dir,
+                       "jobs": jobs, "limit": args.limit, "retries": args.retries,
+                       "register": args.register, "no_build": args.no_build,
+                       "run_gates": args.run_gates, "force": args.force},
             "totals": {"specs": len(specs), "emit_ok": n_ok, "skipped": n_skip,
                        "emit_fail": n_emit_fail, "register_fail": n_reg_fail},
             "build": build_res, "gates": gates_res,
