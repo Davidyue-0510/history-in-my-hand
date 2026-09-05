@@ -20,8 +20,10 @@ window.SANDBOX_SLICES["zhaofen"] = {
   "layer_title": "汉匈和亲通道叠加",
   "timeline_title": "昭君出塞时间轴",
   "dims": [
+   2,
    3,
    4,
+   5,
    6
   ],
   "epoch": "warring_states",
@@ -415,6 +417,56 @@ window.SANDBOX_SLICES["zhaofen"] = {
    "dims": [
     4,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHAOFEN_THK1",
+   "subject": "event:zf_33",
+   "predicate": "和亲礼制",
+   "value_text": "和亲“赐乘舆服御”，嫁妆与仪仗彰显汉家礼制；“宁胡阏氏”名号",
+   "time": {
+    "start": -33,
+    "end": -33,
+    "era_text": "竟宁元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "宁胡阏氏",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "和亲礼制",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "ZHAOFEN_THK2",
+   "subject": "event:zf_33",
+   "predicate": "和亲思想",
+   "value_text": "“和亲”作为“柔远”战略，以婚姻缔和平；“宁胡”寓意安宁匈奴",
+   "time": {
+    "start": -33,
+    "end": -33,
+    "era_text": "竟宁元"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "柔远",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "和亲思想",
+   "dims": [
+    5
    ],
    "dim_source": "declared",
    "_party": "综合史料",

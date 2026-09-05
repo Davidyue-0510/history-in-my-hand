@@ -702,6 +702,58 @@ window.SANDBOX_SLICES["aomen_portugal_llm"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "AOMEN_PORTUGAL_LLM_THK1",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "predicate": "族群杂居",
+   "value_text": "澳门“蕃坊”华葡杂居；“番寺（教堂）”与“妈阁”并立",
+   "time": {
+    "era_text": "嘉靖三十二年",
+    "start": "1553-01-01",
+    "end": "1553-12-31",
+    "gregorian_year": 1553
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "蕃坊",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "族群杂居",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "AOMEN_PORTUGAL_LLM_THK2",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "predicate": "中西初遇",
+   "value_text": "“朝贡贸易”框架下“许夷侨居”，中西初遇的制度弹性",
+   "time": {
+    "era_text": "嘉靖三十二年",
+    "start": "1553-01-01",
+    "end": "1553-12-31",
+    "gregorian_year": 1553
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "朝贡框架",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "中西初遇",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],

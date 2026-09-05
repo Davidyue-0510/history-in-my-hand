@@ -1092,7 +1092,10 @@
    "terrain_grid": "china_coarse",
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "ming_qing",
@@ -4492,6 +4495,9 @@
    "dims": [
     1,
     2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "song",
@@ -8746,8 +8752,10 @@
    "layer_title": "汉匈和亲通道叠加",
    "timeline_title": "昭君出塞时间轴",
    "dims": [
+    2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "warring_states",
@@ -9134,8 +9142,10 @@
     "person:yongzheng": "雍正帝"
    },
    "dims": [
+    2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "qing",
@@ -9288,7 +9298,10 @@
    },
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "qin",
@@ -9521,6 +9534,9 @@
    },
    "dims": [
     1,
+    2,
+    3,
+    4,
     5,
     6
    ],

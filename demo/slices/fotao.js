@@ -19,6 +19,9 @@ window.SANDBOX_SLICES["fotao"] = {
   },
   "dims": [
    1,
+   2,
+   3,
+   4,
    5,
    6
   ],
@@ -392,6 +395,81 @@ window.SANDBOX_SLICES["fotao"] = {
    "dims": [
     5,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FOTAO_THK1",
+   "subject": "event:ft_67",
+   "predicate": "译经技术",
+   "value_text": "汉明帝“梦金人”，遣蔡愔等使西域迎佛法；译《四十二章经》",
+   "time": {
+    "start": 67,
+    "end": 67,
+    "era_text": "永平十"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "梦金人",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "译经技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FOTAO_THK2",
+   "subject": "event:ft_67",
+   "predicate": "传播制度",
+   "value_text": "佛教初依“黄老道术”传播（“浮屠老子”并祠）；译经僧团建制",
+   "time": {
+    "start": 67,
+    "end": 67,
+    "era_text": "永平十"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "并祠黄老",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "传播制度",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "FOTAO_THK3",
+   "subject": "event:ft_67",
+   "predicate": "知识下移",
+   "value_text": "士人“格义”会通儒道；民间祈福需求推动寺院下沉",
+   "time": {
+    "start": 67,
+    "end": 67,
+    "era_text": "永平十"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "格义",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "知识下移",
+   "dims": [
+    4
    ],
    "dim_source": "declared",
    "_party": "综合史料",

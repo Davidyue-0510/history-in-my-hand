@@ -19,7 +19,10 @@ window.SANDBOX_SLICES["shaqiu"] = {
   },
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "qin",
@@ -415,6 +418,81 @@ window.SANDBOX_SLICES["shaqiu"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SHAQIU_THK1",
+   "subject": "event:sq_210",
+   "predicate": "政变技术",
+   "value_text": "始皇崩于巡游途中（沙丘），“秘不发丧”以咸鱼乱臭掩尸",
+   "time": {
+    "start": -210,
+    "end": -210,
+    "era_text": "始皇三七"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秘不发丧",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "政变技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SHAQIU_THK2",
+   "subject": "event:sq_210",
+   "predicate": "军心离心",
+   "value_text": "蒙恬统北军三十万、扶苏监军，“忠而见疑”；秦廷文武离心",
+   "time": {
+    "start": -210,
+    "end": -210,
+    "era_text": "始皇三七"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "蒙恬",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军心离心",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SHAQIU_THK3",
+   "subject": "event:sq_210",
+   "predicate": "亡秦之始",
+   "value_text": "“沙丘之谋”开启赵高乱政、胡亥暴虐，秦之速亡自此始",
+   "time": {
+    "start": -210,
+    "end": -210,
+    "era_text": "始皇三七"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "沙丘之谋",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "亡秦之始",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

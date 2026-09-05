@@ -18,8 +18,10 @@ window.SANDBOX_SLICES["jiuzi"] = {
    "person:yongzheng": "雍正帝"
   },
   "dims": [
+   2,
    3,
    4,
+   5,
    6
   ],
   "epoch": "qing",
@@ -485,6 +487,56 @@ window.SANDBOX_SLICES["jiuzi"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIUZI_THK1",
+   "subject": "event:jz_1712",
+   "predicate": "夺嫡网络",
+   "value_text": "诸皇子“结党”（太子党、八爷党、四爷党），门下谋士门人运作",
+   "time": {
+    "start": 1712,
+    "end": 1712,
+    "era_text": "康熙五一"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "结党",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "夺嫡网络",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "JIUZI_THK2",
+   "subject": "event:jz_1712",
+   "predicate": "制度收敛",
+   "value_text": "雍正继位后“正大光明”匾后藏密旨（秘密立储），终结公开储争",
+   "time": {
+    "start": 1712,
+    "end": 1712,
+    "era_text": "康熙五一"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "秘密立储",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "制度收敛",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

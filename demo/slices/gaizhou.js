@@ -25,7 +25,10 @@ window.SANDBOX_SLICES["gaizhou"] = {
   "terrain_grid": "china_coarse",
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "epoch": "ming_qing",
@@ -370,6 +373,69 @@ window.SANDBOX_SLICES["gaizhou"] = {
     1,
     3,
     6
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "GAIZHOU_THK1",
+   "subject": "event:gaizhou_founded",
+   "predicate": "后金陆攻",
+   "value_text": "后金破辽沈后南下取辽南卫所；盖州“据海蔽南”，明水师难援",
+   "time": null,
+   "place": "",
+   "source": "mingshi",
+   "quote": "辽南卫所",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "后金陆攻",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "GAIZHOU_THK2",
+   "subject": "event:gaizhou_founded",
+   "predicate": "军民离心",
+   "value_text": "辽南汉民“逃亡投海”，盖州参将杨烈崛殉职；“辽人”与后金离心",
+   "time": null,
+   "place": "",
+   "source": "mingshi",
+   "quote": "杨烈崛",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军民离心",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "GAIZHOU_THK3",
+   "subject": "event:gaizhou_founded",
+   "predicate": "战略转折",
+   "value_text": "辽南失则“关门藩篱尽撤”，广宁、宁远孤悬；战略主动权易手",
+   "time": null,
+   "place": "",
+   "source": "mingshi",
+   "quote": "藩篱尽撤",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "战略转折",
+   "dims": [
+    5
    ],
    "dim_source": "declared",
    "_party": "清修·明臣",

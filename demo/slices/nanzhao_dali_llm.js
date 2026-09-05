@@ -724,6 +724,81 @@ window.SANDBOX_SLICES["nanzhao_dali_llm"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "NANZHAO_DALI_LLM_THK1",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "predicate": "城防地理",
+   "value_text": "南诏“依苍山洱海”筑太和城、大厘城；“出兵助唐”又“叛唐”（天宝战争）",
+   "time": {
+    "era_text": "唐开元二十六年",
+    "start": "0738-01-01",
+    "gregorian_year": 738
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "苍山洱海",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "城防地理",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "NANZHAO_DALI_LLM_THK2",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "predicate": "族群贸易",
+   "value_text": "白蛮（洱海）为主体，乌蛮（哀牢）上层；“茶马”贸易联通吐蕃、中原",
+   "time": {
+    "era_text": "唐开元二十六年",
+    "start": "0738-01-01",
+    "gregorian_year": 738
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "白蛮乌蛮",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "族群贸易",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "NANZHAO_DALI_LLM_THK3",
+   "subject": "event:ev_nanzhao_dali_llm_01",
+   "predicate": "宗教政治",
+   "value_text": "“奉唐正朔”与“自立年号”摇摆；佛教（阿咤力）为国教，“妙香佛国”",
+   "time": {
+    "era_text": "唐开元二十六年",
+    "start": "0738-01-01",
+    "gregorian_year": 738
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "妙香佛国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "宗教政治",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [

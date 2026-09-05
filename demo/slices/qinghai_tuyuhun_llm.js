@@ -779,6 +779,81 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "QINGHAI_TUYUHUN_LLM_THK1",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "predicate": "远征战术",
+   "value_text": "隋军“扼金山”、破伏俟城；吐谷浑“可汗伏允”西遁",
+   "time": {
+    "era_text": "大业五年",
+    "start": "0609-01-01",
+    "gregorian_year": 609
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "伏俟城",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "远征战术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QINGHAI_TUYUHUN_LLM_THK2",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "predicate": "族群商旅",
+   "value_text": "吐谷浑“游牧”与隋“垦戍”碰撞；“诸羌”附隋，商旅复通",
+   "time": {
+    "era_text": "大业五年",
+    "start": "0609-01-01",
+    "gregorian_year": 609
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "诸羌",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "族群商旅",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "QINGHAI_TUYUHUN_LLM_THK3",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "predicate": "丝路叙事",
+   "value_text": "“广地千里”的帝国声威叙事；丝路南道复通，连中西",
+   "time": {
+    "era_text": "大业五年",
+    "start": "0609-01-01",
+    "gregorian_year": 609
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "广地千里",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "丝路叙事",
+   "dims": [
+    5
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [

@@ -181,16 +181,16 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "aomen_portugal_llm",
    "name": "aomen_portugal_llm",
-   "total": 17,
+   "total": 19,
    "layers": {
     "inference": 1,
-    "record": 10,
-    "scholarship": 2,
+    "record": 11,
+    "scholarship": 3,
     "gap": 4
    },
    "party_counts": {
     "明官修": 14,
-    "综合史料": 3
+    "综合史料": 5
    },
    "faction_counts": {},
    "event_count": 2,
@@ -745,14 +745,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "fotao",
    "name": "fotao",
-   "total": 10,
+   "total": 13,
    "layers": {
-    "scholarship": 2,
-    "record": 7,
+    "scholarship": 3,
+    "record": 9,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 10
+    "综合史料": 13
    },
    "faction_counts": {},
    "event_count": 2,
@@ -859,14 +859,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "gaizhou",
    "name": "gaizhou",
-   "total": 6,
+   "total": 9,
    "layers": {
-    "record": 3,
+    "record": 6,
     "scholarship": 1,
     "gap": 2
    },
    "party_counts": {
-    "清方": 4,
+    "清方": 7,
     "明方": 1,
     "综述考订": 1
    },
@@ -1056,15 +1056,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "heshangyuan",
    "name": "heshangyuan",
-   "total": 18,
+   "total": 21,
    "layers": {
-    "scholarship": 3,
-    "record": 9,
+    "scholarship": 4,
+    "record": 11,
     "inference": 3,
     "gap": 3
    },
    "party_counts": {
-    "综合史料": 18
+    "综合史料": 21
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1433,15 +1433,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "jiuzi",
    "name": "jiuzi",
-   "total": 13,
+   "total": 15,
    "layers": {
     "scholarship": 2,
-    "record": 5,
+    "record": 7,
     "inference": 3,
     "gap": 3
    },
    "party_counts": {
-    "综合史料": 13
+    "综合史料": 15
    },
    "faction_counts": {},
    "event_count": 2,
@@ -1860,16 +1860,16 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "nanzhao_dali_llm",
    "name": "nanzhao_dali_llm",
-   "total": 17,
+   "total": 20,
    "layers": {
     "inference": 1,
-    "record": 11,
-    "scholarship": 1,
+    "record": 13,
+    "scholarship": 2,
     "gap": 4
    },
    "party_counts": {
     "唐官修": 14,
-    "综合史料": 3
+    "综合史料": 6
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2012,16 +2012,16 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "qinghai_tuyuhun_llm",
    "name": "qinghai_tuyuhun_llm",
-   "total": 17,
+   "total": 20,
    "layers": {
     "inference": 1,
-    "record": 11,
+    "record": 13,
     "gap": 4,
-    "scholarship": 1
+    "scholarship": 2
    },
    "party_counts": {
     "隋官修": 15,
-    "综合史料": 2
+    "综合史料": 5
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2101,15 +2101,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "shaqiu",
    "name": "shaqiu",
-   "total": 11,
+   "total": 14,
    "layers": {
-    "scholarship": 2,
-    "record": 5,
+    "scholarship": 3,
+    "record": 7,
     "inference": 3,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 14
    },
    "faction_counts": {},
    "event_count": 2,
@@ -2626,16 +2626,16 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "xianggang_songmo_llm",
    "name": "xianggang_songmo_llm",
-   "total": 16,
+   "total": 19,
    "layers": {
     "scholarship": 1,
-    "record": 8,
+    "record": 11,
     "inference": 1,
     "gap": 6
    },
    "party_counts": {
     "宋官修": 14,
-    "综合史料": 2
+    "综合史料": 5
    },
    "faction_counts": {},
    "event_count": 4,
@@ -2706,16 +2706,16 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "xiyu_dunhu_llm",
    "name": "xiyu_dunhu_llm",
-   "total": 16,
+   "total": 19,
    "layers": {
     "inference": 1,
-    "record": 9,
-    "scholarship": 2,
+    "record": 11,
+    "scholarship": 3,
     "gap": 4
    },
    "party_counts": {
     "汉官修": 13,
-    "综合史料": 3
+    "综合史料": 6
    },
    "faction_counts": {},
    "event_count": 2,
@@ -3002,14 +3002,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "zhaofen",
    "name": "zhaofen",
-   "total": 11,
+   "total": 13,
    "layers": {
     "scholarship": 2,
-    "record": 8,
+    "record": 10,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 11
+    "综合史料": 13
    },
    "faction_counts": {},
    "event_count": 2,

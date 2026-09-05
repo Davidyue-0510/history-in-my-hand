@@ -21,6 +21,9 @@ window.SANDBOX_SLICES["heshangyuan"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "epoch": "song",
@@ -631,6 +634,81 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     6
    ],
    "dim_source": "fallback",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HESHANGYUAN_THK1",
+   "subject": "event:hs_jin",
+   "predicate": "军制调度",
+   "value_text": "宋“川陕宣抚”体系下吴玠节制诸军；金兀术“合河南、陕西兵”大举",
+   "time": {
+    "start": 1131,
+    "end": 1131,
+    "era_text": "绍兴元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "川陕宣抚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军制调度",
+   "dims": [
+    3
+   ],
+   "dim_source": "inferred",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HESHANGYUAN_THK2",
+   "subject": "event:hs_jin",
+   "predicate": "军民支撑",
+   "value_text": "金军“重甲骑兵”攻坚受挫；蜀口“民供馈饷”支撑长期守御",
+   "time": {
+    "start": 1131,
+    "end": 1131,
+    "era_text": "绍兴元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "蜀口民供",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "军民支撑",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "HESHANGYUAN_THK3",
+   "subject": "event:hs_jin",
+   "predicate": "战略屏障",
+   "value_text": "和尚原、仙人关连捷“保全蜀口”，阻断金军入川，撑住南宋西线",
+   "time": {
+    "start": 1131,
+    "end": 1131,
+    "era_text": "绍兴元年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "保全蜀口",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "战略屏障",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

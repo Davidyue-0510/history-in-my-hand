@@ -2,7 +2,7 @@
   "scenes_total": 162,
   "historical": 153,
   "fictional": 9,
-  "assertions_total": 2574,
+  "assertions_total": 2604,
   "sources_total": 123,
   "factions_total": 9,
   "vocab_packs": [
@@ -104,7 +104,7 @@
       "id": "gaizhou",
       "title": "盖州",
       "kind": "county",
-      "assertions": 6,
+      "assertions": 9,
       "factions": {}
     },
     {
@@ -437,7 +437,7 @@
       "id": "heshangyuan",
       "title": "和尚原之战",
       "kind": "battle",
-      "assertions": 18,
+      "assertions": 21,
       "factions": {}
     },
     {
@@ -882,7 +882,7 @@
       "id": "zhaofen",
       "title": "昭君出塞",
       "kind": "fusion",
-      "assertions": 11,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -917,7 +917,7 @@
       "id": "jiuzi",
       "title": "九子夺嫡",
       "kind": "court",
-      "assertions": 13,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -931,7 +931,7 @@
       "id": "shaqiu",
       "title": "沙丘之变",
       "kind": "court",
-      "assertions": 11,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -952,7 +952,7 @@
       "id": "fotao",
       "title": "佛教传入",
       "kind": "thought",
-      "assertions": 10,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -1139,7 +1139,7 @@
       "id": "xiyu_dunhu_llm",
       "title": "西域都护府之设（前60）",
       "kind": "frontier",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -1153,7 +1153,7 @@
       "id": "nanzhao_dali_llm",
       "title": "南诏统一六诏·大理国（738–1253）",
       "kind": "fusion",
-      "assertions": 17,
+      "assertions": 20,
       "factions": {}
     },
     {
@@ -1181,21 +1181,21 @@
       "id": "xianggang_songmo_llm",
       "title": "宋末二王南迁·香港官富场（1276–1279）",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
       "id": "aomen_portugal_llm",
       "title": "葡人租居澳门（1553–1573）",
       "kind": "exchange",
-      "assertions": 17,
+      "assertions": 19,
       "factions": {}
     },
     {
       "id": "qinghai_tuyuhun_llm",
       "title": "隋炀帝西征吐谷浑·青海道（609）",
       "kind": "frontier",
-      "assertions": 17,
+      "assertions": 20,
       "factions": {}
     },
     {

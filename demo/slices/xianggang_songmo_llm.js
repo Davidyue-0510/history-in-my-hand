@@ -737,6 +737,78 @@ window.SANDBOX_SLICES["xianggang_songmo_llm"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "XIANGGANG_SONGMO_LLM_THK1",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "predicate": "水军行朝",
+   "value_text": "宋室“浮海”依托水军，崖山“千帆”决战；“祥兴”年号",
+   "time": {
+    "era_text": "景炎元年",
+    "start": "1276"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "浮海",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "水军行朝",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XIANGGANG_SONGMO_LLM_THK2",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "predicate": "地方供输",
+   "value_text": "香港（官富场、浅湾）盐场、洞澳为宋室供粮；“遗民”拥宋",
+   "time": {
+    "era_text": "景炎元年",
+    "start": "1276"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "官富盐场",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "地方供输",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "XIANGGANG_SONGMO_LLM_THK3",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "predicate": "亡国记忆",
+   "value_text": "崖山之后“厓山之后无中国”的亡国叙事；香港半岛首入汉政权行迹",
+   "time": {
+    "era_text": "景炎元年",
+    "start": "1276"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "厓山",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "亡国记忆",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],
