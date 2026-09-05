@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["zhongli"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "anhui",
   "page": "zhongli.html",
   "key": "zhongli",
   "scene_id": "zhongli",

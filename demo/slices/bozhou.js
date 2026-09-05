@@ -89,10 +89,7 @@ window.SANDBOX_SLICES["bozhou"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": [
-   "sichuan",
-   "guizhou"
-  ],
+  "province": "anhui",
   "page": "bozhou.html",
   "key": "bozhou",
   "scene_id": "bozhou",

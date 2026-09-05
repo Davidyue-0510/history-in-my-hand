@@ -88,7 +88,7 @@ window.SANDBOX_SLICES["changping_llm"] = {
     "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
    }
   },
-  "province": null,
+  "province": "shanxi",
   "page": "changping_llm.html",
   "key": "changping_llm",
   "scene_id": "changping_llm"

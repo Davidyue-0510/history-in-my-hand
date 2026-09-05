@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["guiling"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "shandong",
   "page": "guiling.html",
   "key": "guiling",
   "scene_id": "guiling",

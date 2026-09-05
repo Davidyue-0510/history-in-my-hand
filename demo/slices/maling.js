@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["maling"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "shandong",
   "page": "maling.html",
   "key": "maling",
   "scene_id": "maling",

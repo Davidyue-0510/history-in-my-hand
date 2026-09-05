@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["dujiangyan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "sichuan",
   "page": "county.html?scene=dujiangyan",
   "key": "dujiangyan",
   "scene_id": "dujiangyan",

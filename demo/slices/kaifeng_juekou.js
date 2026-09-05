@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["kaifeng_juekou"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=kaifeng_juekou",
   "key": "kaifeng_juekou",
   "scene_id": "kaifeng_juekou",

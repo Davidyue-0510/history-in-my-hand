@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["poyanghu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "jiangxi",
   "page": "poyanghu.html",
   "key": "poyanghu",
   "scene_id": "poyanghu",

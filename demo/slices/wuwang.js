@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["wuwang"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=wuwang",
   "key": "wuwang",
   "scene_id": "wuwang",

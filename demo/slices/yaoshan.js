@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["yaoshan"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "guangdong",
   "page": "yaoshan.html",
   "key": "yaoshan",
   "scene_id": "yaoshan",

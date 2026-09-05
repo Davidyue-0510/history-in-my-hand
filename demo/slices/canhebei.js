@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["canhebei"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "neimenggu",
   "page": "canhebei.html",
   "key": "canhebei",
   "scene_id": "canhebei",

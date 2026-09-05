@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "neimenggu",
   "page": "county.html?scene=zhaofen",
   "key": "zhaofen",
   "scene_id": "zhaofen",

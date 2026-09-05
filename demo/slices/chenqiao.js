@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["chenqiao"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=chenqiao",
   "key": "chenqiao",
   "scene_id": "chenqiao",

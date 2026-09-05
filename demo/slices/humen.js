@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["humen"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "guangdong",
   "page": "humen.html",
   "key": "humen",
   "scene_id": "humen",

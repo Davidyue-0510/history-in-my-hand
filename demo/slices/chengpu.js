@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["chengpu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "shandong",
   "page": "chengpu.html",
   "key": "chengpu",
   "scene_id": "chengpu",

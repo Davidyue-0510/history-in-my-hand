@@ -2406,7 +2406,10 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": [
+    "jiangsu",
+    "anhui"
+   ]
   },
   "tang_huai_xi": {
    "kind": "county",
@@ -2492,7 +2495,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "imjin": {
    "kind": "county",
@@ -2808,7 +2811,13 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": [
+    "liaoning",
+    "jiangsu",
+    "anhui",
+    "beijing",
+    "tianjin"
+   ]
   },
   "changping": {
    "kind": "battle",
@@ -2890,7 +2899,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shanxi"
   },
   "guiling": {
    "kind": "battle",
@@ -2971,7 +2980,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shandong"
   },
   "maling": {
    "kind": "battle",
@@ -3050,7 +3059,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shandong"
   },
   "chengpu": {
    "kind": "battle",
@@ -3128,7 +3137,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shandong"
   },
   "boju": {
    "kind": "battle",
@@ -3206,7 +3215,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "julu": {
    "kind": "battle",
@@ -3286,7 +3295,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "gaixia": {
    "kind": "battle",
@@ -3364,7 +3373,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "mobai": {
    "kind": "battle",
@@ -3524,7 +3533,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "guandu": {
    "kind": "battle",
@@ -3605,7 +3614,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "chibi": {
    "kind": "battle",
@@ -3687,7 +3696,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "yiling": {
    "kind": "battle",
@@ -3767,7 +3776,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "xiaoyaojin": {
    "kind": "battle",
@@ -3847,7 +3856,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "feishui": {
    "kind": "battle",
@@ -3926,7 +3935,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "canhebei": {
    "kind": "battle",
@@ -4005,7 +4014,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "neimenggu"
   },
   "zhongli": {
    "kind": "battle",
@@ -4084,7 +4093,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "hulao": {
    "kind": "battle",
@@ -4162,7 +4171,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "talas": {
    "kind": "battle",
@@ -4321,7 +4330,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "yancheng": {
    "kind": "battle",
@@ -4402,7 +4411,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "heshangyuan": {
    "kind": "battle",
@@ -4561,7 +4570,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "diaoyucheng": {
    "kind": "battle",
@@ -4640,7 +4649,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "chongqing"
   },
   "yaoshan": {
    "kind": "battle",
@@ -4721,7 +4730,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "guangdong"
   },
   "poyanghu": {
    "kind": "battle",
@@ -4800,7 +4809,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangxi"
   },
   "tumu": {
    "kind": "battle",
@@ -4880,7 +4889,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "beijing": {
    "kind": "battle",
@@ -4961,7 +4970,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "yaksa": {
    "kind": "battle",
@@ -5041,7 +5050,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "heilongjiang"
   },
   "tianjing": {
    "kind": "battle",
@@ -5121,7 +5130,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "humen": {
    "kind": "battle",
@@ -5202,7 +5211,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "guangdong"
   },
   "huanghe": {
    "kind": "disaster",
@@ -5672,7 +5681,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "sichuan"
   },
   "great_wall": {
    "kind": "engineering",
@@ -5985,7 +5994,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "wanganshi": {
    "kind": "reform",
@@ -6378,7 +6387,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "xizang"
   },
   "xuanwu": {
    "kind": "court",
@@ -6456,7 +6465,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "jingnan": {
    "kind": "court",
@@ -7071,7 +7080,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "zijincheng": {
    "kind": "engineering",
@@ -7149,7 +7158,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "lingqu": {
    "kind": "engineering",
@@ -7229,7 +7238,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "guangxi"
   },
   "zhaozhou": {
    "kind": "engineering",
@@ -7305,7 +7314,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "sui_daxing": {
    "kind": "engineering",
@@ -7382,7 +7391,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "wuwang": {
    "kind": "dynasty",
@@ -7459,7 +7468,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "sui_mie_chen": {
    "kind": "dynasty",
@@ -7538,7 +7547,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "chenqiao": {
    "kind": "dynasty",
@@ -7616,7 +7625,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "yashan": {
    "kind": "dynasty",
@@ -7696,7 +7705,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "guangdong"
   },
   "xinhai": {
    "kind": "dynasty",
@@ -7926,7 +7935,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "wangmang": {
    "kind": "reform",
@@ -8233,7 +8242,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "huangchao": {
    "kind": "uprising",
@@ -8702,7 +8711,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "neimenggu"
   },
   "qing_han": {
    "kind": "fusion",
@@ -8936,7 +8945,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "beijiu": {
    "kind": "court",
@@ -9087,7 +9096,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "wugu": {
    "kind": "court",
@@ -9164,7 +9173,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "shaqiu": {
    "kind": "court",
@@ -9240,7 +9249,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "baijia": {
    "kind": "thought",
@@ -9393,7 +9402,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "fotao": {
    "kind": "thought",
@@ -9621,7 +9630,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "zuchongzhi": {
    "kind": "tech",
@@ -9851,7 +9860,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shandong"
   },
   "zhangqian": {
    "kind": "frontier",
@@ -9929,7 +9938,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "zhenghe": {
    "kind": "frontier",
@@ -10009,7 +10018,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "xuanzang": {
    "kind": "frontier",
@@ -10169,7 +10178,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "songjin": {
    "terrain_grid": "china_coarse",
@@ -10645,10 +10654,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": [
-    "sichuan",
-    "guizhou"
-   ]
+   "province": "anhui"
   },
   "ningxia": {
    "terrain_grid": "china_coarse",
@@ -10743,7 +10749,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "ningxia"
   },
   "yangzhou": {
    "terrain_grid": "china_coarse",
@@ -10831,7 +10837,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "mingmo_dangzheng": {
    "terrain_grid": "china_coarse",
@@ -11538,7 +11544,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "guandu_llm": {
    "kind": "battle",
@@ -11636,7 +11642,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "feishui_llm": {
    "kind": "battle",
@@ -11735,7 +11741,7 @@
      "note": "地形/关隘/外交→战略重心与窗口"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "san_guo": {
    "kind": "dynasty",
@@ -11934,7 +11940,7 @@
      "note": "地形/关隘/外交→战略重心与窗口（上党归赵触发战端）"
     }
    },
-   "province": null
+   "province": "shanxi"
   },
   "qin_mie_liu_guo_llm": {
    "kind": "battle",
@@ -12139,7 +12145,7 @@
     "person:CHU__p07": "項伯",
     "person:CHU__p08": "樊噲"
    },
-   "province": null
+   "province": "anhui"
   },
   "sui_mie_chen_llm": {
    "kind": "battle",
@@ -12241,7 +12247,7 @@
      "note": "地理+制度→自廣陵／采石多點渡江，避實擊虛，建康速陷，南北復归一統"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "sui_yang_llm": {
    "kind": "battle",
@@ -12332,7 +12338,7 @@
     5,
     6
    ],
-   "province": null
+   "province": "henan"
   }
  },
  "dimensions": {

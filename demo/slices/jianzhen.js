@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["jianzhen"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "jiangsu",
   "page": "county.html?scene=jianzhen",
   "key": "jianzhen",
   "scene_id": "jianzhen",

@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["chensheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "anhui",
   "page": "county.html?scene=chensheng",
   "key": "chensheng",
   "scene_id": "chensheng",

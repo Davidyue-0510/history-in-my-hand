@@ -18,7 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.getcwd(), "tools", "ingestion"))
 from province_map import (derive_province, is_legal_province,
-                          provinces_touched, PROVINCE_CODES)
+                          provinces_touched, PROVINCE_CODES, PROVINCE_OVERRIDES)
 
 REG_PATH = os.path.join(os.getcwd(), "data", "scenes.json")
 
@@ -36,22 +36,26 @@ def main():
             "/ \"fiction\"（虚构世界）/ \"overseas\"（外国战区·海域）。合法码见 tools/ingestion/province_map.py。"
         )
 
-    n_set = 0       # 本次新填
-    n_fixed = 0     # 本次修正非法
-    n_kept = 0      # 已合法，跳过
+    n_set = 0       # 本次新填（此前缺 province）
+    n_fixed = 0     # 本次修正非法 / 被 override 改写
+    n_kept = 0      # 已合法且等于目标值，跳过（幂等）
+    n_override = 0  # 其中由 PROVINCE_OVERRIDES 显式写省份
     for sid, sm in scenes.items():
         if not isinstance(sm, dict):
             continue
+        override = PROVINCE_OVERRIDES.get(sid)
+        target = override if override is not None else derive_province(sm.get("region"), None)
         cur = sm.get("province", "__ABSENT__")
-        if cur != "__ABSENT__" and is_legal_province(cur):
+        if cur != "__ABSENT__" and is_legal_province(cur) and cur == target:
             n_kept += 1
             continue
-        derived = derive_province(sm.get("region"), None)
-        if cur != "__ABSENT__":
+        if override is not None:
+            n_override += 1
+        if cur != "__ABSENT__" and is_legal_province(cur):
             n_fixed += 1
         else:
             n_set += 1
-        sm["province"] = derived
+        sm["province"] = target
 
     with open(REG_PATH, "w", encoding="utf-8", newline="") as f:
         json.dump(reg, f, ensure_ascii=False, indent=1)
@@ -59,8 +63,8 @@ def main():
 
     # 覆盖报告
     touched = provinces_touched(sm.get("province") for sm in scenes.values())
-    print("BACKFILL_PROVINCE: 新填=%d  修正非法=%d  已合法跳过=%d  总场景=%d"
-          % (n_set, n_fixed, n_kept, len(scenes)))
+    print("BACKFILL_PROVINCE: 新填=%d  override写=%d  修正=%d  已合法跳过=%d  总场景=%d"
+          % (n_set, n_override, n_fixed, n_kept, len(scenes)))
     print("PROVINCE_TOUCHED=%d/%d  -> %s"
           % (len(touched), len(PROVINCE_CODES),
              ",".join(sorted(touched)) or "(空)"))

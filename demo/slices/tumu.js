@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["tumu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "tumu.html",
   "key": "tumu",
   "scene_id": "tumu",

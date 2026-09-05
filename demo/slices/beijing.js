@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["beijing"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "beijing.html",
   "key": "beijing",
   "scene_id": "beijing",

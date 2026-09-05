@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["zhangqian"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=zhangqian",
   "key": "zhangqian",
   "scene_id": "zhangqian",

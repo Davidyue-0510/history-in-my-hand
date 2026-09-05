@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "jiangsu",
   "page": "county.html?scene=sui_mie_chen",
   "key": "sui_mie_chen",
   "scene_id": "sui_mie_chen",

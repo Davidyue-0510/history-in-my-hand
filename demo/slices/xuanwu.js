@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["xuanwu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=xuanwu",
   "key": "xuanwu",
   "scene_id": "xuanwu",

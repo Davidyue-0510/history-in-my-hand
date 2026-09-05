@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["shaqiu"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "county.html?scene=shaqiu",
   "key": "shaqiu",
   "scene_id": "shaqiu",

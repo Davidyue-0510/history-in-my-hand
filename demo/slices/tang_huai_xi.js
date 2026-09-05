@@ -82,7 +82,7 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=tang_huai_xi",
   "key": "tang_huai_xi",
   "scene_id": "tang_huai_xi"

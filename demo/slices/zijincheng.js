@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=zijincheng",
   "key": "zijincheng",
   "scene_id": "zijincheng",

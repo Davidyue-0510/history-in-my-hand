@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["song_he_jue"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=song_he_jue",
   "key": "song_he_jue",
   "scene_id": "song_he_jue",

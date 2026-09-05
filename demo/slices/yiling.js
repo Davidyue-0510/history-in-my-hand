@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["yiling"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "hubei",
   "page": "yiling.html",
   "key": "yiling",
   "scene_id": "yiling",

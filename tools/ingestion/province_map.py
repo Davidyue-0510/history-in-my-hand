@@ -100,6 +100,67 @@ REGION_TO_PROVINCE = {
     "fiction": "fiction",
 }
 
+# ── P1 地理深化：场景级省份覆盖写（v0.110）──────────────────────────────────
+# 根因：v0.109 的 REGION_TO_PROVINCE 对「朝代/时期桶」一律 null（诚实不冒充单省）。
+# 但许多这类桶下的场景其实是**具体战役/事件、落在确知单省**，被保守地标了 null，
+# 导致「全地域覆盖」低估。本表对**地理可确证**的现存场景显式写省份，把覆盖从 4/34 拉起。
+# 原则（诚实边界）：
+#   - 仅写「具体战役/事件、位置无争议」的场景；全国性主题概述（reform/court/thought/
+#     uprising/ecology/engineering/exchange 桶的泛论场景）仍留 null，不冒充单省。
+#   - 跨多省的战役写省份码列表（如三大战役）；外国战区写 "overseas"。
+#   - 取值必须是 PROVINCE_CODES / 合法列表 / "overseas"；本表优先于 REGION_TO_PROVINCE。
+#   - 单一真值，版本控制；新增覆盖只需在此追加一行，回刷脚本自动生效。
+PROVINCE_OVERRIDES = {
+    # 三国·湖北
+    "chibi": "hubei", "yiling": "hubei", "boju": "hubei",   # 赤壁/夷陵/柏举 皆今湖北
+    # 河南（官渡/昆阳/澶渊/陈桥/淮西/河决/睢阳/郾城/张衡/虎牢/牧野）
+    "guandu": "henan", "guandu_llm": "henan", "kunyang": "henan",
+    "chanyuan": "henan", "chenqiao": "henan", "tang_huai_xi": "henan",
+    "kaifeng_juekou": "henan", "song_he_jue": "henan", "suiyang": "henan",
+    "sui_yang_llm": "henan", "yancheng": "henan", "zhangheng": "henan",
+    "hulao": "henan", "wuwang": "henan",                   # 牧野在河南淇县
+    # 安徽（淝水/垓下/逍遥津/采石矶/钟离/陈胜/亳州/楚汉垓下）
+    "feishui": "anhui", "feishui_llm": "anhui", "gaixia": "anhui",
+    "xiaoyaojin": "anhui", "caishiji": "anhui", "zhongli": "anhui",
+    "chensheng": "anhui", "bozhou": "anhui", "chuhai_llm": "anhui",
+    # 楚汉之争跨彭城(江苏)+垓下(安徽)
+    "chu_han": ["jiangsu", "anhui"],
+    # 山西（长平）
+    "changping": "shanxi", "changping_llm": "shanxi",
+    # 河北（巨鹿/土木堡/沙丘/赵州桥）
+    "julu": "hebei", "tumu": "hebei", "shaqiu": "hebei", "zhaozhou": "hebei",
+    # 山东（马陵/桂陵/城濮/齐民要术）
+    "maling": "shandong", "guiling": "shandong", "chengpu": "shandong", "jiasixie": "shandong",
+    # 江苏（隋灭陈/天京/扬州/郑和/鉴真 + 楚汉）
+    "sui_mie_chen": "jiangsu", "sui_mie_chen_llm": "jiangsu",
+    "tianjing": "jiangsu", "yangzhou": "jiangsu", "zhenghe": "jiangsu", "jianzhen": "jiangsu",
+    # 广东（虎门/崖山）
+    "humen": "guangdong", "yaoshan": "guangdong", "yashan": "guangdong",
+    # 重庆（钓鱼城）
+    "diaoyucheng": "chongqing",
+    # 内蒙古（参合陂/昭君出塞）
+    "canhebei": "neimenggu", "zhaofen": "neimenggu",
+    # 江西（鄱阳湖）
+    "poyanghu": "jiangxi",
+    # 宁夏（宁夏之役）
+    "ningxia": "ningxia",
+    # 西藏（文成公主入藏）
+    "wencheng": "xizang",
+    # 北京（戊戌/紫禁城/九子夺嫡/北京保卫战 + 三大战役）
+    "wuxu": "beijing", "zijincheng": "beijing", "jiuzi": "beijing", "beijing": "beijing",
+    # 黑龙江（雅克萨）
+    "yaksa": "heilongjiang",
+    # 广西（灵渠）
+    "lingqu": "guangxi",
+    # 三大战役跨 辽沈(辽宁)+淮海(苏皖)+平津(京津冀)
+    "three_campaigns": ["liaoning", "jiangsu", "anhui", "beijing", "tianjin"],
+    # 陕西（已覆盖，补具体事件场景）：商鞅/隋大兴/巫蛊/玄武门/张骞/焚书坑儒
+    "shangyang": "shaanxi", "sui_daxing": "shaanxi", "wugu": "shaanxi",
+    "xuanwu": "shaanxi", "zhangqian": "shaanxi", "fenshu": "shaanxi",
+    # 四川（已覆盖，补都江堰）
+    "dujiangyan": "sichuan",
+}
+
 
 def is_legal_province(value):
     """province 字段是否合法（供闸门校验）。

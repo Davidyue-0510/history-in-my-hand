@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["yancheng"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "yancheng.html",
   "key": "yancheng",
   "scene_id": "yancheng",

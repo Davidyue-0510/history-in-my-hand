@@ -94,7 +94,7 @@ window.SANDBOX_SLICES["guandu_llm"] = {
     "note": "地形/关隘/外交→战略重心与窗口"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "guandu_llm.html",
   "key": "guandu_llm",
   "scene_id": "guandu_llm"
