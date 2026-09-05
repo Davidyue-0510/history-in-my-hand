@@ -66,6 +66,7 @@ STEPS = [
     ("v0.83 emit→from-json 往返 test",  ["tools/tests/test_emit_roundtrip.py"]),
     ("v0.86 跨会话记忆载体 test",        ["tools/tests/test_emit_memory_carrier.py"]),
     ("v0.87 派系推导诚实化 test",         ["tools/tests/test_party_derivation.py"]),
+    ("批量 world-gen 驱动 test",           ["tools/tests/test_batch_world_gen.py"]),
     # ── emit 人工校订门禁（v0.89）：未校订 LLM 产物严禁落地 ──
     ("emit 人工校订门禁（残留产物扫描）",  ["tools/tests/test_curate_emit.py"]),
 ]
