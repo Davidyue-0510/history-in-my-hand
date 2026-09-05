@@ -5,6 +5,69 @@ window.SANDBOX_LEADS = {
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "AOMEG1",
+   "scene": "aomen_portugal_llm",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "title": "此場景關於「地理」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補地理維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "AOMEG4",
+   "scene": "aomen_portugal_llm",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "AOMEG5",
+   "scene": "aomen_portugal_llm",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
+   "id": "AOM_008",
+   "scene": "aomen_portugal_llm",
+   "subject": "event:ev_aomen_portugal_llm_02",
+   "title": "万历中，具体年份不详",
+   "missing": "历史考据",
+   "where": "澳门",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "万历年间具体筑城年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "BAIJIAG01",
    "scene": "baijia",
    "subject": "event:bj_schools",
@@ -694,6 +757,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "FUJIG2",
+   "scene": "fujian_quanzhou_llm",
+   "subject": "event:ev_fujian_quanzhou_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "FUJ_015",
+   "scene": "fujian_quanzhou_llm",
+   "subject": "place:quanzhou",
+   "title": "具体贸易额未载",
+   "missing": "经济史 / 数字人文",
+   "where": "泉州地方志",
+   "skills": [
+    "经济史",
+    "数字人文"
+   ],
+   "accept": "补充贸易额",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "F010",
    "scene": "fushun",
    "subject": "event:fushun_fall",
@@ -930,6 +1025,68 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "GUIZG2",
+   "scene": "guizhou_yelang_llm",
+   "subject": "event:ev_guizhou_yelang_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "GUI_015",
+   "scene": "guizhou_yelang_llm",
+   "subject": "place:yelang",
+   "title": "夜郎自大，史料未载原话",
+   "missing": "文献考据",
+   "where": "夜郎",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需查《史记》原文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "HAING2",
+   "scene": "hainan_zhuyai_llm",
+   "subject": "event:ev_hainan_zhuyai_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "HAI_014",
+   "scene": "hainan_zhuyai_llm",
+   "subject": "event:ev_hainan_zhuyai_llm_02",
+   "title": "罢郡后行政细节缺",
+   "missing": "历史地理",
+   "where": "汉书·地理志",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "补充罢郡后治理",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "H010",
@@ -1263,6 +1420,52 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "HUNAG3",
+   "scene": "hunan_changsha_llm",
+   "subject": "event:ev_hunan_changsha_llm_01",
+   "title": "此場景關於「制度」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補制度維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HUN_010",
+   "scene": "hunan_changsha_llm",
+   "subject": "event:ev_hunan_changsha_llm_02",
+   "title": "景帝削国原因未明",
+   "missing": "文献考据",
+   "where": "汉书·诸侯王表",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "景帝削国具体原因待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "HUN_011",
+   "scene": "hunan_changsha_llm",
+   "subject": "event:ev_hunan_changsha_llm_03",
+   "title": "帛书具体内容未详",
+   "missing": "古文字学",
+   "where": "马王堆帛书整理报告",
+   "skills": [
+    "古文字学"
+   ],
+   "accept": "帛书具体篇目待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "IJ016",
    "scene": "imjin",
    "subject": "event:bixieguan_battle",
@@ -1325,6 +1528,38 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 7
+  },
+  {
+   "id": "JILIG2",
+   "scene": "jilin_gaogouli_llm",
+   "subject": "event:ev_jilin_gaogouli_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "JIL_015",
+   "scene": "jilin_gaogouli_llm",
+   "subject": "event:ev_jilin_gaogouli_llm_03",
+   "title": "遗民去向未明",
+   "missing": "考古 / 文献",
+   "where": "集安及周边",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "遗民融入当地或迁徙",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "JNG01",
@@ -2355,6 +2590,68 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
+   "id": "QINGG4",
+   "scene": "qinghai_tuyuhun_llm",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "QINGG5",
+   "scene": "qinghai_tuyuhun_llm",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
+   "id": "QIN_009",
+   "scene": "qinghai_tuyuhun_llm",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "title": "隋军兵力未详",
+   "missing": "考据",
+   "where": "隋书·炀帝纪",
+   "skills": [
+    "考据"
+   ],
+   "accept": "补充兵力记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "QIN_013",
+   "scene": "qinghai_tuyuhun_llm",
+   "subject": "event:ev_qinghai_tuyuhun_llm_02",
+   "title": "四郡隶属未明",
+   "missing": "制度考",
+   "where": "隋书·地理志",
+   "skills": [
+    "制度考"
+   ],
+   "accept": "补充隶属",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "SG017",
    "scene": "san_guo",
    "subject": "person:liu_shan",
@@ -3028,6 +3325,102 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "XIANG4",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補社會維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "XIANG5",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補思想維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "XIA_011",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_03",
+   "title": "原文未载具体兵力",
+   "missing": "宋元兵力对比 / 崖山之战",
+   "where": "崖山",
+   "skills": [
+    "宋元兵力对比",
+    "崖山之战"
+   ],
+   "accept": "补充崖山海战双方兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "XIA_012",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_03",
+   "title": "原文未载具体过程",
+   "missing": "崖山海战过程 / 宋元战争",
+   "where": "崖山",
+   "skills": [
+    "崖山海战过程",
+    "宋元战争"
+   ],
+   "accept": "补充崖山海战详细过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "XIA_013",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "title": "原文未载行宫规模",
+   "missing": "宋末行宫 / 香港考古",
+   "where": "官富场",
+   "skills": [
+    "宋末行宫",
+    "香港考古"
+   ],
+   "accept": "补充官富场行宫考古资料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIA_014",
+   "scene": "xianggang_songmo_llm",
+   "subject": "event:ev_xianggang_songmo_llm_03",
+   "title": "原文未载伤亡数字",
+   "missing": "崖山海战伤亡 / 宋元战争",
+   "where": "崖山",
+   "skills": [
+    "崖山海战伤亡",
+    "宋元战争"
+   ],
+   "accept": "补充崖山海战双方伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "XIAOWENG01",
    "scene": "xiaowen",
    "subject": "event:xw_494",
@@ -3441,6 +3834,54 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "ZHEJG2",
+   "scene": "zhejiang_linan_llm",
+   "subject": "event:ev_zhejiang_linan_llm_01",
+   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
+   "missing": "紀年校勘 / 多源比對",
+   "where": "原始史料對讀",
+   "skills": [
+    "紀年校勘",
+    "多源比對"
+   ],
+   "accept": "補技術維直接史料與學界考訂",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "ZHE_011",
+   "scene": "zhejiang_linan_llm",
+   "subject": "place:hangzhou",
+   "title": "临安人口具体数字未载",
+   "missing": "历史人口学 / 方志学",
+   "where": "临安府志或宋会要",
+   "skills": [
+    "历史人口学",
+    "方志学"
+   ],
+   "accept": "临安人口具体数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ZHE_012",
+   "scene": "zhejiang_linan_llm",
+   "subject": "event:ev_zhejiang_linan_llm_02",
+   "title": "定都临安原因未明",
+   "missing": "宋史 / 政治地理",
+   "where": "建炎以来系年要录",
+   "skills": [
+    "宋史",
+    "政治地理"
+   ],
+   "accept": "定都临安决策过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "ZHENG2",

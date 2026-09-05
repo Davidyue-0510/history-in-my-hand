@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "hepu",
+   "to": "xuwen",
+   "type": "military",
+   "label": "汉军行军",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "xuwen",
+   "to": "zhuyai",
+   "type": "military",
+   "label": "渡海路线",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "hepu",
+   "name": "合浦",
+   "type": "city",
+   "modern": "今广西合浦",
+   "note": "渡海出发地",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 109.12,
+   "lat": 21.67,
+   "geo_unresolved": false
+  },
+  {
+   "id": "xuwen",
+   "name": "徐闻",
+   "type": "city",
+   "modern": "今广东徐闻",
+   "note": "渡海港口",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 110.17,
+   "lat": 20.35,
+   "geo_unresolved": false
+  },
+  {
+   "id": "zhuyai",
+   "name": "珠崖",
+   "type": "region",
+   "modern": "今海南岛北部",
+   "note": "汉郡",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 110.35,
+   "lat": 20.05,
+   "geo_unresolved": false
+  },
+  {
+   "id": "daner",
+   "name": "儋耳",
+   "type": "region",
+   "modern": "今海南儋州",
+   "note": "汉郡",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 109.58,
+   "lat": 19.52,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

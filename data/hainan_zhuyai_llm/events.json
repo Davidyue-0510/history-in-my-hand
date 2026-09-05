@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hainan_zhuyai_llm_01",
+   "subject": "event:ev_hainan_zhuyai_llm_01",
+   "year": -110,
+   "era": "元封元年",
+   "title": "置珠崖儋耳二郡",
+   "kind": "建置",
+   "text": "汉平南越，置二郡",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_zhuyai_llm_02",
+   "subject": "event:ev_hainan_zhuyai_llm_02",
+   "year": -46,
+   "era": "初元三年",
+   "title": "罢珠崖郡",
+   "kind": "行政",
+   "text": "贾捐之谏，罢郡",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

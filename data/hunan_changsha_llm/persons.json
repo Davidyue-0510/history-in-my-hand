@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "HUN__p01",
+   "name": "吴芮",
+   "role": "长沙王",
+   "note": "汉高祖封为长沙王",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p02",
+   "name": "利苍",
+   "role": "轪侯",
+   "note": "马王堆汉墓墓主",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p03",
+   "name": "汉高祖",
+   "role": "皇帝",
+   "note": "封吴芮为长沙王",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p04",
+   "name": "汉景帝",
+   "role": "皇帝",
+   "note": "削长沙国",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

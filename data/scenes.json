@@ -196,6 +196,11 @@
    "id": "yunnan",
    "name": "雲南",
    "note": "南詔—大理地方政權與西南邊疆"
+  },
+  {
+   "id": "hunan",
+   "name": "湖南",
+   "note": "汉长沙国—马王堆与湖湘地域"
   }
  ],
  "order": [
@@ -351,7 +356,16 @@
   "xiyu_dunhu_llm",
   "hexi_sijun_llm",
   "nanzhao_dali_llm",
-  "huangdaopo_llm"
+  "huangdaopo_llm",
+  "zhejiang_linan_llm",
+  "fujian_quanzhou_llm",
+  "xianggang_songmo_llm",
+  "aomen_portugal_llm",
+  "qinghai_tuyuhun_llm",
+  "guizhou_yelang_llm",
+  "hainan_zhuyai_llm",
+  "hunan_changsha_llm",
+  "jilin_gaogouli_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -12806,6 +12820,807 @@
     "event:ev_huangdaopo_llm_01",
     "event:ev_huangdaopo_llm_02",
     "event:ev_huangdaopo_llm_03"
+   ]
+  },
+  "zhejiang_linan_llm": {
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "province": "zhejiang",
+   "title": "南宋定都临安（1129–1276）",
+   "dossier_label": "zhejiang_linan_llm",
+   "subtitle": "",
+   "primary_place": "hangzhou",
+   "dossier_event": "event:ev_zhejiang_linan_llm_01",
+   "vocab_pack": "zhejiang_linan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→南宋偏安江南，科举文官与理学正统凝聚半壁；与金、蒙对峙，和战之议分裂"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→市舶司海贸、御街厢坊、运河转输，行在物力冠于当时"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→中原衣冠南渡，临安人口百万，客户佃农与瓦舍市井社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→倚江淮天险为屏、控明州海路，与金蒙划淮而治"
+    }
+   },
+   "subject_names": [
+    "person:ZHE__p01",
+    "place:hangzhou",
+    "place:xihu",
+    "place:yujie",
+    "place:jianghuai",
+    "event:ev_zhejiang_linan_llm_01",
+    "event:ev_zhejiang_linan_llm_02"
+   ]
+  },
+  "fujian_quanzhou_llm": {
+   "kind": "exchange",
+   "region": "jiangnan",
+   "province": "fujian",
+   "title": "泉州刺桐港·海上丝路（宋元）",
+   "dossier_label": "fujian_quanzhou_llm",
+   "subtitle": "",
+   "primary_place": "quanzhou",
+   "dossier_event": "event:ev_fujian_quanzhou_llm_01",
+   "vocab_pack": "fujian_quanzhou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→宋元市舶司建制、蕃商留居，海商社会相对自治；朝贡—互市双轨"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→刺桐港舟舶之利、番货堆积，海路连接埃及波斯，转口贸易枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→蕃商番客侨居、闽南航海族群兴起，沿海社会商业化"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→泉州滨海扼海上丝路东端，澎湖巡检司辖琉求，控东海—南海通道"
+    }
+   },
+   "subject_names": [
+    "person:FUJ__p01",
+    "place:quanzhou",
+    "place:citong_gang",
+    "place:penghu",
+    "place:liuqiu",
+    "place:aiji",
+    "place:bosi",
+    "event:ev_fujian_quanzhou_llm_01",
+    "event:ev_fujian_quanzhou_llm_02"
+   ]
+  },
+  "xianggang_songmo_llm": {
+   "kind": "battle",
+   "region": "exchange",
+   "province": "xianggang",
+   "title": "宋末二王南迁·香港官富场（1276–1279）",
+   "dossier_label": "xianggang_songmo_llm",
+   "subtitle": "",
+   "primary_place": "fuzhou",
+   "dossier_event": "event:ev_xianggang_songmo_llm_01",
+   "vocab_pack": "xianggang_songmo_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→宋末行朝流亡海上，二王号令不出舟师，忠宋势力离散"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→海上行朝倚舟师机动，粮械仰给广东、福建沿海"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→勤王义军与沿海渔户随行朝转战，人口随政局流散"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→自福州航海至九龙官富场、碙洲，依岭南海岛避元军，终崖山溃"
+    }
+   },
+   "subject_names": [
+    "person:XIA__p01",
+    "person:XIA__p02",
+    "person:XIA__p03",
+    "place:fuzhou",
+    "place:guangfuchang",
+    "place:gangzhou",
+    "place:yashan",
+    "event:ev_xianggang_songmo_llm_01",
+    "event:ev_xianggang_songmo_llm_02",
+    "event:ev_xianggang_songmo_llm_03",
+    "event:ev_xianggang_songmo_llm_04"
+   ]
+  },
+  "aomen_portugal_llm": {
+   "kind": "exchange",
+   "region": "exchange",
+   "province": "aomen",
+   "title": "葡人租居澳门（1553–1573）",
+   "dossier_label": "aomen_portugal_llm",
+   "subtitle": "",
+   "primary_place": "aomen",
+   "dossier_event": "event:ev_aomen_portugal_llm_01",
+   "vocab_pack": "aomen_portugal_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→明以朝贡—市舶体系待葡人，主权在县官，岁输地租"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→葡人筑城列炮、据为互市埠，中西货物转口"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→蕃商、教士、工匠聚居，澳门华葡双轨社会初成"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→澳门扼珠江口外海道，为中西互市初埠，权犹在中国"
+    }
+   },
+   "subject_names": [
+    "person:AOM__p01",
+    "person:AOM__p02",
+    "person:AOM__p03",
+    "place:aomen",
+    "event:ev_aomen_portugal_llm_01",
+    "event:ev_aomen_portugal_llm_02"
+   ]
+  },
+  "qinghai_tuyuhun_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "qinghai",
+   "title": "隋炀帝西征吐谷浑·青海道（609）",
+   "dossier_label": "qinghai_tuyuhun_llm",
+   "subtitle": "",
+   "primary_place": "qinghai",
+   "dossier_event": "event:ev_qinghai_tuyuhun_llm_01",
+   "vocab_pack": "qinghai_tuyuhun_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→隋炀帝西巡耀兵，置四郡纳青海于郡县体系，吐谷浑远遁"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→大斗拔谷通道、河西—青海连线，兵站驿传支撑远征"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→吐谷浑部众降附、党项内徙，边郡编户与屯田"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→经青海道通西域，复畅丝路南道，扼吐谷浑故地"
+    }
+   },
+   "subject_names": [
+    "person:QIN__p01",
+    "person:QIN__p02",
+    "place:qinghai",
+    "place:dadoubagu",
+    "place:xihai",
+    "place:heyuan",
+    "place:shanshan",
+    "place:qiemo",
+    "place:dangxiang",
+    "event:ev_qinghai_tuyuhun_llm_01",
+    "event:ev_qinghai_tuyuhun_llm_02",
+    "event:ev_qinghai_tuyuhun_llm_03"
+   ]
+  },
+  "guizhou_yelang_llm": {
+   "kind": "fusion",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "汉通西南夷·夜郎（前135–前111）",
+   "dossier_label": "guizhou_yelang_llm",
+   "subtitle": "",
+   "primary_place": "yelang",
+   "dossier_event": "event:ev_guizhou_yelang_llm_01",
+   "vocab_pack": "guizhou_yelang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→汉置牂柯郡、封夜郎王，西南夷纳入边郡与羁縻双轨"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→西南夷道自僰道指牂柯江，巴蜀物资与军镇连线"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→夜郎诸部归附、汉民与夷人杂处，边郡编户"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→扼牂柯江—滇黔通道，控西南夷与交趾—巴蜀三角"
+    }
+   },
+   "subject_names": [
+    "person:GUI__p01",
+    "person:GUI__p02",
+    "person:GUI__p03",
+    "place:yelang",
+    "place:zangke",
+    "place:qielan",
+    "place:bodaozhi",
+    "place:zangkejiang",
+    "event:ev_guizhou_yelang_llm_01",
+    "event:ev_guizhou_yelang_llm_02",
+    "event:ev_guizhou_yelang_llm_03"
+   ]
+  },
+  "hainan_zhuyai_llm": {
+   "kind": "frontier",
+   "region": "exchange",
+   "province": "hainan",
+   "title": "汉置珠崖儋耳二郡（前110–前46）",
+   "dossier_label": "hainan_zhuyai_llm",
+   "subtitle": "",
+   "primary_place": "hepu",
+   "dossier_event": "event:ev_hainan_zhuyai_llm_01",
+   "vocab_pack": "hainan_zhuyai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→汉平南越渡海置珠崖儋耳，郡县初及海南，后弃守争议"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→自合浦徐闻渡海，楼船—烽堠支撑海岛管控"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→黎民数反、赋敛繁重，贾捐之谏弃珠崖，移民与岛民张力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→海南孤悬海外，汉初据为海上南疆，后罢郡属合浦"
+    }
+   },
+   "subject_names": [
+    "person:HAI__p01",
+    "person:HAI__p02",
+    "place:hepu",
+    "place:xuwen",
+    "place:zhuyai",
+    "place:daner",
+    "event:ev_hainan_zhuyai_llm_01",
+    "event:ev_hainan_zhuyai_llm_02"
+   ]
+  },
+  "hunan_changsha_llm": {
+   "kind": "fusion",
+   "region": "hunan",
+   "province": "hunan",
+   "title": "汉长沙国·马王堆（前202–前157）",
+   "dossier_label": "hunan_changsha_llm",
+   "subtitle": "",
+   "primary_place": "linxiang",
+   "dossier_event": "event:ev_hunan_changsha_llm_01",
+   "vocab_pack": "hunan_changsha_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→汉封长沙国，异姓诸侯仅存者，与中央削藩张力"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→临湘为江南枢纽，湘江水道连荆扬，国用赖农织"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→长沙国领湖南，蛮汉杂处，马王堆见侯国丧葬与工艺"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→扼湘江中游、控荆楚—岭南通道，汉初西南屏藩"
+    }
+   },
+   "subject_names": [
+    "person:HUN__p01",
+    "person:HUN__p02",
+    "person:HUN__p03",
+    "person:HUN__p04",
+    "place:linxiang",
+    "place:mawangdui",
+    "event:ev_hunan_changsha_llm_01",
+    "event:ev_hunan_changsha_llm_02",
+    "event:ev_hunan_changsha_llm_03"
+   ]
+  },
+  "jilin_gaogouli_llm": {
+   "kind": "frontier",
+   "region": "jianzhou",
+   "province": "jilin",
+   "title": "高句丽·集安王城（前37–668）",
+   "dossier_label": "jilin_gaogouli_llm",
+   "subtitle": "",
+   "primary_place": "jilin_ji_an",
+   "dossier_event": "event:ev_jilin_gaogouli_llm_01",
+   "vocab_pack": "jilin_gaogouli_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "",
+   "parties_note": "",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "制度+思想→高句丽王城集安，夫余别种立国，与中原政权时臣时叛"
+    },
+    "material_logistics": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "技術+制度→扼鸭绿江中游、山城防御，好太王拓境控辽东边徼"
+    },
+    "population_mobilization": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "社會+制度→高句丽役属秽貊诸部，五部制凝聚，好太王碑记功"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→据鸭绿江—长白山险，东北亚三角博弈，唐总章灭之"
+    }
+   },
+   "subject_names": [
+    "person:JIL__p01",
+    "person:JIL__p02",
+    "place:jilin_ji_an",
+    "place:he_sheng_gu_cheng",
+    "place:ya_lu_jiang",
+    "event:ev_jilin_gaogouli_llm_01",
+    "event:ev_jilin_gaogouli_llm_02",
+    "event:ev_jilin_gaogouli_llm_03"
    ]
   }
  },

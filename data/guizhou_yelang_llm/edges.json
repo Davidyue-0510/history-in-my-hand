@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "bodaozhi",
+   "to": "zangkejiang",
+   "type": "military",
+   "label": "汉通西南夷道",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

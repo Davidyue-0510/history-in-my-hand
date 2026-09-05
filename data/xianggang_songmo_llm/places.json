@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "fuzhou",
+   "name": "福州",
+   "type": "city",
+   "modern": "今中国福建省福州市",
+   "note": "端宗航海出发地",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 119.3,
+   "lat": 26.08,
+   "geo_unresolved": false
+  },
+  {
+   "id": "guangfuchang",
+   "name": "官富场",
+   "type": "yi",
+   "modern": "今中国香港九龙",
+   "note": "端宗驻跸并筑行宫",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 114.2,
+   "lat": 22.32,
+   "geo_unresolved": false
+  },
+  {
+   "id": "gangzhou",
+   "name": "碙洲",
+   "type": "island",
+   "modern": "今中国广东省湛江市硇洲岛",
+   "note": "端宗驾崩之地",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 110.6,
+   "lat": 20.9,
+   "geo_unresolved": false
+  },
+  {
+   "id": "yashan",
+   "name": "崖山",
+   "type": "fortress",
+   "modern": "今中国广东省江门市新会区",
+   "note": "宋元决战及宋亡之地",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 113.05,
+   "lat": 22.35,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

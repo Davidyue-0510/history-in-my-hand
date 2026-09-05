@@ -1,0 +1,23 @@
+{
+ "sources": [
+  {
+   "id": "sui_shu_yangdi_llm",
+   "title": "隋书·炀帝纪（西巡吐谷浑）",
+   "party": "隋官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "魏徵等",
+   "period": "唐",
+   "note": ""
+  },
+  {
+   "id": "synthesis",
+   "title": "綜合研判·缺口標註",
+   "party": "综合史料",
+   "availability": "not_free",
+   "bias_note": "諸場景據原始文獻綜合研判，缺環以 gap 層誠實標註。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+  }
+ ]
+}

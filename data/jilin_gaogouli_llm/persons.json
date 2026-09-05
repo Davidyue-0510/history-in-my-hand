@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIL__p01",
+   "name": "朱蒙",
+   "role": "高句丽开国君主",
+   "note": "前37年立国，都纥升骨城",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p02",
+   "name": "好太王",
+   "role": "高句丽国王",
+   "note": "391-412年在位，拓境立碑",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null
+  }
+ ]
+}

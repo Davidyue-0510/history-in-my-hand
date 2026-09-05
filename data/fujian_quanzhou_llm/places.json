@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "quanzhou",
+   "name": "泉州",
+   "type": "port",
+   "modern": "今中国福建省泉州市",
+   "note": "刺桐港所在",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 118.58,
+   "lat": 24.91,
+   "geo_unresolved": false
+  },
+  {
+   "id": "citong_gang",
+   "name": "刺桐港",
+   "type": "port",
+   "modern": "今中国福建省泉州市",
+   "note": "泉州港别名",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 118.58,
+   "lat": 24.88,
+   "geo_unresolved": false
+  },
+  {
+   "id": "penghu",
+   "name": "澎湖",
+   "type": "yi",
+   "modern": "今中国台湾澎湖县",
+   "note": "巡检司驻地",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 119.55,
+   "lat": 23.55,
+   "geo_unresolved": false
+  },
+  {
+   "id": "liuqiu",
+   "name": "琉求",
+   "type": "region",
+   "modern": "今中国台湾",
+   "note": "元代辖地",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 120.95,
+   "lat": 23.7,
+   "geo_unresolved": false
+  },
+  {
+   "id": "aiji",
+   "name": "埃及",
+   "type": "region",
+   "modern": "今埃及",
+   "note": "海上丝路贸易国",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 31.24,
+   "lat": 30.04,
+   "geo_unresolved": false
+  },
+  {
+   "id": "bosi",
+   "name": "波斯",
+   "type": "region",
+   "modern": "今伊朗",
+   "note": "海上丝路贸易国",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 53.0,
+   "lat": 32.0,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

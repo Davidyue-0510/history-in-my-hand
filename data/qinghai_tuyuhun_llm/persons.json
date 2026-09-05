@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "隋炀帝",
+   "role": "隋朝皇帝",
+   "note": "西巡击吐谷浑",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "伏允",
+   "role": "吐谷浑可汗",
+   "note": "兵败奔党项",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  }
+ ]
+}

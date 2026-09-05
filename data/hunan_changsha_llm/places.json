@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "linxiang",
+   "name": "临湘",
+   "type": "city",
+   "modern": "今湖南长沙",
+   "note": "长沙国都城",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 112.94,
+   "lat": 28.23,
+   "geo_unresolved": false
+  },
+  {
+   "id": "mawangdui",
+   "name": "马王堆",
+   "type": "yi",
+   "modern": "今湖南长沙",
+   "note": "汉墓群所在地",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 112.99,
+   "lat": 28.21,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

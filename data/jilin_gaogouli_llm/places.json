@@ -1,0 +1,49 @@
+{
+ "places": [
+  {
+   "id": "jilin_ji_an",
+   "name": "集安",
+   "type": "city",
+   "modern": "今中国吉林省集安市",
+   "note": "高句丽早期都城",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null,
+   "lon": 126.18,
+   "lat": 41.12,
+   "geo_unresolved": false
+  },
+  {
+   "id": "he_sheng_gu_cheng",
+   "name": "纥升骨城",
+   "type": "fortress",
+   "modern": "今中国吉林省集安市",
+   "note": "高句丽都城",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null,
+   "lon": 126.18,
+   "lat": 41.1,
+   "geo_unresolved": false
+  },
+  {
+   "id": "ya_lu_jiang",
+   "name": "鸭绿江",
+   "type": "region",
+   "modern": "今中国朝鲜界河",
+   "note": "高句丽核心区域",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null,
+   "lon": 126.0,
+   "lat": 40.5,
+   "geo_match": "substring",
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

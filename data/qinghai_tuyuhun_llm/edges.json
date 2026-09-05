@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "qinghai",
+   "to": "dadoubagu",
+   "type": "military",
+   "label": "隋军行军路线",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "dadoubagu",
+   "to": "xihai",
+   "type": "military",
+   "label": "出谷至西海",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  }
+ ]
+}

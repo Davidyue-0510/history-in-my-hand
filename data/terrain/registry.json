@@ -174,6 +174,48 @@
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "zhejiang_linan_llm": {
+      "label": "南宋定都临安（1129–1276）",
+      "file": "zhejiang_linan_llm_grid.json",
+      "bbox": [
+        119.65,
+        29.77,
+        120.65,
+        30.77
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "fujian_quanzhou_llm": {
+      "label": "泉州刺桐港·海上丝路（宋元）",
+      "file": "fujian_quanzhou_llm_grid.json",
+      "bbox": [
+        118.08,
+        24.41,
+        119.08,
+        25.41
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "jilin_gaogouli_llm": {
+      "label": "高句丽·集安王城（前37–668）",
+      "file": "jilin_gaogouli_llm_grid.json",
+      "bbox": [
+        123.4,
+        39.33,
+        124.4,
+        40.33
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

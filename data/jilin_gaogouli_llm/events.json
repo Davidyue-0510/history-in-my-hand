@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_gaogouli_llm_01",
+   "subject": "event:ev_jilin_gaogouli_llm_01",
+   "year": -37,
+   "era": "汉元帝建昭二年",
+   "title": "朱蒙立国",
+   "kind": "建置",
+   "text": "朱蒙立国，都纥升骨城",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_gaogouli_llm_02",
+   "subject": "event:ev_jilin_gaogouli_llm_02",
+   "year": 391,
+   "era": "好太王在位",
+   "title": "好太王拓境",
+   "kind": "战事",
+   "text": "好太王拓境，立碑记功",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_gaogouli_llm_03",
+   "subject": "event:ev_jilin_gaogouli_llm_03",
+   "year": 668,
+   "era": "唐总章元年",
+   "title": "唐灭高句丽",
+   "kind": "战事",
+   "text": "唐总章元年灭高句丽",
+   "_source_idx": 0,
+   "_source_name": "魏书·高句丽传（集安）",
+   "_source_party": "魏晋官修",
+   "_source_credibility": null
+  }
+ ]
+}

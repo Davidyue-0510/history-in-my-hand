@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "汉武帝",
+   "role": "汉皇帝",
+   "note": "元封元年置郡",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "贾捐之",
+   "role": "汉臣",
+   "note": "谏弃珠崖",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·贾捐之传（珠崖）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

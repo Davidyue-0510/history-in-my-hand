@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_quanzhou_llm_01",
+   "subject": "event:ev_fujian_quanzhou_llm_01",
+   "year": 1174,
+   "era": "南宋淳熙间",
+   "title": "赵汝适知泉州",
+   "kind": "行政",
+   "text": "赵汝适任泉州知州，撰《诸蕃志》",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_quanzhou_llm_02",
+   "subject": "event:ev_fujian_quanzhou_llm_02",
+   "year": 1281,
+   "era": "元至元十八年",
+   "title": "设澎湖巡检司",
+   "kind": "建置",
+   "text": "元置澎湖巡检司辖琉求",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

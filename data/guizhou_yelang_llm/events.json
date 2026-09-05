@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_guizhou_yelang_llm_01",
+   "subject": "event:ev_guizhou_yelang_llm_01",
+   "year": -122,
+   "era": "元狩元年",
+   "title": "唐蒙通夜郎",
+   "kind": "外交",
+   "text": "唐蒙出使夜郎，多同请置吏",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_yelang_llm_02",
+   "subject": "event:ev_guizhou_yelang_llm_02",
+   "year": -111,
+   "era": "元鼎六年",
+   "title": "置牂柯郡",
+   "kind": "建置",
+   "text": "平南越且兰，置牂柯郡",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_yelang_llm_03",
+   "subject": "event:ev_guizhou_yelang_llm_03",
+   "year": -111,
+   "era": "元鼎六年",
+   "title": "夜郎侯入朝",
+   "kind": "外交",
+   "text": "夜郎侯入朝，封为王",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

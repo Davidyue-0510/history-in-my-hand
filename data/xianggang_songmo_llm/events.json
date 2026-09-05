@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_songmo_llm_01",
+   "subject": "event:ev_xianggang_songmo_llm_01",
+   "year": 1276,
+   "era": "景炎元年",
+   "title": "端宗航海至官富场",
+   "kind": "其他",
+   "text": "宋端宗自福州航海至九龙官富场驻跸",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_songmo_llm_02",
+   "subject": "event:ev_xianggang_songmo_llm_02",
+   "year": 1278,
+   "era": "景炎三年",
+   "title": "端宗崩于碙洲",
+   "kind": "其他",
+   "text": "宋端宗在碙洲去世",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_songmo_llm_03",
+   "subject": "event:ev_xianggang_songmo_llm_03",
+   "year": 1279,
+   "era": "祥兴二年",
+   "title": "崖山海战",
+   "kind": "战事",
+   "text": "宋元崖山海战，宋军溃败",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_songmo_llm_04",
+   "subject": "event:ev_xianggang_songmo_llm_04",
+   "year": 1279,
+   "era": "祥兴二年",
+   "title": "陆秀夫负帝投海",
+   "kind": "其他",
+   "text": "陆秀夫背负帝昺投海，南宋灭亡",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

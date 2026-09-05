@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_qinghai_tuyuhun_llm_01",
+   "subject": "event:ev_qinghai_tuyuhun_llm_01",
+   "year": 609,
+   "era": "大业五年",
+   "title": "隋击吐谷浑",
+   "kind": "战事",
+   "text": "隋炀帝西征，伏允败走。",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_tuyuhun_llm_02",
+   "subject": "event:ev_qinghai_tuyuhun_llm_02",
+   "year": 609,
+   "era": "大业五年",
+   "title": "置四郡",
+   "kind": "建置",
+   "text": "设西海、河源、鄯善、且末。",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_tuyuhun_llm_03",
+   "subject": "event:ev_qinghai_tuyuhun_llm_03",
+   "year": 609,
+   "era": "大业五年",
+   "title": "大斗拔谷之险",
+   "kind": "其他",
+   "text": "风雪冻毙过半。",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（西巡吐谷浑）",
+   "_source_party": "隋官修",
+   "_source_credibility": null
+  }
+ ]
+}

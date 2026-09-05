@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_portugal_llm_01",
+   "subject": "event:ev_aomen_portugal_llm_01",
+   "year": 1553,
+   "era": "嘉靖三十二年",
+   "title": "葡人租居澳门",
+   "kind": "行政",
+   "text": "葡人托言舟触礁，贿税使得居澳门",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_portugal_llm_02",
+   "subject": "event:ev_aomen_portugal_llm_02",
+   "year": 1573,
+   "era": "万历年间",
+   "title": "筑城列炮",
+   "kind": "建置",
+   "text": "葡人筑城列炮，据为互市之埠",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null
+  }
+ ]
+}

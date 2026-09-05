@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "quanzhou",
+   "to": "aiji",
+   "type": "military",
+   "label": "海上丝路航线",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "quanzhou",
+   "to": "bosi",
+   "type": "military",
+   "label": "海上丝路航线",
+   "_source_idx": 0,
+   "_source_name": "诸蕃志（赵汝适知泉州）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

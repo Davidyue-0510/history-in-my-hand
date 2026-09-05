@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "fuzhou",
+   "to": "guangfuchang",
+   "type": "military",
+   "label": "端宗航海南奔路线",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guangfuchang",
+   "to": "gangzhou",
+   "type": "military",
+   "label": "行朝移驻碙洲",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "gangzhou",
+   "to": "yashan",
+   "type": "military",
+   "label": "行朝移驻崖山",
+   "_source_idx": 0,
+   "_source_name": "宋史·二王本纪（端宗·帝昺）",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

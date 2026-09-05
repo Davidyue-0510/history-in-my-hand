@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_hunan_changsha_llm_01",
+   "subject": "event:ev_hunan_changsha_llm_01",
+   "year": -202,
+   "era": "汉高祖五年",
+   "title": "封吴芮为长沙王",
+   "kind": "建置",
+   "text": "汉高祖封吴芮为长沙王，都临湘",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_changsha_llm_02",
+   "subject": "event:ev_hunan_changsha_llm_02",
+   "year": -157,
+   "era": "汉景帝时",
+   "title": "长沙国被削",
+   "kind": "行政",
+   "text": "长沙国传五世，至景帝削",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_changsha_llm_03",
+   "subject": "event:ev_hunan_changsha_llm_03",
+   "year": -168,
+   "era": "西汉",
+   "title": "马王堆汉墓下葬",
+   "kind": "其他",
+   "text": "轪侯利苍家族葬于马王堆",
+   "_source_idx": 0,
+   "_source_name": "史记·高祖本纪·长沙国（马王堆）",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "hangzhou",
+   "name": "杭州",
+   "type": "city",
+   "modern": "今中国浙江省杭州市",
+   "note": "南宋都城临安",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪（临安行在）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 120.15,
+   "lat": 30.27,
+   "geo_unresolved": false
+  },
+  {
+   "id": "xihu",
+   "name": "西湖",
+   "type": "region",
+   "modern": "今中国浙江省杭州市西湖区",
+   "note": "临安城西之湖",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪（临安行在）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 120.13,
+   "lat": 30.25,
+   "geo_unresolved": false
+  },
+  {
+   "id": "yujie",
+   "name": "御街",
+   "type": "region",
+   "modern": "今中国浙江省杭州市",
+   "note": "临安城南北主干道",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪（临安行在）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 120.16,
+   "lat": 30.25,
+   "geo_unresolved": false
+  },
+  {
+   "id": "jianghuai",
+   "name": "江淮",
+   "type": "region",
+   "modern": "今中国长江与淮河之间",
+   "note": "南宋北方防线",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪（临安行在）",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": 119.0,
+   "lat": 32.5,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

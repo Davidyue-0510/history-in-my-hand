@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "yelang",
+   "name": "夜郎",
+   "type": "yi",
+   "modern": "今贵州西部",
+   "note": "夜郎国地",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 106.7,
+   "lat": 26.85,
+   "geo_unresolved": false
+  },
+  {
+   "id": "zangke",
+   "name": "牂柯",
+   "type": "region",
+   "modern": "今贵州大部",
+   "note": "牂柯郡地",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 107.0,
+   "lat": 26.9,
+   "geo_unresolved": false
+  },
+  {
+   "id": "qielan",
+   "name": "且兰",
+   "type": "yi",
+   "modern": "今贵州福泉一带",
+   "note": "且兰国",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 107.5,
+   "lat": 26.7,
+   "geo_unresolved": false
+  },
+  {
+   "id": "bodaozhi",
+   "name": "僰道",
+   "type": "city",
+   "modern": "今四川宜宾",
+   "note": "通西南夷起点",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 104.62,
+   "lat": 28.77,
+   "geo_unresolved": false
+  },
+  {
+   "id": "zangkejiang",
+   "name": "牂柯江",
+   "type": "river",
+   "modern": "今贵州北盘江",
+   "note": "通西南夷道所经",
+   "_source_idx": 0,
+   "_source_name": "史记·西南夷列传（夜郎）",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": 105.5,
+   "lat": 25.8,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

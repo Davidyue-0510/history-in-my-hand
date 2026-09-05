@@ -1,33 +1,42 @@
 {
-  "scenes_total": 153,
-  "historical": 144,
+  "scenes_total": 162,
+  "historical": 153,
   "fictional": 9,
-  "assertions_total": 2355,
-  "sources_total": 114,
+  "assertions_total": 2494,
+  "sources_total": 123,
   "factions_total": 9,
   "vocab_packs": [
+    "aomen_portugal_llm",
     "changping_llm",
     "chu_han",
     "chuhai_llm",
     "feishui_llm",
+    "fujian_quanzhou_llm",
     "guandu_llm",
+    "guizhou_yelang_llm",
+    "hainan_zhuyai_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
+    "hunan_changsha_llm",
+    "jilin_gaogouli_llm",
     "ming_qing",
     "nanzhao_dali_llm",
     "qin_mie_liu_guo",
     "qin_mie_liu_guo_llm",
+    "qinghai_tuyuhun_llm",
     "san_guo",
     "song",
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "tang",
     "three_campaigns",
+    "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
+    "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 227,
+  "leads_total": 255,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1153,6 +1162,69 @@
       "kind": "tech",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "zhejiang_linan_llm",
+      "title": "南宋定都临安（1129–1276）",
+      "kind": "dynasty",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "fujian_quanzhou_llm",
+      "title": "泉州刺桐港·海上丝路（宋元）",
+      "kind": "exchange",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "xianggang_songmo_llm",
+      "title": "宋末二王南迁·香港官富场（1276–1279）",
+      "kind": "battle",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "aomen_portugal_llm",
+      "title": "葡人租居澳门（1553–1573）",
+      "kind": "exchange",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "qinghai_tuyuhun_llm",
+      "title": "隋炀帝西征吐谷浑·青海道（609）",
+      "kind": "frontier",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_yelang_llm",
+      "title": "汉通西南夷·夜郎（前135–前111）",
+      "kind": "fusion",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "hainan_zhuyai_llm",
+      "title": "汉置珠崖儋耳二郡（前110–前46）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "hunan_changsha_llm",
+      "title": "汉长沙国·马王堆（前202–前157）",
+      "kind": "fusion",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jilin_gaogouli_llm",
+      "title": "高句丽·集安王城（前37–668）",
+      "kind": "frontier",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1308,6 +1380,15 @@
     "xiyu_dunhu_llm": "西域都护府之设（前60）",
     "hexi_sijun_llm": "汉武帝经营河西·河西四郡（前121）",
     "nanzhao_dali_llm": "南诏统一六诏·大理国（738–1253）",
-    "huangdaopo_llm": "黄道婆传棉纺之法（元贞间）"
+    "huangdaopo_llm": "黄道婆传棉纺之法（元贞间）",
+    "zhejiang_linan_llm": "南宋定都临安（1129–1276）",
+    "fujian_quanzhou_llm": "泉州刺桐港·海上丝路（宋元）",
+    "xianggang_songmo_llm": "宋末二王南迁·香港官富场（1276–1279）",
+    "aomen_portugal_llm": "葡人租居澳门（1553–1573）",
+    "qinghai_tuyuhun_llm": "隋炀帝西征吐谷浑·青海道（609）",
+    "guizhou_yelang_llm": "汉通西南夷·夜郎（前135–前111）",
+    "hainan_zhuyai_llm": "汉置珠崖儋耳二郡（前110–前46）",
+    "hunan_changsha_llm": "汉长沙国·马王堆（前202–前157）",
+    "jilin_gaogouli_llm": "高句丽·集安王城（前37–668）"
   }
 }

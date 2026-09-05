@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "aomen",
+   "name": "澳门",
+   "type": "port",
+   "modern": "今中国澳门特别行政区",
+   "note": "中西互市之初埠",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null,
+   "lon": 113.55,
+   "lat": 22.2,
+   "geo_unresolved": false
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

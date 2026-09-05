@@ -1,33 +1,42 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 153 个切片
+// 权威数据源：data/scenes.json 注册的 162 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 153 个切片",
+  "slice": "multi-scene · 162 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
+   "aomen_portugal_llm",
    "changping_llm",
    "chu_han",
    "chuhai_llm",
    "feishui_llm",
+   "fujian_quanzhou_llm",
    "guandu_llm",
+   "guizhou_yelang_llm",
+   "hainan_zhuyai_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
+   "hunan_changsha_llm",
+   "jilin_gaogouli_llm",
    "ming_qing",
    "nanzhao_dali_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
+   "qinghai_tuyuhun_llm",
    "san_guo",
    "song",
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "tang",
    "three_campaigns",
+   "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
+   "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm"
   ]
  },
@@ -206,6 +215,11 @@ window.SANDBOX_DATA = {
    "id": "yunnan",
    "name": "雲南",
    "note": "南詔—大理地方政權與西南邊疆"
+  },
+  {
+   "id": "hunan",
+   "name": "湖南",
+   "note": "汉长沙国—马王堆与湖湘地域"
   }
  ],
  "dimensions": {
@@ -429,7 +443,16 @@ window.SANDBOX_DATA = {
   "xiyu_dunhu_llm",
   "hexi_sijun_llm",
   "nanzhao_dali_llm",
-  "huangdaopo_llm"
+  "huangdaopo_llm",
+  "zhejiang_linan_llm",
+  "fujian_quanzhou_llm",
+  "xianggang_songmo_llm",
+  "aomen_portugal_llm",
+  "qinghai_tuyuhun_llm",
+  "guizhou_yelang_llm",
+  "hainan_zhuyai_llm",
+  "hunan_changsha_llm",
+  "jilin_gaogouli_llm"
  ],
  "vocab": {
   "layers": [
@@ -23566,6 +23589,321 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "zhejiang_linan_llm": {
+   "key": "zhejiang_linan_llm",
+   "scene_id": "zhejiang_linan_llm",
+   "title": "南宋定都临安（1129–1276）",
+   "dossier_label": "zhejiang_linan_llm",
+   "subtitle": "",
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "page": "county.html?scene=zhejiang_linan_llm",
+   "primary_place": "hangzhou",
+   "vocab_pack": "inline:zhejiang_linan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 4,
+    "person": 1,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 3,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "fujian_quanzhou_llm": {
+   "key": "fujian_quanzhou_llm",
+   "scene_id": "fujian_quanzhou_llm",
+   "title": "泉州刺桐港·海上丝路（宋元）",
+   "dossier_label": "fujian_quanzhou_llm",
+   "subtitle": "",
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=fujian_quanzhou_llm",
+   "primary_place": "quanzhou",
+   "vocab_pack": "inline:fujian_quanzhou_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 6,
+    "person": 1,
+    "assert": 16,
+    "conflict": 1,
+    "gap": 2,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xianggang_songmo_llm": {
+   "key": "xianggang_songmo_llm",
+   "scene_id": "xianggang_songmo_llm",
+   "title": "宋末二王南迁·香港官富场（1276–1279）",
+   "dossier_label": "xianggang_songmo_llm",
+   "subtitle": "",
+   "kind": "battle",
+   "region": "exchange",
+   "page": "xianggang_songmo_llm.html",
+   "primary_place": "fuzhou",
+   "vocab_pack": "inline:xianggang_songmo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 4,
+    "person": 3,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 6,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "aomen_portugal_llm": {
+   "key": "aomen_portugal_llm",
+   "scene_id": "aomen_portugal_llm",
+   "title": "葡人租居澳门（1553–1573）",
+   "dossier_label": "aomen_portugal_llm",
+   "subtitle": "",
+   "kind": "exchange",
+   "region": "exchange",
+   "page": "county.html?scene=aomen_portugal_llm",
+   "primary_place": "aomen",
+   "vocab_pack": "inline:aomen_portugal_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 1,
+    "person": 3,
+    "assert": 17,
+    "conflict": 0,
+    "gap": 4,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "qinghai_tuyuhun_llm": {
+   "key": "qinghai_tuyuhun_llm",
+   "scene_id": "qinghai_tuyuhun_llm",
+   "title": "隋炀帝西征吐谷浑·青海道（609）",
+   "dossier_label": "qinghai_tuyuhun_llm",
+   "subtitle": "",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=qinghai_tuyuhun_llm",
+   "primary_place": "qinghai",
+   "vocab_pack": "inline:qinghai_tuyuhun_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 7,
+    "person": 2,
+    "assert": 17,
+    "conflict": 2,
+    "gap": 4,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guizhou_yelang_llm": {
+   "key": "guizhou_yelang_llm",
+   "scene_id": "guizhou_yelang_llm",
+   "title": "汉通西南夷·夜郎（前135–前111）",
+   "dossier_label": "guizhou_yelang_llm",
+   "subtitle": "",
+   "kind": "fusion",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guizhou_yelang_llm",
+   "primary_place": "yelang",
+   "vocab_pack": "inline:guizhou_yelang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 5,
+    "person": 3,
+    "assert": 16,
+    "conflict": 1,
+    "gap": 2,
+    "record": 11,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "hainan_zhuyai_llm": {
+   "key": "hainan_zhuyai_llm",
+   "scene_id": "hainan_zhuyai_llm",
+   "title": "汉置珠崖儋耳二郡（前110–前46）",
+   "dossier_label": "hainan_zhuyai_llm",
+   "subtitle": "",
+   "kind": "frontier",
+   "region": "exchange",
+   "page": "county.html?scene=hainan_zhuyai_llm",
+   "primary_place": "hepu",
+   "vocab_pack": "inline:hainan_zhuyai_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 4,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 2,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hunan_changsha_llm": {
+   "key": "hunan_changsha_llm",
+   "scene_id": "hunan_changsha_llm",
+   "title": "汉长沙国·马王堆（前202–前157）",
+   "dossier_label": "hunan_changsha_llm",
+   "subtitle": "",
+   "kind": "fusion",
+   "region": "hunan",
+   "page": "county.html?scene=hunan_changsha_llm",
+   "primary_place": "linxiang",
+   "vocab_pack": "inline:hunan_changsha_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 2,
+    "person": 4,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 3,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "jilin_gaogouli_llm": {
+   "key": "jilin_gaogouli_llm",
+   "scene_id": "jilin_gaogouli_llm",
+   "title": "高句丽·集安王城（前37–668）",
+   "dossier_label": "jilin_gaogouli_llm",
+   "subtitle": "",
+   "kind": "frontier",
+   "region": "jianzhou",
+   "page": "county.html?scene=jilin_gaogouli_llm",
+   "primary_place": "jilin_ji_an",
+   "vocab_pack": "inline:jilin_gaogouli_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 3,
+    "person": 2,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 2,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -23721,7 +24059,16 @@ window.SANDBOX_DATA = {
   "xiyu_dunhu_llm": "slices/xiyu_dunhu_llm.js",
   "hexi_sijun_llm": "slices/hexi_sijun_llm.js",
   "nanzhao_dali_llm": "slices/nanzhao_dali_llm.js",
-  "huangdaopo_llm": "slices/huangdaopo_llm.js"
+  "huangdaopo_llm": "slices/huangdaopo_llm.js",
+  "zhejiang_linan_llm": "slices/zhejiang_linan_llm.js",
+  "fujian_quanzhou_llm": "slices/fujian_quanzhou_llm.js",
+  "xianggang_songmo_llm": "slices/xianggang_songmo_llm.js",
+  "aomen_portugal_llm": "slices/aomen_portugal_llm.js",
+  "qinghai_tuyuhun_llm": "slices/qinghai_tuyuhun_llm.js",
+  "guizhou_yelang_llm": "slices/guizhou_yelang_llm.js",
+  "hainan_zhuyai_llm": "slices/hainan_zhuyai_llm.js",
+  "hunan_changsha_llm": "slices/hunan_changsha_llm.js",
+  "jilin_gaogouli_llm": "slices/jilin_gaogouli_llm.js"
  },
  "corridors": [
   {

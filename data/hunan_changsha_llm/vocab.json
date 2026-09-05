@@ -1,0 +1,29 @@
+{
+ "_comment": "hunan_changsha_llm vocab pack (world-gen 手補完整版)",
+ "parties": [
+  "汉官修",
+  "综合史料"
+ ],
+ "party_bucket": {
+  "汉官修": "汉官修",
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "汉官修": "#8C6239",
+  "综合史料": "#9B7B5A"
+ },
+ "factions": {},
+ "faction_colors": {},
+ "layers": [
+  "record",
+  "scholarship",
+  "inference",
+  "gap",
+  "conflict"
+ ],
+ "quote_status": [
+  "verbatim",
+  "paraphrase_unverified",
+  "generated"
+ ]
+}

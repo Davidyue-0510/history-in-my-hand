@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "AOM__p01",
+   "name": "佛郎机人",
+   "role": "葡萄牙商人",
+   "note": "托言舟触礁，请晾渍物，贿税使，得租居澳门",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p02",
+   "name": "税使",
+   "role": "明朝税使",
+   "note": "受葡人贿赂，允其租居",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p03",
+   "name": "守澳官",
+   "role": "明朝守澳官",
+   "note": "岁输地租，权犹在中国",
+   "_source_idx": 0,
+   "_source_name": "明史·佛郎机传（澳门）",
+   "_source_party": "明官修",
+   "_source_credibility": null
+  }
+ ]
+}

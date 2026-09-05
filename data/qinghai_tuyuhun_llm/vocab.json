@@ -1,0 +1,29 @@
+{
+ "_comment": "qinghai_tuyuhun_llm vocab pack (world-gen 手補完整版)",
+ "parties": [
+  "隋官修",
+  "综合史料"
+ ],
+ "party_bucket": {
+  "隋官修": "隋官修",
+  "综合史料": "综合史料"
+ },
+ "party_colors": {
+  "隋官修": "#8C6239",
+  "综合史料": "#9B7B5A"
+ },
+ "factions": {},
+ "faction_colors": {},
+ "layers": [
+  "record",
+  "scholarship",
+  "inference",
+  "gap",
+  "conflict"
+ ],
+ "quote_status": [
+  "verbatim",
+  "paraphrase_unverified",
+  "generated"
+ ]
+}

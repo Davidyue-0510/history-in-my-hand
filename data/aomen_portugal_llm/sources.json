@@ -1,0 +1,23 @@
+{
+ "sources": [
+  {
+   "id": "ming_shi_folangji_llm",
+   "title": "明史·佛郎机传（澳门）",
+   "party": "明官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "张廷玉等",
+   "period": "清",
+   "note": ""
+  },
+  {
+   "id": "synthesis",
+   "title": "綜合研判·缺口標註",
+   "party": "综合史料",
+   "availability": "not_free",
+   "bias_note": "諸場景據原始文獻綜合研判，缺環以 gap 層誠實標註。",
+   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
+  }
+ ]
+}
