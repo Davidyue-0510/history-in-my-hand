@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "evt_shoushi",
+   "subject": "event:shoushi_banxing",
+   "era": "至元十七年",
+   "year": 1280,
+   "title": "授时历颁行",
+   "kind": "reform",
+   "text": "元太史院颁行授时历，定一年=365.2425日，与现行公历同精度而早 303 年；废金大明历，标志元代历法技术集大成。"
+  },
+  {
+   "id": "evt_tonghui",
+   "subject": "tech:tonghui",
+   "era": "至元二十八年",
+   "year": 1291,
+   "title": "通惠河兴建",
+   "kind": "engineering",
+   "text": "郭守敬主持开凿通惠河，自昌平白浮村引神山泉水入大都积水潭，漕粮可直抵京城，水利工程动用数万军夫。"
+  },
+  {
+   "id": "evt_sihai",
+   "subject": "tech:sihai",
+   "era": "至元十六年",
+   "year": 1279,
+   "title": "四海测验",
+   "kind": "tech",
+   "text": "元太史院推行四海测验，设 27 观测点，南逾南海 20°N、北逾北海 65°N，纬度跨度亘古未有。"
+  }
+ ]
+}

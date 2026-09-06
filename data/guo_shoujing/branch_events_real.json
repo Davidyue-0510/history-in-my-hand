@@ -1,0 +1,23 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "guo_shoujing",
+ "_scenario_type": "engineering",
+ "_years": [
+  1276,
+  1292
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1292,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

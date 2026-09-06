@@ -1,0 +1,7 @@
+{
+ "persons": [
+  {"id": "guo_shoujing", "name": "郭守敬", "role": "元太史院使·都水监"},
+  {"id": "wang_xun", "name": "王恂", "role": "元太史院副使"},
+  {"id": "kublai", "name": "忽必烈", "role": "元世祖"}
+ ]
+}

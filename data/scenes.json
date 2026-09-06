@@ -387,7 +387,8 @@
   "biTigeGuan",
   "tang_liangshuifa",
   "wei_xiaowen",
-  "sui_canal"
+  "sui_canal",
+  "guo_shoujing"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15551,6 +15552,92 @@
     }
    },
    "province": null
+  },
+  "guo_shoujing": {
+   "kind": "tech",
+   "region": "tech",
+   "title": "郭守敬·水利与天文",
+   "dossier_label": "郭守敬·元代水利天文",
+   "subtitle": "1276–1292 · 元代",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "元代至元十三年（1276）至至元二十九年（1292），郭守敬主持创制简仪高表（1276）、颁行授时历（1279/1280，定一年=365.2425日，与现行公历同精度而早 303 年）、推行四海测验（设 27 观测点，南逾 20°N 北逾 65°N）、兴建通惠河（1291，引白浮泉水入大都积水潭，漕粮直抵京城）。水利与天文工程并举，标志元代科学技术集大成。本场景由真实史料（《元史·郭守敬传》+ 近代综合考订）经 G1 工具（tools/derivation/derive_sim_config.py）零手 authoring 派生三件套，证据强度 strength=0.79，real base_rate=+0.051 / whatif=-0.036。",
+   "parties_note": "立场靠来源派生：元方（元官修本传+元人文集）记工程实施；学界（陈遵妫《中国天文学史》、蔡蕃《北京古运河》等）作现代综合考订。",
+   "subject_names": {
+    "tech:tonghui": "通惠河",
+    "tech:jianyi": "简仪/高表",
+    "tech:shoushi": "授时历",
+    "tech:sihai": "四海测验",
+    "institution:taishi": "太史院",
+    "social:caoyun": "漕运惠民",
+    "thought:shice": "实测求是",
+    "geo:daduwater": "大都水系",
+    "event:shoushi_banxing": "授时历颁行",
+    "person:guo_shoujing": "郭守敬",
+    "person:wang_xun": "王恂",
+    "person:kublai": "忽必烈"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "郭守敬水利天文：元廷对科技工程的政治支持（设太史院/都水监），臣僚协作（王恂/张文谦等）凝聚朝堂共识。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "郭守敬水利天文：物质基础——冶金/机械工艺支撑仪器制造，水利工程调动数万军夫与技工。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "郭守敬水利天文：人口动员——通惠河工程调动数万军夫；授时历颁行后历官体系运转。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      2
+     ],
+     "layer": "inference",
+     "note": "郭守敬水利天文：地缘战略——四海测验南逾南海北逾北海，疆域实测认知扩张；通惠河巩固大都漕运命脉。"
+    }
+   },
+   "province": "beijing"
   }
  },
  "dimensions": {

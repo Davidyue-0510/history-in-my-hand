@@ -1,9 +1,9 @@
 {
-  "scenes_total": 184,
-  "historical": 175,
+  "scenes_total": 185,
+  "historical": 176,
   "fictional": 9,
-  "assertions_total": 2864,
-  "sources_total": 148,
+  "assertions_total": 2873,
+  "sources_total": 150,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -1396,6 +1396,13 @@
       "kind": "engineering",
       "assertions": 2,
       "factions": {}
+    },
+    {
+      "id": "guo_shoujing",
+      "title": "郭守敬·水利与天文",
+      "kind": "tech",
+      "assertions": 9,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1582,6 +1589,7 @@
     "biTigeGuan": "碧蹄馆之战·三方记载",
     "tang_liangshuifa": "唐·两税法",
     "wei_xiaowen": "北魏孝文帝改革",
-    "sui_canal": "隋·大运河"
+    "sui_canal": "隋·大运河",
+    "guo_shoujing": "郭守敬·水利与天文"
   }
 }

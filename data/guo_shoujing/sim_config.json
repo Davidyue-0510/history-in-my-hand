@@ -1,0 +1,14 @@
+{
+ "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）；places 含真实坐标（北京大都/登封/通惠河/北海南海观测点），叙事层 = 地理扩散可渲染。",
+ "_auto_derived": true,
+ "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type=engineering（水利+天文工程）；base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=19.20 neg=2.20 sign=+1），幅度由证据强度 strength=0.79 驱动（magnitude=0.015+strength*0.045=0.051，封顶 0.06）；whatif 取反向并阻尼 0.036。places 含真实经纬度（5 节点：大都/登封告成/通惠河/南海/北海观测点），非抽象世界。",
+ "scenario_type": "engineering",
+ "dim_targets": ["技术", "制度", "社会", "思想", "事件"],
+ "start_year": 1276,
+ "end_year": 1292,
+ "real_branch": "real",
+ "branches": [
+  {"id": "real", "label": "史实基准", "base_rate": 0.051, "reform0": 0.5},
+  {"id": "whatif", "label": "反事实·反向推演", "base_rate": -0.036, "reform0": 0.5}
+ ]
+}

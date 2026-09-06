@@ -1,0 +1,9 @@
+{
+ "places": [
+  {"id": "dadu", "name": "大都", "lon": 116.4, "lat": 39.9},
+  {"id": "dengfeng", "name": "登封·告成镇观星台", "lon": 113.0, "lat": 34.5},
+  {"id": "tonghuihé", "name": "通惠河·积水潭段", "lon": 116.4, "lat": 39.95},
+  {"id": "nanhai", "name": "南海观测点", "lon": 110.0, "lat": 20.0},
+  {"id": "beihai", "name": "北海观测点", "lon": 117.7, "lat": 49.2}
+ ]
+}

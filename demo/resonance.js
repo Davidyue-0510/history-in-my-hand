@@ -57,6 +57,7 @@ window.SANDBOX_RESONANCE = {
    "guangning",
    "guiling",
    "guizhou_yelang_llm",
+   "guo_shoujing",
    "hainan_zhuyai_llm",
    "haizhou",
    "han_banchao_llm",
@@ -1074,6 +1075,23 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guizhou_yelang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guo_shoujing",
+   "name": "guo_shoujing",
+   "total": 9,
+   "layers": {
+    "scholarship": 9
+   },
+   "party_counts": {
+    "元方": 5,
+    "综述考订": 4
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:shoushi_banxing",
    "best_resonance": 0.0
   },
   {

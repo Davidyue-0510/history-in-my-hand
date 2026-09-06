@@ -1,0 +1,8 @@
+{
+ "_comment": "郭守敬·元廷单一控制方（元廷授命主持水利与天文工程）。",
+ "control": [
+  {"place_id": "dengfeng", "party": "综述考订", "start": 1270, "end": 1292, "timeline": "main"},
+  {"place_id": "dadu", "party": "综述考订", "start": 1270, "end": 1292, "timeline": "main"},
+  {"place_id": "tonghuihé", "party": "综述考订", "start": 1291, "end": 1292, "timeline": "main"}
+ ]
+}

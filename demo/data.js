@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 184 个切片
+// 权威数据源：data/scenes.json 注册的 185 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 184 个切片",
+  "slice": "multi-scene · 185 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -491,7 +491,8 @@ window.SANDBOX_DATA = {
   "biTigeGuan",
   "tang_liangshuifa",
   "wei_xiaowen",
-  "sui_canal"
+  "sui_canal",
+  "guo_shoujing"
  ],
  "vocab": {
   "layers": [
@@ -24747,6 +24748,41 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 0
    }
+  },
+  "guo_shoujing": {
+   "key": "guo_shoujing",
+   "scene_id": "guo_shoujing",
+   "title": "郭守敬·水利与天文",
+   "dossier_label": "郭守敬·元代水利天文",
+   "subtitle": "1276–1292 · 元代",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=guo_shoujing",
+   "primary_place": null,
+   "vocab_pack": "inline:guo_shoujing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 5,
+    "person": 3,
+    "assert": 9,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 9,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -24933,7 +24969,8 @@ window.SANDBOX_DATA = {
   "biTigeGuan": "slices/biTigeGuan.js",
   "tang_liangshuifa": "slices/tang_liangshuifa.js",
   "wei_xiaowen": "slices/wei_xiaowen.js",
-  "sui_canal": "slices/sui_canal.js"
+  "sui_canal": "slices/sui_canal.js",
+  "guo_shoujing": "slices/guo_shoujing.js"
  },
  "corridors": [
   {
