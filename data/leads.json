@@ -418,6 +418,21 @@
    "_src_line": 19
   },
   {
+   "id": "CHI_013",
+   "scene": "chibi_llm",
+   "subject": "event:ev_chibi_llm_02",
+   "title": "实际兵力约二十万",
+   "missing": "考据",
+   "where": "曹军实际兵力",
+   "skills": [
+    "考据"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "chongzhen_han_07",
    "scene": "chongzhen_han",
    "subject": "event:ch_1640",
@@ -3130,6 +3145,21 @@
   },
   {
    "id": "SON_012",
+   "scene": "song_wanganshi_llm",
+   "subject": "event:ev_song_wanganshi_llm_02",
+   "title": "青苗法实际效果待考",
+   "missing": "经济史",
+   "where": "开封府",
+   "skills": [
+    "经济史"
+   ],
+   "accept": "需查地方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SON_012",
    "scene": "song_yancheng_llm",
    "subject": "event:ev_song_yancheng_llm_01",
    "title": "金军兵力不详",
@@ -3160,20 +3190,19 @@
    "_src_line": 15
   },
   {
-   "id": "SUI_013",
+   "id": "SUI_012",
    "scene": "sui_canal_llm",
    "subject": "event:ev_sui_canal_llm_01",
-   "title": "板渚至淮路线不明",
-   "missing": "历史地理 / 考古",
-   "where": "板渚至淮河段",
+   "title": "具体开工月份不详",
+   "missing": "历史考据",
+   "where": "洛阳",
    "skills": [
-    "历史地理",
-    "考古"
+    "历史考据"
    ],
-   "accept": "实地考察证据",
+   "accept": "需查证具体月份",
    "effort": "—",
    "issue_url": null,
-   "_src_line": 13
+   "_src_line": 12
   },
   {
    "id": "SUI_DAXINGG01",

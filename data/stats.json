@@ -1,13 +1,14 @@
 {
-  "scenes_total": 177,
-  "historical": 168,
+  "scenes_total": 179,
+  "historical": 170,
   "fictional": 9,
-  "assertions_total": 2806,
-  "sources_total": 138,
+  "assertions_total": 2830,
+  "sources_total": 140,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
     "changping_llm",
+    "chibi_llm",
     "chu_han",
     "chuhai_llm",
     "feishui_llm",
@@ -34,6 +35,7 @@
     "san_guo",
     "song",
     "song_chanchuan_llm",
+    "song_wanganshi_llm",
     "song_yancheng_llm",
     "sui_canal_llm",
     "sui_mie_chen_llm",
@@ -51,7 +53,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 274,
+  "leads_total": 276,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1245,7 +1247,7 @@
       "id": "sui_canal_llm",
       "title": "隋炀帝开凿大运河（LLM 抽取·人工校订）",
       "kind": "engineering",
-      "assertions": 13,
+      "assertions": 12,
       "factions": {}
     },
     {
@@ -1343,6 +1345,20 @@
       "id": "tang_xuanwumen_llm",
       "title": "唐·玄武门之变（LLM 抽取·人工校订）",
       "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "chibi_llm",
+      "title": "三国·赤壁之战",
+      "kind": "county",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "song_wanganshi_llm",
+      "title": "宋·王安石变法",
+      "kind": "county",
       "assertions": 12,
       "factions": {}
     }
@@ -1524,6 +1540,8 @@
     "qing_zhungaer_llm": "清·平定准噶尔（LLM 抽取·人工校订）",
     "warring_states_shangyang_llm": "战国·商鞅变法（LLM 抽取·人工校订）",
     "han_weihuo_llm": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
-    "tang_xuanwumen_llm": "唐·玄武门之变（LLM 抽取·人工校订）"
+    "tang_xuanwumen_llm": "唐·玄武门之变（LLM 抽取·人工校订）",
+    "chibi_llm": "三国·赤壁之战",
+    "song_wanganshi_llm": "宋·王安石变法"
   }
 }

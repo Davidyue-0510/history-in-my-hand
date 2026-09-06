@@ -37,6 +37,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -66,25 +67,122 @@ def _slugify(name: str) -> str:
     return s
 
 
+# ── 朝代/区域/层级 启发式（框架级；真实断代由 LLM 文献理解补正，北极星②「框架优先」） ──
+_EPOCH_KW = [
+    ("ming_qing", ["明清", "萨尔浒", "辽东", "后金", "努尔哈赤", "万历", "天启", "崇祯", "清", "明"]),
+    ("song", ["宋", "北宋", "南宋", "王安石", "靖康", "澶渊", "宋朝"]),
+    ("tang", ["唐", "贞观", "开元", "安史", "李唐", "唐王朝"]),
+    ("yuan", ["元", "蒙古", "忽必烈", "元朝"]),
+    ("ming", ["明", "洪武", "永乐", "郑和", "明朝"]),
+    ("qing", ["清", "康熙", "乾隆", "鸦片战争", "清末", "晚清"]),
+    ("qin", ["秦", "始皇", "秦朝", "商鞅"]),
+    ("han", ["汉", "刘邦", "汉武帝", "文景", "汉朝"]),
+    ("sui", ["隋", "炀帝", "开运河", "隋朝"]),
+    ("three_kingdoms", ["三国", "赤壁", "曹操", "蜀汉"]),
+    ("two_jin", ["两晋", "西晋", "东晋", "八王"]),
+    ("warring_states", ["战国", "商鞅", "合纵", "连横", "七雄"]),
+    ("qin_han", ["秦汉", "秦制"]),
+    ("sui_tang", ["隋唐"]),
+    ("yuan_ming", ["元明"]),
+    ("sui_yuan", ["隋元"]),
+    ("cross_dynastic", ["历代", "通史", "古今"]),
+    ("guangzhong", ["关中", "咸阳", "长安"]),
+    ("huabei", ["华北", "河北"]),
+    ("qing_modern", ["近代", "民国", "洋务"]),
+    ("fiction", ["小说", "演义", "虚构", "架空"]),
+]
+_REGION_KW = [
+    ("liaodong", ["辽东", "辽河", "沈阳", "盛京", "赫图阿拉"]),
+    ("liaobei", ["辽北", "开原", "铁岭"]),
+    ("guangzhong", ["关中", "咸阳", "长安", "陕西"]),
+    ("huabei", ["华北", "河北", "幽州"]),
+    ("jiangnan", ["江南", "江淮", "南京", "临安", "杭州"]),
+    ("guanzhong", ["关东"]),
+]
+_SCALE_STRATEGIC_KW = ["改革", "制度", "思想", "对外交流", "民族融合", "宫廷", "礼制",
+                        "科举", "变法", "新政", "新法", "改制", "维新"]
+_SCALE_TACTICAL_KW = ["战役", "之战", "战争", "大战", "交战", "会战", "阵战", "决战"]
+
+
+def _derive_epoch(text: str, default: str) -> str:
+    for epoch, kws in _EPOCH_KW:
+        for kw in kws:
+            if kw in text:
+                return epoch
+    return default
+
+
+def _derive_region(text: str, default: str) -> str:
+    for region, kws in _REGION_KW:
+        for kw in kws:
+            if kw in text:
+                return region
+    return default
+
+
+def _derive_scale_tier(text: str, default: str) -> str:
+    for kw in _SCALE_STRATEGIC_KW:
+        if kw in text:
+            return "strategic"
+    for kw in _SCALE_TACTICAL_KW:
+        if kw in text:
+            return "tactical"
+    return default
+
+
 def _wrap_text(path: str, default_party: str, default_region: str,
-               default_kind: str) -> dict:
-    """把一个 .txt/.md 文件裹成 world spec dict。"""
+               default_kind: str, default_epoch: str = "cross_dynastic") -> dict:
+    """把一个 .txt/.md 文件裹成「富 spec」dict（v0.123 框架自动富化）。
+
+    目标：落库即过闸，无需事后手 patch（北极星②「框架优先、LLM 仅做理解」）。
+    - id 自动加 _llm 后缀（与既有 world-gen 约定一致，省去事后补后缀）；
+    - 启发式从 文件名+正文前段 推导 epoch/region/scale_tier（真实断代交给 LLM 文献理解）；
+    - vocab_pack=auto（每场景自带语境包）；terrain_grid=china_coarse（复用全国网格，
+      避免批量建数百个微小网格；ingest._register_terrain 已做「已存在则跳过」）；
+    - strategic 四维块不在此硬编码——交由 ingest._register_scene 的框架骨架兜底，
+      LLM 文献理解后续补正推导（保持「框架优先、理解后置」分工）。"""
     with open(path, encoding="utf-8") as f:
         text = f.read()
     base = os.path.splitext(os.path.basename(path))[0]
     slug = _slugify(base)
-    # title：首行非空且较短者优先，否则用文件名
-    title = base
+    if not slug.endswith("_llm"):
+        slug = slug + "_llm"
+    # title：从正文稳健提取（框架对真实 wikitext/带注释头的任意文本都稳）
+    #   1) 跳过 `#` 注释行；2) 优先 `# 标题: X` / `标题：X` 约定；
+    #   3) 否则取首条非注释短行（≤40字）；4) 兜底文件名（humanized）。
+    #   （paraphrase_unverified / 来源: 标记行仅作诚实溯源，不污染 title）
+    title = None
     for line in text.splitlines():
-        line = line.strip().lstrip("#").strip()
-        if line:
-            title = line[:40]
+        s = line.strip()
+        if not s:
+            continue
+        if s.startswith("#"):
+            m = re.match(r"^#\s*标题[:：]\s*(.+)$", s)
+            if m:
+                title = m.group(1).strip()
+                break
+            continue
+        if "paraphrase_unverified" in s or s.startswith("来源:"):
+            continue
+        if 0 < len(s) <= 40:
+            title = s
             break
+        break  # 首条正文行过长（如整段正文），放弃用正文，回退文件名
+    if not title:
+        title = base
+    head = base + "\n" + text[:2000]
+    epoch = _derive_epoch(head, default_epoch)
+    region = _derive_region(head, default_region)
+    scale_tier = _derive_scale_tier(head, "operational")
     return {
         "id": slug,
         "title": title,
         "kind": default_kind,
-        "region": default_region,
+        "region": region,
+        "epoch": epoch,
+        "scale_tier": scale_tier,
+        "vocab_pack": "auto",
+        "terrain_grid": "china_coarse",
         "source": {"id": slug, "title": title,
                    "party": default_party, "credibility": None},
         "source_text": text,
@@ -181,7 +279,7 @@ def _collect_specs(args) -> tuple:
                        glob.glob(os.path.join(args.texts_dir, "*.md")))
         for tp in texts:
             spec = _wrap_text(tp, args.default_party, args.default_region,
-                              args.default_kind)
+                              args.default_kind, args.default_epoch)
             key = spec["id"]
             # id 撞名 → 后缀区分
             if key in seen:
@@ -199,7 +297,7 @@ def _collect_specs(args) -> tuple:
         td = tempfile.mkdtemp(prefix="batch_from_text_")
         temp_dirs.append(td)
         spec = _wrap_text(args.from_text, args.default_party, args.default_region,
-                          args.default_kind)
+                          args.default_kind, args.default_epoch)
         key = spec["id"]
         if key in seen:
             key = "%s_%d" % (key, len(seen))
@@ -243,9 +341,11 @@ def main() -> int:
     ap.add_argument("--force", action="store_true",
                     help="忽略已存在的 emit 文件，强制重跑 LLM")
     ap.add_argument("--report", default=None, help="写出 JSON 汇总报告路径")
-    ap.add_argument("--default-party", default="unknown",
-                    help="--texts-dir/--from-text 自动裹 spec 的默认 source.party（按语料设）")
-    ap.add_argument("--default-region", default="liaodong", help="--texts-dir/--from-text 默认 region")
+    ap.add_argument("--default-party", default="后世官修",
+                    help="--texts-dir/--from-text 自动裹 spec 的默认 source.party（按语料设，默认「后世官修」）")
+    ap.add_argument("--default-region", default="liaodong", help="--texts-dir/--from-text 默认 region（启发式可覆盖）")
+    ap.add_argument("--default-epoch", default="cross_dynastic",
+                    help="--texts-dir/--from-text 断代兜底（启发式命中则覆盖，默认 cross_dynastic）")
     ap.add_argument("--default-kind", default="county", help="--texts-dir/--from-text 默认 kind")
     ap.add_argument("--dry-run", action="store_true", help="只打印计划，不调 LLM / 不写库")
     ap.add_argument("--python", default=sys.executable, help="调 ingest.py 的 python 解释器")

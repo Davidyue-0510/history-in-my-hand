@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_chibi_llm_02",
+   "subject": "event:ev_chibi_llm_02",
+   "year": 208,
+   "era": "建安十三年",
+   "title": "赤壁之战",
+   "kind": "战事",
+   "text": "孙刘联军火攻破曹。",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chibi_llm_03",
+   "subject": "event:ev_chibi_llm_03",
+   "year": 208,
+   "era": "建安十三年",
+   "title": "曹军北还",
+   "kind": "战事",
+   "text": "曹操败退江陵，留将守。",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

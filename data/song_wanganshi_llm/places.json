@@ -1,0 +1,77 @@
+{
+ "places": [
+  {
+   "id": "kaifeng",
+   "name": "开封府",
+   "type": "city",
+   "modern": "今中国河南开封",
+   "note": "青苗法试行地",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 114.35,
+   "lat": 34.8,
+   "geo_note": "魏国都城",
+   "geo_match": "strip_suffix"
+  },
+  {
+   "id": "jingdong",
+   "name": "京东路",
+   "type": "region",
+   "modern": "今中国山东等地",
+   "note": "新法推行区域",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jingxi",
+   "name": "京西路",
+   "type": "region",
+   "modern": "今中国河南等地",
+   "note": "新法推行区域",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hebei",
+   "name": "河北路",
+   "type": "region",
+   "modern": "今中国河北等地",
+   "note": "新法推行区域",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "shaanxi",
+   "name": "陕西路",
+   "type": "region",
+   "modern": "今中国陕西等地",
+   "note": "新法推行区域",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

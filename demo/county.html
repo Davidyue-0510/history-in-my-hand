@@ -51,6 +51,14 @@
     </div>
 
     <div class="block" data-fold="open">
+      <div class="block-title foldable">多层地图（古地图 / 政区 / 卫星）</div>
+      <div class="block-body">
+        <div id="mapsCtl" class="lay-list"></div>
+        <div class="hint" style="margin-top:6px">同区域多层地图导入接口（v0.123）。勾选叠加古地图等矢量层；新增层见 data/maps/registry.json。</div>
+      </div>
+    </div>
+
+    <div class="block" data-fold="open">
       <div class="block-title foldable">历史政区界线</div>
       <div class="block-body">
         <label class="lay-list"><input type="checkbox" id="chgisToggle" checked> 叠加 CHGIS 真实政区</label>
@@ -247,6 +255,9 @@
   <script src="control_layer.js"></script>
   <script src="impact_layer.js"></script>
   <script src="battle_layer.js"></script>
+  <!-- v0.123：多层地图导入接口注册表（window.SANDBOX_MAPS） -->
+  <script src="maps/registry.js"></script>
+  <script src="maps/maplayers.js"></script>
   <!-- v0.105：默认地形网格共享懒加载块（浏览器缓存一次，同 gid 全场景共享，去除每切片 1.42MB 冗余） -->
   <script src="terrain/china_coarse.js"></script>
   <script src="county.js"></script>

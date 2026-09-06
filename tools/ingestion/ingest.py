@@ -975,7 +975,17 @@ def _require_real_llm_or_fixture(spec, multi=False):
 
 
 def _register_terrain(spec, scene_dir):
-    """依据 geocoded places 的 lon/lat 注册地形网格（not_fetched，fetch_terrain 异步补全）。"""
+    """依据 geocoded places 的 lon/lat 注册地形网格（not_fetched，fetch_terrain 异步补全）。
+    v0.123：地形网格名 = spec.terrain_grid 或 spec['id']。若目标网格已存在于注册表
+    （如复用 china_coarse），跳过注册直接复用——避免 fetch_terrain.py --new 对已存在网格
+    SystemExit 崩溃，也避免批量 --texts-dir 为每个场景重复建微小网格。"""
+    target = spec.get("terrain_grid") or spec["id"]
+    terrain_reg = os.path.join(ROOT, "data", "terrain", "registry.json")
+    if os.path.exists(terrain_reg):
+        treg = json.load(open(terrain_reg, encoding="utf-8"))
+        if target in (treg.get("grids") or {}):
+            print("[world] 地形网格 %s 已存在，跳过注册（复用）" % target)
+            return
     places = json.load(open(os.path.join(scene_dir, "places.json"), encoding="utf-8")).get("places", [])
     lons = [p["lon"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
     lats = [p["lat"] for p in places if p.get("lon") is not None and p.get("lat") is not None]
@@ -994,7 +1004,7 @@ def _register_terrain(spec, scene_dir):
         print("[world] WORLD_SKIP_TERRAIN=1，地形仅注册元数据、不联网")
     try:
         subprocess.run([sys.executable, os.path.join(ROOT, "tools", "fetch_terrain.py"),
-                        "--new", spec["id"], "--bbox", bbox_str, "--step", "0.1",
+                        "--new", target, "--bbox", bbox_str, "--step", "0.1",
                         "--label", spec.get("title", spec["id"])] + offline,
                        cwd=ROOT, capture_output=True, check=False)
         print("[world] 地形网格 %s 注册（not_fetched）" % spec["id"])
@@ -1002,8 +1012,55 @@ def _register_terrain(spec, scene_dir):
         print("[warn] 地形注册失败: %s" % e)
 
 
+def _default_epoch(spec):
+    """框架默认 epoch：优先 spec 自带；否则按 region 弱提示映射到已注册 epoch；
+    兜底 cross_dynastic（合法 epoch，不阻塞闸门）。真实朝代由 --texts-dir 启发式 /
+    LLM 文献理解补正（北极星②「框架优先、LLM 仅做理解」）。"""
+    if spec.get("epoch"):
+        return spec["epoch"]
+    region = spec.get("region", "")
+    hint = {
+        "liaodong": "ming_qing", "liaobei": "ming_qing",
+        "guangzhong": "qin_han", "huabei": "warring_states",
+        "jiangnan": "song", "guanzhong": "qin_han",
+    }
+    return hint.get(region, "cross_dynastic")
+
+
+def _default_strategic(spec):
+    """框架默认战略四维骨架：合法通过 gate[7] 的占位结构。
+    这是「框架骨架」，note 明确标注待 LLM 文献理解补充推导——框架保证闸门不阻塞，
+    真实维度推导交给 LLM 文献理解（北极星②）。若 spec 自带 strategic 则优先用 spec。"""
+    reg_path = os.path.join(ROOT, "data", "scenes.json")
+    reg = json.load(open(reg_path, encoding="utf-8"))
+    sdim_keys = list((reg.get("strategic_dims") or {}).keys())
+    title = spec.get("title", spec["id"])
+    # 四维 → (from epoch 子表, from_dims 6维id) 的框架级合理默认映射
+    mapping = {
+        "political_cohesion": (["strategic", "doctrine"], [3, 5]),
+        "material_logistics": (["tech", "economy"], [2, 3]),
+        "population_mobilization": (["society"], [4]),
+        "geopolitical_strategy": (["strategic", "international"], [6, 5]),
+    }
+    if not sdim_keys:
+        sdim_keys = list(mapping.keys())
+    strat = {}
+    for dk in sdim_keys:
+        frm, fd = mapping.get(dk, (["strategic"], [5]))
+        strat[dk] = {
+            "from": frm,
+            "from_dims": fd,
+            "layer": "inference",
+            "note": "%s：%s（框架自动骨架，LLM 文献理解待补充推导）" % (title, dk),
+        }
+    return strat
+
+
 def _register_scene(spec, scene_dir):
-    """把场景注册进 data/scenes.json（order + scenes[scene_id]）。"""
+    """把场景注册进 data/scenes.json（order + scenes[scene_id]）。
+    v0.123：写 epoch/scale_tier/strategic/subject_names 等结构字段——这些此前只能靠
+    事后手 patch（北极星②「框架优先」要解决的痛点）。spec 自带则用之，否则落框架骨架，
+    保证 gate[7] 永不阻塞。仅对新场景写条目（spec['id'] 不在 scenes 时），不动既存 177 个。"""
     reg_path = os.path.join(ROOT, "data", "scenes.json")
     with open(reg_path, encoding="utf-8") as f:
         reg = json.load(f)
@@ -1011,6 +1068,10 @@ def _register_scene(spec, scene_dir):
         raw = json.load(open(os.path.join(scene_dir, "events.json"), encoding="utf-8"))
         places = json.load(open(os.path.join(scene_dir, "places.json"), encoding="utf-8")).get("places", [])
         primary = places[0]["id"] if places else spec["id"]
+        epoch = spec.get("epoch") or _default_epoch(spec)
+        scale_tier = spec.get("scale_tier") or "operational"
+        strategic = spec.get("strategic") or _default_strategic(spec)
+        terrain_grid = spec.get("terrain_grid") or spec["id"]
         reg["scenes"][spec["id"]] = {
             "kind": spec.get("kind", "county"),
             "region": spec.get("region", "liaodong"),
@@ -1021,10 +1082,14 @@ def _register_scene(spec, scene_dir):
             "primary_place": primary,
             "dossier_event": raw.get("events", [{}])[0].get("subject", ""),
             "vocab_pack": spec["id"] if spec.get("vocab_pack") == "auto" else spec.get("vocab_pack", "ming_qing"),
-            "terrain_grid": spec["id"],
+            "terrain_grid": terrain_grid,
             "extra_files": ["events", "edges"],
             "lead": spec.get("lead", ""),
             "parties_note": spec.get("parties_note", ""),
+            "subject_names": spec.get("subject_names", {}),
+            "epoch": epoch,
+            "scale_tier": scale_tier,
+            "strategic": strategic,
         }
         reg["order"].append(spec["id"])
         with open(reg_path, "w", encoding="utf-8") as f:
@@ -1063,7 +1128,14 @@ def _assemble_and_register(spec, raw, scene_dir):
     import geocode as GC
     resolved, gaps = GC.geocode_places(places)
     print("[world] geocode: %d 命中 / %d 未命中" % (len(resolved), len(gaps)))
-    _gen_default_control(places, spec, scene_dir)
+    if spec.get("control"):
+        # spec 自带控制权数据（如 LLM 文献理解产出的归属标注）→ 直接用，不覆盖
+        with open(os.path.join(scene_dir, "control.json"), "w", encoding="utf-8") as f:
+            json.dump(spec["control"], f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        print("[world] 使用 spec 自带 control: %d 条" % len(spec["control"].get("control", [])))
+    else:
+        _gen_default_control(places, spec, scene_dir)
     _gen_default_vocab(places, spec, scene_dir)
 
     # sources.json（单源 = [spec.source]；多源 = spec._multi_sources）
@@ -1150,6 +1222,19 @@ def _emit_world(spec, world_dict, scene_dir, out_path, mode):
             "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "mode": mode,
             "sources": sources_meta,
+            # v0.123：结构字段透传——使 --emit 快照可经 --from-json 完整反装配，无需事后手 patch
+            "epoch": spec.get("epoch"),
+            "scale_tier": spec.get("scale_tier"),
+            "strategic": spec.get("strategic"),
+            "vocab_pack": spec.get("vocab_pack"),
+            "terrain_grid": spec.get("terrain_grid"),
+            "control": spec.get("control"),
+            "subtitle": spec.get("subtitle"),
+            "dossier_label": spec.get("dossier_label"),
+            "subject_names": spec.get("subject_names"),
+            "dims": spec.get("dims"),
+            "lead": spec.get("lead"),
+            "parties_note": spec.get("parties_note"),
         },
         "persons": world_dict.get("persons", []),
         "events": world_dict.get("events", []),
@@ -1503,6 +1588,7 @@ def assemble_from_emit(json_path):
     sources = meta.get("sources", [])
 
     # 重建 spec：单源→spec.source，多源→spec._multi_sources + _derived_parties
+    # v0.123：结构字段从 emit meta 透传（向后兼容旧 emit——缺则落 None，_register_scene 用框架骨架兜底）
     spec = {
         "id": scene_id,
         "title": meta.get("title", scene_id),
@@ -1510,6 +1596,18 @@ def assemble_from_emit(json_path):
         "province": meta.get("province") or derive_province(meta.get("region", "liaodong")),
         "kind": meta.get("kind", "county"),
         "source_text": "",
+        "epoch": meta.get("epoch"),
+        "scale_tier": meta.get("scale_tier"),
+        "strategic": meta.get("strategic"),
+        "vocab_pack": meta.get("vocab_pack"),
+        "terrain_grid": meta.get("terrain_grid"),
+        "control": meta.get("control"),
+        "subtitle": meta.get("subtitle"),
+        "dossier_label": meta.get("dossier_label"),
+        "subject_names": meta.get("subject_names"),
+        "dims": meta.get("dims"),
+        "lead": meta.get("lead"),
+        "parties_note": meta.get("parties_note"),
     }
     if len(sources) > 1:
         spec["_multi_sources"] = sources
@@ -1679,6 +1777,18 @@ def extend_from_emit(json_path, new_spec_path, emit_path=None):
         "province": meta.get("province") or derive_province(meta.get("region", "liaodong")),
         "kind": meta.get("kind", "county"),
         "source_text": "",
+        # v0.123：跨会话扩展保留结构字段（从 base emit meta 透传），保证扩展产物可 --from-json 完整反装配
+        "epoch": meta.get("epoch"),
+        "scale_tier": meta.get("scale_tier"),
+        "strategic": meta.get("strategic"),
+        "vocab_pack": meta.get("vocab_pack"),
+        "terrain_grid": meta.get("terrain_grid"),
+        "subtitle": meta.get("subtitle"),
+        "dossier_label": meta.get("dossier_label"),
+        "subject_names": meta.get("subject_names"),
+        "dims": meta.get("dims"),
+        "lead": meta.get("lead"),
+        "parties_note": meta.get("parties_note"),
         "_multi_sources": base_sources + [{
             "id": s.get("id", s.get("title", "")), "title": s.get("title", ""),
             "party": s.get("party", "unknown"), "color": s.get("color", "#8C6239"),

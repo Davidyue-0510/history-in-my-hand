@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "jiangling",
+   "name": "江陵",
+   "type": "city",
+   "modern": "今湖北荆州",
+   "note": "曹仁守",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.24,
+   "lat": 30.33,
+   "geo_note": "张居正故里，今湖北荆州"
+  },
+  {
+   "id": "xiangyang",
+   "name": "襄阳",
+   "type": "city",
+   "modern": "今湖北襄阳",
+   "note": "乐进守",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.12,
+   "lat": 32.01,
+   "geo_note": "今湖北襄阳"
+  },
+  {
+   "id": "wulin",
+   "name": "乌林",
+   "type": "region",
+   "modern": "今湖北洪湖",
+   "note": "曹军屯",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "chibi",
+   "name": "赤壁",
+   "type": "region",
+   "modern": "今湖北赤壁",
+   "note": "对岸",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "fankou",
+   "name": "樊口",
+   "type": "yi",
+   "modern": "今湖北鄂州",
+   "note": "刘备屯",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiangnan",
+   "name": "江南",
+   "type": "region",
+   "modern": "长江以南",
+   "note": "联军据",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -504,6 +504,29 @@ def _write_shared_terrain_chunk(reg, gid):
     print("  ✓ 共享地形块 demo/terrain/%s.js (%.2f MB)" % (gid, len(chunk) / 1024 / 1024))
 
 
+def _write_maps_chunk():
+    """v0.123：多层地图导入接口注册表 → demo/maps/registry.js（window.SANDBOX_MAPS）。
+
+    与地形共享块同构：单一真值 data/maps/registry.json 经 build 注入前端全局，
+    county.js 的 MapLayers 据此叠加古地图/政区/卫星等多层地图到同一区域，
+    无需改前端即可扩展新层（北极星②「同一区域多层地图」预留）。"""
+    import json as _json
+    reg_path = os.path.join(ROOT, "data", "maps", "registry.json")
+    if not os.path.exists(reg_path):
+        return
+    with open(reg_path, encoding="utf-8") as f:
+        reg = _json.load(f)
+    out_dir = os.path.join(ROOT, "demo", "maps")
+    os.makedirs(out_dir, exist_ok=True)
+    chunk = ("window.SANDBOX_MAPS = window.SANDBOX_MAPS || {};\n"
+             "window.SANDBOX_MAPS = %s;\n" % _json.dumps(reg, ensure_ascii=False))
+    with open(os.path.join(out_dir, "registry.js"), "w", encoding="utf-8") as f:
+        f.write(chunk)
+    n = sum(len(v) for v in (reg.get("regions") or {}).values())
+    print("  ✓ 多层地图注册表 demo/maps/registry.js（%d 区域 / %d 层）" % (
+        len(reg.get("regions") or {}), n))
+
+
 def _elev_or_none(terr, lon, lat):
     """在网格 bbox 内才返回双线性插值高程；越界返回 None（绝不 clamp 成边缘假值）。"""
     lo1, la1 = terr.lon0, terr.lat0
@@ -683,6 +706,7 @@ def main():
     # v0.105：默认地形网格抽为共享懒加载块（去除每切片 1.42MB 冗余）。
     # 非默认小网格仍 per-slice 内嵌，不必抽。
     _write_shared_terrain_chunk(reg, default_gid)
+    _write_maps_chunk()
 
     # 萨尔浒行军地形代价（只有带 routes 的切片才有）
     import terrain_model

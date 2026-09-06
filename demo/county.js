@@ -2262,6 +2262,15 @@
         if (st) st.textContent = '加载失败（请通过 http 服务器打开）';
       }
     });
+
+    // v0.123：多层地图导入接口（古地图/政区/卫星）——同一区域叠加，跟随 viewBox 透视。
+    if (window.MapLayers) {
+      window.MapLayers.setup({
+        svg: svg, px: px, py: py,
+        region: META.region || 'liaodong',
+        maps: window.SANDBOX_MAPS || { regions: {} }
+      });
+    }
   }
   // 真实政区边界层（v0.46）：CHGIS 1820 府级界线（府界）+ 府级面拓扑合并的疆域外轮廓（国界）。
   // 替换控制面板原「治所最近邻 Voronoi 示意」。约 2MB，故 setup 只登记、打开图层才 fetch。

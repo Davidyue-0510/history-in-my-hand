@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "SON__p01",
+   "name": "王安石",
+   "role": "参知政事",
+   "note": "主持变法",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p02",
+   "name": "宋神宗",
+   "role": "皇帝",
+   "note": "支持变法",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p03",
+   "name": "司马光",
+   "role": "旧党领袖",
+   "note": "反对新法",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p04",
+   "name": "文彦博",
+   "role": "旧党大臣",
+   "note": "反对新法",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

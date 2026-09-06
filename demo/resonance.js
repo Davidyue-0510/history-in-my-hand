@@ -27,6 +27,7 @@ window.SANDBOX_RESONANCE = {
    "chenqiao",
    "chensheng",
    "chibi",
+   "chibi_llm",
    "chongzhen_han",
    "chongzhen_huangzai",
    "chu_han",
@@ -124,6 +125,7 @@ window.SANDBOX_RESONANCE = {
    "song_chanchuan_llm",
    "song_dangzheng",
    "song_he_jue",
+   "song_wanganshi_llm",
    "song_yancheng_llm",
    "songjin",
    "sui_canal_llm",
@@ -491,6 +493,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:cb_cao",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chibi_llm",
+   "name": "chibi_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chibi_llm_02",
    "best_resonance": 0.0
   },
   {
@@ -2392,6 +2413,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "song_wanganshi_llm",
+   "name": "song_wanganshi_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_song_wanganshi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "song_yancheng_llm",
    "name": "song_yancheng_llm",
    "total": 12,
@@ -2433,15 +2473,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "sui_canal_llm",
    "name": "sui_canal_llm",
-   "total": 13,
+   "total": 12,
    "layers": {
     "inference": 1,
-    "record": 9,
+    "record": 8,
     "scholarship": 2,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 13
+    "后世官修": 12
    },
    "faction_counts": {},
    "event_count": 3,

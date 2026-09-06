@@ -1,17 +1,18 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 177 个切片
+// 权威数据源：data/scenes.json 注册的 179 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 177 个切片",
+  "slice": "multi-scene · 179 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "aomen_portugal_llm",
    "changping_llm",
+   "chibi_llm",
    "chu_han",
    "chuhai_llm",
    "feishui_llm",
@@ -38,6 +39,7 @@ window.SANDBOX_DATA = {
    "san_guo",
    "song",
    "song_chanchuan_llm",
+   "song_wanganshi_llm",
    "song_yancheng_llm",
    "sui_canal_llm",
    "sui_mie_chen_llm",
@@ -482,7 +484,9 @@ window.SANDBOX_DATA = {
   "qing_zhungaer_llm",
   "warring_states_shangyang_llm",
   "han_weihuo_llm",
-  "tang_xuanwumen_llm"
+  "tang_xuanwumen_llm",
+  "chibi_llm",
+  "song_wanganshi_llm"
  ],
  "vocab": {
   "layers": [
@@ -24042,6 +24046,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -24052,10 +24057,10 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 1,
-    "assert": 13,
+    "assert": 12,
     "conflict": 1,
     "gap": 1,
-    "record": 9,
+    "record": 8,
     "scholarship": 2,
     "inference": 1
    }
@@ -24510,6 +24515,69 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "chibi_llm": {
+   "key": "chibi_llm",
+   "scene_id": "chibi_llm",
+   "title": "三国·赤壁之战",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "county",
+   "region": "jiangnan",
+   "page": "county.html?scene=chibi_llm",
+   "primary_place": "jiangling",
+   "vocab_pack": "inline:chibi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "tactical",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 8,
+    "assert": 13,
+    "conflict": 3,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "song_wanganshi_llm": {
+   "key": "song_wanganshi_llm",
+   "scene_id": "song_wanganshi_llm",
+   "title": "宋·王安石变法",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "county",
+   "region": "guangzhong",
+   "page": "county.html?scene=song_wanganshi_llm",
+   "primary_place": "kaifeng",
+   "vocab_pack": "inline:song_wanganshi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -24689,7 +24757,9 @@ window.SANDBOX_DATA = {
   "qing_zhungaer_llm": "slices/qing_zhungaer_llm.js",
   "warring_states_shangyang_llm": "slices/warring_states_shangyang_llm.js",
   "han_weihuo_llm": "slices/han_weihuo_llm.js",
-  "tang_xuanwumen_llm": "slices/tang_xuanwumen_llm.js"
+  "tang_xuanwumen_llm": "slices/tang_xuanwumen_llm.js",
+  "chibi_llm": "slices/chibi_llm.js",
+  "song_wanganshi_llm": "slices/song_wanganshi_llm.js"
  },
  "corridors": [
   {

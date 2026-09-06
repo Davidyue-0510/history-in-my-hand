@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_song_wanganshi_llm_01",
+   "subject": "event:ev_song_wanganshi_llm_01",
+   "year": 1069,
+   "era": "熙宁二年",
+   "title": "王安石拜参知政事",
+   "kind": "行政",
+   "text": "王安石任参知政事，开始变法。",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_wanganshi_llm_02",
+   "subject": "event:ev_song_wanganshi_llm_02",
+   "year": 1069,
+   "era": "熙宁二年",
+   "title": "青苗法试行",
+   "kind": "行政",
+   "text": "青苗法于开封府诸县先行。",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_wanganshi_llm_03",
+   "subject": "event:ev_song_wanganshi_llm_03",
+   "year": 1070,
+   "era": "熙宁三年",
+   "title": "募役法推行",
+   "kind": "行政",
+   "text": "募役法罢差役，改收银绢。",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_wanganshi_llm_04",
+   "subject": "event:ev_song_wanganshi_llm_04",
+   "year": 1070,
+   "era": "熙宁三年",
+   "title": "保甲法实施",
+   "kind": "行政",
+   "text": "保甲法编民为保，农闲教战。",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_wanganshi_llm_05",
+   "subject": "event:ev_song_wanganshi_llm_05",
+   "year": 1076,
+   "era": "熙宁九年",
+   "title": "王安石罢相",
+   "kind": "行政",
+   "text": "王安石罢相，新法渐弛。",
+   "_source_idx": 0,
+   "_source_name": "宋·王安石变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

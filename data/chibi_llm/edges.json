@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "jiangling",
+   "to": "chibi",
+   "type": "military",
+   "label": "曹军南下",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "fankou",
+   "to": "chibi",
+   "type": "military",
+   "label": "刘备会合",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "chibi",
+   "to": "jiangling",
+   "type": "retreat",
+   "label": "曹操败退",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

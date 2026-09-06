@@ -4,9 +4,9 @@
    "from": "luoyang",
    "to": "banzhu",
    "type": "military",
-   "label": "通济渠西段",
+   "label": "通济渠段",
    "_source_idx": 0,
-   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null
   },
@@ -14,9 +14,9 @@
    "from": "banzhu",
    "to": "zhuojun",
    "type": "military",
-   "label": "永济渠",
+   "label": "通济渠接永济渠",
    "_source_idx": 0,
-   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null
   },
@@ -24,9 +24,9 @@
    "from": "jingkou",
    "to": "yuhang",
    "type": "military",
-   "label": "江南河",
+   "label": "江南河段",
    "_source_idx": 0,
-   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null
   }

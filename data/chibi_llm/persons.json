@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "CHI__p01",
+   "name": "曹操",
+   "role": "汉丞相",
+   "note": "率军南下",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p02",
+   "name": "周瑜",
+   "role": "左都督",
+   "note": "联军统帅",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p03",
+   "name": "刘备",
+   "role": "左将军",
+   "note": "屯樊口",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p04",
+   "name": "孙权",
+   "role": "吴侯",
+   "note": "联军首领",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p05",
+   "name": "黄盖",
+   "role": "吴将",
+   "note": "献火攻策",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p06",
+   "name": "程普",
+   "role": "副都督",
+   "note": "副周瑜",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p07",
+   "name": "曹仁",
+   "role": "魏将",
+   "note": "守江陵",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHI__p08",
+   "name": "乐进",
+   "role": "魏将",
+   "note": "守襄阳",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
