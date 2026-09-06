@@ -372,7 +372,15 @@
   "song_yancheng_llm",
   "yuan_xingsheng_llm",
   "ming_zhenghe_llm",
-  "qing_yakesa_llm"
+  "qing_yakesa_llm",
+  "qin_fenshu_llm",
+  "tang_huangchao_llm",
+  "song_chanchuan_llm",
+  "ming_tumu_llm",
+  "qing_zhungaer_llm",
+  "warring_states_shangyang_llm",
+  "han_weihuo_llm",
+  "tang_xuanwumen_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -14309,6 +14317,711 @@
      ],
      "layer": "inference",
      "note": "遏制沙俄南侵，尼布楚条约定东段边界"
+    }
+   }
+  },
+  "qin_fenshu_llm": {
+   "kind": "thought",
+   "scale_tier": "strategic",
+   "region": "guangzhong",
+   "province": null,
+   "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
+   "dossier_label": "秦·焚书坑儒（LLM 抽取落库）",
+   "subtitle": "中央集权对思想多元的清洗",
+   "primary_place": null,
+   "dossier_event": "ev_qin_fenshu_01",
+   "vocab_pack": "qin_fenshu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events"
+   ],
+   "lead": "始皇兼并六国后，以焚书坑儒统一思想口径，为帝国法家秩序扫清异论。",
+   "parties_note": "叙事方=秦廷（法家主导）；来源=后世官修（基于《史记·秦始皇本纪》现代概述）。",
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:QIN__p01": "秦始皇",
+    "person:QIN__p02": "李斯",
+    "person:QIN__p03": "侯生",
+    "person:QIN__p04": "卢生",
+    "event:ev_qin_fenshu_01": "焚书令",
+    "event:ev_qin_fenshu_02": "坑儒",
+    "place:xianyang": "咸阳"
+   },
+   "epoch": "qin",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "焚书以法家口径统一舆论，朝堂思想凝聚力高度集中于皇权"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "郡县制与书同文支撑政令直达"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "编户齐民与连坐制最大化社会控制"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "统一文字度量衡，降低治理地缘摩擦"
+    }
+   }
+  },
+  "tang_huangchao_llm": {
+   "kind": "uprising",
+   "scale_tier": "strategic",
+   "region": "tang",
+   "province": null,
+   "title": "唐·黄巢起义（LLM 抽取·人工校订）",
+   "dossier_label": "唐·黄巢起义（LLM 抽取落库）",
+   "subtitle": "晚唐藩镇乱局中的草根颠覆",
+   "primary_place": null,
+   "dossier_event": "ev_tang_huangchao_01",
+   "vocab_pack": "tang_huangchao_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "黄巢之乱横扫大半唐土，攻破两京，彻底暴露晚唐中央动员能力的崩解。",
+   "parties_note": "叙事方=唐廷/大齐（黄巢）；来源=后世官修（基于《旧唐书》《新唐书》现代概述）。",
+   "dims": [
+    4,
+    6
+   ],
+   "subject_names": {
+    "person:TAN__p01": "黄巢",
+    "person:TAN__p02": "王仙芝",
+    "person:TAN__p03": "唐僖宗",
+    "person:TAN__p04": "李克用",
+    "event:ev_tang_huangchao_01": "黄巢起兵",
+    "event:ev_tang_huangchao_02": "王仙芝败死",
+    "event:ev_tang_huangchao_03": "克长安称帝",
+    "event:ev_tang_huangchao_04": "撤出长安",
+    "event:ev_tang_huangchao_05": "败死狼虎谷",
+    "place:yuanqu": "冤句",
+    "place:guangzhou": "广州",
+    "place:changan": "长安",
+    "place:shu": "蜀",
+    "place:langhugu": "狼虎谷"
+   },
+   "epoch": "tang",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "晚唐藩镇割据、中央号令不出长安，凝聚力涣散"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "漕运与江淮财赋是唐廷续命命脉"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "流民与新军构成起义兵员基础"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "藩镇分权使黄巢流动作战无正面强敌"
+    }
+   }
+  },
+  "song_chanchuan_llm": {
+   "kind": "exchange",
+   "scale_tier": "strategic",
+   "region": "song",
+   "province": null,
+   "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
+   "dossier_label": "宋·澶渊之盟（LLM 抽取落库）",
+   "subtitle": "宋辽百年和平的条约基线",
+   "primary_place": null,
+   "dossier_event": "ev_song_chanchuan_01",
+   "vocab_pack": "song_chanchuan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "澶渊之盟以岁币换和平，奠定宋辽百余年无大战的均势。",
+   "parties_note": "叙事方=宋廷/辽廷；来源=后世官修（基于《宋史》《续资治通鉴》现代概述）。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:SON__p01": "萧太后",
+    "person:SON__p02": "辽圣宗",
+    "person:SON__p03": "宋真宗",
+    "person:SON__p04": "寇准",
+    "person:SON__p05": "萧挞凛",
+    "event:ev_song_chanchuan_01": "辽军南侵",
+    "event:ev_song_chanchuan_02": "澶州对峙",
+    "event:ev_song_chanchuan_03": "澶渊之盟",
+    "place:chanzhou": "澶州",
+    "place:kaifeng": "开封"
+   },
+   "epoch": "song",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "宋初篡立疑虑重，崇文抑武巩固内部"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汴梁漕运与河北军需决定前线耐力"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "河北乡兵与禁军是谈判筹码"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "辽骑机动+幽云地缘使宋转守为攻难"
+    }
+   }
+  },
+  "ming_tumu_llm": {
+   "kind": "battle",
+   "scale_tier": "operational",
+   "region": "huabei",
+   "province": null,
+   "title": "明·土木堡之变（LLM 抽取·人工校订）",
+   "dossier_label": "明·土木堡之变（LLM 抽取落库）",
+   "subtitle": "亲征溃败与英宗北狩",
+   "primary_place": null,
+   "dossier_event": "ev_ming_tumu_02",
+   "vocab_pack": "ming_tumu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "土木堡之变使明军精锐丧尽、御驾被俘，北京保卫战成为国运转折点。",
+   "parties_note": "叙事方=明廷/瓦剌；来源=后世官修（基于《明史》现代概述）。",
+   "dims": [
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:MIN__p01": "明英宗",
+    "person:MIN__p02": "王振",
+    "person:MIN__p03": "也先",
+    "person:MIN__p04": "于谦",
+    "person:MIN__p05": "郕王",
+    "event:ev_ming_tumu_02": "英宗亲征",
+    "event:ev_ming_tumu_03": "土木堡之变",
+    "event:ev_ming_tumu_04": "景泰帝立",
+    "place:datong": "大同",
+    "place:juyongguan": "居庸关",
+    "place:tumu": "土木堡"
+   },
+   "epoch": "ming",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "王振乱政、文官—宦官失衡致决策失灵"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "五十万大军后勤脱节、饮水被断"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "京营腐化、边军调度失灵"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "瓦剌控漠南通道、土木堡处补给死地"
+    }
+   }
+  },
+  "qing_zhungaer_llm": {
+   "kind": "frontier",
+   "scale_tier": "strategic",
+   "region": "xibei",
+   "province": null,
+   "title": "清·平定准噶尔（LLM 抽取·人工校订）",
+   "dossier_label": "清·平定准噶尔（LLM 抽取落库）",
+   "subtitle": "西域纳入版图的最后一块",
+   "primary_place": null,
+   "dossier_event": "ev_qing_zhungaer_01",
+   "vocab_pack": "qing_zhungaer_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "历时近七十年的准噶尔之役，将天山南北正式纳入清帝国直接治理。",
+   "parties_note": "叙事方=清廷/准噶尔部；来源=后世官修（基于《清史稿》现代概述）。",
+   "dims": [
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:QIN__p01": "噶尔丹",
+    "person:QIN__p02": "康熙帝",
+    "person:QIN__p03": "雍正帝",
+    "person:QIN__p04": "乾隆帝",
+    "person:QIN__p05": "达瓦齐",
+    "person:QIN__p06": "阿睦尔撒纳",
+    "event:ev_qing_zhungaer_01": "乌兰布通之战",
+    "event:ev_qing_zhungaer_02": "康熙三征噶尔丹",
+    "event:ev_qing_zhungaer_03": "清军出伊犁",
+    "event:ev_qing_zhungaer_04": "再定准部",
+    "event:ev_qing_zhungaer_05": "设伊犁将军",
+    "place:tianshan": "天山",
+    "place:moxi": "漠西",
+    "place:wulanbutong": "乌兰布通",
+    "place:hebotong": "和通泊",
+    "place:guangxiansi": "光显寺",
+    "place:yili": "伊犁"
+   },
+   "epoch": "qing",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "准部汗权—贵族博弈削弱内部凝聚力"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "漠西牧场与西域粮饷支撑长期对抗"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "八旗+绿营+蒙古盟旗多源动员"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "控天山北麓=扼西域陆枢，地缘决胜"
+    }
+   }
+  },
+  "warring_states_shangyang_llm": {
+   "kind": "reform",
+   "scale_tier": "strategic",
+   "region": "guangzhong",
+   "province": null,
+   "title": "战国·商鞅变法（LLM 抽取·人工校订）",
+   "dossier_label": "战国·商鞅变法（LLM 抽取落库）",
+   "subtitle": "秦富强的制度底座",
+   "primary_place": null,
+   "dossier_event": "ev_warring_states_shangyang_01",
+   "vocab_pack": "warring_states_shangyang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events"
+   ],
+   "lead": "商鞅变法以军功爵制与县制重构秦的国家能力，是战国国力竞赛的胜负手。",
+   "parties_note": "叙事方=秦廷（商鞅）；来源=后世官修（基于《史记·商君列传》现代概述）。",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:WAR__p01": "商鞅",
+    "person:WAR__p02": "秦孝公",
+    "event:ev_warring_states_shangyang_01": "商鞅变法开始",
+    "event:ev_warring_states_shangyang_02": "迁都咸阳",
+    "place:xianyang": "咸阳"
+   },
+   "epoch": "warring_states",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "军功爵制把贵族—平民绑上国家战车"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "废井田开阡陌释放农耕产能"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "什伍连坐把人口变成可征发的单元"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "县制+集权使秦成战争机器"
+    }
+   }
+  },
+  "han_weihuo_llm": {
+   "kind": "frontier",
+   "scale_tier": "strategic",
+   "region": "xibei",
+   "province": null,
+   "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
+   "dossier_label": "汉·卫青霍去病北伐匈奴（LLM 抽取落库）",
+   "subtitle": "漠南无王庭的转身",
+   "primary_place": null,
+   "dossier_event": "ev_han_weihuo_01",
+   "vocab_pack": "han_weihuo_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "卫霍北伐打通河西、压匈奴于漠北，奠定汉帝国在北疆的战略主动权。",
+   "parties_note": "叙事方=汉廷；来源=后世官修（基于《史记·卫将军骠骑列传》现代概述）。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:HAN__p01": "卫青",
+    "person:HAN__p02": "霍去病",
+    "person:HAN__p03": "浑邪王",
+    "event:ev_han_weihuo_01": "河南之战",
+    "event:ev_han_weihuo_02": "河西之战",
+    "event:ev_han_weihuo_03": "漠北之战",
+    "place:yunzhong": "云中",
+    "place:henan": "河南地",
+    "place:shuofang": "朔方郡",
+    "place:longxi": "陇西",
+    "place:yanzhi": "焉支山",
+    "place:qilian": "祁连山",
+    "place:hexi": "河西走廊",
+    "place:wuwei": "武威",
+    "place:jiuquan": "酒泉",
+    "place:zhangye": "张掖",
+    "place:dunhuang": "敦煌",
+    "place:tuyan": "窴颜山",
+    "place:langjuxu": "狼居胥山"
+   },
+   "epoch": "han",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "推恩削藩后中央对诸侯碾压性优势"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "河西屯田+中原粮援支撑远程出击"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "归义降众与郡国兵扩充边军"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "断匈奴右臂=锁河西走廊陆桥"
+    }
+   }
+  },
+  "tang_xuanwumen_llm": {
+   "kind": "court",
+   "scale_tier": "operational",
+   "region": "tang",
+   "province": null,
+   "title": "唐·玄武门之变（LLM 抽取·人工校订）",
+   "dossier_label": "唐·玄武门之变（LLM 抽取落库）",
+   "subtitle": "夺嫡与贞观前夜",
+   "primary_place": null,
+   "dossier_event": "ev_tang_xuanwumen_01",
+   "vocab_pack": "tang_xuanwumen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "玄武门之变以一种房流血方式完成最高权力交接，秦王一系由此主控朝堂。",
+   "parties_note": "叙事方=秦王府/东宫；来源=后世官修（基于《旧唐书·太宗本纪》现代概述）。",
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:TAN__p01": "李世民",
+    "person:TAN__p02": "李建成",
+    "person:TAN__p03": "李元吉",
+    "person:TAN__p04": "李渊",
+    "event:ev_tang_xuanwumen_01": "玄武门之变",
+    "event:ev_tang_xuanwumen_03": "高祖传位",
+    "place:changan": "长安",
+    "place:xuanwumen": "玄武门"
+   },
+   "epoch": "tang",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "秦王府私兵+元勋支持对抗东宫"
+    },
+    "material_logistics": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "玄武门处宫城咽喉、控禁军调发"
+    },
+    "population_mobilization": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "关中旧部与府兵站队决定胜负"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "strategic"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "长安宫城几何即权力中枢"
     }
    }
   }

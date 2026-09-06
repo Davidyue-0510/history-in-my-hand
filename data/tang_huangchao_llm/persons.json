@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "黄巢",
+   "role": "起义军首领",
+   "note": "盐商出身，后称帝建大齐",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p02",
+   "name": "王仙芝",
+   "role": "起义军首领",
+   "note": "黄巢早期盟友，878年败死",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p03",
+   "name": "唐僖宗",
+   "role": "唐朝皇帝",
+   "note": "880年奔蜀",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p04",
+   "name": "李克用",
+   "role": "沙陀将领",
+   "note": "883年入援长安",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

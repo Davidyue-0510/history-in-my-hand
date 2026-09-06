@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_qing_zhungaer_01",
+   "subject": "event:ev_qing_zhungaer_01",
+   "year": 1690,
+   "era": "康熙二十九年",
+   "title": "乌兰布通之战",
+   "kind": "战事",
+   "text": "清军击退噶尔丹南侵",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_zhungaer_02",
+   "subject": "event:ev_qing_zhungaer_02",
+   "year": 1697,
+   "era": "康熙三十六年",
+   "title": "康熙三征噶尔丹",
+   "kind": "战事",
+   "text": "噶尔丹败死",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_zhungaer_03",
+   "subject": "event:ev_qing_zhungaer_03",
+   "year": 1755,
+   "era": "乾隆二十年",
+   "title": "清军出伊犁",
+   "kind": "战事",
+   "text": "俘达瓦齐",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_zhungaer_04",
+   "subject": "event:ev_qing_zhungaer_04",
+   "year": 1757,
+   "era": "乾隆二十二年",
+   "title": "再定准部",
+   "kind": "战事",
+   "text": "平定阿睦尔撒纳叛乱",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_zhungaer_05",
+   "subject": "event:ev_qing_zhungaer_05",
+   "year": 1762,
+   "era": "乾隆二十七年",
+   "title": "设伊犁将军",
+   "kind": "行政",
+   "text": "统辖西域",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

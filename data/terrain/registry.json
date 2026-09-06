@@ -272,6 +272,104 @@
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "qin_fenshu": {
+      "label": "秦·焚书坑儒",
+      "file": "qin_fenshu_grid.json",
+      "bbox": [
+        108.2,
+        33.83,
+        109.2,
+        34.83
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "tang_huangchao": {
+      "label": "唐·黄巢起义",
+      "file": "tang_huangchao_grid.json",
+      "bbox": [
+        108.45,
+        22.63,
+        115.9,
+        35.7
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "song_chanchuan": {
+      "label": "宋·澶渊之盟",
+      "file": "song_chanchuan_grid.json",
+      "bbox": [
+        113.85,
+        34.3,
+        114.85,
+        35.3
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "ming_tumu": {
+      "label": "明·土木堡之变",
+      "file": "ming_tumu_grid.json",
+      "bbox": [
+        112.8,
+        39.58,
+        113.8,
+        40.58
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "warring_states_shangyang": {
+      "label": "战国·商鞅变法",
+      "file": "warring_states_shangyang_grid.json",
+      "bbox": [
+        108.2,
+        33.83,
+        109.2,
+        34.83
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "han_weihuo": {
+      "label": "汉·卫青霍去病北伐匈奴",
+      "file": "han_weihuo_grid.json",
+      "bbox": [
+        102.13,
+        34.86,
+        104.35,
+        38.43
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "tang_xuanwumen": {
+      "label": "唐·玄武门之变",
+      "file": "tang_xuanwumen_grid.json",
+      "bbox": [
+        108.45,
+        33.77,
+        109.45,
+        34.77
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

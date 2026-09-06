@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "xianyang",
+   "name": "咸阳",
+   "type": "city",
+   "modern": "今中国陕西咸阳",
+   "note": "秦都，坑儒发生地",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.7,
+   "lat": 34.33,
+   "geo_note": "秦都"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

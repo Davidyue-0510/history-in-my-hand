@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "WAR__p01",
+   "name": "商鞅",
+   "role": "左庶长",
+   "note": "主持变法",
+   "_source_idx": 0,
+   "_source_name": "战国·商鞅变法（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAR__p02",
+   "name": "秦孝公",
+   "role": "秦国国君",
+   "note": "任用商鞅",
+   "_source_idx": 0,
+   "_source_name": "战国·商鞅变法（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 169 个切片
+// 权威数据源：data/scenes.json 注册的 177 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 169 个切片",
+  "slice": "multi-scene · 177 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -20,26 +20,34 @@ window.SANDBOX_DATA = {
    "guizhou_yelang_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
+   "han_weihuo_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
    "jilin_gaogouli_llm",
    "ming_qing",
+   "ming_tumu_llm",
    "ming_zhenghe_llm",
    "nanzhao_dali_llm",
+   "qin_fenshu_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
    "qing_yakesa_llm",
+   "qing_zhungaer_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
    "song",
+   "song_chanchuan_llm",
    "song_yancheng_llm",
    "sui_canal_llm",
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "tang",
    "tang_anshi_llm",
+   "tang_huangchao_llm",
+   "tang_xuanwumen_llm",
    "three_campaigns",
+   "warring_states_shangyang_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
    "yuan_xingsheng_llm",
@@ -466,7 +474,15 @@ window.SANDBOX_DATA = {
   "song_yancheng_llm",
   "yuan_xingsheng_llm",
   "ming_zhenghe_llm",
-  "qing_yakesa_llm"
+  "qing_yakesa_llm",
+  "qin_fenshu_llm",
+  "tang_huangchao_llm",
+  "song_chanchuan_llm",
+  "ming_tumu_llm",
+  "qing_zhungaer_llm",
+  "warring_states_shangyang_llm",
+  "han_weihuo_llm",
+  "tang_xuanwumen_llm"
  ],
  "vocab": {
   "layers": [
@@ -24238,6 +24254,262 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "qin_fenshu_llm": {
+   "key": "qin_fenshu_llm",
+   "scene_id": "qin_fenshu_llm",
+   "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
+   "dossier_label": "秦·焚书坑儒（LLM 抽取落库）",
+   "subtitle": "中央集权对思想多元的清洗",
+   "kind": "thought",
+   "region": "guangzhong",
+   "page": "county.html?scene=qin_fenshu_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:qin_fenshu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 4,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "tang_huangchao_llm": {
+   "key": "tang_huangchao_llm",
+   "scene_id": "tang_huangchao_llm",
+   "title": "唐·黄巢起义（LLM 抽取·人工校订）",
+   "dossier_label": "唐·黄巢起义（LLM 抽取落库）",
+   "subtitle": "晚唐藩镇乱局中的草根颠覆",
+   "kind": "uprising",
+   "region": "tang",
+   "page": "county.html?scene=tang_huangchao_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:tang_huangchao_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    4,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "song_chanchuan_llm": {
+   "key": "song_chanchuan_llm",
+   "scene_id": "song_chanchuan_llm",
+   "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
+   "dossier_label": "宋·澶渊之盟（LLM 抽取落库）",
+   "subtitle": "宋辽百年和平的条约基线",
+   "kind": "exchange",
+   "region": "song",
+   "page": "county.html?scene=song_chanchuan_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:song_chanchuan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 5,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 2,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "ming_tumu_llm": {
+   "key": "ming_tumu_llm",
+   "scene_id": "ming_tumu_llm",
+   "title": "明·土木堡之变（LLM 抽取·人工校订）",
+   "dossier_label": "明·土木堡之变（LLM 抽取落库）",
+   "subtitle": "亲征溃败与英宗北狩",
+   "kind": "battle",
+   "region": "huabei",
+   "page": "ming_tumu_llm.html",
+   "primary_place": null,
+   "vocab_pack": "inline:ming_tumu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 5,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "qing_zhungaer_llm": {
+   "key": "qing_zhungaer_llm",
+   "scene_id": "qing_zhungaer_llm",
+   "title": "清·平定准噶尔（LLM 抽取·人工校订）",
+   "dossier_label": "清·平定准噶尔（LLM 抽取落库）",
+   "subtitle": "西域纳入版图的最后一块",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=qing_zhungaer_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:qing_zhungaer_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 6,
+    "assert": 14,
+    "conflict": 3,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "warring_states_shangyang_llm": {
+   "key": "warring_states_shangyang_llm",
+   "scene_id": "warring_states_shangyang_llm",
+   "title": "战国·商鞅变法（LLM 抽取·人工校订）",
+   "dossier_label": "战国·商鞅变法（LLM 抽取落库）",
+   "subtitle": "秦富强的制度底座",
+   "kind": "reform",
+   "region": "guangzhong",
+   "page": "county.html?scene=warring_states_shangyang_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:warring_states_shangyang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 14,
+    "conflict": 2,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "han_weihuo_llm": {
+   "key": "han_weihuo_llm",
+   "scene_id": "han_weihuo_llm",
+   "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
+   "dossier_label": "汉·卫青霍去病北伐匈奴（LLM 抽取落库）",
+   "subtitle": "漠南无王庭的转身",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=han_weihuo_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:han_weihuo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 13,
+    "person": 3,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 2,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "tang_xuanwumen_llm": {
+   "key": "tang_xuanwumen_llm",
+   "scene_id": "tang_xuanwumen_llm",
+   "title": "唐·玄武门之变（LLM 抽取·人工校订）",
+   "dossier_label": "唐·玄武门之变（LLM 抽取落库）",
+   "subtitle": "夺嫡与贞观前夜",
+   "kind": "court",
+   "region": "tang",
+   "page": "county.html?scene=tang_xuanwumen_llm",
+   "primary_place": null,
+   "vocab_pack": "inline:tang_xuanwumen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 4,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -24409,7 +24681,15 @@ window.SANDBOX_DATA = {
   "song_yancheng_llm": "slices/song_yancheng_llm.js",
   "yuan_xingsheng_llm": "slices/yuan_xingsheng_llm.js",
   "ming_zhenghe_llm": "slices/ming_zhenghe_llm.js",
-  "qing_yakesa_llm": "slices/qing_yakesa_llm.js"
+  "qing_yakesa_llm": "slices/qing_yakesa_llm.js",
+  "qin_fenshu_llm": "slices/qin_fenshu_llm.js",
+  "tang_huangchao_llm": "slices/tang_huangchao_llm.js",
+  "song_chanchuan_llm": "slices/song_chanchuan_llm.js",
+  "ming_tumu_llm": "slices/ming_tumu_llm.js",
+  "qing_zhungaer_llm": "slices/qing_zhungaer_llm.js",
+  "warring_states_shangyang_llm": "slices/warring_states_shangyang_llm.js",
+  "han_weihuo_llm": "slices/han_weihuo_llm.js",
+  "tang_xuanwumen_llm": "slices/tang_xuanwumen_llm.js"
  },
  "corridors": [
   {

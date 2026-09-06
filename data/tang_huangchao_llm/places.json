@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "yuanqu",
+   "name": "冤句",
+   "type": "yi",
+   "modern": "今中国山东省菏泽市",
+   "note": "黄巢起兵地",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 115.4,
+   "lat": 35.2,
+   "geo_note": "黄巢故里，曹州冤句，今山东菏泽"
+  },
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "type": "city",
+   "modern": "今中国广东省广州市",
+   "note": "878年克广州",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.26,
+   "lat": 23.13,
+   "geo_note": "康有为故里，今广东广州"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "type": "city",
+   "modern": "今中国陕西省西安市",
+   "note": "唐朝都城，880年陷落",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.95,
+   "lat": 34.27,
+   "geo_note": "唐都，今西安"
+  },
+  {
+   "id": "shu",
+   "name": "蜀",
+   "type": "region",
+   "modern": "今中国四川省",
+   "note": "僖宗奔蜀",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "langhugu",
+   "name": "狼虎谷",
+   "type": "region",
+   "modern": "今中国山东省泰安市",
+   "note": "黄巢败死地",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

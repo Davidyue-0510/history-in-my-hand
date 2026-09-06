@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "kaifeng",
+   "to": "chanzhou",
+   "type": "military",
+   "label": "宋真宗亲征路线",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

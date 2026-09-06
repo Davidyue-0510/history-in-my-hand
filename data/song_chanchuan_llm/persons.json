@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SON__p01",
+   "name": "萧太后",
+   "role": "辽太后",
+   "note": "辽圣宗之母，亲率大军南征",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p02",
+   "name": "辽圣宗",
+   "role": "辽帝",
+   "note": "与萧太后同征，后与宋盟",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p03",
+   "name": "宋真宗",
+   "role": "宋帝",
+   "note": "渡河亲征，定盟约",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p04",
+   "name": "寇准",
+   "role": "宋宰相",
+   "note": "力请真宗亲征",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p05",
+   "name": "萧挞凛",
+   "role": "辽大将",
+   "note": "被宋军弩射杀",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

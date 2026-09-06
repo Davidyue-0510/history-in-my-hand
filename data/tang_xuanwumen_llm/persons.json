@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "李世民",
+   "role": "秦王，后为太子、太宗",
+   "note": "玄武门之变主谋，射杀建成、元吉",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p02",
+   "name": "李建成",
+   "role": "太子",
+   "note": "被李世民射杀于玄武门",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p03",
+   "name": "李元吉",
+   "role": "齐王",
+   "note": "与建成一同被杀",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p04",
+   "name": "李渊",
+   "role": "高祖皇帝",
+   "note": "事变后立世民为太子，八月传位",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

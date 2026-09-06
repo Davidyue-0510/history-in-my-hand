@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_song_chanchuan_01",
+   "subject": "event:ev_song_chanchuan_01",
+   "year": 1004,
+   "era": "宋景德元年秋",
+   "title": "辽军南侵",
+   "kind": "战事",
+   "text": "辽萧太后与圣宗率军南下",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_chanchuan_02",
+   "subject": "event:ev_song_chanchuan_02",
+   "year": 1004,
+   "era": "宋景德元年十一月",
+   "title": "澶州对峙",
+   "kind": "战事",
+   "text": "辽军抵澶州，宋真宗亲征",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_song_chanchuan_03",
+   "subject": "event:ev_song_chanchuan_03",
+   "year": 1004,
+   "era": "宋景德元年十二月",
+   "title": "澶渊之盟",
+   "kind": "外交",
+   "text": "宋辽约为兄弟，宋岁遗银绢",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

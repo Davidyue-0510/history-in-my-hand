@@ -1137,6 +1137,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "HAN_013",
+   "scene": "han_weihuo_llm",
+   "subject": "event:ev_han_weihuo_01",
+   "title": "卫青兵力未详，但规模可观",
+   "missing": "军事史 / 文献考据",
+   "where": "汉书·卫青霍去病传",
+   "skills": [
+    "军事史",
+    "文献考据"
+   ],
+   "accept": "查卫青出征兵力记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HAN_014",
+   "scene": "han_weihuo_llm",
+   "subject": "event:ev_han_weihuo_02",
+   "title": "霍去病兵力未详，但两出陇西",
+   "missing": "军事史 / 文献考据",
+   "where": "史记·卫将军骠骑列传",
+   "skills": [
+    "军事史",
+    "文献考据"
+   ],
+   "accept": "查霍去病出征兵力记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "GAP_EXPAND",
    "scene": "heshangyuan",
    "subject": "event:hs_jz",
@@ -2148,6 +2180,21 @@ window.SANDBOX_LEADS = {
   },
   {
    "id": "MIN_012",
+   "scene": "ming_tumu_llm",
+   "subject": "event:ev_ming_tumu_03",
+   "title": "瓦剌兵力不详",
+   "missing": "蒙古史",
+   "where": "瓦剌方记载",
+   "skills": [
+    "蒙古史"
+   ],
+   "accept": "瓦剌兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "MIN_012",
    "scene": "ming_zhenghe_llm",
    "subject": "event:ev_ming_zhenghe_llm_02",
    "title": "实际次数存疑",
@@ -2557,6 +2604,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "QIN_012",
+   "scene": "qin_fenshu_llm",
+   "subject": "event:ev_qin_fenshu_02",
+   "title": "或云四百六十余人，或云七百余人",
+   "missing": "文献考据",
+   "where": "咸阳",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "QIN_013",
    "scene": "qin_mie_liu_guo",
    "subject": "event:ev_qin_mie_liu_guo_03",
@@ -2667,6 +2729,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "QIN_010",
+   "scene": "qing_zhungaer_llm",
+   "subject": "event:ev_qing_zhungaer_01",
+   "title": "清军损失不详",
+   "missing": "清代战争档案",
+   "where": "乌兰布通战场",
+   "skills": [
+    "清代战争档案"
+   ],
+   "accept": "清军伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "QINGG4",
@@ -2990,6 +3067,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
+   "id": "SON_013",
+   "scene": "song_chanchuan_llm",
+   "subject": "event:ev_song_chanchuan_03",
+   "title": "岁币对宋财政影响未详",
+   "missing": "经济史 / 财政档案分析",
+   "where": "宋辽双方财政记录",
+   "skills": [
+    "经济史",
+    "财政档案分析"
+   ],
+   "accept": "岁币对宋财政的实际负担程度",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SON_014",
+   "scene": "song_chanchuan_llm",
+   "subject": "event:ev_song_chanchuan_03",
+   "title": "百年和平是否因盟约存疑",
+   "missing": "国际关系史 / 长时段分析",
+   "where": "宋辽百年关系史",
+   "skills": [
+    "国际关系史",
+    "长时段分析"
+   ],
+   "accept": "盟约与和平的因果关系",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "LS_GAP1",
    "scene": "song_dangzheng",
    "subject": "event:ls_1086",
@@ -3260,6 +3369,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "TAN_016",
+   "scene": "tang_huangchao_llm",
+   "subject": "event:ev_tang_huangchao_03",
+   "title": "兵力不详",
+   "missing": "军事史",
+   "where": "长安",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "黄巢入长安兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "TAN_011",
+   "scene": "tang_xuanwumen_llm",
+   "subject": "event:ev_tang_xuanwumen_01",
+   "title": "具体伏兵人数不详",
+   "missing": "史料考据 / 军事史",
+   "where": "两唐书、资治通鉴",
+   "skills": [
+    "史料考据",
+    "军事史"
+   ],
+   "accept": "补充伏兵规模与部署",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "THR_009",
    "scene": "three_campaigns",
    "subject": "event:ev_three_campaigns_01",
@@ -3384,6 +3524,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "WAR_014",
+   "scene": "warring_states_shangyang_llm",
+   "subject": "event:ev_warring_states_shangyang_01",
+   "title": "商鞅变法是否过于激进？",
+   "missing": "政治史 / 制度史",
+   "where": "秦国朝堂",
+   "skills": [
+    "政治史",
+    "制度史"
+   ],
+   "accept": "寻找反对变法的记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "WENCHENGG01",

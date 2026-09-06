@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "tianshan",
+   "name": "天山",
+   "type": "region",
+   "modern": "今中国新疆",
+   "note": "准噶尔部雄踞之地",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "moxi",
+   "name": "漠西",
+   "type": "region",
+   "modern": "今中国新疆北部",
+   "note": "准噶尔部活动区域",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "wulanbutong",
+   "name": "乌兰布通",
+   "type": "fortress",
+   "modern": "今中国内蒙古赤峰",
+   "note": "1690年战役地点",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hebotong",
+   "name": "和通泊",
+   "type": "fortress",
+   "modern": "今中国新疆",
+   "note": "雍正时战场",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guangxiansi",
+   "name": "光显寺",
+   "type": "fortress",
+   "modern": "今中国新疆",
+   "note": "雍正时战场",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yili",
+   "name": "伊犁",
+   "type": "city",
+   "modern": "今中国新疆伊犁",
+   "note": "清军出师之地",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

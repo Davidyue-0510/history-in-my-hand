@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "秦始皇",
+   "role": "秦始皇帝",
+   "note": "焚书坑儒的决策者",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "李斯",
+   "role": "丞相",
+   "note": "建议焚书",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p03",
+   "name": "侯生",
+   "role": "方士",
+   "note": "求仙药不得而亡去",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p04",
+   "name": "卢生",
+   "role": "方士",
+   "note": "求仙药不得而亡去",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 169,
-  "historical": 160,
+  "scenes_total": 177,
+  "historical": 168,
   "fictional": 9,
-  "assertions_total": 2696,
-  "sources_total": 130,
+  "assertions_total": 2806,
+  "sources_total": 138,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -16,26 +16,34 @@
     "guizhou_yelang_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
+    "han_weihuo_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
     "jilin_gaogouli_llm",
     "ming_qing",
+    "ming_tumu_llm",
     "ming_zhenghe_llm",
     "nanzhao_dali_llm",
+    "qin_fenshu_llm",
     "qin_mie_liu_guo",
     "qin_mie_liu_guo_llm",
     "qing_yakesa_llm",
+    "qing_zhungaer_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
     "song",
+    "song_chanchuan_llm",
     "song_yancheng_llm",
     "sui_canal_llm",
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "tang",
     "tang_anshi_llm",
+    "tang_huangchao_llm",
+    "tang_xuanwumen_llm",
     "three_campaigns",
+    "warring_states_shangyang_llm",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
     "yuan_xingsheng_llm",
@@ -43,7 +51,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 264,
+  "leads_total": 274,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1281,6 +1289,62 @@
       "kind": "battle",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "qin_fenshu_llm",
+      "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tang_huangchao_llm",
+      "title": "唐·黄巢起义（LLM 抽取·人工校订）",
+      "kind": "uprising",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "song_chanchuan_llm",
+      "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "ming_tumu_llm",
+      "title": "明·土木堡之变（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "qing_zhungaer_llm",
+      "title": "清·平定准噶尔（LLM 抽取·人工校订）",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "warring_states_shangyang_llm",
+      "title": "战国·商鞅变法（LLM 抽取·人工校订）",
+      "kind": "reform",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "han_weihuo_llm",
+      "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "tang_xuanwumen_llm",
+      "title": "唐·玄武门之变（LLM 抽取·人工校订）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1452,6 +1516,14 @@
     "song_yancheng_llm": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
     "yuan_xingsheng_llm": "元设行中书省（行省制）（LLM 抽取·人工校订）",
     "ming_zhenghe_llm": "郑和下西洋（LLM 抽取·人工校订）",
-    "qing_yakesa_llm": "雅克萨之战（LLM 抽取·人工校订）"
+    "qing_yakesa_llm": "雅克萨之战（LLM 抽取·人工校订）",
+    "qin_fenshu_llm": "秦·焚书坑儒（LLM 抽取·人工校订）",
+    "tang_huangchao_llm": "唐·黄巢起义（LLM 抽取·人工校订）",
+    "song_chanchuan_llm": "宋·澶渊之盟（LLM 抽取·人工校订）",
+    "ming_tumu_llm": "明·土木堡之变（LLM 抽取·人工校订）",
+    "qing_zhungaer_llm": "清·平定准噶尔（LLM 抽取·人工校订）",
+    "warring_states_shangyang_llm": "战国·商鞅变法（LLM 抽取·人工校订）",
+    "han_weihuo_llm": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
+    "tang_xuanwumen_llm": "唐·玄武门之变（LLM 抽取·人工校订）"
   }
 }

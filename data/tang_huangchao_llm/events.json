@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_tang_huangchao_01",
+   "subject": "event:ev_tang_huangchao_01",
+   "year": 875,
+   "era": "乾符二年",
+   "title": "黄巢起兵",
+   "kind": "战事",
+   "text": "黄巢聚众响应王仙芝于冤句",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_huangchao_02",
+   "subject": "event:ev_tang_huangchao_02",
+   "year": 878,
+   "era": "乾符五年",
+   "title": "王仙芝败死",
+   "kind": "战事",
+   "text": "王仙芝败死，黄巢继领其众",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_huangchao_03",
+   "subject": "event:ev_tang_huangchao_03",
+   "year": 880,
+   "era": "广明元年",
+   "title": "克长安称帝",
+   "kind": "战事",
+   "text": "黄巢入长安，僖宗奔蜀，建大齐",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_huangchao_04",
+   "subject": "event:ev_tang_huangchao_04",
+   "year": 883,
+   "era": "中和三年",
+   "title": "撤出长安",
+   "kind": "战事",
+   "text": "李克用入援，黄巢撤出长安",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_huangchao_05",
+   "subject": "event:ev_tang_huangchao_05",
+   "year": 884,
+   "era": "中和四年",
+   "title": "败死狼虎谷",
+   "kind": "战事",
+   "text": "黄巢败死狼虎谷",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

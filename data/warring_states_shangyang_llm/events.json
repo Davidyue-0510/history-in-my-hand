@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_warring_states_shangyang_01",
+   "subject": "event:ev_warring_states_shangyang_01",
+   "year": -356,
+   "era": "秦孝公六年",
+   "title": "商鞅变法开始",
+   "kind": "行政",
+   "text": "秦孝公任商鞅为左庶长，推行变法。",
+   "_source_idx": 0,
+   "_source_name": "战国·商鞅变法（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_warring_states_shangyang_02",
+   "subject": "event:ev_warring_states_shangyang_02",
+   "year": -350,
+   "era": "秦孝公十二年",
+   "title": "迁都咸阳",
+   "kind": "建置",
+   "text": "秦徙都咸阳，并推行县制。",
+   "_source_idx": 0,
+   "_source_name": "战国·商鞅变法（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

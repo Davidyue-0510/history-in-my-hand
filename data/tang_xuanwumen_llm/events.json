@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_tang_xuanwumen_01",
+   "subject": "event:ev_tang_xuanwumen_01",
+   "year": 626,
+   "era": "武德九年六月四日",
+   "title": "玄武门之变",
+   "kind": "其他",
+   "text": "李世民伏杀建成、元吉",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_xuanwumen_03",
+   "subject": "event:ev_tang_xuanwumen_03",
+   "year": 626,
+   "era": "武德九年八月",
+   "title": "高祖传位",
+   "kind": "行政",
+   "text": "高祖传位世民，是为太宗",
+   "_source_idx": 0,
+   "_source_name": "唐·玄武门之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

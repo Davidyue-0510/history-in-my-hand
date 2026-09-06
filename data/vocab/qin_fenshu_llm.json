@@ -1,0 +1,25 @@
+{
+  "_comment": "秦·焚书坑儒 语境包（LLM 抽取落库）。来源/控制方：['后世官修', '秦方']。",
+  "_schema_version": "0.2",
+  "_role": "context_pack",
+  "_status": "active",
+  "_label": "秦·焚书坑儒语境",
+  "extends": "_base",
+  "parties": [
+    "后世官修",
+    "秦方"
+  ],
+  "party_bucket": {
+    "后世官修": "后世官修",
+    "秦方": "秦方"
+  },
+  "_party_notes": {
+    "后世官修": "后世官修（来源方）",
+    "秦方": "秦方（控制方）"
+  },
+  "party_colors": {
+    "后世官修": "#6C7A89",
+    "秦方": "#2E86C1"
+  },
+  "_party_colors_note": "控制方取红/蓝/赭，来源方灰；桶级配色单一真值近似。"
+}

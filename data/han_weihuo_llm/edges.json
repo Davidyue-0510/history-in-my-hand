@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "yunzhong",
+   "to": "henan",
+   "type": "military",
+   "label": "卫青出云中收复河南地",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "longxi",
+   "to": "yanzhi",
+   "type": "military",
+   "label": "霍去病出陇西越焉支山",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "yanzhi",
+   "to": "qilian",
+   "type": "military",
+   "label": "霍去病越祁连山",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "qilian",
+   "to": "hexi",
+   "type": "military",
+   "label": "霍去病断匈奴右臂",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "hexi",
+   "to": "wuwei",
+   "type": "military",
+   "label": "置河西四郡",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

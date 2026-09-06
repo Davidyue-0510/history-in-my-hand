@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "juyongguan",
+   "to": "datong",
+   "type": "military",
+   "label": "明军亲征路线",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "datong",
+   "to": "tumu",
+   "type": "military",
+   "label": "回师路线",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

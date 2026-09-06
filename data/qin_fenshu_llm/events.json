@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_qin_fenshu_01",
+   "subject": "event:ev_qin_fenshu_01",
+   "year": -213,
+   "era": "秦始皇三十四年",
+   "title": "焚书令",
+   "kind": "行政",
+   "text": "李斯奏请焚毁诗书百家语",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qin_fenshu_02",
+   "subject": "event:ev_qin_fenshu_02",
+   "year": -212,
+   "era": "秦始皇三十五年",
+   "title": "坑儒",
+   "kind": "其他",
+   "text": "坑杀犯禁者四百六十余人于咸阳",
+   "_source_idx": 0,
+   "_source_name": "秦·焚书坑儒（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -58,6 +58,7 @@ window.SANDBOX_RESONANCE = {
    "hainan_zhuyai_llm",
    "haizhou",
    "han_banchao_llm",
+   "han_weihuo_llm",
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
@@ -95,6 +96,7 @@ window.SANDBOX_RESONANCE = {
    "lvlin",
    "maling",
    "ming_fall",
+   "ming_tumu_llm",
    "ming_zhenghe_llm",
    "mingmo_dangzheng",
    "mingmo_jihuang",
@@ -104,11 +106,13 @@ window.SANDBOX_RESONANCE = {
    "ningxia",
    "ningyuan",
    "poyanghu",
+   "qin_fenshu_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
    "qin_unify",
    "qing_han",
    "qing_yakesa_llm",
+   "qing_zhungaer_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
    "sarhu",
@@ -117,6 +121,7 @@ window.SANDBOX_RESONANCE = {
    "shenkuo",
    "shenyang",
    "song_chan_yuan",
+   "song_chanchuan_llm",
    "song_dangzheng",
    "song_he_jue",
    "song_yancheng_llm",
@@ -132,12 +137,15 @@ window.SANDBOX_RESONANCE = {
    "tang_anshi_llm",
    "tang_dangzheng",
    "tang_huai_xi",
+   "tang_huangchao_llm",
+   "tang_xuanwumen_llm",
    "three_campaigns",
    "tianjing",
    "tieling",
    "tumu",
    "wanganshi",
    "wangmang",
+   "warring_states_shangyang_llm",
    "wencheng",
    "wugu",
    "wuwang",
@@ -1080,6 +1088,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "han_weihuo_llm",
+   "name": "han_weihuo_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_weihuo_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "heshangyuan",
    "name": "heshangyuan",
    "total": 21,
@@ -1810,6 +1837,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "ming_tumu_llm",
+   "name": "ming_tumu_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ming_tumu_02",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "ming_zhenghe_llm",
    "name": "ming_zhenghe_llm",
    "total": 13,
@@ -1982,6 +2028,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "qin_fenshu_llm",
+   "name": "qin_fenshu_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qin_fenshu_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "qin_mie_liu_guo",
    "name": "qin_mie_liu_guo",
    "total": 14,
@@ -2071,6 +2136,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_qing_yakesa_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "qing_zhungaer_llm",
+   "name": "qing_zhungaer_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "gap": 1,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qing_zhungaer_01",
    "best_resonance": 0.0
   },
   {
@@ -2241,6 +2325,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 5,
    "avg_resonance": 0.0,
    "best_event": "event:chanyuan_meng",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "song_chanchuan_llm",
+   "name": "song_chanchuan_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_song_chanchuan_01",
    "best_resonance": 0.0
   },
   {
@@ -2541,6 +2644,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tang_huangchao_llm",
+   "name": "tang_huangchao_llm",
+   "total": 16,
+   "layers": {
+    "record": 13,
+    "inference": 1,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tang_huangchao_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "tang_xuanwumen_llm",
+   "name": "tang_xuanwumen_llm",
+   "total": 12,
+   "layers": {
+    "record": 8,
+    "scholarship": 2,
+    "gap": 1,
+    "inference": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tang_xuanwumen_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "three_campaigns",
    "name": "three_campaigns",
    "total": 54,
@@ -2662,6 +2803,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:wm_9",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "warring_states_shangyang_llm",
+   "name": "warring_states_shangyang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_warring_states_shangyang_01",
    "best_resonance": 0.0
   },
   {

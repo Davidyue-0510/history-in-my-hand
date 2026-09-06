@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_han_weihuo_01",
+   "subject": "event:ev_han_weihuo_01",
+   "year": -127,
+   "era": "元朔二年",
+   "title": "河南之战",
+   "kind": "战事",
+   "text": "卫青出云中，收复河南地，置朔方郡",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_weihuo_02",
+   "subject": "event:ev_han_weihuo_02",
+   "year": -121,
+   "era": "元狩二年",
+   "title": "河西之战",
+   "kind": "战事",
+   "text": "霍去病两出陇西，断匈奴右臂，降浑邪王",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_weihuo_03",
+   "subject": "event:ev_han_weihuo_03",
+   "year": -119,
+   "era": "元狩四年",
+   "title": "漠北之战",
+   "kind": "战事",
+   "text": "卫青、霍去病分道出塞，匈奴远遁漠北",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

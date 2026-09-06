@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "MIN__p01",
+   "name": "明英宗",
+   "role": "明朝皇帝",
+   "note": "亲征被俘",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MIN__p02",
+   "name": "王振",
+   "role": "宦官",
+   "note": "挟帝亲征",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MIN__p03",
+   "name": "也先",
+   "role": "瓦剌太师",
+   "note": "犯边统帅",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MIN__p04",
+   "name": "于谦",
+   "role": "兵部尚书",
+   "note": "立景泰帝",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MIN__p05",
+   "name": "郕王",
+   "role": "景泰帝",
+   "note": "继位",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
