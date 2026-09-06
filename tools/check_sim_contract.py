@@ -117,6 +117,49 @@ def main():
                      % (len(gap_missing_dist), ", ".join(gap_missing_dist[:8])
                         + ("…" if len(gap_missing_dist) > 8 else "")))
 
+    # ── (C) 非军事反事实契约（G2 六维广度 · v0.124）──
+    # 扫描 data/**/sim_config.json 与 branch_events_*.json，校验：
+    #   - 非军事 sim_config 必须含 scenario_type / dim_targets / branches / real_branch
+    #   - 所有 branch_events_*.json 的每条事件必须符 v0.57 schema
+    #     （kind∈枚举、year 整数、severity∈枚举）
+    KIND_ENUM = {"divergence", "logistics", "faction", "momentum", "summary"}
+    SEV_ENUM = {"info", "warn", "bad"}
+    for cfgp in glob.glob(os.path.join(ROOT, "data", "**", "sim_config.json"), recursive=True):
+        try:
+            obj = json.loads(read(cfgp))
+        except Exception as e:
+            fails.append("sim_config 解析失败 %s: %s" % (os.path.relpath(cfgp, ROOT), e))
+            continue
+        st = obj.get("scenario_type", "military")
+        if st == "military":
+            continue
+        if not obj.get("dim_targets"):
+            fails.append("sim_config 非军事缺 dim_targets: %s" % os.path.relpath(cfgp, ROOT))
+        if not isinstance(obj.get("branches"), list) or not obj["branches"]:
+            fails.append("sim_config 非军事缺 branches: %s" % os.path.relpath(cfgp, ROOT))
+        if not obj.get("real_branch"):
+            fails.append("sim_config 非军事缺 real_branch: %s" % os.path.relpath(cfgp, ROOT))
+
+    for bep in glob.glob(os.path.join(ROOT, "data", "**", "branch_events_*.json"), recursive=True):
+        try:
+            obj = json.loads(read(bep))
+        except Exception as e:
+            fails.append("branch_events 解析失败 %s: %s" % (os.path.relpath(bep, ROOT), e))
+            continue
+        events = obj.get("events", []) if isinstance(obj, dict) else []
+        if not events:
+            warns.append("branch_events 无事件（可能为纯史实重放）: %s" % os.path.relpath(bep, ROOT))
+        for k, ev in enumerate(events):
+            rel = "%s#%d" % (os.path.relpath(bep, ROOT), k)
+            if not isinstance(ev, dict):
+                fails.append("branch_events 事件非对象: %s" % rel); continue
+            if ev.get("kind") not in KIND_ENUM:
+                fails.append("branch_events kind 非法: %s (kind=%r)" % (rel, ev.get("kind")))
+            if not isinstance(ev.get("year"), int):
+                fails.append("branch_events year 非整数: %s" % rel)
+            if ev.get("severity") not in SEV_ENUM:
+                fails.append("branch_events severity 非法: %s (severity=%r)" % (rel, ev.get("severity")))
+
     # ── 报告 ──
     print("== 仿真维度契约闸门（unified_dimensions §4）==")
     print("[A] 阶段2 结构契约（#6/#7/#9/#10/#11/#12/#16）：")

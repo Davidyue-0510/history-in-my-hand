@@ -1,0 +1,17 @@
+{
+  "_comment": "北宋关键治所（song_wanganshi 非军事反事实场景 · 熙宁变法）。坐标为近似经纬度，仅供通用 viewer 节点定位，非精确边界。",
+  "places": [
+    {"id": "kaifeng", "name": "开封", "lon": 114.34, "lat": 34.80},
+    {"id": "luoyang", "name": "洛阳", "lon": 112.45, "lat": 34.62},
+    {"id": "changan", "name": "长安", "lon": 108.94, "lat": 34.34},
+    {"id": "taiyuan", "name": "太原", "lon": 112.55, "lat": 37.87},
+    {"id": "daming", "name": "大名", "lon": 115.15, "lat": 36.28},
+    {"id": "shangqiu", "name": "应天", "lon": 115.65, "lat": 34.41},
+    {"id": "xuchang", "name": "颍昌", "lon": 113.85, "lat": 34.04},
+    {"id": "jiangning", "name": "江宁", "lon": 118.78, "lat": 32.06},
+    {"id": "hangzhou", "name": "杭州", "lon": 120.15, "lat": 30.27},
+    {"id": "mingzhou", "name": "明州", "lon": 121.55, "lat": 29.87},
+    {"id": "chengdu", "name": "成都", "lon": 104.07, "lat": 30.67},
+    {"id": "guangzhou", "name": "广州", "lon": 113.26, "lat": 23.13}
+  ]
+}

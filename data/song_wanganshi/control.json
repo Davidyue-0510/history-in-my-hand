@@ -1,0 +1,15 @@
+[
+  {"_comment": "熙宁变法期（1069–1085）宋廷对全国治所的稳定控制；非军事场景，单一控制方，用于派生三阶层 Agent 阻力（local 教育垄断→变法阻力）。", "place_id": "_meta", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "kaifeng", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "luoyang", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "changan", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "taiyuan", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "daming", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "shangqiu", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "xuchang", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "jiangning", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "hangzhou", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "mingzhou", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "chengdu", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"},
+  {"place_id": "guangzhou", "party": "宋廷", "start": 1069, "end": 1085, "timeline": "main"}
+]

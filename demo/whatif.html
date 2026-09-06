@@ -1,589 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>反事实军事推演 · 小菜狗的文明图景</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>反事实通用查看器 · What-if Viewer</title>
 <style>
   :root{
-    --ink:#2A2521; --paper:#FBF9F3; --line:#E3DCCB; --muted:#7d7464;
-    --ming:#3b6ea5; --houjin:#b23a48; --ok:#2e7d4f; --bad:#c0392b; --warn:#b8860b;
-    --panel:#fffdf7;
+    --ink:#2A2521; --ink-soft:#5b5249; --parch:#efe7d6; --parch2:#f6f1e4;
+    --line:#c9bfa8; --accent:#7a5a2e;
+    --ok:#3f7d54; --warn:#c8a24a; --bad:#b5443a; --info:#7fa7c4;
   }
-  *{box-sizing:border-box}
-  html,body{margin:0;height:100%;font:14px/1.6 system-ui,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--paper)}
-  header{display:flex;align-items:center;gap:14px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
-  header h1{font-size:16px;margin:0;font-weight:700}
-  header .sub{color:var(--muted);font-size:12px}
-  header select,header input{font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:#fff}
-  .layout{display:grid;grid-template-columns:320px 1fr 340px;height:calc(100% - 53px);min-height:0}
-  aside{overflow:auto;padding:12px;border-right:1px solid var(--line);background:var(--panel)}
-  aside.right{border-right:none;border-left:1px solid var(--line)}
-  main{position:relative;min-width:0;min-height:0;background:var(--paper)}
-  #mapWrap{position:absolute;inset:0;overflow:hidden;cursor:grab;background:var(--paper)}
-  #mapWrap.grabbing{cursor:grabbing}
-  #map{position:absolute;inset:0;width:100%;height:100%;display:block;background:transparent;z-index:1}
-  /* 窄屏自适应：控件/地图/输出改为纵向堆叠，地图占主视区 */
-  @media (max-width:900px){
-    .layout{grid-template-columns:1fr;grid-template-rows:auto 58vh auto;height:auto}
-    aside,aside.right{max-height:none;border-left:none;border-right:none;border-top:1px solid var(--line)}
-    main{height:58vh}
-    html,body{height:auto;overflow:auto}
-  }
-  .zoom-badge{position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,.85);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:12px;z-index:3}
-  h2{font-size:13px;margin:14px 0 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-  h2:first-child{margin-top:0}
-  .army{border:1px solid var(--line);border-radius:8px;padding:8px;margin-bottom:8px;background:#fff}
-  .army.kin{box-shadow:0 0 0 2px rgba(59,110,165,.15)}
-  .army .row{display:flex;gap:6px;align-items:center;margin:3px 0}
-  .army .row label{width:54px;color:var(--muted);font-size:12px;flex:none}
-  .army .row input,.army .row select{flex:1;font:inherit;padding:3px 6px;border:1px solid var(--line);border-radius:5px;min-width:0}
-  .army .name{font-weight:600}
-  .badge{display:inline-block;font-size:11px;padding:1px 7px;border-radius:10px;color:#fff}
-  .badge.ming{background:var(--ming)} .badge.houjin{background:var(--houjin)}
-  button{font:inherit;cursor:pointer;border:1px solid var(--line);background:#fff;border-radius:6px;padding:6px 10px}
-  button.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
-  button:hover{filter:brightness(.97)}
-  .toolbar{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}
-  .ctl{display:flex;gap:6px;align-items:center;margin:5px 0}
-  .ctl label{width:70px;color:var(--muted);font-size:12px;flex:none}
-  .ctl input,.ctl select{flex:1;font:inherit;padding:3px 6px;border:1px solid var(--line);border-radius:5px;min-width:0}
-  textarea{width:100%;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;padding:8px;border:1px solid var(--line);border-radius:8px;min-height:64px;resize:vertical}
-  .result{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin-bottom:8px;background:#fff}
-  .result h3{margin:0 0 4px;font-size:13px}
-  .chk{border-left:3px solid var(--line);padding:4px 8px;margin:4px 0;font-size:12.5px}
-  .chk.ok{border-color:var(--ok)} .chk.bad{border-color:var(--bad);background:#fdf2f0}
-  .chk.warn{border-color:var(--warn);background:#fdf8ec}
-  .chk .tag{font-weight:700;margin-right:6px}
-  .chk.ok .tag{color:var(--ok)} .chk.bad .tag{color:var(--bad)} .chk.warn .tag{color:var(--warn)}
-  .llm-out{white-space:pre-wrap;font-size:13px;line-height:1.7}
-  .meta-line{color:var(--muted);font-size:12px;margin:2px 0}
-  .pill{display:inline-block;background:#efe9da;border-radius:10px;padding:1px 8px;font-size:11px;margin:1px 2px}
-  .scrub{display:flex;align-items:center;gap:8px;margin:6px 0}
-  .scrub input[type=range]{flex:1}
-  .legend{position:absolute;left:10px;top:10px;background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:12px;z-index:3;max-width:230px}
-  .legend .li{display:flex;align-items:center;gap:6px;margin:2px 0}
-  .legend .sw{width:14px;height:14px;border-radius:3px;flex:none}
-  .hint{color:var(--muted);font-size:11.5px;margin-top:4px}
-  code{background:#f0ebdd;padding:0 4px;border-radius:3px}
-  .err{color:var(--bad);font-weight:600}
-  .cluster{animation:cluster-pop .22s ease-out;transform-box:fill-box;transform-origin:center}
-  @keyframes cluster-pop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;font-family:"Noto Serif SC","Songti SC",serif;color:var(--ink);background:var(--parch2);}
+  .app{display:flex;flex-direction:column;height:100vh;}
+  header{display:flex;align-items:center;gap:12px;padding:9px 16px;background:#332d27;color:#f3ecdc;border-bottom:2px solid #110f0d;}
+  header h1{font-size:16px;margin:0;font-weight:700;}
+  header .scene{font-size:12px;color:#d9cdb6;border:1px solid #6a5f50;padding:2px 8px;border-radius:10px;}
+  header .spacer{flex:1;}
+  .banner{background:#b5443a;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:10px;letter-spacing:.5px;}
+  .body{display:flex;flex:1;min-height:0;}
+  aside{width:360px;flex:0 0 360px;background:var(--parch);border-right:1px solid var(--line);overflow-y:auto;padding:14px;}
+  main{flex:1;min-width:0;display:flex;flex-direction:column;overflow:auto;padding:16px;}
+  section.block{margin-bottom:14px;border:1px solid var(--line);border-radius:8px;background:var(--parch2);overflow:hidden;}
+  section.block > h2{margin:0;font-size:13px;padding:7px 11px;background:#e3d8bf;border-bottom:1px solid var(--line);font-weight:700;}
+  section.block .c{padding:10px 11px;font-size:12.5px;line-height:1.5;}
+  .yr-row{display:flex;align-items:center;gap:10px;}
+  .yr-row input[type=range]{flex:1;}
+  .yr-val{font-weight:700;font-size:15px;min-width:46px;text-align:right;}
+  .mode-toggle{display:flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:6px 0;}
+  .mode-toggle button{background:transparent;color:var(--ink);border:0;padding:5px 12px;cursor:pointer;font-size:12.5px;font-family:inherit;}
+  .mode-toggle button.active{background:var(--accent);color:#fff;font-weight:700;}
+  .stat{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dashed var(--line);}
+  .stat .num{font-weight:700;}
+  .bar{height:9px;background:#ddd2b8;border-radius:5px;overflow:hidden;margin:4px 0 8px;}
+  .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--bad),var(--warn),var(--ok));}
+  .ev{font-size:12px;line-height:1.5;margin:5px 0;padding-left:8px;border-left:3px solid var(--line);}
+  .ev.bad{border-color:var(--bad);} .ev.warn{border-color:var(--warn);} .ev.info{border-color:var(--info);}
+  .ev .sev{font-size:10px;padding:1px 5px;border-radius:8px;margin-right:5px;color:#fff;}
+  .ev.bad .sev{background:var(--bad);} .ev.warn .sev{background:var(--warn);} .ev.info .sev{background:var(--info);}
+  .chart-wrap{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px;}
+  svg.chart{width:100%;height:auto;display:block;}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin-top:8px;align-items:center;}
+  .legend .it{display:flex;align-items:center;gap:5px;}
+  .legend .sw{width:14px;height:14px;border-radius:3px;border:1px solid rgba(0,0,0,.2);}
+  .legend .ln{width:18px;height:0;border-top:3px solid var(--ink);display:inline-block;}
+  .legend .ln.dash{border-top-style:dashed;}
+  .hint{font-size:11px;color:var(--ink-soft);margin-top:6px;}
+  .err{margin:20px;padding:15px;background:#fbe9e7;border:1px solid var(--bad);border-radius:8px;color:#7a241c;white-space:pre-wrap;font-family:monospace;}
+  .dim-table{border-collapse:collapse;width:100%;font-size:11.5px;margin-top:8px;}
+  .dim-table th,.dim-table td{border:1px solid var(--line);padding:3px 5px;text-align:center;}
+  .dim-table th{background:#e3d8bf;}
 </style>
 </head>
 <body>
-<header>
-  <h1>反事实军事推演</h1>
-  <span class="sub">假设事件落到真实地图 · 后勤/物理校验 · LLM 接口预留</span>
-  <span style="flex:1"></span>
-  <label>场景 <select id="sceneSel"></select></label>
-  <label>季节 <select id="seasonSel">
-    <option value="spring">春</option>
-    <option value="summer">夏</option>
-    <option value="autumn">秋</option>
-    <option value="winter">冬</option>
-  </select></label>
-</header>
-
-<div class="layout">
-  <!-- 左：情景编辑器 -->
-  <aside class="left">
-    <h2>合兵设定</h2>
-    <div class="ctl"><label>合兵点</label><select id="convergeSel"></select></div>
-    <div class="ctl"><label>合兵日</label><input id="convergeDate" type="date" value="1619-04-17"></div>
-    <div class="toolbar">
-      <button id="allToConv">全部指向合兵点</button>
-      <button id="resetBtn">重置为样例</button>
-    </div>
-
-    <h2>军队（假设分支）</h2>
-    <div id="armyList"></div>
-    <div class="toolbar"><button id="addArmy">+ 添加一路</button></div>
-
-    <h2>LLM 自然语言推演</h2>
-    <textarea id="scenarioText" placeholder="例如：若六路明军提前于四月初十会师萨尔浒，且沿途由驿站运粮，能否击破后金？"></textarea>
-    <div class="toolbar"><button class="primary" id="predictBtn">推演走势 / 校验限制</button></div>
-    <div class="hint">默认走<strong>本地确定性物理引擎</strong>（离线可跑）。接入真实 LLM 见文件内 <code>LLM_CONFIG</code>。</div>
-  </aside>
-
-  <!-- 中：地图 -->
-  <main>
-    <div id="mapWrap">
-      <svg id="map" viewBox="0 0 1000 918" preserveAspectRatio="none"></svg>
-    </div>
-    <div class="legend" id="legend"></div>
-    <div class="zoom-badge" id="zoomBadge">1.0×</div>
-  </main>
-
-  <!-- 右：后勤 + 约束 + LLM 输出 -->
-  <aside class="right">
-    <h2>时间轴（推演日）</h2>
-    <div class="scrub"><input id="dateScrub" type="range" min="0" max="100" value="0"><span id="scrubLbl" style="font-size:12px;min-width:74px;text-align:right">—</span></div>
-
-    <h2>物理 / 后勤校验</h2>
-    <div id="checks"></div>
-
-    <h2>后勤明细</h2>
-    <div id="logi"></div>
-
-    <h2>LLM 推演输出</h2>
-    <div class="result"><div class="llm-out" id="llmOut">（点击左侧「推演」生成）</div></div>
-  </aside>
+<div class="app">
+  <header>
+    <span class="banner">[what-if]</span>
+    <h1>反事实通用查看器</h1>
+    <span class="scene" id="sceneHint">载入中…</span>
+    <span class="spacer"></span>
+    <span class="hint" style="color:#d9cdb6">诚实边界：反事实产物与史实分离呈现，不混同</span>
+  </header>
+  <div class="body">
+    <aside>
+      <section class="block">
+        <h2>年份 / Year</h2>
+        <div class="c">
+          <div class="yr-row"><input type="range" id="year" min="0" max="1" step="1" value="0"><span class="yr-val" id="yrVal">—</span></div>
+          <div class="mode-toggle" id="modeToggle">
+            <button data-mode="real">史实</button>
+            <button data-mode="branch" class="active">反事实</button>
+            <button data-mode="diff">差异</button>
+          </div>
+          <div class="hint">史实=基准分支；反事实=所选分支；差异=反事实−史实（六维偏离）。</div>
+        </div>
+      </section>
+      <section class="block">
+        <h2>分支 / Branch</h2>
+        <div class="c" id="branchBox"></div>
+      </section>
+      <section class="block">
+        <h2>六维状态 / Six Dimensions</h2>
+        <div class="c" id="dimNow"></div>
+      </section>
+      <section class="block">
+        <h2>吻合度 / 偏离</h2>
+        <div class="c" id="stats"></div>
+      </section>
+      <section class="block">
+        <h2>分支事件叙述 / Branch Events</h2>
+        <div class="c" id="be"></div>
+      </section>
+    </aside>
+    <main>
+      <div id="geoNote" class="hint"></div>
+      <div class="chart-wrap" id="chartWrap"></div>
+      <div id="heatWrap"></div>
+      <div class="legend" id="legend"></div>
+    </main>
+  </div>
 </div>
-
-<script src="data.js"></script>
 <script>
-/* ════════════════════════════════════════════════════════════════════
- * 反事实军事推演（whatif.html）
- * 地图内核（投影 / 视窗）faithful copy county.js，但地形改为「真实地形图栅格底图」：
- * 直接显示复旦 CHGIS DemTopo 分层设色地形图（烘焙好高程配色，海洋已重染为中性色去蓝），
- * 不再用合成 ASTER hillshade。其上叠加「假设军队 / 合兵 / 扎营 / 时间轴」+ 后勤物理校验。
- * 古地图层：按项目约定暂留缺口，以现地形图凑替。
- * ════════════════════════════════════════════════════════════════════ */
 (function(){
   'use strict';
-  var SD = window.SANDBOX_DATA;
-  if(!SD || !SD.scenes){ document.body.innerHTML='<p class="err" style="padding:24px">未加载 data.js（SANDBOX_DATA 缺失）。请确保本页与 data.js 同目录。</p>'; return; }
+  var $ = function(id){ return document.getElementById(id); };
+  var PAR = new URLSearchParams(location.search);
+  var SCENE = PAR.get('scene') || 'song_wanganshi';
+  var BRANCH = PAR.get('branch') || 'persist';
+  var SEV_LABEL = { info:'趋势', warn:'风险', bad:'危局' };
 
-  /* ── LLM 推演接口（预留）────────────────────────────────────────────
-   * 默认走本地确定性物理引擎（离线可跑、可核查）。
-   * 接入真实 LLM：把下面的 endpoint / apiKey 填上（请勿把密钥提交进 git），
-   * predictScenario() 会自动改用 LLM 理解用户自然语言情景，并预测走势或说明物理限制。 */
-  var LLM_CONFIG = { endpoint: '', apiKey: '', model: 'gpt-4o-mini' };
+  function fail(e){ var m=document.createElement('div'); m.className='err'; m.textContent='加载失败：\n'+(e&&e.stack?e.stack:e); document.querySelector('.body').prepend(m); console.error(e); }
+  function getJSON(u){ return fetch(u).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status+' '+u); return r.json(); }); }
 
-  /* ── 物理 / 后勤常量（可核查，附依据）────────────────────────────── */
-  var RATES = { forced: 60, cavalry: 80, foot: 40 }; // km/日：明军急行/骑兵/步卒 行军速（文献约值）
-  var WINTER_RATE = 0.75;   // 冬季路冻/雪阻，有效行军速 ×0.75
-  var RATION = 1.8;         // kg/人/日 军粮（明制约 1.5–2.0）
-  var WATER  = 4;           // L/人/日 饮水
-  var CAMP_EVERY = 3;       // 每 3 日扎营一次（短途不生成；长程行军才出现中途营地）
-  var WATER_MAX_KM = 8;     // 扎营点须距水源 ≤8km，否则无水
-  var SIEGE_DAYS = 10;      // 合兵后假设会战/围城 10 日
+  try { init(); } catch(e){ fail(e); }
 
-  /* ── 工具函数 ── */
-  function haversine(a,b){ var R=6371,toR=Math.PI/180;
-    var dLat=(b[1]-a[1])*toR,dLon=(b[0]-a[0])*toR,la1=a[1]*toR,la2=b[1]*toR;
-    var h=Math.sin(dLat/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;
-    return 2*R*Math.asin(Math.min(1,Math.sqrt(h))); }
-  function parseD(s){ return Date.parse(s+'T00:00:00Z'); }
-  function fmtD(n){ return new Date(n).toISOString().slice(0,10); }
-  function daysBetween(a,b){ return Math.round((parseD(b)-parseD(a))/86400000); }
-  function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
-
-  /* ── 场景与数据 ── */
-  var sceneKey = 'sarhu';
-  var D, TG, BM, PLACE={}, PLACES=[];
-  function loadScene(key){
-    sceneKey=key; D=SD.scenes[key];
-    if(!D){ alert('场景缺失：'+key); return false; }
-    TG = D.terrain || SD.terrain;
-    BM = D.basemap || SD.basemap;
-    PLACE={}; PLACES = (D.places||[]).filter(function(p){return typeof p.lon==='number';});
-    PLACES.forEach(function(p){ PLACE[p.id]=p; });
-    return true;
-  }
-
-  /* ── 默认假设：萨尔浒「六路合兵」──
-   * 史实明军四路（杜松/马林/李如柏/刘綎）+ 叶赫部 + 朝鲜方向 = 六路，
-   * 假设全部指向合兵点（默认萨尔浒）。努尔哈赤八旗作敌军单独显示。*/
-  function defaultArmies(){
-    return [
-      {id:'du',  name:'杜松·西路军',   faction:'ming',   from:'fushun',  to:'sarhu',    troops:60000, mode:'forced', depart:'1619-04-14'},
-      {id:'ma',  name:'马林·北路军',   faction:'ming',   from:'kaiyuan', to:'sarhu',    troops:40000, mode:'foot',   depart:'1619-04-14'},
-      {id:'li',  name:'李如柏·南路军', faction:'ming',   from:'qinghe',  to:'sarhu',    troops:40000, mode:'foot',   depart:'1619-04-14'},
-      {id:'liu', name:'刘綎·东路军',   faction:'ming',   from:'kuandian',to:'sarhu',    troops:50000, mode:'foot',   depart:'1619-04-14'},
-      {id:'ye',  name:'叶赫部',        faction:'ming',   from:'yehe',    to:'sarhu',    troops:15000, mode:'foot',   depart:'1619-04-14'},
-      {id:'cg',  name:'朝鲜援军',      faction:'ming',   from:'shenhe',  to:'sarhu',    troops:13000, mode:'foot',   depart:'1619-04-14'},
-      {id:'nur', name:'努尔哈赤·八旗', faction:'houjin', from:'hetuala', to:'sarhu',    troops:60000, mode:'cavalry',depart:'1619-04-13'}
-    ];
-  }
-  var armies = defaultArmies();
-  var convergeAt = 'sarhu';
-  var convergeBy = '1619-04-17';
-  var season = 'spring';
-  var scrubDate = '1619-04-14';
-
-  /* ═══════════ 地图内核（faithful copy of county.js v0.41） ═══════════ */
-  var SVGNS='http://www.w3.org/2000/svg';
-  var wrap=document.getElementById('mapWrap');
-  var svg=document.getElementById('map');
-  /* 地形改用真实 DemTopo 栅格底图（SVG <image>），不再需要 canvas */
-  var W=1000,H=918;
-  var LON0,LON1,LAT0,LAT1;
-  function computeBox(){
-    var lons=[],lats=[];
-    armies.forEach(function(a){ var A=PLACE[a.from],B=PLACE[a.to]; if(A){lons.push(A.lon);lats.push(A.lat);} if(B){lons.push(B.lon);lats.push(B.lat);} });
-    var C=PLACE[convergeAt]; if(C){lons.push(C.lon);lats.push(C.lat);}
-    PLACES.forEach(function(p){lons.push(p.lon);lats.push(p.lat);});
-    var mnLon=Math.min.apply(null,lons),mxLon=Math.max.apply(null,lons);
-    var mnLat=Math.min.apply(null,lats),mxLat=Math.max.apply(null,lats);
-    var padLon=(mxLon-mnLon)*0.12+0.4, padLat=(mxLat-mnLat)*0.12+0.4;
-    // 保持纵横比：让经度跨度按纬度余弦修正后与高度匹配
-    var midLat=(mnLat+mxLat)/2, cos=Math.cos(midLat*Math.PI/180);
-    var spanLon=(mxLon-mnLon)+padLon*2, spanLat=(mxLat-mnLat)+padLat*2;
-    var wantLon=spanLat*(W/H)/cos;
-    if(spanLon<wantLon){ var d=(wantLon-spanLon)/2; mnLon-=d; mxLon+=d; }
-    else { var d2=(spanLon-wantLon)/2/cos*(H/W); /* noop guard */ }
-    LON0=mnLon;LON1=mxLon;LAT0=mnLat;LAT1=mxLat;
-    // 把视野限制在 DemTopo 底图范围内，保证底图始终覆盖视区（不露出无图空白）
-    LON0=Math.max(DEMTOPO.lonMin,LON0);LON1=Math.min(DEMTOPO.lonMax,LON1);
-    LAT0=Math.max(DEMTOPO.latMin,LAT0);LAT1=Math.min(DEMTOPO.latMax,LAT1);
-  }
-  function px(lon){ return (lon-LON0)/(LON1-LON0)*W; }
-  function py(lat){ return (LAT1-lat)/(LAT1-LAT0)*H; }
-
-  /* 真实地形图（复旦 CHGIS DemTopo 分层设色地形图，烘焙好高程配色；海洋已重染为中性色去蓝）。
-   * 经纬度范围即裁图范围：lon[114,133] lat[34,49]，与 equirectangular 投影一致，故可直接按投影落图。 */
-  var DEMTOPO = { src:'demtopo_liaodong.jpg', lonMin:114, lonMax:133, latMin:34, latMax:49 };
-  /* 地形改用真实 DemTopo 栅格底图（见 initMap 中 gTopo 的 <image>），不再用合成 ASTER hillshade / 蓝色海洋。 */
-  function el(tag,attrs,parent){var n=document.createElementNS(SVGNS,tag);for(var k in attrs)if(attrs[k]!=null)n.setAttribute(k,attrs[k]);if(parent)parent.appendChild(n);return n;}
-  function geomPath(g){if(!g)return'';var t=g.type,c=g.coordinates,d='';
-    function ring(r){return'M'+r.map(function(p){return px(p[0])+' '+py(p[1]);}).join(' L ')+' Z';}
-    function line(l){return'M'+l.map(function(p){return px(p[0])+' '+py(p[1]);}).join(' L ');}
-    if(t==='Polygon')g.coordinates.forEach(function(r){d+=ring(r)+' ';});
-    else if(t==='MultiPolygon')g.coordinates.forEach(function(p){p.forEach(function(r){d+=ring(r)+' ';});});
-    else if(t==='LineString')d=line(c);else if(t==='MultiLineString')c.forEach(function(l){d+=line(l)+' ';});
-    return d.trim();}
-  function geomLabelXY(g){var c=g.coordinates;
-    if(g.type==='Polygon')return[px(c[0][0][0]),py(c[0][0][1])];
-    if(g.type==='MultiPolygon')return[px(c[0][0][0][0]),py(c[0][0][0][1])];
-    if(g.type==='LineString'){var m=c[Math.floor(c.length/2)];return[px(m[0]),py(m[1])];}
-    if(g.type==='MultiLineString'){var l=c[0],mm=l[Math.floor(l.length/2)];return[px(mm[0]),py(mm[1])];}
-    return null;}
-  function drawBase(){
-    gBase.innerHTML='';if(!BM)return;
-    // 真实 DemTopo 底图已含海岸/河流/地形分层设色；此处仅叠加 NE 历史省界作时代参照（不与底图重复描线）
-    var gAdm=el('g',{fill:'none',stroke:'#b9a06a','stroke-width':0.7,opacity:.55,'vector-effect':'non-scaling-stroke'},gBase);
-    (BM.admin1||[]).forEach(function(f){el('path',{d:geomPath(f.g)},gAdm);
-      if(f.n){var xy=geomLabelXY(f.g);if(xy){var t=el('text',{x:xy[0]+4,y:xy[1],'font-size':11,fill:'#8a7d5e'},gBase);t.textContent=f.n;}}});
-  }
-
-  /* ── 视图（缩放/平移）── */
-  var cw=1,ch=1,view={x:0,y:0,w:W,h:H},MIN_W=26,fitW=W,rafPending=false;
-  function measure(){var r=wrap.getBoundingClientRect();
-    cw=Math.max(1, r.width || (window.innerWidth-660));
-    ch=Math.max(1, r.height || (window.innerHeight-53));}
-  function fitView(){var xs=[],ys=[];PLACES.forEach(function(p){xs.push(px(p.lon));ys.push(py(p.lat));});
-    var b={x0:Math.min.apply(null,xs),x1:Math.max.apply(null,xs),y0:Math.min.apply(null,ys),y1:Math.max.apply(null,ys)},pad=40;
-    var bw=(b.x1-b.x0)+pad*2,bh=(b.y1-b.y0)+pad*2,ar=cw/ch,w,h;
-    if(bw/bh>ar){w=bw;h=bw/ar;}else{h=bh;w=bh*ar;}fitW=w;view={x:(b.x0+b.x1)/2-w/2,y:(b.y0+b.y1)/2-h/2,w:w,h:h};}
-  function clampView(){view.w=Math.min(fitW*1.6,Math.max(MIN_W,view.w));view.h=view.w*(ch/cw);
-    var b={x0:0,y0:0,x1:W,y1:H},slack=Math.max(view.w,view.h)*0.7;
-    view.x=Math.min(b.x1+slack-view.w,Math.max(b.x0-slack,view.x));view.y=Math.min(b.y1+slack-view.h,Math.max(b.y0-slack,view.y));}
-  function applyView(){clampView();svg.setAttribute('viewBox',view.x.toFixed(2)+' '+view.y.toFixed(2)+' '+view.w.toFixed(2)+' '+view.h.toFixed(2));
-    svg.style.setProperty('--u',(view.w/cw).toFixed(5));document.getElementById('zoomBadge').textContent=(fitW/view.w).toFixed(1)+'×';
-    if(!rafPending){rafPending=true;requestAnimationFrame(function(){rafPending=false;renderOverlay();});}}
-  wrap.addEventListener('wheel',function(e){e.preventDefault();var k=e.deltaY>0?1.14:1/1.14;
-    var r=wrap.getBoundingClientRect(),a={x:view.x+(e.clientX-r.left)/r.width*view.w,y:view.y+(e.clientY-r.top)/r.height*view.h},before=view.w;
-    view.w*=k;view.w=Math.min(fitW*1.6,Math.max(MIN_W,view.w));k=view.w/before;view.h=view.w*(ch/cw);
-    view.x=a.x-(a.x-view.x)*k;view.y=a.y-(a.y-view.y)*k;applyView();},{passive:false});
-  var DRAG_TH=4,drag=null;
-  wrap.addEventListener('pointerdown',function(e){if(e.button!==0)return;drag={sx:e.clientX,sy:e.clientY,vx:view.x,vy:view.y,moved:0,pid:e.pointerId,cap:false};});
-  wrap.addEventListener('pointermove',function(e){if(!drag)return;var dx=e.clientX-drag.sx,dy=e.clientY-drag.sy;drag.moved=Math.max(drag.moved,Math.abs(dx)+Math.abs(dy));
-    if(!drag.cap){if(drag.moved<=DRAG_TH)return;try{wrap.setPointerCapture(drag.pid);}catch(x){}drag.cap=true;wrap.classList.add('grabbing');}
-    view.x=drag.vx-dx/cw*view.w;view.y=drag.vy-dy/ch*view.h;applyView();});
-  function endDrag(e){if(!drag)return;var moved=drag.moved,cap=drag.cap,pid=drag.pid;drag=null;wrap.classList.remove('grabbing');if(cap){try{wrap.releasePointerCapture(pid);}catch(x){}}if(moved>DRAG_TH)renderOverlay();}
-  wrap.addEventListener('pointerup',endDrag);wrap.addEventListener('pointercancel',endDrag);
-  wrap.addEventListener('dblclick',function(){fitView();applyView();});
-  window.addEventListener('resize',function(){measure();fitView();applyView();});
-
-  /* ── 叠加层（routes/camps/converge/armies）── */
-  var gTopo,gBase,gRoutes,gCamps,gConv,gArmies,gPlaces,gLabels;
-  function initMap(){
-    svg.innerHTML='';
-    // 真实地形图栅格底图：按 DEMTOPO 经纬度范围投影到 SVG 用户坐标，随 viewBox 平移/缩放
-    gTopo=el('g',{},svg);
-    el('image',{href:DEMTOPO.src,x:px(DEMTOPO.lonMin),y:py(DEMTOPO.latMax),
-      width:px(DEMTOPO.lonMax)-px(DEMTOPO.lonMin),height:py(DEMTOPO.latMin)-py(DEMTOPO.latMax),
-      preserveAspectRatio:'none'},gTopo);
-    gBase=el('g',{},svg);gPlaces=el('g',{},svg);gRoutes=el('g',{},svg);gCamps=el('g',{},svg);
-    gConv=el('g',{},svg);gArmies=el('g',{},svg);gLabels=el('g',{},svg);drawBase();
-  }
-  function arrow(x1,y1,x2,y2,color){var ang=Math.atan2(y2-y1,x2-x1),s=9;
-    el('path',{d:'M'+x2+' '+y2+' L'+(x2-s*Math.cos(ang-0.4))+' '+(y2-s*Math.sin(ang-0.4))+' L'+(x2-s*Math.cos(ang+0.4))+' '+(y2-s*Math.sin(ang+0.4))+' Z',fill:color},gRoutes);}
-  function lerp(A,B,t){return [A[0]+(B[0]-A[0])*t, A[1]+(B[1]-A[1])*t];}
-
-  /* 水源判定：到「最近地点」与「最近河段（点到线段）」的最小距离。
-   * 用点到线段而非顶点采样，避免 NE 河流顶点稀疏导致的距离高估（误报无水）。 */
-  function distToSeg(px,py,ax,ay,bx,by){
-    var dx=bx-ax,dy=by-ay,l2=dx*dx+dy*dy;
-    if(l2===0)return haversine([px,py],[ax,ay]);
-    var t=((px-ax)*dx+(py-ay)*dy)/l2;t=Math.max(0,Math.min(1,t));
-    return haversine([px,py],[ax+t*dx,ay+t*dy]);
-  }
-  function nearestWaterKm(lon,lat){
-    var best=1e9;
-    PLACES.forEach(function(p){var d=haversine([lon,lat],[p.lon,p.lat]);if(d<best)best=d;});
-    if(BM&&BM.rivers)BM.rivers.forEach(function(f){
-      var c=f.g.coordinates,lines=(f.g.type==='LineString')?[c]:c;
-      lines.forEach(function(line){for(var i=0;i+1<line.length;i++){
-        var d=distToSeg(lon,lat,line[i][0],line[i][1],line[i+1][0],line[i+1][1]);if(d<best)best=d;
-      }});
-    });
-    return best;
-  }
-
-  /* 后勤 + 物理计算 */
-  function armyStats(a){
-    var A=PLACE[a.from],B=PLACE[a.to];if(!A||!B)return null;
-    var dist=haversine([A.lon,A.lat],[B.lon,B.lat]);
-    var rate=RATES[a.mode]||50; if(season==='winter') rate*=WINTER_RATE;
-    var marchDays=Math.max(1,Math.ceil(dist/rate));
-    var food=a.troops*marchDays*RATION, water=a.troops*marchDays*WATER;
-    // 扎营点
-    var camps=[];for(var k=1;k*CAMP_EVERY<marchDays;k++){var t=(k*CAMP_EVERY)/marchDays;var pos=lerp([A.lon,A.lat],[B.lon,B.lat],t);
-      camps.push({lon:pos[0],lat:pos[1],day:k*CAMP_EVERY,wk:nearestWaterKm(pos[0],pos[1])});}
-    return {A:A,B:B,dist:dist,rate:rate,marchDays:marchDays,food:food,water:water,camps:camps,
-      arrive:fmtD(parseD(a.depart)+marchDays*86400000)};
-  }
-
-  function computeChecks(){
-    var out=[],conv=PLACE[convergeAt];
-    if(!conv)out.push({level:'bad',msg:'合兵点「'+convergeAt+'」不在地点表中'});
-    var convTroops=0, convLeftover=0;
-    armies.forEach(function(a){
-      if(a.faction==='houjin')return; // 敌军不计入合兵
-      var st=armyStats(a);if(!st){out.push({level:'bad',msg:a.name+'：起点/终点缺失'});return;}
-      convTroops+=a.troops; convLeftover+=a.troops*(st.marchDays-Math.min(st.marchDays,daysBetween(a.depart,convergeBy)))*RATION;
-      // 1) 合兵时间窗
-      var avail=daysBetween(a.depart,convergeBy);
-      if(st.marchDays>avail) out.push({level:'bad',army:a,msg:a.name+'无法在合兵日('+convergeBy+')前抵达：需'+st.marchDays+'天，窗口仅'+avail+'天（缺口'+(st.marchDays-avail)+'天）→ 不可能按时合兵'});
-      else out.push({level:'ok',army:a,msg:a.name+'可于合兵日前抵达（需'+st.marchDays+'天 ≤ 窗口'+avail+'天）'});
-      // 2) 扎营水源（风险，非硬性不可行：山间或有泉井未入图；合兵点远水才判不可行）
-      st.camps.forEach(function(cp){ if(cp.wk>WATER_MAX_KM) out.push({level:'warn',army:a,msg:a.name+'第'+cp.day+'日扎营地距已测绘水源 '+cp.wk.toFixed(1)+'km（>'+WATER_MAX_KM+'km）→ 需就地寻泉/掘井或略偏路线就水，否则非战斗减员风险'}); });
-      // 3) 冬季保暖
-      if(season==='winter'){ st.camps.forEach(function(cp){ var nearPlace=PLACES.some(function(p){return haversine([cp.lon,cp.lat],[p.lon,p.lat])<20;});
-        if(!nearPlace) out.push({level:'warn',army:a,msg:a.name+'第'+cp.day+'日扎营地远离人居（>20km）→ 冬季柴薪/保暖困难，非战斗减员风险'}); }); }
-    });
-    // 4) 合兵点供水
-    if(conv){var cwk=nearestWaterKm(conv.lon,conv.lat);if(cwk>WATER_MAX_KM)out.push({level:'bad',msg:'合兵点'+conv.name+'距水源 '+cwk.toFixed(1)+'km → 大兵团集结无水'});}
-    // 5) 粮草可持续（合兵后无后续补给）
-    var siegePossible=convTroops>0?convLeftover/(convTroops*RATION):0;
-    if(siegePossible<SIEGE_DAYS) out.push({level:siegePossible<3?'bad':'warn',msg:'合兵后无后续补给线，所携粮仅够约 '+siegePossible.toFixed(1)+' 天会战（假设需'+SIEGE_DAYS+'天）→ 长期对峙粮草不足'});
-    else out.push({level:'ok',msg:'合兵后粮草可支撑约 '+siegePossible.toFixed(1)+' 天，满足 '+SIEGE_DAYS+' 日会战需求'});
-    return out;
-  }
-
-  /* 地名点（v0.47 高德式自适应聚合：缩放合并带数字、放大拆散、点击聚合泡展开）*/
-  function renderPlaces(){
-    if(!gPlaces)return; gPlaces.innerHTML='';
-    var scale=cw/view.w, TH=34, pts=[];
-    PLACES.forEach(function(p){ if(typeof p.lon!=='number'||typeof p.lat!=='number')return;
-      pts.push({p:p,x:(px(p.lon)-view.x)*scale,y:(py(p.lat)-view.y)*scale}); });
-    pts.sort(function(a,b){return a.p.id<b.p.id?-1:(a.p.id>b.p.id?1:0);});
-    var cs=[];
-    pts.forEach(function(it){var best=-1,bd=TH;
-      for(var i=0;i<cs.length;i++){var d=Math.hypot(cs[i].x-it.x,cs[i].y-it.y);if(d<bd){bd=d;best=i;}}
-      if(best>=0){var c=cs[best],n=c.members.length;c.x=(c.x*n+it.x)/(n+1);c.y=(c.y*n+it.y)/(n+1);c.members.push(it);}
-      else cs.push({x:it.x,y:it.y,members:[it]});});
-    cs.forEach(function(c){var ux=view.x+c.x/scale,uy=view.y+c.y/scale;
-      if(c.members.length===1){var p=c.members[0].p,big=(p.type==='city'||p.type==='capital');
-        el('circle',{cx:ux,cy:uy,r:(big?6:4)/scale,fill:big?'#2A2521':'#FBF9F3',stroke:'#2A2521','stroke-width':1.3,'vector-effect':'non-scaling-stroke'},gPlaces);
-        var lb=el('text',{x:ux+(big?7:5.5)/scale,y:uy+3.6/scale,'font-size':(big?12:10)/scale,fill:'#2A2521','paint-order':'stroke','stroke':'#F6F3EA','stroke-width':(big?3:2.5)/scale},gPlaces);
-        lb.textContent=p.name.replace(/（.*?）/g,'');}
-      else{var n=c.members.length,sr=Math.min(26,13+n*0.42),r=sr/scale;
-        var g=el('g',{class:'cluster'},gPlaces);
-        if(n>=5)el('circle',{cx:ux,cy:uy,r:r+3/scale,fill:'none',stroke:'#3E6E99','stroke-width':1,'stroke-opacity':.35,'vector-effect':'non-scaling-stroke'},g);
-        el('circle',{cx:ux,cy:uy,r:r,fill:'#3E6E99',stroke:'#FBF9F3','stroke-width':2,'vector-effect':'non-scaling-stroke'},g);
-        el('text',{x:ux,y:uy+sr*0.36/scale,'text-anchor':'middle',fill:'#FBF9F3','font-weight':'700','font-size':sr*0.92/scale},g).textContent=n;
-        var hit=el('circle',{cx:ux,cy:uy,r:Math.max(r,16/scale),fill:'transparent'},g);
-        el('title',{},hit).textContent=n+' 处地点（点击放大展开）';
-        hit.addEventListener('click',function(){var before=view.w;view.w*=0.5;view.w=Math.min(fitW*1.6,Math.max(MIN_W,view.w));var k=view.w/before;view.h=view.w*(ch/cw);view.x=ux-(ux-view.x)*k;view.y=uy-(uy-view.y)*k;applyView();});
-      }});
-  }
-
-  /* 渲染叠加层 */
-  function renderOverlay(){
-    if(!gRoutes)return;
-    gRoutes.innerHTML='';gCamps.innerHTML='';gConv.innerHTML='';gArmies.innerHTML='';gLabels.innerHTML='';
-    renderPlaces();
-    var conv=PLACE[convergeAt];
-    // 路线
-    armies.forEach(function(a){var A=PLACE[a.from],B=PLACE[a.to];if(!A||!B)return;
-      var col=a.faction==='houjin'?'#b23a48':'#3b6ea5';
-      el('path',{d:'M'+px(A.lon)+' '+py(A.lat)+' L'+px(B.lon)+' '+py(B.lat),fill:'none',stroke:col,'stroke-width':2.2,'stroke-dasharray':'6 4',opacity:.8,'vector-effect':'non-scaling-stroke'},gRoutes);
-      arrow(px(A.lon),py(A.lat),px(B.lon),py(B.lat),col);
-      // 起点/终点标记
-      el('rect',{x:px(A.lon)-4,y:py(A.lat)-4,width:8,height:8,fill:col,opacity:.9},gRoutes);
-      el('circle',{cx:px(B.lon),cy:py(B.lat),r:4,fill:'#fff',stroke:col,'stroke-width':2,'vector-effect':'non-scaling-stroke'},gRoutes);
-    });
-    // 扎营点
-    armies.forEach(function(a){if(a.faction==='houjin')return;var st=armyStats(a);if(!st)return;
-      st.camps.forEach(function(cp){var x=px(cp.lon),y=py(cp.lat);var ok=cp.wk<=WATER_MAX_KM;
-        el('circle',{cx:x,cy:y,r:3,fill:ok?'#fff':'#c0392b',stroke:ok?'#7d7464':'#c0392b','stroke-width':1.2,'vector-effect':'non-scaling-stroke'},gCamps);});
-    });
-    // 合兵点星标
-    if(conv){var cx=px(conv.lon),cy=py(conv.lat);
-      el('path',{d:star(cx,cy,11,5),fill:'#e0a92b',stroke:'#8a6d12','stroke-width':1.2,'vector-effect':'non-scaling-stroke'},gConv);
-      var t=el('text',{x:cx+10,y:cy+4,'font-size':12,fill:'#8a6d12','font-weight':700},gConv);t.textContent=conv.name+'（合兵点·'+convergeBy+'）';}
-    // 当前推演日军队位置
-    var dn=parseD(scrubDate);
-    armies.forEach(function(a){var A=PLACE[a.from],B=PLACE[a.to];if(!A||!B)return;var st=armyStats(a);if(!st)return;
-      var ad=parseD(a.depart), arr=parseD(st.arrive);
-      var prog=clamp((dn-ad)/((arr-ad)||1),0,1); var pos=lerp([A.lon,A.lat],[B.lon,B.lat],prog);
-      var x=px(pos[0]),y=py(pos[1]),col=a.faction==='houjin'?'#b23a48':'#3b6ea5';
-      el('circle',{cx:x,cy:y,r:6,fill:col,stroke:'#fff','stroke-width':2,'vector-effect':'non-scaling-stroke'},gArmies);
-      var short = (a.faction!=='houjin') && dn>=parseD(convergeBy) && prog<1;
-      var lab=el('text',{x:x+8,y:y+4,'font-size':11,fill:col,'font-weight':600},gArmies);lab.textContent=a.name+'·'+fmtTroops(a.troops);
-      if(short){var gap=Math.ceil((arr-dn)/86400000);var bd=el('text',{x:x+8,y:y+16,'font-size':10,fill:'#c0392b','font-weight':700},gArmies);bd.textContent='⚠未达合兵点(还差'+gap+'天)';}
-    });
-  }
-  function star(cx,cy,R,r){var d='';for(var i=0;i<10;i++){var ang=Math.PI/5*i-Math.PI/2,rad=i%2?r:R;d+=(i?'L':'M')+(cx+rad*Math.cos(ang))+' '+(cy+rad*Math.sin(ang))+' ';}return d+'Z';}
-  function fmtTroops(n){return n>=10000?(n/10000).toFixed(1)+'万':n;}
-
-  /* ── 面板渲染 ── */
-  function renderArmyEditor(){
-    var box=document.getElementById('armyList');box.innerHTML='';
-    armies.forEach(function(a,idx){
-      var div=document.createElement('div');div.className='army'+(a.faction==='ming'?' kin':'');
-      var facHtml='<span class="badge '+(a.faction==='ming'?'ming':'houjin')+'">'+(a.faction==='ming'?'明':'后金')+'</span>';
-      div.innerHTML='<div class="row"><span class="name">'+a.name+'</span> '+facHtml+' <span style="flex:1"></span><button data-del="'+idx+'">✕</button></div>'
-        +row('名称','<input data-f="name" data-i="'+idx+'" value="'+a.name+'">')
-        +row('起点','<select data-f="from" data-i="'+idx+'">'+placeOpts(a.from)+'</select>')
-        +row('终点','<select data-f="to" data-i="'+idx+'">'+placeOpts(a.to)+'</select>')
-        +row('兵力','<input data-f="troops" data-i="'+idx+'" type="number" value="'+a.troops+'">')
-        +row('方式','<select data-f="mode" data-i="'+idx+'"><option value="forced"'+(a.mode==='forced'?' selected':'')+'>急行</option><option value="foot"'+(a.mode==='foot'?' selected':'')+'>步卒</option><option value="cavalry"'+(a.mode==='cavalry'?' selected':'')+'>骑兵</option></select>')
-        +row('出发','<input data-f="depart" data-i="'+idx+'" type="date" value="'+a.depart+'">');
-      box.appendChild(div);
-    });
-    box.querySelectorAll('[data-f]').forEach(function(inp){inp.addEventListener('change',function(){
-      var i=+inp.getAttribute('data-i'),f=inp.getAttribute('data-f');armies[i][f]=inp.value;onChange();});});
-    box.querySelectorAll('[data-del]').forEach(function(b){b.addEventListener('click',function(){armies.splice(+b.getAttribute('data-del'),1);renderArmyEditor();onChange();});});
-  }
-  function row(l,v){return '<div class="row"><label>'+l+'</label>'+v+'</div>';}
-  function placeOpts(sel){return PLACES.map(function(p){return '<option value="'+p.id+'"'+(p.id===sel?' selected':'')+'>'+p.name+'</option>';}).join('');}
-
-  function renderChecks(){
-    var box=document.getElementById('checks');box.innerHTML='';
-    var list=computeChecks();
-    list.forEach(function(c){var d=document.createElement('div');d.className='chk '+c.level;
-      d.innerHTML='<span class="tag">'+(c.level==='ok'?'✓':c.level==='warn'?'!':'✕')+'</span>'+c.msg;box.appendChild(d);});
-    var bad=list.filter(function(c){return c.level==='bad';}).length;
-    var head=document.createElement('div');head.className='meta-line';head.innerHTML='校验结果：<b class="'+(bad?'err':'')+'">'+bad+' 项物理/后勤违规</b> · 共 '+list.length+' 条';
-    box.insertBefore(head,box.firstChild);
-  }
-  function renderLogi(){
-    var box=document.getElementById('logi');box.innerHTML='';
-    armies.forEach(function(a){if(a.faction==='houjin')return;var st=armyStats(a);if(!st)return;
-      var d=document.createElement('div');d.className='result';
-      d.innerHTML='<h3>'+a.name+' <span class="pill">'+fmtTroops(a.troops)+'</span></h3>'
-        +'<div class="meta-line">'+st.A.name+'→'+st.B.name+'：'+st.dist.toFixed(0)+' km · '+st.marchDays+' 日（'+a.mode+'·'+(season==='winter'?'冬速×0.75':'')+'）</div>'
-        +'<div class="meta-line">粮 '+Math.round(st.food/1000)+' 吨 · 水 '+Math.round(st.water/1000)+' 吨(等价) · 扎营 '+st.camps.length+' 处</div>';
-      box.appendChild(d);});
-  }
-  function renderLegend(){
-    var L=document.getElementById('legend');
-    L.innerHTML='<div style="font-weight:700;margin-bottom:4px">图例</div>'
-      +'<div class="li"><span class="sw" style="background:#3b6ea5"></span>明军路线/位置</div>'
-      +'<div class="li"><span class="sw" style="background:#b23a48"></span>后金（敌军）</div>'
-      +'<div class="li"><span class="sw" style="background:#e0a92b;border-radius:50%"></span>合兵点</div>'
-      +'<div class="li"><span class="sw" style="background:#fff;border:1px solid #7d7464"></span>扎营点（白=近水）</div>'
-      +'<div class="li"><span class="sw" style="background:#c0392b;border-radius:50%"></span>扎营点（红=远水）</div>'
-      +'<div class="li" style="margin-top:4px;color:#7d7464">底层为真实地形图（复旦 CHGIS DemTopo 分层设色，海洋已抹去蓝色），陆地配色即地图本色。</div>';
-  }
-
-  /* ── LLM 推演接口（预留 + 本地确定性回退）── */
-  function buildCtx(){
-    var conv=PLACE[convergeAt];
-    var armiesInfo=armies.map(function(a){var st=armyStats(a);return{name:a.name,faction:a.faction,from:a.from,to:a.to,troops:a.troops,mode:a.mode,depart:a.depart,
-      dist:st?+st.dist.toFixed(0):null,marchDays:st?st.marchDays:null,arrive:st?st.arrive:null,food:st?Math.round(st.food):null};});
-    return {scene:sceneKey,season:season,convergeAt:convergeAt,convergeBy:convergeBy,
-      checks:computeChecks(),armies:armiesInfo,
-      totalTroops:armies.filter(function(a){return a.faction==='ming';}).reduce(function(s,a){return s+a.troops;},0)};
-  }
-  function localPredict(text,ctx){
-    var bad=ctx.checks.filter(function(c){return c.level==='bad';});
-    var warn=ctx.checks.filter(function(c){return c.level==='warn';});
-    var lines=[];
-    if(text&&text.trim())lines.push('【用户输入】'+text.trim());
-    if(bad.length){
-      lines.push('\n【结论：不可行】该假设违反以下物理 / 后勤限制：');
-      bad.forEach(function(c){lines.push('  ✕ '+c.msg);});
-      lines.push('\n→ 任何依赖「'+ctx.convergeBy+' 前于 '+PLACE[ctx.convergeAt].name+' 会师」的走势，在给定行军速、粮草、水源约束下无法成立。');
-    }else{
-      lines.push('\n【结论：可行】各路可在合兵日前抵达，合计明军约 '+fmtTroops(ctx.totalTroops)+'。');
-      lines.push('预测走势：六路会师于 '+PLACE[ctx.convergeAt].name+'，兵力集中、正面攻坚后金。');
-      lines.push('但需注意：① 史实努尔哈赤以「凭尔几路来，我只一路去」集中兵力各个击破；若真合兵，后金难以应对，');
-      lines.push('   然明军传统短板在协同与后勤——合兵后无后续补给线，粮草仅够约 '+siegeDays(ctx).toFixed(1)+' 天会战；');
-      lines.push('② 扎营须近水（≤'+WATER_MAX_KM+'km），辽东山溪众多尚可，冬季则柴薪/保暖成非战斗减员隐患。');
-      if(warn.length){lines.push('\n风险提示：');warn.forEach(function(c){lines.push('  ! '+c.msg);});}
-    }
-    return lines.join('\n');
-  }
-  function siegeDays(ctx){
-    var convTroops=0,leftover=0;
-    armies.forEach(function(a){if(a.faction==='houjin')return;var st=armyStats(a);if(!st)return;
-      convTroops+=a.troops;leftover+=a.troops*(st.marchDays-Math.min(st.marchDays,daysBetween(a.depart,convergeBy)))*RATION;});
-    return convTroops>0?leftover/(convTroops*RATION):0;
-  }
-  async function predictScenario(){
-    var text=document.getElementById('scenarioText').value;
-    var ctx=buildCtx();
-    var out;
-    if(LLM_CONFIG.endpoint && LLM_CONFIG.apiKey){
-      try{
-        var sys='你是历史军事推演助手。给定反事实假设与确定性物理/后勤校验结果，若假设可行则预测走势，若不可行则明确指出违反的物理/后勤限制并解释。';
-        var user='情景：'+(text||'(无自然语言描述，按当前结构化配置推演)')+'\n配置：'+JSON.stringify(ctx,null,1);
-        var resp=await fetch(LLM_CONFIG.endpoint,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+LLM_CONFIG.apiKey},
-          body:JSON.stringify({model:LLM_CONFIG.model,messages:[{role:'system',content:sys},{role:'user',content:user}],temperature:0.3})});
-        var j=await resp.json();
-        out=(j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||JSON.stringify(j);
-      }catch(e){ out='【LLM 调用失败，回退本地推演】'+e.message+'\n\n'+localPredict(text,ctx); }
-    }else{
-      out=localPredict(text,ctx);
-    }
-    document.getElementById('llmOut').textContent=out;
-  }
-  // 暴露接口供高级用户/真实 LLM 接入
-  window.WHATIF_LLM=async function(text,ctx){ return (LLM_CONFIG.endpoint&&LLM_CONFIG.apiKey)
-    ? (await predictViaLLM(text,ctx)) : localPredict(text,ctx); };
-  async function predictViaLLM(text,ctx){ /* 与 predictScenario 同路径，供外部调用 */
-    var sys='历史军事推演助手：可行则预测走势，不可行则说明物理/后勤限制。';
-    var user='情景：'+(text||'')+'\n'+JSON.stringify(ctx,null,1);
-    var resp=await fetch(LLM_CONFIG.endpoint,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+LLM_CONFIG.apiKey},
-      body:JSON.stringify({model:LLM_CONFIG.model,messages:[{role:'system',content:sys},{role:'user',content:user}],temperature:0.3})});
-    var j=await resp.json();return (j.choices&&j.choices[0].message.content)||JSON.stringify(j);
-  }
-
-  /* ── 变更重算 ── */
-  function onChange(){
-    measure();computeBox();fitView();applyView();
-    renderChecks();renderLogi();
-    // 时间轴范围
-    var ds=armies.map(function(a){return parseD(a.depart);});var minD=Math.min.apply(null,ds),maxD=parseD(convergeBy);
-    armies.forEach(function(a){var st=armyStats(a);if(st)maxD=Math.max(maxD,parseD(st.arrive));});
-    var sc=document.getElementById('dateScrub');sc.min=0;sc.max=Math.max(1,daysBetween(fmtD(minD),fmtD(maxD)));
-    sc.value=daysBetween(fmtD(minD),scrubDate);document.getElementById('scrubLbl').textContent=scrubDate;
-  }
-
-  /* ── 初始化 ── */
   function init(){
-    // 场景下拉
-    var ss=document.getElementById('sceneSel');
-    Object.keys(SD.scenes).filter(function(k){(SD.scenes[k].places||[]).some(function(p){return typeof p.lon==='number';})&&SD.scenes[k].basemap;}).forEach(function(k){
-      var o=document.createElement('option');o.value=k;o.textContent=(SD.scenes[k].meta&&SD.scenes[k].meta.title)||k;if(k===sceneKey)o.selected=true;ss.appendChild(o);});
-    ss.addEventListener('change',function(){if(loadScene(ss.value)){armies=defaultArmies();document.getElementById('convergeSel').value=convergeAt;renderAll();}});
-    // 合兵点下拉
-    var cs=document.getElementById('convergeSel');
-    PLACES.forEach(function(p){var o=document.createElement('option');o.value=p.id;o.textContent=p.name;if(p.id===convergeAt)o.selected=true;cs.appendChild(o);});
-    cs.addEventListener('change',function(){convergeAt=cs.value;onChange();});
-    document.getElementById('convergeDate').addEventListener('change',function(){convergeBy=this.value;onChange();});
-    document.getElementById('seasonSel').addEventListener('change',function(){season=this.value;onChange();});
-    document.getElementById('allToConv').addEventListener('click',function(){armies.forEach(function(a){if(a.faction==='ming')a.to=convergeAt;});renderArmyEditor();onChange();});
-    document.getElementById('resetBtn').addEventListener('click',function(){armies=defaultArmies();renderArmyEditor();onChange();});
-    document.getElementById('addArmy').addEventListener('click',function(){armies.push({id:'new'+Date.now(),name:'新军',faction:'ming',from:PLACES[0].id,to:convergeAt,troops:20000,mode:'foot',depart:convergeBy});renderArmyEditor();onChange();});
-    document.getElementById('predictBtn').addEventListener('click',predictScenario);
-    document.getElementById('dateScrub').addEventListener('input',function(){var minD=Math.min.apply(null,armies.map(function(a){return parseD(a.depart);}));
-      scrubDate=fmtD(minD+ (+this.value)*86400000);document.getElementById('scrubLbl').textContent=scrubDate;renderOverlay();});
-
-    measure();renderArmyEditor();renderLegend();renderAll();
+    var base = '../data/' + SCENE + '/';
+    Promise.all([
+      getJSON(base + 'sim_config.json').catch(function(){ return null; }),
+      getJSON(base + 'branch_events_' + BRANCH + '.json').catch(function(){ return null; }),
+      getJSON(base + 'state_hist_' + BRANCH + '.json').catch(function(){ return null; }),
+      getJSON(base + 'places.json').catch(function(){ return null; })
+    ]).then(function(res){
+      var cfg = res[0], be = res[1], histBranch = res[2], places = res[3];
+      if(!cfg){ throw new Error('缺少 sim_config.json（场景 '+SCENE+' 非反事实场景或尚未生成）'); }
+      var realBranch = cfg.real_branch || 'repeal';
+      var realFile = (realBranch === BRANCH) ? null : base + 'state_hist_' + realBranch + '.json';
+      return getJSON(realFile || base + 'state_hist_' + BRANCH + '.json').then(function(histReal){
+        return { cfg:cfg, be:be, histBranch:histBranch, histReal:histReal, places:places, realBranch:realBranch };
+      });
+    }).then(function(D){ render(D); }).catch(fail);
   }
-  function renderAll(){computeBox();initMap();fitView();applyView();renderChecks();renderLogi();onChange();}
 
-  // 启动
-  if(!loadScene(sceneKey))return;
-  // 等 data.js 完全就绪
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+  var STATE = { mode:'branch', year:0 };
+
+  function render(D){
+    var cfg = D.cfg, be = D.be || {events:[]}, hb = D.histBranch || [], hr = D.histReal || [];
+    var yrs = (hb.length ? hb : hr).map(function(s){ return s.year; });
+    var y0 = yrs[0], y1 = yrs[yrs.length-1];
+    var dimTargets = cfg.dim_targets || ['制度','经济','思想','社会','技术'];
+    var scenarioType = cfg.scenario_type || 'reform';
+    $('sceneHint').textContent = SCENE + ' · ' + scenarioType + ' · ' + (y0||'?') + '–' + (y1||'?');
+
+    var bb = $('branchBox'); bb.innerHTML='';
+    (cfg.branches||[]).forEach(function(b){
+      var x=document.createElement('button'); x.className='btn'; x.style.cssText='margin:3px;';
+      x.textContent=b.label||b.id; x.dataset.id=b.id;
+      if(b.id===BRANCH){ x.style.background='var(--accent)'; x.style.color='#fff'; }
+      x.onclick=function(){ location.search='?scene='+SCENE+'&branch='+b.id; };
+      bb.appendChild(x);
+    });
+    if(!bb.children.length) bb.innerHTML='<span class="hint">无分支配置</span>';
+
+    var ys=$('year'); ys.min=y0; ys.max=y1; ys.value=y0; STATE.year=y0;
+    ys.oninput=function(){ STATE.year=+ys.value; updateYear(D); };
+    $('modeToggle').querySelectorAll('button').forEach(function(btn){
+      btn.onclick=function(){ STATE.mode=btn.dataset.mode;
+        $('modeToggle').querySelectorAll('button').forEach(function(x){ x.classList.toggle('active', x===btn); });
+        drawChart(D); updateYear(D); };
+    });
+
+    drawChart(D);
+    renderHeat(D);
+    renderEvents(be);
+    updateYear(D);
+    buildLegend(dimTargets);
+    $('geoNote').textContent = (scenarioType==='military')
+      ? '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。'
+      : '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）。';
+  }
+
+  function yearIndex(D, y){
+    var hb=D.histBranch||[]; for(var i=0;i<hb.length;i++) if(hb[i].year===y) return i; return -1;
+  }
+
+  function drawChart(D){
+    var hb=D.histBranch||[], hr=D.histReal||[];
+    var dimTargets = D.cfg.dim_targets || ['制度','经济','思想','社会','技术'];
+    if(!hb.length){ $('chartWrap').innerHTML='<div class="hint">无六维时序数据。</div>'; return; }
+    var W=720, H=320, padL=40, padR=16, padT=16, padB=34;
+    var yrs=hb.map(function(s){return s.year;});
+    var y0=yrs[0], y1=yrs[yrs.length-1];
+    function px(y){ return padL + (y1>y0? (y-y0)/(y1-y0):0)*(W-padL-padR); }
+    function py(v){ return padT + (1-v)*(H-padT-padB); }
+    function val(s,dim){ return (s.dims&&s.dims[dim]!=null)?s.dims[dim]:(s.reform_index||0); }
+    var svg='<svg class="chart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">';
+    for(var g=0; g<=1.0001; g+=0.25){
+      var gy=py(g);
+      svg+='<line x1="'+padL+'" y1="'+gy+'" x2="'+(W-padR)+'" y2="'+gy+'" stroke="#e3d8bf" stroke-width="1"/>';
+      svg+='<text x="'+(padL-6)+'" y="'+(gy+3)+'" font-size="10" fill="#5b5249" text-anchor="end">'+g.toFixed(2)+'</text>';
+    }
+    yrs.forEach(function(y){
+      if((y-y0)%Math.ceil((y1-y0+1)/8)===0 || y===y1){
+        svg+='<text x="'+px(y)+'" y="'+(H-padB+14)+'" font-size="10" fill="#5b5249" text-anchor="middle">'+y+'</text>';
+      }
+    });
+    var palette=['#7a5a2e','#3f7d54','#b5443a','#7fa7c4','#9a6db0','#c8a24a'];
+    dimTargets.forEach(function(dim, di){
+      var col=palette[di%palette.length];
+      if(hr.length){
+        var pts=hr.map(function(s){ return px(s.year)+','+py(val(s,dim)); }).join(' ');
+        svg+='<polyline points="'+pts+'" fill="none" stroke="#9a9286" stroke-width="1.4" stroke-dasharray="4 3"/>';
+      }
+      var ptsB=hb.map(function(s){ return px(s.year)+','+py(val(s,dim)); }).join(' ');
+      svg+='<polyline points="'+ptsB+'" fill="none" stroke="'+col+'" stroke-width="2"/>';
+      svg+='<text x="'+(W-padR-2)+'" y="'+(py(val(hb[hb.length-1],dim))+4)+'" font-size="10" fill="'+col+'" text-anchor="end">'+dim+'</text>';
+    });
+    svg+='<line x1="'+px(STATE.year)+'" y1="'+padT+'" x2="'+px(STATE.year)+'" y2="'+(H-padB)+'" stroke="#b5443a" stroke-width="1" stroke-dasharray="2 2"/>';
+    svg+='</svg>';
+    $('chartWrap').innerHTML=svg;
+  }
+
+  function renderHeat(D){
+    var hb=D.histBranch||[], hr=D.histReal||[];
+    var dimTargets = D.cfg.dim_targets || ['制度','经济','思想','社会','技术'];
+    if(!hb.length){ $('heatWrap').innerHTML=''; return; }
+    var idx={}; hr.forEach(function(s){ idx[s.year]=s; });
+    function val(s,dim){ return (s.dims&&s.dims[dim]!=null)?s.dims[dim]:(s.reform_index||0); }
+    var tbl='<table class="dim-table"><tr><th>年</th>';
+    dimTargets.forEach(function(d){ tbl+='<th>'+d+'</th>'; });
+    tbl+='</tr>';
+    hb.forEach(function(s){
+      tbl+='<tr><td>'+s.year+'</td>';
+      dimTargets.forEach(function(d){
+        var v=val(s,d);
+        if(STATE.mode==='diff' && idx[s.year]){
+          var dlt=v-val(idx[s.year],d);
+          tbl+='<td style="background:'+(dlt>=0?'rgba(63,125,84,.18)':'rgba(181,68,58,.18)')+'">'+(dlt>=0?'+':'')+dlt.toFixed(2)+'</td>';
+        } else {
+          var bg='rgba(122,90,46,'+(0.15+0.8*v)+')';
+          tbl+='<td style="background:'+bg+';color:#fff">'+v.toFixed(2)+'</td>';
+        }
+      });
+      tbl+='</tr>';
+    });
+    tbl+='</table>';
+    var head = STATE.mode==='real'?'史实':STATE.mode==='branch'?'反事实':'差异';
+    $('heatWrap').innerHTML='<section class="block"><h2>六维明细（'+head+'）</h2><div class="c">'+
+      (STATE.mode==='diff'?'<div class="hint">差异模式：绿=反事实高于史实，红=低于。</div>':'')+tbl+'</div></section>';
+  }
+
+  function renderEvents(be){
+    var el=$('be'); var evs=(be&&be.events)||[];
+    if(!evs.length){ el.innerHTML='<div class="hint">本分支无偏离事件。</div>'; return; }
+    var byYear={}; evs.forEach(function(e){ (byYear[e.year]=byYear[e.year]||[]).push(e); });
+    var html='';
+    Object.keys(byYear).sort(function(a,b){return +a-+b;}).forEach(function(y){
+      byYear[y].forEach(function(e){
+        var sev=e.severity||'info';
+        html+='<div class="ev '+sev+'"><span class="sev">'+SEV_LABEL[sev]+'</span><b>'+y+'</b> '+(e.description||'')+'</div>';
+      });
+    });
+    el.innerHTML=html;
+  }
+
+  function updateYear(D){
+    $('yrVal').textContent=STATE.year;
+    var hb=D.histBranch||[], hr=D.histReal||[];
+    var i=yearIndex(D, STATE.year);
+    var s = i>=0? hb[i] : null;
+    var sr=null; hr.forEach(function(x){ if(x.year===STATE.year) sr=x; });
+    var dimTargets = D.cfg.dim_targets || ['制度','经济','思想','社会','技术'];
+    function val(o,dim){ return (o&&o.dims&&o.dims[dim]!=null)?o.dims[dim]:(o?o.reform_index:0); }
+    var box=$('dimNow');
+    if(!s){ box.innerHTML='<div class="hint">'+STATE.year+' 无数据</div>'; }
+    else {
+      var html='<div style="margin-bottom:6px">改革指数 <b>'+(s.reform_index!=null?s.reform_index.toFixed(2):'—')+'</b> · 教育垄断 <b>'+(s.education_monopoly!=null?s.education_monopoly.toFixed(2):'—')+'</b></div>';
+      dimTargets.forEach(function(d){
+        var v=val(s,d), rv=sr?val(sr,d):0;
+        html+='<div class="stat"><span>'+d+'</span><span class="num">'+v.toFixed(2)+
+          (sr?' <span style="color:var(--ink-soft);font-weight:400">('+( (v-rv)>=0?'+':'')+(v-rv).toFixed(2)+' vs 史实)</span>':'')+'</span></div>';
+      });
+      box.innerHTML=html;
+    }
+    if(sr){
+      var div=0,n=0;
+      dimTargets.forEach(function(d){ div+=Math.abs(val(s,d)-val(sr,d)); n++; });
+      var avg=div/(n||1);
+      $('stats').innerHTML=
+        '<div class="stat"><span>当前年（'+STATE.year+'）六维平均偏离</span><span class="num">'+avg.toFixed(3)+'</span></div>'+
+        '<div class="bar"><i style="width:'+Math.min(100,avg*100)+'%"></i></div>'+
+        '<div class="stat"><span>反事实分支</span><span class="num">'+BRANCH+'</span></div>'+
+        '<div class="stat"><span>史实基准</span><span class="num">'+(D.realBranch||'repeal')+'</span></div>'+
+        '<div class="hint">平均偏离=各目标维度 |反事实−史实| 的均值，范围 0–1。</div>';
+    }
+    drawChart(D); renderHeat(D);
+  }
+
+  function buildLegend(dimTargets){
+    var box=$('legend');
+    box.innerHTML =
+      '<span class="it"><span class="ln dash"></span>史实基准</span>'+
+      '<span class="it"><span class="ln"></span>反事实</span>'+
+      '<span class="it"><span class="sw" style="background:var(--info)"></span>趋势</span>'+
+      '<span class="it"><span class="sw" style="background:var(--warn)"></span>风险</span>'+
+      '<span class="it"><span class="sw" style="background:var(--bad)"></span>危局</span>'+
+      '<span class="it" style="margin-left:auto;color:var(--ink-soft)">Branch Event 符合 v0.57 schema · 诚实边界 [what-if]</span>';
+  }
 })();
 </script>
 </body>

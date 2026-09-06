@@ -30,5 +30,20 @@ r2, _h2 = S.simulate("imjin", "imjin_ming_full_commit", 1592, 1598,
                      {"朝鲜":20000, "日本方":28000}, reinforce)
 check("分支推演有产出", len(r2) >= 5)
 
+# ── G2 六维广度：非军事反事实推演（song_wanganshi 熙宁变法）──
+cfg = S.load_sim_config("song_wanganshi")
+check("song_wanganshi sim_config 可读", cfg is not None and cfg.get("scenario_type") == "reform")
+sh_p, be_p, rt_p = S.simulate_nonmilitary("song_wanganshi", "persist", 1069, 1085, cfg)
+check("非军事六维时序产出 17 年", len(sh_p) == 17)
+check("非军事产生 Branch Event", len(be_p) >= 1)
+kind_ok = all(e.get("kind") in ("divergence","logistics","faction","momentum","summary") for e in be_p)
+sev_ok = all(e.get("severity") in ("info","warn","bad") for e in be_p)
+yr_ok  = all(isinstance(e.get("year"), int) for e in be_p)
+check("Branch Event 符合 v0.57 schema", kind_ok and sev_ok and yr_ok)
+check("终局改革指数 反事实>史实", sh_p[-1]["reform_index"] > rt_p[-1] + 0.3)
+check("real 基准轨迹长度 17", len(rt_p) == 17)
+# 阻力生效：persist 增速被 local 教育垄断折减（终局未到 1.0 上限封死）
+check("阻力生效（persist 未封顶）", sh_p[-1]["reform_index"] < 1.0)
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

@@ -1,0 +1,12 @@
+{
+  "_comment": "song_wanganshi 非军事反事实配置（G2 六维广度 · v0.124）。scenario_type=reform 扰动 制度/经济/思想 三维；real_branch=repeal 为史实基准（新法渐废），persist 为反事实（新法持续）。base_rate 为年增速，受 local 教育垄断阻力折减（见 simulate_nonmilitary）。",
+  "scenario_type": "reform",
+  "dim_targets": ["制度", "经济", "思想"],
+  "start_year": 1069,
+  "end_year": 1085,
+  "real_branch": "repeal",
+  "branches": [
+    {"id": "repeal", "label": "史实·新法渐废", "base_rate": -0.03, "reform0": 0.55},
+    {"id": "persist", "label": "反事实·新法持续", "base_rate": 0.04, "reform0": 0.55}
+  ]
+}

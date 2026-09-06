@@ -26,10 +26,11 @@ import agent_model as AM
 
 
 def load_scene_data(scene_id):
-    """载入场景的 places/edges/control。"""
+    """载入场景的 places/edges/control（edges 对非军事场景可选，缺失则视为空）。"""
     d = os.path.join(ROOT, "data", scene_id)
     places = json.load(open(os.path.join(d, "places.json"), encoding="utf-8"))
-    edges = json.load(open(os.path.join(d, "edges.json"), encoding="utf-8"))
+    ep = os.path.join(d, "edges.json")
+    edges = json.load(open(ep, encoding="utf-8")) if os.path.exists(ep) else {"edges": []}
     control = json.load(open(os.path.join(d, "control.json"), encoding="utf-8"))
     return places, edges, control
 
@@ -302,13 +303,130 @@ def simulate(scene, branch, start_year, end_year, forces, reinforcements=None):
     return output_control, state_history
 
 
+# ── G2 六维广度：非军事反事实推演分支（v0.124 北极星③）──
+# 复用三阶层 Agent 模型提供「阻力」：local 教育垄断越高，改革/工程/思想推进越慢。
+# 产出六维状态时序（dim_state）+ Branch Event（符合 docs/sim_branch_event.schema.json）。
+DIM_NAMES = ["地理", "技术", "制度", "社会", "思想", "事件"]
+
+
+def load_sim_config(scene):
+    """载入场景的非军事推演配置（scenario_type / dim_targets / branches）。"""
+    p = os.path.join(ROOT, "data", scene, "sim_config.json")
+    if os.path.exists(p):
+        return json.load(open(p, encoding="utf-8"))
+    return None
+
+
+def _reform_trajectory(start_year, end_year, rate, reform0):
+    """给定年度增速 rate，算出改革指数时序（夹在 [0,1]）。"""
+    traj = []
+    r = reform0
+    for _ in range(start_year, end_year + 1):
+        r = max(0.0, min(1.0, r + rate))
+        traj.append(round(r, 4))
+    return traj
+
+
+def simulate_nonmilitary(scene, branch, start_year, end_year, cfg):
+    """非军事确定性推演：扰动六维中的目标维度，复用三阶层 Agent 提供阻力。
+
+    返回 (state_history, branch_events, real_traj)。
+      - state_history: 每年 {year, reform_index, education_monopoly, dims:{六维}}
+      - branch_events: 符合 v0.57 schema 的反事实偏离事件
+      - real_traj: 史实基准（real_branch）的改革指数时序，供 viewer 对比
+    """
+    places, edges, control_data = load_scene_data(scene)
+    place_list = [p["id"] for p in places["places"]]
+    agents = AM.create_agents(place_list, control_data, start_year, "main")
+    # 初始化资源：非军事场景无驻军，edu_control 表征教育/释经垄断（local 更高）
+    for pid, a in agents.items():
+        a.resources["troops"] = 0
+        a.resources["grain"] = max(1, 100)
+        a.resources["edu_control"] = 0.25 + (0.55 if a.cls == "local" else 0.0)
+
+    dim_targets = cfg.get("dim_targets", DIM_NAMES[1:])  # 默认扰动除「地理」外五维
+    branches = {b["id"]: b for b in cfg.get("branches", [])}
+    br = branches.get(branch, {"id": branch, "base_rate": 0.0})
+    real_branch = cfg.get("real_branch", "repeal")
+    real_rate = branches.get(real_branch, {"base_rate": 0.0}).get("base_rate", 0.0)
+
+    reform0 = br.get("reform0", 0.5)
+    base_rate = br.get("base_rate", 0.0)
+
+    # 史实基准轨迹
+    real_traj = _reform_trajectory(start_year, end_year, real_rate, reform0)
+
+    state_history = []
+    branch_events = []
+    r = reform0
+    for i, year in enumerate(range(start_year, end_year + 1)):
+        metrics = AM.compute_metrics(agents, {})
+        edu_mono = metrics["education_monopoly"]
+        # 阻力：教育垄断越高，改革推进越被 local 绅士拖慢
+        resistance = edu_mono
+        growth = base_rate * (1 - 0.6 * resistance)
+        r = max(0.0, min(1.0, r + growth))
+
+        dims = {d: 0.5 for d in DIM_NAMES}
+        dims["地理"] = 1.0  # 地理维度非本场景扰动对象，恒定占位
+        for d in dim_targets:
+            dims[d] = round(r, 3)
+        # 社会维由动员度/凝聚力派生，思想维由教育垄断派生
+        dims["社会"] = round(metrics["mobilization"], 3) if "社会" not in dim_targets else dims["社会"]
+        dims["思想"] = round(edu_mono, 3) if "思想" not in dim_targets else dims["思想"]
+
+        state_history.append({
+            "year": year,
+            "reform_index": round(r, 3),
+            "education_monopoly": round(edu_mono, 3),
+            "dims": dims,
+        })
+
+        # 与史实基准比较 → divergence 事件（severity: info/warn/bad）
+        real_r = real_traj[i]
+        div = round(r - real_r, 3)
+        if abs(div) >= 0.15:
+            sev = "bad" if abs(div) >= 0.35 else "warn"
+            branch_events.append({
+                "kind": "divergence",
+                "year": year,
+                "severity": sev,
+                "description": u"改革指数偏离史实 %.2f（本支 %.2f / 史实 %.2f）" % (div, r, real_r),
+                "evidence": {"rule": "R_reform", "real_to": real_r, "new_to": round(r, 3), "cum": div},
+            })
+
+    # 终局 summary 事件
+    fin_div = round(r - real_traj[-1], 3)
+    fin_sev = "bad" if abs(fin_div) >= 0.35 else ("warn" if abs(fin_div) >= 0.15 else "info")
+    branch_events.append({
+        "kind": "summary",
+        "year": end_year,
+        "severity": fin_sev,
+        "description": u"终局改革指数：本支 %.2f / 史实 %.2f（偏离 %.2f）" % (r, real_traj[-1], fin_div),
+        "evidence": {"cum": fin_div, "match": 0, "total": 1},
+    })
+    return state_history, branch_events, real_traj
+
+
+def run_scene(scene, branch, start_year, end_year, forces, reinforcements,
+              scenario_type="military", dim_targets=None, cfg=None):
+    """统一入口：军事走原 simulate()，非军事走 simulate_nonmilitary()。"""
+    if scenario_type == "military":
+        return simulate(scene, branch, start_year, end_year, forces, reinforcements)
+    return simulate_nonmilitary(scene, branch, start_year, end_year, cfg or {})
+
+
 def main():
-    ap = argparse.ArgumentParser(description="确定性战争推演引擎")
-    ap.add_argument("--scene", required=True, help="场景 id，如 imjin")
+    ap = argparse.ArgumentParser(description="确定性推演引擎（军事+非军事·v0.124）")
+    ap.add_argument("--scene", required=True, help="场景 id，如 imjin / song_wanganshi")
     ap.add_argument("--branch", default="main", help="分支 timeline id")
     ap.add_argument("--years", nargs=2, type=int, required=True, metavar=("START", "END"))
-    ap.add_argument("--forces", nargs="*", help="初始兵力 party=num")
-    ap.add_argument("--reinforce", nargs="*", help="增援 year:party:troops:entry")
+    ap.add_argument("--forces", nargs="*", help="初始兵力 party=num（军事）")
+    ap.add_argument("--reinforce", nargs="*", help="增援 year:party:troops:entry（军事）")
+    ap.add_argument("--scenario-type", default="military",
+                    choices=["military", "reform", "engineering", "thought", "economic", "social"],
+                    help="推演类型：军事（领土控制）或非军事（六维扰动）")
+    ap.add_argument("--dim-targets", nargs="*", help="非军事：受扰动的六维子集（默认除地理外五维）")
     ap.add_argument("--out", help="输出路径")
     args = ap.parse_args()
 
@@ -322,32 +440,67 @@ def main():
 
     reinforcements = []
     if args.reinforce:
-        for r in args.reinforce:
-            parts = r.split(":")
+        for rline in args.reinforce:
+            parts = rline.split(":")
             reinforcements.append(
                 (int(parts[0]), parts[1], int(parts[2]), parts[3]))
 
-    result, _state_history = simulate(args.scene, args.branch,
-                      args.years[0], args.years[1], forces, reinforcements)
+    cfg = None
+    if args.scenario_type != "military":
+        cfg = load_sim_config(args.scene) or {}
+        if args.dim_targets:
+            cfg = dict(cfg)
+            cfg["dim_targets"] = args.dim_targets
 
-    out_path = args.out or os.path.join(
-        ROOT, "data", args.scene,
-        "control_sim_%s.json" % args.branch)
+    base_dir = os.path.join(ROOT, "data", args.scene)
 
-    output = {"_comment": "确定性推演结果 (v0.36 sim+agent)",
-              "_branch": args.branch, "_scene": args.scene,
-              "_years": list(args.years), "_forces": forces,
-              "control": result}
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=1)
-        f.write("\n")
-    # 同时写阶级指标
-    hist_path = out_path.replace("control_sim_", "state_hist_")
-    json.dump(_state_history, open(hist_path, "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
-    print("[sim] %s · %s · %d-%d: %d 条控制变更 + %d 年阶级指标 → %s" % (
-        args.scene, args.branch, args.years[0], args.years[1],
-        len(result), len(_state_history), out_path))
+    if args.scenario_type == "military":
+        result, state_history = run_scene(
+            args.scene, args.branch, args.years[0], args.years[1],
+            forces, reinforcements, scenario_type="military", cfg=cfg)
+        out_path = args.out or os.path.join(base_dir, "control_sim_%s.json" % args.branch)
+        output = {"_comment": "确定性推演结果 (v0.36 sim+agent)",
+                  "_branch": args.branch, "_scene": args.scene,
+                  "_years": list(args.years), "_forces": forces,
+                  "control": result}
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        hist_path = out_path.replace("control_sim_", "state_hist_")
+        json.dump(state_history, open(hist_path, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        print("[sim] %s · %s · %d-%d: %d 条控制变更 + %d 年阶级指标 → %s" % (
+            args.scene, args.branch, args.years[0], args.years[1],
+            len(result), len(state_history), out_path))
+    else:
+        # 非军事：run_scene 返回 (state_history, branch_events, real_traj)
+        state_history, branch_events, _rt = run_scene(
+            args.scene, args.branch, args.years[0], args.years[1],
+            forces, reinforcements, scenario_type=args.scenario_type, cfg=cfg)
+        # 本支六维时序
+        hist_path = os.path.join(base_dir, "state_hist_%s.json" % args.branch)
+        json.dump(state_history, open(hist_path, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        # real 基准时序（供通用 viewer 对比）
+        real_branch = (cfg or {}).get("real_branch", "repeal")
+        if real_branch and real_branch != args.branch:
+            _real_hist, _real_be, _rt2 = simulate_nonmilitary(
+                args.scene, real_branch, args.years[0], args.years[1], cfg or {})
+            json.dump(_real_hist, open(
+                os.path.join(base_dir, "state_hist_%s.json" % real_branch),
+                "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        # Branch Event（符合 v0.57 schema）
+        be_path = os.path.join(base_dir, "branch_events_%s.json" % args.branch)
+        be_out = {"_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+                  "_branch": args.branch, "_scene": args.scene,
+                  "_scenario_type": args.scenario_type,
+                  "_years": list(args.years), "events": branch_events}
+        with open(be_path, "w", encoding="utf-8") as f:
+            json.dump(be_out, f, ensure_ascii=False, indent=1)
+            f.write("\n")
+        print("[sim·非军事] %s · %s · %d-%d: %d 年六维时序 + %d 条 Branch Event → %s"
+              % (args.scene, args.branch, args.years[0], args.years[1],
+                 len(state_history), len(branch_events), be_path))
 
 
 if __name__ == "__main__":
