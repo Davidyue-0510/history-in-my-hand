@@ -1,0 +1,8 @@
+{
+ "events": [
+  {"id":"evt_cailun_yinshigao","title":"蔡伦给事宫掖","era":"东汉明帝永平末","year":75,"kind":"institution","text":"约永平末（约公元75年），蔡伦以宦官给事宫掖，建初中为小黄门。"},
+  {"id":"evt_zhizao_geming","title":"蔡伦改进造纸术·元兴元年","era":"东汉和帝元兴元年","year":105,"kind":"institution","subject":"event:zhizao_geming","text":"公元105年，蔡伦用树肤、麻头、敝布、鱼网造纸，奏报和帝；帝善其能，'自是莫不从用焉'，天下咸称'蔡侯纸'。"},
+  {"id":"evt_cailun_fenghou","title":"蔡伦封龙亭侯","era":"东汉安帝元初元年","year":114,"kind":"institution","subject":"event:cailun_fenghou","text":"公元114年，邓太后以伦久在宿卫，封为龙亭侯，邑三百户。"},
+  {"id":"evt_cailun_qiyaosi","title":"蔡伦饮药卒","era":"东汉安帝建光元年","year":121,"kind":"event","text":"公元121年，安帝亲政，伦耻受辱，沐浴整衣冠，饮药而死。"}
+ ]
+}

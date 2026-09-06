@@ -389,7 +389,8 @@
   "wei_xiaowen",
   "sui_canal",
   "guo_shoujing",
-  "zhangzai_guanxue"
+  "zhangzai_guanxue",
+  "cailun_zaozhi"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15725,6 +15726,97 @@
     }
    },
    "province": "shaanxi"
+  },
+  "cailun_zaozhi": {
+   "kind": "tech",
+   "region": "hunan",
+   "title": "蔡伦·造纸",
+   "dossier_label": "蔡伦·造纸（东汉和帝元兴元年）",
+   "subtitle": "公元 105 年 · 东汉",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "东汉和帝元兴元年（公元105年），中常侍兼尚方令蔡伦（字敬仲，耒阳人）于洛阳尚方用树肤、麻头、敝布、鱼网改进造纸工艺，奏报和帝；帝善其能，'自是莫不从用焉'，天下咸称'蔡侯纸'。纸始由御用档案材料扩散为民用书写载体，与文教、科举、印刷同向奠定东亚文明基底层。本场景由真实史料（《后汉书·蔡伦传》+ 潘吉星《中国造纸史》+ 钱存训《中国纸和印刷文化史》）经 G1 工具零手 authoring 派生三件套，证据强度 strength=1.00，real base_rate=+0.05 / whatif=-0.035。",
+   "parties_note": "立场靠来源派生：汉方（《后汉书·蔡伦传》等正史）记奏报与封侯细节；汉·学界（潘吉星、钱存训等综合考订）作现代史学评估。",
+   "subject_names": {
+    "institution:cailun_zhizao": "蔡侯纸·造纸术",
+    "person:cailun": "蔡伦",
+    "event:zhizao_geming": "造纸改进奏报",
+    "event:cailun_fenghou": "封龙亭侯",
+    "event:cailun_qiyaosi": "饮药卒",
+    "geo:leiyang": "耒阳",
+    "geo:luoyang": "洛阳",
+    "geo:zhongyuan": "中原推广",
+    "tech:caiyuan": "蔡侯纸",
+    "tech:shufu": "树肤原料",
+    "institution:shangfang": "尚方作坊",
+    "thought:wenjiao": "文教载体革命",
+    "social:shuminhua": "书写平民化",
+    "event:cailun_yinshigao": "给事宫掖"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "蔡伦造纸：纸作为低成本书写载体，加强中央对地方政令传达与文教普及，是东汉集权深化的物质基础。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "蔡伦造纸：原材料（树肤、麻头、敝布、鱼网）皆废料；工艺定型使纸进入大规模生产阶段，物流与档案成本骤降。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "蔡伦造纸：纸从御用扩散至民用，识字阶层从宫廷士族下沉至地方吏民，影响东汉—魏晋文教普及度。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      5
+     ],
+     "layer": "inference",
+     "note": "蔡伦造纸：耒阳楚地原料 + 洛阳中原政治中心；纸业从此奠定中原—南方原料—中原推广的地缘链路，对后世雕版/活字印刷提供物质前提。"
+    }
+   },
+   "province": [
+    "hunan",
+    "henan"
+   ]
   }
  },
  "dimensions": {

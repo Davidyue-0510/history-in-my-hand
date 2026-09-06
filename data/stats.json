@@ -1,9 +1,9 @@
 {
-  "scenes_total": 186,
-  "historical": 177,
+  "scenes_total": 187,
+  "historical": 178,
   "fictional": 9,
-  "assertions_total": 2882,
-  "sources_total": 152,
+  "assertions_total": 2893,
+  "sources_total": 155,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -1410,6 +1410,13 @@
       "kind": "thought",
       "assertions": 9,
       "factions": {}
+    },
+    {
+      "id": "cailun_zaozhi",
+      "title": "蔡伦·造纸",
+      "kind": "tech",
+      "assertions": 11,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1598,6 +1605,7 @@
     "wei_xiaowen": "北魏孝文帝改革",
     "sui_canal": "隋·大运河",
     "guo_shoujing": "郭守敬·水利与天文",
-    "zhangzai_guanxue": "张载·关学"
+    "zhangzai_guanxue": "张载·关学",
+    "cailun_zaozhi": "蔡伦·造纸"
   }
 }

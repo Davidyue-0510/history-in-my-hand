@@ -19,6 +19,7 @@ window.SANDBOX_RESONANCE = {
    "biTigeGuan",
    "boju",
    "bozhou",
+   "cailun_zaozhi",
    "caishiji",
    "canhebei",
    "changping",
@@ -354,6 +355,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.305,
    "best_event": "event:bozhou_pingbo",
    "best_resonance": 0.333
+  },
+  {
+   "scene": "cailun_zaozhi",
+   "name": "cailun_zaozhi",
+   "total": 11,
+   "layers": {
+    "record": 6,
+    "inference": 1,
+    "scholarship": 4
+   },
+   "party_counts": {
+    "汉方": 7,
+    "综述考订": 4
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:cailun_fenghou",
+   "best_resonance": 0.0
   },
   {
    "scene": "caishiji",

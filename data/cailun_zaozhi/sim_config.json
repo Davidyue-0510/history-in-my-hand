@@ -1,0 +1,30 @@
+{
+  "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
+  "_auto_derived": true,
+  "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=7.38 neg=0.95 sign=1），幅度由证据强度 strength=0.77 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；whatif 取反向并阻尼 0.7。places 无坐标，判为抽象世界。",
+  "scenario_type": "economic",
+  "dim_targets": [
+    "技术",
+    "制度",
+    "社会",
+    "思想",
+    "事件"
+  ],
+  "start_year": 0,
+  "end_year": 300,
+  "real_branch": "real",
+  "branches": [
+    {
+      "id": "real",
+      "label": "史实基准",
+      "base_rate": 0.05,
+      "reform0": 0.5
+    },
+    {
+      "id": "whatif",
+      "label": "反事实·反向推演",
+      "base_rate": -0.035,
+      "reform0": 0.5
+    }
+  ]
+}

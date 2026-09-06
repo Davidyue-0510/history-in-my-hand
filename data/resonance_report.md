@@ -20,6 +20,7 @@
 | biTigeGuan | 13 | 1 | **0.286** | event:biti（0.286） | gap 1 / inference 4 / record 4 / scholarship 4 |
 | boju | 21 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 4 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
+| cailun_zaozhi | 11 | 2 | **0.000** | event:cailun_fenghou（0.000） | inference 1 / record 6 / scholarship 4 |
 | caishiji | 16 | 3 | **0.000** | event:cs_jin（0.000） | gap 1 / inference 2 / record 10 / scholarship 3 |
 | canhebei | 16 | 3 | **0.000** | event:ch_jz（0.000） | gap 3 / inference 1 / record 9 / scholarship 3 |
 | changping | 15 | 3 | **0.000** | event:cp_jz（0.000） | gap 2 / inference 1 / record 8 / scholarship 4 |
@@ -246,6 +247,7 @@
 | event:bj_wa | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:bj_wu | boju | **0.000** | 0/3 | 0.00 | 0.00 | 11 | 0 / 0 / 0 / 0 |
 | event:bj_yu | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:cailun_fenghou | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cb_cao | chibi | **0.000** | 0/3 | 0.00 | 0.00 | 8 | 0 / 0 / 0 / 0 |
 | event:cb_jz | chibi | **0.000** | 0/3 | 0.00 | 0.67 | 3 | 0 / 0 / 0 / 0 |
 | event:cb_lk | chibi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -682,6 +684,7 @@
 | event:zh_1405 | zhenghe | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:zh_1433 | zhenghe | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:zh_test | zhangheng | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:zhizao_geming | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zj_1406 | zijincheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:zj_1420 | zijincheng | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:zj_1573 | zhangjuzheng | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |

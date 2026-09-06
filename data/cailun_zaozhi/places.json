@@ -1,0 +1,28 @@
+{
+ "places": [
+  {
+   "id": "leiyang",
+   "name": "耒阳（蔡伦故乡）",
+   "lon": 112.40,
+   "lat": 26.41,
+   "province": "hunan",
+   "role": "蔡伦出生/原料地（楮皮、麻等）"
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳（尚方）",
+   "lon": 112.45,
+   "lat": 34.62,
+   "province": "henan",
+   "role": "皇室尚方改进+奏报和帝"
+  },
+  {
+   "id": "zhongyuan",
+   "name": "中原（早期推广）",
+   "lon": 113.50,
+   "lat": 34.80,
+   "province": "henan",
+   "role": "105 年后'自是莫不从用焉'政令推广区"
+  }
+ ]
+}
