@@ -50,6 +50,13 @@
   .dim-table{border-collapse:collapse;width:100%;font-size:11.5px;margin-top:8px;}
   .dim-table th,.dim-table td{border:1px solid var(--line);padding:3px 5px;text-align:center;}
   .dim-table th{background:#e3d8bf;}
+  .map-wrap{background:#fbf7ec;border:1px solid var(--line);border-radius:8px;padding:8px;margin-bottom:8px;}
+  .map-wrap svg{width:100%;height:auto;display:block;}
+  .map-node circle{transition:fill .25s,opacity .25s;}
+  .map-node text{font-size:10.5px;fill:var(--ink);}
+  .map-grid{stroke:#e3d8bf;stroke-width:1;}
+  .map-adopt{fill:var(--accent);font-size:9.5px;font-weight:700;}
+  .map-hint{font-size:11px;color:var(--ink-soft);margin-top:6px;}
 </style>
 </head>
 <body>
@@ -96,6 +103,7 @@
       <div id="geoNote" class="hint"></div>
       <div class="chart-wrap" id="chartWrap"></div>
       <div id="heatWrap"></div>
+      <div id="mapBlock"></div>
       <div class="legend" id="legend"></div>
     </main>
   </div>
@@ -163,11 +171,16 @@
     drawChart(D);
     renderHeat(D);
     renderEvents(be);
+    renderMap(D);
     updateYear(D);
     buildLegend(dimTargets);
-    $('geoNote').textContent = (scenarioType==='military')
-      ? '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。'
-      : '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）。';
+    if(scenarioType==='military'){
+      $('geoNote').textContent = '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。';
+    } else if(STATE.mapPlan && STATE.mapPlan.nodes.length>=2){
+      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（节点按真实经纬度等距投影，按场景 places 顺序随年份依次激活；激活后热度=当年改革指数）。抽象坐标场景不渲染地图。';
+    } else {
+      $('geoNote').textContent = '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）；本场景节点缺地理坐标，地图叙事不可用。';
+    }
   }
 
   function yearIndex(D, y){
@@ -284,8 +297,77 @@
         '<div class="stat"><span>史实基准</span><span class="num">'+(D.realBranch||'repeal')+'</span></div>'+
         '<div class="hint">平均偏离=各目标维度 |反事实−史实| 的均值，范围 0–1。</div>';
     }
-    drawChart(D); renderHeat(D);
+    drawChart(D); renderHeat(D); updateMap(D);
   }
+
+  // ---- 非军事地理扩散叙事 ----
+  function histAt(D, y){
+    var h = (STATE.mode==='real' ? D.histReal : D.histBranch) || [];
+    for(var i=0;i<h.length;i++) if(h[i].year===y) return h[i];
+    return null;
+  }
+  function mix(a,b,t){
+    function hx(c){ return [parseInt(c.substr(1,2),16),parseInt(c.substr(3,2),16),parseInt(c.substr(5,2),16)]; }
+    var A=hx(a), B=hx(b);
+    return 'rgb('+Math.round(A[0]+(B[0]-A[0])*t)+','+Math.round(A[1]+(B[1]-A[1])*t)+','+Math.round(A[2]+(B[2]-A[2])*t)+')';
+  }
+  function colorScale(v){
+    v=Math.max(0,Math.min(1,v));
+    if(v<0.5) return mix('#b5443a','#c8a24a', v/0.5);
+    return mix('#c8a24a','#3f7d54', (v-0.5)/0.5);
+  }
+  function renderMap(D){
+    var places = (D.places && D.places.places) ? D.places.places : (D.places||[]);
+    var coords = [];
+    (places||[]).forEach(function(p){ if(p && p.lon!=null && p.lat!=null) coords.push(p); });
+    STATE.mapPlan = null;
+    if(coords.length < 2){ $('mapBlock').innerHTML=''; return; }
+    var hb=D.histBranch||[], hr=D.histReal||[];
+    var yrs=(hb.length?hb:hr).map(function(s){return s.year;});
+    var y0=yrs[0], y1=yrs[yrs.length-1];
+    var n=coords.length;
+    var step = n>1 ? Math.max(1, Math.floor((y1-y0)/(n-1))) : 0;
+    var nodes = coords.map(function(p,i){
+      return { id:p.id, name:p.name||p.label||p.id, lon:p.lon, lat:p.lat,
+               adopt:(i===0? y0 : Math.min(y1, y0 + i*step)) };
+    });
+    STATE.mapPlan = { nodes:nodes, y0:y0, y1:y1 };
+    drawMapSVG(D);
+  }
+  function drawMapSVG(D){
+    var mp=STATE.mapPlan; if(!mp){ $('mapBlock').innerHTML=''; return; }
+    var W=720,H=400,padL=44,padR=18,padT=16,padB=30;
+    var LON0=73,LON1=135,LAT0=18,LAT1=54;
+    function px(lon){ return padL+(lon-LON0)/(LON1-LON0)*(W-padL-padR); }
+    function py(lat){ return padT+(LAT1-lat)/(LAT1-LAT0)*(H-padT-padB); }
+    var svg='<svg class="chart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">';
+    [80,90,100,110,120,130].forEach(function(lo){ var x=px(lo);
+      svg+='<line class="map-grid" x1="'+x+'" y1="'+padT+'" x2="'+x+'" y2="'+(H-padB)+'"/>';
+      svg+='<text x="'+x+'" y="'+(H-padB+12)+'" font-size="9" fill="#9a9286" text-anchor="middle">'+lo+'°E</text>'; });
+    [20,30,40,50].forEach(function(la){ var y=py(la);
+      svg+='<line class="map-grid" x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'"/>';
+      svg+='<text x="'+(padL-4)+'" y="'+(y+3)+'" font-size="9" fill="#9a9286" text-anchor="end">'+la+'°N</text>'; });
+    svg+='<rect x="'+padL+'" y="'+padT+'" width="'+(W-padL-padR)+'" height="'+(H-padT-padB)+'" fill="none" stroke="#c9bfa8"/>';
+    var hi = histAt(D, STATE.year);
+    var ri = hi ? (hi.reform_index||0) : 0;
+    mp.nodes.forEach(function(nd){
+      var x=px(nd.lon), y=py(nd.lat);
+      var adopted = STATE.year >= nd.adopt;
+      var eng = adopted ? ri : 0;
+      var fill = adopted ? colorScale(eng) : '#c9bfa8';
+      var op = adopted ? 0.92 : 0.5;
+      svg+='<g class="map-node"><circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+(adopted?8:6)+'" fill="'+fill+'" fill-opacity="'+op+'" stroke="#332d27" stroke-width="1"/>';
+      var lx=x+10, ly=y+3;
+      svg+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'">'+nd.name+'</text>';
+      if(adopted) svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'">'+nd.adopt+' 激活</text>';
+      else svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'" style="fill:#9a9286">未激活</text>';
+      svg+='</g>';
+    });
+    svg+='</svg>';
+    $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
+      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。示意图按真实经纬度等距投影，非政区图。</div></div></section>';
+  }
+  function updateMap(D){ drawMapSVG(D); }
 
   function buildLegend(dimTargets){
     var box=$('legend');
