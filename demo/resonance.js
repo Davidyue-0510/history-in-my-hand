@@ -1632,12 +1632,12 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "kaifeng_juekou",
    "name": "kaifeng_juekou",
-   "total": 3,
+   "total": 8,
    "layers": {
-    "scholarship": 3
+    "scholarship": 8
    },
    "party_counts": {
-    "综合史料": 3
+    "综合史料": 8
    },
    "faction_counts": {},
    "event_count": 3,

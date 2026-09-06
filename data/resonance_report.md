@@ -86,7 +86,7 @@
 | juehua1626 | 23 | 3 | **0.545** | event:juehua1626_ice（0.667） | gap 1 / record 21 / scholarship 1 |
 | juehua | 14 | 3 | **0.278** | event:juehua_garrison（0.333） | gap 1 / record 12 / scholarship 1 |
 | julu | 14 | 3 | **0.000** | event:jl_jz（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
-| kaifeng_juekou | 3 | 3 | **0.000** | event:kf_1642a（0.000） | scholarship 3 |
+| kaifeng_juekou | 8 | 3 | **0.000** | event:kf_1642a（0.000） | scholarship 8 |
 | 开原 | 44 | 3 | **0.495** | 开铁之战（开原陷落）（0.818） | gap 2 / inference 8 / record 29 / scholarship 5 |
 | keju | 17 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 10 / scholarship 3 |
 | kunyang | 16 | 3 | **0.000** | event:ky_jz（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |

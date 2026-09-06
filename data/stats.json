@@ -2,7 +2,7 @@
   "scenes_total": 184,
   "historical": 175,
   "fictional": 9,
-  "assertions_total": 2859,
+  "assertions_total": 2864,
   "sources_total": 148,
   "factions_total": 9,
   "vocab_packs": [
@@ -770,7 +770,7 @@
       "id": "kaifeng_juekou",
       "title": "开封河决",
       "kind": "disaster",
-      "assertions": 3,
+      "assertions": 8,
       "factions": {}
     },
     {
