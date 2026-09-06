@@ -366,7 +366,13 @@
   "hainan_zhuyai_llm",
   "hunan_changsha_llm",
   "jilin_gaogouli_llm",
-  "sui_canal_llm"
+  "sui_canal_llm",
+  "tang_anshi_llm",
+  "han_banchao_llm",
+  "song_yancheng_llm",
+  "yuan_xingsheng_llm",
+  "ming_zhenghe_llm",
+  "qing_yakesa_llm"
  ],
  "scenes": {
   "sarhu": {
@@ -13794,6 +13800,515 @@
      ],
      "layer": "inference",
      "note": "沟通五大水系，永济渠便利北方用兵（如征高句丽）"
+    }
+   }
+  },
+  "tang_anshi_llm": {
+   "kind": "uprising",
+   "scale_tier": "strategic",
+   "region": "tang",
+   "province": null,
+   "title": "安史之乱（LLM 抽取·人工校订）",
+   "dossier_label": "安史之乱（LLM 抽取落库）",
+   "subtitle": "天宝十四载—宝应元年（755–763）· 唐 vs 安史叛军",
+   "primary_place": "luoyang",
+   "dossier_event": "ev_tang_anshi_llm_01",
+   "vocab_pack": "tang_anshi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "安史之乱（755–763）：唐玄宗天宝十四载安禄山于范阳起兵，陷洛阳、长安，玄宗奔蜀、肃宗灵武即位；唐借回纥兵于757年收复两京，763年史朝义败亡，叛乱始平。八年战乱黄河中下游残破、人口锐减，藩镇割据形成，唐由盛转衰。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《资治通鉴·唐纪》概述抽取断言，curate 报 BLOCK 0，人工补控制层（唐方 control 两京）与战略四维（inference）。引文全 paraphrase_unverified；来源《资治通鉴》为北宋司马光官修，归『后世官修』；控制层『唐方』。",
+   "parties_note": "《资治通鉴·唐纪》为北宋司马光官修，归『后世官修』；安史为叛军，控制层『唐方』即唐廷。安史方视角经叙事折射。系统不裁决，只并列。",
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:TAN__p01": "安禄山",
+    "person:TAN__p02": "杨国忠",
+    "person:TAN__p03": "哥舒翰",
+    "person:TAN__p04": "唐玄宗",
+    "person:TAN__p05": "太子李亨",
+    "person:TAN__p06": "安慶緒",
+    "person:TAN__p07": "史思明",
+    "person:TAN__p08": "史朝義",
+    "event:ev_tang_anshi_llm_01": "安禄山起兵",
+    "event:ev_tang_anshi_llm_02": "长安陷落",
+    "event:ev_tang_anshi_llm_03": "肃宗灵武即位",
+    "event:ev_tang_anshi_llm_04": "收复两京",
+    "event:ev_tang_anshi_llm_05": "叛乱平定",
+    "place:fanyang": "范阳",
+    "place:luoyang": "洛阳",
+    "place:changan": "长安",
+    "place:tongguan": "潼关",
+    "place:lingwu": "灵武",
+    "place:shu": "蜀"
+   },
+   "epoch": "tang",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "安史之乱后藩镇割据形成，唐由盛转衰"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "河北藩镇割据，漕运与赋税体系受损"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "唐廷征调朔方军并借回纥兵平叛"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "借回纥兵收复两京，羁縻外交代价"
+    }
+   }
+  },
+  "han_banchao_llm": {
+   "kind": "frontier",
+   "scale_tier": "strategic",
+   "region": "xibei",
+   "province": null,
+   "title": "班超经营西域（LLM 抽取·人工校订）",
+   "dossier_label": "班超经营西域（LLM 抽取落库）",
+   "subtitle": "永平十六年—永元十四年（73–102）· 汉 vs 匈奴",
+   "primary_place": "shule",
+   "dossier_event": "ev_han_banchao_llm_01",
+   "vocab_pack": "han_banchao_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "班超经营西域（73–102）：东汉明帝永平十六年班超率三十六骑出使西域，镇抚鄯善、于阗、疏勒，袭杀匈奴使者；章帝时坚守疏勒，和帝永元三年（91年）任西域都护，重通西域五十余国，遣甘英使大秦至条支临海而还。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《后汉书·班超传》概述抽取断言，curate 报 BLOCK 0，人工补控制层（汉方 control 西域诸国）与战略四维（inference）。引文全 paraphrase_unverified；来源《后汉书》为南朝宋范晔官修，归『后世官修』；控制层『汉方』。",
+   "parties_note": "《后汉书·班超传》为南朝宋范晔官修，去汉已远，叙事整合前史，归『后世官修』；班超以汉廷使节身份经营，控制层『汉方』即东汉。系统不裁决，只并列。",
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:HAN__p01": "班超",
+    "person:HAN__p02": "甘英",
+    "person:HAN__p03": "鄯善王",
+    "person:HAN__p04": "于阗王",
+    "person:HAN__p05": "疏勒王",
+    "person:HAN__p06": "匈奴使者",
+    "event:ev_han_banchao_llm_01": "班超使西域",
+    "event:ev_han_banchao_llm_02": "袭杀匈奴使者",
+    "event:ev_han_banchao_llm_03": "任西域都护",
+    "event:ev_han_banchao_llm_04": "甘英使大秦",
+    "place:shanshan": "鄯善",
+    "place:yutian": "于阗",
+    "place:shule": "疏勒",
+    "place:tiaozhi": "条支",
+    "place:dajin": "大秦"
+   },
+   "epoch": "han",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉以孤军维系西域朝贡体系，巩固西部边疆"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "保障丝绸之路南道，中外物资交流"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "班超以三十六骑起家，倚西域诸国兵员"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "断匈奴右臂，遏制漠北势力南伸"
+    }
+   }
+  },
+  "song_yancheng_llm": {
+   "kind": "battle",
+   "scale_tier": "operational",
+   "region": "huabei",
+   "province": null,
+   "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
+   "dossier_label": "郾城之战（岳飞北伐）（LLM 抽取落库）",
+   "subtitle": "绍兴十年（1140）· 宋（岳飞） vs 金（兀术）",
+   "primary_place": "yancheng",
+   "dossier_event": "ev_song_yancheng_llm_01",
+   "vocab_pack": "song_yancheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "郾城之战（1140）：南宋绍兴十年岳飞北伐，于郾城以背嵬军、游奕马军大破金兀术拐子马（铁浮屠），取得郾城大捷；继战颍昌，再败金军。然高宗、秦桧主和，一日十二金字牌召还，罢兵权，次年以莫须有杀害岳飞于风波亭。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《宋史·岳飞传》概述抽取断言，curate 报 BLOCK 0，人工补控制层（宋方 control 郾城/颍昌）与战略四维（inference）。引文全 paraphrase_unverified；来源《宋史》为元脱脱等官修，归『后世官修』；控制层『宋方』。",
+   "parties_note": "《宋史·岳飞传》为元脱脱等官修，去宋已远，归『后世官修』；岳飞为宋方统帅，控制层『宋方』。金方视角经叙事折射。系统不裁决，只并列。",
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:SON__p01": "岳飞",
+    "person:SON__p02": "金兀术",
+    "person:SON__p03": "宋高宗",
+    "person:SON__p04": "秦桧",
+    "event:ev_song_yancheng_llm_01": "郾城之战",
+    "event:ev_song_yancheng_llm_02": "颍昌之战",
+    "event:ev_song_yancheng_llm_03": "岳飞遇害",
+    "place:yancheng": "郾城",
+    "place:yingchang": "颍昌",
+    "place:fengboting": "风波亭"
+   },
+   "epoch": "song",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "岳飞北伐凝聚抗金民心，然中枢主和掣肘"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "背嵬军骑兵集团支撑野战突击"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "岳家军『冻死不拆屋』，民力依附"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "北伐收复中原态势，因议和中断"
+    }
+   }
+  },
+  "yuan_xingsheng_llm": {
+   "kind": "reform",
+   "scale_tier": "strategic",
+   "region": "yuan_ming",
+   "province": null,
+   "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
+   "dossier_label": "元设行中书省（行省制）（LLM 抽取落库）",
+   "subtitle": "至元年间（1264 起）· 元中央制度",
+   "primary_place": "dadu",
+   "dossier_event": "ev_yuan_xingsheng_llm_01",
+   "vocab_pack": "yuan_xingsheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events"
+   ],
+   "lead": "元设行中书省（行省制）（至元年间起）：元世祖忽必烈设行中书省分掌地方军政，初为临时派出机构，后固定为最高地方行政区；全国设中书省（腹里）及陕甘、辽阳、河南、江浙、江西、湖广、四川、云南、甘肃、岭北等行省，权大居中书省之半，军民通摄，确立省制雏形，明清沿之。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《元史·百官志》概述抽取断言，curate 报 BLOCK 0，人工补控制层（元方 control 各行省）与战略四维（inference）。引文全 paraphrase_unverified；来源《元史》为明宋濂等官修，归『后世官修』；控制层『元方』。",
+   "parties_note": "《元史·百官志》为明宋濂等官修，归『后世官修』；行省为元中央建制，控制层『元方』。系统不裁决，只并列。",
+   "dims": [
+    3,
+    6
+   ],
+   "subject_names": {
+    "person:YUA__p01": "元世祖",
+    "event:ev_yuan_xingsheng_llm_01": "始设行省",
+    "event:ev_yuan_xingsheng_llm_02": "行省定制",
+    "place:fuli": "腹里",
+    "place:shangan": "陕甘",
+    "place:liaoyang": "辽阳",
+    "place:henan": "河南",
+    "place:jiangzhe": "江浙",
+    "place:jiangxi": "江西",
+    "place:huguang": "湖广",
+    "place:sichuan": "四川",
+    "place:yunnan": "云南",
+    "place:gansu": "甘肃",
+    "place:lingbei": "岭北"
+   },
+   "epoch": "yuan",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "行省集权于中央，削弱地方藩镇"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "行省统筹财赋军需，后勤半径扩大"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "行省民政军兼摄，动员直达基层"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "行省制巩固辽阔疆域控制，奠定省制"
+    }
+   }
+  },
+  "ming_zhenghe_llm": {
+   "kind": "exchange",
+   "scale_tier": "strategic",
+   "region": "jiangnan",
+   "province": null,
+   "title": "郑和下西洋（LLM 抽取·人工校订）",
+   "dossier_label": "郑和下西洋（LLM 抽取落库）",
+   "subtitle": "永乐三年—宣德八年（1405–1433）· 明远洋",
+   "primary_place": "liujiagang",
+   "dossier_event": "ev_ming_zhenghe_llm_01",
+   "vocab_pack": "ming_zhenghe_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "郑和下西洋（1405–1433）：永乐三年至宣德八年郑和七下西洋，率宝船百余艘、将士二万余，历占城、满剌加、锡兰、古里、忽鲁谟斯等三十余国，最远抵东非、红海，宣威通商、朝贡往来，为世界航海史空前壮举；后明清海禁，远洋终止。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《明史·郑和传》概述抽取断言，curate 报 BLOCK 0，人工补控制层（明方 control 航线枢纽）与战略四维（inference）。引文全 paraphrase_unverified；来源《明史》为清张廷玉等官修，归『后世官修』；控制层『明方』。",
+   "parties_note": "《明史·郑和传》为清张廷玉等官修，归『后世官修』；郑和为明廷使节，控制层『明方』。系统不裁决，只并列。",
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:MIN__p01": "郑和",
+    "person:MIN__p02": "明成祖",
+    "person:MIN__p03": "明宣宗",
+    "event:ev_ming_zhenghe_llm_01": "首下西洋",
+    "event:ev_ming_zhenghe_llm_02": "七下西洋终",
+    "place:zhancheng": "占城",
+    "place:manlajia": "满剌加",
+    "place:xilan": "锡兰",
+    "place:guli": "古里",
+    "place:hulumosi": "忽鲁谟斯",
+    "place:dongfei": "东非",
+    "place:honghai": "红海"
+   },
+   "epoch": "ming",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "朝贡体系宣威海外，巩固明初国际地位"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "宝船舰队跨洋补给，后勤规模空前"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "二万余将士远征，民力倾注"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "海上丝路拓展，然海禁后中断"
+    }
+   }
+  },
+  "qing_yakesa_llm": {
+   "kind": "battle",
+   "scale_tier": "operational",
+   "region": "liaobei",
+   "province": null,
+   "title": "雅克萨之战（LLM 抽取·人工校订）",
+   "dossier_label": "雅克萨之战（LLM 抽取落库）",
+   "subtitle": "康熙二十四至二十五年（1685–1686）· 清 vs 沙俄",
+   "primary_place": "yakesa",
+   "dossier_event": "ev_qing_yakesa_llm_01",
+   "vocab_pack": "qing_yakesa_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "雅克萨之战（1685–1686）：康熙二十四至二十五年清军两次围攻雅克萨（黑龙江北岸），击败沙俄哥萨克，毁城而还；1689年签《尼布楚条约》划定中俄东段边界，雅克萨归清。此战遏制沙俄南侵，巩固东北边防。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《清圣祖实录》概述抽取断言，curate 报 BLOCK 0，人工补控制层（清方 control 雅克萨）与战略四维（inference）。引文全 paraphrase_unverified；来源《清圣祖实录》为清官修，归『后世官修』；控制层『清方』。",
+   "parties_note": "《清圣祖实录》为清官修，归『后世官修』；清军为防御方，控制层『清方』。沙俄方视角经叙事折射。系统不裁决，只并列。",
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "subject_names": {
+    "person:QIN__p01": "康熙帝",
+    "person:QIN__p02": "萨布素",
+    "person:QIN__p03": "彭春",
+    "person:QIN__p04": "托尔布津",
+    "person:QIN__p05": "郎坦",
+    "event:ev_qing_yakesa_llm_01": "第一次雅克萨之战",
+    "event:ev_qing_yakesa_llm_02": "第二次雅克萨之战",
+    "event:ev_qing_yakesa_llm_03": "尼布楚条约",
+    "place:yakesa": "雅克萨",
+    "place:heilongjiang": "黑龙江",
+    "place:nibuchu": "尼布楚"
+   },
+   "epoch": "qing",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "society",
+      "anchors"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "雅克萨之胜凝聚清朝对边疆主权宣示"
+    },
+    "material_logistics": {
+     "from": [
+      "economy"
+     ],
+     "from_dims": [
+      3
+     ],
+     "layer": "inference",
+     "note": "清军长途补给黑龙江前线，后勤线漫长"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "调八旗、索伦兵远征东北"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international"
+     ],
+     "from_dims": [
+      6
+     ],
+     "layer": "inference",
+     "note": "遏制沙俄南侵，尼布楚条约定东段边界"
     }
    }
   }

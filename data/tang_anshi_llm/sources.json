@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "tang_anshi_src_llm",
+   "title": "资治通鉴·唐纪（现代概述）",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "司马光等（北宋）",
+   "period": "北宋",
+   "note": ""
+  }
+ ]
+}

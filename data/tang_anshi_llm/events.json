@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_tang_anshi_llm_01",
+   "subject": "event:ev_tang_anshi_llm_01",
+   "year": 755,
+   "era": "天宝十四载冬",
+   "title": "安禄山起兵",
+   "kind": "战事",
+   "text": "安禄山范阳起兵南下",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_anshi_llm_02",
+   "subject": "event:ev_tang_anshi_llm_02",
+   "year": 756,
+   "era": "天宝十五载六月",
+   "title": "长安陷落",
+   "kind": "战事",
+   "text": "叛军陷长安，玄宗奔蜀",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_anshi_llm_03",
+   "subject": "event:ev_tang_anshi_llm_03",
+   "year": 756,
+   "era": "天宝十五载七月",
+   "title": "肃宗灵武即位",
+   "kind": "行政",
+   "text": "太子李亨灵武即位",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_anshi_llm_04",
+   "subject": "event:ev_tang_anshi_llm_04",
+   "year": 757,
+   "era": "至德二载",
+   "title": "收复两京",
+   "kind": "战事",
+   "text": "唐借回纥兵收复两京",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_anshi_llm_05",
+   "subject": "event:ev_tang_anshi_llm_05",
+   "year": 763,
+   "era": "广德元年",
+   "title": "叛乱平定",
+   "kind": "战事",
+   "text": "史朝义败亡，乱平",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

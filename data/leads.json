@@ -1119,6 +1119,22 @@
    "_src_line": 7
   },
   {
+   "id": "HAN_015",
+   "scene": "han_banchao_llm",
+   "subject": "event:ev_han_banchao_llm_04",
+   "title": "甘英具体行程路线记载不详",
+   "missing": "历史地理 / 文献考据",
+   "where": "tiaozhi",
+   "skills": [
+    "历史地理",
+    "文献考据"
+   ],
+   "accept": "甘英出使的具体路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "GAP_EXPAND",
    "scene": "heshangyuan",
    "subject": "event:hs_jz",
@@ -2129,6 +2145,21 @@
    "_src_line": 14
   },
   {
+   "id": "MIN_012",
+   "scene": "ming_zhenghe_llm",
+   "subject": "event:ev_ming_zhenghe_llm_02",
+   "title": "实际次数存疑",
+   "missing": "档案考据",
+   "where": "明代档案",
+   "skills": [
+    "档案考据"
+   ],
+   "accept": "确认航行次数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "DZ014",
    "scene": "mingmo_dangzheng",
    "subject": "event:dangzheng_minglu",
@@ -2588,6 +2619,54 @@
    "_src_line": 16
   },
   {
+   "id": "QIN_006",
+   "scene": "qing_yakesa_llm",
+   "subject": "event:ev_qing_yakesa_llm_01",
+   "title": "具体兵力不详",
+   "missing": "俄语 / 档案研究",
+   "where": "俄罗斯档案",
+   "skills": [
+    "俄语",
+    "档案研究"
+   ],
+   "accept": "俄方兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "QIN_007",
+   "scene": "qing_yakesa_llm",
+   "subject": "event:ev_qing_yakesa_llm_02",
+   "title": "清军伤亡情况未详",
+   "missing": "满文 / 档案研究",
+   "where": "清宫档案",
+   "skills": [
+    "满文",
+    "档案研究"
+   ],
+   "accept": "清军伤亡数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "QIN_008",
+   "scene": "qing_yakesa_llm",
+   "subject": "event:ev_qing_yakesa_llm_01",
+   "title": "俄军伤亡数字不详",
+   "missing": "俄语 / 军事史",
+   "where": "俄方战报",
+   "skills": [
+    "俄语",
+    "军事史"
+   ],
+   "accept": "俄军伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "QINGG4",
    "scene": "qinghai_tuyuhun_llm",
    "subject": "event:ev_qinghai_tuyuhun_llm_01",
@@ -2941,6 +3020,21 @@
    "_src_line": 14
   },
   {
+   "id": "SON_012",
+   "scene": "song_yancheng_llm",
+   "subject": "event:ev_song_yancheng_llm_01",
+   "title": "金军兵力不详",
+   "missing": "金史",
+   "where": "金方史料",
+   "skills": [
+    "金史"
+   ],
+   "accept": "金军具体兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SJ015",
    "scene": "songjin",
    "subject": "event:songjin_songshan_fall",
@@ -3115,6 +3209,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "TAN_015",
+   "scene": "tang_anshi_llm",
+   "subject": "event:ev_tang_anshi_llm_05",
+   "title": "黄河中下游残破",
+   "missing": "人口统计",
+   "where": "黄河中下游",
+   "skills": [
+    "人口统计"
+   ],
+   "accept": "需考古数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "NT_GAP1",
@@ -3752,6 +3861,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "YUA_010",
+   "scene": "yuan_xingsheng_llm",
+   "subject": "event:ev_yuan_xingsheng_llm_02",
+   "title": "行省长官品级未详",
+   "missing": "文献考据",
+   "where": "《元史·百官志》",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "查行省长官品级",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "ZHANGHENGG01",

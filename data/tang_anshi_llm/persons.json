@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "安禄山",
+   "role": "平卢、范阳、河东三镇节度使",
+   "note": "起兵叛乱",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p02",
+   "name": "杨国忠",
+   "role": "宰相",
+   "note": "安禄山借口诛杀",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p03",
+   "name": "哥舒翰",
+   "role": "唐将",
+   "note": "守潼关",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p04",
+   "name": "唐玄宗",
+   "role": "皇帝",
+   "note": "奔蜀",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p05",
+   "name": "太子李亨",
+   "role": "太子",
+   "note": "灵武即位",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p06",
+   "name": "安慶緒",
+   "role": "安禄山子",
+   "note": "杀父",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p07",
+   "name": "史思明",
+   "role": "叛将",
+   "note": "继起",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p08",
+   "name": "史朝義",
+   "role": "史思明子",
+   "note": "败亡",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

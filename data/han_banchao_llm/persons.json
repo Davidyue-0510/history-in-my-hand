@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "HAN__p01",
+   "name": "班超",
+   "role": "西域都护",
+   "note": "东汉名将，经营西域三十一年",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p02",
+   "name": "甘英",
+   "role": "使者",
+   "note": "班超遣使大秦，至条支临海而还",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p03",
+   "name": "鄯善王",
+   "role": "西域国王",
+   "note": "鄯善国君主，受匈奴胁迫",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p04",
+   "name": "于阗王",
+   "role": "西域国王",
+   "note": "于阗国君主，班超镇抚对象",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p05",
+   "name": "疏勒王",
+   "role": "西域国王",
+   "note": "疏勒国君主，班超镇抚对象",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p06",
+   "name": "匈奴使者",
+   "role": "匈奴使节",
+   "note": "在鄯善被班超袭杀",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

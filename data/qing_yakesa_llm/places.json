@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "yakesa",
+   "name": "雅克萨",
+   "type": "fortress",
+   "modern": "今俄罗斯斯科沃罗季诺附近",
+   "note": "黑龙江北岸，俄军据点",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "heilongjiang",
+   "name": "黑龙江",
+   "type": "region",
+   "modern": "今中国黑龙江省",
+   "note": "清军集结地",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "nibuchu",
+   "name": "尼布楚",
+   "type": "city",
+   "modern": "今俄罗斯涅尔琴斯克",
+   "note": "条约签订地",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

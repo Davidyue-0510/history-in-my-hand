@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "康熙帝",
+   "role": "清朝皇帝",
+   "note": "决策发起雅克萨之战",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "萨布素",
+   "role": "黑龙江将军",
+   "note": "清军前线统帅",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p03",
+   "name": "彭春",
+   "role": "清军都统",
+   "note": "第一次雅克萨之战指挥官",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p04",
+   "name": "托尔布津",
+   "role": "沙俄雅克萨督军",
+   "note": "俄方守将",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p05",
+   "name": "郎坦",
+   "role": "清军副都统",
+   "note": "参与侦察与作战",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "fanyang",
+   "name": "范阳",
+   "type": "city",
+   "modern": "今中国北京",
+   "note": "安禄山起兵地",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 116.4,
+   "lat": 39.9,
+   "geo_note": "今北京"
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "type": "city",
+   "modern": "今中国河南洛阳",
+   "note": "叛军目标",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.45,
+   "lat": 34.62,
+   "geo_note": "唐东都，今洛阳"
+  },
+  {
+   "id": "changan",
+   "name": "长安",
+   "type": "city",
+   "modern": "今中国陕西西安",
+   "note": "唐都",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.95,
+   "lat": 34.27,
+   "geo_note": "唐都，今西安"
+  },
+  {
+   "id": "tongguan",
+   "name": "潼关",
+   "type": "fortress",
+   "modern": "今中国陕西潼关",
+   "note": "哥舒翰守",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.27,
+   "lat": 34.55,
+   "geo_note": "今陕西潼关"
+  },
+  {
+   "id": "lingwu",
+   "name": "灵武",
+   "type": "city",
+   "modern": "今中国宁夏灵武",
+   "note": "肃宗即位",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "shu",
+   "name": "蜀",
+   "type": "region",
+   "modern": "今中国四川",
+   "note": "玄宗奔蜀",
+   "_source_idx": 0,
+   "_source_name": "资治通鉴·唐纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_ming_zhenghe_llm_01",
+   "subject": "event:ev_ming_zhenghe_llm_01",
+   "year": 1405,
+   "era": "永乐三年",
+   "title": "首下西洋",
+   "kind": "外交",
+   "text": "郑和率船队首航西洋",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ming_zhenghe_llm_02",
+   "subject": "event:ev_ming_zhenghe_llm_02",
+   "year": 1433,
+   "era": "宣德八年",
+   "title": "七下西洋终",
+   "kind": "外交",
+   "text": "郑和第七次下西洋返航",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

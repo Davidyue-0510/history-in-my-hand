@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 163 个切片
+// 权威数据源：data/scenes.json 注册的 169 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 163 个切片",
+  "slice": "multi-scene · 169 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -19,24 +19,30 @@ window.SANDBOX_DATA = {
    "guandu_llm",
    "guizhou_yelang_llm",
    "hainan_zhuyai_llm",
+   "han_banchao_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
    "jilin_gaogouli_llm",
    "ming_qing",
+   "ming_zhenghe_llm",
    "nanzhao_dali_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
+   "qing_yakesa_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
    "song",
+   "song_yancheng_llm",
    "sui_canal_llm",
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "tang",
+   "tang_anshi_llm",
    "three_campaigns",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
+   "yuan_xingsheng_llm",
    "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm"
   ]
@@ -454,7 +460,13 @@ window.SANDBOX_DATA = {
   "hainan_zhuyai_llm",
   "hunan_changsha_llm",
   "jilin_gaogouli_llm",
-  "sui_canal_llm"
+  "sui_canal_llm",
+  "tang_anshi_llm",
+  "han_banchao_llm",
+  "song_yancheng_llm",
+  "yuan_xingsheng_llm",
+  "ming_zhenghe_llm",
+  "qing_yakesa_llm"
  ],
  "vocab": {
   "layers": [
@@ -24031,6 +24043,201 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "tang_anshi_llm": {
+   "key": "tang_anshi_llm",
+   "scene_id": "tang_anshi_llm",
+   "title": "安史之乱（LLM 抽取·人工校订）",
+   "dossier_label": "安史之乱（LLM 抽取落库）",
+   "subtitle": "天宝十四载—宝应元年（755–763）· 唐 vs 安史叛军",
+   "kind": "uprising",
+   "region": "tang",
+   "page": "county.html?scene=tang_anshi_llm",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:tang_anshi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 8,
+    "assert": 15,
+    "conflict": 2,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "han_banchao_llm": {
+   "key": "han_banchao_llm",
+   "scene_id": "han_banchao_llm",
+   "title": "班超经营西域（LLM 抽取·人工校订）",
+   "dossier_label": "班超经营西域（LLM 抽取落库）",
+   "subtitle": "永平十六年—永元十四年（73–102）· 汉 vs 匈奴",
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=han_banchao_llm",
+   "primary_place": "shule",
+   "vocab_pack": "inline:han_banchao_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "song_yancheng_llm": {
+   "key": "song_yancheng_llm",
+   "scene_id": "song_yancheng_llm",
+   "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
+   "dossier_label": "郾城之战（岳飞北伐）（LLM 抽取落库）",
+   "subtitle": "绍兴十年（1140）· 宋（岳飞） vs 金（兀术）",
+   "kind": "battle",
+   "region": "huabei",
+   "page": "song_yancheng_llm.html",
+   "primary_place": "yancheng",
+   "vocab_pack": "inline:song_yancheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 4,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "yuan_xingsheng_llm": {
+   "key": "yuan_xingsheng_llm",
+   "scene_id": "yuan_xingsheng_llm",
+   "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
+   "dossier_label": "元设行中书省（行省制）（LLM 抽取落库）",
+   "subtitle": "至元年间（1264 起）· 元中央制度",
+   "kind": "reform",
+   "region": "yuan_ming",
+   "page": "county.html?scene=yuan_xingsheng_llm",
+   "primary_place": "dadu",
+   "vocab_pack": "inline:yuan_xingsheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 11,
+    "person": 1,
+    "assert": 10,
+    "conflict": 0,
+    "gap": 1,
+    "record": 7,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "ming_zhenghe_llm": {
+   "key": "ming_zhenghe_llm",
+   "scene_id": "ming_zhenghe_llm",
+   "title": "郑和下西洋（LLM 抽取·人工校订）",
+   "dossier_label": "郑和下西洋（LLM 抽取落库）",
+   "subtitle": "永乐三年—宣德八年（1405–1433）· 明远洋",
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=ming_zhenghe_llm",
+   "primary_place": "liujiagang",
+   "vocab_pack": "inline:ming_zhenghe_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 3,
+    "assert": 13,
+    "conflict": 4,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "qing_yakesa_llm": {
+   "key": "qing_yakesa_llm",
+   "scene_id": "qing_yakesa_llm",
+   "title": "雅克萨之战（LLM 抽取·人工校订）",
+   "dossier_label": "雅克萨之战（LLM 抽取落库）",
+   "subtitle": "康熙二十四至二十五年（1685–1686）· 清 vs 沙俄",
+   "kind": "battle",
+   "region": "liaobei",
+   "page": "qing_yakesa_llm.html",
+   "primary_place": "yakesa",
+   "vocab_pack": "inline:qing_yakesa_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 5,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 3,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -24196,7 +24403,13 @@ window.SANDBOX_DATA = {
   "hainan_zhuyai_llm": "slices/hainan_zhuyai_llm.js",
   "hunan_changsha_llm": "slices/hunan_changsha_llm.js",
   "jilin_gaogouli_llm": "slices/jilin_gaogouli_llm.js",
-  "sui_canal_llm": "slices/sui_canal_llm.js"
+  "sui_canal_llm": "slices/sui_canal_llm.js",
+  "tang_anshi_llm": "slices/tang_anshi_llm.js",
+  "han_banchao_llm": "slices/han_banchao_llm.js",
+  "song_yancheng_llm": "slices/song_yancheng_llm.js",
+  "yuan_xingsheng_llm": "slices/yuan_xingsheng_llm.js",
+  "ming_zhenghe_llm": "slices/ming_zhenghe_llm.js",
+  "qing_yakesa_llm": "slices/qing_yakesa_llm.js"
  },
  "corridors": [
   {

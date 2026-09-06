@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_qing_yakesa_llm_01",
+   "subject": "event:ev_qing_yakesa_llm_01",
+   "year": 1685,
+   "era": "康熙二十四年",
+   "title": "第一次雅克萨之战",
+   "kind": "战事",
+   "text": "清军围攻雅克萨，俄军投降后毁城而还",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_yakesa_llm_02",
+   "subject": "event:ev_qing_yakesa_llm_02",
+   "year": 1686,
+   "era": "康熙二十五年",
+   "title": "第二次雅克萨之战",
+   "kind": "战事",
+   "text": "清军再围雅克萨，击败哥萨克",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qing_yakesa_llm_03",
+   "subject": "event:ev_qing_yakesa_llm_03",
+   "year": 1689,
+   "era": "康熙二十八年",
+   "title": "尼布楚条约",
+   "kind": "外交",
+   "text": "划定中俄东段边界，雅克萨归清",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

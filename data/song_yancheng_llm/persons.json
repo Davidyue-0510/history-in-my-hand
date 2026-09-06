@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "SON__p01",
+   "name": "岳飞",
+   "role": "南宋将领",
+   "note": "北伐主帅",
+   "_source_idx": 0,
+   "_source_name": "宋史·岳飞传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p02",
+   "name": "金兀术",
+   "role": "金军主将",
+   "note": "率拐子马",
+   "_source_idx": 0,
+   "_source_name": "宋史·岳飞传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p03",
+   "name": "宋高宗",
+   "role": "南宋皇帝",
+   "note": "主和",
+   "_source_idx": 0,
+   "_source_name": "宋史·岳飞传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p04",
+   "name": "秦桧",
+   "role": "南宋宰相",
+   "note": "主和",
+   "_source_idx": 0,
+   "_source_name": "宋史·岳飞传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

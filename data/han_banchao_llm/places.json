@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "shanshan",
+   "name": "鄯善",
+   "type": "city",
+   "modern": "今中国新疆若羌",
+   "note": "班超初至西域镇抚之地",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yutian",
+   "name": "于阗",
+   "type": "city",
+   "modern": "今中国新疆和田",
+   "note": "班超镇抚的西域国",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "shule",
+   "name": "疏勒",
+   "type": "city",
+   "modern": "今中国新疆喀什",
+   "note": "班超坚守的西域国",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "tiaozhi",
+   "name": "条支",
+   "type": "region",
+   "modern": "今西亚两河流域",
+   "note": "甘英出使所至临海之地",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dajin",
+   "name": "大秦",
+   "type": "region",
+   "modern": "今罗马帝国",
+   "note": "甘英出使目的地",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

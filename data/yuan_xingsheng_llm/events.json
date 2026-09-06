@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_yuan_xingsheng_llm_01",
+   "subject": "event:ev_yuan_xingsheng_llm_01",
+   "year": 1264,
+   "era": "至元元年",
+   "title": "始设行省",
+   "kind": "建置",
+   "text": "元世祖设行中书省分掌地方军政",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuan_xingsheng_llm_02",
+   "subject": "event:ev_yuan_xingsheng_llm_02",
+   "year": 1276,
+   "era": "至元十三年",
+   "title": "行省定制",
+   "kind": "建置",
+   "text": "行省由临时转为固定地方最高行政区",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 163,
-  "historical": 154,
+  "scenes_total": 169,
+  "historical": 160,
   "fictional": 9,
-  "assertions_total": 2617,
-  "sources_total": 124,
+  "assertions_total": 2696,
+  "sources_total": 130,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -15,29 +15,35 @@
     "guandu_llm",
     "guizhou_yelang_llm",
     "hainan_zhuyai_llm",
+    "han_banchao_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
     "jilin_gaogouli_llm",
     "ming_qing",
+    "ming_zhenghe_llm",
     "nanzhao_dali_llm",
     "qin_mie_liu_guo",
     "qin_mie_liu_guo_llm",
+    "qing_yakesa_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
     "song",
+    "song_yancheng_llm",
     "sui_canal_llm",
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "tang",
+    "tang_anshi_llm",
     "three_campaigns",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
+    "yuan_xingsheng_llm",
     "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 256,
+  "leads_total": 264,
   "per_scene": [
     {
       "id": "sarhu",
@@ -1233,6 +1239,48 @@
       "kind": "engineering",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "tang_anshi_llm",
+      "title": "安史之乱（LLM 抽取·人工校订）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "han_banchao_llm",
+      "title": "班超经营西域（LLM 抽取·人工校订）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "song_yancheng_llm",
+      "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yuan_xingsheng_llm",
+      "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
+      "kind": "reform",
+      "assertions": 10,
+      "factions": {}
+    },
+    {
+      "id": "ming_zhenghe_llm",
+      "title": "郑和下西洋（LLM 抽取·人工校订）",
+      "kind": "exchange",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "qing_yakesa_llm",
+      "title": "雅克萨之战（LLM 抽取·人工校订）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1398,6 +1446,12 @@
     "hainan_zhuyai_llm": "汉置珠崖儋耳二郡（前110–前46）",
     "hunan_changsha_llm": "汉长沙国·马王堆（前202–前157）",
     "jilin_gaogouli_llm": "高句丽·集安王城（前37–668）",
-    "sui_canal_llm": "隋炀帝开凿大运河（LLM 抽取·人工校订）"
+    "sui_canal_llm": "隋炀帝开凿大运河（LLM 抽取·人工校订）",
+    "tang_anshi_llm": "安史之乱（LLM 抽取·人工校订）",
+    "han_banchao_llm": "班超经营西域（LLM 抽取·人工校订）",
+    "song_yancheng_llm": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
+    "yuan_xingsheng_llm": "元设行中书省（行省制）（LLM 抽取·人工校订）",
+    "ming_zhenghe_llm": "郑和下西洋（LLM 抽取·人工校订）",
+    "qing_yakesa_llm": "雅克萨之战（LLM 抽取·人工校订）"
   }
 }

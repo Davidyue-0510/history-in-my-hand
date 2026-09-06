@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_han_banchao_llm_01",
+   "subject": "event:ev_han_banchao_llm_01",
+   "year": 73,
+   "era": "永平十六年",
+   "title": "班超使西域",
+   "kind": "外交",
+   "text": "班超率三十六骑出使西域",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_banchao_llm_02",
+   "subject": "event:ev_han_banchao_llm_02",
+   "year": 73,
+   "era": "永平十六年",
+   "title": "袭杀匈奴使者",
+   "kind": "战事",
+   "text": "班超在鄯善袭杀匈奴使者",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_banchao_llm_03",
+   "subject": "event:ev_han_banchao_llm_03",
+   "year": 91,
+   "era": "永元三年",
+   "title": "任西域都护",
+   "kind": "行政",
+   "text": "班超任西域都护，重通西域",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_banchao_llm_04",
+   "subject": "event:ev_han_banchao_llm_04",
+   "year": 97,
+   "era": "永元九年",
+   "title": "甘英使大秦",
+   "kind": "外交",
+   "text": "遣甘英使大秦至条支临海而还",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

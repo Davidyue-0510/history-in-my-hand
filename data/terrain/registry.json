@@ -230,6 +230,48 @@
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "tang_anshi_llm": {
+      "label": "安史之乱",
+      "file": "tang_anshi_llm_grid.json",
+      "bbox": [
+        108.45,
+        33.77,
+        116.9,
+        40.4
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "song_yancheng_llm": {
+      "label": "郾城之战（岳飞北伐）",
+      "file": "song_yancheng_llm_grid.json",
+      "bbox": [
+        113.47,
+        33.37,
+        114.47,
+        34.37
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "yuan_xingsheng_llm": {
+      "label": "元设行中书省（行省制）",
+      "file": "yuan_xingsheng_llm_grid.json",
+      "bbox": [
+        111.95,
+        29.77,
+        123.93,
+        42.3
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

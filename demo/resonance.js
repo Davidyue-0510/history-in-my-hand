@@ -57,6 +57,7 @@ window.SANDBOX_RESONANCE = {
    "guizhou_yelang_llm",
    "hainan_zhuyai_llm",
    "haizhou",
+   "han_banchao_llm",
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
@@ -94,6 +95,7 @@ window.SANDBOX_RESONANCE = {
    "lvlin",
    "maling",
    "ming_fall",
+   "ming_zhenghe_llm",
    "mingmo_dangzheng",
    "mingmo_jihuang",
    "mingmo_shuyi",
@@ -106,6 +108,7 @@ window.SANDBOX_RESONANCE = {
    "qin_mie_liu_guo_llm",
    "qin_unify",
    "qing_han",
+   "qing_yakesa_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
    "sarhu",
@@ -116,6 +119,7 @@ window.SANDBOX_RESONANCE = {
    "song_chan_yuan",
    "song_dangzheng",
    "song_he_jue",
+   "song_yancheng_llm",
    "songjin",
    "sui_canal_llm",
    "sui_daxing",
@@ -125,6 +129,7 @@ window.SANDBOX_RESONANCE = {
    "suiyang",
    "taiping",
    "talas",
+   "tang_anshi_llm",
    "tang_dangzheng",
    "tang_huai_xi",
    "three_campaigns",
@@ -153,6 +158,7 @@ window.SANDBOX_RESONANCE = {
    "yellow_sea_1894",
    "yiling",
    "yuan_duo",
+   "yuan_xingsheng_llm",
    "zhangheng",
    "zhangjuzheng",
    "zhangqian",
@@ -1055,6 +1061,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.75
   },
   {
+   "scene": "han_banchao_llm",
+   "name": "han_banchao_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_banchao_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "heshangyuan",
    "name": "heshangyuan",
    "total": 21,
@@ -1785,6 +1810,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "ming_zhenghe_llm",
+   "name": "ming_zhenghe_llm",
+   "total": 13,
+   "layers": {
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ming_zhenghe_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "mingmo_dangzheng",
    "name": "mingmo_dangzheng",
    "total": 26,
@@ -2011,6 +2055,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "qing_yakesa_llm",
+   "name": "qing_yakesa_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qing_yakesa_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "qinghai_tuyuhun_llm",
    "name": "qinghai_tuyuhun_llm",
    "total": 20,
@@ -2226,6 +2289,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "song_yancheng_llm",
+   "name": "song_yancheng_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_song_yancheng_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "songjin",
    "name": "songjin",
    "total": 18,
@@ -2394,6 +2476,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:tl_gel",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "tang_anshi_llm",
+   "name": "tang_anshi_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tang_anshi_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2956,6 +3057,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:yu_1271",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yuan_xingsheng_llm",
+   "name": "yuan_xingsheng_llm",
+   "total": 10,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 10
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yuan_xingsheng_llm_01",
    "best_resonance": 0.0
   },
   {

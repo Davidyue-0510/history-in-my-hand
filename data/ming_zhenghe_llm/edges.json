@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "zhancheng",
+   "to": "manlajia",
+   "type": "military",
+   "label": "船队西行",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "manlajia",
+   "to": "xilan",
+   "type": "military",
+   "label": "船队西行",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "xilan",
+   "to": "guli",
+   "type": "military",
+   "label": "船队西行",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guli",
+   "to": "hulumosi",
+   "type": "military",
+   "label": "船队西行",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "hulumosi",
+   "to": "dongfei",
+   "type": "military",
+   "label": "远抵东非",
+   "_source_idx": 0,
+   "_source_name": "明史·郑和传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
