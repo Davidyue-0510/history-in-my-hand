@@ -1,0 +1,12 @@
+{
+ "_comment": "隋·大运河非军事反事实配置（G2 六维广度 · engineering 类 · v0.126）。scenario_type=engineering 扰动 技术/制度/社会/事件 四维（地理恒定占位不扰动）；real_branch=real 为史实（运河贯通，南北漕运/技术/制度连通提升），whatif 为反事实（运河未凿或中途罢废，连通未成）。base_rate 为年增速，受 local 工程征发阻力折减（见 simulate_nonmilitary）。",
+ "scenario_type": "engineering",
+ "dim_targets": ["技术", "制度", "社会", "事件"],
+ "start_year": 605,
+ "end_year": 612,
+ "real_branch": "real",
+ "branches": [
+  {"id": "real", "label": "史实·运河贯通", "base_rate": 0.04, "reform0": 0.4},
+  {"id": "whatif", "label": "反事实·运河未凿（或中途罢废）", "base_rate": -0.02, "reform0": 0.4}
+ ]
+}

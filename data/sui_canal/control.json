@@ -1,0 +1,11 @@
+{
+ "_comment": "隋·大运河场景：隋廷单一控制（工程为中央征发驱动）。非军事场景，无需邻接线；control 为数组（位于 control 键下），供三阶层 Agent 生成改革阻力（local 工程征发→民力损耗拖慢推进）。离网模式（不注册 scenes.json），party 仅供引擎三阶层建模。",
+ "control": [
+  {"place_id": "luoyang", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"},
+  {"place_id": "zhuojun", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"},
+  {"place_id": "yuhang", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"},
+  {"place_id": "jiangdu", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"},
+  {"place_id": "bianzhou", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"},
+  {"place_id": "chuzhou", "party": "隋廷", "start": 605, "end": 612, "timeline": "main"}
+ ]
+}

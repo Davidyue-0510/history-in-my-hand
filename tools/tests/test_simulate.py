@@ -92,5 +92,16 @@ check("北魏 7 年时序", len(sh3) == 7)
 check("北魏 Branch Event 产出", len(be3) >= 1)
 check("北魏 反事实偏离史实", abs(sh3[-1]["reform_index"] - rt3[-1]) >= 0.1)
 
+# ── G2 六维广度扩展：engineering（隋·大运河）──
+cfg4 = S.load_sim_config("sui_canal")
+check("大运河 scenario_type=engineering", cfg4 and cfg4["scenario_type"] == "engineering")
+sh4, be4, rt4 = S.simulate_nonmilitary("sui_canal", "real", 605, 612, cfg4)
+check("大运河 8 年时序", len(sh4) == 8)
+check("大运河 Branch Event 合规",
+      all(e.get("kind") in ("divergence", "logistics", "faction", "momentum", "summary")
+          and e.get("severity") in ("info", "warn", "bad")
+          and isinstance(e.get("year"), int) for e in be4))
+check("大运河 反事实偏离史实", abs(sh4[-1]["reform_index"] - rt4[-1]) >= 0.1)
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

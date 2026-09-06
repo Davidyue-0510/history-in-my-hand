@@ -1,0 +1,47 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "sui_canal",
+ "_scenario_type": "engineering",
+ "_years": [
+  605,
+  612
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 611,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.52 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.522,
+    "cum": -0.158
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 612,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.54 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.72,
+    "new_to": 0.539,
+    "cum": -0.181
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 612,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.54 / 史实 0.72（偏离 -0.18）",
+   "evidence": {
+    "cum": -0.181,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

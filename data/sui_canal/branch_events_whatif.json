@@ -1,0 +1,83 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "sui_canal",
+ "_scenario_type": "engineering",
+ "_years": [
+  605,
+  612
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 608,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.37 / 史实 0.56）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.56,
+    "new_to": 0.365,
+    "cum": -0.195
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 609,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.36 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.356,
+    "cum": -0.244
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 610,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.35 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.64,
+    "new_to": 0.348,
+    "cum": -0.292
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 611,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.34 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.339,
+    "cum": -0.341
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 612,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.33 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.72,
+    "new_to": 0.33,
+    "cum": -0.39
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 612,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.33 / 史实 0.72（偏离 -0.39）",
+   "evidence": {
+    "cum": -0.39,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}
