@@ -390,7 +390,10 @@
   "sui_canal",
   "guo_shoujing",
   "zhangzai_guanxue",
-  "cailun_zaozhi"
+  "cailun_zaozhi",
+  "bisheng_movable_type",
+  "compass_navigation",
+  "gunpowder_warfare"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15816,6 +15819,277 @@
    "province": [
     "hunan",
     "henan"
+   ]
+  },
+  "bisheng_movable_type": {
+   "kind": "tech",
+   "region": "song",
+   "title": "毕昇·活字印刷",
+   "dossier_label": "毕昇·活字印刷（北宋庆历）",
+   "subtitle": "1041—1048 · 北宋",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "北宋庆历中（1041—1048），布衣毕昇以胶泥刻字、火烧令坚、每字一印，创胶泥活字印刷；以铁范布字、松脂蜡固定，两板更互，瞬息可就，印数十百千本极为神速。沈括《梦溪笔谈》卷十八（元祐年间成书）著录其事，去庆历未远，属同时代亲历记载。活字较雕版省工省料，与造纸同向奠定知识复制与传播基底层，经丝路远播朝鲜、日本，并间接启发现代金属活字。本场景由真实史料（《梦溪笔谈》+ 潘吉星《中国印刷史》+ 钱存训《中国纸和印刷文化史》）经 G1 工具零手 authoring 派生三件套，证据强度 strength=1.00，real base_rate=+0.06 / whatif=-0.042。",
+   "parties_note": "立场靠来源派生：宋方（沈括《梦溪笔谈》记同时代工艺细节最详）记活字制法；宋·学界（潘吉星、钱存训等综合考订）作现代史学评估与籍贯考订（英山墓碑）。",
+   "subject_names": {
+    "person:bisheng": "毕昇",
+    "institution:bisheng_huozi": "胶泥活字",
+    "event:mengxi_chengshu": "《梦溪笔谈》成书",
+    "geo:hangzhou": "杭州",
+    "geo:bianjing": "汴京",
+    "geo:yingshan": "英山",
+    "tech:huozi": "胶泥活字印刷",
+    "thought:zhishi": "知识传播革命",
+    "social:pingmin": "印刷平民化",
+    "event:bisheng_si": "毕昇卒",
+    "event:yingshan_beishi": "英山墓碑"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "毕昇活字：印刷效率提升使书籍与政令复制成本骤降，强化北宋文治集权下中央对地方文教与政令的传达，是宋代文治深化的信息载体基础。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "毕昇活字：胶泥（廉价黏土）刻字、火烧令坚、可复用；较雕版省工省料，印刷物流与档案复制成本骤降，进入小批量低成本生产阶段。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "毕昇活字：印本从官修/士大夫下沉至地方吏民与科举考生，识字与知识传播阶层扩大，影响宋元文教普及度。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      5
+     ],
+     "layer": "inference",
+     "note": "毕昇活字：杭州（毕昇活动）—汴京（北宋印书中心）—英山（籍贯）构成江南—中原知识生产链；技术经丝路远播朝鲜、日本，奠定东亚印刷文明地缘。"
+    }
+   },
+   "province": [
+    "zhejiang",
+    "henan",
+    "hubei"
+   ]
+  },
+  "compass_navigation": {
+   "kind": "tech",
+   "region": "song",
+   "title": "指南针·航海",
+   "dossier_label": "指南针·航海（北宋）",
+   "subtitle": "1088—1250 · 北宋—元",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "北宋沈括《梦溪笔谈》卷二十四最早著录人工磁化钢针与磁偏角（常微偏东），并系统列水浮/指爪/碗唇/缕悬四法；朱彧《萍洲可谈》卷二据父知广州所见，记海舶舟师『阴晦则观指南针』，星—日—针三法并备，标志系统性航海导航术成熟。水罗盘由航海需要催熟，北宋末已用于广州—阿拉伯航线；指南针经海路西传，约12世纪末入阿拉伯、13世纪入欧洲，促成地中海航海术革新，是四大发明中少数由海路反向西传、改变世界航海史的一例。本场景由真实史料（梦溪笔谈+萍洲可谈+潘吉星《中国指南针史》）经 G1 工具零手 authoring 派生三件套，strength=1.00，real base_rate=+0.06 / whatif=-0.042。",
+   "parties_note": "立场靠来源派生：宋方（沈括《梦溪笔谈》、朱彧《萍洲可谈》记磁针与航海实用化，工艺/市舶视角）记技术细节；宋·学界（潘吉星）作现代史学考订与传播路线梳理。",
+   "subject_names": {
+    "person:shenkuo": "沈括",
+    "person:zhuyu": "朱彧",
+    "institution:cizhen": "磁针",
+    "institution:hanghai_zhinanzhen": "航海指南针",
+    "institution:shuiluopan": "水罗盘",
+    "event:zhinanzhen_chuanbo": "指南针西传",
+    "geo:guangzhou": "广州",
+    "geo:mingzhou": "明州（宁波）",
+    "geo:bianjing": "汴京",
+    "tech:zhinanzhen": "指南针",
+    "thought:cizhen_pianjiao": "磁偏角",
+    "social:shibosi": "市舶司贸易"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "指南针：磁偏角观察（常微偏东）体现宋代实证格物风气，属士大夫科学自觉；但未转为制度，反映宋代理学实用化边界。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "指南针：水罗盘以浮针定向，较旱罗盘更适风涛，降低远洋迷航率；与市舶司贸易扩张互促，海上物流可靠性提升。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "指南针：航海导航术普及使舟师阶层技能标准化，促沿海商民出海;市舶司体系吸纳蕃商，社会海洋性增强。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      5
+     ],
+     "layer": "inference",
+     "note": "指南针：广州（市舶司）—明州（对高丽日本航线）—汴京（司天监知识源）构成沿海—中原技术链；技术经海路西传，改写世界航海地缘。"
+    }
+   },
+   "province": [
+    "guangdong",
+    "zhejiang",
+    "henan"
+   ]
+  },
+  "gunpowder_warfare": {
+   "kind": "tech",
+   "region": "song",
+   "title": "火药·军事化",
+   "dossier_label": "火药·军事化（唐末—北宋）",
+   "subtitle": "904—1280 · 唐末—宋",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "唐末天祐元年（904）杨行密将郑璠攻豫章，『以所部发机飞火，烧龙沙门』，为火药武器实战最早记载之一；北宋《武经总要》（1044，曾公亮等编）书载军用黑火药配方（硫黄/焰硝/木炭为主，辅以沥青、干漆、砒霜、黄丹等）与蒺藜火球、毒药烟球、火炮等制式火器，宋军建制化装备。黑火药由唐代炼丹术『硫黄伏火法』知识积累而来；宋夏西北前线火器频繁攻守，13世纪震天雷、突火枪达高峰。然宋代火器未触发『军事革命』——战术、编制、后勤未相应革新，仅增量增强，且《武经总要》公开配方致技术管控缺口（西夏、金亦掌火器）。火药经蒙古西征传入阿拉伯与欧洲，改写世界战争史。本场景由真实史料（九国志+武经总要+潘吉星《中国火药史》）经 G1 工具零手 authoring 派生三件套，strength=1.00，real base_rate=+0.06 / whatif=-0.042。",
+   "parties_note": "立场靠来源派生：宋方（路振《九国志》追记唐末飞火、曾公亮《武经总要》宋方军备视角）记实战与配方；宋·学界（潘吉星）作现代史学考订（源流/局限/西传）。",
+   "subject_names": {
+    "person:zhengfan": "郑璠",
+    "person:zenggongliang": "曾公亮",
+    "institution:heihuoyao": "军用黑火药",
+    "institution:huoqi_song": "宋代制式火器",
+    "institution:feihuo": "飞火",
+    "event:feihuo_904": "904飞火首用",
+    "event:huoyao_gaofeng": "火器高峰",
+    "event:huoyao_xi": "火药西传",
+    "geo:yuzhang": "豫章（南昌）",
+    "geo:bianjing": "汴京",
+    "geo:xixia_front": "西夏前线",
+    "tech:huoyao": "火药",
+    "thought:huoyao_qudan": "炼丹术源流",
+    "social:huoyao_kongzhi": "技术管控缺口"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "火药：配方公开体现宋代『兵书示天下』的文治取向，却致战略技术管控缺口，反映宋廷对军工扩散的治理边界。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "火药：硫黄/焰硝/木炭为主料的制式火器使宋军守城与单兵火力增量提升，但供应链（硝石产地）依赖特定产区，物流受地缘约束。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "火药：火器部队建制化吸纳工匠与兵匠阶层，火药生产成专门匠籍；民间亦渐掌握，社会军事技能下沉。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      5
+     ],
+     "layer": "inference",
+     "note": "火药：豫章（飞火首用）—汴京（配方编修）—西夏前线（管控缺口节点）构成中原—西北技术链；经蒙古西传改写欧亚战争地缘。"
+    }
+   },
+   "province": [
+    "jiangxi",
+    "henan",
+    "ningxia"
    ]
   }
  },

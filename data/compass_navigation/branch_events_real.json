@@ -1,0 +1,119 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "compass_navigation",
+ "_scenario_type": "engineering",
+ "_years": [
+  1080,
+  1250
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1084,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.644,
+    "cum": -0.156
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1085,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.67 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.673,
+    "cum": -0.187
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1086,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.70 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.702,
+    "cum": -0.218
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1087,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.73 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.731,
+    "cum": -0.249
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1088,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.76,
+    "cum": -0.24
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1089,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.789,
+    "cum": -0.211
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1090,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.818,
+    "cum": -0.182
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1091,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.846,
+    "cum": -0.154
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1250,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

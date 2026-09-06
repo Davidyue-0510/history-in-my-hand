@@ -1,9 +1,9 @@
 {
-  "scenes_total": 187,
-  "historical": 178,
+  "scenes_total": 190,
+  "historical": 181,
   "fictional": 9,
-  "assertions_total": 2893,
-  "sources_total": 155,
+  "assertions_total": 2925,
+  "sources_total": 163,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -53,7 +53,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 278,
+  "leads_total": 280,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1417,6 +1417,27 @@
       "kind": "tech",
       "assertions": 11,
       "factions": {}
+    },
+    {
+      "id": "bisheng_movable_type",
+      "title": "毕昇·活字印刷",
+      "kind": "tech",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "compass_navigation",
+      "title": "指南针·航海",
+      "kind": "tech",
+      "assertions": 10,
+      "factions": {}
+    },
+    {
+      "id": "gunpowder_warfare",
+      "title": "火药·军事化",
+      "kind": "tech",
+      "assertions": 11,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1606,6 +1627,9 @@
     "sui_canal": "隋·大运河",
     "guo_shoujing": "郭守敬·水利与天文",
     "zhangzai_guanxue": "张载·关学",
-    "cailun_zaozhi": "蔡伦·造纸"
+    "cailun_zaozhi": "蔡伦·造纸",
+    "bisheng_movable_type": "毕昇·活字印刷",
+    "compass_navigation": "指南针·航海",
+    "gunpowder_warfare": "火药·军事化"
   }
 }

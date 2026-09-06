@@ -17,6 +17,7 @@ window.SANDBOX_RESONANCE = {
    "beijiu",
    "bencao",
    "biTigeGuan",
+   "bisheng_movable_type",
    "boju",
    "bozhou",
    "cailun_zaozhi",
@@ -34,6 +35,7 @@ window.SANDBOX_RESONANCE = {
    "chongzhen_huangzai",
    "chu_han",
    "chuhai_llm",
+   "compass_navigation",
    "dalinghe",
    "diaoyucheng",
    "dingwu",
@@ -58,6 +60,7 @@ window.SANDBOX_RESONANCE = {
    "guangning",
    "guiling",
    "guizhou_yelang_llm",
+   "gunpowder_warfare",
    "guo_shoujing",
    "hainan_zhuyai_llm",
    "haizhou",
@@ -318,6 +321,24 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.286,
    "best_event": "event:biti",
    "best_resonance": 0.286
+  },
+  {
+   "scene": "bisheng_movable_type",
+   "name": "bisheng_movable_type",
+   "total": 11,
+   "layers": {
+    "record": 6,
+    "scholarship": 5
+   },
+   "party_counts": {
+    "宋方": 7,
+    "综述考订": 4
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:mengxi_chengshu",
+   "best_resonance": 0.0
   },
   {
    "scene": "boju",
@@ -633,6 +654,26 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": "event:ev_chuhai_llm_01",
    "best_resonance": 0.0
+  },
+  {
+   "scene": "compass_navigation",
+   "name": "compass_navigation",
+   "total": 10,
+   "layers": {
+    "record": 4,
+    "scholarship": 3,
+    "inference": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "宋方": 6,
+    "综述考订": 4
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
   },
   {
    "scene": "dalinghe",
@@ -1096,6 +1137,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guizhou_yelang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "gunpowder_warfare",
+   "name": "gunpowder_warfare",
+   "total": 11,
+   "layers": {
+    "record": 5,
+    "scholarship": 3,
+    "inference": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "宋方": 7,
+    "综述考订": 4
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:huoyao_xi",
    "best_resonance": 0.0
   },
   {

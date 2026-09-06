@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 187 个切片
+// 权威数据源：data/scenes.json 注册的 190 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 187 个切片",
+  "slice": "multi-scene · 190 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -494,7 +494,10 @@ window.SANDBOX_DATA = {
   "sui_canal",
   "guo_shoujing",
   "zhangzai_guanxue",
-  "cailun_zaozhi"
+  "cailun_zaozhi",
+  "bisheng_movable_type",
+  "compass_navigation",
+  "gunpowder_warfare"
  ],
  "vocab": {
   "layers": [
@@ -24854,6 +24857,111 @@ window.SANDBOX_DATA = {
     "scholarship": 4,
     "inference": 1
    }
+  },
+  "bisheng_movable_type": {
+   "key": "bisheng_movable_type",
+   "scene_id": "bisheng_movable_type",
+   "title": "毕昇·活字印刷",
+   "dossier_label": "毕昇·活字印刷（北宋庆历）",
+   "subtitle": "1041—1048 · 北宋",
+   "kind": "tech",
+   "region": "song",
+   "page": "county.html?scene=bisheng_movable_type",
+   "primary_place": null,
+   "vocab_pack": "inline:bisheng_movable_type",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 3,
+    "person": 1,
+    "assert": 11,
+    "conflict": 2,
+    "gap": 0,
+    "record": 6,
+    "scholarship": 5,
+    "inference": 0
+   }
+  },
+  "compass_navigation": {
+   "key": "compass_navigation",
+   "scene_id": "compass_navigation",
+   "title": "指南针·航海",
+   "dossier_label": "指南针·航海（北宋）",
+   "subtitle": "1088—1250 · 北宋—元",
+   "kind": "tech",
+   "region": "song",
+   "page": "county.html?scene=compass_navigation",
+   "primary_place": null,
+   "vocab_pack": "inline:compass_navigation",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 3,
+    "place": 3,
+    "person": 3,
+    "assert": 10,
+    "conflict": 0,
+    "gap": 1,
+    "record": 4,
+    "scholarship": 3,
+    "inference": 2
+   }
+  },
+  "gunpowder_warfare": {
+   "key": "gunpowder_warfare",
+   "scene_id": "gunpowder_warfare",
+   "title": "火药·军事化",
+   "dossier_label": "火药·军事化（唐末—北宋）",
+   "subtitle": "904—1280 · 唐末—宋",
+   "kind": "tech",
+   "region": "song",
+   "page": "county.html?scene=gunpowder_warfare",
+   "primary_place": null,
+   "vocab_pack": "inline:gunpowder_warfare",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 3,
+    "place": 3,
+    "person": 3,
+    "assert": 11,
+    "conflict": 0,
+    "gap": 1,
+    "record": 5,
+    "scholarship": 3,
+    "inference": 2
+   }
   }
  },
  "slice_index": {
@@ -25043,7 +25151,10 @@ window.SANDBOX_DATA = {
   "sui_canal": "slices/sui_canal.js",
   "guo_shoujing": "slices/guo_shoujing.js",
   "zhangzai_guanxue": "slices/zhangzai_guanxue.js",
-  "cailun_zaozhi": "slices/cailun_zaozhi.js"
+  "cailun_zaozhi": "slices/cailun_zaozhi.js",
+  "bisheng_movable_type": "slices/bisheng_movable_type.js",
+  "compass_navigation": "slices/compass_navigation.js",
+  "gunpowder_warfare": "slices/gunpowder_warfare.js"
  },
  "corridors": [
   {

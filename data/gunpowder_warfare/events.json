@@ -1,0 +1,8 @@
+{
+ "events": [
+  {"id":"evt_feihuo_904","title":"郑璠攻豫章发机飞火","era":"唐天祐元年","year":904,"kind":"event","subject":"person:zhengfan","text":"杨行密将郑璠攻豫章，以所部发机飞火、烧龙沙门、突火先登，火药武器实战最早记载之一。"},
+  {"id":"evt_wujing_1044","title":"《武经总要》书载火药方","era":"北宋庆历","year":1044,"kind":"institution","subject":"person:zenggongliang","text":"曾公亮等编《武经总要》，载军用黑火药配方与蒺藜火球、毒药烟球、火炮等制式火器。"},
+  {"id":"evt_song_xia_huoqi","title":"宋夏战争火器登场","era":"北宋康定—庆历","year":1045,"kind":"event","subject":"event:song_xia_huoqi","text":"宋夏西北前线频繁以火器攻守，三川口、好水川等役火器已用于守城与火攻。"},
+  {"id":"evt_huoyao_xi","title":"火药西传（阿拉伯—欧洲）","era":"宋末—元","year":1280,"kind":"event","subject":"event:huoyao_xi","text":"火药经蒙古西征传入阿拉伯与欧洲，震天雷/突火枪类火器改写世界战争史。"}
+ ]
+}

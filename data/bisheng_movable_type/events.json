@@ -1,0 +1,8 @@
+{
+ "events": [
+  {"id":"evt_bisheng_faming","title":"毕昇发明胶泥活字印刷","era":"北宋庆历","year":1045,"kind":"institution","subject":"person:bisheng","text":"庆历中（1041—1048），布衣毕昇以胶泥刻字、火烧令坚、每字一印，创胶泥活字印刷；两板更互，瞬息可就。"},
+  {"id":"evt_mengxi_jilu","title":"沈括《梦溪笔谈》著录活字","era":"北宋元祐","year":1088,"kind":"institution","subject":"event:mengxi_chengshu","text":"约1086—1093 年，沈括退居镇江梦溪，撰《梦溪笔谈》卷十八记毕昇活字之法；去庆历事未远，属同时代亲历著录。"},
+  {"id":"evt_bisheng_si","title":"毕昇卒·字印归沈括群从","era":"北宋","year":1065,"kind":"event","subject":"person:bisheng","text":"毕昇卒后，其胶泥字印为沈括群从所得，沈括著录时仍保藏。"},
+  {"id":"evt_yingshan_beishi","title":"英山毕昇墓碑出土","era":"现代考订","year":1979,"kind":"event","subject":"geo:yingshan","text":"1979 年湖北英山草盘地出土毕昇墓碑，潘吉星据以考订毕昇籍贯为蕲州蕲水（今英山）。"}
+ ]
+}

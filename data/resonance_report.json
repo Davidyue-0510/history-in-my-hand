@@ -15,6 +15,7 @@
       "beijiu",
       "bencao",
       "biTigeGuan",
+      "bisheng_movable_type",
       "boju",
       "bozhou",
       "cailun_zaozhi",
@@ -32,6 +33,7 @@
       "chongzhen_huangzai",
       "chu_han",
       "chuhai_llm",
+      "compass_navigation",
       "dalinghe",
       "diaoyucheng",
       "dingwu",
@@ -56,6 +58,7 @@
       "guangning",
       "guiling",
       "guizhou_yelang_llm",
+      "gunpowder_warfare",
       "guo_shoujing",
       "hainan_zhuyai_llm",
       "haizhou",
@@ -316,6 +319,24 @@
       "avg_resonance": 0.286,
       "best_event": "event:biti",
       "best_resonance": 0.286
+    },
+    {
+      "scene": "bisheng_movable_type",
+      "name": "bisheng_movable_type",
+      "total": 11,
+      "layers": {
+        "record": 6,
+        "scholarship": 5
+      },
+      "party_counts": {
+        "宋方": 7,
+        "综述考订": 4
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:mengxi_chengshu",
+      "best_resonance": 0.0
     },
     {
       "scene": "boju",
@@ -631,6 +652,26 @@
       "avg_resonance": 0.0,
       "best_event": "event:ev_chuhai_llm_01",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "compass_navigation",
+      "name": "compass_navigation",
+      "total": 10,
+      "layers": {
+        "record": 4,
+        "scholarship": 3,
+        "inference": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "宋方": 6,
+        "综述考订": 4
+      },
+      "faction_counts": {},
+      "event_count": 0,
+      "avg_resonance": 0.0,
+      "best_event": null,
+      "best_resonance": null
     },
     {
       "scene": "dalinghe",
@@ -1094,6 +1135,26 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_guizhou_yelang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "gunpowder_warfare",
+      "name": "gunpowder_warfare",
+      "total": 11,
+      "layers": {
+        "record": 5,
+        "scholarship": 3,
+        "inference": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "宋方": 7,
+        "综述考订": 4
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:huoyao_xi",
       "best_resonance": 0.0
     },
     {
@@ -12349,6 +12410,62 @@
       }
     },
     {
+      "subject": "event:huoyao_xi",
+      "name": "event:huoyao_xi",
+      "scenes": [
+        "gunpowder_warfare"
+      ],
+      "scene_names": [
+        "gunpowder_warfare"
+      ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 3
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "a6",
+            "predicate": "scaled",
+            "value_text": "宋金/宋蒙战争中火器规模化：震天雷（铁火炮）、突火枪（竹/金属管形火器）出现，13世纪火药军事化达高峰",
+            "source": "src_panjixing_gunpowder",
+            "layer": "scholarship",
+            "scene": "gunpowder_warfare"
+          },
+          {
+            "id": "a8",
+            "predicate": "gap",
+            "value_text": "宋代火器未触发『军事革命』：战术、编制、后勤未相应革新，火器仅增量增强守城与单兵，未改变战争总体形态——诚实缺口",
+            "source": "src_panjixing_gunpowder",
+            "layer": "gap",
+            "scene": "gunpowder_warfare"
+          },
+          {
+            "id": "a10",
+            "predicate": "diffused",
+            "value_text": "火药经蒙古西征（13世纪）传入阿拉伯与欧洲，改写世界战争史，是四大发明中军事冲击最强、反向西传的一例",
+            "source": "src_panjixing_gunpowder",
+            "layer": "scholarship",
+            "scene": "gunpowder_warfare"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:hx_after",
       "name": "event:hx_after",
       "scenes": [
@@ -14397,6 +14514,37 @@
       }
     },
     {
+      "subject": "event:mengxi_chengshu",
+      "name": "event:mengxi_chengshu",
+      "scenes": [
+        "bisheng_movable_type"
+      ],
+      "scene_names": [
+        "bisheng_movable_type"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:mf_1627",
       "name": "event:mf_1627",
       "scenes": [
@@ -15434,6 +15582,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:song_xia_huoqi",
+      "name": "event:song_xia_huoqi",
+      "scenes": [
+        "gunpowder_warfare"
+      ],
+      "scene_names": [
+        "gunpowder_warfare"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

@@ -530,6 +530,22 @@
    "_src_line": 17
   },
   {
+   "id": "a8",
+   "scene": "compass_navigation",
+   "subject": "institution:hanghai_zhinanzhen",
+   "title": "宋代未建立以磁偏角修正航向的制度，海上量地术仍依赖牵星术与更数；磁学理论领先但未转化为导航制度（诚实缺口）",
+   "missing": "科技史 / 航海史",
+   "where": "宋代航海导航制度（司天监/市舶司）",
+   "skills": [
+    "科技史",
+    "航海史"
+   ],
+   "accept": "补证宋代磁偏角观察（常微偏东）未转为导航修正制度的具体制度缺口与成因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",
@@ -1085,6 +1101,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "a8",
+   "scene": "gunpowder_warfare",
+   "subject": "event:huoyao_xi",
+   "title": "宋代火器未触发『军事革命』：战术、编制、后勤未相应革新，火器仅增量增强守城与单兵，未改变战争总体形态——诚实缺口",
+   "missing": "军事史 / 科技史",
+   "where": "宋代军工技术管控与军事组织体系",
+   "skills": [
+    "军事史",
+    "科技史"
+   ],
+   "accept": "补证宋代火器未触发军事革命（战术/编制/后勤未相应革新）的制约机制与制度成因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
   },
   {
    "id": "HAING2",

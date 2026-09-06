@@ -18,6 +18,7 @@
 | beijiu | 15 | 2 | **0.000** | event:bj_961（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | bencao | 12 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 8 / scholarship 3 |
 | biTigeGuan | 13 | 1 | **0.286** | event:biti（0.286） | gap 1 / inference 4 / record 4 / scholarship 4 |
+| bisheng_movable_type | 11 | 1 | **0.000** | event:mengxi_chengshu（0.000） | record 6 / scholarship 5 |
 | boju | 21 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 4 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | cailun_zaozhi | 11 | 2 | **0.000** | event:cailun_fenghou（0.000） | inference 1 / record 6 / scholarship 4 |
@@ -35,6 +36,7 @@
 | chongzhen_huangzai | 10 | 5 | **0.000** | event:hz_1637（0.000） | gap 1 / scholarship 9 |
 | chu_han | 17 | 6 | **0.000** | event:chenggao（0.000） | gap 1 / record 16 |
 | chuhai_llm | 17 | 5 | **0.000** | event:ev_chuhai_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 2 |
+| compass_navigation | 10 | 0 | **0.000** | —（0.000） | gap 1 / inference 2 / record 4 / scholarship 3 |
 | dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 18 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 8 / scholarship 4 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
@@ -59,6 +61,7 @@
 | guangning | 43 | 3 | **0.484** | event:guangning_fall（0.785） | gap 3 / record 39 / scholarship 1 |
 | guiling | 16 | 3 | **0.000** | event:gl_jz（0.000） | gap 1 / inference 2 / record 10 / scholarship 3 |
 | guizhou_yelang_llm | 16 | 3 | **0.000** | event:ev_guizhou_yelang_llm_01（0.000） | gap 2 / inference 1 / record 11 / scholarship 2 |
+| gunpowder_warfare | 11 | 2 | **0.000** | event:huoyao_xi（0.000） | gap 1 / inference 2 / record 5 / scholarship 3 |
 | guo_shoujing | 9 | 1 | **0.000** | event:shoushi_banxing（0.000） | scholarship 9 |
 | hainan_zhuyai_llm | 15 | 2 | **0.000** | event:ev_hainan_zhuyai_llm_01（0.000） | gap 2 / inference 1 / record 11 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
@@ -501,6 +504,7 @@
 | event:huai_xi_jufa | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:huai_xi_ping | tang_huai_xi | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:huandingsanqin | chu_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:huoyao_xi | gunpowder_warfare | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 3 |
 | event:hx_after | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_legacy | huaxian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hx_main | huaxian | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |
@@ -567,6 +571,7 @@
 | event:mb_chu | mobai | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:mb_hq | mobai | **0.000** | 0/3 | 0.25 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:mb_wq | mobai | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:mengxi_chengshu | bisheng_movable_type | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:mf_1627 | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:mf_1644_3 | ming_fall | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:mf_1644_q | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
@@ -601,6 +606,7 @@
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:song_xia_huoqi | gunpowder_warfare | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.10 | 10 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:suibi | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 1 |
