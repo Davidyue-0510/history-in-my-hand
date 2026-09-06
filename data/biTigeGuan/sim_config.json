@@ -1,0 +1,29 @@
+{
+  "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
+  "_auto_derived": true,
+  "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；base_rate 符号由史料文本方向关键词启发式（推进/逆转，净差=1）推定，属 best-effort，非精确考据；反事实分支取反向。places 无坐标，判为抽象世界。",
+  "scenario_type": "social",
+  "dim_targets": [
+    "技术",
+    "制度",
+    "社会",
+    "事件"
+  ],
+  "start_year": 1593,
+  "end_year": 1598,
+  "real_branch": "real",
+  "branches": [
+    {
+      "id": "real",
+      "label": "史实基准",
+      "base_rate": 0.03,
+      "reform0": 0.5
+    },
+    {
+      "id": "whatif",
+      "label": "反事实·反向推演",
+      "base_rate": -0.03,
+      "reform0": 0.5
+    }
+  ]
+}

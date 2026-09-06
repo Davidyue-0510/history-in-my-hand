@@ -383,7 +383,8 @@
   "han_weihuo_llm",
   "tang_xuanwumen_llm",
   "chibi_llm",
-  "song_wanganshi_llm"
+  "song_wanganshi_llm",
+  "biTigeGuan"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15249,6 +15250,81 @@
     5,
     6
    ]
+  },
+  "biTigeGuan": {
+   "kind": "battle",
+   "region": "imjin",
+   "title": "碧蹄馆之战·三方记载",
+   "dossier_label": "碧蹄馆三方记载",
+   "subtitle": "1593 · 万历二十一年 · 壬辰倭乱",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "碧蹄馆之战（1593，万历朝鲜之役）明/朝/日三方记载差异极大：明方称失利退守开城，朝鲜称小败旗鼓相当，日方称大胜斩明军上万。本场景由真实史料（明史/宣祖实录/日本战史）经 G1 工具（tools/derivation/derive_sim_config.py）零手 authoring 派生推演三件套，立场靠来源派生（明方/朝鲜/日本方/综述考订），诚实披露三方歧异。",
+   "parties_note": "立场靠来源派生：明方/朝鲜/日本方 三方立场分桶，综述考订统合；伤亡数字三方无共识（gap）。",
+   "subject_names": {
+    "event:biti": "碧蹄馆之战",
+    "institution:fenggong": "封贡和谈",
+    "tech:huoqi": "火器"
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      6
+     ],
+     "layer": "inference",
+     "note": "碧蹄馆：封贡和谈体制开启，明/朝/日三方立场博弈下的政治凝聚力"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "碧蹄馆：明军火器优势与后勤（龙山粮仓）决定战局走向"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "碧蹄馆：双方伤亡与士气（日军畏惧明军）反映人口动员极限"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      2
+     ],
+     "layer": "inference",
+     "note": "碧蹄馆：战略僵持与封贡和谈，跨明/朝/日三方地缘"
+    }
+   },
+   "province": "overseas"
   }
  },
  "dimensions": {

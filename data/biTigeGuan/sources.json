@@ -1,0 +1,36 @@
+{
+  "sources": [
+    {
+      "id": "biti_ming",
+      "title": "明方·《明史·李如松传》/《经略复国要编》",
+      "party": "明·私修",
+      "availability": "not_free",
+      "bias_note": "明方官私记述：多据弹劾李如松之上疏，言官夸大，偏向「明军失利、退守开城」叙事。",
+      "distance_label": "明方官私记述"
+    },
+    {
+      "id": "biti_chao",
+      "title": "朝鲜·《宣祖实录》/《惩毖录》柳成龙",
+      "party": "朝鲜·亲历",
+      "availability": "not_free",
+      "bias_note": "朝鲜亲历：在场者估计，认为明军小败、旗鼓相当，三方中误差最小。",
+      "distance_label": "朝鲜官方亲历"
+    },
+    {
+      "id": "biti_jp",
+      "title": "日方·《日本战史朝鲜役》/《立花朝鲜记》",
+      "party": "日本·后世修",
+      "availability": "not_free",
+      "bias_note": "日方军记：宣称大胜、斩明军上万，多夸张虚报；立花宗茂部减员千八可证损耗不小。",
+      "distance_label": "日本方军记"
+    },
+    {
+      "id": "biti_syn",
+      "title": "综述考订·三方对读",
+      "party": "学界",
+      "availability": "not_free",
+      "bias_note": "学界综述：对读三方，指出伤亡数字结构性缺环，无共识。",
+      "distance_label": "综述考订"
+    }
+  ]
+}

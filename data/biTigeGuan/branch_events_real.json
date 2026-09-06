@@ -1,0 +1,23 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "biTigeGuan",
+ "_scenario_type": "social",
+ "_years": [
+  1593,
+  1598
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1598,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.58 / 史实 0.68（偏离 -0.10）",
+   "evidence": {
+    "cum": -0.098,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

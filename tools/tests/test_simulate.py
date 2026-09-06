@@ -103,5 +103,30 @@ check("大运河 Branch Event 合规",
           and isinstance(e.get("year"), int) for e in be4))
 check("大运河 反事实偏离史实", abs(sh4[-1]["reform_index"] - rt4[-1]) >= 0.1)
 
+# ── G1 真实史料端到端（v0.127 · 碧蹄馆·三方记载）──
+bt_dir = os.path.join(ROOT, "data", "biTigeGuan")
+bt_as = D.load_assertions(os.path.join(bt_dir, "assertions.jsonl"))
+bt_cfg = D.derive_config(bt_as)
+check("G1 真实史料 派生 _auto_derived 标真", bt_cfg.get("_auto_derived") is True)
+check("G1 真实史料 scenario_type=social", bt_cfg["scenario_type"] == "social")
+check("G1 真实史料 dim_targets 排除地理", "地理" not in bt_cfg["dim_targets"])
+bt_bids = [b["id"] for b in bt_cfg["branches"]]
+check("G1 真实史料 含 real+whatif 分支", "real" in bt_bids and any(b.startswith("whatif") for b in bt_bids))
+check("G1 真实史料 年份跨度 1593..1598", D.derive_year_span(bt_as) == (1593, 1598))
+# 立场靠来源派生：明方/朝鲜/日本方 + 综述考订 四方齐全
+import json as _json
+bt_src = _json.load(open(os.path.join(bt_dir, "sources.json"), encoding="utf-8"))
+bt_parties = {s["party"] for s in bt_src["sources"]}
+check("G1 真实史料 立场派生 三方+综述考订",
+      bt_parties >= {"明·私修", "朝鲜·亲历", "日本·后世修", "学界"})
+bt_sh, bt_be, bt_rt = S.simulate_nonmilitary("biTigeGuan", "real", 1593, 1598, bt_cfg)
+check("G1 真实史料→非军事推演 6 年时序", len(bt_sh) == 6)
+check("G1 真实史料 Branch Event 合规",
+      all(e.get("kind") in ("divergence", "logistics", "faction", "momentum", "summary")
+          and e.get("severity") in ("info", "warn", "bad")
+          and isinstance(e.get("year"), int) for e in bt_be))
+check("G1 真实史料 whatif 偏离史实", any(e.get("kind") == "divergence" for e in
+      S.simulate_nonmilitary("biTigeGuan", "whatif", 1593, 1598, bt_cfg)[1]))
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

@@ -1,0 +1,59 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "biTigeGuan",
+ "_scenario_type": "social",
+ "_years": [
+  1593,
+  1598
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1596,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.445,
+    "cum": -0.175
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1597,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.43 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.432,
+    "cum": -0.218
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1598,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.42 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.418,
+    "cum": -0.262
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1598,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.42 / 史实 0.68（偏离 -0.26）",
+   "evidence": {
+    "cum": -0.262,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

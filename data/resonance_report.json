@@ -14,6 +14,7 @@
       "beijing",
       "beijiu",
       "bencao",
+      "biTigeGuan",
       "boju",
       "bozhou",
       "caishiji",
@@ -287,6 +288,28 @@
       "avg_resonance": 0.0,
       "best_event": "event:bc_1281",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "biTigeGuan",
+      "name": "biTigeGuan",
+      "total": 13,
+      "layers": {
+        "record": 4,
+        "scholarship": 4,
+        "inference": 4,
+        "gap": 1
+      },
+      "party_counts": {
+        "明方": 4,
+        "朝鲜": 3,
+        "日本方": 4,
+        "综述考订": 2
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.286,
+      "best_event": "event:biti",
+      "best_resonance": 0.286
     },
     {
       "scene": "boju",
@@ -19146,6 +19169,97 @@
             "source": "modern",
             "layer": "scholarship",
             "scene": "dalinghe"
+          }
+        ]
+      }
+    },
+    {
+      "subject": "event:biti",
+      "name": "event:biti",
+      "scenes": [
+        "biTigeGuan"
+      ],
+      "scene_names": [
+        "biTigeGuan"
+      ],
+      "total": 7,
+      "gap_count": 1,
+      "coverage": "3/3",
+      "coverage_frac": 1.0,
+      "divergence": 0.667,
+      "gap_rate": 0.143,
+      "resonance": 0.286,
+      "party_counts": {
+        "明方": 2,
+        "清方": 0,
+        "朝鲜": 1,
+        "日本方": 2,
+        "综述考订": 2
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "BITI_ming_01",
+            "predicate": "结果",
+            "value_text": "明方记载：碧蹄馆之战明军以寡敌众、损失数千，李如松「气索」退守开城，战后收缩战线。",
+            "source": "biti_ming",
+            "layer": "record",
+            "scene": "biTigeGuan"
+          },
+          {
+            "id": "BITI_ming_04",
+            "predicate": "性质",
+            "value_text": "明方/朝鲜记载：碧蹄馆为遭遇战或明军试探性进攻，非日军预设伏击。",
+            "source": "biti_ming",
+            "layer": "inference",
+            "scene": "biTigeGuan"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [
+          {
+            "id": "BITI_chao_01",
+            "predicate": "结果",
+            "value_text": "朝鲜记载：碧蹄馆明军小败，与倭死伤相当约五六百，非大败；柳成龙《惩毖录》谓「与贼死伤相当」。",
+            "source": "biti_chao",
+            "layer": "record",
+            "scene": "biTigeGuan"
+          }
+        ],
+        "日本方": [
+          {
+            "id": "BITI_jp_01",
+            "predicate": "结果",
+            "value_text": "日方记载：碧蹄馆日军大胜，围歼明军，斩首明军数千至上万，自身仅损数百。",
+            "source": "biti_jp",
+            "layer": "record",
+            "scene": "biTigeGuan"
+          },
+          {
+            "id": "BITI_jp_04",
+            "predicate": "性质",
+            "value_text": "日方记载：碧蹄馆为日军精心策划之伏击战，立花宗茂等据险设伏、诱敌深入。",
+            "source": "biti_jp",
+            "layer": "inference",
+            "scene": "biTigeGuan"
+          }
+        ],
+        "综述考订": [
+          {
+            "id": "BITI_syn_01",
+            "predicate": "史料缺环",
+            "value_text": "碧蹄馆确切伤亡数字，明/朝/日三方记载差异极大（明报阵亡264、朝估五六百、日称斩明军上万），无共识。",
+            "source": "biti_syn",
+            "layer": "gap",
+            "scene": "biTigeGuan"
+          },
+          {
+            "id": "BITI_syn_02",
+            "predicate": "影响",
+            "value_text": "碧蹄馆之战被后世视为壬辰战争转折点：战略僵持与封贡和谈体制开启，和约破裂后战事绵延至1598方息。",
+            "source": "biti_syn",
+            "layer": "inference",
+            "scene": "biTigeGuan"
           }
         ]
       }

@@ -17,6 +17,7 @@
 | beijing | 16 | 7 | **0.000** | event:bj_consequence（0.000） | gap 1 / record 12 / scholarship 3 |
 | beijiu | 15 | 2 | **0.000** | event:bj_961（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | bencao | 12 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 8 / scholarship 3 |
+| biTigeGuan | 13 | 1 | **0.286** | event:biti（0.286） | gap 1 / inference 4 / record 4 / scholarship 4 |
 | boju | 21 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 4 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | caishiji | 16 | 3 | **0.000** | event:cs_jin（0.000） | gap 1 / inference 2 / record 10 / scholarship 3 |
@@ -701,6 +702,7 @@
 | event:ningyuan_founded | ningyuan | **0.250** | 1/3 | 0.25 | 0.00 | 5 | 0 / 5 / 0 / 0 |
 | event:ev_yellow_sea_1894_02 | yellow_sea_1894 | **0.265** | 2/3 | 0.57 | 0.07 | 14 | 0 / 1 / 0 / 12 |
 | event:dalinghe_campaign | dalinghe | **0.278** | 1/3 | 0.00 | 0.17 | 6 | 0 / 1 / 0 / 5 |
+| event:biti | biTigeGuan | **0.286** | 3/3 | 0.67 | 0.14 | 7 | 2 / 0 / 1 / 2 |
 | event:ningyuan_battle | ningyuan | **0.308** | 1/3 | 0.00 | 0.08 | 13 | 0 / 13 / 0 / 0 |
 | event:bixieguan_battle | imjin | **0.333** | 3/3 | 0.50 | 0.33 | 6 | 0 / 2 / 3 / 0 |
 | event:bozhou_pingbo | bozhou | **0.333** | 1/3 | 0.00 | 0.00 | 6 | 0 / 6 / 0 / 0 |

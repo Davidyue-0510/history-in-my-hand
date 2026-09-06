@@ -1,0 +1,20 @@
+{
+  "places": [
+    {
+      "id": "wangjing",
+      "name": "wangjing"
+    },
+    {
+      "id": "longshan",
+      "name": "longshan"
+    },
+    {
+      "id": "kaicheng",
+      "name": "kaicheng"
+    },
+    {
+      "id": "biti",
+      "name": "biti"
+    }
+  ]
+}

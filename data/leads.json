@@ -130,6 +130,22 @@
    "_src_line": 9
   },
   {
+   "id": "BITI_syn_01",
+   "scene": "biTigeGuan",
+   "subject": "event:biti",
+   "title": "碧蹄馆确切伤亡数字，明/朝/日三方记载差异极大（明报阵亡264、朝估五六百、日称斩明军上万），无共识。",
+   "missing": "纪年校勘 / 军史考证",
+   "where": "《明史·李如松传》《宣祖实录》《日本战史朝鲜役》对读",
+   "skills": [
+    "纪年校勘",
+    "军史考证"
+   ],
+   "accept": "补三方伤亡数字的考订共识",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "BOJUG01",
    "scene": "boju",
    "subject": "event:bj_bj",

@@ -16,6 +16,7 @@ window.SANDBOX_RESONANCE = {
    "beijing",
    "beijiu",
    "bencao",
+   "biTigeGuan",
    "boju",
    "bozhou",
    "caishiji",
@@ -289,6 +290,28 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": "event:bc_1281",
    "best_resonance": 0.0
+  },
+  {
+   "scene": "biTigeGuan",
+   "name": "biTigeGuan",
+   "total": 13,
+   "layers": {
+    "record": 4,
+    "scholarship": 4,
+    "inference": 4,
+    "gap": 1
+   },
+   "party_counts": {
+    "明方": 4,
+    "朝鲜": 3,
+    "日本方": 4,
+    "综述考订": 2
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.286,
+   "best_event": "event:biti",
+   "best_resonance": 0.286
   },
   {
    "scene": "boju",

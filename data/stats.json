@@ -1,9 +1,9 @@
 {
-  "scenes_total": 180,
-  "historical": 171,
+  "scenes_total": 181,
+  "historical": 172,
   "fictional": 9,
-  "assertions_total": 2840,
-  "sources_total": 141,
+  "assertions_total": 2853,
+  "sources_total": 145,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -53,7 +53,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 277,
+  "leads_total": 278,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1368,6 +1368,13 @@
       "kind": "county",
       "assertions": 12,
       "factions": {}
+    },
+    {
+      "id": "biTigeGuan",
+      "title": "碧蹄馆之战·三方记载",
+      "kind": "battle",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1550,6 +1557,7 @@
     "han_weihuo_llm": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
     "tang_xuanwumen_llm": "唐·玄武门之变（LLM 抽取·人工校订）",
     "chibi_llm": "三国·赤壁之战",
-    "song_wanganshi_llm": "宋·王安石变法"
+    "song_wanganshi_llm": "宋·王安石变法",
+    "biTigeGuan": "碧蹄馆之战·三方记载"
   }
 }
