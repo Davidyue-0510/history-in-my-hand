@@ -117,6 +117,7 @@ window.SANDBOX_RESONANCE = {
    "song_dangzheng",
    "song_he_jue",
    "songjin",
+   "sui_canal_llm",
    "sui_daxing",
    "sui_mie_chen",
    "sui_mie_chen_llm",
@@ -2243,6 +2244,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.311,
    "best_event": "event:songjin_campaign",
    "best_resonance": 0.333
+  },
+  {
+   "scene": "sui_canal_llm",
+   "name": "sui_canal_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sui_canal_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "sui_daxing",

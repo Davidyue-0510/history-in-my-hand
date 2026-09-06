@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "type": "city",
+   "modern": "今中国河南省洛阳市",
+   "note": "运河中心",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.45,
+   "lat": 34.62,
+   "geo_note": "唐东都，今洛阳"
+  },
+  {
+   "id": "banzhu",
+   "name": "板渚",
+   "type": "yi",
+   "modern": "今中国河南省荥阳市",
+   "note": "通济渠引河处",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "zhuojun",
+   "name": "涿郡",
+   "type": "city",
+   "modern": "今中国北京市",
+   "note": "永济渠北端",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 115.98,
+   "lat": 39.48,
+   "geo_note": "卢植故里，涿郡，今河北涿州"
+  },
+  {
+   "id": "jingkou",
+   "name": "京口",
+   "type": "city",
+   "modern": "今中国江苏省镇江市",
+   "note": "江南河起点",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yuhang",
+   "name": "余杭",
+   "type": "city",
+   "modern": "今中国浙江省杭州市",
+   "note": "江南河终点",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

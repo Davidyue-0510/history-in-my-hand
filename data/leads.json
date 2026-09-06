@@ -2957,6 +2957,22 @@
    "_src_line": 15
   },
   {
+   "id": "SUI_013",
+   "scene": "sui_canal_llm",
+   "subject": "event:ev_sui_canal_llm_01",
+   "title": "板渚至淮路线不明",
+   "missing": "历史地理 / 考古",
+   "where": "板渚至淮河段",
+   "skills": [
+    "历史地理",
+    "考古"
+   ],
+   "accept": "实地考察证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "SUI_DAXINGG01",
    "scene": "sui_daxing",
    "subject": "event:dx_582",

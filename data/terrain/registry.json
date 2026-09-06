@@ -216,6 +216,20 @@
       "dataset": "aster30m",
       "status": "not_fetched",
       "note": "由 fetch_terrain.py --new 注册。"
+    },
+    "sui_canal_llm": {
+      "label": "隋炀帝开凿大运河",
+      "file": "sui_canal_llm_grid.json",
+      "bbox": [
+        111.95,
+        34.12,
+        116.48,
+        39.98
+      ],
+      "step": 0.1,
+      "dataset": "aster30m",
+      "status": "not_fetched",
+      "note": "由 fetch_terrain.py --new 注册。"
     }
   }
 }

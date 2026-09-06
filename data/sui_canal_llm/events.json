@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_sui_canal_llm_01",
+   "subject": "event:ev_sui_canal_llm_01",
+   "year": 605,
+   "era": "大业元年",
+   "title": "开凿通济渠",
+   "kind": "建置",
+   "text": "发河南诸郡男女百余万开通济渠",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_canal_llm_02",
+   "subject": "event:ev_sui_canal_llm_02",
+   "year": 608,
+   "era": "大业四年",
+   "title": "开凿永济渠",
+   "kind": "建置",
+   "text": "引沁水南达于河、北通涿郡",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sui_canal_llm_03",
+   "subject": "event:ev_sui_canal_llm_03",
+   "year": 610,
+   "era": "大业六年",
+   "title": "开凿江南河",
+   "kind": "建置",
+   "text": "自京口至余杭，沟通五大水系",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
