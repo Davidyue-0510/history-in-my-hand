@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 185 个切片
+// 权威数据源：data/scenes.json 注册的 186 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 185 个切片",
+  "slice": "multi-scene · 186 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -492,7 +492,8 @@ window.SANDBOX_DATA = {
   "tang_liangshuifa",
   "wei_xiaowen",
   "sui_canal",
-  "guo_shoujing"
+  "guo_shoujing",
+  "zhangzai_guanxue"
  ],
  "vocab": {
   "layers": [
@@ -24783,6 +24784,40 @@ window.SANDBOX_DATA = {
     "scholarship": 9,
     "inference": 0
    }
+  },
+  "zhangzai_guanxue": {
+   "key": "zhangzai_guanxue",
+   "scene_id": "zhangzai_guanxue",
+   "title": "张载·关学",
+   "dossier_label": "张载·关学（宋明理学关中之学）",
+   "subtitle": "约1060–1077 · 北宋关中",
+   "kind": "thought",
+   "region": "guangzhong",
+   "page": "county.html?scene=zhangzai_guanxue",
+   "primary_place": null,
+   "vocab_pack": "inline:zhangzai_guanxue",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 2,
+    "place": 4,
+    "person": 4,
+    "assert": 9,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 9,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -24970,7 +25005,8 @@ window.SANDBOX_DATA = {
   "tang_liangshuifa": "slices/tang_liangshuifa.js",
   "wei_xiaowen": "slices/wei_xiaowen.js",
   "sui_canal": "slices/sui_canal.js",
-  "guo_shoujing": "slices/guo_shoujing.js"
+  "guo_shoujing": "slices/guo_shoujing.js",
+  "zhangzai_guanxue": "slices/zhangzai_guanxue.js"
  },
  "corridors": [
   {

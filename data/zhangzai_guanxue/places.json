@@ -1,0 +1,8 @@
+{
+ "places": [
+  {"id": "hengqu", "name": "横渠镇·张载讲学策源地", "lon": 107.9, "lat": 34.3},
+  {"id": "kaifeng", "name": "开封·京师（讲《易》）", "lon": 114.3, "lat": 34.8},
+  {"id": "luoyang", "name": "洛阳·二程洛学", "lon": 112.4, "lat": 34.6},
+  {"id": "lantian", "name": "蓝田·吕氏乡约", "lon": 109.3, "lat": 34.2}
+ ]
+}

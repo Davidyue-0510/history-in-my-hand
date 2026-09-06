@@ -1,0 +1,8 @@
+{
+ "persons": [
+  {"id": "zhangzai", "name": "张载", "role": "北宋理学家·关学创始人"},
+  {"id": "lu_dalin", "name": "吕大临", "role": "张载门人·《吕氏乡约》订者"},
+  {"id": "cheng_hao", "name": "程颢", "role": "洛学创始人·与张载论道"},
+  {"id": "cheng_yi", "name": "程颐", "role": "洛学创始人·与张载论道"}
+ ]
+}

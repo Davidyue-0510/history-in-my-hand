@@ -388,7 +388,8 @@
   "tang_liangshuifa",
   "wei_xiaowen",
   "sui_canal",
-  "guo_shoujing"
+  "guo_shoujing",
+  "zhangzai_guanxue"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15638,6 +15639,92 @@
     }
    },
    "province": "beijing"
+  },
+  "zhangzai_guanxue": {
+   "kind": "thought",
+   "region": "guangzhong",
+   "title": "张载·关学",
+   "dossier_label": "张载·关学（宋明理学关中之学）",
+   "subtitle": "约1060–1077 · 北宋关中",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "北宋张载（1020–1077）于关中创立关学，以《易》为宗、以礼为体，主张气本论（太虚即气），作《西铭》立横渠四句、著《正蒙》集理论之大成，与洛学、濂学并立宋明理学正统。门人吕大临订《吕氏乡约》（蓝田），关学下及民间、礼教下移。本场景由真实史料（《宋史·张载传》+ 宋明理学史综合考订）经 G1 工具零手 authoring 派生三件套，证据强度 strength=1.00，real base_rate=+0.06 / whatif=-0.042。",
+   "parties_note": "立场靠来源派生：宋方（《宋史·张载传》等宋人记述）记讲学行迹；宋·学界（陈俊民、龚杰等关学研究）作现代综合考订。",
+   "subject_names": {
+    "thought:guanxue": "关学",
+    "thought:ximing": "西铭四句",
+    "thought:zhengmeng": "正蒙",
+    "thought:luoxue": "关洛论道",
+    "institution:li": "以礼为体",
+    "social:xiangyue": "吕氏乡约",
+    "social:jiaohua": "躬行实学",
+    "geo:guanzhong": "关中根基",
+    "event:hengqu_jiangxue": "横渠讲学",
+    "person:zhangzai": "张载",
+    "person:lu_dalin": "吕大临",
+    "person:cheng_hao": "程颢",
+    "person:cheng_yi": "程颐"
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "张载关学：以《易》为宗、以礼为体的道统自觉，凝聚士人共识，关学列宋明理学正统。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "张载关学：物质基础——书院讲学与刻书传播依赖印刷与纸张；乡约推行需基层组织资源。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "张载关学：人口动员——门人吕大临等订《吕氏乡约》，关学下及民间、化民成俗。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      5
+     ],
+     "layer": "inference",
+     "note": "张载关学：地缘战略——关学以关中为根基、东与洛阳洛学论道，关中—中原学术地缘分途而并秀。"
+    }
+   },
+   "province": "shaanxi"
   }
  },
  "dimensions": {

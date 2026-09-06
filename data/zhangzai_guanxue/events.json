@@ -1,0 +1,31 @@
+{
+ "events": [
+  {
+   "id": "evt_guanxue",
+   "subject": "thought:guanxue",
+   "era": "北宋嘉祐",
+   "year": 1060,
+   "title": "关学创立",
+   "kind": "thought",
+   "text": "张载于关中创立关学，以《易》为宗、以礼为体，主张气本论（太虚即气），开宋明理学关中之学，与洛学、濂学并立。"
+  },
+  {
+   "id": "evt_ximing",
+   "subject": "thought:ximing",
+   "era": "北宋熙宁",
+   "year": 1070,
+   "title": "《西铭》立横渠四句",
+   "kind": "thought",
+   "text": "张载作《西铭》，提出「为天地立心，为生民立命，为往圣继绝学，为万世开太平」的横渠四句，确立儒家使命论，影响宋明理学八百年。"
+  },
+  {
+   "id": "evt_hengqu",
+   "subject": "event:hengqu_jiangxue",
+   "era": "北宋熙宁",
+   "year": 1076,
+   "title": "横渠讲学·学派成形",
+   "kind": "thought",
+   "text": "张载晚年退居横渠，读书讲学、授徒著书，关学学派于此成形并传衍，门人吕大临、苏昞、范育等承其学，横渠镇成关学策源地。"
+  }
+ ]
+}

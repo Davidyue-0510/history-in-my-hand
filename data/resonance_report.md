@@ -179,6 +179,7 @@
 | zhangheng | 14 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 9 / scholarship 4 |
 | zhangjuzheng | 15 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 1 / record 11 / scholarship 2 |
 | zhangqian | 15 | 2 | **0.000** | event:zq_126（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
+| zhangzai_guanxue | 9 | 1 | **0.000** | event:hengqu_jiangxue（0.000） | scholarship 9 |
 | zhaofen | 13 | 2 | **0.000** | event:zf_33（0.000） | gap 1 / record 10 / scholarship 2 |
 | zhaowulian | 11 | 2 | **0.000** | event:zw_307（0.000） | gap 1 / inference 2 / record 6 / scholarship 2 |
 | zhaozhou | 13 | 2 | **0.000** | event:zz_595（0.000） | gap 1 / record 10 / scholarship 2 |
@@ -470,6 +471,7 @@
 | event:hc_875 | huangchao | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:hc_880 | huangchao | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:hc_881 | huangchao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:hengqu_jiangxue | zhangzai_guanxue | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hh_1128 | huanghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hh_1194 | huanghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hh_1494 | huanghe | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

@@ -178,6 +178,7 @@ window.SANDBOX_RESONANCE = {
    "zhangheng",
    "zhangjuzheng",
    "zhangqian",
+   "zhangzai_guanxue",
    "zhaofen",
    "zhaowulian",
    "zhaozhou",
@@ -3449,6 +3450,23 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:zq_126",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "zhangzai_guanxue",
+   "name": "zhangzai_guanxue",
+   "total": 9,
+   "layers": {
+    "scholarship": 9
+   },
+   "party_counts": {
+    "综述考订": 6,
+    "宋方": 3
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:hengqu_jiangxue",
    "best_resonance": 0.0
   },
   {

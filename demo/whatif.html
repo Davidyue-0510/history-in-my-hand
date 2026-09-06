@@ -142,6 +142,24 @@
 
   var STATE = { mode:'branch', year:0 };
 
+  // 示意中国疆域底图（真实经纬度投影，非精确政区）。顺时针粗略轮廓，仅作地理定位底。
+  var CHINA_OUTLINE = [
+    [134.3,48.4],[133.0,45.3],[131.2,44.9],[130.6,42.9],[128.2,42.0],
+    [126.0,41.0],[123.8,39.9],[121.6,38.7],[118.8,38.7],[119.2,37.4],
+    [122.6,37.4],[120.8,34.3],[120.3,32.5],[121.9,31.0],[121.5,29.0],
+    [120.1,27.2],[119.3,25.4],[117.5,23.7],[113.6,22.2],[110.4,21.0],
+    [108.5,21.5],[106.7,22.4],[103.5,22.6],[101.5,21.2],[99.2,22.4],
+    [97.7,24.2],[98.6,25.9],[97.5,28.4],[98.7,27.7],[95.5,29.0],
+    [92.0,28.0],[88.8,27.8],[85.0,28.3],[81.5,30.2],[78.8,32.5],
+    [79.5,34.5],[75.0,36.5],[73.5,39.5],[75.0,40.5],[80.5,42.5],
+    [82.5,45.0],[85.0,47.0],[87.5,49.0],[91.0,47.8],[96.0,42.8],
+    [100.0,42.5],[105.0,41.8],[111.0,43.5],[115.0,45.0],[119.0,46.5],
+    [122.0,46.5],[126.0,48.5],[127.5,50.2],[124.0,53.0],[125.5,53.5],
+    [127.5,50.5],[130.5,48.5],[134.3,48.4]
+  ];
+  var RIVER_HUANGHE = [[96,35],[99,36],[103,36],[105,37],[108,38],[109,40],[111,41],[112,40],[115,40],[117,37],[119,37],[119,38]];
+  var RIVER_CHANGJIANG = [[91,33],[95,32],[100,31],[104,29],[107,30],[110,30],[113,30],[116,29.5],[118,32],[121,31]];
+
   function render(D){
     var cfg = D.cfg, be = D.be || {events:[]}, hb = D.histBranch || [], hr = D.histReal || [];
     var yrs = (hb.length ? hb : hr).map(function(s){ return s.year; });
@@ -177,7 +195,7 @@
     if(scenarioType==='military'){
       $('geoNote').textContent = '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。';
     } else if(STATE.mapPlan && STATE.mapPlan.nodes.length>=2){
-      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（节点按真实经纬度等距投影，按场景 places 顺序随年份依次激活；激活后热度=当年改革指数）。抽象坐标场景不渲染地图。';
+      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（示意疆域底图，节点按真实经纬度等距投影并叠加在疆域轮廓上，随年份依次激活；激活后热度=当年改革指数）。底图为真实经纬度投影的示意中国轮廓，非精确政区。';
     } else {
       $('geoNote').textContent = '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）；本场景节点缺地理坐标，地图叙事不可用。';
     }
@@ -341,12 +359,18 @@
     function px(lon){ return padL+(lon-LON0)/(LON1-LON0)*(W-padL-padR); }
     function py(lat){ return padT+(LAT1-lat)/(LAT1-LAT0)*(H-padT-padB); }
     var svg='<svg class="chart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">';
+    // 示意疆域底图（真实经纬度投影，非精确政区）
+    var op = CHINA_OUTLINE.map(function(p){ return px(p[0]).toFixed(1)+','+py(p[1]).toFixed(1); }).join(' ');
+    svg+='<polygon points="'+op+'" fill="#f3ecd9" fill-opacity="0.55" stroke="#b9a87f" stroke-width="1.2"/>';
+    function riverPath(pts){ return pts.map(function(p){ return px(p[0]).toFixed(1)+','+py(p[1]).toFixed(1); }).join(' '); }
+    svg+='<polyline points="'+riverPath(RIVER_HUANGHE)+'" fill="none" stroke="#7fa7c4" stroke-width="1.4" stroke-opacity="0.85"/>';
+    svg+='<polyline points="'+riverPath(RIVER_CHANGJIANG)+'" fill="none" stroke="#7fa7c4" stroke-width="1.4" stroke-opacity="0.85"/>';
     [80,90,100,110,120,130].forEach(function(lo){ var x=px(lo);
       svg+='<line class="map-grid" x1="'+x+'" y1="'+padT+'" x2="'+x+'" y2="'+(H-padB)+'"/>';
       svg+='<text x="'+x+'" y="'+(H-padB+12)+'" font-size="9" fill="#9a9286" text-anchor="middle">'+lo+'°E</text>'; });
     [20,30,40,50].forEach(function(la){ var y=py(la);
       svg+='<line class="map-grid" x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'"/>';
-      svg+='<text x="'+(padL-4)+'" y="'+(y+3)+'" font-size="9" fill="#9a9286" text-anchor="end">'+la+'°N</text>'; });
+      svg+='<text x="'+(padL-4)+'" y="'+y+3+'" font-size="9" fill="#9a9286" text-anchor="end">'+la+'°N</text>'; });
     svg+='<rect x="'+padL+'" y="'+padT+'" width="'+(W-padL-padR)+'" height="'+(H-padT-padB)+'" fill="none" stroke="#c9bfa8"/>';
     var hi = histAt(D, STATE.year);
     var ri = hi ? (hi.reform_index||0) : 0;
@@ -355,17 +379,17 @@
       var adopted = STATE.year >= nd.adopt;
       var eng = adopted ? ri : 0;
       var fill = adopted ? colorScale(eng) : '#c9bfa8';
-      var op = adopted ? 0.92 : 0.5;
-      svg+='<g class="map-node"><circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+(adopted?8:6)+'" fill="'+fill+'" fill-opacity="'+op+'" stroke="#332d27" stroke-width="1"/>';
-      var lx=x+10, ly=y+3;
+      var opn = adopted ? 0.92 : 0.5;
+      svg+='<g class="map-node"><circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+(adopted?9:7)+'" fill="'+fill+'" fill-opacity="'+opn+'" stroke="#332d27" stroke-width="1"/>';
+      var lx=x+11, ly=y+3;
       svg+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'">'+nd.name+'</text>';
       if(adopted) svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'">'+nd.adopt+' 激活</text>';
       else svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'" style="fill:#9a9286">未激活</text>';
       svg+='</g>';
     });
     svg+='</svg>';
-    $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
-      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。示意图按真实经纬度等距投影，非政区图。</div></div></section>';
+    $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事 · 疆域底图（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
+      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。底图为示意中国疆域（真实经纬度等距投影，非精确政区）；蓝线为黄河/长江示意走向，供地理定位。抽象坐标场景不渲染底图。</div></div></section>';
   }
   function updateMap(D){ drawMapSVG(D); }
 
