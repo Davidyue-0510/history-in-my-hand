@@ -196,32 +196,63 @@ def derive_dim_targets(assertions):
 
 
 def _direction_sign(assertions):
-    """史料走向：+1 推进 / -1 逆转 / 0 中性（关键词计数差）。"""
-    corpus = _corpus(assertions)
-    pos = sum(corpus.count(k) for k in POS_KW)
-    neg = sum(corpus.count(k) for k in NEG_KW)
-    if pos > neg:
+    """史料走向：+1 推进 / -1 逆转 / 0 中性（关键词计数差，confidence 加权）。"""
+    pos_w, neg_w = _evidence_weights(assertions)
+    if pos_w > neg_w:
         return 1
-    if neg > pos:
+    if neg_w > pos_w:
         return -1
     return 0
+
+
+def _evidence_weights(assertions):
+    """按 confidence 加权累计 POS/NEG 关键词命中量。"""
+    pos_w = 0.0
+    neg_w = 0.0
+    for a in assertions:
+        text = a.get("value_text", "") or ""
+        conf = float(a.get("confidence", 0.5) or 0.5)
+        for k in POS_KW:
+            if k in text:
+                pos_w += conf
+        for k in NEG_KW:
+            if k in text:
+                neg_w += conf
+    return pos_w, neg_w
+
+
+def _evidence_strength(assertions):
+    """证据强度 ∈ [0, 1]：净差 / 总证据，反映方向决断度。
+
+    0 = 方向互相抵消/无证据；1 = 完全一边倒（高 confidence 强方向）。
+    """
+    pos_w, neg_w = _evidence_weights(assertions)
+    total = pos_w + neg_w
+    if total <= 0:
+        return 0.0
+    return min(1.0, abs(pos_w - neg_w) / total)
 
 
 def derive_branches(assertions, scenario_type=None):
     """派生 real_branch（史实基准）+ whatif（反事实·反向推演）。
 
-    base_rate 符号由史料走向启发式决定：史实推进→正、逆转→负；
-    反事实分支取相反数（反向推演），幅度略大（0.04）以凸显偏离。
+    base_rate 幅度由证据强度驱动：magnitude = base + strength * scale。
+    方向（正/负）由 POS/NEG 关键词 confidence 加权净差决定。
+    反事实分支取反向并阻尼 0.7（部分反转比全反转更现实，避免极端化）。
     """
     if scenario_type is None:
         scenario_type = derive_scenario_type(assertions)
     sign = _direction_sign(assertions)
-    real_rate = 0.03 * sign
+    strength = _evidence_strength(assertions)
+    BASE = 0.015     # 极弱证据的最小推力（保 whatif 不恒零）
+    SCALE = 0.045    # 强证据下的最大加成（封顶 0.06）
+    magnitude = round(BASE + strength * SCALE, 3)
+    real_rate = round(sign * magnitude, 3) if sign != 0 else 0.0
+    whatif_rate = round(-sign * magnitude * 0.7, 3) if sign != 0 else round(magnitude * 0.7, 3)
     reform0 = 0.5
-    whatif_rate = -real_rate if real_rate != 0 else 0.04
     branches = [
-        {"id": "real", "label": "史实基准", "base_rate": round(real_rate, 3), "reform0": reform0},
-        {"id": "whatif", "label": "反事实·反向推演", "base_rate": round(whatif_rate, 3),
+        {"id": "real", "label": "史实基准", "base_rate": real_rate, "reform0": reform0},
+        {"id": "whatif", "label": "反事实·反向推演", "base_rate": whatif_rate,
          "reform0": reform0},
     ]
     return branches, "real"
@@ -236,10 +267,13 @@ def derive_config(assertions):
     if sy is None:
         sy, ey = -200, -100
     sign = _direction_sign(assertions)
+    pos_w, neg_w = _evidence_weights(assertions)
+    strength = _evidence_strength(assertions)
     note = ("G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；"
-            "base_rate 符号由史料文本方向关键词启发式（推进/逆转，净差=%d）推定，"
-            "属 best-effort，非精确考据；反事实分支取反向。places 无坐标，判为抽象世界。"
-            % sign)
+            "base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=%.2f neg=%.2f sign=%d），"
+            "幅度由证据强度 strength=%.2f 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；"
+            "whatif 取反向并阻尼 0.7。places 无坐标，判为抽象世界。"
+            % (pos_w, neg_w, sign, strength))
     cfg = {
         "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
         "_auto_derived": True,

@@ -128,5 +128,25 @@ check("G1 真实史料 Branch Event 合规",
 check("G1 真实史料 whatif 偏离史实", any(e.get("kind") == "divergence" for e in
       S.simulate_nonmilitary("biTigeGuan", "whatif", 1593, 1598, bt_cfg)[1]))
 
+# ---- #3 G1 base_rate 考据校准（v0.131）----
+# 方向 + 幅度由 POS/NEG 关键词 confidence 加权净差驱动；magnitude ∈ [0.01, 0.06]；
+# whatif 与 real 反向并阻尼 0.7；至少一条分支 id 以 whatif 前缀。
+brs = bt_cfg["branches"]
+real_b = next(b for b in brs if b["id"] == "real")
+whatif_b = next(b for b in brs if b["id"].startswith("whatif"))
+check("G1 base_rate 校准 real 方向=推进", real_b["base_rate"] > 0)
+check("G1 base_rate 校准 幅度 ∈ [0.01, 0.06]",
+      0.01 <= abs(real_b["base_rate"]) <= 0.06)
+check("G1 base_rate 校准 whatif 反向",
+      whatif_b["base_rate"] < 0 and abs(whatif_b["base_rate"]) < abs(real_b["base_rate"]))
+# 强证据场景（独尊儒术）的 magnitude 应大于旧固定 0.03
+hw_as = D.load_assertions(os.path.join("data", "han_wudi_ruxue", "assertions.jsonl"))
+hw_cfg = D.derive_config(hw_as)
+hw_real = next(b for b in hw_cfg["branches"] if b["id"] == "real")
+check("G1 base_rate 校准 强证据场景 magnitude > 0.03", hw_real["base_rate"] > 0.03)
+check("G1 base_rate 校准 推导注记含证据强度",
+      "证据强度" in hw_cfg.get("_derivation_note", "") and
+      "strength=" in hw_cfg.get("_derivation_note", ""))
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

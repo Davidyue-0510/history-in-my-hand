@@ -9,12 +9,24 @@
  ],
  "events": [
   {
+   "kind": "divergence",
+   "year": 1598,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.63 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.776,
+    "new_to": 0.626,
+    "cum": -0.15
+   }
+  },
+  {
    "kind": "summary",
    "year": 1598,
-   "severity": "info",
-   "description": "终局改革指数：本支 0.58 / 史实 0.68（偏离 -0.10）",
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.63 / 史实 0.78（偏离 -0.15）",
    "evidence": {
-    "cum": -0.098,
+    "cum": -0.15,
     "match": 0,
     "total": 1
    }
