@@ -1,0 +1,203 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "tang_liangshuifa",
+ "_scenario_type": "economic",
+ "_years": [
+  780,
+  800
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 786,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.57 / 史实 0.73）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.73,
+    "new_to": 0.574,
+    "cum": -0.156
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 787,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.59 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.592,
+    "cum": -0.178
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 788,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.61 / 史实 0.81）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.81,
+    "new_to": 0.61,
+    "cum": -0.2
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 789,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.63 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.627,
+    "cum": -0.223
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 790,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.65 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.645,
+    "cum": -0.245
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 791,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.66 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.93,
+    "new_to": 0.663,
+    "cum": -0.267
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 792,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.68 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.97,
+    "new_to": 0.681,
+    "cum": -0.289
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 793,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.70 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.698,
+    "cum": -0.302
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 794,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.72 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.716,
+    "cum": -0.284
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 795,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.73 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.734,
+    "cum": -0.266
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 796,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.752,
+    "cum": -0.248
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 797,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.769,
+    "cum": -0.231
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 798,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.787,
+    "cum": -0.213
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 799,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.805,
+    "cum": -0.195
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 800,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.823,
+    "cum": -0.177
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 800,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.82 / 史实 1.00（偏离 -0.18）",
+   "evidence": {
+    "cum": -0.177,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

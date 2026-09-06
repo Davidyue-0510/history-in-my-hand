@@ -1,9 +1,9 @@
 {
-  "scenes_total": 179,
-  "historical": 170,
+  "scenes_total": 180,
+  "historical": 171,
   "fictional": 9,
-  "assertions_total": 2830,
-  "sources_total": 140,
+  "assertions_total": 2840,
+  "sources_total": 141,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -53,8 +53,15 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 276,
+  "leads_total": 277,
   "per_scene": [
+    {
+      "id": "han_wudi_ruxue",
+      "title": "汉武帝·独尊儒术",
+      "kind": "thought",
+      "assertions": 10,
+      "factions": {}
+    },
     {
       "id": "sarhu",
       "title": "萨尔浒之战",
@@ -1364,6 +1371,7 @@
     }
   ],
   "scene_titles": {
+    "han_wudi_ruxue": "汉武帝·独尊儒术",
     "sarhu": "萨尔浒之战",
     "kaiyuan": "开原",
     "tieling": "铁岭",

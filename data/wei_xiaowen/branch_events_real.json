@@ -1,0 +1,35 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "wei_xiaowen",
+ "_scenario_type": "social",
+ "_years": [
+  494,
+  500
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 500,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.52 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.524,
+    "cum": -0.156
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 500,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.52 / 史实 0.68（偏离 -0.16）",
+   "evidence": {
+    "cum": -0.156,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

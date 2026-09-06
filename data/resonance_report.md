@@ -61,6 +61,7 @@
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
 | han_banchao_llm | 15 | 4 | **0.000** | event:ev_han_banchao_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | han_weihuo_llm | 14 | 3 | **0.000** | event:ev_han_weihuo_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
+| han_wudi_ruxue | 10 | 0 | **0.000** | —（0.000） | gap 1 / inference 3 / record 2 / scholarship 4 |
 | heshangyuan | 21 | 3 | **0.000** | event:hs_jin（0.000） | gap 3 / inference 3 / record 11 / scholarship 4 |
 | hexi_sijun_llm | 16 | 4 | **0.000** | event:ev_hexi_sijun_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 1 |
 | hongjin | 13 | 2 | **0.000** | event:hj_1351（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |

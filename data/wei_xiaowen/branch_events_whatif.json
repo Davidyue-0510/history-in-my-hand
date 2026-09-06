@@ -1,0 +1,71 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "wei_xiaowen",
+ "_scenario_type": "social",
+ "_years": [
+  494,
+  500
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 497,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.36 / 史实 0.56）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.56,
+    "new_to": 0.365,
+    "cum": -0.195
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 498,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.36 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.356,
+    "cum": -0.244
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 499,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.35 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.64,
+    "new_to": 0.347,
+    "cum": -0.293
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 500,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.34 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.338,
+    "cum": -0.342
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 500,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.34 / 史实 0.68（偏离 -0.34）",
+   "evidence": {
+    "cum": -0.342,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

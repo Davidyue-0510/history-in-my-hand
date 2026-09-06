@@ -1,0 +1,12 @@
+{
+ "_comment": "唐·两税法非军事反事实配置（G2 六维广度 · v0.125）。scenario_type=economic 扰动 制度/社会 二维；real_branch=real 为史实（两税施行，资产+田亩税取代租庸调），whatif 为反事实（维持租庸调）。base_rate 为年增速，受 local 教育/地产垄断阻力折减（见 simulate_nonmilitary）。",
+ "scenario_type": "economic",
+ "dim_targets": ["制度", "社会"],
+ "start_year": 780,
+ "end_year": 800,
+ "real_branch": "real",
+ "branches": [
+  {"id": "real", "label": "史实·两税施行", "base_rate": 0.04, "reform0": 0.45},
+  {"id": "whatif", "label": "反事实·维持租庸调", "base_rate": -0.01, "reform0": 0.45}
+ ]
+}

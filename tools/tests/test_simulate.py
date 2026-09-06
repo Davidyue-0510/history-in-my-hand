@@ -45,5 +45,52 @@ check("real 基准轨迹长度 17", len(rt_p) == 17)
 # 阻力生效：persist 增速被 local 教育垄断折减（终局未到 1.0 上限封死）
 check("阻力生效（persist 未封顶）", sh_p[-1]["reform_index"] < 1.0)
 
+# ── G1 自动反事实派生（v0.125 · derive_sim_config.py）──
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(os.path.dirname(HERE))
+sys.path.insert(0, os.path.join(ROOT, "tools", "derivation"))
+import derive_sim_config as D   # noqa: E402
+
+hw_dir = os.path.join(ROOT, "data", "han_wudi_ruxue")
+hw_as = D.load_assertions(os.path.join(hw_dir, "assertions.jsonl"))
+hw_cfg = D.derive_config(hw_as)
+check("G1 派生 _auto_derived 标真", hw_cfg.get("_auto_derived") is True)
+check("G1 派生 scenario_type 合法",
+      hw_cfg["scenario_type"] in ("reform", "engineering", "thought", "economic", "social"))
+check("G1 派生 dim_targets 排除地理", "地理" not in hw_cfg["dim_targets"])
+bids = [b["id"] for b in hw_cfg["branches"]]
+check("G1 派生含 real+whatif 分支", "real" in bids and any(b.startswith("whatif") for b in bids))
+check("G1 派生 real_branch 在分支内", hw_cfg["real_branch"] in bids)
+hw_places = D.derive_places(hw_as)
+check("G1 派生 places 含 changan/luoyang",
+      {p["id"] for p in hw_places["places"]} >= {"changan", "luoyang"})
+check("G1 派生年份跨度 -136..-100", D.derive_year_span(hw_as) == (-136, -100))
+
+# G1 派生配置可直接喂入推演（零手 authoring 端到端）
+sh_g1, be_g1, rt_g1 = S.simulate_nonmilitary("han_wudi_ruxue", "real",
+                                             hw_cfg["start_year"], hw_cfg["end_year"], hw_cfg)
+check("G1 派生→非军事推演 37 年时序", len(sh_g1) == 37)
+check("G1 派生→Branch Event 产出", len(be_g1) >= 1)
+check("G1 派生→whatif 偏离史实", any(e.get("kind") == "divergence" for e in
+      S.simulate_nonmilitary("han_wudi_ruxue", "whatif", hw_cfg["start_year"], hw_cfg["end_year"], hw_cfg)[1]))
+
+# ── G2 六维广度扩展：economic（两税法）/ social（北魏孝文帝）──
+cfg2 = S.load_sim_config("tang_liangshuifa")
+check("两税法 scenario_type=economic", cfg2 and cfg2["scenario_type"] == "economic")
+sh2, be2, rt2 = S.simulate_nonmilitary("tang_liangshuifa", "real", 780, 800, cfg2)
+check("两税法 21 年时序", len(sh2) == 21)
+check("两税法 Branch Event 合规",
+      all(e.get("kind") in ("divergence", "logistics", "faction", "momentum", "summary")
+          and e.get("severity") in ("info", "warn", "bad")
+          and isinstance(e.get("year"), int) for e in be2))
+check("两税法 反事实偏离史实", abs(sh2[-1]["reform_index"] - rt2[-1]) >= 0.1)
+
+cfg3 = S.load_sim_config("wei_xiaowen")
+check("北魏 scenario_type=social", cfg3 and cfg3["scenario_type"] == "social")
+sh3, be3, rt3 = S.simulate_nonmilitary("wei_xiaowen", "real", 494, 500, cfg3)
+check("北魏 7 年时序", len(sh3) == 7)
+check("北魏 Branch Event 产出", len(be3) >= 1)
+check("北魏 反事实偏离史实", abs(sh3[-1]["reform_index"] - rt3[-1]) >= 0.1)
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

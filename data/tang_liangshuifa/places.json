@@ -1,0 +1,10 @@
+{
+ "_comment": "唐德宗建中元年（780）两税法场景关键州府（真实近似坐标，仅供 viewer 节点定位，非精确边界）。",
+ "places": [
+  {"id": "changan", "name": "长安", "lon": 108.94, "lat": 34.34},
+  {"id": "luoyang", "name": "洛阳", "lon": 112.45, "lat": 34.62},
+  {"id": "yangzhou", "name": "扬州", "lon": 119.42, "lat": 32.39},
+  {"id": "chengdu", "name": "成都", "lon": 104.07, "lat": 30.67},
+  {"id": "taiyuan", "name": "太原", "lon": 112.55, "lat": 37.87}
+ ]
+}

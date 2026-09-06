@@ -337,7 +337,10 @@ def simulate_nonmilitary(scene, branch, start_year, end_year, cfg):
     """
     places, edges, control_data = load_scene_data(scene)
     place_list = [p["id"] for p in places["places"]]
-    agents = AM.create_agents(place_list, control_data, start_year, "main")
+    # control.json 兼容两种格式：字典 {"control":[...]}（build/军事路径）或
+    # 裸数组 [...]（song_wanganshi 等离网样例）。归一化为列表供三阶层 Agent。
+    ctrl_list = control_data.get("control", []) if isinstance(control_data, dict) else control_data
+    agents = AM.create_agents(place_list, ctrl_list, start_year, "main")
     # 初始化资源：非军事场景无驻军，edu_control 表征教育/释经垄断（local 更高）
     for pid, a in agents.items():
         a.resources["troops"] = 0

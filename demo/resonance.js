@@ -60,6 +60,7 @@ window.SANDBOX_RESONANCE = {
    "haizhou",
    "han_banchao_llm",
    "han_weihuo_llm",
+   "han_wudi_ruxue",
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
@@ -1126,6 +1127,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": "event:ev_han_weihuo_01",
    "best_resonance": 0.0
+  },
+  {
+   "scene": "han_wudi_ruxue",
+   "name": "han_wudi_ruxue",
+   "total": 10,
+   "layers": {
+    "scholarship": 4,
+    "record": 2,
+    "inference": 3,
+    "gap": 1
+   },
+   "party_counts": {
+    "综述考订": 10
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
   },
   {
    "scene": "heshangyuan",

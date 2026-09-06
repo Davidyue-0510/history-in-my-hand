@@ -1,0 +1,8 @@
+[
+ {"_comment": "太和汉化期（494–500）北魏对代北—中原要地的控制；非军事场景，单一控制方供三阶层 Agent 阻力（代北勋贵垄断→汉化阻力）。", "place_id": "_meta", "party": "北魏", "start": 494, "end": 500, "timeline": "main"},
+ {"place_id": "luoyang", "party": "北魏", "start": 494, "end": 500, "timeline": "main"},
+ {"place_id": "pingcheng", "party": "北魏", "start": 494, "end": 500, "timeline": "main"},
+ {"place_id": "changan", "party": "北魏", "start": 494, "end": 500, "timeline": "main"},
+ {"place_id": "ye", "party": "北魏", "start": 494, "end": 500, "timeline": "main"},
+ {"place_id": "jiankang", "party": "北魏", "start": 494, "end": 500, "timeline": "main"}
+]

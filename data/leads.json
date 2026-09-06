@@ -1182,6 +1182,22 @@
    "_src_line": 14
   },
   {
+   "id": "HWY_gap_09",
+   "scene": "han_wudi_ruxue",
+   "subject": "theme:ruxue",
+   "title": "武帝朝其余儒生对策与太学员额、博士弟子来源与地域分布，史载简略，细节存在缺口。",
+   "missing": "纪年校勘 / 官制考证",
+   "where": "《史记》《汉书》对读",
+   "skills": [
+    "纪年校勘",
+    "官制考证"
+   ],
+   "accept": "补太学建制与弟子来源细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
    "id": "GAP_EXPAND",
    "scene": "heshangyuan",
    "subject": "event:hs_jz",

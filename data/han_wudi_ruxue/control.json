@@ -1,0 +1,19 @@
+{
+  "_comment": "G1 自动派生：单一控制方（综述考订）稳定控制，供三阶层 Agent 提供改革阻力（local 教育垄断→推进减速）。非军事场景，无需邻接线；control 为数组（位于 control 键下）。",
+  "control": [
+    {
+      "place_id": "changan",
+      "party": "综述考订",
+      "start": -136,
+      "end": -100,
+      "timeline": "main"
+    },
+    {
+      "place_id": "luoyang",
+      "party": "综述考订",
+      "start": -136,
+      "end": -100,
+      "timeline": "main"
+    }
+  ]
+}

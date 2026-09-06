@@ -204,6 +204,7 @@
   }
  ],
  "order": [
+  "han_wudi_ruxue",
   "sarhu",
   "kaiyuan",
   "tieling",
@@ -385,6 +386,80 @@
   "song_wanganshi_llm"
  ],
  "scenes": {
+  "han_wudi_ruxue": {
+   "kind": "thought",
+   "region": "qin_han",
+   "title": "汉武帝·独尊儒术",
+   "dossier_label": "独尊儒术",
+   "subtitle": "前136—前100 · 西汉",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "汉武帝采董仲舒之议，罢黜百家、独尊儒术，立五经博士、兴太学，儒学定为官学正统。本场景由 assertions.jsonl 经 G1 工具（tools/derivation/derive_sim_config.py）零手 authoring 派生推演三件套（places/control/sim_config），产物标 _auto_derived，反事实分支 id 以 whatif 前缀。",
+   "parties_note": "综合史料；独尊儒术之利弊后世评价不一。",
+   "subject_names": {
+    "scholar:dongzhongshu": "董仲舒"
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin_han",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "独尊儒术：儒术定于一尊，官学正统凝聚朝堂与士人"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "独尊儒术：经学章句之学兴，官学教育后勤（博士弟子廪食）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "独尊儒术：儒生入仕，士大夫政治格局初成"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "独尊儒术：长安太学为思想重心，南北学风辐辏"
+    }
+   },
+   "province": null
+  },
   "sarhu": {
    "kind": "battle",
    "region": "liaodong",

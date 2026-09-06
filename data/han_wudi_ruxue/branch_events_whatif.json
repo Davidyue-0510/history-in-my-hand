@@ -1,0 +1,431 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "han_wudi_ruxue",
+ "_scenario_type": "thought",
+ "_years": [
+  -136,
+  -100
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -133,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.43 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.435,
+    "cum": -0.185
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -132,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.42 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.419,
+    "cum": -0.231
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -131,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.40 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.402,
+    "cum": -0.278
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -130,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.39 / 史实 0.71）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.71,
+    "new_to": 0.386,
+    "cum": -0.324
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -129,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.37 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.37,
+    "cum": -0.37
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -128,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.35 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.353,
+    "cum": -0.417
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -127,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.46（本支 0.34 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.337,
+    "cum": -0.463
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -126,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.51（本支 0.32 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.321,
+    "cum": -0.509
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -125,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.56（本支 0.30 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.305,
+    "cum": -0.555
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -124,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.29 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.288,
+    "cum": -0.602
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -123,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.65（本支 0.27 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.272,
+    "cum": -0.648
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -122,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.26 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.256,
+    "cum": -0.694
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -121,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.24 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.239,
+    "cum": -0.741
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -120,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.223,
+    "cum": -0.777
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -119,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.207,
+    "cum": -0.793
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -118,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.191,
+    "cum": -0.809
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -117,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.174,
+    "cum": -0.826
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -116,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.158,
+    "cum": -0.842
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -115,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.142,
+    "cum": -0.858
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -114,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.125,
+    "cum": -0.875
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -113,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.109,
+    "cum": -0.891
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -112,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.093,
+    "cum": -0.907
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -111,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.077,
+    "cum": -0.923
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -110,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.06,
+    "cum": -0.94
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -109,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.044,
+    "cum": -0.956
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -108,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.028,
+    "cum": -0.972
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -107,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.011,
+    "cum": -0.989
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -106,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -105,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -104,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -103,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -102,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -101,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -100,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   }
+  },
+  {
+   "kind": "summary",
+   "year": -100,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

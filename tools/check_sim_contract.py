@@ -133,12 +133,23 @@ def main():
         st = obj.get("scenario_type", "military")
         if st == "military":
             continue
+        rel = os.path.relpath(cfgp, ROOT)
         if not obj.get("dim_targets"):
-            fails.append("sim_config 非军事缺 dim_targets: %s" % os.path.relpath(cfgp, ROOT))
+            fails.append("sim_config 非军事缺 dim_targets: %s" % rel)
         if not isinstance(obj.get("branches"), list) or not obj["branches"]:
-            fails.append("sim_config 非军事缺 branches: %s" % os.path.relpath(cfgp, ROOT))
+            fails.append("sim_config 非军事缺 branches: %s" % rel)
         if not obj.get("real_branch"):
-            fails.append("sim_config 非军事缺 real_branch: %s" % os.path.relpath(cfgp, ROOT))
+            fails.append("sim_config 非军事缺 real_branch: %s" % rel)
+        # ── G1 派生诚实边界（v0.125）──
+        # 标 _auto_derived 的配置必须：(a) 布尔；(b) 含一条 whatif 前缀的反事实分支，
+        # 使前端可据 id 渲染 [what-if] 徽标，绝不把派生产物冒充手 authoring 考据。
+        if obj.get("_auto_derived") is not None:
+            if not isinstance(obj.get("_auto_derived"), bool):
+                fails.append("sim_config _auto_derived 应为布尔: %s" % rel)
+            else:
+                bids = [b.get("id") for b in obj.get("branches", [])]
+                if not any(isinstance(b, str) and b.startswith("whatif") for b in bids):
+                    fails.append("派生 sim_config 缺 whatif 反事实分支（honest boundary）: %s" % rel)
 
     for bep in glob.glob(os.path.join(ROOT, "data", "**", "branch_events_*.json"), recursive=True):
         try:

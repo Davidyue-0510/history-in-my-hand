@@ -1,0 +1,12 @@
+{
+ "sources": [
+  {
+   "id": "hw_ruxue",
+   "title": "hw_ruxue·综合考订",
+   "party": "学界",
+   "availability": "not_free",
+   "bias_note": "G1 自动派生：source 由断言 source 字段汇总，party 归综述考订桶。",
+   "distance_label": "综合诸家记述（派生占位）"
+  }
+ ]
+}

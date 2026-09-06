@@ -1,0 +1,10 @@
+{
+ "_comment": "北魏孝文帝太和年间（494 前后）汉化·均田·三长制场景关键都邑（真实近似坐标，仅供 viewer 节点定位）。",
+ "places": [
+  {"id": "luoyang", "name": "洛阳", "lon": 112.45, "lat": 34.62},
+  {"id": "pingcheng", "name": "平城", "lon": 113.30, "lat": 40.08},
+  {"id": "changan", "name": "长安", "lon": 108.94, "lat": 34.34},
+  {"id": "ye", "name": "邺", "lon": 115.90, "lat": 36.10},
+  {"id": "jiankang", "name": "建康", "lon": 118.80, "lat": 32.06}
+ ]
+}
