@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 181 个切片
+// 权威数据源：data/scenes.json 注册的 184 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 181 个切片",
+  "slice": "multi-scene · 184 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -488,7 +488,10 @@ window.SANDBOX_DATA = {
   "tang_xuanwumen_llm",
   "chibi_llm",
   "song_wanganshi_llm",
-  "biTigeGuan"
+  "biTigeGuan",
+  "tang_liangshuifa",
+  "wei_xiaowen",
+  "sui_canal"
  ],
  "vocab": {
   "layers": [
@@ -24647,6 +24650,102 @@ window.SANDBOX_DATA = {
     "scholarship": 4,
     "inference": 4
    }
+  },
+  "tang_liangshuifa": {
+   "key": "tang_liangshuifa",
+   "scene_id": "tang_liangshuifa",
+   "title": "唐·两税法",
+   "dossier_label": "两税法",
+   "subtitle": "780 · 建中元年 · 唐",
+   "kind": "reform",
+   "region": "sui_tang",
+   "page": "county.html?scene=tang_liangshuifa",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 0,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "wei_xiaowen": {
+   "key": "wei_xiaowen",
+   "scene_id": "wei_xiaowen",
+   "title": "北魏孝文帝改革",
+   "dossier_label": "孝文帝汉化",
+   "subtitle": "485–494 · 太和 · 北魏",
+   "kind": "reform",
+   "region": "two_jin",
+   "page": "county.html?scene=wei_xiaowen",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 0,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
+  },
+  "sui_canal": {
+   "key": "sui_canal",
+   "scene_id": "sui_canal",
+   "title": "隋·大运河",
+   "dossier_label": "大运河",
+   "subtitle": "605–610 · 大业 · 隋",
+   "kind": "engineering",
+   "region": "sui_tang",
+   "page": "county.html?scene=sui_canal",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 0,
+    "assert": 2,
+    "conflict": 0,
+    "gap": 0,
+    "record": 0,
+    "scholarship": 2,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -24830,7 +24929,10 @@ window.SANDBOX_DATA = {
   "tang_xuanwumen_llm": "slices/tang_xuanwumen_llm.js",
   "chibi_llm": "slices/chibi_llm.js",
   "song_wanganshi_llm": "slices/song_wanganshi_llm.js",
-  "biTigeGuan": "slices/biTigeGuan.js"
+  "biTigeGuan": "slices/biTigeGuan.js",
+  "tang_liangshuifa": "slices/tang_liangshuifa.js",
+  "wei_xiaowen": "slices/wei_xiaowen.js",
+  "sui_canal": "slices/sui_canal.js"
  },
  "corridors": [
   {

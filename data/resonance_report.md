@@ -131,6 +131,7 @@
 | song_wanganshi_llm | 12 | 5 | **0.000** | event:ev_song_wanganshi_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | song_yancheng_llm | 12 | 3 | **0.000** | event:ev_song_yancheng_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | songjin | 18 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 15 / scholarship 1 |
+| sui_canal | 2 | 0 | **0.000** | —（0.000） | scholarship 2 |
 | sui_canal_llm | 12 | 3 | **0.000** | event:ev_sui_canal_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
 | sui_mie_chen | 11 | 2 | **0.000** | event:sm_587（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
@@ -143,6 +144,7 @@
 | tang_dangzheng | 7 | 3 | **0.000** | event:nt_808（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | tang_huangchao_llm | 16 | 5 | **0.000** | event:ev_tang_huangchao_01（0.000） | gap 1 / inference 1 / record 13 / scholarship 1 |
+| tang_liangshuifa | 2 | 0 | **0.000** | —（0.000） | scholarship 2 |
 | tang_xuanwumen_llm | 12 | 2 | **0.000** | event:ev_tang_xuanwumen_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
@@ -151,6 +153,7 @@
 | wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | warring_states_shangyang_llm | 14 | 2 | **0.000** | event:ev_warring_states_shangyang_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
+| wei_xiaowen | 2 | 0 | **0.000** | —（0.000） | scholarship 2 |
 | wencheng | 11 | 2 | **0.000** | event:wc_641（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | wugu | 15 | 2 | **0.000** | event:wg_91（0.000） | gap 1 / inference 5 / record 7 / scholarship 2 |
 | wuwang | 7 | 2 | **0.000** | event:ww_1046（0.000） | gap 1 / record 3 / scholarship 3 |

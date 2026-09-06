@@ -1,9 +1,9 @@
 {
-  "scenes_total": 181,
-  "historical": 172,
+  "scenes_total": 184,
+  "historical": 175,
   "fictional": 9,
-  "assertions_total": 2853,
-  "sources_total": 145,
+  "assertions_total": 2859,
+  "sources_total": 148,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -1375,6 +1375,27 @@
       "kind": "battle",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "tang_liangshuifa",
+      "title": "唐·两税法",
+      "kind": "reform",
+      "assertions": 2,
+      "factions": {}
+    },
+    {
+      "id": "wei_xiaowen",
+      "title": "北魏孝文帝改革",
+      "kind": "reform",
+      "assertions": 2,
+      "factions": {}
+    },
+    {
+      "id": "sui_canal",
+      "title": "隋·大运河",
+      "kind": "engineering",
+      "assertions": 2,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1558,6 +1579,9 @@
     "tang_xuanwumen_llm": "唐·玄武门之变（LLM 抽取·人工校订）",
     "chibi_llm": "三国·赤壁之战",
     "song_wanganshi_llm": "宋·王安石变法",
-    "biTigeGuan": "碧蹄馆之战·三方记载"
+    "biTigeGuan": "碧蹄馆之战·三方记载",
+    "tang_liangshuifa": "唐·两税法",
+    "wei_xiaowen": "北魏孝文帝改革",
+    "sui_canal": "隋·大运河"
   }
 }

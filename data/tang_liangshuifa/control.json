@@ -1,8 +1,47 @@
-[
- {"_comment": "建中两税推行期（780–800）唐廷对主要财赋重地的稳定控制；非军事场景，单一控制方供三阶层 Agent 阻力（local 教育/地产垄断→税制改革阻力）。", "place_id": "_meta", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"},
- {"place_id": "changan", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"},
- {"place_id": "luoyang", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"},
- {"place_id": "yangzhou", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"},
- {"place_id": "chengdu", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"},
- {"place_id": "taiyuan", "party": "唐廷", "start": 780, "end": 800, "timeline": "main"}
-]
+{
+  "control": [
+    {
+      "_comment": "建中两税推行期（780–800）唐廷对主要财赋重地的稳定控制；非军事场景，单一控制方供三阶层 Agent 阻力（local 教育/地产垄断→税制改革阻力）。",
+      "place_id": "_meta",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    },
+    {
+      "place_id": "changan",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    },
+    {
+      "place_id": "luoyang",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    },
+    {
+      "place_id": "yangzhou",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    },
+    {
+      "place_id": "chengdu",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    },
+    {
+      "place_id": "taiyuan",
+      "party": "综述考订",
+      "start": 780,
+      "end": 800,
+      "timeline": "main"
+    }
+  ]
+}

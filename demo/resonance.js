@@ -130,6 +130,7 @@ window.SANDBOX_RESONANCE = {
    "song_wanganshi_llm",
    "song_yancheng_llm",
    "songjin",
+   "sui_canal",
    "sui_canal_llm",
    "sui_daxing",
    "sui_mie_chen",
@@ -142,6 +143,7 @@ window.SANDBOX_RESONANCE = {
    "tang_dangzheng",
    "tang_huai_xi",
    "tang_huangchao_llm",
+   "tang_liangshuifa",
    "tang_xuanwumen_llm",
    "three_campaigns",
    "tianjing",
@@ -150,6 +152,7 @@ window.SANDBOX_RESONANCE = {
    "wanganshi",
    "wangmang",
    "warring_states_shangyang_llm",
+   "wei_xiaowen",
    "wencheng",
    "wugu",
    "wuwang",
@@ -2514,6 +2517,22 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.333
   },
   {
+   "scene": "sui_canal",
+   "name": "sui_canal",
+   "total": 2,
+   "layers": {
+    "scholarship": 2
+   },
+   "party_counts": {
+    "综述考订": 2
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
+  },
+  {
    "scene": "sui_canal_llm",
    "name": "sui_canal_llm",
    "total": 12,
@@ -2746,6 +2765,22 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tang_liangshuifa",
+   "name": "tang_liangshuifa",
+   "total": 2,
+   "layers": {
+    "scholarship": 2
+   },
+   "party_counts": {
+    "综述考订": 2
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
+  },
+  {
    "scene": "tang_xuanwumen_llm",
    "name": "tang_xuanwumen_llm",
    "total": 12,
@@ -2906,6 +2941,22 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": "event:ev_warring_states_shangyang_01",
    "best_resonance": 0.0
+  },
+  {
+   "scene": "wei_xiaowen",
+   "name": "wei_xiaowen",
+   "total": 2,
+   "layers": {
+    "scholarship": 2
+   },
+   "party_counts": {
+    "综述考订": 2
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
   },
   {
    "scene": "wencheng",

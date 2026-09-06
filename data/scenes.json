@@ -384,7 +384,10 @@
   "tang_xuanwumen_llm",
   "chibi_llm",
   "song_wanganshi_llm",
-  "biTigeGuan"
+  "biTigeGuan",
+  "tang_liangshuifa",
+  "wei_xiaowen",
+  "sui_canal"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15325,6 +15328,228 @@
     }
    },
    "province": "overseas"
+  },
+  "tang_liangshuifa": {
+   "kind": "reform",
+   "region": "sui_tang",
+   "title": "唐·两税法",
+   "dossier_label": "两税法",
+   "subtitle": "780 · 建中元年 · 唐",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "唐德宗建中元年(780)杨炎奏行两税法，废租庸调、以资产定户等、按田亩征地税，分夏秋两季征收。本场景由 G2 非军事推演样例（v0.125）提升为注册模式：real=两税施行、whatif=维持租庸调，验证经济/社会维反事实偏离。",
+   "parties_note": "控制方 party=综述考订（跨朝代合法控制 party）；source party=学界。G2 离网样例提升为注册，由 check_sim_contract (C) 校验。",
+   "subject_names": {
+    "institution:liangshui": "两税法",
+    "social:shangren": "商税"
+   },
+   "dims": [
+    3,
+    4
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "两税法：资产税取代人丁税，中央财政集权强化"
+    },
+    "material_logistics": {
+     "from": [
+      "economy",
+      "tech"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "两税法：夏秋两季征收，实物税向货币税转型"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "两税法：税及农商，社会阶层负担重构"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "两税法：中唐财政改革，藩镇与中央博弈下的制度选择"
+    }
+   },
+   "province": null
+  },
+  "wei_xiaowen": {
+   "kind": "reform",
+   "region": "two_jin",
+   "title": "北魏孝文帝改革",
+   "dossier_label": "孝文帝汉化",
+   "subtitle": "485–494 · 太和 · 北魏",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "北魏孝文帝太和年间(485–494)颁均田令、迁都洛阳、禁胡服断北语改汉姓，全面汉化。G2 非军事 social 样例提升为注册：real=汉化推进、whatif=维持鲜卑旧制，验证制度/社会/思想维反事实。",
+   "parties_note": "控制方 party=综述考订（跨朝代合法控制 party）；source party=学界。G2 离网样例提升为注册，由 check_sim_contract (C) 校验。",
+   "subject_names": {
+    "institution:juntian": "均田制",
+    "social:hanhua": "汉化"
+   },
+   "dims": [
+    3,
+    4,
+    5
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "北魏：汉化改制，鲜卑贵族与汉人士族政治整合"
+    },
+    "material_logistics": {
+     "from": [
+      "economy",
+      "tech"
+     ],
+     "from_dims": [
+      3,
+      4
+     ],
+     "layer": "inference",
+     "note": "北魏：均田制配三长制，赋税与户口掌控强化"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "北魏：禁胡服断北语，鲜卑社会全面汉化"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      3,
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "北魏：迁都洛阳，北族政权中原化战略"
+    }
+   },
+   "province": null
+  },
+  "sui_canal": {
+   "kind": "engineering",
+   "region": "sui_tang",
+   "title": "隋·大运河",
+   "dossier_label": "大运河",
+   "subtitle": "605–610 · 大业 · 隋",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "隋炀帝大业年间(605–610)开凿大运河，连通南北水系、漕运直达涿郡。G2 非军事 engineering 样例提升为注册：real=运河贯通、whatif=未凿，验证技术/制度/社会/事件维反事实偏离。",
+   "parties_note": "控制方 party=综述考订（跨朝代合法控制 party）；source party=学界。G2 离网样例提升为注册，由 check_sim_contract (C) 校验。",
+   "subject_names": {
+    "tech:canal": "运河工程",
+    "institution:tonghang": "南北贯通"
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      2,
+      3,
+      4,
+      6
+     ],
+     "layer": "inference",
+     "note": "隋运河：工程连通强化中央对南北控制"
+    },
+    "material_logistics": {
+     "from": [
+      "economy",
+      "tech"
+     ],
+     "from_dims": [
+      2,
+      6
+     ],
+     "layer": "inference",
+     "note": "隋运河：南北水系贯通，漕运物流革命"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "隋运河：征发百万民夫，人口动员极限"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      2,
+      3,
+      4,
+      6
+     ],
+     "layer": "inference",
+     "note": "隋运河：贯通南北，隋廷地缘战略工程"
+    }
+   },
+   "province": null
   }
  },
  "dimensions": {
