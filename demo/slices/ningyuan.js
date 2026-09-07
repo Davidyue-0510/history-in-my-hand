@@ -1396,6 +1396,52 @@ window.SANDBOX_SLICES["ningyuan"] = {
    "dim_source": "declared",
    "_party": "清修·明臣",
    "_faction": null
+  },
+  {
+   "id": "NINGYUAN_SOC2",
+   "subject": "social:minzhu",
+   "predicate": "商民协守",
+   "value_text": "宁远商民倚坚城自保，袁崇焕编民为兵，城守赖商民协助，孤城得全。",
+   "source": "mingshi",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.6,
+   "time": {
+    "era_text": "天启六年（1626）",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "NINGYUAN_SOC3",
+   "subject": "social:liumin",
+   "predicate": "辽西流徙",
+   "value_text": "辽西连兵，宁远以西民众流徙，孤城聚纳难民，市廛半为空舍。",
+   "source": "ming_xizong_shilu",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "天启六年（1626）",
+    "start": "1626-01-01",
+    "end": "1626-12-31",
+    "gregorian_year": 1626
+   },
+   "place": "ningyuan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "明廷官方",
+   "_faction": null
   }
  ],
  "conflicts": [

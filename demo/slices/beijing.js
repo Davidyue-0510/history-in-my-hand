@@ -22,6 +22,7 @@ window.SANDBOX_SLICES["beijing"] = {
    1,
    2,
    3,
+   4,
    5,
    6
   ],
@@ -581,6 +582,75 @@ window.SANDBOX_SLICES["beijing"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BEIJING_SOC1",
+   "subject": "social:minzhu",
+   "predicate": "市民助守",
+   "value_text": "于谦调集京城民众、民夫助筑守备，商民共赴城守，九门丁壮编伍。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "景泰元年（1450）",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BEIJING_SOC2",
+   "subject": "social:liumin",
+   "predicate": "畿辅流离",
+   "value_text": "土木之变后北边百姓南徙，畿辅人口流离，村聚为墟。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "正统十四年（1449）",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BEIJING_SOC3",
+   "subject": "social:minyi",
+   "predicate": "溃卒散民",
+   "value_text": "京营溃卒散入民间，市井秩序动荡，米价腾踊。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "正统十四年（1449）",
+    "start": "1449-01-01",
+    "end": "1449-12-31",
+    "gregorian_year": 1449
+   },
+   "place": "beijing",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

@@ -3287,6 +3287,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "SC_12",
+   "scene": "sui_canal",
+   "subject": "social:minfu",
+   "title": "各段征调民夫确切死亡数，史书记载互异，运河总役死者无确数，相关数字存在缺口。",
+   "missing": "史料比对 / 人口史",
+   "where": "各段征调民夫死亡统计",
+   "skills": [
+    "史料比对",
+    "人口史"
+   ],
+   "accept": "以区间估算呈现，标注史料互异",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SUI_012",
    "scene": "sui_canal_llm",
    "subject": "event:ev_sui_canal_llm_01",
@@ -3524,6 +3540,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
+   "id": "TL_10",
+   "scene": "tang_liangshuifa",
+   "subject": "social:shangren",
+   "title": "两税法实施后各道实际税额与建中定额之差，诸道供报互异，缺系统统计。",
+   "missing": "税制史 / 财政史",
+   "where": "各道两税实际税额统计",
+   "skills": [
+    "税制史",
+    "财政史"
+   ],
+   "accept": "以诸道供报区间呈现，标注缺载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "TAN_011",
    "scene": "tang_xuanwumen_llm",
    "subject": "event:ev_tang_xuanwumen_01",
@@ -3696,6 +3728,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "WX_10",
+   "scene": "wei_xiaowen",
+   "subject": "social:hanhua",
+   "title": "均田令实际受田亩数因土旷民稀与否各地不一，诸州落实差异缺系统记载。",
+   "missing": "土地制度史 / 出土文书",
+   "where": "诸州均田实际受田统计",
+   "skills": [
+    "土地制度史",
+    "出土文书"
+   ],
+   "accept": "以敦煌吐鲁番文书残片补证，标注缺载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "WENCHENGG01",

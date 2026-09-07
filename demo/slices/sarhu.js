@@ -4260,6 +4260,52 @@ window.SANDBOX_SLICES["sarhu"] = {
    "dim_source": "fallback",
    "_party": "学界",
    "_faction": null
+  },
+  {
+   "id": "SARHU_SOC2",
+   "subject": "social:liumin",
+   "predicate": "辽左户口大减",
+   "value_text": "辽左兵败后，汉民或投充后金、或渡河西奔，辽东编户大减，边屯顿空。",
+   "source": "guoque",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.6,
+   "time": {
+    "era_text": "万历四十七年（1619）",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "shenyang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "明·私修",
+   "_faction": null
+  },
+  {
+   "id": "SARHU_SOC3",
+   "subject": "social:bingfu",
+   "predicate": "闾里供亿",
+   "value_text": "明廷四路出师，辽东汉儿供亿繁重，转饷征夫，闾里为殚。",
+   "source": "mingshi",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "万历四十七年（1619）",
+    "start": "1619-01-01",
+    "end": "1619-12-31",
+    "gregorian_year": 1619
+   },
+   "place": "fushunguan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
   }
  ],
  "conflicts": [

@@ -21,6 +21,7 @@ window.SANDBOX_SLICES["mobai"] = {
   "dims": [
    1,
    2,
+   4,
    5,
    6
   ],
@@ -539,6 +540,75 @@ window.SANDBOX_SLICES["mobai"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MOBAI_SOC1",
+   "subject": "social:shibian",
+   "predicate": "徙民实边",
+   "value_text": "汉武帝徙民实边、置田官，北边郡户籍大增，屯垦渐兴。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "元狩四年（前119）",
+    "start": "-0119-01-01",
+    "end": "-0119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "chang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MOBAI_SOC2",
+   "subject": "social:limin",
+   "predicate": "中土远戍",
+   "value_text": "汉武连年兴师，海内赋敛重，中土丁壮远戍朔方，耕织废于征役。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "元狩四年（前119）",
+    "start": "-0119-01-01",
+    "end": "-0119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "chang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "MOBAI_SOC3",
+   "subject": "social:minyi",
+   "predicate": "戍卒聚边",
+   "value_text": "匈奴远遁、漠南无王庭，北边戍卒家属渐聚边县，边聚始成。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "元狩四年（前119）",
+    "start": "-0119-01-01",
+    "end": "-0119-12-31",
+    "gregorian_year": -119
+   },
+   "place": "mobei",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

@@ -17,7 +17,8 @@ window.SANDBOX_SLICES["wei_xiaowen"] = {
   "dims": [
    3,
    4,
-   5
+   5,
+   6
   ],
   "epoch": "two_jin",
   "scale_tier": "strategic",
@@ -90,18 +91,18 @@ window.SANDBOX_SLICES["wei_xiaowen"] = {
  ],
  "places": [
   {
-   "id": "luoyang",
-   "name": "洛阳",
-   "lon": 112.45,
-   "lat": 34.62,
-   "elev": 171
-  },
-  {
    "id": "pingcheng",
    "name": "平城",
    "lon": 113.3,
    "lat": 40.08,
    "elev": 1054
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "elev": 171
   },
   {
    "id": "changan",
@@ -174,11 +175,207 @@ window.SANDBOX_SLICES["wei_xiaowen"] = {
    "dim_source": "declared",
    "_party": "学界",
    "_faction": null
+  },
+  {
+   "id": "WX_03",
+   "subject": "institution:juntian",
+   "predicate": "均田令",
+   "value_text": "太和九年颁均田令，男子受露田四十亩、桑田二十亩，妇人减半，露田还受相循，授田制度化。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.85,
+   "time": {
+    "era_text": "太和九年",
+    "start": "485-01-01",
+    "end": "485-12-31",
+    "gregorian_year": 485
+   },
+   "place": "pingcheng",
+   "dims": [
+    6,
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_04",
+   "subject": "institution:qianluo",
+   "predicate": "迁都洛阳",
+   "value_text": "太和十八年迁都洛阳，摆脱平城守旧势力，汉化改革中枢南移，号令及于中原。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "太和十八年",
+    "start": "494-01-01",
+    "end": "494-12-31",
+    "gregorian_year": 494
+   },
+   "place": "luoyang",
+   "dims": [
+    6,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_05",
+   "subject": "social:hanhua",
+   "predicate": "禁胡服改姓",
+   "value_text": "太和十九年禁胡服、断北语、改汉姓，拓跋氏改元氏，鲜卑全面汉化，衣冠正朔一依华夏。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "太和十九年",
+    "start": "495-01-01",
+    "end": "495-12-31",
+    "gregorian_year": 495
+   },
+   "place": "luoyang",
+   "dims": [
+    6,
+    4,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_06",
+   "subject": "institution:sanchang",
+   "predicate": "三长制",
+   "value_text": "立三长制（邻长、里长、党长），取代宗主督护，户口编审入官，税基夯实。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "太和十年",
+    "start": "486-01-01",
+    "end": "486-12-31",
+    "gregorian_year": 486
+   },
+   "place": "pingcheng",
+   "dims": [
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_07",
+   "subject": "social:hukou",
+   "predicate": "户口编审",
+   "value_text": "三长制与均田相辅，隐漏户口析出，国家控制编户大增，赋役有常。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "太和十年后",
+    "start": "486-01-01",
+    "end": "499-12-31",
+    "gregorian_year": 486
+   },
+   "place": "luoyang",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_08",
+   "subject": "social:zuyuan",
+   "predicate": "族姓门第",
+   "value_text": "制定姓族门第，鲜卑勋贵与汉士族合流，门阀秩序重塑，胡汉精英同列。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "太和十九年后",
+    "start": "495-01-01",
+    "end": "499-12-31",
+    "gregorian_year": 495
+   },
+   "place": "luoyang",
+   "dims": [
+    4,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_09",
+   "subject": "social:maodun",
+   "predicate": "胡汉矛盾",
+   "value_text": "汉化激进引发太子恂之叛与鲜卑守旧不满，胡汉磨合伴生张力，改革代价显现。",
+   "source": "wx_syn",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "time": {
+    "era_text": "太和二十年至末年",
+    "start": "496-01-01",
+    "end": "499-12-31",
+    "gregorian_year": 496
+   },
+   "place": "pingcheng",
+   "dims": [
+    4,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "WX_10",
+   "subject": "social:hanhua",
+   "predicate": "史料缺环",
+   "value_text": "均田令实际受田亩数因土旷民稀与否各地不一，诸州落实差异缺系统记载。",
+   "source": "wx_syn",
+   "layer": "gap",
+   "confidence": 0,
+   "time": {
+    "era_text": "太和九年后",
+    "start": "485-01-01",
+    "end": "499-12-31",
+    "gregorian_year": 485
+   },
+   "place": "pingcheng",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "诸州均田实际受田统计",
+    "skills": [
+     "土地制度史",
+     "出土文书"
+    ],
+    "accept": "以敦煌吐鲁番文书残片补证，标注缺载"
+   },
+   "_party": "学界",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "WX_10"
+ ],
  "events": [],
  "edges": [],
  "control": [

@@ -16,7 +16,8 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
   },
   "dims": [
    3,
-   4
+   4,
+   6
   ],
   "epoch": "sui_tang",
   "scale_tier": "strategic",
@@ -94,13 +95,6 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
    "elev": 391
   },
   {
-   "id": "luoyang",
-   "name": "洛阳",
-   "lon": 112.45,
-   "lat": 34.62,
-   "elev": 171
-  },
-  {
    "id": "yangzhou",
    "name": "扬州",
    "lon": 119.42,
@@ -120,6 +114,13 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
    "lon": 112.55,
    "lat": 37.87,
    "elev": 807
+  },
+  {
+   "id": "luoyang",
+   "name": "洛阳",
+   "lon": 112.45,
+   "lat": 34.62,
+   "elev": 171
   }
  ],
  "persons": [],
@@ -169,11 +170,205 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
    "dim_source": "declared",
    "_party": "学界",
    "_faction": null
+  },
+  {
+   "id": "TL_03",
+   "subject": "institution:liangshui",
+   "predicate": "杨炎奏行",
+   "value_text": "建中元年宰相杨炎奏行两税法，德宗从之，废租庸调，以资产定户等。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.85,
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "dims": [
+    6,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_04",
+   "subject": "institution:liangshui",
+   "predicate": "废租庸调",
+   "value_text": "两税法废沿行二百余年的租庸调，以资产定户等、按田亩征地税，税制为之一变。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "dims": [
+    6,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_05",
+   "subject": "social:nonghu",
+   "predicate": "农户负担",
+   "value_text": "两税以资产为宗，然税外苛派、折纳虚估，贫户负担未减反增，民困如故。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "建中以后",
+    "start": "780-01-01",
+    "end": "820-12-31",
+    "gregorian_year": 780
+   },
+   "place": "chengdu",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_06",
+   "subject": "institution:liangshui",
+   "predicate": "夏秋两征",
+   "value_text": "分夏秋两季征收，夏税无过六月、秋税无过十一月，征期制度化，便民知期。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "dims": [
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_07",
+   "subject": "social:liudong",
+   "predicate": "人口流动",
+   "value_text": "居人之税按现居定籍，行商就所州县税三十分之一，人口流动纳入税网，客户著籍。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "taiyuan",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_08",
+   "subject": "social:diff",
+   "predicate": "税负不均",
+   "value_text": "两税按资产定等，然豪富匿产、官吏上下其手，税负不均依旧，贫富悬隔。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "time": {
+    "era_text": "建中以后",
+    "start": "780-01-01",
+    "end": "820-12-31",
+    "gregorian_year": 780
+   },
+   "place": "yangzhou",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_09",
+   "subject": "institution:hubu",
+   "predicate": "户部奏裁",
+   "value_text": "两税由户部度支奏裁定额，中央财权集中，地方上供定额化。",
+   "source": "tl_syn",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "time": {
+    "era_text": "建中元年",
+    "start": "780-01-01",
+    "end": "780-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "dims": [
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "TL_10",
+   "subject": "social:shangren",
+   "predicate": "史料缺环",
+   "value_text": "两税法实施后各道实际税额与建中定额之差，诸道供报互异，缺系统统计。",
+   "source": "tl_syn",
+   "layer": "gap",
+   "confidence": 0,
+   "time": {
+    "era_text": "建中以后",
+    "start": "780-01-01",
+    "end": "820-12-31",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "dims": [
+    4,
+    3
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "各道两税实际税额统计",
+    "skills": [
+     "税制史",
+     "财政史"
+    ],
+    "accept": "以诸道供报区间呈现，标注缺载"
+   },
+   "_party": "学界",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "TL_10"
+ ],
  "events": [],
  "edges": [],
  "control": [

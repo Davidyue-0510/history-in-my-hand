@@ -18602,11 +18602,11 @@ window.SANDBOX_DATA = {
     "src": 10,
     "place": 21,
     "person": 18,
-    "assert": 123,
+    "assert": 125,
     "conflict": 9,
     "gap": 7,
     "record": 98,
-    "scholarship": 12,
+    "scholarship": 14,
     "inference": 6
    }
   },
@@ -19045,11 +19045,11 @@ window.SANDBOX_DATA = {
     "src": 5,
     "place": 4,
     "person": 6,
-    "assert": 43,
+    "assert": 45,
     "conflict": 3,
     "gap": 2,
     "record": 40,
-    "scholarship": 1,
+    "scholarship": 3,
     "inference": 0
    }
   },
@@ -19809,6 +19809,7 @@ window.SANDBOX_DATA = {
     1,
     2,
     3,
+    4,
     5,
     6
    ],
@@ -19818,11 +19819,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 16,
+    "assert": 19,
     "conflict": 0,
     "gap": 1,
     "record": 10,
-    "scholarship": 3,
+    "scholarship": 6,
     "inference": 2
    }
   },
@@ -19888,11 +19889,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 20,
+    "assert": 22,
     "conflict": 0,
     "gap": 3,
     "record": 13,
-    "scholarship": 4,
+    "scholarship": 6,
     "inference": 0
    }
   },
@@ -19923,11 +19924,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 21,
+    "assert": 23,
     "conflict": 0,
     "gap": 1,
     "record": 16,
-    "scholarship": 4,
+    "scholarship": 6,
     "inference": 0
    }
   },
@@ -20015,6 +20016,7 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     2,
+    4,
     5,
     6
    ],
@@ -20024,11 +20026,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 15,
+    "assert": 18,
     "conflict": 1,
     "gap": 1,
     "record": 11,
-    "scholarship": 3,
+    "scholarship": 6,
     "inference": 0
    }
   },
@@ -20049,6 +20051,7 @@ window.SANDBOX_DATA = {
     1,
     2,
     3,
+    4,
     6
    ],
    "epoch": "qin_han",
@@ -20057,11 +20060,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 16,
+    "assert": 19,
     "conflict": 0,
     "gap": 2,
     "record": 10,
-    "scholarship": 3,
+    "scholarship": 6,
     "inference": 1
    }
   },
@@ -20082,6 +20085,7 @@ window.SANDBOX_DATA = {
     1,
     2,
     3,
+    4,
     5,
     6
    ],
@@ -20091,11 +20095,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 3,
-    "assert": 16,
+    "assert": 19,
     "conflict": 0,
     "gap": 1,
     "record": 12,
-    "scholarship": 3,
+    "scholarship": 6,
     "inference": 0
    }
   },
@@ -20396,11 +20400,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 3,
-    "assert": 15,
+    "assert": 17,
     "conflict": 0,
     "gap": 2,
     "record": 9,
-    "scholarship": 3,
+    "scholarship": 5,
     "inference": 1
    }
   },
@@ -20659,6 +20663,7 @@ window.SANDBOX_DATA = {
     1,
     2,
     3,
+    4,
     5,
     6
    ],
@@ -20668,11 +20673,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 4,
     "person": 4,
-    "assert": 16,
+    "assert": 19,
     "conflict": 0,
     "gap": 1,
     "record": 12,
-    "scholarship": 3,
+    "scholarship": 6,
     "inference": 0
    }
   },
@@ -24683,7 +24688,8 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     3,
-    4
+    4,
+    6
    ],
    "epoch": "sui_tang",
    "scale_tier": "strategic",
@@ -24691,11 +24697,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 0,
-    "assert": 2,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 2,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -24715,7 +24721,8 @@ window.SANDBOX_DATA = {
    "dims": [
     3,
     4,
-    5
+    5,
+    6
    ],
    "epoch": "two_jin",
    "scale_tier": "strategic",
@@ -24723,11 +24730,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 0,
-    "assert": 2,
+    "assert": 10,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 2,
+    "scholarship": 9,
     "inference": 0
    }
   },
@@ -24745,6 +24752,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
     3,
     4,
@@ -24756,11 +24764,11 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 0,
-    "assert": 2,
+    "assert": 12,
     "conflict": 0,
-    "gap": 0,
+    "gap": 1,
     "record": 0,
-    "scholarship": 2,
+    "scholarship": 11,
     "inference": 0
    }
   },

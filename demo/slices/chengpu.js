@@ -687,6 +687,52 @@ window.SANDBOX_SLICES["chengpu"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "CHENGPU_SOC2",
+   "subject": "social:zhuhou",
+   "predicate": "诸侯附着",
+   "value_text": "晋文公既胜，会盟诸侯、倡尊王攘夷，中原诸国宗法秩序随晋霸重组。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-0632-01-01",
+    "end": "-0632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "chengpu",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "CHENGPU_SOC3",
+   "subject": "social:minyi",
+   "predicate": "边民内徙",
+   "value_text": "晋楚争雄，河济之间民户转徙，楚北境边民多内附避兵。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周襄王二十年（前632）",
+    "start": "-0632-01-01",
+    "end": "-0632-12-31",
+    "gregorian_year": -632
+   },
+   "place": "ying",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],

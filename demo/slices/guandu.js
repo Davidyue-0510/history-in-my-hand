@@ -22,6 +22,7 @@ window.SANDBOX_SLICES["guandu"] = {
    1,
    2,
    3,
+   4,
    5,
    6
   ],
@@ -575,6 +576,75 @@ window.SANDBOX_SLICES["guandu"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUANDU_SOC1",
+   "subject": "social:tuntian",
+   "predicate": "许下屯田",
+   "value_text": "曹操募流民屯田许下，黄淮间脱籍人口渐著籍复农。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "建安五年（200）",
+    "start": "0200-01-01",
+    "end": "0200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "xuchang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUANDU_SOC2",
+   "subject": "social:limin",
+   "predicate": "河南户残",
+   "value_text": "袁曹相持，河南郡县粮尽户残，民多依附强豪避役。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "建安五年（200）",
+    "start": "0200-01-01",
+    "end": "0200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUANDU_SOC3",
+   "subject": "social:bingyi",
+   "predicate": "括户征兵",
+   "value_text": "两军括户征兵，冀豫丁壮困于转输，农桑废弛。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "建安五年（200）",
+    "start": "0200-01-01",
+    "end": "0200-12-31",
+    "gregorian_year": 200
+   },
+   "place": "guandu",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

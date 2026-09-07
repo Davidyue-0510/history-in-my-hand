@@ -22,6 +22,7 @@ window.SANDBOX_SLICES["guiling"] = {
    1,
    2,
    3,
+   4,
    5,
    6
   ],
@@ -568,6 +569,75 @@ window.SANDBOX_SLICES["guiling"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUILING_SOC1",
+   "subject": "social:limin",
+   "predicate": "邯郸兵燹",
+   "value_text": "魏拔邯郸，赵都民众遭兵燹流离，城邑为墟。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周显王十五年（前354）",
+    "start": "-0354-01-01",
+    "end": "-0354-12-31",
+    "gregorian_year": -354
+   },
+   "place": "handan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUILING_SOC2",
+   "subject": "social:bingyi",
+   "predicate": "魏民困役",
+   "value_text": "魏惠王屡兴兵、围赵攻韩，三晋丁壮多赴行伍，闾里困于征发。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周显王十五年（前354）",
+    "start": "-0354-01-01",
+    "end": "-0354-12-31",
+    "gregorian_year": -354
+   },
+   "place": "guiling",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "GUILING_SOC3",
+   "subject": "social:minyi",
+   "predicate": "齐民转输",
+   "value_text": "齐围魏救赵，齐境转输之民役繁，农户供亿转重。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周显王十五年（前354）",
+    "start": "-0354-01-01",
+    "end": "-0354-12-31",
+    "gregorian_year": -354
+   },
+   "place": "guiling",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }

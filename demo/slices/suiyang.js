@@ -548,6 +548,52 @@ window.SANDBOX_SLICES["suiyang"] = {
    },
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "SUIYANG_SOC2",
+   "subject": "social:minnan",
+   "predicate": "围城人相食",
+   "value_text": "睢阳被围粮尽，张巡杀妾飨士，继以易子而食，城陷前阖城殍饿相藉。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.55,
+   "time": {
+    "era_text": "至德二载（757）",
+    "start": "0757-01-01",
+    "end": "0757-12-31",
+    "gregorian_year": 757
+   },
+   "place": "suiyang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "SUIYANG_SOC3",
+   "subject": "social:liumin",
+   "predicate": "河南残破",
+   "value_text": "叛军蹂践河南，州县残破，百姓流亡殆尽，里闬为空。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "至德二载（757）",
+    "start": "0757-01-01",
+    "end": "0757-12-31",
+    "gregorian_year": 757
+   },
+   "place": "suiyang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],

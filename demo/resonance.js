@@ -253,14 +253,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "beijing",
    "name": "beijing",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 6,
     "record": 12,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 16
+    "综合史料": 19
    },
    "faction_counts": {},
    "event_count": 7,
@@ -349,14 +349,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "boju",
    "name": "boju",
-   "total": 21,
+   "total": 23,
    "layers": {
-    "scholarship": 4,
+    "scholarship": 6,
     "record": 16,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 21
+    "综合史料": 23
    },
    "faction_counts": {},
    "event_count": 3,
@@ -500,14 +500,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "chengpu",
    "name": "chengpu",
-   "total": 20,
+   "total": 22,
    "layers": {
-    "scholarship": 4,
+    "scholarship": 6,
     "record": 13,
     "gap": 3
    },
    "party_counts": {
-    "综合史料": 20
+    "综合史料": 22
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1067,14 +1067,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "guandu",
    "name": "guandu",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 6,
     "record": 12,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 16
+    "综合史料": 19
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1128,15 +1128,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "guiling",
    "name": "guiling",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 6,
     "record": 10,
     "inference": 2,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 16
+    "综合史料": 19
    },
    "faction_counts": {},
    "event_count": 3,
@@ -1814,15 +1814,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "kunyang",
    "name": "kunyang",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 6,
     "record": 10,
     "inference": 1,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 16
+    "综合史料": 19
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2125,14 +2125,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "mobai",
    "name": "mobai",
-   "total": 15,
+   "total": 18,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 6,
     "record": 11,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 18
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2183,15 +2183,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "ningyuan",
    "name": "ningyuan",
-   "total": 43,
+   "total": 45,
    "layers": {
     "record": 40,
-    "scholarship": 1,
+    "scholarship": 3,
     "gap": 2
    },
    "party_counts": {
-    "清方": 39,
-    "明方": 3,
+    "清方": 40,
+    "明方": 4,
     "综述考订": 1
    },
    "faction_counts": {},
@@ -2411,18 +2411,18 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "sarhu",
    "name": "萨尔浒",
-   "total": 123,
+   "total": 125,
    "layers": {
     "record": 98,
-    "scholarship": 12,
+    "scholarship": 14,
     "inference": 6,
     "gap": 7
    },
    "party_counts": {
-    "清方": 60,
+    "清方": 61,
     "综述考订": 30,
     "朝鲜": 17,
-    "明方": 16
+    "明方": 17
    },
    "faction_counts": {
     "封疆大吏 / 辽东经略系": 8
@@ -2662,12 +2662,13 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "sui_canal",
    "name": "sui_canal",
-   "total": 2,
+   "total": 12,
    "layers": {
-    "scholarship": 2
+    "scholarship": 11,
+    "gap": 1
    },
    "party_counts": {
-    "综述考订": 2
+    "综述考订": 12
    },
    "faction_counts": {},
    "event_count": 0,
@@ -2772,15 +2773,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "suiyang",
    "name": "suiyang",
-   "total": 15,
+   "total": 17,
    "layers": {
-    "scholarship": 3,
+    "scholarship": 5,
     "record": 9,
     "inference": 1,
     "gap": 2
    },
    "party_counts": {
-    "综合史料": 15
+    "综合史料": 17
    },
    "faction_counts": {},
    "event_count": 3,
@@ -2929,12 +2930,13 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "tang_liangshuifa",
    "name": "tang_liangshuifa",
-   "total": 2,
+   "total": 10,
    "layers": {
-    "scholarship": 2
+    "scholarship": 9,
+    "gap": 1
    },
    "party_counts": {
-    "综述考订": 2
+    "综述考订": 10
    },
    "faction_counts": {},
    "event_count": 0,
@@ -3126,12 +3128,13 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "wei_xiaowen",
    "name": "wei_xiaowen",
-   "total": 2,
+   "total": 10,
    "layers": {
-    "scholarship": 2
+    "scholarship": 9,
+    "gap": 1
    },
    "party_counts": {
-    "综述考订": 2
+    "综述考订": 10
    },
    "faction_counts": {},
    "event_count": 0,

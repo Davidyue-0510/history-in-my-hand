@@ -697,6 +697,52 @@ window.SANDBOX_SLICES["boju"] = {
    "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
+  },
+  {
+   "id": "BOJU_SOC2",
+   "subject": "social:liumin",
+   "predicate": "楚都残破",
+   "value_text": "吴师入郢，楚昭王奔随，郢都编户流散，江淮贵族出亡者众。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-0506-01-01",
+    "end": "-0506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "ying",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "BOJU_SOC3",
+   "subject": "social:bingyi",
+   "predicate": "丁壮疲役",
+   "value_text": "吴楚连年争伐，江淮间丁壮多赴行伍，民间转输之役繁兴。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "周敬王十四年（前506）",
+    "start": "-0506-01-01",
+    "end": "-0506-12-31",
+    "gregorian_year": -506
+   },
+   "place": "boju",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
   }
  ],
  "conflicts": [],

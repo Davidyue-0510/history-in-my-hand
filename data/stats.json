@@ -2,7 +2,7 @@
   "scenes_total": 195,
   "historical": 186,
   "fictional": 9,
-  "assertions_total": 3006,
+  "assertions_total": 3057,
   "sources_total": 168,
   "factions_total": 9,
   "vocab_packs": [
@@ -60,7 +60,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 285,
+  "leads_total": 288,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -73,7 +73,7 @@
       "id": "sarhu",
       "title": "萨尔浒之战",
       "kind": "battle",
-      "assertions": 123,
+      "assertions": 125,
       "factions": {
         "feng_jiang": 8
       }
@@ -172,7 +172,7 @@
       "id": "ningyuan",
       "title": "宁远",
       "kind": "county",
-      "assertions": 43,
+      "assertions": 45,
       "factions": {}
     },
     {
@@ -335,7 +335,7 @@
       "id": "guiling",
       "title": "桂陵之战",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -349,14 +349,14 @@
       "id": "chengpu",
       "title": "城濮之战",
       "kind": "battle",
-      "assertions": 20,
+      "assertions": 22,
       "factions": {}
     },
     {
       "id": "boju",
       "title": "柏举之战",
       "kind": "battle",
-      "assertions": 21,
+      "assertions": 23,
       "factions": {}
     },
     {
@@ -377,21 +377,21 @@
       "id": "mobai",
       "title": "漠北之战",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
       "id": "kunyang",
       "title": "昆阳之战",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
       "id": "guandu",
       "title": "官渡之战",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -454,7 +454,7 @@
       "id": "suiyang",
       "title": "睢阳之战",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -510,7 +510,7 @@
       "id": "beijing",
       "title": "北京保卫战",
       "kind": "battle",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -1387,21 +1387,21 @@
       "id": "tang_liangshuifa",
       "title": "唐·两税法",
       "kind": "reform",
-      "assertions": 2,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "wei_xiaowen",
       "title": "北魏孝文帝改革",
       "kind": "reform",
-      "assertions": 2,
+      "assertions": 10,
       "factions": {}
     },
     {
       "id": "sui_canal",
       "title": "隋·大运河",
       "kind": "engineering",
-      "assertions": 2,
+      "assertions": 12,
       "factions": {}
     },
     {

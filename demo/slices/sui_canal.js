@@ -15,6 +15,7 @@ window.SANDBOX_SLICES["sui_canal"] = {
    "institution:tonghang": "南北贯通"
   },
   "dims": [
+   1,
    2,
    3,
    4,
@@ -100,18 +101,18 @@ window.SANDBOX_SLICES["sui_canal"] = {
    "elev": 171
   },
   {
-   "id": "zhuojun",
-   "name": "涿郡（今北京）",
-   "lon": 116.4,
-   "lat": 39.9,
-   "elev": 44
-  },
-  {
    "id": "yuhang",
    "name": "余杭（今杭州）",
    "lon": 120.15,
    "lat": 30.27,
    "elev": 98
+  },
+  {
+   "id": "zhuojun",
+   "name": "涿郡（今北京）",
+   "lon": 116.4,
+   "lat": 39.9,
+   "elev": 44
   },
   {
    "id": "jiangdu",
@@ -186,11 +187,251 @@ window.SANDBOX_SLICES["sui_canal"] = {
    "dim_source": "declared",
    "_party": "学界",
    "_faction": null
+  },
+  {
+   "id": "SC_03",
+   "subject": "tech:canal",
+   "predicate": "通济渠工",
+   "value_text": "大业元年发河南诸郡男女百余万开通济渠，自洛阳西苑引谷、洛水达于河，历汴水入淮，渠工连年。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.85,
+   "time": {
+    "era_text": "大业元年",
+    "start": "605-01-01",
+    "end": "605-12-31",
+    "gregorian_year": 605
+   },
+   "place": "luoyang",
+   "dims": [
+    6,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_04",
+   "subject": "institution:tonghang",
+   "predicate": "永济渠",
+   "value_text": "大业四年开永济渠，引沁水南达于河、北通涿郡，为征高句丽运兵运粮，河工再启。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "大业四年",
+    "start": "608-01-01",
+    "end": "608-12-31",
+    "gregorian_year": 608
+   },
+   "place": "zhuojun",
+   "dims": [
+    6,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_05",
+   "subject": "tech:canal",
+   "predicate": "江南河",
+   "value_text": "大业六年开江南河，自京口至余杭八百余里，南北水系全线贯通，漕运可直达余杭。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "大业六年",
+    "start": "610-01-01",
+    "end": "610-12-31",
+    "gregorian_year": 610
+   },
+   "place": "yuhang",
+   "dims": [
+    6,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_06",
+   "subject": "social:minfu",
+   "predicate": "役重民困",
+   "value_text": "运河连年大役，征发河南、淮南诸郡男女数百万，死亡枕藉，民力大困，怨声载道。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "大业元年至六年",
+    "start": "605-01-01",
+    "end": "610-12-31",
+    "gregorian_year": 605
+   },
+   "place": "luoyang",
+   "dims": [
+    4,
+    6
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_07",
+   "subject": "social:shechi",
+   "predicate": "巡幸劳民",
+   "value_text": "炀帝三幸江都乘龙舟，舳舻相接二百余里，沿途供顿极奢，所过州县困弊。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "大业元年至十二年",
+    "start": "605-01-01",
+    "end": "616-12-31",
+    "gregorian_year": 605
+   },
+   "place": "jiangdu",
+   "dims": [
+    4,
+    6
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_08",
+   "subject": "tech:wangluo",
+   "predicate": "水运网",
+   "value_text": "以洛阳为中心，通济渠、永济渠、邗沟、江南河构成南北水运网，沟通海河、黄河、淮河、长江、钱塘江五大水系。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "大业六年",
+    "start": "610-01-01",
+    "end": "610-12-31",
+    "gregorian_year": 610
+   },
+   "place": "luoyang",
+   "dims": [
+    1,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_09",
+   "subject": "institution:cangshu",
+   "predicate": "置仓转运",
+   "value_text": "沿河置洛口、回洛等仓储粮，设转运使体制，漕粮北运制度化，洛阳成南北枢纽。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.75,
+   "time": {
+    "era_text": "大业年间",
+    "start": "605-01-01",
+    "end": "616-12-31",
+    "gregorian_year": 605
+   },
+   "place": "luoyang",
+   "dims": [
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_10",
+   "subject": "social:jingji",
+   "predicate": "经济交流",
+   "value_text": "运河贯通促进南北物资交流，江淮粮帛北运、南方物产入都，商业城市沿河兴起。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.8,
+   "time": {
+    "era_text": "大业年间",
+    "start": "605-01-01",
+    "end": "616-12-31",
+    "gregorian_year": 605
+   },
+   "place": "bianzhou",
+   "dims": [
+    4,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_11",
+   "subject": "social:minbian",
+   "predicate": "河役民变",
+   "value_text": "隋末瓦岗翟让、河北窦建德等据运河要地起事，河役苛重为民变导火之一。",
+   "source": "sc_syn",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "time": {
+    "era_text": "大业七年至末年",
+    "start": "611-01-01",
+    "end": "618-12-31",
+    "gregorian_year": 611
+   },
+   "place": "chuzhou",
+   "dims": [
+    4,
+    6
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SC_12",
+   "subject": "social:minfu",
+   "predicate": "史料缺环",
+   "value_text": "各段征调民夫确切死亡数，史书记载互异，运河总役死者无确数，相关数字存在缺口。",
+   "source": "sc_syn",
+   "layer": "gap",
+   "confidence": 0,
+   "time": {
+    "era_text": "大业年间",
+    "start": "605-01-01",
+    "end": "616-12-31",
+    "gregorian_year": 605
+   },
+   "place": "luoyang",
+   "dims": [
+    4,
+    6
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "各段征调民夫死亡统计",
+    "skills": [
+     "史料比对",
+     "人口史"
+    ],
+    "accept": "以区间估算呈现，标注史料互异"
+   },
+   "_party": "学界",
+   "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "SC_12"
+ ],
  "events": [],
  "edges": [],
  "control": [

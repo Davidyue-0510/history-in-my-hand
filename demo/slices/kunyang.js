@@ -22,6 +22,7 @@ window.SANDBOX_SLICES["kunyang"] = {
    1,
    2,
    3,
+   4,
    6
   ],
   "epoch": "qin_han",
@@ -572,6 +573,75 @@ window.SANDBOX_SLICES["kunyang"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KUNYANG_SOC1",
+   "subject": "social:zhengbing",
+   "predicate": "强征丁男",
+   "value_text": "王莽强征天下丁男，乃至囚徒、市佣充军，关内骚动，民怨淤积。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "地皇四年（23）",
+    "start": "0023-01-01",
+    "end": "0023-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KUNYANG_SOC2",
+   "subject": "social:liumin",
+   "predicate": "流民蜂起",
+   "value_text": "新莽弊政叠加昆阳战乱，三辅残破，流民蜂起就食。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "地皇四年（23）",
+    "start": "0023-01-01",
+    "end": "0023-12-31",
+    "gregorian_year": 23
+   },
+   "place": "changan",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "KUNYANG_SOC3",
+   "subject": "social:minbian",
+   "predicate": "绿林聚义",
+   "value_text": "绿林、赤眉并起于下，底层民众结聚反抗新室，社序崩解。",
+   "source": "synthesis",
+   "layer": "scholarship",
+   "quote_status": "paraphrase_unverified",
+   "confidence": 0.5,
+   "time": {
+    "era_text": "地皇四年（23）",
+    "start": "0023-01-01",
+    "end": "0023-12-31",
+    "gregorian_year": 23
+   },
+   "place": "kunyang",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
    "_party": "综合史料",
    "_faction": null
   }
