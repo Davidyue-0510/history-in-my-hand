@@ -2,11 +2,15 @@
   "places": [
     {
       "id": "yong",
-      "name": "yong"
+      "name": "yong",
+      "lon": 107.39,
+      "lat": 34.53
     },
     {
       "id": "xianyang",
-      "name": "xianyang"
+      "name": "xianyang",
+      "lon": 108.70,
+      "lat": 34.33
     }
   ]
 }

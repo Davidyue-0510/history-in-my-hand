@@ -2,7 +2,15 @@
   "places": [
     {
       "id": "changan",
-      "name": "changan"
+      "name": "changan",
+      "lon": 108.94,
+      "lat": 34.34
+    },
+    {
+      "id": "luoyang",
+      "name": "luoyang",
+      "lon": 112.45,
+      "lat": 34.62
     }
   ]
 }

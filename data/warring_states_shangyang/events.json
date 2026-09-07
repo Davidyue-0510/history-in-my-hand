@@ -1,0 +1,14 @@
+{
+ "events": [
+  {
+   "id": "ev_warring_qiandu",
+   "subject": "event:qiandu",
+   "year": -350,
+   "era": "秦孝公十二年",
+   "title": "徙都咸阳",
+   "kind": "制度",
+   "text": "秦孝公十二年徙都咸阳，筑冀阙宫庭，示变法决心。",
+   "place": "xianyang"
+  }
+ ]
+}

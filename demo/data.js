@@ -25244,7 +25244,7 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
-    "place": 1,
+    "place": 2,
     "person": 0,
     "assert": 8,
     "conflict": 0,
@@ -25276,7 +25276,7 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
-    "place": 1,
+    "place": 2,
     "person": 0,
     "assert": 6,
     "conflict": 0,

@@ -246,7 +246,7 @@
     if(scenarioType==='military'){
       $('geoNote').textContent = '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。';
     } else if(STATE.mapPlan && STATE.mapPlan.nodes.length>=2){
-      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（真实省界+地形底图，节点按真实经纬度等距投影叠加在现代中国政区参考上，随年份依次激活；激活后热度=当年改革指数）。底图=Natural Earth 1:50m 省界/河流/湖泊/海岸 + DEM 高程网格；诚实边界：现代政区参考，非场景所属朝代精确边界。';
+      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（真实省界+地形底图，节点按真实经纬度等距投影叠加在现代中国政区参考上，随年份依次激活；激活后外溢「扩散圈」=当年采纳强度的影响半径，颜色同热度色阶，表达改革/制度在空间上的渗透）。底图=Natural Earth 1:50m 省界/河流/湖泊/海岸 + DEM 高程网格；诚实边界：现代政区参考，非场景所属朝代精确边界。';
     } else {
       $('geoNote').textContent = '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）；本场景节点缺地理坐标，地图叙事不可用。';
     }
@@ -375,6 +375,10 @@
     for(var i=0;i<h.length;i++) if(h[i].year===y) return h[i];
     return null;
   }
+  function eventsAtYear(D, y){
+    var be = (D.be && D.be.events) || [];
+    return be.filter(function(e){ return e.year===y; });
+  }
   function mix(a,b,t){
     function hx(c){ return [parseInt(c.substr(1,2),16),parseInt(c.substr(3,2),16),parseInt(c.substr(5,2),16)]; }
     var A=hx(a), B=hx(b);
@@ -414,27 +418,64 @@
       svg+='<line class="map-grid" x1="'+x+'" y1="'+padT+'" x2="'+x+'" y2="'+(H-padB)+'"/>';
       svg+='<text x="'+x+'" y="'+(H-padB+12)+'" font-size="9" fill="#9a9286" text-anchor="middle">'+lo+'°E</text>'; });
     [20,30,40,50].forEach(function(la){ var y=MAP_py(la);
-      svg+='<line class="map-grid" x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'"/>';
+      svg+='<line class="map-grid" x1="'+padL+'" y1="'+y+'" x2="'+W-padR+'" y2="'+y+'"/>';
       svg+='<text x="'+(padL-4)+'" y="'+y+3+'" font-size="9" fill="#9a9286" text-anchor="end">'+la+'°N</text>'; });
     svg+='<rect x="'+padL+'" y="'+padT+'" width="'+(W-padL-padR)+'" height="'+(H-padT-padB)+'" fill="none" stroke="#c9bfa8"/>';
+    // 当年采纳强度（按模式取源；diff 取 |反事实−史实| 偏离幅度）
+    var realHere=0, branchHere=0;
+    (D.histReal||[]).forEach(function(x){ if(x.year===STATE.year) realHere=x.reform_index||0; });
+    (D.histBranch||[]).forEach(function(x){ if(x.year===STATE.year) branchHere=x.reform_index||0; });
+    var eng = STATE.mode==='real' ? realHere : STATE.mode==='branch' ? branchHere : Math.abs(branchHere-realHere);
     var hi = histAt(D, STATE.year);
     var ri = hi ? (hi.reform_index||0) : 0;
+    // 当年分支事件（最严重级别）
+    var evsY = eventsAtYear(D, STATE.year);
+    var worst = evsY.reduce(function(m,e){ var o={info:0,warn:1,bad:2}; return Math.max(m, o[e.severity||'info']||0); }, -1);
+    var C_BAD='#b5443a', C_WARN='#c8a24a', C_INFO='#7fa7c4';
+    // 扩散圈（影响场）：已采纳节点向外溢出半透明圈，半径∝采纳强度
     mp.nodes.forEach(function(nd){
+      if(STATE.year < nd.adopt) return;
+      var x=MAP_px(nd.lon), y=MAP_py(nd.lat);
+      var r = 10 + eng*46;
+      svg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+colorScale(eng)+'" fill-opacity="0.16" stroke="'+colorScale(eng)+'" stroke-opacity="0.38" stroke-width="1"/>';
+    });
+    // 节点 + 策源地标识 + 事件锚定
+    mp.nodes.forEach(function(nd, i){
       var x=MAP_px(nd.lon), y=MAP_py(nd.lat);
       var adopted = STATE.year >= nd.adopt;
-      var eng = adopted ? ri : 0;
       var fill = adopted ? colorScale(eng) : '#c9bfa8';
       var opn = adopted ? 0.92 : 0.5;
-      svg+='<g class="map-node"><circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+(adopted?9:7)+'" fill="'+fill+'" fill-opacity="'+opn+'" stroke="#332d27" stroke-width="1"/>';
+      var isOrigin = (i===0);
+      var stroke='#332d27', sw=1;
+      if(isOrigin && worst>=0){
+        stroke = worst>=2 ? C_BAD : worst>=1 ? C_WARN : C_INFO;
+        sw = 2.4;
+      }
+      svg+='<g class="map-node"><circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+(adopted?9:7)+'" fill="'+fill+'" fill-opacity="'+opn+'" stroke="'+stroke+'" stroke-width="'+sw+'"/></g>';
       var lx=x+11, ly=y+3;
       svg+='<text x="'+lx.toFixed(1)+'" y="'+ly.toFixed(1)+'">'+nd.name+'</text>';
-      if(adopted) svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'">'+nd.adopt+' 激活</text>';
-      else svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'" style="fill:#9a9286">未激活</text>';
-      svg+='</g>';
+      if(isOrigin) svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'">策源地 · '+nd.adopt+' 激活</text>';
+      else if(adopted) svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'">'+nd.adopt+' 采纳</text>';
+      else svg+='<text class="map-adopt" x="'+lx.toFixed(1)+'" y="'+(ly+11).toFixed(1)+'" style="fill:#9a9286">未采纳</text>';
+      // 分支事件锚定：有 place_id 精确落点；无 place_id 锚策源地
+      var anchored = evsY.filter(function(e){ return (e.place_id && e.place_id===nd.id) || (!e.place_id && isOrigin); });
+      if(anchored.length){
+        var sv = anchored.reduce(function(m,e){ var o={info:0,warn:1,bad:2}; return Math.max(m, o[e.severity||'info']||0); }, 0);
+        var sym = sv>=2 ? '✕' : sv>=1 ? '△' : '○';
+        var sc = sv>=2 ? C_BAD : sv>=1 ? C_WARN : C_INFO;
+        svg+='<text x="'+(x-13).toFixed(1)+'" y="'+(y-12).toFixed(1)+'" font-size="15" fill="'+sc+'" text-anchor="middle">'+sym+'</text>';
+      }
     });
     svg+='</svg>';
+    var evNote = '';
+    if(worst>=0){
+      var symW = worst>=2 ? '✕' : worst>=1 ? '△' : '○';
+      var precise = evsY.some(function(e){ return e.place_id; });
+      evNote = '本年偏离事件以 '+symW+' 锚定'+(precise?'（精确落点）':'（无 place 关联，锚策源地）')+'。';
+    }
     $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事 · 真实疆域底图（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
-      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。底图为真实经纬度投影：地形=DEM 高程网格（china_coarse，海洋透明），省界/河流/湖泊/海岸=Natural Earth 1:50m 公共领域数据。<b>诚实边界：此为现代中国政区参考，非场景所属朝代精确边界</b>；抽象坐标场景不渲染底图。</div></div></section>';
+      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后外溢「扩散圈」=当年采纳强度的影响半径（'+eng.toFixed(2)+'，颜色同热度色阶），表达改革/制度在空间上的渗透。'+evNote+
+      '底图为真实经纬度投影：地形=DEM 高程网格（china_coarse，海洋透明），省界/河流/湖泊/海岸=Natural Earth 1:50m 公共领域数据。<b>诚实边界：此为现代中国政区参考，非场景所属朝代精确边界</b>；抽象坐标场景不渲染底图。</div></div></section>';
   }
   function updateMap(D){ drawMapSVG(D); }
 
@@ -446,6 +487,7 @@
       '<span class="it"><span class="sw" style="background:var(--info)"></span>趋势</span>'+
       '<span class="it"><span class="sw" style="background:var(--warn)"></span>风险</span>'+
       '<span class="it"><span class="sw" style="background:var(--bad)"></span>危局</span>'+
+      '<span class="it"><span class="sw" style="background:rgba(122,90,46,.16);border:1px solid #7a5a2e"></span>扩散圈=影响半径</span>'+
       '<span class="it" style="margin-left:auto;color:var(--ink-soft)">Branch Event 符合 v0.57 schema · 诚实边界 [what-if]</span>';
   }
 })();

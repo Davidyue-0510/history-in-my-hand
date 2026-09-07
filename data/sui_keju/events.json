@@ -1,0 +1,14 @@
+{
+ "events": [
+  {
+   "id": "ev_sui_keju_chuang",
+   "subject": "event:keju_chuang",
+   "year": 605,
+   "era": "隋大业元年",
+   "title": "科举创立",
+   "kind": "制度",
+   "text": "隋炀帝设进士科，科举制肇始，绵延千三百年，为后世文官制度之滥觞。",
+   "place": "changan"
+  }
+ ]
+}
