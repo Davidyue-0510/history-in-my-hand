@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "huizhou",
+      "name": "徽州（休宁）",
+      "type": "city",
+      "modern": "今安徽黄山",
+      "note": "戴震故里，徽派朴学",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.88,
+      "lat": 30.18,
+      "geo_unresolved": false
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "type": "city",
+      "modern": "今北京",
+      "note": "四库馆、翰林院所在",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 116.4,
+      "lat": 39.9,
+      "geo_unresolved": false
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "type": "city",
+      "modern": "今浙江杭州",
+      "note": "文澜阁（四库七阁之一）",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 120.15,
+      "lat": 30.27,
+      "geo_unresolved": false
+    },
+    {
+      "id": "suzhou",
+      "name": "苏州",
+      "type": "city",
+      "modern": "今江苏苏州",
+      "note": "惠栋吴派所在",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 120.62,
+      "lat": 31.3,
+      "geo_unresolved": false
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "type": "city",
+      "modern": "今江苏扬州",
+      "note": "扬州学派重镇",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 119.41,
+      "lat": 32.39,
+      "geo_unresolved": false
+    }
+  ]
+}

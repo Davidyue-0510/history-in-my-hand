@@ -787,6 +787,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "FGC_015",
+   "scene": "foguo_chan_llm",
+   "subject": "theme:minjian",
+   "title": "正统佛教与民间信仰之张力、基层寺院实态，文献有缺",
+   "missing": "金石学 / 社会史",
+   "where": "唐代墓志与造像记",
+   "skills": [
+    "金石学",
+    "社会史"
+   ],
+   "accept": "补基层佛教实态",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "FOTAOG01",
    "scene": "fotao",
    "subject": "event:ft_67",

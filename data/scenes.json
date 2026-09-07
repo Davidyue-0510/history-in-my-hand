@@ -396,7 +396,9 @@
   "gunpowder_warfare",
   "susong_llm",
   "wangyangming",
-  "zhuxi"
+  "zhuxi",
+  "foguo_chan_llm",
+  "qianjia_puxue_llm"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -16307,6 +16309,159 @@
      ],
      "layer": "inference",
      "note": "朱熹·理学：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "foguo_chan_llm": {
+   "kind": "thought",
+   "region": "thought",
+   "province": null,
+   "title": "唐代佛教东传与禅宗",
+   "dossier_label": null,
+   "subtitle": "武周崇佛·会昌灭佛·禅宗本土化",
+   "primary_place": "changan",
+   "dossier_event": "event:ev_foguo_03",
+   "vocab_pack": "foguo_chan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐代佛教东传：political_cohesion——统治层以佛教为凝聚与合法性工具（武周崇佛），失势则废（会昌灭佛）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "唐代佛教东传：material_logistics——译场官助、寺院经济与国家税基争夺"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "唐代佛教东传：population_mobilization——僧尼荫户、禅悦士大夫"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐代佛教东传：geopolitical_strategy——佛教东传朝鲜日本，三教论衡为统治层安排的思想秩序"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "qianjia_puxue_llm": {
+   "kind": "thought",
+   "region": "thought",
+   "province": null,
+   "title": "清代乾嘉朴学",
+   "dossier_label": null,
+   "subtitle": "文字狱高压·四库寓禁于征·考据鼎盛",
+   "primary_place": "beijing",
+   "dossier_event": "event:ev_qianjia_02",
+   "vocab_pack": "qianjia_puxue_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "清代乾嘉朴学：political_cohesion——文字狱高压加四库审查，义理退潮，考据成避风港（统治术透镜）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "清代乾嘉朴学：material_logistics——四库官修大书即思想审查机器，书禁森严"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "清代乾嘉朴学：population_mobilization——博学鸿词科笼络、书院受官控"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "清代乾嘉朴学：geopolitical_strategy——江南朴学地缘集群，士人转向安全学问"
     }
    },
    "dims": [

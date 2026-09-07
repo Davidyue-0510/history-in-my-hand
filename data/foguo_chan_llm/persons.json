@@ -1,0 +1,64 @@
+{
+  "persons": [
+    {
+      "id": "FGC__p01",
+      "name": "玄奘",
+      "role": "唐初高僧、译经家",
+      "note": "西行求法，法相宗创始",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "FGC__p02",
+      "name": "武则天",
+      "role": "武周皇帝",
+      "note": "借《大云经》符命称帝",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "FGC__p03",
+      "name": "慧能",
+      "role": "禅宗六祖",
+      "note": "《六祖坛经》，南宗顿悟",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "FGC__p04",
+      "name": "鉴真",
+      "role": "律宗高僧",
+      "note": "六次东渡传律日本",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "FGC__p05",
+      "name": "韩愈",
+      "role": "唐中叶文学家、儒臣",
+      "note": "《谏迎佛骨表》排佛卫道",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "FGC__p06",
+      "name": "傅奕",
+      "role": "唐初太史令",
+      "note": "上疏请废佛",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    }
+  ]
+}

@@ -46,6 +46,7 @@ window.SANDBOX_RESONANCE = {
    "feishui",
    "feishui_llm",
    "fenshu",
+   "foguo_chan_llm",
    "fotao",
    "four_inv",
    "fujian_quanzhou_llm",
@@ -114,6 +115,7 @@ window.SANDBOX_RESONANCE = {
    "ningxia",
    "ningyuan",
    "poyanghu",
+   "qianjia_puxue_llm",
    "qin_fenshu_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
@@ -873,6 +875,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "foguo_chan_llm",
+   "name": "foguo_chan_llm",
+   "total": 16,
+   "layers": {
+    "record": 10,
+    "scholarship": 4,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_foguo_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "fotao",
    "name": "fotao",
    "total": 13,
@@ -1261,15 +1282,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "han_wudi_ruxue",
    "name": "han_wudi_ruxue",
-   "total": 10,
+   "total": 13,
    "layers": {
-    "scholarship": 4,
+    "scholarship": 5,
     "record": 2,
-    "inference": 3,
+    "inference": 5,
     "gap": 1
    },
    "party_counts": {
-    "综述考订": 10
+    "综述考订": 13
    },
    "faction_counts": {},
    "event_count": 0,
@@ -2196,6 +2217,24 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:py_chen",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "qianjia_puxue_llm",
+   "name": "qianjia_puxue_llm",
+   "total": 16,
+   "layers": {
+    "scholarship": 10,
+    "record": 5,
+    "inference": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qianjia_01",
    "best_resonance": 0.0
   },
   {

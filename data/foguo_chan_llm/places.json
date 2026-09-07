@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "changan",
+      "name": "长安",
+      "type": "city",
+      "modern": "今陕西西安",
+      "note": "唐长安，译场与译经中心",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 108.94,
+      "lat": 34.34,
+      "geo_unresolved": false
+    },
+    {
+      "id": "tiantai",
+      "name": "天台山国清寺",
+      "type": "yi",
+      "modern": "今浙江天台",
+      "note": "天台宗祖庭",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 121.43,
+      "lat": 29.27,
+      "geo_unresolved": false
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "type": "city",
+      "modern": "今河南洛阳",
+      "note": "白马寺、龙门石窟",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 112.45,
+      "lat": 34.62,
+      "geo_unresolved": false
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "type": "city",
+      "modern": "今江苏扬州",
+      "note": "鉴真东渡起点",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 119.41,
+      "lat": 32.39,
+      "geo_unresolved": false
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "type": "city",
+      "modern": "今广东广州",
+      "note": "海上丝路佛教传入节点",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 113.26,
+      "lat": 23.13,
+      "geo_unresolved": false
+    }
+  ]
+}

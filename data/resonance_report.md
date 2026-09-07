@@ -47,6 +47,7 @@
 | feishui | 16 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
 | fenshu | 13 | 2 | **0.000** | event:fs_212（0.000） | gap 1 / inference 3 / record 7 / scholarship 2 |
+| foguo_chan_llm | 16 | 3 | **0.000** | event:ev_foguo_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | fotao | 13 | 2 | **0.000** | event:ft_67（0.000） | gap 1 / record 9 / scholarship 3 |
 | four_inv | 15 | 4 | **0.000** | event:fi_compass（0.000） | gap 1 / record 10 / scholarship 4 |
 | fujian_quanzhou_llm | 16 | 2 | **0.000** | event:ev_fujian_quanzhou_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 1 |
@@ -67,7 +68,7 @@
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
 | han_banchao_llm | 15 | 4 | **0.000** | event:ev_han_banchao_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | han_weihuo_llm | 14 | 3 | **0.000** | event:ev_han_weihuo_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
-| han_wudi_ruxue | 10 | 0 | **0.000** | —（0.000） | gap 1 / inference 3 / record 2 / scholarship 4 |
+| han_wudi_ruxue | 13 | 0 | **0.000** | —（0.000） | gap 1 / inference 5 / record 2 / scholarship 5 |
 | heshangyuan | 21 | 3 | **0.000** | event:hs_jin（0.000） | gap 3 / inference 3 / record 11 / scholarship 4 |
 | hexi_sijun_llm | 16 | 4 | **0.000** | event:ev_hexi_sijun_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 1 |
 | hongjin | 13 | 2 | **0.000** | event:hj_1351（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |
@@ -115,6 +116,7 @@
 | ningxia | 14 | 3 | **0.417** | event:ningxia_weikun（0.667） | gap 1 / record 12 / scholarship 1 |
 | ningyuan | 43 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 1 |
 | poyanghu | 15 | 3 | **0.000** | event:py_chen（0.000） | gap 2 / inference 1 / record 7 / scholarship 5 |
+| qianjia_puxue_llm | 16 | 3 | **0.000** | event:ev_qianjia_01（0.000） | inference 1 / record 5 / scholarship 10 |
 | qin_fenshu_llm | 12 | 2 | **0.000** | event:ev_qin_fenshu_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
 | qin_mie_liu_guo_llm | 17 | 6 | **0.000** | event:ev_qin_mie_liu_guo_llm_01（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
@@ -323,6 +325,9 @@
 | event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_04 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_05 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_foguo_01 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_foguo_02 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_foguo_03 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_fujian_quanzhou_llm_01 | fujian_quanzhou_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_fujian_quanzhou_llm_02 | fujian_quanzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_gaopingling | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -364,6 +369,9 @@
 | event:ev_nanzhao_dali_llm_01 | nanzhao_dali_llm | **0.000** | 0/3 | 0.11 | 0.23 | 13 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_02 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_03 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_qianjia_01 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_qianjia_02 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_qianjia_03 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qin_fenshu_01 | qin_fenshu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_qin_fenshu_02 | qin_fenshu_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_qin_mie_liu_guo_01 | qin_mie_liu_guo | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

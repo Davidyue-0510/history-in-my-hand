@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 193 个切片
+// 权威数据源：data/scenes.json 注册的 195 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 193 个切片",
+  "slice": "multi-scene · 195 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -18,6 +18,7 @@ window.SANDBOX_DATA = {
    "chuhai_llm",
    "dujiangyan",
    "feishui_llm",
+   "foguo_chan_llm",
    "fujian_quanzhou_llm",
    "guandu_llm",
    "guizhou_yelang_llm",
@@ -32,6 +33,7 @@ window.SANDBOX_DATA = {
    "ming_tumu_llm",
    "ming_zhenghe_llm",
    "nanzhao_dali_llm",
+   "qianjia_puxue_llm",
    "qin_fenshu_llm",
    "qin_mie_liu_guo",
    "qin_mie_liu_guo_llm",
@@ -505,7 +507,9 @@ window.SANDBOX_DATA = {
   "gunpowder_warfare",
   "susong_llm",
   "wangyangming",
-  "zhuxi"
+  "zhuxi",
+  "foguo_chan_llm",
+  "qianjia_puxue_llm"
  ],
  "vocab": {
   "layers": [
@@ -18564,12 +18568,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 0,
-    "assert": 10,
+    "assert": 13,
     "conflict": 0,
     "gap": 1,
     "record": 2,
-    "scholarship": 4,
-    "inference": 3
+    "scholarship": 5,
+    "inference": 5
    }
   },
   "sarhu": {
@@ -25064,6 +25068,75 @@ window.SANDBOX_DATA = {
     "scholarship": 3,
     "inference": 1
    }
+  },
+  "foguo_chan_llm": {
+   "key": "foguo_chan_llm",
+   "scene_id": "foguo_chan_llm",
+   "title": "唐代佛教东传与禅宗",
+   "dossier_label": null,
+   "subtitle": "武周崇佛·会昌灭佛·禅宗本土化",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=foguo_chan_llm",
+   "primary_place": "changan",
+   "vocab_pack": "inline:foguo_chan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 4,
+    "inference": 1
+   }
+  },
+  "qianjia_puxue_llm": {
+   "key": "qianjia_puxue_llm",
+   "scene_id": "qianjia_puxue_llm",
+   "title": "清代乾嘉朴学",
+   "dossier_label": null,
+   "subtitle": "文字狱高压·四库寓禁于征·考据鼎盛",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=qianjia_puxue_llm",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:qianjia_puxue_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 0,
+    "record": 5,
+    "scholarship": 10,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -25259,7 +25332,9 @@ window.SANDBOX_DATA = {
   "gunpowder_warfare": "slices/gunpowder_warfare.js",
   "susong_llm": "slices/susong_llm.js",
   "wangyangming": "slices/wangyangming.js",
-  "zhuxi": "slices/zhuxi.js"
+  "zhuxi": "slices/zhuxi.js",
+  "foguo_chan_llm": "slices/foguo_chan_llm.js",
+  "qianjia_puxue_llm": "slices/qianjia_puxue_llm.js"
  },
  "corridors": [
   {

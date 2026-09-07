@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "id": "ev_qianjia_01",
+      "subject": "event:ev_qianjia_01",
+      "year": 1663,
+      "era": "康熙二年",
+      "title": "庄廷鑨明史案",
+      "kind": "其他",
+      "text": "庄廷鑨明史案兴，株连甚众，文字狱高压始",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "ev_qianjia_02",
+      "subject": "event:ev_qianjia_02",
+      "year": 1773,
+      "era": "乾隆三十八年",
+      "title": "四库全书开馆",
+      "kind": "行政",
+      "text": "开四库馆，寓禁于征，编纂与查禁并行",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "ev_qianjia_03",
+      "subject": "event:ev_qianjia_03",
+      "year": 1780,
+      "era": "乾隆中后期",
+      "title": "朴学鼎盛",
+      "kind": "其他",
+      "text": "考据训诂为学坛主流，义理退潮",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    }
+  ]
+}

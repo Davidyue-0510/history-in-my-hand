@@ -1,9 +1,9 @@
 {
-  "scenes_total": 193,
-  "historical": 184,
+  "scenes_total": 195,
+  "historical": 186,
   "fictional": 9,
-  "assertions_total": 2971,
-  "sources_total": 166,
+  "assertions_total": 3006,
+  "sources_total": 168,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -14,6 +14,7 @@
     "chuhai_llm",
     "dujiangyan",
     "feishui_llm",
+    "foguo_chan_llm",
     "fujian_quanzhou_llm",
     "guandu_llm",
     "guizhou_yelang_llm",
@@ -28,6 +29,7 @@
     "ming_tumu_llm",
     "ming_zhenghe_llm",
     "nanzhao_dali_llm",
+    "qianjia_puxue_llm",
     "qin_fenshu_llm",
     "qin_mie_liu_guo",
     "qin_mie_liu_guo_llm",
@@ -58,13 +60,13 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 284,
+  "leads_total": 285,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
       "title": "汉武帝·独尊儒术",
       "kind": "thought",
-      "assertions": 10,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -1464,6 +1466,20 @@
       "kind": "thought",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "foguo_chan_llm",
+      "title": "唐代佛教东传与禅宗",
+      "kind": "thought",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "qianjia_puxue_llm",
+      "title": "清代乾嘉朴学",
+      "kind": "thought",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1659,6 +1675,8 @@
     "gunpowder_warfare": "火药·军事化",
     "susong_llm": "苏颂·水运仪象台",
     "wangyangming": "王阳明·心学",
-    "zhuxi": "朱熹·理学"
+    "zhuxi": "朱熹·理学",
+    "foguo_chan_llm": "唐代佛教东传与禅宗",
+    "qianjia_puxue_llm": "清代乾嘉朴学"
   }
 }

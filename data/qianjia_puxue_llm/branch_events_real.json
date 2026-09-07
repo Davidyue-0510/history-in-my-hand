@@ -1,0 +1,203 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "qianjia_puxue_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1663,
+  1780
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1671,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.63 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.797,
+    "new_to": 0.632,
+    "cum": -0.165
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1672,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.65 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.646,
+    "cum": -0.184
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1673,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.66 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.863,
+    "new_to": 0.661,
+    "cum": -0.202
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1674,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.68 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.896,
+    "new_to": 0.676,
+    "cum": -0.22
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1675,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.69 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.929,
+    "new_to": 0.69,
+    "cum": -0.239
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1676,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.70 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.962,
+    "new_to": 0.705,
+    "cum": -0.257
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1677,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.72 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.995,
+    "new_to": 0.72,
+    "cum": -0.275
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1678,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.73 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.734,
+    "cum": -0.266
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1679,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.749,
+    "cum": -0.251
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1680,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.763,
+    "cum": -0.237
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1681,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.778,
+    "cum": -0.222
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1682,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.793,
+    "cum": -0.207
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1683,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.807,
+    "cum": -0.193
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1684,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.822,
+    "cum": -0.178
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1685,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.837,
+    "cum": -0.163
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1780,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

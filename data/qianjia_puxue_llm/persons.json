@@ -1,0 +1,64 @@
+{
+  "persons": [
+    {
+      "id": "QJ__p01",
+      "name": "戴震",
+      "role": "清中叶思想家、考据家",
+      "note": "《孟子字义疏证》，徽派朴学",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "QJ__p02",
+      "name": "惠栋",
+      "role": "清中叶经学家",
+      "note": "吴派考据开山",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "QJ__p03",
+      "name": "钱大昕",
+      "role": "清中叶史学家、考据家",
+      "note": "精史考、金石、历算",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "QJ__p04",
+      "name": "段玉裁",
+      "role": "清中叶文字学家",
+      "note": "《说文解字注》",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "QJ__p05",
+      "name": "王念孙",
+      "role": "清中叶训诂学家",
+      "note": "《读书杂志》《广雅疏证》",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "QJ__p06",
+      "name": "纪昀",
+      "role": "清中叶学者、四库总纂",
+      "note": "总纂《四库全书》",
+      "_source_idx": 0,
+      "_source_name": "清代乾嘉朴学(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    }
+  ]
+}

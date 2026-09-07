@@ -2,11 +2,23 @@
   "places": [
     {
       "id": "changan",
-      "name": "changan"
+      "name": "长安",
+      "type": "city",
+      "modern": "今陕西西安",
+      "note": "西汉国都，独尊儒术策源地",
+      "lon": 108.94,
+      "lat": 34.34,
+      "geo_unresolved": false
     },
     {
       "id": "luoyang",
-      "name": "luoyang"
+      "name": "洛阳",
+      "type": "city",
+      "modern": "今河南洛阳",
+      "note": "经学中心，博士传经之地",
+      "lon": 112.45,
+      "lat": 34.62,
+      "geo_unresolved": false
     }
   ]
 }

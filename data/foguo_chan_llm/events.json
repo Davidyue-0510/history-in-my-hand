@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "id": "ev_foguo_01",
+      "subject": "event:ev_foguo_01",
+      "year": 645,
+      "era": "贞观十九年",
+      "title": "玄奘归国译经",
+      "kind": "其他",
+      "text": "玄奘携经归，设译场译经千三百余卷",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "ev_foguo_02",
+      "subject": "event:ev_foguo_02",
+      "year": 690,
+      "era": "载初元年",
+      "title": "武周立大云寺",
+      "kind": "行政",
+      "text": "武则天诏天下立大云寺，以《大云经》符命为受命之符",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    },
+    {
+      "id": "ev_foguo_03",
+      "subject": "event:ev_foguo_03",
+      "year": 845,
+      "era": "会昌五年",
+      "title": "会昌灭佛",
+      "kind": "其他",
+      "text": "诏毁天下佛寺，勒僧尼还俗，收寺田复税户",
+      "_source_idx": 0,
+      "_source_name": "唐代佛教东传与禅宗(综合)",
+      "_source_party": "后世官修",
+      "_source_credibility": null
+    }
+  ]
+}
