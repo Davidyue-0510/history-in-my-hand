@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 191 个切片
+// 权威数据源：data/scenes.json 注册的 193 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 191 个切片",
+  "slice": "multi-scene · 193 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -52,12 +52,14 @@ window.SANDBOX_DATA = {
    "tang_huangchao_llm",
    "tang_xuanwumen_llm",
    "three_campaigns",
+   "wangyangming",
    "warring_states_shangyang_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
    "yuan_xingsheng_llm",
    "zhejiang_linan_llm",
-   "zheng_chenggong_taiwan_llm"
+   "zheng_chenggong_taiwan_llm",
+   "zhuxi"
   ]
  },
  "regions": [
@@ -501,7 +503,9 @@ window.SANDBOX_DATA = {
   "bisheng_movable_type",
   "compass_navigation",
   "gunpowder_warfare",
-  "susong_llm"
+  "susong_llm",
+  "wangyangming",
+  "zhuxi"
  ],
  "vocab": {
   "layers": [
@@ -24995,6 +24999,71 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "wangyangming": {
+   "key": "wangyangming",
+   "scene_id": "wangyangming",
+   "title": "王阳明·心学",
+   "dossier_label": null,
+   "subtitle": "明代心即理·知行合一·致良知",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=wangyangming",
+   "primary_place": "yuyao",
+   "vocab_pack": "inline:wangyangming",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 6,
+    "assert": 15,
+    "conflict": 3,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 3,
+    "inference": 1
+   }
+  },
+  "zhuxi": {
+   "key": "zhuxi",
+   "scene_id": "zhuxi",
+   "title": "朱熹·理学",
+   "dossier_label": null,
+   "subtitle": "南宋理气论·格物致知·四书集注",
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=zhuxi",
+   "primary_place": "wuyuan",
+   "vocab_pack": "inline:zhuxi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 3,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -25188,7 +25257,9 @@ window.SANDBOX_DATA = {
   "bisheng_movable_type": "slices/bisheng_movable_type.js",
   "compass_navigation": "slices/compass_navigation.js",
   "gunpowder_warfare": "slices/gunpowder_warfare.js",
-  "susong_llm": "slices/susong_llm.js"
+  "susong_llm": "slices/susong_llm.js",
+  "wangyangming": "slices/wangyangming.js",
+  "zhuxi": "slices/zhuxi.js"
  },
  "corridors": [
   {

@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "longchang",
+      "name": "龙场",
+      "type": "yi",
+      "modern": "今贵州修文",
+      "note": "悟道之地",
+      "_source_idx": 0,
+      "_source_name": "王阳明心学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 106.55,
+      "lat": 26.83,
+      "geo_unresolved": false
+    },
+    {
+      "id": "yue",
+      "name": "越",
+      "type": "region",
+      "modern": "今浙江绍兴一带",
+      "note": "晚年讲学处",
+      "_source_idx": 0,
+      "_source_name": "王阳明心学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 120.58,
+      "lat": 30.01,
+      "geo_unresolved": false
+    },
+    {
+      "id": "yuyao",
+      "name": "余姚",
+      "type": "city",
+      "modern": "今浙江宁波余姚",
+      "note": "王守仁籍贯",
+      "_source_idx": 0,
+      "_source_name": "王阳明心学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 121.16,
+      "lat": 30.04,
+      "geo_unresolved": false
+    }
+  ]
+}

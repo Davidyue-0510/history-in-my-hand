@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_wangyangming_01",
+   "subject": "event:ev_wangyangming_01",
+   "year": 1506,
+   "era": "正德元年",
+   "title": "抗疏救戴铣",
+   "kind": "行政",
+   "text": "王守仁上疏救戴铣，得罪刘瑾",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_wangyangming_02",
+   "subject": "event:ev_wangyangming_02",
+   "year": 1508,
+   "era": "正德三年",
+   "title": "龙场悟道",
+   "kind": "其他",
+   "text": "王守仁在龙场悟得心即理",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_wangyangming_03",
+   "subject": "event:ev_wangyangming_03",
+   "year": 1519,
+   "era": "正德十四年",
+   "title": "平宸濠之乱",
+   "kind": "战事",
+   "text": "王守仁擒获宁王朱宸濠",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

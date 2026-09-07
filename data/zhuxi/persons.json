@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "ZHU__p01",
+   "name": "朱熹",
+   "role": "南宋理学家",
+   "note": "字元晦，号晦庵，理学集大成者",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHU__p02",
+   "name": "陆九渊",
+   "role": "南宋理学家",
+   "note": "心学代表，与朱熹对峙",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHU__p03",
+   "name": "周敦颐",
+   "role": "北宋理学家",
+   "note": "理学开山，朱熹所承",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHU__p04",
+   "name": "程颢",
+   "role": "北宋理学家",
+   "note": "二程之一，理学奠基",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHU__p05",
+   "name": "程颐",
+   "role": "北宋理学家",
+   "note": "二程之一，理学奠基",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHU__p06",
+   "name": "张载",
+   "role": "北宋理学家",
+   "note": "气学代表，朱熹所承",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

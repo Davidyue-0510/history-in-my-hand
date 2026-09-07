@@ -3648,6 +3648,22 @@
    "_src_line": 12
   },
   {
+   "id": "WAN_015",
+   "scene": "wangyangming",
+   "subject": "person:WAN__p01",
+   "title": "龙场悟道细节待考",
+   "missing": "考古 / 文献考据",
+   "where": "龙场驿遗址",
+   "skills": [
+    "考古",
+    "文献考据"
+   ],
+   "accept": "悟道具体情境",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "WAR_014",
    "scene": "warring_states_shangyang_llm",
    "subject": "event:ev_warring_states_shangyang_01",
@@ -4410,6 +4426,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "ZHU_015",
+   "scene": "zhuxi",
+   "subject": "person:ZHU__p01",
+   "title": "1130-1200年",
+   "missing": "文献考据",
+   "where": "朱熹年谱",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需核对原始墓志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "SX008_M69",

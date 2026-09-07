@@ -394,7 +394,9 @@
   "bisheng_movable_type",
   "compass_navigation",
   "gunpowder_warfare",
-  "susong_llm"
+  "susong_llm",
+  "wangyangming",
+  "zhuxi"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -16163,6 +16165,155 @@
    "dims": [
     2,
     3,
+    6
+   ]
+  },
+  "wangyangming": {
+   "kind": "thought",
+   "region": "thought",
+   "province": null,
+   "title": "王阳明·心学",
+   "dossier_label": null,
+   "subtitle": "明代心即理·知行合一·致良知",
+   "primary_place": "yuyao",
+   "dossier_event": "event:ev_wangyangming_01",
+   "vocab_pack": "wangyangming",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "王阳明·心学：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "王阳明·心学：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "王阳明·心学：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "王阳明·心学：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    5,
+    6
+   ]
+  },
+  "zhuxi": {
+   "kind": "thought",
+   "region": "thought",
+   "province": null,
+   "title": "朱熹·理学",
+   "dossier_label": null,
+   "subtitle": "南宋理气论·格物致知·四书集注",
+   "primary_place": "wuyuan",
+   "dossier_event": "event:ev_zhuxi_01",
+   "vocab_pack": "zhuxi",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "朱熹·理学：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "朱熹·理学：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "朱熹·理学：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "朱熹·理学：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
     6
    ]
   }

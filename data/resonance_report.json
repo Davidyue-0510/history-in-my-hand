@@ -155,6 +155,7 @@
       "tumu",
       "wanganshi",
       "wangmang",
+      "wangyangming",
       "warring_states_shangyang_llm",
       "wei_xiaowen",
       "wencheng",
@@ -189,6 +190,7 @@
       "zheng_chenggong_taiwan_llm",
       "zhenghe",
       "zhongli",
+      "zhuxi",
       "zijincheng",
       "zuchongzhi"
     ],
@@ -3043,6 +3045,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "wangyangming",
+      "name": "wangyangming",
+      "total": 15,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 3,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 15
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_wangyangming_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "warring_states_shangyang_llm",
       "name": "warring_states_shangyang_llm",
       "total": 14,
@@ -3700,6 +3721,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:zl_jz",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "zhuxi",
+      "name": "zhuxi",
+      "total": 15,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 3,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 15
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_zhuxi_01",
       "best_resonance": 0.0
     },
     {
@@ -10075,6 +10115,99 @@
       }
     },
     {
+      "subject": "event:ev_wangyangming_01",
+      "name": "event:ev_wangyangming_01",
+      "scenes": [
+        "wangyangming"
+      ],
+      "scene_names": [
+        "wangyangming"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wangyangming_02",
+      "name": "event:ev_wangyangming_02",
+      "scenes": [
+        "wangyangming"
+      ],
+      "scene_names": [
+        "wangyangming"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wangyangming_03",
+      "name": "event:ev_wangyangming_03",
+      "scenes": [
+        "wangyangming"
+      ],
+      "scene_names": [
+        "wangyangming"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_warring_states_shangyang_01",
       "name": "event:ev_warring_states_shangyang_01",
       "scenes": [
@@ -10640,6 +10773,99 @@
       ],
       "scene_names": [
         "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhuxi_01",
+      "name": "event:ev_zhuxi_01",
+      "scenes": [
+        "zhuxi"
+      ],
+      "scene_names": [
+        "zhuxi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhuxi_02",
+      "name": "event:ev_zhuxi_02",
+      "scenes": [
+        "zhuxi"
+      ],
+      "scene_names": [
+        "zhuxi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhuxi_03",
+      "name": "event:ev_zhuxi_03",
+      "scenes": [
+        "zhuxi"
+      ],
+      "scene_names": [
+        "zhuxi"
       ],
       "total": 1,
       "gap_count": 0,

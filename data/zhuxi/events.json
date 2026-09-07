@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_zhuxi_01",
+   "subject": "event:ev_zhuxi_01",
+   "year": 1175,
+   "era": "淳熙二年",
+   "title": "鹅湖之会",
+   "kind": "其他",
+   "text": "朱陆论辩，心学理学对峙",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zhuxi_02",
+   "subject": "event:ev_zhuxi_02",
+   "year": 1194,
+   "era": "绍熙五年",
+   "title": "焕章阁侍讲",
+   "kind": "行政",
+   "text": "任侍讲，旋被劾去职",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zhuxi_03",
+   "subject": "event:ev_zhuxi_03",
+   "year": 1196,
+   "era": "庆元二年",
+   "title": "庆元党禁",
+   "kind": "其他",
+   "text": "学说被目为伪学遭禁",
+   "_source_idx": 0,
+   "_source_name": "朱熹理学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

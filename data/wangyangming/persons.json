@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "WAN__p01",
+   "name": "王守仁",
+   "role": "明代思想家、军事家",
+   "note": "字伯安，号阳明，心学集大成者",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAN__p02",
+   "name": "刘瑾",
+   "role": "明宦官",
+   "note": "正德年间权阉",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAN__p03",
+   "name": "戴铣",
+   "role": "明官员",
+   "note": "因上疏被逮",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAN__p04",
+   "name": "朱宸濠",
+   "role": "宁王",
+   "note": "发动宸濠之乱",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAN__p05",
+   "name": "王畿",
+   "role": "王门弟子",
+   "note": "衍现成派",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WAN__p06",
+   "name": "钱德洪",
+   "role": "王门弟子",
+   "note": "衍修证派",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

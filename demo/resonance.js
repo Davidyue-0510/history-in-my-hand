@@ -157,6 +157,7 @@ window.SANDBOX_RESONANCE = {
    "tumu",
    "wanganshi",
    "wangmang",
+   "wangyangming",
    "warring_states_shangyang_llm",
    "wei_xiaowen",
    "wencheng",
@@ -191,6 +192,7 @@ window.SANDBOX_RESONANCE = {
    "zheng_chenggong_taiwan_llm",
    "zhenghe",
    "zhongli",
+   "zhuxi",
    "zijincheng",
    "zuchongzhi"
   ],
@@ -3045,6 +3047,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "wangyangming",
+   "name": "wangyangming",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 3,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_wangyangming_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "warring_states_shangyang_llm",
    "name": "warring_states_shangyang_llm",
    "total": 14,
@@ -3702,6 +3723,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:zl_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "zhuxi",
+   "name": "zhuxi",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 3,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_zhuxi_01",
    "best_resonance": 0.0
   },
   {

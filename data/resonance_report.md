@@ -158,6 +158,7 @@
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
+| wangyangming | 15 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | warring_states_shangyang_llm | 14 | 2 | **0.000** | event:ev_warring_states_shangyang_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | wei_xiaowen | 2 | 0 | **0.000** | —（0.000） | scholarship 2 |
 | wencheng | 11 | 2 | **0.000** | event:wc_641（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
@@ -192,6 +193,7 @@
 | zheng_chenggong_taiwan_llm | 15 | 4 | **0.000** | event:ev_zheng_chenggong_taiwan_llm_01（0.000） | gap 4 / inference 1 / record 9 / scholarship 1 |
 | zhenghe | 13 | 2 | **0.000** | event:zh_1405（0.000） | gap 1 / inference 1 / record 9 / scholarship 2 |
 | zhongli | 13 | 3 | **0.000** | event:zl_jz（0.000） | gap 2 / inference 1 / record 7 / scholarship 3 |
+| zhuxi | 15 | 3 | **0.000** | event:ev_zhuxi_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | zijincheng | 11 | 2 | **0.000** | event:zj_1406（0.000） | gap 2 / inference 2 / record 5 / scholarship 2 |
 | zuchongzhi | 12 | 2 | **0.000** | event:zc_463（0.000） | gap 2 / inference 2 / record 6 / scholarship 2 |
 
@@ -429,6 +431,9 @@
 | event:ev_three_campaigns_01 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_02 | three_campaigns | **0.000** | 0/3 | 0.03 | 0.00 | 36 | 0 / 0 / 0 / 0 |
 | event:ev_three_campaigns_03 | three_campaigns | **0.000** | 0/3 | 0.33 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_wangyangming_01 | wangyangming | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_wangyangming_02 | wangyangming | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_wangyangming_03 | wangyangming | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_warring_states_shangyang_01 | warring_states_shangyang_llm | **0.000** | 0/3 | 0.33 | 0.08 | 12 | 0 / 0 / 0 / 0 |
 | event:ev_warring_states_shangyang_02 | warring_states_shangyang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_wei_mie_shu | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -448,6 +453,9 @@
 | event:ev_zheng_chenggong_taiwan_llm_03 | zheng_chenggong_taiwan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_zheng_chenggong_taiwan_llm_04 | zheng_chenggong_taiwan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_zhuge_beifa | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_zhuxi_01 | zhuxi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_zhuxi_02 | zhuxi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_zhuxi_03 | zhuxi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:fi_compass | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:fi_gun | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:fi_paper | four_inv | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |

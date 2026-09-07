@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "wuyuan",
+      "name": "婺源",
+      "type": "city",
+      "modern": "今江西上饶婺源",
+      "note": "朱熹祖籍",
+      "_source_idx": 0,
+      "_source_name": "朱熹理学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.85,
+      "lat": 29.26,
+      "geo_unresolved": false
+    },
+    {
+      "id": "elu",
+      "name": "鹅湖",
+      "type": "region",
+      "modern": "今江西铅山",
+      "note": "朱陆之会所在地",
+      "_source_idx": 0,
+      "_source_name": "朱熹理学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.57,
+      "lat": 28.15,
+      "geo_unresolved": false
+    },
+    {
+      "id": "bailudong",
+      "name": "白鹿洞书院",
+      "type": "yi",
+      "modern": "今江西九江庐山",
+      "note": "朱熹重建并讲学",
+      "_source_idx": 0,
+      "_source_name": "朱熹理学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 115.97,
+      "lat": 29.55,
+      "geo_unresolved": false
+    },
+    {
+      "id": "jianyang",
+      "name": "建阳",
+      "type": "city",
+      "modern": "今福建南平建阳",
+      "note": "朱熹侨居地",
+      "_source_idx": 0,
+      "_source_name": "朱熹理学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 118.11,
+      "lat": 27.34,
+      "geo_unresolved": false
+    },
+    {
+      "id": "yuelu",
+      "name": "岳麓书院",
+      "type": "yi",
+      "modern": "今湖南长沙",
+      "note": "朱熹讲学地",
+      "_source_idx": 0,
+      "_source_name": "朱熹理学(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 112.94,
+      "lat": 28.17,
+      "geo_unresolved": false
+    }
+  ]
+}
