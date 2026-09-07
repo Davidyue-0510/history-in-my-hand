@@ -22076,30 +22076,32 @@ window.SANDBOX_DATA = {
    "dossier_label": "张居正改革",
    "subtitle": "1573—1582 · 明万历",
    "kind": "reform",
-   "region": "reform",
+   "region": "huabei",
    "page": "county.html?scene=zhangjuzheng",
    "primary_place": "beijing",
    "vocab_pack": "inline:zhangjuzheng",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
     4,
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "ming",
    "scale_tier": "strategic",
    "counts": {
     "src": 3,
-    "place": 2,
+    "place": 4,
     "person": 2,
-    "assert": 15,
+    "assert": 18,
     "conflict": 0,
     "gap": 1,
     "record": 11,
     "scholarship": 2,
-    "inference": 1
+    "inference": 4
    }
   },
   "wuxu": {

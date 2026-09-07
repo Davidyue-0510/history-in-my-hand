@@ -186,7 +186,7 @@
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
 | yuan_xingsheng_llm | 10 | 2 | **0.000** | event:ev_yuan_xingsheng_llm_01（0.000） | gap 1 / inference 1 / record 7 / scholarship 1 |
 | zhangheng | 14 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 9 / scholarship 4 |
-| zhangjuzheng | 15 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 1 / record 11 / scholarship 2 |
+| zhangjuzheng | 18 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 4 / record 11 / scholarship 2 |
 | zhangqian | 15 | 2 | **0.000** | event:zq_126（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | zhangzai_guanxue | 9 | 1 | **0.000** | event:hengqu_jiangxue（0.000） | scholarship 9 |
 | zhaofen | 13 | 2 | **0.000** | event:zf_33（0.000） | gap 1 / record 10 / scholarship 2 |
@@ -711,8 +711,8 @@
 | event:zhizao_geming | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zj_1406 | zijincheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:zj_1420 | zijincheng | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
-| event:zj_1573 | zhangjuzheng | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
-| event:zj_1581 | zhangjuzheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:zj_1573 | zhangjuzheng | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:zj_1581 | zhangjuzheng | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:zl_jz | zhongli | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zl_wei | zhongli | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
 | event:zl_wei2 | zhongli | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

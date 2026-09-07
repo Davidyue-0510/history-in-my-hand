@@ -7983,7 +7983,7 @@
   },
   "zhangjuzheng": {
    "kind": "reform",
-   "region": "reform",
+   "region": "huabei",
    "title": "张居正改革",
    "dossier_label": "张居正改革",
    "subtitle": "1573—1582 · 明万历",
@@ -8001,12 +8001,14 @@
     "person:wanli": "明神宗"
    },
    "dims": [
+    1,
+    2,
     3,
     4,
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "ming",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {
@@ -8056,7 +8058,11 @@
      "note": "张居正改革：地缘战略——任首辅"
     }
    },
-   "province": null
+   "province": [
+    "beijing",
+    "hubei",
+    "jiangsu"
+   ]
   },
   "wuxu": {
    "kind": "reform",

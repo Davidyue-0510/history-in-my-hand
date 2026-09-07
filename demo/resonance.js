@@ -3598,15 +3598,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "zhangjuzheng",
    "name": "zhangjuzheng",
-   "total": 15,
+   "total": 18,
    "layers": {
     "scholarship": 2,
     "record": 11,
     "gap": 1,
-    "inference": 1
+    "inference": 4
    },
    "party_counts": {
-    "综合史料": 13,
+    "综合史料": 16,
     "内阁文献": 1,
     "私家笔记": 1
    },

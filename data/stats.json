@@ -2,7 +2,7 @@
   "scenes_total": 196,
   "historical": 187,
   "fictional": 9,
-  "assertions_total": 3069,
+  "assertions_total": 3072,
   "sources_total": 174,
   "factions_total": 9,
   "vocab_packs": [
@@ -819,7 +819,7 @@
       "id": "zhangjuzheng",
       "title": "张居正改革",
       "kind": "reform",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {
         "neige": 1,
         "qingliu": 1

@@ -1,0 +1,59 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "zhangjuzheng",
+ "_scenario_type": "economic",
+ "_years": [
+  1573,
+  1581
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1579,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.69 / 史实 0.84）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.843,
+    "new_to": 0.686,
+    "cum": -0.157
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1580,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.71 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.892,
+    "new_to": 0.713,
+    "cum": -0.179
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1581,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.74 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.941,
+    "new_to": 0.739,
+    "cum": -0.202
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1581,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.74 / 史实 0.94（偏离 -0.20）",
+   "evidence": {
+    "cum": -0.202,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}
