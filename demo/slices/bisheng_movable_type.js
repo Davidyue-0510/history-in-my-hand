@@ -26,7 +26,6 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
   "dims": [
    1,
    2,
-   3,
    4,
    5,
    6
@@ -86,496 +85,600 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
    "henan",
    "hubei"
   ],
+  "vocab_pack": "inline:bisheng_movable_type",
   "page": "county.html?scene=bisheng_movable_type",
   "key": "bisheng_movable_type",
   "scene_id": "bisheng_movable_type",
-  "vocab_pack": "inline:bisheng_movable_type",
   "terrain_grid": "china_coarse"
  },
  "sources": [
   {
-   "id": "src_mengxi",
-   "title": "沈括《梦溪笔谈》卷十八",
-   "label": "《梦溪笔谈》卷十八",
-   "party": "宋方",
-   "availability": "free",
-   "bias_note": "沈括（北宋）元祐年间著录同时代布衣毕昇活字之法，属亲历/近时记载，记工艺细节最详；惟毕昇生平仅此一见。",
-   "distance_label": "北宋笔记（宋方立场，工艺著录详尽）",
-   "type": "笔记",
-   "citation": "沈括《梦溪笔谈》卷十八《技艺》",
-   "url": "",
-   "note": "沈括（北宋）元祐年间著录同时代布衣毕昇活字之法，属亲历/近时记载，记工艺细节最详。"
-  },
-  {
-   "id": "src_panjixing_print",
-   "title": "潘吉星《中国印刷史》",
-   "label": "潘吉星《中国印刷史》",
-   "party": "宋·学界",
-   "availability": "not_free",
-   "bias_note": "综合考订毕昇为北宋杭州一带布衣、所创为泥活字；并考订毕昇籍贯为蕲州蕲水（今湖北英山），1979 年墓碑出土佐证；论活字较雕版省工省料、促知识传播。",
-   "distance_label": "现代专著（学界综合考订）",
-   "type": "专著",
-   "citation": "潘吉星《中国印刷史》（上海人民出版社）",
-   "url": "",
-   "note": "综合考订毕昇为北宋杭州一带布衣、所创为泥活字；并考毕昇籍贯为蕲州蕲水（今英山）。"
+   "id": "bisheng_type_llm",
+   "title": "毕昇活字印刷(SAMPLE)",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "现代综合",
+   "period": "宋",
+   "note": ""
   }
  ],
  "places": [
   {
    "id": "hangzhou",
-   "name": "杭州（毕昇活动地·沈括著录地）",
-   "lon": 120.2,
-   "lat": 30.3,
-   "province": "zhejiang",
-   "role": "毕昇布衣活动地；沈括记活字之法于此一带",
-   "elev": 55
+   "name": "杭州",
+   "type": "city",
+   "modern": "今中国浙江杭州",
+   "note": "沈括著书地，活字法流传地",
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 120.15,
+   "lat": 30.27,
+   "geo_note": "浙党核心，今浙江杭州",
+   "elev": 98
   },
   {
-   "id": "bianjing",
-   "name": "汴京（开封·北宋印书中心）",
-   "lon": 114.3,
+   "id": "kaifeng",
+   "name": "开封",
+   "type": "city",
+   "modern": "今河南开封",
+   "note": "北宋国子监刻印中心",
+   "lon": 114.34,
    "lat": 34.8,
-   "province": "henan",
-   "role": "北宋国子监/印书业中心，活字与雕版传播节点",
-   "elev": 76
-  },
-  {
-   "id": "yingshan",
-   "name": "英山（毕昇故里·湖北）",
-   "lon": 115.6,
-   "lat": 29.7,
-   "province": "hubei",
-   "role": "毕昇籍贯（蕲州蕲水）；1979 年出土毕昇墓碑佐证",
-   "elev": 206
+   "elev": 75
   }
  ],
  "persons": [
   {
-   "id": "bisheng",
+   "id": "BIS__p01",
    "name": "毕昇",
-   "alias": "布衣·活字印刷发明者",
-   "era": "北宋",
-   "role": "布衣工匠（杭州一带）",
-   "note": "庆历中（1041—1048）发明胶泥活字印刷，以胶泥刻字、火烧令坚、排版以松脂蜡。沈括《梦溪笔谈》卷十八著录其事。",
-   "primary_source": "《梦溪笔谈》卷十八",
-   "influence": 3
+   "role": "布衣发明家",
+   "note": "北宋庆历年间发明胶泥活字印刷术",
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 0
+  },
+  {
+   "id": "BIS__p02",
+   "name": "沈括",
+   "role": "北宋科学家",
+   "note": "《梦溪笔谈》记载毕昇泥活字法",
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 0
   }
  ],
  "assertions": [
   {
-   "id": "a1",
-   "subject": "person:bisheng",
-   "predicate": "invented",
-   "value_text": "北宋庆历中（1041—1048）布衣毕昇发明胶泥活字印刷，以胶泥刻字、火烧令坚，每字为一印",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "庆历中，有布衣毕昇，又为活板。其法用胶泥刻字，薄如钱唇，每字为一印，火烧令坚。",
-   "quote_status": "paraphrase_unverified",
-   "confidence": 0.95,
+   "id": "BIS_001",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "发明时间",
+   "value_text": "庆历年间（1041-1048）",
    "time": {
-    "start": 1041,
-    "end": 1048,
-    "era_text": "北宋庆历",
-    "gregorian_year": 1045
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
    "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "庆历中，有布衣毕昇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.45,
+   "scale": "province",
+   "note": "[auto] 补层 inference",
    "dims": [
-    1,
-    2,
-    3,
-    4,
-    5,
     6
    ],
-   "dim_source": "declared",
-   "_party": "宋方",
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "庆历中，有布衣毕昇",
+   "dim_source": "fallback",
+   "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "a2",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "material",
-   "value_text": "胶泥活字：以胶泥（黏土）刻字，薄如钱唇，每字一印，火烧令坚，可重复使用",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "用胶泥刻字，薄如钱唇，每字为一印，火烧令坚。",
+   "id": "BIS_002",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "发明者身份",
+   "value_text": "毕昇为布衣，无官职",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "昇死，其印为予群从所得",
    "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    4
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "昇死，其印为予群从所得",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_003",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "技术特征",
+   "value_text": "胶泥刻字，火烧令坚",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "用胶泥刻字，薄如钱唇",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
    "confidence": 0.95,
-   "time": {
-    "start": 1041,
-    "end": 1048,
-    "era_text": "北宋庆历",
-    "gregorian_year": 1045
-   },
-   "place": "hangzhou",
-   "dims": [
-    2,
-    3
-   ],
-   "dim_source": "declared",
-   "_party": "宋方",
-   "_faction": null
-  },
-  {
-   "id": "a3",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "process",
-   "value_text": "排版：以一铁范置铁板上，密布字印，持就火炀之，药（松脂、蜡、纸灰）熔则字平如砥",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "以一铁范置铁板上，乃密布字印……持就火炀之，药稍熔，则以一平板按其面，则字平如砥。",
-   "quote_status": "paraphrase_unverified",
-   "confidence": 0.94,
-   "time": {
-    "start": 1041,
-    "end": 1048,
-    "era_text": "北宋庆历",
-    "gregorian_year": 1045
-   },
-   "place": "hangzhou",
-   "dims": [
-    2,
-    3
-   ],
-   "dim_source": "declared",
-   "_party": "宋方",
-   "_faction": null
-  },
-  {
-   "id": "a4",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "process",
-   "value_text": "两板更互印刷：常作二铁板，一板印刷、一板已自布字，瞬息可就，印数十百千本极为神速",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "常作二铁板，一板印刷，一板已自布字，此印者才毕，则第二板已具，更互用之，瞬息可就。",
-   "quote_status": "paraphrase_unverified",
-   "confidence": 0.94,
-   "time": {
-    "start": 1041,
-    "end": 1048,
-    "era_text": "北宋庆历",
-    "gregorian_year": 1045
-   },
-   "place": "hangzhou",
-   "dims": [
-    2,
-    3
-   ],
-   "dim_source": "declared",
-   "_party": "宋方",
-   "_faction": null
-  },
-  {
-   "id": "a5",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "detail",
-   "value_text": "奇字旋刻：有奇字素无备者，旋刻之，以草火烧，瞬息可成；不以木为之（木理疏密沾水高下不平）",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "有奇字素无备者，旋刻之，以草火烧，瞬息可成。不以木为之者，木理有疏密，沾水则高下不平。",
-   "quote_status": "paraphrase_unverified",
-   "confidence": 0.93,
-   "time": {
-    "start": 1041,
-    "end": 1048,
-    "era_text": "北宋庆历",
-    "gregorian_year": 1045
-   },
-   "place": "hangzhou",
+   "scale": "province",
+   "note": "",
    "dims": [
     2
    ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "用胶泥刻字，薄如钱唇",
    "dim_source": "declared",
-   "_party": "宋方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "a6",
-   "subject": "person:bisheng",
-   "predicate": "death",
-   "value_text": "毕昇死后，其字印为沈括群从所得，至今（沈括著录时）保藏",
-   "source": "src_mengxi",
-   "layer": "record",
-   "quote": "昇死，其印为予群从所得，至今保藏。",
-   "quote_status": "paraphrase_unverified",
-   "confidence": 0.92,
+   "id": "BIS_004",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "排版方法",
+   "value_text": "铁范置铁板，密布字印",
    "time": {
-    "start": 1048,
-    "end": 1088,
-    "era_text": "北宋",
-    "gregorian_year": 1065
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
    "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "先设一铁板，其上以松脂蜡和纸灰",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.95,
+   "scale": "province",
+   "note": "",
    "dims": [
-    1,
+    2
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "先设一铁板，其上以松脂蜡和纸灰",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_005",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "印刷效率",
+   "value_text": "印速极快，常作二板更替",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "此印者才毕，则第二板已具",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2,
     6
    ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "此印者才毕，则第二板已具",
    "dim_source": "declared",
-   "_party": "宋方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "a7",
-   "subject": "person:bisheng",
-   "predicate": "identity",
-   "value_text": "潘吉星考订毕昇为北宋杭州一带布衣工匠，所创为泥活字（非木活字），早于王祯木活字二百余年",
-   "source": "src_panjixing_print",
-   "layer": "scholarship",
-   "confidence": 0.9,
+   "id": "BIS_006",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "字印复用",
+   "value_text": "活字可反复取用",
    "time": {
-    "start": 1041,
-    "end": 1088,
-    "era_text": "北宋",
-    "gregorian_year": 1045
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
    "place": "hangzhou",
-   "dims": [
-    2,
-    5
-   ],
-   "dim_source": "declared",
-   "_party": "宋·学界",
-   "_faction": null
-  },
-  {
-   "id": "a8",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "impact",
-   "value_text": "活字较雕版省工省料，印刷效率大增；后经西夏/回鹘泥活字、王祯木活字（1297—1299）、铜活字扩散",
-   "source": "src_panjixing_print",
-   "layer": "scholarship",
-   "confidence": 0.88,
-   "time": {
-    "start": 1045,
-    "end": 1300,
-    "era_text": "北宋—元",
-    "gregorian_year": 1150
-   },
-   "place": "bianjing",
-   "dims": [
-    2,
-    3,
-    4
-   ],
-   "dim_source": "declared",
-   "_party": "宋·学界",
-   "_faction": null
-  },
-  {
-   "id": "a9",
-   "subject": "event:mengxi_chengshu",
-   "predicate": "date",
-   "value_text": "沈括《梦溪笔谈》成书于元祐年间（约1086—1093），退居镇江梦溪时所撰；所记庆历事去其未远，属同时代亲历著录",
-   "source": "src_mengxi",
-   "layer": "scholarship",
+   "source": "bisheng_type_llm",
+   "quote": "印讫，再火令药熔，以手拂之",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
    "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "印讫，再火令药熔，以手拂之",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_007",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "与雕版比较",
+   "value_text": "省工省料，灵活高效",
    "time": {
-    "start": 1086,
-    "end": 1093,
-    "era_text": "北宋元祐",
-    "gregorian_year": 1088
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
    "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "若止印三二本，未为简易",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.85,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2,
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "若止印三二本，未为简易",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_008",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "历史影响",
+   "value_text": "启后世木活字、铜活字",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "其法未及大行，然启后世",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "后世影响为学者推断",
    "dims": [
     5,
     6
    ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "其法未及大行，然启后世",
    "dim_source": "declared",
-   "_party": "宋方",
+   "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "a10",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "impact",
-   "value_text": "活字印刷与造纸、雕版同向，奠定知识复制与传播基底层；技术经丝路远播朝鲜、日本，并间接启发现代金属活字（学界对古腾堡之关联有持续讨论）",
-   "source": "src_panjixing_print",
-   "layer": "scholarship",
-   "confidence": 0.86,
+   "id": "BIS_009",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "与谷登堡比较",
+   "value_text": "早于西方约四百年",
    "time": {
-    "start": 1045,
-    "end": 1450,
-    "era_text": "北宋—明",
-    "gregorian_year": 1200
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
-   "place": "bianjing",
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "较谷登堡金属活字早约四百年",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "比较研究，非原文",
+   "dims": [
+    5,
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "较谷登堡金属活字早约四百年",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_010",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "传播范围",
+   "value_text": "未大行，仅沈括记载",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "其法未及大行",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
    "dims": [
     2,
-    4,
-    5
+    6
    ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "其法未及大行",
    "dim_source": "declared",
-   "_party": "宋·学界",
+   "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "a11",
-   "subject": "geo:yingshan",
-   "predicate": "evidence",
-   "value_text": "毕昇故里据潘吉星考为蕲州蕲水（今湖北英山）；1979 年英山草盘地出土毕昇墓碑实物佐证其籍贯",
-   "source": "src_panjixing_print",
-   "layer": "scholarship",
-   "confidence": 0.85,
+   "id": "BIS_011",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "技术细节",
+   "value_text": "每字一印，一字数印",
    "time": {
-    "start": 1979,
-    "end": 1979,
-    "era_text": "现代考订",
-    "gregorian_year": 1979
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
    },
-   "place": "yingshan",
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "每字为一印，火烧令坚",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.95,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "每字为一印，火烧令坚",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_012",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "材料配方",
+   "value_text": "松脂蜡纸灰敷药",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "以松脂、蜡和纸灰之类",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.95,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "以松脂、蜡和纸灰之类",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_013",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "遗物去向",
+   "value_text": "沈括群从得毕昇印",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "昇死，其印为予群从所得",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2,
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "昇死，其印为予群从所得",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "BIS_014",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "predicate": "考古证据",
+   "value_text": "无实物出土，仅文献记载",
+   "time": {
+    "era_text": "庆历年间",
+    "start": "1041-01-01",
+    "end": "1041-12-31",
+    "gregorian_year": 1041
+   },
+   "place": "hangzhou",
+   "source": "bisheng_type_llm",
+   "quote": "其法未及大行",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0,
+   "scale": "province",
+   "note": "缺乏考古实证",
    "dims": [
     1,
-    5
+    6
    ],
+   "lead": {
+    "where": "杭州或毕昇活动地",
+    "skills": [
+     "考古发掘",
+     "文献考据"
+    ],
+    "accept": "发现泥活字实物或同时代印刷品"
+   },
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "其法未及大行",
    "dim_source": "declared",
-   "_party": "宋·学界",
+   "_party": "后世官修",
    "_faction": null
   }
  ],
- "conflicts": [
-  {
-   "id": "cf:institution:bisheng_huozi|process",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "process",
-   "kind": "record_vs_record",
-   "count": 2,
-   "spread": null,
-   "assertion_ids": [
-    "a3",
-    "a4"
-   ]
-  },
-  {
-   "id": "cf:institution:bisheng_huozi|impact",
-   "subject": "institution:bisheng_huozi",
-   "predicate": "impact",
-   "kind": "scholarly_divergence",
-   "count": 2,
-   "spread": null,
-   "assertion_ids": [
-    "a8",
-    "a10"
-   ]
-  }
- ],
+ "conflicts": [],
  "crossConflicts": [],
- "gaps": [],
+ "gaps": [
+  "BIS_014"
+ ],
  "events": [
   {
-   "id": "evt_bisheng_faming",
-   "title": "毕昇发明胶泥活字印刷",
-   "era": "北宋庆历",
-   "year": 1045,
-   "kind": "institution",
-   "subject": "person:bisheng",
-   "text": "庆历中（1041—1048），布衣毕昇以胶泥刻字、火烧令坚、每字一印，创胶泥活字印刷；两板更互，瞬息可就。"
-  },
-  {
-   "id": "evt_mengxi_jilu",
-   "title": "沈括《梦溪笔谈》著录活字",
-   "era": "北宋元祐",
-   "year": 1088,
-   "kind": "institution",
-   "subject": "event:mengxi_chengshu",
-   "text": "约1086—1093 年，沈括退居镇江梦溪，撰《梦溪笔谈》卷十八记毕昇活字之法；去庆历事未远，属同时代亲历著录。"
-  },
-  {
-   "id": "evt_bisheng_si",
-   "title": "毕昇卒·字印归沈括群从",
-   "era": "北宋",
-   "year": 1065,
-   "kind": "event",
-   "subject": "person:bisheng",
-   "text": "毕昇卒后，其胶泥字印为沈括群从所得，沈括著录时仍保藏。"
-  },
-  {
-   "id": "evt_yingshan_beishi",
-   "title": "英山毕昇墓碑出土",
-   "era": "现代考订",
-   "year": 1979,
-   "kind": "event",
-   "subject": "geo:yingshan",
-   "text": "1979 年湖北英山草盘地出土毕昇墓碑，潘吉星据以考订毕昇籍贯为蕲州蕲水（今英山）。"
+   "id": "ev_bisheng_movable_type_01",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "year": 1041,
+   "era": "庆历年间",
+   "title": "毕昇发明泥活字",
+   "kind": "其他",
+   "text": "毕昇创制胶泥活字，印刷术革新",
+   "_source_idx": 0,
+   "_source_name": "毕昇活字印刷(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
   }
  ],
  "edges": [],
  "control": [
   {
    "place_id": "hangzhou",
-   "party": "综述考订",
-   "start": 1045,
-   "end": 1979,
-   "timeline": "main"
-  },
-  {
-   "place_id": "bianjing",
-   "party": "综述考订",
-   "start": 1045,
-   "end": 1979,
-   "timeline": "main"
-  },
-  {
-   "place_id": "yingshan",
-   "party": "综述考订",
-   "start": 1045,
-   "end": 1979,
+   "party": "后世官修",
+   "start": 1041,
+   "end": 1041,
    "timeline": "main"
   }
  ],
  "control_seats": [
   {
    "place_id": "hangzhou",
-   "name": "杭州（毕昇活动地·沈括著录地）",
-   "lon": 120.2,
-   "lat": 30.3,
-   "region": "song"
-  },
-  {
-   "place_id": "bianjing",
-   "name": "汴京（开封·北宋印书中心）",
-   "lon": 114.3,
-   "lat": 34.8,
-   "region": "song"
-  },
-  {
-   "place_id": "yingshan",
-   "name": "英山（毕昇故里·湖北）",
-   "lon": 115.6,
-   "lat": 29.7,
+   "name": "杭州",
+   "lon": 120.15,
+   "lat": 30.27,
    "region": "song"
   }
  ],
  "control_years": [
-  1045,
-  1979
+  1041,
+  1041
  ],
  "vocab": {
-  "layers": [
-   "record",
-   "scholarship",
-   "inference",
-   "gap"
-  ],
-  "quote_status": [
-   "verbatim",
-   "paraphrase_unverified",
-   "generated"
-  ],
+  "layers": {
+   "record": "原始史料",
+   "scholarship": "学界研究",
+   "inference": "合理推断",
+   "gap": "证据缺口"
+  },
+  "quote_status": {
+   "verbatim": "直接引文",
+   "paraphrase_unverified": "转述待核",
+   "generated": "生成"
+  },
   "parties": [
-   "宋方",
-   "宋·学界",
-   "综述考订"
+   "后世官修"
   ],
   "party_bucket": {
-   "宋方": "宋方",
-   "宋·学界": "综述考订",
-   "综述考订": "综述考订"
+   "后世官修": "后世官修"
   },
   "party_colors": {
-   "宋方": "#8B0000",
-   "宋·学界": "#3a5f7d",
-   "综述考订": "#7a5a2e"
+   "后世官修": "#A0473A"
+  },
+  "factions": {
+   "f_后世官修": {
+    "name": "后世官修",
+    "macro_party": "后世官修",
+    "note": "auto"
+   }
+  },
+  "faction_colors": {
+   "f_后世官修": "#A0473A"
   }
  },
  "basemap": {
@@ -586,12 +689,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        121.2,
-        30.303
-       ],
-       [
-        121.159,
-        30.302
+        121.15,
+        30.297
        ],
        [
         120.904,
@@ -650,12 +749,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         30.558
        ],
        [
-        121.2,
-        30.65
+        121.15,
+        30.627
        ],
        [
-        121.2,
-        31.631
+        121.15,
+        31.662
        ],
        [
         121.055,
@@ -726,12 +825,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         31.842
        ],
        [
-        121.2,
-        31.851
+        121.15,
+        31.843
        ],
        [
-        121.2,
-        32.491
+        121.15,
+        32.509
        ],
        [
         120.99,
@@ -874,11 +973,11 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        113.3,
-        28.7
+        113.34,
+        29.27
        ],
        [
-        113.3,
+        113.34,
         35.8
        ],
        [
@@ -1010,12 +1109,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         32.567
        ],
        [
-        121.2,
-        32.491
+        121.15,
+        32.509
        ],
        [
-        121.2,
-        31.851
+        121.15,
+        31.843
        ],
        [
         121.146,
@@ -1086,12 +1185,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         31.719
        ],
        [
-        121.2,
-        31.631
+        121.15,
+        31.662
        ],
        [
-        121.2,
-        30.65
+        121.15,
+        30.627
        ],
        [
         120.998,
@@ -1150,20 +1249,16 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         30.161
        ],
        [
-        121.159,
-        30.302
+        121.15,
+        30.297
        ],
        [
-        121.2,
-        30.303
+        121.15,
+        29.27
        ],
        [
-        121.2,
-        28.7
-       ],
-       [
-        113.3,
-        28.7
+        113.34,
+        29.27
        ]
       ]
      ]
@@ -1179,20 +1274,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         113.3,
+         113.34,
          35.8
         ],
         [
-         113.3,
-         35.429
-        ],
-        [
-         113.304,
-         35.427
-        ],
-        [
-         113.312,
-         35.481
+         113.34,
+         35.471
         ],
         [
          113.348,
@@ -1251,7 +1338,7 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          35.8
         ],
         [
-         113.3,
+         113.34,
          35.8
         ]
        ]
@@ -1319,20 +1406,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          30.779
         ],
         [
-         121.175,
-         30.772
+         121.15,
+         30.775
         ],
         [
-         121.2,
-         30.78
-        ],
-        [
-         121.2,
-         31.466
-        ],
-        [
-         121.175,
-         31.449
+         121.15,
+         31.404
         ],
         [
          121.143,
@@ -1391,8 +1470,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         121.2,
-         31.835
+         121.15,
+         31.788
         ],
         [
          121.119,
@@ -1403,12 +1482,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          31.754
         ],
         [
-         121.2,
-         31.702
+         121.15,
+         31.75
         ],
         [
-         121.2,
-         31.835
+         121.15,
+         31.788
         ]
        ]
       ]
@@ -2567,16 +2646,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          31.392
         ],
         [
-         121.175,
-         31.449
+         121.15,
+         31.404
         ],
         [
-         121.2,
-         31.466
-        ],
-        [
-         121.2,
-         31.702
+         121.15,
+         31.75
         ],
         [
          121.145,
@@ -2587,16 +2662,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          31.759
         ],
         [
-         121.2,
-         31.835
+         121.15,
+         31.788
         ],
         [
-         121.2,
-         32.511
-        ],
-        [
-         121.153,
-         32.529
+         121.15,
+         32.533
         ],
         [
          121.122,
@@ -3115,16 +3186,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         121.2,
-         28.7
+         121.15,
+         29.27
         ],
         [
-         121.2,
-         30.423
-        ],
-        [
-         121.183,
-         30.434
+         121.15,
+         30.465
         ],
         [
          121.093,
@@ -3139,20 +3206,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          30.6
         ],
         [
-         121.189,
-         30.633
+         121.15,
+         30.601
         ],
         [
-         121.2,
-         30.636
-        ],
-        [
-         121.2,
-         30.78
-        ],
-        [
-         121.175,
-         30.772
+         121.15,
+         30.775
         ],
         [
          121.123,
@@ -3639,84 +3698,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          29.291
         ],
         [
-         118.074,
-         29.217
+         118.077,
+         29.27
         ],
         [
-         118.042,
-         29.21
-        ],
-        [
-         118.028,
-         29.168
-        ],
-        [
-         118.045,
-         29.149
-        ],
-        [
-         118.038,
-         29.102
-        ],
-        [
-         118.076,
-         29.075
-        ],
-        [
-         118.067,
-         29.054
-        ],
-        [
-         118.098,
-         28.999
-        ],
-        [
-         118.115,
-         29.01
-        ],
-        [
-         118.115,
-         29.01
-        ],
-        [
-         118.134,
-         28.984
-        ],
-        [
-         118.165,
-         28.987
-        ],
-        [
-         118.228,
-         28.942
-        ],
-        [
-         118.196,
-         28.904
-        ],
-        [
-         118.27,
-         28.919
-        ],
-        [
-         118.3,
-         28.826
-        ],
-        [
-         118.364,
-         28.813
-        ],
-        [
-         118.403,
-         28.703
-        ],
-        [
-         118.406,
-         28.7
-        ],
-        [
-         121.2,
-         28.7
+         121.15,
+         29.27
         ]
        ]
       ]
@@ -6675,164 +6662,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          29.344
         ],
         [
-         114.252,
-         29.235
+         114.254,
+         29.27
         ],
         [
-         114.17,
-         29.217
-        ],
-        [
-         114.063,
-         29.205
-        ],
-        [
-         114.035,
-         29.152
-        ],
-        [
-         113.987,
-         29.126
-        ],
-        [
-         113.952,
-         29.093
-        ],
-        [
-         113.942,
-         29.047
-        ],
-        [
-         113.962,
-         28.999
-        ],
-        [
-         113.955,
-         28.979
-        ],
-        [
-         113.974,
-         28.938
-        ],
-        [
-         114.009,
-         28.955
-        ],
-        [
-         114.005,
-         28.918
-        ],
-        [
-         114.028,
-         28.891
-        ],
-        [
-         114.06,
-         28.903
-        ],
-        [
-         114.056,
-         28.872
-        ],
-        [
-         114.077,
-         28.834
-        ],
-        [
-         114.125,
-         28.843
-        ],
-        [
-         114.154,
-         28.829
-        ],
-        [
-         114.138,
-         28.78
-        ],
-        [
-         114.157,
-         28.762
-        ],
-        [
-         114.142,
-         28.7
-        ],
-        [
-         118.406,
-         28.7
-        ],
-        [
-         118.403,
-         28.703
-        ],
-        [
-         118.364,
-         28.813
-        ],
-        [
-         118.3,
-         28.826
-        ],
-        [
-         118.27,
-         28.919
-        ],
-        [
-         118.196,
-         28.904
-        ],
-        [
-         118.228,
-         28.942
-        ],
-        [
-         118.165,
-         28.987
-        ],
-        [
-         118.134,
-         28.984
-        ],
-        [
-         118.115,
-         29.01
-        ],
-        [
-         118.115,
-         29.01
-        ],
-        [
-         118.098,
-         28.999
-        ],
-        [
-         118.067,
-         29.054
-        ],
-        [
-         118.076,
-         29.075
-        ],
-        [
-         118.038,
-         29.102
-        ],
-        [
-         118.045,
-         29.149
-        ],
-        [
-         118.028,
-         29.168
-        ],
-        [
-         118.042,
-         29.21
-        ],
-        [
-         118.074,
-         29.217
+         118.077,
+         29.27
         ],
         [
          118.078,
@@ -7715,16 +7550,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         113.3,
-         32.361
-        ],
-        [
-         113.334,
-         32.336
-        ],
-        [
-         113.318,
-         32.327
+         113.34,
+         32.307
         ],
         [
          113.354,
@@ -9011,20 +8838,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          35.468
         ],
         [
-         113.312,
-         35.481
+         113.34,
+         35.471
         ],
         [
-         113.304,
-         35.427
-        ],
-        [
-         113.3,
-         35.429
-        ],
-        [
-         113.3,
-         32.361
+         113.34,
+         32.307
         ]
        ]
       ],
@@ -9063,8 +8882,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         113.3,
-         29.619
+         113.34,
+         29.663
         ],
         [
          113.378,
@@ -9147,92 +8966,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          29.316
         ],
         [
-         113.61,
-         29.251
+         113.616,
+         29.27
         ],
         [
-         113.652,
-         29.226
-        ],
-        [
-         113.693,
-         29.226
-        ],
-        [
-         113.692,
-         29.197
-        ],
-        [
-         113.663,
-         29.169
-        ],
-        [
-         113.691,
-         29.115
-        ],
-        [
-         113.696,
-         29.077
-        ],
-        [
-         113.723,
-         29.105
-        ],
-        [
-         113.75,
-         29.061
-        ],
-        [
-         113.776,
-         29.095
-        ],
-        [
-         113.816,
-         29.105
-        ],
-        [
-         113.853,
-         29.059
-        ],
-        [
-         113.882,
-         29.065
-        ],
-        [
-         113.877,
-         29.038
-        ],
-        [
-         113.898,
-         29.029
-        ],
-        [
-         113.942,
-         29.047
-        ],
-        [
-         113.952,
-         29.093
-        ],
-        [
-         113.987,
-         29.126
-        ],
-        [
-         114.035,
-         29.152
-        ],
-        [
-         114.063,
-         29.205
-        ],
-        [
-         114.17,
-         29.217
-        ],
-        [
-         114.252,
-         29.235
+         114.254,
+         29.27
         ],
         [
          114.259,
@@ -9955,20 +9694,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          32.295
         ],
         [
-         113.318,
-         32.327
+         113.34,
+         32.307
         ],
         [
-         113.334,
-         32.336
-        ],
-        [
-         113.3,
-         32.361
-        ],
-        [
-         113.3,
-         29.619
+         113.34,
+         29.663
         ]
        ]
       ]
@@ -9983,128 +9714,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
       [
        [
         [
-         113.3,
-         28.7
+         113.34,
+         29.27
         ],
         [
-         114.142,
-         28.7
-        ],
-        [
-         114.157,
-         28.762
-        ],
-        [
-         114.138,
-         28.78
-        ],
-        [
-         114.154,
-         28.829
-        ],
-        [
-         114.125,
-         28.843
-        ],
-        [
-         114.077,
-         28.834
-        ],
-        [
-         114.056,
-         28.872
-        ],
-        [
-         114.06,
-         28.903
-        ],
-        [
-         114.028,
-         28.891
-        ],
-        [
-         114.005,
-         28.918
-        ],
-        [
-         114.009,
-         28.955
-        ],
-        [
-         113.974,
-         28.938
-        ],
-        [
-         113.955,
-         28.979
-        ],
-        [
-         113.962,
-         28.999
-        ],
-        [
-         113.942,
-         29.047
-        ],
-        [
-         113.898,
-         29.029
-        ],
-        [
-         113.877,
-         29.038
-        ],
-        [
-         113.882,
-         29.065
-        ],
-        [
-         113.853,
-         29.059
-        ],
-        [
-         113.816,
-         29.105
-        ],
-        [
-         113.776,
-         29.095
-        ],
-        [
-         113.75,
-         29.061
-        ],
-        [
-         113.723,
-         29.105
-        ],
-        [
-         113.696,
-         29.077
-        ],
-        [
-         113.691,
-         29.115
-        ],
-        [
-         113.663,
-         29.169
-        ],
-        [
-         113.692,
-         29.197
-        ],
-        [
-         113.693,
-         29.226
-        ],
-        [
-         113.652,
-         29.226
-        ],
-        [
-         113.61,
-         29.251
+         113.616,
+         29.27
         ],
         [
          113.632,
@@ -10187,12 +9802,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
          29.703
         ],
         [
-         113.3,
-         29.619
+         113.34,
+         29.663
         ],
         [
-         113.3,
-         28.7
+         113.34,
+         29.27
         ]
        ]
       ]
@@ -10231,20 +9846,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "type": "LineString",
      "coordinates": [
       [
-       115.863,
-       28.7
-      ],
-      [
-       115.869,
-       28.716
-      ],
-      [
-       115.975,
-       28.888
-      ],
-      [
-       116.016,
-       29.05
+       115.983,
+       29.27
       ],
       [
        115.982,
@@ -10260,8 +9863,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        113.3,
-        30.418
+        113.34,
+        30.412
        ],
        [
         113.381,
@@ -10334,8 +9937,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        113.3,
-        34.944
+        113.34,
+        34.956
        ],
        [
         113.399,
@@ -10452,8 +10055,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        113.3,
-        29.621
+        113.34,
+        29.657
        ],
        [
         113.53,
@@ -11212,92 +10815,8 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
      "coordinates": [
       [
        [
-        116.706,
-        29.136
-       ],
-       [
-        116.709,
-        29.102
-       ],
-       [
-        116.672,
-        29.098
-       ],
-       [
-        116.635,
-        29.102
-       ],
-       [
-        116.618,
-        29.115
-       ],
-       [
-        116.581,
-        29.128
-       ],
-       [
-        116.521,
-        29.143
-       ],
-       [
-        116.496,
-        29.122
-       ],
-       [
-        116.477,
-        29.043
-       ],
-       [
-        116.503,
-        28.953
-       ],
-       [
-        116.53,
-        28.894
-       ],
-       [
-        116.537,
-        28.845
-       ],
-       [
-        116.512,
-        28.804
-       ],
-       [
-        116.468,
-        28.805
-       ],
-       [
-        116.441,
-        28.86
-       ],
-       [
-        116.418,
-        28.88
-       ],
-       [
-        116.409,
-        28.905
-       ],
-       [
-        116.348,
-        28.906
-       ],
-       [
-        116.329,
-        28.961
-       ],
-       [
-        116.097,
-        29.106
-       ],
-       [
-        116.064,
-        29.149
-       ],
-       [
-        116.047,
-        29.19
+        115.989,
+        29.27
        ],
        [
         115.982,
@@ -11400,76 +10919,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         29.309
        ],
        [
-        116.153,
-        29.253
+        116.148,
+        29.27
        ],
        [
-        116.31,
-        29.232
-       ],
-       [
-        116.343,
-        29.234
-       ],
-       [
-        116.368,
-        29.223
-       ],
-       [
-        116.358,
-        29.186
-       ],
-       [
-        116.362,
-        29.154
-       ],
-       [
-        116.407,
-        29.176
-       ],
-       [
-        116.44,
-        29.236
-       ],
-       [
-        116.469,
-        29.25
-       ],
-       [
-        116.54,
-        29.24
-       ],
-       [
-        116.604,
-        29.237
-       ],
-       [
-        116.64,
-        29.237
-       ],
-       [
-        116.664,
-        29.226
-       ],
-       [
-        116.661,
-        29.19
-       ],
-       [
-        116.674,
-        29.159
-       ],
-       [
-        116.706,
-        29.136
-       ],
-       [
-        116.706,
-        29.136
-       ],
-       [
-        116.706,
-        29.136
+        115.989,
+        29.27
        ]
       ]
      ]
@@ -12186,24 +11641,12 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
         29.76
        ],
        [
-        113.312,
-        29.749
+        113.34,
+        29.76
        ],
        [
-        113.3,
-        29.759
-       ],
-       [
-        113.3,
-        29.889
-       ],
-       [
-        113.302,
-        29.888
-       ],
-       [
-        113.331,
-        29.894
+        113.34,
+        29.91
        ],
        [
         113.362,
@@ -12950,9 +12393,9 @@ window.SANDBOX_SLICES["bisheng_movable_type"] = {
    }
   ],
   "_bbox": [
-   113.3,
-   28.7,
-   121.2,
+   113.34,
+   29.27,
+   121.15,
    35.8
   ]
  }

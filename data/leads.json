@@ -146,6 +146,22 @@
    "_src_line": 10
   },
   {
+   "id": "BIS_014",
+   "scene": "bisheng_movable_type",
+   "subject": "event:ev_bisheng_movable_type_01",
+   "title": "无实物出土，仅文献记载",
+   "missing": "考古发掘 / 文献考据",
+   "where": "杭州或毕昇活动地",
+   "skills": [
+    "考古发掘",
+    "文献考据"
+   ],
+   "accept": "发现泥活字实物或同时代印刷品",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "BOJUG01",
    "scene": "boju",
    "subject": "event:bj_bj",
@@ -658,20 +674,19 @@
    "_src_line": 7
   },
   {
-   "id": "DUJIANGYANG01",
+   "id": "DUJ_014",
    "scene": "dujiangyan",
-   "subject": "event:dj_256",
-   "title": "此工程的营造工期、用工与耗费，历代记载繁简不一，民间传说更增益其辞，细节存在缺口。",
-   "missing": "纪年校勘 / 多源比对",
-   "where": "诸史原文对读",
+   "subject": "event:ev_dujiangyan_02",
+   "title": "确切年份存疑",
+   "missing": "文献考据",
+   "where": "史料中李冰任守时间",
    "skills": [
-    "纪年校勘",
-    "多源比对"
+    "文献考据"
    ],
-   "accept": "补各方视角与纪年异文",
+   "accept": "需进一步考证",
    "effort": "—",
    "issue_url": null,
-   "_src_line": 13
+   "_src_line": 14
   },
   {
    "id": "DUNZUNG01",

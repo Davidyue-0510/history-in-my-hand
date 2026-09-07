@@ -1,27 +1,102 @@
 {
- "places": [
-  {
-   "id": "dujiangyan",
-   "name": "都江堰",
-   "lon": 103.62,
-   "lat": 31.0,
-   "note": "今四川都江堰市（原灌县）"
-  },
-  {
-   "id": "chengdu",
-   "name": "成都",
-   "lon": 104.07,
-   "lat": 30.67,
-   "note": "受益的成都平原"
-  },
-  {
-   "id": "minjiang",
-   "name": "岷江",
-   "lon": 103.6,
-   "lat": 31.2,
-   "note": "被分流的大江"
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "dujiangyan",
+      "name": "都江堰",
+      "type": "region",
+      "modern": "今中国四川省都江堰市",
+      "note": "无坝引水工程",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 31.004,
+      "lat": 103.616,
+      "geo_unresolved": true
+    },
+    {
+      "id": "feishayan",
+      "name": "飞沙堰",
+      "type": "region",
+      "modern": "今都江堰飞沙堰",
+      "note": "溢洪道",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 31,
+      "lat": 103.622,
+      "geo_unresolved": true
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "type": "city",
+      "modern": "今中国四川省成都市",
+      "note": "成都平原中心",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 104.07,
+      "lat": 30.66,
+      "geo_note": "今四川成都"
+    },
+    {
+      "id": "yuzui",
+      "name": "鱼嘴",
+      "type": "region",
+      "modern": "今都江堰鱼嘴分水堤",
+      "note": "分水堤",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 31.005,
+      "lat": 103.615,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baopingkou",
+      "name": "宝瓶口",
+      "type": "region",
+      "modern": "今都江堰宝瓶口",
+      "note": "引水口",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 30.99,
+      "lat": 103.63,
+      "geo_unresolved": true
+    },
+    {
+      "id": "minjiang",
+      "name": "岷江",
+      "type": "region",
+      "modern": "今中国四川省岷江",
+      "note": "出山口处筑堰",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 31,
+      "lat": 103.6,
+      "geo_unresolved": true
+    },
+    {
+      "id": "lidui",
+      "name": "离堆",
+      "type": "region",
+      "modern": "今都江堰离堆",
+      "note": "凿离堆成宝瓶口",
+      "_source_idx": 0,
+      "_source_name": "都江堰水利工程(SAMPLE)",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 30.99,
+      "lat": 103.63,
+      "geo_unresolved": true
+    }
+  ]
 }

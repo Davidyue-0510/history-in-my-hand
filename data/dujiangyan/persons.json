@@ -1,16 +1,14 @@
 {
  "persons": [
   {
-   "id": "libing",
+   "id": "DUJ__p01",
    "name": "李冰",
-   "side": "秦蜀守",
-   "influence": 0
-  },
-  {
-   "id": "wengong",
-   "name": "文翁",
-   "side": "西汉蜀守",
-   "influence": 0
+   "role": "蜀郡守",
+   "note": "战国秦昭襄王时主持修筑都江堰",
+   "_source_idx": 0,
+   "_source_name": "都江堰水利工程(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
   }
  ]
 }

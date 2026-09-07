@@ -1,22 +1,22 @@
 {
- "places": [
-  {
-   "id": "huangdaopo_llm_wunijing",
-   "name": "乌泥泾",
-   "lon": 121.43,
-   "lat": 31.12
-  },
-  {
-   "id": "huangdaopo_llm_songjiang",
-   "name": "松江",
-   "lon": 121.23,
-   "lat": 31
-  },
-  {
-   "id": "huangdaopo_llm_yazhou",
-   "name": "崖州",
-   "lon": 109.5,
-   "lat": 18.25
-  }
- ]
+  "places": [
+    {
+      "id": "huangdaopo_llm_wunijing",
+      "name": "乌泥泾",
+      "lon": 121.43,
+      "lat": 31.12
+    },
+    {
+      "id": "huangdaopo_llm_songjiang",
+      "name": "松江",
+      "lon": 121.23,
+      "lat": 31
+    },
+    {
+      "id": "huangdaopo_llm_yazhou",
+      "name": "崖州",
+      "lon": 109.5,
+      "lat": 18.25
+    }
+  ]
 }

@@ -2,15 +2,17 @@
   "scenes_total": 191,
   "historical": 182,
   "fictional": 9,
-  "assertions_total": 2940,
+  "assertions_total": 2941,
   "sources_total": 164,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
+    "bisheng_movable_type",
     "changping_llm",
     "chibi_llm",
     "chu_han",
     "chuhai_llm",
+    "dujiangyan",
     "feishui_llm",
     "fujian_quanzhou_llm",
     "guandu_llm",
@@ -54,7 +56,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 281,
+  "leads_total": 282,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -567,7 +569,7 @@
       "id": "dujiangyan",
       "title": "都江堰",
       "kind": "engineering",
-      "assertions": 16,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -1423,7 +1425,7 @@
       "id": "bisheng_movable_type",
       "title": "毕昇·活字印刷",
       "kind": "tech",
-      "assertions": 11,
+      "assertions": 14,
       "factions": {}
     },
     {

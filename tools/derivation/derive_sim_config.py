@@ -4,8 +4,8 @@
 从场景的 `assertions.jsonl`（六维四层断言内核）零手 authoring 派生出推演所需的
 三件套：
 
-  - places.json    地点码 → 最小 place 列表（无坐标；G1 不杜撰几何，honest boundary）
-  - control.json   单一控制方（综述考订）的史实 timeline，供三阶层 Agent 生成「阻力」
+  - places.json    地点码 → place 列表；若场景已有真实坐标则保留（honest boundary：不杜撰、不丢坐标）
+  - control.json   控制方优先取场景 vocab 合法 party（否则默认「综述考订」）的史实 timeline
   - sim_config.json 非军事反事实配置（scenario_type / dim_targets / branches /
                    real_branch / start_year / end_year），并标 `_auto_derived=true`
 
@@ -106,32 +106,70 @@ def derive_year_span(assertions):
     return min(ys), max(ys)
 
 
-def derive_party(assertions):
-    """派生控制方 party：默认「综述考订」。
+def derive_party(assertions, scene_dir=None):
+    """派生控制方 party。
 
-    单一控制方使多地点产生 center+local 阻力结构。G1 零手 authoring 场景下统一用
-    「综述考订」——它是跨朝代合法控制 party（归入默认词表兜底集，且属综合考订桶，
-    不伪造任何对立阵营立场），避免把史料立场桶错配到特定朝代语境、也不触发
-    check_render_schema 的「party 不在受控词表」ERROR。
+    若场景 vocab.json 声明了合法 party（parties 非空），优先生成场景专属控制方，
+    避免 gate #9「party 不在受控词表」ERROR（如 susong 用「后世官修」、huangdaopo 用
+    「综合史料」）。无 scene_dir 或 vocab 无 parties 时回退默认「综述考订」（跨朝代合法兜底）。
     """
+    if scene_dir:
+        vp = os.path.join(scene_dir, "vocab.json")
+        if os.path.isfile(vp):
+            try:
+                with open(vp, encoding="utf-8") as f:
+                    v = json.load(f)
+                parties = v.get("parties") or []
+                if parties:
+                    return parties[0]
+            except Exception:
+                pass
     return "综述考订"
 
 
-def derive_places(assertions):
-    """地点码 → 最小 place 列表（仅 id/name，无坐标，honest boundary）。"""
+def derive_places(assertions, scene_dir=None):
+    """地点码 → place 列表。
+
+    若 scene_dir 下已有 places.json，保留其真实坐标（lon/lat/modern/note/type）与非断言码
+    手书地点（如籍贯/关联地），honest boundary：不丢坐标、不杜撰几何。仅当某码在旧文件中
+    也没有坐标时，才落为无坐标（判抽象世界）。
+    """
     codes = collect_place_codes(assertions)
-    places = [{"id": c, "name": c} for c in codes]
+    existing = {}
+    if scene_dir and os.path.isfile(os.path.join(scene_dir, "places.json")):
+        try:
+            with open(os.path.join(scene_dir, "places.json"), encoding="utf-8") as f:
+                old = json.load(f)
+            for p in (old.get("places") or []):
+                if isinstance(p, dict) and p.get("id"):
+                    existing[p["id"]] = p
+        except Exception:
+            pass
+    seen = []
+    places = []
+    for c in codes:
+        if c in existing:
+            places.append(existing[c])
+        else:
+            places.append({"id": c, "name": c})
+        if c not in seen:
+            seen.append(c)
+    # 保留断言未引用但手书存在的地点（如籍贯/关联地），不丢数据
+    for pid, p in existing.items():
+        if pid not in seen:
+            places.append(p)
+            seen.append(pid)
     return {"places": places}
 
 
-def derive_control(assertions, party=None, start=None, end=None):
-    """单一控制方（综述考订）的史实 timeline；供 create_agents 生成三阶层阻力。
+def derive_control(assertions, party=None, start=None, end=None, scene_dir=None):
+    """控制方的史实 timeline；供 create_agents 生成三阶层阻力。
 
     返回字典 {"control": [...]}，与 build.py / 军事路径一致（control 键下为控制项数组）。
-    每项：place_id / party / start / end / timeline=main。
+    每项：place_id / party / start / end / timeline=main。party 优先取 vocab 合法值。
     """
     if party is None:
-        party = derive_party(assertions)
+        party = derive_party(assertions, scene_dir=scene_dir)
     if start is None or end is None:
         sy, ey = derive_year_span(assertions)
         start = sy if sy is not None else -200
@@ -272,7 +310,7 @@ def derive_config(assertions):
     note = ("G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；"
             "base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=%.2f neg=%.2f sign=%d），"
             "幅度由证据强度 strength=%.2f 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；"
-            "whatif 取反向并阻尼 0.7。places 无坐标，判为抽象世界。"
+            "whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。"
             % (pos_w, neg_w, sign, strength))
     cfg = {
         "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
@@ -295,11 +333,11 @@ def derive_all(scene_dir, assertions=None, write_sources=True):
     """
     if assertions is None:
         assertions = load_assertions(os.path.join(scene_dir, "assertions.jsonl"))
-    places = derive_places(assertions)
+    places = derive_places(assertions, scene_dir=scene_dir)
     sy, ey = derive_year_span(assertions)
     s = sy if sy is not None else -200
     e = ey if ey is not None else -100
-    control = derive_control(assertions, start=s, end=e)
+    control = derive_control(assertions, start=s, end=e, scene_dir=scene_dir)
     sim_config = derive_config(assertions)
 
     _dump(os.path.join(scene_dir, "places.json"), places)

@@ -18,7 +18,7 @@
 | beijiu | 15 | 2 | **0.000** | event:bj_961（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | bencao | 12 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 8 / scholarship 3 |
 | biTigeGuan | 13 | 1 | **0.286** | event:biti（0.286） | gap 1 / inference 4 / record 4 / scholarship 4 |
-| bisheng_movable_type | 11 | 1 | **0.000** | event:mengxi_chengshu（0.000） | record 6 / scholarship 5 |
+| bisheng_movable_type | 14 | 1 | **0.000** | event:ev_bisheng_movable_type_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | boju | 21 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 4 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | cailun_zaozhi | 11 | 2 | **0.000** | event:cailun_fenghou（0.000） | inference 1 / record 6 / scholarship 4 |
@@ -42,7 +42,7 @@
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
 | dong_han_yi | 12 | 3 | **0.000** | event:dy_196（0.000） | gap 2 / inference 2 / record 5 / scholarship 3 |
 | donghan_danggu | 7 | 3 | **0.000** | event:dh_166（0.000） | gap 1 / inference 2 / record 1 / scholarship 3 |
-| dujiangyan | 16 | 3 | **0.000** | event:dj_168（0.000） | gap 1 / inference 2 / record 9 / scholarship 4 |
+| dujiangyan | 14 | 1 | **0.000** | event:ev_dujiangyan_02（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | dunzun | 11 | 6 | **0.000** | event:dz_134（0.000） | gap 2 / scholarship 9 |
 | feishui | 16 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
@@ -283,9 +283,6 @@
 | event:dh_166 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:dh_168 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dh_169 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
-| event:dj_168 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
-| event:dj_256 | dujiangyan | **0.000** | 0/3 | 0.00 | 0.09 | 11 | 0 / 0 / 0 / 0 |
-| event:dj_today | dujiangyan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:dw_relief | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -305,6 +302,7 @@
 | event:dz_taixue | dunzun | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_portugal_llm_01 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.33 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_portugal_llm_02 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_bisheng_movable_type_01 | bisheng_movable_type | **0.000** | 0/3 | 0.00 | 0.07 | 14 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_01 | changping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_02 | changping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_03 | changping_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
@@ -317,6 +315,7 @@
 | event:ev_chuhai_llm_03 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_chuhai_llm_04 | chuhai_llm | **0.000** | 0/3 | 0.67 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_chuhai_llm_05 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_dujiangyan_02 | dujiangyan | **0.000** | 0/3 | 0.09 | 0.07 | 14 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_01 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_02 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
@@ -574,7 +573,6 @@
 | event:mb_chu | mobai | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:mb_hq | mobai | **0.000** | 0/3 | 0.25 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:mb_wq | mobai | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
-| event:mengxi_chengshu | bisheng_movable_type | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:mf_1627 | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:mf_1644_3 | ming_fall | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:mf_1644_q | ming_fall | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |

@@ -1,0 +1,95 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "dujiangyan",
+ "_scenario_type": "engineering",
+ "_years": [
+  -256,
+  -230
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -251,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.69 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.685,
+    "cum": -0.175
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -250,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.72 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.716,
+    "cum": -0.204
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -249,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.75 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.747,
+    "cum": -0.233
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -248,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.778,
+    "cum": -0.222
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -247,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.808,
+    "cum": -0.192
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": -246,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.839,
+    "cum": -0.161
+   }
+  },
+  {
+   "kind": "summary",
+   "year": -230,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

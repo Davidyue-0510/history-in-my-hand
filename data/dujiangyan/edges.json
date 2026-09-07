@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "minjiang",
+   "to": "yuzui",
+   "type": "military",
+   "label": "岷江分水",
+   "_source_idx": 0,
+   "_source_name": "都江堰水利工程(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "yuzui",
+   "to": "feishayan",
+   "type": "military",
+   "label": "内江至飞沙堰",
+   "_source_idx": 0,
+   "_source_name": "都江堰水利工程(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "feishayan",
+   "to": "baopingkou",
+   "type": "military",
+   "label": "引水至宝瓶口",
+   "_source_idx": 0,
+   "_source_name": "都江堰水利工程(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

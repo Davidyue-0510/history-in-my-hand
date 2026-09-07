@@ -11,10 +11,12 @@ window.SANDBOX_DATA = {
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "aomen_portugal_llm",
+   "bisheng_movable_type",
    "changping_llm",
    "chibi_llm",
    "chu_han",
    "chuhai_llm",
+   "dujiangyan",
    "feishui_llm",
    "fujian_quanzhou_llm",
    "guandu_llm",
@@ -20949,9 +20951,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
-    1,
     2,
-    3,
     4,
     5,
     6
@@ -20960,14 +20960,14 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational",
    "counts": {
     "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
+    "place": 7,
+    "person": 1,
+    "assert": 14,
+    "conflict": 1,
     "gap": 1,
-    "record": 9,
-    "scholarship": 4,
-    "inference": 2
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
    }
   },
   "great_wall": {
@@ -24876,7 +24876,6 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     2,
-    3,
     4,
     5,
     6
@@ -24884,15 +24883,15 @@ window.SANDBOX_DATA = {
    "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
-    "src": 2,
-    "place": 3,
-    "person": 1,
-    "assert": 11,
-    "conflict": 2,
-    "gap": 0,
-    "record": 6,
-    "scholarship": 5,
-    "inference": 0
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
    }
   },
   "compass_navigation": {

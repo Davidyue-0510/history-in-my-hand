@@ -648,14 +648,14 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
  "control": [
   {
    "place_id": "huangdaopo_llm_wunijing",
-   "party": "综合史料",
+   "party": "元笔记",
    "start": 1295,
    "end": 1300,
    "timeline": "main"
   },
   {
    "place_id": "huangdaopo_llm_songjiang",
-   "party": "综合史料",
+   "party": "元笔记",
    "start": 1295,
    "end": 1300,
    "timeline": "main"

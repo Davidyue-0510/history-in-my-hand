@@ -5793,9 +5793,7 @@
     "person:wengong": "文翁"
    },
    "dims": [
-    1,
     2,
-    3,
     4,
     5,
     6
@@ -5850,7 +5848,8 @@
      "note": "都江堰：地缘战略——旱溉潦泄"
     }
    },
-   "province": "sichuan"
+   "province": "sichuan",
+   "vocab_pack": "dujiangyan"
   },
   "great_wall": {
    "kind": "engineering",
@@ -15850,7 +15849,6 @@
    "dims": [
     1,
     2,
-    3,
     4,
     5,
     6
@@ -15909,7 +15907,8 @@
     "zhejiang",
     "henan",
     "hubei"
-   ]
+   ],
+   "vocab_pack": "bisheng_movable_type"
   },
   "compass_navigation": {
    "kind": "tech",

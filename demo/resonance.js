@@ -326,19 +326,20 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "bisheng_movable_type",
    "name": "bisheng_movable_type",
-   "total": 11,
+   "total": 14,
    "layers": {
-    "record": 6,
-    "scholarship": 5
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
    },
    "party_counts": {
-    "宋方": 7,
-    "综述考订": 4
+    "后世官修": 14
    },
    "faction_counts": {},
    "event_count": 1,
    "avg_resonance": 0.0,
-   "best_event": "event:mengxi_chengshu",
+   "best_event": "event:ev_bisheng_movable_type_01",
    "best_resonance": 0.0
   },
   {
@@ -778,20 +779,20 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "dujiangyan",
    "name": "dujiangyan",
-   "total": 16,
+   "total": 14,
    "layers": {
-    "scholarship": 4,
-    "record": 9,
-    "inference": 2,
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
     "gap": 1
    },
    "party_counts": {
-    "综合史料": 16
+    "后世官修": 14
    },
    "faction_counts": {},
-   "event_count": 3,
+   "event_count": 1,
    "avg_resonance": 0.0,
-   "best_event": "event:dj_168",
+   "best_event": "event:ev_dujiangyan_02",
    "best_resonance": 0.0
   },
   {
