@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 196 个切片
+// 权威数据源：data/scenes.json 注册的 199 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 196 个切片",
+  "slice": "multi-scene · 199 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -510,7 +510,10 @@ window.SANDBOX_DATA = {
   "zhuxi",
   "foguo_chan_llm",
   "qianjia_puxue_llm",
-  "xu_guangqi"
+  "xu_guangqi",
+  "warring_states_shangyang",
+  "sui_keju",
+  "tang_juntian"
  ],
  "vocab": {
   "layers": [
@@ -25183,6 +25186,105 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 0
    }
+  },
+  "warring_states_shangyang": {
+   "key": "warring_states_shangyang",
+   "scene_id": "warring_states_shangyang",
+   "title": "战国·商鞅变法",
+   "dossier_label": "商鞅变法",
+   "subtitle": "前359—前338 · 战国",
+   "kind": "reform",
+   "region": "warring_states",
+   "page": "county.html?scene=warring_states_shangyang",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 0,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 5,
+    "scholarship": 4,
+    "inference": 2
+   }
+  },
+  "sui_keju": {
+   "key": "sui_keju",
+   "scene_id": "sui_keju",
+   "title": "隋·科举制创立",
+   "dossier_label": "科举制",
+   "subtitle": "587—618 · 隋",
+   "kind": "reform",
+   "region": "sui_tang",
+   "page": "county.html?scene=sui_keju",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 0,
+    "assert": 8,
+    "conflict": 0,
+    "gap": 1,
+    "record": 2,
+    "scholarship": 2,
+    "inference": 3
+   }
+  },
+  "tang_juntian": {
+   "key": "tang_juntian",
+   "scene_id": "tang_juntian",
+   "title": "唐·均田制",
+   "dossier_label": "均田制",
+   "subtitle": "624—640 · 唐初",
+   "kind": "reform",
+   "region": "sui_tang",
+   "page": "county.html?scene=tang_juntian",
+   "primary_place": null,
+   "vocab_pack": "ming_qing",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 0,
+    "assert": 6,
+    "conflict": 0,
+    "gap": 1,
+    "record": 2,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -25381,7 +25483,10 @@ window.SANDBOX_DATA = {
   "zhuxi": "slices/zhuxi.js",
   "foguo_chan_llm": "slices/foguo_chan_llm.js",
   "qianjia_puxue_llm": "slices/qianjia_puxue_llm.js",
-  "xu_guangqi": "slices/xu_guangqi.js"
+  "xu_guangqi": "slices/xu_guangqi.js",
+  "warring_states_shangyang": "slices/warring_states_shangyang.js",
+  "sui_keju": "slices/sui_keju.js",
+  "tang_juntian": "slices/tang_juntian.js"
  },
  "corridors": [
   {

@@ -141,6 +141,7 @@
 | sui_canal | 12 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 11 |
 | sui_canal_llm | 12 | 3 | **0.000** | event:ev_sui_canal_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
+| sui_keju | 8 | 1 | **0.000** | event:keju_chuang（0.000） | gap 1 / inference 3 / record 2 / scholarship 2 |
 | sui_mie_chen | 11 | 2 | **0.000** | event:sm_587（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | sui_mie_chen_llm | 20 | 5 | **0.000** | event:ev_sui_mie_chen_llm_01（0.000） | gap 2 / inference 1 / record 15 / scholarship 2 |
 | sui_yang_llm | 15 | 6 | **0.000** | event:ev_sui_yang_llm_01（0.000） | inference 1 / record 13 / scholarship 1 |
@@ -152,6 +153,7 @@
 | tang_dangzheng | 7 | 3 | **0.000** | event:nt_808（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | tang_huangchao_llm | 16 | 5 | **0.000** | event:ev_tang_huangchao_01（0.000） | gap 1 / inference 1 / record 13 / scholarship 1 |
+| tang_juntian | 6 | 0 | **0.000** | —（0.000） | gap 1 / inference 1 / record 2 / scholarship 2 |
 | tang_liangshuifa | 10 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 9 |
 | tang_xuanwumen_llm | 12 | 2 | **0.000** | event:ev_tang_xuanwumen_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
@@ -161,6 +163,7 @@
 | wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | wangyangming | 15 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
+| warring_states_shangyang | 12 | 1 | **0.000** | event:qiandu（0.000） | gap 1 / inference 2 / record 5 / scholarship 4 |
 | warring_states_shangyang_llm | 14 | 2 | **0.000** | event:ev_warring_states_shangyang_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | wei_xiaowen | 10 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 9 |
 | wencheng | 11 | 2 | **0.000** | event:wc_641（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
@@ -551,6 +554,7 @@
 | event:jz_1722 | jiuzi | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jz_753 | jianzhen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:keju_chuang | sui_keju | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
 | event:kezhun_qincheng | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:kf_1642a | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kf_1642b | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -612,6 +616,7 @@
 | event:qh_1644 | qing_han | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:qh_1645 | qing_han | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:qh_late | qing_han | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:qiandu | warring_states_shangyang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 1 |
 | event:qn_221 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_222 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_223 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

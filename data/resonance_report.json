@@ -138,6 +138,7 @@
       "sui_canal",
       "sui_canal_llm",
       "sui_daxing",
+      "sui_keju",
       "sui_mie_chen",
       "sui_mie_chen_llm",
       "sui_yang_llm",
@@ -149,6 +150,7 @@
       "tang_dangzheng",
       "tang_huai_xi",
       "tang_huangchao_llm",
+      "tang_juntian",
       "tang_liangshuifa",
       "tang_xuanwumen_llm",
       "three_campaigns",
@@ -158,6 +160,7 @@
       "wanganshi",
       "wangmang",
       "wangyangming",
+      "warring_states_shangyang",
       "warring_states_shangyang_llm",
       "wei_xiaowen",
       "wencheng",
@@ -2714,6 +2717,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "sui_keju",
+      "name": "sui_keju",
+      "total": 8,
+      "layers": {
+        "record": 2,
+        "scholarship": 2,
+        "inference": 3,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 8
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:keju_chuang",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "sui_mie_chen",
       "name": "sui_mie_chen",
       "total": 11,
@@ -2927,6 +2949,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "tang_juntian",
+      "name": "tang_juntian",
+      "total": 6,
+      "layers": {
+        "record": 2,
+        "scholarship": 2,
+        "inference": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 6
+      },
+      "faction_counts": {},
+      "event_count": 0,
+      "avg_resonance": 0.0,
+      "best_event": null,
+      "best_resonance": null
+    },
+    {
       "scene": "tang_liangshuifa",
       "name": "tang_liangshuifa",
       "total": 10,
@@ -3103,6 +3144,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_wangyangming_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "warring_states_shangyang",
+      "name": "warring_states_shangyang",
+      "total": 12,
+      "layers": {
+        "scholarship": 4,
+        "record": 5,
+        "inference": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "综述考订": 12
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:qiandu",
       "best_resonance": 0.0
     },
     {
@@ -13830,6 +13890,46 @@
       }
     },
     {
+      "subject": "event:keju_chuang",
+      "name": "event:keju_chuang",
+      "scenes": [
+        "sui_keju"
+      ],
+      "scene_names": [
+        "sui_keju"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "KEJU_06",
+            "predicate": "影响",
+            "value_text": "科举制绵延千三百年，为后世文官制度之滥觞。",
+            "source": "keju",
+            "layer": "inference",
+            "scene": "sui_keju"
+          }
+        ]
+      }
+    },
+    {
       "subject": "event:kezhun_qincheng",
       "name": "event:kezhun_qincheng",
       "scenes": [
@@ -15720,6 +15820,46 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:qiandu",
+      "name": "event:qiandu",
+      "scenes": [
+        "warring_states_shangyang"
+      ],
+      "scene_names": [
+        "warring_states_shangyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "SHY_08",
+            "predicate": "迁都",
+            "value_text": "秦孝公十二年徙都咸阳，筑冀阙宫庭，示变法决心。",
+            "source": "shangyang",
+            "layer": "record",
+            "scene": "warring_states_shangyang"
+          }
+        ]
       }
     },
     {

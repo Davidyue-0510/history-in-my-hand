@@ -3334,6 +3334,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "KEJU_gap_08",
+   "scene": "sui_keju",
+   "subject": "theme:keju",
+   "title": "隋代进士科考试程式、及第人数与考生出身分布，传世记载极简，细节存在缺口。",
+   "missing": "选举史 / 官制考证",
+   "where": "《隋书·百官志》《通典·选举》对读",
+   "skills": [
+    "选举史",
+    "官制考证"
+   ],
+   "accept": "补隋代科举程式与及第细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "SUI_MIE_CHENG01",
    "scene": "sui_mie_chen",
    "subject": "event:sm_589",
@@ -3540,6 +3556,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
+   "id": "JT_gap_06",
+   "scene": "tang_juntian",
+   "subject": "theme:jun_tian",
+   "title": "均田令实际授田亩数、还授执行与逃户隐田规模，史载参差，地方实况存在缺口。",
+   "missing": "土地制度史 / 赋役考证",
+   "where": "《唐律疏议》《通典·食货》对读",
+   "skills": [
+    "土地制度史",
+    "赋役考证"
+   ],
+   "accept": "补均田实授亩数与逃户隐田",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
    "id": "TL_10",
    "scene": "tang_liangshuifa",
    "subject": "social:shangren",
@@ -3712,6 +3744,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SHY_gap_12",
+   "scene": "warring_states_shangyang",
+   "subject": "theme:shangyang",
+   "title": "商鞅变法各县令考绩、基层授田与连坐执行细节，传世文献简略，细节存在缺口。",
+   "missing": "官制考证 / 制度史",
+   "where": "《史记·商君列传》《商君书》对读",
+   "skills": [
+    "官制考证",
+    "制度史"
+   ],
+   "accept": "补县制推行与授田执行细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "WAR_014",

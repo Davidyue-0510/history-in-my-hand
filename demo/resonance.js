@@ -140,6 +140,7 @@ window.SANDBOX_RESONANCE = {
    "sui_canal",
    "sui_canal_llm",
    "sui_daxing",
+   "sui_keju",
    "sui_mie_chen",
    "sui_mie_chen_llm",
    "sui_yang_llm",
@@ -151,6 +152,7 @@ window.SANDBOX_RESONANCE = {
    "tang_dangzheng",
    "tang_huai_xi",
    "tang_huangchao_llm",
+   "tang_juntian",
    "tang_liangshuifa",
    "tang_xuanwumen_llm",
    "three_campaigns",
@@ -160,6 +162,7 @@ window.SANDBOX_RESONANCE = {
    "wanganshi",
    "wangmang",
    "wangyangming",
+   "warring_states_shangyang",
    "warring_states_shangyang_llm",
    "wei_xiaowen",
    "wencheng",
@@ -2716,6 +2719,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "sui_keju",
+   "name": "sui_keju",
+   "total": 8,
+   "layers": {
+    "record": 2,
+    "scholarship": 2,
+    "inference": 3,
+    "gap": 1
+   },
+   "party_counts": {
+    "综述考订": 8
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:keju_chuang",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "sui_mie_chen",
    "name": "sui_mie_chen",
    "total": 11,
@@ -2929,6 +2951,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tang_juntian",
+   "name": "tang_juntian",
+   "total": 6,
+   "layers": {
+    "record": 2,
+    "scholarship": 2,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "综述考订": 6
+   },
+   "faction_counts": {},
+   "event_count": 0,
+   "avg_resonance": 0.0,
+   "best_event": null,
+   "best_resonance": null
+  },
+  {
    "scene": "tang_liangshuifa",
    "name": "tang_liangshuifa",
    "total": 10,
@@ -3105,6 +3146,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_wangyangming_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "warring_states_shangyang",
+   "name": "warring_states_shangyang",
+   "total": 12,
+   "layers": {
+    "scholarship": 4,
+    "record": 5,
+    "inference": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "综述考订": 12
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:qiandu",
    "best_resonance": 0.0
   },
   {

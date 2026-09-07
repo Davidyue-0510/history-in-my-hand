@@ -148,5 +148,35 @@ check("G1 base_rate 校准 推导注记含证据强度",
       "证据强度" in hw_cfg.get("_derivation_note", "") and
       "strength=" in hw_cfg.get("_derivation_note", ""))
 
+# ── G1 非军事样例扩充（v0.148 · 商鞅变法/科举制/唐均田制）──
+# 延续 G1 通用派生范式：断言→derive_sim_config 零手派生，证明派生器对真实史料可用。
+NEW_SCENES = [
+    ("warring_states_shangyang", {"xianyang", "yong"}, (-359, -338), 22),
+    ("sui_keju", {"changan"}, (587, 627), 41),
+    ("tang_juntian", {"changan"}, (624, 640), 17),
+]
+for sid, codes, span, nyear in NEW_SCENES:
+    sd = os.path.join(ROOT, "data", sid)
+    nas = D.load_assertions(os.path.join(sd, "assertions.jsonl"))
+    ncfg = D.derive_config(nas)
+    check("%s G1 派生 _auto_derived 标真" % sid, ncfg.get("_auto_derived") is True)
+    check("%s scenario_type 合法" % sid,
+          ncfg["scenario_type"] in ("reform", "engineering", "thought", "economic", "social"))
+    check("%s dim_targets 排除地理" % sid, "地理" not in ncfg["dim_targets"])
+    nbids = [b["id"] for b in ncfg["branches"]]
+    check("%s 含 real+whatif 分支" % sid, "real" in nbids and any(b.startswith("whatif") for b in nbids))
+    check("%s real_branch 在分支内" % sid, ncfg["real_branch"] in nbids)
+    npl = D.derive_places(nas)
+    check("%s places 含关键码" % sid, codes <= {p["id"] for p in npl["places"]})
+    check("%s 年份跨度 %d..%d" % (sid, span[0], span[1]), D.derive_year_span(nas) == span)
+    nsh, nbe, nrt = S.simulate_nonmilitary(sid, "real", ncfg["start_year"], ncfg["end_year"], ncfg)
+    check("%s 非军事 %d 年时序" % (sid, nyear), len(nsh) == nyear)
+    check("%s Branch Event 合规" % sid,
+          all(e.get("kind") in ("divergence", "logistics", "faction", "momentum", "summary")
+              and e.get("severity") in ("info", "warn", "bad")
+              and isinstance(e.get("year"), int) for e in nbe))
+    check("%s whatif 偏离史实(divergence)" % sid, any(e.get("kind") == "divergence" for e in
+          S.simulate_nonmilitary(sid, "whatif", ncfg["start_year"], ncfg["end_year"], ncfg)[1]))
+
 print("\nsimulate: %d ok, %d fail" % (ok, fail))
 sys.exit(1 if fail else 0)

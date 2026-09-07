@@ -402,6 +402,228 @@
   "xu_guangqi"
  ],
  "scenes": {
+  "warring_states_shangyang": {
+   "kind": "reform",
+   "region": "warring_states",
+   "province": "shaanxi",
+   "title": "战国·商鞅变法",
+   "dossier_label": "商鞅变法",
+   "subtitle": "前359—前338 · 战国",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "商鞅以军功爵制与县制重构秦的国家能力，废井田开阡陌、统一度量衡，是战国国力竞赛的胜负手，亦为秦并六国奠基。本场景由 G1 工具（tools/derivation/derive_sim_config.py）零手 authoring 派生推演三件套，诚实披露基层执行史料缺环。",
+   "parties_note": "叙事方=秦廷（商鞅）；来源=后世官修（基于《史记·商君列传》现代概述），归综合史料桶。",
+   "subject_names": {
+    "event:qiandu": "迁都咸阳",
+    "institution:feijingtian": "废井田",
+    "institution:junggongjue": "军功爵制"
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      6
+     ],
+     "layer": "inference",
+     "note": "商鞅变法：军功爵制与县制重构秦廷权威，打破世卿世禄的政治凝聚"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "商鞅变法：废井田、统一度量衡，土地私有与赋税后勤半径扩张"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "商鞅变法：编户齐民与农战之策，人口动员转向耕战"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      2
+     ],
+     "layer": "inference",
+     "note": "商鞅变法：秦据关中、东向争雄，地缘战略由守转攻"
+    }
+   }
+  },
+  "sui_keju": {
+   "kind": "reform",
+   "region": "sui_tang",
+   "province": "shaanxi",
+   "title": "隋·科举制创立",
+   "dossier_label": "科举制",
+   "subtitle": "587—618 · 隋",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "隋文帝罢九品中正、隋炀帝设进士科，科举以考试选官、打破门第，开千年文官制度之先。本场景由 G1 工具零手派生推演三件套，诚实披露隋代科举程式史料缺环。",
+   "parties_note": "叙事方=隋唐廷；来源=后世官修（基于《隋书》《通典》现代概述），归综合史料桶。",
+   "subject_names": {
+    "event:keju_chuang": "科举创立",
+    "institution:jinshi_ke": "进士科"
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      6
+     ],
+     "layer": "inference",
+     "note": "科举：考试选官打破门第，士大夫政治凝聚力由血统转向才学"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "科举：儒经官学化，教育—选官通道合一（制度—技术通道）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "科举：寒门入仕，社会流动激活人口动员潜力"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      2
+     ],
+     "layer": "inference",
+     "note": "科举：隋唐统一后文官制巩固中央，地缘战略内向整合"
+    }
+   }
+  },
+  "tang_juntian": {
+   "kind": "reform",
+   "region": "sui_tang",
+   "province": "shaanxi",
+   "title": "唐·均田制",
+   "dossier_label": "均田制",
+   "subtitle": "624—640 · 唐初",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "places"
+   ],
+   "lead": "唐武德七年颁均田令、配租庸调制，按丁授田、田制与赋役合一，为贞观户口增殖与府兵之源。本场景由 G1 工具零手派生推演三件套，诚实披露均田实授与令文差异缺口。",
+   "parties_note": "叙事方=唐廷；来源=后世官修（基于《唐律疏议》《通典》现代概述），归综合史料桶。",
+   "subject_names": {
+    "institution:jun_tian": "均田令"
+   },
+   "dims": [
+    3,
+    4,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      3,
+      6
+     ],
+     "layer": "inference",
+     "note": "均田：授田制强化国家对民户控制，政治凝聚赖于编户"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "均田配租庸调，田制与赋役合一，后勤半径赖于授田"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "均田：小农得田、户口增殖，府兵与力役之源"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      2
+     ],
+     "layer": "inference",
+     "note": "均田：唐初休养，地缘战略由战乱转向守成"
+    }
+   }
+  },
   "han_wudi_ruxue": {
    "kind": "thought",
    "region": "qin_han",
