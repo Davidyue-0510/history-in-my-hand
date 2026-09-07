@@ -1056,6 +1056,27 @@ def _default_strategic(spec):
     return strat
 
 
+def _resolve_vocab_pack(spec):
+    """解析场景 vocab_pack（根因修复 v0.138）。
+
+    约定：world-gen 对每个场景都生成 data/vocab/<scene_id>.json（_gen_default_vocab，
+    L875/L1139 无条件调用），包含该场景真实 parties（如 susong 的「后世官修」）。
+    因此：
+      - 显式指定且非空（如军事共享包 'ming_qing'）→ 用之；
+      - 'auto' / 缺失 / None → 按场景自带包 spec['id']（永远存在，含正确 parties）。
+
+    旧写法 `spec.get("vocab_pack", "ming_qing")` 有 dict.get 陷阱：当 spec 里
+    vocab_pack 显式为 None（--from-json 自 emit meta 透传过来就是 None）时，key 已存在，
+    .get 返回 None 而非 "ming_qing" → scenes.json 写 vocab_pack=None → vocab_loader 回退
+    默认包 ming_qing（不含后世官修/综合史料）→ check_render_schema gate #9 FAIL。
+    统一解析到 spec['id'] 后，单源历史场景自动引用正确的按场景包，无需事后手 patch。
+    """
+    vp = spec.get("vocab_pack")
+    if vp and vp != "auto":
+        return vp
+    return spec["id"]
+
+
 def _register_scene(spec, scene_dir):
     """把场景注册进 data/scenes.json（order + scenes[scene_id]）。
     v0.123：写 epoch/scale_tier/strategic/subject_names 等结构字段——这些此前只能靠
@@ -1081,7 +1102,7 @@ def _register_scene(spec, scene_dir):
             "subtitle": spec.get("subtitle", ""),
             "primary_place": primary,
             "dossier_event": raw.get("events", [{}])[0].get("subject", ""),
-            "vocab_pack": spec["id"] if spec.get("vocab_pack") == "auto" else spec.get("vocab_pack", "ming_qing"),
+            "vocab_pack": _resolve_vocab_pack(spec),
             "terrain_grid": terrain_grid,
             "extra_files": ["events", "edges"],
             "lead": spec.get("lead", ""),
