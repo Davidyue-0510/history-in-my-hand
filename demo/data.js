@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 195 个切片
+// 权威数据源：data/scenes.json 注册的 196 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 195 个切片",
+  "slice": "multi-scene · 196 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -509,7 +509,8 @@ window.SANDBOX_DATA = {
   "wangyangming",
   "zhuxi",
   "foguo_chan_llm",
-  "qianjia_puxue_llm"
+  "qianjia_puxue_llm",
+  "xu_guangqi"
  ],
  "vocab": {
   "layers": [
@@ -25145,6 +25146,41 @@ window.SANDBOX_DATA = {
     "scholarship": 10,
     "inference": 1
    }
+  },
+  "xu_guangqi": {
+   "key": "xu_guangqi",
+   "scene_id": "xu_guangqi",
+   "title": "徐光启·农政全书与西学东渐",
+   "dossier_label": "徐光启（明末·农政全书+西学东渐）",
+   "subtitle": "1562—1633 · 明",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=xu_guangqi",
+   "primary_place": null,
+   "vocab_pack": "inline:xu_guangqi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 6,
+    "place": 3,
+    "person": 4,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 0
+   }
   }
  },
  "slice_index": {
@@ -25342,7 +25378,8 @@ window.SANDBOX_DATA = {
   "wangyangming": "slices/wangyangming.js",
   "zhuxi": "slices/zhuxi.js",
   "foguo_chan_llm": "slices/foguo_chan_llm.js",
-  "qianjia_puxue_llm": "slices/qianjia_puxue_llm.js"
+  "qianjia_puxue_llm": "slices/qianjia_puxue_llm.js",
+  "xu_guangqi": "slices/xu_guangqi.js"
  },
  "corridors": [
   {

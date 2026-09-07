@@ -1,9 +1,9 @@
 {
-  "scenes_total": 195,
-  "historical": 186,
+  "scenes_total": 196,
+  "historical": 187,
   "fictional": 9,
-  "assertions_total": 3057,
-  "sources_total": 168,
+  "assertions_total": 3069,
+  "sources_total": 174,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -60,7 +60,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 288,
+  "leads_total": 289,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1480,6 +1480,13 @@
       "kind": "thought",
       "assertions": 16,
       "factions": {}
+    },
+    {
+      "id": "xu_guangqi",
+      "title": "徐光启·农政全书与西学东渐",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1677,6 +1684,7 @@
     "wangyangming": "王阳明·心学",
     "zhuxi": "朱熹·理学",
     "foguo_chan_llm": "唐代佛教东传与禅宗",
-    "qianjia_puxue_llm": "清代乾嘉朴学"
+    "qianjia_puxue_llm": "清代乾嘉朴学",
+    "xu_guangqi": "徐光启·农政全书与西学东渐"
   }
 }

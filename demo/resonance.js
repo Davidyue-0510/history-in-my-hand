@@ -171,6 +171,7 @@ window.SANDBOX_RESONANCE = {
    "xiaoyaojin",
    "xinhai",
    "xiyu_dunhu_llm",
+   "xu_guangqi",
    "xuanwu",
    "xuanzang",
    "yaksa",
@@ -3321,6 +3322,26 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": "event:ev_xiyu_dunhu_llm_01",
    "best_resonance": 0.0
+  },
+  {
+   "scene": "xu_guangqi",
+   "name": "xu_guangqi",
+   "total": 12,
+   "layers": {
+    "record": 9,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "清方": 4,
+    "明方": 5,
+    "综述考订": 3
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.333,
+   "best_event": "event:ganshu",
+   "best_resonance": 0.333
   },
   {
    "scene": "xuanwu",

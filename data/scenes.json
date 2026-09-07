@@ -398,7 +398,8 @@
   "wangyangming",
   "zhuxi",
   "foguo_chan_llm",
-  "qianjia_puxue_llm"
+  "qianjia_puxue_llm",
+  "xu_guangqi"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -15831,6 +15832,95 @@
    "province": [
     "hunan",
     "henan"
+   ]
+  },
+  "xu_guangqi": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "title": "徐光启·农政全书与西学东渐",
+   "dossier_label": "徐光启（明末·农政全书+西学东渐）",
+   "subtitle": "1562—1633 · 明",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "places",
+    "events"
+   ],
+   "lead": "徐光启（1562—1633）明末科学家、农学家，松江府上海县人。与利玛窦合译《几何原本》、编撰《农政全书》、主持修《崇祯历书》、引种甘薯，倡'欲求超胜、必须会通'之中西融合论，开经世实学先声。本场景由真实史料（《明史·徐光启传》+《几何原本序》+《农政全书》+方豪《中西交通史》）经 G1 工具零手 authoring 派生推演三件套（places/control/sim_config），产物标 _auto_derived，反事实分支 id 以 whatif 前缀；补全局最薄之技术维(2)与思想维(5)。",
+   "parties_note": "立场靠来源派生：明方（《明史》记仕履、《几何原本序》《农政全书》为亲撰）记译介与农政细节；清方修《明史》载入阁与历局；明·学界（方豪等）作现代接受史考订。",
+   "subject_names": {
+    "person:xuguangqi": "徐光启",
+    "institution:nongzheng": "农政全书",
+    "institution:taixi_shuifa": "泰西水法",
+    "thought:huitong": "中西会通",
+    "event:jihu_yuanben": "译几何原本",
+    "event:ganshu": "甘薯引种",
+    "event:lichu": "设历局修历",
+    "geo:shanghai": "上海（故里）",
+    "geo:beijing": "北京（译经·历局）",
+    "geo:nanjing": "南京（西学接触）"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "doctrine",
+      "strategic"
+     ],
+     "from_dims": [
+      5,
+      3
+     ],
+     "layer": "inference",
+     "note": "徐光启：会通中西之论冲击'夷夏之防'，实学入阁为明代汉人科学家参政之先，朝堂凝聚力随西学接受度而变。"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "徐光启：农政全书集农学大成、甘薯高产救灾，西方灌溉机械与实测历法降低农业与测算成本，物质生产力提升。"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "徐光启：甘薯引种与农政推广改善江南民食、备荒活人，经世实学下沉民间，社会动员以农政为纽。"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "anchors",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "徐光启：上海—北京—南京三地串联传教士网络与历局，西学东渐以江南为基地、京师为枢，地缘链路贯通中外。"
+    }
+   },
+   "province": [
+    "shanghai",
+    "beijing",
+    "jiangsu"
    ]
   },
   "bisheng_movable_type": {

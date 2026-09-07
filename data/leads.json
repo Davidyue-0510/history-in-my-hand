@@ -4015,6 +4015,22 @@
    "_src_line": 13
   },
   {
+   "id": "xg11",
+   "scene": "xu_guangqi",
+   "subject": "thought:huitong",
+   "title": "徐光启会通路线在清代未成官学主干，西学东渐势头转缓，实测之学得至清中后始渐复兴。",
+   "missing": "多源比对 / 接受史梳理",
+   "where": "清儒学案与西学接受史对读",
+   "skills": [
+    "多源比对",
+    "接受史梳理"
+   ],
+   "accept": "补清代官学对会通路线之接受缺口",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "XUANWUG01",
    "scene": "xuanwu",
    "subject": "event:xx_626",

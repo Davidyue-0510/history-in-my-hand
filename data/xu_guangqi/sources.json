@@ -1,0 +1,10 @@
+{
+ "sources": [
+  {"id":"src_mingshi","title":"《明史·徐光启传》","label":"《明史·徐光启传》","party":"清方","availability":"free","bias_note":"清修《明史》卷二五一《徐光启传》：记其进士、入阁、历局、农政等仕履。","distance_label":"清官修正史（清方立场，记仕履较详）","type":"正史","citation":"《明史》卷二五一《徐光启传》","url":"","note":"清修《明史》记徐光启仕履。"},
+  {"id":"src_geo","title":"徐光启《几何原本序》·利玛窦《乾坤体义》","label":"徐光启《几何原本序》","party":"明方","availability":"free","bias_note":"徐光启自序记与利玛窦合译《几何原本》、'由数达理'之旨；利玛窦《乾坤体义》载西学东传。","distance_label":"明人亲历文献（明方立场）","type":"专著","citation":"徐光启《几何原本序》；利玛窦《乾坤体义》","url":"","note":"明人亲历文献。"},
+  {"id":"src_nongzheng","title":"徐光启《农政全书》","label":"《农政全书》","party":"明方","availability":"free","bias_note":"徐光启撰、陈子龙等崇祯十二年为刊；六十卷集历代农学，立农本、备荒政。","distance_label":"明人亲撰农书（明方立场）","type":"专著","citation":"徐光启《农政全书》（陈子龙刊）","url":"","note":"徐光启亲撰农书。"},
+  {"id":"src_xuji","title":"《徐光启集》","label":"《徐光启集》","party":"明方","availability":"free","bias_note":"徐光启文集，收'欲求超胜、必须会通'等中西会通之论。","distance_label":"明人亲撰文集（明方立场）","type":"文集","citation":"《徐光启集》（中华书局）","url":"","note":"徐光启文集。"},
+  {"id":"src_fanghao","title":"方豪《中西交通史》","label":"方豪《中西交通史》","party":"明·学界","availability":"not_free","bias_note":"现代学界考订徐光启会通路线在清代未成官学主干、西学东渐势头转缓。","distance_label":"现代专著（学界综合考订）","type":"专著","citation":"方豪《中西交通史》（岳麓书社）","url":"","note":"现代学界考订。"},
+  {"id":"src_lishu","title":"《崇祯历书》","label":"《崇祯历书》","party":"明·学界","availability":"free","bias_note":"徐光启主持、采用第谷体系之历法丛书；清代改名《西洋新法历书》行用。","distance_label":"明官修历书（学界考订）","type":"官修","citation":"《崇祯历书》","url":"","note":"明官修历书。"}
+ ]
+}

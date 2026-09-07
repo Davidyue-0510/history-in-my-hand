@@ -1,0 +1,28 @@
+{
+  "places": [
+    {
+      "id": "shanghai",
+      "name": "上海县（徐光启故里·农政全书 base）",
+      "lon": 121.47,
+      "lat": 31.23,
+      "province": "shanghai",
+      "role": "徐光启故乡（松江府上海县），编撰农政全书、引种甘薯"
+    },
+    {
+      "id": "beijing",
+      "name": "北京（译几何原本·历局）",
+      "lon": 116.4,
+      "lat": 39.9,
+      "province": "beijing",
+      "role": "与利玛窦合译几何原本、设历局修崇祯历书、入阁"
+    },
+    {
+      "id": "nanjing",
+      "name": "南京（西学早期接触）",
+      "lon": 118.78,
+      "lat": 32.06,
+      "province": "jiangsu",
+      "role": "利玛窦南京住所、徐光启早年西学接触地"
+    }
+  ]
+}

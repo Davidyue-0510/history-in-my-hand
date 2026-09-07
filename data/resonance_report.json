@@ -169,6 +169,7 @@
       "xiaoyaojin",
       "xinhai",
       "xiyu_dunhu_llm",
+      "xu_guangqi",
       "xuanwu",
       "xuanzang",
       "yaksa",
@@ -3319,6 +3320,26 @@
       "avg_resonance": 0.0,
       "best_event": "event:ev_xiyu_dunhu_llm_01",
       "best_resonance": 0.0
+    },
+    {
+      "scene": "xu_guangqi",
+      "name": "xu_guangqi",
+      "total": 12,
+      "layers": {
+        "record": 9,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "清方": 4,
+        "明方": 5,
+        "综述考订": 3
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.333,
+      "best_event": "event:ganshu",
+      "best_resonance": 0.333
     },
     {
       "scene": "xuanwu",
@@ -21211,6 +21232,46 @@
       }
     },
     {
+      "subject": "event:ganshu",
+      "name": "event:ganshu",
+      "scenes": [
+        "xu_guangqi"
+      ],
+      "scene_names": [
+        "xu_guangqi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "xg5",
+            "predicate": "introduce",
+            "value_text": "自闽引种甘薯（番薯）于江南，著《甘薯疏》推行高产作物，倡备荒救饥，活人甚众。",
+            "source": "src_nongzheng",
+            "layer": "record",
+            "scene": "xu_guangqi"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:guangning_founded",
       "name": "event:guangning_founded",
       "scenes": [
@@ -21425,6 +21486,46 @@
             "scene": "liaoyang"
           }
         ]
+      }
+    },
+    {
+      "subject": "event:jihu_yuanben",
+      "name": "event:jihu_yuanben",
+      "scenes": [
+        "xu_guangqi"
+      ],
+      "scene_names": [
+        "xu_guangqi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 1,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [
+          {
+            "id": "xg3",
+            "predicate": "translate",
+            "value_text": "万历三十四年（1606）从利玛窦问学，次年合译《几何原本》前六卷，倡'由数达理'之演绎逻辑，推行西方数学入华。",
+            "source": "src_geo",
+            "layer": "record",
+            "scene": "xu_guangqi"
+          }
+        ],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
       }
     },
     {
@@ -21658,6 +21759,55 @@
         "朝鲜": [],
         "日本方": [],
         "综述考订": []
+      }
+    },
+    {
+      "subject": "event:lichu",
+      "name": "event:lichu",
+      "scenes": [
+        "xu_guangqi"
+      ],
+      "scene_names": [
+        "xu_guangqi"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "1/3",
+      "coverage_frac": 0.333,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.333,
+      "party_counts": {
+        "明方": 0,
+        "清方": 1,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 1
+      },
+      "parties": {
+        "明方": [],
+        "清方": [
+          {
+            "id": "xg7",
+            "predicate": "calendar",
+            "value_text": "崇祯二年（1629）奉敕设历局，采第谷（Tycho）天文体系，行新历测算，主持修《崇祯历书》。",
+            "source": "src_mingshi",
+            "layer": "record",
+            "scene": "xu_guangqi"
+          }
+        ],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": [
+          {
+            "id": "xg7b",
+            "predicate": "lishu",
+            "value_text": "修《崇祯历书》百余卷，采第谷（Tycho）本轮—均轮体系，测交食密合天象，为清代《西洋新法历书》所承。",
+            "source": "src_lishu",
+            "layer": "record",
+            "scene": "xu_guangqi"
+          }
+        ]
       }
     },
     {

@@ -172,6 +172,7 @@
 | xiaoyaojin | 14 | 3 | **0.000** | event:xy_cao（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
 | xinhai | 18 | 3 | **0.000** | event:xh_1010（0.000） | gap 1 / inference 3 / record 10 / scholarship 4 |
 | xiyu_dunhu_llm | 19 | 2 | **0.000** | event:ev_xiyu_dunhu_llm_01（0.000） | gap 4 / inference 1 / record 11 / scholarship 3 |
+| xu_guangqi | 12 | 3 | **0.333** | event:ganshu（0.333） | gap 1 / record 9 / scholarship 2 |
 | xuanwu | 16 | 2 | **0.000** | event:xx_626（0.000） | gap 1 / inference 1 / record 12 / scholarship 2 |
 | xuanzang | 11 | 2 | **0.000** | event:xz_629（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | yaksa | 14 | 3 | **0.000** | event:yk_e（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
@@ -755,16 +756,19 @@
 | event:fuzhou_fall | fuzhou | **0.333** | 2/3 | 0.00 | 0.50 | 4 | 0 / 2 / 2 / 0 |
 | event:fuzhou_founded | fuzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:gaizhou_founded | gaizhou | **0.333** | 1/3 | 0.00 | 0.00 | 4 | 0 / 4 / 0 / 0 |
+| event:ganshu | xu_guangqi | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:guangning_founded | guangning | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:guangning_zhen | guangning | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:haizhou_founded | haizhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:haizhou_mashi | haizhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | 浑河之战（1621） | 辽阳 | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 1 / 0 / 2 |
+| event:jihu_yuanben | xu_guangqi | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:jinzhou_founded | jinzhou | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_fall | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:jinzhouwei_founded | jinzhouwei | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
 | event:juehua_garrison | juehua | **0.333** | 1/3 | 0.00 | 0.00 | 5 | 0 / 1 / 0 / 4 |
 | event:juehua_strategy | juehua | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 0 / 1 / 0 / 0 |
+| event:lichu | xu_guangqi | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 1 / 0 / 1 |
 | event:ningxia_qibing | ningxia | **0.333** | 1/3 | 0.00 | 0.00 | 3 | 0 / 3 / 0 / 0 |
 | event:ningyuan_wusangui | ningyuan | **0.333** | 1/3 | 0.00 | 0.00 | 1 | 1 / 0 / 0 / 0 |
 | event:renchen_baofa | imjin | **0.333** | 1/3 | 0.00 | 0.00 | 2 | 0 / 0 / 2 / 0 |

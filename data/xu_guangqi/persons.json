@@ -1,0 +1,8 @@
+{
+ "persons": [
+  {"id":"xuguangqi","name":"徐光启","alias":"字子先·号玄扈","era":"明","role":"礼部尚书兼东阁大学士·科学家","note":"编《农政全书》、译《几何原本》、修《崇祯历书》，倡中西会通。","primary_source":"《明史·徐光启传》"},
+  {"id":"limaqiao","name":"利玛窦","alias":"Matteo Ricci","era":"明","role":"耶稣会传教士","note":"与徐光启合译《几何原本》，西学东渐关键人物。","primary_source":"《几何原本序》"},
+  {"id":"xiongsanba","name":"熊三拔","alias":"Sabatino de Ursis","era":"明","role":"耶稣会传教士","note":"与徐光启合译《泰西水法》。","primary_source":"《泰西水法》"},
+  {"id":"chenzilong","name":"陈子龙","alias":"字卧子","era":"明","role":"文人·编辑","note":"崇祯十二年（1639）刊行《农政全书》。","primary_source":"《农政全书》"}
+ ]
+}

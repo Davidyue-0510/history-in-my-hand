@@ -1,0 +1,8 @@
+{
+ "events": [
+  {"id":"evt_jihu_yuanben","title":"徐光启·利玛窦合译《几何原本》","era":"明万历三十五年","year":1607,"kind":"institution","subject":"event:jihu_yuanben","text":"万历三十五年（1607），徐光启与利玛窦合译《几何原本》前六卷，自序'由数达理'，西方演绎逻辑入华。"},
+  {"id":"evt_ganshu","title":"甘薯引种江南","era":"明万历二十二年","year":1594,"kind":"institution","subject":"event:ganshu","text":"万历二十二年（1594）前后，徐光启自闽引种甘薯于江南，著《甘薯疏》倡备荒救饥。"},
+  {"id":"evt_lichu","title":"设历局修《崇祯历书》","era":"明崇祯二年","year":1629,"kind":"institution","subject":"event:lichu","text":"崇祯二年（1629），徐光启奉敕设历局，采第谷天文体系，主持修《崇祯历书》。"},
+  {"id":"evt_xu_zu","title":"徐光启卒·入阁","era":"明崇祯六年","year":1633,"kind":"event","text":"崇祯六年（1633），徐光启以礼部尚书兼东阁大学士入阁，同年卒于北京。"}
+ ]
+}
