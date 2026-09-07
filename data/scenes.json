@@ -393,7 +393,8 @@
   "cailun_zaozhi",
   "bisheng_movable_type",
   "compass_navigation",
-  "gunpowder_warfare"
+  "gunpowder_warfare",
+  "susong_llm"
  ],
  "scenes": {
   "han_wudi_ruxue": {
@@ -16090,6 +16091,80 @@
     "jiangxi",
     "henan",
     "ningxia"
+   ]
+  },
+  "susong_llm": {
+   "kind": "tech",
+   "region": "tech",
+   "province": null,
+   "title": "苏颂·水运仪象台",
+   "dossier_label": null,
+   "subtitle": "北宋汴京水力天文钟与擒纵",
+   "primary_place": "bianjing",
+   "dossier_event": "event:ev_susong_llm_01",
+   "vocab_pack": "susong_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "苏颂·水运仪象台：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "苏颂·水运仪象台：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "苏颂·水运仪象台：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "苏颂·水运仪象台：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    6
    ]
   }
  },

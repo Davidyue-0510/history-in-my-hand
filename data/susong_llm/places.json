@@ -1,0 +1,24 @@
+{
+ "places": [
+  {
+   "id": "bianjing",
+   "name": "汴京",
+   "type": "city",
+   "modern": "今中国河南开封",
+   "note": "北宋都城，水运仪象台建造地",
+   "lon": 114.34,
+   "lat": 34.8
+  },
+  {
+   "id": "tongan",
+   "name": "同安",
+   "type": "county",
+   "modern": "今福建厦门同安",
+   "note": "苏颂籍贯",
+   "lon": 118.15,
+   "lat": 24.73
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

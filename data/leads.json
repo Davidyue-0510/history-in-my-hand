@@ -3365,6 +3365,22 @@
    "_src_line": 14
   },
   {
+   "id": "SUS_015",
+   "scene": "susong_llm",
+   "subject": "event:ev_susong_llm_02",
+   "title": "擒纵机构具体构造不明",
+   "missing": "机械工程 / 古文献解读",
+   "where": "《新仪象法要》图样",
+   "skills": [
+    "机械工程",
+    "古文献解读"
+   ],
+   "accept": "需结合考古与复原实验",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "TAIPINGG01",
    "scene": "taiping",
    "subject": "event:tp_1851",

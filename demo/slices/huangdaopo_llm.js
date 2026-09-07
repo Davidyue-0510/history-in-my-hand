@@ -115,49 +115,25 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
  ],
  "places": [
   {
-   "id": "huangdaopo_llm_yazhou",
-   "name": "崖州",
-   "type": "region",
-   "modern": "今中国海南",
-   "note": "黄道婆学艺之地",
-   "_source_idx": 0,
-   "_source_name": "辍耕录·黄道婆",
-   "_source_party": "元笔记",
-   "_source_credibility": null,
-   "lon": 109.5,
-   "lat": 18.25,
-   "geo_unresolved": false,
-   "elev": 37
+   "id": "huangdaopo_llm_wunijing",
+   "name": "乌泥泾",
+   "lon": 121.43,
+   "lat": 31.12,
+   "elev": 11
   },
   {
    "id": "huangdaopo_llm_songjiang",
    "name": "松江",
-   "type": "region",
-   "modern": "今中国上海",
-   "note": "黄道婆归乡之地",
-   "_source_idx": 0,
-   "_source_name": "辍耕录·黄道婆",
-   "_source_party": "元笔记",
-   "_source_credibility": null,
    "lon": 121.23,
-   "lat": 31.0,
-   "geo_unresolved": false,
+   "lat": 31,
    "elev": 12
   },
   {
-   "id": "huangdaopo_llm_wunijing",
-   "name": "乌泥泾",
-   "type": "yi",
-   "modern": "今中国上海华泾镇",
-   "note": "黄道婆传艺之地",
-   "_source_idx": 0,
-   "_source_name": "辍耕录·黄道婆",
-   "_source_party": "元笔记",
-   "_source_credibility": null,
-   "lon": 121.43,
-   "lat": 31.12,
-   "geo_unresolved": false,
-   "elev": 11
+   "id": "huangdaopo_llm_yazhou",
+   "name": "崖州",
+   "lon": 109.5,
+   "lat": 18.25,
+   "elev": 37
   }
  ],
  "persons": [
@@ -669,9 +645,42 @@ window.SANDBOX_SLICES["huangdaopo_llm"] = {
    "_source_credibility": null
   }
  ],
- "control": [],
- "control_seats": [],
- "control_years": null,
+ "control": [
+  {
+   "place_id": "huangdaopo_llm_wunijing",
+   "party": "综合史料",
+   "start": 1295,
+   "end": 1300,
+   "timeline": "main"
+  },
+  {
+   "place_id": "huangdaopo_llm_songjiang",
+   "party": "综合史料",
+   "start": 1295,
+   "end": 1300,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "huangdaopo_llm_wunijing",
+   "name": "乌泥泾",
+   "lon": 121.43,
+   "lat": 31.12,
+   "region": "jiangnan"
+  },
+  {
+   "place_id": "huangdaopo_llm_songjiang",
+   "name": "松江",
+   "lon": 121.23,
+   "lat": 31,
+   "region": "jiangnan"
+  }
+ ],
+ "control_years": [
+  1295,
+  1300
+ ],
  "vocab": {
   "layers": [
    "record",

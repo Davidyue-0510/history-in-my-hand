@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_susong_llm_01",
+   "subject": "event:ev_susong_llm_01",
+   "year": 1086,
+   "era": "元祐元年",
+   "title": "受命研制",
+   "kind": "建置",
+   "text": "苏颂受命组织韩公廉等研制水运仪象台",
+   "_source_idx": 0,
+   "_source_name": "苏颂水运仪象台(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_susong_llm_02",
+   "subject": "event:ev_susong_llm_02",
+   "year": 1092,
+   "era": "元祐七年",
+   "title": "竣工",
+   "kind": "建置",
+   "text": "水运仪象台在汴京竣工",
+   "_source_idx": 0,
+   "_source_name": "苏颂水运仪象台(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

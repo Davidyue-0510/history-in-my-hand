@@ -1,9 +1,9 @@
 {
-  "scenes_total": 190,
-  "historical": 181,
+  "scenes_total": 191,
+  "historical": 182,
   "fictional": 9,
-  "assertions_total": 2925,
-  "sources_total": 163,
+  "assertions_total": 2940,
+  "sources_total": 164,
   "factions_total": 9,
   "vocab_packs": [
     "aomen_portugal_llm",
@@ -40,6 +40,7 @@
     "sui_canal_llm",
     "sui_mie_chen_llm",
     "sui_yang_llm",
+    "susong_llm",
     "tang",
     "tang_anshi_llm",
     "tang_huangchao_llm",
@@ -53,7 +54,7 @@
     "zheng_chenggong_taiwan_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 280,
+  "leads_total": 281,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1438,6 +1439,13 @@
       "kind": "tech",
       "assertions": 11,
       "factions": {}
+    },
+    {
+      "id": "susong_llm",
+      "title": "苏颂·水运仪象台",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1630,6 +1638,7 @@
     "cailun_zaozhi": "蔡伦·造纸",
     "bisheng_movable_type": "毕昇·活字印刷",
     "compass_navigation": "指南针·航海",
-    "gunpowder_warfare": "火药·军事化"
+    "gunpowder_warfare": "火药·军事化",
+    "susong_llm": "苏颂·水运仪象台"
   }
 }

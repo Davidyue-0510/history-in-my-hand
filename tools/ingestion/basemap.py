@@ -356,6 +356,34 @@ def build_basemap(bundle, shell=False):
     return emb
 
 
+def build_china_overview():
+    """whatif 通用查看器专用：全国尺度真实省界底图。
+
+    单一真值——gen_china_basemap.py（写 demo/terrain/china_basemap.js）与
+    gen_map_preview.py（视觉证据 SVG）都调用本函数，避免参数漂移。
+
+    返回 {coastline, land, admin1, rivers, lakes, _bbox}：
+      - 省界 admin1：nd=3 保锐利（全国视图下省界仍清晰），stride=1 不抽稀；
+      - 河流/湖泊：nd=3，stride=2（细节保留、体积减半）；
+      - 陆地/海岸：nd=2，stride=2（轮廓即可，体积大砍）。
+    诚实边界：这是现代中国政区参考（Natural Earth 公共领域），非场景所属朝代精确边界。
+    """
+    out = {
+        "land": clip_layer("land", CHINA_BBOX, nd=2),
+        "coastline": clip_layer("coastline", CHINA_BBOX, nd=2),
+        "admin1": clip_layer("admin1", CHINA_BBOX, _CN_PROV_ZH, nd=3),
+        "rivers": clip_layer("rivers", CHINA_BBOX, nd=3),
+        "lakes": clip_layer("lakes", CHINA_BBOX, nd=3),
+    }
+    out["land"] = [{"g": _decimate_geom(f["g"], 2), "n": f.get("n")} for f in out["land"]]
+    out["coastline"] = [{"g": _decimate_geom(f["g"], 2), "n": f.get("n")} for f in out["coastline"]]
+    out["admin1"] = [{"g": _decimate_geom(f["g"], 1), "n": f.get("n")} for f in out["admin1"]]
+    out["rivers"] = [{"g": _decimate_geom(f["g"], 2), "n": f.get("n")} for f in out["rivers"]]
+    out["lakes"] = [{"g": _decimate_geom(f["g"], 2), "n": f.get("n")} for f in out["lakes"]]
+    out["_bbox"] = [round(x, 3) for x in CHINA_BBOX]
+    return out
+
+
 if __name__ == "__main__":
     # 自检：裁剪辽宁场景，看要素数量
     test = {"places": [{"lon": 123.43, "lat": 41.80}, {"lon": 124.1, "lat": 41.9}],

@@ -1,0 +1,23 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "susong_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1086,
+  1092
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1092,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.92 / 史实 0.92（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

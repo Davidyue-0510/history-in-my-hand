@@ -1,0 +1,83 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "huangdaopo_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1295,
+  1300
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1296,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.454,
+    "cum": -0.166
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1297,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.43 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.432,
+    "cum": -0.248
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1298,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.409,
+    "cum": -0.331
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1299,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.41（本支 0.39 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.386,
+    "cum": -0.414
+   }
+  },
+  {
+   "kind": "divergence",
+   "year": 1300,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.36 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.363,
+    "cum": -0.497
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1300,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.36 / 史实 0.86（偏离 -0.50）",
+   "evidence": {
+    "cum": -0.497,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

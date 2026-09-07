@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "SUS__p01",
+   "name": "苏颂",
+   "role": "北宋天文学家、药物学家",
+   "note": "主持研制水运仪象台",
+   "_source_idx": 0,
+   "_source_name": "苏颂水运仪象台(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SUS__p02",
+   "name": "韩公廉",
+   "role": "工匠",
+   "note": "参与研制水运仪象台",
+   "_source_idx": 0,
+   "_source_name": "苏颂水运仪象台(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

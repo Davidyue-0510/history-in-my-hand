@@ -108,6 +108,8 @@
     </main>
   </div>
 </div>
+<script src="terrain/china_coarse.js"></script>
+<script src="terrain/china_basemap.js"></script>
 <script>
 (function(){
   'use strict';
@@ -142,23 +144,72 @@
 
   var STATE = { mode:'branch', year:0 };
 
-  // 示意中国疆域底图（真实经纬度投影，非精确政区）。顺时针粗略轮廓，仅作地理定位底。
-  var CHINA_OUTLINE = [
-    [134.3,48.4],[133.0,45.3],[131.2,44.9],[130.6,42.9],[128.2,42.0],
-    [126.0,41.0],[123.8,39.9],[121.6,38.7],[118.8,38.7],[119.2,37.4],
-    [122.6,37.4],[120.8,34.3],[120.3,32.5],[121.9,31.0],[121.5,29.0],
-    [120.1,27.2],[119.3,25.4],[117.5,23.7],[113.6,22.2],[110.4,21.0],
-    [108.5,21.5],[106.7,22.4],[103.5,22.6],[101.5,21.2],[99.2,22.4],
-    [97.7,24.2],[98.6,25.9],[97.5,28.4],[98.7,27.7],[95.5,29.0],
-    [92.0,28.0],[88.8,27.8],[85.0,28.3],[81.5,30.2],[78.8,32.5],
-    [79.5,34.5],[75.0,36.5],[73.5,39.5],[75.0,40.5],[80.5,42.5],
-    [82.5,45.0],[85.0,47.0],[87.5,49.0],[91.0,47.8],[96.0,42.8],
-    [100.0,42.5],[105.0,41.8],[111.0,43.5],[115.0,45.0],[119.0,46.5],
-    [122.0,46.5],[126.0,48.5],[127.5,50.2],[124.0,53.0],[125.5,53.5],
-    [127.5,50.5],[130.5,48.5],[134.3,48.4]
-  ];
-  var RIVER_HUANGHE = [[96,35],[99,36],[103,36],[105,37],[108,38],[109,40],[111,41],[112,40],[115,40],[117,37],[119,37],[119,38]];
-  var RIVER_CHANGJIANG = [[91,33],[95,32],[100,31],[104,29],[107,30],[110,30],[113,30],[116,29.5],[118,32],[121,31]];
+  // 真实底图来源（不再是手绘轮廓）：
+  //   - 地形：window.SANDBOX_TERRAIN['china_coarse']（china_coarse.js，DEM 高程网格）
+  //   - 省界/河流/湖泊/海岸：window.SANDBOX_BASEMAP['china']（china_basemap.js，Natural Earth 1:50m 公共领域）
+  // 诚实边界：现代中国政区参考，非场景所属朝代精确边界。
+  var BM = (window.SANDBOX_BASEMAP && window.SANDBOX_BASEMAP['china']) || null;
+  var TG = (window.SANDBOX_TERRAIN && window.SANDBOX_TERRAIN['china_coarse']) || null;
+
+  // 全国视图等距投影（与 gen_map_preview.py 严格一致）
+  var MAP_W=720, MAP_H=400, MAP_padL=44, MAP_padR=18, MAP_padT=16, MAP_padB=30;
+  var MAP_LON0=73, MAP_LON1=135, MAP_LAT0=18, MAP_LAT1=54;
+  function MAP_px(lon){ return MAP_padL+(lon-MAP_LON0)/(MAP_LON1-MAP_LON0)*(MAP_W-MAP_padL-MAP_padR); }
+  function MAP_py(lat){ return MAP_padT+(MAP_LAT1-lat)/(MAP_LAT1-MAP_LAT0)*(MAP_H-MAP_padT-MAP_padB); }
+  function _pt2s(pt){ return MAP_px(pt[0]).toFixed(1)+','+MAP_py(pt[1]).toFixed(1); }
+  function _geomSVG(g, style){
+    if(!g) return '';
+    var t=g.type, c=g.coordinates;
+    if(t==='Polygon') return c.map(function(r){ return '<polygon points="'+r.map(_pt2s).join(' ')+'" style="'+style+'"/>'; }).join('');
+    if(t==='MultiPolygon') return c.map(function(poly){ return poly.map(function(r){ return '<polygon points="'+r.map(_pt2s).join(' ')+'" style="'+style+'"/>'; }).join(''); }).join('');
+    if(t==='LineString') return '<polyline points="'+c.map(_pt2s).join(' ')+'" style="'+style+'"/>';
+    if(t==='MultiLineString') return c.map(function(line){ return '<polyline points="'+line.map(_pt2s).join(' ')+'" style="'+style+'"/>'; }).join('');
+    return '';
+  }
+  function terrainURL(){
+    if(STATE._terr) return STATE._terr;
+    if(!TG) return null;
+    var nx=TG.nx, ny=TG.ny, E=TG.elev;
+    var cv=document.createElement('canvas'); cv.width=nx; cv.height=ny;
+    var ctx=cv.getContext('2d'); var img=ctx.createImageData(nx,ny);
+    var emax=0; for(var k=0;k<E.length;k++) if(E[k]>emax) emax=E[k];
+    function shade(j,i){
+      var il=Math.max(0,i-1), ir=Math.min(nx-1,i+1), ju=Math.max(0,j-1), jd=Math.min(ny-1,j+1);
+      var dzdx=E[j*nx+ir]-E[j*nx+il];
+      var dzdy=E[jd*nx+i]-E[ju*nx+i];
+      var nzv=60, nxv=-dzdx, nyv=-dzdy;
+      var ll=Math.sqrt(nxv*nxv+nyv*nyv+nzv*nzv);
+      return Math.max(0,(nxv*-1+nyv*-1+nzv*1)/ll);
+    }
+    for(var j=0;j<ny;j++) for(var i=0;i<nx;i++){
+      var e=E[j*nx+i]; var rr=ny-1-j; var p=(rr*nx+i)*4;
+      if(e<=0){ img.data[p+3]=0; continue; }
+      var t=Math.min(1,e/emax);
+      var r,g,b;
+      if(t<0.12){r=122;g=170;b=120;} else if(t<0.3){r=205;g=200;b=140;}
+      else if(t<0.6){r=186;g=152;b=110;} else if(t<0.85){r=150;g=118;b=86;}
+      else {r=236;g=236;b=236;}
+      var sh=shade(j,i); var kk=0.55+0.45*sh;
+      img.data[p]=Math.round(r*kk); img.data[p+1]=Math.round(g*kk); img.data[p+2]=Math.round(b*kk); img.data[p+3]=255;
+    }
+    ctx.putImageData(img,0,0);
+    STATE._terr=cv.toDataURL('image/png');
+    return STATE._terr;
+  }
+  function drawBasemapSVG(){
+    var s='';
+    (BM?BM.land:[]).forEach(function(f){ s+=_geomSVG(f.g,'fill:#ece3cc;fill-opacity:.30;'); });
+    var tu=terrainURL();
+    if(tu){
+      var x0=MAP_px(73.5), y0=MAP_py(53.6), x1=MAP_px(135.1), y1=MAP_py(18.0);
+      s+='<image href="'+tu+'" x="'+x0.toFixed(1)+'" y="'+y0.toFixed(1)+'" width="'+(x1-x0).toFixed(1)+'" height="'+(y1-y0).toFixed(1)+'" preserveAspectRatio="none"/>';
+    }
+    (BM?BM.lakes:[]).forEach(function(f){ s+=_geomSVG(f.g,'fill:#bfe0f0;fill-opacity:.55;'); });
+    (BM?BM.rivers:[]).forEach(function(f){ s+=_geomSVG(f.g,'fill:none;stroke:#7fa7c4;stroke-width:1.2;stroke-opacity:.85;'); });
+    (BM?BM.admin1:[]).forEach(function(f){ s+=_geomSVG(f.g,'fill:none;stroke:#9a8a63;stroke-width:.7;'); });
+    (BM?BM.coastline:[]).forEach(function(f){ s+=_geomSVG(f.g,'fill:none;stroke:#6a5f4f;stroke-width:1.3;'); });
+    return s;
+  }
 
   function render(D){
     var cfg = D.cfg, be = D.be || {events:[]}, hb = D.histBranch || [], hr = D.histReal || [];
@@ -195,7 +246,7 @@
     if(scenarioType==='military'){
       $('geoNote').textContent = '军事场景：地图由 sim_map.html 呈现；本页聚焦六维+时间轴的通用反事实视图。';
     } else if(STATE.mapPlan && STATE.mapPlan.nodes.length>=2){
-      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（示意疆域底图，节点按真实经纬度等距投影并叠加在疆域轮廓上，随年份依次激活；激活后热度=当年改革指数）。底图为真实经纬度投影的示意中国轮廓，非精确政区。';
+      $('geoNote').textContent = '非军事场景：下方为地理扩散叙事（真实省界+地形底图，节点按真实经纬度等距投影叠加在现代中国政区参考上，随年份依次激活；激活后热度=当年改革指数）。底图=Natural Earth 1:50m 省界/河流/湖泊/海岸 + DEM 高程网格；诚实边界：现代政区参考，非场景所属朝代精确边界。';
     } else {
       $('geoNote').textContent = '非军事场景：无领土易手，主视图为六维状态轨迹（真实 vs 反事实）；本场景节点缺地理坐标，地图叙事不可用。';
     }
@@ -355,27 +406,21 @@
   function drawMapSVG(D){
     var mp=STATE.mapPlan; if(!mp){ $('mapBlock').innerHTML=''; return; }
     var W=720,H=400,padL=44,padR=18,padT=16,padB=30;
-    var LON0=73,LON1=135,LAT0=18,LAT1=54;
-    function px(lon){ return padL+(lon-LON0)/(LON1-LON0)*(W-padL-padR); }
-    function py(lat){ return padT+(LAT1-lat)/(LAT1-LAT0)*(H-padT-padB); }
     var svg='<svg class="chart" viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet">';
-    // 示意疆域底图（真实经纬度投影，非精确政区）
-    var op = CHINA_OUTLINE.map(function(p){ return px(p[0]).toFixed(1)+','+py(p[1]).toFixed(1); }).join(' ');
-    svg+='<polygon points="'+op+'" fill="#f3ecd9" fill-opacity="0.55" stroke="#b9a87f" stroke-width="1.2"/>';
-    function riverPath(pts){ return pts.map(function(p){ return px(p[0]).toFixed(1)+','+py(p[1]).toFixed(1); }).join(' '); }
-    svg+='<polyline points="'+riverPath(RIVER_HUANGHE)+'" fill="none" stroke="#7fa7c4" stroke-width="1.4" stroke-opacity="0.85"/>';
-    svg+='<polyline points="'+riverPath(RIVER_CHANGJIANG)+'" fill="none" stroke="#7fa7c4" stroke-width="1.4" stroke-opacity="0.85"/>';
-    [80,90,100,110,120,130].forEach(function(lo){ var x=px(lo);
+    // 真实省界/地形底图（Natural Earth 省界 + DEM 高程 hillshade）
+    svg += drawBasemapSVG();
+    // 经纬网
+    [80,90,100,110,120,130].forEach(function(lo){ var x=MAP_px(lo);
       svg+='<line class="map-grid" x1="'+x+'" y1="'+padT+'" x2="'+x+'" y2="'+(H-padB)+'"/>';
       svg+='<text x="'+x+'" y="'+(H-padB+12)+'" font-size="9" fill="#9a9286" text-anchor="middle">'+lo+'°E</text>'; });
-    [20,30,40,50].forEach(function(la){ var y=py(la);
+    [20,30,40,50].forEach(function(la){ var y=MAP_py(la);
       svg+='<line class="map-grid" x1="'+padL+'" y1="'+y+'" x2="'+(W-padR)+'" y2="'+y+'"/>';
       svg+='<text x="'+(padL-4)+'" y="'+y+3+'" font-size="9" fill="#9a9286" text-anchor="end">'+la+'°N</text>'; });
     svg+='<rect x="'+padL+'" y="'+padT+'" width="'+(W-padL-padR)+'" height="'+(H-padT-padB)+'" fill="none" stroke="#c9bfa8"/>';
     var hi = histAt(D, STATE.year);
     var ri = hi ? (hi.reform_index||0) : 0;
     mp.nodes.forEach(function(nd){
-      var x=px(nd.lon), y=py(nd.lat);
+      var x=MAP_px(nd.lon), y=MAP_py(nd.lat);
       var adopted = STATE.year >= nd.adopt;
       var eng = adopted ? ri : 0;
       var fill = adopted ? colorScale(eng) : '#c9bfa8';
@@ -388,8 +433,8 @@
       svg+='</g>';
     });
     svg+='</svg>';
-    $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事 · 疆域底图（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
-      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。底图为示意中国疆域（真实经纬度等距投影，非精确政区）；蓝线为黄河/长江示意走向，供地理定位。抽象坐标场景不渲染底图。</div></div></section>';
+    $('mapBlock').innerHTML='<section class="block"><h2>地理扩散叙事 · 真实疆域底图（'+STATE.year+'）</h2><div class="c"><div class="map-wrap">'+svg+'</div>'+
+      '<div class="map-hint">节点按场景 places 顺序随年份依次激活（首节点=改革策源地，同年激活）；激活后热度=当年改革指数（'+ri.toFixed(2)+'）。底图为真实经纬度投影：地形=DEM 高程网格（china_coarse，海洋透明），省界/河流/湖泊/海岸=Natural Earth 1:50m 公共领域数据。<b>诚实边界：此为现代中国政区参考，非场景所属朝代精确边界</b>；抽象坐标场景不渲染底图。</div></div></section>';
   }
   function updateMap(D){ drawMapSVG(D); }
 

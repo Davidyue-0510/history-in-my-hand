@@ -142,6 +142,7 @@ window.SANDBOX_RESONANCE = {
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "suiyang",
+   "susong_llm",
    "taiping",
    "talas",
    "tang_anshi_llm",
@@ -2743,6 +2744,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:sy_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "susong_llm",
+   "name": "susong_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_susong_llm_01",
    "best_resonance": 0.0
   },
   {

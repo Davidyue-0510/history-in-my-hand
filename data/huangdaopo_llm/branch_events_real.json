@@ -1,0 +1,35 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "huangdaopo_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1295,
+  1300
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1300,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.695,
+    "cum": -0.165
+   }
+  },
+  {
+   "kind": "summary",
+   "year": 1300,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.70 / 史实 0.86（偏离 -0.17）",
+   "evidence": {
+    "cum": -0.165,
+    "match": 0,
+    "total": 1
+   }
+  }
+ ]
+}

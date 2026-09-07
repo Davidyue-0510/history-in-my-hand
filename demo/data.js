@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 190 个切片
+// 权威数据源：data/scenes.json 注册的 191 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 190 个切片",
+  "slice": "multi-scene · 191 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -44,6 +44,7 @@ window.SANDBOX_DATA = {
    "sui_canal_llm",
    "sui_mie_chen_llm",
    "sui_yang_llm",
+   "susong_llm",
    "tang",
    "tang_anshi_llm",
    "tang_huangchao_llm",
@@ -497,7 +498,8 @@ window.SANDBOX_DATA = {
   "cailun_zaozhi",
   "bisheng_movable_type",
   "compass_navigation",
-  "gunpowder_warfare"
+  "gunpowder_warfare",
+  "susong_llm"
  ],
  "vocab": {
   "layers": [
@@ -24962,6 +24964,38 @@ window.SANDBOX_DATA = {
     "scholarship": 3,
     "inference": 2
    }
+  },
+  "susong_llm": {
+   "key": "susong_llm",
+   "scene_id": "susong_llm",
+   "title": "苏颂·水运仪象台",
+   "dossier_label": null,
+   "subtitle": "北宋汴京水力天文钟与擒纵",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=susong_llm",
+   "primary_place": "bianjing",
+   "vocab_pack": "inline:susong_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -25154,7 +25188,8 @@ window.SANDBOX_DATA = {
   "cailun_zaozhi": "slices/cailun_zaozhi.js",
   "bisheng_movable_type": "slices/bisheng_movable_type.js",
   "compass_navigation": "slices/compass_navigation.js",
-  "gunpowder_warfare": "slices/gunpowder_warfare.js"
+  "gunpowder_warfare": "slices/gunpowder_warfare.js",
+  "susong_llm": "slices/susong_llm.js"
  },
  "corridors": [
   {

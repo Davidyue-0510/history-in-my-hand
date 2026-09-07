@@ -1,0 +1,12 @@
+{
+  "_comment": "苏颂·水运仪象台（后世官修单一控制方，北宋朝廷主持制造天文仪器）。",
+  "control": [
+    {
+      "place_id": "bianjing",
+      "party": "后世官修",
+      "start": 1086,
+      "end": 1092,
+      "timeline": "main"
+    }
+  ]
+}
