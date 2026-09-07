@@ -52,6 +52,10 @@ NEG_KW = ["废", "罢", "黜", "停", "撤", "止", "衰", "弃", "禁", "抑", 
 # 经济类关键词（在制度维基础上进一步细分 economic vs reform）
 ECON_KW = ["税", "赋", "钱", "币", "田", "均田", "两税", "租庸", "租调", "市", "商", "盐",
            "铁", "漕", "亩", "户", "口", "徭", "榷"]
+# 工程类语义关键词（水利/交通基础设施）：命中即定 scenario_type=engineering，优先于维计数。
+# 解决「大运河」等场景因社会维断言增多导致 dim4 计数盖过 dim2、被误判为 social 的问题
+# （G1 分类应反映场景实质，而非断言条数占比）。仅含运河/渠/水利等关键词的场景受影响。
+ENG_KW = ["运河", "渠", "通济", "永济", "江南河", "水利", "漕河", "河工", "堤", "桥", "堰", "闸"]
 
 
 def load_assertions(path):
@@ -205,6 +209,10 @@ def derive_scenario_type(assertions):
             if isinstance(d, int) and 1 <= d <= 6:
                 dim_count[d] += 1
     corpus = _corpus(assertions)
+
+    # 工程语义优先：运河/渠/水利等基础设施场景直接定 engineering（不被社会维条数淹没）
+    if any(k in corpus for k in ENG_KW):
+        return "engineering"
 
     score = {"thought": dim_count[5], "engineering": dim_count[2],
              "social": dim_count[4], "reform": dim_count[3], "economic": 0}

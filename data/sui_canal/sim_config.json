@@ -1,12 +1,29 @@
 {
- "_comment": "隋·大运河非军事反事实配置（G2 六维广度 · engineering 类 · v0.126）。scenario_type=engineering 扰动 技术/制度/社会/事件 四维（地理恒定占位不扰动）；real_branch=real 为史实（运河贯通，南北漕运/技术/制度连通提升），whatif 为反事实（运河未凿或中途罢废，连通未成）。base_rate 为年增速，受 local 工程征发阻力折减（见 simulate_nonmilitary）。",
- "scenario_type": "engineering",
- "dim_targets": ["技术", "制度", "社会", "事件"],
- "start_year": 605,
- "end_year": 612,
- "real_branch": "real",
- "branches": [
-  {"id": "real", "label": "史实·运河贯通", "base_rate": 0.04, "reform0": 0.4},
-  {"id": "whatif", "label": "反事实·运河未凿（或中途罢废）", "base_rate": -0.02, "reform0": 0.4}
- ]
+  "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
+  "_auto_derived": true,
+  "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=8.40 neg=0.00 sign=1），幅度由证据强度 strength=1.00 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。",
+  "scenario_type": "engineering",
+  "dim_targets": [
+    "技术",
+    "制度",
+    "社会",
+    "事件"
+  ],
+  "start_year": 605,
+  "end_year": 611,
+  "real_branch": "real",
+  "branches": [
+    {
+      "id": "real",
+      "label": "史实基准",
+      "base_rate": 0.06,
+      "reform0": 0.5
+    },
+    {
+      "id": "whatif",
+      "label": "反事实·反向推演",
+      "base_rate": -0.042,
+      "reform0": 0.5
+    }
+  ]
 }

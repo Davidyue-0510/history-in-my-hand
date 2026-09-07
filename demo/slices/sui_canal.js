@@ -439,42 +439,42 @@ window.SANDBOX_SLICES["sui_canal"] = {
    "place_id": "luoyang",
    "party": "综述考订",
    "start": 605,
-   "end": 612,
-   "timeline": "main"
-  },
-  {
-   "place_id": "zhuojun",
-   "party": "综述考订",
-   "start": 605,
-   "end": 612,
+   "end": 611,
    "timeline": "main"
   },
   {
    "place_id": "yuhang",
    "party": "综述考订",
    "start": 605,
-   "end": 612,
+   "end": 611,
+   "timeline": "main"
+  },
+  {
+   "place_id": "zhuojun",
+   "party": "综述考订",
+   "start": 605,
+   "end": 611,
    "timeline": "main"
   },
   {
    "place_id": "jiangdu",
    "party": "综述考订",
    "start": 605,
-   "end": 612,
+   "end": 611,
    "timeline": "main"
   },
   {
    "place_id": "bianzhou",
    "party": "综述考订",
    "start": 605,
-   "end": 612,
+   "end": 611,
    "timeline": "main"
   },
   {
    "place_id": "chuzhou",
    "party": "综述考订",
    "start": 605,
-   "end": 612,
+   "end": 611,
    "timeline": "main"
   }
  ],
@@ -487,17 +487,17 @@ window.SANDBOX_SLICES["sui_canal"] = {
    "region": "sui_tang"
   },
   {
-   "place_id": "zhuojun",
-   "name": "涿郡（今北京）",
-   "lon": 116.4,
-   "lat": 39.9,
-   "region": "sui_tang"
-  },
-  {
    "place_id": "yuhang",
    "name": "余杭（今杭州）",
    "lon": 120.15,
    "lat": 30.27,
+   "region": "sui_tang"
+  },
+  {
+   "place_id": "zhuojun",
+   "name": "涿郡（今北京）",
+   "lon": 116.4,
+   "lat": 39.9,
    "region": "sui_tang"
   },
   {
@@ -524,7 +524,7 @@ window.SANDBOX_SLICES["sui_canal"] = {
  ],
  "control_years": [
   605,
-  612
+  611
  ],
  "faction_geo": {
   "donglin": {
