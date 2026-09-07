@@ -1,51 +1,27 @@
-// 军事推演初始条件（IC，维度#16）— 由 tools/derivation/derive_military_sim.py 自动派生
-// 单一信息源 = military_seeds/liaodong.json（场景专属）+ military_seeds/_shared.json（通用三阶层模型）。
-// 标 _auto_derived=true：派生产物，非手 authoring 考据；勿手改本文件，改种子后重跑生成器。
-window.SIM_IC = {
+{
   "meta": {
-    "scene": "liaodong",
-    "year0": 1616,
-    "derivedFrom": "SIM_DATA.startControl (data/control_liaodong.json)",
-    "note": "初始控制态=史实1616年真实控制；参数默认值=锚定重放（执行力/扩散=1 → 100% 重放）",
+    "scene": "sarhu",
+    "year0": 1618,
+    "derivedFrom": "SIM_DATA_SARHU.startControl (data/sarhu/control.json)",
+    "note": "初始控制态=史实1618年真实控制（抚顺/清河已陷、赫图阿拉为后金都）；参数默认值=锚定重放（执行力/扩散=1 → 100% 重放四路尽墨）",
     "_auto_derived": true
   },
   "control": {
     "hetuala": "清方",
-    "fushun": "明方",
-    "qinghe": "明方",
-    "kaiyuan": "明方",
-    "tieling": "明方",
+    "jiefan": "清方",
+    "sarhu": "清方",
+    "jilinya": "清方",
+    "fushun": "清方",
+    "qinghe": "清方",
     "shenyang": "明方",
-    "liaoyang": "明方",
-    "gaizhou": "明方",
-    "haizhou": "明方",
-    "niuzhuang": "明方",
-    "yaozhou": "明方",
-    "xiongyue": "明方",
-    "fuzhou": "明方",
-    "jinzhou_dalian": "明方",
-    "lushun": "明方",
-    "guangning": "明方",
-    "yizhou": "明方",
-    "jinzhou": "明方",
-    "dalinghe": "明方",
-    "songshan": "明方",
-    "xingshan": "明方",
-    "ningyuan": "明方",
-    "shanhaiquan": "明方",
-    "horqin": "明方",
-    "chahar": "明方",
-    "harqin": "明方",
-    "tumed": "明方",
-    "ordos": "明方",
-    "jizhou": "明方",
-    "beijing": "明方",
-    "xuanfu": "明方",
-    "datong": "明方",
-    "ningguta": "清方",
-    "jilin": "清方",
-    "qiqihar": "清方",
-    "aigun": "清方"
+    "kaiyuan": "明方",
+    "kuandian": "明方",
+    "shangjianya": "明方",
+    "feifenshan": "明方",
+    "niumaozhai": "明方",
+    "abudaligang": "明方",
+    "fucha": "明方",
+    "yehe": "明方"
   },
   "params": {
     "qingExec": 1,
@@ -74,7 +50,7 @@ window.SIM_IC = {
         "qiaoyilang"
       ],
       "side": "ming",
-      "label": "明方·封疆"
+      "label": "明方·封疆（萨尔浒四路主将及幕僚）"
     },
     "无派系": {
       "count": 8,
@@ -171,7 +147,7 @@ window.SIM_IC = {
         "mean": 0.6,
         "sd": 0.2
       },
-      "note": "物理维度提升为必开（v0.63）：R7 三约束——①超补给半径/冬季折扣 ②抵达时间窗 ③扎营水源(BM.rivers) ④粮草可持续，均整合进 sim_engine 物理层；每处征服按最近已控基地投送距离+季节判定，超补给半径/冬季按比例削减攻击方执行力；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）"
+      "note": "物理维度提升为必开（v0.63）：R7 三约束——①超补给半径/冬季折扣 ②抵达时间窗 ③扎营水源(BM.rivers) ④粮草可持续，均整合进 sim_engine 物理层；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）"
     },
     "population": {
       "dim": 10,
@@ -194,16 +170,4 @@ window.SIM_IC = {
       "note": "九派系内斗→朝堂内耗（R6）：确定性映射为明方执行力折扣与守土崩溃风险；beliefs=各派皆信『明不亡』；参数单源=data/vocab/ming_qing.json"
     }
   }
-};
-
-// ── 派系单源挂载（#3）：见 demo/_faction_ming.js ──
-(function(){
-  var V = window.FACTION_VOCAB;
-  if(!V || typeof V.attachTo!=='function'){
-    console.error('[SIM_IC] 缺少 _faction_ming.js（派系单一真值）：请先加载它并跑 python tools/gen_faction_bundle.py。');
-    window.SIM_IC.factions = [];
-    window.SIM_IC.factionDynamics = null;
-    return;
-  }
-  V.attachTo(window.SIM_IC);
-})();
+}

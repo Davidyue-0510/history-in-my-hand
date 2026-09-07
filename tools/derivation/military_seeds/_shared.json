@@ -1,0 +1,164 @@
+{
+  "ic_params": {
+    "qingExec": 1,
+    "mingExec": 1,
+    "spreadPref": 1,
+    "centerStability": 0.9,
+    "localEduMono": 0.3,
+    "grassrootMob": 0.1,
+    "factionInfightAmp": 0,
+    "logisticsPenalty": 0,
+    "winterPenalty": 0.75
+  },
+  "ic_threeTier": {
+    "centerStability": {
+      "value": 0.9,
+      "dist": {
+        "type": "prior",
+        "mean": 0.9,
+        "sd": 0.1
+      }
+    },
+    "localEduMono": {
+      "value": 0.3,
+      "dist": {
+        "type": "prior",
+        "mean": 0.3,
+        "sd": 0.15
+      }
+    },
+    "grassrootMob": {
+      "value": 0.1,
+      "dist": {
+        "type": "prior",
+        "mean": 0.1,
+        "sd": 0.1
+      }
+    },
+    "legitimacy": {
+      "value": 0.9,
+      "dist": {
+        "type": "prior",
+        "mean": 0.9,
+        "sd": 0.1
+      }
+    },
+    "treasury": {
+      "value": 500,
+      "dist": {
+        "type": "prior",
+        "mean": 500,
+        "sd": 120
+      }
+    },
+    "milPower": {
+      "value": 100,
+      "dist": {
+        "type": "prior",
+        "mean": 100,
+        "sd": 30
+      }
+    },
+    "poverty": {
+      "value": 0.4,
+      "dist": {
+        "type": "prior",
+        "mean": 0.4,
+        "sd": 0.15
+      }
+    }
+  },
+  "ic_missing_dims": {
+    "probability": {
+      "dim": 7,
+      "status": "latent",
+      "dist": {
+        "type": "deterministic-hash",
+        "family": "FNV-1a",
+        "range": [
+          0,
+          1
+        ]
+      }
+    },
+    "logistics": {
+      "dim": 9,
+      "status": "implemented-required",
+      "dist": {
+        "type": "prior",
+        "mean": 0.6,
+        "sd": 0.2
+      },
+      "note": "物理维度提升为必开（v0.63）：R7 三约束——①超补给半径/冬季折扣 ②抵达时间窗 ③扎营水源(BM.rivers) ④粮草可持续，均整合进 sim_engine 物理层；每处征服按最近已控基地投送距离+季节判定，超补给半径/冬季按比例削减攻击方执行力；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）"
+    },
+    "population": {
+      "dim": 10,
+      "status": "partial",
+      "dist": {
+        "type": "prior",
+        "mean": 1,
+        "sd": 0.3,
+        "unit": "相对万户"
+      }
+    },
+    "faction": {
+      "dim": 3,
+      "status": "partial",
+      "dist": {
+        "type": "prior",
+        "mean": 0.6,
+        "sd": 0.2
+      },
+      "note": "九派系内斗→朝堂内耗（R6）：确定性映射为明方执行力折扣与守土崩溃风险；beliefs=各派皆信『明不亡』；参数单源=data/vocab/ming_qing.json"
+    }
+  },
+  "rules_state_vars": {
+    "control": "place_id -> 当前控制方（明方/清方/contested），主干状态",
+    "centerStability": "中枢稳定度（center 利益：稳定/发展）",
+    "localEduMono": "地方教育垄断指数（local 利益：话语权）",
+    "grassrootMob": "底层动员度（grassroot 利益：日子有盼头）",
+    "legitimacy": "政权合法性",
+    "treasury": "国库（center 资源）",
+    "milPower": "军队（center 资源）",
+    "poverty": "贫困指数（grassroot 资源约束）"
+  },
+  "rules_missing_dims": {
+    "probability": {
+      "dim": 7,
+      "status": "latent",
+      "desc": "每条史实征服的内在成功概率：intrinsicP(seed) 由 (year,place_id,to) 确定性派生，作为该转移的先验 dist。替代标量 confidence。",
+      "dist": {
+        "type": "deterministic-hash",
+        "family": "FNV-1a",
+        "range": [
+          0,
+          1
+        ],
+        "interpretation": "intrinsicP < eff(to) 则成功"
+      }
+    },
+    "logistics": {
+      "dim": 9,
+      "status": "implemented-required",
+      "desc": "物理维度提升为必开（v0.63）：R7 已整合进 sim_engine 物理层，每处征服按最近已控基地投送距离+季节判定（超补给半径/冬季按比例削减攻击方执行力），并新增三约束——①抵达时间窗 ②扎营水源(BM.rivers 邻近判定) ③粮草可持续(假定兵力×日耗×行军天数 vs 30日上限)。同源 whatif.html 行军/粮草模型；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放），故该维度「必开」指其始终被计算与展示，而非默认即打折。",
+      "dist": {
+        "type": "prior",
+        "mean": 0.6,
+        "sd": 0.2,
+        "note": "占位先验，非实测"
+      }
+    },
+    "population": {
+      "dim": 10,
+      "status": "partial",
+      "desc": "人口/经济基底：impact.json 提供 deaths/mortality（灾变），但缺每治所人口基线；阶段2以 threeTier.poverty 派生代理。",
+      "dist": {
+        "type": "prior",
+        "mean": 1,
+        "sd": 0.3,
+        "unit": "相对万户",
+        "note": "占位先验"
+      }
+    }
+  }
+}

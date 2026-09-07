@@ -1,7 +1,4 @@
-// 军事推演初始条件（IC，维度#16）— 由 tools/derivation/derive_military_sim.py 自动派生
-// 单一信息源 = military_seeds/liaodong.json（场景专属）+ military_seeds/_shared.json（通用三阶层模型）。
-// 标 _auto_derived=true：派生产物，非手 authoring 考据；勿手改本文件，改种子后重跑生成器。
-window.SIM_IC = {
+{
   "meta": {
     "scene": "liaodong",
     "year0": 1616,
@@ -194,16 +191,4 @@ window.SIM_IC = {
       "note": "九派系内斗→朝堂内耗（R6）：确定性映射为明方执行力折扣与守土崩溃风险；beliefs=各派皆信『明不亡』；参数单源=data/vocab/ming_qing.json"
     }
   }
-};
-
-// ── 派系单源挂载（#3）：见 demo/_faction_ming.js ──
-(function(){
-  var V = window.FACTION_VOCAB;
-  if(!V || typeof V.attachTo!=='function'){
-    console.error('[SIM_IC] 缺少 _faction_ming.js（派系单一真值）：请先加载它并跑 python tools/gen_faction_bundle.py。');
-    window.SIM_IC.factions = [];
-    window.SIM_IC.factionDynamics = null;
-    return;
-  }
-  V.attachTo(window.SIM_IC);
-})();
+}

@@ -1,25 +1,13 @@
-// 军事演化规则（声明式三阶层）— 由 tools/derivation/derive_military_sim.py 自动派生
-// 单一信息源 = military_seeds/sarhu.json（场景专属）+ military_seeds/_shared.json（通用 R1-R7 模型本体）。
-// 标 _auto_derived=true：派生产物，非手 authoring 考据；勿手改本文件，改种子后重跑生成器。
-window.SIM_RULES_SARHU = {
+{
   "meta": {
-    "title": "萨尔浒之战 确定性推演规则（三阶层实例化）",
-    "scene": "sarhu",
+    "title": "明末辽东—漠南 确定性推演规则（三阶层实例化）",
     "authority": "docs/04-evolution-rules.md（三阶层理性人模型）",
     "tick": 1,
     "tickUnit": "年",
     "engine": "deterministic-replay",
-    "uiHint": "世界=萨尔浒之战（1619）真实史料（15 控制点 / 6 史实转移）。机制=04 三阶层实例化：每条史实征服按 <code>intrinsicP(seed)&lt;eff</code> 确定性裁决。默认=100% 重放「四路尽墨」；调参/分支=确定性反事实。萨尔浒是单次会战，故时间窗压缩为 1618（抚顺/清河已陷）→ 1619（四路覆没）。",
     "determinism": "intrinsicP(seed) 由 (year,place_id,to) 的 FNV-1a 哈希确定性派生，无 Math.random；同参同结果可复现",
     "_auto_derived": true
   },
-  "keySeats": [
-    "sarhu",
-    "shangjianya",
-    "abudaligang",
-    "fucha",
-    "hetuala"
-  ],
   "state_vars": {
     "control": "place_id -> 当前控制方（明方/清方/contested），主干状态",
     "centerStability": "中枢稳定度（center 利益：稳定/发展）",
@@ -33,13 +21,13 @@ window.SIM_RULES_SARHU = {
   "params": [
     {
       "id": "qingExec",
-      "label": "后金执行力",
+      "label": "清方执行力",
       "default": 1,
       "min": 0.3,
       "max": 1,
       "step": 0.05,
       "unit": "",
-      "desc": "后金每条征服成功阈值；=1 时 intrinsicP<1 恒成立→全部达成（重放史实）"
+      "desc": "后金/清方每条征服成功阈值；=1 时 intrinsicP<1 恒成立→全部达成"
     },
     {
       "id": "mingExec",
@@ -69,7 +57,7 @@ window.SIM_RULES_SARHU = {
       "max": 1,
       "step": 0.05,
       "unit": "",
-      "desc": "center 阶层指标，阶段2仅派生展示"
+      "desc": "center 阶层指标，阶段2仅派生展示（#13 反馈环输入）"
     },
     {
       "id": "localEduMono",
@@ -79,7 +67,7 @@ window.SIM_RULES_SARHU = {
       "max": 1,
       "step": 0.05,
       "unit": "",
-      "desc": "local 阶层指标"
+      "desc": "local 阶层指标；>0.7 持续3代→阶层固化（反馈环 R2）"
     },
     {
       "id": "grassrootMob",
@@ -89,7 +77,7 @@ window.SIM_RULES_SARHU = {
       "max": 1,
       "step": 0.05,
       "unit": "",
-      "desc": "grassroot 阶层指标"
+      "desc": "grassroot 阶层指标；(1-eduMono)*贫困>0.8→革命（反馈环 R3）"
     },
     {
       "id": "factionInfightAmp",
@@ -99,7 +87,7 @@ window.SIM_RULES_SARHU = {
       "max": 1,
       "step": 0.05,
       "unit": "",
-      "desc": "启用党派因素：朝堂内耗对明方执行力的折扣系数；=0 关闭→100%重放"
+      "desc": "启用党派因素（#3延伸）：朝堂内耗对明方执行力的折扣系数；=0 关闭→100%重放，>0 时各派内斗削弱前线(明方攻防/守土)"
     },
     {
       "id": "logisticsPenalty",
@@ -135,7 +123,7 @@ window.SIM_RULES_SARHU = {
     {
       "id": "R2",
       "type": "feedback",
-      "desc": "阶层固化循环：教育垄断指数 eduMono>0.7 持续 3 代→阶层固化（local 重新组织、胜利果实被窃取）。阶段2仅计算 eduMono 快照。",
+      "desc": "阶层固化循环：教育垄断指数 eduMono>0.7 持续 3 代→阶层固化（local 重新组织、胜利果实被窃取）。阶段2仅计算 eduMono 快照，阶段3/4 反控控制图。",
       "source": "04 §阶层固化与循环",
       "formula": "petrified = (localEduMono > 0.7) for >=3 consecutive ticks",
       "activeInPhase": "3"
@@ -143,7 +131,7 @@ window.SIM_RULES_SARHU = {
     {
       "id": "R3",
       "type": "feedback",
-      "desc": "底层革命：动员度 = (1-eduMono) * 贫困；>0.8→底层革命爆发。阶段2仅计算展示。",
+      "desc": "底层革命：动员度 = (1-eduMono) * 贫困；>0.8→底层革命爆发，随机夺取若干县（阶段2仅计算展示）。",
       "source": "04 §阶层固化与循环",
       "formula": "mob = (1 - localEduMono) * poverty; revolt = mob > 0.8",
       "activeInPhase": "3"
@@ -159,7 +147,7 @@ window.SIM_RULES_SARHU = {
     {
       "id": "R5",
       "type": "compute_linear",
-      "desc": "精英/家族利益：家族利益 = 控制县数×资源系数 + 官位权重；受 center 压制度约束。阶段2仅计算展示。",
+      "desc": "精英/家族利益：家族利益 = 控制县数×资源系数 + 官位权重；受 center 压制度约束（center 强→压制叛乱概率高）。阶段2仅计算展示。",
       "source": "04 §精英决策",
       "formula": "familyInterest = controlledCount * resCoef + officeWeight; constraint = centerStability",
       "activeInPhase": "3"
@@ -167,7 +155,7 @@ window.SIM_RULES_SARHU = {
     {
       "id": "R6",
       "type": "feedback_court",
-      "desc": "党派内耗→明方削弱（#3延伸）：每年活跃派系(period_years 覆盖当年)越多、利益越分化、朝堂凝聚越低、越确信「明不亡」而越不愿增援，则内耗越高。① 对明方作场的转移，明方执行力 = mingExec×(1−infightAmp×内耗)；② 防御侧(明方为 from)攻方更易得手 eff×min(1,1+infightAmp×内耗×0.6)；③ 模型推演：内耗高时部分明方治所守军溃散降为 contested（确定性哈希命中，非史载转移）。全部确定性（无 RNG）。萨尔浒之战（1619）恰在浙/楚/齐/宣昆诸党与东林互攻、辽饷争夺最烈之时，四路统帅节制不一即此内耗的战场投影。派系参数单一真值 = data/vocab/ming_qing.json（勿在 demo 内硬编码）。",
+      "desc": "党派内耗→明方削弱（#3延伸）：每年活跃派系(period_years 覆盖当年)越多、利益越分化、朝堂凝聚越低、越确信「明不亡」而越不愿增援，则内耗越高。① 对明方作场的转移，明方执行力 = mingExec×(1−infightAmp×内耗)；② 防御侧(明方为 from)攻方更易得手 eff×min(1,1+infightAmp×内耗×0.6)；③ 模型推演：内耗高时部分明方治所守军溃散降为 contested（确定性哈希命中，非史载转移）。全部确定性（无 RNG）。派系参数（power/selfInterest/reinforce/beliefNoFall）单一真值 = data/vocab/ming_qing.json，经 tools/gen_faction_bundle.py 编译为 demo/_faction_ming.js，禁止在 demo 内硬编码。",
       "source": "用户洞察：各派皆信明不亡→党争优先于边患；参数源 data/vocab/ming_qing.json (factions[].sim + faction_dynamics)",
       "formula": "按 power 加权：wSelf=Σwᵢ·selfInterestᵢ, wReinf=Σwᵢ·reinforceᵢ, belief=Σwᵢ·[beliefNoFallᵢ], wᵢ=powerᵢ/Σpower; diversity=0.5·frac+0.5·√Var_w(selfInterest); neglect=belief·(1−wReinf); drive=0.5·wSelf+0.5·neglect; infight=clamp((1−courtCohesion)·(0.4+0.6·diversity)·(0.6+0.8·drive)·(0.5+0.5·hash(activeSet)),0,0.95); mingEff=mingExec·(1−amp·infight); collapse if hash('collapse|Y|id')<amp·infight·0.5",
       "activeInPhase": "2"
@@ -175,58 +163,38 @@ window.SIM_RULES_SARHU = {
     {
       "id": "R7",
       "type": "physical_logistics",
-      "desc": "whatif 物理极限→攻击方投送折扣（后勤/行军模型同源）：攻击方需自最近已控治所投送兵力。v0.63 提升为「必开」物理维度——三约束始终计算并展示：①超补给半径(明300km/清400km)：投送不可达，执行力压至近似0（硬失败）；②半径内：距最近治所越远投送越难，叠加冬季雪阻路冻与基础辎重摩擦（软失败）；③抵达时间窗、④扎营水源(BM.rivers 邻近判定)、⑤粮草可持续。折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）。",
-      "source": "whatif.html 后勤/行军模型（RATES/RATION/WINTER_RATE/补给半径）",
-      "formula": "if dist>radius: eff=min(eff,0.015); else: gentle=clamp(1-(dist/radius)*0.35,0.45,1); baseFric=1-logisticsPenalty*0.4; eff*= gentle * winterFactor * baseFric",
+      "desc": "whatif 物理极限→攻击方投送折扣（后勤/行军模型同源）：攻击方需自最近已控治所投送兵力。v0.63 提升为「必开」物理维度——三约束始终计算并展示：①超补给半径(明300km/清400km)：投送不可达，战役无法维持，执行力压至近似0（硬失败）；②半径内：距最近治所越远投送越难，叠加冬季雪阻路冻(winterPenalty)与基础辎重摩擦，按比例削减攻击方执行力（软失败）；③抵达时间窗（估算行军天数 vs 季节可行窗口）、④扎营水源(BM.rivers 邻近判定)、⑤粮草可持续(假定兵力×日耗×行军天数 vs 30日上限)。季节按 seedHash 确定性派生，少量关键战役用史载月份。折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）。",
+      "source": "whatif.html 后勤/行军模型（RATES/RATION/WINTER_RATE/补给半径）+ v0.63 三约束扩展",
+      "formula": "if dist>radius: eff=min(eff,0.015); else: gentle=clamp(1-(dist/radius)*0.35,0.45,1); baseFric=1-logisticsPenalty*0.4; factor=gentle*winterFactor*baseFric*(1-timePenalty)*(1-waterPenalty)*(1-foodPenalty); eff*=factor",
       "activeInPhase": "2"
     }
   ],
   "branches": [
     {
-      "id": "B1_four_route",
-      "label": "反事实 A：四路如期合击",
-      "desc": "明军四路按原计划如期抵达、相互呼应（史实为杜松贪功冒进、诸路失期），后金无法『凭尔几路来我只一路去』集中打击。block 全部 6 处 1619 史实转移→明方控制线维持。",
+      "id": "B1_guard_guangning",
+      "label": "反事实 A：明方死守广宁",
+      "desc": "1622 年广宁守军未被击溃，广宁维持明方（史实为弃守→contested）。其余按史实执行力推演。",
       "block": [
         {
-          "year": 1619,
-          "place_id": "shangjianya"
-        },
-        {
-          "year": 1619,
-          "place_id": "feifenshan"
-        },
-        {
-          "year": 1619,
-          "place_id": "niumaozhai"
-        },
-        {
-          "year": 1619,
-          "place_id": "abudaligang"
-        },
-        {
-          "year": 1619,
-          "place_id": "fucha"
-        },
-        {
-          "year": 1619,
-          "place_id": "yehe"
+          "year": 1622,
+          "place_id": "guangning"
         }
       ],
       "override": {}
     },
     {
-      "id": "B2_dusong_prudent",
-      "label": "反事实 B：杜松持重不冒进",
-      "desc": "西路主将杜松不轻敌分兵攻吉林崖，建制完整地拖住后金主力，使后金执行力降为 0.4——多数征服在确定性抽检下不达成。",
+      "id": "B2_weak_jin",
+      "label": "反事实 B：后金执行力不足",
+      "desc": "清方执行力降为 0.4，多数征服在确定性抽检下不达成，推演显著偏离史实。",
       "block": [],
       "override": {
         "qingExec": 0.4
       }
     },
     {
-      "id": "B3_liuting_timely",
-      "label": "反事实 C：刘綎东路及时赶到",
-      "desc": "东路主将刘綎不为地形所阻、按期抵达阿布达里岗与北路军形成呼应，明方执行力满格、后金执行力 0.5，战场态势逆转。",
+      "id": "B3_strong_ming",
+      "label": "反事实 C：明方固守 + 后金受挫",
+      "desc": "明方执行力满格、后金执行力 0.5，辽东走廊更可能滞留明方。",
       "block": [],
       "override": {
         "mingExec": 1,
@@ -235,8 +203,8 @@ window.SIM_RULES_SARHU = {
     },
     {
       "id": "B4_faction",
-      "label": "反事实 D：党争误国",
-      "desc": "启用党派因素（factionInfightAmp=0.6）：经略杨镐受朝堂掣肘、各路协调失灵、增援互不相救，明方执行力与守土被内耗削弱（模型推演额外崩溃）。",
+      "label": "反事实 D：党派内耗开启",
+      "desc": "启用党派因素（factionInfightAmp=0.6）：朝堂九派内斗削弱明方增援/协同/守土，辽东更易失守（模型推演额外崩溃）。",
       "block": [],
       "override": {
         "factionInfightAmp": 0.6
@@ -244,8 +212,8 @@ window.SIM_RULES_SARHU = {
     },
     {
       "id": "B5_logistics",
-      "label": "反事实 E：后金远征乏力",
-      "desc": "启用 whatif 物理极限（logisticsPenalty=0.4）：后金新附诸部征调困难、补给线过长、春寒阻滞，部分史实征服在约束下不成立。",
+      "label": "反事实 E：后勤物理约束",
+      "desc": "启用 whatif 物理极限（logisticsPenalty=0.4）：超补给半径/冬季行军削减攻击方执行力，部分史实征服在约束下不成立。",
       "block": [],
       "override": {
         "logisticsPenalty": 0.4
@@ -280,7 +248,7 @@ window.SIM_RULES_SARHU = {
     "logistics": {
       "dim": 9,
       "status": "implemented-required",
-      "desc": "物理维度提升为必开（v0.63）：R7 已整合进 sim_engine 物理层，每处征服按最近已控基地投送距离+季节判定（超补给半径/冬季按比例削减攻击方执行力），并新增三约束——①抵达时间窗 ②扎营水源(BM.rivers 邻近判定) ③粮草可持续(假定兵力×日耗×行军天数 vs 30日上限)。折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放）。",
+      "desc": "物理维度提升为必开（v0.63）：R7 已整合进 sim_engine 物理层，每处征服按最近已控基地投送距离+季节判定（超补给半径/冬季按比例削减攻击方执行力），并新增三约束——①抵达时间窗 ②扎营水源(BM.rivers 邻近判定) ③粮草可持续(假定兵力×日耗×行军天数 vs 30日上限)。同源 whatif.html 行军/粮草模型；折扣仅在 logisticsPenalty>0 时施加（=0→忠实重放），故该维度「必开」指其始终被计算与展示，而非默认即打折。",
       "dist": {
         "type": "prior",
         "mean": 0.6,
@@ -291,7 +259,7 @@ window.SIM_RULES_SARHU = {
     "population": {
       "dim": 10,
       "status": "partial",
-      "desc": "人口/经济基底：萨尔浒为单次会战，缺每据点人口基线；阶段2以 threeTier.poverty 派生代理。",
+      "desc": "人口/经济基底：impact.json 提供 deaths/mortality（灾变），但缺每治所人口基线；阶段2以 threeTier.poverty 派生代理。",
       "dist": {
         "type": "prior",
         "mean": 1,
@@ -301,4 +269,4 @@ window.SIM_RULES_SARHU = {
       }
     }
   }
-};
+}

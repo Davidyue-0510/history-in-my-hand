@@ -46,6 +46,7 @@ STEPS = [
     # ── 推演与模拟层 ──
     ("仿真维度契约 check",            ["tools/check_sim_contract.py"]),
     ("推演不变量 test",               ["tools/tests/test_simulate.py"]),
+    ("军事 IC/rules 派生零漂移 test",   ["tools/tests/test_derive_military.py"]),
     # ── 测试层 ──
     ("不变量回归 test",              ["tools/tests/test_assertions.py"]),
     ("年号换算 test",                ["tools/tests/test_reign.py"]),

@@ -35,50 +35,30 @@ def main():
     fails = []   # 阻断项
     warns = []   # 警告项
 
-    # ── (A) SIM_RULES（声明式规则，#6）──
-    rp = os.path.join(DEMO, "sim_rules_liaodong.js")
-    if not os.path.exists(rp):
-        fails.append("缺失 SIM_RULES 文件: demo/sim_rules_liaodong.js")
-    else:
-        r = read(rp)
-        if '"rules"' not in r or '"id": "R1"' not in r:
-            fails.append("SIM_RULES 缺少 rules/R1（adjudicate_transition，#6）")
-        if '"branches"' not in r or '"id": "B1_guard_guangning"' not in r:
-            fails.append("SIM_RULES 缺少 branches/B1（反事实分支，#12）")
-        if '"missing_dims"' not in r or '"probability"' not in r or '"logistics"' not in r or '"population"' not in r:
-            fails.append("SIM_RULES 缺少 missing_dims（#7/#9/#10 诚实占位）")
-        if '"dist"' not in r:
-            fails.append("SIM_RULES.missing_dims 缺少 dist（#7 概率占位必须带 dist）")
-        if not re.search(r'"tick"\s*:\s*1', r):
-            fails.append("SIM_RULES.meta.tick 应为 1（步长=1年，#11）")
+    # ── (A) 所有军事场景的 SIM_IC / SIM_RULES 通用契约（#6/#7/#9/#10/#11/#12/#16）──
+    # 北极星③ G1 通用化后，每个军事历史事件都经 derive_military_sim 从种子派生，
+    # 不再逐一手书；故契约校验也通用化，扫 demo/sim_ic_*.js / sim_rules_*.js 全对，
+    # liaodong 作为规范场景保留 control=36 硬约束（其余场景仅校验 control 为正）。
+    ic_files = glob.glob(os.path.join(DEMO, "sim_ic_*.js"))
+    rules_files = glob.glob(os.path.join(DEMO, "sim_rules_*.js"))
+    sim_scenes = set()
+    ic_map, rules_map = {}, {}
+    for fp in ic_files:
+        s = os.path.basename(fp)[len("sim_ic_"):-3]
+        sim_scenes.add(s)
+        ic_map[s] = fp
+    for fp in rules_files:
+        s = os.path.basename(fp)[len("sim_rules_"):-3]
+        sim_scenes.add(s)
+        rules_map[s] = fp
+    if not sim_scenes:
+        fails.append("未找到任何 demo/sim_ic_*.js / sim_rules_*.js 军事场景")
+    for scene in sorted(sim_scenes):
+        ic_text = read(ic_map[scene]) if scene in ic_map else ""
+        rules_text = read(rules_map[scene]) if scene in rules_map else ""
+        check_sim_pair(scene, ic_text, rules_text, fails)
 
-    # ── (A) SIM_IC（初始条件，#16）──
-    ip = os.path.join(DEMO, "sim_ic_liaodong.js")
-    if not os.path.exists(ip):
-        fails.append("缺失 SIM_IC 文件: demo/sim_ic_liaodong.js")
-    else:
-        i = read(ip)
-        if '"control"' not in i:
-            fails.append("SIM_IC 缺少 control 初始控制快照（#16）")
-        else:
-            # 控制项计数：明方/清方/contested 值出现次数之和应=36 治所
-            ctrl = count(i, ': "明方"') + count(i, ': "清方"') + count(i, ': "contested"')
-            if ctrl != 36:
-                fails.append("SIM_IC.control 控制项应为 36（实际 %d，#16）" % ctrl)
-        if '"personsByFaction"' not in i or '"feng_jiang"' not in i or '"无派系"' not in i:
-            fails.append("SIM_IC 缺 personsByFaction 分组（#3 派系动因）")
-        if '"params"' not in i or '"qingExec"' not in i or '"mingExec"' not in i:
-            fails.append("SIM_IC 缺 params 参数快照（#16 参数化初值）")
-        if '"threeTier"' not in i:
-            fails.append("SIM_IC 缺 threeTier 三阶层指标初值（#13 反馈环输入）")
-        else:
-            for need in ("centerStability", "localEduMono", "grassrootMob", "legitimacy", "treasury", "milPower", "poverty"):
-                if '"%s"' % need not in i:
-                    fails.append("SIM_IC.threeTier 缺 %s" % need)
-        if '"missing_dims"' not in i or '"population"' not in i or '"dist"' not in i:
-            fails.append("SIM_IC.missing_dims 缺 population/dist（#10 诚实占位）")
-
-    # ── (A) SIM_DATA（真实基底锚，阶段1 产物）──
+    # ── (A) SIM_DATA（真实基底锚，阶段1 产物，仅 liaodong 有 _sim_*.js）──
     dp = os.path.join(DEMO, "_sim_liaodong.js")
     if not os.path.exists(dp):
         fails.append("缺失 SIM_DATA 文件: demo/_sim_liaodong.js（阶段1 真实数据桥）")
@@ -188,6 +168,59 @@ def main():
         return 1
     print("\n[PASS] 仿真维度契约通过（gap.dist 为警告项，已列出待迁移）。")
     return 0
+
+
+def check_sim_pair(scene, ic_text, rules_text, fails):
+    """通用校验一对 SIM_IC / SIM_RULES（#6/#7/#9/#10/#11/#12/#16）。
+
+    scene=="liaodong" 为规范场景：control 控制项硬约束 = 36 治所（阶段2 #16）。
+    其余场景仅校验 control 存在且为正（新军事事件零改引擎即应满足）。
+    """
+    rel = "SIM[%s]" % scene
+    # ── SIM_RULES（声明式规则，#6）──
+    if not rules_text:
+        fails.append("缺失 SIM_RULES 文件: demo/sim_rules_%s.js" % scene)
+    else:
+        if '"rules"' not in rules_text or '"id": "R1"' not in rules_text:
+            fails.append("%s SIM_RULES 缺少 rules/R1（#6）" % rel)
+        if '"branches"' not in rules_text:
+            fails.append("%s SIM_RULES 缺少 branches（#12）" % rel)
+        else:
+            if '"id": "B1_' not in rules_text:
+                fails.append("%s SIM_RULES 缺 B1_* 反事实分支（#12）" % rel)
+        if '"missing_dims"' not in rules_text or '"probability"' not in rules_text \
+                or '"logistics"' not in rules_text or '"population"' not in rules_text:
+            fails.append("%s SIM_RULES 缺 missing_dims(probability/logistics/population)（#7/#9/#10）" % rel)
+        if '"dist"' not in rules_text:
+            fails.append("%s SIM_RULES.missing_dims 缺 dist（#7 概率占位必须带 dist）" % rel)
+        if not re.search(r'"tick"\s*:\s*1', rules_text):
+            fails.append("%s SIM_RULES.meta.tick 应为 1（步长=1年，#11）" % rel)
+
+    # ── SIM_IC（初始条件，#16）──
+    if not ic_text:
+        fails.append("缺失 SIM_IC 文件: demo/sim_ic_%s.js" % scene)
+    else:
+        if '"control"' not in ic_text:
+            fails.append("%s SIM_IC 缺少 control 初始控制快照（#16）" % rel)
+        else:
+            ctrl = count(ic_text, ': "明方"') + count(ic_text, ': "清方"') + count(ic_text, ': "contested"')
+            if scene == "liaodong":
+                if ctrl != 36:
+                    fails.append("%s SIM_IC.control 控制项应为 36（实际 %d，#16 硬约束）" % (rel, ctrl))
+            elif ctrl <= 0:
+                fails.append("%s SIM_IC.control 控制项应为正数（实际 %d，#16）" % (rel, ctrl))
+        if '"personsByFaction"' not in ic_text or '"feng_jiang"' not in ic_text or '"无派系"' not in ic_text:
+            fails.append("%s SIM_IC 缺 personsByFaction 分组（#3 派系动因）" % rel)
+        if '"params"' not in ic_text or '"qingExec"' not in ic_text or '"mingExec"' not in ic_text:
+            fails.append("%s SIM_IC 缺 params 参数快照（#16 参数化初值）" % rel)
+        if '"threeTier"' not in ic_text:
+            fails.append("%s SIM_IC 缺 threeTier 三阶层指标初值（#13 反馈环输入）" % rel)
+        else:
+            for need in ("centerStability", "localEduMono", "grassrootMob", "legitimacy", "treasury", "milPower", "poverty"):
+                if '"%s"' % need not in ic_text:
+                    fails.append("%s SIM_IC.threeTier 缺 %s" % (rel, need))
+        if '"missing_dims"' not in ic_text or '"population"' not in ic_text or '"dist"' not in ic_text:
+            fails.append("%s SIM_IC.missing_dims 缺 population/dist（#10 诚实占位）" % rel)
 
 
 if __name__ == "__main__":
