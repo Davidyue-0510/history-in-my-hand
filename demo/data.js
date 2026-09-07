@@ -21125,7 +21125,7 @@ window.SANDBOX_DATA = {
    "dossier_label": "王安石变法",
    "subtitle": "1069—1085 · 宋神宗时",
    "kind": "reform",
-   "region": "reform",
+   "region": "song",
    "page": "county.html?scene=wanganshi",
    "primary_place": "kaifeng",
    "vocab_pack": "inline:wanganshi",
@@ -21138,7 +21138,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
     "src": 3,
@@ -22111,7 +22111,7 @@ window.SANDBOX_DATA = {
    "dossier_label": "戊戌变法",
    "subtitle": "1898 · 光绪廿四",
    "kind": "reform",
-   "region": "reform",
+   "region": "huabei",
    "page": "county.html?scene=wuxu",
    "primary_place": "beijing",
    "vocab_pack": "inline:wuxu",
@@ -22123,7 +22123,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "qing",
    "scale_tier": "strategic",
    "counts": {
     "src": 3,
@@ -22144,7 +22144,7 @@ window.SANDBOX_DATA = {
    "dossier_label": "王莽改制",
    "subtitle": "9 — 23 · 新莽",
    "kind": "reform",
-   "region": "reform",
+   "region": "guangzhong",
    "page": "county.html?scene=wangmang",
    "primary_place": "changan",
    "vocab_pack": "inline:wangmang",
@@ -22156,7 +22156,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "han",
    "scale_tier": "strategic",
    "counts": {
     "src": 2,
@@ -22177,7 +22177,7 @@ window.SANDBOX_DATA = {
    "dossier_label": "两税法",
    "subtitle": "780 · 唐建中",
    "kind": "reform",
-   "region": "reform",
+   "region": "guangzhong",
    "page": "county.html?scene=liangshui",
    "primary_place": "changan",
    "vocab_pack": "inline:liangshui",
@@ -22191,7 +22191,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "sui_tang",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22212,7 +22212,7 @@ window.SANDBOX_DATA = {
    "dossier_label": "九品中正制",
    "subtitle": "220 · 曹魏",
    "kind": "reform",
-   "region": "reform",
+   "region": "three_kingdoms",
    "page": "county.html?scene=jiupin",
    "primary_place": "yecheng",
    "vocab_pack": "inline:jiupin",
@@ -22224,7 +22224,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "three_kingdoms",
    "scale_tier": "strategic",
    "counts": {
     "src": 3,

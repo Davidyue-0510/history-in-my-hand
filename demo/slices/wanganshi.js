@@ -4,7 +4,7 @@
 window.SANDBOX_SLICES["wanganshi"] = {
  "meta": {
   "kind": "reform",
-  "region": "reform",
+  "region": "song",
   "title": "王安石变法",
   "dossier_label": "王安石变法",
   "subtitle": "1069—1085 · 宋神宗时",
@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["wanganshi"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "song",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

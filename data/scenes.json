@@ -6179,7 +6179,7 @@
   },
   "wanganshi": {
    "kind": "reform",
-   "region": "reform",
+   "region": "song",
    "title": "王安石变法",
    "dossier_label": "王安石变法",
    "subtitle": "1069—1085 · 宋神宗时",
@@ -6203,7 +6203,7 @@
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "song",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {
@@ -8066,7 +8066,7 @@
   },
   "wuxu": {
    "kind": "reform",
-   "region": "reform",
+   "region": "huabei",
    "title": "戊戌变法",
    "dossier_label": "戊戌变法",
    "subtitle": "1898 · 光绪廿四",
@@ -8089,7 +8089,7 @@
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "qing",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {
@@ -8143,7 +8143,7 @@
   },
   "wangmang": {
    "kind": "reform",
-   "region": "reform",
+   "region": "guangzhong",
    "title": "王莽改制",
    "dossier_label": "王莽改制",
    "subtitle": "9 — 23 · 新莽",
@@ -8166,7 +8166,7 @@
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "han",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {
@@ -8220,7 +8220,7 @@
   },
   "liangshui": {
    "kind": "reform",
-   "region": "reform",
+   "region": "guangzhong",
    "title": "两税法",
    "dossier_label": "两税法",
    "subtitle": "780 · 唐建中",
@@ -8244,7 +8244,7 @@
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "sui_tang",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {
@@ -8298,7 +8298,7 @@
   },
   "jiupin": {
    "kind": "reform",
-   "region": "reform",
+   "region": "three_kingdoms",
    "title": "九品中正制",
    "dossier_label": "九品中正制",
    "subtitle": "220 · 曹魏",
@@ -8321,7 +8321,7 @@
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "three_kingdoms",
    "scale_tier": "strategic",
    "strategic": {
     "political_cohesion": {

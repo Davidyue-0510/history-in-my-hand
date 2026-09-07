@@ -4,7 +4,7 @@
 window.SANDBOX_SLICES["jiupin"] = {
  "meta": {
   "kind": "reform",
-  "region": "reform",
+  "region": "three_kingdoms",
   "title": "九品中正制",
   "dossier_label": "九品中正制",
   "subtitle": "220 · 曹魏",
@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["jiupin"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "three_kingdoms",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

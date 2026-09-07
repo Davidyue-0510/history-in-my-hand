@@ -4,7 +4,7 @@
 window.SANDBOX_SLICES["liangshui"] = {
  "meta": {
   "kind": "reform",
-  "region": "reform",
+  "region": "guangzhong",
   "title": "两税法",
   "dossier_label": "两税法",
   "subtitle": "780 · 唐建中",
@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["liangshui"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "sui_tang",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

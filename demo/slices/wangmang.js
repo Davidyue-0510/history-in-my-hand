@@ -4,7 +4,7 @@
 window.SANDBOX_SLICES["wangmang"] = {
  "meta": {
   "kind": "reform",
-  "region": "reform",
+  "region": "guangzhong",
   "title": "王莽改制",
   "dossier_label": "王莽改制",
   "subtitle": "9 — 23 · 新莽",
@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["wangmang"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "han",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

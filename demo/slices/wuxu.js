@@ -4,7 +4,7 @@
 window.SANDBOX_SLICES["wuxu"] = {
  "meta": {
   "kind": "reform",
-  "region": "reform",
+  "region": "huabei",
   "title": "戊戌变法",
   "dossier_label": "戊戌变法",
   "subtitle": "1898 · 光绪廿四",
@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["wuxu"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "qing",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {
