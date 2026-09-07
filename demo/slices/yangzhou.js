@@ -34,7 +34,7 @@ window.SANDBOX_SLICES["yangzhou"] = {
    4,
    6
   ],
-  "epoch": "ming",
+  "epoch": "ming_qing",
   "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {

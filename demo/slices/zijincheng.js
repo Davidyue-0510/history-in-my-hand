@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["zijincheng"] = {
    4,
    6
   ],
-  "epoch": "sui_yuan",
+  "epoch": "ming",
   "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {

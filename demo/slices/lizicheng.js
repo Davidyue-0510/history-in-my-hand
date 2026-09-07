@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["lizicheng"] = {
    4,
    6
   ],
-  "epoch": "han",
+  "epoch": "ming_qing",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

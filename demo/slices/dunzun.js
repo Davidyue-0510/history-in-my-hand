@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["dunzun"] = {
    5,
    6
   ],
-  "epoch": "tang",
+  "epoch": "han",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

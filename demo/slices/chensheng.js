@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["chensheng"] = {
    4,
    6
   ],
-  "epoch": "han",
+  "epoch": "qin_han",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["hongjin"] = {
    5,
    6
   ],
-  "epoch": "han",
+  "epoch": "yuan",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

@@ -22,7 +22,7 @@ window.SANDBOX_SLICES["chuhai_llm"] = {
    5,
    6
   ],
-  "epoch": "han",
+  "epoch": "qin_han",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["ming_fall"] = {
    4,
    6
   ],
-  "epoch": "qin",
+  "epoch": "ming_qing",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

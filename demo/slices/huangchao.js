@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["huangchao"] = {
    5,
    6
   ],
-  "epoch": "han",
+  "epoch": "tang",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

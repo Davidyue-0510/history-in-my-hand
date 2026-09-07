@@ -23,7 +23,7 @@ window.SANDBOX_SLICES["sui_mie_chen"] = {
    3,
    6
   ],
-  "epoch": "qin",
+  "epoch": "sui",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

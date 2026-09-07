@@ -19279,7 +19279,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "ming",
+   "epoch": "ming_qing",
    "scale_tier": "operational",
    "counts": {
     "src": 4,
@@ -19884,7 +19884,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "spring_autumn",
    "scale_tier": "operational",
    "counts": {
     "src": 1,
@@ -19919,7 +19919,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "spring_autumn",
    "scale_tier": "operational",
    "counts": {
     "src": 1,
@@ -21071,7 +21071,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "qin",
+   "epoch": "ming_qing",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -21204,7 +21204,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "han",
+   "epoch": "ming_qing",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -21372,7 +21372,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "tang",
+   "epoch": "han",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -21610,7 +21610,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "sui_yuan",
+   "epoch": "ming",
    "scale_tier": "operational",
    "counts": {
     "src": 1,
@@ -21954,7 +21954,7 @@ window.SANDBOX_DATA = {
     3,
     6
    ],
-   "epoch": "qin",
+   "epoch": "sui",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -21987,7 +21987,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "qin",
+   "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22021,7 +22021,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "qin",
+   "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22258,7 +22258,7 @@ window.SANDBOX_DATA = {
     4,
     6
    ],
-   "epoch": "han",
+   "epoch": "qin_han",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22292,7 +22292,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "han",
+   "epoch": "tang",
    "scale_tier": "strategic",
    "counts": {
     "src": 3,
@@ -22327,7 +22327,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "han",
+   "epoch": "qing_modern",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22360,7 +22360,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "han",
+   "epoch": "yuan",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22464,7 +22464,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "warring_states",
+   "epoch": "han",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -22565,7 +22565,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "yuan",
+   "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,
@@ -23521,7 +23521,7 @@ window.SANDBOX_DATA = {
     5,
     6
    ],
-   "epoch": "han",
+   "epoch": "qin_han",
    "scale_tier": "strategic",
    "counts": {
     "src": 1,

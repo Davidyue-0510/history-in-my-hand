@@ -24,7 +24,7 @@ REG = os.path.join(ROOT, "data", "scenes.json")
 EPOCH_LABELS = {
     "ming_qing": "明清(辽东)", "song": "宋", "tang": "唐", "yuan": "元",
     "ming": "明", "qing": "清", "qin": "秦", "han": "汉", "sui": "隋",
-    "three_kingdoms": "三国", "two_jin": "两晋", "warring_states": "战国",
+    "three_kingdoms": "三国", "two_jin": "两晋", "warring_states": "战国", "spring_autumn": "春秋",
     "qin_han": "秦汉", "sui_tang": "隋唐", "yuan_ming": "元明",
     "sui_yuan": "隋元", "cross_dynastic": "跨朝代", "guangzhong": "关中",
     "huabei": "华北", "qing_modern": "近代", "fiction": "虚构",

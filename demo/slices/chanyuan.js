@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["chanyuan"] = {
    5,
    6
   ],
-  "epoch": "yuan",
+  "epoch": "song",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

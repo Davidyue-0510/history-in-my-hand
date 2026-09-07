@@ -26,7 +26,7 @@ window.SANDBOX_SLICES["zhaofen"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "han",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

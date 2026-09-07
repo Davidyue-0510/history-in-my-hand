@@ -25,7 +25,7 @@ window.SANDBOX_SLICES["taiping"] = {
    5,
    6
   ],
-  "epoch": "han",
+  "epoch": "qing_modern",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {

@@ -1812,6 +1812,104 @@ window.SANDBOX_EPOCHS = {
    ],
    "layer": "inference"
   }
+ },
+ "spring_autumn": {
+  "label": "春秋（前770–前476）",
+  "status": "derived",
+  "note": "平王东迁，周室衰微，礼崩乐坏；春秋五霸相继，尊王攘夷；铁器萌芽、牛耕初现，井田渐坏。",
+  "tech": {
+   "productivity": {
+    "value": "耒耜→铁农具萌芽，垄作初兴",
+    "layer": "scholarship",
+    "basis": "技术↔生产力：铁器初现"
+   },
+   "energy_base": {
+    "value": "生物能",
+    "layer": "scholarship"
+   },
+   "key_techs": [
+    "铸铁萌芽",
+    "陂塘水利",
+    "车战(青铜车兵)"
+   ],
+   "engineering": {
+    "value": "城郭+沟洫",
+    "layer": "scholarship"
+   }
+  },
+  "international": {
+   "neighbors": [
+    "戎狄",
+    "荆楚",
+    "东夷"
+   ],
+   "diplomatic_posture": "尊王攘夷/诸侯会盟",
+   "external_threat": "戎狄南下/楚北上",
+   "layer": "scholarship"
+  },
+  "economy": {
+   "tax_system": "井田制→初税亩(私田兴)",
+   "currency": "贝币/铜币(列国异制)",
+   "market_integration": "墟市",
+   "fiscal_health": {
+    "value": "军赋加重→公室衰",
+    "layer": "scholarship",
+    "basis": "赋税↔后勤半径：车战耗马"
+   }
+  },
+  "society": {
+   "population_scale": "约1000–2000万",
+   "social_structure": [
+    "国人",
+    "野人",
+    "庶人"
+   ],
+   "standing_army_link": {
+    "value": "国人出兵+车战，人口↔常驻军",
+    "layer": "scholarship",
+    "basis": "人口↔常驻军：国人即兵源"
+   },
+   "livelihood": {
+    "value": "战乱+赋重",
+    "layer": "scholarship"
+   }
+  },
+  "doctrine": {
+   "dominant_ideology": "周礼崩坏，私学萌芽(孔子)",
+   "state_religion": "宗庙祭祀",
+   "knowledge_system": "诗书礼乐(官学散)",
+   "public_opinion": "士论活跃",
+   "layer": "scholarship"
+  },
+  "anchors": {
+   "key_institutions": [
+    "诸侯国",
+    "国人议政"
+   ],
+   "geographic_pivots": [
+    "成周(洛邑)",
+    "临淄",
+    "郢"
+   ],
+   "critical_nodes": [
+    "城濮",
+    "柏举"
+   ],
+   "layer": "scholarship"
+  },
+  "strategic": {
+   "grand_strategy": "尊王攘夷，争霸诸侯",
+   "center_of_gravity": "中原",
+   "vulnerabilities": [
+    "公室衰微",
+    "大夫专权"
+   ],
+   "windows": [
+    "前632 城濮",
+    "前506 柏举"
+   ],
+   "layer": "inference"
+  }
  }
 };
 window.SANDBOX_DATA.epochs = window.SANDBOX_EPOCHS;

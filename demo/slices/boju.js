@@ -26,7 +26,7 @@ window.SANDBOX_SLICES["boju"] = {
    5,
    6
   ],
-  "epoch": "warring_states",
+  "epoch": "spring_autumn",
   "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {

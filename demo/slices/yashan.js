@@ -24,7 +24,7 @@ window.SANDBOX_SLICES["yashan"] = {
    4,
    6
   ],
-  "epoch": "qin",
+  "epoch": "song",
   "scale_tier": "strategic",
   "strategic": {
    "political_cohesion": {
