@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_ruijin_llm_01",
+   "subject": "event:ev_jiangxi_ruijin_llm_01",
+   "year": 1931,
+   "era": "1931年11月",
+   "title": "中华苏维埃一大召开",
+   "kind": "建置",
+   "text": "在瑞金召开，成立临时中央政府",
+   "_source_idx": 0,
+   "_source_name": "中央苏区史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_ruijin_llm_02",
+   "subject": "event:ev_jiangxi_ruijin_llm_02",
+   "year": 1934,
+   "era": "1934年",
+   "title": "红军长征开始",
+   "kind": "战事",
+   "text": "第五次反围剿失利，主力转移",
+   "_source_idx": 0,
+   "_source_name": "中央苏区史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1978,6 +1978,52 @@
    "_src_line": 17
   },
   {
+   "id": "JIA_009",
+   "scene": "jiangxi_nanchang_llm",
+   "subject": "event:ev_jiangxi_nanchang_llm_01",
+   "title": "兵力不详",
+   "missing": "史料考证",
+   "where": "南昌起义相关档案或回忆录",
+   "skills": [
+    "史料考证"
+   ],
+   "accept": "起义军具体兵力数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "JIA_010",
+   "scene": "jiangxi_nanchang_llm",
+   "subject": "event:ev_jiangxi_nanchang_llm_01",
+   "title": "伤亡数字未记载",
+   "missing": "军事史研究",
+   "where": "南昌起义战史资料",
+   "skills": [
+    "军事史研究"
+   ],
+   "accept": "起义军伤亡具体数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "JIA_012",
+   "scene": "jiangxi_ruijin_llm",
+   "subject": "event:ev_jiangxi_ruijin_llm_02",
+   "title": "长征具体路线和目的地未详述",
+   "missing": "历史地理 / 军事史",
+   "where": "江西至陕北",
+   "skills": [
+    "历史地理",
+    "军事史"
+   ],
+   "accept": "补充长征具体路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "JIANZHENG01",
    "scene": "jianzhen",
    "subject": "event:jz_753",
@@ -4656,6 +4702,52 @@
     "多源比对"
    ],
    "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIN_012",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_02",
+   "title": "乌垒城具体位置存疑",
+   "missing": "考古发掘 / 文献考据",
+   "where": "新疆轮台县",
+   "skills": [
+    "考古发掘",
+    "文献考据"
+   ],
+   "accept": "确认乌垒城确切位置",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "XIN_013",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_01",
+   "title": "日逐王降汉具体月份不详",
+   "missing": "史料比对",
+   "where": "匈奴故地",
+   "skills": [
+    "史料比对"
+   ],
+   "accept": "确定降汉具体时间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIN_014",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_02",
+   "title": "三十六国具体名单不详",
+   "missing": "文献考据",
+   "where": "西域",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "列出三十六国名单",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

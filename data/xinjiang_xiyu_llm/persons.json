@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "XIN__p01",
+   "name": "郑吉",
+   "role": "首任西域都护",
+   "note": "西汉首任西域都护，统辖西域三十六国",
+   "_source_idx": 0,
+   "_source_name": "西域都护府史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p02",
+   "name": "日逐王",
+   "role": "匈奴王",
+   "note": "匈奴日逐王，降汉归附",
+   "_source_idx": 0,
+   "_source_name": "西域都护府史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

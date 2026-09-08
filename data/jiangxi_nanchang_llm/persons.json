@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "周恩来",
+   "role": "中共前敌委员会书记",
+   "note": "南昌起义主要领导人",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "贺龙",
+   "role": "起义军总指挥",
+   "note": "南昌起义主要领导人",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p03",
+   "name": "叶挺",
+   "role": "起义军前敌总指挥",
+   "note": "南昌起义主要领导人",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p04",
+   "name": "朱德",
+   "role": "起义军主要领导人",
+   "note": "南昌起义主要领导人",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p05",
+   "name": "刘伯承",
+   "role": "起义军参谋长",
+   "note": "南昌起义主要领导人",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

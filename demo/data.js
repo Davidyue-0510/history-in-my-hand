@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 237 个切片
+// 权威数据源：data/scenes.json 注册的 240 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 237 个切片",
+  "slice": "multi-scene · 240 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -43,6 +43,8 @@ window.SANDBOX_DATA = {
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
+   "jiangxi_nanchang_llm",
+   "jiangxi_ruijin_llm",
    "jilin_gaogouli_llm",
    "jinshang_llm",
    "liangzhou_meeting_llm",
@@ -93,6 +95,7 @@ window.SANDBOX_DATA = {
    "warring_states_shangyang_llm",
    "xianggang_1941_llm",
    "xianggang_songmo_llm",
+   "xinjiang_xiyu_llm",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
    "xizang_huimeng_llm",
@@ -592,7 +595,10 @@ window.SANDBOX_DATA = {
   "qinghai_zongkaba_llm",
   "taiwan_zhengchenggong_llm",
   "xianggang_1941_llm",
-  "aomen_kaibu_llm"
+  "aomen_kaibu_llm",
+  "jiangxi_nanchang_llm",
+  "jiangxi_ruijin_llm",
+  "xinjiang_xiyu_llm"
  ],
  "vocab": {
   "layers": [
@@ -26664,6 +26670,103 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "jiangxi_nanchang_llm": {
+   "key": "jiangxi_nanchang_llm",
+   "scene_id": "jiangxi_nanchang_llm",
+   "title": "南昌起义",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "uprising",
+   "page": "jiangxi_nanchang_llm.html",
+   "primary_place": "nanchang",
+   "vocab_pack": "jiangxi_nanchang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 5,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 2,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "jiangxi_ruijin_llm": {
+   "key": "jiangxi_ruijin_llm",
+   "scene_id": "jiangxi_ruijin_llm",
+   "title": "中央苏区与中华苏维埃共和国",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=jiangxi_ruijin_llm",
+   "primary_place": "ruijin",
+   "vocab_pack": "jiangxi_ruijin_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 1,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xinjiang_xiyu_llm": {
+   "key": "xinjiang_xiyu_llm",
+   "scene_id": "xinjiang_xiyu_llm",
+   "title": "西域都护府",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=xinjiang_xiyu_llm",
+   "primary_place": "wulei",
+   "vocab_pack": "xinjiang_xiyu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 14,
+    "conflict": 2,
+    "gap": 3,
+    "record": 7,
+    "scholarship": 3,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26903,7 +27006,10 @@ window.SANDBOX_DATA = {
   "qinghai_zongkaba_llm": "slices/qinghai_zongkaba_llm.js",
   "taiwan_zhengchenggong_llm": "slices/taiwan_zhengchenggong_llm.js",
   "xianggang_1941_llm": "slices/xianggang_1941_llm.js",
-  "aomen_kaibu_llm": "slices/aomen_kaibu_llm.js"
+  "aomen_kaibu_llm": "slices/aomen_kaibu_llm.js",
+  "jiangxi_nanchang_llm": "slices/jiangxi_nanchang_llm.js",
+  "jiangxi_ruijin_llm": "slices/jiangxi_ruijin_llm.js",
+  "xinjiang_xiyu_llm": "slices/xinjiang_xiyu_llm.js"
  },
  "corridors": [
   {

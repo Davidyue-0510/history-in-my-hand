@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_nanchang_llm_01",
+   "subject": "event:ev_jiangxi_nanchang_llm_01",
+   "year": 1927,
+   "era": "民国十六年八月一日",
+   "title": "南昌起义爆发",
+   "kind": "战事",
+   "text": "中共在南昌发动武装起义",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_nanchang_llm_02",
+   "subject": "event:ev_jiangxi_nanchang_llm_02",
+   "year": 1927,
+   "era": "民国十六年八月",
+   "title": "占领南昌城",
+   "kind": "战事",
+   "text": "起义军占领南昌城",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_nanchang_llm_03",
+   "subject": "event:ev_jiangxi_nanchang_llm_03",
+   "year": 1927,
+   "era": "民国十六年八月",
+   "title": "成立革命委员会",
+   "kind": "行政",
+   "text": "成立中国国民党革命委员会",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_nanchang_llm_04",
+   "subject": "event:ev_jiangxi_nanchang_llm_04",
+   "year": 1927,
+   "era": "民国十六年八月",
+   "title": "撤离南昌南下",
+   "kind": "战事",
+   "text": "因敌众我寡主动撤离南下",
+   "_source_idx": 0,
+   "_source_name": "南昌起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

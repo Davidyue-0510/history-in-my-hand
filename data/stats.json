@@ -1,9 +1,9 @@
 {
-  "scenes_total": 237,
-  "historical": 228,
+  "scenes_total": 240,
+  "historical": 231,
   "fictional": 9,
-  "assertions_total": 3673,
-  "sources_total": 215,
+  "assertions_total": 3714,
+  "sources_total": 218,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -39,6 +39,8 @@
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
+    "jiangxi_nanchang_llm",
+    "jiangxi_ruijin_llm",
     "jilin_gaogouli_llm",
     "jinshang_llm",
     "liangzhou_meeting_llm",
@@ -89,6 +91,7 @@
     "warring_states_shangyang_llm",
     "xianggang_1941_llm",
     "xianggang_songmo_llm",
+    "xinjiang_xiyu_llm",
     "xiyu_dunhu_llm",
     "xizang_gorkha_llm",
     "xizang_huimeng_llm",
@@ -101,7 +104,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 340,
+  "leads_total": 346,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1815,6 +1818,27 @@
       "kind": "exchange",
       "assertions": 10,
       "factions": {}
+    },
+    {
+      "id": "jiangxi_nanchang_llm",
+      "title": "南昌起义",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "jiangxi_ruijin_llm",
+      "title": "中央苏区与中华苏维埃共和国",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "xinjiang_xiyu_llm",
+      "title": "西域都护府",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2054,6 +2078,9 @@
     "qinghai_zongkaba_llm": "宗喀巴 格鲁派创立（1409）",
     "taiwan_zhengchenggong_llm": "中国台湾·郑成功收复台湾（1661—1662）",
     "xianggang_1941_llm": "中国香港·香港保卫战（1941）",
-    "aomen_kaibu_llm": "中国澳门·澳门开埠（1553）"
+    "aomen_kaibu_llm": "中国澳门·澳门开埠（1553）",
+    "jiangxi_nanchang_llm": "南昌起义",
+    "jiangxi_ruijin_llm": "中央苏区与中华苏维埃共和国",
+    "xinjiang_xiyu_llm": "西域都护府"
   }
 }

@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "ruijin",
+   "name": "瑞金",
+   "type": "city",
+   "modern": "今中国江西省瑞金市",
+   "note": "中华苏维埃共和国首都",
+   "_source_idx": 0,
+   "_source_name": "中央苏区史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiangxi",
+   "name": "江西",
+   "type": "region",
+   "modern": "今中国江西省",
+   "note": "中央苏区主要省份",
+   "_source_idx": 0,
+   "_source_name": "中央苏区史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "fujian",
+   "name": "福建",
+   "type": "region",
+   "modern": "今中国福建省",
+   "note": "中央苏区辖县省份",
+   "_source_idx": 0,
+   "_source_name": "中央苏区史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

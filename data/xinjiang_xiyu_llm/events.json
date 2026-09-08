@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xinjiang_xiyu_llm_01",
+   "subject": "event:ev_xinjiang_xiyu_llm_01",
+   "year": -60,
+   "era": "汉宣帝神爵二年",
+   "title": "日逐王降汉",
+   "kind": "外交",
+   "text": "匈奴日逐王降汉，西域诸国悉定",
+   "_source_idx": 0,
+   "_source_name": "西域都护府史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_xiyu_llm_02",
+   "subject": "event:ev_xinjiang_xiyu_llm_02",
+   "year": -60,
+   "era": "汉宣帝神爵二年",
+   "title": "设西域都护府",
+   "kind": "建置",
+   "text": "汉于乌垒城设西域都护府，统三十六国",
+   "_source_idx": 0,
+   "_source_name": "西域都护府史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
