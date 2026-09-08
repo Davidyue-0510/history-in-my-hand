@@ -1,14 +1,14 @@
 {
  "sources": [
   {
-   "id": "qinghai_tuyuhun_src_llm",
-   "title": "吐谷浑史料摘录",
+   "id": "chongqing_peidu_src_llm",
+   "title": "重庆陪都史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
    "compiler": "后世官修",
-   "period": "两晋南北朝",
+   "period": "民国",
    "note": ""
   }
  ]

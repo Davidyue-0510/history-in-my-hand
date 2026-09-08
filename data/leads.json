@@ -527,6 +527,37 @@
    "_src_line": 17
   },
   {
+   "id": "CHO_011",
+   "scene": "chongqing_peidu_llm",
+   "subject": "event:ev_chongqing_peidu_llm_03",
+   "title": "具体伤亡数字记载不一",
+   "missing": "档案整理 / 统计",
+   "where": "重庆市档案馆",
+   "skills": [
+    "档案整理",
+    "统计"
+   ],
+   "accept": "需查原始档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "CHO_012",
+   "scene": "chongqing_peidu_llm",
+   "subject": "event:ev_chongqing_peidu_llm_01",
+   "title": "西迁具体过程记载简略",
+   "missing": "档案检索",
+   "where": "中国第二历史档案馆",
+   "skills": [
+    "档案检索"
+   ],
+   "accept": "需查迁都档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "chongzhen_han_07",
    "scene": "chongzhen_han",
    "subject": "event:ch_1640",
@@ -1157,6 +1188,22 @@
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 6
+  },
+  {
+   "id": "GAN_008",
+   "scene": "gansu_dunhuang_llm",
+   "subject": "place:cangjing_dong",
+   "title": "未知",
+   "missing": "考古学 / 历史文献学",
+   "where": "敦煌藏经洞",
+   "skills": [
+    "考古学",
+    "历史文献学"
+   ],
+   "accept": "需进一步研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
   },
   {
    "id": "GAN_011",
@@ -3394,63 +3441,17 @@
    "_src_line": 15
   },
   {
-   "id": "QINGG4",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補社會維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 16
-  },
-  {
-   "id": "QINGG5",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補思想維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 17
-  },
-  {
-   "id": "QIN_009",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "隋军兵力未详",
-   "missing": "考据",
-   "where": "隋书·炀帝纪",
-   "skills": [
-    "考据"
-   ],
-   "accept": "补充兵力记载",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 9
-  },
-  {
    "id": "QIN_013",
    "scene": "qinghai_tuyuhun_llm",
    "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "title": "四郡隶属未明",
-   "missing": "制度考",
-   "where": "隋书·地理志",
+   "title": "吐蕃灭吐谷浑的具体过程不详",
+   "missing": "考古发掘 / 文献比对",
+   "where": "青海湖周边",
    "skills": [
-    "制度考"
+    "考古发掘",
+    "文献比对"
    ],
-   "accept": "补充隶属",
+   "accept": "吐蕃灭吐谷浑的具体过程",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13

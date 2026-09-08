@@ -446,7 +446,9 @@
   "xinjiang_xiyu_llm",
   "xinjiang_zuozongtang_llm",
   "guangxi_lingqu_llm",
-  "hainan_hainandao_llm"
+  "hainan_hainandao_llm",
+  "chongqing_peidu_llm",
+  "gansu_dunhuang_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -13679,10 +13681,8 @@
    "parties_note": "",
    "dims": [
     1,
-    2,
     3,
     4,
-    5,
     6
    ],
    "epoch": "sui",
@@ -20194,6 +20194,154 @@
     1,
     2,
     3,
+    6
+   ]
+  },
+  "chongqing_peidu_llm": {
+   "kind": "dynasty",
+   "region": "court",
+   "province": "chongqing",
+   "title": "重庆陪都",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chongqing",
+   "dossier_event": "event:ev_chongqing_peidu_llm_01",
+   "vocab_pack": "chongqing_peidu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆陪都：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "重庆陪都：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "重庆陪都：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆陪都：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "gansu_dunhuang_llm": {
+   "kind": "tech",
+   "region": "tech",
+   "province": "gansu",
+   "title": "敦煌莫高窟",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "dunhuang",
+   "dossier_event": "event:ev_gansu_dunhuang_llm_01",
+   "vocab_pack": "gansu_dunhuang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "敦煌莫高窟：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "敦煌莫高窟：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "敦煌莫高窟：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "敦煌莫高窟：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    5,
     6
    ]
   }

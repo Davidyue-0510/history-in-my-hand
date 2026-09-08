@@ -1,28 +1,23 @@
-// 本文件由 tools/build.py 自动生成（切片 qinghai_tuyuhun_llm），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["qinghai_tuyuhun_llm"]。
+// 本文件由 tools/build.py 自动生成（切片 gansu_dunhuang_llm），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["gansu_dunhuang_llm"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
+window.SANDBOX_SLICES["gansu_dunhuang_llm"] = {
  "meta": {
-  "kind": "frontier",
-  "region": "xibei",
-  "province": "qinghai",
-  "title": "隋炀帝西征吐谷浑·青海道（609）",
-  "dossier_label": "qinghai_tuyuhun_llm",
-  "subtitle": "",
-  "primary_place": "qinghai",
-  "dossier_event": "event:ev_qinghai_tuyuhun_llm_01",
-  "vocab_pack": "qinghai_tuyuhun_llm",
+  "kind": "tech",
+  "region": "tech",
+  "province": "gansu",
+  "title": "敦煌莫高窟",
+  "dossier_label": null,
+  "subtitle": null,
+  "primary_place": "dunhuang",
+  "dossier_event": "event:ev_gansu_dunhuang_llm_01",
+  "vocab_pack": "gansu_dunhuang_llm",
   "terrain_grid": "china_coarse",
-  "lead": "",
-  "parties_note": "",
-  "dims": [
-   1,
-   3,
-   4,
-   6
-  ],
-  "epoch": "sui",
-  "scale_tier": "strategic",
+  "lead": null,
+  "parties_note": null,
+  "subject_names": null,
+  "epoch": "two_jin",
+  "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {
     "from": [
@@ -34,67 +29,55 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→隋炀帝西巡耀兵，置四郡纳青海于郡县体系，吐谷浑远遁"
+    "note": "敦煌莫高窟：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "material_logistics": {
     "from": [
-     "strategic",
-     "doctrine"
+     "tech",
+     "economy"
     ],
     "from_dims": [
      2,
      3
     ],
     "layer": "inference",
-    "note": "技術+制度→大斗拔谷通道、河西—青海连线，兵站驿传支撑远征"
+    "note": "敦煌莫高窟：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "population_mobilization": {
     "from": [
-     "strategic",
-     "doctrine"
+     "society"
     ],
     "from_dims": [
-     4,
-     3
+     4
     ],
     "layer": "inference",
-    "note": "社會+制度→吐谷浑部众降附、党项内徙，边郡编户与屯田"
+    "note": "敦煌莫高窟：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "geopolitical_strategy": {
     "from": [
      "strategic",
-     "doctrine"
+     "international"
     ],
     "from_dims": [
-     1,
-     3
+     6,
+     5
     ],
     "layer": "inference",
-    "note": "地理+制度→经青海道通西域，复畅丝路南道，扼吐谷浑故地"
+    "note": "敦煌莫高窟：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
    }
   },
-  "subject_names": [
-   "person:QIN__p01",
-   "person:QIN__p02",
-   "place:qinghai",
-   "place:dadoubagu",
-   "place:xihai",
-   "place:heyuan",
-   "place:shanshan",
-   "place:qiemo",
-   "place:dangxiang",
-   "event:ev_qinghai_tuyuhun_llm_01",
-   "event:ev_qinghai_tuyuhun_llm_02",
-   "event:ev_qinghai_tuyuhun_llm_03"
+  "dims": [
+   5,
+   6
   ],
-  "page": "county.html?scene=qinghai_tuyuhun_llm",
-  "key": "qinghai_tuyuhun_llm",
-  "scene_id": "qinghai_tuyuhun_llm"
+  "page": "county.html?scene=gansu_dunhuang_llm",
+  "key": "gansu_dunhuang_llm",
+  "scene_id": "gansu_dunhuang_llm"
  },
  "sources": [
   {
-   "id": "qinghai_tuyuhun_src_llm",
-   "title": "吐谷浑史料摘录",
+   "id": "gansu_dunhuang_src_llm",
+   "title": "敦煌莫高窟史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
@@ -106,13 +89,13 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
  ],
  "places": [
   {
-   "id": "fu_han",
-   "name": "枹罕",
+   "id": "dunhuang",
+   "name": "敦煌",
    "type": "city",
-   "modern": "今甘肃临夏",
-   "note": "吐谷浑西迁途经地",
+   "modern": "今甘肃省敦煌市",
+   "note": "丝路重镇",
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -120,13 +103,13 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "qinghai_lake",
-   "name": "青海湖",
+   "id": "sanweishan",
+   "name": "三危山",
    "type": "region",
-   "modern": "今青海省东北部",
-   "note": "吐谷浑核心区域",
+   "modern": "今甘肃省敦煌市东南",
+   "note": "乐僔见金光处",
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -134,13 +117,27 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "he_yuan",
-   "name": "河源",
-   "type": "region",
-   "modern": "今青海省南部",
-   "note": "吐谷浑控扼之地",
+   "id": "mogao_ku",
+   "name": "莫高窟",
+   "type": "fortress",
+   "modern": "今甘肃省敦煌市东南25公里",
+   "note": "千佛洞",
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "cangjing_dong",
+   "name": "藏经洞",
+   "type": "fortress",
+   "modern": "莫高窟第17窟",
+   "note": "出土文书",
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -150,190 +147,92 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
  ],
  "persons": [
   {
-   "id": "QIN__p01",
-   "name": "吐谷浑",
-   "role": "鲜卑慕容部首领",
-   "note": "率部西迁，建立吐谷浑政权",
+   "id": "GAN__p01",
+   "name": "乐僔",
+   "role": "沙门",
+   "note": "莫高窟开凿者",
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
-  },
-  {
-   "id": "QIN__p02",
-   "name": "阿豺",
-   "role": "吐谷浑首领",
-   "note": "有折箭遗训，睦族治国",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "influence": 1
   }
  ],
  "assertions": [
   {
-   "id": "QIN_001",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "predicate": "西迁原因",
-   "value_text": "鲜卑慕容部首领吐谷浑率部西迁",
+   "id": "GAN_001",
+   "subject": "event:ev_gansu_dunhuang_llm_01",
+   "predicate": "开凿时间",
+   "value_text": "前秦建元二年",
    "time": {
-    "era_text": "西晋末年",
-    "start": "283"
+    "era_text": "前秦建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
    },
-   "place": "fu_han",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "西晋末年，鲜卑慕容部首领吐谷浑率部西迁至枹罕",
+   "place": "mogao_ku",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "前秦建元二年（366），沙门乐僔行至敦煌三危山",
    "quote_status": "paraphrase_unverified",
    "layer": "inference",
    "confidence": 0.45,
    "scale": "province",
    "note": "[auto] 补层 inference",
    "dims": [
-    1,
     6
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "西晋末年，鲜卑慕容部首领吐谷浑率部西迁至枹罕",
-   "dim_source": "declared",
+   "_source_quote": "前秦建元二年（366），沙门乐僔行至敦煌三危山",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_002",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "predicate": "迁徙终点",
-   "value_text": "辗转至青海湖一带，据有羌地",
+   "id": "GAN_002",
+   "subject": "event:ev_gansu_dunhuang_llm_01",
+   "predicate": "开凿缘起",
+   "value_text": "见金光如千佛",
    "time": {
-    "era_text": "西晋末年",
-    "start": "283"
+    "era_text": "前秦建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "后辗转至青海湖一带，据有羌地",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "后辗转至青海湖一带，据有羌地",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_003",
-   "subject": "place:qinghai_lake",
-   "predicate": "疆域范围",
-   "value_text": "东西三千里，南北千里",
-   "time": {
-    "era_text": "西晋末年",
-    "start": "283"
-   },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "其地东西三千里、南北千里",
+   "place": "sanweishan",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "见金光如千佛，凿第一窟",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
    "scale": "province",
    "note": "",
    "dims": [
-    1
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "其地东西三千里、南北千里",
-   "dim_source": "declared",
+   "_source_quote": "见金光如千佛，凿第一窟",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_004",
-   "subject": "place:qinghai_lake",
-   "predicate": "控扼要地",
-   "value_text": "控青海、河源，扼丝路南道",
+   "id": "GAN_003",
+   "subject": "place:mogao_ku",
+   "predicate": "开凿历程",
+   "value_text": "历代累凿成千佛洞",
    "time": {
-    "era_text": "西晋末年",
-    "start": "283"
+    "era_text": "前秦至隋唐",
+    "start": "0366"
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "控青海、河源，扼丝路南道",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "控青海、河源，扼丝路南道",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_005",
-   "subject": "person:QIN__p02",
-   "predicate": "治国遗训",
-   "value_text": "阿豺有折箭遗训，睦族",
-   "time": {
-    "era_text": "吐谷浑时期",
-    "start": "283"
-   },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "传至阿豺，有「折箭遗训」睦族",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    4
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "传至阿豺，有「折箭遗训」睦族",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_006",
-   "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "predicate": "灭亡原因",
-   "value_text": "吐谷浑为吐蕃所灭",
-   "time": {
-    "era_text": "663年",
-    "start": "663-01-01",
-    "end": "663-12-31",
-    "gregorian_year": 663
-   },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "终为吐蕃所灭",
+   "place": "mogao_ku",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "此后前秦、北凉、北魏至隋唐，历代累凿",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
@@ -343,26 +242,57 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
     6
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "终为吐蕃所灭",
+   "_source_quote": "此后前秦、北凉、北魏至隋唐，历代累凿",
    "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_007",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "predicate": "立国时间",
-   "value_text": "立国二百八十年（283—663）",
+   "id": "GAN_004",
+   "subject": "place:mogao_ku",
+   "predicate": "艺术风格",
+   "value_text": "融中原与西域风格",
    "time": {
-    "era_text": "283-663",
-    "start": "283"
+    "era_text": "历代",
+    "start": "0366"
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "吐谷浑立国二百八十年（283—663）",
+   "place": "mogao_ku",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "塑像、壁画融中原与西域风格",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    5
+   ],
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "塑像、壁画融中原与西域风格",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "GAN_005",
+   "subject": "place:cangjing_dong",
+   "predicate": "出土文书",
+   "value_text": "数万卷文书",
+   "time": {
+    "era_text": "清光绪二十六年",
+    "start": "1900-01-01",
+    "end": "1900-12-31",
+    "gregorian_year": 1900
+   },
+   "place": "cangjing_dong",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "藏经洞（第17窟）出土文书数万卷",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
@@ -372,196 +302,107 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
     6
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "吐谷浑立国二百八十年（283—663）",
+   "_source_quote": "藏经洞（第17窟）出土文书数万卷",
    "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_008",
-   "subject": "place:qinghai_lake",
-   "predicate": "民族归属",
-   "value_text": "鲜卑慕容部所建政权",
+   "id": "GAN_006",
+   "subject": "place:mogao_ku",
+   "predicate": "文化价值",
+   "value_text": "丝路文化交流瑰宝",
    "time": {
-    "era_text": "西晋末年",
-    "start": "283"
+    "era_text": "历代",
+    "start": "0366"
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "鲜卑慕容部首领吐谷浑",
+   "place": "mogao_ku",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "为丝路文化交流之瑰宝",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
    "scale": "province",
    "note": "",
    "dims": [
-    4
+    5
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "鲜卑慕容部首领吐谷浑",
+   "_source_quote": "为丝路文化交流之瑰宝",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_009",
-   "subject": "place:qinghai_lake",
-   "predicate": "地理位置",
-   "value_text": "位于青海湖一带",
+   "id": "GAN_007",
+   "subject": "place:mogao_ku",
+   "predicate": "开凿年代",
+   "value_text": "存在争议",
    "time": {
-    "era_text": "西晋末年",
-    "start": "283"
+    "era_text": "前秦建元二年",
+    "start": "-139-01-01",
+    "end": "-139-12-31",
+    "gregorian_year": -139
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "辗转至青海湖一带",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "辗转至青海湖一带",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_010",
-   "subject": "place:fu_han",
-   "predicate": "途经地点",
-   "value_text": "西迁途经枹罕",
-   "time": {
-    "era_text": "西晋末年",
-    "start": "283"
-   },
-   "place": "fu_han",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "率部西迁至枹罕",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "率部西迁至枹罕",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_011",
-   "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "predicate": "灭亡时间",
-   "value_text": "663年灭亡",
-   "time": {
-    "era_text": "663年",
-    "start": "663-01-01",
-    "end": "663-12-31",
-    "gregorian_year": 663
-   },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "终为吐蕃所灭",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "终为吐蕃所灭",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "QIN_012",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "predicate": "政权性质",
-   "value_text": "吐谷浑为地方政权",
-   "time": {
-    "era_text": "西晋末年",
-    "start": "283"
-   },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "号吐谷浑",
+   "place": "mogao_ku",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "前秦建元二年（366）",
    "quote_status": "paraphrase_unverified",
    "layer": "scholarship",
    "confidence": 0.6,
    "scale": "province",
-   "note": "学界对政权性质有不同看法",
+   "note": "学界对具体年份有争议",
    "dims": [
-    3
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "号吐谷浑",
-   "dim_source": "declared",
+   "_source_quote": "前秦建元二年（366）",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "QIN_013",
-   "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "predicate": "灭亡细节",
-   "value_text": "吐蕃灭吐谷浑的具体过程不详",
+   "id": "GAN_008",
+   "subject": "place:cangjing_dong",
+   "predicate": "封闭原因",
+   "value_text": "未知",
    "time": {
-    "era_text": "663年",
-    "start": "663-01-01",
-    "end": "663-12-31",
-    "gregorian_year": 663
+    "era_text": "未知",
+    "start": ""
    },
-   "place": "qinghai_lake",
-   "source": "qinghai_tuyuhun_src_llm",
-   "quote": "终为吐蕃所灭",
+   "place": "cangjing_dong",
+   "source": "gansu_dunhuang_src_llm",
+   "quote": "",
    "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0.0,
    "scale": "province",
-   "note": "史料未载具体战役",
+   "note": "藏经洞封闭原因不明",
    "dims": [
     6
    ],
    "lead": {
-    "where": "青海湖周边",
+    "where": "敦煌藏经洞",
     "skills": [
-     "考古发掘",
-     "文献比对"
+     "考古学",
+     "历史文献学"
     ],
-    "accept": "吐蕃灭吐谷浑的具体过程"
+    "accept": "需进一步研究"
    },
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "终为吐蕃所灭",
+   "_source_quote": "",
    "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
@@ -570,61 +411,37 @@ window.SANDBOX_SLICES["qinghai_tuyuhun_llm"] = {
  "conflicts": [],
  "crossConflicts": [],
  "gaps": [
-  "QIN_013"
+  "GAN_008"
  ],
  "events": [
   {
-   "id": "ev_qinghai_tuyuhun_llm_01",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "year": 283,
-   "era": "西晋太康四年",
-   "title": "吐谷浑西迁",
-   "kind": "其他",
-   "text": "吐谷浑率部西迁至青海湖一带",
+   "id": "ev_gansu_dunhuang_llm_01",
+   "subject": "event:ev_gansu_dunhuang_llm_01",
+   "year": 366,
+   "era": "前秦建元二年",
+   "title": "乐僔开窟",
+   "kind": "建置",
+   "text": "乐僔见金光，凿第一窟",
    "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null
-  },
-  {
-   "id": "ev_qinghai_tuyuhun_llm_02",
-   "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "year": 663,
-   "era": "唐龙朔三年",
-   "title": "吐谷浑灭亡",
-   "kind": "战事",
-   "text": "吐谷浑为吐蕃所灭",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
+   "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
- "edges": [
-  {
-   "from": "fu_han",
-   "to": "qinghai_lake",
-   "type": "military",
-   "label": "吐谷浑西迁路线",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null
-  }
- ],
+ "edges": [],
  "control": [
   {
-   "place_id": "fu_han",
+   "place_id": "dunhuang",
    "party": "后世官修",
-   "start": 283,
-   "end": 663,
-   "basis": "auto: 场景主地点 fu_han 叙事控制方=后世官修"
+   "start": 366,
+   "end": 1036,
+   "basis": "auto: 场景主地点 dunhuang 叙事控制方=后世官修"
   }
  ],
  "control_seats": [],
  "control_years": [
-  283,
-  663
+  366,
+  1036
  ],
  "vocab": {
   "layers": {

@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "dunhuang",
+   "name": "敦煌",
+   "type": "city",
+   "modern": "今甘肃省敦煌市",
+   "note": "丝路重镇",
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "sanweishan",
+   "name": "三危山",
+   "type": "region",
+   "modern": "今甘肃省敦煌市东南",
+   "note": "乐僔见金光处",
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "mogao_ku",
+   "name": "莫高窟",
+   "type": "fortress",
+   "modern": "今甘肃省敦煌市东南25公里",
+   "note": "千佛洞",
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "cangjing_dong",
+   "name": "藏经洞",
+   "type": "fortress",
+   "modern": "莫高窟第17窟",
+   "note": "出土文书",
+   "_source_idx": 0,
+   "_source_name": "敦煌莫高窟史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

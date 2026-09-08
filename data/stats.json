@@ -1,9 +1,9 @@
 {
-  "scenes_total": 243,
-  "historical": 234,
+  "scenes_total": 245,
+  "historical": 236,
   "fictional": 9,
-  "assertions_total": 3760,
-  "sources_total": 221,
+  "assertions_total": 3773,
+  "sources_total": 223,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -15,6 +15,7 @@
     "chibi_llm",
     "chongqing_capital_llm",
     "chongqing_diaoyucheng_llm",
+    "chongqing_peidu_llm",
     "chu_han",
     "chuhai_llm",
     "dagukou_battle_llm",
@@ -24,6 +25,7 @@
     "foguo_chan_llm",
     "fujian_qijiguang_llm",
     "fujian_quanzhou_llm",
+    "gansu_dunhuang_llm",
     "gansu_hexizhen_llm",
     "guandu_llm",
     "guangxi_lingqu_llm",
@@ -1273,7 +1275,7 @@
       "id": "qinghai_tuyuhun_llm",
       "title": "隋炀帝西征吐谷浑·青海道（609）",
       "kind": "frontier",
-      "assertions": 20,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -1863,6 +1865,20 @@
       "kind": "battle",
       "assertions": 16,
       "factions": {}
+    },
+    {
+      "id": "chongqing_peidu_llm",
+      "title": "重庆陪都",
+      "kind": "dynasty",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "gansu_dunhuang_llm",
+      "title": "敦煌莫高窟",
+      "kind": "tech",
+      "assertions": 8,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2108,6 +2124,8 @@
     "xinjiang_xiyu_llm": "西域都护府",
     "xinjiang_zuozongtang_llm": "左宗棠收复新疆",
     "guangxi_lingqu_llm": "灵渠",
-    "hainan_hainandao_llm": "海南岛战役"
+    "hainan_hainandao_llm": "海南岛战役",
+    "chongqing_peidu_llm": "重庆陪都",
+    "gansu_dunhuang_llm": "敦煌莫高窟"
   }
 }

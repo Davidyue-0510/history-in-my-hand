@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "蒋介石",
+   "role": "国民政府军事委员会委员长",
+   "note": "战时中国最高领导人",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p02",
+   "name": "林森",
+   "role": "国民政府主席",
+   "note": "随政府西迁重庆",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p03",
+   "name": "罗斯福",
+   "role": "美国总统",
+   "note": "同盟国领袖",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p04",
+   "name": "丘吉尔",
+   "role": "英国首相",
+   "note": "同盟国领袖",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p05",
+   "name": "斯大林",
+   "role": "苏联领导人",
+   "note": "同盟国领袖",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p06",
+   "name": "东条英机",
+   "role": "日本首相",
+   "note": "发动太平洋战争",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

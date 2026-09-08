@@ -34,6 +34,7 @@
       "chibi_llm",
       "chongqing_capital_llm",
       "chongqing_diaoyucheng_llm",
+      "chongqing_peidu_llm",
       "chongzhen_han",
       "chongzhen_huangzai",
       "chu_han",
@@ -60,6 +61,7 @@
       "fuzhou",
       "gaixia",
       "gaizhou",
+      "gansu_dunhuang_llm",
       "gansu_hexizhen_llm",
       "grand_canal",
       "great_wall",
@@ -731,6 +733,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "chongqing_peidu_llm",
+      "name": "chongqing_peidu_llm",
+      "total": 12,
+      "layers": {
+        "record": 8,
+        "inference": 1,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 4,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_chongqing_peidu_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "chongzhen_han",
       "name": "chongzhen_han",
       "total": 10,
@@ -1222,6 +1243,25 @@
       "avg_resonance": 0.389,
       "best_event": "event:gaizhou_fall",
       "best_resonance": 0.444
+    },
+    {
+      "scene": "gansu_dunhuang_llm",
+      "name": "gansu_dunhuang_llm",
+      "total": 8,
+      "layers": {
+        "inference": 1,
+        "record": 5,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 8
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_gansu_dunhuang_llm_01",
+      "best_resonance": 0.0
     },
     {
       "scene": "gansu_hexizhen_llm",
@@ -2963,19 +3003,18 @@
     {
       "scene": "qinghai_tuyuhun_llm",
       "name": "qinghai_tuyuhun_llm",
-      "total": 20,
+      "total": 13,
       "layers": {
         "inference": 1,
-        "record": 13,
-        "gap": 4,
-        "scholarship": 2
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
       },
       "party_counts": {
-        "隋官修": 15,
-        "综合史料": 5
+        "后世官修": 13
       },
       "faction_counts": {},
-      "event_count": 3,
+      "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:ev_qinghai_tuyuhun_llm_01",
       "best_resonance": 0.0
@@ -7953,6 +7992,130 @@
       }
     },
     {
+      "subject": "event:ev_chongqing_peidu_llm_01",
+      "name": "event:ev_chongqing_peidu_llm_01",
+      "scenes": [
+        "chongqing_peidu_llm"
+      ],
+      "scene_names": [
+        "chongqing_peidu_llm"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chongqing_peidu_llm_02",
+      "name": "event:ev_chongqing_peidu_llm_02",
+      "scenes": [
+        "chongqing_peidu_llm"
+      ],
+      "scene_names": [
+        "chongqing_peidu_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chongqing_peidu_llm_03",
+      "name": "event:ev_chongqing_peidu_llm_03",
+      "scenes": [
+        "chongqing_peidu_llm"
+      ],
+      "scene_names": [
+        "chongqing_peidu_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chongqing_peidu_llm_04",
+      "name": "event:ev_chongqing_peidu_llm_04",
+      "scenes": [
+        "chongqing_peidu_llm"
+      ],
+      "scene_names": [
+        "chongqing_peidu_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_chuhai_llm_01",
       "name": "event:ev_chuhai_llm_01",
       "scenes": [
@@ -8799,6 +8962,37 @@
         "fujian_quanzhou_llm"
       ],
       "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_gansu_dunhuang_llm_01",
+      "name": "event:ev_gansu_dunhuang_llm_01",
+      "scenes": [
+        "gansu_dunhuang_llm"
+      ],
+      "scene_names": [
+        "gansu_dunhuang_llm"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -12859,12 +13053,12 @@
       "scene_names": [
         "qinghai_tuyuhun_llm"
       ],
-      "total": 11,
-      "gap_count": 3,
+      "total": 4,
+      "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
-      "gap_rate": 0.273,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -12890,43 +13084,12 @@
       "scene_names": [
         "qinghai_tuyuhun_llm"
       ],
-      "total": 5,
+      "total": 3,
       "gap_count": 1,
       "coverage": "0/3",
       "coverage_frac": 0.0,
-      "divergence": 0.333,
-      "gap_rate": 0.2,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
-      "subject": "event:ev_qinghai_tuyuhun_llm_03",
-      "name": "event:ev_qinghai_tuyuhun_llm_03",
-      "scenes": [
-        "qinghai_tuyuhun_llm"
-      ],
-      "scene_names": [
-        "qinghai_tuyuhun_llm"
-      ],
-      "total": 4,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.333,
-      "gap_rate": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

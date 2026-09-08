@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "chongqing",
+   "name": "重庆",
+   "type": "city",
+   "modern": "今中国重庆市",
+   "note": "战时陪都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "nanjing",
+   "name": "南京",
+   "type": "city",
+   "modern": "今中国江苏省南京市",
+   "note": "战前首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.78,
+   "lat": 32.06,
+   "geo_note": "民国首都"
+  },
+  {
+   "id": "washington",
+   "name": "华盛顿",
+   "type": "city",
+   "modern": "今美国首都",
+   "note": "美国首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "london",
+   "name": "伦敦",
+   "type": "city",
+   "modern": "今英国首都",
+   "note": "英国首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "moscow",
+   "name": "莫斯科",
+   "type": "city",
+   "modern": "今俄罗斯首都",
+   "note": "苏联首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "tokyo",
+   "name": "东京",
+   "type": "city",
+   "modern": "今日本首都",
+   "note": "日本首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}
