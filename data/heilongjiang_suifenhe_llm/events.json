@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_heilongjiang_suifenhe_llm_01",
+   "subject": "event:ev_heilongjiang_suifenhe_llm_01",
+   "year": 1896,
+   "era": "光绪二十二年",
+   "title": "中俄密约签订",
+   "kind": "外交",
+   "text": "俄迫清廷订约，攫中东铁路筑路权",
+   "_source_idx": 0,
+   "_source_name": "东省铁路沿革史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_suifenhe_llm_02",
+   "subject": "event:ev_heilongjiang_suifenhe_llm_02",
+   "year": 1898,
+   "era": "光绪二十四年",
+   "title": "中东铁路开工",
+   "kind": "建置",
+   "text": "起满洲里经哈尔滨绥芬河至海参崴",
+   "_source_idx": 0,
+   "_source_name": "东省铁路沿革史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_suifenhe_llm_03",
+   "subject": "event:ev_heilongjiang_suifenhe_llm_03",
+   "year": 1899,
+   "era": "光绪二十五年",
+   "title": "铁路管理局设立",
+   "kind": "行政",
+   "text": "俄设管理局，划附属地三千余方华里",
+   "_source_idx": 0,
+   "_source_name": "东省铁路沿革史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

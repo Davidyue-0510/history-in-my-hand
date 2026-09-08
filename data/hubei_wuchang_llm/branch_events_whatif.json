@@ -1,0 +1,791 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "hubei_wuchang_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1881,
+  1941
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.61）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.614,
+    "new_to": 0.456,
+    "cum": -0.158
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.44 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.652,
+    "new_to": 0.441,
+    "cum": -0.211
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.43 / 史实 0.69）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.69,
+    "new_to": 0.427,
+    "cum": -0.263
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.41 / 史实 0.73）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.728,
+    "new_to": 0.412,
+    "cum": -0.316
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.40 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.766,
+    "new_to": 0.397,
+    "cum": -0.369
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.38 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.804,
+    "new_to": 0.383,
+    "cum": -0.421
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.37 / 史实 0.84）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.842,
+    "new_to": 0.368,
+    "cum": -0.474
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.53（本支 0.35 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.88,
+    "new_to": 0.353,
+    "cum": -0.527
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.58（本支 0.34 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.918,
+    "new_to": 0.339,
+    "cum": -0.579
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.32 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.956,
+    "new_to": 0.324,
+    "cum": -0.632
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.31 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.994,
+    "new_to": 0.309,
+    "cum": -0.685
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.295,
+    "cum": -0.705
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1895,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.28,
+    "cum": -0.72
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1896,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.265,
+    "cum": -0.735
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1897,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.251,
+    "cum": -0.749
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1898,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.236,
+    "cum": -0.764
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1899,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.222,
+    "cum": -0.778
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1900,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.207,
+    "cum": -0.793
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1901,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.192,
+    "cum": -0.808
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1902,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.178,
+    "cum": -0.822
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1903,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.163,
+    "cum": -0.837
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1904,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.148,
+    "cum": -0.852
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1905,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.134,
+    "cum": -0.866
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1906,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.119,
+    "cum": -0.881
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1907,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.104,
+    "cum": -0.896
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1908,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.09,
+    "cum": -0.91
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.93（本支 0.07 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.075,
+    "cum": -0.925
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1910,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.06,
+    "cum": -0.94
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1911,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.046,
+    "cum": -0.954
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1912,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.031,
+    "cum": -0.969
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1913,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.016,
+    "cum": -0.984
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1914,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.002,
+    "cum": -0.998
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1915,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1916,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1917,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1918,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1919,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1920,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1921,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1922,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1923,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1924,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1925,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1926,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1927,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1928,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1929,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1930,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1931,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1932,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1933,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1934,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1935,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1936,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1937,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1938,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "wuchang"
+  },
+  {
+   "kind": "summary",
+   "year": 1941,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "wuchang"
+  }
+ ]
+}

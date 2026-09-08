@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "jilin",
+      "name": "吉林",
+      "type": "city",
+      "modern": "今中国吉林省吉林市",
+      "note": "长白山在其东南",
+      "_source_idx": 0,
+      "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "changbaishan",
+      "name": "长白山",
+      "type": "region",
+      "modern": "今中国吉林省",
+      "note": "产参之地",
+      "_source_idx": 0,
+      "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "songhuajiang",
+      "name": "松花江",
+      "type": "river",
+      "modern": "今中国东北",
+      "note": "沿岸渔猎",
+      "_source_idx": 0,
+      "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "liutiaobian",
+      "name": "柳条边",
+      "type": "fortress",
+      "modern": "今中国东北",
+      "note": "边外采参",
+      "_source_idx": 0,
+      "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

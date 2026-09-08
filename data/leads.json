@@ -1991,6 +1991,38 @@
   },
   {
    "id": "HEI_013",
+   "scene": "heilongjiang_chuangguan_llm",
+   "subject": "place:heilongjiang",
+   "title": "移民具体路线未载",
+   "missing": "历史地理 / 移民史",
+   "where": "山海关、柳条边",
+   "skills": [
+    "历史地理",
+    "移民史"
+   ],
+   "accept": "需查地方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HEI_014",
+   "scene": "heilongjiang_chuangguan_llm",
+   "subject": "place:heilongjiang",
+   "title": "垦殖具体面积未载",
+   "missing": "农业史 / 统计",
+   "where": "黑龙江垦区",
+   "skills": [
+    "农业史",
+    "统计"
+   ],
+   "accept": "需查档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "HEI_013",
    "scene": "heilongjiang_jin",
    "subject": "place:huining",
    "title": "建置年代不详",
@@ -2032,6 +2064,38 @@
     "历史档案检索"
    ],
    "accept": "补充战斗记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HEI_011",
+   "scene": "heilongjiang_suifenhe_llm",
+   "subject": "place:haerbin",
+   "title": "三千余方华里，具体边界未详",
+   "missing": "历史地理 / 档案研究",
+   "where": "哈尔滨铁路附属地界址",
+   "skills": [
+    "历史地理",
+    "档案研究"
+   ],
+   "accept": "附属地四至及界碑记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HEI_013",
+   "scene": "heilongjiang_suifenhe_llm",
+   "subject": "event:ev_heilongjiang_suifenhe_llm_02",
+   "title": "干线全长未载",
+   "missing": "铁路史 / 档案研究",
+   "where": "中东铁路全线里程",
+   "skills": [
+    "铁路史",
+    "档案研究"
+   ],
+   "accept": "中东铁路工程档案",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
@@ -2286,6 +2350,37 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 9
+  },
+  {
+   "id": "HUB_014",
+   "scene": "hubei_hankou_llm",
+   "subject": "place:hankou",
+   "title": "具体开埠日期记载不详",
+   "missing": "档案检索 / 清代职官年表",
+   "where": "中国第一历史档案馆",
+   "skills": [
+    "档案检索",
+    "清代职官年表"
+   ],
+   "accept": "查得江汉关设立确切日期",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "HUB_014",
+   "scene": "hubei_wuchang_llm",
+   "subject": "event:ev_hubei_wuchang_llm_01",
+   "title": "彭刘杨遇害详情不明",
+   "missing": "历史考据",
+   "where": "wuchang",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "彭刘杨具体身份及遇害经过",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "HUB_011",
@@ -2645,6 +2740,22 @@
    "_src_line": 15
   },
   {
+   "id": "JIL_014",
+   "scene": "jilin_changbaishan_llm",
+   "subject": "place:changbaishan",
+   "title": "参禁具体执行方式未详",
+   "missing": "清史 / 经济史",
+   "where": "长白山",
+   "skills": [
+    "清史",
+    "经济史"
+   ],
+   "accept": "档案或方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "JIL_015",
    "scene": "jilin_changchun_llm",
    "subject": "event:ev_jilin_changchun_llm_02",
@@ -2675,6 +2786,23 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "JIL_016",
+   "scene": "jilin_yanbian_llm",
+   "subject": "place:yanji",
+   "title": "清季延边朝鲜族人口、垦田亩数、宗教社团结构与汉满冲突事件年表，档案残缺，系统数据缺载",
+   "missing": "满文档案 / 朝鲜文集 / 日据时期满铁调查",
+   "where": "清季延边（吉林东南图们江北）",
+   "skills": [
+    "满文档案",
+    "朝鲜文集",
+    "日据时期满铁调查"
+   ],
+   "accept": "精确到年-村的人口、垦田、冲突事件年表",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
   },
   {
    "id": "JNG01",
@@ -4453,6 +4581,21 @@
    "_src_line": 15
   },
   {
+   "id": "SHA_014",
+   "scene": "shanghai_shangwu_llm",
+   "subject": "event:ev_shanghai_shangwu_llm_02",
+   "title": "张元济入馆年份待考",
+   "missing": "档案考据",
+   "where": "上海档案馆藏商务印书馆档案",
+   "skills": [
+    "档案考据"
+   ],
+   "accept": "张元济入馆确切年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SHA_015",
    "scene": "shanghai_songkai_llm",
    "subject": "event:ev_shanghai_songkai_llm_01",
@@ -4482,6 +4625,36 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SHA_011",
+   "scene": "shanghai_xinhai_llm",
+   "subject": "event:ev_shanghai_xinhai_llm_01",
+   "title": "原文未载伤亡",
+   "missing": "史料检索",
+   "where": "上海地方志或报章",
+   "skills": [
+    "史料检索"
+   ],
+   "accept": "补充伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shanghai_xinhai_llm",
+   "subject": "event:ev_shanghai_xinhai_llm_02",
+   "title": "具体机构设置未详",
+   "missing": "档案研究",
+   "where": "沪军都督府档案",
+   "skills": [
+    "档案研究"
+   ],
+   "accept": "补充组织架构",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SHANGYANGG01",
@@ -5964,6 +6137,37 @@
    "_src_line": 14
   },
   {
+   "id": "XIN_013",
+   "scene": "xinjiang_gaochang_llm",
+   "subject": "place:gaochang",
+   "title": "史料简略待考",
+   "missing": "考古发掘 / 文献比对",
+   "where": "高昌故城遗址",
+   "skills": [
+    "考古发掘",
+    "文献比对"
+   ],
+   "accept": "需进一步考古证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIN_014",
+   "scene": "xinjiang_jiansheng_llm",
+   "subject": "event:ev_xinjiang_jiansheng_llm_05",
+   "title": "建省时间有争议",
+   "missing": "考据",
+   "where": "清史稿",
+   "skills": [
+    "考据"
+   ],
+   "accept": "需查证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "XIN_011",
    "scene": "xinjiang_xiyu",
    "subject": "event:ev_xinjiang_xiyu_02",
@@ -6515,6 +6719,22 @@
    "_src_line": 14
   },
   {
+   "id": "YUN_014",
+   "scene": "yunnan_duwenxiu_llm",
+   "subject": "event:ev_yunnan_duwenxiu_llm_03",
+   "title": "清军合围大理兵力不详",
+   "missing": "军事史 / 档案检索",
+   "where": "清军围大理兵力部署",
+   "skills": [
+    "军事史",
+    "档案检索"
+   ],
+   "accept": "清军围城兵力及将领",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "YUN_010",
    "scene": "yunnan_nanzhao_llm",
    "subject": "event:ev_yunnan_nanzhao_llm_02",
@@ -6585,6 +6805,22 @@
     "历史考据"
    ],
    "accept": "需查证具体过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "YUN_014",
+   "scene": "yunnan_quhuanzhang_llm",
+   "subject": "event:ev_yunnan_quhuanzhang_llm_03",
+   "title": "建国后具体年份不详",
+   "missing": "档案检索 / 口述史",
+   "where": "昆明制药厂档案",
+   "skills": [
+    "档案检索",
+    "口述史"
+   ],
+   "accept": "曲焕章献方具体年份",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

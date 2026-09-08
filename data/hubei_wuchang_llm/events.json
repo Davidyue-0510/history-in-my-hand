@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_hubei_wuchang_llm_01",
+   "subject": "event:ev_hubei_wuchang_llm_01",
+   "year": 1911,
+   "era": "宣统三年八月十九日",
+   "title": "武昌起义",
+   "kind": "战事",
+   "text": "新军发难，夺军械库",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_wuchang_llm_02",
+   "subject": "event:ev_hubei_wuchang_llm_02",
+   "year": 1911,
+   "era": "宣统三年八月十九日",
+   "title": "瑞澂弃城",
+   "kind": "其他",
+   "text": "总督逃往兵轮",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_wuchang_llm_03",
+   "subject": "event:ev_hubei_wuchang_llm_03",
+   "year": 1911,
+   "era": "宣统三年八月二十日",
+   "title": "推举都督",
+   "kind": "行政",
+   "text": "黎元洪任都督",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_wuchang_llm_04",
+   "subject": "event:ev_hubei_wuchang_llm_04",
+   "year": 1911,
+   "era": "宣统三年八月",
+   "title": "颁布约法",
+   "kind": "行政",
+   "text": "颁《鄂州约法》",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

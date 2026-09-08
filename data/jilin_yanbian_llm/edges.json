@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "hamgyong",
+   "to": "yanbian",
+   "type": "migration",
+   "label": "朝鲜民渡江迁入",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

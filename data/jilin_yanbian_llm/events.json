@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_yanbian_llm_01",
+   "subject": "event:ev_jilin_yanbian_llm_01",
+   "year": 1881,
+   "era": "光绪七年",
+   "title": "设和龙峪通商局",
+   "kind": "行政",
+   "text": "清廷于和龙峪设通商局管理垦民",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_yanbian_llm_02",
+   "subject": "event:ev_jilin_yanbian_llm_02",
+   "year": 1902,
+   "era": "光绪二十八年",
+   "title": "签订中朝通商条约",
+   "kind": "外交",
+   "text": "条约认可韩民在边外垦居",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_yanbian_llm_03",
+   "subject": "event:ev_jilin_yanbian_llm_03",
+   "year": 1902,
+   "era": "光绪二十八年",
+   "title": "置延吉厅",
+   "kind": "建置",
+   "text": "设延吉厅隶吉林东南路",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_yanbian_llm_04",
+   "subject": "event:ev_jilin_yanbian_llm_04",
+   "year": 1913,
+   "era": "民国二年",
+   "title": "改延吉县",
+   "kind": "建置",
+   "text": "民国改延吉县后升延边",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

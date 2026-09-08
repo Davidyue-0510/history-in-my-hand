@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "YUN__p01",
+   "name": "杜文秀",
+   "role": "总统兵马大元帅",
+   "note": "大理政权领袖，回民起义核心人物",
+   "_source_idx": 0,
+   "_source_name": "回民起义·云南回民起义史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YUN__p02",
+   "name": "清廷官员",
+   "role": "清方官员",
+   "note": "云南官绅，与回民构衅",
+   "_source_idx": 0,
+   "_source_name": "回民起义·云南回民起义史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

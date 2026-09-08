@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "wuchang",
+   "to": "chuwangtai",
+   "type": "military",
+   "label": "起义军进攻路线",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

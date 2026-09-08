@@ -525,7 +525,19 @@
   "yuan_shangdu_llm",
   "zuyong_diao_llm",
   "ningxia_lingzhou_llm",
-  "tianjin_jiqiju_llm"
+  "tianjin_jiqiju_llm",
+  "heilongjiang_chuangguan_llm",
+  "heilongjiang_suifenhe_llm",
+  "hubei_hankou_llm",
+  "hubei_wuchang_llm",
+  "jilin_changbaishan_llm",
+  "jilin_yanbian_llm",
+  "shanghai_shangwu_llm",
+  "shanghai_xinhai_llm",
+  "xinjiang_gaochang_llm",
+  "xinjiang_jiansheng_llm",
+  "yunnan_duwenxiu_llm",
+  "yunnan_quhuanzhang_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -26207,6 +26219,912 @@
    "dims": [
     2,
     3,
+    5,
+    6
+   ]
+  },
+  "heilongjiang_chuangguan_llm": {
+   "kind": "social",
+   "region": "jianzhou",
+   "province": "heilongjiang",
+   "title": "闯关东·直鲁移民与黑龙江开发（清末民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shandong",
+   "dossier_event": "event:ev_heilongjiang_chuangguan_llm_01",
+   "vocab_pack": "heilongjiang_chuangguan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "闯关东·直鲁移民与黑龙江开发（清末民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "闯关东·直鲁移民与黑龙江开发（清末民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "闯关东·直鲁移民与黑龙江开发（清末民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "闯关东·直鲁移民与黑龙江开发（清末民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "heilongjiang_suifenhe_llm": {
+   "kind": "exchange",
+   "region": "jianzhou",
+   "province": "heilongjiang",
+   "title": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "manzhouli",
+   "dossier_event": "event:ev_heilongjiang_suifenhe_llm_01",
+   "vocab_pack": "heilongjiang_suifenhe_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "hubei_hankou_llm": {
+   "kind": "exchange",
+   "region": "jiangnan",
+   "province": "hubei",
+   "title": "汉口开埠与长江中游商埠（1861）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hankou",
+   "dossier_event": "event:ev_hubei_hankou_llm_01",
+   "vocab_pack": "hubei_hankou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉口开埠与长江中游商埠（1861）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉口开埠与长江中游商埠（1861）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉口开埠与长江中游商埠（1861）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉口开埠与长江中游商埠（1861）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "hubei_wuchang_llm": {
+   "kind": "uprising",
+   "region": "jiangnan",
+   "province": "hubei",
+   "title": "武昌起义与辛亥首义（1911）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "wuchang",
+   "dossier_event": "event:ev_hubei_wuchang_llm_01",
+   "vocab_pack": "hubei_wuchang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "武昌起义与辛亥首义（1911）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "武昌起义与辛亥首义（1911）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "武昌起义与辛亥首义（1911）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "武昌起义与辛亥首义（1911）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    6
+   ]
+  },
+  "jilin_changbaishan_llm": {
+   "kind": "social",
+   "region": "jianzhou",
+   "province": "jilin",
+   "title": "长白山采参与松花江渔猎（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "changbaishan",
+   "dossier_event": "event:ev_jilin_changbaishan_llm_01",
+   "vocab_pack": "jilin_changbaishan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "长白山采参与松花江渔猎（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "长白山采参与松花江渔猎（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "长白山采参与松花江渔猎（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "长白山采参与松花江渔猎（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "jilin_yanbian_llm": {
+   "kind": "social",
+   "region": "jianzhou",
+   "province": "jilin",
+   "title": "延边朝鲜族迁入与开发（同治—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tumen_river",
+   "dossier_event": "event:ev_jilin_yanbian_llm_01",
+   "vocab_pack": "jilin_yanbian_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "延边朝鲜族迁入与开发（同治—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "延边朝鲜族迁入与开发（同治—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "延边朝鲜族迁入与开发（同治—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "延边朝鲜族迁入与开发（同治—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "shanghai_shangwu_llm": {
+   "kind": "exchange",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "上海商务印书馆与近代出版业（1897—1949）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shanghai",
+   "dossier_event": "event:ev_shanghai_shangwu_llm_01",
+   "vocab_pack": "shanghai_shangwu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海商务印书馆与近代出版业（1897—1949）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "上海商务印书馆与近代出版业（1897—1949）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "上海商务印书馆与近代出版业（1897—1949）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海商务印书馆与近代出版业（1897—1949）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "shanghai_xinhai_llm": {
+   "kind": "thought",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "上海光复与沪军都督府（1911）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shanghai",
+   "dossier_event": "event:ev_shanghai_xinhai_llm_01",
+   "vocab_pack": "shanghai_xinhai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海光复与沪军都督府（1911）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "上海光复与沪军都督府（1911）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "上海光复与沪军都督府（1911）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海光复与沪军都督府（1911）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "xinjiang_gaochang_llm": {
+   "kind": "thought",
+   "region": "xibei",
+   "province": "xinjiang",
+   "title": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "gaochang",
+   "dossier_event": "event:ev_xinjiang_gaochang_llm_01",
+   "vocab_pack": "xinjiang_gaochang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "高昌佛教与丝路文化（麴氏高昌·唐西州）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "高昌佛教与丝路文化（麴氏高昌·唐西州）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "高昌佛教与丝路文化（麴氏高昌·唐西州）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "高昌佛教与丝路文化（麴氏高昌·唐西州）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "xinjiang_jiansheng_llm": {
+   "kind": "reform",
+   "region": "xibei",
+   "province": "xinjiang",
+   "title": "新疆建省与行省改制（1884）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "wulumuqi",
+   "dossier_event": "event:ev_xinjiang_jiansheng_llm_01",
+   "vocab_pack": "xinjiang_jiansheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "新疆建省与行省改制（1884）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "新疆建省与行省改制（1884）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "新疆建省与行省改制（1884）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "新疆建省与行省改制（1884）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "yunnan_duwenxiu_llm": {
+   "kind": "uprising",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "云南回民起义与杜文秀大理政权（1856—1873）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "dali",
+   "dossier_event": "event:ev_yunnan_duwenxiu_llm_01",
+   "vocab_pack": "yunnan_duwenxiu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "云南回民起义与杜文秀大理政权（1856—1873）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "云南回民起义与杜文秀大理政权（1856—1873）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "云南回民起义与杜文秀大理政权（1856—1873）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "云南回民起义与杜文秀大理政权（1856—1873）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yunnan_quhuanzhang_llm": {
+   "kind": "tech",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "曲焕章与云南白药（1902）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jiangchuan",
+   "dossier_event": "event:ev_yunnan_quhuanzhang_llm_01",
+   "vocab_pack": "yunnan_quhuanzhang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "曲焕章与云南白药（1902）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "曲焕章与云南白药（1902）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "曲焕章与云南白药（1902）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "曲焕章与云南白药（1902）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    4,
     5,
     6
    ]

@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "陈其美",
+   "role": "沪军都督",
+   "note": "上海光复主要领导人",
+   "_source_idx": 0,
+   "_source_name": "近代上海光复史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "李平书",
+   "role": "上海士绅",
+   "note": "参与响应起义",
+   "_source_idx": 0,
+   "_source_name": "近代上海光复史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "武昌首义者",
+   "role": "革命党人",
+   "note": "武昌起义发动者",
+   "_source_idx": 0,
+   "_source_name": "近代上海光复史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

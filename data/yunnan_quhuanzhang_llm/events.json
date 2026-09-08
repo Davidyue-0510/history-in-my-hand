@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_yunnan_quhuanzhang_llm_01",
+   "subject": "event:ev_yunnan_quhuanzhang_llm_01",
+   "year": 1902,
+   "era": "光绪二十八年",
+   "title": "创制云南白药",
+   "kind": "其他",
+   "text": "曲焕章采滇南草药研制百宝丹",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_quhuanzhang_llm_02",
+   "subject": "event:ev_yunnan_quhuanzhang_llm_02",
+   "year": 1937,
+   "era": "抗战军兴",
+   "title": "滇军出征备药",
+   "kind": "其他",
+   "text": "白药为滇军出征必备之品",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_quhuanzhang_llm_03",
+   "subject": "event:ev_yunnan_quhuanzhang_llm_03",
+   "year": 1955,
+   "era": "建国后",
+   "title": "献方国家量产",
+   "kind": "行政",
+   "text": "曲氏献方，昆明制药厂量产",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

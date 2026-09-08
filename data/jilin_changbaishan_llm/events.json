@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_changbaishan_llm_01",
+   "subject": "event:ev_jilin_changbaishan_llm_01",
+   "year": 1644,
+   "era": "清初",
+   "title": "设打牲乌拉衙门",
+   "kind": "建置",
+   "text": "设打牲乌拉衙门承办参贡",
+   "_source_idx": 0,
+   "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_changbaishan_llm_02",
+   "subject": "event:ev_jilin_changbaishan_llm_02",
+   "year": 1644,
+   "era": "清初",
+   "title": "定参禁",
+   "kind": "行政",
+   "text": "禁民入山采参",
+   "_source_idx": 0,
+   "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_changbaishan_llm_03",
+   "subject": "event:ev_jilin_changbaishan_llm_03",
+   "year": 1644,
+   "era": "清初",
+   "title": "赫哲渔猎贡纳",
+   "kind": "行政",
+   "text": "赫哲等部岁贡鲟鳇貂狐",
+   "_source_idx": 0,
+   "_source_name": "扈从东巡日录·柳边纪略（康熙·方式济）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

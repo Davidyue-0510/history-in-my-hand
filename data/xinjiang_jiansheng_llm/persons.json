@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "XIN__p01",
+   "name": "左宗棠",
+   "role": "陕甘总督",
+   "note": "督办新疆军务，规复全疆",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p02",
+   "name": "刘锦棠",
+   "role": "新疆巡抚",
+   "note": "建议新疆建省",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p03",
+   "name": "清廷",
+   "role": "中央政府",
+   "note": "决策建省",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

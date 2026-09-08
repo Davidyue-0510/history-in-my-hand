@@ -1,0 +1,609 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "yunnan_quhuanzhang_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1902,
+  1949
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1905,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.45 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.64,
+    "new_to": 0.446,
+    "cum": -0.194
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1906,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.43 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.675,
+    "new_to": 0.432,
+    "cum": -0.243
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1907,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.42 / 史实 0.71）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.71,
+    "new_to": 0.419,
+    "cum": -0.291
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1908,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.745,
+    "new_to": 0.405,
+    "cum": -0.34
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.39 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.391,
+    "cum": -0.389
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1910,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.38 / 史实 0.81）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.815,
+    "new_to": 0.378,
+    "cum": -0.437
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1911,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.36 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.364,
+    "cum": -0.486
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1912,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.53（本支 0.35 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.885,
+    "new_to": 0.351,
+    "cum": -0.534
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1913,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.58（本支 0.34 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.337,
+    "cum": -0.583
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1914,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.32 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.955,
+    "new_to": 0.324,
+    "cum": -0.631
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1915,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.31 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.99,
+    "new_to": 0.31,
+    "cum": -0.68
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1916,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.296,
+    "cum": -0.704
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1917,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.283,
+    "cum": -0.717
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1918,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.269,
+    "cum": -0.731
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1919,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.256,
+    "cum": -0.744
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1920,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.242,
+    "cum": -0.758
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1921,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.229,
+    "cum": -0.771
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1922,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.215,
+    "cum": -0.785
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1923,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.201,
+    "cum": -0.799
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1924,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.188,
+    "cum": -0.812
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1925,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.174,
+    "cum": -0.826
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1926,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.161,
+    "cum": -0.839
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1927,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.147,
+    "cum": -0.853
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1928,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.134,
+    "cum": -0.866
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1929,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.12,
+    "cum": -0.88
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1930,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.106,
+    "cum": -0.894
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1931,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.093,
+    "cum": -0.907
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1932,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.079,
+    "cum": -0.921
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1933,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.93（本支 0.07 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.066,
+    "cum": -0.934
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1934,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.052,
+    "cum": -0.948
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1935,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.039,
+    "cum": -0.961
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1936,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.025,
+    "cum": -0.975
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1937,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.011,
+    "cum": -0.989
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1938,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1942,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1943,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1944,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1945,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1946,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1947,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1948,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1949,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jiangchuan"
+  },
+  {
+   "kind": "summary",
+   "year": 1949,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jiangchuan"
+  }
+ ]
+}

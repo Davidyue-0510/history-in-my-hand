@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "shandong",
+   "to": "heilongjiang",
+   "type": "military",
+   "label": "鲁籍移民路线",
+   "_source_idx": 0,
+   "_source_name": "中国移民史·闯关东卷",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "zhili",
+   "to": "heilongjiang",
+   "type": "military",
+   "label": "直隶移民路线",
+   "_source_idx": 0,
+   "_source_name": "中国移民史·闯关东卷",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

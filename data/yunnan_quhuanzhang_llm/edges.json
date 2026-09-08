@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "jiangchuan",
+   "to": "diannan",
+   "type": "military",
+   "label": "采药路线",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "kunming",
+   "to": "dongnanya",
+   "type": "reinforcement",
+   "label": "远销路线",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

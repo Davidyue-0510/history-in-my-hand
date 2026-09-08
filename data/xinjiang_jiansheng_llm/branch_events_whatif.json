@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "xinjiang_jiansheng_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1875,
+  1884
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.45 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.653,
+    "new_to": 0.451,
+    "cum": -0.202
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.43 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.704,
+    "new_to": 0.434,
+    "cum": -0.27
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.42 / 史实 0.76）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.755,
+    "new_to": 0.418,
+    "cum": -0.337
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.41（本支 0.40 / 史实 0.81）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.806,
+    "new_to": 0.401,
+    "cum": -0.405
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.857,
+    "new_to": 0.385,
+    "cum": -0.472
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.54（本支 0.37 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.908,
+    "new_to": 0.368,
+    "cum": -0.54
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.35 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.959,
+    "new_to": 0.352,
+    "cum": -0.607
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.34 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.336,
+    "cum": -0.664
+   },
+   "place_id": "wulumuqi"
+  },
+  {
+   "kind": "summary",
+   "year": 1884,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.34 / 史实 1.00（偏离 -0.66）",
+   "evidence": {
+    "cum": -0.664,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "wulumuqi"
+  }
+ ]
+}

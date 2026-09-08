@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "gaochang",
+      "name": "高昌城",
+      "type": "city",
+      "modern": "今新疆吐鲁番东南",
+      "note": "麴氏高昌都城",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xizhou",
+      "name": "西州",
+      "type": "region",
+      "modern": "今新疆吐鲁番一带",
+      "note": "唐置西州",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "astana",
+      "name": "阿斯塔那",
+      "type": "region",
+      "modern": "今新疆吐鲁番阿斯塔那古墓群",
+      "note": "古墓出文物",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jiaohe",
+      "name": "交河",
+      "type": "city",
+      "modern": "今新疆吐鲁番交河故城",
+      "note": "西州属县",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "liuzhong",
+      "name": "柳中",
+      "type": "city",
+      "modern": "今新疆鄯善县鲁克沁",
+      "note": "西州属县",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "pulei",
+      "name": "蒲类",
+      "type": "city",
+      "modern": "今新疆巴里坤",
+      "note": "西州属县",
+      "_source_idx": 0,
+      "_source_name": "高昌国与丝路北道",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

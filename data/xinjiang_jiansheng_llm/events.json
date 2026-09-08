@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_xinjiang_jiansheng_llm_01",
+   "subject": "event:ev_xinjiang_jiansheng_llm_01",
+   "year": 1875,
+   "era": "光绪元年",
+   "title": "左宗棠督办新疆军务",
+   "kind": "行政",
+   "text": "左宗棠督办新疆军务",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_jiansheng_llm_02",
+   "subject": "event:ev_xinjiang_jiansheng_llm_02",
+   "year": 1876,
+   "era": "光绪二年",
+   "title": "收复乌鲁木齐",
+   "kind": "战事",
+   "text": "连克乌鲁木齐",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_jiansheng_llm_03",
+   "subject": "event:ev_xinjiang_jiansheng_llm_03",
+   "year": 1877,
+   "era": "光绪三年",
+   "title": "收复吐鲁番",
+   "kind": "战事",
+   "text": "克吐鲁番",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_jiansheng_llm_04",
+   "subject": "event:ev_xinjiang_jiansheng_llm_04",
+   "year": 1878,
+   "era": "光绪四年",
+   "title": "收复喀什噶尔",
+   "kind": "战事",
+   "text": "克喀什噶尔",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_jiansheng_llm_05",
+   "subject": "event:ev_xinjiang_jiansheng_llm_05",
+   "year": 1884,
+   "era": "光绪十年",
+   "title": "新疆建省",
+   "kind": "建置",
+   "text": "置新疆行省",
+   "_source_idx": 0,
+   "_source_name": "新疆建省·左宗棠奏议",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

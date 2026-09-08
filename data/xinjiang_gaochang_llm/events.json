@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_xinjiang_gaochang_llm_01",
+   "subject": "event:ev_xinjiang_gaochang_llm_01",
+   "year": 640,
+   "era": "贞观十四年",
+   "title": "唐灭高昌",
+   "kind": "战事",
+   "text": "侯君集灭高昌，置西州",
+   "_source_idx": 0,
+   "_source_name": "高昌国与丝路北道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

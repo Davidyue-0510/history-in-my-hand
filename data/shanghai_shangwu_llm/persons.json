@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "夏瑞芳",
+   "role": "创办人",
+   "note": "商务印书馆主要创办者之一",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "鲍咸恩",
+   "role": "创办人",
+   "note": "商务印书馆创办者之一",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "鲍咸昌",
+   "role": "创办人",
+   "note": "商务印书馆创办者之一",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p04",
+   "name": "高凤池",
+   "role": "创办人",
+   "note": "商务印书馆创办者之一",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p05",
+   "name": "张元济",
+   "role": "编译所所长",
+   "note": "主持编译工作，推动出版近代化",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p06",
+   "name": "王云五",
+   "role": "总务处主任",
+   "note": "主持总务，后任总经理",
+   "_source_idx": 0,
+   "_source_name": "商务印书馆九十五年（1897—1992）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

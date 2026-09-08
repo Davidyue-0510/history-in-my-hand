@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hubei_hankou_llm_01",
+   "subject": "event:ev_hubei_hankou_llm_01",
+   "year": 1861,
+   "era": "咸丰十一年",
+   "title": "汉口开埠",
+   "kind": "外交",
+   "text": "依条约开为通商口岸，设江汉关",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·汉口（1882—1891）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_hankou_llm_02",
+   "subject": "event:ev_hubei_hankou_llm_02",
+   "year": 1890,
+   "era": "光绪十六年",
+   "title": "张之洞兴办洋务",
+   "kind": "行政",
+   "text": "修铁路、兴铁厂、办学堂、建堤",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·汉口（1882—1891）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

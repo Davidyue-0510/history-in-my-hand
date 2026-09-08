@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "heilongjiang_suifenhe_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1896,
+  1899
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1897,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.42 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.416,
+    "cum": -0.204
+   },
+   "place_id": "haerbin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1898,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.37 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.374,
+    "cum": -0.306
+   },
+   "place_id": "haerbin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1899,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.41（本支 0.33 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.332,
+    "cum": -0.408
+   },
+   "place_id": "haerbin"
+  },
+  {
+   "kind": "summary",
+   "year": 1899,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.33 / 史实 0.74（偏离 -0.41）",
+   "evidence": {
+    "cum": -0.408,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "haerbin"
+  }
+ ]
+}

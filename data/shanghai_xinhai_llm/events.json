@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shanghai_xinhai_llm_01",
+   "subject": "event:ev_shanghai_xinhai_llm_01",
+   "year": 1911,
+   "era": "辛亥年九月初三",
+   "title": "上海光复",
+   "kind": "战事",
+   "text": "陈其美率众攻制造局，光复全沪",
+   "_source_idx": 0,
+   "_source_name": "近代上海光复史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanghai_xinhai_llm_02",
+   "subject": "event:ev_shanghai_xinhai_llm_02",
+   "year": 1911,
+   "era": "辛亥年九月十四",
+   "title": "沪军都督府成立",
+   "kind": "建置",
+   "text": "陈其美任都督，颁剪辫令",
+   "_source_idx": 0,
+   "_source_name": "近代上海光复史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

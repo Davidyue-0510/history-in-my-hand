@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HEI__p01",
+   "name": "山东贫民",
+   "role": "移民群体",
+   "note": "闯关东主体",
+   "_source_idx": 0,
+   "_source_name": "中国移民史·闯关东卷",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p02",
+   "name": "直隶贫民",
+   "role": "移民群体",
+   "note": "与鲁籍并称",
+   "_source_idx": 0,
+   "_source_name": "中国移民史·闯关东卷",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

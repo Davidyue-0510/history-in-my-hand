@@ -1,0 +1,75 @@
+{
+  "places": [
+    {
+      "id": "haerbin",
+      "name": "哈尔滨",
+      "type": "city",
+      "modern": "今中国黑龙江省哈尔滨市",
+      "note": "中东铁路中枢，国际商埠",
+      "_source_idx": 0,
+      "_source_name": "东省铁路沿革史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "manzhouli",
+      "name": "满洲里",
+      "type": "city",
+      "modern": "今中国内蒙古满洲里市",
+      "note": "中东铁路西端起点",
+      "_source_idx": 0,
+      "_source_name": "东省铁路沿革史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 124.7,
+      "lat": 41.6,
+      "geo_note": "后金/满洲发祥地，今辽宁新宾",
+      "geo_match": "substring"
+    },
+    {
+      "id": "suifenhe",
+      "name": "绥芬河",
+      "type": "city",
+      "modern": "今中国黑龙江省绥芬河市",
+      "note": "中东铁路东端中国境内站",
+      "_source_idx": 0,
+      "_source_name": "东省铁路沿革史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "haishenwai",
+      "name": "海参崴",
+      "type": "city",
+      "modern": "今俄罗斯符拉迪沃斯托克",
+      "note": "中东铁路东端终点",
+      "_source_idx": 0,
+      "_source_name": "东省铁路沿革史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "luda",
+      "name": "旅大",
+      "type": "region",
+      "modern": "今中国辽宁省大连市",
+      "note": "中东铁路南线终点",
+      "_source_idx": 0,
+      "_source_name": "东省铁路沿革史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 322,
-  "historical": 313,
+  "scenes_total": 334,
+  "historical": 325,
   "fictional": 9,
-  "assertions_total": 4888,
-  "sources_total": 299,
+  "assertions_total": 5057,
+  "sources_total": 311,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -60,11 +60,15 @@
     "han_weihuo_llm",
     "hebei_shanhaiguan",
     "hebei_zhaozhou",
+    "heilongjiang_chuangguan_llm",
     "heilongjiang_jin",
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
+    "heilongjiang_suifenhe_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
+    "hubei_hankou_llm",
+    "hubei_wuchang_llm",
     "hubei_zenghouyi",
     "hunan_changsha_llm",
     "hunan_mawangdui_llm",
@@ -76,9 +80,11 @@
     "jianzhou_nuerhaci_llm",
     "jiaozi_llm",
     "jilin_bohai_llm",
+    "jilin_changbaishan_llm",
     "jilin_changchun_llm",
     "jilin_gaogouli",
     "jilin_gaogouli_llm",
+    "jilin_yanbian_llm",
     "jinshang_llm",
     "jiupin_zhongzheng_llm",
     "kanerjing_llm",
@@ -117,8 +123,10 @@
     "shandong_jixia",
     "shandong_kongzi",
     "shanghai_kaibu",
+    "shanghai_shangwu_llm",
     "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
+    "shanghai_xinhai_llm",
     "shanxi_jinshang_llm",
     "shanxi_sanjiafenjin",
     "shanxi_yungang",
@@ -163,6 +171,8 @@
     "xianggang_nanbeihang_llm",
     "xianggang_songmo_llm",
     "xianggang_tunmen",
+    "xinjiang_gaochang_llm",
+    "xinjiang_jiansheng_llm",
     "xinjiang_xiyu",
     "xinjiang_xiyu_llm",
     "xinjiang_zuozongtang_llm",
@@ -178,7 +188,9 @@
     "yunnan_dali",
     "yunnan_dali_llm",
     "yunnan_dianmian",
+    "yunnan_duwenxiu_llm",
     "yunnan_nanzhao_llm",
+    "yunnan_quhuanzhang_llm",
     "zhejiang_linan",
     "zhejiang_linan_llm",
     "zhejiang_longquan",
@@ -187,7 +199,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 444,
+  "leads_total": 459,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2493,6 +2505,90 @@
       "kind": "engineering",
       "assertions": 12,
       "factions": {}
+    },
+    {
+      "id": "heilongjiang_chuangguan_llm",
+      "title": "闯关东·直鲁移民与黑龙江开发（清末民国）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "heilongjiang_suifenhe_llm",
+      "title": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）",
+      "kind": "exchange",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "hubei_hankou_llm",
+      "title": "汉口开埠与长江中游商埠（1861）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hubei_wuchang_llm",
+      "title": "武昌起义与辛亥首义（1911）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "jilin_changbaishan_llm",
+      "title": "长白山采参与松花江渔猎（清）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "jilin_yanbian_llm",
+      "title": "延边朝鲜族迁入与开发（同治—民国）",
+      "kind": "social",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "shanghai_shangwu_llm",
+      "title": "上海商务印书馆与近代出版业（1897—1949）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shanghai_xinhai_llm",
+      "title": "上海光复与沪军都督府（1911）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "xinjiang_gaochang_llm",
+      "title": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
+      "kind": "thought",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "xinjiang_jiansheng_llm",
+      "title": "新疆建省与行省改制（1884）",
+      "kind": "reform",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_duwenxiu_llm",
+      "title": "云南回民起义与杜文秀大理政权（1856—1873）",
+      "kind": "uprising",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_quhuanzhang_llm",
+      "title": "曲焕章与云南白药（1902）",
+      "kind": "tech",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2817,6 +2913,18 @@
     "yuan_shangdu_llm": "元·上都（开平）",
     "zuyong_diao_llm": "唐·租庸调制",
     "ningxia_lingzhou_llm": "唐·灵州朔方",
-    "tianjin_jiqiju_llm": "清·天津机器局"
+    "tianjin_jiqiju_llm": "清·天津机器局",
+    "heilongjiang_chuangguan_llm": "闯关东·直鲁移民与黑龙江开发（清末民国）",
+    "heilongjiang_suifenhe_llm": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）",
+    "hubei_hankou_llm": "汉口开埠与长江中游商埠（1861）",
+    "hubei_wuchang_llm": "武昌起义与辛亥首义（1911）",
+    "jilin_changbaishan_llm": "长白山采参与松花江渔猎（清）",
+    "jilin_yanbian_llm": "延边朝鲜族迁入与开发（同治—民国）",
+    "shanghai_shangwu_llm": "上海商务印书馆与近代出版业（1897—1949）",
+    "shanghai_xinhai_llm": "上海光复与沪军都督府（1911）",
+    "xinjiang_gaochang_llm": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
+    "xinjiang_jiansheng_llm": "新疆建省与行省改制（1884）",
+    "yunnan_duwenxiu_llm": "云南回民起义与杜文秀大理政权（1856—1873）",
+    "yunnan_quhuanzhang_llm": "曲焕章与云南白药（1902）"
   }
 }

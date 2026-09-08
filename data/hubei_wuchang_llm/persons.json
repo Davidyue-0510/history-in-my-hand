@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "HUB__p01",
+   "name": "熊秉坤",
+   "role": "工程营士兵",
+   "note": "首枪发难者",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUB__p02",
+   "name": "黎元洪",
+   "role": "都督",
+   "note": "被推为都督",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUB__p03",
+   "name": "瑞澂",
+   "role": "湖广总督",
+   "note": "弃城而逃",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUB__p04",
+   "name": "张彪",
+   "role": "第八镇统制",
+   "note": "遁走",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUB__p05",
+   "name": "彭刘杨",
+   "role": "革命党人",
+   "note": "事泄遇害",
+   "_source_idx": 0,
+   "_source_name": "辛亥革命·武昌起义档案资料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

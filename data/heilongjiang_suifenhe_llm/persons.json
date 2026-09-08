@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HEI__p01",
+   "name": "尼古拉二世",
+   "role": "俄国沙皇",
+   "note": "在位期间推动中东铁路修筑",
+   "_source_idx": 0,
+   "_source_name": "东省铁路沿革史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p02",
+   "name": "李鸿章",
+   "role": "清廷钦差大臣",
+   "note": "代表清廷签订《中俄密约》",
+   "_source_idx": 0,
+   "_source_name": "东省铁路沿革史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

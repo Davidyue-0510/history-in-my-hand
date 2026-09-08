@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "hankou",
+      "name": "汉口",
+      "type": "port",
+      "modern": "今中国湖北省武汉市汉口",
+      "note": "长江汉水交汇，九省通衢",
+      "_source_idx": 0,
+      "_source_name": "海关十年报告·汉口（1882—1891）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hanyang",
+      "name": "汉阳",
+      "type": "city",
+      "modern": "今中国湖北省武汉市汉阳",
+      "note": "汉阳铁厂所在地",
+      "_source_idx": 0,
+      "_source_name": "海关十年报告·汉口（1882—1891）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 126.98,
+      "lat": 37.57,
+      "geo_note": "朝鲜都城，壬辰倭乱陷落与收复"
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "type": "port",
+      "modern": "今中国上海市",
+      "note": "四大商埠之一",
+      "_source_idx": 0,
+      "_source_name": "海关十年报告·汉口（1882—1891）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "port",
+      "modern": "今中国天津市",
+      "note": "四大商埠之一",
+      "_source_idx": 0,
+      "_source_name": "海关十年报告·汉口（1882—1891）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "type": "port",
+      "modern": "今中国广东省广州市",
+      "note": "四大商埠之一",
+      "_source_idx": 0,
+      "_source_name": "海关十年报告·汉口（1882—1891）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 113.26,
+      "lat": 23.13,
+      "geo_note": "康有为故里，今广东广州"
+    }
+  ]
+}

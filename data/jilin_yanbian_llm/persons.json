@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIL__p01",
+   "name": "朝鲜咸镜道民",
+   "role": "移民群体",
+   "note": "因饥荒渡江迁入延边",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p02",
+   "name": "清廷官员",
+   "role": "地方治理者",
+   "note": "设通商局、置厅",
+   "_source_idx": 0,
+   "_source_name": "延边朝鲜族史料选编",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

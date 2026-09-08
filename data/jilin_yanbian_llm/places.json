@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "helongyu",
+      "name": "和龙峪",
+      "type": "fortress",
+      "modern": "今中国吉林省龙井市",
+      "note": "设通商局之处",
+      "_source_idx": 0,
+      "_source_name": "延边朝鲜族史料选编",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yanbian",
+      "name": "延边",
+      "type": "region",
+      "modern": "今中国吉林省延边朝鲜族自治州",
+      "note": "朝鲜族迁入垦种之地",
+      "_source_idx": 0,
+      "_source_name": "延边朝鲜族史料选编",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yanji",
+      "name": "延吉",
+      "type": "city",
+      "modern": "今中国吉林省延吉市",
+      "note": "设厅、改县之地",
+      "_source_idx": 0,
+      "_source_name": "延边朝鲜族史料选编",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tumen_river",
+      "name": "图们江",
+      "type": "river",
+      "modern": "今中朝界河",
+      "note": "朝鲜民渡江入延边",
+      "_source_idx": 0,
+      "_source_name": "延边朝鲜族史料选编",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hamgyong",
+      "name": "咸镜道",
+      "type": "region",
+      "modern": "今朝鲜咸镜道",
+      "note": "朝鲜民原居地",
+      "_source_idx": 0,
+      "_source_name": "延边朝鲜族史料选编",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

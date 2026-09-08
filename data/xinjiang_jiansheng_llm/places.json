@@ -1,0 +1,61 @@
+{
+  "places": [
+    {
+      "id": "wulumuqi",
+      "name": "乌鲁木齐",
+      "type": "city",
+      "modern": "今中国新疆乌鲁木齐",
+      "note": "新疆首府",
+      "_source_idx": 0,
+      "_source_name": "新疆建省·左宗棠奏议",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": 118.05,
+      "lat": 36.81,
+      "geo_note": "今山东淄博临淄；房玄龄故里",
+      "geo_match": "substring"
+    },
+    {
+      "id": "tulufan",
+      "name": "吐鲁番",
+      "type": "city",
+      "modern": "今中国新疆吐鲁番",
+      "note": "古城",
+      "_source_idx": 0,
+      "_source_name": "新疆建省·左宗棠奏议",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "kashgar",
+      "name": "喀什噶尔",
+      "type": "city",
+      "modern": "今中国新疆喀什",
+      "note": "南疆重镇",
+      "_source_idx": 0,
+      "_source_name": "新疆建省·左宗棠奏议",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dihua",
+      "name": "迪化",
+      "type": "city",
+      "modern": "今乌鲁木齐",
+      "note": "行省治所",
+      "_source_idx": 0,
+      "_source_name": "新疆建省·左宗棠奏议",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}
