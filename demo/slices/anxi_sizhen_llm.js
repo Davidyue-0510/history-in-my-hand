@@ -68,7 +68,10 @@ window.SANDBOX_SLICES["anxi_sizhen_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "page": "county.html?scene=anxi_sizhen_llm",
@@ -709,6 +712,96 @@ window.SANDBOX_SLICES["anxi_sizhen_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_anxi_sizhen_llm_001",
+   "subject": "supplement:anxi_sizhen_llm_dim2",
+   "predicate": "戍守技术",
+   "value_text": "安西四镇置戍兵与屯田，碎叶、龟兹为军政重心",
+   "time": {
+    "era_text": "唐显庆",
+    "start": "658-01-01",
+    "gregorian_year": 658
+   },
+   "place": "qiuzi",
+   "source": "jiu_tangshu_xiyu_llm",
+   "quote": "安西四镇置戍兵与屯田，碎叶、龟兹为军政重心",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "贞观十四年唐灭高昌置安西都护府于交河",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_anxi_sizhen_llm_002",
+   "subject": "supplement:anxi_sizhen_llm_dim4",
+   "predicate": "边疆治理",
+   "value_text": "四镇辖西域绿洲城邦，行羁縻州府，胡汉杂处互市",
+   "time": {
+    "era_text": "唐显庆",
+    "start": "658-01-01",
+    "gregorian_year": 658
+   },
+   "place": "gaochang",
+   "source": "jiu_tangshu_xiyu_llm",
+   "quote": "四镇辖西域绿洲城邦，行羁縻州府，胡汉杂处互市",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "贞观十四年唐灭高昌置安西都护府于交河",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_anxi_sizhen_llm_003",
+   "subject": "supplement:anxi_sizhen_llm_dim5",
+   "predicate": "文化思潮",
+   "value_text": "唐经营安西，佛教经西域东传，中原典制与胡风交融",
+   "time": {
+    "era_text": "唐显庆",
+    "start": "658-01-01",
+    "gregorian_year": 658
+   },
+   "place": "shule",
+   "source": "jiu_tangshu_xiyu_llm",
+   "quote": "唐经营安西，佛教经西域东传，中原典制与胡风交融",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "贞观十四年唐灭高昌置安西都护府于交河",
    "_party": "后世官修",
    "_faction": null
   }

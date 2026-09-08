@@ -67,6 +67,9 @@ window.SANDBOX_SLICES["wangyangming"] = {
    }
   },
   "dims": [
+   1,
+   2,
+   3,
    4,
    5,
    6
@@ -690,6 +693,96 @@ window.SANDBOX_SLICES["wangyangming"] = {
    "_source_name": "王阳明心学(SAMPLE)",
    "_source_party": "后世官修",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_wangyangming_001",
+   "subject": "supplement:wangyangming_dim1",
+   "predicate": "悟道地理",
+   "value_text": "王守仁谪龙场驿丞，居黔中而悟致良知之旨",
+   "time": {
+    "era_text": "明正德",
+    "start": "1508-01-01",
+    "gregorian_year": 1508
+   },
+   "place": "longchang",
+   "source": "wangyangming_heart_llm",
+   "quote": "王守仁谪龙场驿丞，居黔中而悟致良知之旨",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "圣人之道，吾性自足",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_wangyangming_002",
+   "subject": "supplement:wangyangming_dim2",
+   "predicate": "讲学技术",
+   "value_text": "阳明立书院讲学，以语录示人，门人辑为《传习录》",
+   "time": {
+    "era_text": "明正德",
+    "start": "1510-01-01",
+    "gregorian_year": 1510
+   },
+   "place": "yue",
+   "source": "wangyangming_heart_llm",
+   "quote": "阳明立书院讲学，以语录示人，门人辑为《传习录》",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "圣人之道，吾性自足",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_wangyangming_003",
+   "subject": "supplement:wangyangming_dim3",
+   "predicate": "乡治建制",
+   "value_text": "阳明行十家牌法与乡约，以心学贯于基层里甲",
+   "time": {
+    "era_text": "明嘉靖",
+    "start": "1518-01-01",
+    "gregorian_year": 1518
+   },
+   "place": "yuyao",
+   "source": "wangyangming_heart_llm",
+   "quote": "阳明行十家牌法与乡约，以心学贯于基层里甲",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 制度",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "圣人之道，吾性自足",
    "_party": "后世官修",
    "_faction": null
   }

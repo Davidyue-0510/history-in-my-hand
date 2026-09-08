@@ -67,7 +67,10 @@ window.SANDBOX_SLICES["yuelu_academy_llm"] = {
    }
   },
   "dims": [
+   1,
+   2,
    3,
+   4,
    5,
    6
   ],
@@ -639,6 +642,96 @@ window.SANDBOX_SLICES["yuelu_academy_llm"] = {
    "_source_credibility": null,
    "_source_quote": "朱张会讲",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuelu_academy_llm_001",
+   "subject": "supplement:yuelu_academy_llm_dim1",
+   "predicate": "书院地理",
+   "value_text": "岳麓书院枕岳麓山临湘水，为湖湘讲学胜地",
+   "time": {
+    "era_text": "北宋开宝",
+    "start": "976-01-01",
+    "gregorian_year": 976
+   },
+   "place": "yuelu_academy",
+   "source": "yuelu_zhi_llm",
+   "quote": "岳麓书院枕岳麓山临湘水，为湖湘讲学胜地",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "北宋开宝九年潭州太守朱洞就麓山寺旧址建岳麓书院",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuelu_academy_llm_002",
+   "subject": "supplement:yuelu_academy_llm_dim2",
+   "predicate": "藏书刻书",
+   "value_text": "书院藏御赐诸经，刊刻典籍，学徒抄诵为常",
+   "time": {
+    "era_text": "北宋开宝",
+    "start": "976-01-01",
+    "gregorian_year": 976
+   },
+   "place": "yuelu_academy",
+   "source": "yuelu_zhi_llm",
+   "quote": "书院藏御赐诸经，刊刻典籍，学徒抄诵为常",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "北宋开宝九年潭州太守朱洞就麓山寺旧址建岳麓书院",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuelu_academy_llm_003",
+   "subject": "supplement:yuelu_academy_llm_dim4",
+   "predicate": "士林社会",
+   "value_text": "岳麓倡经世务实，湖湘士子萃聚，影响后世人才",
+   "time": {
+    "era_text": "南宋乾道",
+    "start": "1165-01-01",
+    "gregorian_year": 1165
+   },
+   "place": "yuelu_academy",
+   "source": "yuelu_zhi_llm",
+   "quote": "岳麓倡经世务实，湖湘士子萃聚，影响后世人才",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "北宋开宝九年潭州太守朱洞就麓山寺旧址建岳麓书院",
    "_party": "后世官修",
    "_faction": null
   }

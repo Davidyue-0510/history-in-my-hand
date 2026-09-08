@@ -12,7 +12,7 @@
 
 | 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |
 |---|---|---|---|---|---|
-| anxi_sizhen_llm | 16 | 4 | **0.000** | event:ev_anxi_sizhen_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 2 |
+| anxi_sizhen_llm | 19 | 4 | **0.000** | event:ev_anxi_sizhen_llm_01（0.000） | gap 1 / inference 4 / record 12 / scholarship 2 |
 | aomen_portugal_llm | 19 | 2 | **0.000** | event:ev_aomen_portugal_llm_01（0.000） | gap 4 / inference 1 / record 11 / scholarship 3 |
 | baijia | 11 | 2 | **0.000** | event:bj_350（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | beijing | 19 | 7 | **0.000** | event:bj_consequence（0.000） | gap 1 / record 12 / scholarship 6 |
@@ -32,7 +32,7 @@
 | chenqiao | 11 | 2 | **0.000** | event:cq_960a（0.000） | gap 1 / record 8 / scholarship 2 |
 | chensheng | 13 | 2 | **0.000** | event:cs_209a（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |
 | chibi | 19 | 3 | **0.000** | event:cb_cao（0.000） | gap 2 / inference 1 / record 13 / scholarship 3 |
-| chibi_llm | 15 | 2 | **0.000** | event:ev_chibi_llm_02（0.000） | gap 1 / inference 3 / record 9 / scholarship 2 |
+| chibi_llm | 18 | 2 | **0.000** | event:ev_chibi_llm_02（0.000） | gap 1 / inference 6 / record 9 / scholarship 2 |
 | chongzhen_han | 10 | 5 | **0.000** | event:ch_1637（0.000） | gap 1 / scholarship 9 |
 | chongzhen_huangzai | 10 | 5 | **0.000** | event:hz_1637（0.000） | gap 1 / scholarship 9 |
 | chu_han | 17 | 6 | **0.000** | event:chenggao（0.000） | gap 1 / record 16 |
@@ -126,7 +126,7 @@
 | qin_mie_liu_guo_llm | 17 | 6 | **0.000** | event:ev_qin_mie_liu_guo_llm_01（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | qin_unify | 9 | 6 | **0.000** | event:qn_221（0.000） | record 3 / scholarship 6 |
 | qing_han | 16 | 3 | **0.000** | event:qh_1644（0.000） | gap 1 / inference 4 / record 8 / scholarship 3 |
-| qing_yakesa_llm | 14 | 3 | **0.000** | event:ev_qing_yakesa_llm_01（0.000） | gap 3 / inference 1 / record 9 / scholarship 1 |
+| qing_yakesa_llm | 17 | 3 | **0.000** | event:ev_qing_yakesa_llm_01（0.000） | gap 3 / inference 4 / record 9 / scholarship 1 |
 | qing_zhungaer_llm | 18 | 5 | **0.000** | event:ev_qing_zhungaer_01（0.000） | gap 1 / inference 5 / record 11 / scholarship 1 |
 | qinghai_tuyuhun_llm | 20 | 3 | **0.000** | event:ev_qinghai_tuyuhun_llm_01（0.000） | gap 4 / inference 1 / record 13 / scholarship 2 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
@@ -157,8 +157,8 @@
 | tang_anshi_llm | 15 | 5 | **0.000** | event:ev_tang_anshi_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 2 |
 | tang_dangzheng | 7 | 3 | **0.000** | event:nt_808（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
-| tang_huangchao_llm | 17 | 5 | **0.000** | event:ev_tang_huangchao_01（0.000） | gap 1 / inference 2 / record 13 / scholarship 1 |
-| tang_juntian | 6 | 0 | **0.000** | —（0.000） | gap 1 / inference 1 / record 2 / scholarship 2 |
+| tang_huangchao_llm | 20 | 5 | **0.000** | event:ev_tang_huangchao_01（0.000） | gap 1 / inference 5 / record 13 / scholarship 1 |
+| tang_juntian | 9 | 0 | **0.000** | —（0.000） | gap 1 / inference 4 / record 2 / scholarship 2 |
 | tang_liangshuifa | 13 | 0 | **0.000** | —（0.000） | gap 1 / inference 3 / scholarship 9 |
 | tang_xuanwumen_llm | 12 | 2 | **0.000** | event:ev_tang_xuanwumen_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
@@ -167,7 +167,7 @@
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
-| wangyangming | 16 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 2 / record 10 / scholarship 3 |
+| wangyangming | 19 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 5 / record 10 / scholarship 3 |
 | warring_states_shangyang | 12 | 1 | **0.000** | event:qiandu（0.000） | gap 1 / inference 2 / record 5 / scholarship 4 |
 | warring_states_shangyang_llm | 14 | 2 | **0.000** | event:ev_warring_states_shangyang_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | wei_xiaowen | 10 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 9 |
@@ -193,7 +193,7 @@
 | yiling | 14 | 3 | **0.000** | event:yl_jz（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
 | yuan_xingsheng_llm | 14 | 2 | **0.000** | event:ev_yuan_xingsheng_llm_01（0.000） | gap 1 / inference 5 / record 7 / scholarship 1 |
-| yuelu_academy_llm | 14 | 3 | **0.000** | event:ev_yuelu_academy_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| yuelu_academy_llm | 17 | 3 | **0.000** | event:ev_yuelu_academy_llm_01（0.000） | gap 1 / inference 4 / record 11 / scholarship 1 |
 | zhangheng | 14 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 9 / scholarship 4 |
 | zhangjuzheng | 18 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 4 / record 11 / scholarship 2 |
 | zhangqian | 15 | 2 | **0.000** | event:zq_126（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |

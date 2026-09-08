@@ -69,6 +69,9 @@ window.SANDBOX_SLICES["chibi_llm"] = {
   "dims": [
    1,
    2,
+   3,
+   4,
+   5,
    6
   ],
   "page": "county.html?scene=chibi_llm",
@@ -732,6 +735,96 @@ window.SANDBOX_SLICES["chibi_llm"] = {
    "_source_name": "三国·赤壁之战",
    "_source_party": "后世官修",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_chibi_llm_001",
+   "subject": "supplement:chibi_llm_dim3",
+   "predicate": "联盟建制",
+   "value_text": "孙权遣周瑜程普将兵三万与刘备会盟拒曹",
+   "time": {
+    "era_text": "汉献帝建安",
+    "start": "208-01-01",
+    "gregorian_year": 208
+   },
+   "place": "wulin",
+   "source": "chibi_llm",
+   "quote": "孙权遣周瑜程普将兵三万与刘备会盟拒曹",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "theater",
+   "note": "[auto] 补维 制度",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "因风纵火，曹军舰船焚尽",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_chibi_llm_002",
+   "subject": "supplement:chibi_llm_dim4",
+   "predicate": "社会动向",
+   "value_text": "荆州士民附刘表者众，赤壁后归附孙刘",
+   "time": {
+    "era_text": "汉献帝建安",
+    "start": "208-01-01",
+    "gregorian_year": 208
+   },
+   "place": "jiangnan",
+   "source": "chibi_llm",
+   "quote": "荆州士民附刘表者众，赤壁后归附孙刘",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "因风纵火，曹军舰船焚尽",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_chibi_llm_003",
+   "subject": "supplement:chibi_llm_dim5",
+   "predicate": "时代思潮",
+   "value_text": "赤壁摧曹魏锐气，三分天下之势成",
+   "time": {
+    "era_text": "汉献帝建安",
+    "start": "208-01-01",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "chibi_llm",
+   "quote": "赤壁摧曹魏锐气，三分天下之势成",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "因风纵火，曹军舰船焚尽",
    "_party": "后世官修",
    "_faction": null
   }

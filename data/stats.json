@@ -2,7 +2,7 @@
   "scenes_total": 205,
   "historical": 196,
   "fictional": 9,
-  "assertions_total": 3213,
+  "assertions_total": 3234,
   "sources_total": 183,
   "factions_total": 9,
   "vocab_packs": [
@@ -1312,7 +1312,7 @@
       "id": "qing_yakesa_llm",
       "title": "雅克萨之战（LLM 抽取·人工校订）",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -1326,7 +1326,7 @@
       "id": "tang_huangchao_llm",
       "title": "唐·黄巢起义（LLM 抽取·人工校订）",
       "kind": "uprising",
-      "assertions": 17,
+      "assertions": 20,
       "factions": {}
     },
     {
@@ -1375,7 +1375,7 @@
       "id": "chibi_llm",
       "title": "三国·赤壁之战",
       "kind": "county",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -1466,7 +1466,7 @@
       "id": "wangyangming",
       "title": "王阳明·心学",
       "kind": "thought",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -1529,14 +1529,14 @@
       "id": "yuelu_academy_llm",
       "title": "岳麓书院与湖湘学派",
       "kind": "thought",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
       "id": "anxi_sizhen_llm",
       "title": "唐安西四镇（西域）",
       "kind": "frontier",
-      "assertions": 16,
+      "assertions": 19,
       "factions": {}
     },
     {
@@ -1557,7 +1557,7 @@
       "id": "tang_juntian",
       "title": "唐·均田制",
       "kind": "reform",
-      "assertions": 6,
+      "assertions": 9,
       "factions": {}
     }
   ],

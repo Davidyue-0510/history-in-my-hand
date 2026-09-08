@@ -224,15 +224,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "anxi_sizhen_llm",
    "name": "anxi_sizhen_llm",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "inference": 1,
+    "inference": 4,
     "record": 12,
     "scholarship": 2,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 16
+    "后世官修": 19
    },
    "faction_counts": {},
    "event_count": 4,
@@ -603,15 +603,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "chibi_llm",
    "name": "chibi_llm",
-   "total": 15,
+   "total": 18,
    "layers": {
-    "inference": 3,
+    "inference": 6,
     "record": 9,
     "scholarship": 2,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 15
+    "后世官修": 18
    },
    "faction_counts": {},
    "event_count": 2,
@@ -2418,15 +2418,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "qing_yakesa_llm",
    "name": "qing_yakesa_llm",
-   "total": 14,
+   "total": 17,
    "layers": {
-    "inference": 1,
+    "inference": 4,
     "record": 9,
     "scholarship": 1,
     "gap": 3
    },
    "party_counts": {
-    "后世官修": 14
+    "后世官修": 17
    },
    "faction_counts": {},
    "event_count": 3,
@@ -3035,15 +3035,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "tang_huangchao_llm",
    "name": "tang_huangchao_llm",
-   "total": 17,
+   "total": 20,
    "layers": {
     "record": 13,
-    "inference": 2,
+    "inference": 5,
     "scholarship": 1,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 17
+    "后世官修": 20
    },
    "faction_counts": {},
    "event_count": 5,
@@ -3054,15 +3054,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "tang_juntian",
    "name": "tang_juntian",
-   "total": 6,
+   "total": 9,
    "layers": {
     "record": 2,
     "scholarship": 2,
-    "inference": 1,
+    "inference": 4,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 6
+    "后世官修": 9
    },
    "faction_counts": {},
    "event_count": 0,
@@ -3234,15 +3234,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "wangyangming",
    "name": "wangyangming",
-   "total": 16,
+   "total": 19,
    "layers": {
-    "inference": 2,
+    "inference": 5,
     "record": 10,
     "scholarship": 3,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 16
+    "后世官修": 19
    },
    "faction_counts": {},
    "event_count": 3,
@@ -3742,15 +3742,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "yuelu_academy_llm",
    "name": "yuelu_academy_llm",
-   "total": 14,
+   "total": 17,
    "layers": {
-    "inference": 1,
+    "inference": 4,
     "record": 11,
     "scholarship": 1,
     "gap": 1
    },
    "party_counts": {
-    "后世官修": 14
+    "后世官修": 17
    },
    "faction_counts": {},
    "event_count": 3,

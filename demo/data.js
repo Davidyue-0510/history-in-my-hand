@@ -24331,7 +24331,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
     5,
     6
    ],
@@ -24341,12 +24344,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 5,
-    "assert": 14,
+    "assert": 17,
     "conflict": 0,
     "gap": 3,
     "record": 9,
     "scholarship": 1,
-    "inference": 1
+    "inference": 4
    }
   },
   "qin_fenshu_llm": {
@@ -24396,8 +24399,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -24406,12 +24412,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 4,
-    "assert": 17,
+    "assert": 20,
     "conflict": 0,
     "gap": 1,
     "record": 13,
     "scholarship": 1,
-    "inference": 2
+    "inference": 5
    }
   },
   "song_chanchuan_llm": {
@@ -24636,6 +24642,9 @@ window.SANDBOX_DATA = {
    "dims": [
     1,
     2,
+    3,
+    4,
+    5,
     6
    ],
    "epoch": "three_kingdoms",
@@ -24644,12 +24653,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 8,
-    "assert": 15,
+    "assert": 18,
     "conflict": 3,
     "gap": 1,
     "record": 9,
     "scholarship": 2,
-    "inference": 3
+    "inference": 6
    }
   },
   "song_wanganshi_llm": {
@@ -25075,6 +25084,9 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
+    3,
     4,
     5,
     6
@@ -25085,12 +25097,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 6,
-    "assert": 16,
+    "assert": 19,
     "conflict": 3,
     "gap": 1,
     "record": 10,
     "scholarship": 3,
-    "inference": 2
+    "inference": 5
    }
   },
   "zhuxi": {
@@ -25380,7 +25392,10 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
     5,
     6
    ],
@@ -25390,12 +25405,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 3,
-    "assert": 14,
+    "assert": 17,
     "conflict": 0,
     "gap": 1,
     "record": 11,
     "scholarship": 1,
-    "inference": 1
+    "inference": 4
    }
   },
   "anxi_sizhen_llm": {
@@ -25413,7 +25428,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "tang",
@@ -25422,12 +25440,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 2,
-    "assert": 16,
+    "assert": 19,
     "conflict": 0,
     "gap": 1,
     "record": 12,
     "scholarship": 2,
-    "inference": 1
+    "inference": 4
    }
   },
   "sui_keju": {
@@ -25511,8 +25529,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "sui_tang",
@@ -25521,12 +25542,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 0,
-    "assert": 6,
+    "assert": 9,
     "conflict": 0,
     "gap": 1,
     "record": 2,
     "scholarship": 2,
-    "inference": 1
+    "inference": 4
    }
   }
  },

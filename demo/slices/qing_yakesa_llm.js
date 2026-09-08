@@ -17,7 +17,10 @@ window.SANDBOX_SLICES["qing_yakesa_llm"] = {
   "lead": "雅克萨之战（1685–1686）：康熙二十四至二十五年清军两次围攻雅克萨（黑龙江北岸），击败沙俄哥萨克，毁城而还；1689年签《尼布楚条约》划定中俄东段边界，雅克萨归清。此战遏制沙俄南侵，巩固东北边防。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《清圣祖实录》概述抽取断言，curate 报 BLOCK 0，人工补控制层（清方 control 雅克萨）与战略四维（inference）。引文全 paraphrase_unverified；来源《清圣祖实录》为清官修，归『后世官修』；控制层『清方』。",
   "parties_note": "《清圣祖实录》为清官修，归『后世官修』；清军为防御方，控制层『清方』。沙俄方视角经叙事折射。系统不裁决，只并列。",
   "dims": [
+   1,
+   2,
    3,
+   4,
    5,
    6
   ],
@@ -655,6 +658,96 @@ window.SANDBOX_SLICES["qing_yakesa_llm"] = {
    "_source_credibility": null,
    "_source_quote": "清军再围雅克萨",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_yakesa_llm_001",
+   "subject": "supplement:qing_yakesa_llm_dim1",
+   "predicate": "地理形势",
+   "value_text": "雅克萨城在黑龙江北岸，扼水陆要冲，为中俄边界争端焦点",
+   "time": {
+    "era_text": "清康熙",
+    "start": "1685-01-01",
+    "gregorian_year": 1685
+   },
+   "place": "yakesa",
+   "source": "qing_yakesa_src_llm",
+   "quote": "雅克萨城在黑龙江北岸，扼水陆要冲，为中俄边界争端焦点",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "清军围攻雅克萨，俄军投降",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_yakesa_llm_002",
+   "subject": "supplement:qing_yakesa_llm_dim2",
+   "predicate": "攻城技术",
+   "value_text": "清军以红衣炮围城，断雅克萨水道与援路",
+   "time": {
+    "era_text": "清康熙",
+    "start": "1685-01-01",
+    "gregorian_year": 1685
+   },
+   "place": "heilongjiang",
+   "source": "qing_yakesa_src_llm",
+   "quote": "清军以红衣炮围城，断雅克萨水道与援路",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "theater",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "清军围攻雅克萨，俄军投降",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_yakesa_llm_003",
+   "subject": "supplement:qing_yakesa_llm_dim4",
+   "predicate": "族群分布",
+   "value_text": "黑龙江流域索伦、达呼尔等部居处，俄人筑堡移民",
+   "time": {
+    "era_text": "清康熙",
+    "start": "1685-01-01",
+    "gregorian_year": 1685
+   },
+   "place": "nibuchu",
+   "source": "qing_yakesa_src_llm",
+   "quote": "黑龙江流域索伦、达呼尔等部居处，俄人筑堡移民",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清圣祖实录（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "清军围攻雅克萨，俄军投降",
    "_party": "后世官修",
    "_faction": null
   }

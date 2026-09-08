@@ -17,8 +17,11 @@ window.SANDBOX_SLICES["tang_huangchao_llm"] = {
   "lead": "黄巢之乱横扫大半唐土，攻破两京，彻底暴露晚唐中央动员能力的崩解。",
   "parties_note": "叙事方=唐廷/大齐（黄巢）；来源=后世官修（基于《旧唐书》《新唐书》现代概述）。",
   "dims": [
+   1,
+   2,
    3,
    4,
+   5,
    6
   ],
   "subject_names": {
@@ -752,6 +755,96 @@ window.SANDBOX_SLICES["tang_huangchao_llm"] = {
    "_source_name": "唐·黄巢起义（现代概述）",
    "_source_party": "后世官修",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_huangchao_llm_001",
+   "subject": "supplement:tang_huangchao_llm_dim1",
+   "predicate": "转战地理",
+   "value_text": "黄巢自山东转战江南、岭南，破广州北上取长安",
+   "time": {
+    "era_text": "唐僖宗乾符",
+    "start": "875-01-01",
+    "gregorian_year": 875
+   },
+   "place": "guangzhou",
+   "source": "tang_huangchao_src_llm",
+   "quote": "黄巢自山东转战江南、岭南，破广州北上取长安",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "empire",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "875年，盐商黄巢聚众数千响应王仙芝起于冤句。",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_huangchao_llm_002",
+   "subject": "supplement:tang_huangchao_llm_dim2",
+   "predicate": "攻城技术",
+   "value_text": "义军以土山地道攻长安外城，唐守军溃散",
+   "time": {
+    "era_text": "唐僖宗中和",
+    "start": "881-01-01",
+    "gregorian_year": 881
+   },
+   "place": "changan",
+   "source": "tang_huangchao_src_llm",
+   "quote": "义军以土山地道攻长安外城，唐守军溃散",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "theater",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "875年，盐商黄巢聚众数千响应王仙芝起于冤句。",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_huangchao_llm_003",
+   "subject": "supplement:tang_huangchao_llm_dim5",
+   "predicate": "社会思潮",
+   "value_text": "唐末赋重吏贪，黄巢以「天补均平」相号召",
+   "time": {
+    "era_text": "唐僖宗乾符",
+    "start": "875-01-01",
+    "gregorian_year": 875
+   },
+   "place": "yuanqu",
+   "source": "tang_huangchao_src_llm",
+   "quote": "唐末赋重吏贪，黄巢以「天补均平」相号召",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "875年，盐商黄巢聚众数千响应王仙芝起于冤句。",
    "_party": "后世官修",
    "_faction": null
   }

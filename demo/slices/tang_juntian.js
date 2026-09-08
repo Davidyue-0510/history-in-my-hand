@@ -16,8 +16,11 @@ window.SANDBOX_SLICES["tang_juntian"] = {
    "institution:jun_tian": "均田令"
   },
   "dims": [
+   1,
+   2,
    3,
    4,
+   5,
    6
   ],
   "epoch": "sui_tang",
@@ -256,6 +259,96 @@ window.SANDBOX_SLICES["tang_juntian"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_juntian_001",
+   "subject": "supplement:tang_juntian_dim1",
+   "predicate": "授田地理",
+   "value_text": "均田制以丁口给田，关中与中原畿甸为授田重心",
+   "time": {
+    "era_text": "唐武德",
+    "start": "624-01-01",
+    "gregorian_year": 624
+   },
+   "place": "changan",
+   "source": "juntian",
+   "quote": "均田制以丁口给田，关中与中原畿甸为授田重心",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "empire",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_juntian_002",
+   "subject": "supplement:tang_juntian_dim2",
+   "predicate": "田制技术",
+   "value_text": "唐以手实、户籍勘丁田，三年一造，为均田之基",
+   "time": {
+    "era_text": "唐武德",
+    "start": "624-01-01",
+    "gregorian_year": 624
+   },
+   "place": "luoyang",
+   "source": "juntian",
+   "quote": "唐以手实、户籍勘丁田，三年一造，为均田之基",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_juntian_003",
+   "subject": "supplement:tang_juntian_dim5",
+   "predicate": "理财思潮",
+   "value_text": "均田意在限田抑兼并，租庸调由此而立",
+   "time": {
+    "era_text": "唐武德",
+    "start": "624-01-01",
+    "gregorian_year": 624
+   },
+   "place": "changan",
+   "source": "juntian",
+   "quote": "均田意在限田抑兼并，租庸调由此而立",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
    "_party": "后世官修",
    "_faction": null
   }
