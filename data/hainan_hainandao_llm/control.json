@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "hainan_island",
+   "party": "后世官修",
+   "start": 1950,
+   "end": 1950,
+   "basis": "auto: 场景主地点 hainan_island 叙事控制方=后世官修"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "wulumuqi",
+   "to": "nanjiang",
+   "type": "military",
+   "label": "清军南进路线",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

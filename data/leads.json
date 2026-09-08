@@ -1302,6 +1302,22 @@
    "_src_line": 43
   },
   {
+   "id": "GUA_016",
+   "scene": "guangxi_lingqu_llm",
+   "subject": "place:lingqu",
+   "title": "具体工程细节记载不详",
+   "missing": "考古 / 水利史",
+   "where": "灵渠遗址",
+   "skills": [
+    "考古",
+    "水利史"
+   ],
+   "accept": "考古证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "GUA_014",
    "scene": "guangxi_taiping_llm",
    "subject": "event:ev_guangxi_taiping_llm_04",
@@ -1425,6 +1441,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "HAI_016",
+   "scene": "hainan_hainandao_llm",
+   "subject": "event:ev_hainan_hainandao_llm_02",
+   "title": "国民党军兵力部署不详",
+   "missing": "军事史 / 档案检索",
+   "where": "国民党军海南防卫司令部档案",
+   "skills": [
+    "军事史",
+    "档案检索"
+   ],
+   "accept": "国民党军实际兵力及部署",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
   },
   {
    "id": "HAI_014",
@@ -4748,6 +4780,37 @@
     "文献考据"
    ],
    "accept": "列出三十六国名单",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIN_013",
+   "scene": "xinjiang_zuozongtang_llm",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_04",
+   "title": "曾纪泽谈判过程未详",
+   "missing": "俄语 / 外交史",
+   "where": "俄罗斯国家档案馆",
+   "skills": [
+    "俄语",
+    "外交史"
+   ],
+   "accept": "寻找中俄谈判原始记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIN_014",
+   "scene": "xinjiang_zuozongtang_llm",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_02",
+   "title": "清军兵力部署未详",
+   "missing": "清代军事档案",
+   "where": "中国第一历史档案馆",
+   "skills": [
+    "清代军事档案"
+   ],
+   "accept": "查找左宗棠奏折中的兵力数据",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

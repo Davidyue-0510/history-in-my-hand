@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 240 个切片
+// 权威数据源：data/scenes.json 注册的 243 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 240 个切片",
+  "slice": "multi-scene · 243 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -30,10 +30,12 @@ window.SANDBOX_DATA = {
    "fujian_quanzhou_llm",
    "gansu_hexizhen_llm",
    "guandu_llm",
+   "guangxi_lingqu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
+   "hainan_hainandao_llm",
    "hainan_hairui_llm",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
@@ -96,6 +98,7 @@ window.SANDBOX_DATA = {
    "xianggang_1941_llm",
    "xianggang_songmo_llm",
    "xinjiang_xiyu_llm",
+   "xinjiang_zuozongtang_llm",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
    "xizang_huimeng_llm",
@@ -598,7 +601,10 @@ window.SANDBOX_DATA = {
   "aomen_kaibu_llm",
   "jiangxi_nanchang_llm",
   "jiangxi_ruijin_llm",
-  "xinjiang_xiyu_llm"
+  "xinjiang_xiyu_llm",
+  "xinjiang_zuozongtang_llm",
+  "guangxi_lingqu_llm",
+  "hainan_hainandao_llm"
  ],
  "vocab": {
   "layers": [
@@ -26767,6 +26773,107 @@ window.SANDBOX_DATA = {
     "scholarship": 3,
     "inference": 1
    }
+  },
+  "xinjiang_zuozongtang_llm": {
+   "key": "xinjiang_zuozongtang_llm",
+   "scene_id": "xinjiang_zuozongtang_llm",
+   "title": "左宗棠收复新疆",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=xinjiang_zuozongtang_llm",
+   "primary_place": "xinjiang",
+   "vocab_pack": "xinjiang_zuozongtang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 2,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guangxi_lingqu_llm": {
+   "key": "guangxi_lingqu_llm",
+   "scene_id": "guangxi_lingqu_llm",
+   "title": "灵渠",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=guangxi_lingqu_llm",
+   "primary_place": "lingqu",
+   "vocab_pack": "guangxi_lingqu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 2,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hainan_hainandao_llm": {
+   "key": "hainan_hainandao_llm",
+   "scene_id": "hainan_hainandao_llm",
+   "title": "海南岛战役",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "uprising",
+   "page": "hainan_hainandao_llm.html",
+   "primary_place": "hainan_island",
+   "vocab_pack": "hainan_hainandao_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 5,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -27009,7 +27116,10 @@ window.SANDBOX_DATA = {
   "aomen_kaibu_llm": "slices/aomen_kaibu_llm.js",
   "jiangxi_nanchang_llm": "slices/jiangxi_nanchang_llm.js",
   "jiangxi_ruijin_llm": "slices/jiangxi_ruijin_llm.js",
-  "xinjiang_xiyu_llm": "slices/xinjiang_xiyu_llm.js"
+  "xinjiang_xiyu_llm": "slices/xinjiang_xiyu_llm.js",
+  "xinjiang_zuozongtang_llm": "slices/xinjiang_zuozongtang_llm.js",
+  "guangxi_lingqu_llm": "slices/guangxi_lingqu_llm.js",
+  "hainan_hainandao_llm": "slices/hainan_hainandao_llm.js"
  },
  "corridors": [
   {

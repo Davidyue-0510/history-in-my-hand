@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_xinjiang_zuozongtang_llm_01",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_01",
+   "year": 1875,
+   "era": "光绪元年",
+   "title": "左宗棠督办新疆军务",
+   "kind": "行政",
+   "text": "朝廷命左宗棠为钦差大臣督办新疆军务",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_zuozongtang_llm_02",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_02",
+   "year": 1876,
+   "era": "光绪二年",
+   "title": "克复乌鲁木齐",
+   "kind": "战事",
+   "text": "左宗棠率军克复乌鲁木齐",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_zuozongtang_llm_03",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_03",
+   "year": 1877,
+   "era": "光绪三年",
+   "title": "收复南疆",
+   "kind": "战事",
+   "text": "清军收复南疆，阿古柏败亡",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_zuozongtang_llm_04",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_04",
+   "year": 1881,
+   "era": "光绪七年",
+   "title": "收回伊犁",
+   "kind": "外交",
+   "text": "曾纪泽赴俄谈判收回伊犁",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_zuozongtang_llm_05",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_05",
+   "year": 1884,
+   "era": "光绪十年",
+   "title": "新疆建省",
+   "kind": "建置",
+   "text": "清廷建新疆省，西域重归版图",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

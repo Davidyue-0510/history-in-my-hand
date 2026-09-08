@@ -1,0 +1,63 @@
+{
+ "places": [
+  {
+   "id": "xinjiang",
+   "name": "新疆",
+   "type": "region",
+   "modern": "今中国新疆维吾尔自治区",
+   "note": "清季西北边疆",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yili",
+   "name": "伊犁",
+   "type": "city",
+   "modern": "今中国新疆伊犁哈萨克自治州",
+   "note": "俄军占领地",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "wulumuqi",
+   "name": "乌鲁木齐",
+   "type": "city",
+   "modern": "今中国新疆乌鲁木齐市",
+   "note": "北疆重镇",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.05,
+   "lat": 36.81,
+   "geo_note": "今山东淄博临淄；房玄龄故里",
+   "geo_match": "substring"
+  },
+  {
+   "id": "nanjiang",
+   "name": "南疆",
+   "type": "region",
+   "modern": "今中国新疆南部",
+   "note": "阿古柏势力范围",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

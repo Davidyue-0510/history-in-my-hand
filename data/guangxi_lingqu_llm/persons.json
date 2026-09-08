@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "GUA__p01",
+   "name": "史禄",
+   "role": "秦监御史，主持凿渠",
+   "note": "秦始皇命其凿灵渠",
+   "_source_idx": 0,
+   "_source_name": "灵渠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p02",
+   "name": "秦始皇",
+   "role": "秦始皇帝",
+   "note": "命凿灵渠，平百越",
+   "_source_idx": 0,
+   "_source_name": "灵渠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

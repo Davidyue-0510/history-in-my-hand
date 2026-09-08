@@ -1,9 +1,9 @@
 {
-  "scenes_total": 240,
-  "historical": 231,
+  "scenes_total": 243,
+  "historical": 234,
   "fictional": 9,
-  "assertions_total": 3714,
-  "sources_total": 218,
+  "assertions_total": 3760,
+  "sources_total": 221,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -26,10 +26,12 @@
     "fujian_quanzhou_llm",
     "gansu_hexizhen_llm",
     "guandu_llm",
+    "guangxi_lingqu_llm",
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
     "guizhou_yelang_llm",
     "guizhou_zunyi_llm",
+    "hainan_hainandao_llm",
     "hainan_hairui_llm",
     "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
@@ -92,6 +94,7 @@
     "xianggang_1941_llm",
     "xianggang_songmo_llm",
     "xinjiang_xiyu_llm",
+    "xinjiang_zuozongtang_llm",
     "xiyu_dunhu_llm",
     "xizang_gorkha_llm",
     "xizang_huimeng_llm",
@@ -104,7 +107,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 346,
+  "leads_total": 350,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1839,6 +1842,27 @@
       "kind": "frontier",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "xinjiang_zuozongtang_llm",
+      "title": "左宗棠收复新疆",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_lingqu_llm",
+      "title": "灵渠",
+      "kind": "engineering",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "hainan_hainandao_llm",
+      "title": "海南岛战役",
+      "kind": "battle",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2081,6 +2105,9 @@
     "aomen_kaibu_llm": "中国澳门·澳门开埠（1553）",
     "jiangxi_nanchang_llm": "南昌起义",
     "jiangxi_ruijin_llm": "中央苏区与中华苏维埃共和国",
-    "xinjiang_xiyu_llm": "西域都护府"
+    "xinjiang_xiyu_llm": "西域都护府",
+    "xinjiang_zuozongtang_llm": "左宗棠收复新疆",
+    "guangxi_lingqu_llm": "灵渠",
+    "hainan_hainandao_llm": "海南岛战役"
   }
 }

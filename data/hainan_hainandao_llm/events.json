@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_hainan_hainandao_llm_01",
+   "subject": "event:ev_hainan_hainandao_llm_01",
+   "year": 1950,
+   "era": "1950年3月",
+   "title": "渡海作战开始",
+   "kind": "战事",
+   "text": "解放军以木帆船强渡琼州海峡",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_hainandao_llm_02",
+   "subject": "event:ev_hainan_hainandao_llm_02",
+   "year": 1950,
+   "era": "1950年4月17日",
+   "title": "主力登陆",
+   "kind": "战事",
+   "text": "主力登陆澄迈、临高，突破伯陵防线",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_hainandao_llm_03",
+   "subject": "event:ev_hainan_hainandao_llm_03",
+   "year": 1950,
+   "era": "1950年5月1日",
+   "title": "解放全岛",
+   "kind": "战事",
+   "text": "海南岛全岛解放",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

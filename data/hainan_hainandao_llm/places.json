@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "hainan_island",
+   "name": "海南岛",
+   "type": "region",
+   "modern": "今中国海南省",
+   "note": "战役目标",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "qiongzhou_strait",
+   "name": "琼州海峡",
+   "type": "region",
+   "modern": "今中国广东省与海南省之间",
+   "note": "渡海作战区域",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "chengmai",
+   "name": "澄迈",
+   "type": "city",
+   "modern": "今中国海南省澄迈县",
+   "note": "登陆点之一",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lingao",
+   "name": "临高",
+   "type": "city",
+   "modern": "今中国海南省临高县",
+   "note": "登陆点之一",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

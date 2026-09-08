@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_guangxi_lingqu_llm_01",
+   "subject": "event:ev_guangxi_lingqu_llm_01",
+   "year": -221,
+   "era": "秦始皇二十六年",
+   "title": "平百越",
+   "kind": "战事",
+   "text": "秦平百越，为运粮命凿灵渠",
+   "_source_idx": 0,
+   "_source_name": "灵渠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_lingqu_llm_02",
+   "subject": "event:ev_guangxi_lingqu_llm_02",
+   "year": -214,
+   "era": "秦始皇三十三年",
+   "title": "灵渠成",
+   "kind": "建置",
+   "text": "灵渠成，粮道通，定岭南",
+   "_source_idx": 0,
+   "_source_name": "灵渠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

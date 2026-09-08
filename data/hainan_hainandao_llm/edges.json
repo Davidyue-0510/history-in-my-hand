@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "qiongzhou_strait",
+   "to": "chengmai",
+   "type": "military",
+   "label": "解放军渡海登陆路线",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "qiongzhou_strait",
+   "to": "lingao",
+   "type": "military",
+   "label": "解放军渡海登陆路线",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

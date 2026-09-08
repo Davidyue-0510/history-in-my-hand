@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "邓华",
+   "role": "第十五兵团司令员",
+   "note": "海南岛战役前线指挥员",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "赖传珠",
+   "role": "第十五兵团政委",
+   "note": "参与战役指挥",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p03",
+   "name": "韩先楚",
+   "role": "第十二兵团副司令员",
+   "note": "率部参加登陆作战",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p04",
+   "name": "冯白驹",
+   "role": "琼崖纵队司令员",
+   "note": "率琼崖纵队接应登陆",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p05",
+   "name": "薛岳",
+   "role": "国民党军海南防卫总司令",
+   "note": "负责海南岛防御",
+   "_source_idx": 0,
+   "_source_name": "海南岛战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

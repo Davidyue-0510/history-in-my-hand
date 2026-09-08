@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "XIN__p01",
+   "name": "左宗棠",
+   "role": "钦差大臣，督办新疆军务",
+   "note": "抬棺出征，定缓进急战之策",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p02",
+   "name": "阿古柏",
+   "role": "侵占新疆的军阀",
+   "note": "在英俄支持下侵占新疆，后败亡",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p03",
+   "name": "曾纪泽",
+   "role": "清廷外交使臣",
+   "note": "赴俄谈判收回伊犁",
+   "_source_idx": 0,
+   "_source_name": "左宗棠收复新疆史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
