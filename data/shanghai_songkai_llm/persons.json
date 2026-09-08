@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "谢晋元",
+   "role": "国民革命军第88师524团副团长",
+   "note": "率八百壮士死守四行仓库",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "蒋介石",
+   "role": "国民革命军总司令",
+   "note": "淞沪会战最高统帅",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "松井石根",
+   "role": "日本上海派遣军司令官",
+   "note": "日军进攻上海主将",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p04",
+   "name": "张治中",
+   "role": "第九集团军总司令",
+   "note": "负责上海方面作战",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p05",
+   "name": "陈诚",
+   "role": "第十五集团军总司令",
+   "note": "负责罗店、宝山方向",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

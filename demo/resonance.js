@@ -128,8 +128,10 @@ window.SANDBOX_RESONANCE = {
    "mobai",
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
+   "neimenggu_genghis_llm",
    "neimenggu_zhaojun_llm",
    "ningxia",
+   "ningxia_xiaoguan_llm",
    "ningxia_xixia_llm",
    "ningyuan",
    "pingbo_zhiyi_llm",
@@ -146,6 +148,7 @@ window.SANDBOX_RESONANCE = {
    "qinghai_tuyuhun_llm",
    "san_guo",
    "sarhu",
+   "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shangyang",
    "shaqiu",
@@ -198,6 +201,7 @@ window.SANDBOX_RESONANCE = {
    "xiaoyaojin",
    "xinhai",
    "xiyu_dunhu_llm",
+   "xizang_gorkha_llm",
    "xizang_tubo_llm",
    "xu_guangqi",
    "xuanwu",
@@ -2492,6 +2496,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "neimenggu_genghis_llm",
+   "name": "neimenggu_genghis_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_neimenggu_genghis_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "neimenggu_zhaojun_llm",
    "name": "neimenggu_zhaojun_llm",
    "total": 12,
@@ -2529,6 +2552,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.417,
    "best_event": "event:ningxia_weikun",
    "best_resonance": 0.667
+  },
+  {
+   "scene": "ningxia_xiaoguan_llm",
+   "name": "ningxia_xiaoguan_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ningxia_xiaoguan_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "ningxia_xixia_llm",
@@ -2838,6 +2880,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.556,
    "best_event": "阿布达里岗（东路·刘綎）",
    "best_resonance": 0.667
+  },
+  {
+   "scene": "shanghai_songkai_llm",
+   "name": "shanghai_songkai_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_shanghai_songkai_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "shanghai_xiaodaohui_llm",
@@ -3861,6 +3922,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_xiyu_dunhu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xizang_gorkha_llm",
+   "name": "xizang_gorkha_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "gap": 1,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xizang_gorkha_llm_01",
    "best_resonance": 0.0
   },
   {

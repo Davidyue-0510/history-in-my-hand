@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "NEI__p01",
+   "name": "铁木真",
+   "role": "蒙古部首领，后为成吉思汗",
+   "note": "统一蒙古诸部，建立大蒙古国",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NEI__p02",
+   "name": "塔塔儿部首领",
+   "role": "敌对部落首领",
+   "note": "被铁木真击败",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NEI__p03",
+   "name": "克烈部首领",
+   "role": "敌对部落首领",
+   "note": "被铁木真击败",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NEI__p04",
+   "name": "乃蛮部首领",
+   "role": "敌对部落首领",
+   "note": "被铁木真击败",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

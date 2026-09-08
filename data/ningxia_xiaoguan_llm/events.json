@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_ningxia_xiaoguan_llm_01",
+   "subject": "event:ev_ningxia_xiaoguan_llm_01",
+   "year": -110,
+   "era": "元封元年",
+   "title": "汉武帝北巡萧关",
+   "kind": "行政",
+   "text": "汉武帝巡边至萧关，耀兵朔方",
+   "_source_idx": 0,
+   "_source_name": "萧关史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ningxia_xiaoguan_llm_02",
+   "subject": "event:ev_ningxia_xiaoguan_llm_02",
+   "year": 737,
+   "era": "开元二十五年",
+   "title": "王维出使凉州",
+   "kind": "行政",
+   "text": "王维经萧关道出使凉州",
+   "_source_idx": 0,
+   "_source_name": "萧关史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

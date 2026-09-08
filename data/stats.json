@@ -1,9 +1,9 @@
 {
-  "scenes_total": 226,
-  "historical": 217,
+  "scenes_total": 230,
+  "historical": 221,
   "fictional": 9,
-  "assertions_total": 3525,
-  "sources_total": 204,
+  "assertions_total": 3582,
+  "sources_total": 208,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -45,7 +45,9 @@
     "minyue_llm",
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
+    "neimenggu_genghis_llm",
     "neimenggu_zhaojun_llm",
+    "ningxia_xiaoguan_llm",
     "ningxia_xixia_llm",
     "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
@@ -57,6 +59,7 @@
     "qinghai_gusiluo_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
+    "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
     "shu_han_found_llm",
     "song",
@@ -81,6 +84,7 @@
     "warring_states_shangyang_llm",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
+    "xizang_gorkha_llm",
     "xizang_tubo_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
@@ -90,7 +94,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 324,
+  "leads_total": 328,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1727,6 +1731,34 @@
       "kind": "frontier",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "shanghai_songkai_llm",
+      "title": "淞沪会战（1937）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "ningxia_xiaoguan_llm",
+      "title": "萧关 秦汉长城西段关隘（汉）",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "neimenggu_genghis_llm",
+      "title": "成吉思汗统一蒙古（1206）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "xizang_gorkha_llm",
+      "title": "廓尔喀之役（1791—1792）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1955,6 +1987,10 @@
     "heilongjiang_jin_llm": "金朝立国 完颜阿骨打称帝（1115）",
     "chongqing_diaoyucheng_llm": "钓鱼城之战（1259，宋蒙）",
     "tianjin_jiaoan_llm": "天津教案（1870）",
-    "yunnan_dali_llm": "大理国（937—1253）"
+    "yunnan_dali_llm": "大理国（937—1253）",
+    "shanghai_songkai_llm": "淞沪会战（1937）",
+    "ningxia_xiaoguan_llm": "萧关 秦汉长城西段关隘（汉）",
+    "neimenggu_genghis_llm": "成吉思汗统一蒙古（1206）",
+    "xizang_gorkha_llm": "廓尔喀之役（1791—1792）"
   }
 }

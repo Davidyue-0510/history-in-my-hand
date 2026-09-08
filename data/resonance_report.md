@@ -129,8 +129,10 @@
 | mobai | 18 | 3 | **0.000** | event:mb_chu（0.000） | gap 1 / record 11 / scholarship 6 |
 | nan_song_linan_llm | 14 | 3 | **0.000** | event:ev_nan_song_linan_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | nanzhao_dali_llm | 20 | 3 | **0.000** | event:ev_nanzhao_dali_llm_01（0.000） | gap 4 / inference 1 / record 13 / scholarship 2 |
+| neimenggu_genghis_llm | 15 | 3 | **0.000** | event:ev_neimenggu_genghis_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | neimenggu_zhaojun_llm | 12 | 3 | **0.000** | event:ev_neimenggu_zhaojun_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 1 |
 | ningxia | 14 | 3 | **0.417** | event:ningxia_weikun（0.667） | gap 1 / record 12 / scholarship 1 |
+| ningxia_xiaoguan_llm | 13 | 2 | **0.000** | event:ev_ningxia_xiaoguan_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | ningxia_xixia_llm | 15 | 3 | **0.000** | event:ev_ningxia_xixia_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | ningyuan | 45 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 3 |
 | pingbo_zhiyi_llm | 14 | 4 | **0.000** | event:ev_pingbo_zhiyi_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
@@ -147,6 +149,7 @@
 | qinghai_tuyuhun_llm | 20 | 3 | **0.000** | event:ev_qinghai_tuyuhun_llm_01（0.000） | gap 4 / inference 1 / record 13 / scholarship 2 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
 | 萨尔浒 | 125 | 5 | **0.556** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 98 / scholarship 14 |
+| shanghai_songkai_llm | 15 | 3 | **0.000** | event:ev_shanghai_songkai_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | shanghai_xiaodaohui_llm | 15 | 2 | **0.000** | event:ev_shanghai_xiaodaohui_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | shangyang | 17 | 3 | **0.000** | event:sy_338（0.000） | gap 1 / inference 2 / record 11 / scholarship 3 |
 | shaqiu | 14 | 2 | **0.000** | event:sq_210（0.000） | gap 1 / inference 3 / record 7 / scholarship 3 |
@@ -199,6 +202,7 @@
 | xiaoyaojin | 14 | 3 | **0.000** | event:xy_cao（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
 | xinhai | 18 | 3 | **0.000** | event:xh_1010（0.000） | gap 1 / inference 3 / record 10 / scholarship 4 |
 | xiyu_dunhu_llm | 19 | 2 | **0.000** | event:ev_xiyu_dunhu_llm_01（0.000） | gap 4 / inference 1 / record 11 / scholarship 3 |
+| xizang_gorkha_llm | 14 | 3 | **0.000** | event:ev_xizang_gorkha_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | xizang_tubo_llm | 14 | 4 | **0.000** | event:ev_xizang_tubo_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | xu_guangqi | 12 | 3 | **0.333** | event:ganshu（0.333） | gap 1 / record 9 / scholarship 2 |
 | xuanwu | 16 | 2 | **0.000** | event:xx_626（0.000） | gap 1 / inference 1 / record 12 / scholarship 2 |
@@ -459,9 +463,14 @@
 | event:ev_nanzhao_dali_llm_01 | nanzhao_dali_llm | **0.000** | 0/3 | 0.11 | 0.23 | 13 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_02 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_03 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_neimenggu_genghis_llm_01 | neimenggu_genghis_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_neimenggu_genghis_llm_02 | neimenggu_genghis_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_neimenggu_genghis_llm_03 | neimenggu_genghis_llm | **0.000** | 0/3 | 1.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_neimenggu_zhaojun_llm_01 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 1.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_neimenggu_zhaojun_llm_02 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_neimenggu_zhaojun_llm_03 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_ningxia_xiaoguan_llm_01 | ningxia_xiaoguan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_ningxia_xiaoguan_llm_02 | ningxia_xiaoguan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xixia_llm_01 | ningxia_xixia_llm | **0.000** | 0/3 | 0.20 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xixia_llm_02 | ningxia_xixia_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xixia_llm_03 | ningxia_xixia_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -499,6 +508,9 @@
 | event:ev_qinghai_tuyuhun_llm_01 | qinghai_tuyuhun_llm | **0.000** | 0/3 | 0.00 | 0.27 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_tuyuhun_llm_02 | qinghai_tuyuhun_llm | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_tuyuhun_llm_03 | qinghai_tuyuhun_llm | **0.000** | 0/3 | 0.33 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_songkai_llm_01 | shanghai_songkai_llm | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_songkai_llm_02 | shanghai_songkai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_songkai_llm_03 | shanghai_songkai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_xiaodaohui_llm_01 | shanghai_xiaodaohui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_xiaodaohui_llm_02 | shanghai_xiaodaohui_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_shu_han_found_llm_01 | shu_han_found_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -565,6 +577,9 @@
 | event:ev_xianggang_songmo_llm_04 | xianggang_songmo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_xiyu_dunhu_llm_01 | xiyu_dunhu_llm | **0.000** | 0/3 | 0.00 | 0.43 | 7 | 0 / 0 / 0 / 0 |
 | event:ev_xiyu_dunhu_llm_02 | xiyu_dunhu_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
+| event:ev_xizang_gorkha_llm_01 | xizang_gorkha_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_xizang_gorkha_llm_02 | xizang_gorkha_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_xizang_gorkha_llm_03 | xizang_gorkha_llm | **0.000** | 0/3 | 0.20 | 0.00 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_xizang_tubo_llm_01 | xizang_tubo_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_xizang_tubo_llm_02 | xizang_tubo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_xizang_tubo_llm_03 | xizang_tubo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

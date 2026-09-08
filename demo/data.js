@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 226 个切片
+// 权威数据源：data/scenes.json 注册的 230 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 226 个切片",
+  "slice": "multi-scene · 230 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -49,7 +49,9 @@ window.SANDBOX_DATA = {
    "minyue_llm",
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
+   "neimenggu_genghis_llm",
    "neimenggu_zhaojun_llm",
+   "ningxia_xiaoguan_llm",
    "ningxia_xixia_llm",
    "pingbo_zhiyi_llm",
    "qianjia_puxue_llm",
@@ -61,6 +63,7 @@ window.SANDBOX_DATA = {
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
+   "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shu_han_found_llm",
    "song",
@@ -85,6 +88,7 @@ window.SANDBOX_DATA = {
    "warring_states_shangyang_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
+   "xizang_gorkha_llm",
    "xizang_tubo_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
@@ -570,7 +574,11 @@ window.SANDBOX_DATA = {
   "heilongjiang_jin_llm",
   "chongqing_diaoyucheng_llm",
   "tianjin_jiaoan_llm",
-  "yunnan_dali_llm"
+  "yunnan_dali_llm",
+  "shanghai_songkai_llm",
+  "ningxia_xiaoguan_llm",
+  "neimenggu_genghis_llm",
+  "xizang_gorkha_llm"
  ],
  "vocab": {
   "layers": [
@@ -26282,6 +26290,137 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "shanghai_songkai_llm": {
+   "key": "shanghai_songkai_llm",
+   "scene_id": "shanghai_songkai_llm",
+   "title": "淞沪会战（1937）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "jiangnan",
+   "page": "shanghai_songkai_llm.html",
+   "primary_place": "shanghai",
+   "vocab_pack": "shanghai_songkai_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 5,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "ningxia_xiaoguan_llm": {
+   "key": "ningxia_xiaoguan_llm",
+   "scene_id": "ningxia_xiaoguan_llm",
+   "title": "萧关 秦汉长城西段关隘（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=ningxia_xiaoguan_llm",
+   "primary_place": "xiaoguan",
+   "vocab_pack": "ningxia_xiaoguan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 2,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "neimenggu_genghis_llm": {
+   "key": "neimenggu_genghis_llm",
+   "scene_id": "neimenggu_genghis_llm",
+   "title": "成吉思汗统一蒙古（1206）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "fusion",
+   "page": "county.html?scene=neimenggu_genghis_llm",
+   "primary_place": "onon_river",
+   "vocab_pack": "neimenggu_genghis_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 4,
+    "assert": 15,
+    "conflict": 3,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xizang_gorkha_llm": {
+   "key": "xizang_gorkha_llm",
+   "scene_id": "xizang_gorkha_llm",
+   "title": "廓尔喀之役（1791—1792）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "fusion",
+   "page": "xizang_gorkha_llm.html",
+   "primary_place": "xigaze",
+   "vocab_pack": "xizang_gorkha_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 2,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26510,7 +26649,11 @@ window.SANDBOX_DATA = {
   "heilongjiang_jin_llm": "slices/heilongjiang_jin_llm.js",
   "chongqing_diaoyucheng_llm": "slices/chongqing_diaoyucheng_llm.js",
   "tianjin_jiaoan_llm": "slices/tianjin_jiaoan_llm.js",
-  "yunnan_dali_llm": "slices/yunnan_dali_llm.js"
+  "yunnan_dali_llm": "slices/yunnan_dali_llm.js",
+  "shanghai_songkai_llm": "slices/shanghai_songkai_llm.js",
+  "ningxia_xiaoguan_llm": "slices/ningxia_xiaoguan_llm.js",
+  "neimenggu_genghis_llm": "slices/neimenggu_genghis_llm.js",
+  "xizang_gorkha_llm": "slices/xizang_gorkha_llm.js"
  },
  "corridors": [
   {

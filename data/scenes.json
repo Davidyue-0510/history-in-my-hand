@@ -429,7 +429,11 @@
   "heilongjiang_jin_llm",
   "chongqing_diaoyucheng_llm",
   "tianjin_jiaoan_llm",
-  "yunnan_dali_llm"
+  "yunnan_dali_llm",
+  "shanghai_songkai_llm",
+  "ningxia_xiaoguan_llm",
+  "neimenggu_genghis_llm",
+  "xizang_gorkha_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -18904,6 +18908,305 @@
     2,
     3,
     4,
+    5,
+    6
+   ]
+  },
+  "shanghai_songkai_llm": {
+   "kind": "battle",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "淞沪会战（1937）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shanghai",
+   "dossier_event": "event:ev_shanghai_songkai_llm_01",
+   "vocab_pack": "shanghai_songkai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "淞沪会战（1937）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "淞沪会战（1937）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "淞沪会战（1937）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "淞沪会战（1937）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    4,
+    5,
+    6
+   ]
+  },
+  "ningxia_xiaoguan_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "ningxia",
+   "title": "萧关 秦汉长城西段关隘（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xiaoguan",
+   "dossier_event": "event:ev_ningxia_xiaoguan_llm_01",
+   "vocab_pack": "ningxia_xiaoguan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "萧关 秦汉长城西段关隘（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "萧关 秦汉长城西段关隘（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "萧关 秦汉长城西段关隘（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "萧关 秦汉长城西段关隘（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "neimenggu_genghis_llm": {
+   "kind": "frontier",
+   "region": "fusion",
+   "province": "neimenggu",
+   "title": "成吉思汗统一蒙古（1206）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "onon_river",
+   "dossier_event": "event:ev_neimenggu_genghis_llm_01",
+   "vocab_pack": "neimenggu_genghis_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "成吉思汗统一蒙古（1206）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "成吉思汗统一蒙古（1206）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "成吉思汗统一蒙古（1206）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "成吉思汗统一蒙古（1206）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "xizang_gorkha_llm": {
+   "kind": "battle",
+   "region": "fusion",
+   "province": "xizang",
+   "title": "廓尔喀之役（1791—1792）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xigaze",
+   "dossier_event": "event:ev_xizang_gorkha_llm_01",
+   "vocab_pack": "xizang_gorkha_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "廓尔喀之役（1791—1792）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "廓尔喀之役（1791—1792）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "廓尔喀之役（1791—1792）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "廓尔喀之役（1791—1792）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
     5,
     6
    ]

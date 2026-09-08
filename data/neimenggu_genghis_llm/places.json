@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "onon_river",
+   "name": "斡难河",
+   "type": "river",
+   "modern": "今蒙古国",
+   "note": "忽里台大会召开地",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "karakorum",
+   "name": "哈拉和林",
+   "type": "city",
+   "modern": "今蒙古国前杭爱省",
+   "note": "大蒙古国政治中心",
+   "_source_idx": 0,
+   "_source_name": "成吉思汗统一蒙古史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

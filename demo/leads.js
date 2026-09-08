@@ -2753,6 +2753,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "NEI_015",
+   "scene": "neimenggu_genghis_llm",
+   "subject": "event:ev_neimenggu_genghis_llm_03",
+   "title": "成吉思汗病逝于灭西夏途中",
+   "missing": "历史地理",
+   "where": "灭西夏途中",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "需进一步考证具体地点",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "NEI_011",
    "scene": "neimenggu_zhaojun_llm",
    "subject": "person:NEI__p01",
@@ -2794,6 +2809,22 @@ window.SANDBOX_LEADS = {
     "边军文书释读"
    ],
    "accept": "补叛方与地方视角，平衡凯旋叙事",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "NIN_013",
+   "scene": "ningxia_xiaoguan_llm",
+   "subject": "place:xiaoguan",
+   "title": "萧关具体遗址尚未确证",
+   "missing": "考古调查 / 文献考证",
+   "where": "宁夏固原东南一带",
+   "skills": [
+    "考古调查",
+    "文献考证"
+   ],
+   "accept": "确认萧关具体位置",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
@@ -3413,6 +3444,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 84
+  },
+  {
+   "id": "SHA_015",
+   "scene": "shanghai_songkai_llm",
+   "subject": "event:ev_shanghai_songkai_llm_01",
+   "title": "双方伤亡数字未详",
+   "missing": "档案检索 / 数据统计",
+   "where": "中国第二历史档案馆",
+   "skills": [
+    "档案检索",
+    "数据统计"
+   ],
+   "accept": "提供淞沪会战双方伤亡统计",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "SHA_015",
@@ -4504,6 +4551,22 @@ window.SANDBOX_LEADS = {
     "历史地理"
    ],
    "accept": "待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIZ_013",
+   "scene": "xizang_gorkha_llm",
+   "subject": "event:ev_xizang_gorkha_llm_02",
+   "title": "兵力不详",
+   "missing": "军事史 / 档案学",
+   "where": "清宫档案",
+   "skills": [
+    "军事史",
+    "档案学"
+   ],
+   "accept": "查得具体兵力数字",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13

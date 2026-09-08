@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "shanghai",
+   "to": "zhabei",
+   "type": "battle",
+   "label": "中国军队在闸北阻击",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "shanghai",
+   "to": "luodian",
+   "type": "battle",
+   "label": "罗店争夺战",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "shanghai",
+   "to": "baoshan",
+   "type": "battle",
+   "label": "宝山保卫战",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "shanghai",
+   "to": "sihang_cangku",
+   "type": "battle",
+   "label": "四行仓库保卫战",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

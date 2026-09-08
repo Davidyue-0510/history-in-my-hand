@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "chang_an",
+   "to": "liangzhou",
+   "type": "military",
+   "label": "唐代萧关道",
+   "_source_idx": 0,
+   "_source_name": "萧关史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

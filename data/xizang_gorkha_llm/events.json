@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_xizang_gorkha_llm_01",
+   "subject": "event:ev_xizang_gorkha_llm_01",
+   "year": 1791,
+   "era": "乾隆五十六年",
+   "title": "廓尔喀入侵后藏",
+   "kind": "战事",
+   "text": "廓尔喀以贸易纠纷入侵后藏",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_gorkha_llm_02",
+   "subject": "event:ev_xizang_gorkha_llm_02",
+   "year": 1792,
+   "era": "乾隆五十七年",
+   "title": "福康安率兵入藏",
+   "kind": "战事",
+   "text": "清军翻越喜马拉雅山反击",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_gorkha_llm_03",
+   "subject": "event:ev_xizang_gorkha_llm_03",
+   "year": 1792,
+   "era": "乾隆五十七年",
+   "title": "藏廓条约签订",
+   "kind": "外交",
+   "text": "廓尔喀请和，定三年一贡",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

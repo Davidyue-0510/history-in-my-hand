@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "XIZ__p01",
+   "name": "福康安",
+   "role": "清军将军",
+   "note": "率兵入藏平乱",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p02",
+   "name": "廓尔喀王",
+   "role": "尼泊尔统治者",
+   "note": "发动入侵后请和",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

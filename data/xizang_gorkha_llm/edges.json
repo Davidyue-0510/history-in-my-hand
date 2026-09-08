@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "xigaze",
+   "to": "zhashilunbu",
+   "type": "military",
+   "label": "廓尔喀劫掠路线",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "jilong",
+   "to": "resuo",
+   "type": "military",
+   "label": "清军进攻路线",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "resuo",
+   "to": "kathmandu",
+   "type": "military",
+   "label": "清军逼近加德满都",
+   "_source_idx": 0,
+   "_source_name": "廓尔喀之役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

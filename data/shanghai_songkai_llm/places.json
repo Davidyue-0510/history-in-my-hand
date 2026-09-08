@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "shanghai",
+   "name": "上海",
+   "type": "city",
+   "modern": "今中国上海市",
+   "note": "会战主战场",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "zhabei",
+   "name": "闸北",
+   "type": "region",
+   "modern": "今中国上海市闸北区",
+   "note": "中国军队阻击区域",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "luodian",
+   "name": "罗店",
+   "type": "yi",
+   "modern": "今中国上海市宝山区罗店镇",
+   "note": "激战地",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "baoshan",
+   "name": "宝山",
+   "type": "city",
+   "modern": "今中国上海市宝山区",
+   "note": "阻击日军登陆",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "sihang_cangku",
+   "name": "四行仓库",
+   "type": "fortress",
+   "modern": "今中国上海市静安区",
+   "note": "谢晋元部坚守处",
+   "_source_idx": 0,
+   "_source_name": "淞沪会战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}
