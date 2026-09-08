@@ -482,6 +482,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "CHO_014",
+   "scene": "chongqing_capital_llm",
+   "subject": "event:ev_chongqing_capital_llm_03",
+   "title": "具体伤亡数字待考",
+   "missing": "档案整理 / 统计",
+   "where": "重庆市档案馆",
+   "skills": [
+    "档案整理",
+    "统计"
+   ],
+   "accept": "精确伤亡统计",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "chongzhen_han_07",
    "scene": "chongzhen_han",
    "subject": "event:ch_1640",
@@ -735,6 +751,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "DON_015",
+   "scene": "dongbei_kanglian_llm",
+   "subject": "event:ev_dongbei_kanglian_llm_01",
+   "title": "具体战役细节缺失",
+   "missing": "历史档案检索",
+   "where": "东北抗联档案",
+   "skills": [
+    "历史档案检索"
+   ],
+   "accept": "补充具体战斗记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "DH_GAP1",

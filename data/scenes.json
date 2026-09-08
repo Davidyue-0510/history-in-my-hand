@@ -413,7 +413,9 @@
   "liangzhou_meeting_llm",
   "songshan_battle_llm",
   "pingbo_zhiyi_llm",
-  "bohai_kingdom_llm"
+  "bohai_kingdom_llm",
+  "dongbei_kanglian_llm",
+  "chongqing_capital_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -17690,6 +17692,157 @@
     1,
     3,
     4,
+    6
+   ]
+  },
+  "dongbei_kanglian_llm": {
+   "kind": "uprising",
+   "region": "jianzhou",
+   "province": "heilongjiang",
+   "title": "东北抗日联军（1931—1945）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "dongbei",
+   "dossier_event": "event:ev_dongbei_kanglian_llm_01",
+   "vocab_pack": "dongbei_kanglian_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "东北抗日联军（1931—1945）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "东北抗日联军（1931—1945）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "东北抗日联军（1931—1945）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "东北抗日联军（1931—1945）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "chongqing_capital_llm": {
+   "kind": "court",
+   "region": "chuan_gui",
+   "province": "chongqing",
+   "title": "重庆抗战陪都（1937—1946）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chongqing",
+   "dossier_event": "event:ev_chongqing_capital_llm_01",
+   "vocab_pack": "chongqing_capital_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆抗战陪都（1937—1946）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "重庆抗战陪都（1937—1946）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "重庆抗战陪都（1937—1946）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆抗战陪都（1937—1946）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
     6
    ]
   }

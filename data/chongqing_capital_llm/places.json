@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "chongqing",
+   "name": "重庆",
+   "type": "city",
+   "modern": "中国重庆市",
+   "note": "战时陪都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "nanjing",
+   "name": "南京",
+   "type": "city",
+   "modern": "中国江苏省南京市",
+   "note": "战前首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.78,
+   "lat": 32.06,
+   "geo_note": "民国首都"
+  },
+  {
+   "id": "wuhan",
+   "name": "武汉",
+   "type": "city",
+   "modern": "中国湖北省武汉市",
+   "note": "迁渝中转站",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "type": "city",
+   "modern": "中国四川省成都市",
+   "note": "川省省会",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.07,
+   "lat": 30.66,
+   "geo_note": "今四川成都"
+  },
+  {
+   "id": "yichang",
+   "name": "宜昌",
+   "type": "city",
+   "modern": "中国湖北省宜昌市",
+   "note": "入川门户",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -33,6 +33,7 @@ window.SANDBOX_RESONANCE = {
    "chensheng",
    "chibi",
    "chibi_llm",
+   "chongqing_capital_llm",
    "chongzhen_han",
    "chongzhen_huangzai",
    "chu_han",
@@ -43,6 +44,7 @@ window.SANDBOX_RESONANCE = {
    "diaoyucheng",
    "dingwu",
    "dong_han_yi",
+   "dongbei_kanglian_llm",
    "donghan_danggu",
    "dujiangyan",
    "dunzun",
@@ -643,6 +645,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "chongqing_capital_llm",
+   "name": "chongqing_capital_llm",
+   "total": 15,
+   "layers": {
+    "record": 9,
+    "inference": 4,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chongqing_capital_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "chongzhen_han",
    "name": "chongzhen_han",
    "total": 10,
@@ -825,6 +846,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:dy_196",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "dongbei_kanglian_llm",
+   "name": "dongbei_kanglian_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 12,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_dongbei_kanglian_llm_01",
    "best_resonance": 0.0
   },
   {

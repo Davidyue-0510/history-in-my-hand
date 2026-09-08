@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "dongbei",
+   "party": "东北抗联",
+   "start": 1931,
+   "end": 1945,
+   "basis": "historical: kanglian_llm_src 1931-1945"
+  }
+ ]
+}

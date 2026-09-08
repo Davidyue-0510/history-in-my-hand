@@ -1,9 +1,9 @@
 {
-  "scenes_total": 210,
-  "historical": 201,
+  "scenes_total": 212,
+  "historical": 203,
   "fictional": 9,
-  "assertions_total": 3305,
-  "sources_total": 188,
+  "assertions_total": 3335,
+  "sources_total": 190,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -12,9 +12,11 @@
     "bohai_kingdom_llm",
     "changping_llm",
     "chibi_llm",
+    "chongqing_capital_llm",
     "chu_han",
     "chuhai_llm",
     "dagukou_battle_llm",
+    "dongbei_kanglian_llm",
     "dujiangyan",
     "feishui_llm",
     "foguo_chan_llm",
@@ -74,7 +76,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 305,
+  "leads_total": 307,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1599,6 +1601,20 @@
       "kind": "frontier",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "dongbei_kanglian_llm",
+      "title": "东北抗日联军（1931—1945）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "chongqing_capital_llm",
+      "title": "重庆抗战陪都（1937—1946）",
+      "kind": "court",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1811,6 +1827,8 @@
     "liangzhou_meeting_llm": "凉州会谈（1247，西藏归附蒙古）",
     "songshan_battle_llm": "松山战役（1944）",
     "pingbo_zhiyi_llm": "平播之役（1599—1600）",
-    "bohai_kingdom_llm": "渤海国（698—926）"
+    "bohai_kingdom_llm": "渤海国（698—926）",
+    "dongbei_kanglian_llm": "东北抗日联军（1931—1945）",
+    "chongqing_capital_llm": "重庆抗战陪都（1937—1946）"
   }
 }

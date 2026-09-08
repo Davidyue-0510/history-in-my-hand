@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_chongqing_capital_llm_01",
+   "subject": "event:ev_chongqing_capital_llm_01",
+   "year": 1937,
+   "era": "民国二十六年",
+   "title": "国民政府迁都重庆",
+   "kind": "行政",
+   "text": "国民政府西迁重庆，定作战时首都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_capital_llm_02",
+   "subject": "event:ev_chongqing_capital_llm_02",
+   "year": 1940,
+   "era": "民国二十九年",
+   "title": "明定重庆为陪都",
+   "kind": "行政",
+   "text": "国民政府正式明定重庆为陪都",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_capital_llm_03",
+   "subject": "event:ev_chongqing_capital_llm_03",
+   "year": 1939,
+   "era": "民国二十八年",
+   "title": "重庆大轰炸开始",
+   "kind": "战事",
+   "text": "日军对重庆实施战略轰炸",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_capital_llm_04",
+   "subject": "event:ev_chongqing_capital_llm_04",
+   "year": 1946,
+   "era": "民国三十五年",
+   "title": "国民政府还都南京",
+   "kind": "行政",
+   "text": "抗战胜利后政府还都南京",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

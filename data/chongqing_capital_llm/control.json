@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "chongqing",
+   "party": "国民政府",
+   "start": 1937,
+   "end": 1946,
+   "basis": "historical: cqcapital_llm_src 1937-1946"
+  }
+ ]
+}

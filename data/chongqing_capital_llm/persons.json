@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "蒋介石",
+   "role": "国民政府军事委员会委员长",
+   "note": "战时最高统帅",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p02",
+   "name": "林森",
+   "role": "国民政府主席",
+   "note": "1937年随政府迁渝",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p03",
+   "name": "周恩来",
+   "role": "中共驻渝代表",
+   "note": "负责统战工作",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p04",
+   "name": "张群",
+   "role": "四川省政府主席",
+   "note": "负责陪都行政",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p05",
+   "name": "宋美龄",
+   "role": "第一夫人",
+   "note": "从事外交与救济",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p06",
+   "name": "何应钦",
+   "role": "军政部部长",
+   "note": "负责军事行政",
+   "_source_idx": 0,
+   "_source_name": "重庆陪都时期史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

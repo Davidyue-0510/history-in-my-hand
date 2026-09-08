@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 210 个切片
+// 权威数据源：data/scenes.json 注册的 212 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 210 个切片",
+  "slice": "multi-scene · 212 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -16,9 +16,11 @@ window.SANDBOX_DATA = {
    "bohai_kingdom_llm",
    "changping_llm",
    "chibi_llm",
+   "chongqing_capital_llm",
    "chu_han",
    "chuhai_llm",
    "dagukou_battle_llm",
+   "dongbei_kanglian_llm",
    "dujiangyan",
    "feishui_llm",
    "foguo_chan_llm",
@@ -538,7 +540,9 @@ window.SANDBOX_DATA = {
   "liangzhou_meeting_llm",
   "songshan_battle_llm",
   "pingbo_zhiyi_llm",
-  "bohai_kingdom_llm"
+  "bohai_kingdom_llm",
+  "dongbei_kanglian_llm",
+  "chongqing_capital_llm"
  ],
  "vocab": {
   "layers": [
@@ -25723,6 +25727,73 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "dongbei_kanglian_llm": {
+   "key": "dongbei_kanglian_llm",
+   "scene_id": "dongbei_kanglian_llm",
+   "title": "东北抗日联军（1931—1945）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "jianzhou",
+   "page": "county.html?scene=dongbei_kanglian_llm",
+   "primary_place": "dongbei",
+   "vocab_pack": "dongbei_kanglian_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "chongqing_capital_llm": {
+   "key": "chongqing_capital_llm",
+   "scene_id": "chongqing_capital_llm",
+   "title": "重庆抗战陪都（1937—1946）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "chuan_gui",
+   "page": "county.html?scene=chongqing_capital_llm",
+   "primary_place": "chongqing",
+   "vocab_pack": "chongqing_capital_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 6,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 4
+   }
   }
  },
  "slice_index": {
@@ -25935,7 +26006,9 @@ window.SANDBOX_DATA = {
   "liangzhou_meeting_llm": "slices/liangzhou_meeting_llm.js",
   "songshan_battle_llm": "slices/songshan_battle_llm.js",
   "pingbo_zhiyi_llm": "slices/pingbo_zhiyi_llm.js",
-  "bohai_kingdom_llm": "slices/bohai_kingdom_llm.js"
+  "bohai_kingdom_llm": "slices/bohai_kingdom_llm.js",
+  "dongbei_kanglian_llm": "slices/dongbei_kanglian_llm.js",
+  "chongqing_capital_llm": "slices/chongqing_capital_llm.js"
  },
  "corridors": [
   {
