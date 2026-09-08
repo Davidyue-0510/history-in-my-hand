@@ -1,29 +1,23 @@
-// 本文件由 tools/build.py 自动生成（切片 guizhou_yelang_llm），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["guizhou_yelang_llm"]。
+// 本文件由 tools/build.py 自动生成（切片 heilongjiang_kanglian_llm），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["heilongjiang_kanglian_llm"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
+window.SANDBOX_SLICES["heilongjiang_kanglian_llm"] = {
  "meta": {
-  "kind": "fusion",
-  "region": "chuan_gui",
-  "province": "guizhou",
-  "title": "汉通西南夷·夜郎（前135–前111）",
-  "dossier_label": "guizhou_yelang_llm",
-  "subtitle": "",
-  "primary_place": "yelang",
-  "dossier_event": "event:ev_guizhou_yelang_llm_01",
-  "vocab_pack": "guizhou_yelang_llm",
+  "kind": "battle",
+  "region": "liaobei",
+  "province": "heilongjiang",
+  "title": "东北抗日联军",
+  "dossier_label": null,
+  "subtitle": null,
+  "primary_place": "baishan_heihe",
+  "dossier_event": "event:ev_heilongjiang_kanglian_llm_01",
+  "vocab_pack": "heilongjiang_kanglian_llm",
   "terrain_grid": "china_coarse",
-  "lead": "",
-  "parties_note": "",
-  "dims": [
-   1,
-   3,
-   4,
-   5,
-   6
-  ],
-  "epoch": "han",
-  "scale_tier": "strategic",
+  "lead": null,
+  "parties_note": null,
+  "subject_names": null,
+  "epoch": "qing_modern",
+  "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {
     "from": [
@@ -35,84 +29,73 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→汉置牂柯郡、封夜郎王，西南夷纳入边郡与羁縻双轨"
+    "note": "东北抗日联军：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "material_logistics": {
     "from": [
-     "strategic",
-     "doctrine"
+     "tech",
+     "economy"
     ],
     "from_dims": [
      2,
      3
     ],
     "layer": "inference",
-    "note": "技術+制度→西南夷道自僰道指牂柯江，巴蜀物资与军镇连线"
+    "note": "东北抗日联军：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "population_mobilization": {
     "from": [
-     "strategic",
-     "doctrine"
+     "society"
     ],
     "from_dims": [
-     4,
-     3
+     4
     ],
     "layer": "inference",
-    "note": "社會+制度→夜郎诸部归附、汉民与夷人杂处，边郡编户"
+    "note": "东北抗日联军：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "geopolitical_strategy": {
     "from": [
      "strategic",
-     "doctrine"
+     "international"
     ],
     "from_dims": [
-     1,
-     3
+     6,
+     5
     ],
     "layer": "inference",
-    "note": "地理+制度→扼牂柯江—滇黔通道，控西南夷与交趾—巴蜀三角"
+    "note": "东北抗日联军：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
    }
   },
-  "subject_names": [
-   "person:GUI__p01",
-   "person:GUI__p02",
-   "person:GUI__p03",
-   "place:yelang",
-   "place:zangke",
-   "place:qielan",
-   "place:bodaozhi",
-   "place:zangkejiang",
-   "event:ev_guizhou_yelang_llm_01",
-   "event:ev_guizhou_yelang_llm_02",
-   "event:ev_guizhou_yelang_llm_03"
+  "dims": [
+   1,
+   6
   ],
-  "page": "county.html?scene=guizhou_yelang_llm",
-  "key": "guizhou_yelang_llm",
-  "scene_id": "guizhou_yelang_llm"
+  "page": "heilongjiang_kanglian_llm.html",
+  "key": "heilongjiang_kanglian_llm",
+  "scene_id": "heilongjiang_kanglian_llm"
  },
  "sources": [
   {
-   "id": "guizhou_yelang_src_llm",
-   "title": "夜郎史料摘录",
+   "id": "heilongjiang_kanglian_src_llm",
+   "title": "东北抗日联军史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
    "compiler": "后世官修",
-   "period": "汉",
+   "period": "现代",
    "note": ""
   }
  ],
  "places": [
   {
-   "id": "yelang",
-   "name": "夜郎",
+   "id": "baishan_heihe",
+   "name": "白山黑水",
    "type": "region",
-   "modern": "今中国贵州西部",
-   "note": "西汉夜郎国地",
+   "modern": "中国东北地区",
+   "note": "泛指东北山林",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -120,13 +103,13 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "zangke",
-   "name": "牂牁郡",
+   "id": "songnen_pingyuan",
+   "name": "松嫩平原",
    "type": "region",
-   "modern": "今中国贵州西部",
-   "note": "元鼎六年置",
+   "modern": "中国黑龙江、吉林",
+   "note": "联军游击区域",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -134,13 +117,13 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "jiaozhi",
-   "name": "交趾",
+   "id": "changbai_shan",
+   "name": "长白山区",
    "type": "region",
-   "modern": "今越南北部",
-   "note": "夜郎东接",
+   "modern": "中国吉林、辽宁",
+   "note": "联军游击区域",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -148,55 +131,13 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "dian",
-   "name": "滇国",
+   "id": "sulian",
+   "name": "苏联",
    "type": "region",
-   "modern": "今中国云南",
-   "note": "夜郎西有",
+   "modern": "俄罗斯",
+   "note": "联军退入整训",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "qiongdu",
-   "name": "邛都",
-   "type": "region",
-   "modern": "今中国四川西南",
-   "note": "夜郎北有",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "zangkejiang",
-   "name": "牂牁江",
-   "type": "river",
-   "modern": "今中国贵州",
-   "note": "夜郎控此江",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "shendu",
-   "name": "身毒",
-   "type": "region",
-   "modern": "今印度",
-   "note": "蜀布入身毒",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -206,23 +147,34 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  ],
  "persons": [
   {
-   "id": "GUI__p01",
-   "name": "多同",
-   "role": "夜郎侯",
-   "note": "迎汉使，受封为王",
+   "id": "HEI__p01",
+   "name": "杨靖宇",
+   "role": "东北抗日联军第一路军总司令",
+   "note": "1940年殉国",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "influence": 2
+   "influence": 1
   },
   {
-   "id": "GUI__p02",
-   "name": "汉武帝",
-   "role": "汉帝",
-   "note": "元鼎年间开拓西南夷",
+   "id": "HEI__p02",
+   "name": "赵尚志",
+   "role": "东北抗日联军第三军军长",
+   "note": "联军主要领导人",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 0
+  },
+  {
+   "id": "HEI__p03",
+   "name": "李兆麟",
+   "role": "东北抗日联军第三路军总指挥",
+   "note": "率部转战松嫩平原",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
@@ -230,432 +182,398 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  ],
  "assertions": [
   {
-   "id": "GUI_001",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "predicate": "置郡",
-   "value_text": "元鼎六年置牂牁郡",
+   "id": "HEI_001",
+   "subject": "event:ev_heilongjiang_kanglian_llm_01",
+   "predicate": "事变性质",
+   "value_text": "日军侵占东北",
    "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
+    "era_text": "1931年",
+    "start": "1931-09-18",
+    "gregorian_year": 1931
    },
-   "place": "zangke",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "置牂牁郡，封其为王",
-   "quote_status": "paraphrase_unverified",
-   "layer": "scholarship",
-   "confidence": 0.4,
-   "scale": "province",
-   "note": "[auto] 补层 scholarship",
-   "dims": [
-    3,
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "置牂牁郡，封其为王",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_002",
-   "subject": "person:GUI__p01",
-   "predicate": "迎汉使",
-   "value_text": "夜郎侯多同迎汉使",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎侯多同迎汉使",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "夜郎侯多同迎汉使",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_003",
-   "subject": "place:yelang",
-   "predicate": "地理位置",
-   "value_text": "东接交趾，西有滇国，北有邛都",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "东接交趾，西有滇国，北有邛都",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "东接交趾，西有滇国，北有邛都",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_004",
-   "subject": "place:yelang",
-   "predicate": "物产",
-   "value_text": "临邛竹杖、蜀布由此入身毒",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "临邛竹杖、蜀布由此入身毒",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
-    4
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "临邛竹杖、蜀布由此入身毒",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_005",
-   "subject": "place:yelang",
-   "predicate": "自大",
-   "value_text": "夜郎自大，因僻远不知汉广大",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎自大，盖因僻远未知汉之广大",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.6,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    5
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "夜郎自大，盖因僻远未知汉之广大",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_006",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "predicate": "影响",
-   "value_text": "夜郎归汉，西南夷遂通",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎归汉，西南夷遂通",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "夜郎归汉，西南夷遂通",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_007",
-   "subject": "person:GUI__p01",
-   "predicate": "封王",
-   "value_text": "汉封多同为王",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "封其为王",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    3
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "封其为王",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_008",
-   "subject": "place:yelang",
-   "predicate": "归汉时间",
-   "value_text": "元鼎六年归汉",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "元鼎六年",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "元鼎六年",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_009",
-   "subject": "place:yelang",
-   "predicate": "疆域",
-   "value_text": "控牂牁江",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "控牂牁江",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "控牂牁江",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_010",
-   "subject": "place:yelang",
-   "predicate": "汉使",
-   "value_text": "汉使至夜郎",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "迎汉使",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "迎汉使",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_011",
-   "subject": "place:yelang",
-   "predicate": "自大原因",
-   "value_text": "僻远未知汉广大",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "僻远未知汉之广大",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.6,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    5
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "僻远未知汉之广大",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_012",
-   "subject": "place:yelang",
-   "predicate": "贸易路线",
-   "value_text": "蜀布经夜郎入身毒",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "蜀布由此入身毒",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
-    4
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "蜀布由此入身毒",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_013",
-   "subject": "place:yelang",
-   "predicate": "郡治",
-   "value_text": "牂牁郡治夜郎",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "zangke",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "置牂牁郡",
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "九一八事变后，东北沦陷",
    "quote_status": "paraphrase_unverified",
    "layer": "inference",
-   "confidence": 0.5,
-   "scale": "province",
-   "note": "推测",
+   "confidence": 0.45,
+   "scale": "theater",
+   "note": "[auto] 补层 inference",
    "dims": [
-    3
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "置牂牁郡",
+   "_source_quote": "九一八事变后，东北沦陷",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_002",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "组建时间",
+   "value_text": "1936年扩编为联军",
+   "time": {
+    "era_text": "1936年",
+    "start": "1936-01-01",
+    "end": "1936-12-31",
+    "gregorian_year": 1936
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "1936年扩编为东北抗日联军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "1936年扩编为东北抗日联军",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_003",
+   "subject": "person:HEI__p01",
+   "predicate": "殉国时间",
+   "value_text": "1940年杨靖宇殉国",
+   "time": {
+    "era_text": "1940年",
+    "start": "1940-01-01",
+    "end": "1940-12-31",
+    "gregorian_year": 1940
+   },
+   "place": "changbai_shan",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "1940年杨靖宇殉国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "1940年杨靖宇殉国",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_004",
+   "subject": "event:ev_heilongjiang_kanglian_llm_04",
+   "predicate": "反攻行动",
+   "value_text": "配合苏军反攻东北",
+   "time": {
+    "era_text": "1945年",
+    "start": "1945-01-01",
+    "end": "1945-12-31",
+    "gregorian_year": 1945
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "1945年配合苏军反攻东北",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "1945年配合苏军反攻东北",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_005",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "兵力规模",
+   "value_text": "牵制大量日军",
+   "time": {
+    "era_text": "1936-1940",
+    "start": "1936"
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "牵制大量日军",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "牵制大量日军",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_006",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "战略作用",
+   "value_text": "支撑全国抗战",
+   "time": {
+    "era_text": "1936-1945",
+    "start": "1936"
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "支撑全国抗战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "支撑全国抗战",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_007",
+   "subject": "event:ev_heilongjiang_kanglian_llm_03",
+   "predicate": "殉国地点",
+   "value_text": "杨靖宇殉国于濛江",
+   "time": {
+    "era_text": "1940年",
+    "start": "1940-01-01",
+    "end": "1940-12-31",
+    "gregorian_year": 1940
+   },
+   "place": "changbai_shan",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "杨靖宇殉国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "杨靖宇殉国",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_008",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "活动区域",
+   "value_text": "转战松嫩平原、长白山区",
+   "time": {
+    "era_text": "1936-1940",
+    "start": "1936"
+   },
+   "place": "songnen_pingyuan",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "转战松嫩平原、长白山区",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    1,
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "转战松嫩平原、长白山区",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_014",
-   "subject": "place:yelang",
-   "predicate": "人口",
-   "value_text": "夜郎人口无载",
+   "id": "HEI_009",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "退入苏联",
+   "value_text": "余部退入苏联整训",
    "time": {
-    "era_text": "西汉",
-    "start": "-202"
+    "era_text": "1940年后",
+    "start": "1940"
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
+   "place": "sulian",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "余部退入苏联整训",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "余部退入苏联整训",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_010",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "领导人物",
+   "value_text": "杨靖宇、赵尚志、李兆麟领导",
+   "time": {
+    "era_text": "1936-1940",
+    "start": "1936"
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "杨靖宇、赵尚志、李兆麟等率部",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "杨靖宇、赵尚志、李兆麟等率部",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_011",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "部队来源",
+   "value_text": "由抗日游击队扩编",
+   "time": {
+    "era_text": "1936年",
+    "start": "1936-01-01",
+    "end": "1936-12-31",
+    "gregorian_year": 1936
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "中共满洲省委组建抗日游击队",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "theater",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "中共满洲省委组建抗日游击队",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_012",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "历史评价",
+   "value_text": "联军抗战贡献显著",
+   "time": {
+    "era_text": "现代",
+    "start": "2023"
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
+   "quote": "支撑全国抗战",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "学术观点",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "支撑全国抗战",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "HEI_013",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "predicate": "具体战斗",
+   "value_text": "具体战斗细节缺失",
+   "time": {
+    "era_text": "1936-1940",
+    "start": "1936"
+   },
+   "place": "baishan_heihe",
+   "source": "heilongjiang_kanglian_src_llm",
    "quote": "",
    "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0.0,
-   "scale": "province",
-   "note": "史料未载",
+   "scale": "theater",
+   "note": "史料未详",
    "dims": [
-    4
+    6
    ],
    "lead": {
-    "where": "汉书·地理志",
+    "where": "东北抗日联军档案",
     "skills": [
-     "历史人口学"
+     "历史档案检索"
     ],
-    "accept": "牂牁郡户口数"
+    "accept": "补充战斗记录"
    },
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "",
-   "dim_source": "declared",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   }
@@ -663,48 +581,97 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  "conflicts": [],
  "crossConflicts": [],
  "gaps": [
-  "GUI_014"
+  "HEI_013"
  ],
  "events": [
   {
-   "id": "ev_guizhou_yelang_llm_01",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "year": -111,
-   "era": "元鼎六年",
-   "title": "夜郎归汉",
-   "kind": "行政",
-   "text": "夜郎侯多同迎汉使，置牂牁郡",
+   "id": "ev_heilongjiang_kanglian_llm_01",
+   "subject": "event:ev_heilongjiang_kanglian_llm_01",
+   "year": 1931,
+   "era": "民国二十年",
+   "title": "九一八事变",
+   "kind": "战事",
+   "text": "日军侵占东北，东北沦陷",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_02",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "year": 1936,
+   "era": "民国二十五年",
+   "title": "东北抗日联军成立",
+   "kind": "建置",
+   "text": "中共满洲省委组建抗日联军",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_03",
+   "subject": "event:ev_heilongjiang_kanglian_llm_03",
+   "year": 1940,
+   "era": "民国二十九年",
+   "title": "杨靖宇殉国",
+   "kind": "战事",
+   "text": "杨靖宇在濛江牺牲",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_04",
+   "subject": "event:ev_heilongjiang_kanglian_llm_04",
+   "year": 1945,
+   "era": "民国三十四年",
+   "title": "配合苏军反攻",
+   "kind": "战事",
+   "text": "联军余部配合苏军解放东北",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
  "edges": [
   {
-   "from": "yelang",
-   "to": "zangke",
-   "type": "administrative",
-   "label": "置郡",
+   "from": "changbai_shan",
+   "to": "songnen_pingyuan",
+   "type": "military",
+   "label": "联军转战路线",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "songnen_pingyuan",
+   "to": "sulian",
+   "type": "military",
+   "label": "余部退入苏联",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
  "control": [
   {
-   "place_id": "yelang",
+   "place_id": "baishan_heihe",
    "party": "后世官修",
-   "start": -135,
-   "end": -25,
-   "basis": "auto: 场景主地点 yelang 叙事控制方=后世官修"
+   "start": 1931,
+   "end": 1945,
+   "basis": "auto: 场景主地点 baishan_heihe 叙事控制方=后世官修"
   }
  ],
  "control_seats": [],
  "control_years": [
-  -135,
-  -25
+  1931,
+  1945
  ],
  "vocab": {
   "layers": {
@@ -58916,6 +58883,66 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    18.0,
    135.1,
    53.6
+  ]
+ },
+ "wall": {
+  "_comment": "明代辽东镇边墙（九边之一）走向示意。非精确测绘，仅作历史地理标注。\n源出原 data/sarhu/places.json 的 wall 段（v0.38 抽出为独立资产，便于按场景注入）。\n只在 region ∈ 辽东体系 (liaobei/jianzhou/liaodong/liaonan/liaoxi) 的场景注入，\n避免唐/宋/壬辰等场景误显辽东边墙。",
+  "id": "liaodong_bianqiang",
+  "name": "辽东边墙",
+  "note": "明代辽东镇边墙走向示意，非精确测绘",
+  "path": [
+   [
+    124.6,
+    43.05
+   ],
+   [
+    124.35,
+    42.7
+   ],
+   [
+    124.15,
+    42.45
+   ],
+   [
+    124.05,
+    42.2
+   ],
+   [
+    124.2,
+    41.98
+   ],
+   [
+    124.3,
+    41.92
+   ],
+   [
+    124.15,
+    41.75
+   ],
+   [
+    124.3,
+    41.55
+   ],
+   [
+    124.45,
+    41.42
+   ],
+   [
+    124.55,
+    41.2
+   ],
+   [
+    124.75,
+    40.95
+   ],
+   [
+    124.85,
+    40.7
+   ],
+   [
+    124.45,
+    40.3
+   ]
   ]
  }
 };

@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "baishan_heihe",
+   "name": "白山黑水",
+   "type": "region",
+   "modern": "中国东北地区",
+   "note": "泛指东北山林",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "songnen_pingyuan",
+   "name": "松嫩平原",
+   "type": "region",
+   "modern": "中国黑龙江、吉林",
+   "note": "联军游击区域",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "changbai_shan",
+   "name": "长白山区",
+   "type": "region",
+   "modern": "中国吉林、辽宁",
+   "note": "联军游击区域",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "sulian",
+   "name": "苏联",
+   "type": "region",
+   "modern": "俄罗斯",
+   "note": "联军退入整训",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

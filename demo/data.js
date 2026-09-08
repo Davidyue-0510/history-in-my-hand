@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 245 个切片
+// 权威数据源：data/scenes.json 注册的 247 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 245 个切片",
+  "slice": "multi-scene · 247 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -44,11 +44,13 @@ window.SANDBOX_DATA = {
    "han_banchao_llm",
    "han_weihuo_llm",
    "heilongjiang_jin_llm",
+   "heilongjiang_kanglian_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
    "jiangxi_nanchang_llm",
    "jiangxi_ruijin_llm",
+   "jilin_bohai_llm",
    "jilin_gaogouli_llm",
    "jinshang_llm",
    "liangzhou_meeting_llm",
@@ -608,7 +610,9 @@ window.SANDBOX_DATA = {
   "guangxi_lingqu_llm",
   "hainan_hainandao_llm",
   "chongqing_peidu_llm",
-  "gansu_dunhuang_llm"
+  "gansu_dunhuang_llm",
+  "heilongjiang_kanglian_llm",
+  "jilin_bohai_llm"
  ],
  "vocab": {
   "layers": [
@@ -24060,12 +24064,11 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_yelang_llm",
    "primary_place": "yelang",
-   "vocab_pack": "inline:guizhou_yelang_llm",
+   "vocab_pack": "guizhou_yelang_llm",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
     1,
-    2,
     3,
     4,
     5,
@@ -24074,14 +24077,14 @@ window.SANDBOX_DATA = {
    "epoch": "han",
    "scale_tier": "strategic",
    "counts": {
-    "src": 2,
-    "place": 5,
-    "person": 3,
-    "assert": 16,
-    "conflict": 1,
-    "gap": 2,
+    "src": 1,
+    "place": 7,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
     "record": 11,
-    "scholarship": 2,
+    "scholarship": 1,
     "inference": 1
    }
   },
@@ -26940,6 +26943,71 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "heilongjiang_kanglian_llm": {
+   "key": "heilongjiang_kanglian_llm",
+   "scene_id": "heilongjiang_kanglian_llm",
+   "title": "东北抗日联军",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "liaobei",
+   "page": "heilongjiang_kanglian_llm.html",
+   "primary_place": "baishan_heihe",
+   "vocab_pack": "heilongjiang_kanglian_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "jilin_bohai_llm": {
+   "key": "jilin_bohai_llm",
+   "scene_id": "jilin_bohai_llm",
+   "title": "渤海国",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "jianzhou",
+   "page": "county.html?scene=jilin_bohai_llm",
+   "primary_place": "dongmou_shan",
+   "vocab_pack": "jilin_bohai_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -27187,7 +27255,9 @@ window.SANDBOX_DATA = {
   "guangxi_lingqu_llm": "slices/guangxi_lingqu_llm.js",
   "hainan_hainandao_llm": "slices/hainan_hainandao_llm.js",
   "chongqing_peidu_llm": "slices/chongqing_peidu_llm.js",
-  "gansu_dunhuang_llm": "slices/gansu_dunhuang_llm.js"
+  "gansu_dunhuang_llm": "slices/gansu_dunhuang_llm.js",
+  "heilongjiang_kanglian_llm": "slices/heilongjiang_kanglian_llm.js",
+  "jilin_bohai_llm": "slices/jilin_bohai_llm.js"
  },
  "corridors": [
   {

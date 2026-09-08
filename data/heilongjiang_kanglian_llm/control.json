@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "baishan_heihe",
+   "party": "后世官修",
+   "start": 1931,
+   "end": 1945,
+   "basis": "auto: 场景主地点 baishan_heihe 叙事控制方=后世官修"
+  }
+ ]
+}

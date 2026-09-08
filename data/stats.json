@@ -1,9 +1,9 @@
 {
-  "scenes_total": 245,
-  "historical": 236,
+  "scenes_total": 247,
+  "historical": 238,
   "fictional": 9,
-  "assertions_total": 3773,
-  "sources_total": 223,
+  "assertions_total": 3799,
+  "sources_total": 225,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -40,11 +40,13 @@
     "han_banchao_llm",
     "han_weihuo_llm",
     "heilongjiang_jin_llm",
+    "heilongjiang_kanglian_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
     "jiangxi_nanchang_llm",
     "jiangxi_ruijin_llm",
+    "jilin_bohai_llm",
     "jilin_gaogouli_llm",
     "jinshang_llm",
     "liangzhou_meeting_llm",
@@ -109,7 +111,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 350,
+  "leads_total": 351,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1282,7 +1284,7 @@
       "id": "guizhou_yelang_llm",
       "title": "汉通西南夷·夜郎（前135–前111）",
       "kind": "fusion",
-      "assertions": 16,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -1879,6 +1881,20 @@
       "kind": "tech",
       "assertions": 8,
       "factions": {}
+    },
+    {
+      "id": "heilongjiang_kanglian_llm",
+      "title": "东北抗日联军",
+      "kind": "battle",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jilin_bohai_llm",
+      "title": "渤海国",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2126,6 +2142,8 @@
     "guangxi_lingqu_llm": "灵渠",
     "hainan_hainandao_llm": "海南岛战役",
     "chongqing_peidu_llm": "重庆陪都",
-    "gansu_dunhuang_llm": "敦煌莫高窟"
+    "gansu_dunhuang_llm": "敦煌莫高窟",
+    "heilongjiang_kanglian_llm": "东北抗日联军",
+    "jilin_bohai_llm": "渤海国"
   }
 }

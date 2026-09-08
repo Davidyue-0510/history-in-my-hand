@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "dongmou_shan",
+   "name": "东牟山",
+   "type": "fortress",
+   "modern": "今中国吉林敦化",
+   "note": "大祚荣据此山建震国",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "huhan_zhou",
+   "name": "忽汗州",
+   "type": "region",
+   "modern": "今中国吉林敦化一带",
+   "note": "唐置忽汗州都督府",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

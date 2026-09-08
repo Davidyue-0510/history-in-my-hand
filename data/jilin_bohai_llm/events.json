@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_bohai_llm_01",
+   "subject": "event:ev_jilin_bohai_llm_01",
+   "year": 698,
+   "era": "唐圣历元年",
+   "title": "大祚荣建震国",
+   "kind": "建置",
+   "text": "大祚荣据东牟山自立为震国王",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_bohai_llm_02",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "year": 713,
+   "era": "唐开元元年",
+   "title": "唐册封渤海郡王",
+   "kind": "外交",
+   "text": "唐遣使册封大祚荣为渤海郡王",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_bohai_llm_03",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "year": 926,
+   "era": "辽天显元年",
+   "title": "渤海国灭亡",
+   "kind": "战事",
+   "text": "辽太祖灭渤海国",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

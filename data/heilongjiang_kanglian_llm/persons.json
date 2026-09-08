@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HEI__p01",
+   "name": "杨靖宇",
+   "role": "东北抗日联军第一路军总司令",
+   "note": "1940年殉国",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p02",
+   "name": "赵尚志",
+   "role": "东北抗日联军第三军军长",
+   "note": "联军主要领导人",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p03",
+   "name": "李兆麟",
+   "role": "东北抗日联军第三路军总指挥",
+   "note": "率部转战松嫩平原",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

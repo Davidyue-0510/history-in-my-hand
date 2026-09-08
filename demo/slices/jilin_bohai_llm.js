@@ -1,29 +1,23 @@
-// 本文件由 tools/build.py 自动生成（切片 guizhou_yelang_llm），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["guizhou_yelang_llm"]。
+// 本文件由 tools/build.py 自动生成（切片 jilin_bohai_llm），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["jilin_bohai_llm"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
+window.SANDBOX_SLICES["jilin_bohai_llm"] = {
  "meta": {
-  "kind": "fusion",
-  "region": "chuan_gui",
-  "province": "guizhou",
-  "title": "汉通西南夷·夜郎（前135–前111）",
-  "dossier_label": "guizhou_yelang_llm",
-  "subtitle": "",
-  "primary_place": "yelang",
-  "dossier_event": "event:ev_guizhou_yelang_llm_01",
-  "vocab_pack": "guizhou_yelang_llm",
+  "kind": "frontier",
+  "region": "jianzhou",
+  "province": "jilin",
+  "title": "渤海国",
+  "dossier_label": null,
+  "subtitle": null,
+  "primary_place": "dongmou_shan",
+  "dossier_event": "event:ev_jilin_bohai_llm_01",
+  "vocab_pack": "jilin_bohai_llm",
   "terrain_grid": "china_coarse",
-  "lead": "",
-  "parties_note": "",
-  "dims": [
-   1,
-   3,
-   4,
-   5,
-   6
-  ],
-  "epoch": "han",
-  "scale_tier": "strategic",
+  "lead": null,
+  "parties_note": null,
+  "subject_names": null,
+  "epoch": "tang",
+  "scale_tier": "operational",
   "strategic": {
    "political_cohesion": {
     "from": [
@@ -35,84 +29,76 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "制度+思想→汉置牂柯郡、封夜郎王，西南夷纳入边郡与羁縻双轨"
+    "note": "渤海国：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "material_logistics": {
     "from": [
-     "strategic",
-     "doctrine"
+     "tech",
+     "economy"
     ],
     "from_dims": [
      2,
      3
     ],
     "layer": "inference",
-    "note": "技術+制度→西南夷道自僰道指牂柯江，巴蜀物资与军镇连线"
+    "note": "渤海国：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "population_mobilization": {
     "from": [
-     "strategic",
-     "doctrine"
+     "society"
     ],
     "from_dims": [
-     4,
-     3
+     4
     ],
     "layer": "inference",
-    "note": "社會+制度→夜郎诸部归附、汉民与夷人杂处，边郡编户"
+    "note": "渤海国：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "geopolitical_strategy": {
     "from": [
      "strategic",
-     "doctrine"
+     "international"
     ],
     "from_dims": [
-     1,
-     3
+     6,
+     5
     ],
     "layer": "inference",
-    "note": "地理+制度→扼牂柯江—滇黔通道，控西南夷与交趾—巴蜀三角"
+    "note": "渤海国：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
    }
   },
-  "subject_names": [
-   "person:GUI__p01",
-   "person:GUI__p02",
-   "person:GUI__p03",
-   "place:yelang",
-   "place:zangke",
-   "place:qielan",
-   "place:bodaozhi",
-   "place:zangkejiang",
-   "event:ev_guizhou_yelang_llm_01",
-   "event:ev_guizhou_yelang_llm_02",
-   "event:ev_guizhou_yelang_llm_03"
+  "dims": [
+   1,
+   3,
+   4,
+   5,
+   6
   ],
-  "page": "county.html?scene=guizhou_yelang_llm",
-  "key": "guizhou_yelang_llm",
-  "scene_id": "guizhou_yelang_llm"
+  "page": "county.html?scene=jilin_bohai_llm",
+  "key": "jilin_bohai_llm",
+  "scene_id": "jilin_bohai_llm"
  },
  "sources": [
   {
-   "id": "guizhou_yelang_src_llm",
-   "title": "夜郎史料摘录",
+   "id": "jilin_bohai_src_llm",
+   "title": "渤海国史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
    "compiler": "后世官修",
-   "period": "汉",
+   "period": "唐",
    "note": ""
   }
  ],
  "places": [
   {
-   "id": "yelang",
-   "name": "夜郎",
-   "type": "region",
-   "modern": "今中国贵州西部",
-   "note": "西汉夜郎国地",
+   "id": "dongmou_shan",
+   "name": "东牟山",
+   "type": "fortress",
+   "modern": "今中国吉林敦化",
+   "note": "大祚荣据此山建震国",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -120,83 +106,13 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "zangke",
-   "name": "牂牁郡",
+   "id": "huhan_zhou",
+   "name": "忽汗州",
    "type": "region",
-   "modern": "今中国贵州西部",
-   "note": "元鼎六年置",
+   "modern": "今中国吉林敦化一带",
+   "note": "唐置忽汗州都督府",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "jiaozhi",
-   "name": "交趾",
-   "type": "region",
-   "modern": "今越南北部",
-   "note": "夜郎东接",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "dian",
-   "name": "滇国",
-   "type": "region",
-   "modern": "今中国云南",
-   "note": "夜郎西有",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "qiongdu",
-   "name": "邛都",
-   "type": "region",
-   "modern": "今中国四川西南",
-   "note": "夜郎北有",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "zangkejiang",
-   "name": "牂牁江",
-   "type": "river",
-   "modern": "今中国贵州",
-   "note": "夜郎控此江",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "shendu",
-   "name": "身毒",
-   "type": "region",
-   "modern": "今印度",
-   "note": "蜀布入身毒",
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -206,23 +122,34 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  ],
  "persons": [
   {
-   "id": "GUI__p01",
-   "name": "多同",
-   "role": "夜郎侯",
-   "note": "迎汉使，受封为王",
+   "id": "JIL__p01",
+   "name": "大祚荣",
+   "role": "粟末靺鞨首领、震国王",
+   "note": "渤海国建立者",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "influence": 2
+   "influence": 0
   },
   {
-   "id": "GUI__p02",
-   "name": "汉武帝",
-   "role": "汉帝",
-   "note": "元鼎年间开拓西南夷",
+   "id": "JIL__p02",
+   "name": "唐玄宗",
+   "role": "唐朝皇帝",
+   "note": "册封大祚荣为渤海郡王",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 0
+  },
+  {
+   "id": "JIL__p03",
+   "name": "辽太祖",
+   "role": "辽朝皇帝",
+   "note": "灭渤海国",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
@@ -230,201 +157,142 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  ],
  "assertions": [
   {
-   "id": "GUI_001",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "predicate": "置郡",
-   "value_text": "元鼎六年置牂牁郡",
+   "id": "JIL_001",
+   "subject": "event:ev_jilin_bohai_llm_01",
+   "predicate": "建国",
+   "value_text": "大祚荣据东牟山自立为震国王",
    "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
+    "era_text": "唐圣历元年",
+    "start": "698-01-01",
+    "end": "698-12-31",
+    "gregorian_year": 698
    },
-   "place": "zangke",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "置牂牁郡，封其为王",
+   "place": "dongmou_shan",
+   "source": "jilin_bohai_src_llm",
+   "quote": "唐圣历元年，粟末靺鞨首领大祚荣据东牟山，自立为震国王",
    "quote_status": "paraphrase_unverified",
    "layer": "scholarship",
-   "confidence": 0.4,
+   "confidence": 0.45,
    "scale": "province",
    "note": "[auto] 补层 scholarship",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "唐圣历元年，粟末靺鞨首领大祚荣据东牟山，自立为震国王",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_002",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "册封",
+   "value_text": "唐册封大祚荣为渤海郡王",
+   "time": {
+    "era_text": "唐开元元年",
+    "start": "713-01-01",
+    "end": "713-12-31",
+    "gregorian_year": 713
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "开元元年，唐遣使册封大祚荣为渤海郡王",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
    "dims": [
     3,
     6
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "置牂牁郡，封其为王",
+   "_source_quote": "开元元年，唐遣使册封大祚荣为渤海郡王",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_002",
-   "subject": "person:GUI__p01",
-   "predicate": "迎汉使",
-   "value_text": "夜郎侯多同迎汉使",
+   "id": "JIL_003",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "predicate": "灭亡",
+   "value_text": "辽太祖灭渤海国",
    "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
+    "era_text": "926年",
+    "start": "926-01-01",
+    "end": "926-12-31",
+    "gregorian_year": 926
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎侯多同迎汉使",
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "926年为辽太祖所灭",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
+   "confidence": 0.9,
+   "scale": "empire",
    "note": "",
    "dims": [
     6
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "夜郎侯多同迎汉使",
+   "_source_quote": "926年为辽太祖所灭",
    "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_003",
-   "subject": "place:yelang",
-   "predicate": "地理位置",
-   "value_text": "东接交趾，西有滇国，北有邛都",
+   "id": "JIL_004",
+   "subject": "place:dongmou_shan",
+   "predicate": "位置",
+   "value_text": "东牟山在今吉林敦化",
    "time": {
-    "era_text": "西汉",
-    "start": "-202"
+    "era_text": "",
+    "start": ""
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "东接交趾，西有滇国，北有邛都",
+   "place": "dongmou_shan",
+   "source": "jilin_bohai_src_llm",
+   "quote": "据东牟山（今吉林敦化）",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.9,
+   "confidence": 0.8,
    "scale": "province",
    "note": "",
    "dims": [
     1
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "东接交趾，西有滇国，北有邛都",
+   "_source_quote": "据东牟山（今吉林敦化）",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_004",
-   "subject": "place:yelang",
-   "predicate": "物产",
-   "value_text": "临邛竹杖、蜀布由此入身毒",
+   "id": "JIL_005",
+   "subject": "place:huhan_zhou",
+   "predicate": "行政隶属",
+   "value_text": "渤海隶忽汗州都督府",
    "time": {
-    "era_text": "西汉",
-    "start": "-202"
+    "era_text": "唐开元元年",
+    "start": "713-01-01",
+    "end": "713-12-31",
+    "gregorian_year": 713
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "临邛竹杖、蜀布由此入身毒",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
-    4
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "临邛竹杖、蜀布由此入身毒",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_005",
-   "subject": "place:yelang",
-   "predicate": "自大",
-   "value_text": "夜郎自大，因僻远不知汉广大",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎自大，盖因僻远未知汉之广大",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.6,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    5
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "夜郎自大，盖因僻远未知汉之广大",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_006",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "predicate": "影响",
-   "value_text": "夜郎归汉，西南夷遂通",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "夜郎归汉，西南夷遂通",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "夜郎归汉，西南夷遂通",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_007",
-   "subject": "person:GUI__p01",
-   "predicate": "封王",
-   "value_text": "汉封多同为王",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "封其为王",
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "隶忽汗州都督",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
@@ -434,228 +302,323 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
     3
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "封其为王",
+   "_source_quote": "隶忽汗州都督",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_008",
-   "subject": "place:yelang",
-   "predicate": "归汉时间",
-   "value_text": "元鼎六年归汉",
+   "id": "JIL_006",
+   "subject": "event:ev_jilin_bohai_llm_01",
+   "predicate": "国号",
+   "value_text": "初称震国，后称渤海",
    "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
+    "era_text": "唐圣历元年",
+    "start": "698-01-01",
+    "end": "698-12-31",
+    "gregorian_year": 698
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "元鼎六年",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "元鼎六年",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_009",
-   "subject": "place:yelang",
-   "predicate": "疆域",
-   "value_text": "控牂牁江",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "控牂牁江",
+   "place": "dongmou_shan",
+   "source": "jilin_bohai_src_llm",
+   "quote": "自立为震国王，称渤海",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.7,
    "scale": "province",
    "note": "",
    "dims": [
-    1
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "控牂牁江",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_010",
-   "subject": "place:yelang",
-   "predicate": "汉使",
-   "value_text": "汉使至夜郎",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "迎汉使",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.8,
-   "scale": "province",
-   "note": "",
-   "dims": [
     6
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "迎汉使",
+   "_source_quote": "自立为震国王，称渤海",
    "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_011",
-   "subject": "place:yelang",
-   "predicate": "自大原因",
-   "value_text": "僻远未知汉广大",
+   "id": "JIL_007",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "册封意义",
+   "value_text": "唐承认渤海国地位",
    "time": {
-    "era_text": "西汉",
-    "start": "-202"
+    "era_text": "唐开元元年",
+    "start": "713-01-01",
+    "end": "713-12-31",
+    "gregorian_year": 713
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "僻远未知汉之广大",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.6,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    5
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "僻远未知汉之广大",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_012",
-   "subject": "place:yelang",
-   "predicate": "贸易路线",
-   "value_text": "蜀布经夜郎入身毒",
-   "time": {
-    "era_text": "西汉",
-    "start": "-202"
-   },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "蜀布由此入身毒",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.7,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
-    4
-   ],
-   "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "蜀布由此入身毒",
-   "dim_source": "declared",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "GUI_013",
-   "subject": "place:yelang",
-   "predicate": "郡治",
-   "value_text": "牂牁郡治夜郎",
-   "time": {
-    "era_text": "元鼎六年",
-    "start": "-111-01-01",
-    "end": "-111-12-31",
-    "gregorian_year": -111
-   },
-   "place": "zangke",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "置牂牁郡",
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "册封大祚荣为渤海郡王",
    "quote_status": "paraphrase_unverified",
    "layer": "inference",
-   "confidence": 0.5,
-   "scale": "province",
-   "note": "推测",
+   "confidence": 0.6,
+   "scale": "empire",
+   "note": "",
    "dims": [
-    3
+    3,
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "置牂牁郡",
+   "_source_quote": "册封大祚荣为渤海郡王",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "GUI_014",
-   "subject": "place:yelang",
-   "predicate": "人口",
-   "value_text": "夜郎人口无载",
+   "id": "JIL_008",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "predicate": "灭亡原因",
+   "value_text": "辽太祖灭渤海",
    "time": {
-    "era_text": "西汉",
-    "start": "-202"
+    "era_text": "926年",
+    "start": "926-01-01",
+    "end": "926-12-31",
+    "gregorian_year": 926
    },
-   "place": "yelang",
-   "source": "guizhou_yelang_src_llm",
-   "quote": "",
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "926年为辽太祖所灭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "926年为辽太祖所灭",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_009",
+   "subject": "event:ev_jilin_bohai_llm_01",
+   "predicate": "民族",
+   "value_text": "粟末靺鞨首领大祚荣",
+   "time": {
+    "era_text": "唐圣历元年",
+    "start": "698-01-01",
+    "end": "698-12-31",
+    "gregorian_year": 698
+   },
+   "place": "dongmou_shan",
+   "source": "jilin_bohai_src_llm",
+   "quote": "粟末靺鞨首领大祚荣",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    4
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "粟末靺鞨首领大祚荣",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_010",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "制度",
+   "value_text": "渤海仿唐制",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "仿唐制",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    3
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "仿唐制",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_011",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "外交",
+   "value_text": "渤海通聘日本",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "通聘日本",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    3,
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "通聘日本",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_012",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "文化",
+   "value_text": "渤海称海东盛国",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "文化称海东盛国",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    5
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "文化称海东盛国",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_013",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "predicate": "疆域",
+   "value_text": "全盛时五京十五府六十二州",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "五京十五府六十二州",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.8,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    1
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "五京十五府六十二州",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_014",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "predicate": "灭亡时间",
+   "value_text": "926年渤海亡",
+   "time": {
+    "era_text": "926年",
+    "start": "926-01-01",
+    "end": "926-12-31",
+    "gregorian_year": 926
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "926年为辽太祖所灭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "empire",
+   "note": "",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "926年为辽太祖所灭",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_015",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "predicate": "灭亡影响",
+   "value_text": "渤海国灭亡",
+   "time": {
+    "era_text": "926年",
+    "start": "926-01-01",
+    "end": "926-12-31",
+    "gregorian_year": 926
+   },
+   "place": "huhan_zhou",
+   "source": "jilin_bohai_src_llm",
+   "quote": "926年为辽太祖所灭",
    "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0.0,
-   "scale": "province",
-   "note": "史料未载",
+   "scale": "empire",
+   "note": "",
    "dims": [
-    4
+    6
    ],
    "lead": {
-    "where": "汉书·地理志",
+    "where": "渤海灭亡后遗民去向",
     "skills": [
-     "历史人口学"
+     "历史地理",
+     "民族史"
     ],
-    "accept": "牂牁郡户口数"
+    "accept": "进一步研究"
    },
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "",
-   "dim_source": "declared",
+   "_source_quote": "926年为辽太祖所灭",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   }
@@ -663,48 +626,63 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
  "conflicts": [],
  "crossConflicts": [],
  "gaps": [
-  "GUI_014"
+  "JIL_015"
  ],
  "events": [
   {
-   "id": "ev_guizhou_yelang_llm_01",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "year": -111,
-   "era": "元鼎六年",
-   "title": "夜郎归汉",
-   "kind": "行政",
-   "text": "夜郎侯多同迎汉使，置牂牁郡",
+   "id": "ev_jilin_bohai_llm_01",
+   "subject": "event:ev_jilin_bohai_llm_01",
+   "year": 698,
+   "era": "唐圣历元年",
+   "title": "大祚荣建震国",
+   "kind": "建置",
+   "text": "大祚荣据东牟山自立为震国王",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null
-  }
- ],
- "edges": [
+  },
   {
-   "from": "yelang",
-   "to": "zangke",
-   "type": "administrative",
-   "label": "置郡",
+   "id": "ev_jilin_bohai_llm_02",
+   "subject": "event:ev_jilin_bohai_llm_02",
+   "year": 713,
+   "era": "唐开元元年",
+   "title": "唐册封渤海郡王",
+   "kind": "外交",
+   "text": "唐遣使册封大祚荣为渤海郡王",
    "_source_idx": 0,
-   "_source_name": "夜郎史料摘录",
+   "_source_name": "渤海国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_bohai_llm_03",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "year": 926,
+   "era": "辽天显元年",
+   "title": "渤海国灭亡",
+   "kind": "战事",
+   "text": "辽太祖灭渤海国",
+   "_source_idx": 0,
+   "_source_name": "渤海国史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
+ "edges": [],
  "control": [
   {
-   "place_id": "yelang",
+   "place_id": "dongmou_shan",
    "party": "后世官修",
-   "start": -135,
-   "end": -25,
-   "basis": "auto: 场景主地点 yelang 叙事控制方=后世官修"
+   "start": 698,
+   "end": 926,
+   "basis": "auto: 场景主地点 dongmou_shan 叙事控制方=后世官修"
   }
  ],
  "control_seats": [],
  "control_years": [
-  -135,
-  -25
+  698,
+  926
  ],
  "vocab": {
   "layers": {
@@ -58916,6 +58894,66 @@ window.SANDBOX_SLICES["guizhou_yelang_llm"] = {
    18.0,
    135.1,
    53.6
+  ]
+ },
+ "wall": {
+  "_comment": "明代辽东镇边墙（九边之一）走向示意。非精确测绘，仅作历史地理标注。\n源出原 data/sarhu/places.json 的 wall 段（v0.38 抽出为独立资产，便于按场景注入）。\n只在 region ∈ 辽东体系 (liaobei/jianzhou/liaodong/liaonan/liaoxi) 的场景注入，\n避免唐/宋/壬辰等场景误显辽东边墙。",
+  "id": "liaodong_bianqiang",
+  "name": "辽东边墙",
+  "note": "明代辽东镇边墙走向示意，非精确测绘",
+  "path": [
+   [
+    124.6,
+    43.05
+   ],
+   [
+    124.35,
+    42.7
+   ],
+   [
+    124.15,
+    42.45
+   ],
+   [
+    124.05,
+    42.2
+   ],
+   [
+    124.2,
+    41.98
+   ],
+   [
+    124.3,
+    41.92
+   ],
+   [
+    124.15,
+    41.75
+   ],
+   [
+    124.3,
+    41.55
+   ],
+   [
+    124.45,
+    41.42
+   ],
+   [
+    124.55,
+    41.2
+   ],
+   [
+    124.75,
+    40.95
+   ],
+   [
+    124.85,
+    40.7
+   ],
+   [
+    124.45,
+    40.3
+   ]
   ]
  }
 };

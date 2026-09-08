@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_heilongjiang_kanglian_llm_01",
+   "subject": "event:ev_heilongjiang_kanglian_llm_01",
+   "year": 1931,
+   "era": "民国二十年",
+   "title": "九一八事变",
+   "kind": "战事",
+   "text": "日军侵占东北，东北沦陷",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_02",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "year": 1936,
+   "era": "民国二十五年",
+   "title": "东北抗日联军成立",
+   "kind": "建置",
+   "text": "中共满洲省委组建抗日联军",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_03",
+   "subject": "event:ev_heilongjiang_kanglian_llm_03",
+   "year": 1940,
+   "era": "民国二十九年",
+   "title": "杨靖宇殉国",
+   "kind": "战事",
+   "text": "杨靖宇在濛江牺牲",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_kanglian_llm_04",
+   "subject": "event:ev_heilongjiang_kanglian_llm_04",
+   "year": 1945,
+   "era": "民国三十四年",
+   "title": "配合苏军反攻",
+   "kind": "战事",
+   "text": "联军余部配合苏军解放东北",
+   "_source_idx": 0,
+   "_source_name": "东北抗日联军史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
