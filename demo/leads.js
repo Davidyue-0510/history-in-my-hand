@@ -1362,6 +1362,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "GAN_015",
+   "scene": "gansu_jiayuguan",
+   "subject": "place:jiayuguan",
+   "title": "具體築城工藝未詳",
+   "missing": "考古 / 文獻考證",
+   "where": "嘉峪關地方志",
+   "skills": [
+    "考古",
+    "文獻考證"
+   ],
+   "accept": "補充築城技術細節",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "GRAND_CANALG01",
    "scene": "grand_canal",
    "subject": "event:gc_sui",
@@ -1421,6 +1437,21 @@ window.SANDBOX_LEADS = {
     "军事史分析"
    ],
    "accept": "需要更多文献或考古证据核实三方兵力实数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "GUA_014",
+   "scene": "guangdong_guangzhou",
+   "subject": "event:ev_guangdong_guangzhou_02",
+   "title": "十三行具体数目不详",
+   "missing": "历史考证",
+   "where": "广州地方志或档案",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "十三行具体数目",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
@@ -1850,6 +1881,22 @@ window.SANDBOX_LEADS = {
   },
   {
    "id": "HEB_014",
+   "scene": "hebei_shanhaiguan",
+   "subject": "place:shanhaiguan",
+   "title": "具体规制不详",
+   "missing": "历史地理 / 考古学",
+   "where": "山海关地方志或明代档案",
+   "skills": [
+    "历史地理",
+    "考古学"
+   ],
+   "accept": "补充关城形制",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "HEB_014",
    "scene": "hebei_zhaozhou",
    "subject": "event:ev_hebei_zhaozhou_01",
    "title": "具体工艺未详",
@@ -2163,6 +2210,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 9
   },
   {
+   "id": "HUB_011",
+   "scene": "hubei_zenghouyi",
+   "subject": "event:ev_hubei_zenghouyi_02",
+   "title": "具体铸造年份不明。",
+   "missing": "考古学 / 古文字学",
+   "where": "曾侯乙墓出土铭文及碳十四测年",
+   "skills": [
+    "考古学",
+    "古文字学"
+   ],
+   "accept": "确定编钟具体铸造年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "HULAOG01",
    "scene": "hulao",
    "subject": "event:hl_wei",
@@ -2333,6 +2396,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 17
+  },
+  {
+   "id": "JIA_012",
+   "scene": "jiangxi_bailudong",
+   "subject": "event:ev_jiangxi_bailudong_02",
+   "title": "具体建筑布局不详",
+   "missing": "文献考证",
+   "where": "地方志或书院志",
+   "skills": [
+    "文献考证"
+   ],
+   "accept": "书院建筑复原",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "JIA_014",
@@ -4062,6 +4140,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 84
   },
   {
+   "id": "SHA_015",
+   "scene": "shandong_jixia",
+   "subject": "event:ev_shandong_jixia_01",
+   "title": "具体存续不详",
+   "missing": "考古 / 文献考据",
+   "where": "史料未载学宫存续年限",
+   "skills": [
+    "考古",
+    "文献考据"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "SHA_011",
    "scene": "shandong_kongzi",
    "subject": "person:SHA__p01",
@@ -4186,6 +4280,38 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SHA_011",
+   "scene": "shanxi_yungang",
+   "subject": "event:ev_shanxi_yungang_01",
+   "title": "史料未载具体动机",
+   "missing": "佛教史 / 政治史",
+   "where": "魏书·释老志",
+   "skills": [
+    "佛教史",
+    "政治史"
+   ],
+   "accept": "结合文成帝复兴佛法背景推断",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shanxi_yungang",
+   "subject": "event:ev_shanxi_yungang_01",
+   "title": "史料未载工匠来源",
+   "missing": "考古学 / 美术史",
+   "where": "云冈石窟考古报告",
+   "skills": [
+    "考古学",
+    "美术史"
+   ],
+   "accept": "通过风格分析比对凉州工匠影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SHAQIUG01",
@@ -5969,6 +6095,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "YUN_014",
+   "scene": "yunnan_dianmian",
+   "subject": "event:ev_yunnan_dianmian_01",
+   "title": "具体伤亡数字不详",
+   "missing": "档案检索 / 统计",
+   "where": "云南省档案馆",
+   "skills": [
+    "档案检索",
+    "统计"
+   ],
+   "accept": "民工伤亡具体数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "YUN_010",
    "scene": "yunnan_nanzhao_llm",
    "subject": "event:ev_yunnan_nanzhao_llm_02",
@@ -6201,6 +6343,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "ZHE_015",
+   "scene": "zhejiang_longquan",
+   "subject": "place:longquan",
+   "title": "龙泉窑址分布范围待考",
+   "missing": "考古调查 / 遥感分析",
+   "where": "龙泉溪两岸",
+   "skills": [
+    "考古调查",
+    "遥感分析"
+   ],
+   "accept": "确定窑址分布范围",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "ZHENG2",

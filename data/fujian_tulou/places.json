@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "minxi",
+   "name": "闽西",
+   "type": "region",
+   "modern": "今福建西部",
+   "note": "客家聚居山区",
+   "_source_idx": 0,
+   "_source_name": "《福建通志》与客家土楼",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

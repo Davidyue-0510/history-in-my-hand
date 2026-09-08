@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_gansu_jiayuguan_01",
+   "subject": "event:ev_gansu_jiayuguan_01",
+   "year": 1372,
+   "era": "洪武五年",
+   "title": "馮勝下河西",
+   "kind": "戰事",
+   "text": "明軍平定河西，置關築城",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_gansu_jiayuguan_02",
+   "subject": "event:ev_gansu_jiayuguan_02",
+   "year": 1372,
+   "era": "洪武五年",
+   "title": "嘉峪關築城",
+   "kind": "建置",
+   "text": "倚山築城，扼西域孔道",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

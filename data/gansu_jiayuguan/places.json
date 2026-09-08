@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "jiayuguan",
+   "name": "嘉峪關",
+   "type": "fortress",
+   "modern": "今中國甘肅嘉峪關市",
+   "note": "明長城西端鎖鑰",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiuquan",
+   "name": "酒泉",
+   "type": "city",
+   "modern": "今中國甘肅酒泉市",
+   "note": "關城所在",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hexi",
+   "name": "河西",
+   "type": "region",
+   "modern": "今中國甘肅河西走廊",
+   "note": "馮勝下河西",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiayushan",
+   "name": "嘉峪山",
+   "type": "region",
+   "modern": "今中國甘肅嘉峪關市西南",
+   "note": "築城倚此山",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与嘉峪关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

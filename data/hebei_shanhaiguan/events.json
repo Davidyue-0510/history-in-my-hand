@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_hebei_shanhaiguan_01",
+   "subject": "event:ev_hebei_shanhaiguan_01",
+   "year": 1381,
+   "era": "洪武十四年",
+   "title": "徐达筑山海关",
+   "kind": "建置",
+   "text": "徐达设关城于榆关故地",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

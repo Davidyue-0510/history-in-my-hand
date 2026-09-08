@@ -1,9 +1,9 @@
 {
-  "scenes_total": 288,
-  "historical": 279,
+  "scenes_total": 298,
+  "historical": 289,
   "fictional": 9,
-  "assertions_total": 4346,
-  "sources_total": 265,
+  "assertions_total": 4484,
+  "sources_total": 275,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -30,11 +30,14 @@
     "fujian_minyue",
     "fujian_qijiguang_llm",
     "fujian_quanzhou_llm",
+    "fujian_tulou",
     "fujian_xiamen_llm",
     "gansu_dunhuang_llm",
     "gansu_hexi",
     "gansu_hexizhen_llm",
+    "gansu_jiayuguan",
     "guandu_llm",
+    "guangdong_guangzhou",
     "guangdong_nanyue",
     "guangxi_lingqu",
     "guangxi_lingqu_llm",
@@ -51,15 +54,18 @@
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
+    "hebei_shanhaiguan",
     "hebei_zhaozhou",
     "heilongjiang_jin",
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
+    "hubei_zenghouyi",
     "hunan_changsha_llm",
     "hunan_mawangdui_llm",
     "hunan_yuelu",
+    "jiangxi_bailudong",
     "jiangxi_jingdezhen",
     "jiangxi_nanchang_llm",
     "jiangxi_ruijin_llm",
@@ -94,12 +100,14 @@
     "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
     "san_guo",
+    "shandong_jixia",
     "shandong_kongzi",
     "shanghai_kaibu",
     "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
     "shanxi_jinshang_llm",
     "shanxi_sanjiafenjin",
+    "shanxi_yungang",
     "shu_han_found_llm",
     "sichuan_dujiangyan_llm",
     "sichuan_zhuge",
@@ -146,14 +154,16 @@
     "yuelu_academy_llm",
     "yunnan_dali",
     "yunnan_dali_llm",
+    "yunnan_dianmian",
     "yunnan_nanzhao_llm",
     "zhejiang_linan",
     "zhejiang_linan_llm",
+    "zhejiang_longquan",
     "zheng_chenggong_taiwan_llm",
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 406,
+  "leads_total": 416,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2221,6 +2231,76 @@
       "kind": "frontier",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "shandong_jixia",
+      "title": "战国·稷下学宫（诸子百家争鸣）",
+      "kind": "thought",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "hebei_shanhaiguan",
+      "title": "明·山海关筑城（明长城东端锁钥）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hubei_zenghouyi",
+      "title": "战国·曾侯乙编钟（青铜礼乐之极）",
+      "kind": "tech",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "shanxi_yungang",
+      "title": "北魏·云冈石窟（昙曜五窟）",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "gansu_jiayuguan",
+      "title": "明·嘉峪关筑城（明长城西端锁钥）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "guangdong_guangzhou",
+      "title": "清·广州十三行（一口通商）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "fujian_tulou",
+      "title": "明清·福建土楼（客家夯土聚族）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "jiangxi_bailudong",
+      "title": "宋·白鹿洞书院（朱熹定学规）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_dianmian",
+      "title": "抗战·滇缅公路（西南生命线）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "zhejiang_longquan",
+      "title": "宋·龙泉窑（青瓷之冠）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2511,6 +2591,16 @@
     "xianggang_tunmen": "明·屯门海防（明）",
     "aomen_aomen": "明·澳门赁居（明）",
     "xizang_wencheng": "唐·文成公主入藏（唐）",
-    "taiwan_zhengchenggong": "明·郑成功收复台湾（明郑）"
+    "taiwan_zhengchenggong": "明·郑成功收复台湾（明郑）",
+    "shandong_jixia": "战国·稷下学宫（诸子百家争鸣）",
+    "hebei_shanhaiguan": "明·山海关筑城（明长城东端锁钥）",
+    "hubei_zenghouyi": "战国·曾侯乙编钟（青铜礼乐之极）",
+    "shanxi_yungang": "北魏·云冈石窟（昙曜五窟）",
+    "gansu_jiayuguan": "明·嘉峪关筑城（明长城西端锁钥）",
+    "guangdong_guangzhou": "清·广州十三行（一口通商）",
+    "fujian_tulou": "明清·福建土楼（客家夯土聚族）",
+    "jiangxi_bailudong": "宋·白鹿洞书院（朱熹定学规）",
+    "yunnan_dianmian": "抗战·滇缅公路（西南生命线）",
+    "zhejiang_longquan": "宋·龙泉窑（青瓷之冠）"
   }
 }

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_bailudong_01",
+   "subject": "event:ev_jiangxi_bailudong_01",
+   "year": 1179,
+   "era": "淳熙六年",
+   "title": "朱熹知南康军",
+   "kind": "行政",
+   "text": "朱熹出任南康军知军，访白鹿洞遗址",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_bailudong_02",
+   "subject": "event:ev_jiangxi_bailudong_02",
+   "year": 1180,
+   "era": "淳熙七年",
+   "title": "复兴白鹿洞书院",
+   "kind": "建置",
+   "text": "重建书院，聚徒讲习，置田建屋",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_bailudong_03",
+   "subject": "event:ev_jiangxi_bailudong_03",
+   "year": 1180,
+   "era": "淳熙七年",
+   "title": "颁布白鹿洞学规",
+   "kind": "制度",
+   "text": "朱熹手订学规，以五教为纲",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

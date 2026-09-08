@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "bailudong",
+   "name": "白鹿洞",
+   "type": "fortress",
+   "modern": "今中国江西省九江市庐山市",
+   "note": "书院所在",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lushan",
+   "name": "庐山",
+   "type": "region",
+   "modern": "今中国江西省九江市",
+   "note": "山名",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "nankangjun",
+   "name": "南康军",
+   "type": "city",
+   "modern": "今中国江西省庐山市",
+   "note": "军治",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "HEB__p01",
+   "name": "徐达",
+   "role": "魏国公，明开国元勋",
+   "note": "经略北边，建山海关",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

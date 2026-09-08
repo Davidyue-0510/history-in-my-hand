@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_yungang_01",
+   "subject": "event:ev_shanxi_yungang_01",
+   "year": 460,
+   "era": "北魏文成帝和平初",
+   "title": "昙曜开凿五窟",
+   "kind": "建置",
+   "text": "于武州塞凿山开窟五所",
+   "_source_idx": 0,
+   "_source_name": "《魏书·释老志》与云冈石窟",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

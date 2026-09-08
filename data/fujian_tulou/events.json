@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_tulou_01",
+   "subject": "event:ev_fujian_tulou_01",
+   "year": 1368,
+   "era": "明初",
+   "title": "客家南徙闽西",
+   "kind": "其他",
+   "text": "客家南徙，依山结寨",
+   "_source_idx": 0,
+   "_source_name": "《福建通志》与客家土楼",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_tulou_02",
+   "subject": "event:ev_fujian_tulou_02",
+   "year": 1644,
+   "era": "明清之际",
+   "title": "土楼兴建",
+   "kind": "建置",
+   "text": "夯土为垣，环楼而居",
+   "_source_idx": 0,
+   "_source_name": "《福建通志》与客家土楼",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

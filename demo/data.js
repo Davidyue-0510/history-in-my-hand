@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 288 个切片
+// 权威数据源：data/scenes.json 注册的 298 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 288 个切片",
+  "slice": "multi-scene · 298 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -34,11 +34,14 @@ window.SANDBOX_DATA = {
    "fujian_minyue",
    "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
+   "fujian_tulou",
    "fujian_xiamen_llm",
    "gansu_dunhuang_llm",
    "gansu_hexi",
    "gansu_hexizhen_llm",
+   "gansu_jiayuguan",
    "guandu_llm",
+   "guangdong_guangzhou",
    "guangdong_nanyue",
    "guangxi_lingqu",
    "guangxi_lingqu_llm",
@@ -55,15 +58,18 @@ window.SANDBOX_DATA = {
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
+   "hebei_shanhaiguan",
    "hebei_zhaozhou",
    "heilongjiang_jin",
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
+   "hubei_zenghouyi",
    "hunan_changsha_llm",
    "hunan_mawangdui_llm",
    "hunan_yuelu",
+   "jiangxi_bailudong",
    "jiangxi_jingdezhen",
    "jiangxi_nanchang_llm",
    "jiangxi_ruijin_llm",
@@ -98,12 +104,14 @@ window.SANDBOX_DATA = {
    "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
    "san_guo",
+   "shandong_jixia",
    "shandong_kongzi",
    "shanghai_kaibu",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shanxi_jinshang_llm",
    "shanxi_sanjiafenjin",
+   "shanxi_yungang",
    "shu_han_found_llm",
    "sichuan_dujiangyan_llm",
    "sichuan_zhuge",
@@ -150,9 +158,11 @@ window.SANDBOX_DATA = {
    "yuelu_academy_llm",
    "yunnan_dali",
    "yunnan_dali_llm",
+   "yunnan_dianmian",
    "yunnan_nanzhao_llm",
    "zhejiang_linan",
    "zhejiang_linan_llm",
+   "zhejiang_longquan",
    "zheng_chenggong_taiwan_llm",
    "zhuxi"
   ]
@@ -695,7 +705,17 @@ window.SANDBOX_DATA = {
   "xianggang_tunmen",
   "aomen_aomen",
   "xizang_wencheng",
-  "taiwan_zhengchenggong"
+  "taiwan_zhengchenggong",
+  "shandong_jixia",
+  "hebei_shanhaiguan",
+  "hubei_zenghouyi",
+  "shanxi_yungang",
+  "gansu_jiayuguan",
+  "guangdong_guangzhou",
+  "fujian_tulou",
+  "jiangxi_bailudong",
+  "yunnan_dianmian",
+  "zhejiang_longquan"
  ],
  "vocab": {
   "layers": [
@@ -28452,6 +28472,337 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "shandong_jixia": {
+   "key": "shandong_jixia",
+   "scene_id": "shandong_jixia",
+   "title": "战国·稷下学宫（诸子百家争鸣）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "warring_states",
+   "page": "county.html?scene=shandong_jixia",
+   "primary_place": "linzi",
+   "vocab_pack": "inline:shandong_jixia",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 5,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hebei_shanhaiguan": {
+   "key": "hebei_shanhaiguan",
+   "scene_id": "hebei_shanhaiguan",
+   "title": "明·山海关筑城（明长城东端锁钥）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_shanhaiguan",
+   "primary_place": "shanhaiguan",
+   "vocab_pack": "inline:hebei_shanhaiguan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hubei_zenghouyi": {
+   "key": "hubei_zenghouyi",
+   "scene_id": "hubei_zenghouyi",
+   "title": "战国·曾侯乙编钟（青铜礼乐之极）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "warring_states",
+   "page": "county.html?scene=hubei_zenghouyi",
+   "primary_place": "suizhou",
+   "vocab_pack": "inline:hubei_zenghouyi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 1,
+    "assert": 11,
+    "conflict": 0,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "shanxi_yungang": {
+   "key": "shanxi_yungang",
+   "scene_id": "shanxi_yungang",
+   "title": "北魏·云冈石窟（昙曜五窟）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "two_jin",
+   "page": "county.html?scene=shanxi_yungang",
+   "primary_place": "pingcheng",
+   "vocab_pack": "inline:shanxi_yungang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 2,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "gansu_jiayuguan": {
+   "key": "gansu_jiayuguan",
+   "scene_id": "gansu_jiayuguan",
+   "title": "明·嘉峪关筑城（明长城西端锁钥）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "xibei",
+   "page": "county.html?scene=gansu_jiayuguan",
+   "primary_place": "jiayuguan",
+   "vocab_pack": "inline:gansu_jiayuguan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guangdong_guangzhou": {
+   "key": "guangdong_guangzhou",
+   "scene_id": "guangdong_guangzhou",
+   "title": "清·广州十三行（一口通商）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "exchange",
+   "page": "county.html?scene=guangdong_guangzhou",
+   "primary_place": "guangzhou",
+   "vocab_pack": "inline:guangdong_guangzhou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 1,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "fujian_tulou": {
+   "key": "fujian_tulou",
+   "scene_id": "fujian_tulou",
+   "title": "明清·福建土楼（客家夯土聚族）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=fujian_tulou",
+   "primary_place": "minxi",
+   "vocab_pack": "inline:fujian_tulou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 0,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 3
+   }
+  },
+  "jiangxi_bailudong": {
+   "key": "jiangxi_bailudong",
+   "scene_id": "jiangxi_bailudong",
+   "title": "宋·白鹿洞书院（朱熹定学规）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "jiangnan",
+   "page": "county.html?scene=jiangxi_bailudong",
+   "primary_place": "bailudong",
+   "vocab_pack": "inline:jiangxi_bailudong",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "yunnan_dianmian": {
+   "key": "yunnan_dianmian",
+   "scene_id": "yunnan_dianmian",
+   "title": "抗战·滇缅公路（西南生命线）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "yunnan",
+   "page": "county.html?scene=yunnan_dianmian",
+   "primary_place": "kunming",
+   "vocab_pack": "inline:yunnan_dianmian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 5,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "zhejiang_longquan": {
+   "key": "zhejiang_longquan",
+   "scene_id": "zhejiang_longquan",
+   "title": "宋·龙泉窑（青瓷之冠）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=zhejiang_longquan",
+   "primary_place": "longquan",
+   "vocab_pack": "inline:zhejiang_longquan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 1,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -28742,7 +29093,17 @@ window.SANDBOX_DATA = {
   "xianggang_tunmen": "slices/xianggang_tunmen.js",
   "aomen_aomen": "slices/aomen_aomen.js",
   "xizang_wencheng": "slices/xizang_wencheng.js",
-  "taiwan_zhengchenggong": "slices/taiwan_zhengchenggong.js"
+  "taiwan_zhengchenggong": "slices/taiwan_zhengchenggong.js",
+  "shandong_jixia": "slices/shandong_jixia.js",
+  "hebei_shanhaiguan": "slices/hebei_shanhaiguan.js",
+  "hubei_zenghouyi": "slices/hubei_zenghouyi.js",
+  "shanxi_yungang": "slices/shanxi_yungang.js",
+  "gansu_jiayuguan": "slices/gansu_jiayuguan.js",
+  "guangdong_guangzhou": "slices/guangdong_guangzhou.js",
+  "fujian_tulou": "slices/fujian_tulou.js",
+  "jiangxi_bailudong": "slices/jiangxi_bailudong.js",
+  "yunnan_dianmian": "slices/yunnan_dianmian.js",
+  "zhejiang_longquan": "slices/zhejiang_longquan.js"
  },
  "corridors": [
   {

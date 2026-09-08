@@ -1,0 +1,63 @@
+{
+ "places": [
+  {
+   "id": "shanhaiguan",
+   "name": "山海关",
+   "type": "fortress",
+   "modern": "今中国河北省秦皇岛市山海关区",
+   "note": "长城东端锁钥",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 116.0,
+   "lat": 39.0,
+   "geo_note": "华北区域",
+   "geo_match": "substring"
+  },
+  {
+   "id": "yuguan",
+   "name": "榆关",
+   "type": "yi",
+   "modern": "今中国河北省秦皇岛市抚宁区",
+   "note": "山海关故地",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "liaoxi",
+   "name": "辽西走廊",
+   "type": "region",
+   "modern": "今中国辽宁省锦州至山海关一带",
+   "note": "连接关内外的通道",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiliao",
+   "name": "蓟辽",
+   "type": "region",
+   "modern": "今中国河北北部及辽宁西部",
+   "note": "明代军事重镇",
+   "_source_idx": 0,
+   "_source_name": "《明史·地理志》与山海关",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

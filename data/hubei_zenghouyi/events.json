@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hubei_zenghouyi_01",
+   "subject": "event:ev_hubei_zenghouyi_01",
+   "year": -433,
+   "era": "战国早期",
+   "title": "曾侯乙下葬",
+   "kind": "其他",
+   "text": "曾侯乙卒，葬于随州。",
+   "_source_idx": 0,
+   "_source_name": "《曾侯乙墓》编钟与战国礼乐（考古）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_zenghouyi_02",
+   "subject": "event:ev_hubei_zenghouyi_02",
+   "year": 1978,
+   "era": "公元1978年",
+   "title": "编钟出土",
+   "kind": "其他",
+   "text": "曾侯乙墓编钟出土。",
+   "_source_idx": 0,
+   "_source_name": "《曾侯乙墓》编钟与战国礼乐（考古）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

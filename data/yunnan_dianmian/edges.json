@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "kunming",
+   "to": "wanding",
+   "type": "military",
+   "label": "滇缅公路路线",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

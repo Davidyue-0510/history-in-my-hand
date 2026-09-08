@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_shandong_jixia_01",
+   "subject": "event:ev_shandong_jixia_01",
+   "year": -319,
+   "era": "齐宣王时",
+   "title": "设稷下学宫",
+   "kind": "建置",
+   "text": "齐宣王设学宫于临淄稷门",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shandong_jixia_02",
+   "subject": "event:ev_shandong_jixia_02",
+   "year": -319,
+   "era": "齐宣王时",
+   "title": "贤士云集",
+   "kind": "其他",
+   "text": "邹衍等咸集稷下",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shandong_jixia_03",
+   "subject": "event:ev_shandong_jixia_03",
+   "year": -319,
+   "era": "齐宣王时",
+   "title": "百家争鸣",
+   "kind": "其他",
+   "text": "各抒所见议论国政",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

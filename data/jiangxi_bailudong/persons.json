@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "朱熹",
+   "role": "南康军知军，理学家",
+   "note": "复兴白鹿洞书院，定学规",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "朱端章",
+   "role": "南康军知军（继任）",
+   "note": "续修书院，增置学田",
+   "_source_idx": 0,
+   "_source_name": "《宋史·朱熹传》与白鹿洞书院",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

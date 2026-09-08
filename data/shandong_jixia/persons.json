@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "齐宣王",
+   "role": "齐国君主",
+   "note": "设稷下学宫，招贤纳士",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "邹衍",
+   "role": "阴阳家代表",
+   "note": "五德终始说",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "淳于髡",
+   "role": "稷下学者",
+   "note": "滑稽善辩",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p04",
+   "name": "田骈",
+   "role": "稷下学者",
+   "note": "道家",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p05",
+   "name": "慎到",
+   "role": "稷下学者",
+   "note": "法家",
+   "_source_idx": 0,
+   "_source_name": "《史记·田敬仲完世家》与稷下学宫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

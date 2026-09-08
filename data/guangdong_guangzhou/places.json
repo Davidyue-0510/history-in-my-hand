@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "type": "city",
+   "modern": "今中国广东省广州市",
+   "note": "一口通商之地",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·食货志》与广州十三行",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.26,
+   "lat": 23.13,
+   "geo_note": "康有为故里，今广东广州"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

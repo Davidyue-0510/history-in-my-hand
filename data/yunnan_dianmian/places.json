@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "kunming",
+   "name": "昆明",
+   "type": "city",
+   "modern": "今中国云南省昆明市",
+   "note": "滇缅公路起点",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "wanding",
+   "name": "畹町",
+   "type": "yi",
+   "modern": "今中国云南省德宏州瑞丽市畹町镇",
+   "note": "滇缅公路终点，中缅边境",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hengduan",
+   "name": "横断山",
+   "type": "region",
+   "modern": "今中国云南省西部",
+   "note": "公路穿越的山脉",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lancang",
+   "name": "澜沧江",
+   "type": "region",
+   "modern": "今中国云南省",
+   "note": "公路跨越的河流",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "myanmar",
+   "name": "缅甸",
+   "type": "region",
+   "modern": "今缅甸",
+   "note": "公路连接的国家",
+   "_source_idx": 0,
+   "_source_name": "《云南抗战史》与滇缅公路",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}
