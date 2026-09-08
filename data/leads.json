@@ -4620,37 +4620,6 @@
    "_src_line": 15
   },
   {
-   "id": "SX006_M45",
-   "scene": "wanganshi",
-   "subject": "event:wa_1085",
-   "title": "新法渐弛后未明述结局",
-   "missing": "史料考据",
-   "where": "event:wa_1085",
-   "skills": [
-    "史料考据"
-   ],
-   "accept": "补充新法废止的具体时间与过程",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 9
-  },
-  {
-   "id": "WANGANSHIG01",
-   "scene": "wanganshi",
-   "subject": "event:wa_1069",
-   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
-   "missing": "纪年校勘 / 多源比对",
-   "where": "诸史原文对读",
-   "skills": [
-    "纪年校勘",
-    "多源比对"
-   ],
-   "accept": "补各方视角与纪年异文",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 10
-  },
-  {
    "id": "WANGMANGG01",
    "scene": "wangmang",
    "subject": "event:wm_9",

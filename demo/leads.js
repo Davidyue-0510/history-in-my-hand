@@ -20,6 +20,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
+   "id": "AOM_014",
+   "scene": "aomen_huigui_llm",
+   "subject": "event:ev_aomen_huigui_llm_03",
+   "title": "国际社会反应待考",
+   "missing": "外交史",
+   "where": "国际档案",
+   "skills": [
+    "外交史"
+   ],
+   "accept": "国际社会对回归的反应",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "AOM_010",
    "scene": "aomen_kaibu_llm",
    "subject": "event:ev_aomen_kaibu_llm_01",
@@ -34,6 +49,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 10
+  },
+  {
+   "id": "AOM_012",
+   "scene": "aomen_mage_llm",
+   "subject": "place:mage_miao",
+   "title": "确切年份无考",
+   "missing": "历史考据",
+   "where": "地方志或碑刻",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "发现具体建庙年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "AOMEG1",
@@ -527,6 +557,37 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 17
+  },
+  {
+   "id": "CHO_011",
+   "scene": "chongqing_peidu_llm",
+   "subject": "event:ev_chongqing_peidu_llm_03",
+   "title": "具体伤亡数字记载不一",
+   "missing": "档案整理 / 统计",
+   "where": "重庆市档案馆",
+   "skills": [
+    "档案整理",
+    "统计"
+   ],
+   "accept": "需查原始档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "CHO_012",
+   "scene": "chongqing_peidu_llm",
+   "subject": "event:ev_chongqing_peidu_llm_01",
+   "title": "西迁具体过程记载简略",
+   "missing": "档案检索",
+   "where": "中国第二历史档案馆",
+   "skills": [
+    "档案检索"
+   ],
+   "accept": "需查迁都档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "chongzhen_han_07",
@@ -1050,6 +1111,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "FUJ_010",
+   "scene": "fujian_xiamen_llm",
+   "subject": "place:gulangyu",
+   "title": "鼓浪屿公共地界形成原因",
+   "missing": "历史档案 / 外交史",
+   "where": "鼓浪屿",
+   "skills": [
+    "历史档案",
+    "外交史"
+   ],
+   "accept": "公共地界形成机制",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "FUJ_011",
+   "scene": "fujian_xiamen_llm",
+   "subject": "place:xiamen",
+   "title": "侨汇枢纽地位形成时间",
+   "missing": "经济史 / 华侨史",
+   "where": "厦门",
+   "skills": [
+    "经济史",
+    "华侨史"
+   ],
+   "accept": "侨汇规模与影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "F010",
    "scene": "fushun",
    "subject": "event:fushun_fall",
@@ -1159,6 +1252,22 @@ window.SANDBOX_LEADS = {
    "effort": "2-3 周",
    "issue_url": null,
    "_src_line": 6
+  },
+  {
+   "id": "GAN_008",
+   "scene": "gansu_dunhuang_llm",
+   "subject": "place:cangjing_dong",
+   "title": "未知",
+   "missing": "考古学 / 历史文献学",
+   "where": "敦煌藏经洞",
+   "skills": [
+    "考古学",
+    "历史文献学"
+   ],
+   "accept": "需进一步研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
   },
   {
    "id": "GAN_011",
@@ -1304,6 +1413,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 43
   },
   {
+   "id": "GUA_016",
+   "scene": "guangxi_lingqu_llm",
+   "subject": "place:lingqu",
+   "title": "具体工程细节记载不详",
+   "missing": "考古 / 水利史",
+   "where": "灵渠遗址",
+   "skills": [
+    "考古",
+    "水利史"
+   ],
+   "accept": "考古证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "GUA_014",
    "scene": "guangxi_taiping_llm",
    "subject": "event:ev_guangxi_taiping_llm_04",
@@ -1366,35 +1491,34 @@ window.SANDBOX_LEADS = {
    "_src_line": 16
   },
   {
-   "id": "GUIZG2",
-   "scene": "guizhou_yelang_llm",
-   "subject": "event:ev_guizhou_yelang_llm_01",
-   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補技術維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 16
-  },
-  {
-   "id": "GUI_015",
-   "scene": "guizhou_yelang_llm",
-   "subject": "place:yelang",
-   "title": "夜郎自大，史料未载原话",
+   "id": "GUI_014",
+   "scene": "guizhou_shexiang_llm",
+   "subject": "person:GUI__p01",
+   "title": "奢香卒年不详",
    "missing": "文献考据",
-   "where": "夜郎",
+   "where": "明实录及地方志",
    "skills": [
     "文献考据"
    ],
-   "accept": "需查《史记》原文",
+   "accept": "奢香卒年及后续事迹",
    "effort": "—",
    "issue_url": null,
-   "_src_line": 15
+   "_src_line": 14
+  },
+  {
+   "id": "GUI_014",
+   "scene": "guizhou_yelang_llm",
+   "subject": "place:yelang",
+   "title": "夜郎人口无载",
+   "missing": "历史人口学",
+   "where": "汉书·地理志",
+   "skills": [
+    "历史人口学"
+   ],
+   "accept": "牂牁郡户口数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "GUI_011",
@@ -1427,6 +1551,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "HAI_016",
+   "scene": "hainan_hainandao_llm",
+   "subject": "event:ev_hainan_hainandao_llm_02",
+   "title": "国民党军兵力部署不详",
+   "missing": "军事史 / 档案检索",
+   "where": "国民党军海南防卫司令部档案",
+   "skills": [
+    "军事史",
+    "档案检索"
+   ],
+   "accept": "国民党军实际兵力及部署",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
   },
   {
    "id": "HAI_014",
@@ -1601,6 +1741,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "HEI_013",
+   "scene": "heilongjiang_kanglian_llm",
+   "subject": "event:ev_heilongjiang_kanglian_llm_02",
+   "title": "具体战斗细节缺失",
+   "missing": "历史档案检索",
+   "where": "东北抗日联军档案",
+   "skills": [
+    "历史档案检索"
+   ],
+   "accept": "补充战斗记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "GAP_EXPAND",
@@ -1980,6 +2135,52 @@ window.SANDBOX_LEADS = {
    "_src_line": 17
   },
   {
+   "id": "JIA_009",
+   "scene": "jiangxi_nanchang_llm",
+   "subject": "event:ev_jiangxi_nanchang_llm_01",
+   "title": "兵力不详",
+   "missing": "史料考证",
+   "where": "南昌起义相关档案或回忆录",
+   "skills": [
+    "史料考证"
+   ],
+   "accept": "起义军具体兵力数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "JIA_010",
+   "scene": "jiangxi_nanchang_llm",
+   "subject": "event:ev_jiangxi_nanchang_llm_01",
+   "title": "伤亡数字未记载",
+   "missing": "军事史研究",
+   "where": "南昌起义战史资料",
+   "skills": [
+    "军事史研究"
+   ],
+   "accept": "起义军伤亡具体数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "JIA_012",
+   "scene": "jiangxi_ruijin_llm",
+   "subject": "event:ev_jiangxi_ruijin_llm_02",
+   "title": "长征具体路线和目的地未详述",
+   "missing": "历史地理 / 军事史",
+   "where": "江西至陕北",
+   "skills": [
+    "历史地理",
+    "军事史"
+   ],
+   "accept": "补充长征具体路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "JIANZHENG01",
    "scene": "jianzhen",
    "subject": "event:jz_753",
@@ -2010,6 +2211,38 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 7
+  },
+  {
+   "id": "JIL_015",
+   "scene": "jilin_bohai_llm",
+   "subject": "event:ev_jilin_bohai_llm_03",
+   "title": "渤海国灭亡",
+   "missing": "历史地理 / 民族史",
+   "where": "渤海灭亡后遗民去向",
+   "skills": [
+    "历史地理",
+    "民族史"
+   ],
+   "accept": "进一步研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "JIL_015",
+   "scene": "jilin_changchun_llm",
+   "subject": "event:ev_jilin_changchun_llm_02",
+   "title": "溥儀個人態度記載不足",
+   "missing": "檔案分析 / 心理史學",
+   "where": "偽滿皇宮檔案",
+   "skills": [
+    "檔案分析",
+    "心理史學"
+   ],
+   "accept": "溥儀是否自願",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "JNG01",
@@ -3318,66 +3551,65 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
-   "id": "QINGG4",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "此場景關於「社會」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補社會維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 16
-  },
-  {
-   "id": "QINGG5",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "此場景關於「思想」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補思想維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 17
-  },
-  {
-   "id": "QIN_009",
-   "scene": "qinghai_tuyuhun_llm",
-   "subject": "event:ev_qinghai_tuyuhun_llm_01",
-   "title": "隋军兵力未详",
-   "missing": "考据",
-   "where": "隋书·炀帝纪",
-   "skills": [
-    "考据"
-   ],
-   "accept": "补充兵力记载",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 9
-  },
-  {
    "id": "QIN_013",
    "scene": "qinghai_tuyuhun_llm",
    "subject": "event:ev_qinghai_tuyuhun_llm_02",
-   "title": "四郡隶属未明",
-   "missing": "制度考",
-   "where": "隋书·地理志",
+   "title": "吐蕃灭吐谷浑的具体过程不详",
+   "missing": "考古发掘 / 文献比对",
+   "where": "青海湖周边",
    "skills": [
-    "制度考"
+    "考古发掘",
+    "文献比对"
    ],
-   "accept": "补充隶属",
+   "accept": "吐蕃灭吐谷浑的具体过程",
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "QIN_007",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_01",
+   "title": "率军赴河湟，兵力未详",
+   "missing": "汉代军事制度",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "汉代军事制度"
+   ],
+   "accept": "需查证具体兵力数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "QIN_008",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_02",
+   "title": "屯田面积与人数未详",
+   "missing": "汉代屯田制度",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "汉代屯田制度"
+   ],
+   "accept": "需查证屯田规模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "QIN_009",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_03",
+   "title": "羌人渐归，具体数量未详",
+   "missing": "羌人部落研究",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "羌人部落研究"
+   ],
+   "accept": "需查证归附规模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
   },
   {
    "id": "QIN_013",
@@ -3571,6 +3803,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "SHA_014",
+   "scene": "shanxi_jinshang_llm",
+   "subject": "person:SHA__p01",
+   "title": "晋商内部账册缺失",
+   "missing": "档案整理 / 经济史",
+   "where": "山西各票号旧址",
+   "skills": [
+    "档案整理",
+    "经济史"
+   ],
+   "accept": "发现票号账册",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SHAQIUG01",
    "scene": "shaqiu",
    "subject": "event:sq_210",
@@ -3683,6 +3931,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "SIC_014",
+   "scene": "sichuan_dujiangyan_llm",
+   "subject": "event:ev_sichuan_dujiangyan_llm_01",
+   "title": "确切年份待考",
+   "missing": "古文字学 / 历史地理",
+   "where": "秦代蜀郡守府档案",
+   "skills": [
+    "古文字学",
+    "历史地理"
+   ],
+   "accept": "发现确切纪年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "SC016",
@@ -4001,6 +4265,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "TAI_013",
+   "scene": "taiwan_shilang_llm",
+   "subject": "event:ev_taiwan_shilang_llm_01",
+   "title": "清军伤亡未载",
+   "missing": "军事史",
+   "where": "澎湖海战",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "清军伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "TAI_014",
+   "scene": "taiwan_wushe_llm",
+   "subject": "event:ev_taiwan_wushe_llm_01",
+   "title": "具體戰鬥過程不詳",
+   "missing": "檔案檢索 / 日文文獻解讀",
+   "where": "霧社事件相關檔案",
+   "skills": [
+    "檔案檢索",
+    "日文文獻解讀"
+   ],
+   "accept": "補充戰鬥細節",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "TAI_009",
    "scene": "taiwan_zhengchenggong_llm",
    "subject": "event:ev_taiwan_zhengchenggong_llm_03",
@@ -4249,6 +4544,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "TIA_014",
+   "scene": "tianjin_kaibu_llm",
+   "subject": "place:tianjin",
+   "title": "紫竹林具体边界未详",
+   "missing": "历史地理",
+   "where": "紫竹林租界边界",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "档案或地图",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "TIANJINGG01",
    "scene": "tianjing",
    "subject": "event:tj_xiang",
@@ -4310,37 +4620,6 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
-  },
-  {
-   "id": "SX006_M45",
-   "scene": "wanganshi",
-   "subject": "event:wa_1085",
-   "title": "新法渐弛后未明述结局",
-   "missing": "史料考据",
-   "where": "event:wa_1085",
-   "skills": [
-    "史料考据"
-   ],
-   "accept": "补充新法废止的具体时间与过程",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 9
-  },
-  {
-   "id": "WANGANSHIG01",
-   "scene": "wanganshi",
-   "subject": "event:wa_1069",
-   "title": "此次改革的推行范围、受阻与实效，赞成与反对两方记载悬殊，相关评估存在缺口。",
-   "missing": "纪年校勘 / 多源比对",
-   "where": "诸史原文对读",
-   "skills": [
-    "纪年校勘",
-    "多源比对"
-   ],
-   "accept": "补各方视角与纪年异文",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 10
   },
   {
    "id": "WANGMANGG01",
@@ -4519,6 +4798,52 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "XIA_012",
+   "scene": "xianggang_dongjiang_llm",
+   "subject": "event:ev_xianggang_dongjiang_llm_01",
+   "title": "具體兵力不詳",
+   "missing": "檔案檢索",
+   "where": "港九獨立大隊檔案",
+   "skills": [
+    "檔案檢索"
+   ],
+   "accept": "查得大隊編制人數",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "XIA_013",
+   "scene": "xianggang_dongjiang_llm",
+   "subject": "event:ev_xianggang_dongjiang_llm_02",
+   "title": "具體戰果不詳",
+   "missing": "文獻分析",
+   "where": "東江縱隊戰史",
+   "skills": [
+    "文獻分析"
+   ],
+   "accept": "查得游擊戰果統計",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIA_014",
+   "scene": "xianggang_huigui_llm",
+   "subject": "event:ev_xianggang_huigui_llm_03",
+   "title": "国际社会关注",
+   "missing": "外交史 / 国际关系",
+   "where": "国际档案",
+   "skills": [
+    "外交史",
+    "国际关系"
+   ],
+   "accept": "补充国际反应",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "XIANG4",
    "scene": "xianggang_songmo_llm",
    "subject": "event:ev_xianggang_songmo_llm_01",
@@ -4658,6 +4983,83 @@ window.SANDBOX_LEADS = {
     "多源比对"
    ],
    "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIN_012",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_02",
+   "title": "乌垒城具体位置存疑",
+   "missing": "考古发掘 / 文献考据",
+   "where": "新疆轮台县",
+   "skills": [
+    "考古发掘",
+    "文献考据"
+   ],
+   "accept": "确认乌垒城确切位置",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "XIN_013",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_01",
+   "title": "日逐王降汉具体月份不详",
+   "missing": "史料比对",
+   "where": "匈奴故地",
+   "skills": [
+    "史料比对"
+   ],
+   "accept": "确定降汉具体时间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIN_014",
+   "scene": "xinjiang_xiyu_llm",
+   "subject": "event:ev_xinjiang_xiyu_llm_02",
+   "title": "三十六国具体名单不详",
+   "missing": "文献考据",
+   "where": "西域",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "列出三十六国名单",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIN_013",
+   "scene": "xinjiang_zuozongtang_llm",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_04",
+   "title": "曾纪泽谈判过程未详",
+   "missing": "俄语 / 外交史",
+   "where": "俄罗斯国家档案馆",
+   "skills": [
+    "俄语",
+    "外交史"
+   ],
+   "accept": "寻找中俄谈判原始记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIN_014",
+   "scene": "xinjiang_zuozongtang_llm",
+   "subject": "event:ev_xinjiang_zuozongtang_llm_02",
+   "title": "清军兵力部署未详",
+   "missing": "清代军事档案",
+   "where": "中国第一历史档案馆",
+   "skills": [
+    "清代军事档案"
+   ],
+   "accept": "查找左宗棠奏折中的兵力数据",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
@@ -5038,6 +5440,81 @@ window.SANDBOX_LEADS = {
     "考古"
    ],
    "accept": "革囊渡江的具体工艺",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "YUN_010",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_02",
+   "title": "唐征南诏原因未明",
+   "missing": "历史考据",
+   "where": "《新唐书·南诏传》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体战役起因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "YUN_011",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_02",
+   "title": "唐军伤亡数字未载",
+   "missing": "文献检索",
+   "where": "《资治通鉴》",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "需查证具体伤亡",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "YUN_012",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_03",
+   "title": "唐军伤亡数字未载",
+   "missing": "文献检索",
+   "where": "《旧唐书》",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "需查证具体伤亡",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "YUN_013",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_04",
+   "title": "郑买嗣篡位细节未详",
+   "missing": "历史考据",
+   "where": "《南诏野史》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "YUN_014",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_01",
+   "title": "统一六诏过程未详",
+   "missing": "历史考据",
+   "where": "《蛮书》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体过程",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

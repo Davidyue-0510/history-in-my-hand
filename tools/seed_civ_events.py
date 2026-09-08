@@ -362,7 +362,7 @@ civ({
  "persons": [("shangyang", "商鞅", "秦"), ("xiaogong", "秦孝公", "秦")],
 })
 civ({
- "id": "wanganshi",
+ "id": "song_wanganshi_llm",
  "title": "王安石变法",
  "kind": "reform",
  "region": "reform", "region_name": "改革与变法",

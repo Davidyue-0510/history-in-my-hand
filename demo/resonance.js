@@ -12,7 +12,9 @@ window.SANDBOX_RESONANCE = {
   ],
   "scenes": [
    "anxi_sizhen_llm",
+   "aomen_huigui_llm",
    "aomen_kaibu_llm",
+   "aomen_mage_llm",
    "aomen_portugal_llm",
    "baijia",
    "beijing",
@@ -36,6 +38,7 @@ window.SANDBOX_RESONANCE = {
    "chibi_llm",
    "chongqing_capital_llm",
    "chongqing_diaoyucheng_llm",
+   "chongqing_peidu_llm",
    "chongzhen_han",
    "chongzhen_huangzai",
    "chu_han",
@@ -58,23 +61,28 @@ window.SANDBOX_RESONANCE = {
    "four_inv",
    "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
+   "fujian_xiamen_llm",
    "fushun",
    "fuzhou",
    "gaixia",
    "gaizhou",
+   "gansu_dunhuang_llm",
    "gansu_hexizhen_llm",
    "grand_canal",
    "great_wall",
    "guandu",
    "guandu_llm",
    "guangning",
+   "guangxi_lingqu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
    "guiling",
+   "guizhou_shexiang_llm",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
    "gunpowder_warfare",
    "guo_shoujing",
+   "hainan_hainandao_llm",
    "hainan_hairui_llm",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
@@ -83,6 +91,7 @@ window.SANDBOX_RESONANCE = {
    "han_weihuo_llm",
    "han_wudi_ruxue",
    "heilongjiang_jin_llm",
+   "heilongjiang_kanglian_llm",
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
@@ -94,9 +103,14 @@ window.SANDBOX_RESONANCE = {
    "hulao",
    "humen",
    "hunan_changsha_llm",
+   "hunan_mawangdui_llm",
    "imjin",
+   "jiangxi_nanchang_llm",
+   "jiangxi_ruijin_llm",
    "jianzhen",
    "jiasixie",
+   "jilin_bohai_llm",
+   "jilin_changchun_llm",
    "jilin_gaogouli_llm",
    "jingnan",
    "jinshang_llm",
@@ -149,16 +163,19 @@ window.SANDBOX_RESONANCE = {
    "qing_zhungaer_llm",
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
+   "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
    "san_guo",
    "sarhu",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shangyang",
+   "shanxi_jinshang_llm",
    "shaqiu",
    "shenkuo",
    "shenyang",
    "shu_han_found_llm",
+   "sichuan_dujiangyan_llm",
    "song_chan_yuan",
    "song_chanchuan_llm",
    "song_dangzheng",
@@ -177,6 +194,8 @@ window.SANDBOX_RESONANCE = {
    "suiyang",
    "susong_llm",
    "taiping",
+   "taiwan_shilang_llm",
+   "taiwan_wushe_llm",
    "taiwan_zhengchenggong_llm",
    "talas",
    "tang_anshi_llm",
@@ -188,10 +207,10 @@ window.SANDBOX_RESONANCE = {
    "tang_xuanwumen_llm",
    "three_campaigns",
    "tianjin_jiaoan_llm",
+   "tianjin_kaibu_llm",
    "tianjing",
    "tieling",
    "tumu",
-   "wanganshi",
    "wangmang",
    "wangyangming",
    "warring_states_shangyang",
@@ -202,10 +221,14 @@ window.SANDBOX_RESONANCE = {
    "wuwang",
    "wuxu",
    "xianggang_1941_llm",
+   "xianggang_dongjiang_llm",
+   "xianggang_huigui_llm",
    "xianggang_songmo_llm",
    "xiaowen",
    "xiaoyaojin",
    "xinhai",
+   "xinjiang_xiyu_llm",
+   "xinjiang_zuozongtang_llm",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
    "xizang_huimeng_llm",
@@ -225,6 +248,7 @@ window.SANDBOX_RESONANCE = {
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "yunnan_dali_llm",
+   "yunnan_nanzhao_llm",
    "zhangheng",
    "zhangjuzheng",
    "zhangqian",
@@ -273,6 +297,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "aomen_huigui_llm",
+   "name": "aomen_huigui_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_aomen_huigui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "aomen_kaibu_llm",
    "name": "aomen_kaibu_llm",
    "total": 10,
@@ -289,6 +332,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_aomen_kaibu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "aomen_mage_llm",
+   "name": "aomen_mage_llm",
+   "total": 13,
+   "layers": {
+    "record": 9,
+    "inference": 2,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_aomen_mage_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -727,6 +789,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "chongqing_peidu_llm",
+   "name": "chongqing_peidu_llm",
+   "total": 12,
+   "layers": {
+    "record": 8,
+    "inference": 1,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chongqing_peidu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "chongzhen_han",
    "name": "chongzhen_han",
    "total": 10,
@@ -1142,6 +1223,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "fujian_xiamen_llm",
+   "name": "fujian_xiamen_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 6,
+    "scholarship": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_fujian_xiamen_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "fushun",
    "name": "fushun",
    "total": 20,
@@ -1218,6 +1318,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.389,
    "best_event": "event:gaizhou_fall",
    "best_resonance": 0.444
+  },
+  {
+   "scene": "gansu_dunhuang_llm",
+   "name": "gansu_dunhuang_llm",
+   "total": 8,
+   "layers": {
+    "inference": 1,
+    "record": 5,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 8
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_gansu_dunhuang_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "gansu_hexizhen_llm",
@@ -1337,6 +1456,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.785
   },
   {
+   "scene": "guangxi_lingqu_llm",
+   "name": "guangxi_lingqu_llm",
+   "total": 16,
+   "layers": {
+    "inference": 1,
+    "record": 13,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangxi_lingqu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guangxi_taiping_llm",
    "name": "guangxi_taiping_llm",
    "total": 14,
@@ -1394,21 +1532,39 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
-   "scene": "guizhou_yelang_llm",
-   "name": "guizhou_yelang_llm",
-   "total": 16,
+   "scene": "guizhou_shexiang_llm",
+   "name": "guizhou_shexiang_llm",
+   "total": 14,
    "layers": {
-    "inference": 1,
-    "record": 11,
-    "scholarship": 2,
-    "gap": 2
+    "record": 10,
+    "inference": 2,
+    "scholarship": 1,
+    "gap": 1
    },
    "party_counts": {
-    "汉官修": 15,
-    "综合史料": 1
+    "后世官修": 14
    },
    "faction_counts": {},
-   "event_count": 3,
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_shexiang_llm_03",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guizhou_yelang_llm",
+   "name": "guizhou_yelang_llm",
+   "total": 14,
+   "layers": {
+    "scholarship": 1,
+    "record": 11,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guizhou_yelang_llm_01",
    "best_resonance": 0.0
@@ -1467,6 +1623,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:shoushi_banxing",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "hainan_hainandao_llm",
+   "name": "hainan_hainandao_llm",
+   "total": 16,
+   "layers": {
+    "inference": 1,
+    "record": 13,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hainan_hainandao_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -1621,6 +1796,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 4,
    "avg_resonance": 0.0,
    "best_event": "event:ev_heilongjiang_jin_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "heilongjiang_kanglian_llm",
+   "name": "heilongjiang_kanglian_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_heilongjiang_kanglian_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -1841,6 +2035,24 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "hunan_mawangdui_llm",
+   "name": "hunan_mawangdui_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 13
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hunan_mawangdui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "imjin",
    "name": "imjin",
    "total": 19,
@@ -1860,6 +2072,44 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.467,
    "best_event": "event:cefeng_heyi",
    "best_resonance": 0.667
+  },
+  {
+   "scene": "jiangxi_nanchang_llm",
+   "name": "jiangxi_nanchang_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "gap": 2,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jiangxi_nanchang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jiangxi_ruijin_llm",
+   "name": "jiangxi_ruijin_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jiangxi_ruijin_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "jianzhen",
@@ -1896,6 +2146,44 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:js_533",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jilin_bohai_llm",
+   "name": "jilin_bohai_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "record": 12,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jilin_bohai_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jilin_changchun_llm",
+   "name": "jilin_changchun_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jilin_changchun_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2883,21 +3171,39 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "qinghai_tuyuhun_llm",
    "name": "qinghai_tuyuhun_llm",
-   "total": 20,
+   "total": 13,
    "layers": {
     "inference": 1,
-    "record": 13,
-    "gap": 4,
-    "scholarship": 2
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
    },
    "party_counts": {
-    "隋官修": 15,
-    "综合史料": 5
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qinghai_tuyuhun_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "qinghai_zhaochongguo_llm",
+   "name": "qinghai_zhaochongguo_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "gap": 3,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
    },
    "faction_counts": {},
    "event_count": 3,
    "avg_resonance": 0.0,
-   "best_event": "event:ev_qinghai_tuyuhun_llm_01",
+   "best_event": "event:ev_qinghai_zhaochongguo_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3027,6 +3333,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "shanxi_jinshang_llm",
+   "name": "shanxi_jinshang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_shanxi_jinshang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "shaqiu",
    "name": "shaqiu",
    "total": 14,
@@ -3104,6 +3429,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_shu_han_found_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "sichuan_dujiangyan_llm",
+   "name": "sichuan_dujiangyan_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sichuan_dujiangyan_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3455,6 +3799,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "taiwan_shilang_llm",
+   "name": "taiwan_shilang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "gap": 1,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_taiwan_shilang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "taiwan_wushe_llm",
+   "name": "taiwan_wushe_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_taiwan_wushe_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "taiwan_zhengchenggong_llm",
    "name": "taiwan_zhengchenggong_llm",
    "total": 12,
@@ -3669,6 +4051,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tianjin_kaibu_llm",
+   "name": "tianjin_kaibu_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tianjin_kaibu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "tianjing",
    "name": "tianjing",
    "total": 16,
@@ -3724,30 +4125,6 @@ window.SANDBOX_RESONANCE = {
    "event_count": 8,
    "avg_resonance": 0.0,
    "best_event": "event:tm_capture",
-   "best_resonance": 0.0
-  },
-  {
-   "scene": "wanganshi",
-   "name": "wanganshi",
-   "total": 15,
-   "layers": {
-    "scholarship": 3,
-    "record": 9,
-    "gap": 2,
-    "inference": 1
-   },
-   "party_counts": {
-    "综合史料": 13,
-    "旧党文献": 1,
-    "新党文献": 1
-   },
-   "faction_counts": {
-    "jiudang": 1,
-    "xindang": 1
-   },
-   "event_count": 3,
-   "avg_resonance": 0.0,
-   "best_event": "event:wa_1069",
    "best_resonance": 0.0
   },
   {
@@ -3946,6 +4323,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "xianggang_dongjiang_llm",
+   "name": "xianggang_dongjiang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "gap": 2,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xianggang_dongjiang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xianggang_huigui_llm",
+   "name": "xianggang_huigui_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xianggang_huigui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "xianggang_songmo_llm",
    "name": "xianggang_songmo_llm",
    "total": 19,
@@ -4023,6 +4438,44 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:xh_1010",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xinjiang_xiyu_llm",
+   "name": "xinjiang_xiyu_llm",
+   "total": 14,
+   "layers": {
+    "record": 7,
+    "inference": 1,
+    "scholarship": 3,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xinjiang_xiyu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xinjiang_zuozongtang_llm",
+   "name": "xinjiang_zuozongtang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xinjiang_zuozongtang_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -4392,6 +4845,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_yunnan_dali_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yunnan_nanzhao_llm",
+   "name": "yunnan_nanzhao_llm",
+   "total": 14,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 7,
+    "gap": 5
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yunnan_nanzhao_llm_01",
    "best_resonance": 0.0
   },
   {

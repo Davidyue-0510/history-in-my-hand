@@ -280,7 +280,6 @@
   "qin_unify",
   "ming_fall",
   "shangyang",
-  "wanganshi",
   "huangjin",
   "lizicheng",
   "xiaowen",
@@ -6470,84 +6469,6 @@
     }
    },
    "province": "shaanxi"
-  },
-  "wanganshi": {
-   "kind": "reform",
-   "region": "song",
-   "title": "王安石变法",
-   "dossier_label": "王安石变法",
-   "subtitle": "1069—1085 · 宋神宗时",
-   "primary_place": "kaifeng",
-   "dossier_event": "event:wa_1069",
-   "terrain_grid": "china_coarse",
-   "extra_files": [
-    "events",
-    "places"
-   ],
-   "lead": "王安石任参知政事，行青苗、募役、市易、保甲诸法，意在富国强兵；新旧党争由此起，1085 神宗崩、哲宗立，新法渐废。",
-   "parties_note": "新法利弊争议千年，司马光等旧党力诋；此处综合《宋史》与近代研究，不偏一方。",
-   "subject_names": {
-    "person:wanganshi": "王安石",
-    "person:simaguang": "司马光"
-   },
-   "dims": [
-    2,
-    3,
-    4,
-    5,
-    6
-   ],
-   "epoch": "song",
-   "scale_tier": "strategic",
-   "strategic": {
-    "political_cohesion": {
-     "from": [
-      "strategic",
-      "doctrine"
-     ],
-     "from_dims": [
-      3,
-      5
-     ],
-     "layer": "inference",
-     "note": "王安石变法：朝堂凝聚力——新法渐弛"
-    },
-    "material_logistics": {
-     "from": [
-      "tech",
-      "economy"
-     ],
-     "from_dims": [
-      2,
-      3
-     ],
-     "layer": "inference",
-     "note": "王安石变法：后勤物力——新法渐弛"
-    },
-    "population_mobilization": {
-     "from": [
-      "society"
-     ],
-     "from_dims": [
-      4
-     ],
-     "layer": "inference",
-     "note": "王安石变法：人口动员——“民不加赋而国用足”的理想 vs 豪强阻挠、新旧党争"
-    },
-    "geopolitical_strategy": {
-     "from": [
-      "international",
-      "anchors"
-     ],
-     "from_dims": [
-      1,
-      6
-     ],
-     "layer": "inference",
-     "note": "王安石变法：地缘战略——新法渐弛"
-    }
-   },
-   "province": null
   },
   "huangjin": {
    "kind": "uprising",

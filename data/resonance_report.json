@@ -209,7 +209,6 @@
       "tianjing",
       "tieling",
       "tumu",
-      "wanganshi",
       "wangmang",
       "wangyangming",
       "warring_states_shangyang",
@@ -4127,30 +4126,6 @@
       "best_resonance": 0.0
     },
     {
-      "scene": "wanganshi",
-      "name": "wanganshi",
-      "total": 15,
-      "layers": {
-        "scholarship": 3,
-        "record": 9,
-        "gap": 2,
-        "inference": 1
-      },
-      "party_counts": {
-        "综合史料": 13,
-        "旧党文献": 1,
-        "新党文献": 1
-      },
-      "faction_counts": {
-        "jiudang": 1,
-        "xindang": 1
-      },
-      "event_count": 3,
-      "avg_resonance": 0.0,
-      "best_event": "event:wa_1069",
-      "best_resonance": 0.0
-    },
-    {
       "scene": "wangmang",
       "name": "wangmang",
       "total": 15,
@@ -5373,26 +5348,6 @@
       ],
       "sources": [
         "li_wen"
-      ]
-    },
-    "jiudang": {
-      "name": "jiudang",
-      "total": 1,
-      "scenes": [
-        "wanganshi"
-      ],
-      "sources": [
-        "wen_gong_ji"
-      ]
-    },
-    "xindang": {
-      "name": "xindang",
-      "total": 1,
-      "scenes": [
-        "wanganshi"
-      ],
-      "sources": [
-        "lin_chuan_ji"
       ]
     },
     "didang": {
@@ -24345,99 +24300,6 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
-      "subject": "event:wa_1069",
-      "name": "event:wa_1069",
-      "scenes": [
-        "wanganshi"
-      ],
-      "scene_names": [
-        "wanganshi"
-      ],
-      "total": 7,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.143,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
-      "subject": "event:wa_1070",
-      "name": "event:wa_1070",
-      "scenes": [
-        "wanganshi"
-      ],
-      "scene_names": [
-        "wanganshi"
-      ],
-      "total": 4,
-      "gap_count": 0,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.0,
-      "resonance": 0.0,
-      "party_counts": {
-        "明方": 0,
-        "清方": 0,
-        "朝鲜": 0,
-        "日本方": 0,
-        "综述考订": 0
-      },
-      "parties": {
-        "明方": [],
-        "清方": [],
-        "朝鲜": [],
-        "日本方": [],
-        "综述考订": []
-      }
-    },
-    {
-      "subject": "event:wa_1085",
-      "name": "event:wa_1085",
-      "scenes": [
-        "wanganshi"
-      ],
-      "scene_names": [
-        "wanganshi"
-      ],
-      "total": 3,
-      "gap_count": 1,
-      "coverage": "0/3",
-      "coverage_frac": 0.0,
-      "divergence": 0.0,
-      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

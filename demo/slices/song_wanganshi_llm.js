@@ -678,9 +678,37 @@ window.SANDBOX_SLICES["song_wanganshi_llm"] = {
   {
    "place_id": "kaifeng",
    "party": "后世官修",
-   "start": 1900,
-   "end": 2000,
-   "basis": "auto-generated: all territory to 后世官修"
+   "start": 1069,
+   "end": 1085,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jingdong",
+   "party": "后世官修",
+   "start": 1069,
+   "end": 1085,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jingxi",
+   "party": "后世官修",
+   "start": 1069,
+   "end": 1085,
+   "timeline": "main"
+  },
+  {
+   "place_id": "hebei",
+   "party": "后世官修",
+   "start": 1069,
+   "end": 1085,
+   "timeline": "main"
+  },
+  {
+   "place_id": "shaanxi",
+   "party": "后世官修",
+   "start": 1069,
+   "end": 1085,
+   "timeline": "main"
   }
  ],
  "control_seats": [
@@ -693,8 +721,8 @@ window.SANDBOX_SLICES["song_wanganshi_llm"] = {
   }
  ],
  "control_years": [
-  1900,
-  2000
+  1069,
+  1085
  ],
  "vocab": {
   "layers": {

@@ -1,7 +1,7 @@
 {
  "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
  "_branch": "persist",
- "_scene": "song_wanganshi",
+ "_scene": "song_wanganshi_llm",
  "_scenario_type": "reform",
  "_years": [
   1069,
@@ -16,8 +16,8 @@
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.43,
-    "new_to": 0.617,
-    "cum": 0.187
+    "new_to": 0.621,
+    "cum": 0.191
    },
    "place_id": "kaifeng"
   },
@@ -25,12 +25,12 @@
    "kind": "divergence",
    "year": 1073,
    "severity": "warn",
-   "description": "改革指数偏离史实 0.23（本支 0.63 / 史实 0.40）",
+   "description": "改革指数偏离史实 0.24（本支 0.64 / 史实 0.40）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.4,
-    "new_to": 0.633,
-    "cum": 0.233
+    "new_to": 0.639,
+    "cum": 0.239
    },
    "place_id": "kaifeng"
   },
@@ -38,12 +38,12 @@
    "kind": "divergence",
    "year": 1074,
    "severity": "warn",
-   "description": "改革指数偏离史实 0.28（本支 0.65 / 史实 0.37）",
+   "description": "改革指数偏离史实 0.29（本支 0.66 / 史实 0.37）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.37,
-    "new_to": 0.65,
-    "cum": 0.28
+    "new_to": 0.656,
+    "cum": 0.286
    },
    "place_id": "kaifeng"
   },
@@ -55,8 +55,8 @@
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.34,
-    "new_to": 0.667,
-    "cum": 0.327
+    "new_to": 0.674,
+    "cum": 0.334
    },
    "place_id": "kaifeng"
   },
@@ -64,12 +64,12 @@
    "kind": "divergence",
    "year": 1076,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.37（本支 0.68 / 史实 0.31）",
+   "description": "改革指数偏离史实 0.38（本支 0.69 / 史实 0.31）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.31,
-    "new_to": 0.683,
-    "cum": 0.373
+    "new_to": 0.692,
+    "cum": 0.382
    },
    "place_id": "kaifeng"
   },
@@ -77,12 +77,12 @@
    "kind": "divergence",
    "year": 1077,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.42（本支 0.70 / 史实 0.28）",
+   "description": "改革指数偏离史实 0.43（本支 0.71 / 史实 0.28）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.28,
-    "new_to": 0.7,
-    "cum": 0.42
+    "new_to": 0.71,
+    "cum": 0.43
    },
    "place_id": "kaifeng"
   },
@@ -90,12 +90,12 @@
    "kind": "divergence",
    "year": 1078,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.47（本支 0.72 / 史实 0.25）",
+   "description": "改革指数偏离史实 0.48（本支 0.73 / 史实 0.25）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.25,
-    "new_to": 0.717,
-    "cum": 0.467
+    "new_to": 0.727,
+    "cum": 0.477
    },
    "place_id": "kaifeng"
   },
@@ -103,12 +103,12 @@
    "kind": "divergence",
    "year": 1079,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.51（本支 0.73 / 史实 0.22）",
+   "description": "改革指数偏离史实 0.53（本支 0.75 / 史实 0.22）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.22,
-    "new_to": 0.733,
-    "cum": 0.513
+    "new_to": 0.745,
+    "cum": 0.525
    },
    "place_id": "kaifeng"
   },
@@ -116,12 +116,12 @@
    "kind": "divergence",
    "year": 1080,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.56（本支 0.75 / 史实 0.19）",
+   "description": "改革指数偏离史实 0.57（本支 0.76 / 史实 0.19）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.19,
-    "new_to": 0.75,
-    "cum": 0.56
+    "new_to": 0.763,
+    "cum": 0.573
    },
    "place_id": "kaifeng"
   },
@@ -129,12 +129,12 @@
    "kind": "divergence",
    "year": 1081,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.61（本支 0.77 / 史实 0.16）",
+   "description": "改革指数偏离史实 0.62（本支 0.78 / 史实 0.16）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.16,
-    "new_to": 0.767,
-    "cum": 0.607
+    "new_to": 0.781,
+    "cum": 0.621
    },
    "place_id": "kaifeng"
   },
@@ -142,12 +142,12 @@
    "kind": "divergence",
    "year": 1082,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.65（本支 0.78 / 史实 0.13）",
+   "description": "改革指数偏离史实 0.67（本支 0.80 / 史实 0.13）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.13,
-    "new_to": 0.783,
-    "cum": 0.653
+    "new_to": 0.798,
+    "cum": 0.668
    },
    "place_id": "kaifeng"
   },
@@ -155,12 +155,12 @@
    "kind": "divergence",
    "year": 1083,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.70（本支 0.80 / 史实 0.10）",
+   "description": "改革指数偏离史实 0.72（本支 0.82 / 史实 0.10）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.1,
-    "new_to": 0.8,
-    "cum": 0.7
+    "new_to": 0.816,
+    "cum": 0.716
    },
    "place_id": "kaifeng"
   },
@@ -168,12 +168,12 @@
    "kind": "divergence",
    "year": 1084,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.75（本支 0.82 / 史实 0.07）",
+   "description": "改革指数偏离史实 0.76（本支 0.83 / 史实 0.07）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.07,
-    "new_to": 0.817,
-    "cum": 0.747
+    "new_to": 0.834,
+    "cum": 0.764
    },
    "place_id": "kaifeng"
   },
@@ -181,12 +181,12 @@
    "kind": "divergence",
    "year": 1085,
    "severity": "bad",
-   "description": "改革指数偏离史实 0.79（本支 0.83 / 史实 0.04）",
+   "description": "改革指数偏离史实 0.81（本支 0.85 / 史实 0.04）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 0.04,
-    "new_to": 0.833,
-    "cum": 0.793
+    "new_to": 0.852,
+    "cum": 0.812
    },
    "place_id": "kaifeng"
   },
@@ -194,9 +194,9 @@
    "kind": "summary",
    "year": 1085,
    "severity": "bad",
-   "description": "终局改革指数：本支 0.83 / 史实 0.04（偏离 0.79）",
+   "description": "终局改革指数：本支 0.85 / 史实 0.04（偏离 0.81）",
    "evidence": {
-    "cum": 0.793,
+    "cum": 0.812,
     "match": 0,
     "total": 1
    },

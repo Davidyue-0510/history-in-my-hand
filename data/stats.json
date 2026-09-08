@@ -1,9 +1,9 @@
 {
-  "scenes_total": 262,
-  "historical": 253,
+  "scenes_total": 261,
+  "historical": 252,
   "fictional": 9,
-  "assertions_total": 4007,
-  "sources_total": 240,
+  "assertions_total": 3992,
+  "sources_total": 238,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -126,7 +126,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 373,
+  "leads_total": 371,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -671,16 +671,6 @@
       "factions": {
         "fajia": 1,
         "guizu": 2
-      }
-    },
-    {
-      "id": "wanganshi",
-      "title": "王安石变法",
-      "kind": "reform",
-      "assertions": 15,
-      "factions": {
-        "jiudang": 1,
-        "xindang": 1
       }
     },
     {
@@ -2094,7 +2084,6 @@
     "qin_unify": "秦灭六国",
     "ming_fall": "明亡·崇祯自缢",
     "shangyang": "商鞅变法",
-    "wanganshi": "王安石变法",
     "huangjin": "黄巾起义",
     "lizicheng": "李自成起义",
     "xiaowen": "孝文帝汉化",

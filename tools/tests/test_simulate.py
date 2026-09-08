@@ -30,10 +30,10 @@ r2, _h2 = S.simulate("imjin", "imjin_ming_full_commit", 1592, 1598,
                      {"朝鲜":20000, "日本方":28000}, reinforce)
 check("分支推演有产出", len(r2) >= 5)
 
-# ── G2 六维广度：非军事反事实推演（song_wanganshi 熙宁变法）──
-cfg = S.load_sim_config("song_wanganshi")
-check("song_wanganshi sim_config 可读", cfg is not None and cfg.get("scenario_type") == "reform")
-sh_p, be_p, rt_p = S.simulate_nonmilitary("song_wanganshi", "persist", 1069, 1085, cfg)
+# ── G2 六维广度：非军事反事实推演（song_wanganshi_llm 熙宁变法）──
+cfg = S.load_sim_config("song_wanganshi_llm")
+check("song_wanganshi_llm sim_config 可读", cfg is not None and cfg.get("scenario_type") == "reform")
+sh_p, be_p, rt_p = S.simulate_nonmilitary("song_wanganshi_llm", "persist", 1069, 1085, cfg)
 check("非军事六维时序产出 17 年", len(sh_p) == 17)
 check("非军事产生 Branch Event", len(be_p) >= 1)
 kind_ok = all(e.get("kind") in ("divergence","logistics","faction","momentum","summary") for e in be_p)

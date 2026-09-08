@@ -47,7 +47,7 @@ function geom(g, style){
 }
 
 function main(){
-  const scene = process.argv[2] || 'song_wanganshi';
+  const scene = process.argv[2] || 'song_wanganshi_llm';
   const S = parseInt(process.argv[3] || '3', 10); // 采样步长（控 SVG 体积）
   const nx = TG.nx, ny = TG.ny, E = TG.elev;
   let emax = 0; for (let k = 0; k < E.length; k++) if (E[k] > emax) emax = E[k];

@@ -212,7 +212,6 @@
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
-| wanganshi | 15 | 3 | **0.000** | event:wa_1069（0.000） | gap 2 / inference 1 / record 9 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | wangyangming | 19 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 5 / record 10 / scholarship 3 |
 | warring_states_shangyang | 12 | 1 | **0.000** | event:qiandu（0.000） | gap 1 / inference 2 / record 5 / scholarship 4 |
@@ -293,8 +292,6 @@
 | shuo_dang | 1 | song_dangzheng | shuo_wen |
 | niu_dang | 1 | tang_dangzheng | niu_wen |
 | li_dang | 1 | tang_dangzheng | li_wen |
-| jiudang | 1 | wanganshi | wen_gong_ji |
-| xindang | 1 | wanganshi | lin_chuan_ji |
 | didang | 1 | wuxu | kang_nian_pu |
 | houding | 1 | wuxu | qing_shi_gao_wx |
 | hanhua | 1 | xiaowen | wei_shu_xw |
@@ -914,9 +911,6 @@
 | event:tp_1851 | taiping | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:tp_1853 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tp_1864 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
-| event:wa_1069 | wanganshi | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
-| event:wa_1070 | wanganshi | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
-| event:wa_1085 | wanganshi | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:wc_641 | wencheng | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:wc_temple | wencheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:wg_91 | wugu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
