@@ -3,9 +3,9 @@
     {
       "id": "keju",
       "title": "keju·综合史料",
-      "party": "学界",
+      "party": "后世官修",
       "availability": "not_free",
-      "bias_note": "G1 自动派生：source 由断言 source 字段汇总，party 归综合史料桶。",
+      "bias_note": "G1 自动派生：source 由断言 source 字段汇总，party 归后世官修桶（v0.153 修正：原归综合史料桶触发 W04）。",
       "distance_label": "综合诸家记述（派生占位）"
     }
   ]

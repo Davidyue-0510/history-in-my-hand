@@ -1,9 +1,9 @@
 {
-  "scenes_total": 202,
-  "historical": 193,
+  "scenes_total": 205,
+  "historical": 196,
   "fictional": 9,
-  "assertions_total": 3163,
-  "sources_total": 180,
+  "assertions_total": 3189,
+  "sources_total": 183,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -47,15 +47,18 @@
     "song_wanganshi_llm",
     "song_yancheng_llm",
     "sui_canal_llm",
+    "sui_keju",
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "susong_llm",
     "tang",
     "tang_anshi_llm",
     "tang_huangchao_llm",
+    "tang_juntian",
     "tang_xuanwumen_llm",
     "three_campaigns",
     "wangyangming",
+    "warring_states_shangyang",
     "warring_states_shangyang_llm",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
@@ -1535,6 +1538,27 @@
       "kind": "frontier",
       "assertions": 16,
       "factions": {}
+    },
+    {
+      "id": "sui_keju",
+      "title": "隋·科举制创立",
+      "kind": "reform",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "warring_states_shangyang",
+      "title": "战国·商鞅变法",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tang_juntian",
+      "title": "唐·均田制",
+      "kind": "reform",
+      "assertions": 6,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1739,6 +1763,9 @@
     "jinshang_llm": "明清晋商与票号",
     "minyue_llm": "汉初闽越国（福州）",
     "yuelu_academy_llm": "岳麓书院与湖湘学派",
-    "anxi_sizhen_llm": "唐安西四镇（西域）"
+    "anxi_sizhen_llm": "唐安西四镇（西域）",
+    "sui_keju": "隋·科举制创立",
+    "warring_states_shangyang": "战国·商鞅变法",
+    "tang_juntian": "唐·均田制"
   }
 }

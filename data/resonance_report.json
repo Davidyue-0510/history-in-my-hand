@@ -2828,7 +2828,7 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 8
+        "后世官修": 8
       },
       "faction_counts": {},
       "event_count": 1,
@@ -3060,7 +3060,7 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 6
+        "后世官修": 6
       },
       "faction_counts": {},
       "event_count": 0,
@@ -3258,7 +3258,7 @@
         "gap": 1
       },
       "party_counts": {
-        "综述考订": 12
+        "后世官修": 12
       },
       "faction_counts": {},
       "event_count": 1,
@@ -14619,23 +14619,14 @@
         "清方": 0,
         "朝鲜": 0,
         "日本方": 0,
-        "综述考订": 1
+        "综述考订": 0
       },
       "parties": {
         "明方": [],
         "清方": [],
         "朝鲜": [],
         "日本方": [],
-        "综述考订": [
-          {
-            "id": "KEJU_06",
-            "predicate": "影响",
-            "value_text": "科举制绵延千三百年，为后世文官制度之滥觞。",
-            "source": "keju",
-            "layer": "inference",
-            "scene": "sui_keju"
-          }
-        ]
+        "综述考订": []
       }
     },
     {
@@ -16552,23 +16543,14 @@
         "清方": 0,
         "朝鲜": 0,
         "日本方": 0,
-        "综述考订": 1
+        "综述考订": 0
       },
       "parties": {
         "明方": [],
         "清方": [],
         "朝鲜": [],
         "日本方": [],
-        "综述考订": [
-          {
-            "id": "SHY_08",
-            "predicate": "迁都",
-            "value_text": "秦孝公十二年徙都咸阳，筑冀阙宫庭，示变法决心。",
-            "source": "shangyang",
-            "layer": "record",
-            "scene": "warring_states_shangyang"
-          }
-        ]
+        "综述考订": []
       }
     },
     {

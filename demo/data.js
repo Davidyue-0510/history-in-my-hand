@@ -51,15 +51,18 @@ window.SANDBOX_DATA = {
    "song_wanganshi_llm",
    "song_yancheng_llm",
    "sui_canal_llm",
+   "sui_keju",
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "susong_llm",
    "tang",
    "tang_anshi_llm",
    "tang_huangchao_llm",
+   "tang_juntian",
    "tang_xuanwumen_llm",
    "three_campaigns",
    "wangyangming",
+   "warring_states_shangyang",
    "warring_states_shangyang_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
@@ -523,8 +526,8 @@ window.SANDBOX_DATA = {
   "minyue_llm",
   "yuelu_academy_llm",
   "anxi_sizhen_llm",
-  "warring_states_shangyang",
   "sui_keju",
+  "warring_states_shangyang",
   "tang_juntian"
  ],
  "vocab": {
@@ -25403,6 +25406,39 @@ window.SANDBOX_DATA = {
     "inference": 1
    }
   },
+  "sui_keju": {
+   "key": "sui_keju",
+   "scene_id": "sui_keju",
+   "title": "隋·科举制创立",
+   "dossier_label": "科举制",
+   "subtitle": "587—618 · 隋",
+   "kind": "reform",
+   "region": "sui_tang",
+   "page": "county.html?scene=sui_keju",
+   "primary_place": null,
+   "vocab_pack": "sui_keju",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "strategic",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 0,
+    "assert": 8,
+    "conflict": 0,
+    "gap": 1,
+    "record": 2,
+    "scholarship": 2,
+    "inference": 3
+   }
+  },
   "warring_states_shangyang": {
    "key": "warring_states_shangyang",
    "scene_id": "warring_states_shangyang",
@@ -25413,7 +25449,7 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "county.html?scene=warring_states_shangyang",
    "primary_place": null,
-   "vocab_pack": "ming_qing",
+   "vocab_pack": "warring_states_shangyang",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
@@ -25437,39 +25473,6 @@ window.SANDBOX_DATA = {
     "inference": 2
    }
   },
-  "sui_keju": {
-   "key": "sui_keju",
-   "scene_id": "sui_keju",
-   "title": "隋·科举制创立",
-   "dossier_label": "科举制",
-   "subtitle": "587—618 · 隋",
-   "kind": "reform",
-   "region": "sui_tang",
-   "page": "county.html?scene=sui_keju",
-   "primary_place": null,
-   "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
-   "dims": [
-    3,
-    4,
-    5,
-    6
-   ],
-   "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 0,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 2,
-    "inference": 3
-   }
-  },
   "tang_juntian": {
    "key": "tang_juntian",
    "scene_id": "tang_juntian",
@@ -25480,7 +25483,7 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=tang_juntian",
    "primary_place": null,
-   "vocab_pack": "ming_qing",
+   "vocab_pack": "tang_juntian",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
@@ -25706,8 +25709,8 @@ window.SANDBOX_DATA = {
   "minyue_llm": "slices/minyue_llm.js",
   "yuelu_academy_llm": "slices/yuelu_academy_llm.js",
   "anxi_sizhen_llm": "slices/anxi_sizhen_llm.js",
-  "warring_states_shangyang": "slices/warring_states_shangyang.js",
   "sui_keju": "slices/sui_keju.js",
+  "warring_states_shangyang": "slices/warring_states_shangyang.js",
   "tang_juntian": "slices/tang_juntian.js"
  },
  "corridors": [

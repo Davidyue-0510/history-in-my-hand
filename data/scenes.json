@@ -405,7 +405,10 @@
   "jinshang_llm",
   "minyue_llm",
   "yuelu_academy_llm",
-  "anxi_sizhen_llm"
+  "anxi_sizhen_llm",
+  "sui_keju",
+  "warring_states_shangyang",
+  "tang_juntian"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -482,7 +485,8 @@
      "layer": "inference",
      "note": "商鞅变法：秦据关中、东向争雄，地缘战略由守转攻"
     }
-   }
+   },
+   "vocab_pack": "warring_states_shangyang"
   },
   "sui_keju": {
    "kind": "reform",
@@ -556,7 +560,8 @@
      "layer": "inference",
      "note": "科举：隋唐统一后文官制巩固中央，地缘战略内向整合"
     }
-   }
+   },
+   "vocab_pack": "sui_keju"
   },
   "tang_juntian": {
    "kind": "reform",
@@ -628,7 +633,8 @@
      "layer": "inference",
      "note": "均田：唐初休养，地缘战略由战乱转向守成"
     }
-   }
+   },
+   "vocab_pack": "tang_juntian"
   },
   "han_wudi_ruxue": {
    "kind": "thought",

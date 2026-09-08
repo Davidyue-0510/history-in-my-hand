@@ -2830,7 +2830,7 @@ window.SANDBOX_RESONANCE = {
     "gap": 1
    },
    "party_counts": {
-    "综述考订": 8
+    "后世官修": 8
    },
    "faction_counts": {},
    "event_count": 1,
@@ -3062,7 +3062,7 @@ window.SANDBOX_RESONANCE = {
     "gap": 1
    },
    "party_counts": {
-    "综述考订": 6
+    "后世官修": 6
    },
    "faction_counts": {},
    "event_count": 0,
@@ -3260,7 +3260,7 @@ window.SANDBOX_RESONANCE = {
     "gap": 1
    },
    "party_counts": {
-    "综述考订": 12
+    "后世官修": 12
    },
    "faction_counts": {},
    "event_count": 1,
