@@ -37,6 +37,7 @@ window.SANDBOX_RESONANCE = {
    "chu_han",
    "chuhai_llm",
    "compass_navigation",
+   "dagukou_battle_llm",
    "dalinghe",
    "diaoyucheng",
    "dingwu",
@@ -98,6 +99,7 @@ window.SANDBOX_RESONANCE = {
    "keju",
    "kunyang",
    "liangshui",
+   "liangzhou_meeting_llm",
    "liaoyang",
    "lingqu",
    "little_ice",
@@ -709,6 +711,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": null,
    "best_resonance": null
+  },
+  {
+   "scene": "dagukou_battle_llm",
+   "name": "dagukou_battle_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "gap": 4,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 5,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_dagukou_battle_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "dalinghe",
@@ -1895,6 +1916,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ls_780",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "liangzhou_meeting_llm",
+   "name": "liangzhou_meeting_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_liangzhou_meeting_llm_01",
    "best_resonance": 0.0
   },
   {

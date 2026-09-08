@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "LIA__p01",
+   "name": "阔端",
+   "role": "蒙古皇子，驻凉州经略秦陇青藏",
+   "note": "蒙古太宗窝阔台之子",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "LIA__p02",
+   "name": "萨迦·班智达贡嘎坚赞",
+   "role": "西藏佛教萨迦派领袖",
+   "note": "简称萨班",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

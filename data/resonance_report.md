@@ -38,6 +38,7 @@
 | chu_han | 17 | 6 | **0.000** | event:chenggao（0.000） | gap 1 / record 16 |
 | chuhai_llm | 17 | 5 | **0.000** | event:ev_chuhai_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 2 |
 | compass_navigation | 10 | 0 | **0.000** | —（0.000） | gap 1 / inference 2 / record 4 / scholarship 3 |
+| dagukou_battle_llm | 14 | 5 | **0.000** | event:ev_dagukou_battle_llm_01（0.000） | gap 4 / inference 1 / record 8 / scholarship 1 |
 | dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
 | diaoyucheng | 18 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 8 / scholarship 4 |
 | dingwu | 14 | 3 | **0.000** | event:dw_1876（0.000） | gap 1 / record 10 / scholarship 3 |
@@ -99,6 +100,7 @@
 | keju | 17 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 10 / scholarship 3 |
 | kunyang | 19 | 3 | **0.000** | event:ky_jz（0.000） | gap 2 / inference 1 / record 10 / scholarship 6 |
 | liangshui | 15 | 2 | **0.000** | event:ls_780（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
+| liangzhou_meeting_llm | 13 | 3 | **0.000** | event:ev_liangzhou_meeting_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | 辽阳 | 65 | 2 | **0.426** | 辽阳陷落（1621）（0.520） | gap 3 / inference 1 / record 51 / scholarship 10 |
 | lingqu | 12 | 2 | **0.000** | event:lq_214（0.000） | gap 2 / inference 2 / record 6 / scholarship 2 |
 | little_ice | 12 | 5 | **0.000** | event:li_1580（0.000） | gap 2 / inference 2 / record 3 / scholarship 5 |
@@ -333,6 +335,11 @@
 | event:ev_chuhai_llm_03 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_chuhai_llm_04 | chuhai_llm | **0.000** | 0/3 | 0.67 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_chuhai_llm_05 | chuhai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_dagukou_battle_llm_01 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dagukou_battle_llm_02 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dagukou_battle_llm_03 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.50 | 8 | 0 / 0 / 0 / 0 |
+| event:ev_dagukou_battle_llm_04 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dagukou_battle_llm_05 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_dujiangyan_02 | dujiangyan | **0.000** | 0/3 | 0.09 | 0.07 | 14 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_01 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_02 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
@@ -378,6 +385,9 @@
 | event:ev_jinshang_llm_01 | jinshang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_jinshang_llm_02 | jinshang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_jinshang_llm_03 | jinshang_llm | **0.000** | 0/3 | 1.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_liangzhou_meeting_llm_01 | liangzhou_meeting_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_liangzhou_meeting_llm_02 | liangzhou_meeting_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_liangzhou_meeting_llm_03 | liangzhou_meeting_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tumu_02 | ming_tumu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tumu_03 | ming_tumu_llm | **0.000** | 0/3 | 0.12 | 0.09 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tumu_04 | ming_tumu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "liangzhou",
+   "name": "凉州",
+   "type": "city",
+   "modern": "今中国甘肃武威",
+   "note": "阔端驻兵地",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 102.63,
+   "lat": 37.93,
+   "geo_note": "今甘肃武威"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

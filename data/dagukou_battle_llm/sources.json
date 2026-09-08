@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "dagukou_src_llm",
+   "title": "第二次鸦片战争·大沽口战事（现代概述）",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "world-gen 抽取",
+   "period": "清咸丰八至十年（1858–1860）",
+   "note": ""
+  }
+ ]
+}

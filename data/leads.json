@@ -577,6 +577,68 @@
    "_src_line": 8
   },
   {
+   "id": "DAG_010",
+   "scene": "dagukou_battle_llm",
+   "subject": "event:ev_dagukou_battle_llm_03",
+   "title": "联军兵力未详",
+   "missing": "军事史 / 档案学",
+   "where": "英国国家档案馆、法国陆军档案",
+   "skills": [
+    "军事史",
+    "档案学"
+   ],
+   "accept": "查联军参战兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "DAG_011",
+   "scene": "dagukou_battle_llm",
+   "subject": "event:ev_dagukou_battle_llm_03",
+   "title": "清军兵力未详",
+   "missing": "清史 / 军事档案",
+   "where": "中国第一历史档案馆",
+   "skills": [
+    "清史",
+    "军事档案"
+   ],
+   "accept": "查僧格林沁部兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "DAG_013",
+   "scene": "dagukou_battle_llm",
+   "subject": "event:ev_dagukou_battle_llm_03",
+   "title": "清军战术未详",
+   "missing": "军事史",
+   "where": "清军战报、英法战史",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "查清军防御部署",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "DAG_014",
+   "scene": "dagukou_battle_llm",
+   "subject": "event:ev_dagukou_battle_llm_03",
+   "title": "联军战术未详",
+   "missing": "海军史",
+   "where": "英法海军档案",
+   "skills": [
+    "海军史"
+   ],
+   "accept": "查联军登陆战术",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",
@@ -2046,6 +2108,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "LIA_013",
+   "scene": "liangzhou_meeting_llm",
+   "subject": "event:ev_liangzhou_meeting_llm_01",
+   "title": "具体谈判过程不详",
+   "missing": "历史考据 / 藏文文献",
+   "where": "凉州会谈现场",
+   "skills": [
+    "历史考据",
+    "藏文文献"
+   ],
+   "accept": "会谈具体议程与参与人员",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "L016",

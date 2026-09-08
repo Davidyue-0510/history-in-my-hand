@@ -408,7 +408,9 @@
   "anxi_sizhen_llm",
   "sui_keju",
   "warring_states_shangyang",
-  "tang_juntian"
+  "tang_juntian",
+  "dagukou_battle_llm",
+  "liangzhou_meeting_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -17307,6 +17309,156 @@
     2,
     3,
     4,
+    5,
+    6
+   ]
+  },
+  "dagukou_battle_llm": {
+   "kind": "battle",
+   "region": "huabei",
+   "province": "tianjin",
+   "title": "大沽口之战（第二次鸦片战争）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "dagukou",
+   "dossier_event": "event:ev_dagukou_battle_llm_01",
+   "vocab_pack": "dagukou_battle_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "大沽口之战（第二次鸦片战争）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "大沽口之战（第二次鸦片战争）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "大沽口之战（第二次鸦片战争）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "大沽口之战（第二次鸦片战争）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ]
+  },
+  "liangzhou_meeting_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "凉州会谈（1247，西藏归附蒙古）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "liangzhou",
+   "dossier_event": "event:ev_liangzhou_meeting_llm_01",
+   "vocab_pack": "liangzhou_meeting_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "凉州会谈（1247，西藏归附蒙古）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "凉州会谈（1247，西藏归附蒙古）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "凉州会谈（1247，西藏归附蒙古）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "凉州会谈（1247，西藏归附蒙古）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
     5,
     6
    ]

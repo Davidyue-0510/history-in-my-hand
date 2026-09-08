@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "dagukou",
+   "name": "大沽口",
+   "type": "port",
+   "modern": "今天津市滨海新区",
+   "note": "海河入海处，津门门户",
+   "_source_idx": 0,
+   "_source_name": "第二次鸦片战争·大沽口战事（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "tianjin",
+   "name": "天津",
+   "type": "city",
+   "modern": "今天津市",
+   "note": "联军攻占",
+   "_source_idx": 0,
+   "_source_name": "第二次鸦片战争·大沽口战事（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.2,
+   "lat": 39.13,
+   "geo_note": "平津战役·天津攻坚战"
+  },
+  {
+   "id": "beijing",
+   "name": "北京",
+   "type": "city",
+   "modern": "今北京市",
+   "note": "联军进逼",
+   "_source_idx": 0,
+   "_source_name": "第二次鸦片战争·大沽口战事（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 116.4,
+   "lat": 39.9,
+   "geo_note": "平津战役·傅作义起义"
+  },
+  {
+   "id": "yuanmingyuan",
+   "name": "圆明园",
+   "type": "region",
+   "modern": "今北京市海淀区",
+   "note": "被焚毁",
+   "_source_idx": 0,
+   "_source_name": "第二次鸦片战争·大沽口战事（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

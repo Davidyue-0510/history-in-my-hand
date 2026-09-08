@@ -1,9 +1,9 @@
 {
-  "scenes_total": 205,
-  "historical": 196,
+  "scenes_total": 207,
+  "historical": 198,
   "fictional": 9,
-  "assertions_total": 3234,
-  "sources_total": 183,
+  "assertions_total": 3261,
+  "sources_total": 185,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -13,6 +13,7 @@
     "chibi_llm",
     "chu_han",
     "chuhai_llm",
+    "dagukou_battle_llm",
     "dujiangyan",
     "feishui_llm",
     "foguo_chan_llm",
@@ -27,6 +28,7 @@
     "hunan_changsha_llm",
     "jilin_gaogouli_llm",
     "jinshang_llm",
+    "liangzhou_meeting_llm",
     "ming_qing",
     "ming_tumu_llm",
     "ming_zhenghe_llm",
@@ -69,7 +71,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 298,
+  "leads_total": 303,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1559,6 +1561,20 @@
       "kind": "reform",
       "assertions": 9,
       "factions": {}
+    },
+    {
+      "id": "dagukou_battle_llm",
+      "title": "大沽口之战（第二次鸦片战争）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "liangzhou_meeting_llm",
+      "title": "凉州会谈（1247，西藏归附蒙古）",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1766,6 +1782,8 @@
     "anxi_sizhen_llm": "唐安西四镇（西域）",
     "sui_keju": "隋·科举制创立",
     "warring_states_shangyang": "战国·商鞅变法",
-    "tang_juntian": "唐·均田制"
+    "tang_juntian": "唐·均田制",
+    "dagukou_battle_llm": "大沽口之战（第二次鸦片战争）",
+    "liangzhou_meeting_llm": "凉州会谈（1247，西藏归附蒙古）"
   }
 }

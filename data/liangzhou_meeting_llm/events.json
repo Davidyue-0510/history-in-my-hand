@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_liangzhou_meeting_llm_01",
+   "subject": "event:ev_liangzhou_meeting_llm_01",
+   "year": 1247,
+   "era": "乃马真后称制元年",
+   "title": "凉州会谈",
+   "kind": "外交",
+   "text": "萨班应阔端邀赴凉州会谈",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_liangzhou_meeting_llm_02",
+   "subject": "event:ev_liangzhou_meeting_llm_02",
+   "year": 1247,
+   "era": "乃马真后称制元年",
+   "title": "议定归顺",
+   "kind": "外交",
+   "text": "议定西藏归顺蒙古",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_liangzhou_meeting_llm_03",
+   "subject": "event:ev_liangzhou_meeting_llm_03",
+   "year": 1247,
+   "era": "乃马真后称制元年",
+   "title": "致蕃人书",
+   "kind": "行政",
+   "text": "萨班呈《致蕃人书》劝谕纳款",
+   "_source_idx": 0,
+   "_source_name": "萨迦班智达与阔端凉州会谈记述（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
