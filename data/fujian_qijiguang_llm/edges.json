@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "fujian",
+   "to": "heng_yu",
+   "type": "military",
+   "label": "戚继光渡海攻横屿",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "heng_yu",
+   "to": "niu_tian",
+   "type": "military",
+   "label": "破横屿后转攻牛田",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "niu_tian",
+   "to": "lin_dun",
+   "type": "military",
+   "label": "破牛田后攻林墩",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "lin_dun",
+   "to": "ping_hai_wei",
+   "type": "military",
+   "label": "攻平海卫",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "ping_hai_wei",
+   "to": "guang_dong",
+   "type": "reinforcement",
+   "label": "肃清福建后援广东",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

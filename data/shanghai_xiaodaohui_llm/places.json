@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "shanghai_county",
+   "name": "上海县城",
+   "type": "city",
+   "modern": "今中国上海市",
+   "note": "起义军占领之地",
+   "_source_idx": 0,
+   "_source_name": "上海小刀会起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "刘丽川",
+   "role": "上海小刀会首领，大明国元帅",
+   "note": "领导起义，后战死",
+   "_source_idx": 0,
+   "_source_name": "上海小刀会起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "袁祖德",
+   "role": "上海知县",
+   "note": "被起义军所杀",
+   "_source_idx": 0,
+   "_source_name": "上海小刀会起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

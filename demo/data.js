@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 216 个切片
+// 权威数据源：data/scenes.json 注册的 220 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 216 个切片",
+  "slice": "multi-scene · 220 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -24,6 +24,7 @@ window.SANDBOX_DATA = {
    "dujiangyan",
    "feishui_llm",
    "foguo_chan_llm",
+   "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
    "guandu_llm",
    "guangxi_taiping_llm",
@@ -44,6 +45,8 @@ window.SANDBOX_DATA = {
    "minyue_llm",
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
+   "neimenggu_zhaojun_llm",
+   "ningxia_xixia_llm",
    "pingbo_zhiyi_llm",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
@@ -54,6 +57,7 @@ window.SANDBOX_DATA = {
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
+   "shanghai_xiaodaohui_llm",
    "shu_han_found_llm",
    "song",
    "song_chanchuan_llm",
@@ -550,7 +554,11 @@ window.SANDBOX_DATA = {
   "xizang_tubo_llm",
   "guangxi_taiping_llm",
   "hainan_xianfuren_llm",
-  "qinghai_gusiluo_llm"
+  "qinghai_gusiluo_llm",
+  "fujian_qijiguang_llm",
+  "shanghai_xiaodaohui_llm",
+  "ningxia_xixia_llm",
+  "neimenggu_zhaojun_llm"
  ],
  "vocab": {
   "layers": [
@@ -25936,6 +25944,136 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "fujian_qijiguang_llm": {
+   "key": "fujian_qijiguang_llm",
+   "scene_id": "fujian_qijiguang_llm",
+   "title": "戚继光福建抗倭（1562—1563）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "jiangnan",
+   "page": "fujian_qijiguang_llm.html",
+   "primary_place": "fujian",
+   "vocab_pack": "fujian_qijiguang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 10,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 4,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "shanghai_xiaodaohui_llm": {
+   "key": "shanghai_xiaodaohui_llm",
+   "scene_id": "shanghai_xiaodaohui_llm",
+   "title": "上海小刀会起义（1853—1855）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "jiangnan",
+   "page": "county.html?scene=shanghai_xiaodaohui_llm",
+   "primary_place": "shanghai_county",
+   "vocab_pack": "shanghai_xiaodaohui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "ningxia_xixia_llm": {
+   "key": "ningxia_xixia_llm",
+   "scene_id": "ningxia_xixia_llm",
+   "title": "西夏立国（李元昊称帝，1038）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=ningxia_xixia_llm",
+   "primary_place": "xingqing",
+   "vocab_pack": "ningxia_xixia_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 15,
+    "conflict": 1,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "neimenggu_zhaojun_llm": {
+   "key": "neimenggu_zhaojun_llm",
+   "scene_id": "neimenggu_zhaojun_llm",
+   "title": "昭君出塞（王昭君和亲匈奴，前33）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "fusion",
+   "region": "fusion",
+   "page": "county.html?scene=neimenggu_zhaojun_llm",
+   "primary_place": "mobei",
+   "vocab_pack": "neimenggu_zhaojun_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 4,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 2,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26154,7 +26292,11 @@ window.SANDBOX_DATA = {
   "xizang_tubo_llm": "slices/xizang_tubo_llm.js",
   "guangxi_taiping_llm": "slices/guangxi_taiping_llm.js",
   "hainan_xianfuren_llm": "slices/hainan_xianfuren_llm.js",
-  "qinghai_gusiluo_llm": "slices/qinghai_gusiluo_llm.js"
+  "qinghai_gusiluo_llm": "slices/qinghai_gusiluo_llm.js",
+  "fujian_qijiguang_llm": "slices/fujian_qijiguang_llm.js",
+  "shanghai_xiaodaohui_llm": "slices/shanghai_xiaodaohui_llm.js",
+  "ningxia_xixia_llm": "slices/ningxia_xixia_llm.js",
+  "neimenggu_zhaojun_llm": "slices/neimenggu_zhaojun_llm.js"
  },
  "corridors": [
   {

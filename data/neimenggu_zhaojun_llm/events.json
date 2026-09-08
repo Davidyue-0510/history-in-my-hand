@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_neimenggu_zhaojun_llm_01",
+   "subject": "event:ev_neimenggu_zhaojun_llm_01",
+   "year": -33,
+   "era": "竟宁元年",
+   "title": "呼韩邪入朝求亲",
+   "kind": "外交",
+   "text": "呼韩邪单于入朝求亲",
+   "_source_idx": 0,
+   "_source_name": "昭君出塞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_neimenggu_zhaojun_llm_02",
+   "subject": "event:ev_neimenggu_zhaojun_llm_02",
+   "year": -33,
+   "era": "竟宁元年",
+   "title": "昭君出塞",
+   "kind": "外交",
+   "text": "元帝赐王嫱予呼韩邪",
+   "_source_idx": 0,
+   "_source_name": "昭君出塞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_neimenggu_zhaojun_llm_03",
+   "subject": "event:ev_neimenggu_zhaojun_llm_03",
+   "year": -31,
+   "era": "建始二年",
+   "title": "复嫁单于弟",
+   "kind": "其他",
+   "text": "依匈奴俗复嫁复株累",
+   "_source_idx": 0,
+   "_source_name": "昭君出塞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

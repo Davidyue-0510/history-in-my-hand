@@ -943,6 +943,66 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "FUJ_010",
+   "scene": "fujian_qijiguang_llm",
+   "subject": "event:ev_fujian_qijiguang_llm_04",
+   "title": "倭寇被歼，具体数目不详",
+   "missing": "明清史料考订",
+   "where": "平海卫之战",
+   "skills": [
+    "明清史料考订"
+   ],
+   "accept": "查《明史》或地方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "FUJ_011",
+   "scene": "fujian_qijiguang_llm",
+   "subject": "event:ev_fujian_qijiguang_llm_01",
+   "title": "戚家军兵力未明",
+   "missing": "明代兵制",
+   "where": "戚继光年谱",
+   "skills": [
+    "明代兵制"
+   ],
+   "accept": "查《戚少保年谱》",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "FUJ_013",
+   "scene": "fujian_qijiguang_llm",
+   "subject": "event:ev_fujian_qijiguang_llm_02",
+   "title": "横屿之战倭寇伤亡未详",
+   "missing": "明清史料",
+   "where": "横屿之战",
+   "skills": [
+    "明清史料"
+   ],
+   "accept": "查《明史纪事本末》",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "FUJ_014",
+   "scene": "fujian_qijiguang_llm",
+   "subject": "event:ev_fujian_qijiguang_llm_03",
+   "title": "牛田、林墩之战倭寇损失未详",
+   "missing": "地方志",
+   "where": "牛田、林墩之战",
+   "skills": [
+    "地方志"
+   ],
+   "accept": "查《福清县志》",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "FUJIG2",
    "scene": "fujian_quanzhou_llm",
    "subject": "event:ev_fujian_quanzhou_llm_01",
@@ -2662,6 +2722,36 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "NEI_011",
+   "scene": "neimenggu_zhaojun_llm",
+   "subject": "person:NEI__p01",
+   "title": "昭君自愿与否未明",
+   "missing": "文献考据",
+   "where": "汉书·匈奴传",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "昭君自愿出塞",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "NEI_012",
+   "scene": "neimenggu_zhaojun_llm",
+   "subject": "event:ev_neimenggu_zhaojun_llm_01",
+   "title": "呼韩邪求亲动机未详",
+   "missing": "政治史分析",
+   "where": "汉书·匈奴传",
+   "skills": [
+    "政治史分析"
+   ],
+   "accept": "求亲为政治联盟",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "NXG01",
    "scene": "ningxia",
    "subject": "event:ningxia_pingding",
@@ -2676,6 +2766,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "NIN_015",
+   "scene": "ningxia_xixia_llm",
+   "subject": "event:ev_ningxia_xixia_llm_01",
+   "title": "西夏文使用范围待考",
+   "missing": "西夏文解读 / 考古学",
+   "where": "西夏故地",
+   "skills": [
+    "西夏文解读",
+    "考古学"
+   ],
+   "accept": "西夏文使用范围",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "N010",
@@ -3276,6 +3382,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 84
+  },
+  {
+   "id": "SHA_015",
+   "scene": "shanghai_xiaodaohui_llm",
+   "subject": "event:ev_shanghai_xiaodaohui_llm_02",
+   "title": "东南反清斗争受挫",
+   "missing": "史料考据",
+   "where": "上海及周边",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "起义失败对太平天国的影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "SHANGYANGG01",

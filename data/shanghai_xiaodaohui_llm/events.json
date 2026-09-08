@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shanghai_xiaodaohui_llm_01",
+   "subject": "event:ev_shanghai_xiaodaohui_llm_01",
+   "year": 1853,
+   "era": "咸丰三年八月初五",
+   "title": "上海小刀会起义",
+   "kind": "战事",
+   "text": "起义军攻占上海县城，杀知县袁祖德",
+   "_source_idx": 0,
+   "_source_name": "上海小刀会起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanghai_xiaodaohui_llm_02",
+   "subject": "event:ev_shanghai_xiaodaohui_llm_02",
+   "year": 1855,
+   "era": "咸丰五年正月",
+   "title": "上海县城陷落",
+   "kind": "战事",
+   "text": "清军联合外国势力破城，刘丽川战死",
+   "_source_idx": 0,
+   "_source_name": "上海小刀会起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

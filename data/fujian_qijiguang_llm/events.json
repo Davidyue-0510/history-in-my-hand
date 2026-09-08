@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_qijiguang_llm_01",
+   "subject": "event:ev_fujian_qijiguang_llm_01",
+   "year": 1562,
+   "era": "嘉靖四十一年",
+   "title": "戚继光入闽",
+   "kind": "战事",
+   "text": "倭寇大举犯闽，戚继光奉调入闽",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_qijiguang_llm_02",
+   "subject": "event:ev_fujian_qijiguang_llm_02",
+   "year": 1562,
+   "era": "嘉靖四十一年",
+   "title": "横屿之战",
+   "kind": "战事",
+   "text": "渡海涉泥登岛，捣毁横屿倭巢",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_qijiguang_llm_03",
+   "subject": "event:ev_fujian_qijiguang_llm_03",
+   "year": 1562,
+   "era": "嘉靖四十一年",
+   "title": "牛田、林墩之战",
+   "kind": "战事",
+   "text": "连战连捷，破福清牛田、莆田林墩",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_qijiguang_llm_04",
+   "subject": "event:ev_fujian_qijiguang_llm_04",
+   "year": 1563,
+   "era": "嘉靖四十二年",
+   "title": "平海卫之战",
+   "kind": "战事",
+   "text": "仙游平海卫大捷，基本肃清福建倭患",
+   "_source_idx": 0,
+   "_source_name": "戚继光福建抗倭史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

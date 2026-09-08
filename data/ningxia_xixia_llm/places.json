@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "xingqing",
+   "name": "兴庆府",
+   "type": "city",
+   "modern": "今宁夏银川",
+   "note": "西夏都城",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lingzhou",
+   "name": "灵州",
+   "type": "city",
+   "modern": "今宁夏灵武",
+   "note": "李继迁收复",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "sanchuankou",
+   "name": "三川口",
+   "type": "fortress",
+   "modern": "今陕西北部",
+   "note": "宋夏战场",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "haoshuichuan",
+   "name": "好水川",
+   "type": "fortress",
+   "modern": "今宁夏隆德",
+   "note": "宋夏战场",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dingchuanzhai",
+   "name": "定川寨",
+   "type": "fortress",
+   "modern": "今宁夏固原",
+   "note": "宋夏战场",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

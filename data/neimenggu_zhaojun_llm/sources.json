@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "zhaojun_llm_src",
+   "title": "昭君出塞史料摘录",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "LLM 摘要（paraphrase_unverified）",
+   "period": "前33",
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "xixia_llm_src",
+   "title": "西夏立国史料摘录",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "LLM 摘要（paraphrase_unverified）",
+   "period": "1038—1227",
+   "note": ""
+  }
+ ]
+}

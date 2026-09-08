@@ -419,7 +419,11 @@
   "xizang_tubo_llm",
   "guangxi_taiping_llm",
   "hainan_xianfuren_llm",
-  "qinghai_gusiluo_llm"
+  "qinghai_gusiluo_llm",
+  "fujian_qijiguang_llm",
+  "shanghai_xiaodaohui_llm",
+  "ningxia_xixia_llm",
+  "neimenggu_zhaojun_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -18148,6 +18152,304 @@
    "dims": [
     1,
     3,
+    5,
+    6
+   ]
+  },
+  "fujian_qijiguang_llm": {
+   "kind": "battle",
+   "region": "jiangnan",
+   "province": "fujian",
+   "title": "戚继光福建抗倭（1562—1563）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "fujian",
+   "dossier_event": "event:ev_fujian_qijiguang_llm_01",
+   "vocab_pack": "fujian_qijiguang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "戚继光福建抗倭（1562—1563）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "戚继光福建抗倭（1562—1563）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "戚继光福建抗倭（1562—1563）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "戚继光福建抗倭（1562—1563）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    6
+   ]
+  },
+  "shanghai_xiaodaohui_llm": {
+   "kind": "uprising",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "上海小刀会起义（1853—1855）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shanghai_county",
+   "dossier_event": "event:ev_shanghai_xiaodaohui_llm_01",
+   "vocab_pack": "shanghai_xiaodaohui_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海小刀会起义（1853—1855）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "上海小刀会起义（1853—1855）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "上海小刀会起义（1853—1855）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "上海小刀会起义（1853—1855）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "ningxia_xixia_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "ningxia",
+   "title": "西夏立国（李元昊称帝，1038）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xingqing",
+   "dossier_event": "event:ev_ningxia_xixia_llm_01",
+   "vocab_pack": "ningxia_xixia_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "西夏立国（李元昊称帝，1038）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "西夏立国（李元昊称帝，1038）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "西夏立国（李元昊称帝，1038）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "西夏立国（李元昊称帝，1038）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "neimenggu_zhaojun_llm": {
+   "kind": "fusion",
+   "region": "fusion",
+   "province": "neimenggu",
+   "title": "昭君出塞（王昭君和亲匈奴，前33）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "mobei",
+   "dossier_event": "event:ev_neimenggu_zhaojun_llm_01",
+   "vocab_pack": "neimenggu_zhaojun_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "昭君出塞（王昭君和亲匈奴，前33）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "昭君出塞（王昭君和亲匈奴，前33）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "昭君出塞（王昭君和亲匈奴，前33）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "昭君出塞（王昭君和亲匈奴，前33）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
     5,
     6
    ]

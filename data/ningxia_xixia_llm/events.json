@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_ningxia_xixia_llm_01",
+   "subject": "event:ev_ningxia_xixia_llm_01",
+   "year": 1038,
+   "era": "宝元元年",
+   "title": "李元昊称帝",
+   "kind": "建置",
+   "text": "元昊称帝，国号大夏",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ningxia_xixia_llm_02",
+   "subject": "event:ev_ningxia_xixia_llm_02",
+   "year": 1038,
+   "era": "宝元元年",
+   "title": "定都兴庆府",
+   "kind": "建置",
+   "text": "定都兴庆府，创制西夏文",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ningxia_xixia_llm_03",
+   "subject": "event:ev_ningxia_xixia_llm_03",
+   "year": 1227,
+   "era": "宝庆三年",
+   "title": "蒙古灭夏",
+   "kind": "战事",
+   "text": "蒙古灭夏，党项政权终结",
+   "_source_idx": 0,
+   "_source_name": "西夏立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

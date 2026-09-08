@@ -1,9 +1,9 @@
 {
-  "scenes_total": 216,
-  "historical": 207,
+  "scenes_total": 220,
+  "historical": 211,
   "fictional": 9,
-  "assertions_total": 3392,
-  "sources_total": 194,
+  "assertions_total": 3448,
+  "sources_total": 198,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -20,6 +20,7 @@
     "dujiangyan",
     "feishui_llm",
     "foguo_chan_llm",
+    "fujian_qijiguang_llm",
     "fujian_quanzhou_llm",
     "guandu_llm",
     "guangxi_taiping_llm",
@@ -40,6 +41,8 @@
     "minyue_llm",
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
+    "neimenggu_zhaojun_llm",
+    "ningxia_xixia_llm",
     "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
     "qin_fenshu_llm",
@@ -50,6 +53,7 @@
     "qinghai_gusiluo_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
+    "shanghai_xiaodaohui_llm",
     "shu_han_found_llm",
     "song",
     "song_chanchuan_llm",
@@ -80,7 +84,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 311,
+  "leads_total": 319,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1647,6 +1651,34 @@
       "kind": "frontier",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "fujian_qijiguang_llm",
+      "title": "戚继光福建抗倭（1562—1563）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shanghai_xiaodaohui_llm",
+      "title": "上海小刀会起义（1853—1855）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "ningxia_xixia_llm",
+      "title": "西夏立国（李元昊称帝，1038）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "neimenggu_zhaojun_llm",
+      "title": "昭君出塞（王昭君和亲匈奴，前33）",
+      "kind": "fusion",
+      "assertions": 12,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1865,6 +1897,10 @@
     "xizang_tubo_llm": "吐蕃王朝（松赞干布统一，618—842）",
     "guangxi_taiping_llm": "太平天国金田起义（1851—1864）",
     "hainan_xianfuren_llm": "冼夫人（南朝梁陈隋，约 512—602）",
-    "qinghai_gusiluo_llm": "唃厮啰政权（吐蕃后裔，1015—1103）"
+    "qinghai_gusiluo_llm": "唃厮啰政权（吐蕃后裔，1015—1103）",
+    "fujian_qijiguang_llm": "戚继光福建抗倭（1562—1563）",
+    "shanghai_xiaodaohui_llm": "上海小刀会起义（1853—1855）",
+    "ningxia_xixia_llm": "西夏立国（李元昊称帝，1038）",
+    "neimenggu_zhaojun_llm": "昭君出塞（王昭君和亲匈奴，前33）"
   }
 }
