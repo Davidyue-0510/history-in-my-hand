@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "gaochang",
+   "name": "高昌",
+   "type": "city",
+   "modern": "今新疆吐鲁番",
+   "note": "贞观十四年灭高昌",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 89.55,
+   "lat": 42.95,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiaohe",
+   "name": "交河",
+   "type": "city",
+   "modern": "今新疆吐鲁番西",
+   "note": "初置安西都护府",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 89.07,
+   "lat": 42.95,
+   "geo_unresolved": true
+  },
+  {
+   "id": "qiuzi",
+   "name": "龟兹",
+   "type": "city",
+   "modern": "今新疆库车",
+   "note": "安西都护府治所",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 82.92,
+   "lat": 41.72,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yutian",
+   "name": "于阗",
+   "type": "city",
+   "modern": "今新疆和田",
+   "note": "安西四镇之一",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 79.92,
+   "lat": 37.12,
+   "geo_unresolved": true
+  },
+  {
+   "id": "shule",
+   "name": "疏勒",
+   "type": "city",
+   "modern": "今新疆喀什",
+   "note": "安西四镇之一",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 75.99,
+   "lat": 39.47,
+   "geo_unresolved": true
+  },
+  {
+   "id": "suiye",
+   "name": "碎叶",
+   "type": "city",
+   "modern": "今吉尔吉斯斯坦托克马克",
+   "note": "安西四镇之一",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·西域传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 75.23,
+   "lat": 42.83,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

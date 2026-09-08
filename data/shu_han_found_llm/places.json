@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "type": "city",
+   "modern": "今中国四川成都",
+   "note": "蜀汉都城",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.07,
+   "lat": 30.66,
+   "geo_note": "今四川成都"
+  },
+  {
+   "id": "hanzhong",
+   "name": "汉中",
+   "type": "region",
+   "modern": "今中国陕西汉中",
+   "note": "刘备称王之地",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 107.97,
+   "lat": 33.07,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

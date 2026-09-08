@@ -11,6 +11,7 @@ window.SANDBOX_RESONANCE = {
    "综述考订"
   ],
   "scenes": [
+   "anxi_sizhen_llm",
    "aomen_portugal_llm",
    "baijia",
    "beijing",
@@ -84,6 +85,7 @@ window.SANDBOX_RESONANCE = {
    "jiasixie",
    "jilin_gaogouli_llm",
    "jingnan",
+   "jinshang_llm",
    "jinzhou",
    "jinzhouwei",
    "jiupin",
@@ -110,7 +112,9 @@ window.SANDBOX_RESONANCE = {
    "mingmo_dangzheng",
    "mingmo_jihuang",
    "mingmo_shuyi",
+   "minyue_llm",
    "mobai",
+   "nan_song_linan_llm",
    "nanzhao_dali_llm",
    "ningxia",
    "ningyuan",
@@ -130,6 +134,7 @@ window.SANDBOX_RESONANCE = {
    "shaqiu",
    "shenkuo",
    "shenyang",
+   "shu_han_found_llm",
    "song_chan_yuan",
    "song_chanchuan_llm",
    "song_dangzheng",
@@ -187,6 +192,7 @@ window.SANDBOX_RESONANCE = {
    "yiling",
    "yuan_duo",
    "yuan_xingsheng_llm",
+   "yuelu_academy_llm",
    "zhangheng",
    "zhangjuzheng",
    "zhangqian",
@@ -215,6 +221,25 @@ window.SANDBOX_RESONANCE = {
   }
  },
  "scene_summary": [
+  {
+   "scene": "anxi_sizhen_llm",
+   "name": "anxi_sizhen_llm",
+   "total": 16,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_anxi_sizhen_llm_01",
+   "best_resonance": 0.0
+  },
   {
    "scene": "aomen_portugal_llm",
    "name": "aomen_portugal_llm",
@@ -1616,6 +1641,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "jinshang_llm",
+   "name": "jinshang_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 3,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jinshang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "jinzhou",
    "name": "jinzhou",
    "total": 15,
@@ -2127,6 +2171,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "minyue_llm",
+   "name": "minyue_llm",
+   "total": 15,
+   "layers": {
+    "record": 11,
+    "inference": 1,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_minyue_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "mobai",
    "name": "mobai",
    "total": 18,
@@ -2142,6 +2205,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:mb_chu",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "nan_song_linan_llm",
+   "name": "nan_song_linan_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_nan_song_linan_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2520,6 +2602,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.387,
    "best_event": "event:shenyang_relief",
    "best_resonance": 0.825
+  },
+  {
+   "scene": "shu_han_found_llm",
+   "name": "shu_han_found_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_shu_han_found_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "song_chan_yuan",
@@ -3635,6 +3736,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_yuan_xingsheng_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yuelu_academy_llm",
+   "name": "yuelu_academy_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yuelu_academy_llm_01",
    "best_resonance": 0.0
   },
   {

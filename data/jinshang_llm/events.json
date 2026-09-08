@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jinshang_llm_01",
+   "subject": "event:ev_jinshang_llm_01",
+   "year": 1550,
+   "era": "明中叶",
+   "title": "晋商兴起",
+   "kind": "其他",
+   "text": "山西商人以盐业茶马起家",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jinshang_llm_02",
+   "subject": "event:ev_jinshang_llm_02",
+   "year": 1823,
+   "era": "清道光三年",
+   "title": "票号创立",
+   "kind": "建置",
+   "text": "平遥日升昌票号成立",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jinshang_llm_03",
+   "subject": "event:ev_jinshang_llm_03",
+   "year": 1912,
+   "era": "民国元年",
+   "title": "票号衰亡",
+   "kind": "其他",
+   "text": "清亡票号衰败",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

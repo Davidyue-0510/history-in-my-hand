@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "MIN__p01",
+   "name": "无诸",
+   "role": "闽越王",
+   "note": "汉高祖五年受封",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MIN__p02",
+   "name": "摇",
+   "role": "东海王",
+   "note": "孝惠三年受封",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

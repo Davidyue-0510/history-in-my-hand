@@ -1,11 +1,12 @@
 {
-  "scenes_total": 196,
-  "historical": 187,
+  "scenes_total": 202,
+  "historical": 193,
   "fictional": 9,
-  "assertions_total": 3072,
-  "sources_total": 174,
+  "assertions_total": 3158,
+  "sources_total": 180,
   "factions_total": 9,
   "vocab_packs": [
+    "anxi_sizhen_llm",
     "aomen_portugal_llm",
     "bisheng_movable_type",
     "changping_llm",
@@ -25,9 +26,12 @@
     "huangdaopo_llm",
     "hunan_changsha_llm",
     "jilin_gaogouli_llm",
+    "jinshang_llm",
     "ming_qing",
     "ming_tumu_llm",
     "ming_zhenghe_llm",
+    "minyue_llm",
+    "nan_song_linan_llm",
     "nanzhao_dali_llm",
     "qianjia_puxue_llm",
     "qin_fenshu_llm",
@@ -37,6 +41,7 @@
     "qing_zhungaer_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
+    "shu_han_found_llm",
     "song",
     "song_chanchuan_llm",
     "song_wanganshi_llm",
@@ -55,12 +60,13 @@
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
     "yuan_xingsheng_llm",
+    "yuelu_academy_llm",
     "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 292,
+  "leads_total": 298,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1487,6 +1493,48 @@
       "kind": "tech",
       "assertions": 12,
       "factions": {}
+    },
+    {
+      "id": "shu_han_found_llm",
+      "title": "蜀汉建国（成都称帝）",
+      "kind": "dynasty",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "nan_song_linan_llm",
+      "title": "南宋定都临安（杭州）",
+      "kind": "court",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "jinshang_llm",
+      "title": "明清晋商与票号",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "minyue_llm",
+      "title": "汉初闽越国（福州）",
+      "kind": "dynasty",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "yuelu_academy_llm",
+      "title": "岳麓书院与湖湘学派",
+      "kind": "thought",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "anxi_sizhen_llm",
+      "title": "唐安西四镇（西域）",
+      "kind": "frontier",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1685,6 +1733,12 @@
     "zhuxi": "朱熹·理学",
     "foguo_chan_llm": "唐代佛教东传与禅宗",
     "qianjia_puxue_llm": "清代乾嘉朴学",
-    "xu_guangqi": "徐光启·农政全书与西学东渐"
+    "xu_guangqi": "徐光启·农政全书与西学东渐",
+    "shu_han_found_llm": "蜀汉建国（成都称帝）",
+    "nan_song_linan_llm": "南宋定都临安（杭州）",
+    "jinshang_llm": "明清晋商与票号",
+    "minyue_llm": "汉初闽越国（福州）",
+    "yuelu_academy_llm": "岳麓书院与湖湘学派",
+    "anxi_sizhen_llm": "唐安西四镇（西域）"
   }
 }

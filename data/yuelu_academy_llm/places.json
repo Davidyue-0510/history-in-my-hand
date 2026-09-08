@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "yuelu_academy",
+   "name": "岳麓书院",
+   "type": "yi",
+   "modern": "今中国湖南省长沙市",
+   "note": "四大书院之一",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.94,
+   "lat": 28.17,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lushan_si",
+   "name": "麓山寺",
+   "type": "yi",
+   "modern": "今中国湖南省长沙市岳麓山",
+   "note": "书院旧址",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.93,
+   "lat": 28.17,
+   "geo_unresolved": true
+  },
+  {
+   "id": "baidudong",
+   "name": "白鹿洞",
+   "type": "yi",
+   "modern": "今中国江西省九江市",
+   "note": "四大书院之一",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 115.97,
+   "lat": 29.47,
+   "geo_unresolved": true
+  },
+  {
+   "id": "songyang",
+   "name": "嵩阳",
+   "type": "yi",
+   "modern": "今中国河南省登封市",
+   "note": "四大书院之一",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.03,
+   "lat": 34.46,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yingtian",
+   "name": "应天",
+   "type": "yi",
+   "modern": "今中国河南省商丘市",
+   "note": "四大书院之一",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 115.65,
+   "lat": 34.41,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

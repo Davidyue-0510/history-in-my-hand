@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "qixian",
+   "name": "祁县",
+   "type": "city",
+   "modern": "今中国山西省祁县",
+   "note": "晋商票号重镇",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.34,
+   "lat": 37.36,
+   "geo_note": "王珪故里，今山西祁县"
+  },
+  {
+   "id": "taigu",
+   "name": "太谷",
+   "type": "city",
+   "modern": "今中国山西省太谷区",
+   "note": "晋商票号重镇",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.55,
+   "lat": 37.42,
+   "geo_unresolved": true
+  },
+  {
+   "id": "pingyao",
+   "name": "平遥",
+   "type": "city",
+   "modern": "今中国山西省平遥县",
+   "note": "票号发源地",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.18,
+   "lat": 37.2,
+   "geo_unresolved": true
+  },
+  {
+   "id": "menggu",
+   "name": "蒙古",
+   "type": "region",
+   "modern": "今蒙古国及中国内蒙古",
+   "note": "晋商贸易区域",
+   "_source_idx": 0,
+   "_source_name": "山西通志·商贾",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

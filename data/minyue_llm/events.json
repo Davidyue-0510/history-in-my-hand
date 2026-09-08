@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_minyue_llm_01",
+   "subject": "event:ev_minyue_llm_01",
+   "year": -202,
+   "era": "汉高祖五年",
+   "title": "封无诸为闽越王",
+   "kind": "建置",
+   "text": "汉高祖封无诸为闽越王",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_minyue_llm_02",
+   "subject": "event:ev_minyue_llm_02",
+   "year": -192,
+   "era": "孝惠三年",
+   "title": "封摇为东海王",
+   "kind": "建置",
+   "text": "孝惠帝封摇为东海王",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_minyue_llm_03",
+   "subject": "event:ev_minyue_llm_03",
+   "year": -110,
+   "era": "元封元年",
+   "title": "汉灭闽越",
+   "kind": "战事",
+   "text": "汉发兵灭闽越，徙民江淮",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

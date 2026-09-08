@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "dongye",
+   "name": "东冶",
+   "type": "city",
+   "modern": "今中国福建省福州市",
+   "note": "闽越国都",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 119.3,
+   "lat": 26.08,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dongou",
+   "name": "东瓯",
+   "type": "city",
+   "modern": "今中国浙江省温州市",
+   "note": "东海王都城",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 120.65,
+   "lat": 28.0,
+   "geo_unresolved": true
+  },
+  {
+   "id": "minzhong",
+   "name": "闽中",
+   "type": "region",
+   "modern": "今中国福建省",
+   "note": "秦闽中郡地",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.5,
+   "lat": 26.0,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jianghuai",
+   "name": "江淮",
+   "type": "region",
+   "modern": "今中国长江淮河之间",
+   "note": "汉徙闽越民于此",
+   "_source_idx": 0,
+   "_source_name": "史记·东越列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

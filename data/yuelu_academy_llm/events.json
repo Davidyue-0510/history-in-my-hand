@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_yuelu_academy_llm_01",
+   "subject": "event:ev_yuelu_academy_llm_01",
+   "year": 976,
+   "era": "北宋开宝九年",
+   "title": "创建岳麓书院",
+   "kind": "建置",
+   "text": "朱洞就麓山寺旧址建书院",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuelu_academy_llm_02",
+   "subject": "event:ev_yuelu_academy_llm_02",
+   "year": 1001,
+   "era": "北宋咸平四年",
+   "title": "诏赐经义疏",
+   "kind": "行政",
+   "text": "朝廷赐诸经义疏",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuelu_academy_llm_03",
+   "subject": "event:ev_yuelu_academy_llm_03",
+   "year": 1167,
+   "era": "南宋乾道三年",
+   "title": "朱张会讲",
+   "kind": "其他",
+   "text": "朱熹张栻会讲，学徒千余",
+   "_source_idx": 0,
+   "_source_name": "岳麓书院志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

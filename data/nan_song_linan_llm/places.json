@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "hangzhou",
+   "name": "杭州",
+   "type": "city",
+   "modern": "今中国浙江省杭州市",
+   "note": "高宗驻跸地",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 120.15,
+   "lat": 30.27,
+   "geo_note": "浙党核心，今浙江杭州"
+  },
+  {
+   "id": "linan",
+   "name": "临安府",
+   "type": "city",
+   "modern": "今中国浙江省杭州市",
+   "note": "南宋行在所",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 120.15,
+   "lat": 30.27,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xihu",
+   "name": "西湖",
+   "type": "region",
+   "modern": "今中国浙江省杭州市西湖",
+   "note": "临安倚西湖之胜",
+   "_source_idx": 0,
+   "_source_name": "宋史·高宗本纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 120.15,
+   "lat": 30.25,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

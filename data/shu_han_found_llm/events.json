@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_shu_han_found_llm_01",
+   "subject": "event:ev_shu_han_found_llm_01",
+   "year": 219,
+   "era": "建安二十四年",
+   "title": "刘备取汉中",
+   "kind": "战事",
+   "text": "刘备攻取汉中，自立汉中王",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shu_han_found_llm_02",
+   "subject": "event:ev_shu_han_found_llm_02",
+   "year": 220,
+   "era": "建安二十五年/延康元年",
+   "title": "曹丕篡汉",
+   "kind": "其他",
+   "text": "曹丕废汉献帝，建魏",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shu_han_found_llm_03",
+   "subject": "event:ev_shu_han_found_llm_03",
+   "year": 221,
+   "era": "章武元年",
+   "title": "刘备成都称帝",
+   "kind": "建置",
+   "text": "刘备于成都即帝位，国号汉",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

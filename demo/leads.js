@@ -5,6 +5,21 @@ window.SANDBOX_LEADS = {
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "ANX_016",
+   "scene": "anxi_sizhen_llm",
+   "subject": "event:ev_anxi_sizhen_llm_03",
+   "title": "具体战役过程缺失",
+   "missing": "军事史",
+   "where": "龟兹",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "吐蕃攻陷安西的具体战役过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "AOMEG1",
    "scene": "aomen_portugal_llm",
    "subject": "event:ev_aomen_portugal_llm_01",
@@ -1736,6 +1751,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "JIN_014",
+   "scene": "jinshang_llm",
+   "subject": "event:ev_jinshang_llm_03",
+   "title": "具体细节待考",
+   "missing": "历史考证",
+   "where": "山西票号档案",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "补充史料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "J010",
    "scene": "jinzhou",
    "subject": "event:jinzhou_songjin",
@@ -2383,6 +2413,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 10
   },
   {
+   "id": "MIN_015",
+   "scene": "minyue_llm",
+   "subject": "event:ev_minyue_llm_03",
+   "title": "徙民数量未详",
+   "missing": "历史人口学",
+   "where": "《史记·东越列传》",
+   "skills": [
+    "历史人口学"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "MOBAIG01",
    "scene": "mobai",
    "subject": "event:mb_chu",
@@ -2397,6 +2442,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "NAN_014",
+   "scene": "nan_song_linan_llm",
+   "subject": "place:linan",
+   "title": "临安户口蕃盛的具体数据待考",
+   "missing": "历史地理 / 文献考据",
+   "where": "《梦粱录》及南宋方志",
+   "skills": [
+    "历史地理",
+    "文献考据"
+   ],
+   "accept": "临安具体户口数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "NANZG2",
@@ -3159,6 +3220,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 48
+  },
+  {
+   "id": "SHU_013",
+   "scene": "shu_han_found_llm",
+   "subject": "event:ev_shu_han_found_llm_03",
+   "title": "史料对刘备称帝年份有异说",
+   "missing": "碑刻考据 / 历法推算",
+   "where": "成都武侯祠博物馆",
+   "skills": [
+    "碑刻考据",
+    "历法推算"
+   ],
+   "accept": "确认章武元年具体称帝月日",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "SC016",
@@ -4302,6 +4379,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 10
+  },
+  {
+   "id": "YUE_014",
+   "scene": "yuelu_academy_llm",
+   "subject": "event:ev_yuelu_academy_llm_03",
+   "title": "理学义理",
+   "missing": "理学",
+   "where": "岳麓书院",
+   "skills": [
+    "理学"
+   ],
+   "accept": "待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "ZHANGHENGG01",

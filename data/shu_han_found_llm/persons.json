@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "SHU__p01",
+   "name": "刘备",
+   "role": "蜀汉皇帝",
+   "note": "汉中王，章武元年称帝",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHU__p02",
+   "name": "诸葛亮",
+   "role": "丞相",
+   "note": "辅政，定策安民",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHU__p03",
+   "name": "曹丕",
+   "role": "魏文帝",
+   "note": "篡汉称帝",
+   "_source_idx": 0,
+   "_source_name": "三国志·蜀书",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

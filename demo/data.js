@@ -1,15 +1,16 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 199 个切片
+// 权威数据源：data/scenes.json 注册的 205 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 199 个切片",
+  "slice": "multi-scene · 205 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
+   "anxi_sizhen_llm",
    "aomen_portugal_llm",
    "bisheng_movable_type",
    "changping_llm",
@@ -29,9 +30,12 @@ window.SANDBOX_DATA = {
    "huangdaopo_llm",
    "hunan_changsha_llm",
    "jilin_gaogouli_llm",
+   "jinshang_llm",
    "ming_qing",
    "ming_tumu_llm",
    "ming_zhenghe_llm",
+   "minyue_llm",
+   "nan_song_linan_llm",
    "nanzhao_dali_llm",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
@@ -41,6 +45,7 @@ window.SANDBOX_DATA = {
    "qing_zhungaer_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
+   "shu_han_found_llm",
    "song",
    "song_chanchuan_llm",
    "song_wanganshi_llm",
@@ -59,6 +64,7 @@ window.SANDBOX_DATA = {
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
    "yuan_xingsheng_llm",
+   "yuelu_academy_llm",
    "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm",
    "zhuxi"
@@ -511,6 +517,12 @@ window.SANDBOX_DATA = {
   "foguo_chan_llm",
   "qianjia_puxue_llm",
   "xu_guangqi",
+  "shu_han_found_llm",
+  "nan_song_linan_llm",
+  "jinshang_llm",
+  "minyue_llm",
+  "yuelu_academy_llm",
+  "anxi_sizhen_llm",
   "warring_states_shangyang",
   "sui_keju",
   "tang_juntian"
@@ -25187,6 +25199,205 @@ window.SANDBOX_DATA = {
     "inference": 0
    }
   },
+  "shu_han_found_llm": {
+   "key": "shu_han_found_llm",
+   "scene_id": "shu_han_found_llm",
+   "title": "蜀汉建国（成都称帝）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "chuan_gui",
+   "page": "county.html?scene=shu_han_found_llm",
+   "primary_place": "chengdu",
+   "vocab_pack": "inline:shu_han_found_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "nan_song_linan_llm": {
+   "key": "nan_song_linan_llm",
+   "scene_id": "nan_song_linan_llm",
+   "title": "南宋定都临安（杭州）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "court",
+   "page": "county.html?scene=nan_song_linan_llm",
+   "primary_place": "hangzhou",
+   "vocab_pack": "inline:nan_song_linan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "jinshang_llm": {
+   "key": "jinshang_llm",
+   "scene_id": "jinshang_llm",
+   "title": "明清晋商与票号",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "exchange",
+   "page": "county.html?scene=jinshang_llm",
+   "primary_place": "qixian",
+   "vocab_pack": "inline:jinshang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 3,
+    "inference": 1
+   }
+  },
+  "minyue_llm": {
+   "key": "minyue_llm",
+   "scene_id": "minyue_llm",
+   "title": "汉初闽越国（福州）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "dynasty",
+   "page": "county.html?scene=minyue_llm",
+   "primary_place": "dongye",
+   "vocab_pack": "inline:minyue_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "yuelu_academy_llm": {
+   "key": "yuelu_academy_llm",
+   "scene_id": "yuelu_academy_llm",
+   "title": "岳麓书院与湖湘学派",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "thought",
+   "page": "county.html?scene=yuelu_academy_llm",
+   "primary_place": "yuelu_academy",
+   "vocab_pack": "inline:yuelu_academy_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "anxi_sizhen_llm": {
+   "key": "anxi_sizhen_llm",
+   "scene_id": "anxi_sizhen_llm",
+   "title": "唐安西四镇（西域）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=anxi_sizhen_llm",
+   "primary_place": "gaochang",
+   "vocab_pack": "inline:anxi_sizhen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 2,
+    "assert": 16,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
   "warring_states_shangyang": {
    "key": "warring_states_shangyang",
    "scene_id": "warring_states_shangyang",
@@ -25484,6 +25695,12 @@ window.SANDBOX_DATA = {
   "foguo_chan_llm": "slices/foguo_chan_llm.js",
   "qianjia_puxue_llm": "slices/qianjia_puxue_llm.js",
   "xu_guangqi": "slices/xu_guangqi.js",
+  "shu_han_found_llm": "slices/shu_han_found_llm.js",
+  "nan_song_linan_llm": "slices/nan_song_linan_llm.js",
+  "jinshang_llm": "slices/jinshang_llm.js",
+  "minyue_llm": "slices/minyue_llm.js",
+  "yuelu_academy_llm": "slices/yuelu_academy_llm.js",
+  "anxi_sizhen_llm": "slices/anxi_sizhen_llm.js",
   "warring_states_shangyang": "slices/warring_states_shangyang.js",
   "sui_keju": "slices/sui_keju.js",
   "tang_juntian": "slices/tang_juntian.js"
