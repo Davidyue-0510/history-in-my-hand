@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "GUA__p01",
+   "name": "赵佗",
+   "role": "南越武王/南越王",
+   "note": "秦龙川令，自立为王，后称藩",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p02",
+   "name": "秦始皇",
+   "role": "秦帝",
+   "note": "并天下，置岭南三郡",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p03",
+   "name": "汉高祖",
+   "role": "汉帝",
+   "note": "封赵佗为南越王",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

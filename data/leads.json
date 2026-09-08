@@ -1033,6 +1033,36 @@
    "_src_line": 15
   },
   {
+   "id": "FUJ_011",
+   "scene": "fujian_minyue",
+   "subject": "event:ev_fujian_minyue_01",
+   "title": "闽中兵数量未详",
+   "missing": "军事史",
+   "where": "《史记·东越列传》",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "闽中兵具体人数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "FUJ_012",
+   "scene": "fujian_minyue",
+   "subject": "event:ev_fujian_minyue_03",
+   "title": "徙民数量未载",
+   "missing": "人口史",
+   "where": "《汉书·武帝纪》",
+   "skills": [
+    "人口史"
+   ],
+   "accept": "具体迁徙人数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "FUJ_010",
    "scene": "fujian_qijiguang_llm",
    "subject": "event:ev_fujian_qijiguang_llm_04",
@@ -1268,6 +1298,21 @@
    "_src_line": 8
   },
   {
+   "id": "GAN_012",
+   "scene": "gansu_hexi",
+   "subject": "event:ev_gansu_hexi_02",
+   "title": "匈奴损失未详",
+   "missing": "历史考证",
+   "where": "河西走廊",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "需查证汉匈双方兵力及损失",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "GAN_011",
    "scene": "gansu_hexizhen_llm",
    "subject": "event:ev_gansu_hexizhen_llm_01",
@@ -1362,6 +1407,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "GUA_012",
+   "scene": "guangdong_nanyue",
+   "subject": "event:ev_guangdong_nanyue_02",
+   "title": "赵佗籍贯不详",
+   "missing": "文献考证",
+   "where": "史书或地方志",
+   "skills": [
+    "文献考证"
+   ],
+   "accept": "赵佗出生地",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "G010",
@@ -1723,6 +1783,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 9
+  },
+  {
+   "id": "HEB_014",
+   "scene": "hebei_zhaozhou",
+   "subject": "event:ev_hebei_zhaozhou_01",
+   "title": "具体工艺未详",
+   "missing": "考古 / 建筑史",
+   "where": "赵州桥遗址",
+   "skills": [
+    "考古",
+    "建筑史"
+   ],
+   "accept": "补充建造工艺细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "HEI_012",
@@ -2101,6 +2177,52 @@
    "_src_line": 11
   },
   {
+   "id": "HUN_010",
+   "scene": "hunan_yuelu",
+   "subject": "event:ev_hunan_yuelu_02",
+   "title": "湖湘学派传承脉络待考",
+   "missing": "宋史 / 学术史",
+   "where": "岳麓书院相关史料",
+   "skills": [
+    "宋史",
+    "学术史"
+   ],
+   "accept": "补充学派传承具体谱系",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "HUN_011",
+   "scene": "hunan_yuelu",
+   "subject": "event:ev_hunan_yuelu_01",
+   "title": "创建背景与官方支持待考",
+   "missing": "历史地理",
+   "where": "北宋地方志",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "确认创建者及官方背景",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HUN_012",
+   "scene": "hunan_yuelu",
+   "subject": "event:ev_hunan_yuelu_02",
+   "title": "会讲具体内容记载不详",
+   "missing": "文献学",
+   "where": "朱子文集",
+   "skills": [
+    "文献学"
+   ],
+   "accept": "补充会讲讲学内容",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "IJ016",
    "scene": "imjin",
    "subject": "event:bixieguan_battle",
@@ -2131,6 +2253,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 17
+  },
+  {
+   "id": "JIA_014",
+   "scene": "jiangxi_jingdezhen",
+   "subject": "place:jingdezhen",
+   "title": "官监具体制度不详",
+   "missing": "文献考证",
+   "where": "景德镇地方志",
+   "skills": [
+    "文献考证"
+   ],
+   "accept": "官监具体形式",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "JIA_009",
@@ -3754,6 +3891,37 @@
    "_src_line": 84
   },
   {
+   "id": "SHA_011",
+   "scene": "shandong_kongzi",
+   "subject": "person:SHA__p01",
+   "title": "生卒年无确考",
+   "missing": "考古 / 文献考据",
+   "where": "曲阜",
+   "skills": [
+    "考古",
+    "文献考据"
+   ],
+   "accept": "出土材料佐证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shandong_kongzi",
+   "subject": "event:ev_shandong_kongzi_03",
+   "title": "独尊儒术具体年份存疑",
+   "missing": "史源考证",
+   "where": "长安",
+   "skills": [
+    "史源考证"
+   ],
+   "accept": "汉代诏书",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SHA_015",
    "scene": "shanghai_songkai_llm",
    "subject": "event:ev_shanghai_songkai_llm_01",
@@ -3945,6 +4113,36 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "SIC_011",
+   "scene": "sichuan_zhuge",
+   "subject": "person:SIC__p01",
+   "title": "五次北伐",
+   "missing": "文献考据",
+   "where": "三国志诸葛亮传",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需查证北伐具体次数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SIC_012",
+   "scene": "sichuan_zhuge",
+   "subject": "person:SIC__p01",
+   "title": "兵力不详",
+   "missing": "军事史",
+   "where": "华阳国志",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "需查南征兵力记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SC016",
@@ -5427,6 +5625,22 @@
    "_src_line": 14
   },
   {
+   "id": "YUN_011",
+   "scene": "yunnan_dali",
+   "subject": "event:ev_yunnan_dali_02",
+   "title": "具体年份存疑",
+   "missing": "考古 / 文献",
+   "where": "大理国末期",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "精确年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "YUN_014",
    "scene": "yunnan_dali_llm",
    "subject": "event:ev_yunnan_dali_llm_02",
@@ -5612,6 +5826,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "ZHE_012",
+   "scene": "zhejiang_linan",
+   "subject": "place:linan",
+   "title": "具体人口数未载",
+   "missing": "历史人口学",
+   "where": "临安府志",
+   "skills": [
+    "历史人口学"
+   ],
+   "accept": "临安人口峰值",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "ZHEJG2",

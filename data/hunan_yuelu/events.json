@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hunan_yuelu_01",
+   "subject": "event:ev_hunan_yuelu_01",
+   "year": 976,
+   "era": "北宋开宝中",
+   "title": "岳麓书院创建",
+   "kind": "建置",
+   "text": "潭州建岳麓书院",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_yuelu_02",
+   "subject": "event:ev_hunan_yuelu_02",
+   "year": 1167,
+   "era": "南宋乾道三年",
+   "title": "朱张会讲",
+   "kind": "其他",
+   "text": "朱熹张栻会讲于书院",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

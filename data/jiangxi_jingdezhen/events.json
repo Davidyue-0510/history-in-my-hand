@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_jingdezhen_01",
+   "subject": "event:ev_jiangxi_jingdezhen_01",
+   "year": 1004,
+   "era": "宋真宗景德年间",
+   "title": "景德镇赐名",
+   "kind": "建置",
+   "text": "宋真宗景德年间以年号赐名景德镇",
+   "_source_idx": 0,
+   "_source_name": "《陶记》与景德镇窑事",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 261,
-  "historical": 252,
+  "scenes_total": 271,
+  "historical": 262,
   "fictional": 9,
-  "assertions_total": 3992,
-  "sources_total": 238,
+  "assertions_total": 4120,
+  "sources_total": 248,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -25,12 +25,15 @@
     "dujiangyan",
     "feishui_llm",
     "foguo_chan_llm",
+    "fujian_minyue",
     "fujian_qijiguang_llm",
     "fujian_quanzhou_llm",
     "fujian_xiamen_llm",
     "gansu_dunhuang_llm",
+    "gansu_hexi",
     "gansu_hexizhen_llm",
     "guandu_llm",
+    "guangdong_nanyue",
     "guangxi_lingqu_llm",
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
@@ -43,12 +46,15 @@
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
+    "hebei_zhaozhou",
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
     "hunan_mawangdui_llm",
+    "hunan_yuelu",
+    "jiangxi_jingdezhen",
     "jiangxi_nanchang_llm",
     "jiangxi_ruijin_llm",
     "jilin_bohai_llm",
@@ -78,11 +84,13 @@
     "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
     "san_guo",
+    "shandong_kongzi",
     "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
     "shanxi_jinshang_llm",
     "shu_han_found_llm",
     "sichuan_dujiangyan_llm",
+    "sichuan_zhuge",
     "song",
     "song_chanchuan_llm",
     "song_wanganshi_llm",
@@ -119,14 +127,16 @@
     "xizang_tubo_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
+    "yunnan_dali",
     "yunnan_dali_llm",
     "yunnan_nanzhao_llm",
+    "zhejiang_linan",
     "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 371,
+  "leads_total": 386,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2005,6 +2015,76 @@
       "kind": "court",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "fujian_minyue",
+      "title": "闽越国·无诸归汉（汉）",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "gansu_hexi",
+      "title": "汉·河西四郡与丝绸之路（汉）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guangdong_nanyue",
+      "title": "南越国·赵佗保境（秦汉之际）",
+      "kind": "dynasty",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "hebei_zhaozhou",
+      "title": "隋·赵州桥李春（隋）",
+      "kind": "tech",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hunan_yuelu",
+      "title": "宋·岳麓书院与湖湘学（宋）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "shandong_kongzi",
+      "title": "孔子与儒家学派创立（春秋）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "sichuan_zhuge",
+      "title": "蜀汉丞相诸葛亮治蜀（三国）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_dali",
+      "title": "宋·大理国（宋）",
+      "kind": "dynasty",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "zhejiang_linan",
+      "title": "南宋行在临安·江南繁华（宋）",
+      "kind": "exchange",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "jiangxi_jingdezhen",
+      "title": "宋·景德镇瓷业（宋）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2268,6 +2348,16 @@
     "aomen_huigui_llm": "中国澳门·澳门回归",
     "aomen_mage_llm": "中国澳门·妈阁文化",
     "qinghai_zhaochongguo_llm": "赵充国屯田",
-    "guizhou_shexiang_llm": "奢香夫人"
+    "guizhou_shexiang_llm": "奢香夫人",
+    "fujian_minyue": "闽越国·无诸归汉（汉）",
+    "gansu_hexi": "汉·河西四郡与丝绸之路（汉）",
+    "guangdong_nanyue": "南越国·赵佗保境（秦汉之际）",
+    "hebei_zhaozhou": "隋·赵州桥李春（隋）",
+    "hunan_yuelu": "宋·岳麓书院与湖湘学（宋）",
+    "shandong_kongzi": "孔子与儒家学派创立（春秋）",
+    "sichuan_zhuge": "蜀汉丞相诸葛亮治蜀（三国）",
+    "yunnan_dali": "宋·大理国（宋）",
+    "zhejiang_linan": "南宋行在临安·江南繁华（宋）",
+    "jiangxi_jingdezhen": "宋·景德镇瓷业（宋）"
   }
 }

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_minyue_01",
+   "subject": "event:ev_fujian_minyue_01",
+   "year": -206,
+   "era": "汉高祖五年",
+   "title": "无诸助汉灭秦",
+   "kind": "战事",
+   "text": "无诸率闽中兵从诸侯灭秦",
+   "_source_idx": 0,
+   "_source_name": "《史记·东越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_minyue_02",
+   "subject": "event:ev_fujian_minyue_02",
+   "year": -202,
+   "era": "汉高祖五年",
+   "title": "复立闽越国",
+   "kind": "建置",
+   "text": "汉高祖复立无诸为闽越王",
+   "_source_idx": 0,
+   "_source_name": "《史记·东越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_minyue_03",
+   "subject": "event:ev_fujian_minyue_03",
+   "year": -110,
+   "era": "汉武帝元鼎六年",
+   "title": "徙民江淮",
+   "kind": "行政",
+   "text": "闽越国灭，民徙江淮间",
+   "_source_idx": 0,
+   "_source_name": "《史记·东越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

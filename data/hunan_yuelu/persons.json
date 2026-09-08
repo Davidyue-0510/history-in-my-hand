@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HUN__p01",
+   "name": "朱熹",
+   "role": "南宋理学家",
+   "note": "与张栻会讲于岳麓书院",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p02",
+   "name": "张栻",
+   "role": "南宋理学家，湖湘学派代表",
+   "note": "主持岳麓书院教事",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

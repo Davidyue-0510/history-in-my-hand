@@ -464,7 +464,17 @@
   "aomen_huigui_llm",
   "aomen_mage_llm",
   "qinghai_zhaochongguo_llm",
-  "guizhou_shexiang_llm"
+  "guizhou_shexiang_llm",
+  "fujian_minyue",
+  "gansu_hexi",
+  "guangdong_nanyue",
+  "hebei_zhaozhou",
+  "hunan_yuelu",
+  "shandong_kongzi",
+  "sichuan_zhuge",
+  "yunnan_dali",
+  "zhejiang_linan",
+  "jiangxi_jingdezhen"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -21556,6 +21566,761 @@
     3,
     4,
     5,
+    6
+   ]
+  },
+  "fujian_minyue": {
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "province": "fujian",
+   "title": "闽越国·无诸归汉（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "ye",
+   "dossier_event": "event:ev_fujian_minyue_01",
+   "vocab_pack": "fujian_minyue",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "闽越国·无诸归汉（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "闽越国·无诸归汉（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "闽越国·无诸归汉（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "闽越国·无诸归汉（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "gansu_hexi": {
+   "kind": "exchange",
+   "region": "guangzhong",
+   "province": "gansu",
+   "title": "汉·河西四郡与丝绸之路（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chang_an",
+   "dossier_event": "event:ev_gansu_hexi_01",
+   "vocab_pack": "gansu_hexi",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉·河西四郡与丝绸之路（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉·河西四郡与丝绸之路（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉·河西四郡与丝绸之路（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉·河西四郡与丝绸之路（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guangdong_nanyue": {
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "province": "guangdong",
+   "title": "南越国·赵佗保境（秦汉之际）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "nanhai",
+   "dossier_event": "event:ev_guangdong_nanyue_01",
+   "vocab_pack": "guangdong_nanyue",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qin_han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "南越国·赵佗保境（秦汉之际）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "南越国·赵佗保境（秦汉之际）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "南越国·赵佗保境（秦汉之际）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "南越国·赵佗保境（秦汉之际）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "hebei_zhaozhou": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "隋·赵州桥李春（隋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zhaozhou",
+   "dossier_event": "event:ev_hebei_zhaozhou_01",
+   "vocab_pack": "hebei_zhaozhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "sui",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "隋·赵州桥李春（隋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "隋·赵州桥李春（隋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "隋·赵州桥李春（隋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "隋·赵州桥李春（隋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "hunan_yuelu": {
+   "kind": "thought",
+   "region": "jiangnan",
+   "province": "hunan",
+   "title": "宋·岳麓书院与湖湘学（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tanzhou",
+   "dossier_event": "event:ev_hunan_yuelu_01",
+   "vocab_pack": "hunan_yuelu",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·岳麓书院与湖湘学（宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宋·岳麓书院与湖湘学（宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宋·岳麓书院与湖湘学（宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·岳麓书院与湖湘学（宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    4,
+    5,
+    6
+   ]
+  },
+  "shandong_kongzi": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "孔子与儒家学派创立（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qufu",
+   "dossier_event": "event:ev_shandong_kongzi_01",
+   "vocab_pack": "shandong_kongzi",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "孔子与儒家学派创立（春秋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "孔子与儒家学派创立（春秋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "孔子与儒家学派创立（春秋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "孔子与儒家学派创立（春秋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "sichuan_zhuge": {
+   "kind": "court",
+   "region": "jiangnan",
+   "province": "sichuan",
+   "title": "蜀汉丞相诸葛亮治蜀（三国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chengdu",
+   "dossier_event": "event:ev_sichuan_zhuge_01",
+   "vocab_pack": "sichuan_zhuge",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "蜀汉丞相诸葛亮治蜀（三国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "蜀汉丞相诸葛亮治蜀（三国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "蜀汉丞相诸葛亮治蜀（三国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "蜀汉丞相诸葛亮治蜀（三国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yunnan_dali": {
+   "kind": "dynasty",
+   "region": "guangzhong",
+   "province": "yunnan",
+   "title": "宋·大理国（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yangjumie",
+   "dossier_event": "event:ev_yunnan_dali_01",
+   "vocab_pack": "yunnan_dali",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·大理国（宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宋·大理国（宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宋·大理国（宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·大理国（宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "zhejiang_linan": {
+   "kind": "exchange",
+   "region": "jiangnan",
+   "province": "zhejiang",
+   "title": "南宋行在临安·江南繁华（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "linan",
+   "dossier_event": "event:ev_zhejiang_linan_01",
+   "vocab_pack": "zhejiang_linan",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "南宋行在临安·江南繁华（宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "南宋行在临安·江南繁华（宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "南宋行在临安·江南繁华（宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "南宋行在临安·江南繁华（宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ]
+  },
+  "jiangxi_jingdezhen": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "jiangxi",
+   "title": "宋·景德镇瓷业（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jingdezhen",
+   "dossier_event": "event:ev_jiangxi_jingdezhen_01",
+   "vocab_pack": "jiangxi_jingdezhen",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·景德镇瓷业（宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宋·景德镇瓷业（宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宋·景德镇瓷业（宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·景德镇瓷业（宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
     6
    ]
   }

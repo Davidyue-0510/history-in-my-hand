@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 261 个切片
+// 权威数据源：data/scenes.json 注册的 271 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 261 个切片",
+  "slice": "multi-scene · 271 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -29,12 +29,15 @@ window.SANDBOX_DATA = {
    "dujiangyan",
    "feishui_llm",
    "foguo_chan_llm",
+   "fujian_minyue",
    "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
    "fujian_xiamen_llm",
    "gansu_dunhuang_llm",
+   "gansu_hexi",
    "gansu_hexizhen_llm",
    "guandu_llm",
+   "guangdong_nanyue",
    "guangxi_lingqu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
@@ -47,12 +50,15 @@ window.SANDBOX_DATA = {
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
+   "hebei_zhaozhou",
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
    "hunan_mawangdui_llm",
+   "hunan_yuelu",
+   "jiangxi_jingdezhen",
    "jiangxi_nanchang_llm",
    "jiangxi_ruijin_llm",
    "jilin_bohai_llm",
@@ -82,11 +88,13 @@ window.SANDBOX_DATA = {
    "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
    "san_guo",
+   "shandong_kongzi",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shanxi_jinshang_llm",
    "shu_han_found_llm",
    "sichuan_dujiangyan_llm",
+   "sichuan_zhuge",
    "song",
    "song_chanchuan_llm",
    "song_wanganshi_llm",
@@ -123,8 +131,10 @@ window.SANDBOX_DATA = {
    "xizang_tubo_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
+   "yunnan_dali",
    "yunnan_dali_llm",
    "yunnan_nanzhao_llm",
+   "zhejiang_linan",
    "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm",
    "zhuxi"
@@ -641,7 +651,17 @@ window.SANDBOX_DATA = {
   "aomen_huigui_llm",
   "aomen_mage_llm",
   "qinghai_zhaochongguo_llm",
-  "guizhou_shexiang_llm"
+  "guizhou_shexiang_llm",
+  "fujian_minyue",
+  "gansu_hexi",
+  "guangdong_nanyue",
+  "hebei_zhaozhou",
+  "hunan_yuelu",
+  "shandong_kongzi",
+  "sichuan_zhuge",
+  "yunnan_dali",
+  "zhejiang_linan",
+  "jiangxi_jingdezhen"
  ],
  "vocab": {
   "layers": [
@@ -27501,6 +27521,341 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 2
    }
+  },
+  "fujian_minyue": {
+   "key": "fujian_minyue",
+   "scene_id": "fujian_minyue",
+   "title": "闽越国·无诸归汉（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "page": "county.html?scene=fujian_minyue",
+   "primary_place": "ye",
+   "vocab_pack": "inline:fujian_minyue",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 2,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "gansu_hexi": {
+   "key": "gansu_hexi",
+   "scene_id": "gansu_hexi",
+   "title": "汉·河西四郡与丝绸之路（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "guangzhong",
+   "page": "county.html?scene=gansu_hexi",
+   "primary_place": "chang_an",
+   "vocab_pack": "inline:gansu_hexi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 8,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guangdong_nanyue": {
+   "key": "guangdong_nanyue",
+   "scene_id": "guangdong_nanyue",
+   "title": "南越国·赵佗保境（秦汉之际）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "page": "county.html?scene=guangdong_nanyue",
+   "primary_place": "nanhai",
+   "vocab_pack": "inline:guangdong_nanyue",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qin_han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hebei_zhaozhou": {
+   "key": "hebei_zhaozhou",
+   "scene_id": "hebei_zhaozhou",
+   "title": "隋·赵州桥李春（隋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_zhaozhou",
+   "primary_place": "zhaozhou",
+   "vocab_pack": "inline:hebei_zhaozhou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hunan_yuelu": {
+   "key": "hunan_yuelu",
+   "scene_id": "hunan_yuelu",
+   "title": "宋·岳麓书院与湖湘学（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "jiangnan",
+   "page": "county.html?scene=hunan_yuelu",
+   "primary_place": "tanzhou",
+   "vocab_pack": "inline:hunan_yuelu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 3,
+    "record": 7,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "shandong_kongzi": {
+   "key": "shandong_kongzi",
+   "scene_id": "shandong_kongzi",
+   "title": "孔子与儒家学派创立（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "huabei",
+   "page": "county.html?scene=shandong_kongzi",
+   "primary_place": "qufu",
+   "vocab_pack": "inline:shandong_kongzi",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 2,
+    "record": 7,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "sichuan_zhuge": {
+   "key": "sichuan_zhuge",
+   "scene_id": "sichuan_zhuge",
+   "title": "蜀汉丞相诸葛亮治蜀（三国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "jiangnan",
+   "page": "county.html?scene=sichuan_zhuge",
+   "primary_place": "chengdu",
+   "vocab_pack": "inline:sichuan_zhuge",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 2,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "yunnan_dali": {
+   "key": "yunnan_dali",
+   "scene_id": "yunnan_dali",
+   "title": "宋·大理国（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "guangzhong",
+   "page": "county.html?scene=yunnan_dali",
+   "primary_place": "yangjumie",
+   "vocab_pack": "inline:yunnan_dali",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 11,
+    "conflict": 0,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "zhejiang_linan": {
+   "key": "zhejiang_linan",
+   "scene_id": "zhejiang_linan",
+   "title": "南宋行在临安·江南繁华（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=zhejiang_linan",
+   "primary_place": "linan",
+   "vocab_pack": "inline:zhejiang_linan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "jiangxi_jingdezhen": {
+   "key": "jiangxi_jingdezhen",
+   "scene_id": "jiangxi_jingdezhen",
+   "title": "宋·景德镇瓷业（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=jiangxi_jingdezhen",
+   "primary_place": "jingdezhen",
+   "vocab_pack": "inline:jiangxi_jingdezhen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 2
+   }
   }
  },
  "slice_index": {
@@ -27764,7 +28119,17 @@ window.SANDBOX_DATA = {
   "aomen_huigui_llm": "slices/aomen_huigui_llm.js",
   "aomen_mage_llm": "slices/aomen_mage_llm.js",
   "qinghai_zhaochongguo_llm": "slices/qinghai_zhaochongguo_llm.js",
-  "guizhou_shexiang_llm": "slices/guizhou_shexiang_llm.js"
+  "guizhou_shexiang_llm": "slices/guizhou_shexiang_llm.js",
+  "fujian_minyue": "slices/fujian_minyue.js",
+  "gansu_hexi": "slices/gansu_hexi.js",
+  "guangdong_nanyue": "slices/guangdong_nanyue.js",
+  "hebei_zhaozhou": "slices/hebei_zhaozhou.js",
+  "hunan_yuelu": "slices/hunan_yuelu.js",
+  "shandong_kongzi": "slices/shandong_kongzi.js",
+  "sichuan_zhuge": "slices/sichuan_zhuge.js",
+  "yunnan_dali": "slices/yunnan_dali.js",
+  "zhejiang_linan": "slices/zhejiang_linan.js",
+  "jiangxi_jingdezhen": "slices/jiangxi_jingdezhen.js"
  },
  "corridors": [
   {

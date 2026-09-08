@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_sichuan_zhuge_01",
+   "subject": "event:ev_sichuan_zhuge_01",
+   "year": 221,
+   "era": "蜀汉章武元年",
+   "title": "刘备称帝",
+   "kind": "建置",
+   "text": "刘备成都称帝，诸葛亮为丞相",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_zhuge_02",
+   "subject": "event:ev_sichuan_zhuge_02",
+   "year": 225,
+   "era": "蜀汉建兴三年",
+   "title": "平定南中",
+   "kind": "战事",
+   "text": "诸葛亮南征，七擒孟获",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_zhuge_03",
+   "subject": "event:ev_sichuan_zhuge_03",
+   "year": 234,
+   "era": "蜀汉建兴十二年",
+   "title": "五丈原病逝",
+   "kind": "其他",
+   "text": "诸葛亮病逝五丈原",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

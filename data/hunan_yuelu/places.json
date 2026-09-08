@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "tanzhou",
+   "name": "潭州",
+   "type": "city",
+   "modern": "今中国湖南省长沙市",
+   "note": "岳麓书院所在地",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yuelu_shuyuan",
+   "name": "岳麓书院",
+   "type": "yi",
+   "modern": "今中国湖南省长沙市岳麓区",
+   "note": "四大书院之一",
+   "_source_idx": 0,
+   "_source_name": "《岳麓书院志》",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

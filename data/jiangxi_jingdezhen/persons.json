@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "宋真宗",
+   "role": "皇帝",
+   "note": "以年号景德赐名昌南镇",
+   "_source_idx": 0,
+   "_source_name": "《陶记》与景德镇窑事",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "窑工",
+   "role": "工匠",
+   "note": "景德镇制瓷工匠",
+   "_source_idx": 0,
+   "_source_name": "《陶记》与景德镇窑事",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

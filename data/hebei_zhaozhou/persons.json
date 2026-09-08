@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "HEB__p01",
+   "name": "李春",
+   "role": "匠师",
+   "note": "赵州桥的设计建造者",
+   "_source_idx": 0,
+   "_source_name": "《赵州桥铭》与隋代工匠",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

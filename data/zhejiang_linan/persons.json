@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "ZHE__p01",
+   "name": "宋高宗",
+   "role": "南宋皇帝",
+   "note": "南渡后定行在于临安",
+   "_source_idx": 0,
+   "_source_name": "《梦粱录》与临安风物",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHE__p02",
+   "name": "马可波罗",
+   "role": "意大利旅行家",
+   "note": "称临安为天城",
+   "_source_idx": 0,
+   "_source_name": "《梦粱录》与临安风物",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

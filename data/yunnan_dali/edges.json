@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "jinsha",
+   "to": "yangjumie",
+   "type": "military",
+   "label": "蒙古军渡江攻大理",
+   "_source_idx": 0,
+   "_source_name": "《大理国史》与段氏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

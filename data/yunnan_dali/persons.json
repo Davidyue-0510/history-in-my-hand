@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "YUN__p01",
+   "name": "段思平",
+   "role": "大理国开国君主",
+   "note": "建立大理国",
+   "_source_idx": 0,
+   "_source_name": "《大理国史》与段氏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YUN__p02",
+   "name": "忽必烈",
+   "role": "元世祖",
+   "note": "率军灭大理",
+   "_source_idx": 0,
+   "_source_name": "《大理国史》与段氏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

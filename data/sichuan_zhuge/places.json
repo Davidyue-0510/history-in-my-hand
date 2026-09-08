@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "type": "city",
+   "modern": "今中国四川成都",
+   "note": "蜀汉都城",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.07,
+   "lat": 30.66,
+   "geo_note": "今四川成都"
+  },
+  {
+   "id": "nanzhong",
+   "name": "南中",
+   "type": "region",
+   "modern": "今中国云南贵州一带",
+   "note": "南征区域",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "wuzhangyuan",
+   "name": "五丈原",
+   "type": "yi",
+   "modern": "今中国陕西岐山",
+   "note": "诸葛亮病逝地",
+   "_source_idx": 0,
+   "_source_name": "《出师表》与诸葛治蜀",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

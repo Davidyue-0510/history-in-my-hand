@@ -1,0 +1,63 @@
+{
+ "places": [
+  {
+   "id": "nanhai",
+   "name": "南海郡",
+   "type": "region",
+   "modern": "今中国广东",
+   "note": "秦置三郡之一",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.26,
+   "lat": 23.13,
+   "geo_note": "康有为故里，今广东广州",
+   "geo_match": "strip_suffix"
+  },
+  {
+   "id": "guilin",
+   "name": "桂林郡",
+   "type": "region",
+   "modern": "今中国广西",
+   "note": "秦置三郡之一",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xiangjun",
+   "name": "象郡",
+   "type": "region",
+   "modern": "今中国广西及越南",
+   "note": "秦置三郡之一",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "panyu",
+   "name": "番禺",
+   "type": "city",
+   "modern": "今中国广州",
+   "note": "南越国都",
+   "_source_idx": 0,
+   "_source_name": "《史记·南越列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

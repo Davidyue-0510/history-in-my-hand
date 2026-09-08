@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shandong_kongzi_01",
+   "subject": "event:ev_shandong_kongzi_01",
+   "year": -551,
+   "era": "春秋晚期",
+   "title": "孔子设私学",
+   "kind": "其他",
+   "text": "孔子设私学，有教无类",
+   "_source_idx": 0,
+   "_source_name": "《论语》与孔门言行",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shandong_kongzi_03",
+   "subject": "event:ev_shandong_kongzi_03",
+   "year": -136,
+   "era": "汉武帝时期",
+   "title": "独尊儒术",
+   "kind": "行政",
+   "text": "汉武帝独尊儒术，定一尊",
+   "_source_idx": 0,
+   "_source_name": "《论语》与孔门言行",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

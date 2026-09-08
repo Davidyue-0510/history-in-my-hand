@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_yunnan_dali_01",
+   "subject": "event:ev_yunnan_dali_01",
+   "year": 937,
+   "era": "后晋天福二年",
+   "title": "段思平建大理国",
+   "kind": "建置",
+   "text": "段思平建大理国，都羊苴咩城。",
+   "_source_idx": 0,
+   "_source_name": "《大理国史》与段氏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_dali_02",
+   "subject": "event:ev_yunnan_dali_02",
+   "year": 1253,
+   "era": "元宪宗三年",
+   "title": "蒙古灭大理",
+   "kind": "战事",
+   "text": "忽必烈革囊渡金沙，灭大理。",
+   "_source_idx": 0,
+   "_source_name": "《大理国史》与段氏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

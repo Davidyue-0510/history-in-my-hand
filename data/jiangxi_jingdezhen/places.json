@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "jingdezhen",
+   "name": "景德镇",
+   "type": "city",
+   "modern": "今中国江西省景德镇市",
+   "note": "原名昌南镇，宋景德年间赐名",
+   "_source_idx": 0,
+   "_source_name": "《陶记》与景德镇窑事",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "changnan",
+   "name": "昌南镇",
+   "type": "city",
+   "modern": "今中国江西省景德镇市",
+   "note": "景德镇旧称",
+   "_source_idx": 0,
+   "_source_name": "《陶记》与景德镇窑事",
+   "_source_party": "宋官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

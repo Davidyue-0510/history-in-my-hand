@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "孔丘",
+   "role": "鲁人，私学创立者",
+   "note": "字仲尼，儒家学派创始人",
+   "_source_idx": 0,
+   "_source_name": "《论语》与孔门言行",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "汉武帝",
+   "role": "汉朝皇帝",
+   "note": "独尊儒术，确立官方地位",
+   "_source_idx": 0,
+   "_source_name": "《论语》与孔门言行",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
