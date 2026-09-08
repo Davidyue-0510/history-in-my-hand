@@ -1,12 +1,13 @@
 {
-  "scenes_total": 281,
-  "historical": 272,
+  "scenes_total": 288,
+  "historical": 279,
   "fictional": 9,
-  "assertions_total": 4255,
-  "sources_total": 258,
+  "assertions_total": 4346,
+  "sources_total": 265,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
+    "aomen_aomen",
     "aomen_huigui_llm",
     "aomen_kaibu_llm",
     "aomen_mage_llm",
@@ -78,6 +79,7 @@
     "neimenggu_liao",
     "neimenggu_zhaojun_llm",
     "ningxia_xiaoguan_llm",
+    "ningxia_xixia",
     "ningxia_xixia_llm",
     "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
@@ -87,6 +89,7 @@
     "qing_yakesa_llm",
     "qing_zhungaer_llm",
     "qinghai_gusiluo_llm",
+    "qinghai_tuyuhun",
     "qinghai_tuyuhun_llm",
     "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
@@ -112,6 +115,7 @@
     "susong_llm",
     "taiwan_shilang_llm",
     "taiwan_wushe_llm",
+    "taiwan_zhengchenggong",
     "taiwan_zhengchenggong_llm",
     "tang",
     "tang_anshi_llm",
@@ -121,6 +125,7 @@
     "three_campaigns",
     "tianjin_jiaoan_llm",
     "tianjin_kaibu_llm",
+    "tianjin_tianjinwei",
     "wangyangming",
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
@@ -128,6 +133,7 @@
     "xianggang_dongjiang_llm",
     "xianggang_huigui_llm",
     "xianggang_songmo_llm",
+    "xianggang_tunmen",
     "xinjiang_xiyu",
     "xinjiang_xiyu_llm",
     "xinjiang_zuozongtang_llm",
@@ -135,6 +141,7 @@
     "xizang_gorkha_llm",
     "xizang_huimeng_llm",
     "xizang_tubo_llm",
+    "xizang_wencheng",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "yunnan_dali",
@@ -146,7 +153,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 395,
+  "leads_total": 406,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2165,6 +2172,55 @@
       "kind": "dynasty",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "ningxia_xixia",
+      "title": "西夏·兴庆府（宋辽夏之际）",
+      "kind": "dynasty",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "qinghai_tuyuhun",
+      "title": "隋·炀帝西巡·吐谷浑（隋）",
+      "kind": "dynasty",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_tianjinwei",
+      "title": "明·天津卫筑城（明）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "xianggang_tunmen",
+      "title": "明·屯门海防（明）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "aomen_aomen",
+      "title": "明·澳门赁居（明）",
+      "kind": "exchange",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "xizang_wencheng",
+      "title": "唐·文成公主入藏（唐）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "taiwan_zhengchenggong",
+      "title": "明·郑成功收复台湾（明郑）",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2448,6 +2504,13 @@
     "shanghai_kaibu": "近代·上海开埠（清季）",
     "guizhou_yelang": "汉·夜郎归汉（汉）",
     "hainan_xianfuren": "隋·冼夫人抚定岭南（隋）",
-    "jilin_gaogouli": "高句丽·国内城（汉唐之际）"
+    "jilin_gaogouli": "高句丽·国内城（汉唐之际）",
+    "ningxia_xixia": "西夏·兴庆府（宋辽夏之际）",
+    "qinghai_tuyuhun": "隋·炀帝西巡·吐谷浑（隋）",
+    "tianjin_tianjinwei": "明·天津卫筑城（明）",
+    "xianggang_tunmen": "明·屯门海防（明）",
+    "aomen_aomen": "明·澳门赁居（明）",
+    "xizang_wencheng": "唐·文成公主入藏（唐）",
+    "taiwan_zhengchenggong": "明·郑成功收复台湾（明郑）"
   }
 }

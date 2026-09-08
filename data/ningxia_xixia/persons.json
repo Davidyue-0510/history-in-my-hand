@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "NIN__p01",
+   "name": "李元昊",
+   "role": "西夏开国皇帝",
+   "note": "称帝建大夏，都兴庆府",
+   "_source_idx": 0,
+   "_source_name": "《宋史·夏国传》与西夏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NIN__p02",
+   "name": "拓跋思恭",
+   "role": "定难军节度使",
+   "note": "唐末镇夏州，赐姓李",
+   "_source_idx": 0,
+   "_source_name": "《宋史·夏国传》与西夏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

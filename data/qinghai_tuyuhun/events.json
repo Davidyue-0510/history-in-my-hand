@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_qinghai_tuyuhun_01",
+   "subject": "event:ev_qinghai_tuyuhun_01",
+   "year": 609,
+   "era": "大业五年",
+   "title": "炀帝西巡破吐谷浑",
+   "kind": "战事",
+   "text": "炀帝亲巡河西，破吐谷浑",
+   "_source_idx": 0,
+   "_source_name": "《隋书·炀帝纪》与吐谷浑",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_tuyuhun_02",
+   "subject": "event:ev_qinghai_tuyuhun_02",
+   "year": 609,
+   "era": "大业五年",
+   "title": "置四郡",
+   "kind": "建置",
+   "text": "置西海、河源、鄯善、且末四郡",
+   "_source_idx": 0,
+   "_source_name": "《隋书·炀帝纪》与吐谷浑",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

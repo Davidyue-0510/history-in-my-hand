@@ -1,16 +1,17 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 281 个切片
+// 权威数据源：data/scenes.json 注册的 288 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 281 个切片",
+  "slice": "multi-scene · 288 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "anxi_sizhen_llm",
+   "aomen_aomen",
    "aomen_huigui_llm",
    "aomen_kaibu_llm",
    "aomen_mage_llm",
@@ -82,6 +83,7 @@ window.SANDBOX_DATA = {
    "neimenggu_liao",
    "neimenggu_zhaojun_llm",
    "ningxia_xiaoguan_llm",
+   "ningxia_xixia",
    "ningxia_xixia_llm",
    "pingbo_zhiyi_llm",
    "qianjia_puxue_llm",
@@ -91,6 +93,7 @@ window.SANDBOX_DATA = {
    "qing_yakesa_llm",
    "qing_zhungaer_llm",
    "qinghai_gusiluo_llm",
+   "qinghai_tuyuhun",
    "qinghai_tuyuhun_llm",
    "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
@@ -116,6 +119,7 @@ window.SANDBOX_DATA = {
    "susong_llm",
    "taiwan_shilang_llm",
    "taiwan_wushe_llm",
+   "taiwan_zhengchenggong",
    "taiwan_zhengchenggong_llm",
    "tang",
    "tang_anshi_llm",
@@ -125,6 +129,7 @@ window.SANDBOX_DATA = {
    "three_campaigns",
    "tianjin_jiaoan_llm",
    "tianjin_kaibu_llm",
+   "tianjin_tianjinwei",
    "wangyangming",
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
@@ -132,6 +137,7 @@ window.SANDBOX_DATA = {
    "xianggang_dongjiang_llm",
    "xianggang_huigui_llm",
    "xianggang_songmo_llm",
+   "xianggang_tunmen",
    "xinjiang_xiyu",
    "xinjiang_xiyu_llm",
    "xinjiang_zuozongtang_llm",
@@ -139,6 +145,7 @@ window.SANDBOX_DATA = {
    "xizang_gorkha_llm",
    "xizang_huimeng_llm",
    "xizang_tubo_llm",
+   "xizang_wencheng",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "yunnan_dali",
@@ -681,7 +688,14 @@ window.SANDBOX_DATA = {
   "shanghai_kaibu",
   "guizhou_yelang",
   "hainan_xianfuren",
-  "jilin_gaogouli"
+  "jilin_gaogouli",
+  "ningxia_xixia",
+  "qinghai_tuyuhun",
+  "tianjin_tianjinwei",
+  "xianggang_tunmen",
+  "aomen_aomen",
+  "xizang_wencheng",
+  "taiwan_zhengchenggong"
  ],
  "vocab": {
   "layers": [
@@ -28207,6 +28221,237 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "ningxia_xixia": {
+   "key": "ningxia_xixia",
+   "scene_id": "ningxia_xixia",
+   "title": "西夏·兴庆府（宋辽夏之际）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "guangzhong",
+   "page": "county.html?scene=ningxia_xixia",
+   "primary_place": "xiazhou",
+   "vocab_pack": "inline:ningxia_xixia",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "qinghai_tuyuhun": {
+   "key": "qinghai_tuyuhun",
+   "scene_id": "qinghai_tuyuhun",
+   "title": "隋·炀帝西巡·吐谷浑（隋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "guangzhong",
+   "page": "county.html?scene=qinghai_tuyuhun",
+   "primary_place": "qinghai",
+   "vocab_pack": "inline:qinghai_tuyuhun",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 2,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 3,
+    "record": 6,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "tianjin_tianjinwei": {
+   "key": "tianjin_tianjinwei",
+   "scene_id": "tianjin_tianjinwei",
+   "title": "明·天津卫筑城（明）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "huabei",
+   "page": "county.html?scene=tianjin_tianjinwei",
+   "primary_place": "tianjin",
+   "vocab_pack": "inline:tianjin_tianjinwei",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xianggang_tunmen": {
+   "key": "xianggang_tunmen",
+   "scene_id": "xianggang_tunmen",
+   "title": "明·屯门海防（明）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "jiangnan",
+   "page": "xianggang_tunmen.html",
+   "primary_place": "tunmen",
+   "vocab_pack": "inline:xianggang_tunmen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "aomen_aomen": {
+   "key": "aomen_aomen",
+   "scene_id": "aomen_aomen",
+   "title": "明·澳门赁居（明）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=aomen_aomen",
+   "primary_place": "aomen",
+   "vocab_pack": "inline:aomen_aomen",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 13,
+    "conflict": 2,
+    "gap": 1,
+    "record": 7,
+    "scholarship": 4,
+    "inference": 1
+   }
+  },
+  "xizang_wencheng": {
+   "key": "xizang_wencheng",
+   "scene_id": "xizang_wencheng",
+   "title": "唐·文成公主入藏（唐）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "guangzhong",
+   "page": "county.html?scene=xizang_wencheng",
+   "primary_place": "tubo",
+   "vocab_pack": "inline:xizang_wencheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "taiwan_zhengchenggong": {
+   "key": "taiwan_zhengchenggong",
+   "scene_id": "taiwan_zhengchenggong",
+   "title": "明·郑成功收复台湾（明郑）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "jiangnan",
+   "page": "county.html?scene=taiwan_zhengchenggong",
+   "primary_place": "jinmen",
+   "vocab_pack": "inline:taiwan_zhengchenggong",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 3,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -28490,7 +28735,14 @@ window.SANDBOX_DATA = {
   "shanghai_kaibu": "slices/shanghai_kaibu.js",
   "guizhou_yelang": "slices/guizhou_yelang.js",
   "hainan_xianfuren": "slices/hainan_xianfuren.js",
-  "jilin_gaogouli": "slices/jilin_gaogouli.js"
+  "jilin_gaogouli": "slices/jilin_gaogouli.js",
+  "ningxia_xixia": "slices/ningxia_xixia.js",
+  "qinghai_tuyuhun": "slices/qinghai_tuyuhun.js",
+  "tianjin_tianjinwei": "slices/tianjin_tianjinwei.js",
+  "xianggang_tunmen": "slices/xianggang_tunmen.js",
+  "aomen_aomen": "slices/aomen_aomen.js",
+  "xizang_wencheng": "slices/xizang_wencheng.js",
+  "taiwan_zhengchenggong": "slices/taiwan_zhengchenggong.js"
  },
  "corridors": [
   {

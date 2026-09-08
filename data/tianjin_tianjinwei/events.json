@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_tianjinwei_01",
+   "subject": "event:ev_tianjin_tianjinwei_01",
+   "year": 1404,
+   "era": "永乐二年",
+   "title": "筑城直沽",
+   "kind": "建置",
+   "text": "于直沽筑城，赐名天津",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_tianjinwei_02",
+   "subject": "event:ev_tianjin_tianjinwei_02",
+   "year": 1404,
+   "era": "永乐二年",
+   "title": "设天津卫",
+   "kind": "建置",
+   "text": "设天津卫，戍以亲军",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

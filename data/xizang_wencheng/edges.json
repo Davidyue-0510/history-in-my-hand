@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "chang_an",
+   "to": "tubo",
+   "type": "military",
+   "label": "公主入藏路线",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·吐蕃传》与文成公主",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -18,6 +18,21 @@
    "_src_line": 16
   },
   {
+   "id": "AOM_013",
+   "scene": "aomen_aomen",
+   "subject": "event:ev_aomen_aomen_01",
+   "title": "確切年份待考",
+   "missing": "史料考證",
+   "where": "明代檔案",
+   "skills": [
+    "史料考證"
+   ],
+   "accept": "確定葡人入居年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "AOM_014",
    "scene": "aomen_huigui_llm",
    "subject": "event:ev_aomen_huigui_llm_03",
@@ -3356,6 +3371,21 @@
   },
   {
    "id": "NIN_015",
+   "scene": "ningxia_xixia",
+   "subject": "event:ev_ningxia_xixia_01",
+   "title": "西夏史料多佚",
+   "missing": "文献考据",
+   "where": "西夏故地",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "新出土史料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "NIN_015",
    "scene": "ningxia_xixia_llm",
    "subject": "event:ev_ningxia_xixia_llm_01",
    "title": "西夏文使用范围待考",
@@ -3778,6 +3808,51 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "QIN_007",
+   "scene": "qinghai_tuyuhun",
+   "subject": "event:ev_qinghai_tuyuhun_02",
+   "title": "四郡具体位置待考",
+   "missing": "历史地理考证",
+   "where": "青海湖周边及新疆东南部",
+   "skills": [
+    "历史地理考证"
+   ],
+   "accept": "需考古或文献佐证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "QIN_008",
+   "scene": "qinghai_tuyuhun",
+   "subject": "event:ev_qinghai_tuyuhun_01",
+   "title": "隋军兵力未载",
+   "missing": "文献检索",
+   "where": "隋书·炀帝纪",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "查得具体兵力数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "QIN_009",
+   "scene": "qinghai_tuyuhun",
+   "subject": "event:ev_qinghai_tuyuhun_01",
+   "title": "吐谷浑损失未详",
+   "missing": "史料比对",
+   "where": "吐谷浑传",
+   "skills": [
+    "史料比对"
+   ],
+   "accept": "找到伤亡数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
   },
   {
    "id": "QIN_013",
@@ -4618,6 +4693,53 @@
    "_src_line": 14
   },
   {
+   "id": "TAI_010",
+   "scene": "taiwan_zhengchenggong",
+   "subject": "event:ev_taiwan_zhengchenggong_03",
+   "title": "荷兰投降，未载条件",
+   "missing": "荷兰语 / 档案研究",
+   "where": "荷兰东印度公司档案",
+   "skills": [
+    "荷兰语",
+    "档案研究"
+   ],
+   "accept": "查得投降条约内容",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "TAI_011",
+   "scene": "taiwan_zhengchenggong",
+   "subject": "event:ev_taiwan_zhengchenggong_01",
+   "title": "原文未载兵力",
+   "missing": "文献考据",
+   "where": "《从征实录》",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "查得郑军船数人数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "TAI_012",
+   "scene": "taiwan_zhengchenggong",
+   "subject": "event:ev_taiwan_zhengchenggong_03",
+   "title": "原文未载荷军伤亡",
+   "missing": "荷兰语 / 档案研究",
+   "where": "荷兰东印度公司档案",
+   "skills": [
+    "荷兰语",
+    "档案研究"
+   ],
+   "accept": "查得荷军损失数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "TAI_009",
    "scene": "taiwan_zhengchenggong_llm",
    "subject": "event:ev_taiwan_zhengchenggong_llm_03",
@@ -4879,6 +5001,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "TIA_012",
+   "scene": "tianjin_tianjinwei",
+   "subject": "event:ev_tianjin_tianjinwei_01",
+   "title": "城制规模未详",
+   "missing": "方志学 / 考古学",
+   "where": "天津地方志",
+   "skills": [
+    "方志学",
+    "考古学"
+   ],
+   "accept": "城垣形制",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "TIANJINGG01",
@@ -5262,6 +5400,21 @@
    "_src_line": 14
   },
   {
+   "id": "XIA_003",
+   "scene": "xianggang_tunmen",
+   "subject": "event:ev_xianggang_tunmen_01",
+   "title": "明军伤亡未载",
+   "missing": "考据",
+   "where": "明实录",
+   "skills": [
+    "考据"
+   ],
+   "accept": "明军伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 3
+  },
+  {
    "id": "XIAOWENG01",
    "scene": "xiaowen",
    "subject": "event:xw_494",
@@ -5510,6 +5663,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "XIZ_012",
+   "scene": "xizang_wencheng",
+   "subject": "event:ev_xizang_wencheng_02",
+   "title": "入藏具体路线未详",
+   "missing": "历史地理 / 考古学",
+   "where": "唐蕃古道沿线",
+   "skills": [
+    "历史地理",
+    "考古学"
+   ],
+   "accept": "需进一步考古发现",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "xg11",

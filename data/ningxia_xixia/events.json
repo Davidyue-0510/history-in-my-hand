@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_ningxia_xixia_01",
+   "subject": "event:ev_ningxia_xixia_01",
+   "year": 1038,
+   "era": "显道元年",
+   "title": "李元昊称帝",
+   "kind": "建置",
+   "text": "李元昊称帝，国号大夏，都兴庆府",
+   "_source_idx": 0,
+   "_source_name": "《宋史·夏国传》与西夏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ningxia_xixia_02",
+   "subject": "event:ev_ningxia_xixia_02",
+   "year": 1038,
+   "era": "显道元年",
+   "title": "定都兴庆府",
+   "kind": "建置",
+   "text": "定都兴庆府，倚贺兰为屏",
+   "_source_idx": 0,
+   "_source_name": "《宋史·夏国传》与西夏",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "XIA__p01",
+   "name": "汪鋐",
+   "role": "明广东提刑按察使",
+   "note": "嘉靖元年率军驱逐佛郎机",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与屯门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p02",
+   "name": "佛郎机首领",
+   "role": "葡萄牙殖民者首领",
+   "note": "据屯门为舶口",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与屯门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

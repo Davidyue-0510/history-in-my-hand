@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "XIZ__p01",
+   "name": "松赞干布",
+   "role": "吐蕃赞普",
+   "note": "吐蕃第三十三代赞普，迎娶文成公主",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·吐蕃传》与文成公主",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p02",
+   "name": "文成公主",
+   "role": "唐宗室女",
+   "note": "唐太宗所许宗女，入藏和亲",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·吐蕃传》与文成公主",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p03",
+   "name": "唐太宗",
+   "role": "唐朝皇帝",
+   "note": "许婚文成公主",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·吐蕃传》与文成公主",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

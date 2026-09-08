@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "隋炀帝",
+   "role": "隋朝皇帝",
+   "note": "亲巡河西，破吐谷浑",
+   "_source_idx": 0,
+   "_source_name": "《隋书·炀帝纪》与吐谷浑",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "吐谷浑可汗",
+   "role": "吐谷浑首领",
+   "note": "西徙据青海，被隋击败",
+   "_source_idx": 0,
+   "_source_name": "《隋书·炀帝纪》与吐谷浑",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

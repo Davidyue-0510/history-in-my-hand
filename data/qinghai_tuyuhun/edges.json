@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "hexi",
+   "to": "qinghai",
+   "type": "military",
+   "label": "炀帝西巡路线",
+   "_source_idx": 0,
+   "_source_name": "《隋书·炀帝纪》与吐谷浑",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

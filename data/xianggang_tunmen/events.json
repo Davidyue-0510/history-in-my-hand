@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_tunmen_01",
+   "subject": "event:ev_xianggang_tunmen_01",
+   "year": 1522,
+   "era": "嘉靖元年",
+   "title": "屯门海战",
+   "kind": "战事",
+   "text": "明军驱逐佛郎机，焚其舟",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与屯门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_tunmen_02",
+   "subject": "event:ev_xianggang_tunmen_02",
+   "year": 1522,
+   "era": "嘉靖元年",
+   "title": "设南头守御所",
+   "kind": "建置",
+   "text": "明设南头守御所，加强海防",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与屯门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

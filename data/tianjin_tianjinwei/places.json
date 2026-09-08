@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "tianjin",
+   "name": "天津",
+   "type": "city",
+   "modern": "今中国天津市",
+   "note": "赐名天津，设卫",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.2,
+   "lat": 39.13,
+   "geo_note": "平津战役·天津攻坚战"
+  },
+  {
+   "id": "zhigu",
+   "name": "直沽",
+   "type": "port",
+   "modern": "今中国天津市",
+   "note": "筑城之地",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "beijing",
+   "name": "北京",
+   "type": "city",
+   "modern": "今中国北京市",
+   "note": "明都城",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 116.4,
+   "lat": 39.9,
+   "geo_note": "平津战役·傅作义起义"
+  },
+  {
+   "id": "jimen",
+   "name": "蓟门",
+   "type": "region",
+   "modern": "今中国北京及天津一带",
+   "note": "肘腋之防",
+   "_source_idx": 0,
+   "_source_name": "《明史·兵志》与天津卫",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

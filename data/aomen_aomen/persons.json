@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "AOM__p01",
+   "name": "葡人",
+   "role": "葡萄牙商人",
+   "note": "航海东来，请赁居澳门",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与澳门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p02",
+   "name": "明守澳官",
+   "role": "明朝官员",
+   "note": "设官辖治澳门",
+   "_source_idx": 0,
+   "_source_name": "《明史·外国传》与澳门",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

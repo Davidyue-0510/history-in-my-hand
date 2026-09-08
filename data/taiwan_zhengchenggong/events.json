@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_taiwan_zhengchenggong_01",
+   "subject": "event:ev_taiwan_zhengchenggong_01",
+   "year": 1661,
+   "era": "永历十五年（顺治十八年）",
+   "title": "郑成功率师渡海",
+   "kind": "战事",
+   "text": "郑成功率舟师自金厦渡海攻台",
+   "_source_idx": 0,
+   "_source_name": "《台湾通史》与郑成功",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_zhengchenggong_02",
+   "subject": "event:ev_taiwan_zhengchenggong_02",
+   "year": 1661,
+   "era": "永历十五年（顺治十八年）",
+   "title": "围热兰遮城",
+   "kind": "战事",
+   "text": "郑军围攻热兰遮城",
+   "_source_idx": 0,
+   "_source_name": "《台湾通史》与郑成功",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_zhengchenggong_03",
+   "subject": "event:ev_taiwan_zhengchenggong_03",
+   "year": 1662,
+   "era": "永历十六年（顺治十八年）",
+   "title": "荷兰投降",
+   "kind": "战事",
+   "text": "揆一降，台湾入明郑版图",
+   "_source_idx": 0,
+   "_source_name": "《台湾通史》与郑成功",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
