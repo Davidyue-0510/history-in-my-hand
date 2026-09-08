@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "xiamen",
+   "name": "厦门",
+   "type": "port",
+   "modern": "今中国福建省厦门市",
+   "note": "五口通商口岸之一",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "gulangyu",
+   "name": "鼓浪屿",
+   "type": "island",
+   "modern": "今中国福建省厦门市鼓浪屿",
+   "note": "公共地界",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "siming",
+   "name": "思明",
+   "type": "region",
+   "modern": "今中国福建省厦门市思明区",
+   "note": "厦门旧称",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

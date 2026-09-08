@@ -1079,6 +1079,38 @@
    "_src_line": 14
   },
   {
+   "id": "FUJ_010",
+   "scene": "fujian_xiamen_llm",
+   "subject": "place:gulangyu",
+   "title": "鼓浪屿公共地界形成原因",
+   "missing": "历史档案 / 外交史",
+   "where": "鼓浪屿",
+   "skills": [
+    "历史档案",
+    "外交史"
+   ],
+   "accept": "公共地界形成机制",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "FUJ_011",
+   "scene": "fujian_xiamen_llm",
+   "subject": "place:xiamen",
+   "title": "侨汇枢纽地位形成时间",
+   "missing": "经济史 / 华侨史",
+   "where": "厦门",
+   "skills": [
+    "经济史",
+    "华侨史"
+   ],
+   "accept": "侨汇规模与影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "F010",
    "scene": "fushun",
    "subject": "event:fushun_fall",
@@ -3679,6 +3711,22 @@
    "_src_line": 13
   },
   {
+   "id": "SHA_014",
+   "scene": "shanxi_jinshang_llm",
+   "subject": "person:SHA__p01",
+   "title": "晋商内部账册缺失",
+   "missing": "档案整理 / 经济史",
+   "where": "山西各票号旧址",
+   "skills": [
+    "档案整理",
+    "经济史"
+   ],
+   "accept": "发现票号账册",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SHAQIUG01",
    "scene": "shaqiu",
    "subject": "event:sq_210",
@@ -3791,6 +3839,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "SIC_014",
+   "scene": "sichuan_dujiangyan_llm",
+   "subject": "event:ev_sichuan_dujiangyan_llm_01",
+   "title": "确切年份待考",
+   "missing": "古文字学 / 历史地理",
+   "where": "秦代蜀郡守府档案",
+   "skills": [
+    "古文字学",
+    "历史地理"
+   ],
+   "accept": "发现确切纪年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "SC016",

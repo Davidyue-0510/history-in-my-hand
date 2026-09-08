@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "sichuan_dujiangyan_src_llm",
+   "title": "都江堰史料摘录",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "后世官修",
+   "period": "秦",
+   "note": ""
+  }
+ ]
+}

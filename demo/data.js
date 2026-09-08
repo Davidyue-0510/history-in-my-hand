@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 250 个切片
+// 权威数据源：data/scenes.json 注册的 254 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 250 个切片",
+  "slice": "multi-scene · 254 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -29,6 +29,7 @@ window.SANDBOX_DATA = {
    "foguo_chan_llm",
    "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
+   "fujian_xiamen_llm",
    "gansu_dunhuang_llm",
    "gansu_hexizhen_llm",
    "guandu_llm",
@@ -48,6 +49,7 @@ window.SANDBOX_DATA = {
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
+   "hunan_mawangdui_llm",
    "jiangxi_nanchang_llm",
    "jiangxi_ruijin_llm",
    "jilin_bohai_llm",
@@ -78,7 +80,9 @@ window.SANDBOX_DATA = {
    "san_guo",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
+   "shanxi_jinshang_llm",
    "shu_han_found_llm",
+   "sichuan_dujiangyan_llm",
    "song",
    "song_chanchuan_llm",
    "song_wanganshi_llm",
@@ -618,7 +622,11 @@ window.SANDBOX_DATA = {
   "jilin_bohai_llm",
   "jilin_changchun_llm",
   "tianjin_kaibu_llm",
-  "yunnan_nanzhao_llm"
+  "yunnan_nanzhao_llm",
+  "fujian_xiamen_llm",
+  "hunan_mawangdui_llm",
+  "shanxi_jinshang_llm",
+  "sichuan_dujiangyan_llm"
  ],
  "vocab": {
   "layers": [
@@ -27111,6 +27119,137 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "fujian_xiamen_llm": {
+   "key": "fujian_xiamen_llm",
+   "scene_id": "fujian_xiamen_llm",
+   "title": "厦门五口通商",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=fujian_xiamen_llm",
+   "primary_place": "xiamen",
+   "vocab_pack": "fujian_xiamen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 11,
+    "conflict": 0,
+    "gap": 2,
+    "record": 6,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "hunan_mawangdui_llm": {
+   "key": "hunan_mawangdui_llm",
+   "scene_id": "hunan_mawangdui_llm",
+   "title": "马王堆汉墓",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "tech",
+   "region": "hunan",
+   "page": "county.html?scene=hunan_mawangdui_llm",
+   "primary_place": "mawangdui",
+   "vocab_pack": "hunan_mawangdui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 15,
+    "conflict": 3,
+    "gap": 0,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "shanxi_jinshang_llm": {
+   "key": "shanxi_jinshang_llm",
+   "scene_id": "shanxi_jinshang_llm",
+   "title": "晋商",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "exchange",
+   "page": "county.html?scene=shanxi_jinshang_llm",
+   "primary_place": "shanxi",
+   "vocab_pack": "shanxi_jinshang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 1,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "sichuan_dujiangyan_llm": {
+   "key": "sichuan_dujiangyan_llm",
+   "scene_id": "sichuan_dujiangyan_llm",
+   "title": "都江堰",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=sichuan_dujiangyan_llm",
+   "primary_place": "dujiangyan",
+   "vocab_pack": "sichuan_dujiangyan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -27363,7 +27502,11 @@ window.SANDBOX_DATA = {
   "jilin_bohai_llm": "slices/jilin_bohai_llm.js",
   "jilin_changchun_llm": "slices/jilin_changchun_llm.js",
   "tianjin_kaibu_llm": "slices/tianjin_kaibu_llm.js",
-  "yunnan_nanzhao_llm": "slices/yunnan_nanzhao_llm.js"
+  "yunnan_nanzhao_llm": "slices/yunnan_nanzhao_llm.js",
+  "fujian_xiamen_llm": "slices/fujian_xiamen_llm.js",
+  "hunan_mawangdui_llm": "slices/hunan_mawangdui_llm.js",
+  "shanxi_jinshang_llm": "slices/shanxi_jinshang_llm.js",
+  "sichuan_dujiangyan_llm": "slices/sichuan_dujiangyan_llm.js"
  },
  "corridors": [
   {

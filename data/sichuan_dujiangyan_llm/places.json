@@ -1,0 +1,49 @@
+{
+ "places": [
+  {
+   "id": "dujiangyan",
+   "name": "都江堰",
+   "type": "yi",
+   "modern": "今中国四川省都江堰市",
+   "note": "岷江出山口",
+   "_source_idx": 0,
+   "_source_name": "都江堰史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "minjiang",
+   "name": "岷江",
+   "type": "region",
+   "modern": "今中国四川省",
+   "note": "长江支流",
+   "_source_idx": 0,
+   "_source_name": "都江堰史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "chengdu_pingyuan",
+   "name": "成都平原",
+   "type": "region",
+   "modern": "今中国四川省成都平原",
+   "note": "天府之国",
+   "_source_idx": 0,
+   "_source_name": "都江堰史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.07,
+   "lat": 30.66,
+   "geo_note": "今四川成都",
+   "geo_match": "substring"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

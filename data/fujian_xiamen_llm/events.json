@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_xiamen_llm_01",
+   "subject": "event:ev_fujian_xiamen_llm_01",
+   "year": 1842,
+   "era": "道光二十二年",
+   "title": "《南京条约》签订",
+   "kind": "外交",
+   "text": "开五口通商，厦门为其中之一",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_xiamen_llm_02",
+   "subject": "event:ev_fujian_xiamen_llm_02",
+   "year": 1843,
+   "era": "道光二十三年",
+   "title": "厦门开埠",
+   "kind": "行政",
+   "text": "正式开埠，鼓浪屿成公共地界",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_xiamen_llm_03",
+   "subject": "event:ev_fujian_xiamen_llm_03",
+   "year": 1843,
+   "era": "道光二十三年",
+   "title": "列强设领事馆",
+   "kind": "外交",
+   "text": "英、美、法等设领事馆与洋行",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

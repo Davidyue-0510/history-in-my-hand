@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hunan_mawangdui_llm_01",
+   "subject": "event:ev_hunan_mawangdui_llm_01",
+   "year": -168,
+   "era": "西汉初年",
+   "title": "利苍家族葬于马王堆",
+   "kind": "其他",
+   "text": "利苍家族葬于马王堆",
+   "_source_idx": 0,
+   "_source_name": "马王堆汉墓史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_mawangdui_llm_02",
+   "subject": "event:ev_hunan_mawangdui_llm_02",
+   "year": 1972,
+   "era": "1972年",
+   "title": "马王堆汉墓发掘",
+   "kind": "其他",
+   "text": "1972年发掘马王堆汉墓",
+   "_source_idx": 0,
+   "_source_name": "马王堆汉墓史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

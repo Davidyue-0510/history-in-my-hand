@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "minjiang",
+   "to": "dujiangyan",
+   "type": "military",
+   "label": "岷江出山口筑堰",
+   "_source_idx": 0,
+   "_source_name": "都江堰史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

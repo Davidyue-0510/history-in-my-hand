@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_jinshang_llm_01",
+   "subject": "event:ev_shanxi_jinshang_llm_01",
+   "year": 1368,
+   "era": "明初",
+   "title": "开中法实施",
+   "kind": "制度",
+   "text": "召商输粮于边，晋商以盐起家",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_jinshang_llm_02",
+   "subject": "event:ev_shanxi_jinshang_llm_02",
+   "year": 1823,
+   "era": "清道光三年",
+   "title": "日昇昌票号创立",
+   "kind": "商业",
+   "text": "晋商首创票号，汇通天下",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_jinshang_llm_03",
+   "subject": "event:ev_shanxi_jinshang_llm_03",
+   "year": 1850,
+   "era": "清道光末",
+   "title": "万里茶道兴盛",
+   "kind": "商业",
+   "text": "开辟至中俄边境的茶贸路线",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

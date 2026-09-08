@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "shanxi",
+   "name": "山西",
+   "type": "region",
+   "modern": "中国山西省",
+   "note": "晋商故里",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "rikusheng",
+   "name": "日昇昌",
+   "type": "yi",
+   "modern": "中国山西平遥",
+   "note": "票号旧址",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "qiaojia_dayuan",
+   "name": "乔家大院",
+   "type": "yi",
+   "modern": "中国山西祁县",
+   "note": "晋商宅院",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "qujia_dayuan",
+   "name": "渠家大院",
+   "type": "yi",
+   "modern": "中国山西祁县",
+   "note": "晋商宅院",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "caojia_dayuan",
+   "name": "曹家大院",
+   "type": "yi",
+   "modern": "中国山西太谷",
+   "note": "晋商宅院",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "zhong_e_bianjing",
+   "name": "中俄边境",
+   "type": "region",
+   "modern": "中国与俄罗斯边境",
+   "note": "万里茶道终点",
+   "_source_idx": 0,
+   "_source_name": "晋商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

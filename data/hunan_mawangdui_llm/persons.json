@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HUN__p01",
+   "name": "利苍",
+   "role": "西汉长沙国丞相",
+   "note": "马王堆汉墓一号墓主辛追之夫",
+   "_source_idx": 0,
+   "_source_name": "马王堆汉墓史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p02",
+   "name": "辛追",
+   "role": "利苍之妻",
+   "note": "一号墓主，出土完好女尸",
+   "_source_idx": 0,
+   "_source_name": "马王堆汉墓史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

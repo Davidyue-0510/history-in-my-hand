@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "FUJ__p01",
+   "name": "耆英",
+   "role": "清钦差大臣",
+   "note": "签订《南京条约》",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "FUJ__p02",
+   "name": "璞鼎查",
+   "role": "英国全权代表",
+   "note": "签订《南京条约》",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "FUJ__p03",
+   "name": "道光帝",
+   "role": "清朝皇帝",
+   "note": "批准条约",
+   "_source_idx": 0,
+   "_source_name": "厦门五口通商史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
