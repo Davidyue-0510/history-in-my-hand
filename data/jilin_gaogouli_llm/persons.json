@@ -3,21 +3,31 @@
   {
    "id": "JIL__p01",
    "name": "朱蒙",
-   "role": "高句丽开国君主",
-   "note": "前37年立国，都纥升骨城",
+   "role": "高句丽始祖",
+   "note": "夫余族，建立高句丽",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   },
   {
    "id": "JIL__p02",
    "name": "好太王",
    "role": "高句丽国王",
-   "note": "391-412年在位，拓境立碑",
+   "note": "391-412年在位，疆域极盛",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p03",
+   "name": "唐高宗",
+   "role": "唐朝皇帝",
+   "note": "总章元年灭高句丽",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   }
  ]

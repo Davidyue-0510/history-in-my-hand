@@ -423,7 +423,10 @@
   "fujian_qijiguang_llm",
   "shanghai_xiaodaohui_llm",
   "ningxia_xixia_llm",
-  "neimenggu_zhaojun_llm"
+  "neimenggu_zhaojun_llm",
+  "gansu_hexizhen_llm",
+  "guizhou_zunyi_llm",
+  "heilongjiang_jin_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -14017,9 +14020,7 @@
    "parties_note": "",
    "dims": [
     1,
-    2,
     3,
-    4,
     5,
     6
    ],
@@ -18448,6 +18449,232 @@
     }
    },
    "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "gansu_hexizhen_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "汉武帝设河西四郡（前121—前111）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jiuquan",
+   "dossier_event": "event:ev_gansu_hexizhen_llm_01",
+   "vocab_pack": "gansu_hexizhen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉武帝设河西四郡（前121—前111）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉武帝设河西四郡（前121—前111）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉武帝设河西四郡（前121—前111）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉武帝设河西四郡（前121—前111）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "guizhou_zunyi_llm": {
+   "kind": "court",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "遵义会议（1935）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zunyi",
+   "dossier_event": "event:ev_guizhou_zunyi_llm_01",
+   "vocab_pack": "guizhou_zunyi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "遵义会议（1935）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "遵义会议（1935）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "遵义会议（1935）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "遵义会议（1935）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "heilongjiang_jin_llm": {
+   "kind": "frontier",
+   "region": "jianzhou",
+   "province": "heilongjiang",
+   "title": "金朝立国 完颜阿骨打称帝（1115）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "huining_fu",
+   "dossier_event": "event:ev_heilongjiang_jin_llm_01",
+   "vocab_pack": "heilongjiang_jin_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "金朝立国 完颜阿骨打称帝（1115）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "金朝立国 完颜阿骨打称帝（1115）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "金朝立国 完颜阿骨打称帝（1115）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "金朝立国 完颜阿骨打称帝（1115）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
     3,
     4,
     5,

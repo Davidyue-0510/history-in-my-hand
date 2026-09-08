@@ -1,3 +1,14 @@
 {
- "edges": []
+ "edges": [
+  {
+   "from": "heshenggu",
+   "to": "pyongyang",
+   "type": "military",
+   "label": "迁都路线",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
 }

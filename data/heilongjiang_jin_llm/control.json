@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "huining_fu",
+   "party": "后世官修",
+   "start": 1115,
+   "end": 1234,
+   "basis": "auto: 场景主地点 huining_fu 叙事控制方=后世官修"
+  }
+ ]
+}

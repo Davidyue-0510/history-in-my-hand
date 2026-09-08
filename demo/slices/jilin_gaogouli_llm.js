@@ -11,15 +11,13 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
   "subtitle": "",
   "primary_place": "jilin_ji_an",
   "dossier_event": "event:ev_jilin_gaogouli_llm_01",
-  "vocab_pack": "inline:jilin_gaogouli_llm",
+  "vocab_pack": "jilin_gaogouli_llm",
   "terrain_grid": "china_coarse",
   "lead": "",
   "parties_note": "",
   "dims": [
    1,
-   2,
    3,
-   4,
    5,
    6
   ],
@@ -91,82 +89,116 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
  },
  "sources": [
   {
-   "id": "wei_shu_gaogouli_llm",
-   "title": "魏书·高句丽传（集安）",
-   "party": "魏晋官修",
+   "id": "gaogouli_llm_src",
+   "title": "高句丽史料摘录",
+   "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
-   "compiler": "魏收",
-   "period": "北齐",
+   "compiler": "LLM 摘要（paraphrase_unverified）",
+   "period": "前37—668",
    "note": ""
-  },
-  {
-   "id": "synthesis",
-   "title": "綜合研判·缺口標註",
-   "party": "综合史料",
-   "availability": "not_free",
-   "bias_note": "諸場景據原始文獻綜合研判，缺環以 gap 層誠實標註。",
-   "distance_label": "综合诸家记述（非单一典籍；各场景具体来源见 stance_label）"
   }
  ],
  "places": [
   {
-   "id": "jilin_ji_an",
+   "id": "heshenggu",
+   "name": "纥升骨城",
+   "type": "city",
+   "modern": "今中国吉林集安一带",
+   "note": "高句丽初都",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "ji_an",
    "name": "集安",
    "type": "city",
    "modern": "今中国吉林省集安市",
-   "note": "高句丽早期都城",
+   "note": "高句丽遗迹所在地",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": 126.18,
-   "lat": 41.12,
-   "geo_unresolved": false,
-   "elev": 475
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
   },
   {
-   "id": "he_sheng_gu_cheng",
-   "name": "纥升骨城",
-   "type": "fortress",
-   "modern": "今中国吉林省集安市",
-   "note": "高句丽都城",
-   "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
-   "_source_credibility": null,
-   "lon": 126.18,
-   "lat": 41.1,
-   "geo_unresolved": false,
-   "elev": 450
-  },
-  {
-   "id": "ya_lu_jiang",
-   "name": "鸭绿江",
+   "id": "liaodong",
+   "name": "辽东",
    "type": "region",
-   "modern": "今中国朝鲜界河",
-   "note": "高句丽核心区域",
+   "modern": "今中国辽宁地区",
+   "note": "高句丽据有之地",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": 126.0,
-   "lat": 40.5,
+   "lon": 123.43,
+   "lat": 41.8,
+   "geo_note": "唐安东都护府，今辽宁辽阳",
+   "elev": 43
+  },
+  {
+   "id": "xuantu",
+   "name": "玄菟",
+   "type": "region",
+   "modern": "今中国辽宁东部",
+   "note": "高句丽据有之地",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "pyongyang",
+   "name": "平壤",
+   "type": "city",
+   "modern": "今朝鲜平壤",
+   "note": "高句丽后期都城",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 125.75,
+   "lat": 39.03,
+   "geo_note": "朝鲜平安道首府，壬辰倭乱平壤之战主战场",
+   "elev": 13
+  },
+  {
+   "id": "datongjiang",
+   "name": "大同江",
+   "type": "region",
+   "modern": "今朝鲜大同江",
+   "note": "高句丽南界",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 125.1,
+   "lat": 39.2,
+   "geo_note": "朝鲜大同江入海口",
    "geo_match": "substring",
-   "geo_unresolved": false,
-   "elev": 684
+   "elev": 0
   }
  ],
  "persons": [
   {
    "id": "JIL__p01",
    "name": "朱蒙",
-   "role": "高句丽开国君主",
-   "note": "前37年立国，都纥升骨城",
+   "role": "高句丽始祖",
+   "note": "夫余族，建立高句丽",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
   },
@@ -174,10 +206,21 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
    "id": "JIL__p02",
    "name": "好太王",
    "role": "高句丽国王",
-   "note": "391-412年在位，拓境立碑",
+   "note": "391-412年在位，疆域极盛",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 2
+  },
+  {
+   "id": "JIL__p03",
+   "name": "唐高宗",
+   "role": "唐朝皇帝",
+   "note": "总章元年灭高句丽",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
   }
@@ -186,110 +229,109 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
   {
    "id": "JIL_001",
    "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "立国时间",
-   "value_text": "前37年朱蒙立国",
+   "predicate": "建国时间",
+   "value_text": "汉建昭二年（前37）",
    "time": {
-    "era_text": "汉元帝建昭二年",
+    "era_text": "汉建昭二年",
     "start": "-37-01-01",
     "end": "-37-12-31",
     "gregorian_year": -37
    },
-   "place": "he_sheng_gu_cheng",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "汉元帝建昭二年（前37）朱蒙立国",
+   "place": "heshenggu",
+   "source": "gaogouli_llm_src",
+   "quote": "汉建昭二年（前37）",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.45,
+   "scale": "province",
+   "note": "[auto] 补层 scholarship",
+   "dims": [
+    6
+   ],
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "汉建昭二年（前37）",
+   "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "JIL_002",
+   "subject": "event:ev_jilin_gaogouli_llm_01",
+   "predicate": "建国者",
+   "value_text": "夫余族朱蒙",
+   "time": {
+    "era_text": "汉建昭二年",
+    "start": "-37-01-01",
+    "end": "-37-12-31",
+    "gregorian_year": -37
+   },
+   "place": "heshenggu",
+   "source": "gaogouli_llm_src",
+   "quote": "夫余族朱蒙",
    "quote_status": "paraphrase_unverified",
    "layer": "inference",
    "confidence": 0.45,
    "scale": "province",
    "note": "[auto] 补层 inference",
    "dims": [
-    3,
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
-   "_source_credibility": null,
-   "_source_quote": "汉元帝建昭二年（前37）朱蒙立国",
-   "dim_source": "declared",
-   "_party": "魏晋官修",
-   "_faction": null
-  },
-  {
-   "id": "JIL_002",
-   "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "都城",
-   "value_text": "都纥升骨城",
-   "time": {
-    "era_text": "汉元帝建昭二年",
-    "start": "-37-01-01",
-    "end": "-37-12-31",
-    "gregorian_year": -37
-   },
-   "place": "he_sheng_gu_cheng",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "都纥升骨城",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
-   "note": "",
-   "dims": [
-    1,
     3
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "都纥升骨城",
+   "_source_quote": "夫余族朱蒙",
    "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_003",
    "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "族源",
-   "value_text": "夫余别种",
+   "predicate": "建都地点",
+   "value_text": "纥升骨城",
    "time": {
-    "era_text": "汉元帝建昭二年",
+    "era_text": "汉建昭二年",
     "start": "-37-01-01",
     "end": "-37-12-31",
     "gregorian_year": -37
    },
-   "place": "he_sheng_gu_cheng",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "夫余别种",
+   "place": "heshenggu",
+   "source": "gaogouli_llm_src",
+   "quote": "在纥升骨城",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
+   "confidence": 0.9,
    "scale": "province",
    "note": "",
    "dims": [
-    4
+    1
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "夫余别种",
+   "_source_quote": "在纥升骨城",
    "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_004",
    "subject": "event:ev_jilin_gaogouli_llm_02",
-   "predicate": "拓境",
-   "value_text": "好太王拓境",
+   "predicate": "迁都时间",
+   "value_text": "公元427年",
    "time": {
-    "era_text": "好太王在位",
-    "start": "0391"
+    "era_text": "公元427年",
+    "start": "0427-01-01",
+    "gregorian_year": 427
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "好太王（391–412）拓境",
+   "place": "pyongyang",
+   "source": "gaogouli_llm_src",
+   "quote": "公元427年迁都平壤",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
@@ -299,26 +341,27 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
     6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "好太王（391–412）拓境",
+   "_source_quote": "公元427年迁都平壤",
    "dim_source": "fallback",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_005",
    "subject": "event:ev_jilin_gaogouli_llm_02",
-   "predicate": "碑存",
-   "value_text": "碑在今集安",
+   "predicate": "迁都地点",
+   "value_text": "平壤",
    "time": {
-    "era_text": "好太王在位",
-    "start": "0391"
+    "era_text": "公元427年",
+    "start": "0427-01-01",
+    "gregorian_year": 427
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "碑在今集安",
+   "place": "pyongyang",
+   "source": "gaogouli_llm_src",
+   "quote": "迁都平壤",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
@@ -328,394 +371,336 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
     1
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "碑在今集安",
+   "_source_quote": "迁都平壤",
    "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_006",
    "subject": "event:ev_jilin_gaogouli_llm_03",
-   "predicate": "灭亡时间",
-   "value_text": "668年唐灭高句丽",
+   "predicate": "灭国时间",
+   "value_text": "唐总章元年（668）",
    "time": {
     "era_text": "唐总章元年",
-    "start": "668-01-01",
-    "end": "668-12-31",
+    "start": "0668-01-01",
     "gregorian_year": 668
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "唐总章元年（668）为唐所灭",
+   "place": "pyongyang",
+   "source": "gaogouli_llm_src",
+   "quote": "唐总章元年（668）",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
-   "scale": "province",
+   "scale": "empire",
    "note": "",
    "dims": [
     6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "唐总章元年（668）为唐所灭",
+   "_source_quote": "唐总章元年（668）",
    "dim_source": "fallback",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_007",
-   "subject": "place:jilin_ji_an",
-   "predicate": "地理位置",
-   "value_text": "扼鸭绿江中游",
+   "subject": "event:ev_jilin_gaogouli_llm_03",
+   "predicate": "灭国方式",
+   "value_text": "唐与新罗联军",
    "time": {
-    "era_text": "无",
-    "start": ""
+    "era_text": "唐总章元年",
+    "start": "0668-01-01",
+    "gregorian_year": 668
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "扼鸭绿江中游",
+   "place": "pyongyang",
+   "source": "gaogouli_llm_src",
+   "quote": "唐与新罗联军灭高句丽",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
-   "scale": "province",
+   "scale": "empire",
    "note": "",
    "dims": [
-    1
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "扼鸭绿江中游",
-   "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_source_quote": "唐与新罗联军灭高句丽",
+   "dim_source": "fallback",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_008",
-   "subject": "place:jilin_ji_an",
-   "predicate": "战略地位",
-   "value_text": "控辽东边徼",
+   "subject": "event:ev_jilin_gaogouli_llm_03",
+   "predicate": "灭国结果",
+   "value_text": "分其地",
    "time": {
-    "era_text": "无",
-    "start": ""
+    "era_text": "唐总章元年",
+    "start": "0668-01-01",
+    "gregorian_year": 668
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "控辽东边徼",
+   "place": "pyongyang",
+   "source": "gaogouli_llm_src",
+   "quote": "分其地",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
-   "scale": "province",
+   "scale": "empire",
    "note": "",
    "dims": [
-    1
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "控辽东边徼",
-   "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_source_quote": "分其地",
+   "dim_source": "fallback",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_009",
-   "subject": "place:jilin_ji_an",
-   "predicate": "与中原关系",
-   "value_text": "与汉魏南北朝时和时战",
+   "subject": "person:JIL__p02",
+   "predicate": "疆域极盛",
+   "value_text": "南抵大同江",
    "time": {
-    "era_text": "无",
-    "start": ""
+    "era_text": "好太王时期",
+    "start": "0391-01-01"
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "与汉、魏、南北朝时和时战",
+   "place": "datongjiang",
+   "source": "gaogouli_llm_src",
+   "quote": "南抵大同江",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.8,
    "scale": "province",
    "note": "",
    "dims": [
-    6
+    1
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "与汉、魏、南北朝时和时战",
-   "dim_source": "fallback",
-   "_party": "魏晋官修",
+   "_source_quote": "南抵大同江",
+   "dim_source": "declared",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_010",
-   "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "都城位置",
-   "value_text": "今吉林集安",
+   "subject": "person:JIL__p02",
+   "predicate": "立碑颂功",
+   "value_text": "好太王碑",
    "time": {
-    "era_text": "汉元帝建昭二年",
-    "start": "-37-01-01",
-    "end": "-37-12-31",
-    "gregorian_year": -37
+    "era_text": "好太王时期",
+    "start": "0391-01-01"
    },
-   "place": "he_sheng_gu_cheng",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "都纥升骨城（今吉林集安）",
+   "place": "ji_an",
+   "source": "gaogouli_llm_src",
+   "quote": "立碑颂功",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.9,
+   "confidence": 0.8,
    "scale": "province",
    "note": "",
    "dims": [
-    1
+    5
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "都纥升骨城（今吉林集安）",
+   "_source_quote": "立碑颂功",
    "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_011",
-   "subject": "event:ev_jilin_gaogouli_llm_02",
-   "predicate": "好太王在位时间",
-   "value_text": "391-412年在位",
+   "subject": "event:ev_jilin_gaogouli_llm_03",
+   "predicate": "隋征高句丽",
+   "value_text": "隋征高句丽屡败",
    "time": {
-    "era_text": "好太王在位",
-    "start": "0391"
+    "era_text": "隋代",
+    "start": "0581-01-01"
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "好太王（391–412）",
+   "place": "liaodong",
+   "source": "gaogouli_llm_src",
+   "quote": "隋征高句丽屡败",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.9,
-   "scale": "province",
+   "confidence": 0.7,
+   "scale": "empire",
    "note": "",
    "dims": [
     6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "好太王（391–412）",
+   "_source_quote": "隋征高句丽屡败",
    "dim_source": "fallback",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_012",
-   "subject": "event:ev_jilin_gaogouli_llm_03",
-   "predicate": "灭国原因",
-   "value_text": "唐灭高句丽",
+   "subject": "place:ji_an",
+   "predicate": "遗迹留存",
+   "value_text": "将军坟、好太王碑",
    "time": {
-    "era_text": "唐总章元年",
-    "start": "668-01-01",
-    "end": "668-12-31",
-    "gregorian_year": 668
+    "era_text": "现代",
+    "start": "2024-01-01"
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "为唐所灭",
+   "place": "ji_an",
+   "source": "gaogouli_llm_src",
+   "quote": "吉林集安留存将军坟、好太王碑等遗迹",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
    "scale": "province",
    "note": "",
    "dims": [
-    6
+    5
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "为唐所灭",
-   "dim_source": "fallback",
-   "_party": "魏晋官修",
+   "_source_quote": "吉林集安留存将军坟、好太王碑等遗迹",
+   "dim_source": "declared",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_013",
    "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "立国者身份",
-   "value_text": "朱蒙为夫余别种",
+   "predicate": "建国背景",
+   "value_text": "渐并周边部落",
    "time": {
-    "era_text": "汉元帝建昭二年",
-    "start": "-37-01-01",
-    "end": "-37-12-31",
-    "gregorian_year": -37
+    "era_text": "建国后",
+    "start": "-0037-01-01"
    },
-   "place": "he_sheng_gu_cheng",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "夫余别种",
+   "place": "liaodong",
+   "source": "gaogouli_llm_src",
+   "quote": "渐并周边部落",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.8,
+   "confidence": 0.7,
    "scale": "province",
    "note": "",
    "dims": [
-    4
+    6
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "夫余别种",
-   "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_source_quote": "渐并周边部落",
+   "dim_source": "fallback",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_014",
-   "subject": "event:ev_jilin_gaogouli_llm_02",
-   "predicate": "碑文内容",
-   "value_text": "碑文记拓境事迹",
+   "subject": "event:ev_jilin_gaogouli_llm_01",
+   "predicate": "据有辽东玄菟",
+   "value_text": "据有辽东、玄菟",
    "time": {
-    "era_text": "好太王在位",
-    "start": "0391"
+    "era_text": "建国后",
+    "start": "-0037-01-01"
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "碑在今集安",
+   "place": "liaodong",
+   "source": "gaogouli_llm_src",
+   "quote": "据有辽东、玄菟",
    "quote_status": "paraphrase_unverified",
-   "layer": "scholarship",
-   "confidence": 0.6,
+   "layer": "record",
+   "confidence": 0.7,
    "scale": "province",
-   "note": "碑文具体内容未详",
+   "note": "",
    "dims": [
-    5
+    1
    ],
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "碑在今集安",
+   "_source_quote": "据有辽东、玄菟",
    "dim_source": "declared",
-   "_party": "魏晋官修",
+   "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "JIL_015",
    "subject": "event:ev_jilin_gaogouli_llm_03",
-   "predicate": "灭亡后遗民去向",
-   "value_text": "遗民去向未明",
+   "predicate": "与中原关系",
+   "value_text": "时战时和",
    "time": {
-    "era_text": "唐总章元年",
-    "start": "668-01-01",
-    "end": "668-12-31",
-    "gregorian_year": 668
+    "era_text": "高句丽时期",
+    "start": "-0037-01-01"
    },
-   "place": "jilin_ji_an",
-   "source": "wei_shu_gaogouli_llm",
-   "quote": "为唐所灭",
+   "place": "liaodong",
+   "source": "gaogouli_llm_src",
+   "quote": "与中原王朝时战时和",
    "quote_status": "paraphrase_unverified",
-   "layer": "gap",
-   "confidence": 0.0,
-   "scale": "province",
-   "note": "史料未载遗民流向",
+   "layer": "record",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "",
    "dims": [
-    4
+    6
    ],
-   "lead": {
-    "where": "集安及周边",
-    "skills": [
-     "考古",
-     "文献"
-    ],
-    "accept": "遗民融入当地或迁徙"
-   },
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "为唐所灭",
-   "dim_source": "declared",
-   "dist": {
-    "type": "degenerate"
-   },
-   "_party": "魏晋官修",
-   "_faction": null
-  },
-  {
-   "id": "JILIG2",
-   "subject": "event:ev_jilin_gaogouli_llm_01",
-   "predicate": "研究缺口",
-   "value_text": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "time": {
-    "era_text": "jilin_gaogouli_llm",
-    "start": "391",
-    "end": "391",
-    "gregorian_year": 391
-   },
-   "place": null,
-   "source": "synthesis",
-   "quote": "",
-   "quote_status": "paraphrase_unverified",
-   "layer": "gap",
-   "confidence": 0,
-   "scale": "frontier",
-   "note": "補維度覆蓋（誠實缺口）",
-   "lead": {
-    "where": "原始史料對讀",
-    "skills": [
-     "紀年校勘",
-     "多源比對"
-    ],
-    "accept": "補技術維直接史料與學界考訂"
-   },
-   "dims": [
-    2
-   ],
-   "dim_source": "declared",
-   "dist": {
-    "type": "degenerate"
-   },
-   "_party": "综合史料",
+   "_source_quote": "与中原王朝时战时和",
+   "dim_source": "fallback",
+   "_party": "后世官修",
    "_faction": null
   }
  ],
  "conflicts": [],
  "crossConflicts": [],
- "gaps": [
-  "JIL_015",
-  "JILIG2"
- ],
+ "gaps": [],
  "events": [
   {
    "id": "ev_jilin_gaogouli_llm_01",
    "subject": "event:ev_jilin_gaogouli_llm_01",
    "year": -37,
-   "era": "汉元帝建昭二年",
-   "title": "朱蒙立国",
+   "era": "汉建昭二年",
+   "title": "高句丽建国",
    "kind": "建置",
-   "text": "朱蒙立国，都纥升骨城",
+   "text": "朱蒙在纥升骨城建立高句丽",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   },
   {
    "id": "ev_jilin_gaogouli_llm_02",
    "subject": "event:ev_jilin_gaogouli_llm_02",
-   "year": 391,
-   "era": "好太王在位",
-   "title": "好太王拓境",
-   "kind": "战事",
-   "text": "好太王拓境，立碑记功",
+   "year": 427,
+   "era": "北魏始光四年",
+   "title": "迁都平壤",
+   "kind": "行政",
+   "text": "高句丽迁都至平壤",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   },
   {
@@ -725,74 +710,217 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
    "era": "唐总章元年",
    "title": "唐灭高句丽",
    "kind": "战事",
-   "text": "唐总章元年灭高句丽",
+   "text": "唐与新罗联军灭高句丽",
    "_source_idx": 0,
-   "_source_name": "魏书·高句丽传（集安）",
-   "_source_party": "魏晋官修",
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
- "edges": [],
+ "edges": [
+  {
+   "from": "heshenggu",
+   "to": "pyongyang",
+   "type": "military",
+   "label": "迁都路线",
+   "_source_idx": 0,
+   "_source_name": "高句丽史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ],
  "control": [
   {
-   "place_id": "ya_lu_jiang",
-   "party": "魏晋官修",
-   "start": 1900,
-   "end": 2000,
-   "basis": "auto-generated: all territory to 魏晋官修"
+   "place_id": "ji_an",
+   "party": "后世官修",
+   "start": -37,
+   "end": 668,
+   "basis": "auto: 场景主地点 ji_an 叙事控制方=后世官修"
   }
  ],
- "control_seats": [
-  {
-   "place_id": "ya_lu_jiang",
-   "name": "鸭绿江",
-   "lon": 126.0,
-   "lat": 40.5,
-   "region": "jianzhou"
-  }
- ],
+ "control_seats": [],
  "control_years": [
-  1900,
-  2000
+  -37,
+  668
  ],
  "vocab": {
-  "layers": [
-   "record",
-   "scholarship",
-   "inference",
-   "gap",
-   "conflict"
-  ],
-  "quote_status": [
-   "verbatim",
-   "paraphrase_unverified",
-   "generated"
-  ],
+  "layers": {
+   "record": "原始史料",
+   "scholarship": "学界研究",
+   "inference": "合理推断",
+   "gap": "证据缺口"
+  },
+  "quote_status": {
+   "verbatim": "直接引文",
+   "paraphrase_unverified": "转述待核",
+   "generated": "生成"
+  },
   "parties": [
-   "魏晋官修",
-   "综合史料"
+   "后世官修"
   ],
   "party_bucket": {
-   "魏晋官修": "魏晋官修",
-   "综合史料": "综合史料"
+   "后世官修": "后世官修"
   },
   "party_colors": {
-   "魏晋官修": "#8C6239",
-   "综合史料": "#9B7B5A"
+   "后世官修": "#A0473A"
   },
-  "factions": {},
-  "faction_colors": {}
+  "factions": {
+   "f_后世官修": {
+    "name": "后世官修",
+    "macro_party": "后世官修",
+    "note": "auto"
+   }
+  },
+  "faction_colors": {
+   "f_后世官修": "#A0473A"
+  }
  },
  "basemap": {
   "coastline": [
+   {
+    "g": {
+     "type": "LineString",
+     "coordinates": [
+      [
+       124.89,
+       39.602
+      ],
+      [
+       124.846,
+       39.559
+      ],
+      [
+       124.849,
+       39.508
+      ],
+      [
+       124.905,
+       39.536
+      ],
+      [
+       124.935,
+       39.608
+      ],
+      [
+       124.89,
+       39.602
+      ]
+     ]
+    },
+    "n": null
+   },
    {
     "g": {
      "type": "MultiLineString",
      "coordinates": [
       [
        [
-        125.0,
-        39.638
+        122.43,
+        39.41
+       ],
+       [
+        122.84,
+        39.601
+       ],
+       [
+        122.961,
+        39.62
+       ],
+       [
+        123.032,
+        39.674
+       ],
+       [
+        123.227,
+        39.687
+       ],
+       [
+        123.269,
+        39.727
+       ],
+       [
+        123.348,
+        39.763
+       ],
+       [
+        123.49,
+        39.768
+       ],
+       [
+        123.581,
+        39.786
+       ],
+       [
+        123.611,
+        39.841
+       ],
+       [
+        123.651,
+        39.882
+       ],
+       [
+        123.76,
+        39.822
+       ],
+       [
+        124.106,
+        39.841
+       ],
+       [
+        124.267,
+        39.924
+       ],
+       [
+        124.35,
+        40.012
+       ],
+       [
+        124.362,
+        40.004
+       ],
+       [
+        124.375,
+        39.996
+       ],
+       [
+        124.349,
+        39.907
+       ],
+       [
+        124.404,
+        39.866
+       ],
+       [
+        124.557,
+        39.791
+       ],
+       [
+        124.608,
+        39.717
+       ],
+       [
+        124.638,
+        39.615
+       ],
+       [
+        124.699,
+        39.632
+       ],
+       [
+        124.732,
+        39.652
+       ],
+       [
+        124.739,
+        39.742
+       ],
+       [
+        124.775,
+        39.758
+       ],
+       [
+        124.868,
+        39.702
        ],
        [
         125.1,
@@ -807,8 +935,108 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
         39.527
        ],
        [
-        125.364,
-        39.5
+        125.374,
+        39.428
+       ],
+       [
+        125.413,
+        39.326
+       ],
+       [
+        125.41,
+        39.288
+       ],
+       [
+        125.157,
+        38.872
+       ],
+       [
+        125.169,
+        38.806
+       ],
+       [
+        125.299,
+        38.743
+       ],
+       [
+        125.424,
+        38.747
+       ],
+       [
+        125.489,
+        38.728
+       ],
+       [
+        125.554,
+        38.686
+       ],
+       [
+        125.492,
+        38.676
+       ],
+       [
+        125.415,
+        38.68
+       ],
+       [
+        125.31,
+        38.665
+       ],
+       [
+        125.067,
+        38.557
+       ],
+       [
+        124.974,
+        38.48
+       ],
+       [
+        124.881,
+        38.342
+       ],
+       [
+        124.883,
+        38.295
+       ],
+       [
+        124.875,
+        38.233
+       ],
+       [
+        124.691,
+        38.129
+       ],
+       [
+        124.779,
+        38.102
+       ],
+       [
+        124.907,
+        38.113
+       ],
+       [
+        124.995,
+        38.078
+       ],
+       [
+        125.163,
+        38.094
+       ],
+       [
+        125.207,
+        38.082
+       ],
+       [
+        125.247,
+        38.057
+       ],
+       [
+        125.193,
+        38.038
+       ],
+       [
+        125.178,
+        38.03
        ]
       ]
      ]
@@ -823,20 +1051,158 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
      "coordinates": [
       [
        [
-        125.0,
-        42.12
+        124.905,
+        39.536
        ],
        [
-        127.18,
-        42.12
+        124.849,
+        39.508
        ],
        [
-        127.18,
-        39.5
+        124.846,
+        39.559
        ],
        [
-        125.364,
-        39.5
+        124.89,
+        39.602
+       ],
+       [
+        124.935,
+        39.608
+       ],
+       [
+        124.905,
+        39.536
+       ]
+      ]
+     ]
+    },
+    "n": null
+   },
+   {
+    "g": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        122.43,
+        38.03
+       ],
+       [
+        122.43,
+        42.8
+       ],
+       [
+        126.75,
+        42.8
+       ],
+       [
+        126.75,
+        38.03
+       ],
+       [
+        125.178,
+        38.03
+       ],
+       [
+        125.193,
+        38.038
+       ],
+       [
+        125.247,
+        38.057
+       ],
+       [
+        125.207,
+        38.082
+       ],
+       [
+        125.163,
+        38.094
+       ],
+       [
+        124.995,
+        38.078
+       ],
+       [
+        124.907,
+        38.113
+       ],
+       [
+        124.779,
+        38.102
+       ],
+       [
+        124.691,
+        38.129
+       ],
+       [
+        124.875,
+        38.233
+       ],
+       [
+        124.883,
+        38.295
+       ],
+       [
+        124.881,
+        38.342
+       ],
+       [
+        124.974,
+        38.48
+       ],
+       [
+        125.067,
+        38.557
+       ],
+       [
+        125.31,
+        38.665
+       ],
+       [
+        125.415,
+        38.68
+       ],
+       [
+        125.492,
+        38.676
+       ],
+       [
+        125.554,
+        38.686
+       ],
+       [
+        125.489,
+        38.728
+       ],
+       [
+        125.424,
+        38.747
+       ],
+       [
+        125.299,
+        38.743
+       ],
+       [
+        125.169,
+        38.806
+       ],
+       [
+        125.157,
+        38.872
+       ],
+       [
+        125.41,
+        39.288
+       ],
+       [
+        125.413,
+        39.326
+       ],
+       [
+        125.374,
+        39.428
        ],
        [
         125.361,
@@ -851,12 +1217,116 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
         39.59
        ],
        [
-        125.0,
-        39.638
+        124.868,
+        39.702
        ],
        [
-        125.0,
-        42.12
+        124.775,
+        39.758
+       ],
+       [
+        124.739,
+        39.742
+       ],
+       [
+        124.732,
+        39.652
+       ],
+       [
+        124.699,
+        39.632
+       ],
+       [
+        124.638,
+        39.615
+       ],
+       [
+        124.608,
+        39.717
+       ],
+       [
+        124.557,
+        39.791
+       ],
+       [
+        124.404,
+        39.866
+       ],
+       [
+        124.349,
+        39.907
+       ],
+       [
+        124.375,
+        39.996
+       ],
+       [
+        124.362,
+        40.004
+       ],
+       [
+        124.35,
+        40.012
+       ],
+       [
+        124.267,
+        39.924
+       ],
+       [
+        124.106,
+        39.841
+       ],
+       [
+        123.76,
+        39.822
+       ],
+       [
+        123.651,
+        39.882
+       ],
+       [
+        123.611,
+        39.841
+       ],
+       [
+        123.581,
+        39.786
+       ],
+       [
+        123.49,
+        39.768
+       ],
+       [
+        123.348,
+        39.763
+       ],
+       [
+        123.269,
+        39.727
+       ],
+       [
+        123.227,
+        39.687
+       ],
+       [
+        123.032,
+        39.674
+       ],
+       [
+        122.961,
+        39.62
+       ],
+       [
+        122.84,
+        39.601
+       ],
+       [
+        122.43,
+        39.41
+       ],
+       [
+        122.43,
+        38.03
        ]
       ]
      ]
@@ -867,17 +1337,267 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
   "admin1": [
    {
     "g": {
+     "type": "Polygon",
+     "coordinates": [
+      [
+       [
+        122.43,
+        42.8
+       ],
+       [
+        122.43,
+        42.732
+       ],
+       [
+        122.461,
+        42.755
+       ],
+       [
+        122.439,
+        42.77
+       ],
+       [
+        122.43,
+        42.771
+       ],
+       [
+        122.43,
+        42.8
+       ],
+       [
+        122.579,
+        42.8
+       ],
+       [
+        122.58,
+        42.79
+       ],
+       [
+        122.625,
+        42.773
+       ],
+       [
+        122.654,
+        42.783
+       ],
+       [
+        122.733,
+        42.786
+       ],
+       [
+        122.738,
+        42.771
+       ],
+       [
+        122.786,
+        42.757
+       ],
+       [
+        122.849,
+        42.712
+       ],
+       [
+        122.883,
+        42.752
+       ],
+       [
+        122.887,
+        42.77
+       ],
+       [
+        122.926,
+        42.772
+       ],
+       [
+        122.946,
+        42.754
+       ],
+       [
+        122.98,
+        42.778
+       ],
+       [
+        123.058,
+        42.769
+       ],
+       [
+        123.116,
+        42.8
+       ],
+       [
+        122.43,
+        42.8
+       ]
+      ]
+     ]
+    },
+    "n": "内蒙古自治区"
+   },
+   {
+    "g": {
      "type": "MultiPolygon",
      "coordinates": [
       [
        [
         [
-         125.0,
-         42.12
+         123.534,
+         39.788
         ],
         [
-         125.0,
-         40.473
+         123.547,
+         39.756
+        ],
+        [
+         123.579,
+         39.781
+        ],
+        [
+         123.613,
+         39.775
+        ],
+        [
+         123.642,
+         39.796
+        ],
+        [
+         123.645,
+         39.824
+        ],
+        [
+         123.675,
+         39.827
+        ],
+        [
+         123.688,
+         39.808
+        ],
+        [
+         123.795,
+         39.823
+        ],
+        [
+         123.812,
+         39.831
+        ],
+        [
+         123.951,
+         39.818
+        ],
+        [
+         124.003,
+         39.8
+        ],
+        [
+         124.103,
+         39.823
+        ],
+        [
+         124.099,
+         39.777
+        ],
+        [
+         124.151,
+         39.746
+        ],
+        [
+         124.173,
+         39.841
+        ],
+        [
+         124.214,
+         39.865
+        ],
+        [
+         124.215,
+         39.883
+        ],
+        [
+         124.217,
+         39.894
+        ],
+        [
+         124.218,
+         39.896
+        ],
+        [
+         124.219,
+         39.899
+        ],
+        [
+         124.242,
+         39.928
+        ],
+        [
+         124.287,
+         39.932
+        ],
+        [
+         124.288,
+         39.963
+        ],
+        [
+         124.349,
+         39.989
+        ],
+        [
+         124.372,
+         40.022
+        ],
+        [
+         124.336,
+         40.05
+        ],
+        [
+         124.347,
+         40.08
+        ],
+        [
+         124.428,
+         40.144
+        ],
+        [
+         124.458,
+         40.178
+        ],
+        [
+         124.49,
+         40.184
+        ],
+        [
+         124.514,
+         40.218
+        ],
+        [
+         124.515,
+         40.22
+        ],
+        [
+         124.627,
+         40.292
+        ],
+        [
+         124.723,
+         40.322
+        ],
+        [
+         124.739,
+         40.372
+        ],
+        [
+         124.834,
+         40.423
+        ],
+        [
+         124.914,
+         40.482
+        ],
+        [
+         124.946,
+         40.456
+        ],
+        [
+         124.986,
+         40.475
         ],
         [
          125.044,
@@ -1204,12 +1924,612 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
          42.098
         ],
         [
-         125.471,
-         42.12
+         125.49,
+         42.136
         ],
         [
-         125.0,
-         42.12
+         125.458,
+         42.16
+        ],
+        [
+         125.458,
+         42.16
+        ],
+        [
+         125.414,
+         42.156
+        ],
+        [
+         125.368,
+         42.183
+        ],
+        [
+         125.357,
+         42.145
+        ],
+        [
+         125.306,
+         42.146
+        ],
+        [
+         125.313,
+         42.197
+        ],
+        [
+         125.281,
+         42.175
+        ],
+        [
+         125.313,
+         42.22
+        ],
+        [
+         125.276,
+         42.231
+        ],
+        [
+         125.276,
+         42.267
+        ],
+        [
+         125.299,
+         42.29
+        ],
+        [
+         125.264,
+         42.313
+        ],
+        [
+         125.224,
+         42.301
+        ],
+        [
+         125.175,
+         42.308
+        ],
+        [
+         125.167,
+         42.352
+        ],
+        [
+         125.204,
+         42.367
+        ],
+        [
+         125.186,
+         42.382
+        ],
+        [
+         125.186,
+         42.428
+        ],
+        [
+         125.14,
+         42.447
+        ],
+        [
+         125.15,
+         42.459
+        ],
+        [
+         125.105,
+         42.491
+        ],
+        [
+         125.069,
+         42.499
+        ],
+        [
+         125.091,
+         42.516
+        ],
+        [
+         125.067,
+         42.535
+        ],
+        [
+         125.09,
+         42.568
+        ],
+        [
+         125.083,
+         42.591
+        ],
+        [
+         125.097,
+         42.622
+        ],
+        [
+         125.039,
+         42.615
+        ],
+        [
+         125.011,
+         42.632
+        ],
+        [
+         125.015,
+         42.666
+        ],
+        [
+         124.991,
+         42.677
+        ],
+        [
+         124.968,
+         42.723
+        ],
+        [
+         124.997,
+         42.745
+        ],
+        [
+         124.976,
+         42.8
+        ],
+        [
+         124.909,
+         42.8
+        ],
+        [
+         124.898,
+         42.788
+        ],
+        [
+         124.874,
+         42.79
+        ],
+        [
+         124.869,
+         42.8
+        ],
+        [
+         123.116,
+         42.8
+        ],
+        [
+         123.058,
+         42.769
+        ],
+        [
+         122.98,
+         42.778
+        ],
+        [
+         122.946,
+         42.754
+        ],
+        [
+         122.926,
+         42.772
+        ],
+        [
+         122.887,
+         42.77
+        ],
+        [
+         122.883,
+         42.752
+        ],
+        [
+         122.883,
+         42.752
+        ],
+        [
+         122.849,
+         42.712
+        ],
+        [
+         122.849,
+         42.712
+        ],
+        [
+         122.786,
+         42.757
+        ],
+        [
+         122.738,
+         42.771
+        ],
+        [
+         122.733,
+         42.786
+        ],
+        [
+         122.654,
+         42.783
+        ],
+        [
+         122.625,
+         42.773
+        ],
+        [
+         122.58,
+         42.79
+        ],
+        [
+         122.579,
+         42.8
+        ],
+        [
+         122.43,
+         42.8
+        ],
+        [
+         122.43,
+         42.771
+        ],
+        [
+         122.439,
+         42.77
+        ],
+        [
+         122.461,
+         42.755
+        ],
+        [
+         122.43,
+         42.732
+        ],
+        [
+         122.43,
+         39.41
+        ],
+        [
+         122.455,
+         39.408
+        ],
+        [
+         122.468,
+         39.403
+        ],
+        [
+         122.512,
+         39.413
+        ],
+        [
+         122.533,
+         39.42
+        ],
+        [
+         122.582,
+         39.464
+        ],
+        [
+         122.637,
+         39.489
+        ],
+        [
+         122.649,
+         39.517
+        ],
+        [
+         122.683,
+         39.515
+        ],
+        [
+         122.809,
+         39.56
+        ],
+        [
+         122.847,
+         39.582
+        ],
+        [
+         122.861,
+         39.605
+        ],
+        [
+         122.942,
+         39.605
+        ],
+        [
+         122.973,
+         39.595
+        ],
+        [
+         122.979,
+         39.616
+        ],
+        [
+         123.021,
+         39.643
+        ],
+        [
+         123.011,
+         39.655
+        ],
+        [
+         123.103,
+         39.677
+        ],
+        [
+         123.146,
+         39.647
+        ],
+        [
+         123.167,
+         39.674
+        ],
+        [
+         123.213,
+         39.666
+        ],
+        [
+         123.215,
+         39.697
+        ],
+        [
+         123.253,
+         39.69
+        ],
+        [
+         123.287,
+         39.704
+        ],
+        [
+         123.27,
+         39.715
+        ],
+        [
+         123.275,
+         39.754
+        ],
+        [
+         123.351,
+         39.751
+        ],
+        [
+         123.389,
+         39.747
+        ],
+        [
+         123.393,
+         39.724
+        ],
+        [
+         123.478,
+         39.747
+        ],
+        [
+         123.522,
+         39.773
+        ],
+        [
+         123.534,
+         39.788
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         122.64,
+         39.286
+        ],
+        [
+         122.593,
+         39.278
+        ],
+        [
+         122.539,
+         39.308
+        ],
+        [
+         122.509,
+         39.29
+        ],
+        [
+         122.577,
+         39.27
+        ],
+        [
+         122.679,
+         39.269
+        ],
+        [
+         122.673,
+         39.27
+        ],
+        [
+         122.663,
+         39.274
+        ],
+        [
+         122.656,
+         39.277
+        ],
+        [
+         122.641,
+         39.288
+        ],
+        [
+         122.64,
+         39.286
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         122.692,
+         39.233
+        ],
+        [
+         122.697,
+         39.206
+        ],
+        [
+         122.752,
+         39.23
+        ],
+        [
+         122.741,
+         39.249
+        ],
+        [
+         122.636,
+         39.242
+        ],
+        [
+         122.628,
+         39.232
+        ],
+        [
+         122.69,
+         39.235
+        ],
+        [
+         122.691,
+         39.234
+        ],
+        [
+         122.692,
+         39.233
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         122.739,
+         39.035
+        ],
+        [
+         122.705,
+         39.044
+        ],
+        [
+         122.733,
+         39.014
+        ],
+        [
+         122.758,
+         39.01
+        ],
+        [
+         122.739,
+         39.037
+        ],
+        [
+         122.739,
+         39.035
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         123.023,
+         39.547
+        ],
+        [
+         122.961,
+         39.551
+        ],
+        [
+         122.945,
+         39.52
+        ],
+        [
+         122.996,
+         39.495
+        ],
+        [
+         123.036,
+         39.533
+        ],
+        [
+         123.023,
+         39.547
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         122.503,
+         39.241
+        ],
+        [
+         122.502,
+         39.224
+        ],
+        [
+         122.548,
+         39.229
+        ],
+        [
+         122.503,
+         39.241
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         123.087,
+         39.427
+        ],
+        [
+         123.09,
+         39.451
+        ],
+        [
+         123.054,
+         39.458
+        ],
+        [
+         123.087,
+         39.427
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         123.161,
+         39.025
+        ],
+        [
+         123.206,
+         39.057
+        ],
+        [
+         123.201,
+         39.078
+        ],
+        [
+         123.146,
+         39.092
+        ],
+        [
+         123.144,
+         39.039
+        ],
+        [
+         123.161,
+         39.025
+        ]
+       ]
+      ],
+      [
+       [
+        [
+         123.717,
+         39.745
+        ],
+        [
+         123.757,
+         39.754
+        ],
+        [
+         123.72,
+         39.763
+        ],
+        [
+         123.717,
+         39.745
         ]
        ]
       ]
@@ -1224,12 +2544,168 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
       [
        [
         [
-         127.18,
-         42.12
+         126.75,
+         42.8
         ],
         [
-         125.471,
-         42.12
+         124.869,
+         42.8
+        ],
+        [
+         124.874,
+         42.79
+        ],
+        [
+         124.898,
+         42.788
+        ],
+        [
+         124.909,
+         42.8
+        ],
+        [
+         124.976,
+         42.8
+        ],
+        [
+         124.997,
+         42.745
+        ],
+        [
+         124.968,
+         42.723
+        ],
+        [
+         124.991,
+         42.677
+        ],
+        [
+         125.015,
+         42.666
+        ],
+        [
+         125.011,
+         42.632
+        ],
+        [
+         125.039,
+         42.615
+        ],
+        [
+         125.097,
+         42.622
+        ],
+        [
+         125.083,
+         42.591
+        ],
+        [
+         125.09,
+         42.568
+        ],
+        [
+         125.067,
+         42.535
+        ],
+        [
+         125.091,
+         42.516
+        ],
+        [
+         125.069,
+         42.499
+        ],
+        [
+         125.105,
+         42.491
+        ],
+        [
+         125.15,
+         42.459
+        ],
+        [
+         125.14,
+         42.447
+        ],
+        [
+         125.186,
+         42.428
+        ],
+        [
+         125.186,
+         42.382
+        ],
+        [
+         125.204,
+         42.367
+        ],
+        [
+         125.167,
+         42.352
+        ],
+        [
+         125.175,
+         42.308
+        ],
+        [
+         125.224,
+         42.301
+        ],
+        [
+         125.264,
+         42.313
+        ],
+        [
+         125.299,
+         42.29
+        ],
+        [
+         125.276,
+         42.267
+        ],
+        [
+         125.276,
+         42.231
+        ],
+        [
+         125.313,
+         42.22
+        ],
+        [
+         125.281,
+         42.175
+        ],
+        [
+         125.313,
+         42.197
+        ],
+        [
+         125.306,
+         42.146
+        ],
+        [
+         125.357,
+         42.145
+        ],
+        [
+         125.368,
+         42.183
+        ],
+        [
+         125.414,
+         42.156
+        ],
+        [
+         125.458,
+         42.16
+        ],
+        [
+         125.458,
+         42.16
+        ],
+        [
+         125.49,
+         42.136
         ],
         [
          125.446,
@@ -1608,96 +3084,12 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
          41.753
         ],
         [
-         126.8,
-         41.703
+         126.75,
+         41.736
         ],
         [
-         126.809,
-         41.749
-        ],
-        [
-         126.848,
-         41.734
-        ],
-        [
-         126.856,
-         41.76
-        ],
-        [
-         126.887,
-         41.792
-        ],
-        [
-         126.931,
-         41.813
-        ],
-        [
-         126.953,
-         41.804
-        ],
-        [
-         126.94,
-         41.773
-        ],
-        [
-         126.979,
-         41.777
-        ],
-        [
-         127.006,
-         41.749
-        ],
-        [
-         127.051,
-         41.745
-        ],
-        [
-         127.058,
-         41.704
-        ],
-        [
-         127.038,
-         41.677
-        ],
-        [
-         127.103,
-         41.648
-        ],
-        [
-         127.093,
-         41.63
-        ],
-        [
-         127.127,
-         41.622
-        ],
-        [
-         127.136,
-         41.6
-        ],
-        [
-         127.178,
-         41.6
-        ],
-        [
-         127.125,
-         41.566
-        ],
-        [
-         127.119,
-         41.54
-        ],
-        [
-         127.165,
-         41.543
-        ],
-        [
-         127.18,
-         41.533
-        ],
-        [
-         127.18,
-         42.12
+         126.75,
+         42.8
         ]
        ]
       ]
@@ -1706,13 +3098,110 @@ window.SANDBOX_SLICES["jilin_gaogouli_llm"] = {
     "n": "吉林省"
    }
   ],
-  "rivers": [],
+  "rivers": [
+   {
+    "g": {
+     "type": "LineString",
+     "coordinates": [
+      [
+       123.573,
+       42.8
+      ],
+      [
+       123.568,
+       42.76
+      ],
+      [
+       123.611,
+       42.66
+      ],
+      [
+       123.712,
+       42.576
+      ],
+      [
+       123.774,
+       42.504
+      ],
+      [
+       123.796,
+       42.442
+      ],
+      [
+       123.831,
+       42.406
+      ],
+      [
+       123.771,
+       42.327
+      ],
+      [
+       123.513,
+       42.203
+      ],
+      [
+       123.35,
+       42.149
+      ],
+      [
+       123.283,
+       42.166
+      ],
+      [
+       123.177,
+       42.145
+      ],
+      [
+       123.033,
+       42.085
+      ],
+      [
+       122.893,
+       41.957
+      ],
+      [
+       122.758,
+       41.762
+      ],
+      [
+       122.677,
+       41.579
+      ],
+      [
+       122.636,
+       41.325
+      ],
+      [
+       122.457,
+       41.214
+      ],
+      [
+       122.43,
+       41.175
+      ],
+      [
+       122.43,
+       41.075
+      ],
+      [
+       122.44,
+       41.055
+      ],
+      [
+       122.43,
+       41.037
+      ]
+     ]
+    },
+    "n": "Liao"
+   }
+  ],
   "lakes": [],
   "_bbox": [
-   125.0,
-   39.5,
-   127.18,
-   42.12
+   122.43,
+   38.03,
+   126.75,
+   42.8
   ]
  },
  "wall": {

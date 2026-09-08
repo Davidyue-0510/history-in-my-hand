@@ -60,6 +60,7 @@ window.SANDBOX_RESONANCE = {
    "fuzhou",
    "gaixia",
    "gaizhou",
+   "gansu_hexizhen_llm",
    "grand_canal",
    "great_wall",
    "guandu",
@@ -68,6 +69,7 @@ window.SANDBOX_RESONANCE = {
    "guangxi_taiping_llm",
    "guiling",
    "guizhou_yelang_llm",
+   "guizhou_zunyi_llm",
    "gunpowder_warfare",
    "guo_shoujing",
    "hainan_xianfuren_llm",
@@ -76,6 +78,7 @@ window.SANDBOX_RESONANCE = {
    "han_banchao_llm",
    "han_weihuo_llm",
    "han_wudi_ruxue",
+   "heilongjiang_jin_llm",
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
@@ -1166,6 +1169,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.444
   },
   {
+   "scene": "gansu_hexizhen_llm",
+   "name": "gansu_hexizhen_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_gansu_hexizhen_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "grand_canal",
    "name": "grand_canal",
    "total": 14,
@@ -1322,6 +1344,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guizhou_zunyi_llm",
+   "name": "guizhou_zunyi_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_zunyi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "gunpowder_warfare",
    "name": "gunpowder_warfare",
    "total": 11,
@@ -1473,6 +1514,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": null,
    "best_resonance": null
+  },
+  {
+   "scene": "heilongjiang_jin_llm",
+   "name": "heilongjiang_jin_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_heilongjiang_jin_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "heshangyuan",
@@ -1752,16 +1812,14 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "jilin_gaogouli_llm",
    "name": "jilin_gaogouli_llm",
-   "total": 16,
+   "total": 15,
    "layers": {
-    "inference": 1,
-    "record": 12,
     "scholarship": 1,
-    "gap": 2
+    "inference": 1,
+    "record": 13
    },
    "party_counts": {
-    "魏晋官修": 15,
-    "综合史料": 1
+    "后世官修": 15
    },
    "faction_counts": {},
    "event_count": 3,

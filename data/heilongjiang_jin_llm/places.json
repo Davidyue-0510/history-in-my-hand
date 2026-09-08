@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "huining_fu",
+   "name": "会宁府",
+   "type": "city",
+   "modern": "今中国黑龙江省哈尔滨市阿城区",
+   "note": "金初都城，号上京",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "liao_shangjing",
+   "name": "辽上京",
+   "type": "city",
+   "modern": "今中国内蒙古自治区巴林左旗",
+   "note": "辽朝都城，金灭辽时攻占",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "bianjing",
+   "name": "汴京",
+   "type": "city",
+   "modern": "今中国河南省开封市",
+   "note": "北宋都城，靖康之变中被金军攻破",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "caizhou",
+   "name": "蔡州",
+   "type": "city",
+   "modern": "今中国河南省汝南县",
+   "note": "金朝末代都城，1234年城破国亡",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 114.35,
+   "lat": 33.53,
+   "geo_note": "唐淮西节度使治所，今河南汝南"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

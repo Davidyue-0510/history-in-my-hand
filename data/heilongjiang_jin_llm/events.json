@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_heilongjiang_jin_llm_01",
+   "subject": "event:ev_heilongjiang_jin_llm_01",
+   "year": 1115,
+   "era": "辽天庆五年正月",
+   "title": "阿骨打称帝建金",
+   "kind": "建置",
+   "text": "完颜阿骨打称帝，国号大金，都会宁府",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_jin_llm_02",
+   "subject": "event:ev_heilongjiang_jin_llm_02",
+   "year": 1125,
+   "era": "金天会三年",
+   "title": "金灭辽",
+   "kind": "战事",
+   "text": "金军俘辽天祚帝，辽朝灭亡",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_jin_llm_03",
+   "subject": "event:ev_heilongjiang_jin_llm_03",
+   "year": 1126,
+   "era": "金天会四年",
+   "title": "金灭北宋",
+   "kind": "战事",
+   "text": "金军攻破汴京，掳徽钦二帝北去",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_heilongjiang_jin_llm_04",
+   "subject": "event:ev_heilongjiang_jin_llm_04",
+   "year": 1234,
+   "era": "金天兴三年",
+   "title": "蔡州城破金亡",
+   "kind": "战事",
+   "text": "蒙古与南宋联军破蔡州，金哀宗自缢",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 220,
-  "historical": 211,
+  "scenes_total": 223,
+  "historical": 214,
   "fictional": 9,
-  "assertions_total": 3448,
-  "sources_total": 198,
+  "assertions_total": 3484,
+  "sources_total": 201,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -22,13 +22,16 @@
     "foguo_chan_llm",
     "fujian_qijiguang_llm",
     "fujian_quanzhou_llm",
+    "gansu_hexizhen_llm",
     "guandu_llm",
     "guangxi_taiping_llm",
     "guizhou_yelang_llm",
+    "guizhou_zunyi_llm",
     "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
+    "heilongjiang_jin_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
     "hunan_changsha_llm",
@@ -84,7 +87,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 319,
+  "leads_total": 321,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1278,7 +1281,7 @@
       "id": "jilin_gaogouli_llm",
       "title": "高句丽·集安王城（前37–668）",
       "kind": "frontier",
-      "assertions": 16,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -1679,6 +1682,27 @@
       "kind": "fusion",
       "assertions": 12,
       "factions": {}
+    },
+    {
+      "id": "gansu_hexizhen_llm",
+      "title": "汉武帝设河西四郡（前121—前111）",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_zunyi_llm",
+      "title": "遵义会议（1935）",
+      "kind": "court",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "heilongjiang_jin_llm",
+      "title": "金朝立国 完颜阿骨打称帝（1115）",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1901,6 +1925,9 @@
     "fujian_qijiguang_llm": "戚继光福建抗倭（1562—1563）",
     "shanghai_xiaodaohui_llm": "上海小刀会起义（1853—1855）",
     "ningxia_xixia_llm": "西夏立国（李元昊称帝，1038）",
-    "neimenggu_zhaojun_llm": "昭君出塞（王昭君和亲匈奴，前33）"
+    "neimenggu_zhaojun_llm": "昭君出塞（王昭君和亲匈奴，前33）",
+    "gansu_hexizhen_llm": "汉武帝设河西四郡（前121—前111）",
+    "guizhou_zunyi_llm": "遵义会议（1935）",
+    "heilongjiang_jin_llm": "金朝立国 完颜阿骨打称帝（1115）"
   }
 }

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 220 个切片
+// 权威数据源：data/scenes.json 注册的 223 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 220 个切片",
+  "slice": "multi-scene · 223 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -26,13 +26,16 @@ window.SANDBOX_DATA = {
    "foguo_chan_llm",
    "fujian_qijiguang_llm",
    "fujian_quanzhou_llm",
+   "gansu_hexizhen_llm",
    "guandu_llm",
    "guangxi_taiping_llm",
    "guizhou_yelang_llm",
+   "guizhou_zunyi_llm",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
+   "heilongjiang_jin_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
    "hunan_changsha_llm",
@@ -558,7 +561,10 @@ window.SANDBOX_DATA = {
   "fujian_qijiguang_llm",
   "shanghai_xiaodaohui_llm",
   "ningxia_xixia_llm",
-  "neimenggu_zhaojun_llm"
+  "neimenggu_zhaojun_llm",
+  "gansu_hexizhen_llm",
+  "guizhou_zunyi_llm",
+  "heilongjiang_jin_llm"
  ],
  "vocab": {
   "layers": [
@@ -24118,27 +24124,25 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_gaogouli_llm",
    "primary_place": "jilin_ji_an",
-   "vocab_pack": "inline:jilin_gaogouli_llm",
+   "vocab_pack": "jilin_gaogouli_llm",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
     1,
-    2,
     3,
-    4,
     5,
     6
    ],
    "epoch": "two_jin",
    "scale_tier": "strategic",
    "counts": {
-    "src": 2,
-    "place": 3,
-    "person": 2,
-    "assert": 16,
+    "src": 1,
+    "place": 6,
+    "person": 3,
+    "assert": 15,
     "conflict": 0,
-    "gap": 2,
-    "record": 12,
+    "gap": 0,
+    "record": 13,
     "scholarship": 1,
     "inference": 1
    }
@@ -26074,6 +26078,106 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "gansu_hexizhen_llm": {
+   "key": "gansu_hexizhen_llm",
+   "scene_id": "gansu_hexizhen_llm",
+   "title": "汉武帝设河西四郡（前121—前111）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=gansu_hexizhen_llm",
+   "primary_place": "jiuquan",
+   "vocab_pack": "gansu_hexizhen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 3,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 2,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guizhou_zunyi_llm": {
+   "key": "guizhou_zunyi_llm",
+   "scene_id": "guizhou_zunyi_llm",
+   "title": "遵义会议（1935）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guizhou_zunyi_llm",
+   "primary_place": "zunyi",
+   "vocab_pack": "guizhou_zunyi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 7,
+    "assert": 11,
+    "conflict": 0,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "heilongjiang_jin_llm": {
+   "key": "heilongjiang_jin_llm",
+   "scene_id": "heilongjiang_jin_llm",
+   "title": "金朝立国 完颜阿骨打称帝（1115）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "jianzhou",
+   "page": "county.html?scene=heilongjiang_jin_llm",
+   "primary_place": "huining_fu",
+   "vocab_pack": "heilongjiang_jin_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 4,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26296,7 +26400,10 @@ window.SANDBOX_DATA = {
   "fujian_qijiguang_llm": "slices/fujian_qijiguang_llm.js",
   "shanghai_xiaodaohui_llm": "slices/shanghai_xiaodaohui_llm.js",
   "ningxia_xixia_llm": "slices/ningxia_xixia_llm.js",
-  "neimenggu_zhaojun_llm": "slices/neimenggu_zhaojun_llm.js"
+  "neimenggu_zhaojun_llm": "slices/neimenggu_zhaojun_llm.js",
+  "gansu_hexizhen_llm": "slices/gansu_hexizhen_llm.js",
+  "guizhou_zunyi_llm": "slices/guizhou_zunyi_llm.js",
+  "heilongjiang_jin_llm": "slices/heilongjiang_jin_llm.js"
  },
  "corridors": [
   {

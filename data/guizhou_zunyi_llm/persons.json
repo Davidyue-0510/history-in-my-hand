@@ -1,0 +1,74 @@
+{
+ "persons": [
+  {
+   "id": "GUI__p01",
+   "name": "毛泽东",
+   "role": "中共中央政治局候补委员",
+   "note": "遵义会议上被增选为政治局常委",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p02",
+   "name": "博古",
+   "role": "中共中央总负责人",
+   "note": "遵义会议上受到批评",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p03",
+   "name": "周恩来",
+   "role": "中共中央政治局常委、红军总政委",
+   "note": "遵义会议的重要参与者",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p04",
+   "name": "张闻天",
+   "role": "中共中央政治局常委",
+   "note": "遵义会议后代替博古负总责",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p05",
+   "name": "王稼祥",
+   "role": "中共中央政治局候补委员",
+   "note": "遵义会议上支持毛泽东",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p06",
+   "name": "朱德",
+   "role": "红军总司令",
+   "note": "遵义会议参与者",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p07",
+   "name": "李德",
+   "role": "共产国际军事顾问",
+   "note": "遵义会议上被批评",
+   "_source_idx": 0,
+   "_source_name": "遵义会议史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

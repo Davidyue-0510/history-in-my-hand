@@ -1,14 +1,14 @@
 {
  "sources": [
   {
-   "id": "gaogouli_llm_src",
-   "title": "高句丽史料摘录",
+   "id": "hexizhen_llm_src",
+   "title": "河西四郡史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
    "compiler": "LLM 摘要（paraphrase_unverified）",
-   "period": "前37—668",
+   "period": "前121—前111",
    "note": ""
   }
  ]

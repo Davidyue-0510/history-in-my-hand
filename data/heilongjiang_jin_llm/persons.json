@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "HEI__p01",
+   "name": "完颜阿骨打",
+   "role": "金太祖",
+   "note": "统一女真诸部，1115年称帝建金",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p02",
+   "name": "辽天祚帝",
+   "role": "辽朝皇帝",
+   "note": "金灭辽时在位君主",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p03",
+   "name": "宋徽宗",
+   "role": "北宋皇帝",
+   "note": "靖康之变中被金军俘虏北去",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEI__p04",
+   "name": "宋钦宗",
+   "role": "北宋皇帝",
+   "note": "靖康之变中被金军俘虏北去",
+   "_source_idx": 0,
+   "_source_name": "金朝立国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
