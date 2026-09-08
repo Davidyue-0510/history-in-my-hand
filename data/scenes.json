@@ -461,7 +461,11 @@
   "taiwan_shilang_llm",
   "taiwan_wushe_llm",
   "xianggang_huigui_llm",
-  "xianggang_dongjiang_llm"
+  "xianggang_dongjiang_llm",
+  "aomen_huigui_llm",
+  "aomen_mage_llm",
+  "qinghai_zhaochongguo_llm",
+  "guizhou_shexiang_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -21322,6 +21326,308 @@
      ],
      "layer": "inference",
      "note": "中国香港·东江纵队港九大队：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "aomen_huigui_llm": {
+   "kind": "dynasty",
+   "region": "exchange",
+   "province": "aomen",
+   "title": "中国澳门·澳门回归",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "macau",
+   "dossier_event": "event:ev_aomen_huigui_llm_01",
+   "vocab_pack": "aomen_huigui_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门回归：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门回归：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门回归：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门回归：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "aomen_mage_llm": {
+   "kind": "exchange",
+   "region": "exchange",
+   "province": "aomen",
+   "title": "中国澳门·妈阁文化",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "aomen",
+   "dossier_event": "event:ev_aomen_mage_llm_01",
+   "vocab_pack": "aomen_mage_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·妈阁文化：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中国澳门·妈阁文化：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中国澳门·妈阁文化：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·妈阁文化：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "qinghai_zhaochongguo_llm": {
+   "kind": "frontier",
+   "region": "xibei",
+   "province": "qinghai",
+   "title": "赵充国屯田",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hehuang",
+   "dossier_event": "event:ev_qinghai_zhaochongguo_llm_01",
+   "vocab_pack": "qinghai_zhaochongguo_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "赵充国屯田：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "赵充国屯田：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "赵充国屯田：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "赵充国屯田：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    4,
+    6
+   ]
+  },
+  "guizhou_shexiang_llm": {
+   "kind": "court",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "奢香夫人",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shuixi",
+   "dossier_event": "event:ev_guizhou_shexiang_llm_03",
+   "vocab_pack": "guizhou_shexiang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "奢香夫人：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "奢香夫人：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "奢香夫人：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "奢香夫人：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
     }
    },
    "dims": [

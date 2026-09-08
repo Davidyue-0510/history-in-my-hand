@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "shuixi",
+   "party": "后世官修",
+   "start": 1380,
+   "end": 1390,
+   "basis": "auto: 场景主地点 shuixi 叙事控制方=后世官修"
+  }
+ ]
+}

@@ -18,6 +18,21 @@
    "_src_line": 16
   },
   {
+   "id": "AOM_014",
+   "scene": "aomen_huigui_llm",
+   "subject": "event:ev_aomen_huigui_llm_03",
+   "title": "国际社会反应待考",
+   "missing": "外交史",
+   "where": "国际档案",
+   "skills": [
+    "外交史"
+   ],
+   "accept": "国际社会对回归的反应",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "AOM_010",
    "scene": "aomen_kaibu_llm",
    "subject": "event:ev_aomen_kaibu_llm_01",
@@ -32,6 +47,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 10
+  },
+  {
+   "id": "AOM_012",
+   "scene": "aomen_mage_llm",
+   "subject": "place:mage_miao",
+   "title": "确切年份无考",
+   "missing": "历史考据",
+   "where": "地方志或碑刻",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "发现具体建庙年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "AOMEG1",
@@ -1457,6 +1487,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "GUI_014",
+   "scene": "guizhou_shexiang_llm",
+   "subject": "person:GUI__p01",
+   "title": "奢香卒年不详",
+   "missing": "文献考据",
+   "where": "明实录及地方志",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "奢香卒年及后续事迹",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "GUI_014",
@@ -3518,6 +3563,51 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "QIN_007",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_01",
+   "title": "率军赴河湟，兵力未详",
+   "missing": "汉代军事制度",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "汉代军事制度"
+   ],
+   "accept": "需查证具体兵力数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "QIN_008",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_02",
+   "title": "屯田面积与人数未详",
+   "missing": "汉代屯田制度",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "汉代屯田制度"
+   ],
+   "accept": "需查证屯田规模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "QIN_009",
+   "scene": "qinghai_zhaochongguo_llm",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_03",
+   "title": "羌人渐归，具体数量未详",
+   "missing": "羌人部落研究",
+   "where": "汉书·赵充国传",
+   "skills": [
+    "羌人部落研究"
+   ],
+   "accept": "需查证归附规模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
   },
   {
    "id": "QIN_013",

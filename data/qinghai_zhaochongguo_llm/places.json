@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "hehuang",
+   "name": "河湟",
+   "type": "region",
+   "modern": "今中国青海东部湟水流域",
+   "note": "羌人叛汉与屯田之地",
+   "_source_idx": 0,
+   "_source_name": "赵充国屯田史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

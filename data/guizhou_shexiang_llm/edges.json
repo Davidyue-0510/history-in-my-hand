@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "shuixi",
+   "to": "jinling",
+   "type": "military",
+   "label": "奢香赴京路线",
+   "_source_idx": 0,
+   "_source_name": "奢香夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "pianqiao",
+   "to": "shuidong",
+   "type": "military",
+   "label": "驿道开通",
+   "_source_idx": 0,
+   "_source_name": "奢香夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "shuidong",
+   "to": "wumeng",
+   "type": "military",
+   "label": "驿道连接",
+   "_source_idx": 0,
+   "_source_name": "奢香夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wumeng",
+   "to": "wusa",
+   "type": "military",
+   "label": "驿道连接",
+   "_source_idx": 0,
+   "_source_name": "奢香夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

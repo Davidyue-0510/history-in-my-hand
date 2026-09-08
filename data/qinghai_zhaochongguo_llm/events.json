@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_qinghai_zhaochongguo_llm_01",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_01",
+   "year": -61,
+   "era": "神爵元年",
+   "title": "羌人叛汉",
+   "kind": "战事",
+   "text": "羌人叛汉，赵充国率军赴河湟平叛",
+   "_source_idx": 0,
+   "_source_name": "赵充国屯田史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_zhaochongguo_llm_02",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_02",
+   "year": -61,
+   "era": "神爵元年",
+   "title": "奏请屯田",
+   "kind": "行政",
+   "text": "充国奏请留屯田、罢骑兵、省转运",
+   "_source_idx": 0,
+   "_source_name": "赵充国屯田史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_zhaochongguo_llm_03",
+   "subject": "event:ev_qinghai_zhaochongguo_llm_03",
+   "year": -60,
+   "era": "神爵二年",
+   "title": "羌人渐归",
+   "kind": "其他",
+   "text": "屯田既固边防，羌人渐归附",
+   "_source_idx": 0,
+   "_source_name": "赵充国屯田史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

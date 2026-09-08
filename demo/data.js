@@ -1,17 +1,19 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 258 个切片
+// 权威数据源：data/scenes.json 注册的 262 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 258 个切片",
+  "slice": "multi-scene · 262 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "anxi_sizhen_llm",
+   "aomen_huigui_llm",
    "aomen_kaibu_llm",
+   "aomen_mage_llm",
    "aomen_portugal_llm",
    "bisheng_movable_type",
    "bohai_kingdom_llm",
@@ -36,6 +38,7 @@ window.SANDBOX_DATA = {
    "guangxi_lingqu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
+   "guizhou_shexiang_llm",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
    "hainan_hainandao_llm",
@@ -76,6 +79,7 @@ window.SANDBOX_DATA = {
    "qing_zhungaer_llm",
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
+   "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
    "san_guo",
    "shanghai_songkai_llm",
@@ -634,7 +638,11 @@ window.SANDBOX_DATA = {
   "taiwan_shilang_llm",
   "taiwan_wushe_llm",
   "xianggang_huigui_llm",
-  "xianggang_dongjiang_llm"
+  "xianggang_dongjiang_llm",
+  "aomen_huigui_llm",
+  "aomen_mage_llm",
+  "qinghai_zhaochongguo_llm",
+  "guizhou_shexiang_llm"
  ],
  "vocab": {
   "layers": [
@@ -27394,6 +27402,140 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "aomen_huigui_llm": {
+   "key": "aomen_huigui_llm",
+   "scene_id": "aomen_huigui_llm",
+   "title": "中国澳门·澳门回归",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "exchange",
+   "page": "county.html?scene=aomen_huigui_llm",
+   "primary_place": "macau",
+   "vocab_pack": "aomen_huigui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 5,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "aomen_mage_llm": {
+   "key": "aomen_mage_llm",
+   "scene_id": "aomen_mage_llm",
+   "title": "中国澳门·妈阁文化",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "exchange",
+   "page": "county.html?scene=aomen_mage_llm",
+   "primary_place": "aomen",
+   "vocab_pack": "inline:aomen_mage_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 2
+   }
+  },
+  "qinghai_zhaochongguo_llm": {
+   "key": "qinghai_zhaochongguo_llm",
+   "scene_id": "qinghai_zhaochongguo_llm",
+   "title": "赵充国屯田",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=qinghai_zhaochongguo_llm",
+   "primary_place": "hehuang",
+   "vocab_pack": "qinghai_zhaochongguo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 1,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 3,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guizhou_shexiang_llm": {
+   "key": "guizhou_shexiang_llm",
+   "scene_id": "guizhou_shexiang_llm",
+   "title": "奢香夫人",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guizhou_shexiang_llm",
+   "primary_place": "shuixi",
+   "vocab_pack": "guizhou_shexiang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 8,
+    "person": 4,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 2
+   }
   }
  },
  "slice_index": {
@@ -27654,7 +27796,11 @@ window.SANDBOX_DATA = {
   "taiwan_shilang_llm": "slices/taiwan_shilang_llm.js",
   "taiwan_wushe_llm": "slices/taiwan_wushe_llm.js",
   "xianggang_huigui_llm": "slices/xianggang_huigui_llm.js",
-  "xianggang_dongjiang_llm": "slices/xianggang_dongjiang_llm.js"
+  "xianggang_dongjiang_llm": "slices/xianggang_dongjiang_llm.js",
+  "aomen_huigui_llm": "slices/aomen_huigui_llm.js",
+  "aomen_mage_llm": "slices/aomen_mage_llm.js",
+  "qinghai_zhaochongguo_llm": "slices/qinghai_zhaochongguo_llm.js",
+  "guizhou_shexiang_llm": "slices/guizhou_shexiang_llm.js"
  },
  "corridors": [
   {

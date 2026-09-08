@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "macau",
+   "name": "澳门",
+   "type": "city",
+   "modern": "中国澳门特别行政区",
+   "note": "原为葡萄牙租居地",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "portugal",
+   "name": "葡萄牙",
+   "type": "region",
+   "modern": "欧洲葡萄牙",
+   "note": "曾对澳门实行殖民统治",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "china",
+   "name": "中国",
+   "type": "region",
+   "modern": "中华人民共和国",
+   "note": "澳门主权归属国",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

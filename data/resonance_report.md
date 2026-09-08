@@ -13,7 +13,9 @@
 | 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |
 |---|---|---|---|---|---|
 | anxi_sizhen_llm | 19 | 4 | **0.000** | event:ev_anxi_sizhen_llm_01（0.000） | gap 1 / inference 4 / record 12 / scholarship 2 |
+| aomen_huigui_llm | 14 | 3 | **0.000** | event:ev_aomen_huigui_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | aomen_kaibu_llm | 10 | 2 | **0.000** | event:ev_aomen_kaibu_llm_01（0.000） | gap 1 / inference 1 / record 7 / scholarship 1 |
+| aomen_mage_llm | 13 | 1 | **0.000** | event:ev_aomen_mage_llm_01（0.000） | gap 1 / inference 2 / record 9 / scholarship 1 |
 | aomen_portugal_llm | 19 | 2 | **0.000** | event:ev_aomen_portugal_llm_01（0.000） | gap 4 / inference 1 / record 11 / scholarship 3 |
 | baijia | 11 | 2 | **0.000** | event:bj_350（0.000） | gap 1 / inference 1 / record 7 / scholarship 2 |
 | beijing | 19 | 7 | **0.000** | event:bj_consequence（0.000） | gap 1 / record 12 / scholarship 6 |
@@ -76,6 +78,7 @@
 | guangxi_taiping_llm | 14 | 5 | **0.000** | event:ev_guangxi_taiping_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | guangxi_zhennanguan_llm | 12 | 3 | **0.000** | event:ev_guangxi_zhennanguan_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 1 |
 | guiling | 19 | 3 | **0.000** | event:gl_jz（0.000） | gap 1 / inference 2 / record 10 / scholarship 6 |
+| guizhou_shexiang_llm | 14 | 1 | **0.000** | event:ev_guizhou_shexiang_llm_03（0.000） | gap 1 / inference 2 / record 10 / scholarship 1 |
 | guizhou_yelang_llm | 14 | 1 | **0.000** | event:ev_guizhou_yelang_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | guizhou_zunyi_llm | 11 | 3 | **0.000** | event:ev_guizhou_zunyi_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 1 |
 | gunpowder_warfare | 11 | 2 | **0.000** | event:huoyao_xi（0.000） | gap 1 / inference 2 / record 5 / scholarship 3 |
@@ -161,6 +164,7 @@
 | qing_zhungaer_llm | 18 | 5 | **0.000** | event:ev_qing_zhungaer_01（0.000） | gap 1 / inference 5 / record 11 / scholarship 1 |
 | qinghai_gusiluo_llm | 15 | 3 | **0.000** | event:ev_qinghai_gusiluo_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | qinghai_tuyuhun_llm | 13 | 2 | **0.000** | event:ev_qinghai_tuyuhun_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
+| qinghai_zhaochongguo_llm | 14 | 3 | **0.000** | event:ev_qinghai_zhaochongguo_llm_01（0.000） | gap 3 / inference 1 / record 9 / scholarship 1 |
 | qinghai_zongkaba_llm | 13 | 2 | **0.000** | event:ev_qinghai_zongkaba_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
 | 萨尔浒 | 125 | 5 | **0.556** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 98 / scholarship 14 |
@@ -371,8 +375,12 @@
 | event:ev_anxi_sizhen_llm_02 | anxi_sizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_anxi_sizhen_llm_03 | anxi_sizhen_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_anxi_sizhen_llm_04 | anxi_sizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_aomen_huigui_llm_01 | aomen_huigui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_aomen_huigui_llm_02 | aomen_huigui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_aomen_huigui_llm_03 | aomen_huigui_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_kaibu_llm_01 | aomen_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_kaibu_llm_02 | aomen_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_aomen_mage_llm_01 | aomen_mage_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_portugal_llm_01 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.33 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_portugal_llm_02 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_bisheng_movable_type_01 | bisheng_movable_type | **0.000** | 0/3 | 0.00 | 0.07 | 14 | 0 / 0 / 0 / 0 |
@@ -449,6 +457,7 @@
 | event:ev_guangxi_zhennanguan_llm_01 | guangxi_zhennanguan_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_guangxi_zhennanguan_llm_02 | guangxi_zhennanguan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_guangxi_zhennanguan_llm_03 | guangxi_zhennanguan_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_guizhou_shexiang_llm_03 | guizhou_shexiang_llm | **0.000** | 0/3 | 0.25 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_yelang_llm_01 | guizhou_yelang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_zunyi_llm_01 | guizhou_zunyi_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_zunyi_llm_02 | guizhou_zunyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -573,6 +582,9 @@
 | event:ev_qinghai_gusiluo_llm_03 | qinghai_gusiluo_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_tuyuhun_llm_01 | qinghai_tuyuhun_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_tuyuhun_llm_02 | qinghai_tuyuhun_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_qinghai_zhaochongguo_llm_01 | qinghai_zhaochongguo_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_qinghai_zhaochongguo_llm_02 | qinghai_zhaochongguo_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_qinghai_zhaochongguo_llm_03 | qinghai_zhaochongguo_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_zongkaba_llm_01 | qinghai_zongkaba_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_qinghai_zongkaba_llm_02 | qinghai_zongkaba_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_songkai_llm_01 | shanghai_songkai_llm | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |

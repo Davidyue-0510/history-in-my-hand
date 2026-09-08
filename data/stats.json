@@ -1,13 +1,15 @@
 {
-  "scenes_total": 258,
-  "historical": 249,
+  "scenes_total": 262,
+  "historical": 253,
   "fictional": 9,
-  "assertions_total": 3952,
-  "sources_total": 236,
+  "assertions_total": 4007,
+  "sources_total": 240,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
+    "aomen_huigui_llm",
     "aomen_kaibu_llm",
+    "aomen_mage_llm",
     "aomen_portugal_llm",
     "bisheng_movable_type",
     "bohai_kingdom_llm",
@@ -32,6 +34,7 @@
     "guangxi_lingqu_llm",
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
+    "guizhou_shexiang_llm",
     "guizhou_yelang_llm",
     "guizhou_zunyi_llm",
     "hainan_hainandao_llm",
@@ -72,6 +75,7 @@
     "qing_zhungaer_llm",
     "qinghai_gusiluo_llm",
     "qinghai_tuyuhun_llm",
+    "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
     "san_guo",
     "shanghai_songkai_llm",
@@ -122,7 +126,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 367,
+  "leads_total": 373,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1983,6 +1987,34 @@
       "kind": "battle",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "aomen_huigui_llm",
+      "title": "中国澳门·澳门回归",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "aomen_mage_llm",
+      "title": "中国澳门·妈阁文化",
+      "kind": "exchange",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "qinghai_zhaochongguo_llm",
+      "title": "赵充国屯田",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_shexiang_llm",
+      "title": "奢香夫人",
+      "kind": "court",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2243,6 +2275,10 @@
     "taiwan_shilang_llm": "中国台湾·施琅统一台湾",
     "taiwan_wushe_llm": "中国台湾·雾社起义",
     "xianggang_huigui_llm": "中国香港·香港回归",
-    "xianggang_dongjiang_llm": "中国香港·东江纵队港九大队"
+    "xianggang_dongjiang_llm": "中国香港·东江纵队港九大队",
+    "aomen_huigui_llm": "中国澳门·澳门回归",
+    "aomen_mage_llm": "中国澳门·妈阁文化",
+    "qinghai_zhaochongguo_llm": "赵充国屯田",
+    "guizhou_shexiang_llm": "奢香夫人"
   }
 }

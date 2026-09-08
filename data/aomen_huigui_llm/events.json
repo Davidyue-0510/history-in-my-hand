@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_huigui_llm_01",
+   "subject": "event:ev_aomen_huigui_llm_01",
+   "year": 1553,
+   "era": "明嘉靖三十二年",
+   "title": "葡人获准租居澳门",
+   "kind": "行政",
+   "text": "葡人获准在澳门租居",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_huigui_llm_02",
+   "subject": "event:ev_aomen_huigui_llm_02",
+   "year": 1987,
+   "era": "1987年",
+   "title": "中葡签署联合声明",
+   "kind": "外交",
+   "text": "确定1999年12月20日中国恢复主权",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_huigui_llm_03",
+   "subject": "event:ev_aomen_huigui_llm_03",
+   "year": 1999,
+   "era": "1999年12月20日",
+   "title": "澳门回归祖国",
+   "kind": "行政",
+   "text": "澳门特别行政区成立，殖民历史落幕",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

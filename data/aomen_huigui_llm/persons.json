@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "AOM__p01",
+   "name": "葡萄牙人",
+   "role": "租居者",
+   "note": "1553年获准在澳门租居",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p02",
+   "name": "明清政府",
+   "role": "主权方",
+   "note": "设澳门同知兼治",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p03",
+   "name": "中葡双方",
+   "role": "谈判方",
+   "note": "1987年签署联合声明",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p04",
+   "name": "中国政府",
+   "role": "主权恢复方",
+   "note": "1999年恢复行使主权",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p05",
+   "name": "澳门居民",
+   "role": "治澳主体",
+   "note": "实行澳人治澳",
+   "_source_idx": 0,
+   "_source_name": "澳门回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
