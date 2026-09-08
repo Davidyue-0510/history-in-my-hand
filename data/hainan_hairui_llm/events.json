@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_hainan_hairui_llm_01",
+   "subject": "event:ev_hainan_hairui_llm_01",
+   "year": 1566,
+   "era": "嘉靖四十五年",
+   "title": "上治安疏",
+   "kind": "其他",
+   "text": "海瑞上《治安疏》直谏世宗",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_hairui_llm_02",
+   "subject": "event:ev_hainan_hairui_llm_02",
+   "year": 1567,
+   "era": "隆庆元年",
+   "title": "获释复职",
+   "kind": "行政",
+   "text": "隆庆即位，海瑞获释",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_hairui_llm_03",
+   "subject": "event:ev_hainan_hairui_llm_03",
+   "year": 1569,
+   "era": "隆庆三年",
+   "title": "巡抚应天",
+   "kind": "行政",
+   "text": "任应天巡抚，抑豪强清丈田亩",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

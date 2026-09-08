@@ -1303,6 +1303,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "GUA_010",
+   "scene": "guangxi_zhennanguan_llm",
+   "subject": "event:ev_guangxi_zhennanguan_llm_01",
+   "title": "法軍傷亡數字不詳",
+   "missing": "歷史考據 / 數據比對",
+   "where": "清代檔案或法方戰報",
+   "skills": [
+    "歷史考據",
+    "數據比對"
+   ],
+   "accept": "具體傷亡數字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "GUA_011",
+   "scene": "guangxi_zhennanguan_llm",
+   "subject": "event:ev_guangxi_zhennanguan_llm_03",
+   "title": "具體條款未詳述",
+   "missing": "文獻解讀",
+   "where": "條約文本或相關檔案",
+   "skills": [
+    "文獻解讀"
+   ],
+   "accept": "具體條款",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "GUILINGG01",
    "scene": "guiling",
    "subject": "event:gl_jz",
@@ -1380,6 +1411,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "HAI_014",
+   "scene": "hainan_hairui_llm",
+   "subject": "person:HAI__p01",
+   "title": "原文未详述其动机",
+   "missing": "明史 / 奏疏分析",
+   "where": "治安疏全文及嘉靖朝政治背景",
+   "skills": [
+    "明史",
+    "奏疏分析"
+   ],
+   "accept": "补充海瑞上疏的具体动机与思想渊源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "HAI_014",
@@ -3317,6 +3364,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "QIN_013",
+   "scene": "qinghai_zongkaba_llm",
+   "subject": "event:ev_qinghai_zongkaba_llm_01",
+   "title": "传召大法会具体规模不详",
+   "missing": "藏文文献考据",
+   "where": "拉萨",
+   "skills": [
+    "藏文文献考据"
+   ],
+   "accept": "需查《宗喀巴传》等",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "SG017",
    "scene": "san_guo",
    "subject": "person:liu_shan",
@@ -4570,6 +4632,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "XIZ_015",
+   "scene": "xizang_huimeng_llm",
+   "subject": "event:ev_xizang_huimeng_llm_01",
+   "title": "细节不详",
+   "missing": "唐蕃会盟研究",
+   "where": "长安会盟具体仪式",
+   "skills": [
+    "唐蕃会盟研究"
+   ],
+   "accept": "补充细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "XIZ_014",

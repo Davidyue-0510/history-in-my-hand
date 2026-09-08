@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "GUA__p01",
+   "name": "馮子材",
+   "role": "幫辦廣西軍務",
+   "note": "老將，持矛躍出，大敗法軍",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p02",
+   "name": "法軍主將",
+   "role": "法軍指揮官",
+   "note": "率三路攻鎮南關",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p03",
+   "name": "清廷",
+   "role": "朝廷決策者",
+   "note": "戰後妥協簽約",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

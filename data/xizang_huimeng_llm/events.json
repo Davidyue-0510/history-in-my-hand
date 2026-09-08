@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_xizang_huimeng_llm_01",
+   "subject": "event:ev_xizang_huimeng_llm_01",
+   "year": 821,
+   "era": "长庆元年",
+   "title": "长安会盟",
+   "kind": "外交",
+   "text": "唐穆宗与吐蕃使盟于长安",
+   "_source_idx": 0,
+   "_source_name": "唐蕃会盟碑史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_huimeng_llm_02",
+   "subject": "event:ev_xizang_huimeng_llm_02",
+   "year": 822,
+   "era": "长庆二年",
+   "title": "逻娑会盟",
+   "kind": "外交",
+   "text": "吐蕃赞普可黎可足于逻娑会盟",
+   "_source_idx": 0,
+   "_source_name": "唐蕃会盟碑史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_huimeng_llm_03",
+   "subject": "event:ev_xizang_huimeng_llm_03",
+   "year": 823,
+   "era": "长庆三年",
+   "title": "立碑大昭寺",
+   "kind": "建置",
+   "text": "立唐蕃会盟碑于大昭寺前",
+   "_source_idx": 0,
+   "_source_name": "唐蕃会盟碑史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

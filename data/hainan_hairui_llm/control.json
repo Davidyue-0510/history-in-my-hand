@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "qiongshan",
+   "party": "后世官修",
+   "start": 1514,
+   "end": 1587,
+   "basis": "auto: 场景主地点 qiongshan 叙事控制方=后世官修"
+  }
+ ]
+}

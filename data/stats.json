@@ -1,9 +1,9 @@
 {
-  "scenes_total": 230,
-  "historical": 221,
+  "scenes_total": 234,
+  "historical": 225,
   "fictional": 9,
-  "assertions_total": 3582,
-  "sources_total": 208,
+  "assertions_total": 3636,
+  "sources_total": 212,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -26,8 +26,10 @@
     "gansu_hexizhen_llm",
     "guandu_llm",
     "guangxi_taiping_llm",
+    "guangxi_zhennanguan_llm",
     "guizhou_yelang_llm",
     "guizhou_zunyi_llm",
+    "hainan_hairui_llm",
     "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
@@ -58,6 +60,7 @@
     "qing_zhungaer_llm",
     "qinghai_gusiluo_llm",
     "qinghai_tuyuhun_llm",
+    "qinghai_zongkaba_llm",
     "san_guo",
     "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
@@ -85,6 +88,7 @@
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
     "xizang_gorkha_llm",
+    "xizang_huimeng_llm",
     "xizang_tubo_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
@@ -94,7 +98,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 328,
+  "leads_total": 333,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1759,6 +1763,34 @@
       "kind": "battle",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "xizang_huimeng_llm",
+      "title": "唐蕃会盟碑（长庆会盟，822）",
+      "kind": "exchange",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_zhennanguan_llm",
+      "title": "镇南关大捷（1885）",
+      "kind": "battle",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "hainan_hairui_llm",
+      "title": "海瑞（1514—1587，明代清官）",
+      "kind": "court",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "qinghai_zongkaba_llm",
+      "title": "宗喀巴 格鲁派创立（1409）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1991,6 +2023,10 @@
     "shanghai_songkai_llm": "淞沪会战（1937）",
     "ningxia_xiaoguan_llm": "萧关 秦汉长城西段关隘（汉）",
     "neimenggu_genghis_llm": "成吉思汗统一蒙古（1206）",
-    "xizang_gorkha_llm": "廓尔喀之役（1791—1792）"
+    "xizang_gorkha_llm": "廓尔喀之役（1791—1792）",
+    "xizang_huimeng_llm": "唐蕃会盟碑（长庆会盟，822）",
+    "guangxi_zhennanguan_llm": "镇南关大捷（1885）",
+    "hainan_hairui_llm": "海瑞（1514—1587，明代清官）",
+    "qinghai_zongkaba_llm": "宗喀巴 格鲁派创立（1409）"
   }
 }

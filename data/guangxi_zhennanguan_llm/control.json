@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "zhennanguan",
+   "party": "后世官修",
+   "start": 1885,
+   "end": 1885,
+   "basis": "auto: 场景主地点 zhennanguan 叙事控制方=后世官修"
+  }
+ ]
+}

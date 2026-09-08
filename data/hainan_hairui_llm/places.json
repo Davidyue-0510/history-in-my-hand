@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "qiongshan",
+   "name": "琼山",
+   "type": "city",
+   "modern": "今中国海南省海口市",
+   "note": "海瑞籍贯",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "nanjing",
+   "name": "南京",
+   "type": "city",
+   "modern": "今中国江苏省南京市",
+   "note": "海瑞卒于此",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.78,
+   "lat": 32.06,
+   "geo_note": "民国首都"
+  },
+  {
+   "id": "yingtian",
+   "name": "应天",
+   "type": "region",
+   "modern": "今中国江苏省南京市一带",
+   "note": "海瑞巡抚辖区",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

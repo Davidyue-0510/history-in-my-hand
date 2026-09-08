@@ -433,7 +433,11 @@
   "shanghai_songkai_llm",
   "ningxia_xiaoguan_llm",
   "neimenggu_genghis_llm",
-  "xizang_gorkha_llm"
+  "xizang_gorkha_llm",
+  "xizang_huimeng_llm",
+  "guangxi_zhennanguan_llm",
+  "hainan_hairui_llm",
+  "qinghai_zongkaba_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -19207,6 +19211,305 @@
    "dims": [
     1,
     3,
+    5,
+    6
+   ]
+  },
+  "xizang_huimeng_llm": {
+   "kind": "exchange",
+   "region": "fusion",
+   "province": "xizang",
+   "title": "唐蕃会盟碑（长庆会盟，822）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "changan",
+   "dossier_event": "event:ev_xizang_huimeng_llm_01",
+   "vocab_pack": "xizang_huimeng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐蕃会盟碑（长庆会盟，822）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "唐蕃会盟碑（长庆会盟，822）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "唐蕃会盟碑（长庆会盟，822）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐蕃会盟碑（长庆会盟，822）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    5,
+    6
+   ]
+  },
+  "guangxi_zhennanguan_llm": {
+   "kind": "battle",
+   "region": "qing_modern",
+   "province": "guangxi",
+   "title": "镇南关大捷（1885）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zhennanguan",
+   "dossier_event": "event:ev_guangxi_zhennanguan_llm_01",
+   "vocab_pack": "guangxi_zhennanguan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "镇南关大捷（1885）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "镇南关大捷（1885）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "镇南关大捷（1885）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "镇南关大捷（1885）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "hainan_hairui_llm": {
+   "kind": "court",
+   "region": "jiangnan",
+   "province": "hainan",
+   "title": "海瑞（1514—1587，明代清官）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qiongshan",
+   "dossier_event": "event:ev_hainan_hairui_llm_01",
+   "vocab_pack": "hainan_hairui_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "海瑞（1514—1587，明代清官）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "海瑞（1514—1587，明代清官）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "海瑞（1514—1587，明代清官）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "海瑞（1514—1587，明代清官）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "qinghai_zongkaba_llm": {
+   "kind": "thought",
+   "region": "xibei",
+   "province": "qinghai",
+   "title": "宗喀巴 格鲁派创立（1409）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zongka",
+   "dossier_event": "event:ev_qinghai_zongkaba_llm_01",
+   "vocab_pack": "qinghai_zongkaba_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宗喀巴 格鲁派创立（1409）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宗喀巴 格鲁派创立（1409）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宗喀巴 格鲁派创立（1409）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宗喀巴 格鲁派创立（1409）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
     5,
     6
    ]

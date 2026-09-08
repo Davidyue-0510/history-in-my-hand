@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "海瑞",
+   "role": "明代清官，官至应天巡抚、南京右都御史",
+   "note": "字汝贤，海南琼山人，以清廉刚直著称",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "明世宗",
+   "role": "明朝皇帝，年号嘉靖",
+   "note": "迷信道教，不理朝政，海瑞上疏直谏",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p03",
+   "name": "明穆宗",
+   "role": "明朝皇帝，年号隆庆",
+   "note": "即位后释放海瑞",
+   "_source_idx": 0,
+   "_source_name": "海瑞史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

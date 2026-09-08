@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 230 个切片
+// 权威数据源：data/scenes.json 注册的 234 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 230 个切片",
+  "slice": "multi-scene · 234 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -30,8 +30,10 @@ window.SANDBOX_DATA = {
    "gansu_hexizhen_llm",
    "guandu_llm",
    "guangxi_taiping_llm",
+   "guangxi_zhennanguan_llm",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
+   "hainan_hairui_llm",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
@@ -62,6 +64,7 @@ window.SANDBOX_DATA = {
    "qing_zhungaer_llm",
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
+   "qinghai_zongkaba_llm",
    "san_guo",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
@@ -89,6 +92,7 @@ window.SANDBOX_DATA = {
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
+   "xizang_huimeng_llm",
    "xizang_tubo_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
@@ -578,7 +582,11 @@ window.SANDBOX_DATA = {
   "shanghai_songkai_llm",
   "ningxia_xiaoguan_llm",
   "neimenggu_genghis_llm",
-  "xizang_gorkha_llm"
+  "xizang_gorkha_llm",
+  "xizang_huimeng_llm",
+  "guangxi_zhennanguan_llm",
+  "hainan_hairui_llm",
+  "qinghai_zongkaba_llm"
  ],
  "vocab": {
   "layers": [
@@ -26421,6 +26429,137 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "xizang_huimeng_llm": {
+   "key": "xizang_huimeng_llm",
+   "scene_id": "xizang_huimeng_llm",
+   "title": "唐蕃会盟碑（长庆会盟，822）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "fusion",
+   "page": "county.html?scene=xizang_huimeng_llm",
+   "primary_place": "changan",
+   "vocab_pack": "xizang_huimeng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guangxi_zhennanguan_llm": {
+   "key": "guangxi_zhennanguan_llm",
+   "scene_id": "guangxi_zhennanguan_llm",
+   "title": "镇南关大捷（1885）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "qing_modern",
+   "page": "guangxi_zhennanguan_llm.html",
+   "primary_place": "zhennanguan",
+   "vocab_pack": "guangxi_zhennanguan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 2,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hainan_hairui_llm": {
+   "key": "hainan_hairui_llm",
+   "scene_id": "hainan_hairui_llm",
+   "title": "海瑞（1514—1587，明代清官）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "jiangnan",
+   "page": "county.html?scene=hainan_hairui_llm",
+   "primary_place": "qiongshan",
+   "vocab_pack": "hainan_hairui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "qinghai_zongkaba_llm": {
+   "key": "qinghai_zongkaba_llm",
+   "scene_id": "qinghai_zongkaba_llm",
+   "title": "宗喀巴 格鲁派创立（1409）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "xibei",
+   "page": "county.html?scene=qinghai_zongkaba_llm",
+   "primary_place": "zongka",
+   "vocab_pack": "qinghai_zongkaba_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26653,7 +26792,11 @@ window.SANDBOX_DATA = {
   "shanghai_songkai_llm": "slices/shanghai_songkai_llm.js",
   "ningxia_xiaoguan_llm": "slices/ningxia_xiaoguan_llm.js",
   "neimenggu_genghis_llm": "slices/neimenggu_genghis_llm.js",
-  "xizang_gorkha_llm": "slices/xizang_gorkha_llm.js"
+  "xizang_gorkha_llm": "slices/xizang_gorkha_llm.js",
+  "xizang_huimeng_llm": "slices/xizang_huimeng_llm.js",
+  "guangxi_zhennanguan_llm": "slices/guangxi_zhennanguan_llm.js",
+  "hainan_hairui_llm": "slices/hainan_hairui_llm.js",
+  "qinghai_zongkaba_llm": "slices/qinghai_zongkaba_llm.js"
  },
  "corridors": [
   {

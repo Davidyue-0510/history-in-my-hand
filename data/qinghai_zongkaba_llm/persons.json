@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "宗喀巴",
+   "role": "藏传佛教改革者，格鲁派创始人",
+   "note": "生于宗喀，倡导戒律改革",
+   "_source_idx": 0,
+   "_source_name": "宗喀巴史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "根敦朱",
+   "role": "宗喀巴弟子，一世达赖",
+   "note": "建札什伦布寺",
+   "_source_idx": 0,
+   "_source_name": "宗喀巴史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p03",
+   "name": "克主杰",
+   "role": "宗喀巴弟子，一世班禅",
+   "note": "主甘丹寺",
+   "_source_idx": 0,
+   "_source_name": "宗喀巴史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

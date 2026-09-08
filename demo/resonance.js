@@ -68,11 +68,13 @@ window.SANDBOX_RESONANCE = {
    "guandu_llm",
    "guangning",
    "guangxi_taiping_llm",
+   "guangxi_zhennanguan_llm",
    "guiling",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
    "gunpowder_warfare",
    "guo_shoujing",
+   "hainan_hairui_llm",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "haizhou",
@@ -146,6 +148,7 @@ window.SANDBOX_RESONANCE = {
    "qing_zhungaer_llm",
    "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
+   "qinghai_zongkaba_llm",
    "san_guo",
    "sarhu",
    "shanghai_songkai_llm",
@@ -202,6 +205,7 @@ window.SANDBOX_RESONANCE = {
    "xinhai",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
+   "xizang_huimeng_llm",
    "xizang_tubo_llm",
    "xu_guangqi",
    "xuanwu",
@@ -1330,6 +1334,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guangxi_zhennanguan_llm",
+   "name": "guangxi_zhennanguan_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "gap": 2,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangxi_zhennanguan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guiling",
    "name": "guiling",
    "total": 19,
@@ -1422,6 +1445,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:shoushi_banxing",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "hainan_hairui_llm",
+   "name": "hainan_hairui_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hainan_hairui_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2837,6 +2879,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "qinghai_zongkaba_llm",
+   "name": "qinghai_zongkaba_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qinghai_zongkaba_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "san_guo",
    "name": "san_guo",
    "total": 20,
@@ -3941,6 +4002,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_xizang_gorkha_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xizang_huimeng_llm",
+   "name": "xizang_huimeng_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xizang_huimeng_llm_01",
    "best_resonance": 0.0
   },
   {

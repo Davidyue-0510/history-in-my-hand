@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_guangxi_zhennanguan_llm_01",
+   "subject": "event:ev_guangxi_zhennanguan_llm_01",
+   "year": 1885,
+   "era": "光緒十一年",
+   "title": "鎮南關大捷",
+   "kind": "戰事",
+   "text": "馮子材率軍大敗法軍於鎮南關",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_zhennanguan_llm_02",
+   "subject": "event:ev_guangxi_zhennanguan_llm_02",
+   "year": 1885,
+   "era": "光緒十一年",
+   "title": "乘勝克諒山",
+   "kind": "戰事",
+   "text": "清軍乘勝收復諒山",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_zhennanguan_llm_03",
+   "subject": "event:ev_guangxi_zhennanguan_llm_03",
+   "year": 1885,
+   "era": "光緒十一年",
+   "title": "簽訂中法新約",
+   "kind": "外交",
+   "text": "清廷妥協，簽訂新約",
+   "_source_idx": 0,
+   "_source_name": "镇南关大捷史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
