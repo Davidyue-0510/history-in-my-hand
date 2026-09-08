@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "YUN__p01",
+   "name": "段思平",
+   "role": "大理国建立者",
+   "note": "白族首领，937年建大理国",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YUN__p02",
+   "name": "段兴智",
+   "role": "大理国末代国王",
+   "note": "1253年降蒙古",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YUN__p03",
+   "name": "忽必烈",
+   "role": "蒙古宗王",
+   "note": "率军攻灭大理国",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YUN__p04",
+   "name": "高氏",
+   "role": "大理国相国",
+   "note": "世为相国，权倾一时",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

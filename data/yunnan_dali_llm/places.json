@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "yangjumie",
+   "name": "羊苴咩城",
+   "type": "city",
+   "modern": "今云南大理",
+   "note": "大理国都城",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dali",
+   "name": "大理",
+   "type": "city",
+   "modern": "今云南大理",
+   "note": "大理国核心区域",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jinshajiang",
+   "name": "金沙江",
+   "type": "river",
+   "modern": "今云南北部",
+   "note": "蒙古军渡江处",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yunnan",
+   "name": "云南",
+   "type": "region",
+   "modern": "今云南省",
+   "note": "大理国辖地",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "mianbei",
+   "name": "缅北",
+   "type": "region",
+   "modern": "今缅甸北部",
+   "note": "大理国辖地",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "chama",
+   "name": "茶马古道",
+   "type": "route",
+   "modern": "今云南四川西藏",
+   "note": "连接蜀地商道",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_jiaoan_llm_01",
+   "subject": "event:ev_tianjin_jiaoan_llm_01",
+   "year": 1870,
+   "era": "同治九年",
+   "title": "天津教案爆发",
+   "kind": "其他",
+   "text": "民众焚毁教堂，殴毙领事丰大业",
+   "_source_idx": 0,
+   "_source_name": "天津教案史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_jiaoan_llm_02",
+   "subject": "event:ev_tianjin_jiaoan_llm_02",
+   "year": 1870,
+   "era": "同治九年",
+   "title": "曾国藩查办",
+   "kind": "行政",
+   "text": "曾国藩拟重办民众，赔款道歉",
+   "_source_idx": 0,
+   "_source_name": "天津教案史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_jiaoan_llm_03",
+   "subject": "event:ev_tianjin_jiaoan_llm_03",
+   "year": 1870,
+   "era": "同治九年",
+   "title": "李鸿章接办",
+   "kind": "行政",
+   "text": "李鸿章诛杀民众二十余人，赔款抚恤",
+   "_source_idx": 0,
+   "_source_name": "天津教案史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

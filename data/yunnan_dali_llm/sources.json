@@ -1,14 +1,14 @@
 {
  "sources": [
   {
-   "id": "quanzhou_llm_src",
-   "title": "泉州港海上丝路史料摘录",
+   "id": "dali_llm_src",
+   "title": "大理国史料摘录",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
    "color": "#8C6239",
    "compiler": "LLM 摘要（paraphrase_unverified）",
-   "period": "1087—1368",
+   "period": "937—1253",
    "note": ""
   }
  ]

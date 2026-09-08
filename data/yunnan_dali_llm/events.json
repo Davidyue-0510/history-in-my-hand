@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_yunnan_dali_llm_01",
+   "subject": "event:ev_yunnan_dali_llm_01",
+   "year": 937,
+   "era": "后晋天福二年",
+   "title": "段思平建大理国",
+   "kind": "建置",
+   "text": "段思平建大理国，定都羊苴咩城",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_dali_llm_02",
+   "subject": "event:ev_yunnan_dali_llm_02",
+   "year": 1253,
+   "era": "宝祐元年",
+   "title": "蒙古灭大理",
+   "kind": "战事",
+   "text": "忽必烈革囊渡江，克大理，段兴智降",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_dali_llm_03",
+   "subject": "event:ev_yunnan_dali_llm_03",
+   "year": 1254,
+   "era": "次年",
+   "title": "置云南行省",
+   "kind": "行政",
+   "text": "蒙古置云南行省，大理国亡",
+   "_source_idx": 0,
+   "_source_name": "大理国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_chongqing_diaoyucheng_llm_01",
+   "subject": "event:ev_chongqing_diaoyucheng_llm_01",
+   "year": 1243,
+   "era": "淳祐三年",
+   "title": "余玠筑钓鱼城",
+   "kind": "建置",
+   "text": "余玠筑城备蒙",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_diaoyucheng_llm_02",
+   "subject": "event:ev_chongqing_diaoyucheng_llm_02",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "蒙哥攻钓鱼城",
+   "kind": "战事",
+   "text": "蒙哥亲征，猛攻钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_diaoyucheng_llm_03",
+   "subject": "event:ev_chongqing_diaoyucheng_llm_03",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "蒙哥卒于军中",
+   "kind": "战事",
+   "text": "蒙哥受创卒于军中",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_diaoyucheng_llm_04",
+   "subject": "event:ev_chongqing_diaoyucheng_llm_04",
+   "year": 1279,
+   "era": "祥兴二年",
+   "title": "钓鱼城出降",
+   "kind": "其他",
+   "text": "以不屠城为条件出降",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

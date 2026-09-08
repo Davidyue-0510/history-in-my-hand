@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 223 个切片
+// 权威数据源：data/scenes.json 注册的 226 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 223 个切片",
+  "slice": "multi-scene · 226 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -17,6 +17,7 @@ window.SANDBOX_DATA = {
    "changping_llm",
    "chibi_llm",
    "chongqing_capital_llm",
+   "chongqing_diaoyucheng_llm",
    "chu_han",
    "chuhai_llm",
    "dagukou_battle_llm",
@@ -78,6 +79,7 @@ window.SANDBOX_DATA = {
    "tang_juntian",
    "tang_xuanwumen_llm",
    "three_campaigns",
+   "tianjin_jiaoan_llm",
    "wangyangming",
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
@@ -86,6 +88,7 @@ window.SANDBOX_DATA = {
    "xizang_tubo_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
+   "yunnan_dali_llm",
    "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm",
    "zhuxi"
@@ -564,7 +567,10 @@ window.SANDBOX_DATA = {
   "neimenggu_zhaojun_llm",
   "gansu_hexizhen_llm",
   "guizhou_zunyi_llm",
-  "heilongjiang_jin_llm"
+  "heilongjiang_jin_llm",
+  "chongqing_diaoyucheng_llm",
+  "tianjin_jiaoan_llm",
+  "yunnan_dali_llm"
  ],
  "vocab": {
   "layers": [
@@ -23879,12 +23885,11 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_quanzhou_llm",
    "primary_place": "quanzhou",
-   "vocab_pack": "inline:fujian_quanzhou_llm",
+   "vocab_pack": "fujian_quanzhou_llm",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
     1,
-    2,
     3,
     4,
     5,
@@ -23893,13 +23898,13 @@ window.SANDBOX_DATA = {
    "epoch": "song",
    "scale_tier": "strategic",
    "counts": {
-    "src": 2,
-    "place": 6,
+    "src": 1,
+    "place": 2,
     "person": 1,
-    "assert": 16,
+    "assert": 14,
     "conflict": 1,
-    "gap": 2,
-    "record": 12,
+    "gap": 1,
+    "record": 11,
     "scholarship": 1,
     "inference": 1
    }
@@ -26178,6 +26183,105 @@ window.SANDBOX_DATA = {
     "scholarship": 2,
     "inference": 1
    }
+  },
+  "chongqing_diaoyucheng_llm": {
+   "key": "chongqing_diaoyucheng_llm",
+   "scene_id": "chongqing_diaoyucheng_llm",
+   "title": "钓鱼城之战（1259，宋蒙）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "chuan_gui",
+   "page": "chongqing_diaoyucheng_llm.html",
+   "primary_place": "diaoyucheng",
+   "vocab_pack": "chongqing_diaoyucheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 5,
+    "assert": 17,
+    "conflict": 2,
+    "gap": 1,
+    "record": 14,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "tianjin_jiaoan_llm": {
+   "key": "tianjin_jiaoan_llm",
+   "scene_id": "tianjin_jiaoan_llm",
+   "title": "天津教案（1870）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "huabei",
+   "page": "county.html?scene=tianjin_jiaoan_llm",
+   "primary_place": "tianjin",
+   "vocab_pack": "tianjin_jiaoan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 12,
+    "conflict": 1,
+    "gap": 2,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "yunnan_dali_llm": {
+   "key": "yunnan_dali_llm",
+   "scene_id": "yunnan_dali_llm",
+   "title": "大理国（937—1253）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "yunnan",
+   "page": "county.html?scene=yunnan_dali_llm",
+   "primary_place": "yangjumie",
+   "vocab_pack": "yunnan_dali_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 4,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26403,7 +26507,10 @@ window.SANDBOX_DATA = {
   "neimenggu_zhaojun_llm": "slices/neimenggu_zhaojun_llm.js",
   "gansu_hexizhen_llm": "slices/gansu_hexizhen_llm.js",
   "guizhou_zunyi_llm": "slices/guizhou_zunyi_llm.js",
-  "heilongjiang_jin_llm": "slices/heilongjiang_jin_llm.js"
+  "heilongjiang_jin_llm": "slices/heilongjiang_jin_llm.js",
+  "chongqing_diaoyucheng_llm": "slices/chongqing_diaoyucheng_llm.js",
+  "tianjin_jiaoan_llm": "slices/tianjin_jiaoan_llm.js",
+  "yunnan_dali_llm": "slices/yunnan_dali_llm.js"
  },
  "corridors": [
   {

@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "余玠",
+   "role": "南宋四川制置使",
+   "note": "筑钓鱼城备蒙",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p02",
+   "name": "蒙哥",
+   "role": "蒙古大汗",
+   "note": "亲征四川，攻钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p03",
+   "name": "王坚",
+   "role": "南宋守将",
+   "note": "守钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p04",
+   "name": "张珏",
+   "role": "南宋守将",
+   "note": "协守钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p05",
+   "name": "忽必烈",
+   "role": "蒙古宗王",
+   "note": "蒙哥死后北归争位",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -426,7 +426,10 @@
   "neimenggu_zhaojun_llm",
   "gansu_hexizhen_llm",
   "guizhou_zunyi_llm",
-  "heilongjiang_jin_llm"
+  "heilongjiang_jin_llm",
+  "chongqing_diaoyucheng_llm",
+  "tianjin_jiaoan_llm",
+  "yunnan_dali_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -13394,7 +13397,6 @@
    "parties_note": "",
    "dims": [
     1,
-    2,
     3,
     4,
     5,
@@ -18675,6 +18677,231 @@
    },
    "dims": [
     1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "chongqing_diaoyucheng_llm": {
+   "kind": "battle",
+   "region": "chuan_gui",
+   "province": "chongqing",
+   "title": "钓鱼城之战（1259，宋蒙）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "diaoyucheng",
+   "dossier_event": "event:ev_chongqing_diaoyucheng_llm_01",
+   "vocab_pack": "chongqing_diaoyucheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "钓鱼城之战（1259，宋蒙）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "钓鱼城之战（1259，宋蒙）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "钓鱼城之战（1259，宋蒙）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "钓鱼城之战（1259，宋蒙）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    5,
+    6
+   ]
+  },
+  "tianjin_jiaoan_llm": {
+   "kind": "court",
+   "region": "huabei",
+   "province": "tianjin",
+   "title": "天津教案（1870）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_tianjin_jiaoan_llm_01",
+   "vocab_pack": "tianjin_jiaoan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津教案（1870）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "天津教案（1870）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "天津教案（1870）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津教案（1870）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "yunnan_dali_llm": {
+   "kind": "frontier",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "大理国（937—1253）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yangjumie",
+   "dossier_event": "event:ev_yunnan_dali_llm_01",
+   "vocab_pack": "yunnan_dali_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "大理国（937—1253）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "大理国（937—1253）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "大理国（937—1253）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "大理国（937—1253）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
     3,
     4,
     5,

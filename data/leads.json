@@ -496,6 +496,21 @@
    "_src_line": 14
   },
   {
+   "id": "CHO_017",
+   "scene": "chongqing_diaoyucheng_llm",
+   "subject": "event:ev_chongqing_diaoyucheng_llm_02",
+   "title": "蒙哥军伤亡未详",
+   "missing": "历史考据",
+   "where": "元史、宋史",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体伤亡数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "chongzhen_han_07",
    "scene": "chongzhen_han",
    "subject": "event:ch_1640",
@@ -1001,36 +1016,20 @@
    "_src_line": 14
   },
   {
-   "id": "FUJIG2",
-   "scene": "fujian_quanzhou_llm",
-   "subject": "event:ev_fujian_quanzhou_llm_01",
-   "title": "此場景關於「技術」維度的直接史料與考訂尚有缺環，待按原始文獻擴充。",
-   "missing": "紀年校勘 / 多源比對",
-   "where": "原始史料對讀",
-   "skills": [
-    "紀年校勘",
-    "多源比對"
-   ],
-   "accept": "補技術維直接史料與學界考訂",
-   "effort": "—",
-   "issue_url": null,
-   "_src_line": 16
-  },
-  {
-   "id": "FUJ_015",
+   "id": "FUJ_014",
    "scene": "fujian_quanzhou_llm",
    "subject": "place:quanzhou",
-   "title": "具体贸易额未载",
-   "missing": "经济史 / 数字人文",
-   "where": "泉州地方志",
+   "title": "重心北移具体港口未明",
+   "missing": "历史地理 / 经济史",
+   "where": "泉州港衰落后的贸易重心",
    "skills": [
-    "经济史",
-    "数字人文"
+    "历史地理",
+    "经济史"
    ],
-   "accept": "补充贸易额",
+   "accept": "需进一步考证北移港口",
    "effort": "—",
    "issue_url": null,
-   "_src_line": 15
+   "_src_line": 14
   },
   {
    "id": "F010",
@@ -4033,6 +4032,36 @@
    "_src_line": 9
   },
   {
+   "id": "TIA_010",
+   "scene": "tianjin_jiaoan_llm",
+   "subject": "event:ev_tianjin_jiaoan_llm_01",
+   "title": "外人数目未详",
+   "missing": "法文档案检索",
+   "where": "法国领事馆档案",
+   "skills": [
+    "法文档案检索"
+   ],
+   "accept": "找到具体伤亡名单",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "TIA_012",
+   "scene": "tianjin_jiaoan_llm",
+   "subject": "event:ev_tianjin_jiaoan_llm_03",
+   "title": "赔款抚恤具体数额未详",
+   "missing": "清代档案研究",
+   "where": "总理衙门档案",
+   "skills": [
+    "清代档案研究"
+   ],
+   "accept": "找到赔款记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "TIANJINGG01",
    "scene": "tianjing",
    "subject": "event:tj_xiang",
@@ -4743,6 +4772,22 @@
     "理学"
    ],
    "accept": "待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "YUN_014",
+   "scene": "yunnan_dali_llm",
+   "subject": "event:ev_yunnan_dali_llm_02",
+   "title": "革囊渡江具体技术不明",
+   "missing": "军事技术 / 考古",
+   "where": "金沙江渡口",
+   "skills": [
+    "军事技术",
+    "考古"
+   ],
+   "accept": "革囊渡江的具体工艺",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

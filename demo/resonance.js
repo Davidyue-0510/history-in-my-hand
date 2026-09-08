@@ -34,6 +34,7 @@ window.SANDBOX_RESONANCE = {
    "chibi",
    "chibi_llm",
    "chongqing_capital_llm",
+   "chongqing_diaoyucheng_llm",
    "chongzhen_han",
    "chongzhen_huangzai",
    "chu_han",
@@ -178,6 +179,7 @@ window.SANDBOX_RESONANCE = {
    "tang_liangshuifa",
    "tang_xuanwumen_llm",
    "three_campaigns",
+   "tianjin_jiaoan_llm",
    "tianjing",
    "tieling",
    "tumu",
@@ -211,6 +213,7 @@ window.SANDBOX_RESONANCE = {
    "yuan_duo",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
+   "yunnan_dali_llm",
    "zhangheng",
    "zhangjuzheng",
    "zhangqian",
@@ -675,6 +678,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "chongqing_diaoyucheng_llm",
+   "name": "chongqing_diaoyucheng_llm",
+   "total": 17,
+   "layers": {
+    "inference": 1,
+    "record": 14,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 17
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chongqing_diaoyucheng_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "chongzhen_han",
    "name": "chongzhen_han",
    "total": 10,
@@ -1073,16 +1095,15 @@ window.SANDBOX_RESONANCE = {
   {
    "scene": "fujian_quanzhou_llm",
    "name": "fujian_quanzhou_llm",
-   "total": 16,
+   "total": 14,
    "layers": {
     "inference": 1,
-    "record": 12,
+    "record": 11,
     "scholarship": 1,
-    "gap": 2
+    "gap": 1
    },
    "party_counts": {
-    "宋官修": 15,
-    "综合史料": 1
+    "后世官修": 14
    },
    "faction_counts": {},
    "event_count": 2,
@@ -3466,6 +3487,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tianjin_jiaoan_llm",
+   "name": "tianjin_jiaoan_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "gap": 2,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tianjin_jiaoan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "tianjing",
    "name": "tianjing",
    "total": 16,
@@ -4113,6 +4153,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_yuelu_academy_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yunnan_dali_llm",
+   "name": "yunnan_dali_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yunnan_dali_llm_01",
    "best_resonance": 0.0
   },
   {

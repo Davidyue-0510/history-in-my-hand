@@ -1,9 +1,9 @@
 {
-  "scenes_total": 223,
-  "historical": 214,
+  "scenes_total": 226,
+  "historical": 217,
   "fictional": 9,
-  "assertions_total": 3484,
-  "sources_total": 201,
+  "assertions_total": 3525,
+  "sources_total": 204,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -13,6 +13,7 @@
     "changping_llm",
     "chibi_llm",
     "chongqing_capital_llm",
+    "chongqing_diaoyucheng_llm",
     "chu_han",
     "chuhai_llm",
     "dagukou_battle_llm",
@@ -74,6 +75,7 @@
     "tang_juntian",
     "tang_xuanwumen_llm",
     "three_campaigns",
+    "tianjin_jiaoan_llm",
     "wangyangming",
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
@@ -82,12 +84,13 @@
     "xizang_tubo_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
+    "yunnan_dali_llm",
     "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 321,
+  "leads_total": 324,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1232,7 +1235,7 @@
       "id": "fujian_quanzhou_llm",
       "title": "泉州刺桐港·海上丝路（宋元）",
       "kind": "exchange",
-      "assertions": 16,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -1703,6 +1706,27 @@
       "kind": "frontier",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "chongqing_diaoyucheng_llm",
+      "title": "钓鱼城之战（1259，宋蒙）",
+      "kind": "battle",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_jiaoan_llm",
+      "title": "天津教案（1870）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_dali_llm",
+      "title": "大理国（937—1253）",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1928,6 +1952,9 @@
     "neimenggu_zhaojun_llm": "昭君出塞（王昭君和亲匈奴，前33）",
     "gansu_hexizhen_llm": "汉武帝设河西四郡（前121—前111）",
     "guizhou_zunyi_llm": "遵义会议（1935）",
-    "heilongjiang_jin_llm": "金朝立国 完颜阿骨打称帝（1115）"
+    "heilongjiang_jin_llm": "金朝立国 完颜阿骨打称帝（1115）",
+    "chongqing_diaoyucheng_llm": "钓鱼城之战（1259，宋蒙）",
+    "tianjin_jiaoan_llm": "天津教案（1870）",
+    "yunnan_dali_llm": "大理国（937—1253）"
   }
 }

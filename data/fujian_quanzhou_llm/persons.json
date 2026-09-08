@@ -2,12 +2,12 @@
  "persons": [
   {
    "id": "FUJ__p01",
-   "name": "赵汝适",
-   "role": "南宋泉州知州",
-   "note": "撰《诸蕃志》",
+   "name": "马可·波罗",
+   "role": "意大利旅行家",
+   "note": "称刺桐为世界最大港口之一",
    "_source_idx": 0,
-   "_source_name": "诸蕃志（赵汝适知泉州）",
-   "_source_party": "宋官修",
+   "_source_name": "泉州港海上丝路史料摘录",
+   "_source_party": "后世官修",
    "_source_credibility": null
   }
  ]

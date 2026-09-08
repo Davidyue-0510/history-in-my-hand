@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "diaoyucheng",
+   "name": "钓鱼城",
+   "type": "fortress",
+   "modern": "今中国重庆市合川区",
+   "note": "山城防御要塞",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hezhou",
+   "name": "合州",
+   "type": "city",
+   "modern": "今中国重庆市合川区",
+   "note": "钓鱼城所在州",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "sichuan",
+   "name": "四川",
+   "type": "region",
+   "modern": "今中国四川省",
+   "note": "蒙哥进攻方向",
+   "_source_idx": 0,
+   "_source_name": "钓鱼城之战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}
