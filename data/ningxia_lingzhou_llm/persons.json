@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "NIN__p01",
+   "name": "李亨",
+   "role": "唐肃宗",
+   "note": "安史乱中于灵武即位",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NIN__p02",
+   "name": "郭子仪",
+   "role": "朔方节度使",
+   "note": "统朔方军，中兴名将",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NIN__p03",
+   "name": "李光弼",
+   "role": "朔方节度副使",
+   "note": "与郭子仪齐名",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NIN__p04",
+   "name": "仆固怀恩",
+   "role": "朔方将",
+   "note": "后叛，但前期有功",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NIN__p05",
+   "name": "回纥可汗",
+   "role": "回纥首领",
+   "note": "助唐平乱",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

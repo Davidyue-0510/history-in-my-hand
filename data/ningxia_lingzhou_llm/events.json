@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_ningxia_lingzhou_llm_01",
+   "subject": "event:ev_ningxia_lingzhou_llm_01",
+   "year": 756,
+   "era": "天宝十五载",
+   "title": "灵武即位",
+   "kind": "行政",
+   "text": "太子亨于灵武即位，改元至德",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_ningxia_lingzhou_llm_02",
+   "subject": "event:ev_ningxia_lingzhou_llm_02",
+   "year": 756,
+   "era": "至德元载",
+   "title": "朔方军兴",
+   "kind": "战事",
+   "text": "朔方军为中兴根本，出兵平乱",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·地理志（灵州朔方）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

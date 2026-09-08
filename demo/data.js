@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 320 个切片
+// 权威数据源：data/scenes.json 注册的 322 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 320 个切片",
+  "slice": "multi-scene · 322 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -99,6 +99,7 @@ window.SANDBOX_DATA = {
    "neimenggu_genghis_llm",
    "neimenggu_liao",
    "neimenggu_zhaojun_llm",
+   "ningxia_lingzhou_llm",
    "ningxia_xiaoguan_llm",
    "ningxia_xixia",
    "ningxia_xixia_llm",
@@ -152,6 +153,7 @@ window.SANDBOX_DATA = {
    "tang_xuanwumen_llm",
    "three_campaigns",
    "tianjin_jiaoan_llm",
+   "tianjin_jiqiju_llm",
    "tianjin_kaibu_llm",
    "tianjin_tianjinwei",
    "wangmang_reform_llm",
@@ -759,7 +761,9 @@ window.SANDBOX_DATA = {
   "tan_ding_llm",
   "xianggang_nanbeihang_llm",
   "yuan_shangdu_llm",
-  "zuyong_diao_llm"
+  "zuyong_diao_llm",
+  "ningxia_lingzhou_llm",
+  "tianjin_jiqiju_llm"
  ],
  "vocab": {
   "layers": [
@@ -27165,25 +27169,26 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_kaibu_llm",
    "primary_place": "tianjin",
-   "vocab_pack": "tianjin_kaibu_llm",
+   "vocab_pack": "inline:tianjin_kaibu_llm",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
-    1,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "qing_modern",
    "scale_tier": "operational",
    "counts": {
     "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 14,
-    "conflict": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 13,
+    "conflict": 0,
     "gap": 1,
     "record": 10,
-    "scholarship": 2,
+    "scholarship": 1,
     "inference": 1
    }
   },
@@ -29579,6 +29584,71 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "ningxia_lingzhou_llm": {
+   "key": "ningxia_lingzhou_llm",
+   "scene_id": "ningxia_lingzhou_llm",
+   "title": "唐·灵州朔方",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=ningxia_lingzhou_llm",
+   "primary_place": "lingzhou",
+   "vocab_pack": "inline:ningxia_lingzhou_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 5,
+    "assert": 13,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "tianjin_jiqiju_llm": {
+   "key": "tianjin_jiqiju_llm",
+   "scene_id": "tianjin_jiqiju_llm",
+   "title": "清·天津机器局",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "huabei",
+   "page": "county.html?scene=tianjin_jiqiju_llm",
+   "primary_place": "tianjin",
+   "vocab_pack": "inline:tianjin_jiqiju_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 3,
+    "record": 7,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -29901,7 +29971,9 @@ window.SANDBOX_DATA = {
   "tan_ding_llm": "slices/tan_ding_llm.js",
   "xianggang_nanbeihang_llm": "slices/xianggang_nanbeihang_llm.js",
   "yuan_shangdu_llm": "slices/yuan_shangdu_llm.js",
-  "zuyong_diao_llm": "slices/zuyong_diao_llm.js"
+  "zuyong_diao_llm": "slices/zuyong_diao_llm.js",
+  "ningxia_lingzhou_llm": "slices/ningxia_lingzhou_llm.js",
+  "tianjin_jiqiju_llm": "slices/tianjin_jiqiju_llm.js"
  },
  "corridors": [
   {

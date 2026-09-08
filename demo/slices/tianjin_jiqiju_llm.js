@@ -1,17 +1,17 @@
-// 本文件由 tools/build.py 自动生成（切片 tianjin_kaibu_llm），请勿手工编辑。
-// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["tianjin_kaibu_llm"]。
+// 本文件由 tools/build.py 自动生成（切片 tianjin_jiqiju_llm），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["tianjin_jiqiju_llm"]。
 (window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
-window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
+window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
  "meta": {
-  "kind": "exchange",
+  "kind": "engineering",
   "region": "huabei",
   "province": "tianjin",
-  "title": "天津开埠",
+  "title": "清·天津机器局",
   "dossier_label": null,
   "subtitle": null,
   "primary_place": "tianjin",
-  "dossier_event": "event:ev_tianjin_kaibu_llm_01",
-  "vocab_pack": "inline:tianjin_kaibu_llm",
+  "dossier_event": "event:ev_tianjin_jiqiju_llm_01",
+  "vocab_pack": "inline:tianjin_jiqiju_llm",
   "terrain_grid": "china_coarse",
   "lead": null,
   "parties_note": null,
@@ -29,7 +29,7 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "天津开埠：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    "note": "清·天津机器局：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "material_logistics": {
     "from": [
@@ -41,7 +41,7 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
      3
     ],
     "layer": "inference",
-    "note": "天津开埠：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    "note": "清·天津机器局：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "population_mobilization": {
     "from": [
@@ -51,7 +51,7 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
      4
     ],
     "layer": "inference",
-    "note": "天津开埠：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    "note": "清·天津机器局：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
    },
    "geopolitical_strategy": {
     "from": [
@@ -63,23 +63,23 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
      5
     ],
     "layer": "inference",
-    "note": "天津开埠：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    "note": "清·天津机器局：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
    }
   },
   "dims": [
+   2,
    3,
-   4,
    5,
    6
   ],
-  "page": "county.html?scene=tianjin_kaibu_llm",
-  "key": "tianjin_kaibu_llm",
-  "scene_id": "tianjin_kaibu_llm"
+  "page": "county.html?scene=tianjin_jiqiju_llm",
+  "key": "tianjin_jiqiju_llm",
+  "scene_id": "tianjin_jiqiju_llm"
  },
  "sources": [
   {
-   "id": "tianjin_kaibu_src",
-   "title": "清史稿·地理志（天津开埠）",
+   "id": "tianjin_jiqiju_src",
+   "title": "清史稿·洋务运动（天津机器局）",
    "party": "后世官修",
    "stance_label": "",
    "distance_label": "",
@@ -94,10 +94,10 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
    "id": "tianjin",
    "name": "天津",
    "type": "city",
-   "modern": "今中国天津市",
-   "note": "通商口岸",
+   "modern": "中国天津市",
+   "note": "机器局所在地",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": 117.2,
@@ -106,13 +106,13 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
    "elev": 8
   },
   {
-   "id": "dagu",
-   "name": "大沽",
-   "type": "fortress",
-   "modern": "今中国天津市滨海新区",
-   "note": "海防要地",
+   "id": "jiagujia",
+   "name": "贾家沽",
+   "type": "yi",
+   "modern": "中国天津市东郊",
+   "note": "东局所在",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -120,27 +120,13 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
    "geo_unresolved": true
   },
   {
-   "id": "niuzhuang",
-   "name": "牛庄",
-   "type": "port",
-   "modern": "今中国辽宁省海城市牛庄镇",
-   "note": "三口之一",
+   "id": "haiguangsi",
+   "name": "海光寺",
+   "type": "yi",
+   "modern": "中国天津市南开区",
+   "note": "西局所在",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "dengzhou",
-   "name": "登州",
-   "type": "port",
-   "modern": "今中国山东省蓬莱市",
-   "note": "三口之一",
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "lon": null,
@@ -151,11 +137,22 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
  "persons": [
   {
    "id": "TIA__p01",
-   "name": "奕訢",
-   "role": "清廷议和大臣",
-   "note": "主持与英法议和",
+   "name": "李鸿章",
+   "role": "直隶总督兼北洋大臣",
+   "note": "督办天津机器局",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "influence": 0
+  },
+  {
+   "id": "TIA__p02",
+   "name": "总理各国事务衙门",
+   "role": "中央外交机构",
+   "note": "奏设机器局",
+   "_source_idx": 0,
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
    "influence": 0
@@ -164,415 +161,395 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
  "assertions": [
   {
    "id": "TIA_001",
-   "subject": "event:ev_tianjin_kaibu_llm_01",
-   "predicate": "战役结果",
-   "value_text": "英法联军攻陷大沽，进占天津。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "奏设",
+   "value_text": "总理衙门奏设天津机器局",
    "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "英法联军陷大沽，入天津。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "总理各国事务衙门奏设天津机器局",
    "quote_status": "paraphrase_unverified",
    "layer": "inference",
    "confidence": 0.45,
-   "scale": "theater",
+   "scale": "province",
    "note": "[auto] 补层 inference",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "英法联军陷大沽，入天津。",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "TIA_002",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "predicate": "条约内容",
-   "value_text": "增开天津为通商口岸，许设租界。",
-   "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
-   },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "增开天津为通商口岸，许各国领事驻劄。",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "empire",
-   "note": "",
    "dims": [
     3,
     6
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "增开天津为通商口岸，许各国领事驻劄。",
+   "_source_quote": "总理各国事务衙门奏设天津机器局",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "TIA_002",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "督办",
+   "value_text": "命李鸿章督办",
+   "time": {
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
+   },
+   "place": "tianjin",
+   "source": "tianjin_jiqiju_src",
+   "quote": "命李鸿章督办",
+   "quote_status": "paraphrase_unverified",
+   "layer": "record",
+   "confidence": 0.9,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    3
+   ],
+   "_source_idx": 0,
+   "_source_name": "清史稿·洋务运动（天津机器局）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "命李鸿章督办",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_003",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "predicate": "租界设立",
-   "value_text": "英法美俄在津设租界。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "购置设备",
+   "value_text": "购西洋机器、募洋匠",
    "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "准英、法、美、俄诸国于津设租界。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "购西洋机器、募洋匠",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
-   "scale": "empire",
+   "scale": "province",
    "note": "",
    "dims": [
-    3,
-    6
+    2,
+    3
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "准英、法、美、俄诸国于津设租界。",
+   "_source_quote": "购西洋机器、募洋匠",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_004",
-   "subject": "event:ev_tianjin_kaibu_llm_03",
-   "predicate": "官职设置",
-   "value_text": "设三口通商大臣驻天津。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "产品",
+   "value_text": "制造枪炮、火药、弹丸",
    "time": {
-    "era_text": "咸丰十年后",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "三口通商大臣驻天津。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "制造枪炮、火药、弹丸",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
-   "scale": "empire",
+   "scale": "province",
    "note": "",
    "dims": [
-    3
+    2
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "三口通商大臣驻天津。",
+   "_source_quote": "制造枪炮、火药、弹丸",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_005",
-   "subject": "event:ev_tianjin_kaibu_llm_03",
-   "predicate": "管辖范围",
-   "value_text": "总理牛庄、天津、登州三口。",
+   "subject": "event:ev_tianjin_jiqiju_llm_02",
+   "predicate": "东局职能",
+   "value_text": "东局造枪炮、轮船机器",
    "time": {
-    "era_text": "咸丰十年后",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "总理牛庄、天津、登州三口事务。",
+   "place": "jiagujia",
+   "source": "tianjin_jiqiju_src",
+   "quote": "城东贾家沽设东局，专造枪炮、轮船机器",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
    "scale": "province",
    "note": "",
    "dims": [
-    3
+    2
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "总理牛庄、天津、登州三口事务。",
+   "_source_quote": "城东贾家沽设东局，专造枪炮、轮船机器",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_006",
-   "subject": "place:tianjin",
-   "predicate": "地位",
-   "value_text": "天津为北洋通商总会。",
+   "subject": "event:ev_tianjin_jiqiju_llm_02",
+   "predicate": "西局职能",
+   "value_text": "西局仿造洋式火药、铜帽、洋枪",
    "time": {
-    "era_text": "咸丰十年后",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "自是天津为北洋通商总会。",
+   "place": "haiguangsi",
+   "source": "tianjin_jiqiju_src",
+   "quote": "城西海光寺设西局，仿造洋式火药、铜帽、洋枪",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
    "confidence": 0.9,
    "scale": "province",
    "note": "",
    "dims": [
-    3,
-    6
+    2
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "自是天津为北洋通商总会。",
+   "_source_quote": "城西海光寺设西局，仿造洋式火药、铜帽、洋枪",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_007",
-   "subject": "place:tianjin",
-   "predicate": "商贸繁荣",
-   "value_text": "中外互市殷繁。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "影响",
+   "value_text": "北洋军火渐充",
    "time": {
-    "era_text": "咸丰十年后",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "中外互市殷繁。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "自是北洋军火渐充",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.9,
+   "confidence": 0.8,
    "scale": "province",
    "note": "",
    "dims": [
-    4,
     6
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "中外互市殷繁。",
-   "dim_source": "declared",
+   "_source_quote": "自是北洋军火渐充",
+   "dim_source": "fallback",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_008",
-   "subject": "place:tianjin",
-   "predicate": "洋务兴起",
-   "value_text": "海防洋务诸政自此而兴。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "意义",
+   "value_text": "洋务制造之政兴",
    "time": {
-    "era_text": "咸丰十年后",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "海防、洋务诸政自此而兴。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "洋务制造之政兴焉",
    "quote_status": "paraphrase_unverified",
    "layer": "record",
-   "confidence": 0.9,
+   "confidence": 0.8,
    "scale": "empire",
    "note": "",
    "dims": [
-    5,
-    6
+    5
    ],
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "海防、洋务诸政自此而兴。",
+   "_source_quote": "洋务制造之政兴焉",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
    "id": "TIA_009",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "predicate": "议和人物",
-   "value_text": "奕訢与英法公使议和。",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "经费来源",
+   "value_text": "未明言经费来源",
    "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "奕訢与英法公使议和。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "",
    "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "empire",
+   "layer": "gap",
+   "confidence": 0.0,
+   "scale": "province",
    "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "奕訢与英法公使议和。",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "TIA_010",
-   "subject": "event:ev_tianjin_kaibu_llm_01",
-   "predicate": "联军行动",
-   "value_text": "英法联军陷大沽后入天津。",
-   "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
-   },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "英法联军陷大沽，入天津。",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "theater",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "英法联军陷大沽，入天津。",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "TIA_011",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "predicate": "条约名称",
-   "value_text": "续订《北京条约》。",
-   "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
-   },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "续订《北京条约》。",
-   "quote_status": "paraphrase_unverified",
-   "layer": "record",
-   "confidence": 0.9,
-   "scale": "empire",
-   "note": "",
-   "dims": [
-    6
-   ],
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "_source_quote": "续订《北京条约》。",
-   "dim_source": "fallback",
-   "_party": "后世官修",
-   "_faction": null
-  },
-  {
-   "id": "TIA_012",
-   "subject": "event:ev_tianjin_kaibu_llm_03",
-   "predicate": "官职更迭",
-   "value_text": "三口通商大臣后改北洋大臣。",
-   "time": {
-    "era_text": "同治九年",
-    "start": "1870-01-01",
-    "end": "1870-12-31",
-    "gregorian_year": 1870
-   },
-   "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "三口通商大臣后改北洋大臣。",
-   "quote_status": "paraphrase_unverified",
-   "layer": "scholarship",
-   "confidence": 0.7,
-   "scale": "empire",
-   "note": "据后续制度演变",
    "dims": [
     3
    ],
+   "lead": {
+    "where": "档案或奏折",
+    "skills": [
+     "经济史"
+    ],
+    "accept": "查得拨款数额"
+   },
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "三口通商大臣后改北洋大臣。",
+   "_source_quote": "",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   },
   {
-   "id": "TIA_013",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "predicate": "租界范围",
-   "value_text": "各国租界具体界址未详。",
+   "id": "TIA_010",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "洋匠人数",
+   "value_text": "未载洋匠人数",
    "time": {
-    "era_text": "咸丰十年",
-    "start": "1860-01-01",
-    "end": "1860-12-31",
-    "gregorian_year": 1860
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
    },
    "place": "tianjin",
-   "source": "tianjin_kaibu_src",
-   "quote": "准英、法、美、俄诸国于津设租界。",
+   "source": "tianjin_jiqiju_src",
+   "quote": "",
    "quote_status": "paraphrase_unverified",
    "layer": "gap",
    "confidence": 0.0,
    "scale": "province",
-   "note": "原文未载界址",
+   "note": "",
    "dims": [
-    3
+    2
    ],
    "lead": {
-    "where": "天津地方志",
+    "where": "海关报告",
     "skills": [
-     "历史地理"
+     "技术史"
     ],
-    "accept": "补充租界四至"
+    "accept": "查得雇佣记录"
    },
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "_source_quote": "准英、法、美、俄诸国于津设租界。",
+   "_source_quote": "",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "TIA_011",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "产量",
+   "value_text": "未载具体产量",
+   "time": {
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
+   },
+   "place": "tianjin",
+   "source": "tianjin_jiqiju_src",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "gap",
+   "confidence": 0.0,
+   "scale": "province",
+   "note": "",
+   "dims": [
+    2
+   ],
+   "lead": {
+    "where": "局厂档案",
+    "skills": [
+     "经济史"
+    ],
+    "accept": "查得产量数据"
+   },
+   "_source_idx": 0,
+   "_source_name": "清史稿·洋务运动（天津机器局）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "TIA_012",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "predicate": "评价",
+   "value_text": "时人评价待考",
+   "time": {
+    "era_text": "同治六年",
+    "start": "1867-01-01",
+    "end": "1867-12-31",
+    "gregorian_year": 1867
+   },
+   "place": "tianjin",
+   "source": "tianjin_jiqiju_src",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "scholarship",
+   "confidence": 0.4,
+   "scale": "province",
+   "note": "需查文集",
+   "dims": [
+    5
+   ],
+   "_source_idx": 0,
+   "_source_name": "清史稿·洋务运动（天津机器局）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
@@ -581,67 +558,59 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
  "conflicts": [],
  "crossConflicts": [],
  "gaps": [
-  "TIA_013"
+  "TIA_009",
+  "TIA_010",
+  "TIA_011"
  ],
  "events": [
   {
-   "id": "ev_tianjin_kaibu_llm_01",
-   "subject": "event:ev_tianjin_kaibu_llm_01",
-   "year": 1860,
-   "era": "咸丰十年",
-   "title": "英法联军陷大沽入天津",
-   "kind": "战事",
-   "text": "英法联军攻陷大沽，进占天津。",
+   "id": "ev_tianjin_jiqiju_llm_01",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "year": 1867,
+   "era": "同治六年",
+   "title": "奏设天津机器局",
+   "kind": "建置",
+   "text": "总理衙门奏设，命李鸿章督办",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null
   },
   {
-   "id": "ev_tianjin_kaibu_llm_02",
-   "subject": "event:ev_tianjin_kaibu_llm_02",
-   "year": 1860,
-   "era": "咸丰十年",
-   "title": "续订北京条约增开天津",
-   "kind": "外交",
-   "text": "奕訢与英法公使议和，增开天津为商埠。",
+   "id": "ev_tianjin_jiqiju_llm_02",
+   "subject": "event:ev_tianjin_jiqiju_llm_02",
+   "year": 1867,
+   "era": "同治六年",
+   "title": "分设东西两局",
+   "kind": "建置",
+   "text": "东局造枪炮，西局造火药",
    "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null
-  },
-  {
-   "id": "ev_tianjin_kaibu_llm_03",
-   "subject": "event:ev_tianjin_kaibu_llm_03",
-   "year": 1861,
-   "era": "咸丰十年后",
-   "title": "设三口通商大臣",
-   "kind": "行政",
-   "text": "设三口通商大臣驻天津，管理三口事务。",
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
+   "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null
   }
  ],
- "edges": [
-  {
-   "from": "dagu",
-   "to": "tianjin",
-   "type": "military",
-   "label": "英法联军进犯路线",
-   "_source_idx": 0,
-   "_source_name": "清史稿·地理志（天津开埠）",
-   "_source_party": "后世官修",
-   "_source_credibility": null
-  }
- ],
+ "edges": [],
  "control": [
   {
    "place_id": "tianjin",
    "party": "后世官修",
-   "start": 1860,
-   "end": 1870,
+   "start": 1867,
+   "end": 1900,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jiagujia",
+   "party": "后世官修",
+   "start": 1867,
+   "end": 1900,
+   "timeline": "main"
+  },
+  {
+   "place_id": "haiguangsi",
+   "party": "后世官修",
+   "start": 1867,
+   "end": 1900,
    "timeline": "main"
   }
  ],
@@ -655,8 +624,8 @@ window.SANDBOX_SLICES["tianjin_kaibu_llm"] = {
   }
  ],
  "control_years": [
-  1860,
-  1870
+  1867,
+  1900
  ],
  "vocab": {
   "layers": {

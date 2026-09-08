@@ -1,12 +1,12 @@
 {
  "edges": [
   {
-   "from": "beijing",
+   "from": "dagu",
    "to": "tianjin",
    "type": "military",
-   "label": "英法联军南下",
+   "label": "英法联军进犯路线",
    "_source_idx": 0,
-   "_source_name": "天津开埠史料摘录",
+   "_source_name": "清史稿·地理志（天津开埠）",
    "_source_party": "后世官修",
    "_source_credibility": null
   }

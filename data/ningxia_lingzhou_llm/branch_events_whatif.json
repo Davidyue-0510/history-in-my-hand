@@ -1,0 +1,1701 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "ningxia_lingzhou_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  627,
+  756
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 628,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.447,
+    "cum": -0.173
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 629,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.42 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.421,
+    "cum": -0.259
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 630,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.39 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.394,
+    "cum": -0.346
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 631,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.43（本支 0.37 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.368,
+    "cum": -0.432
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 632,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.52（本支 0.34 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.341,
+    "cum": -0.519
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 633,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.31 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.315,
+    "cum": -0.605
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 634,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.29 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.288,
+    "cum": -0.692
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 635,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.262,
+    "cum": -0.738
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 636,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.235,
+    "cum": -0.765
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 637,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.209,
+    "cum": -0.791
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 638,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.182,
+    "cum": -0.818
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 639,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.156,
+    "cum": -0.844
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 640,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.129,
+    "cum": -0.871
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 641,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.103,
+    "cum": -0.897
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 642,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.076,
+    "cum": -0.924
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 643,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.05,
+    "cum": -0.95
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 644,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.023,
+    "cum": -0.977
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 645,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 646,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 647,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 648,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 649,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 650,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 651,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 652,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 653,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 654,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 655,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 656,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 657,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 658,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 659,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 660,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 661,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 662,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 663,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 664,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 665,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 666,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 667,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 668,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 669,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 670,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 671,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 672,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 673,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 674,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 675,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 676,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 677,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 678,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 679,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 680,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 681,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 682,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 683,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 684,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 685,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 686,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 687,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 688,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 689,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 690,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 691,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 692,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 693,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 694,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 695,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 696,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 697,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 698,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 699,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 700,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 701,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 702,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 703,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 704,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 705,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 706,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 707,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 708,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 709,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 710,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 711,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 712,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 713,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 714,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 715,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 716,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 717,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 718,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 719,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 720,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 721,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 722,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 723,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 724,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 725,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 726,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 727,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 728,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 729,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 730,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 731,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 732,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 733,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 734,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 735,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 736,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 737,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 738,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 739,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 740,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 741,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 742,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 743,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 744,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 745,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 746,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 747,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 748,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 749,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 750,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 751,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 752,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 753,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 754,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 755,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "divergence",
+   "year": 756,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "lingwu"
+  },
+  {
+   "kind": "summary",
+   "year": 756,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "lingwu"
+  }
+ ]
+}

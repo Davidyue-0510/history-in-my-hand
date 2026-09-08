@@ -1,0 +1,453 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "tianjin_jiqiju_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1867,
+  1900
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.46,
+    "cum": -0.16
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.439,
+    "cum": -0.241
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.42 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.419,
+    "cum": -0.321
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1871,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.40 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.399,
+    "cum": -0.401
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.48（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.379,
+    "cum": -0.481
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1873,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.56（本支 0.36 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.359,
+    "cum": -0.561
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1874,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.64（本支 0.34 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.338,
+    "cum": -0.642
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1875,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.32 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.318,
+    "cum": -0.682
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1876,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.298,
+    "cum": -0.702
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.278,
+    "cum": -0.722
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.258,
+    "cum": -0.742
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.237,
+    "cum": -0.763
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.217,
+    "cum": -0.783
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.197,
+    "cum": -0.803
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.177,
+    "cum": -0.823
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.157,
+    "cum": -0.843
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.136,
+    "cum": -0.864
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.116,
+    "cum": -0.884
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.096,
+    "cum": -0.904
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.076,
+    "cum": -0.924
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.055,
+    "cum": -0.945
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.035,
+    "cum": -0.965
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.015,
+    "cum": -0.985
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1895,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1896,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1897,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1898,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1899,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1900,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "summary",
+   "year": 1900,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "tianjin"
+  }
+ ]
+}

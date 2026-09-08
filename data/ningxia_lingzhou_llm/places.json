@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "lingwu",
+      "name": "灵武",
+      "type": "city",
+      "modern": "今宁夏灵武",
+      "note": "肃宗即位地",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "lingzhou",
+      "name": "灵州",
+      "type": "city",
+      "modern": "今宁夏灵武",
+      "note": "朔方节度使治所",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hequ",
+      "name": "河曲",
+      "type": "region",
+      "modern": "今内蒙古河套地区",
+      "note": "铁勒回纥内附之地",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jinglue",
+      "name": "经略军",
+      "type": "fortress",
+      "modern": "今宁夏境内",
+      "note": "朔方所统三军之一",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "fengan",
+      "name": "丰安军",
+      "type": "fortress",
+      "modern": "今宁夏中卫",
+      "note": "朔方所统三军之一",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dingyuan",
+      "name": "定远军",
+      "type": "fortress",
+      "modern": "今宁夏平罗",
+      "note": "朔方所统三军之一",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·地理志（灵州朔方）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

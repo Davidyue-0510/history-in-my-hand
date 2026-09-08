@@ -1,48 +1,60 @@
 {
- "places": [
-  {
-   "id": "tianjin",
-   "name": "天津",
-   "type": "city",
-   "modern": "今中国天津市",
-   "note": "开埠口岸",
-   "_source_idx": 0,
-   "_source_name": "天津开埠史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": 117.2,
-   "lat": 39.13,
-   "geo_note": "平津战役·天津攻坚战"
-  },
-  {
-   "id": "zizhulin",
-   "name": "紫竹林",
-   "type": "region",
-   "modern": "今中国天津市",
-   "note": "租界区域",
-   "_source_idx": 0,
-   "_source_name": "天津开埠史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "beijing",
-   "name": "北京",
-   "type": "city",
-   "modern": "今中国北京市",
-   "note": "条约签订地",
-   "_source_idx": 0,
-   "_source_name": "天津开埠史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": 116.4,
-   "lat": 39.9,
-   "geo_note": "平津战役·傅作义起义"
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "今中国天津市",
+      "note": "通商口岸",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（天津开埠）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    },
+    {
+      "id": "dagu",
+      "name": "大沽",
+      "type": "fortress",
+      "modern": "今中国天津市滨海新区",
+      "note": "海防要地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（天津开埠）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "niuzhuang",
+      "name": "牛庄",
+      "type": "port",
+      "modern": "今中国辽宁省海城市牛庄镇",
+      "note": "三口之一",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（天津开埠）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dengzhou",
+      "name": "登州",
+      "type": "port",
+      "modern": "今中国山东省蓬莱市",
+      "note": "三口之一",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（天津开埠）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
 }

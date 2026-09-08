@@ -180,6 +180,7 @@
 | neimenggu_liao | 12 | 2 | **0.000** | event:ev_neimenggu_liao_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | neimenggu_zhaojun_llm | 12 | 3 | **0.000** | event:ev_neimenggu_zhaojun_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 1 |
 | ningxia | 14 | 3 | **0.417** | event:ningxia_weikun（0.667） | gap 1 / record 12 / scholarship 1 |
+| ningxia_lingzhou_llm | 13 | 2 | **0.000** | event:ev_ningxia_lingzhou_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | ningxia_xiaoguan_llm | 13 | 2 | **0.000** | event:ev_ningxia_xiaoguan_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | ningxia_xixia | 15 | 2 | **0.000** | event:ev_ningxia_xixia_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | ningxia_xixia_llm | 15 | 3 | **0.000** | event:ev_ningxia_xixia_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
@@ -253,7 +254,8 @@
 | tang_xuanwumen_llm | 12 | 2 | **0.000** | event:ev_tang_xuanwumen_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
 | tianjin_jiaoan_llm | 12 | 3 | **0.000** | event:ev_tianjin_jiaoan_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 1 |
-| tianjin_kaibu_llm | 14 | 3 | **0.000** | event:ev_tianjin_kaibu_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
+| tianjin_jiqiju_llm | 12 | 2 | **0.000** | event:ev_tianjin_jiqiju_llm_01（0.000） | gap 3 / inference 1 / record 7 / scholarship 1 |
+| tianjin_kaibu_llm | 13 | 3 | **0.000** | event:ev_tianjin_kaibu_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | tianjin_tianjinwei | 12 | 2 | **0.000** | event:ev_tianjin_tianjinwei_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 31 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / record 23 / scholarship 6 |
@@ -669,6 +671,8 @@
 | event:ev_neimenggu_zhaojun_llm_01 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 1.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_neimenggu_zhaojun_llm_02 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_neimenggu_zhaojun_llm_03 | neimenggu_zhaojun_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_ningxia_lingzhou_llm_01 | ningxia_lingzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_ningxia_lingzhou_llm_02 | ningxia_lingzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xiaoguan_llm_01 | ningxia_xiaoguan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xiaoguan_llm_02 | ningxia_xiaoguan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ningxia_xixia_01 | ningxia_xixia | **0.000** | 0/3 | 0.00 | 0.09 | 11 | 0 / 0 / 0 / 0 |
@@ -820,9 +824,11 @@
 | event:ev_tianjin_jiaoan_llm_01 | tianjin_jiaoan_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_jiaoan_llm_02 | tianjin_jiaoan_llm | **0.000** | 0/3 | 1.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_jiaoan_llm_03 | tianjin_jiaoan_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_tianjin_jiqiju_llm_01 | tianjin_jiqiju_llm | **0.000** | 0/3 | 0.00 | 0.30 | 10 | 0 / 0 / 0 / 0 |
+| event:ev_tianjin_jiqiju_llm_02 | tianjin_jiqiju_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_kaibu_llm_01 | tianjin_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
-| event:ev_tianjin_kaibu_llm_02 | tianjin_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
-| event:ev_tianjin_kaibu_llm_03 | tianjin_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_tianjin_kaibu_llm_02 | tianjin_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_tianjin_kaibu_llm_03 | tianjin_kaibu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_tianjinwei_01 | tianjin_tianjinwei | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_tianjinwei_02 | tianjin_tianjinwei | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_wangmang_reform_llm_01 | wangmang_reform_llm | **0.000** | 0/3 | 0.33 | 0.00 | 27 | 0 / 0 / 0 / 0 |

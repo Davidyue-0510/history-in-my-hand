@@ -1,9 +1,9 @@
 {
-  "scenes_total": 320,
-  "historical": 311,
+  "scenes_total": 322,
+  "historical": 313,
   "fictional": 9,
-  "assertions_total": 4864,
-  "sources_total": 297,
+  "assertions_total": 4888,
+  "sources_total": 299,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -95,6 +95,7 @@
     "neimenggu_genghis_llm",
     "neimenggu_liao",
     "neimenggu_zhaojun_llm",
+    "ningxia_lingzhou_llm",
     "ningxia_xiaoguan_llm",
     "ningxia_xixia",
     "ningxia_xixia_llm",
@@ -148,6 +149,7 @@
     "tang_xuanwumen_llm",
     "three_campaigns",
     "tianjin_jiaoan_llm",
+    "tianjin_jiqiju_llm",
     "tianjin_kaibu_llm",
     "tianjin_tianjinwei",
     "wangmang_reform_llm",
@@ -185,7 +187,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 440,
+  "leads_total": 444,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1971,7 +1973,7 @@
       "id": "tianjin_kaibu_llm",
       "title": "天津开埠",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -2477,6 +2479,20 @@
       "kind": "reform",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "ningxia_lingzhou_llm",
+      "title": "唐·灵州朔方",
+      "kind": "frontier",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_jiqiju_llm",
+      "title": "清·天津机器局",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2799,6 +2815,8 @@
     "tan_ding_llm": "清·摊丁入亩",
     "xianggang_nanbeihang_llm": "清·香港南北行华商",
     "yuan_shangdu_llm": "元·上都（开平）",
-    "zuyong_diao_llm": "唐·租庸调制"
+    "zuyong_diao_llm": "唐·租庸调制",
+    "ningxia_lingzhou_llm": "唐·灵州朔方",
+    "tianjin_jiqiju_llm": "清·天津机器局"
   }
 }

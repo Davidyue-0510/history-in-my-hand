@@ -3639,6 +3639,22 @@ window.SANDBOX_LEADS = {
   },
   {
    "id": "NIN_013",
+   "scene": "ningxia_lingzhou_llm",
+   "subject": "place:lingzhou",
+   "title": "灵州地位后世或变",
+   "missing": "历史地理 / 军事史",
+   "where": "灵州在宋夏时期的地位",
+   "skills": [
+    "历史地理",
+    "军事史"
+   ],
+   "accept": "补充灵州在宋夏时期的战略作用",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "NIN_013",
    "scene": "ningxia_xiaoguan_llm",
    "subject": "place:xiaoguan",
    "title": "萧关具体遗址尚未确证",
@@ -5399,19 +5415,64 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
-   "id": "TIA_014",
+   "id": "TIA_009",
+   "scene": "tianjin_jiqiju_llm",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "title": "未明言经费来源",
+   "missing": "经济史",
+   "where": "档案或奏折",
+   "skills": [
+    "经济史"
+   ],
+   "accept": "查得拨款数额",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "TIA_010",
+   "scene": "tianjin_jiqiju_llm",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "title": "未载洋匠人数",
+   "missing": "技术史",
+   "where": "海关报告",
+   "skills": [
+    "技术史"
+   ],
+   "accept": "查得雇佣记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "TIA_011",
+   "scene": "tianjin_jiqiju_llm",
+   "subject": "event:ev_tianjin_jiqiju_llm_01",
+   "title": "未载具体产量",
+   "missing": "经济史",
+   "where": "局厂档案",
+   "skills": [
+    "经济史"
+   ],
+   "accept": "查得产量数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "TIA_013",
    "scene": "tianjin_kaibu_llm",
-   "subject": "place:tianjin",
-   "title": "紫竹林具体边界未详",
+   "subject": "event:ev_tianjin_kaibu_llm_02",
+   "title": "各国租界具体界址未详。",
    "missing": "历史地理",
-   "where": "紫竹林租界边界",
+   "where": "天津地方志",
    "skills": [
     "历史地理"
    ],
-   "accept": "档案或地图",
+   "accept": "补充租界四至",
    "effort": "—",
    "issue_url": null,
-   "_src_line": 14
+   "_src_line": 13
   },
   {
    "id": "TIA_012",
