@@ -67,8 +67,8 @@
 | guo_shoujing | 9 | 1 | **0.000** | event:shoushi_banxing（0.000） | scholarship 9 |
 | hainan_zhuyai_llm | 15 | 2 | **0.000** | event:ev_hainan_zhuyai_llm_01（0.000） | gap 2 / inference 1 / record 11 / scholarship 1 |
 | haizhou | 7 | 3 | **0.472** | event:haizhou_fall（0.750） | gap 2 / record 4 / scholarship 1 |
-| han_banchao_llm | 15 | 4 | **0.000** | event:ev_han_banchao_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
-| han_weihuo_llm | 14 | 3 | **0.000** | event:ev_han_weihuo_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
+| han_banchao_llm | 18 | 4 | **0.000** | event:ev_han_banchao_llm_01（0.000） | gap 1 / inference 4 / record 12 / scholarship 1 |
+| han_weihuo_llm | 17 | 3 | **0.000** | event:ev_han_weihuo_01（0.000） | gap 2 / inference 4 / record 10 / scholarship 1 |
 | han_wudi_ruxue | 13 | 0 | **0.000** | —（0.000） | gap 1 / inference 5 / record 2 / scholarship 5 |
 | heshangyuan | 21 | 3 | **0.000** | event:hs_jin（0.000） | gap 3 / inference 3 / record 11 / scholarship 4 |
 | hexi_sijun_llm | 16 | 4 | **0.000** | event:ev_hexi_sijun_llm_01（0.000） | gap 2 / inference 1 / record 12 / scholarship 1 |
@@ -108,7 +108,7 @@
 | lvlin | 21 | 2 | **0.000** | event:ll_17（0.000） | gap 4 / inference 3 / record 11 / scholarship 3 |
 | maling | 18 | 3 | **0.000** | event:ml_jz（0.000） | gap 1 / record 13 / scholarship 4 |
 | ming_fall | 14 | 3 | **0.000** | event:mf_1627（0.000） | gap 1 / inference 4 / record 6 / scholarship 3 |
-| ming_tumu_llm | 14 | 3 | **0.000** | event:ev_ming_tumu_02（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
+| ming_tumu_llm | 18 | 3 | **0.000** | event:ev_ming_tumu_02（0.000） | gap 1 / inference 5 / record 10 / scholarship 2 |
 | ming_zhenghe_llm | 13 | 2 | **0.000** | event:ev_ming_zhenghe_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 2 |
 | mingmo_dangzheng | 26 | 8 | **0.302** | event:dangzheng_donglin（0.333） | gap 2 / record 22 / scholarship 2 |
 | mingmo_jihuang | 12 | 6 | **0.000** | event:mj_1628（0.000） | gap 1 / scholarship 11 |
@@ -127,7 +127,7 @@
 | qin_unify | 9 | 6 | **0.000** | event:qn_221（0.000） | record 3 / scholarship 6 |
 | qing_han | 16 | 3 | **0.000** | event:qh_1644（0.000） | gap 1 / inference 4 / record 8 / scholarship 3 |
 | qing_yakesa_llm | 14 | 3 | **0.000** | event:ev_qing_yakesa_llm_01（0.000） | gap 3 / inference 1 / record 9 / scholarship 1 |
-| qing_zhungaer_llm | 14 | 5 | **0.000** | event:ev_qing_zhungaer_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| qing_zhungaer_llm | 18 | 5 | **0.000** | event:ev_qing_zhungaer_01（0.000） | gap 1 / inference 5 / record 11 / scholarship 1 |
 | qinghai_tuyuhun_llm | 20 | 3 | **0.000** | event:ev_qinghai_tuyuhun_llm_01（0.000） | gap 4 / inference 1 / record 13 / scholarship 2 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
 | 萨尔浒 | 125 | 5 | **0.556** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 98 / scholarship 14 |
@@ -137,7 +137,7 @@
 | shenyang | 62 | 6 | **0.387** | event:shenyang_relief（0.825） | gap 4 / inference 1 / record 55 / scholarship 2 |
 | shu_han_found_llm | 13 | 3 | **0.000** | event:ev_shu_han_found_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | song_chan_yuan | 16 | 5 | **0.000** | event:chanyuan_meng（0.000） | gap 1 / record 14 / scholarship 1 |
-| song_chanchuan_llm | 14 | 3 | **0.000** | event:ev_song_chanchuan_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
+| song_chanchuan_llm | 17 | 3 | **0.000** | event:ev_song_chanchuan_01（0.000） | gap 2 / inference 4 / record 10 / scholarship 1 |
 | song_dangzheng | 7 | 3 | **0.000** | event:ls_1086（0.000） | gap 1 / inference 1 / record 2 / scholarship 3 |
 | song_he_jue | 14 | 3 | **0.000** | event:hj_1019（0.000） | gap 1 / inference 3 / record 7 / scholarship 3 |
 | song_wanganshi_llm | 12 | 5 | **0.000** | event:ev_song_wanganshi_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
@@ -159,7 +159,7 @@
 | tang_huai_xi | 17 | 3 | **0.000** | event:huai_xi_jufa（0.000） | gap 1 / inference 1 / record 14 / scholarship 1 |
 | tang_huangchao_llm | 17 | 5 | **0.000** | event:ev_tang_huangchao_01（0.000） | gap 1 / inference 2 / record 13 / scholarship 1 |
 | tang_juntian | 6 | 0 | **0.000** | —（0.000） | gap 1 / inference 1 / record 2 / scholarship 2 |
-| tang_liangshuifa | 10 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 9 |
+| tang_liangshuifa | 13 | 0 | **0.000** | —（0.000） | gap 1 / inference 3 / scholarship 9 |
 | tang_xuanwumen_llm | 12 | 2 | **0.000** | event:ev_tang_xuanwumen_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | three_campaigns | 54 | 3 | **0.000** | event:ev_three_campaigns_01（0.000） | gap 1 / inference 1 / record 51 / scholarship 1 |
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
@@ -192,7 +192,7 @@
 | yellow_sea_1894 | 15 | 1 | **0.265** | event:ev_yellow_sea_1894_02（0.265） | gap 1 / record 13 / scholarship 1 |
 | yiling | 14 | 3 | **0.000** | event:yl_jz（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
-| yuan_xingsheng_llm | 10 | 2 | **0.000** | event:ev_yuan_xingsheng_llm_01（0.000） | gap 1 / inference 1 / record 7 / scholarship 1 |
+| yuan_xingsheng_llm | 14 | 2 | **0.000** | event:ev_yuan_xingsheng_llm_01（0.000） | gap 1 / inference 5 / record 7 / scholarship 1 |
 | yuelu_academy_llm | 14 | 3 | **0.000** | event:ev_yuelu_academy_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | zhangheng | 14 | 2 | **0.000** | event:zh_132（0.000） | gap 1 / record 9 / scholarship 4 |
 | zhangjuzheng | 18 | 2 | **0.000** | event:zj_1573（0.000） | gap 1 / inference 4 / record 11 / scholarship 2 |

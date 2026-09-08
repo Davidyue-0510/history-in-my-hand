@@ -17,7 +17,11 @@ window.SANDBOX_SLICES["qing_zhungaer_llm"] = {
   "lead": "历时近七十年的准噶尔之役，将天山南北正式纳入清帝国直接治理。",
   "parties_note": "叙事方=清廷/准噶尔部；来源=后世官修（基于《清史稿》现代概述）。",
   "dims": [
+   1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -702,6 +706,126 @@ window.SANDBOX_SLICES["qing_zhungaer_llm"] = {
    "_source_credibility": null,
    "_source_quote": "为清军所却",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_zhungaer_llm_001",
+   "subject": "supplement:qing_zhungaer_llm_dim1",
+   "predicate": "地理形势",
+   "value_text": "准噶尔部据伊犁河盆与天山北麓牧场，控漠西蒙古草原",
+   "time": {
+    "era_text": "康熙至乾隆",
+    "start": "1690-01-01",
+    "gregorian_year": 1690
+   },
+   "place": "yili",
+   "source": "qing_zhungaer_src_llm",
+   "quote": "准噶尔部据伊犁河盆与天山北麓牧场，控漠西蒙古草原",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "乌兰布通之战为清军所却",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_zhungaer_llm_002",
+   "subject": "supplement:qing_zhungaer_llm_dim2",
+   "predicate": "军备技术",
+   "value_text": "准噶尔部自沙俄购得火绳枪与火炮，骑兵马甲兼具",
+   "time": {
+    "era_text": "康熙至乾隆",
+    "start": "1690-01-01",
+    "gregorian_year": 1690
+   },
+   "place": "moxi",
+   "source": "qing_zhungaer_src_llm",
+   "quote": "准噶尔部自沙俄购得火绳枪与火炮，骑兵马甲兼具",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "乌兰布通之战为清军所却",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_zhungaer_llm_003",
+   "subject": "supplement:qing_zhungaer_llm_dim4",
+   "predicate": "社会组织",
+   "value_text": "准噶尔以绰罗斯氏为核心，统辖杜尔伯特、和硕特等厄鲁特四部",
+   "time": {
+    "era_text": "康熙至乾隆",
+    "start": "1690-01-01",
+    "gregorian_year": 1690
+   },
+   "place": "tianshan",
+   "source": "qing_zhungaer_src_llm",
+   "quote": "准噶尔以绰罗斯氏为核心，统辖杜尔伯特、和硕特等厄鲁特四部",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "乌兰布通之战为清军所却",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_qing_zhungaer_llm_004",
+   "subject": "supplement:qing_zhungaer_llm_dim5",
+   "predicate": "宗教与思潮",
+   "value_text": "准噶尔诸部奉格鲁派黄教，以宗教纽带维系草原联盟",
+   "time": {
+    "era_text": "康熙至乾隆",
+    "start": "1690-01-01",
+    "gregorian_year": 1690
+   },
+   "place": "wulanbutong",
+   "source": "qing_zhungaer_src_llm",
+   "quote": "准噶尔诸部奉格鲁派黄教，以宗教纽带维系草原联盟",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "清·平定准噶尔（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "乌兰布通之战为清军所却",
    "_party": "后世官修",
    "_faction": null
   }

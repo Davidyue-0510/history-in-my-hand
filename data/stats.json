@@ -2,7 +2,7 @@
   "scenes_total": 205,
   "historical": 196,
   "fictional": 9,
-  "assertions_total": 3189,
+  "assertions_total": 3213,
   "sources_total": 183,
   "factions_total": 9,
   "vocab_packs": [
@@ -1284,7 +1284,7 @@
       "id": "han_banchao_llm",
       "title": "班超经营西域（LLM 抽取·人工校订）",
       "kind": "frontier",
-      "assertions": 15,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -1298,7 +1298,7 @@
       "id": "yuan_xingsheng_llm",
       "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
       "kind": "reform",
-      "assertions": 10,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -1333,21 +1333,21 @@
       "id": "song_chanchuan_llm",
       "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
       "id": "ming_tumu_llm",
       "title": "明·土木堡之变（LLM 抽取·人工校订）",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 18,
       "factions": {}
     },
     {
       "id": "qing_zhungaer_llm",
       "title": "清·平定准噶尔（LLM 抽取·人工校订）",
       "kind": "frontier",
-      "assertions": 14,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -1361,7 +1361,7 @@
       "id": "han_weihuo_llm",
       "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
       "kind": "frontier",
-      "assertions": 14,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -1396,7 +1396,7 @@
       "id": "tang_liangshuifa",
       "title": "唐·两税法",
       "kind": "reform",
-      "assertions": 10,
+      "assertions": 13,
       "factions": {}
     },
     {

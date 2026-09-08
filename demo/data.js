@@ -24195,7 +24195,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "han",
@@ -24204,12 +24207,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 6,
-    "assert": 15,
+    "assert": 18,
     "conflict": 0,
     "gap": 1,
     "record": 12,
     "scholarship": 1,
-    "inference": 1
+    "inference": 4
    }
   },
   "song_yancheng_llm": {
@@ -24259,7 +24262,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "yuan",
@@ -24268,12 +24275,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 11,
     "person": 1,
-    "assert": 10,
+    "assert": 14,
     "conflict": 0,
     "gap": 1,
     "record": 7,
     "scholarship": 1,
-    "inference": 1
+    "inference": 5
    }
   },
   "ming_zhenghe_llm": {
@@ -24422,7 +24429,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "song",
@@ -24431,12 +24441,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 5,
-    "assert": 14,
+    "assert": 17,
     "conflict": 0,
     "gap": 2,
     "record": 10,
     "scholarship": 1,
-    "inference": 1
+    "inference": 4
    }
   },
   "ming_tumu_llm": {
@@ -24453,7 +24463,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "ming",
@@ -24462,12 +24476,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 5,
-    "assert": 14,
+    "assert": 18,
     "conflict": 1,
     "gap": 1,
     "record": 10,
     "scholarship": 2,
-    "inference": 1
+    "inference": 5
    }
   },
   "qing_zhungaer_llm": {
@@ -24484,7 +24498,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "qing",
@@ -24493,12 +24511,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 6,
-    "assert": 14,
+    "assert": 18,
     "conflict": 3,
     "gap": 1,
     "record": 11,
     "scholarship": 1,
-    "inference": 1
+    "inference": 5
    }
   },
   "warring_states_shangyang_llm": {
@@ -24549,7 +24567,10 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
+    4,
+    5,
     6
    ],
    "epoch": "han",
@@ -24558,12 +24579,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 13,
     "person": 3,
-    "assert": 14,
+    "assert": 17,
     "conflict": 1,
     "gap": 2,
     "record": 10,
     "scholarship": 1,
-    "inference": 1
+    "inference": 4
    }
   },
   "tang_xuanwumen_llm": {
@@ -24711,8 +24732,11 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     3,
     4,
+    5,
     6
    ],
    "epoch": "sui_tang",
@@ -24721,12 +24745,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 0,
-    "assert": 10,
+    "assert": 13,
     "conflict": 0,
     "gap": 1,
     "record": 0,
     "scholarship": 9,
-    "inference": 0
+    "inference": 3
    }
   },
   "wei_xiaowen": {

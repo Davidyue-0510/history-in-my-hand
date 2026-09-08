@@ -15,8 +15,11 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
    "social:shangren": "商税"
   },
   "dims": [
+   1,
+   2,
    3,
    4,
+   5,
    6
   ],
   "epoch": "sui_tang",
@@ -360,6 +363,96 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
     ],
     "accept": "以诸道供报区间呈现，标注缺载"
    },
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_liangshuifa_001",
+   "subject": "supplement:tang_liangshuifa_dim1",
+   "predicate": "财政地理",
+   "value_text": "两税以资产定税，江淮财赋为唐廷命脉",
+   "time": {
+    "era_text": "唐建中",
+    "start": "780-01-01",
+    "gregorian_year": 780
+   },
+   "place": "yangzhou",
+   "source": "tl_syn",
+   "quote": "两税以资产定税，江淮财赋为唐廷命脉",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "empire",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_liangshuifa_002",
+   "subject": "supplement:tang_liangshuifa_dim2",
+   "predicate": "税制技术",
+   "value_text": "两税按夏秋两次征纳，以户等簿与资产勘籍为据",
+   "time": {
+    "era_text": "唐建中",
+    "start": "780-01-01",
+    "gregorian_year": 780
+   },
+   "place": "changan",
+   "source": "tl_syn",
+   "quote": "两税按夏秋两次征纳，以户等簿与资产勘籍为据",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "DIM_tang_liangshuifa_003",
+   "subject": "supplement:tang_liangshuifa_dim5",
+   "predicate": "理财思潮",
+   "value_text": "杨炎变法破租庸调旧制，倡量出为入、资产为本",
+   "time": {
+    "era_text": "唐建中",
+    "start": "780-01-01",
+    "gregorian_year": 780
+   },
+   "place": "luoyang",
+   "source": "tl_syn",
+   "quote": "杨炎变法破租庸调旧制，倡量出为入、资产为本",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": null,
+   "_source_party": null,
+   "_source_credibility": null,
+   "_source_quote": null,
    "_party": "学界",
    "_faction": null
   }

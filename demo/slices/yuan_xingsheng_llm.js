@@ -17,7 +17,11 @@ window.SANDBOX_SLICES["yuan_xingsheng_llm"] = {
   "lead": "元设行中书省（行省制）（至元年间起）：元世祖忽必烈设行中书省分掌地方军政，初为临时派出机构，后固定为最高地方行政区；全国设中书省（腹里）及陕甘、辽阳、河南、江浙、江西、湖广、四川、云南、甘肃、岭北等行省，权大居中书省之半，军民通摄，确立省制雏形，明清沿之。本切片为『真实 LLM 抽取（DeepSeek-chat）+ 人工校订落库』：LLM 依《元史·百官志》概述抽取断言，curate 报 BLOCK 0，人工补控制层（元方 control 各行省）与战略四维（inference）。引文全 paraphrase_unverified；来源《元史》为明宋濂等官修，归『后世官修』；控制层『元方』。",
   "parties_note": "《元史·百官志》为明宋濂等官修，归『后世官修』；行省为元中央建制，控制层『元方』。系统不裁决，只并列。",
   "dims": [
+   1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -598,6 +602,126 @@ window.SANDBOX_SLICES["yuan_xingsheng_llm"] = {
    "_source_credibility": null,
    "_source_quote": "原文未载",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuan_xingsheng_llm_001",
+   "subject": "supplement:yuan_xingsheng_llm_dim1",
+   "predicate": "地理格局",
+   "value_text": "中书省直隶腹里，十行中书省分镇秦蜀、湖广、江浙等要区",
+   "time": {
+    "era_text": "元至元",
+    "start": "1276-01-01",
+    "gregorian_year": 1276
+   },
+   "place": "henan",
+   "source": "yuan_xingsheng_src_llm",
+   "quote": "中书省直隶腹里，十行中书省分镇秦蜀、湖广、江浙等要区",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "empire",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "元世祖至元年间设行中书省",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuan_xingsheng_llm_002",
+   "subject": "supplement:yuan_xingsheng_llm_dim2",
+   "predicate": "交通技术",
+   "value_text": "行省间以驿站（站赤）贯通，文书传递赖驿传网络",
+   "time": {
+    "era_text": "元至元",
+    "start": "1276-01-01",
+    "gregorian_year": 1276
+   },
+   "place": "liaoyang",
+   "source": "yuan_xingsheng_src_llm",
+   "quote": "行省间以驿站（站赤）贯通，文书传递赖驿传网络",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "元世祖至元年间设行中书省",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuan_xingsheng_llm_003",
+   "subject": "supplement:yuan_xingsheng_llm_dim4",
+   "predicate": "社会结构",
+   "value_text": "行省之下行军户、民户、匠户诸色户计，世袭固籍",
+   "time": {
+    "era_text": "元至元",
+    "start": "1276-01-01",
+    "gregorian_year": 1276
+   },
+   "place": "jiangzhe",
+   "source": "yuan_xingsheng_src_llm",
+   "quote": "行省之下行军户、民户、匠户诸色户计，世袭固籍",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "元世祖至元年间设行中书省",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_yuan_xingsheng_llm_004",
+   "subject": "supplement:yuan_xingsheng_llm_dim5",
+   "predicate": "统治思潮",
+   "value_text": "元廷兼容汉法、蒙古旧制与畏兀儿文字，行多元一体之政",
+   "time": {
+    "era_text": "元至元",
+    "start": "1276-01-01",
+    "gregorian_year": 1276
+   },
+   "place": "huguang",
+   "source": "yuan_xingsheng_src_llm",
+   "quote": "元廷兼容汉法、蒙古旧制与畏兀儿文字，行多元一体之政",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "元史·百官志（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "元世祖至元年间设行中书省",
    "_party": "后世官修",
    "_faction": null
   }

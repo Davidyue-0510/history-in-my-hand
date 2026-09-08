@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["song_chanchuan_llm"] = {
   "parties_note": "叙事方=宋廷/辽廷；来源=后世官修（基于《宋史》《续资治通鉴》现代概述）。",
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -644,6 +647,96 @@ window.SANDBOX_SLICES["song_chanchuan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "宋辽百年和平的条约基线",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_song_chanchuan_llm_001",
+   "subject": "supplement:song_chanchuan_llm_dim2",
+   "predicate": "军备技术",
+   "value_text": "宋军于澶州以床子弩射杀辽先锋萧挞览",
+   "time": {
+    "era_text": "宋景德",
+    "start": "1004-01-01",
+    "gregorian_year": 1004
+   },
+   "place": "chanzhou",
+   "source": "song_chanchuan_src_llm",
+   "quote": "宋军于澶州以床子弩射杀辽先锋萧挞览",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "theater",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "辽萧太后与圣宗亲率大军南下",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_song_chanchuan_llm_002",
+   "subject": "supplement:song_chanchuan_llm_dim4",
+   "predicate": "朝议分歧",
+   "value_text": "宰相寇准力促真宗渡河亲征，主和者议迁都金陵",
+   "time": {
+    "era_text": "宋景德",
+    "start": "1004-01-01",
+    "gregorian_year": 1004
+   },
+   "place": "kaifeng",
+   "source": "song_chanchuan_src_llm",
+   "quote": "宰相寇准力促真宗渡河亲征，主和者议迁都金陵",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "辽萧太后与圣宗亲率大军南下",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_song_chanchuan_llm_003",
+   "subject": "supplement:song_chanchuan_llm_dim5",
+   "predicate": "时代思潮",
+   "value_text": "宋廷重文抑武，澶渊之盟以岁币换和平，开冗费之渐",
+   "time": {
+    "era_text": "宋景德",
+    "start": "1004-01-01",
+    "gregorian_year": 1004
+   },
+   "place": "kaifeng",
+   "source": "song_chanchuan_src_llm",
+   "quote": "宋廷重文抑武，澶渊之盟以岁币换和平，开冗费之渐",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "宋·澶渊之盟（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "辽萧太后与圣宗亲率大军南下",
    "_party": "后世官修",
    "_faction": null
   }

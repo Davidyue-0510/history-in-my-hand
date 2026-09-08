@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["han_banchao_llm"] = {
   "parties_note": "《后汉书·班超传》为南朝宋范晔官修，去汉已远，叙事整合前史，归『后世官修』；班超以汉廷使节身份经营，控制层『汉方』即东汉。系统不裁决，只并列。",
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -703,6 +706,96 @@ window.SANDBOX_SLICES["han_banchao_llm"] = {
    "_source_credibility": null,
    "_source_quote": "甘英具体行程路线记载不详",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_banchao_llm_001",
+   "subject": "supplement:han_banchao_llm_dim2",
+   "predicate": "地理技术",
+   "value_text": "班超使团记西域道里风土，疏勒为南北道枢纽",
+   "time": {
+    "era_text": "东汉永平",
+    "start": "73-01-01",
+    "gregorian_year": 73
+   },
+   "place": "shule",
+   "source": "han_banchao_src_llm",
+   "quote": "班超使团记西域道里风土，疏勒为南北道枢纽",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "率三十六骑出使西域",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_banchao_llm_002",
+   "subject": "supplement:han_banchao_llm_dim4",
+   "predicate": "城邦社会",
+   "value_text": "西域绿洲城邦各拥兵民，役属匈奴或汉廷，班超以夷制夷",
+   "time": {
+    "era_text": "东汉永平",
+    "start": "73-01-01",
+    "gregorian_year": 73
+   },
+   "place": "yutian",
+   "source": "han_banchao_src_llm",
+   "quote": "西域绿洲城邦各拥兵民，役属匈奴或汉廷，班超以夷制夷",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "率三十六骑出使西域",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_banchao_llm_003",
+   "subject": "supplement:han_banchao_llm_dim5",
+   "predicate": "时代思潮",
+   "value_text": "东汉重通西域以断匈奴右臂，班超奉诏经营，扬汉威于远域",
+   "time": {
+    "era_text": "东汉永平",
+    "start": "73-01-01",
+    "gregorian_year": 73
+   },
+   "place": "shanshan",
+   "source": "han_banchao_src_llm",
+   "quote": "东汉重通西域以断匈奴右臂，班超奉诏经营，扬汉威于远域",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "后汉书·班超传（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "率三十六骑出使西域",
    "_party": "后世官修",
    "_faction": null
   }

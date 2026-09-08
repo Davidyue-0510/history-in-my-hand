@@ -17,7 +17,11 @@ window.SANDBOX_SLICES["ming_tumu_llm"] = {
   "lead": "土木堡之变使明军精锐丧尽、御驾被俘，北京保卫战成为国运转折点。",
   "parties_note": "叙事方=明廷/瓦剌；来源=后世官修（基于《明史》现代概述）。",
   "dims": [
+   1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -635,6 +639,126 @@ window.SANDBOX_SLICES["ming_tumu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "明军溃败",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_ming_tumu_llm_001",
+   "subject": "supplement:ming_tumu_llm_dim1",
+   "predicate": "地理形势",
+   "value_text": "土木堡地处居庸关北出口、浑河河谷开阔地，无城垣可凭",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-08-14",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "ming_tumu_src_llm",
+   "quote": "土木堡地处居庸关北出口、浑河河谷开阔地，无城垣可凭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "theater",
+   "note": "[auto] 补维 地理",
+   "dims": [
+    1
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "明军溃败，英宗被俘",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_ming_tumu_llm_002",
+   "subject": "supplement:ming_tumu_llm_dim2",
+   "predicate": "军备技术",
+   "value_text": "明军随挟神机营火铳火炮，然未及列阵即遭瓦剌骑兵冲散",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-01-01",
+    "gregorian_year": 1449
+   },
+   "place": "juyongguan",
+   "source": "ming_tumu_src_llm",
+   "quote": "明军随挟神机营火铳火炮，然未及列阵即遭瓦剌骑兵冲散",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "明军溃败，英宗被俘",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_ming_tumu_llm_003",
+   "subject": "supplement:ming_tumu_llm_dim4",
+   "predicate": "决策背景",
+   "value_text": "司礼监王振挟英宗亲征，征调民夫数十万随军，沿途死亡枕藉",
+   "time": {
+    "era_text": "正统十四年",
+    "start": "1449-01-01",
+    "gregorian_year": 1449
+   },
+   "place": "datong",
+   "source": "ming_tumu_src_llm",
+   "quote": "司礼监王振挟英宗亲征，征调民夫数十万随军，沿途死亡枕藉",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "明军溃败，英宗被俘",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_ming_tumu_llm_004",
+   "subject": "supplement:ming_tumu_llm_dim5",
+   "predicate": "时代思潮",
+   "value_text": "正统朝科举独尊程朱，武备渐弛，朝野重文轻武",
+   "time": {
+    "era_text": "正统朝",
+    "start": "1449-01-01",
+    "gregorian_year": 1449
+   },
+   "place": "tumu",
+   "source": "ming_tumu_src_llm",
+   "quote": "正统朝科举独尊程朱，武备渐弛，朝野重文轻武",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "empire",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "明·土木堡之变（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "明军溃败，英宗被俘",
    "_party": "后世官修",
    "_faction": null
   }

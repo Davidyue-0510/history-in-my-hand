@@ -18,7 +18,10 @@ window.SANDBOX_SLICES["han_weihuo_llm"] = {
   "parties_note": "叙事方=汉廷；来源=后世官修（基于《史记·卫将军骠骑列传》现代概述）。",
   "dims": [
    1,
+   2,
    3,
+   4,
+   5,
    6
   ],
   "subject_names": {
@@ -783,6 +786,96 @@ window.SANDBOX_SLICES["han_weihuo_llm"] = {
    "_source_credibility": null,
    "_source_quote": "霍去病两出陇西",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_weihuo_llm_001",
+   "subject": "supplement:han_weihuo_llm_dim2",
+   "predicate": "军备技术",
+   "value_text": "汉军以骑制骑，霍去病率轻骑迂回袭匈奴王庭",
+   "time": {
+    "era_text": "汉武帝元狩",
+    "start": "121-01-01",
+    "gregorian_year": 121
+   },
+   "place": "qilian",
+   "source": "han_weihuo_src_llm",
+   "quote": "汉军以骑制骑，霍去病率轻骑迂回袭匈奴王庭",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.55,
+   "scale": "region",
+   "note": "[auto] 补维 技术",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "前127年卫青出云中，收复河南地，置朔方郡",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_weihuo_llm_002",
+   "subject": "supplement:han_weihuo_llm_dim4",
+   "predicate": "移民实边",
+   "value_text": "汉于河南地、河西置县徙民，戍卒屯田固边",
+   "time": {
+    "era_text": "汉武帝元朔",
+    "start": "127-01-01",
+    "gregorian_year": 127
+   },
+   "place": "shuofang",
+   "source": "han_weihuo_src_llm",
+   "quote": "汉于河南地、河西置县徙民，戍卒屯田固边",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 社会",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "前127年卫青出云中，收复河南地，置朔方郡",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "DIM_han_weihuo_llm_003",
+   "subject": "supplement:han_weihuo_llm_dim5",
+   "predicate": "时代思潮",
+   "value_text": "汉武帝弃和亲而主反击，尊儒拓边，振奋国力",
+   "time": {
+    "era_text": "汉武帝元朔",
+    "start": "127-01-01",
+    "gregorian_year": 127
+   },
+   "place": "yunzhong",
+   "source": "han_weihuo_src_llm",
+   "quote": "汉武帝弃和亲而主反击，尊儒拓边，振奋国力",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.5,
+   "scale": "region",
+   "note": "[auto] 补维 思想",
+   "dims": [
+    5
+   ],
+   "dim_source": "declared",
+   "_source_idx": 0,
+   "_source_name": "汉·卫青霍去病北伐匈奴（现代概述）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "_source_quote": "前127年卫青出云中，收复河南地，置朔方郡",
    "_party": "后世官修",
    "_faction": null
   }
