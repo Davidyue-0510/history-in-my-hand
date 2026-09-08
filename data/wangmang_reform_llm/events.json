@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_wangmang_reform_llm_01",
+   "subject": "event:ev_wangmang_reform_llm_01",
+   "year": 9,
+   "era": "始建国元年",
+   "title": "颁王田制",
+   "kind": "行政",
+   "text": "天下田曰王田，禁买卖",
+   "_source_idx": 0,
+   "_source_name": "《汉书·王莽传》与王莽改制",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_wangmang_reform_llm_02",
+   "subject": "event:ev_wangmang_reform_llm_02",
+   "year": 10,
+   "era": "始建国二年",
+   "title": "行五均六筦",
+   "kind": "行政",
+   "text": "设五均司市，官营六筦",
+   "_source_idx": 0,
+   "_source_name": "《汉书·王莽传》与王莽改制",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_wangmang_reform_llm_03",
+   "subject": "event:ev_wangmang_reform_llm_03",
+   "year": 23,
+   "era": "地皇四年",
+   "title": "新朝灭亡",
+   "kind": "战事",
+   "text": "绿林赤眉起，新朝亡",
+   "_source_idx": 0,
+   "_source_name": "《汉书·王莽传》与王莽改制",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

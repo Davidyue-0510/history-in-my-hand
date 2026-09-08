@@ -1,0 +1,74 @@
+{
+ "persons": [
+  {
+   "id": "WUX__p01",
+   "name": "光绪帝",
+   "role": "清帝",
+   "note": "颁布明定国是诏，推行新政",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p02",
+   "name": "慈禧太后",
+   "role": "太后",
+   "note": "发动政变，训政幽帝",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p03",
+   "name": "康有为",
+   "role": "维新派领袖",
+   "note": "倡维新，后走海外",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p04",
+   "name": "梁启超",
+   "role": "维新派",
+   "note": "协助变法，后流亡",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p05",
+   "name": "谭嗣同",
+   "role": "军机章京",
+   "note": "戊戌六君子之一，被杀",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p06",
+   "name": "荣禄",
+   "role": "守旧大臣",
+   "note": "反对新政",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "WUX__p07",
+   "name": "刚毅",
+   "role": "守旧大臣",
+   "note": "反对新政",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

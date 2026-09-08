@@ -4009,6 +4009,22 @@
    "_src_line": 13
   },
   {
+   "id": "QIN_014",
+   "scene": "qingli_reform_llm",
+   "subject": "event:ev_qingli_reform_llm_03",
+   "title": "史料未明，待考",
+   "missing": "宋代政治史 / 制度史",
+   "where": "宋史·范仲淹传及续资治通鉴长编",
+   "skills": [
+    "宋代政治史",
+    "制度史"
+   ],
+   "accept": "需考订吕夷简反对的具体政治操作",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SG017",
    "scene": "san_guo",
    "subject": "person:liu_shan",
@@ -5352,6 +5368,21 @@
    "_src_line": 13
   },
   {
+   "id": "WUX_013",
+   "scene": "wuxu_reform_llm",
+   "subject": "event:ev_wuxu_reform_llm_03",
+   "title": "具体日期记载不一",
+   "missing": "历史考据",
+   "where": "清宫档案",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "政变确切日期",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "XIA_014",
    "scene": "xianggang_1941_llm",
    "subject": "event:ev_xianggang_1941_llm_03",
@@ -5885,6 +5916,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "YAN_012",
+   "scene": "yangwu_llm",
+   "subject": "event:ev_yangwu_llm_04",
+   "title": "朝廷腐败军费挪用",
+   "missing": "历史考据",
+   "where": "清宫档案",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证军费流向",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SX010_M5",

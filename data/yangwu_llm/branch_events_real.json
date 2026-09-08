@@ -1,0 +1,89 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "yangwu_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1861,
+  1894
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1866,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.71 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.708,
+    "cum": -0.152
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1867,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.74 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.742,
+    "cum": -0.178
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.78 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.777,
+    "cum": -0.203
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.811,
+    "cum": -0.189
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.846,
+    "cum": -0.154
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "summary",
+   "year": 1894,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "beijing"
+  }
+ ]
+}

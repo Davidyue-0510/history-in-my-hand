@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "anjing",
+   "to": "shanghai",
+   "type": "military",
+   "label": "军械所技术转移",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "fuzhou",
+   "to": "shanghai",
+   "type": "military",
+   "label": "船政交流",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "tianjin",
+   "to": "beijing",
+   "type": "military",
+   "label": "机器局拱卫京畿",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

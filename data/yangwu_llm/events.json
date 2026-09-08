@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_yangwu_llm_01",
+   "subject": "event:ev_yangwu_llm_01",
+   "year": 1861,
+   "era": "咸丰十一年",
+   "title": "设总理各国事务衙门",
+   "kind": "行政",
+   "text": "清廷设总理衙门通洋务",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yangwu_llm_02",
+   "subject": "event:ev_yangwu_llm_02",
+   "year": 1865,
+   "era": "同治四年",
+   "title": "江南制造总局成立",
+   "kind": "建置",
+   "text": "李鸿章在上海设机器局",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yangwu_llm_03",
+   "subject": "event:ev_yangwu_llm_03",
+   "year": 1872,
+   "era": "同治十一年",
+   "title": "轮船招商局开办",
+   "kind": "建置",
+   "text": "官督商办航运企业",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yangwu_llm_04",
+   "subject": "event:ev_yangwu_llm_04",
+   "year": 1894,
+   "era": "光绪二十年",
+   "title": "甲午战争爆发",
+   "kind": "战事",
+   "text": "北洋水师覆没，洋务受挫",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -501,7 +501,11 @@
   "fujian_tulou",
   "jiangxi_bailudong",
   "yunnan_dianmian",
-  "zhejiang_longquan"
+  "zhejiang_longquan",
+  "qingli_reform_llm",
+  "wuxu_reform_llm",
+  "yangwu_llm",
+  "wangmang_reform_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -24374,6 +24378,304 @@
     1,
     2,
     3,
+    5,
+    6
+   ]
+  },
+  "qingli_reform_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "henan",
+   "title": "宋·庆历新政（范仲淹十条）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "kaifeng",
+   "dossier_event": "event:ev_qingli_reform_llm_01",
+   "vocab_pack": "qingli_reform_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·庆历新政（范仲淹十条）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宋·庆历新政（范仲淹十条）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宋·庆历新政（范仲淹十条）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋·庆历新政（范仲淹十条）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "wuxu_reform_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "beijing",
+   "title": "清·戊戌变法（百日维新）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "beijing",
+   "dossier_event": "event:ev_wuxu_reform_llm_01",
+   "vocab_pack": "wuxu_reform_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "清·戊戌变法（百日维新）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "清·戊戌变法（百日维新）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "清·戊戌变法（百日维新）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "清·戊戌变法（百日维新）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "yangwu_llm": {
+   "kind": "engineering",
+   "region": "jiangnan",
+   "province": "shanghai",
+   "title": "清·洋务运动（自强求富）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shanghai",
+   "dossier_event": "event:ev_yangwu_llm_01",
+   "vocab_pack": "yangwu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "清·洋务运动（自强求富）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "清·洋务运动（自强求富）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "清·洋务运动（自强求富）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "清·洋务运动（自强求富）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "wangmang_reform_llm": {
+   "kind": "reform",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "新莽·王莽改制（托古变法）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "changan",
+   "dossier_event": "event:ev_wangmang_reform_llm_01",
+   "vocab_pack": "wangmang_reform_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "新莽·王莽改制（托古变法）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "新莽·王莽改制（托古变法）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "新莽·王莽改制（托古变法）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "新莽·王莽改制（托古变法）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
     5,
     6
    ]

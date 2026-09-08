@@ -187,6 +187,7 @@ window.SANDBOX_RESONANCE = {
    "qinghai_tuyuhun_llm",
    "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
+   "qingli_reform_llm",
    "san_guo",
    "sarhu",
    "shandong_jixia",
@@ -242,6 +243,7 @@ window.SANDBOX_RESONANCE = {
    "tieling",
    "tumu",
    "wangmang",
+   "wangmang_reform_llm",
    "wangyangming",
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
@@ -250,6 +252,7 @@ window.SANDBOX_RESONANCE = {
    "wugu",
    "wuwang",
    "wuxu",
+   "wuxu_reform_llm",
    "xianggang_1941_llm",
    "xianggang_dongjiang_llm",
    "xianggang_huigui_llm",
@@ -271,6 +274,7 @@ window.SANDBOX_RESONANCE = {
    "xuanzang",
    "yaksa",
    "yancheng",
+   "yangwu_llm",
    "yangzhou",
    "yaoshan",
    "yashan",
@@ -3679,6 +3683,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "qingli_reform_llm",
+   "name": "qingli_reform_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_qingli_reform_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "san_guo",
    "name": "san_guo",
    "total": 20,
@@ -4755,6 +4778,24 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "wangmang_reform_llm",
+   "name": "wangmang_reform_llm",
+   "total": 100,
+   "layers": {
+    "inference": 1,
+    "record": 88,
+    "scholarship": 11
+   },
+   "party_counts": {
+    "后世官修": 100
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_wangmang_reform_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "wangyangming",
    "name": "wangyangming",
    "total": 19,
@@ -4906,6 +4947,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:wx_0611",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "wuxu_reform_llm",
+   "name": "wuxu_reform_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_wuxu_reform_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -5316,6 +5376,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:yc_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yangwu_llm",
+   "name": "yangwu_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yangwu_llm_01",
    "best_resonance": 0.0
   },
   {

@@ -1,0 +1,102 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "wangmang_reform_llm",
+ "_scenario_type": "social",
+ "_years": [
+  9,
+  23
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 18,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.68 / 史实 0.84）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.84,
+    "new_to": 0.685,
+    "cum": -0.155
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 19,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.87）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.874,
+    "new_to": 0.703,
+    "cum": -0.171
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 20,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.72 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.908,
+    "new_to": 0.721,
+    "cum": -0.187
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 21,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.74 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.942,
+    "new_to": 0.74,
+    "cum": -0.202
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 22,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.76 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.976,
+    "new_to": 0.758,
+    "cum": -0.218
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 23,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.777,
+    "cum": -0.223
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "summary",
+   "year": 23,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.78 / 史实 1.00（偏离 -0.22）",
+   "evidence": {
+    "cum": -0.223,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "junguo"
+  }
+ ]
+}

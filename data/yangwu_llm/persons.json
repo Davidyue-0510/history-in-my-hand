@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "YAN__p01",
+   "name": "曾国藩",
+   "role": "两江总督",
+   "note": "倡办安庆内军械所",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YAN__p02",
+   "name": "李鸿章",
+   "role": "直隶总督",
+   "note": "办江南制造总局、轮船招商局",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YAN__p03",
+   "name": "左宗棠",
+   "role": "闽浙总督",
+   "note": "设福州船政局",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YAN__p04",
+   "name": "张之洞",
+   "role": "湖广总督",
+   "note": "建汉阳铁厂",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "YAN__p05",
+   "name": "慈禧太后",
+   "role": "清廷掌权者",
+   "note": "支持洋务但守旧",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·洋务运动》与自强求富",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

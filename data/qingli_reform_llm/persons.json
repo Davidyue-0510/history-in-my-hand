@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "QIN__p01",
+   "name": "范仲淹",
+   "role": "参知政事",
+   "note": "新政主持者",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p02",
+   "name": "宋仁宗",
+   "role": "皇帝",
+   "note": "下诏改革",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p03",
+   "name": "吕夷简",
+   "role": "宰相",
+   "note": "反对新政",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p04",
+   "name": "富弼",
+   "role": "枢密副使",
+   "note": "被指朋党",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p05",
+   "name": "韩琦",
+   "role": "枢密副使",
+   "note": "被指朋党",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "QIN__p06",
+   "name": "杜衍",
+   "role": "枢密使",
+   "note": "被指朋党",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

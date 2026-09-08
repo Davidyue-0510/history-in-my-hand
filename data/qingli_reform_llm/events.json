@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_qingli_reform_llm_01",
+   "subject": "event:ev_qingli_reform_llm_01",
+   "year": 1043,
+   "era": "庆历三年",
+   "title": "范仲淹上十事疏",
+   "kind": "行政",
+   "text": "范仲淹上《答手诏条陈十事》",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qingli_reform_llm_02",
+   "subject": "event:ev_qingli_reform_llm_02",
+   "year": 1043,
+   "era": "庆历三年",
+   "title": "新政颁行",
+   "kind": "行政",
+   "text": "行择官长、明黜陟等法",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qingli_reform_llm_03",
+   "subject": "event:ev_qingli_reform_llm_03",
+   "year": 1045,
+   "era": "庆历五年",
+   "title": "新政罢废",
+   "kind": "行政",
+   "text": "仲淹等出知外州，新政废",
+   "_source_idx": 0,
+   "_source_name": "《宋史·范仲淹传》与庆历新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

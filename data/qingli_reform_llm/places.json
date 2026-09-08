@@ -1,0 +1,18 @@
+{
+  "places": [
+    {
+      "id": "kaifeng",
+      "name": "开封",
+      "type": "city",
+      "modern": "今中国河南开封",
+      "note": "北宋都城",
+      "_source_idx": 0,
+      "_source_name": "《宋史·范仲淹传》与庆历新政",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.35,
+      "lat": 34.8,
+      "geo_note": "魏国都城"
+    }
+  ]
+}

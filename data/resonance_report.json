@@ -185,6 +185,7 @@
       "qinghai_tuyuhun_llm",
       "qinghai_zhaochongguo_llm",
       "qinghai_zongkaba_llm",
+      "qingli_reform_llm",
       "san_guo",
       "sarhu",
       "shandong_jixia",
@@ -240,6 +241,7 @@
       "tieling",
       "tumu",
       "wangmang",
+      "wangmang_reform_llm",
       "wangyangming",
       "warring_states_shangyang",
       "warring_states_shangyang_llm",
@@ -248,6 +250,7 @@
       "wugu",
       "wuwang",
       "wuxu",
+      "wuxu_reform_llm",
       "xianggang_1941_llm",
       "xianggang_dongjiang_llm",
       "xianggang_huigui_llm",
@@ -269,6 +272,7 @@
       "xuanzang",
       "yaksa",
       "yancheng",
+      "yangwu_llm",
       "yangzhou",
       "yaoshan",
       "yashan",
@@ -3677,6 +3681,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "qingli_reform_llm",
+      "name": "qingli_reform_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_qingli_reform_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "san_guo",
       "name": "san_guo",
       "total": 20,
@@ -4753,6 +4776,24 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "wangmang_reform_llm",
+      "name": "wangmang_reform_llm",
+      "total": 100,
+      "layers": {
+        "inference": 1,
+        "record": 88,
+        "scholarship": 11
+      },
+      "party_counts": {
+        "后世官修": 100
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_wangmang_reform_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "wangyangming",
       "name": "wangyangming",
       "total": 19,
@@ -4904,6 +4945,25 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:wx_0611",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "wuxu_reform_llm",
+      "name": "wuxu_reform_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 4,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_wuxu_reform_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -5314,6 +5374,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:yc_jz",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "yangwu_llm",
+      "name": "yangwu_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 8,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 4,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_yangwu_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -16370,6 +16449,99 @@
       }
     },
     {
+      "subject": "event:ev_qingli_reform_llm_01",
+      "name": "event:ev_qingli_reform_llm_01",
+      "scenes": [
+        "qingli_reform_llm"
+      ],
+      "scene_names": [
+        "qingli_reform_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qingli_reform_llm_02",
+      "name": "event:ev_qingli_reform_llm_02",
+      "scenes": [
+        "qingli_reform_llm"
+      ],
+      "scene_names": [
+        "qingli_reform_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.333,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_qingli_reform_llm_03",
+      "name": "event:ev_qingli_reform_llm_03",
+      "scenes": [
+        "qingli_reform_llm"
+      ],
+      "scene_names": [
+        "qingli_reform_llm"
+      ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_shandong_jixia_01",
       "name": "event:ev_shandong_jixia_01",
       "scenes": [
@@ -19222,6 +19394,99 @@
       }
     },
     {
+      "subject": "event:ev_wangmang_reform_llm_01",
+      "name": "event:ev_wangmang_reform_llm_01",
+      "scenes": [
+        "wangmang_reform_llm"
+      ],
+      "scene_names": [
+        "wangmang_reform_llm"
+      ],
+      "total": 27,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.333,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wangmang_reform_llm_02",
+      "name": "event:ev_wangmang_reform_llm_02",
+      "scenes": [
+        "wangmang_reform_llm"
+      ],
+      "scene_names": [
+        "wangmang_reform_llm"
+      ],
+      "total": 26,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.6,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wangmang_reform_llm_03",
+      "name": "event:ev_wangmang_reform_llm_03",
+      "scenes": [
+        "wangmang_reform_llm"
+      ],
+      "scene_names": [
+        "wangmang_reform_llm"
+      ],
+      "total": 47,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.5,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_wangyangming_01",
       "name": "event:ev_wangyangming_01",
       "scenes": [
@@ -19384,6 +19649,130 @@
       ],
       "scene_names": [
         "san_guo"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wuxu_reform_llm_01",
+      "name": "event:ev_wuxu_reform_llm_01",
+      "scenes": [
+        "wuxu_reform_llm"
+      ],
+      "scene_names": [
+        "wuxu_reform_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wuxu_reform_llm_02",
+      "name": "event:ev_wuxu_reform_llm_02",
+      "scenes": [
+        "wuxu_reform_llm"
+      ],
+      "scene_names": [
+        "wuxu_reform_llm"
+      ],
+      "total": 6,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.2,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wuxu_reform_llm_03",
+      "name": "event:ev_wuxu_reform_llm_03",
+      "scenes": [
+        "wuxu_reform_llm"
+      ],
+      "scene_names": [
+        "wuxu_reform_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_wuxu_reform_llm_04",
+      "name": "event:ev_wuxu_reform_llm_04",
+      "scenes": [
+        "wuxu_reform_llm"
+      ],
+      "scene_names": [
+        "wuxu_reform_llm"
       ],
       "total": 1,
       "gap_count": 0,
@@ -20569,6 +20958,130 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.125,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yangwu_llm_01",
+      "name": "event:ev_yangwu_llm_01",
+      "scenes": [
+        "yangwu_llm"
+      ],
+      "scene_names": [
+        "yangwu_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yangwu_llm_02",
+      "name": "event:ev_yangwu_llm_02",
+      "scenes": [
+        "yangwu_llm"
+      ],
+      "scene_names": [
+        "yangwu_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yangwu_llm_03",
+      "name": "event:ev_yangwu_llm_03",
+      "scenes": [
+        "yangwu_llm"
+      ],
+      "scene_names": [
+        "yangwu_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yangwu_llm_04",
+      "name": "event:ev_yangwu_llm_04",
+      "scenes": [
+        "yangwu_llm"
+      ],
+      "scene_names": [
+        "yangwu_llm"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.333,
+      "gap_rate": 0.167,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

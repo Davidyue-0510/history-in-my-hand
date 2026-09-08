@@ -1,9 +1,9 @@
 {
-  "scenes_total": 298,
-  "historical": 289,
+  "scenes_total": 302,
+  "historical": 293,
   "fictional": 9,
-  "assertions_total": 4484,
-  "sources_total": 275,
+  "assertions_total": 4623,
+  "sources_total": 279,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -99,6 +99,7 @@
     "qinghai_tuyuhun_llm",
     "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
+    "qingli_reform_llm",
     "san_guo",
     "shandong_jixia",
     "shandong_kongzi",
@@ -134,9 +135,11 @@
     "tianjin_jiaoan_llm",
     "tianjin_kaibu_llm",
     "tianjin_tianjinwei",
+    "wangmang_reform_llm",
     "wangyangming",
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
+    "wuxu_reform_llm",
     "xianggang_1941_llm",
     "xianggang_dongjiang_llm",
     "xianggang_huigui_llm",
@@ -150,6 +153,7 @@
     "xizang_huimeng_llm",
     "xizang_tubo_llm",
     "xizang_wencheng",
+    "yangwu_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "yunnan_dali",
@@ -163,7 +167,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 416,
+  "leads_total": 419,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2301,6 +2305,34 @@
       "kind": "tech",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "qingli_reform_llm",
+      "title": "宋·庆历新政（范仲淹十条）",
+      "kind": "reform",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "wuxu_reform_llm",
+      "title": "清·戊戌变法（百日维新）",
+      "kind": "reform",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "yangwu_llm",
+      "title": "清·洋务运动（自强求富）",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "wangmang_reform_llm",
+      "title": "新莽·王莽改制（托古变法）",
+      "kind": "reform",
+      "assertions": 100,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2601,6 +2633,10 @@
     "fujian_tulou": "明清·福建土楼（客家夯土聚族）",
     "jiangxi_bailudong": "宋·白鹿洞书院（朱熹定学规）",
     "yunnan_dianmian": "抗战·滇缅公路（西南生命线）",
-    "zhejiang_longquan": "宋·龙泉窑（青瓷之冠）"
+    "zhejiang_longquan": "宋·龙泉窑（青瓷之冠）",
+    "qingli_reform_llm": "宋·庆历新政（范仲淹十条）",
+    "wuxu_reform_llm": "清·戊戌变法（百日维新）",
+    "yangwu_llm": "清·洋务运动（自强求富）",
+    "wangmang_reform_llm": "新莽·王莽改制（托古变法）"
   }
 }

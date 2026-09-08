@@ -1,0 +1,453 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "yangwu_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1861,
+  1894
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1862,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.452,
+    "cum": -0.168
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1863,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.43 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.427,
+    "cum": -0.253
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1864,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.40 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.403,
+    "cum": -0.337
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1865,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.38 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.379,
+    "cum": -0.421
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1866,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.51（本支 0.35 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.355,
+    "cum": -0.505
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1867,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.59（本支 0.33 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.331,
+    "cum": -0.589
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.31 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.306,
+    "cum": -0.674
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.282,
+    "cum": -0.718
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.258,
+    "cum": -0.742
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1871,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.234,
+    "cum": -0.766
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.209,
+    "cum": -0.791
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1873,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.185,
+    "cum": -0.815
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1874,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.161,
+    "cum": -0.839
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1875,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.137,
+    "cum": -0.863
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1876,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.113,
+    "cum": -0.887
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.088,
+    "cum": -0.912
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.064,
+    "cum": -0.936
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.04,
+    "cum": -0.96
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.016,
+    "cum": -0.984
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "summary",
+   "year": 1894,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "beijing"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "qingli_reform_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1043,
+  1045
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1044,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.20（本支 0.58 / 史实 0.38）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.38,
+    "new_to": 0.584,
+    "cum": 0.204
+   },
+   "place_id": "kaifeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 1045,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.31（本支 0.63 / 史实 0.32）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.32,
+    "new_to": 0.626,
+    "cum": 0.306
+   },
+   "place_id": "kaifeng"
+  },
+  {
+   "kind": "summary",
+   "year": 1045,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.63 / 史实 0.32（偏离 0.31）",
+   "evidence": {
+    "cum": 0.306,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "kaifeng"
+  }
+ ]
+}

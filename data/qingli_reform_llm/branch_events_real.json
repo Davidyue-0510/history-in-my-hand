@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "qingli_reform_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1043,
+  1045
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1045,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.32 / 史实 0.32（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "kaifeng"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "beijing",
+      "name": "北京",
+      "type": "city",
+      "modern": "今中国北京",
+      "note": "清都，政变发生地",
+      "_source_idx": 0,
+      "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 116.4,
+      "lat": 39.9,
+      "geo_note": "平津战役·傅作义起义"
+    },
+    {
+      "id": "yingtai",
+      "name": "瀛台",
+      "type": "region",
+      "modern": "今中国北京中南海",
+      "note": "幽禁光绪帝处",
+      "_source_idx": 0,
+      "_source_name": "《清史稿·德宗本纪》与戊戌变法",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}
