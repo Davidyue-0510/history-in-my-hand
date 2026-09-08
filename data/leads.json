@@ -18,6 +18,22 @@
    "_src_line": 16
   },
   {
+   "id": "AOM_010",
+   "scene": "aomen_kaibu_llm",
+   "subject": "event:ev_aomen_kaibu_llm_01",
+   "title": "葡人具体贿赂对象与过程不详",
+   "missing": "史料考据 / 中西档案比对",
+   "where": "澳门地方志及明实录",
+   "skills": [
+    "史料考据",
+    "中西档案比对"
+   ],
+   "accept": "需查证葡人贿赂的具体官员及过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "AOMEG1",
    "scene": "aomen_portugal_llm",
    "subject": "event:ev_aomen_portugal_llm_01",
@@ -3983,6 +3999,66 @@
    "_src_line": 12
   },
   {
+   "id": "TAI_009",
+   "scene": "taiwan_zhengchenggong_llm",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_03",
+   "title": "荷蘭損失未詳",
+   "missing": "荷蘭語文獻解讀",
+   "where": "荷蘭東印度公司檔案",
+   "skills": [
+    "荷蘭語文獻解讀"
+   ],
+   "accept": "需查荷方記載",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "TAI_010",
+   "scene": "taiwan_zhengchenggong_llm",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_01",
+   "title": "鄭軍兵力未詳",
+   "missing": "明清檔案研究",
+   "where": "南明史料",
+   "skills": [
+    "明清檔案研究"
+   ],
+   "accept": "需查鄭軍編制",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "TAI_011",
+   "scene": "taiwan_zhengchenggong_llm",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_02",
+   "title": "登陸時間未詳",
+   "missing": "日記解讀",
+   "where": "鄭成功日記",
+   "skills": [
+    "日記解讀"
+   ],
+   "accept": "需查確切日期",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "TAI_012",
+   "scene": "taiwan_zhengchenggong_llm",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_03",
+   "title": "投降條件未詳",
+   "missing": "外交文獻",
+   "where": "條約文書",
+   "skills": [
+    "外交文獻"
+   ],
+   "accept": "需查和約內容",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SX010_M17",
    "scene": "talas",
    "subject": "event:tl_tang",
@@ -4407,6 +4483,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "XIA_014",
+   "scene": "xianggang_1941_llm",
+   "subject": "event:ev_xianggang_1941_llm_03",
+   "title": "英軍傷亡數字未明",
+   "missing": "軍事史 / 檔案研究",
+   "where": "英國國家檔案館",
+   "skills": [
+    "軍事史",
+    "檔案研究"
+   ],
+   "accept": "英軍傷亡統計",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIA_015",
+   "scene": "xianggang_1941_llm",
+   "subject": "event:ev_xianggang_1941_llm_03",
+   "title": "日軍傷亡數字未明",
+   "missing": "軍事史 / 檔案研究",
+   "where": "日本防衛省防衛研究所",
+   "skills": [
+    "軍事史",
+    "檔案研究"
+   ],
+   "accept": "日軍傷亡統計",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "XIANG4",

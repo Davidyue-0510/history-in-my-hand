@@ -12,6 +12,7 @@ window.SANDBOX_RESONANCE = {
   ],
   "scenes": [
    "anxi_sizhen_llm",
+   "aomen_kaibu_llm",
    "aomen_portugal_llm",
    "baijia",
    "beijing",
@@ -176,6 +177,7 @@ window.SANDBOX_RESONANCE = {
    "suiyang",
    "susong_llm",
    "taiping",
+   "taiwan_zhengchenggong_llm",
    "talas",
    "tang_anshi_llm",
    "tang_dangzheng",
@@ -199,6 +201,7 @@ window.SANDBOX_RESONANCE = {
    "wugu",
    "wuwang",
    "wuxu",
+   "xianggang_1941_llm",
    "xianggang_songmo_llm",
    "xiaowen",
    "xiaoyaojin",
@@ -267,6 +270,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 4,
    "avg_resonance": 0.0,
    "best_event": "event:ev_anxi_sizhen_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "aomen_kaibu_llm",
+   "name": "aomen_kaibu_llm",
+   "total": 10,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 10
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_aomen_kaibu_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3433,6 +3455,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "taiwan_zhengchenggong_llm",
+   "name": "taiwan_zhengchenggong_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 6,
+    "scholarship": 1,
+    "gap": 4
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_taiwan_zhengchenggong_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "talas",
    "name": "talas",
    "total": 17,
@@ -3883,6 +3924,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:wx_0611",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xianggang_1941_llm",
+   "name": "xianggang_1941_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "record": 8,
+    "inference": 4,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xianggang_1941_llm_01",
    "best_resonance": 0.0
   },
   {

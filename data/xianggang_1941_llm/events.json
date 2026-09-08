@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_1941_llm_01",
+   "subject": "event:ev_xianggang_1941_llm_01",
+   "year": 1941,
+   "era": "昭和16年12月8日",
+   "title": "日軍進攻香港",
+   "kind": "戰事",
+   "text": "太平洋戰爭爆發，日軍越深圳河攻新界",
+   "_source_idx": 0,
+   "_source_name": "香港保卫战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_1941_llm_02",
+   "subject": "event:ev_xianggang_1941_llm_02",
+   "year": 1941,
+   "era": "昭和16年12月18日",
+   "title": "日軍登陸香港島",
+   "kind": "戰事",
+   "text": "日軍強渡維多利亞港登陸",
+   "_source_idx": 0,
+   "_source_name": "香港保卫战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_1941_llm_03",
+   "subject": "event:ev_xianggang_1941_llm_03",
+   "year": 1941,
+   "era": "昭和16年12月25日",
+   "title": "香港淪陷",
+   "kind": "戰事",
+   "text": "港督楊慕琦投降，日佔開始",
+   "_source_idx": 0,
+   "_source_name": "香港保卫战史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

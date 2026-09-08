@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_kaibu_llm_01",
+   "subject": "event:ev_aomen_kaibu_llm_01",
+   "year": 1553,
+   "era": "嘉靖三十二年",
+   "title": "葡人入居澳门",
+   "kind": "行政",
+   "text": "葡人以晾晒货物为由，贿赂官吏，获准租居澳门",
+   "_source_idx": 0,
+   "_source_name": "澳门开埠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_kaibu_llm_02",
+   "subject": "event:ev_aomen_kaibu_llm_02",
+   "year": 1573,
+   "era": "万历元年",
+   "title": "葡人筑城设官",
+   "kind": "建置",
+   "text": "葡人筑城设官，渐成聚居",
+   "_source_idx": 0,
+   "_source_name": "澳门开埠史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

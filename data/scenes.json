@@ -437,7 +437,10 @@
   "xizang_huimeng_llm",
   "guangxi_zhennanguan_llm",
   "hainan_hairui_llm",
-  "qinghai_zongkaba_llm"
+  "qinghai_zongkaba_llm",
+  "taiwan_zhengchenggong_llm",
+  "xianggang_1941_llm",
+  "aomen_kaibu_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -19510,6 +19513,230 @@
    },
    "dims": [
     1,
+    5,
+    6
+   ]
+  },
+  "taiwan_zhengchenggong_llm": {
+   "kind": "battle",
+   "region": "taiwan",
+   "province": "taiwan",
+   "title": "中国台湾·郑成功收复台湾（1661—1662）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jinmen_liaoluo",
+   "dossier_event": "event:ev_taiwan_zhengchenggong_llm_01",
+   "vocab_pack": "taiwan_zhengchenggong_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国台湾·郑成功收复台湾（1661—1662）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中国台湾·郑成功收复台湾（1661—1662）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中国台湾·郑成功收复台湾（1661—1662）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国台湾·郑成功收复台湾（1661—1662）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "xianggang_1941_llm": {
+   "kind": "battle",
+   "region": "exchange",
+   "province": "xianggang",
+   "title": "中国香港·香港保卫战（1941）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hong_kong",
+   "dossier_event": "event:ev_xianggang_1941_llm_01",
+   "vocab_pack": "xianggang_1941_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国香港·香港保卫战（1941）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中国香港·香港保卫战（1941）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中国香港·香港保卫战（1941）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国香港·香港保卫战（1941）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    4,
+    5,
+    6
+   ]
+  },
+  "aomen_kaibu_llm": {
+   "kind": "exchange",
+   "region": "exchange",
+   "province": "aomen",
+   "title": "中国澳门·澳门开埠（1553）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "aomen",
+   "dossier_event": "event:ev_aomen_kaibu_llm_01",
+   "vocab_pack": "aomen_kaibu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门开埠（1553）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门开埠（1553）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门开埠（1553）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "中国澳门·澳门开埠（1553）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
     5,
     6
    ]

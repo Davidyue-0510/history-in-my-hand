@@ -1,16 +1,17 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 234 个切片
+// 权威数据源：data/scenes.json 注册的 237 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 234 个切片",
+  "slice": "multi-scene · 237 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "anxi_sizhen_llm",
+   "aomen_kaibu_llm",
    "aomen_portugal_llm",
    "bisheng_movable_type",
    "bohai_kingdom_llm",
@@ -79,6 +80,7 @@ window.SANDBOX_DATA = {
    "sui_mie_chen_llm",
    "sui_yang_llm",
    "susong_llm",
+   "taiwan_zhengchenggong_llm",
    "tang",
    "tang_anshi_llm",
    "tang_huangchao_llm",
@@ -89,6 +91,7 @@ window.SANDBOX_DATA = {
    "wangyangming",
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
+   "xianggang_1941_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
    "xizang_gorkha_llm",
@@ -586,7 +589,10 @@ window.SANDBOX_DATA = {
   "xizang_huimeng_llm",
   "guangxi_zhennanguan_llm",
   "hainan_hairui_llm",
-  "qinghai_zongkaba_llm"
+  "qinghai_zongkaba_llm",
+  "taiwan_zhengchenggong_llm",
+  "xianggang_1941_llm",
+  "aomen_kaibu_llm"
  ],
  "vocab": {
   "layers": [
@@ -26560,6 +26566,104 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "taiwan_zhengchenggong_llm": {
+   "key": "taiwan_zhengchenggong_llm",
+   "scene_id": "taiwan_zhengchenggong_llm",
+   "title": "中国台湾·郑成功收复台湾（1661—1662）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "taiwan",
+   "page": "taiwan_zhengchenggong_llm.html",
+   "primary_place": "jinmen_liaoluo",
+   "vocab_pack": "taiwan_zhengchenggong_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 4,
+    "record": 6,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xianggang_1941_llm": {
+   "key": "xianggang_1941_llm",
+   "scene_id": "xianggang_1941_llm",
+   "title": "中国香港·香港保卫战（1941）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "exchange",
+   "page": "xianggang_1941_llm.html",
+   "primary_place": "hong_kong",
+   "vocab_pack": "xianggang_1941_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 5,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 2,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 4
+   }
+  },
+  "aomen_kaibu_llm": {
+   "key": "aomen_kaibu_llm",
+   "scene_id": "aomen_kaibu_llm",
+   "title": "中国澳门·澳门开埠（1553）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "exchange",
+   "page": "county.html?scene=aomen_kaibu_llm",
+   "primary_place": "aomen",
+   "vocab_pack": "aomen_kaibu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 2,
+    "assert": 10,
+    "conflict": 0,
+    "gap": 1,
+    "record": 7,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26796,7 +26900,10 @@ window.SANDBOX_DATA = {
   "xizang_huimeng_llm": "slices/xizang_huimeng_llm.js",
   "guangxi_zhennanguan_llm": "slices/guangxi_zhennanguan_llm.js",
   "hainan_hairui_llm": "slices/hainan_hairui_llm.js",
-  "qinghai_zongkaba_llm": "slices/qinghai_zongkaba_llm.js"
+  "qinghai_zongkaba_llm": "slices/qinghai_zongkaba_llm.js",
+  "taiwan_zhengchenggong_llm": "slices/taiwan_zhengchenggong_llm.js",
+  "xianggang_1941_llm": "slices/xianggang_1941_llm.js",
+  "aomen_kaibu_llm": "slices/aomen_kaibu_llm.js"
  },
  "corridors": [
   {

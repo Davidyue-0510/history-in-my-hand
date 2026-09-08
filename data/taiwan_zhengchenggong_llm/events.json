@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_taiwan_zhengchenggong_llm_01",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_01",
+   "year": 1661,
+   "era": "清順治十八年",
+   "title": "鄭成功率師東征",
+   "kind": "戰事",
+   "text": "自金門料羅灣出發，橫渡臺灣海峽",
+   "_source_idx": 0,
+   "_source_name": "郑成功收复台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_zhengchenggong_llm_02",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_02",
+   "year": 1661,
+   "era": "清順治十八年",
+   "title": "鹿耳門登陸",
+   "kind": "戰事",
+   "text": "於鹿耳門登陸，進圍熱蘭遮城",
+   "_source_idx": 0,
+   "_source_name": "郑成功收复台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_zhengchenggong_llm_03",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_03",
+   "year": 1662,
+   "era": "清康熙元年",
+   "title": "荷蘭投降",
+   "kind": "戰事",
+   "text": "揆一投降，臺灣重回中國版圖",
+   "_source_idx": 0,
+   "_source_name": "郑成功收复台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_zhengchenggong_llm_04",
+   "subject": "event:ev_taiwan_zhengchenggong_llm_04",
+   "year": 1662,
+   "era": "清康熙元年",
+   "title": "設承天府",
+   "kind": "行政",
+   "text": "以臺灣為抗清基地，設承天府",
+   "_source_idx": 0,
+   "_source_name": "郑成功收复台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

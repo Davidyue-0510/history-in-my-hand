@@ -1,12 +1,13 @@
 {
-  "scenes_total": 234,
-  "historical": 225,
+  "scenes_total": 237,
+  "historical": 228,
   "fictional": 9,
-  "assertions_total": 3636,
-  "sources_total": 212,
+  "assertions_total": 3673,
+  "sources_total": 215,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
+    "aomen_kaibu_llm",
     "aomen_portugal_llm",
     "bisheng_movable_type",
     "bohai_kingdom_llm",
@@ -75,6 +76,7 @@
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "susong_llm",
+    "taiwan_zhengchenggong_llm",
     "tang",
     "tang_anshi_llm",
     "tang_huangchao_llm",
@@ -85,6 +87,7 @@
     "wangyangming",
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
+    "xianggang_1941_llm",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
     "xizang_gorkha_llm",
@@ -98,7 +101,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 333,
+  "leads_total": 340,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1791,6 +1794,27 @@
       "kind": "thought",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "taiwan_zhengchenggong_llm",
+      "title": "中国台湾·郑成功收复台湾（1661—1662）",
+      "kind": "battle",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "xianggang_1941_llm",
+      "title": "中国香港·香港保卫战（1941）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "aomen_kaibu_llm",
+      "title": "中国澳门·澳门开埠（1553）",
+      "kind": "exchange",
+      "assertions": 10,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2027,6 +2051,9 @@
     "xizang_huimeng_llm": "唐蕃会盟碑（长庆会盟，822）",
     "guangxi_zhennanguan_llm": "镇南关大捷（1885）",
     "hainan_hairui_llm": "海瑞（1514—1587，明代清官）",
-    "qinghai_zongkaba_llm": "宗喀巴 格鲁派创立（1409）"
+    "qinghai_zongkaba_llm": "宗喀巴 格鲁派创立（1409）",
+    "taiwan_zhengchenggong_llm": "中国台湾·郑成功收复台湾（1661—1662）",
+    "xianggang_1941_llm": "中国香港·香港保卫战（1941）",
+    "aomen_kaibu_llm": "中国澳门·澳门开埠（1553）"
   }
 }
