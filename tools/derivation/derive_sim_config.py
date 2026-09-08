@@ -57,6 +57,26 @@ ECON_KW = ["税", "赋", "钱", "币", "田", "均田", "两税", "租庸", "租
 # （G1 分类应反映场景实质，而非断言条数占比）。仅含运河/渠/水利等关键词的场景受影响。
 ENG_KW = ["运河", "渠", "通济", "永济", "江南河", "水利", "漕河", "河工", "堤", "桥", "堰", "闸"]
 
+# ── v0.181 考据锚定 base_rate（北极星③校准）──────────────────────────────────
+# 对「史实走向清晰、学界有较稳定评估」的已知场景，用考据锚定的 (magnitude, sign) 取代
+# 纯关键词启发式，使 G2 反事实偏离落在「史实可辩护」区间、且不被断言微调漂移。
+#   magnitude ∈ (0, 0.06]：每年改革指数增量上限（growth = magnitude*(1-0.6*resistance)）
+#   sign: +1=改革推进（史实基准上升）/ -1=改革逆转（史实基准下降）
+#   citation: 可复核的史实依据（写进 _derivation_note，供审计）
+# 仅对表中 scene 生效；其余仍走启发式。新增考据锚定只需在此追加一条。
+BASE_RATE_ANCHORS = {
+    "song_wanganshi_llm": {
+        "magnitude": 0.05,
+        "sign": 1,
+        "citation": "新法 1069–1085 由神宗持续推行约 16 年（青苗/募役/市易/方田均税/保甲/农田水利），元丰八年(1085)神宗崩、司马光拜相尽废新法（元祐更化）；学界共识：改革实质性落地但终被逆转。锚定幅度 0.05（强推进·长周期）。",
+    },
+    "wangmang_reform_llm": {
+        "magnitude": 0.045,
+        "sign": 1,
+        "citation": "始建国元年(9)王莽称帝即行激进改制（王田/私属/五均六筦/币制/改名），推行约 14 年，地皇四年(23)新朝亡、改制随崩；学界共识：强力推行但极短命且激化矛盾。锚定幅度 0.045（强力·短命崩盘）。",
+    },
+}
+
 
 def load_assertions(path):
     """读取 assertions.jsonl → list[dict]。空行 / // 注释跳过。"""
@@ -279,36 +299,51 @@ def _evidence_strength(assertions):
     return min(1.0, abs(pos_w - neg_w) / total)
 
 
-def derive_branches(assertions, scenario_type=None):
+def derive_branches(assertions, scenario_type=None, scene_id=None):
     """派生 real_branch（史实基准）+ whatif（反事实·反向推演）。
 
     base_rate 幅度由证据强度驱动：magnitude = base + strength * scale。
     方向（正/负）由 POS/NEG 关键词 confidence 加权净差决定。
     反事实分支取反向并阻尼 0.7（部分反转比全反转更现实，避免极端化）。
+
+    v0.181 校准：若 scene_id 在 BASE_RATE_ANCHORS，改用考据锚定的 (magnitude, sign)
+    替代纯关键词启发式，并在分支标 `_calibrated=true`（protect 反事实偏离不被断言微调漂移）。
     """
     if scenario_type is None:
         scenario_type = derive_scenario_type(assertions)
-    sign = _direction_sign(assertions)
-    strength = _evidence_strength(assertions)
-    BASE = 0.015     # 极弱证据的最小推力（保 whatif 不恒零）
-    SCALE = 0.045    # 强证据下的最大加成（封顶 0.06）
-    magnitude = round(BASE + strength * SCALE, 3)
+    anchor = BASE_RATE_ANCHORS.get(scene_id) if scene_id else None
+    if anchor:
+        sign = int(anchor.get("sign", 1))
+        magnitude = round(float(anchor.get("magnitude", 0.0)), 3)
+        calibrated = True
+    else:
+        sign = _direction_sign(assertions)
+        strength = _evidence_strength(assertions)
+        BASE = 0.015     # 极弱证据的最小推力（保 whatif 不恒零）
+        SCALE = 0.045    # 强证据下的最大加成（封顶 0.06）
+        magnitude = round(BASE + strength * SCALE, 3)
+        calibrated = False
     real_rate = round(sign * magnitude, 3) if sign != 0 else 0.0
     whatif_rate = round(-sign * magnitude * 0.7, 3) if sign != 0 else round(magnitude * 0.7, 3)
     reform0 = 0.5
     branches = [
-        {"id": "real", "label": "史实基准", "base_rate": real_rate, "reform0": reform0},
+        {"id": "real", "label": "史实基准", "base_rate": real_rate, "reform0": reform0,
+         "_calibrated": calibrated},
         {"id": "whatif", "label": "反事实·反向推演", "base_rate": whatif_rate,
-         "reform0": reform0},
+         "reform0": reform0, "_calibrated": calibrated},
     ]
     return branches, "real"
 
 
-def derive_config(assertions):
-    """纯函数：从断言派生完整 sim_config（标 _auto_derived）。"""
+def derive_config(assertions, scene_id=None):
+    """纯函数：从断言派生完整 sim_config（标 _auto_derived）。
+
+    v0.181：scene_id 命中 BASE_RATE_ANCHORS 时，base_rate 走考据锚定，并在
+    _derivation_note 追加 [考据锚定] 段（含 magnitude/sign/citation）供审计。
+    """
     scenario_type = derive_scenario_type(assertions)
     dim_targets = derive_dim_targets(assertions)
-    branches, real_branch = derive_branches(assertions, scenario_type)
+    branches, real_branch = derive_branches(assertions, scenario_type, scene_id)
     sy, ey = derive_year_span(assertions)
     if sy is None:
         sy, ey = -200, -100
@@ -320,6 +355,11 @@ def derive_config(assertions):
             "幅度由证据强度 strength=%.2f 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；"
             "whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。"
             % (pos_w, neg_w, sign, strength))
+    anchor = BASE_RATE_ANCHORS.get(scene_id) if scene_id else None
+    if anchor:
+        note += (" [考据锚定] scene=%s：magnitude=%.3f sign=%d —— %s"
+                 % (scene_id, float(anchor.get("magnitude", 0.0)), int(anchor.get("sign", 1)),
+                    anchor.get("citation", "")))
     cfg = {
         "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
         "_auto_derived": True,
@@ -346,7 +386,8 @@ def derive_all(scene_dir, assertions=None, write_sources=True):
     s = sy if sy is not None else -200
     e = ey if ey is not None else -100
     control = derive_control(assertions, start=s, end=e, scene_dir=scene_dir)
-    sim_config = derive_config(assertions)
+    scene_id = os.path.basename(scene_dir.rstrip(os.sep)) if scene_dir else None
+    sim_config = derive_config(assertions, scene_id)
 
     _dump(os.path.join(scene_dir, "places.json"), places)
     _dump(os.path.join(scene_dir, "control.json"), control)
@@ -418,7 +459,7 @@ def main():
         return 2
 
     assertions = load_assertions(a_path)
-    cfg = derive_config(assertions)
+    cfg = derive_config(assertions, args.scene)
     print("== G1 派生 sim_config ==")
     print(json.dumps(cfg, ensure_ascii=False, indent=2))
 

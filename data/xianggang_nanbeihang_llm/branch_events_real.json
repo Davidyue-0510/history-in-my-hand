@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "xianggang_nanbeihang_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1842,
+  1900
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1848,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.75 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.748,
+    "cum": -0.172
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1849,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.78 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.784,
+    "cum": -0.196
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1850,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.819,
+    "cum": -0.181
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "summary",
+   "year": 1900,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "hongkong"
+  }
+ ]
+}

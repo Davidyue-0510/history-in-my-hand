@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_nongzhigao_llm_01",
+   "subject": "event:ev_nongzhigao_llm_01",
+   "year": 1041,
+   "era": "庆历元年",
+   "title": "侬智高据傥犹州建大历",
+   "kind": "建置",
+   "text": "侬智高据傥犹州，建国号大历",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_nongzhigao_llm_02",
+   "subject": "event:ev_nongzhigao_llm_02",
+   "year": 1052,
+   "era": "皇祐四年",
+   "title": "侬智高陷邕州称帝",
+   "kind": "战事",
+   "text": "陷邕州，自称仁惠皇帝，改元启历",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_nongzhigao_llm_03",
+   "subject": "event:ev_nongzhigao_llm_03",
+   "year": 1052,
+   "era": "皇祐四年",
+   "title": "侬智高连破诸州围广州",
+   "kind": "战事",
+   "text": "连破横贵等州，围广州",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_nongzhigao_llm_04",
+   "subject": "event:ev_nongzhigao_llm_04",
+   "year": 1053,
+   "era": "皇祐五年",
+   "title": "狄青夜度昆仑关败侬智高",
+   "kind": "战事",
+   "text": "狄青夜度昆仑关，败智高于归仁铺",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

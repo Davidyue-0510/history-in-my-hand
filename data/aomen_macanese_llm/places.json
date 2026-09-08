@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "aomen",
+      "name": "澳门",
+      "type": "port",
+      "modern": "中国澳门特别行政区",
+      "note": "明清时期中西贸易港口",
+      "_source_idx": 0,
+      "_source_name": "澳门纪略·蕃俗（土生葡人）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dajiaojiao",
+      "name": "大庙角",
+      "type": "region",
+      "modern": "澳门大庙角",
+      "note": "土生葡人聚居地之一",
+      "_source_idx": 0,
+      "_source_name": "澳门纪略·蕃俗（土生葡人）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "fengshuntang",
+      "name": "风顺堂",
+      "type": "region",
+      "modern": "澳门风顺堂区",
+      "note": "土生葡人聚居地之一",
+      "_source_idx": 0,
+      "_source_name": "澳门纪略·蕃俗（土生葡人）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "_comment": "G1 自动派生反事实配置（tools/derivation/derive_sim_config.py）",
   "_auto_derived": true,
-  "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=27.30 neg=11.25 sign=1），幅度由证据强度 strength=0.42 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。",
+  "_derivation_note": "G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=27.30 neg=11.25 sign=1），幅度由证据强度 strength=0.42 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。 [考据锚定] scene=wangmang_reform_llm：magnitude=0.045 sign=1 —— 始建国元年(9)王莽称帝即行激进改制（王田/私属/五均六筦/币制/改名），推行约 14 年，地皇四年(23)新朝亡、改制随崩；学界共识：强力推行但极短命且激化矛盾。锚定幅度 0.045（强力·短命崩盘）。",
   "scenario_type": "social",
   "dim_targets": [
     "制度",
@@ -16,14 +16,16 @@
     {
       "id": "real",
       "label": "史实基准",
-      "base_rate": 0.034,
-      "reform0": 0.5
+      "base_rate": 0.045,
+      "reform0": 0.5,
+      "_calibrated": true
     },
     {
       "id": "whatif",
       "label": "反事实·反向推演",
-      "base_rate": -0.024,
-      "reform0": 0.5
+      "base_rate": -0.032,
+      "reform0": 0.5,
+      "_calibrated": true
     }
   ]
 }

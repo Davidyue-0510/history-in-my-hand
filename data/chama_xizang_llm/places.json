@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "qingzang",
+      "name": "青藏高原",
+      "type": "region",
+      "modern": "今中国青藏高原",
+      "note": "蕃商驱马入塞之地",
+      "_source_idx": 0,
+      "_source_name": "新唐书·吐蕃传（茶马互市）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "longyou",
+      "name": "陇右",
+      "type": "region",
+      "modern": "今中国甘肃一带",
+      "note": "设互市监，市马之地",
+      "_source_idx": 0,
+      "_source_name": "新唐书·吐蕃传（茶马互市）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "changan",
+      "name": "长安",
+      "type": "city",
+      "modern": "今中国陕西西安",
+      "note": "唐都，设互市监",
+      "_source_idx": 0,
+      "_source_name": "新唐书·吐蕃传（茶马互市）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 108.95,
+      "lat": 34.27,
+      "geo_note": "唐都，今西安"
+    }
+  ]
+}

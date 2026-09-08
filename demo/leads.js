@@ -66,6 +66,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 10
   },
   {
+   "id": "AOM_013",
+   "scene": "aomen_macanese_llm",
+   "subject": "event:ev_aomen_macanese_llm_03",
+   "title": "土生人口数量不详",
+   "missing": "人口史 / 档案研究",
+   "where": "澳门历史档案馆",
+   "skills": [
+    "人口史",
+    "档案研究"
+   ],
+   "accept": "土生葡人人口数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "AOM_014",
+   "scene": "aomen_macanese_llm",
+   "subject": "event:ev_aomen_macanese_llm_03",
+   "title": "土生文化影响深远",
+   "missing": "文化研究 / 口述历史",
+   "where": "澳门文化局",
+   "skills": [
+    "文化研究",
+    "口述历史"
+   ],
+   "accept": "土生文化影响评估",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "AOM_012",
    "scene": "aomen_mage_llm",
    "subject": "place:mage_miao",
@@ -336,6 +368,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "CHA_GAP_01",
+   "scene": "chama_xizang_llm",
+   "subject": "event:ev_chama_xizang_llm_02",
+   "title": "吐蕃时期茶马互市的年贸易量、茶马比价与专设管理机构，汉藏传世史料缺系统记载，仅能据互市监设置与零星使节往来推知",
+   "missing": "经济史 / 民族史",
+   "where": "青藏高原",
+   "skills": [
+    "经济史",
+    "民族史"
+   ],
+   "accept": "吐蕃时期茶马互市的年贸易量、茶马比价与专设管理机构的系统记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "CHANGPINGG01",
    "scene": "changping",
    "subject": "event:cp_jz",
@@ -382,6 +430,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "CHA_014",
+   "scene": "changsha_yao_llm",
+   "subject": "event:ev_changsha_yao_llm_02",
+   "title": "东非具体地点未明",
+   "missing": "考古学 / 陶瓷类型学",
+   "where": "东非沿岸港口遗址",
+   "skills": [
+    "考古学",
+    "陶瓷类型学"
+   ],
+   "accept": "发现长沙窑瓷片",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "CHANYUANG01",
@@ -775,6 +839,22 @@ window.SANDBOX_LEADS = {
     "日期比对"
    ],
    "accept": "考证长山之败的具体日期，并说明《三编》与《史稿》记载差异的原因。",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "DAN_012",
+   "scene": "dangar_chama_llm",
+   "subject": "event:ev_dangar_chama_llm_02",
+   "title": "實際數量可能少於記載",
+   "missing": "文獻考證 / 量化分析",
+   "where": "清代檔案、方志",
+   "skills": [
+    "文獻考證",
+    "量化分析"
+   ],
+   "accept": "需核實具體稅收記錄",
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
@@ -2490,6 +2570,51 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "JIA_014",
+   "scene": "jianzhou_nuerhaci_llm",
+   "subject": "event:ev_jianzhou_nuerhaci_llm_01",
+   "title": "为父祖复仇",
+   "missing": "文本分析",
+   "where": "清实录",
+   "skills": [
+    "文本分析"
+   ],
+   "accept": "需考订",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "JIA_012",
+   "scene": "jiaozi_llm",
+   "subject": "event:ev_jiaozi_llm_03",
+   "title": "本钱来源未详",
+   "missing": "史料考据",
+   "where": "宋史食货志",
+   "skills": [
+    "史料考据"
+   ],
+   "accept": "本钱具体来源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "JIA_013",
+   "scene": "jiaozi_llm",
+   "subject": "event:ev_jiaozi_llm_02",
+   "title": "徙置务具体地点未明",
+   "missing": "地理考据",
+   "where": "续资治通鉴长编",
+   "skills": [
+    "地理考据"
+   ],
+   "accept": "务之具体位置",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "JIASIXIEG01",
    "scene": "jiasixie",
    "subject": "event:js_533",
@@ -2663,6 +2788,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "JIU_012",
+   "scene": "jiupin_zhongzheng_llm",
+   "subject": "event:ev_jiupin_zhongzheng_llm_01",
+   "title": "中正品评具体标准未详",
+   "missing": "制度史 / 文献考据",
+   "where": "州郡中正品评记录",
+   "skills": [
+    "制度史",
+    "文献考据"
+   ],
+   "accept": "中正品评的具体标准",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "JIUZIG01",
    "scene": "jiuzi",
    "subject": "event:jz_1722",
@@ -2788,6 +2929,22 @@ window.SANDBOX_LEADS = {
    "effort": "1-2 周",
    "issue_url": null,
    "_src_line": 44
+  },
+  {
+   "id": "KAN_014",
+   "scene": "kanerjing_llm",
+   "subject": "place:turpan",
+   "title": "具體起源時間不詳",
+   "missing": "考古學 / 歷史地理",
+   "where": "吐魯番盆地",
+   "skills": [
+    "考古學",
+    "歷史地理"
+   ],
+   "accept": "需進一步考證",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "KEJUG01",
@@ -3061,6 +3218,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "LON_014",
+   "scene": "longquan_yao_llm",
+   "subject": "place:longquan",
+   "title": "窑址具体数量未详",
+   "missing": "考古调查 / 文献考证",
+   "where": "龙泉窑址考古",
+   "skills": [
+    "考古调查",
+    "文献考证"
+   ],
+   "accept": "需进一步考古发掘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "LL_GAP1",
    "scene": "lvlin",
    "subject": "event:ll_17",
@@ -3167,6 +3340,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "MIN_014",
+   "scene": "ming_yuzhen_xia_llm",
+   "subject": "event:ev_ming_yuzhen_xia_llm_03",
+   "title": "史料未载具体兵力",
+   "missing": "考据",
+   "where": "《明史》及《明实录》",
+   "skills": [
+    "考据"
+   ],
+   "accept": "补充兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "MIN_012",
@@ -3277,6 +3465,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "MOH_011",
+   "scene": "mohe_gold_llm",
+   "subject": "event:ev_mohe_gold_llm_01",
+   "title": "俄人私采情况未详",
+   "missing": "俄语 / 档案学",
+   "where": "俄罗斯远东档案馆",
+   "skills": [
+    "俄语",
+    "档案学"
+   ],
+   "accept": "俄方对私采漠河金矿的记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "NAN_014",
@@ -3510,6 +3714,22 @@ window.SANDBOX_LEADS = {
    "effort": "2-4 周",
    "issue_url": null,
    "_src_line": 7
+  },
+  {
+   "id": "NON_014",
+   "scene": "nongzhigao_llm",
+   "subject": "event:ev_nongzhigao_llm_04",
+   "title": "侬智高军伤亡数不详",
+   "missing": "军事史 / 文献考据",
+   "where": "归仁铺",
+   "skills": [
+    "军事史",
+    "文献考据"
+   ],
+   "accept": "需要更多史料佐证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "N11",
@@ -4346,6 +4566,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "SHE_012",
+   "scene": "shen_baozhen_taiwan_llm",
+   "subject": "event:ev_shen_baozhen_taiwan_llm_01",
+   "title": "日本侵台兵力不详",
+   "missing": "军事史 / 档案学",
+   "where": "台湾",
+   "skills": [
+    "军事史",
+    "档案学"
+   ],
+   "accept": "日本侵台兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SHENKUOG01",
    "scene": "shenkuo",
    "subject": "event:sk_1072",
@@ -4774,6 +5010,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "SUS_012",
+   "scene": "sushi_danzhou_llm",
+   "subject": "event:ev_sushi_danzhou_llm_01",
+   "title": "史料未明",
+   "missing": "历史考据",
+   "where": "danzhou",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查宋史本传",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SUS_015",
    "scene": "susong_llm",
    "subject": "event:ev_susong_llm_02",
@@ -4974,6 +5225,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "TAN_012",
+   "scene": "tan_ding_llm",
+   "subject": "event:ev_tan_ding_llm_03",
+   "title": "各省推行时间不一",
+   "missing": "历史地理 / 制度史",
+   "where": "各省地方志及赋役全书",
+   "skills": [
+    "历史地理",
+    "制度史"
+   ],
+   "accept": "补充各省推行时间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "TAN_015",
@@ -5458,6 +5725,22 @@ window.SANDBOX_LEADS = {
     "国际关系"
    ],
    "accept": "补充国际反应",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIA_014",
+   "scene": "xianggang_nanbeihang_llm",
+   "subject": "event:ev_xianggang_nanbeihang_llm_02",
+   "title": "南北行具体贸易额未详",
+   "missing": "贸易史 / 计量经济",
+   "where": "香港历史档案馆",
+   "skills": [
+    "贸易史",
+    "计量经济"
+   ],
+   "accept": "查找海关记录",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
@@ -6079,6 +6362,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "YUA_015",
+   "scene": "yuan_shangdu_llm",
+   "subject": "place:kaiping",
+   "title": "开平府具体建筑细节记载不详",
+   "missing": "考古学 / 建筑史",
+   "where": "开平府遗址考古发掘",
+   "skills": [
+    "考古学",
+    "建筑史"
+   ],
+   "accept": "考古证据可补充建筑布局细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "YUA_010",
    "scene": "yuan_xingsheng_llm",
    "subject": "event:ev_yuan_xingsheng_llm_02",
@@ -6592,6 +6891,38 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "ZUY_012",
+   "scene": "zuyong_diao_llm",
+   "subject": "event:ev_zuyong_diao_llm_01",
+   "title": "调纳绢绫絁或布之制",
+   "missing": "制度史 / 文献考据",
+   "where": "唐代赋役令及《唐六典》",
+   "skills": [
+    "制度史",
+    "文献考据"
+   ],
+   "accept": "需查证各乡具体折纳比例",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "ZUY_013",
+   "scene": "zuyong_diao_llm",
+   "subject": "event:ev_zuyong_diao_llm_01",
+   "title": "岭南折纳金银比例未明",
+   "missing": "经济史 / 地方文献",
+   "where": "岭南地方志及唐会要",
+   "skills": [
+    "经济史",
+    "地方文献"
+   ],
+   "accept": "需查证金银折纳比率",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   }
  ]
 };

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jianzhou_nuerhaci_llm_01",
+   "subject": "event:ev_jianzhou_nuerhaci_llm_01",
+   "year": 1583,
+   "era": "万历十一年",
+   "title": "十三遗甲起兵",
+   "kind": "战事",
+   "text": "努尔哈赤以十三遗甲起兵讨尼堪外兰",
+   "_source_idx": 0,
+   "_source_name": "清太祖武皇帝实录（起兵）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jianzhou_nuerhaci_llm_02",
+   "subject": "event:ev_jianzhou_nuerhaci_llm_02",
+   "year": 1587,
+   "era": "万历十五年",
+   "title": "筑费阿拉城",
+   "kind": "建置",
+   "text": "筑费阿拉城，定国政",
+   "_source_idx": 0,
+   "_source_name": "清太祖武皇帝实录（起兵）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jianzhou_nuerhaci_llm_03",
+   "subject": "event:ev_jianzhou_nuerhaci_llm_03",
+   "year": 1593,
+   "era": "万历二十一年",
+   "title": "古勒山之战",
+   "kind": "战事",
+   "text": "破九部之师于古勒山",
+   "_source_idx": 0,
+   "_source_name": "清太祖武皇帝实录（起兵）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

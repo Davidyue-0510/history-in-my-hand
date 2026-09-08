@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "taiwan",
+      "name": "台湾",
+      "type": "region",
+      "modern": "今中国台湾省",
+      "note": "沈葆桢治台核心区域",
+      "_source_idx": 0,
+      "_source_name": "清史稿·沈葆桢传（治台）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "bakuantong",
+      "name": "八通关",
+      "type": "yi",
+      "modern": "今中国台湾南投县",
+      "note": "古道所经",
+      "_source_idx": 0,
+      "_source_name": "清史稿·沈葆桢传（治台）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hengchun",
+      "name": "恒春",
+      "type": "city",
+      "modern": "今中国台湾屏东县恒春镇",
+      "note": "新置县",
+      "_source_idx": 0,
+      "_source_name": "清史稿·沈葆桢传（治台）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "anping",
+      "name": "安平",
+      "type": "fortress",
+      "modern": "今中国台湾台南市安平区",
+      "note": "筑炮台",
+      "_source_idx": 0,
+      "_source_name": "清史稿·沈葆桢传（治台）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qihou",
+      "name": "旗后",
+      "type": "fortress",
+      "modern": "今中国台湾高雄市旗津区",
+      "note": "筑炮台",
+      "_source_idx": 0,
+      "_source_name": "清史稿·沈葆桢传（治台）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

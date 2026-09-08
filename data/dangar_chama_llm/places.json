@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "dangar",
+      "name": "丹噶爾",
+      "type": "city",
+      "modern": "今中國青海省湟源縣",
+      "note": "青海湖入河湟之衝",
+      "_source_idx": 0,
+      "_source_name": "丹噶尔厅志·市易（茶马）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qinghaihu",
+      "name": "青海湖",
+      "type": "region",
+      "modern": "今中國青海省",
+      "note": "丹噶爾當其入河湟之衝",
+      "_source_idx": 0,
+      "_source_name": "丹噶尔厅志·市易（茶马）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hehuang",
+      "name": "河湟",
+      "type": "region",
+      "modern": "今中國青海省東部及甘肅省",
+      "note": "河湟之西一大都會",
+      "_source_idx": 0,
+      "_source_name": "丹噶尔厅志·市易（茶马）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

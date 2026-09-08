@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_mohe_gold_llm_01",
+   "subject": "event:ev_mohe_gold_llm_01",
+   "year": 1887,
+   "era": "光绪十三年",
+   "title": "奏派办矿",
+   "kind": "行政",
+   "text": "李鸿章奏派李金镛赴漠河办金矿",
+   "_source_idx": 0,
+   "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_mohe_gold_llm_02",
+   "subject": "event:ev_mohe_gold_llm_02",
+   "year": 1888,
+   "era": "光绪十四年",
+   "title": "漠河出金",
+   "kind": "建置",
+   "text": "漠河金矿正式出金，岁入颇丰",
+   "_source_idx": 0,
+   "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

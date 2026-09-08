@@ -1,0 +1,18 @@
+{
+  "places": [
+    {
+      "id": "shu",
+      "name": "蜀",
+      "type": "region",
+      "modern": "今中国四川",
+      "note": "交子发源地",
+      "_source_idx": 0,
+      "_source_name": "宋史·食货志（交子）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "ZUY__p01",
+   "name": "唐高祖",
+   "role": "皇帝",
+   "note": "武德二年颁行租庸调法",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·食货志（租庸调）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZUY__p02",
+   "name": "唐太宗",
+   "role": "皇帝",
+   "note": "贞观年间继续推行",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·食货志（租庸调）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

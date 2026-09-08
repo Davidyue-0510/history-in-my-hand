@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "qingzang",
+   "to": "longyou",
+   "type": "military",
+   "label": "蕃商驱马入塞路线",
+   "_source_idx": 0,
+   "_source_name": "新唐书·吐蕃传（茶马互市）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "changan",
+   "to": "longyou",
+   "type": "military",
+   "label": "汉贾出茶于市路线",
+   "_source_idx": 0,
+   "_source_name": "新唐书·吐蕃传（茶马互市）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

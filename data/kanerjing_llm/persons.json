@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "KAN__p01",
+   "name": "林則徐",
+   "role": "遣戍伊犁之大臣",
+   "note": "倡浚渠築壩",
+   "_source_idx": 0,
+   "_source_name": "新疆图志·沟渠志（坎儿井）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "KAN__p02",
+   "name": "左宗棠",
+   "role": "收復新疆之統帥",
+   "note": "營屯田修坎井",
+   "_source_idx": 0,
+   "_source_name": "新疆图志·沟渠志（坎儿井）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

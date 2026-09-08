@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "turpan",
+      "name": "吐魯番",
+      "type": "city",
+      "modern": "今中國新疆吐魯番市",
+      "note": "地燥少雨，用坎兒井",
+      "_source_idx": 0,
+      "_source_name": "新疆图志·沟渠志（坎儿井）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hami",
+      "name": "哈密",
+      "type": "city",
+      "modern": "今中國新疆哈密市",
+      "note": "地燥少雨，用坎兒井",
+      "_source_idx": 0,
+      "_source_name": "新疆图志·沟渠志（坎儿井）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yili",
+      "name": "伊犁",
+      "type": "region",
+      "modern": "今中國新疆伊犁哈薩克自治州",
+      "note": "林則徐遣戍地",
+      "_source_idx": 0,
+      "_source_name": "新疆图志·沟渠志（坎儿井）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xinjiang",
+      "name": "新疆",
+      "type": "region",
+      "modern": "今中國新疆維吾爾自治區",
+      "note": "左宗棠收復之地",
+      "_source_idx": 0,
+      "_source_name": "新疆图志·沟渠志（坎儿井）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

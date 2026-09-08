@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "XIA__p01",
+   "name": "粤东商贾",
+   "role": "行商群体",
+   "note": "香港开埠后聚集的华人商人",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p02",
+   "name": "潮州帮",
+   "role": "商帮",
+   "note": "南北行中潮州籍商帮",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p03",
+   "name": "南海帮",
+   "role": "商帮",
+   "note": "南北行中南海籍商帮",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p04",
+   "name": "顺德帮",
+   "role": "商帮",
+   "note": "南北行中顺德籍商帮",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

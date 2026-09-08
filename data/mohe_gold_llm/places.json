@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "mohe",
+      "name": "漠河",
+      "type": "region",
+      "modern": "今中国黑龙江省漠河市",
+      "note": "金矿所在地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jinchang_he",
+      "name": "金厂河",
+      "type": "region",
+      "modern": "今中国黑龙江省漠河市境内",
+      "note": "流民聚盗之地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "aihun",
+      "name": "瑷珲",
+      "type": "city",
+      "modern": "今中国黑龙江省黑河市爱辉区",
+      "note": "对岸俄屯之参照点",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "heilongjiang_shangyou",
+      "name": "黑龙江上游",
+      "type": "region",
+      "modern": "今中国黑龙江省北部",
+      "note": "漠河所在区域",
+      "_source_idx": 0,
+      "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

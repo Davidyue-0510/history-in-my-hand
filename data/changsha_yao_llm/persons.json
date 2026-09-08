@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "CHA__p01",
+   "name": "胡商",
+   "role": "外商",
+   "note": "市长沙窑器，远销波斯、东非",
+   "_source_idx": 0,
+   "_source_name": "元和郡县志·潭州（铜官窑）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHA__p02",
+   "name": "窑工",
+   "role": "工匠",
+   "note": "以千数，制釉下彩绘器",
+   "_source_idx": 0,
+   "_source_name": "元和郡县志·潭州（铜官窑）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

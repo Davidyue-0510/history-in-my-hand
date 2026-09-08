@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "kaiping",
+      "name": "开平府",
+      "type": "city",
+      "modern": "今内蒙古自治区锡林郭勒盟正蓝旗",
+      "note": "忽必烈所筑，后为上都",
+      "_source_idx": 0,
+      "_source_name": "元史·地理志（上都路）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yanjing",
+      "name": "燕京",
+      "type": "city",
+      "modern": "今北京市",
+      "note": "至元元年诏为中都",
+      "_source_idx": 0,
+      "_source_name": "元史·地理志（上都路）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "huanzhou",
+      "name": "桓州",
+      "type": "yi",
+      "modern": "今内蒙古自治区锡林郭勒盟正蓝旗北",
+      "note": "开平府位于其东",
+      "_source_idx": 0,
+      "_source_name": "元史·地理志（上都路）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "luanshui",
+      "name": "滦水",
+      "type": "region",
+      "modern": "今滦河上游",
+      "note": "开平府位于滦水北",
+      "_source_idx": 0,
+      "_source_name": "元史·地理志（上都路）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "longgang",
+      "name": "龙冈",
+      "type": "region",
+      "modern": "今内蒙古自治区锡林郭勒盟正蓝旗",
+      "note": "开平府筑城于此",
+      "_source_idx": 0,
+      "_source_name": "元史·地理志（上都路）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "longquan_yao_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  960,
+  1127
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1127,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.50 / 史实 0.50（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "longquan"
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "kanerjing_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1821,
+  1875
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1825,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.637,
+    "cum": -0.163
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1826,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.66 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.664,
+    "cum": -0.196
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1827,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.69 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.692,
+    "cum": -0.228
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1828,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.72 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.719,
+    "cum": -0.261
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1829,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.747,
+    "cum": -0.253
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1830,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.774,
+    "cum": -0.226
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1831,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.801,
+    "cum": -0.199
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1832,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.829,
+    "cum": -0.171
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "summary",
+   "year": 1875,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yili"
+  }
+ ]
+}

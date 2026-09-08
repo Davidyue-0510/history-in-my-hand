@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "type": "city",
+      "modern": "今重庆",
+      "note": "大夏都城",
+      "_source_idx": 0,
+      "_source_name": "明史·明玉珍传",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xia",
+      "name": "三峡",
+      "type": "region",
+      "modern": "今重庆至湖北宜昌长江段",
+      "note": "明师入峡路线",
+      "_source_idx": 0,
+      "_source_name": "明史·明玉珍传",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "suizhou",
+      "name": "随州",
+      "type": "city",
+      "modern": "今湖北随州",
+      "note": "明玉珍籍贯",
+      "_source_idx": 0,
+      "_source_name": "明史·明玉珍传",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

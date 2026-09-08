@@ -1,0 +1,193 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "ming_yuzhen_xia_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1357,
+  1371
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1359,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.61）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.614,
+    "new_to": 0.449,
+    "cum": -0.165
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1360,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.43 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.652,
+    "new_to": 0.432,
+    "cum": -0.22
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1361,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.41 / 史实 0.69）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.69,
+    "new_to": 0.415,
+    "cum": -0.275
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1362,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.40 / 史实 0.73）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.728,
+    "new_to": 0.398,
+    "cum": -0.33
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1363,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.38 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.766,
+    "new_to": 0.381,
+    "cum": -0.385
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1364,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.36 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.804,
+    "new_to": 0.364,
+    "cum": -0.44
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1365,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.35 / 史实 0.84）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.842,
+    "new_to": 0.347,
+    "cum": -0.495
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1366,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.33 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.88,
+    "new_to": 0.33,
+    "cum": -0.55
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1367,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.31 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.918,
+    "new_to": 0.313,
+    "cum": -0.605
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1368,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.30 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.956,
+    "new_to": 0.296,
+    "cum": -0.66
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1369,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.28 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.994,
+    "new_to": 0.279,
+    "cum": -0.715
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1370,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.262,
+    "cum": -0.738
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1371,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.245,
+    "cum": -0.755
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "summary",
+   "year": 1371,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.24 / 史实 1.00（偏离 -0.76）",
+   "evidence": {
+    "cum": -0.755,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "chongqing"
+  }
+ ]
+}

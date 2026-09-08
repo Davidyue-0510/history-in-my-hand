@@ -1,0 +1,1922 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "longquan_yao_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  960,
+  1127
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 982,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.15（本支 0.65 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.653,
+    "cum": 0.153
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 983,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.16（本支 0.66 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.659,
+    "cum": 0.159
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 984,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.17（本支 0.67 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.666,
+    "cum": 0.166
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 985,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.17（本支 0.67 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.672,
+    "cum": 0.172
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 986,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.18（本支 0.68 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.679,
+    "cum": 0.179
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 987,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.19（本支 0.69 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.686,
+    "cum": 0.186
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 988,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.19（本支 0.69 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.692,
+    "cum": 0.192
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 989,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.20（本支 0.70 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.699,
+    "cum": 0.199
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 990,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.21（本支 0.71 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.706,
+    "cum": 0.206
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 991,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.21（本支 0.71 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.712,
+    "cum": 0.212
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 992,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.22（本支 0.72 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.719,
+    "cum": 0.219
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 993,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.23（本支 0.73 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.725,
+    "cum": 0.225
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 994,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.23（本支 0.73 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.732,
+    "cum": 0.232
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 995,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.24（本支 0.74 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.739,
+    "cum": 0.239
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 996,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.24（本支 0.75 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.745,
+    "cum": 0.245
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 997,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.25（本支 0.75 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.752,
+    "cum": 0.252
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 998,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.26（本支 0.76 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.759,
+    "cum": 0.259
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 999,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.27（本支 0.77 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.765,
+    "cum": 0.265
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1000,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.27（本支 0.77 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.772,
+    "cum": 0.272
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1001,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.28（本支 0.78 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.779,
+    "cum": 0.279
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1002,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.28（本支 0.79 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.785,
+    "cum": 0.285
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1003,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.29（本支 0.79 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.792,
+    "cum": 0.292
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1004,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.30（本支 0.80 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.798,
+    "cum": 0.298
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1005,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.30（本支 0.81 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.805,
+    "cum": 0.305
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1006,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.31（本支 0.81 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.812,
+    "cum": 0.312
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1007,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.32（本支 0.82 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.818,
+    "cum": 0.318
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1008,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.33（本支 0.82 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.825,
+    "cum": 0.325
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1009,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.33（本支 0.83 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.832,
+    "cum": 0.332
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1010,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.34（本支 0.84 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.838,
+    "cum": 0.338
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1011,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.34（本支 0.84 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.845,
+    "cum": 0.345
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1012,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.35（本支 0.85 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.851,
+    "cum": 0.351
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1013,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.36（本支 0.86 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.858,
+    "cum": 0.358
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1014,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.36（本支 0.86 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.865,
+    "cum": 0.365
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1015,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.37（本支 0.87 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.871,
+    "cum": 0.371
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1016,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.38（本支 0.88 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.878,
+    "cum": 0.378
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1017,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.39（本支 0.88 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.885,
+    "cum": 0.385
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1018,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.39（本支 0.89 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.891,
+    "cum": 0.391
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1019,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.40（本支 0.90 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.898,
+    "cum": 0.398
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1020,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.41（本支 0.90 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.905,
+    "cum": 0.405
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1021,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.41（本支 0.91 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.911,
+    "cum": 0.411
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1022,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.42（本支 0.92 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.918,
+    "cum": 0.418
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1023,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.42（本支 0.92 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.924,
+    "cum": 0.424
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1024,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.43（本支 0.93 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.931,
+    "cum": 0.431
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1025,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.44（本支 0.94 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.938,
+    "cum": 0.438
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1026,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.44（本支 0.94 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.944,
+    "cum": 0.444
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1027,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.45（本支 0.95 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.951,
+    "cum": 0.451
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1028,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.46（本支 0.96 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.958,
+    "cum": 0.458
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1029,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.46（本支 0.96 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.964,
+    "cum": 0.464
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1030,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.47（本支 0.97 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.971,
+    "cum": 0.471
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1031,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.48（本支 0.98 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.977,
+    "cum": 0.477
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1032,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.48（本支 0.98 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.984,
+    "cum": 0.484
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1033,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.49（本支 0.99 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.991,
+    "cum": 0.491
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1034,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 0.997,
+    "cum": 0.497
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1035,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1036,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1037,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1038,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1039,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1040,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1041,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1042,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1043,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1044,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1045,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1046,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1047,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1048,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1049,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1050,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1051,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1052,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1053,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1054,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1055,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1056,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1057,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1058,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1059,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1060,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1061,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1062,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1063,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1064,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1065,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1066,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1067,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1068,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1069,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1070,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1071,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1072,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1073,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1074,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1075,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1076,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1077,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1078,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1079,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1080,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1081,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1082,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1083,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1084,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1085,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1086,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1087,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1088,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1089,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1090,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1091,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1092,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1093,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1094,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1095,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1096,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1097,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1098,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1099,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1100,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1101,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1102,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1103,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1104,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1105,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1106,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1107,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1108,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1109,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1110,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1111,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1112,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1113,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1114,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1115,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1116,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1117,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1118,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1119,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1120,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1121,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1122,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1123,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1124,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1125,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1126,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1127,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.50（本支 1.00 / 史实 0.50）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.5,
+    "new_to": 1.0,
+    "cum": 0.5
+   },
+   "place_id": "longquan"
+  },
+  {
+   "kind": "summary",
+   "year": 1127,
+   "severity": "bad",
+   "description": "终局改革指数：本支 1.00 / 史实 0.50（偏离 0.50）",
+   "evidence": {
+    "cum": 0.5,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "longquan"
+  }
+ ]
+}

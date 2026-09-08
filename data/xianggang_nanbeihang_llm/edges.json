@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "hongkong",
+   "to": "nanyang",
+   "type": "military",
+   "label": "南货贩运路线",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "hongkong",
+   "to": "shengao",
+   "type": "military",
+   "label": "北货通商路线",
+   "_source_idx": 0,
+   "_source_name": "香港史·南北行（华商）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "努尔哈赤",
+   "role": "建州女真首领",
+   "note": "后金开国者",
+   "_source_idx": 0,
+   "_source_name": "清太祖武皇帝实录（起兵）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "尼堪外兰",
+   "role": "图伦城主",
+   "note": "努尔哈赤讨伐对象",
+   "_source_idx": 0,
+   "_source_name": "清太祖武皇帝实录（起兵）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

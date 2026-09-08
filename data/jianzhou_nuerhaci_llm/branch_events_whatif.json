@@ -1,0 +1,141 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "jianzhou_nuerhaci_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1583,
+  1593
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1585,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.45 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.635,
+    "new_to": 0.454,
+    "cum": -0.181
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1586,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.438,
+    "cum": -0.242
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1587,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.42 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.423,
+    "cum": -0.302
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1588,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.41 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.408,
+    "cum": -0.362
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1589,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.39 / 史实 0.81）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.815,
+    "new_to": 0.392,
+    "cum": -0.423
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1590,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.48（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.377,
+    "cum": -0.483
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1591,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.54（本支 0.36 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.905,
+    "new_to": 0.361,
+    "cum": -0.544
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1592,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.35 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.346,
+    "cum": -0.604
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1593,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.33 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.995,
+    "new_to": 0.331,
+    "cum": -0.664
+   },
+   "place_id": "sukesuhu"
+  },
+  {
+   "kind": "summary",
+   "year": 1593,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.33 / 史实 0.99（偏离 -0.66）",
+   "evidence": {
+    "cum": -0.664,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "sukesuhu"
+  }
+ ]
+}

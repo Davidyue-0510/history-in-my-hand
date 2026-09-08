@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "NON__p01",
+   "name": "侬智高",
+   "role": "广源州蛮首领，自称仁惠皇帝",
+   "note": "交趾叛将之子，起事反宋",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "NON__p02",
+   "name": "狄青",
+   "role": "宋宣抚使",
+   "note": "率军平定侬智高",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "shen_baozhen_taiwan_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1874,
+  1895
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.45 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.644,
+    "new_to": 0.45,
+    "cum": -0.194
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.437,
+    "cum": -0.243
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.42 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.716,
+    "new_to": 0.424,
+    "cum": -0.292
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.41 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.752,
+    "new_to": 0.412,
+    "cum": -0.34
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.40 / 史实 0.79）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.788,
+    "new_to": 0.399,
+    "cum": -0.389
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.39 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.824,
+    "new_to": 0.387,
+    "cum": -0.437
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.37 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.374,
+    "cum": -0.486
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.53（本支 0.36 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.896,
+    "new_to": 0.362,
+    "cum": -0.534
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.58（本支 0.35 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.932,
+    "new_to": 0.349,
+    "cum": -0.583
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.34 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.968,
+    "new_to": 0.336,
+    "cum": -0.632
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.32 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.324,
+    "cum": -0.676
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.31 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.311,
+    "cum": -0.689
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.299,
+    "cum": -0.701
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.286,
+    "cum": -0.714
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.273,
+    "cum": -0.727
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.261,
+    "cum": -0.739
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.248,
+    "cum": -0.752
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.236,
+    "cum": -0.764
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1895,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.223,
+    "cum": -0.777
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "summary",
+   "year": 1895,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.22 / 史实 1.00（偏离 -0.78）",
+   "evidence": {
+    "cum": -0.777,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "taiwan"
+  }
+ ]
+}

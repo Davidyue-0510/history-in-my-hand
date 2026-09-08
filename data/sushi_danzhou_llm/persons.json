@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "SUS__p01",
+   "name": "苏轼",
+   "role": "琼州别驾、昌化军安置",
+   "note": "北宋文学家，贬儋州兴文教",
+   "_source_idx": 0,
+   "_source_name": "东坡先生年谱（贬儋）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

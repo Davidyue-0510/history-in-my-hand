@@ -1,0 +1,180 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "nongzhigao_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1041,
+  1053
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1042,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.447,
+    "cum": -0.173
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1043,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.42 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.421,
+    "cum": -0.259
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1044,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.39 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.394,
+    "cum": -0.346
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1045,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.43（本支 0.37 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.368,
+    "cum": -0.432
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1046,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.52（本支 0.34 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.341,
+    "cum": -0.519
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1047,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.31 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.315,
+    "cum": -0.605
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1048,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.29 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.288,
+    "cum": -0.692
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1049,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.262,
+    "cum": -0.738
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1050,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.235,
+    "cum": -0.765
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1051,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.209,
+    "cum": -0.791
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1052,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.182,
+    "cum": -0.818
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1053,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.156,
+    "cum": -0.844
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "summary",
+   "year": 1053,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.16 / 史实 1.00（偏离 -0.84）",
+   "evidence": {
+    "cum": -0.844,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "tanyou"
+  }
+ ]
+}

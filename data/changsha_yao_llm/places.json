@@ -1,0 +1,102 @@
+{
+  "places": [
+    {
+      "id": "tongguan",
+      "name": "铜官镇",
+      "type": "city",
+      "modern": "今中国湖南省长沙市望城区",
+      "note": "窑址所在",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "changsha_yao",
+      "name": "长沙窑",
+      "type": "yi",
+      "modern": "今中国湖南省长沙市铜官镇",
+      "note": "唐窑，釉下彩绘",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xiangshui",
+      "name": "湘水",
+      "type": "region",
+      "modern": "今中国湖南省湘江",
+      "note": "窑依水运",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "bosi",
+      "name": "波斯",
+      "type": "region",
+      "modern": "今伊朗",
+      "note": "远销地",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "type": "city",
+      "modern": "今中国江苏省扬州市",
+      "note": "中转港",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 119.41,
+      "lat": 32.39,
+      "geo_note": "今江苏扬州"
+    },
+    {
+      "id": "dongfei",
+      "name": "东非",
+      "type": "region",
+      "modern": "今非洲东部",
+      "note": "远销地",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dongting",
+      "name": "洞庭",
+      "type": "region",
+      "modern": "今中国湖南省洞庭湖",
+      "note": "出湘水经此",
+      "_source_idx": 0,
+      "_source_name": "元和郡县志·潭州（铜官窑）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

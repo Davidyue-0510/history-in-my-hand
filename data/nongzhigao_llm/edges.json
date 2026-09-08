@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "guangyuan",
+   "to": "tanyou",
+   "type": "military",
+   "label": "侬智高据傥犹州",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "tanyou",
+   "to": "yongzhou",
+   "type": "military",
+   "label": "侬智高陷邕州",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "yongzhou",
+   "to": "guangzhou",
+   "type": "military",
+   "label": "侬智高连破诸州围广州",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "kunlunguan",
+   "to": "guirenpu",
+   "type": "battle",
+   "label": "狄青夜度昆仑关败侬智高",
+   "_source_idx": 0,
+   "_source_name": "宋史·狄青传（侬智高）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

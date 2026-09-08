@@ -1,0 +1,18 @@
+{
+  "places": [
+    {
+      "id": "ling_nan",
+      "name": "岭南",
+      "type": "region",
+      "modern": "今中国岭南地区",
+      "note": "纳半谷半金银",
+      "_source_idx": 0,
+      "_source_name": "旧唐书·食货志（租庸调）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

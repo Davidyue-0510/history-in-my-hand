@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_yuan_shangdu_llm_01",
+   "subject": "event:ev_yuan_shangdu_llm_01",
+   "year": 1252,
+   "era": "壬子年（1252）",
+   "title": "筑开平府",
+   "kind": "建置",
+   "text": "于桓州东、滦水北龙冈筑城，号开平府",
+   "_source_idx": 0,
+   "_source_name": "元史·地理志（上都路）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuan_shangdu_llm_02",
+   "subject": "event:ev_yuan_shangdu_llm_02",
+   "year": 1260,
+   "era": "中统元年（1260）",
+   "title": "世祖即位上都",
+   "kind": "行政",
+   "text": "世祖即位，以开平为上都",
+   "_source_idx": 0,
+   "_source_name": "元史·地理志（上都路）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuan_shangdu_llm_03",
+   "subject": "event:ev_yuan_shangdu_llm_03",
+   "year": 1264,
+   "era": "至元元年（1264）",
+   "title": "诏燕京为中都",
+   "kind": "行政",
+   "text": "诏燕京为中都，仍岁幸上都避暑",
+   "_source_idx": 0,
+   "_source_name": "元史·地理志（上都路）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

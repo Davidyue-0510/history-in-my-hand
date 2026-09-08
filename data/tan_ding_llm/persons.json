@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "李维钧",
+   "role": "直隶巡抚",
+   "note": "疏请摊丁入亩",
+   "_source_idx": 0,
+   "_source_name": "清史稿·食货志（摊丁入亩）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p02",
+   "name": "雍正帝",
+   "role": "清朝皇帝",
+   "note": "允准摊丁入亩之议",
+   "_source_idx": 0,
+   "_source_name": "清史稿·食货志（摊丁入亩）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

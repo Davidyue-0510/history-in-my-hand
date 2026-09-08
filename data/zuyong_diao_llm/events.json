@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_zuyong_diao_llm_01",
+   "subject": "event:ev_zuyong_diao_llm_01",
+   "year": 619,
+   "era": "武德二年",
+   "title": "颁行租庸调法",
+   "kind": "制度",
+   "text": "既定均田，乃行租庸调法",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·食货志（租庸调）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zuyong_diao_llm_02",
+   "subject": "event:ev_zuyong_diao_llm_02",
+   "year": 627,
+   "era": "贞观年间",
+   "title": "太宗推行租庸调",
+   "kind": "制度",
+   "text": "贞观行之，府兵与均田相维",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·食货志（租庸调）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

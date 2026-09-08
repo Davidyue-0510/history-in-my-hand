@@ -1,20 +1,23 @@
 {
-  "scenes_total": 302,
-  "historical": 293,
+  "scenes_total": 320,
+  "historical": 311,
   "fictional": 9,
-  "assertions_total": 4623,
-  "sources_total": 279,
+  "assertions_total": 4864,
+  "sources_total": 297,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
     "aomen_aomen",
     "aomen_huigui_llm",
     "aomen_kaibu_llm",
+    "aomen_macanese_llm",
     "aomen_mage_llm",
     "aomen_portugal_llm",
     "bisheng_movable_type",
     "bohai_kingdom_llm",
+    "chama_xizang_llm",
     "changping_llm",
+    "changsha_yao_llm",
     "chibi_llm",
     "chongqing_capital_llm",
     "chongqing_diaoyucheng",
@@ -23,6 +26,7 @@
     "chu_han",
     "chuhai_llm",
     "dagukou_battle_llm",
+    "dangar_chama_llm",
     "dongbei_kanglian_llm",
     "dujiangyan",
     "feishui_llm",
@@ -69,16 +73,23 @@
     "jiangxi_jingdezhen",
     "jiangxi_nanchang_llm",
     "jiangxi_ruijin_llm",
+    "jianzhou_nuerhaci_llm",
+    "jiaozi_llm",
     "jilin_bohai_llm",
     "jilin_changchun_llm",
     "jilin_gaogouli",
     "jilin_gaogouli_llm",
     "jinshang_llm",
+    "jiupin_zhongzheng_llm",
+    "kanerjing_llm",
     "liangzhou_meeting_llm",
+    "longquan_yao_llm",
     "ming_qing",
     "ming_tumu_llm",
+    "ming_yuzhen_xia_llm",
     "ming_zhenghe_llm",
     "minyue_llm",
+    "mohe_gold_llm",
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
     "neimenggu_genghis_llm",
@@ -87,6 +98,7 @@
     "ningxia_xiaoguan_llm",
     "ningxia_xixia",
     "ningxia_xixia_llm",
+    "nongzhigao_llm",
     "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
     "qin_fenshu_llm",
@@ -109,6 +121,7 @@
     "shanxi_jinshang_llm",
     "shanxi_sanjiafenjin",
     "shanxi_yungang",
+    "shen_baozhen_taiwan_llm",
     "shu_han_found_llm",
     "sichuan_dujiangyan_llm",
     "sichuan_zhuge",
@@ -121,11 +134,13 @@
     "sui_keju",
     "sui_mie_chen_llm",
     "sui_yang_llm",
+    "sushi_danzhou_llm",
     "susong_llm",
     "taiwan_shilang_llm",
     "taiwan_wushe_llm",
     "taiwan_zhengchenggong",
     "taiwan_zhengchenggong_llm",
+    "tan_ding_llm",
     "tang",
     "tang_anshi_llm",
     "tang_huangchao_llm",
@@ -143,6 +158,7 @@
     "xianggang_1941_llm",
     "xianggang_dongjiang_llm",
     "xianggang_huigui_llm",
+    "xianggang_nanbeihang_llm",
     "xianggang_songmo_llm",
     "xianggang_tunmen",
     "xinjiang_xiyu",
@@ -154,6 +170,7 @@
     "xizang_tubo_llm",
     "xizang_wencheng",
     "yangwu_llm",
+    "yuan_shangdu_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "yunnan_dali",
@@ -164,10 +181,11 @@
     "zhejiang_linan_llm",
     "zhejiang_longquan",
     "zheng_chenggong_taiwan_llm",
-    "zhuxi"
+    "zhuxi",
+    "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 419,
+  "leads_total": 440,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2333,6 +2351,132 @@
       "kind": "reform",
       "assertions": 100,
       "factions": {}
+    },
+    {
+      "id": "jiaozi_llm",
+      "title": "宋·交子（世界最早纸币）",
+      "kind": "economic",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "aomen_macanese_llm",
+      "title": "清·澳门土生葡人",
+      "kind": "fusion",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "chama_xizang_llm",
+      "title": "唐蕃·茶马互市",
+      "kind": "exchange",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "changsha_yao_llm",
+      "title": "唐·长沙窑（铜官窑）",
+      "kind": "tech",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "dangar_chama_llm",
+      "title": "清·丹噶尔厅茶马互市",
+      "kind": "exchange",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "jianzhou_nuerhaci_llm",
+      "title": "明·建州女真崛起（努尔哈赤）",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "jiupin_zhongzheng_llm",
+      "title": "曹魏·九品中正制",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "kanerjing_llm",
+      "title": "清·新疆坎儿井",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "longquan_yao_llm",
+      "title": "宋·龙泉窑",
+      "kind": "tech",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "ming_yuzhen_xia_llm",
+      "title": "元末·明玉珍大夏国",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "mohe_gold_llm",
+      "title": "清·漠河金矿",
+      "kind": "engineering",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "nongzhigao_llm",
+      "title": "宋·侬智高起事",
+      "kind": "uprising",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shen_baozhen_taiwan_llm",
+      "title": "清·沈葆桢治台",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "sushi_danzhou_llm",
+      "title": "宋·苏东坡贬儋州",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "tan_ding_llm",
+      "title": "清·摊丁入亩",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "xianggang_nanbeihang_llm",
+      "title": "清·香港南北行华商",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "yuan_shangdu_llm",
+      "title": "元·上都（开平）",
+      "kind": "dynasty",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "zuyong_diao_llm",
+      "title": "唐·租庸调制",
+      "kind": "reform",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2637,6 +2781,24 @@
     "qingli_reform_llm": "宋·庆历新政（范仲淹十条）",
     "wuxu_reform_llm": "清·戊戌变法（百日维新）",
     "yangwu_llm": "清·洋务运动（自强求富）",
-    "wangmang_reform_llm": "新莽·王莽改制（托古变法）"
+    "wangmang_reform_llm": "新莽·王莽改制（托古变法）",
+    "jiaozi_llm": "宋·交子（世界最早纸币）",
+    "aomen_macanese_llm": "清·澳门土生葡人",
+    "chama_xizang_llm": "唐蕃·茶马互市",
+    "changsha_yao_llm": "唐·长沙窑（铜官窑）",
+    "dangar_chama_llm": "清·丹噶尔厅茶马互市",
+    "jianzhou_nuerhaci_llm": "明·建州女真崛起（努尔哈赤）",
+    "jiupin_zhongzheng_llm": "曹魏·九品中正制",
+    "kanerjing_llm": "清·新疆坎儿井",
+    "longquan_yao_llm": "宋·龙泉窑",
+    "ming_yuzhen_xia_llm": "元末·明玉珍大夏国",
+    "mohe_gold_llm": "清·漠河金矿",
+    "nongzhigao_llm": "宋·侬智高起事",
+    "shen_baozhen_taiwan_llm": "清·沈葆桢治台",
+    "sushi_danzhou_llm": "宋·苏东坡贬儋州",
+    "tan_ding_llm": "清·摊丁入亩",
+    "xianggang_nanbeihang_llm": "清·香港南北行华商",
+    "yuan_shangdu_llm": "元·上都（开平）",
+    "zuyong_diao_llm": "唐·租庸调制"
   }
 }

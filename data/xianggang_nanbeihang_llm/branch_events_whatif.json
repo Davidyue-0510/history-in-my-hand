@@ -1,0 +1,778 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "xianggang_nanbeihang_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1842,
+  1900
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1843,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.45,
+    "cum": -0.17
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1844,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.43 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.425,
+    "cum": -0.255
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1845,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.40 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.401,
+    "cum": -0.339
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1846,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.38 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.376,
+    "cum": -0.424
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1847,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.51（本支 0.35 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.351,
+    "cum": -0.509
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1848,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.59（本支 0.33 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.326,
+    "cum": -0.594
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1849,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.30 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.301,
+    "cum": -0.679
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1850,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.276,
+    "cum": -0.724
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1851,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.252,
+    "cum": -0.748
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1852,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.227,
+    "cum": -0.773
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1853,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.202,
+    "cum": -0.798
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1854,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.177,
+    "cum": -0.823
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1855,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.152,
+    "cum": -0.848
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1856,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.127,
+    "cum": -0.873
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1857,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.103,
+    "cum": -0.897
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1858,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.078,
+    "cum": -0.922
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1859,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.053,
+    "cum": -0.947
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1860,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.028,
+    "cum": -0.972
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1861,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.003,
+    "cum": -0.997
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1862,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1863,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1864,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1865,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1866,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1867,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1871,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1873,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1874,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1875,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1876,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1895,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1896,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1897,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1898,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1899,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1900,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "hongkong"
+  },
+  {
+   "kind": "summary",
+   "year": 1900,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "hongkong"
+  }
+ ]
+}

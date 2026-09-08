@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_chama_xizang_llm_01",
+   "subject": "event:ev_chama_xizang_llm_01",
+   "year": 641,
+   "era": "贞观十五年",
+   "title": "文成公主入蕃",
+   "kind": "外交",
+   "text": "文成公主入吐蕃，唐蕃通好",
+   "_source_idx": 0,
+   "_source_name": "新唐书·吐蕃传（茶马互市）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chama_xizang_llm_02",
+   "subject": "event:ev_chama_xizang_llm_02",
+   "year": 641,
+   "era": "贞观十五年",
+   "title": "互市始兴",
+   "kind": "行政",
+   "text": "唐蕃互市始兴，茶马贸易渐盛",
+   "_source_idx": 0,
+   "_source_name": "新唐书·吐蕃传（茶马互市）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

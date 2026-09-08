@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "sushi_danzhou_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1097,
+  1100
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1098,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.447,
+    "cum": -0.173
+   },
+   "place_id": "zaijiutang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1099,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.42 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.421,
+    "cum": -0.259
+   },
+   "place_id": "zaijiutang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1100,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.39 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.394,
+    "cum": -0.346
+   },
+   "place_id": "zaijiutang"
+  },
+  {
+   "kind": "summary",
+   "year": 1100,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.39 / 史实 0.74（偏离 -0.35）",
+   "evidence": {
+    "cum": -0.346,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "zaijiutang"
+  }
+ ]
+}

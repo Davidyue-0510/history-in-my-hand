@@ -1,0 +1,726 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "kanerjing_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1821,
+  1875
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1822,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.462,
+    "cum": -0.158
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1823,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.442,
+    "cum": -0.238
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1824,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.42 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.423,
+    "cum": -0.317
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1825,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.40 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.404,
+    "cum": -0.396
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1826,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.385,
+    "cum": -0.475
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1827,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.37 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.366,
+    "cum": -0.554
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1828,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.35 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.347,
+    "cum": -0.633
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1829,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.33 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.327,
+    "cum": -0.673
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1830,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.31 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.308,
+    "cum": -0.692
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1831,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.289,
+    "cum": -0.711
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1832,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.27,
+    "cum": -0.73
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1833,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.251,
+    "cum": -0.749
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1834,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.232,
+    "cum": -0.768
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1835,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.212,
+    "cum": -0.788
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1836,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.193,
+    "cum": -0.807
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1837,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.174,
+    "cum": -0.826
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1838,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.155,
+    "cum": -0.845
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1839,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.136,
+    "cum": -0.864
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1840,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.116,
+    "cum": -0.884
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1841,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.097,
+    "cum": -0.903
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1842,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.078,
+    "cum": -0.922
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1843,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.059,
+    "cum": -0.941
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1844,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.04,
+    "cum": -0.96
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1845,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.021,
+    "cum": -0.979
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1846,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.001,
+    "cum": -0.999
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1847,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1848,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1849,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1850,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1851,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1852,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1853,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1854,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1855,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1856,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1857,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1858,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1859,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1860,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1861,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1862,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1863,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1864,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1865,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1866,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1867,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1871,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1873,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1874,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "divergence",
+   "year": 1875,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yili"
+  },
+  {
+   "kind": "summary",
+   "year": 1875,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yili"
+  }
+ ]
+}

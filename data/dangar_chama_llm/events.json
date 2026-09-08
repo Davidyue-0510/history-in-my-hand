@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_dangar_chama_llm_01",
+   "subject": "event:ev_dangar_chama_llm_01",
+   "year": 1725,
+   "era": "雍正三年",
+   "title": "設丹噶爾廳",
+   "kind": "建置",
+   "text": "雍正設廳，置茶馬互市",
+   "_source_idx": 0,
+   "_source_name": "丹噶尔厅志·市易（茶马）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_dangar_chama_llm_02",
+   "subject": "event:ev_dangar_chama_llm_02",
+   "year": 1736,
+   "era": "乾隆元年",
+   "title": "茶馬互市鼎盛",
+   "kind": "其他",
+   "text": "乾隆間商賈駢集，號小北京",
+   "_source_idx": 0,
+   "_source_name": "丹噶尔厅志·市易（茶马）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

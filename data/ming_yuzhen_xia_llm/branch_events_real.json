@@ -1,0 +1,76 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "ming_yuzhen_xia_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1357,
+  1371
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1367,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.76 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.918,
+    "new_to": 0.764,
+    "cum": -0.154
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1368,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.79 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.956,
+    "new_to": 0.788,
+    "cum": -0.168
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1369,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.81 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.994,
+    "new_to": 0.812,
+    "cum": -0.182
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1370,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.836,
+    "cum": -0.164
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "summary",
+   "year": 1371,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.86 / 史实 1.00（偏离 -0.14）",
+   "evidence": {
+    "cum": -0.14,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "chongqing"
+  }
+ ]
+}

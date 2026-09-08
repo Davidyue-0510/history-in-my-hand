@@ -10,14 +10,40 @@
  "events": [
   {
    "kind": "divergence",
-   "year": 18,
+   "year": 16,
    "severity": "warn",
-   "description": "改革指数偏离史实 -0.15（本支 0.68 / 史实 0.84）",
+   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.86）",
    "evidence": {
     "rule": "R_reform",
-    "real_to": 0.84,
-    "new_to": 0.685,
-    "cum": -0.155
+    "real_to": 0.86,
+    "new_to": 0.695,
+    "cum": -0.165
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 17,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.72 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.905,
+    "new_to": 0.72,
+    "cum": -0.185
+   },
+   "place_id": "junguo"
+  },
+  {
+   "kind": "divergence",
+   "year": 18,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.74 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.744,
+    "cum": -0.206
    },
    "place_id": "junguo"
   },
@@ -25,12 +51,12 @@
    "kind": "divergence",
    "year": 19,
    "severity": "warn",
-   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.87）",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 0.99）",
    "evidence": {
     "rule": "R_reform",
-    "real_to": 0.874,
-    "new_to": 0.703,
-    "cum": -0.171
+    "real_to": 0.995,
+    "new_to": 0.769,
+    "cum": -0.226
    },
    "place_id": "junguo"
   },
@@ -38,12 +64,12 @@
    "kind": "divergence",
    "year": 20,
    "severity": "warn",
-   "description": "改革指数偏离史实 -0.19（本支 0.72 / 史实 0.91）",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
    "evidence": {
     "rule": "R_reform",
-    "real_to": 0.908,
-    "new_to": 0.721,
-    "cum": -0.187
+    "real_to": 1.0,
+    "new_to": 0.793,
+    "cum": -0.207
    },
    "place_id": "junguo"
   },
@@ -51,12 +77,12 @@
    "kind": "divergence",
    "year": 21,
    "severity": "warn",
-   "description": "改革指数偏离史实 -0.20（本支 0.74 / 史实 0.94）",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
    "evidence": {
     "rule": "R_reform",
-    "real_to": 0.942,
-    "new_to": 0.74,
-    "cum": -0.202
+    "real_to": 1.0,
+    "new_to": 0.818,
+    "cum": -0.182
    },
    "place_id": "junguo"
   },
@@ -64,35 +90,22 @@
    "kind": "divergence",
    "year": 22,
    "severity": "warn",
-   "description": "改革指数偏离史实 -0.22（本支 0.76 / 史实 0.98）",
-   "evidence": {
-    "rule": "R_reform",
-    "real_to": 0.976,
-    "new_to": 0.758,
-    "cum": -0.218
-   },
-   "place_id": "junguo"
-  },
-  {
-   "kind": "divergence",
-   "year": 23,
-   "severity": "warn",
-   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
    "evidence": {
     "rule": "R_reform",
     "real_to": 1.0,
-    "new_to": 0.777,
-    "cum": -0.223
+    "new_to": 0.842,
+    "cum": -0.158
    },
    "place_id": "junguo"
   },
   {
    "kind": "summary",
    "year": 23,
-   "severity": "warn",
-   "description": "终局改革指数：本支 0.78 / 史实 1.00（偏离 -0.22）",
+   "severity": "info",
+   "description": "终局改革指数：本支 0.87 / 史实 1.00（偏离 -0.13）",
    "evidence": {
-    "cum": -0.223,
+    "cum": -0.134,
     "match": 0,
     "total": 1
    },

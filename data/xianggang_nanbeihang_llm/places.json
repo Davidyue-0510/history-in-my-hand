@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "hongkong",
+      "name": "香港",
+      "type": "port",
+      "modern": "中国香港",
+      "note": "开埠为自由港",
+      "_source_idx": 0,
+      "_source_name": "香港史·南北行（华商）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wenxian_street",
+      "name": "文咸街",
+      "type": "region",
+      "modern": "中国香港文咸街",
+      "note": "南北行集中地",
+      "_source_idx": 0,
+      "_source_name": "香港史·南北行（华商）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shanghuan",
+      "name": "上环",
+      "type": "region",
+      "modern": "中国香港上环",
+      "note": "南北行所在区域",
+      "_source_idx": 0,
+      "_source_name": "香港史·南北行（华商）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nanyang",
+      "name": "南洋",
+      "type": "region",
+      "modern": "东南亚",
+      "note": "南货来源地",
+      "_source_idx": 0,
+      "_source_name": "香港史·南北行（华商）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shengao",
+      "name": "省澳",
+      "type": "region",
+      "modern": "中国广东广州及澳门",
+      "note": "北货通商地",
+      "_source_idx": 0,
+      "_source_name": "香港史·南北行（华商）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

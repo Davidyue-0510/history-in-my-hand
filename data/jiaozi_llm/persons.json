@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "薛田",
+   "role": "北宋官员",
+   "note": "请官置交子务",
+   "_source_idx": 0,
+   "_source_name": "宋史·食货志（交子）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "寇瑊",
+   "role": "北宋官员",
+   "note": "守蜀，禁民私造",
+   "_source_idx": 0,
+   "_source_name": "宋史·食货志（交子）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p03",
+   "name": "富民十六户",
+   "role": "蜀地富商",
+   "note": "主交子，后衰败",
+   "_source_idx": 0,
+   "_source_name": "宋史·食货志（交子）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

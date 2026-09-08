@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "yanjing",
+   "to": "kaiping",
+   "type": "military",
+   "label": "岁幸上都避暑路线",
+   "_source_idx": 0,
+   "_source_name": "元史·地理志（上都路）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

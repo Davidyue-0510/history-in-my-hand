@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_macanese_llm_01",
+   "subject": "event:ev_aomen_macanese_llm_01",
+   "year": 1553,
+   "era": "嘉靖三十二年",
+   "title": "葡人获许居留澳门",
+   "kind": "建置",
+   "text": "葡人获准居留澳门，形成聚居",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略·蕃俗（土生葡人）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_macanese_llm_02",
+   "subject": "event:ev_aomen_macanese_llm_02",
+   "year": 1557,
+   "era": "嘉靖三十六年",
+   "title": "澳门开埠",
+   "kind": "建置",
+   "text": "澳门正式开埠，贸易繁荣",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略·蕃俗（土生葡人）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_macanese_llm_03",
+   "subject": "event:ev_aomen_macanese_llm_03",
+   "year": 1600,
+   "era": "万历年间",
+   "title": "土生族群形成",
+   "kind": "社会",
+   "text": "土生葡人群体形成，文化交融",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略·蕃俗（土生葡人）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

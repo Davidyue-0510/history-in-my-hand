@@ -1,0 +1,102 @@
+{
+  "places": [
+    {
+      "id": "longquan",
+      "name": "龙泉",
+      "type": "city",
+      "modern": "今中国浙江省龙泉市",
+      "note": "窑场所在",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "mingzhou",
+      "name": "明州",
+      "type": "port",
+      "modern": "今中国浙江省宁波市",
+      "note": "外销港口",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wenzhou",
+      "name": "温州",
+      "type": "port",
+      "modern": "今中国浙江省温州市",
+      "note": "外销港口",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "chuzhou",
+      "name": "处州",
+      "type": "region",
+      "modern": "今中国浙江省丽水市",
+      "note": "龙泉所属州",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "gaoli",
+      "name": "高丽",
+      "type": "region",
+      "modern": "今朝鲜半岛",
+      "note": "外销目的地",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "riben",
+      "name": "日本",
+      "type": "region",
+      "modern": "今日本",
+      "note": "外销目的地",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nanyang",
+      "name": "南洋",
+      "type": "region",
+      "modern": "今东南亚",
+      "note": "外销目的地",
+      "_source_idx": 0,
+      "_source_name": "龙泉县志·物产（青瓷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

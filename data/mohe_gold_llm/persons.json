@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "MOH__p01",
+   "name": "李鸿章",
+   "role": "直隶总督兼北洋大臣",
+   "note": "奏派李金镛赴漠河办金矿",
+   "_source_idx": 0,
+   "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "MOH__p02",
+   "name": "李金镛",
+   "role": "道员",
+   "note": "受命赴漠河办理金矿事务",
+   "_source_idx": 0,
+   "_source_name": "清史稿·地理志（黑龙江·漠河金矿）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "sukesuhu",
+      "name": "苏克素浒河",
+      "type": "river",
+      "modern": "今中国辽宁",
+      "note": "建州女真居地",
+      "_source_idx": 0,
+      "_source_name": "清太祖武皇帝实录（起兵）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "feala",
+      "name": "费阿拉城",
+      "type": "fortress",
+      "modern": "今中国辽宁新宾",
+      "note": "努尔哈赤所筑",
+      "_source_idx": 0,
+      "_source_name": "清太祖武皇帝实录（起兵）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guleshan",
+      "name": "古勒山",
+      "type": "region",
+      "modern": "今中国辽宁新宾",
+      "note": "古勒山之战地",
+      "_source_idx": 0,
+      "_source_name": "清太祖武皇帝实录（起兵）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

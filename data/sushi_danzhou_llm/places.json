@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "danzhou",
+      "name": "儋州",
+      "type": "city",
+      "modern": "今海南省儋州市",
+      "note": "苏轼贬所",
+      "_source_idx": 0,
+      "_source_name": "东坡先生年谱（贬儋）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zaijiutang",
+      "name": "载酒堂",
+      "type": "yi",
+      "modern": "今海南省儋州市中和镇",
+      "note": "苏轼讲学处",
+      "_source_idx": 0,
+      "_source_name": "东坡先生年谱（贬儋）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "danser",
+      "name": "儋耳",
+      "type": "region",
+      "modern": "今海南省儋州市",
+      "note": "儋州古称",
+      "_source_idx": 0,
+      "_source_name": "东坡先生年谱（贬儋）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

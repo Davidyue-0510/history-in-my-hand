@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "nongzhigao_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1041,
+  1053
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1047,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.76 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.765,
+    "cum": -0.155
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1048,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.80 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.803,
+    "cum": -0.177
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1049,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.841,
+    "cum": -0.159
+   },
+   "place_id": "tanyou"
+  },
+  {
+   "kind": "summary",
+   "year": 1053,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.99 / 史实 1.00（偏离 -0.01）",
+   "evidence": {
+    "cum": -0.008,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "tanyou"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_jiupin_zhongzheng_llm_01",
+   "subject": "event:ev_jiupin_zhongzheng_llm_01",
+   "year": 220,
+   "era": "延康元年",
+   "title": "立九品官人法",
+   "kind": "行政",
+   "text": "陈群立九品官人之法",
+   "_source_idx": 0,
+   "_source_name": "通典·选举（九品中正）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiupin_zhongzheng_llm_02",
+   "subject": "event:ev_jiupin_zhongzheng_llm_02",
+   "year": 265,
+   "era": "晋武帝泰始元年",
+   "title": "晋承魏制",
+   "kind": "行政",
+   "text": "晋朝继承九品中正制",
+   "_source_idx": 0,
+   "_source_name": "通典·选举（九品中正）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

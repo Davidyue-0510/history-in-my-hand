@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "turpan",
+   "to": "hami",
+   "type": "military",
+   "label": "坎兒井分佈區域",
+   "_source_idx": 0,
+   "_source_name": "新疆图志·沟渠志（坎儿井）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

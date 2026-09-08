@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "longquan",
+   "to": "mingzhou",
+   "type": "military",
+   "label": "瓷器外运路线",
+   "_source_idx": 0,
+   "_source_name": "龙泉县志·物产（青瓷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "longquan",
+   "to": "wenzhou",
+   "type": "military",
+   "label": "瓷器外运路线",
+   "_source_idx": 0,
+   "_source_name": "龙泉县志·物产（青瓷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "mingzhou",
+   "to": "gaoli",
+   "type": "military",
+   "label": "海上贸易路线",
+   "_source_idx": 0,
+   "_source_name": "龙泉县志·物产（青瓷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wenzhou",
+   "to": "riben",
+   "type": "military",
+   "label": "海上贸易路线",
+   "_source_idx": 0,
+   "_source_name": "龙泉县志·物产（青瓷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "mingzhou",
+   "to": "nanyang",
+   "type": "military",
+   "label": "海上贸易路线",
+   "_source_idx": 0,
+   "_source_name": "龙泉县志·物产（青瓷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
