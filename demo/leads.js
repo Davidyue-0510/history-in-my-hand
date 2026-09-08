@@ -2821,6 +2821,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 7
   },
   {
+   "id": "PIN_007",
+   "scene": "pingbo_zhiyi_llm",
+   "subject": "event:ev_pingbo_zhiyi_llm_03",
+   "title": "明军伤亡不详",
+   "missing": "考据",
+   "where": "明实录",
+   "skills": [
+    "考据"
+   ],
+   "accept": "待查",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
    "id": "POYANGHUG01",
    "scene": "poyanghu",
    "subject": "event:py_chen",
@@ -3438,6 +3453,21 @@ window.SANDBOX_LEADS = {
    ],
    "accept": "整理松山城陷与夏成德内应的各家记载，标出史料政治立场影响",
    "effort": "2-3 周",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SON_015",
+   "scene": "songshan_battle_llm",
+   "subject": "event:ev_songshan_battle_llm_03",
+   "title": "金光惠次郎戰死",
+   "missing": "日文文獻",
+   "where": "日軍戰史",
+   "skills": [
+    "日文文獻"
+   ],
+   "accept": "確認金光死亡細節",
+   "effort": "—",
    "issue_url": null,
    "_src_line": 15
   },

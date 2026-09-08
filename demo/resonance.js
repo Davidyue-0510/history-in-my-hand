@@ -19,6 +19,7 @@ window.SANDBOX_RESONANCE = {
    "bencao",
    "biTigeGuan",
    "bisheng_movable_type",
+   "bohai_kingdom_llm",
    "boju",
    "bozhou",
    "cailun_zaozhi",
@@ -120,6 +121,7 @@ window.SANDBOX_RESONANCE = {
    "nanzhao_dali_llm",
    "ningxia",
    "ningyuan",
+   "pingbo_zhiyi_llm",
    "poyanghu",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
@@ -144,6 +146,7 @@ window.SANDBOX_RESONANCE = {
    "song_wanganshi_llm",
    "song_yancheng_llm",
    "songjin",
+   "songshan_battle_llm",
    "sui_canal",
    "sui_canal_llm",
    "sui_daxing",
@@ -375,6 +378,24 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_bisheng_movable_type_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "bohai_kingdom_llm",
+   "name": "bohai_kingdom_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 13
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_bohai_kingdom_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2327,6 +2348,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.667
   },
   {
+   "scene": "pingbo_zhiyi_llm",
+   "name": "pingbo_zhiyi_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "gap": 1,
+    "scholarship": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_pingbo_zhiyi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "poyanghu",
    "name": "poyanghu",
    "total": 15,
@@ -2803,6 +2843,25 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.311,
    "best_event": "event:songjin_campaign",
    "best_resonance": 0.333
+  },
+  {
+   "scene": "songshan_battle_llm",
+   "name": "songshan_battle_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 5,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_songshan_battle_llm_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "sui_canal",

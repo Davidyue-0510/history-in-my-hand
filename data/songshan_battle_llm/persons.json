@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SON__p01",
+   "name": "衛立煌",
+   "role": "中國遠征軍司令長官",
+   "note": "指揮松山戰役",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p02",
+   "name": "宋希濂",
+   "role": "第十一集團軍總司令",
+   "note": "負責松山攻擊",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p03",
+   "name": "何紹周",
+   "role": "第八軍軍長",
+   "note": "實際指揮攻堅",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p04",
+   "name": "金光惠次郎",
+   "role": "日軍步兵第113聯隊聯隊長",
+   "note": "松山守軍指揮官",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SON__p05",
+   "name": "本多政材",
+   "role": "日軍第33軍司令官",
+   "note": "負責滇西防務",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "huhan_cheng",
+   "party": "渤海国",
+   "start": 698,
+   "end": 926,
+   "basis": "historical: bohai_llm_src 698-926"
+  }
+ ]
+}

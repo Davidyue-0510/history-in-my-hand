@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "sichuan",
+   "to": "bozhou",
+   "type": "military",
+   "label": "川军进攻路线",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "huguang",
+   "to": "bozhou",
+   "type": "military",
+   "label": "湖广军进攻路线",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guizhou",
+   "to": "bozhou",
+   "type": "military",
+   "label": "贵军进攻路线",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "bozhou",
+   "to": "hailongtun",
+   "type": "battle",
+   "label": "退守海龙屯",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

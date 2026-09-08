@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "songshan",
+   "party": "中国远征军",
+   "start": 1944,
+   "end": 1944,
+   "basis": "historical: songshan_llm_src 1944"
+  }
+ ]
+}

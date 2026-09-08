@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_songshan_battle_llm_01",
+   "subject": "event:ev_songshan_battle_llm_01",
+   "year": 1944,
+   "era": "民國三十三年六月",
+   "title": "松山戰役開始",
+   "kind": "戰事",
+   "text": "遠征軍開始圍攻松山日軍據點",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_songshan_battle_llm_02",
+   "subject": "event:ev_songshan_battle_llm_02",
+   "year": 1944,
+   "era": "民國三十三年七月",
+   "title": "子高地坑道爆破",
+   "kind": "戰事",
+   "text": "遠征軍實施坑道爆破攻克子高地",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_songshan_battle_llm_03",
+   "subject": "event:ev_songshan_battle_llm_03",
+   "year": 1944,
+   "era": "民國三十三年九月",
+   "title": "松山攻克",
+   "kind": "戰事",
+   "text": "遠征軍完全佔領松山，日軍守軍全滅",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

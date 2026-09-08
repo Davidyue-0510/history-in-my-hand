@@ -20,6 +20,7 @@
 | bencao | 12 | 2 | **0.000** | event:bc_1281（0.000） | gap 1 / record 8 / scholarship 3 |
 | biTigeGuan | 13 | 1 | **0.286** | event:biti（0.286） | gap 1 / inference 4 / record 4 / scholarship 4 |
 | bisheng_movable_type | 14 | 1 | **0.000** | event:ev_bisheng_movable_type_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
+| bohai_kingdom_llm | 15 | 3 | **0.000** | event:ev_bohai_kingdom_llm_01（0.000） | inference 1 / record 13 / scholarship 1 |
 | boju | 23 | 3 | **0.000** | event:bj_bj（0.000） | gap 1 / record 16 / scholarship 6 |
 | bozhou | 14 | 3 | **0.305** | event:bozhou_pingbo（0.333） | gap 1 / record 12 / scholarship 1 |
 | cailun_zaozhi | 11 | 2 | **0.000** | event:cailun_fenghou（0.000） | inference 1 / record 6 / scholarship 4 |
@@ -121,6 +122,7 @@
 | nanzhao_dali_llm | 20 | 3 | **0.000** | event:ev_nanzhao_dali_llm_01（0.000） | gap 4 / inference 1 / record 13 / scholarship 2 |
 | ningxia | 14 | 3 | **0.417** | event:ningxia_weikun（0.667） | gap 1 / record 12 / scholarship 1 |
 | ningyuan | 45 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 3 |
+| pingbo_zhiyi_llm | 14 | 4 | **0.000** | event:ev_pingbo_zhiyi_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | poyanghu | 15 | 3 | **0.000** | event:py_chen（0.000） | gap 2 / inference 1 / record 7 / scholarship 5 |
 | qianjia_puxue_llm | 16 | 3 | **0.000** | event:ev_qianjia_01（0.000） | inference 1 / record 5 / scholarship 10 |
 | qin_fenshu_llm | 12 | 2 | **0.000** | event:ev_qin_fenshu_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
@@ -145,6 +147,7 @@
 | song_wanganshi_llm | 12 | 5 | **0.000** | event:ev_song_wanganshi_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | song_yancheng_llm | 12 | 3 | **0.000** | event:ev_song_yancheng_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | songjin | 18 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 15 / scholarship 1 |
+| songshan_battle_llm | 15 | 3 | **0.000** | event:ev_songshan_battle_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 5 |
 | sui_canal | 12 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 11 |
 | sui_canal_llm | 12 | 3 | **0.000** | event:ev_sui_canal_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
 | sui_daxing | 11 | 2 | **0.000** | event:dx_582（0.000） | gap 1 / inference 3 / record 5 / scholarship 2 |
@@ -323,6 +326,9 @@
 | event:ev_aomen_portugal_llm_01 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.33 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_aomen_portugal_llm_02 | aomen_portugal_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_bisheng_movable_type_01 | bisheng_movable_type | **0.000** | 0/3 | 0.00 | 0.07 | 14 | 0 / 0 / 0 / 0 |
+| event:ev_bohai_kingdom_llm_01 | bohai_kingdom_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_bohai_kingdom_llm_02 | bohai_kingdom_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_bohai_kingdom_llm_03 | bohai_kingdom_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_01 | changping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_02 | changping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_changping_llm_03 | changping_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
@@ -402,6 +408,10 @@
 | event:ev_nanzhao_dali_llm_01 | nanzhao_dali_llm | **0.000** | 0/3 | 0.11 | 0.23 | 13 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_02 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_nanzhao_dali_llm_03 | nanzhao_dali_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_pingbo_zhiyi_llm_01 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_pingbo_zhiyi_llm_02 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_pingbo_zhiyi_llm_03 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_pingbo_zhiyi_llm_04 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_01 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_02 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_03 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -444,6 +454,9 @@
 | event:ev_song_yancheng_llm_01 | song_yancheng_llm | **0.000** | 0/3 | 0.25 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_song_yancheng_llm_02 | song_yancheng_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_song_yancheng_llm_03 | song_yancheng_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_songshan_battle_llm_01 | songshan_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_songshan_battle_llm_02 | songshan_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_songshan_battle_llm_03 | songshan_battle_llm | **0.000** | 0/3 | 0.11 | 0.09 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_sui_canal_llm_01 | sui_canal_llm | **0.000** | 0/3 | 0.17 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_sui_canal_llm_02 | sui_canal_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_sui_canal_llm_03 | sui_canal_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "BOH__p01",
+   "name": "大祚荣",
+   "role": "渤海国建立者，初称震国",
+   "note": "靺鞨人，698年建震国",
+   "_source_idx": 0,
+   "_source_name": "唐册渤海·靺鞨建国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "BOH__p02",
+   "name": "唐玄宗",
+   "role": "唐朝皇帝",
+   "note": "713年册封大祚荣",
+   "_source_idx": 0,
+   "_source_name": "唐册渤海·靺鞨建国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

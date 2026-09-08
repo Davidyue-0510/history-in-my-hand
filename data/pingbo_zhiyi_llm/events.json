@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_pingbo_zhiyi_llm_01",
+   "subject": "event:ev_pingbo_zhiyi_llm_01",
+   "year": 1599,
+   "era": "万历二十七年",
+   "title": "明廷决策平叛",
+   "kind": "行政",
+   "text": "明廷调集川湖贵军",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_pingbo_zhiyi_llm_02",
+   "subject": "event:ev_pingbo_zhiyi_llm_02",
+   "year": 1600,
+   "era": "万历二十八年",
+   "title": "八路进兵",
+   "kind": "战事",
+   "text": "八路合攻播州",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_pingbo_zhiyi_llm_03",
+   "subject": "event:ev_pingbo_zhiyi_llm_03",
+   "year": 1600,
+   "era": "万历二十八年",
+   "title": "海龙屯之战",
+   "kind": "战事",
+   "text": "破海龙屯，杨自焚",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_pingbo_zhiyi_llm_04",
+   "subject": "event:ev_pingbo_zhiyi_llm_04",
+   "year": 1600,
+   "era": "万历二十八年",
+   "title": "改土归流",
+   "kind": "行政",
+   "text": "分设遵义平越二府",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

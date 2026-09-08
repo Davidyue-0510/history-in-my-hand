@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "songshan",
+   "name": "松山",
+   "type": "fortress",
+   "modern": "中國雲南省龍陵縣",
+   "note": "日軍據點，滇緬公路要衝",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "zigao_di",
+   "name": "子高地",
+   "type": "fortress",
+   "modern": "中國雲南省龍陵縣松山",
+   "note": "松山主峰，日軍核心陣地",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "longling",
+   "name": "龍陵",
+   "type": "city",
+   "modern": "中國雲南省龍陵縣",
+   "note": "滇西重鎮，松山戰後收復",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "tengchong",
+   "name": "騰衝",
+   "type": "city",
+   "modern": "中國雲南省騰衝市",
+   "note": "滇西城市，松山戰後收復",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "dianmian_gonglu",
+   "name": "滇緬公路",
+   "type": "region",
+   "modern": "中國雲南省至緬甸",
+   "note": "抗戰國際補給線，被日軍切斷",
+   "_source_idx": 0,
+   "_source_name": "滇西反攻·松山战役史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

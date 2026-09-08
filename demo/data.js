@@ -1,18 +1,19 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 207 个切片
+// 权威数据源：data/scenes.json 注册的 210 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 207 个切片",
+  "slice": "multi-scene · 210 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
    "anxi_sizhen_llm",
    "aomen_portugal_llm",
    "bisheng_movable_type",
+   "bohai_kingdom_llm",
    "changping_llm",
    "chibi_llm",
    "chu_han",
@@ -39,6 +40,7 @@ window.SANDBOX_DATA = {
    "minyue_llm",
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
+   "pingbo_zhiyi_llm",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
    "qin_mie_liu_guo",
@@ -52,6 +54,7 @@ window.SANDBOX_DATA = {
    "song_chanchuan_llm",
    "song_wanganshi_llm",
    "song_yancheng_llm",
+   "songshan_battle_llm",
    "sui_canal_llm",
    "sui_keju",
    "sui_mie_chen_llm",
@@ -532,7 +535,10 @@ window.SANDBOX_DATA = {
   "warring_states_shangyang",
   "tang_juntian",
   "dagukou_battle_llm",
-  "liangzhou_meeting_llm"
+  "liangzhou_meeting_llm",
+  "songshan_battle_llm",
+  "pingbo_zhiyi_llm",
+  "bohai_kingdom_llm"
  ],
  "vocab": {
   "layers": [
@@ -25619,6 +25625,104 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "songshan_battle_llm": {
+   "key": "songshan_battle_llm",
+   "scene_id": "songshan_battle_llm",
+   "title": "松山战役（1944）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "yunnan",
+   "page": "songshan_battle_llm.html",
+   "primary_place": "songshan",
+   "vocab_pack": "songshan_battle_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 5,
+    "assert": 15,
+    "conflict": 1,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 5,
+    "inference": 1
+   }
+  },
+  "pingbo_zhiyi_llm": {
+   "key": "pingbo_zhiyi_llm",
+   "scene_id": "pingbo_zhiyi_llm",
+   "title": "平播之役（1599—1600）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "chuan_gui",
+   "page": "pingbo_zhiyi_llm.html",
+   "primary_place": "bozhou",
+   "vocab_pack": "pingbo_zhiyi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 7,
+    "person": 6,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "bohai_kingdom_llm": {
+   "key": "bohai_kingdom_llm",
+   "scene_id": "bohai_kingdom_llm",
+   "title": "渤海国（698—926）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "jianzhou",
+   "page": "county.html?scene=bohai_kingdom_llm",
+   "primary_place": "huhan_cheng",
+   "vocab_pack": "bohai_kingdom_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 0,
+    "record": 13,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -25828,7 +25932,10 @@ window.SANDBOX_DATA = {
   "warring_states_shangyang": "slices/warring_states_shangyang.js",
   "tang_juntian": "slices/tang_juntian.js",
   "dagukou_battle_llm": "slices/dagukou_battle_llm.js",
-  "liangzhou_meeting_llm": "slices/liangzhou_meeting_llm.js"
+  "liangzhou_meeting_llm": "slices/liangzhou_meeting_llm.js",
+  "songshan_battle_llm": "slices/songshan_battle_llm.js",
+  "pingbo_zhiyi_llm": "slices/pingbo_zhiyi_llm.js",
+  "bohai_kingdom_llm": "slices/bohai_kingdom_llm.js"
  },
  "corridors": [
   {

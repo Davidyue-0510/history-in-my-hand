@@ -410,7 +410,10 @@
   "warring_states_shangyang",
   "tang_juntian",
   "dagukou_battle_llm",
-  "liangzhou_meeting_llm"
+  "liangzhou_meeting_llm",
+  "songshan_battle_llm",
+  "pingbo_zhiyi_llm",
+  "bohai_kingdom_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -17460,6 +17463,233 @@
     1,
     3,
     5,
+    6
+   ]
+  },
+  "songshan_battle_llm": {
+   "kind": "battle",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "松山战役（1944）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "songshan",
+   "dossier_event": "event:ev_songshan_battle_llm_01",
+   "vocab_pack": "songshan_battle_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "松山战役（1944）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "松山战役（1944）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "松山战役（1944）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "松山战役（1944）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "pingbo_zhiyi_llm": {
+   "kind": "battle",
+   "region": "chuan_gui",
+   "province": [
+    "sichuan",
+    "guizhou"
+   ],
+   "title": "平播之役（1599—1600）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "bozhou",
+   "dossier_event": "event:ev_pingbo_zhiyi_llm_01",
+   "vocab_pack": "pingbo_zhiyi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "平播之役（1599—1600）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "平播之役（1599—1600）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "平播之役（1599—1600）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "平播之役（1599—1600）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "bohai_kingdom_llm": {
+   "kind": "frontier",
+   "region": "jianzhou",
+   "province": "jilin",
+   "title": "渤海国（698—926）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "huhan_cheng",
+   "dossier_event": "event:ev_bohai_kingdom_llm_01",
+   "vocab_pack": "bohai_kingdom_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "渤海国（698—926）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "渤海国（698—926）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "渤海国（698—926）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "渤海国（698—926）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
     6
    ]
   }

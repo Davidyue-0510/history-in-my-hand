@@ -1,14 +1,15 @@
 {
-  "scenes_total": 207,
-  "historical": 198,
+  "scenes_total": 210,
+  "historical": 201,
   "fictional": 9,
-  "assertions_total": 3261,
-  "sources_total": 185,
+  "assertions_total": 3305,
+  "sources_total": 188,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
     "aomen_portugal_llm",
     "bisheng_movable_type",
+    "bohai_kingdom_llm",
     "changping_llm",
     "chibi_llm",
     "chu_han",
@@ -35,6 +36,7 @@
     "minyue_llm",
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
+    "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
     "qin_fenshu_llm",
     "qin_mie_liu_guo",
@@ -48,6 +50,7 @@
     "song_chanchuan_llm",
     "song_wanganshi_llm",
     "song_yancheng_llm",
+    "songshan_battle_llm",
     "sui_canal_llm",
     "sui_keju",
     "sui_mie_chen_llm",
@@ -71,7 +74,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 303,
+  "leads_total": 305,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1575,6 +1578,27 @@
       "kind": "frontier",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "songshan_battle_llm",
+      "title": "松山战役（1944）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "pingbo_zhiyi_llm",
+      "title": "平播之役（1599—1600）",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "bohai_kingdom_llm",
+      "title": "渤海国（698—926）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1784,6 +1808,9 @@
     "warring_states_shangyang": "战国·商鞅变法",
     "tang_juntian": "唐·均田制",
     "dagukou_battle_llm": "大沽口之战（第二次鸦片战争）",
-    "liangzhou_meeting_llm": "凉州会谈（1247，西藏归附蒙古）"
+    "liangzhou_meeting_llm": "凉州会谈（1247，西藏归附蒙古）",
+    "songshan_battle_llm": "松山战役（1944）",
+    "pingbo_zhiyi_llm": "平播之役（1599—1600）",
+    "bohai_kingdom_llm": "渤海国（698—926）"
   }
 }

@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "bohai_llm_src",
+   "title": "唐册渤海·靺鞨建国史料摘录",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "LLM 摘要（paraphrase_unverified）",
+   "period": "698—926",
+   "note": ""
+  }
+ ]
+}

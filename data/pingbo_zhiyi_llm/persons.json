@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "PIN__p01",
+   "name": "杨应龙",
+   "role": "播州宣慰使",
+   "note": "叛军首领",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PIN__p02",
+   "name": "李化龙",
+   "role": "明总督",
+   "note": "统兵平叛",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PIN__p03",
+   "name": "刘綎",
+   "role": "明将",
+   "note": "八路之一",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PIN__p04",
+   "name": "马千乘",
+   "role": "明将",
+   "note": "八路之一",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PIN__p05",
+   "name": "吴广",
+   "role": "明将",
+   "note": "八路之一",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PIN__p06",
+   "name": "陈璘",
+   "role": "明将",
+   "note": "八路之一",
+   "_source_idx": 0,
+   "_source_name": "明万历平定播州杨氏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
