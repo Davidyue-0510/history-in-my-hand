@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "northeast",
+   "to": "changchun",
+   "type": "military",
+   "label": "日軍侵佔路線",
+   "_source_idx": 0,
+   "_source_name": "伪满洲国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

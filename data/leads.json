@@ -2150,6 +2150,22 @@
    "_src_line": 15
   },
   {
+   "id": "JIL_015",
+   "scene": "jilin_changchun_llm",
+   "subject": "event:ev_jilin_changchun_llm_02",
+   "title": "溥儀個人態度記載不足",
+   "missing": "檔案分析 / 心理史學",
+   "where": "偽滿皇宮檔案",
+   "skills": [
+    "檔案分析",
+    "心理史學"
+   ],
+   "accept": "溥儀是否自願",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "JNG01",
    "scene": "jingnan",
    "subject": "event:jn_1402",
@@ -4341,6 +4357,21 @@
    "_src_line": 12
   },
   {
+   "id": "TIA_014",
+   "scene": "tianjin_kaibu_llm",
+   "subject": "place:tianjin",
+   "title": "紫竹林具体边界未详",
+   "missing": "历史地理",
+   "where": "紫竹林租界边界",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "档案或地图",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "TIANJINGG01",
    "scene": "tianjing",
    "subject": "event:tj_xiang",
@@ -5207,6 +5238,81 @@
     "考古"
    ],
    "accept": "革囊渡江的具体工艺",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "YUN_010",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_02",
+   "title": "唐征南诏原因未明",
+   "missing": "历史考据",
+   "where": "《新唐书·南诏传》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体战役起因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "YUN_011",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_02",
+   "title": "唐军伤亡数字未载",
+   "missing": "文献检索",
+   "where": "《资治通鉴》",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "需查证具体伤亡",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "YUN_012",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_03",
+   "title": "唐军伤亡数字未载",
+   "missing": "文献检索",
+   "where": "《旧唐书》",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "需查证具体伤亡",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "YUN_013",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_04",
+   "title": "郑买嗣篡位细节未详",
+   "missing": "历史考据",
+   "where": "《南诏野史》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "YUN_014",
+   "scene": "yunnan_nanzhao_llm",
+   "subject": "event:ev_yunnan_nanzhao_llm_01",
+   "title": "统一六诏过程未详",
+   "missing": "历史考据",
+   "where": "《蛮书》",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "需查证具体过程",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

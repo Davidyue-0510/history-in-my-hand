@@ -1,9 +1,9 @@
 {
-  "scenes_total": 247,
-  "historical": 238,
+  "scenes_total": 250,
+  "historical": 241,
   "fictional": 9,
-  "assertions_total": 3799,
-  "sources_total": 225,
+  "assertions_total": 3842,
+  "sources_total": 228,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -47,6 +47,7 @@
     "jiangxi_nanchang_llm",
     "jiangxi_ruijin_llm",
     "jilin_bohai_llm",
+    "jilin_changchun_llm",
     "jilin_gaogouli_llm",
     "jinshang_llm",
     "liangzhou_meeting_llm",
@@ -92,6 +93,7 @@
     "tang_xuanwumen_llm",
     "three_campaigns",
     "tianjin_jiaoan_llm",
+    "tianjin_kaibu_llm",
     "wangyangming",
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
@@ -106,12 +108,13 @@
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "yunnan_dali_llm",
+    "yunnan_nanzhao_llm",
     "zhejiang_linan_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 351,
+  "leads_total": 358,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1895,6 +1898,27 @@
       "kind": "frontier",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "jilin_changchun_llm",
+      "title": "伪满洲国",
+      "kind": "dynasty",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_kaibu_llm",
+      "title": "天津开埠",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_nanzhao_llm",
+      "title": "南诏",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2144,6 +2168,9 @@
     "chongqing_peidu_llm": "重庆陪都",
     "gansu_dunhuang_llm": "敦煌莫高窟",
     "heilongjiang_kanglian_llm": "东北抗日联军",
-    "jilin_bohai_llm": "渤海国"
+    "jilin_bohai_llm": "渤海国",
+    "jilin_changchun_llm": "伪满洲国",
+    "tianjin_kaibu_llm": "天津开埠",
+    "yunnan_nanzhao_llm": "南诏"
   }
 }

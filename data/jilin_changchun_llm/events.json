@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_changchun_llm_01",
+   "subject": "event:ev_jilin_changchun_llm_01",
+   "year": 1931,
+   "era": "1931年",
+   "title": "九一八事變",
+   "kind": "戰事",
+   "text": "日本關東軍侵佔中國東北",
+   "_source_idx": 0,
+   "_source_name": "伪满洲国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_changchun_llm_02",
+   "subject": "event:ev_jilin_changchun_llm_02",
+   "year": 1932,
+   "era": "1932年3月",
+   "title": "偽滿洲國成立",
+   "kind": "建置",
+   "text": "日方操縱成立偽滿洲國",
+   "_source_idx": 0,
+   "_source_name": "伪满洲国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_changchun_llm_03",
+   "subject": "event:ev_jilin_changchun_llm_03",
+   "year": 1934,
+   "era": "1934年",
+   "title": "改稱滿洲帝國",
+   "kind": "行政",
+   "text": "偽滿改稱滿洲帝國",
+   "_source_idx": 0,
+   "_source_name": "伪满洲国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_changchun_llm_04",
+   "subject": "event:ev_jilin_changchun_llm_04",
+   "year": 1945,
+   "era": "1945年",
+   "title": "日本投降",
+   "kind": "戰事",
+   "text": "日本投降，偽滿覆滅",
+   "_source_idx": 0,
+   "_source_name": "伪满洲国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

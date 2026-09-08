@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 247 个切片
+// 权威数据源：data/scenes.json 注册的 250 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 247 个切片",
+  "slice": "multi-scene · 250 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -51,6 +51,7 @@ window.SANDBOX_DATA = {
    "jiangxi_nanchang_llm",
    "jiangxi_ruijin_llm",
    "jilin_bohai_llm",
+   "jilin_changchun_llm",
    "jilin_gaogouli_llm",
    "jinshang_llm",
    "liangzhou_meeting_llm",
@@ -96,6 +97,7 @@ window.SANDBOX_DATA = {
    "tang_xuanwumen_llm",
    "three_campaigns",
    "tianjin_jiaoan_llm",
+   "tianjin_kaibu_llm",
    "wangyangming",
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
@@ -110,6 +112,7 @@ window.SANDBOX_DATA = {
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "yunnan_dali_llm",
+   "yunnan_nanzhao_llm",
    "zhejiang_linan_llm",
    "zheng_chenggong_taiwan_llm",
    "zhuxi"
@@ -612,7 +615,10 @@ window.SANDBOX_DATA = {
   "chongqing_peidu_llm",
   "gansu_dunhuang_llm",
   "heilongjiang_kanglian_llm",
-  "jilin_bohai_llm"
+  "jilin_bohai_llm",
+  "jilin_changchun_llm",
+  "tianjin_kaibu_llm",
+  "yunnan_nanzhao_llm"
  ],
  "vocab": {
   "layers": [
@@ -27008,6 +27014,103 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "jilin_changchun_llm": {
+   "key": "jilin_changchun_llm",
+   "scene_id": "jilin_changchun_llm",
+   "title": "伪满洲国",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "jianzhou",
+   "page": "county.html?scene=jilin_changchun_llm",
+   "primary_place": "changchun",
+   "vocab_pack": "jilin_changchun_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "tianjin_kaibu_llm": {
+   "key": "tianjin_kaibu_llm",
+   "scene_id": "tianjin_kaibu_llm",
+   "title": "天津开埠",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "huabei",
+   "page": "county.html?scene=tianjin_kaibu_llm",
+   "primary_place": "tianjin",
+   "vocab_pack": "tianjin_kaibu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 14,
+    "conflict": 1,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "yunnan_nanzhao_llm": {
+   "key": "yunnan_nanzhao_llm",
+   "scene_id": "yunnan_nanzhao_llm",
+   "title": "南诏",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "yunnan",
+   "page": "county.html?scene=yunnan_nanzhao_llm",
+   "primary_place": "taihe_cheng",
+   "vocab_pack": "yunnan_nanzhao_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 5,
+    "record": 7,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -27257,7 +27360,10 @@ window.SANDBOX_DATA = {
   "chongqing_peidu_llm": "slices/chongqing_peidu_llm.js",
   "gansu_dunhuang_llm": "slices/gansu_dunhuang_llm.js",
   "heilongjiang_kanglian_llm": "slices/heilongjiang_kanglian_llm.js",
-  "jilin_bohai_llm": "slices/jilin_bohai_llm.js"
+  "jilin_bohai_llm": "slices/jilin_bohai_llm.js",
+  "jilin_changchun_llm": "slices/jilin_changchun_llm.js",
+  "tianjin_kaibu_llm": "slices/tianjin_kaibu_llm.js",
+  "yunnan_nanzhao_llm": "slices/yunnan_nanzhao_llm.js"
  },
  "corridors": [
   {

@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_yunnan_nanzhao_llm_01",
+   "subject": "event:ev_yunnan_nanzhao_llm_01",
+   "year": 738,
+   "era": "唐开元二十六年",
+   "title": "南诏统一六诏",
+   "kind": "建置",
+   "text": "蒙舍诏统一六诏，建都太和城",
+   "_source_idx": 0,
+   "_source_name": "南诏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_nanzhao_llm_02",
+   "subject": "event:ev_yunnan_nanzhao_llm_02",
+   "year": 749,
+   "era": "唐天宝八载",
+   "title": "天宝战争第一次征讨",
+   "kind": "战事",
+   "text": "唐征南诏，败绩",
+   "_source_idx": 0,
+   "_source_name": "南诏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_nanzhao_llm_03",
+   "subject": "event:ev_yunnan_nanzhao_llm_03",
+   "year": 754,
+   "era": "唐天宝十三载",
+   "title": "天宝战争第二次征讨",
+   "kind": "战事",
+   "text": "唐再征南诏，惨败",
+   "_source_idx": 0,
+   "_source_name": "南诏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_nanzhao_llm_04",
+   "subject": "event:ev_yunnan_nanzhao_llm_04",
+   "year": 902,
+   "era": "唐天复二年",
+   "title": "郑买嗣篡位",
+   "kind": "其他",
+   "text": "郑买嗣篡位，南诏灭亡",
+   "_source_idx": 0,
+   "_source_name": "南诏史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
