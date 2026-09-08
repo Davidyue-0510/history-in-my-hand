@@ -4737,6 +4737,52 @@
    "_src_line": 15
   },
   {
+   "id": "XIA_012",
+   "scene": "xianggang_dongjiang_llm",
+   "subject": "event:ev_xianggang_dongjiang_llm_01",
+   "title": "具體兵力不詳",
+   "missing": "檔案檢索",
+   "where": "港九獨立大隊檔案",
+   "skills": [
+    "檔案檢索"
+   ],
+   "accept": "查得大隊編制人數",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "XIA_013",
+   "scene": "xianggang_dongjiang_llm",
+   "subject": "event:ev_xianggang_dongjiang_llm_02",
+   "title": "具體戰果不詳",
+   "missing": "文獻分析",
+   "where": "東江縱隊戰史",
+   "skills": [
+    "文獻分析"
+   ],
+   "accept": "查得游擊戰果統計",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "XIA_014",
+   "scene": "xianggang_huigui_llm",
+   "subject": "event:ev_xianggang_huigui_llm_03",
+   "title": "国际社会关注",
+   "missing": "外交史 / 国际关系",
+   "where": "国际档案",
+   "skills": [
+    "外交史",
+    "国际关系"
+   ],
+   "accept": "补充国际反应",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "XIANG4",
    "scene": "xianggang_songmo_llm",
    "subject": "event:ev_xianggang_songmo_llm_01",

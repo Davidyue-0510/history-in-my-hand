@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "hong_kong",
+   "name": "香港",
+   "type": "region",
+   "modern": "中国香港特别行政区",
+   "note": "包括港岛、九龙、新界",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "hong_kong_island",
+   "name": "港岛",
+   "type": "city",
+   "modern": "中国香港岛",
+   "note": "1842年被英国侵占",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "kowloon",
+   "name": "九龙",
+   "type": "city",
+   "modern": "中国香港九龙",
+   "note": "后被英国侵占",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "new_territories",
+   "name": "新界",
+   "type": "region",
+   "modern": "中国香港新界",
+   "note": "后被英国侵占",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

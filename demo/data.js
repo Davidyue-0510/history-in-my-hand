@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 256 个切片
+// 权威数据源：data/scenes.json 注册的 258 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 256 个切片",
+  "slice": "multi-scene · 258 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -108,6 +108,8 @@ window.SANDBOX_DATA = {
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
    "xianggang_1941_llm",
+   "xianggang_dongjiang_llm",
+   "xianggang_huigui_llm",
    "xianggang_songmo_llm",
    "xinjiang_xiyu_llm",
    "xinjiang_zuozongtang_llm",
@@ -630,7 +632,9 @@ window.SANDBOX_DATA = {
   "shanxi_jinshang_llm",
   "sichuan_dujiangyan_llm",
   "taiwan_shilang_llm",
-  "taiwan_wushe_llm"
+  "taiwan_wushe_llm",
+  "xianggang_huigui_llm",
+  "xianggang_dongjiang_llm"
  ],
  "vocab": {
   "layers": [
@@ -27323,6 +27327,73 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 1
    }
+  },
+  "xianggang_huigui_llm": {
+   "key": "xianggang_huigui_llm",
+   "scene_id": "xianggang_huigui_llm",
+   "title": "中国香港·香港回归",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "exchange",
+   "page": "county.html?scene=xianggang_huigui_llm",
+   "primary_place": "hong_kong",
+   "vocab_pack": "xianggang_huigui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 2,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xianggang_dongjiang_llm": {
+   "key": "xianggang_dongjiang_llm",
+   "scene_id": "xianggang_dongjiang_llm",
+   "title": "中国香港·东江纵队港九大队",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "exchange",
+   "page": "xianggang_dongjiang_llm.html",
+   "primary_place": "hong_kong",
+   "vocab_pack": "xianggang_dongjiang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 1,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 2,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -27581,7 +27652,9 @@ window.SANDBOX_DATA = {
   "shanxi_jinshang_llm": "slices/shanxi_jinshang_llm.js",
   "sichuan_dujiangyan_llm": "slices/sichuan_dujiangyan_llm.js",
   "taiwan_shilang_llm": "slices/taiwan_shilang_llm.js",
-  "taiwan_wushe_llm": "slices/taiwan_wushe_llm.js"
+  "taiwan_wushe_llm": "slices/taiwan_wushe_llm.js",
+  "xianggang_huigui_llm": "slices/xianggang_huigui_llm.js",
+  "xianggang_dongjiang_llm": "slices/xianggang_dongjiang_llm.js"
  },
  "corridors": [
   {

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 256,
-  "historical": 247,
+  "scenes_total": 258,
+  "historical": 249,
   "fictional": 9,
-  "assertions_total": 3924,
-  "sources_total": 234,
+  "assertions_total": 3952,
+  "sources_total": 236,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -104,6 +104,8 @@
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
     "xianggang_1941_llm",
+    "xianggang_dongjiang_llm",
+    "xianggang_huigui_llm",
     "xianggang_songmo_llm",
     "xinjiang_xiyu_llm",
     "xinjiang_zuozongtang_llm",
@@ -120,7 +122,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 364,
+  "leads_total": 367,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1967,6 +1969,20 @@
       "kind": "uprising",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "xianggang_huigui_llm",
+      "title": "中国香港·香港回归",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "xianggang_dongjiang_llm",
+      "title": "中国香港·东江纵队港九大队",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2225,6 +2241,8 @@
     "shanxi_jinshang_llm": "晋商",
     "sichuan_dujiangyan_llm": "都江堰",
     "taiwan_shilang_llm": "中国台湾·施琅统一台湾",
-    "taiwan_wushe_llm": "中国台湾·雾社起义"
+    "taiwan_wushe_llm": "中国台湾·雾社起义",
+    "xianggang_huigui_llm": "中国香港·香港回归",
+    "xianggang_dongjiang_llm": "中国香港·东江纵队港九大队"
   }
 }

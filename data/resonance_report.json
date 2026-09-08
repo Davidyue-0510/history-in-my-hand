@@ -216,6 +216,8 @@
       "wuwang",
       "wuxu",
       "xianggang_1941_llm",
+      "xianggang_dongjiang_llm",
+      "xianggang_huigui_llm",
       "xianggang_songmo_llm",
       "xiaowen",
       "xiaoyaojin",
@@ -4261,6 +4263,44 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_xianggang_1941_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "xianggang_dongjiang_llm",
+      "name": "xianggang_dongjiang_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "gap": 2,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_xianggang_dongjiang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "xianggang_huigui_llm",
+      "name": "xianggang_huigui_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_xianggang_huigui_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -16346,6 +16386,192 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.286,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_dongjiang_llm_01",
+      "name": "event:ev_xianggang_dongjiang_llm_01",
+      "scenes": [
+        "xianggang_dongjiang_llm"
+      ],
+      "scene_names": [
+        "xianggang_dongjiang_llm"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_dongjiang_llm_02",
+      "name": "event:ev_xianggang_dongjiang_llm_02",
+      "scenes": [
+        "xianggang_dongjiang_llm"
+      ],
+      "scene_names": [
+        "xianggang_dongjiang_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_dongjiang_llm_03",
+      "name": "event:ev_xianggang_dongjiang_llm_03",
+      "scenes": [
+        "xianggang_dongjiang_llm"
+      ],
+      "scene_names": [
+        "xianggang_dongjiang_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_huigui_llm_01",
+      "name": "event:ev_xianggang_huigui_llm_01",
+      "scenes": [
+        "xianggang_huigui_llm"
+      ],
+      "scene_names": [
+        "xianggang_huigui_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_huigui_llm_02",
+      "name": "event:ev_xianggang_huigui_llm_02",
+      "scenes": [
+        "xianggang_huigui_llm"
+      ],
+      "scene_names": [
+        "xianggang_huigui_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xianggang_huigui_llm_03",
+      "name": "event:ev_xianggang_huigui_llm_03",
+      "scenes": [
+        "xianggang_huigui_llm"
+      ],
+      "scene_names": [
+        "xianggang_huigui_llm"
+      ],
+      "total": 8,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.125,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

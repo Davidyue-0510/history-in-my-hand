@@ -219,6 +219,8 @@
 | wuwang | 7 | 2 | **0.000** | event:ww_1046（0.000） | gap 1 / record 3 / scholarship 3 |
 | wuxu | 16 | 2 | **0.000** | event:wx_0611（0.000） | gap 1 / inference 2 / record 11 / scholarship 2 |
 | xianggang_1941_llm | 15 | 3 | **0.000** | event:ev_xianggang_1941_llm_01（0.000） | gap 2 / inference 4 / record 8 / scholarship 1 |
+| xianggang_dongjiang_llm | 14 | 3 | **0.000** | event:ev_xianggang_dongjiang_llm_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
+| xianggang_huigui_llm | 14 | 3 | **0.000** | event:ev_xianggang_huigui_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | xianggang_songmo_llm | 19 | 4 | **0.000** | event:ev_xianggang_songmo_llm_01（0.000） | gap 6 / inference 1 / record 11 / scholarship 1 |
 | xiaowen | 14 | 3 | **0.000** | event:xw_493（0.000） | gap 1 / record 10 / scholarship 3 |
 | xiaoyaojin | 14 | 3 | **0.000** | event:xy_cao（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
@@ -655,6 +657,12 @@
 | event:ev_xianggang_1941_llm_01 | xianggang_1941_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_1941_llm_02 | xianggang_1941_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_1941_llm_03 | xianggang_1941_llm | **0.000** | 0/3 | 0.00 | 0.29 | 7 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_dongjiang_llm_01 | xianggang_dongjiang_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_dongjiang_llm_02 | xianggang_dongjiang_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_dongjiang_llm_03 | xianggang_dongjiang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_huigui_llm_01 | xianggang_huigui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_huigui_llm_02 | xianggang_huigui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_xianggang_huigui_llm_03 | xianggang_huigui_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_songmo_llm_01 | xianggang_songmo_llm | **0.000** | 0/3 | 0.00 | 0.33 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_songmo_llm_02 | xianggang_songmo_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_songmo_llm_03 | xianggang_songmo_llm | **0.000** | 0/3 | 0.00 | 0.60 | 5 | 0 / 0 / 0 / 0 |

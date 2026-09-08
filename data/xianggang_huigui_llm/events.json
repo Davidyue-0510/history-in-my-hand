@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_huigui_llm_01",
+   "subject": "event:ev_xianggang_huigui_llm_01",
+   "year": 1842,
+   "era": "道光二十二年",
+   "title": "香港岛被占",
+   "kind": "其他",
+   "text": "英国侵占香港岛",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_huigui_llm_02",
+   "subject": "event:ev_xianggang_huigui_llm_02",
+   "year": 1984,
+   "era": "1984年",
+   "title": "中英联合声明",
+   "kind": "外交",
+   "text": "确定1997年香港回归",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_huigui_llm_03",
+   "subject": "event:ev_xianggang_huigui_llm_03",
+   "year": 1997,
+   "era": "1997年7月1日",
+   "title": "香港回归",
+   "kind": "行政",
+   "text": "香港特别行政区成立",
+   "_source_idx": 0,
+   "_source_name": "香港回归史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
