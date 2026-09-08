@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "GUI__p01",
+   "name": "唐蒙",
+   "role": "漢中郎將",
+   "note": "出使夜郎，開牂柯道",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p02",
+   "name": "多同",
+   "role": "夜郎侯",
+   "note": "聽蒙約，後入朝受封",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p03",
+   "name": "漢武帝",
+   "role": "漢天子",
+   "note": "置犍為郡，封夜郎王",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

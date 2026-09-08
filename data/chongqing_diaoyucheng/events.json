@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_chongqing_diaoyucheng_01",
+   "subject": "event:ev_chongqing_diaoyucheng_01",
+   "year": 1243,
+   "era": "淳祐三年",
+   "title": "余玠筑钓鱼城",
+   "kind": "建置",
+   "text": "余玠筑城于合州",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_chongqing_diaoyucheng_02",
+   "subject": "event:ev_chongqing_diaoyucheng_02",
+   "year": 1259,
+   "era": "开庆元年",
+   "title": "蒙哥攻钓鱼城",
+   "kind": "战事",
+   "text": "蒙哥亲征，中飞石而殂",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

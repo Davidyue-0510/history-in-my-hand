@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "jinyang",
+   "to": "san_jin",
+   "type": "battle",
+   "label": "晋阳之战后三家分晋",
+   "_source_idx": 0,
+   "_source_name": "《战国策》与三家分晋",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

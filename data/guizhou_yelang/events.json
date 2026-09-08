@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_guizhou_yelang_01",
+   "subject": "event:ev_guizhou_yelang_01",
+   "year": -135,
+   "era": "漢武帝建元六年",
+   "title": "唐蒙通夜郎",
+   "kind": "外交",
+   "text": "唐蒙風曉南越，知牂柯江通番禺",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_yelang_02",
+   "subject": "event:ev_guizhou_yelang_02",
+   "year": -130,
+   "era": "漢武帝元光五年",
+   "title": "置犍為郡",
+   "kind": "建置",
+   "text": "發巴蜀卒治道，置犍為郡",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_yelang_03",
+   "subject": "event:ev_guizhou_yelang_03",
+   "year": -111,
+   "era": "漢武帝元鼎六年",
+   "title": "夜郎入朝",
+   "kind": "行政",
+   "text": "南越破後，夜郎入朝受封",
+   "_source_idx": 0,
+   "_source_name": "《史记·西南夷列传》与夜郎",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

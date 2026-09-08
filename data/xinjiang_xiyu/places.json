@@ -1,0 +1,34 @@
+{
+ "places": [
+  {
+   "id": "wulei",
+   "name": "乌垒城",
+   "type": "city",
+   "modern": "今新疆轮台",
+   "note": "都护治所",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xiyu",
+   "name": "西域",
+   "type": "region",
+   "modern": "今新疆及中亚",
+   "note": "汉之西域",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

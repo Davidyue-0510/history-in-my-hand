@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "shanghai",
+   "name": "上海",
+   "type": "city",
+   "modern": "今中国上海市",
+   "note": "通商口岸",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "type": "city",
+   "modern": "今中国广东省广州市",
+   "note": "五口之一",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": 113.26,
+   "lat": 23.13,
+   "geo_note": "康有为故里，今广东广州"
+  },
+  {
+   "id": "xiamen",
+   "name": "厦门",
+   "type": "city",
+   "modern": "今中国福建省厦门市",
+   "note": "五口之一",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "fuzhou",
+   "name": "福州",
+   "type": "city",
+   "modern": "今中国福建省福州市",
+   "note": "五口之一",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "ningbo",
+   "name": "宁波",
+   "type": "city",
+   "modern": "今中国浙江省宁波市",
+   "note": "五口之一",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

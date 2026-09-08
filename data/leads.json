@@ -1471,6 +1471,21 @@
    "_src_line": 43
   },
   {
+   "id": "GUA_013",
+   "scene": "guangxi_lingqu",
+   "subject": "event:ev_guangxi_lingqu_01",
+   "title": "具体年月不详",
+   "missing": "历史文献考证",
+   "where": "《史记·平津侯主父列传》",
+   "skills": [
+    "历史文献考证"
+   ],
+   "accept": "进一步考证具体开凿年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "GUA_016",
    "scene": "guangxi_lingqu_llm",
    "subject": "place:lingqu",
@@ -1564,6 +1579,22 @@
    "_src_line": 14
   },
   {
+   "id": "GUI_013",
+   "scene": "guizhou_yelang",
+   "subject": "place:yelang",
+   "title": "戶口不詳",
+   "missing": "考古學 / 人口學",
+   "where": "夜郎考古",
+   "skills": [
+    "考古學",
+    "人口學"
+   ],
+   "accept": "夜郎人口規模",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "GUI_014",
    "scene": "guizhou_yelang_llm",
    "subject": "place:yelang",
@@ -1641,6 +1672,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "HAI_013",
+   "scene": "hainan_xianfuren",
+   "subject": "event:ev_hainan_xianfuren_03",
+   "title": "具体洞名未载",
+   "missing": "文献考证 / 田野调查",
+   "where": "海南地方志或族谱",
+   "skills": [
+    "文献考证",
+    "田野调查"
+   ],
+   "accept": "补充具体归附洞名",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "HAI_014",
@@ -1799,6 +1846,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "HEI_013",
+   "scene": "heilongjiang_jin",
+   "subject": "place:huining",
+   "title": "建置年代不详",
+   "missing": "考古 / 文献",
+   "where": "会宁府",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "会宁府始建年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "HEI_012",
@@ -2378,6 +2441,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "JIL_008",
+   "scene": "jilin_gaogouli",
+   "subject": "place:heusheng_gu_cheng",
+   "title": "纥升骨城今地有争议",
+   "missing": "考古学 / 历史地理",
+   "where": "纥升骨城遗址",
+   "skills": [
+    "考古学",
+    "历史地理"
+   ],
+   "accept": "考古发掘确认城址",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
   },
   {
    "id": "JNG01",
@@ -3199,6 +3278,21 @@
    "_src_line": 15
   },
   {
+   "id": "NEI_012",
+   "scene": "neimenggu_liao",
+   "subject": "event:ev_neimenggu_liao_01",
+   "title": "称帝年份有争议",
+   "missing": "考据",
+   "where": "辽史与资治通鉴",
+   "skills": [
+    "考据"
+   ],
+   "accept": "916年说",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "NEI_011",
    "scene": "neimenggu_zhaojun_llm",
    "subject": "person:NEI__p01",
@@ -3923,6 +4017,22 @@
   },
   {
    "id": "SHA_015",
+   "scene": "shanghai_kaibu",
+   "subject": "place:shanghai",
+   "title": "具体贸易数据未载",
+   "missing": "经济史 / 档案学",
+   "where": "上海海关档案",
+   "skills": [
+    "经济史",
+    "档案学"
+   ],
+   "accept": "补充贸易数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SHA_015",
    "scene": "shanghai_songkai_llm",
    "subject": "event:ev_shanghai_songkai_llm_01",
    "title": "双方伤亡数字未详",
@@ -3983,6 +4093,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "SHA_015",
+   "scene": "shanxi_sanjiafenjin",
+   "subject": "event:ev_shanxi_sanjiafenjin_03",
+   "title": "三家分晋细节记载不详",
+   "missing": "史料考据 / 考古学",
+   "where": "san_jin",
+   "skills": [
+    "史料考据",
+    "考古学"
+   ],
+   "accept": "需更多出土文献佐证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "SHAQIUG01",
@@ -5182,6 +5308,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "XIN_011",
+   "scene": "xinjiang_xiyu",
+   "subject": "event:ev_xinjiang_xiyu_02",
+   "title": "都护设置年代有异说",
+   "missing": "考据",
+   "where": "汉书·郑吉传",
+   "skills": [
+    "考据"
+   ],
+   "accept": "另说在神爵三年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "XIN_012",

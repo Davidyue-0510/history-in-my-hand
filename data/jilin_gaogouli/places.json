@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "heusheng_gu_cheng",
+   "name": "纥升骨城",
+   "type": "city",
+   "modern": "今中国辽宁省桓仁县",
+   "note": "高句丽始祖东明建都之地",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guonei_cheng",
+   "name": "国内城",
+   "type": "city",
+   "modern": "今中国吉林省集安市",
+   "note": "高句丽中期都城",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "wandu_shan_cheng",
+   "name": "丸都山城",
+   "type": "fortress",
+   "modern": "今中国吉林省集安市",
+   "note": "国内城卫城，凭山险而筑",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xuantu_jun",
+   "name": "玄菟郡",
+   "type": "region",
+   "modern": "今中国辽宁省东部",
+   "note": "汉四郡之一，高句丽初为属国",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "liaodong",
+   "name": "辽东",
+   "type": "region",
+   "modern": "今中国辽宁省",
+   "note": "高句丽跨据之地",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 123.43,
+   "lat": 41.8,
+   "geo_note": "唐安东都护府，今辽宁辽阳"
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

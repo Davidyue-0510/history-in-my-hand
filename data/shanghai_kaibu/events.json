@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shanghai_kaibu_01",
+   "subject": "event:ev_shanghai_kaibu_01",
+   "year": 1842,
+   "era": "道光二十二年",
+   "title": "南京条约签订",
+   "kind": "外交",
+   "text": "中英订约，五口通商",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanghai_kaibu_02",
+   "subject": "event:ev_shanghai_kaibu_02",
+   "year": 1843,
+   "era": "道光二十三年",
+   "title": "上海设关",
+   "kind": "行政",
+   "text": "设海关，外商始集",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  }
+ ]
+}

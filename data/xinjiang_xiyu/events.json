@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xinjiang_xiyu_01",
+   "subject": "event:ev_xinjiang_xiyu_01",
+   "year": -138,
+   "era": "建元三年",
+   "title": "张骞出使",
+   "kind": "外交",
+   "text": "张骞始通西域",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xinjiang_xiyu_02",
+   "subject": "event:ev_xinjiang_xiyu_02",
+   "year": -60,
+   "era": "神爵二年",
+   "title": "设西域都护",
+   "kind": "建置",
+   "text": "郑吉为都护",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "xiyu",
+   "to": "wulei",
+   "type": "military",
+   "label": "都护镇抚",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

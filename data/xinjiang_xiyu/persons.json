@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "XIN__p01",
+   "name": "汉武帝",
+   "role": "汉帝",
+   "note": "通西域，破匈奴",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p02",
+   "name": "张骞",
+   "role": "汉使",
+   "note": "凿空西域",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p03",
+   "name": "郑吉",
+   "role": "西域都护",
+   "note": "首任都护",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIN__p04",
+   "name": "汉宣帝",
+   "role": "汉帝",
+   "note": "设都护",
+   "_source_idx": 0,
+   "_source_name": "《汉书·西域传》与都护府",
+   "_source_party": "汉官修",
+   "_source_credibility": null
+  }
+ ]
+}

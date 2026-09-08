@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 271 个切片
+// 权威数据源：data/scenes.json 注册的 281 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 271 个切片",
+  "slice": "multi-scene · 281 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -20,6 +20,7 @@ window.SANDBOX_DATA = {
    "changping_llm",
    "chibi_llm",
    "chongqing_capital_llm",
+   "chongqing_diaoyucheng",
    "chongqing_diaoyucheng_llm",
    "chongqing_peidu_llm",
    "chu_han",
@@ -38,19 +39,23 @@ window.SANDBOX_DATA = {
    "gansu_hexizhen_llm",
    "guandu_llm",
    "guangdong_nanyue",
+   "guangxi_lingqu",
    "guangxi_lingqu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
    "guizhou_shexiang_llm",
+   "guizhou_yelang",
    "guizhou_yelang_llm",
    "guizhou_zunyi_llm",
    "hainan_hainandao_llm",
    "hainan_hairui_llm",
+   "hainan_xianfuren",
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
    "hebei_zhaozhou",
+   "heilongjiang_jin",
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "hexi_sijun_llm",
@@ -63,6 +68,7 @@ window.SANDBOX_DATA = {
    "jiangxi_ruijin_llm",
    "jilin_bohai_llm",
    "jilin_changchun_llm",
+   "jilin_gaogouli",
    "jilin_gaogouli_llm",
    "jinshang_llm",
    "liangzhou_meeting_llm",
@@ -73,6 +79,7 @@ window.SANDBOX_DATA = {
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
    "neimenggu_genghis_llm",
+   "neimenggu_liao",
    "neimenggu_zhaojun_llm",
    "ningxia_xiaoguan_llm",
    "ningxia_xixia_llm",
@@ -89,9 +96,11 @@ window.SANDBOX_DATA = {
    "qinghai_zongkaba_llm",
    "san_guo",
    "shandong_kongzi",
+   "shanghai_kaibu",
    "shanghai_songkai_llm",
    "shanghai_xiaodaohui_llm",
    "shanxi_jinshang_llm",
+   "shanxi_sanjiafenjin",
    "shu_han_found_llm",
    "sichuan_dujiangyan_llm",
    "sichuan_zhuge",
@@ -123,6 +132,7 @@ window.SANDBOX_DATA = {
    "xianggang_dongjiang_llm",
    "xianggang_huigui_llm",
    "xianggang_songmo_llm",
+   "xinjiang_xiyu",
    "xinjiang_xiyu_llm",
    "xinjiang_zuozongtang_llm",
    "xiyu_dunhu_llm",
@@ -661,7 +671,17 @@ window.SANDBOX_DATA = {
   "sichuan_zhuge",
   "yunnan_dali",
   "zhejiang_linan",
-  "jiangxi_jingdezhen"
+  "jiangxi_jingdezhen",
+  "shanxi_sanjiafenjin",
+  "guangxi_lingqu",
+  "heilongjiang_jin",
+  "xinjiang_xiyu",
+  "neimenggu_liao",
+  "chongqing_diaoyucheng",
+  "shanghai_kaibu",
+  "guizhou_yelang",
+  "hainan_xianfuren",
+  "jilin_gaogouli"
  ],
  "vocab": {
   "layers": [
@@ -27856,6 +27876,337 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 2
    }
+  },
+  "shanxi_sanjiafenjin": {
+   "key": "shanxi_sanjiafenjin",
+   "scene_id": "shanxi_sanjiafenjin",
+   "title": "三家分晋·战国开端（春秋末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "huabei",
+   "page": "county.html?scene=shanxi_sanjiafenjin",
+   "primary_place": "jinyang",
+   "vocab_pack": "inline:shanxi_sanjiafenjin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 5,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "guangxi_lingqu": {
+   "key": "guangxi_lingqu",
+   "scene_id": "guangxi_lingqu",
+   "title": "秦凿灵渠·沟通湘漓（秦）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "jiangnan",
+   "page": "county.html?scene=guangxi_lingqu",
+   "primary_place": "lingqu",
+   "vocab_pack": "inline:guangxi_lingqu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 6,
+    "person": 2,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "heilongjiang_jin": {
+   "key": "heilongjiang_jin",
+   "scene_id": "heilongjiang_jin",
+   "title": "金上京·女真建国（辽金之际）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "huabei",
+   "page": "county.html?scene=heilongjiang_jin",
+   "primary_place": "huining",
+   "vocab_pack": "inline:heilongjiang_jin",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "xinjiang_xiyu": {
+   "key": "xinjiang_xiyu",
+   "scene_id": "xinjiang_xiyu",
+   "title": "汉·西域都护府（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "guangzhong",
+   "page": "county.html?scene=xinjiang_xiyu",
+   "primary_place": "wulei",
+   "vocab_pack": "inline:xinjiang_xiyu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 4,
+    "assert": 11,
+    "conflict": 1,
+    "gap": 1,
+    "record": 8,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "neimenggu_liao": {
+   "key": "neimenggu_liao",
+   "scene_id": "neimenggu_liao",
+   "title": "契丹辽·上京临潢（辽）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "huabei",
+   "page": "county.html?scene=neimenggu_liao",
+   "primary_place": "shangjing",
+   "vocab_pack": "inline:neimenggu_liao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 1,
+    "assert": 12,
+    "conflict": 0,
+    "gap": 1,
+    "record": 9,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "chongqing_diaoyucheng": {
+   "key": "chongqing_diaoyucheng",
+   "scene_id": "chongqing_diaoyucheng",
+   "title": "宋·钓鱼城之战（宋蒙）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "battle",
+   "region": "jiangnan",
+   "page": "chongqing_diaoyucheng.html",
+   "primary_place": "diaoyucheng",
+   "vocab_pack": "inline:chongqing_diaoyucheng",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 2,
+    "person": 3,
+    "assert": 15,
+    "conflict": 1,
+    "gap": 0,
+    "record": 12,
+    "scholarship": 2,
+    "inference": 1
+   }
+  },
+  "shanghai_kaibu": {
+   "key": "shanghai_kaibu",
+   "scene_id": "shanghai_kaibu",
+   "title": "近代·上海开埠（清季）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "jiangnan",
+   "page": "county.html?scene=shanghai_kaibu",
+   "primary_place": "shanghai",
+   "vocab_pack": "inline:shanghai_kaibu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 2,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guizhou_yelang": {
+   "key": "guizhou_yelang",
+   "scene_id": "guizhou_yelang",
+   "title": "汉·夜郎归汉（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "page": "county.html?scene=guizhou_yelang",
+   "primary_place": "yelang",
+   "vocab_pack": "inline:guizhou_yelang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 3,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hainan_xianfuren": {
+   "key": "hainan_xianfuren",
+   "scene_id": "hainan_xianfuren",
+   "title": "隋·冼夫人抚定岭南（隋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "jiangnan",
+   "page": "county.html?scene=hainan_xianfuren",
+   "primary_place": "gaoliang",
+   "vocab_pack": "inline:hainan_xianfuren",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 3,
+    "person": 3,
+    "assert": 13,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "jilin_gaogouli": {
+   "key": "jilin_gaogouli",
+   "scene_id": "jilin_gaogouli",
+   "title": "高句丽·国内城（汉唐之际）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "huabei",
+   "page": "county.html?scene=jilin_gaogouli",
+   "primary_place": "heusheng_gu_cheng",
+   "vocab_pack": "inline:jilin_gaogouli",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 10,
+    "scholarship": 2,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -28129,7 +28480,17 @@ window.SANDBOX_DATA = {
   "sichuan_zhuge": "slices/sichuan_zhuge.js",
   "yunnan_dali": "slices/yunnan_dali.js",
   "zhejiang_linan": "slices/zhejiang_linan.js",
-  "jiangxi_jingdezhen": "slices/jiangxi_jingdezhen.js"
+  "jiangxi_jingdezhen": "slices/jiangxi_jingdezhen.js",
+  "shanxi_sanjiafenjin": "slices/shanxi_sanjiafenjin.js",
+  "guangxi_lingqu": "slices/guangxi_lingqu.js",
+  "heilongjiang_jin": "slices/heilongjiang_jin.js",
+  "xinjiang_xiyu": "slices/xinjiang_xiyu.js",
+  "neimenggu_liao": "slices/neimenggu_liao.js",
+  "chongqing_diaoyucheng": "slices/chongqing_diaoyucheng.js",
+  "shanghai_kaibu": "slices/shanghai_kaibu.js",
+  "guizhou_yelang": "slices/guizhou_yelang.js",
+  "hainan_xianfuren": "slices/hainan_xianfuren.js",
+  "jilin_gaogouli": "slices/jilin_gaogouli.js"
  },
  "corridors": [
   {

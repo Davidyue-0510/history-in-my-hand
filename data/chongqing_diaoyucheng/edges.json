@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "hezhou",
+   "to": "diaoyucheng",
+   "type": "military",
+   "label": "蒙军攻钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

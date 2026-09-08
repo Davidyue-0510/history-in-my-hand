@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "xiangjiang",
+   "to": "lijiang",
+   "type": "canal",
+   "label": "灵渠沟通湘漓",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

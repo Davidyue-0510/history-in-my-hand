@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_hainan_xianfuren_01",
+   "subject": "event:ev_hainan_xianfuren_01",
+   "year": 589,
+   "era": "隋开皇九年",
+   "title": "陈亡岭南奉圣母",
+   "kind": "其他",
+   "text": "陈亡，岭南数郡奉夫人为圣母",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_xianfuren_02",
+   "subject": "event:ev_hainan_xianfuren_02",
+   "year": 590,
+   "era": "隋开皇十年",
+   "title": "冼夫人归隋",
+   "kind": "行政",
+   "text": "夫人审势归隋，遣孙迎韦洸",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_xianfuren_03",
+   "subject": "event:ev_hainan_xianfuren_03",
+   "year": 590,
+   "era": "隋开皇十年",
+   "title": "海南儋耳归附",
+   "kind": "行政",
+   "text": "海南儋耳归附者千余洞",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "耆英",
+   "role": "清钦差大臣",
+   "note": "代表清廷签订《南京条约》",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "璞鼎查",
+   "role": "英国全权代表",
+   "note": "英方签约代表",
+   "_source_idx": 0,
+   "_source_name": "《南京条约》与上海开埠",
+   "_source_party": "清官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jilin_gaogouli_01",
+   "subject": "event:ev_jilin_gaogouli_01",
+   "year": -108,
+   "era": "汉武帝元封三年",
+   "title": "汉灭卫氏朝鲜",
+   "kind": "战事",
+   "text": "汉武帝灭卫氏朝鲜，置玄菟郡",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_gaogouli_02",
+   "subject": "event:ev_jilin_gaogouli_02",
+   "year": 3,
+   "era": "汉元始三年",
+   "title": "迁都国内城",
+   "kind": "建置",
+   "text": "高句丽徙都国内城，筑丸都山城",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jilin_gaogouli_03",
+   "subject": "event:ev_jilin_gaogouli_03",
+   "year": 668,
+   "era": "唐总章元年",
+   "title": "唐灭高句丽",
+   "kind": "战事",
+   "text": "唐高宗平高句丽，雄长海东终",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

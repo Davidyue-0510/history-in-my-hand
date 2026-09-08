@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "冼夫人",
+   "role": "俚人首领，岭南圣母",
+   "note": "幼贤明，多筹略，能行军用师",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "冯魂",
+   "role": "冼夫人之孙",
+   "note": "奉祖母命迎韦洸",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p03",
+   "name": "韦洸",
+   "role": "隋将",
+   "note": "率隋师南下",
+   "_source_idx": 0,
+   "_source_name": "《隋书·谯国夫人传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

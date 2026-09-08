@@ -1,9 +1,9 @@
 {
-  "scenes_total": 271,
-  "historical": 262,
+  "scenes_total": 281,
+  "historical": 272,
   "fictional": 9,
-  "assertions_total": 4120,
-  "sources_total": 248,
+  "assertions_total": 4255,
+  "sources_total": 258,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -16,6 +16,7 @@
     "changping_llm",
     "chibi_llm",
     "chongqing_capital_llm",
+    "chongqing_diaoyucheng",
     "chongqing_diaoyucheng_llm",
     "chongqing_peidu_llm",
     "chu_han",
@@ -34,19 +35,23 @@
     "gansu_hexizhen_llm",
     "guandu_llm",
     "guangdong_nanyue",
+    "guangxi_lingqu",
     "guangxi_lingqu_llm",
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
     "guizhou_shexiang_llm",
+    "guizhou_yelang",
     "guizhou_yelang_llm",
     "guizhou_zunyi_llm",
     "hainan_hainandao_llm",
     "hainan_hairui_llm",
+    "hainan_xianfuren",
     "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
     "hebei_zhaozhou",
+    "heilongjiang_jin",
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
     "hexi_sijun_llm",
@@ -59,6 +64,7 @@
     "jiangxi_ruijin_llm",
     "jilin_bohai_llm",
     "jilin_changchun_llm",
+    "jilin_gaogouli",
     "jilin_gaogouli_llm",
     "jinshang_llm",
     "liangzhou_meeting_llm",
@@ -69,6 +75,7 @@
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
     "neimenggu_genghis_llm",
+    "neimenggu_liao",
     "neimenggu_zhaojun_llm",
     "ningxia_xiaoguan_llm",
     "ningxia_xixia_llm",
@@ -85,9 +92,11 @@
     "qinghai_zongkaba_llm",
     "san_guo",
     "shandong_kongzi",
+    "shanghai_kaibu",
     "shanghai_songkai_llm",
     "shanghai_xiaodaohui_llm",
     "shanxi_jinshang_llm",
+    "shanxi_sanjiafenjin",
     "shu_han_found_llm",
     "sichuan_dujiangyan_llm",
     "sichuan_zhuge",
@@ -119,6 +128,7 @@
     "xianggang_dongjiang_llm",
     "xianggang_huigui_llm",
     "xianggang_songmo_llm",
+    "xinjiang_xiyu",
     "xinjiang_xiyu_llm",
     "xinjiang_zuozongtang_llm",
     "xiyu_dunhu_llm",
@@ -136,7 +146,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 386,
+  "leads_total": 395,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2085,6 +2095,76 @@
       "kind": "tech",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "shanxi_sanjiafenjin",
+      "title": "三家分晋·战国开端（春秋末）",
+      "kind": "dynasty",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_lingqu",
+      "title": "秦凿灵渠·沟通湘漓（秦）",
+      "kind": "engineering",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "heilongjiang_jin",
+      "title": "金上京·女真建国（辽金之际）",
+      "kind": "dynasty",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "xinjiang_xiyu",
+      "title": "汉·西域都护府（汉）",
+      "kind": "frontier",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "neimenggu_liao",
+      "title": "契丹辽·上京临潢（辽）",
+      "kind": "dynasty",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "chongqing_diaoyucheng",
+      "title": "宋·钓鱼城之战（宋蒙）",
+      "kind": "battle",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "shanghai_kaibu",
+      "title": "近代·上海开埠（清季）",
+      "kind": "exchange",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_yelang",
+      "title": "汉·夜郎归汉（汉）",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hainan_xianfuren",
+      "title": "隋·冼夫人抚定岭南（隋）",
+      "kind": "court",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jilin_gaogouli",
+      "title": "高句丽·国内城（汉唐之际）",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2358,6 +2438,16 @@
     "sichuan_zhuge": "蜀汉丞相诸葛亮治蜀（三国）",
     "yunnan_dali": "宋·大理国（宋）",
     "zhejiang_linan": "南宋行在临安·江南繁华（宋）",
-    "jiangxi_jingdezhen": "宋·景德镇瓷业（宋）"
+    "jiangxi_jingdezhen": "宋·景德镇瓷业（宋）",
+    "shanxi_sanjiafenjin": "三家分晋·战国开端（春秋末）",
+    "guangxi_lingqu": "秦凿灵渠·沟通湘漓（秦）",
+    "heilongjiang_jin": "金上京·女真建国（辽金之际）",
+    "xinjiang_xiyu": "汉·西域都护府（汉）",
+    "neimenggu_liao": "契丹辽·上京临潢（辽）",
+    "chongqing_diaoyucheng": "宋·钓鱼城之战（宋蒙）",
+    "shanghai_kaibu": "近代·上海开埠（清季）",
+    "guizhou_yelang": "汉·夜郎归汉（汉）",
+    "hainan_xianfuren": "隋·冼夫人抚定岭南（隋）",
+    "jilin_gaogouli": "高句丽·国内城（汉唐之际）"
   }
 }

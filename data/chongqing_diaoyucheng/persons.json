@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "余玠",
+   "role": "南宋四川制置使",
+   "note": "筑钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p02",
+   "name": "蒙哥",
+   "role": "蒙古大汗",
+   "note": "亲征钓鱼城",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p03",
+   "name": "王坚",
+   "role": "宋将",
+   "note": "守城",
+   "_source_idx": 0,
+   "_source_name": "《宋史》与钓鱼城",
+   "_source_party": "宋官修",
+   "_source_credibility": null
+  }
+ ]
+}

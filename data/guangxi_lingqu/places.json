@@ -1,0 +1,90 @@
+{
+ "places": [
+  {
+   "id": "lingqu",
+   "name": "灵渠",
+   "type": "canal",
+   "modern": "今广西兴安县",
+   "note": "秦代水利工程",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "yuechengling",
+   "name": "越城岭",
+   "type": "mountain",
+   "modern": "今广西越城岭",
+   "note": "灵渠所在山脉",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xiangjiang",
+   "name": "湘水",
+   "type": "river",
+   "modern": "今湘江",
+   "note": "长江水系支流",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "lijiang",
+   "name": "漓水",
+   "type": "river",
+   "modern": "今漓江",
+   "note": "珠江水系支流",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guilin",
+   "name": "桂林",
+   "type": "city",
+   "modern": "今广西桂林",
+   "note": "秦置桂林郡",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "xiangjun",
+   "name": "象郡",
+   "type": "region",
+   "modern": "今广西及越南部分地区",
+   "note": "秦置象郡",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》与灵渠",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

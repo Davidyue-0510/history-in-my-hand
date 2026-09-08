@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "JIL__p01",
+   "name": "东明",
+   "role": "高句丽始祖",
+   "note": "高句丽开国者，王于纥升骨城",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p02",
+   "name": "汉武帝",
+   "role": "汉朝皇帝",
+   "note": "灭卫氏朝鲜，置玄菟郡",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p03",
+   "name": "高句丽侯驺",
+   "role": "高句丽侯",
+   "note": "汉置玄菟郡时为属国",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIL__p04",
+   "name": "唐高宗",
+   "role": "唐朝皇帝",
+   "note": "灭高句丽，平海东",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·东夷传》与高句丽",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
