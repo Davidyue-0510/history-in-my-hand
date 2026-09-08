@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["susong_llm"] = {
    }
   },
   "dims": [
+   1,
    2,
    3,
    6
@@ -606,6 +607,35 @@ window.SANDBOX_SLICES["susong_llm"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "擒纵机构具体构造不明",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SUS_DIM_01",
+   "subject": "place:bianjing",
+   "predicate": "地理建制",
+   "value_text": "元祐间苏颂于汴京建水运仪象台，集天文观测与昼夜授时于一体",
+   "time": {
+    "era_text": "元祐七年",
+    "start": "1092-01-01",
+    "end": "1092-12-31",
+    "gregorian_year": 1092
+   },
+   "place": "bianjing",
+   "source": "susong_water_llm",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "[补维度] 缺维补充",
+   "dims": [
+    1
+   ],
+   "_source_idx": 0,
+   "_source_name": "苏颂水运仪象台(SAMPLE)",
+   "_source_party": "后世官修",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null

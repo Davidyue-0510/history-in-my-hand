@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["wangyangming"] = {
    }
   },
   "dims": [
+   4,
    5,
    6
   ],
@@ -659,6 +660,35 @@ window.SANDBOX_SLICES["wangyangming"] = {
    "_source_party": "后世官修",
    "_source_credibility": null,
    "_source_quote": "",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "WYM_DIM_01",
+   "subject": "place:yue",
+   "predicate": "社会影响",
+   "value_text": "王守仁讲学绍兴，门人弟子遍东南，王学蔚成流派",
+   "time": {
+    "era_text": "嘉靖元年",
+    "start": "1521-01-01",
+    "end": "1521-12-31",
+    "gregorian_year": 1521
+   },
+   "place": "yue",
+   "source": "wangyangming_heart_llm",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "[补维度] 缺维补充",
+   "dims": [
+    4
+   ],
+   "_source_idx": 0,
+   "_source_name": "王阳明心学(SAMPLE)",
+   "_source_party": "后世官修",
    "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null

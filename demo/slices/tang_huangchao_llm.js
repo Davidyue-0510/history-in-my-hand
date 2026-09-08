@@ -17,6 +17,7 @@ window.SANDBOX_SLICES["tang_huangchao_llm"] = {
   "lead": "黄巢之乱横扫大半唐土，攻破两京，彻底暴露晚唐中央动员能力的崩解。",
   "parties_note": "叙事方=唐廷/大齐（黄巢）；来源=后世官修（基于《旧唐书》《新唐书》现代概述）。",
   "dims": [
+   3,
    4,
    6
   ],
@@ -722,6 +723,35 @@ window.SANDBOX_SLICES["tang_huangchao_llm"] = {
    "_source_credibility": null,
    "_source_quote": "无",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "THC_DIM_01",
+   "subject": "place:changan",
+   "predicate": "制度背景",
+   "value_text": "黄巢累举进士不第，值唐政衰，聚众数万起事",
+   "time": {
+    "era_text": "乾符二年",
+    "start": "875-01-01",
+    "end": "875-12-31",
+    "gregorian_year": 875
+   },
+   "place": "changan",
+   "source": "tang_huangchao_src_llm",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "[补维度] 缺维补充",
+   "dims": [
+    3
+   ],
+   "_source_idx": 0,
+   "_source_name": "唐·黄巢起义（现代概述）",
+   "_source_party": "后世官修",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   }

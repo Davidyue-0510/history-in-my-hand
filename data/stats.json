@@ -2,7 +2,7 @@
   "scenes_total": 202,
   "historical": 193,
   "fictional": 9,
-  "assertions_total": 3158,
+  "assertions_total": 3163,
   "sources_total": 180,
   "factions_total": 9,
   "vocab_packs": [
@@ -1323,7 +1323,7 @@
       "id": "tang_huangchao_llm",
       "title": "唐·黄巢起义（LLM 抽取·人工校订）",
       "kind": "uprising",
-      "assertions": 16,
+      "assertions": 17,
       "factions": {}
     },
     {
@@ -1372,7 +1372,7 @@
       "id": "chibi_llm",
       "title": "三国·赤壁之战",
       "kind": "county",
-      "assertions": 13,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -1456,14 +1456,14 @@
       "id": "susong_llm",
       "title": "苏颂·水运仪象台",
       "kind": "tech",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
       "id": "wangyangming",
       "title": "王阳明·心学",
       "kind": "thought",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {

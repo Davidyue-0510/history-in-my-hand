@@ -67,6 +67,8 @@ window.SANDBOX_SLICES["chibi_llm"] = {
    }
   },
   "dims": [
+   1,
+   2,
    6
   ],
   "page": "county.html?scene=chibi_llm",
@@ -672,6 +674,64 @@ window.SANDBOX_SLICES["chibi_llm"] = {
    "_source_credibility": null,
    "_source_quote": "实际兵力不详",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "CHI_DIM_01",
+   "subject": "place:chibi",
+   "predicate": "地理形胜",
+   "value_text": "赤壁扼长江中游，江面辽阔，南北军势相望，火攻所资",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "chibi",
+   "source": "chibi_llm",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "[补维度] 缺维补充",
+   "dims": [
+    1
+   ],
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "CHI_DIM_02",
+   "subject": "place:wulin",
+   "predicate": "战术技术",
+   "value_text": "孙刘联军以蒙冲斗舰载薪膏，乘风纵火，焚北舟于乌林",
+   "time": {
+    "era_text": "建安十三年",
+    "start": "208-01-01",
+    "end": "208-12-31",
+    "gregorian_year": 208
+   },
+   "place": "wulin",
+   "source": "chibi_llm",
+   "quote": "",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.6,
+   "scale": "theater",
+   "note": "[补维度] 缺维补充",
+   "dims": [
+    2
+   ],
+   "_source_idx": 0,
+   "_source_name": "三国·赤壁之战",
+   "_source_party": "后世官修",
+   "dim_source": "declared",
    "_party": "后世官修",
    "_faction": null
   }

@@ -601,15 +601,15 @@
     {
       "scene": "chibi_llm",
       "name": "chibi_llm",
-      "total": 13,
+      "total": 15,
       "layers": {
-        "inference": 1,
+        "inference": 3,
         "record": 9,
         "scholarship": 2,
         "gap": 1
       },
       "party_counts": {
-        "后世官修": 13
+        "后世官修": 15
       },
       "faction_counts": {},
       "event_count": 2,
@@ -2914,15 +2914,15 @@
     {
       "scene": "susong_llm",
       "name": "susong_llm",
-      "total": 15,
+      "total": 16,
       "layers": {
-        "inference": 1,
+        "inference": 2,
         "record": 12,
         "scholarship": 1,
         "gap": 1
       },
       "party_counts": {
-        "后世官修": 15
+        "后世官修": 16
       },
       "faction_counts": {},
       "event_count": 2,
@@ -3033,15 +3033,15 @@
     {
       "scene": "tang_huangchao_llm",
       "name": "tang_huangchao_llm",
-      "total": 16,
+      "total": 17,
       "layers": {
         "record": 13,
-        "inference": 1,
+        "inference": 2,
         "scholarship": 1,
         "gap": 1
       },
       "party_counts": {
-        "后世官修": 16
+        "后世官修": 17
       },
       "faction_counts": {},
       "event_count": 5,
@@ -3231,15 +3231,15 @@
     {
       "scene": "wangyangming",
       "name": "wangyangming",
-      "total": 15,
+      "total": 16,
       "layers": {
-        "inference": 1,
+        "inference": 2,
         "record": 10,
         "scholarship": 3,
         "gap": 1
       },
       "party_counts": {
-        "后世官修": 15
+        "后世官修": 16
       },
       "faction_counts": {},
       "event_count": 3,

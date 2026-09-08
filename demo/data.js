@@ -24386,6 +24386,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    3,
     4,
     6
    ],
@@ -24395,12 +24396,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 5,
     "person": 4,
-    "assert": 16,
+    "assert": 17,
     "conflict": 0,
     "gap": 1,
     "record": 13,
     "scholarship": 1,
-    "inference": 1
+    "inference": 2
    }
   },
   "song_chanchuan_llm": {
@@ -24609,6 +24610,8 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
+    2,
     6
    ],
    "epoch": "three_kingdoms",
@@ -24617,12 +24620,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 6,
     "person": 8,
-    "assert": 13,
+    "assert": 15,
     "conflict": 3,
     "gap": 1,
     "record": 9,
     "scholarship": 2,
-    "inference": 1
+    "inference": 3
    }
   },
   "song_wanganshi_llm": {
@@ -25012,6 +25015,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    1,
     2,
     3,
     6
@@ -25022,12 +25026,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 2,
     "person": 2,
-    "assert": 15,
+    "assert": 16,
     "conflict": 0,
     "gap": 1,
     "record": 12,
     "scholarship": 1,
-    "inference": 1
+    "inference": 2
    }
   },
   "wangyangming": {
@@ -25044,6 +25048,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    4,
     5,
     6
    ],
@@ -25053,12 +25058,12 @@ window.SANDBOX_DATA = {
     "src": 1,
     "place": 3,
     "person": 6,
-    "assert": 15,
+    "assert": 16,
     "conflict": 3,
     "gap": 1,
     "record": 10,
     "scholarship": 3,
-    "inference": 1
+    "inference": 2
    }
   },
   "zhuxi": {
