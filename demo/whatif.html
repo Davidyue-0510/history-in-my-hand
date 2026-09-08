@@ -463,7 +463,8 @@
         var sv = anchored.reduce(function(m,e){ var o={info:0,warn:1,bad:2}; return Math.max(m, o[e.severity||'info']||0); }, 0);
         var sym = sv>=2 ? '✕' : sv>=1 ? '△' : '○';
         var sc = sv>=2 ? C_BAD : sv>=1 ? C_WARN : C_INFO;
-        svg+='<text x="'+(x-13).toFixed(1)+'" y="'+(y-12).toFixed(1)+'" font-size="15" fill="'+sc+'" text-anchor="middle">'+sym+'</text>';
+        var precise = anchored.some(function(e){ return e.place_id; });
+        svg+='<text data-place="'+nd.id+'" data-anchor="'+(precise?'precise':'origin')+'" x="'+(x-13).toFixed(1)+'" y="'+(y-12).toFixed(1)+'" font-size="15" fill="'+sc+'" text-anchor="middle">'+sym+'</text>';
       }
     });
     svg+='</svg>';

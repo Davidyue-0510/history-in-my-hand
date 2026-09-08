@@ -18,7 +18,8 @@
     "real_to": 0.636,
     "new_to": 0.448,
     "cum": -0.188
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -30,7 +31,8 @@
     "real_to": 0.67,
     "new_to": 0.435,
     "cum": -0.235
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -42,7 +44,8 @@
     "real_to": 0.704,
     "new_to": 0.422,
     "cum": -0.282
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -54,7 +57,8 @@
     "real_to": 0.738,
     "new_to": 0.409,
     "cum": -0.329
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -66,7 +70,8 @@
     "real_to": 0.772,
     "new_to": 0.396,
     "cum": -0.376
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -78,7 +83,8 @@
     "real_to": 0.806,
     "new_to": 0.383,
     "cum": -0.423
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -90,7 +96,8 @@
     "real_to": 0.84,
     "new_to": 0.37,
     "cum": -0.47
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -102,7 +109,8 @@
     "real_to": 0.874,
     "new_to": 0.357,
     "cum": -0.517
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -114,7 +122,8 @@
     "real_to": 0.908,
     "new_to": 0.344,
     "cum": -0.564
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -126,7 +135,8 @@
     "real_to": 0.942,
     "new_to": 0.331,
     "cum": -0.611
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -138,7 +148,8 @@
     "real_to": 0.976,
     "new_to": 0.318,
     "cum": -0.658
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -150,7 +161,8 @@
     "real_to": 1.0,
     "new_to": 0.305,
     "cum": -0.695
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -162,7 +174,8 @@
     "real_to": 1.0,
     "new_to": 0.292,
     "cum": -0.708
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -174,7 +187,8 @@
     "real_to": 1.0,
     "new_to": 0.279,
     "cum": -0.721
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -186,7 +200,8 @@
     "real_to": 1.0,
     "new_to": 0.265,
     "cum": -0.735
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -198,7 +213,8 @@
     "real_to": 1.0,
     "new_to": 0.252,
     "cum": -0.748
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -210,7 +226,8 @@
     "real_to": 1.0,
     "new_to": 0.239,
     "cum": -0.761
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -222,7 +239,8 @@
     "real_to": 1.0,
     "new_to": 0.226,
     "cum": -0.774
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "divergence",
@@ -234,7 +252,8 @@
     "real_to": 1.0,
     "new_to": 0.213,
     "cum": -0.787
-   }
+   },
+   "place_id": "xianyang"
   },
   {
    "kind": "summary",
@@ -245,7 +264,8 @@
     "cum": -0.787,
     "match": 0,
     "total": 1
-   }
+   },
+   "place_id": "xianyang"
   }
  ]
 }

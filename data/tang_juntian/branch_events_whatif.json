@@ -18,7 +18,8 @@
     "real_to": 0.62,
     "new_to": 0.416,
     "cum": -0.204
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -30,7 +31,8 @@
     "real_to": 0.68,
     "new_to": 0.374,
     "cum": -0.306
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -42,7 +44,8 @@
     "real_to": 0.74,
     "new_to": 0.332,
     "cum": -0.408
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -54,7 +57,8 @@
     "real_to": 0.8,
     "new_to": 0.29,
     "cum": -0.51
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -66,7 +70,8 @@
     "real_to": 0.86,
     "new_to": 0.248,
     "cum": -0.612
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -78,7 +83,8 @@
     "real_to": 0.92,
     "new_to": 0.206,
     "cum": -0.714
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -90,7 +96,8 @@
     "real_to": 0.98,
     "new_to": 0.164,
     "cum": -0.816
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -102,7 +109,8 @@
     "real_to": 1.0,
     "new_to": 0.122,
     "cum": -0.878
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -114,7 +122,8 @@
     "real_to": 1.0,
     "new_to": 0.08,
     "cum": -0.92
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -126,7 +135,8 @@
     "real_to": 1.0,
     "new_to": 0.038,
     "cum": -0.962
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -138,7 +148,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -150,7 +161,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -162,7 +174,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -174,7 +187,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -186,7 +200,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "divergence",
@@ -198,7 +213,8 @@
     "real_to": 1.0,
     "new_to": 0.0,
     "cum": -1.0
-   }
+   },
+   "place_id": "changan"
   },
   {
    "kind": "summary",
@@ -209,7 +225,8 @@
     "cum": -1.0,
     "match": 0,
     "total": 1
-   }
+   },
+   "place_id": "changan"
   }
  ]
 }

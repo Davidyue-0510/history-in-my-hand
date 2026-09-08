@@ -327,6 +327,34 @@ def _reform_trajectory(start_year, end_year, rate, reform0):
     return traj
 
 
+def _reform_anchor(scene):
+    """非军事改革的空间锚点：变法/制度颁布的施行中心。
+
+    优先级：① 断言中 subject 以 'event:' 开头且带 place 的事件（变法颁行地，最诚实）
+            → ② 兜底 places.json 首地点（通常是国都/中枢）。
+    军事分支事件自带 place_id（战场），本函数仅供非军事路径使用。
+    """
+    d = os.path.join(ROOT, "data", scene)
+    a_path = os.path.join(d, "assertions.jsonl")
+    if os.path.exists(a_path):
+        for ln in open(a_path, encoding="utf-8"):
+            ln = ln.strip()
+            if not ln or ln.startswith("//"):
+                continue
+            try:
+                a = json.loads(ln)
+            except Exception:
+                continue
+            if a.get("subject", "").startswith("event:") and a.get("place"):
+                return a["place"]
+    places, _, _ = load_scene_data(scene)
+    for p in places.get("places", []):
+        pid = p.get("id")
+        if pid:
+            return pid
+    return None
+
+
 def simulate_nonmilitary(scene, branch, start_year, end_year, cfg):
     """非军事确定性推演：扰动六维中的目标维度，复用三阶层 Agent 提供阻力。
 
@@ -408,6 +436,13 @@ def simulate_nonmilitary(scene, branch, start_year, end_year, cfg):
         "description": u"终局改革指数：本支 %.2f / 史实 %.2f（偏离 %.2f）" % (r, real_traj[-1], fin_div),
         "evidence": {"cum": fin_div, "match": 0, "total": 1},
     })
+
+    # 空间锚点：非军事改革的颁布/施行中心（event: 断言 place → 兜底首地点）。
+    # 使 G3 地图事件精确落点（而非永远锚策源地）。军事分支事件自带 place_id，不受影响。
+    anchor = _reform_anchor(scene)
+    if anchor is not None:
+        for ev in branch_events:
+            ev["place_id"] = anchor
     return state_history, branch_events, real_traj
 
 
