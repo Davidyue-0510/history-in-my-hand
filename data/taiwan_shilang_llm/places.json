@@ -1,0 +1,48 @@
+{
+ "places": [
+  {
+   "id": "taiwan",
+   "name": "台湾",
+   "type": "region",
+   "modern": "中国台湾",
+   "note": "明郑据点",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "penghu",
+   "name": "澎湖",
+   "type": "yi",
+   "modern": "中国台湾澎湖",
+   "note": "海战地",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "fujian",
+   "name": "福建",
+   "type": "region",
+   "modern": "中国福建省",
+   "note": "台湾府隶属",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -188,6 +188,8 @@
       "suiyang",
       "susong_llm",
       "taiping",
+      "taiwan_shilang_llm",
+      "taiwan_wushe_llm",
       "taiwan_zhengchenggong_llm",
       "talas",
       "tang_anshi_llm",
@@ -3711,6 +3713,44 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:tp_1851",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "taiwan_shilang_llm",
+      "name": "taiwan_shilang_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "gap": 1,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_taiwan_shilang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "taiwan_wushe_llm",
+      "name": "taiwan_wushe_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_taiwan_wushe_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -15097,6 +15137,161 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.071,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_shilang_llm_01",
+      "name": "event:ev_taiwan_shilang_llm_01",
+      "scenes": [
+        "taiwan_shilang_llm"
+      ],
+      "scene_names": [
+        "taiwan_shilang_llm"
+      ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_shilang_llm_02",
+      "name": "event:ev_taiwan_shilang_llm_02",
+      "scenes": [
+        "taiwan_shilang_llm"
+      ],
+      "scene_names": [
+        "taiwan_shilang_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_shilang_llm_03",
+      "name": "event:ev_taiwan_shilang_llm_03",
+      "scenes": [
+        "taiwan_shilang_llm"
+      ],
+      "scene_names": [
+        "taiwan_shilang_llm"
+      ],
+      "total": 4,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_wushe_llm_01",
+      "name": "event:ev_taiwan_wushe_llm_01",
+      "scenes": [
+        "taiwan_wushe_llm"
+      ],
+      "scene_names": [
+        "taiwan_wushe_llm"
+      ],
+      "total": 12,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.083,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_wushe_llm_02",
+      "name": "event:ev_taiwan_wushe_llm_02",
+      "scenes": [
+        "taiwan_wushe_llm"
+      ],
+      "scene_names": [
+        "taiwan_wushe_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

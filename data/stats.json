@@ -1,9 +1,9 @@
 {
-  "scenes_total": 254,
-  "historical": 245,
+  "scenes_total": 256,
+  "historical": 247,
   "fictional": 9,
-  "assertions_total": 3896,
-  "sources_total": 232,
+  "assertions_total": 3924,
+  "sources_total": 234,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -89,6 +89,8 @@
     "sui_mie_chen_llm",
     "sui_yang_llm",
     "susong_llm",
+    "taiwan_shilang_llm",
+    "taiwan_wushe_llm",
     "taiwan_zhengchenggong_llm",
     "tang",
     "tang_anshi_llm",
@@ -118,7 +120,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 362,
+  "leads_total": 364,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1951,6 +1953,20 @@
       "kind": "engineering",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "taiwan_shilang_llm",
+      "title": "中国台湾·施琅统一台湾",
+      "kind": "battle",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "taiwan_wushe_llm",
+      "title": "中国台湾·雾社起义",
+      "kind": "uprising",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2207,6 +2223,8 @@
     "fujian_xiamen_llm": "厦门五口通商",
     "hunan_mawangdui_llm": "马王堆汉墓",
     "shanxi_jinshang_llm": "晋商",
-    "sichuan_dujiangyan_llm": "都江堰"
+    "sichuan_dujiangyan_llm": "都江堰",
+    "taiwan_shilang_llm": "中国台湾·施琅统一台湾",
+    "taiwan_wushe_llm": "中国台湾·雾社起义"
   }
 }

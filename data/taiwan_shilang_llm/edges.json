@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "fujian",
+   "to": "penghu",
+   "type": "military",
+   "label": "施琅舟师攻澎湖",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "penghu",
+   "to": "taiwan",
+   "type": "military",
+   "label": "郑军败退台湾",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

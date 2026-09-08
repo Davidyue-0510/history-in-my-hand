@@ -1,0 +1,20 @@
+{
+ "places": [
+  {
+   "id": "wushe",
+   "name": "霧社",
+   "type": "region",
+   "modern": "今中國台灣南投縣仁愛鄉",
+   "note": "起義發生地",
+   "_source_idx": 0,
+   "_source_name": "雾社起义史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

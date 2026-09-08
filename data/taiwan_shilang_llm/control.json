@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "taiwan",
+   "party": "后世官修",
+   "start": 1683,
+   "end": 1684,
+   "basis": "auto: 场景主地点 taiwan 叙事控制方=后世官修"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_taiwan_shilang_llm_01",
+   "subject": "event:ev_taiwan_shilang_llm_01",
+   "year": 1683,
+   "era": "康熙二十二年",
+   "title": "澎湖海战",
+   "kind": "战事",
+   "text": "施琅率舟师取澎湖，郑军败",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_shilang_llm_02",
+   "subject": "event:ev_taiwan_shilang_llm_02",
+   "year": 1683,
+   "era": "康熙二十二年",
+   "title": "郑克塽降清",
+   "kind": "行政",
+   "text": "郑克塽请降，台湾归清",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_shilang_llm_03",
+   "subject": "event:ev_taiwan_shilang_llm_03",
+   "year": 1684,
+   "era": "康熙二十三年",
+   "title": "设台湾府",
+   "kind": "建置",
+   "text": "清设台湾府，隶福建省",
+   "_source_idx": 0,
+   "_source_name": "施琅统一台湾史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

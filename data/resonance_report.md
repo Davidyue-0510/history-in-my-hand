@@ -191,6 +191,8 @@
 | suiyang | 17 | 3 | **0.000** | event:sy_jz（0.000） | gap 2 / inference 1 / record 9 / scholarship 5 |
 | susong_llm | 16 | 2 | **0.000** | event:ev_susong_llm_01（0.000） | gap 1 / inference 2 / record 12 / scholarship 1 |
 | taiping | 15 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 9 / scholarship 4 |
+| taiwan_shilang_llm | 14 | 3 | **0.000** | event:ev_taiwan_shilang_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| taiwan_wushe_llm | 14 | 2 | **0.000** | event:ev_taiwan_wushe_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | taiwan_zhengchenggong_llm | 12 | 4 | **0.000** | event:ev_taiwan_zhengchenggong_llm_01（0.000） | gap 4 / inference 1 / record 6 / scholarship 1 |
 | talas | 17 | 3 | **0.000** | event:tl_gel（0.000） | gap 2 / inference 2 / record 9 / scholarship 4 |
 | tang_anshi_llm | 15 | 5 | **0.000** | event:ev_tang_anshi_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 2 |
@@ -614,6 +616,11 @@
 | event:ev_sui_yang_llm_06 | sui_yang_llm | **0.000** | 0/3 | 1.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_susong_llm_01 | susong_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_susong_llm_02 | susong_llm | **0.000** | 0/3 | 0.00 | 0.07 | 14 | 0 / 0 / 0 / 0 |
+| event:ev_taiwan_shilang_llm_01 | taiwan_shilang_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_taiwan_shilang_llm_02 | taiwan_shilang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_taiwan_shilang_llm_03 | taiwan_shilang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_taiwan_wushe_llm_01 | taiwan_wushe_llm | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |
+| event:ev_taiwan_wushe_llm_02 | taiwan_wushe_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_zhengchenggong_llm_01 | taiwan_zhengchenggong_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_zhengchenggong_llm_02 | taiwan_zhengchenggong_llm | **0.000** | 0/3 | 0.00 | 1.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_zhengchenggong_llm_03 | taiwan_zhengchenggong_llm | **0.000** | 0/3 | 0.00 | 0.50 | 4 | 0 / 0 / 0 / 0 |

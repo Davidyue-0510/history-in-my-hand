@@ -4173,6 +4173,37 @@
    "_src_line": 12
   },
   {
+   "id": "TAI_013",
+   "scene": "taiwan_shilang_llm",
+   "subject": "event:ev_taiwan_shilang_llm_01",
+   "title": "清军伤亡未载",
+   "missing": "军事史",
+   "where": "澎湖海战",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "清军伤亡数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "TAI_014",
+   "scene": "taiwan_wushe_llm",
+   "subject": "event:ev_taiwan_wushe_llm_01",
+   "title": "具體戰鬥過程不詳",
+   "missing": "檔案檢索 / 日文文獻解讀",
+   "where": "霧社事件相關檔案",
+   "skills": [
+    "檔案檢索",
+    "日文文獻解讀"
+   ],
+   "accept": "補充戰鬥細節",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "TAI_009",
    "scene": "taiwan_zhengchenggong_llm",
    "subject": "event:ev_taiwan_zhengchenggong_llm_03",
