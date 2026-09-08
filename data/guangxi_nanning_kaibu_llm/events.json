@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_guangxi_nanning_kaibu_llm_01",
+   "subject": "event:ev_guangxi_nanning_kaibu_llm_01",
+   "year": 1907,
+   "era": "光绪三十三年",
+   "title": "南宁开埠",
+   "kind": "建置",
+   "text": "依中英条约，南宁开为商埠",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_nanning_kaibu_llm_02",
+   "subject": "event:ev_guangxi_nanning_kaibu_llm_02",
+   "year": 1908,
+   "era": "光绪三十四年",
+   "title": "龙州开埠",
+   "kind": "建置",
+   "text": "龙州开埠，桂越商道直通海防",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

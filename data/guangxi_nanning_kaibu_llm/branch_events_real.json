@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "guangxi_nanning_kaibu_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1877,
+  1937
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1937,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "nanning"
+  }
+ ]
+}

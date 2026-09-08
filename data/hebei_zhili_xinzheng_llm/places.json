@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "中国天津市",
+      "note": "新政试验地之一",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏议专辑·北洋新政",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    },
+    {
+      "id": "baoding",
+      "name": "保定",
+      "type": "city",
+      "modern": "中国河北省保定市",
+      "note": "新政试验地之一",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏议专辑·北洋新政",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shenzhou",
+      "name": "深州",
+      "type": "region",
+      "modern": "中国河北省深州市",
+      "note": "设矿务局",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏议专辑·北洋新政",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "cangzhou",
+      "name": "沧州",
+      "type": "city",
+      "modern": "中国河北省沧州市",
+      "note": "新政试验地之一",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏议专辑·北洋新政",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

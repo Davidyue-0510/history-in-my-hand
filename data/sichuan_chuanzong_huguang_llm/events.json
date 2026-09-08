@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_sichuan_chuanzong_huguang_llm_01",
+   "subject": "event:ev_sichuan_chuanzong_huguang_llm_01",
+   "year": 1671,
+   "era": "康熙十年",
+   "title": "招民填川令",
+   "kind": "行政",
+   "text": "定招民填川之令，令诸省无田之民入川",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_chuanzong_huguang_llm_02",
+   "subject": "event:ev_sichuan_chuanzong_huguang_llm_02",
+   "year": 1775,
+   "era": "乾隆四十年后",
+   "title": "川民复盛",
+   "kind": "其他",
+   "text": "川民由百余万复至千万余口",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_neimenggu_keerqin_llm_01",
+   "subject": "event:ev_neimenggu_keerqin_llm_01",
+   "year": 1612,
+   "era": "万历四十年",
+   "title": "努尔哈赤娶科尔沁女",
+   "kind": "外交",
+   "text": "努尔哈赤娶明安贝勒女为侧妃",
+   "_source_idx": 0,
+   "_source_name": "清史稿·藩部·科尔沁部",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_neimenggu_keerqin_llm_02",
+   "subject": "event:ev_neimenggu_keerqin_llm_02",
+   "year": 1636,
+   "era": "崇德元年",
+   "title": "清廷与科尔沁联姻",
+   "kind": "外交",
+   "text": "孝端、孝庄、海兰珠皆出科尔沁",
+   "_source_idx": 0,
+   "_source_name": "清史稿·藩部·科尔沁部",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

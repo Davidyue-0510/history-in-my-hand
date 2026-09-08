@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "sichuan_gaitu_guizhou_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1723,
+  1728
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1728,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.65 / 史实 0.79（偏离 -0.14）",
+   "evidence": {
+    "cum": -0.14,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yunnan"
+  }
+ ]
+}

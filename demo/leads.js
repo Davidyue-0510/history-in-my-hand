@@ -1458,6 +1458,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "GAN_015",
+   "scene": "gansu_linxia_huihui_llm",
+   "subject": "place:hezhou",
+   "title": "具体卫所名称未详",
+   "missing": "文献检索",
+   "where": "地方志或明实录",
+   "skills": [
+    "文献检索"
+   ],
+   "accept": "补充卫所名称",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "GAN_014",
+   "scene": "gansu_tianshui_fuxi_llm",
+   "subject": "place:guataishan",
+   "title": "缺乏考古实证",
+   "missing": "考古调查 / 碳十四测年",
+   "where": "卦台山及周边",
+   "skills": [
+    "考古调查",
+    "碳十四测年"
+   ],
+   "accept": "发现先民活动遗迹",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "GRAND_CANALG01",
    "scene": "grand_canal",
    "subject": "event:gc_sui",
@@ -1631,6 +1662,22 @@ window.SANDBOX_LEADS = {
   },
   {
    "id": "GUA_014",
+   "scene": "guangxi_nanning_kaibu_llm",
+   "subject": "event:ev_guangxi_nanning_kaibu_llm_01",
+   "title": "中英续议通商行船条约内容未详",
+   "missing": "历史文献学 / 条约研究",
+   "where": "中英条约档案",
+   "skills": [
+    "历史文献学",
+    "条约研究"
+   ],
+   "accept": "补充条约具体内容",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "GUA_014",
    "scene": "guangxi_taiping_llm",
    "subject": "event:ev_guangxi_taiping_llm_04",
    "title": "史料未详述",
@@ -1676,6 +1723,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 11
   },
   {
+   "id": "GUA_011",
+   "scene": "guangxi_zhuangzu_llm",
+   "subject": "event:ev_guangxi_zhuangzu_llm_02",
+   "title": "歌圩起源时间不明",
+   "missing": "民族学 / 历史地理",
+   "where": "左右江流域",
+   "skills": [
+    "民族学",
+    "历史地理"
+   ],
+   "accept": "考古或文献证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "GUILINGG01",
    "scene": "guiling",
    "subject": "event:gl_jz",
@@ -1707,6 +1770,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "GUI_015",
+   "scene": "guizhou_tianlongshan_llm",
+   "subject": "place:qinglongdong",
+   "title": "临苗侗土家聚居",
+   "missing": "民族学 / 历史地理",
+   "where": "贵州民族地区",
+   "skills": [
+    "民族学",
+    "历史地理"
+   ],
+   "accept": "需实地调查",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "GUI_013",
    "scene": "guizhou_yelang",
    "subject": "place:yelang",
@@ -1736,6 +1815,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "GUI_015",
+   "scene": "guizhou_zhangxiumei_llm",
+   "subject": "event:ev_guizhou_zhangxiumei_llm_02",
+   "title": "張秀眉就義",
+   "missing": "清代軍事史 / 苗民起義研究",
+   "where": "凱里",
+   "skills": [
+    "清代軍事史",
+    "苗民起義研究"
+   ],
+   "accept": "張秀眉被俘及就義的具體過程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "GUI_011",
@@ -1976,6 +2071,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "HEB_013",
+   "scene": "hebei_yanzhao_wenhua_llm",
+   "subject": "event:ev_hebei_yanzhao_wenhua_llm_02",
+   "title": "河北梆子具体形成时间待考",
+   "missing": "文献考证",
+   "where": "河北地方戏曲史料",
+   "skills": [
+    "文献考证"
+   ],
+   "accept": "明确形成年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "HEB_014",
    "scene": "hebei_zhaozhou",
    "subject": "event:ev_hebei_zhaozhou_01",
@@ -1990,6 +2100,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "HEB_012",
+   "scene": "hebei_zhili_xinzheng_llm",
+   "subject": "event:ev_hebei_zhili_xinzheng_llm_02",
+   "title": "具体实施细节不详",
+   "missing": "档案研究",
+   "where": "直隶省档案馆",
+   "skills": [
+    "档案研究"
+   ],
+   "accept": "补充新政具体实施细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "HEI_013",
@@ -3705,6 +3830,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "NEI_013",
+   "scene": "neimenggu_huhehaote_llm",
+   "subject": "place:guihua",
+   "title": "缺乏档案佐证",
+   "missing": "档案学 / 经济史",
+   "where": "归化城",
+   "skills": [
+    "档案学",
+    "经济史"
+   ],
+   "accept": "需查清代归化城税关档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "NEI_014",
+   "scene": "neimenggu_keerqin_llm",
+   "subject": "place:keerqin",
+   "title": "史料未详述联姻细节",
+   "missing": "满文档案解读",
+   "where": "科尔沁部档案",
+   "skills": [
+    "满文档案解读"
+   ],
+   "accept": "补充联姻具体礼仪",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "NEI_012",
    "scene": "neimenggu_liao",
    "subject": "event:ev_neimenggu_liao_01",
@@ -4869,6 +5025,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "SIC_013",
+   "scene": "sichuan_chuanzong_huguang_llm",
+   "subject": "event:ev_sichuan_chuanzong_huguang_llm_01",
+   "title": "具体路线未详",
+   "missing": "历史地理 / 移民史",
+   "where": "湖广至四川沿途",
+   "skills": [
+    "历史地理",
+    "移民史"
+   ],
+   "accept": "补充具体路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "SIC_014",
    "scene": "sichuan_dujiangyan_llm",
    "subject": "event:ev_sichuan_dujiangyan_llm_01",
@@ -4880,6 +5052,21 @@ window.SANDBOX_LEADS = {
     "历史地理"
    ],
    "accept": "发现确切纪年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "SIC_014",
+   "scene": "sichuan_gaitu_guizhou_llm",
+   "subject": "event:ev_sichuan_gaitu_guizhou_llm_02",
+   "title": "具体土司名单缺失",
+   "missing": "历史考据",
+   "where": "清代档案",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "土司名录",
    "effort": "—",
    "issue_url": null,
    "_src_line": 14

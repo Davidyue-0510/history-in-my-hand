@@ -596,20 +596,9 @@ def _slice_meta(bundle):
         "scale_tier": m.get("scale_tier"),
         # 注意：strategic 战略配方体积大，只留在切片 meta（build_scene 已透传），
         # 不进壳——壳 500KB 契约 + 战略面板按需加载切片即可消费。
-        "counts": {
-            "src": len(bundle.get("sources", [])),
-            "place": len(bundle.get("places", [])),
-            "person": len(bundle.get("persons", [])),
-            "assert": len(bundle.get("assertions", [])),
-            "conflict": len(bundle.get("conflicts", [])),
-            "gap": len(bundle.get("gaps", [])),
-            "record": sum(1 for a in bundle.get("assertions", [])
-                          if a.get("layer") == "record"),
-            "scholarship": sum(1 for a in bundle.get("assertions", [])
-                               if a.get("layer") == "scholarship"),
-            "inference": sum(1 for a in bundle.get("assertions", [])
-                             if a.get("layer") == "inference"),
-        },
+        # counts 不进壳：hub/索引卡片始终基于完整 bundle 的 assertions 现算
+        # （cardHtml 用 scenes[sk].assertions），壳内 counts 是死重；
+        # 删之省 ~40KB，使壳体积随场景数线性增长时仍留足余量（约 470KB @346 场景）。
     }
 
 

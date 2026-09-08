@@ -1,0 +1,76 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "sichuan_gaitu_guizhou_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1723,
+  1728
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1725,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.45 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.644,
+    "new_to": 0.448,
+    "cum": -0.196
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1726,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.43 / 史实 0.69）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.692,
+    "new_to": 0.43,
+    "cum": -0.262
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1727,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.413,
+    "cum": -0.327
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1728,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.40 / 史实 0.79）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.788,
+    "new_to": 0.395,
+    "cum": -0.393
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "summary",
+   "year": 1728,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.40 / 史实 0.79（偏离 -0.39）",
+   "evidence": {
+    "cum": -0.393,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yunnan"
+  }
+ ]
+}

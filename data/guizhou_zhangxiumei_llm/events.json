@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_guizhou_zhangxiumei_llm_01",
+   "subject": "event:ev_guizhou_zhangxiumei_llm_01",
+   "year": 1855,
+   "era": "咸豐五年",
+   "title": "台拱起事",
+   "kind": "戰事",
+   "text": "張秀眉以議榔立約，率九股苗民起事",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_zhangxiumei_llm_02",
+   "subject": "event:ev_guizhou_zhangxiumei_llm_02",
+   "year": 1872,
+   "era": "同治十一年",
+   "title": "凱里之戰",
+   "kind": "戰事",
+   "text": "清軍合圍，張秀眉被俘就義",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

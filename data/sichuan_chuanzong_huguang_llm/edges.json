@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "huguang",
+   "to": "chongqing",
+   "type": "military",
+   "label": "移民入川路线",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "chongqing",
+   "to": "chengdu",
+   "type": "military",
+   "label": "沿江上溯",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "chengdu",
+   "to": "tongchuan",
+   "type": "military",
+   "label": "分赴各府",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "tongchuan",
+   "to": "baoning",
+   "type": "military",
+   "label": "分赴各府",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 334,
-  "historical": 325,
+  "scenes_total": 346,
+  "historical": 337,
   "fictional": 9,
-  "assertions_total": 5057,
-  "sources_total": 311,
+  "assertions_total": 5222,
+  "sources_total": 323,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -40,16 +40,22 @@
     "gansu_hexi",
     "gansu_hexizhen_llm",
     "gansu_jiayuguan",
+    "gansu_linxia_huihui_llm",
+    "gansu_tianshui_fuxi_llm",
     "guandu_llm",
     "guangdong_guangzhou",
     "guangdong_nanyue",
     "guangxi_lingqu",
     "guangxi_lingqu_llm",
+    "guangxi_nanning_kaibu_llm",
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
+    "guangxi_zhuangzu_llm",
     "guizhou_shexiang_llm",
+    "guizhou_tianlongshan_llm",
     "guizhou_yelang",
     "guizhou_yelang_llm",
+    "guizhou_zhangxiumei_llm",
     "guizhou_zunyi_llm",
     "hainan_hainandao_llm",
     "hainan_hairui_llm",
@@ -59,7 +65,9 @@
     "han_banchao_llm",
     "han_weihuo_llm",
     "hebei_shanhaiguan",
+    "hebei_yanzhao_wenhua_llm",
     "hebei_zhaozhou",
+    "hebei_zhili_xinzheng_llm",
     "heilongjiang_chuangguan_llm",
     "heilongjiang_jin",
     "heilongjiang_jin_llm",
@@ -99,6 +107,8 @@
     "nan_song_linan_llm",
     "nanzhao_dali_llm",
     "neimenggu_genghis_llm",
+    "neimenggu_huhehaote_llm",
+    "neimenggu_keerqin_llm",
     "neimenggu_liao",
     "neimenggu_zhaojun_llm",
     "ningxia_lingzhou_llm",
@@ -132,7 +142,9 @@
     "shanxi_yungang",
     "shen_baozhen_taiwan_llm",
     "shu_han_found_llm",
+    "sichuan_chuanzong_huguang_llm",
     "sichuan_dujiangyan_llm",
+    "sichuan_gaitu_guizhou_llm",
     "sichuan_zhuge",
     "song",
     "song_chanchuan_llm",
@@ -199,7 +211,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 459,
+  "leads_total": 471,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2589,6 +2601,90 @@
       "kind": "tech",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "gansu_linxia_huihui_llm",
+      "title": "临夏回族与清真寺群（明清）",
+      "kind": "social",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "gansu_tianshui_fuxi_llm",
+      "title": "天水伏羲与卦台山（先秦）",
+      "kind": "thought",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_nanning_kaibu_llm",
+      "title": "南宁开埠与龙州商埠（1907）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_zhuangzu_llm",
+      "title": "壮族文化与铜鼓（唐宋）",
+      "kind": "thought",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_tianlongshan_llm",
+      "title": "贵州佛教·天龙山与青龙洞（明—清）",
+      "kind": "thought",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_zhangxiumei_llm",
+      "title": "张秀眉黔东南苗民起义（1855—1872）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "hebei_yanzhao_wenhua_llm",
+      "title": "燕赵文化与河北梆子（明—清）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "hebei_zhili_xinzheng_llm",
+      "title": "直隶新政与北洋新政（1901—1911）",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "neimenggu_keerqin_llm",
+      "title": "科尔沁蒙古与清廷联姻（清）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "sichuan_chuanzong_huguang_llm",
+      "title": "湖广填四川与大移民（清初）",
+      "kind": "social",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "sichuan_gaitu_guizhou_llm",
+      "title": "鄂尔泰改土归流（雍正·1726—1731）",
+      "kind": "reform",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "neimenggu_huhehaote_llm",
+      "title": "归化城与旅蒙商（明—清）",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -2925,6 +3021,18 @@
     "xinjiang_gaochang_llm": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
     "xinjiang_jiansheng_llm": "新疆建省与行省改制（1884）",
     "yunnan_duwenxiu_llm": "云南回民起义与杜文秀大理政权（1856—1873）",
-    "yunnan_quhuanzhang_llm": "曲焕章与云南白药（1902）"
+    "yunnan_quhuanzhang_llm": "曲焕章与云南白药（1902）",
+    "gansu_linxia_huihui_llm": "临夏回族与清真寺群（明清）",
+    "gansu_tianshui_fuxi_llm": "天水伏羲与卦台山（先秦）",
+    "guangxi_nanning_kaibu_llm": "南宁开埠与龙州商埠（1907）",
+    "guangxi_zhuangzu_llm": "壮族文化与铜鼓（唐宋）",
+    "guizhou_tianlongshan_llm": "贵州佛教·天龙山与青龙洞（明—清）",
+    "guizhou_zhangxiumei_llm": "张秀眉黔东南苗民起义（1855—1872）",
+    "hebei_yanzhao_wenhua_llm": "燕赵文化与河北梆子（明—清）",
+    "hebei_zhili_xinzheng_llm": "直隶新政与北洋新政（1901—1911）",
+    "neimenggu_keerqin_llm": "科尔沁蒙古与清廷联姻（清）",
+    "sichuan_chuanzong_huguang_llm": "湖广填四川与大移民（清初）",
+    "sichuan_gaitu_guizhou_llm": "鄂尔泰改土归流（雍正·1726—1731）",
+    "neimenggu_huhehaote_llm": "归化城与旅蒙商（明—清）"
   }
 }

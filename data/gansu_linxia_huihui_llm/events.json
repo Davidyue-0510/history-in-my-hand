@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_gansu_linxia_huihui_llm_01",
+   "subject": "event:ev_gansu_linxia_huihui_llm_01",
+   "year": 1368,
+   "era": "明洪武年间",
+   "title": "回回军士编入卫所",
+   "kind": "建置",
+   "text": "洪武朝安置回回军士屯田河州",
+   "_source_idx": 0,
+   "_source_name": "临夏回族自治州志·宗教志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_gansu_linxia_huihui_llm_02",
+   "subject": "event:ev_gansu_linxia_huihui_llm_02",
+   "year": 1403,
+   "era": "明永乐年间",
+   "title": "继续安置回回",
+   "kind": "建置",
+   "text": "永乐朝续编回回军士",
+   "_source_idx": 0,
+   "_source_name": "临夏回族自治州志·宗教志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

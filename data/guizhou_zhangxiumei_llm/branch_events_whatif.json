@@ -1,0 +1,232 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "guizhou_zhangxiumei_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1855,
+  1872
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1857,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.44 / 史实 0.61）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.608,
+    "new_to": 0.443,
+    "cum": -0.165
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1858,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.42 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.644,
+    "new_to": 0.423,
+    "cum": -0.221
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1859,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.40 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.404,
+    "cum": -0.276
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1860,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.39 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.716,
+    "new_to": 0.385,
+    "cum": -0.331
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1861,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.37 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.752,
+    "new_to": 0.366,
+    "cum": -0.386
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1862,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.35 / 史实 0.79）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.788,
+    "new_to": 0.347,
+    "cum": -0.441
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1863,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.33 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.824,
+    "new_to": 0.328,
+    "cum": -0.496
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1864,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.31 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.309,
+    "cum": -0.551
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1865,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.29 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.896,
+    "new_to": 0.289,
+    "cum": -0.607
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1866,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.27 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.932,
+    "new_to": 0.27,
+    "cum": -0.662
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1867,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.25 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.968,
+    "new_to": 0.251,
+    "cum": -0.717
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1868,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.232,
+    "cum": -0.768
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1869,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.213,
+    "cum": -0.787
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1870,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.194,
+    "cum": -0.806
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1871,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.175,
+    "cum": -0.825
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.155,
+    "cum": -0.845
+   },
+   "place_id": "taigong"
+  },
+  {
+   "kind": "summary",
+   "year": 1872,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.16 / 史实 1.00（偏离 -0.84）",
+   "evidence": {
+    "cum": -0.845,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "taigong"
+  }
+ ]
+}

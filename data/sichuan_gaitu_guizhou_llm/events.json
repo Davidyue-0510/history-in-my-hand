@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_sichuan_gaitu_guizhou_llm_01",
+   "subject": "event:ev_sichuan_gaitu_guizhou_llm_01",
+   "year": 1726,
+   "era": "雍正四年",
+   "title": "鄂尔泰上疏",
+   "kind": "行政",
+   "text": "鄂尔泰上《改土归流疏》",
+   "_source_idx": 0,
+   "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_gaitu_guizhou_llm_02",
+   "subject": "event:ev_sichuan_gaitu_guizhou_llm_02",
+   "year": 1731,
+   "era": "雍正六年",
+   "title": "改土归流完成",
+   "kind": "行政",
+   "text": "六年革土司百余家",
+   "_source_idx": 0,
+   "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_gansu_tianshui_fuxi_llm_01",
+   "subject": "event:ev_gansu_tianshui_fuxi_llm_01",
+   "year": -3000,
+   "era": "上古传说时代",
+   "title": "伏羲画卦",
+   "kind": "其他",
+   "text": "伏羲于卦台山画先天八卦",
+   "_source_idx": 0,
+   "_source_name": "天水伏羲庙志·卦台山考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_gansu_tianshui_fuxi_llm_02",
+   "subject": "event:ev_gansu_tianshui_fuxi_llm_02",
+   "year": 1490,
+   "era": "明弘治三年",
+   "title": "重建伏羲庙",
+   "kind": "建置",
+   "text": "秦州西关重建伏羲庙",
+   "_source_idx": 0,
+   "_source_name": "天水伏羲庙志·卦台山考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

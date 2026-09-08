@@ -1,0 +1,102 @@
+{
+  "places": [
+    {
+      "id": "yunnan",
+      "name": "云南",
+      "type": "region",
+      "modern": "今中国云南省",
+      "note": "云贵总督驻地",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guizhou",
+      "name": "贵州",
+      "type": "region",
+      "modern": "今中国贵州省",
+      "note": "黔东南古州",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "youyang",
+      "name": "酉阳",
+      "type": "yi",
+      "modern": "今中国重庆市酉阳土家族苗族自治县",
+      "note": "川东土司地",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guzhou",
+      "name": "古州",
+      "type": "yi",
+      "modern": "今中国贵州省榕江县",
+      "note": "黔东南土司地",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhenyuan",
+      "name": "镇沅",
+      "type": "yi",
+      "modern": "今中国云南省镇沅彝族哈尼族拉祜族自治县",
+      "note": "滇南土司地",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "sichuan",
+      "name": "四川",
+      "type": "region",
+      "modern": "今中国四川省",
+      "note": "川东酉阳",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guangxi",
+      "name": "广西",
+      "type": "region",
+      "modern": "今中国广西壮族自治区",
+      "note": "改土归流涉及",
+      "_source_idx": 0,
+      "_source_name": "朱批谕旨·鄂尔泰奏折（雍正）",
+      "_source_party": "亲历/官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

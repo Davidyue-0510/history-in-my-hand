@@ -1,0 +1,37 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "gansu_tianshui_fuxi_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1460,
+  1520
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1467,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.82 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.818,
+    "cum": -0.162
+   },
+   "place_id": "guataishan"
+  },
+  {
+   "kind": "summary",
+   "year": 1520,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "guataishan"
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "longzhou",
+   "to": "haiphong",
+   "type": "military",
+   "label": "桂越商道",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "nanning",
+   "to": "baise",
+   "type": "military",
+   "label": "水路通百色",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "nanning",
+   "to": "longzhou",
+   "type": "military",
+   "label": "水路通龙州",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "nanning",
+   "to": "wuzhou",
+   "type": "military",
+   "label": "水路下达梧州",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wuzhou",
+   "to": "guangzhou",
+   "type": "military",
+   "label": "水路达广州",
+   "_source_idx": 0,
+   "_source_name": "海关十年报告·南宁（1897—1906）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

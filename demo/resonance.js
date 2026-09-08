@@ -78,6 +78,8 @@ window.SANDBOX_RESONANCE = {
    "gansu_hexi",
    "gansu_hexizhen_llm",
    "gansu_jiayuguan",
+   "gansu_linxia_huihui_llm",
+   "gansu_tianshui_fuxi_llm",
    "grand_canal",
    "great_wall",
    "guandu",
@@ -87,12 +89,16 @@ window.SANDBOX_RESONANCE = {
    "guangning",
    "guangxi_lingqu",
    "guangxi_lingqu_llm",
+   "guangxi_nanning_kaibu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
+   "guangxi_zhuangzu_llm",
    "guiling",
    "guizhou_shexiang_llm",
+   "guizhou_tianlongshan_llm",
    "guizhou_yelang",
    "guizhou_yelang_llm",
+   "guizhou_zhangxiumei_llm",
    "guizhou_zunyi_llm",
    "gunpowder_warfare",
    "guo_shoujing",
@@ -106,7 +112,9 @@ window.SANDBOX_RESONANCE = {
    "han_weihuo_llm",
    "han_wudi_ruxue",
    "hebei_shanhaiguan",
+   "hebei_yanzhao_wenhua_llm",
    "hebei_zhaozhou",
+   "hebei_zhili_xinzheng_llm",
    "heilongjiang_chuangguan_llm",
    "heilongjiang_jin",
    "heilongjiang_jin_llm",
@@ -182,6 +190,8 @@ window.SANDBOX_RESONANCE = {
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
    "neimenggu_genghis_llm",
+   "neimenggu_huhehaote_llm",
+   "neimenggu_keerqin_llm",
    "neimenggu_liao",
    "neimenggu_zhaojun_llm",
    "ningxia",
@@ -225,7 +235,9 @@ window.SANDBOX_RESONANCE = {
    "shenkuo",
    "shenyang",
    "shu_han_found_llm",
+   "sichuan_chuanzong_huguang_llm",
    "sichuan_dujiangyan_llm",
+   "sichuan_gaitu_guizhou_llm",
    "sichuan_zhuge",
    "song_chan_yuan",
    "song_chanchuan_llm",
@@ -1619,6 +1631,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "gansu_linxia_huihui_llm",
+   "name": "gansu_linxia_huihui_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_gansu_linxia_huihui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "gansu_tianshui_fuxi_llm",
+   "name": "gansu_tianshui_fuxi_llm",
+   "total": 14,
+   "layers": {
+    "record": 11,
+    "inference": 1,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_gansu_tianshui_fuxi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "grand_canal",
    "name": "grand_canal",
    "total": 14,
@@ -1793,6 +1843,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guangxi_nanning_kaibu_llm",
+   "name": "guangxi_nanning_kaibu_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangxi_nanning_kaibu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guangxi_taiping_llm",
    "name": "guangxi_taiping_llm",
    "total": 14,
@@ -1828,6 +1897,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guangxi_zhennanguan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guangxi_zhuangzu_llm",
+   "name": "guangxi_zhuangzu_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangxi_zhuangzu_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -1869,6 +1957,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guizhou_tianlongshan_llm",
+   "name": "guizhou_tianlongshan_llm",
+   "total": 16,
+   "layers": {
+    "inference": 2,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_tianlongshan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guizhou_yelang",
    "name": "guizhou_yelang",
    "total": 14,
@@ -1904,6 +2011,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guizhou_yelang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guizhou_zhangxiumei_llm",
+   "name": "guizhou_zhangxiumei_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_zhangxiumei_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2155,6 +2281,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "hebei_yanzhao_wenhua_llm",
+   "name": "hebei_yanzhao_wenhua_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hebei_yanzhao_wenhua_llm_02",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "hebei_zhaozhou",
    "name": "hebei_zhaozhou",
    "total": 14,
@@ -2171,6 +2316,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_hebei_zhaozhou_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "hebei_zhili_xinzheng_llm",
+   "name": "hebei_zhili_xinzheng_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hebei_zhili_xinzheng_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3622,6 +3786,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "neimenggu_huhehaote_llm",
+   "name": "neimenggu_huhehaote_llm",
+   "total": 14,
+   "layers": {
+    "inference": 2,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_neimenggu_huhehaote_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "neimenggu_keerqin_llm",
+   "name": "neimenggu_keerqin_llm",
+   "total": 14,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 11,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_neimenggu_keerqin_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "neimenggu_liao",
    "name": "neimenggu_liao",
    "total": 12,
@@ -4453,6 +4655,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "sichuan_chuanzong_huguang_llm",
+   "name": "sichuan_chuanzong_huguang_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "亲历/官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sichuan_chuanzong_huguang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "sichuan_dujiangyan_llm",
    "name": "sichuan_dujiangyan_llm",
    "total": 14,
@@ -4469,6 +4690,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_sichuan_dujiangyan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "sichuan_gaitu_guizhou_llm",
+   "name": "sichuan_gaitu_guizhou_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "亲历/官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sichuan_gaitu_guizhou_llm_01",
    "best_resonance": 0.0
   },
   {

@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "taigong",
+      "name": "台拱廳",
+      "type": "city",
+      "modern": "今中國貴州省台江縣",
+      "note": "起事發源地",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "kaili",
+      "name": "凱里",
+      "type": "city",
+      "modern": "今中國貴州省凱里市",
+      "note": "最終決戰地",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qingshuijiang",
+      "name": "清水江",
+      "type": "region",
+      "modern": "今中國貴州省東南部",
+      "note": "流域為苗民聚居區",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shibing",
+      "name": "施秉",
+      "type": "city",
+      "modern": "今中國貴州省施秉縣",
+      "note": "被起事軍攻佔",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qingjiang",
+      "name": "清江",
+      "type": "city",
+      "modern": "今中國貴州省劍河縣",
+      "note": "被起事軍攻佔",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "huangping",
+      "name": "黃平",
+      "type": "city",
+      "modern": "今中國貴州省黃平縣",
+      "note": "被起事軍攻佔",
+      "_source_idx": 0,
+      "_source_name": "贵州通志·前事志（咸同卷）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

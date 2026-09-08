@@ -537,7 +537,19 @@
   "xinjiang_gaochang_llm",
   "xinjiang_jiansheng_llm",
   "yunnan_duwenxiu_llm",
-  "yunnan_quhuanzhang_llm"
+  "yunnan_quhuanzhang_llm",
+  "gansu_linxia_huihui_llm",
+  "gansu_tianshui_fuxi_llm",
+  "guangxi_nanning_kaibu_llm",
+  "guangxi_zhuangzu_llm",
+  "guizhou_tianlongshan_llm",
+  "guizhou_zhangxiumei_llm",
+  "hebei_yanzhao_wenhua_llm",
+  "hebei_zhili_xinzheng_llm",
+  "neimenggu_keerqin_llm",
+  "sichuan_chuanzong_huguang_llm",
+  "sichuan_gaitu_guizhou_llm",
+  "neimenggu_huhehaote_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -27126,6 +27138,915 @@
     2,
     4,
     5,
+    6
+   ]
+  },
+  "gansu_linxia_huihui_llm": {
+   "kind": "social",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "临夏回族与清真寺群（明清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hezhou",
+   "dossier_event": "event:ev_gansu_linxia_huihui_llm_01",
+   "vocab_pack": "gansu_linxia_huihui_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "临夏回族与清真寺群（明清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "临夏回族与清真寺群（明清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "临夏回族与清真寺群（明清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "临夏回族与清真寺群（明清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "gansu_tianshui_fuxi_llm": {
+   "kind": "thought",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "天水伏羲与卦台山（先秦）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianshui",
+   "dossier_event": "event:ev_gansu_tianshui_fuxi_llm_01",
+   "vocab_pack": "gansu_tianshui_fuxi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "天水伏羲与卦台山（先秦）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "天水伏羲与卦台山（先秦）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "天水伏羲与卦台山（先秦）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "天水伏羲与卦台山（先秦）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guangxi_nanning_kaibu_llm": {
+   "kind": "exchange",
+   "region": "chuan_gui",
+   "province": "guangxi",
+   "title": "南宁开埠与龙州商埠（1907）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "nanning",
+   "dossier_event": "event:ev_guangxi_nanning_kaibu_llm_01",
+   "vocab_pack": "guangxi_nanning_kaibu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "南宁开埠与龙州商埠（1907）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "南宁开埠与龙州商埠（1907）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "南宁开埠与龙州商埠（1907）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "南宁开埠与龙州商埠（1907）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guangxi_zhuangzu_llm": {
+   "kind": "thought",
+   "region": "chuan_gui",
+   "province": "guangxi",
+   "title": "壮族文化与铜鼓（唐宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yong",
+   "dossier_event": "event:ev_guangxi_zhuangzu_llm_01",
+   "vocab_pack": "guangxi_zhuangzu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "sui_tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "壮族文化与铜鼓（唐宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "壮族文化与铜鼓（唐宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "壮族文化与铜鼓（唐宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "壮族文化与铜鼓（唐宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guizhou_tianlongshan_llm": {
+   "kind": "thought",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "贵州佛教·天龙山与青龙洞（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qianlingshan",
+   "dossier_event": "event:ev_guizhou_tianlongshan_llm_01",
+   "vocab_pack": "guizhou_tianlongshan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "贵州佛教·天龙山与青龙洞（明—清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "贵州佛教·天龙山与青龙洞（明—清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "贵州佛教·天龙山与青龙洞（明—清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "贵州佛教·天龙山与青龙洞（明—清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guizhou_zhangxiumei_llm": {
+   "kind": "uprising",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "张秀眉黔东南苗民起义（1855—1872）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "taigong",
+   "dossier_event": "event:ev_guizhou_zhangxiumei_llm_01",
+   "vocab_pack": "guizhou_zhangxiumei_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "张秀眉黔东南苗民起义（1855—1872）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "张秀眉黔东南苗民起义（1855—1872）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "张秀眉黔东南苗民起义（1855—1872）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "张秀眉黔东南苗民起义（1855—1872）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "hebei_yanzhao_wenhua_llm": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "燕赵文化与河北梆子（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hebei",
+   "dossier_event": "event:ev_hebei_yanzhao_wenhua_llm_02",
+   "vocab_pack": "hebei_yanzhao_wenhua_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "燕赵文化与河北梆子（明—清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "燕赵文化与河北梆子（明—清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "燕赵文化与河北梆子（明—清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "燕赵文化与河北梆子（明—清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    5,
+    6
+   ]
+  },
+  "hebei_zhili_xinzheng_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "直隶新政与北洋新政（1901—1911）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_hebei_zhili_xinzheng_llm_01",
+   "vocab_pack": "hebei_zhili_xinzheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "直隶新政与北洋新政（1901—1911）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "直隶新政与北洋新政（1901—1911）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "直隶新政与北洋新政（1901—1911）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "直隶新政与北洋新政（1901—1911）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "neimenggu_keerqin_llm": {
+   "kind": "social",
+   "region": "huabei",
+   "province": "neimenggu",
+   "title": "科尔沁蒙古与清廷联姻（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "nenjiang",
+   "dossier_event": "event:ev_neimenggu_keerqin_llm_01",
+   "vocab_pack": "neimenggu_keerqin_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "科尔沁蒙古与清廷联姻（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "科尔沁蒙古与清廷联姻（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "科尔沁蒙古与清廷联姻（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "科尔沁蒙古与清廷联姻（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "sichuan_chuanzong_huguang_llm": {
+   "kind": "social",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "湖广填四川与大移民（清初）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "huguang",
+   "dossier_event": "event:ev_sichuan_chuanzong_huguang_llm_01",
+   "vocab_pack": "sichuan_chuanzong_huguang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "湖广填四川与大移民（清初）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "湖广填四川与大移民（清初）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "湖广填四川与大移民（清初）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "湖广填四川与大移民（清初）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "sichuan_gaitu_guizhou_llm": {
+   "kind": "reform",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "鄂尔泰改土归流（雍正·1726—1731）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yunnan",
+   "dossier_event": "event:ev_sichuan_gaitu_guizhou_llm_01",
+   "vocab_pack": "sichuan_gaitu_guizhou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "鄂尔泰改土归流（雍正·1726—1731）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "鄂尔泰改土归流（雍正·1726—1731）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "鄂尔泰改土归流（雍正·1726—1731）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "鄂尔泰改土归流（雍正·1726—1731）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "neimenggu_huhehaote_llm": {
+   "kind": "exchange",
+   "region": "huabei",
+   "province": "neimenggu",
+   "title": "归化城与旅蒙商（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "guihua",
+   "dossier_event": "event:ev_neimenggu_huhehaote_llm_01",
+   "vocab_pack": "neimenggu_huhehaote_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "归化城与旅蒙商（明—清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "归化城与旅蒙商（明—清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "归化城与旅蒙商（明—清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "归化城与旅蒙商（明—清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
     6
    ]
   }

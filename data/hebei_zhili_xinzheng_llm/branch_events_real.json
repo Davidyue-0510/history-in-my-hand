@@ -1,0 +1,102 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "hebei_zhili_xinzheng_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1871,
+  1931
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1876,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.68 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.679,
+    "cum": -0.151
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.71 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.885,
+    "new_to": 0.709,
+    "cum": -0.176
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.74 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.739,
+    "cum": -0.201
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.995,
+    "new_to": 0.769,
+    "cum": -0.226
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.799,
+    "cum": -0.201
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.828,
+    "cum": -0.172
+   },
+   "place_id": "tianjin"
+  },
+  {
+   "kind": "summary",
+   "year": 1931,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "tianjin"
+  }
+ ]
+}

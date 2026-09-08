@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "SIC__p01",
+   "name": "张献忠",
+   "role": "明末农民军首领",
+   "note": "入川乱后致川人几尽",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SIC__p02",
+   "name": "康熙帝",
+   "role": "清帝",
+   "note": "定招民填川之令",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SIC__p03",
+   "name": "乾隆帝",
+   "role": "清帝",
+   "note": "川民复至千万余口",
+   "_source_idx": 0,
+   "_source_name": "四川通志·移民志（康熙·黄廷桂等）",
+   "_source_party": "亲历/官修",
+   "_source_credibility": null
+  }
+ ]
+}

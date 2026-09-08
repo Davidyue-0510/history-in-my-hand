@@ -1,0 +1,102 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "gansu_linxia_huihui_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1271,
+  1403
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1276,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.69 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.687,
+    "cum": -0.173
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1277,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.72 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.718,
+    "cum": -0.202
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1278,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.75 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.75,
+    "cum": -0.23
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1279,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.781,
+    "cum": -0.219
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1280,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.812,
+    "cum": -0.188
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1281,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.843,
+    "cum": -0.157
+   },
+   "place_id": "hezhou"
+  },
+  {
+   "kind": "summary",
+   "year": 1403,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "hezhou"
+  }
+ ]
+}

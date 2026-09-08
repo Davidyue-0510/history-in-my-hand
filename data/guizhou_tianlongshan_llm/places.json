@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "qianlingshan",
+      "name": "黔靈山",
+      "type": "region",
+      "modern": "今中国贵州省贵阳市",
+      "note": "黔中名山，佛教丛林",
+      "_source_idx": 0,
+      "_source_name": "贵州佛教史·黔中名寺",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianlongshan",
+      "name": "天龍山",
+      "type": "region",
+      "modern": "今中国贵州省安顺市",
+      "note": "黔中三大丛林之一",
+      "_source_idx": 0,
+      "_source_name": "贵州佛教史·黔中名寺",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qinglongdong",
+      "name": "青龍洞",
+      "type": "region",
+      "modern": "今中国贵州省镇远县",
+      "note": "临㵲阳河，三教合一",
+      "_source_idx": 0,
+      "_source_name": "贵州佛教史·黔中名寺",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

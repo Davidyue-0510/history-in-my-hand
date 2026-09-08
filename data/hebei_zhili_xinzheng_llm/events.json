@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hebei_zhili_xinzheng_llm_01",
+   "subject": "event:ev_hebei_zhili_xinzheng_llm_01",
+   "year": 1901,
+   "era": "光绪二十七年",
+   "title": "颁布变法上谕",
+   "kind": "行政",
+   "text": "慈禧太后颁布变法上谕",
+   "_source_idx": 0,
+   "_source_name": "袁世凯奏议专辑·北洋新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hebei_zhili_xinzheng_llm_02",
+   "subject": "event:ev_hebei_zhili_xinzheng_llm_02",
+   "year": 1901,
+   "era": "光绪二十七年",
+   "title": "推行北洋新政",
+   "kind": "行政",
+   "text": "袁世凯在直隶推行新政",
+   "_source_idx": 0,
+   "_source_name": "袁世凯奏议专辑·北洋新政",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

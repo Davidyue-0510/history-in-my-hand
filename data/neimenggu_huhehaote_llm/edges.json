@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "guihua",
+   "to": "wulanbatuo",
+   "type": "military",
+   "label": "旅蒙商外柜路线",
+   "_source_idx": 0,
+   "_source_name": "旅蒙商大盛魁号商号志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guihua",
+   "to": "kebuduo",
+   "type": "military",
+   "label": "旅蒙商外柜路线",
+   "_source_idx": 0,
+   "_source_name": "旅蒙商大盛魁号商号志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guihua",
+   "to": "wuliyasutai",
+   "type": "military",
+   "label": "旅蒙商外柜路线",
+   "_source_idx": 0,
+   "_source_name": "旅蒙商大盛魁号商号志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guihua",
+   "to": "zhangjiakou",
+   "type": "military",
+   "label": "内柜联系",
+   "_source_idx": 0,
+   "_source_name": "旅蒙商大盛魁号商号志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guihua",
+   "to": "beijing",
+   "type": "military",
+   "label": "内柜联系",
+   "_source_idx": 0,
+   "_source_name": "旅蒙商大盛魁号商号志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

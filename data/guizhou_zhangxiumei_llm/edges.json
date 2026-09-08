@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "taigong",
+   "to": "shibing",
+   "type": "military",
+   "label": "起事軍攻佔路線",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "taigong",
+   "to": "qingjiang",
+   "type": "military",
+   "label": "起事軍攻佔路線",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "taigong",
+   "to": "huangping",
+   "type": "military",
+   "label": "起事軍攻佔路線",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "taigong",
+   "to": "kaili",
+   "type": "military",
+   "label": "最終決戰地",
+   "_source_idx": 0,
+   "_source_name": "贵州通志·前事志（咸同卷）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

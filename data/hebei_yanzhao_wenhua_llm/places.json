@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "hebei",
+      "name": "河北",
+      "type": "region",
+      "modern": "今中国河北省",
+      "note": "燕赵故地",
+      "_source_idx": 0,
+      "_source_name": "燕赵文化志·河北梆子源流",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "type": "city",
+      "modern": "今中国北京市",
+      "note": "梆子入京之地",
+      "_source_idx": 0,
+      "_source_name": "燕赵文化志·河北梆子源流",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 116.4,
+      "lat": 39.9,
+      "geo_note": "平津战役·傅作义起义"
+    },
+    {
+      "id": "baoding",
+      "name": "保定",
+      "type": "city",
+      "modern": "今中国河北省保定市",
+      "note": "梆子流行地",
+      "_source_idx": 0,
+      "_source_name": "燕赵文化志·河北梆子源流",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "cangzhou",
+      "name": "沧州",
+      "type": "city",
+      "modern": "今中国河北省沧州市",
+      "note": "梆子流行地",
+      "_source_idx": 0,
+      "_source_name": "燕赵文化志·河北梆子源流",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "今中国天津市",
+      "note": "梆子流行地",
+      "_source_idx": 0,
+      "_source_name": "燕赵文化志·河北梆子源流",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    }
+  ]
+}

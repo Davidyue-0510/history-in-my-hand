@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "keerqin",
+      "name": "科尔沁",
+      "type": "region",
+      "modern": "今中国内蒙古自治区",
+      "note": "蒙古部落",
+      "_source_idx": 0,
+      "_source_name": "清史稿·藩部·科尔沁部",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nenjiang",
+      "name": "嫩江流域",
+      "type": "region",
+      "modern": "今中国内蒙古自治区",
+      "note": "科尔沁部驻牧地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·藩部·科尔沁部",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

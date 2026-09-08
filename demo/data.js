@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 334 个切片
+// 权威数据源：data/scenes.json 注册的 346 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 334 个切片",
+  "slice": "multi-scene · 346 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -44,16 +44,22 @@ window.SANDBOX_DATA = {
    "gansu_hexi",
    "gansu_hexizhen_llm",
    "gansu_jiayuguan",
+   "gansu_linxia_huihui_llm",
+   "gansu_tianshui_fuxi_llm",
    "guandu_llm",
    "guangdong_guangzhou",
    "guangdong_nanyue",
    "guangxi_lingqu",
    "guangxi_lingqu_llm",
+   "guangxi_nanning_kaibu_llm",
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
+   "guangxi_zhuangzu_llm",
    "guizhou_shexiang_llm",
+   "guizhou_tianlongshan_llm",
    "guizhou_yelang",
    "guizhou_yelang_llm",
+   "guizhou_zhangxiumei_llm",
    "guizhou_zunyi_llm",
    "hainan_hainandao_llm",
    "hainan_hairui_llm",
@@ -63,7 +69,9 @@ window.SANDBOX_DATA = {
    "han_banchao_llm",
    "han_weihuo_llm",
    "hebei_shanhaiguan",
+   "hebei_yanzhao_wenhua_llm",
    "hebei_zhaozhou",
+   "hebei_zhili_xinzheng_llm",
    "heilongjiang_chuangguan_llm",
    "heilongjiang_jin",
    "heilongjiang_jin_llm",
@@ -103,6 +111,8 @@ window.SANDBOX_DATA = {
    "nan_song_linan_llm",
    "nanzhao_dali_llm",
    "neimenggu_genghis_llm",
+   "neimenggu_huhehaote_llm",
+   "neimenggu_keerqin_llm",
    "neimenggu_liao",
    "neimenggu_zhaojun_llm",
    "ningxia_lingzhou_llm",
@@ -136,7 +146,9 @@ window.SANDBOX_DATA = {
    "shanxi_yungang",
    "shen_baozhen_taiwan_llm",
    "shu_han_found_llm",
+   "sichuan_chuanzong_huguang_llm",
    "sichuan_dujiangyan_llm",
+   "sichuan_gaitu_guizhou_llm",
    "sichuan_zhuge",
    "song",
    "song_chanchuan_llm",
@@ -787,7 +799,19 @@ window.SANDBOX_DATA = {
   "xinjiang_gaochang_llm",
   "xinjiang_jiansheng_llm",
   "yunnan_duwenxiu_llm",
-  "yunnan_quhuanzhang_llm"
+  "yunnan_quhuanzhang_llm",
+  "gansu_linxia_huihui_llm",
+  "gansu_tianshui_fuxi_llm",
+  "guangxi_nanning_kaibu_llm",
+  "guangxi_zhuangzu_llm",
+  "guizhou_tianlongshan_llm",
+  "guizhou_zhangxiumei_llm",
+  "hebei_yanzhao_wenhua_llm",
+  "hebei_zhili_xinzheng_llm",
+  "neimenggu_keerqin_llm",
+  "sichuan_chuanzong_huguang_llm",
+  "sichuan_gaitu_guizhou_llm",
+  "neimenggu_huhehaote_llm"
  ],
  "vocab": {
   "layers": [
@@ -18841,18 +18865,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 0,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 5,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "sarhu": {
    "key": "sarhu",
@@ -18875,18 +18888,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 10,
-    "place": 21,
-    "person": 18,
-    "assert": 125,
-    "conflict": 9,
-    "gap": 7,
-    "record": 98,
-    "scholarship": 14,
-    "inference": 6
-   }
+   "scale_tier": "operational"
   },
   "kaiyuan": {
    "key": "kaiyuan",
@@ -18910,18 +18912,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 8,
-    "place": 16,
-    "person": 9,
-    "assert": 44,
-    "conflict": 1,
-    "gap": 2,
-    "record": 29,
-    "scholarship": 5,
-    "inference": 8
-   }
+   "scale_tier": "operational"
   },
   "tieling": {
    "key": "tieling",
@@ -18944,18 +18935,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 5,
-    "place": 11,
-    "person": 8,
-    "assert": 31,
-    "conflict": 2,
-    "gap": 2,
-    "record": 23,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "yehe": {
    "key": "yehe",
@@ -18978,18 +18958,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 5,
-    "person": 4,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 2,
-    "record": 4,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "liaoyang": {
    "key": "liaoyang",
@@ -19013,18 +18982,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 8,
-    "place": 12,
-    "person": 13,
-    "assert": 65,
-    "conflict": 4,
-    "gap": 3,
-    "record": 51,
-    "scholarship": 10,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shenyang": {
    "key": "shenyang",
@@ -19047,18 +19005,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 10,
-    "place": 13,
-    "person": 15,
-    "assert": 62,
-    "conflict": 3,
-    "gap": 4,
-    "record": 55,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "fushun": {
    "key": "fushun",
@@ -19082,18 +19029,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 6,
-    "person": 4,
-    "assert": 20,
-    "conflict": 1,
-    "gap": 2,
-    "record": 17,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "haizhou": {
    "key": "haizhou",
@@ -19115,18 +19051,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 8,
-    "person": 4,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 2,
-    "record": 4,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "gaizhou": {
    "key": "gaizhou",
@@ -19150,18 +19075,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 6,
-    "person": 3,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 2,
-    "record": 6,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "fuzhou": {
    "key": "fuzhou",
@@ -19183,18 +19097,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 5,
-    "person": 3,
-    "assert": 6,
-    "conflict": 0,
-    "gap": 2,
-    "record": 3,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "jinzhouwei": {
    "key": "jinzhouwei",
@@ -19216,18 +19119,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 5,
-    "person": 3,
-    "assert": 6,
-    "conflict": 0,
-    "gap": 2,
-    "record": 3,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "guangning": {
    "key": "guangning",
@@ -19251,18 +19143,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 6,
-    "place": 5,
-    "person": 14,
-    "assert": 43,
-    "conflict": 2,
-    "gap": 3,
-    "record": 39,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "jinzhou": {
    "key": "jinzhou",
@@ -19284,18 +19165,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 6,
-    "place": 5,
-    "person": 4,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "ningyuan": {
    "key": "ningyuan",
@@ -19318,18 +19188,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 5,
-    "place": 4,
-    "person": 6,
-    "assert": 45,
-    "conflict": 3,
-    "gap": 2,
-    "record": 40,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "songjin": {
    "key": "songjin",
@@ -19353,18 +19212,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 9,
-    "person": 13,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 15,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "dalinghe": {
    "key": "dalinghe",
@@ -19388,18 +19236,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 8,
-    "person": 9,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "juehua": {
    "key": "juehua",
@@ -19421,18 +19258,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 5,
-    "person": 6,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "juehua1626": {
    "key": "juehua1626",
@@ -19455,18 +19281,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 3,
-    "person": 10,
-    "assert": 23,
-    "conflict": 2,
-    "gap": 1,
-    "record": 21,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "bozhou": {
    "key": "bozhou",
@@ -19490,18 +19305,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 8,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "ningxia": {
    "key": "ningxia",
@@ -19524,18 +19328,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 4,
-    "person": 11,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "yangzhou": {
    "key": "yangzhou",
@@ -19557,18 +19350,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 3,
-    "person": 5,
-    "assert": 11,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "novel_fandao": {
    "key": "novel_fandao",
@@ -19589,18 +19371,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 5,
-    "place": 4,
-    "person": 8,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_2": {
    "key": "novel_fandao_2",
@@ -19623,18 +19394,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 5,
-    "place": 4,
-    "person": 9,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_3": {
    "key": "novel_fandao_3",
@@ -19656,18 +19416,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 3,
-    "person": 5,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 1,
-    "record": 6,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_4": {
    "key": "novel_fandao_4",
@@ -19688,18 +19437,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 4,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_5": {
    "key": "novel_fandao_5",
@@ -19720,18 +19458,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 5,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_6": {
    "key": "novel_fandao_6",
@@ -19753,18 +19480,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 4,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_7": {
    "key": "novel_fandao_7",
@@ -19786,18 +19502,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 4,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_8": {
    "key": "novel_fandao_8",
@@ -19818,18 +19523,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 3,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "novel_fandao_9": {
    "key": "novel_fandao_9",
@@ -19850,18 +19544,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "fiction",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 2,
-    "person": 3,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "tang_huai_xi": {
    "key": "tang_huai_xi",
@@ -19885,18 +19568,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 9,
-    "person": 7,
-    "assert": 17,
-    "conflict": 1,
-    "gap": 1,
-    "record": 14,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "imjin": {
    "key": "imjin",
@@ -19920,18 +19592,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 18,
-    "person": 12,
-    "assert": 19,
-    "conflict": 3,
-    "gap": 2,
-    "record": 14,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "yellow_sea_1894": {
    "key": "yellow_sea_1894",
@@ -19953,18 +19614,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 6,
-    "person": 7,
-    "assert": 15,
-    "conflict": 4,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "qin_mie_liu_guo": {
    "key": "qin_mie_liu_guo",
@@ -19987,18 +19637,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "guangzhong",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 12,
-    "person": 8,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 2,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "three_campaigns": {
    "key": "three_campaigns",
@@ -20022,18 +19661,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "huabei",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 15,
-    "person": 16,
-    "assert": 54,
-    "conflict": 3,
-    "gap": 1,
-    "record": 51,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "changping": {
    "key": "changping",
@@ -20057,18 +19685,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guiling": {
    "key": "guiling",
@@ -20092,18 +19709,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 6,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "maling": {
    "key": "maling",
@@ -20127,18 +19733,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 4,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "chengpu": {
    "key": "chengpu",
@@ -20162,18 +19757,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "spring_autumn",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 22,
-    "conflict": 0,
-    "gap": 3,
-    "record": 13,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "boju": {
    "key": "boju",
@@ -20197,18 +19781,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "spring_autumn",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 23,
-    "conflict": 0,
-    "gap": 1,
-    "record": 16,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "julu": {
    "key": "julu",
@@ -20230,18 +19803,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "gaixia": {
    "key": "gaixia",
@@ -20265,18 +19827,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 4,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "mobai": {
    "key": "mobai",
@@ -20299,18 +19850,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 18,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "kunyang": {
    "key": "kunyang",
@@ -20333,18 +19873,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 6,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guandu": {
    "key": "guandu",
@@ -20368,18 +19897,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "chibi": {
    "key": "chibi",
@@ -20402,18 +19920,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 2,
-    "record": 13,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yiling": {
    "key": "yiling",
@@ -20435,18 +19942,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xiaoyaojin": {
    "key": "xiaoyaojin",
@@ -20468,18 +19964,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "feishui": {
    "key": "feishui",
@@ -20503,18 +19988,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "canhebei": {
    "key": "canhebei",
@@ -20536,18 +20010,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 3,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "zhongli": {
    "key": "zhongli",
@@ -20569,18 +20032,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hulao": {
    "key": "hulao",
@@ -20604,18 +20056,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 2,
-    "record": 13,
-    "scholarship": 4,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "talas": {
    "key": "talas",
@@ -20639,18 +20080,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 17,
-    "conflict": 1,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 4,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "suiyang": {
    "key": "suiyang",
@@ -20673,18 +20103,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 5,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yancheng": {
    "key": "yancheng",
@@ -20707,18 +20126,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heshangyuan": {
    "key": "heshangyuan",
@@ -20742,18 +20150,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 21,
-    "conflict": 1,
-    "gap": 3,
-    "record": 11,
-    "scholarship": 4,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "caishiji": {
    "key": "caishiji",
@@ -20776,18 +20173,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "diaoyucheng": {
    "key": "diaoyucheng",
@@ -20811,18 +20197,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 4,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "yaoshan": {
    "key": "yaoshan",
@@ -20845,18 +20220,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "poyanghu": {
    "key": "poyanghu",
@@ -20878,18 +20242,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 15,
-    "conflict": 2,
-    "gap": 2,
-    "record": 7,
-    "scholarship": 5,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tumu": {
    "key": "tumu",
@@ -20911,18 +20264,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 6,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "beijing": {
    "key": "beijing",
@@ -20946,18 +20288,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 4,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "yaksa": {
    "key": "yaksa",
@@ -20979,18 +20310,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "tianjing": {
    "key": "tianjing",
@@ -21012,18 +20332,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "humen": {
    "key": "humen",
@@ -21046,18 +20355,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "huanghe": {
    "key": "huanghe",
@@ -21079,18 +20377,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "cross_dynastic",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 9,
-    "person": 2,
-    "assert": 6,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "locust": {
    "key": "locust",
@@ -21114,18 +20401,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "cross_dynastic",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 5,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "huaxian": {
    "key": "huaxian",
@@ -21149,18 +20425,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 2,
-    "record": 5,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "little_ice": {
    "key": "little_ice",
@@ -21182,18 +20447,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 12,
-    "conflict": 2,
-    "gap": 2,
-    "record": 3,
-    "scholarship": 5,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "grand_canal": {
    "key": "grand_canal",
@@ -21215,18 +20469,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "dujiangyan": {
    "key": "dujiangyan",
@@ -21248,18 +20491,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 1,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "great_wall": {
    "key": "great_wall",
@@ -21281,18 +20513,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 6,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "qin_unify": {
    "key": "qin_unify",
@@ -21316,18 +20537,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 3,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 0,
-    "record": 3,
-    "scholarship": 6,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "ming_fall": {
    "key": "ming_fall",
@@ -21349,18 +20559,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 6,
-    "scholarship": 3,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "shangyang": {
    "key": "shangyang",
@@ -21382,18 +20581,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 2,
-    "person": 2,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "huangjin": {
    "key": "huangjin",
@@ -21415,18 +20603,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 6,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 3,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "lizicheng": {
    "key": "lizicheng",
@@ -21448,18 +20625,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 7,
-    "scholarship": 4,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "xiaowen": {
    "key": "xiaowen",
@@ -21482,18 +20648,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "wencheng": {
    "key": "wencheng",
@@ -21516,18 +20671,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "xuanwu": {
    "key": "xuanwu",
@@ -21549,18 +20693,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 3,
-    "person": 3,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "jingnan": {
    "key": "jingnan",
@@ -21583,18 +20716,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 9,
-    "person": 11,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "dunzun": {
    "key": "dunzun",
@@ -21616,18 +20738,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 2,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "keju": {
    "key": "keju",
@@ -21651,18 +20762,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "four_inv": {
    "key": "four_inv",
@@ -21685,18 +20785,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "cross_dynastic",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 4,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "bencao": {
    "key": "bencao",
@@ -21720,18 +20809,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "dong_han_yi": {
    "key": "dong_han_yi",
@@ -21753,18 +20831,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 5,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "dingwu": {
    "key": "dingwu",
@@ -21786,18 +20853,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "song_he_jue": {
    "key": "song_he_jue",
@@ -21820,18 +20876,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "zijincheng": {
    "key": "zijincheng",
@@ -21854,18 +20899,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 2,
-    "record": 5,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "lingqu": {
    "key": "lingqu",
@@ -21888,18 +20922,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "zhaozhou": {
    "key": "zhaozhou",
@@ -21921,18 +20944,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "sui_daxing": {
    "key": "sui_daxing",
@@ -21955,18 +20967,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 2,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "mingmo_jihuang": {
    "key": "mingmo_jihuang",
@@ -21990,18 +20991,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 29,
-    "person": 3,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 11,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "chongzhen_han": {
    "key": "chongzhen_han",
@@ -22025,18 +21015,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 31,
-    "person": 2,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "chongzhen_huangzai": {
    "key": "chongzhen_huangzai",
@@ -22060,18 +21039,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 28,
-    "person": 2,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "mingmo_shuyi": {
    "key": "mingmo_shuyi",
@@ -22095,18 +21063,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 27,
-    "person": 1,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "kaifeng_juekou": {
    "key": "kaifeng_juekou",
@@ -22130,18 +21087,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 1,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
-    "scholarship": 8,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "wuwang": {
    "key": "wuwang",
@@ -22165,18 +21111,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 1,
-    "record": 3,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "sui_mie_chen": {
    "key": "sui_mie_chen",
@@ -22198,18 +21133,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "chenqiao": {
    "key": "chenqiao",
@@ -22231,18 +21155,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "yashan": {
    "key": "yashan",
@@ -22265,18 +21178,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 2,
-    "record": 5,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "xinhai": {
    "key": "xinhai",
@@ -22299,18 +21201,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 4,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "zhangjuzheng": {
    "key": "zhangjuzheng",
@@ -22334,18 +21225,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 4,
-    "person": 2,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "wuxu": {
    "key": "wuxu",
@@ -22367,18 +21247,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 2,
-    "person": 2,
-    "assert": 16,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "wangmang": {
    "key": "wangmang",
@@ -22400,18 +21269,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "liangshui": {
    "key": "liangshui",
@@ -22435,18 +21293,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "jiupin": {
    "key": "jiupin",
@@ -22468,18 +21315,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "chensheng": {
    "key": "chensheng",
@@ -22502,18 +21338,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "huangchao": {
    "key": "huangchao",
@@ -22536,18 +21361,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 4,
-    "person": 3,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 2,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "taiping": {
    "key": "taiping",
@@ -22571,18 +21385,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "hongjin": {
    "key": "hongjin",
@@ -22604,18 +21407,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "lvlin": {
    "key": "lvlin",
@@ -22639,18 +21431,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 5,
-    "person": 2,
-    "assert": 21,
-    "conflict": 0,
-    "gap": 4,
-    "record": 11,
-    "scholarship": 3,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "zhaowulian": {
    "key": "zhaowulian",
@@ -22674,18 +21455,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "zhaofen": {
    "key": "zhaofen",
@@ -22708,18 +21478,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "qing_han": {
    "key": "qing_han",
@@ -22742,18 +21501,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 3,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "yuan_duo": {
    "key": "yuan_duo",
@@ -22775,18 +21523,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "chanyuan": {
    "key": "chanyuan",
@@ -22809,18 +21546,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 6,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "beijiu": {
    "key": "beijiu",
@@ -22843,18 +21569,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "jiuzi": {
    "key": "jiuzi",
@@ -22877,18 +21592,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 3,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "wugu": {
    "key": "wugu",
@@ -22910,18 +21614,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "shaqiu": {
    "key": "shaqiu",
@@ -22945,18 +21638,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "baijia": {
    "key": "baijia",
@@ -22980,18 +21662,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "fenshu": {
    "key": "fenshu",
@@ -23014,18 +21685,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "fotao": {
    "key": "fotao",
@@ -23049,18 +21709,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "cross_dynastic",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "lixue": {
    "key": "lixue",
@@ -23082,18 +21731,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "zhangheng": {
    "key": "zhangheng",
@@ -23117,18 +21755,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 4,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "zuchongzhi": {
    "key": "zuchongzhi",
@@ -23150,18 +21777,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "shenkuo": {
    "key": "shenkuo",
@@ -23184,18 +21800,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 11,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "jiasixie": {
    "key": "jiasixie",
@@ -23218,18 +21823,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 7,
-    "conflict": 1,
-    "gap": 1,
-    "record": 4,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "zhangqian": {
    "key": "zhangqian",
@@ -23252,18 +21846,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "zhenghe": {
    "key": "zhenghe",
@@ -23285,18 +21868,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "xuanzang": {
    "key": "xuanzang",
@@ -23318,18 +21890,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "jianzhen": {
    "key": "jianzhen",
@@ -23351,18 +21912,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "mingmo_dangzheng": {
    "key": "mingmo_dangzheng",
@@ -23385,18 +21935,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 3,
-    "person": 14,
-    "assert": 26,
-    "conflict": 0,
-    "gap": 2,
-    "record": 22,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "tang_dangzheng": {
    "key": "tang_dangzheng",
@@ -23419,18 +21958,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 7,
-    "person": 5,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "song_dangzheng": {
    "key": "song_dangzheng",
@@ -23452,18 +21980,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 4,
-    "place": 5,
-    "person": 5,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "donghan_danggu": {
    "key": "donghan_danggu",
@@ -23485,18 +22002,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 5,
-    "person": 6,
-    "assert": 7,
-    "conflict": 0,
-    "gap": 1,
-    "record": 1,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "chu_han": {
    "key": "chu_han",
@@ -23520,18 +22026,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 3,
-    "place": 8,
-    "person": 6,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 1,
-    "record": 16,
-    "scholarship": 0,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "song_chan_yuan": {
    "key": "song_chan_yuan",
@@ -23555,18 +22050,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 7,
-    "person": 9,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 14,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "guandu_llm": {
    "key": "guandu_llm",
@@ -23590,18 +22074,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 2,
-    "place": 8,
-    "person": 8,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "san_guo": {
    "key": "san_guo",
@@ -23625,18 +22098,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 5,
-    "place": 10,
-    "person": 12,
-    "assert": 20,
-    "conflict": 2,
-    "gap": 1,
-    "record": 14,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "feishui_llm": {
    "key": "feishui_llm",
@@ -23660,18 +22122,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 2,
-    "place": 6,
-    "person": 10,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 2,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "changping_llm": {
    "key": "changping_llm",
@@ -23695,18 +22146,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 2,
-    "place": 2,
-    "person": 8,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 0
-   }
+   "scale_tier": "operational"
   },
   "qin_mie_liu_guo_llm": {
    "key": "qin_mie_liu_guo_llm",
@@ -23730,18 +22170,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 12,
-    "person": 8,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 1,
-    "record": 14,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "chuhai_llm": {
    "key": "chuhai_llm",
@@ -23765,18 +22194,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 10,
-    "person": 8,
-    "assert": 17,
-    "conflict": 2,
-    "gap": 2,
-    "record": 12,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "sui_mie_chen_llm": {
    "key": "sui_mie_chen_llm",
@@ -23800,18 +22218,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 9,
-    "person": 8,
-    "assert": 20,
-    "conflict": 0,
-    "gap": 2,
-    "record": 15,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "sui_yang_llm": {
    "key": "sui_yang_llm",
@@ -23835,18 +22242,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 15,
-    "conflict": 1,
-    "gap": 0,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "zheng_chenggong_taiwan_llm": {
    "key": "zheng_chenggong_taiwan_llm",
@@ -23870,18 +22266,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 4,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "xiyu_dunhu_llm": {
    "key": "xiyu_dunhu_llm",
@@ -23905,18 +22290,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 3,
-    "person": 2,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 4,
-    "record": 11,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "hexi_sijun_llm": {
    "key": "hexi_sijun_llm",
@@ -23940,18 +22314,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 11,
-    "person": 5,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 2,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "nanzhao_dali_llm": {
    "key": "nanzhao_dali_llm",
@@ -23975,18 +22338,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 3,
-    "person": 3,
-    "assert": 20,
-    "conflict": 1,
-    "gap": 4,
-    "record": 13,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "huangdaopo_llm": {
    "key": "huangdaopo_llm",
@@ -24010,18 +22362,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 2,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 3,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "zhejiang_linan_llm": {
    "key": "zhejiang_linan_llm",
@@ -24045,18 +22386,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 3,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "fujian_quanzhou_llm": {
    "key": "fujian_quanzhou_llm",
@@ -24079,18 +22409,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "xianggang_songmo_llm": {
    "key": "xianggang_songmo_llm",
@@ -24114,18 +22433,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 6,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "aomen_portugal_llm": {
    "key": "aomen_portugal_llm",
@@ -24149,18 +22457,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 1,
-    "person": 3,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 4,
-    "record": 11,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "qinghai_tuyuhun_llm": {
    "key": "qinghai_tuyuhun_llm",
@@ -24182,18 +22479,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "guizhou_yelang_llm": {
    "key": "guizhou_yelang_llm",
@@ -24216,18 +22502,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "hainan_zhuyai_llm": {
    "key": "hainan_zhuyai_llm",
@@ -24251,18 +22526,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "hunan_changsha_llm": {
    "key": "hunan_changsha_llm",
@@ -24286,18 +22550,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 2,
-    "person": 4,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 3,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "jilin_gaogouli_llm": {
    "key": "jilin_gaogouli_llm",
@@ -24319,18 +22572,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 0,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "sui_canal_llm": {
    "key": "sui_canal_llm",
@@ -24353,18 +22595,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 1,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "tang_anshi_llm": {
    "key": "tang_anshi_llm",
@@ -24386,18 +22617,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 8,
-    "assert": 15,
-    "conflict": 2,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "han_banchao_llm": {
    "key": "han_banchao_llm",
@@ -24421,18 +22641,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 18,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "song_yancheng_llm": {
    "key": "song_yancheng_llm",
@@ -24454,18 +22663,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 4,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yuan_xingsheng_llm": {
    "key": "yuan_xingsheng_llm",
@@ -24489,18 +22687,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 11,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 1,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "ming_zhenghe_llm": {
    "key": "ming_zhenghe_llm",
@@ -24523,18 +22710,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 3,
-    "assert": 13,
-    "conflict": 4,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "qing_yakesa_llm": {
    "key": "qing_yakesa_llm",
@@ -24558,18 +22734,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 5,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 3,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "qin_fenshu_llm": {
    "key": "qin_fenshu_llm",
@@ -24591,18 +22756,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 4,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "tang_huangchao_llm": {
    "key": "tang_huangchao_llm",
@@ -24626,18 +22780,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 20,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "song_chanchuan_llm": {
    "key": "song_chanchuan_llm",
@@ -24661,18 +22804,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 5,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "ming_tumu_llm": {
    "key": "ming_tumu_llm",
@@ -24696,18 +22828,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 5,
-    "assert": 18,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 5
-   }
+   "scale_tier": "operational"
   },
   "qing_zhungaer_llm": {
    "key": "qing_zhungaer_llm",
@@ -24731,18 +22852,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 6,
-    "assert": 18,
-    "conflict": 3,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "warring_states_shangyang_llm": {
    "key": "warring_states_shangyang_llm",
@@ -24764,18 +22874,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 14,
-    "conflict": 2,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "han_weihuo_llm": {
    "key": "han_weihuo_llm",
@@ -24799,18 +22898,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 13,
-    "person": 3,
-    "assert": 17,
-    "conflict": 1,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "tang_xuanwumen_llm": {
    "key": "tang_xuanwumen_llm",
@@ -24832,18 +22920,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 4,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chibi_llm": {
    "key": "chibi_llm",
@@ -24867,18 +22944,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "tactical",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 8,
-    "assert": 18,
-    "conflict": 3,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 6
-   }
+   "scale_tier": "tactical"
   },
   "song_wanganshi_llm": {
    "key": "song_wanganshi_llm",
@@ -24900,18 +22966,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "biTigeGuan": {
    "key": "biTigeGuan",
@@ -24933,18 +22988,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 4,
-    "place": 4,
-    "person": 0,
-    "assert": 13,
-    "conflict": 3,
-    "gap": 1,
-    "record": 4,
-    "scholarship": 4,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "tang_liangshuifa": {
    "key": "tang_liangshuifa",
@@ -24968,18 +23012,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 0,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "wei_xiaowen": {
    "key": "wei_xiaowen",
@@ -25001,18 +23034,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 0,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "sui_canal": {
    "key": "sui_canal",
@@ -25035,18 +23057,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 0,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 0,
-    "scholarship": 11,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "guo_shoujing": {
    "key": "guo_shoujing",
@@ -25070,18 +23081,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 5,
-    "person": 3,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "zhangzai_guanxue": {
    "key": "zhangzai_guanxue",
@@ -25104,18 +23104,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "guangzhong",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 2,
-    "place": 4,
-    "person": 4,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 0,
-    "record": 0,
-    "scholarship": 9,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "cailun_zaozhi": {
    "key": "cailun_zaozhi",
@@ -25139,18 +23128,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 3,
-    "person": 1,
-    "assert": 11,
-    "conflict": 1,
-    "gap": 0,
-    "record": 6,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "bisheng_movable_type": {
    "key": "bisheng_movable_type",
@@ -25173,18 +23151,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "compass_navigation": {
    "key": "compass_navigation",
@@ -25208,18 +23175,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 3,
-    "person": 3,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 4,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "gunpowder_warfare": {
    "key": "gunpowder_warfare",
@@ -25243,18 +23199,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 3,
-    "place": 3,
-    "person": 3,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 3,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "susong_llm": {
    "key": "susong_llm",
@@ -25276,18 +23221,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "wangyangming": {
    "key": "wangyangming",
@@ -25311,18 +23245,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 6,
-    "assert": 19,
-    "conflict": 3,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 5
-   }
+   "scale_tier": "strategic"
   },
   "zhuxi": {
    "key": "zhuxi",
@@ -25345,18 +23268,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "foguo_chan_llm": {
    "key": "foguo_chan_llm",
@@ -25380,18 +23292,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "qianjia_puxue_llm": {
    "key": "qianjia_puxue_llm",
@@ -25414,18 +23315,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 0,
-    "record": 5,
-    "scholarship": 10,
-    "inference": 1
-   }
+   "scale_tier": "strategic"
   },
   "xu_guangqi": {
    "key": "xu_guangqi",
@@ -25449,18 +23339,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 6,
-    "place": 3,
-    "person": 4,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 0
-   }
+   "scale_tier": "strategic"
   },
   "shu_han_found_llm": {
    "key": "shu_han_found_llm",
@@ -25483,18 +23362,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "nan_song_linan_llm": {
    "key": "nan_song_linan_llm",
@@ -25517,18 +23385,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jinshang_llm": {
    "key": "jinshang_llm",
@@ -25550,18 +23407,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "minyue_llm": {
    "key": "minyue_llm",
@@ -25584,18 +23430,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yuelu_academy_llm": {
    "key": "yuelu_academy_llm",
@@ -25619,18 +23454,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 17,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "anxi_sizhen_llm": {
    "key": "anxi_sizhen_llm",
@@ -25654,18 +23478,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 2,
-    "assert": 19,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 2,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "sui_keju": {
    "key": "sui_keju",
@@ -25687,18 +23500,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 0,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 2,
-    "inference": 3
-   }
+   "scale_tier": "strategic"
   },
   "warring_states_shangyang": {
    "key": "warring_states_shangyang",
@@ -25721,18 +23523,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 0,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 4,
-    "inference": 2
-   }
+   "scale_tier": "strategic"
   },
   "tang_juntian": {
    "key": "tang_juntian",
@@ -25756,18 +23547,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "strategic",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 0,
-    "assert": 9,
-    "conflict": 0,
-    "gap": 1,
-    "record": 2,
-    "scholarship": 2,
-    "inference": 4
-   }
+   "scale_tier": "strategic"
   },
   "dagukou_battle_llm": {
    "key": "dagukou_battle_llm",
@@ -25789,18 +23569,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 4,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "liangzhou_meeting_llm": {
    "key": "liangzhou_meeting_llm",
@@ -25822,18 +23591,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "songshan_battle_llm": {
    "key": "songshan_battle_llm",
@@ -25854,18 +23612,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 5,
-    "assert": 15,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 5,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "pingbo_zhiyi_llm": {
    "key": "pingbo_zhiyi_llm",
@@ -25887,18 +23634,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 6,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "bohai_kingdom_llm": {
    "key": "bohai_kingdom_llm",
@@ -25920,18 +23656,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 0,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "dongbei_kanglian_llm": {
    "key": "dongbei_kanglian_llm",
@@ -25953,18 +23678,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chongqing_capital_llm": {
    "key": "chongqing_capital_llm",
@@ -25987,18 +23701,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 6,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "xizang_tubo_llm": {
    "key": "xizang_tubo_llm",
@@ -26021,18 +23724,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangxi_taiping_llm": {
    "key": "guangxi_taiping_llm",
@@ -26054,18 +23746,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hainan_xianfuren_llm": {
    "key": "hainan_xianfuren_llm",
@@ -26088,18 +23769,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "qinghai_gusiluo_llm": {
    "key": "qinghai_gusiluo_llm",
@@ -26121,18 +23791,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 8,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "fujian_qijiguang_llm": {
    "key": "fujian_qijiguang_llm",
@@ -26153,18 +23812,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 10,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 4,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanghai_xiaodaohui_llm": {
    "key": "shanghai_xiaodaohui_llm",
@@ -26186,18 +23834,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "ningxia_xixia_llm": {
    "key": "ningxia_xixia_llm",
@@ -26218,18 +23855,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 15,
-    "conflict": 1,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "neimenggu_zhaojun_llm": {
    "key": "neimenggu_zhaojun_llm",
@@ -26251,18 +23877,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 4,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "gansu_hexizhen_llm": {
    "key": "gansu_hexizhen_llm",
@@ -26285,18 +23900,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guizhou_zunyi_llm": {
    "key": "guizhou_zunyi_llm",
@@ -26317,18 +23921,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "cross_dynastic",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 7,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heilongjiang_jin_llm": {
    "key": "heilongjiang_jin_llm",
@@ -26351,18 +23944,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 4,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chongqing_diaoyucheng_llm": {
    "key": "chongqing_diaoyucheng_llm",
@@ -26383,18 +23965,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 5,
-    "assert": 17,
-    "conflict": 2,
-    "gap": 1,
-    "record": 14,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tianjin_jiaoan_llm": {
    "key": "tianjin_jiaoan_llm",
@@ -26415,18 +23986,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_dali_llm": {
    "key": "yunnan_dali_llm",
@@ -26450,18 +24010,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 4,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanghai_songkai_llm": {
    "key": "shanghai_songkai_llm",
@@ -26482,18 +24031,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "ningxia_xiaoguan_llm": {
    "key": "ningxia_xiaoguan_llm",
@@ -26515,18 +24053,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "neimenggu_genghis_llm": {
    "key": "neimenggu_genghis_llm",
@@ -26548,18 +24075,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 4,
-    "assert": 15,
-    "conflict": 3,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xizang_gorkha_llm": {
    "key": "xizang_gorkha_llm",
@@ -26581,18 +24097,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xizang_huimeng_llm": {
    "key": "xizang_huimeng_llm",
@@ -26613,18 +24118,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangxi_zhennanguan_llm": {
    "key": "guangxi_zhennanguan_llm",
@@ -26646,18 +24140,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hainan_hairui_llm": {
    "key": "hainan_hairui_llm",
@@ -26680,18 +24163,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "qinghai_zongkaba_llm": {
    "key": "qinghai_zongkaba_llm",
@@ -26712,18 +24184,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "taiwan_zhengchenggong_llm": {
    "key": "taiwan_zhengchenggong_llm",
@@ -26745,18 +24206,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 4,
-    "record": 6,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xianggang_1941_llm": {
    "key": "xianggang_1941_llm",
@@ -26777,18 +24227,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 4
-   }
+   "scale_tier": "operational"
   },
   "aomen_kaibu_llm": {
    "key": "aomen_kaibu_llm",
@@ -26810,18 +24249,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 10,
-    "conflict": 0,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jiangxi_nanchang_llm": {
    "key": "jiangxi_nanchang_llm",
@@ -26840,18 +24268,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 2,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jiangxi_ruijin_llm": {
    "key": "jiangxi_ruijin_llm",
@@ -26874,18 +24291,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xinjiang_xiyu_llm": {
    "key": "xinjiang_xiyu_llm",
@@ -26907,18 +24313,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 2,
-    "gap": 3,
-    "record": 7,
-    "scholarship": 3,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xinjiang_zuozongtang_llm": {
    "key": "xinjiang_zuozongtang_llm",
@@ -26940,18 +24335,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangxi_lingqu_llm": {
    "key": "guangxi_lingqu_llm",
@@ -26975,18 +24359,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hainan_hainandao_llm": {
    "key": "hainan_hainandao_llm",
@@ -27008,18 +24381,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 5,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chongqing_peidu_llm": {
    "key": "chongqing_peidu_llm",
@@ -27041,18 +24403,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 6,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "gansu_dunhuang_llm": {
    "key": "gansu_dunhuang_llm",
@@ -27072,18 +24423,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 8,
-    "conflict": 0,
-    "gap": 1,
-    "record": 5,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heilongjiang_kanglian_llm": {
    "key": "heilongjiang_kanglian_llm",
@@ -27103,18 +24443,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jilin_bohai_llm": {
    "key": "jilin_bohai_llm",
@@ -27137,18 +24466,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jilin_changchun_llm": {
    "key": "jilin_changchun_llm",
@@ -27170,18 +24488,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tianjin_kaibu_llm": {
    "key": "tianjin_kaibu_llm",
@@ -27203,18 +24510,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_nanzhao_llm": {
    "key": "yunnan_nanzhao_llm",
@@ -27235,18 +24531,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 5,
-    "record": 7,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "fujian_xiamen_llm": {
    "key": "fujian_xiamen_llm",
@@ -27265,18 +24550,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 2,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hunan_mawangdui_llm": {
    "key": "hunan_mawangdui_llm",
@@ -27298,18 +24572,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 3,
-    "gap": 0,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanxi_jinshang_llm": {
    "key": "shanxi_jinshang_llm",
@@ -27332,18 +24595,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "sichuan_dujiangyan_llm": {
    "key": "sichuan_dujiangyan_llm",
@@ -27366,18 +24618,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "taiwan_shilang_llm": {
    "key": "taiwan_shilang_llm",
@@ -27400,18 +24641,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "taiwan_wushe_llm": {
    "key": "taiwan_wushe_llm",
@@ -27435,18 +24665,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xianggang_huigui_llm": {
    "key": "xianggang_huigui_llm",
@@ -27468,18 +24687,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xianggang_dongjiang_llm": {
    "key": "xianggang_dongjiang_llm",
@@ -27502,18 +24710,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 2,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "aomen_huigui_llm": {
    "key": "aomen_huigui_llm",
@@ -27535,18 +24732,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 5,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "aomen_mage_llm": {
    "key": "aomen_mage_llm",
@@ -27570,18 +24756,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "qinghai_zhaochongguo_llm": {
    "key": "qinghai_zhaochongguo_llm",
@@ -27602,18 +24777,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 3,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guizhou_shexiang_llm": {
    "key": "guizhou_shexiang_llm",
@@ -27636,18 +24800,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 8,
-    "person": 4,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "fujian_minyue": {
    "key": "fujian_minyue",
@@ -27670,18 +24823,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "gansu_hexi": {
    "key": "gansu_hexi",
@@ -27704,18 +24846,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 8,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangdong_nanyue": {
    "key": "guangdong_nanyue",
@@ -27738,18 +24869,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin_han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hebei_zhaozhou": {
    "key": "hebei_zhaozhou",
@@ -27770,18 +24890,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hunan_yuelu": {
    "key": "hunan_yuelu",
@@ -27802,18 +24911,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 3,
-    "record": 7,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shandong_kongzi": {
    "key": "shandong_kongzi",
@@ -27835,18 +24933,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "spring_autumn",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 2,
-    "record": 7,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "sichuan_zhuge": {
    "key": "sichuan_zhuge",
@@ -27869,18 +24956,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_dali": {
    "key": "yunnan_dali",
@@ -27904,18 +24980,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "zhejiang_linan": {
    "key": "zhejiang_linan",
@@ -27938,18 +25003,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jiangxi_jingdezhen": {
    "key": "jiangxi_jingdezhen",
@@ -27971,18 +25025,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "shanxi_sanjiafenjin": {
    "key": "shanxi_sanjiafenjin",
@@ -28003,18 +25046,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangxi_lingqu": {
    "key": "guangxi_lingqu",
@@ -28037,18 +25069,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heilongjiang_jin": {
    "key": "heilongjiang_jin",
@@ -28070,18 +25091,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xinjiang_xiyu": {
    "key": "xinjiang_xiyu",
@@ -28102,18 +25112,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 4,
-    "assert": 11,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "neimenggu_liao": {
    "key": "neimenggu_liao",
@@ -28136,18 +25135,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chongqing_diaoyucheng": {
    "key": "chongqing_diaoyucheng",
@@ -28167,18 +25155,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 15,
-    "conflict": 1,
-    "gap": 0,
-    "record": 12,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanghai_kaibu": {
    "key": "shanghai_kaibu",
@@ -28201,18 +25178,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guizhou_yelang": {
    "key": "guizhou_yelang",
@@ -28235,18 +25201,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hainan_xianfuren": {
    "key": "hainan_xianfuren",
@@ -28269,18 +25224,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jilin_gaogouli": {
    "key": "jilin_gaogouli",
@@ -28302,18 +25246,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "ningxia_xixia": {
    "key": "ningxia_xixia",
@@ -28335,18 +25268,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "qinghai_tuyuhun": {
    "key": "qinghai_tuyuhun",
@@ -28368,18 +25290,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 3,
-    "record": 6,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tianjin_tianjinwei": {
    "key": "tianjin_tianjinwei",
@@ -28401,18 +25312,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xianggang_tunmen": {
    "key": "xianggang_tunmen",
@@ -28434,18 +25334,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "aomen_aomen": {
    "key": "aomen_aomen",
@@ -28466,18 +25355,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 13,
-    "conflict": 2,
-    "gap": 1,
-    "record": 7,
-    "scholarship": 4,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xizang_wencheng": {
    "key": "xizang_wencheng",
@@ -28500,18 +25378,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "taiwan_zhengchenggong": {
    "key": "taiwan_zhengchenggong",
@@ -28533,18 +25400,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 3,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shandong_jixia": {
    "key": "shandong_jixia",
@@ -28567,18 +25423,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hebei_shanhaiguan": {
    "key": "hebei_shanhaiguan",
@@ -28600,18 +25445,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hubei_zenghouyi": {
    "key": "hubei_zenghouyi",
@@ -28632,18 +25466,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "warring_states",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 1,
-    "assert": 11,
-    "conflict": 0,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanxi_yungang": {
    "key": "shanxi_yungang",
@@ -28666,18 +25489,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "two_jin",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "gansu_jiayuguan": {
    "key": "gansu_jiayuguan",
@@ -28699,18 +25511,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "guangdong_guangzhou": {
    "key": "guangdong_guangzhou",
@@ -28732,18 +25533,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "fujian_tulou": {
    "key": "fujian_tulou",
@@ -28765,18 +25555,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 0,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 3
-   }
+   "scale_tier": "operational"
   },
   "jiangxi_bailudong": {
    "key": "jiangxi_bailudong",
@@ -28797,18 +25576,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_dianmian": {
    "key": "yunnan_dianmian",
@@ -28830,18 +25598,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 5,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "zhejiang_longquan": {
    "key": "zhejiang_longquan",
@@ -28864,18 +25621,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "qingli_reform_llm": {
    "key": "qingli_reform_llm",
@@ -28896,18 +25642,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 6,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "wuxu_reform_llm": {
    "key": "wuxu_reform_llm",
@@ -28928,18 +25663,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 7,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yangwu_llm": {
    "key": "yangwu_llm",
@@ -28961,18 +25685,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 5,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "wangmang_reform_llm": {
    "key": "wangmang_reform_llm",
@@ -28994,18 +25707,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "han",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 1,
-    "assert": 100,
-    "conflict": 7,
-    "gap": 0,
-    "record": 88,
-    "scholarship": 11,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jiaozi_llm": {
    "key": "jiaozi_llm",
@@ -29027,18 +25729,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "aomen_macanese_llm": {
    "key": "aomen_macanese_llm",
@@ -29061,18 +25752,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "chama_xizang_llm": {
    "key": "chama_xizang_llm",
@@ -29094,18 +25774,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "changsha_yao_llm": {
    "key": "changsha_yao_llm",
@@ -29127,18 +25796,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "dangar_chama_llm": {
    "key": "dangar_chama_llm",
@@ -29160,18 +25818,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jianzhou_nuerhaci_llm": {
    "key": "jianzhou_nuerhaci_llm",
@@ -29194,18 +25841,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jiupin_zhongzheng_llm": {
    "key": "jiupin_zhongzheng_llm",
@@ -29226,18 +25862,7 @@ window.SANDBOX_DATA = {
     5
    ],
    "epoch": "three_kingdoms",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 3,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "kanerjing_llm": {
    "key": "kanerjing_llm",
@@ -29261,18 +25886,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "longquan_yao_llm": {
    "key": "longquan_yao_llm",
@@ -29295,18 +25909,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 7,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "ming_yuzhen_xia_llm": {
    "key": "ming_yuzhen_xia_llm",
@@ -29328,18 +25931,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "mohe_gold_llm": {
    "key": "mohe_gold_llm",
@@ -29362,18 +25954,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 2,
-    "assert": 11,
-    "conflict": 2,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "nongzhigao_llm": {
    "key": "nongzhigao_llm",
@@ -29394,18 +25975,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 12,
-    "person": 2,
-    "assert": 14,
-    "conflict": 2,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shen_baozhen_taiwan_llm": {
    "key": "shen_baozhen_taiwan_llm",
@@ -29428,18 +25998,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "sushi_danzhou_llm": {
    "key": "sushi_danzhou_llm",
@@ -29462,18 +26021,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "song",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 1,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tan_ding_llm": {
    "key": "tan_ding_llm",
@@ -29495,18 +26043,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 12,
-    "conflict": 1,
-    "gap": 1,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xianggang_nanbeihang_llm": {
    "key": "xianggang_nanbeihang_llm",
@@ -29528,18 +26065,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yuan_shangdu_llm": {
    "key": "yuan_shangdu_llm",
@@ -29562,18 +26088,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "yuan_ming",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 2
-   }
+   "scale_tier": "operational"
   },
   "zuyong_diao_llm": {
    "key": "zuyong_diao_llm",
@@ -29596,18 +26111,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 2,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "ningxia_lingzhou_llm": {
    "key": "ningxia_lingzhou_llm",
@@ -29628,18 +26132,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 5,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "tianjin_jiqiju_llm": {
    "key": "tianjin_jiqiju_llm",
@@ -29661,18 +26154,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 2,
-    "assert": 12,
-    "conflict": 0,
-    "gap": 3,
-    "record": 7,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heilongjiang_chuangguan_llm": {
    "key": "heilongjiang_chuangguan_llm",
@@ -29695,18 +26177,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 10,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "heilongjiang_suifenhe_llm": {
    "key": "heilongjiang_suifenhe_llm",
@@ -29728,18 +26199,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 13,
-    "conflict": 1,
-    "gap": 2,
-    "record": 8,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hubei_hankou_llm": {
    "key": "hubei_hankou_llm",
@@ -29763,18 +26223,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "hubei_wuchang_llm": {
    "key": "hubei_wuchang_llm",
@@ -29794,18 +26243,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 5,
-    "assert": 15,
-    "conflict": 0,
-    "gap": 1,
-    "record": 12,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jilin_changbaishan_llm": {
    "key": "jilin_changbaishan_llm",
@@ -29827,18 +26265,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 4,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "jilin_yanbian_llm": {
    "key": "jilin_yanbian_llm",
@@ -29860,18 +26287,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 5,
-    "person": 2,
-    "assert": 16,
-    "conflict": 0,
-    "gap": 1,
-    "record": 13,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanghai_shangwu_llm": {
    "key": "shanghai_shangwu_llm",
@@ -29894,18 +26310,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 1,
-    "person": 6,
-    "assert": 14,
-    "conflict": 1,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "shanghai_xinhai_llm": {
    "key": "shanghai_xinhai_llm",
@@ -29927,18 +26332,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 3,
-    "person": 3,
-    "assert": 13,
-    "conflict": 0,
-    "gap": 2,
-    "record": 9,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xinjiang_gaochang_llm": {
    "key": "xinjiang_gaochang_llm",
@@ -29961,18 +26355,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "sui_tang",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 6,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "xinjiang_jiansheng_llm": {
    "key": "xinjiang_jiansheng_llm",
@@ -29995,18 +26378,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 3,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_duwenxiu_llm": {
    "key": "yunnan_duwenxiu_llm",
@@ -30030,18 +26402,7 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "qing_modern",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 2,
-    "person": 2,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 10,
-    "scholarship": 2,
-    "inference": 1
-   }
+   "scale_tier": "operational"
   },
   "yunnan_quhuanzhang_llm": {
    "key": "yunnan_quhuanzhang_llm",
@@ -30063,18 +26424,280 @@ window.SANDBOX_DATA = {
     6
    ],
    "epoch": "ming_qing",
-   "scale_tier": "operational",
-   "counts": {
-    "src": 1,
-    "place": 4,
-    "person": 1,
-    "assert": 14,
-    "conflict": 0,
-    "gap": 1,
-    "record": 11,
-    "scholarship": 1,
-    "inference": 1
-   }
+   "scale_tier": "operational"
+  },
+  "gansu_linxia_huihui_llm": {
+   "key": "gansu_linxia_huihui_llm",
+   "scene_id": "gansu_linxia_huihui_llm",
+   "title": "临夏回族与清真寺群（明清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "social",
+   "region": "xibei",
+   "page": "county.html?scene=gansu_linxia_huihui_llm",
+   "primary_place": "hezhou",
+   "vocab_pack": "inline:gansu_linxia_huihui_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational"
+  },
+  "gansu_tianshui_fuxi_llm": {
+   "key": "gansu_tianshui_fuxi_llm",
+   "scene_id": "gansu_tianshui_fuxi_llm",
+   "title": "天水伏羲与卦台山（先秦）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "xibei",
+   "page": "county.html?scene=gansu_tianshui_fuxi_llm",
+   "primary_place": "tianshui",
+   "vocab_pack": "inline:gansu_tianshui_fuxi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
+  },
+  "guangxi_nanning_kaibu_llm": {
+   "key": "guangxi_nanning_kaibu_llm",
+   "scene_id": "guangxi_nanning_kaibu_llm",
+   "title": "南宁开埠与龙州商埠（1907）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guangxi_nanning_kaibu_llm",
+   "primary_place": "nanning",
+   "vocab_pack": "inline:guangxi_nanning_kaibu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "guangxi_zhuangzu_llm": {
+   "key": "guangxi_zhuangzu_llm",
+   "scene_id": "guangxi_zhuangzu_llm",
+   "title": "壮族文化与铜鼓（唐宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guangxi_zhuangzu_llm",
+   "primary_place": "yong",
+   "vocab_pack": "inline:guangxi_zhuangzu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui_tang",
+   "scale_tier": "operational"
+  },
+  "guizhou_tianlongshan_llm": {
+   "key": "guizhou_tianlongshan_llm",
+   "scene_id": "guizhou_tianlongshan_llm",
+   "title": "贵州佛教·天龙山与青龙洞（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guizhou_tianlongshan_llm",
+   "primary_place": "qianlingshan",
+   "vocab_pack": "inline:guizhou_tianlongshan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational"
+  },
+  "guizhou_zhangxiumei_llm": {
+   "key": "guizhou_zhangxiumei_llm",
+   "scene_id": "guizhou_zhangxiumei_llm",
+   "title": "张秀眉黔东南苗民起义（1855—1872）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "chuan_gui",
+   "page": "county.html?scene=guizhou_zhangxiumei_llm",
+   "primary_place": "taigong",
+   "vocab_pack": "inline:guizhou_zhangxiumei_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "hebei_yanzhao_wenhua_llm": {
+   "key": "hebei_yanzhao_wenhua_llm",
+   "scene_id": "hebei_yanzhao_wenhua_llm",
+   "title": "燕赵文化与河北梆子（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_yanzhao_wenhua_llm",
+   "primary_place": "hebei",
+   "vocab_pack": "inline:hebei_yanzhao_wenhua_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational"
+  },
+  "hebei_zhili_xinzheng_llm": {
+   "key": "hebei_zhili_xinzheng_llm",
+   "scene_id": "hebei_zhili_xinzheng_llm",
+   "title": "直隶新政与北洋新政（1901—1911）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_zhili_xinzheng_llm",
+   "primary_place": "tianjin",
+   "vocab_pack": "inline:hebei_zhili_xinzheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "neimenggu_keerqin_llm": {
+   "key": "neimenggu_keerqin_llm",
+   "scene_id": "neimenggu_keerqin_llm",
+   "title": "科尔沁蒙古与清廷联姻（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "social",
+   "region": "huabei",
+   "page": "county.html?scene=neimenggu_keerqin_llm",
+   "primary_place": "nenjiang",
+   "vocab_pack": "inline:neimenggu_keerqin_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "sichuan_chuanzong_huguang_llm": {
+   "key": "sichuan_chuanzong_huguang_llm",
+   "scene_id": "sichuan_chuanzong_huguang_llm",
+   "title": "湖广填四川与大移民（清初）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "social",
+   "region": "chuan_gui",
+   "page": "county.html?scene=sichuan_chuanzong_huguang_llm",
+   "primary_place": "huguang",
+   "vocab_pack": "inline:sichuan_chuanzong_huguang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "sichuan_gaitu_guizhou_llm": {
+   "key": "sichuan_gaitu_guizhou_llm",
+   "scene_id": "sichuan_gaitu_guizhou_llm",
+   "title": "鄂尔泰改土归流（雍正·1726—1731）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "chuan_gui",
+   "page": "county.html?scene=sichuan_gaitu_guizhou_llm",
+   "primary_place": "yunnan",
+   "vocab_pack": "inline:sichuan_gaitu_guizhou_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational"
+  },
+  "neimenggu_huhehaote_llm": {
+   "key": "neimenggu_huhehaote_llm",
+   "scene_id": "neimenggu_huhehaote_llm",
+   "title": "归化城与旅蒙商（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "exchange",
+   "region": "huabei",
+   "page": "county.html?scene=neimenggu_huhehaote_llm",
+   "primary_place": "guihua",
+   "vocab_pack": "inline:neimenggu_huhehaote_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -30411,7 +27034,19 @@ window.SANDBOX_DATA = {
   "xinjiang_gaochang_llm": "slices/xinjiang_gaochang_llm.js",
   "xinjiang_jiansheng_llm": "slices/xinjiang_jiansheng_llm.js",
   "yunnan_duwenxiu_llm": "slices/yunnan_duwenxiu_llm.js",
-  "yunnan_quhuanzhang_llm": "slices/yunnan_quhuanzhang_llm.js"
+  "yunnan_quhuanzhang_llm": "slices/yunnan_quhuanzhang_llm.js",
+  "gansu_linxia_huihui_llm": "slices/gansu_linxia_huihui_llm.js",
+  "gansu_tianshui_fuxi_llm": "slices/gansu_tianshui_fuxi_llm.js",
+  "guangxi_nanning_kaibu_llm": "slices/guangxi_nanning_kaibu_llm.js",
+  "guangxi_zhuangzu_llm": "slices/guangxi_zhuangzu_llm.js",
+  "guizhou_tianlongshan_llm": "slices/guizhou_tianlongshan_llm.js",
+  "guizhou_zhangxiumei_llm": "slices/guizhou_zhangxiumei_llm.js",
+  "hebei_yanzhao_wenhua_llm": "slices/hebei_yanzhao_wenhua_llm.js",
+  "hebei_zhili_xinzheng_llm": "slices/hebei_zhili_xinzheng_llm.js",
+  "neimenggu_keerqin_llm": "slices/neimenggu_keerqin_llm.js",
+  "sichuan_chuanzong_huguang_llm": "slices/sichuan_chuanzong_huguang_llm.js",
+  "sichuan_gaitu_guizhou_llm": "slices/sichuan_gaitu_guizhou_llm.js",
+  "neimenggu_huhehaote_llm": "slices/neimenggu_huhehaote_llm.js"
  },
  "corridors": [
   {
