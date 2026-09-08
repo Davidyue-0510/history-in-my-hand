@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "guiping",
+   "to": "jintian",
+   "type": "military",
+   "label": "起义军集结路线",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "jintian",
+   "to": "jiangning",
+   "type": "military",
+   "label": "太平军东进路线",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

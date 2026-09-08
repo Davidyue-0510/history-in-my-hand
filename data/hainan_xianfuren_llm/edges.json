@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "gaoliang",
+   "to": "guangzhou",
+   "type": "military",
+   "label": "冼夫人起兵拒欧阳纥",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "gaoliang",
+   "to": "hainan",
+   "type": "military",
+   "label": "保障海南安定",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

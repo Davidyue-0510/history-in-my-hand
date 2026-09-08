@@ -1,0 +1,11 @@
+{
+ "control": [
+  {
+   "place_id": "gaoliang",
+   "party": "后世官修",
+   "start": 512,
+   "end": 602,
+   "basis": "auto: 场景主地点 gaoliang 叙事控制方=后世官修"
+  }
+ ]
+}

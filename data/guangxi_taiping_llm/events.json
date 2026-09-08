@@ -1,0 +1,69 @@
+{
+ "events": [
+  {
+   "id": "ev_guangxi_taiping_llm_01",
+   "subject": "event:ev_guangxi_taiping_llm_01",
+   "year": 1843,
+   "era": "道光二十三年",
+   "title": "创立拜上帝会",
+   "kind": "其他",
+   "text": "洪秀全创立拜上帝会",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_taiping_llm_02",
+   "subject": "event:ev_guangxi_taiping_llm_02",
+   "year": 1851,
+   "era": "咸丰元年正月",
+   "title": "金田起义",
+   "kind": "战事",
+   "text": "洪秀全于金田村起义",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_taiping_llm_03",
+   "subject": "event:ev_guangxi_taiping_llm_03",
+   "year": 1853,
+   "era": "咸丰三年",
+   "title": "定都天京",
+   "kind": "行政",
+   "text": "攻克江宁，定为天京",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_taiping_llm_04",
+   "subject": "event:ev_guangxi_taiping_llm_04",
+   "year": 1856,
+   "era": "咸丰六年",
+   "title": "天京事变",
+   "kind": "其他",
+   "text": "杨秀清韦昌辉内讧",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangxi_taiping_llm_05",
+   "subject": "event:ev_guangxi_taiping_llm_05",
+   "year": 1864,
+   "era": "同治三年",
+   "title": "天京陷落",
+   "kind": "战事",
+   "text": "天京陷落，运动失败",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

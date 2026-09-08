@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_qinghai_gusiluo_llm_01",
+   "subject": "event:ev_qinghai_gusiluo_llm_01",
+   "year": 1015,
+   "era": "大中祥符八年",
+   "title": "唃厮啰被迎立",
+   "kind": "建置",
+   "text": "李立遵、温逋奇迎唃厮啰为政权首领",
+   "_source_idx": 0,
+   "_source_name": "唃厮啰政权史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_gusiluo_llm_02",
+   "subject": "event:ev_qinghai_gusiluo_llm_02",
+   "year": 1032,
+   "era": "明道元年",
+   "title": "唃厮啰迁居青唐",
+   "kind": "行政",
+   "text": "唃厮啰迁居青唐，摆脱权臣亲政",
+   "_source_idx": 0,
+   "_source_name": "唃厮啰政权史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_qinghai_gusiluo_llm_03",
+   "subject": "event:ev_qinghai_gusiluo_llm_03",
+   "year": 1103,
+   "era": "崇宁二年",
+   "title": "宋军进取青唐",
+   "kind": "战事",
+   "text": "宋军攻取青唐，政权覆灭",
+   "_source_idx": 0,
+   "_source_name": "唃厮啰政权史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

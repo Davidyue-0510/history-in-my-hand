@@ -1,0 +1,76 @@
+{
+ "places": [
+  {
+   "id": "guangxi",
+   "name": "广西",
+   "type": "region",
+   "modern": "今中国广西壮族自治区",
+   "note": "起义发源地",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guiping",
+   "name": "桂平",
+   "type": "city",
+   "modern": "今中国广西桂平市",
+   "note": "金田村所在县",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jintian",
+   "name": "金田村",
+   "type": "yi",
+   "modern": "今中国广西桂平市金田镇",
+   "note": "起义爆发地",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "jiangning",
+   "name": "江宁",
+   "type": "city",
+   "modern": "今中国江苏省南京市",
+   "note": "太平天国改称天京",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "tianjing",
+   "name": "天京",
+   "type": "city",
+   "modern": "今中国江苏省南京市",
+   "note": "太平天国都城",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "XIZ__p01",
+   "name": "松赞干布",
+   "role": "吐蕃赞普",
+   "note": "617-650，统一青藏高原，定都逻娑",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p02",
+   "name": "文成公主",
+   "role": "唐宗室女",
+   "note": "641年入藏和亲",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p03",
+   "name": "赤松德赞",
+   "role": "吐蕃赞普",
+   "note": "8世纪，崇佛建桑耶寺",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p04",
+   "name": "朗达玛",
+   "role": "吐蕃赞普",
+   "note": "842年被刺，王朝瓦解",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "冼夫人",
+   "role": "俚僚首领，谯国夫人",
+   "note": "岭南圣母，善抚诸部",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "冯宝",
+   "role": "高凉太守",
+   "note": "冼夫人之夫",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p03",
+   "name": "欧阳纥",
+   "role": "广州刺史",
+   "note": "陈朝叛将",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

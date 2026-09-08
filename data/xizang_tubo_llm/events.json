@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_xizang_tubo_llm_01",
+   "subject": "event:ev_xizang_tubo_llm_01",
+   "year": 633,
+   "era": "唐贞观七年",
+   "title": "松赞干布统一",
+   "kind": "建置",
+   "text": "平定内乱，兼并诸部，定都逻娑",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_tubo_llm_02",
+   "subject": "event:ev_xizang_tubo_llm_02",
+   "year": 641,
+   "era": "唐贞观十五年",
+   "title": "唐蕃和亲",
+   "kind": "外交",
+   "text": "文成公主入藏，带去工艺典籍",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_tubo_llm_03",
+   "subject": "event:ev_xizang_tubo_llm_03",
+   "year": 763,
+   "era": "唐广德元年",
+   "title": "吐蕃陷长安",
+   "kind": "战事",
+   "text": "一度攻入唐都长安",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_tubo_llm_04",
+   "subject": "event:ev_xizang_tubo_llm_04",
+   "year": 842,
+   "era": "唐会昌二年",
+   "title": "朗达玛遇刺",
+   "kind": "其他",
+   "text": "赞普被刺，王朝瓦解分裂",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

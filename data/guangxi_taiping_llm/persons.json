@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "GUA__p01",
+   "name": "洪秀全",
+   "role": "天王",
+   "note": "太平天国最高领袖",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p02",
+   "name": "杨秀清",
+   "role": "东王",
+   "note": "太平天国军事统帅",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p03",
+   "name": "韦昌辉",
+   "role": "北王",
+   "note": "天京事变参与者",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p04",
+   "name": "幼天王",
+   "role": "天王",
+   "note": "洪秀全之子，被俘",
+   "_source_idx": 0,
+   "_source_name": "太平天国史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

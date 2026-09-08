@@ -1,0 +1,62 @@
+{
+ "places": [
+  {
+   "id": "gaoliang",
+   "name": "高凉",
+   "type": "region",
+   "modern": "今广东阳江一带",
+   "note": "冼夫人籍贯",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "guangzhou",
+   "name": "广州",
+   "type": "city",
+   "modern": "今广东广州",
+   "note": "欧阳纥治所",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.26,
+   "lat": 23.13,
+   "geo_note": "康有为故里，今广东广州"
+  },
+  {
+   "id": "hainan",
+   "name": "海南",
+   "type": "region",
+   "modern": "今海南岛",
+   "note": "珠崖之地",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  },
+  {
+   "id": "zhuyai",
+   "name": "珠崖",
+   "type": "region",
+   "modern": "今海南东北部",
+   "note": "海南古称",
+   "_source_idx": 0,
+   "_source_name": "冼夫人史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": null,
+   "lat": null,
+   "geo_unresolved": true
+  }
+ ],
+ "rivers": [],
+ "wall": []
+}

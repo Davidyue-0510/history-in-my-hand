@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "luosa",
+   "to": "changan",
+   "type": "military",
+   "label": "763年吐蕃攻唐路线",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "qinghai",
+   "to": "longyou",
+   "type": "battle",
+   "label": "唐蕃拉锯区域",
+   "_source_idx": 0,
+   "_source_name": "吐蕃王朝史料摘录",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1195,6 +1195,21 @@
    "_src_line": 43
   },
   {
+   "id": "GUA_014",
+   "scene": "guangxi_taiping_llm",
+   "subject": "event:ev_guangxi_taiping_llm_04",
+   "title": "史料未详述",
+   "missing": "史料考证",
+   "where": "天京",
+   "skills": [
+    "史料考证"
+   ],
+   "accept": "内讧具体原因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "GUILINGG01",
    "scene": "guiling",
    "subject": "event:gl_jz",
@@ -1256,6 +1271,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "HAI_014",
+   "scene": "hainan_xianfuren_llm",
+   "subject": "person:HAI__p01",
+   "title": "具体战例缺失",
+   "missing": "历史考据",
+   "where": "高凉",
+   "skills": [
+    "历史考据"
+   ],
+   "accept": "补充具体战例",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "HAING2",
@@ -3039,6 +3069,22 @@
    "_src_line": 10
   },
   {
+   "id": "QIN_015",
+   "scene": "qinghai_gusiluo_llm",
+   "subject": "event:ev_qinghai_gusiluo_llm_03",
+   "title": "1103年宋军进取青唐",
+   "missing": "宋史 / 吐蕃史",
+   "where": "qingtang",
+   "skills": [
+    "宋史",
+    "吐蕃史"
+   ],
+   "accept": "需查证宋军进取青唐的具体月份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "QINGG4",
    "scene": "qinghai_tuyuhun_llm",
    "subject": "event:ev_qinghai_tuyuhun_llm_01",
@@ -4277,6 +4323,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "XIZ_014",
+   "scene": "xizang_tubo_llm",
+   "subject": "event:ev_xizang_tubo_llm_01",
+   "title": "吐蕃早期史料匮乏",
+   "missing": "古藏文 / 文献考据",
+   "where": "敦煌文献与汉藏史籍",
+   "skills": [
+    "古藏文",
+    "文献考据"
+   ],
+   "accept": "吐蕃早期史实",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "xg11",

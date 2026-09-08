@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 212 个切片
+// 权威数据源：data/scenes.json 注册的 216 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 212 个切片",
+  "slice": "multi-scene · 216 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -26,7 +26,9 @@ window.SANDBOX_DATA = {
    "foguo_chan_llm",
    "fujian_quanzhou_llm",
    "guandu_llm",
+   "guangxi_taiping_llm",
    "guizhou_yelang_llm",
+   "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
@@ -49,6 +51,7 @@ window.SANDBOX_DATA = {
    "qin_mie_liu_guo_llm",
    "qing_yakesa_llm",
    "qing_zhungaer_llm",
+   "qinghai_gusiluo_llm",
    "qinghai_tuyuhun_llm",
    "san_guo",
    "shu_han_found_llm",
@@ -73,6 +76,7 @@ window.SANDBOX_DATA = {
    "warring_states_shangyang_llm",
    "xianggang_songmo_llm",
    "xiyu_dunhu_llm",
+   "xizang_tubo_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "zhejiang_linan_llm",
@@ -542,7 +546,11 @@ window.SANDBOX_DATA = {
   "pingbo_zhiyi_llm",
   "bohai_kingdom_llm",
   "dongbei_kanglian_llm",
-  "chongqing_capital_llm"
+  "chongqing_capital_llm",
+  "xizang_tubo_llm",
+  "guangxi_taiping_llm",
+  "hainan_xianfuren_llm",
+  "qinghai_gusiluo_llm"
  ],
  "vocab": {
   "layers": [
@@ -25794,6 +25802,140 @@ window.SANDBOX_DATA = {
     "scholarship": 1,
     "inference": 4
    }
+  },
+  "xizang_tubo_llm": {
+   "key": "xizang_tubo_llm",
+   "scene_id": "xizang_tubo_llm",
+   "title": "吐蕃王朝（松赞干布统一，618—842）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "fusion",
+   "page": "county.html?scene=xizang_tubo_llm",
+   "primary_place": "luosa",
+   "vocab_pack": "xizang_tubo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "guangxi_taiping_llm": {
+   "key": "guangxi_taiping_llm",
+   "scene_id": "guangxi_taiping_llm",
+   "title": "太平天国金田起义（1851—1864）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "qing_modern",
+   "page": "county.html?scene=guangxi_taiping_llm",
+   "primary_place": "guangxi",
+   "vocab_pack": "guangxi_taiping_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 5,
+    "person": 4,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "hainan_xianfuren_llm": {
+   "key": "hainan_xianfuren_llm",
+   "scene_id": "hainan_xianfuren_llm",
+   "title": "冼夫人（南朝梁陈隋，约 512—602）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "fusion",
+   "region": "nan_bei_chao",
+   "page": "county.html?scene=hainan_xianfuren_llm",
+   "primary_place": "gaoliang",
+   "vocab_pack": "hainan_xianfuren_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 4,
+    "person": 3,
+    "assert": 14,
+    "conflict": 0,
+    "gap": 1,
+    "record": 11,
+    "scholarship": 1,
+    "inference": 1
+   }
+  },
+  "qinghai_gusiluo_llm": {
+   "key": "qinghai_gusiluo_llm",
+   "scene_id": "qinghai_gusiluo_llm",
+   "title": "唃厮啰政权（吐蕃后裔，1015—1103）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "frontier",
+   "region": "xibei",
+   "page": "county.html?scene=qinghai_gusiluo_llm",
+   "primary_place": "qinghai",
+   "vocab_pack": "qinghai_gusiluo_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "counts": {
+    "src": 1,
+    "place": 8,
+    "person": 3,
+    "assert": 15,
+    "conflict": 0,
+    "gap": 1,
+    "record": 12,
+    "scholarship": 1,
+    "inference": 1
+   }
   }
  },
  "slice_index": {
@@ -26008,7 +26150,11 @@ window.SANDBOX_DATA = {
   "pingbo_zhiyi_llm": "slices/pingbo_zhiyi_llm.js",
   "bohai_kingdom_llm": "slices/bohai_kingdom_llm.js",
   "dongbei_kanglian_llm": "slices/dongbei_kanglian_llm.js",
-  "chongqing_capital_llm": "slices/chongqing_capital_llm.js"
+  "chongqing_capital_llm": "slices/chongqing_capital_llm.js",
+  "xizang_tubo_llm": "slices/xizang_tubo_llm.js",
+  "guangxi_taiping_llm": "slices/guangxi_taiping_llm.js",
+  "hainan_xianfuren_llm": "slices/hainan_xianfuren_llm.js",
+  "qinghai_gusiluo_llm": "slices/qinghai_gusiluo_llm.js"
  },
  "corridors": [
   {

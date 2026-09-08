@@ -1,9 +1,9 @@
 {
-  "scenes_total": 212,
-  "historical": 203,
+  "scenes_total": 216,
+  "historical": 207,
   "fictional": 9,
-  "assertions_total": 3335,
-  "sources_total": 190,
+  "assertions_total": 3392,
+  "sources_total": 194,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -22,7 +22,9 @@
     "foguo_chan_llm",
     "fujian_quanzhou_llm",
     "guandu_llm",
+    "guangxi_taiping_llm",
     "guizhou_yelang_llm",
+    "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
@@ -45,6 +47,7 @@
     "qin_mie_liu_guo_llm",
     "qing_yakesa_llm",
     "qing_zhungaer_llm",
+    "qinghai_gusiluo_llm",
     "qinghai_tuyuhun_llm",
     "san_guo",
     "shu_han_found_llm",
@@ -69,6 +72,7 @@
     "warring_states_shangyang_llm",
     "xianggang_songmo_llm",
     "xiyu_dunhu_llm",
+    "xizang_tubo_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "zhejiang_linan_llm",
@@ -76,7 +80,7 @@
     "zhuxi"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 307,
+  "leads_total": 311,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -1615,6 +1619,34 @@
       "kind": "court",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "xizang_tubo_llm",
+      "title": "吐蕃王朝（松赞干布统一，618—842）",
+      "kind": "frontier",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guangxi_taiping_llm",
+      "title": "太平天国金田起义（1851—1864）",
+      "kind": "uprising",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hainan_xianfuren_llm",
+      "title": "冼夫人（南朝梁陈隋，约 512—602）",
+      "kind": "fusion",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "qinghai_gusiluo_llm",
+      "title": "唃厮啰政权（吐蕃后裔，1015—1103）",
+      "kind": "frontier",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -1829,6 +1861,10 @@
     "pingbo_zhiyi_llm": "平播之役（1599—1600）",
     "bohai_kingdom_llm": "渤海国（698—926）",
     "dongbei_kanglian_llm": "东北抗日联军（1931—1945）",
-    "chongqing_capital_llm": "重庆抗战陪都（1937—1946）"
+    "chongqing_capital_llm": "重庆抗战陪都（1937—1946）",
+    "xizang_tubo_llm": "吐蕃王朝（松赞干布统一，618—842）",
+    "guangxi_taiping_llm": "太平天国金田起义（1851—1864）",
+    "hainan_xianfuren_llm": "冼夫人（南朝梁陈隋，约 512—602）",
+    "qinghai_gusiluo_llm": "唃厮啰政权（吐蕃后裔，1015—1103）"
   }
 }
