@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xizang_zongkaba_llm_01",
+   "subject": "event:ev_xizang_zongkaba_llm_01",
+   "year": 1409,
+   "era": "永乐七年",
+   "title": "创传昭大法会",
+   "kind": "其他",
+   "text": "宗喀巴于拉萨创传昭大法会",
+   "_source_idx": 0,
+   "_source_name": "菩提道次第广论 / 宗喀巴传（克珠杰）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_zongkaba_llm_02",
+   "subject": "event:ev_xizang_zongkaba_llm_02",
+   "year": 1409,
+   "era": "永乐七年",
+   "title": "建甘丹寺",
+   "kind": "建置",
+   "text": "建甘丹寺，立格鲁派",
+   "_source_idx": 0,
+   "_source_name": "菩提道次第广论 / 宗喀巴传（克珠杰）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

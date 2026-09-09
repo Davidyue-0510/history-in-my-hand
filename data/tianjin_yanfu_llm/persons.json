@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TIA__p01",
+   "name": "严复",
+   "role": "北洋水师学堂总办",
+   "note": "翻译《天演论》",
+   "_source_idx": 0,
+   "_source_name": "天演论·自序 / 严复集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TIA__p02",
+   "name": "赫胥黎",
+   "role": "英国生物学家",
+   "note": "《天演论》原作者",
+   "_source_idx": 0,
+   "_source_name": "天演论·自序 / 严复集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

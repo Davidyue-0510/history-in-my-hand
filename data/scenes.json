@@ -583,7 +583,27 @@
   "xianggang_tram_llm",
   "xianggang_university_llm",
   "xizang_amban_llm",
-  "xizang_pagoda_llm"
+  "xizang_pagoda_llm",
+  "anhui_daizhen_llm",
+  "anhui_huizhou_llm",
+  "beijing_banner_llm",
+  "beijing_qianjia_llm",
+  "chongqing_paoge_llm",
+  "chongqing_zourong_llm",
+  "jiangsu_jihu_llm",
+  "jiangsu_taizhou_llm",
+  "shanxi_xunzi_llm",
+  "shanxi_zouxikou_llm",
+  "taiwan_kekuan_llm",
+  "taiwan_qiufengjia_llm",
+  "tianjin_jiaohang_llm",
+  "tianjin_yanfu_llm",
+  "xizang_xika_llm",
+  "xizang_zongkaba_llm",
+  "yunnan_gaitu_llm",
+  "yunnan_lianda_llm",
+  "zhejiang_ningbo_llm",
+  "zhejiang_yongjia_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -30641,6 +30661,1499 @@
     2,
     3,
     4,
+    5,
+    6
+   ]
+  },
+  "anhui_daizhen_llm": {
+   "kind": "thought",
+   "region": "jiangnan",
+   "province": "anhui",
+   "title": "戴震·皖派朴学与理欲之辨（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "anhui_xiuning",
+   "dossier_event": "event:ev_anhui_daizhen_llm_01",
+   "vocab_pack": "anhui_daizhen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "戴震·皖派朴学与理欲之辨（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "戴震·皖派朴学与理欲之辨（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "戴震·皖派朴学与理欲之辨（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "戴震·皖派朴学与理欲之辨（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ]
+  },
+  "anhui_huizhou_llm": {
+   "kind": "social",
+   "region": "jiangnan",
+   "province": "anhui",
+   "title": "徽州宗族与祠堂族长社会（明清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "huizhou",
+   "dossier_event": "event:ev_anhui_huizhou_llm_01",
+   "vocab_pack": "anhui_huizhou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "徽州宗族与祠堂族长社会（明清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "徽州宗族与祠堂族长社会（明清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "徽州宗族与祠堂族长社会（明清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "徽州宗族与祠堂族长社会（明清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "beijing_banner_llm": {
+   "kind": "social",
+   "region": "huabei",
+   "province": "beijing",
+   "title": "旗民分城与北京内城外城社会（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "beijing_inner_city",
+   "dossier_event": "event:ev_beijing_banner_llm_01",
+   "vocab_pack": "beijing_banner_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "旗民分城与北京内城外城社会（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "旗民分城与北京内城外城社会（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "旗民分城与北京内城外城社会（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "旗民分城与北京内城外城社会（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    6
+   ]
+  },
+  "beijing_qianjia_llm": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "beijing",
+   "title": "乾嘉考据学与四库全书馆（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "beijing",
+   "dossier_event": "event:ev_beijing_qianjia_llm_01",
+   "vocab_pack": "beijing_qianjia_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "乾嘉考据学与四库全书馆（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "乾嘉考据学与四库全书馆（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "乾嘉考据学与四库全书馆（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "乾嘉考据学与四库全书馆（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "chongqing_paoge_llm": {
+   "kind": "social",
+   "region": "chuan_gui",
+   "province": "chongqing",
+   "title": "重庆袍哥与哥老会江湖社会（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chongqing",
+   "dossier_event": "event:ev_chongqing_paoge_llm_01",
+   "vocab_pack": "chongqing_paoge_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆袍哥与哥老会江湖社会（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "重庆袍哥与哥老会江湖社会（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "重庆袍哥与哥老会江湖社会（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "重庆袍哥与哥老会江湖社会（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    4,
+    6
+   ]
+  },
+  "chongqing_zourong_llm": {
+   "kind": "thought",
+   "region": "chuan_gui",
+   "province": "chongqing",
+   "title": "邹容《革命军》与排满革命思想（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chongqing",
+   "dossier_event": "event:ev_chongqing_zourong_llm_01",
+   "vocab_pack": "chongqing_zourong_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "邹容《革命军》与排满革命思想（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "邹容《革命军》与排满革命思想（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "邹容《革命军》与排满革命思想（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "邹容《革命军》与排满革命思想（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    5,
+    6
+   ]
+  },
+  "jiangsu_jihu_llm": {
+   "kind": "social",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "江南机户出资与织工社会（明清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "suzhou",
+   "dossier_event": "event:ev_jiangsu_jihu_llm_01",
+   "vocab_pack": "jiangsu_jihu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "江南机户出资与织工社会（明清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "江南机户出资与织工社会（明清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "江南机户出资与织工社会（明清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "江南机户出资与织工社会（明清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "jiangsu_taizhou_llm": {
+   "kind": "thought",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "泰州学派·王艮与平民儒学（明）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "taizhou",
+   "dossier_event": "event:ev_jiangsu_taizhou_llm_01",
+   "vocab_pack": "jiangsu_taizhou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "泰州学派·王艮与平民儒学（明）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "泰州学派·王艮与平民儒学（明）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "泰州学派·王艮与平民儒学（明）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "泰州学派·王艮与平民儒学（明）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "shanxi_xunzi_llm": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "shanxi",
+   "title": "荀子·赵地与性恶论（战国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zhao",
+   "dossier_event": "event:ev_shanxi_xunzi_llm_01",
+   "vocab_pack": "shanxi_xunzi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "荀子·赵地与性恶论（战国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "荀子·赵地与性恶论（战国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "荀子·赵地与性恶论（战国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "荀子·赵地与性恶论（战国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    5,
+    6
+   ]
+  },
+  "shanxi_zouxikou_llm": {
+   "kind": "social",
+   "region": "huabei",
+   "province": "shanxi",
+   "title": "走西口与口外移民垦殖（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "shahukou",
+   "dossier_event": "event:ev_shanxi_zouxikou_llm_01",
+   "vocab_pack": "shanxi_zouxikou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "走西口与口外移民垦殖（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "走西口与口外移民垦殖（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "走西口与口外移民垦殖（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "走西口与口外移民垦殖（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "taiwan_kekuan_llm": {
+   "kind": "social",
+   "region": "taiwan",
+   "province": "taiwan",
+   "title": "闽客拓垦与汉番共生社会（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "taiwan",
+   "dossier_event": "event:ev_taiwan_kekuan_llm_01",
+   "vocab_pack": "taiwan_kekuan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "闽客拓垦与汉番共生社会（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "闽客拓垦与汉番共生社会（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "闽客拓垦与汉番共生社会（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "闽客拓垦与汉番共生社会（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "taiwan_qiufengjia_llm": {
+   "kind": "thought",
+   "region": "taiwan",
+   "province": "taiwan",
+   "title": "丘逢甲·乙未割台与诗界革命（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "miaoli",
+   "dossier_event": "event:ev_taiwan_qiufengjia_llm_01",
+   "vocab_pack": "taiwan_qiufengjia_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "丘逢甲·乙未割台与诗界革命（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "丘逢甲·乙未割台与诗界革命（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "丘逢甲·乙未割台与诗界革命（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "丘逢甲·乙未割台与诗界革命（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "tianjin_jiaohang_llm": {
+   "kind": "social",
+   "region": "huabei",
+   "province": "tianjin",
+   "title": "天津脚行与码头苦力社会（清末民初）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_tianjin_jiaohang_llm_01",
+   "vocab_pack": "tianjin_jiaohang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津脚行与码头苦力社会（清末民初）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "天津脚行与码头苦力社会（清末民初）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "天津脚行与码头苦力社会（清末民初）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津脚行与码头苦力社会（清末民初）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "tianjin_yanfu_llm": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "tianjin",
+   "title": "严复《天演论》与近代启蒙（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_tianjin_yanfu_llm_01",
+   "vocab_pack": "tianjin_yanfu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "严复《天演论》与近代启蒙（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "严复《天演论》与近代启蒙（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "严复《天演论》与近代启蒙（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "严复《天演论》与近代启蒙（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    5,
+    6
+   ]
+  },
+  "xizang_xika_llm": {
+   "kind": "social",
+   "region": "xibei",
+   "province": "xizang",
+   "title": "谿卡庄园与西藏农奴社会（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xizang",
+   "dossier_event": "event:ev_xizang_xika_llm_01",
+   "vocab_pack": "xizang_xika_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "谿卡庄园与西藏农奴社会（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "谿卡庄园与西藏农奴社会（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "谿卡庄园与西藏农奴社会（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "谿卡庄园与西藏农奴社会（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4
+   ]
+  },
+  "xizang_zongkaba_llm": {
+   "kind": "thought",
+   "region": "xibei",
+   "province": "xizang",
+   "title": "宗喀巴·格鲁派宗教改革（明）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "huangzhong",
+   "dossier_event": "event:ev_xizang_zongkaba_llm_01",
+   "vocab_pack": "xizang_zongkaba_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宗喀巴·格鲁派宗教改革（明）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宗喀巴·格鲁派宗教改革（明）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宗喀巴·格鲁派宗教改革（明）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宗喀巴·格鲁派宗教改革（明）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    5,
+    6
+   ]
+  },
+  "yunnan_gaitu_llm": {
+   "kind": "social",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "改土归流与云南边疆土司社会（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yunnan",
+   "dossier_event": "event:ev_yunnan_gaitu_llm_01",
+   "vocab_pack": "yunnan_gaitu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "改土归流与云南边疆土司社会（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "改土归流与云南边疆土司社会（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "改土归流与云南边疆土司社会（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "改土归流与云南边疆土司社会（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yunnan_lianda_llm": {
+   "kind": "thought",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "西南联大与战时自由主义学术（1937—1946）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "kunming",
+   "dossier_event": "event:ev_yunnan_lianda_llm_01",
+   "vocab_pack": "yunnan_lianda_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "西南联大与战时自由主义学术（1937—1946）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "西南联大与战时自由主义学术（1937—1946）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "西南联大与战时自由主义学术（1937—1946）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "西南联大与战时自由主义学术（1937—1946）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    4,
+    5,
+    6
+   ]
+  },
+  "zhejiang_ningbo_llm": {
+   "kind": "social",
+   "region": "jiangnan",
+   "province": "zhejiang",
+   "title": "宁波帮与近代金融商帮社会（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "ningbo",
+   "dossier_event": "event:ev_zhejiang_ningbo_llm_01",
+   "vocab_pack": "zhejiang_ningbo_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宁波帮与近代金融商帮社会（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宁波帮与近代金融商帮社会（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宁波帮与近代金融商帮社会（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宁波帮与近代金融商帮社会（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    4,
+    5,
+    6
+   ]
+  },
+  "zhejiang_yongjia_llm": {
+   "kind": "thought",
+   "region": "jiangnan",
+   "province": "zhejiang",
+   "title": "永嘉事功学派·陈亮叶适（宋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "yongkang",
+   "dossier_event": "event:ev_zhejiang_yongjia_llm_01",
+   "vocab_pack": "zhejiang_yongjia_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "永嘉事功学派·陈亮叶适（宋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "永嘉事功学派·陈亮叶适（宋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "永嘉事功学派·陈亮叶适（宋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "永嘉事功学派·陈亮叶适（宋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
     5,
     6
    ]

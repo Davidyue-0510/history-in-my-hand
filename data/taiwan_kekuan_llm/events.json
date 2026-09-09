@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_taiwan_kekuan_llm_01",
+   "subject": "event:ev_taiwan_kekuan_llm_01",
+   "year": 1683,
+   "era": "清领台湾后",
+   "title": "清领台湾",
+   "kind": "行政",
+   "text": "清廷将台湾纳入版图，汉人开始大规模移民",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_kekuan_llm_02",
+   "subject": "event:ev_taiwan_kekuan_llm_02",
+   "year": 1700,
+   "era": "康熙年间",
+   "title": "闽客分垦",
+   "kind": "建置",
+   "text": "漳泉与嘉应惠州移民分垦南北，筑陂塘",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_kekuan_llm_03",
+   "subject": "event:ev_taiwan_kekuan_llm_03",
+   "year": 1722,
+   "era": "康熙六十一年",
+   "title": "土牛沟划界",
+   "kind": "行政",
+   "text": "设置土牛沟界，界内渐成汉庄",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

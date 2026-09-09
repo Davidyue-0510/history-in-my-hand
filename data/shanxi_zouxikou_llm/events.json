@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_zouxikou_llm_01",
+   "subject": "event:ev_shanxi_zouxikou_llm_01",
+   "year": 1700,
+   "era": "清—民国",
+   "title": "走西口移民潮",
+   "kind": "其他",
+   "text": "晋北贫民出杀虎口赴口外垦荒",
+   "_source_idx": 0,
+   "_source_name": "绥远通志稿·户口 / 河曲县志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_zouxikou_llm_02",
+   "subject": "event:ev_shanxi_zouxikou_llm_02",
+   "year": 1750,
+   "era": "清—民国",
+   "title": "土默川垦殖",
+   "kind": "行政",
+   "text": "招民垦种晋人占十之七八",
+   "_source_idx": 0,
+   "_source_name": "绥远通志稿·户口 / 河曲县志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

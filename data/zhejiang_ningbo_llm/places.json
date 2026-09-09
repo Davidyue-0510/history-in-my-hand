@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "type": "city",
+      "modern": "今中国上海市",
+      "note": "宁波帮活动中心",
+      "_source_idx": 0,
+      "_source_name": "鄞县通志·商业 / 宁波帮研究",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "ningbo",
+      "name": "宁波",
+      "type": "city",
+      "modern": "今中国浙江省宁波市",
+      "note": "宁波帮发源地",
+      "_source_idx": 0,
+      "_source_name": "鄞县通志·商业 / 宁波帮研究",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhenhai",
+      "name": "镇海",
+      "type": "region",
+      "modern": "今中国浙江省宁波市镇海区",
+      "note": "方氏籍贯",
+      "_source_idx": 0,
+      "_source_name": "鄞县通志·商业 / 宁波帮研究",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xiaogang",
+      "name": "小港",
+      "type": "region",
+      "modern": "今中国浙江省宁波市北仑区小港街道",
+      "note": "李氏籍贯",
+      "_source_idx": 0,
+      "_source_name": "鄞县通志·商业 / 宁波帮研究",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "cixi",
+      "name": "慈溪",
+      "type": "region",
+      "modern": "今中国浙江省宁波市慈溪市",
+      "note": "秦氏籍贯",
+      "_source_idx": 0,
+      "_source_name": "鄞县通志·商业 / 宁波帮研究",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

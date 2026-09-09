@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "yongkang",
+      "name": "永康",
+      "type": "city",
+      "modern": "今浙江永康",
+      "note": "陈亮故里",
+      "_source_idx": 0,
+      "_source_name": "龙川文集 / 水心文集",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yongjia",
+      "name": "永嘉",
+      "type": "city",
+      "modern": "今浙江温州",
+      "note": "叶适故里",
+      "_source_idx": 0,
+      "_source_name": "龙川文集 / 水心文集",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

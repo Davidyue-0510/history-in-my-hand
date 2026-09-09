@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "suzhou",
+      "name": "苏州",
+      "type": "city",
+      "modern": "今中国江苏省苏州市",
+      "note": "郡城之东皆习机业",
+      "_source_idx": 0,
+      "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "changmen",
+      "name": "阊门",
+      "type": "city",
+      "modern": "今苏州阊门",
+      "note": "机户出资之地",
+      "_source_idx": 0,
+      "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xuanmiaoguan",
+      "name": "玄妙观",
+      "type": "fortress",
+      "modern": "今苏州玄妙观",
+      "note": "织工聚集罢工之处",
+      "_source_idx": 0,
+      "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

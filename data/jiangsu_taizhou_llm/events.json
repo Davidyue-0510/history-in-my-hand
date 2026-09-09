@@ -1,0 +1,16 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangsu_taizhou_llm_01",
+   "subject": "event:ev_jiangsu_taizhou_llm_01",
+   "year": {
+    "era_text": "正德十六年",
+    "start": "1521"
+   },
+   "era": "ming",
+   "title": "泰州学派·王艮与平民儒学（明）",
+   "kind": "沿革",
+   "text": "泰州学派·王艮与平民儒学（明）。"
+  }
+ ]
+}

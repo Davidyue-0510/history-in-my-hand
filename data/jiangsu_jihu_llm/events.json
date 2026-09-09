@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangsu_jihu_llm_01",
+   "subject": "event:ev_jiangsu_jihu_llm_01",
+   "year": 1601,
+   "era": "明万历二十九年",
+   "title": "苏州织工罢工",
+   "kind": "其他",
+   "text": "织工聚玄妙观前齐行叫歇",
+   "_source_idx": 0,
+   "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

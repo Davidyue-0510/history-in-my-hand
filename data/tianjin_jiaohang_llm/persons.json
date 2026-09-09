@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TIA__p01",
+   "name": "脚行头目",
+   "role": "码头搬运把头",
+   "note": "把持码头搬运，按段分疆",
+   "_source_idx": 0,
+   "_source_name": "天津志·风俗 / 北洋公牍",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TIA__p02",
+   "name": "扛大个者",
+   "role": "码头苦力",
+   "note": "终岁胼胝，所得仅足糊口",
+   "_source_idx": 0,
+   "_source_name": "天津志·风俗 / 北洋公牍",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

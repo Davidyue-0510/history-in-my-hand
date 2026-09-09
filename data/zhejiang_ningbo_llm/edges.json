@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "ningbo",
+   "to": "shanghai",
+   "type": "military",
+   "label": "宁波帮迁徙路线",
+   "_source_idx": 0,
+   "_source_name": "鄞县通志·商业 / 宁波帮研究",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

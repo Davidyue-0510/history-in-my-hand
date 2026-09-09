@@ -1,0 +1,102 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "zhejiang_yongjia_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1174,
+  1182
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1177,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.45 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.446,
+    "cum": -0.154
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1178,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.43 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.625,
+    "new_to": 0.432,
+    "cum": -0.193
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1179,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.42 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.419,
+    "cum": -0.231
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1180,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.41 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.675,
+    "new_to": 0.405,
+    "cum": -0.27
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1181,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.39 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.391,
+    "cum": -0.309
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1182,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.38 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.378,
+    "cum": -0.347
+   },
+   "place_id": "yongkang"
+  },
+  {
+   "kind": "summary",
+   "year": 1182,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.38 / 史实 0.72（偏离 -0.35）",
+   "evidence": {
+    "cum": -0.347,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yongkang"
+  }
+ ]
+}

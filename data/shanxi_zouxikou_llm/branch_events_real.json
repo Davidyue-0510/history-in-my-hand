@@ -1,0 +1,258 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "shanxi_zouxikou_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1604,
+  1684
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1612,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.62 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.618,
+    "cum": -0.152
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1613,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.63 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.631,
+    "cum": -0.169
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1614,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.64 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.644,
+    "cum": -0.186
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1615,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.66 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.657,
+    "cum": -0.203
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1616,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.67 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.67,
+    "cum": -0.22
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1617,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.68 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.683,
+    "cum": -0.237
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1618,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.70 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.696,
+    "cum": -0.254
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1619,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.71 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.709,
+    "cum": -0.271
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1620,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.72 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.722,
+    "cum": -0.278
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1621,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.74 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.735,
+    "cum": -0.265
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1622,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.748,
+    "cum": -0.252
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1623,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.761,
+    "cum": -0.239
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1624,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.774,
+    "cum": -0.226
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1625,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.787,
+    "cum": -0.213
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1626,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.8,
+    "cum": -0.2
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1627,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.813,
+    "cum": -0.187
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1628,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.826,
+    "cum": -0.174
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1629,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.84,
+    "cum": -0.16
+   },
+   "place_id": "shahukou"
+  },
+  {
+   "kind": "summary",
+   "year": 1684,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "shahukou"
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "jiangsu_jihu_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1561,
+  1641
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1570,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.644,
+    "cum": -0.156
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1571,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.66 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.659,
+    "cum": -0.171
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1572,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.67 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.673,
+    "cum": -0.187
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1573,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.69 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.688,
+    "cum": -0.202
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1574,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.70 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.702,
+    "cum": -0.218
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1575,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.72 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.716,
+    "cum": -0.234
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1576,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.73 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.731,
+    "cum": -0.249
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1577,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.745,
+    "cum": -0.255
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1578,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.76,
+    "cum": -0.24
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1579,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.774,
+    "cum": -0.226
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1580,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.789,
+    "cum": -0.211
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1581,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.803,
+    "cum": -0.197
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1582,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.818,
+    "cum": -0.182
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1583,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.832,
+    "cum": -0.168
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1584,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.846,
+    "cum": -0.154
+   },
+   "place_id": "xuanmiaoguan"
+  },
+  {
+   "kind": "summary",
+   "year": 1641,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xuanmiaoguan"
+  }
+ ]
+}

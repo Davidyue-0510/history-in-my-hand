@@ -1,0 +1,64 @@
+{
+ "persons": [
+  {
+   "id": "TAI__p01",
+   "name": "漳泉之民",
+   "role": "闽南移民群体",
+   "note": "渡海拓垦之主要汉人群体",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p02",
+   "name": "嘉应惠州之民",
+   "role": "客家移民群体",
+   "note": "与闽南人分垦南北",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p03",
+   "name": "垦首",
+   "role": "土地开发首领",
+   "note": "负责招佃开垦",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p04",
+   "name": "佃户",
+   "role": "租地耕作者",
+   "note": "向垦首租地纳租",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p05",
+   "name": "隘丁",
+   "role": "防番守隘之人",
+   "note": "守护垦区边界",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p06",
+   "name": "平埔番社",
+   "role": "原住民社群",
+   "note": "与汉人通市通婚",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

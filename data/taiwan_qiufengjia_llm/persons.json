@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TAI__p01",
+   "name": "丘逢甲",
+   "role": "台湾民主国义军统领",
+   "note": "苗栗人，乙未割台时倡建民主国抗日",
+   "_source_idx": 0,
+   "_source_name": "岭云海日楼诗钞 / 台湾通史·丘逢甲传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p02",
+   "name": "黄遵宪",
+   "role": "诗人、外交官",
+   "note": "诗界革命倡导者，与丘逢甲呼应",
+   "_source_idx": 0,
+   "_source_name": "岭云海日楼诗钞 / 台湾通史·丘逢甲传",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

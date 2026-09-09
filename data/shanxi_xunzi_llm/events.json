@@ -1,0 +1,16 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_xunzi_llm_01",
+   "subject": "event:ev_shanxi_xunzi_llm_01",
+   "year": {
+    "era_text": "战国",
+    "start": "-300"
+   },
+   "era": "warring_states",
+   "title": "荀子·赵地与性恶论（战国）",
+   "kind": "沿革",
+   "text": "荀子·赵地与性恶论（战国）。"
+  }
+ ]
+}

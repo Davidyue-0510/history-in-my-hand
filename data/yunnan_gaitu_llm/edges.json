@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "yunnan",
+   "to": "nujiang",
+   "type": "military",
+   "label": "清军征抚怒江诸甸",
+   "_source_idx": 0,
+   "_source_name": "清史稿·土司传 / 云南通志·边防",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "yunnan",
+   "to": "lancangjiang",
+   "type": "military",
+   "label": "清军征抚澜沧江诸甸",
+   "_source_idx": 0,
+   "_source_name": "清史稿·土司传 / 云南通志·边防",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

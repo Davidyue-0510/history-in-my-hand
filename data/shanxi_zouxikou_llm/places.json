@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "shahukou",
+      "name": "杀虎口",
+      "type": "fortress",
+      "modern": "今中国山西右玉",
+      "note": "走西口主要通道",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guihua",
+      "name": "归化",
+      "type": "city",
+      "modern": "今中国内蒙古呼和浩特",
+      "note": "走西口目的地",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tumochuan",
+      "name": "土默川",
+      "type": "region",
+      "modern": "今中国内蒙古土默特",
+      "note": "晋人垦种集中地",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baotou",
+      "name": "包头",
+      "type": "city",
+      "modern": "今中国内蒙古包头",
+      "note": "晋商营商地",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hetao",
+      "name": "河套",
+      "type": "region",
+      "modern": "今中国内蒙古河套",
+      "note": "垦荒区域",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhangjiakou",
+      "name": "张家口",
+      "type": "fortress",
+      "modern": "今中国河北张家口",
+      "note": "另一出塞通道",
+      "_source_idx": 0,
+      "_source_name": "绥远通志稿·户口 / 河曲县志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.88,
+      "lat": 40.82,
+      "geo_note": "平津战役西线"
+    }
+  ]
+}

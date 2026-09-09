@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_zhejiang_ningbo_llm_01",
+   "subject": "event:ev_zhejiang_ningbo_llm_01",
+   "year": 1843,
+   "era": "道光二十三年",
+   "title": "上海开埠",
+   "kind": "其他",
+   "text": "上海开埠，宁波帮势力扩展",
+   "_source_idx": 0,
+   "_source_name": "鄞县通志·商业 / 宁波帮研究",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_zhejiang_ningbo_llm_02",
+   "subject": "event:ev_zhejiang_ningbo_llm_02",
+   "year": 1898,
+   "era": "光绪二十四年",
+   "title": "四明公所事件",
+   "kind": "其他",
+   "text": "四明公所维护同乡利益",
+   "_source_idx": 0,
+   "_source_name": "鄞县通志·商业 / 宁波帮研究",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

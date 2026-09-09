@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "ZHE__p01",
+   "name": "陈亮",
+   "role": "永康学派创始人",
+   "note": "倡事功之学，与朱熹辩王霸义利",
+   "_source_idx": 0,
+   "_source_name": "龙川文集 / 水心文集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHE__p02",
+   "name": "叶适",
+   "role": "永嘉学派集大成者",
+   "note": "主事功，讲求实利",
+   "_source_idx": 0,
+   "_source_name": "龙川文集 / 水心文集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ZHE__p03",
+   "name": "朱熹",
+   "role": "理学家",
+   "note": "与陈亮辩王霸义利",
+   "_source_idx": 0,
+   "_source_name": "龙川文集 / 水心文集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

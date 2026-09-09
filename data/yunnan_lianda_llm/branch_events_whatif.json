@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "yunnan_lianda_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1937,
+  1946
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.42 / 史实 0.57）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.575,
+    "new_to": 0.425,
+    "cum": -0.15
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.40 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.4,
+    "cum": -0.2
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.37 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.625,
+    "new_to": 0.375,
+    "cum": -0.25
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1942,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.35 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.35,
+    "cum": -0.3
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1943,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.35（本支 0.32 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.675,
+    "new_to": 0.325,
+    "cum": -0.35
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1944,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.30 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.3,
+    "cum": -0.4
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1945,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.45（本支 0.27 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.275,
+    "cum": -0.45
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "divergence",
+   "year": 1946,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.25 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.75,
+    "new_to": 0.25,
+    "cum": -0.5
+   },
+   "place_id": "kunming"
+  },
+  {
+   "kind": "summary",
+   "year": 1946,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.25 / 史实 0.75（偏离 -0.50）",
+   "evidence": {
+    "cum": -0.5,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "kunming"
+  }
+ ]
+}

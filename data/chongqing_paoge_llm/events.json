@@ -1,0 +1,16 @@
+{
+ "events": [
+  {
+   "id": "ev_chongqing_paoge_llm_01",
+   "subject": "event:ev_chongqing_paoge_llm_01",
+   "year": {
+    "era_text": "清—民国",
+    "start": "1644"
+   },
+   "era": "qing_modern",
+   "title": "重庆袍哥与哥老会江湖社会（清—民国）",
+   "kind": "沿革",
+   "text": "重庆袍哥与哥老会江湖社会（清—民国）。"
+  }
+ ]
+}

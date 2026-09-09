@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_jiaohang_llm_01",
+   "subject": "event:ev_tianjin_jiaohang_llm_01",
+   "year": 1900,
+   "era": "清末民初",
+   "title": "脚行把持码头",
+   "kind": "其他",
+   "text": "脚行按段分疆，子孙世业",
+   "_source_idx": 0,
+   "_source_name": "天津志·风俗 / 北洋公牍",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_jiaohang_llm_02",
+   "subject": "event:ev_tianjin_jiaohang_llm_02",
+   "year": 1900,
+   "era": "清末民初",
+   "title": "苦力聚落形成",
+   "kind": "其他",
+   "text": "苦力聚大胡同、堤头、郭庄子",
+   "_source_idx": 0,
+   "_source_name": "天津志·风俗 / 北洋公牍",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

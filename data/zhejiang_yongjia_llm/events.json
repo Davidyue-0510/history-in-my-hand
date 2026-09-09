@@ -1,0 +1,16 @@
+{
+ "events": [
+  {
+   "id": "ev_zhejiang_yongjia_llm_01",
+   "subject": "event:ev_zhejiang_yongjia_llm_01",
+   "year": {
+    "era_text": "淳熙年间",
+    "start": "1174"
+   },
+   "era": "song",
+   "title": "永嘉事功学派·陈亮叶适（宋）",
+   "kind": "沿革",
+   "text": "永嘉事功学派·陈亮叶适（宋）。"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "type": "city",
+      "modern": "今中国重庆市",
+      "note": "邹容籍贯",
+      "_source_idx": 0,
+      "_source_name": "革命军·自序 / 邹容集",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baxian",
+      "name": "巴县",
+      "type": "city",
+      "modern": "今中国重庆市巴南区",
+      "note": "邹容出生地",
+      "_source_idx": 0,
+      "_source_name": "革命军·自序 / 邹容集",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

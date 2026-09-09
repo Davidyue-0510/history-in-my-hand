@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "XIZ__p01",
+   "name": "差巴",
+   "role": "支差户",
+   "note": "领种差地，负担劳役",
+   "_source_idx": 0,
+   "_source_name": "卫藏通志·赋役 / 西藏社会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p02",
+   "name": "堆穷",
+   "role": "小户",
+   "note": "依附庄园，地位较低",
+   "_source_idx": 0,
+   "_source_name": "卫藏通志·赋役 / 西藏社会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p03",
+   "name": "朗生",
+   "role": "家奴",
+   "note": "无自由，世代为奴",
+   "_source_idx": 0,
+   "_source_name": "卫藏通志·赋役 / 西藏社会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

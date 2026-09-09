@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "袍哥大爷",
+   "role": "公口首领",
+   "note": "重庆袍哥组织头目",
+   "_source_idx": 0,
+   "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p02",
+   "name": "绅粮",
+   "role": "地方士绅",
+   "note": "参与袍哥的士绅",
+   "_source_idx": 0,
+   "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p03",
+   "name": "商贾",
+   "role": "商人",
+   "note": "参与袍哥的商人",
+   "_source_idx": 0,
+   "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p04",
+   "name": "苦力",
+   "role": "劳工",
+   "note": "参与袍哥的苦力",
+   "_source_idx": 0,
+   "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "CHO__p05",
+   "name": "兵弁",
+   "role": "士兵",
+   "note": "参与袍哥的士兵",
+   "_source_idx": 0,
+   "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "王艮",
+   "role": "泰州学派创始人",
+   "note": "泰州安丰场灶户出身，师事王阳明",
+   "_source_idx": 0,
+   "_source_name": "明儒学案·泰州学案 / 王心斋全集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "王阳明",
+   "role": "明代思想家",
+   "note": "王艮之师，心学集大成者",
+   "_source_idx": 0,
+   "_source_name": "明儒学案·泰州学案 / 王心斋全集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p03",
+   "name": "李贽",
+   "role": "晚明思想家",
+   "note": "受泰州学派影响，倡狂禅",
+   "_source_idx": 0,
+   "_source_name": "明儒学案·泰州学案 / 王心斋全集",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

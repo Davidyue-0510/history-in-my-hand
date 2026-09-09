@@ -1,11 +1,13 @@
 {
-  "scenes_total": 380,
-  "historical": 371,
+  "scenes_total": 400,
+  "historical": 391,
   "fictional": 9,
-  "assertions_total": 5671,
-  "sources_total": 357,
+  "assertions_total": 5940,
+  "sources_total": 377,
   "factions_total": 9,
   "vocab_packs": [
+    "anhui_daizhen_llm",
+    "anhui_huizhou_llm",
     "anxi_sizhen_llm",
     "aomen_aomen",
     "aomen_fortress_llm",
@@ -15,6 +17,8 @@
     "aomen_mage_llm",
     "aomen_portugal_llm",
     "aomen_stpaul_llm",
+    "beijing_banner_llm",
+    "beijing_qianjia_llm",
     "bisheng_movable_type",
     "bohai_kingdom_llm",
     "chama_xizang_llm",
@@ -26,7 +30,9 @@
     "chongqing_dazu_llm",
     "chongqing_diaoyucheng",
     "chongqing_diaoyucheng_llm",
+    "chongqing_paoge_llm",
     "chongqing_peidu_llm",
+    "chongqing_zourong_llm",
     "chu_han",
     "chuhai_llm",
     "dagukou_battle_llm",
@@ -95,6 +101,8 @@
     "hunan_wenxi_fire_llm",
     "hunan_xiangjun_llm",
     "hunan_yuelu",
+    "jiangsu_jihu_llm",
+    "jiangsu_taizhou_llm",
     "jiangxi_bailudong",
     "jiangxi_ganjiang_llm",
     "jiangxi_jingdezhen",
@@ -162,8 +170,10 @@
     "shanxi_jinshang_llm",
     "shanxi_pingyao_llm",
     "shanxi_sanjiafenjin",
+    "shanxi_xunzi_llm",
     "shanxi_yuncheng_llm",
     "shanxi_yungang",
+    "shanxi_zouxikou_llm",
     "shen_baozhen_taiwan_llm",
     "shu_han_found_llm",
     "sichuan_bashu_bronze_llm",
@@ -185,6 +195,8 @@
     "susong_llm",
     "taiwan_camphor_llm",
     "taiwan_dutch_llm",
+    "taiwan_kekuan_llm",
+    "taiwan_qiufengjia_llm",
     "taiwan_shilang_llm",
     "taiwan_wushe_llm",
     "taiwan_zhengchenggong",
@@ -198,10 +210,12 @@
     "three_campaigns",
     "tianjin_concession_llm",
     "tianjin_jiaoan_llm",
+    "tianjin_jiaohang_llm",
     "tianjin_jiqiju_llm",
     "tianjin_kaibu_llm",
     "tianjin_railway_llm",
     "tianjin_tianjinwei",
+    "tianjin_yanfu_llm",
     "wangmang_reform_llm",
     "wangyangming",
     "warring_states_shangyang",
@@ -227,6 +241,8 @@
     "xizang_pagoda_llm",
     "xizang_tubo_llm",
     "xizang_wencheng",
+    "xizang_xika_llm",
+    "xizang_zongkaba_llm",
     "yangwu_llm",
     "yuan_shangdu_llm",
     "yuan_xingsheng_llm",
@@ -235,17 +251,21 @@
     "yunnan_dali_llm",
     "yunnan_dianmian",
     "yunnan_duwenxiu_llm",
+    "yunnan_gaitu_llm",
+    "yunnan_lianda_llm",
     "yunnan_nanzhao_llm",
     "yunnan_quhuanzhang_llm",
     "zhejiang_linan",
     "zhejiang_linan_llm",
     "zhejiang_longquan",
+    "zhejiang_ningbo_llm",
+    "zhejiang_yongjia_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi",
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 509,
+  "leads_total": 529,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2957,6 +2977,146 @@
       "kind": "tech",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "anhui_daizhen_llm",
+      "title": "戴震·皖派朴学与理欲之辨（清）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "anhui_huizhou_llm",
+      "title": "徽州宗族与祠堂族长社会（明清）",
+      "kind": "social",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "beijing_banner_llm",
+      "title": "旗民分城与北京内城外城社会（清）",
+      "kind": "social",
+      "assertions": 8,
+      "factions": {}
+    },
+    {
+      "id": "beijing_qianjia_llm",
+      "title": "乾嘉考据学与四库全书馆（清）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "chongqing_paoge_llm",
+      "title": "重庆袍哥与哥老会江湖社会（清—民国）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "chongqing_zourong_llm",
+      "title": "邹容《革命军》与排满革命思想（清—民国）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jiangsu_jihu_llm",
+      "title": "江南机户出资与织工社会（明清）",
+      "kind": "social",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jiangsu_taizhou_llm",
+      "title": "泰州学派·王艮与平民儒学（明）",
+      "kind": "thought",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "shanxi_xunzi_llm",
+      "title": "荀子·赵地与性恶论（战国）",
+      "kind": "thought",
+      "assertions": 10,
+      "factions": {}
+    },
+    {
+      "id": "shanxi_zouxikou_llm",
+      "title": "走西口与口外移民垦殖（清—民国）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "taiwan_kekuan_llm",
+      "title": "闽客拓垦与汉番共生社会（清）",
+      "kind": "social",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "taiwan_qiufengjia_llm",
+      "title": "丘逢甲·乙未割台与诗界革命（清—民国）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_jiaohang_llm",
+      "title": "天津脚行与码头苦力社会（清末民初）",
+      "kind": "social",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_yanfu_llm",
+      "title": "严复《天演论》与近代启蒙（清—民国）",
+      "kind": "thought",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "xizang_xika_llm",
+      "title": "谿卡庄园与西藏农奴社会（清—民国）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "xizang_zongkaba_llm",
+      "title": "宗喀巴·格鲁派宗教改革（明）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_gaitu_llm",
+      "title": "改土归流与云南边疆土司社会（清）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "yunnan_lianda_llm",
+      "title": "西南联大与战时自由主义学术（1937—1946）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "zhejiang_ningbo_llm",
+      "title": "宁波帮与近代金融商帮社会（清—民国）",
+      "kind": "social",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "zhejiang_yongjia_llm",
+      "title": "永嘉事功学派·陈亮叶适（宋）",
+      "kind": "thought",
+      "assertions": 16,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3339,6 +3499,26 @@
     "xianggang_tram_llm": "山顶缆车与电车（1888—1904）",
     "xianggang_university_llm": "香港大学创立（1911）",
     "xizang_amban_llm": "清朝驻藏大臣与金瓶掣签（清）",
-    "xizang_pagoda_llm": "桑耶寺与藏传佛教前弘期（唐）"
+    "xizang_pagoda_llm": "桑耶寺与藏传佛教前弘期（唐）",
+    "anhui_daizhen_llm": "戴震·皖派朴学与理欲之辨（清）",
+    "anhui_huizhou_llm": "徽州宗族与祠堂族长社会（明清）",
+    "beijing_banner_llm": "旗民分城与北京内城外城社会（清）",
+    "beijing_qianjia_llm": "乾嘉考据学与四库全书馆（清）",
+    "chongqing_paoge_llm": "重庆袍哥与哥老会江湖社会（清—民国）",
+    "chongqing_zourong_llm": "邹容《革命军》与排满革命思想（清—民国）",
+    "jiangsu_jihu_llm": "江南机户出资与织工社会（明清）",
+    "jiangsu_taizhou_llm": "泰州学派·王艮与平民儒学（明）",
+    "shanxi_xunzi_llm": "荀子·赵地与性恶论（战国）",
+    "shanxi_zouxikou_llm": "走西口与口外移民垦殖（清—民国）",
+    "taiwan_kekuan_llm": "闽客拓垦与汉番共生社会（清）",
+    "taiwan_qiufengjia_llm": "丘逢甲·乙未割台与诗界革命（清—民国）",
+    "tianjin_jiaohang_llm": "天津脚行与码头苦力社会（清末民初）",
+    "tianjin_yanfu_llm": "严复《天演论》与近代启蒙（清—民国）",
+    "xizang_xika_llm": "谿卡庄园与西藏农奴社会（清—民国）",
+    "xizang_zongkaba_llm": "宗喀巴·格鲁派宗教改革（明）",
+    "yunnan_gaitu_llm": "改土归流与云南边疆土司社会（清）",
+    "yunnan_lianda_llm": "西南联大与战时自由主义学术（1937—1946）",
+    "zhejiang_ningbo_llm": "宁波帮与近代金融商帮社会（清—民国）",
+    "zhejiang_yongjia_llm": "永嘉事功学派·陈亮叶适（宋）"
   }
 }

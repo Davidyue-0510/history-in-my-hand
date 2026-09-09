@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "机户",
+   "role": "雇主",
+   "note": "出资开设机房者",
+   "_source_idx": 0,
+   "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "机工",
+   "role": "织工",
+   "note": "受雇于机户，计日受值",
+   "_source_idx": 0,
+   "_source_name": "苏州府志·风俗 / 织工对（蒋以化）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

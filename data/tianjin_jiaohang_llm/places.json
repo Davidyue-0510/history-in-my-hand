@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "中国天津市",
+      "note": "襟河海之冲",
+      "_source_idx": 0,
+      "_source_name": "天津志·风俗 / 北洋公牍",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    },
+    {
+      "id": "dahutong",
+      "name": "大胡同",
+      "type": "region",
+      "modern": "中国天津市红桥区",
+      "note": "苦力聚居地",
+      "_source_idx": 0,
+      "_source_name": "天津志·风俗 / 北洋公牍",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "ditou",
+      "name": "堤头",
+      "type": "region",
+      "modern": "中国天津市河北区",
+      "note": "苦力聚居地",
+      "_source_idx": 0,
+      "_source_name": "天津志·风俗 / 北洋公牍",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guozhuangzi",
+      "name": "郭庄子",
+      "type": "region",
+      "modern": "中国天津市河东区",
+      "note": "苦力聚居地",
+      "_source_idx": 0,
+      "_source_name": "天津志·风俗 / 北洋公牍",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

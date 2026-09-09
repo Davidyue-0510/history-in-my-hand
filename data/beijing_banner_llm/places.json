@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "beijing_inner_city",
+      "name": "内城",
+      "type": "region",
+      "modern": "今北京东城、西城",
+      "note": "八旗居处",
+      "_source_idx": 0,
+      "_source_name": "清会典·都城建置 / 八旗通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "beijing_outer_city",
+      "name": "外城",
+      "type": "region",
+      "modern": "今北京南城",
+      "note": "汉官商民聚居",
+      "_source_idx": 0,
+      "_source_name": "清会典·都城建置 / 八旗通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

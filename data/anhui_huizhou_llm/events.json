@@ -1,0 +1,16 @@
+{
+ "events": [
+  {
+   "id": "ev_anhui_huizhou_llm_01",
+   "subject": "event:ev_anhui_huizhou_llm_01",
+   "year": {
+    "era_text": "明清",
+    "start": "1368"
+   },
+   "era": "ming_qing",
+   "title": "徽州宗族与祠堂族长社会（明清）",
+   "kind": "沿革",
+   "text": "徽州宗族与祠堂族长社会（明清）。"
+  }
+ ]
+}

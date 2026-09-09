@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_yunnan_lianda_llm_01",
+   "subject": "event:ev_yunnan_lianda_llm_01",
+   "year": 1938,
+   "era": "民国二十七年",
+   "title": "西南联大成立",
+   "kind": "建置",
+   "text": "北大清华南开合组西南联大于昆明",
+   "_source_idx": 0,
+   "_source_name": "国立西南联合大学纪念碑 / 联大校史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yunnan_lianda_llm_02",
+   "subject": "event:ev_yunnan_lianda_llm_02",
+   "year": 1946,
+   "era": "民国三十五年",
+   "title": "西南联大结束",
+   "kind": "其他",
+   "text": "抗战胜利后三校复员北返",
+   "_source_idx": 0,
+   "_source_name": "国立西南联合大学纪念碑 / 联大校史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

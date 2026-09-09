@@ -1,0 +1,44 @@
+{
+ "edges": [
+  {
+   "from": "zhangzhou",
+   "to": "taiwan",
+   "type": "military",
+   "label": "闽南移民渡海路线",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "quanzhou",
+   "to": "taiwan",
+   "type": "military",
+   "label": "闽南移民渡海路线",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "jiaying",
+   "to": "taiwan",
+   "type": "military",
+   "label": "客家移民渡海路线",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "huizhou",
+   "to": "taiwan",
+   "type": "military",
+   "label": "客家移民渡海路线",
+   "_source_idx": 0,
+   "_source_name": "台湾通史·开辟 / 诸罗县志·风俗",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

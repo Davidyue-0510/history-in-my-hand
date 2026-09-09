@@ -9,6 +9,8 @@
       "综述考订"
     ],
     "scenes": [
+      "anhui_daizhen_llm",
+      "anhui_huizhou_llm",
       "anxi_sizhen_llm",
       "aomen_aomen",
       "aomen_fortress_llm",
@@ -20,6 +22,8 @@
       "aomen_stpaul_llm",
       "baijia",
       "beijing",
+      "beijing_banner_llm",
+      "beijing_qianjia_llm",
       "beijiu",
       "bencao",
       "biTigeGuan",
@@ -45,7 +49,9 @@
       "chongqing_dazu_llm",
       "chongqing_diaoyucheng",
       "chongqing_diaoyucheng_llm",
+      "chongqing_paoge_llm",
       "chongqing_peidu_llm",
+      "chongqing_zourong_llm",
       "chongzhen_han",
       "chongzhen_huangzai",
       "chu_han",
@@ -149,6 +155,8 @@
       "hunan_xiangjun_llm",
       "hunan_yuelu",
       "imjin",
+      "jiangsu_jihu_llm",
+      "jiangsu_taizhou_llm",
       "jiangxi_bailudong",
       "jiangxi_ganjiang_llm",
       "jiangxi_jingdezhen",
@@ -250,8 +258,10 @@
       "shanxi_jinshang_llm",
       "shanxi_pingyao_llm",
       "shanxi_sanjiafenjin",
+      "shanxi_xunzi_llm",
       "shanxi_yuncheng_llm",
       "shanxi_yungang",
+      "shanxi_zouxikou_llm",
       "shaqiu",
       "shen_baozhen_taiwan_llm",
       "shenkuo",
@@ -284,6 +294,8 @@
       "taiping",
       "taiwan_camphor_llm",
       "taiwan_dutch_llm",
+      "taiwan_kekuan_llm",
+      "taiwan_qiufengjia_llm",
       "taiwan_shilang_llm",
       "taiwan_wushe_llm",
       "taiwan_zhengchenggong",
@@ -300,10 +312,12 @@
       "three_campaigns",
       "tianjin_concession_llm",
       "tianjin_jiaoan_llm",
+      "tianjin_jiaohang_llm",
       "tianjin_jiqiju_llm",
       "tianjin_kaibu_llm",
       "tianjin_railway_llm",
       "tianjin_tianjinwei",
+      "tianjin_yanfu_llm",
       "tianjing",
       "tieling",
       "tumu",
@@ -341,6 +355,8 @@
       "xizang_pagoda_llm",
       "xizang_tubo_llm",
       "xizang_wencheng",
+      "xizang_xika_llm",
+      "xizang_zongkaba_llm",
       "xu_guangqi",
       "xuanwu",
       "xuanzang",
@@ -361,6 +377,8 @@
       "yunnan_dali_llm",
       "yunnan_dianmian",
       "yunnan_duwenxiu_llm",
+      "yunnan_gaitu_llm",
+      "yunnan_lianda_llm",
       "yunnan_nanzhao_llm",
       "yunnan_quhuanzhang_llm",
       "zhangheng",
@@ -373,6 +391,8 @@
       "zhejiang_linan",
       "zhejiang_linan_llm",
       "zhejiang_longquan",
+      "zhejiang_ningbo_llm",
+      "zhejiang_yongjia_llm",
       "zheng_chenggong_taiwan_llm",
       "zhenghe",
       "zhongli",
@@ -394,6 +414,44 @@
     }
   },
   "scene_summary": [
+    {
+      "scene": "anhui_daizhen_llm",
+      "name": "anhui_daizhen_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_anhui_daizhen_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "anhui_huizhou_llm",
+      "name": "anhui_huizhou_llm",
+      "total": 16,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 5,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 16
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_anhui_huizhou_llm_01",
+      "best_resonance": 0.0
+    },
     {
       "scene": "anxi_sizhen_llm",
       "name": "anxi_sizhen_llm",
@@ -601,6 +659,43 @@
       "event_count": 7,
       "avg_resonance": 0.0,
       "best_event": "event:bj_consequence",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "beijing_banner_llm",
+      "name": "beijing_banner_llm",
+      "total": 8,
+      "layers": {
+        "record": 6,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 8
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_beijing_banner_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "beijing_qianjia_llm",
+      "name": "beijing_qianjia_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_beijing_qianjia_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -1076,6 +1171,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "chongqing_paoge_llm",
+      "name": "chongqing_paoge_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_chongqing_paoge_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "chongqing_peidu_llm",
       "name": "chongqing_peidu_llm",
       "total": 12,
@@ -1092,6 +1206,25 @@
       "event_count": 4,
       "avg_resonance": 0.0,
       "best_event": "event:ev_chongqing_peidu_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "chongqing_zourong_llm",
+      "name": "chongqing_zourong_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_chongqing_zourong_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -3063,6 +3196,44 @@
       "best_resonance": 0.667
     },
     {
+      "scene": "jiangsu_jihu_llm",
+      "name": "jiangsu_jihu_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_jiangsu_jihu_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "jiangsu_taizhou_llm",
+      "name": "jiangsu_taizhou_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_jiangsu_taizhou_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "jiangxi_bailudong",
       "name": "jiangxi_bailudong",
       "total": 12,
@@ -5005,6 +5176,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "shanxi_xunzi_llm",
+      "name": "shanxi_xunzi_llm",
+      "total": 10,
+      "layers": {
+        "inference": 1,
+        "record": 7,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 10
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shanxi_xunzi_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "shanxi_yuncheng_llm",
       "name": "shanxi_yuncheng_llm",
       "total": 12,
@@ -5040,6 +5230,25 @@
       "event_count": 1,
       "avg_resonance": 0.0,
       "best_event": "event:ev_shanxi_yungang_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shanxi_zouxikou_llm",
+      "name": "shanxi_zouxikou_llm",
+      "total": 14,
+      "layers": {
+        "scholarship": 1,
+        "inference": 1,
+        "record": 10,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shanxi_zouxikou_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -5661,6 +5870,44 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "taiwan_kekuan_llm",
+      "name": "taiwan_kekuan_llm",
+      "total": 15,
+      "layers": {
+        "inference": 1,
+        "record": 12,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 15
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_taiwan_kekuan_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "taiwan_qiufengjia_llm",
+      "name": "taiwan_qiufengjia_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_taiwan_qiufengjia_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "taiwan_shilang_llm",
       "name": "taiwan_shilang_llm",
       "total": 14,
@@ -5970,6 +6217,25 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "tianjin_jiaohang_llm",
+      "name": "tianjin_jiaohang_llm",
+      "total": 16,
+      "layers": {
+        "scholarship": 1,
+        "inference": 1,
+        "record": 13,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 16
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_tianjin_jiaohang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "tianjin_jiqiju_llm",
       "name": "tianjin_jiqiju_llm",
       "total": 12,
@@ -6043,6 +6309,25 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:ev_tianjin_tianjinwei_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "tianjin_yanfu_llm",
+      "name": "tianjin_yanfu_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_tianjin_yanfu_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -6759,6 +7044,44 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "xizang_xika_llm",
+      "name": "xizang_xika_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 11,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_xizang_xika_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "xizang_zongkaba_llm",
+      "name": "xizang_zongkaba_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_xizang_zongkaba_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "xu_guangqi",
       "name": "xu_guangqi",
       "total": 12,
@@ -7146,6 +7469,44 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "yunnan_gaitu_llm",
+      "name": "yunnan_gaitu_llm",
+      "total": 14,
+      "layers": {
+        "record": 9,
+        "inference": 3,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_yunnan_gaitu_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "yunnan_lianda_llm",
+      "name": "yunnan_lianda_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 8,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_yunnan_lianda_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "yunnan_nanzhao_llm",
       "name": "yunnan_nanzhao_llm",
       "total": 14,
@@ -7372,6 +7733,43 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_zhejiang_longquan_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "zhejiang_ningbo_llm",
+      "name": "zhejiang_ningbo_llm",
+      "total": 17,
+      "layers": {
+        "record": 14,
+        "inference": 1,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 17
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_zhejiang_ningbo_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "zhejiang_yongjia_llm",
+      "name": "zhejiang_yongjia_llm",
+      "total": 16,
+      "layers": {
+        "scholarship": 1,
+        "inference": 1,
+        "record": 14
+      },
+      "party_counts": {
+        "后世官修": 16
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_zhejiang_yongjia_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -9824,6 +10222,68 @@
       }
     },
     {
+      "subject": "event:ev_anhui_daizhen_llm_01",
+      "name": "event:ev_anhui_daizhen_llm_01",
+      "scenes": [
+        "anhui_daizhen_llm"
+      ],
+      "scene_names": [
+        "anhui_daizhen_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_anhui_huizhou_llm_01",
+      "name": "event:ev_anhui_huizhou_llm_01",
+      "scenes": [
+        "anhui_huizhou_llm"
+      ],
+      "scene_names": [
+        "anhui_huizhou_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_anxi_sizhen_llm_01",
       "name": "event:ev_anxi_sizhen_llm_01",
       "scenes": [
@@ -10458,6 +10918,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_banner_llm_01",
+      "name": "event:ev_beijing_banner_llm_01",
+      "scenes": [
+        "beijing_banner_llm"
+      ],
+      "scene_names": [
+        "beijing_banner_llm"
+      ],
+      "total": 5,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_qianjia_llm_01",
+      "name": "event:ev_beijing_qianjia_llm_01",
+      "scenes": [
+        "beijing_qianjia_llm"
+      ],
+      "scene_names": [
+        "beijing_qianjia_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_qianjia_llm_02",
+      "name": "event:ev_beijing_qianjia_llm_02",
+      "scenes": [
+        "beijing_qianjia_llm"
+      ],
+      "scene_names": [
+        "beijing_qianjia_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -11312,6 +11865,37 @@
       }
     },
     {
+      "subject": "event:ev_chongqing_paoge_llm_01",
+      "name": "event:ev_chongqing_paoge_llm_01",
+      "scenes": [
+        "chongqing_paoge_llm"
+      ],
+      "scene_names": [
+        "chongqing_paoge_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_chongqing_peidu_llm_01",
       "name": "event:ev_chongqing_peidu_llm_01",
       "scenes": [
@@ -11419,6 +12003,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chongqing_zourong_llm_01",
+      "name": "event:ev_chongqing_zourong_llm_01",
+      "scenes": [
+        "chongqing_zourong_llm"
+      ],
+      "scene_names": [
+        "chongqing_zourong_llm"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -16923,6 +17538,68 @@
       }
     },
     {
+      "subject": "event:ev_jiangsu_jihu_llm_01",
+      "name": "event:ev_jiangsu_jihu_llm_01",
+      "scenes": [
+        "jiangsu_jihu_llm"
+      ],
+      "scene_names": [
+        "jiangsu_jihu_llm"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_jiangsu_taizhou_llm_01",
+      "name": "event:ev_jiangsu_taizhou_llm_01",
+      "scenes": [
+        "jiangsu_taizhou_llm"
+      ],
+      "scene_names": [
+        "jiangsu_taizhou_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_jiangxi_bailudong_01",
       "name": "event:ev_jiangxi_bailudong_01",
       "scenes": [
@@ -22317,6 +22994,37 @@
       }
     },
     {
+      "subject": "event:ev_shanxi_xunzi_llm_01",
+      "name": "event:ev_shanxi_xunzi_llm_01",
+      "scenes": [
+        "shanxi_xunzi_llm"
+      ],
+      "scene_names": [
+        "shanxi_xunzi_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_shanxi_yuncheng_llm_01",
       "name": "event:ev_shanxi_yuncheng_llm_01",
       "scenes": [
@@ -22455,6 +23163,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.154,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shanxi_zouxikou_llm_01",
+      "name": "event:ev_shanxi_zouxikou_llm_01",
+      "scenes": [
+        "shanxi_zouxikou_llm"
+      ],
+      "scene_names": [
+        "shanxi_zouxikou_llm"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.25,
+      "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shanxi_zouxikou_llm_02",
+      "name": "event:ev_shanxi_zouxikou_llm_02",
+      "scenes": [
+        "shanxi_zouxikou_llm"
+      ],
+      "scene_names": [
+        "shanxi_zouxikou_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -24301,6 +25071,161 @@
       }
     },
     {
+      "subject": "event:ev_taiwan_kekuan_llm_01",
+      "name": "event:ev_taiwan_kekuan_llm_01",
+      "scenes": [
+        "taiwan_kekuan_llm"
+      ],
+      "scene_names": [
+        "taiwan_kekuan_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_kekuan_llm_02",
+      "name": "event:ev_taiwan_kekuan_llm_02",
+      "scenes": [
+        "taiwan_kekuan_llm"
+      ],
+      "scene_names": [
+        "taiwan_kekuan_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_kekuan_llm_03",
+      "name": "event:ev_taiwan_kekuan_llm_03",
+      "scenes": [
+        "taiwan_kekuan_llm"
+      ],
+      "scene_names": [
+        "taiwan_kekuan_llm"
+      ],
+      "total": 9,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.111,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_qiufengjia_llm_01",
+      "name": "event:ev_taiwan_qiufengjia_llm_01",
+      "scenes": [
+        "taiwan_qiufengjia_llm"
+      ],
+      "scene_names": [
+        "taiwan_qiufengjia_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_taiwan_qiufengjia_llm_02",
+      "name": "event:ev_taiwan_qiufengjia_llm_02",
+      "scenes": [
+        "taiwan_qiufengjia_llm"
+      ],
+      "scene_names": [
+        "taiwan_qiufengjia_llm"
+      ],
+      "total": 1,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 1.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_taiwan_shilang_llm_01",
       "name": "event:ev_taiwan_shilang_llm_01",
       "scenes": [
@@ -25386,6 +26311,68 @@
       }
     },
     {
+      "subject": "event:ev_tianjin_jiaohang_llm_01",
+      "name": "event:ev_tianjin_jiaohang_llm_01",
+      "scenes": [
+        "tianjin_jiaohang_llm"
+      ],
+      "scene_names": [
+        "tianjin_jiaohang_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_tianjin_jiaohang_llm_02",
+      "name": "event:ev_tianjin_jiaohang_llm_02",
+      "scenes": [
+        "tianjin_jiaohang_llm"
+      ],
+      "scene_names": [
+        "tianjin_jiaohang_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_tianjin_jiqiju_llm_01",
       "name": "event:ev_tianjin_jiqiju_llm_01",
       "scenes": [
@@ -25679,6 +26666,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_tianjin_yanfu_llm_01",
+      "name": "event:ev_tianjin_yanfu_llm_01",
+      "scenes": [
+        "tianjin_yanfu_llm"
+      ],
+      "scene_names": [
+        "tianjin_yanfu_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_tianjin_yanfu_llm_02",
+      "name": "event:ev_tianjin_yanfu_llm_02",
+      "scenes": [
+        "tianjin_yanfu_llm"
+      ],
+      "scene_names": [
+        "tianjin_yanfu_llm"
+      ],
+      "total": 11,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.091,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -27866,6 +28915,130 @@
       }
     },
     {
+      "subject": "event:ev_xizang_xika_llm_01",
+      "name": "event:ev_xizang_xika_llm_01",
+      "scenes": [
+        "xizang_xika_llm"
+      ],
+      "scene_names": [
+        "xizang_xika_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xizang_xika_llm_02",
+      "name": "event:ev_xizang_xika_llm_02",
+      "scenes": [
+        "xizang_xika_llm"
+      ],
+      "scene_names": [
+        "xizang_xika_llm"
+      ],
+      "total": 11,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.111,
+      "gap_rate": 0.091,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xizang_zongkaba_llm_01",
+      "name": "event:ev_xizang_zongkaba_llm_01",
+      "scenes": [
+        "xizang_zongkaba_llm"
+      ],
+      "scene_names": [
+        "xizang_zongkaba_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_xizang_zongkaba_llm_02",
+      "name": "event:ev_xizang_zongkaba_llm_02",
+      "scenes": [
+        "xizang_zongkaba_llm"
+      ],
+      "scene_names": [
+        "xizang_zongkaba_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_yangwu_llm_01",
       "name": "event:ev_yangwu_llm_01",
       "scenes": [
@@ -28579,6 +29752,161 @@
       }
     },
     {
+      "subject": "event:ev_yunnan_gaitu_llm_01",
+      "name": "event:ev_yunnan_gaitu_llm_01",
+      "scenes": [
+        "yunnan_gaitu_llm"
+      ],
+      "scene_names": [
+        "yunnan_gaitu_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yunnan_gaitu_llm_02",
+      "name": "event:ev_yunnan_gaitu_llm_02",
+      "scenes": [
+        "yunnan_gaitu_llm"
+      ],
+      "scene_names": [
+        "yunnan_gaitu_llm"
+      ],
+      "total": 4,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yunnan_gaitu_llm_03",
+      "name": "event:ev_yunnan_gaitu_llm_03",
+      "scenes": [
+        "yunnan_gaitu_llm"
+      ],
+      "scene_names": [
+        "yunnan_gaitu_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yunnan_lianda_llm_01",
+      "name": "event:ev_yunnan_lianda_llm_01",
+      "scenes": [
+        "yunnan_lianda_llm"
+      ],
+      "scene_names": [
+        "yunnan_lianda_llm"
+      ],
+      "total": 8,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.167,
+      "gap_rate": 0.125,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yunnan_lianda_llm_02",
+      "name": "event:ev_yunnan_lianda_llm_02",
+      "scenes": [
+        "yunnan_lianda_llm"
+      ],
+      "scene_names": [
+        "yunnan_lianda_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_yunnan_nanzhao_llm_01",
       "name": "event:ev_yunnan_nanzhao_llm_01",
       "scenes": [
@@ -28991,6 +30319,99 @@
         "zhejiang_longquan"
       ],
       "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhejiang_ningbo_llm_01",
+      "name": "event:ev_zhejiang_ningbo_llm_01",
+      "scenes": [
+        "zhejiang_ningbo_llm"
+      ],
+      "scene_names": [
+        "zhejiang_ningbo_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhejiang_ningbo_llm_02",
+      "name": "event:ev_zhejiang_ningbo_llm_02",
+      "scenes": [
+        "zhejiang_ningbo_llm"
+      ],
+      "scene_names": [
+        "zhejiang_ningbo_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zhejiang_yongjia_llm_01",
+      "name": "event:ev_zhejiang_yongjia_llm_01",
+      "scenes": [
+        "zhejiang_yongjia_llm"
+      ],
+      "scene_names": [
+        "zhejiang_yongjia_llm"
+      ],
+      "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,

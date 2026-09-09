@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_beijing_banner_llm_01",
+   "subject": "event:ev_beijing_banner_llm_01",
+   "year": 1648,
+   "era": "顺治五年",
+   "title": "旗民分城诏",
+   "kind": "行政",
+   "text": "诏令京城汉官商民尽徙南城",
+   "_source_idx": 0,
+   "_source_name": "清会典·都城建置 / 八旗通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

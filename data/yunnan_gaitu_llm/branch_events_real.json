@@ -1,0 +1,180 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "yunnan_gaitu_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1644,
+  1730
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1651,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.796,
+    "new_to": 0.642,
+    "cum": -0.154
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1652,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.66 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.833,
+    "new_to": 0.66,
+    "cum": -0.173
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1653,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.68 / 史实 0.87）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.87,
+    "new_to": 0.678,
+    "cum": -0.192
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1654,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.70 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.907,
+    "new_to": 0.696,
+    "cum": -0.211
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1655,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.71 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.944,
+    "new_to": 0.714,
+    "cum": -0.23
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1656,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.73 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.981,
+    "new_to": 0.731,
+    "cum": -0.25
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1657,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.75 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.749,
+    "cum": -0.251
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1658,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.767,
+    "cum": -0.233
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1659,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.785,
+    "cum": -0.215
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1660,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.803,
+    "cum": -0.197
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1661,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.82,
+    "cum": -0.18
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1662,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.838,
+    "cum": -0.162
+   },
+   "place_id": "yunnan"
+  },
+  {
+   "kind": "summary",
+   "year": 1730,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yunnan"
+  }
+ ]
+}

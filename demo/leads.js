@@ -5,6 +5,37 @@ window.SANDBOX_LEADS = {
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "ANH_011",
+   "scene": "anhui_daizhen_llm",
+   "subject": "person:ANH__p01",
+   "title": "生卒年不详，约1724-1777",
+   "missing": "考证",
+   "where": "戴震生平资料",
+   "skills": [
+    "考证"
+   ],
+   "accept": "确定生卒年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "ANH_015",
+   "scene": "anhui_huizhou_llm",
+   "subject": "place:huizhou",
+   "title": "缺乏具体宗族案例",
+   "missing": "文献考证 / 田野调查",
+   "where": "徽州方志、族谱",
+   "skills": [
+    "文献考证",
+    "田野调查"
+   ],
+   "accept": "补充具体宗族案例",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "ANX_016",
    "scene": "anxi_sizhen_llm",
    "subject": "event:ev_anxi_sizhen_llm_03",
@@ -238,6 +269,38 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "BEI_008",
+   "scene": "beijing_banner_llm",
+   "subject": "event:ev_beijing_banner_llm_01",
+   "title": "具体迁移时限未详",
+   "missing": "档案检索 / 地方志研究",
+   "where": "清初档案或地方志",
+   "skills": [
+    "档案检索",
+    "地方志研究"
+   ],
+   "accept": "补充迁移具体规定",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "BEI_013",
+   "scene": "beijing_qianjia_llm",
+   "subject": "event:ev_beijing_qianjia_llm_02",
+   "title": "卷数未详",
+   "missing": "目录学 / 版本学",
+   "where": "四库全书总目",
+   "skills": [
+    "目录学",
+    "版本学"
+   ],
+   "accept": "查考四库全书总目以补卷数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "BEIJIUG01",
@@ -717,6 +780,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 17
   },
   {
+   "id": "CHO_013",
+   "scene": "chongqing_paoge_llm",
+   "subject": "place:chongqing",
+   "title": "袍哥起源时间不详",
+   "missing": "历史学 / 档案学",
+   "where": "重庆地方档案",
+   "skills": [
+    "历史学",
+    "档案学"
+   ],
+   "accept": "袍哥起源时间",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "CHO_011",
    "scene": "chongqing_peidu_llm",
    "subject": "event:ev_chongqing_peidu_llm_03",
@@ -746,6 +825,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "CHO_013",
+   "scene": "chongqing_zourong_llm",
+   "subject": "event:ev_chongqing_zourong_llm_01",
+   "title": "具体出版地不详",
+   "missing": "版本学 / 近代出版史",
+   "where": "上海或日本",
+   "skills": [
+    "版本学",
+    "近代出版史"
+   ],
+   "accept": "考证初版地点",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "chongzhen_han_07",
@@ -2960,6 +3055,37 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 17
+  },
+  {
+   "id": "JIA_011",
+   "scene": "jiangsu_jihu_llm",
+   "subject": "event:ev_jiangsu_jihu_llm_01",
+   "title": "结果未详",
+   "missing": "史料检索 / 考据",
+   "where": "苏州府志或明实录",
+   "skills": [
+    "史料检索",
+    "考据"
+   ],
+   "accept": "罢工是否达成增价",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "JIA_012",
+   "scene": "jiangsu_taizhou_llm",
+   "subject": "person:JIA__p01",
+   "title": "泰州学派与阳明心学关系待考",
+   "missing": "思想史分析",
+   "where": "泰州学派文献",
+   "skills": [
+    "思想史分析"
+   ],
+   "accept": "明确师承关系",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "JIA_012",
@@ -5267,6 +5393,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "SHA_009",
+   "scene": "shanxi_xunzi_llm",
+   "subject": "person:SHA__p01",
+   "title": "赵地具体位置有争议",
+   "missing": "历史地理 / 考古学",
+   "where": "山西南部考古与文献",
+   "skills": [
+    "历史地理",
+    "考古学"
+   ],
+   "accept": "确认荀况具体出生地",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
    "id": "SHA_012",
    "scene": "shanxi_yuncheng_llm",
    "subject": "event:ev_shanxi_yuncheng_llm_04",
@@ -5312,6 +5454,37 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "SHA_010",
+   "scene": "shanxi_zouxikou_llm",
+   "subject": "event:ev_shanxi_zouxikou_llm_01",
+   "title": "规模未详待考",
+   "missing": "量化分析 / 档案比对",
+   "where": "地方志及口外户籍档",
+   "skills": [
+    "量化分析",
+    "档案比对"
+   ],
+   "accept": "估算移民总数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "SHA_013",
+   "scene": "shanxi_zouxikou_llm",
+   "subject": "event:ev_shanxi_zouxikou_llm_02",
+   "title": "具体时段未明",
+   "missing": "编年考订",
+   "where": "清宫垦务奏折",
+   "skills": [
+    "编年考订"
+   ],
+   "accept": "确定垦殖起止年",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "SHAQIUG01",
@@ -5929,6 +6102,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "TAI_015",
+   "scene": "taiwan_kekuan_llm",
+   "subject": "event:ev_taiwan_kekuan_llm_03",
+   "title": "番社土地流失情况不明",
+   "missing": "番社土地契约 / 汉番关系",
+   "where": "台湾中部平埔番社",
+   "skills": [
+    "番社土地契约",
+    "汉番关系"
+   ],
+   "accept": "需进一步档案研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "TAI_010",
+   "scene": "taiwan_qiufengjia_llm",
+   "subject": "event:ev_taiwan_qiufengjia_llm_02",
+   "title": "事败内渡，具体原因未详",
+   "missing": "军事史考据 / 日方档案",
+   "where": "台湾民主国覆灭过程",
+   "skills": [
+    "军事史考据",
+    "日方档案"
+   ],
+   "accept": "义军战败的具体战役与损失",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "TAI_013",
    "scene": "taiwan_shilang_llm",
    "subject": "event:ev_taiwan_shilang_llm_01",
@@ -6286,6 +6491,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "TIA_016",
+   "scene": "tianjin_jiaohang_llm",
+   "subject": "place:tianjin",
+   "title": "天津脚行苦力历代具体人数无精确统计，史料仅以『万千』概称",
+   "missing": "考证",
+   "where": "天津脚行与苦力史料（如《天津县志·行业志》）",
+   "skills": [
+    "考证"
+   ],
+   "accept": "确定脚行苦力历代规模的数量级估算",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
    "id": "TIA_009",
    "scene": "tianjin_jiqiju_llm",
    "subject": "event:ev_tianjin_jiqiju_llm_01",
@@ -6376,6 +6596,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "TIA_014",
+   "scene": "tianjin_yanfu_llm",
+   "subject": "event:ev_tianjin_yanfu_llm_02",
+   "title": "具体传播过程不详",
+   "missing": "文献考据 / 传播史",
+   "where": "天津及全国士林",
+   "skills": [
+    "文献考据",
+    "传播史"
+   ],
+   "accept": "需查证《天演论》初版发行细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "TIANJINGG01",
@@ -7163,6 +7399,38 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "XIZ_014",
+   "scene": "xizang_xika_llm",
+   "subject": "event:ev_xizang_xika_llm_02",
+   "title": "谿卡何时形成，史料未明",
+   "missing": "历史考证 / 文献分析",
+   "where": "西藏地方档案",
+   "skills": [
+    "历史考证",
+    "文献分析"
+   ],
+   "accept": "谿卡制度形成年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "XIZ_012",
+   "scene": "xizang_zongkaba_llm",
+   "subject": "person:XIZ__p01",
+   "title": "具体改革措施未详述",
+   "missing": "藏文 / 佛教史",
+   "where": "西藏佛教史",
+   "skills": [
+    "藏文",
+    "佛教史"
+   ],
+   "accept": "补充改革细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "xg11",
    "scene": "xu_guangqi",
    "subject": "thought:huitong",
@@ -7512,6 +7780,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "YUN_014",
+   "scene": "yunnan_gaitu_llm",
+   "subject": "event:ev_yunnan_gaitu_llm_01",
+   "title": "土司反抗细节记载不足",
+   "missing": "档案分析 / 地方志考据",
+   "where": "云南地方志及档案",
+   "skills": [
+    "档案分析",
+    "地方志考据"
+   ],
+   "accept": "土司反抗的具体过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "YUN_011",
+   "scene": "yunnan_lianda_llm",
+   "subject": "event:ev_yunnan_lianda_llm_01",
+   "title": "课程内容未详",
+   "missing": "历史档案学",
+   "where": "西南联大档案",
+   "skills": [
+    "历史档案学"
+   ],
+   "accept": "补充课程记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "YUN_010",
    "scene": "yunnan_nanzhao_llm",
    "subject": "event:ev_yunnan_nanzhao_llm_02",
@@ -7776,6 +8075,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "ZHE_017",
+   "scene": "zhejiang_ningbo_llm",
+   "subject": "place:ningbo",
+   "title": "宁波帮明中期以前早期成员谱系缺系统记载",
+   "missing": "考证",
+   "where": "宁波帮早期谱牒与明清方志",
+   "skills": [
+    "考证"
+   ],
+   "accept": "厘清明中期以前宁波帮成员谱系与起源",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
   },
   {
    "id": "ZHENG2",
