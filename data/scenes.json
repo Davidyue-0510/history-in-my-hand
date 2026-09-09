@@ -653,9 +653,93 @@
   "prc_shenzhou_llm",
   "prc_three_gorges_llm",
   "prc_wuhan_bridge_llm",
-  "prc_yuanlongping_llm"
+  "prc_yuanlongping_llm",
+  "langzhong"
  ],
  "scenes": {
+  "langzhong": {
+   "kind": "county",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "阆中（张飞镇巴西）",
+   "dossier_label": "阆中",
+   "subtitle": "蜀汉巴西郡治 · 张飞镇守七年 · 宕渠破张郃",
+   "primary_place": "langzhong_cheng",
+   "dossier_event": "event:ev_langzhong_02",
+   "vocab_pack": "langzhong",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "阆中为蜀汉巴西郡治，张飞镇守七年（约214—221），宕渠破张郃、保东北边郡。下方为任官、战事与遇害三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以三国志、华阳国志等后世官修为本，现代考订作学界补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_langzhong_01": "张飞镇巴西",
+    "event:ev_langzhong_02": "宕渠之战",
+    "event:ev_langzhong_03": "张飞遇害",
+    "place:langzhong_cheng": "阆中城",
+    "person:zhangfei": "张飞"
+   },
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "蜀汉以张飞领巴西太守维系东北边郡，军政合一，为边郡常制"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "阆中依嘉陵江水道与山险，补给与地形为守土之资"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "巴西郡多賨人，夷汉治理为镇守根基"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "阆中为蜀汉东北门户，北拒曹魏、连结汉中"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
   "warring_states_shangyang": {
    "kind": "reform",
    "region": "warring_states",

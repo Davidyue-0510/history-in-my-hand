@@ -212,6 +212,7 @@ window.SANDBOX_RESONANCE = {
    "kanerjing_llm",
    "keju",
    "kunyang",
+   "langzhong",
    "li_shizhen_llm",
    "liangshui",
    "liangzhou_meeting_llm",
@@ -4296,6 +4297,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ky_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "langzhong",
+   "name": "langzhong",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "西晋·私修": 6,
+    "后世官修": 5,
+    "学界": 5,
+    "宋·官修": 1
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_langzhong_01",
    "best_resonance": 0.0
   },
   {

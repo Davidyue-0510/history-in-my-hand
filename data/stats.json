@@ -1,9 +1,9 @@
 {
-  "scenes_total": 450,
-  "historical": 441,
+  "scenes_total": 451,
+  "historical": 442,
   "fictional": 9,
-  "assertions_total": 6628,
-  "sources_total": 426,
+  "assertions_total": 6645,
+  "sources_total": 428,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -142,6 +142,7 @@
     "jinshang_llm",
     "jiupin_zhongzheng_llm",
     "kanerjing_llm",
+    "langzhong",
     "li_shizhen_llm",
     "liangzhou_meeting_llm",
     "lingqu_llm",
@@ -315,7 +316,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 597,
+  "leads_total": 600,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3517,6 +3518,13 @@
       "kind": "tech",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "langzhong",
+      "title": "阆中（张飞镇巴西）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3969,6 +3977,7 @@
     "prc_shenzhou_llm": "神舟飞船与首次载人航天（1999–2003）",
     "prc_three_gorges_llm": "长江三峡工程（1994–2006·湖北）",
     "prc_wuhan_bridge_llm": "武汉长江大桥（1955–1957·湖北）",
-    "prc_yuanlongping_llm": "袁隆平与杂交水稻（1970–1973·湖南）"
+    "prc_yuanlongping_llm": "袁隆平与杂交水稻（1970–1973·湖南）",
+    "langzhong": "阆中（张飞镇巴西）"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "chengdu", "to": "langzhong_cheng", "type": "admin", "label": "刘备定益州，张飞自成都赴巴西镇阆中" },
+    { "from": "langzhong_cheng", "to": "dangqu", "type": "mil", "label": "张飞率军赴宕渠拒张郃" },
+    { "from": "dangqu", "to": "langzhong_cheng", "type": "mil", "label": "破郃后巴西遂安，张飞还镇阆中" },
+    { "from": "langzhong_cheng", "to": "jialing_river", "type": "geo", "label": "嘉陵江三面环城，为阆中形胜" },
+    { "from": "langzhong_cheng", "to": "zhangfei_miao", "type": "mem", "label": "张飞葬阆中，立汉桓侯祠" }
+  ]
+}

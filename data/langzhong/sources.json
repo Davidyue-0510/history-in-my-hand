@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "sanguozhi",
+      "title": "三国志",
+      "party": "西晋·私修",
+      "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
+      "stance_label": "西晋陈寿私修史，整合三国",
+      "compiler": "陈寿（西晋）",
+      "color": "#8E7CC3",
+      "period": "晋"
+    },
+    {
+      "id": "huayangguozhi",
+      "title": "华阳国志",
+      "party": "后世官修",
+      "distance_label": "成书东晋（常璩，约 348—354），距事约 130 年",
+      "stance_label": "东晋官修·地方志体",
+      "compiler": "常璩（东晋）撰",
+      "color": "#8C5A3C",
+      "period": "东晋"
+    },
+    {
+      "id": "zizhi_tongjian",
+      "title": "资治通鉴",
+      "party": "宋·官修",
+      "distance_label": "宋司马光撰（1084 成书），距三国八百余年",
+      "stance_label": "北宋官修编年通史",
+      "compiler": "司马光（北宋）",
+      "color": "#6C7A89",
+      "period": "宋"
+    },
+    {
+      "id": "lzhixianzhi",
+      "title": "阆中县志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距蜀汉事约 1700 年",
+      "stance_label": "地方志",
+      "compiler": "《阆中县志》（1993 年版等）",
+      "color": "#7A6A52",
+      "period": "清/民"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "三国史与历史地理综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

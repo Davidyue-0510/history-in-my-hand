@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 450 个切片
+// 权威数据源：data/scenes.json 注册的 451 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 450 个切片",
+  "slice": "multi-scene · 451 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -146,6 +146,7 @@ window.SANDBOX_DATA = {
    "jinshang_llm",
    "jiupin_zhongzheng_llm",
    "kanerjing_llm",
+   "langzhong",
    "li_shizhen_llm",
    "liangzhou_meeting_llm",
    "lingqu_llm",
@@ -1019,7 +1020,8 @@ window.SANDBOX_DATA = {
   "prc_shenzhou_llm",
   "prc_three_gorges_llm",
   "prc_wuhan_bridge_llm",
-  "prc_yuanlongping_llm"
+  "prc_yuanlongping_llm",
+  "langzhong"
  ],
  "vocab": {
   "layers": [
@@ -28327,6 +28329,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "prc",
    "scale_tier": "operational"
+  },
+  "langzhong": {
+   "key": "langzhong",
+   "title": "阆中（张飞镇巴西）",
+   "dossier_label": "阆中",
+   "subtitle": "蜀汉巴西郡治 · 张飞镇守七年 · 宕渠破张郃",
+   "kind": "county",
+   "region": "chuan_gui",
+   "page": "county.html?scene=langzhong",
+   "vocab_pack": "langzhong",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28779,7 +28803,8 @@ window.SANDBOX_DATA = {
   "prc_shenzhou_llm": "slices/prc_shenzhou_llm.js",
   "prc_three_gorges_llm": "slices/prc_three_gorges_llm.js",
   "prc_wuhan_bridge_llm": "slices/prc_wuhan_bridge_llm.js",
-  "prc_yuanlongping_llm": "slices/prc_yuanlongping_llm.js"
+  "prc_yuanlongping_llm": "slices/prc_yuanlongping_llm.js",
+  "langzhong": "slices/langzhong.js"
  },
  "corridors": [
   {

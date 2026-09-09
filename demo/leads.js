@@ -4154,6 +4154,52 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "LZ_G01",
+   "scene": "langzhong",
+   "subject": "place:langzhong_cheng",
+   "title": "张飞镇守七年间的日常民政措施史缺载",
+   "missing": "考据",
+   "where": "张飞巴西太守任内民政措施",
+   "skills": [
+    "考据"
+   ],
+   "accept": "需三国地方行政史料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "LZ_G02",
+   "scene": "langzhong",
+   "subject": "event:ev_langzhong_02",
+   "title": "宕渠之战双方兵力无确载",
+   "missing": "考据",
+   "where": "宕渠之战双方兵力",
+   "skills": [
+    "考据"
+   ],
+   "accept": "需三国兵志对勘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "LZ_G03",
+   "scene": "langzhong",
+   "subject": "place:zhangfei_miao",
+   "title": "张飞墓祠早期形制无考，今祠为后世屡修",
+   "missing": "考古 / 方志",
+   "where": "汉桓侯祠早期形制",
+   "skills": [
+    "考古",
+    "方志"
+   ],
+   "accept": "需考古与方志互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "LI__012",
    "scene": "li_shizhen_llm",
    "subject": "event:ev_li_shizhen_llm_01",

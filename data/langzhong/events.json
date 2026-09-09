@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_langzhong_01",
+      "year": 214,
+      "era": "建安十九年",
+      "kind": "任官",
+      "title": "张飞领巴西太守镇阆中",
+      "place": "langzhong_cheng",
+      "text": "刘备平定益州，以张飞为巴西太守，镇守阆中（巴西郡治）。张飞自此守巴西约七年，为蜀汉东北边郡屏藩。",
+      "subject": "event:ev_langzhong_01"
+    },
+    {
+      "id": "ev_langzhong_02",
+      "year": 215,
+      "era": "建安二十年",
+      "kind": "战事",
+      "title": "宕渠之战·张飞破张郃",
+      "place": "dangqu",
+      "text": "曹魏张郃进侵巴西，欲徙民。张飞率精卒万余人邀其于宕渠、蒙头、荡石，据山道迮狭之地，使魏军前后不相救，大破张郃。郃弃马缘山，独与麾下十余人从间道退走，巴西遂安。",
+      "subject": "event:ev_langzhong_02"
+    },
+    {
+      "id": "ev_langzhong_03",
+      "year": 221,
+      "era": "章武元年",
+      "kind": "遇害",
+      "title": "张飞被部曲所杀",
+      "place": "langzhong_cheng",
+      "text": "刘备称帝，迁张飞为车骑将军、领司隶校尉，进封西乡侯，将伐吴，令飞率兵会于江州。临发，其帐下将张达、范强杀飞，持其首顺流奔孙权。张飞葬阆中，后主时追谥桓侯。",
+      "subject": "event:ev_langzhong_03"
+    }
+  ]
+}

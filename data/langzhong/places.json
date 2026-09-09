@@ -1,0 +1,44 @@
+{
+  "places": [
+    {
+      "id": "langzhong_cheng",
+      "name": "阆中城（巴西郡治）",
+      "lon": 105.972, "lat": 31.583,
+      "type": "capital",
+      "modern": "今四川阆中市（南充代管）",
+      "note": "蜀汉巴西郡治，张飞镇守七年。坐标据 Wikipedia 31°35′N 105°58′E，标 approx（城市级精度）。"
+    },
+    {
+      "id": "zhangfei_miao",
+      "name": "汉桓侯祠（张飞庙）",
+      "lon": 105.970, "lat": 31.570,
+      "type": "temple",
+      "modern": "阆中古城内·汉桓侯祠",
+      "note": "张飞墓祠，后世屡修，今全国重点文保。在古城内，坐标 approx（与城同区）。"
+    },
+    {
+      "id": "jialing_river",
+      "name": "嘉陵江（阆中段）",
+      "lon": 105.970, "lat": 31.560,
+      "type": "river",
+      "modern": "嘉陵江纵贯阆中市境",
+      "note": "古城三面环水（锦屏山隔江南峙），为阆中形胜。坐标取城畔江段中线，approx。"
+    },
+    {
+      "id": "dangqu",
+      "name": "宕渠（宕渠之战战场）",
+      "lon": 106.970, "lat": 30.850,
+      "type": "battlefield",
+      "modern": "今四川渠县（宕渠故城）",
+      "note": "东汉属巴西郡，张飞破张郃之处。渠县坐标据公开地理数据，approx。"
+    },
+    {
+      "id": "chengdu",
+      "name": "成都（蜀汉都城）",
+      "lon": 104.070, "lat": 30.660,
+      "type": "capital",
+      "modern": "今四川成都市",
+      "note": "蜀汉都城，刘备称帝于此。坐标据公开地理数据，approx。"
+    }
+  ]
+}
