@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["guizhou_zhangxiumei_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -703,6 +704,32 @@ window.SANDBOX_SLICES["guizhou_zhangxiumei_llm"] = {
    "_source_quote": "張秀眉被俘就義",
    "source_text": "咸丰五年（一八五五），台拱厅苗民张秀眉以'议榔'立约，率黔东南清水江流域九股苗民起事，自号'翼王'，建'旗色'，废屯田、均田亩、攻占厅城。十八年间，台拱、施秉、清江、黄平、凯里诸地悉入其手。张秀眉定章法、禁劫掠、恤民苦，与清军席宝田、苏元春等反复争。同治十一年（一八七二），清军合围，凯里之战张秀眉被俘就义，苗寨遭焚，苗民死者数万。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "guizhou_zhangxiumei_llm_DIM2",
+   "subject": "技术:农业水利",
+   "predicate": "技术维度",
+   "value_text": "张秀眉黔东南苗民起义（1855—1872） 的史料涉及农业水利（「，自号'翼王'，建'旗色'，废屯田、均田亩、攻占厅城。十八年间，」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "咸豐五年",
+    "start": "1855-01-01",
+    "end": "1855-12-31",
+    "gregorian_year": 1855
+   },
+   "place": "taigong",
+   "source": "zhangxiumei_miaoqi_src",
+   "quote": "「，自号'翼王'，建'旗色'，废屯田、均田亩、攻占厅城。十八年间，」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

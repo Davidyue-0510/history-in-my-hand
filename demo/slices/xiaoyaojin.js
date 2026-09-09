@@ -20,6 +20,7 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -509,6 +510,31 @@ window.SANDBOX_SLICES["xiaoyaojin"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "xiaoyaojin_DIM2",
+   "subject": "技术:兵器",
+   "predicate": "技术维度",
+   "value_text": "逍遥津之战 的史料涉及兵器（「\"predicate\": \"攻城结果\", \"value_tex」），补标技术维度（推断）。",
+   "time": {
+    "start": 215,
+    "end": 215,
+    "era_text": "建安二十年"
+   },
+   "place": "",
+   "source": "synthesis",
+   "quote": "「\"predicate\": \"攻城结果\", \"value_tex」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

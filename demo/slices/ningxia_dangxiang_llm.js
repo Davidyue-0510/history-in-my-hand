@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["ningxia_dangxiang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -521,6 +522,32 @@ window.SANDBOX_SLICES["ningxia_dangxiang_llm"] = {
    "_source_quote": "",
    "source_text": "党项羌，汉西羌之别种，原居析支（今青甘川边），'逐水草、无定居、以畜牧业为业'。唐贞观间拓跋赤辞内附，赐姓李，迁居庆州；安史乱后迁居银、夏、绥、宥、静五州（今陕北、宁夏）。首领拓跋思恭助唐讨黄巢，赐姓李、封夏国公。元昊祖辈渐营田亩、筑城寨、定兵制，'衣皮、食酪'之俗渐变'城郭、耕织'；立国后行'二丁抽一'为兵、余为民耕，设农田司、群牧司分理农牧。党项由游牧部落转为'农牧并营'之封建政权，是西北民族社会形态转型之典型。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "ningxia_dangxiang_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "党项羌游牧—农耕转型（宋—夏） 的史料涉及城防营造（「兵制，'衣皮、食酪'之俗渐变'城郭、耕织'；立国后行'二丁抽一'」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "唐贞观间",
+    "start": "627-01-01",
+    "end": "627-12-31",
+    "gregorian_year": 627
+   },
+   "place": "qingzhou",
+   "source": "dangxiang_zhuanxing_src",
+   "quote": "「兵制，'衣皮、食酪'之俗渐变'城郭、耕织'；立国后行'二丁抽一'」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

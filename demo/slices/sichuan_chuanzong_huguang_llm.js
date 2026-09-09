@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["sichuan_chuanzong_huguang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -685,6 +686,32 @@ window.SANDBOX_SLICES["sichuan_chuanzong_huguang_llm"] = {
    "_source_quote": "沿江上溯",
    "source_text": "明末张献忠入川乱后，川人几尽。康熙十年（一六七一）定'招民填川'之令，令湖广（湖南、湖北）、广东、福建、江西、陕西诸省无田之民入川开垦，编入保甲，永准为业。移民扶老携幼入蜀，沿江上溯重庆、成都、潼川、保宁诸府。会馆林立，俗称'湖广会馆'、'广东会馆'。乾隆四十年后，川民由百余万复至千万余口，土著与客籍共处，川剧、川菜、川话皆熔铸南北、卓然成家。",
    "dim_source": "declared",
+   "_party": "亲历/官修",
+   "_faction": null
+  },
+  {
+   "id": "sichuan_chuanzong_huguang_llm_DIM2",
+   "subject": "技术:矿冶",
+   "predicate": "技术维度",
+   "value_text": "湖广填四川与大移民（清初） 的史料涉及矿冶（「客籍共处，川剧、川菜、川话皆熔铸南北、卓然成家。\", \"dim」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "康熙十年",
+    "start": "1671-01-01",
+    "end": "1671-12-31",
+    "gregorian_year": 1671
+   },
+   "place": "huguang",
+   "source": "huguang_tian_sichuan_src",
+   "quote": "「客籍共处，川剧、川菜、川话皆熔铸南北、卓然成家。\", \"dim」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "亲历/官修",
    "_faction": null
   }

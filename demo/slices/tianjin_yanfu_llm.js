@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["tianjin_yanfu_llm"] = {
    }
   },
   "dims": [
+   2,
    3,
    5,
    6
@@ -583,6 +584,32 @@ window.SANDBOX_SLICES["tianjin_yanfu_llm"] = {
    "_source_quote": "",
    "source_text": "严复主北洋水师学堂于天津，光绪二十三年（一八九七）译赫胥黎《天演论》刊布，『物竞天择，适者生存』之说震动士林。『自强保种』之论，开近代自由主义与进化论思想之先河，为维新变法提供理论根基。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "tianjin_yanfu_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "严复《天演论》与近代启蒙（清—民国） 的史料涉及交通航运（「e_text\": \"严复主北洋水师学堂\", \"time\": {\"」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "光绪二十三年",
+    "start": "1897-01-01",
+    "end": "1897-12-31",
+    "gregorian_year": 1897
+   },
+   "place": "tianjin",
+   "source": "tianjin_yanfu_src",
+   "quote": "「e_text\": \"严复主北洋水师学堂\", \"time\": {\"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

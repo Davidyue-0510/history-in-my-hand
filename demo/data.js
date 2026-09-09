@@ -19109,6 +19109,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -19320,6 +19321,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -20049,6 +20051,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -20490,6 +20493,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -20612,6 +20616,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -20860,6 +20865,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -22599,6 +22605,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -23152,6 +23159,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -23214,6 +23222,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -23682,6 +23691,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -23703,6 +23713,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     5,
     6
    ],
@@ -23782,6 +23793,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -23802,6 +23814,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -23960,6 +23973,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -24018,6 +24032,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -24460,6 +24475,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -24502,6 +24518,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -24785,6 +24802,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     3,
     6
    ],
@@ -24887,6 +24905,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -25007,6 +25026,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     4,
     5,
     6
@@ -25265,6 +25285,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     3,
     4,
     5,
@@ -25490,6 +25511,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -25612,6 +25634,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -25632,6 +25655,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -25875,6 +25899,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -25959,6 +25984,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -26066,6 +26092,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -26106,6 +26133,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -26147,6 +26175,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -26188,6 +26217,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -26329,6 +26359,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -26494,6 +26525,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -26515,6 +26547,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     5,
     6
@@ -26617,6 +26650,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     6
@@ -26857,6 +26891,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     3,
     5,
     6
@@ -26899,6 +26934,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     4,
     5,
     6
@@ -27137,6 +27173,7 @@ window.SANDBOX_DATA = {
    "terrain_off_grid": false,
    "dims": [
     1,
+    2,
     3,
     4,
     5,
@@ -27157,6 +27194,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     3,
     5,
     6
@@ -27235,6 +27273,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     4,
     5,
     6
@@ -27346,6 +27385,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     3,
     6
    ],
@@ -27699,6 +27739,7 @@ window.SANDBOX_DATA = {
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
+    2,
     5,
     6
    ],

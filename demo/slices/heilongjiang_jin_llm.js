@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["heilongjiang_jin_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -603,6 +604,32 @@ window.SANDBOX_SLICES["heilongjiang_jin_llm"] = {
    "_source_credibility": null,
    "_source_quote": "金天会三年灭辽",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "heilongjiang_jin_llm_DIM2",
+   "subject": "技术:农业水利",
+   "predicate": "技术维度",
+   "value_text": "金朝立国 完颜阿骨打称帝（1115） 的史料涉及农业水利（「predicate\": \"括地屯田\", \"value_text\"」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "辽天庆五年正月",
+    "start": "1115-01-01",
+    "end": "1115-12-31",
+    "gregorian_year": 1115
+   },
+   "place": "huining_fu",
+   "source": "jin_llm_src",
+   "quote": "「predicate\": \"括地屯田\", \"value_text\"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

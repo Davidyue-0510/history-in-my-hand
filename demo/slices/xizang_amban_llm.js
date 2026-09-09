@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["xizang_amban_llm"] = {
    }
   },
   "dims": [
+   2,
    3,
    5,
    6
@@ -545,6 +546,32 @@ window.SANDBOX_SLICES["xizang_amban_llm"] = {
    "_source_quote": "定大座掣签于雍和宫金瓶",
    "source_text": "雍正五年（一七二七）设驻藏大臣，'总理西藏事务，与达赖、班禅平行'。乾隆五十八年（一七九三）颁《钦定藏内善后章程》，定大座掣签于雍和宫金瓶，'达赖、班禅及大呼图克图转世，必经金瓶掣签，朝廷特派大臣监视'。驿道、兵制、赋税皆归节制，主权所系，体制乃定。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "xizang_amban_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "清朝驻藏大臣与金瓶掣签（清） 的史料涉及交通航运（「金瓶掣签，朝廷特派大臣监视'。驿道、兵制、赋税皆归节制，主权所系」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "雍正五年",
+    "start": "1727-01-01",
+    "end": "1727-12-31",
+    "gregorian_year": 1727
+   },
+   "place": "tibet",
+   "source": "amban_src",
+   "quote": "「金瓶掣签，朝廷特派大臣监视'。驿道、兵制、赋税皆归节制，主权所系」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

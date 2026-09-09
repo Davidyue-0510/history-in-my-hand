@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["neimenggu_huhehaote_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -678,6 +679,32 @@ window.SANDBOX_SLICES["neimenggu_huhehaote_llm"] = {
    "_source_quote": "归化城始筑于明万历九年",
    "source_text": "归化城（今呼和浩特）始筑于明万历九年（一五八一），清乾隆时改称'绥远'，是漠南蒙古与中原互市之咽喉。旅蒙商之大盛魁、元盛德、天义德诸号，晋人王相卿、张杰、史大学所创，'外柜'延至乌兰巴托、科布多、乌里雅苏台，'内柜'则于归化、张家口、北京设总号。其经营以茶、烟、糖、布、绸、粮、铁换皮、毛、药材、骡马，'以有易无'，年贸易额逾千万两白银，是清代中俄恰克图贸易之前哨。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "neimenggu_huhehaote_llm_DIM2",
+   "subject": "技术:医药",
+   "predicate": "技术维度",
+   "value_text": "归化城与旅蒙商（明—清） 的史料涉及医药（「、糖、布、绸、粮、铁换皮、毛、药材、骡马，'以有易无'，年贸易额」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "明万历九年",
+    "start": "1581-01-01",
+    "end": "1581-12-31",
+    "gregorian_year": 1581
+   },
+   "place": "guihua",
+   "source": "huhehaote_lv_meng_shang_src",
+   "quote": "「、糖、布、绸、粮、铁换皮、毛、药材、骡马，'以有易无'，年贸易额」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

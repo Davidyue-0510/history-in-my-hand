@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["li_shizhen_llm"] = {
    }
   },
   "dims": [
+   2,
    5,
    6
   ],
@@ -528,6 +529,32 @@ window.SANDBOX_SLICES["li_shizhen_llm"] = {
    "_source_quote": "诏命刊行",
    "source_text": "李时珍，字东璧，蕲州人。好读医书，...穷搜博采，芟烦补阙，历三十年，阅书八百余家，稿三易而成书，曰《本草纲目》。增药三百七十四种，分为十六部六十类。每药标正名为纲，附释名为目，次以集解、辨疑、正误，详其出产、气味、主治。书成，将上之朝，时珍遽卒。未几，神宗诏修国史，购四方书，其子建元以父遗表及是书进，诏命刊行，天下重之。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "li_shizhen_llm_DIM2",
+   "subject": "技术:医药",
+   "predicate": "技术维度",
+   "value_text": "李时珍与本草纲目 的史料涉及医药（「书八百余家，稿三易而成书，曰《本草纲目》。增药三百七十四种，分为」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "万历六年",
+    "start": "1578-01-01",
+    "end": "1578-12-31",
+    "gregorian_year": 1578
+   },
+   "place": "qizhou",
+   "source": "mingshi_lishizhen",
+   "quote": "「书八百余家，稿三易而成书，曰《本草纲目》。增药三百七十四种，分为」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

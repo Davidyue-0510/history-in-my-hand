@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["hebei_zhili_xinzheng_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -570,6 +571,32 @@ window.SANDBOX_SLICES["hebei_zhili_xinzheng_llm"] = {
    "_source_quote": "具体实施细节不详",
    "source_text": "光绪二十七年《辛丑条约》后，慈禧太后颁'变法上谕'，直隶总督袁世凯以天津、保定、沧州为试验，推行北洋新政：废科举、办学堂、练新军、办巡警、清讼狱、兴实业。天津设北洋大学堂、工艺学堂、巡警总局、北洋军医局；保定设农务局、测绘学堂、陆军速成学堂；又开深州矿务局、北洋机器局、北洋银元局。直隶新政是清末最系统之地方改革，为辛亥后北洋政治奠其基础。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "hebei_zhili_xinzheng_llm_DIM2",
+   "subject": "技术:矿冶",
+   "predicate": "技术维度",
+   "value_text": "直隶新政与北洋新政（1901—1911） 的史料涉及矿冶（「绘学堂、陆军速成学堂；又开深州矿务局、北洋机器局、北洋银元局。」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "光绪二十七年",
+    "start": "1901-01-01",
+    "end": "1901-12-31",
+    "gregorian_year": 1901
+   },
+   "place": "tianjin",
+   "source": "zhili_xinzheng_src",
+   "quote": "「绘学堂、陆军速成学堂；又开深州矿务局、北洋机器局、北洋银元局。」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

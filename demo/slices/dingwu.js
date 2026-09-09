@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["dingwu"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -501,6 +502,31 @@ window.SANDBOX_SLICES["dingwu"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "dingwu_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "丁戊奇荒 的史料涉及交通航运（「lue_text\": \"拨帑截漕、办赈恤，江南义赈赴晋，灾势渐」），补标技术维度（推断）。",
+   "time": {
+    "start": 1876,
+    "end": 1876,
+    "era_text": "光绪二"
+   },
+   "place": "taiyuan",
+   "source": "synthesis",
+   "quote": "「lue_text\": \"拨帑截漕、办赈恤，江南义赈赴晋，灾势渐」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

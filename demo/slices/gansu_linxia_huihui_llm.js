@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["gansu_linxia_huihui_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -725,6 +726,32 @@ window.SANDBOX_SLICES["gansu_linxia_huihui_llm"] = {
    "_source_quote": "原文未载具体卫所名",
    "source_text": "临夏古称河州，自元代以来为西域回回入华要冲。明洪武、永乐两朝大批回回军士编入'归附回回'卫所，屯田于河州、临夏、积石山一带；又有丝绸之路南道'河州道'贯通临夏与撒马尔罕、克什米尔。临夏城西八坊十三巷清真寺林立，前河沿清真寺、礼拜寺、韩家清真寺等各有掌教，伊赫瓦尼、格底目、哲赫林耶诸门宦并立，是西北伊斯兰教中国化之典型现场。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "gansu_linxia_huihui_llm_DIM2",
+   "subject": "技术:农业水利",
+   "predicate": "技术维度",
+   "value_text": "临夏回族与清真寺群（明清） 的史料涉及农业水利（「回回军士编入'归附回回'卫所，屯田于河州、临夏、积石山一带；又有」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "明洪武年间",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "hezhou",
+   "source": "linxia_huihui_src",
+   "quote": "「回回军士编入'归附回回'卫所，屯田于河州、临夏、积石山一带；又有」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

@@ -27,6 +27,7 @@ window.SANDBOX_SLICES["tieling"] = {
   "terrain_grid": "liaodong",
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -1152,6 +1153,27 @@ window.SANDBOX_SLICES["tieling"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "清修·明臣",
+   "_faction": null
+  },
+  {
+   "id": "tieling_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "铁岭 的史料涉及交通航运（「赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取」），补标技术维度（推断）。",
+   "time": null,
+   "place": "tieling_cheng",
+   "source": "mingshi",
+   "quote": "「赤亲自率领大军, 将板木云梯战车顺浑河而下, 水陆并进, 直取」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "清修·明臣",
    "_faction": null
   }

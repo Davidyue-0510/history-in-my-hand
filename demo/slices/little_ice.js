@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["little_ice"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -465,6 +466,31 @@ window.SANDBOX_SLICES["little_ice"] = {
    "dist": {
     "type": "degenerate"
    },
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "little_ice_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "明末小冰期饥荒 的史料涉及交通航运（「e_text\": \"陕北连旱，驿站裁撤失业者多投闯营；民变与天灾」），补标技术维度（推断）。",
+   "time": {
+    "start": 1580,
+    "end": 1580,
+    "era_text": "万历前期"
+   },
+   "place": "beijing",
+   "source": "synthesis",
+   "quote": "「e_text\": \"陕北连旱，驿站裁撤失业者多投闯营；民变与天灾」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["neimenggu_genghis_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -623,6 +624,32 @@ window.SANDBOX_SLICES["neimenggu_genghis_llm"] = {
    "_source_credibility": null,
    "_source_quote": "病逝",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "neimenggu_genghis_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "成吉思汗统一蒙古（1206） 的史料涉及城防营造（「ue_text\": \"先后击败塔塔儿、克烈、乃蛮\", \"tim」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "金章宗泰和六年",
+    "start": "1206-01-01",
+    "end": "1206-12-31",
+    "gregorian_year": 1206
+   },
+   "place": "onon_river",
+   "source": "genghis_llm_src",
+   "quote": "「ue_text\": \"先后击败塔塔儿、克烈、乃蛮\", \"tim」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

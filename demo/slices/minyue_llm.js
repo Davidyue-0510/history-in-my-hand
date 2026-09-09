@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["minyue_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -630,6 +631,30 @@ window.SANDBOX_SLICES["minyue_llm"] = {
    "_source_credibility": null,
    "_source_quote": "徙其民于江淮之间",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "minyue_llm_DIM2",
+   "subject": "技术:矿冶",
+   "predicate": "技术维度",
+   "value_text": "汉初闽越国（福州） 的史料涉及矿冶（「e_text\": \"闽越国都东冶\", \"time\": {\"er」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "汉高祖五年",
+    "start": "-202"
+   },
+   "place": "dongye",
+   "source": "shiji_minyue_llm",
+   "quote": "「e_text\": \"闽越国都东冶\", \"time\": {\"er」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

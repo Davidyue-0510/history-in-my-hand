@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["xinjiang_gaochang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -632,6 +633,32 @@ window.SANDBOX_SLICES["xinjiang_gaochang_llm"] = {
    "_source_quote": "其俗崇佛",
    "source_text": "高昌城在今吐鲁番东南，麴氏据之历高昌国一百四十一年，以汉人为主，兼融车师、突厥诸族。唐贞观十四年（六四零）侯君集灭高昌，置西州，设交河、柳中、蒲类诸县；高昌遂为丝路北道之重镇。其俗崇佛，寺院棋布，阿斯塔那古墓出《论语》抄本、写经、绢画、饺子、点心，证高昌华化之深、丝路文化交流之盛。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "xinjiang_gaochang_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "高昌佛教与丝路文化（麴氏高昌·唐西州） 的史料涉及城防营造（「重镇。其俗崇佛，寺院棋布，阿斯塔那古墓出《论语》抄本、写经、绢」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "贞观十四年",
+    "start": "640-01-01",
+    "end": "640-12-31",
+    "gregorian_year": 640
+   },
+   "place": "gaochang",
+   "source": "gaochang_fojiao_src",
+   "quote": "「重镇。其俗崇佛，寺院棋布，阿斯塔那古墓出《论语》抄本、写经、绢」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

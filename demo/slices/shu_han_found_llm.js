@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["shu_han_found_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -566,6 +567,32 @@ window.SANDBOX_SLICES["shu_han_found_llm"] = {
    "_source_credibility": null,
    "_source_quote": "章武元年曹丕篡汉",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "shu_han_found_llm_DIM2",
+   "subject": "技术:天文历算",
+   "predicate": "技术维度",
+   "value_text": "蜀汉建国（成都称帝） 的史料涉及天文历算（「ls\": [\"碑刻考据\", \"历法推算\"], \"accept\":」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "章武元年",
+    "start": "221-01-01",
+    "end": "221-12-31",
+    "gregorian_year": 221
+   },
+   "place": "chengdu",
+   "source": "sgz_shuhan_llm",
+   "quote": "「ls\": [\"碑刻考据\", \"历法推算\"], \"accept\":」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

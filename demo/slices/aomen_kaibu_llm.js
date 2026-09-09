@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["aomen_kaibu_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -461,6 +462,32 @@ window.SANDBOX_SLICES["aomen_kaibu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "aomen_kaibu_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "中国澳门·澳门开埠（1553） 的史料涉及城防营造（「_text\": \"万历年间葡人筑城设官\", \"time\": {\"」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "嘉靖三十二年",
+    "start": "1553-01-01",
+    "end": "1553-12-31",
+    "gregorian_year": 1553
+   },
+   "place": "aomen",
+   "source": "aomen_kaibu_llm_src",
+   "quote": "「_text\": \"万历年间葡人筑城设官\", \"time\": {\"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

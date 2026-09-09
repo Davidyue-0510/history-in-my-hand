@@ -25,6 +25,7 @@ window.SANDBOX_SLICES["jinzhou"] = {
   "terrain_grid": "china_coarse",
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -587,6 +588,27 @@ window.SANDBOX_SLICES["jinzhou"] = {
    ],
    "dim_source": "declared",
    "_party": "二手综述",
+   "_faction": null
+  },
+  {
+   "id": "jinzhou_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "锦州 的史料涉及城防营造（「王朴先遁，吴三桂等诸镇兵皆溃，塔山、高桥伏歼其众\", \"sou」），补标技术维度（推断）。",
+   "time": null,
+   "place": "jinzhou_cheng",
+   "source": "mingshi",
+   "quote": "「王朴先遁，吴三桂等诸镇兵皆溃，塔山、高桥伏歼其众\", \"sou」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
+   "_party": "清修·明臣",
    "_faction": null
   }
  ],

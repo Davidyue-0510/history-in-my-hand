@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["ningxia_xiaoguan_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -603,6 +604,30 @@ window.SANDBOX_SLICES["ningxia_xiaoguan_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "ningxia_xiaoguan_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "萧关 秦汉长城西段关隘（汉） 的史料涉及城防营造（「ext\": \"秦汉长城西段重要关隘\", \"time\": {\"er」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "xiaoguan",
+   "source": "xiaoguan_llm_src",
+   "quote": "「ext\": \"秦汉长城西段重要关隘\", \"time\": {\"er」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

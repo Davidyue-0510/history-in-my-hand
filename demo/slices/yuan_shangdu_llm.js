@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["yuan_shangdu_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -649,6 +650,30 @@ window.SANDBOX_SLICES["yuan_shangdu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "城有宫城、皇城",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "yuan_shangdu_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "元·上都（开平） 的史料涉及城防营造（「\"predicate\": \"筑城时间\", \"value_tex」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "岁壬子（1252）",
+    "start": "1252"
+   },
+   "place": "kaiping",
+   "source": "yuan_shangdu_src",
+   "quote": "「\"predicate\": \"筑城时间\", \"value_tex」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

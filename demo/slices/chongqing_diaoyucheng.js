@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["chongqing_diaoyucheng"] = {
    }
   },
   "dims": [
+   2,
    3,
    6
   ],
@@ -615,6 +616,32 @@ window.SANDBOX_SLICES["chongqing_diaoyucheng"] = {
    "_source_credibility": null,
    "_source_quote": "中飞石而殂",
    "dim_source": "fallback",
+   "_party": "宋官修",
+   "_faction": null
+  },
+  {
+   "id": "chongqing_diaoyucheng_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "宋·钓鱼城之战（宋蒙） 的史料涉及城防营造（「\"predicate\": \"筑城时间\", \"value_tex」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "开庆元年",
+    "start": "1259-01-01",
+    "end": "1259-12-31",
+    "gregorian_year": 1259
+   },
+   "place": "diaoyucheng",
+   "source": "songshi_diaoyu",
+   "quote": "「\"predicate\": \"筑城时间\", \"value_tex」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "宋官修",
    "_faction": null
   }

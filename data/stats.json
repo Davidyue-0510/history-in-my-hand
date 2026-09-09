@@ -2,7 +2,7 @@
   "scenes_total": 440,
   "historical": 431,
   "fictional": 9,
-  "assertions_total": 6449,
+  "assertions_total": 6490,
   "sources_total": 416,
   "factions_total": 9,
   "vocab_packs": [
@@ -334,7 +334,7 @@
       "id": "tieling",
       "title": "铁岭",
       "kind": "county",
-      "assertions": 31,
+      "assertions": 32,
       "factions": {}
     },
     {
@@ -410,7 +410,7 @@
       "id": "jinzhou",
       "title": "锦州",
       "kind": "county",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -657,7 +657,7 @@
       "id": "xiaoyaojin",
       "title": "逍遥津之战",
       "kind": "battle",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -804,7 +804,7 @@
       "id": "little_ice",
       "title": "明末小冰期饥荒",
       "kind": "disaster",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -846,7 +846,7 @@
       "id": "shangyang",
       "title": "商鞅变法",
       "kind": "reform",
-      "assertions": 17,
+      "assertions": 18,
       "factions": {
         "fajia": 1,
         "guizu": 2
@@ -942,7 +942,7 @@
       "id": "dingwu",
       "title": "丁戊奇荒",
       "kind": "disaster",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -1545,7 +1545,7 @@
       "id": "qin_fenshu_llm",
       "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
       "kind": "thought",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -1727,7 +1727,7 @@
       "id": "shu_han_found_llm",
       "title": "蜀汉建国（成都称帝）",
       "kind": "dynasty",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -1748,7 +1748,7 @@
       "id": "minyue_llm",
       "title": "汉初闽越国（福州）",
       "kind": "dynasty",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -1909,14 +1909,14 @@
       "id": "heilongjiang_jin_llm",
       "title": "金朝立国 完颜阿骨打称帝（1115）",
       "kind": "frontier",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "chongqing_diaoyucheng_llm",
       "title": "钓鱼城之战（1259，宋蒙）",
       "kind": "battle",
-      "assertions": 17,
+      "assertions": 18,
       "factions": {}
     },
     {
@@ -1944,14 +1944,14 @@
       "id": "ningxia_xiaoguan_llm",
       "title": "萧关 秦汉长城西段关隘（汉）",
       "kind": "frontier",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
       "id": "neimenggu_genghis_llm",
       "title": "成吉思汗统一蒙古（1206）",
       "kind": "frontier",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2007,7 +2007,7 @@
       "id": "aomen_kaibu_llm",
       "title": "中国澳门·澳门开埠（1553）",
       "kind": "exchange",
-      "assertions": 10,
+      "assertions": 11,
       "factions": {}
     },
     {
@@ -2028,7 +2028,7 @@
       "id": "xinjiang_xiyu_llm",
       "title": "西域都护府",
       "kind": "frontier",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2182,7 +2182,7 @@
       "id": "guizhou_shexiang_llm",
       "title": "奢香夫人",
       "kind": "court",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2196,7 +2196,7 @@
       "id": "gansu_hexi",
       "title": "汉·河西四郡与丝绸之路（汉）",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2294,7 +2294,7 @@
       "id": "chongqing_diaoyucheng",
       "title": "宋·钓鱼城之战（宋蒙）",
       "kind": "battle",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2329,7 +2329,7 @@
       "id": "ningxia_xixia",
       "title": "西夏·兴庆府（宋辽夏之际）",
       "kind": "dynasty",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2371,7 +2371,7 @@
       "id": "taiwan_zhengchenggong",
       "title": "明·郑成功收复台湾（明郑）",
       "kind": "frontier",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -2462,7 +2462,7 @@
       "id": "yangwu_llm",
       "title": "清·洋务运动（自强求富）",
       "kind": "engineering",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -2539,7 +2539,7 @@
       "id": "ming_yuzhen_xia_llm",
       "title": "元末·明玉珍大夏国",
       "kind": "dynasty",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2581,14 +2581,14 @@
       "id": "xianggang_nanbeihang_llm",
       "title": "清·香港南北行华商",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "yuan_shangdu_llm",
       "title": "元·上都（开平）",
       "kind": "dynasty",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2672,7 +2672,7 @@
       "id": "xinjiang_gaochang_llm",
       "title": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
       "kind": "thought",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2700,7 +2700,7 @@
       "id": "gansu_linxia_huihui_llm",
       "title": "临夏回族与清真寺群（明清）",
       "kind": "social",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2735,7 +2735,7 @@
       "id": "guizhou_zhangxiumei_llm",
       "title": "张秀眉黔东南苗民起义（1855—1872）",
       "kind": "uprising",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2749,7 +2749,7 @@
       "id": "hebei_zhili_xinzheng_llm",
       "title": "直隶新政与北洋新政（1901—1911）",
       "kind": "reform",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -2763,7 +2763,7 @@
       "id": "sichuan_chuanzong_huguang_llm",
       "title": "湖广填四川与大移民（清初）",
       "kind": "social",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -2777,7 +2777,7 @@
       "id": "neimenggu_huhehaote_llm",
       "title": "归化城与旅蒙商（明—清）",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -2826,7 +2826,7 @@
       "id": "ningxia_dangxiang_llm",
       "title": "党项羌游牧—农耕转型（宋—夏）",
       "kind": "social",
-      "assertions": 11,
+      "assertions": 12,
       "factions": {}
     },
     {
@@ -2882,14 +2882,14 @@
       "id": "chongqing_ciqikou_llm",
       "title": "重庆码头与巴渝商埠（清—近现代）",
       "kind": "exchange",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
       "id": "chongqing_dazu_llm",
       "title": "大足石窟与佛教造像（唐—宋）",
       "kind": "tech",
-      "assertions": 15,
+      "assertions": 16,
       "factions": {}
     },
     {
@@ -2924,7 +2924,7 @@
       "id": "jiangxi_ganjiang_llm",
       "title": "赣江航运与江右商帮（明—清）",
       "kind": "exchange",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -3008,7 +3008,7 @@
       "id": "xizang_amban_llm",
       "title": "清朝驻藏大臣与金瓶掣签（清）",
       "kind": "court",
-      "assertions": 11,
+      "assertions": 12,
       "factions": {}
     },
     {
@@ -3022,7 +3022,7 @@
       "id": "anhui_daizhen_llm",
       "title": "戴震·皖派朴学与理欲之辨（清）",
       "kind": "thought",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -3106,14 +3106,14 @@
       "id": "tianjin_jiaohang_llm",
       "title": "天津脚行与码头苦力社会（清末民初）",
       "kind": "social",
-      "assertions": 16,
+      "assertions": 17,
       "factions": {}
     },
     {
       "id": "tianjin_yanfu_llm",
       "title": "严复《天演论》与近代启蒙（清—民国）",
       "kind": "thought",
-      "assertions": 14,
+      "assertions": 15,
       "factions": {}
     },
     {
@@ -3141,7 +3141,7 @@
       "id": "yunnan_lianda_llm",
       "title": "西南联大与战时自由主义学术（1937—1946）",
       "kind": "thought",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {
@@ -3183,7 +3183,7 @@
       "id": "hebei_zhili_llm",
       "title": "直隶总督与直隶省（清）",
       "kind": "court",
-      "assertions": 13,
+      "assertions": 14,
       "factions": {}
     },
     {
@@ -3309,7 +3309,7 @@
       "id": "li_shizhen_llm",
       "title": "李时珍与本草纲目",
       "kind": "tech",
-      "assertions": 12,
+      "assertions": 13,
       "factions": {}
     },
     {

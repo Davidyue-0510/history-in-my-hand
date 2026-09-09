@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["xianggang_nanbeihang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -648,6 +649,32 @@ window.SANDBOX_SLICES["xianggang_nanbeihang_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "xianggang_nanbeihang_llm_DIM2",
+   "subject": "技术:医药",
+   "predicate": "技术维度",
+   "value_text": "清·香港南北行华商 的史料涉及医药（「ext\": \"转口米、糖、豆、药材、海产\", \"time\": {」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "道光二十二年",
+    "start": "1842-01-01",
+    "end": "1842-12-31",
+    "gregorian_year": 1842
+   },
+   "place": "hongkong",
+   "source": "xianggang_nbh_src",
+   "quote": "「ext\": \"转口米、糖、豆、药材、海产\", \"time\": {」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

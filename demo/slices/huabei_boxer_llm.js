@@ -716,29 +716,29 @@ window.SANDBOX_SLICES["huabei_boxer_llm"] = {
   {
    "place_id": "shandong",
    "party": "后世官修",
-   "start": 1899,
-   "end": 1900,
+   "start": 1898,
+   "end": 1901,
    "timeline": "main"
   },
   {
    "place_id": "zhili",
    "party": "后世官修",
-   "start": 1899,
-   "end": 1900,
+   "start": 1898,
+   "end": 1901,
    "timeline": "main"
   },
   {
    "place_id": "jifu",
    "party": "后世官修",
-   "start": 1899,
-   "end": 1900,
+   "start": 1898,
+   "end": 1901,
    "timeline": "main"
   }
  ],
  "control_seats": [],
  "control_years": [
-  1899,
-  1900
+  1898,
+  1901
  ],
  "vocab": {
   "layers": {

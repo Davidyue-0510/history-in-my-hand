@@ -19,6 +19,7 @@ window.SANDBOX_SLICES["shangyang"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -589,6 +590,31 @@ window.SANDBOX_SLICES["shangyang"] = {
     6
    ],
    "dim_source": "declared",
+   "_party": "综合史料",
+   "_faction": null
+  },
+  {
+   "id": "shangyang_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "商鞅变法 的史料涉及交通航运（「秦孝公死，惠文王立，宗室怨鞅，车裂以徇。\", \"source\"」），补标技术维度（推断）。",
+   "time": {
+    "start": -356,
+    "end": -356,
+    "era_text": "秦孝公六年"
+   },
+   "place": "yueyang",
+   "source": "synthesis",
+   "quote": "「秦孝公死，惠文王立，宗室怨鞅，车裂以徇。\", \"source\"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "综合史料",
    "_faction": null
   }

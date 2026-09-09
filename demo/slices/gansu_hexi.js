@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["gansu_hexi"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -659,6 +660,32 @@ window.SANDBOX_SLICES["gansu_hexi"] = {
    "_source_credibility": null,
    "_source_quote": "破匈奴",
    "dim_source": "fallback",
+   "_party": "汉官修",
+   "_faction": null
+  },
+  {
+   "id": "gansu_hexi_DIM2",
+   "subject": "技术:窑冶",
+   "predicate": "技术维度",
+   "value_text": "汉·河西四郡与丝绸之路（汉） 的史料涉及窑冶（「, \"quote\": \"丝绸、漆器西去，汗血马、葡萄东来\", \"」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "元狩二年",
+    "start": "-121-01-01",
+    "end": "-121-12-31",
+    "gregorian_year": -121
+   },
+   "place": "wu_wei",
+   "source": "hexi_sichou",
+   "quote": "「, \"quote\": \"丝绸、漆器西去，汗血马、葡萄东来\", \"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "汉官修",
    "_faction": null
   }

@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["chongqing_diaoyucheng_llm"] = {
   },
   "dims": [
    1,
+   2,
    5,
    6
   ],
@@ -720,6 +721,32 @@ window.SANDBOX_SLICES["chongqing_diaoyucheng_llm"] = {
    "_source_credibility": null,
    "_source_quote": "史料未载",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "chongqing_diaoyucheng_llm_DIM2",
+   "subject": "技术:兵器",
+   "predicate": "技术维度",
+   "value_text": "钓鱼城之战（1259，宋蒙） 的史料涉及兵器（「\", \"quote\": \"蒙哥攻城受创\", \"quote_sta」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "开庆元年",
+    "start": "1259-01-01",
+    "end": "1259-12-31",
+    "gregorian_year": 1259
+   },
+   "place": "diaoyucheng",
+   "source": "diaoyucheng_llm_src",
+   "quote": "「\", \"quote\": \"蒙哥攻城受创\", \"quote_sta」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

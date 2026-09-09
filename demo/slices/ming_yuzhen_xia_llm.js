@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["ming_yuzhen_xia_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -596,6 +597,32 @@ window.SANDBOX_SLICES["ming_yuzhen_xia_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "ming_yuzhen_xia_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "元末·明玉珍大夏国 的史料涉及交通航运（「ote\": \"元至正十七年，率舟师入蜀\", \"quote_sta」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "元至正十七年",
+    "start": "1357-01-01",
+    "end": "1357-12-31",
+    "gregorian_year": 1357
+   },
+   "place": "chongqing",
+   "source": "ming_yuzhen_src",
+   "quote": "「ote\": \"元至正十七年，率舟师入蜀\", \"quote_sta」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

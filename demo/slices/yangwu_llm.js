@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["yangwu_llm"] = {
    }
   },
   "dims": [
+   2,
    3,
    4,
    5,
@@ -626,6 +627,32 @@ window.SANDBOX_SLICES["yangwu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "成效受限",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "yangwu_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "清·洋务运动（自强求富） 的史料涉及交通航运（「alue_text\": \"北洋水师甲午覆没\", \"time\":」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "咸丰十一年",
+    "start": "1861-01-01",
+    "end": "1861-12-31",
+    "gregorian_year": 1861
+   },
+   "place": "beijing",
+   "source": "yangwu_src",
+   "quote": "「alue_text\": \"北洋水师甲午覆没\", \"time\":」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

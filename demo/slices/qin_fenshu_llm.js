@@ -18,6 +18,7 @@ window.SANDBOX_SLICES["qin_fenshu_llm"] = {
   "parties_note": "叙事方=秦廷（法家主导）；来源=后世官修（基于《史记·秦始皇本纪》现代概述）。",
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -516,6 +517,30 @@ window.SANDBOX_SLICES["qin_fenshu_llm"] = {
    "_source_credibility": null,
    "_source_quote": "诸书所载不一",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "qin_fenshu_llm_DIM2",
+   "subject": "技术:医药",
+   "predicate": "技术维度",
+   "value_text": "秦·焚书坑儒（LLM 抽取·人工校订） 的史料涉及医药（「xt\": \"焚诗书百家语，不焚医药卜筮种树\", \"time\":」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "秦始皇三十四年",
+    "start": "-213"
+   },
+   "place": "xianyang",
+   "source": "qin_fenshu_src_llm",
+   "quote": "「xt\": \"焚诗书百家语，不焚医药卜筮种树\", \"time\":」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

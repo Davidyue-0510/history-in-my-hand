@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["chongqing_dazu_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -666,6 +667,30 @@ window.SANDBOX_SLICES["chongqing_dazu_llm"] = {
    "scale": "site",
    "note": "",
    "quote": "北山凿崖造像",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "chongqing_dazu_llm_DIM2",
+   "subject": "技术:天文历算",
+   "predicate": "技术维度",
+   "value_text": "大足石窟与佛教造像（唐—宋） 的史料涉及天文历算（「\"skills\": [\"考古测量\", \"文献考据\"], \"ac」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "唐末",
+    "start": "892"
+   },
+   "place": "dazu",
+   "source": "dazu_src",
+   "quote": "「\"skills\": [\"考古测量\", \"文献考据\"], \"ac」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

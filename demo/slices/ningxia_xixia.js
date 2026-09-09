@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["ningxia_xixia"] = {
   },
   "dims": [
    1,
+   2,
    3,
    5,
    6
@@ -598,6 +599,30 @@ window.SANDBOX_SLICES["ningxia_xixia"] = {
    "_source_credibility": null,
    "_source_quote": "史料多佚",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "ningxia_xixia_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "西夏·兴庆府（宋辽夏之际） 的史料涉及城防营造（「\"predicate\": \"都城防御\", \"value_text」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "显道元年",
+    "start": "1038"
+   },
+   "place": "xingqingfu",
+   "source": "songshi_xixia",
+   "quote": "「\"predicate\": \"都城防御\", \"value_text」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "empire",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["hebei_zhili_llm"] = {
    }
   },
   "dims": [
+   2,
    3,
    6
   ],
@@ -564,6 +565,30 @@ window.SANDBOX_SLICES["hebei_zhili_llm"] = {
    "_source_quote": "直隶遂为洋务、新政之枢",
    "source_text": "清沿明制设直隶省，『总督驻保定，兼管河道、漕运』。直隶总督「疆臣之首」，『拱卫京畿，总理洋务』。李鸿章、袁世凯先后任之，『北洋通商大臣』驻天津，直隶遂为洋务、新政之枢。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "hebei_zhili_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "直隶总督与直隶省（清） 的史料涉及交通航运（「隶省，『总督驻保定，兼管河道、漕运』。直隶总督「疆臣之首」，『拱」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "清初",
+    "start": "1644"
+   },
+   "place": "zhili",
+   "source": "hebei_zhili_src",
+   "quote": "「隶省，『总督驻保定，兼管河道、漕运』。直隶总督「疆臣之首」，『拱」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

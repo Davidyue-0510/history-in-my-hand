@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["guizhou_shexiang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -698,6 +699,32 @@ window.SANDBOX_SLICES["guizhou_shexiang_llm"] = {
    "_source_credibility": null,
    "_source_quote": "",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "guizhou_shexiang_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "奢香夫人 的史料涉及交通航运（「愿开偏桥、水东以达乌蒙、乌撒诸驿道\", \"quote_statu」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "洪武间",
+    "start": "1368-01-01",
+    "end": "1368-12-31",
+    "gregorian_year": 1368
+   },
+   "place": "guizhou",
+   "source": "guizhou_shexiang_src_llm",
+   "quote": "「愿开偏桥、水东以达乌蒙、乌撒诸驿道\", \"quote_statu」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

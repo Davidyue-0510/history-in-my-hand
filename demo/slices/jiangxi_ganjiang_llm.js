@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["jiangxi_ganjiang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    6
@@ -561,6 +562,30 @@ window.SANDBOX_SLICES["jiangxi_ganjiang_llm"] = {
    "_source_quote": "",
    "source_text": "江西襟三江而带五湖，赣江贯全省，大庾岭梅关为南北通衢，'商贾往来，舟车辐辏'。明中叶以后，江右商帮贩瓷器、茶叶、纸张、夏布于湖广、云贵、两广，'无赣不成市'。景德镇瓷、河口纸、吴城米市皆赖赣水转输，会馆公所遍设要津。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "jiangxi_ganjiang_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "赣江航运与江右商帮（明—清） 的史料涉及交通航运（「岭梅关为南北通衢，'商贾往来，舟车辐辏'。明中叶以后，江右商帮贩」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "明—清",
+    "start": "1368"
+   },
+   "place": "ganjiang",
+   "source": "ganjiang_src",
+   "quote": "「岭梅关为南北通衢，'商贾往来，舟车辐辏'。明中叶以后，江右商帮贩」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

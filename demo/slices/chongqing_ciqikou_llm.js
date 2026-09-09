@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["chongqing_ciqikou_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -620,6 +621,30 @@ window.SANDBOX_SLICES["chongqing_ciqikou_llm"] = {
    "_source_quote": "袍哥码头",
    "source_text": "重庆襟带两江，控巴蜀喉襟，'舟楫之利，上溯叙泸，下通汉沪'。清季开埠后，朝天门、磁器口、临江门码头林立，盐、药材、山货、棉纱辐辏，'九门舟车，百货萃焉'。川江号子、巴渝会馆、袍哥码头的市井生态，皆于此繁盛，为西南工商之枢纽。",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "chongqing_ciqikou_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "重庆码头与巴渝商埠（清—近现代） 的史料涉及交通航运（「、药材、山货、棉纱辐辏，'九门舟车，百货萃焉'。川江号子、巴渝会」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "清季",
+    "start": "1891"
+   },
+   "place": "chongqing",
+   "source": "ciqikou_src",
+   "quote": "「、药材、山货、棉纱辐辏，'九门舟车，百货萃焉'。川江号子、巴渝会」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

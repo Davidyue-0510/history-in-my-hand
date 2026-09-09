@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["taiwan_zhengchenggong"] = {
   },
   "dims": [
    1,
+   2,
    4,
    5,
    6
@@ -589,6 +590,32 @@ window.SANDBOX_SLICES["taiwan_zhengchenggong"] = {
    "_source_credibility": null,
    "_source_quote": "为明朔海外观瞻",
    "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "taiwan_zhengchenggong_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "明·郑成功收复台湾（明郑） 的史料涉及交通航运（「ue_text\": \"郑成功率舟师渡海\", \"time\": {\"」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "顺治十八年",
+    "start": "1661-01-01",
+    "end": "1661-12-31",
+    "gregorian_year": 1661
+   },
+   "place": "taiwan",
+   "source": "taiwan_tongshi",
+   "quote": "「ue_text\": \"郑成功率舟师渡海\", \"time\": {\"」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "theater",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

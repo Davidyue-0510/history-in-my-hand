@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["tianjin_jiaohang_llm"] = {
   },
   "dims": [
    1,
+   2,
    3,
    4,
    5,
@@ -654,6 +655,30 @@ window.SANDBOX_SLICES["tianjin_jiaohang_llm"] = {
     ],
     "accept": "确定脚行苦力历代规模的数量级估算"
    },
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "tianjin_jiaohang_llm_DIM2",
+   "subject": "技术:交通航运",
+   "predicate": "技术维度",
+   "value_text": "天津脚行与码头苦力社会（清末民初） 的史料涉及交通航运（「xt\": \"天津襟河海之冲，『船坞码头，搬运成行』。脚行把持搬运」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "清末民初",
+    "start": "1900"
+   },
+   "place": "tianjin",
+   "source": "tianjin_jiaohang_src",
+   "quote": "「xt\": \"天津襟河海之冲，『船坞码头，搬运成行』。脚行把持搬运」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

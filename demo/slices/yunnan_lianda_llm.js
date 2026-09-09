@@ -67,6 +67,7 @@ window.SANDBOX_SLICES["yunnan_lianda_llm"] = {
    }
   },
   "dims": [
+   2,
    4,
    5,
    6
@@ -504,6 +505,30 @@ window.SANDBOX_SLICES["yunnan_lianda_llm"] = {
    "_source_quote": "抗战胜利后复员",
    "source_text": "抗战军兴，北大、清华、南开南迁，一九三八年合组西南联大于昆明，『刚毅坚卓』为校训。『万物并育而不相害』，师生弦歌不辍，闻一多、冯友兰、金岳霖辈讲学自由；『兼容并包，学术独立』，为战时中国思想学术之灯塔。",
    "dim_source": "fallback",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "yunnan_lianda_llm_DIM2",
+   "subject": "技术:城防营造",
+   "predicate": "技术维度",
+   "value_text": "西南联大与战时自由主义学术（1937—1946） 的史料涉及城防营造（「独立』，为战时中国思想学术之灯塔。\", \"dim_source」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "一九三八年",
+    "start": "1938"
+   },
+   "place": "kunming",
+   "source": "yunnan_lianda_src",
+   "quote": "「独立』，为战时中国思想学术之灯塔。\", \"dim_source」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
+   "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
   }

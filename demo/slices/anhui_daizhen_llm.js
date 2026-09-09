@@ -68,6 +68,7 @@ window.SANDBOX_SLICES["anhui_daizhen_llm"] = {
   },
   "dims": [
    1,
+   2,
    4,
    5,
    6
@@ -512,6 +513,30 @@ window.SANDBOX_SLICES["anhui_daizhen_llm"] = {
    "_source_credibility": null,
    "_source_quote": "戴震，安徽休宁人",
    "source_text": "戴震，安徽休宁人，皖派朴学之宗。『由字通词，由词通道』，精小学、天文、算学。《孟子字义疏证》疾『宋儒以理杀人』，『理者，存乎欲者也』，主欲不可无、理在情中。『体民之情，遂民之欲』，实开清代思想启蒙之先声。",
+   "dim_source": "inferred",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "anhui_daizhen_llm_DIM2",
+   "subject": "技术:天文历算",
+   "predicate": "技术维度",
+   "value_text": "戴震·皖派朴学与理欲之辨（清） 的史料涉及天文历算（「由字通词，由词通道』，精小学、天文、算学。《孟子字义疏证》疾『宋」），补标技术维度（推断）。",
+   "time": {
+    "era_text": "",
+    "start": ""
+   },
+   "place": "anhui_xiuning",
+   "source": "anhui_daizhen_src",
+   "quote": "「由字通词，由词通道』，精小学、天文、算学。《孟子字义疏证》疾『宋」",
+   "quote_status": "paraphrase_unverified",
+   "layer": "inference",
+   "confidence": 0.7,
+   "scale": "province",
+   "note": "[auto] 补层 inference dim2（诚实回填：文本含技术关键词）",
+   "dims": [
+    2
+   ],
    "dim_source": "inferred",
    "_party": "后世官修",
    "_faction": null
