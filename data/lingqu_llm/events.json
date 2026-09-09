@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_lingqu_llm_01",
+   "subject": "event:ev_lingqu_llm_01",
+   "year": -214,
+   "era": "秦始皇二十六年",
+   "title": "发兵戍岭南",
+   "kind": "行政",
+   "text": "发逋亡人、赘婿、贾人为兵戍岭南",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_lingqu_llm_02",
+   "subject": "event:ev_lingqu_llm_02",
+   "year": -214,
+   "era": "秦始皇二十六年",
+   "title": "凿灵渠",
+   "kind": "建置",
+   "text": "监禄凿渠通粮道",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_lingqu_llm_03",
+   "subject": "event:ev_lingqu_llm_03",
+   "year": -214,
+   "era": "秦始皇二十六年",
+   "title": "岭南平定",
+   "kind": "战事",
+   "text": "渠成舟通，岭南以定",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "GUO__p01",
+   "name": "郭守敬",
+   "role": "元太史令，历法家",
+   "note": "主持修订授时历",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUO__p02",
+   "name": "王恂",
+   "role": "元太史令，历法家",
+   "note": "与郭守敬共治新历",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

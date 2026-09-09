@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 418 个切片
+// 权威数据源：data/scenes.json 注册的 425 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 418 个切片",
+  "slice": "multi-scene · 425 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -45,6 +45,7 @@ window.SANDBOX_DATA = {
    "dangar_chama_llm",
    "dongbei_kanglian_llm",
    "dujiangyan",
+   "dujiangyan_llm",
    "feishui_llm",
    "foguo_chan_llm",
    "fujian_minyue",
@@ -80,6 +81,7 @@ window.SANDBOX_DATA = {
    "guizhou_yelang_llm",
    "guizhou_zhangxiumei_llm",
    "guizhou_zunyi_llm",
+   "guo_shoujing_llm",
    "hainan_hainandao_llm",
    "hainan_hairui_llm",
    "hainan_li_llm",
@@ -114,6 +116,7 @@ window.SANDBOX_DATA = {
    "hunan_wenxi_fire_llm",
    "hunan_xiangjun_llm",
    "hunan_yuelu",
+   "jia_sixie_llm",
    "jiangsu_jihu_llm",
    "jiangsu_taizhou_llm",
    "jiangsu_zhangshicheng_llm",
@@ -134,7 +137,9 @@ window.SANDBOX_DATA = {
    "jinshang_llm",
    "jiupin_zhongzheng_llm",
    "kanerjing_llm",
+   "li_shizhen_llm",
    "liangzhou_meeting_llm",
+   "lingqu_llm",
    "longquan_yao_llm",
    "ming_qing",
    "ming_tumu_llm",
@@ -277,6 +282,7 @@ window.SANDBOX_DATA = {
    "yunnan_lianda_llm",
    "yunnan_nanzhao_llm",
    "yunnan_quhuanzhang_llm",
+   "zhangheng_llm",
    "zhejiang_linan",
    "zhejiang_linan_llm",
    "zhejiang_longquan",
@@ -284,6 +290,7 @@ window.SANDBOX_DATA = {
    "zhejiang_yongjia_llm",
    "zheng_chenggong_taiwan_llm",
    "zhuxi",
+   "zu_chongzhi_llm",
    "zuyong_diao_llm"
   ]
  },
@@ -955,7 +962,14 @@ window.SANDBOX_DATA = {
   "hebei_yuanqu_llm",
   "henan_keju_llm",
   "jiangsu_zhangshicheng_llm",
-  "shanxi_jinyang_llm"
+  "shanxi_jinyang_llm",
+  "dujiangyan_llm",
+  "guo_shoujing_llm",
+  "jia_sixie_llm",
+  "li_shizhen_llm",
+  "lingqu_llm",
+  "zhangheng_llm",
+  "zu_chongzhi_llm"
  ],
  "vocab": {
   "layers": [
@@ -28420,6 +28434,155 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "sui_yuan",
    "scale_tier": "operational"
+  },
+  "dujiangyan_llm": {
+   "key": "dujiangyan_llm",
+   "scene_id": "dujiangyan_llm",
+   "title": "都江堰与战国蜀的水利革命",
+   "dossier_label": "都江堰与战国蜀的水利革命",
+   "subtitle": "都江堰与战国蜀的水利革命",
+   "kind": "engineering",
+   "region": "chuan_gui",
+   "page": "county.html?scene=dujiangyan_llm",
+   "primary_place": "lijian",
+   "vocab_pack": "inline:dujiangyan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational"
+  },
+  "guo_shoujing_llm": {
+   "key": "guo_shoujing_llm",
+   "scene_id": "guo_shoujing_llm",
+   "title": "郭守敬与授时历",
+   "dossier_label": "郭守敬与授时历",
+   "subtitle": "郭守敬与授时历",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=guo_shoujing_llm",
+   "primary_place": "gaoli",
+   "vocab_pack": "inline:guo_shoujing_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational"
+  },
+  "jia_sixie_llm": {
+   "key": "jia_sixie_llm",
+   "scene_id": "jia_sixie_llm",
+   "title": "贾思勰与齐民要术",
+   "dossier_label": "贾思勰与齐民要术",
+   "subtitle": "贾思勰与齐民要术",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=jia_sixie_llm",
+   "primary_place": "zhongguo",
+   "vocab_pack": "inline:jia_sixie_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "operational"
+  },
+  "li_shizhen_llm": {
+   "key": "li_shizhen_llm",
+   "scene_id": "li_shizhen_llm",
+   "title": "李时珍与本草纲目",
+   "dossier_label": "李时珍与本草纲目",
+   "subtitle": "李时珍与本草纲目",
+   "kind": "tech",
+   "region": "hunan",
+   "page": "county.html?scene=li_shizhen_llm",
+   "primary_place": "qizhou",
+   "vocab_pack": "inline:li_shizhen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational"
+  },
+  "lingqu_llm": {
+   "key": "lingqu_llm",
+   "scene_id": "lingqu_llm",
+   "title": "灵渠与秦始皇南征岭南",
+   "dossier_label": "灵渠与秦始皇南征岭南",
+   "subtitle": "灵渠与秦始皇南征岭南",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=lingqu_llm",
+   "primary_place": "lingqu",
+   "vocab_pack": "inline:lingqu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "qin",
+   "scale_tier": "operational"
+  },
+  "zhangheng_llm": {
+   "key": "zhangheng_llm",
+   "scene_id": "zhangheng_llm",
+   "title": "张衡与候风地动仪",
+   "dossier_label": "张衡与候风地动仪",
+   "subtitle": "张衡与候风地动仪",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=zhangheng_llm",
+   "primary_place": "luoyang",
+   "vocab_pack": "inline:zhangheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    5,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational"
+  },
+  "zu_chongzhi_llm": {
+   "key": "zu_chongzhi_llm",
+   "scene_id": "zu_chongzhi_llm",
+   "title": "祖冲之与圆周率",
+   "dossier_label": "祖冲之与圆周率",
+   "subtitle": "祖冲之与圆周率",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=zu_chongzhi_llm",
+   "primary_place": "zu_chongzhi_llm",
+   "vocab_pack": "inline:zu_chongzhi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    5,
+    6
+   ],
+   "epoch": "two_jin",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28840,7 +29003,14 @@ window.SANDBOX_DATA = {
   "hebei_yuanqu_llm": "slices/hebei_yuanqu_llm.js",
   "henan_keju_llm": "slices/henan_keju_llm.js",
   "jiangsu_zhangshicheng_llm": "slices/jiangsu_zhangshicheng_llm.js",
-  "shanxi_jinyang_llm": "slices/shanxi_jinyang_llm.js"
+  "shanxi_jinyang_llm": "slices/shanxi_jinyang_llm.js",
+  "dujiangyan_llm": "slices/dujiangyan_llm.js",
+  "guo_shoujing_llm": "slices/guo_shoujing_llm.js",
+  "jia_sixie_llm": "slices/jia_sixie_llm.js",
+  "li_shizhen_llm": "slices/li_shizhen_llm.js",
+  "lingqu_llm": "slices/lingqu_llm.js",
+  "zhangheng_llm": "slices/zhangheng_llm.js",
+  "zu_chongzhi_llm": "slices/zu_chongzhi_llm.js"
  },
  "corridors": [
   {

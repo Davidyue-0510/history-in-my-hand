@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "gaoli",
+      "name": "高丽",
+      "type": "region",
+      "modern": "今朝鲜半岛",
+      "note": "东极测验地",
+      "_source_idx": 0,
+      "_source_name": "《元史·郭守敬传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhuya",
+      "name": "朱崖",
+      "type": "region",
+      "modern": "今中国海南",
+      "note": "南逾测验地",
+      "_source_idx": 0,
+      "_source_name": "《元史·郭守敬传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dianchi",
+      "name": "滇池",
+      "type": "region",
+      "modern": "今中国云南昆明",
+      "note": "西极测验地",
+      "_source_idx": 0,
+      "_source_name": "《元史·郭守敬传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tiele",
+      "name": "铁勒",
+      "type": "region",
+      "modern": "今蒙古高原",
+      "note": "北尽测验地",
+      "_source_idx": 0,
+      "_source_name": "《元史·郭守敬传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

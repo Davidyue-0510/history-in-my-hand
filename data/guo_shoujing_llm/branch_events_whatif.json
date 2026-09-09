@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "guo_shoujing_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1276,
+  1280
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1278,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.442,
+    "cum": -0.178
+   },
+   "place_id": "gaoli"
+  },
+  {
+   "kind": "divergence",
+   "year": 1279,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.42 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.423,
+    "cum": -0.237
+   },
+   "place_id": "gaoli"
+  },
+  {
+   "kind": "divergence",
+   "year": 1280,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.40 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.403,
+    "cum": -0.297
+   },
+   "place_id": "gaoli"
+  },
+  {
+   "kind": "summary",
+   "year": 1280,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.40 / 史实 0.70（偏离 -0.30）",
+   "evidence": {
+    "cum": -0.297,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "gaoli"
+  }
+ ]
+}

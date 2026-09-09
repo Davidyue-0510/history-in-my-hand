@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_zhangheng_llm_01",
+   "subject": "event:ev_zhangheng_llm_01",
+   "year": 132,
+   "era": "陽嘉元年",
+   "title": "復造候風地動儀",
+   "kind": "其他",
+   "text": "張衡復造候風地動儀",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·张衡传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

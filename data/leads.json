@@ -1203,6 +1203,36 @@
    "_src_line": 14
   },
   {
+   "id": "DUJ_007",
+   "scene": "dujiangyan_llm",
+   "subject": "event:ev_dujiangyan_llm_01",
+   "title": "具体年代不详",
+   "missing": "历史考证",
+   "where": "shiji_hequq",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "需进一步考证具体年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 7
+  },
+  {
+   "id": "DUJ_008",
+   "scene": "dujiangyan_llm",
+   "subject": "event:ev_dujiangyan_llm_02",
+   "title": "二江具体名称未载",
+   "missing": "地理考证",
+   "where": "shiji_hequq",
+   "skills": [
+    "地理考证"
+   ],
+   "accept": "需进一步考证二江名称",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
    "id": "DUNZUNG01",
    "scene": "dunzun",
    "subject": "event:dz_taixue",
@@ -2204,6 +2234,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "GUO_013",
+   "scene": "guo_shoujing_llm",
+   "subject": "event:ev_guo_shoujing_llm_03",
+   "title": "二十七所具体位置未详",
+   "missing": "历史地理",
+   "where": "元史·天文志",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "需考订二十七所具体位置",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "HAI_016",
@@ -3244,6 +3289,22 @@
   },
   {
    "id": "JIA_011",
+   "scene": "jia_sixie_llm",
+   "subject": "event:ev_jia_sixie_llm_01",
+   "title": "或为北魏末",
+   "missing": "文献考据 / 历法推算",
+   "where": "序文及史志目录",
+   "skills": [
+    "文献考据",
+    "历法推算"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "JIA_011",
    "scene": "jiangsu_jihu_llm",
    "subject": "event:ev_jiangsu_jihu_llm_01",
    "title": "结果未详",
@@ -3901,6 +3962,22 @@
    "_src_line": 15
   },
   {
+   "id": "LI__012",
+   "scene": "li_shizhen_llm",
+   "subject": "event:ev_li_shizhen_llm_01",
+   "title": "初刊本与后世版本差异待考",
+   "missing": "版本学 / 古籍校勘",
+   "where": "中国国家图书馆",
+   "skills": [
+    "版本学",
+    "古籍校勘"
+   ],
+   "accept": "比对现存万历刻本与后世翻刻本",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "LIANGSHUIG01",
    "scene": "liangshui",
    "subject": "event:ls_780",
@@ -4008,6 +4085,51 @@
     "文献考据"
    ],
    "accept": "补充史禄任监御史或都水长等确切官职记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "LIN_009",
+   "scene": "lingqu_llm",
+   "subject": "event:ev_lingqu_llm_02",
+   "title": "具体长度未载",
+   "missing": "考古测量",
+   "where": "灵渠遗址",
+   "skills": [
+    "考古测量"
+   ],
+   "accept": "灵渠长度数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "LIN_010",
+   "scene": "lingqu_llm",
+   "subject": "event:ev_lingqu_llm_01",
+   "title": "未载具体人数",
+   "missing": "文献考据",
+   "where": "秦简",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "戍卒数量",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "LIN_011",
+   "scene": "lingqu_llm",
+   "subject": "event:ev_lingqu_llm_03",
+   "title": "未述具体战事",
+   "missing": "考古发掘",
+   "where": "岭南地区",
+   "skills": [
+    "考古发掘"
+   ],
+   "accept": "秦军遗迹",
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
@@ -8337,6 +8459,22 @@
    "_src_line": 11
   },
   {
+   "id": "ZHA_010",
+   "scene": "zhangheng_llm",
+   "subject": "event:ev_zhangheng_llm_01",
+   "title": "都柱與八道之機械原理未明",
+   "missing": "機械工程 / 地震學",
+   "where": "後漢書張衡傳",
+   "skills": [
+    "機械工程",
+    "地震學"
+   ],
+   "accept": "進一步研究都柱與八道的具體機械結構",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
    "id": "ZHANGJUZHENGG01",
    "scene": "zhangjuzheng",
    "subject": "event:zj_1573",
@@ -8665,6 +8803,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "ZU__013",
+   "scene": "zu_chongzhi_llm",
+   "subject": "event:ev_zu_chongzhi_llm_01",
+   "title": "缀术内容今已不传",
+   "missing": "数学史 / 文献考据",
+   "where": "缀术原文",
+   "skills": [
+    "数学史",
+    "文献考据"
+   ],
+   "accept": "缀术具体算法",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "SX009_M28",

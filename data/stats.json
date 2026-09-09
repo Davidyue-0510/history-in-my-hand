@@ -1,9 +1,9 @@
 {
-  "scenes_total": 418,
-  "historical": 409,
+  "scenes_total": 425,
+  "historical": 416,
   "fictional": 9,
-  "assertions_total": 6174,
-  "sources_total": 395,
+  "assertions_total": 6259,
+  "sources_total": 402,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -41,6 +41,7 @@
     "dangar_chama_llm",
     "dongbei_kanglian_llm",
     "dujiangyan",
+    "dujiangyan_llm",
     "feishui_llm",
     "foguo_chan_llm",
     "fujian_minyue",
@@ -76,6 +77,7 @@
     "guizhou_yelang_llm",
     "guizhou_zhangxiumei_llm",
     "guizhou_zunyi_llm",
+    "guo_shoujing_llm",
     "hainan_hainandao_llm",
     "hainan_hairui_llm",
     "hainan_li_llm",
@@ -110,6 +112,7 @@
     "hunan_wenxi_fire_llm",
     "hunan_xiangjun_llm",
     "hunan_yuelu",
+    "jia_sixie_llm",
     "jiangsu_jihu_llm",
     "jiangsu_taizhou_llm",
     "jiangsu_zhangshicheng_llm",
@@ -130,7 +133,9 @@
     "jinshang_llm",
     "jiupin_zhongzheng_llm",
     "kanerjing_llm",
+    "li_shizhen_llm",
     "liangzhou_meeting_llm",
+    "lingqu_llm",
     "longquan_yao_llm",
     "ming_qing",
     "ming_tumu_llm",
@@ -273,6 +278,7 @@
     "yunnan_lianda_llm",
     "yunnan_nanzhao_llm",
     "yunnan_quhuanzhang_llm",
+    "zhangheng_llm",
     "zhejiang_linan",
     "zhejiang_linan_llm",
     "zhejiang_longquan",
@@ -280,10 +286,11 @@
     "zhejiang_yongjia_llm",
     "zheng_chenggong_taiwan_llm",
     "zhuxi",
+    "zu_chongzhi_llm",
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 556,
+  "leads_total": 566,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3261,6 +3268,55 @@
       "kind": "dynasty",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "dujiangyan_llm",
+      "title": "都江堰与战国蜀的水利革命",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "guo_shoujing_llm",
+      "title": "郭守敬与授时历",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "jia_sixie_llm",
+      "title": "贾思勰与齐民要术",
+      "kind": "tech",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "li_shizhen_llm",
+      "title": "李时珍与本草纲目",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "lingqu_llm",
+      "title": "灵渠与秦始皇南征岭南",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "zhangheng_llm",
+      "title": "张衡与候风地动仪",
+      "kind": "tech",
+      "assertions": 10,
+      "factions": {}
+    },
+    {
+      "id": "zu_chongzhi_llm",
+      "title": "祖冲之与圆周率",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3681,6 +3737,13 @@
     "hebei_yuanqu_llm": "元曲与关汉卿（元）",
     "henan_keju_llm": "隋唐科举制肇始（隋—唐）",
     "jiangsu_zhangshicheng_llm": "张士诚据平江（元末）",
-    "shanxi_jinyang_llm": "李渊晋阳起兵与唐室肇基（隋末）"
+    "shanxi_jinyang_llm": "李渊晋阳起兵与唐室肇基（隋末）",
+    "dujiangyan_llm": "都江堰与战国蜀的水利革命",
+    "guo_shoujing_llm": "郭守敬与授时历",
+    "jia_sixie_llm": "贾思勰与齐民要术",
+    "li_shizhen_llm": "李时珍与本草纲目",
+    "lingqu_llm": "灵渠与秦始皇南征岭南",
+    "zhangheng_llm": "张衡与候风地动仪",
+    "zu_chongzhi_llm": "祖冲之与圆周率"
   }
 }

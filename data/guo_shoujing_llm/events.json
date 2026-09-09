@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_guo_shoujing_llm_01",
+   "subject": "event:ev_guo_shoujing_llm_01",
+   "year": 1276,
+   "era": "至元十三年",
+   "title": "诏改治新历",
+   "kind": "行政",
+   "text": "元世祖诏令修订新历",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guo_shoujing_llm_02",
+   "subject": "event:ev_guo_shoujing_llm_02",
+   "year": 1276,
+   "era": "至元十三年",
+   "title": "创制天文仪器",
+   "kind": "其他",
+   "text": "郭守敬创制简仪等仪器",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guo_shoujing_llm_03",
+   "subject": "event:ev_guo_shoujing_llm_03",
+   "year": 1276,
+   "era": "至元十三年",
+   "title": "四海测验",
+   "kind": "其他",
+   "text": "设二十七所测晷景",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guo_shoujing_llm_04",
+   "subject": "event:ev_guo_shoujing_llm_04",
+   "year": 1280,
+   "era": "至元十七年",
+   "title": "颁行授时历",
+   "kind": "行政",
+   "text": "新历成，颁行天下",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -745,14 +745,14 @@ window.SANDBOX_SLICES["shanxi_jinyang_llm"] = {
    "place_id": "jinyang",
    "party": "后世官修",
    "start": 617,
-   "end": 618,
+   "end": 649,
    "timeline": "main"
   },
   {
    "place_id": "changan",
    "party": "后世官修",
    "start": 617,
-   "end": 618,
+   "end": 649,
    "timeline": "main"
   }
  ],
@@ -774,7 +774,7 @@ window.SANDBOX_SLICES["shanxi_jinyang_llm"] = {
  ],
  "control_years": [
   617,
-  618
+  649
  ],
  "vocab": {
   "layers": {

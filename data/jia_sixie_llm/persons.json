@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "JIA__p01",
+   "name": "贾思勰",
+   "role": "北魏农学家",
+   "note": "《齐民要术》作者",
+   "_source_idx": 0,
+   "_source_name": "《齐民要术》序",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p02",
+   "name": "神农",
+   "role": "传说人物",
+   "note": "制耒耜教耕",
+   "_source_idx": 0,
+   "_source_name": "《齐民要术》序",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "JIA__p03",
+   "name": "后稷",
+   "role": "周始祖",
+   "note": "播殖百谷",
+   "_source_idx": 0,
+   "_source_name": "《齐民要术》序",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

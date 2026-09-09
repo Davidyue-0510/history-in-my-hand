@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_li_shizhen_llm_01",
+   "subject": "event:ev_li_shizhen_llm_01",
+   "year": 1578,
+   "era": "万历六年",
+   "title": "《本草纲目》成书",
+   "kind": "其他",
+   "text": "李时珍历时三十年，三易其稿而成书",
+   "_source_idx": 0,
+   "_source_name": "《明史·李时珍传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_li_shizhen_llm_02",
+   "subject": "event:ev_li_shizhen_llm_02",
+   "year": 1593,
+   "era": "万历二十一年",
+   "title": "李时珍卒",
+   "kind": "其他",
+   "text": "书成将上之朝，时珍遽卒",
+   "_source_idx": 0,
+   "_source_name": "《明史·李时珍传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_li_shizhen_llm_03",
+   "subject": "event:ev_li_shizhen_llm_03",
+   "year": 1596,
+   "era": "万历二十四年",
+   "title": "子建元献书",
+   "kind": "行政",
+   "text": "神宗诏修国史，建元以遗表及书进",
+   "_source_idx": 0,
+   "_source_name": "《明史·李时珍传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_li_shizhen_llm_04",
+   "subject": "event:ev_li_shizhen_llm_04",
+   "year": 1596,
+   "era": "万历二十四年",
+   "title": "诏命刊行",
+   "kind": "行政",
+   "text": "诏命刊行，天下重之",
+   "_source_idx": 0,
+   "_source_name": "《明史·李时珍传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

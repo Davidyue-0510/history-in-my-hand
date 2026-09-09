@@ -621,7 +621,14 @@
   "hebei_yuanqu_llm",
   "henan_keju_llm",
   "jiangsu_zhangshicheng_llm",
-  "shanxi_jinyang_llm"
+  "shanxi_jinyang_llm",
+  "dujiangyan_llm",
+  "guo_shoujing_llm",
+  "jia_sixie_llm",
+  "li_shizhen_llm",
+  "lingqu_llm",
+  "zhangheng_llm",
+  "zu_chongzhi_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -33513,6 +33520,526 @@
     }
    },
    "dims": [
+    6
+   ]
+  },
+  "dujiangyan_llm": {
+   "kind": "engineering",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "都江堰与战国蜀的水利革命",
+   "dossier_label": "都江堰与战国蜀的水利革命",
+   "subtitle": "都江堰与战国蜀的水利革命",
+   "primary_place": "lijian",
+   "dossier_event": "event:ev_dujiangyan_llm_01",
+   "vocab_pack": "dujiangyan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "都江堰与战国蜀的水利革命——技术维（dim 2）最薄补强，warring_states/sichuan 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "都江堰与战国蜀的水利革命：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "都江堰与战国蜀的水利革命：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "都江堰与战国蜀的水利革命：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "都江堰与战国蜀的水利革命：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    6
+   ]
+  },
+  "guo_shoujing_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "郭守敬与授时历",
+   "dossier_label": "郭守敬与授时历",
+   "subtitle": "郭守敬与授时历",
+   "primary_place": "gaoli",
+   "dossier_event": "event:ev_guo_shoujing_llm_01",
+   "vocab_pack": "guo_shoujing_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "郭守敬与授时历——技术维（dim 2）最薄补强，yuan/hebei 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "郭守敬与授时历：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "郭守敬与授时历：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "郭守敬与授时历：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "郭守敬与授时历：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ]
+  },
+  "jia_sixie_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "贾思勰与齐民要术",
+   "dossier_label": "贾思勰与齐民要术",
+   "subtitle": "贾思勰与齐民要术",
+   "primary_place": "zhongguo",
+   "dossier_event": "event:ev_jia_sixie_llm_01",
+   "vocab_pack": "jia_sixie_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "贾思勰与齐民要术——技术维（dim 2）最薄补强，two_jin/shandong 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "贾思勰与齐民要术：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "贾思勰与齐民要术：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "贾思勰与齐民要术：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "贾思勰与齐民要术：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    5,
+    6
+   ]
+  },
+  "li_shizhen_llm": {
+   "kind": "tech",
+   "region": "hunan",
+   "province": "hubei",
+   "title": "李时珍与本草纲目",
+   "dossier_label": "李时珍与本草纲目",
+   "subtitle": "李时珍与本草纲目",
+   "primary_place": "qizhou",
+   "dossier_event": "event:ev_li_shizhen_llm_01",
+   "vocab_pack": "li_shizhen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "李时珍与本草纲目——技术维（dim 2）最薄补强，ming/hubei 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "李时珍与本草纲目：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "李时珍与本草纲目：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "李时珍与本草纲目：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "李时珍与本草纲目：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    5,
+    6
+   ]
+  },
+  "lingqu_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "guangxi",
+   "title": "灵渠与秦始皇南征岭南",
+   "dossier_label": "灵渠与秦始皇南征岭南",
+   "subtitle": "灵渠与秦始皇南征岭南",
+   "primary_place": "lingqu",
+   "dossier_event": "event:ev_lingqu_llm_01",
+   "vocab_pack": "lingqu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "灵渠与秦始皇南征岭南——技术维（dim 2）最薄补强，qin/guangxi 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "灵渠与秦始皇南征岭南：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "灵渠与秦始皇南征岭南：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "灵渠与秦始皇南征岭南：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "灵渠与秦始皇南征岭南：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "zhangheng_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "henan",
+   "title": "张衡与候风地动仪",
+   "dossier_label": "张衡与候风地动仪",
+   "subtitle": "张衡与候风地动仪",
+   "primary_place": "luoyang",
+   "dossier_event": "event:ev_zhangheng_llm_01",
+   "vocab_pack": "zhangheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "张衡与候风地动仪——技术维（dim 2）最薄补强，han/henan 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "张衡与候风地动仪：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "张衡与候风地动仪：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "张衡与候风地动仪：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "张衡与候风地动仪：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    5,
+    6
+   ]
+  },
+  "zu_chongzhi_llm": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "祖冲之与圆周率",
+   "dossier_label": "祖冲之与圆周率",
+   "subtitle": "祖冲之与圆周率",
+   "primary_place": "zu_chongzhi_llm",
+   "dossier_event": "event:ev_zu_chongzhi_llm_01",
+   "vocab_pack": "zu_chongzhi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "祖冲之与圆周率——技术维（dim 2）最薄补强，two_jin/jiangsu 跨时代科技切片。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "祖冲之与圆周率：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "祖冲之与圆周率：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "祖冲之与圆周率：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "祖冲之与圆周率：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    5,
     6
    ]
   }
