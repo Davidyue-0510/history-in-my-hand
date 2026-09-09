@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "HEB__p01",
+   "name": "关汉卿",
+   "role": "元曲作家",
+   "note": "大都人，元曲四大家之首",
+   "_source_idx": 0,
+   "_source_name": "录鬼簿 / 元曲选·关汉卿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p02",
+   "name": "马致远",
+   "role": "元曲作家",
+   "note": "元曲四大家之一",
+   "_source_idx": 0,
+   "_source_name": "录鬼簿 / 元曲选·关汉卿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p03",
+   "name": "郑光祖",
+   "role": "元曲作家",
+   "note": "元曲四大家之一",
+   "_source_idx": 0,
+   "_source_name": "录鬼簿 / 元曲选·关汉卿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p04",
+   "name": "白朴",
+   "role": "元曲作家",
+   "note": "元曲四大家之一",
+   "_source_idx": 0,
+   "_source_name": "录鬼簿 / 元曲选·关汉卿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

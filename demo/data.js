@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 413 个切片
+// 权威数据源：data/scenes.json 注册的 418 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 413 个切片",
+  "slice": "multi-scene · 418 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -53,6 +53,7 @@ window.SANDBOX_DATA = {
    "fujian_tea_llm",
    "fujian_tulou",
    "fujian_xiamen_llm",
+   "fujian_yisibaxi_llm",
    "fujian_zen_llm",
    "gansu_dunhuang_llm",
    "gansu_hexi",
@@ -91,6 +92,7 @@ window.SANDBOX_DATA = {
    "hebei_kailuan_llm",
    "hebei_shanhaiguan",
    "hebei_yanzhao_wenhua_llm",
+   "hebei_yuanqu_llm",
    "hebei_zhaozhou",
    "hebei_zhili_llm",
    "hebei_zhili_xinzheng_llm",
@@ -99,6 +101,7 @@ window.SANDBOX_DATA = {
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "heilongjiang_suifenhe_llm",
+   "henan_keju_llm",
    "henan_zhengzhuang_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
@@ -113,6 +116,7 @@ window.SANDBOX_DATA = {
    "hunan_yuelu",
    "jiangsu_jihu_llm",
    "jiangsu_taizhou_llm",
+   "jiangsu_zhangshicheng_llm",
    "jiangxi_bailudong",
    "jiangxi_ganjiang_llm",
    "jiangxi_jingdezhen",
@@ -184,6 +188,7 @@ window.SANDBOX_DATA = {
    "shanghai_xinhai_llm",
    "shanxi_jinshang_llm",
    "shanxi_jinwen_llm",
+   "shanxi_jinyang_llm",
    "shanxi_pingyao_llm",
    "shanxi_sanjiafenjin",
    "shanxi_xunzi_llm",
@@ -945,7 +950,12 @@ window.SANDBOX_DATA = {
   "shaanxi_zhouyuan_llm",
   "shandong_guanzhong_llm",
   "shanxi_jinwen_llm",
-  "tianjin_xiaozhan_llm"
+  "tianjin_xiaozhan_llm",
+  "fujian_yisibaxi_llm",
+  "hebei_yuanqu_llm",
+  "henan_keju_llm",
+  "jiangsu_zhangshicheng_llm",
+  "shanxi_jinyang_llm"
  ],
  "vocab": {
   "layers": [
@@ -28303,6 +28313,113 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "huabei",
    "scale_tier": "operational"
+  },
+  "fujian_yisibaxi_llm": {
+   "key": "fujian_yisibaxi_llm",
+   "scene_id": "fujian_yisibaxi_llm",
+   "title": "元末闽海亦思巴奚之乱（元末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "jiangnan",
+   "page": "county.html?scene=fujian_yisibaxi_llm",
+   "primary_place": "quanzhou",
+   "vocab_pack": "inline:fujian_yisibaxi_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "yuan_ming",
+   "scale_tier": "operational"
+  },
+  "hebei_yuanqu_llm": {
+   "key": "hebei_yuanqu_llm",
+   "scene_id": "hebei_yuanqu_llm",
+   "title": "元曲与关汉卿（元）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_yuanqu_llm",
+   "primary_place": "dadou",
+   "vocab_pack": "inline:hebei_yuanqu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational"
+  },
+  "henan_keju_llm": {
+   "key": "henan_keju_llm",
+   "scene_id": "henan_keju_llm",
+   "title": "隋唐科举制肇始（隋—唐）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "huabei",
+   "page": "county.html?scene=henan_keju_llm",
+   "primary_place": "chang_an",
+   "vocab_pack": "inline:henan_keju_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational"
+  },
+  "jiangsu_zhangshicheng_llm": {
+   "key": "jiangsu_zhangshicheng_llm",
+   "scene_id": "jiangsu_zhangshicheng_llm",
+   "title": "张士诚据平江（元末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "page": "county.html?scene=jiangsu_zhangshicheng_llm",
+   "primary_place": "gaoyou",
+   "vocab_pack": "inline:jiangsu_zhangshicheng_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "epoch": "yuan_ming",
+   "scale_tier": "operational"
+  },
+  "shanxi_jinyang_llm": {
+   "key": "shanxi_jinyang_llm",
+   "scene_id": "shanxi_jinyang_llm",
+   "title": "李渊晋阳起兵与唐室肇基（隋末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "huabei",
+   "page": "county.html?scene=shanxi_jinyang_llm",
+   "primary_place": "jinyang",
+   "vocab_pack": "inline:shanxi_jinyang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    6
+   ],
+   "epoch": "sui_yuan",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28718,7 +28835,12 @@ window.SANDBOX_DATA = {
   "shaanxi_zhouyuan_llm": "slices/shaanxi_zhouyuan_llm.js",
   "shandong_guanzhong_llm": "slices/shandong_guanzhong_llm.js",
   "shanxi_jinwen_llm": "slices/shanxi_jinwen_llm.js",
-  "tianjin_xiaozhan_llm": "slices/tianjin_xiaozhan_llm.js"
+  "tianjin_xiaozhan_llm": "slices/tianjin_xiaozhan_llm.js",
+  "fujian_yisibaxi_llm": "slices/fujian_yisibaxi_llm.js",
+  "hebei_yuanqu_llm": "slices/hebei_yuanqu_llm.js",
+  "henan_keju_llm": "slices/henan_keju_llm.js",
+  "jiangsu_zhangshicheng_llm": "slices/jiangsu_zhangshicheng_llm.js",
+  "shanxi_jinyang_llm": "slices/shanxi_jinyang_llm.js"
  },
  "corridors": [
   {

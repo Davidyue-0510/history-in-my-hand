@@ -1501,6 +1501,21 @@
    "_src_line": 11
   },
   {
+   "id": "FUJ_013",
+   "scene": "fujian_yisibaxi_llm",
+   "subject": "event:ev_fujian_yisibaxi_llm_01",
+   "title": "乱事细节不详",
+   "missing": "文献考据",
+   "where": "泉州地方志",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "补充乱事细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
    "id": "FUJ_015",
    "scene": "fujian_zen_llm",
    "subject": "place:xuefeng",
@@ -2459,6 +2474,22 @@
    "_src_line": 13
   },
   {
+   "id": "HEB_015",
+   "scene": "hebei_yuanqu_llm",
+   "subject": "event:ev_hebei_yuanqu_llm_01",
+   "title": "元曲具体演出记载不详",
+   "missing": "考古 / 文献",
+   "where": "大都勾栏遗址",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "出土剧本或演出记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "HEB_014",
    "scene": "hebei_zhaozhou",
    "subject": "event:ev_hebei_zhaozhou_01",
@@ -2615,6 +2646,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "HEN_012",
+   "scene": "henan_keju_llm",
+   "subject": "event:ev_henan_keju_llm_03",
+   "title": "隋唐科举具体实施细节记载有限",
+   "missing": "考古发掘 / 文献考据",
+   "where": "隋唐长安洛阳遗址",
+   "skills": [
+    "考古发掘",
+    "文献考据"
+   ],
+   "accept": "科举制度细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "HEN_013",
@@ -3225,6 +3272,37 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "JIA_013",
+   "scene": "jiangsu_zhangshicheng_llm",
+   "subject": "event:ev_jiangsu_zhangshicheng_llm_02",
+   "title": "平江繁华时期人口规模不详",
+   "missing": "方志检索 / 人口史",
+   "where": "平江府志或元末方志",
+   "skills": [
+    "方志检索",
+    "人口史"
+   ],
+   "accept": "平江在张士诚治下的人口数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "JIA_014",
+   "scene": "jiangsu_zhangshicheng_llm",
+   "subject": "event:ev_jiangsu_zhangshicheng_llm_03",
+   "title": "朱元璋围困平江的具体时长不明",
+   "missing": "编年史考据",
+   "where": "明太祖实录",
+   "skills": [
+    "编年史考据"
+   ],
+   "accept": "围城开始与结束的具体年月",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "JIA_012",
@@ -5668,6 +5746,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "SHA_011",
+   "scene": "shanxi_jinyang_llm",
+   "subject": "event:ev_shanxi_jinyang_llm_01",
+   "title": "李渊起兵时兵力不详",
+   "missing": "军事史 / 文献考据",
+   "where": "晋阳起兵相关记载",
+   "skills": [
+    "军事史",
+    "文献考据"
+   ],
+   "accept": "需查考《大唐创业起居注》等",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "SHA_015",

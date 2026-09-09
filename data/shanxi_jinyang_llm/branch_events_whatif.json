@@ -1,0 +1,427 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "shanxi_jinyang_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  617,
+  649
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 619,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.438,
+    "cum": -0.182
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 620,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.42 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.417,
+    "cum": -0.243
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 621,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.40 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.396,
+    "cum": -0.304
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 622,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.38 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.376,
+    "cum": -0.364
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 623,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.36 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.355,
+    "cum": -0.425
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 624,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.33 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.334,
+    "cum": -0.486
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 625,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.31 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.314,
+    "cum": -0.546
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 626,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.29 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.293,
+    "cum": -0.607
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 627,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.27 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.272,
+    "cum": -0.668
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 628,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.25 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.251,
+    "cum": -0.729
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 629,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.231,
+    "cum": -0.769
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 630,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.21,
+    "cum": -0.79
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 631,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.189,
+    "cum": -0.811
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 632,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.169,
+    "cum": -0.831
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 633,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.148,
+    "cum": -0.852
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 634,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.127,
+    "cum": -0.873
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 635,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.107,
+    "cum": -0.893
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 636,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.086,
+    "cum": -0.914
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 637,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.07 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.065,
+    "cum": -0.935
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 638,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.044,
+    "cum": -0.956
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 639,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.024,
+    "cum": -0.976
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 640,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.003,
+    "cum": -0.997
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 641,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 642,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 643,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 644,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 645,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 646,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 647,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 648,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "divergence",
+   "year": 649,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "jinyang"
+  },
+  {
+   "kind": "summary",
+   "year": 649,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jinyang"
+  }
+ ]
+}

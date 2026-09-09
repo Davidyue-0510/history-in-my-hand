@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangsu_zhangshicheng_llm_01",
+   "subject": "event:ev_jiangsu_zhangshicheng_llm_01",
+   "year": 1353,
+   "era": "元至正十三年",
+   "title": "张士诚起兵高邮",
+   "kind": "战事",
+   "text": "盐贩张士诚于高邮起兵反元",
+   "_source_idx": 0,
+   "_source_name": "明史·张士诚传 / 国初群雄事略",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangsu_zhangshicheng_llm_02",
+   "subject": "event:ev_jiangsu_zhangshicheng_llm_02",
+   "year": 1356,
+   "era": "元至正十六年",
+   "title": "张士诚陷平江",
+   "kind": "战事",
+   "text": "张士诚攻占平江，称周王",
+   "_source_idx": 0,
+   "_source_name": "明史·张士诚传 / 国初群雄事略",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangsu_zhangshicheng_llm_03",
+   "subject": "event:ev_jiangsu_zhangshicheng_llm_03",
+   "year": 1367,
+   "era": "元至正二十七年",
+   "title": "朱元璋破平江",
+   "kind": "战事",
+   "text": "朱元璋围城，张士诚自缢，城破",
+   "_source_idx": 0,
+   "_source_name": "明史·张士诚传 / 国初群雄事略",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

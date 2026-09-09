@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HEN__p01",
+   "name": "隋文帝",
+   "role": "隋朝开国皇帝",
+   "note": "废九品中正，开创科举先声",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEN__p02",
+   "name": "隋炀帝",
+   "role": "隋朝皇帝",
+   "note": "大业中置进士科，以试策取士",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEN__p03",
+   "name": "唐太宗",
+   "role": "唐朝皇帝",
+   "note": "见新科进士，言天下英雄入吾彀中",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

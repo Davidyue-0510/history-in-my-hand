@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_henan_keju_llm_01",
+   "subject": "event:ev_henan_keju_llm_01",
+   "year": 587,
+   "era": "隋开皇七年",
+   "title": "隋文帝废九品中正",
+   "kind": "制度",
+   "text": "隋文帝废九品中正，开科举先声",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_henan_keju_llm_02",
+   "subject": "event:ev_henan_keju_llm_02",
+   "year": 605,
+   "era": "隋大业元年",
+   "title": "隋炀帝置进士科",
+   "kind": "制度",
+   "text": "隋炀帝大业中置进士科，以试策取士",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_henan_keju_llm_03",
+   "subject": "event:ev_henan_keju_llm_03",
+   "year": 627,
+   "era": "唐贞观元年",
+   "title": "唐承隋制行科举",
+   "kind": "制度",
+   "text": "唐承隋制，明经进士分科取士",
+   "_source_idx": 0,
+   "_source_name": "隋书·炀帝纪 / 通典·选举",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

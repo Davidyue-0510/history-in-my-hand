@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_yisibaxi_llm_01",
+   "subject": "event:ev_fujian_yisibaxi_llm_01",
+   "year": 1357,
+   "era": "至正十七年",
+   "title": "亦思巴奚之乱起",
+   "kind": "战事",
+   "text": "那兀纳据泉州，泉漳相攻",
+   "_source_idx": 0,
+   "_source_name": "岛夷志略 / 泉州府志·兵氛",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_yisibaxi_llm_02",
+   "subject": "event:ev_fujian_yisibaxi_llm_02",
+   "year": 1366,
+   "era": "至正二十六年",
+   "title": "市舶衰微",
+   "kind": "其他",
+   "text": "舟舶星散，蕃商流散",
+   "_source_idx": 0,
+   "_source_name": "岛夷志略 / 泉州府志·兵氛",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_yisibaxi_llm_03",
+   "subject": "event:ev_fujian_yisibaxi_llm_03",
+   "year": 1368,
+   "era": "明初",
+   "title": "明初徙众戍海",
+   "kind": "行政",
+   "text": "明初徙其众，戍沿海",
+   "_source_idx": 0,
+   "_source_name": "岛夷志略 / 泉州府志·兵氛",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 413,
-  "historical": 404,
+  "scenes_total": 418,
+  "historical": 409,
   "fictional": 9,
-  "assertions_total": 6107,
-  "sources_total": 390,
+  "assertions_total": 6174,
+  "sources_total": 395,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -49,6 +49,7 @@
     "fujian_tea_llm",
     "fujian_tulou",
     "fujian_xiamen_llm",
+    "fujian_yisibaxi_llm",
     "fujian_zen_llm",
     "gansu_dunhuang_llm",
     "gansu_hexi",
@@ -87,6 +88,7 @@
     "hebei_kailuan_llm",
     "hebei_shanhaiguan",
     "hebei_yanzhao_wenhua_llm",
+    "hebei_yuanqu_llm",
     "hebei_zhaozhou",
     "hebei_zhili_llm",
     "hebei_zhili_xinzheng_llm",
@@ -95,6 +97,7 @@
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
     "heilongjiang_suifenhe_llm",
+    "henan_keju_llm",
     "henan_zhengzhuang_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
@@ -109,6 +112,7 @@
     "hunan_yuelu",
     "jiangsu_jihu_llm",
     "jiangsu_taizhou_llm",
+    "jiangsu_zhangshicheng_llm",
     "jiangxi_bailudong",
     "jiangxi_ganjiang_llm",
     "jiangxi_jingdezhen",
@@ -180,6 +184,7 @@
     "shanghai_xinhai_llm",
     "shanxi_jinshang_llm",
     "shanxi_jinwen_llm",
+    "shanxi_jinyang_llm",
     "shanxi_pingyao_llm",
     "shanxi_sanjiafenjin",
     "shanxi_xunzi_llm",
@@ -278,7 +283,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 550,
+  "leads_total": 556,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3221,6 +3226,41 @@
       "kind": "reform",
       "assertions": 10,
       "factions": {}
+    },
+    {
+      "id": "fujian_yisibaxi_llm",
+      "title": "元末闽海亦思巴奚之乱（元末）",
+      "kind": "uprising",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "hebei_yuanqu_llm",
+      "title": "元曲与关汉卿（元）",
+      "kind": "thought",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "henan_keju_llm",
+      "title": "隋唐科举制肇始（隋—唐）",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "jiangsu_zhangshicheng_llm",
+      "title": "张士诚据平江（元末）",
+      "kind": "dynasty",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shanxi_jinyang_llm",
+      "title": "李渊晋阳起兵与唐室肇基（隋末）",
+      "kind": "dynasty",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3636,6 +3676,11 @@
     "shaanxi_zhouyuan_llm": "周原与西周封建肇基（西周）",
     "shandong_guanzhong_llm": "管仲相齐与齐桓公霸业（春秋）",
     "shanxi_jinwen_llm": "晋文公称霸与城濮之役（春秋）",
-    "tianjin_xiaozhan_llm": "小站练兵与北洋新军（1895）"
+    "tianjin_xiaozhan_llm": "小站练兵与北洋新军（1895）",
+    "fujian_yisibaxi_llm": "元末闽海亦思巴奚之乱（元末）",
+    "hebei_yuanqu_llm": "元曲与关汉卿（元）",
+    "henan_keju_llm": "隋唐科举制肇始（隋—唐）",
+    "jiangsu_zhangshicheng_llm": "张士诚据平江（元末）",
+    "shanxi_jinyang_llm": "李渊晋阳起兵与唐室肇基（隋末）"
   }
 }

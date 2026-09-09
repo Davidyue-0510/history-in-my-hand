@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "quanzhou",
+      "name": "泉州",
+      "type": "city",
+      "modern": "今中国福建省泉州市",
+      "note": "亦思巴奚之乱中心",
+      "_source_idx": 0,
+      "_source_name": "岛夷志略 / 泉州府志·兵氛",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 118.58,
+      "lat": 24.91,
+      "geo_note": "吕惠卿故里，今福建泉州"
+    },
+    {
+      "id": "zhangzhou",
+      "name": "漳州",
+      "type": "city",
+      "modern": "今中国福建省漳州市",
+      "note": "与泉州相攻",
+      "_source_idx": 0,
+      "_source_name": "岛夷志略 / 泉州府志·兵氛",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "fujian_coast",
+      "name": "闽海",
+      "type": "region",
+      "modern": "今中国福建省沿海",
+      "note": "明初戍守之地",
+      "_source_idx": 0,
+      "_source_name": "岛夷志略 / 泉州府志·兵氛",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

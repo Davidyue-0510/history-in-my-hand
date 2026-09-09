@@ -616,7 +616,12 @@
   "shaanxi_zhouyuan_llm",
   "shandong_guanzhong_llm",
   "shanxi_jinwen_llm",
-  "tianjin_xiaozhan_llm"
+  "tianjin_xiaozhan_llm",
+  "fujian_yisibaxi_llm",
+  "hebei_yuanqu_llm",
+  "henan_keju_llm",
+  "jiangsu_zhangshicheng_llm",
+  "shanxi_jinyang_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -33136,6 +33141,378 @@
     2,
     3,
     5,
+    6
+   ]
+  },
+  "fujian_yisibaxi_llm": {
+   "kind": "uprising",
+   "region": "jiangnan",
+   "province": "fujian",
+   "title": "元末闽海亦思巴奚之乱（元末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "quanzhou",
+   "dossier_event": "event:ev_fujian_yisibaxi_llm_01",
+   "vocab_pack": "fujian_yisibaxi_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan_ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "元末闽海亦思巴奚之乱（元末）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "元末闽海亦思巴奚之乱（元末）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "元末闽海亦思巴奚之乱（元末）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "元末闽海亦思巴奚之乱（元末）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "hebei_yuanqu_llm": {
+   "kind": "thought",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "元曲与关汉卿（元）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "dadou",
+   "dossier_event": "event:ev_hebei_yuanqu_llm_01",
+   "vocab_pack": "hebei_yuanqu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "元曲与关汉卿（元）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "元曲与关汉卿（元）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "元曲与关汉卿（元）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "元曲与关汉卿（元）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ]
+  },
+  "henan_keju_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "henan",
+   "title": "隋唐科举制肇始（隋—唐）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chang_an",
+   "dossier_event": "event:ev_henan_keju_llm_01",
+   "vocab_pack": "henan_keju_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "隋唐科举制肇始（隋—唐）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "隋唐科举制肇始（隋—唐）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "隋唐科举制肇始（隋—唐）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "隋唐科举制肇始（隋—唐）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "jiangsu_zhangshicheng_llm": {
+   "kind": "dynasty",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "张士诚据平江（元末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "gaoyou",
+   "dossier_event": "event:ev_jiangsu_zhangshicheng_llm_01",
+   "vocab_pack": "jiangsu_zhangshicheng_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan_ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "张士诚据平江（元末）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "张士诚据平江（元末）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "张士诚据平江（元末）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "张士诚据平江（元末）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "shanxi_jinyang_llm": {
+   "kind": "dynasty",
+   "region": "huabei",
+   "province": "shanxi",
+   "title": "李渊晋阳起兵与唐室肇基（隋末）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jinyang",
+   "dossier_event": "event:ev_shanxi_jinyang_llm_01",
+   "vocab_pack": "shanxi_jinyang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "sui_yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "李渊晋阳起兵与唐室肇基（隋末）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "李渊晋阳起兵与唐室肇基（隋末）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "李渊晋阳起兵与唐室肇基（隋末）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "李渊晋阳起兵与唐室肇基（隋末）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
     6
    ]
   }

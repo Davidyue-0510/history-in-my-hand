@@ -83,6 +83,7 @@ window.SANDBOX_RESONANCE = {
    "fujian_tea_llm",
    "fujian_tulou",
    "fujian_xiamen_llm",
+   "fujian_yisibaxi_llm",
    "fujian_zen_llm",
    "fushun",
    "fuzhou",
@@ -134,6 +135,7 @@ window.SANDBOX_RESONANCE = {
    "hebei_kailuan_llm",
    "hebei_shanhaiguan",
    "hebei_yanzhao_wenhua_llm",
+   "hebei_yuanqu_llm",
    "hebei_zhaozhou",
    "hebei_zhili_llm",
    "hebei_zhili_xinzheng_llm",
@@ -142,6 +144,7 @@ window.SANDBOX_RESONANCE = {
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "heilongjiang_suifenhe_llm",
+   "henan_keju_llm",
    "henan_zhengzhuang_llm",
    "heshangyuan",
    "hexi_sijun_llm",
@@ -165,6 +168,7 @@ window.SANDBOX_RESONANCE = {
    "imjin",
    "jiangsu_jihu_llm",
    "jiangsu_taizhou_llm",
+   "jiangsu_zhangshicheng_llm",
    "jiangxi_bailudong",
    "jiangxi_ganjiang_llm",
    "jiangxi_jingdezhen",
@@ -270,6 +274,7 @@ window.SANDBOX_RESONANCE = {
    "shangyang",
    "shanxi_jinshang_llm",
    "shanxi_jinwen_llm",
+   "shanxi_jinyang_llm",
    "shanxi_pingyao_llm",
    "shanxi_sanjiafenjin",
    "shanxi_xunzi_llm",
@@ -1789,6 +1794,24 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "fujian_yisibaxi_llm",
+   "name": "fujian_yisibaxi_llm",
+   "total": 13,
+   "layers": {
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_fujian_yisibaxi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "fujian_zen_llm",
    "name": "fujian_zen_llm",
    "total": 15,
@@ -2764,6 +2787,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "hebei_yuanqu_llm",
+   "name": "hebei_yuanqu_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hebei_yuanqu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "hebei_zhaozhou",
    "name": "hebei_zhaozhou",
    "total": 14,
@@ -2913,6 +2955,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_heilongjiang_suifenhe_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "henan_keju_llm",
+   "name": "henan_keju_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_henan_keju_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3359,6 +3420,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_jiangsu_taizhou_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jiangsu_zhangshicheng_llm",
+   "name": "jiangsu_zhangshicheng_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jiangsu_zhangshicheng_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -5378,6 +5458,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_shanxi_jinwen_llm_02",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "shanxi_jinyang_llm",
+   "name": "shanxi_jinyang_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 4,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_shanxi_jinyang_llm_01",
    "best_resonance": 0.0
   },
   {

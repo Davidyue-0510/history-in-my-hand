@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "李渊",
+   "role": "隋太原留守，后为唐高祖",
+   "note": "晋阳起兵之主谋",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·高祖本纪 / 资治通鉴·隋纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "李世民",
+   "role": "李渊次子，后为唐太宗",
+   "note": "劝说李渊起兵",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·高祖本纪 / 资治通鉴·隋纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "王威",
+   "role": "隋太原副留守",
+   "note": "被李渊斩杀",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·高祖本纪 / 资治通鉴·隋纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p04",
+   "name": "高君雅",
+   "role": "隋太原副留守",
+   "note": "被李渊斩杀",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·高祖本纪 / 资治通鉴·隋纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p05",
+   "name": "隋恭帝",
+   "role": "隋朝傀儡皇帝",
+   "note": "李渊立其为帝",
+   "_source_idx": 0,
+   "_source_name": "旧唐书·高祖本纪 / 资治通鉴·隋纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

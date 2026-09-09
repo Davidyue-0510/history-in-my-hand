@@ -1,0 +1,1051 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "hebei_yuanqu_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1239,
+  1319
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1241,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.41 / 史实 0.59）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.59,
+    "new_to": 0.41,
+    "cum": -0.18
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1242,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.38 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.38,
+    "cum": -0.24
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1243,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.35 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.35,
+    "cum": -0.3
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1244,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.32 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.32,
+    "cum": -0.36
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1245,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.29 / 史实 0.71）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.71,
+    "new_to": 0.29,
+    "cum": -0.42
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1246,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.48（本支 0.26 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.26,
+    "cum": -0.48
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1247,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.54（本支 0.23 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.23,
+    "cum": -0.54
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1248,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.20 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.2,
+    "cum": -0.6
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1249,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.17 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.17,
+    "cum": -0.66
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1250,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.14 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.14,
+    "cum": -0.72
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1251,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.11 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.11,
+    "cum": -0.78
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1252,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.08 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.08,
+    "cum": -0.84
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1253,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.05 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.05,
+    "cum": -0.9
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1254,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.02 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.02,
+    "cum": -0.96
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1255,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1256,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1257,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1258,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1259,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1260,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1261,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1262,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1263,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1264,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1265,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1266,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1267,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1268,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1269,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1270,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1271,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1272,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1273,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1274,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1275,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1276,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1277,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1278,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1279,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1280,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1281,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1282,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1283,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1284,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1285,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1286,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1287,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1288,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1289,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1290,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1291,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1292,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1293,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1294,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1295,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1296,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1297,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1298,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1299,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1300,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1301,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1302,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1303,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1304,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1305,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1306,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1307,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1308,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1309,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1310,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1311,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1312,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1313,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1314,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1315,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1316,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1317,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1318,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1319,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "dadou"
+  },
+  {
+   "kind": "summary",
+   "year": 1319,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "dadou"
+  }
+ ]
+}

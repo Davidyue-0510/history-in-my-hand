@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "fujian_yisibaxi_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1341,
+  1368
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1345,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.16（本支 0.36 / 史实 0.20）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.2,
+    "new_to": 0.356,
+    "cum": 0.156
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1346,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.19（本支 0.33 / 史实 0.14）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.14,
+    "new_to": 0.327,
+    "cum": 0.187
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1347,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.22（本支 0.30 / 史实 0.08）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.08,
+    "new_to": 0.298,
+    "cum": 0.218
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1348,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.25（本支 0.27 / 史实 0.02）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.02,
+    "new_to": 0.269,
+    "cum": 0.249
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1349,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.24（本支 0.24 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.24,
+    "cum": 0.24
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1350,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.21（本支 0.21 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.211,
+    "cum": 0.211
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1351,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.18（本支 0.18 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.182,
+    "cum": 0.182
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1352,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.15（本支 0.15 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.154,
+    "cum": 0.154
+   },
+   "place_id": "quanzhou"
+  },
+  {
+   "kind": "summary",
+   "year": 1368,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.00 / 史实 0.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "quanzhou"
+  }
+ ]
+}

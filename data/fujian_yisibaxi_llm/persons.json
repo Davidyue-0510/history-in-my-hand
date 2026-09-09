@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "FUJ__p01",
+   "name": "那兀纳",
+   "role": "亦思巴奚首领",
+   "note": "蒲寿庚之婿，据泉州城",
+   "_source_idx": 0,
+   "_source_name": "岛夷志略 / 泉州府志·兵氛",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "FUJ__p02",
+   "name": "蒲寿庚",
+   "role": "泉州蕃商首领",
+   "note": "其婿那兀纳据城作乱",
+   "_source_idx": 0,
+   "_source_name": "岛夷志略 / 泉州府志·兵氛",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

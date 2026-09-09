@@ -1,0 +1,102 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "jiangsu_zhangshicheng_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1353,
+  1367
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1362,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.644,
+    "cum": -0.156
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1363,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.66 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.659,
+    "cum": -0.171
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1364,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.67 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.673,
+    "cum": -0.187
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1365,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.69 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.688,
+    "cum": -0.202
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1366,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.70 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.702,
+    "cum": -0.218
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1367,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.72 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.716,
+    "cum": -0.234
+   },
+   "place_id": "gaoyou"
+  },
+  {
+   "kind": "summary",
+   "year": 1367,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.72 / 史实 0.95（偏离 -0.23）",
+   "evidence": {
+    "cum": -0.234,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "gaoyou"
+  }
+ ]
+}
