@@ -10,9 +10,9 @@
    "_source_name": "《陶记》与景德镇窑事",
    "_source_party": "宋官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 117.18,
+   "lat": 29.27,
+   "geo_note": "今江西景德镇市"
   },
   {
    "id": "changnan",
@@ -24,9 +24,9 @@
    "_source_name": "《陶记》与景德镇窑事",
    "_source_party": "宋官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 117.18,
+   "lat": 29.27,
+   "geo_note": "今江西景德镇（昌南镇）"
   }
  ],
  "rivers": [],

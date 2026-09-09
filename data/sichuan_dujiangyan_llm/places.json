@@ -10,9 +10,9 @@
    "_source_name": "都江堰史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 103.62,
+   "lat": 31.0,
+   "geo_note": "今四川都江堰市"
   },
   {
    "id": "minjiang",
@@ -24,9 +24,9 @@
    "_source_name": "都江堰史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 103.4,
+   "lat": 31.0,
+   "geo_note": "今四川岷江（代表点）"
   },
   {
    "id": "chengdu_pingyuan",

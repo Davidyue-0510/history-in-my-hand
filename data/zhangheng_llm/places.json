@@ -1,18 +1,18 @@
 {
-  "places": [
-    {
-      "id": "luoyang",
-      "name": "洛陽",
-      "type": "city",
-      "modern": "今中國河南省洛陽市",
-      "note": "東漢都城",
-      "_source_idx": 0,
-      "_source_name": "《后汉书·张衡传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "luoyang",
+   "name": "洛陽",
+   "type": "city",
+   "modern": "今中國河南省洛陽市",
+   "note": "東漢都城",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·张衡传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.45,
+   "lat": 34.62,
+   "geo_note": "今河南洛阳市"
+  }
+ ]
 }

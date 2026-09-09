@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["qin_fenshu_llm"] = {
   "kind": "thought",
   "scale_tier": "strategic",
   "region": "guangzhong",
-  "province": null,
+  "province": "shaanxi",
   "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
   "dossier_label": "秦·焚书坑儒（LLM 抽取落库）",
   "subtitle": "中央集权对思想多元的清洗",

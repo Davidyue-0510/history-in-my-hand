@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["bencao"] = {
     "note": "本草纲目·授时历：地缘战略——传于东邻"
    }
   },
-  "province": null,
+  "province": "hubei",
   "page": "county.html?scene=bencao",
   "key": "bencao",
   "scene_id": "bencao",

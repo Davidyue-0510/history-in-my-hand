@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["locust"] = {
     "note": "蝗灾：地缘战略——蝗伤稼"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=locust",
   "key": "locust",
   "scene_id": "locust",

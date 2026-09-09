@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["song_chanchuan_llm"] = {
   "kind": "exchange",
   "scale_tier": "strategic",
   "region": "song",
-  "province": null,
+  "province": "henan",
   "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
   "dossier_label": "宋·澶渊之盟（LLM 抽取落库）",
   "subtitle": "宋辽百年和平的条约基线",

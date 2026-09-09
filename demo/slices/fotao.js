@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["fotao"] = {
     "note": "佛教传入：地缘战略——立白马寺"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=fotao",
   "key": "fotao",
   "scene_id": "fotao",

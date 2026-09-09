@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["tang_liangshuifa"] = {
     "note": "两税法：中唐财政改革，藩镇与中央博弈下的制度选择"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=tang_liangshuifa",
   "key": "tang_liangshuifa",
   "scene_id": "tang_liangshuifa",

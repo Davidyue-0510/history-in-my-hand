@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["lixue"] = {
     "note": "宋明理学：地缘战略——朱熹与陆九渊论辩"
    }
   },
-  "province": null,
+  "province": "jiangxi",
   "page": "county.html?scene=lixue",
   "key": "lixue",
   "scene_id": "lixue",

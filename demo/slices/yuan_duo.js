@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["yuan_duo"] = {
     "note": "元多元一体：地缘战略——多元融合"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=yuan_duo",
   "key": "yuan_duo",
   "scene_id": "yuan_duo",

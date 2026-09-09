@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["little_ice"] = {
     "note": "明末小冰期饥荒：地缘战略——饥馑荐臻，乱端萌焉"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=little_ice",
   "key": "little_ice",
   "scene_id": "little_ice",

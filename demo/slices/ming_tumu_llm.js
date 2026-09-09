@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["ming_tumu_llm"] = {
   "kind": "battle",
   "scale_tier": "operational",
   "region": "huabei",
-  "province": null,
+  "province": "hebei",
   "title": "明·土木堡之变（LLM 抽取·人工校订）",
   "dossier_label": "明·土木堡之变（LLM 抽取落库）",
   "subtitle": "亲征溃败与英宗北狩",

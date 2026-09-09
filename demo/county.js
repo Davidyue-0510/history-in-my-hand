@@ -142,7 +142,7 @@
   /* ═══════════ 状态 ═══════════ */
   var state = {
     sources: new Set(D.sources.map(function (s) { return s.id; })),
-    layers:  new Set(['record', 'scholarship', 'gap'].concat(D.faction_geo ? ['faction_geo'] : [])),
+    layers:  new Set(['record', 'scholarship', 'inference', 'gap'].concat(D.faction_geo ? ['faction_geo'] : [])),
     terrain: { on: true, elev: false },   // v0.45：on=显示真实 DemTopo 栅格底图；elev=地点标注海拔
     terrainOffGrid: OFF_GRID,
     route:   true,

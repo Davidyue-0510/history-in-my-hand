@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["dunzun"] = {
     "note": "独尊儒术：地缘战略——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=dunzun",
   "key": "dunzun",
   "scene_id": "dunzun",

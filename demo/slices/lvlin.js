@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["lvlin"] = {
     "note": "绿林赤眉：地缘战略——新亡"
    }
   },
-  "province": null,
+  "province": "hubei",
   "page": "county.html?scene=lvlin",
   "key": "lvlin",
   "scene_id": "lvlin",

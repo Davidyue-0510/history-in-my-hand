@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["great_wall"] = {
     "note": "长城：地缘战略——万历年间明重筑蓟镇边墙"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=great_wall",
   "key": "great_wall",
   "scene_id": "great_wall",

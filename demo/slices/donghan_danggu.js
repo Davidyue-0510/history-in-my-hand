@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["donghan_danggu"] = {
     "note": "党锢之祸：地缘战略——清流以太学为舆论场，标榜名节攻宦官；宦官挟幼主、诬结党，以「诽讪」罪反制——皇权与士族的结构性对撞。"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=donghan_danggu",
   "key": "donghan_danggu",
   "scene_id": "donghan_danggu",

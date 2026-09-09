@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "macau",
-      "name": "澳門",
-      "type": "city",
-      "modern": "今中国澳门",
-      "note": "圣保禄学院所在地",
-      "_source_idx": 0,
-      "_source_name": "澳门圣保禄学院史 / 方志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "stpaul_ruins",
-      "name": "大三巴牌坊",
-      "type": "fortress",
-      "modern": "今澳门大三巴",
-      "note": "圣保禄学院前壁",
-      "_source_idx": 0,
-      "_source_name": "澳门圣保禄学院史 / 方志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "macau",
+   "name": "澳門",
+   "type": "city",
+   "modern": "今中国澳门",
+   "note": "圣保禄学院所在地",
+   "_source_idx": 0,
+   "_source_name": "澳门圣保禄学院史 / 方志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.54,
+   "lat": 22.2,
+   "geo_note": "今中国澳门"
+  },
+  {
+   "id": "stpaul_ruins",
+   "name": "大三巴牌坊",
+   "type": "fortress",
+   "modern": "今澳门大三巴",
+   "note": "圣保禄学院前壁",
+   "_source_idx": 0,
+   "_source_name": "澳门圣保禄学院史 / 方志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 113.54,
+   "lat": 22.19,
+   "geo_note": "今澳门大三巴"
+  }
+ ]
 }

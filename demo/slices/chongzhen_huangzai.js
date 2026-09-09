@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["chongzhen_huangzai"] = {
     "note": "崇祯蝗灾：地缘战略——河南飞蝗食民间小儿，灾情骇人听闻。"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=chongzhen_huangzai",
   "key": "chongzhen_huangzai",
   "scene_id": "chongzhen_huangzai",

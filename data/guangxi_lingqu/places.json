@@ -10,9 +10,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 110.68,
+   "lat": 25.63,
+   "geo_note": "今广西兴安（秦灵渠）"
   },
   {
    "id": "yuechengling",
@@ -24,9 +24,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 110.3,
+   "lat": 25.9,
+   "geo_note": "今广西越城岭"
   },
   {
    "id": "xiangjiang",
@@ -38,9 +38,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 112.0,
+   "lat": 27.5,
+   "geo_note": "今湖南湘江"
   },
   {
    "id": "lijiang",
@@ -52,9 +52,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 110.5,
+   "lat": 25.2,
+   "geo_note": "今广西漓江"
   },
   {
    "id": "guilin",
@@ -66,9 +66,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 110.29,
+   "lat": 25.27,
+   "geo_note": "今广西桂林"
   },
   {
    "id": "xiangjun",
@@ -80,9 +80,9 @@
    "_source_name": "《史记·河渠书》与灵渠",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 108.0,
+   "lat": 22.0,
+   "geo_note": "今广西及越南边境（秦象郡代表点）"
   }
  ],
  "rivers": [],

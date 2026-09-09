@@ -69,7 +69,7 @@ window.SANDBOX_SLICES["song_dangzheng"] = {
     "note": "洛蜀朔党争：地缘战略——苏轼讥程颐「迂阔」，程颐劾苏轼「放浪无礼」，一席之礼可成党祸。"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=song_dangzheng",
   "key": "song_dangzheng",
   "scene_id": "song_dangzheng",

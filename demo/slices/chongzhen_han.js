@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["chongzhen_han"] = {
     "note": "崇祯大旱：地缘战略——陕西、山西率先亢旱，禾稼歉收。"
    }
   },
-  "province": null,
+  "province": "shanxi",
   "page": "county.html?scene=chongzhen_han",
   "key": "chongzhen_han",
   "scene_id": "chongzhen_han",

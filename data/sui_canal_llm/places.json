@@ -24,9 +24,9 @@
    "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 113.38,
+   "lat": 34.78,
+   "geo_note": "今河南荥阳（隋大运河板渚渚口）"
   },
   {
    "id": "zhuojun",
@@ -52,9 +52,9 @@
    "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 119.45,
+   "lat": 32.2,
+   "geo_note": "今江苏镇江（隋运河江南起点）"
   },
   {
    "id": "yuhang",
@@ -66,9 +66,9 @@
    "_source_name": "隋·开凿大运河",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 120.15,
+   "lat": 30.27,
+   "geo_note": "今浙江杭州（隋运河南端）"
   }
  ],
  "rivers": [],

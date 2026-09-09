@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["hongjin"] = {
     "note": "红巾军：地缘战略——代元建国"
    }
   },
-  "province": null,
+  "province": "anhui",
   "page": "county.html?scene=hongjin",
   "key": "hongjin",
   "scene_id": "hongjin",

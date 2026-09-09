@@ -101,9 +101,10 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
    "_source_name": "都江堰史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 103.62,
+   "lat": 31.0,
+   "geo_note": "今四川都江堰市",
+   "elev": 848
   },
   {
    "id": "minjiang",
@@ -115,9 +116,10 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
    "_source_name": "都江堰史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 103.4,
+   "lat": 31.0,
+   "geo_note": "今四川岷江（代表点）",
+   "elev": 2032
   },
   {
    "id": "chengdu_pingyuan",
@@ -617,7 +619,15 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
    "basis": "auto: 场景主地点 dujiangyan 叙事控制方=后世官修"
   }
  ],
- "control_seats": [],
+ "control_seats": [
+  {
+   "place_id": "dujiangyan",
+   "name": "都江堰",
+   "lon": 103.62,
+   "lat": 31.0,
+   "region": "engineering"
+  }
+ ],
  "control_years": [
   -256,
   2000
@@ -663,23 +673,23 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
      "coordinates": [
       [
        [
-        103.07,
+        102.4,
         29.66
        ],
        [
-        103.07,
-        31.66
+        102.4,
+        32.0
        ],
        [
         105.07,
-        31.66
+        32.0
        ],
        [
         105.07,
         29.66
        ],
        [
-        103.07,
+        102.4,
         29.66
        ]
       ]
@@ -696,11 +706,11 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
       [
        [
         [
-         103.07,
-         31.66
+         102.4,
+         32.0
         ],
         [
-         103.07,
+         102.4,
          29.66
         ],
         [
@@ -709,11 +719,11 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
         ],
         [
          105.07,
-         31.66
+         32.0
         ],
         [
-         103.07,
-         31.66
+         102.4,
+         32.0
         ]
        ]
       ]
@@ -725,10 +735,10 @@ window.SANDBOX_SLICES["sichuan_dujiangyan_llm"] = {
   "rivers": [],
   "lakes": [],
   "_bbox": [
-   103.07,
+   102.4,
    29.66,
    105.07,
-   31.66
+   32.0
   ]
  }
 };

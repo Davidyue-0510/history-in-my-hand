@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["four_inv"] = {
     "note": "四大发明：地缘战略——海船辨向"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=four_inv",
   "key": "four_inv",
   "scene_id": "four_inv",

@@ -10,9 +10,9 @@
    "_source_name": "《宋史·食货志》与龙泉窑",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 119.14,
+   "lat": 28.07,
+   "geo_note": "今浙江龙泉市（龙泉窑）"
   },
   {
    "id": "chuzhou",
@@ -24,9 +24,9 @@
    "_source_name": "《宋史·食货志》与龙泉窑",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 119.92,
+   "lat": 28.45,
+   "geo_note": "今浙江丽水（宋处州）"
   },
   {
    "id": "yueyao",
@@ -38,9 +38,9 @@
    "_source_name": "《宋史·食货志》与龙泉窑",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 121.0,
+   "lat": 29.8,
+   "geo_note": "今浙江绍兴、宁波一带（越窑代表点）"
   }
  ],
  "rivers": [],

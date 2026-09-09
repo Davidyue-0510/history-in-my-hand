@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["wei_xiaowen"] = {
     "note": "北魏：迁都洛阳，北族政权中原化战略"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=wei_xiaowen",
   "key": "wei_xiaowen",
   "scene_id": "wei_xiaowen",

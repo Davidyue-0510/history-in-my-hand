@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["sui_canal"] = {
     "note": "隋运河：贯通南北，隋廷地缘战略工程"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=sui_canal",
   "key": "sui_canal",
   "scene_id": "sui_canal",

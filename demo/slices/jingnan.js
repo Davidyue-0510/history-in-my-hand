@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["jingnan"] = {
     "note": "靖难之役：地缘战略——合兵六十万"
    }
   },
-  "province": null,
+  "province": "jiangsu",
   "page": "county.html?scene=jingnan",
   "key": "jingnan",
   "scene_id": "jingnan",

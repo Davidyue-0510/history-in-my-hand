@@ -71,7 +71,7 @@ window.SANDBOX_SLICES["han_wudi_ruxue"] = {
     "note": "独尊儒术：长安太学为思想重心，南北学风辐辏"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=han_wudi_ruxue",
   "key": "han_wudi_ruxue",
   "scene_id": "han_wudi_ruxue",

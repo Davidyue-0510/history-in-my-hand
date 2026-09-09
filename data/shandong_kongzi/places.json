@@ -10,9 +10,9 @@
    "_source_name": "《论语》与孔门言行",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 116.99,
+   "lat": 35.58,
+   "geo_note": "今山东曲阜市"
   },
   {
    "id": "lu",
@@ -24,9 +24,9 @@
    "_source_name": "《论语》与孔门言行",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 117.0,
+   "lat": 35.0,
+   "geo_note": "今山东南部（鲁地代表点）"
   }
  ],
  "rivers": [],

@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "xuefeng",
-      "name": "雪峰山",
-      "type": "region",
-      "modern": "今中国福建省福州市闽侯县",
-      "note": "义存住持之地",
-      "_source_idx": 0,
-      "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "fuzhou",
-      "name": "福州",
-      "type": "city",
-      "modern": "今中国福建省福州市",
-      "note": "雪峰义存籍贯",
-      "_source_idx": 0,
-      "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "xuefeng",
+   "name": "雪峰山",
+   "type": "region",
+   "modern": "今中国福建省福州市闽侯县",
+   "note": "义存住持之地",
+   "_source_idx": 0,
+   "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 119.2,
+   "lat": 26.07,
+   "geo_note": "今福建福州闽侯雪峰山"
+  },
+  {
+   "id": "fuzhou",
+   "name": "福州",
+   "type": "city",
+   "modern": "今中国福建省福州市",
+   "note": "雪峰义存籍贯",
+   "_source_idx": 0,
+   "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 119.3,
+   "lat": 26.08,
+   "geo_note": "今福建福州市"
+  }
+ ]
 }

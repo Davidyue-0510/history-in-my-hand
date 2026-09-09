@@ -116,9 +116,10 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
    "_source_name": "《史记·田敬仲完世家》与稷下学宫",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 118.05,
+   "lat": 36.82,
+   "geo_note": "今山东临淄城西门（稷下学宫）",
+   "elev": 67
   }
  ],
  "persons": [
@@ -780,8 +781,8 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
         37.809
        ],
        [
-        119.036,
-        37.81
+        119.035,
+        37.82
        ]
       ]
      ]
@@ -801,11 +802,11 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
        ],
        [
         117.05,
-        37.81
+        37.82
        ],
        [
-        119.036,
-        37.81
+        119.035,
+        37.82
        ],
        [
         119.036,
@@ -870,7 +871,7 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
        [
         [
          117.05,
-         37.81
+         37.82
         ],
         [
          117.05,
@@ -914,11 +915,11 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
         ],
         [
          119.05,
-         37.81
+         37.82
         ],
         [
          117.05,
-         37.81
+         37.82
         ]
        ]
       ]
@@ -1001,12 +1002,12 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
        37.78
       ],
       [
-       118.909,
-       37.81
+       118.936,
+       37.82
       ],
       [
-       119.03,
-       37.81
+       118.968,
+       37.82
       ],
       [
        119.036,
@@ -1022,7 +1023,7 @@ window.SANDBOX_SLICES["shandong_jixia"] = {
    117.05,
    35.81,
    119.05,
-   37.81
+   37.82
   ]
  }
 };

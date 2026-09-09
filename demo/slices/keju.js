@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["keju"] = {
     "note": "科举制：地缘战略——科举肇端"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=keju",
   "key": "keju",
   "scene_id": "keju",

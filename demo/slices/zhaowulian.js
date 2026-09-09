@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["zhaowulian"] = {
     "note": "赵武灵王胡服骑射：地缘战略——习骑射"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "county.html?scene=zhaowulian",
   "key": "zhaowulian",
   "scene_id": "zhaowulian",

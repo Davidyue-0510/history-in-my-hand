@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["lizicheng"] = {
     "note": "李自成起义：地缘战略——破北京"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=lizicheng",
   "key": "lizicheng",
   "scene_id": "lizicheng",

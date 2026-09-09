@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "zhao",
-      "name": "赵",
-      "type": "region",
-      "modern": "今中国山西南部",
-      "note": "荀况故里",
-      "_source_idx": 0,
-      "_source_name": "荀子·性恶 / 史记·荀卿列传",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "jixia",
-      "name": "稷下",
-      "type": "city",
-      "modern": "今中国山东淄博",
-      "note": "齐国学宫",
-      "_source_idx": 0,
-      "_source_name": "荀子·性恶 / 史记·荀卿列传",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "zhao",
+   "name": "赵",
+   "type": "region",
+   "modern": "今中国山西南部",
+   "note": "荀况故里",
+   "_source_idx": 0,
+   "_source_name": "荀子·性恶 / 史记·荀卿列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.0,
+   "lat": 36.0,
+   "geo_note": "今山西南部（赵地代表点）"
+  },
+  {
+   "id": "jixia",
+   "name": "稷下",
+   "type": "city",
+   "modern": "今中国山东淄博",
+   "note": "齐国学宫",
+   "_source_idx": 0,
+   "_source_name": "荀子·性恶 / 史记·荀卿列传",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.05,
+   "lat": 36.82,
+   "geo_note": "今山东淄博临淄（稷下学宫）"
+  }
+ ]
 }

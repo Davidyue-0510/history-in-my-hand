@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["qing_zhungaer_llm"] = {
   "kind": "frontier",
   "scale_tier": "strategic",
   "region": "xibei",
-  "province": null,
+  "province": "xinjiang",
   "title": "清·平定准噶尔（LLM 抽取·人工校订）",
   "dossier_label": "清·平定准噶尔（LLM 抽取落库）",
   "subtitle": "西域纳入版图的最后一块",

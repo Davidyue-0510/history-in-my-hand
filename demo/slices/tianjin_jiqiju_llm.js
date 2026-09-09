@@ -115,9 +115,10 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
    "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 117.3,
+   "lat": 39.1,
+   "geo_note": "今天津市东郊",
+   "elev": 8
   },
   {
    "id": "haiguangsi",
@@ -129,9 +130,10 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
    "_source_name": "清史稿·洋务运动（天津机器局）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 117.17,
+   "lat": 39.13,
+   "geo_note": "今天津南开区海光寺",
+   "elev": 7
   }
  ],
  "persons": [
@@ -621,6 +623,20 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
    "lon": 117.2,
    "lat": 39.13,
    "region": "huabei"
+  },
+  {
+   "place_id": "jiagujia",
+   "name": "贾家沽",
+   "lon": 117.3,
+   "lat": 39.1,
+   "region": "huabei"
+  },
+  {
+   "place_id": "haiguangsi",
+   "name": "海光寺",
+   "lon": 117.17,
+   "lat": 39.13,
+   "region": "huabei"
   }
  ],
  "control_years": [
@@ -667,8 +683,8 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
      "coordinates": [
       [
        [
-        118.2,
-        38.152
+        118.3,
+        38.136
        ],
        [
         118.015,
@@ -711,8 +727,12 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
         39.195
        ],
        [
-        118.2,
-        39.151
+        118.298,
+        39.067
+       ],
+       [
+        118.3,
+        39.068
        ]
       ]
      ]
@@ -727,20 +747,24 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
      "coordinates": [
       [
        [
-        116.2,
-        38.13
+        116.17,
+        38.1
        ],
        [
-        116.2,
+        116.17,
         40.13
        ],
        [
-        118.2,
+        118.3,
         40.13
        ],
        [
-        118.2,
-        39.151
+        118.3,
+        39.068
+       ],
+       [
+        118.298,
+        39.067
        ],
        [
         118.148,
@@ -783,16 +807,16 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
         38.183
        ],
        [
-        118.2,
-        38.152
+        118.3,
+        38.136
        ],
        [
-        118.2,
-        38.13
+        118.3,
+        38.1
        ],
        [
-        116.2,
-        38.13
+        116.17,
+        38.1
        ]
       ]
      ]
@@ -808,11 +832,15 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
       [
        [
         [
-         116.2,
+         116.17,
          40.13
         ],
         [
-         116.2,
+         116.17,
+         39.586
+        ],
+        [
+         116.199,
          39.589
         ],
         [
@@ -1084,7 +1112,7 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
          40.13
         ],
         [
-         116.2,
+         116.17,
          40.13
         ]
        ]
@@ -2460,24 +2488,32 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
          39.081
         ],
         [
-         118.2,
-         39.068
+         118.225,
+         39.035
         ],
         [
-         118.2,
+         118.3,
+         39.015
+        ],
+        [
+         118.3,
          40.13
         ],
         [
-         116.2,
+         116.17,
          40.13
         ],
         [
-         116.2,
-         38.13
+         116.17,
+         38.1
         ],
         [
-         117.759,
-         38.13
+         117.725,
+         38.1
+        ],
+        [
+         117.747,
+         38.125
         ],
         [
          117.771,
@@ -2940,11 +2976,15 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
          39.564
         ],
         [
-         116.2,
+         116.199,
          39.589
         ],
         [
-         116.2,
+         116.17,
+         39.586
+        ],
+        [
+         116.17,
          40.13
         ],
         [
@@ -3260,12 +3300,16 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
       [
        [
         [
-         118.2,
-         38.13
+         118.3,
+         38.1
         ],
         [
-         118.2,
-         38.164
+         118.3,
+         38.131
+        ],
+        [
+         118.217,
+         38.147
         ],
         [
          118.178,
@@ -3312,12 +3356,16 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
          38.135
         ],
         [
-         117.759,
-         38.13
+         117.747,
+         38.125
         ],
         [
-         118.2,
-         38.13
+         117.725,
+         38.1
+        ],
+        [
+         118.3,
+         38.1
         ]
        ]
       ]
@@ -3329,9 +3377,9 @@ window.SANDBOX_SLICES["tianjin_jiqiju_llm"] = {
   "rivers": [],
   "lakes": [],
   "_bbox": [
-   116.2,
-   38.13,
-   118.2,
+   116.17,
+   38.1,
+   118.3,
    40.13
   ]
  }

@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["susong_llm"] = {
  "meta": {
   "kind": "tech",
   "region": "tech",
-  "province": null,
+  "province": "henan",
   "title": "苏颂·水运仪象台",
   "dossier_label": null,
   "subtitle": "北宋汴京水力天文钟与擒纵",

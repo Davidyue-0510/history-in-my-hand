@@ -1,60 +1,60 @@
 {
-  "places": [
-    {
-      "id": "lingnan",
-      "name": "岭南",
-      "type": "region",
-      "modern": "今中国广东广西",
-      "note": "五岭以南",
-      "_source_idx": 0,
-      "_source_name": "《史记·秦始皇本纪》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "lingqu",
-      "name": "灵渠",
-      "type": "canal",
-      "modern": "今中国广西兴安",
-      "note": "秦凿运河",
-      "_source_idx": 0,
-      "_source_name": "《史记·秦始皇本纪》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "xiangjiang",
-      "name": "湘江",
-      "type": "river",
-      "modern": "今中国湖南",
-      "note": "长江支流",
-      "_source_idx": 0,
-      "_source_name": "《史记·秦始皇本纪》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "lijiang",
-      "name": "漓江",
-      "type": "river",
-      "modern": "今中国广西",
-      "note": "珠江水系",
-      "_source_idx": 0,
-      "_source_name": "《史记·秦始皇本纪》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "lingnan",
+   "name": "岭南",
+   "type": "region",
+   "modern": "今中国广东广西",
+   "note": "五岭以南",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.0,
+   "lat": 23.0,
+   "geo_note": "今广东广西（岭南）代表点"
+  },
+  {
+   "id": "lingqu",
+   "name": "灵渠",
+   "type": "canal",
+   "modern": "今中国广西兴安",
+   "note": "秦凿运河",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.68,
+   "lat": 25.63,
+   "geo_note": "今广西兴安（秦灵渠）"
+  },
+  {
+   "id": "xiangjiang",
+   "name": "湘江",
+   "type": "river",
+   "modern": "今中国湖南",
+   "note": "长江支流",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.0,
+   "lat": 27.5,
+   "geo_note": "今湖南湘江（中上游代表点）"
+  },
+  {
+   "id": "lijiang",
+   "name": "漓江",
+   "type": "river",
+   "modern": "今中国广西",
+   "note": "珠江水系",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.5,
+   "lat": 25.2,
+   "geo_note": "今广西漓江"
+  }
+ ]
 }

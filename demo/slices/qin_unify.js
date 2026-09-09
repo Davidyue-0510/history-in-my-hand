@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["qin_unify"] = {
     "note": "秦灭六国：地缘战略——内史腾灭韩，俘韩王安，韩亡。"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=qin_unify",
   "key": "qin_unify",
   "scene_id": "qin_unify",

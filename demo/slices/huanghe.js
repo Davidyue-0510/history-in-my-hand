@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["huanghe"] = {
     "note": "黄河改道：地缘战略——黄河主流彻底夺淮入海，淮南河患剧增，江淮之间水系大乱。"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=huanghe",
   "key": "huanghe",
   "scene_id": "huanghe",

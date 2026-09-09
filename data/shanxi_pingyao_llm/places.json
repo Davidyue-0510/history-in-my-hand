@@ -1,18 +1,18 @@
 {
-  "places": [
-    {
-      "id": "pingyao",
-      "name": "平遥",
-      "type": "city",
-      "modern": "中国山西省平遥县",
-      "note": "古称古陶，北魏始筑城",
-      "_source_idx": 0,
-      "_source_name": "山西通志·城池（光绪）/ 平遥县志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "pingyao",
+   "name": "平遥",
+   "type": "city",
+   "modern": "中国山西省平遥县",
+   "note": "古称古陶，北魏始筑城",
+   "_source_idx": 0,
+   "_source_name": "山西通志·城池（光绪）/ 平遥县志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 112.18,
+   "lat": 37.2,
+   "geo_note": "今山西平遥县"
+  }
+ ]
 }

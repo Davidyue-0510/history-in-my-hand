@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["xiaowen"] = {
     "note": "孝文帝汉化：地缘战略——通婚华族"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=xiaowen",
   "key": "xiaowen",
   "scene_id": "xiaowen",

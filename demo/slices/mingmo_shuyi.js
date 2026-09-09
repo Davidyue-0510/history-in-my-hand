@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["mingmo_shuyi"] = {
     "note": "明末鼠疫：地缘战略——北京大疫，死亡枕藉、十室九空。"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "county.html?scene=mingmo_shuyi",
   "key": "mingmo_shuyi",
   "scene_id": "mingmo_shuyi",

@@ -1040,7 +1040,7 @@
      "note": "独尊儒术：长安太学为思想重心，南北学风辐辏"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "sarhu": {
    "kind": "battle",
@@ -4178,7 +4178,7 @@
      "note": "漠北之战：地缘战略——分道出塞"
     }
    },
-   "province": null
+   "province": "overseas"
   },
   "kunyang": {
    "kind": "battle",
@@ -4987,7 +4987,7 @@
      "note": "怛罗斯之战：地缘战略——相持五日"
     }
    },
-   "province": null
+   "province": "overseas"
   },
   "suiyang": {
    "kind": "battle",
@@ -5231,7 +5231,7 @@
      "note": "和尚原之战：地缘战略——金兵负重甲登山仰攻"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "caishiji": {
    "kind": "battle",
@@ -6036,7 +6036,7 @@
      "note": "黄河改道：地缘战略——黄河主流彻底夺淮入海，淮南河患剧增，江淮之间水系大乱。"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "locust": {
    "kind": "disaster",
@@ -6115,7 +6115,7 @@
      "note": "蝗灾：地缘战略——蝗伤稼"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "huaxian": {
    "kind": "disaster",
@@ -6193,7 +6193,7 @@
      "note": "华县大地震：地缘战略——城郭尽圮"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "little_ice": {
    "kind": "disaster",
@@ -6271,7 +6271,7 @@
      "note": "明末小冰期饥荒：地缘战略——饥馑荐臻，乱端萌焉"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "grand_canal": {
    "kind": "engineering",
@@ -6351,7 +6351,7 @@
      "note": "大运河：地缘战略——百余万"
     }
    },
-   "province": null
+   "province": "zhejiang"
   },
   "dujiangyan": {
    "kind": "engineering",
@@ -6509,7 +6509,7 @@
      "note": "长城：地缘战略——万历年间明重筑蓟镇边墙"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "qin_unify": {
    "kind": "dynasty",
@@ -6590,7 +6590,7 @@
      "note": "秦灭六国：地缘战略——内史腾灭韩，俘韩王安，韩亡。"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "ming_fall": {
    "kind": "dynasty",
@@ -6668,7 +6668,7 @@
      "note": "明亡·崇祯自缢：地缘战略——明亡"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "shangyang": {
    "kind": "reform",
@@ -6825,7 +6825,7 @@
      "note": "黄巾起义：地缘战略——张角"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "lizicheng": {
    "kind": "uprising",
@@ -6904,7 +6904,7 @@
      "note": "李自成起义：地缘战略——破北京"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "xiaowen": {
    "kind": "fusion",
@@ -6982,7 +6982,7 @@
      "note": "孝文帝汉化：地缘战略——通婚华族"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "wencheng": {
    "kind": "fusion",
@@ -7221,7 +7221,7 @@
      "note": "靖难之役：地缘战略——合兵六十万"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "dunzun": {
    "kind": "thought",
@@ -7298,7 +7298,7 @@
      "note": "独尊儒术：地缘战略——为五经博士置弟子员，太学兴，儒生入仕之途大开。"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "keju": {
    "kind": "thought",
@@ -7377,7 +7377,7 @@
      "note": "科举制：地缘战略——科举肇端"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "four_inv": {
    "kind": "tech",
@@ -7455,7 +7455,7 @@
      "note": "四大发明：地缘战略——海船辨向"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "bencao": {
    "kind": "tech",
@@ -7534,7 +7534,7 @@
      "note": "本草纲目·授时历：地缘战略——传于东邻"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "dong_han_yi": {
    "kind": "disaster",
@@ -7610,7 +7610,7 @@
      "note": "东汉大疫：地缘战略——建安七子凋零"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "dingwu": {
    "kind": "disaster",
@@ -7688,7 +7688,7 @@
      "note": "丁戊奇荒：地缘战略——人相食"
     }
    },
-   "province": null
+   "province": "shanxi"
   },
   "song_he_jue": {
    "kind": "disaster",
@@ -8473,7 +8473,7 @@
      "note": "辛亥革命：地缘战略——各省响应"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "zhangjuzheng": {
    "kind": "reform",
@@ -8710,7 +8710,7 @@
      "note": "王莽改制：地缘战略——莽死"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "liangshui": {
    "kind": "reform",
@@ -8788,7 +8788,7 @@
      "note": "两税法：地缘战略——宰相"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "jiupin": {
    "kind": "reform",
@@ -8865,7 +8865,7 @@
      "note": "九品中正制：地缘战略——采陈群议"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "chensheng": {
    "kind": "uprising",
@@ -9023,7 +9023,7 @@
      "note": "黄巢起义：地缘战略——大齐"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "taiping": {
    "kind": "uprising",
@@ -9103,7 +9103,7 @@
      "note": "太平天国：地缘战略——乱平"
     }
    },
-   "province": null
+   "province": "guangxi"
   },
   "hongjin": {
    "kind": "uprising",
@@ -9181,7 +9181,7 @@
      "note": "红巾军：地缘战略——代元建国"
     }
    },
-   "province": null
+   "province": "anhui"
   },
   "lvlin": {
    "kind": "uprising",
@@ -9261,7 +9261,7 @@
      "note": "绿林赤眉：地缘战略——新亡"
     }
    },
-   "province": null
+   "province": "hubei"
   },
   "zhaowulian": {
    "kind": "fusion",
@@ -9339,7 +9339,7 @@
      "note": "赵武灵王胡服骑射：地缘战略——习骑射"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "zhaofen": {
    "kind": "fusion",
@@ -9498,7 +9498,7 @@
      "note": "清满汉融合：地缘战略——颁剃发令"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "yuan_duo": {
    "kind": "fusion",
@@ -9575,7 +9575,7 @@
      "note": "元多元一体：地缘战略——多元融合"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "chanyuan": {
    "kind": "fusion",
@@ -9732,7 +9732,7 @@
      "note": "杯酒释兵权：地缘战略——杯酒释兵权"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "jiuzi": {
    "kind": "court",
@@ -10045,7 +10045,7 @@
      "note": "百家争鸣：地缘战略——公元前372年生"
     }
    },
-   "province": null
+   "province": "shandong"
   },
   "fenshu": {
    "kind": "thought",
@@ -10202,7 +10202,7 @@
      "note": "佛教传入：地缘战略——立白马寺"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "lixue": {
    "kind": "thought",
@@ -10279,7 +10279,7 @@
      "note": "宋明理学：地缘战略——朱熹与陆九渊论辩"
     }
    },
-   "province": null
+   "province": "jiangxi"
   },
   "zhangheng": {
    "kind": "tech",
@@ -10433,7 +10433,7 @@
      "note": "祖冲之圆周率：地缘战略——定岁差"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "shenkuo": {
    "kind": "tech",
@@ -10510,7 +10510,7 @@
      "note": "沈括梦溪笔谈：地缘战略——命名石油"
     }
    },
-   "province": null
+   "province": "jiangsu"
   },
   "jiasixie": {
    "kind": "tech",
@@ -10828,7 +10828,7 @@
      "note": "玄奘西行：地缘战略——玄奘归国"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "jianzhen": {
    "kind": "frontier",
@@ -11672,7 +11672,7 @@
      "note": "明末党争·辽东导火索：地缘战略——魏忠贤掌东厂"
     }
    },
-   "province": null
+   "province": "beijing"
   },
   "tang_dangzheng": {
    "kind": "court",
@@ -11745,7 +11745,7 @@
      "note": "牛李党争：地缘战略——牛党以科举进士为基，主张公议取士、抑制门荫；李党以山东士族门荫为基，重阀阅、轻科举。"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "song_dangzheng": {
    "kind": "court",
@@ -11817,7 +11817,7 @@
      "note": "洛蜀朔党争：地缘战略——苏轼讥程颐「迂阔」，程颐劾苏轼「放浪无礼」，一席之礼可成党祸。"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "donghan_danggu": {
    "kind": "court",
@@ -11889,7 +11889,7 @@
      "note": "党锢之祸：地缘战略——清流以太学为舆论场，标榜名节攻宦官；宦官挟幼主、诬结党，以「诽讪」罪反制——皇权与士族的结构性对撞。"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "mingmo_jihuang": {
    "kind": "disaster",
@@ -11968,7 +11968,7 @@
      "note": "明末大饥荒：地缘战略——旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "chongzhen_han": {
    "kind": "disaster",
@@ -12046,7 +12046,7 @@
      "note": "崇祯大旱：地缘战略——陕西、山西率先亢旱，禾稼歉收。"
     }
    },
-   "province": null
+   "province": "shanxi"
   },
   "chongzhen_huangzai": {
    "kind": "disaster",
@@ -12124,7 +12124,7 @@
      "note": "崇祯蝗灾：地缘战略——河南飞蝗食民间小儿，灾情骇人听闻。"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "mingmo_shuyi": {
    "kind": "disaster",
@@ -12200,7 +12200,7 @@
      "note": "明末鼠疫：地缘战略——北京大疫，死亡枕藉、十室九空。"
     }
    },
-   "province": null
+   "province": "hebei"
   },
   "kaifeng_juekou": {
    "kind": "disaster",
@@ -12582,7 +12582,7 @@
      "note": "三国鼎立：地缘战略——景元四年魏钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降，蜀汉亡"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "changping_llm": {
    "kind": "battle",
@@ -14326,7 +14326,7 @@
    "kind": "engineering",
    "scale_tier": "strategic",
    "region": "huabei",
-   "province": null,
+   "province": "henan",
    "title": "隋炀帝开凿大运河（LLM 抽取·人工校订）",
    "dossier_label": "隋大运河（LLM 抽取落库）",
    "subtitle": "大业元年—六年（605–610）· 隋中央工程",
@@ -14408,7 +14408,7 @@
    "kind": "uprising",
    "scale_tier": "strategic",
    "region": "tang",
-   "province": null,
+   "province": "henan",
    "title": "安史之乱（LLM 抽取·人工校订）",
    "dossier_label": "安史之乱（LLM 抽取落库）",
    "subtitle": "天宝十四载—宝应元年（755–763）· 唐 vs 安史叛军",
@@ -14499,7 +14499,7 @@
    "kind": "frontier",
    "scale_tier": "strategic",
    "region": "xibei",
-   "province": null,
+   "province": "xinjiang",
    "title": "班超经营西域（LLM 抽取·人工校订）",
    "dossier_label": "班超经营西域（LLM 抽取落库）",
    "subtitle": "永平十六年—永元十四年（73–102）· 汉 vs 匈奴",
@@ -14588,7 +14588,7 @@
    "kind": "battle",
    "scale_tier": "operational",
    "region": "huabei",
-   "province": null,
+   "province": "jiangsu",
    "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
    "dossier_label": "郾城之战（岳飞北伐）（LLM 抽取落库）",
    "subtitle": "绍兴十年（1140）· 宋（岳飞） vs 金（兀术）",
@@ -14670,7 +14670,7 @@
    "kind": "reform",
    "scale_tier": "strategic",
    "region": "yuan_ming",
-   "province": null,
+   "province": "beijing",
    "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
    "dossier_label": "元设行中书省（行省制）（LLM 抽取落库）",
    "subtitle": "至元年间（1264 起）· 元中央制度",
@@ -14757,7 +14757,7 @@
    "kind": "exchange",
    "scale_tier": "strategic",
    "region": "jiangnan",
-   "province": null,
+   "province": "jiangsu",
    "title": "郑和下西洋（LLM 抽取·人工校订）",
    "dossier_label": "郑和下西洋（LLM 抽取落库）",
    "subtitle": "永乐三年—宣德八年（1405–1433）· 明远洋",
@@ -14842,7 +14842,7 @@
    "kind": "battle",
    "scale_tier": "operational",
    "region": "liaobei",
-   "province": null,
+   "province": "heilongjiang",
    "title": "雅克萨之战（LLM 抽取·人工校订）",
    "dossier_label": "雅克萨之战（LLM 抽取落库）",
    "subtitle": "康熙二十四至二十五年（1685–1686）· 清 vs 沙俄",
@@ -14927,7 +14927,7 @@
    "kind": "thought",
    "scale_tier": "strategic",
    "region": "guangzhong",
-   "province": null,
+   "province": "shaanxi",
    "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
    "dossier_label": "秦·焚书坑儒（LLM 抽取落库）",
    "subtitle": "中央集权对思想多元的清洗",
@@ -15012,7 +15012,7 @@
    "kind": "uprising",
    "scale_tier": "strategic",
    "region": "tang",
-   "province": null,
+   "province": "shaanxi",
    "title": "唐·黄巢起义（LLM 抽取·人工校订）",
    "dossier_label": "唐·黄巢起义（LLM 抽取落库）",
    "subtitle": "晚唐藩镇乱局中的草根颠覆",
@@ -15106,7 +15106,7 @@
    "kind": "exchange",
    "scale_tier": "strategic",
    "region": "song",
-   "province": null,
+   "province": "henan",
    "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
    "dossier_label": "宋·澶渊之盟（LLM 抽取落库）",
    "subtitle": "宋辽百年和平的条约基线",
@@ -15196,7 +15196,7 @@
    "kind": "battle",
    "scale_tier": "operational",
    "region": "huabei",
-   "province": null,
+   "province": "hebei",
    "title": "明·土木堡之变（LLM 抽取·人工校订）",
    "dossier_label": "明·土木堡之变（LLM 抽取落库）",
    "subtitle": "亲征溃败与英宗北狩",
@@ -15287,7 +15287,7 @@
    "kind": "frontier",
    "scale_tier": "strategic",
    "region": "xibei",
-   "province": null,
+   "province": "xinjiang",
    "title": "清·平定准噶尔（LLM 抽取·人工校订）",
    "dossier_label": "清·平定准噶尔（LLM 抽取落库）",
    "subtitle": "西域纳入版图的最后一块",
@@ -15384,7 +15384,7 @@
    "kind": "reform",
    "scale_tier": "strategic",
    "region": "guangzhong",
-   "province": null,
+   "province": "shaanxi",
    "title": "战国·商鞅变法（LLM 抽取·人工校订）",
    "dossier_label": "战国·商鞅变法（LLM 抽取落库）",
    "subtitle": "秦富强的制度底座",
@@ -15466,7 +15466,7 @@
    "kind": "frontier",
    "scale_tier": "strategic",
    "region": "xibei",
-   "province": null,
+   "province": "overseas",
    "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
    "dossier_label": "汉·卫青霍去病北伐匈奴（LLM 抽取落库）",
    "subtitle": "漠南无王庭的转身",
@@ -15565,7 +15565,7 @@
    "kind": "court",
    "scale_tier": "operational",
    "region": "tang",
-   "province": null,
+   "province": "shaanxi",
    "title": "唐·玄武门之变（LLM 抽取·人工校订）",
    "dossier_label": "唐·玄武门之变（LLM 抽取落库）",
    "subtitle": "夺嫡与贞观前夜",
@@ -15650,7 +15650,7 @@
   "chibi_llm": {
    "kind": "county",
    "region": "jiangnan",
-   "province": null,
+   "province": "hubei",
    "title": "三国·赤壁之战",
    "dossier_label": null,
    "subtitle": null,
@@ -15947,7 +15947,7 @@
      "note": "两税法：中唐财政改革，藩镇与中央博弈下的制度选择"
     }
    },
-   "province": null
+   "province": "shaanxi"
   },
   "wei_xiaowen": {
    "kind": "reform",
@@ -16022,7 +16022,7 @@
      "note": "北魏：迁都洛阳，北族政权中原化战略"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "sui_canal": {
    "kind": "engineering",
@@ -16100,7 +16100,7 @@
      "note": "隋运河：贯通南北，隋廷地缘战略工程"
     }
    },
-   "province": null
+   "province": "henan"
   },
   "guo_shoujing": {
    "kind": "tech",
@@ -16728,7 +16728,7 @@
   "susong_llm": {
    "kind": "tech",
    "region": "tech",
-   "province": null,
+   "province": "henan",
    "title": "苏颂·水运仪象台",
    "dossier_label": null,
    "subtitle": "北宋汴京水力天文钟与擒纵",
@@ -16803,7 +16803,7 @@
   "wangyangming": {
    "kind": "thought",
    "region": "thought",
-   "province": null,
+   "province": "zhejiang",
    "title": "王阳明·心学",
    "dossier_label": null,
    "subtitle": "明代心即理·知行合一·致良知",
@@ -16880,7 +16880,7 @@
   "zhuxi": {
    "kind": "thought",
    "region": "thought",
-   "province": null,
+   "province": "jiangxi",
    "title": "朱熹·理学",
    "dossier_label": null,
    "subtitle": "南宋理气论·格物致知·四书集注",
@@ -16956,7 +16956,7 @@
   "foguo_chan_llm": {
    "kind": "thought",
    "region": "thought",
-   "province": null,
+   "province": "shaanxi",
    "title": "唐代佛教东传与禅宗",
    "dossier_label": null,
    "subtitle": "武周崇佛·会昌灭佛·禅宗本土化",
@@ -17033,7 +17033,7 @@
   "qianjia_puxue_llm": {
    "kind": "thought",
    "region": "thought",
-   "province": null,
+   "province": "beijing",
    "title": "清代乾嘉朴学",
    "dossier_label": null,
    "subtitle": "文字狱高压·四库寓禁于征·考据鼎盛",

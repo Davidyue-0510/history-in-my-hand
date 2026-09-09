@@ -10,9 +10,9 @@
    "_source_name": "马王堆汉墓史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 112.99,
+   "lat": 28.21,
+   "geo_note": "今湖南长沙马王堆"
   },
   {
    "id": "changsha",
@@ -24,9 +24,9 @@
    "_source_name": "马王堆汉墓史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 112.94,
+   "lat": 28.23,
+   "geo_note": "今湖南长沙市"
   }
  ],
  "rivers": [],

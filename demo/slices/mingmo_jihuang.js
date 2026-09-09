@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["mingmo_jihuang"] = {
     "note": "明末大饥荒：地缘战略——旱蝗并作，华北「赤地千里、人相食」，饥荒达顶点。"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=mingmo_jihuang",
   "key": "mingmo_jihuang",
   "scene_id": "mingmo_jihuang",

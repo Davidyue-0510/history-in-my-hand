@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["liangshui"] = {
     "note": "两税法：地缘战略——宰相"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=liangshui",
   "key": "liangshui",
   "scene_id": "liangshui",

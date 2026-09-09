@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["ming_fall"] = {
     "note": "明亡·崇祯自缢：地缘战略——明亡"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=ming_fall",
   "key": "ming_fall",
   "scene_id": "ming_fall",

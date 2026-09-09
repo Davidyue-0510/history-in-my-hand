@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["wangyangming"] = {
  "meta": {
   "kind": "thought",
   "region": "thought",
-  "province": null,
+  "province": "zhejiang",
   "title": "王阳明·心学",
   "dossier_label": null,
   "subtitle": "明代心即理·知行合一·致良知",

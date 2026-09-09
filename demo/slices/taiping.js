@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["taiping"] = {
     "note": "太平天国：地缘战略——乱平"
    }
   },
-  "province": null,
+  "province": "guangxi",
   "page": "county.html?scene=taiping",
   "key": "taiping",
   "scene_id": "taiping",

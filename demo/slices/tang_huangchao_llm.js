@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["tang_huangchao_llm"] = {
   "kind": "uprising",
   "scale_tier": "strategic",
   "region": "tang",
-  "province": null,
+  "province": "shaanxi",
   "title": "唐·黄巢起义（LLM 抽取·人工校订）",
   "dossier_label": "唐·黄巢起义（LLM 抽取落库）",
   "subtitle": "晚唐藩镇乱局中的草根颠覆",

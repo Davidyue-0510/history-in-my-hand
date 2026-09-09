@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["talas"] = {
     "note": "怛罗斯之战：地缘战略——相持五日"
    }
   },
-  "province": null,
+  "province": "overseas",
   "page": "talas.html",
   "key": "talas",
   "scene_id": "talas",

@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["song_yancheng_llm"] = {
   "kind": "battle",
   "scale_tier": "operational",
   "region": "huabei",
-  "province": null,
+  "province": "jiangsu",
   "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
   "dossier_label": "郾城之战（岳飞北伐）（LLM 抽取落库）",
   "subtitle": "绍兴十年（1140）· 宋（岳飞） vs 金（兀术）",

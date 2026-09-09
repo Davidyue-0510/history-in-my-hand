@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["tang_anshi_llm"] = {
   "kind": "uprising",
   "scale_tier": "strategic",
   "region": "tang",
-  "province": null,
+  "province": "henan",
   "title": "安史之乱（LLM 抽取·人工校订）",
   "dossier_label": "安史之乱（LLM 抽取落库）",
   "subtitle": "天宝十四载—宝应元年（755–763）· 唐 vs 安史叛军",

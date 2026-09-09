@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["zuchongzhi"] = {
     "note": "祖冲之圆周率：地缘战略——定岁差"
    }
   },
-  "province": null,
+  "province": "jiangsu",
   "page": "county.html?scene=zuchongzhi",
   "key": "zuchongzhi",
   "scene_id": "zuchongzhi",

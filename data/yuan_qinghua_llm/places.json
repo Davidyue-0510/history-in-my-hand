@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "fuliang",
-      "name": "浮梁",
-      "type": "region",
-      "modern": "今中国江西省景德镇市浮梁县",
-      "note": "元代浮梁瓷局所在地",
-      "_source_idx": 0,
-      "_source_name": "《景德镇陶录》（蓝浦）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "jingdezhen",
-      "name": "景德镇",
-      "type": "city",
-      "modern": "今中国江西省景德镇市",
-      "note": "元代窑业中心",
-      "_source_idx": 0,
-      "_source_name": "《景德镇陶录》（蓝浦）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "fuliang",
+   "name": "浮梁",
+   "type": "region",
+   "modern": "今中国江西省景德镇市浮梁县",
+   "note": "元代浮梁瓷局所在地",
+   "_source_idx": 0,
+   "_source_name": "《景德镇陶录》（蓝浦）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.18,
+   "lat": 29.27,
+   "geo_note": "今江西景德镇浮梁县"
+  },
+  {
+   "id": "jingdezhen",
+   "name": "景德镇",
+   "type": "city",
+   "modern": "今中国江西省景德镇市",
+   "note": "元代窑业中心",
+   "_source_idx": 0,
+   "_source_name": "《景德镇陶录》（蓝浦）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.18,
+   "lat": 29.27,
+   "geo_note": "今江西景德镇市"
+  }
+ ]
 }

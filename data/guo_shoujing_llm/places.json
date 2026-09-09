@@ -1,60 +1,60 @@
 {
-  "places": [
-    {
-      "id": "gaoli",
-      "name": "高丽",
-      "type": "region",
-      "modern": "今朝鲜半岛",
-      "note": "东极测验地",
-      "_source_idx": 0,
-      "_source_name": "《元史·郭守敬传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "zhuya",
-      "name": "朱崖",
-      "type": "region",
-      "modern": "今中国海南",
-      "note": "南逾测验地",
-      "_source_idx": 0,
-      "_source_name": "《元史·郭守敬传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "dianchi",
-      "name": "滇池",
-      "type": "region",
-      "modern": "今中国云南昆明",
-      "note": "西极测验地",
-      "_source_idx": 0,
-      "_source_name": "《元史·郭守敬传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "tiele",
-      "name": "铁勒",
-      "type": "region",
-      "modern": "今蒙古高原",
-      "note": "北尽测验地",
-      "_source_idx": 0,
-      "_source_name": "《元史·郭守敬传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "gaoli",
+   "name": "高丽",
+   "type": "region",
+   "modern": "今朝鲜半岛",
+   "note": "东极测验地",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 127.0,
+   "lat": 36.5,
+   "geo_note": "今朝鲜半岛代表点"
+  },
+  {
+   "id": "zhuya",
+   "name": "朱崖",
+   "type": "region",
+   "modern": "今中国海南",
+   "note": "南逾测验地",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 109.8,
+   "lat": 19.2,
+   "geo_note": "今海南（汉朱崖郡）代表点"
+  },
+  {
+   "id": "dianchi",
+   "name": "滇池",
+   "type": "region",
+   "modern": "今中国云南昆明",
+   "note": "西极测验地",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 102.68,
+   "lat": 24.95,
+   "geo_note": "今云南昆明滇池"
+  },
+  {
+   "id": "tiele",
+   "name": "铁勒",
+   "type": "region",
+   "modern": "今蒙古高原",
+   "note": "北尽测验地",
+   "_source_idx": 0,
+   "_source_name": "《元史·郭守敬传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 103.0,
+   "lat": 47.0,
+   "geo_note": "今蒙古高原（铁勒）代表点"
+  }
+ ]
 }

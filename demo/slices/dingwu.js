@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["dingwu"] = {
     "note": "丁戊奇荒：地缘战略——人相食"
    }
   },
-  "province": null,
+  "province": "shanxi",
   "page": "county.html?scene=dingwu",
   "key": "dingwu",
   "scene_id": "dingwu",

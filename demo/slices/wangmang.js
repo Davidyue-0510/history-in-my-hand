@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["wangmang"] = {
     "note": "王莽改制：地缘战略——莽死"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=wangmang",
   "key": "wangmang",
   "scene_id": "wangmang",

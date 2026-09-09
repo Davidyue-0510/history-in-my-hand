@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["han_banchao_llm"] = {
   "kind": "frontier",
   "scale_tier": "strategic",
   "region": "xibei",
-  "province": null,
+  "province": "xinjiang",
   "title": "班超经营西域（LLM 抽取·人工校订）",
   "dossier_label": "班超经营西域（LLM 抽取落库）",
   "subtitle": "永平十六年—永元十四年（73–102）· 汉 vs 匈奴",

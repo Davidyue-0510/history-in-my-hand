@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["beijiu"] = {
     "note": "杯酒释兵权：地缘战略——杯酒释兵权"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=beijiu",
   "key": "beijiu",
   "scene_id": "beijiu",

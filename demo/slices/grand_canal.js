@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["grand_canal"] = {
     "note": "大运河：地缘战略——百余万"
    }
   },
-  "province": null,
+  "province": "zhejiang",
   "page": "county.html?scene=grand_canal",
   "key": "grand_canal",
   "scene_id": "grand_canal",

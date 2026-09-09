@@ -10,9 +10,9 @@
    "_source_name": "《云南抗战史》与滇缅公路",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 102.83,
+   "lat": 24.88,
+   "geo_note": "今云南昆明市"
   },
   {
    "id": "wanding",
@@ -24,9 +24,9 @@
    "_source_name": "《云南抗战史》与滇缅公路",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 97.85,
+   "lat": 24.1,
+   "geo_note": "今云南瑞丽市畹町镇"
   },
   {
    "id": "hengduan",
@@ -38,9 +38,9 @@
    "_source_name": "《云南抗战史》与滇缅公路",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 98.5,
+   "lat": 25.5,
+   "geo_note": "今云南西部横断山脉代表点"
   },
   {
    "id": "lancang",
@@ -52,9 +52,9 @@
    "_source_name": "《云南抗战史》与滇缅公路",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 99.5,
+   "lat": 23.0,
+   "geo_note": "今云南澜沧江（代表点）"
   },
   {
    "id": "myanmar",
@@ -66,9 +66,9 @@
    "_source_name": "《云南抗战史》与滇缅公路",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 96.0,
+   "lat": 22.0,
+   "geo_note": "今缅甸代表点"
   }
  ],
  "rivers": [],

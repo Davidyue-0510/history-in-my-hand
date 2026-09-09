@@ -1,47 +1,47 @@
 {
-  "places": [
-    {
-      "id": "hedong_yanchi",
-      "name": "河东盐池",
-      "type": "region",
-      "modern": "今山西运城",
-      "note": "解池，周百二十里",
-      "_source_idx": 0,
-      "_source_name": "史记·货殖列传 / 河东盐法志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": 111.23,
-      "lat": 35.16,
-      "geo_note": "裴氏郡望，今山西闻喜",
-      "geo_match": "substring"
-    },
-    {
-      "id": "hedong",
-      "name": "河东",
-      "type": "region",
-      "modern": "今山西西南部",
-      "note": "河东一道仰给于池",
-      "_source_idx": 0,
-      "_source_name": "史记·货殖列传 / 河东盐法志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": 111.23,
-      "lat": 35.16,
-      "geo_note": "裴氏郡望，今山西闻喜"
-    },
-    {
-      "id": "puzhou",
-      "name": "蒲州",
-      "type": "city",
-      "modern": "今山西永济",
-      "note": "盐池在蒲州东南",
-      "_source_idx": 0,
-      "_source_name": "史记·货殖列传 / 河东盐法志",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "hedong_yanchi",
+   "name": "河东盐池",
+   "type": "region",
+   "modern": "今山西运城",
+   "note": "解池，周百二十里",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 111.23,
+   "lat": 35.16,
+   "geo_note": "裴氏郡望，今山西闻喜",
+   "geo_match": "substring"
+  },
+  {
+   "id": "hedong",
+   "name": "河东",
+   "type": "region",
+   "modern": "今山西西南部",
+   "note": "河东一道仰给于池",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 111.23,
+   "lat": 35.16,
+   "geo_note": "裴氏郡望，今山西闻喜"
+  },
+  {
+   "id": "puzhou",
+   "name": "蒲州",
+   "type": "city",
+   "modern": "今山西永济",
+   "note": "盐池在蒲州东南",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.45,
+   "lat": 34.85,
+   "geo_note": "今山西永济（蒲州渡）"
+  }
+ ]
 }

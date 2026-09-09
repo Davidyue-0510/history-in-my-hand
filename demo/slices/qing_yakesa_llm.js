@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["qing_yakesa_llm"] = {
   "kind": "battle",
   "scale_tier": "operational",
   "region": "liaobei",
-  "province": null,
+  "province": "heilongjiang",
   "title": "雅克萨之战（LLM 抽取·人工校订）",
   "dossier_label": "雅克萨之战（LLM 抽取落库）",
   "subtitle": "康熙二十四至二十五年（1685–1686）· 清 vs 沙俄",

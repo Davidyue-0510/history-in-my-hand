@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["huaxian"] = {
     "note": "华县大地震：地缘战略——城郭尽圮"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=huaxian",
   "key": "huaxian",
   "scene_id": "huaxian",

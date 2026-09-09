@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["mobai"] = {
     "note": "漠北之战：地缘战略——分道出塞"
    }
   },
-  "province": null,
+  "province": "overseas",
   "page": "mobai.html",
   "key": "mobai",
   "scene_id": "mobai",

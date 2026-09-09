@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "fuzhou",
-      "name": "福州",
-      "type": "city",
-      "modern": "今中國福建省福州市",
-      "note": "番薯引種地",
-      "_source_idx": 0,
-      "_source_name": "《闽书·南产志》（何乔远）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "lvsong",
-      "name": "呂宋",
-      "type": "region",
-      "modern": "今菲律賓呂宋島",
-      "note": "番薯原產地",
-      "_source_idx": 0,
-      "_source_name": "《闽书·南产志》（何乔远）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "fuzhou",
+   "name": "福州",
+   "type": "city",
+   "modern": "今中國福建省福州市",
+   "note": "番薯引種地",
+   "_source_idx": 0,
+   "_source_name": "《闽书·南产志》（何乔远）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 119.3,
+   "lat": 26.08,
+   "geo_note": "今福建福州市"
+  },
+  {
+   "id": "lvsong",
+   "name": "呂宋",
+   "type": "region",
+   "modern": "今菲律賓呂宋島",
+   "note": "番薯原產地",
+   "_source_idx": 0,
+   "_source_name": "《闽书·南产志》（何乔远）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 121.0,
+   "lat": 15.5,
+   "geo_note": "今菲律宾吕宋岛"
+  }
+ ]
 }

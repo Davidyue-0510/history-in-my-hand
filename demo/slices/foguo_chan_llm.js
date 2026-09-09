@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["foguo_chan_llm"] = {
  "meta": {
   "kind": "thought",
   "region": "thought",
-  "province": null,
+  "province": "shaanxi",
   "title": "唐代佛教东传与禅宗",
   "dossier_label": null,
   "subtitle": "武周崇佛·会昌灭佛·禅宗本土化",

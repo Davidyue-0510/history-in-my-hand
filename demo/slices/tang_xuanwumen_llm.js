@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["tang_xuanwumen_llm"] = {
   "kind": "court",
   "scale_tier": "operational",
   "region": "tang",
-  "province": null,
+  "province": "shaanxi",
   "title": "唐·玄武门之变（LLM 抽取·人工校订）",
   "dossier_label": "唐·玄武门之变（LLM 抽取落库）",
   "subtitle": "夺嫡与贞观前夜",

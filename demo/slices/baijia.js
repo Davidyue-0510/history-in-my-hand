@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["baijia"] = {
     "note": "百家争鸣：地缘战略——公元前372年生"
    }
   },
-  "province": null,
+  "province": "shandong",
   "page": "county.html?scene=baijia",
   "key": "baijia",
   "scene_id": "baijia",

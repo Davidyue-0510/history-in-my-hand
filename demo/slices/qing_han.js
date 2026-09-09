@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["qing_han"] = {
     "note": "清满汉融合：地缘战略——颁剃发令"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=qing_han",
   "key": "qing_han",
   "scene_id": "qing_han",

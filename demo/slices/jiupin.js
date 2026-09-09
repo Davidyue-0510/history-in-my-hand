@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["jiupin"] = {
     "note": "九品中正制：地缘战略——采陈群议"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "county.html?scene=jiupin",
   "key": "jiupin",
   "scene_id": "jiupin",

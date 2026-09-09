@@ -10,9 +10,9 @@
    "_source_name": "《宋史·朱熹传》与白鹿洞书院",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 115.97,
+   "lat": 29.55,
+   "geo_note": "今江西九江庐山白鹿洞书院"
   },
   {
    "id": "lushan",
@@ -24,9 +24,9 @@
    "_source_name": "《宋史·朱熹传》与白鹿洞书院",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 115.97,
+   "lat": 29.55,
+   "geo_note": "今江西九江市庐山"
   },
   {
    "id": "nankangjun",
@@ -38,9 +38,9 @@
    "_source_name": "《宋史·朱熹传》与白鹿洞书院",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 115.97,
+   "lat": 29.55,
+   "geo_note": "今江西庐山市（宋南康军）"
   }
  ],
  "rivers": [],

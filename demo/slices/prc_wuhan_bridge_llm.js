@@ -100,9 +100,10 @@ window.SANDBOX_SLICES["prc_wuhan_bridge_llm"] = {
    "_source_name": "武汉长江大桥工程文献（公开权威口径）",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 114.3,
+   "lat": 30.55,
+   "geo_note": "今湖北武汉长江大桥",
+   "elev": 39
   },
   {
    "id": "wuchang",
@@ -634,7 +635,15 @@ window.SANDBOX_SLICES["prc_wuhan_bridge_llm"] = {
    "timeline": "main"
   }
  ],
- "control_seats": [],
+ "control_seats": [
+  {
+   "place_id": "wuhan_bridge",
+   "name": "武汉长江大桥",
+   "lon": 114.3,
+   "lat": 30.55,
+   "region": "engineering"
+  }
+ ],
  "control_years": [
   1955,
   1957

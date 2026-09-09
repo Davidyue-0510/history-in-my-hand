@@ -1,60 +1,60 @@
 {
-  "places": [
-    {
-      "id": "jiangchuan",
-      "name": "江川县",
-      "type": "city",
-      "modern": "今中国云南省玉溪市江川区",
-      "note": "曲焕章籍贯",
-      "_source_idx": 0,
-      "_source_name": "云南白药·曲焕章与白药",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "kunming",
-      "name": "昆明",
-      "type": "city",
-      "modern": "今中国云南省昆明市",
-      "note": "制药厂所在地",
-      "_source_idx": 0,
-      "_source_name": "云南白药·曲焕章与白药",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "dongnanya",
-      "name": "东南亚",
-      "type": "region",
-      "modern": "今东南亚地区",
-      "note": "白药远销地",
-      "_source_idx": 0,
-      "_source_name": "云南白药·曲焕章与白药",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "diannan",
-      "name": "滇南",
-      "type": "region",
-      "modern": "今中国云南省南部",
-      "note": "采药地",
-      "_source_idx": 0,
-      "_source_name": "云南白药·曲焕章与白药",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "jiangchuan",
+   "name": "江川县",
+   "type": "city",
+   "modern": "今中国云南省玉溪市江川区",
+   "note": "曲焕章籍贯",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 102.75,
+   "lat": 24.28,
+   "geo_note": "今云南玉溪市江川区"
+  },
+  {
+   "id": "kunming",
+   "name": "昆明",
+   "type": "city",
+   "modern": "今中国云南省昆明市",
+   "note": "制药厂所在地",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 102.83,
+   "lat": 24.88,
+   "geo_note": "今云南昆明市"
+  },
+  {
+   "id": "dongnanya",
+   "name": "东南亚",
+   "type": "region",
+   "modern": "今东南亚地区",
+   "note": "白药远销地",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 110.0,
+   "lat": 5.0,
+   "geo_note": "今东南亚代表点"
+  },
+  {
+   "id": "diannan",
+   "name": "滇南",
+   "type": "region",
+   "modern": "今中国云南省南部",
+   "note": "采药地",
+   "_source_idx": 0,
+   "_source_name": "云南白药·曲焕章与白药",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 101.0,
+   "lat": 22.0,
+   "geo_note": "今云南南部代表点"
+  }
+ ]
 }

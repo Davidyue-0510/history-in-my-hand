@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["warring_states_shangyang_llm"] = {
   "kind": "reform",
   "scale_tier": "strategic",
   "region": "guangzhong",
-  "province": null,
+  "province": "shaanxi",
   "title": "战国·商鞅变法（LLM 抽取·人工校订）",
   "dossier_label": "战国·商鞅变法（LLM 抽取落库）",
   "subtitle": "秦富强的制度底座",

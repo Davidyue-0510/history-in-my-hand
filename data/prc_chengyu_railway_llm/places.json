@@ -1,60 +1,61 @@
 {
-  "places": [
-    {
-      "id": "chengdu",
-      "name": "成都",
-      "type": "city",
-      "modern": "今中国四川省成都市",
-      "note": "铁路起点",
-      "_source_idx": 0,
-      "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": 104.07,
-      "lat": 30.66,
-      "geo_note": "今四川成都"
-    },
-    {
-      "id": "chongqing",
-      "name": "重庆",
-      "type": "city",
-      "modern": "今中国重庆市",
-      "note": "铁路终点",
-      "_source_idx": 0,
-      "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "longquanshan",
-      "name": "龙泉山",
-      "type": "region",
-      "modern": "今中国四川省成都市龙泉驿区",
-      "note": "线路穿越的山脉",
-      "_source_idx": 0,
-      "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "chuanzhongqiuling",
-      "name": "川中丘陵",
-      "type": "region",
-      "modern": "今中国四川省中部",
-      "note": "线路经过的丘陵地带",
-      "_source_idx": 0,
-      "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "chengdu",
+   "name": "成都",
+   "type": "city",
+   "modern": "今中国四川省成都市",
+   "note": "铁路起点",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.07,
+   "lat": 30.66,
+   "geo_note": "今四川成都"
+  },
+  {
+   "id": "chongqing",
+   "name": "重庆",
+   "type": "city",
+   "modern": "今中国重庆市",
+   "note": "铁路终点",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 106.55,
+   "lat": 29.56,
+   "geo_note": "今重庆市"
+  },
+  {
+   "id": "longquanshan",
+   "name": "龙泉山",
+   "type": "region",
+   "modern": "今中国四川省成都市龙泉驿区",
+   "note": "线路穿越的山脉",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 119.14,
+   "lat": 28.07,
+   "geo_note": "今浙江龙泉市（龙泉窑）",
+   "geo_match": "substring"
+  },
+  {
+   "id": "chuanzhongqiuling",
+   "name": "川中丘陵",
+   "type": "region",
+   "modern": "今中国四川省中部",
+   "note": "线路经过的丘陵地带",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 105.0,
+   "lat": 30.5,
+   "geo_note": "今四川中部丘陵代表点"
+  }
+ ]
 }

@@ -75,7 +75,7 @@ window.SANDBOX_SLICES["xuanzang"] = {
     "note": "玄奘西行：地缘战略——玄奘归国"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=xuanzang",
   "key": "xuanzang",
   "scene_id": "xuanzang",

@@ -70,7 +70,7 @@ window.SANDBOX_SLICES["tang_dangzheng"] = {
     "note": "牛李党争：地缘战略——牛党以科举进士为基，主张公议取士、抑制门荫；李党以山东士族门荫为基，重阀阅、轻科举。"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=tang_dangzheng",
   "key": "tang_dangzheng",
   "scene_id": "tang_dangzheng",

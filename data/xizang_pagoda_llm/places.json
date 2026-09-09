@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "sangye_si",
-      "name": "桑耶寺",
-      "type": "fortress",
-      "modern": "今中国西藏自治区山南市扎囊县桑耶镇",
-      "note": "西藏第一座完整三宝道场",
-      "_source_idx": 0,
-      "_source_name": "西藏王统记（索南坚赞）/ 拔协",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "zhanang",
-      "name": "扎囊",
-      "type": "region",
-      "modern": "今中国西藏自治区山南市扎囊县",
-      "note": "桑耶寺所在地",
-      "_source_idx": 0,
-      "_source_name": "西藏王统记（索南坚赞）/ 拔协",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "sangye_si",
+   "name": "桑耶寺",
+   "type": "fortress",
+   "modern": "今中国西藏自治区山南市扎囊县桑耶镇",
+   "note": "西藏第一座完整三宝道场",
+   "_source_idx": 0,
+   "_source_name": "西藏王统记（索南坚赞）/ 拔协",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 91.27,
+   "lat": 29.33,
+   "geo_note": "今西藏山南扎囊桑耶寺"
+  },
+  {
+   "id": "zhanang",
+   "name": "扎囊",
+   "type": "region",
+   "modern": "今中国西藏自治区山南市扎囊县",
+   "note": "桑耶寺所在地",
+   "_source_idx": 0,
+   "_source_name": "西藏王统记（索南坚赞）/ 拔协",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 91.33,
+   "lat": 29.23,
+   "geo_note": "今西藏山南扎囊县"
+  }
+ ]
 }

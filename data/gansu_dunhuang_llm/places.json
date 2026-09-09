@@ -10,9 +10,9 @@
    "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 94.66,
+   "lat": 40.14,
+   "geo_note": "今甘肃敦煌市"
   },
   {
    "id": "sanweishan",
@@ -24,9 +24,9 @@
    "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 94.8,
+   "lat": 40.05,
+   "geo_note": "今甘肃敦煌市东南三危山"
   },
   {
    "id": "mogao_ku",
@@ -38,9 +38,9 @@
    "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 94.8,
+   "lat": 40.04,
+   "geo_note": "今甘肃敦煌市东南25km莫高窟"
   },
   {
    "id": "cangjing_dong",
@@ -52,9 +52,9 @@
    "_source_name": "敦煌莫高窟史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 94.8,
+   "lat": 40.04,
+   "geo_note": "莫高窟第17窟"
   }
  ],
  "rivers": [],

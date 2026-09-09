@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["huangjin"] = {
     "note": "黄巾起义：地缘战略——张角"
    }
   },
-  "province": null,
+  "province": "hebei",
   "page": "county.html?scene=huangjin",
   "key": "huangjin",
   "scene_id": "huangjin",

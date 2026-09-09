@@ -1,18 +1,18 @@
 {
-  "places": [
-    {
-      "id": "qizhou",
-      "name": "蕲州",
-      "type": "city",
-      "modern": "今中国湖北省蕲春县",
-      "note": "李时珍故里",
-      "_source_idx": 0,
-      "_source_name": "《明史·李时珍传》",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "qizhou",
+   "name": "蕲州",
+   "type": "city",
+   "modern": "今中国湖北省蕲春县",
+   "note": "李时珍故里",
+   "_source_idx": 0,
+   "_source_name": "《明史·李时珍传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 115.43,
+   "lat": 30.23,
+   "geo_note": "今湖北蕲春（李时珍故里）"
+  }
+ ]
 }

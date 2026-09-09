@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["han_weihuo_llm"] = {
   "kind": "frontier",
   "scale_tier": "strategic",
   "region": "xibei",
-  "province": null,
+  "province": "overseas",
   "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
   "dossier_label": "汉·卫青霍去病北伐匈奴（LLM 抽取落库）",
   "subtitle": "漠南无王庭的转身",

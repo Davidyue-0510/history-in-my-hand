@@ -76,7 +76,7 @@ window.SANDBOX_SLICES["heshangyuan"] = {
     "note": "和尚原之战：地缘战略——金兵负重甲登山仰攻"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "heshangyuan.html",
   "key": "heshangyuan",
   "scene_id": "heshangyuan",

@@ -10,9 +10,9 @@
    "_source_name": "宗喀巴史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 101.57,
+   "lat": 36.52,
+   "geo_note": "今青海湟中（宗喀巴诞生地）"
   },
   {
    "id": "lasa",
@@ -24,9 +24,9 @@
    "_source_name": "宗喀巴史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 91.11,
+   "lat": 29.65,
+   "geo_note": "今西藏拉萨"
   },
   {
    "id": "ganden",
@@ -38,9 +38,9 @@
    "_source_name": "宗喀巴史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 91.28,
+   "lat": 29.75,
+   "geo_note": "今西藏拉萨达孜区（宗喀巴建）"
   },
   {
    "id": "tashilhunpo",
@@ -52,9 +52,9 @@
    "_source_name": "宗喀巴史料摘录",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 88.9,
+   "lat": 29.27,
+   "geo_note": "今西藏日喀则"
   }
  ],
  "rivers": [],

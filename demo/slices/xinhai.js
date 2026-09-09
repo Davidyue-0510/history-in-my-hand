@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["xinhai"] = {
     "note": "辛亥革命：地缘战略——各省响应"
    }
   },
-  "province": null,
+  "province": "hubei",
   "page": "county.html?scene=xinhai",
   "key": "xinhai",
   "scene_id": "xinhai",

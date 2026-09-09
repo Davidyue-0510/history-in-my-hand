@@ -1,60 +1,60 @@
 {
-  "places": [
-    {
-      "id": "wuyi_shan",
-      "name": "武夷山",
-      "type": "region",
-      "modern": "今中国福建省武夷山市",
-      "note": "产茶名山",
-      "_source_idx": 0,
-      "_source_name": "武夷山志·茶考 / 闽产录异",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "xia_mei",
-      "name": "下梅",
-      "type": "yi",
-      "modern": "今中国福建省武夷山市下梅村",
-      "note": "茶市",
-      "_source_idx": 0,
-      "_source_name": "武夷山志·茶考 / 闽产录异",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "chong_an",
-      "name": "崇安",
-      "type": "city",
-      "modern": "今中国福建省武夷山市",
-      "note": "旧县名",
-      "_source_idx": 0,
-      "_source_name": "武夷山志·茶考 / 闽产录异",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "xing_cun",
-      "name": "星村",
-      "type": "yi",
-      "modern": "今中国福建省武夷山市星村镇",
-      "note": "茶市",
-      "_source_idx": 0,
-      "_source_name": "武夷山志·茶考 / 闽产录异",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "wuyi_shan",
+   "name": "武夷山",
+   "type": "region",
+   "modern": "今中国福建省武夷山市",
+   "note": "产茶名山",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.03,
+   "lat": 27.67,
+   "geo_note": "今福建武夷山市"
+  },
+  {
+   "id": "xia_mei",
+   "name": "下梅",
+   "type": "yi",
+   "modern": "今中国福建省武夷山市下梅村",
+   "note": "茶市",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.05,
+   "lat": 27.7,
+   "geo_note": "今福建武夷山下梅村"
+  },
+  {
+   "id": "chong_an",
+   "name": "崇安",
+   "type": "city",
+   "modern": "今中国福建省武夷山市",
+   "note": "旧县名",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 118.03,
+   "lat": 27.73,
+   "geo_note": "今福建武夷山（旧崇安）"
+  },
+  {
+   "id": "xing_cun",
+   "name": "星村",
+   "type": "yi",
+   "modern": "今中国福建省武夷山市星村镇",
+   "note": "茶市",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 117.98,
+   "lat": 27.72,
+   "geo_note": "今福建武夷山星村镇"
+  }
+ ]
 }

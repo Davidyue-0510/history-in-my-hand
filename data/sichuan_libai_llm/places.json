@@ -1,74 +1,74 @@
 {
-  "places": [
-    {
-      "id": "suiye",
-      "name": "碎叶",
-      "type": "city",
-      "modern": "今吉尔吉斯斯坦托克马克",
-      "note": "李白出生地",
-      "_source_idx": 0,
-      "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "mianzhou_changlong",
-      "name": "绵州昌隆",
-      "type": "city",
-      "modern": "今四川江油",
-      "note": "李白籍贯",
-      "_source_idx": 0,
-      "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "kuangshan",
-      "name": "匡山",
-      "type": "region",
-      "modern": "今四川江油境内",
-      "note": "李白读书处",
-      "_source_idx": 0,
-      "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "bashu",
-      "name": "巴蜀",
-      "type": "region",
-      "modern": "今四川重庆一带",
-      "note": "李白诗歌背景",
-      "_source_idx": 0,
-      "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "guanghan",
-      "name": "广汉",
-      "type": "region",
-      "modern": "今四川广汉一带",
-      "note": "李白家族迁居地",
-      "_source_idx": 0,
-      "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "suiye",
+   "name": "碎叶",
+   "type": "city",
+   "modern": "今吉尔吉斯斯坦托克马克",
+   "note": "李白出生地",
+   "_source_idx": 0,
+   "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 75.23,
+   "lat": 42.83,
+   "geo_note": "今吉尔吉斯斯坦托克马克（唐碎叶城）"
+  },
+  {
+   "id": "mianzhou_changlong",
+   "name": "绵州昌隆",
+   "type": "city",
+   "modern": "今四川江油",
+   "note": "李白籍贯",
+   "_source_idx": 0,
+   "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.74,
+   "lat": 31.78,
+   "geo_note": "今四川江油（李白故里）"
+  },
+  {
+   "id": "kuangshan",
+   "name": "匡山",
+   "type": "region",
+   "modern": "今四川江油境内",
+   "note": "李白读书处",
+   "_source_idx": 0,
+   "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.74,
+   "lat": 31.78,
+   "geo_note": "今四川江油匡山"
+  },
+  {
+   "id": "bashu",
+   "name": "巴蜀",
+   "type": "region",
+   "modern": "今四川重庆一带",
+   "note": "李白诗歌背景",
+   "_source_idx": 0,
+   "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 106.5,
+   "lat": 30.5,
+   "geo_note": "今四川重庆一带代表点"
+  },
+  {
+   "id": "guanghan",
+   "name": "广汉",
+   "type": "region",
+   "modern": "今四川广汉一带",
+   "note": "李白家族迁居地",
+   "_source_idx": 0,
+   "_source_name": "李太白全集·草堂集序（李阳冰·唐）",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 104.2,
+   "lat": 31.1,
+   "geo_note": "今四川广汉"
+  }
+ ]
 }

@@ -10,9 +10,9 @@
    "_source_name": "《明史·地理志》与嘉峪关",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 98.29,
+   "lat": 39.77,
+   "geo_note": "今甘肃嘉峪关市"
   },
   {
    "id": "jiuquan",
@@ -24,9 +24,9 @@
    "_source_name": "《明史·地理志》与嘉峪关",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 98.49,
+   "lat": 39.74,
+   "geo_note": "今甘肃酒泉市"
   },
   {
    "id": "hexi",
@@ -38,9 +38,9 @@
    "_source_name": "《明史·地理志》与嘉峪关",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 97.0,
+   "lat": 39.5,
+   "geo_note": "今甘肃河西走廊代表点"
   },
   {
    "id": "jiayushan",
@@ -52,9 +52,9 @@
    "_source_name": "《明史·地理志》与嘉峪关",
    "_source_party": "后世官修",
    "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
+   "lon": 98.1,
+   "lat": 39.7,
+   "geo_note": "今甘肃嘉峪关市西南嘉峪山"
   }
  ],
  "rivers": [],

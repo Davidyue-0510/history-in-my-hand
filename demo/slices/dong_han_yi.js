@@ -72,7 +72,7 @@ window.SANDBOX_SLICES["dong_han_yi"] = {
     "note": "东汉大疫：地缘战略——建安七子凋零"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=dong_han_yi",
   "key": "dong_han_yi",
   "scene_id": "dong_han_yi",

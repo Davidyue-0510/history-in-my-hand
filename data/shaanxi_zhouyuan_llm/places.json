@@ -1,46 +1,46 @@
 {
-  "places": [
-    {
-      "id": "zhouyuan",
-      "name": "周原",
-      "type": "region",
-      "modern": "今中国陕西岐山、扶风",
-      "note": "周人新都所在",
-      "_source_idx": 0,
-      "_source_name": "诗·大雅·绵 / 尚书·周官",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "guanzhong",
-      "name": "关中",
-      "type": "region",
-      "modern": "今中国陕西中部",
-      "note": "周室根本",
-      "_source_idx": 0,
-      "_source_name": "诗·大雅·绵 / 尚书·周官",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "qi",
-      "name": "邰",
-      "type": "city",
-      "modern": "今中国陕西武功",
-      "note": "周人旧都",
-      "_source_idx": 0,
-      "_source_name": "诗·大雅·绵 / 尚书·周官",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "zhouyuan",
+   "name": "周原",
+   "type": "region",
+   "modern": "今中国陕西岐山、扶风",
+   "note": "周人新都所在",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 107.9,
+   "lat": 34.4,
+   "geo_note": "今陕西岐山、扶风周原"
+  },
+  {
+   "id": "guanzhong",
+   "name": "关中",
+   "type": "region",
+   "modern": "今中国陕西中部",
+   "note": "周室根本",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.9,
+   "lat": 34.3,
+   "geo_note": "今陕西中部关中平原代表点"
+  },
+  {
+   "id": "qi",
+   "name": "邰",
+   "type": "city",
+   "modern": "今中国陕西武功",
+   "note": "周人旧都",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.2,
+   "lat": 34.3,
+   "geo_note": "今陕西武功（后稷封邰）"
+  }
+ ]
 }

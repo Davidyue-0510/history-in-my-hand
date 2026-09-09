@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["chibi_llm"] = {
  "meta": {
   "kind": "county",
   "region": "jiangnan",
-  "province": null,
+  "province": "hubei",
   "title": "三国·赤壁之战",
   "dossier_label": null,
   "subtitle": null,

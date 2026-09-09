@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["ming_zhenghe_llm"] = {
   "kind": "exchange",
   "scale_tier": "strategic",
   "region": "jiangnan",
-  "province": null,
+  "province": "jiangsu",
   "title": "郑和下西洋（LLM 抽取·人工校订）",
   "dossier_label": "郑和下西洋（LLM 抽取落库）",
   "subtitle": "永乐三年—宣德八年（1405–1433）· 明远洋",

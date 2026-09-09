@@ -6,7 +6,7 @@ window.SANDBOX_SLICES["yuan_xingsheng_llm"] = {
   "kind": "reform",
   "scale_tier": "strategic",
   "region": "yuan_ming",
-  "province": null,
+  "province": "beijing",
   "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
   "dossier_label": "元设行中书省（行省制）（LLM 抽取落库）",
   "subtitle": "至元年间（1264 起）· 元中央制度",

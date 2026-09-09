@@ -74,7 +74,7 @@ window.SANDBOX_SLICES["huangchao"] = {
     "note": "黄巢起义：地缘战略——大齐"
    }
   },
-  "province": null,
+  "province": "shaanxi",
   "page": "county.html?scene=huangchao",
   "key": "huangchao",
   "scene_id": "huangchao",

@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["zhuxi"] = {
  "meta": {
   "kind": "thought",
   "region": "thought",
-  "province": null,
+  "province": "jiangxi",
   "title": "朱熹·理学",
   "dossier_label": null,
   "subtitle": "南宋理气论·格物致知·四书集注",

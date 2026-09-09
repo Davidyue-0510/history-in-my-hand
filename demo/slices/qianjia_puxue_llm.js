@@ -5,7 +5,7 @@ window.SANDBOX_SLICES["qianjia_puxue_llm"] = {
  "meta": {
   "kind": "thought",
   "region": "thought",
-  "province": null,
+  "province": "beijing",
   "title": "清代乾嘉朴学",
   "dossier_label": null,
   "subtitle": "文字狱高压·四库寓禁于征·考据鼎盛",

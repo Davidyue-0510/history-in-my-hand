@@ -73,7 +73,7 @@ window.SANDBOX_SLICES["shenkuo"] = {
     "note": "沈括梦溪笔谈：地缘战略——命名石油"
    }
   },
-  "province": null,
+  "province": "jiangsu",
   "page": "county.html?scene=shenkuo",
   "key": "shenkuo",
   "scene_id": "shenkuo",

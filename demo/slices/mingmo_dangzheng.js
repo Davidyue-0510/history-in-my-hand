@@ -98,7 +98,7 @@ window.SANDBOX_SLICES["mingmo_dangzheng"] = {
     "note": "明末党争·辽东导火索：地缘战略——魏忠贤掌东厂"
    }
   },
-  "province": null,
+  "province": "beijing",
   "page": "county.html?scene=mingmo_dangzheng",
   "key": "mingmo_dangzheng",
   "scene_id": "mingmo_dangzheng",

@@ -43,7 +43,7 @@
   /* ═══════════ 状态 ═══════════ */
   var state = {
     sources: new Set(D.sources.map(function (s) { return s.id; })),
-    layers:  new Set(['record', 'scholarship', 'gap']),
+    layers:  new Set(['record', 'scholarship', 'inference', 'gap']),
     dims:    new Set(),       // v0.74 六维筛选：点击覆盖面板的维度槽钻取；空集 = 不过滤
     declaredOnly: false,      // v0.76「只看声明」：隐藏 dim_source=inferred 的推断覆盖，守 E18 诚实边界
     routes:  new Set(D.routes.map(function (r) { return r.id; })),

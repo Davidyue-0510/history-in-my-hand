@@ -103,7 +103,7 @@ window.SANDBOX_SLICES["san_guo"] = {
     "note": "三国鼎立：地缘战略——景元四年魏钟会、邓艾伐蜀，邓艾偷渡阴平直取成都，刘禅出降，蜀汉亡"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=san_guo",
   "key": "san_guo",
   "scene_id": "san_guo"

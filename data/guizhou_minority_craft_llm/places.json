@@ -1,32 +1,32 @@
 {
-  "places": [
-    {
-      "id": "leiping_zhaoxing",
-      "name": "黎平肇兴",
-      "type": "village",
-      "modern": "贵州黎平县肇兴镇",
-      "note": "侗寨鼓楼群",
-      "_source_idx": 0,
-      "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    },
-    {
-      "id": "congjiang_zengchong",
-      "name": "从江增冲",
-      "type": "village",
-      "modern": "贵州从江县增冲乡",
-      "note": "侗寨鼓楼",
-      "_source_idx": 0,
-      "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
-      "_source_party": "后世官修",
-      "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
-    }
-  ]
+ "places": [
+  {
+   "id": "leiping_zhaoxing",
+   "name": "黎平肇兴",
+   "type": "village",
+   "modern": "贵州黎平县肇兴镇",
+   "note": "侗寨鼓楼群",
+   "_source_idx": 0,
+   "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 109.18,
+   "lat": 25.85,
+   "geo_note": "今贵州黎平肇兴侗寨"
+  },
+  {
+   "id": "congjiang_zengchong",
+   "name": "从江增冲",
+   "type": "village",
+   "modern": "贵州从江县增冲乡",
+   "note": "侗寨鼓楼",
+   "_source_idx": 0,
+   "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
+   "_source_party": "后世官修",
+   "_source_credibility": null,
+   "lon": 108.95,
+   "lat": 25.75,
+   "geo_note": "今贵州从江增冲鼓楼"
+  }
+ ]
 }
