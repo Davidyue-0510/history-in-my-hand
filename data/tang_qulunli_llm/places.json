@@ -1,0 +1,18 @@
+{
+  "places": [
+    {
+      "id": "jiangdong",
+      "name": "江东",
+      "type": "region",
+      "modern": "今中国长江下游地区",
+      "note": "江南水田农业区",
+      "_source_idx": 0,
+      "_source_name": "陆龟蒙《耒耜经》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

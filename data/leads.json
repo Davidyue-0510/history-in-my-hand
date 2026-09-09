@@ -2487,6 +2487,102 @@
    "_src_line": 15
   },
   {
+   "id": "HAN_010",
+   "scene": "han_dushi_shuipai_llm",
+   "subject": "event:ev_han_dushi_shuipai_llm_02",
+   "title": "水排具体结构未载",
+   "missing": "机械工程 / 考古学",
+   "where": "南阳",
+   "skills": [
+    "机械工程",
+    "考古学"
+   ],
+   "accept": "水排的复原模型或图像资料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "HAN_011",
+   "scene": "han_dushi_shuipai_llm",
+   "subject": "event:ev_han_dushi_shuipai_llm_02",
+   "title": "水排技术传播不明",
+   "missing": "历史地理 / 技术传播",
+   "where": "南阳",
+   "skills": [
+    "历史地理",
+    "技术传播"
+   ],
+   "accept": "后世文献或考古证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HAN_012",
+   "scene": "han_jiliguche_llm",
+   "subject": "event:ev_han_jiliguche_llm_01",
+   "title": "无实物出土",
+   "missing": "考古发掘 / 机械复原",
+   "where": "汉代墓葬或遗址",
+   "skills": [
+    "考古发掘",
+    "机械复原"
+   ],
+   "accept": "若发现记里鼓车实物或模型",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "HAN_009",
+   "scene": "han_longshouqu_llm",
+   "subject": "event:ev_han_longshouqu_llm_01",
+   "title": "未记载最终通水",
+   "missing": "考古 / 水利史",
+   "where": "龙首渠遗址",
+   "skills": [
+    "考古",
+    "水利史"
+   ],
+   "accept": "考古证据可补",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "HAN_013",
+   "scene": "han_tihuajing_llm",
+   "subject": "person:HAN__p03",
+   "title": "百二十蹑可能为夸大",
+   "missing": "纺织技术史 / 考古学",
+   "where": "考古发现汉代织机模型",
+   "skills": [
+    "纺织技术史",
+    "考古学"
+   ],
+   "accept": "验证蹑数真实性",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HAN_014",
+   "scene": "han_tihuajing_llm",
+   "subject": "person:HAN__p01",
+   "title": "动机不明",
+   "missing": "历史学 / 文献学",
+   "where": "汉代宫廷关系研究",
+   "skills": [
+    "历史学",
+    "文献学"
+   ],
+   "accept": "推断赠物背景",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "HAN_013",
    "scene": "han_weihuo_llm",
    "subject": "event:ev_han_weihuo_01",
@@ -4432,6 +4528,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "MIN_006",
+   "scene": "ming_tiangong_llm",
+   "subject": "event:ev_ming_tiangong_llm_01",
+   "title": "具体传播路径与影响范围尚待考证。",
+   "missing": "版本目录学 / 历史地理",
+   "where": "明清文献及地方志",
+   "skills": [
+    "版本目录学",
+    "历史地理"
+   ],
+   "accept": "需查证《天工开物》在明清的刊刻与流传记录",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 6
   },
   {
    "id": "MIN_012",
@@ -7017,6 +7129,22 @@
    "_src_line": 10
   },
   {
+   "id": "TAN_015",
+   "scene": "tang_qulunli_llm",
+   "subject": "event:ev_tang_qulunli_llm_01",
+   "title": "曲辕犁起源时间待考",
+   "missing": "农具考古 / 文献比对",
+   "where": "江东地区考古发现",
+   "skills": [
+    "农具考古",
+    "文献比对"
+   ],
+   "accept": "出土实物与文献互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "TAN_011",
    "scene": "tang_xuanwumen_llm",
    "subject": "event:ev_tang_xuanwumen_01",
@@ -7033,6 +7161,22 @@
    "_src_line": 11
   },
   {
+   "id": "TAN_012",
+   "scene": "tang_yixing_llm",
+   "subject": "event:ev_tang_yixing_llm_02",
+   "title": "史料未载图纸",
+   "missing": "机械史 / 天文仪器",
+   "where": "旧唐书一行传",
+   "skills": [
+    "机械史",
+    "天文仪器"
+   ],
+   "accept": "需结合其他文献",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "THR_009",
    "scene": "three_campaigns",
    "subject": "event:ev_three_campaigns_01",
@@ -7047,6 +7191,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 9
+  },
+  {
+   "id": "THR_012",
+   "scene": "three_kingdoms_fanche_llm",
+   "subject": "event:ev_three_kingdoms_fanche_llm_01",
+   "title": "缺乏实物佐证",
+   "missing": "考古发掘 / 机械复原",
+   "where": "洛阳周边汉魏遗址",
+   "skills": [
+    "考古发掘",
+    "机械复原"
+   ],
+   "accept": "出土翻车模型或部件",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "TIA_010",
@@ -8305,6 +8465,54 @@
    "_src_line": 11
   },
   {
+   "id": "YUA_010",
+   "scene": "yuan_qinghua_llm",
+   "subject": "event:ev_yuan_qinghua_llm_02",
+   "title": "具体烧成温度未记载",
+   "missing": "窑炉测温 / 科技考古",
+   "where": "景德镇窑址",
+   "skills": [
+    "窑炉测温",
+    "科技考古"
+   ],
+   "accept": "通过窑炉遗迹和瓷片分析推定烧成温度",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "YUA_011",
+   "scene": "yuan_qinghua_llm",
+   "subject": "event:ev_yuan_qinghua_llm_02",
+   "title": "透明釉具体配方未明",
+   "missing": "釉料分析 / 成分检测",
+   "where": "景德镇古窑址",
+   "skills": [
+    "釉料分析",
+    "成分检测"
+   ],
+   "accept": "通过科学检测还原釉料配方",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "YUA_012",
+   "scene": "yuan_qinghua_llm",
+   "subject": "event:ev_yuan_qinghua_llm_02",
+   "title": "行销海内，具体路线未载",
+   "missing": "沉船考古 / 贸易网络分析",
+   "where": "海上丝绸之路沿线",
+   "skills": [
+    "沉船考古",
+    "贸易网络分析"
+   ],
+   "accept": "通过沉船和文献记载复原外销路线",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "YUA_015",
    "scene": "yuan_shangdu_llm",
    "subject": "place:kaiping",
@@ -8319,6 +8527,54 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "YUA_008",
+   "scene": "yuan_wangzhen_llm",
+   "subject": "person:YUA__p01",
+   "title": "转轮排字盘具体构造未详",
+   "missing": "机械工程 / 印刷史",
+   "where": "王祯《农书》卷二十二",
+   "skills": [
+    "机械工程",
+    "印刷史"
+   ],
+   "accept": "转轮排字盘的具体机械结构",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "YUA_009",
+   "scene": "yuan_wangzhen_llm",
+   "subject": "person:YUA__p01",
+   "title": "转轮排字盘实际应用范围不明",
+   "missing": "版本学 / 地方志",
+   "where": "王祯任职地旌德县",
+   "skills": [
+    "版本学",
+    "地方志"
+   ],
+   "accept": "转轮排字盘实际印刷的书籍",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "YUA_010",
+   "scene": "yuan_wangzhen_llm",
+   "subject": "person:YUA__p01",
+   "title": "转轮排字盘后世影响未详",
+   "missing": "印刷史 / 文献学",
+   "where": "元明清印刷史文献",
+   "skills": [
+    "印刷史",
+    "文献学"
+   ],
+   "accept": "转轮排字盘对后世印刷术的影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
   },
   {
    "id": "YUA_010",

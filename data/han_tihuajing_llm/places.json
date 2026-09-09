@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "linzi",
+      "name": "临淄",
+      "type": "city",
+      "modern": "今中国山东省淄博市临淄区",
+      "note": "场景设定地",
+      "_source_idx": 0,
+      "_source_name": "《西京杂记》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 118.05,
+      "lat": 36.81,
+      "geo_note": "今山东淄博临淄；房玄龄故里"
+    },
+    {
+      "id": "julu",
+      "name": "巨鹿",
+      "type": "region",
+      "modern": "今中国河北省巨鹿县",
+      "note": "陈宝光妻所在",
+      "_source_idx": 0,
+      "_source_name": "《西京杂记》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 115.04,
+      "lat": 37.67,
+      "geo_note": "魏征故里，今河北晋州"
+    }
+  ]
+}

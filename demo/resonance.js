@@ -135,6 +135,10 @@ window.SANDBOX_RESONANCE = {
    "hainan_zhuyai_llm",
    "haizhou",
    "han_banchao_llm",
+   "han_dushi_shuipai_llm",
+   "han_jiliguche_llm",
+   "han_longshouqu_llm",
+   "han_tihuajing_llm",
    "han_weihuo_llm",
    "han_wudi_ruxue",
    "hebei_kailuan_llm",
@@ -222,6 +226,7 @@ window.SANDBOX_RESONANCE = {
    "lvlin",
    "maling",
    "ming_fall",
+   "ming_tiangong_llm",
    "ming_tumu_llm",
    "ming_yuzhen_xia_llm",
    "ming_zhenghe_llm",
@@ -337,8 +342,11 @@ window.SANDBOX_RESONANCE = {
    "tang_huangchao_llm",
    "tang_juntian",
    "tang_liangshuifa",
+   "tang_qulunli_llm",
    "tang_xuanwumen_llm",
+   "tang_yixing_llm",
    "three_campaigns",
+   "three_kingdoms_fanche_llm",
    "tianjin_concession_llm",
    "tianjin_jiaoan_llm",
    "tianjin_jiaohang_llm",
@@ -400,7 +408,9 @@ window.SANDBOX_RESONANCE = {
    "yellow_sea_1894",
    "yiling",
    "yuan_duo",
+   "yuan_qinghua_llm",
    "yuan_shangdu_llm",
+   "yuan_wangzhen_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "yunnan_dali",
@@ -2799,6 +2809,82 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "han_dushi_shuipai_llm",
+   "name": "han_dushi_shuipai_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 6,
+    "scholarship": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_dushi_shuipai_llm_02",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "han_jiliguche_llm",
+   "name": "han_jiliguche_llm",
+   "total": 12,
+   "layers": {
+    "record": 9,
+    "inference": 1,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_jiliguche_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "han_longshouqu_llm",
+   "name": "han_longshouqu_llm",
+   "total": 9,
+   "layers": {
+    "inference": 1,
+    "record": 6,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 9
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_longshouqu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "han_tihuajing_llm",
+   "name": "han_tihuajing_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 3,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_han_tihuajing_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "han_weihuo_llm",
    "name": "han_weihuo_llm",
    "total": 17,
@@ -4472,6 +4558,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:mf_1627",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "ming_tiangong_llm",
+   "name": "ming_tiangong_llm",
+   "total": 6,
+   "layers": {
+    "inference": 1,
+    "record": 3,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 6
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ming_tiangong_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -6682,6 +6787,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": null
   },
   {
+   "scene": "tang_qulunli_llm",
+   "name": "tang_qulunli_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tang_qulunli_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "tang_xuanwumen_llm",
    "name": "tang_xuanwumen_llm",
    "total": 12,
@@ -6698,6 +6822,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_tang_xuanwumen_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "tang_yixing_llm",
+   "name": "tang_yixing_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tang_yixing_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -6718,6 +6861,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_three_campaigns_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "three_kingdoms_fanche_llm",
+   "name": "three_kingdoms_fanche_llm",
+   "total": 12,
+   "layers": {
+    "record": 8,
+    "inference": 2,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_three_kingdoms_fanche_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -7897,6 +8059,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "yuan_qinghua_llm",
+   "name": "yuan_qinghua_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 1,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yuan_qinghua_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "yuan_shangdu_llm",
    "name": "yuan_shangdu_llm",
    "total": 15,
@@ -7913,6 +8094,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_yuan_shangdu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yuan_wangzhen_llm",
+   "name": "yuan_wangzhen_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 1,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yuan_wangzhen_llm_01",
    "best_resonance": 0.0
   },
   {

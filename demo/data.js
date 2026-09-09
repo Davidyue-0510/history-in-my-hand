@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 430 个切片
+// 权威数据源：data/scenes.json 注册的 440 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 430 个切片",
+  "slice": "multi-scene · 440 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -93,6 +93,10 @@ window.SANDBOX_DATA = {
    "hainan_xianfuren_llm",
    "hainan_zhuyai_llm",
    "han_banchao_llm",
+   "han_dushi_shuipai_llm",
+   "han_jiliguche_llm",
+   "han_longshouqu_llm",
+   "han_tihuajing_llm",
    "han_weihuo_llm",
    "hebei_kailuan_llm",
    "hebei_shanhaiguan",
@@ -147,6 +151,7 @@ window.SANDBOX_DATA = {
    "lingqu_llm",
    "longquan_yao_llm",
    "ming_qing",
+   "ming_tiangong_llm",
    "ming_tumu_llm",
    "ming_yuzhen_xia_llm",
    "ming_zhenghe_llm",
@@ -237,8 +242,11 @@ window.SANDBOX_DATA = {
    "tang_anshi_llm",
    "tang_huangchao_llm",
    "tang_juntian",
+   "tang_qulunli_llm",
    "tang_xuanwumen_llm",
+   "tang_yixing_llm",
    "three_campaigns",
+   "three_kingdoms_fanche_llm",
    "tianjin_concession_llm",
    "tianjin_jiaoan_llm",
    "tianjin_jiaohang_llm",
@@ -276,7 +284,9 @@ window.SANDBOX_DATA = {
    "xizang_xika_llm",
    "xizang_zongkaba_llm",
    "yangwu_llm",
+   "yuan_qinghua_llm",
    "yuan_shangdu_llm",
+   "yuan_wangzhen_llm",
    "yuan_xingsheng_llm",
    "yuelu_academy_llm",
    "yunnan_dali",
@@ -979,7 +989,17 @@ window.SANDBOX_DATA = {
   "guangzhong_simaqian_llm",
   "guangzhong_zhidao_llm",
   "huabei_boxer_llm",
-  "huabei_jingzhang_llm"
+  "huabei_jingzhang_llm",
+  "han_dushi_shuipai_llm",
+  "han_jiliguche_llm",
+  "han_longshouqu_llm",
+  "han_tihuajing_llm",
+  "ming_tiangong_llm",
+  "tang_qulunli_llm",
+  "tang_yixing_llm",
+  "three_kingdoms_fanche_llm",
+  "yuan_qinghua_llm",
+  "yuan_wangzhen_llm"
  ],
  "vocab": {
   "layers": [
@@ -27844,6 +27864,205 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "huabei",
    "scale_tier": "operational"
+  },
+  "han_dushi_shuipai_llm": {
+   "key": "han_dushi_shuipai_llm",
+   "title": "杜诗水排与水力鼓铸（汉·南阳）",
+   "dossier_label": "杜诗水排与水力鼓铸（汉·南阳）",
+   "subtitle": "杜诗水排与水力鼓铸（汉·南阳）",
+   "kind": "engineering",
+   "region": "huabei",
+   "page": "county.html?scene=han_dushi_shuipai_llm",
+   "vocab_pack": "inline:han_dushi_shuipai_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational"
+  },
+  "han_jiliguche_llm": {
+   "key": "han_jiliguche_llm",
+   "title": "记里鼓车与机械里程（汉）",
+   "dossier_label": "记里鼓车与机械里程（汉）",
+   "subtitle": "记里鼓车与机械里程（汉）",
+   "kind": "tech",
+   "region": "guangzhong",
+   "page": "county.html?scene=han_jiliguche_llm",
+   "vocab_pack": "inline:han_jiliguche_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational"
+  },
+  "han_longshouqu_llm": {
+   "key": "han_longshouqu_llm",
+   "title": "龙首渠与井渠法（汉）",
+   "dossier_label": "龙首渠与井渠法（汉）",
+   "subtitle": "龙首渠与井渠法（汉）",
+   "kind": "engineering",
+   "region": "guangzhong",
+   "page": "county.html?scene=han_longshouqu_llm",
+   "vocab_pack": "inline:han_longshouqu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational"
+  },
+  "han_tihuajing_llm": {
+   "key": "han_tihuajing_llm",
+   "title": "汉锦与提花织机（汉·临淄）",
+   "dossier_label": "汉锦与提花织机（汉·临淄）",
+   "subtitle": "汉锦与提花织机（汉·临淄）",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=han_tihuajing_llm",
+   "vocab_pack": "inline:han_tihuajing_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    6
+   ],
+   "epoch": "han",
+   "scale_tier": "operational"
+  },
+  "ming_tiangong_llm": {
+   "key": "ming_tiangong_llm",
+   "title": "宋应星与《天工开物》（明·江西）",
+   "dossier_label": "宋应星与《天工开物》（明·江西）",
+   "subtitle": "宋应星与《天工开物》（明·江西）",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=ming_tiangong_llm",
+   "vocab_pack": "inline:ming_tiangong_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational"
+  },
+  "tang_qulunli_llm": {
+   "key": "tang_qulunli_llm",
+   "title": "曲辕犁与筒车（唐·江东）",
+   "dossier_label": "曲辕犁与筒车（唐·江东）",
+   "subtitle": "曲辕犁与筒车（唐·江东）",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=tang_qulunli_llm",
+   "vocab_pack": "inline:tang_qulunli_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational"
+  },
+  "tang_yixing_llm": {
+   "key": "tang_yixing_llm",
+   "title": "一行与水运浑天仪（唐）",
+   "dossier_label": "一行与水运浑天仪（唐）",
+   "subtitle": "一行与水运浑天仪（唐）",
+   "kind": "engineering",
+   "region": "guangzhong",
+   "page": "county.html?scene=tang_yixing_llm",
+   "vocab_pack": "inline:tang_yixing_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "tang",
+   "scale_tier": "operational"
+  },
+  "three_kingdoms_fanche_llm": {
+   "key": "three_kingdoms_fanche_llm",
+   "title": "马钧与翻车（三国·魏）",
+   "dossier_label": "马钧与翻车（三国·魏）",
+   "subtitle": "马钧与翻车（三国·魏）",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=three_kingdoms_fanche_llm",
+   "vocab_pack": "inline:three_kingdoms_fanche_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational"
+  },
+  "yuan_qinghua_llm": {
+   "key": "yuan_qinghua_llm",
+   "title": "青花瓷与景德镇窑业（元）",
+   "dossier_label": "青花瓷与景德镇窑业（元）",
+   "subtitle": "青花瓷与景德镇窑业（元）",
+   "kind": "tech",
+   "region": "jiangnan",
+   "page": "county.html?scene=yuan_qinghua_llm",
+   "vocab_pack": "inline:yuan_qinghua_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational"
+  },
+  "yuan_wangzhen_llm": {
+   "key": "yuan_wangzhen_llm",
+   "title": "王祯《农书》与转轮排字（元·山东）",
+   "dossier_label": "王祯《农书》与转轮排字（元·山东）",
+   "subtitle": "王祯《农书》与转轮排字（元·山东）",
+   "kind": "tech",
+   "region": "huabei",
+   "page": "county.html?scene=yuan_wangzhen_llm",
+   "vocab_pack": "inline:yuan_wangzhen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "yuan",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28276,7 +28495,17 @@ window.SANDBOX_DATA = {
   "guangzhong_simaqian_llm": "slices/guangzhong_simaqian_llm.js",
   "guangzhong_zhidao_llm": "slices/guangzhong_zhidao_llm.js",
   "huabei_boxer_llm": "slices/huabei_boxer_llm.js",
-  "huabei_jingzhang_llm": "slices/huabei_jingzhang_llm.js"
+  "huabei_jingzhang_llm": "slices/huabei_jingzhang_llm.js",
+  "han_dushi_shuipai_llm": "slices/han_dushi_shuipai_llm.js",
+  "han_jiliguche_llm": "slices/han_jiliguche_llm.js",
+  "han_longshouqu_llm": "slices/han_longshouqu_llm.js",
+  "han_tihuajing_llm": "slices/han_tihuajing_llm.js",
+  "ming_tiangong_llm": "slices/ming_tiangong_llm.js",
+  "tang_qulunli_llm": "slices/tang_qulunli_llm.js",
+  "tang_yixing_llm": "slices/tang_yixing_llm.js",
+  "three_kingdoms_fanche_llm": "slices/three_kingdoms_fanche_llm.js",
+  "yuan_qinghua_llm": "slices/yuan_qinghua_llm.js",
+  "yuan_wangzhen_llm": "slices/yuan_wangzhen_llm.js"
  },
  "corridors": [
   {

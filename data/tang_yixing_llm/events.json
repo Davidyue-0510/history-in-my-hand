@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_tang_yixing_llm_01",
+   "subject": "event:ev_tang_yixing_llm_01",
+   "year": 724,
+   "era": "开元十二年",
+   "title": "一行受诏改历",
+   "kind": "行政",
+   "text": "玄宗诏一行改撰新历",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·一行传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tang_yixing_llm_02",
+   "subject": "event:ev_tang_yixing_llm_02",
+   "year": 725,
+   "era": "开元十三年",
+   "title": "造水运浑天仪",
+   "kind": "建置",
+   "text": "一行造水运浑天仪成功",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·一行传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

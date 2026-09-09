@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "shangyan",
+      "name": "商颜山",
+      "type": "mountain",
+      "modern": "今中国陕西大荔县北",
+      "note": "渠线所经",
+      "_source_idx": 0,
+      "_source_name": "《史记·河渠书》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "longshouqu",
+      "name": "龙首渠",
+      "type": "canal",
+      "modern": "今中国陕西",
+      "note": "所凿之渠",
+      "_source_idx": 0,
+      "_source_name": "《史记·河渠书》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "luoshui",
+      "name": "洛水",
+      "type": "river",
+      "modern": "今中国陕西洛河",
+      "note": "引水起点",
+      "_source_idx": 0,
+      "_source_name": "《史记·河渠书》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

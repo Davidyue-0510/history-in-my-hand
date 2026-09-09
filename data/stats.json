@@ -1,9 +1,9 @@
 {
-  "scenes_total": 430,
-  "historical": 421,
+  "scenes_total": 440,
+  "historical": 431,
   "fictional": 9,
-  "assertions_total": 6333,
-  "sources_total": 407,
+  "assertions_total": 6449,
+  "sources_total": 416,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -89,6 +89,10 @@
     "hainan_xianfuren_llm",
     "hainan_zhuyai_llm",
     "han_banchao_llm",
+    "han_dushi_shuipai_llm",
+    "han_jiliguche_llm",
+    "han_longshouqu_llm",
+    "han_tihuajing_llm",
     "han_weihuo_llm",
     "hebei_kailuan_llm",
     "hebei_shanhaiguan",
@@ -143,6 +147,7 @@
     "lingqu_llm",
     "longquan_yao_llm",
     "ming_qing",
+    "ming_tiangong_llm",
     "ming_tumu_llm",
     "ming_yuzhen_xia_llm",
     "ming_zhenghe_llm",
@@ -233,8 +238,11 @@
     "tang_anshi_llm",
     "tang_huangchao_llm",
     "tang_juntian",
+    "tang_qulunli_llm",
     "tang_xuanwumen_llm",
+    "tang_yixing_llm",
     "three_campaigns",
+    "three_kingdoms_fanche_llm",
     "tianjin_concession_llm",
     "tianjin_jiaoan_llm",
     "tianjin_jiaohang_llm",
@@ -272,7 +280,9 @@
     "xizang_xika_llm",
     "xizang_zongkaba_llm",
     "yangwu_llm",
+    "yuan_qinghua_llm",
     "yuan_shangdu_llm",
+    "yuan_wangzhen_llm",
     "yuan_xingsheng_llm",
     "yuelu_academy_llm",
     "yunnan_dali",
@@ -295,7 +305,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 572,
+  "leads_total": 588,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3357,6 +3367,76 @@
       "kind": "engineering",
       "assertions": 15,
       "factions": {}
+    },
+    {
+      "id": "han_dushi_shuipai_llm",
+      "title": "杜诗水排与水力鼓铸（汉·南阳）",
+      "kind": "engineering",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "han_jiliguche_llm",
+      "title": "记里鼓车与机械里程（汉）",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "han_longshouqu_llm",
+      "title": "龙首渠与井渠法（汉）",
+      "kind": "engineering",
+      "assertions": 9,
+      "factions": {}
+    },
+    {
+      "id": "han_tihuajing_llm",
+      "title": "汉锦与提花织机（汉·临淄）",
+      "kind": "tech",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "ming_tiangong_llm",
+      "title": "宋应星与《天工开物》（明·江西）",
+      "kind": "tech",
+      "assertions": 6,
+      "factions": {}
+    },
+    {
+      "id": "tang_qulunli_llm",
+      "title": "曲辕犁与筒车（唐·江东）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "tang_yixing_llm",
+      "title": "一行与水运浑天仪（唐）",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "three_kingdoms_fanche_llm",
+      "title": "马钧与翻车（三国·魏）",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yuan_qinghua_llm",
+      "title": "青花瓷与景德镇窑业（元）",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "yuan_wangzhen_llm",
+      "title": "王祯《农书》与转轮排字（元·山东）",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3789,6 +3869,16 @@
     "guangzhong_simaqian_llm": "司马迁与《史记》（西汉）",
     "guangzhong_zhidao_llm": "秦直道与蒙恬北边经营（秦始皇三十五年）",
     "huabei_boxer_llm": "义和团运动与华北社会（1899–1901）",
-    "huabei_jingzhang_llm": "京张铁路与詹天佑（1905–1909）"
+    "huabei_jingzhang_llm": "京张铁路与詹天佑（1905–1909）",
+    "han_dushi_shuipai_llm": "杜诗水排与水力鼓铸（汉·南阳）",
+    "han_jiliguche_llm": "记里鼓车与机械里程（汉）",
+    "han_longshouqu_llm": "龙首渠与井渠法（汉）",
+    "han_tihuajing_llm": "汉锦与提花织机（汉·临淄）",
+    "ming_tiangong_llm": "宋应星与《天工开物》（明·江西）",
+    "tang_qulunli_llm": "曲辕犁与筒车（唐·江东）",
+    "tang_yixing_llm": "一行与水运浑天仪（唐）",
+    "three_kingdoms_fanche_llm": "马钧与翻车（三国·魏）",
+    "yuan_qinghua_llm": "青花瓷与景德镇窑业（元）",
+    "yuan_wangzhen_llm": "王祯《农书》与转轮排字（元·山东）"
   }
 }

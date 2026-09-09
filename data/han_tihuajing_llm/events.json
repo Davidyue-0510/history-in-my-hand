@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_han_tihuajing_llm_01",
+   "subject": "event:ev_han_tihuajing_llm_01",
+   "year": -66,
+   "era": "汉宣帝地节四年",
+   "title": "霍光妻赠织锦",
+   "kind": "其他",
+   "text": "霍光妻遗淳于衍蒲桃锦等",
+   "_source_idx": 0,
+   "_source_name": "《西京杂记》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_tihuajing_llm_02",
+   "subject": "event:ev_han_tihuajing_llm_02",
+   "year": -66,
+   "era": "汉宣帝地节四年",
+   "title": "陈宝光妻织绫",
+   "kind": "其他",
+   "text": "巨鹿陈宝光妻用百二十蹑织机",
+   "_source_idx": 0,
+   "_source_name": "《西京杂记》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

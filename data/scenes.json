@@ -633,7 +633,17 @@
   "guangzhong_simaqian_llm",
   "guangzhong_zhidao_llm",
   "huabei_boxer_llm",
-  "huabei_jingzhang_llm"
+  "huabei_jingzhang_llm",
+  "han_dushi_shuipai_llm",
+  "han_jiliguche_llm",
+  "han_longshouqu_llm",
+  "han_tihuajing_llm",
+  "ming_tiangong_llm",
+  "tang_qulunli_llm",
+  "tang_yixing_llm",
+  "three_kingdoms_fanche_llm",
+  "yuan_qinghua_llm",
+  "yuan_wangzhen_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -34421,6 +34431,755 @@
     1,
     2,
     3,
+    6
+   ]
+  },
+  "han_dushi_shuipai_llm": {
+   "kind": "engineering",
+   "region": "huabei",
+   "province": "henan",
+   "title": "杜诗水排与水力鼓铸（汉·南阳）",
+   "dossier_label": "杜诗水排与水力鼓铸（汉·南阳）",
+   "subtitle": "杜诗水排与水力鼓铸（汉·南阳）",
+   "primary_place": "nanyang",
+   "dossier_event": "event:ev_han_dushi_shuipai_llm_02",
+   "vocab_pack": "han_dushi_shuipai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "杜诗水排与水力鼓铸（汉·南阳）——2技术维加厚（v0.192，han/henan 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "杜诗水排与水力鼓铸（汉·南阳）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "杜诗水排与水力鼓铸（汉·南阳）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "杜诗水排与水力鼓铸（汉·南阳）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "杜诗水排与水力鼓铸（汉·南阳）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "han_jiliguche_llm": {
+   "kind": "tech",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "记里鼓车与机械里程（汉）",
+   "dossier_label": "记里鼓车与机械里程（汉）",
+   "subtitle": "记里鼓车与机械里程（汉）",
+   "primary_place": "han_jiliguche_llm",
+   "dossier_event": "event:ev_han_jiliguche_llm_01",
+   "vocab_pack": "han_jiliguche_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "记里鼓车与机械里程（汉）——2技术维加厚（v0.192，han/shaanxi 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "记里鼓车与机械里程（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "记里鼓车与机械里程（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "记里鼓车与机械里程（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "记里鼓车与机械里程（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    6
+   ]
+  },
+  "han_longshouqu_llm": {
+   "kind": "engineering",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "龙首渠与井渠法（汉）",
+   "dossier_label": "龙首渠与井渠法（汉）",
+   "subtitle": "龙首渠与井渠法（汉）",
+   "primary_place": "luoshui",
+   "dossier_event": "event:ev_han_longshouqu_llm_01",
+   "vocab_pack": "han_longshouqu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "龙首渠与井渠法（汉）——2技术维加厚（v0.192，han/shaanxi 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "龙首渠与井渠法（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "龙首渠与井渠法（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "龙首渠与井渠法（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "龙首渠与井渠法（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "han_tihuajing_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "汉锦与提花织机（汉·临淄）",
+   "dossier_label": "汉锦与提花织机（汉·临淄）",
+   "subtitle": "汉锦与提花织机（汉·临淄）",
+   "primary_place": "julu",
+   "dossier_event": "event:ev_han_tihuajing_llm_01",
+   "vocab_pack": "han_tihuajing_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "汉锦与提花织机（汉·临淄）——2技术维加厚（v0.192，han/shandong 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉锦与提花织机（汉·临淄）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉锦与提花织机（汉·临淄）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉锦与提花织机（汉·临淄）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉锦与提花织机（汉·临淄）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    6
+   ]
+  },
+  "ming_tiangong_llm": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "jiangxi",
+   "title": "宋应星与《天工开物》（明·江西）",
+   "dossier_label": "宋应星与《天工开物》（明·江西）",
+   "subtitle": "宋应星与《天工开物》（明·江西）",
+   "primary_place": "jiangxi",
+   "dossier_event": "event:ev_ming_tiangong_llm_01",
+   "vocab_pack": "ming_tiangong_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "宋应星与《天工开物》（明·江西）——2技术维加厚（v0.192，ming/jiangxi 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋应星与《天工开物》（明·江西）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "宋应星与《天工开物》（明·江西）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "宋应星与《天工开物》（明·江西）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋应星与《天工开物》（明·江西）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "tang_qulunli_llm": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "曲辕犁与筒车（唐·江东）",
+   "dossier_label": "曲辕犁与筒车（唐·江东）",
+   "subtitle": "曲辕犁与筒车（唐·江东）",
+   "primary_place": "jiangdong",
+   "dossier_event": "event:ev_tang_qulunli_llm_01",
+   "vocab_pack": "tang_qulunli_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "曲辕犁与筒车（唐·江东）——2技术维加厚（v0.192，tang/jiangsu 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "曲辕犁与筒车（唐·江东）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "曲辕犁与筒车（唐·江东）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "曲辕犁与筒车（唐·江东）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "曲辕犁与筒车（唐·江东）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    5,
+    6
+   ]
+  },
+  "tang_yixing_llm": {
+   "kind": "engineering",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "一行与水运浑天仪（唐）",
+   "dossier_label": "一行与水运浑天仪（唐）",
+   "subtitle": "一行与水运浑天仪（唐）",
+   "primary_place": "julu",
+   "dossier_event": "event:ev_tang_yixing_llm_01",
+   "vocab_pack": "tang_yixing_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "一行与水运浑天仪（唐）——2技术维加厚（v0.192，tang/shaanxi 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "一行与水运浑天仪（唐）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "一行与水运浑天仪（唐）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "一行与水运浑天仪（唐）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "一行与水运浑天仪（唐）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "three_kingdoms_fanche_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "henan",
+   "title": "马钧与翻车（三国·魏）",
+   "dossier_label": "马钧与翻车（三国·魏）",
+   "subtitle": "马钧与翻车（三国·魏）",
+   "primary_place": "jingdu",
+   "dossier_event": "event:ev_three_kingdoms_fanche_llm_01",
+   "vocab_pack": "three_kingdoms_fanche_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "马钧与翻车（三国·魏）——2技术维加厚（v0.192，three_kingdoms/henan 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "马钧与翻车（三国·魏）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "马钧与翻车（三国·魏）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "马钧与翻车（三国·魏）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "马钧与翻车（三国·魏）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "yuan_qinghua_llm": {
+   "kind": "tech",
+   "region": "jiangnan",
+   "province": "jiangxi",
+   "title": "青花瓷与景德镇窑业（元）",
+   "dossier_label": "青花瓷与景德镇窑业（元）",
+   "subtitle": "青花瓷与景德镇窑业（元）",
+   "primary_place": "fuliang",
+   "dossier_event": "event:ev_yuan_qinghua_llm_01",
+   "vocab_pack": "yuan_qinghua_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "青花瓷与景德镇窑业（元）——2技术维加厚（v0.192，yuan/jiangxi 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "青花瓷与景德镇窑业（元）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "青花瓷与景德镇窑业（元）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "青花瓷与景德镇窑业（元）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "青花瓷与景德镇窑业（元）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "yuan_wangzhen_llm": {
+   "kind": "tech",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "王祯《农书》与转轮排字（元·山东）",
+   "dossier_label": "王祯《农书》与转轮排字（元·山东）",
+   "subtitle": "王祯《农书》与转轮排字（元·山东）",
+   "primary_place": "shandong",
+   "dossier_event": "event:ev_yuan_wangzhen_llm_01",
+   "vocab_pack": "yuan_wangzhen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "王祯《农书》与转轮排字（元·山东）——2技术维加厚（v0.192，yuan/shandong 冷门真实科技主题）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "yuan",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "王祯《农书》与转轮排字（元·山东）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "王祯《农书》与转轮排字（元·山东）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "王祯《农书》与转轮排字（元·山东）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "王祯《农书》与转轮排字（元·山东）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
     6
    ]
   }

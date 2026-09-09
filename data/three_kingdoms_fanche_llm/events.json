@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_three_kingdoms_fanche_llm_01",
+   "subject": "event:ev_three_kingdoms_fanche_llm_01",
+   "year": 235,
+   "era": "魏明帝青龙三年",
+   "title": "马钧作翻车",
+   "kind": "建置",
+   "text": "马钧在京都作翻车灌溉园地",
+   "_source_idx": 0,
+   "_source_name": "《三国志·魏书·杜夔传》注引傅玄《马钧传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

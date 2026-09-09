@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "一行",
+   "role": "僧人、天文学家",
+   "note": "俗姓张，名遂，巨鹿人",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·一行传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAN__p02",
+   "name": "唐玄宗",
+   "role": "皇帝",
+   "note": "诏令一行改撰新历",
+   "_source_idx": 0,
+   "_source_name": "《旧唐书·一行传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

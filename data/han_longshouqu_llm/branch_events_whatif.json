@@ -1,0 +1,531 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "han_longshouqu_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  -129,
+  -89
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -127,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.447,
+    "cum": -0.173
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -126,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.43 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.429,
+    "cum": -0.231
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -125,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.29（本支 0.41 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.412,
+    "cum": -0.288
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -124,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.39 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.394,
+    "cum": -0.346
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -123,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.38 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.376,
+    "cum": -0.404
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -122,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.46（本支 0.36 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.359,
+    "cum": -0.461
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -121,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.52（本支 0.34 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.341,
+    "cum": -0.519
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -120,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.58（本支 0.32 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.323,
+    "cum": -0.577
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -119,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.31 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.306,
+    "cum": -0.634
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -118,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.29 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.288,
+    "cum": -0.692
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -117,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.27,
+    "cum": -0.73
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -116,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.253,
+    "cum": -0.747
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -115,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.235,
+    "cum": -0.765
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -114,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.217,
+    "cum": -0.783
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -113,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.2,
+    "cum": -0.8
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -112,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.182,
+    "cum": -0.818
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -111,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.164,
+    "cum": -0.836
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -110,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.147,
+    "cum": -0.853
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -109,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.129,
+    "cum": -0.871
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -108,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.111,
+    "cum": -0.889
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -107,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.094,
+    "cum": -0.906
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -106,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.076,
+    "cum": -0.924
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -105,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.058,
+    "cum": -0.942
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -104,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.041,
+    "cum": -0.959
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -103,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.023,
+    "cum": -0.977
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -102,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.005,
+    "cum": -0.995
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -101,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -100,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -99,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -98,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -97,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -96,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -95,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -94,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -93,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -92,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -91,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -90,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "divergence",
+   "year": -89,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "shangyan"
+  },
+  {
+   "kind": "summary",
+   "year": -89,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "shangyan"
+  }
+ ]
+}

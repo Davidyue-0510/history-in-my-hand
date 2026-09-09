@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "HAN__p01",
+   "name": "杜诗",
+   "role": "南阳太守",
+   "note": "东汉南阳太守，造作水排",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·杜诗传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

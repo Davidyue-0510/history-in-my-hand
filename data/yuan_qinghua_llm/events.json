@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_yuan_qinghua_llm_01",
+   "subject": "event:ev_yuan_qinghua_llm_01",
+   "year": 1278,
+   "era": "元至元十五年",
+   "title": "设浮梁瓷局",
+   "kind": "建置",
+   "text": "元更设浮梁瓷局，专掌景德镇窑冶。",
+   "_source_idx": 0,
+   "_source_name": "《景德镇陶录》（蓝浦）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_yuan_qinghua_llm_02",
+   "subject": "event:ev_yuan_qinghua_llm_02",
+   "year": 1320,
+   "era": "元中后期",
+   "title": "青花瓷创烧",
+   "kind": "技术",
+   "text": "以西亚钴料画坯，高温一次烧成。",
+   "_source_idx": 0,
+   "_source_name": "《景德镇陶录》（蓝浦）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

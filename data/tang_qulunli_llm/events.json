@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_tang_qulunli_llm_01",
+   "subject": "event:ev_tang_qulunli_llm_01",
+   "year": 800,
+   "era": "唐末",
+   "title": "江东曲辕犁之记载",
+   "kind": "其他",
+   "text": "陆龟蒙著《耒耜经》述江东田器",
+   "_source_idx": 0,
+   "_source_name": "陆龟蒙《耒耜经》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

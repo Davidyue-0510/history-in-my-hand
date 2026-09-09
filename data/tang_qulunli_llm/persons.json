@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "TAN__p01",
+   "name": "陆龟蒙",
+   "role": "唐代农学家、文学家",
+   "note": "《耒耜经》作者，记载江东农具",
+   "_source_idx": 0,
+   "_source_name": "陆龟蒙《耒耜经》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

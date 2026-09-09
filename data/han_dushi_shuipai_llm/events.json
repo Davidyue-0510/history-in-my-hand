@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_han_dushi_shuipai_llm_02",
+   "subject": "event:ev_han_dushi_shuipai_llm_02",
+   "year": 31,
+   "era": "建武七年",
+   "title": "造作水排",
+   "kind": "建置",
+   "text": "造作水排，铸为农器",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·杜诗传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_han_dushi_shuipai_llm_03",
+   "subject": "event:ev_han_dushi_shuipai_llm_03",
+   "year": 31,
+   "era": "建武七年",
+   "title": "修治陂池",
+   "kind": "建置",
+   "text": "修治陂池，广拓土田",
+   "_source_idx": 0,
+   "_source_name": "《后汉书·杜诗传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

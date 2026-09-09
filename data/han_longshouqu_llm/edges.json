@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "luoshui",
+   "to": "shangyan",
+   "type": "military",
+   "label": "引水路线",
+   "_source_idx": 0,
+   "_source_name": "《史记·河渠书》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

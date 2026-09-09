@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HAN__p01",
+   "name": "张衡",
+   "role": "东汉科学家",
+   "note": "记里鼓车法所出",
+   "_source_idx": 0,
+   "_source_name": "《晋书·舆服志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p02",
+   "name": "马钧",
+   "role": "三国机械家",
+   "note": "记里鼓车法所出",
+   "_source_idx": 0,
+   "_source_name": "《晋书·舆服志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

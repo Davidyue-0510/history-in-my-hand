@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "julu",
+      "name": "巨鹿",
+      "type": "region",
+      "modern": "今中国河北省巨鹿县",
+      "note": "一行籍贯",
+      "_source_idx": 0,
+      "_source_name": "《旧唐书·一行传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 115.04,
+      "lat": 37.67,
+      "geo_note": "魏征故里，今河北晋州"
+    },
+    {
+      "id": "changan",
+      "name": "长安",
+      "type": "city",
+      "modern": "今中国陕西省西安市",
+      "note": "唐代都城，一行活动地",
+      "_source_idx": 0,
+      "_source_name": "《旧唐书·一行传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 108.95,
+      "lat": 34.27,
+      "geo_note": "唐都，今西安"
+    }
+  ]
+}

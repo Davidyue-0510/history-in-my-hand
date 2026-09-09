@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "HAN__p01",
+   "name": "霍光妻",
+   "role": "权臣霍光之妻",
+   "note": "遗赠蒲桃锦等物",
+   "_source_idx": 0,
+   "_source_name": "《西京杂记》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p02",
+   "name": "淳于衍",
+   "role": "宫廷女医",
+   "note": "受霍光妻赠物",
+   "_source_idx": 0,
+   "_source_name": "《西京杂记》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAN__p03",
+   "name": "陈宝光妻",
+   "role": "巨鹿织工",
+   "note": "善织散花绫",
+   "_source_idx": 0,
+   "_source_name": "《西京杂记》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
