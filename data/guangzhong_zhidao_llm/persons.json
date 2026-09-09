@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "GUA__p01",
+   "name": "蒙恬",
+   "role": "秦将",
+   "note": "率三十万众北逐戎狄，筑长城",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUA__p02",
+   "name": "秦始皇",
+   "role": "秦帝",
+   "note": "下令除道，通直道",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

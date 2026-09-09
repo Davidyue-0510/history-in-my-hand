@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "huabei_boxer_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1898,
+  1901
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1901,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.56 / 史实 0.62（偏离 -0.06）",
+   "evidence": {
+    "cum": -0.062,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "shandong"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_huabei_boxer_llm_01",
+   "subject": "event:ev_huabei_boxer_llm_01",
+   "year": 1899,
+   "era": "光绪二十五年",
+   "title": "义和团起于山东",
+   "kind": "其他",
+   "text": "义和团起于山东，延及直隶",
+   "_source_idx": 0,
+   "_source_name": "《义和团档案史料》（中国第一历史档案馆编）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_huabei_boxer_llm_02",
+   "subject": "event:ev_huabei_boxer_llm_02",
+   "year": 1900,
+   "era": "光绪二十六年",
+   "title": "焚教堂杀教民",
+   "kind": "其他",
+   "text": "焚教堂，杀教民，倡扶清灭洋",
+   "_source_idx": 0,
+   "_source_name": "《义和团档案史料》（中国第一历史档案馆编）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

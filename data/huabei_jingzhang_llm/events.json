@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_huabei_jingzhang_llm_01",
+   "subject": "event:ev_huabei_jingzhang_llm_01",
+   "year": 1905,
+   "era": "光绪三十一年",
+   "title": "京张铁路开工",
+   "kind": "建置",
+   "text": "袁世凯奏派詹天佑，京张铁路始建",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·交通志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_huabei_jingzhang_llm_02",
+   "subject": "event:ev_huabei_jingzhang_llm_02",
+   "year": 1909,
+   "era": "宣统元年",
+   "title": "京张铁路通车",
+   "kind": "建置",
+   "text": "全线通车，自建铁路之始",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·交通志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "huabei_jingzhang_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1905,
+  1909
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.644,
+    "cum": -0.156
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "summary",
+   "year": 1909,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.64 / 史实 0.80（偏离 -0.16）",
+   "evidence": {
+    "cum": -0.156,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "beijing"
+  }
+ ]
+}

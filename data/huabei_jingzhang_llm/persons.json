@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HUA__p01",
+   "name": "詹天佑",
+   "role": "总工程师",
+   "note": "主持京张铁路设计施工",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·交通志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUA__p02",
+   "name": "袁世凯",
+   "role": "直隶总督",
+   "note": "奏派詹天佑为总工程师",
+   "_source_idx": 0,
+   "_source_name": "《清史稿·交通志》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

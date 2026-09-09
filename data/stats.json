@@ -1,9 +1,9 @@
 {
-  "scenes_total": 425,
-  "historical": 416,
+  "scenes_total": 430,
+  "historical": 421,
   "fictional": 9,
-  "assertions_total": 6259,
-  "sources_total": 402,
+  "assertions_total": 6333,
+  "sources_total": 407,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -37,6 +37,7 @@
     "chongqing_zourong_llm",
     "chu_han",
     "chuhai_llm",
+    "cross_dynastic_crops_llm",
     "dagukou_battle_llm",
     "dangar_chama_llm",
     "dongbei_kanglian_llm",
@@ -69,6 +70,8 @@
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
     "guangxi_zhuangzu_llm",
+    "guangzhong_simaqian_llm",
+    "guangzhong_zhidao_llm",
     "guizhou_jianxing_llm",
     "guizhou_minority_craft_llm",
     "guizhou_shexiang_llm",
@@ -102,6 +105,8 @@
     "henan_keju_llm",
     "henan_zhengzhuang_llm",
     "hexi_sijun_llm",
+    "huabei_boxer_llm",
+    "huabei_jingzhang_llm",
     "huangdaopo_llm",
     "hubei_chuwu_llm",
     "hubei_hankou_llm",
@@ -290,7 +295,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 566,
+  "leads_total": 572,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3317,6 +3322,41 @@
       "kind": "tech",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "cross_dynastic_crops_llm",
+      "title": "美洲作物（玉米·番薯）传入与明清农业革命",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "guangzhong_simaqian_llm",
+      "title": "司马迁与《史记》（西汉）",
+      "kind": "thought",
+      "assertions": 17,
+      "factions": {}
+    },
+    {
+      "id": "guangzhong_zhidao_llm",
+      "title": "秦直道与蒙恬北边经营（秦始皇三十五年）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "huabei_boxer_llm",
+      "title": "义和团运动与华北社会（1899–1901）",
+      "kind": "uprising",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "huabei_jingzhang_llm",
+      "title": "京张铁路与詹天佑（1905–1909）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3744,6 +3784,11 @@
     "li_shizhen_llm": "李时珍与本草纲目",
     "lingqu_llm": "灵渠与秦始皇南征岭南",
     "zhangheng_llm": "张衡与候风地动仪",
-    "zu_chongzhi_llm": "祖冲之与圆周率"
+    "zu_chongzhi_llm": "祖冲之与圆周率",
+    "cross_dynastic_crops_llm": "美洲作物（玉米·番薯）传入与明清农业革命",
+    "guangzhong_simaqian_llm": "司马迁与《史记》（西汉）",
+    "guangzhong_zhidao_llm": "秦直道与蒙恬北边经营（秦始皇三十五年）",
+    "huabei_boxer_llm": "义和团运动与华北社会（1899–1901）",
+    "huabei_jingzhang_llm": "京张铁路与詹天佑（1905–1909）"
   }
 }

@@ -983,6 +983,38 @@
    "_src_line": 8
   },
   {
+   "id": "CRO_009",
+   "scene": "cross_dynastic_crops_llm",
+   "subject": "event:ev_cross_dynastic_crops_llm_02",
+   "title": "自海上流入，具體路線未詳",
+   "missing": "海上貿易史 / 作物傳播",
+   "where": "東南沿海港口",
+   "skills": [
+    "海上貿易史",
+    "作物傳播"
+   ],
+   "accept": "考證玉米傳入的具體港口與路線",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "CRO_012",
+   "scene": "cross_dynastic_crops_llm",
+   "subject": "event:ev_cross_dynastic_crops_llm_01",
+   "title": "福建巡撫金學曾推廣",
+   "missing": "地方文獻 / 農業史",
+   "where": "福建地方志",
+   "skills": [
+    "地方文獻",
+    "農業史"
+   ],
+   "accept": "查證金學曾是否推廣番薯",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "DAG_010",
    "scene": "dagukou_battle_llm",
    "subject": "event:ev_dagukou_battle_llm_03",
@@ -2078,6 +2110,37 @@
    "_src_line": 11
   },
   {
+   "id": "GUA_017",
+   "scene": "guangzhong_simaqian_llm",
+   "subject": "person:GUA__p01",
+   "title": "路线顺序有异说",
+   "missing": "历史地理",
+   "where": "会稽、九嶷",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "需考证实际行程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
+   "id": "GUA_015",
+   "scene": "guangzhong_zhidao_llm",
+   "subject": "event:ev_guangzhong_zhidao_llm_01",
+   "title": "具体走向未详",
+   "missing": "考古 / 地理",
+   "where": "九原至云阳间",
+   "skills": [
+    "考古",
+    "地理"
+   ],
+   "accept": "实地勘察",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "GUILINGG01",
    "scene": "guiling",
    "subject": "event:gl_jz",
@@ -2834,6 +2897,37 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "HUA_015",
+   "scene": "huabei_boxer_llm",
+   "subject": "event:ev_huabei_boxer_llm_02",
+   "title": "缺乏具体事件记载",
+   "missing": "历史档案检索 / 地方志分析",
+   "where": "直隶地区",
+   "skills": [
+    "历史档案检索",
+    "地方志分析"
+   ],
+   "accept": "补充具体事件细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "HUA_015",
+   "scene": "huabei_jingzhang_llm",
+   "subject": "event:ev_huabei_jingzhang_llm_01",
+   "title": "史料未载具体日期",
+   "missing": "档案检索",
+   "where": "清宫档案或袁世凯奏折",
+   "skills": [
+    "档案检索"
+   ],
+   "accept": "具体月日",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "HC_GAP1",

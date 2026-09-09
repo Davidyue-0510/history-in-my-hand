@@ -580,14 +580,15 @@ def _slice_meta(bundle):
     m = bundle.get("meta", {})
     return {
         "key": m.get("key"),
-        "scene_id": m.get("scene_id"),  # v0.32 前端定位数据文件
+        # 注：scene_id 与 key 同源（均 = sc["_key"]），hub 用 dict key 定位，故壳内不重复存；
+        # primary_place 仅切片 bundle 的 meta 消费（county.js 读 META.primary_place / SD.scenes[k].primary_place），
+        # 枢纽侧栏（county.js:811-829）只读 region/page/dossier_label/title，无需 primary_place。
         "title": m.get("title"),
         "dossier_label": m.get("dossier_label"),
         "subtitle": m.get("subtitle"),
         "kind": m.get("kind"),
         "region": m.get("region"),
         "page": m.get("page"),
-        "primary_place": m.get("primary_place"),
         "vocab_pack": m.get("vocab_pack"),
         "terrain_grid": m.get("terrain_grid"),
         "terrain_off_grid": m.get("terrain_off_grid", False),
@@ -599,6 +600,8 @@ def _slice_meta(bundle):
         # counts 不进壳：hub/索引卡片始终基于完整 bundle 的 assertions 现算
         # （cardHtml 用 scenes[sk].assertions），壳内 counts 是死重；
         # 删之省 ~40KB，使壳体积随场景数线性增长时仍留足余量（约 470KB @346 场景）。
+        # v0.191：再删 scene_id(=key 冗余) + primary_place(无壳内消费者)，每场景省 ~45B，
+        # 430 场景再省 ~19KB，壳 502.6→~483KB，恢复 <500KB 契约余量。
     }
 
 

@@ -628,7 +628,12 @@
   "li_shizhen_llm",
   "lingqu_llm",
   "zhangheng_llm",
-  "zu_chongzhi_llm"
+  "zu_chongzhi_llm",
+  "cross_dynastic_crops_llm",
+  "guangzhong_simaqian_llm",
+  "guangzhong_zhidao_llm",
+  "huabei_boxer_llm",
+  "huabei_jingzhang_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -34040,6 +34045,382 @@
    "dims": [
     2,
     5,
+    6
+   ]
+  },
+  "cross_dynastic_crops_llm": {
+   "kind": "tech",
+   "region": "exchange",
+   "province": "fujian",
+   "title": "美洲作物（玉米·番薯）传入与明清农业革命",
+   "dossier_label": "美洲作物（玉米·番薯）传入与明清农业革命",
+   "subtitle": "美洲作物（玉米·番薯）传入与明清农业革命",
+   "primary_place": "fuzhou",
+   "dossier_event": "event:ev_cross_dynastic_crops_llm_01",
+   "vocab_pack": "cross_dynastic_crops_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "美洲作物（玉米·番薯）传入与明清农业革命——floor-8 epoch 收口，cross_dynastic/fujian 补强（tech）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "美洲作物（玉米·番薯）传入与明清农业革命：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "美洲作物（玉米·番薯）传入与明清农业革命：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "美洲作物（玉米·番薯）传入与明清农业革命：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "美洲作物（玉米·番薯）传入与明清农业革命：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "guangzhong_simaqian_llm": {
+   "kind": "thought",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "司马迁与《史记》（西汉）",
+   "dossier_label": "司马迁与《史记》（西汉）",
+   "subtitle": "司马迁与《史记》（西汉）",
+   "primary_place": "longmen",
+   "dossier_event": "event:ev_guangzhong_simaqian_llm_02",
+   "vocab_pack": "guangzhong_simaqian_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "司马迁与《史记》（西汉）——floor-8 epoch 收口，guangzhong/shaanxi 补强（thought）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "司马迁与《史记》（西汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "司马迁与《史记》（西汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "司马迁与《史记》（西汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "司马迁与《史记》（西汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "guangzhong_zhidao_llm": {
+   "kind": "engineering",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "秦直道与蒙恬北边经营（秦始皇三十五年）",
+   "dossier_label": "秦直道与蒙恬北边经营（秦始皇三十五年）",
+   "subtitle": "秦直道与蒙恬北边经营（秦始皇三十五年）",
+   "primary_place": "jiuyuan",
+   "dossier_event": "event:ev_guangzhong_zhidao_llm_01",
+   "vocab_pack": "guangzhong_zhidao_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "秦直道与蒙恬北边经营（秦始皇三十五年）——floor-8 epoch 收口，guangzhong/shaanxi 补强（engineering）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "秦直道与蒙恬北边经营（秦始皇三十五年）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "秦直道与蒙恬北边经营（秦始皇三十五年）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "秦直道与蒙恬北边经营（秦始皇三十五年）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "秦直道与蒙恬北边经营（秦始皇三十五年）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "huabei_boxer_llm": {
+   "kind": "uprising",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "义和团运动与华北社会（1899–1901）",
+   "dossier_label": "义和团运动与华北社会（1899–1901）",
+   "subtitle": "义和团运动与华北社会（1899–1901）",
+   "primary_place": "shandong",
+   "dossier_event": "event:ev_huabei_boxer_llm_01",
+   "vocab_pack": "huabei_boxer_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "义和团运动与华北社会（1899–1901）——floor-8 epoch 收口，huabei/hebei 补强（uprising）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "义和团运动与华北社会（1899–1901）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "义和团运动与华北社会（1899–1901）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "义和团运动与华北社会（1899–1901）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "义和团运动与华北社会（1899–1901）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ]
+  },
+  "huabei_jingzhang_llm": {
+   "kind": "engineering",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "京张铁路与詹天佑（1905–1909）",
+   "dossier_label": "京张铁路与詹天佑（1905–1909）",
+   "subtitle": "京张铁路与詹天佑（1905–1909）",
+   "primary_place": "beijing",
+   "dossier_event": "event:ev_huabei_jingzhang_llm_01",
+   "vocab_pack": "huabei_jingzhang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "京张铁路与詹天佑（1905–1909）——floor-8 epoch 收口，huabei/hebei 补强（engineering）。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "京张铁路与詹天佑（1905–1909）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "京张铁路与詹天佑（1905–1909）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "京张铁路与詹天佑（1905–1909）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "京张铁路与詹天佑（1905–1909）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
     6
    ]
   }

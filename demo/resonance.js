@@ -61,6 +61,7 @@ window.SANDBOX_RESONANCE = {
    "chu_han",
    "chuhai_llm",
    "compass_navigation",
+   "cross_dynastic_crops_llm",
    "dagukou_battle_llm",
    "dalinghe",
    "dangar_chama_llm",
@@ -111,6 +112,8 @@ window.SANDBOX_RESONANCE = {
    "guangxi_taiping_llm",
    "guangxi_zhennanguan_llm",
    "guangxi_zhuangzu_llm",
+   "guangzhong_simaqian_llm",
+   "guangzhong_zhidao_llm",
    "guiling",
    "guizhou_jianxing_llm",
    "guizhou_minority_craft_llm",
@@ -151,6 +154,8 @@ window.SANDBOX_RESONANCE = {
    "heshangyuan",
    "hexi_sijun_llm",
    "hongjin",
+   "huabei_boxer_llm",
+   "huabei_jingzhang_llm",
    "huangchao",
    "huangdaopo_llm",
    "huanghe",
@@ -1383,6 +1388,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": null
   },
   {
+   "scene": "cross_dynastic_crops_llm",
+   "name": "cross_dynastic_crops_llm",
+   "total": 12,
+   "layers": {
+    "record": 7,
+    "inference": 1,
+    "gap": 2,
+    "scholarship": 2
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_cross_dynastic_crops_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "dagukou_battle_llm",
    "name": "dagukou_battle_llm",
    "total": 14,
@@ -2337,6 +2361,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guangzhong_simaqian_llm",
+   "name": "guangzhong_simaqian_llm",
+   "total": 17,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 6,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 17
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangzhong_simaqian_llm_02",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guangzhong_zhidao_llm",
+   "name": "guangzhong_zhidao_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "record": 12,
+    "inference": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangzhong_zhidao_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guiling",
    "name": "guiling",
    "total": 19,
@@ -3096,6 +3158,43 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:hj_1351",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "huabei_boxer_llm",
+   "name": "huabei_boxer_llm",
+   "total": 15,
+   "layers": {
+    "record": 13,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_huabei_boxer_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "huabei_jingzhang_llm",
+   "name": "huabei_jingzhang_llm",
+   "total": 15,
+   "layers": {
+    "record": 12,
+    "inference": 1,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_huabei_jingzhang_llm_01",
    "best_resonance": 0.0
   },
   {

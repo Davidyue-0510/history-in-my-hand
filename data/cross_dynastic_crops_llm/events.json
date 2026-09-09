@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_cross_dynastic_crops_llm_01",
+   "subject": "event:ev_cross_dynastic_crops_llm_01",
+   "year": 1593,
+   "era": "萬曆二十一年",
+   "title": "番薯傳入福州",
+   "kind": "其他",
+   "text": "陳振龍自呂宋攜番薯藤歸福州",
+   "_source_idx": 0,
+   "_source_name": "《闽书·南产志》（何乔远）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_cross_dynastic_crops_llm_02",
+   "subject": "event:ev_cross_dynastic_crops_llm_02",
+   "year": 1573,
+   "era": "萬曆初",
+   "title": "玉米傳入中國",
+   "kind": "其他",
+   "text": "玉米自海上流入，遍植南北",
+   "_source_idx": 0,
+   "_source_name": "《闽书·南产志》（何乔远）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

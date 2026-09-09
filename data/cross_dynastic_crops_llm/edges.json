@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "lvsong",
+   "to": "fuzhou",
+   "type": "military",
+   "label": "番薯傳入路線",
+   "_source_idx": 0,
+   "_source_name": "《闽书·南产志》（何乔远）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

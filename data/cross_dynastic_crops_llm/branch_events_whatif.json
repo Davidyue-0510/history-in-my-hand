@@ -1,0 +1,258 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "cross_dynastic_crops_llm",
+ "_scenario_type": "social",
+ "_years": [
+  1573,
+  1593
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1576,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.43 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.435,
+    "cum": -0.185
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1577,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.42 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.419,
+    "cum": -0.231
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1578,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.40 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.402,
+    "cum": -0.278
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1579,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.39 / 史实 0.71）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.71,
+    "new_to": 0.386,
+    "cum": -0.324
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1580,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.37 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.37,
+    "cum": -0.37
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1581,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.35 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.353,
+    "cum": -0.417
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1582,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.46（本支 0.34 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.337,
+    "cum": -0.463
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1583,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.51（本支 0.32 / 史实 0.83）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.83,
+    "new_to": 0.321,
+    "cum": -0.509
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1584,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.56（本支 0.30 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.305,
+    "cum": -0.555
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1585,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.29 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.89,
+    "new_to": 0.288,
+    "cum": -0.602
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1586,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.65（本支 0.27 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.272,
+    "cum": -0.648
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1587,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.26 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.256,
+    "cum": -0.694
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1588,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.24 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.239,
+    "cum": -0.741
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1589,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.223,
+    "cum": -0.777
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1590,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.207,
+    "cum": -0.793
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1591,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.191,
+    "cum": -0.809
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1592,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.174,
+    "cum": -0.826
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "divergence",
+   "year": 1593,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.158,
+    "cum": -0.842
+   },
+   "place_id": "fuzhou"
+  },
+  {
+   "kind": "summary",
+   "year": 1593,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.16 / 史实 1.00（偏离 -0.84）",
+   "evidence": {
+    "cum": -0.842,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "fuzhou"
+  }
+ ]
+}

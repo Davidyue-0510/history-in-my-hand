@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "jiuyuan",
+   "to": "yunyang",
+   "type": "military",
+   "label": "直道",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "jiuyuan",
+   "to": "ganguan",
+   "type": "military",
+   "label": "直道",
+   "_source_idx": 0,
+   "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

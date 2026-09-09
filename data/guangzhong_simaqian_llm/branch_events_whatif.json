@@ -1,0 +1,466 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "guangzhong_simaqian_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  -140,
+  -104
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -137,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.45 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.449,
+    "cum": -0.151
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -136,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.625,
+    "new_to": 0.436,
+    "cum": -0.189
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -135,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.42 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.423,
+    "cum": -0.227
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -134,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.41 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.675,
+    "new_to": 0.41,
+    "cum": -0.265
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -133,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.40 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.397,
+    "cum": -0.303
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -132,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.38 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.384,
+    "cum": -0.341
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -131,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.38（本支 0.37 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.75,
+    "new_to": 0.372,
+    "cum": -0.378
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -130,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.36 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.775,
+    "new_to": 0.359,
+    "cum": -0.416
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -129,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.45（本支 0.35 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.346,
+    "cum": -0.454
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -128,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.33 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.825,
+    "new_to": 0.333,
+    "cum": -0.492
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -127,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.53（本支 0.32 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.32,
+    "cum": -0.53
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -126,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.57（本支 0.31 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.875,
+    "new_to": 0.307,
+    "cum": -0.568
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -125,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.29 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.294,
+    "cum": -0.606
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -124,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.64（本支 0.28 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.925,
+    "new_to": 0.282,
+    "cum": -0.643
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -123,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.27 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.269,
+    "cum": -0.681
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -122,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.26 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.975,
+    "new_to": 0.256,
+    "cum": -0.719
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -121,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.243,
+    "cum": -0.757
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -120,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.23,
+    "cum": -0.77
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -119,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.217,
+    "cum": -0.783
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -118,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.204,
+    "cum": -0.796
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -117,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.192,
+    "cum": -0.808
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -116,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.179,
+    "cum": -0.821
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -115,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.166,
+    "cum": -0.834
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -114,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.153,
+    "cum": -0.847
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -113,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.14,
+    "cum": -0.86
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -112,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.127,
+    "cum": -0.873
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -111,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.115,
+    "cum": -0.885
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -110,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.102,
+    "cum": -0.898
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -109,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.089,
+    "cum": -0.911
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -108,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.076,
+    "cum": -0.924
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -107,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.063,
+    "cum": -0.937
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -106,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.05,
+    "cum": -0.95
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -105,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.037,
+    "cum": -0.963
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "divergence",
+   "year": -104,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.025,
+    "cum": -0.975
+   },
+   "place_id": "jianghuai"
+  },
+  {
+   "kind": "summary",
+   "year": -104,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.02 / 史实 1.00（偏离 -0.97）",
+   "evidence": {
+    "cum": -0.975,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jianghuai"
+  }
+ ]
+}

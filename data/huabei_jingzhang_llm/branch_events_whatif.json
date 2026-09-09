@@ -1,0 +1,76 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "huabei_jingzhang_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1905,
+  1909
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1906,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.46,
+    "cum": -0.16
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1907,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.439,
+    "cum": -0.241
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1908,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.42 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.419,
+    "cum": -0.321
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.40 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.399,
+    "cum": -0.401
+   },
+   "place_id": "beijing"
+  },
+  {
+   "kind": "summary",
+   "year": 1909,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.40 / 史实 0.80（偏离 -0.40）",
+   "evidence": {
+    "cum": -0.401,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "beijing"
+  }
+ ]
+}

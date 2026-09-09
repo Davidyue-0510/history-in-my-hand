@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "shandong",
+      "name": "山东",
+      "type": "region",
+      "modern": "今中国山东省",
+      "note": "义和团起源地",
+      "_source_idx": 0,
+      "_source_name": "《义和团档案史料》（中国第一历史档案馆编）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhili",
+      "name": "直隶",
+      "type": "region",
+      "modern": "今中国河北省",
+      "note": "义和团蔓延区域",
+      "_source_idx": 0,
+      "_source_name": "《义和团档案史料》（中国第一历史档案馆编）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jifu",
+      "name": "畿辅",
+      "type": "region",
+      "modern": "今中国北京周边",
+      "note": "义和团遍设坛厂之地",
+      "_source_idx": 0,
+      "_source_name": "《义和团档案史料》（中国第一历史档案馆编）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

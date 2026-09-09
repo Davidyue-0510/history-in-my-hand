@@ -1,0 +1,89 @@
+{
+  "places": [
+    {
+      "id": "jiuyuan",
+      "name": "九原",
+      "type": "city",
+      "modern": "今内蒙古包头",
+      "note": "直道北端",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "henan",
+      "name": "河南",
+      "type": "region",
+      "modern": "今内蒙古河套",
+      "note": "蒙恬收复地",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 112.45,
+      "lat": 34.62,
+      "geo_note": "唐东都，今洛阳",
+      "geo_match": "substring"
+    },
+    {
+      "id": "lintao",
+      "name": "临洮",
+      "type": "city",
+      "modern": "今甘肃岷县",
+      "note": "长城西端",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yunyang",
+      "name": "云阳",
+      "type": "city",
+      "modern": "今陕西淳化",
+      "note": "直道南端",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "ganguan",
+      "name": "甘泉",
+      "type": "city",
+      "modern": "今陕西淳化",
+      "note": "直道终点",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "liaodong",
+      "name": "辽东",
+      "type": "region",
+      "modern": "今辽宁辽阳",
+      "note": "长城东端",
+      "_source_idx": 0,
+      "_source_name": "《史记·秦始皇本纪》《蒙恬列传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 123.43,
+      "lat": 41.8,
+      "geo_note": "唐安东都护府，今辽宁辽阳"
+    }
+  ]
+}
