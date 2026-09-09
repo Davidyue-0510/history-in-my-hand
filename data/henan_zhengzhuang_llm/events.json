@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_henan_zhengzhuang_llm_01",
+   "subject": "event:ev_henan_zhengzhuang_llm_01",
+   "year": -722,
+   "era": "鲁隐公元年",
+   "title": "克段于鄢",
+   "kind": "战事",
+   "text": "郑庄公平定共叔段叛乱。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_henan_zhengzhuang_llm_02",
+   "subject": "event:ev_henan_zhengzhuang_llm_02",
+   "year": -720,
+   "era": "鲁隐公三年",
+   "title": "周郑交质",
+   "kind": "外交",
+   "text": "周郑互换人质，王权开始下移。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_henan_zhengzhuang_llm_03",
+   "subject": "event:ev_henan_zhengzhuang_llm_03",
+   "year": -707,
+   "era": "鲁桓公五年",
+   "title": "繻葛之战",
+   "kind": "战事",
+   "text": "郑庄公击败周桓王，射王中肩。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

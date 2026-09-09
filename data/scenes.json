@@ -603,7 +603,20 @@
   "yunnan_gaitu_llm",
   "yunnan_lianda_llm",
   "zhejiang_ningbo_llm",
-  "zhejiang_yongjia_llm"
+  "zhejiang_yongjia_llm",
+  "beijing_beping_llm",
+  "beijing_jinghan_llm",
+  "hebei_kailuan_llm",
+  "hebei_zhili_llm",
+  "henan_zhengzhuang_llm",
+  "hubei_chuwu_llm",
+  "shaanxi_hanchang_llm",
+  "shaanxi_shangyang_llm",
+  "shaanxi_zhengguoqu_llm",
+  "shaanxi_zhouyuan_llm",
+  "shandong_guanzhong_llm",
+  "shanxi_jinwen_llm",
+  "tianjin_xiaozhan_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -32154,6 +32167,974 @@
     }
    },
    "dims": [
+    5,
+    6
+   ]
+  },
+  "beijing_beping_llm": {
+   "kind": "court",
+   "region": "huabei",
+   "province": "beijing",
+   "title": "北平和平解放（1949）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "beiping",
+   "dossier_event": "event:ev_beijing_beping_llm_01",
+   "vocab_pack": "beijing_beping_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "北平和平解放（1949）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "北平和平解放（1949）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "北平和平解放（1949）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "北平和平解放（1949）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    6
+   ]
+  },
+  "beijing_jinghan_llm": {
+   "kind": "uprising",
+   "region": "huabei",
+   "province": "beijing",
+   "title": "京汉铁路与二七大罢工（1923）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "beijing",
+   "dossier_event": "event:ev_beijing_jinghan_llm_01",
+   "vocab_pack": "beijing_jinghan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "京汉铁路与二七大罢工（1923）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "京汉铁路与二七大罢工（1923）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "京汉铁路与二七大罢工（1923）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "京汉铁路与二七大罢工（1923）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    5,
+    6
+   ]
+  },
+  "hebei_kailuan_llm": {
+   "kind": "social",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "开滦煤矿与华北工人运动（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tangshan",
+   "dossier_event": "event:ev_hebei_kailuan_llm_01",
+   "vocab_pack": "hebei_kailuan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "开滦煤矿与华北工人运动（清—民国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "开滦煤矿与华北工人运动（清—民国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "开滦煤矿与华北工人运动（清—民国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "开滦煤矿与华北工人运动（清—民国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "hebei_zhili_llm": {
+   "kind": "court",
+   "region": "huabei",
+   "province": "hebei",
+   "title": "直隶总督与直隶省（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zhili",
+   "dossier_event": "event:ev_hebei_zhili_llm_01",
+   "vocab_pack": "hebei_zhili_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "直隶总督与直隶省（清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "直隶总督与直隶省（清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "直隶总督与直隶省（清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "直隶总督与直隶省（清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    6
+   ]
+  },
+  "henan_zhengzhuang_llm": {
+   "kind": "court",
+   "region": "huabei",
+   "province": "henan",
+   "title": "郑庄公小霸与王纲解纽（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "zheng",
+   "dossier_event": "event:ev_henan_zhengzhuang_llm_01",
+   "vocab_pack": "henan_zhengzhuang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "郑庄公小霸与王纲解纽（春秋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "郑庄公小霸与王纲解纽（春秋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "郑庄公小霸与王纲解纽（春秋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "郑庄公小霸与王纲解纽（春秋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "hubei_chuwu_llm": {
+   "kind": "dynasty",
+   "region": "warring_states",
+   "province": "hubei",
+   "title": "楚武王称王与荆楚扩张（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "chu",
+   "dossier_event": "event:ev_hubei_chuwu_llm_01",
+   "vocab_pack": "hubei_chuwu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "楚武王称王与荆楚扩张（春秋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "楚武王称王与荆楚扩张（春秋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "楚武王称王与荆楚扩张（春秋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "楚武王称王与荆楚扩张（春秋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ]
+  },
+  "shaanxi_hanchang_llm": {
+   "kind": "engineering",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "汉长安与关中之漕（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "changan",
+   "dossier_event": "event:ev_shaanxi_hanchang_llm_01",
+   "vocab_pack": "shaanxi_hanchang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉长安与关中之漕（汉）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉长安与关中之漕（汉）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉长安与关中之漕（汉）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉长安与关中之漕（汉）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "shaanxi_shangyang_llm": {
+   "kind": "reform",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "秦孝公商鞅变法（战国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qin",
+   "dossier_event": "event:ev_shaanxi_shangyang_llm_01",
+   "vocab_pack": "shaanxi_shangyang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "秦孝公商鞅变法（战国）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "秦孝公商鞅变法（战国）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "秦孝公商鞅变法（战国）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "秦孝公商鞅变法（战国）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    6
+   ]
+  },
+  "shaanxi_zhengguoqu_llm": {
+   "kind": "engineering",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "郑国渠与秦关中水利（战国—秦）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jing_shui",
+   "dossier_event": "event:ev_shaanxi_zhengguoqu_llm_01",
+   "vocab_pack": "shaanxi_zhengguoqu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "郑国渠与秦关中水利（战国—秦）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "郑国渠与秦关中水利（战国—秦）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "郑国渠与秦关中水利（战国—秦）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "郑国渠与秦关中水利（战国—秦）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "shaanxi_zhouyuan_llm": {
+   "kind": "thought",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "周原与西周封建肇基（西周）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qi",
+   "dossier_event": "event:ev_shaanxi_zhouyuan_llm_01",
+   "vocab_pack": "shaanxi_zhouyuan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "guangzhong",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "周原与西周封建肇基（西周）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "周原与西周封建肇基（西周）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "周原与西周封建肇基（西周）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "周原与西周封建肇基（西周）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "shandong_guanzhong_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "管仲相齐与齐桓公霸业（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "qi",
+   "dossier_event": "event:ev_shandong_guanzhong_llm_02",
+   "vocab_pack": "shandong_guanzhong_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "管仲相齐与齐桓公霸业（春秋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "管仲相齐与齐桓公霸业（春秋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "管仲相齐与齐桓公霸业（春秋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "管仲相齐与齐桓公霸业（春秋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "shanxi_jinwen_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "shanxi",
+   "title": "晋文公称霸与城濮之役（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "jin",
+   "dossier_event": "event:ev_shanxi_jinwen_llm_02",
+   "vocab_pack": "shanxi_jinwen_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "晋文公称霸与城濮之役（春秋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "晋文公称霸与城濮之役（春秋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "晋文公称霸与城濮之役（春秋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "晋文公称霸与城濮之役（春秋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    3,
+    4,
+    6
+   ]
+  },
+  "tianjin_xiaozhan_llm": {
+   "kind": "reform",
+   "region": "huabei",
+   "province": "tianjin",
+   "title": "小站练兵与北洋新军（1895）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_tianjin_xiaozhan_llm_01",
+   "vocab_pack": "tianjin_xiaozhan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "huabei",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "小站练兵与北洋新军（1895）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "小站练兵与北洋新军（1895）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "小站练兵与北洋新军（1895）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "小站练兵与北洋新军（1895）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
     5,
     6
    ]

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hubei_chuwu_llm_01",
+   "subject": "event:ev_hubei_chuwu_llm_01",
+   "year": -740,
+   "era": "周平王三十一年",
+   "title": "楚熊通自立为武王",
+   "kind": "行政",
+   "text": "熊通自立为武王，始称王",
+   "_source_idx": 0,
+   "_source_name": "史记·楚世家 / 左传·桓公",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hubei_chuwu_llm_02",
+   "subject": "event:ev_hubei_chuwu_llm_02",
+   "year": -740,
+   "era": "周平王三十一年",
+   "title": "伐随开濮",
+   "kind": "战事",
+   "text": "伐随国，开濮地，拓地千里",
+   "_source_idx": 0,
+   "_source_name": "史记·楚世家 / 左传·桓公",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

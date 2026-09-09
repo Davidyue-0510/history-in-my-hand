@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HUB__p01",
+   "name": "楚武王",
+   "role": "楚国君主",
+   "note": "熊通，自立为武王，开启楚国扩张",
+   "_source_idx": 0,
+   "_source_name": "史记·楚世家 / 左传·桓公",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUB__p02",
+   "name": "随侯",
+   "role": "随国国君",
+   "note": "被楚伐，被迫屈服",
+   "_source_idx": 0,
+   "_source_name": "史记·楚世家 / 左传·桓公",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

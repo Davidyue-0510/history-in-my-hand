@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "晋文公",
+   "role": "晋国君主",
+   "note": "重耳，流亡十九年归国，城濮败楚，践土会盟称霸。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "狐偃",
+   "role": "晋国大夫",
+   "note": "随重耳流亡，归国后任要职，辅佐改革。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "赵衰",
+   "role": "晋国大夫",
+   "note": "随重耳流亡，归国后任要职，辅佐改革。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p04",
+   "name": "子犯",
+   "role": "晋国大夫",
+   "note": "狐偃字子犯，流亡途中以璧授重耳，表忠心。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p05",
+   "name": "楚成王",
+   "role": "楚国君主",
+   "note": "城濮之战楚军统帅，战败后北进受阻。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

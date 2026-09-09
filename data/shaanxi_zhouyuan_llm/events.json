@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_shaanxi_zhouyuan_llm_01",
+   "subject": "event:ev_shaanxi_zhouyuan_llm_01",
+   "year": -1200,
+   "era": "商代晚期",
+   "title": "古公迁岐",
+   "kind": "建置",
+   "text": "古公亶父率周人迁居周原",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shaanxi_zhouyuan_llm_02",
+   "subject": "event:ev_shaanxi_zhouyuan_llm_02",
+   "year": -1100,
+   "era": "商代晚期",
+   "title": "文王演易",
+   "kind": "其他",
+   "text": "文王在周原演周易",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shaanxi_zhouyuan_llm_03",
+   "subject": "event:ev_shaanxi_zhouyuan_llm_03",
+   "year": -1046,
+   "era": "周武王四年",
+   "title": "武王伐纣",
+   "kind": "战事",
+   "text": "武王灭商，建立周朝",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

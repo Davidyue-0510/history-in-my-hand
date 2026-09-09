@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "古公亶父",
+   "role": "周族首领",
+   "note": "自邰迁岐，营建周原",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "周文王",
+   "role": "周族首领",
+   "note": "演易，奠基灭商",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p03",
+   "name": "周武王",
+   "role": "周朝开国君主",
+   "note": "伐纣灭商，封建亲戚",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "SHA__p01",
+   "name": "汉高祖",
+   "role": "汉朝开国皇帝",
+   "note": "定都长安",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 汉书·沟洫志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "SHA__p02",
+   "name": "汉武帝",
+   "role": "西汉皇帝",
+   "note": "穿漕渠通渭",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 汉书·沟洫志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

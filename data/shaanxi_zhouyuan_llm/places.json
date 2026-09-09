@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "zhouyuan",
+      "name": "周原",
+      "type": "region",
+      "modern": "今中国陕西岐山、扶风",
+      "note": "周人新都所在",
+      "_source_idx": 0,
+      "_source_name": "诗·大雅·绵 / 尚书·周官",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guanzhong",
+      "name": "关中",
+      "type": "region",
+      "modern": "今中国陕西中部",
+      "note": "周室根本",
+      "_source_idx": 0,
+      "_source_name": "诗·大雅·绵 / 尚书·周官",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "qi",
+      "name": "邰",
+      "type": "city",
+      "modern": "今中国陕西武功",
+      "note": "周人旧都",
+      "_source_idx": 0,
+      "_source_name": "诗·大雅·绵 / 尚书·周官",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

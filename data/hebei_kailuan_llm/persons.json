@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "HEB__p01",
+   "name": "唐廷枢",
+   "role": "开平矿务局总办",
+   "note": "创办开平煤矿",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p02",
+   "name": "周学熙",
+   "role": "北洋实业家",
+   "note": "参与开滦矿务管理",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p03",
+   "name": "袁世凯",
+   "role": "直隶总督",
+   "note": "支持开平矿务",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p04",
+   "name": "邓培",
+   "role": "中共唐山书记",
+   "note": "领导开滦罢工",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEB__p05",
+   "name": "罗章龙",
+   "role": "中共北方区委",
+   "note": "参与罢工指导",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "persons": [
+  {
+   "id": "BEI__p01",
+   "name": "吴佩孚",
+   "role": "直系军阀首领",
+   "note": "镇压罢工",
+   "_source_idx": 0,
+   "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "BEI__p02",
+   "name": "林祥谦",
+   "role": "京汉铁路总工会江岸分会委员长",
+   "note": "罢工领袖，就义",
+   "_source_idx": 0,
+   "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "BEI__p03",
+   "name": "施洋",
+   "role": "京汉铁路总工会法律顾问",
+   "note": "劳工律师，殉难",
+   "_source_idx": 0,
+   "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

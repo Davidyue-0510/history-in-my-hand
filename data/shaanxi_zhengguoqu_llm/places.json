@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "jing_shui",
+      "name": "泾水",
+      "type": "river",
+      "modern": "中国陕西省泾河",
+      "note": "渠首水源",
+      "_source_idx": 0,
+      "_source_name": "史记·河渠书 / 水经注·泾水",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "luo_shui",
+      "name": "洛水",
+      "type": "river",
+      "modern": "中国陕西省洛河",
+      "note": "渠尾注洛",
+      "_source_idx": 0,
+      "_source_name": "史记·河渠书 / 水经注·泾水",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hu_kou",
+      "name": "瓠口",
+      "type": "yi",
+      "modern": "中国陕西省泾阳县西北",
+      "note": "渠首东端",
+      "_source_idx": 0,
+      "_source_name": "史记·河渠书 / 水经注·泾水",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhong_shan",
+      "name": "中山",
+      "type": "mountain",
+      "modern": "中国陕西省礼泉县北",
+      "note": "渠首西端",
+      "_source_idx": 0,
+      "_source_name": "史记·河渠书 / 水经注·泾水",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.5,
+      "lat": 38.0,
+      "geo_note": "古中山国"
+    },
+    {
+      "id": "bei_shan",
+      "name": "北山",
+      "type": "mountain",
+      "modern": "中国陕西省北部山地",
+      "note": "渠沿北山",
+      "_source_idx": 0,
+      "_source_name": "史记·河渠书 / 水经注·泾水",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

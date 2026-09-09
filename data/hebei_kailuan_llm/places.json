@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "kaiping",
+      "name": "开平",
+      "type": "city",
+      "modern": "今中国河北省唐山市开平区",
+      "note": "开平煤矿初设地",
+      "_source_idx": 0,
+      "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tangshan",
+      "name": "唐山",
+      "type": "city",
+      "modern": "今中国河北省唐山市",
+      "note": "开滦煤矿所在地",
+      "_source_idx": 0,
+      "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "kailuan",
+      "name": "开滦",
+      "type": "region",
+      "modern": "今中国河北省唐山市",
+      "note": "开平滦州合并矿区",
+      "_source_idx": 0,
+      "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

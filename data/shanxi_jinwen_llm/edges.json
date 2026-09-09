@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "jin",
+   "to": "chengpu",
+   "type": "military",
+   "label": "晋军南下迎战楚军",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "chu",
+   "to": "chengpu",
+   "type": "military",
+   "label": "楚军北上与晋战",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

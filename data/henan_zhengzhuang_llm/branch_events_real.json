@@ -1,0 +1,89 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "henan_zhengzhuang_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  -722,
+  -707
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -711,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.64 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.644,
+    "cum": -0.156
+   },
+   "place_id": "yan"
+  },
+  {
+   "kind": "divergence",
+   "year": -710,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.66 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.825,
+    "new_to": 0.656,
+    "cum": -0.169
+   },
+   "place_id": "yan"
+  },
+  {
+   "kind": "divergence",
+   "year": -709,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.67 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.668,
+    "cum": -0.182
+   },
+   "place_id": "yan"
+  },
+  {
+   "kind": "divergence",
+   "year": -708,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.68 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.875,
+    "new_to": 0.68,
+    "cum": -0.195
+   },
+   "place_id": "yan"
+  },
+  {
+   "kind": "divergence",
+   "year": -707,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.69 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.692,
+    "cum": -0.208
+   },
+   "place_id": "yan"
+  },
+  {
+   "kind": "summary",
+   "year": -707,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.69 / 史实 0.90（偏离 -0.21）",
+   "evidence": {
+    "cum": -0.208,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yan"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "qi",
+   "to": "zhouyuan",
+   "type": "military",
+   "label": "周人迁岐路线",
+   "_source_idx": 0,
+   "_source_name": "诗·大雅·绵 / 尚书·周官",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

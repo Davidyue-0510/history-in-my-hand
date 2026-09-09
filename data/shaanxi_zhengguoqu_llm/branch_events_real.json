@@ -1,0 +1,89 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "shaanxi_zhengguoqu_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  -237,
+  2024
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": -228,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.74 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.737,
+    "cum": -0.163
+   },
+   "place_id": "jing_shui"
+  },
+  {
+   "kind": "divergence",
+   "year": -227,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.76 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.76,
+    "cum": -0.18
+   },
+   "place_id": "jing_shui"
+  },
+  {
+   "kind": "divergence",
+   "year": -226,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.78 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.784,
+    "cum": -0.196
+   },
+   "place_id": "jing_shui"
+  },
+  {
+   "kind": "divergence",
+   "year": -225,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.808,
+    "cum": -0.192
+   },
+   "place_id": "jing_shui"
+  },
+  {
+   "kind": "divergence",
+   "year": -224,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.831,
+    "cum": -0.169
+   },
+   "place_id": "jing_shui"
+  },
+  {
+   "kind": "summary",
+   "year": 2024,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jing_shui"
+  }
+ ]
+}

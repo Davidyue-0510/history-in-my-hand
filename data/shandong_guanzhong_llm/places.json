@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "qi",
+      "name": "齐",
+      "type": "region",
+      "modern": "今山东北部",
+      "note": "齐国",
+      "_source_idx": 0,
+      "_source_name": "国语·齐语 / 管子·轻重",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 118.05,
+      "lat": 36.81,
+      "geo_note": "今山东淄博临淄；房玄龄故里"
+    },
+    {
+      "id": "xing",
+      "name": "邢",
+      "type": "region",
+      "modern": "今河北邢台",
+      "note": "邢国",
+      "_source_idx": 0,
+      "_source_name": "国语·齐语 / 管子·轻重",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wei",
+      "name": "卫",
+      "type": "region",
+      "modern": "今河南淇县",
+      "note": "卫国",
+      "_source_idx": 0,
+      "_source_name": "国语·齐语 / 管子·轻重",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.18,
+      "lat": 35.43,
+      "geo_note": "商鞅故里，卫国公族，今河南淇县/卫辉一带"
+    }
+  ]
+}

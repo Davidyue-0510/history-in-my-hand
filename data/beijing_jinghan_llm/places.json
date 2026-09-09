@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "jiang_an",
+      "name": "江岸",
+      "type": "region",
+      "modern": "中国湖北省武汉市江岸区",
+      "note": "罢工中心，林祥谦就义地",
+      "_source_idx": 0,
+      "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "type": "city",
+      "modern": "中国北京市",
+      "note": "京汉铁路起点",
+      "_source_idx": 0,
+      "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 116.4,
+      "lat": 39.9,
+      "geo_note": "平津战役·傅作义起义"
+    },
+    {
+      "id": "hankou",
+      "name": "汉口",
+      "type": "city",
+      "modern": "中国湖北省武汉市",
+      "note": "京汉铁路终点",
+      "_source_idx": 0,
+      "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

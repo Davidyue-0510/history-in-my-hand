@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "baoding",
+   "to": "tianjin",
+   "type": "military",
+   "label": "总督与通商大臣分驻",
+   "_source_idx": 0,
+   "_source_name": "清史稿·职官志 / 直隶通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 400 个切片
+// 权威数据源：data/scenes.json 注册的 413 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 400 个切片",
+  "slice": "multi-scene · 413 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -22,6 +22,8 @@ window.SANDBOX_DATA = {
    "aomen_portugal_llm",
    "aomen_stpaul_llm",
    "beijing_banner_llm",
+   "beijing_beping_llm",
+   "beijing_jinghan_llm",
    "beijing_qianjia_llm",
    "bisheng_movable_type",
    "bohai_kingdom_llm",
@@ -86,17 +88,21 @@ window.SANDBOX_DATA = {
    "hainan_zhuyai_llm",
    "han_banchao_llm",
    "han_weihuo_llm",
+   "hebei_kailuan_llm",
    "hebei_shanhaiguan",
    "hebei_yanzhao_wenhua_llm",
    "hebei_zhaozhou",
+   "hebei_zhili_llm",
    "hebei_zhili_xinzheng_llm",
    "heilongjiang_chuangguan_llm",
    "heilongjiang_jin",
    "heilongjiang_jin_llm",
    "heilongjiang_kanglian_llm",
    "heilongjiang_suifenhe_llm",
+   "henan_zhengzhuang_llm",
    "hexi_sijun_llm",
    "huangdaopo_llm",
+   "hubei_chuwu_llm",
    "hubei_hankou_llm",
    "hubei_wuchang_llm",
    "hubei_zenghouyi",
@@ -162,7 +168,12 @@ window.SANDBOX_DATA = {
    "qinghai_zongkaba_llm",
    "qingli_reform_llm",
    "san_guo",
+   "shaanxi_hanchang_llm",
+   "shaanxi_shangyang_llm",
+   "shaanxi_zhengguoqu_llm",
+   "shaanxi_zhouyuan_llm",
    "shandong_canal_llm",
+   "shandong_guanzhong_llm",
    "shandong_jixia",
    "shandong_kongfu_llm",
    "shandong_kongzi",
@@ -172,6 +183,7 @@ window.SANDBOX_DATA = {
    "shanghai_xiaodaohui_llm",
    "shanghai_xinhai_llm",
    "shanxi_jinshang_llm",
+   "shanxi_jinwen_llm",
    "shanxi_pingyao_llm",
    "shanxi_sanjiafenjin",
    "shanxi_xunzi_llm",
@@ -219,6 +231,7 @@ window.SANDBOX_DATA = {
    "tianjin_kaibu_llm",
    "tianjin_railway_llm",
    "tianjin_tianjinwei",
+   "tianjin_xiaozhan_llm",
    "tianjin_yanfu_llm",
    "wangmang_reform_llm",
    "wangyangming",
@@ -919,7 +932,20 @@ window.SANDBOX_DATA = {
   "yunnan_gaitu_llm",
   "yunnan_lianda_llm",
   "zhejiang_ningbo_llm",
-  "zhejiang_yongjia_llm"
+  "zhejiang_yongjia_llm",
+  "beijing_beping_llm",
+  "beijing_jinghan_llm",
+  "hebei_kailuan_llm",
+  "hebei_zhili_llm",
+  "henan_zhengzhuang_llm",
+  "hubei_chuwu_llm",
+  "shaanxi_hanchang_llm",
+  "shaanxi_shangyang_llm",
+  "shaanxi_zhengguoqu_llm",
+  "shaanxi_zhouyuan_llm",
+  "shandong_guanzhong_llm",
+  "shanxi_jinwen_llm",
+  "tianjin_xiaozhan_llm"
  ],
  "vocab": {
   "layers": [
@@ -27998,6 +28024,285 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "song",
    "scale_tier": "operational"
+  },
+  "beijing_beping_llm": {
+   "key": "beijing_beping_llm",
+   "scene_id": "beijing_beping_llm",
+   "title": "北平和平解放（1949）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "huabei",
+   "page": "county.html?scene=beijing_beping_llm",
+   "primary_place": "beiping",
+   "vocab_pack": "inline:beijing_beping_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    6
+   ],
+   "epoch": "huabei",
+   "scale_tier": "operational"
+  },
+  "beijing_jinghan_llm": {
+   "key": "beijing_jinghan_llm",
+   "scene_id": "beijing_jinghan_llm",
+   "title": "京汉铁路与二七大罢工（1923）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "uprising",
+   "region": "huabei",
+   "page": "county.html?scene=beijing_jinghan_llm",
+   "primary_place": "beijing",
+   "vocab_pack": "inline:beijing_jinghan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
+   "epoch": "huabei",
+   "scale_tier": "operational"
+  },
+  "hebei_kailuan_llm": {
+   "key": "hebei_kailuan_llm",
+   "scene_id": "hebei_kailuan_llm",
+   "title": "开滦煤矿与华北工人运动（清—民国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "social",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_kailuan_llm",
+   "primary_place": "tangshan",
+   "vocab_pack": "inline:hebei_kailuan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "huabei",
+   "scale_tier": "operational"
+  },
+  "hebei_zhili_llm": {
+   "key": "hebei_zhili_llm",
+   "scene_id": "hebei_zhili_llm",
+   "title": "直隶总督与直隶省（清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "huabei",
+   "page": "county.html?scene=hebei_zhili_llm",
+   "primary_place": "zhili",
+   "vocab_pack": "inline:hebei_zhili_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "huabei",
+   "scale_tier": "operational"
+  },
+  "henan_zhengzhuang_llm": {
+   "key": "henan_zhengzhuang_llm",
+   "scene_id": "henan_zhengzhuang_llm",
+   "title": "郑庄公小霸与王纲解纽（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "court",
+   "region": "huabei",
+   "page": "county.html?scene=henan_zhengzhuang_llm",
+   "primary_place": "zheng",
+   "vocab_pack": "inline:henan_zhengzhuang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational"
+  },
+  "hubei_chuwu_llm": {
+   "key": "hubei_chuwu_llm",
+   "scene_id": "hubei_chuwu_llm",
+   "title": "楚武王称王与荆楚扩张（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "dynasty",
+   "region": "warring_states",
+   "page": "county.html?scene=hubei_chuwu_llm",
+   "primary_place": "chu",
+   "vocab_pack": "inline:hubei_chuwu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational"
+  },
+  "shaanxi_hanchang_llm": {
+   "key": "shaanxi_hanchang_llm",
+   "scene_id": "shaanxi_hanchang_llm",
+   "title": "汉长安与关中之漕（汉）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "guangzhong",
+   "page": "county.html?scene=shaanxi_hanchang_llm",
+   "primary_place": "changan",
+   "vocab_pack": "inline:shaanxi_hanchang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "operational"
+  },
+  "shaanxi_shangyang_llm": {
+   "key": "shaanxi_shangyang_llm",
+   "scene_id": "shaanxi_shangyang_llm",
+   "title": "秦孝公商鞅变法（战国）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "guangzhong",
+   "page": "county.html?scene=shaanxi_shangyang_llm",
+   "primary_place": "qin",
+   "vocab_pack": "inline:shaanxi_shangyang_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "operational"
+  },
+  "shaanxi_zhengguoqu_llm": {
+   "key": "shaanxi_zhengguoqu_llm",
+   "scene_id": "shaanxi_zhengguoqu_llm",
+   "title": "郑国渠与秦关中水利（战国—秦）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "engineering",
+   "region": "guangzhong",
+   "page": "county.html?scene=shaanxi_zhengguoqu_llm",
+   "primary_place": "jing_shui",
+   "vocab_pack": "inline:shaanxi_zhengguoqu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "operational"
+  },
+  "shaanxi_zhouyuan_llm": {
+   "key": "shaanxi_zhouyuan_llm",
+   "scene_id": "shaanxi_zhouyuan_llm",
+   "title": "周原与西周封建肇基（西周）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "thought",
+   "region": "guangzhong",
+   "page": "county.html?scene=shaanxi_zhouyuan_llm",
+   "primary_place": "qi",
+   "vocab_pack": "inline:shaanxi_zhouyuan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "guangzhong",
+   "scale_tier": "operational"
+  },
+  "shandong_guanzhong_llm": {
+   "key": "shandong_guanzhong_llm",
+   "scene_id": "shandong_guanzhong_llm",
+   "title": "管仲相齐与齐桓公霸业（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "huabei",
+   "page": "county.html?scene=shandong_guanzhong_llm",
+   "primary_place": "qi",
+   "vocab_pack": "inline:shandong_guanzhong_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational"
+  },
+  "shanxi_jinwen_llm": {
+   "key": "shanxi_jinwen_llm",
+   "scene_id": "shanxi_jinwen_llm",
+   "title": "晋文公称霸与城濮之役（春秋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "huabei",
+   "page": "county.html?scene=shanxi_jinwen_llm",
+   "primary_place": "jin",
+   "vocab_pack": "inline:shanxi_jinwen_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    3,
+    4,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational"
+  },
+  "tianjin_xiaozhan_llm": {
+   "key": "tianjin_xiaozhan_llm",
+   "scene_id": "tianjin_xiaozhan_llm",
+   "title": "小站练兵与北洋新军（1895）",
+   "dossier_label": null,
+   "subtitle": null,
+   "kind": "reform",
+   "region": "huabei",
+   "page": "county.html?scene=tianjin_xiaozhan_llm",
+   "primary_place": "tianjin",
+   "vocab_pack": "inline:tianjin_xiaozhan_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "huabei",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28400,7 +28705,20 @@ window.SANDBOX_DATA = {
   "yunnan_gaitu_llm": "slices/yunnan_gaitu_llm.js",
   "yunnan_lianda_llm": "slices/yunnan_lianda_llm.js",
   "zhejiang_ningbo_llm": "slices/zhejiang_ningbo_llm.js",
-  "zhejiang_yongjia_llm": "slices/zhejiang_yongjia_llm.js"
+  "zhejiang_yongjia_llm": "slices/zhejiang_yongjia_llm.js",
+  "beijing_beping_llm": "slices/beijing_beping_llm.js",
+  "beijing_jinghan_llm": "slices/beijing_jinghan_llm.js",
+  "hebei_kailuan_llm": "slices/hebei_kailuan_llm.js",
+  "hebei_zhili_llm": "slices/hebei_zhili_llm.js",
+  "henan_zhengzhuang_llm": "slices/henan_zhengzhuang_llm.js",
+  "hubei_chuwu_llm": "slices/hubei_chuwu_llm.js",
+  "shaanxi_hanchang_llm": "slices/shaanxi_hanchang_llm.js",
+  "shaanxi_shangyang_llm": "slices/shaanxi_shangyang_llm.js",
+  "shaanxi_zhengguoqu_llm": "slices/shaanxi_zhengguoqu_llm.js",
+  "shaanxi_zhouyuan_llm": "slices/shaanxi_zhouyuan_llm.js",
+  "shandong_guanzhong_llm": "slices/shandong_guanzhong_llm.js",
+  "shanxi_jinwen_llm": "slices/shanxi_jinwen_llm.js",
+  "tianjin_xiaozhan_llm": "slices/tianjin_xiaozhan_llm.js"
  },
  "corridors": [
   {

@@ -23,6 +23,8 @@
       "baijia",
       "beijing",
       "beijing_banner_llm",
+      "beijing_beping_llm",
+      "beijing_jinghan_llm",
       "beijing_qianjia_llm",
       "beijiu",
       "bencao",
@@ -127,15 +129,18 @@
       "han_banchao_llm",
       "han_weihuo_llm",
       "han_wudi_ruxue",
+      "hebei_kailuan_llm",
       "hebei_shanhaiguan",
       "hebei_yanzhao_wenhua_llm",
       "hebei_zhaozhou",
+      "hebei_zhili_llm",
       "hebei_zhili_xinzheng_llm",
       "heilongjiang_chuangguan_llm",
       "heilongjiang_jin",
       "heilongjiang_jin_llm",
       "heilongjiang_kanglian_llm",
       "heilongjiang_suifenhe_llm",
+      "henan_zhengzhuang_llm",
       "heshangyuan",
       "hexi_sijun_llm",
       "hongjin",
@@ -144,6 +149,7 @@
       "huanghe",
       "huangjin",
       "huaxian",
+      "hubei_chuwu_llm",
       "hubei_hankou_llm",
       "hubei_wuchang_llm",
       "hubei_zenghouyi",
@@ -245,7 +251,12 @@
       "qingli_reform_llm",
       "san_guo",
       "sarhu",
+      "shaanxi_hanchang_llm",
+      "shaanxi_shangyang_llm",
+      "shaanxi_zhengguoqu_llm",
+      "shaanxi_zhouyuan_llm",
       "shandong_canal_llm",
+      "shandong_guanzhong_llm",
       "shandong_jixia",
       "shandong_kongfu_llm",
       "shandong_kongzi",
@@ -256,6 +267,7 @@
       "shanghai_xinhai_llm",
       "shangyang",
       "shanxi_jinshang_llm",
+      "shanxi_jinwen_llm",
       "shanxi_pingyao_llm",
       "shanxi_sanjiafenjin",
       "shanxi_xunzi_llm",
@@ -317,6 +329,7 @@
       "tianjin_kaibu_llm",
       "tianjin_railway_llm",
       "tianjin_tianjinwei",
+      "tianjin_xiaozhan_llm",
       "tianjin_yanfu_llm",
       "tianjing",
       "tieling",
@@ -677,6 +690,43 @@
       "event_count": 1,
       "avg_resonance": 0.0,
       "best_event": "event:ev_beijing_banner_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "beijing_beping_llm",
+      "name": "beijing_beping_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 9,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_beijing_beping_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "beijing_jinghan_llm",
+      "name": "beijing_jinghan_llm",
+      "total": 13,
+      "layers": {
+        "record": 10,
+        "gap": 2,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_beijing_jinghan_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -2655,6 +2705,25 @@
       "best_resonance": null
     },
     {
+      "scene": "hebei_kailuan_llm",
+      "name": "hebei_kailuan_llm",
+      "total": 18,
+      "layers": {
+        "inference": 1,
+        "record": 14,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 18
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_hebei_kailuan_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "hebei_shanhaiguan",
       "name": "hebei_shanhaiguan",
       "total": 14,
@@ -2709,6 +2778,25 @@
       "event_count": 1,
       "avg_resonance": 0.0,
       "best_event": "event:ev_hebei_zhaozhou_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "hebei_zhili_llm",
+      "name": "hebei_zhili_llm",
+      "total": 13,
+      "layers": {
+        "inference": 1,
+        "record": 10,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 13
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_hebei_zhili_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -2823,6 +2911,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_heilongjiang_suifenhe_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "henan_zhengzhuang_llm",
+      "name": "henan_zhengzhuang_llm",
+      "total": 14,
+      "layers": {
+        "inference": 1,
+        "record": 8,
+        "scholarship": 3,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_henan_zhengzhuang_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -2983,6 +3090,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:hx_after",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "hubei_chuwu_llm",
+      "name": "hubei_chuwu_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 7,
+        "scholarship": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_hubei_chuwu_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -4925,6 +5051,82 @@
       "best_resonance": 0.667
     },
     {
+      "scene": "shaanxi_hanchang_llm",
+      "name": "shaanxi_hanchang_llm",
+      "total": 15,
+      "layers": {
+        "record": 8,
+        "inference": 4,
+        "gap": 2,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 15
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shaanxi_hanchang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shaanxi_shangyang_llm",
+      "name": "shaanxi_shangyang_llm",
+      "total": 6,
+      "layers": {
+        "inference": 1,
+        "record": 3,
+        "scholarship": 1,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 6
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shaanxi_shangyang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shaanxi_zhengguoqu_llm",
+      "name": "shaanxi_zhengguoqu_llm",
+      "total": 14,
+      "layers": {
+        "record": 10,
+        "inference": 1,
+        "scholarship": 1,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shaanxi_zhengguoqu_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shaanxi_zhouyuan_llm",
+      "name": "shaanxi_zhouyuan_llm",
+      "total": 14,
+      "layers": {
+        "record": 9,
+        "inference": 2,
+        "scholarship": 2,
+        "gap": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shaanxi_zhouyuan_llm_01",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "shandong_canal_llm",
       "name": "shandong_canal_llm",
       "total": 12,
@@ -4941,6 +5143,25 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:ev_shandong_canal_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shandong_guanzhong_llm",
+      "name": "shandong_guanzhong_llm",
+      "total": 12,
+      "layers": {
+        "inference": 1,
+        "record": 7,
+        "scholarship": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shandong_guanzhong_llm_02",
       "best_resonance": 0.0
     },
     {
@@ -5136,6 +5357,25 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:ev_shanxi_jinshang_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "shanxi_jinwen_llm",
+      "name": "shanxi_jinwen_llm",
+      "total": 14,
+      "layers": {
+        "record": 9,
+        "inference": 2,
+        "gap": 2,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 14
+      },
+      "faction_counts": {},
+      "event_count": 2,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_shanxi_jinwen_llm_02",
       "best_resonance": 0.0
     },
     {
@@ -6309,6 +6549,25 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:ev_tianjin_tianjinwei_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "tianjin_xiaozhan_llm",
+      "name": "tianjin_xiaozhan_llm",
+      "total": 10,
+      "layers": {
+        "inference": 1,
+        "record": 6,
+        "gap": 2,
+        "scholarship": 1
+      },
+      "party_counts": {
+        "后世官修": 10
+      },
+      "faction_counts": {},
+      "event_count": 1,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_tianjin_xiaozhan_llm_01",
       "best_resonance": 0.0
     },
     {
@@ -10945,6 +11204,130 @@
       ],
       "total": 5,
       "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_beping_llm_01",
+      "name": "event:ev_beijing_beping_llm_01",
+      "scenes": [
+        "beijing_beping_llm"
+      ],
+      "scene_names": [
+        "beijing_beping_llm"
+      ],
+      "total": 7,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.143,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_beping_llm_02",
+      "name": "event:ev_beijing_beping_llm_02",
+      "scenes": [
+        "beijing_beping_llm"
+      ],
+      "scene_names": [
+        "beijing_beping_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_jinghan_llm_01",
+      "name": "event:ev_beijing_jinghan_llm_01",
+      "scenes": [
+        "beijing_jinghan_llm"
+      ],
+      "scene_names": [
+        "beijing_jinghan_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_beijing_jinghan_llm_02",
+      "name": "event:ev_beijing_jinghan_llm_02",
+      "scenes": [
+        "beijing_jinghan_llm"
+      ],
+      "scene_names": [
+        "beijing_jinghan_llm"
+      ],
+      "total": 10,
+      "gap_count": 2,
       "coverage": "0/3",
       "coverage_frac": 0.0,
       "divergence": 0.0,
@@ -16019,6 +16402,68 @@
       }
     },
     {
+      "subject": "event:ev_hebei_kailuan_llm_01",
+      "name": "event:ev_hebei_kailuan_llm_01",
+      "scenes": [
+        "hebei_kailuan_llm"
+      ],
+      "scene_names": [
+        "hebei_kailuan_llm"
+      ],
+      "total": 5,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hebei_kailuan_llm_02",
+      "name": "event:ev_hebei_kailuan_llm_02",
+      "scenes": [
+        "hebei_kailuan_llm"
+      ],
+      "scene_names": [
+        "hebei_kailuan_llm"
+      ],
+      "total": 12,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.083,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_hebei_shanhaiguan_01",
       "name": "event:ev_hebei_shanhaiguan_01",
       "scenes": [
@@ -16095,6 +16540,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.071,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hebei_zhili_llm_01",
+      "name": "event:ev_hebei_zhili_llm_01",
+      "scenes": [
+        "hebei_zhili_llm"
+      ],
+      "scene_names": [
+        "hebei_zhili_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hebei_zhili_llm_02",
+      "name": "event:ev_hebei_zhili_llm_02",
+      "scenes": [
+        "hebei_zhili_llm"
+      ],
+      "scene_names": [
+        "hebei_zhili_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hebei_zhili_llm_03",
+      "name": "event:ev_hebei_zhili_llm_03",
+      "scenes": [
+        "hebei_zhili_llm"
+      ],
+      "scene_names": [
+        "hebei_zhili_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -16639,6 +17177,99 @@
       }
     },
     {
+      "subject": "event:ev_henan_zhengzhuang_llm_01",
+      "name": "event:ev_henan_zhengzhuang_llm_01",
+      "scenes": [
+        "henan_zhengzhuang_llm"
+      ],
+      "scene_names": [
+        "henan_zhengzhuang_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 1.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_henan_zhengzhuang_llm_02",
+      "name": "event:ev_henan_zhengzhuang_llm_02",
+      "scenes": [
+        "henan_zhengzhuang_llm"
+      ],
+      "scene_names": [
+        "henan_zhengzhuang_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_henan_zhengzhuang_llm_03",
+      "name": "event:ev_henan_zhengzhuang_llm_03",
+      "scenes": [
+        "henan_zhengzhuang_llm"
+      ],
+      "scene_names": [
+        "henan_zhengzhuang_llm"
+      ],
+      "total": 6,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_hexi_sijun_llm_01",
       "name": "event:ev_hexi_sijun_llm_01",
       "scenes": [
@@ -16839,6 +17470,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hubei_chuwu_llm_01",
+      "name": "event:ev_hubei_chuwu_llm_01",
+      "scenes": [
+        "hubei_chuwu_llm"
+      ],
+      "scene_names": [
+        "hubei_chuwu_llm"
+      ],
+      "total": 8,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.125,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_hubei_chuwu_llm_02",
+      "name": "event:ev_hubei_chuwu_llm_02",
+      "scenes": [
+        "hubei_chuwu_llm"
+      ],
+      "scene_names": [
+        "hubei_chuwu_llm"
+      ],
+      "total": 4,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.25,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -22157,6 +22850,285 @@
       }
     },
     {
+      "subject": "event:ev_shaanxi_hanchang_llm_01",
+      "name": "event:ev_shaanxi_hanchang_llm_01",
+      "scenes": [
+        "shaanxi_hanchang_llm"
+      ],
+      "scene_names": [
+        "shaanxi_hanchang_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_hanchang_llm_02",
+      "name": "event:ev_shaanxi_hanchang_llm_02",
+      "scenes": [
+        "shaanxi_hanchang_llm"
+      ],
+      "scene_names": [
+        "shaanxi_hanchang_llm"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_shangyang_llm_01",
+      "name": "event:ev_shaanxi_shangyang_llm_01",
+      "scenes": [
+        "shaanxi_shangyang_llm"
+      ],
+      "scene_names": [
+        "shaanxi_shangyang_llm"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 1.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_shangyang_llm_02",
+      "name": "event:ev_shaanxi_shangyang_llm_02",
+      "scenes": [
+        "shaanxi_shangyang_llm"
+      ],
+      "scene_names": [
+        "shaanxi_shangyang_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_zhengguoqu_llm_01",
+      "name": "event:ev_shaanxi_zhengguoqu_llm_01",
+      "scenes": [
+        "shaanxi_zhengguoqu_llm"
+      ],
+      "scene_names": [
+        "shaanxi_zhengguoqu_llm"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_zhengguoqu_llm_02",
+      "name": "event:ev_shaanxi_zhengguoqu_llm_02",
+      "scenes": [
+        "shaanxi_zhengguoqu_llm"
+      ],
+      "scene_names": [
+        "shaanxi_zhengguoqu_llm"
+      ],
+      "total": 7,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.143,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_zhouyuan_llm_01",
+      "name": "event:ev_shaanxi_zhouyuan_llm_01",
+      "scenes": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "scene_names": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_zhouyuan_llm_02",
+      "name": "event:ev_shaanxi_zhouyuan_llm_02",
+      "scenes": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "scene_names": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shaanxi_zhouyuan_llm_03",
+      "name": "event:ev_shaanxi_zhouyuan_llm_03",
+      "scenes": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "scene_names": [
+        "shaanxi_zhouyuan_llm"
+      ],
+      "total": 3,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ev_shandong_canal_llm_01",
       "name": "event:ev_shandong_canal_llm_01",
       "scenes": [
@@ -22202,6 +23174,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shandong_guanzhong_llm_02",
+      "name": "event:ev_shandong_guanzhong_llm_02",
+      "scenes": [
+        "shandong_guanzhong_llm"
+      ],
+      "scene_names": [
+        "shandong_guanzhong_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shandong_guanzhong_llm_03",
+      "name": "event:ev_shandong_guanzhong_llm_03",
+      "scenes": [
+        "shandong_guanzhong_llm"
+      ],
+      "scene_names": [
+        "shandong_guanzhong_llm"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -22848,6 +23882,68 @@
         "shanxi_jinshang_llm"
       ],
       "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shanxi_jinwen_llm_02",
+      "name": "event:ev_shanxi_jinwen_llm_02",
+      "scenes": [
+        "shanxi_jinwen_llm"
+      ],
+      "scene_names": [
+        "shanxi_jinwen_llm"
+      ],
+      "total": 4,
+      "gap_count": 2,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_shanxi_jinwen_llm_03",
+      "name": "event:ev_shanxi_jinwen_llm_03",
+      "scenes": [
+        "shanxi_jinwen_llm"
+      ],
+      "scene_names": [
+        "shanxi_jinwen_llm"
+      ],
+      "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -26666,6 +27762,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_tianjin_xiaozhan_llm_01",
+      "name": "event:ev_tianjin_xiaozhan_llm_01",
+      "scenes": [
+        "tianjin_xiaozhan_llm"
+      ],
+      "scene_names": [
+        "tianjin_xiaozhan_llm"
+      ],
+      "total": 10,
+      "gap_count": 2,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.2,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

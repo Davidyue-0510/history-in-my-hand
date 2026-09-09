@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hebei_kailuan_llm_01",
+   "subject": "event:ev_hebei_kailuan_llm_01",
+   "year": 1877,
+   "era": "光绪三年",
+   "title": "开平煤矿创办",
+   "kind": "建置",
+   "text": "唐廷枢招股开矿，用西法开采。",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hebei_kailuan_llm_02",
+   "subject": "event:ev_hebei_kailuan_llm_02",
+   "year": 1922,
+   "era": "民国十一年",
+   "title": "开滦五矿大罢工",
+   "kind": "其他",
+   "text": "矿工罢工争矿权、争待遇。",
+   "_source_idx": 0,
+   "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

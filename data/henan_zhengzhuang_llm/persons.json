@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "HEN__p01",
+   "name": "郑庄公",
+   "role": "郑国国君",
+   "note": "名寤生，春秋初期郑国君主，开创小霸局面。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEN__p02",
+   "name": "周桓王",
+   "role": "东周天子",
+   "note": "繻葛之战中被郑军射中肩膀，王权衰落标志。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEN__p03",
+   "name": "共叔段",
+   "role": "郑庄公之弟",
+   "note": "封于京，叛乱被庄公击败于鄢。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HEN__p04",
+   "name": "武姜",
+   "role": "郑庄公之母",
+   "note": "偏爱共叔段，与庄公不和，后黄泉见母。",
+   "_source_idx": 0,
+   "_source_name": "左传·隐公 / 郑伯克段于鄢",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

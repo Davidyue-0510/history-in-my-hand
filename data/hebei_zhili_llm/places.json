@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "zhili",
+      "name": "直隶省",
+      "type": "region",
+      "modern": "今中国河北省及周边",
+      "note": "清代省级行政区",
+      "_source_idx": 0,
+      "_source_name": "清史稿·职官志 / 直隶通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baoding",
+      "name": "保定",
+      "type": "city",
+      "modern": "今中国河北省保定市",
+      "note": "直隶总督驻地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·职官志 / 直隶通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "今中国天津市",
+      "note": "北洋通商大臣驻地",
+      "_source_idx": 0,
+      "_source_name": "清史稿·职官志 / 直隶通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    }
+  ]
+}

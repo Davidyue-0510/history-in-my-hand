@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_beijing_jinghan_llm_01",
+   "subject": "event:ev_beijing_jinghan_llm_01",
+   "year": 1923,
+   "era": "民国十二年二月",
+   "title": "京汉铁路总工会成立",
+   "kind": "其他",
+   "text": "总工会成立，号召争自由争人权",
+   "_source_idx": 0,
+   "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_beijing_jinghan_llm_02",
+   "subject": "event:ev_beijing_jinghan_llm_02",
+   "year": 1923,
+   "era": "民国十二年二月",
+   "title": "二七大罢工",
+   "kind": "其他",
+   "text": "全路罢工，遭军阀镇压",
+   "_source_idx": 0,
+   "_source_name": "中国工人运动史·二七大罢工 / 京汉铁路总工会宣言",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

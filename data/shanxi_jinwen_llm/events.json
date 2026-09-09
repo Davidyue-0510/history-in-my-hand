@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_jinwen_llm_02",
+   "subject": "event:ev_shanxi_jinwen_llm_02",
+   "year": -632,
+   "era": "周襄王二十年",
+   "title": "城濮之战",
+   "kind": "战事",
+   "text": "晋楚战于城濮，楚军败绩。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_jinwen_llm_03",
+   "subject": "event:ev_shanxi_jinwen_llm_03",
+   "year": -632,
+   "era": "周襄王二十年",
+   "title": "践土之盟",
+   "kind": "外交",
+   "text": "晋文公会盟诸侯，天子策命为侯伯。",
+   "_source_idx": 0,
+   "_source_name": "左传·僖公 / 国语·晋语",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_xiaozhan_llm_01",
+   "subject": "event:ev_tianjin_xiaozhan_llm_01",
+   "year": 1895,
+   "era": "光绪二十一年",
+   "title": "小站练兵",
+   "kind": "建置",
+   "text": "袁世凯于天津小站编练新建陆军",
+   "_source_idx": 0,
+   "_source_name": "袁世凯奏稿·新建陆军创练章程 / 北洋练兵处档",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

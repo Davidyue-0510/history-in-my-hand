@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shaanxi_zhengguoqu_llm_01",
+   "subject": "event:ev_shaanxi_zhengguoqu_llm_01",
+   "year": -246,
+   "era": "秦王政元年",
+   "title": "郑国受命间秦",
+   "kind": "其他",
+   "text": "韩遣水工郑国入秦，劝凿泾水",
+   "_source_idx": 0,
+   "_source_name": "史记·河渠书 / 水经注·泾水",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shaanxi_zhengguoqu_llm_02",
+   "subject": "event:ev_shaanxi_zhengguoqu_llm_02",
+   "year": -237,
+   "era": "秦王政十年",
+   "title": "郑国渠成",
+   "kind": "建置",
+   "text": "渠成，溉田四万顷，亩收一钟",
+   "_source_idx": 0,
+   "_source_name": "史记·河渠书 / 水经注·泾水",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

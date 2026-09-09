@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "xiaozhan",
+      "name": "小站",
+      "type": "yi",
+      "modern": "今中国天津市津南区",
+      "note": "练兵驻地",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏稿·新建陆军创练章程 / 北洋练兵处档",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "今中国天津",
+      "note": "小站所在地",
+      "_source_idx": 0,
+      "_source_name": "袁世凯奏稿·新建陆军创练章程 / 北洋练兵处档",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    }
+  ]
+}

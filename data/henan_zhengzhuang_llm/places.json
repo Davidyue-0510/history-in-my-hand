@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "yan",
+      "name": "鄢",
+      "type": "city",
+      "modern": "今中国河南省鄢陵县",
+      "note": "共叔段败逃之地。",
+      "_source_idx": 0,
+      "_source_name": "左传·隐公 / 郑伯克段于鄢",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zheng",
+      "name": "郑",
+      "type": "region",
+      "modern": "今中国河南省新郑市一带",
+      "note": "郑国都城所在。",
+      "_source_idx": 0,
+      "_source_name": "左传·隐公 / 郑伯克段于鄢",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xuge",
+      "name": "繻葛",
+      "type": "fortress",
+      "modern": "今中国河南省长葛市",
+      "note": "周郑交战之地。",
+      "_source_idx": 0,
+      "_source_name": "左传·隐公 / 郑伯克段于鄢",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

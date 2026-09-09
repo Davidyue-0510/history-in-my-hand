@@ -1,9 +1,9 @@
 {
-  "scenes_total": 400,
-  "historical": 391,
+  "scenes_total": 413,
+  "historical": 404,
   "fictional": 9,
-  "assertions_total": 5940,
-  "sources_total": 377,
+  "assertions_total": 6107,
+  "sources_total": 390,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -18,6 +18,8 @@
     "aomen_portugal_llm",
     "aomen_stpaul_llm",
     "beijing_banner_llm",
+    "beijing_beping_llm",
+    "beijing_jinghan_llm",
     "beijing_qianjia_llm",
     "bisheng_movable_type",
     "bohai_kingdom_llm",
@@ -82,17 +84,21 @@
     "hainan_zhuyai_llm",
     "han_banchao_llm",
     "han_weihuo_llm",
+    "hebei_kailuan_llm",
     "hebei_shanhaiguan",
     "hebei_yanzhao_wenhua_llm",
     "hebei_zhaozhou",
+    "hebei_zhili_llm",
     "hebei_zhili_xinzheng_llm",
     "heilongjiang_chuangguan_llm",
     "heilongjiang_jin",
     "heilongjiang_jin_llm",
     "heilongjiang_kanglian_llm",
     "heilongjiang_suifenhe_llm",
+    "henan_zhengzhuang_llm",
     "hexi_sijun_llm",
     "huangdaopo_llm",
+    "hubei_chuwu_llm",
     "hubei_hankou_llm",
     "hubei_wuchang_llm",
     "hubei_zenghouyi",
@@ -158,7 +164,12 @@
     "qinghai_zongkaba_llm",
     "qingli_reform_llm",
     "san_guo",
+    "shaanxi_hanchang_llm",
+    "shaanxi_shangyang_llm",
+    "shaanxi_zhengguoqu_llm",
+    "shaanxi_zhouyuan_llm",
     "shandong_canal_llm",
+    "shandong_guanzhong_llm",
     "shandong_jixia",
     "shandong_kongfu_llm",
     "shandong_kongzi",
@@ -168,6 +179,7 @@
     "shanghai_xiaodaohui_llm",
     "shanghai_xinhai_llm",
     "shanxi_jinshang_llm",
+    "shanxi_jinwen_llm",
     "shanxi_pingyao_llm",
     "shanxi_sanjiafenjin",
     "shanxi_xunzi_llm",
@@ -215,6 +227,7 @@
     "tianjin_kaibu_llm",
     "tianjin_railway_llm",
     "tianjin_tianjinwei",
+    "tianjin_xiaozhan_llm",
     "tianjin_yanfu_llm",
     "wangmang_reform_llm",
     "wangyangming",
@@ -265,7 +278,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 529,
+  "leads_total": 550,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3117,6 +3130,97 @@
       "kind": "thought",
       "assertions": 16,
       "factions": {}
+    },
+    {
+      "id": "beijing_beping_llm",
+      "title": "北平和平解放（1949）",
+      "kind": "court",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "beijing_jinghan_llm",
+      "title": "京汉铁路与二七大罢工（1923）",
+      "kind": "uprising",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "hebei_kailuan_llm",
+      "title": "开滦煤矿与华北工人运动（清—民国）",
+      "kind": "social",
+      "assertions": 18,
+      "factions": {}
+    },
+    {
+      "id": "hebei_zhili_llm",
+      "title": "直隶总督与直隶省（清）",
+      "kind": "court",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "henan_zhengzhuang_llm",
+      "title": "郑庄公小霸与王纲解纽（春秋）",
+      "kind": "court",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "hubei_chuwu_llm",
+      "title": "楚武王称王与荆楚扩张（春秋）",
+      "kind": "dynasty",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "shaanxi_hanchang_llm",
+      "title": "汉长安与关中之漕（汉）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "shaanxi_shangyang_llm",
+      "title": "秦孝公商鞅变法（战国）",
+      "kind": "reform",
+      "assertions": 6,
+      "factions": {}
+    },
+    {
+      "id": "shaanxi_zhengguoqu_llm",
+      "title": "郑国渠与秦关中水利（战国—秦）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shaanxi_zhouyuan_llm",
+      "title": "周原与西周封建肇基（西周）",
+      "kind": "thought",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "shandong_guanzhong_llm",
+      "title": "管仲相齐与齐桓公霸业（春秋）",
+      "kind": "reform",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "shanxi_jinwen_llm",
+      "title": "晋文公称霸与城濮之役（春秋）",
+      "kind": "reform",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_xiaozhan_llm",
+      "title": "小站练兵与北洋新军（1895）",
+      "kind": "reform",
+      "assertions": 10,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3519,6 +3623,19 @@
     "yunnan_gaitu_llm": "改土归流与云南边疆土司社会（清）",
     "yunnan_lianda_llm": "西南联大与战时自由主义学术（1937—1946）",
     "zhejiang_ningbo_llm": "宁波帮与近代金融商帮社会（清—民国）",
-    "zhejiang_yongjia_llm": "永嘉事功学派·陈亮叶适（宋）"
+    "zhejiang_yongjia_llm": "永嘉事功学派·陈亮叶适（宋）",
+    "beijing_beping_llm": "北平和平解放（1949）",
+    "beijing_jinghan_llm": "京汉铁路与二七大罢工（1923）",
+    "hebei_kailuan_llm": "开滦煤矿与华北工人运动（清—民国）",
+    "hebei_zhili_llm": "直隶总督与直隶省（清）",
+    "henan_zhengzhuang_llm": "郑庄公小霸与王纲解纽（春秋）",
+    "hubei_chuwu_llm": "楚武王称王与荆楚扩张（春秋）",
+    "shaanxi_hanchang_llm": "汉长安与关中之漕（汉）",
+    "shaanxi_shangyang_llm": "秦孝公商鞅变法（战国）",
+    "shaanxi_zhengguoqu_llm": "郑国渠与秦关中水利（战国—秦）",
+    "shaanxi_zhouyuan_llm": "周原与西周封建肇基（西周）",
+    "shandong_guanzhong_llm": "管仲相齐与齐桓公霸业（春秋）",
+    "shanxi_jinwen_llm": "晋文公称霸与城濮之役（春秋）",
+    "tianjin_xiaozhan_llm": "小站练兵与北洋新军（1895）"
   }
 }

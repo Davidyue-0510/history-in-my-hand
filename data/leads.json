@@ -285,6 +285,51 @@
    "_src_line": 8
   },
   {
+   "id": "BEI_010",
+   "scene": "beijing_beping_llm",
+   "subject": "event:ev_beijing_beping_llm_01",
+   "title": "具体谈判过程不详",
+   "missing": "档案研究",
+   "where": "北平",
+   "skills": [
+    "档案研究"
+   ],
+   "accept": "补充谈判过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "BEI_011",
+   "scene": "beijing_jinghan_llm",
+   "subject": "event:ev_beijing_jinghan_llm_02",
+   "title": "具体伤亡未详",
+   "missing": "档案检索",
+   "where": "中国第二历史档案馆",
+   "skills": [
+    "档案检索"
+   ],
+   "accept": "官方伤亡报告",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "BEI_012",
+   "scene": "beijing_jinghan_llm",
+   "subject": "event:ev_beijing_jinghan_llm_02",
+   "title": "具体镇压过程未详",
+   "missing": "方志研究",
+   "where": "地方志",
+   "skills": [
+    "方志研究"
+   ],
+   "accept": "地方记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "BEI_013",
    "scene": "beijing_qianjia_llm",
    "subject": "event:ev_beijing_qianjia_llm_02",
@@ -2367,6 +2412,22 @@
    "_src_line": 9
   },
   {
+   "id": "HEB_018",
+   "scene": "hebei_kailuan_llm",
+   "subject": "event:ev_hebei_kailuan_llm_02",
+   "title": "结果不明",
+   "missing": "历史学 / 档案学",
+   "where": "开滦档案",
+   "skills": [
+    "历史学",
+    "档案学"
+   ],
+   "accept": "罢工最终结果",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 18
+  },
+  {
    "id": "HEB_014",
    "scene": "hebei_shanhaiguan",
    "subject": "place:shanhaiguan",
@@ -2412,6 +2473,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "HEB_013",
+   "scene": "hebei_zhili_llm",
+   "subject": "place:zhili",
+   "title": "直隶洋务中心地位待考",
+   "missing": "洋务运动史 / 晚清政治制度",
+   "where": "直隶省",
+   "skills": [
+    "洋务运动史",
+    "晚清政治制度"
+   ],
+   "accept": "直隶洋务具体项目清单",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "HEB_012",
@@ -2538,6 +2615,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "HEN_013",
+   "scene": "henan_zhengzhuang_llm",
+   "subject": "event:ev_henan_zhengzhuang_llm_03",
+   "title": "周联军伐郑兵力不详",
+   "missing": "军事史 / 文献考据",
+   "where": "左传、史记相关篇章",
+   "skills": [
+    "军事史",
+    "文献考据"
+   ],
+   "accept": "周联军具体兵力数字",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "HEN_014",
+   "scene": "henan_zhengzhuang_llm",
+   "subject": "person:HEN__p01",
+   "title": "寤生继位存争议",
+   "missing": "训诂学 / 先秦史",
+   "where": "春秋经传集解",
+   "skills": [
+    "训诂学",
+    "先秦史"
+   ],
+   "accept": "寤生确切含义",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "GAP_EXPAND",
@@ -2789,6 +2898,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 9
+  },
+  {
+   "id": "HUB_009",
+   "scene": "hubei_chuwu_llm",
+   "subject": "event:ev_hubei_chuwu_llm_02",
+   "title": "随国被迫屈服，未详载",
+   "missing": "古文字学 / 考古学",
+   "where": "随国史书或考古发现",
+   "skills": [
+    "古文字学",
+    "考古学"
+   ],
+   "accept": "随国对楚伐的应对细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
+  },
+  {
+   "id": "HUB_012",
+   "scene": "hubei_chuwu_llm",
+   "subject": "event:ev_hubei_chuwu_llm_01",
+   "title": "周室未予承认，亦未讨伐",
+   "missing": "金文学 / 历史文献学",
+   "where": "周代金文或诸侯盟书",
+   "skills": [
+    "金文学",
+    "历史文献学"
+   ],
+   "accept": "周室对楚称王的应对",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "HUB_014",
@@ -5158,6 +5299,100 @@
    "_src_line": 84
   },
   {
+   "id": "SHA_013",
+   "scene": "shaanxi_hanchang_llm",
+   "subject": "place:changan",
+   "title": "具体漕运量未载",
+   "missing": "考古学 / 历史地理",
+   "where": "汉长安城遗址",
+   "skills": [
+    "考古学",
+    "历史地理"
+   ],
+   "accept": "考古发现漕渠遗迹",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SHA_014",
+   "scene": "shaanxi_hanchang_llm",
+   "subject": "place:guanzhong",
+   "title": "郑白渠具体位置未明",
+   "missing": "水利史 / 遥感考古",
+   "where": "关中平原",
+   "skills": [
+    "水利史",
+    "遥感考古"
+   ],
+   "accept": "遥感识别古渠道",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "SHA_006",
+   "scene": "shaanxi_shangyang_llm",
+   "subject": "event:ev_shaanxi_shangyang_llm_01",
+   "title": "商鞅变法是否严苛待考",
+   "missing": "政治史 / 制度史",
+   "where": "秦国朝堂",
+   "skills": [
+    "政治史",
+    "制度史"
+   ],
+   "accept": "需查《史记·商君列传》",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 6
+  },
+  {
+   "id": "SHA_013",
+   "scene": "shaanxi_zhengguoqu_llm",
+   "subject": "event:ev_shaanxi_zhengguoqu_llm_01",
+   "title": "郑国是否主动献计",
+   "missing": "文献考据",
+   "where": "史记·河渠书",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "郑国是否主动参与疲秦",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "SHA_014",
+   "scene": "shaanxi_zhengguoqu_llm",
+   "subject": "event:ev_shaanxi_zhengguoqu_llm_02",
+   "title": "具体位置有争议",
+   "missing": "考古学",
+   "where": "考古调查",
+   "skills": [
+    "考古学"
+   ],
+   "accept": "确认瓠口遗址",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "SHA_014",
+   "scene": "shaanxi_zhouyuan_llm",
+   "subject": "event:ev_shaanxi_zhouyuan_llm_01",
+   "title": "具体年代不详",
+   "missing": "碳十四测年 / 考古类型学",
+   "where": "周原遗址考古地层",
+   "skills": [
+    "碳十四测年",
+    "考古类型学"
+   ],
+   "accept": "确定迁岐年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "SHA_011",
    "scene": "shandong_canal_llm",
    "subject": "place:daicunba",
@@ -5187,6 +5422,36 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "SHA_010",
+   "scene": "shandong_guanzhong_llm",
+   "subject": "event:ev_shandong_guanzhong_llm_03",
+   "title": "齐救卫路线未详",
+   "missing": "地理考证",
+   "where": "史料未载具体路线",
+   "skills": [
+    "地理考证"
+   ],
+   "accept": "需考古或文献补充",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "SHA_011",
+   "scene": "shandong_guanzhong_llm",
+   "subject": "person:SHA__p02",
+   "title": "称霸时间有争议",
+   "missing": "年代学",
+   "where": "不同史书纪年不同",
+   "skills": [
+    "年代学"
+   ],
+   "accept": "需比对多种史料",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
   },
   {
    "id": "SHA_015",
@@ -5373,6 +5638,36 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shanxi_jinwen_llm",
+   "subject": "event:ev_shanxi_jinwen_llm_02",
+   "title": "楚军兵力未详",
+   "missing": "军事史",
+   "where": "城濮之战",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "楚军具体兵力",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "SHA_013",
+   "scene": "shanxi_jinwen_llm",
+   "subject": "event:ev_shanxi_jinwen_llm_02",
+   "title": "具体战术未详",
+   "missing": "军事史",
+   "where": "城濮之战",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "具体战术",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "SHA_015",
@@ -6594,6 +6889,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
+  },
+  {
+   "id": "TIA_008",
+   "scene": "tianjin_xiaozhan_llm",
+   "subject": "event:ev_tianjin_xiaozhan_llm_01",
+   "title": "原始史料未注明具体出处",
+   "missing": "档案检索 / 文献考据",
+   "where": "清代档案、袁世凯奏议",
+   "skills": [
+    "档案检索",
+    "文献考据"
+   ],
+   "accept": "需查证原始出处",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 8
+  },
+  {
+   "id": "TIA_009",
+   "scene": "tianjin_xiaozhan_llm",
+   "subject": "event:ev_tianjin_xiaozhan_llm_01",
+   "title": "具体编制、装备、训练内容未详",
+   "missing": "军事史 / 档案研究",
+   "where": "《新建陆军兵略录存》等",
+   "skills": [
+    "军事史",
+    "档案研究"
+   ],
+   "accept": "需补充细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 9
   },
   {
    "id": "TIA_014",
