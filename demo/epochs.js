@@ -1910,6 +1910,103 @@ window.SANDBOX_EPOCHS = {
    ],
    "layer": "inference"
   }
+ },
+ "prc": {
+  "label": "中华人民共和国（1949–今）",
+  "status": "derived",
+  "note": "建国、社会主义改造、改革开放、社会主义市场经济、中华民族伟大复兴；基础设施与科技跨越式发展为特征。",
+  "tech": {
+   "productivity": {
+    "value": "计划经济工业体系→世界工厂→智能制造/数字经济",
+    "layer": "scholarship",
+    "basis": "技术↔生产力：从重工业优先到全产业链"
+   },
+   "energy_base": {
+    "value": "煤炭为主→多能互补+新能源(风/光/核)",
+    "layer": "scholarship"
+   },
+   "key_techs": [
+    "两弹一星",
+    "杂交水稻",
+    "高速铁路",
+    "载人航天",
+    "北斗/5G/互联网"
+   ],
+   "engineering": {
+    "value": "三峡/青藏铁路/跨海桥/超算",
+    "layer": "scholarship"
+   }
+  },
+  "international": {
+   "neighbors": [
+    "周边邻国与主要大国"
+   ],
+   "diplomatic_posture": "独立自主+多边外交/和平共处五项原则",
+   "external_threat": "冷战对峙→周边安全/技术封锁",
+   "layer": "scholarship"
+  },
+  "economy": {
+   "tax_system": "统收统支→利改税→分税制",
+   "currency": "人民币(1948发行,1996经常项目可兑换)",
+   "market_integration": "改革开放+2001入世→全国统一大市场",
+   "fiscal_health": {
+    "value": "高速增长→高质量发展/新常态",
+    "layer": "scholarship",
+    "basis": "赋税↔后勤半径：工业与基建投资驱动"
+   }
+  },
+  "society": {
+   "population_scale": "约5.4亿(1949)→14亿(2020s)",
+   "social_structure": [
+    "工农兵→城乡二元→中等收入群体扩大"
+   ],
+   "standing_army_link": {
+    "value": "人民军队现代化(机械化→信息化)",
+    "layer": "scholarship",
+    "basis": "人口↔常驻军：义务兵役+科技强军"
+   },
+   "livelihood": {
+    "value": "温饱→总体小康→脱贫攻坚全面完成",
+    "layer": "scholarship"
+   }
+  },
+  "doctrine": {
+   "dominant_ideology": "马克思主义中国化/中国特色社会主义",
+   "state_religion": "无国教(宗教信仰自由)",
+   "knowledge_system": "废科举→高考→科教兴国/双一流",
+   "public_opinion": "宣传舆论+网络舆论场",
+   "layer": "scholarship"
+  },
+  "anchors": {
+   "key_institutions": [
+    "党中央/国务院",
+    "全国人大",
+    "国有企业"
+   ],
+   "geographic_pivots": [
+    "北京"
+   ],
+   "critical_nodes": [
+    "深圳/上海/沿海开放带",
+    "成渝/中西部"
+   ],
+   "layer": "scholarship"
+  },
+  "strategic": {
+   "grand_strategy": "和平发展/民族复兴/双循环",
+   "center_of_gravity": "北京",
+   "vulnerabilities": [
+    "发展不平衡不充分",
+    "关键核心技术外部依赖",
+    "地缘压力"
+   ],
+   "windows": [
+    "1978 改革开放",
+    "2001 入世",
+    "2013 一带一路/命运共同体"
+   ],
+   "layer": "inference"
+  }
  }
 };
 window.SANDBOX_DATA.epochs = window.SANDBOX_EPOCHS;
