@@ -1079,6 +1079,54 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "DL_G01",
+   "scene": "dali",
+   "subject": "place:taihe_cheng",
+   "title": "太和城与羊苴咩城城墙、宫殿、街坊的具体结构与范围，考古与文献缺载",
+   "missing": "考古 / 方志",
+   "where": "太和城/羊苴咩城城址考古",
+   "skills": [
+    "考古",
+    "方志"
+   ],
+   "accept": "需大理地区考古报告与方志互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "DL_G02",
+   "scene": "dali",
+   "subject": "place:dali_cheng",
+   "title": "三十七部具体名称、分布与联盟机制史料残缺，仅见概称",
+   "missing": "考据 / 民族史",
+   "where": "三十七部族名、地望与联盟",
+   "skills": [
+    "考据",
+    "民族史"
+   ],
+   "accept": "需大理国碑刻、元史与地方志对勘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "DL_G03",
+   "scene": "dali",
+   "subject": "event:ev_dali_03",
+   "title": "1253年蒙古入大理之具体行军路线、兵力与战损不明",
+   "missing": "考据 / 军事史",
+   "where": "蒙古灭大理行军路线与兵力",
+   "skills": [
+    "考据",
+    "军事史"
+   ],
+   "accept": "需元史、地方志与GIS对勘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "DLH012",
    "scene": "dalinghe",
    "subject": "event:dalinghe_campaign",

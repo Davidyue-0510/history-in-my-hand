@@ -655,7 +655,8 @@
   "prc_wuhan_bridge_llm",
   "prc_yuanlongping_llm",
   "langzhong",
-  "quanzhou"
+  "quanzhou",
+  "dali"
  ],
  "scenes": {
   "langzhong": {
@@ -815,6 +816,91 @@
      ],
      "layer": "inference",
      "note": "地理+制度→泉州扼海上丝路东端，辖澎湖控东海—南海通道"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "dali": {
+   "kind": "county",
+   "region": "yunnan",
+   "province": "yunnan",
+   "title": "大理（苍洱之地·南诏大理国）",
+   "dossier_label": "大理",
+   "subtitle": "苍山洱海 · 南诏统一 · 大理国都 · 佛儒并存",
+   "primary_place": "dali_cheng",
+   "dossier_event": "event:ev_dali_02",
+   "vocab_pack": "dali",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "大理地处云南西部苍洱之间，738 年南诏统一六诏、937 年段思平建大理国、1253 年蒙古灭大理。下方为统一、建国与灭亡三条主线。",
+   "parties_note": "史料以大理府志、蛮书、元史为本，现代考订作学界补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_dali_01": "统一六诏",
+    "event:ev_dali_02": "建大理国",
+    "event:ev_dali_03": "蒙古灭大理",
+    "place:dali_cheng": "大理城",
+    "place:taihe_cheng": "太和城",
+    "person:duansiping": "段思平"
+   },
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "佛儒并存+六赕/部落混合治理→南诏大理国长期维持边疆自治"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "苍山—洱海走廊的农耕/渔猎/冶金技术+都邑制度→支撑地方政权"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "白蛮/乌蛮/三十七部多元族群+段高联姻→边疆贵族社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "苍洱形胜+唐/吐蕃/宋三方博弈→南诏大理维持西南缓冲"
     }
    },
    "dims": [

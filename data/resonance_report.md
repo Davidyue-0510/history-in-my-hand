@@ -64,6 +64,7 @@
 | compass_navigation | 10 | 0 | **0.000** | —（0.000） | gap 1 / inference 2 / record 4 / scholarship 3 |
 | cross_dynastic_crops_llm | 12 | 2 | **0.000** | event:ev_cross_dynastic_crops_llm_01（0.000） | gap 2 / inference 1 / record 7 / scholarship 2 |
 | dagukou_battle_llm | 14 | 5 | **0.000** | event:ev_dagukou_battle_llm_01（0.000） | gap 4 / inference 1 / record 8 / scholarship 1 |
+| dali | 17 | 3 | **0.000** | event:ev_dali_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | dalinghe | 13 | 6 | **0.268** | event:dalinghe_build（0.333） | gap 1 / record 11 / scholarship 1 |
 | dangar_chama_llm | 12 | 2 | **0.000** | event:ev_dangar_chama_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | diaoyucheng | 18 | 3 | **0.000** | event:dy_jz（0.000） | gap 2 / inference 4 / record 8 / scholarship 4 |
@@ -634,6 +635,9 @@
 | event:ev_dagukou_battle_llm_03 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.50 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_dagukou_battle_llm_04 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_dagukou_battle_llm_05 | dagukou_battle_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dali_01 | dali | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dali_02 | dali | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_dali_03 | dali | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_dangar_chama_llm_01 | dangar_chama_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_dangar_chama_llm_02 | dangar_chama_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_dongbei_kanglian_llm_01 | dongbei_kanglian_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |

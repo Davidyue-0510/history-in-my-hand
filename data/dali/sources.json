@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "dali_fuzhi",
+      "title": "大理府志",
+      "party": "后世官修",
+      "distance_label": "明/清屡修，距南诏大理事约 500–1000 年",
+      "stance_label": "地方志·后世官修",
+      "compiler": "《大理府志》（明李元阳本及清续修本）",
+      "color": "#A0473A",
+      "period": "明/清"
+    },
+    {
+      "id": "man_shu",
+      "title": "蛮书（云南志）",
+      "party": "唐·私修",
+      "distance_label": "唐樊绰撰（咸通，约 860），距南诏事约数十年至百余年",
+      "stance_label": "唐私修西南边疆志",
+      "compiler": "樊绰（唐）",
+      "color": "#8E7CC3",
+      "period": "唐"
+    },
+    {
+      "id": "yuan_shi",
+      "title": "元史",
+      "party": "明修官史",
+      "distance_label": "1369 年修成，距元亡仅一年但史源杂糅未及考订",
+      "stance_label": "后朝官修·仓促成书",
+      "compiler": "宋濂等",
+      "color": "#6C5C3E",
+      "period": "明修"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "南诏大理国与云南历史综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

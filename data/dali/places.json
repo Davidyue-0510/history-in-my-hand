@@ -1,0 +1,64 @@
+{
+  "places": [
+    {
+      "id": "dali_cheng",
+      "name": "大理城（大理古城）",
+      "lon": 100.267, "lat": 25.606,
+      "type": "capital",
+      "modern": "今云南大理白族自治州大理市大理镇",
+      "note": "大理国后期都城所在，明清大理府城。古城核心在苍山—洱海之间。",
+      "geo_note": "approx·公开地理数据（城市级），待CHGIS精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "yangjumie",
+      "name": "羊苴咩城（大理国都）",
+      "lon": 100.255, "lat": 25.603,
+      "type": "capital",
+      "modern": "今大理古城西北约一公里",
+      "note": "大理国都城遗址，段思平937年定都于此。现存地表遗迹不彰。",
+      "geo_note": "approx·公开地理数据（遗址级，地表遗迹不显），待考古精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "taihe_cheng",
+      "name": "太和城（南诏都城）",
+      "lon": 100.197, "lat": 25.636,
+      "type": "capital",
+      "modern": "今大理市太和街道太和村西（苍山佛顶峰麓）",
+      "note": "南诏统一六诏后都城，全国重点文物保护单位。坐标据大理市文物保护单位列表（25°38′10.50″N 100°11′49.52″E）。",
+      "geo_note": "权威源·大理市文物保护单位列表/云南省全国重点文物保护单位列表，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "chongsheng_si",
+      "name": "崇圣寺三塔",
+      "lon": 100.146, "lat": 25.708,
+      "type": "temple",
+      "modern": "今大理市大理镇三文笔村北",
+      "note": "南诏—大理国佛教建筑群，第一批全国重点文物保护单位。坐标据云南省全国重点文物保护单位列表（25°42′30.56″N 100°8′45.38″E）。",
+      "geo_note": "权威源·云南省全国重点文物保护单位列表，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "cangshan",
+      "name": "苍山",
+      "lon": 100.100, "lat": 25.600,
+      "type": "mountain",
+      "modern": "今大理市西侧苍山山脉",
+      "note": "大理城西侧屏障，点苍山为南诏大理国史事与景观核心。",
+      "geo_note": "approx·公开地理数据（山脉级），待CHGIS精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "erhai",
+      "name": "洱海",
+      "lon": 100.200, "lat": 25.770,
+      "type": "lake",
+      "modern": "今大理白族自治州洱海",
+      "note": "高原断陷湖，南诏大理都城均沿湖分布，为农耕、渔猎与交通所资。",
+      "geo_note": "approx·公开地理数据（湖泊级），待CHGIS精修",
+      "geo_match": "approx"
+    }
+  ]
+}

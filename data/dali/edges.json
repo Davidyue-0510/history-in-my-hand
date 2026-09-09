@@ -1,0 +1,10 @@
+{
+  "edges": [
+    { "from": "taihe_cheng", "to": "dali_cheng", "type": "admin", "label": "南诏自太和城向羊苴咩城—大理城一线迁都、扩展" },
+    { "from": "yangjumie", "to": "dali_cheng", "type": "admin", "label": "大理国都城羊苴咩城即今大理古城西北" },
+    { "from": "cangshan", "to": "dali_cheng", "type": "geo", "label": "苍山屏障大理城西侧" },
+    { "from": "erhai", "to": "dali_cheng", "type": "geo", "label": "洱海供给农耕渔猎，都城沿湖选址" },
+    { "from": "cangshan", "to": "erhai", "type": "geo", "label": "苍山—洱海走廊构成盆地核心" },
+    { "from": "dali_cheng", "to": "chongsheng_si", "type": "mem", "label": "崇圣寺三塔为大理国佛教中心遗迹" }
+  ]
+}

@@ -63,6 +63,7 @@ window.SANDBOX_RESONANCE = {
    "compass_navigation",
    "cross_dynastic_crops_llm",
    "dagukou_battle_llm",
+   "dali",
    "dalinghe",
    "dangar_chama_llm",
    "diaoyucheng",
@@ -1445,6 +1446,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 5,
    "avg_resonance": 0.0,
    "best_event": "event:ev_dagukou_battle_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "dali",
+   "name": "dali",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 4,
+    "唐·私修": 2,
+    "明修官史": 3,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_dali_01",
    "best_resonance": 0.0
   },
   {

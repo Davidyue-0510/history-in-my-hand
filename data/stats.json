@@ -1,9 +1,9 @@
 {
-  "scenes_total": 452,
-  "historical": 443,
+  "scenes_total": 453,
+  "historical": 444,
   "fictional": 9,
-  "assertions_total": 6662,
-  "sources_total": 431,
+  "assertions_total": 6679,
+  "sources_total": 433,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -39,6 +39,7 @@
     "chuhai_llm",
     "cross_dynastic_crops_llm",
     "dagukou_battle_llm",
+    "dali",
     "dangar_chama_llm",
     "dongbei_kanglian_llm",
     "dujiangyan",
@@ -317,7 +318,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 603,
+  "leads_total": 606,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3533,6 +3534,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "dali",
+      "title": "大理（苍洱之地·南诏大理国）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3987,6 +3995,7 @@
     "prc_wuhan_bridge_llm": "武汉长江大桥（1955–1957·湖北）",
     "prc_yuanlongping_llm": "袁隆平与杂交水稻（1970–1973·湖南）",
     "langzhong": "阆中（张飞镇巴西）",
-    "quanzhou": "泉州（刺桐港·海丝起点）"
+    "quanzhou": "泉州（刺桐港·海丝起点）",
+    "dali": "大理（苍洱之地·南诏大理国）"
   }
 }
