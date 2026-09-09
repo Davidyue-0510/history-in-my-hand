@@ -1,0 +1,94 @@
+{
+  "places": [
+    {
+      "id": "quanzhou_cheng",
+      "name": "泉州城（刺桐城）",
+      "lon": 118.583, "lat": 24.907,
+      "type": "capital",
+      "modern": "今福建泉州市鲤城区（历史城区）",
+      "note": "宋元泉州府治，刺桐城。历史城区核心在开元寺—清净寺一带。",
+      "geo_note": "approx·公开地理数据（城市级，约1km），待CHGIS/天地图精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "citong_gang",
+      "name": "刺桐港（后渚港）",
+      "lon": 118.695, "lat": 24.905,
+      "type": "port",
+      "modern": "今泉州丰泽区东海·后渚港区",
+      "note": "宋元泉州外港，番舶云集。后渚港为元代主要港区之一。",
+      "geo_note": "approx·公开地理数据（港区级，约1km），待CHGIS精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "jinjiang",
+      "name": "晋江（入海口）",
+      "lon": 118.600, "lat": 24.800,
+      "type": "river",
+      "modern": "晋江下游入海口（今泉州湾南岸）",
+      "note": "晋江绕城东入海，为城舶淡水补给与内河转运所资。",
+      "geo_note": "approx·公开地理数据（河口级），待CHGIS精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "quanzhou_wan",
+      "name": "泉州湾",
+      "lon": 118.750, "lat": 24.880,
+      "type": "bay",
+      "modern": "今泉州湾（东海—洛阳江口之间）",
+      "note": "三面据海、避风良港，为刺桐港天然形胜。",
+      "geo_note": "approx·公开地理数据（海域级），待CHGIS精修",
+      "geo_match": "approx"
+    },
+    {
+      "id": "qingjing_si",
+      "name": "清净寺（艾苏哈卜寺）",
+      "lon": 118.587, "lat": 24.906,
+      "type": "mosque",
+      "modern": "今泉州鲤城区涂门街·清净寺",
+      "note": "北宋大中祥符二年（1009）阿拉伯穆斯林所建，中国现存最古清真寺之一。坐标据丝绸之路遗产数据库世遗点中心坐标（24°54′21″N 118°35′13″E）。",
+      "geo_note": "权威源·丝绸之路遗产数据库(silkroads.org.cn) 泉州世遗点中心坐标，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "kaiyuan_si",
+      "name": "开元寺",
+      "lon": 118.581, "lat": 24.917,
+      "type": "temple",
+      "modern": "今泉州鲤城区西街·开元寺",
+      "note": "唐垂拱二年（686）始建，宋元妈祖/海商供养之佛教中心。坐标据丝绸之路遗产数据库世遗点中心坐标（24°55′01″N 118°34′52″E）。",
+      "geo_note": "权威源·丝绸之路遗产数据库(silkroads.org.cn) 泉州世遗点中心坐标，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "cao_an",
+      "name": "草庵（摩尼光佛）",
+      "lon": 118.530, "lat": 24.774,
+      "type": "shrine",
+      "modern": "今晋江市罗山镇华表山·草庵",
+      "note": "世界上唯一现存摩尼教石窟造像。坐标据丝绸之路遗产数据库世遗点中心坐标（24°46′25″N 118°31′47″E）。",
+      "geo_note": "权威源·丝绸之路遗产数据库(silkroads.org.cn) 泉州世遗点中心坐标，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "luoyang_qiao",
+      "name": "洛阳桥（万安桥）",
+      "lon": 118.672, "lat": 24.958,
+      "type": "bridge",
+      "modern": "今泉州惠安县洛阳镇·洛阳桥",
+      "note": "北宋皇祐—嘉祐间（1053–1059）建，跨洛阳江入海口，海丝造桥技术代表。坐标据丝绸之路遗产数据库世遗点中心坐标（24°57′30″N 118°40′18″E）。",
+      "geo_note": "权威源·丝绸之路遗产数据库(silkroads.org.cn) 泉州世遗点中心坐标，精度遗址级",
+      "geo_match": "exact_web_heritage_db"
+    },
+    {
+      "id": "penghu",
+      "name": "澎湖",
+      "lon": 119.553, "lat": 23.571,
+      "type": "islands",
+      "modern": "今台湾省澎湖县（群岛）",
+      "note": "宋元于澎湖设巡检司，辖琉求，为泉州海丝南延与东海—南海通道节点。",
+      "geo_note": "approx·公开地理数据（群岛级），待CHGIS精修",
+      "geo_match": "approx"
+    }
+  ]
+}

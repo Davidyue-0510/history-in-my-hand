@@ -281,6 +281,7 @@ window.SANDBOX_RESONANCE = {
    "qinghai_zhaochongguo_llm",
    "qinghai_zongkaba_llm",
    "qingli_reform_llm",
+   "quanzhou",
    "san_guo",
    "sarhu",
    "shaanxi_hanchang_llm",
@@ -5615,6 +5616,30 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_qingli_reform_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "quanzhou",
+   "name": "quanzhou",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 3,
+    "元·官修": 4,
+    "明修官史": 3,
+    "宋·私修": 1,
+    "学界": 5,
+    "元·私修": 1
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_quanzhou_01",
    "best_resonance": 0.0
   },
   {

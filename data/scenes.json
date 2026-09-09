@@ -654,7 +654,8 @@
   "prc_three_gorges_llm",
   "prc_wuhan_bridge_llm",
   "prc_yuanlongping_llm",
-  "langzhong"
+  "langzhong",
+  "quanzhou"
  ],
  "scenes": {
   "langzhong": {
@@ -729,6 +730,91 @@
      ],
      "layer": "inference",
      "note": "阆中为蜀汉东北门户，北拒曹魏、连结汉中"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "quanzhou": {
+   "kind": "county",
+   "region": "jiangnan",
+   "province": "fujian",
+   "title": "泉州（刺桐港·海丝起点）",
+   "dossier_label": "泉州",
+   "subtitle": "宋元刺桐港 · 市舶司 · 蕃商云集 · 多教并存",
+   "primary_place": "quanzhou_cheng",
+   "dossier_event": "event:ev_quanzhou_01",
+   "vocab_pack": "quanzhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "泉州为宋元海上丝路东方大港，1087 年设市舶司、1276 年蒲寿庚降元、西人记其为世界大港。下方为设官、易代与西人记载三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以泉州府志、宋史、元史等后世/官修为本，诸蕃志、岛夷志略为私修航海见闻，现代考订作学界补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_quanzhou_01": "设市舶司",
+    "event:ev_quanzhou_02": "蒲寿庚降元",
+    "event:ev_quanzhou_03": "西人记大港",
+    "place:quanzhou_cheng": "泉州城",
+    "place:citong_gang": "刺桐港",
+    "person:pubaigeng": "蒲寿庚"
+   },
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "市舶司制度+海洋商贸思想→中央专营海贸税利，泉州为东方大港之基"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "造船/航海技术+市舶制度→刺桐港舟舶之利、番货堆积，海路连埃及波斯"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "蕃商番客侨居+市舶管理→多元族群社会，沿海商业化"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      3
+     ],
+     "layer": "inference",
+     "note": "地理+制度→泉州扼海上丝路东端，辖澎湖控东海—南海通道"
     }
    },
    "dims": [

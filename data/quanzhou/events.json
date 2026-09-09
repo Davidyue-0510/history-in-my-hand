@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_quanzhou_01",
+      "year": 1087,
+      "era": "元祐二年",
+      "kind": "设官",
+      "title": "复置市舶司于泉州",
+      "place": "quanzhou_cheng",
+      "text": "北宋元祐二年（1087），于泉州设福建路市舶司，掌海外贸易之征榷、博买与蕃商管理。刺桐港由此渐为东方第一大港。",
+      "subject": "event:ev_quanzhou_01"
+    },
+    {
+      "id": "ev_quanzhou_02",
+      "year": 1276,
+      "era": "景炎元年",
+      "kind": "易代",
+      "title": "蒲寿庚以泉州降元",
+      "place": "quanzhou_cheng",
+      "text": "南宋景炎元年（1276），权掌泉州市舶的蒲寿庚以城降元，市舶之利尽归于元，泉州在海丝网络中的地位不坠反盛。",
+      "subject": "event:ev_quanzhou_02"
+    },
+    {
+      "id": "ev_quanzhou_03",
+      "year": 1320,
+      "era": "元中期",
+      "kind": "交流",
+      "title": "西人记泉州为世界大港",
+      "place": "citong_gang",
+      "text": "马可波罗（约1290年代离华）、伊本·白图泰（1340年代游历）皆记述泉州（刺桐）为世界最大港口之一，番货堆积、蕃商云集。",
+      "subject": "event:ev_quanzhou_03"
+    }
+  ]
+}

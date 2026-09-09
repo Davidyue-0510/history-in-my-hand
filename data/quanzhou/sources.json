@@ -1,0 +1,65 @@
+{
+  "sources": [
+    {
+      "id": "quanzhou_fuzhi",
+      "title": "泉州府志",
+      "party": "后世官修",
+      "distance_label": "明·阳思谦等修（万历），清屡修，距宋元事约 400–700 年",
+      "stance_label": "地方志·后世官修",
+      "compiler": "《泉州府志》（万历本及清续修本）",
+      "color": "#A0473A",
+      "period": "明/清"
+    },
+    {
+      "id": "zhufanzhi",
+      "title": "诸蕃志（赵汝适）",
+      "party": "宋·私修",
+      "distance_label": "南宋赵汝适撰（宝庆，约 1225），距事最近数十年",
+      "stance_label": "南宋宗室·市舶司提举私修地理志",
+      "compiler": "赵汝适（南宋）",
+      "color": "#8E7CC3",
+      "period": "宋"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "stance_label": "后朝官修",
+      "compiler": "脱脱等（元）",
+      "color": "#6C7A89",
+      "period": "元",
+      "note": "本纪·真宗纪、寇准传载澶渊之事，元人修宋史，视角非宋当代"
+    },
+    {
+      "id": "yuan_shi",
+      "title": "元史",
+      "party": "明修官史",
+      "distance_label": "1369 年修成，距元亡仅一年但史源杂糅未及考订",
+      "stance_label": "后朝官修·仓促成书",
+      "compiler": "宋濂等",
+      "color": "#6C5C3E",
+      "period": "明修"
+    },
+    {
+      "id": "daoyi_zhilue",
+      "title": "岛夷志略（汪大渊）",
+      "party": "元·私修",
+      "distance_label": "元汪大渊撰（至正，约 1349），距事最近",
+      "stance_label": "元航海家私修海外见闻录",
+      "compiler": "汪大渊（元）",
+      "color": "#7E8CA8",
+      "period": "元"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "海上丝路与泉州港历史地理综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

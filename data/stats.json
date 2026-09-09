@@ -1,9 +1,9 @@
 {
-  "scenes_total": 451,
-  "historical": 442,
+  "scenes_total": 452,
+  "historical": 443,
   "fictional": 9,
-  "assertions_total": 6645,
-  "sources_total": 428,
+  "assertions_total": 6662,
+  "sources_total": 431,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -193,6 +193,7 @@
     "qinghai_zhaochongguo_llm",
     "qinghai_zongkaba_llm",
     "qingli_reform_llm",
+    "quanzhou",
     "san_guo",
     "shaanxi_hanchang_llm",
     "shaanxi_shangyang_llm",
@@ -316,7 +317,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 600,
+  "leads_total": 603,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3525,6 +3526,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "quanzhou",
+      "title": "泉州（刺桐港·海丝起点）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3978,6 +3986,7 @@
     "prc_three_gorges_llm": "长江三峡工程（1994–2006·湖北）",
     "prc_wuhan_bridge_llm": "武汉长江大桥（1955–1957·湖北）",
     "prc_yuanlongping_llm": "袁隆平与杂交水稻（1970–1973·湖南）",
-    "langzhong": "阆中（张飞镇巴西）"
+    "langzhong": "阆中（张飞镇巴西）",
+    "quanzhou": "泉州（刺桐港·海丝起点）"
   }
 }

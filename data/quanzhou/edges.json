@@ -1,0 +1,12 @@
+{
+  "edges": [
+    { "from": "quanzhou_cheng", "to": "citong_gang", "type": "geo", "label": "刺桐港附城为泉州外港，番舶出入" },
+    { "from": "quanzhou_cheng", "to": "jinjiang", "type": "geo", "label": "晋江绕城东入海，淡水补给与内河转运" },
+    { "from": "quanzhou_cheng", "to": "quanzhou_wan", "type": "geo", "label": "泉州湾三面据海，避风良港形胜" },
+    { "from": "quanzhou_cheng", "to": "qingjing_si", "type": "mem", "label": "清净寺为阿拉伯蕃商所建，宗教并存之证" },
+    { "from": "quanzhou_cheng", "to": "kaiyuan_si", "type": "mem", "label": "开元寺为海商供养的佛教中心" },
+    { "from": "quanzhou_cheng", "to": "cao_an", "type": "mem", "label": "草庵摩尼光佛，世界唯一摩尼教石窟造像" },
+    { "from": "quanzhou_cheng", "to": "luoyang_qiao", "type": "geo", "label": "洛阳桥跨洛阳江，海丝造桥技术代表" },
+    { "from": "quanzhou_cheng", "to": "penghu", "type": "admin", "label": "澎湖巡检司辖琉求，海丝南延控东海—南海" }
+  ]
+}

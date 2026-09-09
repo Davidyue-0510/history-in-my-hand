@@ -5765,6 +5765,54 @@
    "_src_line": 14
   },
   {
+   "id": "QZ_G01",
+   "scene": "quanzhou",
+   "subject": "place:citong_gang",
+   "title": "福船水密隔舱具体工艺与单船载重量，方志载而不详",
+   "missing": "考据 / 造船史",
+   "where": "福船水密隔舱工艺与载重量",
+   "skills": [
+    "考据",
+    "造船史"
+   ],
+   "accept": "需宋元造船考古与方志互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "QZ_G02",
+   "scene": "quanzhou",
+   "subject": "place:quanzhou_cheng",
+   "title": "蕃坊内部治理（蕃长职掌、司法自治程度）史料缺口",
+   "missing": "考据 / 海外贸易史",
+   "where": "蕃坊内部治理与蕃长职掌",
+   "skills": [
+    "考据",
+    "海外贸易史"
+   ],
+   "accept": "需宋元法令与蕃商碑刻互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "QZ_G03",
+   "scene": "quanzhou",
+   "subject": "event:ev_quanzhou_02",
+   "title": "蒲寿庚降元决策过程与兵力部署，详载缺失，仅见结果",
+   "missing": "考据 / 军事史",
+   "where": "蒲寿庚降元决策过程与兵力",
+   "skills": [
+    "考据",
+    "军事史"
+   ],
+   "accept": "需宋元之际军政史料对勘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "SG017",
    "scene": "san_guo",
    "subject": "person:liu_shan",
