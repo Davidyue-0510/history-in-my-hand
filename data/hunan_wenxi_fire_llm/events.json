@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_hunan_wenxi_fire_llm_02",
+   "subject": "event:ev_hunan_wenxi_fire_llm_02",
+   "year": 1938,
+   "era": "民国二十七年十一月十二日夜",
+   "title": "文夕大火",
+   "kind": "其他",
+   "text": "南门失火误传信号，全城举火",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_wenxi_fire_llm_03",
+   "subject": "event:ev_hunan_wenxi_fire_llm_03",
+   "year": 1938,
+   "era": "民国二十七年十一月",
+   "title": "大火延烧",
+   "kind": "其他",
+   "text": "火势蔓延三昼夜不熄",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_wenxi_fire_llm_04",
+   "subject": "event:ev_hunan_wenxi_fire_llm_04",
+   "year": 1938,
+   "era": "民国二十七年十一月",
+   "title": "善后处置",
+   "kind": "行政",
+   "text": "张治中撤职，酆悌等伏法",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

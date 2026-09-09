@@ -1,0 +1,193 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "guangdong_luofushan_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  317,
+  330
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 318,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.17（本支 0.55 / 史实 0.38）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.38,
+    "new_to": 0.553,
+    "cum": 0.173
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 319,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.26（本支 0.58 / 史实 0.32）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.32,
+    "new_to": 0.579,
+    "cum": 0.259
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 320,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.35（本支 0.61 / 史实 0.26）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.26,
+    "new_to": 0.606,
+    "cum": 0.346
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 321,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.43（本支 0.63 / 史实 0.20）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.2,
+    "new_to": 0.632,
+    "cum": 0.432
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 322,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.52（本支 0.66 / 史实 0.14）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.14,
+    "new_to": 0.659,
+    "cum": 0.519
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 323,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.60（本支 0.69 / 史实 0.08）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.08,
+    "new_to": 0.685,
+    "cum": 0.605
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 324,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.69（本支 0.71 / 史实 0.02）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.02,
+    "new_to": 0.712,
+    "cum": 0.692
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 325,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.74（本支 0.74 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.738,
+    "cum": 0.738
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 326,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.77（本支 0.76 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.765,
+    "cum": 0.765
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 327,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.79（本支 0.79 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.791,
+    "cum": 0.791
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 328,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.82（本支 0.82 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.818,
+    "cum": 0.818
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 329,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.84（本支 0.84 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.844,
+    "cum": 0.844
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 330,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.87（本支 0.87 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.871,
+    "cum": 0.871
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "summary",
+   "year": 330,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.87 / 史实 0.00（偏离 0.87）",
+   "evidence": {
+    "cum": 0.871,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jiaozhi"
+  }
+ ]
+}

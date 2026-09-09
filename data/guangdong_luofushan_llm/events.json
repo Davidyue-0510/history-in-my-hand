@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_guangdong_luofushan_llm_01",
+   "subject": "event:ev_guangdong_luofushan_llm_01",
+   "year": 330,
+   "era": "东晋咸和五年",
+   "title": "葛洪南行",
+   "kind": "其他",
+   "text": "葛洪求为勾漏令，南行至广州",
+   "_source_idx": 0,
+   "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangdong_luofushan_llm_02",
+   "subject": "event:ev_guangdong_luofushan_llm_02",
+   "year": 330,
+   "era": "东晋咸和五年",
+   "title": "止罗浮山",
+   "kind": "其他",
+   "text": "葛洪止于罗浮山炼丹著述",
+   "_source_idx": 0,
+   "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guangdong_luofushan_llm_03",
+   "subject": "event:ev_guangdong_luofushan_llm_03",
+   "year": 330,
+   "era": "东晋咸和五年",
+   "title": "著《抱朴子》",
+   "kind": "其他",
+   "text": "著《抱朴子》内外篇",
+   "_source_idx": 0,
+   "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

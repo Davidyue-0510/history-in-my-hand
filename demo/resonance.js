@@ -85,6 +85,8 @@ window.SANDBOX_RESONANCE = {
    "guandu",
    "guandu_llm",
    "guangdong_guangzhou",
+   "guangdong_luofushan_llm",
+   "guangdong_nanhai_maritime_llm",
    "guangdong_nanyue",
    "guangning",
    "guangxi_lingqu",
@@ -94,6 +96,8 @@ window.SANDBOX_RESONANCE = {
    "guangxi_zhennanguan_llm",
    "guangxi_zhuangzu_llm",
    "guiling",
+   "guizhou_jianxing_llm",
+   "guizhou_minority_craft_llm",
    "guizhou_shexiang_llm",
    "guizhou_tianlongshan_llm",
    "guizhou_yelang",
@@ -135,6 +139,8 @@ window.SANDBOX_RESONANCE = {
    "humen",
    "hunan_changsha_llm",
    "hunan_mawangdui_llm",
+   "hunan_wenxi_fire_llm",
+   "hunan_xiangjun_llm",
    "hunan_yuelu",
    "imjin",
    "jiangxi_bailudong",
@@ -195,10 +201,12 @@ window.SANDBOX_RESONANCE = {
    "neimenggu_liao",
    "neimenggu_zhaojun_llm",
    "ningxia",
+   "ningxia_dangxiang_llm",
    "ningxia_lingzhou_llm",
    "ningxia_xiaoguan_llm",
    "ningxia_xixia",
    "ningxia_xixia_llm",
+   "ningxia_xixia_tomb_llm",
    "ningyuan",
    "nongzhigao_llm",
    "pingbo_zhiyi_llm",
@@ -235,9 +243,11 @@ window.SANDBOX_RESONANCE = {
    "shenkuo",
    "shenyang",
    "shu_han_found_llm",
+   "sichuan_bashu_bronze_llm",
    "sichuan_chuanzong_huguang_llm",
    "sichuan_dujiangyan_llm",
    "sichuan_gaitu_guizhou_llm",
+   "sichuan_libai_llm",
    "sichuan_zhuge",
    "song_chan_yuan",
    "song_chanchuan_llm",
@@ -272,9 +282,11 @@ window.SANDBOX_RESONANCE = {
    "tang_liangshuifa",
    "tang_xuanwumen_llm",
    "three_campaigns",
+   "tianjin_concession_llm",
    "tianjin_jiaoan_llm",
    "tianjin_jiqiju_llm",
    "tianjin_kaibu_llm",
+   "tianjin_railway_llm",
    "tianjin_tianjinwei",
    "tianjing",
    "tieling",
@@ -1763,6 +1775,44 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "guangdong_luofushan_llm",
+   "name": "guangdong_luofushan_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangdong_luofushan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guangdong_nanhai_maritime_llm",
+   "name": "guangdong_nanhai_maritime_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 4,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guangdong_nanhai_maritime_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "guangdong_nanyue",
    "name": "guangdong_nanyue",
    "total": 12,
@@ -1935,6 +1985,44 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:gl_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guizhou_jianxing_llm",
+   "name": "guizhou_jianxing_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_jianxing_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guizhou_minority_craft_llm",
+   "name": "guizhou_minority_craft_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guizhou_minority_craft_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -2722,6 +2810,44 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_hunan_mawangdui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "hunan_wenxi_fire_llm",
+   "name": "hunan_wenxi_fire_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 7,
+    "scholarship": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hunan_wenxi_fire_llm_02",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "hunan_xiangjun_llm",
+   "name": "hunan_xiangjun_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hunan_xiangjun_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -3882,6 +4008,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.667
   },
   {
+   "scene": "ningxia_dangxiang_llm",
+   "name": "ningxia_dangxiang_llm",
+   "total": 11,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 11
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ningxia_dangxiang_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "ningxia_lingzhou_llm",
    "name": "ningxia_lingzhou_llm",
    "total": 13,
@@ -3955,6 +4100,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_ningxia_xixia_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "ningxia_xixia_tomb_llm",
+   "name": "ningxia_xixia_tomb_llm",
+   "total": 16,
+   "layers": {
+    "inference": 1,
+    "record": 13,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 16
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_ningxia_xixia_tomb_llm_01",
    "best_resonance": 0.0
   },
   {
@@ -4655,6 +4819,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "sichuan_bashu_bronze_llm",
+   "name": "sichuan_bashu_bronze_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sichuan_bashu_bronze_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "sichuan_chuanzong_huguang_llm",
    "name": "sichuan_chuanzong_huguang_llm",
    "total": 13,
@@ -4709,6 +4892,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_sichuan_gaitu_guizhou_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "sichuan_libai_llm",
+   "name": "sichuan_libai_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 1,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sichuan_libai_llm_03",
    "best_resonance": 0.0
   },
   {
@@ -5369,6 +5571,25 @@ window.SANDBOX_RESONANCE = {
    "best_resonance": 0.0
   },
   {
+   "scene": "tianjin_concession_llm",
+   "name": "tianjin_concession_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 8,
+    "scholarship": 2,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tianjin_concession_llm_01",
+   "best_resonance": 0.0
+  },
+  {
    "scene": "tianjin_jiaoan_llm",
    "name": "tianjin_jiaoan_llm",
    "total": 12,
@@ -5423,6 +5644,25 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_tianjin_kaibu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "tianjin_railway_llm",
+   "name": "tianjin_railway_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_tianjin_railway_llm_01",
    "best_resonance": 0.0
   },
   {

@@ -1567,6 +1567,52 @@
   },
   {
    "id": "GUA_012",
+   "scene": "guangdong_luofushan_llm",
+   "subject": "event:ev_guangdong_luofushan_llm_02",
+   "title": "炼丹细节不详",
+   "missing": "考古发掘 / 文献考证",
+   "where": "罗浮山炼丹遗址",
+   "skills": [
+    "考古发掘",
+    "文献考证"
+   ],
+   "accept": "需进一步考古证据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "GUA_013",
+   "scene": "guangdong_nanhai_maritime_llm",
+   "subject": "event:ev_guangdong_nanhai_maritime_llm_01",
+   "title": "具体航程未详",
+   "missing": "历史地理",
+   "where": "汉书地理志",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "补充航程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "GUA_014",
+   "scene": "guangdong_nanhai_maritime_llm",
+   "subject": "event:ev_guangdong_nanhai_maritime_llm_02",
+   "title": "贸易额未载",
+   "missing": "经济史",
+   "where": "唐代市舶使文献",
+   "skills": [
+    "经济史"
+   ],
+   "accept": "补充贸易额",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "GUA_012",
    "scene": "guangdong_nanyue",
    "subject": "event:ev_guangdong_nanyue_02",
    "title": "赵佗籍贯不详",
@@ -1751,6 +1797,38 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 16
+  },
+  {
+   "id": "GUI_011",
+   "scene": "guizhou_jianxing_llm",
+   "subject": "event:ev_guizhou_jianxing_llm_01",
+   "title": "具体原因未详",
+   "missing": "方志学 / 谱牒学",
+   "where": "思州、思南地方志",
+   "skills": [
+    "方志学",
+    "谱牒学"
+   ],
+   "accept": "田氏内部矛盾细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "GUI_012",
+   "scene": "guizhou_minority_craft_llm",
+   "subject": "event:ev_guizhou_minority_craft_llm_01",
+   "title": "具体年代记载缺失",
+   "missing": "文献考证 / 田野调查",
+   "where": "地方志或民族志",
+   "skills": [
+    "文献考证",
+    "田野调查"
+   ],
+   "accept": "补充具体传承年代",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "GUI_014",
@@ -2616,6 +2694,51 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "HUN_011",
+   "scene": "hunan_wenxi_fire_llm",
+   "subject": "event:ev_hunan_wenxi_fire_llm_02",
+   "title": "或为日军间谍纵火，未证实",
+   "missing": "档案考据",
+   "where": "长沙警备司令部档案",
+   "skills": [
+    "档案考据"
+   ],
+   "accept": "查明失火具体责任",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HUN_012",
+   "scene": "hunan_wenxi_fire_llm",
+   "subject": "event:ev_hunan_wenxi_fire_llm_03",
+   "title": "具体伤亡数字有不同记载",
+   "missing": "统计比对",
+   "where": "湖南省档案馆",
+   "skills": [
+    "统计比对"
+   ],
+   "accept": "核实伤亡总数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "HUN_014",
+   "scene": "hunan_xiangjun_llm",
+   "subject": "event:ev_hunan_xiangjun_llm_01",
+   "title": "湘軍水師戰船之制未詳。",
+   "missing": "清代軍事檔案研究",
+   "where": "中國第一歷史檔案館",
+   "skills": [
+    "清代軍事檔案研究"
+   ],
+   "accept": "湘軍水師營制原始文件",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "HUN_010",
@@ -3920,6 +4043,22 @@
    "_src_line": 13
   },
   {
+   "id": "NIN_011",
+   "scene": "ningxia_dangxiang_llm",
+   "subject": "event:ev_ningxia_dangxiang_llm_03",
+   "title": "具体动因未明，需考",
+   "missing": "考古 / 文献",
+   "where": "银夏绥宥静",
+   "skills": [
+    "考古",
+    "文献"
+   ],
+   "accept": "需进一步研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "NIN_013",
    "scene": "ningxia_lingzhou_llm",
    "subject": "place:lingzhou",
@@ -3981,6 +4120,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "NIN_016",
+   "scene": "ningxia_xixia_tomb_llm",
+   "subject": "place:xixia_tomb",
+   "title": "西夏时期营建",
+   "missing": "考古类型学 / 碳十四测年",
+   "where": "西夏王陵考古报告",
+   "skills": [
+    "考古类型学",
+    "碳十四测年"
+   ],
+   "accept": "陵墓具体归属",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
   },
   {
    "id": "N010",
@@ -5023,6 +5178,22 @@
    "_src_line": 13
   },
   {
+   "id": "SIC_012",
+   "scene": "sichuan_bashu_bronze_llm",
+   "subject": "place:shu",
+   "title": "古蜀无文字记载，仅传说",
+   "missing": "考古发掘 / 古文字解读",
+   "where": "三星堆、金沙遗址",
+   "skills": [
+    "考古发掘",
+    "古文字解读"
+   ],
+   "accept": "若发现文字刻符，可补古蜀记载",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SIC_013",
    "scene": "sichuan_chuanzong_huguang_llm",
    "subject": "event:ev_sichuan_chuanzong_huguang_llm_01",
@@ -5068,6 +5239,21 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "SIC_012",
+   "scene": "sichuan_libai_llm",
+   "subject": "person:SIC__p01",
+   "title": "具体年份不详",
+   "missing": "文献考据",
+   "where": "蜀道",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SIC_011",
@@ -5744,6 +5930,21 @@
   },
   {
    "id": "TIA_010",
+   "scene": "tianjin_concession_llm",
+   "subject": "place:tianjin",
+   "title": "九国租界具体划定时间待考",
+   "missing": "历史地理",
+   "where": "天津地方志",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "各国租界划定年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 10
+  },
+  {
+   "id": "TIA_010",
    "scene": "tianjin_jiaoan_llm",
    "subject": "event:ev_tianjin_jiaoan_llm_01",
    "title": "外人数目未详",
@@ -5831,6 +6032,22 @@
    "effort": "—",
    "issue_url": null,
    "_src_line": 13
+  },
+  {
+   "id": "TIA_014",
+   "scene": "tianjin_railway_llm",
+   "subject": "event:ev_tianjin_railway_llm_02",
+   "title": "朝议具体人物未详",
+   "missing": "历史考据 / 档案检索",
+   "where": "清代档案或时人奏折",
+   "skills": [
+    "历史考据",
+    "档案检索"
+   ],
+   "accept": "明确反对津沽铁路的朝臣姓名及奏疏",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "TIA_012",

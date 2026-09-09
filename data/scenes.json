@@ -549,7 +549,19 @@
   "neimenggu_keerqin_llm",
   "sichuan_chuanzong_huguang_llm",
   "sichuan_gaitu_guizhou_llm",
-  "neimenggu_huhehaote_llm"
+  "neimenggu_huhehaote_llm",
+  "guangdong_luofushan_llm",
+  "guangdong_nanhai_maritime_llm",
+  "guizhou_jianxing_llm",
+  "guizhou_minority_craft_llm",
+  "hunan_wenxi_fire_llm",
+  "hunan_xiangjun_llm",
+  "ningxia_dangxiang_llm",
+  "ningxia_xixia_tomb_llm",
+  "sichuan_bashu_bronze_llm",
+  "sichuan_libai_llm",
+  "tianjin_concession_llm",
+  "tianjin_railway_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -28047,6 +28059,911 @@
     1,
     3,
     4,
+    6
+   ]
+  },
+  "guangdong_luofushan_llm": {
+   "kind": "thought",
+   "region": "thought",
+   "province": "guangdong",
+   "title": "葛洪罗浮山炼丹与道教南传（东晋）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "luofushan",
+   "dossier_event": "event:ev_guangdong_luofushan_llm_01",
+   "vocab_pack": "guangdong_luofushan_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "two_jin",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "葛洪罗浮山炼丹与道教南传（东晋）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "葛洪罗浮山炼丹与道教南传（东晋）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "葛洪罗浮山炼丹与道教南传（东晋）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "葛洪罗浮山炼丹与道教南传（东晋）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "guangdong_nanhai_maritime_llm": {
+   "kind": "exchange",
+   "region": "exchange",
+   "province": "guangdong",
+   "title": "汉唐南海海上丝路·广州通海夷道",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "ri_nan",
+   "dossier_event": "event:ev_guangdong_nanhai_maritime_llm_01",
+   "vocab_pack": "guangdong_nanhai_maritime_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "han",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉唐南海海上丝路·广州通海夷道：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "汉唐南海海上丝路·广州通海夷道：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "汉唐南海海上丝路·广州通海夷道：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉唐南海海上丝路·广州通海夷道：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guizhou_jianxing_llm": {
+   "kind": "reform",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "明永乐贵州建省（1413）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "guizhou",
+   "dossier_event": "event:ev_guizhou_jianxing_llm_01",
+   "vocab_pack": "guizhou_jianxing_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "明永乐贵州建省（1413）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "明永乐贵州建省（1413）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "明永乐贵州建省（1413）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "明永乐贵州建省（1413）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guizhou_minority_craft_llm": {
+   "kind": "tech",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "苗侗银饰与鼓楼营造（明—清）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "leiping_zhaoxing",
+   "dossier_event": "event:ev_guizhou_minority_craft_llm_01",
+   "vocab_pack": "guizhou_minority_craft_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "苗侗银饰与鼓楼营造（明—清）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "苗侗银饰与鼓楼营造（明—清）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "苗侗银饰与鼓楼营造（明—清）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "苗侗银饰与鼓楼营造（明—清）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    4,
+    5,
+    6
+   ]
+  },
+  "hunan_wenxi_fire_llm": {
+   "kind": "disaster",
+   "region": "hunan",
+   "province": "hunan",
+   "title": "长沙文夕大火（1938）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "changsha",
+   "dossier_event": "event:ev_hunan_wenxi_fire_llm_02",
+   "vocab_pack": "hunan_wenxi_fire_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "长沙文夕大火（1938）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "长沙文夕大火（1938）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "长沙文夕大火（1938）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "长沙文夕大火（1938）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    6
+   ]
+  },
+  "hunan_xiangjun_llm": {
+   "kind": "social",
+   "region": "hunan",
+   "province": "hunan",
+   "title": "湘军与晚清兵制变革（1852—1864）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "hunan",
+   "dossier_event": "event:ev_hunan_xiangjun_llm_01",
+   "vocab_pack": "hunan_xiangjun_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "湘军与晚清兵制变革（1852—1864）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "湘军与晚清兵制变革（1852—1864）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "湘军与晚清兵制变革（1852—1864）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "湘军与晚清兵制变革（1852—1864）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "ningxia_dangxiang_llm": {
+   "kind": "social",
+   "region": "song",
+   "province": "ningxia",
+   "title": "党项羌游牧—农耕转型（宋—夏）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xizhi",
+   "dossier_event": "event:ev_ningxia_dangxiang_llm_01",
+   "vocab_pack": "ningxia_dangxiang_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "党项羌游牧—农耕转型（宋—夏）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "党项羌游牧—农耕转型（宋—夏）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "党项羌游牧—农耕转型（宋—夏）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "党项羌游牧—农耕转型（宋—夏）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    3,
+    4,
+    6
+   ]
+  },
+  "ningxia_xixia_tomb_llm": {
+   "kind": "tech",
+   "region": "song",
+   "province": "ningxia",
+   "title": "西夏王陵与贺兰山岩画（宋—夏）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "xixia_tomb",
+   "dossier_event": "event:ev_ningxia_xixia_tomb_llm_01",
+   "vocab_pack": "ningxia_xixia_tomb_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "西夏王陵与贺兰山岩画（宋—夏）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "西夏王陵与贺兰山岩画（宋—夏）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "西夏王陵与贺兰山岩画（宋—夏）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "西夏王陵与贺兰山岩画（宋—夏）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ]
+  },
+  "sichuan_bashu_bronze_llm": {
+   "kind": "tech",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "古蜀青铜文明·三星堆与金沙（商—周）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "sanxingdui",
+   "dossier_event": "event:ev_sichuan_bashu_bronze_llm_01",
+   "vocab_pack": "sichuan_bashu_bronze_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "古蜀青铜文明·三星堆与金沙（商—周）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "古蜀青铜文明·三星堆与金沙（商—周）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "古蜀青铜文明·三星堆与金沙（商—周）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "古蜀青铜文明·三星堆与金沙（商—周）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "sichuan_libai_llm": {
+   "kind": "thought",
+   "region": "chuan_gui",
+   "province": "sichuan",
+   "title": "李白与巴蜀文学（唐）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "suiye",
+   "dossier_event": "event:ev_sichuan_libai_llm_03",
+   "vocab_pack": "sichuan_libai_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "tang",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "李白与巴蜀文学（唐）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "李白与巴蜀文学（唐）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "李白与巴蜀文学（唐）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "李白与巴蜀文学（唐）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    4,
+    5,
+    6
+   ]
+  },
+  "tianjin_concession_llm": {
+   "kind": "exchange",
+   "region": "qing_modern",
+   "province": "tianjin",
+   "title": "天津九国租界（1860—1902）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tianjin",
+   "dossier_event": "event:ev_tianjin_concession_llm_01",
+   "vocab_pack": "tianjin_concession_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津九国租界（1860—1902）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "天津九国租界（1860—1902）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "天津九国租界（1860—1902）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "天津九国租界（1860—1902）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "tianjin_railway_llm": {
+   "kind": "engineering",
+   "region": "qing_modern",
+   "province": "tianjin",
+   "title": "津沽铁路与中国自建铁路（1888）",
+   "dossier_label": null,
+   "subtitle": null,
+   "primary_place": "tangshan",
+   "dossier_event": "event:ev_tianjin_railway_llm_01",
+   "vocab_pack": "tianjin_railway_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": null,
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "津沽铁路与中国自建铁路（1888）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "津沽铁路与中国自建铁路（1888）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "津沽铁路与中国自建铁路（1888）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "津沽铁路与中国自建铁路（1888）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
     6
    ]
   }

@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "GUI__p01",
+   "name": "苗族银匠",
+   "role": "工匠",
+   "note": "锤揲银片为饰",
+   "_source_idx": 0,
+   "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "GUI__p02",
+   "name": "侗族木匠",
+   "role": "工匠",
+   "note": "建鼓楼不用一钉",
+   "_source_idx": 0,
+   "_source_name": "贵州少数民族工艺志·银饰鼓楼篇",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

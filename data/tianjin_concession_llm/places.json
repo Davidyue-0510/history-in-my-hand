@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "type": "city",
+      "modern": "中国天津市",
+      "note": "九国租界所在地",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 117.2,
+      "lat": 39.13,
+      "geo_note": "平津战役·天津攻坚战"
+    },
+    {
+      "id": "zizhulin",
+      "name": "紫竹林",
+      "type": "region",
+      "modern": "中国天津市和平区",
+      "note": "英法先划租界处",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "quanyechang",
+      "name": "劝业场",
+      "type": "region",
+      "modern": "中国天津市和平区",
+      "note": "商埠繁盛之地",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "haigukou",
+      "name": "大沽口",
+      "type": "port",
+      "modern": "中国天津市滨海新区",
+      "note": "海河下游东至大沽口",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xiaobailou",
+      "name": "小白楼",
+      "type": "region",
+      "modern": "中国天津市和平区",
+      "note": "商埠繁盛之地",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jiefangqiao",
+      "name": "解放桥",
+      "type": "region",
+      "modern": "中国天津市河北区",
+      "note": "商埠繁盛之地",
+      "_source_idx": 0,
+      "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

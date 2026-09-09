@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_railway_llm_01",
+   "subject": "event:ev_tianjin_railway_llm_01",
+   "year": 1881,
+   "era": "光绪七年",
+   "title": "唐胥铁路建成",
+   "kind": "建置",
+   "text": "开平煤矿筑唐胥运煤铁路",
+   "_source_idx": 0,
+   "_source_name": "清史稿·交通志·铁路（赵尔巽·民国）/ 李鸿章奏稿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_railway_llm_02",
+   "subject": "event:ev_tianjin_railway_llm_02",
+   "year": 1888,
+   "era": "光绪十四年",
+   "title": "津沽铁路通车",
+   "kind": "建置",
+   "text": "展修至天津，名津沽铁路",
+   "_source_idx": 0,
+   "_source_name": "清史稿·交通志·铁路（赵尔巽·民国）/ 李鸿章奏稿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_railway_llm_03",
+   "subject": "event:ev_tianjin_railway_llm_03",
+   "year": 1896,
+   "era": "光绪二十二年",
+   "title": "芦汉铁路兴工",
+   "kind": "建置",
+   "text": "中国铁路网自此发轫",
+   "_source_idx": 0,
+   "_source_name": "清史稿·交通志·铁路（赵尔巽·民国）/ 李鸿章奏稿",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "hunan",
+      "name": "湖南",
+      "type": "region",
+      "modern": "今中國湖南省",
+      "note": "湘軍起源地。",
+      "_source_idx": 0,
+      "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wuchang",
+      "name": "武昌",
+      "type": "city",
+      "modern": "今中國湖北省武漢市武昌區",
+      "note": "湘軍攻克。",
+      "_source_idx": 0,
+      "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.3,
+      "lat": 30.59,
+      "geo_note": "楚党核心，今湖北武汉"
+    },
+    {
+      "id": "anqing",
+      "name": "安慶",
+      "type": "city",
+      "modern": "今中國安徽省安慶市",
+      "note": "湘軍攻陷。",
+      "_source_idx": 0,
+      "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianjing",
+      "name": "天京",
+      "type": "city",
+      "modern": "今中國江蘇省南京市",
+      "note": "太平天國都城，湘軍攻下。",
+      "_source_idx": 0,
+      "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

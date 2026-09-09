@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TIA__p01",
+   "name": "英法领事",
+   "role": "租界行政长官",
+   "note": "界内行政、司法、警务皆归领事",
+   "_source_idx": 0,
+   "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TIA__p02",
+   "name": "清廷官员",
+   "role": "地方交涉官员",
+   "note": "负责租界划界交涉",
+   "_source_idx": 0,
+   "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

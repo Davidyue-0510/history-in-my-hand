@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "guangdong_luofushan_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  317,
+  330
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 323,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.15（本支 0.24 / 史实 0.08）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.08,
+    "new_to": 0.235,
+    "cum": 0.155
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 324,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.18（本支 0.20 / 史实 0.02）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.02,
+    "new_to": 0.197,
+    "cum": 0.177
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "divergence",
+   "year": 325,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.16（本支 0.16 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.159,
+    "cum": 0.159
+   },
+   "place_id": "jiaozhi"
+  },
+  {
+   "kind": "summary",
+   "year": 330,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.00 / 史实 0.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jiaozhi"
+  }
+ ]
+}

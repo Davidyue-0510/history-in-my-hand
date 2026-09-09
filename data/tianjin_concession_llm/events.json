@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_tianjin_concession_llm_01",
+   "subject": "event:ev_tianjin_concession_llm_01",
+   "year": 1860,
+   "era": "咸丰十年",
+   "title": "天津开埠",
+   "kind": "外交",
+   "text": "《北京条约》开天津为商埠",
+   "_source_idx": 0,
+   "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_tianjin_concession_llm_02",
+   "subject": "event:ev_tianjin_concession_llm_02",
+   "year": 1902,
+   "era": "光绪二十八年",
+   "title": "九国租界形成",
+   "kind": "建置",
+   "text": "九国租界相继划定完成",
+   "_source_idx": 0,
+   "_source_name": "天津租界档案·各国租界章程（1860—1902）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

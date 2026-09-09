@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_hunan_xiangjun_llm_01",
+   "subject": "event:ev_hunan_xiangjun_llm_01",
+   "year": 1852,
+   "era": "咸豐二年",
+   "title": "湘軍創建",
+   "kind": "建置",
+   "text": "曾國藩幫辦團練，創湘軍。",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_xiangjun_llm_02",
+   "subject": "event:ev_hunan_xiangjun_llm_02",
+   "year": 1854,
+   "era": "咸豐四年",
+   "title": "克復武昌",
+   "kind": "戰事",
+   "text": "湘軍攻克武昌。",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_xiangjun_llm_03",
+   "subject": "event:ev_hunan_xiangjun_llm_03",
+   "year": 1861,
+   "era": "咸豐十一年",
+   "title": "攻陷安慶",
+   "kind": "戰事",
+   "text": "湘軍攻陷安慶。",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hunan_xiangjun_llm_04",
+   "subject": "event:ev_hunan_xiangjun_llm_04",
+   "year": 1864,
+   "era": "同治三年",
+   "title": "攻下天京",
+   "kind": "戰事",
+   "text": "湘軍攻下天京，平太平天國。",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

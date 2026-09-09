@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "xu_wen",
+   "to": "du_yuan",
+   "type": "military",
+   "label": "汉使船行",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·粤地（班固·汉）/ 新唐书·地理志·广州通海夷道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "he_pu",
+   "to": "du_yuan",
+   "type": "military",
+   "label": "汉使船行",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·粤地（班固·汉）/ 新唐书·地理志·广州通海夷道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guangzhou",
+   "to": "zhan_po",
+   "type": "military",
+   "label": "广州通海夷道",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·粤地（班固·汉）/ 新唐书·地理志·广州通海夷道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "zhan_po",
+   "to": "shi_li_fo_shi",
+   "type": "military",
+   "label": "广州通海夷道",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·粤地（班固·汉）/ 新唐书·地理志·广州通海夷道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "shi_li_fo_shi",
+   "to": "shi_zi_guo",
+   "type": "military",
+   "label": "广州通海夷道",
+   "_source_idx": 0,
+   "_source_name": "汉书·地理志·粤地（班固·汉）/ 新唐书·地理志·广州通海夷道",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

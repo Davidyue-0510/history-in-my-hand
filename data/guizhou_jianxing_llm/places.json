@@ -1,0 +1,102 @@
+{
+  "places": [
+    {
+      "id": "guizhou",
+      "name": "贵州",
+      "type": "region",
+      "modern": "今中国贵州省",
+      "note": "古蛮夷地",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guiyang",
+      "name": "贵阳",
+      "type": "city",
+      "modern": "今中国贵州省贵阳市",
+      "note": "省治",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "sizhou",
+      "name": "思州",
+      "type": "yi",
+      "modern": "今中国贵州省岑巩县",
+      "note": "宣慰司",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "sinan",
+      "name": "思南",
+      "type": "yi",
+      "modern": "今中国贵州省思南县",
+      "note": "宣慰司",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "huguang",
+      "name": "湖广",
+      "type": "region",
+      "modern": "今中国湖北湖南",
+      "note": "原隶布政司",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.3,
+      "lat": 30.59,
+      "geo_note": "楚党核心，今湖北武汉"
+    },
+    {
+      "id": "sichuan",
+      "name": "四川",
+      "type": "region",
+      "modern": "今中国四川省",
+      "note": "原隶布政司",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yunnan",
+      "name": "云南",
+      "type": "region",
+      "modern": "今中国云南省",
+      "note": "原隶布政司",
+      "_source_idx": 0,
+      "_source_name": "明史·地理志·贵州（张廷玉·清）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "guangdong_nanhai_maritime_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  670,
+  730
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 672,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.45 / 史实 0.61）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.608,
+    "new_to": 0.451,
+    "cum": -0.157
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 673,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.43 / 史实 0.64）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.644,
+    "new_to": 0.435,
+    "cum": -0.209
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 674,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.42 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.418,
+    "cum": -0.262
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 675,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.40 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.716,
+    "new_to": 0.402,
+    "cum": -0.314
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 676,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.39 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.752,
+    "new_to": 0.386,
+    "cum": -0.366
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 677,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.37 / 史实 0.79）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.788,
+    "new_to": 0.369,
+    "cum": -0.419
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 678,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.35 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.824,
+    "new_to": 0.353,
+    "cum": -0.471
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 679,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.52（本支 0.34 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.337,
+    "cum": -0.523
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 680,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.58（本支 0.32 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.896,
+    "new_to": 0.32,
+    "cum": -0.576
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 681,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.30 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.932,
+    "new_to": 0.304,
+    "cum": -0.628
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 682,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.29 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.968,
+    "new_to": 0.288,
+    "cum": -0.68
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 683,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.271,
+    "cum": -0.729
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 684,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.255,
+    "cum": -0.745
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 685,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.239,
+    "cum": -0.761
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 686,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.222,
+    "cum": -0.778
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 687,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.206,
+    "cum": -0.794
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 688,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.19,
+    "cum": -0.81
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 689,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.173,
+    "cum": -0.827
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 690,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.16 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.157,
+    "cum": -0.843
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 691,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.141,
+    "cum": -0.859
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 692,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.125,
+    "cum": -0.875
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 693,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.108,
+    "cum": -0.892
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 694,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.092,
+    "cum": -0.908
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 695,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.076,
+    "cum": -0.924
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 696,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.059,
+    "cum": -0.941
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 697,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.043,
+    "cum": -0.957
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 698,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.027,
+    "cum": -0.973
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 699,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.01,
+    "cum": -0.99
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 700,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 701,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 702,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 703,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 704,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 705,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 706,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 707,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 708,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 709,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 710,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 711,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 712,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 713,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 714,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 715,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 716,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 717,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 718,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 719,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 720,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 721,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 722,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 723,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 724,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 725,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 726,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 727,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 728,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 729,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 730,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "summary",
+   "year": 730,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xu_wen"
+  }
+ ]
+}

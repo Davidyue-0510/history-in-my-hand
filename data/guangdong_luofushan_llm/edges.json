@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "jurong",
+   "to": "guangzhou",
+   "type": "military",
+   "label": "葛海南行路线",
+   "_source_idx": 0,
+   "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "guangzhou",
+   "to": "luofushan",
+   "type": "military",
+   "label": "止罗浮山",
+   "_source_idx": 0,
+   "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

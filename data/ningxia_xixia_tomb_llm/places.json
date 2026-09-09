@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "xingqing_fu",
+      "name": "兴庆府",
+      "type": "city",
+      "modern": "今宁夏银川市",
+      "note": "西夏都城",
+      "_source_idx": 0,
+      "_source_name": "宋史·夏国传（脱脱·元）/ 西夏王陵考古报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xixia_tomb",
+      "name": "西夏王陵",
+      "type": "fortress",
+      "modern": "今宁夏银川西夏区",
+      "note": "贺兰山东麓帝王陵园",
+      "_source_idx": 0,
+      "_source_name": "宋史·夏国传（脱脱·元）/ 西夏王陵考古报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "helan_pass",
+      "name": "贺兰山口",
+      "type": "yi",
+      "modern": "今宁夏贺兰山",
+      "note": "岩画分布地",
+      "_source_idx": 0,
+      "_source_name": "宋史·夏国传（脱脱·元）/ 西夏王陵考古报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "helan_mountain",
+      "name": "贺兰山",
+      "type": "region",
+      "modern": "今宁夏与内蒙古交界",
+      "note": "岩画与王陵所在",
+      "_source_idx": 0,
+      "_source_name": "宋史·夏国传（脱脱·元）/ 西夏王陵考古报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

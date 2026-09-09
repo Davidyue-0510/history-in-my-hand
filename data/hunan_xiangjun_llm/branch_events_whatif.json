@@ -1,0 +1,193 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "hunan_xiangjun_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1851,
+  1864
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1852,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.462,
+    "cum": -0.158
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1853,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.442,
+    "cum": -0.238
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1854,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.42 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.423,
+    "cum": -0.317
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1855,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.40 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.404,
+    "cum": -0.396
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1856,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.385,
+    "cum": -0.475
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1857,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.37 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.366,
+    "cum": -0.554
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1858,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.35 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.347,
+    "cum": -0.633
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1859,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.33 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.327,
+    "cum": -0.673
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1860,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.31 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.308,
+    "cum": -0.692
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1861,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.289,
+    "cum": -0.711
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1862,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.27,
+    "cum": -0.73
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1863,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.251,
+    "cum": -0.749
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1864,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.232,
+    "cum": -0.768
+   },
+   "place_id": "hunan"
+  },
+  {
+   "kind": "summary",
+   "year": 1864,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.23 / 史实 1.00（偏离 -0.77）",
+   "evidence": {
+    "cum": -0.768,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "hunan"
+  }
+ ]
+}

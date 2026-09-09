@@ -1,0 +1,34 @@
+{
+ "edges": [
+  {
+   "from": "hunan",
+   "to": "wuchang",
+   "type": "military",
+   "label": "湘軍出征路線",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wuchang",
+   "to": "anqing",
+   "type": "military",
+   "label": "湘軍東征路線",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "anqing",
+   "to": "tianjing",
+   "type": "military",
+   "label": "湘軍圍攻天京",
+   "_source_idx": 0,
+   "_source_name": "曾文正公全集·奏稿（曾国藩·清）/ 湘军志（王闿运）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

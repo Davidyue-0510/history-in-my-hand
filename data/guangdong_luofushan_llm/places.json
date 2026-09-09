@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "jurong",
+      "name": "句容",
+      "type": "city",
+      "modern": "今中国江苏省句容市",
+      "note": "葛洪籍贯",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jiaozhi",
+      "name": "交趾",
+      "type": "region",
+      "modern": "今越南北部",
+      "note": "葛洪求为勾漏令之地",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "luofushan",
+      "name": "罗浮山",
+      "type": "region",
+      "modern": "今中国广东省惠州市博罗县",
+      "note": "道教第七洞天",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "boluo",
+      "name": "博罗",
+      "type": "city",
+      "modern": "今中国广东省惠州市博罗县",
+      "note": "罗浮山所在",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zengcheng",
+      "name": "增城",
+      "type": "city",
+      "modern": "今中国广东省广州市增城区",
+      "note": "罗浮山跨此",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "type": "city",
+      "modern": "今中国广东省广州市",
+      "note": "葛洪途经",
+      "_source_idx": 0,
+      "_source_name": "抱朴子·内篇（葛洪·晋）/ 罗浮山志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 113.26,
+      "lat": 23.13,
+      "geo_note": "康有为故里，今广东广州"
+    }
+  ]
+}

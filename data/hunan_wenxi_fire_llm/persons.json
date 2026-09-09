@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "HUN__p01",
+   "name": "蒋介石",
+   "role": "国民政府军事委员会委员长",
+   "note": "下达焦土抗战令",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p02",
+   "name": "张治中",
+   "role": "湖南省政府主席",
+   "note": "文夕大火后撤职",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p03",
+   "name": "酆悌",
+   "role": "长沙警备司令",
+   "note": "大火后伏法",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HUN__p04",
+   "name": "伤兵医院人员",
+   "role": "南门外伤兵医院",
+   "note": "失火引发误传信号",
+   "_source_idx": 0,
+   "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

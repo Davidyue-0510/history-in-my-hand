@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "nanmenwai",
+      "name": "南门外",
+      "type": "yi",
+      "modern": "中国湖南省长沙市",
+      "note": "伤兵医院失火处",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "changsha",
+      "name": "长沙",
+      "type": "city",
+      "modern": "中国湖南省长沙市",
+      "note": "文夕大火发生地",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tianxinge",
+      "name": "天心阁",
+      "type": "yi",
+      "modern": "中国湖南省长沙市",
+      "note": "火势蔓延起点之一",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "bajiaoting",
+      "name": "八角亭",
+      "type": "yi",
+      "modern": "中国湖南省长沙市",
+      "note": "火势蔓延区域",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "pozijie",
+      "name": "坡子街",
+      "type": "yi",
+      "modern": "中国湖南省长沙市",
+      "note": "火势蔓延区域",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "type": "city",
+      "modern": "中国湖北省武汉市",
+      "note": "弃守后日军南逼",
+      "_source_idx": 0,
+      "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

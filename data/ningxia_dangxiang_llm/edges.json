@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "xizhi",
+   "to": "qingzhou",
+   "type": "military",
+   "label": "内附迁徙",
+   "_source_idx": 0,
+   "_source_name": "宋史·党项传（脱脱·元）/ 辽史·西夏纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "qingzhou",
+   "to": "yinsui",
+   "type": "military",
+   "label": "安史乱后迁居",
+   "_source_idx": 0,
+   "_source_name": "宋史·党项传（脱脱·元）/ 辽史·西夏纪",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

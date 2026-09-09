@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "qingzhou",
+      "name": "庆州",
+      "type": "city",
+      "modern": "今甘肃庆阳",
+      "note": "内附后迁居",
+      "_source_idx": 0,
+      "_source_name": "宋史·党项传（脱脱·元）/ 辽史·西夏纪",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yinsui",
+      "name": "银夏绥宥静",
+      "type": "region",
+      "modern": "今陕北宁夏",
+      "note": "安史乱后迁居",
+      "_source_idx": 0,
+      "_source_name": "宋史·党项传（脱脱·元）/ 辽史·西夏纪",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xizhi",
+      "name": "析支",
+      "type": "region",
+      "modern": "今青甘川边",
+      "note": "党项原居地",
+      "_source_idx": 0,
+      "_source_name": "宋史·党项传（脱脱·元）/ 辽史·西夏纪",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

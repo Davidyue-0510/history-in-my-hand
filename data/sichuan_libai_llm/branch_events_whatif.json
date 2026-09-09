@@ -1,0 +1,271 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "sichuan_libai_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  700,
+  725
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 707,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.54 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.54,
+    "cum": -0.16
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 708,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.55 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.545,
+    "cum": -0.18
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 709,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.55 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.75,
+    "new_to": 0.55,
+    "cum": -0.2
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 710,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.56 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.775,
+    "new_to": 0.555,
+    "cum": -0.22
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 711,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.56 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.56,
+    "cum": -0.24
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 712,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.57 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.825,
+    "new_to": 0.565,
+    "cum": -0.26
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 713,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.57 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.57,
+    "cum": -0.28
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 714,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.30（本支 0.58 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.875,
+    "new_to": 0.576,
+    "cum": -0.299
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 715,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.58 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.581,
+    "cum": -0.319
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 716,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.59 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.925,
+    "new_to": 0.586,
+    "cum": -0.339
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 717,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.59 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.591,
+    "cum": -0.359
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 718,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.38（本支 0.60 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.975,
+    "new_to": 0.596,
+    "cum": -0.379
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 719,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.60 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.601,
+    "cum": -0.399
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 720,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.61 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.606,
+    "cum": -0.394
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 721,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.61 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.611,
+    "cum": -0.389
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 722,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.38（本支 0.62 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.616,
+    "cum": -0.384
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 723,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.38（本支 0.62 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.621,
+    "cum": -0.379
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 724,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.63 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.626,
+    "cum": -0.374
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "divergence",
+   "year": 725,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.63 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.631,
+    "cum": -0.369
+   },
+   "place_id": "bashu"
+  },
+  {
+   "kind": "summary",
+   "year": 725,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.63 / 史实 1.00（偏离 -0.37）",
+   "evidence": {
+    "cum": -0.369,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "bashu"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_guizhou_jianxing_llm_01",
+   "subject": "event:ev_guizhou_jianxing_llm_01",
+   "year": 1413,
+   "era": "永乐十一年",
+   "title": "思州思南构兵",
+   "kind": "战事",
+   "text": "田琛、田宗鼎构兵",
+   "_source_idx": 0,
+   "_source_name": "明史·地理志·贵州（张廷玉·清）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_jianxing_llm_02",
+   "subject": "event:ev_guizhou_jianxing_llm_02",
+   "year": 1413,
+   "era": "永乐十一年",
+   "title": "顾成擒二宣慰",
+   "kind": "战事",
+   "text": "顾成擒田琛、田宗鼎",
+   "_source_idx": 0,
+   "_source_name": "明史·地理志·贵州（张廷玉·清）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_guizhou_jianxing_llm_03",
+   "subject": "event:ev_guizhou_jianxing_llm_03",
+   "year": 1413,
+   "era": "永乐十一年",
+   "title": "设贵州布政司",
+   "kind": "建置",
+   "text": "废二宣慰司，设贵州布政司",
+   "_source_idx": 0,
+   "_source_name": "明史·地理志·贵州（张廷玉·清）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

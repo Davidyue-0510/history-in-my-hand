@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_sichuan_bashu_bronze_llm_01",
+   "subject": "event:ev_sichuan_bashu_bronze_llm_01",
+   "year": -1200,
+   "era": "商代晚期",
+   "title": "三星堆文明兴盛",
+   "kind": "其他",
+   "text": "三星堆遗址青铜文化繁荣",
+   "_source_idx": 0,
+   "_source_name": "华阳国志·蜀志（常璩·东晋）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_bashu_bronze_llm_02",
+   "subject": "event:ev_sichuan_bashu_bronze_llm_02",
+   "year": -1046,
+   "era": "商末周初",
+   "title": "金沙文明兴起",
+   "kind": "其他",
+   "text": "金沙遗址成为古蜀中心",
+   "_source_idx": 0,
+   "_source_name": "华阳国志·蜀志（常璩·东晋）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_sichuan_bashu_bronze_llm_03",
+   "subject": "event:ev_sichuan_bashu_bronze_llm_03",
+   "year": -316,
+   "era": "秦惠文王九年",
+   "title": "秦灭蜀",
+   "kind": "战事",
+   "text": "司马错率秦军灭蜀",
+   "_source_idx": 0,
+   "_source_name": "华阳国志·蜀志（常璩·东晋）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "sanxingdui",
+   "to": "jinsha",
+   "type": "military",
+   "label": "古蜀中心转移",
+   "_source_idx": 0,
+   "_source_name": "华阳国志·蜀志（常璩·东晋）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

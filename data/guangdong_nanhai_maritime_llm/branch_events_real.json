@@ -1,0 +1,63 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "guangdong_nanhai_maritime_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  670,
+  730
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 681,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.78 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.932,
+    "new_to": 0.782,
+    "cum": -0.15
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 682,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.81 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.968,
+    "new_to": 0.806,
+    "cum": -0.162
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "divergence",
+   "year": 683,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.829,
+    "cum": -0.171
+   },
+   "place_id": "xu_wen"
+  },
+  {
+   "kind": "summary",
+   "year": 730,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xu_wen"
+  }
+ ]
+}

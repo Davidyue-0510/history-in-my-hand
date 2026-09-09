@@ -1,9 +1,9 @@
 {
-  "scenes_total": 346,
-  "historical": 337,
+  "scenes_total": 358,
+  "historical": 349,
   "fictional": 9,
-  "assertions_total": 5222,
-  "sources_total": 323,
+  "assertions_total": 5374,
+  "sources_total": 335,
   "factions_total": 9,
   "vocab_packs": [
     "anxi_sizhen_llm",
@@ -44,6 +44,8 @@
     "gansu_tianshui_fuxi_llm",
     "guandu_llm",
     "guangdong_guangzhou",
+    "guangdong_luofushan_llm",
+    "guangdong_nanhai_maritime_llm",
     "guangdong_nanyue",
     "guangxi_lingqu",
     "guangxi_lingqu_llm",
@@ -51,6 +53,8 @@
     "guangxi_taiping_llm",
     "guangxi_zhennanguan_llm",
     "guangxi_zhuangzu_llm",
+    "guizhou_jianxing_llm",
+    "guizhou_minority_craft_llm",
     "guizhou_shexiang_llm",
     "guizhou_tianlongshan_llm",
     "guizhou_yelang",
@@ -80,6 +84,8 @@
     "hubei_zenghouyi",
     "hunan_changsha_llm",
     "hunan_mawangdui_llm",
+    "hunan_wenxi_fire_llm",
+    "hunan_xiangjun_llm",
     "hunan_yuelu",
     "jiangxi_bailudong",
     "jiangxi_jingdezhen",
@@ -111,10 +117,12 @@
     "neimenggu_keerqin_llm",
     "neimenggu_liao",
     "neimenggu_zhaojun_llm",
+    "ningxia_dangxiang_llm",
     "ningxia_lingzhou_llm",
     "ningxia_xiaoguan_llm",
     "ningxia_xixia",
     "ningxia_xixia_llm",
+    "ningxia_xixia_tomb_llm",
     "nongzhigao_llm",
     "pingbo_zhiyi_llm",
     "qianjia_puxue_llm",
@@ -142,9 +150,11 @@
     "shanxi_yungang",
     "shen_baozhen_taiwan_llm",
     "shu_han_found_llm",
+    "sichuan_bashu_bronze_llm",
     "sichuan_chuanzong_huguang_llm",
     "sichuan_dujiangyan_llm",
     "sichuan_gaitu_guizhou_llm",
+    "sichuan_libai_llm",
     "sichuan_zhuge",
     "song",
     "song_chanchuan_llm",
@@ -168,9 +178,11 @@
     "tang_juntian",
     "tang_xuanwumen_llm",
     "three_campaigns",
+    "tianjin_concession_llm",
     "tianjin_jiaoan_llm",
     "tianjin_jiqiju_llm",
     "tianjin_kaibu_llm",
+    "tianjin_railway_llm",
     "tianjin_tianjinwei",
     "wangmang_reform_llm",
     "wangyangming",
@@ -211,7 +223,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 471,
+  "leads_total": 485,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -2685,6 +2697,90 @@
       "kind": "exchange",
       "assertions": 14,
       "factions": {}
+    },
+    {
+      "id": "guangdong_luofushan_llm",
+      "title": "葛洪罗浮山炼丹与道教南传（东晋）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "guangdong_nanhai_maritime_llm",
+      "title": "汉唐南海海上丝路·广州通海夷道",
+      "kind": "exchange",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_jianxing_llm",
+      "title": "明永乐贵州建省（1413）",
+      "kind": "reform",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "guizhou_minority_craft_llm",
+      "title": "苗侗银饰与鼓楼营造（明—清）",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "hunan_wenxi_fire_llm",
+      "title": "长沙文夕大火（1938）",
+      "kind": "disaster",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "hunan_xiangjun_llm",
+      "title": "湘军与晚清兵制变革（1852—1864）",
+      "kind": "social",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "ningxia_dangxiang_llm",
+      "title": "党项羌游牧—农耕转型（宋—夏）",
+      "kind": "social",
+      "assertions": 11,
+      "factions": {}
+    },
+    {
+      "id": "ningxia_xixia_tomb_llm",
+      "title": "西夏王陵与贺兰山岩画（宋—夏）",
+      "kind": "tech",
+      "assertions": 16,
+      "factions": {}
+    },
+    {
+      "id": "sichuan_bashu_bronze_llm",
+      "title": "古蜀青铜文明·三星堆与金沙（商—周）",
+      "kind": "tech",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "sichuan_libai_llm",
+      "title": "李白与巴蜀文学（唐）",
+      "kind": "thought",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_concession_llm",
+      "title": "天津九国租界（1860—1902）",
+      "kind": "exchange",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "tianjin_railway_llm",
+      "title": "津沽铁路与中国自建铁路（1888）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3033,6 +3129,18 @@
     "neimenggu_keerqin_llm": "科尔沁蒙古与清廷联姻（清）",
     "sichuan_chuanzong_huguang_llm": "湖广填四川与大移民（清初）",
     "sichuan_gaitu_guizhou_llm": "鄂尔泰改土归流（雍正·1726—1731）",
-    "neimenggu_huhehaote_llm": "归化城与旅蒙商（明—清）"
+    "neimenggu_huhehaote_llm": "归化城与旅蒙商（明—清）",
+    "guangdong_luofushan_llm": "葛洪罗浮山炼丹与道教南传（东晋）",
+    "guangdong_nanhai_maritime_llm": "汉唐南海海上丝路·广州通海夷道",
+    "guizhou_jianxing_llm": "明永乐贵州建省（1413）",
+    "guizhou_minority_craft_llm": "苗侗银饰与鼓楼营造（明—清）",
+    "hunan_wenxi_fire_llm": "长沙文夕大火（1938）",
+    "hunan_xiangjun_llm": "湘军与晚清兵制变革（1852—1864）",
+    "ningxia_dangxiang_llm": "党项羌游牧—农耕转型（宋—夏）",
+    "ningxia_xixia_tomb_llm": "西夏王陵与贺兰山岩画（宋—夏）",
+    "sichuan_bashu_bronze_llm": "古蜀青铜文明·三星堆与金沙（商—周）",
+    "sichuan_libai_llm": "李白与巴蜀文学（唐）",
+    "tianjin_concession_llm": "天津九国租界（1860—1902）",
+    "tianjin_railway_llm": "津沽铁路与中国自建铁路（1888）"
   }
 }

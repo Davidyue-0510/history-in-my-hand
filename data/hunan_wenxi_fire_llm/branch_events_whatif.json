@@ -1,0 +1,505 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "hunan_wenxi_fire_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1918,
+  1958
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1922,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.16（本支 0.56 / 史实 0.40）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.395,
+    "new_to": 0.557,
+    "cum": 0.162
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1923,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.20（本支 0.57 / 史实 0.37）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.374,
+    "new_to": 0.569,
+    "cum": 0.195
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1924,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.23（本支 0.58 / 史实 0.35）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.353,
+    "new_to": 0.58,
+    "cum": 0.227
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1925,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.26（本支 0.59 / 史实 0.33）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.332,
+    "new_to": 0.592,
+    "cum": 0.26
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1926,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.29（本支 0.60 / 史实 0.31）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.311,
+    "new_to": 0.603,
+    "cum": 0.292
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1927,
+   "severity": "warn",
+   "description": "改革指数偏离史实 0.33（本支 0.61 / 史实 0.29）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.29,
+    "new_to": 0.615,
+    "cum": 0.325
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1928,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.36（本支 0.63 / 史实 0.27）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.269,
+    "new_to": 0.626,
+    "cum": 0.357
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1929,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.39（本支 0.64 / 史实 0.25）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.248,
+    "new_to": 0.638,
+    "cum": 0.39
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1930,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.42（本支 0.65 / 史实 0.23）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.227,
+    "new_to": 0.649,
+    "cum": 0.422
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1931,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.46（本支 0.66 / 史实 0.21）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.206,
+    "new_to": 0.661,
+    "cum": 0.455
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1932,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.49（本支 0.67 / 史实 0.18）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.185,
+    "new_to": 0.672,
+    "cum": 0.487
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1933,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.52（本支 0.68 / 史实 0.16）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.164,
+    "new_to": 0.684,
+    "cum": 0.52
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1934,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.55（本支 0.70 / 史实 0.14）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.143,
+    "new_to": 0.695,
+    "cum": 0.552
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1935,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.58（本支 0.71 / 史实 0.12）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.122,
+    "new_to": 0.707,
+    "cum": 0.585
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1936,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.62（本支 0.72 / 史实 0.10）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.101,
+    "new_to": 0.718,
+    "cum": 0.617
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1937,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.65（本支 0.73 / 史实 0.08）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.08,
+    "new_to": 0.73,
+    "cum": 0.65
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1938,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.68（本支 0.74 / 史实 0.06）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.059,
+    "new_to": 0.741,
+    "cum": 0.682
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.71（本支 0.75 / 史实 0.04）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.038,
+    "new_to": 0.753,
+    "cum": 0.715
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.75（本支 0.76 / 史实 0.02）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.017,
+    "new_to": 0.764,
+    "cum": 0.747
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.78（本支 0.78 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.776,
+    "cum": 0.776
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1942,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.79（本支 0.79 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.787,
+    "cum": 0.787
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1943,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.80（本支 0.80 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.799,
+    "cum": 0.799
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1944,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.81（本支 0.81 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.81,
+    "cum": 0.81
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1945,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.82（本支 0.82 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.822,
+    "cum": 0.822
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1946,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.83（本支 0.83 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.833,
+    "cum": 0.833
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1947,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.84（本支 0.84 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.845,
+    "cum": 0.845
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1948,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.86（本支 0.86 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.856,
+    "cum": 0.856
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1949,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.87（本支 0.87 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.868,
+    "cum": 0.868
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1950,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.88（本支 0.88 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.879,
+    "cum": 0.879
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1951,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.89（本支 0.89 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.891,
+    "cum": 0.891
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1952,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.90（本支 0.90 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.902,
+    "cum": 0.902
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1953,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.91（本支 0.91 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.914,
+    "cum": 0.914
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1954,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.93（本支 0.93 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.925,
+    "cum": 0.925
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1955,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.94（本支 0.94 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.937,
+    "cum": 0.937
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1956,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.95（本支 0.95 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.948,
+    "cum": 0.948
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1957,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.96（本支 0.96 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.96,
+    "cum": 0.96
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1958,
+   "severity": "bad",
+   "description": "改革指数偏离史实 0.97（本支 0.97 / 史实 0.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.0,
+    "new_to": 0.971,
+    "cum": 0.971
+   },
+   "place_id": "nanmenwai"
+  },
+  {
+   "kind": "summary",
+   "year": 1958,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.97 / 史实 0.00（偏离 0.97）",
+   "evidence": {
+    "cum": 0.971,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "nanmenwai"
+  }
+ ]
+}
