@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_taiwan_camphor_llm_01",
+   "subject": "event:ev_taiwan_camphor_llm_01",
+   "year": 1885,
+   "era": "光緒十一年",
+   "title": "劉銘傳撫臺",
+   "kind": "行政",
+   "text": "劉銘傳就任臺灣巡撫，推行新政。",
+   "_source_idx": 0,
+   "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_camphor_llm_02",
+   "subject": "event:ev_taiwan_camphor_llm_02",
+   "year": 1887,
+   "era": "光緒十三年",
+   "title": "鐵路興建",
+   "kind": "建置",
+   "text": "開始興建基隆至新竹鐵路。",
+   "_source_idx": 0,
+   "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_taiwan_camphor_llm_03",
+   "subject": "event:ev_taiwan_camphor_llm_03",
+   "year": 1886,
+   "era": "光緒十二年",
+   "title": "樟腦專賣",
+   "kind": "行政",
+   "text": "設立樟腦專賣局，加強出口管理。",
+   "_source_idx": 0,
+   "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

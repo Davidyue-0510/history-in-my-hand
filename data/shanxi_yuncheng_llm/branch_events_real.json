@@ -1,0 +1,76 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "shanxi_yuncheng_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  618,
+  1370
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 626,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.76 / 史实 0.91）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.914,
+    "new_to": 0.761,
+    "cum": -0.153
+   },
+   "place_id": "hedong_yanchi"
+  },
+  {
+   "kind": "divergence",
+   "year": 627,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.79 / 史实 0.96）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.96,
+    "new_to": 0.79,
+    "cum": -0.17
+   },
+   "place_id": "hedong_yanchi"
+  },
+  {
+   "kind": "divergence",
+   "year": 628,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.819,
+    "cum": -0.181
+   },
+   "place_id": "hedong_yanchi"
+  },
+  {
+   "kind": "divergence",
+   "year": 629,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.848,
+    "cum": -0.152
+   },
+   "place_id": "hedong_yanchi"
+  },
+  {
+   "kind": "summary",
+   "year": 1370,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "hedong_yanchi"
+  }
+ ]
+}

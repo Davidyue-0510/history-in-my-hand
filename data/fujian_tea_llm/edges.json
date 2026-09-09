@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "xia_mei",
+   "to": "chong_an",
+   "type": "military",
+   "label": "茶路起点",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

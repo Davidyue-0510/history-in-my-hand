@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "yezi_zhai",
+   "to": "wuzhi_shan",
+   "type": "military",
+   "label": "起义后转战五指山",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wuzhi_shan",
+   "to": "murui_shan",
+   "type": "military",
+   "label": "建立母瑞山根据地",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

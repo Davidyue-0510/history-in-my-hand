@@ -1,0 +1,103 @@
+{
+  "places": [
+    {
+      "id": "dazu",
+      "name": "大足",
+      "type": "region",
+      "modern": "今重庆市大足区",
+      "note": "石窟群所在地",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baodingshan",
+      "name": "宝顶山",
+      "type": "region",
+      "modern": "今重庆市大足区宝顶山",
+      "note": "赵智凤营建",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "beishan",
+      "name": "北山",
+      "type": "region",
+      "modern": "今重庆市大足区北山",
+      "note": "石窟群之一",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nanshan",
+      "name": "南山",
+      "type": "region",
+      "modern": "今重庆市大足区南山",
+      "note": "石窟群之一",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shimenshan",
+      "name": "石门山",
+      "type": "region",
+      "modern": "今重庆市大足区石门山",
+      "note": "石窟群之一",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shizhuanshan",
+      "name": "石篆山",
+      "type": "region",
+      "modern": "今重庆市大足区石篆山",
+      "note": "石窟群之一",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "emeishan",
+      "name": "峨眉山",
+      "type": "region",
+      "modern": "今四川省峨眉山市",
+      "note": "佛教圣地",
+      "_source_idx": 0,
+      "_source_name": "大足石刻志 / 昌州图经",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 103.83,
+      "lat": 30.05,
+      "geo_note": "苏轼故里，今四川眉山",
+      "geo_match": "substring"
+    }
+  ]
+}

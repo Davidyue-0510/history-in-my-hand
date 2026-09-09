@@ -1,0 +1,54 @@
+{
+ "edges": [
+  {
+   "from": "jingdezhen",
+   "to": "ganjiang",
+   "type": "trade",
+   "label": "瓷器经赣江转输",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "hekou",
+   "to": "ganjiang",
+   "type": "trade",
+   "label": "纸张经赣江转输",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "wucheng",
+   "to": "ganjiang",
+   "type": "trade",
+   "label": "米粮经赣江转输",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "ganjiang",
+   "to": "dayu_ling",
+   "type": "trade",
+   "label": "赣江至大庾岭",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "dayu_ling",
+   "to": "meiguan",
+   "type": "trade",
+   "label": "过大庾岭梅关",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

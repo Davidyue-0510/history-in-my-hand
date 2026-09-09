@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "TAI__p01",
+   "name": "鄭成功",
+   "role": "明延平郡王",
+   "note": "率軍圍攻熱蘭遮城",
+   "_source_idx": 0,
+   "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "TAI__p02",
+   "name": "荷蘭總督",
+   "role": "荷蘭東印度公司總督",
+   "note": "守熱蘭遮城，後降",
+   "_source_idx": 0,
+   "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

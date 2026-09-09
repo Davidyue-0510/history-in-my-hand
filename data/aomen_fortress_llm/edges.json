@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "shishan",
+   "to": "sanbamen",
+   "type": "military",
+   "label": "大炮台建于柿山",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "mage",
+   "to": "nawan",
+   "type": "military",
+   "label": "妈阁炮台临南湾",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_lushan_llm_01",
+   "subject": "event:ev_jiangxi_lushan_llm_01",
+   "year": 402,
+   "era": "东晋元兴元年",
+   "title": "慧远结白莲社",
+   "kind": "其他",
+   "text": "慧远集僧俗123人于庐山立誓往生净土",
+   "_source_idx": 0,
+   "_source_name": "高僧传·慧远（梁）/ 庐山记",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_lushan_llm_02",
+   "subject": "event:ev_jiangxi_lushan_llm_02",
+   "year": 416,
+   "era": "东晋义熙十二年",
+   "title": "慧远示寂",
+   "kind": "其他",
+   "text": "慧远卒于东林寺，年八十三",
+   "_source_idx": 0,
+   "_source_name": "高僧传·慧远（梁）/ 庐山记",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_tea_llm_01",
+   "subject": "event:ev_fujian_tea_llm_01",
+   "year": 1644,
+   "era": "明末清初",
+   "title": "乌龙茶创制",
+   "kind": "其他",
+   "text": "始制乌龙、红茶",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_tea_llm_02",
+   "subject": "event:ev_fujian_tea_llm_02",
+   "year": 1689,
+   "era": "清康熙年间",
+   "title": "茶市兴起",
+   "kind": "其他",
+   "text": "星村下梅成茶市",
+   "_source_idx": 0,
+   "_source_name": "武夷山志·茶考 / 闽产录异",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xizang_amban_llm_01",
+   "subject": "event:ev_xizang_amban_llm_01",
+   "year": 1727,
+   "era": "雍正五年",
+   "title": "设驻藏大臣",
+   "kind": "建置",
+   "text": "设驻藏大臣总理西藏事务",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xizang_amban_llm_02",
+   "subject": "event:ev_xizang_amban_llm_02",
+   "year": 1793,
+   "era": "乾隆五十八年",
+   "title": "颁钦定章程",
+   "kind": "行政",
+   "text": "颁《钦定藏内善后章程》定金瓶掣签",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

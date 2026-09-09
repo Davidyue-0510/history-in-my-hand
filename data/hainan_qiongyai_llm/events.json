@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_hainan_qiongyai_llm_01",
+   "subject": "event:ev_hainan_qiongyai_llm_01",
+   "year": 1927,
+   "era": "民国十六年九月",
+   "title": "椰子寨起义",
+   "kind": "战事",
+   "text": "中共琼崖特委发动起义，建工农革命军",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_hainan_qiongyai_llm_02",
+   "subject": "event:ev_hainan_qiongyai_llm_02",
+   "year": 1950,
+   "era": "公元一九五零年四月",
+   "title": "海南全岛解放",
+   "kind": "战事",
+   "text": "接应第四野战军登陆，解放海南",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

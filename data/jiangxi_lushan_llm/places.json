@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "lushan",
+      "name": "庐山",
+      "type": "region",
+      "modern": "今中国江西省九江市",
+      "note": "慧远居此山",
+      "_source_idx": 0,
+      "_source_name": "高僧传·慧远（梁）/ 庐山记",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jiangzhou",
+      "name": "江州",
+      "type": "city",
+      "modern": "今中国江西省九江市",
+      "note": "庐山所在州郡",
+      "_source_idx": 0,
+      "_source_name": "高僧传·慧远（梁）/ 庐山记",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "donglinsi",
+      "name": "东林寺",
+      "type": "fortress",
+      "modern": "今中国江西省九江市庐山西北麓",
+      "note": "慧远所居寺院",
+      "_source_idx": 0,
+      "_source_name": "高僧传·慧远（梁）/ 庐山记",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "huxi",
+      "name": "虎溪",
+      "type": "region",
+      "modern": "今中国江西省九江市庐山东林寺前",
+      "note": "虎溪三笑故事发生地",
+      "_source_idx": 0,
+      "_source_name": "高僧传·慧远（梁）/ 庐山记",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

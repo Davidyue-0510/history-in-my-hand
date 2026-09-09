@@ -1,0 +1,50 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "taiwan_camphor_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1885,
+  1887
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.438,
+    "cum": -0.182
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.41 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.408,
+    "cum": -0.272
+   },
+   "place_id": "taiwan"
+  },
+  {
+   "kind": "summary",
+   "year": 1887,
+   "severity": "warn",
+   "description": "终局改革指数：本支 0.41 / 史实 0.68（偏离 -0.27）",
+   "evidence": {
+    "cum": -0.272,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "taiwan"
+  }
+ ]
+}

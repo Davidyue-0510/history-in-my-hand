@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "yazhou",
+   "to": "songjiang",
+   "type": "military",
+   "label": "黄道婆归乡路线",
+   "_source_idx": 0,
+   "_source_name": "黎岐纪闻 / 诸蕃志·海南",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

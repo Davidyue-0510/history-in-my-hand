@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_fortress_llm_01",
+   "subject": "event:ev_aomen_fortress_llm_01",
+   "year": 1623,
+   "era": "明天启三年",
+   "title": "建大炮台",
+   "kind": "建置",
+   "text": "葡人筑大炮台于柿山",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_fortress_llm_02",
+   "subject": "event:ev_aomen_fortress_llm_02",
+   "year": 1751,
+   "era": "清乾隆十六年",
+   "title": "《澳门纪略》成书",
+   "kind": "其他",
+   "text": "详载澳门炮台与城防",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

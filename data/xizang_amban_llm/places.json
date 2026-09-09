@@ -1,0 +1,33 @@
+{
+  "places": [
+    {
+      "id": "tibet",
+      "name": "西藏",
+      "type": "region",
+      "modern": "中国西藏",
+      "note": "驻藏大臣辖区",
+      "_source_idx": 0,
+      "_source_name": "清史稿·西藏传 / 卫藏通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yonghegong",
+      "name": "雍和宫",
+      "type": "fortress",
+      "modern": "中国北京",
+      "note": "金瓶掣签处",
+      "_source_idx": 0,
+      "_source_name": "清史稿·西藏传 / 卫藏通志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 107.39,
+      "lat": 34.52,
+      "geo_note": "秦都（德公至献公），今陕西凤翔",
+      "geo_match": "substring"
+    }
+  ]
+}

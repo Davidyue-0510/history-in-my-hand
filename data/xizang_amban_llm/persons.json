@@ -1,0 +1,54 @@
+{
+ "persons": [
+  {
+   "id": "XIZ__p01",
+   "name": "雍正帝",
+   "role": "清朝皇帝",
+   "note": "设驻藏大臣",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p02",
+   "name": "乾隆帝",
+   "role": "清朝皇帝",
+   "note": "颁金瓶掣签章程",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p03",
+   "name": "达赖喇嘛",
+   "role": "西藏政教领袖",
+   "note": "转世需掣签",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p04",
+   "name": "班禅额尔德尼",
+   "role": "西藏政教领袖",
+   "note": "转世需掣签",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIZ__p05",
+   "name": "驻藏大臣",
+   "role": "清朝驻藏官员",
+   "note": "总理西藏事务",
+   "_source_idx": 0,
+   "_source_name": "清史稿·西藏传 / 卫藏通志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

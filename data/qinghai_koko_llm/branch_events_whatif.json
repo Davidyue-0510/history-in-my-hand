@@ -1,0 +1,804 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "qinghai_koko_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  579,
+  639
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 580,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.463,
+    "cum": -0.157
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 581,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.45 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.445,
+    "cum": -0.235
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 582,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.43 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.427,
+    "cum": -0.313
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 583,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.41 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.409,
+    "cum": -0.391
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 584,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.39 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.39,
+    "cum": -0.47
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 585,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.37 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.372,
+    "cum": -0.548
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 586,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.35 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.354,
+    "cum": -0.626
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 587,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.34 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.335,
+    "cum": -0.665
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 588,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.32 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.317,
+    "cum": -0.683
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 589,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.299,
+    "cum": -0.701
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 590,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.281,
+    "cum": -0.719
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 591,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.262,
+    "cum": -0.738
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 592,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.244,
+    "cum": -0.756
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 593,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.226,
+    "cum": -0.774
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 594,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.207,
+    "cum": -0.793
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 595,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.189,
+    "cum": -0.811
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 596,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.171,
+    "cum": -0.829
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 597,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.153,
+    "cum": -0.847
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 598,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.87（本支 0.13 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.134,
+    "cum": -0.866
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 599,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.116,
+    "cum": -0.884
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 600,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.098,
+    "cum": -0.902
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 601,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.08,
+    "cum": -0.92
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 602,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.061,
+    "cum": -0.939
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 603,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.043,
+    "cum": -0.957
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 604,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.025,
+    "cum": -0.975
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 605,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.006,
+    "cum": -0.994
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 606,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 607,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 608,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 609,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 610,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 611,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 612,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 613,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 614,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 615,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 616,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 617,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 618,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 619,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 620,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 621,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 622,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 623,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 624,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 625,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 626,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 627,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 628,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 629,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 630,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 631,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 632,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 633,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 634,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 635,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 636,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 637,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 638,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "divergence",
+   "year": 639,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "fuyuan_chuan"
+  },
+  {
+   "kind": "summary",
+   "year": 639,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "fuyuan_chuan"
+  }
+ ]
+}

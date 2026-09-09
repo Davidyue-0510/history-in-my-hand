@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "ganjiang",
+      "name": "赣江",
+      "type": "river",
+      "modern": "中国江西省",
+      "note": "贯穿江西全省",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "meiguan",
+      "name": "梅关",
+      "type": "pass",
+      "modern": "中国江西大余与广东南雄交界",
+      "note": "南北通衢",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jingdezhen",
+      "name": "景德镇",
+      "type": "city",
+      "modern": "中国江西省景德镇市",
+      "note": "产瓷",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hekou",
+      "name": "河口",
+      "type": "town",
+      "modern": "中国江西省铅山县河口镇",
+      "note": "产纸",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wucheng",
+      "name": "吴城",
+      "type": "town",
+      "modern": "中国江西省永修县吴城镇",
+      "note": "米市",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dayu_ling",
+      "name": "大庾岭",
+      "type": "mountain",
+      "modern": "中国江西与广东交界",
+      "note": "梅关所在",
+      "_source_idx": 0,
+      "_source_name": "江西通志·舆地 / 墟镇考",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

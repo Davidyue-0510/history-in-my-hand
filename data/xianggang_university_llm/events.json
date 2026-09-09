@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_university_llm_01",
+   "subject": "event:ev_xianggang_university_llm_01",
+   "year": 1887,
+   "era": "光绪十三年",
+   "title": "香港西医书院创立",
+   "kind": "建置",
+   "text": "香港西医书院创立，孙中山曾肄业",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_university_llm_02",
+   "subject": "event:ev_xianggang_university_llm_02",
+   "year": 1911,
+   "era": "宣统三年",
+   "title": "香港大学创立",
+   "kind": "建置",
+   "text": "香港大学创立于般含道，设三学院",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

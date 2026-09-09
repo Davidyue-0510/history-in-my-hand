@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "fuyuan_chuan",
+   "to": "fusi_cheng",
+   "type": "military",
+   "label": "隋军破吐谷浑后进逼",
+   "_source_idx": 0,
+   "_source_name": "隋书·吐谷浑传 / 水经注·河水",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "xihai_jun",
+   "to": "zhangye",
+   "type": "military",
+   "label": "青海道通西域",
+   "_source_idx": 0,
+   "_source_name": "隋书·吐谷浑传 / 水经注·河水",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

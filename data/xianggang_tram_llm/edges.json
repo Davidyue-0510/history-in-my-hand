@@ -1,0 +1,24 @@
+{
+ "edges": [
+  {
+   "from": "shau_kei_wan",
+   "to": "kennedy_town",
+   "type": "military",
+   "label": "电车线贯东西",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "from": "victoria_peak",
+   "to": "hongkong_island",
+   "type": "military",
+   "label": "缆车连接山顶与海埠",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "victoria_peak",
+      "name": "维多利亚峰",
+      "type": "region",
+      "modern": "今香港太平山",
+      "note": "山顶缆车所攀之峰。",
+      "_source_idx": 0,
+      "_source_name": "香港电车公司档案 / 工务司报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hongkong_island",
+      "name": "港岛",
+      "type": "region",
+      "modern": "今香港岛",
+      "note": "电车行驰之区域。",
+      "_source_idx": 0,
+      "_source_name": "香港电车公司档案 / 工务司报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shenzhen_river",
+      "name": "深圳河",
+      "type": "region",
+      "modern": "今中国深圳与香港界河",
+      "note": "九广铁路英段终点。",
+      "_source_idx": 0,
+      "_source_name": "香港电车公司档案 / 工务司报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shau_kei_wan",
+      "name": "筲箕湾",
+      "type": "port",
+      "modern": "今香港筲箕湾",
+      "note": "电车线东端。",
+      "_source_idx": 0,
+      "_source_name": "香港电车公司档案 / 工务司报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "kennedy_town",
+      "name": "坚尼地城",
+      "type": "city",
+      "modern": "今香港坚尼地城",
+      "note": "电车线西端。",
+      "_source_idx": 0,
+      "_source_name": "香港电车公司档案 / 工务司报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

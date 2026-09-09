@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "fujian_tea_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  960,
+  1644
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 968,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.695,
+    "cum": -0.165
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 969,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.72 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.717,
+    "cum": -0.183
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 970,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.74 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.739,
+    "cum": -0.201
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 971,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.76 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.761,
+    "cum": -0.219
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 972,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.782,
+    "cum": -0.218
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 973,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.804,
+    "cum": -0.196
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 974,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.826,
+    "cum": -0.174
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "divergence",
+   "year": 975,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.847,
+    "cum": -0.153
+   },
+   "place_id": "wuyi_shan"
+  },
+  {
+   "kind": "summary",
+   "year": 1644,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "wuyi_shan"
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "XIA__p01",
+   "name": "卢吉",
+   "role": "香港大学倡办人，香港总督",
+   "note": "倡言沟通中英文化",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p02",
+   "name": "孙中山",
+   "role": "香港西医书院肄业生",
+   "note": "曾肄业于香港西医书院",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p03",
+   "name": "赖捐施",
+   "role": "华商",
+   "note": "资助香港大学创立",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "XIA__p04",
+   "name": "何东",
+   "role": "华商",
+   "note": "资助香港大学创立",
+   "_source_idx": 0,
+   "_source_name": "香港大学史 / 创立章程（1911）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

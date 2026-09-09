@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_yuncheng_llm_01",
+   "subject": "event:ev_shanxi_yuncheng_llm_01",
+   "year": -140,
+   "era": "汉",
+   "title": "汉置护盐都尉",
+   "kind": "建置",
+   "text": "汉设护盐都尉管理河东盐池",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_yuncheng_llm_02",
+   "subject": "event:ev_shanxi_yuncheng_llm_02",
+   "year": 618,
+   "era": "唐",
+   "title": "唐设女盐监",
+   "kind": "建置",
+   "text": "唐设女盐监管理盐务",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_yuncheng_llm_03",
+   "subject": "event:ev_shanxi_yuncheng_llm_03",
+   "year": 960,
+   "era": "宋",
+   "title": "宋行钞引",
+   "kind": "制度",
+   "text": "宋代实行盐钞引制度",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shanxi_yuncheng_llm_04",
+   "subject": "event:ev_shanxi_yuncheng_llm_04",
+   "year": 1370,
+   "era": "明初",
+   "title": "明行开中法",
+   "kind": "制度",
+   "text": "明初开中法召商输粮与盐",
+   "_source_idx": 0,
+   "_source_name": "史记·货殖列传 / 河东盐法志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

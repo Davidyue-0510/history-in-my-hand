@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "HAI__p01",
+   "name": "冯白驹",
+   "role": "琼崖特委书记、纵队司令员",
+   "note": "琼崖革命主要领导人",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "HAI__p02",
+   "name": "中共琼崖特委",
+   "role": "党组织",
+   "note": "领导琼崖革命",
+   "_source_idx": 0,
+   "_source_name": "琼崖纵队史 / 海南解放战史",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "shandong_canal_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1264,
+  1403
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1271,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.81 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.813,
+    "cum": -0.167
+   },
+   "place_id": "huitonghe"
+  },
+  {
+   "kind": "summary",
+   "year": 1403,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "huitonghe"
+  }
+ ]
+}

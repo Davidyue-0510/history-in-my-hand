@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_shanxi_pingyao_llm_01",
+   "subject": "event:ev_shanxi_pingyao_llm_01",
+   "year": 1370,
+   "era": "明洪武三年",
+   "title": "重筑平遥砖城",
+   "kind": "建置",
+   "text": "明洪武三年重筑平遥砖城",
+   "_source_idx": 0,
+   "_source_name": "山西通志·城池（光绪）/ 平遥县志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

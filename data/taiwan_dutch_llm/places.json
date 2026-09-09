@@ -1,0 +1,60 @@
+{
+  "places": [
+    {
+      "id": "zeelandia",
+      "name": "熱蘭遮城",
+      "type": "fortress",
+      "modern": "今台灣台南安平古堡",
+      "note": "荷蘭所築城堡",
+      "_source_idx": 0,
+      "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dayuan",
+      "name": "大員",
+      "type": "port",
+      "modern": "今台灣台南",
+      "note": "荷蘭據台之據點",
+      "_source_idx": 0,
+      "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "batavia",
+      "name": "巴達維亞",
+      "type": "city",
+      "modern": "今印尼雅加達",
+      "note": "荷蘭東印度公司總部",
+      "_source_idx": 0,
+      "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "provintia",
+      "name": "普羅民遮城",
+      "type": "fortress",
+      "modern": "今台灣台南赤崁樓",
+      "note": "荷蘭另築之城",
+      "_source_idx": 0,
+      "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

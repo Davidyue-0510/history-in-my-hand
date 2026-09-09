@@ -1,0 +1,17 @@
+{
+ "events": [
+  {
+   "id": "ev_chongqing_ciqikou_llm_01",
+   "subject": "event:ev_chongqing_ciqikou_llm_01",
+   "year": 1891,
+   "era": "清光绪十七年",
+   "title": "重庆开埠",
+   "kind": "行政",
+   "text": "重庆正式开埠，码头贸易兴盛。",
+   "_source_idx": 0,
+   "_source_name": "巴县志·市镇 / 重庆商会档案",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,323 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "hainan_qiongyai_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1927,
+  1950
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1928,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.442,
+    "cum": -0.178
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1929,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.41 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.413,
+    "cum": -0.267
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1930,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.38 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.384,
+    "cum": -0.356
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1931,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.45（本支 0.36 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.355,
+    "cum": -0.445
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1932,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.53（本支 0.33 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.326,
+    "cum": -0.534
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1933,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.62（本支 0.30 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.297,
+    "cum": -0.623
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1934,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.27 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.268,
+    "cum": -0.712
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1935,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.239,
+    "cum": -0.761
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1936,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.21,
+    "cum": -0.79
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1937,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.181,
+    "cum": -0.819
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1938,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.152,
+    "cum": -0.848
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.123,
+    "cum": -0.877
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.094,
+    "cum": -0.906
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.07 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.065,
+    "cum": -0.935
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1942,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.036,
+    "cum": -0.964
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1943,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.007,
+    "cum": -0.993
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1944,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1945,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1946,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1947,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1948,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1949,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "divergence",
+   "year": 1950,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "yezi_zhai"
+  },
+  {
+   "kind": "summary",
+   "year": 1950,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "yezi_zhai"
+  }
+ ]
+}

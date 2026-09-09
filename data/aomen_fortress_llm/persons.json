@@ -1,0 +1,24 @@
+{
+ "persons": [
+  {
+   "id": "AOM__p01",
+   "name": "葡人",
+   "role": "居澳葡萄牙人",
+   "note": "筑炮台自固",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "AOM__p02",
+   "name": "中国官员",
+   "role": "明清设关守澳门",
+   "note": "管理澳门城防",
+   "_source_idx": 0,
+   "_source_name": "澳门纪略（印光任、张汝霖）/ 澳门炮台图",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

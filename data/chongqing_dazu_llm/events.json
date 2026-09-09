@@ -1,0 +1,14 @@
+{
+ "events": [
+  {
+   "subject": "event:ev_cho_dazu_01",
+   "year": 892,
+   "era": "唐末",
+   "title": "北山摩崖造像始凿",
+   "kind": "founding",
+   "text": "唐景福元年（892）昌州刺史韦君靖于北山凿崖造像，为大足石窟之始，其后两宋续凿宝顶山等处。",
+   "place": "beishan",
+   "id": "ev_cho_dazu_01"
+  }
+ ]
+}

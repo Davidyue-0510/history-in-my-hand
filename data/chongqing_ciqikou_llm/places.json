@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "type": "city",
+      "modern": "中国重庆市",
+      "note": "巴蜀咽喉，两江交汇",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "ciqikou",
+      "name": "磁器口",
+      "type": "port",
+      "modern": "中国重庆市沙坪坝区",
+      "note": "商贸繁盛之地",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "chaotianmen",
+      "name": "朝天门",
+      "type": "port",
+      "modern": "中国重庆市渝中区",
+      "note": "重庆主要码头",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "linjiangmen",
+      "name": "临江门",
+      "type": "port",
+      "modern": "中国重庆市渝中区",
+      "note": "重庆城门码头",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xulu",
+      "name": "叙泸",
+      "type": "region",
+      "modern": "中国四川宜宾、泸州",
+      "note": "上游地区",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hanhu",
+      "name": "汉沪",
+      "type": "region",
+      "modern": "中国武汉、上海",
+      "note": "下游地区",
+      "_source_idx": 0,
+      "_source_name": "巴县志·市镇 / 重庆商会档案",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

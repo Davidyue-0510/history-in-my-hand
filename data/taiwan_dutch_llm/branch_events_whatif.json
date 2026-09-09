@@ -1,0 +1,518 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "taiwan_dutch_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1624,
+  1662
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1625,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.462,
+    "cum": -0.158
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1626,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.44 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.442,
+    "cum": -0.238
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1627,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.32（本支 0.42 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.423,
+    "cum": -0.317
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1628,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.40（本支 0.40 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.404,
+    "cum": -0.396
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1629,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.38 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.385,
+    "cum": -0.475
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1630,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.37 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.366,
+    "cum": -0.554
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1631,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.35 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.347,
+    "cum": -0.633
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1632,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.33 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.327,
+    "cum": -0.673
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1633,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.31 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.308,
+    "cum": -0.692
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1634,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.289,
+    "cum": -0.711
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1635,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.27,
+    "cum": -0.73
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1636,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.75（本支 0.25 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.251,
+    "cum": -0.749
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1637,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.232,
+    "cum": -0.768
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1638,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.212,
+    "cum": -0.788
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1639,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.81（本支 0.19 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.193,
+    "cum": -0.807
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1640,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.174,
+    "cum": -0.826
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1641,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.84（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.155,
+    "cum": -0.845
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1642,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.136,
+    "cum": -0.864
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1643,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.116,
+    "cum": -0.884
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1644,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.097,
+    "cum": -0.903
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1645,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.078,
+    "cum": -0.922
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1646,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.059,
+    "cum": -0.941
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1647,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.04,
+    "cum": -0.96
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1648,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.021,
+    "cum": -0.979
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1649,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.001,
+    "cum": -0.999
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1650,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1651,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1652,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1653,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1654,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1655,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1656,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1657,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1658,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1659,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1660,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1661,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "divergence",
+   "year": 1662,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "zeelandia"
+  },
+  {
+   "kind": "summary",
+   "year": 1662,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "zeelandia"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_fujian_zen_llm_01",
+   "subject": "event:ev_fujian_zen_llm_01",
+   "year": 900,
+   "era": "唐末",
+   "title": "雪峰弘法",
+   "kind": "其他",
+   "text": "雪峰义存住福州雪峰山，四方来学",
+   "_source_idx": 0,
+   "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_fujian_zen_llm_02",
+   "subject": "event:ev_fujian_zen_llm_02",
+   "year": 900,
+   "era": "唐末",
+   "title": "分灯立宗",
+   "kind": "其他",
+   "text": "文偃创云门宗，师备下出法眼宗",
+   "_source_idx": 0,
+   "_source_name": "祖堂集·雪峰义存（南唐）/ 五灯会元",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,544 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "chongqing_ciqikou_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1871,
+  1911
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1872,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.44 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.436,
+    "cum": -0.184
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1873,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.40 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.68,
+    "new_to": 0.404,
+    "cum": -0.276
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1874,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.37（本支 0.37 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.371,
+    "cum": -0.369
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1875,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.46（本支 0.34 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.339,
+    "cum": -0.461
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1876,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.31 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.307,
+    "cum": -0.553
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1877,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.65（本支 0.27 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.275,
+    "cum": -0.645
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1878,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.24 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.243,
+    "cum": -0.737
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1879,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.211,
+    "cum": -0.789
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1880,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.178,
+    "cum": -0.822
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1881,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.146,
+    "cum": -0.854
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1882,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.89（本支 0.11 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.114,
+    "cum": -0.886
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1883,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.92（本支 0.08 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.082,
+    "cum": -0.918
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1884,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.95（本支 0.05 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.05,
+    "cum": -0.95
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1885,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.98（本支 0.02 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.018,
+    "cum": -0.982
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1886,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1887,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1888,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1889,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1890,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1891,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1892,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1893,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1894,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1895,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1896,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1897,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1898,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1899,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1900,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1901,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1902,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1903,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1904,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1905,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1906,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1907,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1908,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1910,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "divergence",
+   "year": 1911,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chongqing"
+  },
+  {
+   "kind": "summary",
+   "year": 1911,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "chongqing"
+  }
+ ]
+}

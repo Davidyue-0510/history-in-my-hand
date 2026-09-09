@@ -35,6 +35,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "AOM_015",
+   "scene": "aomen_fortress_llm",
+   "subject": "place:aomen",
+   "title": "炮台具体数量未明",
+   "missing": "考古 / 文献考证",
+   "where": "澳门炮台遗址",
+   "skills": [
+    "考古",
+    "文献考证"
+   ],
+   "accept": "需进一步考古发掘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "AOM_014",
    "scene": "aomen_huigui_llm",
    "subject": "event:ev_aomen_huigui_llm_03",
@@ -174,6 +190,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 8
+  },
+  {
+   "id": "AOM_012",
+   "scene": "aomen_stpaul_llm",
+   "subject": "event:ev_aomen_stpaul_llm_01",
+   "title": "炮术课程具体内容不详",
+   "missing": "葡萄牙语 / 历史文献学",
+   "where": "澳门档案馆",
+   "skills": [
+    "葡萄牙语",
+    "历史文献学"
+   ],
+   "accept": "炮术教学细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "BAIJIAG01",
@@ -621,6 +653,53 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "CHO_011",
+   "scene": "chongqing_ciqikou_llm",
+   "subject": "place:chongqing",
+   "title": "九门具体名称待考",
+   "missing": "文献考据",
+   "where": "重庆地方志",
+   "skills": [
+    "文献考据"
+   ],
+   "accept": "需查证九门名称",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "CHO_012",
+   "scene": "chongqing_dazu_llm",
+   "subject": "place:baodingshan",
+   "title": "具体数字待考",
+   "missing": "考古测量 / 文献考据",
+   "where": "大足石刻研究院档案",
+   "skills": [
+    "考古测量",
+    "文献考据"
+   ],
+   "accept": "精确统计造像数量",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "CHO_013",
+   "scene": "chongqing_dazu_llm",
+   "subject": "place:baodingshan",
+   "title": "原文未明，待考",
+   "missing": "宗教史 / 社会史",
+   "where": "南宋佛教史文献",
+   "skills": [
+    "宗教史",
+    "社会史"
+   ],
+   "accept": "揭示营建背景",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "CHO_017",
@@ -1236,6 +1315,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "FUJ_014",
+   "scene": "fujian_tea_llm",
+   "subject": "place:wuyi_shan",
+   "title": "万里茶路终点未明",
+   "missing": "历史地理 / 贸易史",
+   "where": "下梅村",
+   "skills": [
+    "历史地理",
+    "贸易史"
+   ],
+   "accept": "补充茶路终点",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
    "id": "FUJ_010",
    "scene": "fujian_xiamen_llm",
    "subject": "place:gulangyu",
@@ -1266,6 +1361,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 11
+  },
+  {
+   "id": "FUJ_015",
+   "scene": "fujian_zen_llm",
+   "subject": "place:xuefeng",
+   "title": "晚唐五代东南禅学中心",
+   "missing": "禅宗史",
+   "where": "雪峰山",
+   "skills": [
+    "禅宗史"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
   },
   {
    "id": "F010",
@@ -1973,6 +2083,37 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "HAI_011",
+   "scene": "hainan_li_llm",
+   "subject": "event:ev_hainan_li_llm_01",
+   "title": "黎人具体纺织工具未详",
+   "missing": "纺织工具考古 / 民族学调查",
+   "where": "海南黎族村寨",
+   "skills": [
+    "纺织工具考古",
+    "民族学调查"
+   ],
+   "accept": "补充黎人纺织工具细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "HAI_013",
+   "scene": "hainan_qiongyai_llm",
+   "subject": "event:ev_hainan_qiongyai_llm_01",
+   "title": "具体兵力不详",
+   "missing": "军事史",
+   "where": "椰子寨",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "起义军人数",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "HAI_013",
@@ -2836,6 +2977,22 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "JIA_012",
+   "scene": "jiangxi_ganjiang_llm",
+   "subject": "event:ev_jiangxi_ganjiang_llm_01",
+   "title": "江右商帮起源时间不明",
+   "missing": "文献考证 / 经济史分析",
+   "where": "江西地方志、商书",
+   "skills": [
+    "文献考证",
+    "经济史分析"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "JIA_014",
    "scene": "jiangxi_jingdezhen",
    "subject": "place:jingdezhen",
@@ -2849,6 +3006,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 14
+  },
+  {
+   "id": "JIA_013",
+   "scene": "jiangxi_lushan_llm",
+   "subject": "event:ev_jiangxi_lushan_llm_01",
+   "title": "慧远结社动机未明",
+   "missing": "历史学",
+   "where": "庐山",
+   "skills": [
+    "历史学"
+   ],
+   "accept": "需进一步考证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
   },
   {
    "id": "JIA_009",
@@ -4565,6 +4737,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 15
   },
   {
+   "id": "QIN_019",
+   "scene": "qinghai_koko_llm",
+   "subject": "event:ev_qinghai_koko_llm_02",
+   "title": "隋军兵力不详",
+   "missing": "军事史",
+   "where": "隋书·炀帝纪",
+   "skills": [
+    "军事史"
+   ],
+   "accept": "补充隋军兵力数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "QIN_012",
+   "scene": "qinghai_longwu_llm",
+   "subject": "place:longwu_si",
+   "title": "具体年份不详",
+   "missing": "历史文献学 / 藏学",
+   "where": "隆务寺志或地方档案",
+   "skills": [
+    "历史文献学",
+    "藏学"
+   ],
+   "accept": "需查证具体建寺年份",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "QIN_007",
    "scene": "qinghai_tuyuhun",
    "subject": "event:ev_qinghai_tuyuhun_02",
@@ -4831,6 +5034,37 @@ window.SANDBOX_LEADS = {
    "_src_line": 84
   },
   {
+   "id": "SHA_011",
+   "scene": "shandong_canal_llm",
+   "subject": "place:daicunba",
+   "title": "戴村坝今存否未详",
+   "missing": "考古 / 水利史",
+   "where": "戴村坝遗址",
+   "skills": [
+    "考古",
+    "水利史"
+   ],
+   "accept": "实地调查",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shandong_canal_llm",
+   "subject": "event:ev_shandong_canal_llm_02",
+   "title": "实际分水比例或异",
+   "missing": "水文模拟",
+   "where": "南旺分水口",
+   "skills": [
+    "水文模拟"
+   ],
+   "accept": "数值模拟",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "SHA_015",
    "scene": "shandong_jixia",
    "subject": "event:ev_shandong_jixia_01",
@@ -4845,6 +5079,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shandong_kongfu_llm",
+   "subject": "place:qufu",
+   "title": "世袭是否中断待考",
+   "missing": "历史考证",
+   "where": "曲阜孔府档案",
+   "skills": [
+    "历史考证"
+   ],
+   "accept": "需查证世系",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SHA_011",
@@ -5016,6 +5265,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "SHA_012",
+   "scene": "shanxi_yuncheng_llm",
+   "subject": "event:ev_shanxi_yuncheng_llm_04",
+   "title": "开中法是否长期有效存疑",
+   "missing": "档案分析",
+   "where": "明代盐引档案",
+   "skills": [
+    "档案分析"
+   ],
+   "accept": "开中法实际执行数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "SHA_011",
@@ -5614,6 +5878,52 @@ window.SANDBOX_LEADS = {
     "多源比对"
    ],
    "accept": "补各方视角与纪年异文",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "TAI_013",
+   "scene": "taiwan_camphor_llm",
+   "subject": "place:taiwan",
+   "title": "樟腦出口量未詳",
+   "missing": "歷史文獻分析",
+   "where": "海關檔案",
+   "skills": [
+    "歷史文獻分析"
+   ],
+   "accept": "查得具體出口噸數",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "TAI_014",
+   "scene": "taiwan_camphor_llm",
+   "subject": "place:taiwan",
+   "title": "茶葉出口值待考",
+   "missing": "經濟史",
+   "where": "淡水海關報告",
+   "skills": [
+    "經濟史"
+   ],
+   "accept": "取得茶葉出口統計",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "TAI_012",
+   "scene": "taiwan_dutch_llm",
+   "subject": "event:ev_taiwan_dutch_llm_03",
+   "title": "荷蘭投降條件未詳",
+   "missing": "荷蘭語 / 檔案解讀",
+   "where": "荷蘭東印度公司檔案",
+   "skills": [
+    "荷蘭語",
+    "檔案解讀"
+   ],
+   "accept": "查閱投降條約原文",
    "effort": "—",
    "issue_url": null,
    "_src_line": 12
@@ -6480,6 +6790,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "XIA_015",
+   "scene": "xianggang_tram_llm",
+   "subject": "event:ev_xianggang_tram_llm_04",
+   "title": "山顶与海埠",
+   "missing": "历史地理",
+   "where": "原文未明确",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "待考",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
    "id": "XIA_003",
    "scene": "xianggang_tunmen",
    "subject": "event:ev_xianggang_tunmen_01",
@@ -6493,6 +6818,21 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 3
+  },
+  {
+   "id": "XIA_012",
+   "scene": "xianggang_university_llm",
+   "subject": "event:ev_xianggang_university_llm_02",
+   "title": "般含道选址原因未明",
+   "missing": "历史地理",
+   "where": "香港大学档案",
+   "skills": [
+    "历史地理"
+   ],
+   "accept": "般含道选址原因",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
   },
   {
    "id": "XIAOWENG01",
@@ -6729,6 +7069,21 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "XIZ_011",
+   "scene": "xizang_amban_llm",
+   "subject": "event:ev_xizang_amban_llm_02",
+   "title": "掣签细节未详",
+   "missing": "历史档案学",
+   "where": "清宫档案",
+   "skills": [
+    "历史档案学"
+   ],
+   "accept": "补充仪式细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 11
+  },
+  {
    "id": "XIZ_013",
    "scene": "xizang_gorkha_llm",
    "subject": "event:ev_xizang_gorkha_llm_02",
@@ -6758,6 +7113,22 @@ window.SANDBOX_LEADS = {
    "effort": "—",
    "issue_url": null,
    "_src_line": 15
+  },
+  {
+   "id": "XIZ_014",
+   "scene": "xizang_pagoda_llm",
+   "subject": "event:ev_xizang_pagoda_llm_01",
+   "title": "为弘扬佛法而建",
+   "missing": "藏文文献 / 考古",
+   "where": "桑耶寺志",
+   "skills": [
+    "藏文文献",
+    "考古"
+   ],
+   "accept": "补充建寺背景",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
   },
   {
    "id": "XIZ_014",

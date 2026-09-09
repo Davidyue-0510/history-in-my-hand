@@ -1,0 +1,180 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "fujian_zen_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  822,
+  900
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 835,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.69 / 史实 0.85）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.85,
+    "new_to": 0.69,
+    "cum": -0.16
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 836,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.70 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.875,
+    "new_to": 0.704,
+    "cum": -0.171
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 837,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.72 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.717,
+    "cum": -0.183
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 838,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.73 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.925,
+    "new_to": 0.731,
+    "cum": -0.194
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 839,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.74 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.95,
+    "new_to": 0.744,
+    "cum": -0.206
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 840,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.76 / 史实 0.97）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.975,
+    "new_to": 0.758,
+    "cum": -0.217
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 841,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.771,
+    "cum": -0.229
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 842,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.785,
+    "cum": -0.215
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 843,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.799,
+    "cum": -0.201
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 844,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.812,
+    "cum": -0.188
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 845,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.826,
+    "cum": -0.174
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "divergence",
+   "year": 846,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.839,
+    "cum": -0.161
+   },
+   "place_id": "xuefeng"
+  },
+  {
+   "kind": "summary",
+   "year": 900,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xuefeng"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "hongkong_university",
+      "name": "香港大学",
+      "type": "fortress",
+      "modern": "中国香港",
+      "note": "位于般含道",
+      "_source_idx": 0,
+      "_source_name": "香港大学史 / 创立章程（1911）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "bonham_road",
+      "name": "般含道",
+      "type": "yi",
+      "modern": "中国香港",
+      "note": "香港大学所在地",
+      "_source_idx": 0,
+      "_source_name": "香港大学史 / 创立章程（1911）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

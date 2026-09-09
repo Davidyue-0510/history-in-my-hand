@@ -1,0 +1,14 @@
+{
+ "persons": [
+  {
+   "id": "CHO__p01",
+   "name": "赵智凤",
+   "role": "南宋僧人",
+   "note": "宝顶山石窟营建者",
+   "_source_idx": 0,
+   "_source_name": "大足石刻志 / 昌州图经",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

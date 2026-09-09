@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_aomen_stpaul_llm_01",
+   "subject": "event:ev_aomen_stpaul_llm_01",
+   "year": 1594,
+   "era": "万历二十二年",
+   "title": "圣保禄学院创建",
+   "kind": "建置",
+   "text": "耶稣会建圣保禄学院于澳门",
+   "_source_idx": 0,
+   "_source_name": "澳门圣保禄学院史 / 方志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_aomen_stpaul_llm_02",
+   "subject": "event:ev_aomen_stpaul_llm_02",
+   "year": 1835,
+   "era": "道光十五年",
+   "title": "大三巴大火",
+   "kind": "其他",
+   "text": "学院毁于火，仅存前壁",
+   "_source_idx": 0,
+   "_source_name": "澳门圣保禄学院史 / 方志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

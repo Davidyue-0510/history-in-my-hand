@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "longwu_si",
+      "name": "隆务寺",
+      "type": "fortress",
+      "modern": "今青海省同仁市",
+      "note": "安多地区最大寺院",
+      "_source_idx": 0,
+      "_source_name": "安多政教史 / 热贡艺术志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tongren",
+      "name": "同仁",
+      "type": "city",
+      "modern": "今青海省同仁市",
+      "note": "热贡艺术发源地",
+      "_source_idx": 0,
+      "_source_name": "安多政教史 / 热贡艺术志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nianduhu",
+      "name": "年都乎",
+      "type": "yi",
+      "modern": "今青海省同仁市年都乎乡",
+      "note": "五屯之一",
+      "_source_idx": 0,
+      "_source_name": "安多政教史 / 热贡艺术志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "wutun",
+      "name": "吾屯",
+      "type": "yi",
+      "modern": "今青海省同仁市吾屯村",
+      "note": "五屯之一",
+      "_source_idx": 0,
+      "_source_name": "安多政教史 / 热贡艺术志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "guomari",
+      "name": "郭麻日",
+      "type": "yi",
+      "modern": "今青海省同仁市郭麻日村",
+      "note": "五屯之一",
+      "_source_idx": 0,
+      "_source_name": "安多政教史 / 热贡艺术志",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

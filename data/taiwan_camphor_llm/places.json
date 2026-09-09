@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "taiwan",
+      "name": "臺灣",
+      "type": "region",
+      "modern": "今中國臺灣省",
+      "note": "清末設省",
+      "_source_idx": 0,
+      "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "dadaocheng",
+      "name": "大稻埕",
+      "type": "city",
+      "modern": "今中國臺灣臺北市大同區",
+      "note": "茶市集中地",
+      "_source_idx": 0,
+      "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tamsui",
+      "name": "淡水",
+      "type": "port",
+      "modern": "今中國臺灣新北市淡水區",
+      "note": "重要通商口岸",
+      "_source_idx": 0,
+      "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "keelung",
+      "name": "基隆",
+      "type": "port",
+      "modern": "今中國臺灣基隆市",
+      "note": "鐵路起點",
+      "_source_idx": 0,
+      "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "hsinchu",
+      "name": "新竹",
+      "type": "city",
+      "modern": "今中國臺灣新竹市",
+      "note": "鐵路終點",
+      "_source_idx": 0,
+      "_source_name": "台湾樟脑局档案 / 清季台湾海关报告",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

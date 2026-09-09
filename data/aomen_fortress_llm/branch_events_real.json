@@ -1,0 +1,115 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "aomen_fortress_llm",
+ "_scenario_type": "economic",
+ "_years": [
+  1623,
+  1751
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1627,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.65 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.648,
+    "cum": -0.152
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1628,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.68 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.678,
+    "cum": -0.182
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1629,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.71 / 史实 0.92）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.92,
+    "new_to": 0.708,
+    "cum": -0.212
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1630,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.74 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.737,
+    "cum": -0.243
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1631,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.767,
+    "cum": -0.233
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1632,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.797,
+    "cum": -0.203
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "divergence",
+   "year": 1633,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.827,
+    "cum": -0.173
+   },
+   "place_id": "sanbamen"
+  },
+  {
+   "kind": "summary",
+   "year": 1751,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "sanbamen"
+  }
+ ]
+}

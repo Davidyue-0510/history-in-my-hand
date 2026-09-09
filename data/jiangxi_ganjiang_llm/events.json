@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_jiangxi_ganjiang_llm_01",
+   "subject": "event:ev_jiangxi_ganjiang_llm_01",
+   "year": 1500,
+   "era": "明中叶",
+   "title": "江右商帮兴起",
+   "kind": "其他",
+   "text": "江右商帮贩瓷器等货于各地",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_jiangxi_ganjiang_llm_02",
+   "subject": "event:ev_jiangxi_ganjiang_llm_02",
+   "year": 1600,
+   "era": "明末清初",
+   "title": "赣江航运繁荣",
+   "kind": "其他",
+   "text": "赣江转输瓷纸米，会馆遍设",
+   "_source_idx": 0,
+   "_source_name": "江西通志·舆地 / 墟镇考",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

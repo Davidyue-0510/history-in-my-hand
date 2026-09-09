@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_xianggang_tram_llm_01",
+   "subject": "event:ev_xianggang_tram_llm_01",
+   "year": 1888,
+   "era": "光绪十四年",
+   "title": "山顶缆车通车",
+   "kind": "建置",
+   "text": "山顶缆车通车，攀维多利亚峰。",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_tram_llm_02",
+   "subject": "event:ev_xianggang_tram_llm_02",
+   "year": 1904,
+   "era": "光绪三十年",
+   "title": "香港电车行驰",
+   "kind": "建置",
+   "text": "电车于港岛北岸行驰。",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_tram_llm_03",
+   "subject": "event:ev_xianggang_tram_llm_03",
+   "year": 1906,
+   "era": "光绪三十二年",
+   "title": "九广铁路英段动工",
+   "kind": "建置",
+   "text": "九广铁路英段动工。",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_xianggang_tram_llm_04",
+   "subject": "event:ev_xianggang_tram_llm_04",
+   "year": 1910,
+   "era": "宣统二年",
+   "title": "九广铁路通至深圳河",
+   "kind": "建置",
+   "text": "九广铁路通至深圳河。",
+   "_source_idx": 0,
+   "_source_name": "香港电车公司档案 / 工务司报告",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

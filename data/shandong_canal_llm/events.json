@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_shandong_canal_llm_01",
+   "subject": "event:ev_shandong_canal_llm_01",
+   "year": 1289,
+   "era": "元至元二十六年",
+   "title": "开凿会通河",
+   "kind": "建置",
+   "text": "元朝开凿会通河，引汶水通漕运",
+   "_source_idx": 0,
+   "_source_name": "元史·河渠志 / 漕河图志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_shandong_canal_llm_02",
+   "subject": "event:ev_shandong_canal_llm_02",
+   "year": 1411,
+   "era": "明永乐九年",
+   "title": "宋礼治河",
+   "kind": "行政",
+   "text": "宋礼用白英策筑戴村坝分水",
+   "_source_idx": 0,
+   "_source_name": "元史·河渠志 / 漕河图志",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
