@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "jiuquan",
+   "to": "siziwangqi",
+   "type": "military",
+   "label": "神舟五号飞行轨迹",
+   "_source_idx": 0,
+   "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

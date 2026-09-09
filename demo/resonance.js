@@ -254,6 +254,16 @@ window.SANDBOX_RESONANCE = {
    "nongzhigao_llm",
    "pingbo_zhiyi_llm",
    "poyanghu",
+   "prc_chengyu_railway_llm",
+   "prc_hongqi_qu_llm",
+   "prc_liangdanyixing_llm",
+   "prc_nanjing_bridge_llm",
+   "prc_qingzang_railway_llm",
+   "prc_shenzhen_sez_llm",
+   "prc_shenzhou_llm",
+   "prc_three_gorges_llm",
+   "prc_wuhan_bridge_llm",
+   "prc_yuanlongping_llm",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
    "qin_mie_liu_guo",
@@ -5093,6 +5103,195 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:py_chen",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_chengyu_railway_llm",
+   "name": "prc_chengyu_railway_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_chengyu_railway_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_hongqi_qu_llm",
+   "name": "prc_hongqi_qu_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_hongqi_qu_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_liangdanyixing_llm",
+   "name": "prc_liangdanyixing_llm",
+   "total": 15,
+   "layers": {
+    "inference": 1,
+    "record": 12,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_liangdanyixing_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_nanjing_bridge_llm",
+   "name": "prc_nanjing_bridge_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_nanjing_bridge_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_qingzang_railway_llm",
+   "name": "prc_qingzang_railway_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_qingzang_railway_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_shenzhen_sez_llm",
+   "name": "prc_shenzhen_sez_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_shenzhen_sez_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_shenzhou_llm",
+   "name": "prc_shenzhou_llm",
+   "total": 15,
+   "layers": {
+    "scholarship": 1,
+    "inference": 1,
+    "record": 13
+   },
+   "party_counts": {
+    "后世官修": 15
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_shenzhou_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_three_gorges_llm",
+   "name": "prc_three_gorges_llm",
+   "total": 14,
+   "layers": {
+    "inference": 1,
+    "record": 11,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 14
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_three_gorges_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_wuhan_bridge_llm",
+   "name": "prc_wuhan_bridge_llm",
+   "total": 12,
+   "layers": {
+    "inference": 1,
+    "record": 9,
+    "scholarship": 1,
+    "gap": 1
+   },
+   "party_counts": {
+    "后世官修": 12
+   },
+   "faction_counts": {},
+   "event_count": 2,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_wuhan_bridge_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "prc_yuanlongping_llm",
+   "name": "prc_yuanlongping_llm",
+   "total": 13,
+   "layers": {
+    "inference": 1,
+    "record": 10,
+    "gap": 1,
+    "scholarship": 1
+   },
+   "party_counts": {
+    "后世官修": 13
+   },
+   "faction_counts": {},
+   "event_count": 4,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_prc_yuanlongping_llm_01",
    "best_resonance": 0.0
   },
   {

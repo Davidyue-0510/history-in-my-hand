@@ -643,7 +643,17 @@
   "tang_yixing_llm",
   "three_kingdoms_fanche_llm",
   "yuan_qinghua_llm",
-  "yuan_wangzhen_llm"
+  "yuan_wangzhen_llm",
+  "prc_chengyu_railway_llm",
+  "prc_hongqi_qu_llm",
+  "prc_liangdanyixing_llm",
+  "prc_nanjing_bridge_llm",
+  "prc_qingzang_railway_llm",
+  "prc_shenzhen_sez_llm",
+  "prc_shenzhou_llm",
+  "prc_three_gorges_llm",
+  "prc_wuhan_bridge_llm",
+  "prc_yuanlongping_llm"
  ],
  "scenes": {
   "warring_states_shangyang": {
@@ -35220,6 +35230,759 @@
    "dims": [
     2,
     3,
+    5,
+    6
+   ]
+  },
+  "prc_chengyu_railway_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "sichuan",
+   "title": "成渝铁路（1950–1952·四川）",
+   "dossier_label": "成渝铁路（1950–1952·四川）",
+   "subtitle": "成渝铁路（1950–1952·四川）",
+   "primary_place": "chengdu",
+   "dossier_event": "event:ev_prc_chengyu_railway_llm_01",
+   "vocab_pack": "prc_chengyu_railway_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "成渝铁路（1950–1952·四川）——PRC epoch 现代段补盲（v0.194，engineering/sichuan）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "成渝铁路（1950–1952·四川）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "成渝铁路（1950–1952·四川）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "成渝铁路（1950–1952·四川）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "成渝铁路（1950–1952·四川）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "prc_hongqi_qu_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "henan",
+   "title": "红旗渠（1960–1969·河南林县）",
+   "dossier_label": "红旗渠（1960–1969·河南林县）",
+   "subtitle": "红旗渠（1960–1969·河南林县）",
+   "primary_place": "linxian",
+   "dossier_event": "event:ev_prc_hongqi_qu_llm_01",
+   "vocab_pack": "prc_hongqi_qu_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "红旗渠（1960–1969·河南林县）——PRC epoch 现代段补盲（v0.194，engineering/henan）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "红旗渠（1960–1969·河南林县）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "红旗渠（1960–1969·河南林县）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "红旗渠（1960–1969·河南林县）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "红旗渠（1960–1969·河南林县）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ]
+  },
+  "prc_liangdanyixing_llm": {
+   "kind": "tech",
+   "region": "tech",
+   "province": "qinghai",
+   "title": "两弹一星（1964–1970）",
+   "dossier_label": "两弹一星（1964–1970）",
+   "subtitle": "两弹一星（1964–1970）",
+   "primary_place": "qinghai_haiyan",
+   "dossier_event": "event:ev_prc_liangdanyixing_llm_01",
+   "vocab_pack": "prc_liangdanyixing_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "两弹一星（1964–1970）——PRC epoch 现代段补盲（v0.194，tech/qinghai）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "两弹一星（1964–1970）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "两弹一星（1964–1970）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "两弹一星（1964–1970）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "两弹一星（1964–1970）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ]
+  },
+  "prc_nanjing_bridge_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "jiangsu",
+   "title": "南京长江大桥（1960–1968·江苏）",
+   "dossier_label": "南京长江大桥（1960–1968·江苏）",
+   "subtitle": "南京长江大桥（1960–1968·江苏）",
+   "primary_place": "nanjing",
+   "dossier_event": "event:ev_prc_nanjing_bridge_llm_01",
+   "vocab_pack": "prc_nanjing_bridge_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "南京长江大桥（1960–1968·江苏）——PRC epoch 现代段补盲（v0.194，engineering/jiangsu）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "南京长江大桥（1960–1968·江苏）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "南京长江大桥（1960–1968·江苏）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "南京长江大桥（1960–1968·江苏）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "南京长江大桥（1960–1968·江苏）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ]
+  },
+  "prc_qingzang_railway_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "xizang",
+   "title": "青藏铁路（2001–2006）",
+   "dossier_label": "青藏铁路（2001–2006）",
+   "subtitle": "青藏铁路（2001–2006）",
+   "primary_place": "xining",
+   "dossier_event": "event:ev_prc_qingzang_railway_llm_01",
+   "vocab_pack": "prc_qingzang_railway_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "青藏铁路（2001–2006）——PRC epoch 现代段补盲（v0.194，engineering/xizang）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "青藏铁路（2001–2006）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "青藏铁路（2001–2006）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "青藏铁路（2001–2006）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "青藏铁路（2001–2006）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ]
+  },
+  "prc_shenzhen_sez_llm": {
+   "kind": "reform",
+   "region": "reform",
+   "province": "guangdong",
+   "title": "深圳经济特区设立（1979–1984·广东）",
+   "dossier_label": "深圳经济特区设立（1979–1984·广东）",
+   "subtitle": "深圳经济特区设立（1979–1984·广东）",
+   "primary_place": "shenzhen",
+   "dossier_event": "event:ev_prc_shenzhen_sez_llm_01",
+   "vocab_pack": "prc_shenzhen_sez_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "深圳经济特区设立（1979–1984·广东）——PRC epoch 现代段补盲（v0.194，reform/guangdong）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "深圳经济特区设立（1979–1984·广东）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "深圳经济特区设立（1979–1984·广东）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "深圳经济特区设立（1979–1984·广东）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "深圳经济特区设立（1979–1984·广东）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "prc_shenzhou_llm": {
+   "kind": "tech",
+   "region": "tech",
+   "province": "gansu",
+   "title": "神舟飞船与首次载人航天（1999–2003）",
+   "dossier_label": "神舟飞船与首次载人航天（1999–2003）",
+   "subtitle": "神舟飞船与首次载人航天（1999–2003）",
+   "primary_place": "jiuquan",
+   "dossier_event": "event:ev_prc_shenzhou_llm_01",
+   "vocab_pack": "prc_shenzhou_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "神舟飞船与首次载人航天（1999–2003）——PRC epoch 现代段补盲（v0.194，tech/gansu）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "神舟飞船与首次载人航天（1999–2003）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "神舟飞船与首次载人航天（1999–2003）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "神舟飞船与首次载人航天（1999–2003）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "神舟飞船与首次载人航天（1999–2003）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    6
+   ]
+  },
+  "prc_three_gorges_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "hubei",
+   "title": "长江三峡工程（1994–2006·湖北）",
+   "dossier_label": "长江三峡工程（1994–2006·湖北）",
+   "subtitle": "长江三峡工程（1994–2006·湖北）",
+   "primary_place": "san_dou_ping",
+   "dossier_event": "event:ev_prc_three_gorges_llm_01",
+   "vocab_pack": "prc_three_gorges_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "长江三峡工程（1994–2006·湖北）——PRC epoch 现代段补盲（v0.194，engineering/hubei）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "长江三峡工程（1994–2006·湖北）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "长江三峡工程（1994–2006·湖北）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "长江三峡工程（1994–2006·湖北）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "长江三峡工程（1994–2006·湖北）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "prc_wuhan_bridge_llm": {
+   "kind": "engineering",
+   "region": "engineering",
+   "province": "hubei",
+   "title": "武汉长江大桥（1955–1957·湖北）",
+   "dossier_label": "武汉长江大桥（1955–1957·湖北）",
+   "subtitle": "武汉长江大桥（1955–1957·湖北）",
+   "primary_place": "wuhan_bridge",
+   "dossier_event": "event:ev_prc_wuhan_bridge_llm_01",
+   "vocab_pack": "prc_wuhan_bridge_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "武汉长江大桥（1955–1957·湖北）——PRC epoch 现代段补盲（v0.194，engineering/hubei）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "武汉长江大桥（1955–1957·湖北）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "武汉长江大桥（1955–1957·湖北）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "武汉长江大桥（1955–1957·湖北）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "武汉长江大桥（1955–1957·湖北）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ]
+  },
+  "prc_yuanlongping_llm": {
+   "kind": "tech",
+   "region": "tech",
+   "province": "hunan",
+   "title": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "dossier_label": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "subtitle": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "primary_place": "anjang",
+   "dossier_event": "event:ev_prc_yuanlongping_llm_01",
+   "vocab_pack": "prc_yuanlongping_llm",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "袁隆平与杂交水稻（1970–1973·湖南）——PRC epoch 现代段补盲（v0.194，tech/hunan）。史料为公开权威口径叙述（非逐字引文），全部标注 paraphrase_unverified。",
+   "parties_note": null,
+   "subject_names": null,
+   "epoch": "prc",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "袁隆平与杂交水稻（1970–1973·湖南）：political_cohesion（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "袁隆平与杂交水稻（1970–1973·湖南）：material_logistics（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "袁隆平与杂交水稻（1970–1973·湖南）：population_mobilization（框架自动骨架，LLM 文献理解待补充推导）"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "袁隆平与杂交水稻（1970–1973·湖南）：geopolitical_strategy（框架自动骨架，LLM 文献理解待补充推导）"
+    }
+   },
+   "dims": [
     5,
     6
    ]

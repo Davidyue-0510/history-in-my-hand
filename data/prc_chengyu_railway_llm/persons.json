@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "PRC__p01",
+   "name": "邓小平",
+   "role": "中共中央西南局第一书记",
+   "note": "决策支持成渝铁路建设",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p02",
+   "name": "贺龙",
+   "role": "西南军区司令员",
+   "note": "领导军工参与筑路",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p03",
+   "name": "赵健民",
+   "role": "西南铁路工程局局长",
+   "note": "负责具体施工组织",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p04",
+   "name": "刘伯承",
+   "role": "西南军政委员会主席",
+   "note": "推动铁路建设",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

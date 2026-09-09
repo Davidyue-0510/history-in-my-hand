@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_shenzhou_llm_01",
+   "subject": "event:ev_prc_shenzhou_llm_01",
+   "year": 1992,
+   "era": "1992年9月21日",
+   "title": "载人航天工程立项",
+   "kind": "行政",
+   "text": "中国载人航天工程立项，确定三步走战略。",
+   "_source_idx": 0,
+   "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_shenzhou_llm_02",
+   "subject": "event:ev_prc_shenzhou_llm_02",
+   "year": 1999,
+   "era": "1999年11月20日",
+   "title": "神舟一号发射",
+   "kind": "其他",
+   "text": "神舟一号无人飞船在酒泉发射成功。",
+   "_source_idx": 0,
+   "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_shenzhou_llm_03",
+   "subject": "event:ev_prc_shenzhou_llm_03",
+   "year": 2003,
+   "era": "2003年10月15日",
+   "title": "神舟五号载人飞行",
+   "kind": "其他",
+   "text": "杨利伟乘神舟五号进入太空，绕地14圈。",
+   "_source_idx": 0,
+   "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

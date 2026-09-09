@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_hongqi_qu_llm_01",
+   "subject": "event:ev_prc_hongqi_qu_llm_01",
+   "year": 1960,
+   "era": "1960年2月",
+   "title": "红旗渠动工",
+   "kind": "其他",
+   "text": "工程动工，数万民工开始施工",
+   "_source_idx": 0,
+   "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_hongqi_qu_llm_02",
+   "subject": "event:ev_prc_hongqi_qu_llm_02",
+   "year": 1965,
+   "era": "1965年4月",
+   "title": "总干渠通水",
+   "kind": "其他",
+   "text": "总干渠通水，灌溉初见成效",
+   "_source_idx": 0,
+   "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_hongqi_qu_llm_03",
+   "subject": "event:ev_prc_hongqi_qu_llm_03",
+   "year": 1969,
+   "era": "1969年7月",
+   "title": "支渠配套完成",
+   "kind": "其他",
+   "text": "支渠配套基本完成，工程竣工",
+   "_source_idx": 0,
+   "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

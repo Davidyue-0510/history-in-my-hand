@@ -1,0 +1,14 @@
+{
+ "edges": [
+  {
+   "from": "chengdu",
+   "to": "chongqing",
+   "type": "military",
+   "label": "铁路线路",
+   "_source_idx": 0,
+   "_source_name": "《成渝铁路工程志》等官方史志（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "prc_yuanlongping_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1964,
+  1976
+ ],
+ "events": [
+  {
+   "kind": "summary",
+   "year": 1976,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.68 / 史实 0.82（偏离 -0.15）",
+   "evidence": {
+    "cum": -0.149,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "anjang"
+  }
+ ]
+}

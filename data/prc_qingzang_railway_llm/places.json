@@ -1,0 +1,88 @@
+{
+  "places": [
+    {
+      "id": "xining",
+      "name": "西宁",
+      "type": "city",
+      "modern": "中国青海省西宁市",
+      "note": "一期起点",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "golmud",
+      "name": "格尔木",
+      "type": "city",
+      "modern": "中国青海省格尔木市",
+      "note": "一期终点，二期起点",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "lhasa",
+      "name": "拉萨",
+      "type": "city",
+      "modern": "中国西藏自治区拉萨市",
+      "note": "二期终点",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "kekexili",
+      "name": "可可西里",
+      "type": "region",
+      "modern": "中国青海省可可西里",
+      "note": "铁路穿越地区",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tangula_pass",
+      "name": "唐古拉山口",
+      "type": "fortress",
+      "modern": "中国西藏那曲市安多县",
+      "note": "最高点海拔5072米",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "tangula",
+      "name": "唐古拉山",
+      "type": "region",
+      "modern": "中国西藏与青海交界",
+      "note": "铁路穿越山脉",
+      "_source_idx": 0,
+      "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

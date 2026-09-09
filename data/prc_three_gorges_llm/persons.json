@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "PRC__p01",
+   "name": "萨凡奇",
+   "role": "美国垦务局总工程师",
+   "note": "提出扬子江三峡计划初步报告",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p02",
+   "name": "李鹏",
+   "role": "国务院总理",
+   "note": "宣布工程正式开工",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p03",
+   "name": "江泽民",
+   "role": "国家主席",
+   "note": "出席大江截流仪式",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p04",
+   "name": "潘家铮",
+   "role": "工程院院士",
+   "note": "三峡工程论证技术负责人",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

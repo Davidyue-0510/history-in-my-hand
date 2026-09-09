@@ -1,0 +1,687 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_chengyu_railway_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1900,
+  1952
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1902,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.454,
+    "cum": -0.166
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1903,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.44 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.439,
+    "cum": -0.221
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1904,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.42 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.424,
+    "cum": -0.276
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1905,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.409,
+    "cum": -0.331
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1906,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.39 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.394,
+    "cum": -0.386
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1907,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.38 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.378,
+    "cum": -0.442
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1908,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.36 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.363,
+    "cum": -0.497
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1909,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.35 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.348,
+    "cum": -0.552
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1910,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.33 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.333,
+    "cum": -0.607
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1911,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.32 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.318,
+    "cum": -0.662
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1912,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.70（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.302,
+    "cum": -0.698
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1913,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.287,
+    "cum": -0.713
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1914,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.272,
+    "cum": -0.728
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1915,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.257,
+    "cum": -0.743
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1916,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.242,
+    "cum": -0.758
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1917,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.226,
+    "cum": -0.774
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1918,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.79（本支 0.21 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.211,
+    "cum": -0.789
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1919,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.80（本支 0.20 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.196,
+    "cum": -0.804
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1920,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.82（本支 0.18 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.181,
+    "cum": -0.819
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1921,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.83（本支 0.17 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.166,
+    "cum": -0.834
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1922,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.85（本支 0.15 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.15,
+    "cum": -0.85
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1923,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.86（本支 0.14 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.135,
+    "cum": -0.865
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1924,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.88（本支 0.12 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.12,
+    "cum": -0.88
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1925,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.90（本支 0.10 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.105,
+    "cum": -0.895
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1926,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.91（本支 0.09 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.09,
+    "cum": -0.91
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1927,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.93（本支 0.07 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.074,
+    "cum": -0.926
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1928,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.94（本支 0.06 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.059,
+    "cum": -0.941
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1929,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.96（本支 0.04 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.044,
+    "cum": -0.956
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1930,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.97（本支 0.03 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.029,
+    "cum": -0.971
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1931,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.99（本支 0.01 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.014,
+    "cum": -0.986
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1932,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1933,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1934,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1935,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1936,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1937,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1938,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1939,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1940,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1941,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1942,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1943,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1944,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1945,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1946,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1947,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1948,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1949,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1950,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1951,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "divergence",
+   "year": 1952,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -1.00（本支 0.00 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.0,
+    "cum": -1.0
+   },
+   "place_id": "chengdu"
+  },
+  {
+   "kind": "summary",
+   "year": 1952,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.00 / 史实 1.00（偏离 -1.00）",
+   "evidence": {
+    "cum": -1.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "chengdu"
+  }
+ ]
+}

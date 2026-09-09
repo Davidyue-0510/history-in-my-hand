@@ -1,0 +1,30 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_shenzhen_sez_llm_01",
+   "subject": "event:ev_prc_shenzhen_sez_llm_01",
+   "year": 1979,
+   "era": "1979年7月",
+   "title": "中央批转广东特殊政策",
+   "kind": "行政",
+   "text": "中央批转广东特殊政策报告",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_shenzhen_sez_llm_02",
+   "subject": "event:ev_prc_shenzhen_sez_llm_02",
+   "year": 1980,
+   "era": "1980年8月26日",
+   "title": "深圳经济特区正式设立",
+   "kind": "建置",
+   "text": "全国人大批准经济特区条例",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

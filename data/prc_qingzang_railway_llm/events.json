@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_qingzang_railway_llm_01",
+   "subject": "event:ev_prc_qingzang_railway_llm_01",
+   "year": 1984,
+   "era": "1984年",
+   "title": "一期通车",
+   "kind": "建置",
+   "text": "西宁至格尔木段建成通车",
+   "_source_idx": 0,
+   "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_qingzang_railway_llm_02",
+   "subject": "event:ev_prc_qingzang_railway_llm_02",
+   "year": 2001,
+   "era": "2001年6月29日",
+   "title": "二期开工",
+   "kind": "建置",
+   "text": "格尔木至拉萨段开工",
+   "_source_idx": 0,
+   "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_qingzang_railway_llm_03",
+   "subject": "event:ev_prc_qingzang_railway_llm_03",
+   "year": 2006,
+   "era": "2006年7月1日",
+   "title": "全线通车",
+   "kind": "建置",
+   "text": "青藏铁路全线通车",
+   "_source_idx": 0,
+   "_source_name": "青藏铁路工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

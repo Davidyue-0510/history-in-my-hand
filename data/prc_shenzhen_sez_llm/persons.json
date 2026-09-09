@@ -1,0 +1,44 @@
+{
+ "persons": [
+  {
+   "id": "PRC__p01",
+   "name": "邓小平",
+   "role": "中共中央副主席",
+   "note": "改革开放总设计师",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p02",
+   "name": "习仲勋",
+   "role": "广东省委第一书记",
+   "note": "推动广东特殊政策",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p03",
+   "name": "叶剑英",
+   "role": "全国人大常委会委员长",
+   "note": "主持批准经济特区条例",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p04",
+   "name": "谷牧",
+   "role": "国务院副总理",
+   "note": "分管经济特区工作",
+   "_source_idx": 0,
+   "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

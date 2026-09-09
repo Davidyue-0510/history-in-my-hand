@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_nanjing_bridge_llm_01",
+   "subject": "event:ev_prc_nanjing_bridge_llm_01",
+   "year": 1960,
+   "era": "1960年1月",
+   "title": "大桥开工",
+   "kind": "建置",
+   "text": "南京长江大桥开工，时值中苏关系破裂。",
+   "_source_idx": 0,
+   "_source_name": "南京长江大桥工程文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_nanjing_bridge_llm_02",
+   "subject": "event:ev_prc_nanjing_bridge_llm_02",
+   "year": 1968,
+   "era": "1968年9月",
+   "title": "铁路桥通车",
+   "kind": "建置",
+   "text": "铁路桥建成通车，贯通京沪铁路。",
+   "_source_idx": 0,
+   "_source_name": "南京长江大桥工程文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_nanjing_bridge_llm_03",
+   "subject": "event:ev_prc_nanjing_bridge_llm_03",
+   "year": 1968,
+   "era": "1968年12月",
+   "title": "公路桥通车",
+   "kind": "建置",
+   "text": "公路桥建成通车，大桥全面竣工。",
+   "_source_idx": 0,
+   "_source_name": "南京长江大桥工程文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "prc_qingzang_railway_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1984,
+  2006
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1990,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.62 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.622,
+    "cum": -0.158
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1991,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.64 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.639,
+    "cum": -0.181
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1992,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.66 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.657,
+    "cum": -0.203
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1993,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.67 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.674,
+    "cum": -0.226
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1994,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.69 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.692,
+    "cum": -0.248
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1995,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.71 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.709,
+    "cum": -0.271
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1996,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.73 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.726,
+    "cum": -0.274
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1997,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.74 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.744,
+    "cum": -0.256
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1998,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.761,
+    "cum": -0.239
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1999,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.779,
+    "cum": -0.221
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2000,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.80 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.796,
+    "cum": -0.204
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2001,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.813,
+    "cum": -0.187
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2002,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.831,
+    "cum": -0.169
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2003,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.85 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.848,
+    "cum": -0.152
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "summary",
+   "year": 2006,
+   "severity": "info",
+   "description": "终局改革指数：本支 0.90 / 史实 1.00（偏离 -0.10）",
+   "evidence": {
+    "cum": -0.1,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xining"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "anjang",
+      "name": "安江",
+      "type": "city",
+      "modern": "中国湖南省怀化市",
+      "note": "袁隆平任教之地",
+      "_source_idx": 0,
+      "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "sanya",
+      "name": "三亚",
+      "type": "city",
+      "modern": "中国海南省三亚市",
+      "note": "发现野败之地",
+      "_source_idx": 0,
+      "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

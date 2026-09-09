@@ -1,0 +1,141 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_liangdanyixing_llm",
+ "_scenario_type": "reform",
+ "_years": [
+  1960,
+  1970
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1962,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.457,
+    "cum": -0.163
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1963,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.44 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.442,
+    "cum": -0.218
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1964,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.43 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.428,
+    "cum": -0.272
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1965,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.413,
+    "cum": -0.327
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1966,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.38（本支 0.40 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.399,
+    "cum": -0.381
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1967,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.43（本支 0.38 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.385,
+    "cum": -0.435
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1968,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.49（本支 0.37 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.37,
+    "cum": -0.49
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1969,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.54（本支 0.36 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.356,
+    "cum": -0.544
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "divergence",
+   "year": 1970,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.60（本支 0.34 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.341,
+    "cum": -0.599
+   },
+   "place_id": "luobupo"
+  },
+  {
+   "kind": "summary",
+   "year": 1970,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.34 / 史实 0.94（偏离 -0.60）",
+   "evidence": {
+    "cum": -0.599,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "luobupo"
+  }
+ ]
+}

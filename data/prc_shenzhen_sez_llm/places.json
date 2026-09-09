@@ -1,0 +1,74 @@
+{
+  "places": [
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "type": "city",
+      "modern": "今中国广东省深圳市",
+      "note": "经济特区",
+      "_source_idx": 0,
+      "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "baoan",
+      "name": "宝安县",
+      "type": "county",
+      "modern": "今中国广东省深圳市宝安区",
+      "note": "深圳前身",
+      "_source_idx": 0,
+      "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "zhuhai",
+      "name": "珠海",
+      "type": "city",
+      "modern": "今中国广东省珠海市",
+      "note": "出口特区",
+      "_source_idx": 0,
+      "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "shantou",
+      "name": "汕头",
+      "type": "city",
+      "modern": "今中国广东省汕头市",
+      "note": "出口特区",
+      "_source_idx": 0,
+      "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "type": "city",
+      "modern": "今中国福建省厦门市",
+      "note": "出口特区",
+      "_source_idx": 0,
+      "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

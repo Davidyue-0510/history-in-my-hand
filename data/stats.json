@@ -1,9 +1,9 @@
 {
-  "scenes_total": 440,
-  "historical": 431,
+  "scenes_total": 450,
+  "historical": 441,
   "fictional": 9,
-  "assertions_total": 6490,
-  "sources_total": 416,
+  "assertions_total": 6628,
+  "sources_total": 426,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -168,6 +168,16 @@
     "ningxia_xixia_tomb_llm",
     "nongzhigao_llm",
     "pingbo_zhiyi_llm",
+    "prc_chengyu_railway_llm",
+    "prc_hongqi_qu_llm",
+    "prc_liangdanyixing_llm",
+    "prc_nanjing_bridge_llm",
+    "prc_qingzang_railway_llm",
+    "prc_shenzhen_sez_llm",
+    "prc_shenzhou_llm",
+    "prc_three_gorges_llm",
+    "prc_wuhan_bridge_llm",
+    "prc_yuanlongping_llm",
     "qianjia_puxue_llm",
     "qin_fenshu_llm",
     "qin_mie_liu_guo",
@@ -305,7 +315,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 588,
+  "leads_total": 597,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3437,6 +3447,76 @@
       "kind": "tech",
       "assertions": 13,
       "factions": {}
+    },
+    {
+      "id": "prc_chengyu_railway_llm",
+      "title": "成渝铁路（1950–1952·四川）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "prc_hongqi_qu_llm",
+      "title": "红旗渠（1960–1969·河南林县）",
+      "kind": "engineering",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "prc_liangdanyixing_llm",
+      "title": "两弹一星（1964–1970）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "prc_nanjing_bridge_llm",
+      "title": "南京长江大桥（1960–1968·江苏）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "prc_qingzang_railway_llm",
+      "title": "青藏铁路（2001–2006）",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "prc_shenzhen_sez_llm",
+      "title": "深圳经济特区设立（1979–1984·广东）",
+      "kind": "reform",
+      "assertions": 13,
+      "factions": {}
+    },
+    {
+      "id": "prc_shenzhou_llm",
+      "title": "神舟飞船与首次载人航天（1999–2003）",
+      "kind": "tech",
+      "assertions": 15,
+      "factions": {}
+    },
+    {
+      "id": "prc_three_gorges_llm",
+      "title": "长江三峡工程（1994–2006·湖北）",
+      "kind": "engineering",
+      "assertions": 14,
+      "factions": {}
+    },
+    {
+      "id": "prc_wuhan_bridge_llm",
+      "title": "武汉长江大桥（1955–1957·湖北）",
+      "kind": "engineering",
+      "assertions": 12,
+      "factions": {}
+    },
+    {
+      "id": "prc_yuanlongping_llm",
+      "title": "袁隆平与杂交水稻（1970–1973·湖南）",
+      "kind": "tech",
+      "assertions": 13,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -3879,6 +3959,16 @@
     "tang_yixing_llm": "一行与水运浑天仪（唐）",
     "three_kingdoms_fanche_llm": "马钧与翻车（三国·魏）",
     "yuan_qinghua_llm": "青花瓷与景德镇窑业（元）",
-    "yuan_wangzhen_llm": "王祯《农书》与转轮排字（元·山东）"
+    "yuan_wangzhen_llm": "王祯《农书》与转轮排字（元·山东）",
+    "prc_chengyu_railway_llm": "成渝铁路（1950–1952·四川）",
+    "prc_hongqi_qu_llm": "红旗渠（1960–1969·河南林县）",
+    "prc_liangdanyixing_llm": "两弹一星（1964–1970）",
+    "prc_nanjing_bridge_llm": "南京长江大桥（1960–1968·江苏）",
+    "prc_qingzang_railway_llm": "青藏铁路（2001–2006）",
+    "prc_shenzhen_sez_llm": "深圳经济特区设立（1979–1984·广东）",
+    "prc_shenzhou_llm": "神舟飞船与首次载人航天（1999–2003）",
+    "prc_three_gorges_llm": "长江三峡工程（1994–2006·湖北）",
+    "prc_wuhan_bridge_llm": "武汉长江大桥（1955–1957·湖北）",
+    "prc_yuanlongping_llm": "袁隆平与杂交水稻（1970–1973·湖南）"
   }
 }

@@ -1,0 +1,46 @@
+{
+  "places": [
+    {
+      "id": "linxian",
+      "name": "林县",
+      "type": "city",
+      "modern": "今中国河南省林州市",
+      "note": "红旗渠所在地",
+      "_source_idx": 0,
+      "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "pingshun",
+      "name": "平顺县",
+      "type": "city",
+      "modern": "今中国山西省平顺县",
+      "note": "浊漳河水源地",
+      "_source_idx": 0,
+      "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "taihang",
+      "name": "太行山",
+      "type": "region",
+      "modern": "今中国太行山脉",
+      "note": "林县地处其东麓",
+      "_source_idx": 0,
+      "_source_name": "红旗渠工程志与林县地方志（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_shenzhou_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1992,
+  2003
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1994,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.45 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.454,
+    "cum": -0.166
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1995,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.44 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.439,
+    "cum": -0.221
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1996,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.42 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.424,
+    "cum": -0.276
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1997,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.33（本支 0.41 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.409,
+    "cum": -0.331
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1998,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.39 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.394,
+    "cum": -0.386
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 1999,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.44（本支 0.38 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.378,
+    "cum": -0.442
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 2000,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.36 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.363,
+    "cum": -0.497
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 2001,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.55（本支 0.35 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.348,
+    "cum": -0.552
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 2002,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.33 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.333,
+    "cum": -0.607
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "divergence",
+   "year": 2003,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.32 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.318,
+    "cum": -0.662
+   },
+   "place_id": "jiuquan"
+  },
+  {
+   "kind": "summary",
+   "year": 2003,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.32 / 史实 0.98（偏离 -0.66）",
+   "evidence": {
+    "cum": -0.662,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "jiuquan"
+  }
+ ]
+}

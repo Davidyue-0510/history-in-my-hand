@@ -1,0 +1,154 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_yuanlongping_llm",
+ "_scenario_type": "thought",
+ "_years": [
+  1964,
+  1976
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1967,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.45 / 史实 0.60）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.6,
+    "new_to": 0.446,
+    "cum": -0.154
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1968,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.43 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.625,
+    "new_to": 0.432,
+    "cum": -0.193
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1969,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.42 / 史实 0.65）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.65,
+    "new_to": 0.419,
+    "cum": -0.231
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1970,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.41 / 史实 0.68）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.675,
+    "new_to": 0.405,
+    "cum": -0.27
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1971,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.39 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.391,
+    "cum": -0.309
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1972,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.35（本支 0.38 / 史实 0.72）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.725,
+    "new_to": 0.378,
+    "cum": -0.347
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1973,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.39（本支 0.36 / 史实 0.75）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.75,
+    "new_to": 0.364,
+    "cum": -0.386
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1974,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.35 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.775,
+    "new_to": 0.351,
+    "cum": -0.424
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1975,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.46（本支 0.34 / 史实 0.80）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.8,
+    "new_to": 0.337,
+    "cum": -0.463
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "divergence",
+   "year": 1976,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.50（本支 0.32 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.825,
+    "new_to": 0.324,
+    "cum": -0.501
+   },
+   "place_id": "anjang"
+  },
+  {
+   "kind": "summary",
+   "year": 1976,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.32 / 史实 0.82（偏离 -0.50）",
+   "evidence": {
+    "cum": -0.501,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "anjang"
+  }
+ ]
+}

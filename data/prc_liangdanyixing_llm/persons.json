@@ -1,0 +1,84 @@
+{
+ "persons": [
+  {
+   "id": "PRC__p01",
+   "name": "钱学森",
+   "role": "科学家",
+   "note": "两弹一星元勋",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p02",
+   "name": "邓稼先",
+   "role": "科学家",
+   "note": "核武器研制",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p03",
+   "name": "于敏",
+   "role": "科学家",
+   "note": "氢弹研制",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p04",
+   "name": "王淦昌",
+   "role": "科学家",
+   "note": "核物理学家",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p05",
+   "name": "赵九章",
+   "role": "科学家",
+   "note": "卫星研制",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p06",
+   "name": "钱三强",
+   "role": "科学家",
+   "note": "核物理学家",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p07",
+   "name": "郭永怀",
+   "role": "科学家",
+   "note": "力学专家",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "PRC__p08",
+   "name": "任新民",
+   "role": "科学家",
+   "note": "导弹专家",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "sources": [
+  {
+   "id": "prc_shenzhou_src",
+   "title": "中国载人航天工程公开文献（公开权威口径）",
+   "party": "后世官修",
+   "stance_label": "",
+   "distance_label": "",
+   "color": "#8C6239",
+   "compiler": "中国载人航天工程办公室",
+   "period": "中华人民共和国",
+   "note": ""
+  }
+ ]
+}

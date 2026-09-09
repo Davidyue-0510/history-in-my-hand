@@ -1,0 +1,32 @@
+{
+  "places": [
+    {
+      "id": "jiuquan",
+      "name": "酒泉",
+      "type": "city",
+      "modern": "今中国甘肃省酒泉市",
+      "note": "卫星发射中心所在地",
+      "_source_idx": 0,
+      "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "siziwangqi",
+      "name": "四子王旗",
+      "type": "region",
+      "modern": "今中国内蒙古自治区乌兰察布市四子王旗",
+      "note": "神舟五号着陆场",
+      "_source_idx": 0,
+      "_source_name": "中国载人航天工程公开文献（公开权威口径）",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_hongqi_qu_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1960,
+  1969
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1962,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.20（本支 0.42 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.416,
+    "cum": -0.204
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1963,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.39 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.388,
+    "cum": -0.272
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1964,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.34（本支 0.36 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.36,
+    "cum": -0.34
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1965,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.41（本支 0.33 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.332,
+    "cum": -0.408
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1966,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.48（本支 0.30 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.304,
+    "cum": -0.476
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1967,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.54（本支 0.28 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.276,
+    "cum": -0.544
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1968,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.61（本支 0.25 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.248,
+    "cum": -0.612
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "divergence",
+   "year": 1969,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.22 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.22,
+    "cum": -0.68
+   },
+   "place_id": "linxian"
+  },
+  {
+   "kind": "summary",
+   "year": 1969,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.22 / 史实 0.90（偏离 -0.68）",
+   "evidence": {
+    "cum": -0.68,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "linxian"
+  }
+ ]
+}

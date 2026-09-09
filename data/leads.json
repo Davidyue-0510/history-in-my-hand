@@ -5250,6 +5250,149 @@
    "_src_line": 14
   },
   {
+   "id": "PRC_015",
+   "scene": "prc_chengyu_railway_llm",
+   "subject": "event:ev_prc_chengyu_railway_llm_01",
+   "title": "人力与机械比例不详",
+   "missing": "工程档案 / 统计",
+   "where": "成渝铁路沿线",
+   "skills": [
+    "工程档案",
+    "统计"
+   ],
+   "accept": "补充人力与机械比例",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "PRC_015",
+   "scene": "prc_hongqi_qu_llm",
+   "subject": "event:ev_prc_hongqi_qu_llm_01",
+   "title": "民工自带干粮",
+   "missing": "历史地理 / 水利工程",
+   "where": "林县山区",
+   "skills": [
+    "历史地理",
+    "水利工程"
+   ],
+   "accept": "需进一步考证民工生活供给",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "PRC_015",
+   "scene": "prc_liangdanyixing_llm",
+   "subject": "event:ev_prc_liangdanyixing_llm_01",
+   "title": "原子弹研制细节未详",
+   "missing": "核物理 / 工程管理",
+   "where": "青海金银滩基地",
+   "skills": [
+    "核物理",
+    "工程管理"
+   ],
+   "accept": "补充研制过程细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "PRC_014",
+   "scene": "prc_nanjing_bridge_llm",
+   "subject": "event:ev_prc_nanjing_bridge_llm_01",
+   "title": "苏联撤援对工程影响程度待考",
+   "missing": "俄语 / 档案研究",
+   "where": "苏联档案",
+   "skills": [
+    "俄语",
+    "档案研究"
+   ],
+   "accept": "苏联撤援的具体影响",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "PRC_012",
+   "scene": "prc_qingzang_railway_llm",
+   "subject": "event:ev_prc_qingzang_railway_llm_03",
+   "title": "对藏羚羊迁徙影响未知",
+   "missing": "生态学 / 动物行为学",
+   "where": "可可西里",
+   "skills": [
+    "生态学",
+    "动物行为学"
+   ],
+   "accept": "长期生态监测数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "PRC_013",
+   "scene": "prc_shenzhen_sez_llm",
+   "subject": "event:ev_prc_shenzhen_sez_llm_02",
+   "title": "特区设立后人口快速增长",
+   "missing": "人口统计 / 历史地理",
+   "where": "深圳地方志或统计年鉴",
+   "skills": [
+    "人口统计",
+    "历史地理"
+   ],
+   "accept": "补充1980-1984年人口数据",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 13
+  },
+  {
+   "id": "PRC_014",
+   "scene": "prc_three_gorges_llm",
+   "subject": "event:ev_prc_three_gorges_llm_04",
+   "title": "论证细节未详述",
+   "missing": "历史档案分析",
+   "where": "工程论证档案",
+   "skills": [
+    "历史档案分析"
+   ],
+   "accept": "补充论证细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 14
+  },
+  {
+   "id": "PRC_012",
+   "scene": "prc_wuhan_bridge_llm",
+   "subject": "event:ev_prc_wuhan_bridge_llm_02",
+   "title": "具体施工细节未详",
+   "missing": "工程史 / 档案学",
+   "where": "施工档案",
+   "skills": [
+    "工程史",
+    "档案学"
+   ],
+   "accept": "补充施工细节",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
+   "id": "PRC_012",
+   "scene": "prc_yuanlongping_llm",
+   "subject": "event:ev_prc_yuanlongping_llm_02",
+   "title": "发现野败的助手姓名未记载",
+   "missing": "历史档案检索 / 口述史访谈",
+   "where": "湖南安江农校档案或袁隆平回忆录",
+   "skills": [
+    "历史档案检索",
+    "口述史访谈"
+   ],
+   "accept": "确认助手姓名及具体发现过程",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 12
+  },
+  {
    "id": "QIN_012",
    "scene": "qin_fenshu_llm",
    "subject": "event:ev_qin_fenshu_02",

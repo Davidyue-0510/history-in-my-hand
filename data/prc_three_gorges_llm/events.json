@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_three_gorges_llm_01",
+   "subject": "event:ev_prc_three_gorges_llm_01",
+   "year": 1994,
+   "era": "1994年12月14日",
+   "title": "三峡工程开工",
+   "kind": "建置",
+   "text": "长江三峡工程正式开工",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_three_gorges_llm_02",
+   "subject": "event:ev_prc_three_gorges_llm_02",
+   "year": 1997,
+   "era": "1997年11月8日",
+   "title": "大江截流",
+   "kind": "建置",
+   "text": "大江截流成功",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_three_gorges_llm_03",
+   "subject": "event:ev_prc_three_gorges_llm_03",
+   "year": 2003,
+   "era": "2003年6月",
+   "title": "初期蓄水通航发电",
+   "kind": "建置",
+   "text": "蓄水135米，船闸通航，首批机组发电",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_three_gorges_llm_04",
+   "subject": "event:ev_prc_three_gorges_llm_04",
+   "year": 2006,
+   "era": "2006年5月20日",
+   "title": "大坝全线建成",
+   "kind": "建置",
+   "text": "大坝全线建成，坝顶高程185米",
+   "_source_idx": 0,
+   "_source_name": "三峡工程文献与国务院公报（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

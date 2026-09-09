@@ -1,0 +1,43 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_liangdanyixing_llm_01",
+   "subject": "event:ev_prc_liangdanyixing_llm_01",
+   "year": 1964,
+   "era": "1964年10月16日",
+   "title": "第一颗原子弹爆炸",
+   "kind": "其他",
+   "text": "中国在罗布泊成功爆炸首颗原子弹",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_liangdanyixing_llm_02",
+   "subject": "event:ev_prc_liangdanyixing_llm_02",
+   "year": 1967,
+   "era": "1967年6月17日",
+   "title": "第一颗氢弹空爆",
+   "kind": "其他",
+   "text": "氢弹空爆试验成功",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_liangdanyixing_llm_03",
+   "subject": "event:ev_prc_liangdanyixing_llm_03",
+   "year": 1970,
+   "era": "1970年4月24日",
+   "title": "东方红一号发射",
+   "kind": "其他",
+   "text": "长征一号火箭发射卫星成功",
+   "_source_idx": 0,
+   "_source_name": "两弹一星工程公开史料与纪念文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}

@@ -1,0 +1,297 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "whatif",
+ "_scene": "prc_qingzang_railway_llm",
+ "_scenario_type": "engineering",
+ "_years": [
+  1984,
+  2006
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1986,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.46 / 史实 0.62）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.62,
+    "new_to": 0.463,
+    "cum": -0.157
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1987,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.45 / 史实 0.66）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.66,
+    "new_to": 0.451,
+    "cum": -0.209
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1988,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.44 / 史实 0.70）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.7,
+    "new_to": 0.439,
+    "cum": -0.261
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1989,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.31（本支 0.43 / 史实 0.74）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.74,
+    "new_to": 0.427,
+    "cum": -0.313
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1990,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.36（本支 0.41 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.415,
+    "cum": -0.365
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1991,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.42（本支 0.40 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.82,
+    "new_to": 0.402,
+    "cum": -0.418
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1992,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.47（本支 0.39 / 史实 0.86）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.86,
+    "new_to": 0.39,
+    "cum": -0.47
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1993,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.52（本支 0.38 / 史实 0.90）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.9,
+    "new_to": 0.378,
+    "cum": -0.522
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1994,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.57（本支 0.37 / 史实 0.94）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.94,
+    "new_to": 0.366,
+    "cum": -0.574
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1995,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.63（本支 0.35 / 史实 0.98）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.98,
+    "new_to": 0.354,
+    "cum": -0.626
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1996,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.66（本支 0.34 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.342,
+    "cum": -0.658
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1997,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.67（本支 0.33 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.329,
+    "cum": -0.671
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1998,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.68（本支 0.32 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.317,
+    "cum": -0.683
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 1999,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.69（本支 0.30 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.305,
+    "cum": -0.695
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2000,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.71（本支 0.29 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.293,
+    "cum": -0.707
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2001,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.72（本支 0.28 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.281,
+    "cum": -0.719
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2002,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.73（本支 0.27 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.268,
+    "cum": -0.732
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2003,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.74（本支 0.26 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.256,
+    "cum": -0.744
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2004,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.76（本支 0.24 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.244,
+    "cum": -0.756
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2005,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.77（本支 0.23 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.232,
+    "cum": -0.768
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "divergence",
+   "year": 2006,
+   "severity": "bad",
+   "description": "改革指数偏离史实 -0.78（本支 0.22 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.22,
+    "cum": -0.78
+   },
+   "place_id": "xining"
+  },
+  {
+   "kind": "summary",
+   "year": 2006,
+   "severity": "bad",
+   "description": "终局改革指数：本支 0.22 / 史实 1.00（偏离 -0.78）",
+   "evidence": {
+    "cum": -0.78,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "xining"
+  }
+ ]
+}

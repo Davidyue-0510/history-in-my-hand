@@ -255,6 +255,16 @@
 | nongzhigao_llm | 14 | 4 | **0.000** | event:ev_nongzhigao_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | pingbo_zhiyi_llm | 14 | 4 | **0.000** | event:ev_pingbo_zhiyi_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | poyanghu | 15 | 3 | **0.000** | event:py_chen（0.000） | gap 2 / inference 1 / record 7 / scholarship 5 |
+| prc_chengyu_railway_llm | 15 | 2 | **0.000** | event:ev_prc_chengyu_railway_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| prc_hongqi_qu_llm | 15 | 3 | **0.000** | event:ev_prc_hongqi_qu_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| prc_liangdanyixing_llm | 15 | 3 | **0.000** | event:ev_prc_liangdanyixing_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| prc_nanjing_bridge_llm | 14 | 3 | **0.000** | event:ev_prc_nanjing_bridge_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| prc_qingzang_railway_llm | 12 | 3 | **0.000** | event:ev_prc_qingzang_railway_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
+| prc_shenzhen_sez_llm | 13 | 2 | **0.000** | event:ev_prc_shenzhen_sez_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
+| prc_shenzhou_llm | 15 | 3 | **0.000** | event:ev_prc_shenzhou_llm_01（0.000） | inference 1 / record 13 / scholarship 1 |
+| prc_three_gorges_llm | 14 | 4 | **0.000** | event:ev_prc_three_gorges_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| prc_wuhan_bridge_llm | 12 | 2 | **0.000** | event:ev_prc_wuhan_bridge_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
+| prc_yuanlongping_llm | 13 | 4 | **0.000** | event:ev_prc_yuanlongping_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | qianjia_puxue_llm | 16 | 3 | **0.000** | event:ev_qianjia_01（0.000） | inference 1 / record 5 / scholarship 10 |
 | qin_fenshu_llm | 13 | 2 | **0.000** | event:ev_qin_fenshu_01（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |
 | qin_mie_liu_guo | 14 | 5 | **0.000** | event:ev_qin_mie_liu_guo_01（0.000） | gap 2 / record 11 / scholarship 1 |
@@ -946,6 +956,35 @@
 | event:ev_pingbo_zhiyi_llm_02 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_pingbo_zhiyi_llm_03 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_pingbo_zhiyi_llm_04 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_prc_chengyu_railway_llm_01 | prc_chengyu_railway_llm | **0.000** | 0/3 | 0.00 | 0.10 | 10 | 0 / 0 / 0 / 0 |
+| event:ev_prc_chengyu_railway_llm_02 | prc_chengyu_railway_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_prc_hongqi_qu_llm_01 | prc_hongqi_qu_llm | **0.000** | 0/3 | 0.17 | 0.09 | 11 | 0 / 0 / 0 / 0 |
+| event:ev_prc_hongqi_qu_llm_02 | prc_hongqi_qu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_hongqi_qu_llm_03 | prc_hongqi_qu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_prc_liangdanyixing_llm_01 | prc_liangdanyixing_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
+| event:ev_prc_liangdanyixing_llm_02 | prc_liangdanyixing_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_liangdanyixing_llm_03 | prc_liangdanyixing_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_nanjing_bridge_llm_01 | prc_nanjing_bridge_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
+| event:ev_prc_nanjing_bridge_llm_02 | prc_nanjing_bridge_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_nanjing_bridge_llm_03 | prc_nanjing_bridge_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_qingzang_railway_llm_01 | prc_qingzang_railway_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_qingzang_railway_llm_02 | prc_qingzang_railway_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_qingzang_railway_llm_03 | prc_qingzang_railway_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
+| event:ev_prc_shenzhen_sez_llm_01 | prc_shenzhen_sez_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_prc_shenzhen_sez_llm_02 | prc_shenzhen_sez_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
+| event:ev_prc_shenzhou_llm_01 | prc_shenzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_shenzhou_llm_02 | prc_shenzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_prc_shenzhou_llm_03 | prc_shenzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 8 | 0 / 0 / 0 / 0 |
+| event:ev_prc_three_gorges_llm_01 | prc_three_gorges_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_three_gorges_llm_02 | prc_three_gorges_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_three_gorges_llm_03 | prc_three_gorges_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_three_gorges_llm_04 | prc_three_gorges_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:ev_prc_wuhan_bridge_llm_01 | prc_wuhan_bridge_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_prc_wuhan_bridge_llm_02 | prc_wuhan_bridge_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_prc_yuanlongping_llm_01 | prc_yuanlongping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_prc_yuanlongping_llm_02 | prc_yuanlongping_llm | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_prc_yuanlongping_llm_03 | prc_yuanlongping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 0 |
+| event:ev_prc_yuanlongping_llm_04 | prc_yuanlongping_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_01 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_02 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qianjia_03 | qianjia_puxue_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

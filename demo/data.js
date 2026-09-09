@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 440 个切片
+// 权威数据源：data/scenes.json 注册的 450 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 440 个切片",
+  "slice": "multi-scene · 450 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -172,6 +172,16 @@ window.SANDBOX_DATA = {
    "ningxia_xixia_tomb_llm",
    "nongzhigao_llm",
    "pingbo_zhiyi_llm",
+   "prc_chengyu_railway_llm",
+   "prc_hongqi_qu_llm",
+   "prc_liangdanyixing_llm",
+   "prc_nanjing_bridge_llm",
+   "prc_qingzang_railway_llm",
+   "prc_shenzhen_sez_llm",
+   "prc_shenzhou_llm",
+   "prc_three_gorges_llm",
+   "prc_wuhan_bridge_llm",
+   "prc_yuanlongping_llm",
    "qianjia_puxue_llm",
    "qin_fenshu_llm",
    "qin_mie_liu_guo",
@@ -999,7 +1009,17 @@ window.SANDBOX_DATA = {
   "tang_yixing_llm",
   "three_kingdoms_fanche_llm",
   "yuan_qinghua_llm",
-  "yuan_wangzhen_llm"
+  "yuan_wangzhen_llm",
+  "prc_chengyu_railway_llm",
+  "prc_hongqi_qu_llm",
+  "prc_liangdanyixing_llm",
+  "prc_nanjing_bridge_llm",
+  "prc_qingzang_railway_llm",
+  "prc_shenzhen_sez_llm",
+  "prc_shenzhou_llm",
+  "prc_three_gorges_llm",
+  "prc_wuhan_bridge_llm",
+  "prc_yuanlongping_llm"
  ],
  "vocab": {
   "layers": [
@@ -28104,6 +28124,209 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "yuan",
    "scale_tier": "operational"
+  },
+  "prc_chengyu_railway_llm": {
+   "key": "prc_chengyu_railway_llm",
+   "title": "成渝铁路（1950–1952·四川）",
+   "dossier_label": "成渝铁路（1950–1952·四川）",
+   "subtitle": "成渝铁路（1950–1952·四川）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_chengyu_railway_llm",
+   "vocab_pack": "inline:prc_chengyu_railway_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_hongqi_qu_llm": {
+   "key": "prc_hongqi_qu_llm",
+   "title": "红旗渠（1960–1969·河南林县）",
+   "dossier_label": "红旗渠（1960–1969·河南林县）",
+   "subtitle": "红旗渠（1960–1969·河南林县）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_hongqi_qu_llm",
+   "vocab_pack": "inline:prc_hongqi_qu_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_liangdanyixing_llm": {
+   "key": "prc_liangdanyixing_llm",
+   "title": "两弹一星（1964–1970）",
+   "dossier_label": "两弹一星（1964–1970）",
+   "subtitle": "两弹一星（1964–1970）",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=prc_liangdanyixing_llm",
+   "vocab_pack": "inline:prc_liangdanyixing_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_nanjing_bridge_llm": {
+   "key": "prc_nanjing_bridge_llm",
+   "title": "南京长江大桥（1960–1968·江苏）",
+   "dossier_label": "南京长江大桥（1960–1968·江苏）",
+   "subtitle": "南京长江大桥（1960–1968·江苏）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_nanjing_bridge_llm",
+   "vocab_pack": "inline:prc_nanjing_bridge_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_qingzang_railway_llm": {
+   "key": "prc_qingzang_railway_llm",
+   "title": "青藏铁路（2001–2006）",
+   "dossier_label": "青藏铁路（2001–2006）",
+   "subtitle": "青藏铁路（2001–2006）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_qingzang_railway_llm",
+   "vocab_pack": "inline:prc_qingzang_railway_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_shenzhen_sez_llm": {
+   "key": "prc_shenzhen_sez_llm",
+   "title": "深圳经济特区设立（1979–1984·广东）",
+   "dossier_label": "深圳经济特区设立（1979–1984·广东）",
+   "subtitle": "深圳经济特区设立（1979–1984·广东）",
+   "kind": "reform",
+   "region": "reform",
+   "page": "county.html?scene=prc_shenzhen_sez_llm",
+   "vocab_pack": "inline:prc_shenzhen_sez_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_shenzhou_llm": {
+   "key": "prc_shenzhou_llm",
+   "title": "神舟飞船与首次载人航天（1999–2003）",
+   "dossier_label": "神舟飞船与首次载人航天（1999–2003）",
+   "subtitle": "神舟飞船与首次载人航天（1999–2003）",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=prc_shenzhou_llm",
+   "vocab_pack": "inline:prc_shenzhou_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_three_gorges_llm": {
+   "key": "prc_three_gorges_llm",
+   "title": "长江三峡工程（1994–2006·湖北）",
+   "dossier_label": "长江三峡工程（1994–2006·湖北）",
+   "subtitle": "长江三峡工程（1994–2006·湖北）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_three_gorges_llm",
+   "vocab_pack": "inline:prc_three_gorges_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_wuhan_bridge_llm": {
+   "key": "prc_wuhan_bridge_llm",
+   "title": "武汉长江大桥（1955–1957·湖北）",
+   "dossier_label": "武汉长江大桥（1955–1957·湖北）",
+   "subtitle": "武汉长江大桥（1955–1957·湖北）",
+   "kind": "engineering",
+   "region": "engineering",
+   "page": "county.html?scene=prc_wuhan_bridge_llm",
+   "vocab_pack": "inline:prc_wuhan_bridge_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
+  },
+  "prc_yuanlongping_llm": {
+   "key": "prc_yuanlongping_llm",
+   "title": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "dossier_label": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "subtitle": "袁隆平与杂交水稻（1970–1973·湖南）",
+   "kind": "tech",
+   "region": "tech",
+   "page": "county.html?scene=prc_yuanlongping_llm",
+   "vocab_pack": "inline:prc_yuanlongping_llm",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    5,
+    6
+   ],
+   "epoch": "prc",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28546,7 +28769,17 @@ window.SANDBOX_DATA = {
   "tang_yixing_llm": "slices/tang_yixing_llm.js",
   "three_kingdoms_fanche_llm": "slices/three_kingdoms_fanche_llm.js",
   "yuan_qinghua_llm": "slices/yuan_qinghua_llm.js",
-  "yuan_wangzhen_llm": "slices/yuan_wangzhen_llm.js"
+  "yuan_wangzhen_llm": "slices/yuan_wangzhen_llm.js",
+  "prc_chengyu_railway_llm": "slices/prc_chengyu_railway_llm.js",
+  "prc_hongqi_qu_llm": "slices/prc_hongqi_qu_llm.js",
+  "prc_liangdanyixing_llm": "slices/prc_liangdanyixing_llm.js",
+  "prc_nanjing_bridge_llm": "slices/prc_nanjing_bridge_llm.js",
+  "prc_qingzang_railway_llm": "slices/prc_qingzang_railway_llm.js",
+  "prc_shenzhen_sez_llm": "slices/prc_shenzhen_sez_llm.js",
+  "prc_shenzhou_llm": "slices/prc_shenzhou_llm.js",
+  "prc_three_gorges_llm": "slices/prc_three_gorges_llm.js",
+  "prc_wuhan_bridge_llm": "slices/prc_wuhan_bridge_llm.js",
+  "prc_yuanlongping_llm": "slices/prc_yuanlongping_llm.js"
  },
  "corridors": [
   {

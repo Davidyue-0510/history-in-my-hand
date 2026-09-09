@@ -1,0 +1,56 @@
+{
+ "events": [
+  {
+   "id": "ev_prc_yuanlongping_llm_01",
+   "subject": "event:ev_prc_yuanlongping_llm_01",
+   "year": 1964,
+   "era": "1964年",
+   "title": "寻找雄性不育株",
+   "kind": "其他",
+   "text": "袁隆平在稻田中寻找雄性不育株",
+   "_source_idx": 0,
+   "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_yuanlongping_llm_02",
+   "subject": "event:ev_prc_yuanlongping_llm_02",
+   "year": 1970,
+   "era": "1970年冬",
+   "title": "发现野败",
+   "kind": "其他",
+   "text": "助手在海南三亚发现花粉败育野生稻",
+   "_source_idx": 0,
+   "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_yuanlongping_llm_03",
+   "subject": "event:ev_prc_yuanlongping_llm_03",
+   "year": 1973,
+   "era": "1973年",
+   "title": "三系配套成功",
+   "kind": "其他",
+   "text": "育成世界首个强优势杂交水稻组合",
+   "_source_idx": 0,
+   "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  },
+  {
+   "id": "ev_prc_yuanlongping_llm_04",
+   "subject": "event:ev_prc_yuanlongping_llm_04",
+   "year": 1976,
+   "era": "1976年",
+   "title": "全国推广",
+   "kind": "其他",
+   "text": "杂交水稻在全国大面积推广",
+   "_source_idx": 0,
+   "_source_name": "杂交水稻研究公开史料与科技文献（公开权威口径）",
+   "_source_party": "后世官修",
+   "_source_credibility": null
+  }
+ ]
+}
