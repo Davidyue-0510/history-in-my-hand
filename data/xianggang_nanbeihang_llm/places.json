@@ -5,14 +5,15 @@
       "name": "香港",
       "type": "port",
       "modern": "中国香港",
-      "note": "开埠为自由港",
+      "note": "开埠为自由港。坐标据地名志条目：香港，标 approx。",
       "_source_idx": 0,
       "_source_name": "香港史·南北行（华商）",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 114.173,
+      "lat": 22.32,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：香港（诚实回填 v0.221）。"
     },
     {
       "id": "wenxian_street",

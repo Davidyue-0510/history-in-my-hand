@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "wulei",
-   "name": "乌垒城",
-   "type": "city",
-   "modern": "今新疆轮台县",
-   "note": "西域都护府治所",
-   "_source_idx": 0,
-   "_source_name": "西域都护府史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "xiongnu",
-   "name": "匈奴",
-   "type": "region",
-   "modern": "今蒙古高原",
-   "note": "北方游牧政权",
-   "_source_idx": 0,
-   "_source_name": "西域都护府史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "wulei",
+      "name": "乌垒城",
+      "type": "city",
+      "modern": "今新疆轮台县",
+      "note": "西域都护府治所。坐标据地名志条目（别名 乌垒城→轮台），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "西域都护府史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 84.25,
+      "lat": 41.97,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 乌垒城→轮台）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "xiongnu",
+      "name": "匈奴",
+      "type": "region",
+      "modern": "今蒙古高原",
+      "note": "北方游牧政权",
+      "_source_idx": 0,
+      "_source_name": "西域都护府史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

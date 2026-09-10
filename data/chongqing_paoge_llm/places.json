@@ -5,14 +5,15 @@
       "name": "重庆",
       "type": "city",
       "modern": "中国重庆市",
-      "note": "袍哥活动中心",
+      "note": "袍哥活动中心。坐标据地名志条目：重庆，标 chgis。",
       "_source_idx": 0,
       "_source_name": "蜀籁·巴县档案 / 四川哥老会调查",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 106.557,
+      "lat": 29.56045,
+      "geo_match": "chgis",
+      "geo_note": "坐标据地名志条目：重庆（诚实回填 v0.221）。"
     },
     {
       "id": "matou",

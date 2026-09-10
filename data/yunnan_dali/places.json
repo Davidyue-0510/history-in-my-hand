@@ -1,48 +1,49 @@
 {
- "places": [
-  {
-   "id": "yangjumie",
-   "name": "羊苴咩城",
-   "type": "city",
-   "modern": "今云南大理",
-   "note": "大理国都城",
-   "_source_idx": 0,
-   "_source_name": "《大理国史》与段氏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "dali",
-   "name": "大理",
-   "type": "region",
-   "modern": "今云南大理",
-   "note": "大理国核心区域",
-   "_source_idx": 0,
-   "_source_name": "《大理国史》与段氏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "jinsha",
-   "name": "金沙江",
-   "type": "river",
-   "modern": "今金沙江",
-   "note": "渡江灭大理",
-   "_source_idx": 0,
-   "_source_name": "《大理国史》与段氏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "yangjumie",
+      "name": "羊苴咩城",
+      "type": "city",
+      "modern": "今云南大理",
+      "note": "大理国都城。坐标据地名志条目（别名 羊苴咩城→大理），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《大理国史》与段氏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 100.267,
+      "lat": 25.606,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 羊苴咩城→大理）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "dali",
+      "name": "大理",
+      "type": "region",
+      "modern": "今云南大理",
+      "note": "大理国核心区域",
+      "_source_idx": 0,
+      "_source_name": "《大理国史》与段氏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "jinsha",
+      "name": "金沙江",
+      "type": "river",
+      "modern": "今金沙江",
+      "note": "渡江灭大理",
+      "_source_idx": 0,
+      "_source_name": "《大理国史》与段氏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

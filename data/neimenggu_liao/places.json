@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "shangjing",
-   "name": "上京临潢府",
-   "type": "city",
-   "modern": "今内蒙古赤峰市巴林左旗",
-   "note": "辽代都城",
-   "_source_idx": 0,
-   "_source_name": "《辽史》与上京临潢府",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "huangshui",
-   "name": "潢水",
-   "type": "region",
-   "modern": "今内蒙古西拉木伦河",
-   "note": "契丹发源之地",
-   "_source_idx": 0,
-   "_source_name": "《辽史》与上京临潢府",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "shangjing",
+      "name": "上京临潢府",
+      "type": "city",
+      "modern": "今内蒙古赤峰市巴林左旗",
+      "note": "辽代都城。坐标据地名志条目（别名 上京临潢府→巴林左旗），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《辽史》与上京临潢府",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 119.39,
+      "lat": 43.98,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 上京临潢府→巴林左旗）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "huangshui",
+      "name": "潢水",
+      "type": "region",
+      "modern": "今内蒙古西拉木伦河",
+      "note": "契丹发源之地",
+      "_source_idx": 0,
+      "_source_name": "《辽史》与上京临潢府",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

@@ -1,62 +1,63 @@
 {
- "places": [
-  {
-   "id": "taihe_cheng",
-   "name": "太和城",
-   "type": "city",
-   "modern": "今中国云南省大理市",
-   "note": "南诏都城",
-   "_source_idx": 0,
-   "_source_name": "南诏史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "dali",
-   "name": "大理",
-   "type": "region",
-   "modern": "今中国云南省大理白族自治州",
-   "note": "太和城所在区域",
-   "_source_idx": 0,
-   "_source_name": "南诏史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "daduh",
-   "name": "大渡河",
-   "type": "river",
-   "modern": "今中国四川省大渡河",
-   "note": "南诏北界",
-   "_source_idx": 0,
-   "_source_name": "南诏史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "yuenan",
-   "name": "越南北部",
-   "type": "region",
-   "modern": "今越南社会主义共和国北部",
-   "note": "南诏南界",
-   "_source_idx": 0,
-   "_source_name": "南诏史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "taihe_cheng",
+      "name": "太和城",
+      "type": "city",
+      "modern": "今中国云南省大理市",
+      "note": "南诏都城。坐标据地名志条目（别名 太和城→大理），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "南诏史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 100.267,
+      "lat": 25.606,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 太和城→大理）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "dali",
+      "name": "大理",
+      "type": "region",
+      "modern": "今中国云南省大理白族自治州",
+      "note": "太和城所在区域",
+      "_source_idx": 0,
+      "_source_name": "南诏史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "daduh",
+      "name": "大渡河",
+      "type": "river",
+      "modern": "今中国四川省大渡河",
+      "note": "南诏北界",
+      "_source_idx": 0,
+      "_source_name": "南诏史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "yuenan",
+      "name": "越南北部",
+      "type": "region",
+      "modern": "今越南社会主义共和国北部",
+      "note": "南诏南界",
+      "_source_idx": 0,
+      "_source_name": "南诏史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

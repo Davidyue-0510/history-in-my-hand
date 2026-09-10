@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "zhennanguan",
-   "name": "鎮南關",
-   "type": "fortress",
-   "modern": "今中國廣西友誼關",
-   "note": "中越邊境關隘",
-   "_source_idx": 0,
-   "_source_name": "镇南关大捷史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "liangshan",
-   "name": "諒山",
-   "type": "city",
-   "modern": "今越南諒山省",
-   "note": "越南北部重鎮",
-   "_source_idx": 0,
-   "_source_name": "镇南关大捷史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "zhennanguan",
+      "name": "鎮南關",
+      "type": "fortress",
+      "modern": "今中國廣西友誼關",
+      "note": "中越邊境關隘。坐标据地名志条目（别名 鎮南關→友谊关），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "镇南关大捷史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 106.72,
+      "lat": 21.95,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 鎮南關→友谊关）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "liangshan",
+      "name": "諒山",
+      "type": "city",
+      "modern": "今越南諒山省",
+      "note": "越南北部重鎮",
+      "_source_idx": 0,
+      "_source_name": "镇南关大捷史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

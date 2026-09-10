@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "zunyi",
-   "name": "遵义",
-   "type": "city",
-   "modern": "今贵州省遵义市",
-   "note": "遵义会议召开地",
-   "_source_idx": 0,
-   "_source_name": "遵义会议史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "guizhou",
-   "name": "贵州",
-   "type": "region",
-   "modern": "今贵州省",
-   "note": "遵义会议所在省份",
-   "_source_idx": 0,
-   "_source_name": "遵义会议史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "zunyi",
+      "name": "遵义",
+      "type": "city",
+      "modern": "今贵州省遵义市",
+      "note": "遵义会议召开地。坐标据地名志条目：遵义，标 approx。",
+      "_source_idx": 0,
+      "_source_name": "遵义会议史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 106.93,
+      "lat": 27.73,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：遵义（诚实回填 v0.221）。"
+    },
+    {
+      "id": "guizhou",
+      "name": "贵州",
+      "type": "region",
+      "modern": "今贵州省",
+      "note": "遵义会议所在省份",
+      "_source_idx": 0,
+      "_source_name": "遵义会议史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

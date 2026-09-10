@@ -19,14 +19,15 @@
       "name": "长沙",
       "type": "city",
       "modern": "中国湖南省长沙市",
-      "note": "文夕大火发生地",
+      "note": "文夕大火发生地。坐标据地名志条目：长沙，标 chgis。",
       "_source_idx": 0,
       "_source_name": "长沙市志·火灾志（民国卷）/ 文夕大火档案",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 112.97813,
+      "lat": 28.1982,
+      "geo_match": "chgis",
+      "geo_note": "坐标据地名志条目：长沙（诚实回填 v0.221）。"
     },
     {
       "id": "tianxinge",

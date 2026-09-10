@@ -19,14 +19,15 @@
       "name": "大員",
       "type": "port",
       "modern": "今台灣台南",
-      "note": "荷蘭據台之據點",
+      "note": "荷蘭據台之據點。坐标据地名志条目（modern 含 台南→台南），标 approx。",
       "_source_idx": 0,
       "_source_name": "热兰遮城志（Valentijn）/ 台湾通史",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 120.2,
+      "lat": 23.0,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（modern 含 台南→台南）（诚实回填 v0.221）。"
     },
     {
       "id": "batavia",

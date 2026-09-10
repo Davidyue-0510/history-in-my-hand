@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "linan",
-   "name": "临安",
-   "type": "city",
-   "modern": "今中国浙江省杭州市",
-   "note": "南宋行在",
-   "_source_idx": 0,
-   "_source_name": "《梦粱录》与临安风物",
-   "_source_party": "宋官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "jiangnan",
-   "name": "江南",
-   "type": "region",
-   "modern": "今中国长江以南",
-   "note": "天下财赋之薮",
-   "_source_idx": 0,
-   "_source_name": "《梦粱录》与临安风物",
-   "_source_party": "宋官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "linan",
+      "name": "临安",
+      "type": "city",
+      "modern": "今中国浙江省杭州市",
+      "note": "南宋行在。坐标据地名志条目（modern 含 杭州→杭州），标 gazetteer。",
+      "_source_idx": 0,
+      "_source_name": "《梦粱录》与临安风物",
+      "_source_party": "宋官修",
+      "_source_credibility": null,
+      "lon": 120.15,
+      "lat": 30.27,
+      "geo_match": "gazetteer",
+      "geo_note": "坐标据地名志条目（modern 含 杭州→杭州）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "jiangnan",
+      "name": "江南",
+      "type": "region",
+      "modern": "今中国长江以南",
+      "note": "天下财赋之薮",
+      "_source_idx": 0,
+      "_source_name": "《梦粱录》与临安风物",
+      "_source_party": "宋官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

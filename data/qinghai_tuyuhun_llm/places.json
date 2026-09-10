@@ -1,48 +1,49 @@
 {
- "places": [
-  {
-   "id": "fu_han",
-   "name": "枹罕",
-   "type": "city",
-   "modern": "今甘肃临夏",
-   "note": "吐谷浑西迁途经地",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "qinghai_lake",
-   "name": "青海湖",
-   "type": "region",
-   "modern": "今青海省东北部",
-   "note": "吐谷浑核心区域",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "he_yuan",
-   "name": "河源",
-   "type": "region",
-   "modern": "今青海省南部",
-   "note": "吐谷浑控扼之地",
-   "_source_idx": 0,
-   "_source_name": "吐谷浑史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "fu_han",
+      "name": "枹罕",
+      "type": "city",
+      "modern": "今甘肃临夏",
+      "note": "吐谷浑西迁途经地。坐标据地名志条目（别名 枹罕→临夏），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "吐谷浑史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 103.204,
+      "lat": 35.607,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 枹罕→临夏）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "qinghai_lake",
+      "name": "青海湖",
+      "type": "region",
+      "modern": "今青海省东北部",
+      "note": "吐谷浑核心区域",
+      "_source_idx": 0,
+      "_source_name": "吐谷浑史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "he_yuan",
+      "name": "河源",
+      "type": "region",
+      "modern": "今青海省南部",
+      "note": "吐谷浑控扼之地",
+      "_source_idx": 0,
+      "_source_name": "吐谷浑史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

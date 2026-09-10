@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "huining",
-   "name": "会宁府",
-   "type": "city",
-   "modern": "今黑龙江省哈尔滨市阿城区",
-   "note": "金上京",
-   "_source_idx": 0,
-   "_source_name": "《金史》与上京会宁府",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "anchuhu",
-   "name": "按出虎水",
-   "type": "region",
-   "modern": "今黑龙江省哈尔滨市阿城区阿什河",
-   "note": "女真语金水",
-   "_source_idx": 0,
-   "_source_name": "《金史》与上京会宁府",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "huining",
+      "name": "会宁府",
+      "type": "city",
+      "modern": "今黑龙江省哈尔滨市阿城区",
+      "note": "金上京。坐标据地名志条目（别名 会宁府→阿城），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《金史》与上京会宁府",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 126.63,
+      "lat": 45.32,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 会宁府→阿城）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "anchuhu",
+      "name": "按出虎水",
+      "type": "region",
+      "modern": "今黑龙江省哈尔滨市阿城区阿什河",
+      "note": "女真语金水",
+      "_source_idx": 0,
+      "_source_name": "《金史》与上京会宁府",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

@@ -5,14 +5,15 @@
       "name": "曲阜",
       "type": "city",
       "modern": "今中国山东省曲阜市",
-      "note": "孔子故里，阙里所在",
+      "note": "孔子故里，阙里所在。坐标据地名志条目：曲阜，标 chgis。",
       "_source_idx": 0,
       "_source_name": "宋史·礼志 / 阙里文献考",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 116.98052,
+      "lat": 35.59756,
+      "geo_match": "chgis",
+      "geo_note": "坐标据地名志条目：曲阜（诚实回填 v0.221）。"
     }
   ]
 }

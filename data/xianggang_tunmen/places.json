@@ -1,48 +1,49 @@
 {
- "places": [
-  {
-   "id": "tunmen",
-   "name": "屯门",
-   "type": "port",
-   "modern": "今中国香港新界",
-   "note": "佛郎机据为舶口",
-   "_source_idx": 0,
-   "_source_name": "《明史·外国传》与屯门",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "langbai_ao",
-   "name": "浪白澳",
-   "type": "port",
-   "modern": "今中国广东珠海",
-   "note": "佛郎机舶口之一",
-   "_source_idx": 0,
-   "_source_name": "《明史·外国传》与屯门",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "nantou",
-   "name": "南头",
-   "type": "fortress",
-   "modern": "今中国广东深圳",
-   "note": "明设守御所",
-   "_source_idx": 0,
-   "_source_name": "《明史·外国传》与屯门",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "tunmen",
+      "name": "屯门",
+      "type": "port",
+      "modern": "今中国香港新界",
+      "note": "佛郎机据为舶口。坐标据地名志条目（modern 含 香港→香港），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《明史·外国传》与屯门",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.173,
+      "lat": 22.32,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（modern 含 香港→香港）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "langbai_ao",
+      "name": "浪白澳",
+      "type": "port",
+      "modern": "今中国广东珠海",
+      "note": "佛郎机舶口之一",
+      "_source_idx": 0,
+      "_source_name": "《明史·外国传》与屯门",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "nantou",
+      "name": "南头",
+      "type": "fortress",
+      "modern": "今中国广东深圳",
+      "note": "明设守御所",
+      "_source_idx": 0,
+      "_source_name": "《明史·外国传》与屯门",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

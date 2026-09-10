@@ -33,14 +33,15 @@
       "name": "随州",
       "type": "city",
       "modern": "今湖北随州",
-      "note": "明玉珍籍贯",
+      "note": "明玉珍籍贯。坐标据地名志条目：随州，标 chgis。",
       "_source_idx": 0,
       "_source_name": "明史·明玉珍传",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 113.36982,
+      "lat": 31.7151,
+      "geo_match": "chgis",
+      "geo_note": "坐标据地名志条目：随州（诚实回填 v0.221）。"
     }
   ]
 }

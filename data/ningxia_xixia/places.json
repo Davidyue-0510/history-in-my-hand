@@ -1,48 +1,49 @@
 {
- "places": [
-  {
-   "id": "xiazhou",
-   "name": "夏州",
-   "type": "city",
-   "modern": "今陕西靖边",
-   "note": "拓跋思恭镇守之地",
-   "_source_idx": 0,
-   "_source_name": "《宋史·夏国传》与西夏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "xingqingfu",
-   "name": "兴庆府",
-   "type": "city",
-   "modern": "今宁夏银川",
-   "note": "西夏都城",
-   "_source_idx": 0,
-   "_source_name": "《宋史·夏国传》与西夏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "helan",
-   "name": "贺兰山",
-   "type": "region",
-   "modern": "今宁夏贺兰山",
-   "note": "兴庆府屏障",
-   "_source_idx": 0,
-   "_source_name": "《宋史·夏国传》与西夏",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "xiazhou",
+      "name": "夏州",
+      "type": "city",
+      "modern": "今陕西靖边",
+      "note": "拓跋思恭镇守之地。坐标据地名志条目（别名 夏州→靖边），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《宋史·夏国传》与西夏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 108.76,
+      "lat": 37.58,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 夏州→靖边）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "xingqingfu",
+      "name": "兴庆府",
+      "type": "city",
+      "modern": "今宁夏银川",
+      "note": "西夏都城",
+      "_source_idx": 0,
+      "_source_name": "《宋史·夏国传》与西夏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "helan",
+      "name": "贺兰山",
+      "type": "region",
+      "modern": "今宁夏贺兰山",
+      "note": "兴庆府屏障",
+      "_source_idx": 0,
+      "_source_name": "《宋史·夏国传》与西夏",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

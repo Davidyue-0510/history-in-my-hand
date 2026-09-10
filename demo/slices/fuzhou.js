@@ -452,10 +452,10 @@ window.SANDBOX_SLICES["fuzhou"] = {
     },
     {
      "name": "苏州",
-     "lon": null,
-     "lat": null,
-     "note": "",
-     "resolved": false
+     "lon": 120.585,
+     "lat": 31.299,
+     "note": "吴县/平江府，今江苏苏州",
+     "resolved": true
     }
    ]
   },

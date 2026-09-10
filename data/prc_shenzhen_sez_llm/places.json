@@ -5,14 +5,15 @@
       "name": "深圳",
       "type": "city",
       "modern": "今中国广东省深圳市",
-      "note": "经济特区",
+      "note": "经济特区。坐标据地名志条目：深圳，标 approx。",
       "_source_idx": 0,
       "_source_name": "中共中央文件与《广东省经济特区条例》（公开权威口径）",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 114.06,
+      "lat": 22.55,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：深圳（诚实回填 v0.221）。"
     },
     {
       "id": "baoan",

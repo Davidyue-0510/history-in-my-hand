@@ -19,14 +19,15 @@
       "name": "灵州",
       "type": "city",
       "modern": "今宁夏灵武",
-      "note": "朔方节度使治所",
+      "note": "朔方节度使治所。坐标据地名志条目（别名 灵州→灵武），标 approx。",
       "_source_idx": 0,
       "_source_name": "旧唐书·地理志（灵州朔方）",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 106.34,
+      "lat": 38.08,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 灵州→灵武）（诚实回填 v0.221）。"
     },
     {
       "id": "hequ",

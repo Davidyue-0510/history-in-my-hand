@@ -19,14 +19,15 @@
       "name": "唐山",
       "type": "city",
       "modern": "今中国河北省唐山市",
-      "note": "开滦煤矿所在地",
+      "note": "开滦煤矿所在地。坐标据地名志条目：唐山，标 approx。",
       "_source_idx": 0,
       "_source_name": "开滦煤矿史 / 1922 开滦五矿罢工史料",
       "_source_party": "后世官修",
       "_source_credibility": null,
-      "lon": null,
-      "lat": null,
-      "geo_unresolved": true
+      "lon": 118.18,
+      "lat": 39.63,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：唐山（诚实回填 v0.221）。"
     },
     {
       "id": "kailuan",

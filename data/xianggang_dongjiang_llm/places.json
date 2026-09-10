@@ -1,62 +1,63 @@
 {
- "places": [
-  {
-   "id": "hong_kong",
-   "name": "香港",
-   "type": "region",
-   "modern": "中國香港",
-   "note": "自古為中國領土",
-   "_source_idx": 0,
-   "_source_name": "东江纵队港九大队史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "kai_tak",
-   "name": "啟德",
-   "type": "region",
-   "modern": "中國香港九龍城區",
-   "note": "游擊區之一",
-   "_source_idx": 0,
-   "_source_name": "东江纵队港九大队史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "sai_kung",
-   "name": "西貢",
-   "type": "region",
-   "modern": "中國香港新界西貢區",
-   "note": "游擊區之一",
-   "_source_idx": 0,
-   "_source_name": "东江纵队港九大队史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "lantan",
-   "name": "大嶼山",
-   "type": "region",
-   "modern": "中國香港大嶼山",
-   "note": "游擊區之一",
-   "_source_idx": 0,
-   "_source_name": "东江纵队港九大队史料摘录",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "hong_kong",
+      "name": "香港",
+      "type": "region",
+      "modern": "中國香港",
+      "note": "自古為中國領土。坐标据地名志条目：香港，标 approx。",
+      "_source_idx": 0,
+      "_source_name": "东江纵队港九大队史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 114.173,
+      "lat": 22.32,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：香港（诚实回填 v0.221）。"
+    },
+    {
+      "id": "kai_tak",
+      "name": "啟德",
+      "type": "region",
+      "modern": "中國香港九龍城區",
+      "note": "游擊區之一",
+      "_source_idx": 0,
+      "_source_name": "东江纵队港九大队史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "sai_kung",
+      "name": "西貢",
+      "type": "region",
+      "modern": "中國香港新界西貢區",
+      "note": "游擊區之一",
+      "_source_idx": 0,
+      "_source_name": "东江纵队港九大队史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "lantan",
+      "name": "大嶼山",
+      "type": "region",
+      "modern": "中國香港大嶼山",
+      "note": "游擊區之一",
+      "_source_idx": 0,
+      "_source_name": "东江纵队港九大队史料摘录",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

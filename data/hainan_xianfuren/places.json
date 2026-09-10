@@ -1,48 +1,49 @@
 {
- "places": [
-  {
-   "id": "gaoliang",
-   "name": "高凉",
-   "type": "region",
-   "modern": "今中国广东阳江一带",
-   "note": "冼氏世居之地",
-   "_source_idx": 0,
-   "_source_name": "《隋书·谯国夫人传》",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "hainan",
-   "name": "海南",
-   "type": "region",
-   "modern": "今中国海南省",
-   "note": "岭南之外，跨据之地",
-   "_source_idx": 0,
-   "_source_name": "《隋书·谯国夫人传》",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "daner",
-   "name": "儋耳",
-   "type": "region",
-   "modern": "今中国海南省儋州市",
-   "note": "海南归附之洞",
-   "_source_idx": 0,
-   "_source_name": "《隋书·谯国夫人传》",
-   "_source_party": "后世官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "gaoliang",
+      "name": "高凉",
+      "type": "region",
+      "modern": "今中国广东阳江一带",
+      "note": "冼氏世居之地。坐标据地名志条目（别名 高凉→阳江），标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《隋书·谯国夫人传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": 111.98,
+      "lat": 21.86,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目（别名 高凉→阳江）（诚实回填 v0.221）。"
+    },
+    {
+      "id": "hainan",
+      "name": "海南",
+      "type": "region",
+      "modern": "今中国海南省",
+      "note": "岭南之外，跨据之地",
+      "_source_idx": 0,
+      "_source_name": "《隋书·谯国夫人传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    },
+    {
+      "id": "daner",
+      "name": "儋耳",
+      "type": "region",
+      "modern": "今中国海南省儋州市",
+      "note": "海南归附之洞",
+      "_source_idx": 0,
+      "_source_name": "《隋书·谯国夫人传》",
+      "_source_party": "后世官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }

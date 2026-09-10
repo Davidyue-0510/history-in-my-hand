@@ -1,34 +1,35 @@
 {
- "places": [
-  {
-   "id": "diaoyucheng",
-   "name": "钓鱼城",
-   "type": "fortress",
-   "modern": "今重庆合川",
-   "note": "依山为垒",
-   "_source_idx": 0,
-   "_source_name": "《宋史》与钓鱼城",
-   "_source_party": "宋官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  },
-  {
-   "id": "hezhou",
-   "name": "合州",
-   "type": "city",
-   "modern": "今重庆合川",
-   "note": "钓鱼城所在",
-   "_source_idx": 0,
-   "_source_name": "《宋史》与钓鱼城",
-   "_source_party": "宋官修",
-   "_source_credibility": null,
-   "lon": null,
-   "lat": null,
-   "geo_unresolved": true
-  }
- ],
- "rivers": [],
- "wall": []
+  "places": [
+    {
+      "id": "diaoyucheng",
+      "name": "钓鱼城",
+      "type": "fortress",
+      "modern": "今重庆合川",
+      "note": "依山为垒。坐标据地名志条目：钓鱼城，标 approx。",
+      "_source_idx": 0,
+      "_source_name": "《宋史》与钓鱼城",
+      "_source_party": "宋官修",
+      "_source_credibility": null,
+      "lon": 106.3,
+      "lat": 30.0,
+      "geo_match": "approx",
+      "geo_note": "坐标据地名志条目：钓鱼城（诚实回填 v0.221）。"
+    },
+    {
+      "id": "hezhou",
+      "name": "合州",
+      "type": "city",
+      "modern": "今重庆合川",
+      "note": "钓鱼城所在",
+      "_source_idx": 0,
+      "_source_name": "《宋史》与钓鱼城",
+      "_source_party": "宋官修",
+      "_source_credibility": null,
+      "lon": null,
+      "lat": null,
+      "geo_unresolved": true
+    }
+  ],
+  "rivers": [],
+  "wall": []
 }
