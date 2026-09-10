@@ -421,6 +421,25 @@
         }
       }
     });
+    // 2.5) 湖泊 + 河流（自然地理骨架；与战棋沙盘同源 NE 50m 矢量底图。
+    //      DemTopo 栅格本身不含河流矢量，故在此叠加矢量层——概览场景也能显水系。
+    //      approx=true 的补充水系（如辽东 tributary）以虚线 + 「（约）」诚实标注精度。
+    var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
+      'vector-effect': 'non-scaling-stroke', opacity: .82 }, gBase);
+    (BM.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+    var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
+      'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
+    (BM.rivers || []).forEach(function (f) {
+      el('path', { d: geomPath(f.g), 'stroke-width': 1.4,
+        'stroke-dasharray': f.approx ? '5 4' : null }, gRiv);
+      if (f.n) {
+        var r = geomLabelXY(f.g);
+        if (r) {
+          var t = el('text', { x: r[0] + 4, y: r[1] - 3, class: 'river-label' }, gBase);
+          t.textContent = f.n + (f.approx ? '（约）' : '');
+        }
+      }
+    });
     // 3) 辽东边墙（仅辽东体系场景注入，不再共享误显）
     if (WALL && WALL.path) {
       el('path', { d: poly(WALL.path), fill: 'none', stroke: '#7A7466', 'stroke-width': 2,
