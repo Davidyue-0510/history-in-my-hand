@@ -53,6 +53,23 @@ def _load_wall():
     return w
 
 
+def _load_liaodong_rivers():
+    """辽东骨干补充水系（浑河/苏子河）。
+
+    NE 1:50m 在辽东 bbox 内仅含 辽河/西拉木伦河/西辽河，缺 浑河/苏子河 两条
+    明—清战役定义性骨干水系（萨尔浒 1619 战场核心在抚顺—新宾—赫图阿拉一线，
+    即 浑河/苏子河 河谷）。本文件由 v0.222b 创建，坐标约 5–10km 精度，
+    带 approx+note 诚实标注。复用 county/sarhu 页面的同一份共享资产，保证
+    战棋沙盘与 county/sarhu 底图水网一致。
+    """
+    p = os.path.join(ROOT, "data", "geo", "liaodong_rivers.json")
+    if not os.path.exists(p):
+        return []
+    with open(p, encoding="utf-8") as f:
+        d = json.load(f)
+    return d.get("rivers", [])
+
+
 def _build_one(bbox, with_admin1, nd=3, stride=2):
     """裁一个 bbox 的 NE 矢量底图（陆/海/省界/河/湖/海岸线）。"""
     emb = BM._clip_all(bbox, nd=nd, stride=stride, with_admin1=with_admin1)
@@ -63,7 +80,11 @@ def _build_one(bbox, with_admin1, nd=3, stride=2):
 def main():
     # 战区：视野小，要 admin1 细节，精度保留 3 位
     liaodong = _build_one(LIAODONG_BBOX, with_admin1=True, nd=3, stride=2)
-    # 全中国：与 SD.basemap 同样的精度/抽稀，避免重复体积
+    # 合并辽东骨干补充水系（浑河/苏子河），与 county/sarhu 页面同源、诚实约记
+    liaodong_rivers = _load_liaodong_rivers()
+    if liaodong_rivers:
+        BM._merge_extra_rivers(liaodong, liaodong_rivers, LIAODONG_BBOX, nd=3)
+    # 全中国：与 SD.basemap 同样的精度/抽稀，避免重复体积（国家视图不画辽河支流）
     china = _build_one(CHINA_BBOX, with_admin1=True, nd=2, stride=3)
     wall = _load_wall()
 
