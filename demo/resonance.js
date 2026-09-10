@@ -393,6 +393,7 @@ window.SANDBOX_RESONANCE = {
    "wuwang",
    "wuxu",
    "wuxu_reform_llm",
+   "wuyishan",
    "xian",
    "xianggang_1941_llm",
    "xianggang_dongjiang_llm",
@@ -7822,6 +7823,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 4,
    "avg_resonance": 0.0,
    "best_event": "event:ev_wuxu_reform_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "wuyishan",
+   "name": "wuyishan",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "宋·私修": 3,
+    "学界": 11,
+    "清·私修": 2,
+    "元·官修": 1
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_wuyishan_01",
    "best_resonance": 0.0
   },
   {

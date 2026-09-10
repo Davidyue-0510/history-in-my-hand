@@ -1,0 +1,61 @@
+{
+  "_comment": "per-scene vocab pack for 武夷山（丹霞·朱子理学·红茶·UNESCO911，南宋—清）。parties 为 宋·私修/元·官修/清·私修/学界，立场靠来源派生，不伪造。",
+  "_base": null,
+  "parties": [
+    "宋·私修",
+    "元·官修",
+    "清·私修",
+    "学界"
+  ],
+  "party_bucket": {
+    "宋·私修": "宋·私修",
+    "元·官修": "元·官修",
+    "清·私修": "清·私修",
+    "学界": "学界"
+  },
+  "party_colors": {
+    "宋·私修": "#B23A48",
+    "元·官修": "#6C7A89",
+    "清·私修": "#7B5C3E",
+    "学界": "#2E7D8F"
+  },
+  "factions": {
+    "f_宋·私修": {
+      "name": "宋·私修",
+      "macro_party": "宋·私修",
+      "note": "auto"
+    },
+    "f_元·官修": {
+      "name": "元·官修",
+      "macro_party": "元·官修",
+      "note": "auto"
+    },
+    "f_清·私修": {
+      "name": "清·私修",
+      "macro_party": "清·私修",
+      "note": "auto"
+    },
+    "f_学界": {
+      "name": "学界",
+      "macro_party": "学界",
+      "note": "auto"
+    }
+  },
+  "faction_colors": {
+    "f_宋·私修": "#B23A48",
+    "f_元·官修": "#6C7A89",
+    "f_清·私修": "#7B5C3E",
+    "f_学界": "#2E7D8F"
+  },
+  "layers": {
+    "record": "原始史料",
+    "scholarship": "学界研究",
+    "inference": "合理推断",
+    "gap": "证据缺口"
+  },
+  "quote_status": {
+    "verbatim": "直接引文",
+    "paraphrase_unverified": "转述待核",
+    "generated": "生成"
+  }
+}

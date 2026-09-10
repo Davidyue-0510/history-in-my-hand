@@ -8427,6 +8427,57 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "WY_G01",
+   "scene": "wuyishan",
+   "subject": "place:wuyi_jingshe",
+   "title": "武夷精舍初创时的建筑布局、屋宇规模与南宋以后各代重修、兴废的具体记录，公开有限。",
+   "missing": "建筑史 / 书院史 / 考古学",
+   "where": "武夷精舍初创与历代重修的建筑考古、样式雷或地方志图档",
+   "skills": [
+    "建筑史",
+    "书院史",
+    "考古学"
+   ],
+   "accept": "若有南宋基址发掘报告或明清重修碑刻，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "WY_G02",
+   "scene": "wuyishan",
+   "subject": "place:wuyi_mountain",
+   "title": "清代武夷红茶经万里茶道外销的商帮构成、年运量、沿途价格与终端市场分布等量化数据，公开有限。",
+   "missing": "经济史 / 茶史 / 档案学",
+   "where": "清代武夷红茶外销的商帮账簿、关税档案、恰克图贸易统计",
+   "skills": [
+    "经济史",
+    "茶史",
+    "档案学"
+   ],
+   "accept": "若有清代商号账册或海关/理藩院贸易档案公开，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "WY_G03",
+   "scene": "wuyishan",
+   "subject": "place:chengcun_han_city",
+   "title": "城村汉城内部宫殿区、宗庙、官署的具体布局，以及闽越国日常行政、户籍、赋役档案，公开有限。",
+   "missing": "考古学 / 秦汉史 / 闽越国研究",
+   "where": "城村汉城宫殿基址、官署遗址与闽越国文字/简牍考古",
+   "skills": [
+    "考古学",
+    "秦汉史",
+    "闽越国研究"
+   ],
+   "accept": "若有汉代简牍或宫殿基址测绘，可补地理(1)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "XA_G01",
    "scene": "xian",
    "subject": "place:chang_an_city",

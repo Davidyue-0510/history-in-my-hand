@@ -394,6 +394,7 @@
 | wuwang | 7 | 2 | **0.000** | event:ww_1046（0.000） | gap 1 / record 3 / scholarship 3 |
 | wuxu | 16 | 2 | **0.000** | event:wx_0611（0.000） | gap 1 / inference 2 / record 11 / scholarship 2 |
 | wuxu_reform_llm | 13 | 4 | **0.000** | event:ev_wuxu_reform_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
+| wuyishan | 17 | 3 | **0.000** | event:ev_wuyishan_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | xian | 17 | 3 | **0.000** | event:ev_xian_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | xianggang_1941_llm | 15 | 3 | **0.000** | event:ev_xianggang_1941_llm_01（0.000） | gap 2 / inference 4 / record 8 / scholarship 1 |
 | xianggang_dongjiang_llm | 14 | 3 | **0.000** | event:ev_xianggang_dongjiang_llm_01（0.000） | gap 2 / inference 1 / record 10 / scholarship 1 |
@@ -1265,6 +1266,9 @@
 | event:ev_wuxu_reform_llm_02 | wuxu_reform_llm | **0.000** | 0/3 | 0.20 | 0.00 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_wuxu_reform_llm_03 | wuxu_reform_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_wuxu_reform_llm_04 | wuxu_reform_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_wuyishan_01 | wuyishan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_wuyishan_02 | wuyishan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_wuyishan_03 | wuyishan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xian_01 | xian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xian_02 | xian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xian_03 | xian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

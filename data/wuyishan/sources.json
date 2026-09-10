@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "zhuzi_quanshu",
+      "title": "朱子全书",
+      "party": "宋·私修",
+      "stance_label": "宋人私修·当代",
+      "distance_label": "朱熹著作及门人编语录，距武夷事 contemporaneous",
+      "color": "#B23A48",
+      "compiler": "朱熹及门人（南宋）",
+      "period": "宋",
+      "note": "朱熹文集、语类及年谱，载武夷精舍创建、讲学与理学传播，为朱熹 contemporaneous 记录。"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "地理志、儒林传载闽中理学与朱熹事迹，元人修宋史，视角非宋当代。"
+    },
+    {
+      "id": "xu_cha_jing",
+      "title": "续茶经",
+      "party": "清·私修",
+      "stance_label": "清人私修·茶史专著",
+      "distance_label": "清乾隆间陆廷灿撰，距明清茶事约数十年",
+      "color": "#7B5C3E",
+      "compiler": "陆廷灿（清）",
+      "period": "清",
+      "note": "清代茶史专著，载武夷岩茶、红茶品类与贡茶、外销历史，为茶业社会史核心史料。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "武夷山文化与自然遗产综合研究",
+      "period": "今",
+      "note": "历史地理、茶学、理学、遗产学等现代研究的综合推论，用于 inference 与 gap 层。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_wuyishan_01",
+      "year": 1183,
+      "era": "南宋淳熙十年",
+      "kind": "建院",
+      "title": "朱熹建武夷精舍·理学南传",
+      "place": "wuyi_jingshe",
+      "text": "南宋淳熙十年（1183）朱熹于武夷山五曲隐屏峰下建武夷精舍，讲学著述、会友论道，使武夷山成为南宋理学传播中心之一，影响东亚书院文化数百年。",
+      "subject": "event:ev_wuyishan_01"
+    },
+    {
+      "id": "ev_wuyishan_02",
+      "year": 1999,
+      "era": "1999",
+      "kind": "申遗",
+      "title": "武夷山列入UNESCO世界文化与自然双重遗产",
+      "place": "wuyi_mountain",
+      "text": "1999年武夷山被联合国教科文组织列入《世界遗产名录》，成为中国第四处、福建首处世界文化与自然双重遗产，以生物多样性、丹霞地貌与理学文化价值获认。",
+      "subject": "event:ev_wuyishan_02"
+    },
+    {
+      "id": "ev_wuyishan_03",
+      "year": 1650,
+      "era": "清顺治前后",
+      "kind": "茶业兴起",
+      "title": "武夷红茶兴起·万里茶道南埠",
+      "place": "tongmu_guan",
+      "text": "清代武夷山区桐木关一带创制正山小种红茶，经闽赣古道、恰克图茶道远销欧洲，武夷山遂为万里茶道南端重要节点，晋商、闽商在此交汇。",
+      "subject": "event:ev_wuyishan_03"
+    }
+  ]
+}

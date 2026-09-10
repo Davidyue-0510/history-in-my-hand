@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "wuyi_jingshe",
+      "to": "wuyi_mountain",
+      "relation": "位于五曲隐屏峰下",
+      "note": "武夷精舍位于武夷山五曲隐屏峰下，是山中理学与书院文化的核心节点。"
+    },
+    {
+      "from": "jiuqu_stream",
+      "to": "wuyi_mountain",
+      "relation": "穿行景区",
+      "note": "九曲溪蜿蜒穿行于武夷山景区东部，两岸峰岩、书院、寺庙错落，是景观与文化廊道。"
+    },
+    {
+      "from": "dahongpao_mud_tree",
+      "to": "wuyi_mountain",
+      "relation": "位于天心岩一带",
+      "note": "大红袍母树位于武夷山天心永乐禅寺附近，是武夷岩茶与贡茶文化的物质见证。"
+    },
+    {
+      "from": "tongmu_guan",
+      "to": "wuyi_mountain",
+      "relation": "西北保护区",
+      "note": "桐木关位于武夷山国家级自然保护区西北，与江西交界，是正山小种红茶发源地。"
+    },
+    {
+      "from": "chengcun_han_city",
+      "to": "wuyi_mountain",
+      "relation": "东南约15公里",
+      "note": "城村汉城遗址位于武夷山市东南兴田镇，与武夷山景区同属闽越国至宋明文化层。"
+    }
+  ]
+}
