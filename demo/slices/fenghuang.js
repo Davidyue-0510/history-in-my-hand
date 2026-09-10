@@ -132,14 +132,14 @@ window.SANDBOX_SLICES["fenghuang"] = {
   {
    "id": "fenghuang_gucheng",
    "name": "凤凰古城",
-   "lon": 109.604863,
-   "lat": 27.947807,
+   "lon": 109.599,
+   "lat": 27.9524,
    "type": "古城",
    "modern": "湖南省湘西土家族苗族自治州凤凰县沱江镇",
-   "note": "位于沱江中游，国家历史文化名城、国家 5A 景区，始建于清康熙年间，吊脚楼沿沱江而建。",
-   "geo_match": "approx",
-   "geo_note": "坐标取自腾讯地图公开的凤凰古城旅游区位置（109.604863, 27.947807），待CHGIS精修",
-   "elev": 388
+   "note": "位于沱江中游，国家历史文化名城、国家 5A 景区，始建于清康熙年间，吊脚楼沿沱江而建（CHGIS V6 治所坐标，WGS84：凤凰厅）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：凤凰厅（凤凰厅治所（凤凰古城））",
+   "elev": 392
   },
   {
    "id": "hong_qiao",
@@ -150,7 +150,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
    "modern": "凤凰古城内沱江中段",
    "note": "横跨沱江的风雨廊桥，始建于明洪武、清代重修，桥上建市肆，为古城标志性建筑。",
    "geo_match": "approx",
-   "geo_note": "位于凤凰古城沱江中段，取古城中心近似坐标（109.6005, 27.947），待CHGIS精修",
+   "geo_note": "位于凤凰古城沱江中段，取古城中心近似坐标（109.6005, 27.947）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 388
   },
   {
@@ -162,7 +162,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
    "modern": "凤凰县境内，武水一级支流",
    "note": "沱江穿凤凰古城而过，是古城吊脚楼与虹桥的依托，也是湘西水运通道。",
    "geo_match": "approx",
-   "geo_note": "沱江穿凤凰古城段近似坐标（109.6, 27.95），待CHGIS精修",
+   "geo_note": "沱江穿凤凰古城段近似坐标（109.6, 27.95）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 390
   },
   {
@@ -174,7 +174,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
    "modern": "凤凰古城南郊",
    "note": "位于凤凰古城南侧，为古城背景山丘，山麓有南华山国家森林公园。",
    "geo_match": "approx",
-   "geo_note": "凤凰古城南华山近似坐标（109.60, 27.94），待CHGIS精修",
+   "geo_note": "凤凰古城南华山近似坐标（109.60, 27.94）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 384
   },
   {
@@ -186,7 +186,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
    "modern": "凤凰县西北腊尔山—吉信一线",
    "note": "明清“苗疆边墙”遗址，沿腊尔山山脊修筑，连接碉卡哨堡，划分“生苗”与“熟苗”。",
    "geo_match": "approx",
-   "geo_note": "苗疆边墙腊尔山段近似坐标（109.50, 28.00），走向与碉卡分布待CHGIS精修",
+   "geo_note": "苗疆边墙腊尔山段近似坐标（109.50, 28.00），走向与碉卡分布；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 404
   },
   {
@@ -198,7 +198,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
    "modern": "湘鄂渝黔交界",
    "note": "凤凰地处武陵山脉南段，山地与河谷交错，为湘西苗疆的自然地理背景。",
    "geo_match": "approx",
-   "geo_note": "武陵山脉南段凤凰县附近近似坐标（109.60, 28.00），待CHGIS精修",
+   "geo_note": "武陵山脉南段凤凰县附近近似坐标（109.60, 28.00）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 420
   }
  ],
@@ -774,11 +774,11 @@ window.SANDBOX_SLICES["fenghuang"] = {
         29.0
        ],
        [
-        110.605,
+        110.6,
         29.0
        ],
        [
-        110.605,
+        110.6,
         26.94
        ],
        [
@@ -799,11 +799,11 @@ window.SANDBOX_SLICES["fenghuang"] = {
       [
        [
         [
-         110.605,
+         110.6,
          26.94
         ],
         [
-         110.605,
+         110.6,
          29.0
         ],
         [
@@ -1155,7 +1155,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
          26.94
         ],
         [
-         110.605,
+         110.6,
          26.94
         ]
        ]
@@ -2100,8 +2100,8 @@ window.SANDBOX_SLICES["fenghuang"] = {
         28.602
        ],
        [
-        110.605,
-        28.674
+        110.6,
+        28.672
        ]
       ]
      ]
@@ -2113,7 +2113,7 @@ window.SANDBOX_SLICES["fenghuang"] = {
   "_bbox": [
    108.5,
    26.94,
-   110.605,
+   110.6,
    29.0
   ]
  }

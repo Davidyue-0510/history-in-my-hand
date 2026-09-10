@@ -146,14 +146,14 @@ window.SANDBOX_SLICES["luoyang"] = {
   {
    "id": "luoyang_city",
    "name": "洛阳城（雒邑·东都）",
-   "lon": 112.45,
-   "lat": 34.62,
+   "lon": 112.4351,
+   "lat": 34.6716,
    "type": "城/都",
    "modern": "河南省洛阳市",
-   "note": "处伊洛盆地、北依邙山、南对龙门、洛水贯城，自东周迄五代累为都城，十三朝古都，中土形胜之枢。",
-   "geo_match": "approx",
-   "geo_note": "洛阳城中心近似坐标（112.45, 34.62），取自公开地理数据，待CHGIS精修",
-   "elev": 171
+   "note": "处伊洛盆地、北依邙山、南对龙门、洛水贯城，自东周迄五代累为都城，十三朝古都，中土形胜之枢（CHGIS V6 治所坐标，WGS84：洛阳郡/洛阳县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛阳郡/洛阳县（洛阳郡/县治所）",
+   "elev": 212
   },
   {
    "id": "longmen_grottoes",
@@ -164,7 +164,7 @@ window.SANDBOX_SLICES["luoyang"] = {
    "modern": "洛阳市南郊伊河两岸",
    "note": "北魏孝文帝迁都后始凿，盛于唐（奉先寺卢舍那）；现存窟龛两千余、造像十万尊余，2000年列入UNESCO（编号1003）。",
    "geo_match": "approx",
-   "geo_note": "龙门石窟近似坐标（112.47, 34.52），取自公开地理数据，待CHGIS精修",
+   "geo_note": "龙门石窟近似坐标（112.47, 34.52），取自公开地理数据；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 182
   },
   {

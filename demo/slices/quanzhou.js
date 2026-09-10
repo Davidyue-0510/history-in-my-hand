@@ -165,14 +165,14 @@ window.SANDBOX_SLICES["quanzhou"] = {
   {
    "id": "citong_gang",
    "name": "刺桐港（后渚港）",
-   "lon": 118.695,
-   "lat": 24.905,
+   "lon": 118.5899,
+   "lat": 24.9096,
    "type": "port",
    "modern": "今泉州丰泽区东海·后渚港区",
-   "note": "宋元泉州外港，番舶云集。后渚港为元代主要港区之一。",
-   "geo_note": "approx·公开地理数据（港区级，约1km），待CHGIS精修",
-   "geo_match": "approx",
-   "elev": 15
+   "note": "宋元泉州外港，番舶云集。后渚港为元代主要港区之一（CHGIS V6 治所坐标，WGS84：泉州府）",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泉州府（刺桐港即泉州府治所）",
+   "geo_match": "chgis",
+   "elev": 38
   },
   {
    "id": "jinjiang",
@@ -182,7 +182,7 @@ window.SANDBOX_SLICES["quanzhou"] = {
    "type": "river",
    "modern": "晋江下游入海口（今泉州湾南岸）",
    "note": "晋江绕城东入海，为城舶淡水补给与内河转运所资。",
-   "geo_note": "approx·公开地理数据（河口级），待CHGIS精修",
+   "geo_note": "approx·公开地理数据（河口级）；CHGIS 未收录本要素，坐标据公开地理数据",
    "geo_match": "approx",
    "elev": 11
   },
@@ -194,7 +194,7 @@ window.SANDBOX_SLICES["quanzhou"] = {
    "type": "bay",
    "modern": "今泉州湾（东海—洛阳江口之间）",
    "note": "三面据海、避风良港，为刺桐港天然形胜。",
-   "geo_note": "approx·公开地理数据（海域级），待CHGIS精修",
+   "geo_note": "approx·公开地理数据（海域级）；CHGIS 未收录本要素，坐标据公开地理数据",
    "geo_match": "approx",
    "elev": 9
   },
@@ -249,13 +249,13 @@ window.SANDBOX_SLICES["quanzhou"] = {
   {
    "id": "penghu",
    "name": "澎湖",
-   "lon": 119.553,
-   "lat": 23.571,
+   "lon": 119.5771,
+   "lat": 23.5713,
    "type": "islands",
    "modern": "今台湾省澎湖县（群岛）",
-   "note": "宋元于澎湖设巡检司，辖琉求，为泉州海丝南延与东海—南海通道节点。",
-   "geo_note": "approx·公开地理数据（群岛级），待CHGIS精修",
-   "geo_match": "approx",
+   "note": "宋元于澎湖设巡检司，辖琉求，为泉州海丝南延与东海—南海通道节点（CHGIS V6 治所坐标，WGS84：澎湖厅）",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：澎湖厅（澎湖厅治所）",
+   "geo_match": "chgis",
    "elev": 0
   }
  ],
@@ -858,8 +858,8 @@ window.SANDBOX_SLICES["quanzhou"] = {
      "type": "LineString",
      "coordinates": [
       [
-       120.553,
-       24.353
+       120.577,
+       24.393
       ],
       [
        120.159,
@@ -1307,7 +1307,7 @@ window.SANDBOX_SLICES["quanzhou"] = {
      "coordinates": [
       [
        [
-        120.553,
+        120.577,
         22.571
        ],
        [
@@ -1363,11 +1363,11 @@ window.SANDBOX_SLICES["quanzhou"] = {
         23.709
        ],
        [
-        120.553,
-        24.353
+        120.577,
+        24.393
        ],
        [
-        120.553,
+        120.577,
         22.571
        ]
       ]
@@ -2736,12 +2736,12 @@ window.SANDBOX_SLICES["quanzhou"] = {
       [
        [
         [
-         120.553,
+         120.577,
          22.571
         ],
         [
-         120.553,
-         24.38
+         120.577,
+         24.415
         ],
         [
          120.547,
@@ -2824,7 +2824,7 @@ window.SANDBOX_SLICES["quanzhou"] = {
          22.571
         ],
         [
-         120.553,
+         120.577,
          22.571
         ]
        ]
@@ -2975,7 +2975,7 @@ window.SANDBOX_SLICES["quanzhou"] = {
   "_bbox": [
    117.53,
    22.571,
-   120.553,
+   120.577,
    25.958
   ]
  }

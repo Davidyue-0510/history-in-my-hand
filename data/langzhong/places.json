@@ -3,15 +3,19 @@
     {
       "id": "langzhong_cheng",
       "name": "阆中城（巴西郡治）",
-      "lon": 105.972, "lat": 31.583,
+      "lon": 105.967,
+      "lat": 31.5783,
       "type": "capital",
       "modern": "今四川阆中市（南充代管）",
-      "note": "蜀汉巴西郡治，张飞镇守七年。坐标据 Wikipedia 31°35′N 105°58′E，标 approx（城市级精度）。"
+      "note": "蜀汉巴西郡治，张飞镇守七年。坐标据 Wikipedia 31°35′N 105°58′E，标 approx（城市级精度）（CHGIS V6 治所坐标，WGS84：阆中县/阆中郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：阆中县/阆中郡（CHGIS 阆中县/郡治所（蜀汉巴西郡治所在））"
     },
     {
       "id": "zhangfei_miao",
       "name": "汉桓侯祠（张飞庙）",
-      "lon": 105.970, "lat": 31.570,
+      "lon": 105.97,
+      "lat": 31.57,
       "type": "temple",
       "modern": "阆中古城内·汉桓侯祠",
       "note": "张飞墓祠，后世屡修，今全国重点文保。在古城内，坐标 approx（与城同区）。"
@@ -19,7 +23,8 @@
     {
       "id": "jialing_river",
       "name": "嘉陵江（阆中段）",
-      "lon": 105.970, "lat": 31.560,
+      "lon": 105.97,
+      "lat": 31.56,
       "type": "river",
       "modern": "嘉陵江纵贯阆中市境",
       "note": "古城三面环水（锦屏山隔江南峙），为阆中形胜。坐标取城畔江段中线，approx。"
@@ -27,18 +32,24 @@
     {
       "id": "dangqu",
       "name": "宕渠（宕渠之战战场）",
-      "lon": 106.970, "lat": 30.850,
+      "lon": 107.0627,
+      "lat": 31.0038,
       "type": "battlefield",
       "modern": "今四川渠县（宕渠故城）",
-      "note": "东汉属巴西郡，张飞破张郃之处。渠县坐标据公开地理数据，approx。"
+      "note": "东汉属巴西郡，张飞破张郃之处。渠县坐标据公开地理数据，approx（CHGIS V6 治所坐标，WGS84：宕渠郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宕渠郡（CHGIS 宕渠郡治所（宕渠之战区域））"
     },
     {
       "id": "chengdu",
       "name": "成都（蜀汉都城）",
-      "lon": 104.070, "lat": 30.660,
+      "lon": 104.0754,
+      "lat": 30.6661,
       "type": "capital",
       "modern": "今四川成都市",
-      "note": "蜀汉都城，刘备称帝于此。坐标据公开地理数据，approx。"
+      "note": "蜀汉都城，刘备称帝于此。坐标据公开地理数据，approx（CHGIS V6 治所坐标，WGS84：成都府/成都县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：成都府/成都县（CHGIS 成都府/县治所（蜀汉都城所在））"
     }
   ]
 }

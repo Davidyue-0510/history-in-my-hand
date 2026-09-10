@@ -1105,7 +1105,7 @@
    "alias": [],
    "note": "今河南荥阳（隋大运河板渚渚口）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "京口",
@@ -1114,16 +1114,16 @@
    "alias": [],
    "note": "今江苏镇江（隋运河江南起点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "余杭",
-   "lon": 120.15,
-   "lat": 30.27,
+   "lon": 120.16862,
+   "lat": 30.29412,
    "alias": [],
    "note": "今浙江杭州（隋运河南端）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：余杭郡"
   },
   {
    "name": "宗喀",
@@ -1132,7 +1132,7 @@
    "alias": [],
    "note": "今青海湟中（宗喀巴诞生地）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "拉萨",
@@ -1141,7 +1141,7 @@
    "alias": [],
    "note": "今西藏拉萨",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "甘丹寺",
@@ -1150,7 +1150,7 @@
    "alias": [],
    "note": "今西藏拉萨达孜区（宗喀巴建）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "札什伦布寺",
@@ -1159,7 +1159,7 @@
    "alias": [],
    "note": "今西藏日喀则",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "灵渠",
@@ -1168,16 +1168,16 @@
    "alias": [],
    "note": "今广西兴安（秦灵渠）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "兴安",
-   "lon": 110.68,
-   "lat": 25.63,
+   "lon": 110.66587,
+   "lat": 25.61313,
    "alias": [],
    "note": "今广西兴安",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：兴安县"
   },
   {
    "name": "湘江",
@@ -1186,7 +1186,7 @@
    "alias": [],
    "note": "今湖南湘江（中上游代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "漓江",
@@ -1195,34 +1195,34 @@
    "alias": [],
    "note": "今广西漓江",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "桂林",
-   "lon": 110.29,
-   "lat": 25.27,
+   "lon": 110.28626,
+   "lat": 25.28006,
    "alias": [],
    "note": "今广西桂林",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：桂林府"
   },
   {
    "name": "象郡",
-   "lon": 108.0,
-   "lat": 22.0,
+   "lon": 107.35506,
+   "lat": 22.4202,
    "alias": [],
    "note": "今广西及越南边境（秦象郡代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：象郡"
   },
   {
    "name": "敦煌",
-   "lon": 94.66,
-   "lat": 40.14,
+   "lon": 94.65091,
+   "lat": 40.14053,
    "alias": [],
    "note": "今甘肃敦煌市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：敦煌县"
   },
   {
    "name": "三危山",
@@ -1231,7 +1231,7 @@
    "alias": [],
    "note": "今甘肃敦煌市东南三危山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "莫高窟",
@@ -1240,7 +1240,7 @@
    "alias": [],
    "note": "今甘肃敦煌市东南25km莫高窟",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "藏经洞",
@@ -1249,7 +1249,7 @@
    "alias": [],
    "note": "莫高窟第17窟",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "马王堆",
@@ -1258,16 +1258,16 @@
    "alias": [],
    "note": "今湖南长沙马王堆",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "长沙",
-   "lon": 112.94,
-   "lat": 28.23,
+   "lon": 112.97813,
+   "lat": 28.1982,
    "alias": [],
    "note": "今湖南长沙市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长沙府"
   },
   {
    "name": "都江堰",
@@ -1276,7 +1276,7 @@
    "alias": [],
    "note": "今四川都江堰市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "岷江",
@@ -1285,16 +1285,16 @@
    "alias": [],
    "note": "今四川岷江（代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "赵州",
-   "lon": 114.78,
-   "lat": 37.76,
+   "lon": 114.77218,
+   "lat": 37.75293,
    "alias": [],
    "note": "今河北赵县（赵州桥）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：赵州"
   },
   {
    "name": "洨河",
@@ -1303,16 +1303,16 @@
    "alias": [],
    "note": "今河北赵县洨河",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "潭州",
-   "lon": 112.94,
-   "lat": 28.23,
+   "lon": 112.97813,
+   "lat": 28.1982,
    "alias": [],
    "note": "今湖南长沙（唐潭州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：潭州路"
   },
   {
    "name": "岳麓书院",
@@ -1321,25 +1321,25 @@
    "alias": [],
    "note": "今长沙岳麓区岳麓书院",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "曲阜",
-   "lon": 116.99,
-   "lat": 35.58,
+   "lon": 116.98052,
+   "lat": 35.59756,
    "alias": [],
    "note": "今山东曲阜市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：曲阜县"
   },
   {
    "name": "鲁",
-   "lon": 117.0,
-   "lat": 35.0,
+   "lon": 116.82353,
+   "lat": 35.55308,
    "alias": [],
    "note": "今山东南部（鲁地代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：鲁州"
   },
   {
    "name": "景德镇",
@@ -1348,7 +1348,7 @@
    "alias": [],
    "note": "今江西景德镇市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "昌南镇",
@@ -1357,7 +1357,7 @@
    "alias": [],
    "note": "今江西景德镇（昌南镇）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "越城岭",
@@ -1366,7 +1366,7 @@
    "alias": [],
    "note": "今广西越城岭",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "湘水",
@@ -1375,7 +1375,7 @@
    "alias": [],
    "note": "今湖南湘江",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "漓水",
@@ -1384,7 +1384,7 @@
    "alias": [],
    "note": "今广西漓江",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "稷门",
@@ -1393,7 +1393,7 @@
    "alias": [],
    "note": "今山东临淄城西门（稷下学宫）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "榆关",
@@ -1402,7 +1402,7 @@
    "alias": [],
    "note": "今河北秦皇岛抚宁区（山海关古称）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "辽西走廊",
@@ -1411,7 +1411,7 @@
    "alias": [],
    "note": "今辽宁锦州至山海关一带",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "蓟辽",
@@ -1420,25 +1420,25 @@
    "alias": [],
    "note": "今河北北部及辽宁西部代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "随州",
-   "lon": 113.37,
-   "lat": 31.69,
+   "lon": 113.36982,
+   "lat": 31.7151,
    "alias": [],
    "note": "今湖北随州（曾侯乙墓）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：随州"
   },
   {
    "name": "武州塞",
-   "lon": 113.0,
-   "lat": 40.05,
+   "lon": 113.29365,
+   "lat": 39.19315,
    "alias": [],
    "note": "今山西大同西（云冈武州塞）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：武州"
   },
   {
    "name": "嘉峪關",
@@ -1447,16 +1447,16 @@
    "alias": [],
    "note": "今甘肃嘉峪关市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "酒泉",
-   "lon": 98.49,
-   "lat": 39.74,
+   "lon": 98.51074,
+   "lat": 39.74361,
    "alias": [],
    "note": "今甘肃酒泉市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：酒泉郡"
   },
   {
    "name": "河西",
@@ -1465,7 +1465,7 @@
    "alias": [],
    "note": "今甘肃河西走廊代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "嘉峪山",
@@ -1474,7 +1474,7 @@
    "alias": [],
    "note": "今甘肃嘉峪关市西南嘉峪山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "闽西",
@@ -1483,7 +1483,7 @@
    "alias": [],
    "note": "今福建西部代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "白鹿洞",
@@ -1492,7 +1492,7 @@
    "alias": [],
    "note": "今江西九江庐山白鹿洞书院",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "庐山",
@@ -1501,16 +1501,16 @@
    "alias": [],
    "note": "今江西九江市庐山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "南康军",
-   "lon": 115.97,
-   "lat": 29.55,
+   "lon": 116.04112,
+   "lat": 29.45349,
    "alias": [],
    "note": "今江西庐山市（宋南康军）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：南康军"
   },
   {
    "name": "昆明",
@@ -1519,7 +1519,7 @@
    "alias": [],
    "note": "今云南昆明市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "畹町",
@@ -1528,7 +1528,7 @@
    "alias": [],
    "note": "今云南瑞丽市畹町镇",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "横断山",
@@ -1537,7 +1537,7 @@
    "alias": [],
    "note": "今云南西部横断山脉代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "澜沧江",
@@ -1546,7 +1546,7 @@
    "alias": [],
    "note": "今云南澜沧江（代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "缅甸",
@@ -1555,25 +1555,25 @@
    "alias": [],
    "note": "今缅甸代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "龙泉",
-   "lon": 119.14,
-   "lat": 28.07,
+   "lon": 119.12091,
+   "lat": 28.08256,
    "alias": [],
    "note": "今浙江龙泉市（龙泉窑）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：龙泉县"
   },
   {
    "name": "处州",
-   "lon": 119.92,
-   "lat": 28.45,
+   "lon": 119.91301,
+   "lat": 28.44873,
    "alias": [],
    "note": "今浙江丽水（宋处州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：处州府"
   },
   {
    "name": "越窑",
@@ -1582,34 +1582,34 @@
    "alias": [],
    "note": "今浙江绍兴、宁波一带（越窑代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "上海",
-   "lon": 121.47,
-   "lat": 31.23,
+   "lon": 121.48676,
+   "lat": 31.22443,
    "alias": [],
    "note": "今上海市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：上海县"
   },
   {
    "name": "福州",
-   "lon": 119.3,
-   "lat": 26.08,
+   "lon": 119.32158,
+   "lat": 26.07395,
    "alias": [],
    "note": "今福建福州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：福州"
   },
   {
    "name": "安庆",
-   "lon": 117.05,
-   "lat": 30.53,
+   "lon": 117.03468,
+   "lat": 30.51229,
    "alias": [],
    "note": "今安徽安庆市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：安庆府"
   },
   {
    "name": "开平",
@@ -1618,7 +1618,7 @@
    "alias": [],
    "note": "今河北唐山开平区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "铜官镇",
@@ -1627,7 +1627,7 @@
    "alias": [],
    "note": "今长沙望城区铜官镇（长沙窑）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "长沙窑",
@@ -1636,7 +1636,7 @@
    "alias": [],
    "note": "今长沙铜官镇长沙窑遗址",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "波斯",
@@ -1645,7 +1645,7 @@
    "alias": [],
    "note": "今伊朗代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "东非",
@@ -1654,7 +1654,7 @@
    "alias": [],
    "note": "今非洲东部代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "洞庭",
@@ -1663,7 +1663,7 @@
    "alias": [],
    "note": "今湖南洞庭湖",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "吐魯番",
@@ -1672,16 +1672,16 @@
    "alias": [],
    "note": "今新疆吐鲁番市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "哈密",
-   "lon": 93.51,
-   "lat": 42.83,
+   "lon": 93.51138,
+   "lat": 42.82241,
    "alias": [],
    "note": "今新疆哈密市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：哈密卫"
   },
   {
    "name": "伊犁",
@@ -1690,7 +1690,7 @@
    "alias": [],
    "note": "今新疆伊犁哈萨克自治州",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "新疆",
@@ -1699,25 +1699,25 @@
    "alias": [],
    "note": "今新疆代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "明州",
-   "lon": 121.55,
-   "lat": 29.87,
+   "lon": 121.54266,
+   "lat": 29.86632,
    "alias": [],
    "note": "今浙江宁波（宋明州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：明州府"
   },
   {
    "name": "温州",
-   "lon": 120.7,
-   "lat": 28.0,
+   "lon": 120.65322,
+   "lat": 28.01829,
    "alias": [],
    "note": "今浙江温州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：温州府"
   },
   {
    "name": "高丽",
@@ -1726,7 +1726,7 @@
    "alias": [],
    "note": "今朝鲜半岛代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "日本",
@@ -1735,7 +1735,7 @@
    "alias": [],
    "note": "今日本代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "南洋",
@@ -1744,7 +1744,7 @@
    "alias": [],
    "note": "今东南亚海域代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "漠河",
@@ -1753,7 +1753,7 @@
    "alias": [],
    "note": "今黑龙江漠河市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "金厂河",
@@ -1762,16 +1762,16 @@
    "alias": [],
    "note": "今黑龙江漠河市境内",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "瑷珲",
-   "lon": 127.53,
-   "lat": 50.23,
+   "lon": 127.47613,
+   "lat": 49.97205,
    "alias": [],
    "note": "今黑龙江黑河市爱辉区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：瑷珲厅"
   },
   {
    "name": "黑龙江上游",
@@ -1780,16 +1780,16 @@
    "alias": [],
    "note": "今黑龙江上游代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "儋州",
-   "lon": 109.58,
-   "lat": 19.52,
+   "lon": 109.34164,
+   "lat": 19.7487,
    "alias": [],
    "note": "今海南儋州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：儋州"
   },
   {
    "name": "载酒堂",
@@ -1798,16 +1798,16 @@
    "alias": [],
    "note": "今海南儋州中和镇（苏轼载酒堂）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "儋耳",
-   "lon": 109.58,
-   "lat": 19.52,
+   "lon": 109.34164,
+   "lat": 19.7487,
    "alias": [],
    "note": "今海南儋州（古儋耳）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：儋耳郡"
   },
   {
    "name": "贾家沽",
@@ -1816,7 +1816,7 @@
    "alias": [],
    "note": "今天津市东郊",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "海光寺",
@@ -1825,7 +1825,7 @@
    "alias": [],
    "note": "今天津南开区海光寺",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "制造局",
@@ -1834,7 +1834,7 @@
    "alias": [],
    "note": "今上海市（江南制造局）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "高昌城",
@@ -1843,7 +1843,7 @@
    "alias": [],
    "note": "今新疆吐鲁番东南高昌故城",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "西州",
@@ -1852,7 +1852,7 @@
    "alias": [],
    "note": "今新疆吐鲁番一带（唐西州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "阿斯塔那",
@@ -1861,7 +1861,7 @@
    "alias": [],
    "note": "今新疆吐鲁番阿斯塔那古墓群",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "交河",
@@ -1870,7 +1870,7 @@
    "alias": [],
    "note": "今新疆吐鲁番交河故城",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "柳中",
@@ -1879,7 +1879,7 @@
    "alias": [],
    "note": "今新疆鄯善县鲁克沁（柳中）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "蒲类",
@@ -1888,7 +1888,7 @@
    "alias": [],
    "note": "今新疆巴里坤（蒲类）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "江川县",
@@ -1897,7 +1897,7 @@
    "alias": [],
    "note": "今云南玉溪市江川区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "东南亚",
@@ -1906,7 +1906,7 @@
    "alias": [],
    "note": "今东南亚代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "滇南",
@@ -1915,7 +1915,7 @@
    "alias": [],
    "note": "今云南南部代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "卦台山",
@@ -1924,7 +1924,7 @@
    "alias": [],
    "note": "今甘肃天水麦积区三阳川卦台山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "伏羲庙",
@@ -1933,25 +1933,25 @@
    "alias": [],
    "note": "今甘肃天水秦州区伏羲庙",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "天水",
-   "lon": 105.72,
-   "lat": 34.58,
+   "lon": 105.71989,
+   "lat": 34.58122,
    "alias": [],
    "note": "今甘肃天水市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：天水郡"
   },
   {
    "name": "秦州",
-   "lon": 105.72,
-   "lat": 34.58,
+   "lon": 105.71989,
+   "lat": 34.58122,
    "alias": [],
    "note": "今甘肃天水秦州区（秦州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：秦州"
   },
   {
    "name": "渭水",
@@ -1960,7 +1960,7 @@
    "alias": [],
    "note": "今渭河（代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "三阳川",
@@ -1969,7 +1969,7 @@
    "alias": [],
    "note": "今甘肃天水麦积区三阳川",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "葫芦河",
@@ -1978,16 +1978,16 @@
    "alias": [],
    "note": "渭河支流葫芦河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "邕州",
-   "lon": 108.37,
-   "lat": 22.82,
+   "lon": 108.31207,
+   "lat": 22.80614,
    "alias": [],
    "note": "今广西南宁（唐邕州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：邕州路"
   },
   {
    "name": "左右江",
@@ -1996,7 +1996,7 @@
    "alias": [],
    "note": "今广西左右江流域代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "红水河",
@@ -2005,34 +2005,34 @@
    "alias": [],
    "note": "今广西红水河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "宜州",
-   "lon": 108.07,
-   "lat": 24.43,
+   "lon": 108.65588,
+   "lat": 24.49073,
    "alias": [],
    "note": "今广西河池宜州",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宜州"
   },
   {
    "name": "柳州",
-   "lon": 109.42,
-   "lat": 24.33,
+   "lon": 109.4044,
+   "lat": 24.30999,
    "alias": [],
    "note": "今广西柳州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：柳州府"
   },
   {
    "name": "桂州",
-   "lon": 110.29,
-   "lat": 25.27,
+   "lon": 110.28626,
+   "lat": 25.28006,
    "alias": [],
    "note": "今广西桂林（唐桂州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：桂州"
   },
   {
    "name": "黔靈山",
@@ -2041,7 +2041,7 @@
    "alias": [],
    "note": "今贵州贵阳市黔灵山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "天龍山",
@@ -2050,7 +2050,7 @@
    "alias": [],
    "note": "今贵州安顺天龙山（弘福寺）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "青龍洞",
@@ -2059,7 +2059,7 @@
    "alias": [],
    "note": "今贵州镇远青龙洞",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "河北",
@@ -2068,34 +2068,34 @@
    "alias": [],
    "note": "今河北省代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "保定",
-   "lon": 115.46,
-   "lat": 38.87,
+   "lon": 115.50209,
+   "lat": 38.8557,
    "alias": [],
    "note": "今河北保定市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：保定路"
   },
   {
    "name": "沧州",
-   "lon": 116.84,
-   "lat": 38.3,
+   "lon": 116.86538,
+   "lat": 38.30565,
    "alias": [],
    "note": "今河北沧州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：沧州"
   },
   {
    "name": "句容",
-   "lon": 119.16,
-   "lat": 31.95,
+   "lon": 119.16274,
+   "lat": 31.94653,
    "alias": [],
    "note": "今江苏句容市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：句容县"
   },
   {
    "name": "交趾",
@@ -2104,7 +2104,7 @@
    "alias": [],
    "note": "今越南北部（汉交趾）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "罗浮山",
@@ -2113,25 +2113,25 @@
    "alias": [],
    "note": "今广东惠州博罗罗浮山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "博罗",
-   "lon": 114.27,
-   "lat": 23.18,
+   "lon": 114.27361,
+   "lat": 23.17225,
    "alias": [],
    "note": "今广东惠州市博罗县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：博罗县"
   },
   {
    "name": "增城",
-   "lon": 113.81,
-   "lat": 23.27,
+   "lon": 113.82916,
+   "lat": 23.29256,
    "alias": [],
    "note": "今广州增城区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：增城县"
   },
   {
    "name": "黎平肇兴",
@@ -2140,7 +2140,7 @@
    "alias": [],
    "note": "今贵州黎平肇兴侗寨",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "从江增冲",
@@ -2149,7 +2149,7 @@
    "alias": [],
    "note": "今贵州从江增冲鼓楼",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "兴庆府",
@@ -2158,7 +2158,7 @@
    "alias": [],
    "note": "今宁夏银川（西夏兴庆府）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "西夏王陵",
@@ -2167,7 +2167,7 @@
    "alias": [],
    "note": "今宁夏银川西夏区西夏王陵",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "贺兰山口",
@@ -2176,7 +2176,7 @@
    "alias": [],
    "note": "今宁夏贺兰山口",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "贺兰山",
@@ -2185,7 +2185,7 @@
    "alias": [],
    "note": "今宁夏与内蒙古交界贺兰山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "三星堆",
@@ -2194,7 +2194,7 @@
    "alias": [],
    "note": "今四川广汉三星堆",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "金沙",
@@ -2203,16 +2203,16 @@
    "alias": [],
    "note": "今四川成都金沙遗址",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "蜀",
-   "lon": 104.0,
-   "lat": 30.6,
+   "lon": 103.91916,
+   "lat": 30.57627,
    "alias": [],
    "note": "今四川盆地代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宁蜀郡"
   },
   {
    "name": "碎叶",
@@ -2221,16 +2221,16 @@
    "alias": [],
    "note": "今吉尔吉斯斯坦托克马克（唐碎叶城）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "绵州昌隆",
-   "lon": 104.74,
-   "lat": 31.78,
+   "lon": 104.76017,
+   "lat": 31.47626,
    "alias": [],
    "note": "今四川江油（李白故里）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：绵州"
   },
   {
    "name": "匡山",
@@ -2239,7 +2239,7 @@
    "alias": [],
    "note": "今四川江油匡山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "巴蜀",
@@ -2248,16 +2248,16 @@
    "alias": [],
    "note": "今四川重庆一带代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "广汉",
-   "lon": 104.2,
-   "lat": 31.1,
+   "lon": 104.2861,
+   "lat": 30.99414,
    "alias": [],
    "note": "今四川广汉",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：广汉郡"
   },
   {
    "name": "唐山",
@@ -2266,7 +2266,7 @@
    "alias": [],
    "note": "今河北唐山市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "芦汉",
@@ -2275,7 +2275,7 @@
    "alias": [],
    "note": "今华北地区（芦汉铁路）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "胥各庄",
@@ -2284,7 +2284,7 @@
    "alias": [],
    "note": "今河北唐山丰南区胥各庄",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "津通",
@@ -2293,7 +2293,7 @@
    "alias": [],
    "note": "今华北地区（津通铁路）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "三巴门",
@@ -2302,7 +2302,7 @@
    "alias": [],
    "note": "今澳门大三巴炮台",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "妈阁炮台",
@@ -2311,7 +2311,7 @@
    "alias": [],
    "note": "今澳门妈阁炮台",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "东望洋炮台",
@@ -2320,7 +2320,7 @@
    "alias": [],
    "note": "今澳门东望洋炮台",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "西望洋炮台",
@@ -2329,7 +2329,7 @@
    "alias": [],
    "note": "今澳门西望洋炮台",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "噶斯兰",
@@ -2338,7 +2338,7 @@
    "alias": [],
    "note": "今澳门噶斯兰炮台",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "澳门",
@@ -2347,7 +2347,7 @@
    "alias": [],
    "note": "今中国澳门",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "柿山",
@@ -2356,7 +2356,7 @@
    "alias": [],
    "note": "今澳门柿山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "南湾",
@@ -2365,7 +2365,7 @@
    "alias": [],
    "note": "今澳门南湾",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "澳門",
@@ -2374,7 +2374,7 @@
    "alias": [],
    "note": "今中国澳门",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "大三巴牌坊",
@@ -2383,16 +2383,16 @@
    "alias": [],
    "note": "今澳门大三巴",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "大足",
-   "lon": 105.79,
-   "lat": 29.71,
+   "lon": 105.71692,
+   "lat": 29.70095,
    "alias": [],
    "note": "今重庆大足区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：大足县"
   },
   {
    "name": "宝顶山",
@@ -2401,7 +2401,7 @@
    "alias": [],
    "note": "今重庆大足宝顶山石刻",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "北山",
@@ -2410,7 +2410,7 @@
    "alias": [],
    "note": "今重庆大足北山石刻",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "南山",
@@ -2419,7 +2419,7 @@
    "alias": [],
    "note": "今重庆大足南山石刻",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "石门山",
@@ -2428,7 +2428,7 @@
    "alias": [],
    "note": "今重庆大足石门山石刻",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "石篆山",
@@ -2437,7 +2437,7 @@
    "alias": [],
    "note": "今重庆大足石篆山石刻",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "武夷山",
@@ -2446,7 +2446,7 @@
    "alias": [],
    "note": "今福建武夷山市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "下梅",
@@ -2455,16 +2455,16 @@
    "alias": [],
    "note": "今福建武夷山下梅村",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "崇安",
-   "lon": 118.03,
-   "lat": 27.73,
+   "lon": 118.02678,
+   "lat": 27.75602,
    "alias": [],
    "note": "今福建武夷山（旧崇安）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：崇安县"
   },
   {
    "name": "星村",
@@ -2473,7 +2473,7 @@
    "alias": [],
    "note": "今福建武夷山星村镇",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "雪峰山",
@@ -2482,7 +2482,7 @@
    "alias": [],
    "note": "今福建福州闽侯雪峰山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "海南",
@@ -2491,34 +2491,34 @@
    "alias": [],
    "note": "今海南省代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "崖州",
-   "lon": 109.5,
-   "lat": 18.25,
+   "lon": 109.16698,
+   "lat": 18.37546,
    "alias": [],
    "note": "今海南三亚（古崖州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：崖州"
   },
   {
    "name": "松江",
-   "lon": 121.23,
-   "lat": 31.0,
+   "lon": 121.22764,
+   "lat": 31.00948,
    "alias": [],
    "note": "今上海松江区",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：松江府"
   },
   {
    "name": "江州",
-   "lon": 115.99,
-   "lat": 29.71,
+   "lon": 115.98568,
+   "lat": 29.72236,
    "alias": [],
    "note": "今江西九江（古江州）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：江州"
   },
   {
    "name": "东林寺",
@@ -2527,7 +2527,7 @@
    "alias": [],
    "note": "今江西九江庐山东林寺",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "虎溪",
@@ -2536,7 +2536,7 @@
    "alias": [],
    "note": "今江西九江庐山东林寺虎溪",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "青海湖",
@@ -2545,7 +2545,7 @@
    "alias": [],
    "note": "今青海湖",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "伏俟城",
@@ -2554,7 +2554,7 @@
    "alias": [],
    "note": "今青海共和县石乃亥伏俟城（吐谷浑）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "覆袁川",
@@ -2563,7 +2563,7 @@
    "alias": [],
    "note": "今青海境内覆袁川代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "西海郡",
@@ -2572,16 +2572,16 @@
    "alias": [],
    "note": "今青海湖西岸西海郡",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "张掖",
-   "lon": 100.45,
-   "lat": 38.93,
+   "lon": 100.45316,
+   "lat": 38.93203,
    "alias": [],
    "note": "今甘肃张掖市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：张掖郡"
   },
   {
    "name": "河源郡",
@@ -2590,7 +2590,7 @@
    "alias": [],
    "note": "今青海兴海县一带（吐谷浑河源郡）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "隆务寺",
@@ -2599,7 +2599,7 @@
    "alias": [],
    "note": "今青海同仁市隆务寺",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "同仁",
@@ -2608,7 +2608,7 @@
    "alias": [],
    "note": "今青海同仁市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "年都乎",
@@ -2617,7 +2617,7 @@
    "alias": [],
    "note": "今青海同仁年都乎",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "吾屯",
@@ -2626,7 +2626,7 @@
    "alias": [],
    "note": "今青海同仁吾屯村",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "郭麻日",
@@ -2635,7 +2635,7 @@
    "alias": [],
    "note": "今青海同仁郭麻日村",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "会通河",
@@ -2644,7 +2644,7 @@
    "alias": [],
    "note": "今山东运河会通河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "戴村坝",
@@ -2653,7 +2653,7 @@
    "alias": [],
    "note": "今山东东平戴村坝",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "南旺",
@@ -2662,7 +2662,7 @@
    "alias": [],
    "note": "今山东汶上南旺（运河水脊）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "山东",
@@ -2671,7 +2671,7 @@
    "alias": [],
    "note": "今山东省代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "汶水",
@@ -2680,34 +2680,34 @@
    "alias": [],
    "note": "今山东大汶河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "泗水",
-   "lon": 117.2,
-   "lat": 35.6,
+   "lon": 117.27016,
+   "lat": 35.6597,
    "alias": [],
    "note": "今山东泗河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泗水县"
   },
   {
    "name": "临清",
-   "lon": 115.72,
-   "lat": 36.85,
+   "lon": 115.70152,
+   "lat": 36.84621,
    "alias": [],
    "note": "今山东临清市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：临清州"
   },
   {
    "name": "济宁",
-   "lon": 116.59,
-   "lat": 35.41,
+   "lon": 116.58907,
+   "lat": 35.40845,
    "alias": [],
    "note": "今山东济宁市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：济宁府"
   },
   {
    "name": "京师",
@@ -2716,25 +2716,25 @@
    "alias": [],
    "note": "今北京市（京师）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "平遥",
-   "lon": 112.18,
-   "lat": 37.2,
+   "lon": 112.1776,
+   "lat": 37.20726,
    "alias": [],
    "note": "今山西平遥县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：平遥县"
   },
   {
    "name": "蒲州",
-   "lon": 110.45,
-   "lat": 34.85,
+   "lon": 110.33231,
+   "lat": 34.83513,
    "alias": [],
    "note": "今山西永济（蒲州渡）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：蒲州"
   },
   {
    "name": "维多利亚峰",
@@ -2743,7 +2743,7 @@
    "alias": [],
    "note": "今香港太平山（维多利亚峰）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "港岛",
@@ -2752,7 +2752,7 @@
    "alias": [],
    "note": "今香港岛",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "深圳河",
@@ -2761,7 +2761,7 @@
    "alias": [],
    "note": "今深圳与香港界河",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "筲箕湾",
@@ -2770,7 +2770,7 @@
    "alias": [],
    "note": "今香港筲箕湾",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "坚尼地城",
@@ -2779,7 +2779,7 @@
    "alias": [],
    "note": "今香港坚尼地城",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "香港大学",
@@ -2788,7 +2788,7 @@
    "alias": [],
    "note": "今香港香港大学",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "般含道",
@@ -2797,7 +2797,7 @@
    "alias": [],
    "note": "今香港般含道",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "桑耶寺",
@@ -2806,7 +2806,7 @@
    "alias": [],
    "note": "今西藏山南扎囊桑耶寺",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "扎囊",
@@ -2815,43 +2815,43 @@
    "alias": [],
    "note": "今西藏山南扎囊县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "休宁",
-   "lon": 117.89,
-   "lat": 29.79,
+   "lon": 118.17577,
+   "lat": 29.78119,
    "alias": [],
    "note": "今安徽黄山休宁县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：休宁县"
   },
   {
    "name": "重庆",
-   "lon": 106.55,
-   "lat": 29.56,
+   "lon": 106.557,
+   "lat": 29.56045,
    "alias": [],
    "note": "今重庆市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：重庆府"
   },
   {
    "name": "巴县",
-   "lon": 106.53,
-   "lat": 29.45,
+   "lon": 106.557,
+   "lat": 29.56045,
    "alias": [],
    "note": "今重庆巴南区（旧巴县）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：巴县"
   },
   {
    "name": "泰州",
-   "lon": 119.92,
-   "lat": 32.46,
+   "lon": 119.91124,
+   "lat": 32.49587,
    "alias": [],
    "note": "今江苏泰州市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泰州"
   },
   {
    "name": "安丰场",
@@ -2860,16 +2860,16 @@
    "alias": [],
    "note": "今江苏东台安丰镇（盐场）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "赵",
-   "lon": 112.0,
-   "lat": 36.0,
+   "lon": 111.81898,
+   "lat": 36.445,
    "alias": [],
    "note": "今山西南部（赵地代表点）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：赵城县"
   },
   {
    "name": "稷下",
@@ -2878,25 +2878,25 @@
    "alias": [],
    "note": "今山东淄博临淄（稷下学宫）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "台湾",
-   "lon": 120.96,
-   "lat": 23.7,
+   "lon": 120.6712,
+   "lat": 24.14238,
    "alias": [],
    "note": "今中国台湾省代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：台湾府"
   },
   {
    "name": "苗栗",
-   "lon": 120.82,
-   "lat": 24.57,
+   "lon": 120.8118,
+   "lat": 24.55818,
    "alias": [],
    "note": "今台湾苗栗县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：苗栗县"
   },
   {
    "name": "湟中",
@@ -2905,25 +2905,25 @@
    "alias": [],
    "note": "今青海湟中县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "永康",
-   "lon": 120.02,
-   "lat": 29.9,
+   "lon": 119.96406,
+   "lat": 30.55045,
    "alias": [],
    "note": "今浙江永康市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：永康县"
   },
   {
    "name": "永嘉",
-   "lon": 120.67,
-   "lat": 28.13,
+   "lon": 120.64964,
+   "lat": 28.04848,
    "alias": [],
    "note": "今浙江温州（古永嘉）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：永嘉郡"
   },
   {
    "name": "关中",
@@ -2932,7 +2932,7 @@
    "alias": [],
    "note": "今陕西中部关中平原代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "关东",
@@ -2941,7 +2941,7 @@
    "alias": [],
    "note": "今函谷关以东代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "泾水",
@@ -2950,16 +2950,16 @@
    "alias": [],
    "note": "今陕西泾河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "洛水",
-   "lon": 109.5,
-   "lat": 35.5,
+   "lon": 111.46053,
+   "lat": 34.34468,
    "alias": [],
    "note": "今陕西洛河代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛水县"
   },
   {
    "name": "瓠口",
@@ -2968,7 +2968,7 @@
    "alias": [],
    "note": "今陕西泾阳西北瓠口（郑国渠渠首）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "周原",
@@ -2977,7 +2977,7 @@
    "alias": [],
    "note": "今陕西岐山、扶风周原",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "邰",
@@ -2986,16 +2986,16 @@
    "alias": [],
    "note": "今陕西武功（后稷封邰）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "大都",
-   "lon": 116.4,
-   "lat": 39.9,
+   "lon": 116.34939,
+   "lat": 39.91964,
    "alias": [],
    "note": "今北京（元大都）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：大都路"
   },
   {
    "name": "离碓",
@@ -3004,7 +3004,7 @@
    "alias": [],
    "note": "今四川都江堰离碓（宝瓶口）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "沫水",
@@ -3013,25 +3013,25 @@
    "alias": [],
    "note": "今四川大渡河（沫水）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "朱崖",
-   "lon": 109.8,
-   "lat": 19.2,
+   "lon": 110.49838,
+   "lat": 19.93827,
    "alias": [],
    "note": "今海南（汉朱崖郡）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：朱崖县"
   },
   {
    "name": "滇池",
-   "lon": 102.68,
-   "lat": 24.95,
+   "lon": 102.74321,
+   "lat": 24.70312,
    "alias": [],
    "note": "今云南昆明滇池",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：滇池县"
   },
   {
    "name": "铁勒",
@@ -3040,7 +3040,7 @@
    "alias": [],
    "note": "今蒙古高原（铁勒）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "中国",
@@ -3049,16 +3049,16 @@
    "alias": [],
    "note": "今中国腹地代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "蕲州",
-   "lon": 115.43,
-   "lat": 30.23,
+   "lon": 115.47425,
+   "lat": 30.30481,
    "alias": [],
    "note": "今湖北蕲春（李时珍故里）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：蕲州"
   },
   {
    "name": "岭南",
@@ -3067,7 +3067,7 @@
    "alias": [],
    "note": "今广东广西（岭南）代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "洛陽",
@@ -3076,7 +3076,7 @@
    "alias": [],
    "note": "今河南洛阳市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "呂宋",
@@ -3085,16 +3085,16 @@
    "alias": [],
    "note": "今菲律宾吕宋岛",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "龙门",
-   "lon": 110.45,
-   "lat": 35.47,
+   "lon": 110.66239,
+   "lat": 35.57609,
    "alias": [],
    "note": "今陕西韩城龙门（司马迁故里）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：龙门郡"
   },
   {
    "name": "江淮",
@@ -3103,7 +3103,7 @@
    "alias": [],
    "note": "今长江淮河之间代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "九嶷",
@@ -3112,7 +3112,7 @@
    "alias": [],
    "note": "今湖南宁远九嶷山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "汶泗",
@@ -3121,7 +3121,7 @@
    "alias": [],
    "note": "今山东汶泗流域代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "沅湘",
@@ -3130,7 +3130,7 @@
    "alias": [],
    "note": "今湖南沅湘流域代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "九原",
@@ -3139,34 +3139,34 @@
    "alias": [],
    "note": "今内蒙古包头（秦九原）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "临洮",
-   "lon": 104.03,
-   "lat": 34.43,
+   "lon": 104.03025,
+   "lat": 34.43646,
    "alias": [],
    "note": "今甘肃岷县（秦临洮）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：临洮郡"
   },
   {
    "name": "云阳",
-   "lon": 108.6,
-   "lat": 34.8,
+   "lon": 108.75477,
+   "lat": 34.59552,
    "alias": [],
    "note": "今陕西淳化（秦云阳）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：云阳县"
   },
   {
    "name": "甘泉",
-   "lon": 108.6,
-   "lat": 34.9,
+   "lon": 109.66875,
+   "lat": 37.13766,
    "alias": [],
    "note": "今陕西淳化甘泉山",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：甘泉县"
   },
   {
    "name": "八达岭",
@@ -3175,7 +3175,7 @@
    "alias": [],
    "note": "今北京延庆八达岭",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "商颜山",
@@ -3184,7 +3184,7 @@
    "alias": [],
    "note": "今陕西大荔北商颜山（龙首渠）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "龙首渠",
@@ -3193,7 +3193,7 @@
    "alias": [],
    "note": "今陕西龙首渠代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "江西",
@@ -3202,7 +3202,7 @@
    "alias": [],
    "note": "今江西省代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "江东",
@@ -3211,7 +3211,7 @@
    "alias": [],
    "note": "今长江下游江东代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "京都",
@@ -3220,16 +3220,16 @@
    "alias": [],
    "note": "今河南洛阳（东汉京都）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "浮梁",
-   "lon": 117.18,
-   "lat": 29.27,
+   "lon": 117.23636,
+   "lat": 29.38274,
    "alias": [],
    "note": "今江西景德镇浮梁县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：浮梁县"
   },
   {
    "name": "川中丘陵",
@@ -3238,25 +3238,25 @@
    "alias": [],
    "note": "今四川中部丘陵代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "林县",
-   "lon": 113.82,
-   "lat": 36.07,
+   "lon": 113.81458,
+   "lat": 36.06262,
    "alias": [],
    "note": "今河南林州市（红旗渠）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：林县"
   },
   {
    "name": "平顺县",
-   "lon": 113.43,
-   "lat": 36.21,
+   "lon": 113.43078,
+   "lat": 36.20093,
    "alias": [],
    "note": "今山西平顺县（红旗渠源）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：平顺县"
   },
   {
    "name": "太行山",
@@ -3265,7 +3265,7 @@
    "alias": [],
    "note": "今太行山脉代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "罗布泊",
@@ -3274,7 +3274,7 @@
    "alias": [],
    "note": "今新疆罗布泊",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "青海海晏",
@@ -3283,7 +3283,7 @@
    "alias": [],
    "note": "今青海海晏县",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "金银滩",
@@ -3292,7 +3292,7 @@
    "alias": [],
    "note": "今青海海晏金银滩",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "下关",
@@ -3301,7 +3301,7 @@
    "alias": [],
    "note": "今江苏南京下关",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "浦口",
@@ -3310,16 +3310,16 @@
    "alias": [],
    "note": "今江苏南京浦口",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "西宁",
-   "lon": 101.78,
-   "lat": 36.62,
+   "lon": 101.78519,
+   "lat": 36.61849,
    "alias": [],
    "note": "今青海西宁市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：西宁州"
   },
   {
    "name": "格尔木",
@@ -3328,7 +3328,7 @@
    "alias": [],
    "note": "今青海格尔木市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "可可西里",
@@ -3337,7 +3337,7 @@
    "alias": [],
    "note": "今青海可可西里代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "唐古拉山口",
@@ -3346,7 +3346,7 @@
    "alias": [],
    "note": "今西藏安多唐古拉山口",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "唐古拉山",
@@ -3355,7 +3355,7 @@
    "alias": [],
    "note": "今西藏与青海交界唐古拉山代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "四子王旗",
@@ -3364,7 +3364,7 @@
    "alias": [],
    "note": "今内蒙古乌兰察布四子王旗",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "三斗坪",
@@ -3373,16 +3373,16 @@
    "alias": [],
    "note": "今湖北宜昌夷陵三斗坪（三峡坝址）",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "宜昌",
-   "lon": 111.29,
-   "lat": 30.69,
+   "lon": 111.28713,
+   "lat": 30.70423,
    "alias": [],
    "note": "今湖北宜昌市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宜昌府"
   },
   {
    "name": "长江",
@@ -3391,7 +3391,7 @@
    "alias": [],
    "note": "今长江中游代表点",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "武汉长江大桥",
@@ -3400,7 +3400,7 @@
    "alias": [],
    "note": "今湖北武汉长江大桥",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "安江",
@@ -3409,7 +3409,7 @@
    "alias": [],
    "note": "今湖南怀化安江",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   },
   {
    "name": "三亚",
@@ -3418,7 +3418,7 @@
    "alias": [],
    "note": "今海南三亚市",
    "src": "backfill_d2_2026-09-10",
-   "honesty": "现代近似坐标（约1km级），非测绘级；待CHGIS精修"
+   "honesty": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
   }
  ]
 }

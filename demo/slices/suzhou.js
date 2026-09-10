@@ -147,7 +147,7 @@ window.SANDBOX_SLICES["suzhou"] = {
    "modern": "江苏省苏州市姑苏区东北街",
    "note": "苏州古典园林代表，明正德间王献臣营造、文徵明图咏，以水景取胜，1997年作为苏州古典园林列入UNESCO（编号813）。",
    "geo_match": "approx",
-   "geo_note": "拙政园近似坐标（31.325, 120.626），取自公开地理数据，待CHGIS精修",
+   "geo_note": "拙政园近似坐标（31.325, 120.626），取自公开地理数据；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": null,
    "off_grid": true
   },
@@ -160,7 +160,7 @@ window.SANDBOX_SLICES["suzhou"] = {
    "modern": "苏州市姑苏区留园路",
    "note": "苏州古典园林名园，明徐泰时始筑，清盛康重修，以建筑空间精妙、奇石冠云峰著称，同列UNESCO（813）。",
    "geo_match": "approx",
-   "geo_note": "留园近似坐标（31.318, 120.590），待CHGIS精修",
+   "geo_note": "留园近似坐标（31.318, 120.590）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": null,
    "off_grid": true
   },
@@ -173,7 +173,7 @@ window.SANDBOX_SLICES["suzhou"] = {
    "modern": "苏州市姑苏区虎丘山门内",
    "note": "苏州地标，云岩寺塔（五代）屹立千年，剑池传说附会阖闾墓，为吴文化象征与游观胜地。",
    "geo_match": "approx",
-   "geo_note": "虎丘近似坐标（31.318, 120.570），待CHGIS精修",
+   "geo_note": "虎丘近似坐标（31.318, 120.570）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": null,
    "off_grid": true
   },
@@ -197,7 +197,7 @@ window.SANDBOX_SLICES["suzhou"] = {
    "modern": "苏州市西南（苏锡边界）",
    "note": "中国第三大淡水湖，苏州西南襟太湖、带三江，水网密布，为江南鱼米之乡与水土依托。",
    "geo_match": "approx",
-   "geo_note": "太湖（苏州侧）近似坐标（31.10, 120.20），待CHGIS精修",
+   "geo_note": "太湖（苏州侧）近似坐标（31.10, 120.20）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": null,
    "off_grid": true
   },
@@ -210,7 +210,7 @@ window.SANDBOX_SLICES["suzhou"] = {
    "modern": "苏州市姑苏区（阊门—盘门一带）",
    "note": "南北大运河江南段穿城而过，隋凿江南河至今，连通南北、漕商辐辏，使苏州兼运河枢纽与工商都会。",
    "geo_match": "approx",
-   "geo_note": "江南运河苏州段（盘门一带）近似坐标（31.30, 120.60），待CHGIS精修",
+   "geo_note": "江南运河苏州段（盘门一带）近似坐标（31.30, 120.60）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": null,
    "off_grid": true
   }

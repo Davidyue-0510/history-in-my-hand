@@ -132,14 +132,14 @@ window.SANDBOX_SLICES["dali"] = {
   {
    "id": "dali_cheng",
    "name": "大理城（大理古城）",
-   "lon": 100.267,
-   "lat": 25.606,
+   "lon": 100.1598,
+   "lat": 25.6952,
    "type": "capital",
    "modern": "今云南大理白族自治州大理市大理镇",
-   "note": "大理国后期都城所在，明清大理府城。古城核心在苍山—洱海之间。",
-   "geo_note": "approx·公开地理数据（城市级），待CHGIS精修",
-   "geo_match": "approx",
-   "elev": 2250
+   "note": "大理国后期都城所在，明清大理府城。古城核心在苍山—洱海之间（CHGIS V6 治所坐标，WGS84：大理府）",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：大理府（大理府/太和城治所）",
+   "geo_match": "chgis",
+   "elev": 2589
   },
   {
    "id": "yangjumie",
@@ -185,7 +185,7 @@ window.SANDBOX_SLICES["dali"] = {
    "type": "mountain",
    "modern": "今大理市西侧苍山山脉",
    "note": "大理城西侧屏障，点苍山为南诏大理国史事与景观核心。",
-   "geo_note": "approx·公开地理数据（山脉级），待CHGIS精修",
+   "geo_note": "approx·公开地理数据（山脉级）；CHGIS 未收录本要素，坐标据公开地理数据",
    "geo_match": "approx",
    "elev": 3069
   },
@@ -197,7 +197,7 @@ window.SANDBOX_SLICES["dali"] = {
    "type": "lake",
    "modern": "今大理白族自治州洱海",
    "note": "高原断陷湖，南诏大理都城均沿湖分布，为农耕、渔猎与交通所资。",
-   "geo_note": "approx·公开地理数据（湖泊级），待CHGIS精修",
+   "geo_note": "approx·公开地理数据（湖泊级）；CHGIS 未收录本要素，坐标据公开地理数据",
    "geo_match": "approx",
    "elev": 2378
   }
@@ -782,11 +782,11 @@ window.SANDBOX_SLICES["dali"] = {
         26.77
        ],
        [
-        101.267,
+        101.255,
         26.77
        ],
        [
-        101.267,
+        101.255,
         24.6
        ],
        [
@@ -807,11 +807,11 @@ window.SANDBOX_SLICES["dali"] = {
       [
        [
         [
-         101.267,
+         101.255,
          24.6
         ],
         [
-         101.267,
+         101.255,
          26.77
         ],
         [
@@ -823,7 +823,7 @@ window.SANDBOX_SLICES["dali"] = {
          24.6
         ],
         [
-         101.267,
+         101.255,
          24.6
         ]
        ]
@@ -936,8 +936,8 @@ window.SANDBOX_SLICES["dali"] = {
         26.357
        ],
        [
-        101.267,
-        26.368
+        101.255,
+        26.366
        ]
       ]
      ]
@@ -1069,7 +1069,7 @@ window.SANDBOX_SLICES["dali"] = {
   "_bbox": [
    99.1,
    24.6,
-   101.267,
+   101.255,
    26.77
   ]
  }

@@ -167,14 +167,14 @@ window.SANDBOX_SLICES["yixian"] = {
   {
    "id": "yixian_cheng",
    "name": "黟县县城",
-   "lon": 117.95,
-   "lat": 29.925,
+   "lon": 117.9302,
+   "lat": 29.9331,
    "type": "县城",
    "modern": "安徽省黄山市黟县碧阳镇",
-   "note": "黟县行政中心，处皖南山区盆地，西递、宏村分居县东南与东北。",
-   "geo_match": "approx",
-   "geo_note": "黟县县城中心近似坐标（117.95, 29.925），待CHGIS精修",
-   "elev": 508
+   "note": "黟县行政中心，处皖南山区盆地，西递、宏村分居县东南与东北（CHGIS V6 治所坐标，WGS84：黟县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：黟县（黟县治所）",
+   "elev": 553
   },
   {
    "id": "huangshan",
@@ -197,7 +197,7 @@ window.SANDBOX_SLICES["yixian"] = {
    "modern": "皖南出境至浙江千岛湖",
    "note": "新安江上游流经黟县一带，为皖南古村落提供水路通道与盆地灌溉。",
    "geo_match": "approx",
-   "geo_note": "新安江上游黟县段近似坐标（117.95, 29.9），待CHGIS精修",
+   "geo_note": "新安江上游黟县段近似坐标（117.95, 29.9）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 449
   },
   {
@@ -209,7 +209,7 @@ window.SANDBOX_SLICES["yixian"] = {
    "modern": "黟县宏村镇北侧",
    "note": "宏村北侧小山，宏村牛形水系布局中作“牛头”，与南湖、月沼共同构成风水格局。",
    "geo_match": "approx",
-   "geo_note": "宏村北侧雷岗山近似坐标（117.99, 30.01），待CHGIS精修",
+   "geo_note": "宏村北侧雷岗山近似坐标（117.99, 30.01）；CHGIS 未收录本要素，坐标据公开地理数据",
    "elev": 613
   }
  ],
@@ -776,11 +776,11 @@ window.SANDBOX_SLICES["yixian"] = {
      "coordinates": [
       [
        [
-        116.95,
+        116.93,
         28.9
        ],
        [
-        116.95,
+        116.93,
         31.145
        ],
        [
@@ -792,7 +792,7 @@ window.SANDBOX_SLICES["yixian"] = {
         28.9
        ],
        [
-        116.95,
+        116.93,
         28.9
        ]
       ]
@@ -1053,12 +1053,16 @@ window.SANDBOX_SLICES["yixian"] = {
       [
        [
         [
-         116.95,
+         116.93,
          31.145
         ],
         [
-         116.95,
-         29.651
+         116.93,
+         29.643
+        ],
+        [
+         116.94,
+         29.649
         ],
         [
          116.975,
@@ -1373,7 +1377,7 @@ window.SANDBOX_SLICES["yixian"] = {
          31.145
         ],
         [
-         116.95,
+         116.93,
          31.145
         ]
        ]
@@ -1561,11 +1565,15 @@ window.SANDBOX_SLICES["yixian"] = {
          29.657
         ],
         [
-         116.95,
-         29.651
+         116.94,
+         29.649
         ],
         [
-         116.95,
+         116.93,
+         29.643
+        ],
+        [
+         116.93,
          28.9
         ],
         [
@@ -1670,8 +1678,8 @@ window.SANDBOX_SLICES["yixian"] = {
      "coordinates": [
       [
        [
-        116.95,
-        30.432
+        116.93,
+        30.419
        ],
        [
         116.972,
@@ -1733,7 +1741,7 @@ window.SANDBOX_SLICES["yixian"] = {
   ],
   "lakes": [],
   "_bbox": [
-   116.95,
+   116.93,
    28.9,
    119.155,
    31.145
