@@ -289,20 +289,46 @@ def clip_layer(layer, bbox, name_zh=None, nd=3):
     return out
 
 
+def _valid_coord(lon, lat):
+    """坐标数值有效且未颠倒。
+
+    只拒绝：
+    1. 非数值 / NaN；
+    2. 明显越界（|lat|>90、|lon|>180）；
+    3. 中国场景下的典型颠倒签名：lon 字段存了纬度值（>60°），lat 字段存了经度值（<60°），
+       例如杭州原应 lon=120.14,lat=30.24 却被存成 lon=30.24,lat=120.14。
+
+    不拒绝海外/边疆坐标（如波斯 53°E、东非赤道、西域 <73°E 等）。"""
+    if not (isinstance(lon, (int, float)) and isinstance(lat, (int, float))):
+        return False
+    if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+        return False
+    # 典型颠倒签名：lon 字段 <60° 且 lat 字段 >60°（中国纬度不可能 >60°）
+    if lon < 60 and lat > 60:
+        return False
+    return True
+
+
 def scene_bbox(bundle):
-    """从场景 places + 地形网格推导视野 bbox。"""
+    """从场景 places + 地形网格推导视野 bbox。
+
+    防御：跳过数值非法/颠倒的坐标（典型签名 lon<60 且 lat>60），
+    避免单点坏坐标把 bbox 撑成全国尺度、把整份 Natural Earth 灌进切片。
+    合法的大跨度场景（如河西—西域、海上丝绸之路）保留其真实 bbox，不被压缩。
+    """
     xs, ys = [], []
     for p in bundle.get("places", []):
-        if isinstance(p.get("lon"), (int, float)):
-            xs.append(p["lon"]); ys.append(p["lat"])
+        lon, lat = p.get("lon"), p.get("lat")
+        if _valid_coord(lon, lat):
+            xs.append(lon); ys.append(lat)
     tg = bundle.get("terrain")
-    if tg and tg.get("bbox"):
+    if tg and tg.get("bbox") and _valid_coord(tg["bbox"][0], tg["bbox"][1]) \
+            and _valid_coord(tg["bbox"][2], tg["bbox"][3]):
         xs += [tg["bbox"][0], tg["bbox"][2]]
         ys += [tg["bbox"][1], tg["bbox"][3]]
     if not xs:
         return CHINA_BBOX
-    b = (min(xs), min(ys), max(xs), max(ys))
-    return _expand(b)
+    return _expand((min(xs), min(ys), max(xs), max(ys)))
 
 
 def _fidelity(span):
