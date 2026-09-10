@@ -656,7 +656,8 @@
   "prc_yuanlongping_llm",
   "langzhong",
   "quanzhou",
-  "dali"
+  "dali",
+  "pingyao"
  ],
  "scenes": {
   "langzhong": {
@@ -901,6 +902,91 @@
      ],
      "layer": "inference",
      "note": "苍洱形胜+唐/吐蕃/宋三方博弈→南诏大理维持西南缓冲"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "pingyao": {
+   "kind": "county",
+   "region": "huabei",
+   "province": "shanxi",
+   "title": "平遥（明清票号金融·晋商·城墙）",
+   "dossier_label": "平遥",
+   "subtitle": "汾河平川 · 明初城墙 · 日昇昌票号 · 晋商金融中枢",
+   "primary_place": "pingyao_cheng",
+   "dossier_event": "event:ev_pingyao_02",
+   "vocab_pack": "pingyao",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "平遥古城为现存最完整之明清县级城池：1370 年重筑城墙，1823 年雷履泰创日昇昌（中国第一家票号），清季平遥票号汇通天下成全国金融中枢，1997 年列世界遗产。下方为筑城、立号与申遗三条主线。",
+   "parties_note": "史料以平遥县志、日昇昌票号史料、晋商史料为本，UNESCO 为现代权威认定，学界考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_pingyao_01": "重筑城墙",
+    "event:ev_pingyao_02": "日昇昌创立",
+    "event:ev_pingyao_03": "列入世遗",
+    "place:pingyao_cheng": "平遥古城",
+    "place:riishengchang": "日昇昌旧址",
+    "person:lei_lvtai": "雷履泰"
+   },
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "票号制度+关公诚信伦理→晋商以信义维系跨地域金融网络，平遥为中枢"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "城墙城防技术+票号汇兑制度→平遥兼具城防与金融节点双重功能"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "晋商三层社会+股份制→平遥聚集财东掌柜伙计，形成金融城市社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "汾河平川形胜+清季金融事件→平遥控南北商道、汇通天下"
     }
    },
    "dims": [

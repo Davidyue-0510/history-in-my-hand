@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "pingyao_xianzhi",
+      "title": "平遥县志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距明清城事约数十年至数百年",
+      "stance_label": "地方志",
+      "compiler": "《平遥县志》（清/民各版及今纂）",
+      "color": "#A0473A",
+      "period": "清/民"
+    },
+    {
+      "id": "riishengchang_zhi",
+      "title": "日昇昌票号史料",
+      "party": "后世官修",
+      "distance_label": "近现代辑录，距票号事约数十年至百年",
+      "stance_label": "票号专史辑录",
+      "compiler": "《日昇昌票号史料》等辑本",
+      "color": "#A0473A",
+      "period": "近现代"
+    },
+    {
+      "id": "jinshang_shiliao",
+      "title": "晋商史料",
+      "party": "后世官修",
+      "distance_label": "近现代研究辑录，距清季晋商事约数十年至百年",
+      "stance_label": "晋商专史",
+      "compiler": "晋商史与票号史综合辑录",
+      "color": "#A0473A",
+      "period": "近现代"
+    },
+    {
+      "id": "unesco",
+      "title": "UNESCO 世界遗产中心",
+      "party": "国际机构",
+      "distance_label": "1997 年认定，距城事为现代权威鉴定",
+      "stance_label": "国际机构认定",
+      "compiler": "UNESCO World Heritage Centre（编号 812）",
+      "color": "#5B7C99",
+      "period": "今"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "明清经济史与历史地理综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

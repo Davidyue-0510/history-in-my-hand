@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "riishengchang", "to": "pingyao_cheng", "kind": "within", "note": "日昇昌票号旧址位于平遥古城内西大街"},
+    {"from": "zhenguo_si", "to": "pingyao_cheng", "kind": "near", "note": "镇国寺在平遥古城东北约 12 千米，同列世遗"},
+    {"from": "shuanglin_si", "to": "pingyao_cheng", "kind": "near", "note": "双林寺在平遥古城西南约 6 千米，同列世遗"},
+    {"from": "fen_he", "to": "pingyao_cheng", "kind": "adjacent", "note": "汾河谷地在平遥古城西北，为城郊水利交通依托"},
+    {"from": "liugen_he", "to": "pingyao_cheng", "kind": "adjacent", "note": "柳根河冲积扇尾部为平遥古城提供平坦城址"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_pingyao_01",
+      "year": 1370,
+      "era": "洪武三年",
+      "kind": "城防",
+      "title": "重筑平遥城墙",
+      "place": "pingyao_cheng",
+      "text": "洪武三年（1370）重筑平遥城，周四里许，夯土包砖，设六门、角楼、敌台，城垣规制沿袭至今，为现存最完整之县级古城池之一。",
+      "subject": "event:ev_pingyao_01"
+    },
+    {
+      "id": "ev_pingyao_02",
+      "year": 1823,
+      "era": "道光三年",
+      "kind": "金融",
+      "title": "日昇昌票号创立",
+      "place": "riishengchang",
+      "text": "道光三年（1823）雷履泰主日昇昌，创汇兑之法，为中国第一家专营异地汇划之票号；其后平遥票号林立，总号汇通天下，成清季全国金融中枢。",
+      "subject": "event:ev_pingyao_02"
+    },
+    {
+      "id": "ev_pingyao_03",
+      "year": 1997,
+      "era": "1997年",
+      "kind": "认定",
+      "title": "列入世界遗产名录",
+      "place": "pingyao_cheng",
+      "text": "1997 年 12 月，联合国教科文组织世界遗产委员会将平遥古城（含古城墙、镇国寺、双林寺）列入《世界遗产名录》（编号 812），为现存最完整之明清县城范本。",
+      "subject": "event:ev_pingyao_03"
+    }
+  ]
+}

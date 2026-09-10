@@ -5312,6 +5312,56 @@
    "_src_line": 7
   },
   {
+   "id": "PY_G01",
+   "scene": "pingyao",
+   "subject": "place:pingyao_cheng",
+   "title": "平遥城墙夯土层与包砖工艺的细部营造尺度，缺系统测绘数据公布。",
+   "missing": "建筑史 / 历史地理 / 文保测绘",
+   "where": "平遥城墙夯土与包砖工艺的细部尺度（如夯层厚、砖规格、收分）",
+   "skills": [
+    "建筑史",
+    "历史地理",
+    "文保测绘"
+   ],
+   "accept": "若有《平遥城墙修缮报告》或考古测绘图，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "PY_G02",
+   "scene": "pingyao",
+   "subject": "person:mao_honghui",
+   "title": "毛鸿翙等协同庆掌柜的生平与同业网络，县志外私人记载稀少。",
+   "missing": "晋商史 / 人物传记",
+   "where": "毛鸿翙（协同庆等票号掌柜）生平与同业网络",
+   "skills": [
+    "晋商史",
+    "人物传记"
+   ],
+   "accept": "若有票号往来书信、号规抄本，可补社会(4)层人物断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "PY_G03",
+   "scene": "pingyao",
+   "subject": "place:fen_he",
+   "title": "汾河明清河道摆动对平遥城郊水利与交通的具体影响，缺连续方志记载。",
+   "missing": "历史地理 / 河流地貌 / 方志学",
+   "where": "汾河明清河道摆动对平遥城郊水利、渡口与交通的影响",
+   "skills": [
+    "历史地理",
+    "河流地貌",
+    "方志学"
+   ],
+   "accept": "若有连续河工/水利方志，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "POYANGHUG01",
    "scene": "poyanghu",
    "subject": "event:py_chen",

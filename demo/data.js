@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 453 个切片
+// 权威数据源：data/scenes.json 注册的 454 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 453 个切片",
+  "slice": "multi-scene · 454 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -174,6 +174,7 @@ window.SANDBOX_DATA = {
    "ningxia_xixia_tomb_llm",
    "nongzhigao_llm",
    "pingbo_zhiyi_llm",
+   "pingyao",
    "prc_chengyu_railway_llm",
    "prc_hongqi_qu_llm",
    "prc_liangdanyixing_llm",
@@ -1025,7 +1026,8 @@ window.SANDBOX_DATA = {
   "prc_yuanlongping_llm",
   "langzhong",
   "quanzhou",
-  "dali"
+  "dali",
+  "pingyao"
  ],
  "vocab": {
   "layers": [
@@ -28399,6 +28401,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "song",
    "scale_tier": "operational"
+  },
+  "pingyao": {
+   "key": "pingyao",
+   "title": "平遥（明清票号金融·晋商·城墙）",
+   "dossier_label": "平遥",
+   "subtitle": "汾河平川 · 明初城墙 · 日昇昌票号 · 晋商金融中枢",
+   "kind": "county",
+   "region": "huabei",
+   "page": "county.html?scene=pingyao",
+   "vocab_pack": "pingyao",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28854,7 +28878,8 @@ window.SANDBOX_DATA = {
   "prc_yuanlongping_llm": "slices/prc_yuanlongping_llm.js",
   "langzhong": "slices/langzhong.js",
   "quanzhou": "slices/quanzhou.js",
-  "dali": "slices/dali.js"
+  "dali": "slices/dali.js",
+  "pingyao": "slices/pingyao.js"
  },
  "corridors": [
   {

@@ -256,6 +256,7 @@
 | ningyuan | 45 | 4 | **0.390** | event:ningjin_dajie（0.667） | gap 2 / record 40 / scholarship 3 |
 | nongzhigao_llm | 14 | 4 | **0.000** | event:ev_nongzhigao_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | pingbo_zhiyi_llm | 14 | 4 | **0.000** | event:ev_pingbo_zhiyi_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
+| pingyao | 17 | 3 | **0.000** | event:ev_pingyao_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | poyanghu | 15 | 3 | **0.000** | event:py_chen（0.000） | gap 2 / inference 1 / record 7 / scholarship 5 |
 | prc_chengyu_railway_llm | 15 | 2 | **0.000** | event:ev_prc_chengyu_railway_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | prc_hongqi_qu_llm | 15 | 3 | **0.000** | event:ev_prc_hongqi_qu_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
@@ -965,6 +966,9 @@
 | event:ev_pingbo_zhiyi_llm_02 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_pingbo_zhiyi_llm_03 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_pingbo_zhiyi_llm_04 | pingbo_zhiyi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_pingyao_01 | pingyao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_pingyao_02 | pingyao | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_pingyao_03 | pingyao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_prc_chengyu_railway_llm_01 | prc_chengyu_railway_llm | **0.000** | 0/3 | 0.00 | 0.10 | 10 | 0 / 0 / 0 / 0 |
 | event:ev_prc_chengyu_railway_llm_02 | prc_chengyu_railway_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_prc_hongqi_qu_llm_01 | prc_hongqi_qu_llm | **0.000** | 0/3 | 0.17 | 0.09 | 11 | 0 / 0 / 0 / 0 |

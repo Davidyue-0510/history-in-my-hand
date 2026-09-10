@@ -255,6 +255,7 @@ window.SANDBOX_RESONANCE = {
    "ningyuan",
    "nongzhigao_llm",
    "pingbo_zhiyi_llm",
+   "pingyao",
    "poyanghu",
    "prc_chengyu_railway_llm",
    "prc_hongqi_qu_llm",
@@ -5131,6 +5132,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 4,
    "avg_resonance": 0.0,
    "best_event": "event:ev_pingbo_zhiyi_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "pingyao",
+   "name": "pingyao",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 8,
+    "国际机构": 2,
+    "学界": 7
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_pingyao_01",
    "best_resonance": 0.0
   },
   {
