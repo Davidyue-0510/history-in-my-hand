@@ -669,6 +669,57 @@
    "_src_line": 17
   },
   {
+   "id": "CD_G01",
+   "scene": "chengde",
+   "subject": "place:mountain_resort",
+   "title": "避暑山庄康熙、雍正时期具体营造工序、匠作籍贯、工程预算与物料来源等档案，公开有限。",
+   "missing": "建筑史 / 清宫档案 / 园林史",
+   "where": "避暑山庄康熙—雍正时期营造档案、匠籍与工程账目",
+   "skills": [
+    "建筑史",
+    "清宫档案",
+    "园林史"
+   ],
+   "accept": "若有内务府工程档案或样式雷图档公开，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "CD_G02",
+   "scene": "chengde",
+   "subject": "place:mulan_paddock",
+   "title": "木兰围场设立时的具体边界、围数、清代以来森林/草原生态变迁及猎物种群变化数据，公开有限。",
+   "missing": "历史地理 / 生态史 / GIS",
+   "where": "木兰围场清代边界、围数与森林—草原生态变迁",
+   "skills": [
+    "历史地理",
+    "生态史",
+    "GIS"
+   ],
+   "accept": "若有清代围场舆图与现代遥感对照，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "CD_G03",
+   "scene": "chengde",
+   "subject": "place:puning_temple",
+   "title": "外八庙各寺喇嘛编制、香火收入、与西藏/蒙古寺院之间的宗教网络，公开文献有限。",
+   "missing": "宗教史 / 社会史 / 藏学/蒙古学",
+   "where": "外八庙僧团编制、香火财政与蒙藏寺院网络",
+   "skills": [
+    "宗教史",
+    "社会史",
+    "藏学/蒙古学"
+   ],
+   "accept": "若有清代内务府或理藩院寺院档案公开，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "CHENGPUG01",
    "scene": "chengpu",
    "subject": "event:cp_jz",

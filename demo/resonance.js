@@ -44,6 +44,7 @@ window.SANDBOX_RESONANCE = {
    "changsha_yao_llm",
    "chanyuan",
    "chaozhou",
+   "chengde",
    "chengpu",
    "chenqiao",
    "chensheng",
@@ -1105,6 +1106,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_chaozhou_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chengde",
+   "name": "chengde",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "清修官史": 9,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chengde_01",
    "best_resonance": 0.0
   },
   {

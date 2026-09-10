@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "mountain_resort",
+      "to": "chengde_city",
+      "relation": "位于城内北部",
+      "note": "避暑山庄位于承德城北部武烈河谷，为清代夏都与离宫核心。"
+    },
+    {
+      "from": "wulie_river",
+      "to": "mountain_resort",
+      "relation": "流经山庄",
+      "note": "武烈河贯承德城而过，为避暑山庄湖泊与园林提供水源。"
+    },
+    {
+      "from": "puning_temple",
+      "to": "mountain_resort",
+      "relation": "山庄东北",
+      "note": "普宁寺位于避暑山庄东北麓，为外八庙之首，纪念平定准噶尔。"
+    },
+    {
+      "from": "putuo_zongcheng_temple",
+      "to": "mountain_resort",
+      "relation": "山庄正北",
+      "note": "普陀宗乘之庙位于避暑山庄正北山麓，仿布达拉式，供六世班禅。"
+    },
+    {
+      "from": "mulan_paddock",
+      "to": "chengde_city",
+      "relation": "城北偏北",
+      "note": "木兰围场位于承德以北，皇帝自承德出巡围场举行秋狝，城围相连。"
+    }
+  ]
+}

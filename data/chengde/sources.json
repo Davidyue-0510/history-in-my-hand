@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "qing_shilu",
+      "title": "清实录",
+      "party": "清修官史",
+      "stance_label": "清官修·当代",
+      "distance_label": "清代历朝官修，距所记承德事 contemporaneous 或数年内",
+      "color": "#7B5C3E",
+      "compiler": "清实录馆",
+      "period": "清",
+      "note": "圣祖、高宗实录载避暑山庄始建、普宁寺与普陀宗乘之庙营造、木兰秋狝与接见渥巴锡等事。"
+    },
+    {
+      "id": "re_he_zhi",
+      "title": "热河志",
+      "party": "清修官史",
+      "stance_label": "清官修·地方志",
+      "distance_label": "乾隆间官修，距康熙建山庄事约数十年",
+      "color": "#7B5C3E",
+      "compiler": "和珅等（清）",
+      "period": "清",
+      "note": "清代官修热河地方志，载承德地理、避暑山庄与外八庙建置、武烈河形胜，为本地核心文献。"
+    },
+    {
+      "id": "qingshigao",
+      "title": "清史稿",
+      "party": "清修官史",
+      "stance_label": "民国未定稿·清方立场",
+      "distance_label": "成书 1928（民国未定稿），距所记明清战事约 280–300 年",
+      "color": "#7B5C3E",
+      "compiler": "赵尔巽等",
+      "period": "清末/民国",
+      "note": "藩部传、地理志、兵志载木兰秋狝、外八庙政治象征与土尔扈特东归，为后朝综合史料。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "承德避暑山庄与外八庙研究综合",
+      "period": "今",
+      "note": "历史地理、建筑史、民族史、园林史等现代研究的综合推论，用于 inference 与 gap 层。"
+    }
+  ]
+}

@@ -667,7 +667,8 @@
   "lushan",
   "xian",
   "dunhuang",
-  "luoyang"
+  "luoyang",
+  "chengde"
  ],
  "scenes": {
   "langzhong": {
@@ -37173,6 +37174,90 @@
      ],
      "layer": "inference",
      "note": "伊洛形胜+丝路东端+东迁迁都事件→洛阳控中原枢要与东西交流"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "chengde": {
+   "kind": "county",
+   "region": "qing_modern",
+   "province": "hebei",
+   "title": "承德（避暑山庄·外八庙·木兰秋狝）",
+   "dossier_label": "承德",
+   "subtitle": "避暑山庄 · 外八庙 · 木兰秋狝 · 清夏都",
+   "primary_place": "mountain_resort",
+   "dossier_event": "event:ev_chengde_01",
+   "vocab_pack": "chengde",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "承德位于燕山腹地、武烈河谷，清代康熙四十二年（1703）始建避暑山庄，乾隆年间扩建并兴建外八庙，成为清代皇帝避暑、处理政务与接见蒙古、西藏及土尔扈特部首领的夏都。普宁寺（1755）纪念平定准噶尔，普陀宗乘之庙（1771）仿布达拉宫、供六世班禅，体现满蒙藏汉宗教与政治融合。城北木兰围场为皇帝秋狝习武、会盟藩部之所。避暑山庄及周围寺庙1994年列入UNESCO世界遗产（编号703），是中国现存最大的皇家园林与寺庙建筑群。",
+   "parties_note": "史料以清实录、热河志、清史稿等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_chengde_01": "山庄始建",
+    "event:ev_chengde_02": "普宁寺成",
+    "event:ev_chengde_03": "普陀宗乘成",
+    "place:mountain_resort": "避暑山庄",
+    "person:qianlong": "乾隆"
+   },
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "夏都政务+外八庙象征+木兰会盟→承德边疆政治秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "园林营造+汉藏建筑+武烈河水利+北巡道→承德物资与技术枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "蒙古王公朝觐+土尔扈特东归+僧团网络→多民族社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "燕山形胜+木兰围场+山庄始建事件→承德控北疆与满蒙藏联盟"
     }
    },
    "dims": [
