@@ -228,6 +228,7 @@ window.SANDBOX_RESONANCE = {
    "lizicheng",
    "locust",
    "longquan_yao_llm",
+   "lushan",
    "lvlin",
    "maling",
    "ming_fall",
@@ -4627,6 +4628,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_longquan_yao_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "lushan",
+   "name": "lushan",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 5,
+    "东晋·私修": 2,
+    "宋·私修": 2,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_lushan_01",
    "best_resonance": 0.0
   },
   {

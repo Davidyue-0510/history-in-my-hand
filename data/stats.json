@@ -1,9 +1,9 @@
 {
-  "scenes_total": 460,
-  "historical": 451,
+  "scenes_total": 461,
+  "historical": 452,
   "fictional": 9,
-  "assertions_total": 6798,
-  "sources_total": 460,
+  "assertions_total": 6815,
+  "sources_total": 463,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -151,6 +151,7 @@
     "liangzhou_meeting_llm",
     "lingqu_llm",
     "longquan_yao_llm",
+    "lushan",
     "ming_qing",
     "ming_tiangong_llm",
     "ming_tumu_llm",
@@ -325,7 +326,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 627,
+  "leads_total": 630,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3597,6 +3598,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "lushan",
+      "title": "庐山（净土祖庭·白鹿洞·牯岭）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4059,6 +4067,7 @@
     "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）",
     "qufu": "曲阜（孔子故里·儒源·三孔）",
     "hangzhou": "杭州（西湖·临安·吴越）",
-    "suzhou": "苏州（古典园林·平江·吴门）"
+    "suzhou": "苏州（古典园林·平江·吴门）",
+    "lushan": "庐山（净土祖庭·白鹿洞·牯岭）"
   }
 }

@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "lushan_zhi",
+      "title": "庐山志",
+      "party": "后世官修",
+      "distance_label": "明清屡修山志，距东晋净土与南宋书院事数百年至千余年",
+      "stance_label": "山志/地方志",
+      "compiler": "《庐山志》及庐山专志（明清官修）",
+      "color": "#C0703A",
+      "period": "明清"
+    },
+    {
+      "id": "huiyuan_ji",
+      "title": "慧远集（东林典籍）",
+      "party": "东晋·私修",
+      "distance_label": "慧远（东晋）自撰及弟子辑，距净土立教事为当时人记当时事",
+      "stance_label": "东晋僧人文集",
+      "compiler": "慧远（东晋）及弟子",
+      "color": "#9B7CC3",
+      "period": "东晋"
+    },
+    {
+      "id": "zhu_xi_ji",
+      "title": "朱文公文集",
+      "party": "宋·私修",
+      "distance_label": "朱熹（宋）自撰及门人编，距白鹿洞书院事为当时人记当时事",
+      "stance_label": "宋人文集",
+      "compiler": "朱熹（宋）及门人",
+      "color": "#8E7CC3",
+      "period": "宋"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "庐山文化景观与宗教史综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "bailudong", "to": "lushan_mountain", "kind": "within", "note": "白鹿洞书院在庐山东南麓"},
+    {"from": "donglin_temple", "to": "lushan_mountain", "kind": "within", "note": "东林寺在庐山西北麓"},
+    {"from": "guling", "to": "lushan_mountain", "kind": "within", "note": "牯岭为庐山山顶市镇"},
+    {"from": "poyang_lake", "to": "jiujiang", "kind": "adjacent", "note": "鄱阳湖于湖口入长江，近九江"},
+    {"from": "jiujiang", "to": "lushan_mountain", "kind": "near", "note": "九江为庐山北麓门户，江湖之会"}
+  ]
+}

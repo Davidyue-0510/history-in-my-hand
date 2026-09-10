@@ -4686,6 +4686,57 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "LS_G01",
+   "scene": "lushan",
+   "subject": "place:lushan_mountain",
+   "title": "庐山历代寺庙、书院与近代别墅的精确空间分布与营造年代数据，公开有限。",
+   "missing": "建筑史 / 历史地理 / GIS",
+   "where": "庐山历代寺庙、书院、别墅的空间分布与营造年代",
+   "skills": [
+    "建筑史",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有古建勘察或山志地图，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "LS_G02",
+   "scene": "lushan",
+   "subject": "place:bailudong",
+   "title": "白鹿洞书院历代修建次第与学田、祭田制度的详细档案，公开有限。",
+   "missing": "书院史 / 教育史 / 历史地理",
+   "where": "白鹿洞书院历代修建记与学田、祭田制度档案",
+   "skills": [
+    "书院史",
+    "教育史",
+    "历史地理"
+   ],
+   "accept": "若有书院志或学田册籍，可补制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "LS_G03",
+   "scene": "lushan",
+   "subject": "person:hui_yuan",
+   "title": "慧远东林结社与早期净土经典的文本流传、弟子谱系考证，公开有限。",
+   "missing": "佛教史 / 文献学 / 宗教学",
+   "where": "慧远文集、东林结社弟子谱系与早期净土经典流传",
+   "skills": [
+    "佛教史",
+    "文献学",
+    "宗教学"
+   ],
+   "accept": "若有早期净土文献整理，可补思想(5)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "LL_GAP1",
    "scene": "lvlin",
    "subject": "event:ll_17",

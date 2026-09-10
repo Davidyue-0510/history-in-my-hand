@@ -229,6 +229,7 @@
 | lizicheng | 15 | 4 | **0.000** | event:lc_1628（0.000） | gap 2 / inference 2 / record 7 / scholarship 4 |
 | locust | 12 | 5 | **0.000** | event:lc_1073（0.000） | gap 1 / inference 1 / record 5 / scholarship 5 |
 | longquan_yao_llm | 14 | 1 | **0.000** | event:ev_longquan_yao_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
+| lushan | 17 | 3 | **0.000** | event:ev_lushan_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | lvlin | 21 | 2 | **0.000** | event:ll_17（0.000） | gap 4 / inference 3 / record 11 / scholarship 3 |
 | maling | 18 | 3 | **0.000** | event:ml_jz（0.000） | gap 1 / record 13 / scholarship 4 |
 | ming_fall | 14 | 3 | **0.000** | event:mf_1627（0.000） | gap 1 / inference 4 / record 6 / scholarship 3 |
@@ -928,6 +929,9 @@
 | event:ev_lingqu_llm_02 | lingqu_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:ev_lingqu_llm_03 | lingqu_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_longquan_yao_llm_01 | longquan_yao_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lushan_01 | lushan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lushan_02 | lushan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lushan_03 | lushan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tiangong_llm_01 | ming_tiangong_llm | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tumu_02 | ming_tumu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_ming_tumu_03 | ming_tumu_llm | **0.000** | 0/3 | 0.12 | 0.09 | 11 | 0 / 0 / 0 / 0 |

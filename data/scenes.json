@@ -663,7 +663,8 @@
   "chaozhou",
   "qufu",
   "hangzhou",
-  "suzhou"
+  "suzhou",
+  "lushan"
  ],
  "scenes": {
   "langzhong": {
@@ -1502,6 +1503,90 @@
      ],
      "layer": "inference",
      "note": "太湖水网+运河终端+明清园林事件→苏州控江南经济文化重心"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "lushan": {
+   "kind": "county",
+   "region": "jiangnan",
+   "province": "jiangxi",
+   "title": "庐山（净土祖庭·白鹿洞·牯岭）",
+   "dossier_label": "庐山",
+   "subtitle": "断块名山 · 净土源 · 白鹿洞书院 · 中西别墅",
+   "primary_place": "lushan_mountain",
+   "dossier_event": "event:ev_lushan_02",
+   "vocab_pack": "lushan",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "庐山位于江西北临长江、东濒鄱阳湖，为地垒式断块山。东晋元兴元年（402）慧远于东林寺倡净土、结白莲社，庐山成中国净土宗发源地；南宋淳熙六年（1179）朱熹知南康军复兴白鹿洞书院、订《揭示》，成天下书院圭臬；清季九江开埠后西人建牯岭别墅群，庐山成近代中西交融避暑地。庐山1996年列入UNESCO（875）。",
+   "parties_note": "史料以庐山志为本，慧远集/朱文公文集为东晋宋私修，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_lushan_01": "慧远立教",
+    "event:ev_lushan_02": "朱熹兴学",
+    "event:ev_lushan_03": "牯岭别墅",
+    "place:lushan_mountain": "庐山",
+    "person:zhu_xi": "朱熹"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "书院学规+朱子理学+释道儒叠合→庐山文化圣山秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "牯岭别墅+九江码头+江湖转运→庐山中西交融与转运枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "净土信众网络+书院文教+避暑社会→多元社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "长江—鄱阳湖口+立教兴学事件→庐山控赣北江湖与信仰重心"
     }
    },
    "dims": [

@@ -226,6 +226,7 @@
       "lizicheng",
       "locust",
       "longquan_yao_llm",
+      "lushan",
       "lvlin",
       "maling",
       "ming_fall",
@@ -4625,6 +4626,28 @@
       "event_count": 1,
       "avg_resonance": 0.0,
       "best_event": "event:ev_longquan_yao_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "lushan",
+      "name": "lushan",
+      "total": 17,
+      "layers": {
+        "record": 6,
+        "scholarship": 3,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "后世官修": 5,
+        "东晋·私修": 2,
+        "宋·私修": 2,
+        "学界": 8
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_lushan_01",
       "best_resonance": 0.0
     },
     {
@@ -22618,6 +22641,99 @@
         "longquan_yao_llm"
       ],
       "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_lushan_01",
+      "name": "event:ev_lushan_01",
+      "scenes": [
+        "lushan"
+      ],
+      "scene_names": [
+        "lushan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_lushan_02",
+      "name": "event:ev_lushan_02",
+      "scenes": [
+        "lushan"
+      ],
+      "scene_names": [
+        "lushan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_lushan_03",
+      "name": "event:ev_lushan_03",
+      "scenes": [
+        "lushan"
+      ],
+      "scene_names": [
+        "lushan"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
