@@ -95,7 +95,7 @@ window.SANDBOX_SLICES["song_chan_yuan"] = {
     "note": "澶渊之盟：地缘战略——宋辽以白沟河为界，雄州为宋最北边防，塘泺沮泽阻辽骑南下"
    }
   },
-  "province": null,
+  "province": "henan",
   "page": "county.html?scene=song_chan_yuan",
   "key": "song_chan_yuan",
   "scene_id": "song_chan_yuan"
