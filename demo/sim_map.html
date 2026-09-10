@@ -31,6 +31,13 @@
   .map-tools{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;gap:6px;z-index:5;}
   .map-tools button{width:34px;height:34px;border:1px solid var(--line);background:var(--parch2);border-radius:8px;cursor:pointer;font-size:16px;color:var(--ink);font-family:inherit;box-shadow:0 1px 3px rgba(0,0,0,.15);}
   .map-tools button:hover{background:#e6dcc4;}
+  /* v0.227：左侧边栏折叠开关（O6） */
+  .panel-toggle{position:absolute;left:12px;top:124px;width:34px;height:34px;border:1px solid var(--line);background:var(--parch2);border-radius:8px;cursor:pointer;font-size:18px;color:var(--ink);font-family:inherit;box-shadow:0 1px 3px rgba(0,0,0,.15);z-index:5;display:flex;align-items:center;justify-content:center;}
+  .panel-toggle:hover{background:#e6dcc4;}
+  .panel-toggle::before{content:'⟨';}
+  .aside-collapsed .panel-toggle::before{content:'☰';}
+  .body.aside-collapsed aside{width:0;flex:0 0 0;padding:0;border-right-width:0;overflow:hidden;}
+  aside{transition:width .2s ease,padding .2s ease,border-width .2s ease;}
   .zoom-badge{position:absolute;right:12px;top:12px;background:rgba(51,45,39,.82);color:#f3ecdc;padding:3px 9px;border-radius:10px;font-size:12px;z-index:5;}
   .scale-bar{position:absolute;left:12px;bottom:12px;background:rgba(246,241,228,.86);padding:4px 8px;border-radius:6px;font-size:11px;color:var(--ink);z-index:5;display:flex;align-items:center;gap:6px;}
   .elev-legend{position:absolute;right:12px;bottom:12px;width:130px;height:12px;border:1px solid var(--line);border-radius:3px;z-index:5;}
@@ -172,6 +179,7 @@
           <button data-zoom="out" title="缩小">－</button>
           <button data-zoom="fit" title="复位视图">⤢</button>
         </div>
+        <button class="panel-toggle" id="panelToggle" title="折叠/展开面板"></button>
         <div class="zoom-badge" id="zoomBadge">1.0×</div>
         <div class="scale-bar" id="scaleBar"></div>
         <div class="elev-legend" id="elBar"></div>
@@ -221,6 +229,18 @@
     if (localStorage && localStorage.getItem('sim_map_onboard') === '1') ob.classList.add('hide');
     var btn = $('obClose'); if (!btn) return;
     btn.addEventListener('click', function(){ localStorage && localStorage.setItem('sim_map_onboard', '1'); ob.classList.add('hide'); });
+  })();
+
+  // v0.227：左侧边栏折叠（O6）
+  (function panelToggle(){
+    var body = document.querySelector('.body'); if (!body) return;
+    var btn = $('panelToggle'); if (!btn) return;
+    if (localStorage && localStorage.getItem('sim_map_panel') === 'collapsed') body.classList.add('aside-collapsed');
+    btn.addEventListener('click', function(){
+      body.classList.toggle('aside-collapsed');
+      if (window.MC) window.MC.measure();
+      if (localStorage) localStorage.setItem('sim_map_panel', body.classList.contains('aside-collapsed') ? 'collapsed' : 'open');
+    });
   })();
 
   function init(){
