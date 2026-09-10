@@ -1695,6 +1695,77 @@
     }, 110);
   });
 
+  /* ════════ 模板移植 v0.230：桌面可折叠边栏（O6）+ 首次引导（O9）+ 方向键步进年份（O5） ════════ */
+  (function templateChrome(){
+    // —— O6：桌面可折叠左右边栏（localStorage 记忆；折叠后重算地图视口）——
+    function togglePanel(side){
+      var cls = side === 'left' ? 'pl-collapsed' : 'pr-collapsed';
+      var on = document.body.classList.toggle(cls);
+      try { localStorage.setItem('county_panel_' + side, on ? '1' : '0'); } catch (_) {}
+      if (typeof measure === 'function') measure();
+      if (typeof applyView === 'function') applyView();
+    }
+    var tl = document.getElementById('panelToggleL'), tr = document.getElementById('panelToggleR');
+    if (tl) tl.addEventListener('click', function () { togglePanel('left'); });
+    if (tr) tr.addEventListener('click', function () { togglePanel('right'); });
+    try {
+      if (localStorage.getItem('county_panel_left') === '1') document.body.classList.add('pl-collapsed');
+      if (localStorage.getItem('county_panel_right') === '1') document.body.classList.add('pr-collapsed');
+    } catch (_) {}
+    if (document.body.classList.contains('pl-collapsed') || document.body.classList.contains('pr-collapsed')) {
+      if (typeof measure === 'function') measure();
+      if (typeof applyView === 'function') applyView();
+    }
+
+    // —— O9：首次进入操作引导（可关闭，localStorage 记忆）——
+    var ob = document.getElementById('onboardHint');
+    if (ob) {
+      var obKey = 'county_onboard_v1', obSeen = false;
+      try { obSeen = localStorage.getItem(obKey) === '1'; } catch (_) {}
+      if (obSeen) ob.classList.add('hide');
+      var obClose = ob.querySelector('.ob-close');
+      if (obClose) obClose.addEventListener('click', function () {
+        ob.classList.add('hide');
+        try { localStorage.setItem(obKey, '1'); } catch (_) {}
+      });
+    }
+
+    // —— O5：←/→ 步进「实控区·战争走势」时间轴年份（时间轴可见且焦点不在滑块时拦截）——
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      if (e.target && e.target.tagName && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+      var sl = document.getElementById('ctrlSlider');
+      var bar = document.getElementById('ctrlTimeline');
+      if (!sl || !bar || bar.style.display === 'none') return;
+      if (e.target && e.target.id === 'ctrlSlider') return; // 焦点在滑块上时交原生处理
+      e.preventDefault();
+      var d = e.key === 'ArrowRight' ? 1 : -1;
+      var v = Math.min(+sl.max, Math.max(+sl.min, (+sl.value) + d));
+      sl.value = v;
+      sl.dispatchEvent(new Event('input'));
+    });
+  })();
+
+  /* ═══════════ 海拔图例（v0.230 修复：此前 #elevLegend 声明但从未填充，O3） ═══════════ */
+  (function renderElevLegend(){
+    var eb = document.getElementById('elevLegend'); if (!eb) return;
+    if (IS_ABSTRACT) { eb.style.display = 'none'; return; }
+    eb.style.display = '';
+    var RAMP = [
+      [0,    [214,227,232]], [1,    [243,240,229]], [80,   [235,229,212]],
+      [250,  [223,213,188]], [500,  [208,194,161]], [900,  [191,172,136]],
+      [1400, [173,150,115]], [1800, [156,131,98]]
+    ];
+    var stops = RAMP.map(function (s) {
+      var c = s[1];
+      return 'rgb(' + Math.round(c[0]) + ',' + Math.round(c[1]) + ',' + Math.round(c[2]) + ') ' +
+             (Math.min(1800, s[0]) / 1800 * 100).toFixed(0) + '%';
+    }).join(',');
+    eb.innerHTML = '海拔 m' +
+      '<div class="el-bar" style="background:linear-gradient(90deg,' + stops + ')"></div>' +
+      '<div class="el-ticks"><span>0</span><span>500</span><span>1200</span><span>1800</span></div>';
+  })();
+
   /* ═══════════ 边型图例 ═══════════ */
   function renderEdgeLegend() {
     var box = document.getElementById('mapLegend'); if (!box) return;

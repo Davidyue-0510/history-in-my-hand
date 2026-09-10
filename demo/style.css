@@ -114,6 +114,34 @@ body{
 .panel::-webkit-scrollbar-thumb:hover{ background:var(--ink-3); }
 .panel::-webkit-scrollbar-track{ background:transparent; }
 
+/* ══════ 模板移植：桌面端可折叠边栏（v0.230，与战棋 sim_map.html 同源 O6） ══════ */
+.panel-toggle{ position:absolute; width:34px; height:34px; border:1px solid var(--rule-2); background:var(--paper-2);
+  border-radius:8px; cursor:pointer; font-size:18px; color:var(--ink-2); font-family:inherit;
+  box-shadow:0 1px 3px rgba(0,0,0,.15); z-index:7; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+.panel-toggle:hover{ background:var(--paper-3); }
+.panel-toggle.left{ left:12px; top:120px; }
+.panel-toggle.right{ right:12px; top:120px; }
+.panel-toggle.left::before{ content:'⟨'; }
+.panel-toggle.right::before{ content:'⟩'; }
+body.pl-collapsed .panel-toggle.left::before{ content:'☰'; }
+body.pr-collapsed .panel-toggle.right::before{ content:'☰'; }
+body.pl-collapsed{ --lw:0px; }
+body.pr-collapsed{ --rw:0px; }
+body.pl-collapsed #panelLeft{ width:0; min-width:0; overflow:hidden; border-right-width:0; }
+body.pr-collapsed #panelRight{ width:0; min-width:0; overflow:hidden; border-left-width:0; }
+
+/* ══════ 模板移植：首次进入操作引导（v0.230，O9） ══════ */
+.onboard-hint{ position:absolute; left:50%; top:62px; transform:translateX(-50%); width:min(372px,86vw);
+  background:rgba(246,241,228,.97); border:1px solid var(--rule-2); border-radius:10px; padding:12px 14px;
+  font-size:12.5px; line-height:1.6; color:var(--ink); z-index:8; box-shadow:0 6px 20px rgba(0,0,0,.2); }
+.onboard-hint .ob-title{ font-weight:700; font-size:13.5px; margin-bottom:7px; color:var(--accent); }
+.onboard-hint ul{ margin:0; padding-left:17px; }
+.onboard-hint li{ margin:3px 0; }
+.onboard-hint b{ color:var(--ming); }
+.onboard-hint .ob-close{ margin-top:10px; width:100%; border:1px solid var(--rule-2); background:var(--accent);
+  color:#fff; border-radius:6px; padding:6px; cursor:pointer; font-family:inherit; font-size:12.5px; }
+.onboard-hint.hide{ display:none; }
+
 .block{ padding:13px 14px 15px; border-bottom:1px solid var(--rule); flex:none; }
 .block-foot{ border-bottom:none; margin-top:auto; background:var(--paper-3);
   position:sticky; bottom:0; padding:9px 14px; }
@@ -871,6 +899,8 @@ body{
 }
 @media (max-width:1080px){
   .drawer-btn{ display:block; }
+  .panel-toggle{ display:none; }            /* 窄屏用抽屉，桌面折叠按钮让位 */
+  body.pl-collapsed, body.pr-collapsed{ --lw:236px; --rw:288px; }  /* 避免继承的折叠类误伤单栏栅格 */
   .layout{ grid-template-columns:minmax(0,1fr); }
   .panel{
     display:none;                            /* 关闭态脱离栅格 → 消除底部幻影行 + 离屏 translateX 引发的横向溢出 */

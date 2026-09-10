@@ -1523,6 +1523,39 @@
     }, 110);
   });
 
+  /* ════════ 模板移植 v0.230：桌面可折叠边栏（O6）+ 首次引导（O9） ════════ */
+  (function templateChrome(){
+    function togglePanel(side){
+      var cls = side === 'left' ? 'pl-collapsed' : 'pr-collapsed';
+      var on = document.body.classList.toggle(cls);
+      try { localStorage.setItem('sarhu_panel_' + side, on ? '1' : '0'); } catch (_) {}
+      if (typeof measure === 'function') measure();
+      if (typeof applyView === 'function') applyView();
+    }
+    var tl = document.getElementById('panelToggleL'), tr = document.getElementById('panelToggleR');
+    if (tl) tl.addEventListener('click', function () { togglePanel('left'); });
+    if (tr) tr.addEventListener('click', function () { togglePanel('right'); });
+    try {
+      if (localStorage.getItem('sarhu_panel_left') === '1') document.body.classList.add('pl-collapsed');
+      if (localStorage.getItem('sarhu_panel_right') === '1') document.body.classList.add('pr-collapsed');
+    } catch (_) {}
+    if (document.body.classList.contains('pl-collapsed') || document.body.classList.contains('pr-collapsed')) {
+      if (typeof measure === 'function') measure();
+      if (typeof applyView === 'function') applyView();
+    }
+    var ob = document.getElementById('onboardHint');
+    if (ob) {
+      var obKey = 'sarhu_onboard_v1', obSeen = false;
+      try { obSeen = localStorage.getItem(obKey) === '1'; } catch (_) {}
+      if (obSeen) ob.classList.add('hide');
+      var obClose = ob.querySelector('.ob-close');
+      if (obClose) obClose.addEventListener('click', function () {
+        ob.classList.add('hide');
+        try { localStorage.setItem(obKey, '1'); } catch (_) {}
+      });
+    }
+  })();
+
   /* ═══════════ 实际控制层（v0.10） ═══════════ */
   function drawControl() {
     if (!window.ControlLayer) return;
