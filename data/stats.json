@@ -1,8 +1,8 @@
 {
-  "scenes_total": 467,
-  "historical": 458,
+  "scenes_total": 468,
+  "historical": 459,
   "fictional": 9,
-  "assertions_total": 6917,
+  "assertions_total": 6934,
   "sources_total": 471,
   "factions_total": 9,
   "vocab_packs": [
@@ -290,6 +290,7 @@
     "xianggang_tram_llm",
     "xianggang_tunmen",
     "xianggang_university_llm",
+    "xining",
     "xinjiang_gaochang_llm",
     "xinjiang_jiansheng_llm",
     "xinjiang_xiyu",
@@ -332,7 +333,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 648,
+  "leads_total": 651,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3653,6 +3654,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "xining",
+      "title": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4122,6 +4130,7 @@
     "luoyang": "洛阳（十三朝古都·龙门石窟·隋唐东都）",
     "chengde": "承德（避暑山庄·外八庙·木兰秋狝）",
     "wuyishan": "武夷山（丹霞·朱子理学·红茶）",
-    "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）"
+    "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）",
+    "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）"
   }
 }

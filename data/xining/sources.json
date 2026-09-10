@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "地理志、王莽传载西海郡设置与青海湖地区，东汉官修西汉史。"
+    },
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "吐蕃传、地理志载文成公主入藏、唐蕃和亲与青海道，为唐蕃关系核心史料。"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "吐蕃传、唃厮啰传载青唐城、唃厮啰政权与宋夏青唐之争，元人修宋史，视角非宋当代。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "青海历史地理与藏传佛教综合研究",
+      "period": "今",
+      "note": "塔尔寺研究、青海历史地理、唐蕃古道考古等现代综合研究，用于 inference 与 gap 层。"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "xining_city",
+      "to": "qinghai_lake",
+      "relation": "向西北约150公里",
+      "note": "西宁经唐蕃古道向西北可达青海湖，青海湖是青藏高原东北缘的生态与交通地标。"
+    },
+    {
+      "from": "xining_city",
+      "to": "taer_si",
+      "relation": "西南约25公里",
+      "note": "塔尔寺位于西宁西南湟中区，是宗喀巴诞生地，与西宁共同构成河湟佛教文化中心。"
+    },
+    {
+      "from": "xining_city",
+      "to": "riyue_mountain",
+      "relation": "西南约90公里",
+      "note": "日月山位于西宁西南的唐蕃古道上，是文成公主入藏行经之地与农牧分界线。"
+    },
+    {
+      "from": "xining_city",
+      "to": "dangeer_old_city",
+      "relation": "向西约50公里",
+      "note": "丹噶尔古城位于西宁以西湟源县，是明清时期汉藏茶马互市的重要集镇。"
+    },
+    {
+      "from": "huangshui_river",
+      "to": "xining_city",
+      "relation": "穿城而过",
+      "note": "湟水及其支流贯穿西宁河谷，为西宁城市、农业与人口提供水源与交通廊道。"
+    }
+  ]
+}

@@ -8810,6 +8810,57 @@
    "_src_line": 14
   },
   {
+   "id": "XN_G01",
+   "scene": "xining",
+   "subject": "place:xining_city",
+   "title": "唃厮啰时期青唐城的具体城垣范围、街道布局、宫殿与市场区考古资料公开有限。",
+   "missing": "城市考古 / 吐蕃史 / 宋史",
+   "where": "青唐城遗址城墙基址、道路网、官署与宗教建筑考古",
+   "skills": [
+    "城市考古",
+    "吐蕃史",
+    "宋史"
+   ],
+   "accept": "若有城垣基址测绘或唃厮啰时期建筑遗迹报告，可补技术(2)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "XN_G02",
+   "scene": "xining",
+   "subject": "place:taer_si",
+   "title": "塔尔寺建寺初期建筑布局、宗喀巴出生民居遗址及明代以前地层考古资料公开有限。",
+   "missing": "佛教考古 / 建筑史 / 藏传佛教史",
+   "where": "塔尔寺早期殿塔基址、宗喀巴故居遗址与明代以前地层发掘",
+   "skills": [
+    "佛教考古",
+    "建筑史",
+    "藏传佛教史"
+   ],
+   "accept": "若有早期建筑测绘或地层报告，可补技术(2)/思想(5)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "XN_G03",
+   "scene": "xining",
+   "subject": "place:qinghai_lake",
+   "title": "西汉西海郡治所的具体位置、青海湖历史时期水位变化及周边古代聚落分布，公开资料有限。",
+   "missing": "历史地理 / 考古学 / 环境科学",
+   "where": "青海湖周边西海郡城址勘探、古水文沉积与汉代聚落考古",
+   "skills": [
+    "历史地理",
+    "考古学",
+    "环境科学"
+   ],
+   "accept": "若有西海郡城址坐标或古水位重建数据，可补地理(1)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "XIN_013",
    "scene": "xinjiang_gaochang_llm",
    "subject": "place:gaochang",

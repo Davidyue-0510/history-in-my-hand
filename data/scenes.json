@@ -670,7 +670,8 @@
   "luoyang",
   "chengde",
   "wuyishan",
-  "yinchuan"
+  "yinchuan",
+  "xining"
  ],
  "scenes": {
   "langzhong": {
@@ -37428,6 +37429,90 @@
      ],
      "layer": "inference",
      "note": "贺兰山形胜+河套西口+宋夏和议→兴庆府控西北三足格局"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "xining": {
+   "kind": "county",
+   "region": "xibei",
+   "province": "qinghai",
+   "title": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
+   "dossier_label": "西宁",
+   "subtitle": "唐蕃古道 · 青唐城 · 塔尔寺 · 青海湖",
+   "primary_place": "xining_city",
+   "dossier_event": "event:ev_xining_01",
+   "vocab_pack": "xining",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "西宁位于青藏高原东北缘、湟水谷地，古称青唐城。641年文成公主经青海道、日月山入藏和亲，开启了唐蕃长期交往。约1032年吐蕃后裔唃厮啰徙居青唐城，建立河湟地区最重要的吐蕃政权。明洪武十二年（1379），宗喀巴诞生地湟中始建塔尔寺，后成为藏传佛教格鲁派六大寺院之一与根本道场。青海湖古称西海，西汉曾设西海郡。湟水谷地的灌溉农业支撑了西宁城市的发展，丹噶尔古城则是明清茶马互市的重要集镇。西宁集唐蕃古道、青唐政权、格鲁派圣地与高原生态于一体，是青藏高原与中原文明交汇的节点。",
+   "parties_note": "史料以汉书、旧唐书、宋史等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_xining_01": "文成入藏",
+    "event:ev_xining_02": "唃厮啰建城",
+    "event:ev_xining_03": "塔尔寺始建",
+    "place:xining_city": "青唐城",
+    "person:wencheng_gongzhu": "文成公主"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐蕃和亲+唃厮啰政权+格鲁派塔尔寺→西宁多元政治与宗教认同"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "湟水灌溉+茶马互市+唐蕃古道+青唐道→西宁物资与交通基础"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "汉藏商旅+吐蕃部众+僧侣僧团+和亲队伍→多族群社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "湟水谷地+唐蕃古道+青海湖+西海郡→西宁控青藏高原东北门户"
     }
    },
    "dims": [

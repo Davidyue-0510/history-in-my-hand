@@ -407,6 +407,7 @@
 | xiaowen | 14 | 3 | **0.000** | event:xw_493（0.000） | gap 1 / record 10 / scholarship 3 |
 | xiaoyaojin | 15 | 3 | **0.000** | event:xy_cao（0.000） | gap 1 / inference 3 / record 8 / scholarship 3 |
 | xinhai | 18 | 3 | **0.000** | event:xh_1010（0.000） | gap 1 / inference 3 / record 10 / scholarship 4 |
+| xining | 17 | 3 | **0.000** | event:ev_xining_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | xinjiang_gaochang_llm | 15 | 1 | **0.000** | event:ev_xinjiang_gaochang_llm_01（0.000） | gap 1 / inference 2 / record 11 / scholarship 1 |
 | xinjiang_jiansheng_llm | 14 | 5 | **0.000** | event:ev_xinjiang_jiansheng_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | xinjiang_xiyu | 11 | 2 | **0.000** | event:ev_xinjiang_xiyu_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 1 |
@@ -1297,6 +1298,9 @@
 | event:ev_xianggang_tunmen_02 | xianggang_tunmen | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_university_llm_01 | xianggang_university_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xianggang_university_llm_02 | xianggang_university_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
+| event:ev_xining_01 | xining | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_xining_02 | xining | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_xining_03 | xining | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xinjiang_gaochang_llm_01 | xinjiang_gaochang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xinjiang_jiansheng_llm_01 | xinjiang_jiansheng_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_xinjiang_jiansheng_llm_02 | xinjiang_jiansheng_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
