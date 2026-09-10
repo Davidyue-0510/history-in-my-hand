@@ -326,6 +326,23 @@ def scene_bbox(bundle):
             and _valid_coord(tg["bbox"][2], tg["bbox"][3]):
         xs += [tg["bbox"][0], tg["bbox"][2]]
         ys += [tg["bbox"][1], tg["bbox"][3]]
+    # v0.225：把场景级补充水系（data/<dir>/rivers.json / 共享水系）也纳入视野，
+    # 否则 china_coarse 等按 places 算出的紧 bbox 会把定义性河流裁到框外、不渲染。
+    for f in (bundle.get("rivers_override") or []):
+        g = f.get("g") or f.get("geometry")
+        if not g:
+            continue
+        coords = g.get("coordinates", [])
+        stack = [coords]
+        while stack:
+            c = stack.pop()
+            if not c:
+                continue
+            if isinstance(c[0], (int, float)):
+                if _valid_coord(c[0], c[1]):
+                    xs.append(c[0]); ys.append(c[1])
+            else:
+                stack.extend(c)
     if not xs:
         return CHINA_BBOX
     return _expand((min(xs), min(ys), max(xs), max(ys)))

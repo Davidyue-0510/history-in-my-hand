@@ -687,6 +687,34 @@ window.SANDBOX_SLICES["lingqu_llm"] = {
    "_source_credibility": null
   }
  ],
+ "rivers_override": [
+  {
+   "n": "灵渠",
+   "approx": true,
+   "note": "人工运河，自兴安分水塘引湘水入漓水。本线为公开地理数据近似。",
+   "g": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      110.68,
+      25.7
+     ],
+     [
+      110.72,
+      25.66
+     ],
+     [
+      110.755,
+      25.62
+     ],
+     [
+      110.78,
+      25.585
+     ]
+    ]
+   }
+  }
+ ],
  "control": [
   {
    "place_id": "lingnan",
@@ -4419,6 +4447,32 @@ window.SANDBOX_SLICES["lingqu_llm"] = {
    }
   ],
   "rivers": [
+   {
+    "g": {
+     "type": "LineString",
+     "coordinates": [
+      [
+       110.68,
+       25.7
+      ],
+      [
+       110.72,
+       25.66
+      ],
+      [
+       110.755,
+       25.62
+      ],
+      [
+       110.78,
+       25.585
+      ]
+     ]
+    },
+    "n": "灵渠",
+    "approx": true,
+    "note": "人工运河，自兴安分水塘引湘水入漓水。本线为公开地理数据近似。"
+   },
    {
     "g": {
      "type": "LineString",
