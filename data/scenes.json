@@ -661,7 +661,8 @@
   "yixian",
   "fenghuang",
   "chaozhou",
-  "qufu"
+  "qufu",
+  "hangzhou"
  ],
  "scenes": {
   "langzhong": {
@@ -1332,6 +1333,90 @@
      ],
      "layer": "inference",
      "note": "泗河平原地理+独尊儒术事件→曲阜由鲁邑升为天下儒学圣地"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "hangzhou": {
+   "kind": "county",
+   "region": "jiangnan",
+   "province": "zhejiang",
+   "title": "杭州（西湖·临安·吴越）",
+   "dossier_label": "杭州",
+   "subtitle": "江南运河南端 · 西湖十景 · 南宋行在 · 吴越保境",
+   "primary_place": "west_lake",
+   "dossier_event": "event:ev_hangzhou_03",
+   "vocab_pack": "hangzhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "杭州位于浙江北部、钱塘江下游，隋凿江南河（610）使杭州为运河南端、运河—海港城市崛起；唐白居易、宋苏轼相继浚西湖、筑白堤苏堤；907年钱镠建吴越国定都杭州、保境安民；1138年南宋定都临安，西湖十景定型。西湖2011年列入UNESCO（1334）。",
+   "parties_note": "史料以杭州府志、吴越国史为本，武林旧事/白氏长庆集/苏文忠公全集为宋唐私修，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_hangzhou_01": "隋凿江南河",
+    "event:ev_hangzhou_02": "吴越定都",
+    "event:ev_hangzhou_03": "南宋定都",
+    "place:west_lake": "西湖",
+    "person:su_shi": "苏轼"
+   },
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "南宋行在制度+西湖山水意象+保境安民→杭州政治文化中心"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "江南运河+白堤苏堤水利+海塘→杭州运河—海港复合枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "市民文化+商旅网络+庙会→江南社会外向流动与文化繁荣"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "钱塘江海港+运河终端+南宋定都事件→杭州控江南与海上丝路"
     }
    },
    "dims": [

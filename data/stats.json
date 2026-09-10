@@ -1,9 +1,9 @@
 {
-  "scenes_total": 458,
-  "historical": 449,
+  "scenes_total": 459,
+  "historical": 450,
   "fictional": 9,
-  "assertions_total": 6764,
-  "sources_total": 451,
+  "assertions_total": 6781,
+  "sources_total": 456,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -97,6 +97,7 @@
     "han_longshouqu_llm",
     "han_tihuajing_llm",
     "han_weihuo_llm",
+    "hangzhou",
     "hebei_kailuan_llm",
     "hebei_shanhaiguan",
     "hebei_yanzhao_wenhua_llm",
@@ -323,7 +324,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 621,
+  "leads_total": 624,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3581,6 +3582,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "hangzhou",
+      "title": "杭州（西湖·临安·吴越）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4041,6 +4049,7 @@
     "yixian": "黟县（皖南古村落·西递宏村·徽派）",
     "fenghuang": "凤凰（湘西边城·苗土风情）",
     "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）",
-    "qufu": "曲阜（孔子故里·儒源·三孔）"
+    "qufu": "曲阜（孔子故里·儒源·三孔）",
+    "hangzhou": "杭州（西湖·临安·吴越）"
   }
 }

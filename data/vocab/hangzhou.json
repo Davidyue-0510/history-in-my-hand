@@ -1,0 +1,61 @@
+{
+  "_comment": "per-scene vocab pack for 杭州（西湖·临安·吴越，唐—南宋）. parties 为 后世官修/宋·私修/唐·私修/学界，立场靠来源派生，不伪造。",
+  "_base": null,
+  "parties": [
+    "后世官修",
+    "宋·私修",
+    "唐·私修",
+    "学界"
+  ],
+  "party_bucket": {
+    "后世官修": "后世官修",
+    "宋·私修": "宋·私修",
+    "唐·私修": "唐·私修",
+    "学界": "学界"
+  },
+  "party_colors": {
+    "后世官修": "#C0703A",
+    "宋·私修": "#8E7CC3",
+    "唐·私修": "#9B7CC3",
+    "学界": "#2E7D8F"
+  },
+  "factions": {
+    "f_后世官修": {
+      "name": "后世官修",
+      "macro_party": "后世官修",
+      "note": "auto"
+    },
+    "f_宋·私修": {
+      "name": "宋·私修",
+      "macro_party": "宋·私修",
+      "note": "auto"
+    },
+    "f_唐·私修": {
+      "name": "唐·私修",
+      "macro_party": "唐·私修",
+      "note": "auto"
+    },
+    "f_学界": {
+      "name": "学界",
+      "macro_party": "学界",
+      "note": "auto"
+    }
+  },
+  "faction_colors": {
+    "f_后世官修": "#C0703A",
+    "f_宋·私修": "#8E7CC3",
+    "f_唐·私修": "#9B7CC3",
+    "f_学界": "#2E7D8F"
+  },
+  "layers": {
+    "record": "原始史料",
+    "scholarship": "学界研究",
+    "inference": "合理推断",
+    "gap": "证据缺口"
+  },
+  "quote_status": {
+    "verbatim": "直接引文",
+    "paraphrase_unverified": "转述待核",
+    "generated": "生成"
+  }
+}

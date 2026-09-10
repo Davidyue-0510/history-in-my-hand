@@ -144,6 +144,7 @@ window.SANDBOX_RESONANCE = {
    "han_tihuajing_llm",
    "han_weihuo_llm",
    "han_wudi_ruxue",
+   "hangzhou",
    "hebei_kailuan_llm",
    "hebei_shanhaiguan",
    "hebei_yanzhao_wenhua_llm",
@@ -3004,6 +3005,28 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.0,
    "best_event": null,
    "best_resonance": null
+  },
+  {
+   "scene": "hangzhou",
+   "name": "hangzhou",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 5,
+    "宋·私修": 3,
+    "唐·私修": 1,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_hangzhou_01",
+   "best_resonance": 0.0
   },
   {
    "scene": "hebei_kailuan_llm",

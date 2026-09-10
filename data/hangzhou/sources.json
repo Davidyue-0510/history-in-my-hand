@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "id": "hangzhou_fuzhi",
+      "title": "杭州府志（西湖志）",
+      "party": "后世官修",
+      "distance_label": "明清屡修地方志，距西湖疏浚与临安事数百年至千余年",
+      "stance_label": "地方志",
+      "compiler": "《杭州府志》及西湖专志（明清官修）",
+      "color": "#C0703A",
+      "period": "明清"
+    },
+    {
+      "id": "wu_yue_shi",
+      "title": "吴越国史（吴越备史类）",
+      "party": "后世官修",
+      "distance_label": "后世辑录，距钱镠建都事约数百年",
+      "stance_label": "割据国史",
+      "compiler": "吴越国史事辑录（后世官修）",
+      "color": "#C0703A",
+      "period": "后世"
+    },
+    {
+      "id": "wulin_jiu_shi",
+      "title": "武林旧事",
+      "party": "宋·私修",
+      "distance_label": "周密（宋遗民）自撰，记临安事为当时人记当时事",
+      "stance_label": "宋人笔记",
+      "compiler": "周密（宋）",
+      "color": "#8E7CC3",
+      "period": "南宋"
+    },
+    {
+      "id": "bai_juyi_ji",
+      "title": "白氏长庆集",
+      "party": "唐·私修",
+      "distance_label": "白居易自撰，距刺杭事为当时人记当时事",
+      "stance_label": "唐人诗文集",
+      "compiler": "白居易（唐）",
+      "color": "#9B7CC3",
+      "period": "唐"
+    },
+    {
+      "id": "su_shi_wenji",
+      "title": "苏文忠公全集",
+      "party": "宋·私修",
+      "distance_label": "苏轼自撰及门人编，距知杭事为当时人记当时事",
+      "stance_label": "宋人诗文集",
+      "compiler": "苏轼（宋）及门人",
+      "color": "#8E7CC3",
+      "period": "宋"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "西湖与杭州城市史综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "west_lake", "to": "lin_an_city", "kind": "adjacent", "note": "西湖在临安城西，为行在游观核心"},
+    {"from": "bai_su_di", "to": "west_lake", "kind": "within", "note": "白堤苏堤为西湖堤桥骨架"},
+    {"from": "wushan", "to": "lin_an_city", "kind": "within", "note": "吴山在临安城内，为市民中心"},
+    {"from": "grand_canal_hz", "to": "lin_an_city", "kind": "near", "note": "江南运河杭州段通临安、接江海"},
+    {"from": "qiantang_river", "to": "lin_an_city", "kind": "adjacent", "note": "钱塘江在临安城南，海塘卫城"}
+  ]
+}

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 458 个切片
+// 权威数据源：data/scenes.json 注册的 459 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 458 个切片",
+  "slice": "multi-scene · 459 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -101,6 +101,7 @@ window.SANDBOX_DATA = {
    "han_longshouqu_llm",
    "han_tihuajing_llm",
    "han_weihuo_llm",
+   "hangzhou",
    "hebei_kailuan_llm",
    "hebei_shanhaiguan",
    "hebei_yanzhao_wenhua_llm",
@@ -1035,7 +1036,8 @@ window.SANDBOX_DATA = {
   "yixian",
   "fenghuang",
   "chaozhou",
-  "qufu"
+  "qufu",
+  "hangzhou"
  ],
  "vocab": {
   "layers": [
@@ -28519,6 +28521,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "spring_autumn",
    "scale_tier": "operational"
+  },
+  "hangzhou": {
+   "key": "hangzhou",
+   "title": "杭州（西湖·临安·吴越）",
+   "dossier_label": "杭州",
+   "subtitle": "江南运河南端 · 西湖十景 · 南宋行在 · 吴越保境",
+   "kind": "county",
+   "region": "jiangnan",
+   "page": "county.html?scene=hangzhou",
+   "vocab_pack": "hangzhou",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28979,7 +29003,8 @@ window.SANDBOX_DATA = {
   "yixian": "slices/yixian.js",
   "fenghuang": "slices/fenghuang.js",
   "chaozhou": "slices/chaozhou.js",
-  "qufu": "slices/qufu.js"
+  "qufu": "slices/qufu.js",
+  "hangzhou": "slices/hangzhou.js"
  },
  "corridors": [
   {

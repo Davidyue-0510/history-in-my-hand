@@ -2783,6 +2783,57 @@ window.SANDBOX_LEADS = {
    "_src_line": 9
   },
   {
+   "id": "HZ_G01",
+   "scene": "hangzhou",
+   "subject": "place:west_lake",
+   "title": "西湖历代疏浚的具体工程量、淤泥量与白堤苏堤堤岸的精确年代数据，公开有限。",
+   "missing": "水利工程史 / 历史地理 / 考古测绘",
+   "where": "西湖历代疏浚的工程量、淤泥方量与白堤苏堤堤岸年代",
+   "skills": [
+    "水利工程史",
+    "历史地理",
+    "考古测绘"
+   ],
+   "accept": "若有疏浚档案、古地图或堤岸测年，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "HZ_G02",
+   "scene": "hangzhou",
+   "subject": "place:lin_an_city",
+   "title": "南宋临安城坊巷布局、御街与皇城遗址的精确 GIS 空间数据，公开不足。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "南宋临安城坊巷、御街、皇城遗址的考古发掘与 GIS 矢量化数据",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有临安城遗址数字化或文物普查数据，可补制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "HZ_G03",
+   "scene": "hangzhou",
+   "subject": "place:qiantang_river",
+   "title": "吴越罗城范围与钱塘江海塘的精确走向、工程做法数据，公开不足。",
+   "missing": "历史地理 / 水利工程史 / GIS",
+   "where": "吴越罗城范围、钱塘江海塘的精确走向与工程做法",
+   "skills": [
+    "历史地理",
+    "水利工程史",
+    "GIS"
+   ],
+   "accept": "若有罗城勘探或海塘调查资料，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "HEB_018",
    "scene": "hebei_kailuan_llm",
    "subject": "event:ev_hebei_kailuan_llm_02",

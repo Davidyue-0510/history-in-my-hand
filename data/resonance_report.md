@@ -145,6 +145,7 @@
 | han_tihuajing_llm | 14 | 2 | **0.000** | event:ev_han_tihuajing_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 3 |
 | han_weihuo_llm | 17 | 3 | **0.000** | event:ev_han_weihuo_01（0.000） | gap 2 / inference 4 / record 10 / scholarship 1 |
 | han_wudi_ruxue | 13 | 0 | **0.000** | —（0.000） | gap 1 / inference 5 / record 2 / scholarship 5 |
+| hangzhou | 17 | 3 | **0.000** | event:ev_hangzhou_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | hebei_kailuan_llm | 18 | 2 | **0.000** | event:ev_hebei_kailuan_llm_01（0.000） | gap 1 / inference 1 / record 14 / scholarship 2 |
 | hebei_shanhaiguan | 14 | 1 | **0.000** | event:ev_hebei_shanhaiguan_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | hebei_yanzhao_wenhua_llm | 13 | 1 | **0.000** | event:ev_hebei_yanzhao_wenhua_llm_02（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
@@ -788,6 +789,9 @@
 | event:ev_han_weihuo_01 | han_weihuo_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_han_weihuo_02 | han_weihuo_llm | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_han_weihuo_03 | han_weihuo_llm | **0.000** | 0/3 | 0.25 | 0.00 | 5 | 0 / 0 / 0 / 0 |
+| event:ev_hangzhou_01 | hangzhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_hangzhou_02 | hangzhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_hangzhou_03 | hangzhou | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_hebei_kailuan_llm_01 | hebei_kailuan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_hebei_kailuan_llm_02 | hebei_kailuan_llm | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |
 | event:ev_hebei_shanhaiguan_01 | hebei_shanhaiguan | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |

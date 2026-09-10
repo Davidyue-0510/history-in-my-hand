@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_hangzhou_01",
+      "year": 610,
+      "era": "隋大业六年",
+      "kind": "工程",
+      "title": "隋凿江南河·杭州为运河南端",
+      "place": "grand_canal_hz",
+      "text": "隋大业六年（610）凿江南河，自京口至余杭（今杭州），广十余丈通漕运，杭州由此为南北大运河江南端，运河—海港城市崛起。",
+      "subject": "event:ev_hangzhou_01"
+    },
+    {
+      "id": "ev_hangzhou_02",
+      "year": 907,
+      "era": "唐天祐四年（吴越武肃王元年）",
+      "kind": "建制",
+      "title": "钱镠建吴越国·定都杭州",
+      "place": "lin_an_city",
+      "text": "907年钱镠建吴越国、定都杭州，缮罗城、筑江海塘，行「保境安民」之策，吴越为五代乱世乐土，杭州文教奠基。",
+      "subject": "event:ev_hangzhou_02"
+    },
+    {
+      "id": "ev_hangzhou_03",
+      "year": 1138,
+      "era": "南宋绍兴八年",
+      "kind": "定都",
+      "title": "南宋定都临安·西湖十景定型",
+      "place": "lin_an_city",
+      "text": "南宋建炎三年（1129）升杭州为临安府，绍兴八年（1138）定都，称行在；西湖人文极盛，苏堤春晓等西湖十景于南宋定型，临安为行在百余年。",
+      "subject": "event:ev_hangzhou_03"
+    }
+  ]
+}
