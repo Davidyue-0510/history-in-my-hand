@@ -360,8 +360,9 @@
       });
       var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
       (src.rivers || []).forEach(function (f) {
-        el('path', { d: geomPath(f.g), 'stroke-width': 1.4 }, gRiv);
-        if (f.n) { var r = geomLabelXY(f.g); if (r) { var t = el('text', { x: r[0] + 4, y: r[1] - 3, class: 'river-label' }, gBase); t.textContent = f.n; } }
+        // v0.226b：approx 水系诚实标注——虚线 + 标签加「（约）」，与 county.js 同源一致。
+        el('path', { d: geomPath(f.g), 'stroke-width': 1.4, 'stroke-dasharray': f.approx ? '5 4' : null }, gRiv);
+        if (f.n) { var r = geomLabelXY(f.g); if (r) { var t = el('text', { x: r[0] + 4, y: r[1] - 3, class: 'river-label' }, gBase); t.textContent = f.n + (f.approx ? '（约）' : ''); } }
       });
       if (viewFit === 'liaodong' && BM.wall && BM.wall.path && BM.wall.path.length > 1) {
         var pts = BM.wall.path.map(function (p) { return [pX(p[0], 1000), pY(p[1], 800)]; });
