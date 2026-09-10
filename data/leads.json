@@ -4501,6 +4501,57 @@
    "_src_line": 17
   },
   {
+   "id": "LH_G01",
+   "scene": "lhasa",
+   "subject": "place:potala",
+   "title": "松赞干布所建红山宫的原始城垣范围、宫殿形制与吐蕃时期地层考古资料公开有限。",
+   "missing": "吐蕃考古 / 建筑史 / 藏式营造",
+   "where": "布达拉宫红山宫早期建筑基址、吐蕃时期地层与营造工艺考古",
+   "skills": [
+    "吐蕃考古",
+    "建筑史",
+    "藏式营造"
+   ],
+   "accept": "若有松赞干布时期红山宫基址或地层报告，可补技术(2)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "LH_G02",
+   "scene": "lhasa",
+   "subject": "place:jokhang",
+   "title": "大昭寺始建的确切年份、唐代以前地层与释迦殿早期营造工艺的考古资料公开有限。",
+   "missing": "佛教考古 / 建筑史 / 吐蕃史",
+   "where": "大昭寺始建确切年份、唐代以前地层与释迦殿早期营造考古",
+   "skills": [
+    "佛教考古",
+    "建筑史",
+    "吐蕃史"
+   ],
+   "accept": "若有始建年份碑铭或早期地层报告，可补地理(1)/技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "LH_G03",
+   "scene": "lhasa",
+   "subject": "place:yarlung_tsangpo",
+   "title": "吐蕃时期拉萨（逻娑）聚落的具体范围、人口规模与族群构成，公开资料有限。",
+   "missing": "历史人口 / 吐蕃史 / 考古学",
+   "where": "吐蕃时期拉萨（逻娑）聚落范围、人口与族群构成考古",
+   "skills": [
+    "历史人口",
+    "吐蕃史",
+    "考古学"
+   ],
+   "accept": "若有聚落面积测绘或人口估算，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "LI__012",
    "scene": "li_shizhen_llm",
    "subject": "event:ev_li_shizhen_llm_01",

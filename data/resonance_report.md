@@ -220,6 +220,7 @@
 | keju | 17 | 3 | **0.000** | event:kj_1905（0.000） | gap 2 / inference 2 / record 10 / scholarship 3 |
 | kunyang | 19 | 3 | **0.000** | event:ky_jz（0.000） | gap 2 / inference 1 / record 10 / scholarship 6 |
 | langzhong | 17 | 3 | **0.000** | event:ev_langzhong_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
+| lhasa | 17 | 3 | **0.000** | event:ev_lhasa_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | li_shizhen_llm | 13 | 4 | **0.000** | event:ev_li_shizhen_llm_01（0.000） | gap 1 / inference 2 / record 9 / scholarship 1 |
 | liangshui | 15 | 2 | **0.000** | event:ls_780（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
 | liangzhou_meeting_llm | 13 | 3 | **0.000** | event:ev_liangzhou_meeting_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
@@ -932,6 +933,9 @@
 | event:ev_langzhong_01 | langzhong | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_langzhong_02 | langzhong | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_langzhong_03 | langzhong | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lhasa_01 | lhasa | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lhasa_02 | lhasa | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_lhasa_03 | lhasa | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_li_shizhen_llm_01 | li_shizhen_llm | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:ev_li_shizhen_llm_02 | li_shizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_li_shizhen_llm_03 | li_shizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

@@ -1,8 +1,8 @@
 {
-  "scenes_total": 469,
-  "historical": 460,
+  "scenes_total": 470,
+  "historical": 461,
   "fictional": 9,
-  "assertions_total": 6951,
+  "assertions_total": 6968,
   "sources_total": 471,
   "factions_total": 9,
   "vocab_packs": [
@@ -149,6 +149,7 @@
     "jiupin_zhongzheng_llm",
     "kanerjing_llm",
     "langzhong",
+    "lhasa",
     "li_shizhen_llm",
     "liangzhou_meeting_llm",
     "lingqu_llm",
@@ -334,7 +335,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 654,
+  "leads_total": 657,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3669,6 +3670,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "lhasa",
+      "title": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4140,6 +4148,7 @@
     "wuyishan": "武夷山（丹霞·朱子理学·红茶）",
     "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）",
     "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
-    "turpan": "吐鲁番（高昌国·交河故城·坎儿井）"
+    "turpan": "吐鲁番（高昌国·交河故城·坎儿井）",
+    "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）"
   }
 }

@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "lhasa_city",
+      "to": "potala",
+      "relation": "城北红山",
+      "note": "布达拉宫位于拉萨城北红山（玛布日）之上，与拉萨城区共同构成吐蕃—格鲁派政教中心。"
+    },
+    {
+      "from": "lhasa_city",
+      "to": "jokhang",
+      "relation": "城心八廓",
+      "note": "大昭寺位于拉萨城心，周环八廓街，是汉藏尼泊尔商旅与朝圣者的交汇节点。"
+    },
+    {
+      "from": "lhasa_river",
+      "to": "lhasa_city",
+      "relation": "穿城而过",
+      "note": "拉萨河（吉曲）纵贯拉萨河谷，为城市、农业与人口提供水源与交通廊道。"
+    },
+    {
+      "from": "lhasa_city",
+      "to": "yarlung_tsangpo",
+      "relation": "南临约25公里",
+      "note": "拉萨城区南临雅鲁藏布江，河谷是青藏高原南北交通与唐蕃—青藏走廊的枢纽节点。"
+    },
+    {
+      "from": "norbulingka",
+      "to": "potala",
+      "relation": "西南约2公里",
+      "note": "罗布林卡夏宫位于布达拉宫西南，与布宫共同构成达赖的冬夏政治—宗教空间。"
+    }
+  ]
+}

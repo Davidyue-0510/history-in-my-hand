@@ -672,7 +672,8 @@
   "wuyishan",
   "yinchuan",
   "xining",
-  "turpan"
+  "turpan",
+  "lhasa"
  ],
  "scenes": {
   "langzhong": {
@@ -37598,6 +37599,90 @@
      ],
      "note": "天山南麓+丝路北道+交河高昌→吐鲁番控西域门户",
      "layer": "inference"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "lhasa": {
+   "kind": "county",
+   "region": "xibei",
+   "province": "xizang",
+   "title": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
+   "dossier_label": "拉萨",
+   "subtitle": "逻娑 · 布达拉宫 · 大昭寺 · 唐蕃会盟碑",
+   "primary_place": "lhasa_city",
+   "dossier_event": "event:ev_lhasa_01",
+   "vocab_pack": "lhasa",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "拉萨古称逻娑，位于青藏高原中部拉萨河谷，是吐蕃王朝都城、唐蕃古道终点与藏传佛教格鲁派根本道场所在。约633年松赞干布迁都逻娑；641年文成公主经青海道入藏和亲，开启唐蕃长期交往；约647年始建大昭寺；822年唐蕃长庆会盟，汉藏双语碑立于大昭寺前。清顺治二年（1645）五世达赖喇嘛重建布达拉宫，拉萨遂成格鲁派政教中心。雅鲁藏布江—拉萨河谷是青藏高原南北交通与唐蕃—青藏走廊枢纽，罗布林卡夏宫体现藏汉园林技术交融。拉萨集吐蕃王统、唐蕃盟约与格鲁派圣地于一体，是青藏高原文明交汇的节点。",
+   "parties_note": "史料以汉书、旧唐书、宋史等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_lhasa_01": "文成入藏",
+    "event:ev_lhasa_02": "大昭寺始建",
+    "event:ev_lhasa_03": "布宫重建",
+    "place:lhasa_city": "逻娑",
+    "person:ngawang_lobsang_gyatso": "五世达赖"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "吐蕃王朝+唐蕃会盟+格鲁派政教合一→拉萨多元政治与宗教秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "拉萨河谷灌溉+茶马互市+布宫营造+汉藏商旅→拉萨物资与交通基础"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "吐蕃臣民+汉地工匠+尼泊尔商僧+朝圣信众→多族群高原社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "雅鲁藏布江—拉萨河谷+唐蕃—青藏走廊+布宫政教→拉萨控青藏高原中心"
     }
    },
    "dims": [
