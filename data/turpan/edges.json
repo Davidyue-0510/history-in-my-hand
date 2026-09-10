@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "jiaohe_ruins",
+      "to": "turpan_city",
+      "relation": "高昌西北约10公里",
+      "note": "交河故城位于高昌故城西北、雅尔湖河心台地上，唐初曾同为西州军政中心。"
+    },
+    {
+      "from": "kanerjing",
+      "to": "turpan_city",
+      "relation": "灌溉高昌绿洲",
+      "note": "坎儿井网络分布于吐鲁番盆地，将天山雪水引入高昌城周边绿洲，支撑农业与商旅。"
+    },
+    {
+      "from": "flaming_mountains",
+      "to": "turpan_city",
+      "relation": "北屏",
+      "note": "火焰山位于高昌故城以北，是天山南麓余脉，也是吐鲁番盆地北缘的显著地标。"
+    },
+    {
+      "from": "tianshan_east",
+      "to": "turpan_city",
+      "relation": "北侧水源",
+      "note": "天山东段位于吐鲁番盆地以北，其冰川融水为坎儿井与绿洲提供水源。"
+    },
+    {
+      "from": "ayding_lake",
+      "to": "turpan_city",
+      "relation": "南侧约30公里",
+      "note": "艾丁湖位于吐鲁番盆地南端，是中国陆地最低点，其低洼地形加剧了盆地干热气候。"
+    }
+  ]
+}

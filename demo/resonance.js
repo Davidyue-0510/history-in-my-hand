@@ -382,6 +382,7 @@ window.SANDBOX_RESONANCE = {
    "tianjing",
    "tieling",
    "tumu",
+   "turpan",
    "wangmang",
    "wangmang_reform_llm",
    "wangyangming",
@@ -7612,6 +7613,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 8,
    "avg_resonance": 0.0,
    "best_event": "event:tm_capture",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "turpan",
+   "name": "turpan",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "五代·官修": 6,
+    "学界": 9,
+    "汉·后朝官修": 2
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_turpan_01",
    "best_resonance": 0.0
   },
   {

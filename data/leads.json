@@ -8266,6 +8266,57 @@
    "_src_line": 15
   },
   {
+   "id": "TP_G01",
+   "scene": "turpan",
+   "subject": "place:turpan_city",
+   "title": "高昌故城城墙、寺院与王宫遗址已有考古成果，但晚期街区布局、普通民居形制及手工业作坊区资料公开有限。",
+   "missing": "城市考古 / 丝绸之路考古 / 唐代史",
+   "where": "高昌故城晚期地层、民居基址与手工业作坊考古报告",
+   "skills": [
+    "城市考古",
+    "丝绸之路考古",
+    "唐代史"
+   ],
+   "accept": "若有街区测绘或作坊发掘报告，可补技术(2)/社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "TP_G02",
+   "scene": "turpan",
+   "subject": "place:jiaohe_ruins",
+   "title": "交河故城台地形态与城墙遗迹清晰，但官署区、佛教寺院内部空间布局及建筑分期资料公开有限。",
+   "missing": "建筑考古 / 西域史 / 佛教考古",
+   "where": "交河故城中央大寺、官署区与住宅区分期发掘",
+   "skills": [
+    "建筑考古",
+    "西域史",
+    "佛教考古"
+   ],
+   "accept": "若有寺院或官署基址测绘与分期报告，可补技术(2)/制度(3)/思想(5)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "TP_G03",
+   "scene": "turpan",
+   "subject": "place:kanerjing",
+   "title": "坎儿井在吐鲁番大规模出现的具体年代、技术是否源自中亚或本土创新，以及历史分布数量等量化数据公开有限。",
+   "missing": "水利史 / 技术史 / 中亚史",
+   "where": "吐鲁番古代坎儿井始建年代测定、技术比较与历史分布档案",
+   "skills": [
+    "水利史",
+    "技术史",
+    "中亚史"
+   ],
+   "accept": "若有碳十四测年、技术传播比较或清代水利档案，可补技术(2)/地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "WANGMANGG01",
    "scene": "wangmang",
    "subject": "event:wm_9",

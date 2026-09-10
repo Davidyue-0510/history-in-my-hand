@@ -671,7 +671,8 @@
   "chengde",
   "wuyishan",
   "yinchuan",
-  "xining"
+  "xining",
+  "turpan"
  ],
  "scenes": {
   "langzhong": {
@@ -37513,6 +37514,90 @@
      ],
      "layer": "inference",
      "note": "湟水谷地+唐蕃古道+青海湖+西海郡→西宁控青藏高原东北门户"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "turpan": {
+   "kind": "county",
+   "region": "xibei",
+   "province": "xinjiang",
+   "title": "吐鲁番（高昌国·交河故城·坎儿井）",
+   "dossier_label": "吐鲁番",
+   "subtitle": "高昌故城 · 交河故城 · 坎儿井 · 丝路绿洲",
+   "primary_place": "turpan_city",
+   "dossier_event": "event:ev_turpan_01",
+   "vocab_pack": "turpan",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "吐鲁番位于新疆天山东段南麓、吐鲁番盆地中心，是丝绸之路北道上的著名绿洲。汉代为车师前国地，交河城为其都城；公元502年麹氏高昌立国，以高昌城为都，历九世一百四十余年。640年唐灭高昌，置西州，设安西都护府于交河城。明清时期，当地逐步形成庞大的坎儿井地下灌溉网络，支撑了极端干旱环境下的绿洲农业。火焰山、艾丁湖（中国陆地最低点）与天山融水共同构成了吐鲁番独特的自然与人文景观。",
+   "parties_note": "史料以汉书、旧唐书等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_turpan_01": "唐灭高昌",
+    "event:ev_turpan_02": "麹氏立国",
+    "event:ev_turpan_03": "坎儿井成网",
+    "place:turpan_city": "高昌故城",
+    "person:xuanzang": "玄奘"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "麹氏高昌+唐西州+安西都护府+佛教传播→吐鲁番绿洲政治与宗教秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "坎儿井水利+天山融水+葡萄园艺+丝路商旅→吐鲁番物资与交通枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "车师/高昌居民+汉军屯田+僧团商队+玄奘行旅→多族群绿洲社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "note": "天山南麓+丝路北道+交河高昌→吐鲁番控西域门户",
+     "layer": "inference"
     }
    },
    "dims": [

@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_turpan_01",
+      "year": 640,
+      "era": "唐贞观十四年",
+      "kind": "置州",
+      "title": "唐灭高昌，置西州",
+      "place": "turpan_city",
+      "text": "640年，唐太宗派侯君集率军攻灭麹氏高昌，于其地置西州，并设安西都护府于交河城，吐鲁番正式纳入唐朝直接管辖。",
+      "subject": "event:ev_turpan_01"
+    },
+    {
+      "id": "ev_turpan_02",
+      "year": 502,
+      "era": "北魏景明三年",
+      "kind": "建国",
+      "title": "麹氏高昌立国",
+      "place": "turpan_city",
+      "text": "约公元502年，金城麹氏自立为王，建立麹氏高昌政权，以高昌城为都，历九世一百四十余年，是吐鲁番盆地最重要的本土政权。",
+      "subject": "event:ev_turpan_02"
+    },
+    {
+      "id": "ev_turpan_03",
+      "year": 1700,
+      "era": "清康熙前后",
+      "kind": "水利",
+      "title": "吐鲁番坎儿井水利网络形成",
+      "place": "kanerjing",
+      "text": "明清时期，吐鲁番盆地在原有引水基础上逐步形成庞大的坎儿井地下灌溉网络，支撑了绿洲农业与人口扩张。",
+      "subject": "event:ev_turpan_03"
+    }
+  ]
+}

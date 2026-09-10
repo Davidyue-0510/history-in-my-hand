@@ -1,8 +1,8 @@
 {
-  "scenes_total": 468,
-  "historical": 459,
+  "scenes_total": 469,
+  "historical": 460,
   "fictional": 9,
-  "assertions_total": 6934,
+  "assertions_total": 6951,
   "sources_total": 471,
   "factions_total": 9,
   "vocab_packs": [
@@ -275,6 +275,7 @@
     "tianjin_tianjinwei",
     "tianjin_xiaozhan_llm",
     "tianjin_yanfu_llm",
+    "turpan",
     "wangmang_reform_llm",
     "wangyangming",
     "warring_states_shangyang",
@@ -333,7 +334,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 651,
+  "leads_total": 654,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3661,6 +3662,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "turpan",
+      "title": "吐鲁番（高昌国·交河故城·坎儿井）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4131,6 +4139,7 @@
     "chengde": "承德（避暑山庄·外八庙·木兰秋狝）",
     "wuyishan": "武夷山（丹霞·朱子理学·红茶）",
     "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）",
-    "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）"
+    "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
+    "turpan": "吐鲁番（高昌国·交河故城·坎儿井）"
   }
 }

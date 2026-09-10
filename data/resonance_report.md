@@ -383,6 +383,7 @@
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 32 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / inference 1 / record 23 / scholarship 6 |
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
+| turpan | 17 | 3 | **0.000** | event:ev_turpan_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | wangmang_reform_llm | 100 | 3 | **0.000** | event:ev_wangmang_reform_llm_01（0.000） | inference 1 / record 88 / scholarship 11 |
 | wangyangming | 19 | 3 | **0.000** | event:ev_wangyangming_01（0.000） | gap 1 / inference 5 / record 10 / scholarship 3 |
@@ -1255,6 +1256,9 @@
 | event:ev_tianjin_xiaozhan_llm_01 | tianjin_xiaozhan_llm | **0.000** | 0/3 | 0.00 | 0.20 | 10 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_yanfu_llm_01 | tianjin_yanfu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_tianjin_yanfu_llm_02 | tianjin_yanfu_llm | **0.000** | 0/3 | 0.00 | 0.09 | 11 | 0 / 0 / 0 / 0 |
+| event:ev_turpan_01 | turpan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_turpan_02 | turpan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_turpan_03 | turpan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_wangmang_reform_llm_01 | wangmang_reform_llm | **0.000** | 0/3 | 0.33 | 0.00 | 27 | 0 / 0 / 0 / 0 |
 | event:ev_wangmang_reform_llm_02 | wangmang_reform_llm | **0.000** | 0/3 | 0.60 | 0.00 | 26 | 0 / 0 / 0 / 0 |
 | event:ev_wangmang_reform_llm_03 | wangmang_reform_llm | **0.000** | 0/3 | 0.50 | 0.00 | 47 | 0 / 0 / 0 / 0 |

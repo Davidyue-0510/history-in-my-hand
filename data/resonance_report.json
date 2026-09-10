@@ -380,6 +380,7 @@
       "tianjing",
       "tieling",
       "tumu",
+      "turpan",
       "wangmang",
       "wangmang_reform_llm",
       "wangyangming",
@@ -7610,6 +7611,27 @@
       "event_count": 8,
       "avg_resonance": 0.0,
       "best_event": "event:tm_capture",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "turpan",
+      "name": "turpan",
+      "total": 17,
+      "layers": {
+        "record": 6,
+        "scholarship": 3,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "五代·官修": 6,
+        "学界": 9,
+        "汉·后朝官修": 2
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_turpan_01",
       "best_resonance": 0.0
     },
     {
@@ -32694,6 +32716,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.091,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_turpan_01",
+      "name": "event:ev_turpan_01",
+      "scenes": [
+        "turpan"
+      ],
+      "scene_names": [
+        "turpan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_turpan_02",
+      "name": "event:ev_turpan_02",
+      "scenes": [
+        "turpan"
+      ],
+      "scene_names": [
+        "turpan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_turpan_03",
+      "name": "event:ev_turpan_03",
+      "scenes": [
+        "turpan"
+      ],
+      "scene_names": [
+        "turpan"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

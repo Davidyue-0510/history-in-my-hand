@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 468 个切片
+// 权威数据源：data/scenes.json 注册的 469 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 468 个切片",
+  "slice": "multi-scene · 469 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -279,6 +279,7 @@ window.SANDBOX_DATA = {
    "tianjin_tianjinwei",
    "tianjin_xiaozhan_llm",
    "tianjin_yanfu_llm",
+   "turpan",
    "wangmang_reform_llm",
    "wangyangming",
    "warring_states_shangyang",
@@ -1055,7 +1056,8 @@ window.SANDBOX_DATA = {
   "chengde",
   "wuyishan",
   "yinchuan",
-  "xining"
+  "xining",
+  "turpan"
  ],
  "vocab": {
   "layers": [
@@ -28759,6 +28761,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational"
+  },
+  "turpan": {
+   "key": "turpan",
+   "title": "吐鲁番（高昌国·交河故城·坎儿井）",
+   "dossier_label": "吐鲁番",
+   "subtitle": "高昌故城 · 交河故城 · 坎儿井 · 丝路绿洲",
+   "kind": "county",
+   "region": "xibei",
+   "page": "county.html?scene=turpan",
+   "vocab_pack": "turpan",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -29229,7 +29253,8 @@ window.SANDBOX_DATA = {
   "chengde": "slices/chengde.js",
   "wuyishan": "slices/wuyishan.js",
   "yinchuan": "slices/yinchuan.js",
-  "xining": "slices/xining.js"
+  "xining": "slices/xining.js",
+  "turpan": "slices/turpan.js"
  },
  "corridors": [
   {
