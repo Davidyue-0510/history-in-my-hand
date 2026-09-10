@@ -404,6 +404,83 @@ def _clip_all(bbox, nd, stride, with_admin1=True):
     return out
 
 
+def emit_coarse_rivers_chunk(out_path):
+    """v0.231：把精选主要河流+关键湖泊写成独立懒加载块 demo/geo/china_coarse_rivers.js
+    （window.SANDBOX_RIVERS），与地形共享块同源思路。壳底图不再内嵌河/湖，守住
+    <500KB 分片契约；概览场景经 county.js 回退到 SANDBOX_RIVERS 显示水系。
+
+    因是独立文件、不入壳，可放心保留较高精度（stride 小、3 位小数），
+    全国概览下河流清晰又不撑爆壳。NE 50m 近似，诚实标注 approx。"""
+    import os as _os
+    p = _os.path.join(NE_DIR, "..", "china_coarse_rivers.json")
+    if not _os.path.exists(p):
+        return
+    doc = json.load(open(p, encoding="utf-8"))
+    out = {}
+    for key in ("rivers", "lakes"):
+        feats = doc.get(key, []) or []
+        if not feats:
+            continue
+        # 独立块体积无约束：河 stride=3、湖 stride=4，坐标 3 位小数（0.001°≈111m）。
+        s = 3 if key == "rivers" else 4
+        out[key] = [
+            {"g": _round_geom(_decimate_aggressive(f["g"], s), 3),
+             "n": f.get("n"), "approx": f.get("approx", True)}
+            for f in feats
+        ]
+    _os.makedirs(_os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        fh.write("window.SANDBOX_RIVERS = ")
+        json.dump(out, fh, ensure_ascii=False)
+        fh.write(";\n")
+
+
+def _decimate_aggressive(g, s):
+    """强制抽稀（无视短线段：NE 河流常被切成很多短 MultiLineString 段，
+    普通 _decimate_geom 的 len<=s 短路会让它们原样保留，体积降不下来）。
+    用于 shell 概览河流/湖泊——全国尺度下肉眼无损。"""
+    if not s or s <= 1 or not g:
+        return g
+    t = g["type"]
+    c = g["coordinates"]
+
+    def _line(l):
+        if len(l) < 2:
+            return l
+        d = l[::s]
+        if t == "Polygon" and d and d[0] != l[0]:
+            d = d + [l[0]]
+        return d
+
+    if t == "LineString":
+        return {"type": t, "coordinates": _line(c)}
+    if t == "Polygon":
+        return {"type": t, "coordinates": [_line(r) for r in c]}
+    if t in ("MultiLineString", "MultiPolygon"):
+        if t == "MultiLineString":
+            return {"type": t, "coordinates": [_line(l) for l in c]}
+        return {"type": t, "coordinates": [[_line(r) for r in p] for p in c]}
+    return g
+
+
+def _round_geom(g, nd):
+    """坐标四舍五入到 nd 位小数（全国概览尺度足够），根除长浮点体积膨胀。
+    结构无关：递归下降到「坐标对列表」即四舍五入，兼容 Polygon/MultiPolygon/
+    LineString/MultiLineString 任意嵌套（含个别湖泊坐标未包外层环数组的情况）。"""
+    def _r(p):
+        return [round(p[0], nd), round(p[1], nd)] + list(p[2:])
+    def _walk(node):
+        if isinstance(node, list) and node and isinstance(node[0], list):
+            head = node[0]
+            if (len(head) >= 2 and isinstance(head[0], (int, float))
+                    and not isinstance(head[0], bool)):
+                # 这是「坐标对列表」：[(lon,lat), ...]
+                return [_r(p) for p in node]
+            return [_walk(x) for x in node]
+        return node
+    return {"type": g["type"], "coordinates": _walk(g["coordinates"])}
+
+
 def build_basemap(bundle, shell=False):
     """返回注入用的 basemap 字典。
 
@@ -414,6 +491,8 @@ def build_basemap(bundle, shell=False):
     """
     if shell:
         # 总览是全国尺度：nd=2 + stride=2，体积大砍以守「不再巨石」闸门（壳文件 < 500KB）。
+        # v0.231：河/湖不再内嵌壳（会撑爆 500KB），改由独立懒加载块 demo/geo/china_coarse_rivers.js
+        # （window.SANDBOX_RIVERS）供给，概览场景经 county.js 回退显示——单文件、零壳成本。
         emb = _clip_all(CHINA_BBOX, nd=2, stride=2, with_admin1=False)
         emb["_bbox"] = [round(x, 3) for x in CHINA_BBOX]
         return emb

@@ -421,6 +421,11 @@
     // 优先用「场景级」basemap（含 admin1/rivers/lakes 全层，细节锐利）；
     // 壳级共享 basemap（SD.basemap，v0.38 中国裁剪版）只含 land/coastline，作回退。
     var BM = (D && D.basemap) ? D.basemap : (SD.basemap || {});
+    // v0.231：场景自带河/湖优先；概览场景回退到独立懒加载块 window.SANDBOX_RIVERS（不入壳守 500KB 契约）。
+    var supRivers = (BM.rivers && BM.rivers.length) ? BM.rivers
+      : (window.SANDBOX_RIVERS && window.SANDBOX_RIVERS.rivers) || [];
+    var supLakes = (BM.lakes && BM.lakes.length) ? BM.lakes
+      : (window.SANDBOX_RIVERS && window.SANDBOX_RIVERS.lakes) || [];
     if (BM && (BM.land || BM.coastline || BM.admin1 || BM.rivers || BM.lakes)) {
       // 陆地底色：仅在没有地形网格（或地形未绘制）时作兜底填充，避免与地形 canvas 的
       // 半透明 hillshade「同一陆地画两遍 / 海岸错位」。有地形时陆地色由地形层单一负责。
@@ -431,7 +436,7 @@
       }
       var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
         'vector-effect': 'non-scaling-stroke' }, gBase);
-      (BM.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+      supLakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
       (BM.coastline || []).forEach(function (f) {
         el('path', { d: geomPath(f.g), fill: 'none', stroke: '#7c9aa8', 'stroke-width': 1,
           'vector-effect': 'non-scaling-stroke' }, gBase);
@@ -445,7 +450,7 @@
       });
       var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
         'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
-      (BM.rivers || []).forEach(function (f) {
+      supRivers.forEach(function (f) {
         // v0.226c：approx 水系诚实标注，与 county.js / sim_mapcore.js 同源一致。
         el('path', { d: geomPath(f.g), 'stroke-width': 1.4, 'stroke-dasharray': f.approx ? '5 4' : null }, gRiv);
         if (f.n) { var r = geomLabelXY(f.g); if (r) {

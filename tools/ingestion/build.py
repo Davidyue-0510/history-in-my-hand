@@ -667,6 +667,8 @@ def main():
     # v0.38 起取代「手绘辽东江河」——之前 SD.rivers 来自 sarhu/places.json 的 6 条
     # 手画 path，太丑且只覆盖辽东；现统一用 NE 真实省界/河流/湖泊/海岸线。
     sd["basemap"] = BM.build_basemap({}, shell=True)
+    # v0.231：概览场景的精选主要河流+关键湖泊改为独立懒加载块（不入壳，守 500KB 分片契约）。
+    BM.emit_coarse_rivers_chunk(os.path.join(ROOT, "demo", "geo", "china_coarse_rivers.js"))
     # 辽东边墙（历史地理标注）保留为壳级共享资产，仅总览页（中国视角）使用。
     wall_path = os.path.join(ROOT, "data", "geo", "liaodong_wall.json")
     sd["wall"] = json.load(open(wall_path, encoding="utf-8")) if os.path.exists(wall_path) else None

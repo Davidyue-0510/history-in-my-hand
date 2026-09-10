@@ -423,13 +423,19 @@
     });
     // 2.5) 湖泊 + 河流（自然地理骨架；与战棋沙盘同源 NE 50m 矢量底图。
     //      DemTopo 栅格本身不含河流矢量，故在此叠加矢量层——概览场景也能显水系。
-    //      approx=true 的补充水系（如辽东 tributary）以虚线 + 「（约）」诚实标注精度。
+    //      场景自带河/湖（BM.rivers/lakes，逐场景裁剪高精）优先；概览场景回退到
+    //      独立懒加载块 window.SANDBOX_RIVERS（v0.231，全国精选主干，不入壳守 500KB 契约）。
+    //      approx=true 的补充水系以虚线 + 「（约）」诚实标注精度。
+    var supRivers = (BM.rivers && BM.rivers.length) ? BM.rivers
+      : (window.SANDBOX_RIVERS && window.SANDBOX_RIVERS.rivers) || [];
+    var supLakes = (BM.lakes && BM.lakes.length) ? BM.lakes
+      : (window.SANDBOX_RIVERS && window.SANDBOX_RIVERS.lakes) || [];
     var gLake = el('g', { fill: '#bcd8e6', stroke: '#9cc4d6', 'stroke-width': 0.5,
       'vector-effect': 'non-scaling-stroke', opacity: .82 }, gBase);
-    (BM.lakes || []).forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
+    supLakes.forEach(function (f) { el('path', { d: geomPath(f.g) }, gLake); });
     var gRiv = el('g', { fill: 'none', stroke: '#6f9fc0', 'stroke-linecap': 'round',
       'stroke-linejoin': 'round', 'vector-effect': 'non-scaling-stroke' }, gBase);
-    (BM.rivers || []).forEach(function (f) {
+    supRivers.forEach(function (f) {
       el('path', { d: geomPath(f.g), 'stroke-width': 1.4,
         'stroke-dasharray': f.approx ? '5 4' : null }, gRiv);
       if (f.n) {
