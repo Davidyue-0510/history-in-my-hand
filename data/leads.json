@@ -7294,6 +7294,57 @@
    "_src_line": 15
   },
   {
+   "id": "SZ_G01",
+   "scene": "suzhou",
+   "subject": "place:zhuozheng_garden",
+   "title": "拙政园等各园历代修缮、叠山用石种类与营造尺度的精确技术史数据，公开有限。",
+   "missing": "园林史 / 古建筑测绘 / 艺术史",
+   "where": "拙政园等各园历代修缮记、叠山用石与营造尺度",
+   "skills": [
+    "园林史",
+    "古建筑测绘",
+    "艺术史"
+   ],
+   "accept": "若有修缮档案、叠山勘察或古图，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "SZ_G02",
+   "scene": "suzhou",
+   "subject": "place:pingjiang",
+   "title": "平江府宋元街巷与水道走向的精确考古 GIS 数据，公开不足。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "平江府宋元街巷、水道走向的考古发掘与 GIS 矢量化数据",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有平江图数字化或街区勘探，可补制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "SZ_G03",
+   "scene": "suzhou",
+   "subject": "person:ji_cheng",
+   "title": "《园冶》所载营造实例与苏州现存园林的对应匠作记录、匠人世袭档案，公开有限。",
+   "missing": "园林史 / 工匠史 / 艺术史",
+   "where": "《园冶》实例与苏州现存园林对应的匠作记录、匠人世家档案",
+   "skills": [
+    "园林史",
+    "工匠史",
+    "艺术史"
+   ],
+   "accept": "若有匠作档案或营造世家整理，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "TAIPINGG01",
    "scene": "taiping",
    "subject": "event:tp_1851",

@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "suzhou_fuzhi",
+      "title": "苏州府志（园墅志）",
+      "party": "后世官修",
+      "distance_label": "明清屡修地方志，距园林与平江事数百年至千余年",
+      "stance_label": "地方志",
+      "compiler": "《苏州府志》及园墅专志（明清官修）",
+      "color": "#C0703A",
+      "period": "明清"
+    },
+    {
+      "id": "yuan_ye",
+      "title": "园冶",
+      "party": "明·私修",
+      "distance_label": "计成（明）自撰，记造园事为当时人记当时事",
+      "stance_label": "明人造园专著",
+      "compiler": "计成（明）",
+      "color": "#8E7CC3",
+      "period": "明"
+    },
+    {
+      "id": "wen_zhengming_ji",
+      "title": "文徵明集",
+      "party": "明·私修",
+      "distance_label": "文徵明（明）自撰及门人编，距吴门画派与园林图咏为当时人记当时事",
+      "stance_label": "明人文集",
+      "compiler": "文徵明（明）及门人",
+      "color": "#8E7CC3",
+      "period": "明"
+    },
+    {
+      "id": "fan_wen_zheng_ji",
+      "title": "范文正公文集",
+      "party": "宋·私修",
+      "distance_label": "范仲淹（宋）自撰，距义庄府学事为当时人记当时事",
+      "stance_label": "宋人文集",
+      "compiler": "范仲淹（宋）",
+      "color": "#9B7CC3",
+      "period": "宋"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "苏州古典园林与城市史综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

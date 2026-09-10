@@ -1,9 +1,9 @@
 {
-  "scenes_total": 459,
-  "historical": 450,
+  "scenes_total": 460,
+  "historical": 451,
   "fictional": 9,
-  "assertions_total": 6781,
-  "sources_total": 456,
+  "assertions_total": 6798,
+  "sources_total": 460,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -243,6 +243,7 @@
     "sui_yang_llm",
     "sushi_danzhou_llm",
     "susong_llm",
+    "suzhou",
     "taiwan_camphor_llm",
     "taiwan_dutch_llm",
     "taiwan_kekuan_llm",
@@ -324,7 +325,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 624,
+  "leads_total": 627,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3589,6 +3590,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "suzhou",
+      "title": "苏州（古典园林·平江·吴门）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4050,6 +4058,7 @@
     "fenghuang": "凤凰（湘西边城·苗土风情）",
     "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）",
     "qufu": "曲阜（孔子故里·儒源·三孔）",
-    "hangzhou": "杭州（西湖·临安·吴越）"
+    "hangzhou": "杭州（西湖·临安·吴越）",
+    "suzhou": "苏州（古典园林·平江·吴门）"
   }
 }

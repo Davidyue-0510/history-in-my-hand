@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "zhuozheng_garden", "to": "pingjiang", "kind": "near", "note": "拙政园在平江路东北，俱在古城东北隅"},
+    {"from": "liuyuan", "to": "pingjiang", "kind": "near", "note": "留园在阊门内，临古城西北"},
+    {"from": "huqiu", "to": "grand_canal_sz", "kind": "near", "note": "虎丘临运河、接阊门"},
+    {"from": "grand_canal_sz", "to": "pingjiang", "kind": "adjacent", "note": "运河穿城，平江水道与之相连"},
+    {"from": "taihu", "to": "grand_canal_sz", "kind": "adjacent", "note": "太湖水系入江南运河，济苏州漕运"}
+  ]
+}

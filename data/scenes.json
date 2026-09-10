@@ -662,7 +662,8 @@
   "fenghuang",
   "chaozhou",
   "qufu",
-  "hangzhou"
+  "hangzhou",
+  "suzhou"
  ],
  "scenes": {
   "langzhong": {
@@ -1417,6 +1418,90 @@
      ],
      "layer": "inference",
      "note": "钱塘江海港+运河终端+南宋定都事件→杭州控江南与海上丝路"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "suzhou": {
+   "kind": "county",
+   "region": "jiangnan",
+   "province": "jiangsu",
+   "title": "苏州（古典园林·平江·吴门）",
+   "dossier_label": "苏州",
+   "subtitle": "江南运河枢纽 · 古典园林 · 平江水城 · 吴门雅集",
+   "primary_place": "zhuozheng_garden",
+   "dossier_event": "event:ev_suzhou_03",
+   "vocab_pack": "suzhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "苏州位于江苏东南、太湖东北，隋凿江南运河（610）使苏州为运河南段枢纽、工商繁盛；南宋绍定二年（1229）刻《平江图》碑，水道街巷格局留存至今；明中叶以降江南经济重心稳固，士大夫营建私家园林成风，拙政园、留园等相继而成，苏州称「园林之城」。苏州古典园林1997年列入UNESCO（813）。",
+   "parties_note": "史料以苏州府志为本，园冶/文徵明集/范文正公文集为明宋私修，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_suzhou_01": "隋凿江南河",
+    "event:ev_suzhou_02": "平江图碑",
+    "event:ev_suzhou_03": "园林营建高潮",
+    "place:zhuozheng_garden": "拙政园",
+    "person:ji_cheng": "计成"
+   },
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "平江水城制度+吴门雅文化+义庄→苏州士人社会秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "江南运河+古典园林营造+工商市镇→苏州运河—工商复合枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "水乡市镇+士人雅集+义庄赡族→江南社会精细网络"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "太湖水网+运河终端+明清园林事件→苏州控江南经济文化重心"
     }
    },
    "dims": [

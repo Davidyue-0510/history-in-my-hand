@@ -343,6 +343,7 @@ window.SANDBOX_RESONANCE = {
    "suiyang",
    "sushi_danzhou_llm",
    "susong_llm",
+   "suzhou",
    "taiping",
    "taiwan_camphor_llm",
    "taiwan_dutch_llm",
@@ -6842,6 +6843,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_susong_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "suzhou",
+   "name": "suzhou",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 5,
+    "明·私修": 3,
+    "宋·私修": 1,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_suzhou_01",
    "best_resonance": 0.0
   },
   {

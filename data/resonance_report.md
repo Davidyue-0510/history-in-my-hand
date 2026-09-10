@@ -344,6 +344,7 @@
 | suiyang | 17 | 3 | **0.000** | event:sy_jz（0.000） | gap 2 / inference 1 / record 9 / scholarship 5 |
 | sushi_danzhou_llm | 13 | 3 | **0.000** | event:ev_sushi_danzhou_llm_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 1 |
 | susong_llm | 16 | 2 | **0.000** | event:ev_susong_llm_01（0.000） | gap 1 / inference 2 / record 12 / scholarship 1 |
+| suzhou | 17 | 3 | **0.000** | event:ev_suzhou_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | taiping | 15 | 3 | **0.000** | event:tp_1851（0.000） | gap 1 / inference 1 / record 9 / scholarship 4 |
 | taiwan_camphor_llm | 15 | 3 | **0.000** | event:ev_taiwan_camphor_llm_01（0.000） | gap 2 / inference 1 / record 11 / scholarship 1 |
 | taiwan_dutch_llm | 14 | 3 | **0.000** | event:ev_taiwan_dutch_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
@@ -1166,6 +1167,9 @@
 | event:ev_sushi_danzhou_llm_03 | sushi_danzhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_susong_llm_01 | susong_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_susong_llm_02 | susong_llm | **0.000** | 0/3 | 0.00 | 0.07 | 14 | 0 / 0 / 0 / 0 |
+| event:ev_suzhou_01 | suzhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_suzhou_02 | suzhou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_suzhou_03 | suzhou | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_camphor_llm_01 | taiwan_camphor_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_camphor_llm_02 | taiwan_camphor_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_taiwan_camphor_llm_03 | taiwan_camphor_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

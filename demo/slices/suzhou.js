@@ -1,0 +1,798 @@
+// 本文件由 tools/build.py 自动生成（切片 suzhou），请勿手工编辑。
+// 加载后把本切片 bundle 挂到 window.SANDBOX_SLICES["suzhou"]。
+(window.SANDBOX_SLICES = window.SANDBOX_SLICES || {});
+window.SANDBOX_SLICES["suzhou"] = {
+ "meta": {
+  "kind": "county",
+  "region": "jiangnan",
+  "province": "jiangsu",
+  "title": "苏州（古典园林·平江·吴门）",
+  "dossier_label": "苏州",
+  "subtitle": "江南运河枢纽 · 古典园林 · 平江水城 · 吴门雅集",
+  "primary_place": "zhuozheng_garden",
+  "dossier_event": "event:ev_suzhou_03",
+  "vocab_pack": "suzhou",
+  "terrain_grid": "china_coarse",
+  "lead": "苏州位于江苏东南、太湖东北，隋凿江南运河（610）使苏州为运河南段枢纽、工商繁盛；南宋绍定二年（1229）刻《平江图》碑，水道街巷格局留存至今；明中叶以降江南经济重心稳固，士大夫营建私家园林成风，拙政园、留园等相继而成，苏州称「园林之城」。苏州古典园林1997年列入UNESCO（813）。",
+  "parties_note": "史料以苏州府志为本，园冶/文徵明集/范文正公文集为明宋私修，现代考订作补充；系统不裁决，只并列。",
+  "subject_names": {
+   "event:ev_suzhou_01": "隋凿江南河",
+   "event:ev_suzhou_02": "平江图碑",
+   "event:ev_suzhou_03": "园林营建高潮",
+   "place:zhuozheng_garden": "拙政园",
+   "person:ji_cheng": "计成"
+  },
+  "epoch": "ming_qing",
+  "scale_tier": "operational",
+  "strategic": {
+   "political_cohesion": {
+    "from": [
+     "strategic",
+     "doctrine"
+    ],
+    "from_dims": [
+     3,
+     5
+    ],
+    "layer": "inference",
+    "note": "平江水城制度+吴门雅文化+义庄→苏州士人社会秩序"
+   },
+   "material_logistics": {
+    "from": [
+     "tech",
+     "economy"
+    ],
+    "from_dims": [
+     2,
+     3
+    ],
+    "layer": "inference",
+    "note": "江南运河+古典园林营造+工商市镇→苏州运河—工商复合枢纽"
+   },
+   "population_mobilization": {
+    "from": [
+     "society"
+    ],
+    "from_dims": [
+     4,
+     3
+    ],
+    "layer": "inference",
+    "note": "水乡市镇+士人雅集+义庄赡族→江南社会精细网络"
+   },
+   "geopolitical_strategy": {
+    "from": [
+     "strategic",
+     "international"
+    ],
+    "from_dims": [
+     1,
+     6
+    ],
+    "layer": "inference",
+    "note": "太湖水网+运河终端+明清园林事件→苏州控江南经济文化重心"
+   }
+  },
+  "dims": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "page": "county.html?scene=suzhou",
+  "key": "suzhou",
+  "scene_id": "suzhou"
+ },
+ "sources": [
+  {
+   "id": "suzhou_fuzhi",
+   "title": "苏州府志（园墅志）",
+   "party": "后世官修",
+   "distance_label": "明清屡修地方志，距园林与平江事数百年至千余年",
+   "stance_label": "地方志",
+   "compiler": "《苏州府志》及园墅专志（明清官修）",
+   "color": "#C0703A",
+   "period": "明清"
+  },
+  {
+   "id": "yuan_ye",
+   "title": "园冶",
+   "party": "明·私修",
+   "distance_label": "计成（明）自撰，记造园事为当时人记当时事",
+   "stance_label": "明人造园专著",
+   "compiler": "计成（明）",
+   "color": "#8E7CC3",
+   "period": "明"
+  },
+  {
+   "id": "wen_zhengming_ji",
+   "title": "文徵明集",
+   "party": "明·私修",
+   "distance_label": "文徵明（明）自撰及门人编，距吴门画派与园林图咏为当时人记当时事",
+   "stance_label": "明人文集",
+   "compiler": "文徵明（明）及门人",
+   "color": "#8E7CC3",
+   "period": "明"
+  },
+  {
+   "id": "fan_wen_zheng_ji",
+   "title": "范文正公文集",
+   "party": "宋·私修",
+   "distance_label": "范仲淹（宋）自撰，距义庄府学事为当时人记当时事",
+   "stance_label": "宋人文集",
+   "compiler": "范仲淹（宋）",
+   "color": "#9B7CC3",
+   "period": "宋"
+  },
+  {
+   "id": "modern",
+   "title": "现代考订",
+   "party": "学界",
+   "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+   "stance_label": "学界考证",
+   "compiler": "苏州古典园林与城市史综合研究",
+   "color": "#2E7D8F",
+   "period": "今"
+  }
+ ],
+ "places": [
+  {
+   "id": "zhuozheng_garden",
+   "name": "拙政园",
+   "lon": 31.325,
+   "lat": 120.626,
+   "type": "古典园林",
+   "modern": "江苏省苏州市姑苏区东北街",
+   "note": "苏州古典园林代表，明正德间王献臣营造、文徵明图咏，以水景取胜，1997年作为苏州古典园林列入UNESCO（编号813）。",
+   "geo_match": "approx",
+   "geo_note": "拙政园近似坐标（31.325, 120.626），取自公开地理数据，待CHGIS精修",
+   "elev": null,
+   "off_grid": true
+  },
+  {
+   "id": "liuyuan",
+   "name": "留园",
+   "lon": 31.318,
+   "lat": 120.59,
+   "type": "古典园林",
+   "modern": "苏州市姑苏区留园路",
+   "note": "苏州古典园林名园，明徐泰时始筑，清盛康重修，以建筑空间精妙、奇石冠云峰著称，同列UNESCO（813）。",
+   "geo_match": "approx",
+   "geo_note": "留园近似坐标（31.318, 120.590），待CHGIS精修",
+   "elev": null,
+   "off_grid": true
+  },
+  {
+   "id": "huqiu",
+   "name": "虎丘（云岩寺塔）",
+   "lon": 31.318,
+   "lat": 120.57,
+   "type": "山/塔/历史地标",
+   "modern": "苏州市姑苏区虎丘山门内",
+   "note": "苏州地标，云岩寺塔（五代）屹立千年，剑池传说附会阖闾墓，为吴文化象征与游观胜地。",
+   "geo_match": "approx",
+   "geo_note": "虎丘近似坐标（31.318, 120.570），待CHGIS精修",
+   "elev": null,
+   "off_grid": true
+  },
+  {
+   "id": "pingjiang",
+   "name": "平江历史街区（平江路）",
+   "lon": 31.31,
+   "lat": 120.62,
+   "type": "历史街区/水道",
+   "modern": "苏州市姑苏区平江路",
+   "note": "河街并行、小桥流水，保存南宋《平江图》水城格局，为城市史活化石。",
+   "elev": null,
+   "off_grid": true
+  },
+  {
+   "id": "taihu",
+   "name": "太湖",
+   "lon": 31.1,
+   "lat": 120.2,
+   "type": "湖泊",
+   "modern": "苏州市西南（苏锡边界）",
+   "note": "中国第三大淡水湖，苏州西南襟太湖、带三江，水网密布，为江南鱼米之乡与水土依托。",
+   "geo_match": "approx",
+   "geo_note": "太湖（苏州侧）近似坐标（31.10, 120.20），待CHGIS精修",
+   "elev": null,
+   "off_grid": true
+  },
+  {
+   "id": "grand_canal_sz",
+   "name": "江南运河苏州段",
+   "lon": 31.3,
+   "lat": 120.6,
+   "type": "运河",
+   "modern": "苏州市姑苏区（阊门—盘门一带）",
+   "note": "南北大运河江南段穿城而过，隋凿江南河至今，连通南北、漕商辐辏，使苏州兼运河枢纽与工商都会。",
+   "geo_match": "approx",
+   "geo_note": "江南运河苏州段（盘门一带）近似坐标（31.30, 120.60），待CHGIS精修",
+   "elev": null,
+   "off_grid": true
+  }
+ ],
+ "persons": [
+  {
+   "id": "ji_cheng",
+   "name": "计成",
+   "role": "明·造园家·《园冶》作者",
+   "side": "ming",
+   "note": "（1582—?）吴人，明末造园家，著《园冶》三卷，系统总结叠山理水、借景掇山之法，为世界最早园林专著之一。",
+   "influence": 1
+  },
+  {
+   "id": "wen_zhengming",
+   "name": "文徵明",
+   "role": "明·吴门画派领袖·拙政园图咏",
+   "side": "ming",
+   "note": "（1470—1559）长洲（苏州）人，明四家之一，主吴门画派，为拙政园作图咏题跋，书画与园林互文。",
+   "influence": 1
+  },
+  {
+   "id": "fan_zhongyan",
+   "name": "范仲淹",
+   "role": "宋·苏州吴县人·义庄府学",
+   "side": "song",
+   "note": "（989—1052）苏州吴县人，置范氏义庄、兴州学，以义田赡族、学校化乡，开后世宗族义庄之制。",
+   "influence": 1
+  }
+ ],
+ "assertions": [
+  {
+   "id": "SZ_R01",
+   "subject": "place:zhuozheng_garden",
+   "predicate": "拙政园为苏州古典园林代表，以水景取胜",
+   "value_text": "拙政园为苏州古典园林代表，明正德间王献臣营造、文徵明图咏，借水景、花木、亭榭写江南意境，列UNESCO世界遗产（编号813）。",
+   "value": "",
+   "source": "suzhou_fuzhi",
+   "layer": "record",
+   "era": "明",
+   "place": "zhuozheng_garden",
+   "confidence": 0.95,
+   "quote_status": "paraphrase_unverified",
+   "quote": "拙政园，明王献臣所筑，文徵明为之图咏，擅水木之胜，为吴中名园之冠（《苏州府志》/ 园墅志）。",
+   "note": "技术（造园）+ 思想（园林意境）。",
+   "dims": [
+    2,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_R02",
+   "subject": "event:ev_suzhou_01",
+   "predicate": "隋凿江南运河，苏州为运河南段枢纽",
+   "value_text": "隋大业六年（610）凿江南河，苏州为运河南段枢纽，南北物资汇聚，工商繁盛，奠定江南都会之基。",
+   "value": "",
+   "source": "suzhou_fuzhi",
+   "layer": "record",
+   "era": "隋",
+   "place": "grand_canal_sz",
+   "confidence": 0.9,
+   "quote_status": "paraphrase_unverified",
+   "quote": "大业六年凿江南河，自京口达余杭，苏州当其中，漕商辐辏，号为雄郡（《苏州府志》/ 隋书）。",
+   "note": "事件 + 技术（运河）。",
+   "dims": [
+    6,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_R03",
+   "subject": "event:ev_suzhou_02",
+   "predicate": "南宋刻《平江图》，水道街巷格局留存",
+   "value_text": "南宋绍定二年（1229）刻《平江图》碑，详绘平江府（苏州）水道、街巷、桥梁、衙署，其格局至今可辨。",
+   "value": "",
+   "source": "suzhou_fuzhi",
+   "layer": "record",
+   "era": "南宋",
+   "place": "pingjiang",
+   "confidence": 0.9,
+   "quote_status": "paraphrase_unverified",
+   "quote": "绍定二年刻平江图碑，城河棋布、坊巷井然，今平江路一带犹存其旧（苏州府志/ 平江图考）。",
+   "note": "事件 + 制度（水城格局）。",
+   "dims": [
+    6,
+    3
+   ],
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_R04",
+   "subject": "event:ev_suzhou_03",
+   "predicate": "明清私家园林营建高潮，苏州称园林之城",
+   "value_text": "明中叶以降江南经济重心稳固，士大夫营建私家园林成风，拙政园、留园等相继而成，苏州遂称「园林之城」。",
+   "value": "",
+   "source": "yuan_ye",
+   "layer": "record",
+   "era": "明—清",
+   "place": "liuyuan",
+   "confidence": 0.9,
+   "quote_status": "paraphrase_unverified",
+   "quote": "吴中士大夫多治园亭，拙政、留园擅名，叠山理水，蔚为风尚（《园冶》义/ 苏州府志）。",
+   "note": "事件 + 技术（园林营造）。",
+   "dims": [
+    6,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "明·私修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_R05",
+   "subject": "person:ji_cheng",
+   "predicate": "计成著《园冶》，系统总结造园理论",
+   "value_text": "计成（明）著《园冶》，系统总结叠山理水、亭榭经营的造园法则，为世界最早园林专著之一。",
+   "value": "",
+   "source": "yuan_ye",
+   "layer": "record",
+   "era": "明",
+   "place": "zhuozheng_garden",
+   "confidence": 0.9,
+   "quote_status": "paraphrase_unverified",
+   "quote": "计成，吴人，著《园冶》三卷，论相地立基、借景掇山，为造园之法式（《园冶》自序）。",
+   "note": "技术（造园理论）+ 思想。",
+   "dims": [
+    2,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "明·私修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_R06",
+   "subject": "person:fan_zhongyan",
+   "predicate": "范仲淹设义庄、兴府学",
+   "value_text": "范仲淹（宋，苏州吴县人）置范氏义庄、兴州学，以义田赡族、以学校化乡，开后世宗族义庄之制。",
+   "value": "",
+   "source": "fan_wen_zheng_ji",
+   "layer": "record",
+   "era": "宋",
+   "place": "pingjiang",
+   "confidence": 0.9,
+   "quote_status": "paraphrase_unverified",
+   "quote": "范公置义田、立义庄，赡族助学，又聘士兴学，吴中教化由是大行（范文正公文集/ 苏州府志）。",
+   "note": "制度（义庄）+ 社会。",
+   "dims": [
+    3,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "宋·私修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_S01",
+   "subject": "place:pingjiang",
+   "predicate": "平江历史街区存南宋水城格局",
+   "value_text": "平江历史街区与券门水道保存南宋平江府水城格局，河街并行、小桥流水，为城市史活化石。",
+   "value": "",
+   "source": "suzhou_fuzhi",
+   "layer": "scholarship",
+   "era": "南宋—今",
+   "place": "pingjiang",
+   "confidence": 0.7,
+   "quote_status": "paraphrase_unverified",
+   "quote": "平江路河街并行，桥巷如织，犹存宋《平江图》遗制，学者以为活的水城标本（城市史研究）。",
+   "note": "制度（水城）+ 地理。",
+   "dims": [
+    3,
+    1
+   ],
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_S02",
+   "subject": "place:huqiu",
+   "predicate": "虎丘云岩寺塔与剑池承载吴文化记忆",
+   "value_text": "虎丘云岩寺塔（五代）为苏州地标，剑池传说与阖闾墓附会，承载吴文化集体记忆与游观传统。",
+   "value": "",
+   "source": "suzhou_fuzhi",
+   "layer": "scholarship",
+   "era": "五代—清",
+   "place": "huqiu",
+   "confidence": 0.7,
+   "quote_status": "paraphrase_unverified",
+   "quote": "虎丘云岩寺塔屹立千年，剑池深邃，吴人岁时游赏，为郡中胜概（苏州府志/ 吴地研究）。",
+   "note": "思想（吴文化）+ 社会。",
+   "dims": [
+    5,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "后世官修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_S03",
+   "subject": "person:wen_zhengming",
+   "predicate": "文徵明主吴门画派，书画与园林互文",
+   "value_text": "文徵明（明）主吴门画派，图咏拙政园、留为题跋，书画意趣与园林经营互为表里，深化江南雅文化。",
+   "value": "",
+   "source": "wen_zhengming_ji",
+   "layer": "scholarship",
+   "era": "明",
+   "place": "zhuozheng_garden",
+   "confidence": 0.7,
+   "quote_status": "paraphrase_unverified",
+   "quote": "文徵明主吴门画派，为拙政园作图咏，书画园林相通，江南士大夫雅趣由是彰著（文徵明集/ 艺术史）。",
+   "note": "思想（雅文化）+ 技术。",
+   "dims": [
+    5,
+    2
+   ],
+   "dim_source": "declared",
+   "_party": "明·私修",
+   "_faction": null
+  },
+  {
+   "id": "SZ_I01",
+   "subject": "place:taihu",
+   "predicate": "太湖平原河网孕育苏州水乡鱼米",
+   "value_text": "苏州处太湖平原、江尾海头，河网密布、水土丰美，孕育水乡聚落与鱼米之乡，支撑工商都会。",
+   "value": "",
+   "source": "modern",
+   "layer": "inference",
+   "era": "先秦—今",
+   "place": "taihu",
+   "confidence": 0.6,
+   "quote_status": "paraphrase_unverified",
+   "quote": "苏州襟太湖、带三江，水网如织，农渔殷繁，为江南膏腴，都会由水而起（学界历史地理推论）。",
+   "note": "地理 + 社会（水乡）。",
+   "dims": [
+    1,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_I02",
+   "subject": "place:grand_canal_sz",
+   "predicate": "江南运河苏州段使苏州兼枢纽与工商都会",
+   "value_text": "江南运河苏州段连通南北，漕运、商贸汇聚，使苏州兼运河枢纽与工商都会，市镇网络发达。",
+   "value": "",
+   "source": "modern",
+   "layer": "inference",
+   "era": "隋—清",
+   "place": "grand_canal_sz",
+   "confidence": 0.6,
+   "quote_status": "paraphrase_unverified",
+   "quote": "运河贯城，漕商并集，苏州为东南都会、绸布集散，市镇星罗（学界经济史推论）。",
+   "note": "技术（运河）+ 社会（工商网络）。",
+   "dims": [
+    2,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_I03",
+   "subject": "place:zhuozheng_garden",
+   "predicate": "叠山理水浓缩自然，体现江南造园哲学",
+   "value_text": "苏州园林叠山理水、缩龙成寸，体现「虽由人作、宛自天开」的江南造园哲学与士大夫自然观。",
+   "value": "",
+   "source": "modern",
+   "layer": "inference",
+   "era": "明—清",
+   "place": "zhuozheng_garden",
+   "confidence": 0.6,
+   "quote_status": "paraphrase_unverified",
+   "quote": "园以壶中天地写自然，移步换景，藏士大夫林泉之志，江南造园之道于是极（学界园林史推论）。",
+   "note": "技术（造园）+ 思想（自然观）。",
+   "dims": [
+    2,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_I04",
+   "subject": "event:ev_suzhou_03",
+   "predicate": "明清经济重心与隐逸文化促园林成身份空间",
+   "value_text": "明清江南经济重心稳固、士大夫隐逸文化盛行，私家园林成为身份标榜与雅集酬唱的空间。",
+   "value": "",
+   "source": "modern",
+   "layer": "inference",
+   "era": "明—清",
+   "place": "liuyuan",
+   "confidence": 0.6,
+   "quote_status": "paraphrase_unverified",
+   "quote": "江南富庶、士风雅集，园亭乃身份与交游之场，文人雅趣寄于泉石（学界社会文化史推论）。",
+   "note": "事件 + 社会（士人雅集）。",
+   "dims": [
+    6,
+    4
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_I05",
+   "subject": "place:huqiu",
+   "predicate": "山水城相依塑造苏州精致雅致意象",
+   "value_text": "虎丘—阊门—运河一带为古城核心，山水城相依、水巷小桥，塑造苏州「东方水城」的精致雅致意象。",
+   "value": "",
+   "source": "modern",
+   "layer": "inference",
+   "era": "南宋—今",
+   "place": "huqiu",
+   "confidence": 0.6,
+   "quote_status": "paraphrase_unverified",
+   "quote": "山寺、水城、园亭相映，苏州意象以雅致精细著于天下（学界城市意象推论）。",
+   "note": "地理 + 思想（城市意象）。",
+   "dims": [
+    1,
+    5
+   ],
+   "dim_source": "declared",
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_G01",
+   "subject": "place:zhuozheng_garden",
+   "predicate": "各园历代修缮与叠山用石的精确技术史有限",
+   "value_text": "拙政园等各园历代修缮、叠山用石种类与营造尺度的精确技术史数据，公开有限。",
+   "value": "",
+   "source": "modern",
+   "layer": "gap",
+   "era": "明—清",
+   "place": "zhuozheng_garden",
+   "confidence": 0.0,
+   "quote_status": "paraphrase_unverified",
+   "quote": "",
+   "note": "证据缺口：园林技术史。",
+   "dims": [
+    2
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "拙政园等各园历代修缮记、叠山用石与营造尺度",
+    "skills": [
+     "园林史",
+     "古建筑测绘",
+     "艺术史"
+    ],
+    "accept": "若有修缮档案、叠山勘察或古图，可补技术(2)层断言"
+   },
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_G02",
+   "subject": "place:pingjiang",
+   "predicate": "平江府宋元街巷水道精确 GIS 数据不足",
+   "value_text": "平江府宋元街巷与水道走向的精确考古 GIS 数据，公开不足。",
+   "value": "",
+   "source": "modern",
+   "layer": "gap",
+   "era": "南宋",
+   "place": "pingjiang",
+   "confidence": 0.0,
+   "quote_status": "paraphrase_unverified",
+   "quote": "",
+   "note": "证据缺口：平江历史空间。",
+   "dims": [
+    3
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "平江府宋元街巷、水道走向的考古发掘与 GIS 矢量化数据",
+    "skills": [
+     "考古学",
+     "历史地理",
+     "GIS"
+    ],
+    "accept": "若有平江图数字化或街区勘探，可补制度(3)层断言"
+   },
+   "_party": "学界",
+   "_faction": null
+  },
+  {
+   "id": "SZ_G03",
+   "subject": "person:ji_cheng",
+   "predicate": "《园冶》实例与现存园林营造记录对应有限",
+   "value_text": "《园冶》所载营造实例与苏州现存园林的对应匠作记录、匠人世袭档案，公开有限。",
+   "value": "",
+   "source": "modern",
+   "layer": "gap",
+   "era": "明",
+   "place": "zhuozheng_garden",
+   "confidence": 0.0,
+   "quote_status": "paraphrase_unverified",
+   "quote": "",
+   "note": "证据缺口：造园匠作档案。",
+   "dims": [
+    4
+   ],
+   "dim_source": "declared",
+   "lead": {
+    "where": "《园冶》实例与苏州现存园林对应的匠作记录、匠人世家档案",
+    "skills": [
+     "园林史",
+     "工匠史",
+     "艺术史"
+    ],
+    "accept": "若有匠作档案或营造世家整理，可补社会(4)层断言"
+   },
+   "_party": "学界",
+   "_faction": null
+  }
+ ],
+ "conflicts": [],
+ "crossConflicts": [],
+ "gaps": [
+  "SZ_G01",
+  "SZ_G02",
+  "SZ_G03"
+ ],
+ "events": [
+  {
+   "id": "ev_suzhou_01",
+   "year": 610,
+   "era": "隋大业六年",
+   "kind": "工程",
+   "title": "隋凿江南运河·苏州为运河南段枢纽",
+   "place": "grand_canal_sz",
+   "text": "隋大业六年（610）凿江南河，自京口至余杭，苏州当其中，为运河南段枢纽，漕商辐辏，奠定江南都会之基。",
+   "subject": "event:ev_suzhou_01"
+  },
+  {
+   "id": "ev_suzhou_02",
+   "year": 1229,
+   "era": "南宋绍定二年",
+   "kind": "制图",
+   "title": "刻《平江图》碑·水道街巷格局留存",
+   "place": "pingjiang",
+   "text": "南宋绍定二年（1229）刻《平江图》碑，详绘平江府（苏州）水道、街巷、桥梁、衙署，其河街并行的格局至今在平江路一带可辨。",
+   "subject": "event:ev_suzhou_02"
+  },
+  {
+   "id": "ev_suzhou_03",
+   "year": 1500,
+   "era": "明中叶以降",
+   "kind": "营建",
+   "title": "明清私家园林营建高潮·苏州称园林之城",
+   "place": "liuyuan",
+   "text": "明中叶以降江南经济重心稳固，士大夫营建私家园林成风，拙政园、留园等相继而成，苏州遂称「园林之城」，古典园林后列UNESCO（813）。",
+   "subject": "event:ev_suzhou_03"
+  }
+ ],
+ "edges": [
+  {
+   "from": "zhuozheng_garden",
+   "to": "pingjiang",
+   "kind": "near",
+   "note": "拙政园在平江路东北，俱在古城东北隅",
+   "label": "",
+   "type": "misc"
+  },
+  {
+   "from": "liuyuan",
+   "to": "pingjiang",
+   "kind": "near",
+   "note": "留园在阊门内，临古城西北",
+   "label": "",
+   "type": "misc"
+  },
+  {
+   "from": "huqiu",
+   "to": "grand_canal_sz",
+   "kind": "near",
+   "note": "虎丘临运河、接阊门",
+   "label": "",
+   "type": "misc"
+  },
+  {
+   "from": "grand_canal_sz",
+   "to": "pingjiang",
+   "kind": "adjacent",
+   "note": "运河穿城，平江水道与之相连",
+   "label": "",
+   "type": "misc"
+  },
+  {
+   "from": "taihu",
+   "to": "grand_canal_sz",
+   "kind": "adjacent",
+   "note": "太湖水系入江南运河，济苏州漕运",
+   "label": "",
+   "type": "misc"
+  }
+ ],
+ "control": [],
+ "vocab": {
+  "layers": {
+   "record": "原始史料",
+   "scholarship": "学界研究",
+   "inference": "合理推断",
+   "gap": "证据缺口"
+  },
+  "quote_status": {
+   "verbatim": "直接引文",
+   "paraphrase_unverified": "转述待核",
+   "generated": "生成"
+  },
+  "parties": [
+   "后世官修",
+   "明·私修",
+   "宋·私修",
+   "学界"
+  ],
+  "party_bucket": {
+   "后世官修": "后世官修",
+   "明·私修": "明·私修",
+   "宋·私修": "宋·私修",
+   "学界": "学界"
+  },
+  "party_colors": {
+   "后世官修": "#C0703A",
+   "明·私修": "#8E7CC3",
+   "宋·私修": "#9B7CC3",
+   "学界": "#2E7D8F"
+  },
+  "factions": {
+   "f_后世官修": {
+    "name": "后世官修",
+    "macro_party": "后世官修",
+    "note": "auto"
+   },
+   "f_明·私修": {
+    "name": "明·私修",
+    "macro_party": "明·私修",
+    "note": "auto"
+   },
+   "f_宋·私修": {
+    "name": "宋·私修",
+    "macro_party": "宋·私修",
+    "note": "auto"
+   },
+   "f_学界": {
+    "name": "学界",
+    "macro_party": "学界",
+    "note": "auto"
+   }
+  },
+  "faction_colors": {
+   "f_后世官修": "#C0703A",
+   "f_明·私修": "#8E7CC3",
+   "f_宋·私修": "#9B7CC3",
+   "f_学界": "#2E7D8F"
+  }
+ },
+ "basemap": {
+  "coastline": [],
+  "land": [],
+  "admin1": [],
+  "rivers": [],
+  "lakes": [],
+  "_bbox": [
+   30.1,
+   119.2,
+   32.325,
+   121.626
+  ]
+ }
+};
