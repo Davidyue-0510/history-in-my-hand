@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "bozhou",
+      "to": "hailongtun",
+      "relation": "东北约12公里",
+      "note": "海龙屯位于播州东北山间，为杨氏土司的军事政治中心，与播州治所互为表里。"
+    },
+    {
+      "from": "bozhou",
+      "to": "zunyi_city",
+      "relation": "同城核心",
+      "note": "遵义老城即播州—遵义府治所核心，承载土司、改流与近代会议多层历史叠压。"
+    },
+    {
+      "from": "bozhou",
+      "to": "dalou_mountain",
+      "relation": "北依大娄山",
+      "note": "播州北依大娄山，控巴蜀与滇黔通道，山险构成土司据守的天然屏障。"
+    },
+    {
+      "from": "maotai",
+      "to": "chishui_river",
+      "relation": "临赤水河",
+      "note": "茅台镇临赤水河，航运与川盐入黔通道为酿酒业提供水路与集镇基础。"
+    },
+    {
+      "from": "chishui_river",
+      "to": "bozhou",
+      "relation": "南连播州",
+      "note": "赤水河自黔北南流连通播州，盐运与酒运共同构成黔北物资廊道。"
+    }
+  ]
+}

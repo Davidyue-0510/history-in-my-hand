@@ -579,7 +579,7 @@ def _slice_meta(bundle):
     """枢纽卡片 / 懒加载所需的最小字段，避免为列表加载完整 bundle。"""
     m = bundle.get("meta", {})
     return {
-        "key": m.get("key"),
+        # v0.217：删 key（= dict key 冗余，同 v0.191 删 scene_id 逻辑），壳省 ~9KB 恢复 <500KB 契约余量；
         # 注：scene_id 与 key 同源（均 = sc["_key"]），hub 用 dict key 定位，故壳内不重复存；
         # primary_place 仅切片 bundle 的 meta 消费（county.js 读 META.primary_place / SD.scenes[k].primary_place），
         # 枢纽侧栏（county.js:811-829）只读 region/page/dossier_label/title，无需 primary_place。

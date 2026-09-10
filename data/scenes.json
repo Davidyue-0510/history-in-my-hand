@@ -673,7 +673,8 @@
   "yinchuan",
   "xining",
   "turpan",
-  "lhasa"
+  "lhasa",
+  "zunyi"
  ],
  "scenes": {
   "langzhong": {
@@ -37683,6 +37684,90 @@
      ],
      "layer": "inference",
      "note": "雅鲁藏布江—拉萨河谷+唐蕃—青藏走廊+布宫政教→拉萨控青藏高原中心"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "zunyi": {
+   "kind": "county",
+   "region": "chuan_gui",
+   "province": "guizhou",
+   "title": "遵义（播州土司·茅台·海龙屯）",
+   "dossier_label": "遵义",
+   "subtitle": "播州 · 海龙屯 · 茅台 · 土司改流",
+   "primary_place": "bozhou",
+   "dossier_event": "event:ev_zunyi_01",
+   "vocab_pack": "zunyi",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "遵义古称播州，位于黔北大娄山南麓、赤水河沿岸，是西南土司制度的典型样本与著名酒乡。唐乾符三年（876）杨端入播，开创播州杨氏土司七百余年的世袭基业；宋以播州为羁縻州。明万历二十八年（1600）平播之役，末代土司杨应龙败亡，海龙屯被克，播州改土归流。海龙屯依山筑垒，2015年作为「中国土司遗址」列入世界遗产。清乾隆间川盐入黔，赤水河航运促茅台酿酒渐兴，1915年茅台酒获巴拿马万国博览会金奖。1935年1月中共中央在遵义召开政治局扩大会议，成为长征与党史转折。遵义集土司边陲、改流治理、酒业市镇与近代转折于一体，是黔北历史层积的节点。",
+   "parties_note": "史料以汉书、旧唐书、宋史等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_zunyi_01": "杨端入播",
+    "event:ev_zunyi_02": "平播之役",
+    "event:ev_zunyi_03": "茅台金奖",
+    "place:bozhou": "播州",
+    "person:yang_yinglong": "杨应龙"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "播州土司世袭+中央改土归流+茅台商帮→黔北多元政治与认同"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "赤水河盐运+茅台酿酒+喀斯特农业→黔北物资基础"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "仡佬苗侗汉+土司臣民+盐商酒工→多族群黔北社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "大娄山—赤水河+巴蜀荆楚滇黔节点+土司边陲→遵义控黔北"
     }
    },
    "dims": [

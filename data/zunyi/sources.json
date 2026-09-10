@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "地理志载牂柯郡与西南夷，为播州地汉属牂柯的最早系统汉文坐标。"
+    },
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "地理志载播州属黔中道、北扼娄山，为唐播州建置与西南交通节点史料。"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "蛮夷传载杨端入播与播州杨氏世袭羁縻，为播州土司肇基的核心汉文史料。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "贵州土司史与茅台酒史综合研究",
+      "period": "今",
+      "note": "平播之役、海龙屯土司遗址、茅台酿酒史与遵义会议等现代综合研究，用于 record/inference/gap 层。"
+    }
+  ]
+}

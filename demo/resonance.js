@@ -471,6 +471,7 @@ window.SANDBOX_RESONANCE = {
    "zijincheng",
    "zu_chongzhi_llm",
    "zuchongzhi",
+   "zunyi",
    "zuyong_diao_llm"
   ],
   "factions": {
@@ -9341,6 +9342,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:zc_463",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "zunyi",
+   "name": "zunyi",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "元·官修": 2,
+    "汉·后朝官修": 1,
+    "学界": 13,
+    "五代·官修": 1
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_zunyi_01",
    "best_resonance": 0.0
   },
   {

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 470 个切片
+// 权威数据源：data/scenes.json 注册的 471 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 470 个切片",
+  "slice": "multi-scene · 471 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -336,6 +336,7 @@ window.SANDBOX_DATA = {
    "zheng_chenggong_taiwan_llm",
    "zhuxi",
    "zu_chongzhi_llm",
+   "zunyi",
    "zuyong_diao_llm"
   ]
  },
@@ -1059,7 +1060,8 @@ window.SANDBOX_DATA = {
   "yinchuan",
   "xining",
   "turpan",
-  "lhasa"
+  "lhasa",
+  "zunyi"
  ],
  "vocab": {
   "layers": [
@@ -19093,7 +19095,6 @@ window.SANDBOX_DATA = {
  },
  "scenes_meta": {
   "han_wudi_ruxue": {
-   "key": "han_wudi_ruxue",
    "title": "汉武帝·独尊儒术",
    "dossier_label": "独尊儒术",
    "subtitle": "前136—前100 · 西汉",
@@ -19114,7 +19115,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sarhu": {
-   "key": "sarhu",
    "title": "萨尔浒之战",
    "dossier_label": "萨尔浒之战",
    "subtitle": "万历四十七年二月—三月 · 天命四年",
@@ -19135,7 +19135,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "kaiyuan": {
-   "key": "kaiyuan",
    "title": "开原",
    "dossier_label": "开原",
    "subtitle": "辽北第一重镇 · 明卫所—清州县 · 万历末陷落",
@@ -19157,7 +19156,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tieling": {
-   "key": "tieling",
    "title": "铁岭",
    "dossier_label": "铁岭",
    "subtitle": "李成梁故里 · 辽东锁钥 · 万历四十七年陷落",
@@ -19179,7 +19177,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yehe": {
-   "key": "yehe",
    "title": "叶赫",
    "dossier_label": "叶赫",
    "subtitle": "扈伦四部之一 · 叶赫东城西城 · 1619 年亡于建州",
@@ -19200,7 +19197,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "liaoyang": {
-   "key": "liaoyang",
    "title": "辽阳",
    "dossier_label": "辽阳",
    "subtitle": "辽东都司治所 · 东京辽阳府 · 天启元年改运",
@@ -19222,7 +19218,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shenyang": {
-   "key": "shenyang",
    "title": "沈阳",
    "dossier_label": "沈阳",
    "subtitle": "辽东锁钥 · 天启元年 (1621) 陷落 · 后金迁都于此",
@@ -19243,7 +19238,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fushun": {
-   "key": "fushun",
    "title": "抚顺",
    "dossier_label": "抚顺",
    "subtitle": "沈阳东卫 · 万历四十六年 (1618) 陷落 · 七大恨告天",
@@ -19265,7 +19259,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "haizhou": {
-   "key": "haizhou",
    "title": "海州",
    "dossier_label": "海州",
    "subtitle": "辽南重镇 · 海州卫 · 天启元年 (1621) 陷落",
@@ -19285,7 +19278,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gaizhou": {
-   "key": "gaizhou",
    "title": "盖州",
    "dossier_label": "盖州",
    "subtitle": "辽南 · 盖州卫 · 天启元年 (1621) 陷落",
@@ -19307,7 +19299,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fuzhou": {
-   "key": "fuzhou",
    "title": "复州",
    "dossier_label": "复州",
    "subtitle": "辽南陆桥 · 复州卫 · 天启元年 (1621) 陷落",
@@ -19327,7 +19318,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jinzhouwei": {
-   "key": "jinzhouwei",
    "title": "金州",
    "dossier_label": "金州",
    "subtitle": "辽东半岛南端 · 金州卫 · 天启元年 (1621) 陷落",
@@ -19347,7 +19337,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangning": {
-   "key": "guangning",
    "title": "广宁",
    "dossier_label": "广宁",
    "subtitle": "辽西军政中心 · 广宁卫 · 天启二年 (1622) 陷落",
@@ -19369,7 +19358,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jinzhou": {
-   "key": "jinzhou",
    "title": "锦州",
    "dossier_label": "锦州",
    "subtitle": "辽西锁钥 · 松锦之战 (1641–1642) · 祖大寿降",
@@ -19390,7 +19378,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningyuan": {
-   "key": "ningyuan",
    "title": "宁远",
    "dossier_label": "宁远",
    "subtitle": "关宁锦防线核心 · 宁远之战 (1626) · 袁崇焕",
@@ -19411,7 +19398,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "songjin": {
-   "key": "songjin",
    "title": "松锦之战",
    "dossier_label": "松锦之战",
    "subtitle": "崇祯十四—十五年 (1641–1642) · 明清辽东决战",
@@ -19433,7 +19419,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dalinghe": {
-   "key": "dalinghe",
    "title": "大凌河之战",
    "dossier_label": "大凌河之战",
    "subtitle": "崇祯四年 (1631) · 祖大寿首次降清",
@@ -19455,7 +19440,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "juehua": {
-   "key": "juehua",
    "title": "觉华岛·辽西海防枢纽",
    "dossier_label": "觉华岛",
    "subtitle": "天启二年至五年 (1622–1625) · 宁远犄角与广宁后据岛",
@@ -19475,7 +19459,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "juehua1626": {
-   "key": "juehua1626",
    "title": "觉华岛之战·宁远犄角后的屠戮",
    "dossier_label": "觉华岛",
    "subtitle": "天启六年（1626）正月 · 努尔哈赤屠岛焚粮",
@@ -19496,7 +19479,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "bozhou": {
-   "key": "bozhou",
    "title": "播州之役·平播之役",
    "dossier_label": "播州",
    "subtitle": "万历二十七年至二十八年 (1599–1600) · 平播改土归流",
@@ -19518,7 +19500,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia": {
-   "key": "ningxia",
    "title": "宁夏之役·哱拜之乱",
    "dossier_label": "宁夏",
    "subtitle": "万历二十年 (1592) · 平哱拜叛",
@@ -19539,7 +19520,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yangzhou": {
-   "key": "yangzhou",
    "title": "扬州十日·乙酉之难",
    "dossier_label": "扬州",
    "subtitle": "顺治二年 (1645) · 清军南下屠城",
@@ -19559,7 +19539,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "novel_fandao": {
-   "key": "novel_fandao",
    "title": "反派他爸教做人·九零家暴男儿子",
    "dossier_label": "小说副本·九零家暴男儿子",
    "subtitle": "快穿文《反派他爸教做人[快穿]》第一副本 · 由文本导入生成",
@@ -19578,7 +19557,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_2": {
-   "key": "novel_fandao_2",
    "title": "反派他爸教做人·深情渣帝王儿子",
    "dossier_label": "反派他爸教做人·深情渣帝王儿子",
    "subtitle": "快穿文《反派他爸教做人[快穿]》第二副本 · 由文本导入生成",
@@ -19599,7 +19577,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_3": {
-   "key": "novel_fandao_3",
    "title": "反派他爸教做人·拜金绝色女儿",
    "dossier_label": "反派他爸教做人·拜金绝色女儿",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19619,7 +19596,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_4": {
-   "key": "novel_fandao_4",
    "title": "反派他爸教做人·我的儿子是怪物",
    "dossier_label": "反派他爸教做人·我的儿子是怪物",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19638,7 +19614,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_5": {
-   "key": "novel_fandao_5",
    "title": "反派他爸教做人·不负责的穿书女",
    "dossier_label": "反派他爸教做人·不负责的穿书女",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19657,7 +19632,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_6": {
-   "key": "novel_fandao_6",
    "title": "反派他爸教做人·同性恋骗婚儿子",
    "dossier_label": "反派他爸教做人·同性恋骗婚儿子",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19677,7 +19651,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_7": {
-   "key": "novel_fandao_7",
    "title": "反派他爸教做人·爱情至上的女儿",
    "dossier_label": "反派他爸教做人·爱情至上的女儿",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19697,7 +19670,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_8": {
-   "key": "novel_fandao_8",
    "title": "反派他爸教做人·不听话的喵儿子",
    "dossier_label": "反派他爸教做人·不听话的喵儿子",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19716,7 +19688,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "novel_fandao_9": {
-   "key": "novel_fandao_9",
    "title": "反派他爸教做人·胎穿女和魂穿女",
    "dossier_label": "反派他爸教做人·胎穿女和魂穿女",
    "subtitle": "小说导入的虚构世界（kind:fiction）",
@@ -19735,7 +19706,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_huai_xi": {
-   "key": "tang_huai_xi",
    "title": "平淮西·雪夜入蔡州",
    "dossier_label": "平淮西",
    "subtitle": "元和九年—十二年（814—817）· 李愬雪夜入蔡州",
@@ -19757,7 +19727,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "imjin": {
-   "key": "imjin",
    "title": "万历朝鲜之役·壬辰倭乱",
    "dossier_label": "壬辰倭乱",
    "subtitle": "万历二十年—二十六年（1592—1598）· 明·朝鲜·日本三方",
@@ -19779,7 +19748,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yellow_sea_1894": {
-   "key": "yellow_sea_1894",
    "title": "甲午战争·黄海海战",
    "dossier_label": "黄海海战",
    "subtitle": "光绪二十年八月十八（1894年9月17日）· 清·日",
@@ -19799,7 +19767,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qin_mie_liu_guo": {
-   "key": "qin_mie_liu_guo",
    "title": "秦灭六国·灭赵之战",
    "dossier_label": "灭赵",
    "subtitle": "秦王政十八年至二十六年（前229-前221）",
@@ -19820,7 +19787,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "three_campaigns": {
-   "key": "three_campaigns",
    "title": "三大战役·辽沈·淮海·平津",
    "dossier_label": "三大战役",
    "subtitle": "1948年9月—1949年1月 · 国共内战",
@@ -19842,7 +19808,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "changping": {
-   "key": "changping",
    "title": "长平之战",
    "dossier_label": "长平之战",
    "subtitle": "周赧王五十三—五十五年（前262—前260）· 秦 vs 赵",
@@ -19864,7 +19829,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guiling": {
-   "key": "guiling",
    "title": "桂陵之战",
    "dossier_label": "桂陵之战",
    "subtitle": "周显王十五年（前354）· 齐 vs 魏",
@@ -19886,7 +19850,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "maling": {
-   "key": "maling",
    "title": "马陵之战",
    "dossier_label": "马陵之战",
    "subtitle": "周显王二十八—二十九年（前341—前340）· 齐 vs 魏",
@@ -19908,7 +19871,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chengpu": {
-   "key": "chengpu",
    "title": "城濮之战",
    "dossier_label": "城濮之战",
    "subtitle": "周襄王二十年（前632）· 晋 vs 楚",
@@ -19930,7 +19892,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "boju": {
-   "key": "boju",
    "title": "柏举之战",
    "dossier_label": "柏举之战",
    "subtitle": "周敬王十四年（前506）· 吴 vs 楚",
@@ -19952,7 +19913,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "julu": {
-   "key": "julu",
    "title": "巨鹿之战",
    "dossier_label": "巨鹿之战",
    "subtitle": "秦二世三年（前207）· 楚（项羽） vs 秦",
@@ -19972,7 +19932,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gaixia": {
-   "key": "gaixia",
    "title": "垓下之战",
    "dossier_label": "垓下之战",
    "subtitle": "汉高帝五年（前202）· 汉 vs 楚",
@@ -19994,7 +19953,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "mobai": {
-   "key": "mobai",
    "title": "漠北之战",
    "dossier_label": "漠北之战",
    "subtitle": "汉武帝元狩四年（前119）· 汉 vs 匈奴",
@@ -20015,7 +19973,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "kunyang": {
-   "key": "kunyang",
    "title": "昆阳之战",
    "dossier_label": "昆阳之战",
    "subtitle": "新莽地皇四年（23）· 汉（刘秀） vs 新莽",
@@ -20036,7 +19993,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guandu": {
-   "key": "guandu",
    "title": "官渡之战",
    "dossier_label": "官渡之战",
    "subtitle": "汉献帝建安五年（200）· 曹 vs 袁",
@@ -20058,7 +20014,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chibi": {
-   "key": "chibi",
    "title": "赤壁之战",
    "dossier_label": "赤壁之战",
    "subtitle": "汉献帝建安十三年（208）· 孙刘 vs 曹",
@@ -20079,7 +20034,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yiling": {
-   "key": "yiling",
    "title": "夷陵之战",
    "dossier_label": "夷陵之战",
    "subtitle": "章武二年（222）· 吴 vs 蜀",
@@ -20099,7 +20053,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xiaoyaojin": {
-   "key": "xiaoyaojin",
    "title": "逍遥津之战",
    "dossier_label": "逍遥津之战",
    "subtitle": "建安二十年（215）· 魏 vs 吴",
@@ -20120,7 +20073,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "feishui": {
-   "key": "feishui",
    "title": "淝水之战",
    "dossier_label": "淝水之战",
    "subtitle": "太元八年（383）· 东晋 vs 前秦",
@@ -20142,7 +20094,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "canhebei": {
-   "key": "canhebei",
    "title": "参合陂之战",
    "dossier_label": "参合陂之战",
    "subtitle": "北魏登国十年（395）· 北魏 vs 后燕",
@@ -20162,7 +20113,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhongli": {
-   "key": "zhongli",
    "title": "钟离之战",
    "dossier_label": "钟离之战",
    "subtitle": "天监六年（507）· 梁 vs 北魏",
@@ -20182,7 +20132,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hulao": {
-   "key": "hulao",
    "title": "虎牢关之战",
    "dossier_label": "虎牢关之战",
    "subtitle": "武德四年（621）· 唐 vs 郑/夏",
@@ -20204,7 +20153,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "talas": {
-   "key": "talas",
    "title": "怛罗斯之战",
    "dossier_label": "怛罗斯之战",
    "subtitle": "天宝十载（751）· 唐 vs 大食（阿拔斯）",
@@ -20226,7 +20174,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "suiyang": {
-   "key": "suiyang",
    "title": "睢阳之战",
    "dossier_label": "睢阳之战",
    "subtitle": "至德二载（757）· 唐 vs 安史",
@@ -20247,7 +20194,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yancheng": {
-   "key": "yancheng",
    "title": "郾城之战",
    "dossier_label": "郾城之战",
    "subtitle": "绍兴十年（1140）· 宋（岳家军） vs 金",
@@ -20268,7 +20214,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heshangyuan": {
-   "key": "heshangyuan",
    "title": "和尚原之战",
    "dossier_label": "和尚原之战",
    "subtitle": "绍兴元年（1131）· 宋 vs 金",
@@ -20290,7 +20235,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "caishiji": {
-   "key": "caishiji",
    "title": "采石矶之战",
    "dossier_label": "采石矶之战",
    "subtitle": "绍兴三十一年（1161）· 宋 vs 金",
@@ -20311,7 +20255,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "diaoyucheng": {
-   "key": "diaoyucheng",
    "title": "钓鱼城之战",
    "dossier_label": "钓鱼城之战",
    "subtitle": "开庆元年（1259）· 宋 vs 蒙古",
@@ -20333,7 +20276,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yaoshan": {
-   "key": "yaoshan",
    "title": "崖山海战",
    "dossier_label": "崖山海战",
    "subtitle": "祥兴二年（1279）· 宋 vs 元",
@@ -20354,7 +20296,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "poyanghu": {
-   "key": "poyanghu",
    "title": "鄱阳湖之战",
    "dossier_label": "鄱阳湖之战",
    "subtitle": "龙凤九年（1363）· 朱 vs 陈",
@@ -20374,7 +20315,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tumu": {
-   "key": "tumu",
    "title": "土木堡之变",
    "dossier_label": "土木堡之变",
    "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
@@ -20394,7 +20334,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "beijing": {
-   "key": "beijing",
    "title": "北京保卫战",
    "dossier_label": "北京保卫战",
    "subtitle": "正统十四年（1449）· 明 vs 瓦剌",
@@ -20416,7 +20355,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yaksa": {
-   "key": "yaksa",
    "title": "雅克萨之战",
    "dossier_label": "雅克萨之战",
    "subtitle": "康熙二十四—二十五年（1685—1686）· 清 vs 沙俄",
@@ -20436,7 +20374,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjing": {
-   "key": "tianjing",
    "title": "天京保卫战",
    "dossier_label": "天京保卫战",
    "subtitle": "同治三年（1864）· 太平军 vs 清（湘军）",
@@ -20456,7 +20393,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "humen": {
-   "key": "humen",
    "title": "虎门之战",
    "dossier_label": "虎门之战",
    "subtitle": "道光二十一年（1841）· 清 vs 英",
@@ -20477,7 +20413,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "huanghe": {
-   "key": "huanghe",
    "title": "黄河改道",
    "dossier_label": "黄河改道",
    "subtitle": "前602—1855 · 六次大改道",
@@ -20497,7 +20432,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "locust": {
-   "key": "locust",
    "title": "蝗灾",
    "dossier_label": "蝗灾",
    "subtitle": "622—1943 · 历代大蝗",
@@ -20519,7 +20453,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "huaxian": {
-   "key": "huaxian",
    "title": "华县大地震",
    "dossier_label": "华县大地震",
    "subtitle": "明嘉靖三十四年（1556）· 8级余",
@@ -20541,7 +20474,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "little_ice": {
-   "key": "little_ice",
    "title": "明末小冰期饥荒",
    "dossier_label": "明末小冰期饥荒",
    "subtitle": "1580—1644 · 北中国连年亢旱",
@@ -20562,7 +20494,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "grand_canal": {
-   "key": "grand_canal",
    "title": "大运河",
    "dossier_label": "大运河",
    "subtitle": "605—1293 · 隋唐凿通·元朝裁直",
@@ -20582,7 +20513,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dujiangyan": {
-   "key": "dujiangyan",
    "title": "都江堰",
    "dossier_label": "都江堰",
    "subtitle": "约公元前256 · 李冰筑",
@@ -20602,7 +20532,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "great_wall": {
-   "key": "great_wall",
    "title": "长城",
    "dossier_label": "长城",
    "subtitle": "前214—1644 · 秦连·明筑",
@@ -20622,7 +20551,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qin_unify": {
-   "key": "qin_unify",
    "title": "秦灭六国",
    "dossier_label": "秦灭六国",
    "subtitle": "前230—前221 · 秦 vs 六国",
@@ -20644,7 +20572,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "ming_fall": {
-   "key": "ming_fall",
    "title": "明亡·崇祯自缢",
    "dossier_label": "明亡",
    "subtitle": "1644 · 内忧外患·国祚终结",
@@ -20664,7 +20591,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "shangyang": {
-   "key": "shangyang",
    "title": "商鞅变法",
    "dossier_label": "商鞅变法",
    "subtitle": "前356—前338 · 秦孝公时",
@@ -20685,7 +20611,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "huangjin": {
-   "key": "huangjin",
    "title": "黄巾起义",
    "dossier_label": "黄巾起义",
    "subtitle": "184 · 张角 vs 东汉",
@@ -20705,7 +20630,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "lizicheng": {
-   "key": "lizicheng",
    "title": "李自成起义",
    "dossier_label": "李自成起义",
    "subtitle": "1628—1645 · 闯军 vs 明",
@@ -20725,7 +20649,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xiaowen": {
-   "key": "xiaowen",
    "title": "孝文帝汉化",
    "dossier_label": "孝文帝汉化",
    "subtitle": "493—496 · 北魏",
@@ -20746,7 +20669,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wencheng": {
-   "key": "wencheng",
    "title": "文成公主入藏",
    "dossier_label": "文成公主入藏",
    "subtitle": "641 · 唐蕃和亲",
@@ -20767,7 +20689,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xuanwu": {
-   "key": "xuanwu",
    "title": "玄武门之变",
    "dossier_label": "玄武门之变",
    "subtitle": "626 · 唐高祖武德九年",
@@ -20787,7 +20708,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jingnan": {
-   "key": "jingnan",
    "title": "靖难之役",
    "dossier_label": "靖难之役",
    "subtitle": "1399—1402 · 燕王 vs 建文",
@@ -20808,7 +20728,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "dunzun": {
-   "key": "dunzun",
    "title": "独尊儒术",
    "dossier_label": "独尊儒术",
    "subtitle": "前134 · 汉武帝时",
@@ -20828,7 +20747,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "keju": {
-   "key": "keju",
    "title": "科举制",
    "dossier_label": "科举制",
    "subtitle": "605—1905 · 选官制度",
@@ -20850,7 +20768,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "four_inv": {
-   "key": "four_inv",
    "title": "四大发明",
    "dossier_label": "四大发明",
    "subtitle": "2—13 世纪 · 改变世界的原创",
@@ -20871,7 +20788,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "bencao": {
-   "key": "bencao",
    "title": "本草纲目·授时历",
    "dossier_label": "本草纲目·授时历",
    "subtitle": "1281 · 1578 · 科技医学高峰",
@@ -20893,7 +20809,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "dong_han_yi": {
-   "key": "dong_han_yi",
    "title": "东汉大疫",
    "dossier_label": "东汉大疫",
    "subtitle": "196—220 · 建安瘟疫",
@@ -20913,7 +20828,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dingwu": {
-   "key": "dingwu",
    "title": "丁戊奇荒",
    "dossier_label": "丁戊奇荒",
    "subtitle": "1877—1878 · 晚清华北大旱",
@@ -20934,7 +20848,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "song_he_jue": {
-   "key": "song_he_jue",
    "title": "北宋滑州河决",
    "dossier_label": "北宋滑州河决",
    "subtitle": "1019 · 天禧三年河患",
@@ -20955,7 +20868,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zijincheng": {
-   "key": "zijincheng",
    "title": "紫禁城营建",
    "dossier_label": "紫禁城营建",
    "subtitle": "1406—1420 · 明永乐",
@@ -20976,7 +20888,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "lingqu": {
-   "key": "lingqu",
    "title": "灵渠",
    "dossier_label": "灵渠",
    "subtitle": "前214 · 秦",
@@ -20997,7 +20908,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhaozhou": {
-   "key": "zhaozhou",
    "title": "赵州桥",
    "dossier_label": "赵州桥",
    "subtitle": "595 · 隋开皇",
@@ -21017,7 +20927,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sui_daxing": {
-   "key": "sui_daxing",
    "title": "隋大兴城",
    "dossier_label": "隋大兴城",
    "subtitle": "582 · 隋开皇",
@@ -21038,7 +20947,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "mingmo_jihuang": {
-   "key": "mingmo_jihuang",
    "title": "明末大饥荒",
    "dossier_label": "明末大饥荒",
    "subtitle": "1628—1644 · 崇祯大饥",
@@ -21060,7 +20968,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongzhen_han": {
-   "key": "chongzhen_han",
    "title": "崇祯大旱",
    "dossier_label": "崇祯大旱",
    "subtitle": "1637—1643 · 华北连旱",
@@ -21082,7 +20989,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongzhen_huangzai": {
-   "key": "chongzhen_huangzai",
    "title": "崇祯蝗灾",
    "dossier_label": "崇祯蝗灾",
    "subtitle": "1637—1641 · 华北连蝗",
@@ -21104,7 +21010,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "mingmo_shuyi": {
-   "key": "mingmo_shuyi",
    "title": "明末鼠疫",
    "dossier_label": "明末鼠疫",
    "subtitle": "1641—1644 · 华北大疫",
@@ -21126,7 +21031,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "kaifeng_juekou": {
-   "key": "kaifeng_juekou",
    "title": "开封河决",
    "dossier_label": "开封河决",
    "subtitle": "1642 · 崇祯十五年",
@@ -21148,7 +21052,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "wuwang": {
-   "key": "wuwang",
    "title": "武王克商",
    "dossier_label": "武王克商",
    "subtitle": "前1046 · 商周革命",
@@ -21170,7 +21073,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sui_mie_chen": {
-   "key": "sui_mie_chen",
    "title": "隋灭陈",
    "dossier_label": "隋灭陈",
    "subtitle": "589 · 隋文帝统一",
@@ -21190,7 +21092,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "chenqiao": {
-   "key": "chenqiao",
    "title": "陈桥兵变",
    "dossier_label": "陈桥兵变",
    "subtitle": "960 · 宋太祖代周",
@@ -21210,7 +21111,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "yashan": {
-   "key": "yashan",
    "title": "崖山之战",
    "dossier_label": "崖山之战",
    "subtitle": "1279 · 宋元最后一战",
@@ -21231,7 +21131,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xinhai": {
-   "key": "xinhai",
    "title": "辛亥革命",
    "dossier_label": "辛亥革命",
    "subtitle": "1911 · 帝制终结",
@@ -21252,7 +21151,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhangjuzheng": {
-   "key": "zhangjuzheng",
    "title": "张居正改革",
    "dossier_label": "张居正改革",
    "subtitle": "1573—1582 · 明万历",
@@ -21274,7 +21172,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wuxu": {
-   "key": "wuxu",
    "title": "戊戌变法",
    "dossier_label": "戊戌变法",
    "subtitle": "1898 · 光绪廿四",
@@ -21294,7 +21191,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wangmang": {
-   "key": "wangmang",
    "title": "王莽改制",
    "dossier_label": "王莽改制",
    "subtitle": "9 — 23 · 新莽",
@@ -21314,7 +21210,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "liangshui": {
-   "key": "liangshui",
    "title": "两税法",
    "dossier_label": "两税法",
    "subtitle": "780 · 唐建中",
@@ -21336,7 +21231,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jiupin": {
-   "key": "jiupin",
    "title": "九品中正制",
    "dossier_label": "九品中正制",
    "subtitle": "220 · 曹魏",
@@ -21356,7 +21250,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "chensheng": {
-   "key": "chensheng",
    "title": "陈胜吴广起义",
    "dossier_label": "陈胜吴广起义",
    "subtitle": "前209 · 秦末",
@@ -21377,7 +21270,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "huangchao": {
-   "key": "huangchao",
    "title": "黄巢起义",
    "dossier_label": "黄巢起义",
    "subtitle": "875—884 · 唐末",
@@ -21398,7 +21290,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "taiping": {
-   "key": "taiping",
    "title": "太平天国",
    "dossier_label": "太平天国",
    "subtitle": "1851—1864 · 晚清",
@@ -21420,7 +21311,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "hongjin": {
-   "key": "hongjin",
    "title": "红巾军",
    "dossier_label": "红巾军",
    "subtitle": "1351—1368 · 元末",
@@ -21440,7 +21330,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "lvlin": {
-   "key": "lvlin",
    "title": "绿林赤眉",
    "dossier_label": "绿林赤眉",
    "subtitle": "17 — 27 · 新莽末",
@@ -21462,7 +21351,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhaowulian": {
-   "key": "zhaowulian",
    "title": "赵武灵王胡服骑射",
    "dossier_label": "赵武灵王胡服骑射",
    "subtitle": "前307 · 战国赵",
@@ -21484,7 +21372,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhaofen": {
-   "key": "zhaofen",
    "title": "昭君出塞",
    "dossier_label": "昭君出塞",
    "subtitle": "前33 · 汉元帝时",
@@ -21505,7 +21392,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "qing_han": {
-   "key": "qing_han",
    "title": "清满汉融合",
    "dossier_label": "清满汉融合",
    "subtitle": "1644 起 · 清",
@@ -21526,7 +21412,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "yuan_duo": {
-   "key": "yuan_duo",
    "title": "元多元一体",
    "dossier_label": "元多元一体",
    "subtitle": "1271 起 · 元",
@@ -21546,7 +21431,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "chanyuan": {
-   "key": "chanyuan",
    "title": "澶渊之盟",
    "dossier_label": "澶渊之盟",
    "subtitle": "1005 · 辽宋",
@@ -21567,7 +21451,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "beijiu": {
-   "key": "beijiu",
    "title": "杯酒释兵权",
    "dossier_label": "杯酒释兵权",
    "subtitle": "961 · 宋太祖",
@@ -21588,7 +21471,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jiuzi": {
-   "key": "jiuzi",
    "title": "九子夺嫡",
    "dossier_label": "九子夺嫡",
    "subtitle": "1712—1722 · 清康熙末",
@@ -21609,7 +21491,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wugu": {
-   "key": "wugu",
    "title": "巫蛊之祸",
    "dossier_label": "巫蛊之祸",
    "subtitle": "前91 · 汉武帝晚年",
@@ -21629,7 +21510,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "shaqiu": {
-   "key": "shaqiu",
    "title": "沙丘之变",
    "dossier_label": "沙丘之变",
    "subtitle": "前210 · 秦",
@@ -21651,7 +21531,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "baijia": {
-   "key": "baijia",
    "title": "百家争鸣",
    "dossier_label": "百家争鸣",
    "subtitle": "前5—前3 世纪 · 战国",
@@ -21673,7 +21552,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "fenshu": {
-   "key": "fenshu",
    "title": "焚书坑儒",
    "dossier_label": "焚书坑儒",
    "subtitle": "前213—前212 · 秦",
@@ -21694,7 +21572,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "fotao": {
-   "key": "fotao",
    "title": "佛教传入",
    "dossier_label": "佛教传入",
    "subtitle": "67 · 东汉永平",
@@ -21716,7 +21593,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "lixue": {
-   "key": "lixue",
    "title": "宋明理学",
    "dossier_label": "宋明理学",
    "subtitle": "1175 · 鹅湖之会",
@@ -21736,7 +21612,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhangheng": {
-   "key": "zhangheng",
    "title": "张衡地动仪",
    "dossier_label": "张衡地动仪",
    "subtitle": "132 · 东汉阳嘉",
@@ -21758,7 +21633,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zuchongzhi": {
-   "key": "zuchongzhi",
    "title": "祖冲之圆周率",
    "dossier_label": "祖冲之圆周率",
    "subtitle": "480 · 南朝",
@@ -21778,7 +21652,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "shenkuo": {
-   "key": "shenkuo",
    "title": "沈括梦溪笔谈",
    "dossier_label": "沈括梦溪笔谈",
    "subtitle": "1088 · 北宋元祐",
@@ -21799,7 +21672,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jiasixie": {
-   "key": "jiasixie",
    "title": "齐民要术",
    "dossier_label": "齐民要术",
    "subtitle": "544 · 东魏",
@@ -21820,7 +21692,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhangqian": {
-   "key": "zhangqian",
    "title": "张骞通西域",
    "dossier_label": "张骞通西域",
    "subtitle": "前138—前126 · 西汉",
@@ -21841,7 +21712,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhenghe": {
-   "key": "zhenghe",
    "title": "郑和下西洋",
    "dossier_label": "郑和下西洋",
    "subtitle": "1405—1433 · 明永乐—宣德",
@@ -21861,7 +21731,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xuanzang": {
-   "key": "xuanzang",
    "title": "玄奘西行",
    "dossier_label": "玄奘西行",
    "subtitle": "629—645 · 唐",
@@ -21881,7 +21750,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jianzhen": {
-   "key": "jianzhen",
    "title": "鉴真东渡",
    "dossier_label": "鉴真东渡",
    "subtitle": "743—753 · 唐",
@@ -21901,7 +21769,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "mingmo_dangzheng": {
-   "key": "mingmo_dangzheng",
    "title": "明末党争·辽东导火索",
    "dossier_label": "明末党争",
    "subtitle": "天启四—五年 (1624–1625) · 阉党借辽东私怨杀熊廷弼",
@@ -21922,7 +21789,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_dangzheng": {
-   "key": "tang_dangzheng",
    "title": "牛李党争",
    "dossier_label": "牛李党争",
    "subtitle": "唐宪宗—宣宗（808—846）· 士族门第 vs 科举寒素",
@@ -21943,7 +21809,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "song_dangzheng": {
-   "key": "song_dangzheng",
    "title": "洛蜀朔党争",
    "dossier_label": "洛蜀朔党争",
    "subtitle": "北宋元祐（1086—1093）· 洛党·蜀党·朔党",
@@ -21963,7 +21828,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "donghan_danggu": {
-   "key": "donghan_danggu",
    "title": "党锢之祸",
    "dossier_label": "党锢之祸",
    "subtitle": "东汉桓灵（166—184）· 清流士大夫 vs 宦官",
@@ -21983,7 +21847,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "chu_han": {
-   "key": "chu_han",
    "title": "楚汉之争",
    "dossier_label": "楚汉之争",
    "subtitle": "前206—前202 · 汉（刘邦） vs 楚（项羽）",
@@ -22005,7 +21868,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "song_chan_yuan": {
-   "key": "song_chan_yuan",
    "title": "澶渊之盟",
    "dossier_label": "澶渊之盟",
    "subtitle": "景德元年—二年（1004—1005）· 宋辽",
@@ -22027,7 +21889,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guandu_llm": {
-   "key": "guandu_llm",
    "title": "官渡之战（LLM 抽取·人工校订）",
    "dossier_label": "官渡之战（LLM 抽取落库）",
    "subtitle": "建安五年（200）· 魏（曹操） vs 袁（袁绍）",
@@ -22049,7 +21910,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "san_guo": {
-   "key": "san_guo",
    "title": "三国鼎立",
    "dossier_label": "三国鼎立",
    "subtitle": "220—280 · 魏 / 蜀 / 吴 → 三分归晋",
@@ -22071,7 +21931,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "feishui_llm": {
-   "key": "feishui_llm",
    "title": "淝水之战（LLM 抽取·人工校订）",
    "dossier_label": "淝水之战（LLM 抽取落库）",
    "subtitle": "太元八年（383）· 东晋（谢安/谢玄） vs 前秦（苻坚）",
@@ -22093,7 +21952,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "changping_llm": {
-   "key": "changping_llm",
    "title": "长平之战（LLM 抽取·人工校订）",
    "dossier_label": "长平之战（LLM 抽取落库）",
    "subtitle": "周赧王五十五年（前260）· 秦（白起） vs 赵（赵括）",
@@ -22115,7 +21973,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qin_mie_liu_guo_llm": {
-   "key": "qin_mie_liu_guo_llm",
    "title": "秦灭六国（LLM 抽取·人工校订）",
    "dossier_label": "qin_mie_liu_guo_llm",
    "subtitle": "",
@@ -22137,7 +21994,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "chuhai_llm": {
-   "key": "chuhai_llm",
    "title": "楚漢之爭·垓下之戰",
    "dossier_label": "chuhai_llm",
    "subtitle": "秦二世元年至漢五年（前207-前202）",
@@ -22159,7 +22015,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sui_mie_chen_llm": {
-   "key": "sui_mie_chen_llm",
    "title": "隋滅陳·金陵之變",
    "dossier_label": "sui_mie_chen_llm",
    "subtitle": "",
@@ -22181,7 +22036,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sui_yang_llm": {
-   "key": "sui_yang_llm",
    "title": "唐·睢阳之战",
    "dossier_label": "sui_yang_llm",
    "subtitle": "唐至德二载（757）张巡许远守睢阳",
@@ -22203,7 +22057,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zheng_chenggong_taiwan_llm": {
-   "key": "zheng_chenggong_taiwan_llm",
    "title": "郑成功收复台湾（1661–1662）",
    "dossier_label": "zheng_chenggong_taiwan_llm",
    "subtitle": "",
@@ -22225,7 +22078,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xiyu_dunhu_llm": {
-   "key": "xiyu_dunhu_llm",
    "title": "西域都护府之设（前60）",
    "dossier_label": "xiyu_dunhu_llm",
    "subtitle": "",
@@ -22247,7 +22099,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "hexi_sijun_llm": {
-   "key": "hexi_sijun_llm",
    "title": "汉武帝经营河西·河西四郡（前121）",
    "dossier_label": "hexi_sijun_llm",
    "subtitle": "",
@@ -22269,7 +22120,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "nanzhao_dali_llm": {
-   "key": "nanzhao_dali_llm",
    "title": "南诏统一六诏·大理国（738–1253）",
    "dossier_label": "nanzhao_dali_llm",
    "subtitle": "",
@@ -22291,7 +22141,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "huangdaopo_llm": {
-   "key": "huangdaopo_llm",
    "title": "黄道婆传棉纺之法（元贞间）",
    "dossier_label": "huangdaopo_llm",
    "subtitle": "",
@@ -22313,7 +22162,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhejiang_linan_llm": {
-   "key": "zhejiang_linan_llm",
    "title": "南宋定都临安（1129–1276）",
    "dossier_label": "zhejiang_linan_llm",
    "subtitle": "",
@@ -22335,7 +22183,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "fujian_quanzhou_llm": {
-   "key": "fujian_quanzhou_llm",
    "title": "泉州刺桐港·海上丝路（宋元）",
    "dossier_label": "fujian_quanzhou_llm",
    "subtitle": "",
@@ -22356,7 +22203,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xianggang_songmo_llm": {
-   "key": "xianggang_songmo_llm",
    "title": "宋末二王南迁·香港官富场（1276–1279）",
    "dossier_label": "xianggang_songmo_llm",
    "subtitle": "",
@@ -22378,7 +22224,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "aomen_portugal_llm": {
-   "key": "aomen_portugal_llm",
    "title": "葡人租居澳门（1553–1573）",
    "dossier_label": "aomen_portugal_llm",
    "subtitle": "",
@@ -22400,7 +22245,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "qinghai_tuyuhun_llm": {
-   "key": "qinghai_tuyuhun_llm",
    "title": "隋炀帝西征吐谷浑·青海道（609）",
    "dossier_label": "qinghai_tuyuhun_llm",
    "subtitle": "",
@@ -22420,7 +22264,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "guizhou_yelang_llm": {
-   "key": "guizhou_yelang_llm",
    "title": "汉通西南夷·夜郎（前135–前111）",
    "dossier_label": "guizhou_yelang_llm",
    "subtitle": "",
@@ -22441,7 +22284,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "hainan_zhuyai_llm": {
-   "key": "hainan_zhuyai_llm",
    "title": "汉置珠崖儋耳二郡（前110–前46）",
    "dossier_label": "hainan_zhuyai_llm",
    "subtitle": "",
@@ -22463,7 +22305,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "hunan_changsha_llm": {
-   "key": "hunan_changsha_llm",
    "title": "汉长沙国·马王堆（前202–前157）",
    "dossier_label": "hunan_changsha_llm",
    "subtitle": "",
@@ -22485,7 +22326,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "jilin_gaogouli_llm": {
-   "key": "jilin_gaogouli_llm",
    "title": "高句丽·集安王城（前37–668）",
    "dossier_label": "jilin_gaogouli_llm",
    "subtitle": "",
@@ -22505,7 +22345,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sui_canal_llm": {
-   "key": "sui_canal_llm",
    "title": "隋炀帝开凿大运河（LLM 抽取·人工校订）",
    "dossier_label": "隋大运河（LLM 抽取落库）",
    "subtitle": "大业元年—六年（605–610）· 隋中央工程",
@@ -22526,7 +22365,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_anshi_llm": {
-   "key": "tang_anshi_llm",
    "title": "安史之乱（LLM 抽取·人工校订）",
    "dossier_label": "安史之乱（LLM 抽取落库）",
    "subtitle": "天宝十四载—宝应元年（755–763）· 唐 vs 安史叛军",
@@ -22546,7 +22384,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "han_banchao_llm": {
-   "key": "han_banchao_llm",
    "title": "班超经营西域（LLM 抽取·人工校订）",
    "dossier_label": "班超经营西域（LLM 抽取落库）",
    "subtitle": "永平十六年—永元十四年（73–102）· 汉 vs 匈奴",
@@ -22568,7 +22405,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "song_yancheng_llm": {
-   "key": "song_yancheng_llm",
    "title": "郾城之战（岳飞北伐）（LLM 抽取·人工校订）",
    "dossier_label": "郾城之战（岳飞北伐）（LLM 抽取落库）",
    "subtitle": "绍兴十年（1140）· 宋（岳飞） vs 金（兀术）",
@@ -22588,7 +22424,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yuan_xingsheng_llm": {
-   "key": "yuan_xingsheng_llm",
    "title": "元设行中书省（行省制）（LLM 抽取·人工校订）",
    "dossier_label": "元设行中书省（行省制）（LLM 抽取落库）",
    "subtitle": "至元年间（1264 起）· 元中央制度",
@@ -22610,7 +22445,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "ming_zhenghe_llm": {
-   "key": "ming_zhenghe_llm",
    "title": "郑和下西洋（LLM 抽取·人工校订）",
    "dossier_label": "郑和下西洋（LLM 抽取落库）",
    "subtitle": "永乐三年—宣德八年（1405–1433）· 明远洋",
@@ -22631,7 +22465,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "qing_yakesa_llm": {
-   "key": "qing_yakesa_llm",
    "title": "雅克萨之战（LLM 抽取·人工校订）",
    "dossier_label": "雅克萨之战（LLM 抽取落库）",
    "subtitle": "康熙二十四至二十五年（1685–1686）· 清 vs 沙俄",
@@ -22653,7 +22486,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qin_fenshu_llm": {
-   "key": "qin_fenshu_llm",
    "title": "秦·焚书坑儒（LLM 抽取·人工校订）",
    "dossier_label": "秦·焚书坑儒（LLM 抽取落库）",
    "subtitle": "中央集权对思想多元的清洗",
@@ -22674,7 +22506,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_huangchao_llm": {
-   "key": "tang_huangchao_llm",
    "title": "唐·黄巢起义（LLM 抽取·人工校订）",
    "dossier_label": "唐·黄巢起义（LLM 抽取落库）",
    "subtitle": "晚唐藩镇乱局中的草根颠覆",
@@ -22696,7 +22527,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "song_chanchuan_llm": {
-   "key": "song_chanchuan_llm",
    "title": "宋·澶渊之盟（LLM 抽取·人工校订）",
    "dossier_label": "宋·澶渊之盟（LLM 抽取落库）",
    "subtitle": "宋辽百年和平的条约基线",
@@ -22718,7 +22548,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "ming_tumu_llm": {
-   "key": "ming_tumu_llm",
    "title": "明·土木堡之变（LLM 抽取·人工校订）",
    "dossier_label": "明·土木堡之变（LLM 抽取落库）",
    "subtitle": "亲征溃败与英宗北狩",
@@ -22740,7 +22569,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qing_zhungaer_llm": {
-   "key": "qing_zhungaer_llm",
    "title": "清·平定准噶尔（LLM 抽取·人工校订）",
    "dossier_label": "清·平定准噶尔（LLM 抽取落库）",
    "subtitle": "西域纳入版图的最后一块",
@@ -22762,7 +22590,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "warring_states_shangyang_llm": {
-   "key": "warring_states_shangyang_llm",
    "title": "战国·商鞅变法（LLM 抽取·人工校订）",
    "dossier_label": "战国·商鞅变法（LLM 抽取落库）",
    "subtitle": "秦富强的制度底座",
@@ -22782,7 +22609,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "han_weihuo_llm": {
-   "key": "han_weihuo_llm",
    "title": "汉·卫青霍去病北伐匈奴（LLM 抽取·人工校订）",
    "dossier_label": "汉·卫青霍去病北伐匈奴（LLM 抽取落库）",
    "subtitle": "漠南无王庭的转身",
@@ -22804,7 +22630,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_xuanwumen_llm": {
-   "key": "tang_xuanwumen_llm",
    "title": "唐·玄武门之变（LLM 抽取·人工校订）",
    "dossier_label": "唐·玄武门之变（LLM 抽取落库）",
    "subtitle": "夺嫡与贞观前夜",
@@ -22824,7 +22649,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chibi_llm": {
-   "key": "chibi_llm",
    "title": "三国·赤壁之战",
    "dossier_label": null,
    "subtitle": null,
@@ -22846,7 +22670,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "tactical"
   },
   "song_wanganshi_llm": {
-   "key": "song_wanganshi_llm",
    "title": "宋·王安石变法",
    "dossier_label": null,
    "subtitle": null,
@@ -22866,7 +22689,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "biTigeGuan": {
-   "key": "biTigeGuan",
    "title": "碧蹄馆之战·三方记载",
    "dossier_label": "碧蹄馆三方记载",
    "subtitle": "1593 · 万历二十一年 · 壬辰倭乱",
@@ -22886,7 +22708,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tang_liangshuifa": {
-   "key": "tang_liangshuifa",
    "title": "唐·两税法",
    "dossier_label": "两税法",
    "subtitle": "780 · 建中元年 · 唐",
@@ -22908,7 +22729,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wei_xiaowen": {
-   "key": "wei_xiaowen",
    "title": "北魏孝文帝改革",
    "dossier_label": "孝文帝汉化",
    "subtitle": "485–494 · 太和 · 北魏",
@@ -22928,7 +22748,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "sui_canal": {
-   "key": "sui_canal",
    "title": "隋·大运河",
    "dossier_label": "大运河",
    "subtitle": "605–610 · 大业 · 隋",
@@ -22949,7 +22768,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "guo_shoujing": {
-   "key": "guo_shoujing",
    "title": "郭守敬·水利与天文",
    "dossier_label": "郭守敬·元代水利天文",
    "subtitle": "1276–1292 · 元代",
@@ -22971,7 +22789,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhangzai_guanxue": {
-   "key": "zhangzai_guanxue",
    "title": "张载·关学",
    "dossier_label": "张载·关学（宋明理学关中之学）",
    "subtitle": "约1060–1077 · 北宋关中",
@@ -22992,7 +22809,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "cailun_zaozhi": {
-   "key": "cailun_zaozhi",
    "title": "蔡伦·造纸",
    "dossier_label": "蔡伦·造纸（东汉和帝元兴元年）",
    "subtitle": "公元 105 年 · 东汉",
@@ -23014,7 +22830,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "bisheng_movable_type": {
-   "key": "bisheng_movable_type",
    "title": "毕昇·活字印刷",
    "dossier_label": "毕昇·活字印刷（北宋庆历）",
    "subtitle": "1041—1048 · 北宋",
@@ -23035,7 +22850,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "compass_navigation": {
-   "key": "compass_navigation",
    "title": "指南针·航海",
    "dossier_label": "指南针·航海（北宋）",
    "subtitle": "1088—1250 · 北宋—元",
@@ -23057,7 +22871,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "gunpowder_warfare": {
-   "key": "gunpowder_warfare",
    "title": "火药·军事化",
    "dossier_label": "火药·军事化（唐末—北宋）",
    "subtitle": "904—1280 · 唐末—宋",
@@ -23079,7 +22892,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "susong_llm": {
-   "key": "susong_llm",
    "title": "苏颂·水运仪象台",
    "dossier_label": null,
    "subtitle": "北宋汴京水力天文钟与擒纵",
@@ -23099,7 +22911,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "wangyangming": {
-   "key": "wangyangming",
    "title": "王阳明·心学",
    "dossier_label": null,
    "subtitle": "明代心即理·知行合一·致良知",
@@ -23121,7 +22932,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "zhuxi": {
-   "key": "zhuxi",
    "title": "朱熹·理学",
    "dossier_label": null,
    "subtitle": "南宋理气论·格物致知·四书集注",
@@ -23142,7 +22952,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "foguo_chan_llm": {
-   "key": "foguo_chan_llm",
    "title": "唐代佛教东传与禅宗",
    "dossier_label": null,
    "subtitle": "武周崇佛·会昌灭佛·禅宗本土化",
@@ -23164,7 +22973,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "qianjia_puxue_llm": {
-   "key": "qianjia_puxue_llm",
    "title": "清代乾嘉朴学",
    "dossier_label": null,
    "subtitle": "文字狱高压·四库寓禁于征·考据鼎盛",
@@ -23185,7 +22993,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "xu_guangqi": {
-   "key": "xu_guangqi",
    "title": "徐光启·农政全书与西学东渐",
    "dossier_label": "徐光启（明末·农政全书+西学东渐）",
    "subtitle": "1562—1633 · 明",
@@ -23207,7 +23014,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "shu_han_found_llm": {
-   "key": "shu_han_found_llm",
    "title": "蜀汉建国（成都称帝）",
    "dossier_label": null,
    "subtitle": null,
@@ -23229,7 +23035,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "nan_song_linan_llm": {
-   "key": "nan_song_linan_llm",
    "title": "南宋定都临安（杭州）",
    "dossier_label": null,
    "subtitle": null,
@@ -23250,7 +23055,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jinshang_llm": {
-   "key": "jinshang_llm",
    "title": "明清晋商与票号",
    "dossier_label": null,
    "subtitle": null,
@@ -23270,7 +23074,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "minyue_llm": {
-   "key": "minyue_llm",
    "title": "汉初闽越国（福州）",
    "dossier_label": null,
    "subtitle": null,
@@ -23292,7 +23095,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yuelu_academy_llm": {
-   "key": "yuelu_academy_llm",
    "title": "岳麓书院与湖湘学派",
    "dossier_label": null,
    "subtitle": null,
@@ -23314,7 +23116,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "anxi_sizhen_llm": {
-   "key": "anxi_sizhen_llm",
    "title": "唐安西四镇（西域）",
    "dossier_label": null,
    "subtitle": null,
@@ -23336,7 +23137,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sui_keju": {
-   "key": "sui_keju",
    "title": "隋·科举制创立",
    "dossier_label": "科举制",
    "subtitle": "587—618 · 隋",
@@ -23356,7 +23156,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "warring_states_shangyang": {
-   "key": "warring_states_shangyang",
    "title": "战国·商鞅变法",
    "dossier_label": "商鞅变法",
    "subtitle": "前359—前338 · 战国",
@@ -23377,7 +23176,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "tang_juntian": {
-   "key": "tang_juntian",
    "title": "唐·均田制",
    "dossier_label": "均田制",
    "subtitle": "624—640 · 唐初",
@@ -23399,7 +23197,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "strategic"
   },
   "dagukou_battle_llm": {
-   "key": "dagukou_battle_llm",
    "title": "大沽口之战（第二次鸦片战争）",
    "dossier_label": null,
    "subtitle": null,
@@ -23419,7 +23216,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "liangzhou_meeting_llm": {
-   "key": "liangzhou_meeting_llm",
    "title": "凉州会谈（1247，西藏归附蒙古）",
    "dossier_label": null,
    "subtitle": null,
@@ -23439,7 +23235,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "songshan_battle_llm": {
-   "key": "songshan_battle_llm",
    "title": "松山战役（1944）",
    "dossier_label": null,
    "subtitle": null,
@@ -23458,7 +23253,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "pingbo_zhiyi_llm": {
-   "key": "pingbo_zhiyi_llm",
    "title": "平播之役（1599—1600）",
    "dossier_label": null,
    "subtitle": null,
@@ -23478,7 +23272,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "bohai_kingdom_llm": {
-   "key": "bohai_kingdom_llm",
    "title": "渤海国（698—926）",
    "dossier_label": null,
    "subtitle": null,
@@ -23498,7 +23291,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dongbei_kanglian_llm": {
-   "key": "dongbei_kanglian_llm",
    "title": "东北抗日联军（1931—1945）",
    "dossier_label": null,
    "subtitle": null,
@@ -23518,7 +23310,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_capital_llm": {
-   "key": "chongqing_capital_llm",
    "title": "重庆抗战陪都（1937—1946）",
    "dossier_label": null,
    "subtitle": null,
@@ -23539,7 +23330,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_tubo_llm": {
-   "key": "xizang_tubo_llm",
    "title": "吐蕃王朝（松赞干布统一，618—842）",
    "dossier_label": null,
    "subtitle": null,
@@ -23560,7 +23350,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_taiping_llm": {
-   "key": "guangxi_taiping_llm",
    "title": "太平天国金田起义（1851—1864）",
    "dossier_label": null,
    "subtitle": null,
@@ -23580,7 +23369,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_xianfuren_llm": {
-   "key": "hainan_xianfuren_llm",
    "title": "冼夫人（南朝梁陈隋，约 512—602）",
    "dossier_label": null,
    "subtitle": null,
@@ -23601,7 +23389,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_gusiluo_llm": {
-   "key": "qinghai_gusiluo_llm",
    "title": "唃厮啰政权（吐蕃后裔，1015—1103）",
    "dossier_label": null,
    "subtitle": null,
@@ -23621,7 +23408,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_qijiguang_llm": {
-   "key": "fujian_qijiguang_llm",
    "title": "戚继光福建抗倭（1562—1563）",
    "dossier_label": null,
    "subtitle": null,
@@ -23640,7 +23426,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanghai_xiaodaohui_llm": {
-   "key": "shanghai_xiaodaohui_llm",
    "title": "上海小刀会起义（1853—1855）",
    "dossier_label": null,
    "subtitle": null,
@@ -23660,7 +23445,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_xixia_llm": {
-   "key": "ningxia_xixia_llm",
    "title": "西夏立国（李元昊称帝，1038）",
    "dossier_label": null,
    "subtitle": null,
@@ -23679,7 +23463,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "neimenggu_zhaojun_llm": {
-   "key": "neimenggu_zhaojun_llm",
    "title": "昭君出塞（王昭君和亲匈奴，前33）",
    "dossier_label": null,
    "subtitle": null,
@@ -23699,7 +23482,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_hexizhen_llm": {
-   "key": "gansu_hexizhen_llm",
    "title": "汉武帝设河西四郡（前121—前111）",
    "dossier_label": null,
    "subtitle": null,
@@ -23720,7 +23502,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_zunyi_llm": {
-   "key": "guizhou_zunyi_llm",
    "title": "遵义会议（1935）",
    "dossier_label": null,
    "subtitle": null,
@@ -23739,7 +23520,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heilongjiang_jin_llm": {
-   "key": "heilongjiang_jin_llm",
    "title": "金朝立国 完颜阿骨打称帝（1115）",
    "dossier_label": null,
    "subtitle": null,
@@ -23761,7 +23541,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_diaoyucheng_llm": {
-   "key": "chongqing_diaoyucheng_llm",
    "title": "钓鱼城之战（1259，宋蒙）",
    "dossier_label": null,
    "subtitle": null,
@@ -23781,7 +23560,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_jiaoan_llm": {
-   "key": "tianjin_jiaoan_llm",
    "title": "天津教案（1870）",
    "dossier_label": null,
    "subtitle": null,
@@ -23800,7 +23578,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_dali_llm": {
-   "key": "yunnan_dali_llm",
    "title": "大理国（937—1253）",
    "dossier_label": null,
    "subtitle": null,
@@ -23822,7 +23599,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanghai_songkai_llm": {
-   "key": "shanghai_songkai_llm",
    "title": "淞沪会战（1937）",
    "dossier_label": null,
    "subtitle": null,
@@ -23841,7 +23617,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_xiaoguan_llm": {
-   "key": "ningxia_xiaoguan_llm",
    "title": "萧关 秦汉长城西段关隘（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -23862,7 +23637,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "neimenggu_genghis_llm": {
-   "key": "neimenggu_genghis_llm",
    "title": "成吉思汗统一蒙古（1206）",
    "dossier_label": null,
    "subtitle": null,
@@ -23883,7 +23657,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_gorkha_llm": {
-   "key": "xizang_gorkha_llm",
    "title": "廓尔喀之役（1791—1792）",
    "dossier_label": null,
    "subtitle": null,
@@ -23903,7 +23676,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_huimeng_llm": {
-   "key": "xizang_huimeng_llm",
    "title": "唐蕃会盟碑（长庆会盟，822）",
    "dossier_label": null,
    "subtitle": null,
@@ -23922,7 +23694,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_zhennanguan_llm": {
-   "key": "guangxi_zhennanguan_llm",
    "title": "镇南关大捷（1885）",
    "dossier_label": null,
    "subtitle": null,
@@ -23942,7 +23713,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_hairui_llm": {
-   "key": "hainan_hairui_llm",
    "title": "海瑞（1514—1587，明代清官）",
    "dossier_label": null,
    "subtitle": null,
@@ -23963,7 +23733,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_zongkaba_llm": {
-   "key": "qinghai_zongkaba_llm",
    "title": "宗喀巴 格鲁派创立（1409）",
    "dossier_label": null,
    "subtitle": null,
@@ -23982,7 +23751,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_zhengchenggong_llm": {
-   "key": "taiwan_zhengchenggong_llm",
    "title": "中国台湾·郑成功收复台湾（1661—1662）",
    "dossier_label": null,
    "subtitle": null,
@@ -24002,7 +23770,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_1941_llm": {
-   "key": "xianggang_1941_llm",
    "title": "中国香港·香港保卫战（1941）",
    "dossier_label": null,
    "subtitle": null,
@@ -24021,7 +23788,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_kaibu_llm": {
-   "key": "aomen_kaibu_llm",
    "title": "中国澳门·澳门开埠（1553）",
    "dossier_label": null,
    "subtitle": null,
@@ -24042,7 +23808,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_nanchang_llm": {
-   "key": "jiangxi_nanchang_llm",
    "title": "南昌起义",
    "dossier_label": null,
    "subtitle": null,
@@ -24059,7 +23824,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_ruijin_llm": {
-   "key": "jiangxi_ruijin_llm",
    "title": "中央苏区与中华苏维埃共和国",
    "dossier_label": null,
    "subtitle": null,
@@ -24080,7 +23844,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xinjiang_xiyu_llm": {
-   "key": "xinjiang_xiyu_llm",
    "title": "西域都护府",
    "dossier_label": null,
    "subtitle": null,
@@ -24101,7 +23864,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xinjiang_zuozongtang_llm": {
-   "key": "xinjiang_zuozongtang_llm",
    "title": "左宗棠收复新疆",
    "dossier_label": null,
    "subtitle": null,
@@ -24121,7 +23883,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_lingqu_llm": {
-   "key": "guangxi_lingqu_llm",
    "title": "灵渠",
    "dossier_label": null,
    "subtitle": null,
@@ -24143,7 +23904,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_hainandao_llm": {
-   "key": "hainan_hainandao_llm",
    "title": "海南岛战役",
    "dossier_label": null,
    "subtitle": null,
@@ -24163,7 +23923,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_peidu_llm": {
-   "key": "chongqing_peidu_llm",
    "title": "重庆陪都",
    "dossier_label": null,
    "subtitle": null,
@@ -24183,7 +23942,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_dunhuang_llm": {
-   "key": "gansu_dunhuang_llm",
    "title": "敦煌莫高窟",
    "dossier_label": null,
    "subtitle": null,
@@ -24201,7 +23959,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heilongjiang_kanglian_llm": {
-   "key": "heilongjiang_kanglian_llm",
    "title": "东北抗日联军",
    "dossier_label": null,
    "subtitle": null,
@@ -24219,7 +23976,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jilin_bohai_llm": {
-   "key": "jilin_bohai_llm",
    "title": "渤海国",
    "dossier_label": null,
    "subtitle": null,
@@ -24240,7 +23996,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jilin_changchun_llm": {
-   "key": "jilin_changchun_llm",
    "title": "伪满洲国",
    "dossier_label": null,
    "subtitle": null,
@@ -24260,7 +24015,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_kaibu_llm": {
-   "key": "tianjin_kaibu_llm",
    "title": "天津开埠",
    "dossier_label": null,
    "subtitle": null,
@@ -24280,7 +24034,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_nanzhao_llm": {
-   "key": "yunnan_nanzhao_llm",
    "title": "南诏",
    "dossier_label": null,
    "subtitle": null,
@@ -24299,7 +24052,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_xiamen_llm": {
-   "key": "fujian_xiamen_llm",
    "title": "厦门五口通商",
    "dossier_label": null,
    "subtitle": null,
@@ -24316,7 +24068,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hunan_mawangdui_llm": {
-   "key": "hunan_mawangdui_llm",
    "title": "马王堆汉墓",
    "dossier_label": null,
    "subtitle": null,
@@ -24336,7 +24087,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_jinshang_llm": {
-   "key": "shanxi_jinshang_llm",
    "title": "晋商",
    "dossier_label": null,
    "subtitle": null,
@@ -24357,7 +24107,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_dujiangyan_llm": {
-   "key": "sichuan_dujiangyan_llm",
    "title": "都江堰",
    "dossier_label": null,
    "subtitle": null,
@@ -24378,7 +24127,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_shilang_llm": {
-   "key": "taiwan_shilang_llm",
    "title": "中国台湾·施琅统一台湾",
    "dossier_label": null,
    "subtitle": null,
@@ -24399,7 +24147,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_wushe_llm": {
-   "key": "taiwan_wushe_llm",
    "title": "中国台湾·雾社起义",
    "dossier_label": null,
    "subtitle": null,
@@ -24421,7 +24168,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_huigui_llm": {
-   "key": "xianggang_huigui_llm",
    "title": "中国香港·香港回归",
    "dossier_label": null,
    "subtitle": null,
@@ -24441,7 +24187,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_dongjiang_llm": {
-   "key": "xianggang_dongjiang_llm",
    "title": "中国香港·东江纵队港九大队",
    "dossier_label": null,
    "subtitle": null,
@@ -24462,7 +24207,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_huigui_llm": {
-   "key": "aomen_huigui_llm",
    "title": "中国澳门·澳门回归",
    "dossier_label": null,
    "subtitle": null,
@@ -24482,7 +24226,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_mage_llm": {
-   "key": "aomen_mage_llm",
    "title": "中国澳门·妈阁文化",
    "dossier_label": null,
    "subtitle": null,
@@ -24504,7 +24247,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_zhaochongguo_llm": {
-   "key": "qinghai_zhaochongguo_llm",
    "title": "赵充国屯田",
    "dossier_label": null,
    "subtitle": null,
@@ -24523,7 +24265,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_shexiang_llm": {
-   "key": "guizhou_shexiang_llm",
    "title": "奢香夫人",
    "dossier_label": null,
    "subtitle": null,
@@ -24545,7 +24286,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_minyue": {
-   "key": "fujian_minyue",
    "title": "闽越国·无诸归汉（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -24566,7 +24306,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_hexi": {
-   "key": "gansu_hexi",
    "title": "汉·河西四郡与丝绸之路（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -24588,7 +24327,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangdong_nanyue": {
-   "key": "guangdong_nanyue",
    "title": "南越国·赵佗保境（秦汉之际）",
    "dossier_label": null,
    "subtitle": null,
@@ -24609,7 +24347,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_zhaozhou": {
-   "key": "hebei_zhaozhou",
    "title": "隋·赵州桥李春（隋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24628,7 +24365,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hunan_yuelu": {
-   "key": "hunan_yuelu",
    "title": "宋·岳麓书院与湖湘学（宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24647,7 +24383,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shandong_kongzi": {
-   "key": "shandong_kongzi",
    "title": "孔子与儒家学派创立（春秋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24667,7 +24402,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_zhuge": {
-   "key": "sichuan_zhuge",
    "title": "蜀汉丞相诸葛亮治蜀（三国）",
    "dossier_label": null,
    "subtitle": null,
@@ -24688,7 +24422,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_dali": {
-   "key": "yunnan_dali",
    "title": "宋·大理国（宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24710,7 +24443,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhejiang_linan": {
-   "key": "zhejiang_linan",
    "title": "南宋行在临安·江南繁华（宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24731,7 +24463,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_jingdezhen": {
-   "key": "jiangxi_jingdezhen",
    "title": "宋·景德镇瓷业（宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24751,7 +24482,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_sanjiafenjin": {
-   "key": "shanxi_sanjiafenjin",
    "title": "三家分晋·战国开端（春秋末）",
    "dossier_label": null,
    "subtitle": null,
@@ -24770,7 +24500,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_lingqu": {
-   "key": "guangxi_lingqu",
    "title": "秦凿灵渠·沟通湘漓（秦）",
    "dossier_label": null,
    "subtitle": null,
@@ -24791,7 +24520,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heilongjiang_jin": {
-   "key": "heilongjiang_jin",
    "title": "金上京·女真建国（辽金之际）",
    "dossier_label": null,
    "subtitle": null,
@@ -24811,7 +24539,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xinjiang_xiyu": {
-   "key": "xinjiang_xiyu",
    "title": "汉·西域都护府（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -24830,7 +24557,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "neimenggu_liao": {
-   "key": "neimenggu_liao",
    "title": "契丹辽·上京临潢（辽）",
    "dossier_label": null,
    "subtitle": null,
@@ -24851,7 +24577,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_diaoyucheng": {
-   "key": "chongqing_diaoyucheng",
    "title": "宋·钓鱼城之战（宋蒙）",
    "dossier_label": null,
    "subtitle": null,
@@ -24870,7 +24595,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanghai_kaibu": {
-   "key": "shanghai_kaibu",
    "title": "近代·上海开埠（清季）",
    "dossier_label": null,
    "subtitle": null,
@@ -24891,7 +24615,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_yelang": {
-   "key": "guizhou_yelang",
    "title": "汉·夜郎归汉（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -24912,7 +24635,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_xianfuren": {
-   "key": "hainan_xianfuren",
    "title": "隋·冼夫人抚定岭南（隋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24933,7 +24655,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jilin_gaogouli": {
-   "key": "jilin_gaogouli",
    "title": "高句丽·国内城（汉唐之际）",
    "dossier_label": null,
    "subtitle": null,
@@ -24953,7 +24674,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_xixia": {
-   "key": "ningxia_xixia",
    "title": "西夏·兴庆府（宋辽夏之际）",
    "dossier_label": null,
    "subtitle": null,
@@ -24974,7 +24694,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_tuyuhun": {
-   "key": "qinghai_tuyuhun",
    "title": "隋·炀帝西巡·吐谷浑（隋）",
    "dossier_label": null,
    "subtitle": null,
@@ -24994,7 +24713,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_tianjinwei": {
-   "key": "tianjin_tianjinwei",
    "title": "明·天津卫筑城（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -25014,7 +24732,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_tunmen": {
-   "key": "xianggang_tunmen",
    "title": "明·屯门海防（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -25034,7 +24751,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_aomen": {
-   "key": "aomen_aomen",
    "title": "明·澳门赁居（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -25053,7 +24769,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_wencheng": {
-   "key": "xizang_wencheng",
    "title": "唐·文成公主入藏（唐）",
    "dossier_label": null,
    "subtitle": null,
@@ -25074,7 +24789,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_zhengchenggong": {
-   "key": "taiwan_zhengchenggong",
    "title": "明·郑成功收复台湾（明郑）",
    "dossier_label": null,
    "subtitle": null,
@@ -25095,7 +24809,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shandong_jixia": {
-   "key": "shandong_jixia",
    "title": "战国·稷下学宫（诸子百家争鸣）",
    "dossier_label": null,
    "subtitle": null,
@@ -25116,7 +24829,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_shanhaiguan": {
-   "key": "hebei_shanhaiguan",
    "title": "明·山海关筑城（明长城东端锁钥）",
    "dossier_label": null,
    "subtitle": null,
@@ -25136,7 +24848,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hubei_zenghouyi": {
-   "key": "hubei_zenghouyi",
    "title": "战国·曾侯乙编钟（青铜礼乐之极）",
    "dossier_label": null,
    "subtitle": null,
@@ -25155,7 +24866,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_yungang": {
-   "key": "shanxi_yungang",
    "title": "北魏·云冈石窟（昙曜五窟）",
    "dossier_label": null,
    "subtitle": null,
@@ -25176,7 +24886,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_jiayuguan": {
-   "key": "gansu_jiayuguan",
    "title": "明·嘉峪关筑城（明长城西端锁钥）",
    "dossier_label": null,
    "subtitle": null,
@@ -25196,7 +24905,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangdong_guangzhou": {
-   "key": "guangdong_guangzhou",
    "title": "清·广州十三行（一口通商）",
    "dossier_label": null,
    "subtitle": null,
@@ -25216,7 +24924,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_tulou": {
-   "key": "fujian_tulou",
    "title": "明清·福建土楼（客家夯土聚族）",
    "dossier_label": null,
    "subtitle": null,
@@ -25236,7 +24943,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_bailudong": {
-   "key": "jiangxi_bailudong",
    "title": "宋·白鹿洞书院（朱熹定学规）",
    "dossier_label": null,
    "subtitle": null,
@@ -25255,7 +24961,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_dianmian": {
-   "key": "yunnan_dianmian",
    "title": "抗战·滇缅公路（西南生命线）",
    "dossier_label": null,
    "subtitle": null,
@@ -25275,7 +24980,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhejiang_longquan": {
-   "key": "zhejiang_longquan",
    "title": "宋·龙泉窑（青瓷之冠）",
    "dossier_label": null,
    "subtitle": null,
@@ -25296,7 +25000,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qingli_reform_llm": {
-   "key": "qingli_reform_llm",
    "title": "宋·庆历新政（范仲淹十条）",
    "dossier_label": null,
    "subtitle": null,
@@ -25315,7 +25018,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "wuxu_reform_llm": {
-   "key": "wuxu_reform_llm",
    "title": "清·戊戌变法（百日维新）",
    "dossier_label": null,
    "subtitle": null,
@@ -25334,7 +25036,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yangwu_llm": {
-   "key": "yangwu_llm",
    "title": "清·洋务运动（自强求富）",
    "dossier_label": null,
    "subtitle": null,
@@ -25355,7 +25056,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "wangmang_reform_llm": {
-   "key": "wangmang_reform_llm",
    "title": "新莽·王莽改制（托古变法）",
    "dossier_label": null,
    "subtitle": null,
@@ -25375,7 +25075,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiaozi_llm": {
-   "key": "jiaozi_llm",
    "title": "宋·交子（世界最早纸币）",
    "dossier_label": null,
    "subtitle": null,
@@ -25395,7 +25094,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_macanese_llm": {
-   "key": "aomen_macanese_llm",
    "title": "清·澳门土生葡人",
    "dossier_label": null,
    "subtitle": null,
@@ -25416,7 +25114,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chama_xizang_llm": {
-   "key": "chama_xizang_llm",
    "title": "唐蕃·茶马互市",
    "dossier_label": null,
    "subtitle": null,
@@ -25436,7 +25133,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "changsha_yao_llm": {
-   "key": "changsha_yao_llm",
    "title": "唐·长沙窑（铜官窑）",
    "dossier_label": null,
    "subtitle": null,
@@ -25456,7 +25152,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dangar_chama_llm": {
-   "key": "dangar_chama_llm",
    "title": "清·丹噶尔厅茶马互市",
    "dossier_label": null,
    "subtitle": null,
@@ -25476,7 +25171,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jianzhou_nuerhaci_llm": {
-   "key": "jianzhou_nuerhaci_llm",
    "title": "明·建州女真崛起（努尔哈赤）",
    "dossier_label": null,
    "subtitle": null,
@@ -25497,7 +25191,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiupin_zhongzheng_llm": {
-   "key": "jiupin_zhongzheng_llm",
    "title": "曹魏·九品中正制",
    "dossier_label": null,
    "subtitle": null,
@@ -25516,7 +25209,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "kanerjing_llm": {
-   "key": "kanerjing_llm",
    "title": "清·新疆坎儿井",
    "dossier_label": null,
    "subtitle": null,
@@ -25538,7 +25230,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "longquan_yao_llm": {
-   "key": "longquan_yao_llm",
    "title": "宋·龙泉窑",
    "dossier_label": null,
    "subtitle": null,
@@ -25559,7 +25250,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ming_yuzhen_xia_llm": {
-   "key": "ming_yuzhen_xia_llm",
    "title": "元末·明玉珍大夏国",
    "dossier_label": null,
    "subtitle": null,
@@ -25580,7 +25270,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "mohe_gold_llm": {
-   "key": "mohe_gold_llm",
    "title": "清·漠河金矿",
    "dossier_label": null,
    "subtitle": null,
@@ -25601,7 +25290,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "nongzhigao_llm": {
-   "key": "nongzhigao_llm",
    "title": "宋·侬智高起事",
    "dossier_label": null,
    "subtitle": null,
@@ -25620,7 +25308,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shen_baozhen_taiwan_llm": {
-   "key": "shen_baozhen_taiwan_llm",
    "title": "清·沈葆桢治台",
    "dossier_label": null,
    "subtitle": null,
@@ -25641,7 +25328,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sushi_danzhou_llm": {
-   "key": "sushi_danzhou_llm",
    "title": "宋·苏东坡贬儋州",
    "dossier_label": null,
    "subtitle": null,
@@ -25662,7 +25348,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tan_ding_llm": {
-   "key": "tan_ding_llm",
    "title": "清·摊丁入亩",
    "dossier_label": null,
    "subtitle": null,
@@ -25682,7 +25367,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_nanbeihang_llm": {
-   "key": "xianggang_nanbeihang_llm",
    "title": "清·香港南北行华商",
    "dossier_label": null,
    "subtitle": null,
@@ -25703,7 +25387,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yuan_shangdu_llm": {
-   "key": "yuan_shangdu_llm",
    "title": "元·上都（开平）",
    "dossier_label": null,
    "subtitle": null,
@@ -25725,7 +25408,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zuyong_diao_llm": {
-   "key": "zuyong_diao_llm",
    "title": "唐·租庸调制",
    "dossier_label": null,
    "subtitle": null,
@@ -25746,7 +25428,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_lingzhou_llm": {
-   "key": "ningxia_lingzhou_llm",
    "title": "唐·灵州朔方",
    "dossier_label": null,
    "subtitle": null,
@@ -25765,7 +25446,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_jiqiju_llm": {
-   "key": "tianjin_jiqiju_llm",
    "title": "清·天津机器局",
    "dossier_label": null,
    "subtitle": null,
@@ -25785,7 +25465,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heilongjiang_chuangguan_llm": {
-   "key": "heilongjiang_chuangguan_llm",
    "title": "闯关东·直鲁移民与黑龙江开发（清末民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -25806,7 +25485,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "heilongjiang_suifenhe_llm": {
-   "key": "heilongjiang_suifenhe_llm",
    "title": "中东铁路与哈尔滨·绥芬河商埠（1898—1931）",
    "dossier_label": null,
    "subtitle": null,
@@ -25826,7 +25504,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hubei_hankou_llm": {
-   "key": "hubei_hankou_llm",
    "title": "汉口开埠与长江中游商埠（1861）",
    "dossier_label": null,
    "subtitle": null,
@@ -25848,7 +25525,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hubei_wuchang_llm": {
-   "key": "hubei_wuchang_llm",
    "title": "武昌起义与辛亥首义（1911）",
    "dossier_label": null,
    "subtitle": null,
@@ -25866,7 +25542,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jilin_changbaishan_llm": {
-   "key": "jilin_changbaishan_llm",
    "title": "长白山采参与松花江渔猎（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -25886,7 +25561,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jilin_yanbian_llm": {
-   "key": "jilin_yanbian_llm",
    "title": "延边朝鲜族迁入与开发（同治—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -25906,7 +25580,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanghai_shangwu_llm": {
-   "key": "shanghai_shangwu_llm",
    "title": "上海商务印书馆与近代出版业（1897—1949）",
    "dossier_label": null,
    "subtitle": null,
@@ -25927,7 +25600,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanghai_xinhai_llm": {
-   "key": "shanghai_xinhai_llm",
    "title": "上海光复与沪军都督府（1911）",
    "dossier_label": null,
    "subtitle": null,
@@ -25947,7 +25619,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xinjiang_gaochang_llm": {
-   "key": "xinjiang_gaochang_llm",
    "title": "高昌佛教与丝路文化（麴氏高昌·唐西州）",
    "dossier_label": null,
    "subtitle": null,
@@ -25969,7 +25640,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xinjiang_jiansheng_llm": {
-   "key": "xinjiang_jiansheng_llm",
    "title": "新疆建省与行省改制（1884）",
    "dossier_label": null,
    "subtitle": null,
@@ -25990,7 +25660,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_duwenxiu_llm": {
-   "key": "yunnan_duwenxiu_llm",
    "title": "云南回民起义与杜文秀大理政权（1856—1873）",
    "dossier_label": null,
    "subtitle": null,
@@ -26012,7 +25681,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_quhuanzhang_llm": {
-   "key": "yunnan_quhuanzhang_llm",
    "title": "曲焕章与云南白药（1902）",
    "dossier_label": null,
    "subtitle": null,
@@ -26032,7 +25700,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_linxia_huihui_llm": {
-   "key": "gansu_linxia_huihui_llm",
    "title": "临夏回族与清真寺群（明清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26054,7 +25721,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "gansu_tianshui_fuxi_llm": {
-   "key": "gansu_tianshui_fuxi_llm",
    "title": "天水伏羲与卦台山（先秦）",
    "dossier_label": null,
    "subtitle": null,
@@ -26076,7 +25742,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_nanning_kaibu_llm": {
-   "key": "guangxi_nanning_kaibu_llm",
    "title": "南宁开埠与龙州商埠（1907）",
    "dossier_label": null,
    "subtitle": null,
@@ -26097,7 +25762,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangxi_zhuangzu_llm": {
-   "key": "guangxi_zhuangzu_llm",
    "title": "壮族文化与铜鼓（唐宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -26119,7 +25783,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_tianlongshan_llm": {
-   "key": "guizhou_tianlongshan_llm",
    "title": "贵州佛教·天龙山与青龙洞（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26140,7 +25803,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_zhangxiumei_llm": {
-   "key": "guizhou_zhangxiumei_llm",
    "title": "张秀眉黔东南苗民起义（1855—1872）",
    "dossier_label": null,
    "subtitle": null,
@@ -26161,7 +25823,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_yanzhao_wenhua_llm": {
-   "key": "hebei_yanzhao_wenhua_llm",
    "title": "燕赵文化与河北梆子（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26181,7 +25842,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_zhili_xinzheng_llm": {
-   "key": "hebei_zhili_xinzheng_llm",
    "title": "直隶新政与北洋新政（1901—1911）",
    "dossier_label": null,
    "subtitle": null,
@@ -26203,7 +25863,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "neimenggu_keerqin_llm": {
-   "key": "neimenggu_keerqin_llm",
    "title": "科尔沁蒙古与清廷联姻（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26223,7 +25882,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_chuanzong_huguang_llm": {
-   "key": "sichuan_chuanzong_huguang_llm",
    "title": "湖广填四川与大移民（清初）",
    "dossier_label": null,
    "subtitle": null,
@@ -26245,7 +25903,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_gaitu_guizhou_llm": {
-   "key": "sichuan_gaitu_guizhou_llm",
    "title": "鄂尔泰改土归流（雍正·1726—1731）",
    "dossier_label": null,
    "subtitle": null,
@@ -26265,7 +25922,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "neimenggu_huhehaote_llm": {
-   "key": "neimenggu_huhehaote_llm",
    "title": "归化城与旅蒙商（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26286,7 +25942,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangdong_luofushan_llm": {
-   "key": "guangdong_luofushan_llm",
    "title": "葛洪罗浮山炼丹与道教南传（东晋）",
    "dossier_label": null,
    "subtitle": null,
@@ -26307,7 +25962,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangdong_nanhai_maritime_llm": {
-   "key": "guangdong_nanhai_maritime_llm",
    "title": "汉唐南海海上丝路·广州通海夷道",
    "dossier_label": null,
    "subtitle": null,
@@ -26329,7 +25983,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_jianxing_llm": {
-   "key": "guizhou_jianxing_llm",
    "title": "明永乐贵州建省（1413）",
    "dossier_label": null,
    "subtitle": null,
@@ -26350,7 +26003,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guizhou_minority_craft_llm": {
-   "key": "guizhou_minority_craft_llm",
    "title": "苗侗银饰与鼓楼营造（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26370,7 +26022,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hunan_wenxi_fire_llm": {
-   "key": "hunan_wenxi_fire_llm",
    "title": "长沙文夕大火（1938）",
    "dossier_label": null,
    "subtitle": null,
@@ -26387,7 +26038,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hunan_xiangjun_llm": {
-   "key": "hunan_xiangjun_llm",
    "title": "湘军与晚清兵制变革（1852—1864）",
    "dossier_label": null,
    "subtitle": null,
@@ -26407,7 +26057,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_dangxiang_llm": {
-   "key": "ningxia_dangxiang_llm",
    "title": "党项羌游牧—农耕转型（宋—夏）",
    "dossier_label": null,
    "subtitle": null,
@@ -26428,7 +26077,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ningxia_xixia_tomb_llm": {
-   "key": "ningxia_xixia_tomb_llm",
    "title": "西夏王陵与贺兰山岩画（宋—夏）",
    "dossier_label": null,
    "subtitle": null,
@@ -26449,7 +26097,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_bashu_bronze_llm": {
-   "key": "sichuan_bashu_bronze_llm",
    "title": "古蜀青铜文明·三星堆与金沙（商—周）",
    "dossier_label": null,
    "subtitle": null,
@@ -26469,7 +26116,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "sichuan_libai_llm": {
-   "key": "sichuan_libai_llm",
    "title": "李白与巴蜀文学（唐）",
    "dossier_label": null,
    "subtitle": null,
@@ -26489,7 +26135,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_concession_llm": {
-   "key": "tianjin_concession_llm",
    "title": "天津九国租界（1860—1902）",
    "dossier_label": null,
    "subtitle": null,
@@ -26511,7 +26156,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_railway_llm": {
-   "key": "tianjin_railway_llm",
    "title": "津沽铁路与中国自建铁路（1888）",
    "dossier_label": null,
    "subtitle": null,
@@ -26532,7 +26176,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_fortress_llm": {
-   "key": "aomen_fortress_llm",
    "title": "澳门炮台与城防（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26552,7 +26195,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "aomen_stpaul_llm": {
-   "key": "aomen_stpaul_llm",
    "title": "大三巴与圣保禄学院（1594—1835）",
    "dossier_label": null,
    "subtitle": null,
@@ -26573,7 +26215,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_ciqikou_llm": {
-   "key": "chongqing_ciqikou_llm",
    "title": "重庆码头与巴渝商埠（清—近现代）",
    "dossier_label": null,
    "subtitle": null,
@@ -26595,7 +26236,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_dazu_llm": {
-   "key": "chongqing_dazu_llm",
    "title": "大足石窟与佛教造像（唐—宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -26616,7 +26256,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_tea_llm": {
-   "key": "fujian_tea_llm",
    "title": "武夷茶事与乌龙制作（清—近现代）",
    "dossier_label": null,
    "subtitle": null,
@@ -26637,7 +26276,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_zen_llm": {
-   "key": "fujian_zen_llm",
    "title": "雪峰禅法与福建禅宗（唐—五代）",
    "dossier_label": null,
    "subtitle": null,
@@ -26657,7 +26295,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_li_llm": {
-   "key": "hainan_li_llm",
    "title": "黎族船形屋与棉纺（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26677,7 +26314,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hainan_qiongyai_llm": {
-   "key": "hainan_qiongyai_llm",
    "title": "琼崖纵队与海南解放（1927—1950）",
    "dossier_label": null,
    "subtitle": null,
@@ -26698,7 +26334,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_ganjiang_llm": {
-   "key": "jiangxi_ganjiang_llm",
    "title": "赣江航运与江右商帮（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26719,7 +26354,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangxi_lushan_llm": {
-   "key": "jiangxi_lushan_llm",
    "title": "慧远庐山创净土宗（东晋）",
    "dossier_label": null,
    "subtitle": null,
@@ -26738,7 +26372,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_koko_llm": {
-   "key": "qinghai_koko_llm",
    "title": "青海湖与吐谷浑伏俟城（隋）",
    "dossier_label": null,
    "subtitle": null,
@@ -26758,7 +26391,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qinghai_longwu_llm": {
-   "key": "qinghai_longwu_llm",
    "title": "隆务寺与热贡艺术（明—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26778,7 +26410,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shandong_canal_llm": {
-   "key": "shandong_canal_llm",
    "title": "会通河与山东运河（元—明）",
    "dossier_label": null,
    "subtitle": null,
@@ -26798,7 +26429,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shandong_kongfu_llm": {
-   "key": "shandong_kongfu_llm",
    "title": "孔府与衍圣公世袭（宋—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26818,7 +26448,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_pingyao_llm": {
-   "key": "shanxi_pingyao_llm",
    "title": "平遥古城营建与城防（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -26839,7 +26468,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_yuncheng_llm": {
-   "key": "shanxi_yuncheng_llm",
    "title": "河东盐池与盐铁之利（汉—清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26860,7 +26488,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_camphor_llm": {
-   "key": "taiwan_camphor_llm",
    "title": "樟脑与茶业出口（清—日据）",
    "dossier_label": null,
    "subtitle": null,
@@ -26880,7 +26507,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_dutch_llm": {
-   "key": "taiwan_dutch_llm",
    "title": "荷兰据台与热兰遮城（1624—1662）",
    "dossier_label": null,
    "subtitle": null,
@@ -26899,7 +26525,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_tram_llm": {
-   "key": "xianggang_tram_llm",
    "title": "山顶缆车与电车（1888—1904）",
    "dossier_label": null,
    "subtitle": null,
@@ -26919,7 +26544,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xianggang_university_llm": {
-   "key": "xianggang_university_llm",
    "title": "香港大学创立（1911）",
    "dossier_label": null,
    "subtitle": null,
@@ -26940,7 +26564,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_amban_llm": {
-   "key": "xizang_amban_llm",
    "title": "清朝驻藏大臣与金瓶掣签（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -26960,7 +26583,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_pagoda_llm": {
-   "key": "xizang_pagoda_llm",
    "title": "桑耶寺与藏传佛教前弘期（唐）",
    "dossier_label": null,
    "subtitle": null,
@@ -26982,7 +26604,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "anhui_daizhen_llm": {
-   "key": "anhui_daizhen_llm",
    "title": "戴震·皖派朴学与理欲之辨（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27003,7 +26624,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "anhui_huizhou_llm": {
-   "key": "anhui_huizhou_llm",
    "title": "徽州宗族与祠堂族长社会（明清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27023,7 +26643,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "beijing_banner_llm": {
-   "key": "beijing_banner_llm",
    "title": "旗民分城与北京内城外城社会（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27042,7 +26661,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "beijing_qianjia_llm": {
-   "key": "beijing_qianjia_llm",
    "title": "乾嘉考据学与四库全书馆（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27061,7 +26679,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_paoge_llm": {
-   "key": "chongqing_paoge_llm",
    "title": "重庆袍哥与哥老会江湖社会（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27080,7 +26697,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chongqing_zourong_llm": {
-   "key": "chongqing_zourong_llm",
    "title": "邹容《革命军》与排满革命思想（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27099,7 +26715,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangsu_jihu_llm": {
-   "key": "jiangsu_jihu_llm",
    "title": "江南机户出资与织工社会（明清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27119,7 +26734,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangsu_taizhou_llm": {
-   "key": "jiangsu_taizhou_llm",
    "title": "泰州学派·王艮与平民儒学（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -27139,7 +26753,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_xunzi_llm": {
-   "key": "shanxi_xunzi_llm",
    "title": "荀子·赵地与性恶论（战国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27158,7 +26771,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_zouxikou_llm": {
-   "key": "shanxi_zouxikou_llm",
    "title": "走西口与口外移民垦殖（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27180,7 +26792,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_kekuan_llm": {
-   "key": "taiwan_kekuan_llm",
    "title": "闽客拓垦与汉番共生社会（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27201,7 +26812,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "taiwan_qiufengjia_llm": {
-   "key": "taiwan_qiufengjia_llm",
    "title": "丘逢甲·乙未割台与诗界革命（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27221,7 +26831,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_jiaohang_llm": {
-   "key": "tianjin_jiaohang_llm",
    "title": "天津脚行与码头苦力社会（清末民初）",
    "dossier_label": null,
    "subtitle": null,
@@ -27243,7 +26852,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_yanfu_llm": {
-   "key": "tianjin_yanfu_llm",
    "title": "严复《天演论》与近代启蒙（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27263,7 +26871,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_xika_llm": {
-   "key": "xizang_xika_llm",
    "title": "谿卡庄园与西藏农奴社会（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27281,7 +26888,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xizang_zongkaba_llm": {
-   "key": "xizang_zongkaba_llm",
    "title": "宗喀巴·格鲁派宗教改革（明）",
    "dossier_label": null,
    "subtitle": null,
@@ -27300,7 +26906,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_gaitu_llm": {
-   "key": "yunnan_gaitu_llm",
    "title": "改土归流与云南边疆土司社会（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27322,7 +26927,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yunnan_lianda_llm": {
-   "key": "yunnan_lianda_llm",
    "title": "西南联大与战时自由主义学术（1937—1946）",
    "dossier_label": null,
    "subtitle": null,
@@ -27342,7 +26946,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhejiang_ningbo_llm": {
-   "key": "zhejiang_ningbo_llm",
    "title": "宁波帮与近代金融商帮社会（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27361,7 +26964,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhejiang_yongjia_llm": {
-   "key": "zhejiang_yongjia_llm",
    "title": "永嘉事功学派·陈亮叶适（宋）",
    "dossier_label": null,
    "subtitle": null,
@@ -27379,7 +26981,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "beijing_beping_llm": {
-   "key": "beijing_beping_llm",
    "title": "北平和平解放（1949）",
    "dossier_label": null,
    "subtitle": null,
@@ -27396,7 +26997,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "beijing_jinghan_llm": {
-   "key": "beijing_jinghan_llm",
    "title": "京汉铁路与二七大罢工（1923）",
    "dossier_label": null,
    "subtitle": null,
@@ -27414,7 +27014,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_kailuan_llm": {
-   "key": "hebei_kailuan_llm",
    "title": "开滦煤矿与华北工人运动（清—民国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27434,7 +27033,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_zhili_llm": {
-   "key": "hebei_zhili_llm",
    "title": "直隶总督与直隶省（清）",
    "dossier_label": null,
    "subtitle": null,
@@ -27453,7 +27051,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "henan_zhengzhuang_llm": {
-   "key": "henan_zhengzhuang_llm",
    "title": "郑庄公小霸与王纲解纽（春秋）",
    "dossier_label": null,
    "subtitle": null,
@@ -27474,7 +27071,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hubei_chuwu_llm": {
-   "key": "hubei_chuwu_llm",
    "title": "楚武王称王与荆楚扩张（春秋）",
    "dossier_label": null,
    "subtitle": null,
@@ -27494,7 +27090,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shaanxi_hanchang_llm": {
-   "key": "shaanxi_hanchang_llm",
    "title": "汉长安与关中之漕（汉）",
    "dossier_label": null,
    "subtitle": null,
@@ -27515,7 +27110,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shaanxi_shangyang_llm": {
-   "key": "shaanxi_shangyang_llm",
    "title": "秦孝公商鞅变法（战国）",
    "dossier_label": null,
    "subtitle": null,
@@ -27533,7 +27127,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shaanxi_zhengguoqu_llm": {
-   "key": "shaanxi_zhengguoqu_llm",
    "title": "郑国渠与秦关中水利（战国—秦）",
    "dossier_label": null,
    "subtitle": null,
@@ -27552,7 +27145,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shaanxi_zhouyuan_llm": {
-   "key": "shaanxi_zhouyuan_llm",
    "title": "周原与西周封建肇基（西周）",
    "dossier_label": null,
    "subtitle": null,
@@ -27573,7 +27165,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shandong_guanzhong_llm": {
-   "key": "shandong_guanzhong_llm",
    "title": "管仲相齐与齐桓公霸业（春秋）",
    "dossier_label": null,
    "subtitle": null,
@@ -27594,7 +27185,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_jinwen_llm": {
-   "key": "shanxi_jinwen_llm",
    "title": "晋文公称霸与城濮之役（春秋）",
    "dossier_label": null,
    "subtitle": null,
@@ -27613,7 +27203,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tianjin_xiaozhan_llm": {
-   "key": "tianjin_xiaozhan_llm",
    "title": "小站练兵与北洋新军（1895）",
    "dossier_label": null,
    "subtitle": null,
@@ -27633,7 +27222,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fujian_yisibaxi_llm": {
-   "key": "fujian_yisibaxi_llm",
    "title": "元末闽海亦思巴奚之乱（元末）",
    "dossier_label": null,
    "subtitle": null,
@@ -27653,7 +27241,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hebei_yuanqu_llm": {
-   "key": "hebei_yuanqu_llm",
    "title": "元曲与关汉卿（元）",
    "dossier_label": null,
    "subtitle": null,
@@ -27673,7 +27260,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "henan_keju_llm": {
-   "key": "henan_keju_llm",
    "title": "隋唐科举制肇始（隋—唐）",
    "dossier_label": null,
    "subtitle": null,
@@ -27693,7 +27279,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jiangsu_zhangshicheng_llm": {
-   "key": "jiangsu_zhangshicheng_llm",
    "title": "张士诚据平江（元末）",
    "dossier_label": null,
    "subtitle": null,
@@ -27713,7 +27298,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "shanxi_jinyang_llm": {
-   "key": "shanxi_jinyang_llm",
    "title": "李渊晋阳起兵与唐室肇基（隋末）",
    "dossier_label": null,
    "subtitle": null,
@@ -27730,7 +27314,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dujiangyan_llm": {
-   "key": "dujiangyan_llm",
    "title": "都江堰与战国蜀的水利革命",
    "dossier_label": "都江堰与战国蜀的水利革命",
    "subtitle": "都江堰与战国蜀的水利革命",
@@ -27749,7 +27332,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guo_shoujing_llm": {
-   "key": "guo_shoujing_llm",
    "title": "郭守敬与授时历",
    "dossier_label": "郭守敬与授时历",
    "subtitle": "郭守敬与授时历",
@@ -27769,7 +27351,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "jia_sixie_llm": {
-   "key": "jia_sixie_llm",
    "title": "贾思勰与齐民要术",
    "dossier_label": "贾思勰与齐民要术",
    "subtitle": "贾思勰与齐民要术",
@@ -27788,7 +27369,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "li_shizhen_llm": {
-   "key": "li_shizhen_llm",
    "title": "李时珍与本草纲目",
    "dossier_label": "李时珍与本草纲目",
    "subtitle": "李时珍与本草纲目",
@@ -27807,7 +27387,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "lingqu_llm": {
-   "key": "lingqu_llm",
    "title": "灵渠与秦始皇南征岭南",
    "dossier_label": "灵渠与秦始皇南征岭南",
    "subtitle": "灵渠与秦始皇南征岭南",
@@ -27828,7 +27407,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zhangheng_llm": {
-   "key": "zhangheng_llm",
    "title": "张衡与候风地动仪",
    "dossier_label": "张衡与候风地动仪",
    "subtitle": "张衡与候风地动仪",
@@ -27847,7 +27425,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "zu_chongzhi_llm": {
-   "key": "zu_chongzhi_llm",
    "title": "祖冲之与圆周率",
    "dossier_label": "祖冲之与圆周率",
    "subtitle": "祖冲之与圆周率",
@@ -27866,7 +27443,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "cross_dynastic_crops_llm": {
-   "key": "cross_dynastic_crops_llm",
    "title": "美洲作物（玉米·番薯）传入与明清农业革命",
    "dossier_label": "美洲作物（玉米·番薯）传入与明清农业革命",
    "subtitle": "美洲作物（玉米·番薯）传入与明清农业革命",
@@ -27887,7 +27463,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangzhong_simaqian_llm": {
-   "key": "guangzhong_simaqian_llm",
    "title": "司马迁与《史记》（西汉）",
    "dossier_label": "司马迁与《史记》（西汉）",
    "subtitle": "司马迁与《史记》（西汉）",
@@ -27907,7 +27482,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "guangzhong_zhidao_llm": {
-   "key": "guangzhong_zhidao_llm",
    "title": "秦直道与蒙恬北边经营（秦始皇三十五年）",
    "dossier_label": "秦直道与蒙恬北边经营（秦始皇三十五年）",
    "subtitle": "秦直道与蒙恬北边经营（秦始皇三十五年）",
@@ -27926,7 +27500,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "huabei_boxer_llm": {
-   "key": "huabei_boxer_llm",
    "title": "义和团运动与华北社会（1899–1901）",
    "dossier_label": "义和团运动与华北社会（1899–1901）",
    "subtitle": "义和团运动与华北社会（1899–1901）",
@@ -27947,7 +27520,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "huabei_jingzhang_llm": {
-   "key": "huabei_jingzhang_llm",
    "title": "京张铁路与詹天佑（1905–1909）",
    "dossier_label": "京张铁路与詹天佑（1905–1909）",
    "subtitle": "京张铁路与詹天佑（1905–1909）",
@@ -27967,7 +27539,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "han_dushi_shuipai_llm": {
-   "key": "han_dushi_shuipai_llm",
    "title": "杜诗水排与水力鼓铸（汉·南阳）",
    "dossier_label": "杜诗水排与水力鼓铸（汉·南阳）",
    "subtitle": "杜诗水排与水力鼓铸（汉·南阳）",
@@ -27988,7 +27559,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "han_jiliguche_llm": {
-   "key": "han_jiliguche_llm",
    "title": "记里鼓车与机械里程（汉）",
    "dossier_label": "记里鼓车与机械里程（汉）",
    "subtitle": "记里鼓车与机械里程（汉）",
@@ -28006,7 +27576,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "han_longshouqu_llm": {
-   "key": "han_longshouqu_llm",
    "title": "龙首渠与井渠法（汉）",
    "dossier_label": "龙首渠与井渠法（汉）",
    "subtitle": "龙首渠与井渠法（汉）",
@@ -28025,7 +27594,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "han_tihuajing_llm": {
-   "key": "han_tihuajing_llm",
    "title": "汉锦与提花织机（汉·临淄）",
    "dossier_label": "汉锦与提花织机（汉·临淄）",
    "subtitle": "汉锦与提花织机（汉·临淄）",
@@ -28043,7 +27611,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "ming_tiangong_llm": {
-   "key": "ming_tiangong_llm",
    "title": "宋应星与《天工开物》（明·江西）",
    "dossier_label": "宋应星与《天工开物》（明·江西）",
    "subtitle": "宋应星与《天工开物》（明·江西）",
@@ -28064,7 +27631,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tang_qulunli_llm": {
-   "key": "tang_qulunli_llm",
    "title": "曲辕犁与筒车（唐·江东）",
    "dossier_label": "曲辕犁与筒车（唐·江东）",
    "subtitle": "曲辕犁与筒车（唐·江东）",
@@ -28084,7 +27650,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "tang_yixing_llm": {
-   "key": "tang_yixing_llm",
    "title": "一行与水运浑天仪（唐）",
    "dossier_label": "一行与水运浑天仪（唐）",
    "subtitle": "一行与水运浑天仪（唐）",
@@ -28105,7 +27670,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "three_kingdoms_fanche_llm": {
-   "key": "three_kingdoms_fanche_llm",
    "title": "马钧与翻车（三国·魏）",
    "dossier_label": "马钧与翻车（三国·魏）",
    "subtitle": "马钧与翻车（三国·魏）",
@@ -28125,7 +27689,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yuan_qinghua_llm": {
-   "key": "yuan_qinghua_llm",
    "title": "青花瓷与景德镇窑业（元）",
    "dossier_label": "青花瓷与景德镇窑业（元）",
    "subtitle": "青花瓷与景德镇窑业（元）",
@@ -28146,7 +27709,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yuan_wangzhen_llm": {
-   "key": "yuan_wangzhen_llm",
    "title": "王祯《农书》与转轮排字（元·山东）",
    "dossier_label": "王祯《农书》与转轮排字（元·山东）",
    "subtitle": "王祯《农书》与转轮排字（元·山东）",
@@ -28166,7 +27728,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_chengyu_railway_llm": {
-   "key": "prc_chengyu_railway_llm",
    "title": "成渝铁路（1950–1952·四川）",
    "dossier_label": "成渝铁路（1950–1952·四川）",
    "subtitle": "成渝铁路（1950–1952·四川）",
@@ -28187,7 +27748,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_hongqi_qu_llm": {
-   "key": "prc_hongqi_qu_llm",
    "title": "红旗渠（1960–1969·河南林县）",
    "dossier_label": "红旗渠（1960–1969·河南林县）",
    "subtitle": "红旗渠（1960–1969·河南林县）",
@@ -28208,7 +27768,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_liangdanyixing_llm": {
-   "key": "prc_liangdanyixing_llm",
    "title": "两弹一星（1964–1970）",
    "dossier_label": "两弹一星（1964–1970）",
    "subtitle": "两弹一星（1964–1970）",
@@ -28229,7 +27788,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_nanjing_bridge_llm": {
-   "key": "prc_nanjing_bridge_llm",
    "title": "南京长江大桥（1960–1968·江苏）",
    "dossier_label": "南京长江大桥（1960–1968·江苏）",
    "subtitle": "南京长江大桥（1960–1968·江苏）",
@@ -28249,7 +27807,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_qingzang_railway_llm": {
-   "key": "prc_qingzang_railway_llm",
    "title": "青藏铁路（2001–2006）",
    "dossier_label": "青藏铁路（2001–2006）",
    "subtitle": "青藏铁路（2001–2006）",
@@ -28269,7 +27826,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_shenzhen_sez_llm": {
-   "key": "prc_shenzhen_sez_llm",
    "title": "深圳经济特区设立（1979–1984·广东）",
    "dossier_label": "深圳经济特区设立（1979–1984·广东）",
    "subtitle": "深圳经济特区设立（1979–1984·广东）",
@@ -28291,7 +27847,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_shenzhou_llm": {
-   "key": "prc_shenzhou_llm",
    "title": "神舟飞船与首次载人航天（1999–2003）",
    "dossier_label": "神舟飞船与首次载人航天（1999–2003）",
    "subtitle": "神舟飞船与首次载人航天（1999–2003）",
@@ -28310,7 +27865,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_three_gorges_llm": {
-   "key": "prc_three_gorges_llm",
    "title": "长江三峡工程（1994–2006·湖北）",
    "dossier_label": "长江三峡工程（1994–2006·湖北）",
    "subtitle": "长江三峡工程（1994–2006·湖北）",
@@ -28331,7 +27885,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_wuhan_bridge_llm": {
-   "key": "prc_wuhan_bridge_llm",
    "title": "武汉长江大桥（1955–1957·湖北）",
    "dossier_label": "武汉长江大桥（1955–1957·湖北）",
    "subtitle": "武汉长江大桥（1955–1957·湖北）",
@@ -28351,7 +27904,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "prc_yuanlongping_llm": {
-   "key": "prc_yuanlongping_llm",
    "title": "袁隆平与杂交水稻（1970–1973·湖南）",
    "dossier_label": "袁隆平与杂交水稻（1970–1973·湖南）",
    "subtitle": "袁隆平与杂交水稻（1970–1973·湖南）",
@@ -28369,7 +27921,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "langzhong": {
-   "key": "langzhong",
    "title": "阆中（张飞镇巴西）",
    "dossier_label": "阆中",
    "subtitle": "蜀汉巴西郡治 · 张飞镇守七年 · 宕渠破张郃",
@@ -28391,7 +27942,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "quanzhou": {
-   "key": "quanzhou",
    "title": "泉州（刺桐港·海丝起点）",
    "dossier_label": "泉州",
    "subtitle": "宋元刺桐港 · 市舶司 · 蕃商云集 · 多教并存",
@@ -28413,7 +27963,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dali": {
-   "key": "dali",
    "title": "大理（苍洱之地·南诏大理国）",
    "dossier_label": "大理",
    "subtitle": "苍山洱海 · 南诏统一 · 大理国都 · 佛儒并存",
@@ -28435,7 +27984,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "pingyao": {
-   "key": "pingyao",
    "title": "平遥（明清票号金融·晋商·城墙）",
    "dossier_label": "平遥",
    "subtitle": "汾河平川 · 明初城墙 · 日昇昌票号 · 晋商金融中枢",
@@ -28457,7 +28005,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yixian": {
-   "key": "yixian",
    "title": "黟县（皖南古村落·西递宏村·徽派）",
    "dossier_label": "黟县",
    "subtitle": "皖南山水 · 西递宏村 · 徽派建筑 · 儒商宗族",
@@ -28479,7 +28026,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "fenghuang": {
-   "key": "fenghuang",
    "title": "凤凰（湘西边城·苗土风情）",
    "dossier_label": "凤凰",
    "subtitle": "武陵山麓 · 沱江吊脚楼 · 苗疆边墙 · 边城文学",
@@ -28501,7 +28047,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chaozhou": {
-   "key": "chaozhou",
    "title": "潮州（海滨邹鲁·潮商·广济桥）",
    "dossier_label": "潮州",
    "subtitle": "韩江三角洲 · 广济桥 · 潮商网络 · 儒学南传",
@@ -28523,7 +28068,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "qufu": {
-   "key": "qufu",
    "title": "曲阜（孔子故里·儒源·三孔）",
    "dossier_label": "曲阜",
    "subtitle": "鲁国故都 · 孔庙孔林孔府 · 儒学圣地 · 邹鲁之源",
@@ -28545,7 +28089,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "hangzhou": {
-   "key": "hangzhou",
    "title": "杭州（西湖·临安·吴越）",
    "dossier_label": "杭州",
    "subtitle": "江南运河南端 · 西湖十景 · 南宋行在 · 吴越保境",
@@ -28567,7 +28110,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "suzhou": {
-   "key": "suzhou",
    "title": "苏州（古典园林·平江·吴门）",
    "dossier_label": "苏州",
    "subtitle": "江南运河枢纽 · 古典园林 · 平江水城 · 吴门雅集",
@@ -28589,7 +28131,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "lushan": {
-   "key": "lushan",
    "title": "庐山（净土祖庭·白鹿洞·牯岭）",
    "dossier_label": "庐山",
    "subtitle": "断块名山 · 净土源 · 白鹿洞书院 · 中西别墅",
@@ -28611,7 +28152,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xian": {
-   "key": "xian",
    "title": "西安（长安·汉唐都城·丝路起点）",
    "dossier_label": "西安",
    "subtitle": "汉唐都城 · 丝路东端 · 八水形胜 · 译经中心",
@@ -28633,7 +28173,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "dunhuang": {
-   "key": "dunhuang",
    "title": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
    "dossier_label": "敦煌",
    "subtitle": "丝路咽喉 · 莫高窟 · 河西走廊西端 · 藏经洞",
@@ -28655,7 +28194,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "luoyang": {
-   "key": "luoyang",
    "title": "洛阳（十三朝古都·龙门石窟·隋唐东都）",
    "dossier_label": "洛阳",
    "subtitle": "十三朝古都 · 龙门石窟 · 隋唐东都 · 丝路东端",
@@ -28677,7 +28215,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "chengde": {
-   "key": "chengde",
    "title": "承德（避暑山庄·外八庙·木兰秋狝）",
    "dossier_label": "承德",
    "subtitle": "避暑山庄 · 外八庙 · 木兰秋狝 · 清夏都",
@@ -28699,7 +28236,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "wuyishan": {
-   "key": "wuyishan",
    "title": "武夷山（丹霞·朱子理学·红茶）",
    "dossier_label": "武夷山",
    "subtitle": "丹霞地貌 · 朱子理学 · 武夷红茶 · 万里茶道",
@@ -28721,7 +28257,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "yinchuan": {
-   "key": "yinchuan",
    "title": "银川（西夏兴庆府·贺兰山·党项故地）",
    "dossier_label": "银川",
    "subtitle": "西夏兴庆府 · 贺兰山 · 西夏王陵 · 塞上江南",
@@ -28743,7 +28278,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "xining": {
-   "key": "xining",
    "title": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
    "dossier_label": "西宁",
    "subtitle": "唐蕃古道 · 青唐城 · 塔尔寺 · 青海湖",
@@ -28765,7 +28299,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "turpan": {
-   "key": "turpan",
    "title": "吐鲁番（高昌国·交河故城·坎儿井）",
    "dossier_label": "吐鲁番",
    "subtitle": "高昌故城 · 交河故城 · 坎儿井 · 丝路绿洲",
@@ -28787,7 +28320,6 @@ window.SANDBOX_DATA = {
    "scale_tier": "operational"
   },
   "lhasa": {
-   "key": "lhasa",
    "title": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
    "dossier_label": "拉萨",
    "subtitle": "逻娑 · 布达拉宫 · 大昭寺 · 唐蕃会盟碑",
@@ -28795,6 +28327,27 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=lhasa",
    "vocab_pack": "lhasa",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
+  },
+  "zunyi": {
+   "title": "遵义（播州土司·茅台·海龙屯）",
+   "dossier_label": "遵义",
+   "subtitle": "播州 · 海龙屯 · 茅台 · 土司改流",
+   "kind": "county",
+   "region": "chuan_gui",
+   "page": "county.html?scene=zunyi",
+   "vocab_pack": "zunyi",
    "terrain_grid": "china_coarse",
    "terrain_off_grid": false,
    "dims": [
@@ -29279,7 +28832,8 @@ window.SANDBOX_DATA = {
   "yinchuan": "slices/yinchuan.js",
   "xining": "slices/xining.js",
   "turpan": "slices/turpan.js",
-  "lhasa": "slices/lhasa.js"
+  "lhasa": "slices/lhasa.js",
+  "zunyi": "slices/zunyi.js"
  },
  "corridors": [
   {

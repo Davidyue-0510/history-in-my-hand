@@ -1,8 +1,8 @@
 {
-  "scenes_total": 470,
-  "historical": 461,
+  "scenes_total": 471,
+  "historical": 462,
   "fictional": 9,
-  "assertions_total": 6968,
+  "assertions_total": 6985,
   "sources_total": 471,
   "factions_total": 9,
   "vocab_packs": [
@@ -332,10 +332,11 @@
     "zheng_chenggong_taiwan_llm",
     "zhuxi",
     "zu_chongzhi_llm",
+    "zunyi",
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 657,
+  "leads_total": 660,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3677,6 +3678,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "zunyi",
+      "title": "遵义（播州土司·茅台·海龙屯）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4149,6 +4157,7 @@
     "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）",
     "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
     "turpan": "吐鲁番（高昌国·交河故城·坎儿井）",
-    "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）"
+    "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
+    "zunyi": "遵义（播州土司·茅台·海龙屯）"
   }
 }

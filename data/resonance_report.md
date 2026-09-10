@@ -472,6 +472,7 @@
 | zijincheng | 11 | 2 | **0.000** | event:zj_1406（0.000） | gap 2 / inference 2 / record 5 / scholarship 2 |
 | zu_chongzhi_llm | 13 | 1 | **0.000** | event:ev_zu_chongzhi_llm_01（0.000） | gap 1 / inference 3 / record 7 / scholarship 2 |
 | zuchongzhi | 12 | 2 | **0.000** | event:zc_463（0.000） | gap 2 / inference 2 / record 6 / scholarship 2 |
+| zunyi | 17 | 3 | **0.000** | event:ev_zunyi_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | zuyong_diao_llm | 13 | 2 | **0.000** | event:ev_zuyong_diao_llm_01（0.000） | gap 2 / inference 1 / record 9 / scholarship 1 |
 
 ## 明内部派系细分（faction · 明朝利益集团立场）
@@ -1410,6 +1411,9 @@
 | event:ev_zhuxi_02 | zhuxi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_zhuxi_03 | zhuxi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_zu_chongzhi_llm_01 | zu_chongzhi_llm | **0.000** | 0/3 | 0.00 | 0.08 | 13 | 0 / 0 / 0 / 0 |
+| event:ev_zunyi_01 | zunyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_zunyi_02 | zunyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_zunyi_03 | zunyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_zuyong_diao_llm_01 | zuyong_diao_llm | **0.000** | 0/3 | 0.17 | 0.18 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_zuyong_diao_llm_02 | zuyong_diao_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:fi_compass | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |

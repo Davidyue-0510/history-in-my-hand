@@ -469,6 +469,7 @@
       "zijincheng",
       "zu_chongzhi_llm",
       "zuchongzhi",
+      "zunyi",
       "zuyong_diao_llm"
     ],
     "factions": {
@@ -9339,6 +9340,28 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:zc_463",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "zunyi",
+      "name": "zunyi",
+      "total": 17,
+      "layers": {
+        "record": 6,
+        "scholarship": 3,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "元·官修": 2,
+        "汉·后朝官修": 1,
+        "学界": 13,
+        "五代·官修": 1
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_zunyi_01",
       "best_resonance": 0.0
     },
     {
@@ -37482,6 +37505,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.077,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zunyi_01",
+      "name": "event:ev_zunyi_01",
+      "scenes": [
+        "zunyi"
+      ],
+      "scene_names": [
+        "zunyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zunyi_02",
+      "name": "event:ev_zunyi_02",
+      "scenes": [
+        "zunyi"
+      ],
+      "scene_names": [
+        "zunyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_zunyi_03",
+      "name": "event:ev_zunyi_03",
+      "scenes": [
+        "zunyi"
+      ],
+      "scene_names": [
+        "zunyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

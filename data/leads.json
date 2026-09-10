@@ -10353,6 +10353,57 @@
    "_src_line": 12
   },
   {
+   "id": "ZY_G01",
+   "scene": "zunyi",
+   "subject": "place:bozhou",
+   "title": "杨端入播以前，播州一带的先秦至唐初聚落分布、人群构成与早期城址考古资料公开有限。",
+   "missing": "西南考古 / 先秦史 / 民族史",
+   "where": "播州先秦至唐初聚落遗址、器物与人群构成考古",
+   "skills": [
+    "西南考古",
+    "先秦史",
+    "民族史"
+   ],
+   "accept": "若有早期聚落测绘或器物报告，可补地理(1)/社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "ZY_G02",
+   "scene": "zunyi",
+   "subject": "place:hailongtun",
+   "title": "海龙屯在杨氏据播以前的早期地层、营造工艺与山城形制考古资料公开有限。",
+   "missing": "土司考古 / 建筑史 / 山地营造",
+   "where": "海龙屯杨氏前地层、早期山城基址与营造工艺考古",
+   "skills": [
+    "土司考古",
+    "建筑史",
+    "山地营造"
+   ],
+   "accept": "若有早期地层或基址报告，可补技术(2)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "ZY_G03",
+   "scene": "zunyi",
+   "subject": "place:maotai",
+   "title": "茅台镇酿酒在清代以前的具体工艺、作坊起源与早期文献记载公开有限。",
+   "missing": "酿造史 / 经济史 / 考古学",
+   "where": "茅台清以前酿酒作坊遗址、工艺文献与作坊沿革",
+   "skills": [
+    "酿造史",
+    "经济史",
+    "考古学"
+   ],
+   "accept": "若有早期作坊或工艺文献，可补技术(2)/社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "ZUY_012",
    "scene": "zuyong_diao_llm",
    "subject": "event:ev_zuyong_diao_llm_01",
