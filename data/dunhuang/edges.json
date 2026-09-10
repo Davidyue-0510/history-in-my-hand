@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "mogaoku",
+      "to": "dunhuang_city",
+      "relation": "东南25公里",
+      "note": "莫高窟在敦煌绿洲东南三危山麓，大泉河（宕泉）经其前，为敦煌郡城近郊石窟。"
+    },
+    {
+      "from": "dachuan_river",
+      "to": "mogaoku",
+      "relation": "流经窟前",
+      "note": "大泉河（宕泉）自莫高窟崖壁前流过，润窟区、供僧汲，水利支撑千年营缮。"
+    },
+    {
+      "from": "mingsha_shan",
+      "to": "dunhuang_city",
+      "relation": "南郊",
+      "note": "鸣沙山·月牙泉在敦煌城南郊，沙泉共生为绿洲地景标志。"
+    },
+    {
+      "from": "yangguan",
+      "to": "dunhuang_city",
+      "relation": "西南",
+      "note": "阳关在敦煌西南，扼丝路南道，与玉门关并峙为西陲两关。"
+    },
+    {
+      "from": "yumen_guan",
+      "to": "dunhuang_city",
+      "relation": "西北",
+      "note": "玉门关在敦煌西北，扼丝路北道，为汉长城西端锁钥西域之关。"
+    }
+  ]
+}

@@ -1364,6 +1364,57 @@
    "_src_line": 8
   },
   {
+   "id": "DH_G01",
+   "scene": "dunhuang",
+   "subject": "place:mogaoku",
+   "title": "莫高窟北凉、北魏早期洞窟的具体营造年代序列与匠作籍贯、粉本来源等数据，公开有限。",
+   "missing": "美术史 / 考古学 / 敦煌学",
+   "where": "莫高窟北凉—北魏早期洞窟营造年代序列、匠籍与粉本来源",
+   "skills": [
+    "美术史",
+    "考古学",
+    "敦煌学"
+   ],
+   "accept": "若有窟题记与碳十四测年对照，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "DH_G02",
+   "scene": "dunhuang",
+   "subject": "place:dunhuang_city",
+   "title": "吐蕃占领与归义军时期敦煌基层乡里、寺户、部落的具体社会组织与人口结构，公开有限。",
+   "missing": "社会史 / 敦煌学 / 历史地理",
+   "where": "吐蕃—归义军时期敦煌乡里、寺户、部落组织与人口结构",
+   "skills": [
+    "社会史",
+    "敦煌学",
+    "历史地理"
+   ],
+   "accept": "若有敦煌籍帐文书（户牒、部落制）出土，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "DH_G03",
+   "scene": "dunhuang",
+   "subject": "place:dunhuang_city",
+   "title": "汉唐敦煌郡城（沙州城）具体城址范围、城门与今敦煌市（党河西岸）的位置叠压关系，公开有限。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "汉唐敦煌郡（沙州）城址范围、城门与今敦煌市的叠压对应",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有沙州城考古测绘，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "DUNZUNG01",
    "scene": "dunzun",
    "subject": "event:dz_taixue",

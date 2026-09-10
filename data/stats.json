@@ -1,9 +1,9 @@
 {
-  "scenes_total": 462,
-  "historical": 453,
+  "scenes_total": 463,
+  "historical": 454,
   "fictional": 9,
-  "assertions_total": 6832,
-  "sources_total": 464,
+  "assertions_total": 6849,
+  "sources_total": 465,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -45,6 +45,7 @@
     "dongbei_kanglian_llm",
     "dujiangyan",
     "dujiangyan_llm",
+    "dunhuang",
     "feishui_llm",
     "fenghuang",
     "foguo_chan_llm",
@@ -327,7 +328,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 633,
+  "leads_total": 636,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3613,6 +3614,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "dunhuang",
+      "title": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4077,6 +4085,7 @@
     "hangzhou": "杭州（西湖·临安·吴越）",
     "suzhou": "苏州（古典园林·平江·吴门）",
     "lushan": "庐山（净土祖庭·白鹿洞·牯岭）",
-    "xian": "西安（长安·汉唐都城·丝路起点）"
+    "xian": "西安（长安·汉唐都城·丝路起点）",
+    "dunhuang": "敦煌（丝路咽喉·莫高窟·河西走廊西端）"
   }
 }

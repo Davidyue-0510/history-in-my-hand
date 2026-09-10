@@ -665,7 +665,8 @@
   "hangzhou",
   "suzhou",
   "lushan",
-  "xian"
+  "xian",
+  "dunhuang"
  ],
  "scenes": {
   "langzhong": {
@@ -1672,6 +1673,90 @@
      ],
      "layer": "inference",
      "note": "关中形胜+丝路东端+定都通西域事件→长安控天下中枢与东西交流"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "dunhuang": {
+   "kind": "county",
+   "region": "xibei",
+   "province": "gansu",
+   "title": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
+   "dossier_label": "敦煌",
+   "subtitle": "丝路咽喉 · 莫高窟 · 河西走廊西端 · 藏经洞",
+   "primary_place": "mogaoku",
+   "dossier_event": "event:ev_dunhuang_02",
+   "vocab_pack": "dunhuang",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "敦煌居河西走廊西端绿洲，党河浸润、大漠环绕，为丝绸之路南北道分岔之咽喉。汉武帝元鼎六年（前111）置敦煌郡，为河西四郡之一，西控西域、南通羌中；前秦建元二年（366）沙门乐僔于三危山麓凿莫高窟第一窟，千年营缮成世界规模最巨的佛教石窟艺术宝库（1987年列入UNESCO 440，现存洞窟四百余、壁画约4.5万㎡、彩塑两千余尊）；清光绪二十六年（1900）王圆箓发现藏经洞，出土汉、藏、粟特、于阗、回鹘、希伯来等多语写本数万件，敦煌学由是兴。唐中叶后吐蕃据有、张曹归义军继起，胡汉诸族共治；玉门、阳两关扼丝路北南道，为汉长城西端锁钥。",
+   "parties_note": "史料以汉书/史记/旧唐书等官修为主，敦煌石窟与文书文献为现代学界研究，系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_dunhuang_01": "汉武帝设郡",
+    "event:ev_dunhuang_02": "乐僔开窟",
+    "event:ev_dunhuang_03": "藏经洞发现",
+    "place:mogaoku": "莫高窟",
+    "person:wang_yuanlu": "王圆箓"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "敦煌郡建制+佛教东传+多元宗教→绿洲文明秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      1
+     ],
+     "layer": "inference",
+     "note": "石窟营造+绿洲灌溉+丝路贸易→敦煌物资与艺术枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "胡汉商僧+多族文献+敦煌学→多元社会与知识网络"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "河西走廊西端+丝路分岔+设郡/藏经洞事件→敦煌控东西交流咽喉"
     }
    },
    "dims": [

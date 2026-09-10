@@ -75,6 +75,7 @@
 | donghan_danggu | 7 | 3 | **0.000** | event:dh_166（0.000） | gap 1 / inference 2 / record 1 / scholarship 3 |
 | dujiangyan | 14 | 1 | **0.000** | event:ev_dujiangyan_02（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | dujiangyan_llm | 12 | 2 | **0.000** | event:ev_dujiangyan_llm_01（0.000） | gap 2 / inference 1 / record 5 / scholarship 4 |
+| dunhuang | 17 | 3 | **0.000** | event:ev_dunhuang_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | dunzun | 11 | 6 | **0.000** | event:dz_134（0.000） | gap 2 / scholarship 9 |
 | feishui | 16 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
@@ -658,6 +659,9 @@
 | event:ev_dujiangyan_02 | dujiangyan | **0.000** | 0/3 | 0.09 | 0.07 | 14 | 0 / 0 / 0 / 0 |
 | event:ev_dujiangyan_llm_01 | dujiangyan_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_dujiangyan_llm_02 | dujiangyan_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
+| event:ev_dunhuang_01 | dunhuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dunhuang_02 | dunhuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_dunhuang_03 | dunhuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_01 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_02 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |

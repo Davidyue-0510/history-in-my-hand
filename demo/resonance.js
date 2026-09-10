@@ -74,6 +74,7 @@ window.SANDBOX_RESONANCE = {
    "donghan_danggu",
    "dujiangyan",
    "dujiangyan_llm",
+   "dunhuang",
    "dunzun",
    "feishui",
    "feishui_llm",
@@ -1674,6 +1675,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_dujiangyan_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "dunhuang",
+   "name": "dunhuang",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "汉·官修": 1,
+    "学界": 12,
+    "汉·后朝官修": 2,
+    "五代·官修": 2
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_dunhuang_01",
    "best_resonance": 0.0
   },
   {

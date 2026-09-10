@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 462 个切片
+// 权威数据源：data/scenes.json 注册的 463 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 462 个切片",
+  "slice": "multi-scene · 463 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -49,6 +49,7 @@ window.SANDBOX_DATA = {
    "dongbei_kanglian_llm",
    "dujiangyan",
    "dujiangyan_llm",
+   "dunhuang",
    "feishui_llm",
    "fenghuang",
    "foguo_chan_llm",
@@ -1043,7 +1044,8 @@ window.SANDBOX_DATA = {
   "hangzhou",
   "suzhou",
   "lushan",
-  "xian"
+  "xian",
+  "dunhuang"
  ],
  "vocab": {
   "layers": [
@@ -28615,6 +28617,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational"
+  },
+  "dunhuang": {
+   "key": "dunhuang",
+   "title": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
+   "dossier_label": "敦煌",
+   "subtitle": "丝路咽喉 · 莫高窟 · 河西走廊西端 · 藏经洞",
+   "kind": "county",
+   "region": "xibei",
+   "page": "county.html?scene=dunhuang",
+   "vocab_pack": "dunhuang",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -29079,7 +29103,8 @@ window.SANDBOX_DATA = {
   "hangzhou": "slices/hangzhou.js",
   "suzhou": "slices/suzhou.js",
   "lushan": "slices/lushan.js",
-  "xian": "slices/xian.js"
+  "xian": "slices/xian.js",
+  "dunhuang": "slices/dunhuang.js"
  },
  "corridors": [
   {
