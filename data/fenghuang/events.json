@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_fenghuang_01",
+      "year": 1704,
+      "era": "康熙四十三年",
+      "kind": "建制",
+      "title": "设凤凰厅",
+      "place": "fenghuang_gucheng",
+      "text": "康熙四十三年（1704）清廷设凤凰厅，治镇筸城，统辖湘西苗疆诸寨，筑城置防，成为湘黔边区政治军事中心。",
+      "subject": "event:ev_fenghuang_01"
+    },
+    {
+      "id": "ev_fenghuang_02",
+      "year": 1795,
+      "era": "乾隆六十年",
+      "kind": "民变",
+      "title": "乾嘉苗民起义",
+      "place": "miao_jiang",
+      "text": "乾隆六十年（1795）湘黔苗民在吴八月、石柳邓等领导下起义，波及凤凰、松桃、永绥等地，持续至嘉庆十一年（1806），震动湘西苗疆。",
+      "subject": "event:ev_fenghuang_02"
+    },
+    {
+      "id": "ev_fenghuang_03",
+      "year": 1934,
+      "era": "民国二十三年",
+      "kind": "文学",
+      "title": "沈从文发表《边城》",
+      "place": "fenghuang_gucheng",
+      "text": "1934 年沈从文发表中篇小说《边城》，以湘西茶峒渡船为背景，塑造翠翠、爷爷与老船夫的意象，使凤凰成为中国现代文学中的“湘西边城”文化符号。",
+      "subject": "event:ev_fenghuang_03"
+    }
+  ]
+}

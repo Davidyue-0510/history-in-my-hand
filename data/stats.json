@@ -1,9 +1,9 @@
 {
-  "scenes_total": 455,
-  "historical": 446,
+  "scenes_total": 456,
+  "historical": 447,
   "fictional": 9,
-  "assertions_total": 6713,
-  "sources_total": 441,
+  "assertions_total": 6730,
+  "sources_total": 444,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -45,6 +45,7 @@
     "dujiangyan",
     "dujiangyan_llm",
     "feishui_llm",
+    "fenghuang",
     "foguo_chan_llm",
     "fujian_minyue",
     "fujian_qijiguang_llm",
@@ -320,7 +321,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 612,
+  "leads_total": 615,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3557,6 +3558,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "fenghuang",
+      "title": "凤凰（湘西边城·苗土风情）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4014,6 +4022,7 @@
     "quanzhou": "泉州（刺桐港·海丝起点）",
     "dali": "大理（苍洱之地·南诏大理国）",
     "pingyao": "平遥（明清票号金融·晋商·城墙）",
-    "yixian": "黟县（皖南古村落·西递宏村·徽派）"
+    "yixian": "黟县（皖南古村落·西递宏村·徽派）",
+    "fenghuang": "凤凰（湘西边城·苗土风情）"
   }
 }

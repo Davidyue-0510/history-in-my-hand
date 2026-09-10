@@ -77,6 +77,7 @@
 | dunzun | 11 | 6 | **0.000** | event:dz_134（0.000） | gap 2 / scholarship 9 |
 | feishui | 16 | 3 | **0.000** | event:fs_jin（0.000） | gap 2 / inference 1 / record 10 / scholarship 3 |
 | feishui_llm | 19 | 5 | **0.000** | event:ev_feishui_llm_01（0.000） | gap 1 / inference 3 / record 13 / scholarship 2 |
+| fenghuang | 17 | 3 | **0.000** | event:ev_fenghuang_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | fenshu | 13 | 2 | **0.000** | event:fs_212（0.000） | gap 1 / inference 3 / record 7 / scholarship 2 |
 | foguo_chan_llm | 16 | 3 | **0.000** | event:ev_foguo_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | fotao | 13 | 2 | **0.000** | event:ft_67（0.000） | gap 1 / record 9 / scholarship 3 |
@@ -653,6 +654,9 @@
 | event:ev_feishui_llm_03 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_04 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_feishui_llm_05 | feishui_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_fenghuang_01 | fenghuang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_fenghuang_02 | fenghuang | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_fenghuang_03 | fenghuang | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_foguo_01 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_foguo_02 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_foguo_03 | foguo_chan_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

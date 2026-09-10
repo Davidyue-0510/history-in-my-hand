@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "hong_qiao", "to": "fenghuang_gucheng", "kind": "within", "note": "虹桥位于凤凰古城沱江中段"},
+    {"from": "tuo_jiang", "to": "fenghuang_gucheng", "kind": "adjacent", "note": "沱江穿凤凰古城而过"},
+    {"from": "nan_hua_shan", "to": "fenghuang_gucheng", "kind": "adjacent", "note": "南华山位于凤凰古城南郊"},
+    {"from": "miao_jiang", "to": "fenghuang_gucheng", "kind": "near", "note": "苗疆边墙位于凤凰县西北，为古城军事屏障"},
+    {"from": "wu_ling_shan", "to": "fenghuang_gucheng", "kind": "near", "note": "武陵山脉南段构成凤凰古城的自然地理背景"}
+  ]
+}

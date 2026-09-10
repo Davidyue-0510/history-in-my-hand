@@ -658,7 +658,8 @@
   "quanzhou",
   "dali",
   "pingyao",
-  "yixian"
+  "yixian",
+  "fenghuang"
  ],
  "scenes": {
   "langzhong": {
@@ -1074,6 +1075,91 @@
      ],
      "layer": "inference",
      "note": "皖南山间盆地+世界遗产认定→黟县从农业聚落转化为文化旅游节点"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "fenghuang": {
+   "kind": "county",
+   "region": "hunan",
+   "province": "hunan",
+   "title": "凤凰（湘西边城·苗土风情）",
+   "dossier_label": "凤凰",
+   "subtitle": "武陵山麓 · 沱江吊脚楼 · 苗疆边墙 · 边城文学",
+   "primary_place": "fenghuang_gucheng",
+   "dossier_event": "event:ev_fenghuang_03",
+   "vocab_pack": "fenghuang",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "凤凰古城位于湘西沱江之畔，1704 年设凤凰厅、1795–1806 年乾嘉苗民起义、1934 年沈从文《边城》发表，使这里成为苗疆军政重镇与现代文学中的“湘西边城”。下方为设厅、起义与文学三条主线。",
+   "parties_note": "史料以凤凰厅志、湘西民族志为本，沈从文全集为现代私修，学界考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_fenghuang_01": "设凤凰厅",
+    "event:ev_fenghuang_02": "乾嘉苗民起义",
+    "event:ev_fenghuang_03": "《边城》发表",
+    "place:fenghuang_gucheng": "凤凰古城",
+    "place:tuo_jiang": "沱江",
+    "person:shen_congwen": "沈从文"
+   },
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "凤凰厅制度+苗疆边墙+儒学教育→清廷以军政与教化维系苗疆秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "吊脚楼建筑+虹桥廊桥+边墙碉卡→凤凰兼具人居、交通与山地防御功能"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "苗汉土家多元民族+士绅/军户/商贩→边城社会在冲突与交易中形成"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "武陵山—沱江通道+苗疆事件→凤凰控湘黔渝桂边区，军事地位突出"
     }
    },
    "dims": [

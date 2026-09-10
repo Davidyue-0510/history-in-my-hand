@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "fenghuang_tingzhi",
+      "title": "凤凰厅志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距明清城事约数十年至数百年",
+      "stance_label": "地方志",
+      "compiler": "《凤凰厅志》（清/民各版及今纂）",
+      "color": "#A0473A",
+      "period": "清/民"
+    },
+    {
+      "id": "xiangxi_minzuzhi",
+      "title": "湘西民族志",
+      "party": "后世官修",
+      "distance_label": "近现代整理，距清季苗民事约数十年至百余年",
+      "stance_label": "民族史辑录",
+      "compiler": "湘西民族史综合辑录",
+      "color": "#A0473A",
+      "period": "近现代"
+    },
+    {
+      "id": "shen_congwen_quanji",
+      "title": "沈从文全集",
+      "party": "现代私修",
+      "distance_label": "沈从文自撰，距民国文学事为当时人记当时事",
+      "stance_label": "现代文学私修",
+      "compiler": "沈从文（现代作家）",
+      "color": "#7E8CA8",
+      "period": "民国"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "湘西民族史与近现代文学综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

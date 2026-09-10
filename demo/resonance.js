@@ -76,6 +76,7 @@ window.SANDBOX_RESONANCE = {
    "dunzun",
    "feishui",
    "feishui_llm",
+   "fenghuang",
    "fenshu",
    "foguo_chan_llm",
    "fotao",
@@ -1702,6 +1703,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 5,
    "avg_resonance": 0.0,
    "best_event": "event:ev_feishui_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "fenghuang",
+   "name": "fenghuang",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 7,
+    "现代私修": 3,
+    "学界": 7
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_fenghuang_01",
    "best_resonance": 0.0
   },
   {

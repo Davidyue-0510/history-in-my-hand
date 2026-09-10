@@ -1393,6 +1393,57 @@
    "_src_line": 18
   },
   {
+   "id": "FH_G01",
+   "scene": "fenghuang",
+   "subject": "place:fenghuang_gucheng",
+   "title": "明清凤凰古城墙、城门与吊脚楼的营造匠作、木构架年代测定数据公开有限。",
+   "missing": "建筑史 / 民族建筑 / 考古学",
+   "where": "凤凰古城墙、城门、吊脚楼的木构架年代与营造匠作",
+   "skills": [
+    "建筑史",
+    "民族建筑",
+    "考古学"
+   ],
+   "accept": "若有古城墙修缮报告、木构件测年或匠人口述，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "FH_G02",
+   "scene": "fenghuang",
+   "subject": "place:miao_jiang",
+   "title": "苗疆边墙具体走向、长度与碉卡遗址的精确空间数据，公开测绘不足。",
+   "missing": "历史地理 / 军事史 / GIS考古",
+   "where": "湘西苗疆边墙遗址的精确走向、长度、碉卡分布与GIS数据",
+   "skills": [
+    "历史地理",
+    "军事史",
+    "GIS考古"
+   ],
+   "accept": "若有田野调查测绘或文物普查档案，可补技术/制度层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "FH_G03",
+   "scene": "fenghuang",
+   "subject": "person:wu_bayue",
+   "title": "吴八月等苗民起义领袖的私人文书、活动网络细节，正史记载稀缺。",
+   "missing": "苗民史 / 民族史 / 口述史",
+   "where": "吴八月等乾嘉苗民起义领袖的私人文书、活动网络与口述史",
+   "skills": [
+    "苗民史",
+    "民族史",
+    "口述史"
+   ],
+   "accept": "若有地方家谱、民间唱本或民族学调查，可补社会(4)层人物断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "FENSHUG01",
    "scene": "fenshu",
    "subject": "event:fs_213",
