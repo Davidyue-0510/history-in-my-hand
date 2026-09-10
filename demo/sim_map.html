@@ -70,6 +70,14 @@
   .ev.bad .sev{background:var(--bad);} .ev.warn .sev{background:#c8a24a;} .ev.info .sev{background:#7fa7c4;}
   .hint{font-size:11px;color:var(--ink-soft);margin-top:4px;}
   .map-hint{position:absolute;left:50%;top:10px;transform:translateX(-50%);background:rgba(51,45,39,.78);color:#f3ecdc;padding:4px 12px;border-radius:12px;font-size:12px;z-index:5;white-space:nowrap;}
+  /* v0.226c：首次进入的操作引导（O9）——可关闭，localStorage 记忆 */
+  .onboard-hint{position:absolute;right:12px;top:50px;width:236px;background:rgba(246,241,228,.96);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:12px;line-height:1.55;color:var(--ink);z-index:6;box-shadow:0 4px 14px rgba(0,0,0,.18);}
+  .onboard-hint .ob-title{font-weight:700;font-size:13px;margin-bottom:6px;color:var(--accent);}
+  .onboard-hint ul{margin:0;padding-left:16px;}
+  .onboard-hint li{margin:3px 0;}
+  .onboard-hint b{color:var(--bad);}
+  .onboard-hint .ob-close{margin-top:9px;width:100%;border:1px solid var(--line);background:var(--accent);color:#fff;border-radius:6px;padding:5px;cursor:pointer;font-family:inherit;font-size:12px;}
+  .onboard-hint.hide{display:none;}
   .err{margin:20px;padding:15px;background:#fbe9e7;border:1px solid var(--bad);border-radius:8px;color:#7a241c;font-family:monospace;white-space:pre-wrap;}
   /* v0.68 视角切换 */
   .vp-sel{width:100%;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--parch2);font-family:inherit;font-size:12.5px;color:var(--ink);cursor:pointer;}
@@ -169,6 +177,16 @@
         <div class="elev-legend" id="elBar"></div>
         <div class="elev-ticks"><span>0m</span><span>≥1000m</span></div>
         <div class="map-hint" id="mapHint"></div>
+        <div class="onboard-hint" id="onboardHint">
+          <div class="ob-title">操作提示</div>
+          <ul>
+            <li>▶ 按钮或 <b>空格</b> 播放/暂停推演</li>
+            <li><b>← / →</b> 单步切换年份</li>
+            <li>底部时间轴可拖拽回放行军与实控区</li>
+            <li>滚轮缩放 · 拖拽平移 · 双击复位</li>
+          </ul>
+          <button class="ob-close" id="obClose">知道了</button>
+        </div>
       </div>
       <div class="legend" id="legend"></div>
     </main>
@@ -196,6 +214,14 @@
   function fail(e){ var m=document.createElement('div'); m.className='err'; m.textContent='初始化失败：\n'+(e&&e.stack?e.stack:e); document.querySelector('.body').prepend(m); console.error(e); }
 
   try { init(); } catch(e){ fail(e); }
+
+  // v0.226c：首次使用引导（O9）——可关闭，关闭后不再打扰
+  (function onboarding(){
+    var ob = $('onboardHint'); if (!ob) return;
+    if (localStorage && localStorage.getItem('sim_map_onboard') === '1') ob.classList.add('hide');
+    var btn = $('obClose'); if (!btn) return;
+    btn.addEventListener('click', function(){ localStorage && localStorage.setItem('sim_map_onboard', '1'); ob.classList.add('hide'); });
+  })();
 
   function init(){
     var scene = SIM_CORE.sceneFromURL();
