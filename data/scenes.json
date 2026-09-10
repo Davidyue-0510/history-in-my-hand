@@ -669,7 +669,8 @@
   "dunhuang",
   "luoyang",
   "chengde",
-  "wuyishan"
+  "wuyishan",
+  "yinchuan"
  ],
  "scenes": {
   "langzhong": {
@@ -37343,6 +37344,90 @@
      ],
      "layer": "inference",
      "note": "丹霞形胜+万里茶道+世界遗产→东南文化地标与对外节点"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yinchuan": {
+   "kind": "county",
+   "region": "xibei",
+   "province": "ningxia",
+   "title": "银川（西夏兴庆府·贺兰山·党项故地）",
+   "dossier_label": "银川",
+   "subtitle": "西夏兴庆府 · 贺兰山 · 西夏王陵 · 塞上江南",
+   "primary_place": "yinchuan_city",
+   "dossier_event": "event:ev_yinchuan_01",
+   "vocab_pack": "yinchuan",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "银川位于宁夏平原中部、贺兰山与黄河之间，古称兴庆府。1038年党项首领李元昊于此称帝，国号大夏，史称西夏，定都兴庆府，与宋、辽形成三足鼎立。贺兰山东麓的西夏王陵是西夏帝王陵寝群，被誉为「东方金字塔」。青铜峡黄河古渠网络灌溉银川平原，形成「塞上粮仓」。镇北堡为明代边防要塞，灵州（今灵武）则是唐至西夏时期的西北军政枢纽。银川的西夏遗存、贺兰山岩画与黄河灌区共同构成中国西北独特的农牧交错文明景观。",
+   "parties_note": "史料以西夏书事、宋史等为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_yinchuan_01": "元昊称帝",
+    "event:ev_yinchuan_02": "庆历和议",
+    "event:ev_yinchuan_03": "王陵考古",
+    "place:yinchuan_city": "兴庆府",
+    "person:li_yuannhao": "李元昊"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "西夏文/蕃学+都城制度+王陵佛教→党项政治认同与意识形态"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      4
+     ],
+     "layer": "inference",
+     "note": "黄河灌区+青铜峡水利+丝路北道→兴庆府物资与农业基础"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      5
+     ],
+     "layer": "inference",
+     "note": "党项部众+蕃学官僚+军屯商旅+考古遗产→多族群社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "贺兰山形胜+河套西口+宋夏和议→兴庆府控西北三足格局"
     }
    },
    "dims": [

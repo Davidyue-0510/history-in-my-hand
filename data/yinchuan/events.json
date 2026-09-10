@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_yinchuan_01",
+      "year": 1038,
+      "era": "西夏大庆三年",
+      "kind": "建国",
+      "title": "李元昊称帝建西夏，定都兴庆府",
+      "place": "yinchuan_city",
+      "text": "1038年，党项首领李元昊于兴庆府（今银川）称帝，国号大夏，史称西夏，定都兴庆府，与宋、辽形成三足鼎立。",
+      "subject": "event:ev_yinchuan_01"
+    },
+    {
+      "id": "ev_yinchuan_02",
+      "year": 1044,
+      "era": "北宋庆历四年",
+      "kind": "和议",
+      "title": "宋夏庆历和议，册封夏国主",
+      "place": "yinchuan_city",
+      "text": "1044年，北宋与西夏达成庆历和议，宋册封李元昊为夏国主，西夏向宋称臣，宋岁赐绢、银、茶，双方战事暂息。",
+      "subject": "event:ev_yinchuan_02"
+    },
+    {
+      "id": "ev_yinchuan_03",
+      "year": 1972,
+      "era": "1972年",
+      "kind": "考古",
+      "title": "西夏王陵考古发掘启动",
+      "place": "xixia_tombs",
+      "text": "1972年起，宁夏文物考古部门对贺兰山东麓西夏王陵进行系统调查与发掘，确认九座帝陵及二百余座陪葬墓，开启现代西夏考古。",
+      "subject": "event:ev_yinchuan_03"
+    }
+  ]
+}

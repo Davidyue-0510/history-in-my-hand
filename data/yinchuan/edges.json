@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "xixia_tombs",
+      "to": "yinchuan_city",
+      "relation": "位于都城西侧",
+      "note": "西夏王陵位于兴庆府以西约35公里的贺兰山东麓，是西夏 royal necropolis。"
+    },
+    {
+      "from": "helan_mountain",
+      "to": "yinchuan_city",
+      "relation": "屏其西",
+      "note": "贺兰山横亘于兴庆府/银川西侧，既是自然屏障，也是西夏西界与信仰空间。"
+    },
+    {
+      "from": "lingzhou",
+      "to": "yinchuan_city",
+      "relation": "东南门户",
+      "note": "灵州位于兴庆府东南，为唐至西夏时期西北军政枢纽，控扼黄河东南通道。"
+    },
+    {
+      "from": "qingtongxia",
+      "to": "yinchuan_city",
+      "relation": "黄河灌区上游",
+      "note": "青铜峡黄河灌区位于兴庆府以南，古渠网络支撑银川平原农业，是西夏都城的粮食根基。"
+    },
+    {
+      "from": "zhenbeibao",
+      "to": "yinchuan_city",
+      "relation": "北部门户",
+      "note": "镇北堡位于兴庆府以北贺兰山口，明代为宁夏镇北路屯兵城堡，控扼河套南下通道。"
+    }
+  ]
+}

@@ -433,6 +433,7 @@
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
 | yellow_sea_1894 | 15 | 1 | **0.265** | event:ev_yellow_sea_1894_02（0.265） | gap 1 / record 13 / scholarship 1 |
 | yiling | 14 | 3 | **0.000** | event:yl_jz（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
+| yinchuan | 17 | 3 | **0.000** | event:ev_yinchuan_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | yixian | 17 | 3 | **0.000** | event:ev_yixian_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | yuan_duo | 11 | 2 | **0.000** | event:yu_1271（0.000） | gap 1 / record 8 / scholarship 2 |
 | yuan_qinghua_llm | 12 | 2 | **0.000** | event:ev_yuan_qinghua_llm_01（0.000） | gap 3 / inference 1 / record 7 / scholarship 1 |
@@ -1338,6 +1339,9 @@
 | event:ev_yangwu_llm_03 | yangwu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_yangwu_llm_04 | yangwu_llm | **0.000** | 0/3 | 0.33 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_yiling | san_guo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_yinchuan_01 | yinchuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_yinchuan_02 | yinchuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_yinchuan_03 | yinchuan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_yixian_01 | yixian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_yixian_02 | yixian | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_yixian_03 | yixian | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |

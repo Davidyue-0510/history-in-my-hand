@@ -432,6 +432,7 @@ window.SANDBOX_RESONANCE = {
    "yehe",
    "yellow_sea_1894",
    "yiling",
+   "yinchuan",
    "yixian",
    "yuan_duo",
    "yuan_qinghua_llm",
@@ -8584,6 +8585,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:yl_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yinchuan",
+   "name": "yinchuan",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "清·私修": 5,
+    "元·官修": 3,
+    "学界": 9
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_yinchuan_01",
    "best_resonance": 0.0
   },
   {

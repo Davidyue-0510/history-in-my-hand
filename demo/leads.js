@@ -9347,6 +9347,57 @@ window.SANDBOX_LEADS = {
    "_src_line": 14
   },
   {
+   "id": "YC_G01",
+   "scene": "yinchuan",
+   "subject": "place:xixia_tombs",
+   "title": "西夏王陵地面建筑与陵城布局已有考古成果，但帝陵地宫结构、墓道形制与陪葬品清单等细节公开有限。",
+   "missing": "考古学 / 西夏史 / 美术史",
+   "where": "西夏王陵未发掘帝陵地宫考古报告与出土器物图录",
+   "skills": [
+    "考古学",
+    "西夏史",
+    "美术史"
+   ],
+   "accept": "若有地宫发掘报告或陪葬品清单公开，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "YC_G02",
+   "scene": "yinchuan",
+   "subject": "place:yinchuan_city",
+   "title": "兴庆府作为西夏都城，其城垣基址、街道网络、宫市布局与手工业作坊区的考古复原资料公开有限。",
+   "missing": "城市考古 / 西夏史 / 历史地理",
+   "where": "兴庆府遗址城墙基址、道路网、手工业作坊考古",
+   "skills": [
+    "城市考古",
+    "西夏史",
+    "历史地理"
+   ],
+   "accept": "若有城垣基址测绘或街坊布局报告，可补技术(2)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "YC_G03",
+   "scene": "yinchuan",
+   "subject": "place:lingzhou",
+   "title": "灵州在唐代朔方节度使治所、党项内附安置及宋夏争夺时期的城址变迁、行政档案与日常管理细节公开有限。",
+   "missing": "考古学 / 唐史 / 党项史",
+   "where": "灵州故城遗址考古、唐代朔方节度使档案、党项内附户籍",
+   "skills": [
+    "考古学",
+    "唐史",
+    "党项史"
+   ],
+   "accept": "若有唐代城址测绘或党项内附行政文书，可补地理(1)/制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "YX_G01",
    "scene": "yixian",
    "subject": "place:xidi",

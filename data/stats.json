@@ -1,9 +1,9 @@
 {
-  "scenes_total": 466,
-  "historical": 457,
+  "scenes_total": 467,
+  "historical": 458,
   "fictional": 9,
-  "assertions_total": 6900,
-  "sources_total": 470,
+  "assertions_total": 6917,
+  "sources_total": 471,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -305,6 +305,7 @@
     "xizang_xika_llm",
     "xizang_zongkaba_llm",
     "yangwu_llm",
+    "yinchuan",
     "yixian",
     "yuan_qinghua_llm",
     "yuan_shangdu_llm",
@@ -331,7 +332,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 645,
+  "leads_total": 648,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3645,6 +3646,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "yinchuan",
+      "title": "银川（西夏兴庆府·贺兰山·党项故地）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4113,6 +4121,7 @@
     "dunhuang": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
     "luoyang": "洛阳（十三朝古都·龙门石窟·隋唐东都）",
     "chengde": "承德（避暑山庄·外八庙·木兰秋狝）",
-    "wuyishan": "武夷山（丹霞·朱子理学·红茶）"
+    "wuyishan": "武夷山（丹霞·朱子理学·红茶）",
+    "yinchuan": "银川（西夏兴庆府·贺兰山·党项故地）"
   }
 }

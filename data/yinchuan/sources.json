@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "夏国传、地理志载西夏立国、兴庆府、灵州及宋夏和战，元人修宋史，视角非宋当代。"
+    },
+    {
+      "id": "xixia_shushi",
+      "title": "西夏书事",
+      "party": "清·私修",
+      "stance_label": "清人私修·西夏史专著",
+      "distance_label": "清乾隆间吴广成撰，距西夏事约600年",
+      "color": "#7B5C3E",
+      "compiler": "吴广成（清）",
+      "period": "清",
+      "note": "清代私修西夏编年史，记李元昊建国、兴庆府、蕃学、宋夏和战等，为西夏史核心史料之一。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "西夏王陵考古队/宁夏文物考古研究所等综合研究",
+      "period": "今",
+      "note": "西夏王陵考古报告、岩画研究、兴庆府历史地理等现代综合研究，用于 inference 与 gap 层。"
+    }
+  ]
+}
