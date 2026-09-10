@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "shiji_kongzi",
+      "title": "史记·孔子世家",
+      "party": "西汉·官修",
+      "distance_label": "西汉司马迁撰，距孔子事约四百年，为最早系统孔子传记",
+      "stance_label": "正史传记",
+      "compiler": "司马迁（西汉）",
+      "color": "#A0473A",
+      "period": "西汉"
+    },
+    {
+      "id": "lunyu",
+      "title": "论语",
+      "party": "战国·私修",
+      "distance_label": "孔门弟子及再传弟子辑录，距孔子当时最近之言行记录",
+      "stance_label": "语录体私修",
+      "compiler": "孔门后学（战国）",
+      "color": "#8E7CC3",
+      "period": "战国"
+    },
+    {
+      "id": "qufu_xianzhi",
+      "title": "曲阜县志（三孔志）",
+      "party": "后世官修",
+      "distance_label": "明清屡修地方志，距三孔建制事数百年至两千余年",
+      "stance_label": "地方志",
+      "compiler": "《曲阜县志》及三孔专志（明清官修）",
+      "color": "#C0703A",
+      "period": "明清"
+    },
+    {
+      "id": "mengzi",
+      "title": "孟子",
+      "party": "战国·私修",
+      "distance_label": "孟子自撰及门人记述，距邹鲁事为当时人记当时事",
+      "stance_label": "诸子私修",
+      "compiler": "孟轲及门人（战国）",
+      "color": "#8E7CC3",
+      "period": "战国"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "孔子与儒学、曲阜三孔综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

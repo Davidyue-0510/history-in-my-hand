@@ -660,7 +660,8 @@
   "pingyao",
   "yixian",
   "fenghuang",
-  "chaozhou"
+  "chaozhou",
+  "qufu"
  ],
  "scenes": {
   "langzhong": {
@@ -1246,6 +1247,91 @@
      ],
      "layer": "inference",
      "note": "韩江三角洲+海上丝路事件→潮州控闽粤赣边区与南洋通道"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "qufu": {
+   "kind": "county",
+   "region": "huabei",
+   "province": "shandong",
+   "title": "曲阜（孔子故里·儒源·三孔）",
+   "dossier_label": "曲阜",
+   "subtitle": "鲁国故都 · 孔庙孔林孔府 · 儒学圣地 · 邹鲁之源",
+   "primary_place": "qufu_mingcheng",
+   "dossier_event": "event:ev_qufu_01",
+   "vocab_pack": "qufu",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "曲阜位于山东西南部，周为鲁国都，春秋为孔子（前551—前479）故里，儒家由此发源；前478年鲁哀公始立孔庙，开两千余年孔庙之制；汉武帝独尊儒术后升为天下儒学圣地。三孔1994年列入UNESCO（704）。曲阜即潮州“海滨邹鲁”之“邹鲁”本源。",
+   "parties_note": "史料以史记·孔子世家、论语、孟子为本，曲阜县志为后世官修，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_qufu_01": "孔子诞生",
+    "event:ev_qufu_02": "孔庙始立",
+    "event:ev_qufu_03": "独尊儒术",
+    "place:qufu_mingcheng": "曲阜明故城",
+    "place:kong_miao": "孔庙",
+    "person:kong_zi": "孔子"
+   },
+   "epoch": "spring_autumn",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "曲阜鲁国故都+孔庙之制+独尊儒术→儒乡政治文化秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "孔庙大成殿官式建筑+孔府衍圣公制度→礼制建筑与世袭贵族体系"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "孔子私学平民教育+孔氏宗族→邹鲁儒乡社会与道统再生产"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "泗河平原地理+独尊儒术事件→曲阜由鲁邑升为天下儒学圣地"
     }
    },
    "dims": [

@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "kong_miao", "to": "qufu_mingcheng", "kind": "within", "note": "孔庙位于曲阜明故城中央"},
+    {"from": "kong_fu", "to": "kong_miao", "kind": "adjacent", "note": "孔府东邻孔庙"},
+    {"from": "kong_lin", "to": "qufu_mingcheng", "kind": "near", "note": "孔林位于曲阜城北"},
+    {"from": "ni_shan", "to": "qufu_mingcheng", "kind": "near", "note": "尼山在曲阜东南，传为孔子诞生地"},
+    {"from": "si_he", "to": "qufu_mingcheng", "kind": "adjacent", "note": "泗河（洙泗）流经曲阜，孔子设教之所"}
+  ]
+}

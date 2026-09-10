@@ -1,9 +1,9 @@
 {
-  "scenes_total": 457,
-  "historical": 448,
+  "scenes_total": 458,
+  "historical": 449,
   "fictional": 9,
-  "assertions_total": 6747,
-  "sources_total": 447,
+  "assertions_total": 6764,
+  "sources_total": 451,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -198,6 +198,7 @@
     "qinghai_zongkaba_llm",
     "qingli_reform_llm",
     "quanzhou",
+    "qufu",
     "san_guo",
     "shaanxi_hanchang_llm",
     "shaanxi_shangyang_llm",
@@ -322,7 +323,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 618,
+  "leads_total": 621,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3573,6 +3574,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "qufu",
+      "title": "曲阜（孔子故里·儒源·三孔）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4032,6 +4040,7 @@
     "pingyao": "平遥（明清票号金融·晋商·城墙）",
     "yixian": "黟县（皖南古村落·西递宏村·徽派）",
     "fenghuang": "凤凰（湘西边城·苗土风情）",
-    "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）"
+    "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）",
+    "qufu": "曲阜（孔子故里·儒源·三孔）"
   }
 }

@@ -6013,6 +6013,57 @@
    "_src_line": 17
   },
   {
+   "id": "QF_G01",
+   "scene": "qufu",
+   "subject": "place:kong_miao",
+   "title": "孔庙历代重建的精确木构年代、构件与修缮档案，公开有限，技术史细节待补。",
+   "missing": "古建筑测绘 / 建筑史 / 文物档案",
+   "where": "孔庙历代重建的木构年代、构件做法与修缮档案",
+   "skills": [
+    "古建筑测绘",
+    "建筑史",
+    "文物档案"
+   ],
+   "accept": "若有历次修缮记、结构测绘或考古报告，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "QF_G02",
+   "scene": "qufu",
+   "subject": "person:meng_zi",
+   "title": "孟子邹邑故里的精确遗址与早期孟庙建制、祠祀网络数据，公开有限。",
+   "missing": "考古学 / 思想史 / 祠庙研究",
+   "where": "孟子邹邑故里的考古遗址、早期孟庙建制与祠祀网络",
+   "skills": [
+    "考古学",
+    "思想史",
+    "祠庙研究"
+   ],
+   "accept": "若有遗址发掘报告或孟庙建制考，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "QF_G03",
+   "scene": "qufu",
+   "subject": "place:qufu_mingcheng",
+   "title": "曲阜先秦鲁国都城与阙里聚落的精确考古 GIS 数据，公开不足。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "曲阜先秦鲁国都城、阙里聚落的考古发掘与 GIS 矢量化数据",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有鲁城遗址数字化或文物普查空间数据，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "SG017",
    "scene": "san_guo",
    "subject": "person:liu_shan",

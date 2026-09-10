@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 457 个切片
+// 权威数据源：data/scenes.json 注册的 458 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 457 个切片",
+  "slice": "multi-scene · 458 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -202,6 +202,7 @@ window.SANDBOX_DATA = {
    "qinghai_zongkaba_llm",
    "qingli_reform_llm",
    "quanzhou",
+   "qufu",
    "san_guo",
    "shaanxi_hanchang_llm",
    "shaanxi_shangyang_llm",
@@ -1033,7 +1034,8 @@ window.SANDBOX_DATA = {
   "pingyao",
   "yixian",
   "fenghuang",
-  "chaozhou"
+  "chaozhou",
+  "qufu"
  ],
  "vocab": {
   "layers": [
@@ -28495,6 +28497,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "ming_qing",
    "scale_tier": "operational"
+  },
+  "qufu": {
+   "key": "qufu",
+   "title": "曲阜（孔子故里·儒源·三孔）",
+   "dossier_label": "曲阜",
+   "subtitle": "鲁国故都 · 孔庙孔林孔府 · 儒学圣地 · 邹鲁之源",
+   "kind": "county",
+   "region": "huabei",
+   "page": "county.html?scene=qufu",
+   "vocab_pack": "qufu",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "spring_autumn",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28954,7 +28978,8 @@ window.SANDBOX_DATA = {
   "pingyao": "slices/pingyao.js",
   "yixian": "slices/yixian.js",
   "fenghuang": "slices/fenghuang.js",
-  "chaozhou": "slices/chaozhou.js"
+  "chaozhou": "slices/chaozhou.js",
+  "qufu": "slices/qufu.js"
  },
  "corridors": [
   {
