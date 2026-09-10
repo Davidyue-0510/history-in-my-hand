@@ -632,13 +632,19 @@
         '<div class="vp-assess"><b>此役理解：</b>'+(vp.assessment||'—')+'</div>';
     }
 
-    // 图例
+    // 图例（v0.228 O8：阵营色块叠加与地图一致的 hatch 纹理，色盲可凭方向区分）
     (function legend(){
       var box=$('legend');
+      function darken(c, f){ var m=String(c).match(/\d+/g); if(!m) return c; return 'rgb('+m.slice(0,3).map(function(v){return Math.max(0,(+v*f)|0);}).join(',')+')'; }
       ['明方','清方','contested'].forEach(function(p){
         var c=core.D.partyColors && core.D.partyColors[p]; c=c?('rgb('+c[0]+','+c[1]+','+c[2]+')'):'#888';
+        var dk=darken(c,0.6);
+        var hatch, size='';
+        if (p==='contested') { hatch='radial-gradient(circle, '+dk+' 1px, transparent 1.6px)'; size='5px 5px'; }
+        else hatch='repeating-linear-gradient('+(p==='明方'?'45deg':'-45deg')+', '+dk+' 0 1.5px, transparent 1.5px 5px)';
         var it=document.createElement('div'); it.className='it';
-        it.innerHTML='<span class="sw" style="background:'+c+'"></span>'+p;
+        it.title = p + '（纹理：' + (p==='contested'?'点阵':(p==='明方'?'斜线 /':'斜线 \\\\')) + '）';
+        it.innerHTML='<span class="sw" style="background:'+c+';background-image:'+hatch+';'+(size?'background-size:'+size+';':'')+'"></span>'+p;
         box.appendChild(it);
       });
       var h=document.createElement('div'); h.className='it'; h.style.marginLeft='auto'; h.style.color='var(--ink-soft)';

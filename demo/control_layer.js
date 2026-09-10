@@ -54,6 +54,15 @@
     return partyIdxMap[p];
   }
   function pCol(i) { return partyColor(partyList[i]); }
+  // v0.228 (O8)：阵营色无障碍纹理——色盲用户靠方向区分（明方 /、清方 \、争议 点阵）
+  function hatchOn(name, ix, iy) {
+    if (!name) return false;
+    var period = 6;
+    if (name === '明方') return ((ix + iy) % period === 0);
+    if (name === '清方') return ((ix - iy) % period === 0);
+    if (name === 'contested') return (ix % period === 0 && iy % period === 0);
+    return false;
+  }
   function partyColor(p) {
     if (!p) return null;
     var hex = cfg.partyColors && cfg.partyColors[p];
@@ -183,8 +192,9 @@
         }
         var col = pCol(pi);
         if (col) {
-          data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2];
-          data[o + 3] = (pi === pIdx('contested')) ? 95 : (nation ? 130 : 120);
+          var a = (pi === pIdx('contested')) ? 95 : (nation ? 130 : 120);
+          if (hatchOn(partyList[pi], ix, iy)) { col = [col[0] * 0.6 | 0, col[1] * 0.6 | 0, col[2] * 0.6 | 0]; }
+          data[o] = col[0]; data[o + 1] = col[1]; data[o + 2] = col[2]; data[o + 3] = a;
         }
       }
     }
