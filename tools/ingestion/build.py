@@ -370,9 +370,18 @@ def build_scene(sc):
 
     # 场景级水系补充（v0.222）：NE 50m 河流在局部战役视野内可能缺失关键水系，
     # 允许 data/<dir>/rivers.json 按公开地理资料诚实补绘，合并入 basemap.rivers。
+    override_rivers = []
     rivers_path = os.path.join(dirpath, "rivers.json")
     if os.path.exists(rivers_path):
-        bundle["rivers_override"] = load_json(dirpath, "rivers.json").get("rivers", [])
+        override_rivers.extend(load_json(dirpath, "rivers.json").get("rivers", []))
+    # 辽东体系共享水系补充：NE 50m 缺浑河/苏子河，统一在 data/geo/liaodong_rivers.json
+    # 维护一次，自动覆盖所有辽东场景，避免每个场景重复手画。
+    if sc.get("region") in LIAODONG_REGIONS:
+        shared_rivers_path = os.path.join(DATA, "geo", "liaodong_rivers.json")
+        if os.path.exists(shared_rivers_path):
+            override_rivers.extend(load_json(os.path.join(DATA, "geo"), "liaodong_rivers.json").get("rivers", []))
+    if override_rivers:
+        bundle["rivers_override"] = override_rivers
 
     # 实际控制权（v0.24 场景化——修「控制层单例被新切片污染」）：
     #   有 data/<dir>/control.json          → bundle.control / control_seats / control_years（场景专属）

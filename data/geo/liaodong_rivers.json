@@ -1,10 +1,10 @@
 {
-  "_comment": "Natural Earth 1:50m 河流数据在萨尔浒主战场视野（抚顺—新宾—沈阳）内缺失浑河、苏子河这两条核心水系。本文件按公开地理资料近似补绘，供 tools/ingestion/basemap.py 合并入场景 basemap。坐标精度约 5–10 km，非测绘级；仅作历史地理示意。",
+  "_comment": "Natural Earth 1:50m 河流数据在辽东视野内缺失浑河、苏子河两条骨干水系，导致以抚顺—新宾—沈阳为核心的明—清战役/县级切片背景地图水文骨架不完整。本文件按公开地理资料近似补绘，供 tools/ingestion/basemap.py 在 region ∈ 辽东体系 (liaobei/jianzhou/liaodong/liaonan/liaoxi) 的场景中自动合并。坐标精度约 5–10 km，非测绘级；仅作历史地理示意。",
   "rivers": [
     {
       "n": "浑河",
       "approx": true,
-      "note": "萨尔浒主战场骨干水系。源出清原，经抚顺、沈阳，西南入辽河。本线为公开地理数据近似。",
+      "note": "辽东主水系。源出清原，经抚顺、沈阳，西南入辽河。本线为公开地理数据近似。",
       "g": {
         "type": "LineString",
         "coordinates": [
