@@ -50,6 +50,14 @@
   section.block > h2{margin:0;font-size:13px;padding:7px 11px;background:#e3d8bf;border-bottom:1px solid var(--line);font-weight:700;}
   section.block .c{padding:9px 11px;font-size:12.5px;line-height:1.5;}
   .yr-row{display:flex;align-items:center;gap:10px;}
+  /* v0.228 (O1)：时间轴事件刻度带——来自史实 transitions，点击跳年 */
+  .evt-ticks{position:relative;height:20px;margin:2px 0 4px;}
+  .evt-ticks .track{position:absolute;left:8px;right:8px;top:9px;height:2px;background:var(--line);border-radius:2px;}
+  .evt-tick{position:absolute;top:2px;width:3px;height:16px;background:#b5443a;transform:translateX(-1.5px);cursor:pointer;border-radius:1.5px;z-index:2;}
+  .evt-tick:hover{background:#d65a4a;height:20px;top:0;}
+  .evt-tick.cur{background:var(--accent);box-shadow:0 0 0 2px rgba(200,162,74,.4);}
+  .evt-tick .lab{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#332d27;color:#f3ecdc;font-size:10px;line-height:1.4;padding:3px 7px;border-radius:4px;opacity:0;pointer-events:none;transition:opacity .12s;z-index:6;max-width:240px;}
+  .evt-tick:hover .lab{opacity:1;}
   .yr-row input[type=range]{flex:1;}
   .yr-val{font-weight:700;font-size:15px;min-width:42px;text-align:right;}
   .btn-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
@@ -126,6 +134,7 @@
         <h2>年份</h2>
         <div class="c">
           <div class="yr-row"><input type="range" id="year" min="1616" max="1644" step="1" value="1616"><span class="yr-val" id="yrVal">1616</span></div>
+          <div class="evt-ticks" id="evtTicks" title="史实事件刻度：点击跳到该年"></div>
           <div class="btn-row">
             <button class="btn" id="btnReset">复位</button>
             <button class="btn" id="btnStep">单步 ▶</button>
@@ -410,6 +419,40 @@
     $('btnPause').addEventListener('click', function(){ stopRun(); });
     $('btnReplay').addEventListener('click', function(){ stopRun(); selectBranch(''); state.year=year0; ySlider.value=year0; render(); });
 
+    // v0.228 (O1)：时间轴事件刻度——来自史实 transitions，点击跳到该年
+    var evtTickEls = [];
+    function buildEventTicks(){
+      var box = $('evtTicks'); if (!box) return;
+      box.innerHTML = '';
+      var tr = (core.D && core.D.transitions) || [];
+      if (!tr.length || year1 <= year0) return;
+      var track = document.createElement('div'); track.className = 'track'; box.appendChild(track);
+      var byYear = {};
+      tr.forEach(function(t){ (byYear[t.year] = byYear[t.year] || []).push(t); });
+      var years = Object.keys(byYear).map(Number).sort(function(a,b){ return a-b; });
+      evtTickEls = [];
+      years.forEach(function(y){
+        var f = (y - year0) / (year1 - year0);
+        var tick = document.createElement('div');
+        tick.className = 'evt-tick';
+        tick.style.left = 'calc(8px + (100% - 16px) * ' + f + ')';
+        tick.dataset.year = y;
+        var names = byYear[y].map(function(t){
+          var s = (core.SEATS||[]).find(function(x){ return x.id === t.place_id; });
+          return (s ? s.name : t.place_id) + ' ' + t.from + '→' + t.to;
+        });
+        var lab = document.createElement('div'); lab.className = 'lab';
+        var n = names.length;
+        lab.textContent = y + '年：' + (n > 3 ? (names.slice(0,2).join('；') + ' 等 ' + n + ' 处易手') : names.join('；'));
+        tick.appendChild(lab);
+        tick.addEventListener('click', function(){ stopRun(); ySlider.value = y; state.year = y; render(); });
+        box.appendChild(tick);
+        evtTickEls.push(tick);
+      });
+    }
+    function markEventTick(){ evtTickEls.forEach(function(t){ t.classList.toggle('cur', +t.dataset.year === state.year); }); }
+    buildEventTicks();
+
     function startRun(){
       if(running) return; running=true;
       if(state.year>=year1){ state.year=year0; ySlider.value=year0; }
@@ -464,6 +507,7 @@
     // ── 主渲染 ──
     function render(){
       $('yrVal').textContent = state.year;
+      markEventTick();
       Sim.setMode(state.mode);
       Sim.draw(state.year, 'region', state.branch||null);
       renderAdvanceArrows();
