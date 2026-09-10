@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "id": "chaozhou_fuzhi",
+      "title": "潮州府志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距明清府城事约数十年至数百年",
+      "stance_label": "地方志",
+      "compiler": "《潮州府志》（清/民各版及今纂）",
+      "color": "#A0473A",
+      "period": "清/民"
+    },
+    {
+      "id": "guangji_qiao_zhi",
+      "title": "广济桥志",
+      "party": "后世官修",
+      "distance_label": "近现代整理，距南宋建桥事约数百年至近千年",
+      "stance_label": "专史辑录",
+      "compiler": "《广济桥志》与桥史研究辑录",
+      "color": "#A0473A",
+      "period": "近现代"
+    },
+    {
+      "id": "han_yu_quanji",
+      "title": "韩昌黎集",
+      "party": "唐·私修",
+      "distance_label": "韩愈自撰，距贬潮事为当时人记当时事",
+      "stance_label": "唐代私修诗文",
+      "compiler": "韩愈（唐）",
+      "color": "#8E7CC3",
+      "period": "唐"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "潮州史与海上丝路综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

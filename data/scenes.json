@@ -659,7 +659,8 @@
   "dali",
   "pingyao",
   "yixian",
-  "fenghuang"
+  "fenghuang",
+  "chaozhou"
  ],
  "scenes": {
   "langzhong": {
@@ -1160,6 +1161,91 @@
      ],
      "layer": "inference",
      "note": "武陵山—沱江通道+苗疆事件→凤凰控湘黔渝桂边区，军事地位突出"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "chaozhou": {
+   "kind": "county",
+   "region": "exchange",
+   "province": "guangdong",
+   "title": "潮州（海滨邹鲁·潮商·广济桥）",
+   "dossier_label": "潮州",
+   "subtitle": "韩江三角洲 · 广济桥 · 潮商网络 · 儒学南传",
+   "primary_place": "chaozhou_fucheng",
+   "dossier_event": "event:ev_chaozhou_02",
+   "vocab_pack": "chaozhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "潮州位于粤东韩江三角洲，819 年韩愈贬潮兴学、1171 年丁允元建广济桥、明中后期潮商依托柘林湾出海，使这里成为“海滨邹鲁”与粤东商贸中心。下方为贬潮、建桥与海贸三条主线。",
+   "parties_note": "史料以潮州府志、广济桥志为本，韩昌黎集为唐私修，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_chaozhou_01": "韩愈贬潮",
+    "event:ev_chaozhou_02": "广济桥始建",
+    "event:ev_chaozhou_03": "潮商兴起",
+    "place:chaozhou_fucheng": "潮州府城",
+    "place:guangji_qiao": "广济桥",
+    "person:han_yu": "韩愈"
+   },
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "潮州府制度+韩愈儒学南传+宗族祠堂→海滨邹鲁的社会政治秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "广济桥技术+柘林湾海贸制度→潮州兼具内河交通与海上贸易功能"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "潮商宗族+海外移民+会馆→粤东社会外向流动与文化再生产"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "韩江三角洲+海上丝路事件→潮州控闽粤赣边区与南洋通道"
     }
    },
    "dims": [

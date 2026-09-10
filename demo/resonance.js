@@ -43,6 +43,7 @@ window.SANDBOX_RESONANCE = {
    "changping_llm",
    "changsha_yao_llm",
    "chanyuan",
+   "chaozhou",
    "chengpu",
    "chenqiao",
    "chensheng",
@@ -1076,6 +1077,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:cy_1004",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chaozhou",
+   "name": "chaozhou",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "后世官修": 7,
+    "唐·私修": 2,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chaozhou_01",
    "best_resonance": 0.0
   },
   {

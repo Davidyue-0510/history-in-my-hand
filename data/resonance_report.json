@@ -41,6 +41,7 @@
       "changping_llm",
       "changsha_yao_llm",
       "chanyuan",
+      "chaozhou",
       "chengpu",
       "chenqiao",
       "chensheng",
@@ -1074,6 +1075,27 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:cy_1004",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "chaozhou",
+      "name": "chaozhou",
+      "total": 17,
+      "layers": {
+        "record": 6,
+        "scholarship": 3,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "后世官修": 7,
+        "唐·私修": 2,
+        "学界": 8
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_chaozhou_01",
       "best_resonance": 0.0
     },
     {
@@ -12643,6 +12665,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chaozhou_01",
+      "name": "event:ev_chaozhou_01",
+      "scenes": [
+        "chaozhou"
+      ],
+      "scene_names": [
+        "chaozhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chaozhou_02",
+      "name": "event:ev_chaozhou_02",
+      "scenes": [
+        "chaozhou"
+      ],
+      "scene_names": [
+        "chaozhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_chaozhou_03",
+      "name": "event:ev_chaozhou_03",
+      "scenes": [
+        "chaozhou"
+      ],
+      "scene_names": [
+        "chaozhou"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

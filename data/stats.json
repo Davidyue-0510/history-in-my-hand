@@ -1,9 +1,9 @@
 {
-  "scenes_total": 456,
-  "historical": 447,
+  "scenes_total": 457,
+  "historical": 448,
   "fictional": 9,
-  "assertions_total": 6730,
-  "sources_total": 444,
+  "assertions_total": 6747,
+  "sources_total": 447,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -26,6 +26,7 @@
     "chama_xizang_llm",
     "changping_llm",
     "changsha_yao_llm",
+    "chaozhou",
     "chibi_llm",
     "chongqing_capital_llm",
     "chongqing_ciqikou_llm",
@@ -321,7 +322,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 615,
+  "leads_total": 618,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3565,6 +3566,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "chaozhou",
+      "title": "潮州（海滨邹鲁·潮商·广济桥）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4023,6 +4031,7 @@
     "dali": "大理（苍洱之地·南诏大理国）",
     "pingyao": "平遥（明清票号金融·晋商·城墙）",
     "yixian": "黟县（皖南古村落·西递宏村·徽派）",
-    "fenghuang": "凤凰（湘西边城·苗土风情）"
+    "fenghuang": "凤凰（湘西边城·苗土风情）",
+    "chaozhou": "潮州（海滨邹鲁·潮商·广济桥）"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "guangji_qiao", "to": "chaozhou_fucheng", "kind": "within", "note": "广济桥位于潮州府城东门外韩江上"},
+    {"from": "han_jiang", "to": "chaozhou_fucheng", "kind": "adjacent", "note": "韩江流经潮州府城"},
+    {"from": "feng_huang_shan", "to": "chaozhou_fucheng", "kind": "near", "note": "凤凰山位于潮州府城北面"},
+    {"from": "kaiyuan_si", "to": "chaozhou_fucheng", "kind": "within", "note": "开元寺位于潮州府城内"},
+    {"from": "chaozhou_wan", "to": "chaozhou_fucheng", "kind": "near", "note": "潮州湾/柘林湾为潮州府出海港"}
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_chaozhou_01",
+      "year": 819,
+      "era": "元和十四年",
+      "kind": "贬谪",
+      "title": "韩愈贬潮州刺史",
+      "place": "chaozhou_fucheng",
+      "text": "元和十四年（819）韩愈贬潮州刺史，在潮八月，兴办州学、祭鳄鱼、荐士子，被视为儒学南传潮州之始，后世潮人尊其为“吾潮导师”。",
+      "subject": "event:ev_chaozhou_01"
+    },
+    {
+      "id": "ev_chaozhou_02",
+      "year": 1171,
+      "era": "乾道七年",
+      "kind": "工程",
+      "title": "广济桥始建",
+      "place": "guangji_qiao",
+      "text": "乾道七年（1171）潮州知州丁允元主持造舟为梁，始建广济桥；后历宋元明清多次修缮，形成东西石梁、中段浮舟的独特开合桥，成为中国四大古桥之一。",
+      "subject": "event:ev_chaozhou_02"
+    },
+    {
+      "id": "ev_chaozhou_03",
+      "year": 1550,
+      "era": "明中后期",
+      "kind": "商贸",
+      "title": "潮州商帮兴起",
+      "place": "chaozhou_wan",
+      "text": "明中后期，潮州人依托柘林湾、南澳等港口出海贸易，陶瓷、蔗糖、盐运销东南亚，形成“潮州帮”海外商业与移民网络。",
+      "subject": "event:ev_chaozhou_03"
+    }
+  ]
+}

@@ -620,6 +620,57 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "CZ_G01",
+   "scene": "chaozhou",
+   "subject": "place:guangji_qiao",
+   "title": "广济桥历代浮船数量、开合机制与木构件年代的精确技术史数据公开有限。",
+   "missing": "桥梁工程史 / 古建筑测绘 / 交通史",
+   "where": "广济桥历代浮船数量、开合机构、木石构件年代与修缮记录",
+   "skills": [
+    "桥梁工程史",
+    "古建筑测绘",
+    "交通史"
+   ],
+   "accept": "若有历次修缮档案、结构测绘或考古报告，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "CZ_G02",
+   "scene": "chaozhou",
+   "subject": "person:chen_cihong",
+   "title": "陈慈黉家族海外贸易网络、账簿与侨批原件，公开档案有限。",
+   "missing": "华侨史 / 商业史 / 侨批学",
+   "where": "陈慈黉家族海外贸易账簿、侨批、商路网络",
+   "skills": [
+    "华侨史",
+    "商业史",
+    "侨批学"
+   ],
+   "accept": "若有私家账簿、侨批原件或家族档案整理，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "CZ_G03",
+   "scene": "chaozhou",
+   "subject": "place:chaozhou_fucheng",
+   "title": "潮州府城明清街坊布局与宗族祠堂空间分布的精确 GIS 数据不足。",
+   "missing": "历史地理 / 城市史 / GIS",
+   "where": "潮州府城明清街坊、祠堂、会馆的空间分布与 GIS 矢量化数据",
+   "skills": [
+    "历史地理",
+    "城市史",
+    "GIS"
+   ],
+   "accept": "若有历史地图数字化或文物普查空间数据，可补制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "CHENGPUG01",
    "scene": "chengpu",
    "subject": "event:cp_jz",
