@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "yixian_zhi",
+      "title": "黟县志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距明清村事约数十年至数百年",
+      "stance_label": "地方志",
+      "compiler": "《黟县志》（清/民及今纂）",
+      "color": "#A0473A",
+      "period": "清/民"
+    },
+    {
+      "id": "huizhou_fuzhi",
+      "title": "徽州府志",
+      "party": "后世官修",
+      "distance_label": "清/民屡修，距明清徽商事约数十年至数百年",
+      "stance_label": "地方志",
+      "compiler": "《徽州府志》（清/民各版）",
+      "color": "#A0473A",
+      "period": "清/民"
+    },
+    {
+      "id": "xin_an_lixue",
+      "title": "徽州学术史·新安理学",
+      "party": "后世官修",
+      "distance_label": "近现代整理研究，距宋明理学事约数百年",
+      "stance_label": "学术史辑录",
+      "compiler": "新安理学与徽州学术史综合辑录",
+      "color": "#A0473A",
+      "period": "近现代"
+    },
+    {
+      "id": "unesco_1002",
+      "title": "UNESCO 皖南古村落 1002",
+      "party": "国际机构",
+      "distance_label": "2000 年认定，距村事为现代权威鉴定",
+      "stance_label": "国际机构认定",
+      "compiler": "UNESCO World Heritage Centre（编号 1002）",
+      "color": "#5B7C99",
+      "period": "今"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "徽州学与历史地理综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

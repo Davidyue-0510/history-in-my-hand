@@ -8784,6 +8784,57 @@
    "_src_line": 14
   },
   {
+   "id": "YX_G01",
+   "scene": "yixian",
+   "subject": "place:xidi",
+   "title": "西递早期（北宋至明初）民居建筑的具体营造匠作与传承谱系，缺系统考古报告。",
+   "missing": "建筑史 / 徽派建筑 / 考古学",
+   "where": "西递北宋至明初民居的匠作源流、营造尺度与传承谱系",
+   "skills": [
+    "建筑史",
+    "徽派建筑",
+    "考古学"
+   ],
+   "accept": "若有早期建筑考古报告或匠作题记，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "YX_G02",
+   "scene": "yixian",
+   "subject": "place:yixian_cheng",
+   "title": "明清黟县宗族内部土地交易与族田管理的实际契约原件公开不足。",
+   "missing": "社会经济史 / 契约文书 / 徽州文书",
+   "where": "明清黟县宗族族田、祠产与内部土地交易的原始契约",
+   "skills": [
+    "社会经济史",
+    "契约文书",
+    "徽州文书"
+   ],
+   "accept": "若有徽州文书数据库或黟县宗族契约整理，可补制度(3)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "YX_G03",
+   "scene": "yixian",
+   "subject": "person:bao_zhidao",
+   "title": "鲍志道等个体徽商的私人文书、往来账目与社交网络细节，公开档案有限。",
+   "missing": "徽商史 / 盐业史 / 人物传记",
+   "where": "鲍志道等徽商个体盐商的私人文书、账簿与社交网络",
+   "skills": [
+    "徽商史",
+    "盐业史",
+    "人物传记"
+   ],
+   "accept": "若有私家账簿、往来书信或盐务档案整理，可补社会(4)层人物断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "YUAN_DUOG01",
    "scene": "yuan_duo",
    "subject": "event:yu_1276",

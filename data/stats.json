@@ -1,9 +1,9 @@
 {
-  "scenes_total": 454,
-  "historical": 445,
+  "scenes_total": 455,
+  "historical": 446,
   "fictional": 9,
-  "assertions_total": 6696,
-  "sources_total": 437,
+  "assertions_total": 6713,
+  "sources_total": 441,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -294,6 +294,7 @@
     "xizang_xika_llm",
     "xizang_zongkaba_llm",
     "yangwu_llm",
+    "yixian",
     "yuan_qinghua_llm",
     "yuan_shangdu_llm",
     "yuan_wangzhen_llm",
@@ -319,7 +320,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 609,
+  "leads_total": 612,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3549,6 +3550,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "yixian",
+      "title": "黟县（皖南古村落·西递宏村·徽派）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4005,6 +4013,7 @@
     "langzhong": "阆中（张飞镇巴西）",
     "quanzhou": "泉州（刺桐港·海丝起点）",
     "dali": "大理（苍洱之地·南诏大理国）",
-    "pingyao": "平遥（明清票号金融·晋商·城墙）"
+    "pingyao": "平遥（明清票号金融·晋商·城墙）",
+    "yixian": "黟县（皖南古村落·西递宏村·徽派）"
   }
 }

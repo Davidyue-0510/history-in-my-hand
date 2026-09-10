@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 454 个切片
+// 权威数据源：data/scenes.json 注册的 455 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 454 个切片",
+  "slice": "multi-scene · 455 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -298,6 +298,7 @@ window.SANDBOX_DATA = {
    "xizang_xika_llm",
    "xizang_zongkaba_llm",
    "yangwu_llm",
+   "yixian",
    "yuan_qinghua_llm",
    "yuan_shangdu_llm",
    "yuan_wangzhen_llm",
@@ -1027,7 +1028,8 @@ window.SANDBOX_DATA = {
   "langzhong",
   "quanzhou",
   "dali",
-  "pingyao"
+  "pingyao",
+  "yixian"
  ],
  "vocab": {
   "layers": [
@@ -28423,6 +28425,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "qing",
    "scale_tier": "operational"
+  },
+  "yixian": {
+   "key": "yixian",
+   "title": "黟县（皖南古村落·西递宏村·徽派）",
+   "dossier_label": "黟县",
+   "subtitle": "皖南山水 · 西递宏村 · 徽派建筑 · 儒商宗族",
+   "kind": "county",
+   "region": "jiangnan",
+   "page": "county.html?scene=yixian",
+   "vocab_pack": "yixian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming_qing",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28879,7 +28903,8 @@ window.SANDBOX_DATA = {
   "langzhong": "slices/langzhong.js",
   "quanzhou": "slices/quanzhou.js",
   "dali": "slices/dali.js",
-  "pingyao": "slices/pingyao.js"
+  "pingyao": "slices/pingyao.js",
+  "yixian": "slices/yixian.js"
  },
  "corridors": [
   {

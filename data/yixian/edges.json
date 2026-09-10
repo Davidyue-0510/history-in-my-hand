@@ -1,0 +1,9 @@
+{
+  "edges": [
+    {"from": "xidi", "to": "yixian_cheng", "kind": "within", "note": "西递位于黟县县城东南方向"},
+    {"from": "hongcun", "to": "yixian_cheng", "kind": "within", "note": "宏村位于黟县县城东北方向"},
+    {"from": "huangshan", "to": "yixian_cheng", "kind": "near", "note": "黄山位于黟县东北，为皖南古村落提供自然背景"},
+    {"from": "xin_an_jiang", "to": "yixian_cheng", "kind": "drainage", "note": "新安江上游水系流经黟县盆地"},
+    {"from": "leigangshan", "to": "hongcun", "kind": "adjacent", "note": "雷岗山位于宏村北侧，为牛形水系风水格局中的牛头"}
+  ]
+}

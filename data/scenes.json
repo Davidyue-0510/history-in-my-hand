@@ -657,7 +657,8 @@
   "langzhong",
   "quanzhou",
   "dali",
-  "pingyao"
+  "pingyao",
+  "yixian"
  ],
  "scenes": {
   "langzhong": {
@@ -987,6 +988,92 @@
      ],
      "layer": "inference",
      "note": "汾河平川形胜+清季金融事件→平遥控南北商道、汇通天下"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yixian": {
+   "kind": "county",
+   "region": "jiangnan",
+   "province": "anhui",
+   "title": "黟县（皖南古村落·西递宏村·徽派）",
+   "dossier_label": "黟县",
+   "subtitle": "皖南山水 · 西递宏村 · 徽派建筑 · 儒商宗族",
+   "primary_place": "yixian_cheng",
+   "dossier_event": "event:ev_yixian_02",
+   "vocab_pack": "yixian",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "黟县位于皖南山区，西递、宏村是明清徽州宗族聚落与徽派民居代表：1047 年胡氏建西递，1131 年汪氏营宏村并形成牛形水系，2000 年皖南古村落列入世界遗产。下方为建村、水系与申遗三条主线。",
+   "parties_note": "史料以黟县志、徽州府志、新安理学辑录为本，UNESCO 为现代权威认定，学界考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_yixian_01": "西递胡氏建村",
+    "event:ev_yixian_02": "宏村牛形水系",
+    "event:ev_yixian_03": "皖南古村落列入世遗",
+    "place:yixian_cheng": "黟县县城",
+    "place:xidi": "西递",
+    "place:hongcun": "宏村",
+    "person:zhu_xi": "朱熹"
+   },
+   "epoch": "ming_qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宗族制度+新安理学→徽州聚族而居、以礼制维系村落政治秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "徽派建筑技术+牛形水系制度→黟县形成可防御、可耕作、可商贸的人居系统"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "徽商宗族+族田祠产→黟县人地紧张却保持社会稳定与文化再生产"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "皖南山间盆地+世界遗产认定→黟县从农业聚落转化为文化旅游节点"
     }
    },
    "dims": [
