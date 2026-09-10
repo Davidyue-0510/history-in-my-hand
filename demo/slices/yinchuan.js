@@ -705,7 +705,98 @@ window.SANDBOX_SLICES["yinchuan"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "yinchuan_city",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  },
+  {
+   "place_id": "xixia_tombs",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  },
+  {
+   "place_id": "helan_mountain",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  },
+  {
+   "place_id": "lingzhou",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  },
+  {
+   "place_id": "qingtongxia",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  },
+  {
+   "place_id": "zhenbeibao",
+   "party": "学界",
+   "start": 1038,
+   "end": 1972,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "yinchuan_city",
+   "name": "兴庆府/银川城",
+   "lon": 106.27,
+   "lat": 38.47,
+   "region": "xibei"
+  },
+  {
+   "place_id": "xixia_tombs",
+   "name": "西夏王陵",
+   "lon": 105.99,
+   "lat": 38.44,
+   "region": "xibei"
+  },
+  {
+   "place_id": "helan_mountain",
+   "name": "贺兰山",
+   "lon": 105.95,
+   "lat": 38.5,
+   "region": "xibei"
+  },
+  {
+   "place_id": "lingzhou",
+   "name": "灵州/灵武",
+   "lon": 106.34,
+   "lat": 38.1,
+   "region": "xibei"
+  },
+  {
+   "place_id": "qingtongxia",
+   "name": "青铜峡/黄河灌区",
+   "lon": 105.95,
+   "lat": 38.02,
+   "region": "xibei"
+  },
+  {
+   "place_id": "zhenbeibao",
+   "name": "镇北堡",
+   "lon": 106.05,
+   "lat": 38.6,
+   "region": "xibei"
+  }
+ ],
+ "control_years": [
+  1038,
+  1972
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

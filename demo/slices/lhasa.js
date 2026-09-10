@@ -718,7 +718,98 @@ window.SANDBOX_SLICES["lhasa"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "lhasa_city",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jokhang",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  },
+  {
+   "place_id": "potala",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  },
+  {
+   "place_id": "lhasa_river",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  },
+  {
+   "place_id": "yarlung_tsangpo",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  },
+  {
+   "place_id": "norbulingka",
+   "party": "学界",
+   "start": 641,
+   "end": 1645,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "lhasa_city",
+   "name": "拉萨/逻娑",
+   "lon": 91.14,
+   "lat": 29.65,
+   "region": "xibei"
+  },
+  {
+   "place_id": "jokhang",
+   "name": "大昭寺",
+   "lon": 91.132,
+   "lat": 29.653,
+   "region": "xibei"
+  },
+  {
+   "place_id": "potala",
+   "name": "布达拉宫",
+   "lon": 91.117,
+   "lat": 29.657,
+   "region": "xibei"
+  },
+  {
+   "place_id": "lhasa_river",
+   "name": "拉萨河/吉曲",
+   "lon": 91.13,
+   "lat": 29.66,
+   "region": "xibei"
+  },
+  {
+   "place_id": "yarlung_tsangpo",
+   "name": "雅鲁藏布江",
+   "lon": 91.1,
+   "lat": 29.4,
+   "region": "xibei"
+  },
+  {
+   "place_id": "norbulingka",
+   "name": "罗布林卡",
+   "lon": 91.09,
+   "lat": 29.64,
+   "region": "xibei"
+  }
+ ],
+ "control_years": [
+  641,
+  1645
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

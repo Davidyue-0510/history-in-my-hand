@@ -703,7 +703,98 @@ window.SANDBOX_SLICES["turpan"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "turpan_city",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  },
+  {
+   "place_id": "kanerjing",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jiaohe_ruins",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  },
+  {
+   "place_id": "tianshan_east",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  },
+  {
+   "place_id": "ayding_lake",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  },
+  {
+   "place_id": "flaming_mountains",
+   "party": "学界",
+   "start": 502,
+   "end": 1700,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "turpan_city",
+   "name": "吐鲁番/高昌故城",
+   "lon": 89.18,
+   "lat": 42.95,
+   "region": "xibei"
+  },
+  {
+   "place_id": "kanerjing",
+   "name": "坎儿井",
+   "lon": 89.1,
+   "lat": 42.9,
+   "region": "xibei"
+  },
+  {
+   "place_id": "jiaohe_ruins",
+   "name": "交河故城",
+   "lon": 89.05,
+   "lat": 42.95,
+   "region": "xibei"
+  },
+  {
+   "place_id": "tianshan_east",
+   "name": "天山东段",
+   "lon": 88.5,
+   "lat": 43.0,
+   "region": "xibei"
+  },
+  {
+   "place_id": "ayding_lake",
+   "name": "艾丁湖",
+   "lon": 89.25,
+   "lat": 42.67,
+   "region": "xibei"
+  },
+  {
+   "place_id": "flaming_mountains",
+   "name": "火焰山",
+   "lon": 89.5,
+   "lat": 42.9,
+   "region": "xibei"
+  }
+ ],
+ "control_years": [
+  502,
+  1700
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

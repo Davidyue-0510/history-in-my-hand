@@ -1,0 +1,154 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "xining",
+ "_scenario_type": "engineering",
+ "_years": [
+  641,
+  1379
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 645,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.62 / 史实 0.78）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.78,
+    "new_to": 0.622,
+    "cum": -0.158
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 646,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.65 / 史实 0.84）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.836,
+    "new_to": 0.646,
+    "cum": -0.19
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 647,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.67 / 史实 0.89）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.892,
+    "new_to": 0.671,
+    "cum": -0.221
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 648,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.25（本支 0.70 / 史实 0.95）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.948,
+    "new_to": 0.695,
+    "cum": -0.253
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 649,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.28（本支 0.72 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.719,
+    "cum": -0.281
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 650,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.26（本支 0.74 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.744,
+    "cum": -0.256
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 651,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.23（本支 0.77 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.768,
+    "cum": -0.232
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 652,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.79 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.793,
+    "cum": -0.207
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 653,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.82 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.817,
+    "cum": -0.183
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "divergence",
+   "year": 654,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.16（本支 0.84 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.841,
+    "cum": -0.159
+   },
+   "place_id": "riyue_mountain"
+  },
+  {
+   "kind": "summary",
+   "year": 1379,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "riyue_mountain"
+  }
+ ]
+}

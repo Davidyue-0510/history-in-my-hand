@@ -1,0 +1,47 @@
+{
+  "_comment": "G1 自动派生：单一控制方（学界）稳定控制，供三阶层 Agent 提供改革阻力（local 教育垄断→推进减速）。非军事场景，无需邻接线；control 为数组（位于 control 键下）。",
+  "control": [
+    {
+      "place_id": "lhasa_city",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    },
+    {
+      "place_id": "jokhang",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    },
+    {
+      "place_id": "potala",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    },
+    {
+      "place_id": "lhasa_river",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    },
+    {
+      "place_id": "yarlung_tsangpo",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    },
+    {
+      "place_id": "norbulingka",
+      "party": "学界",
+      "start": 641,
+      "end": 1645,
+      "timeline": "main"
+    }
+  ]
+}

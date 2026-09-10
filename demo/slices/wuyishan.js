@@ -710,7 +710,98 @@ window.SANDBOX_SLICES["wuyishan"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "wuyi_jingshe",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  },
+  {
+   "place_id": "wuyi_mountain",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  },
+  {
+   "place_id": "tongmu_guan",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  },
+  {
+   "place_id": "chengcun_han_city",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  },
+  {
+   "place_id": "jiuqu_stream",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  },
+  {
+   "place_id": "dahongpao_mud_tree",
+   "party": "学界",
+   "start": 1183,
+   "end": 1999,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "wuyi_jingshe",
+   "name": "武夷精舍遗址",
+   "lon": 117.95,
+   "lat": 27.66,
+   "region": "thought"
+  },
+  {
+   "place_id": "wuyi_mountain",
+   "name": "武夷山（核心景区）",
+   "lon": 117.95,
+   "lat": 27.66,
+   "region": "thought"
+  },
+  {
+   "place_id": "tongmu_guan",
+   "name": "桐木关",
+   "lon": 117.75,
+   "lat": 27.85,
+   "region": "thought"
+  },
+  {
+   "place_id": "chengcun_han_city",
+   "name": "城村汉城遗址",
+   "lon": 118.02,
+   "lat": 27.53,
+   "region": "thought"
+  },
+  {
+   "place_id": "jiuqu_stream",
+   "name": "九曲溪",
+   "lon": 117.98,
+   "lat": 27.7,
+   "region": "thought"
+  },
+  {
+   "place_id": "dahongpao_mud_tree",
+   "name": "大红袍母树/御茶园",
+   "lon": 117.96,
+   "lat": 27.67,
+   "region": "thought"
+  }
+ ],
+ "control_years": [
+  1183,
+  1999
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

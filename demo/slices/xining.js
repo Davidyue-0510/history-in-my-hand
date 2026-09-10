@@ -716,7 +716,98 @@ window.SANDBOX_SLICES["xining"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "riyue_mountain",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  },
+  {
+   "place_id": "xining_city",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  },
+  {
+   "place_id": "taer_si",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  },
+  {
+   "place_id": "qinghai_lake",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  },
+  {
+   "place_id": "huangshui_river",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  },
+  {
+   "place_id": "dangeer_old_city",
+   "party": "学界",
+   "start": 641,
+   "end": 1379,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "riyue_mountain",
+   "name": "日月山",
+   "lon": 101.05,
+   "lat": 36.42,
+   "region": "xibei"
+  },
+  {
+   "place_id": "xining_city",
+   "name": "西宁/青唐城",
+   "lon": 101.78,
+   "lat": 36.62,
+   "region": "xibei"
+  },
+  {
+   "place_id": "taer_si",
+   "name": "塔尔寺",
+   "lon": 101.57,
+   "lat": 36.49,
+   "region": "xibei"
+  },
+  {
+   "place_id": "qinghai_lake",
+   "name": "青海湖",
+   "lon": 100.13,
+   "lat": 36.99,
+   "region": "xibei"
+  },
+  {
+   "place_id": "huangshui_river",
+   "name": "湟水/西宁河谷",
+   "lon": 101.8,
+   "lat": 36.62,
+   "region": "xibei"
+  },
+  {
+   "place_id": "dangeer_old_city",
+   "name": "丹噶尔古城",
+   "lon": 101.25,
+   "lat": 36.69,
+   "region": "xibei"
+  }
+ ],
+ "control_years": [
+  641,
+  1379
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

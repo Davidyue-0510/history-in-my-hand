@@ -714,7 +714,70 @@ window.SANDBOX_SLICES["zunyi"] = {
    "type": "misc"
   }
  ],
- "control": [],
+ "control": [
+  {
+   "place_id": "bozhou",
+   "party": "学界",
+   "start": 876,
+   "end": 1915,
+   "timeline": "main"
+  },
+  {
+   "place_id": "hailongtun",
+   "party": "学界",
+   "start": 876,
+   "end": 1915,
+   "timeline": "main"
+  },
+  {
+   "place_id": "maotai",
+   "party": "学界",
+   "start": 876,
+   "end": 1915,
+   "timeline": "main"
+  },
+  {
+   "place_id": "zunyi_city",
+   "party": "学界",
+   "start": 876,
+   "end": 1915,
+   "timeline": "main"
+  }
+ ],
+ "control_seats": [
+  {
+   "place_id": "bozhou",
+   "name": "播州/遵义古称",
+   "lon": 106.93,
+   "lat": 27.73,
+   "region": "chuan_gui"
+  },
+  {
+   "place_id": "hailongtun",
+   "name": "海龙屯",
+   "lon": 106.83,
+   "lat": 27.83,
+   "region": "chuan_gui"
+  },
+  {
+   "place_id": "maotai",
+   "name": "茅台镇",
+   "lon": 106.39,
+   "lat": 27.86,
+   "region": "chuan_gui"
+  },
+  {
+   "place_id": "zunyi_city",
+   "name": "遵义老城",
+   "lon": 106.92,
+   "lat": 27.73,
+   "region": "chuan_gui"
+  }
+ ],
+ "control_years": [
+  876,
+  1915
+ ],
  "vocab": {
   "layers": {
    "record": "原始史料",

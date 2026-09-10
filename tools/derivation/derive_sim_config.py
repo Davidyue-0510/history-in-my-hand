@@ -41,8 +41,9 @@ SIM_PY = os.path.join(ROOT, "tools", "simulation", "simulate.py")
 DIM_NAMES = ["地理", "技术", "制度", "社会", "思想", "事件"]   # 索引 0..5 对应 dims 1..6
 DIM_BY_CODE = {i + 1: n for i, n in enumerate(DIM_NAMES)}      # {1:地理, 2:技术, ...}
 
-# 默认语境包（ming_qing）party_bucket 内合法 party 键；派生 source 统一归「学界」
-# （→ 综述考订 桶），避免 E05（party 不在受控词表被共振统计静默丢弃）。
+# 派生 source/control 统一归「学界」桶（跨朝代合法 party，受控词表默认含，避免 E05
+# 静默丢弃）。v0.218 起控制方 party 也统一回退「学界」（此前误用「综述考订」，
+# 县级场景 vocab_pack 不含该词 → gate #9 ERROR）。
 DEFAULT_PARTY = "学界"
 
 # 方向关键词：推进 / 逆转（史料文本启发式）
@@ -90,6 +91,48 @@ def load_assertions(path):
     return rows
 
 
+def load_events(scene_dir):
+    """读取 events.json → list[dict]（容忍多种顶层结构）。无则返回 []。"""
+    if not scene_dir:
+        return []
+    p = os.path.join(scene_dir, "events.json")
+    if not os.path.isfile(p):
+        return []
+    try:
+        with open(p, encoding="utf-8") as f:
+            d = json.load(f)
+    except Exception:
+        return []
+    if isinstance(d, list):
+        return d
+    if isinstance(d, dict):
+        return d.get("events") or d.get("scenes") or []
+    return []
+
+
+def _event_year(ev):
+    """从事件取公元年：优先 year（int），否则 time.gregorian_year / time.start。"""
+    if not isinstance(ev, dict):
+        return None
+    y = ev.get("year")
+    if isinstance(y, int):
+        return y
+    t = ev.get("time") or {}
+    gy = t.get("gregorian_year")
+    if isinstance(gy, int):
+        return gy
+    s = t.get("start")
+    if isinstance(s, int):
+        return s
+    if isinstance(s, str):
+        head = s.split("-")[0].split("T")[0]
+        try:
+            return int(head)
+        except ValueError:
+            return None
+    return None
+
+
 def collect_place_codes(assertions):
     """收集非空的 place 码（保持出现顺序，去重）。"""
     seen = []
@@ -122,20 +165,64 @@ def _year_of(a):
     return None
 
 
-def derive_year_span(assertions):
-    """取断言年份的最小/最大；无年份则回退 (None, None)。"""
+def derive_year_span(assertions, events=None):
+    """取断言/事件年份的最小/最大；无年份则回退 (None, None)。
+
+    v0.218 修正：县级场景的断言通常不带 time 字段（年份只写在 events.json），
+    原逻辑只看断言 → 落到 (-200,-100) 默认假年份。现把 events.json 的事件年
+    并入年份池（year 整数 / time.gregorian_year / time.start），使反事实年份跨度
+    取场景真实起讫（如 遵义 876–1915），避免凭空假年份。断言年与事件年取并集的
+    最小/最大，二者任一来源存在即可。
+    """
     ys = [y for y in (_year_of(a) for a in assertions) if isinstance(y, int)]
+    if events:
+        for ev in events:
+            ey = _event_year(ev)
+            if isinstance(ey, int):
+                ys.append(ey)
     if not ys:
         return None, None
     return min(ys), max(ys)
 
 
+def _scene_vocab_pack_parties(scene_dir):
+    """读 scenes.json 取该场景 vocab_pack → data/vocab/<pack>.json 的 parties。
+
+    与渲染层受控词表（check_render_schema）一致：控制方 party 必须落在 vocab_pack
+    parties 内，否则控制层配色静默失败（gate #9 ERROR）。县级场景通常只有 vocab_pack
+    （data/vocab/<scene>.json），无 scene_dir/vocab.json，故须解析 vocab_pack。
+    """
+    if not scene_dir:
+        return []
+    scene_id = os.path.basename(scene_dir.rstrip(os.sep))
+    sj = os.path.join(ROOT, "data", "scenes.json")
+    if not os.path.isfile(sj):
+        return []
+    try:
+        d = json.load(open(sj, encoding="utf-8"))
+    except Exception:
+        return []
+    blk = (d.get("scenes") or {}).get(scene_id) or {}
+    vpack = blk.get("vocab_pack")
+    if not vpack or str(vpack).startswith("inline:"):
+        return []
+    vp = os.path.join(ROOT, "data", "vocab", str(vpack).split(":")[-1] + ".json")
+    if not os.path.isfile(vp):
+        return []
+    try:
+        return json.load(open(vp, encoding="utf-8")).get("parties") or []
+    except Exception:
+        return []
+
+
 def derive_party(assertions, scene_dir=None):
     """派生控制方 party。
 
-    若场景 vocab.json 声明了合法 party（parties 非空），优先生成场景专属控制方，
-    避免 gate #9「party 不在受控词表」ERROR（如 susong 用「后世官修」、huangdaopo 用
-    「综合史料」）。无 scene_dir 或 vocab 无 parties 时回退默认「综述考订」（跨朝代合法兜底）。
+    解析顺序：① 场景级 vocab.json（手书 party）→ ② 场景 vocab_pack parties（与渲染层
+    受控词表一致；优先「学界」通用合成桶）→ ③ 兜底「学界」（跨朝代合法 party 桶，
+    受控词表默认含）。v0.218 修正：原兜底误用「综述考订」，而县级场景 vocab_pack 不含
+    该词，导致 gate #9「party 不在受控词表」ERROR；统一回退「学界」（与 sources.json
+    派生 party 一致，DEFAULT_PARTY=学界）。
     """
     if scene_dir:
         vp = os.path.join(scene_dir, "vocab.json")
@@ -148,7 +235,12 @@ def derive_party(assertions, scene_dir=None):
                     return parties[0]
             except Exception:
                 pass
-    return "综述考订"
+        pack_parties = _scene_vocab_pack_parties(scene_dir)
+        if pack_parties:
+            if "学界" in pack_parties:
+                return "学界"
+            return pack_parties[0]
+    return "学界"
 
 
 def derive_places(assertions, scene_dir=None):
@@ -186,7 +278,7 @@ def derive_places(assertions, scene_dir=None):
     return {"places": places}
 
 
-def derive_control(assertions, party=None, start=None, end=None, scene_dir=None):
+def derive_control(assertions, party=None, start=None, end=None, scene_dir=None, events=None):
     """控制方的史实 timeline；供 create_agents 生成三阶层阻力。
 
     返回字典 {"control": [...]}，与 build.py / 军事路径一致（control 键下为控制项数组）。
@@ -195,7 +287,7 @@ def derive_control(assertions, party=None, start=None, end=None, scene_dir=None)
     if party is None:
         party = derive_party(assertions, scene_dir=scene_dir)
     if start is None or end is None:
-        sy, ey = derive_year_span(assertions)
+        sy, ey = derive_year_span(assertions, events)
         start = sy if sy is not None else -200
         end = ey if ey is not None else -100
     codes = collect_place_codes(assertions)
@@ -335,26 +427,30 @@ def derive_branches(assertions, scenario_type=None, scene_id=None):
     return branches, "real"
 
 
-def derive_config(assertions, scene_id=None):
+def derive_config(assertions, scene_id=None, events=None):
     """纯函数：从断言派生完整 sim_config（标 _auto_derived）。
 
     v0.181：scene_id 命中 BASE_RATE_ANCHORS 时，base_rate 走考据锚定，并在
     _derivation_note 追加 [考据锚定] 段（含 magnitude/sign/citation）供审计。
+    v0.218：events 并入年份池（县级场景年份来自 events.json）。
     """
     scenario_type = derive_scenario_type(assertions)
     dim_targets = derive_dim_targets(assertions)
     branches, real_branch = derive_branches(assertions, scenario_type, scene_id)
-    sy, ey = derive_year_span(assertions)
+    sy, ey = derive_year_span(assertions, events)
     if sy is None:
         sy, ey = -200, -100
     sign = _direction_sign(assertions)
     pos_w, neg_w = _evidence_weights(assertions)
     strength = _evidence_strength(assertions)
+    ysrc = "events.json 事件年" if (sy is not None and not any(_year_of(a) is not None for a in assertions)) else "断言 time 字段"
     note = ("G1 自动派生（零手 authoring）。scenario_type 由 dims 分布推导；"
+            "年份跨度 %d–%d 取自%s（县级场景断言常无 time 字段，v0.218 起并入 events.json 事件年，"
+            "杜绝 -200/-100 假年份）；"
             "base_rate 方向由 POS/NEG 关键词 confidence 加权净差推定（pos=%.2f neg=%.2f sign=%d），"
             "幅度由证据强度 strength=%.2f 驱动（magnitude=0.015+strength*0.045，封顶 0.06）；"
             "whatif 取反向并阻尼 0.7。places 不杜撰几何（已有坐标则保留真实定位，否则判抽象世界）。"
-            % (pos_w, neg_w, sign, strength))
+            % (sy, ey, ysrc, pos_w, neg_w, sign, strength))
     anchor = BASE_RATE_ANCHORS.get(scene_id) if scene_id else None
     if anchor:
         note += (" [考据锚定] scene=%s：magnitude=%.3f sign=%d —— %s"
@@ -381,13 +477,14 @@ def derive_all(scene_dir, assertions=None, write_sources=True):
     """
     if assertions is None:
         assertions = load_assertions(os.path.join(scene_dir, "assertions.jsonl"))
+    events = load_events(scene_dir)
     places = derive_places(assertions, scene_dir=scene_dir)
-    sy, ey = derive_year_span(assertions)
+    sy, ey = derive_year_span(assertions, events)
     s = sy if sy is not None else -200
     e = ey if ey is not None else -100
-    control = derive_control(assertions, start=s, end=e, scene_dir=scene_dir)
+    control = derive_control(assertions, start=s, end=e, scene_dir=scene_dir, events=events)
     scene_id = os.path.basename(scene_dir.rstrip(os.sep)) if scene_dir else None
-    sim_config = derive_config(assertions, scene_id)
+    sim_config = derive_config(assertions, scene_id, events=events)
 
     _dump(os.path.join(scene_dir, "places.json"), places)
     _dump(os.path.join(scene_dir, "control.json"), control)
@@ -459,7 +556,8 @@ def main():
         return 2
 
     assertions = load_assertions(a_path)
-    cfg = derive_config(assertions, args.scene)
+    events = load_events(scene_dir)
+    cfg = derive_config(assertions, args.scene, events)
     print("== G1 派生 sim_config ==")
     print(json.dumps(cfg, ensure_ascii=False, indent=2))
 

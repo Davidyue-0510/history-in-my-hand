@@ -1,0 +1,154 @@
+{
+ "_comment": "反事实分支事件（docs/sim_branch_event.schema.json v0.57）",
+ "_branch": "real",
+ "_scene": "wuyishan",
+ "_scenario_type": "thought",
+ "_years": [
+  1183,
+  1999
+ ],
+ "events": [
+  {
+   "kind": "divergence",
+   "year": 1187,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.15（本支 0.62 / 史实 0.77）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.77,
+    "new_to": 0.618,
+    "cum": -0.152
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1188,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.18（本支 0.64 / 史实 0.82）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.824,
+    "new_to": 0.641,
+    "cum": -0.183
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1189,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.21（本支 0.66 / 史实 0.88）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.878,
+    "new_to": 0.665,
+    "cum": -0.213
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1190,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.69 / 史实 0.93）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.932,
+    "new_to": 0.688,
+    "cum": -0.244
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1191,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.71 / 史实 0.99）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 0.986,
+    "new_to": 0.712,
+    "cum": -0.274
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1192,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.27（本支 0.74 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.735,
+    "cum": -0.265
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1193,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.24（本支 0.76 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.759,
+    "cum": -0.241
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1194,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.22（本支 0.78 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.782,
+    "cum": -0.218
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1195,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.19（本支 0.81 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.806,
+    "cum": -0.194
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "divergence",
+   "year": 1196,
+   "severity": "warn",
+   "description": "改革指数偏离史实 -0.17（本支 0.83 / 史实 1.00）",
+   "evidence": {
+    "rule": "R_reform",
+    "real_to": 1.0,
+    "new_to": 0.829,
+    "cum": -0.171
+   },
+   "place_id": "wuyi_jingshe"
+  },
+  {
+   "kind": "summary",
+   "year": 1999,
+   "severity": "info",
+   "description": "终局改革指数：本支 1.00 / 史实 1.00（偏离 0.00）",
+   "evidence": {
+    "cum": 0.0,
+    "match": 0,
+    "total": 1
+   },
+   "place_id": "wuyi_jingshe"
+  }
+ ]
+}
