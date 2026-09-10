@@ -759,6 +759,38 @@ window.SANDBOX_SLICES["dagukou_battle_llm"] = {
    "_source_credibility": null
   }
  ],
+ "rivers_override": [
+  {
+   "n": "海河",
+   "approx": true,
+   "note": "大沽口即海河入海口，天津枕海河而立。本线为公开地理数据近似。",
+   "g": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.5,
+      39.05
+     ],
+     [
+      116.8,
+      39.05
+     ],
+     [
+      117.2,
+      39.1
+     ],
+     [
+      117.45,
+      39.0
+     ],
+     [
+      117.7,
+      38.98
+     ]
+    ]
+   }
+  }
+ ],
  "control": [
   {
    "place_id": "tianjin",
@@ -4842,7 +4874,38 @@ window.SANDBOX_SLICES["dagukou_battle_llm"] = {
     "n": "山东省"
    }
   ],
-  "rivers": [],
+  "rivers": [
+   {
+    "g": {
+     "type": "LineString",
+     "coordinates": [
+      [
+       116.5,
+       39.05
+      ],
+      [
+       116.8,
+       39.05
+      ],
+      [
+       117.2,
+       39.1
+      ],
+      [
+       117.45,
+       39.0
+      ],
+      [
+       117.7,
+       38.98
+      ]
+     ]
+    },
+    "n": "海河",
+    "approx": true,
+    "note": "大沽口即海河入海口，天津枕海河而立。本线为公开地理数据近似。"
+   }
+  ],
   "lakes": [],
   "_bbox": [
    115.4,
