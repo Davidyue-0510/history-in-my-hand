@@ -331,6 +331,32 @@ def scene_bbox(bundle):
     return _expand((min(xs), min(ys), max(xs), max(ys)))
 
 
+def _merge_extra_rivers(basemap, extra, bbox, nd=3):
+    """合并场景级补充水系（如 data/<dir>/rivers.json）到 basemap.rivers。
+
+    对每条补充河流做 bbox 裁剪，避免越界线段；诚实保留 approx 标记与 note。
+    补充河流排在 NE 河流之前，确保关键本地水系在视觉上优先被看到。
+    """
+    if not extra:
+        return
+    out = []
+    for f in extra:
+        g = f.get("g") or f.get("geometry")
+        if not g:
+            continue
+        cg = _clip_geom(g, bbox, nd)
+        if not cg or len(cg.get("coordinates", [])) < 2:
+            continue
+        rec = {"g": cg}
+        if f.get("n"):
+            rec["n"] = f["n"]
+        for k in ("approx", "note"):
+            if k in f:
+                rec[k] = f[k]
+        out.append(rec)
+    basemap["rivers"] = out + basemap.get("rivers", [])
+
+
 def _fidelity(span):
     """按视野跨度选坐标精度 nd 与抽稀步长 stride：
 
@@ -378,6 +404,7 @@ def build_basemap(bundle, shell=False):
     span = max(bbox[2] - bbox[0], bbox[3] - bbox[1])
     nd, stride = _fidelity(span)
     emb = _clip_all(bbox, nd=nd, stride=stride, with_admin1=True)
+    _merge_extra_rivers(emb, bundle.get("rivers_override", []), bbox, nd)
     emb["_bbox"] = [round(x, 3) for x in bbox]
     return emb
 

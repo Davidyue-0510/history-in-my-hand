@@ -368,6 +368,12 @@ def build_scene(sc):
     bundle.setdefault("events", [])
     bundle.setdefault("edges", [])
 
+    # 场景级水系补充（v0.222）：NE 50m 河流在局部战役视野内可能缺失关键水系，
+    # 允许 data/<dir>/rivers.json 按公开地理资料诚实补绘，合并入 basemap.rivers。
+    rivers_path = os.path.join(dirpath, "rivers.json")
+    if os.path.exists(rivers_path):
+        bundle["rivers_override"] = load_json(dirpath, "rivers.json").get("rivers", [])
+
     # 实际控制权（v0.24 场景化——修「控制层单例被新切片污染」）：
     #   有 data/<dir>/control.json          → bundle.control / control_seats / control_years（场景专属）
     #   无文件且 region ∈ 辽东体系          → 不注入（前端 fallback 全局 SD.control，辽东 v0.10 行为不变）
