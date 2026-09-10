@@ -1904,6 +1904,38 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    "label": "天津攻坚战"
   }
  ],
+ "rivers_override": [
+  {
+   "n": "海河",
+   "approx": true,
+   "note": "平津战役核心水道，天津枕海河而立、塘沽为海河入海口。本线为公开地理数据近似。",
+   "g": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      116.5,
+      39.05
+     ],
+     [
+      116.8,
+      39.05
+     ],
+     [
+      117.2,
+      39.1
+     ],
+     [
+      117.45,
+      39.0
+     ],
+     [
+      117.7,
+      38.98
+     ]
+    ]
+   }
+  }
+ ],
  "control": [
   {
    "place_id": "jinzhou",
@@ -15521,6 +15553,36 @@ window.SANDBOX_SLICES["three_campaigns"] = {
    }
   ],
   "rivers": [
+   {
+    "g": {
+     "type": "LineString",
+     "coordinates": [
+      [
+       116.5,
+       39.05
+      ],
+      [
+       116.8,
+       39.05
+      ],
+      [
+       117.2,
+       39.1
+      ],
+      [
+       117.45,
+       39.0
+      ],
+      [
+       117.7,
+       38.98
+      ]
+     ]
+    },
+    "n": "海河",
+    "approx": true,
+    "note": "平津战役核心水道，天津枕海河而立、塘沽为海河入海口。本线为公开地理数据近似。"
+   },
    {
     "g": {
      "type": "MultiLineString",
