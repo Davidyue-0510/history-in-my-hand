@@ -227,6 +227,7 @@
       "lizicheng",
       "locust",
       "longquan_yao_llm",
+      "luoyang",
       "lushan",
       "lvlin",
       "maling",
@@ -4650,6 +4651,28 @@
       "event_count": 1,
       "avg_resonance": 0.0,
       "best_event": "event:ev_longquan_yao_llm_01",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "luoyang",
+      "name": "luoyang",
+      "total": 17,
+      "layers": {
+        "record": 6,
+        "scholarship": 3,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "汉·官修": 1,
+        "学界": 10,
+        "五代·官修": 3,
+        "汉·后朝官修": 3
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_luoyang_01",
       "best_resonance": 0.0
     },
     {
@@ -22779,6 +22802,99 @@
       ],
       "scene_names": [
         "longquan_yao_llm"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_luoyang_01",
+      "name": "event:ev_luoyang_01",
+      "scenes": [
+        "luoyang"
+      ],
+      "scene_names": [
+        "luoyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_luoyang_02",
+      "name": "event:ev_luoyang_02",
+      "scenes": [
+        "luoyang"
+      ],
+      "scene_names": [
+        "luoyang"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_luoyang_03",
+      "name": "event:ev_luoyang_03",
+      "scenes": [
+        "luoyang"
+      ],
+      "scene_names": [
+        "luoyang"
       ],
       "total": 1,
       "gap_count": 0,

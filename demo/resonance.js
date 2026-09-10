@@ -229,6 +229,7 @@ window.SANDBOX_RESONANCE = {
    "lizicheng",
    "locust",
    "longquan_yao_llm",
+   "luoyang",
    "lushan",
    "lvlin",
    "maling",
@@ -4652,6 +4653,28 @@ window.SANDBOX_RESONANCE = {
    "event_count": 1,
    "avg_resonance": 0.0,
    "best_event": "event:ev_longquan_yao_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "luoyang",
+   "name": "luoyang",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "汉·官修": 1,
+    "学界": 10,
+    "五代·官修": 3,
+    "汉·后朝官修": 3
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_luoyang_01",
    "best_resonance": 0.0
   },
   {

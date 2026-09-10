@@ -4735,6 +4735,57 @@
    "_src_line": 14
   },
   {
+   "id": "LY_G01",
+   "scene": "luoyang",
+   "subject": "place:longmen_grottoes",
+   "title": "龙门北魏早期洞窟（如宾阳中洞）的具体营造年代序列、匠作籍贯与粉本来源等数据，公开有限。",
+   "missing": "美术史 / 考古学 / 石窟艺术",
+   "where": "龙门北魏早期洞窟（宾阳中洞等）营造年代序列、匠籍与粉本来源",
+   "skills": [
+    "美术史",
+    "考古学",
+    "石窟艺术"
+   ],
+   "accept": "若有窟题记与造像碑对照，可补技术(2)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "LY_G02",
+   "scene": "luoyang",
+   "subject": "place:luoyang_city",
+   "title": "北魏至隋唐洛阳基层里坊组织、寺户、蕃客聚落的具体社会结构与人口分布，公开有限。",
+   "missing": "社会史 / 历史地理 / 城市史",
+   "where": "北魏—隋唐洛阳里坊组织、寺户、蕃客聚落与人口结构",
+   "skills": [
+    "社会史",
+    "历史地理",
+    "城市史"
+   ],
+   "accept": "若有洛阳籍帐、里坊图与出土墓志对照，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "LY_G03",
+   "scene": "luoyang",
+   "subject": "place:luoyang_city",
+   "title": "汉晋洛阳城、隋唐东都洛阳城的具体城址范围、城门与今洛阳市（洛河两岸）的位置叠压对应关系，公开有限。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "汉晋至隋唐洛阳城址范围、城门与今洛阳市的叠压对应",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有东都洛阳城考古测绘，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "LS_G01",
    "scene": "lushan",
    "subject": "place:lushan_mountain",

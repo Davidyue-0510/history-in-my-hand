@@ -1,9 +1,9 @@
 {
-  "scenes_total": 463,
-  "historical": 454,
+  "scenes_total": 464,
+  "historical": 455,
   "fictional": 9,
-  "assertions_total": 6849,
-  "sources_total": 465,
+  "assertions_total": 6866,
+  "sources_total": 466,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -152,6 +152,7 @@
     "liangzhou_meeting_llm",
     "lingqu_llm",
     "longquan_yao_llm",
+    "luoyang",
     "lushan",
     "ming_qing",
     "ming_tiangong_llm",
@@ -328,7 +329,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 636,
+  "leads_total": 639,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3621,6 +3622,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "luoyang",
+      "title": "洛阳（十三朝古都·龙门石窟·隋唐东都）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4086,6 +4094,7 @@
     "suzhou": "苏州（古典园林·平江·吴门）",
     "lushan": "庐山（净土祖庭·白鹿洞·牯岭）",
     "xian": "西安（长安·汉唐都城·丝路起点）",
-    "dunhuang": "敦煌（丝路咽喉·莫高窟·河西走廊西端）"
+    "dunhuang": "敦煌（丝路咽喉·莫高窟·河西走廊西端）",
+    "luoyang": "洛阳（十三朝古都·龙门石窟·隋唐东都）"
   }
 }

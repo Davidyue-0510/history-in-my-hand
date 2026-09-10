@@ -666,7 +666,8 @@
   "suzhou",
   "lushan",
   "xian",
-  "dunhuang"
+  "dunhuang",
+  "luoyang"
  ],
  "scenes": {
   "langzhong": {
@@ -37095,6 +37096,90 @@
     }
    },
    "dims": [
+    5,
+    6
+   ]
+  },
+  "luoyang": {
+   "kind": "county",
+   "region": "sui_tang",
+   "province": "henan",
+   "title": "洛阳（十三朝古都·龙门石窟·隋唐东都）",
+   "dossier_label": "洛阳",
+   "subtitle": "十三朝古都 · 龙门石窟 · 隋唐东都 · 丝路东端",
+   "primary_place": "longmen_grottoes",
+   "dossier_event": "event:ev_luoyang_03",
+   "vocab_pack": "luoyang",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "洛阳居伊洛盆地、北依邙山、南对龙门、洛水贯城，自东周迄五代累为都，为十三朝古都与中土形胜之枢。周平王元年（前770）东迁雒邑，洛阳起为都；北魏太和十七年（493）孝文帝迁都洛阳、行汉化，龙门石窟随之始凿；唐咸亨三年至上元二年（672—675）武则天助脂粉钱营龙门奉先寺卢舍那大像，为隋唐东都佛教艺术象征。汉明帝永平中求法、立白马寺于城西，佛教东传、译经来华之始；隋唐东都置含嘉仓、转漕关东，里坊市易成制、胡商蕃客聚于津桥。龙门石窟现存窟龛两千余、造像十万尊余，2000年列入UNESCO（编号1003）。",
+   "parties_note": "史料以史记/汉书/旧唐书等官修为主，洛阳伽蓝记为北魏私修城市佛教地理名著，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_luoyang_01": "周平王东迁",
+    "event:ev_luoyang_02": "孝文帝迁都",
+    "event:ev_luoyang_03": "营奉先寺",
+    "place:longmen_grottoes": "龙门石窟",
+    "person:wu_zetian": "武则天"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "都城礼制+汉化改革+佛教东传→洛阳中古文明秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "龙门石窟营造+官仓漕运+丝路东端→洛阳物资与艺术枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "里坊胡商+寺观社会+文人雅集→多元社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "伊洛形胜+丝路东端+东迁迁都事件→洛阳控中原枢要与东西交流"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
     5,
     6
    ]

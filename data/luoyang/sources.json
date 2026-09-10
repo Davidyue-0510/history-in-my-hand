@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "id": "shiji",
+      "title": "史记",
+      "party": "汉·官修",
+      "stance_label": "汉人当代/近当代",
+      "distance_label": "成书汉武帝时，距楚汉约百年",
+      "color": "#B23A48",
+      "compiler": "司马迁（西汉）",
+      "period": "汉",
+      "note": "周本纪、十二诸侯年表载周平王东迁雒邑、东周之始，为洛阳建都之纬。"
+    },
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "地理志、西域传载洛阳形胜、汉明帝求法与白马寺、佛教东传，为洛阳建都与佛教入华核心史料。"
+    },
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "则天皇后纪、食货志、地理志载武则天营龙门奉先寺、东都含嘉仓与里坊市易，为隋唐洛阳核心史料。"
+    },
+    {
+      "id": "luoyang_galan_ji",
+      "title": "洛阳伽蓝记",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "北魏杨衒之记当代洛阳佛寺，后世辑为城市佛教地理名著",
+      "color": "#2E7D8F",
+      "compiler": "杨衒之（北魏）",
+      "period": "北魏",
+      "note": "记北魏洛阳城伽蓝、里坊与迁都后佛事之盛，用于孝文帝迁都、龙门始凿、白马寺与中古都市信仰等断言。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "洛阳历史地理与中古文明综合研究",
+      "period": "今",
+      "note": "历史地理、城市史、美术史、丝路史等现代研究的综合推论，用于 inference 与 gap 层。"
+    }
+  ]
+}

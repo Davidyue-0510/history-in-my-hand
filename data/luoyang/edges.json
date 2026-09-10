@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "longmen_grottoes",
+      "to": "luoyang_city",
+      "relation": "南郊伊河两岸",
+      "note": "龙门石窟在洛阳城西南伊河两岸，北魏迁都后始凿、唐营奉先寺，为东都近郊石窟艺术中枢。"
+    },
+    {
+      "from": "luo_river",
+      "to": "luoyang_city",
+      "relation": "贯城而过",
+      "note": "洛水自洛阳城穿流，汇伊河、通漕运、润郊畿，为都城形胜与水利之血脉。"
+    },
+    {
+      "from": "luoyang_plain",
+      "to": "luoyang_city",
+      "relation": "环抱",
+      "note": "伊洛盆地北邙南伊、四塞险固，洛阳城处其中，形胜为十三朝建都之依托。"
+    },
+    {
+      "from": "baima_temple",
+      "to": "luoyang_city",
+      "relation": "城东",
+      "note": "白马寺在洛阳城东，汉明帝求法所立，佛教东传第一古刹，与城中西域译场相表里。"
+    },
+    {
+      "from": "hanjia_cang",
+      "to": "luoyang_city",
+      "relation": "城北",
+      "note": "含嘉仓在洛阳城北，隋唐东都官仓、转漕关东，见东都物资枢纽与漕运之制。"
+    }
+  ]
+}

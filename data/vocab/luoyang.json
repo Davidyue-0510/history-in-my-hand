@@ -1,0 +1,61 @@
+{
+  "_comment": "per-scene vocab pack for 洛阳（十三朝古都·龙门石窟·隋唐东都，东周—唐）. parties 为 汉·官修/汉·后朝官修/五代·官修/学界，立场靠来源派生，不伪造。",
+  "_base": null,
+  "parties": [
+    "汉·官修",
+    "汉·后朝官修",
+    "五代·官修",
+    "学界"
+  ],
+  "party_bucket": {
+    "汉·官修": "汉·官修",
+    "汉·后朝官修": "汉·后朝官修",
+    "五代·官修": "五代·官修",
+    "学界": "学界"
+  },
+  "party_colors": {
+    "汉·官修": "#B23A48",
+    "汉·后朝官修": "#C0584F",
+    "五代·官修": "#7A6A53",
+    "学界": "#2E7D8F"
+  },
+  "factions": {
+    "f_汉·官修": {
+      "name": "汉·官修",
+      "macro_party": "汉·官修",
+      "note": "auto"
+    },
+    "f_汉·后朝官修": {
+      "name": "汉·后朝官修",
+      "macro_party": "汉·后朝官修",
+      "note": "auto"
+    },
+    "f_五代·官修": {
+      "name": "五代·官修",
+      "macro_party": "五代·官修",
+      "note": "auto"
+    },
+    "f_学界": {
+      "name": "学界",
+      "macro_party": "学界",
+      "note": "auto"
+    }
+  },
+  "faction_colors": {
+    "f_汉·官修": "#B23A48",
+    "f_汉·后朝官修": "#C0584F",
+    "f_五代·官修": "#7A6A53",
+    "f_学界": "#2E7D8F"
+  },
+  "layers": {
+    "record": "原始史料",
+    "scholarship": "学界研究",
+    "inference": "合理推断",
+    "gap": "证据缺口"
+  },
+  "quote_status": {
+    "verbatim": "直接引文",
+    "paraphrase_unverified": "转述待核",
+    "generated": "生成"
+  }
+}
