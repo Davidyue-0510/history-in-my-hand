@@ -390,6 +390,7 @@ window.SANDBOX_RESONANCE = {
    "wuwang",
    "wuxu",
    "wuxu_reform_llm",
+   "xian",
    "xianggang_1941_llm",
    "xianggang_dongjiang_llm",
    "xianggang_huigui_llm",
@@ -7754,6 +7755,29 @@ window.SANDBOX_RESONANCE = {
    "event_count": 4,
    "avg_resonance": 0.0,
    "best_event": "event:ev_wuxu_reform_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "xian",
+   "name": "xian",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "汉·官修": 3,
+    "五代·官修": 3,
+    "汉·后朝官修": 1,
+    "宋·私修": 2,
+    "学界": 8
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_xian_01",
    "best_resonance": 0.0
   },
   {

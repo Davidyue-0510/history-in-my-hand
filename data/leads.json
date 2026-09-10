@@ -8272,6 +8272,57 @@
    "_src_line": 13
   },
   {
+   "id": "XA_G01",
+   "scene": "xian",
+   "subject": "place:chang_an_city",
+   "title": "汉长安城具体里坊数量、户籍与人口规模的精确数据，公开有限。",
+   "missing": "历史地理 / 考古学 / 人口史",
+   "where": "汉长安城里坊建置、户籍与人口规模统计",
+   "skills": [
+    "历史地理",
+    "考古学",
+    "人口史"
+   ],
+   "accept": "若有汉城考古报告或汉书地理志注，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "XA_G02",
+   "scene": "xian",
+   "subject": "place:chang_an_city",
+   "title": "唐长安西市胡商的具体族群构成、商品结构与交易制度的详细记载，公开有限。",
+   "missing": "丝路史 / 经济史 / 民族史",
+   "where": "唐长安西市胡商族群、商品与市制档案",
+   "skills": [
+    "丝路史",
+    "经济史",
+    "民族史"
+   ],
+   "accept": "若有西市出土文书或唐会要市条，可补社会(4)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "XA_G03",
+   "scene": "xian",
+   "subject": "place:chang_an_city",
+   "title": "隋唐长安城址与今西安城（明清西安府城）的位置叠压、城门对应等考古实测数据，公开有限。",
+   "missing": "考古学 / 历史地理 / GIS",
+   "where": "隋唐长安城与今西安城的位置叠压、城门与坊里对应实测",
+   "skills": [
+    "考古学",
+    "历史地理",
+    "GIS"
+   ],
+   "accept": "若有唐城考古测绘，可补地理(1)层断言",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "XIA_014",
    "scene": "xianggang_1941_llm",
    "subject": "event:ev_xianggang_1941_llm_03",

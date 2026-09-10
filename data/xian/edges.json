@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "bingmayong",
+      "to": "chang_an_city",
+      "relation": "位于东北",
+      "note": "秦始皇陵兵马俑在长安东北临潼，秦都咸阳—汉唐长安一脉的京畿王陵区。"
+    },
+    {
+      "from": "dayan_ta",
+      "to": "chang_an_city",
+      "relation": "位于城内（晋昌坊）",
+      "note": "大雁塔在长安城内晋昌坊（慈恩寺），为译经中心地标。"
+    },
+    {
+      "from": "daming_gong",
+      "to": "chang_an_city",
+      "relation": "位于城北",
+      "note": "大明宫在长安城东北龙首原，为盛唐朝宫与政治中枢。"
+    },
+    {
+      "from": "wei_he",
+      "to": "chang_an_city",
+      "relation": "北濒",
+      "note": "长安北濒渭河，八水绕城，河网供饮水灌溉与漕运。"
+    },
+    {
+      "from": "zhongnan_shan",
+      "to": "chang_an_city",
+      "relation": "南屏",
+      "note": "终南—秦岭为长安南面天然形胜与屏障，隐逸佛道洞窟并陈。"
+    }
+  ]
+}

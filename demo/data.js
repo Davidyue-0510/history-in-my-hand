@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 461 个切片
+// 权威数据源：data/scenes.json 注册的 462 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 461 个切片",
+  "slice": "multi-scene · 462 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -281,6 +281,7 @@ window.SANDBOX_DATA = {
    "warring_states_shangyang",
    "warring_states_shangyang_llm",
    "wuxu_reform_llm",
+   "xian",
    "xianggang_1941_llm",
    "xianggang_dongjiang_llm",
    "xianggang_huigui_llm",
@@ -1041,7 +1042,8 @@ window.SANDBOX_DATA = {
   "qufu",
   "hangzhou",
   "suzhou",
-  "lushan"
+  "lushan",
+  "xian"
  ],
  "vocab": {
   "layers": [
@@ -28591,6 +28593,28 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational"
+  },
+  "xian": {
+   "key": "xian",
+   "title": "西安（长安·汉唐都城·丝路起点）",
+   "dossier_label": "西安",
+   "subtitle": "汉唐都城 · 丝路东端 · 八水形胜 · 译经中心",
+   "kind": "county",
+   "region": "guangzhong",
+   "page": "county.html?scene=xian",
+   "vocab_pack": "xian",
+   "terrain_grid": "china_coarse",
+   "terrain_off_grid": false,
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -29054,7 +29078,8 @@ window.SANDBOX_DATA = {
   "qufu": "slices/qufu.js",
   "hangzhou": "slices/hangzhou.js",
   "suzhou": "slices/suzhou.js",
-  "lushan": "slices/lushan.js"
+  "lushan": "slices/lushan.js",
+  "xian": "slices/xian.js"
  },
  "corridors": [
   {

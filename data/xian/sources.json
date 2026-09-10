@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "id": "shiji",
+      "title": "史记",
+      "party": "汉·官修",
+      "stance_label": "汉人当代/近当代",
+      "distance_label": "成书汉武帝时，距楚汉约百年",
+      "color": "#B23A48",
+      "compiler": "司马迁（西汉）",
+      "period": "汉",
+      "note": "本纪·高祖本纪、大宛列传载定都长安与张骞通西域，汉人叙汉，视角含汉方立场。"
+    },
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "高帝纪、董仲舒传、地理志等，东汉官修西汉史，为独尊儒术与汉长安建制核心史料。"
+    },
+    {
+      "id": "chang_an_zhi",
+      "title": "长安志",
+      "author": "宋敏求",
+      "compiler": "宋敏求",
+      "party": "宋·私修",
+      "period": "北宋",
+      "type": "地方志",
+      "note": "北宋元丰间纂，记唐长安坊市、宫观、渠渎甚详，为长安城市史核心文献。"
+    },
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "记隋唐大兴城—长安建制、玄奘译经与安史之乱陷两京，为唐长安核心史料。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "stance_label": "学界考证",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "color": "#2E7D8F",
+      "compiler": "汉唐长安与丝绸之路综合研究",
+      "period": "今",
+      "note": "历史地理、城市史、丝路史、考古学等现代研究的综合推论，用于 inference 与 gap 层。"
+    }
+  ]
+}

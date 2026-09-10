@@ -1,9 +1,9 @@
 {
-  "scenes_total": 461,
-  "historical": 452,
+  "scenes_total": 462,
+  "historical": 453,
   "fictional": 9,
-  "assertions_total": 6815,
-  "sources_total": 463,
+  "assertions_total": 6832,
+  "sources_total": 464,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -277,6 +277,7 @@
     "warring_states_shangyang",
     "warring_states_shangyang_llm",
     "wuxu_reform_llm",
+    "xian",
     "xianggang_1941_llm",
     "xianggang_dongjiang_llm",
     "xianggang_huigui_llm",
@@ -326,7 +327,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 630,
+  "leads_total": 633,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3605,6 +3606,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "xian",
+      "title": "西安（长安·汉唐都城·丝路起点）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4068,6 +4076,7 @@
     "qufu": "曲阜（孔子故里·儒源·三孔）",
     "hangzhou": "杭州（西湖·临安·吴越）",
     "suzhou": "苏州（古典园林·平江·吴门）",
-    "lushan": "庐山（净土祖庭·白鹿洞·牯岭）"
+    "lushan": "庐山（净土祖庭·白鹿洞·牯岭）",
+    "xian": "西安（长安·汉唐都城·丝路起点）"
   }
 }

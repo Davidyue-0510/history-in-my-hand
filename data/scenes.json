@@ -664,7 +664,8 @@
   "qufu",
   "hangzhou",
   "suzhou",
-  "lushan"
+  "lushan",
+  "xian"
  ],
  "scenes": {
   "langzhong": {
@@ -1587,6 +1588,90 @@
      ],
      "layer": "inference",
      "note": "长江—鄱阳湖口+立教兴学事件→庐山控赣北江湖与信仰重心"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "xian": {
+   "kind": "county",
+   "region": "guangzhong",
+   "province": "shaanxi",
+   "title": "西安（长安·汉唐都城·丝路起点）",
+   "dossier_label": "西安",
+   "subtitle": "汉唐都城 · 丝路东端 · 八水形胜 · 译经中心",
+   "primary_place": "chang_an_city",
+   "dossier_event": "event:ev_xian_01",
+   "vocab_pack": "xian",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "西安（古长安）居关中平原、北濒渭河、南屏终南，为汉唐都城与丝绸之路东端起点。汉高祖五年（前202）刘邦徙都长安，立西汉国本；汉武帝时董仲舒对策独尊儒术，长安成帝国礼制与思想中枢；建元三年（前138）张骞凿空西域，长安遂为丝路孔道所起。隋开皇二年（582）文帝命宇文恺筑大兴城，唐因之扩建为长安，以中轴里坊之制为当时世界最大都城，其规划远播东亚。唐永徽三年（652）玄奘建大雁塔、主译场，长安成佛教译经中心；天宝十四载（755）安史乱起，长安两度陷落、由盛转衰。秦始皇帝陵兵马俑在长安东北临潼（UNESCO 441），大雁塔、大明宫属丝绸之路：长安—天山走廊路网（UNESCO 1442）。",
+   "parties_note": "史料以史记/汉书/旧唐书等官修为主，宋敏求长安志为宋私修方志，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_xian_01": "刘邦定都",
+    "event:ev_xian_02": "张骞通西域",
+    "event:ev_xian_03": "隋建大兴城",
+    "place:chang_an_city": "长安",
+    "person:xuan_zang": "玄奘"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "都城礼制+独尊儒术+译经中心→长安帝国秩序与文化枢纽"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "中轴里坊规划+漕运+丝路贸易→长安物资与人员枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "里坊居民+西市胡商+士族→多元社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "关中形胜+丝路东端+定都通西域事件→长安控天下中枢与东西交流"
     }
    },
    "dims": [
