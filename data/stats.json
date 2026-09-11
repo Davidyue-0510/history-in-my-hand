@@ -1,9 +1,9 @@
 {
-  "scenes_total": 475,
-  "historical": 466,
+  "scenes_total": 476,
+  "historical": 467,
   "fictional": 9,
-  "assertions_total": 7065,
-  "sources_total": 479,
+  "assertions_total": 7086,
+  "sources_total": 484,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -79,6 +79,7 @@
     "guangzhong_simaqian_llm",
     "guangzhong_zhidao_llm",
     "guilin",
+    "guisui",
     "guizhou_jianxing_llm",
     "guizhou_minority_craft_llm",
     "guizhou_shexiang_llm",
@@ -340,7 +341,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 672,
+  "leads_total": 675,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3717,6 +3718,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "guisui",
+      "title": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4194,6 +4202,7 @@
     "jilin": "吉林（吉林乌拉·松花江·吉林将军）",
     "guilin": "桂林（灵渠·靖江王府）",
     "acheng": "阿城（金上京会宁府）",
-    "yazhou": "崖州（贬谪文脉·黎峒·琼崖）"
+    "yazhou": "崖州（贬谪文脉·黎峒·琼崖）",
+    "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）"
   }
 }

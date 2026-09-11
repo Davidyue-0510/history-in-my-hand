@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "guisui_cheng", "to": "dazhao", "type": "mem", "label": "大召在归化城内，为漠南蒙古最早格鲁派寺院" },
+    { "from": "guisui_cheng", "to": "suiyuan_cheng", "type": "mil", "label": "绥远城在归化城东北，清北疆军府与归化城并称" },
+    { "from": "guisui_cheng", "to": "tumote_plain", "type": "geo", "label": "归化城位于土默特川，板升农耕与游牧错居" },
+    { "from": "guisui_cheng", "to": "yinshan", "type": "geo", "label": "阴山屏其北，为游牧—农耕过渡带" },
+    { "from": "dazhao", "to": "suiyuan_cheng", "type": "mem", "label": "召庙与军府并立，宗教—军政共塑归绥" }
+  ]
+}

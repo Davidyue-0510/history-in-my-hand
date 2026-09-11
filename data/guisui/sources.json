@@ -1,0 +1,92 @@
+{
+  "sources": [
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "juan": "卷二百四十八·张春传／卷二百七十一·祖大寿传",
+      "compiler": "张廷玉等",
+      "compiled_year": 1739,
+      "stance_label": "后朝官修",
+      "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
+      "party": "清修·明臣",
+      "color": "#8C6239",
+      "note": "清修官史，记大凌河筑城、长山之败、祖大寿杀何可纲降清，偏清方视角。"
+    },
+    {
+      "id": "qingshigao",
+      "title": "清史稿",
+      "party": "清修官史",
+      "stance_label": "民国未定稿·清方立场",
+      "distance_label": "成书 1928（民国未定稿），距所记明清战事约 280–300 年",
+      "color": "#7B5C3E",
+      "compiler": "赵尔巽等",
+      "period": "清末/民国",
+      "note": "藩部传、地理志、兵志载木兰秋狝、外八庙政治象征与土尔扈特东归，为后朝综合史料。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "潮州史与海上丝路综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    },
+    {
+      "id": "ming_shilu",
+      "title": "明实录",
+      "party": "明·官修",
+      "stance_label": "明朝官修编年实录",
+      "distance_label": "明代历朝官修，距所记时事近",
+      "color": "#B23A48",
+      "compiler": "明代史官（历朝实录）",
+      "period": "明",
+      "note": "明代历朝实录，记隆庆和议、俺答封贡、边政与板升农业，为明代当代/近当代官修史料。"
+    },
+    {
+      "id": "guisui_zhi",
+      "title": "归绥县志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清/民屡修，距明清归化城数百年",
+      "color": "#A0473A",
+      "compiler": "《归绥县志》（清修）",
+      "period": "清/民",
+      "note": "归绥地方志，载归化城、绥远城、召庙、土默特川与社会沿革。"
+    },
+    {
+      "id": "neimenggu_tongzhi",
+      "title": "内蒙古通志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "近现代编纂，距明清土默特数百年",
+      "color": "#A0473A",
+      "compiler": "《内蒙古通志》",
+      "period": "近现代",
+      "note": "内蒙古通志，载民族分布、农牧交错与社会经济。"
+    },
+    {
+      "id": "menggu_yuanliu",
+      "title": "蒙古源流",
+      "party": "清·官修",
+      "stance_label": "蒙古编年史",
+      "distance_label": "清康熙年间官修蒙文编年史，距蒙古帝国数百年",
+      "color": "#6C7A89",
+      "compiler": "萨囊彻辰等（清）",
+      "period": "清",
+      "note": "清康熙年间官修蒙文编年史，记蒙古源流、俺答汗事迹与土默特部史。"
+    },
+    {
+      "id": "lvmengshang",
+      "title": "旅蒙商史料·大盛魁",
+      "party": "学界",
+      "stance_label": "商业史/档案整理",
+      "distance_label": "现代学界基于档案与口述整理，距清代商号百余年",
+      "color": "#2E7D8F",
+      "compiler": "大盛魁研究/晋商史料整理",
+      "period": "今",
+      "note": "旅蒙商大盛魁档案、晋商口述与商业史研究，为归绥作为张库大道枢纽的学界视角。"
+    }
+  ]
+}

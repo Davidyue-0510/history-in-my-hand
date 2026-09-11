@@ -1,0 +1,59 @@
+{
+  "places": [
+    {
+      "id": "guisui_cheng",
+      "name": "归化城（库库和屯·今呼和浩特老城）",
+      "lon": 111.751,
+      "lat": 40.841,
+      "type": "capital",
+      "modern": "今内蒙古呼和浩特市玉泉区、新城区一带",
+      "note": "明隆庆和议后，俺答汗筑库库和屯，明赐名归化；清绥远城在其东北。蒙汉商贾辐辏，北疆军政与互市中心。坐标取呼和浩特老城，approx（城镇级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城镇级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "dazhao",
+      "name": "大召（无量寺）",
+      "lon": 111.673,
+      "lat": 40.795,
+      "type": "religious",
+      "modern": "今呼和浩特市玉泉区大召前街",
+      "note": "明万历七年俺答汗主持兴建，为呼和浩特最早藏传佛教格鲁派寺院，蒙藏佛教与中原礼义交汇之地。坐标取大召，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（景区级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "suiyuan_cheng",
+      "name": "绥远城（将军衙署）",
+      "lon": 111.773,
+      "lat": 40.858,
+      "type": "fort",
+      "modern": "今呼和浩特市新城区绥远城旧址",
+      "note": "清乾隆四年建绥远城，设绥远将军驻防，为清经略漠南蒙古、控扼归化的军政中心。坐标取将军衙署，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城内点位精度），待 CHGIS 精修"
+    },
+    {
+      "id": "tumote_plain",
+      "name": "土默特川（板升聚落）",
+      "lon": 111.60,
+      "lat": 40.65,
+      "type": "settlement",
+      "modern": "今内蒙古土默特左旗—托克托县一带",
+      "note": "土默特部驻牧之地，明中叶后出现「板升」农业聚落，蒙汉错居、农牧并营。坐标取土默特川中部，approx（平原级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（平原级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "yinshan",
+      "name": "阴山（大青山段）",
+      "lon": 111.30,
+      "lat": 41.05,
+      "type": "mountain",
+      "modern": "今内蒙古大青山—阴山山脉中段",
+      "note": "阴山横亘漠南，为游牧与农耕分界线，归化城屏其南。坐标取大青山中段，approx（山脉级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（山脉级精度），待 CHGIS 精修"
+    }
+  ]
+}

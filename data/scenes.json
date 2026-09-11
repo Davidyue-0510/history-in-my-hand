@@ -678,7 +678,8 @@
   "jilin",
   "guilin",
   "acheng",
-  "yazhou"
+  "yazhou",
+  "guisui"
  ],
  "scenes": {
   "langzhong": {
@@ -38107,6 +38108,89 @@
      ],
      "layer": "inference",
      "note": "崖州南扼南海、北控黎峒，为经略海南与南海之锁钥"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guisui": {
+   "kind": "county",
+   "region": "fusion",
+   "province": "neimenggu",
+   "title": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
+   "dossier_label": "归绥",
+   "subtitle": "明隆庆和议 · 俺答筑归化城 · 大召弘法 · 清绥远城 · 张库大道枢纽",
+   "primary_place": "guisui_cheng",
+   "dossier_event": "event:ev_guisui_01",
+   "vocab_pack": "guisui",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "归化城位于土默特川、阴山南麓，明隆庆和议后俺答汗受封顺义王、筑城弘法，清建绥远城以控漠南；张库大道（张家口—库伦—恰克图）以此为枢纽，旅蒙商号大盛魁纵横草原。下方为封贡、筑城、驻防三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以明史、明实录、蒙古源流、清史稿等后世官修为本，归绥县志、内蒙古通志、旅蒙商史料与地方志作补充，现代考订为学界视角；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_guisui_01": "隆庆和议",
+    "event:ev_guisui_02": "筑归化城",
+    "event:ev_guisui_03": "清建绥远城",
+    "place:guisui_cheng": "归化城",
+    "person:an_da": "俺答汗"
+   },
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "隆庆和议封贡互市、绥远军府建制，将漠南蒙古纳入中原王朝政治秩序"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "张库大道与马市构成草原—中原物流与商旅网络"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "板升聚落、晋商移民与蒙汉错居，形成北疆多元社会"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "阴山南麓控扼游牧—农耕过渡带，为明清北疆锁钥"
     }
    },
    "dims": [

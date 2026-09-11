@@ -2504,6 +2504,54 @@
    "_src_line": 16
   },
   {
+   "id": "YG_G01",
+   "scene": "guisui",
+   "subject": "place:tumote_plain",
+   "title": "板升聚落早期人口构成、田亩与赋役制度史缺详载",
+   "missing": "历史地理 / 民族史",
+   "where": "土默特川早期板升聚落",
+   "skills": [
+    "历史地理",
+    "民族史"
+   ],
+   "accept": "需明实录、方志与考古互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "YG_G02",
+   "scene": "guisui",
+   "subject": "place:guisui_cheng",
+   "title": "归化城与绥远城历代城垣范围、城门与街巷沿革无精确考古报告",
+   "missing": "考古 / 方志",
+   "where": "归绥城垣考古",
+   "skills": [
+    "考古",
+    "方志"
+   ],
+   "accept": "需城市考古与测绘报告",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
+   "id": "YG_G03",
+   "scene": "guisui",
+   "subject": "person:wang_xiangqing",
+   "title": "大盛魁早期账本、信稿与合伙契约多有散佚，王相卿个人行迹多赖口述",
+   "missing": "商业史 / 档案学",
+   "where": "大盛魁早期档案",
+   "skills": [
+    "商业史",
+    "档案学"
+   ],
+   "accept": "需原始账册、碑刻与家族口述",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 21
+  },
+  {
    "id": "GUI_011",
    "scene": "guizhou_jianxing_llm",
    "subject": "event:ev_guizhou_jianxing_llm_01",
