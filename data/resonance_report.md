@@ -309,6 +309,7 @@
 | shandong_jixia | 15 | 3 | **0.000** | event:ev_shandong_jixia_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | shandong_kongfu_llm | 12 | 1 | **0.000** | event:ev_shandong_kongfu_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | shandong_kongzi | 12 | 2 | **0.000** | event:ev_shandong_kongzi_01（0.000） | gap 2 / inference 1 / record 7 / scholarship 2 |
+| shanghai | 21 | 3 | **0.000** | event:ev_shanghai_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 7 |
 | shanghai_kaibu | 15 | 2 | **0.000** | event:ev_shanghai_kaibu_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | shanghai_shangwu_llm | 14 | 3 | **0.000** | event:ev_shanghai_shangwu_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | shanghai_songkai_llm | 15 | 3 | **0.000** | event:ev_shanghai_songkai_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
@@ -1124,6 +1125,9 @@
 | event:ev_shandong_kongfu_llm_01 | shandong_kongfu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shandong_kongzi_01 | shandong_kongzi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shandong_kongzi_03 | shandong_kongzi | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_01 | shanghai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_02 | shanghai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_shanghai_03 | shanghai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_kaibu_01 | shanghai_kaibu | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_kaibu_02 | shanghai_kaibu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shanghai_shangwu_llm_01 | shanghai_shangwu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |

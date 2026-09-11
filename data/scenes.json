@@ -679,7 +679,8 @@
   "guilin",
   "acheng",
   "yazhou",
-  "guisui"
+  "guisui",
+  "shanghai"
  ],
  "scenes": {
   "langzhong": {
@@ -38191,6 +38192,89 @@
      ],
      "layer": "inference",
      "note": "阴山南麓控扼游牧—农耕过渡带，为明清北疆锁钥"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "shanghai": {
+   "kind": "county",
+   "region": "exchange",
+   "province": "shanghai",
+   "title": "上海县/老城厢（开埠通商·租界·移民城市社会）",
+   "dossier_label": "上海县",
+   "subtitle": "元至元置县 · 道光开埠 · 租界华洋分治 · 移民城市与近代思潮",
+   "primary_place": "shanghai_cheng",
+   "dossier_event": "event:ev_shanghai_01",
+   "vocab_pack": "shanghai",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "上海县城（老城厢）枕黄浦、临吴淞，元至元二十九年置县，为滨海一县；道光二十三年南京条约开埠，英、法租界继设，华洋分治、二元城市格局成焉。开埠后江浙移民汇聚，虞洽卿辈商帮网络与王韬辈近代思想并兴，上海骤为江海通津、中西交涉之巨埠。下方为设县、开埠、租界三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以元史、明史、清史稿及南京条约、上海租地章程等为本，上海县志、松江府志作补充，现代考订为学界视角；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_shanghai_01": "上海设县",
+    "event:ev_shanghai_02": "上海开埠",
+    "event:ev_shanghai_03": "租界划定",
+    "place:shanghai_cheng": "上海县城",
+    "person:xu_guangqi": "徐光启"
+   },
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "元至元置县、道光开埠与租界划定，建制与治权嵌入上海城市演进"
+    },
+    "material_logistics": {
+     "from": [
+      "economy",
+      "tech"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "黄浦通海、开埠互市，上海成江海通津与中外贸易枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "江浙移民汇聚，商帮网络与同乡组织构成近代城市社会底层"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "开埠租界，中西交涉与西风东渐，上海成近代思想策源之一"
     }
    },
    "dims": [

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 476,
-  "historical": 467,
+  "scenes_total": 477,
+  "historical": 468,
   "fictional": 9,
-  "assertions_total": 7086,
-  "sources_total": 484,
+  "assertions_total": 7107,
+  "sources_total": 487,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -219,6 +219,7 @@
     "shandong_jixia",
     "shandong_kongfu_llm",
     "shandong_kongzi",
+    "shanghai",
     "shanghai_kaibu",
     "shanghai_shangwu_llm",
     "shanghai_songkai_llm",
@@ -341,7 +342,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 675,
+  "leads_total": 678,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3725,6 +3726,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "shanghai",
+      "title": "上海县/老城厢（开埠通商·租界·移民城市社会）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4203,6 +4211,7 @@
     "guilin": "桂林（灵渠·靖江王府）",
     "acheng": "阿城（金上京会宁府）",
     "yazhou": "崖州（贬谪文脉·黎峒·琼崖）",
-    "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）"
+    "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
+    "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）"
   }
 }

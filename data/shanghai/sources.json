@@ -1,0 +1,86 @@
+{
+  "sources": [
+    {
+      "id": "yuan_shi",
+      "title": "元史",
+      "party": "明修官史",
+      "stance_label": "后朝官修·仓促成书",
+      "distance_label": "1369 年修成，距元亡仅一年但史源杂糅未及考订",
+      "color": "#6C5C3E",
+      "compiler": "宋濂等",
+      "period": "明修"
+    },
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "juan": "卷二百五十一·徐光启传",
+      "compiler": "张廷玉等",
+      "compiled_year": 1739,
+      "stance_label": "后朝官修",
+      "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
+      "party": "清修·明臣",
+      "color": "#8C6239",
+      "note": "清修官史，记徐光启历算农学与中西交涉。"
+    },
+    {
+      "id": "nanjing_treaty",
+      "title": "南京条约",
+      "party": "清官修",
+      "stance_label": "",
+      "distance_label": "",
+      "color": "#8C6239",
+      "compiler": "近代史料",
+      "period": "清"
+    },
+    {
+      "id": "shanghai_zhudi_zhangcheng",
+      "title": "上海租地章程（1845）",
+      "party": "清官修",
+      "stance_label": "清方章程·中外合定",
+      "distance_label": "1845 议定，上海租界制度之始",
+      "color": "#8C6239",
+      "compiler": "苏松太道宫慕久与英领事巴富尔",
+      "period": "清"
+    },
+    {
+      "id": "shanghai_xianzhi",
+      "title": "上海县志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清/民屡修，距明清上海事数百年",
+      "color": "#7A6A52",
+      "compiler": "《上海县志》（清/民修）",
+      "period": "清/民"
+    },
+    {
+      "id": "songjiang_fuzhi",
+      "title": "松江府志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清修（博润等），距元明上海建制数百年",
+      "color": "#7A6A52",
+      "compiler": "《松江府志》（清修）",
+      "period": "清"
+    },
+    {
+      "id": "qingshigao",
+      "title": "清史稿",
+      "party": "清修官史",
+      "stance_label": "民国未定稿·清方立场",
+      "distance_label": "成书 1928（民国未定稿），距所记明清战事约 280–300 年",
+      "color": "#7B5C3E",
+      "compiler": "赵尔巽等",
+      "period": "清末/民国"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "上海开埠与近代城市史研究综合",
+      "color": "#2E7D8F",
+      "period": "今"
+    }
+  ]
+}

@@ -6909,6 +6909,54 @@ window.SANDBOX_LEADS = {
    "_src_line": 12
   },
   {
+   "id": "SH_G01",
+   "scene": "shanghai",
+   "subject": "place:shanghai_cheng",
+   "title": "上海县城墙拆改与城厢格局演变（晚清拆城、近代市政化）史料详略不一",
+   "missing": "历史地理 / 方志",
+   "where": "上海县城墙拆改与城厢格局演变",
+   "skills": [
+    "历史地理",
+    "方志"
+   ],
+   "accept": "需上海县志与近代市政档案",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "SH_G02",
+   "scene": "shanghai",
+   "subject": "person:ba_fuer",
+   "title": "巴富尔开埠交涉之原始往来照会与选址细节散佚，仅见条约与后述",
+   "missing": "近代史 / 外交档案",
+   "where": "巴富尔开埠交涉原始档案",
+   "skills": [
+    "近代史",
+    "外交档案"
+   ],
+   "accept": "需中英外交档案与领事报告",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
+   "id": "SH_G03",
+   "scene": "shanghai",
+   "subject": "place:bund",
+   "title": "外滩早期建筑与租界城市形态之初貌，早期照片与图纸散缺",
+   "missing": "建筑史 / 档案",
+   "where": "外滩早期建筑与租界城市形态",
+   "skills": [
+    "建筑史",
+    "档案"
+   ],
+   "accept": "需近代建筑档案与老照片",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 21
+  },
+  {
    "id": "SHA_015",
    "scene": "shanghai_kaibu",
    "subject": "place:shanghai",

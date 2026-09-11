@@ -308,6 +308,7 @@ window.SANDBOX_RESONANCE = {
    "shandong_jixia",
    "shandong_kongfu_llm",
    "shandong_kongzi",
+   "shanghai",
    "shanghai_kaibu",
    "shanghai_shangwu_llm",
    "shanghai_songkai_llm",
@@ -6209,6 +6210,30 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_shandong_kongzi_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "shanghai",
+   "name": "shanghai",
+   "total": 21,
+   "layers": {
+    "record": 6,
+    "scholarship": 7,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "明修官史": 1,
+    "清官修": 4,
+    "后世官修": 6,
+    "清修·明臣": 1,
+    "学界": 6,
+    "清修官史": 3
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_shanghai_01",
    "best_resonance": 0.0
   },
   {

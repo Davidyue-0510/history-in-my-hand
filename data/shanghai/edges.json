@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "shanghai_cheng", "to": "yuyuan", "type": "mem", "label": "豫园在老城厢内，为城隍庙市集与士民游观之所" },
+    { "from": "shanghai_cheng", "to": "huangpu_river", "type": "geo", "label": "县城枕黄浦江东，通海漕运所倚" },
+    { "from": "bund", "to": "huangpu_river", "type": "geo", "label": "外滩临黄浦江西岸，洋行轮船泊此" },
+    { "from": "suzhou_creek", "to": "huangpu_river", "type": "geo", "label": "苏州河（吴淞江）西来汇于黄浦" },
+    { "from": "bund", "to": "shanghai_cheng", "type": "mil", "label": "租界与老城厢分峙，华洋杂处而治不一" }
+  ]
+}
