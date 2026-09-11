@@ -674,7 +674,8 @@
   "xining",
   "turpan",
   "lhasa",
-  "zunyi"
+  "zunyi",
+  "jilin"
  ],
  "scenes": {
   "langzhong": {
@@ -37768,6 +37769,92 @@
      ],
      "layer": "inference",
      "note": "大娄山—赤水河+巴蜀荆楚滇黔节点+土司边陲→遵义控黔北"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "jilin": {
+   "kind": "county",
+   "region": "qing_modern",
+   "province": "jilin",
+   "title": "吉林（吉林乌拉·松花江·吉林将军）",
+   "dossier_label": "吉林",
+   "subtitle": "吉林乌拉 · 松花江 · 吉林将军 · 东北重镇",
+   "primary_place": "jilin_city",
+   "dossier_event": "event:ev_jilin_02",
+   "vocab_pack": "jilin",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "吉林乌拉位于松花江中游，是清代东北边疆三大驻防将军之一——吉林将军的驻地。顺治十年（1653）清廷于此设船厂、练水师，以御沙俄东侵；乾隆二十二年（1757）析宁古塔将军辖地，设吉林将军，统辖松花江、乌苏里江、黑龙江下游及库页岛一带军政。乌拉街为明代海西女真乌拉部故地，清代设打牲乌拉总管衙门，掌贡貂、贡参与渔猎。长白山为满洲发祥圣地，清代长期封禁。光绪三十三年（1907）裁吉林将军，改设吉林省，吉林城遂从军政合一的边疆驻防中心转为近代行省省会。",
+   "parties_note": "史料以清实录、清史稿、吉林通志等官修为主，现代考订作补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_jilin_01": "设吉林船厂",
+    "event:ev_jilin_02": "设吉林将军",
+    "event:ev_jilin_03": "改设吉林省",
+    "place:jilin_city": "吉林城",
+    "place:songhua_river": "松花江",
+    "place:ula_street": "乌拉街",
+    "place:changbai_mountain": "长白山"
+   },
+   "epoch": "qing_modern",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "吉林将军驻城+打牲乌拉总管+长白山圣地封禁→清廷对东北边疆的政治秩序与满蒙认同"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "松花江航运+船厂战船+贡貂贡参+驿站道路→东北东部物资与技术枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4,
+      3
+     ],
+     "layer": "inference",
+     "note": "驻防八旗+流放流人+打牲丁+乌拉部遗民→边疆多族群社会汇聚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "松花江-黑龙江水道+长白山屏障+库页岛辖境→控御东北亚与防御沙俄南下的前沿"
     }
    },
    "dims": [

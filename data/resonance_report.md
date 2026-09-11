@@ -198,6 +198,7 @@
 | jianzhou_nuerhaci_llm | 14 | 3 | **0.000** | event:ev_jianzhou_nuerhaci_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | jiaozi_llm | 13 | 3 | **0.000** | event:ev_jiaozi_llm_01（0.000） | gap 2 / inference 1 / record 8 / scholarship 2 |
 | jiasixie | 7 | 2 | **0.000** | event:js_533（0.000） | gap 1 / record 4 / scholarship 2 |
+| jilin | 17 | 3 | **0.000** | event:ev_jilin_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | jilin_bohai_llm | 15 | 3 | **0.000** | event:ev_jilin_bohai_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
 | jilin_changbaishan_llm | 14 | 3 | **0.000** | event:ev_jilin_changbaishan_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | jilin_changchun_llm | 15 | 4 | **0.000** | event:ev_jilin_changchun_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
@@ -903,6 +904,9 @@
 | event:ev_jiaozi_llm_01 | jiaozi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_jiaozi_llm_02 | jiaozi_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_jiaozi_llm_03 | jiaozi_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
+| event:ev_jilin_01 | jilin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_jilin_02 | jilin | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_jilin_03 | jilin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_jilin_bohai_llm_01 | jilin_bohai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_jilin_bohai_llm_02 | jilin_bohai_llm | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 0 |
 | event:ev_jilin_bohai_llm_03 | jilin_bohai_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |

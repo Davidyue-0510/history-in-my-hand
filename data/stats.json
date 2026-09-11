@@ -1,9 +1,9 @@
 {
-  "scenes_total": 471,
-  "historical": 462,
+  "scenes_total": 472,
+  "historical": 463,
   "fictional": 9,
-  "assertions_total": 6985,
-  "sources_total": 471,
+  "assertions_total": 7002,
+  "sources_total": 472,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -139,6 +139,7 @@
     "jiangxi_ruijin_llm",
     "jianzhou_nuerhaci_llm",
     "jiaozi_llm",
+    "jilin",
     "jilin_bohai_llm",
     "jilin_changbaishan_llm",
     "jilin_changchun_llm",
@@ -336,7 +337,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 660,
+  "leads_total": 663,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3685,6 +3686,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "jilin",
+      "title": "吉林（吉林乌拉·松花江·吉林将军）",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4158,6 +4166,7 @@
     "xining": "西宁（唐蕃古道·唃厮啰青唐城·塔尔寺）",
     "turpan": "吐鲁番（高昌国·交河故城·坎儿井）",
     "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
-    "zunyi": "遵义（播州土司·茅台·海龙屯）"
+    "zunyi": "遵义（播州土司·茅台·海龙屯）",
+    "jilin": "吉林（吉林乌拉·松花江·吉林将军）"
   }
 }

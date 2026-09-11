@@ -1,0 +1,34 @@
+{
+  "edges": [
+    {
+      "from": "songhua_river",
+      "to": "jilin_city",
+      "type": "流经",
+      "note": "松花江流经吉林城，为船厂与水师提供基础。"
+    },
+    {
+      "from": "jilin_city",
+      "to": "jilin_general_yamen",
+      "type": "驻署",
+      "note": "吉林将军驻于吉林城内。"
+    },
+    {
+      "from": "ula_street",
+      "to": "jilin_city",
+      "type": "附属",
+      "note": "乌拉街（打牲乌拉总管衙门）在吉林城北约30里，属吉林将军辖境。"
+    },
+    {
+      "from": "beishan",
+      "to": "jilin_city",
+      "type": "俯瞰",
+      "note": "北山位于吉林城北部，为城中制高点。"
+    },
+    {
+      "from": "changbai_mountain",
+      "to": "songhua_river",
+      "type": "源出",
+      "note": "松花江发源于长白山天池，是满洲圣地与 waterways 的连接。"
+    }
+  ]
+}

@@ -197,6 +197,7 @@ window.SANDBOX_RESONANCE = {
    "jianzhou_nuerhaci_llm",
    "jiaozi_llm",
    "jiasixie",
+   "jilin",
    "jilin_bohai_llm",
    "jilin_changbaishan_llm",
    "jilin_changchun_llm",
@@ -4037,6 +4038,27 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:js_533",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jilin",
+   "name": "jilin",
+   "total": 17,
+   "layers": {
+    "record": 6,
+    "scholarship": 3,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "清修官史": 11,
+    "学界": 3,
+    "后世官修": 3
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_jilin_01",
    "best_resonance": 0.0
   },
   {

@@ -91,7 +91,7 @@ window.SANDBOX_SLICES["chengde"] = {
    "title": "清实录",
    "party": "清修官史",
    "stance_label": "清官修·当代",
-   "distance_label": "清代历朝官修，距所记承德事 contemporaneous 或数年内",
+   "distance_label": "清代历朝官修，距所记之事 contemporaneous 或数年内",
    "color": "#7B5C3E",
    "compiler": "清实录馆",
    "period": "清",

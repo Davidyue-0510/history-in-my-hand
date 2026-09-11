@@ -4043,6 +4043,54 @@
    "_src_line": 7
   },
   {
+   "id": "JL_G01",
+   "scene": "jilin",
+   "subject": "place:jilin_city",
+   "title": "吉林船厂各期战船具体数量、吨位与经费无确载",
+   "missing": "档案 / 清史",
+   "where": "吉林船厂战船数量与经费档案",
+   "skills": [
+    "档案",
+    "清史"
+   ],
+   "accept": "需清代兵工档案与满文档案互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 15
+  },
+  {
+   "id": "JL_G02",
+   "scene": "jilin",
+   "subject": "place:jilin_general_yamen",
+   "title": "吉林将军衙门日常民政、司法与旗民治理细节缺载",
+   "missing": "档案 / 地方志",
+   "where": "吉林将军任内民政档案",
+   "skills": [
+    "档案",
+    "地方志"
+   ],
+   "accept": "需清代东北档案与吉林通志对勘",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "JL_G03",
+   "scene": "jilin",
+   "subject": "place:ula_street",
+   "title": "乌拉街明代海西女真乌拉部城址与清代早期城池形制无考古报告",
+   "missing": "考古 / 民族史",
+   "where": "乌拉故城考古发掘",
+   "skills": [
+    "考古",
+    "民族史"
+   ],
+   "accept": "需城址考古报告与满族萨满遗存研究",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
    "id": "JIL_015",
    "scene": "jilin_bohai_llm",
    "subject": "event:ev_jilin_bohai_llm_03",
