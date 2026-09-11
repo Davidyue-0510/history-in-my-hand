@@ -1,9 +1,9 @@
 {
-  "scenes_total": 472,
-  "historical": 463,
+  "scenes_total": 473,
+  "historical": 464,
   "fictional": 9,
-  "assertions_total": 7002,
-  "sources_total": 472,
+  "assertions_total": 7023,
+  "sources_total": 474,
   "factions_total": 9,
   "vocab_packs": [
     "anhui_daizhen_llm",
@@ -77,6 +77,7 @@
     "guangxi_zhuangzu_llm",
     "guangzhong_simaqian_llm",
     "guangzhong_zhidao_llm",
+    "guilin",
     "guizhou_jianxing_llm",
     "guizhou_minority_craft_llm",
     "guizhou_shexiang_llm",
@@ -337,7 +338,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 663,
+  "leads_total": 666,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3693,6 +3694,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "guilin",
+      "title": "桂林（灵渠·靖江王府）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4167,6 +4175,7 @@
     "turpan": "吐鲁番（高昌国·交河故城·坎儿井）",
     "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
     "zunyi": "遵义（播州土司·茅台·海龙屯）",
-    "jilin": "吉林（吉林乌拉·松花江·吉林将军）"
+    "jilin": "吉林（吉林乌拉·松花江·吉林将军）",
+    "guilin": "桂林（灵渠·靖江王府）"
   }
 }

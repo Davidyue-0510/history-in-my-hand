@@ -119,6 +119,7 @@ window.SANDBOX_RESONANCE = {
    "guangxi_zhuangzu_llm",
    "guangzhong_simaqian_llm",
    "guangzhong_zhidao_llm",
+   "guilin",
    "guiling",
    "guizhou_jianxing_llm",
    "guizhou_minority_craft_llm",
@@ -2545,6 +2546,32 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:ev_guangzhong_zhidao_llm_01",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guilin",
+   "name": "guilin",
+   "total": 21,
+   "layers": {
+    "record": 6,
+    "scholarship": 7,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "汉·官修": 3,
+    "北魏·官修": 1,
+    "宋·官修": 2,
+    "清修·明臣": 4,
+    "后世官修": 2,
+    "学界": 7,
+    "汉·后朝官修": 1,
+    "五代·官修": 1
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_guilin_01",
    "best_resonance": 0.0
   },
   {

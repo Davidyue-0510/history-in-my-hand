@@ -675,7 +675,8 @@
   "turpan",
   "lhasa",
   "zunyi",
-  "jilin"
+  "jilin",
+  "guilin"
  ],
  "scenes": {
   "langzhong": {
@@ -37855,6 +37856,89 @@
      ],
      "layer": "inference",
      "note": "松花江-黑龙江水道+长白山屏障+库页岛辖境→控御东北亚与防御沙俄南下的前沿"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "guilin": {
+   "kind": "county",
+   "region": "engineering",
+   "province": "guangxi",
+   "title": "桂林（灵渠·靖江王府）",
+   "dossier_label": "桂林",
+   "subtitle": "秦凿灵渠 · 唐李渤重修 · 明靖江王府 · 山水甲天下",
+   "primary_place": "guilin_cheng",
+   "dossier_event": "event:ev_guilin_01",
+   "vocab_pack": "guilin",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "桂林北倚越城岭、漓江穿城，秦凿灵渠通湘漓、唐李渤重修、明封靖江王建府，自古为岭南锁钥与山水名邦。下方为凿渠、重修与封藩三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以史记、水经注、新旧唐书、明史等后世官修为本，现代考订作学界补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_guilin_01": "秦凿灵渠",
+    "event:ev_guilin_02": "李渤重修灵渠",
+    "event:ev_guilin_03": "封靖江王",
+    "place:guilin_cheng": "桂林城",
+    "person:han_yu": "韩愈"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "明封靖江王镇桂林，藩府军政节制广西，为经略边疆之制"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "灵渠通湘漓，水运为岭南补给与军事通道"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "谪宦往来与移民商旅，促桂北汉夷杂处"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "越城岭—灵渠为五岭孔道，桂林北拒中原、南控岭南"
     }
    },
    "dims": [

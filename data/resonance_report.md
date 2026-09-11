@@ -120,6 +120,7 @@
 | guangxi_zhuangzu_llm | 11 | 2 | **0.000** | event:ev_guangxi_zhuangzu_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 1 |
 | guangzhong_simaqian_llm | 17 | 2 | **0.000** | event:ev_guangzhong_simaqian_llm_02（0.000） | gap 1 / inference 1 / record 9 / scholarship 6 |
 | guangzhong_zhidao_llm | 15 | 3 | **0.000** | event:ev_guangzhong_zhidao_llm_01（0.000） | gap 1 / inference 1 / record 12 / scholarship 1 |
+| guilin | 21 | 3 | **0.000** | event:ev_guilin_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 7 |
 | guiling | 19 | 3 | **0.000** | event:gl_jz（0.000） | gap 1 / inference 2 / record 10 / scholarship 6 |
 | guizhou_jianxing_llm | 11 | 3 | **0.000** | event:ev_guizhou_jianxing_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 1 |
 | guizhou_minority_craft_llm | 12 | 1 | **0.000** | event:ev_guizhou_minority_craft_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
@@ -756,6 +757,9 @@
 | event:ev_guangzhong_zhidao_llm_01 | guangzhong_zhidao_llm | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:ev_guangzhong_zhidao_llm_02 | guangzhong_zhidao_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ev_guangzhong_zhidao_llm_03 | guangzhong_zhidao_llm | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:ev_guilin_01 | guilin | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_guilin_02 | guilin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_guilin_03 | guilin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_jianxing_llm_01 | guizhou_jianxing_llm | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_jianxing_llm_02 | guizhou_jianxing_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_guizhou_jianxing_llm_03 | guizhou_jianxing_llm | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |

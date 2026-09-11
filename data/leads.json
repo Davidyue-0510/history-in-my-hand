@@ -2393,6 +2393,53 @@
    "_src_line": 15
   },
   {
+   "id": "GL_G01",
+   "scene": "guilin",
+   "subject": "place:lingqu",
+   "title": "灵渠早期岁修与渠吏建制史缺载",
+   "missing": "考据",
+   "where": "灵渠早期岁修与渠吏",
+   "skills": [
+    "考据"
+   ],
+   "accept": "需秦汉水利与广西方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 16
+  },
+  {
+   "id": "GL_G02",
+   "scene": "guilin",
+   "subject": "place:jingjiang_wangcheng",
+   "title": "靖江王府营造工序与匠役无详载",
+   "missing": "建筑史 / 方志",
+   "where": "靖江王府营建工序",
+   "skills": [
+    "建筑史",
+    "方志"
+   ],
+   "accept": "需明代营造与广西方志",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 17
+  },
+  {
+   "id": "GL_G03",
+   "scene": "guilin",
+   "subject": "place:guilin_cheng",
+   "title": "秦代桂林郡治（布山）与今桂林城址关系无定论",
+   "missing": "历史地理 / 考古",
+   "where": "秦桂林郡治布山位置",
+   "skills": [
+    "历史地理",
+    "考古"
+   ],
+   "accept": "需考古与文献互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 18
+  },
+  {
    "id": "GUILINGG01",
    "scene": "guiling",
    "subject": "event:gl_jz",

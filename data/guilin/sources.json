@@ -1,0 +1,102 @@
+{
+  "sources": [
+    {
+      "id": "shiji",
+      "title": "史记",
+      "party": "汉·官修",
+      "stance_label": "汉人当代/近当代",
+      "distance_label": "成书汉武帝时，距楚汉约百年",
+      "color": "#B23A48",
+      "compiler": "司马迁（西汉）",
+      "period": "汉",
+      "note": "本纪·高祖本纪、项羽本纪、淮阴侯列传载楚汉之事，汉人叙汉，视角含汉方立场"
+    },
+    {
+      "id": "hanshu",
+      "title": "汉书",
+      "party": "汉·后朝官修",
+      "stance_label": "汉后朝官修",
+      "distance_label": "成书东汉明帝—章帝时，距楚汉约二百余年",
+      "color": "#C0584F",
+      "compiler": "班固（东汉）",
+      "period": "汉",
+      "note": "高帝纪、韩信传等，东汉官修西汉史"
+    },
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "吐蕃传、地理志载沙州陷蕃与归义军事，为敦煌多元政权核心史料。"
+    },
+    {
+      "id": "xin_tangshu",
+      "title": "新唐书",
+      "party": "宋·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书宋仁宗嘉祐五年（1060），距事约240年",
+      "color": "#6C7A89",
+      "compiler": "欧阳修、宋祁等（宋）",
+      "period": "宋",
+      "note": "南门说，与旧唐书异（冲突对）"
+    },
+    {
+      "id": "mingshi",
+      "title": "明史",
+      "juan": "卷二百四十八·张春传／卷二百七十一·祖大寿传",
+      "compiler": "张廷玉等",
+      "compiled_year": 1739,
+      "stance_label": "后朝官修",
+      "distance_label": "成书 1739（清乾隆四年），距所记明清战事约百年",
+      "party": "清修·明臣",
+      "color": "#8C6239",
+      "note": "清修官史，记大凌河筑城、长山之败、祖大寿杀何可纲降清，偏清方视角。"
+    },
+    {
+      "id": "zizhi_tongjian",
+      "title": "资治通鉴",
+      "party": "宋·官修",
+      "distance_label": "宋司马光撰（1084 成书），距三国八百余年",
+      "stance_label": "北宋官修编年通史",
+      "compiler": "司马光（北宋）",
+      "color": "#6C7A89",
+      "period": "宋"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "潮州史与海上丝路综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    },
+    {
+      "id": "shuijingzhu",
+      "title": "水经注",
+      "party": "北魏·官修",
+      "stance_label": "北魏地理注",
+      "distance_label": "成书北魏（约六世纪），距秦凿灵渠约七百年",
+      "color": "#8E7CC3",
+      "compiler": "郦道元（北魏）",
+      "period": "北魏",
+      "note": "郦道元注《水经》，湘水、漓水篇载灵渠铧嘴、陡门之制，为灵渠早期形制核心史料。"
+    },
+    {
+      "id": "guilin_fuzhi",
+      "title": "桂林府志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清/民屡修，距明靖江王府约数百年",
+      "color": "#7A6A52",
+      "compiler": "《桂林府志》（清修）",
+      "period": "清/民",
+      "note": "桂林地方志，载山川形胜、藩府建制与社会沿革。"
+    }
+  ]
+}

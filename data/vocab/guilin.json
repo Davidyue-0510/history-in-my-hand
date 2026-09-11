@@ -1,0 +1,97 @@
+{
+ "_comment": "per-scene vocab pack for 桂林 (灵渠·靖江王府·山水, 秦—唐—明跨代)。canon 源(shiji/hanshu/jiu_tangshu/xin_tangshu/mingshi/zizhi_tongjian/modern) 元数据逐字镜像全局定义（防 W08），新增 shuijingzhu/guilin_fuzhi 两唯一源。立场靠来源派生，不伪造。",
+ "_base": null,
+ "parties": [
+  "汉·官修",
+  "汉·后朝官修",
+  "五代·官修",
+  "宋·官修",
+  "清修·明臣",
+  "学界",
+  "北魏·官修",
+  "后世官修"
+ ],
+ "party_bucket": {
+  "汉·官修": "汉·官修",
+  "汉·后朝官修": "汉·后朝官修",
+  "五代·官修": "五代·官修",
+  "宋·官修": "宋·官修",
+  "清修·明臣": "清修·明臣",
+  "学界": "学界",
+  "北魏·官修": "北魏·官修",
+  "后世官修": "后世官修"
+ },
+ "party_colors": {
+  "汉·官修": "#B23A48",
+  "汉·后朝官修": "#C0584F",
+  "五代·官修": "#7A6A53",
+  "宋·官修": "#6C7A89",
+  "清修·明臣": "#8C6239",
+  "学界": "#2E7D8F",
+  "北魏·官修": "#8E7CC3",
+  "后世官修": "#A0473A"
+ },
+ "factions": {
+  "f_汉·官修": {
+   "name": "汉·官修",
+   "macro_party": "汉·官修",
+   "note": "auto"
+  },
+  "f_汉·后朝官修": {
+   "name": "汉·后朝官修",
+   "macro_party": "汉·后朝官修",
+   "note": "auto"
+  },
+  "f_五代·官修": {
+   "name": "五代·官修",
+   "macro_party": "五代·官修",
+   "note": "auto"
+  },
+  "f_宋·官修": {
+   "name": "宋·官修",
+   "macro_party": "宋·官修",
+   "note": "auto"
+  },
+  "f_清修·明臣": {
+   "name": "清修·明臣",
+   "macro_party": "清修·明臣",
+   "note": "auto"
+  },
+  "f_学界": {
+   "name": "学界",
+   "macro_party": "学界",
+   "note": "auto"
+  },
+  "f_北魏·官修": {
+   "name": "北魏·官修",
+   "macro_party": "北魏·官修",
+   "note": "auto"
+  },
+  "f_后世官修": {
+   "name": "后世官修",
+   "macro_party": "后世官修",
+   "note": "auto"
+  }
+ },
+ "faction_colors": {
+  "f_汉·官修": "#B23A48",
+  "f_汉·后朝官修": "#C0584F",
+  "f_五代·官修": "#7A6A53",
+  "f_宋·官修": "#6C7A89",
+  "f_清修·明臣": "#8C6239",
+  "f_学界": "#2E7D8F",
+  "f_北魏·官修": "#8E7CC3",
+  "f_后世官修": "#A0473A"
+ },
+ "layers": {
+  "record": "原始史料",
+  "scholarship": "学界研究",
+  "inference": "合理推断",
+  "gap": "证据缺口"
+ },
+ "quote_status": {
+  "verbatim": "直接引文",
+  "paraphrase_unverified": "转述待核",
+  "generated": "生成"
+ }
+}

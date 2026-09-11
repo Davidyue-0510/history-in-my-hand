@@ -1,0 +1,59 @@
+{
+  "places": [
+    {
+      "id": "guilin_cheng",
+      "name": "桂林城（静江府治）",
+      "lon": 110.299,
+      "lat": 25.274,
+      "type": "capital",
+      "modern": "今广西桂林市",
+      "note": "漓江穿城，北倚越城岭，喀斯特峰林拔地，自古为岭南军事与交通要会。坐标取城市中心，approx（城市级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城市级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "lingqu",
+      "name": "灵渠（兴安·湘漓分水）",
+      "lon": 110.67,
+      "lat": 25.61,
+      "type": "canal",
+      "modern": "今广西兴安县境",
+      "note": "秦始皇命史禄凿灵渠，分湘水入漓，沟通长江与珠江水系，为世界最古老人工运河之一。坐标取兴安分水塘一带，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（县治级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "jingjiang_wangcheng",
+      "name": "靖江王城（独秀峰）",
+      "lon": 110.294,
+      "lat": 25.267,
+      "type": "fort",
+      "modern": "桂林市秀峰区王城路·独秀峰下",
+      "note": "明洪武五年就藩靖江王，建靖江王府（王城），周约三里，独秀峰屏其后。坐标取独秀峰，approx（城内点位）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城内点位精度），待 CHGIS 精修"
+    },
+    {
+      "id": "lijiang",
+      "name": "漓江（桂林段）",
+      "lon": 110.30,
+      "lat": 25.25,
+      "type": "river",
+      "modern": "漓江纵贯桂林市境",
+      "note": "灵渠引湘入漓，漓江下接桂江、西江，为岭南水运主干。坐标取桂林城区江段中线，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（江段中线），待 CHGIS 精修"
+    },
+    {
+      "id": "yuecheng_ling",
+      "name": "越城岭（五岭之一）",
+      "lon": 110.45,
+      "lat": 26.05,
+      "type": "mountain",
+      "modern": "今广西东北部—湘桂界山",
+      "note": "五岭最西一支，灵渠越越城岭分水，为中原通岭南的孔道。坐标取越城岭中段，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（山脉级精度），待 CHGIS 精修"
+    }
+  ]
+}

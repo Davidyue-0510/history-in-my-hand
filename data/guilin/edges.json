@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "guilin_cheng", "to": "jingjiang_wangcheng", "type": "mem", "label": "靖江王城在桂林城内独秀峰下，为明代藩府" },
+    { "from": "guilin_cheng", "to": "lijiang", "type": "geo", "label": "漓江穿桂林城，灵渠引湘水入漓" },
+    { "from": "guilin_cheng", "to": "yuecheng_ling", "type": "geo", "label": "桂林北倚越城岭，为岭南北门锁钥" },
+    { "from": "guilin_cheng", "to": "lingqu", "type": "mil", "label": "北出灵渠通湘水，中原舟楫下岭南" },
+    { "from": "lingqu", "to": "yuecheng_ling", "type": "geo", "label": "灵渠越越城岭分水，连湘漓二水" }
+  ]
+}
