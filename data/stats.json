@@ -1,9 +1,9 @@
 {
-  "scenes_total": 480,
-  "historical": 471,
+  "scenes_total": 481,
+  "historical": 472,
   "fictional": 9,
-  "assertions_total": 7162,
-  "sources_total": 492,
+  "assertions_total": 7179,
+  "sources_total": 493,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -68,6 +68,7 @@
     "gansu_jiayuguan",
     "gansu_linxia_huihui_llm",
     "gansu_tianshui_fuxi_llm",
+    "guandu_battle",
     "guandu_llm",
     "guangdong_guangzhou",
     "guangdong_luofushan_llm",
@@ -345,7 +346,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 685,
+  "leads_total": 687,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3757,6 +3758,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "guandu_battle",
+      "title": "官渡之战·以少胜多",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4239,6 +4247,7 @@
     "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）",
     "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）",
     "chibi_battle": "赤壁之战·火烧乌林",
-    "feishui_battle": "淝水之战·风声鹤唳"
+    "feishui_battle": "淝水之战·风声鹤唳",
+    "guandu_battle": "官渡之战·以少胜多"
   }
 }

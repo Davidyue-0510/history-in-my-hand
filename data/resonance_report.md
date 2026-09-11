@@ -110,6 +110,7 @@
 | grand_canal | 14 | 3 | **0.000** | event:gc_ming（0.000） | gap 1 / inference 2 / record 8 / scholarship 3 |
 | great_wall | 6 | 3 | **0.000** | event:gw_han（0.000） | gap 1 / record 2 / scholarship 3 |
 | guandu | 19 | 3 | **0.000** | event:gd_jz（0.000） | gap 1 / record 12 / scholarship 6 |
+| guandu_battle | 17 | 7 | **0.000** | event:baima（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | guandu_llm | 14 | 4 | **0.000** | event:ev_guandu_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | guangdong_guangzhou | 14 | 2 | **0.000** | event:ev_guangdong_guangzhou_01（0.000） | gap 1 / inference 1 / record 10 / scholarship 2 |
 | guangdong_luofushan_llm | 12 | 3 | **0.000** | event:ev_guangdong_luofushan_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
@@ -522,6 +523,7 @@
 
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
+| event:baima | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:bc_1578 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
@@ -539,6 +541,8 @@
 | event:bj_wu | boju | **0.000** | 0/3 | 0.00 | 0.00 | 11 | 0 / 0 / 0 / 0 |
 | event:bj_yu | beijing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:cailun_fenghou | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:cangting | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:cao_juece | guandu_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:caocao_beiche | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:caocao_xia_jingzhou | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:caoren_shou_jiangling | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1476,6 +1480,7 @@
 | event:gl_jz | guiling | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:gl_qi | guiling | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:gl_wei | guiling | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 0 |
+| event:guandu_xiangchi | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:gw_han | great_wall | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:gw_ming | great_wall | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:gw_qin | great_wall | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1661,6 +1666,7 @@
 | event:wm_9 | wangmang | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:wm_end | wangmang | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:wm_reform | wangmang | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:wuchao | guandu_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:ww_1046 | wuwang | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ww_1048 | wuwang | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:wx_0611 | wuxu | **0.000** | 0/3 | 0.00 | 0.00 | 6 | 0 / 0 / 0 / 0 |
@@ -1679,6 +1685,7 @@
 | event:xy_zl | xiaoyaojin | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:xz_629 | xuanzang | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:xz_645 | xuanzang | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:yanjin | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_jz | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_wu | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_yue | yancheng | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |
@@ -1695,6 +1702,7 @@
 | event:ys_yuan | yaoshan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yu_1271 | yuan_duo | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:yu_1276 | yuan_duo | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
+| event:yuanshao_kui | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:zc_463 | zuchongzhi | **0.000** | 0/3 | 0.00 | 0.33 | 6 | 0 / 0 / 0 / 0 |
 | event:zc_pi | zuchongzhi | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:zf_33 | zhaofen | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |

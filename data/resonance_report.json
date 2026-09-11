@@ -107,6 +107,7 @@
       "grand_canal",
       "great_wall",
       "guandu",
+      "guandu_battle",
       "guandu_llm",
       "guangdong_guangzhou",
       "guangdong_luofushan_llm",
@@ -2365,6 +2366,26 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:gd_jz",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "guandu_battle",
+      "name": "guandu_battle",
+      "total": 17,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "inference": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12,
+        "二手综述": 5
+      },
+      "faction_counts": {},
+      "event_count": 7,
+      "avg_resonance": 0.0,
+      "best_event": "event:baima",
       "best_resonance": 0.0
     },
     {
@@ -9876,6 +9897,37 @@
   },
   "events": [
     {
+      "subject": "event:baima",
+      "name": "event:baima",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:bc_1281",
       "name": "event:bc_1281",
       "scenes": [
@@ -10386,6 +10438,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:cangting",
+      "name": "event:cangting",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:cao_juece",
+      "name": "event:cao_juece",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -39470,6 +39584,37 @@
       }
     },
     {
+      "subject": "event:guandu_xiangchi",
+      "name": "event:guandu_xiangchi",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:gw_han",
       "name": "event:gw_han",
       "scenes": [
@@ -45241,6 +45386,37 @@
       }
     },
     {
+      "subject": "event:wuchao",
+      "name": "event:wuchao",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:ww_1046",
       "name": "event:ww_1046",
       "scenes": [
@@ -45799,6 +45975,37 @@
       }
     },
     {
+      "subject": "event:yanjin",
+      "name": "event:yanjin",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:yc_jz",
       "name": "event:yc_jz",
       "scenes": [
@@ -46278,6 +46485,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yuanshao_kui",
+      "name": "event:yuanshao_kui",
+      "scenes": [
+        "guandu_battle"
+      ],
+      "scene_names": [
+        "guandu_battle"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

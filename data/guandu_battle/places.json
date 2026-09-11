@@ -1,0 +1,12 @@
+{
+  "places": [
+    {"id": "xuchang", "name": "许都", "lat": 34.04, "lon": 113.85, "type": "city", "note": "曹操迎献帝所都，官渡之战后方中枢与饷源", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "guandu", "name": "官渡", "lat": 34.73, "lon": 113.95, "type": "city", "note": "主战场，今河南郑州中牟县东北，曹操拒袁之前线营垒", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yecheng", "name": "邺城", "lat": 36.35, "lon": 114.62, "type": "city", "note": "袁绍根本，冀州治所，今河北临漳西南", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "baima", "name": "白马", "lat": 35.58, "lon": 114.53, "type": "city", "note": "黄河渡口，颜良围刘延于此，今河南滑县东", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yanjin", "name": "延津", "lat": 35.15, "lon": 114.18, "type": "city", "note": "袁绍西进渡口，文丑败死于此，今河南延津", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "wuchao", "name": "乌巢", "lat": 35.00, "lon": 114.40, "type": "region", "note": "袁绍军粮屯聚处，曹操奇袭焚粮地，约今河南封丘西", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yellow_river", "name": "黄河", "lat": 35.20, "lon": 114.30, "type": "river", "note": "南北分界，袁绍自河北渡河南攻，曹操据南岸", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yangwu", "name": "阳武", "lat": 34.93, "lon": 113.97, "type": "city", "note": "官渡东南前哨，曹操北进所经，今河南原阳", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+  ]
+}

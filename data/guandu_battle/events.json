@@ -1,0 +1,11 @@
+{
+  "events": [
+    {"id": "ev_cao_juece", "subject": "event:cao_juece", "year": 200, "era": "建安五年（200）", "title": "曹操决策拒袁", "kind": "政治·决策", "text": "袁绍简精卒十万、骑万匹南下，曹操于官渡列营拒之；兵寡粮悬，荀彧留守许都供饷，荀攸从谋画策。"},
+    {"id": "ev_baima", "subject": "event:baima", "year": 200, "era": "建安五年（200）", "title": "白马之战·关羽斩颜良", "kind": "战事·前哨战", "text": "袁绍遣颜良围曹将刘延于白马，曹操北救，使张辽关羽为先锋；关羽策马刺良于万众之中，斩其首还，解白马之围。"},
+    {"id": "ev_yanjin", "subject": "event:yanjin", "year": 200, "era": "建安五年（200）", "title": "延津之战·诱敌斩文丑", "kind": "战事·诱敌战", "text": "曹操南撤辐重诱袁绍分兵西逐，复还击斩文丑，袁军再挫，辎重南归官渡。"},
+    {"id": "ev_guandu_xiangchi", "subject": "event:guandu_xiangchi", "year": 200, "era": "建安五年（200）", "title": "官渡相持", "kind": "战事·对峙", "text": "两军夹官渡数月，曹军兵少粮尽、士卒疲乏，袁军营连数十里，胜负未决，曹操几欲退兵。"},
+    {"id": "ev_wuchao", "subject": "event:wuchao", "year": 200, "era": "建安五年（200）", "title": "乌巢劫粮·许攸献计", "kind": "战事·奇袭", "text": "袁绍谋士许攸因受谗投曹，献袭乌巢烧粮之策；曹操自将步骑五千，皆用袁军旗帜，夜从间道焚其辎重。"},
+    {"id": "ev_yuanshao_kui", "subject": "event:yuanshao_kui", "year": 200, "era": "建安五年（200）", "title": "袁绍大溃·张郃高览降", "kind": "战事·决战", "text": "乌巢粮尽，袁军营乱；张郃高览焚攻具诣曹营降，袁绍仅与八百骑北渡河走，官渡之败成定局。"},
+    {"id": "ev_cangting", "subject": "event:cangting", "year": 201, "era": "建安六年（201）", "title": "仓亭再破·河北入曹", "kind": "战事·收复", "text": "次年曹操渡河击袁绍，破之于仓亭；袁绍惭愤病死，其子争立，河北四州渐入曹操之手，统一北方之基成。"}
+  ]
+}

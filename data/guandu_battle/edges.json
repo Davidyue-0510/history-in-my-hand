@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "yecheng", "to": "baima", "type": "military", "label": "邺城—白马（袁绍南渡主线）"},
+    {"from": "baima", "to": "yanjin", "type": "military", "label": "白马—延津（袁绍西进）"},
+    {"from": "yanjin", "to": "guandu", "type": "military", "label": "延津—官渡（袁绍逼曹）"},
+    {"from": "guandu", "to": "wuchao", "type": "military", "label": "官渡—乌巢（曹操奇袭粮屯）"},
+    {"from": "xuchang", "to": "yangwu", "type": "military", "label": "许都—阳武（曹操北进）"},
+    {"from": "yangwu", "to": "guandu", "type": "military", "label": "阳武—官渡（曹军前线）"},
+    {"from": "xuchang", "to": "guandu", "type": "military", "label": "许都—官渡（曹操主力北上）"},
+    {"from": "yellow_river", "to": "baima", "type": "river", "label": "黄河—白马（北岸渡口）"},
+    {"from": "guandu", "to": "yellow_river", "type": "river", "label": "官渡临黄河"},
+    {"from": "wuchao", "to": "yecheng", "type": "military", "label": "乌巢—邺城（袁绍后方粮道）"}
+  ]
+}

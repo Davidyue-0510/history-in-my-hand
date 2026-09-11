@@ -688,7 +688,8 @@
   "shanghai",
   "chongqing",
   "chibi_battle",
-  "feishui_battle"
+  "feishui_battle",
+  "guandu_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -38554,6 +38555,98 @@
     }
    },
    "province": "anhui",
+   "related": []
+  },
+  "guandu_battle": {
+   "kind": "county",
+   "region": "three_kingdoms",
+   "title": "官渡之战·以少胜多",
+   "dossier_label": "官渡之战",
+   "subtitle": "建安五年（200）· 曹操 vs 袁绍",
+   "primary_place": "guandu",
+   "dossier_event": "event:yuanshao_kui",
+   "vocab_pack": "guandu_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "建安五年（200），袁绍率十万众南下，曹操于官渡以少胜多，奇袭乌巢焚粮、张郃高览降，大溃袁军，奠定统一北方之基。",
+   "parties_note": "本切片主干为后世官修史（三国志/资治通鉴），无曹操、袁绍双方当代原始档案；双方实况经后世史官回溯叙述，缺口为一等公民。系统不裁决，只并列。",
+   "subject_names": {
+    "event:cao_juece": "曹操决策拒袁",
+    "event:baima": "白马之战",
+    "event:yanjin": "延津之战",
+    "event:guandu_xiangchi": "官渡相持",
+    "event:wuchao": "乌巢劫粮",
+    "event:yuanshao_kui": "袁绍大溃",
+    "event:cangting": "仓亭再破",
+    "place:guandu": "官渡",
+    "place:wuchao": "乌巢",
+    "place:yellow_river": "黄河",
+    "person:caocao": "曹操",
+    "person:yuanshao": "袁绍",
+    "person:guan_yu": "关羽"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "官渡之战：朝堂凝聚力——袁绍率十万众攻曹操，曹操以司空总揽许都军政"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "官渡之战：后勤物力——曹军粮尽欲退、乌巢焚粮断袁归路"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "官渡之战：人口动员——北兵南人地疏、河北四州兵源雄厚"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "官渡之战：地缘战略——黄河为轴，曹操据南岸扼袁绍渡河南下"
+    }
+   },
+   "province": "henan",
    "related": []
   }
  },

@@ -1,0 +1,18 @@
+{
+  "_comment": "官渡控制层（200—201）。袁绍自邺城发兵，200 年据河北四州与白马/延津/乌巢，曹操据许都—官渡—黄河南岸；乌巢焚粮后袁绍大溃，201 年仓亭再破、河北入曹。本切片用 _years=[200,201]，使主时间轴第 7 事件（201）驱动实控区翻为曹操北收。争夺地按『袁绍在前、曹操在后』排序，controllerAt 取首个匹配年窗的记录（袁绍 end=200，故 200 年显袁绍、201 年显曹操）。",
+  "_years": [200, 201],
+  "control": [
+    {"place_id": "xuchang", "party": "曹操", "start": 200, "end": null, "basis": "曹操迎献帝所都，官渡后方中枢与饷源", "note": "曹操根本"},
+    {"place_id": "yangwu", "party": "曹操", "start": 200, "end": null, "basis": "官渡东南前哨，曹操北进所经", "note": "曹操前哨"},
+    {"place_id": "guandu", "party": "曹操", "start": 200, "end": null, "basis": "曹操拒袁之前线营垒，夹官渡而阵", "note": "曹操主战场"},
+    {"place_id": "yellow_river", "party": "曹操", "start": 200, "end": null, "basis": "曹操据黄河南岸，袁绍渡河来攻", "note": "南岸属曹"},
+    {"place_id": "yecheng", "party": "袁绍", "start": 200, "end": 200, "basis": "袁绍根本冀州治所，官渡战前", "note": "袁绍大本营"},
+    {"place_id": "baima", "party": "袁绍", "start": 200, "end": 200, "basis": "袁绍南渡渡口，颜良围刘延于此", "note": "袁绍前哨"},
+    {"place_id": "yanjin", "party": "袁绍", "start": 200, "end": 200, "basis": "袁绍西进渡口，文丑败死于此", "note": "袁绍前哨"},
+    {"place_id": "wuchao", "party": "袁绍", "start": 200, "end": 200, "basis": "袁绍军粮屯聚处，战前属袁", "note": "袁绍粮屯"},
+    {"place_id": "yecheng", "party": "曹操", "start": 201, "end": null, "basis": "仓亭再破后河北四州渐入曹手", "note": "201 年后属曹"},
+    {"place_id": "baima", "party": "曹操", "start": 200, "end": null, "basis": "白马解围后曹操控河东南岸", "note": "战后属曹"},
+    {"place_id": "yanjin", "party": "曹操", "start": 200, "end": null, "basis": "延津之战后曹操控此渡口", "note": "战后属曹"},
+    {"place_id": "wuchao", "party": "曹操", "start": 200, "end": null, "basis": "乌巢焚粮后曹操据之，断袁归路", "note": "战后属曹"}
+  ]
+}

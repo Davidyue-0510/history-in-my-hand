@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 480 个切片
+// 权威数据源：data/scenes.json 注册的 481 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 480 个切片",
+  "slice": "multi-scene · 481 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -72,6 +72,7 @@ window.SANDBOX_DATA = {
    "gansu_jiayuguan",
    "gansu_linxia_huihui_llm",
    "gansu_tianshui_fuxi_llm",
+   "guandu_battle",
    "guandu_llm",
    "guangdong_guangzhou",
    "guangdong_luofushan_llm",
@@ -1084,7 +1085,8 @@ window.SANDBOX_DATA = {
   "shanghai",
   "chongqing",
   "chibi_battle",
-  "feishui_battle"
+  "feishui_battle",
+  "guandu_battle"
  ],
  "vocab": {
   "layers": [
@@ -27612,6 +27614,25 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "two_jin",
    "scale_tier": "operational"
+  },
+  "guandu_battle": {
+   "title": "官渡之战·以少胜多",
+   "dossier_label": "官渡之战",
+   "subtitle": "建安五年（200）· 曹操 vs 袁绍",
+   "kind": "county",
+   "region": "three_kingdoms",
+   "page": "county.html?scene=guandu_battle",
+   "vocab_pack": "guandu_battle",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28094,7 +28115,8 @@ window.SANDBOX_DATA = {
   "shanghai": "slices/shanghai.js",
   "chongqing": "slices/chongqing.js",
   "chibi_battle": "slices/chibi_battle.js",
-  "feishui_battle": "slices/feishui_battle.js"
+  "feishui_battle": "slices/feishui_battle.js",
+  "guandu_battle": "slices/guandu_battle.js"
  },
  "corridors": [
   {

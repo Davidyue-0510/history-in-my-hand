@@ -109,6 +109,7 @@ window.SANDBOX_RESONANCE = {
    "grand_canal",
    "great_wall",
    "guandu",
+   "guandu_battle",
    "guandu_llm",
    "guangdong_guangzhou",
    "guangdong_luofushan_llm",
@@ -2367,6 +2368,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:gd_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "guandu_battle",
+   "name": "guandu_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:baima",
    "best_resonance": 0.0
   },
   {
