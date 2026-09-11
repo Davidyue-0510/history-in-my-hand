@@ -1,0 +1,18 @@
+{
+  "_comment": "淝水控制层（383—384）。前秦自长安发兵，383 年夹淝水而阵、控寿阳/洛涧/淝水/八公山；淝水溃后东晋收复北岸，384 年谢玄北伐取河南山东。本切片用 _years=[383,384]，使主时间轴第 7 事件（384）驱动实控区翻为东晋。争夺地按『前秦在前、东晋在后』排序，controllerAt 取首个匹配年窗的记录。",
+  "_years": [383, 384],
+  "control": [
+    {"place_id": "changan", "party": "前秦", "start": 383, "end": null, "basis": "前秦都，苻坚发兵后仍为秦根本", "note": "前秦都"},
+    {"place_id": "shouyang", "party": "前秦", "start": 383, "end": 383, "basis": "苻融率前锋屯寿阳，淝水战前", "note": "前秦南侵前哨"},
+    {"place_id": "luojian", "party": "前秦", "start": 383, "end": 383, "basis": "梁成屯洛涧，刘牢之破之", "note": ""},
+    {"place_id": "feishui", "party": "前秦", "start": 383, "end": 383, "basis": "秦军夹淝水而阵（北岸）", "note": ""},
+    {"place_id": "bagongshan", "party": "前秦", "start": 383, "end": 383, "basis": "秦军阵于八公山北", "note": ""},
+    {"place_id": "jiankang", "party": "东晋", "start": 383, "end": null, "basis": "东晋都，谢安决策中枢", "note": ""},
+    {"place_id": "hefei", "party": "东晋", "start": 383, "end": null, "basis": "北府兵集结、谢玄北伐所经", "note": ""},
+    {"place_id": "huai_river", "party": "东晋", "start": 383, "end": null, "basis": "东晋据淮南岸", "note": ""},
+    {"place_id": "shouyang", "party": "东晋", "start": 383, "end": null, "basis": "淝水溃后晋军收复寿阳", "note": ""},
+    {"place_id": "luojian", "party": "东晋", "start": 383, "end": null, "basis": "洛涧大捷后晋控洛涧", "note": ""},
+    {"place_id": "feishui", "party": "东晋", "start": 383, "end": null, "basis": "渡淝水击秦，收复北岸", "note": ""},
+    {"place_id": "bagongshan", "party": "东晋", "start": 383, "end": null, "basis": "秦溃后晋军进据八公山南", "note": ""}
+  ]
+}

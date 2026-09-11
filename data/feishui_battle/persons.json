@@ -1,0 +1,12 @@
+{
+  "persons": [
+    {"id": "fujian", "name": "苻坚", "party": "前秦", "note": "前秦皇帝，倾国南侵，淝水败后北方崩解"},
+    {"id": "furong", "name": "苻融", "party": "前秦", "note": "苻坚弟，前锋都督，屯寿阳，淝水阵中马倒被杀"},
+    {"id": "xie_an", "name": "谢安", "party": "东晋", "note": "东晋宰相，镇之以静，总揽抗秦决策"},
+    {"id": "xie_shi", "name": "谢石", "party": "东晋", "note": "征讨大都督，统全军拒秦"},
+    {"id": "xie_xuan", "name": "谢玄", "party": "东晋", "note": "前锋都督，北府兵主帅，淝水实战指挥"},
+    {"id": "liu_laozhi", "name": "刘牢之", "party": "东晋", "note": "北府骁将，洛涧夜袭破梁成"},
+    {"id": "zhu_xu", "name": "朱序", "party": "东晋", "note": "原襄阳守将、降秦为内应，阵后呼『秦军败矣』乱秦军"},
+    {"id": "huan_chong", "name": "桓冲", "party": "东晋", "note": "荆州刺史，上游策应、牵制秦军西翼"}
+  ]
+}

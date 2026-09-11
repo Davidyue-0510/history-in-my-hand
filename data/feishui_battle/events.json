@@ -1,0 +1,11 @@
+{
+  "events": [
+    {"id": "ev_dongjin_juece", "subject": "event:dongjin_juece", "year": 383, "era": "太元八年（383）", "title": "东晋决策抗秦", "kind": "政治·决策", "text": "前秦大举南侵，东晋以谢安为统帅镇之以静，诏谢石为征讨大都督、谢玄为前锋都督，率北府兵北上拒敌。"},
+    {"id": "ev_qin_nanqin", "subject": "event:qin_nanqin", "year": 383, "era": "太元八年（383）", "title": "前秦南侵", "kind": "战事·入侵", "text": "苻坚自长安发兵，号称步骑六十余万、水陆并进，分三路南下，志在灭晋一统。"},
+    {"id": "ev_luojian", "subject": "event:luojian", "year": 383, "era": "太元八年（383）", "title": "洛涧之战", "kind": "战事·前哨战", "text": "刘牢之率北府精兵夜袭洛涧，破前秦梁成军、斩梁成，晋军士气大振，水陆俱进逼淝水。"},
+    {"id": "ev_feishui_duizhi", "subject": "event:feishui_duizhi", "year": 383, "era": "太元八年（383）", "title": "淝水对峙", "kind": "战事·对峙", "text": "两军夹淝水而阵，谢玄遣使请秦军略向后移以便晋军渡水决战；苻坚欲半渡而击，许之。"},
+    {"id": "ev_feishui_zhanyi", "subject": "event:feishui_zhanyi", "year": 383, "era": "太元八年（383）", "title": "淝水决战·秦军大溃", "kind": "战事·决战", "text": "秦军后撤阵脚自乱，晋军乘势渡水奋击；朱序于阵后大呼『秦军败矣』，秦兵惊溃奔逃，风声鹤唳、草木皆兵，苻融马倒被杀，秦军崩溃。"},
+    {"id": "ev_fujian_beifan", "subject": "event:fujian_beifan", "year": 383, "era": "太元八年（383）", "title": "苻坚北返", "kind": "战事·败退", "text": "苻坚中流矢，单骑北还长安，前秦元气大伤，北方旋即分崩离析。"},
+    {"id": "ev_dongjin_huishou", "subject": "event:dongjin_huishou", "year": 384, "era": "太元九年（384）", "title": "东晋收复中原", "kind": "战事·收复", "text": "谢玄乘胜北伐，收复河南、山东及淮北诸郡，进军至河北，晋室疆域北扩至黄河南岸。"}
+  ]
+}

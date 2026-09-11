@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "changan", "to": "shouyang", "type": "military", "label": "长安—寿阳（前秦南侵主线）"},
+    {"from": "shouyang", "to": "feishui", "type": "river", "label": "寿阳—淝水（夹水而阵）"},
+    {"from": "feishui", "to": "bagongshan", "type": "military", "label": "淝水北岸—八公山（秦军阵地）"},
+    {"from": "luojian", "to": "feishui", "type": "military", "label": "洛涧—淝水（晋军进逼）"},
+    {"from": "jiankang", "to": "hefei", "type": "military", "label": "建康—合肥（东晋调兵北上）"},
+    {"from": "hefei", "to": "luojian", "type": "military", "label": "合肥—洛涧（北府兵进逼）"},
+    {"from": "huai_river", "to": "feishui", "type": "river", "label": "淮河—淝水（淮—淝水系）"},
+    {"from": "shouyang", "to": "huai_river", "type": "river", "label": "寿阳临淮"},
+    {"from": "jiankang", "to": "shouyang", "type": "military", "label": "建康—寿阳（晋廷遥制前敌）"},
+    {"from": "changan", "to": "jiankang", "type": "military", "label": "长安—建康（秦灭晋之战略目标）"}
+  ]
+}

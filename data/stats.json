@@ -1,9 +1,9 @@
 {
-  "scenes_total": 479,
-  "historical": 470,
+  "scenes_total": 480,
+  "historical": 471,
   "fictional": 9,
-  "assertions_total": 7145,
-  "sources_total": 491,
+  "assertions_total": 7162,
+  "sources_total": 492,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -50,6 +50,7 @@
     "dujiangyan",
     "dujiangyan_llm",
     "dunhuang",
+    "feishui_battle",
     "feishui_llm",
     "fenghuang",
     "foguo_chan_llm",
@@ -344,7 +345,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 683,
+  "leads_total": 685,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3749,6 +3750,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "feishui_battle",
+      "title": "淝水之战·风声鹤唳",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4230,6 +4238,7 @@
     "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
     "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）",
     "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）",
-    "chibi_battle": "赤壁之战·火烧乌林"
+    "chibi_battle": "赤壁之战·火烧乌林",
+    "feishui_battle": "淝水之战·风声鹤唳"
   }
 }
