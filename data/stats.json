@@ -1,9 +1,9 @@
 {
-  "scenes_total": 478,
-  "historical": 469,
+  "scenes_total": 479,
+  "historical": 470,
   "fictional": 9,
-  "assertions_total": 7128,
-  "sources_total": 489,
+  "assertions_total": 7145,
+  "sources_total": 491,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -29,6 +29,7 @@
     "changsha_yao_llm",
     "chaozhou",
     "chengde",
+    "chibi_battle",
     "chibi_llm",
     "chongqing",
     "chongqing_capital_llm",
@@ -343,7 +344,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 681,
+  "leads_total": 683,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3741,6 +3742,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "chibi_battle",
+      "title": "赤壁之战·火烧乌林",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4221,6 +4229,7 @@
     "yazhou": "崖州（贬谪文脉·黎峒·琼崖）",
     "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
     "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）",
-    "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）"
+    "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）",
+    "chibi_battle": "赤壁之战·火烧乌林"
   }
 }

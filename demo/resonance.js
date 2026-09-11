@@ -50,6 +50,7 @@ window.SANDBOX_RESONANCE = {
    "chenqiao",
    "chensheng",
    "chibi",
+   "chibi_battle",
    "chibi_llm",
    "chongqing",
    "chongqing_capital_llm",
@@ -1234,6 +1235,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:cb_cao",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chibi_battle",
+   "name": "chibi_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 9,
+   "avg_resonance": 0.0,
+   "best_event": "event:caocao_beiche",
    "best_resonance": 0.0
   },
   {

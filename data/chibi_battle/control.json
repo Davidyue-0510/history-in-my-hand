@@ -1,0 +1,24 @@
+{
+  "_comment": "赤壁控制层（208—209）。曹操取荆州后北军控江陵—乌林一线；火攻后孙刘据长江南岸与上游（夏口/樊口/柴桑），曹仁守江陵至 209 失守。荆州军（刘琮）于降曹前短暂存在。v0.244 由 places 推导 control_seats、由 _years 推导 control_years。",
+  "_years": [208, 209],
+  "control": [
+    {"place_id": "xiangyang", "party": "荆州军", "start": 208, "end": 208, "basis": "刘琮继位据襄阳，建安十三年降曹前", "note": "荆州牧治所"},
+    {"place_id": "xiangyang", "party": "曹军", "start": 208, "end": null, "basis": "刘琮举州降，曹操领襄阳", "note": "降后归曹"},
+    {"place_id": "jiangling", "party": "荆州军", "start": 208, "end": 208, "basis": "刘琮降前江陵属荆州军", "note": ""},
+    {"place_id": "jiangling", "party": "曹军", "start": 208, "end": 209, "basis": "曹操取江陵为水军基地，曹仁守城", "note": "曹军水军枢纽"},
+    {"place_id": "jiangling", "party": "孙刘联军", "start": 209, "end": null, "basis": "周瑜攻取南郡，曹仁委城走", "note": "209 后归孙刘"},
+    {"place_id": "chibi", "party": "曹军", "start": 208, "end": 208, "basis": "赤壁初战曹军前哨南岸", "note": ""},
+    {"place_id": "chibi", "party": "孙刘联军", "start": 208, "end": null, "basis": "火攻后孙刘控南岸赤壁", "note": ""},
+    {"place_id": "wulin", "party": "曹军", "start": 208, "end": 208, "basis": "乌林北岸曹军水寨", "note": "火攻主目标"},
+    {"place_id": "wulin", "party": "孙刘联军", "start": 208, "end": null, "basis": "火攻后孙刘占乌林对岸", "note": ""},
+    {"place_id": "jiangxia", "party": "荆州军", "start": 208, "end": 208, "basis": "刘琦守江夏，降前属荆州军", "note": ""},
+    {"place_id": "jiangxia", "party": "孙刘联军", "start": 208, "end": null, "basis": "刘备/刘琦联孙，江夏归孙刘", "note": ""},
+    {"place_id": "xiakou", "party": "孙刘联军", "start": 208, "end": null, "basis": "刘备驻夏口，联孙抗曹", "note": ""},
+    {"place_id": "fankou", "party": "孙刘联军", "start": 208, "end": null, "basis": "刘备败走樊口与周瑜会合", "note": ""},
+    {"place_id": "chaisang", "party": "孙刘联军", "start": 208, "end": null, "basis": "孙权治所，联盟决策地", "note": ""},
+    {"place_id": "huarong", "party": "曹军", "start": 208, "end": 208, "basis": "曹操北撤经华容道", "note": ""},
+    {"place_id": "huarong", "party": "孙刘联军", "start": 208, "end": null, "basis": "北撤后华容道归孙刘", "note": ""},
+    {"place_id": "yangtze_river", "party": "曹军", "start": 208, "end": 208, "basis": "曹军顺流东下水道", "note": "长江航道"},
+    {"place_id": "yangtze_river", "party": "孙刘联军", "start": 208, "end": null, "basis": "战后孙刘据上游水道", "note": ""}
+  ]
+}

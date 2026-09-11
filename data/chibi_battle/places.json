@@ -1,0 +1,14 @@
+{
+  "places": [
+    {"id": "chibi", "name": "赤壁", "lat": 29.75, "lon": 113.85, "type": "city", "note": "赤壁山（今湖北赤壁市/蒲圻西北），赤壁之战孙刘联军南岸战场", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "wulin", "name": "乌林", "lat": 29.85, "lon": 113.65, "type": "city", "note": "长江北岸，与赤壁隔江对垒，曹军水寨与火攻主目标", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "jiangxia", "name": "江夏/武昌", "lat": 30.5, "lon": 114.3, "type": "city", "note": "刘琦守江夏，孙刘联军上游据点", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xiakou", "name": "夏口/汉口", "lat": 30.6, "lon": 114.3, "type": "city", "note": "刘备败走后驻屯处，联孙抗曹前沿", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "fankou", "name": "樊口/鄂州", "lat": 30.4, "lon": 114.9, "type": "city", "note": "刘备败走与周瑜会合处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "huarong", "name": "华容道", "lat": 29.5, "lon": 112.6, "type": "region", "note": "曹操北撤陆路通道（华容道）", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "jiangling", "name": "江陵/荆州", "lat": 30.35, "lon": 112.2, "type": "city", "note": "曹军水军基地，曹仁守城，战后周瑜取南郡", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xiangyang", "name": "襄阳", "lat": 32.05, "lon": 112.15, "type": "city", "note": "刘琮降曹处，曹操南下起点", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "chaisang", "name": "柴桑/九江", "lat": 29.7, "lon": 115.9, "type": "city", "note": "孙权治所，孙刘联盟决策地", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yangtze_river", "name": "长江航道", "lat": 30.0, "lon": 114.0, "type": "river", "note": "长江航道（江陵—赤壁—夏口段），战役主轴", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+  ]
+}

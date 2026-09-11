@@ -1,0 +1,13 @@
+{
+  "events": [
+    {"id": "ev_liucong_jiangcao", "subject": "event:liucong_jiangcao", "year": 208, "era": "建安十三年（208）", "title": "刘琮降曹", "kind": "政治·投降", "text": "刘琮继位荆州牧，惧曹操南下，举荆州降；刘备失据南走江陵。"},
+    {"id": "ev_liubei_nanche", "subject": "event:liubei_nanche", "year": 208, "era": "建安十三年（208）", "title": "刘备南撤", "kind": "战事·南撤", "text": "刘备自樊城南奔江陵，于当阳长坂为曹军轻骑追破，斜趋汉津会关羽水军。"},
+    {"id": "ev_caocao_xia_jingzhou", "subject": "event:caocao_xia_jingzhou", "year": 208, "era": "建安十三年（208）", "title": "曹操下荆州", "kind": "战事·占领", "text": "曹操至襄阳受降，取江陵，得荆州水军，顺流东下，声势极盛。"},
+    {"id": "ev_sunliu_lianmeng", "subject": "event:sunliu_lianmeng", "year": 208, "era": "建安十三年（208）", "title": "孙刘联盟", "kind": "政治·结盟", "text": "诸葛亮说孙权，鲁肃赞之，周瑜请兵，孙刘结盟拒曹。"},
+    {"id": "ev_chibi_chuzhan", "subject": "event:chibi_chuzhan", "year": 208, "era": "建安十三年（208）", "title": "赤壁初战", "kind": "战事·初战", "text": "赤壁初交战，曹军值大疫，失利，引次江北乌林。"},
+    {"id": "ev_huoshao_wulin", "subject": "event:huoshao_wulin", "year": 208, "era": "建安十三年（208）", "title": "火烧乌林", "kind": "战事·火攻决战", "text": "黄盖诈降，乘东南风纵火，焚曹军连环舰于乌林，延及岸营，曹军大溃。"},
+    {"id": "ev_caocao_beiche", "subject": "event:caocao_beiche", "year": 208, "era": "建安十三年（208）", "title": "曹操北撤", "kind": "战事·北撤", "text": "曹操烧剩余船舰，引军北还，留曹仁、满宠屯江陵。"},
+    {"id": "ev_caoren_shou_jiangling", "subject": "event:caoren_shou_jiangling", "year": 208, "era": "建安十三年—十四年（208—209）", "title": "曹仁守江陵", "kind": "战事·驻守", "text": "曹仁据江陵城拒周瑜，相持岁余。"},
+    {"id": "ev_zhouyu_gong_jiangling", "subject": "event:zhouyu_gong_jiangling", "year": 209, "era": "建安十四年（209）", "title": "周瑜攻江陵", "kind": "战事·攻城", "text": "周瑜攻江陵岁余，曹仁委城走，孙权得南郡。"}
+  ]
+}

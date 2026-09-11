@@ -1,0 +1,15 @@
+{
+  "persons": [
+    {"id": "cao_cao", "name": "曹操", "party": "曹军", "note": "丞相/魏王，南征荆州主帅"},
+    {"id": "liu_bei", "name": "刘备", "party": "孙刘联军", "note": "左将军，联孙抗曹，败走夏口"},
+    {"id": "sun_quan", "name": "孙权", "party": "孙刘联军", "note": "吴侯，决意联刘拒曹"},
+    {"id": "zhou_yu", "name": "周瑜", "party": "孙刘联军", "note": "前部大都督，火攻指挥"},
+    {"id": "zhuge_liang", "name": "诸葛亮", "party": "孙刘联军", "note": "刘备军师，使柴桑说孙权"},
+    {"id": "lu_su", "name": "鲁肃", "party": "孙刘联军", "note": "孙权谋主，力主联刘"},
+    {"id": "huang_gai", "name": "黄盖", "party": "孙刘联军", "note": "献诈降火攻之策，操轻舟纵火"},
+    {"id": "guan_yu", "name": "关羽", "party": "孙刘联军", "note": "刘备部将，汉津会合水军"},
+    {"id": "zhang_fei", "name": "张飞", "party": "孙刘联军", "note": "刘备部将，长坂断后"},
+    {"id": "cheng_yu", "name": "程昱", "party": "曹军", "note": "曹操谋臣，谏勿纵敌"},
+    {"id": "jia_xu", "name": "贾诩", "party": "曹军", "note": "曹操谋臣，劝抚荆州"}
+  ]
+}

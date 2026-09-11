@@ -1,0 +1,16 @@
+{
+  "edges": [
+    {"from": "xiangyang", "to": "jiangling", "type": "military", "label": "襄阳—江陵（曹军南下取荆州）"},
+    {"from": "jiangling", "to": "chibi", "type": "military", "label": "江陵—赤壁（曹军顺流东下）"},
+    {"from": "chibi", "to": "wulin", "type": "river", "label": "赤壁—乌林（隔江对战）"},
+    {"from": "chibi", "to": "xiakou", "type": "military", "label": "赤壁—夏口（孙刘联军上游据点）"},
+    {"from": "xiakou", "to": "fankou", "type": "military", "label": "夏口—樊口（刘备周瑜会合）"},
+    {"from": "fankou", "to": "chaisang", "type": "military", "label": "樊口—柴桑（孙权决策）"},
+    {"from": "chaisang", "to": "xiakou", "type": "military", "label": "柴桑—夏口（周瑜西上）"},
+    {"from": "wulin", "to": "huarong", "type": "military", "label": "乌林—华容道（曹军北撤）"},
+    {"from": "jiangling", "to": "huarong", "type": "military", "label": "江陵—华容（曹军退路）"},
+    {"from": "jiangling", "to": "yangtze_river", "type": "river", "label": "江陵控长江水道"},
+    {"from": "chibi", "to": "yangtze_river", "type": "river", "label": "赤壁临长江"},
+    {"from": "wulin", "to": "yangtze_river", "type": "river", "label": "乌林临长江"}
+  ]
+}

@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 478 个切片
+// 权威数据源：data/scenes.json 注册的 479 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 478 个切片",
+  "slice": "multi-scene · 479 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -33,6 +33,7 @@ window.SANDBOX_DATA = {
    "changsha_yao_llm",
    "chaozhou",
    "chengde",
+   "chibi_battle",
    "chibi_llm",
    "chongqing",
    "chongqing_capital_llm",
@@ -527,6 +528,11 @@ window.SANDBOX_DATA = {
    "id": "hunan",
    "name": "湖南",
    "note": "汉长沙国—马王堆与湖湘地域"
+  },
+  {
+   "id": "jingzhou",
+   "name": "荆州（赤壁）",
+   "note": "长江中游—江汉平原，赤壁—乌林古战场，建安十三年（208）孙刘火攻破曹之域。"
   }
  ],
  "dimensions": {
@@ -1075,7 +1081,8 @@ window.SANDBOX_DATA = {
   "yazhou",
   "guisui",
   "shanghai",
-  "chongqing"
+  "chongqing",
+  "chibi_battle"
  ],
  "vocab": {
   "layers": [
@@ -27565,6 +27572,25 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational"
+  },
+  "chibi_battle": {
+   "title": "赤壁之战·火烧乌林",
+   "dossier_label": "赤壁之战",
+   "subtitle": "建安十三年（208）· 曹军 vs 孙刘联军",
+   "kind": "county",
+   "region": "jingzhou",
+   "page": "county.html?scene=chibi_battle",
+   "vocab_pack": "chibi_battle",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "three_kingdoms",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28045,7 +28071,8 @@ window.SANDBOX_DATA = {
   "yazhou": "slices/yazhou.js",
   "guisui": "slices/guisui.js",
   "shanghai": "slices/shanghai.js",
-  "chongqing": "slices/chongqing.js"
+  "chongqing": "slices/chongqing.js",
+  "chibi_battle": "slices/chibi_battle.js"
  },
  "corridors": [
   {
