@@ -864,7 +864,7 @@
       n.className = 'rt' + (i === state.t ? ' on' : ' off');
       n.innerHTML = '<div class="rt-box">' + (i === state.t ? '●' : '') + '</div>' +
         '<span class="rt-name">' + ev.era + ' · ' + ev.title + '</span>';
-      n.addEventListener('click', function () { state.t = i; refresh(); goTab('yan'); });
+      n.addEventListener('click', function () { state.t = i; syncCtrlToMain(); refresh(); goTab('yan'); });
       box.appendChild(n);
     });
   }
@@ -889,6 +889,7 @@
         '<div class="ev-text">' + (ev.text || ev.summary || '') + '</div></div>';
       n.addEventListener('click', function () {
         state.t = i;
+        syncCtrlToMain();
         refresh();
         goTab('yan');
       });
@@ -1853,6 +1854,26 @@
     updateCtrlTimeline();
   }
 
+  // v0.244：实控区跟随主战役时间轴——选中左侧事件（state.t）时把控制年同步为该事件年份，
+  // 实控区随之变色；手动拖动底部 #ctrlSlider 仍独立有效（不被 refresh 覆盖）。
+  function syncCtrlToMain() {
+    if (impactMode) return;
+    if (!state.ctrlOn || !window.ControlLayer || !ControlLayer.isReady()) return;
+    var ev = (D.events && D.events[state.t]) || null;
+    if (!ev) return;
+    var y = (typeof ev.year === 'number') ? ev.year : null;
+    if (y == null) return;
+    var ys = ControlLayer.years();
+    if (y < ys[0]) y = ys[0];
+    if (y > ys[1]) y = ys[1];
+    ctrlYear = y;
+    var sl = document.getElementById('ctrlSlider');
+    if (sl) sl.value = y;
+    var yl = document.getElementById('ctrlYear');
+    if (yl) yl.textContent = y + ' 年';
+    drawControl();
+  }
+
   // 控制面板底部的界线来源说明（诚实标注几何纪年）
   function setBorderNote(txt) {
     var el2 = document.getElementById('borderNote');
@@ -1870,7 +1891,7 @@
     if (IS_ABSTRACT || !window.ControlLayer) return;
     var VOCAB = (D && D.vocab) || (SD && SD.vocab) || {};
     function doSetup(cd) {
-      ctrlYear = cd.years[0];
+      ctrlYear = (cd.years && cd.years[0]) || null;
       ctrlEvents = cd.events || [];
       ControlLayer.setup({
         cv: controlCv, px: px, py: py,
@@ -1878,13 +1899,22 @@
         getCw: function () { return cw; },
         getDpr: function () { return window.devicePixelRatio || 1; },
         partyColors: VOCAB.party_colors || {},
-        sceneData: { control: cd.control, control_seats: cd.seats, control_years: cd.years }
+        // v0.244：seats/years 为 null 时交由 ControlLayer 从 places/control 条目运行时派生，
+        // 使非辽东切片（唐淮西等）也能渲染「随时间变动的实控区」，无需逐文件补 seats。
+        sceneData: {
+          control: cd.control,
+          control_seats: cd.seats,
+          control_years: cd.years,
+          places: D.places || [],
+          events: D.events || []
+        }
       });
-      // v0.232 O4：海岸线掩膜优先用场景自带 land 陆地多边形（已在壳/切片内，file:// 离线可用、零额外体积），
-      // 不再强依赖 2MB CHGIS geojson fetch（file:// 下静默失败→实控 Voronoi 溢出海岸）。
-      // 在线时若用户勾选「真实政区界线」(BorderLayer 就绪) 仍可用 CHGIS 政区精修掩膜。
-      var landFeats = (BM.land && BM.land.length) ? BM.land
-        : ((SD.basemap && SD.basemap.land && SD.basemap.land.length) ? SD.basemap.land : null);
+      // v0.244：实控区海岸线掩膜改用全国统一 CHGIS 陆地多边形（SD.basemap.land，已在壳内、
+      // file:// 离线可用）。此前优先用 BM.land（场景自带/区域网格 land）时，区域网格对非辽东
+      // 切片（如唐淮西）可能不包含该地陆域，导致实控 Voronoi 被整屏裁成「海」而不显示。
+      // 全国统一海岸线能覆盖全部境内切片；BM.land 作为兜底用于特殊区域切片。
+      var landFeats = (SD.basemap && SD.basemap.land && SD.basemap.land.length) ? SD.basemap.land
+        : ((BM.land && BM.land.length) ? BM.land : null);
       if (landFeats) ControlLayer.setCoast(landFeats.map(function (f) { return { geom: f.g }; }));
       else if (window.BorderLayer && BorderLayer.isReady()) ControlLayer.setCoast(BorderLayer.features());
       else ControlLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
@@ -1894,9 +1924,19 @@
     // 否则辽东剧场直接用 SD 全局控制数据（build.py 从 control_liaodong.json 注入，
     // 无需 fetch——file:// 打开也能跑）。
     if (D.control && D.control.length) {
-      doSetup({ control: D.control, seats: D.control_seats || [], years: D.control_years || [1616, 1644], events: D.control_events || [] });
+      doSetup({
+        control: D.control,
+        seats: (D.control_seats && D.control_seats.length) ? D.control_seats : null,
+        years: (D.control_years && D.control_years.length) ? D.control_years : null,
+        events: D.control_events || []
+      });
     } else if (isLiaodongTheatre() && SD.control && SD.control.length) {
-      doSetup({ control: SD.control, seats: SD.control_seats || [], years: SD.control_years || [1616, 1644], events: SD.control_events || [] });
+      doSetup({
+        control: SD.control,
+        seats: (SD.control_seats && SD.control_seats.length) ? SD.control_seats : null,
+        years: (SD.control_years && SD.control_years.length) ? SD.control_years : null,
+        events: SD.control_events || []
+      });
     }
   }
 
@@ -2087,6 +2127,7 @@
       ctrlBox.disabled = !((impactMode ? window.ImpactLayer : window.ControlLayer) && (impactMode ? ImpactLayer.isReady() : ControlLayer.isReady()));
       ctrlBox.addEventListener('change', function () {
         if (impactMode) state.impactOn = ctrlBox.checked; else state.ctrlOn = ctrlBox.checked;
+        if (!impactMode) syncCtrlToMain();
         drawControl();
       });
     }

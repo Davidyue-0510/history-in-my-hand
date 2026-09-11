@@ -896,7 +896,7 @@
       node.innerHTML = '<div class="tl-dot"></div>' +
         '<div class="tl-cap">' + t.era.replace('万历四十七年', '') + '</div>';
       node.title = t.label;
-      node.addEventListener('click', function () { stop(); state.t = i; routeLen = {}; refresh(); });
+      node.addEventListener('click', function () { stop(); state.t = i; routeLen = {}; syncControlYear(); refresh(); });
       track.appendChild(node);
     });
     var cur = D.timeline[state.t];
@@ -914,10 +914,10 @@
     if (state.playing) { stop(); return; }
     state.playing = true;
     this.textContent = '❚❚';
-    if (state.t >= D.timeline.length - 1) { state.t = 0; routeLen = {}; refresh(); }
+    if (state.t >= D.timeline.length - 1) { state.t = 0; routeLen = {}; syncControlYear(); refresh(); }
     state.timer = setInterval(function () {
       if (state.t >= D.timeline.length - 1) { stop(); return; }
-      state.t++; refresh();
+      state.t++; syncControlYear(); refresh();
     }, 1400);
   });
 
@@ -1520,8 +1520,8 @@
       openDrawer(null);
     }
     if (e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
-    if (e.key === 'ArrowRight' && state.t < D.timeline.length - 1) { stop(); state.t++; refresh(); }
-    if (e.key === 'ArrowLeft' && state.t > 0) { stop(); state.t--; routeLen = {}; refresh(); }
+    if (e.key === 'ArrowRight' && state.t < D.timeline.length - 1) { stop(); state.t++; syncControlYear(); refresh(); }
+    if (e.key === 'ArrowLeft' && state.t > 0) { stop(); state.t--; routeLen = {}; syncControlYear(); refresh(); }
     if (e.key === '+' || e.key === '=') { view.w /= 1.45; applyView(); }
     if (e.key === '-' || e.key === '_') { view.w *= 1.45; applyView(); }
     if (e.key === '0') { fitView(); applyView(); }
@@ -1588,6 +1588,21 @@
       if (lg) lg.innerHTML = '';
     }
   }
+  // v0.244：实控区跟随主战役时间轴——主时间轴推进时把控制年同步为当前节点的年份，
+  // 实控区随之变色；手动拖动 #ctrlYear 滑块仍独立有效。
+  function syncControlYear() {
+    if (!state.control.on || !window.ControlLayer || !ControlLayer.isReady()) return;
+    var at = (D.timeline && D.timeline[state.t] && D.timeline[state.t].at);
+    var y = (typeof at === 'number') ? at : (typeof at === 'string' ? parseInt(at.split('-')[0], 10) : NaN);
+    if (isNaN(y)) return;
+    state.control.year = y;
+    var yr = document.getElementById('ctrlYear');
+    if (yr) yr.value = y;
+    var yl = document.getElementById('ctrlYearLabel');
+    if (yl) yl.textContent = y;
+    drawControl();
+  }
+
   function renderControlLegend() {
     var lg = document.getElementById('ctrlLegend');
     if (!lg) return;

@@ -72,6 +72,49 @@
 
   var curYear = null, curScope = null, dirty = true;
 
+  // v0.244：运行时从场景 places 派生 seats——解决 control.json 未列 seats 的切片
+  // （如唐淮西 seats:[]，但其 control 引用的 place_id 全在 places.json 中）。
+  // 这样「随时间变动的实控区」机制可零文件编辑铺满全部带 control 的切片。
+  function deriveSeatsFromPlaces() {
+    if (!ctrlData.length) return [];
+    var places = (cfg.sceneData && cfg.sceneData.places) || [];
+    var pm = {};
+    places.forEach(function (p) { pm[p.id] = p; });
+    var out = [], seen = {};
+    ctrlData.forEach(function (c) {
+      if (seen[c.place_id]) return;
+      var p = pm[c.place_id];
+      if (p && typeof p.lon === 'number' && typeof p.lat === 'number') {
+        seen[c.place_id] = 1;
+        out.push({ place_id: c.place_id, name: p.name || c.place_id, lon: p.lon, lat: p.lat });
+      }
+    });
+    return out;
+  }
+  // v0.244：运行时推导控制年范围——优先 control 条目的 start/end；
+  // 否则场景 timeline/events 的 at/year；再否则辽东默认 [1616,1644]。
+  // 不再硬编码辽东纪年，使非辽东切片（唐/三国/楚汉…）的滑块范围正确。
+  function deriveYears() {
+    var lo = Infinity, hi = -Infinity;
+    ctrlData.forEach(function (c) {
+      if (typeof c.start === 'number') lo = Math.min(lo, c.start);
+      if (c.end != null && typeof c.end === 'number') hi = Math.max(hi, c.end);
+      else if (typeof c.start === 'number') hi = Math.max(hi, c.start);
+    });
+    if (lo === Infinity || hi === -Infinity) {
+      var tl = (cfg.sceneData && (cfg.sceneData.timeline || cfg.sceneData.events)) || [];
+      tl.forEach(function (t) {
+        var y = (typeof t.at === 'number') ? t.at
+              : (typeof t.at === 'string') ? parseInt(t.at.split('-')[0], 10)
+              : (typeof t.year === 'number') ? t.year : NaN;
+        if (!isNaN(y)) { lo = Math.min(lo, y); hi = Math.max(hi, y); }
+      });
+    }
+    if (lo === Infinity || hi === -Infinity) return [1616, 1644];
+    if (lo > hi) hi = lo;
+    return [lo, hi];
+  }
+
   function setup(o) {
     SD = window.SANDBOX_DATA;
     cfg = o || {};
@@ -80,8 +123,9 @@
     var hasScene = !!(D && Array.isArray(D.control) && D.control.length);
     ctrlData = hasScene ? D.control : ((SD && SD.control) || []);
     var cs = hasScene ? (D.control_seats || []) : ((SD && SD.control_seats) || []);
-    curYears = (hasScene && D.control_years) ? D.control_years
-             : ((SD && SD.control_years) || [1616, 1644]);
+    var haveYears = hasScene && D.control_years && D.control_years.length;
+    curYears = haveYears ? D.control_years : deriveYears();
+    if (!cs.length && hasScene && ctrlData.length) cs = deriveSeatsFromPlaces();
     if (!cs.length || !ctrlData.length) { ready = false; return; }
     initGrid(cs);
     ready = true; dirty = true;
