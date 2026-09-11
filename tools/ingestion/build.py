@@ -605,8 +605,9 @@ def _slice_meta(bundle):
         "region": m.get("region"),
         "page": m.get("page"),
         "vocab_pack": m.get("vocab_pack"),
-        "terrain_grid": m.get("terrain_grid"),
-        "terrain_off_grid": m.get("terrain_off_grid", False),
+        # v0.233 分片瘦身：terrain_grid / terrain_off_grid 在 scenes_meta 中纯死重 ——
+        # 前端零读取（terrain_grid 仅 county.js 从切片 bundle.meta 取；terrain_off_grid 全库恒 false）。
+        # 删之二节省 ~22KB，壳体积回落至 ~465KB，恢复 <500KB 契约余量。
         "dims": m.get("dims"),
         "epoch": m.get("epoch"),
         "scale_tier": m.get("scale_tier"),

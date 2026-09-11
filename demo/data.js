@@ -19104,8 +19104,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "county.html?scene=han_wudi_ruxue",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -19124,8 +19122,6 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "sarhu.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19144,8 +19140,6 @@ window.SANDBOX_DATA = {
    "region": "liaobei",
    "page": "county.html?scene=kaiyuan",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19165,8 +19159,6 @@ window.SANDBOX_DATA = {
    "region": "liaobei",
    "page": "county.html?scene=tieling",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19186,8 +19178,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=yehe",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -19206,8 +19196,6 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "county.html?scene=liaoyang",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19227,8 +19215,6 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "county.html?scene=shenyang",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19247,8 +19233,6 @@ window.SANDBOX_DATA = {
    "region": "liaodong",
    "page": "county.html?scene=fushun",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19268,8 +19252,6 @@ window.SANDBOX_DATA = {
    "region": "liaonan",
    "page": "county.html?scene=haizhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -19287,8 +19269,6 @@ window.SANDBOX_DATA = {
    "region": "liaonan",
    "page": "county.html?scene=gaizhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19308,8 +19288,6 @@ window.SANDBOX_DATA = {
    "region": "liaonan",
    "page": "county.html?scene=fuzhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -19327,8 +19305,6 @@ window.SANDBOX_DATA = {
    "region": "liaonan",
    "page": "county.html?scene=jinzhouwei",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -19346,8 +19322,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=guangning",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19367,8 +19341,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=jinzhou",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19387,8 +19359,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=ningyuan",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19407,8 +19377,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=songjin",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19428,8 +19396,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=dalinghe",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19449,8 +19415,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "county.html?scene=juehua",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19468,8 +19432,6 @@ window.SANDBOX_DATA = {
    "region": "liaoxi",
    "page": "juehua1626.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19488,8 +19450,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "bozhou.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19509,8 +19469,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "ningxia.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19529,8 +19487,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "yangzhou.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19548,8 +19504,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao",
    "vocab_pack": "inline:novel_fandao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -19566,8 +19520,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_2",
    "vocab_pack": "inline:novel_fandao_2",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -19586,8 +19538,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_3",
    "vocab_pack": "inline:novel_fandao_3",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -19605,8 +19555,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_4",
    "vocab_pack": "inline:novel_fandao_4",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -19623,8 +19571,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_5",
    "vocab_pack": "inline:novel_fandao_5",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -19641,8 +19587,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_6",
    "vocab_pack": "inline:novel_fandao_6",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -19660,8 +19604,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_7",
    "vocab_pack": "inline:novel_fandao_7",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -19679,8 +19621,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_8",
    "vocab_pack": "inline:novel_fandao_8",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -19697,8 +19637,6 @@ window.SANDBOX_DATA = {
    "region": "fiction",
    "page": "county.html?scene=novel_fandao_9",
    "vocab_pack": "inline:novel_fandao_9",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -19715,8 +19653,6 @@ window.SANDBOX_DATA = {
    "region": "tang",
    "page": "county.html?scene=tang_huai_xi",
    "vocab_pack": "tang",
-   "terrain_grid": "tang",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19736,8 +19672,6 @@ window.SANDBOX_DATA = {
    "region": "imjin",
    "page": "county.html?scene=imjin",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "korea",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19757,8 +19691,6 @@ window.SANDBOX_DATA = {
    "region": "yellow_sea",
    "page": "county.html?scene=yellow_sea_1894",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "yellow_sea_1894",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19776,8 +19708,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=qin_mie_liu_guo",
    "vocab_pack": "inline:qin_mie_liu_guo",
-   "terrain_grid": "qin_mie_liu_guo",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19796,8 +19726,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=three_campaigns",
    "vocab_pack": "inline:three_campaigns",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19817,8 +19745,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "changping.html",
    "vocab_pack": "inline:changping",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19838,8 +19764,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "guiling.html",
    "vocab_pack": "inline:guiling",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19859,8 +19783,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "maling.html",
    "vocab_pack": "inline:maling",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19880,8 +19802,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "chengpu.html",
    "vocab_pack": "inline:chengpu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19901,8 +19821,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "boju.html",
    "vocab_pack": "inline:boju",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19922,8 +19840,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "julu.html",
    "vocab_pack": "inline:julu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19941,8 +19857,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "gaixia.html",
    "vocab_pack": "inline:gaixia",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19962,8 +19876,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "mobai.html",
    "vocab_pack": "inline:mobai",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -19982,8 +19894,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "kunyang.html",
    "vocab_pack": "inline:kunyang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20002,8 +19912,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "guandu.html",
    "vocab_pack": "inline:guandu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20023,8 +19931,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "chibi.html",
    "vocab_pack": "inline:chibi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20043,8 +19949,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "yiling.html",
    "vocab_pack": "inline:yiling",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20062,8 +19966,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "xiaoyaojin.html",
    "vocab_pack": "inline:xiaoyaojin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20082,8 +19984,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "feishui.html",
    "vocab_pack": "inline:feishui",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20103,8 +20003,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "canhebei.html",
    "vocab_pack": "inline:canhebei",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -20122,8 +20020,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "zhongli.html",
    "vocab_pack": "inline:zhongli",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20141,8 +20037,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "hulao.html",
    "vocab_pack": "inline:hulao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20162,8 +20056,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "talas.html",
    "vocab_pack": "inline:talas",
-   "terrain_grid": "liaodong",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20183,8 +20075,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "suiyang.html",
    "vocab_pack": "inline:suiyang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20203,8 +20093,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "yancheng.html",
    "vocab_pack": "inline:yancheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20223,8 +20111,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "heshangyuan.html",
    "vocab_pack": "inline:heshangyuan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20244,8 +20130,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "caishiji.html",
    "vocab_pack": "inline:caishiji",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20264,8 +20148,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "diaoyucheng.html",
    "vocab_pack": "inline:diaoyucheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20285,8 +20167,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "yaoshan.html",
    "vocab_pack": "inline:yaoshan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20305,8 +20185,6 @@ window.SANDBOX_DATA = {
    "region": "yuan_ming",
    "page": "poyanghu.html",
    "vocab_pack": "inline:poyanghu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20324,8 +20202,6 @@ window.SANDBOX_DATA = {
    "region": "yuan_ming",
    "page": "tumu.html",
    "vocab_pack": "inline:tumu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -20343,8 +20219,6 @@ window.SANDBOX_DATA = {
    "region": "yuan_ming",
    "page": "beijing.html",
    "vocab_pack": "inline:beijing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20364,8 +20238,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "yaksa.html",
    "vocab_pack": "inline:yaksa",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20383,8 +20255,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "tianjing.html",
    "vocab_pack": "inline:tianjing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20402,8 +20272,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "humen.html",
    "vocab_pack": "inline:humen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20422,8 +20290,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=huanghe",
    "vocab_pack": "inline:huanghe",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20441,8 +20307,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=locust",
    "vocab_pack": "inline:locust",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20462,8 +20326,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=huaxian",
    "vocab_pack": "inline:huaxian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20483,8 +20345,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=little_ice",
    "vocab_pack": "inline:little_ice",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20503,8 +20363,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=grand_canal",
    "vocab_pack": "inline:grand_canal",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20522,8 +20380,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=dujiangyan",
    "vocab_pack": "inline:dujiangyan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -20541,8 +20397,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=great_wall",
    "vocab_pack": "inline:great_wall",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20560,8 +20414,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=qin_unify",
    "vocab_pack": "inline:qin_unify",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20581,8 +20433,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=ming_fall",
    "vocab_pack": "inline:ming_fall",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -20600,8 +20450,6 @@ window.SANDBOX_DATA = {
    "region": "reform",
    "page": "county.html?scene=shangyang",
    "vocab_pack": "inline:shangyang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20620,8 +20468,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=huangjin",
    "vocab_pack": "inline:huangjin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -20639,8 +20485,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=lizicheng",
    "vocab_pack": "inline:lizicheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -20658,8 +20502,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=xiaowen",
    "vocab_pack": "inline:xiaowen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -20678,8 +20520,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=wencheng",
    "vocab_pack": "inline:wencheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20698,8 +20538,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=xuanwu",
    "vocab_pack": "inline:xuanwu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -20717,8 +20555,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=jingnan",
    "vocab_pack": "inline:jingnan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -20737,8 +20573,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=dunzun",
    "vocab_pack": "inline:dunzun",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -20756,8 +20590,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=keju",
    "vocab_pack": "inline:keju",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20777,8 +20609,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=four_inv",
    "vocab_pack": "inline:four_inv",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20797,8 +20627,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=bencao",
    "vocab_pack": "inline:bencao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20818,8 +20646,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=dong_han_yi",
    "vocab_pack": "inline:dong_han_yi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -20837,8 +20663,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=dingwu",
    "vocab_pack": "inline:dingwu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20857,8 +20681,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=song_he_jue",
    "vocab_pack": "inline:song_he_jue",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20877,8 +20699,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=zijincheng",
    "vocab_pack": "inline:zijincheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20897,8 +20717,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=lingqu",
    "vocab_pack": "inline:lingqu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20917,8 +20735,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=zhaozhou",
    "vocab_pack": "inline:zhaozhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20936,8 +20752,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=sui_daxing",
    "vocab_pack": "inline:sui_daxing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20956,8 +20770,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=mingmo_jihuang",
    "vocab_pack": "inline:mingmo_jihuang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20977,8 +20789,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=chongzhen_han",
    "vocab_pack": "inline:chongzhen_han",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -20998,8 +20808,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=chongzhen_huangzai",
    "vocab_pack": "inline:chongzhen_huangzai",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21019,8 +20827,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=mingmo_shuyi",
    "vocab_pack": "inline:mingmo_shuyi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21040,8 +20846,6 @@ window.SANDBOX_DATA = {
    "region": "ecology",
    "page": "county.html?scene=kaifeng_juekou",
    "vocab_pack": "inline:kaifeng_juekou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21061,8 +20865,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=wuwang",
    "vocab_pack": "inline:wuwang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21082,8 +20884,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=sui_mie_chen",
    "vocab_pack": "inline:sui_mie_chen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21101,8 +20901,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=chenqiao",
    "vocab_pack": "inline:chenqiao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21120,8 +20918,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=yashan",
    "vocab_pack": "inline:yashan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21140,8 +20936,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=xinhai",
    "vocab_pack": "inline:xinhai",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -21160,8 +20954,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=zhangjuzheng",
    "vocab_pack": "inline:zhangjuzheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21181,8 +20973,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=wuxu",
    "vocab_pack": "inline:wuxu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21200,8 +20990,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=wangmang",
    "vocab_pack": "inline:wangmang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21219,8 +21007,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=liangshui",
    "vocab_pack": "inline:liangshui",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21240,8 +21026,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "county.html?scene=jiupin",
    "vocab_pack": "inline:jiupin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21259,8 +21043,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=chensheng",
    "vocab_pack": "inline:chensheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21279,8 +21061,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=huangchao",
    "vocab_pack": "inline:huangchao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21299,8 +21079,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=taiping",
    "vocab_pack": "inline:taiping",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21320,8 +21098,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=hongjin",
    "vocab_pack": "inline:hongjin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -21339,8 +21115,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=lvlin",
    "vocab_pack": "inline:lvlin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21360,8 +21134,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=zhaowulian",
    "vocab_pack": "inline:zhaowulian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21381,8 +21153,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=zhaofen",
    "vocab_pack": "inline:zhaofen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -21401,8 +21171,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=qing_han",
    "vocab_pack": "inline:qing_han",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21421,8 +21189,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=yuan_duo",
    "vocab_pack": "inline:yuan_duo",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21440,8 +21206,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=chanyuan",
    "vocab_pack": "inline:chanyuan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21460,8 +21224,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=beijiu",
    "vocab_pack": "inline:beijiu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -21480,8 +21242,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=jiuzi",
    "vocab_pack": "inline:jiuzi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -21500,8 +21260,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=wugu",
    "vocab_pack": "inline:wugu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21519,8 +21277,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=shaqiu",
    "vocab_pack": "inline:shaqiu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21540,8 +21296,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=baijia",
    "vocab_pack": "inline:baijia",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21561,8 +21315,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=fenshu",
    "vocab_pack": "inline:fenshu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21581,8 +21333,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=fotao",
    "vocab_pack": "inline:fotao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21602,8 +21352,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=lixue",
    "vocab_pack": "inline:lixue",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -21621,8 +21369,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=zhangheng",
    "vocab_pack": "inline:zhangheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21642,8 +21388,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=zuchongzhi",
    "vocab_pack": "inline:zuchongzhi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21661,8 +21405,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=shenkuo",
    "vocab_pack": "inline:shenkuo",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21681,8 +21423,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=jiasixie",
    "vocab_pack": "inline:jiasixie",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21701,8 +21441,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=zhangqian",
    "vocab_pack": "inline:zhangqian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21721,8 +21459,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=zhenghe",
    "vocab_pack": "inline:zhenghe",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21740,8 +21476,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=xuanzang",
    "vocab_pack": "inline:xuanzang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21759,8 +21493,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=jianzhen",
    "vocab_pack": "inline:jianzhen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -21778,8 +21510,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=mingmo_dangzheng",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21798,8 +21528,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=tang_dangzheng",
    "vocab_pack": "inline:tang_dangzheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -21818,8 +21546,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=song_dangzheng",
    "vocab_pack": "inline:song_dangzheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21837,8 +21563,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=donghan_danggu",
    "vocab_pack": "inline:donghan_danggu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -21856,8 +21580,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "chu_han.html",
    "vocab_pack": "chu_han",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21877,8 +21599,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=song_chan_yuan",
    "vocab_pack": "song",
-   "terrain_grid": "qin_mie_liu_guo",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21898,8 +21618,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "guandu_llm.html",
    "vocab_pack": "guandu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21919,8 +21637,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "county.html?scene=san_guo",
    "vocab_pack": "san_guo",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21940,8 +21656,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "feishui_llm.html",
    "vocab_pack": "feishui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21961,8 +21675,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "changping_llm.html",
    "vocab_pack": "changping_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -21982,8 +21694,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "qin_mie_liu_guo_llm.html",
    "vocab_pack": "qin_mie_liu_guo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22003,8 +21713,6 @@ window.SANDBOX_DATA = {
    "region": "qin_han",
    "page": "chuhai_llm.html",
    "vocab_pack": "chuhai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22024,8 +21732,6 @@ window.SANDBOX_DATA = {
    "region": "nan_bei_chao",
    "page": "sui_mie_chen_llm.html",
    "vocab_pack": "sui_mie_chen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22045,8 +21751,6 @@ window.SANDBOX_DATA = {
    "region": "tang",
    "page": "sui_yang_llm.html",
    "vocab_pack": "sui_yang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22066,8 +21770,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "zheng_chenggong_taiwan_llm.html",
    "vocab_pack": "inline:zheng_chenggong_taiwan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22087,8 +21789,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xiyu_dunhu_llm",
    "vocab_pack": "inline:xiyu_dunhu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22108,8 +21808,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=hexi_sijun_llm",
    "vocab_pack": "inline:hexi_sijun_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22129,8 +21827,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=nanzhao_dali_llm",
    "vocab_pack": "inline:nanzhao_dali_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22150,8 +21846,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=huangdaopo_llm",
    "vocab_pack": "inline:huangdaopo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22171,8 +21865,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zhejiang_linan_llm",
    "vocab_pack": "inline:zhejiang_linan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22192,8 +21884,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_quanzhou_llm",
    "vocab_pack": "fujian_quanzhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22212,8 +21902,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "xianggang_songmo_llm.html",
    "vocab_pack": "inline:xianggang_songmo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22233,8 +21921,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=aomen_portugal_llm",
    "vocab_pack": "inline:aomen_portugal_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22254,8 +21940,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=qinghai_tuyuhun_llm",
    "vocab_pack": "qinghai_tuyuhun_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22273,8 +21957,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_yelang_llm",
    "vocab_pack": "guizhou_yelang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22293,8 +21975,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=hainan_zhuyai_llm",
    "vocab_pack": "inline:hainan_zhuyai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22314,8 +21994,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=hunan_changsha_llm",
    "vocab_pack": "inline:hunan_changsha_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22335,8 +22013,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_gaogouli_llm",
    "vocab_pack": "jilin_gaogouli_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22354,8 +22030,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=sui_canal_llm",
    "vocab_pack": "inline:sui_canal_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22374,8 +22048,6 @@ window.SANDBOX_DATA = {
    "region": "tang",
    "page": "county.html?scene=tang_anshi_llm",
    "vocab_pack": "inline:tang_anshi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -22393,8 +22065,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=han_banchao_llm",
    "vocab_pack": "inline:han_banchao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22414,8 +22084,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "song_yancheng_llm.html",
    "vocab_pack": "inline:song_yancheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22433,8 +22101,6 @@ window.SANDBOX_DATA = {
    "region": "yuan_ming",
    "page": "county.html?scene=yuan_xingsheng_llm",
    "vocab_pack": "inline:yuan_xingsheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22454,8 +22120,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=ming_zhenghe_llm",
    "vocab_pack": "inline:ming_zhenghe_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22474,8 +22138,6 @@ window.SANDBOX_DATA = {
    "region": "liaobei",
    "page": "qing_yakesa_llm.html",
    "vocab_pack": "inline:qing_yakesa_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22495,8 +22157,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=qin_fenshu_llm",
    "vocab_pack": "inline:qin_fenshu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22515,8 +22175,6 @@ window.SANDBOX_DATA = {
    "region": "tang",
    "page": "county.html?scene=tang_huangchao_llm",
    "vocab_pack": "inline:tang_huangchao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22536,8 +22194,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=song_chanchuan_llm",
    "vocab_pack": "inline:song_chanchuan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22557,8 +22213,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "ming_tumu_llm.html",
    "vocab_pack": "inline:ming_tumu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22578,8 +22232,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=qing_zhungaer_llm",
    "vocab_pack": "inline:qing_zhungaer_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22599,8 +22251,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=warring_states_shangyang_llm",
    "vocab_pack": "inline:warring_states_shangyang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -22618,8 +22268,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=han_weihuo_llm",
    "vocab_pack": "inline:han_weihuo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22639,8 +22287,6 @@ window.SANDBOX_DATA = {
    "region": "tang",
    "page": "county.html?scene=tang_xuanwumen_llm",
    "vocab_pack": "inline:tang_xuanwumen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22658,8 +22304,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=chibi_llm",
    "vocab_pack": "inline:chibi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22679,8 +22323,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=song_wanganshi_llm",
    "vocab_pack": "inline:song_wanganshi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22698,8 +22340,6 @@ window.SANDBOX_DATA = {
    "region": "imjin",
    "page": "biTigeGuan.html",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -22717,8 +22357,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=tang_liangshuifa",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22738,8 +22376,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "county.html?scene=wei_xiaowen",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -22757,8 +22393,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=sui_canal",
    "vocab_pack": "ming_qing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22777,8 +22411,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=guo_shoujing",
    "vocab_pack": "inline:guo_shoujing",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22798,8 +22430,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=zhangzai_guanxue",
    "vocab_pack": "inline:zhangzai_guanxue",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22818,8 +22448,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=cailun_zaozhi",
    "vocab_pack": "inline:cailun_zaozhi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22839,8 +22467,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=bisheng_movable_type",
    "vocab_pack": "inline:bisheng_movable_type",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22859,8 +22485,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=compass_navigation",
    "vocab_pack": "inline:compass_navigation",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22880,8 +22504,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=gunpowder_warfare",
    "vocab_pack": "inline:gunpowder_warfare",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22901,8 +22523,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=susong_llm",
    "vocab_pack": "inline:susong_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22920,8 +22540,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=wangyangming",
    "vocab_pack": "inline:wangyangming",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22941,8 +22559,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=zhuxi",
    "vocab_pack": "inline:zhuxi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -22961,8 +22577,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=foguo_chan_llm",
    "vocab_pack": "inline:foguo_chan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -22982,8 +22596,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=qianjia_puxue_llm",
    "vocab_pack": "inline:qianjia_puxue_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23002,8 +22614,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=xu_guangqi",
    "vocab_pack": "inline:xu_guangqi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23023,8 +22633,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=shu_han_found_llm",
    "vocab_pack": "inline:shu_han_found_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23044,8 +22652,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=nan_song_linan_llm",
    "vocab_pack": "inline:nan_song_linan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23064,8 +22670,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=jinshang_llm",
    "vocab_pack": "inline:jinshang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23083,8 +22687,6 @@ window.SANDBOX_DATA = {
    "region": "dynasty",
    "page": "county.html?scene=minyue_llm",
    "vocab_pack": "inline:minyue_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23104,8 +22706,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=yuelu_academy_llm",
    "vocab_pack": "inline:yuelu_academy_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23125,8 +22725,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=anxi_sizhen_llm",
    "vocab_pack": "inline:anxi_sizhen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23146,8 +22744,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=sui_keju",
    "vocab_pack": "sui_keju",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -23165,8 +22761,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "county.html?scene=warring_states_shangyang",
    "vocab_pack": "warring_states_shangyang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -23185,8 +22779,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=tang_juntian",
    "vocab_pack": "tang_juntian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23206,8 +22798,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "dagukou_battle_llm.html",
    "vocab_pack": "inline:dagukou_battle_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23225,8 +22815,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=liangzhou_meeting_llm",
    "vocab_pack": "inline:liangzhou_meeting_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23244,8 +22832,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "songshan_battle_llm.html",
    "vocab_pack": "songshan_battle_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23262,8 +22848,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "pingbo_zhiyi_llm.html",
    "vocab_pack": "pingbo_zhiyi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -23281,8 +22865,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=bohai_kingdom_llm",
    "vocab_pack": "bohai_kingdom_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23300,8 +22882,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=dongbei_kanglian_llm",
    "vocab_pack": "dongbei_kanglian_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23319,8 +22899,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=chongqing_capital_llm",
    "vocab_pack": "chongqing_capital_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23339,8 +22917,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=xizang_tubo_llm",
    "vocab_pack": "xizang_tubo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23359,8 +22935,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=guangxi_taiping_llm",
    "vocab_pack": "guangxi_taiping_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23378,8 +22952,6 @@ window.SANDBOX_DATA = {
    "region": "nan_bei_chao",
    "page": "county.html?scene=hainan_xianfuren_llm",
    "vocab_pack": "hainan_xianfuren_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23398,8 +22970,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=qinghai_gusiluo_llm",
    "vocab_pack": "qinghai_gusiluo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23417,8 +22987,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "fujian_qijiguang_llm.html",
    "vocab_pack": "fujian_qijiguang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -23435,8 +23003,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=shanghai_xiaodaohui_llm",
    "vocab_pack": "shanghai_xiaodaohui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -23454,8 +23020,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=ningxia_xixia_llm",
    "vocab_pack": "ningxia_xixia_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -23472,8 +23036,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=neimenggu_zhaojun_llm",
    "vocab_pack": "neimenggu_zhaojun_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -23491,8 +23053,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=gansu_hexizhen_llm",
    "vocab_pack": "gansu_hexizhen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23511,8 +23071,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_zunyi_llm",
    "vocab_pack": "guizhou_zunyi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -23529,8 +23087,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=heilongjiang_jin_llm",
    "vocab_pack": "heilongjiang_jin_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23550,8 +23106,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "chongqing_diaoyucheng_llm.html",
    "vocab_pack": "chongqing_diaoyucheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23569,8 +23123,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_jiaoan_llm",
    "vocab_pack": "tianjin_jiaoan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -23587,8 +23139,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_dali_llm",
    "vocab_pack": "yunnan_dali_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23608,8 +23158,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "shanghai_songkai_llm.html",
    "vocab_pack": "shanghai_songkai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -23626,8 +23174,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=ningxia_xiaoguan_llm",
    "vocab_pack": "ningxia_xiaoguan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23646,8 +23192,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=neimenggu_genghis_llm",
    "vocab_pack": "neimenggu_genghis_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23666,8 +23210,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "xizang_gorkha_llm.html",
    "vocab_pack": "xizang_gorkha_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23685,8 +23227,6 @@ window.SANDBOX_DATA = {
    "region": "fusion",
    "page": "county.html?scene=xizang_huimeng_llm",
    "vocab_pack": "xizang_huimeng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -23703,8 +23243,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "guangxi_zhennanguan_llm.html",
    "vocab_pack": "guangxi_zhennanguan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -23722,8 +23260,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hainan_hairui_llm",
    "vocab_pack": "hainan_hairui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23742,8 +23278,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=qinghai_zongkaba_llm",
    "vocab_pack": "qinghai_zongkaba_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -23760,8 +23294,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "taiwan_zhengchenggong_llm.html",
    "vocab_pack": "taiwan_zhengchenggong_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23779,8 +23311,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "xianggang_1941_llm.html",
    "vocab_pack": "xianggang_1941_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -23797,8 +23327,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=aomen_kaibu_llm",
    "vocab_pack": "aomen_kaibu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23817,8 +23345,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "jiangxi_nanchang_llm.html",
    "vocab_pack": "jiangxi_nanchang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     6
    ],
@@ -23833,8 +23359,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=jiangxi_ruijin_llm",
    "vocab_pack": "jiangxi_ruijin_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23853,8 +23377,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xinjiang_xiyu_llm",
    "vocab_pack": "xinjiang_xiyu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23873,8 +23395,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xinjiang_zuozongtang_llm",
    "vocab_pack": "xinjiang_zuozongtang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -23892,8 +23412,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=guangxi_lingqu_llm",
    "vocab_pack": "guangxi_lingqu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23913,8 +23431,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "hainan_hainandao_llm.html",
    "vocab_pack": "hainan_hainandao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -23932,8 +23448,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=chongqing_peidu_llm",
    "vocab_pack": "chongqing_peidu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -23951,8 +23465,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=gansu_dunhuang_llm",
    "vocab_pack": "gansu_dunhuang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     5,
     6
@@ -23968,8 +23480,6 @@ window.SANDBOX_DATA = {
    "region": "liaobei",
    "page": "heilongjiang_kanglian_llm.html",
    "vocab_pack": "heilongjiang_kanglian_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     6
@@ -23985,8 +23495,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_bohai_llm",
    "vocab_pack": "jilin_bohai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24005,8 +23513,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_changchun_llm",
    "vocab_pack": "jilin_changchun_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24024,8 +23530,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_kaibu_llm",
    "vocab_pack": "inline:tianjin_kaibu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -24043,8 +23547,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_nanzhao_llm",
    "vocab_pack": "yunnan_nanzhao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24061,8 +23563,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_xiamen_llm",
    "vocab_pack": "fujian_xiamen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     6
    ],
@@ -24077,8 +23577,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=hunan_mawangdui_llm",
    "vocab_pack": "hunan_mawangdui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -24096,8 +23594,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=shanxi_jinshang_llm",
    "vocab_pack": "shanxi_jinshang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24116,8 +23612,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=sichuan_dujiangyan_llm",
    "vocab_pack": "sichuan_dujiangyan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24136,8 +23630,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "taiwan_shilang_llm.html",
    "vocab_pack": "taiwan_shilang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24156,8 +23648,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "county.html?scene=taiwan_wushe_llm",
    "vocab_pack": "taiwan_wushe_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24177,8 +23667,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=xianggang_huigui_llm",
    "vocab_pack": "xianggang_huigui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24196,8 +23684,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "xianggang_dongjiang_llm.html",
    "vocab_pack": "xianggang_dongjiang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24216,8 +23702,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=aomen_huigui_llm",
    "vocab_pack": "aomen_huigui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24235,8 +23719,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=aomen_mage_llm",
    "vocab_pack": "inline:aomen_mage_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24256,8 +23738,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=qinghai_zhaochongguo_llm",
    "vocab_pack": "qinghai_zhaochongguo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -24274,8 +23754,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_shexiang_llm",
    "vocab_pack": "guizhou_shexiang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24295,8 +23773,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_minyue",
    "vocab_pack": "inline:fujian_minyue",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24315,8 +23791,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=gansu_hexi",
    "vocab_pack": "inline:gansu_hexi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24336,8 +23810,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=guangdong_nanyue",
    "vocab_pack": "inline:guangdong_nanyue",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24356,8 +23828,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_zhaozhou",
    "vocab_pack": "inline:hebei_zhaozhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24374,8 +23844,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hunan_yuelu",
    "vocab_pack": "inline:hunan_yuelu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -24392,8 +23860,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shandong_kongzi",
    "vocab_pack": "inline:shandong_kongzi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -24411,8 +23877,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=sichuan_zhuge",
    "vocab_pack": "inline:sichuan_zhuge",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -24431,8 +23895,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=yunnan_dali",
    "vocab_pack": "inline:yunnan_dali",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24452,8 +23914,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zhejiang_linan",
    "vocab_pack": "inline:zhejiang_linan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24472,8 +23932,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=jiangxi_jingdezhen",
    "vocab_pack": "inline:jiangxi_jingdezhen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -24491,8 +23949,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shanxi_sanjiafenjin",
    "vocab_pack": "inline:shanxi_sanjiafenjin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24509,8 +23965,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=guangxi_lingqu",
    "vocab_pack": "inline:guangxi_lingqu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24529,8 +23983,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=heilongjiang_jin",
    "vocab_pack": "inline:heilongjiang_jin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24548,8 +24000,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=xinjiang_xiyu",
    "vocab_pack": "inline:xinjiang_xiyu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24566,8 +24016,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=neimenggu_liao",
    "vocab_pack": "inline:neimenggu_liao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24586,8 +24034,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "chongqing_diaoyucheng.html",
    "vocab_pack": "inline:chongqing_diaoyucheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -24604,8 +24050,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=shanghai_kaibu",
    "vocab_pack": "inline:shanghai_kaibu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24624,8 +24068,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=guizhou_yelang",
    "vocab_pack": "inline:guizhou_yelang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24644,8 +24086,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hainan_xianfuren",
    "vocab_pack": "inline:hainan_xianfuren",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24664,8 +24104,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=jilin_gaogouli",
    "vocab_pack": "inline:jilin_gaogouli",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24683,8 +24121,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=ningxia_xixia",
    "vocab_pack": "inline:ningxia_xixia",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24703,8 +24139,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=qinghai_tuyuhun",
    "vocab_pack": "inline:qinghai_tuyuhun",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24722,8 +24156,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_tianjinwei",
    "vocab_pack": "inline:tianjin_tianjinwei",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24741,8 +24173,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "xianggang_tunmen.html",
    "vocab_pack": "inline:xianggang_tunmen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24760,8 +24190,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=aomen_aomen",
    "vocab_pack": "inline:aomen_aomen",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24778,8 +24206,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=xizang_wencheng",
    "vocab_pack": "inline:xizang_wencheng",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24798,8 +24224,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=taiwan_zhengchenggong",
    "vocab_pack": "inline:taiwan_zhengchenggong",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24818,8 +24242,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "county.html?scene=shandong_jixia",
    "vocab_pack": "inline:shandong_jixia",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24838,8 +24260,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_shanhaiguan",
    "vocab_pack": "inline:hebei_shanhaiguan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24857,8 +24277,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "county.html?scene=hubei_zenghouyi",
    "vocab_pack": "inline:hubei_zenghouyi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     5,
@@ -24875,8 +24293,6 @@ window.SANDBOX_DATA = {
    "region": "two_jin",
    "page": "county.html?scene=shanxi_yungang",
    "vocab_pack": "inline:shanxi_yungang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24895,8 +24311,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=gansu_jiayuguan",
    "vocab_pack": "inline:gansu_jiayuguan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24914,8 +24328,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=guangdong_guangzhou",
    "vocab_pack": "inline:guangdong_guangzhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -24933,8 +24345,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_tulou",
    "vocab_pack": "inline:fujian_tulou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24952,8 +24362,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=jiangxi_bailudong",
    "vocab_pack": "inline:jiangxi_bailudong",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -24970,8 +24378,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_dianmian",
    "vocab_pack": "inline:yunnan_dianmian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -24989,8 +24395,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zhejiang_longquan",
    "vocab_pack": "inline:zhejiang_longquan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25009,8 +24413,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=qingli_reform_llm",
    "vocab_pack": "inline:qingli_reform_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -25027,8 +24429,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=wuxu_reform_llm",
    "vocab_pack": "inline:wuxu_reform_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -25045,8 +24445,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=yangwu_llm",
    "vocab_pack": "inline:yangwu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25065,8 +24463,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=wangmang_reform_llm",
    "vocab_pack": "inline:wangmang_reform_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -25084,8 +24480,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=jiaozi_llm",
    "vocab_pack": "inline:jiaozi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25103,8 +24497,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=aomen_macanese_llm",
    "vocab_pack": "inline:aomen_macanese_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25123,8 +24515,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=chama_xizang_llm",
    "vocab_pack": "inline:chama_xizang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25142,8 +24532,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=changsha_yao_llm",
    "vocab_pack": "inline:changsha_yao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25161,8 +24549,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=dangar_chama_llm",
    "vocab_pack": "inline:dangar_chama_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25180,8 +24566,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jianzhou_nuerhaci_llm",
    "vocab_pack": "inline:jianzhou_nuerhaci_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25200,8 +24584,6 @@ window.SANDBOX_DATA = {
    "region": "three_kingdoms",
    "page": "county.html?scene=jiupin_zhongzheng_llm",
    "vocab_pack": "inline:jiupin_zhongzheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -25218,8 +24600,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=kanerjing_llm",
    "vocab_pack": "inline:kanerjing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25239,8 +24619,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=longquan_yao_llm",
    "vocab_pack": "inline:longquan_yao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25259,8 +24637,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=ming_yuzhen_xia_llm",
    "vocab_pack": "inline:ming_yuzhen_xia_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25279,8 +24655,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=mohe_gold_llm",
    "vocab_pack": "inline:mohe_gold_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25299,8 +24673,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=nongzhigao_llm",
    "vocab_pack": "inline:nongzhigao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25317,8 +24689,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "county.html?scene=shen_baozhen_taiwan_llm",
    "vocab_pack": "inline:shen_baozhen_taiwan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25337,8 +24707,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=sushi_danzhou_llm",
    "vocab_pack": "inline:sushi_danzhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25357,8 +24725,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=tan_ding_llm",
    "vocab_pack": "inline:tan_ding_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -25376,8 +24742,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=xianggang_nanbeihang_llm",
    "vocab_pack": "inline:xianggang_nanbeihang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25396,8 +24760,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=yuan_shangdu_llm",
    "vocab_pack": "inline:yuan_shangdu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25417,8 +24779,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=zuyong_diao_llm",
    "vocab_pack": "inline:zuyong_diao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25437,8 +24797,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=ningxia_lingzhou_llm",
    "vocab_pack": "inline:ningxia_lingzhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25455,8 +24813,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_jiqiju_llm",
    "vocab_pack": "inline:tianjin_jiqiju_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25474,8 +24830,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=heilongjiang_chuangguan_llm",
    "vocab_pack": "inline:heilongjiang_chuangguan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25494,8 +24848,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=heilongjiang_suifenhe_llm",
    "vocab_pack": "inline:heilongjiang_suifenhe_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25513,8 +24865,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hubei_hankou_llm",
    "vocab_pack": "inline:hubei_hankou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25534,8 +24884,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hubei_wuchang_llm",
    "vocab_pack": "inline:hubei_wuchang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     6
@@ -25551,8 +24899,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_changbaishan_llm",
    "vocab_pack": "inline:jilin_changbaishan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25570,8 +24916,6 @@ window.SANDBOX_DATA = {
    "region": "jianzhou",
    "page": "county.html?scene=jilin_yanbian_llm",
    "vocab_pack": "inline:jilin_yanbian_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25589,8 +24933,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=shanghai_shangwu_llm",
    "vocab_pack": "inline:shanghai_shangwu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25609,8 +24951,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=shanghai_xinhai_llm",
    "vocab_pack": "inline:shanghai_xinhai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -25628,8 +24968,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xinjiang_gaochang_llm",
    "vocab_pack": "inline:xinjiang_gaochang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25649,8 +24987,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xinjiang_jiansheng_llm",
    "vocab_pack": "inline:xinjiang_jiansheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25669,8 +25005,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_duwenxiu_llm",
    "vocab_pack": "inline:yunnan_duwenxiu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25690,8 +25024,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_quhuanzhang_llm",
    "vocab_pack": "inline:yunnan_quhuanzhang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -25709,8 +25041,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=gansu_linxia_huihui_llm",
    "vocab_pack": "inline:gansu_linxia_huihui_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25730,8 +25060,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=gansu_tianshui_fuxi_llm",
    "vocab_pack": "inline:gansu_tianshui_fuxi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25751,8 +25079,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guangxi_nanning_kaibu_llm",
    "vocab_pack": "inline:guangxi_nanning_kaibu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25771,8 +25097,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guangxi_zhuangzu_llm",
    "vocab_pack": "inline:guangxi_zhuangzu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25792,8 +25116,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_tianlongshan_llm",
    "vocab_pack": "inline:guizhou_tianlongshan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -25812,8 +25134,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_zhangxiumei_llm",
    "vocab_pack": "inline:guizhou_zhangxiumei_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25832,8 +25152,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_yanzhao_wenhua_llm",
    "vocab_pack": "inline:hebei_yanzhao_wenhua_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25851,8 +25169,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_zhili_xinzheng_llm",
    "vocab_pack": "inline:hebei_zhili_xinzheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25872,8 +25188,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=neimenggu_keerqin_llm",
    "vocab_pack": "inline:neimenggu_keerqin_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -25891,8 +25205,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=sichuan_chuanzong_huguang_llm",
    "vocab_pack": "inline:sichuan_chuanzong_huguang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25912,8 +25224,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=sichuan_gaitu_guizhou_llm",
    "vocab_pack": "inline:sichuan_gaitu_guizhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -25931,8 +25241,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=neimenggu_huhehaote_llm",
    "vocab_pack": "inline:neimenggu_huhehaote_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25951,8 +25259,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=guangdong_luofushan_llm",
    "vocab_pack": "inline:guangdong_luofushan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25971,8 +25277,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=guangdong_nanhai_maritime_llm",
    "vocab_pack": "inline:guangdong_nanhai_maritime_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -25992,8 +25296,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_jianxing_llm",
    "vocab_pack": "inline:guizhou_jianxing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -26012,8 +25314,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=guizhou_minority_craft_llm",
    "vocab_pack": "inline:guizhou_minority_craft_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -26031,8 +25331,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=hunan_wenxi_fire_llm",
    "vocab_pack": "inline:hunan_wenxi_fire_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     6
    ],
@@ -26047,8 +25345,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=hunan_xiangjun_llm",
    "vocab_pack": "inline:hunan_xiangjun_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -26066,8 +25362,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=ningxia_dangxiang_llm",
    "vocab_pack": "inline:ningxia_dangxiang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26086,8 +25380,6 @@ window.SANDBOX_DATA = {
    "region": "song",
    "page": "county.html?scene=ningxia_xixia_tomb_llm",
    "vocab_pack": "inline:ningxia_xixia_tomb_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26106,8 +25398,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=sichuan_bashu_bronze_llm",
    "vocab_pack": "inline:sichuan_bashu_bronze_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -26125,8 +25415,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=sichuan_libai_llm",
    "vocab_pack": "inline:sichuan_libai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -26144,8 +25432,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=tianjin_concession_llm",
    "vocab_pack": "inline:tianjin_concession_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26165,8 +25451,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=tianjin_railway_llm",
    "vocab_pack": "inline:tianjin_railway_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -26185,8 +25469,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=aomen_fortress_llm",
    "vocab_pack": "inline:aomen_fortress_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26204,8 +25486,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=aomen_stpaul_llm",
    "vocab_pack": "inline:aomen_stpaul_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26224,8 +25504,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=chongqing_ciqikou_llm",
    "vocab_pack": "inline:chongqing_ciqikou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26245,8 +25523,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=chongqing_dazu_llm",
    "vocab_pack": "inline:chongqing_dazu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26265,8 +25541,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=fujian_tea_llm",
    "vocab_pack": "inline:fujian_tea_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26285,8 +25559,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=fujian_zen_llm",
    "vocab_pack": "inline:fujian_zen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -26304,8 +25576,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=hainan_li_llm",
    "vocab_pack": "inline:hainan_li_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26323,8 +25593,6 @@ window.SANDBOX_DATA = {
    "region": "uprising",
    "page": "county.html?scene=hainan_qiongyai_llm",
    "vocab_pack": "inline:hainan_qiongyai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26343,8 +25611,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=jiangxi_ganjiang_llm",
    "vocab_pack": "inline:jiangxi_ganjiang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26363,8 +25629,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=jiangxi_lushan_llm",
    "vocab_pack": "inline:jiangxi_lushan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -26381,8 +25645,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=qinghai_koko_llm",
    "vocab_pack": "inline:qinghai_koko_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26400,8 +25662,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=qinghai_longwu_llm",
    "vocab_pack": "inline:qinghai_longwu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -26419,8 +25679,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=shandong_canal_llm",
    "vocab_pack": "inline:shandong_canal_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26438,8 +25696,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=shandong_kongfu_llm",
    "vocab_pack": "inline:shandong_kongfu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -26457,8 +25713,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=shanxi_pingyao_llm",
    "vocab_pack": "inline:shanxi_pingyao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26477,8 +25731,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=shanxi_yuncheng_llm",
    "vocab_pack": "inline:shanxi_yuncheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26497,8 +25749,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "county.html?scene=taiwan_camphor_llm",
    "vocab_pack": "inline:taiwan_camphor_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26516,8 +25766,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "taiwan_dutch_llm.html",
    "vocab_pack": "inline:taiwan_dutch_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -26534,8 +25782,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=xianggang_tram_llm",
    "vocab_pack": "inline:xianggang_tram_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26553,8 +25799,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=xianggang_university_llm",
    "vocab_pack": "inline:xianggang_university_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -26573,8 +25817,6 @@ window.SANDBOX_DATA = {
    "region": "court",
    "page": "county.html?scene=xizang_amban_llm",
    "vocab_pack": "inline:xizang_amban_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -26592,8 +25834,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=xizang_pagoda_llm",
    "vocab_pack": "inline:xizang_pagoda_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26613,8 +25853,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=anhui_daizhen_llm",
    "vocab_pack": "inline:anhui_daizhen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26633,8 +25871,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=anhui_huizhou_llm",
    "vocab_pack": "inline:anhui_huizhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -26652,8 +25888,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=beijing_banner_llm",
    "vocab_pack": "inline:beijing_banner_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -26670,8 +25904,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=beijing_qianjia_llm",
    "vocab_pack": "inline:beijing_qianjia_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     5,
@@ -26688,8 +25920,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=chongqing_paoge_llm",
    "vocab_pack": "inline:chongqing_paoge_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -26706,8 +25936,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=chongqing_zourong_llm",
    "vocab_pack": "inline:chongqing_zourong_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -26724,8 +25952,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=jiangsu_jihu_llm",
    "vocab_pack": "inline:jiangsu_jihu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -26743,8 +25969,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=jiangsu_taizhou_llm",
    "vocab_pack": "inline:jiangsu_taizhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -26762,8 +25986,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shanxi_xunzi_llm",
    "vocab_pack": "inline:shanxi_xunzi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -26780,8 +26002,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shanxi_zouxikou_llm",
    "vocab_pack": "inline:shanxi_zouxikou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26801,8 +26021,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "county.html?scene=taiwan_kekuan_llm",
    "vocab_pack": "inline:taiwan_kekuan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26821,8 +26039,6 @@ window.SANDBOX_DATA = {
    "region": "taiwan",
    "page": "county.html?scene=taiwan_qiufengjia_llm",
    "vocab_pack": "inline:taiwan_qiufengjia_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -26840,8 +26056,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_jiaohang_llm",
    "vocab_pack": "inline:tianjin_jiaohang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26861,8 +26075,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_yanfu_llm",
    "vocab_pack": "inline:tianjin_yanfu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -26880,8 +26092,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xizang_xika_llm",
    "vocab_pack": "inline:xizang_xika_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4
@@ -26897,8 +26107,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xizang_zongkaba_llm",
    "vocab_pack": "inline:xizang_zongkaba_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     5,
@@ -26915,8 +26123,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_gaitu_llm",
    "vocab_pack": "inline:yunnan_gaitu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -26936,8 +26142,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=yunnan_lianda_llm",
    "vocab_pack": "inline:yunnan_lianda_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     4,
@@ -26955,8 +26159,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zhejiang_ningbo_llm",
    "vocab_pack": "inline:zhejiang_ningbo_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     4,
     5,
@@ -26973,8 +26175,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zhejiang_yongjia_llm",
    "vocab_pack": "inline:zhejiang_yongjia_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     5,
     6
@@ -26990,8 +26190,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=beijing_beping_llm",
    "vocab_pack": "inline:beijing_beping_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     6
    ],
@@ -27006,8 +26204,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=beijing_jinghan_llm",
    "vocab_pack": "inline:beijing_jinghan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     5,
     6
@@ -27023,8 +26219,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_kailuan_llm",
    "vocab_pack": "inline:hebei_kailuan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27042,8 +26236,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_zhili_llm",
    "vocab_pack": "inline:hebei_zhili_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27060,8 +26252,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=henan_zhengzhuang_llm",
    "vocab_pack": "inline:henan_zhengzhuang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27080,8 +26270,6 @@ window.SANDBOX_DATA = {
    "region": "warring_states",
    "page": "county.html?scene=hubei_chuwu_llm",
    "vocab_pack": "inline:hubei_chuwu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -27099,8 +26287,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=shaanxi_hanchang_llm",
    "vocab_pack": "inline:shaanxi_hanchang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27119,8 +26305,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=shaanxi_shangyang_llm",
    "vocab_pack": "inline:shaanxi_shangyang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     6
@@ -27136,8 +26320,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=shaanxi_zhengguoqu_llm",
    "vocab_pack": "inline:shaanxi_zhengguoqu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27154,8 +26336,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=shaanxi_zhouyuan_llm",
    "vocab_pack": "inline:shaanxi_zhouyuan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27174,8 +26354,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shandong_guanzhong_llm",
    "vocab_pack": "inline:shandong_guanzhong_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27194,8 +26372,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shanxi_jinwen_llm",
    "vocab_pack": "inline:shanxi_jinwen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -27212,8 +26388,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=tianjin_xiaozhan_llm",
    "vocab_pack": "inline:tianjin_xiaozhan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27231,8 +26405,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=fujian_yisibaxi_llm",
    "vocab_pack": "inline:fujian_yisibaxi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -27250,8 +26422,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=hebei_yuanqu_llm",
    "vocab_pack": "inline:hebei_yuanqu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     4,
@@ -27269,8 +26439,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=henan_keju_llm",
    "vocab_pack": "inline:henan_keju_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     3,
     4,
@@ -27288,8 +26456,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=jiangsu_zhangshicheng_llm",
    "vocab_pack": "inline:jiangsu_zhangshicheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -27307,8 +26473,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=shanxi_jinyang_llm",
    "vocab_pack": "inline:shanxi_jinyang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     6
    ],
@@ -27323,8 +26487,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=dujiangyan_llm",
    "vocab_pack": "inline:dujiangyan_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27341,8 +26503,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=guo_shoujing_llm",
    "vocab_pack": "inline:guo_shoujing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27360,8 +26520,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=jia_sixie_llm",
    "vocab_pack": "inline:jia_sixie_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     5,
@@ -27378,8 +26536,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=li_shizhen_llm",
    "vocab_pack": "inline:li_shizhen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     5,
@@ -27396,8 +26552,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=lingqu_llm",
    "vocab_pack": "inline:lingqu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27416,8 +26570,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=zhangheng_llm",
    "vocab_pack": "inline:zhangheng_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     5,
@@ -27434,8 +26586,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=zu_chongzhi_llm",
    "vocab_pack": "inline:zu_chongzhi_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     5,
@@ -27452,8 +26602,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=cross_dynastic_crops_llm",
    "vocab_pack": "inline:cross_dynastic_crops_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27472,8 +26620,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=guangzhong_simaqian_llm",
    "vocab_pack": "inline:guangzhong_simaqian_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     3,
@@ -27491,8 +26637,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=guangzhong_zhidao_llm",
    "vocab_pack": "inline:guangzhong_zhidao_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27509,8 +26653,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=huabei_boxer_llm",
    "vocab_pack": "inline:huabei_boxer_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27529,8 +26671,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=huabei_jingzhang_llm",
    "vocab_pack": "inline:huabei_jingzhang_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27548,8 +26688,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=han_dushi_shuipai_llm",
    "vocab_pack": "inline:han_dushi_shuipai_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27568,8 +26706,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=han_jiliguche_llm",
    "vocab_pack": "inline:han_jiliguche_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     6
@@ -27585,8 +26721,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=han_longshouqu_llm",
    "vocab_pack": "inline:han_longshouqu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27603,8 +26737,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=han_tihuajing_llm",
    "vocab_pack": "inline:han_tihuajing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     6
@@ -27620,8 +26752,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=ming_tiangong_llm",
    "vocab_pack": "inline:ming_tiangong_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27640,8 +26770,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=tang_qulunli_llm",
    "vocab_pack": "inline:tang_qulunli_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27659,8 +26787,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=tang_yixing_llm",
    "vocab_pack": "inline:tang_yixing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27679,8 +26805,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=three_kingdoms_fanche_llm",
    "vocab_pack": "inline:three_kingdoms_fanche_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27698,8 +26822,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=yuan_qinghua_llm",
    "vocab_pack": "inline:yuan_qinghua_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27718,8 +26840,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=yuan_wangzhen_llm",
    "vocab_pack": "inline:yuan_wangzhen_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27737,8 +26857,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_chengyu_railway_llm",
    "vocab_pack": "inline:prc_chengyu_railway_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27757,8 +26875,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_hongqi_qu_llm",
    "vocab_pack": "inline:prc_hongqi_qu_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27777,8 +26893,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=prc_liangdanyixing_llm",
    "vocab_pack": "inline:prc_liangdanyixing_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27797,8 +26911,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_nanjing_bridge_llm",
    "vocab_pack": "inline:prc_nanjing_bridge_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27816,8 +26928,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_qingzang_railway_llm",
    "vocab_pack": "inline:prc_qingzang_railway_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27835,8 +26945,6 @@ window.SANDBOX_DATA = {
    "region": "reform",
    "page": "county.html?scene=prc_shenzhen_sez_llm",
    "vocab_pack": "inline:prc_shenzhen_sez_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27856,8 +26964,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=prc_shenzhou_llm",
    "vocab_pack": "inline:prc_shenzhou_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27874,8 +26980,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_three_gorges_llm",
    "vocab_pack": "inline:prc_three_gorges_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     2,
     3,
@@ -27894,8 +26998,6 @@ window.SANDBOX_DATA = {
    "region": "engineering",
    "page": "county.html?scene=prc_wuhan_bridge_llm",
    "vocab_pack": "inline:prc_wuhan_bridge_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27913,8 +27015,6 @@ window.SANDBOX_DATA = {
    "region": "tech",
    "page": "county.html?scene=prc_yuanlongping_llm",
    "vocab_pack": "inline:prc_yuanlongping_llm",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     5,
     6
@@ -27930,8 +27030,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=langzhong",
    "vocab_pack": "langzhong",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27951,8 +27049,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=quanzhou",
    "vocab_pack": "quanzhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27972,8 +27068,6 @@ window.SANDBOX_DATA = {
    "region": "yunnan",
    "page": "county.html?scene=dali",
    "vocab_pack": "dali",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -27993,8 +27087,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=pingyao",
    "vocab_pack": "pingyao",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28014,8 +27106,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=yixian",
    "vocab_pack": "yixian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28035,8 +27125,6 @@ window.SANDBOX_DATA = {
    "region": "hunan",
    "page": "county.html?scene=fenghuang",
    "vocab_pack": "fenghuang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28056,8 +27144,6 @@ window.SANDBOX_DATA = {
    "region": "exchange",
    "page": "county.html?scene=chaozhou",
    "vocab_pack": "chaozhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28077,8 +27163,6 @@ window.SANDBOX_DATA = {
    "region": "huabei",
    "page": "county.html?scene=qufu",
    "vocab_pack": "qufu",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28098,8 +27182,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=hangzhou",
    "vocab_pack": "hangzhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28119,8 +27201,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=suzhou",
    "vocab_pack": "suzhou",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28140,8 +27220,6 @@ window.SANDBOX_DATA = {
    "region": "jiangnan",
    "page": "county.html?scene=lushan",
    "vocab_pack": "lushan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28161,8 +27239,6 @@ window.SANDBOX_DATA = {
    "region": "guangzhong",
    "page": "county.html?scene=xian",
    "vocab_pack": "xian",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28182,8 +27258,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=dunhuang",
    "vocab_pack": "dunhuang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28203,8 +27277,6 @@ window.SANDBOX_DATA = {
    "region": "sui_tang",
    "page": "county.html?scene=luoyang",
    "vocab_pack": "luoyang",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28224,8 +27296,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=chengde",
    "vocab_pack": "chengde",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28245,8 +27315,6 @@ window.SANDBOX_DATA = {
    "region": "thought",
    "page": "county.html?scene=wuyishan",
    "vocab_pack": "wuyishan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28266,8 +27334,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=yinchuan",
    "vocab_pack": "yinchuan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28287,8 +27353,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=xining",
    "vocab_pack": "xining",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28308,8 +27372,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=turpan",
    "vocab_pack": "turpan",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28329,8 +27391,6 @@ window.SANDBOX_DATA = {
    "region": "xibei",
    "page": "county.html?scene=lhasa",
    "vocab_pack": "lhasa",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28350,8 +27410,6 @@ window.SANDBOX_DATA = {
    "region": "chuan_gui",
    "page": "county.html?scene=zunyi",
    "vocab_pack": "zunyi",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,
@@ -28371,8 +27429,6 @@ window.SANDBOX_DATA = {
    "region": "qing_modern",
    "page": "county.html?scene=jilin",
    "vocab_pack": "jilin",
-   "terrain_grid": "china_coarse",
-   "terrain_off_grid": false,
    "dims": [
     1,
     2,

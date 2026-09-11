@@ -268,6 +268,23 @@
      山影算法为标准 ESRI hillshade，方位角 315°、高度角 45°。
      ═══════════════════════════════════════════════════ */
   var TG = SD.terrain, tImg = null;
+  // v0.233：背景改用 DemTopo 分层设色栅格（复旦 CHGIS，绿低黄高），与 county.html / 三大战役一致；
+  // 弃用原 ASTER GDEM 淡赭山体阴影（原 RAMP 注释明言「避开俗气绿黄」，与用户要的「按海拔配色」不符）。
+  var DEMTOPO = {
+    src: 'demtopo_china.jpg',
+    lonMin: 60.00556, lonMax: 149.116667, latMin: 10, latMax: 59.98861
+  };
+  // v0.233：海拔图例改用 DemTopo 分层设色（绿低黄高），与底图一致；原 ASTER 赭石 RAMP 已弃用。
+  var DEMTOPO_LEGEND = [
+    [0,    [124, 184, 124]],
+    [500,  [185, 207, 110]],
+    [1000, [230, 207, 87]],
+    [1500, [220, 174, 74]],
+    [2000, [207, 145, 64]]
+  ];
+  var demtopoImg = new Image();
+  demtopoImg.onload = function () { if (typeof applyView === 'function') applyView(); };
+  demtopoImg.src = DEMTOPO.src;
 
   // 高程配色：宣纸底上的淡赭，避开卫星图那种俗气的绿黄棕
   var RAMP = [
@@ -355,18 +372,17 @@
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.fillStyle = '#EFECE2';
     ctx.fillRect(0, 0, cv.width, cv.height);
-    if (!TG || !tImg || (!state.terrain.shade && !state.terrain.tint)) return;
+    // 背景 = DemTopo 分层设色栅格（绿低黄高），按经纬度界框投影进用户坐标，与 county.html / 三大战役一致。
+    if (!demtopoImg || !demtopoImg.complete || (!state.terrain.shade && !state.terrain.tint)) return;
 
-    var lonMax = TG.lon0 + (TG.nx - 1) * TG.step;
-    var latMax = TG.lat0 + (TG.ny - 1) * TG.step;
-    var gx = px(TG.lon0), gw = px(lonMax) - px(TG.lon0);
-    var gy = py(latMax),  gh = py(TG.lat0) - py(latMax);
+    var gx = px(DEMTOPO.lonMin), gw = px(DEMTOPO.lonMax) - px(DEMTOPO.lonMin);
+    var gy = py(DEMTOPO.latMax), gh = py(DEMTOPO.latMin) - py(DEMTOPO.latMax);
 
     var s = (cw / view.w) * dpr;
     ctx.setTransform(s, 0, 0, s, -view.x * s, -view.y * s);
     ctx.imageSmoothingEnabled = true;
     ctx.imageSmoothingQuality = 'high';
-    ctx.drawImage(tImg, gx, gy, gw, gh);
+    ctx.drawImage(demtopoImg, gx, gy, gw, gh);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
   }
 
@@ -793,19 +809,18 @@
         '<span class="lay-n">' + (on ? '开' : '关') + '</span>';
       n.addEventListener('click', function () {
         state.terrain[it.k] = !state.terrain[it.k];
-        if (it.k !== 'elev') tImg = buildTerrainImage();
+        // v0.233：背景 DemTopo 由 demtopoImg 直接绘制，无需重建 ASTER 高程图（tImg 已弃用）。
         refresh();
       });
       box.appendChild(n);
     });
     var src = document.getElementById('terrainSrc');
-    if (TG) {
-      src.innerHTML = '高程为实测值，非示意。<br><b>' + (TG.source || '') + '</b><br>' +
-        '网格 ' + TG.nx + '×' + TG.ny + '，' + TG.min + '–' + TG.max + ' m。' +
-        '海面与水体在原始数据中记为 0。';
-    } else {
-      src.innerHTML = '未载入高程网格。运行 <b>tools/fetch_terrain.py</b> 后重新编译。';
-    }
+    // v0.233：背景地形改为 DemTopo 分层设色（复旦 CHGIS，绿低黄高），与 county.html / 三大战役同款。
+    // 海拔标注仍可用 ASTER GDEM 网格（TG）叠「标注海拔」层；背景本身不再用 ASTER 淡赭 hillshade。
+    src.innerHTML = '背景地形：<b>DemTopo 分层设色（复旦 CHGIS，绿低黄高）</b>，与三大战役同款。<br>' +
+      (TG ? ('海拔标注网格 ' + TG.nx + '×' + TG.ny + '（' + (TG.source || 'ASTER GDEM') +
+             '，' + TG.min + '–' + TG.max + ' m），由「标注海拔」层叠加。')
+          : '未载入高程网格，仅显示 DemTopo 底图。');
   }
 
   function renderLayers() {
@@ -853,14 +868,14 @@
     var eb = document.getElementById('elevLegend');
     if (!TG) { eb.style.display = 'none'; return; }
     eb.style.display = '';
-    var stops = RAMP.map(function (s) {
+    var stops = DEMTOPO_LEGEND.map(function (s) {
       var c = s[1];
       return 'rgb(' + Math.round(c[0]) + ',' + Math.round(c[1]) + ',' + Math.round(c[2]) + ') ' +
-             (Math.min(1800, s[0]) / 1800 * 100).toFixed(0) + '%';
+             (Math.min(2000, s[0]) / 2000 * 100).toFixed(0) + '%';
     }).join(',');
-    eb.innerHTML = '海拔 m' +
+    eb.innerHTML = '海拔 m（绿低黄高 · DemTopo）' +
       '<div class="el-bar" style="background:linear-gradient(90deg,' + stops + ')"></div>' +
-      '<div class="el-ticks"><span>0</span><span>500</span><span>1200</span><span>1800</span></div>';
+      '<div class="el-ticks"><span>0</span><span>500</span><span>1000</span><span>2000</span></div>';
   }
 
   /* ═══════════ 时间轴 ═══════════ */
