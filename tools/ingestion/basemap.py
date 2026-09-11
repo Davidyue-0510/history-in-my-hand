@@ -405,12 +405,13 @@ def _clip_all(bbox, nd, stride, with_admin1=True):
 
 
 def emit_coarse_rivers_chunk(out_path):
-    """v0.231：把精选主要河流+关键湖泊写成独立懒加载块 demo/geo/china_coarse_rivers.js
+    """v0.231/v0.236：把精选主要河流+关键湖泊写成独立懒加载块 demo/geo/china_coarse_rivers.js
     （window.SANDBOX_RIVERS），与地形共享块同源思路。壳底图不再内嵌河/湖，守住
     <500KB 分片契约；概览场景经 county.js 回退到 SANDBOX_RIVERS 显示水系。
 
-    因是独立文件、不入壳，可放心保留较高精度（stride 小、3 位小数），
-    全国概览下河流清晰又不撑爆壳。NE 50m 近似，诚实标注 approx。"""
+    v0.236：河流源切换为 HydroSHEDS HydroRIVERS v1.0 (Asia)（SRTM 派生河网），
+    data/geo/china_coarse_rivers.json 为单一真值源；此函数仅做格式转换+坐标规整。
+    保留每条河流的 source 字段，诚实标注 approx。"""
     import os as _os
     p = _os.path.join(NE_DIR, "..", "china_coarse_rivers.json")
     if not _os.path.exists(p):
@@ -425,7 +426,8 @@ def emit_coarse_rivers_chunk(out_path):
         s = 3 if key == "rivers" else 4
         out[key] = [
             {"g": _round_geom(_decimate_aggressive(f["g"], s), 3),
-             "n": f.get("n"), "approx": f.get("approx", True)}
+             "n": f.get("n"), "approx": f.get("approx", True),
+             "source": f.get("source", "Natural Earth 1:50m")}
             for f in feats
         ]
     _os.makedirs(_os.path.dirname(out_path), exist_ok=True)
