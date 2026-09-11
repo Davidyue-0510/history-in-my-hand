@@ -1,9 +1,9 @@
 {
-  "scenes_total": 474,
-  "historical": 465,
+  "scenes_total": 475,
+  "historical": 466,
   "fictional": 9,
-  "assertions_total": 7044,
-  "sources_total": 476,
+  "assertions_total": 7065,
+  "sources_total": 479,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -311,6 +311,7 @@
     "xizang_xika_llm",
     "xizang_zongkaba_llm",
     "yangwu_llm",
+    "yazhou",
     "yinchuan",
     "yixian",
     "yuan_qinghua_llm",
@@ -339,7 +340,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 669,
+  "leads_total": 672,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3709,6 +3710,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "yazhou",
+      "title": "崖州（贬谪文脉·黎峒·琼崖）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4185,6 +4193,7 @@
     "zunyi": "遵义（播州土司·茅台·海龙屯）",
     "jilin": "吉林（吉林乌拉·松花江·吉林将军）",
     "guilin": "桂林（灵渠·靖江王府）",
-    "acheng": "阿城（金上京会宁府）"
+    "acheng": "阿城（金上京会宁府）",
+    "yazhou": "崖州（贬谪文脉·黎峒·琼崖）"
   }
 }

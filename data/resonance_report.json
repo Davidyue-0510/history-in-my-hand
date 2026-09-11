@@ -433,6 +433,7 @@
       "yangzhou",
       "yaoshan",
       "yashan",
+      "yazhou",
       "yehe",
       "yellow_sea_1894",
       "yiling",
@@ -8665,6 +8666,29 @@
       "event_count": 2,
       "avg_resonance": 0.0,
       "best_event": "event:ys_1276",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "yazhou",
+      "name": "yazhou",
+      "total": 21,
+      "layers": {
+        "record": 6,
+        "scholarship": 7,
+        "inference": 5,
+        "gap": 3
+      },
+      "party_counts": {
+        "宋·官修": 4,
+        "后世官修": 5,
+        "五代·官修": 1,
+        "元·官修": 4,
+        "学界": 7
+      },
+      "faction_counts": {},
+      "event_count": 3,
+      "avg_resonance": 0.0,
+      "best_event": "event:ev_yazhou_01",
       "best_resonance": 0.0
     },
     {
@@ -35995,6 +36019,99 @@
       "coverage_frac": 0.0,
       "divergence": 0.333,
       "gap_rate": 0.167,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yazhou_01",
+      "name": "event:ev_yazhou_01",
+      "scenes": [
+        "yazhou"
+      ],
+      "scene_names": [
+        "yazhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yazhou_02",
+      "name": "event:ev_yazhou_02",
+      "scenes": [
+        "yazhou"
+      ],
+      "scene_names": [
+        "yazhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:ev_yazhou_03",
+      "name": "event:ev_yazhou_03",
+      "scenes": [
+        "yazhou"
+      ],
+      "scene_names": [
+        "yazhou"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

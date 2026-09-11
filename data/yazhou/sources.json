@@ -1,0 +1,90 @@
+{
+  "sources": [
+    {
+      "id": "jiu_tangshu",
+      "title": "旧唐书",
+      "party": "五代·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书后晋开运二年（945），距事约130年",
+      "color": "#7A6A53",
+      "compiler": "刘昫等（后晋）",
+      "period": "五代",
+      "note": "吐蕃传、地理志载沙州陷蕃与归义军事，为敦煌多元政权核心史料。"
+    },
+    {
+      "id": "xin_tangshu",
+      "title": "新唐书",
+      "party": "宋·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书宋仁宗嘉祐五年（1060），距事约240年",
+      "color": "#6C7A89",
+      "compiler": "欧阳修、宋祁等（宋）",
+      "period": "宋",
+      "note": "南门说，与旧唐书异（冲突对）"
+    },
+    {
+      "id": "zizhi_tongjian",
+      "title": "资治通鉴",
+      "party": "宋·官修",
+      "distance_label": "宋司马光撰（1084 成书），距三国八百余年",
+      "stance_label": "北宋官修编年通史",
+      "compiler": "司马光（北宋）",
+      "color": "#6C7A89",
+      "period": "宋"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "吐蕃传载吐蕃后裔诸部与王统世代，为拉萨吐蕃王统在宋代延续的汉文佐证。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "潮州史与海上丝路综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    },
+    {
+      "id": "yazhou_zhi",
+      "title": "崖州志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清/民屡修，距唐崖州约千余年",
+      "color": "#7A6A52",
+      "compiler": "《崖州志》（清修）",
+      "period": "清/民",
+      "note": "崖州地方志，载贬谪人物、山川形胜、寺观与海防。"
+    },
+    {
+      "id": "guangdong_tongzhi",
+      "title": "广东通志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清修（郝玉麟等），距明以来黎事数百年",
+      "color": "#7A6A52",
+      "compiler": "《广东通志》（清修）",
+      "period": "清",
+      "note": "广东通志，载黎族（黎峒）分布与州县建制。"
+    },
+    {
+      "id": "taiping_huanyuji",
+      "title": "太平寰宇记",
+      "party": "宋·官修",
+      "stance_label": "北宋官修地理总志",
+      "distance_label": "成书宋太宗太平兴国年间（约980），距唐崖州约百年",
+      "color": "#6C7A89",
+      "compiler": "乐史（宋）",
+      "period": "宋",
+      "note": "北宋地理总志，振州（崖州）山川风俗所出。"
+    }
+  ]
+}

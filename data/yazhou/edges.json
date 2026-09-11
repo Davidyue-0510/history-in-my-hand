@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "yazhou_cheng", "to": "nanshan", "type": "mem", "label": "鉴真驻锡南山建寺，崖州因之弘法" },
+    { "from": "yazhou_cheng", "to": "li_settlement", "type": "geo", "label": "崖州北倚黎峒山地，黎汉错居" },
+    { "from": "yazhou_cheng", "to": "yazhou_port", "type": "mil", "label": "崖州港通舟楫，贬谪登陆与海运所聚" },
+    { "from": "yazhou_cheng", "to": "sanya_bay", "type": "geo", "label": "南临三亚湾，滨海而治" },
+    { "from": "nanshan", "to": "yazhou_port", "type": "geo", "label": "南山临海，鉴真舟舶所泊" }
+  ]
+}

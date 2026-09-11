@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 474 个切片
+// 权威数据源：data/scenes.json 注册的 475 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 474 个切片",
+  "slice": "multi-scene · 475 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -315,6 +315,7 @@ window.SANDBOX_DATA = {
    "xizang_xika_llm",
    "xizang_zongkaba_llm",
    "yangwu_llm",
+   "yazhou",
    "yinchuan",
    "yixian",
    "yuan_qinghua_llm",
@@ -1067,7 +1068,8 @@ window.SANDBOX_DATA = {
   "zunyi",
   "jilin",
   "guilin",
-  "acheng"
+  "acheng",
+  "yazhou"
  ],
  "vocab": {
   "layers": [
@@ -27481,6 +27483,25 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "song",
    "scale_tier": "operational"
+  },
+  "yazhou": {
+   "title": "崖州（贬谪文脉·黎峒·琼崖）",
+   "dossier_label": "崖州",
+   "subtitle": "唐置崖州 · 鉴真驻锡 · 李德裕贬死 · 海南贬谪文化之渊薮",
+   "kind": "county",
+   "region": "thought",
+   "page": "county.html?scene=yazhou",
+   "vocab_pack": "yazhou",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -27957,7 +27978,8 @@ window.SANDBOX_DATA = {
   "zunyi": "slices/zunyi.js",
   "jilin": "slices/jilin.js",
   "guilin": "slices/guilin.js",
-  "acheng": "slices/acheng.js"
+  "acheng": "slices/acheng.js",
+  "yazhou": "slices/yazhou.js"
  },
  "corridors": [
   {

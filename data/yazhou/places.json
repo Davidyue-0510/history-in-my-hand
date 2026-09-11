@@ -1,0 +1,59 @@
+{
+  "places": [
+    {
+      "id": "yazhou_cheng",
+      "name": "崖州城（崖城）",
+      "lon": 109.12,
+      "lat": 18.377,
+      "type": "capital",
+      "modern": "今海南三亚市崖州区（崖城镇）",
+      "note": "唐武德五年置崖州，州治屡迁，明清崖州治于此（崖城）。孤悬海南南鄙，南临南海，北倚黎峒山地，为海南岛南部军政与贬谪要会。坐标取崖城，approx（城镇级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城镇级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "nanshan",
+      "name": "南山（鉴真驻锡处）",
+      "lon": 109.21,
+      "lat": 18.30,
+      "type": "religious",
+      "modern": "今三亚市崖州区南山",
+      "note": "唐天宝七载鉴真东渡遇风漂至振州（崖州），于南山一带驻锡建寺弘法，为海南佛教始传之地说。坐标取南山景区，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（景区级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "li_settlement",
+      "name": "黎峒（黎族山地聚落）",
+      "lon": 109.45,
+      "lat": 18.50,
+      "type": "settlement",
+      "modern": "今海南岛中部—南部山地（五指山—雅加大岭一带）",
+      "note": "黎族为海南岛原住族群，聚于中部山地（黎峒），与沿海州县错居。崖州北境黎峒尤盛，土流分治。坐标取黎族山地聚落，approx（山脉级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（山地级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "sanya_bay",
+      "name": "三亚湾（临川海滨）",
+      "lon": 109.51,
+      "lat": 18.23,
+      "type": "coast",
+      "modern": "今三亚湾",
+      "note": "崖州南滨南海，三亚湾（临川）为滨海沃壤，舟舶可泊，贬谪士人多由此登陆或经此。坐标取三亚湾，approx（海岸级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（海岸级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "yazhou_port",
+      "name": "崖州港（临川港）",
+      "lon": 109.13,
+      "lat": 18.25,
+      "type": "port",
+      "modern": "今三亚港一带",
+      "note": "崖州港为海南岛南部通舟楫之津，南海航线所经，历代贬谪与海运登陆处。坐标取临川港一带，approx（港埠级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（港埠级精度），待 CHGIS 精修"
+    }
+  ]
+}

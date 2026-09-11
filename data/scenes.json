@@ -677,7 +677,8 @@
   "zunyi",
   "jilin",
   "guilin",
-  "acheng"
+  "acheng",
+  "yazhou"
  ],
  "scenes": {
   "langzhong": {
@@ -38023,6 +38024,89 @@
      ],
      "layer": "inference",
      "note": "上京据东北腹地，北控契丹旧地、东联高丽、南向辽东"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "yazhou": {
+   "kind": "county",
+   "region": "thought",
+   "province": "hainan",
+   "title": "崖州（贬谪文脉·黎峒·琼崖）",
+   "dossier_label": "崖州",
+   "subtitle": "唐置崖州 · 鉴真驻锡 · 李德裕贬死 · 海南贬谪文化之渊薮",
+   "primary_place": "yazhou_cheng",
+   "dossier_event": "event:ev_yazhou_01",
+   "vocab_pack": "yazhou",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "崖州孤悬海南南鄙，唐武德置州、天宝鉴真驻锡、大中李德裕贬死，宋世苏轼、卢多逊、胡铨相继贬琼，贬谪文脉与黎峒社会交织，为海南历史文化之渊薮。下方为置州、弘法、贬谪三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以新旧唐书、资治通鉴、宋史等后世官修为本，崖州志、广东通志、太平寰宇记与地方志作补充，现代考订为学界视角；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_yazhou_01": "唐置崖州",
+    "event:ev_yazhou_02": "鉴真驻锡",
+    "event:ev_yazhou_03": "李德裕贬",
+    "place:yazhou_cheng": "崖州城",
+    "person:li_deyu": "李德裕"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "唐置崖州、宋贬士人经略，州县建制嵌入海南社会治理"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "崖州港为南海航线津渡，海运连中原与琼南"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "黎汉错居、贬谪士人带来文教，海南社会格局渐定"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "崖州南扼南海、北控黎峒，为经略海南与南海之锁钥"
     }
    },
    "dims": [

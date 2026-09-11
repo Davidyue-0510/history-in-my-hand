@@ -9577,6 +9577,53 @@
    "_src_line": 8
   },
   {
+   "id": "YZ_G01",
+   "scene": "yazhou",
+   "subject": "place:li_settlement",
+   "title": "黎族早期社会组织（峒制）与迁徙脉络史缺详载",
+   "missing": "民族史 / 考古",
+   "where": "黎族早期峒制与迁徙",
+   "skills": [
+    "民族史",
+    "考古"
+   ],
+   "accept": "需黎族社会史与海南考古",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "YZ_G02",
+   "scene": "yazhou",
+   "subject": "place:yazhou_cheng",
+   "title": "崖州城历代迁治（舍城—崖城等）与确切城址沿革无定论",
+   "missing": "历史地理 / 方志",
+   "where": "崖州城历代迁治",
+   "skills": [
+    "历史地理",
+    "方志"
+   ],
+   "accept": "需海南方志与考古",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
+   "id": "YZ_G03",
+   "scene": "yazhou",
+   "subject": "person:su_shi",
+   "title": "苏轼崖州题咏多散佚，贬琼诗文完整篇目待辑",
+   "missing": "文献学",
+   "where": "苏轼崖州题咏辑佚",
+   "skills": [
+    "文献学"
+   ],
+   "accept": "需苏东坡海外集校笺",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 21
+  },
+  {
    "id": "Y010",
    "scene": "yehe",
    "subject": "place:xiyehe",
