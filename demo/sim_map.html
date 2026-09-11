@@ -472,8 +472,17 @@
     });
 
     // ── 海岸线掩膜（真实边界裁剪控制色）──
+    // v0.232 O4：海岸线掩膜优先用 SIM_BASEMAP 自带 land 陆地多边形（已在 sim_basemap.js 内，
+    // file:// 离线可用、零额外体积）。SIM_BASEMAP.china.land 覆盖全国陆地，海面自然留空→掩膜正确；
+    // 在线时仍保留 2MB CHGIS geojson fetch 作为可选精修（失败仅 console.warn，不影响主路径）。
     function loadCoast(){
-      if(typeof fetch!=='function') return;
+      // v0.232 O4：优先用 SIM_BASEMAP.china.land（全国陆地，已正确抠除渤海/辽东湾，掩膜不溢出海面）。
+      // 注意：SIM_BASEMAP.liaodong.land 在小 bbox 下被 NE 50m 陆地多边形裁成「整框=陆地」矩形（渤海未抠），
+      // 故不用它做掩膜。china.land 覆盖全国、渤海自然留空→掩膜正确；且网格按战区视图栅格化，尺度仍精细。
+      var bm = (window.SIM_BASEMAP && SIM_BASEMAP.china) || (window.SIM_BASEMAP && SIM_BASEMAP.liaodong) || null;
+      var landFeats = (bm && bm.land && bm.land.length) ? bm.land.map(function (f) { return { geom: f.g }; }) : null;
+      if (landFeats) { Sim.setCoast(landFeats); return; }
+      if (typeof fetch !== 'function') return;
       fetch('../data/external/chgis/borders_1820.geojson').then(function(r){return r.json();}).then(function(gj){
         Sim.setCoast((gj.features||[]).map(function(f){ return { geom: f.geometry }; }));
       }).catch(function(e){ console.warn('[sim_map] 海岸线掩膜加载失败（file://?），退化为无裁剪 Voronoi：', e && e.message); });

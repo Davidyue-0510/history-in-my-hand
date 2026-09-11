@@ -1880,7 +1880,13 @@
         partyColors: VOCAB.party_colors || {},
         sceneData: { control: cd.control, control_seats: cd.seats, control_years: cd.years }
       });
-      if (window.BorderLayer && BorderLayer.isReady()) ControlLayer.setCoast(BorderLayer.features());
+      // v0.232 O4：海岸线掩膜优先用场景自带 land 陆地多边形（已在壳/切片内，file:// 离线可用、零额外体积），
+      // 不再强依赖 2MB CHGIS geojson fetch（file:// 下静默失败→实控 Voronoi 溢出海岸）。
+      // 在线时若用户勾选「真实政区界线」(BorderLayer 就绪) 仍可用 CHGIS 政区精修掩膜。
+      var landFeats = (BM.land && BM.land.length) ? BM.land
+        : ((SD.basemap && SD.basemap.land && SD.basemap.land.length) ? SD.basemap.land : null);
+      if (landFeats) ControlLayer.setCoast(landFeats.map(function (f) { return { geom: f.g }; }));
+      else if (window.BorderLayer && BorderLayer.isReady()) ControlLayer.setCoast(BorderLayer.features());
       else ControlLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
       finishCtrlSetup();
     }
@@ -1923,7 +1929,11 @@
       getDpr: function () { return window.devicePixelRatio || 1; },
       sceneData: { impact: D.impact, seats: seats, years: D.impact_years || [impactYear, impactYear + 1] }
     });
-    if (window.BorderLayer && BorderLayer.isReady()) ImpactLayer.setCoast(BorderLayer.features());
+    // v0.232 O4：灾情影响范围掩膜同源——优先场景自带 land 多边形（离线可用），再 BorderLayer/CHGIS fetch。
+    var iLand = (BM.land && BM.land.length) ? BM.land
+      : ((SD.basemap && SD.basemap.land && SD.basemap.land.length) ? SD.basemap.land : null);
+    if (iLand) ImpactLayer.setCoast(iLand.map(function (f) { return { geom: f.g }; }));
+    else if (window.BorderLayer && BorderLayer.isReady()) ImpactLayer.setCoast(BorderLayer.features());
     else ImpactLayer.loadCoast('../data/external/chgis/borders_1820.geojson');
     finishImpactSetup();
   }

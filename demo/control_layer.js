@@ -305,6 +305,16 @@
   }
 
   function isReady() { return ready; }
+  function isCoastReady() { return coastReady; }
+  // v0.232 O4（测试/调试用）：取某经纬度网格单元的海岸掩膜值（1=陆地，0=海/无掩膜）。
+  // 仅用于离线 file:// 验证「实控 Voronoi 不再溢出海岸」，不进任何渲染路径。
+  function coastAt(lon, lat) {
+    if (!coastReady || !grid || !mask) return -1;
+    var ix = Math.round((lon - grid.lon0) / grid.step);
+    var iy = Math.round((grid.lat1 - lat) / grid.step);
+    if (ix < 0 || iy < 0 || ix >= grid.nx || iy >= grid.ny) return -1;
+    return mask[iy * grid.nx + ix];
+  }
   function years() { return curYears; }
 
   window.ControlLayer = {
@@ -312,6 +322,7 @@
     clear: clear, setCoast: setCoast, loadCoast: loadCoast,
     partyColor: partyColor, controllerAt: controllerAt, tally: tally,
     activeParties: activeParties,
-    isReady: isReady, years: years, seats: function () { return seats; }
+    isReady: isReady, isCoastReady: isCoastReady, coastAt: coastAt,
+    years: years, seats: function () { return seats; }
   };
 })();

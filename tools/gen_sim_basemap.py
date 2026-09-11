@@ -77,6 +77,19 @@ def _build_one(bbox, with_admin1, nd=3, stride=2):
     return emb
 
 
+def _correct_land(bbox, nd=3):
+    """v0.232 O4 修正：陆地多边形单独以 stride=2 裁剪。
+
+    根因：_clip_all 对 land 也按 stride 抽稀；stride>=3 会把欧亚大陆海岸线
+    这种**高密度闭合多边形**抽稀成自交/退化环，导致大陆主体消失、'land'
+    退化为若干岛屿碎块→海岸掩膜反相（海变陆、陆变海）。county 壳底图用
+    stride=2 故正确。此处 land 强制 stride=2（与 county 同源），其余图层
+    仍按原 stride 控体积。land 仅用于海岸掩膜（战棋底图用 DemTopo 影像，
+    不靠 land 填色），stride=2 体积可接受。
+    """
+    return BM._clip_all(bbox, nd=nd, stride=2, with_admin1=False)["land"]
+
+
 def main():
     # 战区：视野小，要 admin1 细节，精度保留 3 位
     liaodong = _build_one(LIAODONG_BBOX, with_admin1=True, nd=3, stride=2)
@@ -86,6 +99,9 @@ def main():
         BM._merge_extra_rivers(liaodong, liaodong_rivers, LIAODONG_BBOX, nd=3)
     # 全中国：与 SD.basemap 同样的精度/抽稀，避免重复体积（国家视图不画辽河支流）
     china = _build_one(CHINA_BBOX, with_admin1=True, nd=2, stride=3)
+    # v0.232 O4：land 强制 stride=2（stride>=3 会把大陆海岸线多边形抽稀成退化环→掩膜反相）
+    liaodong["land"] = _correct_land(LIAODONG_BBOX, nd=3)
+    china["land"] = _correct_land(CHINA_BBOX, nd=2)
     wall = _load_wall()
 
     out = {

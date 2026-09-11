@@ -1778,6 +1778,15 @@
       sceneData: D,                    // v0.24：battle 切片无自带 control.json → fallback 全局辽东
       partyColors: SD && SD.vocab && SD.vocab.party_colors   // v0.24c：语境包单一真值
     });
+    // v0.232 O4：sarhu 旧引擎此前从未设置海岸线掩膜→实控 Voronoi 在线/离线都溢出海岸。
+    // 现用场景自带陆地多边形（D.basemap.land，已在切片内，file:// 离线可用）做掩膜；兜底 SD.basemap.land。
+    (function () {
+      var lb = ((D && D.basemap && D.basemap.land && D.basemap.land.length) ? D.basemap.land
+        : ((SD && SD.basemap && SD.basemap.land && SD.basemap.land.length) ? SD.basemap.land : null));
+      if (lb && ControlLayer.isReady && ControlLayer.isReady()) {
+        ControlLayer.setCoast(lb.map(function (f) { return { geom: f.g }; }));
+      }
+    })();
   }
   applyView(false);
   wireControl();
