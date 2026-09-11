@@ -689,7 +689,8 @@
   "chongqing",
   "chibi_battle",
   "feishui_battle",
-  "guandu_battle"
+  "guandu_battle",
+  "changping_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -38647,6 +38648,98 @@
     }
    },
    "province": "henan",
+   "related": []
+  },
+  "changping_battle": {
+   "kind": "county",
+   "region": "warring_states",
+   "title": "长平之战·血流成川",
+   "dossier_label": "长平之战",
+   "subtitle": "周赧王五十五年（前260）· 秦 vs 赵",
+   "primary_place": "changping",
+   "dossier_event": "event:kengzhi",
+   "vocab_pack": "changping_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "周赧王五十五年（前260），秦赵争上党于长平，白起诱围分割、断粮四十六日，坑杀赵卒四十五万，赵国精锐几尽，东方诸侯震惧。",
+   "parties_note": "本切片主干为后世官修史（史记/资治通鉴），无秦、赵双方当代原始档案；双方实况经后世史官回溯叙述，缺口为一等公民。系统不裁决，只并列。",
+   "subject_names": {
+    "event:shangdang": "上党归赵",
+    "event:lianpo": "廉颇屯长平",
+    "event:fanjian": "秦行反间",
+    "event:zhaokuo": "赵括代将",
+    "event:baiqi_weibei": "白起诱围",
+    "event:weikun": "长平围困",
+    "event:kengzhi": "长平坑卒",
+    "place:changping": "长平",
+    "place:dan_river": "丹河",
+    "place:shangdang": "上党",
+    "person:baiqi": "白起",
+    "person:zhao_kuo": "赵括",
+    "person:lian_po": "廉颇"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "warring_states",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "长平之战：朝堂凝聚力——赵受上党、中反间换将；秦昭襄王倾国助白起"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "长平之战：后勤物力——白起断粮四十六日、分割包围决胜"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "长平之战：人口动员——赵国倾国出动、坑卒四十五万丧精锐"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "长平之战：地缘战略——上党为轴，秦断野王绝赵归路、钳形取长平"
+    }
+   },
+   "province": "shanxi",
    "related": []
   }
  },

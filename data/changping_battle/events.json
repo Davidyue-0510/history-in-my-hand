@@ -1,0 +1,11 @@
+{
+  "events": [
+    {"id": "ev_shangdang", "subject": "event:shangdang", "year": -262, "era": "周赧王五十三年（前262）", "title": "上党归赵", "kind": "政治·归附", "text": "韩上党郡守冯亭不愿降秦，献十七城于赵；赵受之，秦赵争上党之衅遂开。"},
+    {"id": "ev_lianpo", "subject": "event:lianpo", "year": -260, "era": "周赧王五十五年（前260）", "title": "廉颇屯长平", "kind": "战事·拒守", "text": "秦攻上党，廉颇为将拒秦于长平，坚壁不出、以老秦师，两军夹丹水相持。"},
+    {"id": "ev_fanjian", "subject": "event:fanjian", "year": -260, "era": "周赧王五十五年（前260）", "title": "秦行反间", "kind": "政治·反间", "text": "范雎行反间于赵，扬言秦唯畏赵括；赵王疑廉颇怯战，召还之，以赵括代将。"},
+    {"id": "ev_zhaokuo", "subject": "event:zhaokuo", "year": -260, "era": "周赧王五十五年（前260）", "title": "赵括代将", "kind": "战事·易将", "text": "赵括至军，一反廉颇持久之策，易将易法、悉众出击，长平前线与秦接战。"},
+    {"id": "ev_baiqi_weibei", "subject": "event:baiqi_weibei", "year": -260, "era": "周赧王五十五年（前260）", "title": "白起诱围", "kind": "战事·诱敌", "text": "白起佯败，奇兵二万五千绝赵军后、五千骑绝赵壁间，分割包围赵军于长平。"},
+    {"id": "ev_weikun", "subject": "event:weikun", "year": -260, "era": "周赧王五十五年（前260）", "title": "长平围困", "kind": "战事·围困", "text": "赵军被围四十六日，饿极，赵括率锐卒搏战，中流矢死，余众断粮不能战。"},
+    {"id": "ev_kengzhi", "subject": "event:kengzhi", "year": -260, "era": "周赧王五十五年（前260）", "title": "长平坑卒", "kind": "战事·决战", "text": "白起挟诈尽坑杀赵卒，遗小者二百四十人归赵，前后斩首虏四十五万（约数），赵国精锐几尽，东方诸侯震惧。"}
+  ]
+}

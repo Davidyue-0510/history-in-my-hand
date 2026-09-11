@@ -1,0 +1,19 @@
+{
+  "_comment": "长平控制层（前262—前260）。前262 冯亭献上党、赵受之，赵据长平/上党；前260 白起诱围、坑杀赵卒，秦取长平。本切片用 _years=[-262,-260]，使主时间轴第 1 事件（前262）显示『赵据上党』、第 2—7 事件（前260）显示『秦取长平』。争夺地按『赵在前（end=-261）、秦在后（start=-260）』排序，controllerAt 取首个匹配年窗：前262 返赵、前260 返秦。",
+  "_years": [-262, -260],
+  "control": [
+    {"place_id": "handan", "party": "赵军", "start": -262, "end": null, "basis": "赵都，长平之战后方中枢与援源", "note": "赵根本"},
+    {"place_id": "xianyang", "party": "秦军", "start": -262, "end": null, "basis": "秦都，白起受命南下攻赵", "note": "秦根本"},
+    {"place_id": "yewang", "party": "秦军", "start": -262, "end": null, "basis": "前263 已为秦取，白起由此断上党归路", "note": "秦已据"},
+    {"place_id": "changping", "party": "赵军", "start": -262, "end": -261, "basis": "廉颇屯长平坚壁拒秦，战前属赵", "note": "赵前哨"},
+    {"place_id": "shangdang", "party": "赵军", "start": -262, "end": -261, "basis": "冯亭献赵，赵受上党，战前属赵", "note": "赵新附"},
+    {"place_id": "xuanshi", "party": "赵军", "start": -262, "end": -261, "basis": "长平附近赵前哨，战前属赵", "note": "赵前哨"},
+    {"place_id": "kunggangling", "party": "赵军", "start": -262, "end": -261, "basis": "赵括出击处，战前属赵", "note": "赵前哨"},
+    {"place_id": "dan_river", "party": "赵军", "start": -262, "end": -261, "basis": "赵军夹丹水而阵，战前属赵", "note": "赵前哨"},
+    {"place_id": "changping", "party": "秦军", "start": -260, "end": null, "basis": "白起诱围坑杀后秦取长平", "note": "战后属秦"},
+    {"place_id": "shangdang", "party": "秦军", "start": -260, "end": null, "basis": "上党随长平入秦", "note": "战后属秦"},
+    {"place_id": "xuanshi", "party": "秦军", "start": -260, "end": null, "basis": "长平破后秦控泫氏", "note": "战后属秦"},
+    {"place_id": "kunggangling", "party": "秦军", "start": -260, "end": null, "basis": "赵括溃后秦据空仓岭", "note": "战后属秦"},
+    {"place_id": "dan_river", "party": "秦军", "start": -260, "end": null, "basis": "赵军降后丹水两岸属秦", "note": "战后属秦"}
+  ]
+}

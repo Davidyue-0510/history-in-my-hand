@@ -1,9 +1,9 @@
 {
-  "scenes_total": 481,
-  "historical": 472,
+  "scenes_total": 482,
+  "historical": 473,
   "fictional": 9,
-  "assertions_total": 7179,
-  "sources_total": 493,
+  "assertions_total": 7196,
+  "sources_total": 494,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -25,6 +25,7 @@
     "bisheng_movable_type",
     "bohai_kingdom_llm",
     "chama_xizang_llm",
+    "changping_battle",
     "changping_llm",
     "changsha_yao_llm",
     "chaozhou",
@@ -346,7 +347,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 687,
+  "leads_total": 689,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3765,6 +3766,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "changping_battle",
+      "title": "长平之战·血流成川",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4248,6 +4256,7 @@
     "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）",
     "chibi_battle": "赤壁之战·火烧乌林",
     "feishui_battle": "淝水之战·风声鹤唳",
-    "guandu_battle": "官渡之战·以少胜多"
+    "guandu_battle": "官渡之战·以少胜多",
+    "changping_battle": "长平之战·血流成川"
   }
 }

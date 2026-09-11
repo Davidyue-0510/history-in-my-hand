@@ -39,6 +39,7 @@
       "canhebei",
       "chama_xizang_llm",
       "changping",
+      "changping_battle",
       "changping_llm",
       "changsha_yao_llm",
       "chanyuan",
@@ -1063,6 +1064,26 @@
       "event_count": 3,
       "avg_resonance": 0.0,
       "best_event": "event:cp_jz",
+      "best_resonance": 0.0
+    },
+    {
+      "scene": "changping_battle",
+      "name": "changping_battle",
+      "total": 17,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "inference": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12,
+        "二手综述": 5
+      },
+      "faction_counts": {},
+      "event_count": 7,
+      "avg_resonance": 0.0,
+      "best_event": "event:baiqi_weibei",
       "best_resonance": 0.0
     },
     {
@@ -9904,6 +9925,37 @@
       ],
       "scene_names": [
         "guandu_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:baiqi_weibei",
+      "name": "event:baiqi_weibei",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
       ],
       "total": 1,
       "gap_count": 0,
@@ -38840,6 +38892,37 @@
       }
     },
     {
+      "subject": "event:fanjian",
+      "name": "event:fanjian",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:feishui_duizhi",
       "name": "event:feishui_duizhi",
       "scenes": [
@@ -41717,6 +41800,37 @@
       }
     },
     {
+      "subject": "event:kengzhi",
+      "name": "event:kengzhi",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:kezhun_qincheng",
       "name": "event:kezhun_qincheng",
       "scenes": [
@@ -42446,6 +42560,37 @@
       "coverage_frac": 0.0,
       "divergence": 0.333,
       "gap_rate": 0.2,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:lianpo",
+      "name": "event:lianpo",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,
@@ -43982,6 +44127,37 @@
       }
     },
     {
+      "subject": "event:shangdang",
+      "name": "event:shangdang",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:shoushi_banxing",
       "name": "event:shoushi_banxing",
       "scenes": [
@@ -45207,6 +45383,37 @@
       ],
       "scene_names": [
         "wencheng"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:weikun",
+      "name": "event:weikun",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
       ],
       "total": 2,
       "gap_count": 0,
@@ -46759,6 +46966,37 @@
         "zhangheng"
       ],
       "total": 4,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:zhaokuo",
+      "name": "event:zhaokuo",
+      "scenes": [
+        "changping_battle"
+      ],
+      "scene_names": [
+        "changping_battle"
+      ],
+      "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,

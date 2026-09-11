@@ -1,0 +1,12 @@
+{
+  "persons": [
+    {"id": "baiqi", "name": "白起", "party": "秦军", "note": "武安君，秦上将，长平之战统帅，诱围分割、坑杀赵卒"},
+    {"id": "zhao_kuo", "name": "赵括", "party": "赵军", "note": "赵奢之子，代廉颇为将，易将易法、轻率出击，战死长平"},
+    {"id": "lian_po", "name": "廉颇", "party": "赵军", "note": "赵老将，初屯长平坚壁拒秦、以老秦师"},
+    {"id": "zhao_xiaocheng", "name": "赵孝成王", "party": "赵军", "note": "赵王，受上党、中反间换将，决策之主"},
+    {"id": "fan_ju", "name": "范雎", "party": "秦军", "note": "秦相，献远交近攻，行间换赵将廉颇为赵括"},
+    {"id": "wang_he", "name": "王龁", "party": "秦军", "note": "秦将，初攻上党、与廉颇夹丹水相拒"},
+    {"id": "feng_ting", "name": "冯亭", "party": "赵军", "note": "韩上党守，献地于赵，启秦赵长平之衅"},
+    {"id": "qin_zhaoxiang", "name": "秦昭襄王", "party": "秦军", "note": "秦王，决策倾国助白起，亲至河内督战、赐民爵"}
+  ]
+}

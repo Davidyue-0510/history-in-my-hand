@@ -1,0 +1,12 @@
+{
+  "places": [
+    {"id": "changping", "name": "长平", "lat": 35.80, "lon": 112.92, "type": "city", "note": "主战场，今山西晋城高平市，赵军坚壁与秦接战处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "shangdang", "name": "上党", "lat": 36.18, "lon": 113.12, "type": "region", "note": "冯亭献赵之郡，今山西长治一带，秦赵争夺枢纽", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "dan_river", "name": "丹河", "lat": 35.78, "lon": 112.95, "type": "river", "note": "长平战场河流，赵军夹丹水而阵", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "handan", "name": "邯郸", "lat": 36.61, "lon": 114.49, "type": "city", "note": "赵都，今河北邯郸，长平之战后方与援源", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xianyang", "name": "咸阳", "lat": 34.34, "lon": 108.71, "type": "city", "note": "秦都，今陕西咸阳，白起受命与王龁南下攻赵", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "yewang", "name": "野王", "lat": 35.10, "lon": 112.94, "type": "city", "note": "太行南陉，今河南沁阳，前263 已为秦取，白起由此断上党归路", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xuanshi", "name": "泫氏", "lat": 35.80, "lon": 112.90, "type": "city", "note": "长平附近邑，今高平，赵军前哨", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "kunggangling", "name": "空仓岭", "lat": 35.72, "lon": 112.80, "type": "region", "note": "长平以西秦军防线，赵括由此出击被白起诱围", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+  ]
+}

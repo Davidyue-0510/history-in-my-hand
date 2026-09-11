@@ -42,6 +42,7 @@
 | canhebei | 16 | 3 | **0.000** | event:ch_jz（0.000） | gap 3 / inference 1 / record 9 / scholarship 3 |
 | chama_xizang_llm | 16 | 2 | **0.000** | event:ev_chama_xizang_llm_01（0.000） | gap 1 / inference 1 / record 13 / scholarship 1 |
 | changping | 15 | 3 | **0.000** | event:cp_jz（0.000） | gap 2 / inference 1 / record 8 / scholarship 4 |
+| changping_battle | 17 | 7 | **0.000** | event:baiqi_weibei（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | changping_llm | 15 | 4 | **0.000** | event:ev_changping_llm_01（0.000） | gap 1 / record 13 / scholarship 1 |
 | changsha_yao_llm | 14 | 2 | **0.000** | event:ev_changsha_yao_llm_01（0.000） | gap 1 / inference 1 / record 11 / scholarship 1 |
 | chanyuan | 13 | 2 | **0.000** | event:cy_1004（0.000） | gap 2 / inference 2 / record 6 / scholarship 3 |
@@ -524,6 +525,7 @@
 | 事件 | 切片 | 共振 | 覆盖 | 分歧 | 缺口 | 总数 | 明/清/朝鲜/综述 |
 |---|---|---|---|---|---|---|---|
 | event:baima | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:baiqi_weibei | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:bc_1578 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
@@ -1456,6 +1458,7 @@
 | event:ev_zunyi_03 | zunyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_zuyong_diao_llm_01 | zuyong_diao_llm | **0.000** | 0/3 | 0.17 | 0.18 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_zuyong_diao_llm_02 | zuyong_diao_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:fanjian | changping_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:feishui_duizhi | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:feishui_zhanyi | feishui_battle | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:fi_compass | four_inv | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -1548,6 +1551,7 @@
 | event:jz_743 | jianzhen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jz_753 | jianzhen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:keju_chuang | sui_keju | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:kengzhi | changping_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:kezhun_qincheng | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:kf_1642a | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:kf_1642b | kaifeng_juekou | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1572,6 +1576,7 @@
 | event:li_1641 | little_ice | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:li_1644 | little_ice | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
+| event:lianpo | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:liao_nanqin | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:liubei_nanche | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:liucong_jiangcao | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1621,6 +1626,7 @@
 | event:qn_228 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:qn_230 | qin_unify | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:ru_guanzhong | chu_han | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:shangdang | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:shoushi_banxing | guo_shoujing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:sk_1072 | shenkuo | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:sk_1088 | shenkuo | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1661,6 +1667,7 @@
 | event:tp_1864 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:wc_641 | wencheng | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:wc_temple | wencheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:weikun | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:wg_91 | wugu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:wg_war | wugu | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:wm_9 | wangmang | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -1711,6 +1718,7 @@
 | event:zh_1405 | zhenghe | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:zh_1433 | zhenghe | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:zh_test | zhangheng | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:zhaokuo | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zhizao_geming | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zhouyu_gong_jiangling | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zj_1406 | zijincheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |

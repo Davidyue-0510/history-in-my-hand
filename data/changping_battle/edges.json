@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "xianyang", "to": "shangdang", "type": "military", "label": "咸阳—上党（秦攻赵主线）"},
+    {"from": "shangdang", "to": "changping", "type": "military", "label": "上党—长平（赵军前哨）"},
+    {"from": "handan", "to": "changping", "type": "military", "label": "邯郸—长平（赵都援长平）"},
+    {"from": "changping", "to": "dan_river", "type": "river", "label": "长平夹丹水"},
+    {"from": "xuanshi", "to": "changping", "type": "military", "label": "泫氏—长平（赵前哨）"},
+    {"from": "kunggangling", "to": "changping", "type": "military", "label": "空仓岭—长平（赵括出击被诱）"},
+    {"from": "yewang", "to": "shangdang", "type": "military", "label": "野王—上党（白起断归路）"},
+    {"from": "xianyang", "to": "yewang", "type": "military", "label": "咸阳—野王（秦已取，南窥上党）"},
+    {"from": "changping", "to": "xuanshi", "type": "military", "label": "长平—泫氏"},
+    {"from": "dan_river", "to": "kunggangling", "type": "river", "label": "丹水—空仓岭（战场水系）"}
+  ]
+}

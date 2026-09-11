@@ -41,6 +41,7 @@ window.SANDBOX_RESONANCE = {
    "canhebei",
    "chama_xizang_llm",
    "changping",
+   "changping_battle",
    "changping_llm",
    "changsha_yao_llm",
    "chanyuan",
@@ -1065,6 +1066,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 3,
    "avg_resonance": 0.0,
    "best_event": "event:cp_jz",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "changping_battle",
+   "name": "changping_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:baiqi_weibei",
    "best_resonance": 0.0
   },
   {
