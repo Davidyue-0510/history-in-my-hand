@@ -17,42 +17,22 @@
 
   if (!TG || !cv || !grid) return;
 
-  /* ═══════════ 地形预览（缩略图，响应式重绘）═══════════ */
+  /* ═══════════ 地形预览（缩略图，响应式重绘）═══════════
+   * v0.234：背景改用 DemTopo 分层设色栅格（复旦 CHGIS，绿低黄高），
+   * 与 sarhu.html / county.html（三大战役）一致；弃用原 ASTER GDEM 淡赭 hillshade。 */
   var dpr = window.devicePixelRatio || 1;
   var W = 0, H = 0;
-  var RAMP = [
-    [0, [214, 227, 232]], [1, [243, 240, 229]], [80, [235, 229, 212]],
-    [250, [223, 213, 188]], [500, [208, 194, 161]], [900, [191, 172, 136]],
-    [1400, [173, 150, 115]], [1800, [156, 131, 98]]
-  ];
-  function rampColor(e) {
-    if (e <= 0) return RAMP[0][1];
-    for (var i = 1; i < RAMP.length; i++) {
-      var a = RAMP[i - 1], b = RAMP[i];
-      if (e <= b[0]) {
-        var t = (e - a[0]) / (b[0] - a[0] || 1);
-        return [a[1][0] + (b[1][0] - a[1][0]) * t,
-                a[1][1] + (b[1][1] - a[1][1]) * t,
-                a[1][2] + (b[1][2] - a[1][2]) * t];
-      }
-    }
-    return RAMP[RAMP.length - 1][1];
-  }
+
+  var DEMTOPO = {
+    src: 'demtopo_china.jpg',
+    lonMin: 60.00556, lonMax: 149.116667, latMin: 10, latMax: 59.98861
+  };
+  var demtopoImg = new Image();
+  var demtopoReady = false;
+  demtopoImg.onload = function () { demtopoReady = true; draw(); };
+  demtopoImg.src = DEMTOPO.src;
 
   var ctx = cv.getContext('2d');
-  var nx = TG.nx, ny = TG.ny, E = TG.elev;
-  var midLat = TG.lat0 + (ny - 1) * TG.step / 2;
-  var cellY = TG.step * 111320;
-  var cellX = TG.step * 111320 * Math.cos(midLat * Math.PI / 180);
-  var ZF = 2.6, zen = (90 - 45) * Math.PI / 180;
-  var azm = (360 - 315 + 90) * Math.PI / 180;
-
-  function z(ix, iy) {
-    ix = Math.max(0, Math.min(nx - 1, ix));
-    iy = Math.max(0, Math.min(ny - 1, iy));
-    var v = E[iy * nx + ix];
-    return v == null ? 0 : v;
-  }
   // 动态边界的变量（在 scenes/order 就绪后于下方计算）
   var lonMin, lonMax, latMin, latMax;
 
@@ -81,6 +61,7 @@
 
   /* ════════ 动态地图边界：地形网格 ∪ 所有切片主地点 ════════ */
   (function computeBounds() {
+    var nx = TG.nx, ny = TG.ny;   // 仅用于地形网格边界，DemTopo 背景不再逐格绘制
     var lons = [TG.lon0, TG.lon0 + (nx - 1) * TG.step];
     var lats = [TG.lat0, TG.lat0 + (ny - 1) * TG.step];
     order.forEach(function (sk) {
@@ -200,31 +181,18 @@
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.fillStyle = '#EFECE2'; ctx.fillRect(0, 0, W, H);
 
-    var stepX = Math.max(1, Math.round(nx / W));
-    var stepY = Math.max(1, Math.round(ny / H));
-    for (var iy = 0; iy < ny; iy += stepY) {
-      for (var ix = 0; ix < nx; ix += stepX) {
-        var e = z(ix, iy);
-        var dzdx = ((z(ix + 1, iy - 1) + 2 * z(ix + 1, iy) + z(ix + 1, iy + 1)) -
-                    (z(ix - 1, iy - 1) + 2 * z(ix - 1, iy) + z(ix - 1, iy + 1))) / (8 * cellX);
-        var dzdy = ((z(ix - 1, iy + 1) + 2 * z(ix, iy + 1) + z(ix + 1, iy + 1)) -
-                    (z(ix - 1, iy - 1) + 2 * z(ix, iy - 1) + z(ix + 1, iy - 1))) / (8 * cellY);
-        var slope = Math.atan(ZF * Math.sqrt(dzdx * dzdx + dzdy * dzdy));
-        var aspect = Math.atan2(dzdy, -dzdx);
-        var hs = Math.cos(zen) * Math.cos(slope) + Math.sin(zen) * Math.sin(slope) * Math.cos(azm - aspect);
-        hs = Math.max(0, Math.min(1, hs));
-        var col = rampColor(e);
-        var f = e <= 0 ? 1 : (0.62 + 0.52 * hs);
-        var lo = TG.lon0 + ix * TG.step;
-        var la = TG.lat0 + iy * TG.step;
-        var px = gx(lo), py = gy(la);
-        var pw = (TG.step / (lonMax - lonMin)) * W * (stepX + 1);
-        var ph = (TG.step / (latMax - latMin)) * H * (stepY + 1);
-        ctx.fillStyle = 'rgb(' + Math.round(col[0] * f) + ',' +
-                                Math.round(col[1] * f) + ',' +
-                                Math.round(col[2] * f) + ')';
-        ctx.fillRect(px, py, pw + 1, ph + 1);
-      }
+    // 背景 = DemTopo 分层设色（绿低黄高）：裁出当前视图边界对应的子图，拉伸填满画布，
+    // 与 sarhu.html / 三大战役同款；view 边界（lonMin..latMax）由 computeBounds 算定，即画布全幅。
+    if (demtopoReady) {
+      var dLon = DEMTOPO.lonMax - DEMTOPO.lonMin;
+      var dLat = DEMTOPO.latMax - DEMTOPO.latMin;
+      var sx = (lonMin - DEMTOPO.lonMin) / dLon * demtopoImg.naturalWidth;
+      var sw = (lonMax - lonMin) / dLon * demtopoImg.naturalWidth;
+      var sy = (DEMTOPO.latMax - latMax) / dLat * demtopoImg.naturalHeight;
+      var sh = (latMax - latMin) / dLat * demtopoImg.naturalHeight;
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(demtopoImg, sx, sy, sw, sh, 0, 0, W, H);
     }
 
     // 自动 pin 所有切片中心点（按当前筛选结果），做一次简单避让
