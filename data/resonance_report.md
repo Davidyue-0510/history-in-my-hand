@@ -12,6 +12,7 @@
 
 | 切片 | 断言 | 事件 | 平均共振 | 最高共振事件 | 四层分布 |
 |---|---|---|---|---|---|
+| acheng | 21 | 3 | **0.000** | event:ev_acheng_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 7 |
 | anhui_daizhen_llm | 14 | 1 | **0.000** | event:ev_anhui_daizhen_llm_01（0.000） | gap 1 / inference 2 / record 9 / scholarship 2 |
 | anhui_huizhou_llm | 16 | 1 | **0.000** | event:ev_anhui_huizhou_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 5 |
 | anxi_sizhen_llm | 19 | 4 | **0.000** | event:ev_anxi_sizhen_llm_01（0.000） | gap 1 / inference 4 / record 12 / scholarship 2 |
@@ -580,6 +581,9 @@
 | event:dz_jinwen | dunzun | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:dz_legacy | dunzun | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dz_taixue | dunzun | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_acheng_01 | acheng | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:ev_acheng_02 | acheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_acheng_03 | acheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_anhui_daizhen_llm_01 | anhui_daizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_anhui_huizhou_llm_01 | anhui_huizhou_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_anxi_sizhen_llm_01 | anxi_sizhen_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |

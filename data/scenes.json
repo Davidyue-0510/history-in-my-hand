@@ -676,7 +676,8 @@
   "lhasa",
   "zunyi",
   "jilin",
-  "guilin"
+  "guilin",
+  "acheng"
  ],
  "scenes": {
   "langzhong": {
@@ -37939,6 +37940,89 @@
      ],
      "layer": "inference",
      "note": "越城岭—灵渠为五岭孔道，桂林北拒中原、南控岭南"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "acheng": {
+   "kind": "county",
+   "region": "jianzhou",
+   "province": "heilongjiang",
+   "title": "阿城（金上京会宁府）",
+   "dossier_label": "阿城",
+   "subtitle": "女真建国 · 金上京 · 金源文化",
+   "primary_place": "acheng_cheng",
+   "dossier_event": "event:ev_acheng_01",
+   "vocab_pack": "acheng",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "阿城位于阿什河畔、松嫩平原东南缘，1115 年完颜阿骨打称帝建金，定都会宁府，是为金源。下方为建国、灭辽与迁都三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以元修金史为本，辽史、宋史作旁证，现代考订作学界补充；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_acheng_01": "完颜阿骨打称帝建金",
+    "event:ev_acheng_02": "金灭辽",
+    "event:ev_acheng_03": "海陵王迁都燕京",
+    "place:acheng_cheng": "阿城",
+    "person:wanyan_aguda": "完颜阿骨打"
+   },
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "女真勃极烈制与猛安谋克组织以上京为核心，形成军政合一的建国基础"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "阿什河航运与松嫩平原农牧业支撑上京物资"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "上京聚集女真宗室、俘户、工匠，形成多族群都市"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "上京据东北腹地，北控契丹旧地、东联高丽、南向辽东"
     }
    },
    "dims": [

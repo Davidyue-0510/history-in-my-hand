@@ -1,0 +1,52 @@
+{
+ "_comment": "per-scene vocab pack for 阿城（金上京会宁府）。canon 源（liaoshi/songshi/modern）元数据逐字镜像全局定义（防 W08），新增 jinshi/acheng_fuzhi 两唯一源。立场靠来源派生，不伪造。",
+ "_base": null,
+ "parties": [
+  "元·官修",
+  "学界",
+  "后世官修"
+ ],
+ "party_bucket": {
+  "元·官修": "元·官修",
+  "学界": "学界",
+  "后世官修": "后世官修"
+ },
+ "party_colors": {
+  "元·官修": "#6C7A89",
+  "学界": "#2E7D8F",
+  "后世官修": "#7A6A52"
+ },
+ "factions": {
+  "f_元·官修": {
+   "name": "元·官修",
+   "macro_party": "元·官修",
+   "note": "auto"
+  },
+  "f_学界": {
+   "name": "学界",
+   "macro_party": "学界",
+   "note": "auto"
+  },
+  "f_后世官修": {
+   "name": "后世官修",
+   "macro_party": "后世官修",
+   "note": "auto"
+  }
+ },
+ "faction_colors": {
+  "f_元·官修": "#6C7A89",
+  "f_学界": "#2E7D8F",
+  "f_后世官修": "#7A6A52"
+ },
+ "layers": {
+  "record": "原始史料",
+  "scholarship": "学界研究",
+  "inference": "合理推断",
+  "gap": "证据缺口"
+ },
+ "quote_status": {
+  "verbatim": "直接引文",
+  "paraphrase_unverified": "转述待核",
+  "generated": "生成"
+ }
+}

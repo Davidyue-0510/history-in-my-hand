@@ -1,11 +1,12 @@
 {
-  "scenes_total": 473,
-  "historical": 464,
+  "scenes_total": 474,
+  "historical": 465,
   "fictional": 9,
-  "assertions_total": 7023,
-  "sources_total": 474,
+  "assertions_total": 7044,
+  "sources_total": 476,
   "factions_total": 9,
   "vocab_packs": [
+    "acheng",
     "anhui_daizhen_llm",
     "anhui_huizhou_llm",
     "anxi_sizhen_llm",
@@ -338,7 +339,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 666,
+  "leads_total": 669,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3701,6 +3702,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "acheng",
+      "title": "阿城（金上京会宁府）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4176,6 +4184,7 @@
     "lhasa": "拉萨（逻娑·吐蕃都城·布达拉宫·唐蕃会盟碑）",
     "zunyi": "遵义（播州土司·茅台·海龙屯）",
     "jilin": "吉林（吉林乌拉·松花江·吉林将军）",
-    "guilin": "桂林（灵渠·靖江王府）"
+    "guilin": "桂林（灵渠·靖江王府）",
+    "acheng": "阿城（金上京会宁府）"
   }
 }

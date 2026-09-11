@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "acheng_cheng", "to": "huining_fuqin", "type": "mem", "label": "会宁府皇城在阿城城区南郊，为金初宫殿所在" },
+    { "from": "acheng_cheng", "to": "jin_taizu_ling", "type": "mem", "label": "金太祖完颜阿骨打陵寝在阿城近郊" },
+    { "from": "acheng_cheng", "to": "ashhe_river", "type": "geo", "label": "阿城位于阿什河畔，按出虎水为金源" },
+    { "from": "acheng_cheng", "to": "songhua_river", "type": "geo", "label": "松花江为北上京地区对外水运通道" },
+    { "from": "ashhe_river", "to": "songhua_river", "type": "geo", "label": "阿什河汇入松花江" }
+  ]
+}

@@ -3,6 +3,54 @@
  "_schema_version": "0.1",
  "leads": [
   {
+   "id": "AC_G01",
+   "scene": "acheng",
+   "subject": "place:huining_fuqin",
+   "title": "上京皇城宫殿具体布局与建筑形制考古未完全明了",
+   "missing": "考古 / 建筑史",
+   "where": "上京皇城宫殿布局",
+   "skills": [
+    "考古",
+    "建筑史"
+   ],
+   "accept": "需金上京遗址考古报告",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "AC_G02",
+   "scene": "acheng",
+   "subject": "event:ev_acheng_01",
+   "title": "1115 年称帝具体仪式与即位地点无详载",
+   "missing": "史料 / 考古",
+   "where": "收国元年即位仪式",
+   "skills": [
+    "史料",
+    "考古"
+   ],
+   "accept": "需金史与考古互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
+   "id": "AC_G03",
+   "scene": "acheng",
+   "subject": "place:acheng_cheng",
+   "title": "金上京鼎盛期人口与城市规模无确载",
+   "missing": "历史地理 / 方志",
+   "where": "上京会宁府人口规模",
+   "skills": [
+    "历史地理",
+    "方志"
+   ],
+   "accept": "需考古与文献互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 21
+  },
+  {
    "id": "ANH_011",
    "scene": "anhui_daizhen_llm",
    "subject": "person:ANH__p01",

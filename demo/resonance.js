@@ -11,6 +11,7 @@ window.SANDBOX_RESONANCE = {
    "综述考订"
   ],
   "scenes": [
+   "acheng",
    "anhui_daizhen_llm",
    "anhui_huizhou_llm",
    "anxi_sizhen_llm",
@@ -489,6 +490,27 @@ window.SANDBOX_RESONANCE = {
   }
  },
  "scene_summary": [
+  {
+   "scene": "acheng",
+   "name": "acheng",
+   "total": 21,
+   "layers": {
+    "record": 6,
+    "scholarship": 7,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "元·官修": 10,
+    "后世官修": 4,
+    "学界": 7
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_acheng_01",
+   "best_resonance": 0.0
+  },
   {
    "scene": "anhui_daizhen_llm",
    "name": "anhui_daizhen_llm",

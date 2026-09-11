@@ -1,0 +1,59 @@
+{
+  "places": [
+    {
+      "id": "acheng_cheng",
+      "name": "阿城（金上京会宁府）",
+      "lon": 126.96,
+      "lat": 45.53,
+      "type": "capital",
+      "modern": "今黑龙江省哈尔滨市阿城区",
+      "note": "金初都城上京会宁府所在，女真建国核心。坐标取阿城区中心，approx（城市级精度）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城市级精度），待 CHGIS 精修"
+    },
+    {
+      "id": "huining_fuqin",
+      "name": "会宁府皇城遗址",
+      "lon": 126.97,
+      "lat": 45.52,
+      "type": "ruins",
+      "modern": "阿城区南郊·金上京会宁府遗址",
+      "note": "金上京南北二城与皇城遗址，全国重点文物保护单位。坐标取遗址区，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（遗址区精度），待 CHGIS 精修"
+    },
+    {
+      "id": "jin_taizu_ling",
+      "name": "金太祖陵址（完颜阿骨打陵）",
+      "lon": 126.97,
+      "lat": 45.51,
+      "type": "tomb",
+      "modern": "阿城区阿什河街道·金太祖陵公园",
+      "note": "金太祖完颜阿骨打陵寝所在，后世重修。坐标 approx（城内点位）。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（城内点位），待 CHGIS 精修"
+    },
+    {
+      "id": "ashhe_river",
+      "name": "阿什河（按出虎水）",
+      "lon": 127.0,
+      "lat": 45.5,
+      "type": "river",
+      "modern": "纵贯阿城区，汇入松花江",
+      "note": "女真语「按出虎水」（金之源），阿什河滋养松嫩平原东南缘，为金源文化发祥地。坐标取阿城段中线，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（江段中线），待 CHGIS 精修"
+    },
+    {
+      "id": "songhua_river",
+      "name": "松花江（哈尔滨段）",
+      "lon": 126.8,
+      "lat": 45.8,
+      "type": "river",
+      "modern": "今哈尔滨市北·松花江干流",
+      "note": "黑龙江最大支流，上京地区对外水运通道。坐标取哈尔滨—阿城间江段，approx。",
+      "geo_match": "approx",
+      "geo_note": "公开地理数据（江段中线），待 CHGIS 精修"
+    }
+  ]
+}

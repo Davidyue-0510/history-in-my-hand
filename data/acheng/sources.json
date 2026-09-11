@@ -1,0 +1,58 @@
+{
+  "sources": [
+    {
+      "id": "jinshi",
+      "title": "金史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正三年（1343），距金亡约110年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "本纪、地理志、完颜希尹传载金初建国、上京会宁府与女真制度，为阿城/金源核心史料。"
+    },
+    {
+      "id": "liaoshi",
+      "title": "辽史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正四年（1344），距事约340年",
+      "color": "#5E6E7C",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "圣宗纪载辽南侵与萧挞凛之死；元修，作者非辽人，不能冒充辽方声音"
+    },
+    {
+      "id": "songshi",
+      "title": "宋史",
+      "party": "元·官修",
+      "stance_label": "后朝官修",
+      "distance_label": "成书元顺帝至正五年（1345），距事约340年",
+      "color": "#6C7A89",
+      "compiler": "脱脱等（元）",
+      "period": "元",
+      "note": "吐蕃传载吐蕃后裔诸部与王统世代，为拉萨吐蕃王统在宋代延续的汉文佐证。"
+    },
+    {
+      "id": "modern",
+      "title": "现代考订",
+      "party": "学界",
+      "distance_label": "现代学界综合研究，距事数百年，基于多方史料互证",
+      "stance_label": "学界考证",
+      "compiler": "潮州史与海上丝路综合研究",
+      "color": "#2E7D8F",
+      "period": "今"
+    },
+    {
+      "id": "acheng_fuzhi",
+      "title": "阿城县志",
+      "party": "后世官修",
+      "stance_label": "地方志",
+      "distance_label": "清/民屡修，距金上京约八百年",
+      "color": "#7A6A52",
+      "compiler": "《阿城县志》（清修）",
+      "period": "清/民",
+      "note": "阿城地方志，载山川形胜、金源遗址沿革与地方社会。"
+    }
+  ]
+}

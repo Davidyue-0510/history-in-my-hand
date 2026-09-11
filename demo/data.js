@@ -1,15 +1,16 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 473 个切片
+// 权威数据源：data/scenes.json 注册的 474 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 473 个切片",
+  "slice": "multi-scene · 474 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
+   "acheng",
    "anhui_daizhen_llm",
    "anhui_huizhou_llm",
    "anxi_sizhen_llm",
@@ -1065,7 +1066,8 @@ window.SANDBOX_DATA = {
   "lhasa",
   "zunyi",
   "jilin",
-  "guilin"
+  "guilin",
+  "acheng"
  ],
  "vocab": {
   "layers": [
@@ -27460,6 +27462,25 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "cross_dynastic",
    "scale_tier": "operational"
+  },
+  "acheng": {
+   "title": "阿城（金上京会宁府）",
+   "dossier_label": "阿城",
+   "subtitle": "女真建国 · 金上京 · 金源文化",
+   "kind": "county",
+   "region": "jianzhou",
+   "page": "county.html?scene=acheng",
+   "vocab_pack": "acheng",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -27935,7 +27956,8 @@ window.SANDBOX_DATA = {
   "lhasa": "slices/lhasa.js",
   "zunyi": "slices/zunyi.js",
   "jilin": "slices/jilin.js",
-  "guilin": "slices/guilin.js"
+  "guilin": "slices/guilin.js",
+  "acheng": "slices/acheng.js"
  },
  "corridors": [
   {
