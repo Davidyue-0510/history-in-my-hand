@@ -394,6 +394,7 @@
 | tianjing | 16 | 3 | **0.000** | event:tj_di（0.000） | gap 1 / inference 1 / record 10 / scholarship 4 |
 | 铁岭 | 32 | 2 | **0.173** | 铁岭陷落（1619）（0.179） | gap 2 / inference 1 / record 23 / scholarship 6 |
 | tumu | 15 | 8 | **0.000** | event:tm_capture（0.000） | gap 1 / inference 1 / record 10 / scholarship 3 |
+| tumu_battle | 17 | 7 | **0.000** | event:beijing_baowei（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | turpan | 17 | 3 | **0.000** | event:ev_turpan_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | wangmang | 15 | 3 | **0.000** | event:wm_9（0.000） | gap 1 / inference 2 / record 9 / scholarship 3 |
 | wangmang_reform_llm | 100 | 3 | **0.000** | event:ev_wangmang_reform_llm_01（0.000） | inference 1 / record 88 / scholarship 11 |
@@ -529,6 +530,8 @@
 | event:baiqi_weibei | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bc_1281 | bencao | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:bc_1578 | bencao | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:beijing_baowei | tumu_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
+| event:beiuan_fu | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:bj_350 | baijia | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:bj_961 | beijiu | **0.000** | 0/3 | 0.10 | 0.08 | 12 | 0 / 0 / 0 / 0 |
 | event:bj_bj | boju | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
@@ -1533,6 +1536,7 @@
 | event:hz_1644 | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:hz_causal | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hz_zhi | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:jingtai_li | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jl_jz | julu | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:jl_qin | julu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jl_xiang | julu | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -1670,6 +1674,7 @@
 | event:tp_1851 | taiping | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:tp_1853 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tp_1864 | taiping | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:tumu_bian | tumu_battle | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:wc_641 | wencheng | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:wc_temple | wencheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:weikun | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -1688,6 +1693,7 @@
 | event:xh_1912 | xinhai | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:xh_res | xinhai | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:xiaodalian_shi | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:xuanfu_shao | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:xw_493 | xiaowen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:xw_494 | xiaowen | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |
 | event:xw_496 | xiaowen | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -1704,6 +1710,8 @@
 | event:yc_jz | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_wu | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_yue | yancheng | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |
+| event:yexian_tui | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:yingzong_huan | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yk_e | yaksa | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:yk_meng | yaksa | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:yk_qing | yaksa | **0.000** | 0/3 | 0.00 | 0.11 | 9 | 0 / 0 / 0 / 0 |

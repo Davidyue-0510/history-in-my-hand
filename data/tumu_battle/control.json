@@ -1,0 +1,16 @@
+{
+  "_comment": "土木堡控制层（1449—1450）。1449 土木堡溃、英宗北狩，瓦剌破居庸/紫荆入掠，宣府/大同边备残破，瓦剌一时据北边关隘（居庸/紫荆/宣府/土木堡）；北京与大同镇城仍为明守，于谦固守京师。1450 英宗还銮、明与瓦剌通使议和，于谦整顿边备，居庸/紫荆/宣府/土木堡次第复明之控御，北边暂安。本切片用 _years=[1449,1450]，使主时间轴第 1—5 事件（1449）显『瓦剌入边、据北关』、第 6—7 事件（1450）显『明收宣大、北边复安』。争夺地按『瓦剌在前（end=1449）、明在后（start=1450）』排序，controllerAt 取首个匹配年窗：1449 返瓦剌、1450 返明。",
+  "_years": [1449, 1450],
+  "control": [
+    {"place_id": "beijing", "party": "明", "start": 1449, "end": null, "basis": "京师顺天府，于谦列营九门死守，瓦剌攻之不克", "note": "明根本"},
+    {"place_id": "datong", "party": "明", "start": 1449, "end": null, "basis": "大同镇城，郭登收拾边备，虽遭掠仍明控", "note": "明镇城"},
+    {"place_id": "juyong", "party": "瓦剌", "start": 1449, "end": 1449, "basis": "也先破居庸关入掠京师，1449 底瓦剌据之", "note": "瓦剌入边"},
+    {"place_id": "juyong", "party": "明", "start": 1450, "end": null, "basis": "1450 后明复守居庸，北边暂安", "note": "战后属明"},
+    {"place_id": "zijing", "party": "瓦剌", "start": 1449, "end": 1449, "basis": "瓦剌取紫荆关入掠，1449 底据之", "note": "瓦剌入边"},
+    {"place_id": "zijing", "party": "明", "start": 1450, "end": null, "basis": "1450 后明复守紫荆，太行北口归明", "note": "战后属明"},
+    {"place_id": "xuanfu", "party": "瓦剌", "start": 1449, "end": 1449, "basis": "土木堡后宣府边备空虚，瓦剌游骑入掠，1449 底据之", "note": "瓦剌入边"},
+    {"place_id": "xuanfu", "party": "明", "start": 1450, "end": null, "basis": "1450 后明整顿宣府边备，复其控御", "note": "战后属明"},
+    {"place_id": "tumubao", "party": "瓦剌", "start": 1449, "end": 1449, "basis": "土木堡溃败处，瓦剌1449 据之", "note": "瓦剌入边"},
+    {"place_id": "tumubao", "party": "明", "start": 1450, "end": null, "basis": "1450 后明收土木堡一带边地", "note": "战后属明"}
+  ]
+}

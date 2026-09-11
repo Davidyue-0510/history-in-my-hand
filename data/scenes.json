@@ -691,7 +691,8 @@
   "feishui_battle",
   "guandu_battle",
   "changping_battle",
-  "yashan_battle"
+  "yashan_battle",
+  "tumu_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -38834,6 +38835,98 @@
     }
    },
    "province": "guangdong",
+   "related": []
+  },
+  "tumu_battle": {
+   "kind": "county",
+   "region": "xibei",
+   "title": "土木堡之变·北京保卫战",
+   "dossier_label": "土木堡之变",
+   "subtitle": "正统十四年—景泰元年（1449–1450）· 明 vs 瓦剌",
+   "primary_place": "tumubao",
+   "dossier_event": "event:beijing_baowei",
+   "vocab_pack": "tumu_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "正统十四年（1449）瓦剌也先破明军于土木堡、英宗北狩；于谦立景泰帝、列营九门死守北京，德胜门大破瓦剌，明祚不绝。实控区随事件年份由瓦剌入边（据居庸/紫荆/宣府/土木堡）翻回明守（北边复安）。",
+   "parties_note": "本切片主干为后世官修史（明史），无明、瓦剌双方当代原始档案；双方实况经清修明史回溯叙述，缺口为一等公民。系统不裁决，只并列。",
+   "subject_names": {
+    "event:tumu_bian": "土木堡之变",
+    "event:jingtai_li": "景泰即位",
+    "event:beijing_baowei": "北京保卫战",
+    "event:yexian_tui": "也先北退",
+    "event:xuanfu_shao": "瓦剌掠宣大",
+    "event:yingzong_huan": "英宗还銮",
+    "event:beiuan_fu": "北边复安",
+    "place:tumubao": "土木堡",
+    "place:beijing": "北京",
+    "place:juyong": "居庸关",
+    "person:yuqian": "于谦",
+    "person:yesian": "也先",
+    "person:jingtai": "明代宗"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "土木堡之变：朝堂凝聚力——于谦力主景泰即位、定固守拒迁，绝瓦剌挟帝之望"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "土木堡之变：后勤物力——列营九门、火器拒战；宣大边备残破致补给受胁"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "土木堡之变：人口动员——京师军民共命死守，北边民心系于关隘得失"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "土木堡之变：地缘战略——居庸/紫荆屏藩京师，瓦剌破关入边、北边控御易手"
+    }
+   },
+   "province": "beijing",
    "related": []
   }
  },

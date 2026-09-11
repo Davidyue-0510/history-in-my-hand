@@ -393,6 +393,7 @@ window.SANDBOX_RESONANCE = {
    "tianjing",
    "tieling",
    "tumu",
+   "tumu_battle",
    "turpan",
    "wangmang",
    "wangmang_reform_llm",
@@ -7869,6 +7870,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 8,
    "avg_resonance": 0.0,
    "best_event": "event:tm_capture",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "tumu_battle",
+   "name": "tumu_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:beijing_baowei",
    "best_resonance": 0.0
   },
   {

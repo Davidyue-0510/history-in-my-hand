@@ -1,0 +1,10 @@
+{
+  "places": [
+    {"id": "beijing", "name": "北京", "lat": 39.90, "lon": 116.40, "type": "city", "note": "京师顺天府，于谦列营九门拒瓦剌，北京保卫战主轴", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "tumubao", "name": "土木堡", "lat": 40.45, "lon": 115.30, "type": "region", "note": "河北怀来西南土木镇，正统十四年明军溃败、英宗被俘处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "datong", "name": "大同", "lat": 40.08, "lon": 113.30, "type": "city", "note": "山西行都司治所，北边重镇，土木堡后瓦剌连岁入掠", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xuanfu", "name": "宣府", "lat": 40.62, "lon": 115.03, "type": "city", "note": "宣府镇（今河北宣化），京师西北屏藩，瓦剌入边要冲", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "juyong", "name": "居庸关", "lat": 40.27, "lon": 116.10, "type": "region", "note": "军都陉，北京西北门户，瓦剌破关入掠处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "zijing", "name": "紫荆关", "lat": 39.42, "lon": 115.20, "type": "region", "note": "河北易县西，太行八陉之一，瓦剌由此入掠京师", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 483,
-  "historical": 474,
+  "scenes_total": 484,
+  "historical": 475,
   "fictional": 9,
-  "assertions_total": 7213,
-  "sources_total": 495,
+  "assertions_total": 7230,
+  "sources_total": 496,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -286,6 +286,7 @@
     "tianjin_tianjinwei",
     "tianjin_xiaozhan_llm",
     "tianjin_yanfu_llm",
+    "tumu_battle",
     "turpan",
     "wangmang_reform_llm",
     "wangyangming",
@@ -348,7 +349,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 691,
+  "leads_total": 693,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3781,6 +3782,13 @@
       "kind": "county",
       "assertions": 17,
       "factions": {}
+    },
+    {
+      "id": "tumu_battle",
+      "title": "土木堡之变·北京保卫战",
+      "kind": "county",
+      "assertions": 17,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4266,6 +4274,7 @@
     "feishui_battle": "淝水之战·风声鹤唳",
     "guandu_battle": "官渡之战·以少胜多",
     "changping_battle": "长平之战·血流成川",
-    "yashan_battle": "崖山海战·负帝投海"
+    "yashan_battle": "崖山海战·负帝投海",
+    "tumu_battle": "土木堡之变·北京保卫战"
   }
 }

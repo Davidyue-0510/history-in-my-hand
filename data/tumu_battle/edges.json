@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "beijing", "to": "juyong", "type": "military", "label": "北京—居庸关（瓦剌破关入掠京师）"},
+    {"from": "juyong", "to": "xuanfu", "type": "military", "label": "居庸—宣府（京师西北边镇链）"},
+    {"from": "xuanfu", "to": "datong", "type": "military", "label": "宣府—大同（宣大联防）"},
+    {"from": "datong", "to": "tumubao", "type": "military", "label": "大同—土木堡（英宗亲征溃败处）"},
+    {"from": "beijing", "to": "zijing", "type": "military", "label": "北京—紫荆关（瓦剌入掠另一径）"},
+    {"from": "zijing", "to": "xuanfu", "type": "military", "label": "紫荆关—宣府（太行北口联防）"},
+    {"from": "tumubao", "to": "xuanfu", "type": "military", "label": "土木堡—宣府（瓦剌入边主线）"},
+    {"from": "beijing", "to": "tumubao", "type": "military", "label": "英宗亲征：北京出师北上土木堡"},
+    {"from": "datong", "to": "beijing", "type": "river", "label": "大同—北京（补给与援兵南下）"},
+    {"from": "xuanfu", "to": "beijing", "type": "military", "label": "宣府屏藩京师（北边安危所系）"}
+  ]
+}
