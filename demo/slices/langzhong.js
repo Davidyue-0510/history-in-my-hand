@@ -87,13 +87,14 @@ window.SANDBOX_SLICES["langzhong"] = {
  "sources": [
   {
    "id": "sanguozhi",
-   "title": "三国志",
+   "title": "三国志（魏书/蜀书/吴书）",
    "party": "西晋·私修",
-   "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
    "stance_label": "西晋陈寿私修史，整合三国",
+   "distance_label": "西晋陈寿撰，距三国最近者数十年，最远者约六十年",
+   "color": "#6C7A89",
    "compiler": "陈寿（西晋）",
-   "color": "#8E7CC3",
-   "period": "晋"
+   "period": "晋",
+   "note": "本切片主干史料，距事最近的正史。注意其定位与 guandu_llm 切片不同：彼处 source id 为 `sanguozhi_wudi`，只用《武帝纪》叙魏事、归『魏』桶；此处 id 为 `sanguozhi`，通取魏书/蜀书/吴书叙三国、归『后世官修』桶。同一部书拆两个 id，是因为所写对象不同、归属的立场桶就不同——用同一 id 会让跨切片共振统计把两种立场混为一谈。判断依据始终是作者立场与叙述对象，不是书名。陈寿身仕西晋，以魏为正统的基本框架贯穿全书，且蜀汉『国不置史』使其叙蜀事时先天材料不足——这正是 SG017 缺口的史料根源"
   },
   {
    "id": "huayangguozhi",
