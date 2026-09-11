@@ -51,6 +51,7 @@ window.SANDBOX_RESONANCE = {
    "chensheng",
    "chibi",
    "chibi_llm",
+   "chongqing",
    "chongqing_capital_llm",
    "chongqing_ciqikou_llm",
    "chongqing_dazu_llm",
@@ -1252,6 +1253,30 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ev_chibi_llm_02",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "chongqing",
+   "name": "chongqing",
+   "total": 21,
+   "layers": {
+    "record": 6,
+    "scholarship": 7,
+    "inference": 5,
+    "gap": 3
+   },
+   "party_counts": {
+    "元·官修": 2,
+    "清修·明臣": 3,
+    "后世官修": 7,
+    "北魏·官修": 3,
+    "学界": 4,
+    "汉·官修": 2
+   },
+   "faction_counts": {},
+   "event_count": 3,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_chongqing_01",
    "best_resonance": 0.0
   },
   {

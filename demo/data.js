@@ -1,12 +1,12 @@
 // 本文件由 tools/build.py 自动生成，请勿手工编辑。
-// 权威数据源：data/scenes.json 注册的 477 个切片
+// 权威数据源：data/scenes.json 注册的 478 个切片
 // v0.22 地基二：完整切片数据已分片到 demo/slices/<id>.js，
 // 本文件只承载「壳」（共享词表/地形/江河/控制层 + 轻量 scenes_meta + slice_index），
 // 并在解析期同步加载所有切片组装 SANDBOX_DATA.scenes，保持既有前端零改动。
 window.SANDBOX_DATA = {
  "meta": {
   "project": "小菜狗的文明图景 / Vege-civilization",
-  "slice": "multi-scene · 477 个切片",
+  "slice": "multi-scene · 478 个切片",
   "note": "所有引文均标注 quote_status，未经点校本逐字核对者标记为 paraphrase_unverified。",
   "default_vocab_pack": "ming_qing",
   "vocab_packs": [
@@ -34,6 +34,7 @@ window.SANDBOX_DATA = {
    "chaozhou",
    "chengde",
    "chibi_llm",
+   "chongqing",
    "chongqing_capital_llm",
    "chongqing_ciqikou_llm",
    "chongqing_dazu_llm",
@@ -1073,7 +1074,8 @@ window.SANDBOX_DATA = {
   "acheng",
   "yazhou",
   "guisui",
-  "shanghai"
+  "shanghai",
+  "chongqing"
  ],
  "vocab": {
   "layers": [
@@ -27544,6 +27546,25 @@ window.SANDBOX_DATA = {
    ],
    "epoch": "qing_modern",
    "scale_tier": "operational"
+  },
+  "chongqing": {
+   "title": "重庆府城/渝中（巴郡·山城·两江汇）",
+   "dossier_label": "重庆府城",
+   "subtitle": "东周巴蔓子 · 宋淳熙升府 · 明洪武筑城 · 两江山城",
+   "kind": "county",
+   "region": "chuan_gui",
+   "page": "county.html?scene=chongqing",
+   "vocab_pack": "chongqing",
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational"
   }
  },
  "slice_index": {
@@ -28023,7 +28044,8 @@ window.SANDBOX_DATA = {
   "acheng": "slices/acheng.js",
   "yazhou": "slices/yazhou.js",
   "guisui": "slices/guisui.js",
-  "shanghai": "slices/shanghai.js"
+  "shanghai": "slices/shanghai.js",
+  "chongqing": "slices/chongqing.js"
  },
  "corridors": [
   {

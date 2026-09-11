@@ -897,6 +897,54 @@ window.SANDBOX_LEADS = {
    "_src_line": 13
   },
   {
+   "id": "CQ_G01",
+   "scene": "chongqing",
+   "subject": "place:chongqing_cheng",
+   "title": "明清重庆城墙历次重修、拆改与城门命名沿革，史料记载详略不一",
+   "missing": "历史地理 / 方志",
+   "where": "重庆城墙历代重修与城门沿革",
+   "skills": [
+    "历史地理",
+    "方志"
+   ],
+   "accept": "需巴县志与重庆府志互证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 19
+  },
+  {
+   "id": "CQ_G02",
+   "scene": "chongqing",
+   "subject": "person:dai_ding",
+   "title": "戴鼎筑城具体工役、城垣规模与九开八闭格局的早期史料较零散",
+   "missing": "明史 / 方志",
+   "where": "戴鼎筑重庆城原始档案",
+   "skills": [
+    "明史",
+    "方志"
+   ],
+   "accept": "需明实录与地方志补证",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 20
+  },
+  {
+   "id": "CQ_G03",
+   "scene": "chongqing",
+   "subject": "place:jialing_river",
+   "title": "嘉陵江重庆段河道变迁与古渡口位置，早期文献记载简略",
+   "missing": "历史地理 / 水文",
+   "where": "嘉陵江重庆段河道变迁",
+   "skills": [
+    "历史地理",
+    "水文"
+   ],
+   "accept": "需水经注疏证与考古",
+   "effort": "—",
+   "issue_url": null,
+   "_src_line": 21
+  },
+  {
    "id": "CHO_014",
    "scene": "chongqing_capital_llm",
    "subject": "event:ev_chongqing_capital_llm_03",

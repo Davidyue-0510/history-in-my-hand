@@ -680,7 +680,8 @@
   "acheng",
   "yazhou",
   "guisui",
-  "shanghai"
+  "shanghai",
+  "chongqing"
  ],
  "scenes": {
   "langzhong": {
@@ -38275,6 +38276,89 @@
      ],
      "layer": "inference",
      "note": "开埠租界，中西交涉与西风东渐，上海成近代思想策源之一"
+    }
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  "chongqing": {
+   "kind": "county",
+   "region": "chuan_gui",
+   "province": "chongqing",
+   "title": "重庆府城/渝中（巴郡·山城·两江汇）",
+   "dossier_label": "重庆府城",
+   "subtitle": "东周巴蔓子 · 宋淳熙升府 · 明洪武筑城 · 两江山城",
+   "primary_place": "chongqing_cheng",
+   "dossier_event": "event:ev_chongqing_01",
+   "vocab_pack": "chongqing",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "重庆府城踞渝中半岛，长江、嘉陵江夹城而过，三面环江、一面依山，为典型山城与西南军事重镇。东周巴蔓子刎头谢楚，忠义之典传为巴渝符号；宋淳熙十六年（1189）光宗以潜藩升恭州为重庆府，名城始著；明洪武四年（1371）指挥使戴鼎因旧址筑城，辟九开八闭十七门，山城格局由是定型。下为升府、筑城、巴蔓子三条主线，点时间轴或左栏跳转。",
+   "parties_note": "史料以史记、华阳国志、宋史、明史、水经注为本，重庆府志、巴县志作补充，现代考订为学界视角；系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_chongqing_01": "升重庆府",
+    "event:ev_chongqing_02": "戴鼎筑城",
+    "event:ev_chongqing_03": "巴蔓子刎头",
+    "place:chongqing_cheng": "重庆府城",
+    "person:ba_manzi": "巴蔓子"
+   },
+   "epoch": "cross_dynastic",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "宋光宗潜藩升府、戴鼎筑城，建制与治权嵌入重庆城市演进；巴蔓子忠义成巴渝地域认同符号"
+    },
+    "material_logistics": {
+     "from": [
+      "economy",
+      "tech"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "长江、嘉陵江交汇朝天门，川江航运锁钥，重庆成西南水运与物资吞吐枢纽"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "山城梯坎聚落、沿江商帮与市镇网络，构成重庆社会底层肌理"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "strategic",
+      "international"
+     ],
+     "from_dims": [
+      6,
+      5
+     ],
+     "layer": "inference",
+     "note": "渝中半岛天然险塞、易守难攻，为西南军事重镇；两江锁钥控川江上下"
     }
    },
    "dims": [

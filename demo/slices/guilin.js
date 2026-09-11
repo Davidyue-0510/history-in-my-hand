@@ -166,7 +166,7 @@ window.SANDBOX_SLICES["guilin"] = {
    "title": "水经注",
    "party": "北魏·官修",
    "stance_label": "北魏地理注",
-   "distance_label": "成书北魏（约六世纪），距秦凿灵渠约七百年",
+   "distance_label": "成书北魏（约六世纪）",
    "color": "#8E7CC3",
    "compiler": "郦道元（北魏）",
    "period": "北魏",

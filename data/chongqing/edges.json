@@ -1,0 +1,9 @@
+{
+  "edges": [
+    { "from": "chongqing_cheng", "to": "chaotianmen", "type": "geo", "label": "府城东北门，两江交汇之口" },
+    { "from": "chongqing_cheng", "to": "jialing_river", "type": "geo", "label": "渝中半岛西侧临嘉陵江" },
+    { "from": "chongqing_cheng", "to": "yangtze_river", "type": "geo", "label": "渝中半岛东侧临长江" },
+    { "from": "ciqikou", "to": "jialing_river", "type": "geo", "label": "磁器口濒嘉陵江，为巴县水码头" },
+    { "from": "chongqing_cheng", "to": "ciqikou", "type": "mil", "label": "府城与嘉陵江下游市镇互为犄角" }
+  ]
+}

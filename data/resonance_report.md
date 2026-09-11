@@ -52,6 +52,7 @@
 | chensheng | 13 | 2 | **0.000** | event:cs_209a（0.000） | gap 1 / inference 2 / record 8 / scholarship 2 |
 | chibi | 19 | 3 | **0.000** | event:cb_cao（0.000） | gap 2 / inference 1 / record 13 / scholarship 3 |
 | chibi_llm | 18 | 2 | **0.000** | event:ev_chibi_llm_02（0.000） | gap 1 / inference 6 / record 9 / scholarship 2 |
+| chongqing | 21 | 3 | **0.000** | event:ev_chongqing_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 7 |
 | chongqing_capital_llm | 15 | 4 | **0.000** | event:ev_chongqing_capital_llm_01（0.000） | gap 1 / inference 4 / record 9 / scholarship 1 |
 | chongqing_ciqikou_llm | 15 | 1 | **0.000** | event:ev_chongqing_ciqikou_llm_01（0.000） | gap 1 / inference 2 / record 11 / scholarship 1 |
 | chongqing_dazu_llm | 16 | 1 | **0.000** | event:ev_cho_dazu_01（0.000） | gap 2 / inference 2 / record 11 / scholarship 1 |
@@ -639,6 +640,9 @@
 | event:ev_chibi_llm_02 | chibi_llm | **0.000** | 0/3 | 0.43 | 0.09 | 11 | 0 / 0 / 0 / 0 |
 | event:ev_chibi_llm_03 | chibi_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_cho_dazu_01 | chongqing_dazu_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chongqing_01 | chongqing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chongqing_02 | chongqing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_chongqing_03 | chongqing | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_chongqing_capital_llm_01 | chongqing_capital_llm | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:ev_chongqing_capital_llm_02 | chongqing_capital_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_chongqing_capital_llm_03 | chongqing_capital_llm | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |

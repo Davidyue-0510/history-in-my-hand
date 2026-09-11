@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "ev_chongqing_01",
+      "year": 1189,
+      "era": "宋淳熙十六年",
+      "kind": "升府建制",
+      "title": "升恭州为重庆府",
+      "place": "chongqing_cheng",
+      "text": "宋淳熙十六年（1189），孝宗第三子赵惇先封恭王于恭州，即位为光宗后，以潜藩之故升恭州为重庆府，「重庆」之名始见。此举使巴县一带由州升为府，成为西南军政重镇。",
+      "subject": "event:ev_chongqing_01"
+    },
+    {
+      "id": "ev_chongqing_02",
+      "year": 1371,
+      "era": "明洪武四年",
+      "kind": "筑城",
+      "title": "戴鼎筑重庆城",
+      "place": "chongqing_cheng",
+      "text": "明洪武四年（1371），指挥使戴鼎因旧址修筑重庆府城，辟九开八闭十七门，城垣依山脊起伏，高二丈，周十余里。山城格局由此定型，为明清重庆府城之基。",
+      "subject": "event:ev_chongqing_02"
+    },
+    {
+      "id": "ev_chongqing_03",
+      "year": -380,
+      "era": "东周（约公元前4世纪，年份为约数）",
+      "kind": "忠义殉国",
+      "title": "巴蔓子刎头谢楚",
+      "place": "chongqing_cheng",
+      "text": "东周时，巴国内乱，将军巴蔓子向楚国请师平乱，许以三城。乱定后，楚使索城，蔓子以国土不可分，自刎以头谢楚。楚王叹其忠，以上卿礼葬其头。巴蔓子遂为巴渝忠义文化之象征。",
+      "subject": "event:ev_chongqing_03"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "scenes_total": 477,
-  "historical": 468,
+  "scenes_total": 478,
+  "historical": 469,
   "fictional": 9,
-  "assertions_total": 7107,
-  "sources_total": 487,
+  "assertions_total": 7128,
+  "sources_total": 489,
   "factions_total": 9,
   "vocab_packs": [
     "acheng",
@@ -30,6 +30,7 @@
     "chaozhou",
     "chengde",
     "chibi_llm",
+    "chongqing",
     "chongqing_capital_llm",
     "chongqing_ciqikou_llm",
     "chongqing_dazu_llm",
@@ -342,7 +343,7 @@
     "zuyong_diao_llm"
   ],
   "default_vocab_pack": "ming_qing",
-  "leads_total": 678,
+  "leads_total": 681,
   "per_scene": [
     {
       "id": "han_wudi_ruxue",
@@ -3733,6 +3734,13 @@
       "kind": "county",
       "assertions": 21,
       "factions": {}
+    },
+    {
+      "id": "chongqing",
+      "title": "重庆府城/渝中（巴郡·山城·两江汇）",
+      "kind": "county",
+      "assertions": 21,
+      "factions": {}
     }
   ],
   "scene_titles": {
@@ -4212,6 +4220,7 @@
     "acheng": "阿城（金上京会宁府）",
     "yazhou": "崖州（贬谪文脉·黎峒·琼崖）",
     "guisui": "归绥（隆庆和议·旅蒙商·蒙汉交融）",
-    "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）"
+    "shanghai": "上海县/老城厢（开埠通商·租界·移民城市社会）",
+    "chongqing": "重庆府城/渝中（巴郡·山城·两江汇）"
   }
 }
