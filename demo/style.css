@@ -519,6 +519,19 @@ body.pr-collapsed #panelRight{ width:0; min-width:0; overflow:hidden; border-lef
 
 /* ══════ 实控区·战争走势时间轴（v0.47 重做） ══════ */
 .ctrl-timeline{ border-top:2px solid #3E6E99; background:#EEF3F6; }
+
+/* ══════ 主演化时间轴（每个切片通用，v0.245：对应萨尔浒底部主时间轴） ══════ */
+.main-timeline{ border-top:2px solid var(--ming); background:#F4F1EA; }
+.main-timeline .tl-axis-name{ font-family:var(--serif); font-size:12px; }
+.main-timeline .tl-era{ color:var(--ming); }
+.main-timeline .tl-track::before{ background:#D9CFB8; }
+.main-timeline .tl-node.key .tl-dot{ border-color:var(--ming); }
+.main-timeline .tl-node.now .tl-dot{
+  background:var(--ming); border-color:var(--ming);
+  box-shadow:0 0 0 3px rgba(142,43,36,.16);
+}
+.main-timeline .tl-foot{ gap:8px; }
+.main-legend{ font-size:11px; color:var(--ink-3); }
 .ctrl-timeline .tl-era{ color:#2B5A80; }
 .ctrl-timeline .tl-track::before{ background:#C7D8E2; }
 .ctrl-timeline .tl-node.key .tl-dot{ border-color:#3E6E99; }

@@ -172,6 +172,20 @@
       </div>
     </div>
 
+    <!-- ════ 主演化时间轴（每个切片通用：由事件序列驱动 state.t 逐步推演，对应萨尔浒底部主时间轴）════ -->
+    <div id="mainTimeline" class="timeline main-timeline">
+      <div class="tl-header">
+        <span class="tl-axis-name" style="color:var(--ming);font-weight:600">沿革 · 演化</span>
+        <span class="tl-era" id="mainEra">—</span>
+        <span class="tl-year" id="mainYear">—</span>
+      </div>
+      <div id="mainTrack" class="tl-track"></div>
+      <div class="tl-foot">
+        <button id="mainPlay" class="cp-play" title="播放演化">▶</button>
+        <span id="mainLegend" class="main-legend"></span>
+      </div>
+    </div>
+
     <!-- ════ 实控区·战争走势时间轴（按年份回放控制权变化，参考真实 CHGIS 海岸线）════ -->
     <div id="ctrlTimeline" class="timeline ctrl-timeline" style="display:none">
       <div class="tl-header">

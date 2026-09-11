@@ -147,6 +147,8 @@
     terrainOffGrid: OFF_GRID,
     route:   true,
     t: 0,
+    mainPlaying: false,      // v0.245：主演化时间轴播放态
+    mainTimer: null,         // v0.245：主演化时间轴播放定时器
     tab: 'yan',
     selection: null,
     control: { on: false, scope: 'county' },
@@ -895,6 +897,44 @@
       });
       box.appendChild(n);
     });
+  }
+
+  // v0.245：主演化时间轴（每个切片通用，对应「萨尔浒底部主时间轴」）。
+  // 由 D.events 序列驱动 state.t——点击刻度或播放即沿沿革/战事逐步推演；
+  // syncCtrlToMain() 让实控区跟随选中事件年份变色（v0.244 机制）。
+  function renderMainTimeline() {
+    var track = document.getElementById('mainTrack');
+    if (!track || IS_ABSTRACT) return;
+    if (!D.events || !D.events.length) { track.innerHTML = ''; return; }
+    track.innerHTML = '';
+    var n = D.events.length;
+    D.events.forEach(function (ev, i) {
+      var node = document.createElement('div');
+      var cls = 'tl-node';
+      if (ev.key) cls += ' key';
+      if (i < state.t) cls += ' past';
+      if (i === state.t) cls += ' now';
+      node.className = cls;
+      var pos = (n <= 1) ? 50 : (i / (n - 1) * 100);
+      node.style.left = pos + '%';
+      if (i === 0) node.style.transform = 'translateX(-14px)';
+      if (i === n - 1) node.style.transform = 'translateX(calc(-100% + 14px))';
+      var cap = ev.era || (ev.year != null ? ('' + ev.year) : '');
+      node.innerHTML = '<div class="tl-dot"></div>' +
+        '<div class="tl-cap">' + cap + '</div>';
+      node.title = (ev.title || ev.era || '') + (ev.year != null ? '（' + ev.year + '）' : '');
+      node.addEventListener('click', function () {
+        stopMain(); state.t = i; syncCtrlToMain(); refresh();
+      });
+      track.appendChild(node);
+    });
+    var cur = D.events[state.t] || D.events[0];
+    if (cur) {
+      var eraEl = document.getElementById('mainEra');
+      if (eraEl) eraEl.textContent = cur.era || '—';
+      var yl = document.getElementById('mainYear');
+      if (yl) yl.textContent = (cur.year != null ? cur.year + ' 年' : '—');
+    }
   }
 
   /* ═══════════ 三方史料（dossier 事件）══════════ */
@@ -2103,6 +2143,29 @@
     sync();
   }
 
+  // v0.245：主演化时间轴播放控制——沿 D.events 序列推进 state.t，每步触发 refresh（重绘地图/分析）
+  // 与实控区同步（syncCtrlToMain）。与 #ctrlTimeline（控制层年份回放，次要轴）解耦、并存。
+  function stopMain() {
+    state.mainPlaying = false;
+    if (state.mainTimer) { clearInterval(state.mainTimer); state.mainTimer = null; }
+    var p = document.getElementById('mainPlay'); if (p) p.textContent = '▶';
+  }
+  function wireMainTimeline() {
+    var play = document.getElementById('mainPlay');
+    if (!play || IS_ABSTRACT) return;
+    if (!D.events || !D.events.length) { play.style.display = 'none'; return; }
+    play.addEventListener('click', function () {
+      if (state.mainPlaying) { stopMain(); return; }
+      state.mainPlaying = true;
+      this.textContent = '❚❚';
+      if (state.t >= D.events.length - 1) { state.t = 0; syncCtrlToMain(); refresh(); }
+      state.mainTimer = setInterval(function () {
+        if (state.t >= D.events.length - 1) { stopMain(); return; }
+        state.t++; syncCtrlToMain(); refresh();
+      }, 1400);
+    });
+  }
+
   function wireControl() {
     var panel = document.getElementById('controlPanel');
     if (!panel || IS_ABSTRACT) { if (panel) panel.style.display = 'none'; return; }
@@ -2374,6 +2437,7 @@
   function refresh() {
     renderDimCoverage();
     renderEdgeLegend(); renderSources(); renderLayers(); renderTerrainCtl(); renderEventList();
+    renderMainTimeline();
     renderSiblings(); drawDynamic();
     renderEvents(); renderParties(); renderFactions(); renderConflicts(); renderCrossConflicts(); renderLeads(); renderWarCourt(); renderInspect();
     var vis = visibleAssertions().length;
@@ -2489,7 +2553,7 @@
   }
   // 初始化：默认选中首个事件（左侧事件列表高亮用 state.t）
   if (D.events && D.events.length) state.t = 0;
-  applyView(false); wireControl(); wireChgis(); wireBattle(); wireRouteTimeline(); buildRouteTimeline(); refresh();
+  applyView(false); wireControl(); wireChgis(); wireBattle(); wireRouteTimeline(); buildRouteTimeline(); wireMainTimeline(); refresh();
 
   function wireChgis() {
     var box = document.getElementById('chgisToggle');
