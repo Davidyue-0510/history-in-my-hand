@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "linan", "to": "fuzhou", "type": "military", "label": "临安陷·宋室浮海南奔入闽（立端宗）"},
+    {"from": "fuzhou", "to": "chaozhou", "type": "military", "label": "流亡朝廷南迁潮惠"},
+    {"from": "chaozhou", "to": "guangzhou", "type": "military", "label": "广南抗元东西呼应"},
+    {"from": "guangzhou", "to": "yashan", "type": "military", "label": "广州—崖山（张世杰移驻布防）"},
+    {"from": "naozhou", "to": "yashan", "type": "military", "label": "硇洲—崖山（端宗崩、立昺迁驻）"},
+    {"from": "zhujiangkou", "to": "yashan", "type": "river", "label": "珠江口—崖门（元水师南下航道）"},
+    {"from": "quanzhou", "to": "zhujiangkou", "type": "river", "label": "泉州—珠江口（海上航线，蒲寿庚降后断）"},
+    {"from": "linan", "to": "quanzhou", "type": "military", "label": "元取临安后东略闽广（伯颜—蒲寿庚）"},
+    {"from": "guangzhou", "to": "zhujiangkou", "type": "river", "label": "广州临珠江口（岭南门户）"},
+    {"from": "fuzhou", "to": "quanzhou", "type": "military", "label": "闽地流亡朝廷与市舶要港"}
+  ]
+}

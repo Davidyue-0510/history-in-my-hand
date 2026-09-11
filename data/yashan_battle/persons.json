@@ -1,0 +1,14 @@
+{
+  "persons": [
+    {"id": "luxinfu", "name": "陆秀夫", "party": "宋", "note": "左丞相，端宗崩后力主立赵昺，崖山城破负幼帝投海殉国"},
+    {"id": "zhangshijie", "name": "张世杰", "party": "宋", "note": "都统，海上行朝水师主帅，崖山连舟为寨、死守不遁"},
+    {"id": "wentianxiang", "name": "文天祥", "party": "宋", "note": "右丞相，转战赣粤抗元，五坡岭被俘，狱中拒降就义"},
+    {"id": "zhanghongfan", "name": "张弘范", "party": "元", "note": "元军主帅，会师崖山、断宋汲路火攻破阵，灭南宋"},
+    {"id": "zhaobing", "name": "赵昺", "party": "宋", "note": "宋末帝（祥兴帝），端宗崩后陆秀夫所立，崖山蹈海殉国"},
+    {"id": "zhaoshi", "name": "赵昰", "party": "宋", "note": "宋端宗，福州即位（景炎），流亡海上，崩于硇洲"},
+    {"id": "yangtaihou", "name": "杨太后", "party": "宋", "note": "端宗、卫王生母，崖山城破后赴海，宋室核心"},
+    {"id": "zhaozong", "name": "赵㬎", "party": "宋", "note": "宋恭帝，临安出降，北徙封瀛国公，南宋法统断于临安"},
+    {"id": "bayan", "name": "伯颜", "party": "元", "note": "元丞相，帅师入临安、受恭帝降，灭宋之役元方主帅"},
+    {"id": "poushougeng", "name": "蒲寿庚", "party": "元", "note": "原宋泉州市舶使，1277 降元，献舟械、绝宋海外援"}
+  ]
+}

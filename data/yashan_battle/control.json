@@ -1,0 +1,21 @@
+{
+  "_comment": "崖山控制层（1276—1279）。1276 临安陷、宋恭帝降，元据临安及江北；宋室浮海南奔，据福州—泉州—广州—潮州—崖山等岭南之地。1277 后元收福州、泉州，1278 收广州、潮州，宋退守崖山—硇洲—珠江口；1279 崖山决战、陆秀夫负帝投海，宋亡，元取岭南全境。本切片用 _years=[1276,1279]，使主时间轴第 1—2 事件（1276）显『宋据岭南、元据临安』、第 3—4 事件（1278）显『元已收闽广、宋退守崖山』、第 5—7 事件（1279）显『宋亡、元取全境』。争夺地按『宋在前（end<1279）、元在后（start≥1277 或 end=null）』排序，controllerAt 取首个匹配年窗：1276 返宋、1279 返元。",
+  "_years": [1276, 1279],
+  "control": [
+    {"place_id": "yashan", "party": "宋", "start": 1276, "end": 1278, "basis": "张世杰移驻崖山、连舟为寨，宋最后坚守之地", "note": "宋坚守"},
+    {"place_id": "naozhou", "party": "宋", "start": 1276, "end": 1278, "basis": "端宗崩于硇洲，宋室西迁最后一站", "note": "宋流亡"},
+    {"place_id": "zhujiangkou", "party": "宋", "start": 1276, "end": 1278, "basis": "珠江口为宋岭南门户，战前属宋", "note": "宋门户"},
+    {"place_id": "guangzhou", "party": "宋", "start": 1276, "end": 1277, "basis": "广南东路治所，宋据岭南之支柱，1278 后属元", "note": "宋据岭南"},
+    {"place_id": "chaozhou", "party": "宋", "start": 1276, "end": 1277, "basis": "广南东陲抗元呼应地，1278 后属元", "note": "宋据岭南"},
+    {"place_id": "fuzhou", "party": "宋", "start": 1276, "end": 1276, "basis": "景炎元年端宗即位处，1277 后属元", "note": "宋初立"},
+    {"place_id": "quanzhou", "party": "宋", "start": 1276, "end": 1276, "basis": "市舶要港，1277 蒲寿庚降元后属元", "note": "宋市舶"},
+    {"place_id": "linan", "party": "元", "start": 1276, "end": null, "basis": "伯颜入临安、恭帝出降，元据行在", "note": "元取临安"},
+    {"place_id": "fuzhou", "party": "元", "start": 1277, "end": null, "basis": "1277 后元收福州", "note": "战后属元"},
+    {"place_id": "quanzhou", "party": "元", "start": 1277, "end": null, "basis": "蒲寿庚降元献舟械", "note": "战后属元"},
+    {"place_id": "guangzhou", "party": "元", "start": 1278, "end": null, "basis": "1278 后元收广州", "note": "战后属元"},
+    {"place_id": "chaozhou", "party": "元", "start": 1278, "end": null, "basis": "1278 后元收潮州", "note": "战后属元"},
+    {"place_id": "yashan", "party": "元", "start": 1279, "end": null, "basis": "崖山决战破阵、宋亡，元取岭南全境", "note": "战后属元"},
+    {"place_id": "naozhou", "party": "元", "start": 1279, "end": null, "basis": "宋亡后元控雷廉海疆", "note": "战后属元"},
+    {"place_id": "zhujiangkou", "party": "元", "start": 1279, "end": null, "basis": "崖山破后元水师控珠江口", "note": "战后属元"}
+  ]
+}

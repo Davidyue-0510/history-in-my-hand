@@ -690,7 +690,8 @@
   "chibi_battle",
   "feishui_battle",
   "guandu_battle",
-  "changping_battle"
+  "changping_battle",
+  "yashan_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -38740,6 +38741,99 @@
     }
    },
    "province": "shanxi",
+   "related": []
+  },
+  "yashan_battle": {
+   "kind": "county",
+   "region": "song",
+   "title": "崖山海战·负帝投海",
+   "dossier_label": "崖山海战",
+   "subtitle": "祥兴二年（1279）· 宋 vs 元",
+   "primary_place": "yashan",
+   "dossier_event": "event:luxinfu_touhai",
+   "vocab_pack": "yashan_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "祥兴二年（1279），元将张弘范会师崖山，断宋师汲路、火攻破阵；陆秀夫负幼帝赵昺投海殉国，军民从死者以十万计，赵宋遂绝，实控区随事件年份由宋据岭南翻为元取全境。",
+   "parties_note": "本切片主干为后世官修史（宋史/元史），无宋、元双方当代原始档案；双方实况经后世史官回溯叙述，缺口为一等公民。系统不裁决，只并列。",
+   "subject_names": {
+    "event:linan_xian": "临安陷落",
+    "event:nanxing": "宋室南奔",
+    "event:wen_fu": "文天祥被俘",
+    "event:duanzong_beng": "端宗崩·立昺",
+    "event:yashan_bu": "崖山布防",
+    "event:yashan_juezhan": "崖山决战",
+    "event:luxinfu_touhai": "陆秀夫负帝投海",
+    "place:yashan": "崖山",
+    "place:linan": "临安",
+    "place:zhujiangkou": "珠江口",
+    "person:luxinfu": "陆秀夫",
+    "person:zhangshijie": "张世杰",
+    "person:zhanghongfan": "张弘范",
+    "person:wentianxiang": "文天祥"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "song",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "崖山海战：朝堂凝聚力——宋室浮海续抗、陆秀夫主立赵昺不绝宋祀；元以受降代灭国"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "崖山海战：后勤物力——张世杰连舟为寨、汲路被断；元军火攻破之"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "崖山海战：人口动员——海上行朝军民共命，从死者以十万计"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "崖山海战：地缘战略——崖门两山夹海、珠江口为命脉，元水师自外封锁"
+    }
+   },
+   "province": "guangdong",
    "related": []
   }
  },

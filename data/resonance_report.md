@@ -443,6 +443,7 @@
 | yangzhou | 11 | 4 | **0.342** | event:yangzhou_tu（0.370） | gap 1 / record 9 / scholarship 1 |
 | yaoshan | 14 | 3 | **0.000** | event:ys_jz（0.000） | gap 1 / inference 1 / record 8 / scholarship 4 |
 | yashan | 11 | 2 | **0.000** | event:ys_1276（0.000） | gap 2 / inference 2 / record 5 / scholarship 2 |
+| yashan_battle | 17 | 7 | **0.000** | event:duanzong_beng（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | yazhou | 21 | 3 | **0.000** | event:ev_yazhou_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 7 |
 | yehe | 7 | 3 | **0.278** | event:yehe_fall（0.333） | gap 2 / record 4 / scholarship 1 |
 | yellow_sea_1894 | 15 | 1 | **0.265** | event:ev_yellow_sea_1894_02（0.265） | gap 1 / record 13 / scholarship 1 |
@@ -582,6 +583,7 @@
 | event:dh_169 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dongjin_huishou | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dongjin_juece | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:duanzong_beng | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:dw_relief | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -1578,6 +1580,7 @@
 | event:li_su_xueye | tang_huai_xi | **0.000** | 0/3 | 0.33 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:lianpo | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:liao_nanqin | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:linan_xian | yashan_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:liubei_nanche | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:liucong_jiangcao | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ll_17 | lvlin | **0.000** | 0/3 | 0.00 | 0.22 | 9 | 0 / 0 / 0 / 0 |
@@ -1590,6 +1593,7 @@
 | event:ls_780 | liangshui | **0.000** | 0/3 | 0.00 | 0.08 | 13 | 0 / 0 / 0 / 0 |
 | event:ls_eff | liangshui | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:luojian | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:luxinfu_touhai | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:lx_1175 | lixue | **0.000** | 0/3 | 0.00 | 0.25 | 4 | 0 / 0 / 0 / 0 |
 | event:lx_1241 | lixue | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:mb_chu | mobai | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -1607,6 +1611,7 @@
 | event:ml_jz | maling | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:ml_qi | maling | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ml_wei | maling | **0.000** | 0/3 | 0.00 | 0.00 | 7 | 0 / 0 / 0 / 0 |
+| event:nanxing | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:nt_808 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:nt_823 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:nt_840 | tang_dangzheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
@@ -1668,6 +1673,7 @@
 | event:wc_641 | wencheng | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:wc_temple | wencheng | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:weikun | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:wen_fu | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:wg_91 | wugu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:wg_war | wugu | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |
 | event:wm_9 | wangmang | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -1693,6 +1699,8 @@
 | event:xz_629 | xuanzang | **0.000** | 0/3 | 0.00 | 0.20 | 5 | 0 / 0 / 0 / 0 |
 | event:xz_645 | xuanzang | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:yanjin | guandu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:yashan_bu | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:yashan_juezhan | yashan_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:yc_jz | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_wu | yancheng | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:yc_yue | yancheng | **0.000** | 0/3 | 0.00 | 0.08 | 12 | 0 / 0 / 0 / 0 |

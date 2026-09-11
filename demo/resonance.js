@@ -442,6 +442,7 @@ window.SANDBOX_RESONANCE = {
    "yangzhou",
    "yaoshan",
    "yashan",
+   "yashan_battle",
    "yazhou",
    "yehe",
    "yellow_sea_1894",
@@ -8827,6 +8828,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 2,
    "avg_resonance": 0.0,
    "best_event": "event:ys_1276",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "yashan_battle",
+   "name": "yashan_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:duanzong_beng",
    "best_resonance": 0.0
   },
   {

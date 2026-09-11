@@ -440,6 +440,7 @@
       "yangzhou",
       "yaoshan",
       "yashan",
+      "yashan_battle",
       "yazhou",
       "yehe",
       "yellow_sea_1894",
@@ -8828,6 +8829,26 @@
       "best_resonance": 0.0
     },
     {
+      "scene": "yashan_battle",
+      "name": "yashan_battle",
+      "total": 17,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "inference": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12,
+        "二手综述": 5
+      },
+      "faction_counts": {},
+      "event_count": 7,
+      "avg_resonance": 0.0,
+      "best_event": "event:duanzong_beng",
+      "best_resonance": 0.0
+    },
+    {
       "scene": "yazhou",
       "name": "yazhou",
       "total": 21,
@@ -11712,6 +11733,37 @@
       ],
       "scene_names": [
         "feishui_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:duanzong_beng",
+      "name": "event:duanzong_beng",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
       ],
       "total": 1,
       "gap_count": 0,
@@ -42639,6 +42691,37 @@
       }
     },
     {
+      "subject": "event:linan_xian",
+      "name": "event:linan_xian",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:liubei_nanche",
       "name": "event:liubei_nanche",
       "scenes": [
@@ -42989,6 +43072,37 @@
         "feishui_battle"
       ],
       "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:luxinfu_touhai",
+      "name": "event:luxinfu_touhai",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 2,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -43516,6 +43630,37 @@
         "maling"
       ],
       "total": 7,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:nanxing",
+      "name": "event:nanxing",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 1,
       "gap_count": 0,
       "coverage": "0/3",
       "coverage_frac": 0.0,
@@ -45438,6 +45583,37 @@
       }
     },
     {
+      "subject": "event:wen_fu",
+      "name": "event:wen_fu",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:wg_91",
       "name": "event:wg_91",
       "scenes": [
@@ -46196,6 +46372,68 @@
       "coverage_frac": 0.0,
       "divergence": 0.0,
       "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yashan_bu",
+      "name": "event:yashan_bu",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:yashan_juezhan",
+      "name": "event:yashan_juezhan",
+      "scenes": [
+        "yashan_battle"
+      ],
+      "scene_names": [
+        "yashan_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
       "resonance": 0.0,
       "party_counts": {
         "明方": 0,

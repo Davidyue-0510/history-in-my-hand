@@ -1,0 +1,11 @@
+{
+  "events": [
+    {"id": "ev_linan_xian", "subject": "event:linan_xian", "year": 1276, "era": "景炎元年（1276）", "title": "临安陷落·宋恭帝出降", "kind": "变局·亡都", "text": "元丞相伯颜帅师入临安，宋恭帝赵㬎出降，临安官属北徙；南宋朝廷名存实亡，益王赵昰、广王赵昺仓促南奔。"},
+    {"id": "ev_nanxing", "subject": "event:nanxing", "year": 1276, "era": "景炎元年（1276）", "title": "宋室南奔·端宗即位", "kind": "变局·流亡", "text": "陆秀夫、张世杰等护二王浮海南走，至福州拥立赵昰为帝（端宗），改元景炎，倚闽广续抗，海上行朝自此漂泊。"},
+    {"id": "ev_wen_fu", "subject": "event:wen_fu", "year": 1278, "era": "祥兴元年（1278）", "title": "文天祥五坡岭被俘", "kind": "战事·抗元支柱折", "text": "文天祥转战赣粤，于广东海丰五坡岭兵败被俘；南宋最后一面抗元旗帜崩折，海上行朝顿失外援统筹。"},
+    {"id": "ev_duanzong_beng", "subject": "event:duanzong_beng", "year": 1278, "era": "祥兴元年（1278）", "title": "端宗崩·陆秀夫立赵昺", "kind": "变局·继统", "text": "端宗赵昰崩于硇洲，杨太后与群臣议散；陆秀夫力主不绝宋祀，拥立卫王赵昺为帝（祥兴帝），移驻崖山，作最后一搏。"},
+    {"id": "ev_yashan_bu", "subject": "event:yashan_bu", "year": 1279, "era": "祥兴二年（1279）", "title": "崖山布防·连舟为寨", "kind": "战事·布防", "text": "张世杰以千余艘巨舰塞崖门海口，连环为城寨，楼橹相望，奉帝昺居中，决意凭水师死守，不复议陆遁。"},
+    {"id": "ev_yashan_juezhan", "subject": "event:yashan_juezhan", "year": 1279, "era": "祥兴二年（1279）", "title": "崖山决战·张弘范破阵", "kind": "战事·决战", "text": "元将张弘范会师崖山，断宋师汲路、以火攻焚其栅；潮落舟胶，元军四面蹙之，宋阵大乱，水师溃败。"},
+    {"id": "ev_luxinfu_touhai", "subject": "event:luxinfu_touhai", "year": 1279, "era": "祥兴二年（1279）", "title": "陆秀夫负帝投海·宋亡", "kind": "变局·亡国", "text": "陆秀夫知事不可为，以金玺负幼帝赵昺投海殉国；后宫诸臣、军民从死者以十万计，张世杰突围后亦溺，赵宋三百余年遂绝。"}
+  ]
+}
