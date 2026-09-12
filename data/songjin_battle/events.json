@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "id": "ev_songjin_weijin",
+      "subject": "event:songjin_weijin",
+      "year": 1640,
+      "era": "崇祯十三年（1640）",
+      "title": "清军围锦州·辽西告急",
+      "kind": "战事·围困",
+      "text": "皇太极遣济尔哈朗、多尔衮等率师围锦州，掘壕筑垒，断明援路；明关外诸城震恐，辽西战局陡紧。"
+    },
+    {
+      "id": "ev_songjin_jiyuan",
+      "subject": "event:songjin_jiyuan",
+      "year": 1641,
+      "era": "崇祯十四年（1641）",
+      "title": "洪承畴集八镇兵援锦",
+      "kind": "战事·集结",
+      "text": "崇祯命蓟辽总督洪承畴率八总兵、步骑十三万（号称）出宁远援锦州，屯于松山、杏山、塔山间，与清军对峙。"
+    },
+    {
+      "id": "ev_songjin_songshan_wei",
+      "subject": "event:songjin_songshan_wei",
+      "year": 1641,
+      "era": "崇祯十四年（1641）",
+      "title": "松山被围·明军溃遁",
+      "kind": "战事·溃败",
+      "text": "陈新甲、张若麒屡趣战，洪承畴被迫决战；王朴先遁，诸镇溃乱，清军截击，明援军大挫，洪承畴退守松山，旋被围。"
+    },
+    {
+      "id": "ev_songjin_songshan_xian",
+      "subject": "event:songjin_songshan_xian",
+      "year": 1642,
+      "era": "崇祯十五年（1642）",
+      "title": "松山陷·洪承畴被俘",
+      "kind": "战事·城陷",
+      "text": "松山被困经年，粮尽援绝，副将夏成德为内应，城破；洪承畴被俘，后降清，明关外精锐尽丧。"
+    },
+    {
+      "id": "ev_jinzhou_xiang",
+      "subject": "event:jinzhou_xiang",
+      "year": 1642,
+      "era": "崇祯十五年（1642）",
+      "title": "锦州降·祖大寿再降清",
+      "kind": "变局·献城",
+      "text": "锦州被围近两年，祖大寿粮尽，率众出降；明在辽西最重要堡垒失守，关外防线动摇。"
+    },
+    {
+      "id": "ev_tashan_xingshan_xian",
+      "subject": "event:tashan_xingshan_xian",
+      "year": 1642,
+      "era": "崇祯十五年（1642）",
+      "title": "塔山杏山陷·辽西尽失",
+      "kind": "战事·扫荡",
+      "text": "松山、锦州既下，清军乘势攻拔塔山、杏山，明辽西走廊诸城次第陷落，关外几尽入清。"
+    },
+    {
+      "id": "ev_songjin_ding",
+      "subject": "event:songjin_ding",
+      "year": 1642,
+      "era": "崇祯十五年（1642）",
+      "title": "松锦底定·明清辽西易主",
+      "kind": "变局·大势转移",
+      "text": "松锦之战以清军全胜告终，明失关外精锐与辽西要塞，宁远、山海关一线成为最后屏障；明清辽西战略主动权彻底易手。"
+    }
+  ]
+}

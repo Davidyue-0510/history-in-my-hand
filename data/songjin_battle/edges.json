@@ -1,0 +1,70 @@
+{
+  "edges": [
+    {
+      "from": "ningyuan",
+      "to": "jinzhou",
+      "type": "military",
+      "label": "宁远—锦州（明援锦主轴）"
+    },
+    {
+      "from": "jinzhou",
+      "to": "songshan",
+      "type": "military",
+      "label": "锦州—松山（围城与援军屯驻）"
+    },
+    {
+      "from": "songshan",
+      "to": "xingshan",
+      "type": "military",
+      "label": "松山—杏山（走廊中继）"
+    },
+    {
+      "from": "xingshan",
+      "to": "tashan",
+      "type": "military",
+      "label": "杏山—塔山（走廊南段）"
+    },
+    {
+      "from": "tashan",
+      "to": "ningyuan",
+      "type": "military",
+      "label": "塔山—宁远（明退守线）"
+    },
+    {
+      "from": "ningyuan",
+      "to": "shanhaiguan",
+      "type": "military",
+      "label": "宁远—山海关（明最后屏障）"
+    },
+    {
+      "from": "yizhou",
+      "to": "jinzhou",
+      "type": "military",
+      "label": "义州—锦州（清军围锦前沿）"
+    },
+    {
+      "from": "hong_chengchou",
+      "to": "wu_sangui",
+      "type": "command",
+      "label": "洪承畴—吴三桂（督师—总兵）"
+    },
+    {
+      "from": "hong_chengchou",
+      "to": "wang_pu",
+      "type": "command",
+      "label": "洪承畴—王朴（督师—总兵）"
+    },
+    {
+      "from": "huang_taiji",
+      "to": "dorgon",
+      "type": "command",
+      "label": "皇太极—多尔衮（君—亲王）"
+    },
+    {
+      "from": "huang_taiji",
+      "to": "jirgalang",
+      "type": "command",
+      "label": "皇太极—济尔哈朗（君—亲王）"
+    }
+  ]
+}

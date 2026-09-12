@@ -346,6 +346,7 @@
       "song_wanganshi_llm",
       "song_yancheng_llm",
       "songjin",
+      "songjin_battle",
       "songshan_battle_llm",
       "sui_canal",
       "sui_canal_llm",
@@ -7009,6 +7010,26 @@
       "avg_resonance": 0.311,
       "best_event": "event:songjin_campaign",
       "best_resonance": 0.333
+    },
+    {
+      "scene": "songjin_battle",
+      "name": "songjin_battle",
+      "total": 17,
+      "layers": {
+        "record": 12,
+        "scholarship": 1,
+        "inference": 2,
+        "gap": 2
+      },
+      "party_counts": {
+        "后世官修": 12,
+        "二手综述": 5
+      },
+      "faction_counts": {},
+      "event_count": 7,
+      "avg_resonance": 0.0,
+      "best_event": "event:jinzhou_xiang",
+      "best_resonance": 0.0
     },
     {
       "scene": "songshan_battle_llm",
@@ -41522,6 +41543,37 @@
       }
     },
     {
+      "subject": "event:jinzhou_xiang",
+      "name": "event:jinzhou_xiang",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:jl_jz",
       "name": "event:jl_jz",
       "scenes": [
@@ -44779,6 +44831,161 @@
       }
     },
     {
+      "subject": "event:songjin_ding",
+      "name": "event:songjin_ding",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_jiyuan",
+      "name": "event:songjin_jiyuan",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_songshan_wei",
+      "name": "event:songjin_songshan_wei",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 2,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_songshan_xian",
+      "name": "event:songjin_songshan_xian",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 2,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.5,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:songjin_weijin",
+      "name": "event:songjin_weijin",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
+      ],
+      "total": 3,
+      "gap_count": 1,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.333,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
       "subject": "event:sq_210",
       "name": "event:sq_210",
       "scenes": [
@@ -45229,6 +45436,37 @@
       ],
       "scene_names": [
         "mingmo_shuyi"
+      ],
+      "total": 1,
+      "gap_count": 0,
+      "coverage": "0/3",
+      "coverage_frac": 0.0,
+      "divergence": 0.0,
+      "gap_rate": 0.0,
+      "resonance": 0.0,
+      "party_counts": {
+        "明方": 0,
+        "清方": 0,
+        "朝鲜": 0,
+        "日本方": 0,
+        "综述考订": 0
+      },
+      "parties": {
+        "明方": [],
+        "清方": [],
+        "朝鲜": [],
+        "日本方": [],
+        "综述考订": []
+      }
+    },
+    {
+      "subject": "event:tashan_xingshan_xian",
+      "name": "event:tashan_xingshan_xian",
+      "scenes": [
+        "songjin_battle"
+      ],
+      "scene_names": [
+        "songjin_battle"
       ],
       "total": 1,
       "gap_count": 0,

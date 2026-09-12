@@ -693,7 +693,8 @@
   "changping_battle",
   "yashan_battle",
   "tumu_battle",
-  "jingnan_battle"
+  "jingnan_battle",
+  "songjin_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -39030,6 +39031,108 @@
     }
    },
    "province": "beijing",
+   "related": []
+  },
+  "songjin_battle": {
+   "kind": "county",
+   "region": "liaoxi",
+   "title": "松锦之战",
+   "dossier_label": "松锦之战",
+   "subtitle": "崇祯十三年—十五年（1640–1642）· 明 vs 清",
+   "primary_place": "jinzhou",
+   "dossier_event": "event:songjin_ding",
+   "vocab_pack": "songjin_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "崇祯十三年（1640）皇太极遣师围锦州，清军据义州前沿；十四年洪承畴集八镇兵援锦，陈新甲、张若麒趣战，王朴先遁、诸镇溃乱，洪承畴退守松山被围；十五年松山、锦州、塔山、杏山次第陷清，祖大寿降、洪承畴被俘后降，明失关外精锐与辽西要塞，仅保宁远、山海关。实控区随事件年份由明据辽西走廊翻为清控关外。",
+   "parties_note": "本切片主干为后世官修史（明史、清史稿）与现代学界综论；明、清双方亲历档案多经后世回叙，明军内部决策、粮饷实况与洪承畴降清细节为结构性缺口，系统不裁决，只并列。",
+   "subject_names": {
+    "event:songjin_weijin": "清军围锦州",
+    "event:songjin_jiyuan": "洪承畴集八镇兵援锦",
+    "event:songjin_songshan_wei": "松山被围·明军溃遁",
+    "event:songjin_songshan_xian": "松山陷·洪承畴被俘",
+    "event:jinzhou_xiang": "锦州降",
+    "event:tashan_xingshan_xian": "塔山杏山陷",
+    "event:songjin_ding": "松锦底定",
+    "place:jinzhou": "锦州",
+    "place:songshan": "松山",
+    "place:xingshan": "杏山",
+    "place:tashan": "塔山",
+    "place:ningyuan": "宁远",
+    "place:shanhaiguan": "山海关",
+    "place:yizhou": "义州",
+    "person:hong_chengchou": "洪承畴",
+    "person:zu_dashou": "祖大寿",
+    "person:wu_sangui": "吴三桂",
+    "person:wang_pu": "王朴",
+    "person:huang_taiji": "皇太极",
+    "person:dorgon": "多尔衮",
+    "person:jirgalang": "济尔哈朗",
+    "person:zhang_ruoqi": "张若麒",
+    "person:chen_xinjia": "陈新甲"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "松锦之战：朝堂凝聚力——崇祯中枢与陈新甲趣战、洪承畴持重之间决策撕裂，诸镇号令不一加速崩溃"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "松锦之战：后勤物力——锦州被围两年粮尽，明援锦粮道屡被清军截断，宁远—山海关成为最后补给线"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "松锦之战：人口动员——辽西将门（祖氏、吴氏）与八镇兵马被卷入，关外社会结构随明清易代重组"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "松锦之战：地缘战略——辽西走廊是华北—东北咽喉，松锦底定后山海关成为明清对峙最后关隘"
+    }
+   },
+   "province": "liaoning",
    "related": []
   }
  },

@@ -349,6 +349,7 @@
 | song_wanganshi_llm | 12 | 5 | **0.000** | event:ev_song_wanganshi_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | song_yancheng_llm | 12 | 3 | **0.000** | event:ev_song_yancheng_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 1 |
 | songjin | 18 | 5 | **0.311** | event:songjin_campaign（0.333） | gap 1 / inference 1 / record 15 / scholarship 1 |
+| songjin_battle | 17 | 7 | **0.000** | event:jinzhou_xiang（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | songshan_battle_llm | 15 | 3 | **0.000** | event:ev_songshan_battle_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 5 |
 | sui_canal | 12 | 0 | **0.000** | —（0.000） | gap 1 / scholarship 11 |
 | sui_canal_llm | 12 | 3 | **0.000** | event:ev_sui_canal_llm_01（0.000） | gap 1 / inference 1 / record 8 / scholarship 2 |
@@ -1543,6 +1544,7 @@
 | event:jianwen_xun | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:jingnan_qi | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:jingtai_li | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:jinzhou_xiang | songjin_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jl_jz | julu | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:jl_qin | julu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:jl_xiang | julu | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
@@ -1648,6 +1650,11 @@
 | event:sm_587 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:sm_589 | sui_mie_chen | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:song_xia_huoqi | gunpowder_warfare | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:songjin_ding | songjin_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:songjin_jiyuan | songjin_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:songjin_songshan_wei | songjin_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:songjin_songshan_xian | songjin_battle | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:songjin_weijin | songjin_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:sq_210 | shaqiu | **0.000** | 0/3 | 0.00 | 0.10 | 10 | 0 / 0 / 0 / 0 |
 | event:sq_false | shaqiu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:suibi | song_chan_yuan | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 1 |
@@ -1663,6 +1670,7 @@
 | event:sy_we | suiyang | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:sy_zhang | suiyang | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |
 | event:sy_zhi | mingmo_shuyi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:tashan_xingshan_xian | songjin_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:tj_di | tianjing | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:tj_wang | tianjing | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:tj_xiang | tianjing | **0.000** | 0/3 | 0.00 | 0.12 | 8 | 0 / 0 / 0 / 0 |

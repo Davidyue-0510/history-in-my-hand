@@ -348,6 +348,7 @@ window.SANDBOX_RESONANCE = {
    "song_wanganshi_llm",
    "song_yancheng_llm",
    "songjin",
+   "songjin_battle",
    "songshan_battle_llm",
    "sui_canal",
    "sui_canal_llm",
@@ -7011,6 +7012,26 @@ window.SANDBOX_RESONANCE = {
    "avg_resonance": 0.311,
    "best_event": "event:songjin_campaign",
    "best_resonance": 0.333
+  },
+  {
+   "scene": "songjin_battle",
+   "name": "songjin_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:jinzhou_xiang",
+   "best_resonance": 0.0
   },
   {
    "scene": "songshan_battle_llm",

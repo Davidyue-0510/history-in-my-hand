@@ -1,0 +1,97 @@
+{
+  "_comment": "松锦之战控制层（1640—1642）。1640 皇太极遣师围锦州，清军据义州前沿；明仍控锦州、松山、杏山、塔山、宁远、山海关。1641 洪承畴援锦大军溃于松山，锦州、松山被围。1642 松山、锦州、塔山、杏山次第陷清，明仅保宁远、山海关，辽西走廊易主。本切片用 _years=[1640,1642]，使主时间轴前 1 事件显『清围锦州、明仍控走廊』、中 2 事件显『明援溃、松山被围』、末 4 事件显『松锦底定、辽西归清』。争夺地按『明在前（end=1641）、清在后（start=1642）』排序，controllerAt 取首个匹配年窗。",
+  "_years": [
+    1640,
+    1642
+  ],
+  "control": [
+    {
+      "place_id": "yizhou",
+      "party": "清",
+      "start": 1640,
+      "end": null,
+      "basis": "义州为清军围锦前进基地与后勤枢纽，松锦之战期间始终清控",
+      "note": "清前沿"
+    },
+    {
+      "place_id": "jinzhou",
+      "party": "明",
+      "start": 1640,
+      "end": 1641,
+      "basis": "1640—1641 锦州为祖大寿所守，明在辽西最重堡垒",
+      "note": "明重镇"
+    },
+    {
+      "place_id": "jinzhou",
+      "party": "清",
+      "start": 1642,
+      "end": null,
+      "basis": "1642 祖大寿粮尽出降，锦州归清",
+      "note": "战后属清"
+    },
+    {
+      "place_id": "songshan",
+      "party": "明",
+      "start": 1640,
+      "end": 1641,
+      "basis": "1640—1641 松山为明援锦大军屯驻处，后退守被围",
+      "note": "明援军屯"
+    },
+    {
+      "place_id": "songshan",
+      "party": "清",
+      "start": 1642,
+      "end": null,
+      "basis": "1642 松山城破，洪承畴被俘，松山归清",
+      "note": "战后属清"
+    },
+    {
+      "place_id": "xingshan",
+      "party": "明",
+      "start": 1640,
+      "end": 1641,
+      "basis": "1640—1641 杏山为明辽西走廊中继堡",
+      "note": "明走廊中继"
+    },
+    {
+      "place_id": "xingshan",
+      "party": "清",
+      "start": 1642,
+      "end": null,
+      "basis": "1642 松锦战后杏山陷清",
+      "note": "战后属清"
+    },
+    {
+      "place_id": "tashan",
+      "party": "明",
+      "start": 1640,
+      "end": 1641,
+      "basis": "1640—1641 塔山为明辽西走廊南段屏障",
+      "note": "明南段屏"
+    },
+    {
+      "place_id": "tashan",
+      "party": "清",
+      "start": 1642,
+      "end": null,
+      "basis": "1642 松锦战后塔山陷清",
+      "note": "战后属清"
+    },
+    {
+      "place_id": "ningyuan",
+      "party": "明",
+      "start": 1640,
+      "end": null,
+      "basis": "宁远为明关外最后重镇，松锦战后仍明控",
+      "note": "明最后重镇"
+    },
+    {
+      "place_id": "shanhaiguan",
+      "party": "明",
+      "start": 1640,
+      "end": null,
+      "basis": "山海关为明京师最后屏障，松锦战后仍明控",
+      "note": "明京师屏障"
+    }
+  ]
+}
