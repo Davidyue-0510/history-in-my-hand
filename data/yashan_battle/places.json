@@ -1,12 +1,84 @@
 {
   "places": [
-    {"id": "yashan", "name": "崖山", "lat": 22.20, "lon": 113.06, "type": "region", "note": "主战场，今广东江门新会区崖门镇，银洲湖出海口，宋水师连环为寨处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "linan", "name": "临安", "lat": 30.27, "lon": 120.15, "type": "city", "note": "南宋行在，今浙江杭州，1276 年元军入城、恭帝出降", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "fuzhou", "name": "福州", "lat": 26.07, "lon": 119.30, "type": "city", "note": "景炎元年（1276）端宗赵昰于此即位，海上行朝初立", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "guangzhou", "name": "广州", "lat": 23.13, "lon": 113.26, "type": "city", "note": "广南东路治所，宋室流亡所倚的岭南支柱，后为元所取", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "chaozhou", "name": "潮州", "lat": 23.66, "lon": 116.62, "type": "city", "note": "广南东路东陲，宋抗元呼应之地，文天祥曾转战其境", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "quanzhou", "name": "泉州", "lat": 24.88, "lon": 118.68, "type": "city", "note": "市舶要港，蒲寿庚降元（1277）后断宋海外航线", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "naozhou", "name": "硇洲", "lat": 20.90, "lon": 110.60, "type": "region", "note": "雷州半岛东南岛屿（古砜洲），端宗赵昰崩于此，宋室西迁最后一站", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "zhujiangkou", "name": "珠江口", "lat": 22.35, "lon": 113.55, "type": "river", "note": "广州外海门户，元水师自虎门南下达崖门的航道所经", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+    {
+      "id": "yashan",
+      "name": "崖山",
+      "lat": 22.2,
+      "lon": 113.06,
+      "type": "region",
+      "note": "主战场，今广东江门新会区崖门镇，银洲湖出海口，宋水师连环为寨处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "linan",
+      "name": "临安",
+      "lat": 30.29412,
+      "lon": 120.16862,
+      "type": "city",
+      "note": "南宋行在，今浙江杭州，1276 年元军入城、恭帝出降（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：临安府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：临安府"
+    },
+    {
+      "id": "fuzhou",
+      "name": "福州",
+      "lat": 26.07395,
+      "lon": 119.32158,
+      "type": "city",
+      "note": "景炎元年（1276）端宗赵昰于此即位，海上行朝初立（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：福州）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：福州"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "lat": 23.13462,
+      "lon": 113.25607,
+      "type": "city",
+      "note": "广南东路治所，宋室流亡所倚的岭南支柱，后为元所取（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：广州）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：广州"
+    },
+    {
+      "id": "chaozhou",
+      "name": "潮州",
+      "lat": 23.66771,
+      "lon": 116.63666,
+      "type": "city",
+      "note": "广南东路东陲，宋抗元呼应之地，文天祥曾转战其境（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：潮州）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：潮州"
+    },
+    {
+      "id": "quanzhou",
+      "name": "泉州",
+      "lat": 24.90964,
+      "lon": 118.58991,
+      "type": "city",
+      "note": "市舶要港，蒲寿庚降元（1277）后断宋海外航线（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泉州）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泉州"
+    },
+    {
+      "id": "naozhou",
+      "name": "硇洲",
+      "lat": 20.9,
+      "lon": 110.6,
+      "type": "region",
+      "note": "雷州半岛东南岛屿（古砜洲），端宗赵昰崩于此，宋室西迁最后一站（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "zhujiangkou",
+      "name": "珠江口",
+      "lat": 22.35,
+      "lon": 113.55,
+      "type": "river",
+      "note": "广州外海门户，元水师自虎门南下达崖门的航道所经（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    }
   ]
 }

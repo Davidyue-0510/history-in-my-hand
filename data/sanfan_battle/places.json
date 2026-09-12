@@ -6,59 +6,59 @@
       "lat": 25.04,
       "lon": 102.71,
       "type": "city",
-      "note": "吴三桂藩邸所在，云贵军政中枢；三藩之乱起兵地与最后陷落处，1681 年清军入城、吴世璠自杀",
+      "note": "吴三桂藩邸所在，云贵军政中枢；三藩之乱起兵地与最后陷落处，1681 年清军入城、吴世璠自杀（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
       "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
     },
     {
       "id": "fuzhou_fj",
       "name": "福州（福建）",
-      "lat": 26.07,
-      "lon": 119.3,
+      "lat": 26.07395,
+      "lon": 119.32158,
       "type": "city",
-      "note": "耿精忠藩邸，1674 年据闽起兵，1676 年势蹙降清，福建归清",
-      "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "note": "耿精忠藩邸，1674 年据闽起兵，1676 年势蹙降清，福建归清（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：福州府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：福州府"
     },
     {
       "id": "guangzhou",
       "name": "广州（广东）",
-      "lat": 23.13,
-      "lon": 113.26,
+      "lat": 23.13462,
+      "lon": 113.25607,
       "type": "city",
-      "note": "尚可喜藩邸，子尚之信据之以应吴三桂，1679 年降清，广东归清",
-      "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "note": "尚可喜藩邸，子尚之信据之以应吴三桂，1679 年降清，广东归清（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：广州府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：广州府"
     },
     {
       "id": "yuezhou",
       "name": "岳州（岳阳）",
-      "lat": 29.36,
-      "lon": 113.09,
+      "lat": 29.37126,
+      "lon": 113.09766,
       "type": "city",
-      "note": "湖南主战场，吴军沿江筑垒拒清，清军攻之不克者数年，为长江中游争夺焦点",
-      "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "note": "湖南主战场，吴军沿江筑垒拒清，清军攻之不克者数年，为长江中游争夺焦点（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：岳州府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：岳州府"
     },
     {
       "id": "changsha",
       "name": "长沙",
-      "lat": 28.23,
-      "lon": 112.94,
+      "lat": 28.1982,
+      "lon": 112.97813,
       "type": "city",
-      "note": "湖南重镇，吴军据之以屏云贵、胁长江，1679 年后随湖南收复归清",
-      "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "note": "湖南重镇，吴军据之以屏云贵、胁长江，1679 年后随湖南收复归清（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长沙府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长沙府"
     },
     {
       "id": "chengdu",
       "name": "成都（四川）",
-      "lat": 30.66,
-      "lon": 104.07,
+      "lat": 30.66606,
+      "lon": 104.0754,
       "type": "city",
-      "note": "川陕战场枢纽，1674 年后一度入三藩之手，清军 1680 年前后收复，断吴三桂北联王辅臣之道",
-      "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "note": "川陕战场枢纽，1674 年后一度入三藩之手，清军 1680 年前后收复，断吴三桂北联王辅臣之道（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：成都府）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：成都府"
     },
     {
       "id": "beijing",
@@ -66,9 +66,9 @@
       "lat": 39.9,
       "lon": 116.4,
       "type": "city",
-      "note": "康熙朝中枢所在，下撤藩令、调度八旗与绿营平叛；乱中中枢不摇，为最终底定之根本",
+      "note": "康熙朝中枢所在，下撤藩令、调度八旗与绿营平叛；乱中中枢不摇，为最终底定之根本（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
       "geo_match": "approx",
-      "geo_note": "现代公开地理数据，待CHGIS精修"
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
     }
   ]
 }

@@ -167,13 +167,13 @@ window.SANDBOX_SLICES["songjin_battle"] = {
   {
    "id": "jinzhou",
    "name": "锦州",
-   "lat": 41.1,
-   "lon": 121.15,
+   "lat": 41.11286,
+   "lon": 121.13531,
    "type": "city",
-   "note": "明关外第一重镇，辽西走廊咽喉；松锦之战核心围城目标，祖大寿守此近两年后降清",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 49
+   "note": "明关外第一重镇，辽西走廊咽喉；松锦之战核心围城目标，祖大寿守此近两年后降清（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：锦州府）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：锦州府",
+   "elev": 53
   },
   {
    "id": "songshan",
@@ -181,9 +181,9 @@ window.SANDBOX_SLICES["songjin_battle"] = {
    "lat": 41.2,
    "lon": 121.25,
    "type": "city",
-   "note": "松山古城遗址（今辽宁凌海松山镇附近），洪承畴援锦大军屯驻及被围处，城破后明关外精锐尽丧",
+   "note": "松山古城遗址（今辽宁凌海松山镇附近），洪承畴援锦大军屯驻及被围处，城破后明关外精锐尽丧（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 60
   },
   {
@@ -192,9 +192,9 @@ window.SANDBOX_SLICES["songjin_battle"] = {
    "lat": 41.15,
    "lon": 121.2,
    "type": "city",
-   "note": "辽西走廊中继堡，松山—塔山间要地；松锦战后与塔山同陷，明辽西走廊遂断",
+   "note": "辽西走廊中继堡，松山—塔山间要地；松锦战后与塔山同陷，明辽西走廊遂断（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 54
   },
   {
@@ -203,21 +203,21 @@ window.SANDBOX_SLICES["songjin_battle"] = {
    "lat": 40.75,
    "lon": 120.85,
    "type": "city",
-   "note": "今辽宁葫芦岛连山区塔山一带，明辽西走廊南段屏障；松锦战后陷清，宁远—山海关直接受威胁",
+   "note": "今辽宁葫芦岛连山区塔山一带，明辽西走廊南段屏障；松锦战后陷清，宁远—山海关直接受威胁（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 27
   },
   {
    "id": "ningyuan",
    "name": "宁远",
-   "lat": 40.58,
-   "lon": 120.42,
+   "lat": 40.61923,
+   "lon": 120.70344,
    "type": "city",
-   "note": "今辽宁兴城，明关外最后重镇；松锦战后明在关外仅保宁远、山海关一线",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 72
+   "note": "今辽宁兴城，明关外最后重镇；松锦战后明在关外仅保宁远、山海关一线（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宁远州）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宁远州",
+   "elev": 13
   },
   {
    "id": "shanhaiguan",
@@ -225,9 +225,9 @@ window.SANDBOX_SLICES["songjin_battle"] = {
    "lat": 39.98,
    "lon": 119.75,
    "type": "city",
-   "note": "明长城东起点、京师最后屏障；松锦战后成为明清对峙最前沿",
+   "note": "明长城东起点、京师最后屏障；松锦战后成为明清对峙最前沿（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "shanhaiguan",
    "_other_scenes": [
     "guangning",
@@ -239,13 +239,13 @@ window.SANDBOX_SLICES["songjin_battle"] = {
   {
    "id": "yizhou",
    "name": "义州",
-   "lat": 41.53,
-   "lon": 121.23,
+   "lat": 41.53939,
+   "lon": 121.24303,
    "type": "city",
-   "note": "今辽宁义县，清军围锦前进基地与后勤枢纽；松锦之战期间始终为清控",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 70
+   "note": "今辽宁义县，清军围锦前进基地与后勤枢纽；松锦之战期间始终为清控（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：义州）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：义州",
+   "elev": 61
   }
  ],
  "persons": [
@@ -1146,15 +1146,15 @@ window.SANDBOX_SLICES["songjin_battle"] = {
   {
    "place_id": "yizhou",
    "name": "义州",
-   "lon": 121.23,
-   "lat": 41.53,
+   "lon": 121.24303,
+   "lat": 41.53939,
    "region": "liaoxi"
   },
   {
    "place_id": "jinzhou",
    "name": "锦州",
-   "lon": 121.15,
-   "lat": 41.1,
+   "lon": 121.13531,
+   "lat": 41.11286,
    "region": "liaoxi"
   },
   {
@@ -1181,8 +1181,8 @@ window.SANDBOX_SLICES["songjin_battle"] = {
   {
    "place_id": "ningyuan",
    "name": "宁远",
-   "lon": 120.42,
-   "lat": 40.58,
+   "lon": 120.70344,
+   "lat": 40.61923,
    "region": "liaoxi"
   },
   {

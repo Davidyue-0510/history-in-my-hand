@@ -122,6 +122,9 @@
     var D = cfg.sceneData || null;
     var hasScene = !!(D && Array.isArray(D.control) && D.control.length);
     ctrlData = hasScene ? D.control : ((SD && SD.control) || []);
+    // v0.256：主实控区只渲染「主时间线」控制记录；带 timeline 字段的条目是
+    // 反事实分支（供 drawDiff 对比），不得污染主图层，否则分支会覆盖史实。
+    ctrlData = ctrlData.filter(function (c) { return !c.timeline; });
     var cs = hasScene ? (D.control_seats || []) : ((SD && SD.control_seats) || []);
     var haveYears = hasScene && D.control_years && D.control_years.length;
     curYears = haveYears ? D.control_years : deriveYears();
@@ -197,14 +200,24 @@
     if (ready) { dirty = true; repaint(); }
   }
 
+  // v0.256：同年重叠区间（翻转年两端都含同一年 / 开放区间与翻转重叠）时，
+  // 取「start 最新」的易手记录胜出（最近一次控制权优先），平局再比 end 更晚者。
+  // 修复实控区在翻转年看不出变化的问题（此前返回第一条匹配，早段的旧控制方把新方盖掉）。
   function controllerAt(seatId, year) {
+    var best = null;
     for (var i = 0; i < ctrlData.length; i++) {
       var s = ctrlData[i];
       if (s.place_id !== seatId) continue;
       var st = s.start, en = (s.end == null ? 1e9 : s.end);
-      if (year >= st && year <= en) return s.party;
+      if (year >= st && year <= en) {
+        if (!best ||
+            st > best.start ||
+            (st === best.start && en > best.end)) {
+          best = s;
+        }
+      }
     }
-    return null;
+    return best ? best.party : null;
   }
 
   function buildFrame(year) {

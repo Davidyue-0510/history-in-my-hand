@@ -1,14 +1,102 @@
 {
   "places": [
-    {"id": "luoyang", "name": "洛阳", "lon": 112.45, "lat": 34.62, "type": "city", "note": "魏都（曹丕代汉后定都）；延康受禅、九品中正制立制、正始玄学与高平陵之变皆在此"},
-    {"id": "chang_an", "name": "长安", "lon": 108.94, "lat": 34.34, "type": "city", "note": "魏西京、关中根本，诸葛亮北伐的魏方后方枢纽"},
-    {"id": "wuzhangyuan", "name": "五丈原", "lon": 107.63, "lat": 34.20, "type": "fortress", "note": "建兴十二年诸葛亮与司马懿对峙于此，同年病卒军中（今陕西岐山；坐标为今地推定）"},
-    {"id": "hanzhong", "name": "汉中", "lon": 107.02, "lat": 33.07, "type": "region", "note": "蜀汉北伐基地，秦岭以南的攻守枢纽，木牛流马运输线起点"},
-    {"id": "chengdu", "name": "成都", "lon": 104.07, "lat": 30.67, "type": "city", "note": "蜀汉都城、益州根本；蜀不置史官，蜀汉内政记载即在此地系统性亡佚"},
-    {"id": "jian_ge", "name": "剑阁", "lon": 105.52, "lat": 32.30, "type": "pass", "note": "蜀北门户，一夫当关之险；邓艾偷渡阴平正是绕开此关"},
-    {"id": "yinping", "name": "阴平", "lon": 104.68, "lat": 32.63, "type": "pass", "note": "景元四年邓艾自此凿山通道行无人之地七百余里，直取成都（今甘肃文县；坐标为今地推定，道里诸说不一）"},
-    {"id": "jiangling", "name": "江陵", "lon": 112.19, "lat": 30.35, "type": "city", "note": "荆州重镇，魏蜀吴三方反复争夺；夷陵之战的吴军防线核心"},
-    {"id": "chibi", "name": "赤壁", "lon": 113.90, "lat": 29.75, "type": "battlefield", "note": "建安十三年孙刘联军破曹处（今湖北赤壁市；具体位置有蒲圻、黄州等说，坐标为今地推定）"},
-    {"id": "jianye", "name": "建业", "lon": 118.78, "lat": 32.06, "type": "city", "note": "吴都（今南京）；太康元年王濬楼船直抵城下，孙皓出降，三国归晋"}
+    {
+      "id": "luoyang",
+      "name": "洛阳",
+      "lon": 112.42357,
+      "lat": 34.64981,
+      "type": "city",
+      "note": "魏都（曹丕代汉后定都）；延康受禅、九品中正制立制、正始玄学与高平陵之变皆在此（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛阳县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛阳县"
+    },
+    {
+      "id": "chang_an",
+      "name": "长安",
+      "lon": 108.90698,
+      "lat": 34.24642,
+      "type": "city",
+      "note": "魏西京、关中根本，诸葛亮北伐的魏方后方枢纽（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县"
+    },
+    {
+      "id": "wuzhangyuan",
+      "name": "五丈原",
+      "lon": 107.63,
+      "lat": 34.2,
+      "type": "fortress",
+      "note": "建兴十二年诸葛亮与司马懿对峙于此，同年病卒军中（今陕西岐山；坐标为今地推定）（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "hanzhong",
+      "name": "汉中",
+      "lon": 107.03592,
+      "lat": 33.07298,
+      "type": "region",
+      "note": "蜀汉北伐基地，秦岭以南的攻守枢纽，木牛流马运输线起点（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：汉中郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：汉中郡"
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "lon": 104.0754,
+      "lat": 30.66606,
+      "type": "city",
+      "note": "蜀汉都城、益州根本；蜀不置史官，蜀汉内政记载即在此地系统性亡佚（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：成都县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：成都县"
+    },
+    {
+      "id": "jian_ge",
+      "name": "剑阁",
+      "lon": 105.49878,
+      "lat": 32.28527,
+      "type": "pass",
+      "note": "蜀北门户，一夫当关之险；邓艾偷渡阴平正是绕开此关（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：剑阁县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：剑阁县"
+    },
+    {
+      "id": "yinping",
+      "name": "阴平",
+      "lon": 104.66421,
+      "lat": 32.94748,
+      "type": "pass",
+      "note": "景元四年邓艾自此凿山通道行无人之地七百余里，直取成都（今甘肃文县；坐标为今地推定，道里诸说不一）（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：阴平郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：阴平郡"
+    },
+    {
+      "id": "jiangling",
+      "name": "江陵",
+      "lon": 112.19077,
+      "lat": 30.35044,
+      "type": "city",
+      "note": "荆州重镇，魏蜀吴三方反复争夺；夷陵之战的吴军防线核心（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：江陵县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：江陵县"
+    },
+    {
+      "id": "chibi",
+      "name": "赤壁",
+      "lon": 113.9,
+      "lat": 29.75,
+      "type": "battlefield",
+      "note": "建安十三年孙刘联军破曹处（今湖北赤壁市；具体位置有蒲圻、黄州等说，坐标为今地推定）（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "jianye",
+      "name": "建业",
+      "lon": 118.76899,
+      "lat": 32.05256,
+      "type": "city",
+      "note": "吴都（今南京）；太康元年王濬楼船直抵城下，孙皓出降，三国归晋（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：建业县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：建业县"
+    }
   ]
 }

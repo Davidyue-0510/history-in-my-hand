@@ -128,32 +128,34 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "蔡州",
    "type": "city",
    "modern": "河南汝南",
-   "note": "淮西节度使治所",
-   "lon": 114.35,
-   "lat": 33.53,
-   "geo_note": "唐淮西节度使治所，今河南汝南",
-   "elev": 43
+   "note": "淮西节度使治所（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：蔡州）",
+   "lon": 114.35752,
+   "lat": 33.00374,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：蔡州",
+   "geo_match": "chgis",
+   "elev": 47
   },
   {
    "id": "tangzhou",
    "name": "唐州",
    "type": "zhou",
    "modern": "河南泌阳",
-   "note": "李愬出兵基地",
-   "lon": 113.31,
-   "lat": 32.73,
-   "geo_note": "今河南泌阳",
-   "elev": 158
+   "note": "李愬出兵基地（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：唐州）",
+   "lon": 113.12449,
+   "lat": 31.98609,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：唐州",
+   "geo_match": "chgis",
+   "elev": 138
   },
   {
    "id": "wenchengzhai",
    "name": "文城栅",
    "type": "zhai",
    "modern": "河南遂平西北",
-   "note": "蔡州西北要栅，李愬雪夜自此发",
+   "note": "蔡州西北要栅，李愬雪夜自此发（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "lon": 113.97,
    "lat": 33.15,
-   "geo_note": "蔡州西北要栅，今河南遂平",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 64
   },
   {
@@ -161,10 +163,10 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "洄曲",
    "type": "river_defense",
    "modern": "河南漯河沙河",
-   "note": "董重质所守，蔡州北屏障",
+   "note": "董重质所守，蔡州北屏障（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "lon": 114.03,
    "lat": 33.58,
-   "geo_note": "蔡州北洄曲，今河南漯河沙河一带",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 63
   },
   {
@@ -172,32 +174,34 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "郾城",
    "type": "zhou",
    "modern": "河南漯河郾城",
-   "note": "李光颜拒守",
-   "lon": 113.97,
-   "lat": 33.87,
-   "geo_note": "今河南漯河郾城",
-   "elev": 56
+   "note": "李光颜拒守（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：郾城县）",
+   "lon": 113.98918,
+   "lat": 33.58662,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：郾城县",
+   "geo_match": "chgis",
+   "elev": 62
   },
   {
    "id": "shenzhou",
    "name": "申州",
    "type": "zhou",
    "modern": "河南信阳",
-   "note": "淮西属州",
-   "lon": 114.08,
-   "lat": 32.15,
-   "geo_note": "今河南信阳",
-   "elev": 91
+   "note": "淮西属州（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：申州）",
+   "lon": 114.07166,
+   "lat": 32.12803,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：申州",
+   "geo_match": "chgis",
+   "elev": 92
   },
   {
    "id": "huai_xi",
    "name": "淮西",
    "type": "zhen",
    "modern": "河南南部",
-   "note": "方镇，治蔡州",
+   "note": "方镇，治蔡州（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "lon": 114.35,
    "lat": 33.53,
-   "geo_note": "方镇名，治蔡州",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 43
   },
   {
@@ -205,22 +209,24 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
    "name": "长安",
    "type": "city",
    "modern": "陕西西安",
-   "note": "唐都",
-   "lon": 108.95,
-   "lat": 34.27,
-   "geo_note": "唐都，今西安",
-   "elev": 411
+   "note": "唐都（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县）",
+   "lon": 108.93969,
+   "lat": 34.25982,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县",
+   "geo_match": "chgis",
+   "elev": 412
   },
   {
    "id": "luoyang",
    "name": "洛阳",
    "type": "city",
    "modern": "河南洛阳",
-   "note": "东都",
-   "lon": 112.45,
-   "lat": 34.62,
-   "geo_note": "唐东都，今洛阳",
-   "elev": 151
+   "note": "东都（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛阳县）",
+   "lon": 112.38263,
+   "lat": 34.66528,
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：洛阳县",
+   "geo_match": "chgis",
+   "elev": 170
   }
  ],
  "persons": [
@@ -973,15 +979,15 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
   {
    "place_id": "caizhou",
    "name": "蔡州",
-   "lon": 114.35,
-   "lat": 33.53,
+   "lon": 114.35752,
+   "lat": 33.00374,
    "region": "tang"
   },
   {
    "place_id": "shenzhou",
    "name": "申州",
-   "lon": 114.08,
-   "lat": 32.15,
+   "lon": 114.07166,
+   "lat": 32.12803,
    "region": "tang"
   },
   {
@@ -1001,29 +1007,29 @@ window.SANDBOX_SLICES["tang_huai_xi"] = {
   {
    "place_id": "tangzhou",
    "name": "唐州",
-   "lon": 113.31,
-   "lat": 32.73,
+   "lon": 113.12449,
+   "lat": 31.98609,
    "region": "tang"
   },
   {
    "place_id": "yancheng",
    "name": "郾城",
-   "lon": 113.97,
-   "lat": 33.87,
+   "lon": 113.98918,
+   "lat": 33.58662,
    "region": "tang"
   },
   {
    "place_id": "changan",
    "name": "长安",
-   "lon": 108.95,
-   "lat": 34.27,
+   "lon": 108.93969,
+   "lat": 34.25982,
    "region": "tang"
   },
   {
    "place_id": "luoyang",
    "name": "洛阳",
-   "lon": 112.45,
-   "lat": 34.62,
+   "lon": 112.38263,
+   "lat": 34.66528,
    "region": "tang"
   }
  ],

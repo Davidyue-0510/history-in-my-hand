@@ -1,12 +1,84 @@
 {
   "places": [
-    {"id": "changping", "name": "长平", "lat": 35.80, "lon": 112.92, "type": "city", "note": "主战场，今山西晋城高平市，赵军坚壁与秦接战处", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "shangdang", "name": "上党", "lat": 36.18, "lon": 113.12, "type": "region", "note": "冯亭献赵之郡，今山西长治一带，秦赵争夺枢纽", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "dan_river", "name": "丹河", "lat": 35.78, "lon": 112.95, "type": "river", "note": "长平战场河流，赵军夹丹水而阵", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "handan", "name": "邯郸", "lat": 36.61, "lon": 114.49, "type": "city", "note": "赵都，今河北邯郸，长平之战后方与援源", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "xianyang", "name": "咸阳", "lat": 34.34, "lon": 108.71, "type": "city", "note": "秦都，今陕西咸阳，白起受命与王龁南下攻赵", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "yewang", "name": "野王", "lat": 35.10, "lon": 112.94, "type": "city", "note": "太行南陉，今河南沁阳，前263 已为秦取，白起由此断上党归路", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "xuanshi", "name": "泫氏", "lat": 35.80, "lon": 112.90, "type": "city", "note": "长平附近邑，今高平，赵军前哨", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "kunggangling", "name": "空仓岭", "lat": 35.72, "lon": 112.80, "type": "region", "note": "长平以西秦军防线，赵括由此出击被白起诱围", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+    {
+      "id": "changping",
+      "name": "长平",
+      "lat": 35.79206,
+      "lon": 112.91959,
+      "type": "city",
+      "note": "主战场，今山西晋城高平市，赵军坚壁与秦接战处（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长平郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长平郡"
+    },
+    {
+      "id": "shangdang",
+      "name": "上党",
+      "lat": 36.18354,
+      "lon": 113.10349,
+      "type": "region",
+      "note": "冯亭献赵之郡，今山西长治一带，秦赵争夺枢纽（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：上党郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：上党郡"
+    },
+    {
+      "id": "dan_river",
+      "name": "丹河",
+      "lat": 35.78,
+      "lon": 112.95,
+      "type": "river",
+      "note": "长平战场河流，赵军夹丹水而阵（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "handan",
+      "name": "邯郸",
+      "lat": 36.59104,
+      "lon": 114.51637,
+      "type": "city",
+      "note": "赵都，今河北邯郸，长平之战后方与援源（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：邯郸郡）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：邯郸郡"
+    },
+    {
+      "id": "xianyang",
+      "name": "咸阳",
+      "lat": 34.41219,
+      "lon": 108.85463,
+      "type": "city",
+      "note": "秦都，今陕西咸阳，白起受命与王龁南下攻赵（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：咸阳县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：咸阳县"
+    },
+    {
+      "id": "yewang",
+      "name": "野王",
+      "lat": 35.0893,
+      "lon": 112.93699,
+      "type": "city",
+      "note": "太行南陉，今河南沁阳，前263 已为秦取，白起由此断上党归路（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：野王县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：野王县"
+    },
+    {
+      "id": "xuanshi",
+      "name": "泫氏",
+      "lat": 35.79206,
+      "lon": 112.91959,
+      "type": "city",
+      "note": "长平附近邑，今高平，赵军前哨（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泫氏县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：泫氏县"
+    },
+    {
+      "id": "kunggangling",
+      "name": "空仓岭",
+      "lat": 35.72,
+      "lon": 112.8,
+      "type": "region",
+      "note": "长平以西秦军防线，赵括由此出击被白起诱围（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    }
   ]
 }

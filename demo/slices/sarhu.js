@@ -210,23 +210,27 @@ window.SANDBOX_SLICES["sarhu"] = {
    "id": "shenyang",
    "name": "沈阳（沈阳中卫）",
    "modern": "辽宁省沈阳市",
-   "lon": 123.43,
-   "lat": 41.8,
+   "lon": 123.41988,
+   "lat": 41.78825,
    "precision": "city",
    "type": "city",
-   "note": "经略杨镐驻节地，四路军总调度中心",
-   "elev": 50
+   "note": "经略杨镐驻节地，四路军总调度中心（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：盛京）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：盛京",
+   "elev": 47
   },
   {
    "id": "fushun",
    "name": "抚顺（抚顺所）",
    "modern": "辽宁省抚顺市",
-   "lon": 123.96,
-   "lat": 41.88,
+   "lon": 123.78885,
+   "lat": 41.84602,
    "precision": "city",
    "type": "fort",
-   "note": "1618 年已为后金攻破",
-   "elev": 118
+   "note": "1618 年已为后金攻破（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：抚顺县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：抚顺县",
+   "elev": 63
   },
   {
    "id": "fushunguan",
@@ -234,9 +238,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "抚顺市东，浑河北岸",
    "lon": 124.28,
    "lat": 41.92,
-   "precision": "approx_10km",
+   "precision": "approx_chgis_gap",
    "type": "pass",
-   "note": "辽东边墙关口，杜松西路出塞处",
+   "note": "辽东边墙关口，杜松西路出塞处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "fushunguan",
    "_other_scenes": [
     "fushun"
@@ -249,9 +254,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "抚顺市大伙房水库淹没区一带",
    "lon": 124.1,
    "lat": 41.9,
-   "precision": "approx_10km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "原址已沉入大伙房水库，现代定位存在争议",
+   "note": "原址已沉入大伙房水库，现代定位存在争议（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "sarhu",
    "_other_scenes": [
     "kaiyuan",
@@ -265,9 +271,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "抚顺市东，铁背山西南",
    "lon": 124.18,
    "lat": 41.93,
-   "precision": "approx_10km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "界凡筑城工地所在，杜松分兵攻此",
+   "note": "界凡筑城工地所在，杜松分兵攻此（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 196
   },
   {
@@ -276,9 +283,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "抚顺县铁背山",
    "lon": 124.22,
    "lat": 41.94,
-   "precision": "approx_5km",
+   "precision": "approx_chgis_gap",
    "type": "fort",
-   "note": "后金新筑城，战时有筑城夫役一万五千人",
+   "note": "后金新筑城，战时有筑城夫役一万五千人（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 197
   },
   {
@@ -289,7 +297,8 @@ window.SANDBOX_SLICES["sarhu"] = {
    "lat": 41.78,
    "precision": "site",
    "type": "capital",
-   "note": "后金都城，明军四路合击的目标",
+   "note": "后金都城，明军四路合击的目标（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "hetuala",
    "_other_scenes": [
     "fushun",
@@ -305,17 +314,19 @@ window.SANDBOX_SLICES["sarhu"] = {
    "id": "kaiyuan",
    "name": "开原",
    "modern": "辽宁省开原市",
-   "lon": 124.03,
-   "lat": 42.55,
+   "lon": 124.07673,
+   "lat": 42.60439,
    "precision": "city",
    "type": "city",
-   "note": "马林北路出发地",
+   "note": "马林北路出发地（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：开原县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：开原县",
    "_global_id": "kaiyuan",
    "_other_scenes": [
     "shenyang",
     "yehe"
    ],
-   "elev": 82
+   "elev": 84
   },
   {
    "id": "sanchaer",
@@ -323,9 +334,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "开原东南、铁岭东",
    "lon": 124.2,
    "lat": 42.2,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "fort",
-   "note": "北路军入塞路径，具体位置有异说",
+   "note": "北路军入塞路径，具体位置有异说（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 282
   },
   {
@@ -334,9 +346,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "抚顺市东北、浑河北",
    "lon": 124.3,
    "lat": 42.05,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "马林本部扎营处",
+   "note": "马林本部扎营处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 224
   },
   {
@@ -345,9 +358,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "尚间崖东南",
    "lon": 124.38,
    "lat": 42.0,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "潘宗颜部扎营处，力战死",
+   "note": "潘宗颜部扎营处，力战死（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 227
   },
   {
@@ -358,7 +372,8 @@ window.SANDBOX_SLICES["sarhu"] = {
    "lat": 41.35,
    "precision": "town",
    "type": "fort",
-   "note": "李如柏南路出发地，1618 年曾被后金攻破",
+   "note": "李如柏南路出发地，1618 年曾被后金攻破（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 356
   },
   {
@@ -367,9 +382,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "本溪市与新宾县交界",
    "lon": 124.6,
    "lat": 41.45,
-   "precision": "approx_10km",
+   "precision": "approx_chgis_gap",
    "type": "pass",
-   "note": "南路军出塞关口",
+   "note": "南路军出塞关口（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "yahuguan",
    "_other_scenes": [
     "tieling"
@@ -382,21 +398,24 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "新宾县西南",
    "lon": 124.78,
    "lat": 41.55,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "waypoint",
-   "note": "李如柏部最远抵达处，随即奉命撤退",
+   "note": "李如柏部最远抵达处，随即奉命撤退（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 717
   },
   {
    "id": "kuandian",
    "name": "宽甸（宽奠堡）",
    "modern": "辽宁省丹东市宽甸满族自治县",
-   "lon": 124.78,
-   "lat": 40.73,
+   "lon": 124.77281,
+   "lat": 40.72858,
    "precision": "town",
    "type": "fort",
-   "note": "刘綎东路出发地",
-   "elev": 320
+   "note": "刘綎东路出发地（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宽甸县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：宽甸县",
+   "elev": 325
   },
   {
    "id": "liangmadian",
@@ -404,9 +423,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "宽甸北",
    "lon": 124.85,
    "lat": 41.0,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "waypoint",
-   "note": "东路行军途经",
+   "note": "东路行军途经（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 650
   },
   {
@@ -415,9 +435,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "桓仁—新宾之间，浑江支流",
    "lon": 125.05,
    "lat": 41.25,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "waypoint",
-   "note": "朝鲜军营地，《栅中日录》记载详细",
+   "note": "朝鲜军营地，《栅中日录》记载详细（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 950
   },
   {
@@ -426,9 +447,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "桓仁满族自治县境",
    "lon": 125.15,
    "lat": 41.35,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "刘綎部前锋破后金小股守军处",
+   "note": "刘綎部前锋破后金小股守军处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 409
   },
   {
@@ -437,9 +459,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "新宾县东南，赫图阿拉南",
    "lon": 125.0,
    "lat": 41.55,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "刘綎中伏战死处",
+   "note": "刘綎中伏战死处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 703
   },
   {
@@ -448,9 +471,10 @@ window.SANDBOX_SLICES["sarhu"] = {
    "modern": "阿布达里岗西南",
    "lon": 124.92,
    "lat": 41.5,
-   "precision": "approx_20km",
+   "precision": "approx_chgis_gap",
    "type": "battlefield",
-   "note": "朝鲜军被围投降处",
+   "note": "朝鲜军被围投降处（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 645
   },
   {
@@ -461,7 +485,8 @@ window.SANDBOX_SLICES["sarhu"] = {
    "lat": 43.05,
    "precision": "town",
    "type": "city",
-   "note": "叶赫部，明之盟军，出兵一部随北路军",
+   "note": "叶赫部，明之盟军，出兵一部随北路军（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "_global_id": "yehe",
    "_other_scenes": [
     "kaiyuan"
@@ -5369,8 +5394,8 @@ window.SANDBOX_SLICES["sarhu"] = {
   {
    "place_id": "fushun",
    "name": "抚顺（抚顺所）",
-   "lon": 123.96,
-   "lat": 41.88,
+   "lon": 123.78885,
+   "lat": 41.84602,
    "region": "liaodong"
   },
   {
@@ -5383,22 +5408,22 @@ window.SANDBOX_SLICES["sarhu"] = {
   {
    "place_id": "shenyang",
    "name": "沈阳（沈阳中卫）",
-   "lon": 123.43,
-   "lat": 41.8,
+   "lon": 123.41988,
+   "lat": 41.78825,
    "region": "liaodong"
   },
   {
    "place_id": "kaiyuan",
    "name": "开原",
-   "lon": 124.03,
-   "lat": 42.55,
+   "lon": 124.07673,
+   "lat": 42.60439,
    "region": "liaodong"
   },
   {
    "place_id": "kuandian",
    "name": "宽甸（宽奠堡）",
-   "lon": 124.78,
-   "lat": 40.73,
+   "lon": 124.77281,
+   "lat": 40.72858,
    "region": "liaodong"
   },
   {

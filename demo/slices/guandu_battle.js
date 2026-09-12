@@ -135,9 +135,9 @@ window.SANDBOX_SLICES["guandu_battle"] = {
    "lat": 34.04,
    "lon": 113.85,
    "type": "city",
-   "note": "曹操迎献帝所都，官渡之战后方中枢与饷源",
+   "note": "曹操迎献帝所都，官渡之战后方中枢与饷源（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 72
   },
   {
@@ -146,9 +146,9 @@ window.SANDBOX_SLICES["guandu_battle"] = {
    "lat": 34.73,
    "lon": 113.95,
    "type": "city",
-   "note": "主战场，今河南郑州中牟县东北，曹操拒袁之前线营垒",
+   "note": "主战场，今河南郑州中牟县东北，曹操拒袁之前线营垒（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 82
   },
   {
@@ -157,31 +157,31 @@ window.SANDBOX_SLICES["guandu_battle"] = {
    "lat": 36.35,
    "lon": 114.62,
    "type": "city",
-   "note": "袁绍根本，冀州治所，今河北临漳西南",
+   "note": "袁绍根本，冀州治所，今河北临漳西南（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 64
   },
   {
    "id": "baima",
    "name": "白马",
-   "lat": 35.58,
-   "lon": 114.53,
+   "lat": 35.5351,
+   "lon": 114.70915,
    "type": "city",
-   "note": "黄河渡口，颜良围刘延于此，今河南滑县东",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 52
+   "note": "黄河渡口，颜良围刘延于此，今河南滑县东（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：白马县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：白马县",
+   "elev": 56
   },
   {
    "id": "yanjin",
    "name": "延津",
-   "lat": 35.15,
-   "lon": 114.18,
+   "lat": 35.14276,
+   "lon": 114.19469,
    "type": "city",
-   "note": "袁绍西进渡口，文丑败死于此，今河南延津",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "note": "袁绍西进渡口，文丑败死于此，今河南延津（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：延津县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：延津县",
    "elev": 65
   },
   {
@@ -190,9 +190,9 @@ window.SANDBOX_SLICES["guandu_battle"] = {
    "lat": 35.0,
    "lon": 114.4,
    "type": "region",
-   "note": "袁绍军粮屯聚处，曹操奇袭焚粮地，约今河南封丘西",
+   "note": "袁绍军粮屯聚处，曹操奇袭焚粮地，约今河南封丘西（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 71
   },
   {
@@ -201,20 +201,20 @@ window.SANDBOX_SLICES["guandu_battle"] = {
    "lat": 35.2,
    "lon": 114.3,
    "type": "river",
-   "note": "南北分界，袁绍自河北渡河南攻，曹操据南岸",
+   "note": "南北分界，袁绍自河北渡河南攻，曹操据南岸（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 62
   },
   {
    "id": "yangwu",
    "name": "阳武",
-   "lat": 34.93,
-   "lon": 113.97,
+   "lat": 34.98309,
+   "lon": 114.0983,
    "type": "city",
-   "note": "官渡东南前哨，曹操北进所经，今河南原阳",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "note": "官渡东南前哨，曹操北进所经，今河南原阳（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：阳武县）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：阳武县",
    "elev": 72
   }
  ],
@@ -970,8 +970,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
   {
    "place_id": "yangwu",
    "name": "阳武",
-   "lon": 113.97,
-   "lat": 34.93,
+   "lon": 114.0983,
+   "lat": 34.98309,
    "region": "three_kingdoms"
   },
   {
@@ -998,15 +998,15 @@ window.SANDBOX_SLICES["guandu_battle"] = {
   {
    "place_id": "baima",
    "name": "白马",
-   "lon": 114.53,
-   "lat": 35.58,
+   "lon": 114.70915,
+   "lat": 35.5351,
    "region": "three_kingdoms"
   },
   {
    "place_id": "yanjin",
    "name": "延津",
-   "lon": 114.18,
-   "lat": 35.15,
+   "lon": 114.19469,
+   "lat": 35.14276,
    "region": "three_kingdoms"
   },
   {
@@ -1068,11 +1068,11 @@ window.SANDBOX_SLICES["guandu_battle"] = {
         37.35
        ],
        [
-        115.62,
+        115.709,
         37.35
        ],
        [
-        115.62,
+        115.709,
         33.04
        ],
        [
@@ -1569,11 +1569,15 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          36.764
         ],
         [
-         115.62,
-         36.79
+         115.684,
+         36.808
         ],
         [
-         115.62,
+         115.709,
+         36.876
+        ],
+        [
+         115.709,
          37.35
         ],
         [
@@ -1957,12 +1961,24 @@ window.SANDBOX_SLICES["guandu_battle"] = {
       [
        [
         [
-         115.62,
+         115.709,
          33.04
         ],
         [
-         115.62,
-         34.031
+         115.709,
+         34.062
+        ],
+        [
+         115.706,
+         34.06
+        ],
+        [
+         115.658,
+         34.061
+        ],
+        [
+         115.642,
+         34.032
         ],
         [
          115.607,
@@ -1981,12 +1997,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          33.875
         ],
         [
-         115.62,
-         33.871
-        ],
-        [
-         115.62,
-         33.807
+         115.632,
+         33.87
         ],
         [
          115.614,
@@ -2009,12 +2021,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          33.659
         ],
         [
-         115.62,
-         33.623
-        ],
-        [
-         115.62,
-         33.583
+         115.64,
+         33.585
         ],
         [
          115.565,
@@ -2141,7 +2149,7 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          33.04
         ],
         [
-         115.62,
+         115.709,
          33.04
         ]
        ]
@@ -2157,8 +2165,12 @@ window.SANDBOX_SLICES["guandu_battle"] = {
       [
        [
         [
-         115.62,
-         36.79
+         115.709,
+         36.876
+        ],
+        [
+         115.684,
+         36.808
         ],
         [
          115.525,
@@ -2305,11 +2317,31 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          35.922
         ],
         [
-         115.62,
-         35.922
+         115.649,
+         35.923
         ],
         [
-         115.62,
+         115.699,
+         35.966
+        ],
+        [
+         115.709,
+         35.968
+        ],
+        [
+         115.709,
+         35.804
+        ],
+        [
+         115.696,
+         35.789
+        ],
+        [
+         115.694,
+         35.754
+        ],
+        [
+         115.623,
          35.739
         ],
         [
@@ -2485,12 +2517,24 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          34.569
         ],
         [
-         115.62,
+         115.623,
          34.574
         ],
         [
-         115.62,
-         36.79
+         115.686,
+         34.556
+        ],
+        [
+         115.697,
+         34.594
+        ],
+        [
+         115.709,
+         34.592
+        ],
+        [
+         115.709,
+         36.876
         ]
        ]
       ],
@@ -2657,12 +2701,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          33.576
         ],
         [
-         115.62,
-         33.583
-        ],
-        [
-         115.62,
-         33.623
+         115.64,
+         33.585
         ],
         [
          115.601,
@@ -2685,12 +2725,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          33.776
         ],
         [
-         115.62,
-         33.807
-        ],
-        [
-         115.62,
-         33.871
+         115.632,
+         33.87
         ],
         [
          115.548,
@@ -2709,11 +2745,35 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          34.03
         ],
         [
-         115.62,
-         34.031
+         115.642,
+         34.032
         ],
         [
-         115.62,
+         115.658,
+         34.061
+        ],
+        [
+         115.706,
+         34.06
+        ],
+        [
+         115.709,
+         34.062
+        ],
+        [
+         115.709,
+         34.592
+        ],
+        [
+         115.697,
+         34.594
+        ],
+        [
+         115.686,
+         34.556
+        ],
+        [
+         115.623,
          34.574
         ],
         [
@@ -2889,12 +2949,32 @@ window.SANDBOX_SLICES["guandu_battle"] = {
          35.734
         ],
         [
-         115.62,
+         115.623,
          35.739
         ],
         [
-         115.62,
-         35.922
+         115.694,
+         35.754
+        ],
+        [
+         115.696,
+         35.789
+        ],
+        [
+         115.709,
+         35.804
+        ],
+        [
+         115.709,
+         35.968
+        ],
+        [
+         115.699,
+         35.966
+        ],
+        [
+         115.649,
+         35.923
         ],
         [
          115.584,
@@ -3527,8 +3607,8 @@ window.SANDBOX_SLICES["guandu_battle"] = {
        35.758
       ],
       [
-       115.62,
-       35.768
+       115.709,
+       35.802
       ]
      ]
     },
@@ -3539,7 +3619,7 @@ window.SANDBOX_SLICES["guandu_battle"] = {
   "_bbox": [
    112.85,
    33.04,
-   115.62,
+   115.709,
    37.35
   ]
  }

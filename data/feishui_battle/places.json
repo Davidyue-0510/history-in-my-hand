@@ -1,12 +1,84 @@
 {
   "places": [
-    {"id": "changan", "name": "长安", "lat": 34.27, "lon": 108.95, "type": "city", "note": "前秦都，苻坚发兵南侵起点", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "jiankang", "name": "建康", "lat": 32.06, "lon": 118.80, "type": "city", "note": "东晋都，谢安决策抗秦中枢", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "shouyang", "name": "寿阳/寿春", "lat": 32.57, "lon": 116.78, "type": "city", "note": "淝水之战前秦苻融前哨，今安徽寿县", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "feishui", "name": "淝水", "lat": 32.55, "lon": 116.80, "type": "river", "note": "东淝河，决战河道，今安徽寿县东南", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "luojian", "name": "洛涧", "lat": 32.60, "lon": 117.02, "type": "city", "note": "洛涧水（今洛河），刘牢之破秦前哨战地，今安徽淮南东", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "bagongshan", "name": "八公山", "lat": 32.66, "lon": 116.83, "type": "region", "note": "淝水之北，『风声鹤唳、草木皆兵』地，今安徽寿县北", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "huai_river", "name": "淮河", "lat": 32.90, "lon": 116.50, "type": "river", "note": "南北界河，东晋据南岸、前秦渡河北来", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
-    {"id": "hefei", "name": "合肥", "lat": 31.82, "lon": 117.23, "type": "city", "note": "江淮要冲，北府兵集结、谢玄北伐所经", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+    {
+      "id": "changan",
+      "name": "长安",
+      "lat": 34.24642,
+      "lon": 108.90698,
+      "type": "city",
+      "note": "前秦都，苻坚发兵南侵起点（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：长安县"
+    },
+    {
+      "id": "jiankang",
+      "name": "建康",
+      "lat": 32.05256,
+      "lon": 118.76899,
+      "type": "city",
+      "note": "东晋都，谢安决策抗秦中枢（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：建康县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：建康县"
+    },
+    {
+      "id": "shouyang",
+      "name": "寿阳/寿春",
+      "lat": 32.57,
+      "lon": 116.78,
+      "type": "city",
+      "note": "淝水之战前秦苻融前哨，今安徽寿县（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "feishui",
+      "name": "淝水",
+      "lat": 32.55,
+      "lon": 116.8,
+      "type": "river",
+      "note": "东淝河，决战河道，今安徽寿县东南（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "luojian",
+      "name": "洛涧",
+      "lat": 32.6,
+      "lon": 117.02,
+      "type": "city",
+      "note": "洛涧水（今洛河），刘牢之破秦前哨战地，今安徽淮南东（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "bagongshan",
+      "name": "八公山",
+      "lat": 32.66,
+      "lon": 116.83,
+      "type": "region",
+      "note": "淝水之北，『风声鹤唳、草木皆兵』地，今安徽寿县北（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "huai_river",
+      "name": "淮河",
+      "lat": 32.9,
+      "lon": 116.5,
+      "type": "river",
+      "note": "南北界河，东晋据南岸、前秦渡河北来（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
+      "geo_match": "approx",
+      "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据"
+    },
+    {
+      "id": "hefei",
+      "name": "合肥",
+      "lat": 31.86446,
+      "lon": 117.27646,
+      "type": "city",
+      "note": "江淮要冲，北府兵集结、谢玄北伐所经（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：合肥县）",
+      "geo_match": "chgis",
+      "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：合肥县"
+    }
   ]
 }

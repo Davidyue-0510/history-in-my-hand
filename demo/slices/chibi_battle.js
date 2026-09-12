@@ -144,9 +144,9 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 29.75,
    "lon": 113.85,
    "type": "city",
-   "note": "赤壁山（今湖北赤壁市/蒲圻西北），赤壁之战孙刘联军南岸战场",
+   "note": "赤壁山（今湖北赤壁市/蒲圻西北），赤壁之战孙刘联军南岸战场（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 103
   },
   {
@@ -155,9 +155,9 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 29.85,
    "lon": 113.65,
    "type": "city",
-   "note": "长江北岸，与赤壁隔江对垒，曹军水寨与火攻主目标",
+   "note": "长江北岸，与赤壁隔江对垒，曹军水寨与火攻主目标（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 20
   },
   {
@@ -166,9 +166,9 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 30.5,
    "lon": 114.3,
    "type": "city",
-   "note": "刘琦守江夏，孙刘联军上游据点",
+   "note": "刘琦守江夏，孙刘联军上游据点（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 38
   },
   {
@@ -177,21 +177,21 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 30.6,
    "lon": 114.3,
    "type": "city",
-   "note": "刘备败走后驻屯处，联孙抗曹前沿",
+   "note": "刘备败走后驻屯处，联孙抗曹前沿（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 40
   },
   {
    "id": "fankou",
    "name": "樊口/鄂州",
-   "lat": 30.4,
-   "lon": 114.9,
+   "lat": 30.57367,
+   "lon": 114.30666,
    "type": "city",
-   "note": "刘备败走与周瑜会合处",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 18
+   "note": "刘备败走与周瑜会合处（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：鄂州）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：鄂州",
+   "elev": 39
   },
   {
    "id": "huarong",
@@ -199,32 +199,32 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 29.5,
    "lon": 112.6,
    "type": "region",
-   "note": "曹操北撤陆路通道（华容道）",
+   "note": "曹操北撤陆路通道（华容道）（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 80
   },
   {
    "id": "jiangling",
    "name": "江陵/荆州",
-   "lat": 30.35,
-   "lon": 112.2,
+   "lat": 30.35044,
+   "lon": 112.19077,
    "type": "city",
-   "note": "曹军水军基地，曹仁守城，战后周瑜取南郡",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 33
+   "note": "曹军水军基地，曹仁守城，战后周瑜取南郡（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：荆州）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：荆州",
+   "elev": 34
   },
   {
    "id": "xiangyang",
    "name": "襄阳",
-   "lat": 32.05,
-   "lon": 112.15,
+   "lat": 32.02652,
+   "lon": 112.1587,
    "type": "city",
-   "note": "刘琮降曹处，曹操南下起点",
-   "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
-   "elev": 79
+   "note": "刘琮降曹处，曹操南下起点（CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：襄阳郡）",
+   "geo_match": "chgis",
+   "geo_note": "CHGIS V6 时间序列（Harvard Dataverse：府 DVN/WW1PD6、县 DVN/Q9VOF5；WGS84）：襄阳郡",
+   "elev": 78
   },
   {
    "id": "chaisang",
@@ -232,9 +232,9 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 29.7,
    "lon": 115.9,
    "type": "city",
-   "note": "孙权治所，孙刘联盟决策地",
+   "note": "孙权治所，孙刘联盟决策地（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 22
   },
   {
@@ -243,9 +243,9 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    "lat": 30.0,
    "lon": 114.0,
    "type": "river",
-   "note": "长江航道（江陵—赤壁—夏口段），战役主轴",
+   "note": "长江航道（江陵—赤壁—夏口段），战役主轴（近似坐标；CHGIS 仅收录历史政区治所，本要素不在其范围，坐标据公开地理数据）",
    "geo_match": "approx",
-   "geo_note": "现代公开地理数据，待CHGIS精修",
+   "geo_note": "现代近似坐标（约1km级），非测绘级；CHGIS 未收录该地名，坐标据公开地理数据",
    "elev": 18
   }
  ],
@@ -1076,15 +1076,15 @@ window.SANDBOX_SLICES["chibi_battle"] = {
   {
    "place_id": "xiangyang",
    "name": "襄阳",
-   "lon": 112.15,
-   "lat": 32.05,
+   "lon": 112.1587,
+   "lat": 32.02652,
    "region": "jingzhou"
   },
   {
    "place_id": "jiangling",
    "name": "江陵/荆州",
-   "lon": 112.2,
-   "lat": 30.35,
+   "lon": 112.19077,
+   "lat": 30.35044,
    "region": "jingzhou"
   },
   {
@@ -1118,8 +1118,8 @@ window.SANDBOX_SLICES["chibi_battle"] = {
   {
    "place_id": "fankou",
    "name": "樊口/鄂州",
-   "lon": 114.9,
-   "lat": 30.4,
+   "lon": 114.30666,
+   "lat": 30.57367,
    "region": "jingzhou"
   },
   {
@@ -1191,23 +1191,23 @@ window.SANDBOX_SLICES["chibi_battle"] = {
      "coordinates": [
       [
        [
-        111.15,
+        111.159,
         28.5
        ],
        [
-        111.15,
-        33.05
+        111.159,
+        33.027
        ],
        [
         116.9,
-        33.05
+        33.027
        ],
        [
         116.9,
         28.5
        ],
        [
-        111.15,
+        111.159,
         28.5
        ]
       ]
@@ -1224,8 +1224,8 @@ window.SANDBOX_SLICES["chibi_battle"] = {
       [
        [
         [
-         114.919,
-         33.05
+         114.924,
+         33.027
         ],
         [
          114.926,
@@ -1881,11 +1881,11 @@ window.SANDBOX_SLICES["chibi_battle"] = {
         ],
         [
          116.9,
-         33.05
+         33.027
         ],
         [
-         114.919,
-         33.05
+         114.924,
+         33.027
         ]
        ]
       ],
@@ -3092,20 +3092,12 @@ window.SANDBOX_SLICES["chibi_battle"] = {
          33.017
         ],
         [
-         114.919,
-         33.05
+         114.924,
+         33.027
         ],
         [
-         111.166,
-         33.05
-        ],
-        [
-         111.153,
-         33.04
-        ],
-        [
-         111.222,
-         33.043
+         111.238,
+         33.027
         ],
         [
          111.259,
@@ -3300,11 +3292,11 @@ window.SANDBOX_SLICES["chibi_battle"] = {
       [
        [
         [
-         111.15,
-         33.05
+         111.159,
+         33.027
         ],
         [
-         111.15,
+         111.159,
          30.044
         ],
         [
@@ -4708,20 +4700,12 @@ window.SANDBOX_SLICES["chibi_battle"] = {
          33.006
         ],
         [
-         111.222,
-         33.043
+         111.238,
+         33.027
         ],
         [
-         111.153,
-         33.04
-        ],
-        [
-         111.166,
-         33.05
-        ],
-        [
-         111.15,
-         33.05
+         111.159,
+         33.027
         ]
        ]
       ],
@@ -5276,11 +5260,11 @@ window.SANDBOX_SLICES["chibi_battle"] = {
          30.04
         ],
         [
-         111.15,
+         111.159,
          30.044
         ],
         [
-         111.15,
+         111.159,
          28.5
         ],
         [
@@ -5328,8 +5312,8 @@ window.SANDBOX_SLICES["chibi_battle"] = {
        32.568
       ],
       [
-       111.15,
-       32.686
+       111.159,
+       32.683
       ]
      ]
     },
@@ -5384,8 +5368,8 @@ window.SANDBOX_SLICES["chibi_battle"] = {
      "type": "LineString",
      "coordinates": [
       [
-       111.15,
-       30.831
+       111.159,
+       30.829
       ],
       [
        111.159,
@@ -6117,8 +6101,8 @@ window.SANDBOX_SLICES["chibi_battle"] = {
      "coordinates": [
       [
        [
-        111.15,
-        28.837
+        111.159,
+        28.829
        ],
        [
         111.207,
@@ -7467,10 +7451,10 @@ window.SANDBOX_SLICES["chibi_battle"] = {
    }
   ],
   "_bbox": [
-   111.15,
+   111.159,
    28.5,
    116.9,
-   33.05
+   33.027
   ]
  }
 };
