@@ -1,0 +1,14 @@
+{
+  "edges": [
+    {"from": "beijing", "to": "zhenning", "type": "military", "label": "北平—真定（燕军入河北腹地之门）"},
+    {"from": "zhenning", "to": "jinan", "type": "military", "label": "真定—济南（河北—山东会战轴线）"},
+    {"from": "jinan", "to": "xuzhou", "type": "military", "label": "济南—徐州（建文东南防线）"},
+    {"from": "xuzhou", "to": "kaifeng", "type": "military", "label": "徐州—开封（中原腹心锁链）"},
+    {"from": "xuzhou", "to": "nanjing", "type": "military", "label": "徐州—南京（燕军渡江前最后一段）"},
+    {"from": "kaifeng", "to": "nanjing", "type": "military", "label": "开封—南京（运河—江防主轴）"},
+    {"from": "beijing", "to": "nanjing", "type": "military", "label": "北平起兵—渡江克南京（靖难全程主轴）"},
+    {"from": "jianwen", "to": "lijinglong", "type": "command", "label": "建文—李景隆（君臣·继统讨燕）"},
+    {"from": "yongle", "to": "zhangyu", "type": "command", "label": "燕王—张玉（主将·东昌战死）"},
+    {"from": "yongle", "to": "yaoguangxiao", "type": "command", "label": "燕王—姚广孝（谋主·赞画帷幄）"}
+  ]
+}

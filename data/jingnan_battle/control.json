@@ -1,0 +1,17 @@
+{
+  "_comment": "靖难之役控制层（1399—1402）。1399 燕王起于北平，建文朝廷仍控真定以南诸要（真定/济南/徐州/开封/南京）；1400 夹河·藁城之捷后燕取真定、河北腹地入燕手；1402 燕军渡江克南京，建文诸地次第归燕，明祚转入成祖一系。本切片用 _years=[1399,1402]，使主时间轴前 2 事件（1399）显『建文据南、燕据北平』、中 2 事件（1400）显『燕取真定、河北易手』、末 3 事件（1402）显『燕渡江、全境归燕』。争夺地按『建文在前（end=较早）、燕在后（start=较晚）』排序，controllerAt 取首个匹配年窗：1399 返建文守南、1400 真定翻燕、1402 全境归燕。",
+  "_years": [1399, 1402],
+  "control": [
+    {"place_id": "beijing", "party": "燕", "start": 1399, "end": null, "basis": "北平为燕王封地、起兵根基地，始终燕控", "note": "燕根本"},
+    {"place_id": "zhenning", "party": "建文", "start": 1399, "end": 1399, "basis": "1399 建文仍控真定，耿炳文北征兵败于此", "note": "建文北守"},
+    {"place_id": "zhenning", "party": "燕", "start": 1400, "end": null, "basis": "1400 夹河·藁城之捷后燕取真定，河北腹地入燕手", "note": "战后属燕"},
+    {"place_id": "jinan", "party": "建文", "start": 1399, "end": 1401, "basis": "铁铉死守、盛庸东昌破燕，建文保济南至 1401", "note": "建文守山东"},
+    {"place_id": "jinan", "party": "燕", "start": 1402, "end": null, "basis": "1402 燕军南下、山东诸地归燕", "note": "战后属燕"},
+    {"place_id": "xuzhou", "party": "建文", "start": 1399, "end": 1401, "basis": "徐州为建文东南门户、运河要冲，1401 前建文控", "note": "建文守东南"},
+    {"place_id": "xuzhou", "party": "燕", "start": 1402, "end": null, "basis": "1402 燕破徐州直趋淮泗", "note": "战后属燕"},
+    {"place_id": "kaifeng", "party": "建文", "start": 1399, "end": 1401, "basis": "开封为河南布政司治所、中原腹心，1401 前建文控", "note": "建文守中原"},
+    {"place_id": "kaifeng", "party": "燕", "start": 1402, "end": null, "basis": "1402 燕军南下经河南、中原归燕", "note": "战后属燕"},
+    {"place_id": "nanjing", "party": "建文", "start": 1399, "end": 1401, "basis": "南京为明京师，建文朝廷所都，1401 前建文控", "note": "建文都城"},
+    {"place_id": "nanjing", "party": "燕", "start": 1402, "end": null, "basis": "1402 燕渡江、谷王开金川门迎入，南京易主", "note": "战后属燕"}
+  ]
+}

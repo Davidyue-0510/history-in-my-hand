@@ -1,0 +1,10 @@
+{
+  "places": [
+    {"id": "beijing", "name": "北平", "lat": 39.90, "lon": 116.40, "type": "city", "note": "燕王朱棣封地、北平布政司治所，靖难起兵根基地与中后期根本", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "zhenning", "name": "真定", "lat": 38.15, "lon": 114.57, "type": "city", "note": "今河北正定，滹沱河岸，建文北征耿炳文兵败处，燕军入河北腹地之门", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "jinan", "name": "济南", "lat": 36.65, "lon": 117.00, "type": "city", "note": "山东会城，铁铉死守、盛庸东昌破燕所系，建文在山东之锁钥", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "xuzhou", "name": "徐州", "lat": 34.27, "lon": 117.18, "type": "city", "note": "江苏北陲、运河要冲，燕军南下破徐州后直趋淮泗，建文东南门户", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "kaifeng", "name": "开封", "lat": 34.80, "lon": 114.30, "type": "city", "note": "河南布政司治所，中原腹心，燕军南下所经、建文控河南之枢", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"},
+    {"id": "nanjing", "name": "南京", "lat": 32.06, "lon": 118.80, "type": "city", "note": "明京师应天府，靖难终局易主处，谷王等开金川门迎燕", "geo_match": "approx", "geo_note": "现代公开地理数据，待CHGIS精修"}
+  ]
+}

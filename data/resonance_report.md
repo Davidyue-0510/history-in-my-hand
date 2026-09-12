@@ -214,6 +214,7 @@
 | jilin_gaogouli_llm | 15 | 3 | **0.000** | event:ev_jilin_gaogouli_llm_01（0.000） | inference 1 / record 13 / scholarship 1 |
 | jilin_yanbian_llm | 16 | 4 | **0.000** | event:ev_jilin_yanbian_llm_01（0.000） | gap 1 / inference 1 / record 13 / scholarship 1 |
 | jingnan | 17 | 8 | **0.000** | event:jn_1399（0.000） | gap 1 / record 13 / scholarship 3 |
+| jingnan_battle | 17 | 7 | **0.000** | event:dongchang（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | jinshang_llm | 14 | 3 | **0.000** | event:ev_jinshang_llm_01（0.000） | gap 1 / inference 1 / record 9 / scholarship 3 |
 | jinzhou | 16 | 2 | **0.628** | event:jinzhou_songjin（0.923） | gap 2 / inference 1 / record 12 / scholarship 1 |
 | jinzhouwei | 6 | 3 | **0.278** | event:jinzhouwei_fall（0.333） | gap 2 / record 3 / scholarship 1 |
@@ -584,9 +585,11 @@
 | event:dh_166 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:dh_168 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dh_169 | donghan_danggu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
+| event:dongchang | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dongjin_huishou | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:dongjin_juece | feishui_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:duanzong_beng | yashan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:dujiang | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:dw_1876 | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:dw_1877 | dingwu | **0.000** | 0/3 | 0.00 | 0.14 | 7 | 0 / 0 / 0 / 0 |
 | event:dw_relief | dingwu | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
@@ -1536,6 +1539,9 @@
 | event:hz_1644 | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:hz_causal | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:hz_zhi | chongzhen_huangzai | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:jialhe | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:jianwen_xun | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:jingnan_qi | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |
 | event:jingtai_li | tumu_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:jl_jz | julu | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:jl_qin | julu | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
@@ -1718,6 +1724,7 @@
 | event:yl_jz | yiling | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |
 | event:yl_liu | yiling | **0.000** | 0/3 | 0.00 | 0.17 | 6 | 0 / 0 / 0 / 0 |
 | event:yl_lu | yiling | **0.000** | 0/3 | 0.33 | 0.00 | 4 | 0 / 0 / 0 / 0 |
+| event:yongle_li | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ys_1276 | yashan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ys_1279 | yashan | **0.000** | 0/3 | 0.00 | 0.25 | 8 | 0 / 0 / 0 / 0 |
 | event:ys_jz | yaoshan | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
@@ -1735,6 +1742,7 @@
 | event:zh_1433 | zhenghe | **0.000** | 0/3 | 0.00 | 0.00 | 5 | 0 / 0 / 0 / 0 |
 | event:zh_test | zhangheng | **0.000** | 0/3 | 0.00 | 0.00 | 4 | 0 / 0 / 0 / 0 |
 | event:zhaokuo | changping_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:zhenning_bai | jingnan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zhizao_geming | cailun_zaozhi | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zhouyu_gong_jiangling | chibi_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:zj_1406 | zijincheng | **0.000** | 0/3 | 0.00 | 0.00 | 3 | 0 / 0 / 0 / 0 |

@@ -692,7 +692,8 @@
   "guandu_battle",
   "changping_battle",
   "yashan_battle",
-  "tumu_battle"
+  "tumu_battle",
+  "jingnan_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -38924,6 +38925,108 @@
      ],
      "layer": "inference",
      "note": "土木堡之变：地缘战略——居庸/紫荆屏藩京师，瓦剌破关入边、北边控御易手"
+    }
+   },
+   "province": "beijing",
+   "related": []
+  },
+  "jingnan_battle": {
+   "kind": "county",
+   "region": "xibei",
+   "title": "靖难之役",
+   "dossier_label": "靖难之役",
+   "subtitle": "建文元年—四年（1399–1402）· 建文 vs 燕",
+   "primary_place": "beijing",
+   "dossier_event": "event:dujiang",
+   "vocab_pack": "jingnan_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "建文即位削藩，燕王朱棣以「清君侧」起兵北平（1399）；夹河·藁城之捷后燕取真定、河北易手（1400）；盛庸东昌破燕暂稳住山东（1400）；燕军渡江克南京、谷王开金川门迎入，建文逊国（1402），明祚转入成祖一系。实控区随事件年份由建文据南（真定/济南/徐州/开封/南京）翻为燕全境控御。",
+   "parties_note": "本切片主干为后世官修史（明史），且以成祖立场回叙；建文、燕双方当代原始档案皆佚，建文视角经后向建构，缺口为一等公民。系统不裁决，只并列。",
+   "subject_names": {
+    "event:jingnan_qi": "靖难起兵",
+    "event:zhenning_bai": "真定兵败",
+    "event:jialhe": "夹河·藁城之捷",
+    "event:dongchang": "东昌之挫",
+    "event:dujiang": "渡江克南京",
+    "event:jianwen_xun": "建文逊国",
+    "event:yongle_li": "成祖即位",
+    "place:beijing": "北平",
+    "place:zhenning": "真定",
+    "place:jinan": "济南",
+    "place:xuzhou": "徐州",
+    "place:kaifeng": "开封",
+    "place:nanjing": "南京",
+    "person:jianwen": "建文帝",
+    "person:yongle": "明成祖",
+    "person:gengbingwen": "耿炳文",
+    "person:lijinglong": "李景隆",
+    "person:shengyong": "盛庸",
+    "person:tiexuan": "铁铉",
+    "person:zhangyu": "张玉",
+    "person:zhuneng": "朱能",
+    "person:yaoguangxiao": "姚广孝",
+    "person:guowang": "谷王朱橞"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "ming",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "靖难之役：朝堂凝聚力——削藩激起藩王举兵，清君侧旗号使夺位获道义外壳"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "靖难之役：后勤物力——燕据北平、漕饷北援；夹河·藁城之捷后河北补给主轴入燕手"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "靖难之役：人口动员——山东死守、江南民心系于南京易主，南北社会俱被裹挟"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "靖难之役：地缘战略——北平根基地与九边屏藩，燕取真定、渡江克南京，控御由建文翻燕"
     }
    },
    "province": "beijing",

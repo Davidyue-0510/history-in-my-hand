@@ -213,6 +213,7 @@ window.SANDBOX_RESONANCE = {
    "jilin_gaogouli_llm",
    "jilin_yanbian_llm",
    "jingnan",
+   "jingnan_battle",
    "jinshang_llm",
    "jinzhou",
    "jinzhouwei",
@@ -4377,6 +4378,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 8,
    "avg_resonance": 0.0,
    "best_event": "event:jn_1399",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "jingnan_battle",
+   "name": "jingnan_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:dongchang",
    "best_resonance": 0.0
   },
   {
