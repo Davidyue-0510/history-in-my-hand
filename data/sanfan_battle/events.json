@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "id": "ev_sanfan_qibing",
+      "subject": "event:ev_sanfan_qibing",
+      "year": 1673,
+      "era": "康熙十二年（1673）",
+      "title": "撤藩令触发·三藩起兵",
+      "kind": "变局·起兵",
+      "text": "康熙帝采明珠、莫洛之议，下诏撤藩；吴三桂杀云南巡抚朱国治，自称「天下都招讨兵马大元帅」，蓄发易服，传檄入清，三藩之乱由此起。"
+    },
+    {
+      "id": "ev_sanfan_lianheng",
+      "subject": "event:ev_sanfan_lianheng",
+      "year": 1674,
+      "era": "康熙十三年（1674）",
+      "title": "吴据云贵·耿尚响应，三藩连横",
+      "kind": "变局·连横",
+      "text": "吴三桂据云贵、渡江陷湖南；耿精忠据福建、尚之信（尚可喜子）据广东，三藩连横，清廷西南、东南半壁一时尽失。"
+    },
+    {
+      "id": "ev_sanfan_hunan",
+      "subject": "event:ev_sanfan_hunan",
+      "year": 1675,
+      "era": "康熙十四年（1675）",
+      "title": "吴军下湖南·据岳州长沙，清军屡攻不克",
+      "kind": "战事·拉锯",
+      "text": "吴军东下入湖广，据岳州、长沙，沿江筑垒；清军以安亲王岳乐等攻岳州，屡为所挫，长江中游告急，南北之势几裂。"
+    },
+    {
+      "id": "ev_sanfan_gengjiang",
+      "subject": "event:ev_sanfan_gengjiang",
+      "year": 1676,
+      "era": "康熙十五年（1676）",
+      "title": "耿精忠降清·闽局逆转",
+      "kind": "变局·献城",
+      "text": "清军自浙入闽，耿精忠势蹙，缚曾养性等降清；福建归清，三藩连横破其一翼，东南压力骤减。"
+    },
+    {
+      "id": "ev_sanfan_wudi",
+      "subject": "event:ev_sanfan_wudi",
+      "year": 1678,
+      "era": "康熙十七年（1678）",
+      "title": "吴三桂称帝衡州·旋卒",
+      "kind": "变局·称帝",
+      "text": "吴三桂在衡州称帝，国号「周」，改元昭武；未几病死，孙吴世璠继立，退据昆明，周势转衰。"
+    },
+    {
+      "id": "ev_sanfan_shangjiang",
+      "subject": "event:ev_sanfan_shangjiang",
+      "year": 1679,
+      "era": "康熙十八年（1679）",
+      "title": "尚之信降·广东归清",
+      "kind": "变局·献城",
+      "text": "尚之信势穷降清，广东归清；清军乘势收复湖南、广西、四川，步步进逼云贵，三藩仅余滇黔一隅。"
+    },
+    {
+      "id": "ev_sanfan_ding",
+      "subject": "event:ev_sanfan_ding",
+      "year": 1681,
+      "era": "康熙二十年（1681）",
+      "title": "清军入昆明·三藩平",
+      "kind": "变局·大势底定",
+      "text": "清军以赵良栋、彰泰等破昆明，吴世璠自杀，云南底定；耿、尚早降，三藩之乱凡八年起兵、终告平定，清重收云贵闽粤川陕。"
+    }
+  ]
+}

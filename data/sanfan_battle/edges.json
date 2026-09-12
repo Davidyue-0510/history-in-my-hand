@@ -1,0 +1,76 @@
+{
+  "edges": [
+    {
+      "from": "kunming",
+      "to": "yuezhou",
+      "type": "military",
+      "label": "昆明—岳州（吴军入湖广主轴）"
+    },
+    {
+      "from": "yuezhou",
+      "to": "changsha",
+      "type": "military",
+      "label": "岳州—长沙（湖南主战场）"
+    },
+    {
+      "from": "kunming",
+      "to": "fuzhou_fj",
+      "type": "military",
+      "label": "昆明—福州（吴耿连横）"
+    },
+    {
+      "from": "kunming",
+      "to": "guangzhou",
+      "type": "military",
+      "label": "昆明—广州（吴尚连横）"
+    },
+    {
+      "from": "kunming",
+      "to": "chengdu",
+      "type": "military",
+      "label": "昆明—成都（吴军北联川陕）"
+    },
+    {
+      "from": "chengdu",
+      "to": "beijing",
+      "type": "military",
+      "label": "成都—北京（王辅臣胁关中线）"
+    },
+    {
+      "from": "beijing",
+      "to": "yuezhou",
+      "type": "military",
+      "label": "北京—岳州（清军南下平叛）"
+    },
+    {
+      "from": "wu_sangui",
+      "to": "geng_jingzhong",
+      "type": "command",
+      "label": "吴三桂—耿精忠（连横）"
+    },
+    {
+      "from": "wu_sangui",
+      "to": "shang_zhixin",
+      "type": "command",
+      "label": "吴三桂—尚之信（连横）"
+    },
+    {
+      "from": "kangxi",
+      "to": "yuele",
+      "type": "command",
+      "label": "康熙—岳乐（君—亲王）"
+    },
+    {
+      "from": "kangxi",
+      "to": "zhaoliangdong",
+      "type": "command",
+      "label": "康熙—赵良栋（君—将军）"
+    },
+    {
+      "from": "kangxi",
+      "to": "tuhai",
+      "type": "command",
+      "label": "康熙—图海（君—大学士）"
+    }
+  ]
+}

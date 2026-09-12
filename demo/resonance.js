@@ -304,6 +304,7 @@ window.SANDBOX_RESONANCE = {
    "quanzhou",
    "qufu",
    "san_guo",
+   "sanfan_battle",
    "sarhu",
    "shaanxi_hanchang_llm",
    "shaanxi_shangyang_llm",
@@ -6148,6 +6149,26 @@ window.SANDBOX_RESONANCE = {
    "event_count": 7,
    "avg_resonance": 0.0,
    "best_event": "event:ev_chibi",
+   "best_resonance": 0.0
+  },
+  {
+   "scene": "sanfan_battle",
+   "name": "sanfan_battle",
+   "total": 17,
+   "layers": {
+    "record": 12,
+    "scholarship": 1,
+    "inference": 2,
+    "gap": 2
+   },
+   "party_counts": {
+    "后世官修": 12,
+    "二手综述": 5
+   },
+   "faction_counts": {},
+   "event_count": 7,
+   "avg_resonance": 0.0,
+   "best_event": "event:ev_sanfan_ding",
    "best_resonance": 0.0
   },
   {

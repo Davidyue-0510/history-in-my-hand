@@ -305,6 +305,7 @@
 | quanzhou | 17 | 3 | **0.000** | event:ev_quanzhou_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | qufu | 17 | 3 | **0.000** | event:ev_qufu_01（0.000） | gap 3 / inference 5 / record 6 / scholarship 3 |
 | san_guo | 20 | 7 | **0.000** | event:ev_chibi（0.000） | gap 1 / inference 2 / record 14 / scholarship 3 |
+| sanfan_battle | 17 | 7 | **0.000** | event:ev_sanfan_ding（0.000） | gap 2 / inference 2 / record 12 / scholarship 1 |
 | 萨尔浒 | 125 | 5 | **0.556** | 阿布达里岗（东路·刘綎）（0.667） | gap 7 / inference 6 / record 98 / scholarship 14 |
 | shaanxi_hanchang_llm | 15 | 2 | **0.000** | event:ev_shaanxi_hanchang_llm_01（0.000） | gap 2 / inference 4 / record 8 / scholarship 1 |
 | shaanxi_shangyang_llm | 6 | 2 | **0.000** | event:ev_shaanxi_shangyang_llm_01（0.000） | gap 1 / inference 1 / record 3 / scholarship 1 |
@@ -1133,6 +1134,13 @@
 | event:ev_qufu_01 | qufu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qufu_02 | qufu | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_qufu_03 | qufu | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_ding | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_gengjiang | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_hunan | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_lianheng | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_qibing | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_shangjiang | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
+| event:ev_sanfan_wudi | sanfan_battle | **0.000** | 0/3 | 0.00 | 0.50 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_shaanxi_hanchang_llm_01 | shaanxi_hanchang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 1 | 0 / 0 / 0 / 0 |
 | event:ev_shaanxi_hanchang_llm_02 | shaanxi_hanchang_llm | **0.000** | 0/3 | 0.00 | 0.00 | 2 | 0 / 0 / 0 / 0 |
 | event:ev_shaanxi_shangyang_llm_01 | shaanxi_shangyang_llm | **0.000** | 0/3 | 1.00 | 0.33 | 3 | 0 / 0 / 0 / 0 |

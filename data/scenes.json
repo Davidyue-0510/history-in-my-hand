@@ -694,7 +694,8 @@
   "yashan_battle",
   "tumu_battle",
   "jingnan_battle",
-  "songjin_battle"
+  "songjin_battle",
+  "sanfan_battle"
  ],
  "scenes": {
   "langzhong": {
@@ -39133,6 +39134,114 @@
     }
    },
    "province": "liaoning",
+   "related": []
+  },
+  "sanfan_battle": {
+   "kind": "county",
+   "region": "yunnan",
+   "title": "三藩之乱",
+   "dossier_label": "三藩之乱",
+   "subtitle": "康熙十二—二十年（1673–1681）· 清 vs 三藩",
+   "primary_place": "kunming",
+   "dossier_event": "event:ev_sanfan_ding",
+   "vocab_pack": "sanfan_battle",
+   "terrain_grid": "china_coarse",
+   "extra_files": [
+    "events",
+    "edges"
+   ],
+   "lead": "康熙十二年（1673）撤藩令下，吴三桂杀云南巡抚朱国治起兵，称天下都招讨兵马大元帅；耿精忠据闽、尚之信据粤，三藩连横，清廷云贵闽粤湘川一时尽失。康熙调度平叛，1676 耿降、1679 尚降、湖南四川次第收复，1681 清军入昆明、吴世璠自杀，三藩平。实控区随事件年份由清据全域翻为三藩据西南东南、终复归清。",
+   "parties_note": "本切片主干为后世官修史（清史稿）与私修当代史（圣武记）及现代学界综论；三藩内部决策、平民伤亡多经清方回叙，为结构性缺口，系统不裁决，只并列。",
+   "subject_names": {
+    "event:ev_sanfan_qibing": "撤藩令触发·三藩起兵",
+    "event:ev_sanfan_lianheng": "吴据云贵·耿尚连横",
+    "event:ev_sanfan_hunan": "吴军下湖南·据岳州长沙",
+    "event:ev_sanfan_gengjiang": "耿精忠降清·闽归清",
+    "event:ev_sanfan_wudi": "吴三桂称帝·旋卒",
+    "event:ev_sanfan_shangjiang": "尚之信降·广东归清",
+    "event:ev_sanfan_ding": "清军入昆明·三藩平",
+    "place:kunming": "昆明",
+    "place:fuzhou_fj": "福州",
+    "place:guangzhou": "广州",
+    "place:yuezhou": "岳州",
+    "place:changsha": "长沙",
+    "place:chengdu": "成都",
+    "place:beijing": "北京",
+    "person:wu_sangui": "吴三桂",
+    "person:geng_jingzhong": "耿精忠",
+    "person:shang_zhixin": "尚之信",
+    "person:wang_fuchhen": "王辅臣",
+    "person:kangxi": "康熙帝",
+    "person:yuele": "岳乐",
+    "person:zhaoliangdong": "赵良栋",
+    "person:zhangtai": "彰泰",
+    "person:tuhai": "图海"
+   },
+   "dims": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "epoch": "qing",
+   "scale_tier": "operational",
+   "strategic": {
+    "political_cohesion": {
+     "from": [
+      "strategic",
+      "doctrine"
+     ],
+     "from_dims": [
+      3,
+      5
+     ],
+     "layer": "inference",
+     "note": "三藩之乱：朝堂凝聚力——康熙决意撤藩、中枢不摇，与三藩内部分裂、吴称帝后合法性内耗对照"
+    },
+    "material_logistics": {
+     "from": [
+      "tech",
+      "economy"
+     ],
+     "from_dims": [
+      2,
+      3
+     ],
+     "layer": "inference",
+     "note": "三藩之乱：后勤物力——清廷岁糜三藩巨饷、乱中调度八旗绿营与财赋供前线，是平叛之基"
+    },
+    "population_mobilization": {
+     "from": [
+      "society"
+     ],
+     "from_dims": [
+      4
+     ],
+     "layer": "inference",
+     "note": "三藩之乱：人口动员——藩镇兵权与西南土司、绿营被卷入，数省社会结构随战乱重组"
+    },
+    "geopolitical_strategy": {
+     "from": [
+      "international",
+      "anchors"
+     ],
+     "from_dims": [
+      1,
+      6
+     ],
+     "layer": "inference",
+     "note": "三藩之乱：地缘战略——云贵闽粤湘川同时动摇，清廷由撤藩引发全域危机、终以收复巩固集权"
+    }
+   },
+   "province": [
+    "yunnan",
+    "fujian",
+    "guangdong",
+    "hunan",
+    "sichuan"
+   ],
    "related": []
   }
  },

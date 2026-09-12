@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "id": "qingshigao",
+      "title": "清史稿",
+      "juan": "卷二百六十九·吴三桂传／卷二百六十二·尚可喜传／卷二百六十三·耿精忠传／圣祖本纪",
+      "compiler": "赵尔巽等",
+      "compiled_year": 1928,
+      "stance_label": "后世官修·清方",
+      "distance_label": "成书 1928（民国未定稿），距所记明清战事约 280–300 年",
+      "party": "清修官史",
+      "color": "#5B4636",
+      "note": "民国清史馆修。记吴三桂起兵、耿尚连横与清军平叛，立场归清方，于叛方内部决策、平民伤亡多从略。",
+      "faction": null,
+      "period": "民国",
+      "availability": "fetched",
+      "url": "https://zh.wikisource.org/wiki/%E6%B8%85%E5%8F%B2%E7%A8%BF",
+      "cached_text": ""
+    },
+    {
+      "id": "swj",
+      "title": "圣武记",
+      "juan": "卷二·国朝湖南靖寇记／卷二·国朝滇黔变乱记",
+      "compiler": "魏源（清）",
+      "compiled_year": 1842,
+      "stance_label": "私修当代·综合",
+      "distance_label": "成书清道光二十二年（1842），距事约 160 年，基于方略奏报", "party": "私修当代",
+      "color": "#6C7A89",
+      "note": "魏源私修清当代军事史，记三藩之乱用兵与疆域易手，平允但属后世综合，可与其他方互证。",
+      "faction": null,
+      "period": "清",
+      "availability": "synthesis",
+      "url": "",
+      "cached_text": ""
+    },
+    {
+      "id": "xdyj",
+      "title": "现代清史学界综论",
+      "juan": "综合研究（李治亭、姚念慈等三藩之乱论述）",
+      "compiler": "学界综论",
+      "compiled_year": 2000,
+      "stance_label": "现代学界",
+      "distance_label": "现代学界综合研究，距事三百余年，基于多方史料互证",
+      "party": "学界",
+      "color": "#3C78D8",
+      "note": "现代清史学界对三藩之乱的归因与战略评估，多综合清方记载与方志、档案。",
+      "faction": null,
+      "period": "现代",
+      "availability": "synthesis",
+      "url": "",
+      "cached_text": ""
+    }
+  ]
+}
