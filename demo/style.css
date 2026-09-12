@@ -492,7 +492,12 @@ body.pr-collapsed #panelRight{ width:0; min-width:0; overflow:hidden; border-lef
 .tl-foot{
   display:flex; align-items:center; gap:10px; font-size:11px;
   color:var(--ink-3);
+  /* v0.252：主时间轴刻度节点是 position:absolute;z-index:1，会向下溢出盖住 foot 里的
+     播放按钮，导致「开始随时间演化」点不到。把 foot 抬到节点之上，且只在子元素（按钮/
+     图例）接收点击，透明缝隙点击穿透回节点，使刻度标题仍可点选事件。 */
+  position:relative; z-index:3; pointer-events:none;
 }
+.tl-foot > *{ pointer-events:auto; }
 .tl-ctrl{
   font-size:11px; cursor:pointer; display:flex; align-items:center; gap:3px;
   color:var(--ink-3);

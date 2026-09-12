@@ -925,6 +925,11 @@
       node.title = (ev.title || ev.era || '') + (ev.year != null ? '（' + ev.year + '）' : '');
       node.addEventListener('click', function () {
         stopMain(); state.t = i; syncCtrlToMain(); refresh();
+        // v0.252：点底部时间即跳转到该事件并锁定（stopMain 已暂停播放），
+        // 同时切到「沿革」页并把对应事件卡片滚动进视野，直观展示「该时间发生的事」。
+        goTab('yan');
+        var sel = document.querySelector('#eventsPane .ev.sel');
+        if (sel) sel.scrollIntoView({ block: 'center', behavior: 'smooth' });
       });
       track.appendChild(node);
     });
