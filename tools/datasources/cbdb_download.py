@@ -10,8 +10,11 @@
     data/external/cbdb/latest.json        # 版本元数据（日期/校验和/直链）
     data/external/cbdb/cbdb_YYYYMMDD.sqlite3  # 解压后的 SQLite 库（不打包入 git）
 
-数据许可：CBDB 为哈佛/中研院/北大共建，非商用 / 不可再分发。
-本项目只做「运行时下载 + 只读查询」，不把数据打包进仓库。
+数据许可：CBDB 自 2026-08-20 起明确授权——只用官方单机版发布（GitHub cbdb-project/cbdb_sqlite）
+即落在「单机版发布日及数据量范围内」，整体按 **CC BY-NC-SA 4.0** 使用（非商业 / 署名 / 相同方式共享）。
+当前单机版 CBDB BJ 20260602（2026-06-02，649,533 人）。细则见根目录 LICENSE-cbdb。
+禁止拉取在线录入系统 / 商业分支数据（属范围二，禁止再分发）。本项目只做「运行时下载 + 只读查询」，
+不强制打包数据进仓库（data/external/ 已在 .gitignore）。
 """
 import argparse
 import hashlib
@@ -26,6 +29,14 @@ ROOT = os.path.dirname(os.path.dirname(HERE))          # 项目根
 EXTERNAL = os.path.join(ROOT, "data", "external", "cbdb")
 LATEST_JSON_URL = "https://raw.githubusercontent.com/cbdb-project/cbdb_sqlite/master/latest.json"
 UA = {"User-Agent": "Mozilla/5.0 (history-in-my-hand cbdb adapter)"}
+
+# ── CBDB 单机版合规阈值（详见根目录 LICENSE-cbdb）────────────────────────────
+# 只用官方单机版发布（github.com/cbdb-project/cbdb_sqlite），其数据量天然 ≤ 单机版上限，
+# 即稳稳落在「范围一 · CC BY-NC-SA 4.0」。下列值为 2026-06-02 基准，须随官方下载页更新。
+STANDALONE_RELEASE = "CBDB BJ 20260602"
+STANDALONE_RELEASE_DATE = "2026-06-02"
+STANDALONE_VOLUME_PERSONS = 649533   # 该版本所载人物数上限；超此即落入范围二（禁止再分发）
+# ──────────────────────────────────────────────────────────────────────────
 
 
 def latest_meta():

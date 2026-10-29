@@ -1,0 +1,54 @@
+本文件说明「中国历代人物传记资料库（CBDB）」数据在本项目中的使用许可，
+是对根目录 `LICENSE-data` 中「第三方数据源」条款的细化与权威依据。
+
+## 授权来源
+
+- 数据方：CBDB 项目组（哈佛 / 中研院 / 北大共建）
+- 授权联系人：王宏甦（Hongsu Wang），hongsuwang@fas.harvard.edu
+- 官方条款页：https://cbdb.hsites.harvard.edu/cbdb-data-licensing-terms
+- 条款生效日：2026-08-20
+- 数据量 / 单机版发布日基准页：https://cbdb.hsites.harvard.edu/download-cbdb-standalone-database
+
+## 两套机制（取决于「单机版发布日期」+「数据量」）
+
+授权适用于哪一档，取决于所用 CBDB 数据是否落在「当前单机版数据库」范围内。
+该范围由两个参数界定，均随 CBDB 每次发布更新，须以官方下载页为准：
+
+- 单机版发布日期：**CBDB BJ 20260602（2026-06-02）**
+- 数据量上限：**649,533 人**（该版本所载数据量）
+
+### 范围一：单机版当日（含）之前发布、且数据量在其范围内
+
+适用 **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International（CC BY-NC-SA 4.0）**
+
+- 协议全文：https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+- 可：为非商业目的分享、演绎、构建公开访问服务（含网站 / API / 可视化查询）
+- 须：署名「中国历代人物传记资料库（CBDB）」并标注所用版本
+- 衍生作品须以相同协议（CC BY-NC-SA 4.0）发布
+
+### 范围二：单机版发布日之后发布、或超出其数据量范围
+
+适用 CBDB 自定条款（参照 CC BY-NC-ND 4.0 的署名 / 非商业 / 禁止演绎 / 禁止再分发与公开访问服务）
+
+- 仅可：署名使用、非商业
+- 禁止：发布经修改 / 衍生的数据版本；再分发；构建可公开访问的网站 / API / 可视化等
+  使第三方可检索、浏览单条记录或实质相似呈现的服务
+- 申请书面授权：王宏甦 hongsuwang@fas.harvard.edu
+
+## 本项目的合规做法
+
+- **只用官方单机版发布**（GitHub `cbdb-project/cbdb_sqlite` / Harvard Dataverse）。官方单机版数据量天然
+  ≤ 单机版上限，因此稳稳落在**范围一（CC BY-NC-SA 4.0）**。
+- **不拉取**在线录入系统（input.cbdb.fas.harvard.edu）或商业分支（inindex.com）的数据——
+  那部分会落入范围二（禁止再分发 / 禁止公开服务）。
+- 适配器 `tools/datasources/cbdb.py` 只做本地 SQLite 只读查询；`cbdb_download.py` 下载完整的官方单机版。
+- 若未来将 CBDB 衍生数据打包进仓库，须在产物处标注本文件，并确保其体量未超过
+  **当时**单机版数据量上限（以官方下载页为准，非 2026-06-02 的历史值）。
+
+## 与核心数据许可的关系（重要 · 不构成冲突但须明示）
+
+- 项目核心数据：**CC BY 4.0**（允许商业）。
+- CBDB 衍生数据：**CC BY-NC-SA 4.0**（**非商业**）。
+- 二者许可不同：任何含 CBDB 衍生数据的产物，整体须遵守 **NonCommercial** 限制，
+  且其中的 CBDB 衍生部分须以 CC BY-NC-SA 4.0 共享。核心 CC BY 4.0 数据本身仍允许商业使用，
+  不因本项目引入 CBDB 而失效。

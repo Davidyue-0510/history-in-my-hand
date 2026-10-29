@@ -7,8 +7,9 @@
     python tools/datasources/cbdb.py --personid 12345   # 按人物 ID 查
     python tools/datasources/cbdb.py --check            # 检查本地库状态
 
-数据许可：CBDB 非商用 / 不可再分发。本适配器只读本地 SQLite，
-不打包数据入 git（data/external/ 在 .gitignore）。
+数据许可：CBDB 官方单机版发布（GitHub cbdb-project/cbdb_sqlite）整体按 **CC BY-NC-SA 4.0**
+使用（非商业 / 署名 / 相同方式共享）；当前单机版 CBDB BJ 20260602（2026-06-02，649,533 人）。
+细则见根目录 LICENSE-cbdb。本适配器只读本地 SQLite，不打包数据入 git（data/external/ 在 .gitignore）。
 """
 import argparse
 import os
